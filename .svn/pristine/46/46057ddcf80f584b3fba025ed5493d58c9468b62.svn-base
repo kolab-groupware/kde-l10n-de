@@ -1,0 +1,420 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: author
+#: technical-reference.docbook:5
+#, no-c-format
+msgid "<firstname>Éric</firstname> <surname>Bischoff</surname>"
+msgstr ""
+
+#. Tag: trans_comment
+#: technical-reference.docbook:9
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+
+#. Tag: date
+#: technical-reference.docbook:12
+#, no-c-format
+msgid "2009-12-15"
+msgstr ""
+
+#. Tag: releaseinfo
+#: technical-reference.docbook:13
+#, no-c-format
+msgid "0.6.0"
+msgstr ""
+
+#. Tag: keyword
+#: technical-reference.docbook:16
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: technical-reference.docbook:17
+#, no-c-format
+msgid "KTuberling"
+msgstr ""
+
+#. Tag: keyword
+#: technical-reference.docbook:18
+#, no-c-format
+msgid "technical reference"
+msgstr ""
+
+#. Tag: title
+#: technical-reference.docbook:22
+#, no-c-format
+msgid "Technical References"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:24
+#, no-c-format
+msgid ""
+"&ktuberling; offers a gentle and rewarding introduction to &kde; customization "
+"and programming. The application can be extended. For example, without any "
+"coding, new playgrounds can be added by changing the graphics files. By adding "
+"appropriate sound files, translators can change the sounds to their native "
+"tongue!"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:32
+#, no-c-format
+msgid ""
+"If you extend or add to the game please consider sending your additions to the "
+"maintainer <ulink url=\"mailto:alex@eyeos.org\">Alex Fiestas</ulink> "
+"for inclusion in future releases."
+msgstr ""
+
+#. Tag: title
+#: technical-reference.docbook:39
+#, no-c-format
+msgid "For Artists"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:41
+#, no-c-format
+msgid "To create a new &ktuberling; playground you have to:"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:48
+#, no-c-format
+msgid "Draw the playground in a SVG file, there you have to:"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:50
+#, no-c-format
+msgid "Name the place where items can dragged \"background\"."
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:51
+#, no-c-format
+msgid "Name each of the draggable items with an unique name."
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:57
+#, no-c-format
+msgid "Create a .theme file, it has to follow this schema:"
+msgstr ""
+
+#. Tag: programlisting
+#: technical-reference.docbook:58
+#, no-c-format
+msgid ""
+"&lt;playground gameboard=\"<replaceable>yourSVGFile</replaceable>"
+"\" name=\"<replaceable>theDesktopFile</replaceable>\"&gt;\n"
+"    &lt;object name=\"<replaceable>itemName</replaceable>"
+"\" sound=\"<replaceable>soundName</replaceable>\" scale=\"<replaceable>"
+"someValue</replaceable>\" /&gt;\n"
+"    ...\n"
+"    ...\n"
+"    ...\n"
+"    &lt;/playground&gt;"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:60
+#, no-c-format
+msgid ""
+"<replaceable>yourSVGFile</replaceable> is the name of the svg file that has the "
+"drawing."
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:61
+#, no-c-format
+msgid ""
+"<replaceable>theDesktopFile</replaceable> is the name of the desktop file that "
+"has the name of the theme."
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:62
+#, no-c-format
+msgid ""
+"For each object you need a &lt;object&gt; entry. <replaceable>"
+"itemName</replaceable> is the unique name you used on the SVG file, "
+"<replaceable>soundName</replaceable> is the sound name that will be played when "
+"dragging it, see sound themes howto for more information."
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:65
+#, no-c-format
+msgid ""
+"scale is optional and <replaceable>someValue</replaceable> "
+"is the scale factor that will be used when drawing this object outside the "
+"warehouse, if not specified is 1."
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:71
+#, no-c-format
+msgid "Create a .desktop file, it has to follow this schema"
+msgstr ""
+
+#. Tag: programlisting
+#: technical-reference.docbook:72
+#, no-c-format
+msgid ""
+"[KTuberlingTheme]\n"
+"    Name=<replaceable>themeName</replaceable>"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:74
+#, no-c-format
+msgid ""
+"<replaceable>themeName</replaceable> is the name that identifies the theme, "
+"will be shown in the Playground menu."
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:79
+#, no-c-format
+msgid ""
+"If you are adding the theme to &ktuberling; repository, add .svg .theme "
+".desktop files to FILES section of the CMakeLists.txt in the pics/ directory"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:84
+#, no-c-format
+msgid ""
+"If you want to install it for yourself, place .svg .theme .desktop files in "
+"`kde4-config --prefix`/share/apps/ktuberling/pics"
+msgstr ""
+
+#. Tag: title
+#: technical-reference.docbook:93
+#, no-c-format
+msgid "For Translators"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:95
+#, no-c-format
+msgid ""
+"Besides the usual <literal role=\"extension\">.po</literal> "
+"files mechanism for translating program labels and prompts, the sounds can be "
+"localized too."
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:100
+#, no-c-format
+msgid "To create a new &ktuberling; sound theme you have to:"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:106
+#, no-c-format
+msgid "Record the sounds in OGG Vorbis rc3 file format."
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:109
+#, no-c-format
+msgid ""
+"Create a <replaceable>yourLanguageTwoLetterCode</replaceable>"
+".soundtheme file, it has to follow this schema:"
+msgstr ""
+
+#. Tag: programlisting
+#: technical-reference.docbook:110
+#, no-c-format
+msgid ""
+"&lt;language code=\"<replaceable>yourLanguageTwoLetterCode</replaceable>\"&gt;\n"
+"&lt;sound name=\"<replaceable>soundName</replaceable>\" file=\"<replaceable>"
+"relativePath</replaceable>\" /&gt;\n"
+"...\n"
+"...\n"
+"...\n"
+"&lt;/language&gt;"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:112
+#, no-c-format
+msgid ""
+"<replaceable>yourLanguageTwoLetterCode</replaceable> "
+"is your language two letter code, for example gl for Galician."
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:113
+#, no-c-format
+msgid ""
+"For each sound a &lt;sound&gt; entry. <replaceable>soundName</replaceable> "
+"should match with the soundName specified in the playground theme (see themes "
+"HOWTO). <replaceable>relativePath</replaceable> should be the relative path you "
+"are going to install the file with this sound to, typically it will be "
+"someUniquePath/soundName.format (someUniquePath can be your language two letter "
+"code for example)."
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:121
+#, no-c-format
+msgid ""
+"If you are adding the sound theme to &ktuberling; in your language folder:"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:123
+#, no-c-format
+msgid ""
+"Add the sound files and the .soundtheme files to the data/kdegames/ktuberling "
+"directory of your language translations."
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:125
+#, no-c-format
+msgid ""
+"On that very same dir you need a CMakeLists.txt describing how to install the "
+"files, typically it will be."
+msgstr ""
+
+#. Tag: programlisting
+#: technical-reference.docbook:126
+#, no-c-format
+msgid ""
+"FILE(GLOB datafiles *.ogg)\n"
+"install( FILES ${datafiles} DESTINATION "
+"${DATA_INSTALL_DIR}/ktuberling/sounds/<replaceable>yourLanguageTwoLetterCode</re"
+"placeable> )\n"
+"install( FILES <replaceable>yourLanguageTwoLetterCode</replaceable>"
+".soundtheme DESTINATION ${DATA_INSTALL_DIR}/ktuberling/sounds/ )"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:132
+#, no-c-format
+msgid "If you want to install it for yourself:"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:134
+#, no-c-format
+msgid ""
+"Place <replaceable>yourLanguageTwoLetterCode</replaceable>"
+".soundtheme file in `kde4-config --prefix`/share/apps/ktuberling/sounds"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:135
+#, no-c-format
+msgid ""
+"Place yourSoundFiles in `kde4-config "
+"--prefix`/share/apps/ktuberling/sounds/someUniquePath"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:141
+#, no-c-format
+msgid ""
+"Information on how to work with the translation mechanisms in &kde; is "
+"available in <ulink "
+"url=\"http://l10n.kde.org/docs/translation-howto/index.html\">"
+"The &kde; Translation HOWTO</ulink>."
+msgstr ""
+
+#. Tag: title
+#: technical-reference.docbook:151
+#, no-c-format
+msgid "For Programmers"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:152
+#, no-c-format
+msgid "&ktuberling; isn't really difficult to extend for programmers."
+msgstr ""
+
+#. Tag: title
+#: technical-reference.docbook:155
+#, no-c-format
+msgid "C++ classes"
+msgstr ""
+
+#. Tag: classname
+#: technical-reference.docbook:159
+#, no-c-format
+msgid "TopLevel"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:161
+#, no-c-format
+msgid "Top-level window and basic program management"
+msgstr ""
+
+#. Tag: classname
+#: technical-reference.docbook:166
+#, no-c-format
+msgid "PlayGround"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:168
+#, no-c-format
+msgid "Description of one of the game levels"
+msgstr ""
+
+#. Tag: classname
+#: technical-reference.docbook:172
+#, no-c-format
+msgid "ToDraw"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:174
+#, no-c-format
+msgid "Description of one of the graphical <quote>objects</quote> to be drawn"
+msgstr ""
+
+#. Tag: classname
+#: technical-reference.docbook:179
+#, no-c-format
+msgid "SoundFactory"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:181
+#, no-c-format
+msgid "Description of one of the languages and its sounds"
+msgstr ""
+
+#. Tag: classname
+#: technical-reference.docbook:185
+#, no-c-format
+msgid "Action"
+msgstr ""
+
+#. Tag: para
+#: technical-reference.docbook:187
+#, no-c-format
+msgid "One of the user's manipulation in the undo/redo stack"
+msgstr ""

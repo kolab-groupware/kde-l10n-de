@@ -1,0 +1,3772 @@
+<chapter id="menus">
+
+<chapterinfo>
+<authorgroup>
+<author
+><firstname
+>Daniel</firstname
+> <surname
+>Naber</surname
+> <affiliation
+><address
+>&Daniel.Naber.mail; </address
+></affiliation>
+</author>
+<author
+><firstname
+>David</firstname
+> <surname
+>Rugge</surname
+> <affiliation
+><address
+>&David.Rugge.mail; </address
+></affiliation>
+</author>
+<author
+><firstname
+>Michel</firstname
+> <surname
+>Boyer de la Giroday</surname
+> <affiliation
+><address
+> <email
+>michel@klaralvdalens-datakonsult.se</email>
+</address
+></affiliation>
+</author>
+<author
+><firstname
+>Laurent</firstname
+> <surname
+>Montel</surname
+> <affiliation
+><address
+>&Laurent.Montel.mail; </address
+></affiliation>
+</author>
+<author
+><firstname
+>Scarlett</firstname
+> <surname
+>Clark</surname
+> <affiliation
+><address
+>&Scarlett.Clark.mail; </address
+></affiliation>
+</author>
+
+<othercredit role="translator"
+><firstname
+>Matthias</firstname
+><surname
+>Kiefer</surname
+> <affiliation
+><address
+><email
+>matthias.kiefer@gmx.de</email
+></address
+></affiliation
+> <contrib
+>Deutsche Übersetzung</contrib
+></othercredit
+> <othercredit role="translator"
+><firstname
+>Alexander</firstname
+><surname
+>Gretencord</surname
+> <affiliation
+><address
+><email
+>arutha@gmx.de</email
+></address
+></affiliation
+> <contrib
+>Überarbeitung</contrib
+></othercredit
+> <othercredit role="translator"
+><firstname
+>Frank</firstname
+><surname
+>Schütte</surname
+> <affiliation
+><address
+><email
+>F.Schuette@t-online.de</email
+></address
+></affiliation
+> <contrib
+>Überarbeitung ab Version 1.3</contrib
+></othercredit
+> <othercredit role="translator"
+><firstname
+>Matthias Kalle</firstname
+><surname
+>Dalheimer</surname
+> <affiliation
+><address
+><email
+>kalle@kdab.net</email
+></address
+></affiliation
+> <contrib
+>Krypto-Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+<date
+>2013-11-25</date>
+<releaseinfo
+>&kde; 4.11</releaseinfo>
+</chapterinfo>
+
+<title
+>Befehls- und Menüreferenz</title>
+<para
+>Die besonderen Menüeinträge für &kmail; sind unten beschrieben. Falls ein Kurzbefehl existiert, die die entsprechende Funktion ausführt, wird die Standardkombination neben dem Menüeintrag aufgeführt.</para>
+
+<sect1 id="reader-menu-items">
+<title
+>Das Hauptfenster von &kmail;</title>
+
+<sect2 id="reader-file-menu">
+<title
+>Das Menü Datei</title>
+<variablelist>
+<varlistentry id="file-new">
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Neu</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+>Mit diesem Menüeintrag können Sie folgende neue Nachrichten erstellen:</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-file-new-newmessage">
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+> <guisubmenu
+>Neu</guisubmenu
+><guimenuitem
+>Neue Nachricht ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Erstellt eine neue Nachricht.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-file-new-message-from-template">
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Neu</guisubmenu
+><guisubmenu
+>Neue Nachricht von Vorlage</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Erstellt eine neue Nachricht auf der Grundlage einer ausgewählten Vorlage.</action
+> Weitere Informationen dazu finden Sie im Abschnitt <link linkend="new-compose-from-templates"
+>Neue Nachricht von Vorlage</link
+>.</para>
+<para
+>Haben Sie bisher noch keine Vorlagen gespeichert, wird im Menü <menuchoice
+><guimenu
+>Nachricht</guimenu
+><guisubmenu
+>Neue Nachricht von Vorlage</guisubmenu
+><guimenuitem
+>(keine Vorlagen)</guimenuitem
+></menuchoice
+>angezeigt.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-add-folder">
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Neu</guisubmenu
+> <guimenuitem
+>Ordner hinzufügen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Erstellt einen neuen Ordner.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-new-addressbook-contact">
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Neu</guisubmenu
+><guimenuitem
+>Neuer Adressbuchkontakt ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet den Dialog zur Eingabe neuer Kontakte.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-file-open">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Datei</guimenu
+> <guimenuitem
+>Öffnen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet E-Mail-Nachrichten oder Postfächer.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-open-recent">
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+> <guimenuitem
+>Zuletzt geöffnete Dateien</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet kürzlich benutzte Nachrichten.</action
+> Nur Nachrichten, die bereit gespeichert und dann wieder geöffnet wurden, erscheinen in dieser Liste.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-file-save-as">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>S</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Datei</guimenu
+> <guimenuitem
+>Speichern unter ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Speichert die gerade angezeigte Nachricht als <filename class="extension"
+>.mbox</filename
+></action
+>. Die Datei enthält den vollständigen Vorspann und alle Anhänge.</para>
+<para
+>Möchten Sie die Nachricht in einem anderen Format speichern wie &eg; <filename role="extension"
+>.txt</filename
+>, deaktivieren Sie <guilabel
+>Dateierweiterung automatisch auswählen (.mbox)</guilabel
+> und geben Sie bei der Eingabe des Namens die gewünschte Dateierweiterung an.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-file-import-messages">
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+> <guimenuitem
+>Nachrichten importieren ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Startet <application
+>KMailCVT</application
+></action
+>. Dieses Programm erlaubt den Import der Nachrichten von verschiedenen proprietären E-Mail-Programmen in &kmail;.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-file-print-preview">
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+> <guimenuitem
+>Druckvorschau ...</guimenuitem
+></menuchoice
+></term>
+<listitem>
+<para
+><action
+>Zeigt eine Vorschau des Ausdrucks Ihrer E-Mail in einem neuen Fenster an.</action
+></para>
+<note
+><para
+>Diese Funktion steht nur zur Verfügung, wenn ein Drucker eingerichtet, angeschlossen und erreichbar ist.</para
+></note
+></listitem>
+</varlistentry>
+<varlistentry id="file-print">
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Datei</guimenu
+> <guimenuitem
+>Drucken ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Zeigt einen Dialog zum Drucken der gerade angezeigten Nachricht.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-file-expire-all-folders">
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+><guimenuitem
+>Verfallsdatum für alle Ordner aktivieren</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Alle alten Nachrichten in allen Ordnern löschen</action
+>. Dies erfolgt mit den im Dialog <link linkend="folders-properties-window"
+>Eigenschaften</link
+> festgelegten Regeln für jeden Ordner. Standard ist, gar keine alten Nachrichten zu löschen.</para>
+</listitem>
+</varlistentry>
+<varlistentry id="reader-empty-all-trash-folders">
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+> <guimenuitem
+>Alle Papierkörbe leeren</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Verwenden Sie diesen Befehl, um alle Papierkörbe zu löschen</action
+>, also den lokalen und eventuelle Papierkörbe auf &imap;-Servern.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-work-offline">
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+><guimenuitem
+>Offline arbeiten</guimenuitem
+>  </menuchoice
+></term>
+<listitem
+><para
+><action
+>Schaltet &kmail; in den Offlinemodus.</action
+> Damit werden alle Netzwerkaufgaben angehalten. Das ist sinnvoll, wenn Sie Nachrichten ohne Netzwerkverbindung bearbeiten möchten. Dann ändert sich dieser Menüeintrag zu <menuchoice
+><guimenu
+>Datei</guimenu
+><guimenuitem
+>Online arbeiten</guimenuitem
+></menuchoice
+>. Benutzen Sie diesen Eintrag, um wieder Online zu gehen. Das ist für das Senden und Empfangen von Nachrichten nötig.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-check-mail">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>L</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Datei</guimenu
+> <guimenuitem
+>Nach E-Mail sehen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Überprüft alle Postfächer auf neue Nachrichten.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-file-check-mail-in">
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+> <guimenuitem
+>Nach E-Mail sehen in</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Überprüft einen bestimmtes Postfach auf neue Nachrichten.</action
+> Diese Postfächer werden im Untermenü aufgeführt.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-update-folder">
+<term
+><menuchoice
+><shortcut
+><keycap
+>F5</keycap
+></shortcut
+> <guimenu
+>Datei</guimenu
+> <guimenuitem
+>Ordner aktualisieren</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Überprüft, ob neue Nachrichten im aktuellen Ordner angekommen sind.</action
+></para>
+<note
+><para
+>Diese Funktion steht nur für &imap;-Ordner zur Verfügung.</para
+></note
+></listitem>
+</varlistentry>
+<varlistentry id="reader-update-this-folder-and-all-subfolders">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>F5</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Datei</guimenu
+><guimenuitem
+>Diesen Ordner und alle seine Unterordner aktualisieren</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Überprüft, ob neue Nachrichten im aktuellen Ordner und allen Unterordnern angekommen sind.</action
+></para>
+<para
+>Sie können auch mehrere Ordner auswählen, dann ändert sich dieser Menüeintrag zu <menuchoice
+><guimenu
+>Datei</guimenu
+><guimenuitem
+>Diese Ordner und alle Unterordner aktualisieren</guimenuitem
+></menuchoice
+>.</para>
+<note
+><para
+>Diese Funktion steht nur für &imap;-Ordner zur Verfügung.</para
+></note
+></listitem>
+</varlistentry>
+<varlistentry id="reader-send-queued-messages">
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+> <guimenuitem
+>Postausgang versenden</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Versendet die Nachrichten in Ihrem Postausgang.</action
+> Nachrichten landen in diesem Ordner, wenn Sie <guibutton
+>In Postausgang</guibutton
+> im Editormenü wählen oder eine Nachricht im Offline-Modus erstellen und versenden ohne Internet-Verbindung.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-send-queued-messages-via">
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+> <guimenuitem
+>Postausgang versenden über</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Versendet die Nachrichten in Ihrem Postausgangsordner über den angegebenen Versandweg.</action
+> Damit können Sie auswählen, an welchen Server die Nachrichten in der Warteschlange gehen. Diese Versandwege müssen im Einrichtungsdialog von &kmail; auf der Karteikarte <menuchoice
+><guiicon
+>Zugänge</guiicon
+><guilabel
+>Versand</guilabel
+></menuchoice
+> erstellt werden, damit sie in diesem Menü erscheinen.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-file-quit">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Datei</guimenu
+> <guimenuitem
+>Beenden</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Beendet &kmail;.</action
+></para
+></listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+
+<sect2 id="reader-edit-menu">
+<title
+>Das Menü Bearbeiten</title>
+<para
+>Hier werden nur die besonderen Einträge für &kmail; aufgeführt, alle sonstigen Menüeinträge finden Sie im <ulink url="help:/fundamentals/ui.html#menus-edit"
+>Menu Bearbeiten</ulink
+> in den &kde;-Grundlagen.</para>
+<variablelist>
+<varlistentry id="reader-edit-move-to-trash">
+<term
+><menuchoice
+><shortcut
+><keycap
+>Entf</keycap
+></shortcut
+> <guimenu
+>Bearbeiten</guimenu
+> <guimenuitem
+>In den Papierkorb werfen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Verschiebt alle ausgewählten Nachrichten in den Papierkorb</action
+>. Falls die ausgewählten Nachrichten bereits im Papierkorb ist, werden die Nachrichten endgültig gelöscht.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-edit-move-thread-to-trash">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Entf</keycap
+></keycombo
+></shortcut
+><guimenu
+>Bearbeiten</guimenu
+><guimenuitem
+>Gruppe in den Papierkorb werfen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Verschiebt die ausgewählte Gruppe in den Papierkorbordner,</action
+>&eg; eine vollständige Diskussion in einer Mailingliste.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-edit-find-messages">
+<term
+><menuchoice
+><shortcut
+><keycap
+>S</keycap
+></shortcut
+> <guimenu
+>Bearbeiten</guimenu
+> <guimenuitem
+>Nachrichten suchen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet ein Suchfenster</action
+>, das die Suche nach Nachrichten mit bestimmten Eigenschaften, &eg; einem bestimmten Betreff, erlaubt. Weitere Details zur Einstellungen für die Suche finden Sie im Abschnitt <link linkend="filter-criteria"
+>Filter-Kriterien</link
+>,</para>
+<para
+>Das Ergebnis der Suche wird im Textfeld angezeigt. Dann können Sie den <guibutton
+>Suchordner öffnen</guibutton
+> oder eine Nachricht auswählen und auf <guibutton
+>Nachricht öffnen</guibutton
+> klicken.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-edit-find-in-message">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>F</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Bearbeiten</guimenu
+> <guimenuitem
+>Nachricht durchsuchen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Durchsucht dem aktuellen Nachrichtentext nach dem im Feld <guilabel
+>Suchen</guilabel
+> eingegebenen Text.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-edit-select-all-messages">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>A</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Bearbeiten</guimenu
+> <guimenuitem
+>Alle Nachrichten auswählen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Wählt alle Nachrichten im aktuellen Ordner aus.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-edit-select-all-text">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>T</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Bearbeiten</guimenu
+> <guimenuitem
+>Gesamten Text auswählen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Selektiert den Text der gerade angezeigten Nachricht.</action
+></para
+></listitem>
+</varlistentry>
+</variablelist>
+</sect2>
+
+
+<sect2 id="reader-view-menu">
+<title
+>Das Menü Ansicht</title>
+
+<variablelist>
+<varlistentry id="reader-view-message-list">
+<term
+><menuchoice
+><guimenu
+>Ansicht</guimenu
+> <guisubmenu
+>Nachrichtenliste</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+>Diese Menü enthält die folgenden Einstellungen, um die Anzeige der Nachrichtenliste zu ändern.</para>
+<variablelist>
+<varlistentry id="reader-view-messagelist-sorting">
+<term
+><menuchoice>
+<guisubmenu
+>Sortierung</guisubmenu>
+</menuchoice
+></term>
+<listitem
+><para
+>Enthält folgende Einstellungen für die Reihenfolge der Sortierung.</para>
+<itemizedlist>
+  <listitem
+><para
+><guilabel
+>Sortierkriterium für Nachrichten</guilabel
+> enthält mehrere Optionen, die meisten sind selbsterklärend. Die Bedeutung der folgenden Optionen sind nicht sofort erkennbar, daher werden sie im folgenden erläutert.</para>
+  <itemizedlist>
+    <listitem
+><para
+><guilabel
+>Nach Absender/Empfänger (intelligent)</guilabel
+> zeigt den Absender bei der Anzeige im Postausgangs- oder Vorlagenordner und den Empfänger im Posteingang und dessen Unterordnern.</para
+></listitem>
+    <listitem
+><para
+><guilabel
+>Nach Aufgaben-Status</guilabel
+> und <guilabel
+>Nach Wichtig-Status</guilabel
+> müssen gesetzt werden, ehe diese Kriterien zur Sortierung verwendet werden können. Weitere Informationen dazu finden Sie im Abschnitt <link linkend="reader-mark-messages"
+>Markierung von Nachrichten</link
+></para
+></listitem>
+  </itemizedlist
+></listitem>
+  <listitem
+><para
+>Mit <guilabel
+>Sortierung für Nachrichten</guilabel
+> und <guilabel
+>Sortierung für Gruppen</guilabel
+> können Sie die Richtung der Sortierung ändern.</para
+></listitem>
+  <listitem
+><para
+>Mit <guilabel
+>Sortierung für diesen Ordner merken</guilabel
+> können Sie für jeden Ordner eigene Einstellungen festlegen.</para
+></listitem>
+</itemizedlist
+></listitem>
+</varlistentry>
+<varlistentry id="reader-view-messagelist-aggregation">
+<term
+><menuchoice>
+<guisubmenu
+>Zusammenstellung</guisubmenu>
+</menuchoice
+></term>
+<listitem
+><para
+>Ermöglicht die Einstellung der Ansicht der Zusammenstellung.</para>
+<para
+>Mit <guilabel
+>Einrichten</guilabel
+> können Sie die Zusammenstellung der Nachrichten anpassen. Weiter Informationen dazu finden Sie im Abschnitt <link linkend="configure-appearance-message-list"
+>Anpassung der Nachrichtenliste</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-view-messagelist-theme">
+<term
+><menuchoice>
+<guisubmenu
+>Design</guisubmenu>
+</menuchoice
+></term>
+<listitem
+><para
+>Ermöglicht die Auswahl eines Designs.</para>
+<para
+>Mit <guilabel
+>Einrichten</guilabel
+> können Sie das Design anpassen. Weiter Informationen dazu finden Sie im Abschnitt <link linkend="configure-appearance-message-list"
+>Anpassung der Nachrichtenliste</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-view-messagelist-create-new-tab">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>O</keycap
+></keycombo
+></shortcut
+><guisubmenu
+>Neues Unterfenster erstellen</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Erstellt ein neues leeres Unterfenster.</action
+> Wählen Sie dann den Ordner aus, der in diesem Unterfenster angezeigt werden soll.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-view-messagelist-close-tab">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>W</keycap
+></keycombo
+></shortcut
+><guisubmenu
+>Unterfenster schließen</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Schließt das aktuell ausgewählte Unterfenster.</action
+></para
+></listitem>
+</varlistentry>
+</variablelist
+></listitem>
+</varlistentry>
+<varlistentry id="reader-view-headers">
+<term
+><menuchoice
+><guimenu
+>Ansicht</guimenu
+> <guisubmenu
+>Vorspann</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Stellen Sie hier das angezeigte Vorspanndesign ein.</action
+> Weitere Informationen finden Sie im Abschnitt <link linkend="using-header-options"
+>Vorspann</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-view-attachments">
+<term
+><menuchoice
+><guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Anhänge</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Hier wird eingestellt</action
+>, wie Anhänge im <guilabel
+>Nachrichtenfenster</guilabel
+> unabhängig vom &MIME;-Baum angezeigt werden. Weitere Informationen finden Sie im Abschnitt <link linkend="using-attachment-view-options"
+>Anhänge</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-view-expand-thread-or-group">
+<term
+><menuchoice
+><shortcut
+><keycap
+>.</keycap
+></shortcut
+> <guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Gruppe aufklappen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Damit wird die aktuelle Nachrichtengruppe angezeigt</action
+>, &ie; alle Nachrichten, die eine Antwort auf die aktuelle Nachricht sind.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-view-collapse-thread-or-group">
+<term
+><menuchoice
+><shortcut
+><keycap
+>,</keycap
+></shortcut
+> <guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Gruppe einklappen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Damit wird die gesamte Nachrichtengruppe, zu der die aktuelle Nachricht gehört, geschlossen.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-view-expand-all-threads">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>.</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Alle Gruppen aufklappen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet alle Nachrichtengruppen des aktuellen Ordners.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-view-collapse-all-threads">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>,</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Alle Gruppen zusammenklappen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Schließt alle Nachrichtengruppen des aktuellen Ordners.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-view-viewsource">
+<term
+><menuchoice
+><shortcut
+><keycap
+>V</keycap
+></shortcut
+> <guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Nachrichtencode ansehen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Zeigt in einem neuen Fenster den gesamten Nachrichtenvorspann und die Nachricht als unformatierten Text</action
+>. Das kann hilfreich sein, um die Herkunft einer Nachricht zu ermitteln. </para>
+<note
+><para
+>Es ist leicht, das Feld <literal
+>Von:</literal
+> einer Nachricht zu fälschen, dennoch kann man herausfinden, welche Mailserver für den Versand der Nachricht verwendet wurden, indem man sich die Inhalte der <literal
+>Received:</literal
+>-Vorspannfelder anschaut.</para
+></note
+></listitem>
+</varlistentry>
+<varlistentry id="reader-view-show-message-structure">
+<term
+><menuchoice
+><guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Nachrichtenstruktur anzeigen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Zeigt eine Ansicht der Nachrichtenstruktur im Hauptfenster an</action
+>. Darin haben Sie Zugriff auf alle Bestandteile der Nachricht.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-view-use-fixed-font">
+<term
+><menuchoice
+><shortcut
+><keycap
+>X</keycap
+></shortcut
+> <guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Feste Zeichenbreiten</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Verwendet einen Zeichensatz fester Breite (nicht-proportional), um die Nachrichten des aktuellen Ordners anzuzeigen</action
+>. Der gewünschte Zeichensatz kann im Abschnitt auf der Karteikarte <link linkend="configure-appearance-fonts"
+>Schriftarten</link
+> des Einrichtungsdialogs von &kmail; festgelegt werden.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-view-set-encoding">
+<term
+><menuchoice
+><guimenu
+>Ansicht</guimenu
+> <guisubmenu
+>Kodierung festlegen</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Die zur Anzeige der Nachrichten verwendete Kodierung kann hier eingestellt werden</action
+>. Der Standard <guilabel
+>Automatisch</guilabel
+> sollte in den meisten Fällen funktionieren.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-view-zoom">
+<term
+><menuchoice
+><guimenu
+>Ansicht</guimenu
+> <guisubmenu
+>Skalierung</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Mit den Aktionen in diesem Untermenü kann die Anzeige der gesamten Nachricht oder nur vom Text im Nachrichtenfenster vergrößert, verkleinert und wieder auf die ursprüngliche Größe zurückgesetzt werden.</action
+></para
+></listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+
+<sect2 id="reader-go-menu">
+<title
+>Das Menü Gehe zu</title>
+
+<variablelist>
+<varlistentry id="reader-go-jump-to-folder">
+<term
+><menuchoice
+><shortcut
+><keycap
+>J</keycap
+></shortcut
+><guimenu
+>Gehe zu</guimenu
+> <guimenuitem
+>In Ordner wechseln...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Zeigt einen Dialog mit einer Liste aller Ordner.</action
+> Klicken Sie auf einen Ordner, in den Sie wechseln möchten, und er wird in der Nachrichtenliste angezeigt.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-go-next-message">
+<term
+><menuchoice
+><shortcut
+><keycap
+>N</keycap
+></shortcut
+> <guimenu
+>Gehe zu</guimenu
+> <guimenuitem
+>Nächste Nachricht</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Wählt die nächste Nachricht in der Nachrichtenliste</action
+>. Das Tastenkürzel <keycap
+>Pfeil rechts</keycap
+> kann ebenfalls verwendet werden.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-go-next-unread-message">
+<term
+><menuchoice
+><shortcut
+><keycap
+>+</keycap
+></shortcut
+> <guimenu
+>Gehe zu</guimenu
+> <guimenuitem
+>Nächste ungelesene Nachricht</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Wählt die nächste ungelesene Nachricht in der Nachrichtenliste aus</action
+>. Wenn es unterhalb der aktuell ausgewählten Nachricht keine ungelesene Nachricht mehr gibt, dann hängt das Verhalten vom Wert der Option <xref linkend="configure-misc-folders-go-unread"/> ab.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-go-previous-message">
+<term
+><menuchoice
+><shortcut
+><keycap
+>P</keycap
+></shortcut
+> <guimenu
+>Gehe zu</guimenu
+> <guimenuitem
+>Vorherige Nachricht</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Zeigt die vorherige Nachricht in der Nachrichtenliste an.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-go-previous-unread">
+<term
+><menuchoice
+><shortcut
+><keycap
+>-</keycap
+></shortcut
+> <guimenu
+>Gehe zu</guimenu
+> <guimenuitem
+>Vorherige ungelesene Nachricht</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Wählt die vorherige ungelesene Nachricht in der Nachrichtenliste aus</action
+>. Wenn es oberhalb der aktuell ausgewählten Nachricht keine ungelesene Nachricht mehr gibt, dann hängt das Verhalten vom Wert der Option <xref linkend="configure-misc-folders-go-unread"/> ab.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-go-next-unread-folder">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Alt;<keycap
+>+</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Gehe zu</guimenu
+> <guimenuitem
+>Nächster ungelesener Ordner</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Wechselt zum nächsten Ordner mit ungelesenen Nachrichten.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-go-previous-unread-folder">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Alt;<keycap
+>-</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Gehe zu</guimenu
+> <guimenuitem
+>Vorheriger ungelesener Ordner</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Wechselt zum vorherigen Ordner mit ungelesenen Nachrichten.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-go-next-unread-text">
+<term
+><menuchoice
+><shortcut
+><keycap
+>Leertaste</keycap
+></shortcut
+> <guimenu
+>Gehe zu</guimenu
+> <guimenuitem
+>Nächster ungelesener Text</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Geht in der aktuellen Nachricht eine Seite weiter nach unten. Falls das Nachrichtenende erreicht ist, wird der Text der nächsten ungelesenen Nachricht angezeigt.</action
+></para
+></listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+<sect2 id="reader-folder-menu">
+<title
+>Das Menü Ordner</title>
+<variablelist>
+<varlistentry id="reader-folder-add-folder">
+<term
+><menuchoice
+><guimenu
+>Ordner</guimenu
+> <guimenuitem
+>Ordner hinzufügen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öffnet den Dialog <link linkend="folders-properties-window"
+>Ordner-Eigenschaften</link
+> zur Erstellung eines neuen Ordners.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-folder-mark-all-messages-as-read">
+<term
+><menuchoice
+><guimenu
+>Ordner</guimenu
+> <guimenuitem
+>Alle Nachrichten als gelesen markieren</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Setzt den Status aller neuen und ungelesenen Nachrichten des aktuellen Ordners auf gelesen.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-folder-update-folder">
+<term
+><menuchoice
+><shortcut
+><keycap
+>F5</keycap
+></shortcut
+> <guimenu
+>Ordner</guimenu
+> <guimenuitem
+>Ordner aktualisieren</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Überprüft, ob neue Nachrichten im aktuellen Ordner angekommen sind.</action
+></para>
+<note
+><para
+>Diese Funktion steht nur für &imap;-Ordner zur Verfügung.</para
+></note
+></listitem>
+</varlistentry>
+<varlistentry id="reader-folder-update-folder-and-all-its-subfolders">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>F5</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Ordner</guimenu
+><guimenuitem
+>Diesen Ordner und alle seine Unterordner aktualisieren</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Überprüft, ob neue Nachrichten im aktuellen Ordner und allen Unterordnern angekommen sind.</action
+></para>
+<note
+><para
+>Diese Funktion steht nur für &imap;-Ordner zur Verfügung.</para
+></note
+></listitem>
+</varlistentry>
+<varlistentry id="reader-folder-move-all-messages-to-trash">
+<term
+><menuchoice
+><guimenu
+>Ordner</guimenu
+> <guimenuitem
+>Alle Nachrichten in den Papierkorb werfen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Verschiebt alle Nachrichten des ausgewählten Ordners in den Papierkorb.</action
+></para>
+<note
+><para
+>Diese Funktion steht nur zur Verfügung, wenn der ausgewählte Ordner kein Papierkorb ist. In diesem Fall wird <guilabel
+>Papierkorb leeren</guilabel
+> angezeigt.</para
+></note
+></listitem>
+</varlistentry>
+<varlistentry id="reader-folder-empty-trash">
+<term
+><menuchoice
+><guimenu
+>Ordner</guimenu
+> <guimenuitem
+>Papierkorb leeren</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Löscht alle Nachrichten unwiderruflich.</action
+></para>
+<note
+><para
+>Diese Funktion steht nur zur Verfügung, wenn der aktuelle Ordner ein Papierkorb ist.</para
+></note
+></listitem>
+</varlistentry>
+<varlistentry id="reader-folder-archive-folder">
+<term
+><menuchoice
+><guimenu
+>Ordner</guimenu
+> <guimenuitem
+>Ordner archivieren ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet den Dialog, in dem Sie ein Archi des aktuell ausgewählten Ordners erstellen können.</action
+>Weitere Informationen dazu im Abschnitt <link linkend="folder-archive"
+>Ordner archivieren</link
+>.</para>
+ </listitem>
+</varlistentry>
+<varlistentry id="reader-folder-delete-folder">
+<term
+><menuchoice
+><guimenu
+>Ordner</guimenu
+> <guimenuitem
+>Ordner entfernen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Entfernt den ausgewählten Ordner und seinen gesamten Inhalt, einschließlich enthaltener Ordner.</action
+></para>
+<warning
+><para
+>Hinweis: Es gibt keine Möglichkeit, den Inhalt wieder zu bekommen, nachdem ein Ordner entfernt wurde.</para
+></warning
+></listitem>
+</varlistentry>
+<varlistentry id="reader-folder-remove-duplicate-messages">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>*</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Ordner</guimenu
+> <guimenuitem
+>Doppelte Nachrichten löschen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Durchsucht den Ordner nach doppelten Nachrichten und löscht sie.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-folder-apply-all-filters-on-folder">
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+> <guimenuitem
+>Alle Filter auf diesen Ordner anwenden</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Wendet alle eingerichteten Filter auf den aktuell ausgewählten Ordner an.</action
+> Weitere Informationen dazu finden Sie im Abschnitt <link linkend="filter-dialog-id"
+>Filterdialog</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-folder-prefer-html-to-plain-text">
+<term
+><menuchoice
+><guimenu
+>Ordner</guimenu
+> <guimenuitem
+>HTML-Ansicht vor Klartext bevorzugen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Zeigt die &html;-Nachrichten in diesem Ordner im &html;-Format an.</action
+></para>
+<warning
+><para
+>Aus Sicherheitsgründen sollte diese Einstellung nur für Ordner mit vertrauenswürdigen Nachrichten verwendet werden.</para
+></warning
+></listitem>
+</varlistentry>
+<varlistentry id="reader-folder-load-external-references">
+<term
+><menuchoice
+><guimenu
+>Ordner</guimenu
+> <guimenuitem
+>Externe Referenzen laden</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Haben Sie die Anzeige von &html;-Nachrichten eingeschaltet, können Sie auch noch diese Einstellung auswählen, um <action
+>Bilder und Ressourcen von Verknüpfungen zum Internet automatisch zu laden.</action
+></para>
+<warning
+><para
+>Aus Sicherheitsgründen sollte diese Einstellung nur für Ordner mit vertrauenswürdigen Nachrichten verwendet werden.</para
+></warning
+></listitem>
+</varlistentry>
+<varlistentry id="reader-folder-mailing-list-management">
+<term
+><menuchoice
+><guimenu
+>Ordner</guimenu
+> <guimenuitem
+>Verwaltung von Mailinglisten ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Mit dieser Aktion öffnen Sie den Dialog zur Verwaltung von Mailinglisten.</action
+> Weitere Informationen dazu finden Sie im Abschnitt <link linkend="folders-properties-mailinglist"
+>Mailinglisten</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-folder-assign-shortcut">
+<term
+><menuchoice
+><guimenu
+>Ordner</guimenu
+> <guimenuitem
+>Kurzbefehl festlegen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Ermöglicht die Zuweisung eines Kurzbefehls für den aktuell ausgewählten Ordner.</action
+></para
+></listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+<sect2 id="reader-message-menu">
+<title
+>Das Menü Nachricht</title>
+
+<variablelist>
+<varlistentry id="reader-message-new-message">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Neue Nachricht ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet das Fenster <link linkend="the-composer-window"
+>Nachricht erstellen</link
+></action
+> zur Eingabe einer neuen Nachricht.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-new-message-to-mailing-list">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Neue Nachricht an Mailingliste ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet ein neues ‚Nachricht erstellen‘-Fenster</action
+>, sodass Sie eine neue Nachricht erstellen können. Falls der momentan ausgewählte Ordner eine Mailingliste beinhaltet und eine Sendeadresse definiert ist, wird diese Adresse für <guilabel
+>An:</guilabel
+> verwendet. </para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-reply">
+<term
+><menuchoice
+><shortcut
+><keycap
+>R</keycap
+></shortcut
+> <guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Antworten ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet das Editorfenster</action
+>, fügt den markierten Text der aktuellen Nachricht ein, und besetzt das Feld <guilabel
+>An:</guilabel
+> entweder mit der Adresse einer Mailingliste (wenn Sie auf eine Nachricht auf einer Mailingliste antworten) oder mit der bevorzugten Antwortadresse des Absenders. Möchten Sie steuern, welche Adresse im Feld <guilabel
+>An</guilabel
+> benutzt wird, sollten Sie <link linkend="reader-message-reply-special"
+>Antworten (speziell)</link
+> verwenden. Als Ihre Identität wird automatisch diejenige verwendet, an die diese Nachricht verschickt worden ist.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-reply-all">
+<term
+><menuchoice
+><shortcut
+><keycap
+>A</keycap
+></shortcut
+> <guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Allen antworten ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet ein Fenster mit dem E-Mail-Editor, fügt den zitierten Text der aktuellen Nachricht ein, und besetzt das <guilabel
+>An:</guilabel
+>-Feld entweder mit der Adresse einer Mailingliste (wenn Sie auf eine Nachricht auf einer Mailingliste antworten) oder mit der bevorzugten Antwortadresse des Absenders</action
+>. Das Feld <guilabel
+>Kopie:</guilabel
+> wird mit den Adressen aller anderen Empfänger der aktuellen Nachricht mit Ausnahme Ihrer eigenen Adresse besetzt. Als Ihre Identität wird automatisch diejenige verwendet, an die diese Nachricht verschickt worden ist.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-reply-special">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Shift;<keycap
+>A</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Nachricht</guimenu
+><guisubmenu
+>Antworten (speziell)</guisubmenu
+><guimenuitem
+>Antwort an Verfasser ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet ein Fenster mit dem E-Mail-Editor, fügt den zitierten Text der aktuellen Nachricht ein, und trägt die bevorzugte Antwortadresse des Absenders in das <guilabel
+>An:</guilabel
+>-Feld ein</action
+>. Es wird diejenige eigene Identität als Absender gewählt, die auch die ursprüngliche Nachricht erhalten hat.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-reply-special-reply-to-mailinglist">
+<term
+><menuchoice
+><shortcut
+><keycap
+>L</keycap
+></shortcut
+> <guimenu
+>Nachricht</guimenu
+><guisubmenu
+>Antworten (speziell)</guisubmenu
+> <guimenuitem
+>An die Mailingliste antworten ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet ein Fenster mit dem E-Mail-Editor, fügt den zitierten Text der aktuellen Nachricht ein, und trägt die Antwortadresse der Mailingliste in das Feld <guilabel
+>An:</guilabel
+> ein</action
+>. Wenn Sie keine Mailinglisten-Adresse für den aktuellen Ordner angegeben haben und &kmail; die Adresse nicht aus der aktuellen Nachricht bestimmen kann, verbleibt das Feld <guilabel
+>An:</guilabel
+> leer. Als Identität für den Absender wird automatisch jene gewählt, die die ursprüngliche Nachricht erhalten hat.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-reply-special-reply-without-quote">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Shift;<keycap
+>R</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Nachricht</guimenu
+> <guisubmenu
+>Antworten (speziell)</guisubmenu
+><guimenuitem
+>Ohne Zitat antworten ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Funktioniert wie <guimenuitem
+>Antworten ...</guimenuitem
+>, zitiert aber den Text der aktuellen Nachricht nicht.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-reply-special-reply-with-custom-template">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+><guisubmenu
+>Antworten (speziell)</guisubmenu
+> <guimenuitem
+>Mit eigener Vorlage antworten ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Funktioniert wie <guimenuitem
+>Antworten ...</guimenuitem
+> mit der Möglichkeit, eine eigene Vorlage auszuwählen, die als <link linkend="configure-composer-custom-templates"
+>benutzerdefinierte Vorlage</link
+> erstellt wurde.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-reply-special-reply-to-all-with-custom-template">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+><guisubmenu
+>Antworten (speziell)</guisubmenu
+> <guimenuitem
+>Allen mit eigener Vorlage antworten ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Funktioniert wie <guimenuitem
+>Antworten an Alle</guimenuitem
+> mit der Möglichkeit, eine eigene Vorlage auszuwählen, die als <link linkend="configure-composer-custom-templates"
+>benutzerdefinierte Vorlage</link
+> erstellt wurde.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-forward-as-attachment">
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Shift;<keycap
+>F</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Nachricht</guimenu
+> <guisubmenu
+>Weiterleiten</guisubmenu
+> <guimenuitem
+>Als Anhang ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Leitet die Nachricht an den neuen Empfänger weiter.</action
+> Die Nachricht und deren Anhänge werden an die neue Nachricht angehängt. Der ursprüngliche Nachrichtenvorspann wird gleichfalls in die weitergeleitete Nachricht eingefügt.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-forward-inline">
+<term
+><menuchoice
+><shortcut
+> <keycap
+>F</keycap
+></shortcut
+> <guimenu
+>Nachricht</guimenu
+> <guisubmenu
+>Weiterleiten</guisubmenu
+> <guimenuitem
+>Im Text</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Der Nachrichtentext und einige wichtige Vorspannfelder werden in die neue Nachricht kopiert und als weitergeleiteter Teil markiert.</action
+>Anhänge werden wieder an die neue Nachricht angehängt.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-forward-redirect">
+<term
+><menuchoice
+><shortcut
+> <keycap
+>E</keycap
+> </shortcut
+> <guimenu
+>Nachricht</guimenu
+> <guisubmenu
+>Weiterleiten</guisubmenu
+> <guimenuitem
+>Umleiten</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Dies funktioniert wie die Weiterleitung, nur das die Nachricht unverändert bleibt, sogar das Feld <guilabel
+>Absender</guilabel
+>. Der Benutzer, der die Nachricht ungeleitet hat, wird in speziellen Vorspannfeldern (<literal
+>Redirect-From</literal
+>, <literal
+>Redirect-Date</literal
+>, <literal
+>Redirect-To</literal
+>, &etc;) hinzugefügt.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-forward-with-custom-template">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+><guisubmenu
+>Weiterleiten</guisubmenu
+> <guimenuitem
+>Mit eigener Vorlage</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Funktioniert wie Weiterleiten mit der Möglichkeit, eine eigene Vorlage auszuwählen, die als <link linkend="configure-composer-custom-templates"
+>benutzerdefinierte Vorlage</link
+> erstellt wurde.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-send-again">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Erneut senden ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet ein Editorfenster mit der gerade ausgewählten Nachricht, so dass Sie sie bearbeiten und erneut versenden können.</action
+></para>
+<note
+><para
+>Diese Funktion steht nur für Nachrichten zur Verfügung, die Sie versendet haben, oder genauer, die den Status <guilabel
+>gesendet</guilabel
+> haben.</para
+></note
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-edit-message">
+<term
+><menuchoice
+><shortcut
+><keycap
+>T</keycap
+></shortcut
+> <guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Nachricht bearbeiten</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet die Nachricht zur Bearbeitung, falls möglich.</action
+></para>
+<note
+><para
+>Nur Nachrichten in den Ordnern <guilabel
+>Postausgang</guilabel
+> und <guilabel
+>Entwürfe</guilabel
+> können bearbeitet werden.</para
+></note
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-mailing-list">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Mailingliste</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>In diesem Untermenü finden Sie Aktionen für Nachrichten in Mailinglisten.</para>
+<note
+><para
+>Der aktuelle Ordner muss als Mailinglistenordner eingerichtet sein, damit diese Funktionen verfügbar sind. Weitere Informationen zur Einrichtung von Ordnern für Mailinglisten im Abschnitt <link linkend="folders-properties-mailinglist"
+>Eigenschaften von Mailinglistenordnern</link
+>.</para
+></note>
+<para
+>Die folgenden Einstellungen für Mailinglisten-Ordner können ausgewählt werden:</para>
+<itemizedlist>
+  <listitem
+><para
+><guimenuitem
+>Neue Nachricht senden (E-Mail)</guimenuitem
+> besetzt das Feld <guilabel
+>An</guilabel
+> mit der Adresse <guilabel
+>An Liste senden</guilabel
+> der Mailingliste.</para
+></listitem>
+  <listitem
+><para
+><guimenuitem
+>Mailinglisten-Hilfe anfordern (E-Mail)</guimenuitem
+> besetzt das Feld <guilabel
+>An</guilabel
+> mit der Adresse <guilabel
+>An Liste senden</guilabel
+> der Mailingliste und fügt <literal
+>help</literal
+> in das Feld <guilabel
+>Betreff</guilabel
+> ein.</para
+></listitem>
+  <listitem
+><para
+><guimenuitem
+>Mailingliste abonnieren (Web)</guimenuitem
+> die Webseite zum Abonnieren der eingerichteten Mailingliste in Ihren Standard-Webbrowser.</para
+></listitem>
+  <listitem
+><para
+><guimenuitem
+>Mailingliste abonnieren (E-Mail)</guimenuitem
+> besetzt das Feld <guilabel
+>An</guilabel
+> mit der Adresse zum Abonnieren der Mailingliste und fügt <literal
+>subscribe</literal
+> in das Feld <guilabel
+>Betreff</guilabel
+> ein.</para
+></listitem>
+  <listitem
+><para
+><guimenuitem
+>Abonnement kündigen (Web)</guimenuitem
+> öffnet die Webseite zum Kündigen der eingerichteten Mailingliste in Ihren Standard-Webbrowser.</para
+></listitem>
+  <listitem
+><para
+><guimenuitem
+>Abonnement kündigen (E-Mail)</guimenuitem
+> besetzt das Feld <guilabel
+>An</guilabel
+> mit der Adresse zum Abonnieren der Mailingliste und fügt <literal
+>unsubscribe</literal
+> in das Feld <guilabel
+>Betreff</guilabel
+> ein.</para
+></listitem>
+</itemizedlist
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-copy-message-to">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guisubmenu
+>Nachricht kopieren nach</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Kopiert die ausgewählten Nachrichten in den angegebenen Ordner.</action
+> Im Untermenü können Sie aus zuletzt benutzten Ordnern oder lokalen Ordnern auswählen.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-move-message-to">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guisubmenu
+>Nachricht verschieben nach</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+>Wie das Kopieren einer Nachricht, aber Sie <action
+>verschieben die ausgewählte Nachricht in den angegebenen Ordner.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-mark-messages">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guisubmenu
+>Nachricht markieren</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+>Erlaubt es Ihnen den Status der ausgewählten Nachricht auf einen der folgenden Werte zu setzen:</para>
+<informaltable
+><tgroup cols="2">
+<thead
+><row
+><entry
+>Status</entry
+><entry
+>Symbol</entry
+><entry
+>Bedeutung</entry
+></row
+></thead>
+<tbody>
+<row>
+<entry
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>V</keycap
+></keycombo
+></shortcut
+> <guimenuitem
+>Nachricht als gelesen markieren</guimenuitem
+> </menuchoice
+></entry>
+<entry
+><inlinemediaobject>
+  <imageobject>
+    <imagedata fileref="mail-mark-read.png" format="PNG"/></imageobject>
+</inlinemediaobject
+></entry>
+<entry
+>Die Nachricht wurde gelesen.</entry
+></row>
+<row>
+<entry
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Z</keycap
+></keycombo
+></shortcut
+> <guimenuitem
+>Nachricht als ungelesen markieren</guimenuitem
+> </menuchoice
+></entry>
+<entry
+><inlinemediaobject>
+  <imageobject>
+    <imagedata fileref="mail-mark-unread.png" format="PNG"/></imageobject>
+</inlinemediaobject
+></entry>
+<entry
+>Die Nachricht wurde noch nicht gelesen.</entry
+></row>
+<row>
+<entry
+><guimenuitem
+>Nachricht als wichtig markieren</guimenuitem
+></entry>
+<entry
+><inlinemediaobject>
+  <imageobject>
+    <imagedata fileref="mail-mark-important.png" format="PNG"/></imageobject>
+</inlinemediaobject
+></entry>
+<entry
+>Dieser Status wird nicht automatisch von &kmail; gesetzt. Sie können ihn frei verwenden, um Nachrichten zu markieren, die in irgendeiner Weise wichtig für Sie sind.</entry
+></row>
+<row>
+<entry
+><guimenuitem
+>Wichtig-Markierung entfernen</guimenuitem
+></entry>
+<entry
+><inlinemediaobject>
+  <imageobject>
+    <imagedata fileref="mail-mark-important.png" format="PNG"/></imageobject>
+</inlinemediaobject
+></entry>
+<entry
+>Entfernt eine vorher gesetzte Markierung „Wichtig“ von der Nachricht.</entry
+></row>
+<row>
+<entry
+><guimenuitem
+>Nachricht als „Aufgabe“ markieren</guimenuitem
+></entry>
+<entry
+><inlinemediaobject>
+  <imageobject>
+    <imagedata fileref="mail-mark-task.png" format="PNG"/></imageobject>
+</inlinemediaobject
+></entry>
+<entry
+>Dieser Status wird nicht automatisch von &kmail; gesetzt. Sie können ihn frei verwenden, um Nachrichten als Aktionen zu markieren, &eg; als Aufgabenlisten.</entry
+></row>
+<row
+><entry
+><guimenuitem
+>„Aufgabe“-Markierung entfernen</guimenuitem
+></entry>
+<entry
+><inlinemediaobject>
+  <imageobject>
+    <imagedata fileref="mail-mark-task.png" format="PNG"/></imageobject>
+</inlinemediaobject
+></entry>
+<entry
+>Entfernt die vorher gesetzte am Aktionsmarkierung von der ausgewählten Nachricht.</entry
+></row>
+</tbody>
+</tgroup
+></informaltable
+></listitem>
+</varlistentry>
+<varlistentry id="reader-mark-thread">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guisubmenu
+>Gruppe markieren</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+>Erlaubt es Ihnen, den Status aller Nachrichten in einer Gruppe auf einen der folgenden Werte zu setzen:</para>
+<informaltable
+><tgroup cols="2">
+<thead
+><row
+><entry
+>Status</entry
+><entry
+>Symbol</entry
+><entry
+>Bedeutung</entry
+></row
+></thead>
+<tbody>
+<row>
+<entry
+><guimenuitem
+>Gruppe als gelesen markieren</guimenuitem
+></entry>
+<entry
+><inlinemediaobject>
+  <imageobject>
+    <imagedata fileref="mail-mark-read.png" format="PNG"/></imageobject>
+</inlinemediaobject
+></entry>
+<entry
+>Alle Nachrichten der Gruppe wurden gelesen.</entry
+></row>
+<row>
+<entry
+><guimenuitem
+>Gruppe als ungelesen markieren</guimenuitem
+></entry>
+<entry
+><inlinemediaobject>
+  <imageobject>
+    <imagedata fileref="mail-mark-unread.png" format="PNG"/></imageobject>
+</inlinemediaobject
+></entry>
+<entry
+>Diese Gruppe wurde noch nicht gelesen.</entry
+></row>
+<row>
+<entry
+><guimenuitem
+>Gruppe als wichtig markieren</guimenuitem
+></entry>
+<entry
+><inlinemediaobject>
+  <imageobject>
+    <imagedata fileref="mail-mark-important.png" format="PNG"/></imageobject>
+</inlinemediaobject
+></entry>
+<entry
+>Dieser Status wird nicht automatisch von &kmail; gesetzt. Sie können ihn frei verwenden, um Gruppen von Nachrichten zu markieren, die in irgendeiner Weise wichtig für Sie sind.</entry
+></row>
+<row>
+<entry
+><guimenuitem
+>Markierung „Wichtig“ der Gruppe entfernen</guimenuitem
+></entry>
+<entry
+><inlinemediaobject>
+  <imageobject>
+    <imagedata fileref="mail-mark-important.png" format="PNG"/></imageobject>
+</inlinemediaobject
+></entry>
+<entry
+>Entfernt eine vorher gesetzte Markierung „Wichtig“ von der Gruppe.</entry
+></row>
+<row>
+<entry
+><guimenuitem
+>Gruppe als Aufgabe markieren</guimenuitem
+></entry>
+<entry
+><inlinemediaobject>
+  <imageobject>
+    <imagedata fileref="mail-mark-task.png" format="PNG"/></imageobject>
+</inlinemediaobject
+></entry>
+<entry
+>Dieser Status wird nicht automatisch von &kmail; gesetzt. Sie können ihn frei verwenden, um Gruppen als Aktionen zu markieren, &eg; als Aufgabenlisten.</entry
+></row>
+<row>
+<entry
+><guimenuitem
+>Gruppen-Markierung „Aufgabe“ entfernen</guimenuitem
+></entry>
+<entry
+><inlinemediaobject>
+  <imageobject>
+    <imagedata fileref="mail-mark-task.png" format="PNG"/></imageobject>
+</inlinemediaobject
+></entry>
+<entry
+>Entfernt eine vorher gesetzte Markierung „Aufgabe“ von der Gruppe.</entry
+></row>
+<row>
+<entry
+><guimenuitem
+>Gruppe überwachen</guimenuitem
+></entry>
+<entry
+><inlinemediaobject>
+  <imageobject>
+    <imagedata fileref="mail-thread-watch.png" format="PNG"/></imageobject>
+</inlinemediaobject
+></entry>
+<entry
+>Setzt den Status der Gruppe auf <guilabel
+>Überwacht</guilabel
+>. Dann können Sie problemlos für Sie wichtige Gruppen anzeigen, wenn Sie in der Sortierleiste im Auswahlfeld den Status <guilabel
+>Überwacht</guilabel
+> einstellen.</entry
+></row>
+<row>
+<entry
+><guimenuitem
+>Gruppe ignorieren</guimenuitem
+></entry>
+<entry
+><inlinemediaobject>
+  <imageobject>
+    <imagedata fileref="mail-thread-ignored.png" format="PNG"/></imageobject>
+</inlinemediaobject
+></entry>
+<entry
+>Ermöglicht das Ignorieren der gesamten Gruppe.</entry
+></row>
+</tbody
+></tgroup
+></informaltable
+></listitem>
+</varlistentry>
+<varlistentry id="message-create-filter">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guisubmenu
+>Filter anlegen</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet den Dialog <link linkend="filter-dialog-id"
+>Filter</link
+> mit einem neuen Filter</action
+>. Dieser neue Filter basiert abhängig vom gewählten Untermenü auf Feldern der aktuellen Nachricht.</para>
+<simplelist>
+  <member
+>Nach Betreff filtern...</member>
+  <member
+>Nach Absender filtern ...</member>
+  <member
+>Nach Empfänger filtern ...</member>
+  <member
+>Nach Mailinglisten filtern: nur verfügbar, wenn die aktuell ausgewählte E-Mail in einer Mailingliste ist.</member>
+</simplelist
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-apply-filter">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Filter anwenden</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Mit dieser Aktion können Sie <guimenuitem
+>Alle Filter anwenden</guimenuitem
+>.</action
+> Haben Sie Spam-Filterung mit dem <link linkend="the-anti-spam-wizard"
+>Anti-Spam-Assistenten</link
+> eingerichtet haben, erscheinen auch die Einträge <guimenuitem
+>Als Spam klassifizieren</guimenuitem
+> und <guimenuitem
+>Als Nicht-Spam klassifizieren</guimenuitem
+> in diesem Untermenü.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-create-to-do-reminder">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Aufgabe/Erinnerung erstellen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet den Aufgaben-/Erinnerungsdialog von &kontact;</action
+> mit den Optionen, die ausgewählte E-Mail als Verknüpfung anzuhängen und mit oder ohne Anhänge in den Text einzufügen.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-message-add-note">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Notiz hinzufügen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet einen Dialog zur Eingabe von Text, der als Notiz zur ausgewählten E-Mail hinzugefügt wird.</action
+></para
+></listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+
+<sect2 id="reader-tools-menu">
+<title
+>Das Menü Extras</title>
+<variablelist>
+<varlistentry id="reader-tools-find-messages">
+<term
+><menuchoice
+><shortcut
+><keycap
+>S</keycap
+></shortcut
+> <guimenu
+>Extras</guimenu
+> <guimenuitem
+>Nachricht suchen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet ein Suchfenster</action
+>, das die Suche nach Nachrichten mit bestimmten Eigenschaften, &eg; einem bestimmten Betreff, erlaubt. Weitere Details zur Einstellungen für die Suche finden Sie im Abschnitt <link linkend="filter-criteria"
+>Filter-Kriterien</link
+>,</para>
+<para
+>Das Ergebnis der Suche wird im Textfeld angezeigt. Dann können Sie den <guibutton
+>Suchordner öffnen</guibutton
+> oder eine Nachricht auswählen und auf <guibutton
+>Nachricht öffnen</guibutton
+> klicken.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-tools-certificate-manager">
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Zertifikatsverwaltung ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Startet <ulink url="help:kleopatra"
+>&kleopatra;</ulink
+>, die Zertifikats-Verwaltung von &kde;.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-tools-gnupg-log-viewer">
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>GnuPG-Protokollanzeige</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Startet <ulink url="help:kwatchgnupg"
+><application
+>KWatchGnuPG</application
+></ulink
+></action
+>, ein Hilfsprogramm, mit dem Sie die Ausgaben des Programms <application
+>GnuPG</application
+> verfolgen können. Wenn das Signieren, Verschlüsseln oder Überprüfen auf einmal mysteriöserweise nicht mehr funktioniert, können Sie so möglicherweise den Grund dafür herausfinden.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-tools-edit-out-of-office-replies">
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guisubmenu
+>Abwesenheitsbenachrichtigungen bearbeiten ...</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Startet den Dialog zur Konfiguration der Antworten bei Abwesenheit</action
+>, wo Sie die entsprechenden Benachrichtigungen einstellen können.</para>
+<note
+><para
+>Die Funktionalität Abwesenheitsbenachrichtigung beruht auf serverseitigen Filtern. Damit Sie diese Funktionalität verwenden können, müssen Sie die Seite <link linkend="receiving-mail"
+>Filter</link
+> Ihres &imap;-Postfachs einrichten.</para
+></note
+></listitem>
+</varlistentry>
+<varlistentry id="reader-tools-debug-sieve">
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guisubmenu
+>Fehlersuche im Sieve-Filter ...</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet den Dialog <guilabel
+>Diagnose von Sieve</guilabel
+>.</action
+> Benutzen Sie diesen Dialog, um Probleme mit Sieve zu untersuchen.</para>
+<note
+><para
+>Diese Funktion benötigt die Unterstützung für Sieve auf Ihrem E-Mail-Server.</para
+></note
+></listitem>
+</varlistentry>
+<varlistentry id="reader-tools-filter-log-viewer">
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guisubmenu
+>Filterprotokoll anzeigen ...</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet das Anzeigefenster für das Filterprotokoll</action
+>. Hier finden Sie einige Optionen zur Steuerung des Filtervorgangs. Im Protokoll finden Sie wertvolle Informationen darüber, welche Filterregeln verwendet wurden, was das Ergebnis der Auswertung dieser Regeln war, und welche Filteraktionen auf eine Nachricht angewendet wurden.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-tools-import-wizard">
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guisubmenu
+>Import-Assistent ...</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Startet den Import-Assistenten</action
+>, der Sie beim Import von Einstellungen und E-Mails anderer Programme unterstützt. Weitere Informationen dazu im Handbuch zum <ulink url="help:/importwizard"
+>Import-Assistent</ulink
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-tools-export-data">
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guisubmenu
+>&kmail;-Daten exportieren ...</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Startet den Dialog PIM-Einstellungs-Export</action
+>, der Sie beim Export von Einstellungen und E-Mails unterstützt. Weitere Informationen dazu im Abschnitt <ulink url="help:/pimsettingexporter"
+>PIM-Einstellungs-Export</ulink
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-tools-account-wizard">
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guisubmenu
+>Postfach-Assistent ...</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Startet den Postfach-Assistenten</action
+>, der Sie bei der Einrichtung eines Postfachs unterstützt. Weitere Informationen dazu im Abschnitt <link linkend="account-wizard"
+>Postfach-Assistent</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-tools-anti-spam-wizard">
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Anti-Spam-Assistent ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Startet einen Assistenten</action
+>, der Ihnen bei der Einrichtung der Spam-Filter hilft. Weitere Informationen dazu im Abschnitt <link linkend="the-anti-spam-wizard"
+>Anti-Spam-Assistent</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-tools-anti-virus-wizard">
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Anti-Virus-Assistent ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Startet einen Assistenten</action
+>, der Ihnen bei der Einrichtung der Viruserkennung hilft. Weitere Informationen dazu im Abschnitt <link linkend="the-anti-virus-wizard"
+>Anti-Virus-Assistent</link
+>.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</sect2>
+
+
+<sect2 id="reader-settings-menu">
+<title
+>Das Menü Einstellungen</title>
+<para
+>Hier werden nur die besonderen Einträge für &kmail; aufgeführt, alle sonstigen Menüeinträge finden Sie im <ulink url="help:/fundamentals/ui.html#menus-settings"
+>
+>Menu Einstellungen</ulink
+> in den &kde;-Grundlagen.</para>
+<variablelist>
+<varlistentry id="reader-settings-show-quick-search-bar">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Schnellsuche anzeigen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Schaltet die Anzeige der Schnellsuchleiste ein.</action
+> Wenn diese eingeblendet ist, können Sie in der Suchleiste schnell nach Nachrichten suchen, die einen bestimmten Text im angezeigten Vorspann enthalten.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-settings-configure-filters">
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Filter einrichten ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet den Dialog <link linkend="filters"
+>Filterregeln</link
+>.</action
+></para
+></listitem>
+</varlistentry>
+<!--FIXME http://www.aegiap.eu/kdeblog/2013/08/new-in-kdepim-4-12-sieve-12/ -->
+<varlistentry id="settings-manage-sieve-scripts">
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>„Sieve“-Skripte verwalten ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Wenn Ihr E-Mail-Server Sieve (Filtern auf dem Server) unterstützt, können Sie hiermit <action
+>Ihre Skripte einrichten</action
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-settings-configure-automatic-archiving">
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Automatische Archivierung einrichten ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet den Dialog für die automatische Archivierung.</action
+> Weitere Informationen dazu im Handbuch <ulink url="help:/akonadi_archivemail_agent"
+>Automatische Archivierung</ulink
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-settings-configure-send-later-agent">
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Agent zum späteren Senden einrichten ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet einen Dialog, um das Versenden von geplanten E-Mails zu bearbeiten oder sie zu entfernen.</action
+> Weitere Informationen dazu im Handbuch <ulink url="help:/akonadi_sendlater_agent"
+>Agent zum späteren Senden</ulink
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-settings-configure-folder-archive-agent">
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Agent zur Ordner-Archivierung einrichten ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet einen Dialog, in dem Sie für jedes einzelne Postfach die Funktion zur Archivierung von Ordnern einrichten können.</action
+> Weitere Informationen dazu im Abschnitt <ulink url="help:/akonadi_folderarchive_agent"
+>Agent zur Ordner-Archivierung</ulink
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="reader-settings-configure-notifications">
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+><guimenuitem
+>Benachrichtigungen festlegen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet einen Dialog, in dem Sie Benachrichtigungen einstellen können</action
+> für den Fall, das neue Nachrichten eingehen, &eg; einen Klang abspielen oder eine Meldung anzeigen &etc;</para
+></listitem>
+</varlistentry>
+</variablelist>
+</sect2>
+<sect2>
+<title
+>Das Menü Hilfe</title>
+<para
+>Siehe <ulink url="help:/fundamentals/ui.html#menus-help"
+>Hilfe-Menü</ulink
+> in den &kde;-Grundlagen.</para>
+</sect2>
+</sect1>
+
+<sect1 id="composer-window-menus">
+<title
+>Das &kmail;-Editorfenster</title>
+
+<sect2 id="composer-file-menu">
+<title
+>Das Menü Nachricht</title>
+<variablelist>
+<varlistentry id="composer-message-new-composer">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Neue Nachricht</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet ein neues Editorfenster zum Schreiben einer neuen Nachricht.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-message-new-main-window">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Neues Hauptfenster</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet ein neues <guilabel
+>Hauptfenster</guilabel
+>.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-message-new-addressbook-contact">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Neuer Adressbuchkontakt</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet den Dialog Neuer Kontakt</action
+>, in dem Sie neue Kontaktdaten in Ihr Adressbuch eingeben können.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-message-send-mail">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Eingabe</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>E-Mail versenden</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Versendet die Nachricht sofort</action
+>. Falls Sie &SMTP; zum Versand von Nachrichten verwenden und der &SMTP;-Server nicht erreichbar ist, wird die Nachricht nach einer Fehlermeldung in den Postausgang gestellt. Wenn die Verbindungsprobleme gelöst sind, kann die Nachricht dann später über <menuchoice
+><guimenu
+>Datei</guimenu
+><guimenuitem
+>Postausgang versenden</guimenuitem
+></menuchoice
+> abgeschickt werden.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-message-send-mail-via">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>E-Mail versenden mit</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Mit dieser Aktion können Sie einen ausgehenden E-Mail-Server wählen, den Sie zum Versenden der Nachricht verwenden möchten.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-message-send-later">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Später senden</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet den Dialog zum späteren Versendet der Nachricht.</action
+>. Weitere Informationen dazu im Abschnitt <link linkend="send-later"
+>Später senden</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-message-send-later-via">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Später senden mit</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Mit dieser Aktion können Sie einen ausgehenden Versandweg wählen, den Sie zum späteren Versenden der Nachricht verwenden möchten.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-message-save-as-file">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Als Datei speichern</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Speichert die Nachricht als Textdokument.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-message-save-as-draft">
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Als Entwurf speichern</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Speichert die Nachricht im Ordner <guilabel
+>Entwürfe</guilabel
+></action
+>. Man kann sie dort später weiter bearbeiten und dann senden.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-message-save-as-template">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Als Vorlage speichern</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Mit dieser Aktion können Sie Ihre <action
+>Nachricht als Vorlage speichern.</action
+>. Weitere Informationen dazu finden Sie im Abschnitt <link linkend="new-compose-from-templates"
+>Neue Nachricht von Vorlage</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-message-insert-text-file">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Textdatei einfügen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Fügt an der aktuellen Cursor-Position eine Textdatei in die Nachricht ein</action
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-message-insert-recent-text-file">
+<term
+><menuchoice
+><guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Kürzlich verwendete Textdatei einfügen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ermöglicht die Auswahl von kürzlich verwendeten Dateien, um Sie in Ihre Nachricht einzufügen. Wählen Sie <guimenuitem
+>Liste leeren</guimenuitem
+>, um alle Einträge zu entfernen.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-message-print">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>P</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Drucken ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Druckt die gerade angezeigte Nachricht.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-message-close">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>W</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Nachricht</guimenu
+> <guimenuitem
+>Schließen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Schließt das ‚Nachricht erstellen‘-Fenster.</action
+></para
+></listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+
+<sect2 id="composer-edit-menu">
+<title
+>Das Menü Bearbeiten</title>
+<para
+>Hier werden nur die besonderen Einträge für &kmail; aufgeführt, alle sonstigen Menüeinträge finden Sie im <ulink url="help:/fundamentals/ui.html#menus-edit"
+>Menu Bearbeiten</ulink
+> in den &kde;-Grundlagen.</para>
+<variablelist>
+<varlistentry id="composer-edit-paste-quotation">
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Bearbeiten</guimenu
+> <guimenuitem
+>Als Zitat einfügen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Fügt den Text aus der Zwischenablage</action
+> als Zitat markiert ein.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-edit-paste-attachment">
+<term
+><menuchoice
+><guimenu
+>Bearbeiten</guimenu
+> <guimenuitem
+>Als Anhang einfügen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Fügt den Text aus der Zwischenablage</action
+> als Anhang ein.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-edit-paste-without-formatting">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>V</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Bearbeiten</guimenu
+><guimenuitem
+>Ohne Formatierung einfügen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Fügt den Text aus der Zwischenablage</action
+> unformatiert ein.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-edit-clean-spaces">
+<term
+><menuchoice
+><guimenu
+>Bearbeiten</guimenu
+> <guimenuitem
+>Zwischenräume komprimieren</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Es werden mehrere Zeilenumbrüche oder Leerzeichen durch ein einziges dieser Zeichen ersetzt. Falls Text ausgewählt ist, bezieht sich die Funktion auf diese Auswahl, ansonsten auf den gesamten Nachrichtentext.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-edit-add-quote-characters">
+<term
+><menuchoice
+><guimenu
+>Bearbeiten</guimenu
+> <guimenuitem
+>Zitatzeichen hinzufügen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Stellt dem ausgewählten Text Anführungsstriche voran.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-edit-remove-quote-characters">
+<term
+><menuchoice
+><guimenu
+>Bearbeiten</guimenu
+> <guimenuitem
+>Zitatzeichen entfernen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Entfernt die am weitesten links stehenden Anführungsstriche im ausgewählten Text.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-edit-uppercase">
+<term
+><menuchoice
+><guimenu
+>Bearbeiten</guimenu
+> <guimenuitem
+>Großschreibung</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Wandelt den ausgewählten Text in Großbuchstaben um.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-edit-lowercase">
+<term
+><menuchoice
+><guimenu
+>Bearbeiten</guimenu
+> <guimenuitem
+>Kleinschreibung</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Wandelt den ausgewählten Text in Kleinbuchstaben um.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-edit-insert-special-characters">
+<term
+><menuchoice
+><guimenu
+>Bearbeiten</guimenu
+> <guimenuitem
+>Sonderzeichen einfügen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ermöglicht das Einfügen von Sonderzeichen in E-Mails.</para
+></listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+<sect2 id="composer-view-menu">
+<title
+>Das Menü Ansicht</title>
+
+<para
+>Dieses Menü lässt Sie unter anderem bestimmen, welche Felder des Vorspanns im Editorfenster angezeigt werden.</para>
+<para
+>Angezeigte Vorspannfelder haben einen Haken links neben dem Menüeintrag.</para>
+
+<para
+>Mögliche Einstellungen sind:</para>
+
+<itemizedlist>
+  <listitem>
+    <para
+><guimenuitem
+>Alle Felder</guimenuitem
+></para>
+  </listitem>
+  <listitem>
+    <para
+><guimenuitem
+>Identität</guimenuitem
+></para>
+  </listitem>
+  <listitem>
+    <para
+><guimenuitem
+>Wörterbuch</guimenuitem
+></para>
+  </listitem>
+  <listitem>
+    <para
+><guimenuitem
+>Ordner für versandte Nachrichten</guimenuitem
+></para>
+  </listitem>
+  <listitem>
+    <para
+><guimenuitem
+>Versandart</guimenuitem
+></para>
+  </listitem>
+  <listitem>
+    <para
+><guimenuitem
+>Von</guimenuitem
+></para>
+  </listitem>
+  <listitem>
+    <para
+><guimenuitem
+>Antwort an</guimenuitem
+></para>
+  </listitem>
+  <listitem>
+    <para
+><guimenuitem
+>Betreff</guimenuitem
+></para>
+  </listitem>
+</itemizedlist>
+
+<para
+>Weitere Informationen zu diesen Einstellungen finden Sie im Abschnitt <link linkend="composer-headers"
+>Vorspannfelder im Feditor</link
+>.</para>
+
+<variablelist>
+<varlistentry id="composer-view-use-fixed-font">
+<term
+><menuchoice
+><guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Feste Zeichenbreiten</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Verwendet einen Zeichensatz fester Breite (nicht-proportional), um die Nachrichten des aktuellen Ordners anzuzeigen. Der gewünschte Zeichensatz kann im Abschnitt <guilabel
+>Erscheinungsbild</guilabel
+> des Einrichtungsdialogs von &kmail; festgelegt werden.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-view-snippets">
+<term
+><menuchoice
+><guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Textbausteine</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Zeigt rechts im Editorfenster eine Spalte mit Textbausteinen. Aus dieser Spalte können Sie Textbausteine in das Dokument einfügen oder neue Bausteine erstellen. Weitere Informationen dazu im Abschnitt <link linkend="setup-text-snippets"
+>Textbausteine einrichten</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-view-translator">
+<term
+><menuchoice
+><guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Übersetzer</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Zeigt das Übersetzerfenster unten im Editor an. Im Abschnitt <link linkend="using-the-translator"
+>Übersetzungsmodul</link
+> finden Sie weitere Informationen.</para
+></listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+<sect2 id="composer-options-menu">
+<title
+>Das Menü Optionen</title>
+<para
+>In diesem Menü können verschiedene Einstellungen für die aktuelle Nachricht ändern.</para>
+<para
+>Aktuell angezeigte Vorspannfelder haben einen Haken links neben dem Menüeintrag.</para>
+<variablelist>
+
+<varlistentry id="composer-options-urgent">
+<term
+><menuchoice
+><guimenu
+>Optionen</guimenu
+> <guimenuitem
+>Dringend</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Legt die Priorität der Nachricht als dringend fest. Falls das E-Mail-Programm des Empfängers keine Prioritäten unterstützt, hat diese Einstellung keine Auswirkungen. &kmail; selbst unterstützt keine Prioritäten für eingehende Nachrichten.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-options-request-mdn">
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+><guimenuitem
+>Empfangsbenachrichtigung anfordern</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Wenn Sie diese Option aktivieren, werden Sie eine Bestätigungsnachricht erhalten, wenn Ihre Nachricht vom Empfänger heruntergeladen und gelesen wurde. Die Funktion hängt ebenfalls von den Fähigkeiten des E-Mail-Programms des Empfängers ab.</para>
+<para
+>In <xref linkend="configure-security-reading-mdns"/> finden Sie Hintergrundinformationen und Einstellungsmöglichkeiten zum Lesen der Bestätigungen, die &kmail; selbst sendet.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-options-sign-message">
+<term
+><menuchoice
+><guimenu
+>Optionen</guimenu
+> <guisubmenu
+>Nachricht signieren</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+>Fügt zur Nachricht mit Hilfe von <application
+>OpenPGP</application
+> eine digitale Signatur hinzu. Mehr zu diesem Thema findet man im <link linkend="pgp"
+>Kapitel über OpenPGP</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-options-encrypt-message">
+<term
+><menuchoice
+><guimenu
+>Optionen</guimenu
+> <guisubmenu
+>Nachricht verschlüsseln</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+>Verschlüsselt die Nachricht unter Verwendung von <application
+>OpenPGP</application
+>. Mehr zu diesem Thema findet man im <link linkend="pgp"
+>Kapitel über OpenPGP</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-options-select-crypto-message-format">
+<term
+><menuchoice
+><guimenu
+>Optionen</guimenu
+> <guisubmenu
+>Nachrichten-Verschlüsselungsformat</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+>Wählt das kryptografische Nachrichtenformat aus, mit dem die Nachricht digital signiert und/oder verschlüsselt wird. Mehr Informationen finden Sie im Abschnitt <link linkend="cryptographic-message-formats"
+>Kryptografische Nachrichtenformate</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-options-rich-text-editing">
+<term
+><menuchoice
+><guimenu
+>Optionen</guimenu
+> <guisubmenu
+>Bearbeiten in Rich-Text</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+>Schaltet das Bearbeiten von „Rich Text“-/&html;-Nachrichten ein.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-options-encoding">
+<term
+><menuchoice
+><guimenu
+>Optionen</guimenu
+> <guisubmenu
+>Kodierung</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+>Legt die Kodierung für diese Nachricht fest. Die ausgewählte Einstellung erscheint im Vorspann der ausgehenden Nachricht. Man kann in fast allen Fällen <guilabel
+>Autom. erkennen</guilabel
+> auswählen. &kmail; meldet sich, wenn die Kodierung manuell festgelegt werden muss.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-options-wordwrap">
+<term
+><menuchoice
+><guimenu
+>Optionen</guimenu
+> <guimenuitem
+>Zeilenumbruch</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Schaltet den automatischen Zeilenumbruch an/aus. Es kann sinnvoll sein, diese Funktion zu deaktivieren, wenn man lange Zeilen einfügen möchte und diese nicht umgebrochen werden sollen.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-options-automatic-spellchecking">
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Automatische Rechtschreibprüfung</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Schaltet die automatische Rechtschreibprüfung ein oder aus.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect2>
+
+
+<sect2 id="composer-attach-menu">
+<title
+>Das Menü Anhängen</title>
+
+<para
+>In diesem Menü können Sie die Einstellungen bezüglich der angehängten Daten ändern.</para>
+
+<variablelist>
+
+<varlistentry id="composer-attach-append-signature">
+<term
+><menuchoice
+><guimenu
+>Anhängen</guimenu
+> <guimenuitem
+>Signatur anfügen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Fügt den Inhalt Ihrer Signatur-Datei (<quote
+>Fußnote</quote
+>) an die Nachricht an. Weitere Informationen zum Einrichten der Signatur finden Sie im Abschnitt <link linkend="configure-identity-signature"
+>Signatur</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-attach-prepend-signature">
+<term
+><menuchoice
+><guimenu
+>Anhängen</guimenu
+> <guimenuitem
+>Signatur voranstellen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Fügt den Inhalt Ihrer Signatur (<quote
+>als Kopfzeile</quote
+>) am Anfang der Nachricht ein. Weitere Informationen zum Einrichten der Signatur finden Sie im Abschnitt <link linkend="configure-identity-signature"
+>Signatur</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-attach-cursor-signature">
+<term
+><menuchoice
+><guimenu
+>Anhängen</guimenu
+> <guimenuitem
+>Signatur an der Schreibmarke einfügen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Fügt den Inhalt Ihrer Signatur an der aktuellen Cursor-Position in der Nachricht ein. Weitere Informationen zum Einrichten der Signatur finden Sie im Abschnitt <link linkend="configure-identity-signature"
+>Signatur</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-attach-public-key">
+<term
+><menuchoice
+><guimenu
+>Anhängen</guimenu
+> <guimenuitem
+>Öffentlichen Schlüssel anhängen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öffnet den Dialog <guilabel
+>Öffentlichen OpenPGP-Schlüssel anhängen</guilabel
+>. Weitere Informationen finden Sie im Abschnitt <link linkend="configure-identity-cryptography-openpgp-sign"
+>OpenPGP-Signaturschlüssel</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-attach-attach-my-public-key">
+<term
+><menuchoice
+><guimenu
+>Anhängen</guimenu
+> <guimenuitem
+>Eigenen öffentlichen Schlüssel anhängen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Hängt den eigenen <application
+>GnuPG</application
+>-Schlüssel an die Nachricht an.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-attach-file">
+<term
+><menuchoice
+><guimenu
+>Anhängen</guimenu
+> <guisubmenu
+>Anhängen</guisubmenu
+> <guimenuitem
+>Datei anhängen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Fügt eine oder mehrere Dateien als Anhang an die Nachricht an. In der Voreinstellung werden Anhänge nicht verschlüsselt. Im Abschnitt <link linkend="cryptographic-message-formats"
+>Signieren und Verschlüsseln von Nachrichten</link
+> finden Sie weitere Informationen zu diesem Thema.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-attach-vcard">
+<term
+><menuchoice
+><guimenu
+>Anhängen</guimenu
+> <guisubmenu
+>Anhängen</guisubmenu
+> <guimenuitem
+>Eigene vCard anhängen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Hängt Ihre vCard (elektronische Visitenkarte) an die aktuelle Nachricht an.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-attach-remove-attachment">
+<term
+><menuchoice
+><guimenu
+>Anhängen</guimenu
+> <guimenuitem
+>Anhang entfernen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Entfernt die angehängte Datei, die im Bereich Anhänge des Fensters <guilabel
+>Nachricht erstellen</guilabel
+> ausgewählt wurde.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-attach-save-attachment">
+<term
+><menuchoice
+><guimenu
+>Anhängen</guimenu
+> <guimenuitem
+>Anhang speichern unter ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Speichert die angehängte Datei, die im Bereich Anhänge ausgewählt wurde, in eine Datei.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-attach-attachment-properties">
+<term
+><menuchoice
+><guimenu
+>Anhängen</guimenu
+> <guimenuitem
+>Eigenschaften des Anhangs</guimenuitem
+> </menuchoice>
+</term>
+<listitem>
+<para
+>Zeigt die <link linkend="attachments"
+>Eigenschaften des ausgewählten Anhangs</link
+> in einem Dialog an. Hier können Sie das Verschlüsseln oder Signieren von Anhängen aktivieren. Weitere Informationen zum Einrichten der Verschlüsselung finden Sie im Abschnitt <link linkend="configure-security-composing"
+>Nachrichten erstellen</link
+>.</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect2>
+
+<sect2 id="composer-tools-menu">
+<title
+>Das Menü Extras</title>
+<para
+>Hier werden nur die besonderen Einträge für &kmail; aufgeführt, alle sonstigen Menüeinträge finden Sie im <ulink url="help:/fundamentals/ui.html#menus-tools"
+>Menu Extras</ulink
+> in den &kde;-Grundlagen.</para>
+<variablelist>
+<varlistentry id="composer-tools-select-recipients">
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Empfänger auswählen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet den Dialog <guilabel
+>Empfänger auswählen</guilabel
+></action
+> mit Ihren persönlichen Kontakten.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-tools-addressbook">
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Adressbuch</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet <ulink url="help:/kaddressbook/"
+>&kaddressbook;</ulink
+></action
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry id="composer-tools-save-distribution-list">
+<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Verteilerliste speichern ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet einen Dialog</action
+>, um eine Gruppe von Kontakten zu speichern.</para
+></listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+<sect2 id="composer-settings-menu">
+<title
+>Das Menü Einstellungen</title>
+<para
+>Hier werden nur die besonderen Einträge für &kmail; aufgeführt, alle sonstigen Menüeinträge finden Sie im <ulink url="help:/fundamentals/ui.html#menus-settings"
+>
+>Menu Einstellungen</ulink
+> in den &kde;-Grundlagen.</para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Rechtschreibprüfung ...</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Erlaubt es Ihnen <ulink url="help:/sonnet/"
+>&sonnet;</ulink
+>, die Rechtschreibprüfung von &kde;, zu konfigurieren.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect2>
+
+<sect2>
+<title
+>Das Menü Hilfe</title>
+<para
+>Siehe <ulink url="help:/fundamentals/ui.html#menus-help"
+>Hilfe-Menü</ulink
+> in den &kde;-Grundlagen.</para>
+</sect2>
+</sect1>
+
+</chapter>

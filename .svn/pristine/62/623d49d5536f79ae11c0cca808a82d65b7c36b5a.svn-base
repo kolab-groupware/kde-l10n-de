@@ -1,0 +1,1750 @@
+<chapter id="kdm-themes">
+  <title
+>Das Erstellen von Designs für den Anmeldungsmanager von &kdm;</title>
+
+  <para
+>Dieser Abschnitt beschreibt das Erstellen von Designs für den Anmeldungsmanager. Beispiele mit Bildschirmfotos finden Sie bei den installierten Standarddesigns und den Designs von der <ulink type="http" url="http://www.kde-look.org/index.php?xcontentmode=40"
+>Design-Webseite</ulink
+>. </para>
+
+  <sect1 id="theme-overview">
+    <title
+>Überblick über Designs</title>
+
+    <para
+>Designs für &kdm; können mit Hilfe einer XML-Datei, die der Spezifikation in <filename
+>$<envar
+>KDEDIR</envar
+>/share/apps/doc/kdm/greeter.dtd</filename
+> folgt, erstellt werden. Designs werden im Ordner <filename class="directory"
+>$<envar
+>KDEDIR</envar
+>/share/apps/kdm/themes/<replaceable
+>design_name</replaceable
+></filename
+> abgelegt. Der Design-Ordner sollte eine Datei mit dem Namen <filename
+>KdmGreeterTheme.desktop</filename
+> enthalten, die ein ähnliches Format aufweist wie die anderen <filename class="extension"
+>.desktop</filename
+>-Dateien und wie folgt aussieht: <programlisting
+>[KdmGreeterTheme]
+Greeter=circles.xml
+Name=Circles
+Description=Theme with blue circles
+Author=Bond, James Bond
+Copyright=(c) 2002 Bond, James Bond
+Screenshot=screenshot.png
+</programlisting>
+    </para>
+
+    <para
+>Die Felder <literal
+>Name</literal
+>, <literal
+>Description</literal
+>, <literal
+>Author</literal
+> und <literal
+>Copyright</literal
+> können wie bei den anderen <filename class="extension"
+>.desktop</filename
+>-Dateien übersetzt werden. Alle aufgeführten Dateien sollten sich im Design-Ordner befinden. Das Feld <literal
+>Screenshot</literal
+> verweist auf eine Datei mit einem 200x150 großen Bildschirmfoto des Designs. (Sie können darauf auch verzichten, aber für den Anwender bietet es einen Vorteil.) Der Eintrag <literal
+>Greeter</literal
+> verweist auf eine XML-Datei, die die Beschreibung des Designs enthält. </para>
+
+    <!--
+    <para>
+      Once a theme is installed, it can be tested with the
+      <command
+>gdmthemetester</command
+> program.  This program assumes that
+      the X server supports a nested server command.  This command takes two
+      arguments, first the environment that should be used.  The environment
+      can be one of the following values: console, console-timed, flexi,
+      remote-flexi, or xdmcp.  The &quot;console&quot; option tests the
+      theme as it would be shown on an attached display.  The
+      &quot;console-timed&quot; option tests the theme as it would be shown
+      on an attached display with timed login enabled.  The &quot;flexi&quot;
+      option tests the theme as it would be shown on an attached flexible
+      display (such as started via Xnest).  Finally, the &quot;xdmcp&quot;
+      option tests the theme as it would be shown for remote XDMCP 
+      displays.  The second argument is the theme name.  For example, to 
+      test how the circles theme would look in XDMP remote display mode,
+      you would run the following command:
+    </para>
+
+<cmdsynopsis>
+  <command
+>gdmthemetester</command
+> <arg
+>xdmcp</arg
+> <arg
+><replaceable
+>circles</replaceable
+></arg>
+</cmdsynopsis>
+
+    <para>
+      When developing a theme, make sure to test all the environments, and
+      make sure to test how the caps lock warning looks by pressing the caps
+      lock key.  Running <command
+>gdmthemetester</command
+> is also a good way
+      to take screenshots of &kdm; themes.  Simply take a screenshot of the
+      theme running in the nested display window.  This can be done in GNOME
+      by focusing the nested login window and pressing Alt-PrintScreen.
+    </para>
+    -->
+
+    <para
+>Wenn das Design gründlich getestet ist, erstellen Sie ein tar-Archiv, das den Ordner in dem Zustand enthält, wie er im Ordner <filename class="directory"
+>$<envar
+>KDEDIR</envar
+>/share/apps/kdm/themes</filename
+> installiert werden soll. Dies ist das Standardformat für die Verteilung von Designs für &kdm;. </para>
+  </sect1>
+
+  <sect1 id="theme-format">
+    <title
+>Ausführliche Beschreibung des XML-Formats für Designs</title>
+
+    <sect2 id="greeter-tag">
+      <title
+>Wurzel-Knoten</title>
+
+      <para
+>Designs für &kdm; sind XML-Dateien mit dem Tag &lt;greeter&gt; als Wurzel. Der Knoten auf der obersten Ebene ist ein <link linkend="item-nodes"
+>Elementknoten</link
+> des Typs <literal
+>rect</literal
+> mit einer impliziten <link linkend="fixed-nodes"
+>festgelegten Anordnung</link
+>. </para>
+
+      <!--
+      <para>
+        You may specify a Qt GUI style to
+        be used with this theme by using the gui-style attribute in the
+          greeter tag as in the following example.
+ gui-style=&quot;Plastique&quot;
+      </para>
+      -->
+
+<programlisting
+>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE greeter SYSTEM "greeter.dtd"&gt;
+&lt;greeter&gt;
+[...]
+&lt;/greeter&gt;
+</programlisting>
+
+      <para
+>Eingeschlossen in das greeter-Tag können weitere Knoten sein, die in den folgenden Abschnitten dieses Dokuments beschrieben sind. Einige dieser Knoten sind Container (Anordnungs-Knoten, Element-Knoten), die weitere Knoten enthalten können. </para>
+    </sect2>
+
+    <sect2 id="item-nodes">
+      <title
+>Element-Knoten</title>
+
+      <para
+>Ein &kdm;-Design wird durch die Angabe einer Hierarchie von Element- und Anordnungsknoten erstellt. Element-Knoten können folgende Werte für das Attribut <literal
+>Typ</literal
+> haben: </para>
+
+      <variablelist>
+
+        <varlistentry>
+          <term
+>button</term>
+          <listitem>
+            <para
+>Ein Knopf-Feld. Dieses Feld benutzt einen Qt-Knopf. </para>
+            <para
+>Sie können jeden anderen Eintrag dazu veranlassen sich wie ein Knopf zu verhalten, indem Sie das Attribut <literal
+>button</literal
+> auf <literal
+>true</literal
+> setzen. Sie sollten allerdings in &kdm;-Designs lieber Qt-Knöpfe verwenden, da diese auch für Benutzer mit Behinderungen zugänglich sind. </para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term
+>Eintrag</term>
+          <listitem>
+            <para
+>Ein Eingabe-Element wie ein Textfeld oder ein Kombinationsfeld. Beachten Sie, dies ist nur ein Platzhalter für Qt-Elemente.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term
+>label</term>
+          <listitem>
+            <para
+>Eine Beschriftung. Diese muss entweder einen <link linkend="text-nodes"
+><literal
+>text</literal
+>-Knoten</link
+> oder einen <link linkend="stock-nodes"
+><literal
+>stock</literal
+>-Knoten</link
+> mit der Angabe des Textes enthalten. </para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term
+>list</term>
+          <listitem>
+            <para
+>Ein Widget für eine Gesichterliste</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term
+>pixmap</term>
+          <listitem>
+            <para
+>Ein Rasterbild in einem von Qt unterstützten Format, &eg; PNG, JPEG, Tiff usw.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term
+>rect</term>
+          <listitem>
+            <para
+>Ein einfaches Rechteck.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term
+>svg</term>
+          <listitem>
+            <para
+>Ein Vektorbild im SVG-Format.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <para
+>Ein Beispiel: <programlisting>
+&lt;item type=&quot;label&quot;&gt;
+</programlisting
+> Ein Eintrag, der sich wie ein Knopf verhält: <programlisting
+>&lt;item type=&quot;rect&quot; id=&quot;disconnect_button&quot; button=&quot;true&quot;&gt;.
+</programlisting>
+      </para>
+
+      <para
+>In der Voreinstellung verschwindet der Anmeldebildschirm von &kdm; nach der Authentifizierung. Dadurch kann es zu einem Flackern beim Umschalten zwischen Anmeldebildschirm und Arbeitssitzung führen. Mit dem Attribut <literal
+>background</literal
+> kann der Benutzer angeben, welche Elemente des Designs zum Hintergrundbild gehören. In diesem Fall entfernt &kdm; alle Elemente, die nicht zum Hintergrund gehören vom Display und rendert die verbleibenden <literal
+>background</literal
+>-Elemente in das Hintergrundfenster (root window). Damit erreicht man einen sanften Übergang zwischen dem Anmeldebildschirm und der Arbeitssitzung: <programlisting>
+&lt;item type=&quot;rect&quot; background=&quot;true&quot;&gt;
+  &lt;normal file="background.svg"/&gt;
+  &lt;pos x=&quot;0&quot; y=&quot;0&quot; width=&quot;100%&quot; height=&quot;-75&quot;/&gt;
+&lt;/item&gt;
+</programlisting
+> Wenn für den Übergang vom Anmeldebildschirm ein anderer Hintergrund verwendet werden soll als für den Anmeldebildschirm, sollte das Design zwei Element-Knoten angeben (die &eg; Pixmaps oder SVG-Bilder enthalten können). Das Element, das zum Hintergrund für den Anmeldungsmanager gehört, sollte keine Eigenschaft <literal
+>background</literal
+> haben, während das Element für den Übergangshintergrund die Eigenschaft <literal
+>background</literal
+> haben sollte. Ein Beispiel: <programlisting
+>&lt;?xml version="1.0" encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE greeter SYSTEM &quot;greeter.dtd&quot;&gt;
+&lt;greeter&gt;
+  &lt;item type=&quot;rect&quot; background=&quot;true&quot;&gt;
+    &lt;normal file="background_for_login.svg" element="background"/&gt;
+    &lt;pos x=&quot;0&quot; y=&quot;0&quot; width=&quot;100%&quot; height=&quot;100%&quot;/&gt;
+  &lt;/item&gt;
+  &lt;item type=&quot;rect&quot;&gt;
+    &lt;normal file="background_for_greeter.svg"/&gt;
+    &lt;pos x=&quot;0&quot; y=&quot;0&quot; width=&quot;100%&quot; height=&quot;100%&quot;/&gt;
+  &lt;/item&gt;
+  [...]
+&lt;/greeter&gt;
+</programlisting>
+
+      </para>
+
+      <para
+>Für Systeme mit mehreren Bildschirmen kann im Design auch das Erscheinungsbild für die Bildschirme ohne Anmeldungsmanager vorgegeben werden, typischerweise nur Elemente für den Bildschirmhintergrund. Um den Bildschirm anzugeben, auf dem ein Element angezeigt werden soll, kann das Attribut <literal
+>screen</literal
+> mit einem der Werte <literal
+>greeter</literal
+> (für den Bildschirm mit dem Anmeldungsmanager), <literal
+>other</literal
+> (für die Bildschirme ohne Anmeldungsmanager) oder <literal
+>all</literal
+> (für alle Bildschirme) benutzt werden. </para>
+
+      <variablelist>
+        <para
+>Jedem Elemente kann über das Attribut <literal
+>id</literal
+> ein Name zugeordnet werden. &kdm; kennt bestimmte ids, um diesen Elementen besondere Funktionen zuzuordnen: </para>
+
+        <!--
+        <varlistentry>
+          <term
+><literal
+>list</literal
+> items</term>
+          <listitem>
+
+            <para>
+              List items by default display as lists, but the
+              <literal
+>combo=&quot;true&quot;</literal
+> attribute can be used
+              to specify combo box style (combo style supported since &kde; ).
+              Some predefined lists may be included in a theme by using the
+              following id values.  Customized lists may also be defined,
+              which are explained below.
+            </para>
+
+            <segmentedlist>
+              <?dbhtml list-presentation="table"?>
+              <segtitle
+>Id</segtitle
+><segtitle
+>Function</segtitle>
+
+              <seglistitem>
+                <seg
+>session</seg>
+                <seg
+>A list of available sessions, which allows the user to
+                  pick the session to use.  Supported since &kde; .</seg>
+              </seglistitem>
+
+              <seglistitem>
+                <seg
+>language</seg>
+                <seg
+>A list of available languages, which allows the user to
+                  pick the language to use.  Supported since &kde; .</seg>
+              </seglistitem>
+
+            </segmentedlist>
+          </listitem>
+        </varlistentry>
+        -->
+
+        <varlistentry>
+          <term
+><literal
+>button</literal
+>-Elemente und Elemente mit dem Attribut <literal
+>button=&quot;true&quot;</literal
+>.</term>
+
+          <listitem>
+            <para
+>Knöpfe lösen typischerweise bestimmte Aktionen aus. Knöpfe, deren Aktionen aus irgendeinem Grund nicht verfügbar sind, werden von &kdm; ausgeblendet. </para>
+
+            <segmentedlist>
+              <?dbhtml list-presentation="table"?>
+              <segtitle
+>Id</segtitle
+><segtitle
+>Aktion</segtitle>
+
+              <seglistitem>
+                <seg
+>chooser_button</seg>
+                <seg
+>Startet die XDMCP-Auswahl</seg>
+              </seglistitem>
+
+              <!--
+              <seglistitem>
+                <seg
+>custom_cmd_button[0-9]</seg>
+                <seg
+>Runs the <filename
+>n-th</filename
+> custom command.</seg>
+              </seglistitem>
+              -->
+
+              <seglistitem>
+                <seg
+>disconnect_button</seg>
+                <seg
+>Verbindung zu Fremdrechner abbrechen.</seg>
+              </seglistitem>
+
+              <!--
+              <seglistitem>
+                <seg
+>language_button</seg>
+                <seg
+>Open the language selection menu.</seg>
+              </seglistitem>
+              -->
+
+              <!--
+              <seglistitem>
+                <seg
+>halt_button</seg>
+                <seg
+>Power off the system.</seg>
+              </seglistitem>
+
+              <seglistitem>
+                <seg
+>reboot_button</seg>
+                <seg
+>Restart the system.</seg>
+              </seglistitem>
+
+              <seglistitem>
+                <seg
+>suspend_button</seg>
+                <seg
+>Suspend the system.</seg>
+              </seglistitem>
+              -->
+
+              <seglistitem>
+                <seg
+>session_button</seg>
+                <seg
+>Öffnet das Auswahlmenü für den Sitzungstyp.</seg>
+              </seglistitem>
+
+              <seglistitem>
+                <seg
+>system_button</seg>
+                <seg
+>Öffnet ein allumfassendes Menü mit verschiedenen Optionen und Aktion, abhängig von der Konfiguration.</seg>
+              </seglistitem>
+            </segmentedlist>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term
+><literal
+>label</literal
+>-Einträge</term>
+
+          <listitem>
+            <para
+>&kdm; blendet diese Beschriftungen ein bzw. aus und setzt ihren Text abhängig vom Status des Anmeldedialogs. </para>
+
+            <segmentedlist>
+              <?dbhtml list-presentation="table"?>
+              <segtitle
+>Id</segtitle
+><segtitle
+>Funktion</segtitle>
+
+              <!--
+              <seglistitem>
+                <seg
+>pam-prompt</seg>
+                <seg
+>Label that displays the <acronym
+>PAM</acronym
+> prompt.
+                  This is the prompt that <acronym
+>PAM</acronym>
+                  uses to ask for username, password, etc.</seg>
+              </seglistitem>
+
+              <seglistitem>
+                <seg
+>pam-message</seg>
+                <seg
+>Label that displays the <acronym
+>PAM</acronym
+> message.
+                  These are messages that <acronym
+>PAM</acronym
+>/&kdm; gives
+                  about state of the account, help about the prompts and other
+                  information.</seg>
+              </seglistitem>
+              -->
+
+              <seglistitem>
+                <seg
+>pam-error</seg>
+                <seg
+>Hiermit wird die Nachricht <guilabel
+>Anmeldung fehlgeschlagen</guilabel
+> angezeigt.</seg>
+              </seglistitem>
+
+            </segmentedlist>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term
+>Einträge mit eingebetteten Elementen</term>
+
+          <listitem>
+            <para
+>&kdm; bettet bestimmte Qt-Elemente in diese Einträge ein. </para>
+
+            <segmentedlist>
+              <?dbhtml list-presentation="table"?>
+              <segtitle
+>Id</segtitle
+><segtitle
+>Funktion</segtitle>
+
+              <seglistitem>
+                <seg
+>user-entry</seg>
+                <seg
+>Eingabefeld für den Benutzernamen.</seg>
+              </seglistitem>
+
+              <seglistitem>
+                <seg
+>pw-entry</seg>
+                <seg
+>Eingabefeld für das Passwort.</seg>
+              </seglistitem>
+
+              <seglistitem>
+                <seg
+>domain-entry</seg>
+                <seg
+>Einige <quote
+>Kommunikationserweiterungen</quote
+> benutzen dieses Feld zur Abfrage eines Domänen-Namens. Ist dieses Feld vorhanden, sollten die damit verbundenen, umschließenden Elemente <link linkend="show-nodes"
+>Anzeigeknoten</link
+> vom Typ <literal
+>plugin-domain-entry</literal
+> haben.</seg>
+              </seglistitem>
+
+              <seglistitem>
+                <seg
+>talker</seg>
+                <seg
+>Dieses Element sollte den Typ <literal
+>rect</literal
+> haben. Es stellt den <quote
+>heißen</quote
+> Bereich des Anmeldemanagers dar: Es enthält die <literal
+>label</literal
+>- und <literal
+>entry</literal
+>-Elemente, die sich um den Authentifizierungsvorgang kümmern. Findet eine <quote
+>Kommunikationserweiterung</quote
+> nicht die benötigten Elemente, versucht es ein komplexes Bildschirmelement mit eigener Anordnung in dieses Element einzubetten und damit den <quote
+>talker</quote
+> des Designs komplett zu überschreiben. Streng genommen müssen &kdm;-Designs keine eigenen <quote
+>talker</quote
+>-Designs bereitstellen, da alle Authentifizierungserweiterungen von &kdm; das Element <literal
+>talker</literal
+> benutzen können. </seg>
+              </seglistitem>
+
+              <seglistitem>
+                <seg
+>userlist</seg>
+                <seg
+>Dieser Eintrag muss vom Typ <literal
+>list</literal
+> sein. Ist die Funktion Benutzerliste eingeschaltet, bettet &kdm; das Element mit der Benutzerliste hier ein. Anderenfalls ist der Eintrag unsichtbar.</seg>
+              </seglistitem>
+
+              <seglistitem>
+                <seg
+>xconsole</seg>
+                <seg
+>Dieser Eintrag sollte vom Typ <literal
+>rect</literal
+> sein. Ist die eingebaute Funktion <command
+>xconsole</command
+> einkompiliert und aktiviert, bettet &kdm; das Protokoll-Element für die Konsole hier ein. Anderenfalls ist dieser Eintrag ausgeblendet.</seg>
+              </seglistitem>
+
+            </segmentedlist>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term
+>Andere Einträge</term>
+
+          <listitem>
+            <para
+>&kdm; blendet diese Elemente ein bzw. aus, abhängig von der Konfiguration und dem aktuellen Status des Anmeldemanagers. &kdm; setzt hier keinen bestimmten Typ voraus, aber es bietet sich ein bestimmter Typ an. </para>
+
+            <segmentedlist>
+              <?dbhtml list-presentation="table"?>
+              <segtitle
+>Id</segtitle
+><segtitle
+>Nur anzeigen, wenn ...</segtitle>
+
+              <seglistitem>
+                <seg
+>timed-label</seg>
+                <seg
+>... eine geplante Anmeldung läuft.</seg>
+              </seglistitem>
+
+              <seglistitem>
+                <seg
+>caps-lock-warning</seg>
+                <seg
+>... die Feststelltaste aktiv ist.</seg>
+              </seglistitem>
+
+              <seglistitem>
+                <seg
+>xauth-warning</seg>
+                <seg
+>... der &X-Server; keine X-Authorisierung zum Verbinden benötigt.</seg>
+              </seglistitem>
+
+              <!--
+              <seglistitem>
+                <seg
+>pam-error-logo</seg>
+                <seg
+>... a pam-error message is being displayed.
+                  This is useful for displaying an <guiicon
+>Attention</guiicon>
+                  icon, for example.</seg>
+              </seglistitem>
+              -->
+
+              <seglistitem>
+                <seg
+>userlist-rect</seg>
+                <seg
+>... die Benutzerliste eingeschaltet ist. Indem Sie das Element <literal
+>userlist</literal
+> hierin einbetten, ist es möglich so etwas wie einen Rahmen um die Liste zu erstellen, der nur angezeigt wird, wenn auch die Benutzerliste angezeigt wird.</seg>
+              </seglistitem>
+
+              <seglistitem>
+                <seg
+>xconsole-rect</seg>
+                <seg
+>... die eingebaute <command
+>xconsole</command
+> eingeschaltet ist. Verhält sich analog zu <literal
+>userlist-rect</literal
+>.</seg>
+              </seglistitem>
+
+            </segmentedlist>
+          </listitem>
+        </varlistentry>
+
+      </variablelist>
+
+    </sect2>
+
+    <sect2 id="layout-nodes">
+      <title
+>Anordnungscontainer-Knoten</title>
+
+      <para
+>Anordnungsknoten tauchen innerhalb von Element-Knoten auf und enthalten wiederum selbst Element-Knoten. Der Typ des Anordnungsknoten legt das Arrangement der Kindknoten fest. Ein Element-Knoten kann einen Anordnungsknoten beliebigen Typs enthalten. </para>
+
+      <sect3 id="box-nodes">
+        <title
+>Kastenknoten</title>
+
+        <para
+>Kastenknoten ordnen ihre Kinder automatisch in einer Reihe an. Sie sind wie folgt spezifiziert:<programlisting>
+&lt;box orientation=&quot;<replaceable
+>alignment</replaceable
+>&quot; min-width=&quot;<replaceable
+>num</replaceable
+>&quot; min-height=&quot;<replaceable
+>num</replaceable
+>&quot;
+    xpadding=&quot;<replaceable
+>num</replaceable
+>&quot; ypadding=&quot;<replaceable
+>num</replaceable
+>&quot; spacing=&quot;<replaceable
+>num</replaceable
+>&quot;
+    homogeneous=&quot;<replaceable
+>bool</replaceable
+>&quot;&gt;
+</programlisting
+> Hierbei bedeutet <replaceable
+>num</replaceable
+> die Anzahl der Pixel und <replaceable
+>bool</replaceable
+> bedeutet entweder <literal
+>true</literal
+> oder <literal
+>false</literal
+>. Der Wert <replaceable
+>alignment</replaceable
+> kann entweder <literal
+>horizontal</literal
+> oder <literal
+>vertical</literal
+> sein. Lassen Sie ein Attribut aus, wird dieses mit dem Wert 0 für Zahlen, <literal
+>false</literal
+> für bool und <literal
+>vertical</literal
+> für alignment angenommen. </para>
+
+        <para
+>Spacing ist der Abstand zwischen zwei benachbarten Kindelementen. Padding ist der äußere Rand des Kastens. Ist der Kasten <quote
+>homogeneous</quote
+>, wird für jedes Kindelement derselbe Platz bereitgestellt. </para>
+      </sect3>
+
+      <sect3 id="fixed-nodes">
+        <title
+>Fixierte Knoten</title>
+
+        <para
+>Fixiert ist ein Container, dessen Kindelemente an präzisen Koordinaten ausgerichtet sind. Die Größe dieses Containers wird durch das kleinste mögliche Rechteck festgelegt, dass alle Kinder umfasst.  Das Tag fixed verfügt über keine weiteren Attribute, und darum wird es einfach so verwendet: <programlisting>
+&lt;fixed&gt;
+</programlisting
+> Dann platzieren Sie weitere Elemente mit entsprechenden Positionsknoten darin. </para>
+      </sect3>
+
+    </sect2>
+
+    <sect2 id="position-nodes">
+      <title
+>Positionsknoten</title>
+
+      <para
+>Jedes Element kann seine Position und Größe über den <literal
+>pos</literal
+>-Knoten festlegen. Ein Beispiel: <programlisting
+>&lt;pos x=&quot;0&quot; y=&quot;4&quot; width=&quot;100%&quot; height=&quot;100%&quot;/&gt;
+</programlisting>
+      </para>
+
+      <para
+>Ist keine Größe angegeben, wird die <quote
+>natürliche</quote
+> Größe des Elements verwendet, diese wird auch Größenhinweis genannt. Beachten Sie, dass nicht alle Elemente einen sinnvollen Größenhinweis haben. </para>
+
+      <para
+>Position und size können in Prozent angegeben werden und werden in diesem Fall relativ zur Größe des umgebenden Containers berechnet. Bei Elementen der obersten Ebene bezieht sich der Prozentwert auf den gesamten Bildschirm. Durch Anhängen von Circumflexes (<literal
+>^</literal
+>) an die Angabe für size, kann diese auch relativ zur Größe des umschließenden Elements oder dessen umschließenden Elements &etc; angegeben werden. </para>
+
+      <para
+>Enthält der Container einen Kasten, können <literal
+>width</literal
+> und <literal
+>height</literal
+> mit dem Wert <literal
+>box</literal
+> angegeben werden, was bedeutet, dass hier die Breite und Höhe des Kastens (die den Elementen im Kasten zuzüglich des Randes entspricht) gemeint ist. </para>
+
+      <para
+>Entweder <literal
+>width</literal
+> oder <literal
+>height</literal
+> kann hier den Wert <literal
+>scale</literal
+> erhalten. Damit ist gemeint, dass die betreffende Abmessung entsprechend der Größe der anderen Dimension relativ zum Größenhinweis ausgelegt wird. Hiermit kann automatisch das Seitenverhältnis skalierter Bilder beibehalten werden. </para>
+
+      <para
+>Ist das Attribut <literal
+>expand</literal
+> angegeben und hat den Wert <literal
+>true</literal
+>, wird das Element im umschließenden Kasten so weit wie möglich ausgedehnt (das bedeutet, es erhält mehr Platz, wenn dies möglich ist). </para>
+
+      <para
+>Wenn <literal
+>width</literal
+> oder <literal
+>height</literal
+> als Zahlenwert angegeben werden, bedeutet ein negativer Wert einen Abstand zur Größe des umschließenden Containers. Beachten Sie, dass auch ein positiver Versatz angegeben werden kann, indem Sie zwei Minuszeichen angeben. </para>
+
+      <para
+>In jedem Fall kann die endgültige Größe durch die Attribute <literal
+>min-width</literal
+>, <literal
+>min-height</literal
+>, <literal
+>max-width</literal
+> und <literal
+>max-height</literal
+> eingeschränkt werden, die genau so angegeben werden können wie die Attribute <literal
+>width</literal
+> und <literal
+>height</literal
+>. </para>
+
+      <para
+>Wenn <literal
+>x</literal
+> oder <literal
+>y</literal
+> ein Zahlenwert ist, bedeutet ein negativer Wert den Abstand vom rechten bzw. unteren Rand, anders als in der Voreinstellung, bei der der linke bzw. obere Rand gemeint ist. </para>
+
+      <para
+>Es besteht auch die Möglichkeit den Punkt innerhalb des Elements anzugeben, auf den sich die Position bezieht. Dieser wird Anker genannt und kann entweder <literal
+>c</literal
+> für zentriert oder<literal
+>n</literal
+>, <literal
+>ne</literal
+>, <literal
+>e</literal
+>, <literal
+>se</literal
+>, <literal
+>s</literal
+>, <literal
+>sw</literal
+>, <literal
+>w</literal
+> und <literal
+>nw</literal
+> sein. Diese Abkürzungen stehen für die verschiedenen Ränder/Ecken einer topografischen Karte. (Anm. d. Übers.: Die Abkürzungen beziehen sich auf die englischen Himmelsrichtungen). Die Voreinstellung ist <literal
+>nw</literal
+>, für die obere linke Ecke. Ein Beispiel: <programlisting
+>&lt;pos x=&quot;10%&quot; y=&quot;50%&quot; anchor=&quot;w&quot; width=&quot;80%&quot; height=&quot;95&quot;/&gt;
+</programlisting>
+      </para>
+
+    </sect2>
+
+    <sect2 id="show-nodes">
+      <title
+>Anzeigeknoten</title>
+
+      <!-- not really implemented
+      <para>
+        Some items may only display in certain modes, like when doing a
+        remote display.  Multiple values can be specified and must be
+        separated with commas.  The following values are possible:
+      </para>
+
+      <para>
+        <filename
+>console</filename
+> - In console mode.
+      </para>
+      <para>
+        <filename
+>console-fixed</filename
+> - In console non-flexi mode.
+      </para>
+      <para>
+        <filename
+>console-flexi</filename
+> - In console &amp; flexi mode.
+      </para>
+      <para>
+        <filename
+>flexi</filename
+> - In flexi mode.
+      </para>
+      <para>
+        <filename
+>remote</filename
+> - In remote mode.
+      </para>
+      <para>
+        <filename
+>remote-flexi</filename
+> - In remote &amp; flexi mode.
+      </para>
+
+      <para>
+        For example:
+<programlisting
+>
+&lt;show modes=&quot;flexi,remote&quot;/&gt;
+</programlisting>
+      </para>
+      -->
+
+      <para
+>Sie können das Attribut <literal
+>type</literal
+> angeben. Damit zeigen sie an, dass bestimmte Element nur angezeigt werden sollen, wenn der Typ gesetzt ist. Wird dem Typ ein Ausrufezeichen vorangestellt (<literal
+>!</literal
+>) wird die Bedingung umgekehrt. Gültige Werte sind folgende: </para>
+        <segmentedlist>
+          <?dbhtml list-presentation="table"?>
+          <segtitle
+>Typ</segtitle
+><segtitle
+>Anzeigen wenn ...</segtitle>
+
+          <seglistitem>
+            <seg
+><literal
+>chooser</literal
+></seg>
+            <seg
+>ein Umschalten auf das Anmelden an Fremdrechnern erlaubt ist.</seg>
+          </seglistitem>
+
+          <!--
+          <seglistitem>
+            <seg
+><literal
+>custom_cmd[0-9]</literal
+></seg>
+            <seg
+><literal
+>n-th</literal
+> CustomCommand is specified in
+              the &kdm; configuration.</seg>
+          </seglistitem>
+          -->
+
+          <seglistitem>
+            <seg
+><literal
+>halt</literal
+> und <literal
+>reboot</literal
+></seg>
+            <seg
+>das Herunterfahren des Systems erlaubt ist.</seg>
+          </seglistitem>
+
+          <!--
+          <seglistitem>
+            <seg
+><literal
+>suspend</literal
+></seg>
+            <seg
+>suspending the system is permitted.</seg>
+          </seglistitem>
+          -->
+
+          <seglistitem>
+            <seg
+><literal
+>system</literal
+></seg>
+            <seg
+>keine Bedingung (In &kdm; immer gesetzt).</seg>
+          </seglistitem>
+
+          <!--
+          <seglistitem>
+            <seg
+><literal
+>timed</literal
+></seg>
+            <seg
+>a timed login is being counted down.</seg>
+          </seglistitem>
+          -->
+
+          <seglistitem>
+            <seg
+><literal
+>plugin-</literal
+><replaceable
+>entry-name</replaceable
+></seg>
+            <seg
+>die <quote
+>Kommunikationserweiterung</quote
+> bietet ein entsprechendes Eingabefeld.</seg>
+          </seglistitem>
+
+        </segmentedlist>
+
+
+      <para
+>Zum Beispiel: <programlisting
+>&lt;show type=&quot;chooser&quot;/&gt;
+</programlisting>
+      </para>
+
+      <para
+>Alternativ können Sie auch einen Wert <literal
+>min-screen-width</literal
+> oder <literal
+>min-screen-height</literal
+> angeben, der vorgibt, dass bestimmte Elemente nur dann angezeigt werden sollen, wenn die Bildschirmauflösung mindestens den angegebenen Wert hat. Ein Beispiel: <programlisting
+>&lt;show min-screen-height=&quot;768&quot;/&gt;
+</programlisting>
+      </para>
+
+    </sect2>
+
+    <sect2 id="nor-act-pre-nodes">
+      <title
+>Normal-/Active-/Prelight-Knoten</title>
+
+      <para
+>Das Aussehen der meisten Elemente kann mit den folgenden Tags angepasst werden: </para>
+
+      <variablelist>
+        <varlistentry>
+          <term
+><literal
+>normal</literal
+></term>
+          <listitem>
+            <para
+>Normaler Zustand</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term
+><literal
+>prelight</literal
+></term>
+          <listitem>
+            <para
+>Wenn sich der Mauszeiger darüber befindet.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term
+><literal
+>active</literal
+></term>
+          <listitem>
+            <para
+>Wenn eine Maustaste auf dem Element betätigt wird.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <variablelist>
+
+        <para
+>Der genaue Umfang der verfügbaren Attribute hängt vom Typ des Elements ab: </para>
+
+        <varlistentry>
+          <term
+><literal
+>rect</literal
+></term>
+          <listitem>
+            <para>
+<programlisting
+>&lt;normal color=&quot;#000000&quot; alpha=&quot;0.0&quot;/&gt;
+</programlisting>
+Beide Attribute können weggelassen werden. In diesem Fall wird der Standardwert benutzt (das Beispiel zeigt die Standardwerte). <literal
+>alpha</literal
+> ist eine Fließkommazahl zwischen 0 (transparent) und 1 (undurchsichtig). <literal
+>color</literal
+> ist ein Doppelkreuz gefolgt von einem sechstelligen Hexadezimalwert; Das Format ist <quote
+><literal
+>#</literal
+><replaceable
+>rrggbb</replaceable
+></quote
+>. Alternativ kann <literal
+>color</literal
+> als achtstellige Hexadezimalzahl angegeben werden, wobei die beiden ersten Ziffern den Alphawert darstellen. </para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term
+><literal
+>label</literal
+></term>
+          <listitem>
+            <para>
+<programlisting
+>&lt;normal color=&quot;#ffffff&quot; alpha=&quot;1.0&quot; font=&quot;Sans 14&quot;/&gt;
+</programlisting>
+<literal
+>alpha</literal
+> und <literal
+>color</literal
+> werden angegeben wie bei <quote
+>rect</quote
+>-Einträgen. </para>
+            <para
+><literal
+>font</literal
+> folgt dem Format <quote
+><replaceable
+>family-list</replaceable
+>&nbsp;<replaceable
+>style-options</replaceable
+>&nbsp;<replaceable
+>size</replaceable
+></quote
+>. Alle Bestandteile sind optional. </para>
+            <para
+><replaceable
+>family-list</replaceable
+> ist eine komma-separierte Liste von Schriftfamilien wie <quote
+>helvetica</quote
+>, <quote
+>monospace</quote
+> &etc; </para>
+            <para
+><replaceable
+>style-options</replaceable
+> ist eine leerzeichen-getrennte Liste von Schlüsselwörtern aus den Kategorien style, weight und stretch; aus jeder Kategorie höchstens eins. Style kann  <literal
+>normal</literal
+>, <literal
+>italic</literal
+> or <literal
+>oblique</literal
+>. Weight kann sein <literal
+>ultra-light</literal
+>, <literal
+>light</literal
+>, <literal
+>medium</literal
+>, <literal
+>semi-bold</literal
+>, <literal
+>bold</literal
+>, <literal
+>ultra-bold</literal
+> or <literal
+>heavy</literal
+>. Die Werte für stretch umfassen <literal
+>ultra-condensed</literal
+>, <literal
+>extra-condensed</literal
+>, <literal
+>condensed</literal
+>, <literal
+>semi-condensed</literal
+>, <literal
+>normal</literal
+>, <literal
+>semi-expanded</literal
+>, <literal
+>expanded</literal
+>, <literal
+>extra-expanded</literal
+> and <literal
+>ultra-expanded</literal
+>. </para>
+            <para
+><replaceable
+>size</replaceable
+> ist entweder eine Fließkommazahl, die die Größe in Punkten (1/72 Zoll) darstellt oder eine Ganzzahl, gefolgt von <literal
+>px</literal
+>, um die Größe in Pixeln anzugeben. Größenangaben in Punkten sind vorzuziehen, da diese unabhängig von der Bildschirmauflösung sind. </para>
+            <para
+>Wir ein Attribut ausgelassen, werden die Wert des <link linkend="style-nodes"
+>Stilknotens</link
+> benutzt. Ergibt diese keine Farbangabe für window-text, wird Weiß verwendet. Die Standardschriftart ist die in &kdmrc; eingerichtete. </para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term
+><literal
+>pixmap</literal
+></term>
+          <term
+><literal
+>svg</literal
+></term>
+          <listitem>
+            <para>
+<programlisting
+>&lt;normal file=&quot;picture.png&quot; tint=&quot;#dddddd&quot; alpha=&quot;1.0&quot;/&gt;
+</programlisting>
+            </para>
+
+            <para
+><literal
+>file</literal
+> gibt die Datei an, die das Bild enthält. Relative Pfade sind relativ zum Ordner des Designs. </para>
+
+            <para
+><literal
+>wallpaper</literal
+> kann statt <literal
+>file</literal
+> benutzt werden, damit &kdm; auch nach Bildern in den Standard-Ordnern für &kde;-Hintergrundbilder sucht. Auch Pakete mit Plasma-Hintergrundbildern werden unterstützt. </para>
+
+            <para
+><literal
+>element</literal
+> gibt die Element-ID in einer SVG-Datei an. Ohne diese Angabe wird das ganze SVG-Bild angezeigt. </para>
+
+            <para
+>Für <literal
+>pixmap</literal
+>-Knoten können mehrere Bilder angegeben werden, sodass  für eine vorgegebene Auflösung das qualitativ beste Bild verwendet werden kann. Dateinamen mit Kennzeichnung der Größe haben die Bezeichnung <replaceable
+>basename</replaceable
+><literal
+>-</literal
+><replaceable
+>width</replaceable
+><literal
+>x</literal
+><replaceable
+>height</replaceable
+><literal
+>.</literal
+><replaceable
+>extension</replaceable
+>. Wenn eine Daten ohne Kennzeichnung der Größe angegeben ist und dies keine Paket mit einem Plasma-Hintergrundbild ist, akzeptiert &kdm; nur eine exakte Übereinstimmung mit einer vorgegebenen Größe und benutzt anderenfalls die Originaldatei. Ansonsten versucht &kdm; ein Bild mit der am besten übereinstimmenden Größe zu finden, wenn kein genau passendes Bild gefunden wurde. </para>
+
+            <!--
+            <para>
+              Note that an alternative image file can be specified using the
+              <literal
+>altfile</literal
+><optional
+><replaceable
+>n</replaceable
+></optional>
+              attribute.  &kdm; will use the last valid image filename
+              specified.  For example:
+<programlisting
+>
+&lt;normal file=&quot;picture.png&quot; altfile1=&quot;distribution-blah-image.png&quot; altfile2=&quot;distribution-foo-image.png&quot;/&gt;
+</programlisting>
+              If <filename
+>distribution-foo-image.png</filename
+> is a valid
+              image filename it will be used.
+              Otherwise distribution-blah-image.png will be used if valid.
+              This feature is supported since &kde; .
+            </para>
+            -->
+
+            <para
+><literal
+>scalemode</literal
+> legt fest, wie die Größe von Bildern geändert wird, die nicht in das Element passen. Mit der Voreinstellung <literal
+>free</literal
+> wird die Größe der Bilder angepasst, dabei wird unter Umständen das Seitenverhältnis geändert. Mit den beiden folgenden Einstellungen bleibt das Seitenverhältnis erhalten: Mit <literal
+>fit</literal
+> wird die Größe des Bildes so geändert, dass es in das Element passt. Dabei wird das Bild zentriert. Der vom Bild nicht überdeckte Bereich des Elements wird nicht durch das Element gezeichnet, daher sollte das Bild auf einem einfarbigen  <literal
+>rect</literal
+> angeordnet werden. Mit der Einstellung <literal
+>crop</literal
+> wird das Bild so vergrößert, dass das Bild das Element ganz ausfüllt. Die überstehenden Teile des Bildes werden symmetrisch abgeschnitten.  </para>
+
+            <para
+><literal
+>tint</literal
+> und <literal
+>alpha</literal
+> bilden eine Farbangabe wie bei <literal
+>rect</literal
+>-Elementen. Jedes Pixel des Bildes wird komponentenweise mit dieser Farbe multipliziert. </para>
+          </listitem>
+        </varlistentry>
+
+      </variablelist>
+
+    </sect2>
+
+    <sect2 id="style-nodes">
+      <title
+>Element-Stil-Knoten</title>
+
+      <para
+>Mit diesem Tag das Erscheinungsbild in das Design eingebetteter Beschriftungen und Qt-Widgets geändert werden, &eg; Eingabefelder, Knöpfe oder die Benutzerliste. Die Vorgaben für den Stil werden von Kindelementen geerbt, können aber individuell überschrieben werden. Die Standardwerte werden aus &kdmrc; übernommen. </para>
+
+      <para
+>Das Attribut <literal
+>font</literal
+> legt die Schriftart für alle Widgets fest. Für Widgets mit einer Eingabefunktion kann die Schriftart mit dem Attribut <literal
+>edit-font</literal
+> überschrieben werden. Schriftarten werden genauso angegeben wie in <link linkend="nor-act-pre-nodes"
+>Normal/Active/Prelight</link
+>. </para>
+
+      <para
+>Normalerweise gibt sich die Design-Engine alle Mühe die Rahmen von Qt-Widgets zu entfernen, sodass diese übergangslos im Design dargestellt werden. In Fällen, in denen dies nicht gewünscht ist, kann das Attribut <literal
+>frame</literal
+> auf den Wert <literal
+>true</literal
+> gesetzt werden. </para>
+
+      <para
+>Das Attribut <literal
+>guistyle</literal
+> kann benutzt werden, um den Qt-GUI-Stil für eingebettete Widgets zu überschreiben. Als Voreinstellung wird die Option <option
+>GUIStyle</option
+> in &kdmrc; verwendet. </para>
+
+      <para
+>Sie können beinah die gesamte auf der <ulink type="http" url="http://doc.trolltech.com/4.3/qpalette.html"
+>Trolltech-Webseite</ulink
+> dokumentierte Palette für die Widgets angeben. Attributnamen setzen sich aus einem Gültigkeitsbereich, einer Farbrolle und einem Suffix zusammen. Mögliche Gültigkeitsbereiche, in aufsteigender Rangfolge, sind <literal
+>all-</literal
+> für alle Farbgruppen, keiner für die aktiven und inaktiven Farbgruppen und <literal
+>active-</literal
+>, <literal
+>inactive-</literal
+> und <literal
+>disabled-</literal
+> für die entsprechenden Farbgruppen. Unterstützte Farbrollen sind <literal
+>window</literal
+>, <literal
+>window-text</literal
+>, <literal
+>base</literal
+>, <literal
+>alternate-base</literal
+>, <literal
+>text</literal
+>, <literal
+>bright-text</literal
+>, <literal
+>highlight</literal
+>, <literal
+>highlighted-text</literal
+>, <literal
+>button</literal
+> und <literal
+>button-text</literal
+>. Das Suffix kann den Wert <literal
+>-color</literal
+> oder <literal
+>-alpha</literal
+> mit der entsprechenden Bedeutung aus <link linkend="nor-act-pre-nodes"
+>normal/active/prelight nodes</link
+> haben. </para>
+
+      <para
+>Alternativ zur Angabe einer Palette in der Datei kann das Attribut <literal
+>colorscheme</literal
+> benutzt werden, um eine vollständiges &kde;-Farbschema zu laden. Die Vorgabe ist die Option <option
+>ColorScheme</option
+> in der Datei &kdmrc;. Individuelle Festlegung von <literal
+>color</literal
+> überschreibt die Farbe des Schemas. </para>
+
+      <para
+>Beispiel: <programlisting
+>&lt;style edit-font=&quot;Comic 16&quot; text-color=&quot;#dddddd&quot; frame=&quot;true&quot;/&gt;
+</programlisting>
+      </para>
+    </sect2>
+
+    <sect2 id="color-nodes">
+      <title
+>Farbknoten für die Gesichterliste</title>
+
+      <para
+>Farbknoten erlauben das Überschreiben der Hintergrundfarbe von Elementen in der Gesichterliste. <literal
+>labelcolor</literal
+> und <literal
+>altlabelcolor</literal
+> sind im Wesentlichen äquivalent zu <literal
+>all-base-color</literal
+> bzw. <literal
+>all-alternate-base-color</literal
+> in <link linkend="style-nodes"
+>style nodes</link
+>. Wird nur <literal
+>labelcolor</literal
+> angegeben, werden alternierende Elementhintergründe abgeschaltet. </para>
+
+      <para>
+<programlisting
+>&lt;color labelcolor=&quot;#80ffffff&quot; altlabelcolor=&quot;#80f0f0f0&quot;/&gt;
+</programlisting>
+      </para>
+    </sect2>
+
+    <sect2 id="text-nodes">
+      <title
+>Text-Knoten</title>
+
+      <para
+>Text-Tags werden von Beschriftungen verwendet. Diese können zur Anzeige von lokalisiertem Text wie folgt benutzt werden (fehlt das Attribut <literal
+>xml:lang</literal
+>, wird das POSIX locale vorausgesetzt): <programlisting
+>&lt;text xml:lang=&quot;fr&quot;&gt;Option&lt;/text&gt;
+</programlisting>
+      </para>
+
+      <!--
+      <para>
+        You can include pango markup in the text nodes for labels, however
+        you must encode it.  So for example to have the label of
+        &quot;foo&lt;sup&gt;bar&lt;/sup&gt;&quot;, you must type:
+<programlisting
+>
+&lt;text&gt;&quot;foo&lt;sup&gt;bar&lt;/sup&gt;&quot;&lt;/text&gt;
+</programlisting>
+      </para>
+      -->
+
+      <para
+>Text-Knoten können die folgenden Sonderzeichenfolgen enthalten, die wie folgt übersetzt werden: </para>
+
+      <segmentedlist>
+        <?dbhtml list-presentation="table"?>
+        <segtitle
+>Zeichenfolge</segtitle
+><segtitle
+>Auflösung</segtitle>
+
+        <seglistitem>
+          <seg
+>%%</seg>
+          <seg
+>Ein %-Zeichen</seg>
+        </seglistitem>
+
+        <seglistitem>
+          <seg
+>%c</seg>
+          <seg
+>Uhrzeit und Datum</seg>
+        </seglistitem>
+
+        <seglistitem>
+          <seg
+>%d</seg>
+          <seg
+>Der Display-Name (Umgebungsname <envar
+>DISPLAY</envar
+>)</seg>
+        </seglistitem>
+
+        <seglistitem>
+          <seg
+>%h</seg>
+          <seg
+>Rechnername (Ausgabe von <function
+>gethostname</function
+>)</seg>
+        </seglistitem>
+
+        <seglistitem>
+          <seg
+>%m</seg>
+          <seg
+>Maschinentyp (Bestandteil <structfield
+>machine</structfield
+> der Ausgabe von <function
+>uname</function
+>)</seg>
+        </seglistitem>
+
+        <seglistitem>
+          <seg
+>%n</seg>
+          <seg
+>Netzwerkname (<structfield
+>nodename</structfield
+>, Bestandteil der Ausgabe von <function
+>uname</function
+>.</seg>
+        </seglistitem>
+
+        <seglistitem>
+          <seg
+>%o</seg>
+          <seg
+>Domänen-Name (Ausgabe von <function
+>getdomainname</function
+>)</seg>
+        </seglistitem>
+
+        <seglistitem>
+          <seg
+>%r</seg>
+          <seg
+>Release-Nummer (<structfield
+>release</structfield
+>, Bestandteil der Ausgabe von <function
+>uname</function
+>)</seg>
+        </seglistitem>
+
+        <seglistitem>
+          <seg
+>%s</seg>
+          <seg
+>Systemname (<structfield
+>sysname</structfield
+>, Bestandteil der Ausgabe von <function
+>uname</function
+>)</seg>
+        </seglistitem>
+
+        <seglistitem>
+          <seg
+>%t</seg>
+          <seg
+>Verbleibende Anzahl Sekunden bis zur Ausführung einer geplanten Anmeldung. Hinzu kommt die passende i18n-Pluralform für <quote
+>Sekunde</quote
+>.</seg>
+        </seglistitem>
+
+        <seglistitem>
+          <seg
+>%u</seg>
+          <seg
+>Benutzername für geplante Anmeldung</seg>
+        </seglistitem>
+
+        <!-- Need to switch to richtext painting for this purpose.
+        <seglistitem>
+          <seg
+>\n</seg>
+          <seg
+>Newline</seg>
+        </seglistitem>
+        -->
+
+        <seglistitem>
+          <seg
+>_</seg>
+          <seg
+>Macht das folgende Zeichen zu einem Kurzbefehl.</seg>
+        </seglistitem>
+
+      </segmentedlist>
+
+      <para
+><literal
+>%t</literal
+> und <literal
+>%u</literal
+> sind nur zum internen Gebrauch zur Anzeige der Nachricht <literal
+>timed-label</literal
+> gedacht, die automatisch jede Sekunde aktualisiert wird. </para>
+    </sect2>
+
+    <sect2 id="stock-nodes">
+      <title
+>Bestandsknoten</title>
+
+      <para
+>Bestimmte häufige, lokalisierte Beschriftungen können über Bestandsknoten angegeben werden. Das Tag <literal
+>text</literal
+> wird ignoriert, wenn das Tag <literal
+>stock</literal
+> angegeben ist. Sie sollten lieber die Bestandsbeschriftungen verwenden als sämtliche Übersetzungen in den Designs abzulegen. Dies führt zu schnelleren Ladezeiten und wahrscheinlich zu besseren Übersetzungen. Die folgenden Werte sind gültig: </para>
+
+      <segmentedlist>
+        <?dbhtml list-presentation="table"?>
+        <segtitle
+>Typ</segtitle
+><segtitle
+>Auflösung</segtitle>
+
+        <!--
+        <seglistitem>
+          <seg
+>ok</seg>
+          <seg
+><quote
+>_OK</quote
+></seg>
+        </seglistitem>
+        <seglistitem>
+          <seg
+>cancel</seg>
+          <seg
+>_Cancel</seg>
+        </seglistitem>
+        <seglistitem>
+          <seg
+>options</seg>
+          <seg
+>_Options</seg>
+        </seglistitem>
+        <seglistitem>
+          <seg
+>custom_cmd[0-9]</seg>
+          <seg
+>Obtained from the config file.</seg>
+        </seglistitem>
+        -->
+        <seglistitem>
+          <seg
+>caps-lock-warning</seg>
+          <seg
+><quote
+>Feststelltaste ist aktiviert</quote
+></seg>
+        </seglistitem>
+        <seglistitem>
+          <seg
+>chooser</seg>
+          <seg
+><quote
+>_XDMCP-Rechnermenü</quote
+></seg>
+        </seglistitem>
+        <seglistitem>
+          <seg
+>quit</seg>
+          <seg
+><quote
+>Be_enden</quote
+></seg>
+        </seglistitem>
+        <seglistitem>
+          <seg
+>disconnect</seg>
+          <seg
+><quote
+>_Trennen</quote
+></seg>
+        </seglistitem>
+        <seglistitem>
+          <seg
+>halt</seg>
+          <seg
+><quote
+>Aus_schalten</quote
+></seg>
+        </seglistitem>
+        <seglistitem>
+          <seg
+>language</seg>
+          <seg
+><quote
+>_Sprache</quote
+></seg>
+        </seglistitem>
+        <seglistitem>
+          <seg
+>login</seg>
+          <seg
+><quote
+>_Anmelden</quote
+></seg>
+        </seglistitem>
+        <seglistitem>
+          <seg
+>session</seg>
+          <seg
+><quote
+>Sitzungs_art</quote
+></seg>
+        </seglistitem>
+        <seglistitem>
+          <seg
+>reboot</seg>
+          <seg
+><quote
+>_Neustart</quote
+></seg>
+        </seglistitem>
+        <!--
+        <seglistitem>
+          <seg
+>suspend</seg>
+          <seg
+><quote
+>Sus_pend</quote
+></seg>
+        </seglistitem>
+        -->
+        <seglistitem>
+          <seg
+>system</seg>
+          <seg
+><quote
+>_Menü</quote
+></seg>
+        </seglistitem>
+        <seglistitem>
+          <seg
+>timed-label</seg>
+          <seg
+><quote
+>Benutzer %u wird angemeldet in %t</quote
+></seg>
+        </seglistitem>
+        <seglistitem>
+          <seg
+>domain-label</seg>
+          <seg
+><quote
+>_Domain:</quote
+></seg>
+        </seglistitem>
+        <seglistitem>
+          <seg
+>username-label</seg>
+          <seg
+><quote
+>_Benutzername:</quote
+></seg>
+        </seglistitem>
+        <seglistitem>
+          <seg
+>password-label</seg>
+          <seg
+><quote
+>_Passwort:</quote
+></seg>
+        </seglistitem>
+        <seglistitem>
+          <seg
+>welcome-label</seg>
+          <seg
+><quote
+>Willkommen auf %h</quote
+></seg>
+        </seglistitem>
+
+      </segmentedlist>
+
+      <para
+>Zum Beispiel: <programlisting
+>&lt;stock type=&quot;welcome-label&quot;/&gt;
+</programlisting>
+      </para>
+    </sect2>
+
+    <sect2 id="buddy-nodes">
+      <title
+>Buddy-Knoten</title>
+
+      <para
+>Elementen, die nur indirekt eine Aktion auslösen, kann ein Buddy zugewiesen werden. Sobald das Element aktiviert wird (angeklickt oder der <literal
+>Kurzbefehl</literal
+> einer Beschriftung wird betätigt), erhält das Buddy-Element den Eingabefokus. </para>
+
+      <para
+>Der Buddy wird über seine Id mit dem Attribut <literal
+>idref</literal
+> adressiert. Es ist daher offensichtlich, dass er eine Id erhalten muss. Beispiel: <programlisting
+>&lt;item type=&quot;label&quot;&gt;
+  &lt;stock type=&quot;username-label&quot;/&gt;
+  &lt;buddy idref=&quot;user-entry&quot;/&gt;
+  [...]
+&lt;/item&gt;
+[...]
+&lt;item type=&quot;entry&quot; id=&quot;user-entry&quot;&gt;
+  [...]
+&lt;/item&gt;
+</programlisting>
+      </para>
+    </sect2>
+
+  </sect1>
+
+</chapter>

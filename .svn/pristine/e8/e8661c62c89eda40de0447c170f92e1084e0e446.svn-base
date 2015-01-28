@@ -1,0 +1,348 @@
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2007, 2008, 2009.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011.
+# Markus Slopianka <markus.s@kdemail.net>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_dig_clock\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-11-05 11:50+0000\n"
+"PO-Revision-Date: 2011-04-24 13:13+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: clock.cpp:263
+msgid "Appearance"
+msgstr "Erscheinungsbild"
+
+#: clock.cpp:278
+msgctxt "A kind of date representation"
+msgid "No date"
+msgstr "Kein Datum"
+
+#: clock.cpp:279
+msgctxt "A kind of date representation"
+msgid "Compact date"
+msgstr "Kompaktes Datum"
+
+#: clock.cpp:280
+msgctxt "A kind of date representation"
+msgid "Short date"
+msgstr "Datum (Kurzform)"
+
+#: clock.cpp:281
+msgctxt "A kind of date representation"
+msgid "Long date"
+msgstr "Datum (Langform)"
+
+#: clock.cpp:282
+msgctxt "A kind of date representation"
+msgid "ISO date"
+msgstr "Datum (ISO)"
+
+#: clock.cpp:476
+#, kde-format
+msgctxt "@label Compact date: %1 day in the month, %2 month number"
+msgid "%1/%2"
+msgstr "%1.%2."
+
+#: clock.cpp:491
+#, kde-format
+msgctxt ""
+"@label Date with currentTimezone: %1 day of the week with date, %2 "
+"currentTimezone"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: clockConfig.ui:26
+msgid "Font"
+msgstr "Schriftart"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: clockConfig.ui:33
+msgid "Font style:"
+msgstr "Schrift-Stil:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, plainClockFontBold)
+#: clockConfig.ui:69
+msgid "Check if you want the font in bold"
+msgstr "Aktivieren, um Fettschrift einzuschalten"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, plainClockFontBold)
+#: clockConfig.ui:72
+msgid "When this is checked, the clock font will be bold."
+msgstr ""
+"Wenn diese Einstellung aktiviert ist, wird die Schrift fett dargestellt."
+
+#. i18n: ectx: property (text), widget (QCheckBox, plainClockFontBold)
+#: clockConfig.ui:75
+msgid "&Bold"
+msgstr "&Fett"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, plainClockFontItalic)
+#: clockConfig.ui:82
+msgid "Check if you want the font in italic"
+msgstr "Aktivieren, um Kursivschrift einzuschalten"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, plainClockFontItalic)
+#: clockConfig.ui:85
+msgid "When this is checked, the clock font will be in italic."
+msgstr ""
+"Wenn diese Einstellung aktiviert ist, wird die Schrift kursiv dargestellt."
+
+#. i18n: ectx: property (text), widget (QCheckBox, plainClockFontItalic)
+#: clockConfig.ui:88
+msgid "&Italic"
+msgstr "Kur&siv"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: clockConfig.ui:111
+msgid "Custom font color:"
+msgstr "Eigene Schriftfarbe:"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, plainClockColor)
+#: clockConfig.ui:136
+msgid "Color chooser"
+msgstr "Farbauswahl"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, plainClockColor)
+#: clockConfig.ui:139
+msgid ""
+"Click on this button and the KDE standard color dialog will show. You can "
+"then choose the new color you want for your clock."
+msgstr ""
+"Wenn Sie auf diesen Knopf klicken, erscheint die KDE-Farbauswahl. Darin "
+"können Sie eine neue Farbe für die Uhr wählen."
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: clockConfig.ui:161
+msgid "Show shadow:"
+msgstr "Schatten anzeigen:"
+
+#. i18n: ectx: property (text), widget (QLabel, customShadowColorLabel)
+#: clockConfig.ui:198
+msgid "Custom shadow color:"
+msgstr "Eigene Schattenfarbe:"
+
+#. i18n: ectx: property (toolTip), widget (KColorButton, plainClockShadowColor)
+#: clockConfig.ui:216
+msgid "Shadow color chooser"
+msgstr "Farbauswahl für Schatten"
+
+#. i18n: ectx: property (whatsThis), widget (KColorButton, plainClockShadowColor)
+#: clockConfig.ui:219
+msgid ""
+"Click on this button and the KDE standard color dialog will show. You can "
+"then choose the new color you want for the text shadow for your clock."
+msgstr ""
+"Wenn Sie auf diesen Knopf klicken, erscheint die KDE-Farbauswahl. Darin "
+"können Sie eine neue Farbe für den Textschatten Ihrer Uhr wählen."
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: clockConfig.ui:257
+msgid "Information"
+msgstr "Informationen"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: clockConfig.ui:264
+msgid "Show time zone:"
+msgstr "Zeitzone anzeigen:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, showTimeZone)
+#: clockConfig.ui:279
+msgid "Display the time zone name"
+msgstr "Zeitzone anzeigen"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, showTimeZone)
+#: clockConfig.ui:282
+msgid "Display the time zone name under the time."
+msgstr "Zeigt die verwendete Zeitzone unter der Zeit an."
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: clockConfig.ui:307
+msgid "Show seconds:"
+msgstr "Sekunden anzeigen:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, secondsCheckbox)
+#: clockConfig.ui:322
+msgid "Show the seconds"
+msgstr "Sekunden anzeigen"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, secondsCheckbox)
+#: clockConfig.ui:325
+msgid "Check this if you want to show the seconds."
+msgstr ""
+"Aktivieren Sie diese Einstellung, so werden die Sekunden in der Uhr "
+"angezeigt."
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: clockConfig.ui:350
+msgid "Date format:"
+msgstr "Datumsformat:"
+
+#~ msgctxt ""
+#~ "@label Short date: %1 day in the month, %2 short month name, %3 year"
+#~ msgid "%1 %2 %3"
+#~ msgstr "%1 %2 %3"
+
+#~ msgctxt "@label Day of the week with date: %1 short day name, %2 short date"
+#~ msgid "%1, %2"
+#~ msgstr "%1, %2"
+
+#~ msgid "Display the date of the day"
+#~ msgstr "Heutiges Datum anzeigen"
+
+#~ msgid "Include the day of the week:"
+#~ msgstr "Wochentag anzeigen:"
+
+#~ msgid "Display day of the week"
+#~ msgstr "Heutigen Wochentag anzeigen"
+
+#~ msgid "Add the day of the week to the date display."
+#~ msgstr "Fügt der Datumsanzeige den heutigen Wochentag hinzu."
+
+#~ msgid "Include the year:"
+#~ msgstr "Jahr anzeigen:"
+
+#~ msgid "Display the current year"
+#~ msgstr "Aktuelles Jahr anzeigen"
+
+#~ msgid "Add the year to the date string."
+#~ msgstr "Fügt der Datumsanzeige das aktuelle Jahr hinzu."
+
+#~ msgid "Show &year"
+#~ msgstr "&Jahr anzeigen"
+
+#~ msgid "Use current desktop theme color"
+#~ msgstr "Farbe des aktuellen Arbeitsflächen-Designs verwenden"
+
+#~ msgid ""
+#~ "This is default. The clock will get its font color from the current "
+#~ "desktop theme."
+#~ msgstr ""
+#~ "Dies ist die Voreinstellung. Die Uhr übernimmt die Standard-Schriftart "
+#~ "des Arbeitsflächen-Designs."
+
+#~ msgid "Use theme color"
+#~ msgstr "Farbe des Designs verwenden"
+
+#~ msgid "Choose your own font color"
+#~ msgstr "Benutzerdefinierte Schriftfarbe wählen"
+
+#~ msgid ""
+#~ "When checked you can choose a custom color for the clock font by clicking "
+#~ "on the color widget on the right."
+#~ msgstr ""
+#~ "Wenn diese Einstellung aktiviert ist, können Sie eine eigene Schriftfarbe "
+#~ "für die Uhr auswählen, indem Sie rechts auf die Farbauswahl klicken."
+
+#~ msgid "General"
+#~ msgstr "Allgemein"
+
+#~ msgid "Font properties for the clock"
+#~ msgstr "Schrift-Einstellungen für die Uhr"
+
+#~ msgid "Choose the font family"
+#~ msgstr "Wählen Sie die Schriftfamilie"
+
+#~ msgid ""
+#~ "You can change the default family font for the clock. Choose the new one "
+#~ "in the list."
+#~ msgstr ""
+#~ "Sie können die Schriftfamilie für die Uhr ändern. Wählen Sie die neue "
+#~ "Schriftfamilie aus der Liste."
+
+#~ msgid "Plain clock font:"
+#~ msgstr "Schriftart für einfache Uhr:"
+
+#~ msgid "Ti&mezones"
+#~ msgstr "&Zeitzonen"
+
+#~ msgid "Use &local timezone"
+#~ msgstr "&Lokale Zeitzone verwenden"
+
+#~ msgid "Area"
+#~ msgstr "Bezirk"
+
+#~ msgid "Region"
+#~ msgstr "Region"
+
+#~ msgid "Comment"
+#~ msgstr "Kommentar"
+
+#~ msgctxt ""
+#~ "@label Date with timezone: %1 day of the week with date, %2 timezone"
+#~ msgid "%1 %2"
+#~ msgstr "%1 %2"
+
+#~ msgid "Configure Clock"
+#~ msgstr "Uhr einrichten"
+
+#~ msgid "Plain clock color:"
+#~ msgstr "Farbe für einfache Uhr:"
+
+#~ msgctxt "@item 24-hr clock format"
+#~ msgid "hh:mm"
+#~ msgstr "hh:mm"
+
+#~ msgctxt "@item 12-hr clock format"
+#~ msgid "h:mm AP"
+#~ msgstr "h:mm AP"
+
+#~ msgid "24-hour format"
+#~ msgstr "24-Stunden-Format"
+
+#~ msgid "Form"
+#~ msgstr "Form"
+
+#~ msgid "Use &plain clock"
+#~ msgstr "&Einfache Uhr verwenden"
+
+#~ msgid "Plain Clock"
+#~ msgstr "Einfache Uhr"
+
+#, fuzzy
+#~| msgid "Area"
+#~ msgid "Accra"
+#~ msgstr "Bezirk"
+
+#, fuzzy
+#~| msgid "Area"
+#~ msgid "Asmara"
+#~ msgstr "Bezirk"
+
+#, fuzzy
+#~| msgid "Area"
+#~ msgid "Aruba"
+#~ msgstr "Bezirk"
+
+#, fuzzy
+#~| msgid "Region"
+#~ msgid "Regina"
+#~ msgstr "Region"
+
+#, fuzzy
+#~| msgid "Area"
+#~ msgid "Acre"
+#~ msgstr "Bezirk"
+
+#, fuzzy
+#~| msgid "Region"
+#~ msgid "Rangoon"
+#~ msgstr "Region"
+
+#, fuzzy
+#~| msgid "Area"
+#~ msgid "Azores"
+#~ msgstr "Bezirk"
+
+#, fuzzy
+#~| msgid "Region"
+#~ msgid "Reunion"
+#~ msgstr "Region"

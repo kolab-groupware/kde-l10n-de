@@ -1,0 +1,661 @@
+# Marco Wegner <mail@marcowegner.de>, 2002.
+# Stephan Johach <hunsum@gmx.de>, 2003, 2005.
+# Burkhard Lück <lueck@hube-lueck.de>, 2007, 2009, 2010, 2011, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: kuser\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:13+0000\n"
+"PO-Revision-Date: 2014-09-09 17:48+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:12
+#, no-c-format
+msgid "The &kuser; Handbook"
+msgstr "Das Handbuch zu &kuser;"
+
+#. Tag: author
+#: index.docbook:14
+#, no-c-format
+msgid "<firstname>Matt</firstname> <surname>Johnston</surname>"
+msgstr "<firstname>Matt</firstname> <surname>Johnston</surname>"
+
+#. Tag: address
+#: index.docbook:18
+#, no-c-format
+msgid "&Matt.Johnston.mail;"
+msgstr "&Matt.Johnston.mail;"
+
+#. Tag: othercredit
+#: index.docbook:22
+#, no-c-format
+msgid "<firstname>Lauri</firstname> <surname>Watts</surname>"
+msgstr "<firstname>Lauri</firstname> <surname>Watts</surname>"
+
+#. Tag: address
+#: index.docbook:26
+#, no-c-format
+msgid "&Lauri.Watts.mail;"
+msgstr "&Lauri.Watts.mail;"
+
+#. Tag: contrib
+#: index.docbook:28 index.docbook:36
+#, no-c-format
+msgid "Reviewer"
+msgstr "Korrektur"
+
+#. Tag: othercredit
+#: index.docbook:30
+#, no-c-format
+msgid "<firstname>Jonathan</firstname> <surname>Singer</surname>"
+msgstr "<firstname>Jonathan</firstname> <surname>Singer</surname>"
+
+#. Tag: address
+#: index.docbook:34
+#, no-c-format
+msgid "&Jonathan.Singer.mail;"
+msgstr "&Jonathan.Singer.mail;"
+
+#. Tag: trans_comment
+#: index.docbook:38
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Frank</"
+"firstname><surname>Schütte</surname><affiliation><address><email>f."
+"schuette@t-online.de</email></address></affiliation><contrib>Deutsche "
+"Übersetzung</contrib></othercredit>"
+
+#. Tag: holder
+#: index.docbook:43
+#, no-c-format
+msgid "&Matt.Johnston;"
+msgstr "&Matt.Johnston;"
+
+#. Tag: date
+#: index.docbook:48
+#, no-c-format
+msgid "2013-06-22"
+msgstr "2013-06-22"
+
+#. Tag: releaseinfo
+#: index.docbook:49
+#, no-c-format
+msgid "3.9 (&kde; 4.11)"
+msgstr "3.9 (&kde; 4.11)"
+
+#. Tag: para
+#: index.docbook:51
+#, no-c-format
+msgid ""
+"This documentation describes &kuser; version 3.9. This program allows you to "
+"manage users and groups on your system."
+msgstr ""
+"Diese Dokumentation bezieht sich auf &kuser; 3.9. Mit diesem Programm können "
+"Sie die Benutzer und Gruppen Ihres Systems verwalten."
+
+#. Tag: keyword
+#: index.docbook:56
+#, no-c-format
+msgid "kuser"
+msgstr "Benutzerverwaltung"
+
+#. Tag: keyword
+#: index.docbook:57
+#, no-c-format
+msgid "user"
+msgstr "Benutzer"
+
+#. Tag: keyword
+#: index.docbook:58
+#, no-c-format
+msgid "management"
+msgstr "Verwaltung"
+
+#. Tag: keyword
+#: index.docbook:59
+#, no-c-format
+msgid "admin"
+msgstr "Verwalter"
+
+#. Tag: keyword
+#: index.docbook:60
+#, no-c-format
+msgid "tools"
+msgstr "Dienstprogramm"
+
+#. Tag: keyword
+#: index.docbook:61
+#, no-c-format
+msgid "group"
+msgstr "Gruppe"
+
+#. Tag: keyword
+#: index.docbook:62
+#, no-c-format
+msgid "password"
+msgstr "Passwort"
+
+#. Tag: title
+#: index.docbook:67
+#, no-c-format
+msgid "Getting Started"
+msgstr "Erste Schritte"
+
+#. Tag: para
+#: index.docbook:69
+#, no-c-format
+msgid "&kuser; allows you to manage users and groups on your system."
+msgstr ""
+"Mit &kuser; können Sie die Benutzer und Gruppen Ihres Systems verwalten."
+
+#. Tag: para
+#: index.docbook:71
+#, no-c-format
+msgid ""
+"This is a short introduction to &kuser;. For more detailed information, see "
+"<link linkend=\"using\">Usage</link>."
+msgstr ""
+"Dies ist eine kurze Einführung zu &kuser;. Umfangreichere Informationen "
+"finden Sie unter <link linkend=\"using\">Benutzung</link>."
+
+#. Tag: para
+#: index.docbook:74
+#, no-c-format
+msgid ""
+"Actually, you do not need to do anything to begin using &kuser; except <link "
+"linkend=\"customizing\">configuration</link>."
+msgstr ""
+"Um mit &kuser; zu beginnen, ist es ausreichend, das Kapitel <link linkend="
+"\"customizing\">Anpassung von &kuser;</link> zu lesen."
+
+#. Tag: para
+#: index.docbook:77
+#, no-c-format
+msgid ""
+"If you do not launch &kuser; in administrator mode, you will get a warning, "
+"that the file <filename>/etc/shadow</filename> is not readable."
+msgstr ""
+"Wird &kuser; nicht mit Systemverwalterrechten gestartet, erscheint eine "
+"Warnung, dass die Datei <filename>/etc/shadow</filename> nicht zum Lesen "
+"geöffnet werden kann."
+
+#. Tag: title
+#: index.docbook:89
+#, no-c-format
+msgid "Usage"
+msgstr "Benutzung"
+
+#. Tag: title
+#: index.docbook:92
+#, no-c-format
+msgid "Main Window"
+msgstr "Hauptfenster"
+
+#. Tag: para
+#: index.docbook:94
+#, no-c-format
+msgid ""
+"&kuser; is a very simple application. In the main window you can see two "
+"tabs: the list of users and the list of groups. To edit a user or a group, "
+"just click on it. The user or group properties dialog will appear."
+msgstr ""
+"&kuser; ist eine einfache Anwendung. Das Hauptfenster besteht aus zwei "
+"Karteikarten, der Benutzer- und der Benutzergruppenliste. Zum Bearbeiten "
+"wählen Sie den gewünschten Benutzer oder die gewünschte Gruppe mit einem "
+"Doppelklick auf den Eintrag aus. Es erscheint der Dialog Benutzer- bzw. "
+"Gruppeneigenschaften."
+
+#. Tag: screeninfo
+#: index.docbook:99
+#, no-c-format
+msgid "<screeninfo>&kuser; Main Window</screeninfo>"
+msgstr "<screeninfo>&kuser;-Hauptfenster</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:105
+#, no-c-format
+msgid "<phrase>&kuser; Main Window</phrase>"
+msgstr "<phrase>&kuser;-Hauptfenster</phrase>"
+
+#. Tag: title
+#: index.docbook:113
+#, no-c-format
+msgid "User and Group Properties"
+msgstr "Eigenschaften von Benutzern und Gruppen"
+
+#. Tag: title
+#: index.docbook:116
+#, no-c-format
+msgid "User Properties Dialog"
+msgstr "Der Dialog Benutzereigenschaften"
+
+#. Tag: para
+#: index.docbook:118
+#, no-c-format
+msgid "The user properties dialog has two tabs."
+msgstr ""
+"Der Dialog <guilabel>Benutzereigenschaften</guilabel> besteht aus zwei "
+"Karteikarten."
+
+#. Tag: title
+#: index.docbook:127
+#, no-c-format
+msgid "User Info Tab"
+msgstr "Benutzerinformation"
+
+#. Tag: para
+#: index.docbook:129
+#, no-c-format
+msgid "In the <guilabel>User Info</guilabel> tab you can modify:"
+msgstr ""
+"Auf der Karteikarte <guilabel>Benutzerinformation</guilabel> können Sie "
+"folgende Einstellungen bearbeiten:"
+
+#. Tag: para
+#: index.docbook:133
+#, no-c-format
+msgid ""
+"<guilabel>User login</guilabel> with the user name and a <guibutton>Set "
+"Password</guibutton> button for this account,"
+msgstr ""
+"<guilabel>Benutzeranmeldung</guilabel> mit dem Benutzernamen und einen Knopf "
+"<guibutton>Passwort setzen</guibutton> für diesen Zugang."
+
+#. Tag: guilabel
+#: index.docbook:134
+#, no-c-format
+msgid "User Id"
+msgstr "Benutzer-ID"
+
+#. Tag: guilabel
+#: index.docbook:135
+#, no-c-format
+msgid "Full Name"
+msgstr "Vollständiger Name"
+
+#. Tag: para
+#: index.docbook:136
+#, no-c-format
+msgid ""
+"<guilabel>Login Shell</guilabel> (the list of login shells is taken from the "
+"<filename>/etc/shells</filename> file)"
+msgstr ""
+"<guilabel>Anmelde-Shell</guilabel> (die Liste der möglichen Einträge stammt "
+"aus der Datei <filename>/etc/shells</filename>)"
+
+#. Tag: guilabel
+#: index.docbook:138
+#, no-c-format
+msgid "Home Folder"
+msgstr "Persönlicher Ordner"
+
+#. Tag: para
+#: index.docbook:139
+#, no-c-format
+msgid "Two office locations"
+msgstr "Zwei Büroorte"
+
+#. Tag: guilabel
+#: index.docbook:140
+#, no-c-format
+msgid "Address"
+msgstr "Adresse"
+
+#. Tag: guilabel
+#: index.docbook:141
+#, no-c-format
+msgid "Account disabled"
+msgstr "Zugang deaktiviert"
+
+#. Tag: title
+#: index.docbook:147
+#, no-c-format
+msgid "Password Management Tab"
+msgstr "Karteikarte Passwortverwaltung"
+
+#. Tag: para
+#: index.docbook:149
+#, no-c-format
+msgid ""
+"The <guilabel>Password Management</guilabel> tab will appear in "
+"administrator mode if you have shadow passwords, or any other similar things "
+"such as <filename>/etc/master.passwd</filename> in <acronym>BSD</acronym> "
+"flavor Unices."
+msgstr ""
+"Die Karteikarte <guilabel>Passwortverwaltung</guilabel> erscheint nur, wenn "
+"das Programm als Systemverwalter aufgerufen wurde und <foreignphrase lang="
+"\"en\">Shadow</foreignphrase>-Passwörter oder beispielsweise <filename>/etc/"
+"master.passwd</filename> wie in <acronym>BSD</acronym>-Unixsystemen "
+"verwendet werden."
+
+#. Tag: para
+#: index.docbook:158
+#, no-c-format
+msgid "Minimum number of days between password changes"
+msgstr "Minimale Anzahl Tage zwischen Passwort-Änderungen"
+
+#. Tag: para
+#: index.docbook:160
+#, no-c-format
+msgid "Number of days after which a password expires if it hasn't been changed"
+msgstr ""
+"Anzahl der Tage, nach denen ein Passwort ungültig wird, falls es nicht "
+"geändert wird"
+
+#. Tag: para
+#: index.docbook:162
+#, no-c-format
+msgid "Number of days before expiration the user will be warned"
+msgstr "Anzahl der Tage der Warnung vor dem Ungültig werden"
+
+#. Tag: para
+#: index.docbook:164
+#, no-c-format
+msgid "Whether and when an account will be disabled if the password expires"
+msgstr ""
+"Wann und unter welchen Umständen ein Zugang bei ungültigem Passwort "
+"deaktiviert wird"
+
+#. Tag: para
+#: index.docbook:166
+#, no-c-format
+msgid "A set date when the account expires"
+msgstr "Ein festes Datum, an dem der Zugang ungültig wird"
+
+#. Tag: para
+#: index.docbook:167
+#, no-c-format
+msgid "<guilabel>Class</guilabel> (on <acronym>BSD</acronym> systems)"
+msgstr "<guilabel>Klasse</guilabel> (bei <acronym>BSD</acronym>-Systemen)"
+
+#. Tag: para
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"The date of the last password change is displayed near the top of the dialog."
+msgstr "Das Datum der letzten Passwortänderung wird oben im Dialog angezeigt."
+
+#. Tag: title
+#: index.docbook:202
+#, no-c-format
+msgid "Groups Tab"
+msgstr "Die Karteikarte Gruppen"
+
+#. Tag: para
+#: index.docbook:204
+#, no-c-format
+msgid ""
+"The <guilabel>Groups</guilabel> tab contains all the information about the "
+"selected user's participation in groups. The primary group to which the user "
+"belongs is set with the <guilabel>Set as Primary</guilabel> button. The user "
+"can be assigned to additional groups by checking them in the large box."
+msgstr ""
+"Die Karteikarte <guilabel>Gruppen</guilabel> informiert über die "
+"Gruppenzugehörigkeiten des ausgewählten Benutzers. Die Standardgruppe, zu "
+"der der Benutzer gehört, kann mit dem Knopf <guilabel>Als primär setzen</"
+"guilabel> geändert werden. Weiterhin kann der Benutzer in anderen Gruppen "
+"Mitglied werden, indem Sie diese im großen Feld markieren."
+
+#. Tag: title
+#: index.docbook:214
+#, no-c-format
+msgid "Group Properties"
+msgstr "Eigenschaften der Gruppe"
+
+#. Tag: para
+#: index.docbook:216
+#, no-c-format
+msgid ""
+"The <guilabel>Group Properties</guilabel> dialog contains a list of all "
+"users in the selected group on the left and a list of all other users."
+msgstr ""
+"Der Dialog <guilabel>Eigenschaften der Gruppe</guilabel> enthält eine Liste "
+"aller Benutzer in der ausgewählten Gruppe in der linken Liste und rechts "
+"eine Liste aller anderen Benutzer."
+
+#. Tag: para
+#: index.docbook:218
+#, no-c-format
+msgid ""
+"Select a user in one of both lists and use the <guibutton>Add</guibutton> "
+"and <guibutton>Remove</guibutton> buttons to manage members of the group."
+msgstr ""
+"Wählen Sie einen Benutzer in einer der beiden Listen und benutzen Sie die "
+"Knöpfe <guibutton>Hinzufügen</guibutton> und <guibutton>Entfernen</"
+"guibutton>, um die Mitglieder einer Gruppe zu verwalten."
+
+#. Tag: title
+#: index.docbook:226
+#, no-c-format
+msgid "Managing Users or Groups"
+msgstr "Benutzer oder Gruppen verwalten"
+
+#. Tag: para
+#: index.docbook:228
+#, no-c-format
+msgid ""
+"To add a user or group to the system, either choose <guimenuitem>Add</"
+"guimenuitem> from the <guimenu>User</guimenu> or <guimenu>Group</guimenu> "
+"menu, or click the relevant <guiicon>Add</guiicon> button on the toolbar."
+msgstr ""
+"Um einen Benutzer oder eine Gruppe hinzuzufügen, wählen Sie "
+"<guimenuitem>Hinzufügen</guimenuitem> aus dem Menü <guimenu>Benutzer</"
+"guimenu> oder <guimenu>Gruppe</guimenu> oder klicken Sie auf den passenden "
+"<guiicon>Hinzufügen</guiicon>-Knopf der Werkzeugleiste."
+
+#. Tag: para
+#: index.docbook:232
+#, no-c-format
+msgid "A selected user or group can also be edited or deleted in the same way."
+msgstr ""
+" Das Bearbeiten oder Löschen des ausgewählten Benutzer bzw. der ausgewählten "
+"Gruppe funktioniert genauso."
+
+#. Tag: title
+#: index.docbook:238
+#, no-c-format
+msgid "Customizing &kuser;"
+msgstr "Anpassung von &kuser;"
+
+#. Tag: title
+#: index.docbook:241
+#, no-c-format
+msgid "Edit user creation defaults"
+msgstr "Standardeinstellungen für neue Benutzer"
+
+#. Tag: para
+#: index.docbook:243
+#, no-c-format
+msgid ""
+"To edit the user creation defaults you can use the <guilabel>Connection</"
+"guilabel> tab on the <guilabel>General</guilabel> page of &kuser;'s "
+"configuration dialog, which is accessible via the menu "
+"<menuchoice><guimenu>Settings</guimenu> <guimenuitem>Configure &kuser;</"
+"guimenuitem></menuchoice>."
+msgstr ""
+"Zum Verändern der Standardeinstellungen für neue Benutzer öffnen Sie die "
+"Karteikarte <guilabel>Anbindung</guilabel> auf der Seite "
+"<guilabel>Allgemein</guilabel> im Einstellungsdialog von &kuser;, indem Sie "
+"im Menü <menuchoice><guimenu>Einstellungen</guimenu> <guimenuitem>&kuser; "
+"einrichten</guimenuitem></menuchoice> auswählen. "
+
+#. Tag: para
+#: index.docbook:247
+#, no-c-format
+msgid ""
+"There you may change the defaults that are used when creating a new user: "
+"Shell and Home Folder (or home folders volume). You can choose whether to "
+"make a home folder on <quote>create</quote> or not, and to copy a skeleton "
+"(standard configuration files) to the home folder or not. You can also "
+"enable <guilabel>User private group</guilabel> mechanism, which creates a "
+"new personal group with the creation of a new user, and removes the personal "
+"group when the user is removed."
+msgstr ""
+"In diesem Dialog können Sie die Standardeinstellungen ändern, mit denen ein "
+"neuer Benutzer erstellt wird: Shell, der Persönliche Ordner (oder das "
+"Dateisystem für die Persönlichen Ordner). Außerdem können Sie auswählen, ob "
+"ein Persönlicher Ordner bei der Erstellung des Benutzers angelegt wird und "
+"ob Vorlagen (Standardkonfigurationsdateien) in den Persönlichen Ordner "
+"kopiert werden. Die Einstellung <guilabel>Private Gruppe für Benutzer</"
+"guilabel> erstellt eine eigene Benutzergruppe für jeden neu angelegten "
+"Benutzer, die bei der Entfernung des Benutzers wieder gelöscht wird."
+
+#. Tag: title
+#: index.docbook:277
+#, no-c-format
+msgid "Credits and License"
+msgstr "Danksagungen und Lizenz"
+
+#. Tag: para
+#: index.docbook:279
+#, no-c-format
+msgid "&kuser;"
+msgstr "&kuser;"
+
+#. Tag: para
+#: index.docbook:281
+#, no-c-format
+msgid ""
+"Program copyright 1997-2000 Denis Pershin <email>dyp@inetlab.com</email>"
+msgstr ""
+"Programm-Copyright 1997-2000 Denis Pershin <email>dyp@inetlab.com</email>"
+
+#. Tag: para
+#: index.docbook:284
+#, no-c-format
+msgid ""
+"Documentation copyright 1997-2000 Denis Pershin <email>dyp@inetlab.com</"
+"email>"
+msgstr ""
+"Dokumentation-Copyright 1997-2000 Denis Pershin <email>dyp@inetlab.com</"
+"email>"
+
+#. Tag: para
+#: index.docbook:286
+#, no-c-format
+msgid "Documentation copyright 2000 &Matt.Johnston; &Matt.Johnston.mail;"
+msgstr "Dokumentation Copyright 2000 &Matt.Johnston;&Matt.Johnston.mail;"
+
+#. Tag: trans_comment
+#: index.docbook:288
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Deutsche Übersetzung Frank Schütte <email>F.Schuette@t-online.de</"
+"email></para>"
+
+#. Tag: chapter
+#: index.docbook:288
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr "&underFDL; &underGPL;"
+
+#~ msgid "2010-01-18"
+#~ msgstr "2010-01-18"
+
+#~ msgid "<guilabel>User Info</guilabel> Tab"
+#~ msgstr "Die Karteikarte <guilabel>Benutzerinformation</guilabel>"
+
+#~ msgid "<guilabel>Groups</guilabel> Tab"
+#~ msgstr "Gruppen"
+
+#~ msgid ""
+#~ "When you have made the changes you want, you must <guimenuitem>Save</"
+#~ "guimenuitem> them for them to take effect. Either choose the Toolbar "
+#~ "icon, or use the <guimenu>File</guimenu> menu."
+#~ msgstr ""
+#~ "Nachdem Sie Änderungen vorgenommen haben, müssen Sie diese speichern. "
+#~ "Entweder benutzen Sie dazu das entsprechende Symbol der Werkzeugleiste "
+#~ "oder den Eintrag <guimenuitem>Speichern</guimenuitem> im Menü "
+#~ "<guimenu>Datei</guimenu>."
+
+#~ msgid ""
+#~ "The number of tabs depends on the type of the user storage system and "
+#~ "whether quotas are being used. Additional tabs will appear if you have "
+#~ "shadow passwords, or any other similar things such as <filename>/etc/"
+#~ "master.passwd</filename> in BSD flavor Unices."
+#~ msgstr ""
+#~ "Einige Karteikarten werden nur dargestellt, wenn Sie erweiterte "
+#~ "Systemeinstellungen vorgenommen haben. Erst wenn Sie Platzbeschränkungen "
+#~ "(Quota) für Benutzer aktiviert haben, wird eine Karteikarte erzeugt, auf "
+#~ "der Sie individuelle Einstellungen vornehmen können. Weitere Karteikarten "
+#~ "erscheinen, falls <foreignphrase lang=\"en\">Shadow</foreignphrase>-"
+#~ "Passwörter oder beispielsweise <filename>/etc/master.passwd</filename> "
+#~ "wie in BSD-Unixen installiert sind."
+
+#~ msgid "Password"
+#~ msgstr "Passwort"
+
+#~ msgid ""
+#~ "In the <guilabel>Extended Info</guilabel> tab you can modify parameters "
+#~ "related to extended account control:"
+#~ msgstr ""
+#~ "Hier können Einstellungen zur <guilabel>erweiterten Benutzerverwaltung</"
+#~ "guilabel> verändert werden:"
+
+#~ msgid "<guilabel>Quota</guilabel> Tab"
+#~ msgstr "Platzbeschränkungen"
+
+#~ msgid ""
+#~ "You will probably see the <guilabel>Quota</guilabel> tab only if you have "
+#~ "at least one mounted volume with quota enabled and a quota file present. "
+#~ "There you may modify all quota related parameters:"
+#~ msgstr ""
+#~ "Diese Karteikarte erscheint nur, falls für mindestens ein eingebundenes "
+#~ "Dateisystem <guilabel>Platzbeschränkung</guilabel> (Quota) aktiviert und "
+#~ "initialisiert ist (erkennbar an der Datei quota.user/quota.group auf dem "
+#~ "Dateisystem). Hier können für jeden Benutzer Parameter verändert werden, "
+#~ "wobei die Platzbeschränkungen jeweils Angaben in KB sind:"
+
+#~ msgid "File Soft Quota"
+#~ msgstr "Sanfte Platzbeschränkung"
+
+#~ msgid "File Hard Quota"
+#~ msgstr "Strenge Platzbeschränkung"
+
+#~ msgid "File Time Limit (Grace Period)"
+#~ msgstr "Höchstdauer für Überschreitung der sanften Platzbeschränkung"
+
+#~ msgid "iNode Soft Quota"
+#~ msgstr "Sanfte Beschränkung der Dateianzahl"
+
+#~ msgid "iNode Hard Quota"
+#~ msgstr "Strenge Beschränkung der Dateianzahl"
+
+#~ msgid "iNode Time Limit (Grace Period)"
+#~ msgstr ""
+#~ "Höchstdauer für Überschreitung der sanften Beschränkung der Dateianzahl"
+
+#~ msgid ""
+#~ "All these parameters can be changed for each file system that has user "
+#~ "quota enabled. File systems can be changed using the <guilabel>Quota "
+#~ "Filesystem</guilabel> box."
+#~ msgstr ""
+#~ "Diese Parameter können für jedes Dateisystem einzeln eingestellt werden. "
+#~ "Das aktuelle Dateisystem wird mit Hilfe des Feldes <guilabel>Dateisystem "
+#~ "mit Platzbeschränkung</guilabel> ausgewählt"
+
+#~ msgid ""
+#~ "The skeleton files for new users can be specified in the "
+#~ "<guilabel>Sources </guilabel> tab."
+#~ msgstr ""
+#~ "Die Standardkonfigurationsdateien für neue Benutzer können auf der "
+#~ "Karteikarte <guilabel>Quellen</guilabel> festgelegt werden."
+
+#~ msgid "mattj@flashmail.com"
+#~ msgstr "mattj@flashmail.com"
+
+#~ msgid "lauri@kde.org"
+#~ msgstr "lauri@kde.org"
+
+#~ msgid "jsinger@leeta.net"
+#~ msgstr "jsinger@leeta.net"

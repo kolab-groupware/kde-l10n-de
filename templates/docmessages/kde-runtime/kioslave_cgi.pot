@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: index.docbook:9
+#, no-c-format
+msgid "<title>cgi</title>"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:12
+#, no-c-format
+msgid "&Lauri.Watts;&Lauri.Watts.mail;"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:13
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:17
+#, no-c-format
+msgid ""
+"The <acronym>CGI</acronym> slave provides a way to execute <acronym>"
+"CGI</acronym> programs without the need to have a running web server. This can "
+"for example be used for local testing of <acronym>CGI</acronym> "
+"programs or for using search engines that only provide a <acronym>CGI</acronym> "
+"frontend like the one from <application>Doxygen</application>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:24
+#, no-c-format
+msgid ""
+"The slave implements the <command>cgi:</command> protocol. It uses the filename "
+"from the given &URL; and searches a configurable list of folders."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:27
+#, no-c-format
+msgid ""
+"The list of folders can be retrieved using the command <userinput><command>"
+"kde4-config</command> <option>--path cgi</option> </userinput>"
+". The value defaults to <filename class=\"directory\">$<envar>HOME</envar>"
+"/.kde4/cgi-bin/</filename>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:31
+#, no-c-format
+msgid ""
+"Use the &systemsettings; module <guilabel>CGI Script</guilabel> "
+"(launched with <userinput><command>kcmshell4</command> <option>kcmcgi</option> "
+"</userinput>) to add or remove additional user defined paths that are searched "
+"for <acronym>CGI</acronym> scripts."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:36
+#, no-c-format
+msgid ""
+"If this kioslave finds an executable with the given name it executes it, passes "
+"the arguments of the &URL; and sets the environment variables needed by "
+"<acronym>CGI</acronym> programs."
+msgstr ""

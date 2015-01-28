@@ -1,0 +1,1037 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: index.docbook:13
+#, no-c-format
+msgid "The &kwallet; Handbook"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:16
+#, no-c-format
+msgid "&George.Staikos; &George.Staikos.mail;"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:19
+#, no-c-format
+msgid "&Lauri.Watts; &Lauri.Watts.mail;"
+msgstr ""
+
+#. Tag: othercredit
+#: index.docbook:22
+#, no-c-format
+msgid "<firstname>George</firstname><surname>Staikos</surname>"
+msgstr ""
+
+#. Tag: address
+#: index.docbook:24
+#, no-c-format
+msgid "&George.Staikos.mail;"
+msgstr ""
+
+#. Tag: contrib
+#: index.docbook:25
+#, no-c-format
+msgid "Developer"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:27
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+
+#. Tag: date
+#: index.docbook:32
+#, no-c-format
+msgid "2013-11-19"
+msgstr ""
+
+#. Tag: releaseinfo
+#: index.docbook:33
+#, no-c-format
+msgid "2.0 (&kde; 4.12)"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:36
+#, no-c-format
+msgid ""
+"The wallet subsystem provides a convenient and secure way to manage all your "
+"passwords."
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:44
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:45
+#, no-c-format
+msgid "Kwallet"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:46
+#, no-c-format
+msgid "passwords"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:47
+#, no-c-format
+msgid "forms"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:53
+#, no-c-format
+msgid "Introduction"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:55
+#, no-c-format
+msgid ""
+"Computer users have a very large amount of data to manage, some of which is "
+"sensitive. In particular, you will typically have many passwords to manage. "
+"Remembering them is difficult and writing them down on paper or in a text file "
+"is insecure."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:60
+#, no-c-format
+msgid ""
+"&kwallet; provides a secure way to store passwords and other secret "
+"information, allowing the user to remember only a single password instead of "
+"numerous different passwords and credentials."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:66
+#, no-c-format
+msgid "Create a Wallet"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:68
+#, no-c-format
+msgid "There are three ways to create a new wallet:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:71
+#, no-c-format
+msgid ""
+"Use the menu item <menuchoice><guimenu>File</guimenu><guimenuitem>"
+"New Wallet</guimenuitem></menuchoice> in the &kwalletmanager;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:74
+#, no-c-format
+msgid ""
+"Use the <guibutton>New</guibutton> button in the &systemsettings; module "
+"<guilabel>KDE Wallet</guilabel>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:77
+#, no-c-format
+msgid ""
+"On the first attempt to store login information in a wallet when you did not "
+"create a wallet so far, see section <link linkend=\"kwallet-using\">"
+"Using &kwallet;</link>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:82
+#, no-c-format
+msgid "&kwallet; offers two different ways to store your data:"
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:85
+#, no-c-format
+msgid "<screeninfo>Select encryption</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:88
+#, no-c-format
+msgid "<phrase>Select encryption</phrase>"
+msgstr ""
+
+#. Tag: term
+#: index.docbook:95
+#, no-c-format
+msgid "Blowfish encryption"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:97
+#, no-c-format
+msgid ""
+"&kwallet; saves this sensitive data for you in a strongly encrypted file, "
+"accessible by all applications, and protected with a master password that you "
+"define."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:102
+#, no-c-format
+msgid "<screeninfo>Create a blowfish encrypted wallet</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:105
+#, no-c-format
+msgid "<phrase>Create a blowfish encrypted wallet</phrase>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:109
+#, no-c-format
+msgid ""
+"The data is encrypted with the <ulink "
+"url=\"http://www.schneier.com/blowfish.html\">Blowfish symmetric block cipher "
+"algorithm</ulink>, the algorithm key is derived from the <ulink "
+"url=\"http://www.ietf.org/rfc/rfc3174.txt\">SHA-1 hash</ulink> "
+"of the password, with a key length of 156 bits (20 bytes). The data into the "
+"wallet file is also hashed with SHA-1 and checked before the data is deciphered "
+"and accessible by the applications."
+msgstr ""
+
+#. Tag: term
+#: index.docbook:121
+#, no-c-format
+msgid "GPG encryption"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:123
+#, no-c-format
+msgid ""
+"GnuPG offers some very strong encryption algorithms and uses passphrase "
+"protected long keys."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:126
+#, no-c-format
+msgid "<screeninfo>No GPG key found</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:129
+#, no-c-format
+msgid "<phrase>No GPG key found</phrase>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:132
+#, no-c-format
+msgid ""
+"The screenshots above show the case where an encryption capable GPG key was not "
+"found on the system. Please use applications like &kgpg; or &kleopatra; to "
+"create a key an try again."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:135
+#, no-c-format
+msgid ""
+"If a GPG key was found you will get the next dialog where you can select a key "
+"to use for your new wallet."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:138
+#, no-c-format
+msgid "<screeninfo>Select an encryption key</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:141
+#, no-c-format
+msgid "<phrase>Select an encryption key</phrase>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:145
+#, no-c-format
+msgid ""
+"&kwallet; will now use GPG when storing wallets and when opening them. The "
+"passphrase dialog only shows once. Even if the wallet is closed after initial "
+"open, subsequent opening will occur silently during the same &kde; session."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:150
+#, no-c-format
+msgid ""
+"The same &kde; session can handle simultaneously both file formats. &kwallet; "
+"will transparently detect the file format and load the correct backend to "
+"handle it."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:154
+#, no-c-format
+msgid ""
+"To use your sensitive data from your classic wallet with the new backend follow "
+"these steps:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:158
+#, no-c-format
+msgid "Create a new GPG based wallet"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:159
+#, no-c-format
+msgid ""
+"Launch &kwalletmanager; and select your old wallet then choose <menuchoice>"
+"<guimenu>File</guimenu> <guimenuitem>Export as XML</guimenuitem></menuchoice> "
+"to create an &XML; file with your sensitive data."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:162
+#, no-c-format
+msgid ""
+"Select the new GPG based wallet then choose <menuchoice><guimenu>File</guimenu> "
+"<guimenuitem>Import XML</guimenuitem></menuchoice> and select the file you just "
+"saved."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:164
+#, no-c-format
+msgid "Encrypt the &XML; file to keep a backup."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:166
+#, no-c-format
+msgid ""
+"<menuchoice><guimenu>File</guimenu><guimenuitem>Import Wallet</guimenuitem>"
+"</menuchoice> but in that case you have to select the <filename "
+"class=\"extension\">.kwl</filename> file corresponding to your old wallet, "
+"located in <filename class=\"directory\">$<envar>KDEHOME</envar>"
+"/.kde/share/apps/kwallet</filename>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"Go to &systemsettings; <menuchoice><guimenu>Account Details</guimenu> "
+"<guimenuitem>KDE Wallet</guimenuitem></menuchoice> and select the newly created "
+"GPG based wallet from the <guilabel>Select wallet to use as default</guilabel> "
+"combobox."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:182
+#, no-c-format
+msgid ""
+"&kwallet; supports multiple wallets, so for the most secure operation, you "
+"should use one wallet for local passwords, and another for network passwords "
+"and form data. You can configure this behavior in the &kwallet; "
+"&systemsettings; module, however the default setting is to store everything in "
+"one wallet."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:189
+#, no-c-format
+msgid ""
+"A wallet is by default closed, which means that you must supply a password to "
+"open it. Once the wallet is opened, the contents can be accessed."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:195
+#, no-c-format
+msgid "Using &kwallet;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:197
+#, no-c-format
+msgid ""
+"If you visit &eg; the &kde; bugtracker and enter the login data for the first "
+"time, a dialog pops up offering to store the password in an encrypted wallet:"
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:202
+#, no-c-format
+msgid "<screeninfo>Request to save login information</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:205
+#, no-c-format
+msgid "<phrase>Request to save login information</phrase>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:209
+#, no-c-format
+msgid ""
+"If you want to store this information, select <guibutton>Store</guibutton> "
+"to proceed. In case you did not create a wallet so far, the next dialog asks "
+"for the encryption backend and creates a wallet named kdewallet."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:214
+#, no-c-format
+msgid ""
+"Next time you visit the same website again, the application requests to open "
+"the wallet. Enter the wallet password and click the <guibutton>Open</guibutton> "
+"button."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:218
+#, no-c-format
+msgid "<screeninfo>Request to open a wallet</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:221
+#, no-c-format
+msgid "<phrase>Request to open a wallet</phrase>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:225
+#, no-c-format
+msgid ""
+"This connects the application to the wallet, enables it to read the login data "
+"from the wallet and to restore the login information for this website. Once an "
+"application is connected to the wallet, it can automatically restore any login "
+"information stored in the wallet."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:234
+#, no-c-format
+msgid "&kwalletmanager;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:236
+#, no-c-format
+msgid ""
+"&kwalletmanager; serves a number of functions. Firstly it allows you to see if "
+"any wallets are open, which wallets those are, and which applications are using "
+"each wallet. You can disconnect an application's access to a wallet from within "
+"the &kwalletmanager;."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:241
+#, no-c-format
+msgid ""
+"You may also manage the wallets installed on the system, creating and deleting "
+"wallets and manipulating their contents (changing keys, ...)."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:244
+#, no-c-format
+msgid ""
+"The &kwalletmanager; application is launched with <menuchoice> <guimenu>"
+"Applications</guimenu><guisubmenu>System</guisubmenu> <guimenuitem>"
+"Wallet Management Tool</guimenuitem></menuchoice> from the application "
+"launcher. Alternatively start &krunner; with shortcut <keycombo "
+"action=\"simul\">&Alt;<keycap>F2</keycap></keycombo> and enter <command>"
+"kwalletmanager</command>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:252
+#, no-c-format
+msgid ""
+"A system tray icon indicates that a wallet is open: <mediaobject> <imageobject> "
+"<imagedata fileref=\"oxygen48-status-wallet-open.png\"/> </imageobject> "
+"</mediaobject> When all wallets are closed, the icon will reflect this by "
+"showing a closed wallet:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:270
+#, no-c-format
+msgid ""
+"Click once on the system tray wallet icon to display the &kwalletmanager; "
+"window."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:274
+#, no-c-format
+msgid "<screeninfo>Main window with one wallet</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:280
+#, no-c-format
+msgid "<phrase>Main window with one wallet</phrase>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:282
+#, no-c-format
+msgid "<para>Main window with one wallet</para>"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:293
+#, no-c-format
+msgid "The Wallet Window"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:295
+#, no-c-format
+msgid ""
+"If you have more than one wallet all available wallets are shown as icons on "
+"the left. The Icons reflect the current wallet status, either open or closed."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:298
+#, no-c-format
+msgid ""
+"Clicking on a wallet in the &kwalletmanager; window will display that wallet's "
+"status and the contents of an opened wallet. A wallet may contain any number of "
+"folders, which allow storing of password information. By default a wallet will "
+"contain folders named Form Data and Passwords."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:305
+#, no-c-format
+msgid "<screeninfo>Main window with two wallets</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:311
+#, no-c-format
+msgid "<phrase>Main window with two wallets</phrase>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:313
+#, no-c-format
+msgid "<para>Main window with two wallets</para>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:316
+#, no-c-format
+msgid ""
+"Use <guibutton>Open</guibutton> to display the content of a closed wallet. You "
+"will be requested to enter the master password."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:320
+#, no-c-format
+msgid "Contents tab"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:322
+#, no-c-format
+msgid "The <guilabel>Contents</guilabel> tab has three sections:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:325
+#, no-c-format
+msgid "A search line to filter the items of the current wallet"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:327
+#, no-c-format
+msgid ""
+"The tree view of the folders contained in the wallet. Click the <guiicon>"
+"&gt;</guiicon> / <guiicon>v</guiicon> icons to expand or collapse the tree "
+"view."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:330
+#, no-c-format
+msgid ""
+"The contents of the selected folder entry at the right side. By default the "
+"password and value are hidden. To display and edit them enable <guilabel>"
+"Show values</guilabel> or click the <guilabel>Show Contents</guilabel> button."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:336
+#, no-c-format
+msgid ""
+"Folders may be added or deleted via the context menu, and selecting a folder "
+"will update the folder entry list and the summary display. Selecting a folder "
+"entry will update the entry contents pane, and allow you to edit that entry."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:341
+#, no-c-format
+msgid ""
+"Entries may also be created, renamed or deleted via the context menu for the "
+"folder contents."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:344
+#, no-c-format
+msgid ""
+"All folders and entries may be dragged and dropped into other wallets or "
+"folders respectively. This allows a user to easily package up a new wallet for "
+"transfer to another environment. For instance, a new wallet could be created "
+"and copied onto a removable flash memory device. Important passwords could be "
+"transferred there, so you have them available in other locations."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:352
+#, no-c-format
+msgid "Import and Export"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:353
+#, no-c-format
+msgid ""
+"If you want to transfer your secrets to another device or computer use the "
+"actions in the <guimenu>File</guimenu> menu. With <guimenuitem>"
+"Save As</guimenuitem> wallets can be exported into an encrypted <filename "
+"class=\"extension\">.kwl</filename> file. Importing the <filename "
+"class=\"extension\">.kwl</filename> file you have to provide the master "
+"password of the wallet."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:358
+#, no-c-format
+msgid ""
+"Alternatively a <filename class=\"extension\">.xml</filename> "
+"file can be used for transferring a wallet. Keep in mind that all secrets are "
+"stored as plain text in this file."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:364
+#, no-c-format
+msgid "Adding Entries Manually"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:365
+#, no-c-format
+msgid ""
+"Open the context menu with the &RMB; click on <guilabel>Maps</guilabel> "
+"or <guilabel>Passwords</guilabel> in the <guilabel>Folder</guilabel> "
+"tree view. Select <guimenuitem>New</guimenuitem> and choose a name for the new "
+"entry."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:368
+#, no-c-format
+msgid ""
+"In the folder contents pane select <guilabel>New Entry</guilabel> "
+"from the context menu of <quote>Form Data</quote> or <quote>Passwords</quote>"
+". For passwords click the <guilabel>Show Contents</guilabel> "
+"button, enter the new password. For Maps you have to add a <guilabel>"
+"Key</guilabel> and a <guilabel>Value</guilabel>. Click the <guilabel>"
+"Save</guilabel> button to store the new entries in the encrypted wallet file."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:379
+#, no-c-format
+msgid "<title>Applications tab</title>"
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:382
+#, no-c-format
+msgid "<screeninfo>Applications tab</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:388
+#, no-c-format
+msgid "<phrase>Applications tab</phrase>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:390
+#, no-c-format
+msgid "<para>Applications tab</para>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:394
+#, no-c-format
+msgid ""
+"The first list shows all applications currently connected to the selected "
+"wallet. Use the button at the right side of each entry to disconnect the "
+"application."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:397
+#, no-c-format
+msgid ""
+"In the second list all applications are displayed which are authorized to "
+"access the wallet. Use the button right of each entry in the list to revoke the "
+"access."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:407
+#, no-c-format
+msgid "Configuring &kwallet;"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:410
+#, no-c-format
+msgid "Wallet Preferences"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:412
+#, no-c-format
+msgid ""
+"&kwallet; contains a small configuration panel with several options that allow "
+"you to tune &kwallet; to your personal preferences. The default settings for "
+"&kwallet; are sufficient for most users."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:416
+#, no-c-format
+msgid ""
+"Check the box to enable or disable the &kde; wallet subsystem entirely. If this "
+"box is unchecked, then &kwallet; is entirely disabled and none of the other "
+"options here have any effect, nor will &kwallet; record any information, or "
+"offer to fill in forms for you."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:422
+#, no-c-format
+msgid "Close Wallet"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:424
+#, no-c-format
+msgid "Close when unused for:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:426
+#, no-c-format
+msgid ""
+"Close the current wallet after a period of inactivity. If you check this "
+"option, set the period in the box, default is 10 minutes. When a wallet is "
+"closed, the password is needed to access it again."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:433
+#, no-c-format
+msgid "Close when screensaver starts"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:435
+#, no-c-format
+msgid ""
+"Close the wallet as soon as the screen saver starts. When a wallet is closed, "
+"the password is needed to access it again."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:441
+#, no-c-format
+msgid "Close when last application stops using it"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:443
+#, no-c-format
+msgid ""
+"Close the wallet as soon as applications that use it have stopped. Note that "
+"your wallets will only be closed when all the applications that use it have "
+"stopped. When a wallet is closed, the password is needed to access it again."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:452
+#, no-c-format
+msgid "Automatic Wallet Selection"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:454
+#, no-c-format
+msgid "Select wallet to use as default:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:456
+#, no-c-format
+msgid "Select which wallet you want to use as default wallet."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:461
+#, no-c-format
+msgid "Different wallet for local passwords:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:463
+#, no-c-format
+msgid "If checked, choose a different wallet for local passwords."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:469
+#, no-c-format
+msgid "Wallet Manager"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:471
+#, no-c-format
+msgid "Show manager in system tray"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:473
+#, no-c-format
+msgid "Enable the wallet manager to have its icon in the system tray."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:478
+#, no-c-format
+msgid "Hide System tray icon when last wallet closes"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:481
+#, no-c-format
+msgid ""
+"When there is no wallet in use anymore, remove the wallet icon from the system "
+"tray."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:487
+#, no-c-format
+msgid ""
+"Finally, there is a button labeled <guibutton>Launch Wallet Manager</guibutton>"
+", which does precisely that."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:489
+#, no-c-format
+msgid "This button is only visible if &kwalletmanager; is not running"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:493
+#, no-c-format
+msgid "Access Control"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:495
+#, no-c-format
+msgid "There is only one option on this page:"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:499
+#, no-c-format
+msgid "Prompt when an application accesses a wallet"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:501
+#, no-c-format
+msgid "Signal you when an application gains access to a wallet."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:506
+#, no-c-format
+msgid ""
+"Next there is a tree style view of the access controls for your wallets."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:508
+#, no-c-format
+msgid ""
+"Click with the &LMB; on the <guiicon>&gt;</guiicon> symbol beside a wallet name "
+"to expand the tree. You will see the name of each application that has asked "
+"for access to the wallet, and the policy you set for it. You cannot edit "
+"policies here, or add them, but it is possible to delete an entry by &RMB; "
+"clicking on it and choosing <guimenuitem>Delete</guimenuitem> "
+"from the context menu that appears, or by simply selecting it and pressing the "
+"<keysym>Del</keysym> key."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:516
+#, no-c-format
+msgid ""
+"An application that has been allowed access to a wallet is granted access to "
+"all passwords stored inside."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:519
+#, no-c-format
+msgid ""
+"If you erroneously configured an application not to use the &kde; "
+"&kwalletmanager; delete the policy for this application here."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:522
+#, no-c-format
+msgid ""
+"On the next start of this application you can define a new policy for access to "
+"the wallet."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:526
+#, no-c-format
+msgid "<screeninfo>Access request to open a wallet</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:532
+#, no-c-format
+msgid "<phrase>Access request to open a wallet</phrase>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:534
+#, no-c-format
+msgid "An application requesting access to a wallet"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:606
+#, no-c-format
+msgid "Advanced Features"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:608
+#, no-c-format
+msgid ""
+"Wallets can be dragged from the &kwalletmanager; window. This allows you to "
+"drag the wallet to a file browser window, where you can choose to copy, move, "
+"or link the wallet, as desired."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:612
+#, no-c-format
+msgid ""
+"You might use this to save a wallet to portable media, such as a USB keychain, "
+"so that you can take your passwords with you to work or on a vacation, and "
+"still have easy access to important sites."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:616
+#, no-c-format
+msgid ""
+"Future versions will have built-in functions for easy export or copying of data "
+"to portable devices."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:620
+#, no-c-format
+msgid ""
+"Information on the internal structure of &kwallet; and some useful links to the "
+"code where you can find the answers on questions about the structure of the "
+"passwords records and the ciphers applied to keep passwords confident can be "
+"found on <ulink url=\"http://techbase.kde.org/Projects/Utils/kwallet\">"
+"&kwallet; TechBase page</ulink>."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:633
+#, no-c-format
+msgid "Credits and License"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:635
+#, no-c-format
+msgid "&kwallet; &copy; 2003 &George.Staikos;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:636
+#, no-c-format
+msgid "Documentation &copy; &Lauri.Watts; and &George.Staikos;"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:638
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+
+#. Tag: chapter
+#: index.docbook:638
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr ""

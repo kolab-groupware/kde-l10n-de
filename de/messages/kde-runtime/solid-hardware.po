@@ -1,0 +1,365 @@
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2007, 2008.
+# Frederik Schwarzer <schwarzer@kde.org>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: solid-hardware\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2011-08-28 03:46+0200\n"
+"PO-Revision-Date: 2011-09-16 16:42+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.2\n"
+
+#: solid-hardware.cpp:45
+msgid "solid-hardware"
+msgstr "solid-hardware"
+
+#: solid-hardware.cpp:47
+msgid "KDE tool for querying your hardware from the command line"
+msgstr "KDE-Befehlszeilenprogramm zur Abfrage und Verwaltung Ihrer Hardware."
+
+#: solid-hardware.cpp:179
+msgid "Syntax Error: Not enough arguments"
+msgstr "Syntaxfehler: Zu wenig Argumente"
+
+#: solid-hardware.cpp:184
+msgid "Syntax Error: Too many arguments"
+msgstr "Syntaxfehler: Zu viele Argumente"
+
+#: solid-hardware.cpp:195
+msgid "Show available commands"
+msgstr "Verfügbare Befehle anzeigen"
+
+#: solid-hardware.cpp:197
+msgid "Command (see --commands)"
+msgstr "Befehl (siehe --commands)"
+
+#: solid-hardware.cpp:199
+msgid "Arguments for command"
+msgstr "Argumente für den Befehl"
+
+#: solid-hardware.cpp:211
+msgid "Syntax:"
+msgstr "Syntax:"
+
+#: solid-hardware.cpp:214
+msgid ""
+"             # List the hardware available in the system.\n"
+"             # - If the 'nonportableinfo' option is specified, the device\n"
+"             # properties are listed (be careful, in this case property "
+"names\n"
+"             # are backend dependent),\n"
+"             # - If the 'details' option is specified, the device "
+"interfaces\n"
+"             # and the corresponding properties are listed in a platform\n"
+"             # neutral fashion,\n"
+"             # - Otherwise only device UDIs are listed.\n"
+msgstr ""
+"             # Listet die verfügbare Hardware im Rechner auf.\n"
+"             # – Wenn die Option „nonportableinfo“ angegeben ist, werden\n"
+"             # die Geräteeigenschaften angezeigt (Achtung: In diesem Fall "
+"sind\n"
+"             # die Namen der Eigenschaften abhängig vom Backend),\n"
+"             # – Wenn die option „details“ angegeben ist, werden die "
+"Schnittstellen\n"
+"             # und zugehörigen Eigenschaften Plattformneutral aufgelistet,\n"
+"             # – Ansonsten werden nur die Geräte-UDIs aufgelistet.\n"
+
+#: solid-hardware.cpp:224
+msgid ""
+"             # Display all the interfaces and properties of the device\n"
+"             # corresponding to 'udi' in a platform neutral fashion.\n"
+msgstr ""
+"             # Zeigt alle Schnittstellen und Eigenschaften des Gerätes zu\n"
+"             # „udi“ auf Plattformunabhängige Weise an.\n"
+
+#: solid-hardware.cpp:228
+msgid ""
+"             # Display all the properties of the device corresponding to "
+"'udi'\n"
+"             # (be careful, in this case property names are backend "
+"dependent).\n"
+msgstr ""
+"             # Zeigt alle Schnittstellen und Eigenschaften des Gerätes zu\n"
+"             # „udi“ an.\n"
+"             # (Vorsicht, Eigenschaften-Namen sind Treiber-Spezifisch.)\n"
+
+#: solid-hardware.cpp:232
+msgid ""
+"             # List the UDI of devices corresponding to 'predicate'.\n"
+"             # - If 'parentUdi' is specified, the search is restricted to "
+"the\n"
+"             # branch of the corresponding device,\n"
+"             # - Otherwise the search is done on all the devices.\n"
+msgstr ""
+"             # Zeigt die Liste der UDIs an, die zu „predicate“ gehören.\n"
+"             # – Wenn „parentUdi“ angegeben ist, beschränkt sich die Suche\n"
+"             # auf den aktuellen Zweig des zugehörigen Gerätes,\n"
+"             # – ansonsten wird die Suche über alle Geräte durchgeführt.\n"
+
+#: solid-hardware.cpp:238
+msgid ""
+"             # If applicable, mount the device corresponding to 'udi'.\n"
+msgstr ""
+"             # Falls anwendbar, wird das Gerät eingebunden,\n"
+"             # das zu „udi“ gehört.\n"
+
+#: solid-hardware.cpp:241
+msgid ""
+"             # If applicable, unmount the device corresponding to 'udi'.\n"
+msgstr ""
+"             # Falls anwendbar, wird die Geräteeinbindung für das Gerät\n"
+"             # gelöst, das zu „udi“ gehört.\n"
+
+#: solid-hardware.cpp:244
+msgid ""
+"             # If applicable, eject the device corresponding to 'udi'.\n"
+msgstr "             # Das Gerät zu „udi“ auswerfen, falls möglich.\n"
+
+#: solid-hardware.cpp:247
+msgid "             # Listen to all add/remove events on supported hardware."
+msgstr ""
+"             # Auf alle Hinzufügen/Entfernen-Ereignisse auf unterstützter "
+"Hardware lauschen."
+
+#: solid-hardware.cpp:322
+#, kde-format
+msgid "Syntax Error: Unknown command '%1'"
+msgstr "Syntaxfehler: Unbekannter Befehl „%1“"
+
+#: solid-hardware.cpp:392
+#, kde-format
+msgid "Error: %1 does not have the interface StorageAccess."
+msgstr "Fehler: In %1 gibt es keine Schnittstelle namens „StorageAccess“."
+
+#: solid-hardware.cpp:397
+#, kde-format
+msgid "Error: %1 does not have the interface OpticalDrive."
+msgstr "Fehler: In %1 gibt es keine Schnittstelle namens „OpticalDrive“."
+
+#: solid-hardware.cpp:430
+#, kde-format
+msgid "Error: %1"
+msgstr "Fehler: %1"
+
+#: solid-hardware.cpp:465
+#, kde-format
+msgid "Progress: %1%"
+msgstr "Fortschritt: %1 %"
+
+#: solid-hardware.cpp:471
+#, kde-format
+msgid "Info: %1"
+msgstr "Information: %1"
+
+#~ msgid "solidshell"
+#~ msgstr "Solid-Shell"
+
+#~ msgid "Domain (see --commands)"
+#~ msgstr "Domäne (siehe --commands)"
+
+#~ msgid ""
+#~ "             # List a particular set of information regarding power "
+#~ "management.\n"
+#~ "             # - If the 'suspend' option is specified, give the list of "
+#~ "suspend\n"
+#~ "             # method supported by the system\n"
+#~ "             # - If the 'scheme' option is specified, give the list of\n"
+#~ "             # supported power management schemes by this system\n"
+#~ "             # - If the 'cpufreq' option is specified, give the list of\n"
+#~ "             # supported CPU frequency policy\n"
+#~ msgstr ""
+#~ "             # Zeigt eine bestimmte Liste mit Informationen zur "
+#~ "Energieverwaltung an.\n"
+#~ "             # - Wenn die Option ‚suspend‘ angegeben ist, wird die Liste "
+#~ "der\n"
+#~ "             #   vom System unterstützten Ruhezustand-Optionen "
+#~ "ausgegeben\n"
+#~ "             # - Wenn die Option ‚scheme‘ angegeben ist, wird die Liste "
+#~ "der\n"
+#~ "             #   vom System unterstützten Energieverwaltungs-Schemata "
+#~ "ausgegeben\n"
+#~ "             # - Wenn die Option ‚cpufreq‘ angegeben ist, wird die Liste "
+#~ "der\n"
+#~ "             #   vom System unterstützten CPU-Frequenz-Schemata "
+#~ "ausgegeben.\n"
+
+#~ msgid ""
+#~ "             # Set power management options of the system.\n"
+#~ "             # - If the 'scheme' option is specified, the power "
+#~ "management\n"
+#~ "             # scheme set corresponds to 'value'\n"
+#~ "             # - If the 'cpufreq' option is specified, the CPU frequency "
+#~ "policy\n"
+#~ "             # set corresponds to 'value'\n"
+#~ msgstr ""
+#~ "             # Legt die Optionen zur Energieverwaltung des Systems fest.\n"
+#~ "             # - Wenn die Option ‚scheme‘ angegeben ist, wird das "
+#~ "Energie-\n"
+#~ "             #   verwaltungsschema auf ‚value‘ eingestellt.\n"
+#~ "             # - Wenn die Option ‚cpufreq‘ angegeben ist, wird das CPU-\n"
+#~ "             #   Frequenz-Schema auf ‚value‘ eingestellt.\n"
+
+#~ msgid "             # Suspend the computer using the given 'method'.\n"
+#~ msgstr ""
+#~ "             # Bringt den Rechner mit der Methode ‚method‘ in den "
+#~ "Ruhezustand.\n"
+
+#~ msgid "             # List the network devices present.\n"
+#~ msgstr "             # Zeigt die verfügbaren Netzwerkgeräte an.\n"
+
+#~ msgid ""
+#~ "             # List the networks known to the device specified by 'uni'.\n"
+#~ msgstr ""
+#~ "             # Zeigt die Netzwerke an, die dem Gerät ‚uni‘ bekannt sind.\n"
+
+#~ msgid ""
+#~ "             # Query whether networking features are active or not.\n"
+#~ "             # - If the 'status' option is given, return whether\n"
+#~ "             # networking is enabled for the system\n"
+#~ "             # - If the 'wireless' option is is given, return whether\n"
+#~ "             # wireless is enabled for the system\n"
+#~ "             # - If the 'interface' option is given, print the\n"
+#~ "             # properties of the network interface that 'uni' refers to.\n"
+#~ "             # - If the 'network' option is given, print the\n"
+#~ "             # properties of the network on 'device-uni' that 'network-"
+#~ "uni' refers to.\n"
+#~ msgstr ""
+#~ "             # Fragt an, ob Netzwerkfunktionen aktiv sind oder nicht.\n"
+#~ "             # - Wenn die Option ‚status‘ angegeben ist, wird angezeigt,\n"
+#~ "             #   ob das Netzwerk im System aktiviert ist\n"
+#~ "             # - Wenn die Option ‚wireless‘ angegeben ist, wird "
+#~ "angezeigt,\n"
+#~ "             #   ob Drahtlosfunktionen im System aktiviert sind.\n"
+#~ "             # - Wenn die Option ‚interface‘ angegeben ist, werden die\n"
+#~ "             #   Eigenschaften des Netzwerkgerätes ‚uni‘ angezeigt\n"
+#~ "             # - Wenn die Option ‚network‘ angegeben ist, werden die\n"
+#~ "             #   Eigenschaften des Netzwerks ‚device-uni‘ angezeigt,\n"
+#~ "             #   auf das ‚network-uni‘ verweist.\n"
+
+#~ msgid "             # Enable or disable networking on this system.\n"
+#~ msgstr ""
+#~ "             # Aktiviert oder deaktiviert das Netzwerk für dieses "
+#~ "System.\n"
+
+#~ msgid ""
+#~ "             # Activate the network 'network-uni' on 'device-uni'.\n"
+#~ "             # Optionally, use WEP128, open-system encryption with hex "
+#~ "key 'key'. (Hardcoded)\n"
+#~ "             # Where 'authentication' is one of:\n"
+#~ "             # wep hex64|ascii64|hex128|ascii128|passphrase64|"
+#~ "passphrase128 'key' [open|shared]\n"
+#~ "             # wpapsk wpa|wpa2 tkip|ccmp-aes password\n"
+#~ "             # wpaeap UNIMPLEMENTED IN SOLIDSHELL\n"
+#~ msgstr ""
+#~ "             # Aktiviert das Netzwerk ‚network-uni‘ an ‚device-uni‘.\n"
+#~ "             # Optional kann WEP128 bzw. open-system-Verschlüsselung mit "
+#~ "dem\n"
+#~ "             # Hexadezimal-Schlüssel ‚key‘ (fest eingestellt) verwendet "
+#~ "werden.\n"
+#~ "             # Für ‚authentication‘ kann verwendet werden werden:\n"
+#~ "             # wep hex64|ascii64|hex128|ascii128|passphrase64|"
+#~ "passphrase128 ‚key‘ [open|shared]\n"
+#~ "             # wpapsk wpa|wpa2 tkip|ccmp-aes passwort\n"
+#~ "             # wpaeap (IN SOLIDSHELL NOCH NICHT EINPROGRAMMIERT)\n"
+
+#~ msgid "             # List bluetooth adapters/interfaces\n"
+#~ msgstr "             # Listet Bluetooth-Geräte und -Schnittstellen auf\n"
+
+#~ msgid "             # List bluetooth default adapter/interface\n"
+#~ msgstr "             # Zeigt das Standard-Bluetooth-Gerät an\n"
+
+#~ msgid ""
+#~ "             # Query information about the bluetooth adapter/interface "
+#~ "with 'ubi'\n"
+#~ msgstr ""
+#~ "             # Ruft Informationen für das Bluetooth-Gerät ‚ubi‘ ab\n"
+
+#~ msgid ""
+#~ "             # Set the bluetooth adapter name.\n"
+#~ "             # Set the bluetooth adapter mode. Where 'value' is one of:\n"
+#~ "             # off|connectable|discoverable\n"
+#~ msgstr ""
+#~ "             # Legt den Namen für das Bluetooth-Gerät fest.\n"
+#~ "             # Legt weiterhin den Modus für das Bluetooth-Gerät fest. "
+#~ "‚Value‘ kann sein:\n"
+#~ "             # off|connectable|discoverable\n"
+
+#~ msgid "             # Scan for bluetooth remote devices.\n"
+#~ msgstr "             # Sucht nach entfernten Bluetooth-Geräten.\n"
+
+#~ msgid "             # List configured input devices.\n"
+#~ msgstr "             # Listet eingerichtete Eingabe-Geräte auf.\n"
+
+#~ msgid ""
+#~ "             # Setup bluetooth input device.\n"
+#~ "             # Remove configuration of remote input device.\n"
+#~ "             # Connect or disconnect bluetooth input device.\n"
+#~ msgstr ""
+#~ "             # Richtet ein Bluetooth-Eingabegerät ein.\n"
+#~ "             # Entfernt eine Konfiguration für ein entferntes Bluetooth-"
+#~ "Eingabegerät.\n"
+#~ "             # Verbindet oder trennt ein Bluetooth-Eingabegerät.\n"
+
+#~ msgid ""
+#~ "             # Create bonding (pairing) with bluetooth remote device.\n"
+#~ "             # Remove bonding of bluetooth remote device.\n"
+#~ "             # Check for bonding of bluetooth remote device.\n"
+#~ msgstr ""
+#~ "             # Erzeugt eine Paarung mit einem entfernten Bluetooth-"
+#~ "Gerät.\n"
+#~ "             # Löst eine Paarung mit einem entfernten Bluetooth-Gerät.\n"
+#~ "             # Prüft auf Paarungen mit entfernten Bluetooth-Geräten.\n"
+
+#~ msgid "Syntax Error: Unknown option '%1'"
+#~ msgstr "Syntaxfehler: Unbekannte Option „%1“"
+
+#~ msgid "Unrecognised WEP type '%1'"
+#~ msgstr "Unbekannter WEP-Typ „%1“"
+
+#~ msgid "Unrecognised WEP method '%1'"
+#~ msgstr "Unbekannte WEP-Methode „%1“"
+
+#~ msgid "Unrecognised WPA version '%1'"
+#~ msgstr "Unbekannte WPA-Version „%1“"
+
+#~ msgid "Unrecognised WPA encryption protocol '%1'"
+#~ msgstr "Unbekanntes WPA-Verschlüsselungsprotokoll „%1“"
+
+#~ msgid "Unimplemented auth scheme '%1'"
+#~ msgstr "Nicht eingebautes Authentifizierungsschema „%1“"
+
+#~ msgid "Syntax Error: Unknown object '%1'"
+#~ msgstr "Syntaxfehler: Unbekanntes Objekt „%1“"
+
+#~ msgid "Syntax Error: Unknown command group '%1'"
+#~ msgstr "Syntaxfehler: Unbekannte Befehlsgruppe „%1“"
+
+#~ msgid "Unsupported suspend method: %1"
+#~ msgstr "Unbekannte Ruhezustand-Methode: %1"
+
+#~ msgid "Error: unsupported operation!"
+#~ msgstr "Fehler: Nicht unterstützte Operation"
+
+#~ msgid "Unsupported scheme: %1"
+#~ msgstr "Nicht unterstütztes Schema: %1"
+
+#~ msgid "Unsupported cpufreq policy: %1"
+#~ msgstr "Nicht unterstützte cpufreq-Regelung: %1"
+
+#~ msgid "networking: is enabled"
+#~ msgstr "Netzwerk: ist aktiviert"
+
+#~ msgid "networking: is not enabled"
+#~ msgstr "Netzwerk: ist abgeschaltet"
+
+#~ msgid "wireless: is enabled"
+#~ msgstr "Drahtlosnetzwerk: ist aktiviert"
+
+#~ msgid "wireless: is not enabled"
+#~ msgstr "Drahtlosnetzwerk: ist abgeschaltet"

@@ -1,0 +1,646 @@
+<sect1>
+<title
+>Skript-API für das Backend „Graph“</title>
+
+<para
+>Im Dialog <guilabel
+>Eigenschaften der Datenstruktur</guilabel
+> finden Sie die die Einstellungen für ein bestimmtes Graphen-Backend. Mit <guilabel
+>Graphentyp</guilabel
+> können Sie den Typ eines Graphen auswählen. Die Typen haben folgende Bedeutung: </para>
+<itemizedlist>
+    <listitem
+><para
+><guilabel
+>Graph</guilabel
+>: Ein Graph, bei dem dieselben Kanten unter Berücksichtigung von Start- und Endpunkt nur einmal vorkommen dürfen. </para
+></listitem>
+    <listitem
+><para
+><guilabel
+>Multigraph</guilabel
+>: Ein Graph, bei dem dieselben Kanten unter Berücksichtigung von Start- und Endpunkt auch mehrfach vorkommen dürfen. </para
+></listitem>
+</itemizedlist>
+
+<sect2>
+<title
+>Graph-Datenstruktur</title>
+<para
+>Ein Graphenobjekt enthält Informationen über eine Datenstruktur vom Typ <quote
+>Graph</quote
+>. </para>
+
+<sect3>
+<title
+>Eigenschaften</title>
+<itemizedlist>
+
+    <listitem>
+        <para
+><emphasis
+>name</emphasis
+> : </para>
+        <para
+>Der eindeutige Name dieser Datenstruktur.</para>
+    </listitem>
+
+</itemizedlist>
+</sect3>
+
+<sect3>
+<title
+>Methoden</title>
+<variablelist>
+
+    <varlistentry>
+    <term
+>nodes()</term>
+    <listitem>
+        <para
+>Gibt eine Liste aller Knoten des Graphen zurück.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>array <function
+>nodes</function
+></funcdef
+> <paramdef
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>nodes(type)</term>
+    <listitem>
+        <para
+>Gibt eine Liste aller Knoten des Graphen vom angegebenen Typ zurück.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>array <function
+>nodes</function
+></funcdef
+> <paramdef
+>int <parameter
+><replaceable
+>type</replaceable
+></parameter
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>edges()</term>
+    <listitem>
+        <para
+>Gibt eine Liste aller Kanten des Graphen zurück.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>array <function
+>edges</function
+></funcdef
+> <paramdef
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>edges(type)</term>
+    <listitem>
+        <para
+>Gibt eine Liste aller Kanten des Graphen vom angegebenen Typ zurück.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>array <function
+>edges</function
+></funcdef
+> <paramdef
+>int <parameter
+><replaceable
+>type</replaceable
+></parameter
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>createNode(type)</term>
+    <listitem>
+        <para
+>Erstellt einen neuen Knoten vom angegebenen Typ und gibt den erzeugten Knoten zurück. Ist der Typ nicht registriert, wird kein Knoten erzeugt.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>GraphNode <function
+>createNode</function
+></funcdef
+> <paramdef
+>int <parameter
+><replaceable
+>type</replaceable
+></parameter
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>createNode()</term>
+    <listitem>
+        <para
+>Erstellt einen neuen Knoten vom Standardtyp und gibt den erzeugten Knoten zurück.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>GraphNode <function
+>createNode</function
+></funcdef
+> <paramdef
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>createEdge(from, to, type)</term>
+    <listitem>
+        <para
+>Erstellt einen Kante vom Knoten „from“ zum Knoten „to“  vom angegebenen Typ und gibt die erzeugte Kante zurück. Ist der Typ nicht registriert, wird keine Kante erzeugt.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>GraphEdge <function
+>createEdge</function
+></funcdef
+> <paramdef
+>GraphNode <parameter
+><replaceable
+>from</replaceable
+></parameter
+></paramdef
+> <paramdef
+>GraphNode <parameter
+><replaceable
+>to</replaceable
+></parameter
+></paramdef
+> <paramdef
+>int <parameter
+><replaceable
+>type</replaceable
+></parameter
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>createEdge(from, to)</term>
+    <listitem>
+        <para
+>Erstellt einen Kante vom Knoten „from“ zum Knoten „to“  als Standardtyp und gibt die erzeugte Kante zurück.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>GraphEdge <function
+>createEdge</function
+></funcdef
+> <paramdef
+>GraphNode <parameter
+><replaceable
+>from</replaceable
+></parameter
+></paramdef
+> <paramdef
+>GraphNode <parameter
+><replaceable
+>to</replaceable
+></parameter
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>distances(from)</term>
+    <listitem>
+        <para
+>Gibt ein Feld mit den kürzesten Pfadlängen von diesem Knoten zu jedem anderen Knoten im Graphen zurück.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>Array <function
+>distances</function
+></funcdef
+> <paramdef
+>GraphNode <parameter
+><replaceable
+>from</replaceable
+></parameter
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+</variablelist>
+</sect3>
+</sect2>
+
+<sect2>
+<title
+>Graph-Knoten</title>
+<para
+>Ein Knoten ist ein Datenelement eines Graphen. </para>
+
+<sect3>
+<title
+>Eigenschaften</title>
+<itemizedlist>
+
+    <listitem>
+        <para
+><emphasis
+>width</emphasis
+> : </para>
+        <para
+>Die Größe dieses Datenelements.</para>
+    </listitem>
+
+    <listitem>
+        <para
+><emphasis
+>x</emphasis
+> : </para>
+        <para
+>Die X-Koordinate dieses Datenelements.</para>
+    </listitem>
+
+    <listitem>
+        <para
+><emphasis
+>y</emphasis
+> : </para>
+        <para
+>Die y-Koordinate dieses Datenelements.</para>
+    </listitem>
+
+    <listitem>
+        <para
+><emphasis
+>id</emphasis
+> : </para>
+        <para
+>Der eindeutige Bezeichner für dieses Datenelement.</para>
+    </listitem>
+
+    <listitem>
+        <para
+><emphasis
+>color</emphasis
+> : </para>
+        <para
+>Die Farbe dieses Datenelements als Hexadezimalwert.</para>
+    </listitem>
+</itemizedlist>
+</sect3>
+
+<sect3>
+<title
+>Methoden</title>
+<variablelist>
+
+    <varlistentry>
+    <term
+>neighbors()</term>
+    <listitem>
+        <para
+>Gibt eine Liste aller Knoten zurück, die mit diesem Knoten verbunden sind. Dabei wird berücksichtigt, ob Kanten gerichtet sind.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>array <function
+>neighbors</function
+></funcdef
+> <paramdef
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>edges()</term>
+    <listitem>
+        <para
+>Gibt eine Liste aller Kanten (eingehend und ausgehend) dieses Knotens zurück.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>array <function
+>edges</function
+></funcdef
+> <paramdef
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>edges(type)</term>
+    <listitem>
+        <para
+>Gibt eine Liste aller Kanten (eingehend und ausgehend) des angegebenen Typs dieses Knotens zurück.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>array <function
+>edges</function
+></funcdef
+> <paramdef
+>int <parameter
+><replaceable
+>type</replaceable
+></parameter
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>inEdges()</term>
+    <listitem>
+        <para
+>Gibt eine Liste von eingehenden Kanten dieses Knotens zurück.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>array <function
+>inEdges</function
+></funcdef
+> <paramdef
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>inEdges(type)</term>
+    <listitem>
+        <para
+>Gibt eine Liste von eingehenden Kanten des angegebenen Typs zu diesem Knoten zurück.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>array <function
+>inEdges</function
+></funcdef
+> <paramdef
+>int <parameter
+><replaceable
+>type</replaceable
+></parameter
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>outEdges()</term>
+    <listitem>
+        <para
+>Gibt eine Liste aller ausgehenden Kanten dieses Knotens zurück.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>array <function
+>outEdges</function
+></funcdef
+> <paramdef
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>outEdges(type)</term>
+    <listitem>
+        <para
+>Gibt eine Liste von ausgehenden Kanten des angegebenen Typs von diesem Knoten zurück.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>array <function
+>outEdges</function
+></funcdef
+> <paramdef
+>int <parameter
+><replaceable
+>type</replaceable
+></parameter
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>edgesTo(target)</term>
+    <listitem>
+        <para
+>Gibt eine Liste aller Kanten des angegebenen Typs dieses Knotens zurück.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>array <function
+>edgesTo</function
+></funcdef
+> <paramdef
+>GraphNode <parameter
+><replaceable
+>target</replaceable
+></parameter
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+</variablelist>
+</sect3>
+</sect2>
+
+
+<sect2>
+<title
+>Graph-Kante</title>
+<para
+>Eine Kante ist eine Verbindung zwischen zwei Knoten eines Graphen. Kanten können abhängig vom Typ gerichtet oder ungerichtet sein. </para>
+
+<sect3>
+<title
+>Eigenschaften</title>
+<itemizedlist>
+    <listitem>
+        <para
+><emphasis
+>width</emphasis
+> : </para>
+        <para
+>Die Breite der Verbindung.</para>
+    </listitem>
+
+    <listitem>
+        <para
+><emphasis
+>directed</emphasis
+> : </para>
+        <para
+>Falls wahr, ist die Verbindung gerichtet, andernfalls ist sie ungerichtet.</para>
+    </listitem>
+
+    <listitem>
+        <para
+><emphasis
+>from</emphasis
+> : </para>
+        <para
+>Der Start der Verbindung.</para>
+    </listitem>
+
+    <listitem>
+        <para
+><emphasis
+>to</emphasis
+> : </para>
+        <para
+>Das Ende der Verbindung</para>
+    </listitem>
+
+    <listitem>
+        <para
+><emphasis
+>color</emphasis
+> : </para>
+        <para
+>Kennung des Verbindungstyps.</para>
+    </listitem>
+</itemizedlist>
+</sect3>
+
+
+<sect3>
+<title
+>Methoden</title>
+<variablelist>
+
+    <varlistentry>
+    <term
+>remove()</term>
+    <listitem>
+        <para
+>Entfernt diese Verbindung.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>void <function
+>remove</function
+></funcdef
+> <paramdef
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>add_property(name, value)</term>
+    <listitem>
+        <para
+>Fügt der Verbindung eine neue Eigenschaft hinzu.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>void <function
+>add_property</function
+></funcdef
+> <paramdef
+>string <parameter
+><replaceable
+>name</replaceable
+></parameter
+></paramdef
+> <paramdef
+>string <parameter
+><replaceable
+>value</replaceable
+></parameter
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>remove_property(name)</term>
+    <listitem>
+        <para
+>Entfernt eine bestehende Eigenschaft der Verbindung.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>void <function
+>remove_property</function
+></funcdef
+> <paramdef
+>string <parameter
+><replaceable
+>name</replaceable
+></parameter
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+</variablelist>
+</sect3>
+</sect2>
+
+</sect1>

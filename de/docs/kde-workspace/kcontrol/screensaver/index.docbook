@@ -1,0 +1,146 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<article id="screensaver" lang="&language;">
+<articleinfo>
+<title
+>Bildschirmsperre</title>
+<authorgroup>
+<author
+>&Mike.McBride; &Mike.McBride.mail;</author>
+<othercredit role="translator"
+><firstname
+>Frank</firstname
+><surname
+>Schütte</surname
+><affiliation
+><address
+><email
+>F.Schuette@t-online.de</email
+></address
+></affiliation
+><contrib
+>Deutsche Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2013-12-05</date>
+<releaseinfo
+>&kde; 4.12</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Systemeinstellungen</keyword>
+<keyword
+>screensaver</keyword>
+<keyword
+>screen saver</keyword>
+</keywordset>
+</articleinfo>
+
+<sect1 id="kcm_screensaver">
+
+<title
+>Bildschirmsperre</title>
+
+<para
+>In diesem Modul können Sie einen Bildschirmschoner auswählen, festlegen, nach welchem Zeitraum der Inaktivität er erscheint sowie Passwortschutz für den Bildschirmschoner de-/aktivieren.</para>
+
+<sect2 id="ss-options">
+<title
+>Zeit, Priorität und Passwort für Bildschirmschoner festlegen.</title>
+
+<para
+>Oben im Dialog gibt es das Ankreuzfeld <guilabel
+>Automatischer Start nach</guilabel
+> und ein Drehfeld, in dem Sie das Zeitintervall der Inaktivität vor dem Starten des Bildschirmschoners festlegen können. In diesem Feld können Sie das betreffende Intervall in Minuten einstellen.</para>
+
+<para
+>Darunter befindet sich das Ankreuzfeld <guilabel
+>Passwortabfrage nach</guilabel
+>. Drücken Sie eine Taste oder klicken Sie mit der Maus, um den Bildschirmschoner nach der hier eingestellten Zeit zu beenden und zu Ihrer Arbeit zurückzukehren, müssen Sie ein Passwort eingeben, wenn dieses Ankreuzfeld aktiviert ist. Das verwendete Passwort ist das gleiche, das Sie eingeben müssen, wenn Sie sich an Ihrem Rechner anmelden. Ist das Feld nicht angekreuzt, dann müssen Sie auch kein Passwort eingeben, um auf die Arbeitsfläche zurückzukehren.</para>
+
+<para
+>Das manuelle Sperren der Arbeitsfläche bewirkt, dass der Passwortschutz sofort wirksam wird.</para>
+
+</sect2>
+
+<sect2 id="ss-choose">
+<title
+>Den Bildschirmschoner auswählen und die Optionen einstellen</title>
+
+<para
+>Verwenden Sie die Einstellung <guilabel
+>Einfache Sperre</guilabel
+> für einen Dialog zur Freigabe der gesperrten Arbeitsfläche mit einer Passwortabfrage.</para>
+
+<para
+>Möchten Sie gerne einige interaktive Miniprogramme wie Notizen oder einen Medienabspieler auch auf einem gesperrtem Bildschirmschoner laufen lassen, aktivieren Sie <guilabel
+>Miniprogramme</guilabel
+> und wählen Sie mit dem Knopf <guibutton
+>Einrichtung ...</guibutton
+> Ihre bevorzugten Miniprogramme aus. </para>
+
+<para
+>Um die Auswahl aller verfügbaren Bildschirmschoner zu ermöglichen, aktivieren Sie <guilabel
+>Bildschirmschoner</guilabel
+>. Sie können einen Bildschirmschoner auswählen, indem Sie auf seinen Namen klicken. Haben Sie einen Bildschirmschoner ausgewählt, können Sie in dem Monitor auf der rechten Seite eine kleine Vorschausehen.</para>
+
+<note
+><para
+>Die Vorschau zeigt den Bildschirmschoner absichtlich größer, als er später auf dem gesamten Monitor sein wird. Maßstabsgetreu wären viele Details der Bildschirmschoner sonst in der Vorschau nicht zu identifizieren.</para
+></note>
+
+<para
+>Für jeden Bildschirmschoner gibt es einige spezifische Einstellmöglichkeiten. Klicken Sie auf den Knopf <guilabel
+>Einrichtung...</guilabel
+>, um ein Dialogfenster mit allen Einstellmöglichkeiten für den gewählten Bildschirmschoner zu öffnen. Die Änderungen an den Einstellungen werden im Vorschaumonitor angezeigt.</para>
+
+<para
+>Haben Sie den Bildschirmschoner eingerichtet, dann klicken Sie auf <guibutton
+>OK</guibutton
+>.</para
+> <para
+>Klicken Sie auf <guibutton
+>Abbrechen</guibutton
+>, um die vorgenommenen Änderungen zu verwerfen und zum Bildschirmschoner-Bereich zurückzukehren.</para>
+
+<para
+>Für die meisten Bildschirmschoner wird eine Beschreibung sowie Informationen zum Copyright und Autor direkt im Dialog angezeigt. für die anderen Bildschirmschoner müssen Sie auf den Knopf <guibutton
+>Über</guibutton
+> klicken, um diese Informationen lesen zu können.</para>
+
+<para
+>Um den Bildschirmschoner in Aktion zu erleben, können sie nach Abschluss Ihrer Einstellungen auf den Knopf <guibutton
+>Testen</guibutton
+> drücken. Der Bildschirmschoner erscheint auf dem Bildschirm <emphasis
+>genau</emphasis
+> wie im späteren Betrieb.</para>
+
+</sect2>
+
+<!--FIXME still true in 4.10?-->
+<sect2 id="ss-other"
+><title
+>Verwendung eines Nicht-&kde;-Bildschirmschoners</title
+> 
+
+<para
+>In &kde; können Sie auch anderen Bildschirmschoner verwenden. Um einen solchen Bildschirmschoner, wie &eg; <application
+>xscreensaver</application
+> zu verwenden, deaktivieren Sie einfach den &kde;-Bildschirmschoner und richten diesen anderen Bildschirmschoner ganz normal ein. </para>
+
+</sect2>
+
+</sect1>
+
+</article>

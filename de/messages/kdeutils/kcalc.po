@@ -1,0 +1,1864 @@
+# Gregor Zumstein <zumstein@ssd.ethz.ch>, 2003, 2004, 2005.
+# Thomas Diehl <thd@kde.org>, 2003.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006, 2010.
+# Stephan Johach <hunsum@gmx.de>, 2005, 2006.
+# Gregor Zumstein <gz@orchester-bremgarten.ch>, 2007, 2008, 2009.
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2009, 2012, 2013, 2014.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2009, 2010.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2009, 2010.
+# Rolf Eike Beer <kde@opensource.sf-tec.de>, 2009.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcalc\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-02 01:52+0000\n"
+"PO-Revision-Date: 2014-04-02 07:54+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Date: 1998-03-06 23:13:09-0500\n"
+"From: Bernd Johannes Wuebben,201 Lincoln Hall,,256-1036, <root@petit.cornell."
+"edu>\n"
+"Xgettext-Options: -C -ki18n -x../../kdelibs/po/kde.pot\n"
+"Files: configdlg.cpp dlabel.cpp fontdlg.cpp kcalc.cpp kcalc_core.cpp stats."
+"cpp\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Gregor Zumstein"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "gz@orchester-bremgarten.ch"
+
+#. i18n: ectx: property (title), widget (QGroupBox, displayColorsBox)
+#: colors.ui:16
+msgid "Display Colors"
+msgstr "Anzeigefarbe"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: colors.ui:24
+msgid "&Foreground:"
+msgstr "&Vordergrund:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: colors.ui:51
+msgid "&Background:"
+msgstr "Hinter&grund:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, buttonColorsBox)
+#: colors.ui:96
+msgid "Button Colors"
+msgstr "Tastenfarben"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: colors.ui:104
+msgid "&Functions:"
+msgstr "&Funktionen:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#: colors.ui:124
+msgid "St&atistic functions:"
+msgstr "&Statistikfunktionen:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel5)
+#: colors.ui:144
+msgid "He&xadecimals:"
+msgstr "Hexa&dezimalziffern:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel6)
+#: colors.ui:164
+msgid "&Numbers:"
+msgstr "&Ziffern:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel7)
+#: colors.ui:184
+msgid "&Memory:"
+msgstr "&Speicher:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel8)
+#: colors.ui:204
+msgid "O&perations:"
+msgstr "&Rechenoperationstasten:"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, Constants)
+#. i18n: ectx: property (title), widget (QGroupBox, constantsBox)
+#: constants.ui:13 constants.ui:19 kcalc.cpp:1663
+msgid "Constants"
+msgstr "Konstanten"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton0)
+#. i18n: ectx: property (text), widget (QPushButton, pushButton1)
+#. i18n: ectx: property (text), widget (QPushButton, pushButton2)
+#. i18n: ectx: property (text), widget (QPushButton, pushButton3)
+#. i18n: ectx: property (text), widget (QPushButton, pushButton4)
+#. i18n: ectx: property (text), widget (QPushButton, pushButton5)
+#: constants.ui:39 constants.ui:60 constants.ui:81 constants.ui:102
+#: constants.ui:123 constants.ui:144
+msgid "Predefined"
+msgstr "Vordefiniert"
+
+#. i18n: ectx: property (text), widget (QLabel, buttonlabel)
+#: fonts.ui:21
+msgid "&Button font:"
+msgstr "&Tastenschrift:"
+
+#. i18n: ectx: property (toolTip), widget (KFontRequester, kcfg_ButtonFont)
+#: fonts.ui:34
+msgid "The font to use for the buttons"
+msgstr "Schriftart für die Tasten"
+
+#. i18n: ectx: property (text), widget (QLabel, displaylabel)
+#: fonts.ui:41
+msgid "&Display font:"
+msgstr "An&zeigeschrift:"
+
+#. i18n: ectx: property (toolTip), widget (KFontRequester, kcfg_DisplayFont)
+#: fonts.ui:54
+msgid "The font to use in the display"
+msgstr "Die Schriftart für die Anzeige."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, General)
+#: general.ui:14 kcalc.cpp:1623
+msgid "General"
+msgstr "Allgemein"
+
+#. i18n: ectx: property (title), widget (QGroupBox, precisionGroupBox)
+#: general.ui:20
+msgid "Precision"
+msgstr "Genauigkeit"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: general.ui:28
+msgid "&Maximum number of digits:"
+msgstr "&Maximale Anzahl Ziffern:"
+
+#. i18n: ectx: property (toolTip), widget (QSpinBox, kcfg_Precision)
+#: general.ui:41
+msgid "Maximum number of digits displayed"
+msgstr "Maximale Anzahl dargestellter Ziffern"
+
+#. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_Precision)
+#: general.ui:44
+msgid ""
+"KCalc can compute with many more digits than the number that fits on the "
+"display. This setting gives the maximum number of digits displayed, before "
+"KCalc starts using scientific notation, i.e. notation of the type 2.34e12."
+msgstr ""
+"KCalc kann mit weitaus mehr Ziffern rechnen als auf dem Bildschirm "
+"dargestellt werden können. Mit dieser Einstellung definieren Sie die Anzahl "
+"Ziffern, die dargestellt werden können. Sind es mehr, verwendet KCalc die "
+"wissenschaftliche Notation, z. B. 2,34e+12."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_Fixed)
+#: general.ui:51
+msgid "Whether to use fixed decimal places"
+msgstr "Festlegen, ob feste Dezimalstellen verwendet werden sollen"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Fixed)
+#: general.ui:54
+msgid "Set &decimal precision"
+msgstr "Genauigkeit für &Dezimal setzen"
+
+#. i18n: ectx: property (toolTip), widget (QSpinBox, kcfg_FixedPrecision)
+#: general.ui:64
+msgid "Number of fixed decimal digits"
+msgstr "Anzahl fester Dezimalstellen"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: general.ui:89
+msgid "Grouping"
+msgstr "Gruppieren"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_GroupDigits)
+#: general.ui:97
+msgid "Whether to group digits"
+msgstr "Festlegen, ob Ziffern gruppiert werden sollen"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_GroupDigits)
+#: general.ui:100
+msgid "Group digits"
+msgstr "Ziffern gruppieren"
+
+#. i18n: ectx: property (text), widget (QLabel, grouping_binary_lb)
+#: general.ui:115
+msgid "Binary"
+msgstr "Binär"
+
+#. i18n: ectx: property (text), widget (QLabel, grouping_octal_lb)
+#: general.ui:122
+msgid "Octal"
+msgstr "Oktal"
+
+#. i18n: ectx: property (text), widget (QLabel, grouping_hexadecimal_lb)
+#: general.ui:129
+msgid "Hexadecimal"
+msgstr "Hexadezimal"
+
+#. i18n: ectx: property (title), widget (QGroupBox, miscGroupBox)
+#: general.ui:152
+msgid "Misc"
+msgstr "Verschiedenes"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_Beep)
+#: general.ui:160
+msgid "Whether to beep on error"
+msgstr "Festlegen, ob bei einem Fehler ein Signalton erzeugt werden soll"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Beep)
+#: general.ui:163
+msgid "&Beep on error"
+msgstr "Signalton bei &Fehler"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_CaptionResult)
+#: general.ui:173
+msgid "Whether to show the result in the window title"
+msgstr "Festlegen, ob das Ergebnis im Fenstertitel angezeigt werden soll"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_CaptionResult)
+#: general.ui:176
+msgid "Show &result in window title"
+msgstr "&Ergebnis in Fenstertitel anzeigen"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_TwosComplement)
+#: general.ui:183
+msgid "Whether to use Two's Complement for non-decimal numbers"
+msgstr ""
+"Festlegen, ob das Zweierkomplement für Nicht-Dezimalzahlen verwendet werden "
+"soll"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_TwosComplement)
+#: general.ui:186
+msgid ""
+"Select to use Two's Complement notation for Binary, Octal and Hexidecimal "
+"numbers. This is a common notation to represent negative numbers for non-"
+"decimal numbers in computers."
+msgstr ""
+"Wählen Sie, ob die Schreibweise als Zweierkomplement für Binär-, Oktal- und "
+"Hexadezimalzahlen verwendet werden soll. Diese Schreibweise wird "
+"üblicherweise für die Darstellung von negativen Nicht-Dezimalzahlen in der "
+"Datenverarbeitung benutzt."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_TwosComplement)
+#: general.ui:189
+msgid "Two's complement"
+msgstr "Zweierkomplement"
+
+#: kcalc.cpp:66
+msgid "KDE Calculator"
+msgstr "KDE-Taschenrechner"
+
+#: kcalc.cpp:201
+msgid "Simple Mode"
+msgstr "Einfach"
+
+#: kcalc.cpp:206
+msgid "Science Mode"
+msgstr "Wissenschaftlich"
+
+#: kcalc.cpp:211
+msgid "Statistic Mode"
+msgstr "Statistisch"
+
+#. i18n: ectx: label, entry (CalculatorMode), group (General)
+#: kcalc.cpp:216 kcalc.kcfg:119
+msgid "Numeral System Mode"
+msgstr "Logik"
+
+#: kcalc.cpp:221
+msgid "Constants &Buttons"
+msgstr "K&onstantentasten"
+
+#: kcalc.cpp:226
+msgid "Show B&it Edit"
+msgstr "Bitbearbeitung zeigen"
+
+#: kcalc.cpp:240
+msgid "&Constants"
+msgstr "&Konstanten"
+
+#: kcalc.cpp:347
+msgctxt "Add display to memory"
+msgid "M+"
+msgstr "M+"
+
+#: kcalc.cpp:347
+msgid "Add display to memory"
+msgstr "Ergebnis zum Speicher hinzuaddieren"
+
+#: kcalc.cpp:348
+msgctxt "Subtract from memory"
+msgid "M−"
+msgstr "M−"
+
+#: kcalc.cpp:348
+msgid "Subtract from memory"
+msgstr "Vom Speicher subtrahieren"
+
+#: kcalc.cpp:371
+msgctxt "Third power"
+msgid "x<sup>3</sup>"
+msgstr "x<sup>3</sup>"
+
+#: kcalc.cpp:371
+msgid "Third power"
+msgstr "Dritte Potenz"
+
+#: kcalc.cpp:372
+msgid "Cube root"
+msgstr "Dritte Wurzel"
+
+#: kcalc.cpp:471
+msgctxt "Sine"
+msgid "Sin"
+msgstr "Sin"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbSin)
+#: kcalc.cpp:471 kcalc.ui:241
+msgid "Sine"
+msgstr "Sinus"
+
+#: kcalc.cpp:472
+msgctxt "Arc sine"
+msgid "Asin"
+msgstr "Asin"
+
+#: kcalc.cpp:472
+msgid "Arc sine"
+msgstr "Arcussinus"
+
+#: kcalc.cpp:473
+msgctxt "Hyperbolic sine"
+msgid "Sinh"
+msgstr "Sinh"
+
+#: kcalc.cpp:473
+msgid "Hyperbolic sine"
+msgstr "Sinus hyperbolicus"
+
+#: kcalc.cpp:474
+msgctxt "Inverse hyperbolic sine"
+msgid "Asinh"
+msgstr "Asinh"
+
+#: kcalc.cpp:474
+msgid "Inverse hyperbolic sine"
+msgstr "Arkussinus hyperbolicus"
+
+#: kcalc.cpp:479
+msgctxt "Cosine"
+msgid "Cos"
+msgstr "Cos"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbCos)
+#: kcalc.cpp:479 kcalc.ui:307
+msgid "Cosine"
+msgstr "Kosinus"
+
+#: kcalc.cpp:480
+msgctxt "Arc cosine"
+msgid "Acos"
+msgstr "Acos"
+
+#: kcalc.cpp:480
+msgid "Arc cosine"
+msgstr "Arcuskosinus"
+
+#: kcalc.cpp:481
+msgctxt "Hyperbolic cosine"
+msgid "Cosh"
+msgstr "Cosh"
+
+#: kcalc.cpp:481
+msgid "Hyperbolic cosine"
+msgstr "Kosinus hyperbolicus"
+
+#: kcalc.cpp:482
+msgctxt "Inverse hyperbolic cosine"
+msgid "Acosh"
+msgstr "Acosh"
+
+#: kcalc.cpp:482
+msgid "Inverse hyperbolic cosine"
+msgstr "Arkuscosinus hyperbolicus"
+
+#: kcalc.cpp:487
+msgctxt "Tangent"
+msgid "Tan"
+msgstr "Tan"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbTan)
+#: kcalc.cpp:487 kcalc.ui:370
+msgid "Tangent"
+msgstr "Tangens"
+
+#: kcalc.cpp:488
+msgctxt "Arc tangent"
+msgid "Atan"
+msgstr "Atan"
+
+#: kcalc.cpp:488
+msgid "Arc tangent"
+msgstr "Arcustangens"
+
+#: kcalc.cpp:489
+msgctxt "Hyperbolic tangent"
+msgid "Tanh"
+msgstr "Tanh"
+
+#: kcalc.cpp:489
+msgid "Hyperbolic tangent"
+msgstr "Tangens hyperbolicus"
+
+#: kcalc.cpp:490
+msgctxt "Inverse hyperbolic tangent"
+msgid "Atanh"
+msgstr "Atanh"
+
+#: kcalc.cpp:490
+msgid "Inverse hyperbolic tangent"
+msgstr "Arkustangens hyperbolicus"
+
+#: kcalc.cpp:495
+msgctxt "Logarithm to base 10"
+msgid "Log"
+msgstr "Log"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbLog)
+#: kcalc.cpp:495 kcalc.ui:436
+msgid "Logarithm to base 10"
+msgstr "Logarithmus zur Basis 10"
+
+#: kcalc.cpp:496
+msgctxt "10 to the power of x"
+msgid "10<sup>x</sup>"
+msgstr "10<sup>x</sup>"
+
+#: kcalc.cpp:496
+msgid "10 to the power of x"
+msgstr "10 hoch x"
+
+#: kcalc.cpp:500
+msgctxt "Natural log"
+msgid "Ln"
+msgstr "Ln"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbLn)
+#: kcalc.cpp:500 kcalc.ui:499
+msgid "Natural log"
+msgstr "Natürlicher Logarithmus"
+
+#: kcalc.cpp:501
+msgctxt "Exponential function"
+msgid "e<sup>x</sup>"
+msgstr "e<sup>x</sup>"
+
+#: kcalc.cpp:501
+msgid "Exponential function"
+msgstr "Exponentialfunktion"
+
+#: kcalc.cpp:520
+msgctxt "Number of data entered"
+msgid "N"
+msgstr "N"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbNData)
+#: kcalc.cpp:520 kcalc.ui:165
+msgid "Number of data entered"
+msgstr "Anzahl eingegebener Daten"
+
+#: kcalc.cpp:521
+msgid "Sum of all data items"
+msgstr "Summe aller eingegebener Daten"
+
+#: kcalc.cpp:526
+msgctxt "Mean"
+msgid "Mea"
+msgstr "Mea"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbMean)
+#: kcalc.cpp:526 kcalc.ui:231
+msgid "Mean"
+msgstr "Mittel"
+
+#: kcalc.cpp:527
+msgid "Sum of all data items squared"
+msgstr "Summe der Quadrate aller eingegebener Daten"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbSd)
+#: kcalc.cpp:532 kcalc.ui:297
+msgid "Standard deviation"
+msgstr "Standardabweichung"
+
+#: kcalc.cpp:533
+msgid "Sample standard deviation"
+msgstr "Standardabweichung"
+
+#: kcalc.cpp:541
+msgctxt "Enter data"
+msgid "Dat"
+msgstr "Dat"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbDat)
+#: kcalc.cpp:541 kcalc.ui:423
+msgid "Enter data"
+msgstr "Daten eingeben"
+
+#: kcalc.cpp:542
+msgctxt "Delete last data item"
+msgid "CDat"
+msgstr "CDat"
+
+#: kcalc.cpp:542
+msgid "Delete last data item"
+msgstr "Letzten Dateneintrag löschen"
+
+#: kcalc.cpp:603
+msgctxt "Modulo"
+msgid "Mod"
+msgstr "Mod"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbMod)
+#: kcalc.cpp:603 kcalc.ui:201
+msgid "Modulo"
+msgstr "Modulo"
+
+#: kcalc.cpp:604
+msgctxt "Integer division"
+msgid "IntDiv"
+msgstr "IntDiv"
+
+#: kcalc.cpp:604
+msgid "Integer division"
+msgstr "Ganzzahl-Division"
+
+#: kcalc.cpp:610
+msgctxt "Reciprocal"
+msgid "1/x"
+msgstr "1/x"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbReci)
+#: kcalc.cpp:610 kcalc.ui:264
+msgid "Reciprocal"
+msgstr "Reziprok"
+
+#: kcalc.cpp:611
+msgctxt "n Choose m"
+msgid "nCm"
+msgstr "nTm"
+
+#: kcalc.cpp:611
+msgid "n Choose m"
+msgstr "n tief m"
+
+#: kcalc.cpp:616
+msgctxt "Factorial"
+msgid "x!"
+msgstr "x!"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbFactorial)
+#: kcalc.cpp:616 kcalc.ui:330
+msgid "Factorial"
+msgstr "Fakultät"
+
+#: kcalc.cpp:617
+msgid "Gamma"
+msgstr "Gamma"
+
+#: kcalc.cpp:623
+msgctxt "Square"
+msgid "x<sup>2</sup>"
+msgstr "x<sup>2</sup>"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbSquare)
+#: kcalc.cpp:623 kcalc.ui:393
+msgid "Square"
+msgstr "Quadrat"
+
+#: kcalc.cpp:624
+msgid "Square root"
+msgstr "Quadratwurzel"
+
+#: kcalc.cpp:631
+msgctxt "x to the power of y"
+msgid "x<sup>y</sup>"
+msgstr "x<sup>y</sup>"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbPower)
+#: kcalc.cpp:631 kcalc.ui:459
+msgid "x to the power of y"
+msgstr "x hoch y"
+
+#: kcalc.cpp:632
+msgctxt "x to the power of 1/y"
+msgid "x<sup>1/y</sup>"
+msgstr "x<sup>1/y</sup>"
+
+#: kcalc.cpp:632
+msgid "x to the power of 1/y"
+msgstr "x hoch 1/y"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbEE)
+#: kcalc.cpp:638 kcalc.ui:542
+msgid "Exponent"
+msgstr "Exponent"
+
+#: kcalc.cpp:907
+msgctxt "Second button functions are active"
+msgid "SHIFT"
+msgstr "SHIFT"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbShift)
+#: kcalc.cpp:908 kcalc.ui:976
+msgid "Shift"
+msgstr "Shift"
+
+#: kcalc.cpp:910
+msgctxt "Normal button functions are active"
+msgid "NORM"
+msgstr "NORM"
+
+#: kcalc.cpp:1038 kcalc.cpp:1039
+msgid "M"
+msgstr "M"
+
+#: kcalc.cpp:1549
+msgid "Last stat item erased"
+msgstr "Letzte gelöschte Statistik-Position"
+
+#: kcalc.cpp:1563
+msgid "Stat mem cleared"
+msgstr "Statistik-Speicher gelöscht"
+
+#: kcalc.cpp:1623
+msgid "General Settings"
+msgstr "Allgemeine Einstellungen"
+
+#: kcalc.cpp:1627
+msgid "Font"
+msgstr "Schriftart"
+
+#: kcalc.cpp:1627
+msgid "Select Display Font"
+msgstr "Schrift für die Anzeige wählen"
+
+#: kcalc.cpp:1631
+msgid "Colors"
+msgstr "Farben"
+
+#: kcalc.cpp:1631
+msgid "Button & Display Colors"
+msgstr "Farbe für Tasten und Anzeige"
+
+#: kcalc.cpp:1663
+msgid "Define Constants"
+msgstr "Konstanten definieren"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, KCalculator)
+#: kcalc.cpp:2286 kcalc.ui:20
+msgid "KCalc"
+msgstr "KCalc"
+
+#: kcalc.cpp:2291
+msgid ""
+"&copy; 2008-2013, Evan Teran\n"
+"&copy; 2000-2008, The KDE Team\n"
+"&copy; 2003-2005, Klaus Niederkrüger\n"
+"&copy; 1996-2000, Bernd Johannes Wuebben"
+msgstr ""
+"&copy; 2008-2013, Evan Teran\n"
+"&copy; 2000-2008, The KDE Team\n"
+"&copy; 2003-2005, Klaus Niederkrüger\n"
+"&copy; 1996-2000, Bernd Johannes Wuebben"
+
+#: kcalc.cpp:2299
+msgid "Klaus Niederkrüger"
+msgstr "Klaus Niederkrüger"
+
+#: kcalc.cpp:2300
+msgid "Bernd Johannes Wuebben"
+msgstr "Bernd Johannes Wuebben"
+
+#: kcalc.cpp:2301
+msgid "Evan Teran"
+msgstr "Evan Teran"
+
+#: kcalc.cpp:2301
+msgid "Maintainer"
+msgstr "Betreuer"
+
+#: kcalc.cpp:2302
+msgid "Espen Sand"
+msgstr "Espen Sand"
+
+#: kcalc.cpp:2303
+msgid "Chris Howells"
+msgstr "Chris Howells"
+
+#: kcalc.cpp:2304
+msgid "Aaron J. Seigo"
+msgstr "Aaron J. Seigo"
+
+#: kcalc.cpp:2305
+msgid "Charles Samuels"
+msgstr "Charles Samuels"
+
+#: kcalc.cpp:2307
+msgid "René Mérou"
+msgstr "René Mérou"
+
+#: kcalc.cpp:2308
+msgid "Michel Marti"
+msgstr "Michel Marti"
+
+#: kcalc.cpp:2309
+msgid "David Johnson"
+msgstr "David Johnson"
+
+#. i18n: ectx: label, entry (ForeColor), group (Colors)
+#: kcalc.kcfg:13
+msgid "The foreground color of the display."
+msgstr "Vordergrundfarbe der Anzeige."
+
+#. i18n: ectx: label, entry (BackColor), group (Colors)
+#: kcalc.kcfg:19
+msgid "The background color of the display."
+msgstr "Hintergrundfarbe der Anzeige."
+
+#. i18n: ectx: label, entry (NumberButtonsColor), group (Colors)
+#: kcalc.kcfg:24
+msgid "The color of number buttons."
+msgstr "Farbe der Zifferntasten."
+
+#. i18n: ectx: label, entry (FunctionButtonsColor), group (Colors)
+#: kcalc.kcfg:30
+msgid "The color of function buttons."
+msgstr "Farbe der Funktionstasten."
+
+#. i18n: ectx: label, entry (StatButtonsColor), group (Colors)
+#: kcalc.kcfg:34
+msgid "The color of statistical buttons."
+msgstr "Farbe der Statistiktasten."
+
+#. i18n: ectx: label, entry (HexButtonsColor), group (Colors)
+#: kcalc.kcfg:38
+msgid "The color of hex buttons."
+msgstr "Farbe der Hexadezimal-Tasten."
+
+#. i18n: ectx: label, entry (MemoryButtonsColor), group (Colors)
+#: kcalc.kcfg:42
+msgid "The color of memory buttons."
+msgstr "Farbe der Speichertasten."
+
+#. i18n: ectx: label, entry (OperationButtonsColor), group (Colors)
+#: kcalc.kcfg:46
+msgid "The color of operation buttons."
+msgstr "Farbe der Rechenoperationstasten."
+
+#. i18n: ectx: label, entry (ButtonFont), group (Font)
+#: kcalc.kcfg:52
+msgid "The font to use for the buttons."
+msgstr "Die Schriftart für die Tasten."
+
+#. i18n: ectx: label, entry (DisplayFont), group (Font)
+#: kcalc.kcfg:56
+msgid "The font to use in the display."
+msgstr "Die Schriftart für die Anzeige."
+
+#. i18n: ectx: label, entry (Precision), group (Precision)
+#: kcalc.kcfg:62
+msgid "Maximum number of digits displayed."
+msgstr "Maximale Anzahl dargestellter Ziffern."
+
+#. i18n: ectx: whatsthis, entry (Precision), group (Precision)
+#: kcalc.kcfg:68
+msgid ""
+"\n"
+"\tKCalc can compute with many more digits than the number that\n"
+"\tfits on the display. This setting gives the maximum number of\n"
+"\tdigits displayed, before KCalc starts using scientific notation,\n"
+"\ti.e. notation of the type 2.34e12.\n"
+"      "
+msgstr ""
+"\n"
+"\tKCalc kann mit weitaus mehr Ziffern rechnen als auf dem Bildschirm\n"
+"\tdargestellt werden können. Mit dieser Einstellung definieren Sie die\n"
+"\tAnzahl Ziffern, die dargestellt werden können. Sind es mehr, verwendet\n"
+"\tKCalc die wissenschaftliche Notation, z. B. 2.34e12.\n"
+"      "
+
+#. i18n: ectx: label, entry (FixedPrecision), group (Precision)
+#: kcalc.kcfg:74
+msgid "Number of fixed decimal digits."
+msgstr "Anzahl fester Dezimalstellen."
+
+#. i18n: ectx: label, entry (Fixed), group (Precision)
+#: kcalc.kcfg:78
+msgid "Whether to use fixed decimal places."
+msgstr ""
+"Festlegen, ob eine feste Anzahl von Dezimalstellen verwendet werden sollen"
+
+#. i18n: ectx: label, entry (Beep), group (General)
+#: kcalc.kcfg:84
+msgid "Whether to beep on error."
+msgstr "Festlegen, ob bei einem Fehler ein Signalton erzeugt werden soll."
+
+#. i18n: ectx: label, entry (CaptionResult), group (General)
+#: kcalc.kcfg:88
+msgid "Whether to show the result in the window title."
+msgstr "Festlegen, ob das Ergebnis im Fenstertitel angezeigt werden soll."
+
+#. i18n: ectx: label, entry (GroupDigits), group (General)
+#: kcalc.kcfg:92
+msgid "Whether to group digits."
+msgstr "Festlegen, ob Ziffern gruppiert werden sollen."
+
+#. i18n: ectx: label, entry (TwosComplement), group (General)
+#: kcalc.kcfg:96
+msgid "Whether to use Two's Complement for non-decimal numbers."
+msgstr ""
+"Festlegen, ob das Zweierkomplement für Nicht-Dezimalzahlen verwendet werden "
+"soll"
+
+#. i18n: ectx: whatsthis, entry (TwosComplement), group (General)
+#: kcalc.kcfg:101
+msgid ""
+"\n"
+"        Select to use Two's Complement notation for Binary, Octal\n"
+"        and Hexidecimal numbers. This is a common notation to represent\n"
+"        negative numbers in computers.\n"
+"      "
+msgstr ""
+"\n"
+"        Wählen Sie, ob die Schreibweise als Zweierkomplement für Binär-, "
+"Oktal- und\n"
+"        Hexadezimalzahlen verwendet werden soll. Diese Schreibweise wird "
+"üblicherweise\n"
+"        für die Darstellung von negativen Nicht-Dezimalzahlen in der "
+"Datenverarbeitung benutzt.\n"
+"      "
+
+#. i18n: ectx: label, entry (CalculatorMode), group (General)
+#: kcalc.kcfg:107
+msgid "Easy Calculator Mode"
+msgstr "Einfacher Taschenrechner"
+
+#. i18n: ectx: whatsthis, entry (CalculatorMode), group (General)
+#: kcalc.kcfg:108
+msgid "A very simple mode where only the basic calculator buttons are shown"
+msgstr ""
+"Ein einfacher Modus, in dem nur die grundlegenden Taschenrechnerfunktionen "
+"angezeigt werden"
+
+#. i18n: ectx: label, entry (CalculatorMode), group (General)
+#: kcalc.kcfg:111
+msgid "Science Calculator Mode"
+msgstr "Wissenschaftlicher Taschenrechner"
+
+#. i18n: ectx: whatsthis, entry (CalculatorMode), group (General)
+#: kcalc.kcfg:112
+msgid "Mode with science buttons and optional constants buttons"
+msgstr ""
+"Modus mit Tasten für wissenschaftliche Funktionen und Tasten für Konstanten"
+
+#. i18n: ectx: label, entry (CalculatorMode), group (General)
+#: kcalc.kcfg:115
+msgid "Statistic Calculator Mode"
+msgstr "Statistischer Taschenrechner"
+
+#. i18n: ectx: whatsthis, entry (CalculatorMode), group (General)
+#: kcalc.kcfg:116
+msgid "Mode with additional statistics buttons and optional constants buttons"
+msgstr ""
+"Modus mit zusätzlichen Tasten für statistische Funktionen und Tasten für "
+"Konstanten"
+
+#. i18n: ectx: whatsthis, entry (CalculatorMode), group (General)
+#: kcalc.kcfg:120
+msgid ""
+"Mode with logic buttons and selectable base. Optional bit edit available."
+msgstr ""
+"Modus mit Tasten für logische Funktionen und wählbarer Basis. Bitweises "
+"Bearbeiten ist verfügbar."
+
+#. i18n: ectx: label, entry (ShowBitset), group (General)
+#: kcalc.kcfg:125
+msgid "Whether to show the bit edit widget."
+msgstr "Festlegen, ob das Bitbearbeitungsfenster angezeigt wird."
+
+#. i18n: ectx: label, entry (ShowConstants), group (General)
+#: kcalc.kcfg:129
+msgid "Whether to show constant buttons."
+msgstr "Festlegen, ob Konstantentasten angezeigt werden sollen"
+
+#. i18n: ectx: label, entry (AngleMode), group (General)
+#: kcalc.kcfg:133
+msgid "Degrees, radians or grads"
+msgstr "Neugrad, Bogenmaß oder Neugrad"
+
+#. i18n: ectx: label, entry (BaseMode), group (General)
+#: kcalc.kcfg:137
+msgid "Numeric base"
+msgstr "Zahlenbasis"
+
+#. i18n: ectx: label, entry (BinaryGrouping), group (Grouping)
+#: kcalc.kcfg:143
+msgid "Binary figures will be separated by a whitespace after every Xth digit."
+msgstr ""
+"Binäre Ziffern werden durch Leerzeichen nach jeder x-ten Stelle getrennt."
+
+#. i18n: ectx: whatsthis, entry (BinaryGrouping), group (Grouping)
+#: kcalc.kcfg:148
+msgid ""
+"\n"
+"            For easier readability it's possible to visible group the "
+"individual digits into pairs\n"
+"            for example instead of 10111001 you can display 1011 1001, by "
+"setting the setting to\n"
+"            4, thus inserting a whitespace after every 4th digit.\n"
+"        "
+msgstr ""
+"\n"
+"            Um die Lesbarkeit zu erleichtern, können Gruppen von einzelnen "
+"Ziffern paarweise angeordnet werden\n"
+"            Zum Beispiel „10111001“ kann als „1011 1001“ dargestellt werden, "
+"indem diese Einstellung auf 4 gesetzt\n"
+"            und damit ein Leerzeichen nach jeder vierten Ziffer eingefügt "
+"wird.\n"
+"        "
+
+#. i18n: ectx: label, entry (OctalGrouping), group (Grouping)
+#: kcalc.kcfg:152
+msgid "Octal figures will be separated by a whitespace after every Xth digit."
+msgstr ""
+"Oktale Ziffern werden durch Leerzeichen nach jeder x-ten Stelle getrennt."
+
+#. i18n: ectx: whatsthis, entry (OctalGrouping), group (Grouping)
+#: kcalc.kcfg:157
+msgid ""
+"\n"
+"            For easier readability it's possible to visible group the "
+"individual digits into pairs\n"
+"            for example instead of 42140213 you can display 4214 0213, by "
+"setting the setting to\n"
+"            4, thus inserting a whitespace after every 4th digit.\n"
+"        "
+msgstr ""
+"\n"
+"            Um die Lesbarkeit zu erleichtern, können Gruppen von einzelnen "
+"Ziffern paarweise angeordnet werden\n"
+"            Zum Beispiel „42140213“ kann als „4214 0213“ dargestellt werden, "
+"indem diese Einstellung auf 4 gesetzt\n"
+"            und damit ein Leerzeichen nach jeder vierten Ziffer eingefügt "
+"wird.\n"
+"        "
+
+#. i18n: ectx: label, entry (HexadecimalGrouping), group (Grouping)
+#: kcalc.kcfg:161
+msgid ""
+"Hexadecimal figures will be separated by a whitespace after every Xth digit."
+msgstr ""
+"Hexadezimale Ziffern werden durch Leerzeichen nach jeder x-ten Stelle "
+"getrennt."
+
+#. i18n: ectx: whatsthis, entry (HexadecimalGrouping), group (Grouping)
+#: kcalc.kcfg:166
+msgid ""
+"\n"
+"            For easier readability it's possible to visible group the "
+"individual digits into pairs\n"
+"            for example instead of AF1C42 you can display AF 1C 42, by "
+"setting the setting to\n"
+"            2, thus inserting a whitespace after every 2nd digit.\n"
+"        "
+msgstr ""
+"\n"
+"            Um die Lesbarkeit zu erleichtern, können Gruppen von einzelnen "
+"Ziffern paarweise angeordnet werden\n"
+"            Zum Beispiel „AF1C42“ kann als „AF 1C 42“ dargestellt werden, "
+"indem diese Einstellung auf 2 gesetzt\n"
+"            und damit ein Leerzeichen nach jeder zweiten Ziffer eingefügt "
+"wird.\n"
+"        "
+
+#. i18n: ectx: label, entry (nameConstant$(ConstIndex)), group (UserConstants)
+#: kcalc.kcfg:172
+msgid "Name of the user programmable constants."
+msgstr "Name der benutzerdefinierten Konstanten."
+
+#: kcalc.kcfg:182
+msgctxt "Name of the user programmable constant"
+msgid "C1"
+msgstr "K1"
+
+#: kcalc.kcfg:183
+msgctxt "Name of the user programmable constant"
+msgid "C2"
+msgstr "K2"
+
+#: kcalc.kcfg:184
+msgctxt "Name of the user programmable constant"
+msgid "C3"
+msgstr "K3"
+
+#: kcalc.kcfg:185
+msgctxt "Name of the user programmable constant"
+msgid "C4"
+msgstr "K4"
+
+#: kcalc.kcfg:186
+msgctxt "Name of the user programmable constant"
+msgid "C5"
+msgstr "K5"
+
+#: kcalc.kcfg:187
+msgctxt "Name of the user programmable constant"
+msgid "C6"
+msgstr "K6"
+
+#. i18n: ectx: label, entry (valueConstant$(ConstIndex)), group (UserConstants)
+#: kcalc.kcfg:191
+msgid "List of user programmable constants"
+msgstr "Liste der benutzerdefinierten Konstanten "
+
+#. i18n: ectx: property (toolTip), widget (KCalcBitset, mBitset)
+#: kcalc.ui:56
+msgid "Click on a Bit to toggle it."
+msgstr "Auf ein Bit klicken, um den Wert zu kehren"
+
+#. i18n: ectx: property (text), widget (QRadioButton, degRadio)
+#: kcalc.ui:65
+msgid "Deg"
+msgstr "Deg"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radRadio)
+#: kcalc.ui:72
+msgid "Rad"
+msgstr "Rad"
+
+#. i18n: ectx: property (text), widget (QRadioButton, gradRadio)
+#: kcalc.ui:79
+msgid "Grad"
+msgstr "Grad"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, hexRadio)
+#: kcalc.ui:99
+msgid "Switch base to hexadecimal."
+msgstr "Basis auf hexadezimal ändern."
+
+#. i18n: ectx: property (text), widget (QRadioButton, hexRadio)
+#: kcalc.ui:102
+msgid "He&x"
+msgstr "&Hex"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, decRadio)
+#: kcalc.ui:109
+msgid "Switch base to decimal."
+msgstr "Basis auf dezimal ändern."
+
+#. i18n: ectx: property (text), widget (QRadioButton, decRadio)
+#: kcalc.ui:112
+msgid "&Dec"
+msgstr "De&z"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, octRadio)
+#: kcalc.ui:119
+msgid "Switch base to octal."
+msgstr "Basis auf oktal ändern."
+
+#. i18n: ectx: property (text), widget (QRadioButton, octRadio)
+#: kcalc.ui:122
+msgid "&Oct"
+msgstr "&Okt"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, binRadio)
+#: kcalc.ui:129
+msgid "Switch base to binary."
+msgstr "Basis auf binär ändern."
+
+#. i18n: ectx: property (text), widget (QRadioButton, binRadio)
+#: kcalc.ui:132
+msgid "&Bin"
+msgstr "Bi&n"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbNData)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pbLn)
+#: kcalc.ui:168 kcalc.ui:505
+msgid "N"
+msgstr "N"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbHyp)
+#: kcalc.ui:175
+msgid "Hyperbolic mode"
+msgstr "Hyperbolischer Modus"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbHyp)
+#: kcalc.ui:178
+msgid "Hyp"
+msgstr "Hyp"
+
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pbHyp)
+#: kcalc.ui:181
+msgid "H"
+msgstr "H"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbAND)
+#: kcalc.ui:191
+msgid "Bitwise AND"
+msgstr "Bitweises UND"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbAND)
+#: kcalc.ui:194
+msgid "AND"
+msgstr "AND"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbMod)
+#: kcalc.ui:204
+msgid "Mod"
+msgstr "Mod"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbA)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pbA)
+#: kcalc.ui:211 kcalc.ui:214
+msgid "A"
+msgstr "A"
+
+#. i18n: ectx: property (text), widget (KCalcConstButton, pbC1)
+#: kcalc.ui:221
+msgid "C1"
+msgstr "K1"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbMean)
+#: kcalc.ui:234
+msgid "Mea"
+msgstr "Mea"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbSin)
+#: kcalc.ui:244
+msgid "Sin"
+msgstr "Sin"
+
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pbSin)
+#: kcalc.ui:247
+msgid "S"
+msgstr "S"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbOR)
+#: kcalc.ui:254
+msgid "Bitwise OR"
+msgstr "Bitweises ODER"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbOR)
+#: kcalc.ui:257
+msgid "OR"
+msgstr "OR"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbReci)
+#: kcalc.ui:267
+msgid "1/X"
+msgstr "1/x"
+
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pbReci)
+#: kcalc.ui:270
+msgid "R"
+msgstr "R"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbB)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pbB)
+#: kcalc.ui:277 kcalc.ui:280
+msgid "B"
+msgstr "B"
+
+#. i18n: ectx: property (text), widget (KCalcConstButton, pbC2)
+#: kcalc.ui:287
+msgid "C2"
+msgstr "K2"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbSd)
+#: kcalc.ui:300
+msgid "SD"
+msgstr "SD"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbCos)
+#: kcalc.ui:310
+msgid "Cos"
+msgstr "Cos"
+
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pbCos)
+#. i18n: ectx: property (text), widget (KCalcButton, pbC)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pbC)
+#. i18n: ectx: property (text), widget (KCalcButton, pbClear)
+#: kcalc.ui:313 kcalc.ui:340 kcalc.ui:343 kcalc.ui:926
+msgid "C"
+msgstr "C"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbXOR)
+#: kcalc.ui:320
+msgid "Bitwise XOR"
+msgstr "Bitweises XOR"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbXOR)
+#: kcalc.ui:323
+msgid "XOR"
+msgstr "XOR"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbFactorial)
+#: kcalc.ui:333
+msgid "x!"
+msgstr "x!"
+
+#. i18n: ectx: property (text), widget (KCalcConstButton, pbC3)
+#: kcalc.ui:350
+msgid "C3"
+msgstr "K3"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbMed)
+#: kcalc.ui:360
+msgid "Median"
+msgstr "Median"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbMed)
+#: kcalc.ui:363
+msgid "Med"
+msgstr "Med"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbTan)
+#: kcalc.ui:373
+msgid "Tan"
+msgstr "Tan"
+
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pbTan)
+#: kcalc.ui:376
+msgid "T"
+msgstr "T"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbLsh)
+#: kcalc.ui:383
+msgid "Left bit shift"
+msgstr "Bit-Verschiebung nach links"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbLsh)
+#: kcalc.ui:386
+msgid "Lsh"
+msgstr "Lsh"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbSquare)
+#: kcalc.ui:396
+msgid "x2"
+msgstr "x2"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbD)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pbD)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pbDat)
+#: kcalc.ui:403 kcalc.ui:406 kcalc.ui:429
+msgid "D"
+msgstr "D"
+
+#. i18n: ectx: property (text), widget (KCalcConstButton, pbC4)
+#: kcalc.ui:413
+msgid "C4"
+msgstr "K4"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbDat)
+#: kcalc.ui:426
+msgid "Dat"
+msgstr "Dat"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbLog)
+#: kcalc.ui:439
+msgid "Log"
+msgstr "Log"
+
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pbLog)
+#: kcalc.ui:442
+msgid "L"
+msgstr "L"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbRsh)
+#: kcalc.ui:449
+msgid "Right bit shift"
+msgstr "Bit-Verschiebung nach rechts"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbRsh)
+#: kcalc.ui:452
+msgid "Rsh"
+msgstr "Rsh"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbPower)
+#: kcalc.ui:462
+msgid "pow"
+msgstr "pow"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbE)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pbE)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pbEE)
+#: kcalc.ui:469 kcalc.ui:472 kcalc.ui:548
+msgid "E"
+msgstr "E"
+
+#. i18n: ectx: property (text), widget (KCalcConstButton, pbC5)
+#: kcalc.ui:479
+msgid "C5"
+msgstr "K5"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbCSt)
+#: kcalc.ui:489
+msgid "Clear data store"
+msgstr "Datenspeicher löschen"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbCSt)
+#: kcalc.ui:492
+msgid "CSt"
+msgstr "CSt"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbLn)
+#: kcalc.ui:502
+msgid "Ln"
+msgstr "Ln"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbCmp)
+#: kcalc.ui:512
+msgid "One's complement"
+msgstr "Einerkomplement"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbCmp)
+#: kcalc.ui:515
+msgid "Cmp"
+msgstr "Cmp"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbF)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pbF)
+#: kcalc.ui:522 kcalc.ui:525
+msgid "F"
+msgstr "F"
+
+#. i18n: ectx: property (text), widget (KCalcConstButton, pbC6)
+#: kcalc.ui:532
+msgid "C6"
+msgstr "K6"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbEE)
+#: kcalc.ui:545
+msgid "EXP"
+msgstr "EXP"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbCube)
+#: kcalc.ui:561
+msgid "Cube"
+msgstr "Kubik"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbCube)
+#: kcalc.ui:564
+msgid "x3"
+msgstr "x3"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pb7)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pb7)
+#: kcalc.ui:595 kcalc.ui:598
+msgid "7"
+msgstr "7"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pb8)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pb8)
+#: kcalc.ui:611 kcalc.ui:614
+msgid "8"
+msgstr "8"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pb9)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pb9)
+#: kcalc.ui:627 kcalc.ui:630
+msgid "9"
+msgstr "9"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pb4)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pb4)
+#: kcalc.ui:643 kcalc.ui:646
+msgid "4"
+msgstr "4"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pb5)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pb5)
+#: kcalc.ui:659 kcalc.ui:662
+msgid "5"
+msgstr "5"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pb6)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pb6)
+#: kcalc.ui:675 kcalc.ui:678
+msgid "6"
+msgstr "6"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pb1)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pb1)
+#: kcalc.ui:691 kcalc.ui:694
+msgid "1"
+msgstr "1"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pb2)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pb2)
+#: kcalc.ui:707 kcalc.ui:710
+msgid "2"
+msgstr "2"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pb3)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pb3)
+#: kcalc.ui:723 kcalc.ui:726
+msgid "3"
+msgstr "3"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pb0)
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pb0)
+#: kcalc.ui:739 kcalc.ui:742
+msgid "0"
+msgstr "0"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbPercent)
+#: kcalc.ui:755
+msgid "Percent"
+msgstr "Prozent"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbPercent)
+#: kcalc.ui:758
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbDivision)
+#: kcalc.ui:771
+msgid "Division"
+msgstr "Division"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbDivision)
+#: kcalc.ui:774
+msgid "÷"
+msgstr "÷"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbMultiplication)
+#: kcalc.ui:787
+msgid "Multiplication"
+msgstr "Multiplikation"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbMultiplication)
+#: kcalc.ui:790
+msgid "×"
+msgstr "×"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbMinus)
+#: kcalc.ui:803
+msgid "Minus"
+msgstr "Minus"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbMinus)
+#: kcalc.ui:806
+msgctxt "- calculator button"
+msgid "−"
+msgstr "−"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbPlus)
+#: kcalc.ui:819
+msgid "Plus"
+msgstr "Plus"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbPlus)
+#: kcalc.ui:822
+msgctxt "+ calculator button"
+msgid "+"
+msgstr "+"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbEqual)
+#: kcalc.ui:835
+msgid "Result"
+msgstr "Ergebnis"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbEqual)
+#: kcalc.ui:838
+msgctxt "= calculator button"
+msgid "="
+msgstr "="
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbPeriod)
+#: kcalc.ui:851
+msgid "Decimal point"
+msgstr "Dezimalpunkt"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbPeriod)
+#: kcalc.ui:854
+msgctxt ". calculator button"
+msgid "."
+msgstr "."
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbAllClear)
+#: kcalc.ui:873
+msgid "Clear all"
+msgstr "Alles löschen"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbAllClear)
+#: kcalc.ui:876
+msgid "AC"
+msgstr "AC"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbMemClear)
+#: kcalc.ui:883
+msgid "Memory clear"
+msgstr "Speicher löschen"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbMemClear)
+#: kcalc.ui:886
+msgid "MC"
+msgstr "MC"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbMemRecall)
+#: kcalc.ui:893
+msgid "Memory recall"
+msgstr "Speicherabruf"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbMemRecall)
+#: kcalc.ui:896
+msgid "MR"
+msgstr "MR"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbPlusMinus)
+#: kcalc.ui:903
+msgid "Change sign"
+msgstr "Vorzeichen wechseln"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbPlusMinus)
+#: kcalc.ui:906
+msgid "+/−"
+msgstr "+/−"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbParenOpen)
+#: kcalc.ui:913
+msgid "Open parenthesis"
+msgstr "Öffnende Klammer"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbParenOpen)
+#: kcalc.ui:916
+msgctxt "( calculator button"
+msgid "("
+msgstr "("
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbClear)
+#: kcalc.ui:923
+msgid "Clear"
+msgstr "Löschen"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbMemPlusMinus)
+#: kcalc.ui:933
+msgid "Add to memory"
+msgstr "Ergebnis zum Speicher hinzuaddieren"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbMemPlusMinus)
+#: kcalc.ui:936
+msgid "M+"
+msgstr "M+"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbMemStore)
+#: kcalc.ui:943
+msgid "Memory store"
+msgstr "In Speicher schreiben"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbMemStore)
+#: kcalc.ui:946
+msgid "MS"
+msgstr "MS"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbParenClose)
+#: kcalc.ui:953
+msgid "Close parenthesis"
+msgstr "Schließende Klammer"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbParenClose)
+#: kcalc.ui:956
+msgctxt ") calculator button"
+msgid ")"
+msgstr ")"
+
+#. i18n: ectx: property (text), widget (KCalcButton, pbBackspace)
+#: kcalc.ui:963
+msgid "←"
+msgstr "←"
+
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pbBackspace)
+#: kcalc.ui:966
+msgid "Backspace"
+msgstr "Rücktaste"
+
+#. i18n: ectx: property (toolTip), widget (KCalcButton, pbShift)
+#: kcalc.ui:973
+msgid "Second button function"
+msgstr "Zweite Funktion der Taste"
+
+#. i18n: ectx: property (shortcut), widget (KCalcButton, pbShift)
+#: kcalc.ui:979
+msgid "Ctrl+2"
+msgstr "Strg+2"
+
+#: kcalc_const_button.cpp:37 kcalc_const_button.cpp:48
+msgctxt "Write display data into memory"
+msgid "Store"
+msgstr "Speichern"
+
+#: kcalc_const_button.cpp:37 kcalc_const_button.cpp:48
+msgid "Write display data into memory"
+msgstr "Anzeigedaten in den Speicher schreiben"
+
+#: kcalc_const_button.cpp:93
+msgid "Set Name"
+msgstr "Namen angeben"
+
+#: kcalc_const_button.cpp:98
+msgid "Choose From List"
+msgstr "Aus Liste wählen"
+
+#: kcalc_const_button.cpp:113
+msgid "New Name for Constant"
+msgstr "Neuer Name für Konstante"
+
+#: kcalc_const_button.cpp:113
+msgid "New name:"
+msgstr "Neuer Name:"
+
+#: kcalc_const_menu.cpp:105
+msgid "Mathematics"
+msgstr "Mathematik"
+
+#: kcalc_const_menu.cpp:106
+msgid "Electromagnetism"
+msgstr "Elektromagnetismus"
+
+#: kcalc_const_menu.cpp:107
+msgid "Atomic && Nuclear"
+msgstr "Atomkerne und Elementarteilchen"
+
+#: kcalc_const_menu.cpp:108
+msgid "Thermodynamics"
+msgstr "Thermodynamik"
+
+#: kcalc_const_menu.cpp:109
+msgid "Gravitation"
+msgstr "Gravitation"
+
+#. i18n: ectx: Menu (settings)
+#: kcalcui.rc:4
+msgid "&Settings"
+msgstr "&Einstellungen"
+
+#. i18n: tag constant attribute name
+#: scienceconstants.xml:3
+msgid "Pi"
+msgstr "Pi"
+
+#. i18n: tag constant attribute name
+#: scienceconstants.xml:7
+msgid "Euler Number"
+msgstr "Eulersche Zahl"
+
+#. i18n: tag constant attribute name
+#: scienceconstants.xml:11
+msgid "Golden Ratio"
+msgstr "Goldener Schnitt"
+
+#. i18n: tag constant attribute name
+#: scienceconstants.xml:15
+msgid "Light Speed"
+msgstr "Lichtgeschwindigkeit"
+
+#. i18n: tag constant attribute name
+#: scienceconstants.xml:19
+msgid "Planck's Constant"
+msgstr "Plancksche Konstante"
+
+#. i18n: tag constant attribute name
+#: scienceconstants.xml:23
+msgid "Gravitational Constant"
+msgstr "Gravitationskonstante"
+
+#. i18n: tag constant attribute name
+#: scienceconstants.xml:27
+msgid "Earth Acceleration"
+msgstr "Erdbeschleunigung"
+
+#. i18n: tag constant attribute name
+#. i18n: tag constant attribute name
+#: scienceconstants.xml:31 scienceconstants.xml:35
+msgid "Elementary Charge"
+msgstr "Elementarladung"
+
+#. i18n: tag constant attribute name
+#: scienceconstants.xml:39
+msgid "Impedance of Vacuum"
+msgstr "Wellenimpedanz des Vakuums"
+
+#. i18n: tag constant attribute name
+#: scienceconstants.xml:43
+msgid "Fine-Structure Constant"
+msgstr "Feinstrukturkonstante"
+
+#. i18n: tag constant attribute name
+#: scienceconstants.xml:47
+msgid "Permeability of Vacuum"
+msgstr "Magnetische Feldkonstante"
+
+#. i18n: tag constant attribute name
+#: scienceconstants.xml:51
+msgid "Permittivity of Vacuum"
+msgstr "Dielektrizitätskonstante des Vakuums"
+
+#. i18n: tag constant attribute name
+#: scienceconstants.xml:55
+msgid "Boltzmann Constant"
+msgstr "Boltzmann-Konstante"
+
+#. i18n: tag constant attribute name
+#: scienceconstants.xml:60
+msgid "Atomic Mass Unit"
+msgstr "Atomare Masseneinheit"
+
+#. i18n: tag constant attribute name
+#: scienceconstants.xml:64
+msgid "Molar Gas Constant"
+msgstr "Molare Gaskonstante"
+
+#. i18n: tag constant attribute name
+#: scienceconstants.xml:68
+msgid "Stefan-Boltzmann Constant"
+msgstr "Stefan-Boltzmann-Konstante"
+
+#. i18n: tag constant attribute name
+#: scienceconstants.xml:72
+msgid "Avogadro's Number"
+msgstr "Avogadrozahl"
+
+#~ msgid "Numbers"
+#~ msgstr "Ziffern"
+
+#~ msgid "sr"
+#~ msgstr "sr"
+
+#~ msgid "Inverse mode"
+#~ msgstr "Inverser Modus"
+
+#~ msgid "Inv"
+#~ msgstr "Inv"
+
+#~ msgid "I"
+#~ msgstr "I"
+
+#~ msgid "Science/&Engineering Buttons"
+#~ msgstr "Tasten für &Naturwissenschaft/Technik"
+
+#~ msgid "&Logic Buttons"
+#~ msgstr "&Tasten für logische Operationen"
+
+#~ msgid "&Show All"
+#~ msgstr "&Alle anzeigen"
+
+#~ msgid "&Hide All"
+#~ msgstr "&Alle ausblenden"
+
+#~ msgid "Whether to show statistical buttons."
+#~ msgstr "Festlegen, ob Statistiktasten angezeigt werden sollen"
+
+#~ msgid ""
+#~ "Whether to show buttons with functions used in science/engineering,\n"
+#~ "\t     like exp, log, sin, etc."
+#~ msgstr ""
+#~ "Sollen Tasten mit Funktionen aus dem wissenschaftlichen und "
+#~ "Ingenieursbereich, \t      wie exp, log, sin usw. angezeigt werden."
+
+#~ msgid "Whether to show logic buttons."
+#~ msgstr ""
+#~ "Festlegen, ob Tasten für logische Operationen angezeigt werden sollen"
+
+#~ msgctxt "Subtract from memory"
+#~ msgid "M-"
+#~ msgstr "M−"
+
+#~ msgid "/"
+#~ msgstr "÷"
+
+#~ msgid "X"
+#~ msgstr "×"
+
+#~ msgctxt "- calculator button"
+#~ msgid "-"
+#~ msgstr "−"
+
+#~ msgid "+/-"
+#~ msgstr "+/−"
+
+#~ msgid "Constant of Gravitation"
+#~ msgstr "Gravitationskonstante"
+
+#~ msgid "Fonts"
+#~ msgstr "Schriftarten"
+
+#~ msgid "Alt+1"
+#~ msgstr "Alt+1"
+
+#~ msgid "Alt+2"
+#~ msgstr "Alt+2"
+
+#~ msgid "Alt+3"
+#~ msgstr "Alt+3"
+
+#~ msgid "Alt+4"
+#~ msgstr "Alt+4"
+
+#~ msgid "Alt+5"
+#~ msgstr "Alt+5"
+
+#~ msgid "Alt+6"
+#~ msgstr "Alt+6"
+
+#~ msgid "Stack processing error - empty stack"
+#~ msgstr "Stapelverarbeitungsfehler - leerer Stapel"
+
+#~ msgid "PgUp"
+#~ msgstr "Bild auf"
+
+#~ msgid "Del"
+#~ msgstr "Del"
+
+#~ msgid "Base"
+#~ msgstr "Basis"
+
+#~ msgid "&Angle"
+#~ msgstr "&Winkel"
+
+#~ msgid "Choose the unit for the angle measure"
+#~ msgstr "Wählen Sie die Einheit für Winkelangaben"
+
+#~ msgid "Pressed Multiplication-Button"
+#~ msgstr "Multiplikations-Taste gedrückt"
+
+#~ msgid "Addition"
+#~ msgstr "Addition"
+
+#~ msgid "Subtraction"
+#~ msgstr "Subtraktion"
+
+#~ msgid "Pressed Decimal Point"
+#~ msgstr "Dezimalpunkt-Taste gedrückt"
+
+#~ msgid "Pressed Equal-Button"
+#~ msgstr "=-Taste gedrückt"
+
+#~ msgid "Clear memory"
+#~ msgstr "Speicher löschen"
+
+#~ msgid "Pressed ESC-Button"
+#~ msgstr "Esc-Taste gedrückt"
+
+#~ msgid "Configure Constants"
+#~ msgstr "Konstanten einrichten"
+
+#~ msgid "Decimal &digits:"
+#~ msgstr "Dezimal&ziffern:"

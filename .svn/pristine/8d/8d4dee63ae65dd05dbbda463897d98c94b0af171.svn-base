@@ -1,0 +1,978 @@
+# Marco Wegner <mail@marcowegner.de>, 2002.
+# Stephan Johach <hunsum@gmx.de>, 2003, 2005.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005.
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2009, 2010, 2011, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcontrol_filetypes\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: 2014-03-19 15:28+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:12 index.docbook:29
+#, no-c-format
+msgid "File Associations"
+msgstr "Dateizuordnungen"
+
+#. Tag: author
+#: index.docbook:14
+#, no-c-format
+msgid "&Mike.McBride; &Mike.McBride.mail;"
+msgstr "&Mike.McBride; &Mike.McBride.mail;"
+
+#. Tag: trans_comment
+#: index.docbook:15
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Stefan</"
+"firstname><surname>Winter</"
+"surname><affiliation><address><email>kickdown@online.de</email></address></"
+"affiliation><contrib>Deutsche Übersetzung</contrib></othercredit>"
+
+#. Tag: date
+#: index.docbook:18
+#, no-c-format
+msgid "2013-12-05"
+msgstr "2013-12-05"
+
+#. Tag: releaseinfo
+#: index.docbook:19
+#, no-c-format
+msgid "&kde; 4.12"
+msgstr "&kde; 4.12"
+
+#. Tag: keyword
+#: index.docbook:22
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:23
+#, no-c-format
+msgid "Systemsettings"
+msgstr "Systemeinstellungen"
+
+#. Tag: keyword
+#: index.docbook:24
+#, no-c-format
+msgid "files association"
+msgstr "Dateizuordnung"
+
+#. Tag: keyword
+#: index.docbook:25
+#, no-c-format
+msgid "association"
+msgstr "Zuordnung"
+
+#. Tag: title
+#: index.docbook:32
+#, no-c-format
+msgid "Introduction"
+msgstr "Einleitung"
+
+#. Tag: para
+#: index.docbook:34
+#, no-c-format
+msgid ""
+"One of the most convenient aspects of &kde;, is its ability to automatically "
+"match a data file with its application. As an example, when you click on "
+"your favorite &calligrawords; document in the filemanager, &kde; "
+"automatically starts &calligrawords;, and automatically loads that file into "
+"&calligrawords; so you can begin working on it."
+msgstr ""
+"Eine der bequemsten Eigenschaften von &kde; ist die Fähigkeit eine Zuordnung "
+"von einer Datendatei zur zugehörigen Anwendung herzustellen. Wenn Sie zum "
+"Beispiel in der Dateiverwaltung auf ein &calligrawords;-Dokument klicken, "
+"startet &kde; automatisch &calligrawords; und lädt dieses Dokument in "
+"&calligrawords;."
+
+#. Tag: para
+#: index.docbook:40
+#, no-c-format
+msgid ""
+"In the example above, the &calligrawords; Data file is <emphasis>associated</"
+"emphasis> with &calligrawords; (the application). These file associations "
+"are crucial to the functioning of &kde;."
+msgstr ""
+"Im obigen Beispiel ist die &calligrawords;-Datei dem Programm "
+"&calligrawords; <emphasis>zugeordnet</emphasis>. Diese Dateizuordnungen sind "
+"grundlegend für die Funktion von &kde;."
+
+#. Tag: para
+#: index.docbook:44
+#, no-c-format
+msgid ""
+"When &kde; is installed, it automatically creates hundreds of file "
+"associations to many of the most common data types. These initial "
+"associations are based on the most commonly included software, and the most "
+"common user preferences."
+msgstr ""
+"Bei der Installation erstellt &kde; automatisch hunderte von "
+"Dateizuordnungen für die gebräuchlichsten Dateitypen. Diese Zuordnungen "
+"verbinden diese Dateitypen mit den üblicherweise zu &kde; gehörenden "
+"Programmen und den allgemeinen Benutzereinstellungen."
+
+#. Tag: para
+#: index.docbook:49
+#, no-c-format
+msgid "Unfortunately, &kde; can not:"
+msgstr "Aber &kde; kann nicht:"
+
+#. Tag: para
+#: index.docbook:52
+#, no-c-format
+msgid "predict every possible combination of software and data files"
+msgstr "jede mögliche Kombination von Programmen und Dateitypen vorhersehen"
+
+#. Tag: para
+#: index.docbook:53
+#, no-c-format
+msgid "prepare for file formats not yet invented"
+msgstr "auf noch nicht erfundene Dateiformate vorbereitet sein"
+
+#. Tag: para
+#: index.docbook:54
+#, no-c-format
+msgid "or predict everyone's favorite application for certain file formats"
+msgstr "jedermanns bevorzugtes Programm für einen bestimmten Dateityp erraten"
+
+#. Tag: para
+#: index.docbook:57
+#, no-c-format
+msgid ""
+"You can change your current file associations or add new file associations "
+"using this module."
+msgstr ""
+"In diesem Modul können die augenblicklichen Zuordnungen verändert und neue "
+"Zuordnungen hinzugefügt werden."
+
+#. Tag: para
+#: index.docbook:60
+#, no-c-format
+msgid ""
+"Each file association is recorded as a mime type. &MIME; stands for "
+"<quote>Multipurpose Internet Mail Extensions</quote>. It allows a computer "
+"to determine the type of file, without opening and analyzing the format of "
+"each and every file."
+msgstr ""
+"Jede Zuordnung wird als &MIME;-Typ (&MIME; steht für <quote>Multipurpose "
+"Internet Mail Extensions</quote>) gespeichert. Mit diesen Typen kann der "
+"Computer den Dateityp feststellen, ohne jede einzelne Datei zu öffnen und "
+"das Datenformat explizit zu analysieren."
+
+#. Tag: title
+#: index.docbook:68
+#, no-c-format
+msgid "How to use this module"
+msgstr "Benutzung dieses Moduls"
+
+#. Tag: para
+#: index.docbook:70
+#, no-c-format
+msgid ""
+"You can start this module by opening &systemsettings; and selecting "
+"<guilabel>File Associations</guilabel> in the <guilabel>Common Appearance "
+"and Behavior</guilabel> category. Alternatively, you can start it by typing "
+"<command>kcmshell4 filetypes</command> from the terminal or &krunner;."
+msgstr ""
+"Um dieses Modul zu öffnen, starten Sie die &systemsettings; und wählen "
+"<guilabel>Dateizuordnungen</guilabel> im Abschnitt <guilabel>Allgemeines "
+"Erscheinungsbild und Verhalten</guilabel>. Alternativ kann diese Module auch "
+"durch Eingabe von <command>kcmshell4 filetypes</command> in einem Terminal "
+"oder in &krunner; geöffnet werden."
+
+#. Tag: para
+#: index.docbook:75
+#, no-c-format
+msgid ""
+"The file associations are organized into several categories, and at a "
+"minimum you will have:"
+msgstr ""
+"Die Dateizuordnungen sind in mehrere Kategorien gegliedert. Sie werden "
+"mindestens die folgenden haben:"
+
+#. Tag: para
+#: index.docbook:79
+#, no-c-format
+msgid "Application"
+msgstr "Application (Anwendung)"
+
+#. Tag: para
+#: index.docbook:80
+#, no-c-format
+msgid "Audio"
+msgstr "Audio"
+
+#. Tag: para
+#: index.docbook:81
+#, no-c-format
+msgid "Image"
+msgstr "Image (Bild)"
+
+#. Tag: para
+#: index.docbook:82
+#, no-c-format
+msgid "Inode"
+msgstr "Inode"
+
+#. Tag: para
+#: index.docbook:83
+#, no-c-format
+msgid "Message"
+msgstr "Message (Nachricht)"
+
+#. Tag: para
+#: index.docbook:84
+#, no-c-format
+msgid "Multipart"
+msgstr "Multipart (Mehrteilig)"
+
+#. Tag: para
+#: index.docbook:85
+#, no-c-format
+msgid "Text"
+msgstr "Text"
+
+#. Tag: para
+#: index.docbook:86
+#, no-c-format
+msgid "Video"
+msgstr "Video"
+
+#. Tag: para
+#: index.docbook:89
+#, no-c-format
+msgid "All of the file associations are sorted into one of these categories."
+msgstr "Jede Dateizuordnung wird einer dieser Kategorien zugeordnet."
+
+#. Tag: para
+#: index.docbook:92
+#, no-c-format
+msgid ""
+"There is no functional difference between any of the categories. These "
+"categories are designed to help organize your file associations, but they do "
+"not alter the associations in any way."
+msgstr ""
+"Diese Kategorien haben keine funktionale Bedeutung. Sie helfen bei der "
+"Organisation der Dateizuordnungen, unterscheiden sich aber nicht in der "
+"Funktion."
+
+#. Tag: para
+#: index.docbook:97
+#, no-c-format
+msgid ""
+"The categories are listed in the box labeled <guilabel>Known Types</"
+"guilabel>."
+msgstr ""
+"Die Kategorien werden in dem Listenfeld <guilabel>Bekannte Typen</guilabel> "
+"angezeigt."
+
+#. Tag: para
+#: index.docbook:100
+#, no-c-format
+msgid ""
+"You can explore each of these categories, and see the file associations "
+"contained within each one, by simply double-clicking on the category name. "
+"You will be presented with a list of the associated mime-types under that "
+"category."
+msgstr ""
+"Klickt man auf einen Kategorienamen, so werden darunter alle &MIME;-Typen "
+"angezeigt, die dieser Kategorie zugewiesen worden sind."
+
+#. Tag: para
+#: index.docbook:105
+#, no-c-format
+msgid ""
+"You can also search for a particular &MIME; type by using the search box. "
+"The search box is labeled <guilabel>Find file type or filename pattern</"
+"guilabel> and is located above the category list."
+msgstr ""
+"Sie können nach einem bestimmten &MIME;-Typ suchen, indem Sie in das "
+"Textfeld <guilabel>Dateityp oder -muster suchen</guilabel> oberhalb der "
+"Liste benutzen."
+
+#. Tag: para
+#: index.docbook:109
+#, no-c-format
+msgid ""
+"Simply type the first letter of the &MIME; type you are interested in. The "
+"categories are automatically expanded, and only the mime-types that include "
+"that letter are displayed."
+msgstr ""
+"Sobald die ersten Buchstaben in das Textfeld eingegeben sind, werden die "
+"&MIME;-Typen angezeigt, die diesen Buchstaben enthalten."
+
+#. Tag: para
+#: index.docbook:113
+#, no-c-format
+msgid ""
+"You can then enter a second character and the mime-types will be further "
+"limited to mime types containing those two characters."
+msgstr ""
+"Tippt man den zweiten Buchstaben ein, werden nur die &MIME;-Typen angezeigt, "
+"die beide Buchstaben enthalten."
+
+#. Tag: title
+#: index.docbook:118
+#, no-c-format
+msgid "Adding a new mime type"
+msgstr "Einen neuen MIME-Typ hinzufügen"
+
+#. Tag: para
+#: index.docbook:120
+#, no-c-format
+msgid ""
+"If you want to add a new &MIME; type to your file associations, you can "
+"click on the <guibutton>Add...</guibutton> button. A small dialog box will "
+"appear. You select the category from the drop down box labeled "
+"<guilabel>Group</guilabel>, and type the &MIME; name in the blank labeled "
+"<guilabel>Type name</guilabel>. Click <guibutton>OK</guibutton> to add the "
+"new mime type, or click <guibutton>Cancel</guibutton> to not add any new "
+"mime-types."
+msgstr ""
+"Um einen neuen &MIME;-Typ für eine Dateizuordnung zu erstellen, klicken Sie "
+"auf den Knopf <guibutton>Hinzufügen ...</guibutton>. Ein Dialog erscheint, "
+"in dem die gewünschte Kategorie im Listenfeld <guilabel>Gruppe</guilabel> "
+"und den Typ im Textfeld <guilabel>Name</guilabel> festgelegt werden kann. "
+"Mit <guibutton>OK</guibutton> wird der neue &MIME;-Typ hinzugefügt, durch "
+"Klicken auf <guibutton>Abbrechen</guibutton> werden die Eingaben verworfen "
+"und der neue Typ nicht erstellt."
+
+#. Tag: title
+#: index.docbook:131
+#, no-c-format
+msgid "Removing a mime type"
+msgstr "Einen MIME-Typ entfernen"
+
+#. Tag: para
+#: index.docbook:133
+#, no-c-format
+msgid ""
+"If you want to remove a &MIME; type, simply select the &MIME; type you want "
+"to delete by clicking once with the mouse on the &MIME; type name. Then "
+"click the button labeled <guibutton>Remove</guibutton>. The &MIME; type will "
+"be deleted immediately."
+msgstr ""
+"Wählen Sie den gewünschten &MIME;-Typ durch einen Klick auf den Typnamen. "
+"Dann klicken Sie auf den Knopf <guibutton>Entfernen</guibutton>. Damit wird "
+"der &MIME;-Typ sofort gelöscht."
+
+#. Tag: title
+#: index.docbook:142
+#, no-c-format
+msgid "Editing a mime types properties"
+msgstr "Die Eigenschaften eines MIME-Typen ändern"
+
+#. Tag: para
+#: index.docbook:144
+#, no-c-format
+msgid ""
+"Before you can edit a &MIME; types property, you must first specify which "
+"&MIME; type. Simply browse through the categories until you find the &MIME; "
+"type you want to edit, then click once on it with the mouse."
+msgstr ""
+"Bevor man Veränderungen vornehmen kann, muss man zunächst den gewünschten "
+"&MIME;-Typ in der Liste der Bekannten Typen durch einen Mausklick auswählen."
+
+#. Tag: para
+#: index.docbook:149
+#, no-c-format
+msgid ""
+"As soon as you have selected the &MIME; type, the current values of the "
+"&MIME; type will appear in the module window."
+msgstr ""
+"Daraufhin werden die aktuellen Einstellungen dieses &MIME;-Typs im "
+"Modulfenster angezeigt."
+
+#. Tag: para
+#: index.docbook:152
+#, no-c-format
+msgid ""
+"You will notice the current values are split into two tabs: "
+"<guilabel>General</guilabel> and <guilabel>Embedding</guilabel>"
+msgstr ""
+"Die aktuellen Werte werden auf den beiden Karteikarten <guilabel>Allgemein</"
+"guilabel> und <guilabel>Einbetten</guilabel> angezeigt."
+
+#. Tag: guilabel
+#: index.docbook:157
+#, no-c-format
+msgid "General"
+msgstr "Allgemein"
+
+#. Tag: para
+#: index.docbook:159
+#, no-c-format
+msgid "There are 4 properties for each &MIME; type in this tab:"
+msgstr "Jeder &MIME;-Typ hat vier Eigenschaften auf dieser Karteikarte:"
+
+#. Tag: para
+#: index.docbook:162
+#, no-c-format
+msgid ""
+"<guilabel>Mime Type Icon</guilabel> is the icon that will be visible when "
+"using &dolphin; or &konqueror; as a file manager."
+msgstr ""
+"<guilabel>&MIME;-Typ-Symbol</guilabel> ist das für diesen Typ in der "
+"Dateiverwaltung &dolphin; oder &konqueror; angezeigte Symbol."
+
+#. Tag: para
+#: index.docbook:165
+#, no-c-format
+msgid ""
+"<guilabel>Filename Patterns</guilabel> is a search pattern which &kde; will "
+"use to determine the &MIME; type."
+msgstr ""
+"<guilabel>Dateimuster</guilabel> ist ein Suchmuster, mit dessen Hilfe &kde; "
+"Dateien dieses &MIME;-Typs findet."
+
+#. Tag: para
+#: index.docbook:167
+#, no-c-format
+msgid ""
+"<guilabel>Description</guilabel> is a short description of the file type. "
+"This is for your benefit only."
+msgstr ""
+"<guilabel>Beschreibung</guilabel> beschreibt den Dateityp kurz. Dieses Feld "
+"hat keine weitere Funktion."
+
+#. Tag: para
+#: index.docbook:169
+#, no-c-format
+msgid ""
+"<guilabel>Application Preference Order</guilabel> determines which "
+"applications will be associated with the specified &MIME; type."
+msgstr ""
+"<guilabel>Rangfolge der zugeordneten Anwendungsprogramme</guilabel> legt "
+"fest, welche Programme diesem &MIME;-Typ zugeordnet werden."
+
+#. Tag: guilabel
+#: index.docbook:177
+#, no-c-format
+msgid "Embedding Tab"
+msgstr "Karteikarte Einbetten"
+
+#. Tag: para
+#: index.docbook:179
+#, no-c-format
+msgid ""
+"The Embedding tab allows you to determine if a file will be viewed within a "
+"filemanager window, or by starting the application."
+msgstr ""
+"Auf dieser Karteikarte wird festgelegt, ob dieser Dateityp innerhalb der "
+"Dateiverwaltung oder durch Starten der Anwendung angezeigt wird."
+
+#. Tag: title
+#: index.docbook:189
+#, no-c-format
+msgid "Changing the Icon"
+msgstr "Ändern des Symbols"
+
+#. Tag: para
+#: index.docbook:191
+#, no-c-format
+msgid ""
+"To change the icon, simply click on the Icon button. A dialog box will "
+"appear, which will show you all available icons. Simply click once with the "
+"mouse on the icon of your choice, and click <guibutton>OK</guibutton>."
+msgstr ""
+"Um das Symbol zu verändern, klicken Sie auf das Symbol. Es erscheint ein "
+"Dialog, der alle verfügbaren Symbole anzeigt. Wählen Sie ein neues Symbol "
+"durch Klicken aus und bestätigen Sie mit <guibutton>OK</guibutton>."
+
+#. Tag: title
+#: index.docbook:199
+#, no-c-format
+msgid "Editing the mime-type patterns"
+msgstr "Ändern der &MIME;-Typ-Dateimuster"
+
+#. Tag: para
+#: index.docbook:201
+#, no-c-format
+msgid ""
+"The box labeled <guilabel>Filename Patterns</guilabel>, determines what "
+"files will be included within this mime-type."
+msgstr ""
+"Das Feld <guilabel>Dateimuster</guilabel> bestimmt, welche Dateien zu diesem "
+"&MIME;-Typ gehören."
+
+#. Tag: para
+#: index.docbook:204
+#, no-c-format
+msgid ""
+"Usually, files are selected based on their suffix. (Examples: Files that end "
+"with <literal role=\"extension\">.wav</literal> are sound files, using the "
+"WAV format and files that end in <literal role=\"extension\">.c</literal> "
+"are program files written in C)."
+msgstr ""
+"Normalerweise wird die Dateiendung für die Bestimmung des &MIME;-Typs "
+"verwendet. (Beispiele: Dateien, die auf <literal role=\"extension\">.wav</"
+"literal> enden, sind Sounddateien im WAV-Format und Dateien, die auf "
+"<literal role=\"extension\">.c</literal> enden, sind Quelltexte zu "
+"Programmen in der Programmiersprache C)."
+
+#. Tag: para
+#: index.docbook:209
+#, no-c-format
+msgid "You should enter your filename mask in this combo box."
+msgstr "Man tippt das gewünschte Dateimuster in dieses Listenfeld ein."
+
+#. Tag: para
+#: index.docbook:211
+#, no-c-format
+msgid ""
+"The asterisk (<literal>*</literal>) is a wildcard character that will be "
+"used with nearly every mime type mask. A complete discussion of wildcards is "
+"beyond the scope of this manual, but it is important to understand that the "
+"asterisk (in this context), <quote>matches</quote> any number of characters. "
+"As an example: <userinput>*.pdf</userinput> will match <filename>Datafile."
+"pdf</filename>, <filename>Graphics.pdf</filename> and <filename>User.pdf</"
+"filename>, but not <filename>PDF</filename>, <filename>Datafile.PDF</"
+"filename>, or <filename>.pdf</filename>."
+msgstr ""
+"Das Sternchen (<literal>*</literal>) ist ein Spezialzeichen, das wohl in "
+"jedem &MIME;-Typ auftaucht. Eine vollständige Diskussion von Spezialzeichen "
+"geht über diesen Hilfetext hinaus. Wichtig ist, dass das Sternchen (in "
+"diesem Zusammenhang) für eine beliebige Anzahl <quote>beliebiger</quote> "
+"Zeichen steht. Zum Beispiel: Das Dateimuster <userinput>*.pdf</userinput> "
+"enthält <filename>Datendatei.pdf</filename>, <filename>Grafik.pdf</filename> "
+"und <filename>Benutzer.pdf</filename>, aber nicht <filename>PDF</filename>, "
+"<filename>Datendatei.PDF</filename> oder <filename>.pdf</filename>"
+
+#. Tag: para
+#: index.docbook:222
+#, no-c-format
+msgid ""
+"It is very beneficial to have multiple masks. One for lower case, one for "
+"upper case, &etc; This will help ensure that &kde; can determine the file "
+"type more accurately."
+msgstr ""
+"Es ist günstig, mehrere Dateimuster zu haben; mindestens eines für Klein- "
+"und eines für Großbuchstaben. Das stellt sicher, dass &kde; den &MIME;-Typ "
+"einer Datei bestimmen kann."
+
+#. Tag: title
+#: index.docbook:229
+#, no-c-format
+msgid "Editing a mime types description."
+msgstr "Ändern der &MIME;-Typ-Beschreibung."
+
+#. Tag: para
+#: index.docbook:231
+#, no-c-format
+msgid ""
+"You can type a short description of the &MIME; type in the text box labeled "
+"<guilabel>Description</guilabel>. This label is to help you, it does not "
+"affect the function of the &MIME; type."
+msgstr ""
+"Man kann eine kurze Beschreibung des &MIME;-Typs in dem Feld "
+"<guilabel>Beschreibung</guilabel> eintragen. Diese Beschreibung hat keine "
+"Funktion. Sie dient lediglich dem Benutzer zur Identifikation des &MIME;-"
+"Typs."
+
+#. Tag: title
+#: index.docbook:238
+#, no-c-format
+msgid "Editing the application associations"
+msgstr "Ändern der zugeordneten Anwendungen"
+
+#. Tag: para
+#: index.docbook:240
+#, no-c-format
+msgid ""
+"There are five buttons (<guibutton>Move Up</guibutton>, <guibutton>Move "
+"Down</guibutton>, <guibutton>Add</guibutton>, <guibutton>Edit</guibutton> "
+"and <guibutton>Remove</guibutton>) and a list box (which lists the "
+"applications) which are used to configure the applications."
+msgstr ""
+"Für die Konfiguration der zugeordneten Anwendungen gibt es fünf Knöpfe "
+"(<guibutton>Nach oben</guibutton>, <guibutton>Nach unten</guibutton>, "
+"<guibutton>Hinzufügen</guibutton>, <guibutton>Bearbeiten</guibutton>  und "
+"<guibutton>Entfernen</guibutton>) sowie ein Listenfeld, das die zugeordneten "
+"Programme anzeigt."
+
+#. Tag: para
+#: index.docbook:245
+#, no-c-format
+msgid ""
+"The list box lists all of the applications associated with a specific &MIME; "
+"type. The list is in a specific order. The top application is the first "
+"application tried. The next application down the list is the second, &etc;"
+msgstr ""
+"Das Listenfeld enthält alle dem &MIME;-Typ zugeordneten Anwendungen. Die "
+"Reihenfolge ist dabei wichtig. Es wird zuerst die oberste Anwendung "
+"probiert, danach die Zweite &etc;"
+
+#. Tag: para
+#: index.docbook:250
+#, no-c-format
+msgid ""
+"What do you mean there is more than one application per &MIME; type? Why is "
+"this necessary?"
+msgstr ""
+"Warum gibt es mehr als eine Anwendung pro &MIME;-Typ? Wozu ist das notwendig?"
+
+#. Tag: para
+#: index.docbook:253
+#, no-c-format
+msgid ""
+"We started out by saying that &kde; comes preconfigured with hundreds of "
+"file associations. The reality is, each system that &kde; is installed on "
+"has a different selection of applications. By allowing multiple associations "
+"per &MIME; type, &kde; can continue to operate when a certain application is "
+"not installed on the system."
+msgstr ""
+"Anfangs wurde bereits gesagt, das &kde; mit hunderten von vorkonfigurierten "
+"Dateizuordnungen ausgeliefert wird. Jedes System, auf dem &kde; installiert "
+"ist, unterscheidet sich darin, welche Anwendungen installiert sind. Da "
+"mehrere Anwendungen pro &MIME;-Typ zur Auswahl stehen, kann &kde; "
+"funktionieren, auch wenn eine bestimmte Anwendung nicht installiert ist."
+
+#. Tag: para
+#: index.docbook:260
+#, no-c-format
+msgid "As an example:"
+msgstr "Zum Beispiel:"
+
+#. Tag: para
+#: index.docbook:261
+#, no-c-format
+msgid ""
+"For the &MIME; type <literal>pdf</literal>, there are two applications "
+"associated with this file type. The first program is called &okular;. If "
+"your system does not have &okular; installed, then &kde; automatically "
+"starts the second application &krita;. As you can see, this will help keep "
+"&kde; running strong as you add and subtract applications."
+msgstr ""
+"Für den &MIME;-Typ <literal>pdf</literal> gibt es zwei zugeordnete "
+"Anwendungen. Die erste ist &okular;. Falls &okular; auf Ihrem System nicht "
+"installiert ist, startet &kde; automatisch die zweite Anwendung &krita;. "
+"Damit bleibt &kde; in Funktion, obwohl sich die installierten Programme "
+"verändern."
+
+#. Tag: para
+#: index.docbook:269
+#, no-c-format
+msgid ""
+"We have established that the order is important. You can change the order of "
+"the applications by clicking once with the mouse on the application you want "
+"to move, and then clicking either <guibutton>Move Up</guibutton> or "
+"<guibutton>Move Down</guibutton>. This will shift the currently selected "
+"application up or down the list of applications."
+msgstr ""
+"Wir erwähnten bereits, dass die Reihenfolge der Anwendungen wichtig ist. Die "
+"Reihenfolge kann geändert werden, indem man auf die Anwendung klickt, deren "
+"Position verändert werden soll, und dann je nach Wunsch auf die Knöpfe "
+"<guibutton>Nach oben</guibutton> und <guibutton>Nach unten</guibutton>. "
+"Jeder Klick verschiebt die ausgewählte Anwendung um eine Position in der "
+"Liste."
+
+#. Tag: para
+#: index.docbook:276
+#, no-c-format
+msgid ""
+"You can add new applications to the list by clicking the button labeled "
+"<guibutton>Add</guibutton>. A dialog box will appear. Using the dialog box, "
+"you can select the application you want to use for this mime type. Click "
+"<guibutton>OK</guibutton> when you are done, and the application will be "
+"added to the current list."
+msgstr ""
+"Um neue Anwendungen hinzuzufügen, klickt man auf <guibutton>Hinzufügen</"
+"guibutton>. Es erscheint ein Dialog, mit dessen Hilfe man die gewünschte "
+"Anwendung auswählen kann. Klickt man zur Bestätigung auf <guibutton>OK</"
+"guibutton>, so wird diese Anwendung zur Liste der Anwendungen für diesen "
+"&MIME;-Typ hinzugefügt."
+
+#. Tag: para
+#: index.docbook:282
+#, no-c-format
+msgid ""
+"To change the options of an application for a particular &MIME; type select "
+"it in the list and then press the <guibutton>Edit...</guibutton> button. "
+"This opens a new dialog with <guilabel>General</guilabel>, "
+"<guilabel>Permissions</guilabel>, <guilabel>Applications</guilabel> and "
+"<guilabel>Preview</guilabel> tabs. On the <guilabel>Applications</guilabel> "
+"tab you can edit <guilabel>Name</guilabel>, <guilabel>Description</guilabel> "
+"and <guilabel>Comment</guilabel>. In the <guilabel>Command</guilabel> field "
+"you can have several place holders following the command, which will be "
+"replaced with the actual values when the actual program is run:"
+msgstr ""
+"Um die Einstellungen eines Programms für einen bestimmten &MIME;-Typ zu "
+"ändern, wählen sie es in der Liste aus und drücken dann den Knopf "
+"<guibutton>Bearbeiten ...</guibutton>. Damit wird ein neuer Dialog mit den "
+"Karteikarten <guilabel>Allgemein</guilabel>, <guilabel>Berechtigungen</"
+"guilabel>, <guilabel>Programm</guilabel> und <guilabel>Vorschau</guilabel>. "
+"Auf der Karteikarte <guilabel>Programm</guilabel> kann <guilabel>Name</"
+"guilabel>, <guilabel>Beschreibung</guilabel> und ein <guilabel>Kommentar</"
+"guilabel> eingegeben werden. Im Eingabefeld <guilabel>Befehl</guilabel> "
+"können diverse Platzhalter benutzt werden, die durch folgende Werte ersetzt "
+"werden, sobald das Programm tatsächlich läuft:"
+
+#. Tag: para
+#: index.docbook:293
+#, no-c-format
+msgid "%f - a single file name"
+msgstr "%f - ein Dateiname"
+
+#. Tag: para
+#: index.docbook:294
+#, no-c-format
+msgid ""
+"%F - a list of files; use for applications that can open several local files "
+"at once"
+msgstr ""
+"%F - eine Liste von Dateien. Benutzen Sie dies bei Anwendungen, die mehrere "
+"lokale Dateien gleichzeitig öffnen können"
+
+#. Tag: para
+#: index.docbook:296
+#, no-c-format
+msgid "%u - a single URL"
+msgstr "%u - eine Adresse (&URL;)"
+
+#. Tag: para
+#: index.docbook:297
+#, no-c-format
+msgid "%U - a list of URLs"
+msgstr "%U - eine Liste von Adressen (URLs)"
+
+#. Tag: para
+#: index.docbook:298
+#, no-c-format
+msgid "%d - the folder of the file to open"
+msgstr "%d - der Ordner der zu öffnenden Datei"
+
+#. Tag: para
+#: index.docbook:299
+#, no-c-format
+msgid "%D - a list of folders"
+msgstr "%D - eine Liste von Ordnern"
+
+#. Tag: para
+#: index.docbook:300
+#, no-c-format
+msgid "%i - the icon"
+msgstr "%i - das Symbol"
+
+#. Tag: para
+#: index.docbook:301
+#, no-c-format
+msgid "%m - the mini-icon"
+msgstr "%m - das Mini-Symbol"
+
+#. Tag: para
+#: index.docbook:302
+#, no-c-format
+msgid "%c - the caption"
+msgstr "%c - der Fenstertitel"
+
+#. Tag: para
+#: index.docbook:305
+#, no-c-format
+msgid ""
+"You can remove an application (thereby ensuring that the application will "
+"never run with this &MIME; type by clicking once on the name of the "
+"application, and clicking the <guibutton>Remove</guibutton> button."
+msgstr ""
+"Um zu verhindern, dass eine bestimmte Anwendung mit diesem &MIME;-Typ "
+"ausgeführt wird, klickt man auf die gewünschte Anwendung um sie auszuwählen. "
+"Ein Klick auf <guibutton>Entfernen</guibutton> löscht die Anwendung aus der "
+"Liste."
+
+#. Tag: para
+#: index.docbook:310
+#, no-c-format
+msgid ""
+"It is a good idea to use the <guibutton>Move Up</guibutton> and "
+"<guibutton>Move Down</guibutton> buttons to adjust the unwanted application "
+"to a lower position in the list, rather than deleting the application from "
+"the list entirely. Once you have deleted an application, if your preferred "
+"application should become compromised, there will not be an application to "
+"view the data document."
+msgstr ""
+"Normalerweise ist es sinnvoller, eine ungewünschte Anwendung mit Hilfe der "
+"Knöpfe <guibutton>Nach oben</guibutton> und <guibutton>Nach unten</"
+"guibutton> an das Ende der Liste der Anwendungen zu stellen anstatt sie ganz "
+"zu löschen. Wenn die gewünschte Anwendung für diesen Typ einmal unerreichbar "
+"werden sollte, hat man so immer noch wenigstens eine Anwendung, um diesen "
+"&MIME;-Typ zu betrachten."
+
+#. Tag: title
+#: index.docbook:320
+#, no-c-format
+msgid "Embedding"
+msgstr "Einbetten"
+
+#. Tag: para
+#: index.docbook:321
+#, no-c-format
+msgid ""
+"These settings are valid only for &konqueror; used as file manager, "
+"&dolphin; is not able to use embedded views and opens a file always in the "
+"associated application."
+msgstr ""
+"Diese Einstellungen werden nur von &konqueror; als Dateiverwaltung benutzt, "
+"&dolphin; kann keine eingebetteten Ansichten anzeigen und öffnet eine Datei "
+"immer mit der zugehörigen Anwendung."
+
+#. Tag: para
+#: index.docbook:323
+#, no-c-format
+msgid ""
+"By clicking on the <guilabel>Embedding</guilabel> tab, you are presented "
+"with four radio buttons in the <guilabel>Left click action</guilabel> group. "
+"These determine how the filemanager views the selected &MIME; type:"
+msgstr ""
+"Auf der Karteikarte <guilabel>Einbetten</guilabel> wird eine Gruppe von vier "
+"Auswahlknöpfen mit dem Titel <guibutton>Linksklick-Aktion</guibutton> "
+"angezeigt. Diese bestimmen, wie die Dateiverwaltung den &MIME;-Typ anzeigt:"
+
+#. Tag: term
+#: index.docbook:329
+#, no-c-format
+msgid "Show file in embedded viewer"
+msgstr "Datei in eingebettetem Betrachter anzeigen"
+
+#. Tag: para
+#: index.docbook:330
+#, no-c-format
+msgid ""
+"If this is selected, the file will be shown <emphasis>within</emphasis> the "
+"filemanager window."
+msgstr ""
+"Wenn diese Option gewählt ist, wird die Datei <emphasis>innerhalb</emphasis> "
+"des Dateiverwaltungs-Fensters angezeigt."
+
+#. Tag: term
+#: index.docbook:331
+#, no-c-format
+msgid "Show file in separate viewer"
+msgstr "Datei in extra Betrachter anzeigen"
+
+#. Tag: para
+#: index.docbook:332
+#, no-c-format
+msgid ""
+"This will cause a separate window to be created when showing this mime-type."
+msgstr ""
+"Bei dieser Option wird zum Anzeigen dieses &MIME;-Typs ein eigenes Fenster "
+"erstellt."
+
+#. Tag: term
+#: index.docbook:333
+#, no-c-format
+msgid "Use settings for 'application' group"
+msgstr "Einstellung aus „Gruppe“ übernehmen"
+
+#. Tag: para
+#: index.docbook:334
+#, no-c-format
+msgid ""
+"This will cause the mime-type to use the settings for the mime-type group. "
+"(if you are editing an audio mime type, then the settings for the audio "
+"group are used)."
+msgstr ""
+"Diese Option sorgt dafür, dass die Einstellungen der jeweiligen Gruppe "
+"verwendet werden. (Wenn man einen Audio-&MIME;-Typ bearbeitet, werden die "
+"Einstellungen der Audio-Gruppe verwendet)."
+
+#. Tag: term
+#: index.docbook:336
+#, no-c-format
+msgid "Ask whether to save to disk instead"
+msgstr "Nachfragen, ob stattdessen auf Festplatte gespeichert werden soll"
+
+#. Tag: para
+#: index.docbook:337
+#, no-c-format
+msgid ""
+"This setting applies only to &konqueror; in browser mode and determines if "
+"the file is shown in an embedded viewer or if you are asked to save the file "
+"to disk instead."
+msgstr ""
+"Diese Einstellung wird nur von &konqueror; im Browser-Modus benutzt und "
+"bestimmt, ob eine Datei in einer eingebetteten Ansichten anzeigt wird oder "
+"nachgefragt wird, stattdessen auf Festplatte zu speichern."
+
+#. Tag: para
+#: index.docbook:341
+#, no-c-format
+msgid ""
+"Below this is a listbox labeled <guilabel>Services Preference Order</"
+"guilabel>."
+msgstr ""
+"Darunter befindet sich das Listenfeld <guilabel>Rangfolge der zugeordneten "
+"Dienstprogramme</guilabel>."
+
+#. Tag: para
+#: index.docbook:344
+#, no-c-format
+msgid ""
+"When you use a filemanager like &dolphin; or &konqueror;, you can "
+"<mousebutton>right</mousebutton> mouse click, and a menu will with an entry "
+"labeled <guimenu>Open with...</guimenu> will appear. This box lists the "
+"applications that will appear, in the order they will appear, under this "
+"menu."
+msgstr ""
+"In einer Dateiverwaltung wie &konqueror; oder &dolphin; kann durch Klicken "
+"der <mousebutton>rechten Maustaste</mousebutton> ein Kontextmenü geöffnet "
+"werden. Dieses enthält das Untermenü <guisubmenu>Öffnen mit ...</"
+"guisubmenu>. Das Listenfeld zeigt die Anwendungen in der Reihenfolge an, wie "
+"sie unter dem Menü dann erscheinen."
+
+#. Tag: para
+#: index.docbook:350
+#, no-c-format
+msgid ""
+"You can use the <guibutton>Move Up</guibutton> and <guibutton>Move Down</"
+"guibutton> buttons to change the order."
+msgstr ""
+"Die Reihenfolge kann mit den Knöpfen <guibutton>Nach oben</guibutton> und "
+"<guibutton>Nach unten</guibutton> verändert werden."
+
+#. Tag: title
+#: index.docbook:356
+#, no-c-format
+msgid "Making changes permanent"
+msgstr "Änderungen speichern"
+
+#. Tag: para
+#: index.docbook:358
+#, no-c-format
+msgid ""
+"When you are done making any changes to mime types, you can click "
+"<guibutton>Apply</guibutton> to make your changes permanent, but keep you in "
+"this module."
+msgstr ""
+"Um die gemachten Änderungen zu übernehmen und im Modul zu bleiben, klickt "
+"man auf <guibutton>Anwenden</guibutton>."
+
+#~ msgid "2011-11-28"
+#~ msgstr "2011-11-28"
+
+#~ msgid "2010-06-23"
+#~ msgstr "2010-06-23"
+
+#~ msgid "Print"
+#~ msgstr "Print (Druck)"
+
+#~ msgid "KControl"
+#~ msgstr "Kontrollzentrum"
+
+#~ msgid ""
+#~ "There is also an overview category <quote>All</quote>, which displays all "
+#~ "the file types in one list, without categorizing them."
+#~ msgstr ""
+#~ "Die Kategorie <quote>All</quote> (Alles) enthält alle Zuordnungen und "
+#~ "dient dem Überblick."

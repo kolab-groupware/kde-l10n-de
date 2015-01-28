@@ -1,0 +1,508 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" 
+"dtd/kdex.dtd" [
+  <!ENTITY kappname "&kuser;">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<book id="kuser" lang="&language;">
+
+<bookinfo>
+<title
+>Das Handbuch zu &kuser;</title>
+<authorgroup>
+<author
+><firstname
+>Matt</firstname
+> <surname
+>Johnston</surname
+> <affiliation
+> <address
+>&Matt.Johnston.mail;</address>
+</affiliation>
+</author>
+
+<othercredit role="reviewer"
+><firstname
+>Lauri</firstname
+> <surname
+>Watts</surname
+> <affiliation
+> <address
+>&Lauri.Watts.mail;</address>
+</affiliation>
+<contrib
+>Korrektur</contrib>
+</othercredit>
+<othercredit role="reviewer"
+><firstname
+>Jonathan</firstname
+> <surname
+>Singer</surname
+> <affiliation
+> <address
+>&Jonathan.Singer.mail;</address>
+</affiliation>
+<contrib
+>Korrektur</contrib>
+</othercredit>
+<othercredit role="translator"
+><firstname
+>Frank</firstname
+><surname
+>Schütte</surname
+><affiliation
+><address
+><email
+>f.schuette@t-online.de</email
+></address
+></affiliation
+><contrib
+>Deutsche Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2000</year>
+<holder
+>&Matt.Johnston;</holder>
+</copyright>
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+
+<date
+>2013-06-22</date>
+<releaseinfo
+>3.9 (&kde; 4.11)</releaseinfo>
+
+<abstract
+><para
+>Diese Dokumentation bezieht sich auf &kuser; 3.9. Mit diesem Programm können Sie die Benutzer und Gruppen Ihres Systems verwalten.</para>
+</abstract>
+
+<keywordset>
+<keyword
+>Benutzerverwaltung</keyword>
+<keyword
+>Benutzer</keyword>
+<keyword
+>Verwaltung</keyword>
+<keyword
+>Verwalter</keyword>
+<keyword
+>Dienstprogramm</keyword>
+<keyword
+>Gruppe</keyword>
+<keyword
+>Passwort</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="start">
+<title
+>Erste Schritte</title>
+
+<para
+>Mit &kuser; können Sie die Benutzer und Gruppen Ihres Systems verwalten. </para>
+<para
+>Dies ist eine kurze Einführung zu &kuser;. Umfangreichere Informationen finden Sie unter <link linkend="using"
+>Benutzung</link
+>.</para>
+
+<para
+>Um mit &kuser; zu beginnen, ist es ausreichend, das Kapitel <link linkend="customizing"
+>Anpassung von &kuser;</link
+> zu lesen.</para>
+
+<para
+>Wird &kuser; nicht mit Systemverwalterrechten gestartet, erscheint eine Warnung, dass die Datei <filename
+>/etc/shadow</filename
+> nicht zum Lesen geöffnet werden kann.</para>
+
+<!--not in 4.4>
+para
+>When you have made the changes you want, you must
+<guimenuitem
+>Save</guimenuitem
+> them for them to take effect. Either
+choose the Toolbar icon, or use the <guimenu
+>File</guimenu
+> menu.</para>
+-->
+
+</chapter>
+
+<chapter id="using">
+<title
+>Benutzung</title>
+
+<sect1 id="sec1mainwindow">
+<title
+>Hauptfenster</title>
+
+<para
+>&kuser; ist eine einfache Anwendung. Das Hauptfenster besteht aus zwei Karteikarten, der Benutzer- und der Benutzergruppenliste. Zum Bearbeiten wählen Sie den gewünschten Benutzer oder die gewünschte Gruppe mit einem Doppelklick auf den Eintrag aus. Es erscheint der Dialog Benutzer- bzw. Gruppeneigenschaften.</para>
+<screenshot>
+<screeninfo
+>&kuser;-Hauptfenster</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="kuser.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>&kuser;-Hauptfenster</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+</sect1>
+
+<sect1 id="properties">
+<title
+>Eigenschaften von Benutzern und Gruppen</title>
+
+<sect2 id="user-properties">
+<title
+>Der Dialog Benutzereigenschaften</title>
+
+<para
+>Der Dialog <guilabel
+>Benutzereigenschaften</guilabel
+> besteht aus zwei Karteikarten.</para>
+
+<!-- is this still valid for 4.4?
+<para
+>The number of tabs depends on the type of the user storage system
+and whether quotas are being used. Additional tabs will appear if you
+have shadow passwords, or any other similar things such as
+<filename
+>/etc/master.passwd</filename
+> in BSD flavor Unices.</para>
+-->
+<sect3 id="user-info">
+<title
+>Benutzerinformation</title>
+
+<para
+>Auf der Karteikarte <guilabel
+>Benutzerinformation</guilabel
+> können Sie folgende Einstellungen bearbeiten: </para>
+
+<itemizedlist>
+<listitem
+><para
+><guilabel
+>Benutzeranmeldung</guilabel
+> mit dem Benutzernamen und einen Knopf <guibutton
+>Passwort setzen</guibutton
+> für diesen Zugang.</para
+></listitem>
+<listitem
+><para
+><guilabel
+>Benutzer-ID</guilabel
+></para
+></listitem>
+<listitem
+><para
+><guilabel
+>Vollständiger Name</guilabel
+></para
+></listitem>
+<listitem
+><para
+><guilabel
+>Anmelde-Shell</guilabel
+> (die Liste der möglichen Einträge stammt aus der Datei <filename
+>/etc/shells</filename
+>)</para
+></listitem>
+<listitem
+><para
+><guilabel
+>Persönlicher Ordner</guilabel
+></para
+></listitem>
+<listitem
+><para
+>Zwei Büroorte</para
+></listitem>
+<listitem
+><para
+><guilabel
+>Adresse</guilabel
+></para
+></listitem>
+<listitem
+><para
+><guilabel
+>Zugang deaktiviert</guilabel
+></para
+></listitem>
+</itemizedlist>
+
+</sect3>
+
+<sect3 id="password-management-info">
+<title
+>Karteikarte Passwortverwaltung</title>
+
+<para
+>Die Karteikarte <guilabel
+>Passwortverwaltung</guilabel
+> erscheint nur, wenn das Programm als Systemverwalter aufgerufen wurde und <foreignphrase lang="en"
+>Shadow</foreignphrase
+>-Passwörter oder beispielsweise <filename
+>/etc/master.passwd</filename
+> wie in <acronym
+>BSD</acronym
+>-Unixsystemen verwendet werden.</para>
+
+<!--para
+>In the <guilabel
+>Extended Info</guilabel
+> tab you can modify
+parameters related to extended account control: </para-->
+
+<itemizedlist>
+<listitem
+><para
+>Minimale Anzahl Tage zwischen Passwort-Änderungen</para
+></listitem>
+<listitem
+><para
+>Anzahl der Tage, nach denen ein Passwort ungültig wird, falls es nicht geändert wird</para
+></listitem>
+<listitem
+><para
+>Anzahl der Tage der Warnung vor dem Ungültig werden</para
+></listitem>
+<listitem
+><para
+>Wann und unter welchen Umständen ein Zugang bei ungültigem Passwort deaktiviert wird</para
+></listitem>
+<listitem
+><para
+>Ein festes Datum, an dem der Zugang ungültig wird</para
+></listitem>
+<listitem
+><para
+><guilabel
+>Klasse</guilabel
+> (bei <acronym
+>BSD</acronym
+>-Systemen)</para
+></listitem>
+</itemizedlist>
+<para
+>Das Datum der letzten Passwortänderung wird oben im Dialog angezeigt.</para>
+
+
+</sect3>
+<!-- no quota in kde 3.5 - 4.11, 
+was removed with http://lists.kde.org/?l=kde-commits&m=108486541029598&w=2
+<sect2 id="quota">
+<title
+><guilabel
+>Quota</guilabel
+> Tab</title>
+
+<para
+>You will probably see the <guilabel
+>Quota</guilabel
+> tab only if you
+have at least one mounted volume with quota enabled and a quota file
+present. There you may modify all quota related parameters: </para>
+
+<itemizedlist>
+<listitem
+><para
+><guilabel
+>File Soft Quota</guilabel
+></para
+></listitem>
+<listitem
+><para
+><guilabel
+>File Hard Quota</guilabel
+></para
+></listitem>
+<listitem
+><para
+><guilabel
+>File Time Limit (Grace 
+Period)</guilabel
+></para
+></listitem>
+<listitem
+><para
+><guilabel
+>iNode Soft Quota</guilabel
+></para
+></listitem>
+<listitem
+><para
+><guilabel
+>iNode Hard Quota</guilabel
+></para
+></listitem>
+<listitem
+><para
+><guilabel
+>iNode Time Limit (Grace 
+Period)</guilabel
+></para
+></listitem>
+</itemizedlist>
+
+<para
+> All these parameters can be changed for each file system that has user
+quota enabled. File systems can be changed using the <guilabel
+>Quota
+Filesystem</guilabel
+> box.</para>
+
+</sect2>
+-->
+<sect3 id="group">
+<title
+>Die Karteikarte Gruppen</title>
+
+<para
+>Die Karteikarte <guilabel
+>Gruppen</guilabel
+> informiert über die Gruppenzugehörigkeiten des ausgewählten Benutzers. Die Standardgruppe, zu der der Benutzer gehört, kann mit dem Knopf <guilabel
+>Als primär setzen</guilabel
+> geändert werden. Weiterhin kann der Benutzer in anderen Gruppen Mitglied werden, indem Sie diese im großen Feld markieren.</para>
+
+</sect3>
+</sect2>
+
+<sect2 id="group-properties">
+<title
+>Eigenschaften der Gruppe</title>
+
+<para
+>Der Dialog <guilabel
+>Eigenschaften der Gruppe</guilabel
+> enthält eine Liste aller Benutzer in der ausgewählten Gruppe in der linken Liste und rechts eine Liste aller anderen Benutzer.</para
+> 
+<para
+>Wählen Sie einen Benutzer in einer der beiden Listen und benutzen Sie die Knöpfe <guibutton
+>Hinzufügen</guibutton
+> und <guibutton
+>Entfernen</guibutton
+>, um die Mitglieder einer Gruppe zu verwalten.</para>
+
+</sect2>
+
+</sect1>
+
+<sect1 id="managing-users-groups">
+<title
+>Benutzer oder Gruppen verwalten</title>
+
+<para
+>Um einen Benutzer oder eine Gruppe hinzuzufügen, wählen Sie <guimenuitem
+>Hinzufügen</guimenuitem
+> aus dem Menü <guimenu
+>Benutzer</guimenu
+> oder <guimenu
+>Gruppe</guimenu
+> oder klicken Sie auf den passenden <guiicon
+>Hinzufügen</guiicon
+>-Knopf der Werkzeugleiste.</para>
+<para
+> Das Bearbeiten oder Löschen des ausgewählten Benutzer bzw. der ausgewählten Gruppe funktioniert genauso.</para>
+</sect1>
+</chapter>
+
+<chapter id="customizing">
+<title
+>Anpassung von &kuser;</title>
+
+<sect1 id="defaults">
+<title
+>Standardeinstellungen für neue Benutzer</title>
+
+<para
+>Zum Verändern der Standardeinstellungen für neue Benutzer öffnen Sie die Karteikarte <guilabel
+>Anbindung</guilabel
+> auf der Seite <guilabel
+>Allgemein</guilabel
+> im Einstellungsdialog von &kuser;, indem Sie im Menü <menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>&kuser; einrichten</guimenuitem
+></menuchoice
+> auswählen. </para
+> 
+<para
+>In diesem Dialog können Sie die Standardeinstellungen ändern, mit denen ein neuer Benutzer erstellt wird: Shell, der Persönliche Ordner (oder das Dateisystem für die Persönlichen Ordner). Außerdem können Sie auswählen, ob ein Persönlicher Ordner bei der Erstellung des Benutzers angelegt wird und ob Vorlagen (Standardkonfigurationsdateien) in den Persönlichen Ordner kopiert werden. Die Einstellung <guilabel
+>Private Gruppe für Benutzer</guilabel
+> erstellt eine eigene Benutzergruppe für jeden neu angelegten Benutzer, die bei der Entfernung des Benutzers wieder gelöscht wird.</para>
+<!--not in kde 4.4
+<para
+>The skeleton files for new users can be specified in the <guilabel
+>Sources
+</guilabel
+> tab.</para>
+-->
+<!--FIXME missing
+Password Policy tab 
+Times for password changes and expiration of passwords and accounts
+
+Files page
+Location of user and group data files
+shadow passwords
+
+LDAP page preferences for users in a local network 
+Connection tab
+Settings tabs
+Samba tabs
+  -->
+</sect1>
+</chapter>
+
+<chapter id="credits">
+<title
+>Danksagungen und Lizenz</title>
+
+<para
+>&kuser;</para>
+
+<para
+>Programm-Copyright 1997-2000 Denis Pershin <email
+>dyp@inetlab.com</email
+></para>
+
+<para
+>Dokumentation-Copyright 1997-2000 Denis Pershin <email
+>dyp@inetlab.com</email
+></para>
+<para
+>Dokumentation Copyright 2000 &Matt.Johnston;&Matt.Johnston.mail;</para>
+<para
+>Deutsche Übersetzung Frank Schütte <email
+>F.Schuette@t-online.de</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+&documentation.index; 
+
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

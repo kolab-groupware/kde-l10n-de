@@ -1,0 +1,328 @@
+# Stephan Johach <hunsum@gmx.de>, 2003, 2007.
+# Burkhard Lück <lueck@hube-lueck.de>, 2007, 2008, 2010, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdebugdialog\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: 2012-01-31 09:39+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:13
+#, no-c-format
+msgid "KDebugDialog"
+msgstr "KDebugDialog"
+
+#. Tag: author
+#: index.docbook:16
+#, no-c-format
+msgid "&David.Faure; &David.Faure.mail;"
+msgstr "&David.Faure; &David.Faure.mail;"
+
+#. Tag: trans_comment
+#: index.docbook:17
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Stephan</"
+"firstname><surname>Kulow</surname><affiliation><address><email>coolo@kde."
+"org</email></address></affiliation><contrib>Deutsche Übersetzung</contrib></"
+"othercredit> <othercredit role=\"translator\"><firstname>Marco</"
+"firstname><surname>Wegner</"
+"surname><affiliation><address><email>mail@marcowegner.de</email></address></"
+"affiliation><contrib>Deutsche Übersetzung</contrib></othercredit>"
+
+#. Tag: date
+#: index.docbook:20
+#, no-c-format
+msgid "2011-12-20"
+msgstr "2011-12-20"
+
+#. Tag: releaseinfo
+#: index.docbook:21
+#, no-c-format
+msgid "1.0 &kde; 4.8"
+msgstr "1.0 &kde; 4.8"
+
+#. Tag: keyword
+#: index.docbook:24
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:25
+#, no-c-format
+msgid "KDebugdialog"
+msgstr "KDebugdialog"
+
+#. Tag: keyword
+#: index.docbook:26
+#, no-c-format
+msgid "Debug"
+msgstr "Debuggen"
+
+#. Tag: para
+#: index.docbook:31
+#, no-c-format
+msgid ""
+"&kdebugdialog; is a dialog box for managing diagnostic messages at runtime. "
+"It features a simple and a full mode."
+msgstr ""
+"&kdebugdialog; ist ein Programm, um Diagnose-Nachrichten zur Laufzeit "
+"einzustellen. Das Programm kann im einfachen und im erweiterten Modus "
+"ausgeführt werden."
+
+#. Tag: para
+#: index.docbook:33
+#, no-c-format
+msgid ""
+"In order to be able to make changes <guilabel>Disable all debug output</"
+"guilabel> has to be unchecked."
+msgstr ""
+"Um Einstellungen ändern zu können, muss <guilabel>Sämtliche Debug-Ausgaben "
+"deaktivieren</guilabel> abgewählt werden."
+
+#. Tag: term
+#: index.docbook:38
+#, no-c-format
+msgid "Simple mode"
+msgstr "Einfacher Modus"
+
+#. Tag: para
+#: index.docbook:40
+#, no-c-format
+msgid ""
+"If you simply start <command>kdebugdialog</command>, you will see a list of "
+"<quote>areas</quote>, that can be disabled or enabled. A <function>kDebug"
+"(area)</function> call in the code will show something in the debug output "
+"only if the area is enabled."
+msgstr ""
+"Wenn Sie <command>kdebugdialog</command> aufrufen, erscheint eine Liste von "
+"<quote>Bereichen</quote>, die entweder ein- oder ausgeschaltet werden "
+"können. Ein Aufruf von <function>kDebug(Bereich)</function> im Quelltext "
+"führt zu einer Debug-Ausgabe des Programms, wenn der betreffende Bereich "
+"eingeschaltet wurde."
+
+#. Tag: para
+#: index.docbook:45
+#, no-c-format
+msgid ""
+"Note that kWarning, kError and kFatal always appear, they are <emphasis>NOT</"
+"emphasis> controlled by this setting."
+msgstr ""
+"Beachten Sie, dass Aufrufe von kWarning, kError und kFatal immer zu einer "
+"Ausgabe führen, sie können <emphasis>nicht</emphasis> über diese "
+"Einstellungen kontrolliert werden."
+
+#. Tag: para
+#: index.docbook:48
+#, no-c-format
+msgid ""
+"Enter a matching string into the <guilabel>Search</guilabel> box at the top "
+"of the list, this allows you to filter the areas which are displayed in the "
+"list view. Use the buttons below the list to select or deselect all items in "
+"the view (the other areas are not effected) or change the debug output for a "
+"single item using the check box in front of it."
+msgstr ""
+"Geben Sie einen passenden Text in das Feld <guilabel>Suchen</guilabel> über "
+"der Listenansicht ein, damit können Bereiche zur Anzeige in der Liste "
+"gefiltert werden. Mit den beiden Knöpfen unterhalb der Liste können alle "
+"angezeigten Einträge aus- oder abgewählt werden, die Einstellung nicht "
+"angezeigter Einträge wird dadurch nicht beeinflusst. Um die Debug-Ausgabe "
+"einzelner Einträge zu ändern, benutzen Sie das Ankreuzfeld vor dem Eintrag."
+
+#. Tag: term
+#: index.docbook:60
+#, no-c-format
+msgid "Full mode"
+msgstr "Erweiterter Modus"
+
+#. Tag: para
+#: index.docbook:62
+#, no-c-format
+msgid ""
+"If you start <command>kdebugdialog</command> <option>--fullmode</option>, "
+"then for every severity level you can define separately what should be done "
+"with the diagnostic messages of that level, and the same for each debug area."
+msgstr ""
+"Rufen Sie  <command>kdebugdialog</command> mit der Option <option>--"
+"fullmode</option> auf, können Sie für jeden Schweregrad festlegen, was mit "
+"den Debug-Ausgabe dieser Stufe passieren soll. Dies können Sie natürlich für "
+"jeden Bereich einstellen."
+
+#. Tag: para
+#: index.docbook:67
+#, no-c-format
+msgid ""
+"In full mode, first you should select the debug area you are interested in "
+"from the list at the left of the dialog using the search box at the top of "
+"the list."
+msgstr ""
+"Im erweiterten Modus wählen Sie zunächst in der Liste links im Dialog "
+"mithilfe des Suchfelds über der Liste den Bereich aus, der für Sie "
+"interessant ist."
+
+#. Tag: para
+#: index.docbook:71
+#, no-c-format
+msgid "You may independently set the output for various types of messages:"
+msgstr "Sie können die Ausgabe für verschiedene Meldungstypen festlegen:"
+
+#. Tag: guilabel
+#: index.docbook:75
+#, no-c-format
+msgid "Information"
+msgstr "Information"
+
+#. Tag: guilabel
+#: index.docbook:76
+#, no-c-format
+msgid "Warning"
+msgstr "Warnung"
+
+#. Tag: guilabel
+#: index.docbook:77
+#, no-c-format
+msgid "Error"
+msgstr "Fehler"
+
+#. Tag: guilabel
+#: index.docbook:78
+#, no-c-format
+msgid "Fatal Error"
+msgstr "Fataler Fehler"
+
+#. Tag: para
+#: index.docbook:81
+#, no-c-format
+msgid "For each of these types, you can set the following:"
+msgstr "Für jeden Typ können Sie die folgenden Einstellungen vornehmen:"
+
+#. Tag: guilabel
+#: index.docbook:85
+#, no-c-format
+msgid "Output to:"
+msgstr "Ausgabe nach:"
+
+#. Tag: para
+#: index.docbook:87
+#, no-c-format
+msgid ""
+"In this Combobox, you can choose where the messages should be output. The "
+"choices are: <quote>File</quote>, <quote>Message Box</quote>, <quote>Shell</"
+"quote> (meaning stderr) and <quote>Syslog</quote>. Please do not direct "
+"fatal messages to syslog unless you are the system administrator yourself. "
+"The default is <quote>Shell</quote>."
+msgstr ""
+"In diesem Kombinationsfeld können Sie auswählen, wohin die Meldungen "
+"geschrieben werden sollen. Die Möglichkeiten sind: <quote>Datei</quote>, "
+"<quote>Nachrichten-Fenster</quote>, <quote>Shell</quote> (bedeutet hier "
+"stderr) und <quote>Systemprotokoll</quote>. Bitte leiten Sie Meldungen über "
+"fatale Fehler nicht in das Systemprotokoll um, wenn Sie nicht der "
+"Systemadministrator sind. Die Voreinstellung ist <quote>Shell</quote>."
+
+#. Tag: guilabel
+#: index.docbook:97
+#, no-c-format
+msgid "Filename:"
+msgstr "Dateiname:"
+
+#. Tag: para
+#: index.docbook:98
+#, no-c-format
+msgid ""
+"This is only enabled when you have chosen <quote>File</quote> as the output "
+"and provides the name of that file (which is interpreted as relative to the "
+"current folder). The default is <filename>kdebug.dbg</filename>."
+msgstr ""
+"Dateiname: Dieser ist nur von Bedeutung, wenn als Ausgabe <quote>Datei</"
+"quote> gewählt wurde. Die Eingabe hier wird relativ zum aktuellen Ordner "
+"interpretiert. Die Vorgabe ist <filename>kdebug.dbg</filename>."
+
+#. Tag: para
+#: index.docbook:106
+#, no-c-format
+msgid ""
+"Apart from this, you can also tick the check box <guilabel>Abort on fatal "
+"errors</guilabel>. In this case, if a diagnostic message with the severity "
+"level <computeroutput>KDEBUG_FATAL</computeroutput> is output, the "
+"application aborts with a SIGABRT after outputting the message."
+msgstr ""
+"Abgesehen davon können Sie auch das Feld <guilabel>Bei fatalen Fehlern "
+"abbrechen</guilabel> ankreuzen. In diesem Fall bricht die Anwendung mit dem "
+"Signal SIGABRT ab, nachdem eine Meldung mit dem Schweregrad "
+"<computeroutput>KDEBUG_FATAL</computeroutput> ausgegeben wurde."
+
+#. Tag: para
+#: index.docbook:116
+#, no-c-format
+msgid ""
+"When you close the dialog by pressing <guibutton>OK</guibutton>, your "
+"entries apply immediately and are saved in <filename>$<envar>KDEHOME</envar>/"
+"share/config/kdebugrc</filename>. When you press <guibutton>Cancel</"
+"guibutton>, your entries are discarded and the old ones are restored."
+msgstr ""
+"Beenden Sie das Dialogfenster durch Anklicken von <guibutton>OK</guibutton>, "
+"werden Ihre Änderungen sofort wirksam und in der Datei <filename>"
+"$<envar>KDEHOME</envar>/share/config/kdebugrc</filename> gespeichert. "
+"Klicken Sie auf <guibutton>Abbrechen</guibutton>, werden Ihre Änderungen "
+"vollständig verworfen und die ursprünglichen Einstellungen wiederhergestellt."
+
+#. Tag: para
+#: index.docbook:122
+#, no-c-format
+msgid "Credits to Kalle Dalheimer for the original version of &kdebugdialog;"
+msgstr "Dank geht an Kalle Dalheimer für die Orginalversion von &kdebugdialog;"
+
+#. Tag: trans_comment
+#: index.docbook:125
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Übersetzung Stephan Kulow<email>coolo@kde.org</email></"
+"para><para>Marco Wegner<email>mail@marcowegner.de</email> </para>"
+
+#~ msgid "2010-02-11"
+#~ msgstr "2010-02-11"
+
+#~ msgid "The &kdebugdialog; Handbook"
+#~ msgstr "Das Handbuch zu &kdebugdialog;"
+
+#~ msgid "This document describes &kdebugdialog;."
+#~ msgstr "Dieses Dokument beschreibt &kdebugdialog;."
+
+#~ msgid "What is &kdebugdialog;?"
+#~ msgstr "Was ist &kdebugdialog;?"
+
+#~ msgid "Area"
+#~ msgstr "Bereich"
+
+#~ msgid ""
+#~ "The areas which should only be output. Every message that is not "
+#~ "mentioned here will simply not be output (unless this field remains "
+#~ "empty, which is the default, and means that all messages should be "
+#~ "output). You can enter several areas separated by commas here, and you "
+#~ "can also use area ranges with the syntax start-end. Thus a valid entry "
+#~ "could be: 117,214-289,356-359,221. Do not use whitespaces."
+#~ msgstr ""
+#~ "Die Bereiche, für die eine Ausgabe erfolgen soll. Meldungen, die hier "
+#~ "nicht aufgeführt sind, werden nicht ausgegeben (es sei denn, dieses Feld "
+#~ "ist leer, was der Voreinstellung entspricht und bedeutet, dass alle "
+#~ "Meldungen ausgegeben werden). Hier können verschiedene Bereiche durch "
+#~ "Komma getrennt angegeben werden. Die Angabe zusammenhängender Bereiche "
+#~ "ist ebenso möglich, wenn sie im Format Start-Ende angegeben werden. "
+#~ "Gültige Angaben wären somit: 117,214-289,356-359,221. Beachten Sie: Die "
+#~ "Verwendung von Trennzeichen wie Leerzeichen, Tabulatoren oder "
+#~ "Zeilenumbruch ist nicht möglich."
+
+#~ msgid "&underFDL;"
+#~ msgstr "&underFDL;"

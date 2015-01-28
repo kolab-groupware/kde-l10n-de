@@ -1,0 +1,146 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE">
+]>
+<article id="solid-device-automounter" lang="&language;">
+<title
+>Wechselmedien</title>
+<articleinfo>
+<authorgroup>
+<author
+><firstname
+>Trever</firstname
+><surname
+>Fischer</surname
+></author>
+<othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2012-12-05</date>
+<releaseinfo
+>&kde; 4.12</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Systemeinstellungen</keyword>
+<keyword
+>Automatisches Einbinden</keyword>
+<keyword
+>Gerät</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>In diesem Dialog können Sie den automatischen Umgang mit Wechselmedien einrichten. </para>
+
+<para
+>Aktivieren Sie das automatische Einbinden von Wechselmedien in diesem Modul, müssen Sie das Miniprogramm „Geräteüberwachung“ oder die Seitenleiste im Dateimanager nicht verwenden, um Zugriff auf ein gerade eingestecktes Gerät zu erhalten. </para>
+
+<para
+>Oben im Dialog werden die globalen Einstellungen angezeigt, die für jedes einzelne Gerät in der Liste <guilabel
+>Vorrangige Geräte-Behandlung</guilabel
+> überschrieben werden können. Auf einem System mit nur einem Benutzer ist es sinnvoll, alle globalen Einstellungen zu aktivieren. </para>
+<variablelist>
+<varlistentry
+><term
+><guilabel
+>Automatisches Einbinden von Wechselmedien aktivieren</guilabel
+></term>
+<listitem
+><para
+>Wenn diese Einstellung nicht aktiviert ist, werden keinerlei Geräte automatisch eingebunden. Dabei ist es unerheblich, ob im Abschnitt <guilabel
+>Vorrangige Geräte-Behandlung</guilabel
+> besondere Einstellungen vorgenommen wurden. </para
+></listitem>
+</varlistentry>
+
+<varlistentry
+><term
+><guilabel
+>Nur Geräte automatisch einbinden, die schon zuvor eingebunden wurden</guilabel
+></term>
+<listitem
+><para
+>Wenn diese Einstellung aktiviert ist, wird &kde; nur Geräte automatisch einbinden, die auch schon zuvor einmal eingebunden waren. Dies könnte &eg;  ein USB-Mediaplayer sein, der zum Laden angeschlossen wurde. Wenn dabei auf keine Dateien zugegriffen wurde, wird &kde; den Player beim nächsten Anschließen nicht automatisch einbinden. Wenn allerdings einmal auf Dateien zugegriffen wurde, wird sich &kde; daran erinnern und den Inhalt des Players auch beim nächsten Mal verfügbar machen. </para
+></listitem>
+</varlistentry>
+
+<varlistentry
+><term
+><guilabel
+>Alle Wechselmedien beim Anmelden einbinden</guilabel
+></term>
+<listitem
+><para
+>Wenn bei Ihrer Anmeldung an  bereits Wechselmedien angeschlossen sind, wird &kde; den Inhalt der Geräte automatisch für Sie verfügbar machen. </para
+></listitem>
+</varlistentry>
+
+<varlistentry
+><term
+><guilabel
+>Wechselmedien beim Anschluss automatisch einbinden</guilabel
+></term>
+<listitem
+><para
+>Wenn diese Einstellung aktiviert ist, wird &kde; den Inhalt von Wechselmedien automatisch verfügbar machen, sobald sie angeschlossen werden. </para
+></listitem>
+</varlistentry>
+
+<varlistentry
+><term
+><guilabel
+>Vorrangige Geräte-Behandlung</guilabel
+></term>
+<listitem
+><para
+>Diese Liste zeigt alle Geräte, die &kde; bekannt sind. Wenn die Einstellung <guilabel
+>Automatisches Einbinden beim Anmelden</guilabel
+> aktiviert ist, wird das Gerät automatisch eingebunden, selbst wenn die Einstellung <guilabel
+>Alle Wechselmedien beim Anmelden einbinden</guilabel
+> nicht aktiviert ist. Das Gleiche gilt für die Einstellung <guilabel
+>Automatisches Einbinden beim Anschluss des Gerätes</guilabel
+></para>
+<para
+>Wenn die Einstellung <guilabel
+>Automatisches Einbinden von Wechselmedien aktivieren</guilabel
+> ausgeschaltet ist, ist die vorrangige Geräte-Behandlung inaktiv und es werden keine Geräte automatisch eingebunden </para
+></listitem>
+</varlistentry>
+
+<varlistentry
+><term
+><guibutton
+>Gerät vergessen</guibutton
+></term>
+<listitem
+><para
+>Durch Drücken dieses Knopfes vergisst &kde; die ausgewählten Geräte. Dies kann nützlich sein, wenn Sie die Funktion <guilabel
+>Nur Geräte automatisch einbinden, die schon zuvor eingebunden wurden</guilabel
+> verwenden. Wenn Sie &kde; ein Gerät vergessen lassen, wird es zukünftig nicht mehr automatisch durch diese Funktion eingebunden. </para
+></listitem>
+</varlistentry>
+
+</variablelist>
+
+ 
+</article>

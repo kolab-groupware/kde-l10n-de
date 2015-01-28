@@ -1,0 +1,681 @@
+#
+# Burkhard Lück <lueck@hube-lueck.de>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: 2013-08-08 09:54+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: apiGraphstructure.docbook:2
+#, no-c-format
+msgid "Scripting API for Graph Backend"
+msgstr "Skript-API für das Backend „Graph“"
+
+#. Tag: para
+#: apiGraphstructure.docbook:4
+#, no-c-format
+msgid ""
+"The data structure properties dialog allows access to configure settings "
+"specific to the Graph backend. There, with <guilabel>Graph Type</guilabel> "
+"you can select the type of the graph. The meaning of these types is as "
+"follows:"
+msgstr ""
+"Im Dialog <guilabel>Eigenschaften der Datenstruktur</guilabel> finden Sie "
+"die die Einstellungen für ein bestimmtes Graphen-Backend. Mit "
+"<guilabel>Graphentyp</guilabel> können Sie den Typ eines Graphen auswählen. "
+"Die Typen haben folgende Bedeutung:"
+
+#. Tag: para
+#: apiGraphstructure.docbook:9
+#, no-c-format
+msgid ""
+"<guilabel>Graph</guilabel>: Graph at which same edges (with respect to start "
+"and end points) may not exist multiple times."
+msgstr ""
+"<guilabel>Graph</guilabel>: Ein Graph, bei dem dieselben Kanten unter "
+"Berücksichtigung von Start- und Endpunkt nur einmal vorkommen dürfen."
+
+#. Tag: para
+#: apiGraphstructure.docbook:12
+#, no-c-format
+msgid ""
+"<guilabel>Multigraph</guilabel>: Graph at which same edges (with respect to "
+"start and end points) may exist multiple times."
+msgstr ""
+"<guilabel>Multigraph</guilabel>: Ein Graph, bei dem dieselben Kanten unter "
+"Berücksichtigung von Start- und Endpunkt auch mehrfach vorkommen dürfen."
+
+#. Tag: title
+#: apiGraphstructure.docbook:18
+#, no-c-format
+msgid "Graph Data Structure"
+msgstr "Graph-Datenstruktur"
+
+#. Tag: para
+#: apiGraphstructure.docbook:19
+#, no-c-format
+msgid ""
+"A graph objects holds the information of a data structure of type "
+"<quote>Graph</quote>."
+msgstr ""
+"Ein Graphenobjekt enthält Informationen über eine Datenstruktur vom Typ "
+"<quote>Graph</quote>."
+
+#. Tag: title
+#: apiGraphstructure.docbook:24 apiGraphstructure.docbook:163
+#: apiGraphstructure.docbook:314
+#, no-c-format
+msgid "Properties"
+msgstr "Eigenschaften"
+
+#. Tag: para
+#: apiGraphstructure.docbook:28
+#, no-c-format
+msgid "<emphasis>name</emphasis> :"
+msgstr "<emphasis>name</emphasis> :"
+
+#. Tag: para
+#: apiGraphstructure.docbook:31
+#, no-c-format
+msgid "The unique name of this data structure."
+msgstr "Der eindeutige Name dieser Datenstruktur."
+
+#. Tag: title
+#: apiGraphstructure.docbook:38 apiGraphstructure.docbook:204
+#: apiGraphstructure.docbook:355
+#, no-c-format
+msgid "Methods"
+msgstr "Methoden"
+
+#. Tag: term
+#: apiGraphstructure.docbook:42
+#, no-c-format
+msgid "nodes()"
+msgstr "nodes()"
+
+#. Tag: para
+#: apiGraphstructure.docbook:44
+#, no-c-format
+msgid "Return list all nodes in the graph."
+msgstr "Gibt eine Liste aller Knoten des Graphen zurück."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:45
+#, no-c-format
+msgid ""
+"<funcdef>array <function>nodes</function></funcdef> <paramdef></paramdef>"
+msgstr ""
+"<funcdef>array <function>nodes</function></funcdef> <paramdef></paramdef>"
+
+#. Tag: term
+#: apiGraphstructure.docbook:54
+#, no-c-format
+msgid "nodes(type)"
+msgstr "nodes(type)"
+
+#. Tag: para
+#: apiGraphstructure.docbook:56
+#, no-c-format
+msgid "Return list all nodes in the graph of specified type."
+msgstr "Gibt eine Liste aller Knoten des Graphen vom angegebenen Typ zurück."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:57
+#, no-c-format
+msgid ""
+"<funcdef>array <function>nodes</function></funcdef> <paramdef>int "
+"<parameter><replaceable>type</replaceable></parameter></paramdef>"
+msgstr ""
+"<funcdef>array <function>nodes</function></funcdef> <paramdef>int "
+"<parameter><replaceable>type</replaceable></parameter></paramdef>"
+
+#. Tag: term
+#: apiGraphstructure.docbook:66 apiGraphstructure.docbook:220
+#, no-c-format
+msgid "edges()"
+msgstr "edges()"
+
+#. Tag: para
+#: apiGraphstructure.docbook:68
+#, no-c-format
+msgid "Return list all edges in the graph."
+msgstr "Gibt eine Liste aller Kanten des Graphen zurück."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:69 apiGraphstructure.docbook:223
+#, no-c-format
+msgid ""
+"<funcdef>array <function>edges</function></funcdef> <paramdef></paramdef>"
+msgstr ""
+"<funcdef>array <function>edges</function></funcdef> <paramdef></paramdef>"
+
+#. Tag: term
+#: apiGraphstructure.docbook:78 apiGraphstructure.docbook:232
+#, no-c-format
+msgid "edges(type)"
+msgstr "edges(type)"
+
+#. Tag: para
+#: apiGraphstructure.docbook:80
+#, no-c-format
+msgid "Return list all edges in the graph of specified type."
+msgstr "Gibt eine Liste aller Kanten des Graphen vom angegebenen Typ zurück."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:81 apiGraphstructure.docbook:235
+#, no-c-format
+msgid ""
+"<funcdef>array <function>edges</function></funcdef> <paramdef>int "
+"<parameter><replaceable>type</replaceable></parameter></paramdef>"
+msgstr ""
+"<funcdef>array <function>edges</function></funcdef> <paramdef>int "
+"<parameter><replaceable>type</replaceable></parameter></paramdef>"
+
+#. Tag: term
+#: apiGraphstructure.docbook:90
+#, no-c-format
+msgid "createNode(type)"
+msgstr "createNode(type)"
+
+#. Tag: para
+#: apiGraphstructure.docbook:92
+#, no-c-format
+msgid ""
+"Create a new node of the specified type and return the created node. If the "
+"type is not registered, no node is created."
+msgstr ""
+"Erstellt einen neuen Knoten vom angegebenen Typ und gibt den erzeugten "
+"Knoten zurück. Ist der Typ nicht registriert, wird kein Knoten erzeugt."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:93
+#, no-c-format
+msgid ""
+"<funcdef>GraphNode <function>createNode</function></funcdef> <paramdef>int "
+"<parameter><replaceable>type</replaceable></parameter></paramdef>"
+msgstr ""
+"<funcdef>GraphNode <function>createNode</function></funcdef> <paramdef>int "
+"<parameter><replaceable>type</replaceable></parameter></paramdef>"
+
+#. Tag: term
+#: apiGraphstructure.docbook:102
+#, no-c-format
+msgid "createNode()"
+msgstr "createNode()"
+
+#. Tag: para
+#: apiGraphstructure.docbook:104
+#, no-c-format
+msgid "Create a new node of default type and return the created node."
+msgstr ""
+"Erstellt einen neuen Knoten vom Standardtyp und gibt den erzeugten Knoten "
+"zurück."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:105
+#, no-c-format
+msgid ""
+"<funcdef>GraphNode <function>createNode</function></funcdef> <paramdef></"
+"paramdef>"
+msgstr ""
+"<funcdef>GraphNode <function>createNode</function></funcdef> <paramdef></"
+"paramdef>"
+
+#. Tag: term
+#: apiGraphstructure.docbook:114
+#, no-c-format
+msgid "createEdge(from, to, type)"
+msgstr "createEdge(from, to, type)"
+
+#. Tag: para
+#: apiGraphstructure.docbook:116
+#, no-c-format
+msgid ""
+"Create an edge from node \"from\" to node \"to\" of the specified type and "
+"return the created edge. If the type is not registered, no edge is created."
+msgstr ""
+"Erstellt einen Kante vom Knoten „from“ zum Knoten „to“  vom angegebenen Typ "
+"und gibt die erzeugte Kante zurück. Ist der Typ nicht registriert, wird "
+"keine Kante erzeugt."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:117
+#, no-c-format
+msgid ""
+"<funcdef>GraphEdge <function>createEdge</function></funcdef> "
+"<paramdef>GraphNode <parameter><replaceable>from</replaceable></parameter></"
+"paramdef> <paramdef>GraphNode <parameter><replaceable>to</replaceable></"
+"parameter></paramdef> <paramdef>int <parameter><replaceable>type</"
+"replaceable></parameter></paramdef>"
+msgstr ""
+"<funcdef>GraphEdge <function>createEdge</function></funcdef> "
+"<paramdef>GraphNode <parameter><replaceable>from</replaceable></parameter></"
+"paramdef> <paramdef>GraphNode <parameter><replaceable>to</replaceable></"
+"parameter></paramdef> <paramdef>int <parameter><replaceable>type</"
+"replaceable></parameter></paramdef>"
+
+#. Tag: term
+#: apiGraphstructure.docbook:128
+#, no-c-format
+msgid "createEdge(from, to)"
+msgstr "createEdge(from, to)"
+
+#. Tag: para
+#: apiGraphstructure.docbook:130
+#, no-c-format
+msgid ""
+"Create an edge from node \"from\" to node \"to\" of default type and return "
+"the created edge."
+msgstr ""
+"Erstellt einen Kante vom Knoten „from“ zum Knoten „to“  als Standardtyp und "
+"gibt die erzeugte Kante zurück."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:131
+#, no-c-format
+msgid ""
+"<funcdef>GraphEdge <function>createEdge</function></funcdef> "
+"<paramdef>GraphNode <parameter><replaceable>from</replaceable></parameter></"
+"paramdef> <paramdef>GraphNode <parameter><replaceable>to</replaceable></"
+"parameter></paramdef>"
+msgstr ""
+"<funcdef>GraphEdge <function>createEdge</function></funcdef> "
+"<paramdef>GraphNode <parameter><replaceable>from</replaceable></parameter></"
+"paramdef> <paramdef>GraphNode <parameter><replaceable>to</replaceable></"
+"parameter></paramdef>"
+
+#. Tag: term
+#: apiGraphstructure.docbook:141
+#, no-c-format
+msgid "distances(from)"
+msgstr "distances(from)"
+
+#. Tag: para
+#: apiGraphstructure.docbook:143
+#, no-c-format
+msgid ""
+"Returns an array of shortest path lengths from this node to every other node "
+"in the graph."
+msgstr ""
+"Gibt ein Feld mit den kürzesten Pfadlängen von diesem Knoten zu jedem "
+"anderen Knoten im Graphen zurück."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:144
+#, no-c-format
+msgid ""
+"<funcdef>Array <function>distances</function></funcdef> <paramdef>GraphNode "
+"<parameter><replaceable>from</replaceable></parameter></paramdef>"
+msgstr ""
+"<funcdef>Array <function>distances</function></funcdef> <paramdef>GraphNode "
+"<parameter><replaceable>from</replaceable></parameter></paramdef>"
+
+#. Tag: title
+#: apiGraphstructure.docbook:157
+#, no-c-format
+msgid "Graph Node"
+msgstr "Graph-Knoten"
+
+#. Tag: para
+#: apiGraphstructure.docbook:158
+#, no-c-format
+msgid "A node is the data element of a graph."
+msgstr "Ein Knoten ist ein Datenelement eines Graphen."
+
+#. Tag: para
+#: apiGraphstructure.docbook:167 apiGraphstructure.docbook:317
+#, no-c-format
+msgid "<emphasis>width</emphasis> :"
+msgstr "<emphasis>width</emphasis> :"
+
+#. Tag: para
+#: apiGraphstructure.docbook:170
+#, no-c-format
+msgid "The size of this data element."
+msgstr "Die Größe dieses Datenelements."
+
+#. Tag: para
+#: apiGraphstructure.docbook:174
+#, no-c-format
+msgid "<emphasis>x</emphasis> :"
+msgstr "<emphasis>x</emphasis> :"
+
+#. Tag: para
+#: apiGraphstructure.docbook:177
+#, no-c-format
+msgid "The x-coordinate of this data element."
+msgstr "Die X-Koordinate dieses Datenelements."
+
+#. Tag: para
+#: apiGraphstructure.docbook:181
+#, no-c-format
+msgid "<emphasis>y</emphasis> :"
+msgstr "<emphasis>y</emphasis> :"
+
+#. Tag: para
+#: apiGraphstructure.docbook:184
+#, no-c-format
+msgid "The y-coordinate of this data element."
+msgstr "Die y-Koordinate dieses Datenelements."
+
+#. Tag: para
+#: apiGraphstructure.docbook:188
+#, no-c-format
+msgid "<emphasis>id</emphasis> :"
+msgstr "<emphasis>id</emphasis> :"
+
+#. Tag: para
+#: apiGraphstructure.docbook:191
+#, no-c-format
+msgid "The unique identifier of this data element."
+msgstr "Der eindeutige Bezeichner für dieses Datenelement."
+
+#. Tag: para
+#: apiGraphstructure.docbook:195 apiGraphstructure.docbook:345
+#, no-c-format
+msgid "<emphasis>color</emphasis> :"
+msgstr "<emphasis>color</emphasis> :"
+
+#. Tag: para
+#: apiGraphstructure.docbook:198
+#, no-c-format
+msgid "The color of this data element stated as hexadecimal value."
+msgstr "Die Farbe dieses Datenelements als Hexadezimalwert."
+
+#. Tag: term
+#: apiGraphstructure.docbook:208
+#, no-c-format
+msgid "neighbors()"
+msgstr "neighbors()"
+
+#. Tag: para
+#: apiGraphstructure.docbook:210
+#, no-c-format
+msgid ""
+"Return list all nodes connected to this node. This method respects if edges "
+"are directed."
+msgstr ""
+"Gibt eine Liste aller Knoten zurück, die mit diesem Knoten verbunden sind. "
+"Dabei wird berücksichtigt, ob Kanten gerichtet sind."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:211
+#, no-c-format
+msgid ""
+"<funcdef>array <function>neighbors</function></funcdef> <paramdef></paramdef>"
+msgstr ""
+"<funcdef>array <function>neighbors</function></funcdef> <paramdef></paramdef>"
+
+#. Tag: para
+#: apiGraphstructure.docbook:222
+#, no-c-format
+msgid "Return a list of all edges (incoming and outgoing) of this node."
+msgstr ""
+"Gibt eine Liste aller Kanten (eingehend und ausgehend) dieses Knotens zurück."
+
+#. Tag: para
+#: apiGraphstructure.docbook:234
+#, no-c-format
+msgid ""
+"Return a list of all edges (incoming and outgoing) of this node of a "
+"specified type."
+msgstr ""
+"Gibt eine Liste aller Kanten (eingehend und ausgehend) des angegebenen Typs "
+"dieses Knotens zurück."
+
+#. Tag: term
+#: apiGraphstructure.docbook:244
+#, no-c-format
+msgid "inEdges()"
+msgstr "inEdges()"
+
+#. Tag: para
+#: apiGraphstructure.docbook:246
+#, no-c-format
+msgid "Return a list of incoming edges of this node."
+msgstr "Gibt eine Liste von eingehenden Kanten dieses Knotens zurück."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:247
+#, no-c-format
+msgid ""
+"<funcdef>array <function>inEdges</function></funcdef> <paramdef></paramdef>"
+msgstr ""
+"<funcdef>array <function>inEdges</function></funcdef> <paramdef></paramdef>"
+
+#. Tag: term
+#: apiGraphstructure.docbook:256
+#, no-c-format
+msgid "inEdges(type)"
+msgstr "inEdges(type)"
+
+#. Tag: para
+#: apiGraphstructure.docbook:258
+#, no-c-format
+msgid "Return a list of all incoming edges of this node of a specified type."
+msgstr ""
+"Gibt eine Liste von eingehenden Kanten des angegebenen Typs zu diesem Knoten "
+"zurück."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:259
+#, no-c-format
+msgid ""
+"<funcdef>array <function>inEdges</function></funcdef> <paramdef>int "
+"<parameter><replaceable>type</replaceable></parameter></paramdef>"
+msgstr ""
+"<funcdef>array <function>inEdges</function></funcdef> <paramdef>int "
+"<parameter><replaceable>type</replaceable></parameter></paramdef>"
+
+#. Tag: term
+#: apiGraphstructure.docbook:268
+#, no-c-format
+msgid "outEdges()"
+msgstr "outEdges()"
+
+#. Tag: para
+#: apiGraphstructure.docbook:270
+#, no-c-format
+msgid "Return a list of all outgoing edges of this node."
+msgstr "Gibt eine Liste aller ausgehenden Kanten dieses Knotens zurück."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:271
+#, no-c-format
+msgid ""
+"<funcdef>array <function>outEdges</function></funcdef> <paramdef></paramdef>"
+msgstr ""
+"<funcdef>array <function>outEdges</function></funcdef> <paramdef></paramdef>"
+
+#. Tag: term
+#: apiGraphstructure.docbook:280
+#, no-c-format
+msgid "outEdges(type)"
+msgstr "outEdges(type)"
+
+#. Tag: para
+#: apiGraphstructure.docbook:282
+#, no-c-format
+msgid "Return a list of all outgoing edges of this node of a specified type."
+msgstr ""
+"Gibt eine Liste von ausgehenden Kanten des angegebenen Typs von diesem "
+"Knoten zurück."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:283
+#, no-c-format
+msgid ""
+"<funcdef>array <function>outEdges</function></funcdef> <paramdef>int "
+"<parameter><replaceable>type</replaceable></parameter></paramdef>"
+msgstr ""
+"<funcdef>array <function>outEdges</function></funcdef> <paramdef>int "
+"<parameter><replaceable>type</replaceable></parameter></paramdef>"
+
+#. Tag: term
+#: apiGraphstructure.docbook:292
+#, no-c-format
+msgid "edgesTo(target)"
+msgstr "edgesTo(target)"
+
+#. Tag: para
+#: apiGraphstructure.docbook:294
+#, no-c-format
+msgid "Return a list of all edges of this node to the specified node."
+msgstr ""
+"Gibt eine Liste aller Kanten des angegebenen Typs dieses Knotens zurück."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:295
+#, no-c-format
+msgid ""
+"<funcdef>array <function>edgesTo</function></funcdef> <paramdef>GraphNode "
+"<parameter><replaceable>target</replaceable></parameter></paramdef>"
+msgstr ""
+"<funcdef>array <function>edgesTo</function></funcdef> <paramdef>GraphNode "
+"<parameter><replaceable>target</replaceable></parameter></paramdef>"
+
+#. Tag: title
+#: apiGraphstructure.docbook:308
+#, no-c-format
+msgid "Graph Edge"
+msgstr "Graph-Kante"
+
+#. Tag: para
+#: apiGraphstructure.docbook:309
+#, no-c-format
+msgid ""
+"An Edge is the connection of two GraphNodes. Edges can be directed or "
+"undirected, depending on their type."
+msgstr ""
+"Eine Kante ist eine Verbindung zwischen zwei Knoten eines Graphen. Kanten "
+"können abhängig vom Typ gerichtet oder ungerichtet sein."
+
+#. Tag: para
+#: apiGraphstructure.docbook:320
+#, no-c-format
+msgid "The width of the connection."
+msgstr "Die Breite der Verbindung."
+
+#. Tag: para
+#: apiGraphstructure.docbook:324
+#, no-c-format
+msgid "<emphasis>directed</emphasis> :"
+msgstr "<emphasis>directed</emphasis> :"
+
+#. Tag: para
+#: apiGraphstructure.docbook:327
+#, no-c-format
+msgid ""
+"If true, the connection is directed. Otherwise is connection is undirected."
+msgstr ""
+"Falls wahr, ist die Verbindung gerichtet, andernfalls ist sie ungerichtet."
+
+#. Tag: para
+#: apiGraphstructure.docbook:331
+#, no-c-format
+msgid "<emphasis>from</emphasis> :"
+msgstr "<emphasis>from</emphasis> :"
+
+#. Tag: para
+#: apiGraphstructure.docbook:334
+#, no-c-format
+msgid "Start of the connection."
+msgstr "Der Start der Verbindung."
+
+#. Tag: para
+#: apiGraphstructure.docbook:338
+#, no-c-format
+msgid "<emphasis>to</emphasis> :"
+msgstr "<emphasis>to</emphasis> :"
+
+#. Tag: para
+#: apiGraphstructure.docbook:341
+#, no-c-format
+msgid "End of the connection"
+msgstr "Das Ende der Verbindung"
+
+#. Tag: para
+#: apiGraphstructure.docbook:348
+#, no-c-format
+msgid "ID of the connection type."
+msgstr "Kennung des Verbindungstyps."
+
+#. Tag: term
+#: apiGraphstructure.docbook:359
+#, no-c-format
+msgid "remove()"
+msgstr "remove()"
+
+#. Tag: para
+#: apiGraphstructure.docbook:361
+#, no-c-format
+msgid "Remove this connection."
+msgstr "Entfernt diese Verbindung."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:362
+#, no-c-format
+msgid ""
+"<funcdef>void <function>remove</function></funcdef> <paramdef></paramdef>"
+msgstr ""
+"<funcdef>void <function>remove</function></funcdef> <paramdef></paramdef>"
+
+#. Tag: term
+#: apiGraphstructure.docbook:371
+#, no-c-format
+msgid "add_property(name, value)"
+msgstr "add_property(name, value)"
+
+#. Tag: para
+#: apiGraphstructure.docbook:373
+#, no-c-format
+msgid "Add a new property to the connection."
+msgstr "Fügt der Verbindung eine neue Eigenschaft hinzu."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:374
+#, no-c-format
+msgid ""
+"<funcdef>void <function>add_property</function></funcdef> <paramdef>string "
+"<parameter><replaceable>name</replaceable></parameter></paramdef> "
+"<paramdef>string <parameter><replaceable>value</replaceable></parameter></"
+"paramdef>"
+msgstr ""
+"<funcdef>void <function>add_property</function></funcdef> <paramdef>string "
+"<parameter><replaceable>name</replaceable></parameter></paramdef> "
+"<paramdef>string <parameter><replaceable>value</replaceable></parameter></"
+"paramdef>"
+
+#. Tag: term
+#: apiGraphstructure.docbook:384
+#, no-c-format
+msgid "remove_property(name)"
+msgstr "remove_property(name)"
+
+#. Tag: para
+#: apiGraphstructure.docbook:386
+#, no-c-format
+msgid "Remove an existing property from the connection."
+msgstr "Entfernt eine bestehende Eigenschaft der Verbindung."
+
+#. Tag: funcprototype
+#: apiGraphstructure.docbook:387
+#, no-c-format
+msgid ""
+"<funcdef>void <function>remove_property</function></funcdef> "
+"<paramdef>string <parameter><replaceable>name</replaceable></parameter></"
+"paramdef>"
+msgstr ""
+"<funcdef>void <function>remove_property</function></funcdef> "
+"<paramdef>string <parameter><replaceable>name</replaceable></parameter></"
+"paramdef>"

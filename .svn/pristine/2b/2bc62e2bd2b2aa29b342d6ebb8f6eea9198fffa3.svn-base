@@ -1,0 +1,227 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       CVS -->
+  <!ENTITY i18n-pimsettingexporter "<application
+>PIM-Einstellungs-Export</application
+>">
+  <!ENTITY knode "<application
+>Knode</application
+>">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE"
+> 
+  <!ENTITY imap "<acronym
+>IMAP</acronym
+>">
+]>
+
+<article id="pimsettingexporter" lang="&language;">
+
+<articleinfo id="pimsettingexporterinfo">
+<title
+>Das Handbuch zu &i18n-pimsettingexporter;</title>
+
+<authorgroup>
+<author
+><personname
+> <firstname
+>Laurent</firstname
+> <surname
+>Montel</surname
+> </personname
+> &Laurent.Montel.mail; </author>
+<author
+><firstname
+>Scarlett</firstname
+> <surname
+>Clark</surname
+> <affiliation
+><address
+>&Scarlett.Clark.mail; </address
+></affiliation>
+</author>
+<othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2013</year>
+<holder
+>&Laurent.Montel;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2013-12-02</date>
+<releaseinfo
+>&kde; 4.12</releaseinfo>
+
+</articleinfo>
+
+
+<sect1 id="introduction">
+<title
+>Einführung</title>
+
+<para
+>Mit dem &i18n-pimsettingexporter; können Sie PIM-Einstellungen und lokale Ordner exportieren und importieren. Sie können Daten von folgenden Programmen suchen und wiederherstellen: <simplelist>
+<member
+>&kmail;</member>
+<member
+>&knotes;</member>
+<member
+>&knode;</member>
+<member
+>&akregator;</member>
+<member
+>&kaddressbook;</member>
+<member
+>&kalarm;</member>
+<member
+>&kjots;</member>
+</simplelist>
+</para>
+
+<sect2 id="using-kapp">
+<title
+>&i18n-pimsettingexporter; verwenden</title>
+<para
+>Sicherung ist eine wichtige Aufgabe für alle Benutzer. &i18n-pimsettingexporter; ist ein leistungsfähiges Programm zur Sicherung oder Übertragung Ihrer Einstellungen und E-Mails auf eine andere Installation. Mit &i18n-pimsettingexporter; können Sie ebenfalls Daten aus früheren Sicherungen wieder herstellen.</para>
+<para
+>Sie können <menuchoice
+><guimenu
+>Extras</guimenu
+><guimenuitem
+>&kmail;-Daten exportieren</guimenuitem
+></menuchoice
+> verwenden oder &i18n-pimsettingexporter; als eigenständiges Programm ausführen.</para>
+<screenshot>
+<screeninfo
+>&i18n-pimsettingexporter;-Dialog</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="pimsettingexporter.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>&i18n-pimsettingexporter;-Dialog</phrase>
+    </textobject>
+    <caption>
+      <para
+>&i18n-pimsettingexporter;-Dialog</para>
+    </caption>
+  </mediaobject>
+</screenshot>
+<para
+>Um eine Sicherung durchzuführen, <action
+>wählen Sie <menuchoice
+><guimenu
+>Datei</guimenu
+><guimenuitem
+>Daten sichern</guimenuitem
+></menuchoice
+></action
+>. Dann werden Sie aufgefordert, alle KDEPIM-Anwendungen zu schließen. <warning
+><para
+>Datenverlust ist möglich, wenn Sie nicht alle Anwendungen schließen.</para
+></warning
+>. Klicken Sie dann auf <guibutton
+>Ja</guibutton
+>, um weiter zu machen oder auf <guibutton
+>Nein</guibutton
+>, um abzubrechen.</para>
+<para
+>Als nächstes müssen Sie einen Ordner wählen und einen Dateinamen wie &eg; <replaceable
+>Meine E-Mails</replaceable
+> in das Feld <guilabel
+>Name</guilabel
+> eingeben. In der Voreinstellung werden die Daten in einem Archiv im Format <filename role="extension"
+>.zip</filename
+> gespeichert. Möchten Sie einen anderen Dateityp verwenden, deaktivieren Sie <guilabel
+>Dateierweiterung automatisch auswählen</guilabel
+> und geben Sie die gewünschte Erweiterung am Ende des Dateinamens an.</para>
+<para
+>Im nächsten Fenster können Sie auswählen, welche Daten Sie sichern möchten. In der Voreinstellung ist alles ausgewählt. <note
+> <para
+>Nur E-Mails aus Ihrem <quote
+>Lokalen Ordner</quote
+> können gesichert werden. Für &imap; können die Einstellungen auch gesichert und die Nachrichten beim Zurückspielen heruntergeladen werden. Möchten Sie E-Mails auf einem &imap;-Server sichern, sollten Sie den <ulink url="help:/akonadi_folderarchive_agent"
+>Agent zur Ordner-Archivierung</ulink
+> verwenden, um solche E-Mails in einen lokalen Ordner zu verschieben.</para>
+</note
+></para>
+<para
+>Dann wird im Fenster das Protokoll der Archivierung angezeigt. Überprüfen Sie, ob die Archivierung erfolgreich durchgeführt wurde und schließen dann das Fenster.</para>
+<para
+>Um Ihre gesicherten Daten wiederherzustellen, wählen Sie <menuchoice
+><guimenu
+>Datei</guimenu
+><guimenuitem
+>Daten zurückspielen ..</guimenuitem
+></menuchoice
+> im &i18n-pimsettingexporter;.</para>
+</sect2>
+</sect1>
+
+<sect1 id="credits">
+
+<title
+>Danksagungen und Lizenz</title>
+<para
+>&i18n-pimsettingexporter;</para>
+<para
+>Programm Copyright 2013 &Laurent.Montel; &Laurent.Montel.mail; </para>
+<para
+>Dokumentation Copyright &copy; 2013 &Laurent.Montel; &Laurent.Montel.mail; &Scarlett.Clark; &Scarlett.Clark.mail; </para>
+
+<para
+>Übersetzung Burkhard Lück<email
+>lueck@hube-lueck.de</email
+></para
+> 
+&underFDL; &underGPL; </sect1>
+
+<appendix id="installation">
+<title
+>Installation</title>
+
+<sect1 id="compilation">
+<title
+>Kompilierung und Installation</title>
+&install.compile.documentation; </sect1>
+
+</appendix>
+
+&documentation.index;
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

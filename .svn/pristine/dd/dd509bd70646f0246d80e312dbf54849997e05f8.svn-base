@@ -1,0 +1,400 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2010, 2011.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeinit4_man-kdeinit4.8\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:13+0000\n"
+"PO-Revision-Date: 2011-07-13 11:55+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdelibs/doc/kdeinit4/man-kdeinit4.8."
+"docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 876650\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: man-kdeinit4.8.docbook:9
+#, no-c-format
+msgid "&kde; User's Manual"
+msgstr "&kde;-Benutzerhandbuch"
+
+#. Tag: author
+#: man-kdeinit4.8.docbook:10
+#, no-c-format
+msgid "<firstname>Waldo</firstname> <surname>Bastian</surname>"
+msgstr "<firstname>Waldo</firstname> <surname>Bastian</surname>"
+
+#. Tag: email
+#: man-kdeinit4.8.docbook:14
+#, no-c-format
+msgid "bastian@kde.org"
+msgstr "bastian@kde.org"
+
+#. Tag: author
+#: man-kdeinit4.8.docbook:18
+#, no-c-format
+msgid "<firstname>Mario</firstname> <surname>Weilguni</surname>"
+msgstr "<firstname>Mario</firstname> <surname>Weilguni</surname>"
+
+#. Tag: email
+#: man-kdeinit4.8.docbook:22
+#, no-c-format
+msgid "mweilguni@sime.com"
+msgstr "mweilguni@sime.com"
+
+#. Tag: author
+#: man-kdeinit4.8.docbook:26
+#, no-c-format
+msgid "<firstname>Lubos</firstname> <surname>Lunak</surname>"
+msgstr "<firstname>Lubos</firstname> <surname>Lunak</surname>"
+
+#. Tag: email
+#: man-kdeinit4.8.docbook:30
+#, no-c-format
+msgid "l.lunak@kde.org"
+msgstr "l.lunak@kde.org"
+
+#. Tag: date
+#: man-kdeinit4.8.docbook:34
+#, no-c-format
+msgid "2008-10-03"
+msgstr "2008-10-03"
+
+#. Tag: releaseinfo
+#: man-kdeinit4.8.docbook:35
+#, no-c-format
+msgid "0.01.01"
+msgstr "0.01.01"
+
+#. Tag: manvolnum
+#: man-kdeinit4.8.docbook:41
+#, no-c-format
+msgid "<manvolnum>8</manvolnum>"
+msgstr "<manvolnum>8</manvolnum>"
+
+#. Tag: refpurpose
+#: man-kdeinit4.8.docbook:46
+#, no-c-format
+msgid "&kde; process launcher."
+msgstr "&kde;-Prozess-Starter"
+
+#. Tag: title
+#: man-kdeinit4.8.docbook:50
+#, no-c-format
+msgid "Synopsis"
+msgstr "Synopsis"
+
+#. Tag: cmdsynopsis
+#: man-kdeinit4.8.docbook:52
+#, no-c-format
+msgid ""
+"<command>kdeinit4</command> <arg choice=\"opt\">--help</arg> <group> <arg>--"
+"no-fork</arg> <arg>--no-kded</arg> <arg>--suicide</arg> </group> <group> "
+"<arg>+programs</arg> <arg>programs</arg> </group>"
+msgstr ""
+"<command>kdeinit4</command> <arg choice=\"opt\">--help</arg> <group> <arg>--"
+"no-fork</arg> <arg>--no-kded</arg> <arg>--suicide</arg> </group> <group> "
+"<arg>+programs</arg> <arg>programs</arg> </group>"
+
+#. Tag: title
+#: man-kdeinit4.8.docbook:70
+#, no-c-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:72
+#, no-c-format
+msgid ""
+"kdeinit4 is a process launcher somewhat similar to the famous <command>init</"
+"command> used for booting UNIX. It executes &kde; programs and kdeinit "
+"loadable modules (KLMs) starting them more efficiently."
+msgstr ""
+"kdeinit4 ist ein Prozess-Starter, ähnlich dem Programm <command>init</"
+"command> zum Starten von UNIX. Es führt &kde;-Programme und ladbare kdeinit-"
+"Module (KLMs) auf effiziente Weise aus."
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:77
+#, no-c-format
+msgid ""
+"Using kdeinit4 to launch &kde; applications makes starting a typical &kde; "
+"application a couple times faster and reduces memory consumption by a "
+"substantial amount."
+msgstr ""
+"Wenn Sie kdeinit4 zum Starten von &kde;-Anwendungen verwenden, wird der "
+"Anwendungsstart um ein vielfaches Beschleunigt und der Speicherverbrauch "
+"stark vermindert."
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:81
+#, no-c-format
+msgid ""
+"kdeinit4 is linked against all libraries a standard &kde; application needs. "
+"With this technique, starting an application becomes much faster because now "
+"only the application itself needs to be linked whereas otherwise both the "
+"application as well as all the libaries it uses need to be linked."
+msgstr ""
+"kdeinit4 ist mit allen Bibliotheken verlinkt, die eine typische &kde;-"
+"Anwendung benötigt. Mit dieser Technik ist es möglich, den Anwendungsstart "
+"um ein Vielfaches zu beschleunigen, weil nun nur noch die Anwendung selbst "
+"verlinkt werden muss und nicht mehr alle benötigten Bibliotheken."
+
+#. Tag: title
+#: man-kdeinit4.8.docbook:90
+#, no-c-format
+msgid "Disadvantages"
+msgstr "Nachteile"
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:92
+#, no-c-format
+msgid ""
+"The process name of applications started via kdeinit4 is \"kdeinit4\". This "
+"problem can be corrected to a degree by changing the application name as "
+"shown by <command>ps</command>. However, applications like <command>killall</"
+"command> will only see kdeinit4 as the process name. To workaround this, use "
+"<command>kdekillall</command> (from kdesdk/scripts) for applications started "
+"via kdeinit4."
+msgstr ""
+"Der Prozessname von allen Anwendungen, die mit kdeinit4 gestartet werden, "
+"lautet einheitlich <quote>kdeinit4</quote>. Dieses Problem kann teils "
+"behoben werden, indem man den Anwendungsnamen ändert, so wie er von "
+"<command>ps</command> angezeigt wird. Jedoch werden Werkzeuge wie "
+"<command>killall</command> weiterhin nur kdeinit4 als Prozessname sehen. Um "
+"diesem Problem zu begegnen, können Sie das Proramm <command>kdekillall</"
+"command> aus kdesdk/scripts verwenden, um von kdeinit4 gestartete "
+"Anwendungen zu beenden."
+
+#. Tag: title
+#: man-kdeinit4.8.docbook:104
+#, no-c-format
+msgid "Options"
+msgstr "Optionen"
+
+#. Tag: option
+#: man-kdeinit4.8.docbook:109
+#, no-c-format
+msgid "--help"
+msgstr "--help"
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:111
+#, no-c-format
+msgid "Show help about options"
+msgstr "Hilfe zu verfügbaren Optionen anzeigen."
+
+#. Tag: option
+#: man-kdeinit4.8.docbook:118
+#, no-c-format
+msgid "--no-fork"
+msgstr "--no-fork"
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:120
+#, no-c-format
+msgid "Do not fork, i.e. do not exit until all the executed programs ends"
+msgstr ""
+"Stellt das Programm nicht in den Hintergrund. D. h. es wird nicht beendet, "
+"solange noch ausgeführte Programme ausgeführt werden."
+
+#. Tag: option
+#: man-kdeinit4.8.docbook:125
+#, no-c-format
+msgid "--no-kded"
+msgstr "--no-kded"
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:127
+#, no-c-format
+msgid "Do not start kded"
+msgstr "kded nicht starten"
+
+#. Tag: option
+#: man-kdeinit4.8.docbook:132
+#, no-c-format
+msgid "--suicide"
+msgstr "--suicide"
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:134
+#, no-c-format
+msgid "Terminate when no KDE applications are left running"
+msgstr ""
+"Beendet sich automatisch selbst, wenn keine weiteren KDE-Programme mehr "
+"ausgeführt werden."
+
+#. Tag: option
+#: man-kdeinit4.8.docbook:141
+#, no-c-format
+msgid "+programs"
+msgstr "+programs"
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:143
+#, no-c-format
+msgid "runs the programs handling requests"
+msgstr "Führt das Programm aus, und wird dabei Anfragen bearbeiten."
+
+#. Tag: option
+#: man-kdeinit4.8.docbook:150
+#, no-c-format
+msgid "programs"
+msgstr "programs"
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:152
+#, no-c-format
+msgid "runs the programs without handling requests"
+msgstr "Führt das Programm aus, ohne Anfragen zu bearbeiten."
+
+#. Tag: title
+#: man-kdeinit4.8.docbook:163
+#, no-c-format
+msgid "Usage"
+msgstr "Benutzung"
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:164
+#, no-c-format
+msgid ""
+"A standard way to run this program is by simply specifying the following "
+"command at the prompt <userinput><command>kdeinit4</command> program</"
+"userinput> or <userinput><command>kdeinit4</command> +program </userinput>"
+msgstr ""
+"Ein Standard-Aufruf für dieses Programm sieht so aus: "
+"<userinput><command>kdeinit4</command> program</userinput> oder "
+"<userinput><command>kdeinit4</command> +program</userinput>."
+
+#. Tag: title
+#: man-kdeinit4.8.docbook:184
+#, no-c-format
+msgid "Files"
+msgstr "Dateien"
+
+#. Tag: filename
+#: man-kdeinit4.8.docbook:188
+#, no-c-format
+msgid "/tmp/kde-$USER/kdeinit4_$INSTANCE"
+msgstr "/tmp/kde-$USER/kdeinit4_$INSTANCE"
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:190
+#, no-c-format
+msgid "<para>...</para>"
+msgstr "<para>...</para>"
+
+#. Tag: title
+#: man-kdeinit4.8.docbook:198
+#, no-c-format
+msgid "Environment Variables"
+msgstr "Umgebungsvariablen"
+
+#. Tag: term
+#: man-kdeinit4.8.docbook:202
+#, no-c-format
+msgid "$<envar>HOME</envar>"
+msgstr "$<envar>HOME</envar>"
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:204
+#, no-c-format
+msgid "Specifies the home directory of the current user"
+msgstr "Gibt den persönlichen Ordner des aktuellen Benutzers an."
+
+#. Tag: term
+#: man-kdeinit4.8.docbook:209
+#, no-c-format
+msgid "$<envar>KDE_HOME_READONLY</envar>"
+msgstr "$<envar>KDE_HOME_READONLY</envar>"
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:211
+#, no-c-format
+msgid "Specifies if the home directory of the current user is read only"
+msgstr ""
+"Gibt an, ob der persönliche Ordner des aktuellen Benutzers nur lesbar ist."
+
+#. Tag: term
+#: man-kdeinit4.8.docbook:216
+#, no-c-format
+msgid "$<envar>KDE_IS_PRELINKED</envar>"
+msgstr "$<envar>KDE_IS_PRELINKED</envar>"
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:218
+#, no-c-format
+msgid "If set, tells kdeinit4 that the &kde; programs are pre-linked."
+msgstr ""
+"Mit Hilfe dieser Variable wird kdeinit4 darüber informiert, dass &kde;-"
+"Programme vor-verlinkt sind."
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:219
+#, no-c-format
+msgid ""
+"(Prelinking is a process that allows you to speed up the process of dynamic "
+"linking.)"
+msgstr ""
+"(Vor-Verlinken ist eine Technik, mit der das dynamische Verlinken von "
+"Prozessen enorm beschleunigt werden kann.)"
+
+#. Tag: term
+#: man-kdeinit4.8.docbook:224
+#, no-c-format
+msgid "$<envar>KDE_DISPLAY</envar>"
+msgstr "$<envar>KDE_DISPLAY</envar>"
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:226
+#, no-c-format
+msgid "If set, tells kdeinit4 that it is running on a &kde; desktop."
+msgstr ""
+"Diese Variable teilt kdeinit4 mit, dass es in einer &kde;-Umgebung "
+"ausgeführt wird."
+
+#. Tag: title
+#: man-kdeinit4.8.docbook:235
+#, no-c-format
+msgid "See Also"
+msgstr "Siehe auch"
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:236
+#, no-c-format
+msgid "kded, kdekillall"
+msgstr "kded, kdekillall"
+
+#. Tag: title
+#: man-kdeinit4.8.docbook:240
+#, no-c-format
+msgid "Bugs"
+msgstr "Fehler"
+
+#. Tag: para
+#: man-kdeinit4.8.docbook:241
+#, no-c-format
+msgid ""
+"There are probably tons of bugs. Use <ulink url=\"http://bugs.kde.org\">bugs."
+"kde.org</ulink> to report them."
+msgstr ""
+"Berichten Sie Fehler auf <ulink url=\"http://bugs.kde.org\">bugs.kde.org</"
+"ulink>."
+
+#~ msgid "Start all other &kde; programs and kdeinit loadable modules (KLMs)."
+#~ msgstr ""
+#~ "Startet alle weiteren &kde;-Programme und die ladbaren kdeinit-Module "
+#~ "(KLMs)."
+
+#~ msgid "kdeinit4"
+#~ msgstr "kdeinit4"
+
+#~ msgid "<date>2008-10-03</date> <releaseinfo>0.01.01</releaseinfo>"
+#~ msgstr "<date>13.10.2008</date> <releaseinfo>0.01.01</releaseinfo>"

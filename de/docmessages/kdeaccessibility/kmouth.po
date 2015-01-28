@@ -1,0 +1,1874 @@
+# Marco Wegner <mail@marcowegner.de>, 2003.
+# Burkhard Lück <lueck@hube-lueck.de>, 2004, 2005, 2006, 2009, 2010, 2012, 2013.
+# Stephan Johach <hunsum@gmx.de>, 2004, 2005.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005.
+# Frederik Schwarzer <mail@der-fred.de>, 2006, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kmouth\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:13+0000\n"
+"PO-Revision-Date: 2013-08-12 06:10+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:12
+#, no-c-format
+msgid "The &kmouth; Handbook"
+msgstr "Das Handbuch zu &kmouth;"
+
+#. Tag: author
+#: index.docbook:15
+#, no-c-format
+msgid "<firstname>Gunnar</firstname> <surname>Schmi Dt</surname>"
+msgstr "<firstname>Gunnar</firstname> <surname>Schmi Dt</surname>"
+
+#. Tag: email
+#: index.docbook:19
+#, no-c-format
+msgid "gunnar@schmi-dt.de"
+msgstr "gunnar@schmi-dt.de"
+
+#. Tag: trans_comment
+#: index.docbook:22
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Burkhard</"
+"firstname><surname>Lück</surname><affiliation><address><email>lueck@hube-"
+"lueck.de</email></address></affiliation><contrib>Übersetzung</contrib></"
+"othercredit>"
+
+#. Tag: holder
+#: index.docbook:28
+#, no-c-format
+msgid "Gunnar Schmi Dt"
+msgstr "Gunnar Schmi Dt"
+
+#. Tag: date
+#: index.docbook:34
+#, no-c-format
+msgid "2013-06-23"
+msgstr "2013-06-23"
+
+#. Tag: releaseinfo
+#: index.docbook:35
+#, no-c-format
+msgid "1.1.1 (&kde; 4.11)"
+msgstr "1.1.1 (&kde; 4.11)"
+
+#. Tag: para
+#: index.docbook:38
+#, no-c-format
+msgid ""
+"&kmouth; is an application that enables persons that cannot speak to let "
+"their computers speak."
+msgstr ""
+"&kmouth; ist ein Programm, mit dem stumme Benutzer ihren Computer für sich "
+"sprechen lassen können."
+
+#. Tag: keyword
+#: index.docbook:45
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:46
+#, no-c-format
+msgid "kdeaccesibility"
+msgstr "kdeaccesibility"
+
+#. Tag: keyword
+#: index.docbook:47
+#, no-c-format
+msgid "KMouth"
+msgstr "KMouth"
+
+#. Tag: keyword
+#: index.docbook:48
+#, no-c-format
+msgid "text-to-speech conversion"
+msgstr "Umwandlung von Text in Sprache "
+
+#. Tag: keyword
+#: index.docbook:49
+#, no-c-format
+msgid "mutual persons"
+msgstr "stumme Personen"
+
+#. Tag: title
+#: index.docbook:54
+#, no-c-format
+msgid "Introduction"
+msgstr "Einführung"
+
+#. Tag: para
+#: index.docbook:56
+#, no-c-format
+msgid ""
+"&kmouth; is a program that enables persons that cannot speak to let their "
+"computers speak. It includes a history of spoken sentences from which the "
+"user can select sentences to be re-spoken."
+msgstr ""
+"Mit dem Programm &kmouth; können stumme Benutzer den Computer für sich "
+"sprechen lassen. Der Benutzer kann aus einer Liste mit dem Gesprächsverlauf "
+"Sätze wählen, die erneut gesprochen werden sollen. "
+
+#. Tag: para
+#: index.docbook:61
+#, no-c-format
+msgid ""
+"Note that &kmouth; does not include speech synthesizer. Instead it requires "
+"a speech synthesizer installed in the system."
+msgstr ""
+"&kmouth; enthält keinen Sprachgenerator, dieser muss bereits im System "
+"installiert sein."
+
+#. Tag: title
+#: index.docbook:68
+#, no-c-format
+msgid "Using &kmouth;"
+msgstr "Arbeiten mit &kmouth;"
+
+#. Tag: title
+#: index.docbook:70
+#, no-c-format
+msgid "The First Start"
+msgstr "Der erste Start"
+
+#. Tag: para
+#: index.docbook:71
+#, no-c-format
+msgid ""
+"During the first start of &kmouth;, a wizard is displayed into which you can "
+"enter some basic configuration."
+msgstr ""
+"Beim ersten Start von &kmouth; erscheint ein Assistent für die "
+"Grundeinstellungen."
+
+#. Tag: screeninfo
+#: index.docbook:77
+#, no-c-format
+msgid "<screeninfo>Text-to-Speech Configuration</screeninfo>"
+msgstr "<screeninfo>Einrichtung der Sprachausgabe</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:83
+#, no-c-format
+msgid "<phrase>Text-to-Speech Configuration</phrase>"
+msgstr "<phrase>Einrichtung der Sprachausgabe</phrase>"
+
+#. Tag: para
+#: index.docbook:88
+#, no-c-format
+msgid ""
+"With the first page of the wizard you specify the command that shall later "
+"be used for the text-to-speech conversion. For more details look into the "
+"<link linkend=\"tts-config\">description of the configuration dialog.</link>"
+msgstr ""
+"Auf der ersten Seite des Assistenten geben Sie den Befehl ein, der später "
+"für die Sprachausgabe von Text verwendet wird. Weitere Einzelheiten finden "
+"Sie in der <link linkend=\"tts-config\">Beschreibung des Einrichtungsdialogs."
+"</link>"
+
+#. Tag: screeninfo
+#: index.docbook:96
+#, no-c-format
+msgid "<screeninfo>Initial Phrase Book</screeninfo>"
+msgstr "<screeninfo>Erstes Textpassagen-Buch</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:102
+#, no-c-format
+msgid "<phrase>Initial Phrase Book</phrase>"
+msgstr "<phrase>Erstes Textpassagen-Buch</phrase>"
+
+#. Tag: para
+#: index.docbook:107
+#, no-c-format
+msgid ""
+"With the second page you select which standard phrase books you need. From "
+"the phrase books you later can select often used phrases so that you do not "
+"need to type them in. Of course &kmouth; also has an edit dialog for the "
+"case that you later want to edit your phrase books."
+msgstr ""
+"Auf der zweiten Seite wählen Sie das Standard-Textpassagen-Buch. Aus den "
+"Textpassagen-Büchern können Sie oft verwendete Textpassagen wählen, ohne sie "
+"eintippen zu müssen. Die Textpassagen können natürlich bearbeitet werden."
+
+#. Tag: screeninfo
+#: index.docbook:115
+#, no-c-format
+msgid "<screeninfo>Word Completion</screeninfo>"
+msgstr "<screeninfo>Wortergänzung</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:121
+#, no-c-format
+msgid "<phrase>Word Completion</phrase>"
+msgstr "<phrase>Wortergänzung</phrase>"
+
+#. Tag: para
+#: index.docbook:126
+#, no-c-format
+msgid ""
+"With the third page you define the dictionary for a word completion. "
+"&kmouth; will parse the &kde; documentation of the chosen language in order "
+"to detect the frequentness of individual words. Optionally you can compare "
+"the word list to an OpenOffice.org dictionary in order to only add correctly "
+"spelled words to the word completion."
+msgstr ""
+"Auf der dritten Seite bestimmen Sie das Wörterbuch für die Wortergänzung. "
+"&kmouth; liest die KDE-Dokumentation der gewählten Sprache ein, um die "
+"Häufigkeit der einzelnen Worte zu bestimmen. Zusätzlich können Sie die "
+"Wortlisten mit einem OpenOffice.org-Wörterbuch abgleichen, damit nur richtig "
+"buchstabierte Worte in die Wortergänzung aufgenommen werden."
+
+#. Tag: title
+#: index.docbook:136
+#, no-c-format
+msgid "The Main Window"
+msgstr "Das Hauptfenster"
+
+#. Tag: para
+#: index.docbook:137
+#, no-c-format
+msgid ""
+"The main window of &kmouth; is fairly simple. It consists basically of an "
+"edit field into which you type your sentences (the lower white field in the "
+"screen shot) and a history of spoken sentences (the upper white field in the "
+"screen shot)."
+msgstr ""
+"Das Hauptfenster von &kmouth; ist übersichtlich und enthält im Wesentlichen "
+"ein Eingabefeld für die Tastatureingabe Ihrer Sätze (das untere weiße Feld "
+"im Bildschirmfoto) und einen Verlaufsspeicher der schon gesprochenen Sätze "
+"(das obere weiße Feld im Bildschirmfoto)."
+
+#. Tag: screeninfo
+#: index.docbook:145
+#, no-c-format
+msgid "<screeninfo>The main window of &kmouth;</screeninfo>"
+msgstr "<screeninfo>Das Hauptfenster von &kmouth;</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:151
+#, no-c-format
+msgid "<phrase>The main window of &kmouth;</phrase>"
+msgstr "<phrase>Das Hauptfenster von &kmouth;</phrase>"
+
+#. Tag: para
+#: index.docbook:156
+#, no-c-format
+msgid ""
+"Assuming that you have correctly <link linkend=\"config-dialog\">configured "
+"&kmouth;</link> you can use the edit field for entering sentences you want "
+"to hear. Once a sentence got spoken it will be appended to the history. From "
+"the history you can select sentences to be re-spoken."
+msgstr ""
+"Wenn Sie <link linkend=\"config-dialog\">&kmouth; richtig einrichtet</link> "
+"haben, können Sie im Eingabefeld die Sätze eingeben, die Sie hören wollen. "
+"Jeder gesprochene Satz wird an den Verlaufsspeicher angehängt. Sie können "
+"daraus Sätze auswählen, die erneut gesprochen werden sollen."
+
+#. Tag: para
+#: index.docbook:162
+#, no-c-format
+msgid ""
+"From the phrase books (located in the line below the tool bar) you can "
+"select often used phrases."
+msgstr ""
+"Im Textpassagen-Buch (in der Zeile unter der Werkzeugleiste) können Sie oft "
+"benutzte Textpassagen wählen."
+
+#. Tag: title
+#: index.docbook:168
+#, no-c-format
+msgid "The Configuration Dialog"
+msgstr "Der Einrichtungsdialog"
+
+#. Tag: para
+#: index.docbook:169
+#, no-c-format
+msgid ""
+"By using the menu entry <menuchoice> <guimenu>Settings</"
+"guimenu><guimenuitem>Configure &kmouth;...</guimenuitem> </menuchoice> you "
+"open the configuration dialog of &kmouth;. This dialog consists of the pages "
+"<guilabel>General Options</guilabel> with the two tabs "
+"<guilabel>Preferences</guilabel> and <guilabel>Text-to-Speech</guilabel>, "
+"the page <guilabel>Word Completion</guilabel> and the page <guilabel>Jovie "
+"Speech Service</guilabel>."
+msgstr ""
+"Mit dem Menü-Eintrag <menuchoice><guimenu>Einstellungen</"
+"guimenu><guimenuitem>&kmouth; einrichten ...</guimenuitem></menuchoice> "
+"öffnen Sie den Einstellungsdialog von &kmouth;. Dieser Dialog besteht aus "
+"der Seite <guilabel>Allgemeine Einstellungen</guilabel> mit den zwei "
+"Karteikarten <guilabel>Persönliche Einstellungen</guilabel> und "
+"<guilabel>Sprachausgabe</guilabel> und der Seite <guilabel>Wortergänzung</"
+"guilabel>."
+
+#. Tag: title
+#: index.docbook:180
+#, no-c-format
+msgid "The Preferences tab"
+msgstr "Die Karteikarte Persönliche Einstellungen"
+
+#. Tag: screeninfo
+#: index.docbook:183
+#, no-c-format
+msgid "The <guilabel>Preferences</guilabel> tab"
+msgstr "Die Karteikarte <guilabel>Persönliche Einstellungen</guilabel>"
+
+#. Tag: phrase
+#: index.docbook:192 index.docbook:238 index.docbook:304
+#, no-c-format
+msgid "Screen shot"
+msgstr "Bildschirmfoto"
+
+#. Tag: para
+#: index.docbook:197
+#, no-c-format
+msgid ""
+"The <guilabel>Preferences</guilabel> tab contains options that alter the "
+"behavior of &kmouth; in certain situations."
+msgstr ""
+"Auf der Karteikarte <guilabel>Persönliche Einstellungen</guilabel> kann das "
+"Verhalten von &kmouth; eingestellt werden."
+
+#. Tag: para
+#: index.docbook:201
+#, no-c-format
+msgid ""
+"With the first combo box, <guilabel>Selection of phrases in the phrase book:"
+"</guilabel>, you specify which action is triggered by typing the shortcut of "
+"a phrase or by selecting a phrase in the <guimenu>Phrase Book</guimenu> menu "
+"or in the phrase book bar."
+msgstr ""
+"Mit dem ersten Auswahlfeld <guilabel>Aktion nach der Auswahl einer "
+"Textpassage</guilabel> bestimmen Sie, welche Aktion durch das Tastenkürzel "
+"oder durch die Wahl einer Textpassage im Menü <guimenu>Textpassagen-Buch</"
+"guimenu> oder in der Leiste für Textpassagen-Bücher ausgelöst wird."
+
+#. Tag: para
+#: index.docbook:207
+#, no-c-format
+msgid ""
+"By selecting <guilabel>Speak Immediately</guilabel> the selected phrase gets "
+"immediately spoken and is entered into the history. If you select "
+"<guilabel>Insert Into Edit Field</guilabel> the selected phrase is just "
+"inserted into the edit field."
+msgstr ""
+"Mit der Auswahl von <guilabel>Sofort sprechen</guilabel> wird die gewählte "
+"Textpassage direkt gesprochen und zusätzlich in den Verlaufsspeicher "
+"eingefügt. Mit der Auswahl von <guilabel>In das Eingabefeld übertragen</"
+"guilabel> wird die gewählte Textpassage zunächst nur in das Eingabefeld "
+"eingetragen."
+
+#. Tag: para
+#: index.docbook:214
+#, no-c-format
+msgid ""
+"With the second combo box, <guilabel>Closing the phrase book edit window:</"
+"guilabel>, you specify whether the phrase book gets saved if you just close "
+"the phrase book edit window."
+msgstr ""
+"Mit dem zweiten Auswahlfeld <guilabel>Schließen des Bearbeitungsfensters für "
+"Textpassagen-Buch</guilabel> können Sie festlegen, ob das Textpassagen-Buch "
+"beim Schließen des Bearbeitungsfensters automatisch gespeichert werden soll."
+
+#. Tag: para
+#: index.docbook:219
+#, no-c-format
+msgid ""
+"By selecting <guilabel>Save Phrase Book</guilabel> the phrase book gets "
+"saved. If you select <guilabel>Discard changes</guilabel> the changes are "
+"discarded and the phrase book is not saved. If you select <guilabel>Ask "
+"Whether to Save</guilabel> &kmouth; will ask you whether it shall save the "
+"phrase book."
+msgstr ""
+"Mit der Auswahl von <guilabel>Textpassagen-Buch speichern</guilabel> wird "
+"das Buch gespeichert. Wenn Sie <guilabel>Änderungen verwerfen</guilabel> "
+"wählen, wird das Textpassagen-Buch nicht gespeichert. Wählen Sie "
+"<guilabel>Vor Speichern nachfragen</guilabel>, wird &kmouth; fragen, ob das "
+"Textpassagen-Buch gespeichert werden soll."
+
+#. Tag: title
+#: index.docbook:229
+#, no-c-format
+msgid "The Text-to-Speech tab"
+msgstr "Die Karteikarte Sprachausgabe "
+
+#. Tag: screeninfo
+#: index.docbook:232
+#, no-c-format
+msgid "The <guilabel>Text-to-Speech</guilabel> tab"
+msgstr "Die Karteikarte <guilabel>Sprachausgabe</guilabel>"
+
+#. Tag: para
+#: index.docbook:243
+#, no-c-format
+msgid ""
+"Into the edit field of the <guilabel>Text-to-Speech</guilabel> tab you enter "
+"the command for calling the speech synthesizer. With the combo box below the "
+"edit field you specify the character encoding that is used for passing the "
+"text to the speech synthesizer."
+msgstr ""
+"Im Eingabefeld der Karteikarte <guilabel>Sprachausgabe</guilabel> geben Sie "
+"den Befehl zum Aufruf des Sprachgenerators ein. Im Auswahlfeld unter dem "
+"Eingabefeld legen Sie die Zeichenkodierung fest, mit der Text an den "
+"Sprachgenerator weitergegeben wird. "
+
+#. Tag: para
+#: index.docbook:249
+#, no-c-format
+msgid ""
+"&kmouth; knows two ways of passing the text: If the command expects the text "
+"as standard input you select the check box."
+msgstr ""
+"&kmouth; kennt zwei Arten, den Text weiterzugeben. Wählen Sie das "
+"Ankreuzfeld, wenn der Text unverändert als Standardeingabe an den "
+"Sprachgenerator weitergegeben werden soll."
+
+#. Tag: para
+#: index.docbook:253
+#, no-c-format
+msgid ""
+"The other way is to pass the text as a parameter: Before calling the command "
+"&kmouth; replaces certain placeholders with actual content:"
+msgstr ""
+"Ist das Ankreuzfeld nicht ausgewählt, wird der Text als Parameter "
+"weitergegeben. Sie können dabei die folgenden Platzhalter verwenden:"
+
+#. Tag: entry
+#: index.docbook:260
+#, no-c-format
+msgid "Placeholder"
+msgstr "Platzhalter"
+
+#. Tag: entry
+#: index.docbook:260
+#, no-c-format
+msgid "Replaced with"
+msgstr "Ersetzt durch"
+
+#. Tag: token
+#: index.docbook:263
+#, no-c-format
+msgid "<token>%t</token>"
+msgstr "<token>%t</token>"
+
+#. Tag: entry
+#: index.docbook:264
+#, no-c-format
+msgid "The actual text that should be spoken"
+msgstr "Der aktuelle Text, der gesprochen werden soll"
+
+#. Tag: token
+#: index.docbook:266
+#, no-c-format
+msgid "<token>%f</token>"
+msgstr "<token>%f</token>"
+
+#. Tag: entry
+#: index.docbook:267
+#, no-c-format
+msgid ""
+"The name of a temporary file that contains the text that should be spoken"
+msgstr "Der Name der temporären Datei mit dem Text, der gesprochen werden soll"
+
+#. Tag: token
+#: index.docbook:270
+#, no-c-format
+msgid "<token>%l</token>"
+msgstr "<token>%l</token>"
+
+#. Tag: entry
+#: index.docbook:271
+#, no-c-format
+msgid ""
+"The language code associated with the current word completion dictionary"
+msgstr "Der Sprachcode für das aktuelle Wortergänzungsbuch "
+
+#. Tag: token
+#: index.docbook:274
+#, no-c-format
+msgid "<token>%%</token>"
+msgstr "<token>%%</token>"
+
+#. Tag: entry
+#: index.docbook:274
+#, no-c-format
+msgid "A percent sign"
+msgstr "Ein Prozentzeichen"
+
+#. Tag: para
+#: index.docbook:279
+#, no-c-format
+msgid ""
+"Of course the command for speaking texts is dependent on which speech "
+"synthesizer you use. Please look into the documentation of your speech "
+"synthesizer for the command for speaking texts. You can find examples for "
+"the command in the <link linkend=\"tts\">appendix</link>."
+msgstr ""
+"Natürlich hängt der Befehl zur Sprachausgabe von Ihrem Sprachgenerator ab. "
+"Diesen Befehl finden Sie in der Dokumentation zu Ihrem Sprachgenerator. "
+"Beispiele dafür finden Sie im <link linkend=\"tts\">Anhang</link>."
+
+#. Tag: para
+#: index.docbook:285
+#, no-c-format
+msgid ""
+"By selecting <guilabel>Use Jovie speech service if possible</guilabel> you "
+"tell &kmouth; first to try to send the text to the Jovie speech service. If "
+"this succeeds the other configuration entries on this tab are ignored. The "
+"Jovie speech service is a &kde; daemon which gives &kde; applications a "
+"standardized interface for speech synthesis and is currently developed in "
+"<acronym>Git</acronym>. It is safe to select this option even if Jovie is "
+"not installed."
+msgstr ""
+"Mit <guilabel>Möglichst Jovie als Sprachdienst verwenden</guilabel> wird "
+"&kmouth; als erstes versuchen, den Text zum Jovie-Sprachdienst "
+"weiterzugeben. Wenn das erfolgreich ist, werden die weiteren Einstellungen "
+"auf dieser Seite ignoriert. Der Jovie-Sprachdienst ist ein &kde;-Dämon, der "
+"&kde;-Anwendungen eine standardisierte Schnittstelle für Sprachausgabe zur "
+"Verfügung stellt und der zurzeit im <acronym>Git</acronym> weiter entwickelt "
+"wird. Die Wahl dieser Option ist sinnvoll, auch wenn Jovie nicht installiert "
+"ist."
+
+#. Tag: title
+#: index.docbook:295
+#, no-c-format
+msgid "The Word Completion page"
+msgstr "Die Seite Wortergänzung"
+
+#. Tag: screeninfo
+#: index.docbook:298
+#, no-c-format
+msgid "The <guilabel>Word Completion</guilabel> page"
+msgstr "Die Seite <guilabel>Wortergänzung</guilabel>"
+
+#. Tag: para
+#: index.docbook:309
+#, no-c-format
+msgid ""
+"The <guilabel>Word Completion</guilabel> page contains a list of "
+"dictionaries used for the word completion. (&kmouth; will display a combo "
+"box next to the edit field in the main window if this list contains more "
+"than one dictionary. You can use this combo box in order to select the "
+"dictionary that actually gets used for the word completion.)"
+msgstr ""
+"Die Seite <guilabel>Wortergänzung</guilabel> enthält eine Liste von "
+"Wörterbüchern für die Wortergänzung. Im Hauptfenster neben dem Eingabefeld "
+"zeigt &kmouth; ein Auswahlfeld an, wenn diese Liste mehr als ein Wörterbuch "
+"enthält. Mit diesem Auswahlfeld können Sie das aktuell benutzte Wörterbuch "
+"zur Wortergänzung wählen."
+
+#. Tag: para
+#: index.docbook:317
+#, no-c-format
+msgid ""
+"With the buttons on the right side of the page you can add and delete "
+"dictionaries, change the order of the dictionaries or export dictionaries to "
+"a file. With the edit field and the combo box below the list you can change "
+"the name and the language associated with the dictionary."
+msgstr ""
+"Mit den Knöpfen rechts auf der Seite können Sie Wörterbücher löschen oder "
+"hinzufügen, die Reihenfolge der Bücher ändern oder sie in eine Datei "
+"exportieren. Unterhalb der Liste können Sie im Eingabefeld den Namen und im "
+"Auswahlfeld die Sprache für das Wörterbuch einstellen."
+
+#. Tag: para
+#: index.docbook:324
+#, no-c-format
+msgid "When you add a new dictionary you may choose between several sources:"
+msgstr ""
+"Wenn Sie ein neues Wörterbuch einfügen, können Sie dafür mehrere Quellen "
+"benutzen:"
+
+#. Tag: para
+#: index.docbook:329
+#, no-c-format
+msgid "Create a new dictionary from the &kde; documentation"
+msgstr "Neues Wörterbuch aus der Dokumentation von &kde; erstellen"
+
+#. Tag: para
+#: index.docbook:330
+#, no-c-format
+msgid ""
+"If you use this source &kmouth; will ask you for the intended language and "
+"afterwards parse the &kde; documentation. The frequentness of the individual "
+"words is detect by simply counting the occurrences of each word. Optionally "
+"you can compare the word list to an OpenOffice.org dictionary in order to "
+"only add correctly spelled words to the new dictionary."
+msgstr ""
+"Wählen Sie für diese Quelle die gewünschte Sprache; &kmouth; liest daraufhin "
+"die &kde;-Dokumentation ein. Die Häufigkeit der einzelnen Worte wird einfach "
+"durch Abzählen des Auftretens ermittelt. Zusätzlich können Sie die Wortliste "
+"mit einem OpenOffice.org-Wörterbuch vergleichen, um nur richtig geschriebene "
+"Worte in das neue Wörterbuch einzufügen."
+
+#. Tag: para
+#: index.docbook:340
+#, no-c-format
+msgid "Create a new dictionary from a file"
+msgstr "Neues Wörterbuch aus einer Datei erstellen"
+
+#. Tag: para
+#: index.docbook:341
+#, no-c-format
+msgid ""
+"If you use this source &kmouth; will ask you for the intended file. You may "
+"either select an &XML; file, a standard text file or a file containing a "
+"word completion dictionary created by either &kmouth; or GOK (the GNOME On-"
+"screen Keyboard). If you select a standard text file or an &XML; file the "
+"frequentness of the individual words is detected by simply counting the "
+"occurrences of each word. Optionally you can compare the word list to an "
+"OpenOffice.org dictionary in order to only add correctly spelled words to "
+"the new dictionary."
+msgstr ""
+"Wählen Sie für diese Quelle die gewünschte Datei. Sie können entweder eine "
+"&XML;-Datei, eine Textdatei oder eine Wörterbuchdatei angeben, die entweder "
+"mit &kmouth; oder mit GOK (GNOME On-Screen-Keyboard) erzeugt wurde. Bei "
+"einer Textdatei oder einer &XML;-Datei wird die Häufigkeit der einzelnen "
+"Worte einfach durch Abzählen des Auftretens ermittelt. Zusätzlich können Sie "
+"die Wortliste mit einem OpenOffice.org-Wörterbuch vergleichen, um nur "
+"richtig geschriebene Worte in das neue Wörterbuch einzufügen."
+
+#. Tag: para
+#: index.docbook:354
+#, no-c-format
+msgid "Create a new dictionary from a folder"
+msgstr "Neues Wörterbuch aus einem Ordner erstellen"
+
+#. Tag: para
+#: index.docbook:355
+#, no-c-format
+msgid ""
+"If you use this source &kmouth; will ask you for the intended folder. "
+"&kmouth; will open all files in that folder and its subfolders. Each file is "
+"either loaded as a completion dictionary, as an &XML; file or as a standard "
+"text file. In the latter two cases the occurrences of each individual word "
+"in the file is counted. Optionally you can compare the word list to an "
+"OpenOffice.org dictionary in order to only add correctly spelled words to "
+"the new dictionary."
+msgstr ""
+"Wählen Sie für diese Quelle den gewünschten Ordner. &kmouth; öffnet alle "
+"Dateien in dem Ordner und in den Unterordnern. Jede Datei wird als "
+"Wörterbuch, als &XML;-Datei oder als Textdatei geladen. In den letzten "
+"beiden Fällen wird die Häufigkeit der Worte in den Dateien gezählt. "
+"Zusätzlich können Sie die Wortliste mit einem OpenOffice.org-Wörterbuch "
+"vergleichen, um nur richtig geschriebene Worte in das neue Wörterbuch "
+"einzufügen."
+
+#. Tag: para
+#: index.docbook:366
+#, no-c-format
+msgid "Merge dictionaries"
+msgstr "Wörterbücher zusammenführen"
+
+#. Tag: para
+#: index.docbook:367
+#, no-c-format
+msgid ""
+"You can use this option in order to merge the available dictionaries. "
+"&kmouth; will ask you which dictionaries should be merged and how the "
+"individual dictionaries should be weighted."
+msgstr ""
+"Mit dieser Option können Sie die verfügbaren Wörterbücher zusammenführen. "
+"&kmouth; fragt dann, welche Wörterbücher zusammengeführt, und wie diese "
+"gewichtet werden sollen."
+
+#. Tag: para
+#: index.docbook:374
+#, no-c-format
+msgid "Create an empty word list"
+msgstr "Leere Wortliste erstellen"
+
+#. Tag: para
+#: index.docbook:375
+#, no-c-format
+msgid ""
+"You can use this option in order to create a blank dictionary without any "
+"entries. As &kmouth; automatically adds newly typed words to the "
+"dictionaries it will learn your vocabulary with the time."
+msgstr ""
+"Mit dieser Option legen Sie ein neues, leeres Wörterbuch ohne Einträge an. "
+"Da &kmouth; neu eingegebene Worte automatisch in das Wörterbuch einfügt, "
+"erzeugen Sie im Laufe der Zeit ein Wörterbuch mit Ihren Vokabeln."
+
+#. Tag: title
+#: index.docbook:384
+#, no-c-format
+msgid "The Jovie Speech Service page"
+msgstr "Die Seite Jovie-Sprachdienst"
+
+#. Tag: para
+#: index.docbook:385
+#, no-c-format
+msgid ""
+"The configuration of the &kde; Speech Service is described in detail in the "
+"<ulink url=\"help:jovie\">Jovie Handbook</ulink>."
+msgstr ""
+"Die Einrichtung der Sprachausgabe von &kde; ist ausführlich im <ulink url="
+"\"help:jovie\">Handbuch zu Jovie</ulink> beschrieben."
+
+#. Tag: title
+#: index.docbook:390
+#, no-c-format
+msgid "The Phrase Book Edit Window"
+msgstr "Das Bearbeitungsfenster für Textpassagen-Bücher"
+
+#. Tag: para
+#: index.docbook:391
+#, no-c-format
+msgid ""
+"By using the menu entry <menuchoice> <guimenu>Phrase Books</"
+"guimenu><guimenuitem>Edit...</guimenuitem> </menuchoice> you open the phrase "
+"book edit window."
+msgstr ""
+"Mit dem Menüeintrag <menuchoice> <guimenu>Textpassagen-Buch</guimenu> "
+"<guimenuitem>Bearbeiten ...</guimenuitem></menuchoice> öffnen Sie das "
+"Bearbeitungsfenster für Textpassagen-Bücher."
+
+#. Tag: screeninfo
+#: index.docbook:400
+#, no-c-format
+msgid "The phrase book edit window"
+msgstr "Das Bearbeitungsfenster für Textpassagen-Bücher"
+
+#. Tag: phrase
+#: index.docbook:406
+#, no-c-format
+msgid "Screens hot"
+msgstr "Bildschirmfoto"
+
+#. Tag: para
+#: index.docbook:411
+#, no-c-format
+msgid ""
+"The main area of the phrase book edit window is divided into two parts. "
+"Within the upper part the phrase books are displayed in some tree structure."
+msgstr ""
+"Der Hauptbereich des Fensters zur Bearbeitung von Textpassagen-Büchern ist "
+"zweigeteilt. Im oberen Teil werden die Textpassagen-Bücher als Baumstruktur "
+"dargestellt."
+
+#. Tag: para
+#: index.docbook:416
+#, no-c-format
+msgid ""
+"Within the lower part you may modify a selected item. If you have selected a "
+"phrase you can modify the contents of the phrase as well as its shortcut. If "
+"you have selected a phrase book you can only change its name."
+msgstr ""
+"Im unteren Teil können Sie einen ausgewählten Eintrag bearbeiten. Wenn Sie "
+"eine Textpassage ausgewählt haben, können Sie die Textpassage oder das "
+"zugehörige Tastenkürzel ändern. Wenn Sie ein Textpassagen-Buch ausgewählt "
+"haben, können Sie nur dessen Namen ändern."
+
+#. Tag: para
+#: index.docbook:422
+#, no-c-format
+msgid ""
+"Actions like adding new phrases and phrase books and deleting selected "
+"phrases and phrase books can be done by selecting them in either the menu "
+"bar, the toolbar or a pop up menu."
+msgstr ""
+"Aktionen wie neue Textpassagen oder Bücher hinzufügen oder ausgewählte "
+"Textpassagen und Bücher löschen können Sie entweder über die Auswahl in der "
+"Menüleiste, in der Werkzeugleiste oder über ein Aufklappmenü erreichen."
+
+#. Tag: para
+#: index.docbook:427
+#, no-c-format
+msgid ""
+"You can change the order of the phrase books and phrases by dragging them to "
+"their new places or by using the arrow keys while the &Alt; key is pressed."
+msgstr ""
+"Die Reihenfolge von Textpassagen-Büchern oder Textpassagen können Sie durch "
+"Ziehen mit der Maus an die neue Stelle oder mit den Pfeiltasten und der "
+"&Alt;-Taste ändern."
+
+#. Tag: title
+#: index.docbook:437
+#, no-c-format
+msgid "Command Reference"
+msgstr "Befehlsreferenz"
+
+#. Tag: title
+#: index.docbook:440
+#, no-c-format
+msgid "Commands Within The Main Window"
+msgstr "Befehle im Hauptfenster"
+
+#. Tag: title
+#: index.docbook:442 index.docbook:644
+#, no-c-format
+msgid "The File Menu"
+msgstr "Das Menü Datei"
+
+#. Tag: menuchoice
+#: index.docbook:445
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>O</keycap></keycombo> </shortcut> "
+"<guimenu>File</guimenu> <guimenuitem>Open as History...</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo>&Ctrl;<keycap>O</keycap></keycombo> </shortcut> "
+"<guimenu>Datei</guimenu> <guimenuitem>Öffnen als Verlauf ...</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:452 index.docbook:624
+#, no-c-format
+msgid "Opens a text file into as history of spoken sentences."
+msgstr "Öffnet eine Textdatei als Verlaufsspeicher für die gesprochenen Sätze."
+
+#. Tag: menuchoice
+#: index.docbook:455
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>S</keycap></keycombo> </shortcut> "
+"<guimenu>File</guimenu> <guimenuitem>Save History As...</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo>&Ctrl;<keycap>S</keycap></keycombo> </shortcut> "
+"<guimenu>Datei</guimenu> <guimenuitem>Verlauf speichern unter ...</"
+"guimenuitem>"
+
+#. Tag: action
+#: index.docbook:462 index.docbook:633
+#, no-c-format
+msgid "Saves the history into a text file."
+msgstr "Speichert den Verlauf in eine Textdatei."
+
+#. Tag: menuchoice
+#: index.docbook:465
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>P</keycap></keycombo> </shortcut> "
+"<guimenu>File</guimenu> <guimenuitem>Print History...</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo>&Ctrl;<keycap>P</keycap></keycombo> </shortcut> "
+"<guimenu>Datei</guimenu> <guimenuitem>Verlauf drucken ...</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:472
+#, no-c-format
+msgid "Prints the history."
+msgstr "Druckt den Verlaufsspeicher."
+
+#. Tag: menuchoice
+#: index.docbook:475
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>Q</keycap></keycombo> </shortcut> "
+"<guimenu>File</guimenu> <guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> </"
+"shortcut><guimenu>Datei</guimenu><guimenuitem>Beenden</guimenuitem> "
+
+#. Tag: action
+#: index.docbook:482
+#, no-c-format
+msgid "Quits &kmouth;"
+msgstr "Beendet &kmouth;."
+
+#. Tag: title
+#: index.docbook:488 index.docbook:715
+#, no-c-format
+msgid "The Edit Menu"
+msgstr "Das Menü Bearbeiten"
+
+#. Tag: menuchoice
+#: index.docbook:491 index.docbook:718
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>X</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Cut</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>X</keycap></keycombo></"
+"shortcut> <guimenu>Bearbeiten</guimenu> <guimenuitem>Ausschneiden</"
+"guimenuitem>"
+
+#. Tag: action
+#: index.docbook:498
+#, no-c-format
+msgid ""
+"Cuts the selected section and puts it to the clipboard. If there is some "
+"text selected in the edit field it is placed it on the clipboard. Otherwise "
+"the selected sentences in the history (if any) are placed on the clipboard."
+msgstr ""
+"Der gewählte Text wird ausgeschnitten und in die Zwischenablage kopiert. "
+"Falls im Eingabefeld ein Textabschnitt ausgewählt ist, wird dieser "
+"verwendet, anderenfalls die ausgewählten Bereiche des Verlaufsspeichers."
+
+#. Tag: menuchoice
+#: index.docbook:506 index.docbook:730
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>C</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Copy</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>C</keycap></keycombo> </"
+"shortcut> <guimenu>Bearbeiten</guimenu><guimenuitem>Kopieren</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:513
+#, no-c-format
+msgid ""
+"Copies the selected section to the clipboard. If there is some text selected "
+"in the edit field it is copied to the clipboard. Otherwise the selected "
+"sentences in the history (if any) are copied to the clipboard."
+msgstr ""
+"Der gewählte Text wird in die Zwischenablage kopiert. Falls im Eingabefeld "
+"ein Textabschnitt ausgewählt ist, wird dieser verwendet, anderenfalls die "
+"ausgewählten Bereiche des Verlaufsspeichers. "
+
+#. Tag: menuchoice
+#: index.docbook:521 index.docbook:742
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>V</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Paste</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>V</keycap></keycombo> </"
+"shortcut> <guimenu>Bearbeiten</guimenu><guimenuitem>Einfügen</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:528
+#, no-c-format
+msgid ""
+"Pastes the clipboard contents at the current cursor position into the edit "
+"field."
+msgstr ""
+"Fügt den Inhalt der Zwischenablage an der aktuellen Cursor-Position in das "
+"Eingabefeld ein."
+
+#. Tag: menuchoice
+#: index.docbook:534
+#, no-c-format
+msgid "<guimenu>Edit</guimenu> <guimenuitem>Speak</guimenuitem>"
+msgstr "<guimenu>Bearbeiten</guimenu><guimenuitem>Sprechen</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:538
+#, no-c-format
+msgid ""
+"Speaks the currently active sentence(s). If there is some text in the edit "
+"field it is spoken. Otherwise the selected sentences in the history (if any) "
+"are spoken."
+msgstr ""
+"Der momentan aktive Satz wird gesprochen. Falls sich Text im Eingabefeld "
+"befindet, wird dieser verwendet, anderenfalls die ausgewählten Sätze des "
+"Verlaufsspeichers."
+
+#. Tag: title
+#: index.docbook:548
+#, no-c-format
+msgid "The Phrase Books Menu"
+msgstr "Das Menü Textpassagen-Bücher"
+
+#. Tag: menuchoice
+#: index.docbook:551
+#, no-c-format
+msgid "<guimenu>Phrase Books</guimenu> <guimenuitem>Edit...</guimenuitem>"
+msgstr ""
+"<guimenu>Textpassagen-Bücher</guimenu> <guimenuitem>Bearbeiten ...</"
+"guimenuitem>"
+
+#. Tag: para
+#: index.docbook:555
+#, no-c-format
+msgid ""
+"Opens the <link linkend=\"phrasebook-editor\">phrase book edit window</link>."
+msgstr ""
+"Öffnet das <link linkend=\"phrasebook-editor\">Bearbeitungsfenster für "
+"Textpassagen-Bücher</link>."
+
+#. Tag: para
+#: index.docbook:560
+#, no-c-format
+msgid ""
+"&kmouth; has the common &kde; <guimenu>Settings</guimenu> and <guimenu>Help</"
+"guimenu> menu items, for more information read the sections about the <ulink "
+"url=\"help:/fundamentals/ui.html#menus-settings\">Settings Menu</ulink> and "
+"<ulink url=\"help:/fundamentals/ui.html#menus-help\">Help Menu</ulink> of "
+"the &kde; Fundamentals."
+msgstr ""
+"&kmouth; benutzt die bekannten &kde;-Menüeinträge <guimenu>Einstellungen</"
+"guimenu> und <guimenu>Hilfe</guimenu>. Mehr dazu erfahren Sie in den "
+"Abschnitten zu den Menüs <ulink url=\"help:/fundamentals/ui.html#menus-"
+"settings\">Einstellungen</ulink> und <ulink url=\"help:/fundamentals/ui."
+"html#menus-help\">Hilfe</ulink> in den &kde;-Grundlagen."
+
+#. Tag: title
+#: index.docbook:569
+#, no-c-format
+msgid "The pop up menu of history entries"
+msgstr "Das Kontextmenü der Einträge im Verlaufsspeicher"
+
+#. Tag: guimenuitem
+#: index.docbook:573
+#, no-c-format
+msgid "Speak"
+msgstr "Sprechen"
+
+#. Tag: action
+#: index.docbook:575
+#, no-c-format
+msgid "The selected sentences are spoken."
+msgstr "Gibt die gewählten Sätze an den Sprachgenerator weiter."
+
+#. Tag: guimenuitem
+#: index.docbook:581 index.docbook:838
+#, no-c-format
+msgid "Delete"
+msgstr "Löschen"
+
+#. Tag: action
+#: index.docbook:583
+#, no-c-format
+msgid "The selected sentences are removed from the history."
+msgstr "Entfernt die ausgewählten Textpassagen aus dem Verlauf"
+
+#. Tag: guimenuitem
+#: index.docbook:589
+#, no-c-format
+msgid "<guimenuitem>Cut</guimenuitem>"
+msgstr "<guimenuitem>Ausschneiden</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:591
+#, no-c-format
+msgid "The selected sentences are deleted and placed on the clipboard."
+msgstr ""
+"Schneidet den ausgewählten Bereich aus und kopiert ihn in die "
+"Zwischenablage. "
+
+#. Tag: guimenuitem
+#: index.docbook:597
+#, no-c-format
+msgid "Copy"
+msgstr "Kopieren"
+
+#. Tag: action
+#: index.docbook:599
+#, no-c-format
+msgid "The selected sentences are copied to the clipboard."
+msgstr "Kopiert den ausgewählten Bereich in die Zwischenablage. "
+
+#. Tag: guimenuitem
+#: index.docbook:605
+#, no-c-format
+msgid "Select All Entries"
+msgstr "Alle Einträge auswählen"
+
+#. Tag: action
+#: index.docbook:607
+#, no-c-format
+msgid "All history entries are selected."
+msgstr "Wählt alle Einträge im Verlaufspeicher aus. "
+
+#. Tag: guimenuitem
+#: index.docbook:613
+#, no-c-format
+msgid "Deselect All Entries"
+msgstr "Auswahl aller Einträge aufheben"
+
+#. Tag: action
+#: index.docbook:615
+#, no-c-format
+msgid "All history entries are deselected."
+msgstr "Hebt die Auswahl aller Einträge im Verlaufspeicher auf."
+
+#. Tag: menuchoice
+#: index.docbook:620
+#, no-c-format
+msgid ""
+"<shortcut><keycombo>&Ctrl;<keycap>O</keycap></keycombo></shortcut> "
+"<guimenuitem>Open as History...</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo>&Ctrl;<keycap>O</keycap></keycombo></shortcut> "
+"<guimenuitem>Öffnen als Verlauf ...</guimenuitem>"
+
+#. Tag: menuchoice
+#: index.docbook:629
+#, no-c-format
+msgid ""
+"<shortcut><keycombo>&Ctrl;<keycap>S</keycap></keycombo></shortcut> "
+"<guimenuitem>Save History As...</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo>&Ctrl;<keycap>S</keycap></keycombo></shortcut> "
+"<guimenuitem>Verlauf speichern unter ...</guimenuitem>"
+
+#. Tag: title
+#: index.docbook:642
+#, no-c-format
+msgid "Commands within the phrase book edit window"
+msgstr "Befehle im Bearbeitungsfenster für Textpassagen-Bücher"
+
+#. Tag: menuchoice
+#: index.docbook:647
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>New Phrase</guimenuitem>"
+msgstr "<guimenu>Datei</guimenu> <guimenuitem>Neue Textpassage</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:651 index.docbook:777
+#, no-c-format
+msgid "Adds a new phrase."
+msgstr "Fügt eine neue Textpassage hinzu"
+
+#. Tag: menuchoice
+#: index.docbook:654
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>New Phrase Book</guimenuitem>"
+msgstr ""
+"<guimenu>Datei</guimenu> <guimenuitem>Neues Textpassagen-Buch</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:658 index.docbook:783
+#, no-c-format
+msgid "Adds a new phrase book."
+msgstr "Fügt eine neues Textpassagen-Buch hinzu"
+
+#. Tag: menuchoice
+#: index.docbook:661
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>S</keycap></keycombo> </shortcut> "
+"<guimenu>File</guimenu> <guimenuitem>Save</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo>&Ctrl;<keycap> S</keycap></keycombo></shortcut> "
+"<guimenu>Datei</guimenu> <guimenuitem>Speichern</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:668
+#, no-c-format
+msgid "Saves the phrase book."
+msgstr "Speichert das Textpassagen-Buch. "
+
+#. Tag: menuchoice
+#: index.docbook:671
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Import...</guimenuitem>"
+msgstr "<guimenu>Datei</guimenu> <guimenuitem>Importieren ...</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:675 index.docbook:789
+#, no-c-format
+msgid "Imports a file and adds its contents to the phrase book"
+msgstr ""
+"Importiert eine Datei und fügt ihren Inhalt in das Textpassagen-Buch ein"
+
+#. Tag: menuchoice
+#: index.docbook:678
+#, no-c-format
+msgid ""
+"<guimenu>File</guimenu> <guimenuitem>Import Standard Phrase Book</"
+"guimenuitem>"
+msgstr ""
+"<guimenu>Datei</guimenu> <guimenuitem>Textpassagen-Buch mit Standardtexten "
+"importieren</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:682 index.docbook:795
+#, no-c-format
+msgid "Imports a standard phrase book and adds its contents to the phrase book"
+msgstr ""
+"Importiert ein Textpassagen-Buch mit Standardtexten und fügt seinen Inhalt "
+"in das Textpassagen-Buch ein"
+
+#. Tag: menuchoice
+#: index.docbook:685
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Export...</guimenuitem>"
+msgstr "<guimenu>Datei</guimenu> <guimenuitem>Exportieren ...</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:689 index.docbook:801
+#, no-c-format
+msgid "Exports the currently selected phrase(s) or phrase book(s) to a file"
+msgstr ""
+"Exportiert die ausgewählten Textpassagen oder Textpassagen-Bücher in eine "
+"Datei"
+
+#. Tag: menuchoice
+#: index.docbook:692
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>P</keycap></keycombo> </shortcut> "
+"<guimenu>File</guimenu> <guimenuitem>Print...</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>P</keycap></keycombo></"
+"shortcut> <guimenu>Datei</guimenu><guimenuitem>Drucken ...</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:699
+#, no-c-format
+msgid "Prints the currently selected phrase(s) or phrase book(s)"
+msgstr "Druckt die ausgewählten Textpassagen oder Textpassagen-Bücher"
+
+#. Tag: menuchoice
+#: index.docbook:702
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>W</keycap></keycombo> </shortcut> "
+"<guimenu>File</guimenu> <guimenuitem>Close</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo>&Ctrl;<keycap> W</keycap></keycombo></shortcut> "
+"<guimenu>Datei</guimenu><guimenuitem>Schließen</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:709
+#, no-c-format
+msgid "Closes the window"
+msgstr "Schließt das Fenster"
+
+#. Tag: action
+#: index.docbook:725 index.docbook:810
+#, no-c-format
+msgid "Cuts the selected items and puts it to the clipboard."
+msgstr ""
+"Schneidet den gewählten Bereich aus und kopiert ihn in die Zwischenablage."
+
+#. Tag: action
+#: index.docbook:737 index.docbook:821
+#, no-c-format
+msgid "Copies the selected items to the clipboard."
+msgstr "Kopiert den ausgewählten Bereich in die Zwischenablage."
+
+#. Tag: action
+#: index.docbook:749
+#, no-c-format
+msgid "Pastes the clipboard contents into the phrase book."
+msgstr "Fügt den Inhalt der Zwischenablage wird in das Textpassagen-Buch ein."
+
+#. Tag: menuchoice
+#: index.docbook:754
+#, no-c-format
+msgid "<guimenu>Edit</guimenu> <guimenuitem>Delete</guimenuitem>"
+msgstr "<guimenu>Bearbeiten</guimenu> <guimenuitem>Löschen</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:758 index.docbook:840
+#, no-c-format
+msgid "Deletes the selected items."
+msgstr "Entfernt die ausgewählten Einträge."
+
+#. Tag: title
+#: index.docbook:766
+#, no-c-format
+msgid "The Help Menu"
+msgstr "Das Menü Hilfe"
+
+#. Tag: para
+#: index.docbook:767
+#, no-c-format
+msgid "The items in this menu are the same as in the main window."
+msgstr "Dieses Menü hat die gleichen Einträge wie im Hauptfenster."
+
+#. Tag: title
+#: index.docbook:771
+#, no-c-format
+msgid "The Pop up Menu"
+msgstr "Das Kontextmenü"
+
+#. Tag: guimenuitem
+#: index.docbook:775
+#, no-c-format
+msgid "New Phrase"
+msgstr "Neue Textpassage"
+
+#. Tag: guimenuitem
+#: index.docbook:781
+#, no-c-format
+msgid "New Phrase Book"
+msgstr "Neues Textpassagen-Buch"
+
+#. Tag: guimenuitem
+#: index.docbook:787
+#, no-c-format
+msgid "Import..."
+msgstr "Importieren ..."
+
+#. Tag: guimenuitem
+#: index.docbook:793
+#, no-c-format
+msgid "Import Standard Phrase Book"
+msgstr "Standard-Textpassagen-Buch importieren"
+
+#. Tag: guimenuitem
+#: index.docbook:799
+#, no-c-format
+msgid "Export..."
+msgstr "Exportieren ..."
+
+#. Tag: menuchoice
+#: index.docbook:804
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>X</keycap></keycombo> </shortcut> "
+"<guimenuitem>Cut</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo>&Ctrl;<keycap> X</keycap></keycombo></shortcut> "
+"<guimenuitem>Ausschneiden</guimenuitem>"
+
+#. Tag: menuchoice
+#: index.docbook:815
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>C</keycap></keycombo> </shortcut> "
+"<guimenuitem>Copy</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo>&Ctrl;<keycap>C</keycap></keycombo></shortcut> "
+"<guimenuitem>Kopieren</guimenuitem>"
+
+#. Tag: menuchoice
+#: index.docbook:826
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>V</keycap></keycombo> </shortcut> "
+"<guimenuitem>Paste</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo>&Ctrl;<keycap>V</keycap></keycombo></shortcut> "
+"<guimenuitem>Einfügen</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:832
+#, no-c-format
+msgid "Pastes the clipboard contents at this position into the phrase book."
+msgstr ""
+"Fügt den Inhalt der Zwischenablage an der aktuellen Cursor-Position in das "
+"Textpassagen-Buch ein."
+
+#. Tag: title
+#: index.docbook:851
+#, no-c-format
+msgid "Questions and Answers"
+msgstr "Fragen und Antworten"
+
+#. Tag: chapter
+#: index.docbook:851
+#, no-c-format
+msgid "&reporting.bugs; &updating.documentation;"
+msgstr "&reporting.bugs; &updating.documentation;"
+
+#. Tag: para
+#: index.docbook:859
+#, no-c-format
+msgid "I do not hear anything."
+msgstr "Ich höre gar nichts."
+
+#. Tag: para
+#: index.docbook:862
+#, no-c-format
+msgid ""
+"Most likely you did not configure correctly (or not at all?) the text-to-"
+"speech command. Use <menuchoice> <guimenu>Settings</"
+"guimenu><guimenuitem>Configure &kmouth;...</guimenuitem> </menuchoice>, open "
+"the page <guilabel>General Options</guilabel> and enter the command for "
+"speaking texts on the tab <guilabel>Text-to-Speech</guilabel>. (See section "
+"about the <link linkend=\"tts-config\">configuration dialog for the speech "
+"synthesizer</link> for more details.)"
+msgstr ""
+"Wahrscheinlich haben Sie den Befehl für die Sprachausgabe nicht richtig oder "
+"nicht vollständig eingegeben. Öffnen Sie <menuchoice><guimenu>Einstellungen</"
+"guimenu><guimenuitem>&kmouth; einrichten ...</guimenuitem></menuchoice>, "
+"öffnen Sie die Seite <guilabel>Allgemeine Einstellungen</guilabel> und geben "
+"Sie den Befehl für die Sprachausgabe auf der Karteikarte "
+"<guilabel>Sprachausgabe</guilabel> ein. (Siehe <link linkend= \"tts-config"
+"\">Einstellungsdialog für Sprachsynthesizer</link> zu weiteren Einzelheiten.)"
+
+#. Tag: title
+#: index.docbook:878
+#, no-c-format
+msgid "Credits and License"
+msgstr "Danksagungen und Lizenz"
+
+#. Tag: para
+#: index.docbook:880
+#, no-c-format
+msgid "&kappname;"
+msgstr "&kappname;"
+
+#. Tag: para
+#: index.docbook:883
+#, no-c-format
+msgid ""
+"Program copyright 2002-2004 Gunnar Schmi Dt <email>gunnar@schmi-dt.de</email>"
+msgstr ""
+"Programm Copyright 2002-2004 Gunnar Schmi Dt <email>gunnar@schmi-dt.de</"
+"email>"
+
+#. Tag: para
+#: index.docbook:886
+#, no-c-format
+msgid ""
+"Documentation copyright 2002-2004 Gunnar Schmi Dt <email>gunnar@schmi-dt.de</"
+"email>"
+msgstr ""
+"Copyright der Dokumentation 2002-2004 Gunnar Schmi Dt <email>gunnar@schmi-dt."
+"de</email>"
+
+#. Tag: trans_comment
+#: index.docbook:890
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Übersetzung Burkhard Lück <email>lueck@hube-lueck.de</email></para>"
+
+#. Tag: chapter
+#: index.docbook:890
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr "&underFDL; &underGPL;"
+
+#. Tag: title
+#: index.docbook:897
+#, no-c-format
+msgid "Examples for the text-to-speech configuration"
+msgstr "Beispiele für die Einstellung der Sprachausgabe"
+
+#. Tag: para
+#: index.docbook:901
+#, no-c-format
+msgid "Festival"
+msgstr "Festival"
+
+#. Tag: para
+#: index.docbook:904
+#, no-c-format
+msgid ""
+"Festival is a text-to-speech system written from the University of "
+"Edinburgh. It currently supports English, Spanish and Welsh speech. Its "
+"license allows to use and distribute Festival free of charge without "
+"restrictions."
+msgstr ""
+"Festival ist ein Sprachausgabe-System der Universität Edinburgh. Zurzeit "
+"werden nur Englisch, Spanisch und Walisisch unterstützt. Die Lizenz erlaubt "
+"es, Festival kostenlos zu benutzen und ohne Einschränkungen "
+"weiterzuverbreiten."
+
+#. Tag: para
+#: index.docbook:910
+#, no-c-format
+msgid ""
+"In order to create the command line example for the text-to-speech "
+"configuration we assume that Festival is installed in the directory "
+"<filename class=\"directory\">/usr/local/festival/</filename>. The command "
+"for speaking texts then is as follows:"
+msgstr ""
+"Um ein Beispiel der Befehlszeile für die Einstellung der Sprachausgabe zu "
+"zeigen, wird angenommen, dass Festival im Ordner <filename class=\"directory"
+"\"> /usr/local/festival</filename> installiert ist. Der Befehl zur "
+"Sprachausgabe lautet dann:"
+
+#. Tag: screen
+#: index.docbook:917
+#, no-c-format
+msgid ""
+"<userinput><command>/usr/local/festival/bin/festival</command> <option>--"
+"tts</option></userinput>"
+msgstr ""
+"<userinput><command>/usr/local/festival/bin/festival</command> <option>--"
+"tts</option></userinput>"
+
+#. Tag: para
+#: index.docbook:919
+#, no-c-format
+msgid ""
+"The option <guilabel>Send the data as standard input</guilabel> must be "
+"enabled."
+msgstr ""
+"Die Option <guilabel>Daten als Standardeingabe schicken</guilabel> muss "
+"eingeschaltet sein."
+
+#. Tag: para
+#: index.docbook:927
+#, no-c-format
+msgid "FreeTTS"
+msgstr "FreeTTS"
+
+#. Tag: para
+#: index.docbook:930
+#, no-c-format
+msgid ""
+"FreeTTS is a speech synthesizer written entirely in the &Java;™ programming "
+"language. It currently only has support for English pronounciation. Its "
+"license allows to use and distribute FreeTTS free of charge without "
+"restrictions."
+msgstr ""
+"FreeTTS ist ein in &Java; geschriebener Sprachgenerator. Zurzeit unterstützt "
+"er nur die englische Aussprache. Die Lizenz erlaubt es, FreeTTS kostenlos zu "
+"benutzen und ohne Einschränkungen weiterzuverbreiten."
+
+#. Tag: para
+#: index.docbook:936
+#, no-c-format
+msgid ""
+"In order to create the command line example for the text-to-speech "
+"configuration we assume that FreeTTS is installed in the directory <filename "
+"class=\"directory\">/usr/local/freetts/</filename>. The command for speaking "
+"texts then one of the following three examples:"
+msgstr ""
+"Um ein Beispiel für die Befehlszeile für die Einrichtung der Sprachausgabe "
+"zu zeigen, wird angenommen, dass FreeTTS im Ordner <filename class="
+"\"directory\"> /usr/local/freetts</filename> installiert ist. Die "
+"Sprachausgabe ist dann mit einem der drei folgenden Befehlsbeispiele möglich:"
+
+#. Tag: screen
+#: index.docbook:943
+#, no-c-format
+msgid ""
+"<userinput><command>java</command> <option>-jar /usr/local/freetts/lib/"
+"freetts.jar</option> <option>-text %t</option></userinput>"
+msgstr ""
+"<userinput><command>java</command> <option>-jar /usr/local/freetts/lib/"
+"freetts.jar</option> <option>-text %t</option></userinput>"
+
+#. Tag: screen
+#: index.docbook:946
+#, no-c-format
+msgid ""
+"<userinput><command>java</command> <option>-jar /usr/local/freetts/lib/"
+"freetts.jar</option> <option>-file %f</option></userinput>"
+msgstr ""
+"<userinput><command>java</command> <option>-jar /usr/local/freetts/lib/"
+"freetts.jar</option> <option>-file %f</option></userinput>"
+
+#. Tag: screen
+#: index.docbook:949
+#, no-c-format
+msgid ""
+"<userinput><command>java</command> <option>-jar /usr/local/freetts/lib/"
+"freetts.jar</option></userinput>"
+msgstr ""
+"<userinput><command>java</command> <option>-jar /usr/local/freetts/lib/"
+"freetts.jar</option></userinput>"
+
+#. Tag: para
+#: index.docbook:951
+#, no-c-format
+msgid ""
+"For the third example the option <guilabel>Send the data as standard input</"
+"guilabel> must be enabled. (This one is the preferred example for the use "
+"with FreeTTS.)"
+msgstr ""
+"Für das dritte Beispiel muss die Option <guilabel>Daten als Standardeingabe "
+"schicken</guilabel> eingeschaltet sein. (Dies ist das empfohlene Beispiel "
+"für die Anwendung von FreeTTS.)"
+
+#. Tag: para
+#: index.docbook:960
+#, no-c-format
+msgid "MBROLA"
+msgstr "MBROLA"
+
+#. Tag: para
+#: index.docbook:963
+#, no-c-format
+msgid ""
+"MBROLA is a speech synthesizer for a large number of languages. It converts "
+"a list of phonemes to a wave file, so you need some other tool to convert "
+"the text into a list of phonemes. The license of MBROLA allows to use and "
+"MBROLA free of charge for non-commercial, non-military applications."
+msgstr ""
+"MBROLA ist ein Sprachgenerator für viele Sprachen. Er wandelt eine Liste von "
+"Phonemen in eine Wavedatei um, daher brauchen Sie ein zusätzliches Programm, "
+"um den Text in Phoneme zu zerlegen. Die Lizenz erlaubt es, MBROLA kostenlos "
+"für nichtkommerzielle und nichtmilitärischen Anwendungen zu benutzen."
+
+#. Tag: para
+#: index.docbook:970
+#, no-c-format
+msgid ""
+"For our example we will use Hadifax in order to convert German texts into a "
+"list of phonemes suitable for MBROLA. We will assume that Hadifax and MBROLA "
+"are installed to <filename class=\"directory\">/usr/local/hadifax/</"
+"filename> and <filename class=\"directory\">/usr/local/mbrola/</filename>."
+msgstr ""
+"In unserem Beispiel wird Hadifax benutzt, um den deutschen Text in Phoneme "
+"für MBROLA umzuwandeln, unter der Annahme, dass Hadifax und MBROLA in "
+"<filename class=\"directory\">/usr/local/hadifax</filename> und <filename "
+"class=\"directory\">/usr/local/mbrola</filename> installiert sind."
+
+#. Tag: para
+#: index.docbook:977
+#, no-c-format
+msgid ""
+"Unfortunately Hadifax tends to swallow the last character of the text, so we "
+"may want to add an additional character to the text. The complete command is "
+"therefore more complex than the previous examples:"
+msgstr ""
+"Leider verschluckt Hadifax gerne das letzte Zeichen des Textes, sodass ein "
+"zusätzliches Zeichen angefügt werden muss. Der vollständige Befehl ist daher "
+"aufwendiger als in den anderen Beispielen:"
+
+#. Tag: screen
+#: index.docbook:983
+#, no-c-format
+msgid ""
+"<userinput>(<command>cat</command> <option>-</option>; <command>echo</"
+"command> <option>&quot; &quot;</option>) | <command>/usr/local/hadifax/"
+"txt2pho</command> <option>-f</option>\n"
+"          | <command>/usr/local/mbrola/mbrola</command> <option>-e</option>\n"
+"          <option>/usr/local/mbrola/de1/de1 - /tmp/tmp.wav</option>;\n"
+"          <command>paplay</command> <option>/tmp/tmp.wav</option>; "
+"<command>rm</command> <option>/tmp/tmp.wav</option></userinput>"
+msgstr ""
+"<userinput>(<command>cat</command> <option>-</option>; <command>echo</"
+"command> <option>&quot; &quot;</option>) | <command>/usr/local/hadifax/"
+"txt2pho</command> <option>-f</option>\n"
+"          | <command>/usr/local/mbrola/mbrola</command> <option>-e</option>\n"
+"          <option>/usr/local/mbrola/de1/de1 - /tmp/tmp.wav</option>;\n"
+"          <command>paplay</command> <option>/tmp/tmp.wav</option>; "
+"<command>rm</command> <option>/tmp/tmp.wav</option></userinput>"
+
+#. Tag: para
+#: index.docbook:985
+#, no-c-format
+msgid ""
+"All parts of this command need to be written into one line. The option "
+"<guilabel>Send the data as standard input</guilabel> must be enabled."
+msgstr ""
+"Alle Teile des Befehls müssen in eine Zeile geschrieben werden. Die Option "
+"<guilabel>Daten als Standardeingabe schicken</guilabel> muss eingeschaltet "
+"sein."
+
+#. Tag: para
+#: index.docbook:993
+#, no-c-format
+msgid "The &kde; Text-to-Speech Daemon"
+msgstr "Der &kde;-Dämon für Sprachausgabe"
+
+#. Tag: para
+#: index.docbook:996
+#, no-c-format
+msgid ""
+"The &kde; Text-to-Speech Daemon (Jovie) is a &kde; wide text-to-speech "
+"service which gives &kde; applications a standardized interface for speech "
+"synthesis and is currently developed in <acronym>Git</acronym>. It uses plug-"
+"ins in order to support various text-to-speech systems."
+msgstr ""
+"Der Sprachausgabe-Dämon von &kde; (Jovie) ist ein &kde;-weiter Sprachdienst, "
+"der allen &kde;-Anwendungen eine Standardschnittstelle für Sprachausgabe zur "
+"Verfügung stellt. Jovie wird zurzeit im <acronym>Git</acronym> "
+"weiterentwickelt. Er benutzt Module, um verschiedene Sprachausgabe-Systeme "
+"zu unterstützen."
+
+#. Tag: para
+#: index.docbook:1002
+#, no-c-format
+msgid ""
+"As the configuration of the speech synthesizer is done in Jovie the only "
+"&kmouth;-specific option you need to activate is <guilabel>Use Jovie speech "
+"service if possible</guilabel>."
+msgstr ""
+"Da die Einstellung des Sprachgenerators nur im Jovie erfolgt, müssen Sie nur "
+"<guilabel>Möglichst Jovie als Sprachdienst verwenden</guilabel> in &kmouth; "
+"einstellen."
+
+#. Tag: para
+#: index.docbook:1007
+#, no-c-format
+msgid ""
+"Of course you need to configure Jovie. You may do this with the "
+"configuration page <guilabel>Jovie Speech Service</guilabel> that is added "
+"to the configuration dialog of &kmouth; if Jovie is installed."
+msgstr ""
+"Zur Einstellung benutzen Sie die Seite <guilabel>Jovie-Sprachdienst</"
+"guilabel>, die im Einstellungsdialog von &kmouth; erscheint, wenn Jovie "
+"installiert ist."
+
+#. Tag: title
+#: index.docbook:1018
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#. Tag: title
+#: index.docbook:1021
+#, no-c-format
+msgid "How to obtain &kmouth;"
+msgstr "Woher Sie &kmouth; bekommen"
+
+#. Tag: sect1
+#: index.docbook:1021
+#, no-c-format
+msgid "&install.intro.documentation;"
+msgstr "&install.intro.documentation;"
+
+#. Tag: title
+#: index.docbook:1028
+#, no-c-format
+msgid "Requirements"
+msgstr "Systemanforderungen"
+
+#. Tag: para
+#: index.docbook:1030
+#, no-c-format
+msgid "In order to successfully use &kmouth;, you need a speech synthesizer."
+msgstr ""
+"Um &kmouth; erfolgreich einsetzen zu können, benötigen Sie einen "
+"Sprachsynthesizer."
+
+#. Tag: title
+#: index.docbook:1036
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr "Kompilierung und Installation"
+
+#. Tag: sect1
+#: index.docbook:1036
+#, no-c-format
+msgid "&install.compile.documentation;"
+msgstr "&install.compile.documentation;"
+
+#~ msgid "2010-09-15"
+#~ msgstr "2010-09-15"
+
+#~ msgid "<screeninfo>The <guilabel>Preferences</guilabel> tab</screeninfo>"
+#~ msgstr ""
+#~ "<screeninfo>Die Karteikarte <guilabel>Persönliche Einstellungen</"
+#~ "guilabel></screeninfo> "
+
+#~ msgid "<screeninfo>The <guilabel>Text-to-Speech</guilabel> tab</screeninfo>"
+#~ msgstr ""
+#~ "<screeninfo>Die Karteikarte <guilabel>Sprachausgabe</guilabel></"
+#~ "screeninfo>"
+
+#~ msgid ""
+#~ "<screeninfo>The <guilabel>Word Completion</guilabel> page</screeninfo>"
+#~ msgstr ""
+#~ "<screeninfo>Die Seite <guilabel>Wortergänzung</guilabel></screeninfo>"
+
+#~ msgid "The <guimenu>File</guimenu> Menu"
+#~ msgstr "Das Menü <guimenu>Datei</guimenu>"
+
+#~ msgid "The <guimenu>Edit</guimenu> Menu"
+#~ msgstr "Das Menü <guimenu>Bearbeiten</guimenu>"
+
+#~ msgid "The <guimenu>Phrase Books</guimenu> Menu"
+#~ msgstr "Das Menü <guimenu>Textpassagen-Bücher</guimenu>"
+
+#~ msgid "The <guimenu>Settings</guimenu> Menu"
+#~ msgstr "Das Menü <guimenu>Einstellungen</guimenu>"
+
+#~ msgid ""
+#~ "<shortcut> <keycombo>&Ctrl;<keycap>M</keycap></keycombo> </shortcut> "
+#~ "<guimenu>Settings</guimenu> <guimenuitem>Show Menubar</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut><keycombo>&Ctrl;<keycap>M</keycap></keycombo></shortcut> "
+#~ "<guimenu>Einstellungen</guimenu> <guimenuitem>Menüleiste ausblenden</"
+#~ "guimenuitem>"
+
+#~ msgid ""
+#~ "When checked, this displays the menubar. When unchecked the menubar is "
+#~ "hidden."
+#~ msgstr ""
+#~ "Ist dieser Menüeintrag angekreuzt ist, wird die Menüleiste angezeigt, "
+#~ "anderenfalls ausgeblendet."
+
+#~ msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Toolbar</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu> <guimenuitem>Werkzeugleiste anzeigen</"
+#~ "guimenuitem>"
+
+#~ msgid ""
+#~ "<action> When checked, this displays a movable toolbar containing buttons "
+#~ "used to initiate frequently used commands. The toolbar is most commonly "
+#~ "located at the top of the editor just under the menu. When unchecked the "
+#~ "toolbar is hidden. </action> Clicking on the striated grip and dragging "
+#~ "allows the user to move the bar."
+#~ msgstr ""
+#~ "<action>Ist dieser Menüeintrag angekreuzt, wird eine verschiebbare "
+#~ "Werkzeugleiste mit Knöpfen für häufig gebrauchte Befehle angezeigt. Die "
+#~ "Werkzeugleiste ist standardmäßig über dem Bearbeitungsfenster direkt "
+#~ "unter der Menüleiste angeordnet. </action> Durch Mausklick auf die "
+#~ "schraffierte linke Seite und Ziehen kann die Werkzeugleiste an eine "
+#~ "andere Stelle verschoben werden."
+
+#~ msgid ""
+#~ "<guimenu>Settings</guimenu> <guimenuitem>Show Statusbar</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu> <guimenuitem>Statusleiste anzeigen</"
+#~ "guimenuitem>"
+
+#~ msgid ""
+#~ "When checked, this displays a small bar at the bottom of the main window "
+#~ "containing information about the status of &kmouth;. When unchecked the "
+#~ "status bar is hidden."
+#~ msgstr ""
+#~ "Ist dieser Menüeintrag angekreuzt ist, wird eine schmale Leiste im "
+#~ "unteren Teil des Hauptfensters mit Hinweisen über den Zustand von "
+#~ "&kmouth; angezeigt, wenn nicht angekreuzt, ist diese Statusleiste "
+#~ "ausgeblendet."
+
+#~ msgid ""
+#~ "<guimenu>Settings</guimenu> <guimenuitem>Show Phrasebook Bar</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu> <guimenuitem>Leiste für Textpassagen-"
+#~ "Buch anzeigen</guimenuitem>"
+
+#~ msgid ""
+#~ "<action> When checked, this displays a movable phrasebook bar containing "
+#~ "buttons for the phrasebook entries. The phrasebook bar is most commonly "
+#~ "located at the top of the editor just under the toolbar. When unchecked "
+#~ "the phrasebook bar is hidden. </action> Clicking on the striated grip and "
+#~ "dragging allows the user to move the bar."
+#~ msgstr ""
+#~ "<action>Ist dieser Menüeintrag angekreuzt, wird eine verschiebbare Leiste "
+#~ "für Textpassagen-Bücher mit Einträgen angezeigt. Die Leiste ist "
+#~ "standardmäßig über dem Bearbeitungsfenster direkt unter der "
+#~ "Werkzeugleiste angeordnet. </action> Durch Mausklick auf die schraffierte "
+#~ "linke Seite und Ziehen kann die Werkzeugleiste an eine andere Stelle "
+#~ "verschoben werden."
+
+#~ msgid ""
+#~ "<guimenu>Settings</guimenu> <guimenuitem>Configure KMouth...</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu> <guimenuitem>KMouth einrichten ...</"
+#~ "guimenuitem>"
+
+#~ msgid ""
+#~ "Opens the <link linkend=\"config-dialog\">configuration dialog for the "
+#~ "speech synthesizer</link> and other &kmouth; settings."
+#~ msgstr ""
+#~ "Öffnet den <link linkend=\"config-dialog\">Einstellungsdialog für den "
+#~ "Sprachgenerator</link> und weitere &kmouth;-Einstellungen."
+
+#~ msgid "The <guimenu>Help</guimenu> Menu"
+#~ msgstr "Das Menü <guimenu>Hilfe</guimenu>"
+
+#~ msgid "&help.menu.documentation;"
+#~ msgstr "&help.menu.documentation;"
+
+#~ msgid "1.1.1"
+#~ msgstr "1.1.1"
+
+#~ msgid "kdeutils"
+#~ msgstr "kdeutils"
+
+#~ msgid ""
+#~ "Please report any problems and feature requests to the author of &kmouth;."
+#~ msgstr ""
+#~ "Bei Problemen und Verbesserungsvorschlägen wenden Sie sich bitte an den "
+#~ "Autor von &kmouth;."
+
+#~ msgid ""
+#~ "In order to successfully use &kmouth;, you need a speech synthesizer (and "
+#~ "of course &kde; 3.x). &kmouth; uses about 15 MB of memory to run (plus "
+#~ "the amount of memory needed by your speech synthesizer), but this may "
+#~ "vary depending on your platform and configuration."
+#~ msgstr ""
+#~ "Um &kmouth; erfolgreich zu nutzen, brauchen Sie einen Sprachgenerator "
+#~ "(und natürlich &kde; 3.x). &kmouth; benötigt etwa 15 MB Speicher (und "
+#~ "zusätzlich Speicher für den Sprachgenerator), das hängt aber im Einzelnen "
+#~ "von Ihrem Computer und seiner Konfiguration ab."

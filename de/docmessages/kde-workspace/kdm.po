@@ -1,0 +1,4235 @@
+# Frank Schütte <F.Schuette@t-online.de>, 2004.
+# Stephan Johach <hunsum@gmx.de>, 2004, 2005, 2007.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006.
+# Burkhard Lück <lueck@hube-lueck.de>, 2006, 2007, 2008, 2009, 2010, 2011, 2013.
+# Frank Steinmetzger <Warp_7@gmx.de>, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdm\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:26+0000\n"
+"PO-Revision-Date: 2013-04-26 09:29+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:19
+#, no-c-format
+msgid "The &kdm; Handbook"
+msgstr "Das Handbuch zu &kdm;"
+
+#. Tag: author
+#: index.docbook:22
+#, no-c-format
+msgid "&Oswald.Buddenhagen; &Oswald.Buddenhagen.mail;"
+msgstr "&Oswald.Buddenhagen; &Oswald.Buddenhagen.mail;"
+
+#. Tag: trans_comment
+#: index.docbook:34
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<!-- Volker Dose <email>vpdose@cpmgut.toppoint.de</email>, Hartmut Haase "
+"<email>hartmut.haase@web.de</email>, Stefan Doll <email>stefan@laugenweck."
+"de</email> -->"
+
+#. Tag: holder
+#: index.docbook:40
+#, no-c-format
+msgid "&Neal.Crook;"
+msgstr "&Neal.Crook;"
+
+#. Tag: holder
+#: index.docbook:45
+#, no-c-format
+msgid "&Oswald.Buddenhagen;"
+msgstr "&Oswald.Buddenhagen;"
+
+#. Tag: holder
+#: index.docbook:50
+#, no-c-format
+msgid "&Lauri.Watts;"
+msgstr "&Lauri.Watts;"
+
+#. Tag: date
+#: index.docbook:55
+#, no-c-format
+msgid "2007-12-07"
+msgstr "2007-12-07"
+
+#. Tag: releaseinfo
+#: index.docbook:56
+#, no-c-format
+msgid "0.06.00"
+msgstr "0.06.00"
+
+#. Tag: para
+#: index.docbook:59
+#, no-c-format
+msgid ""
+"This document describes &kdm; the &kde; Display Manager. &kdm; is also known "
+"as the <quote>Login Manager</quote>."
+msgstr "Dieses Dokument beschreibt &kdm;, den &kde;-Anmeldungsmanager."
+
+#. Tag: keyword
+#: index.docbook:64
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:65
+#, no-c-format
+msgid "<keyword>kdm</keyword>"
+msgstr "<keyword>kdm</keyword>"
+
+#. Tag: keyword
+#: index.docbook:66
+#, no-c-format
+msgid "<keyword>xdm</keyword>"
+msgstr "<keyword>xdm</keyword>"
+
+#. Tag: keyword
+#: index.docbook:67
+#, no-c-format
+msgid "display manager"
+msgstr "display manager"
+
+#. Tag: keyword
+#: index.docbook:68
+#, no-c-format
+msgid "desktop manager"
+msgstr "desktop manager"
+
+#. Tag: keyword
+#: index.docbook:69
+#, no-c-format
+msgid "login manager"
+msgstr "login manager"
+
+#. Tag: title
+#: index.docbook:75
+#, no-c-format
+msgid "Introduction"
+msgstr "Einführung"
+
+#. Tag: para
+#: index.docbook:77
+#, no-c-format
+msgid ""
+"&kdm; provides a graphical interface that allows you to log in to a system. "
+"It prompts for login (username) and password, authenticates the user and "
+"starts a <quote>session</quote>. &kdm; is superior to &xdm;, the X Display "
+"Manager, in a number of ways."
+msgstr ""
+"Der &kdm; ist eine grafische Schnittstelle, um sich beim System anzumelden. "
+"Durch Eingabe von Anmeldekennung und Passwort erfolgt eine Authentifizierung "
+"und &kdm; startet eine <quote>Sitzung</quote>. &kdm; ist ein Ersatz für "
+"<application>xdm</application>, den X Display Manager, und bietet diesem "
+"gegenüber einige Verbesserungen."
+
+#. Tag: title
+#: index.docbook:98
+#, no-c-format
+msgid "Quick Start Guide"
+msgstr "Kurzanleitung"
+
+#. Tag: para
+#: index.docbook:100
+#, no-c-format
+msgid "This is a quick start guide for users who fit the following pattern:"
+msgstr "Dies ist eine Kurzanleitung für Benutzer, für die folgendes zutrifft:"
+
+#. Tag: para
+#: index.docbook:105
+#, no-c-format
+msgid ""
+"X is configured and works with the command <command>startx</command> from "
+"the commandline."
+msgstr ""
+"X ist eingerichtet und kann mit dem Befehl <command>startx</command> von der "
+"Befehlszeile gestartet werden."
+
+#. Tag: para
+#: index.docbook:109
+#, no-c-format
+msgid ""
+"Each user will generally only use a single window manager or desktop "
+"environment, and does not change this choice very often, or is comfortable "
+"editing a single text file in order to change their choice."
+msgstr ""
+"Typischerweise verwendet ein Benutzer nur einen einzigen Fenstermanager bzw "
+"eine einzige Desktopumgebung. Geändert wird sie nur selten, oder dem "
+"Benutzer/den Benutzern fällt es leicht, dies durch Editieren einer "
+"Konfigurationsdatei vorzunehmen."
+
+#. Tag: para
+#: index.docbook:116
+#, no-c-format
+msgid ""
+"This scenario will be sufficient for many environments where a single user "
+"or several users normally boot the computer and log into their preferred "
+"environment."
+msgstr ""
+"Diese Einstellungen sind für viele Systeme ausreichend, bei denen ein "
+"einzelner Benutzer oder mehre Benutzer üblicherweise zunächst den Computer "
+"hochfahren und sich dann in ihre bevorzugte Umgebung anmelden möchten."
+
+#. Tag: title
+#: index.docbook:121
+#, no-c-format
+msgid "Setting up a Default Session"
+msgstr "Auswählen einer Standardsitzung"
+
+#. Tag: para
+#: index.docbook:123
+#, no-c-format
+msgid "Create or open the file <filename>~/.xinitrc</filename>"
+msgstr "Bearbeiten oder Anlegen der Datei <filename>~/.xinitrc</filename>"
+
+#. Tag: para
+#: index.docbook:124
+#, no-c-format
+msgid ""
+"If you already have a working <filename>~/.xinitrc</filename>, go to the "
+"next step"
+msgstr ""
+"Falls Sie bereits über eine funktionierende <filename>~/.xinitrc</filename> "
+"verfügen, können Sie diesen Schritt überspringen."
+
+#. Tag: para
+#: index.docbook:128
+#, no-c-format
+msgid ""
+"If one does not already exist, add a line to the <filename>~/.xinitrc</"
+"filename> to start your preferred window manager or desktop environment."
+msgstr ""
+"Falls noch nicht vorhanden, fügen Sie <filename>~/.xinitrc</filename> eine "
+"Zeile hinzu um Ihren Fenstermanager bzw Ihre Desktopumgebung zu starten."
+
+#. Tag: para
+#: index.docbook:131
+#, no-c-format
+msgid "For &kde; you should enter:"
+msgstr "Für &kde; sollten Sie folgendes eingeben:"
+
+#. Tag: screen
+#: index.docbook:132
+#, no-c-format
+msgid "<userinput>startkde</userinput>"
+msgstr "<userinput>startkde</userinput>"
+
+#. Tag: para
+#: index.docbook:133
+#, no-c-format
+msgid ""
+"For other window managers or desktop environments, you should look in their "
+"documentation for the correct command."
+msgstr ""
+"Für andere Fenstermanager und Desktopumgebungen sollten Sie den "
+"entsprechenden Befehl in der jeweiligen Dokumentation finden."
+
+#. Tag: para
+#: index.docbook:136
+#, no-c-format
+msgid "Make a link as follows:"
+msgstr "Richten Sie wie folgt einen Link ein:"
+
+#. Tag: screen
+#: index.docbook:137
+#, no-c-format
+msgid ""
+"<userinput><command>ln</command> <option>-s</option> <parameter>~/.xinitrc "
+"~/.xsession</parameter></userinput>"
+msgstr ""
+"<userinput><command>ln</command> <option>-s</option> <parameter>~/.xinitrc "
+"~/.xsession</parameter></userinput>"
+
+#. Tag: para
+#: index.docbook:141
+#, no-c-format
+msgid ""
+"At this point, typing <userinput><command>startx</command></userinput> on "
+"the commandline should start X, with a &kde; session. The next task is to "
+"try &kdm;."
+msgstr ""
+"Wenn nun <userinput><command>startx</command></userinput> auf der "
+"Befehlszeile eingegeben wird, sollte X mit einer &kde;-Sitzung starten. Als "
+"nächster Schritt wird &kdm; getestet."
+
+#. Tag: para
+#: index.docbook:145
+#, no-c-format
+msgid ""
+"As <systemitem class=\"username\">root</systemitem>, type "
+"<userinput><command>kdm</command></userinput> at the prompt."
+msgstr ""
+"Dazu sollte als Benutzer<systemitem class=\"username\">root</systemitem> "
+"<userinput><command>kdm</command></userinput> auf der Befehlszeile "
+"eingegeben werden."
+
+#. Tag: para
+#: index.docbook:148
+#, no-c-format
+msgid ""
+"You should see a login window, which is described more fully in <xref "
+"linkend=\"login\"/>."
+msgstr ""
+"Sie sollten nun ein Anmeldefenster sehen, das in <xref linkend=\"login\"/> "
+"beschrieben wird."
+
+#. Tag: para
+#: index.docbook:151
+#, no-c-format
+msgid ""
+"Typing your normal username and password in the fields provided, and leaving "
+"<option>default</option> selected as the session type should now open a "
+"&kde; session for your user."
+msgstr ""
+"Wenn Sie nun Ihren Benutzernamen und Ihr Passwort in die dafür vorgesehenen "
+"Felder eingeben und <option>Standard</option> als Sitzungstyp auswählen, "
+"sollten Sie eine &kde;-Sitzung erhalten."
+
+#. Tag: para
+#: index.docbook:155
+#, no-c-format
+msgid ""
+"If you have other users to configure, you should repeat the procedure above "
+"for each of them."
+msgstr ""
+"Falls Sie noch weitere Benutzer einrichten wollen, sollten Sie die Prozedur, "
+"wie oben beschrieben, für jeden Benutzer wiederholen."
+
+#. Tag: para
+#: index.docbook:159
+#, no-c-format
+msgid ""
+"This is a quick guide to getting up and running only. You probably will want "
+"to customize &kdm; further, for example, to hide the names of the system "
+"accounts, to allow further sessions, and much more. Please read through the "
+"rest of this manual to find out how to do these things."
+msgstr ""
+"Dies ist eine Kurzanleitung um &kdm; zum Laufen zu bringen. Sie werden "
+"wahrscheinlich darüberhinaus &kdm; weiter konfigurieren wollen. Zum Beispiel "
+"um die Namen von Systemkonten auszublenden, weitere Sitzungstypen "
+"einzurichten und vieles mehr. Bitte konsultieren Sie den Rest dieses "
+"Handbuchs für Informationen zu diesen Themen."
+
+#. Tag: title
+#: index.docbook:168
+#, no-c-format
+msgid "The Login Window"
+msgstr "Das Anmeldefenster"
+
+#. Tag: para
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"The user interface to &kdm; consists of dialog boxes. The main dialog box "
+"contains:"
+msgstr "Die Benutzung von &kdm; erfolgt über Dialoge. Der Hauptdialog enthält:"
+
+#. Tag: para
+#: index.docbook:175
+#, no-c-format
+msgid ""
+"Widgets allowing you to authenticate. When the \"classic\" authentication "
+"method is chosen, these are:"
+msgstr ""
+"Elemente, mit denen Sie sich authentifizieren können. Wird die "
+"<quote>klassische</quote> Authentifizierungsmethode gewählt, sind das:"
+
+#. Tag: para
+#: index.docbook:180
+#, no-c-format
+msgid "A <guilabel>Username:</guilabel> field for you to enter your username."
+msgstr ""
+"Ein Eingabefeld <guilabel>Benutzername:</guilabel> zur Eingabe Ihrer "
+"Anmeldekennung."
+
+#. Tag: para
+#: index.docbook:185
+#, no-c-format
+msgid "A <guilabel>Password:</guilabel> field for you to enter your password."
+msgstr ""
+"Ein Eingabefeld <guilabel>Passwort:</guilabel>, um Ihr Passwort einzugeben."
+
+#. Tag: para
+#: index.docbook:193
+#, no-c-format
+msgid ""
+"(Optionally) a list containing entries with the name and graphical image of "
+"each user (for example, a digitized photograph). Clicking a list entry is "
+"equivalent to typing the associated username into the <guilabel>Username:</"
+"guilabel> field."
+msgstr ""
+"Eine (optionale) Liste mit den Namen und Bildern aller Benutzer (&eg; ein "
+"Digitalfoto). Klicken Sie auf einen Eintrag, wird der Benutzername in das "
+"Feld <guilabel>Benutzername:</guilabel> übertragen."
+
+#. Tag: para
+#: index.docbook:200
+#, no-c-format
+msgid ""
+"(Optionally) a region to the right of or above the authentication area which "
+"can be used to display either a static image or an analog clock."
+msgstr ""
+"(Optional) ein Bereich rechts von oder über dem Bereich zur "
+"Authentifizierung, um ein Bild oder eine Analoguhr anzuzeigen."
+
+#. Tag: para
+#: index.docbook:206
+#, no-c-format
+msgid ""
+"A <guibutton>Login</guibutton> button that validates the username/password "
+"combination and attempts to start a session of the selected type."
+msgstr ""
+"Einen Knopf <guibutton>Anmelden</guibutton>, der die Kombination "
+"vonBenutzername und Passwort prüft und dann versucht die gewählte Sitzung zu "
+"starten."
+
+#. Tag: para
+#: index.docbook:212
+#, no-c-format
+msgid ""
+"A <guibutton>Menu</guibutton> button that opens an action menu with the "
+"following items:"
+msgstr ""
+"Ein <guibutton>Menü</guibutton>-Knopf, der ein Aktionsmenü mit den folgenden "
+"Einträgen öffnet:"
+
+#. Tag: para
+#: index.docbook:217
+#, no-c-format
+msgid ""
+"(Optionally) A <guimenuitem>Session Type</guimenuitem> item to choose the "
+"type of session (desktop environment, window manager) to start. See <xref "
+"linkend=\"different-window-managers-with-kdm\"/> to find out how to "
+"configure different session types."
+msgstr ""
+"(Optional) Ein Eintrag <guimenuitem>Sitzungstyp</guimenuitem>, mit dem der "
+"Typ der zu startenden Sitzung (Arbeitsumgebung, Fenstermanager) ausgewählt "
+"werden kann. Siehe <xref linkend=\"different-window-managers-with-kdm\"/> "
+"zur Einrichtung verschiedener Sitzungstypen."
+
+#. Tag: para
+#: index.docbook:224
+#, no-c-format
+msgid ""
+"(Optionally) A <guimenuitem>Authentication Method</guimenuitem> item to "
+"switch between different authentication methods like the classical username"
+"+password, smartcard, biometry, &etc; The actual authenticators are "
+"combinations of <acronym>PAM</acronym> modules and matching frontend modules "
+"(<quote>conversation plugins</quote>). See <xref linkend=\"option-"
+"pluginslogin\"/>."
+msgstr ""
+"(Optional) Ein Eintrag <guimenuitem>Authentifizierungs-Methode</"
+"guimenuitem>, mit dem zwischen den verschiedenen Authentifizierungsmethoden "
+"wie dem klassischen Benutzername+Passwort, Smartcard, Biometrie &etc; "
+"ausgewählt werden kann. Die eigentliche Authentifizierung geschieht über "
+"eine Kombination von <acronym>PAM</acronym>-Modulen und dazu passenden "
+"Benutzerschnittstellen (<quote>Kommunikationserweiterungen</quote>). Siehe "
+"<xref linkend=\"option-pluginslogin\"/>."
+
+#. Tag: para
+#: index.docbook:233
+#, no-c-format
+msgid ""
+"(Optionally on local displays) A <guimenuitem>Switch User...</guimenuitem> "
+"item to switch between local sessions running on different virtual terminals "
+"of this computer."
+msgstr ""
+"(Optional auf lokalen Displays) Ein Eintrag <guimenuitem>Benutzer "
+"wechseln ...</guimenuitem>, mit dem auf lokale Sitzungen gewechselt werden "
+"kann, die auf anderen virtuellen Konsolen dieses Rechners laufen."
+
+#. Tag: para
+#: index.docbook:239
+#, no-c-format
+msgid ""
+"(Optionally on local displays) A <guimenuitem>Restart X Server</guimenuitem> "
+"item that terminates the currently running &X-Server;, starts a new one and "
+"displays the login dialog again. You can use this if the display content "
+"seems to be broken somehow."
+msgstr ""
+"(Optional auf lokalen Displays) Eine Option <guimenuitem>X-Server neu "
+"starten</guimenuitem>, die den derzeit laufenden &X-Server; beendet und neu "
+"startet. Das Anmeldungsfenster wird dann erneut aufgebaut. Das kann nützlich "
+"sein, wenn die Bildschirmanzeige nicht korrekt erscheint."
+
+#. Tag: para
+#: index.docbook:247
+#, no-c-format
+msgid ""
+"(Optionally on remote displays) A <guimenuitem>Close Connection</"
+"guimenuitem> item that closes the connection to the &XDMCP; server you are "
+"currently connected to. If you got to this server through a host chooser, "
+"this will bring you back to the chooser, otherwise it will only reset the &X-"
+"Server; and bring up the login dialog again."
+msgstr ""
+"(Optional für Fremdrechner) Eine Option <guimenuitem>Verbindung trennen</"
+"guimenuitem>, die die Verbindung zum derzeit ausgewählten &XDMCP;-Server "
+"trennt. Falls die Verbindung mittels eines Host-Selektors aufgebaut wurde, "
+"wird das Menü des Selektors wieder aufgebaut - ansonsten wird lediglich der "
+"&X-Server; neugestartet und das Anmeldungsfenster erneut angezeigt."
+
+#. Tag: para
+#: index.docbook:256
+#, no-c-format
+msgid ""
+"(Optionally on local displays) A <guimenuitem>Remote Login</guimenuitem> "
+"item that displays a host chooser dialog with &XDMCP; servers one can log "
+"into remotely."
+msgstr ""
+"(Optional auf lokalen Displays) Ein Eintrag <guimenuitem>Anmeldung auf "
+"Fremdrechner</guimenuitem>, mit dem ein Dialog zur Rechnerauswahl angezeigt "
+"wird. Dieser listet &XDMCP;-Server auf, an denen Sie sich anmelden können."
+
+#. Tag: para
+#: index.docbook:262
+#, no-c-format
+msgid ""
+"(Optionally on local displays) A <guimenuitem>Console Mode</guimenuitem> "
+"item that terminates graphical login and leaves you at the console. See "
+"<xref linkend=\"option-consolettys\"/> and <xref linkend=\"option-servertty"
+"\"/>."
+msgstr ""
+"(Optional auf lokalen Displays) Eine Option <guimenuitem>Konsolen-Modus</"
+"guimenuitem>, die den grafischen Anmeldebildschirm beendet und Sie auf die "
+"Befehlszeile zurückführt. Siehe <xref linkend=\"option-consolettys\"/> und "
+"<xref linkend=\"option-servertty\"/>. "
+
+#. Tag: para
+#: index.docbook:269
+#, no-c-format
+msgid ""
+"(Optionally) A <guimenuitem>Shutdown...</guimenuitem> item that displays the "
+"<guilabel>Shutdown</guilabel> dialog box."
+msgstr ""
+"(Optional) Einen Eintrag <guimenuitem>Herunterfahren</guimenuitem>, der den "
+"Dialog <guilabel>Rechner ausschalten</guilabel> aufruft."
+
+#. Tag: para
+#: index.docbook:278
+#, no-c-format
+msgid ""
+"The <guilabel>Shutdown</guilabel> dialog box presents a set of buttons that "
+"allow one of these actions to be executed:"
+msgstr ""
+"Der Dialog <guilabel>Beenden</guilabel> bietet die folgenden Aktionen, von "
+"denen eine ausgeführt werden kann:"
+
+#. Tag: term
+#: index.docbook:283
+#, no-c-format
+msgid "Turn Off Computer"
+msgstr "Rechner abschalten"
+
+#. Tag: para
+#: index.docbook:285
+#, no-c-format
+msgid "Shut the system down in a controlled manner, ready for power-down."
+msgstr ""
+"Fährt das System kontrolliert herunter, danach können Sie den Rechner "
+"ausschalten."
+
+#. Tag: term
+#: index.docbook:290
+#, no-c-format
+msgid "Restart Computer"
+msgstr "Rechner neu starten"
+
+#. Tag: para
+#: index.docbook:292
+#, no-c-format
+msgid ""
+"Shut the system down and reboot. For systems that use <application>Lilo</"
+"application> or <application>Grub</application>, an optional drop down box "
+"allows you to select a particular operating system to be used for the reboot."
+msgstr ""
+"Fährt das System herunter und führt einen Neustart durch. Für Systeme, die "
+"<application>LILO</application> oder <application>Grub</application> "
+"benutzen, können Sie in einem weiteren Kästchen wählen, mit welchem "
+"Betriebssystem der Neustart erfolgen soll."
+
+#. Tag: term
+#: index.docbook:299
+#, no-c-format
+msgid "Schedule..."
+msgstr "Zeitplanung ..."
+
+#. Tag: para
+#: index.docbook:301
+#, no-c-format
+msgid ""
+"If this option is enabled, you may use it to enter a more complex shutdown "
+"dialog. See <xref linkend=\"option-scheduledsd\"/> for details."
+msgstr ""
+"Ist diese Option aktiv, können Sie darüber einen erweiterten Beenden-Dialog "
+"anzeigen lassen. Siehe <xref linkend=\"option-scheduledsd\"/> für weitere "
+"Einzelheiten."
+
+#. Tag: para
+#: index.docbook:307
+#, no-c-format
+msgid ""
+"Pressing the <guibutton>Cancel</guibutton> button returns to the main &kdm; "
+"dialog box."
+msgstr ""
+"Ein Klick auf den Knopf <guibutton>Abbrechen</guibutton> schließt das Menü "
+"und kehrt zum &kdm;-Hauptmenü zurück."
+
+#. Tag: title
+#: index.docbook:314
+#, no-c-format
+msgid "Configuring &kdm;"
+msgstr "&kdm; einrichten"
+
+#. Tag: para
+#: index.docbook:316
+#, no-c-format
+msgid ""
+"This chapter assumes that &kdm; is already up and running on your system, "
+"and that you simply want to change its behavior in some way."
+msgstr ""
+"In diesem Kapitel wird vorausgesetzt, dass &kdm; bereits installiert ist und "
+"auf Ihrem System läuft und dass Sie nur das Verhalten ändern möchten."
+
+#. Tag: para
+#: index.docbook:319
+#, no-c-format
+msgid ""
+"When &kdm; starts up, it reads its configuration from the folder <filename "
+"class=\"directory\">$<envar>KDEDIR</envar>/share/config/kdm/</filename> "
+"(this may be <filename class=\"directory\">/etc/kde4/kdm/</filename> or "
+"something else on your system)."
+msgstr ""
+"Wenn &kdm; startet, liest es zunächst die Konfigurationsdatei im Ordner "
+"<filename class=\"directory\">$<envar>KDEDIR</envar>/share/config/kdm/</"
+"filename> (die Datei könnte auf Ihrem System auch unter <filename class="
+"\"directory\">/etc/kde4/kdm/</filename> oder an einer anderen Stelle "
+"untergebracht sein)."
+
+#. Tag: para
+#: index.docbook:325
+#, no-c-format
+msgid ""
+"The main configuration file is &kdmrc;; all other files are referenced from "
+"there and could be stored under any name anywhere on the system - but "
+"usually that would not make much sense for obvious reasons (one particular "
+"exception is referencing configuration files of an already installed &xdm; - "
+"however when a new &kdm; is installed, it will import settings from those "
+"files if it finds an already installed &xdm;)."
+msgstr ""
+"Die wichtigste Konfigurationsdatei ist &kdmrc; - alle anderen Dateien werden "
+"von dieser Datei eingebunden und könnten im Prinzip an einer beliebigen "
+"Stelle im System untergebracht sein. Natürlich ist das in der Regel nicht "
+"sinnvoll. Eine Ausnahme davon wäre ein bereits installiertes &xdm; - "
+"tatsächlich werden bei der Installation eines neuen &kdm; automatisch &xdm;-"
+"Dateien gesucht und (falls vorhanden) verwendet."
+
+#. Tag: para
+#: index.docbook:333
+#, no-c-format
+msgid ""
+"Since &kdm; must run before any user is logged in, it is not associated with "
+"any particular user. Therefore, it is not possible to have user-specific "
+"configuration files; all users share the common &kdmrc;. It follows from "
+"this that the configuration of &kdm; can only be altered by those users that "
+"have write access to <filename>$<envar>KDEDIR</envar>/share/config/kdm/"
+"kdmrc</filename> (normally restricted to system administrators logged in as "
+"<systemitem class=\"username\">root</systemitem>)."
+msgstr ""
+"Wenn &kdm; startet, liest es seine Einstellungen aus der Datei &kdmrc;. Weil "
+"&kdm; laufen muss, bevor ein Benutzer angemeldet ist, ist diese Datei keinem "
+"besonderen Benutzer zugeordnet. Deshalb gibt es auch keine "
+"benutzerspezifische Datei <filename>$HOME/share/config/kdmrc</filename>; "
+"alle Benutzer teilen sich die gemeinsame Version von &kdmrc;. Daraus folgt "
+"dass die &kdm;-Einrichtung nur von jemandem geändert werden kann, der für "
+"<filename>$<envar>KDEDIR</envar>/share/config/kdmrc</filename> Schreibrechte "
+"hat (das ist normalerweise der Systemadministrator, der als root angemeldet "
+"ist)."
+
+#. Tag: para
+#: index.docbook:342
+#, no-c-format
+msgid ""
+"You can view the &kdmrc; file currently in use on your system, and you can "
+"configure &kdm; by editing this file. Alternatively, you can use the "
+"graphical configuration tool provided by the &systemsettings; (the "
+"<guilabel>Login Screen</guilabel> module in the <guilabel>System "
+"Administration</guilabel> category)."
+msgstr ""
+"Sie können sich die Datei &kdmrc;, die von Ihrem System verwendet wird, "
+"anschauen, und Sie können &kdm; einrichten, indem Sie diese Datei anpassen. "
+"Oder Sie benutzen in den &systemsettings; im Abschnitt "
+"<guilabel>Systemverwaltung</guilabel> das Modul <guilabel>Anmeldebildschirm</"
+"guilabel>."
+
+#. Tag: para
+#: index.docbook:348
+#, no-c-format
+msgid ""
+"The remainder of this chapter describes configuration of &kdm; via the "
+"&systemsettings; module, and the <link linkend=\"kdm-files\">next chapter</"
+"link> describes the options available in &kdmrc; itself. If you only need to "
+"configure for local users, the &systemsettings; module should be sufficient "
+"for your needs. If you need to configure remote logins, or have multiple "
+"&kdm; sessions running, you will need to read on."
+msgstr ""
+"Der Rest diese Kapitels beschreibt die Einrichtung von &kdm; mit Hilfe des "
+"&systemsettings;-Moduls - das <link linkend=\"kdm-files\">nächste Kapitel</"
+"link> beschreibt die in &kdmrc; verfügbaren Optionen. Falls Sie nur lokale "
+"Benutzer einrichten müssen, sollte das &systemsettings;-Modul Ihren "
+"Anforderungen genügen. Müssen Sie jedoch entfernte Anmeldungen einrichten "
+"oder gleichzeitig mehrere &kdm;-Sitzungen betreiben, sollten Sie hier "
+"weiterlesen."
+
+#. Tag: author
+#: index.docbook:360
+#, no-c-format
+msgid "&Thomas.Tanghus; &Thomas.Tanghus.mail;"
+msgstr "&Thomas.Tanghus; &Thomas.Tanghus.mail;"
+
+#. Tag: author
+#: index.docbook:361
+#, no-c-format
+msgid "&Steffen.Hansen; &Steffen.Hansen.mail;"
+msgstr "&Steffen.Hansen; &Steffen.Hansen.mail;"
+
+#. Tag: author
+#: index.docbook:362
+#, no-c-format
+msgid "&Mike.McBride; &Mike.McBride.mail;"
+msgstr "&Mike.McBride; &Mike.McBride.mail;"
+
+#. Tag: title
+#: index.docbook:366
+#, no-c-format
+msgid "The Login Manager &systemsettings; Module"
+msgstr "Das &systemsettings;-Modul des KDE Anmeldungsmanagers"
+
+#. Tag: para
+#: index.docbook:368
+#, no-c-format
+msgid ""
+"Using this module, you can configure the &kde; graphical login manager, "
+"&kdm;. You can change how the login screen looks, who has access using the "
+"login manager and who can shutdown the computer."
+msgstr ""
+"Mit diesem Modul können Sie den &kde;-Anmeldungsmanager &kdm; einrichten. "
+"Sie können einstellen, wie das Anmeldungsfenster aussieht, wer den "
+"Anmeldungsmanager benutzen und wer den Computer herunterfahren kann."
+
+#. Tag: para
+#: index.docbook:373
+#, no-c-format
+msgid ""
+"All settings will be written to the configuration file &kdmrc;, which in its "
+"original state has many comments to help you configure &kdm;. Using this "
+"&systemsettings; module will strip these comments from the file. All "
+"available options in &kdmrc; are covered in <xref linkend=\"kdm-files\"/>."
+msgstr ""
+"Alle Einstellungen werden in die Konfigurationsdatei &kdmrc; geschrieben. In "
+"ihrem Urzustand enthält sie zahlreiche Kommentare, die bei der Konfiguration "
+"von &kdm; nützlich sind. Die Verwendung des &systemsettings;-Moduls entfernt "
+"diese Kommentare allerdings. Alle möglichen Einstellungen in &kdmrc; sind in "
+"<xref linkend=\"kdm-files\"/> beschrieben."
+
+#. Tag: para
+#: index.docbook:379
+#, no-c-format
+msgid ""
+"The options listed in this chapter are cross referenced with their "
+"equivalents in &kdmrc;. All options available in the &systemsettings; module "
+"are also available directly in &kdmrc; but the reverse is not true."
+msgstr ""
+"Die Einstellungen die in diesem Kapitel aufgeführt sind, sind mit Verweisen "
+"zu den zugehörigen Einträgen in &kdmrc; versehen. Alle Einstellungen die im "
+"&systemsettings;-Modul zur Verfügung stehen sind auch in &kdmrc; vorhanden - "
+"umgekehrt gilt das allerdings nicht."
+
+#. Tag: para
+#: index.docbook:384
+#, no-c-format
+msgid ""
+"In order to organize all of these options, this module is divided into "
+"several sections: <link linkend=\"kdmconfig-general\"><guilabel>General</"
+"guilabel></link>, <link linkend=\"kdmconfig-dialog\"><guilabel>Dialog</"
+"guilabel></link>, <link linkend=\"kdmconfig-background"
+"\"><guilabel>Background</guilabel></link>, <link linkend=\"kdmconfig-theme"
+"\"><guilabel>Theme</guilabel></link>, <link linkend=\"kdmconfig-shutdown"
+"\"><guilabel>Shutdown</guilabel></link>, <link linkend=\"kdmconfig-users"
+"\"><guilabel>Users</guilabel></link> and <link linkend=\"kdmconfig-"
+"convenience\"><guilabel>Convenience</guilabel></link>."
+msgstr ""
+"Um diese Einstellungen übersichtlich zu gestalten, ist das Modul in mehrere  "
+"Abschnitte gegliedert: <link linkend=\"kdmconfig-general"
+"\"><guilabel>Allgemein</guilabel></link>, <link linkend=\"kdmconfig-dialog"
+"\"><guilabel>Dialog</guilabel></link>, <link linkend=\"kdmconfig-background"
+"\"><guilabel>Hintergrund</guilabel></link>, <link linkend=\"kdmconfig-theme"
+"\"><guilabel>Design</guilabel></link>, <link linkend=\"kdmconfig-shutdown"
+"\"><guilabel>Herunterfahren</guilabel></link>, <link linkend=\"kdmconfig-"
+"users\"><guilabel>Benutzer</guilabel></link> und <link linkend=\"kdmconfig-"
+"convenience\"><guilabel>Vereinfachung</guilabel></link>."
+
+#. Tag: para
+#: index.docbook:397
+#, no-c-format
+msgid ""
+"You can switch between the sections using the tabs at the top of the window."
+msgstr ""
+"Sie können zwischen diesen Abschnitten, mit Hilfe der Reiter am oberen Rand "
+"des Fensters, umschalten."
+
+#. Tag: para
+#: index.docbook:400
+#, no-c-format
+msgid "You can only make changes if you run this module with superuser rights."
+msgstr ""
+"Einstellungen können nur geändert werden, wenn Sie dieses Modul als "
+"Systemverwalter benutzen."
+
+#. Tag: title
+#: index.docbook:403
+#, no-c-format
+msgid "General"
+msgstr "Allgemein"
+
+#. Tag: para
+#: index.docbook:405
+#, no-c-format
+msgid ""
+"First you have a drop down box to choose the language for your login box, "
+"corresponding to setting <option>Language</option> in &kdmrc;."
+msgstr ""
+"Zuerst können Sie die Spracheinstellung für das Anmeldefenster vornehmen. "
+"Das entspricht der Option <option>Language</option> in &kdmrc;."
+
+#. Tag: para
+#: index.docbook:409
+#, no-c-format
+msgid ""
+"In the <guilabel>Appearance</guilabel> section you have an option to use "
+"&kdm; in themed mode. If <guilabel>Use themed greeter</guilabel> is checked, "
+"the settings on the <guilabel>Dialog</guilabel> and <guilabel>Background</"
+"guilabel> pages cannot be configured separately."
+msgstr ""
+"Im Abschnitt <guilabel>Erscheinungsbild</guilabel> kann eingestellt werden, "
+"ob ein Design für &kdm; benutzt wird. Ist <guilabel>Design für den "
+"Anmeldungsmanager verwenden</guilabel> aktiv, können auf den Karteikarten "
+"<guilabel>Dialog</guilabel> und <guilabel>Hintergrund</guilabel> keine "
+"zusätzlichen Einstellungen gewählt werden."
+
+#. Tag: para
+#: index.docbook:414
+#, no-c-format
+msgid ""
+"While &kde;'s style depends on the settings of the user logged in, the style "
+"used by &kdm; can be configured using the <guilabel>GUI style:</guilabel> "
+"and <guilabel>Color scheme:</guilabel> options. These correspond to the keys "
+"<link linkend=\"option-guistyle\"><option>GUIStyle</option></link> and <link "
+"linkend=\"option-colorscheme\"><option>ColorScheme</option></link> in "
+"&kdmrc; respectively."
+msgstr ""
+"&kde;s Erscheinungsbild hängt in erster Linie von den Einstellungen des "
+"angemeldeten Benutzers ab. Das Erscheinungsbild von &kdm; dagegen kann "
+"mittels der Einstellungen <guilabel>Oberflächenstil</guilabel> und "
+"<guilabel>Farbschema</guilabel> bestimmt werden.Das entspricht den Einträgen "
+"<link linkend=\"option-guistyle\"><option>GUIStyle</option></link> und <link "
+"linkend=\"option-colorscheme\"><option>ColorScheme</option></link> in "
+"&kdmrc;."
+
+#. Tag: para
+#: index.docbook:422
+#, no-c-format
+msgid ""
+"From the <guilabel>Fonts</guilabel> section of this page you can change the "
+"fonts used in the login window. Only fonts available to all users are "
+"available here, not fonts you have installed on a per user basis."
+msgstr ""
+"In diesem Bereich können die <guilabel>Schriftarten</guilabel> des "
+"Anmeldefensters eingestellt werden. Hier sind nur Schriftarten einstellbar, "
+"die für alle Benutzer verfügbar sind."
+
+#. Tag: para
+#: index.docbook:426
+#, no-c-format
+msgid ""
+"You can select three different font styles in this section "
+"(<guilabel>General:</guilabel>, <guilabel>Failure:</guilabel>, "
+"<guilabel>Greeting:</guilabel>). When you click on the <guibutton>Choose...</"
+"guibutton> button a dialog appears from which you can select the new "
+"characteristics for the font style."
+msgstr ""
+"Dabei sind drei Schriftarten einstellbar: <guilabel>Allgemein</guilabel>, "
+"<guilabel>Fehlversuche</guilabel> und <guilabel>Begrüßung</guilabel>. Wenn "
+"Sie auf den Knopf <guibutton>Auswählen ...</guibutton> klicken, erscheint "
+"ein Dialogfenster, in dem die Eigenschaften der Schriftart bestimmt werden "
+"können."
+
+#. Tag: para
+#: index.docbook:434
+#, no-c-format
+msgid ""
+"The <guilabel>General:</guilabel> font is used in all other places in the "
+"login window."
+msgstr ""
+"Die Schriftart <guilabel>Allgemein</guilabel> wird überall sonst im "
+"Anmeldefenster verwendet."
+
+#. Tag: para
+#: index.docbook:438
+#, no-c-format
+msgid "The <guilabel>Failure:</guilabel> font is used when a login fails."
+msgstr ""
+"Die Schriftart <guilabel>Fehlversuche</guilabel> wird verwendet, wenn eine "
+"Anmeldung fehlschlägt."
+
+#. Tag: para
+#: index.docbook:442
+#, no-c-format
+msgid ""
+"The <guilabel>Greeting:</guilabel> font is the font used for the title "
+"(Greeting String)."
+msgstr ""
+"Die Schriftart <guilabel>Begrüßung</guilabel> wird für den Titel "
+"(Begrüßungstext) verwendet."
+
+#. Tag: para
+#: index.docbook:447
+#, no-c-format
+msgid ""
+"You can also check the box labeled <guilabel>Use anti-aliasing for fonts</"
+"guilabel> if you want smoothed fonts in the login dialog."
+msgstr ""
+"Sie können hier auch das Ankreuzfeld <guilabel>Kantenglättung für "
+"Schriftdarstellung verwenden</guilabel> markieren, wenn Sie geglättete "
+"Schriften im Anmeldefenster sehen möchten."
+
+#. Tag: title
+#: index.docbook:453
+#, no-c-format
+msgid "Dialog"
+msgstr "Dialog"
+
+#. Tag: para
+#: index.docbook:455
+#, no-c-format
+msgid ""
+"From this page you can change the visual appearance of &kdm;, &kde;'s "
+"graphical login manager in non themed mode."
+msgstr ""
+"Auf dieser Seite kann das Erscheinungsbild von &kdm;, &kde;s Anmeldungs-"
+"Managers festgelegt werden wenn kein Design verwendet wird."
+
+#. Tag: para
+#: index.docbook:458
+#, no-c-format
+msgid ""
+"The <guilabel>Greeting:</guilabel> is the title of the login screen. Setting "
+"this is especially useful if you have many servers users may log in to. You "
+"may use various placeholders, which are described along with the "
+"corresponding key <link linkend=\"option-greetstring\"><option>GreetString</"
+"option></link> in &kdmrc;."
+msgstr ""
+"Der <guilabel>Begrüßungstext:</guilabel> ist der Titel des "
+"Anmeldungsfensters. Sie können hier verschiedene Platzhalter verwenden, die "
+"zusammen mit dem dazugehörigen Schlüssel <link linkend=\"option-greetstring"
+"\"><option>GreetString</option></link> in &kdmrc; beschrieben sind."
+
+#. Tag: para
+#: index.docbook:466
+#, no-c-format
+msgid ""
+"You can then choose to show either the current system time, a logo or "
+"nothing special in the login box. Make your choice in the radio buttons "
+"labeled <guilabel>Logo area:</guilabel>. This corresponds to <link linkend="
+"\"option-logoarea\"><option>LogoArea</option></link> in &kdmrc;"
+msgstr ""
+"Sie können dann auswählen ob die aktuelle Systemzeit, ein Logo oder gar "
+"nichts im Anmeldefenster angezeigt wird. Auswählen können Sie diese Optionen "
+"im <guilabel>Logo-Bereich</guilabel>. Mit der Einstellung "
+"<guilabel>Position</guilabel> können Sie den Inhalt des Logo-Bereichs "
+"zentrieren oder auf feste Koordinaten einstellen. Das entspricht der "
+"Einstellung <link linkend=\"option-logoarea\"><option>Logo-Bereich</option></"
+"link>  in &kdmrc;"
+
+#. Tag: para
+#: index.docbook:471
+#, no-c-format
+msgid "If you chose <guilabel>Show logo</guilabel> you can now choose a logo:"
+msgstr ""
+"Wenn Sie <guilabel>Logo anzeigen</guilabel> einstellen, können Sie nun ein "
+"Logo auswählen:"
+
+#. Tag: para
+#: index.docbook:476
+#, no-c-format
+msgid "Drop an image file on the image button."
+msgstr "Ziehen Sie eine Bilddatei auf den Bildknopf."
+
+#. Tag: para
+#: index.docbook:479
+#, no-c-format
+msgid ""
+"Click on the image button and select a new image from the image chooser "
+"dialog."
+msgstr ""
+"Klicken Sie auf den Bildknopf und wählen Sie ein Bild mittels des "
+"Auswahldialogs."
+
+#. Tag: para
+#: index.docbook:484
+#, no-c-format
+msgid ""
+"If you do not specify a logo, the default <filename>$<envar>KDEDIR</envar>/"
+"share/apps/kdm/pics/kdelogo.xpm</filename> will be displayed."
+msgstr ""
+"Wenn Sie kein Logo auswählen, wird das Standardlogo <filename>"
+"$<envar>KDEDIR</envar>/share/apps/kdm/pics/kdelogo.xpm</filename> angezeigt."
+
+#. Tag: para
+#: index.docbook:488
+#, no-c-format
+msgid ""
+"Normally the login box is centered on the screen. Drag the anchor to move "
+"the center of the dialog to the desired position. Keyboard control is "
+"possible as well: Use the arrow keys or <keycap>Home</keycap> to center. "
+"Note that the actual proportions of the dialog are probably different. These "
+"correspond to the key <link linkend=\"option-greeterpos"
+"\"><option>GreeterPos</option></link> in &kdmrc;."
+msgstr ""
+"Normalerweise wird das Anmeldefenster in der Mitte des Bildschirms "
+"angezeigt. Durch Ziehen des Ankers können Sie die mittlere Position des "
+"Dialogs festlegen. Sie können dazu auch die Tastatur verwenden: Betätigen "
+"Sie die Pfeil-Tasten oder <keycap>Pos 1</keycap>, um den Anker in die Mitte "
+"zu bringen. Hinweis: Die tatsächlichen Proportionen können abweichen. Das "
+"entspricht dem Eintrag <link linkend=\"option-greeterpos"
+"\"><option>GreeterPos</option></link> in &kdmrc;."
+
+#. Tag: title
+#: index.docbook:499
+#, no-c-format
+msgid "<title>Background</title>"
+msgstr "<title>Hintergrund</title>"
+
+#. Tag: para
+#: index.docbook:501
+#, no-c-format
+msgid ""
+"Here you can change the desktop background which will be displayed before a "
+"user logs in. Selecting <guilabel>Enable background</guilabel> allows you to "
+"edit the options on this tab."
+msgstr ""
+"Hier können Sie den Arbeitsflächen-Hintergrund ändern, der angezeigt wird, "
+"bevor der Benutzer sich anmeldet. Wählen Sie <guilabel>Hintergrund "
+"aktivieren</guilabel>, dann können die Einstellungen auf dieser Karteikarte "
+"geändert werden."
+
+#. Tag: para
+#: index.docbook:505
+#, no-c-format
+msgid "This tab is comprised of three areas:"
+msgstr "Diese Karteikarte enthält drei Bereiche:"
+
+#. Tag: para
+#: index.docbook:509
+#, no-c-format
+msgid "An area for selecting background images"
+msgstr "Bereich zum Auswählen von Hintergrundbildern."
+
+#. Tag: para
+#: index.docbook:512
+#, no-c-format
+msgid "The background Preview Monitor"
+msgstr "Vorschaumonitor für den Hintergrund."
+
+#. Tag: para
+#: index.docbook:515
+#, no-c-format
+msgid "An area for determining the background color"
+msgstr "Bereich zum Einstellen der Hintergrundfarbe."
+
+#. Tag: term
+#: index.docbook:521
+#, no-c-format
+msgid "Preview Monitor"
+msgstr "Vorschaumonitor"
+
+#. Tag: para
+#: index.docbook:523
+#, no-c-format
+msgid ""
+"This is a preview window. It will give you a sense of what to expect with "
+"each change."
+msgstr ""
+"Dieser Vorschaufenster gibt Ihnen einen Eindruck, was die vorgenommenen "
+"Änderungen bewirken."
+
+#. Tag: guilabel
+#: index.docbook:529
+#, no-c-format
+msgid "<guilabel>Background</guilabel>"
+msgstr "<guilabel>Hintergrund</guilabel>"
+
+#. Tag: para
+#: index.docbook:531
+#, no-c-format
+msgid ""
+"This section allows you to load a wallpaper on top of the color gradient "
+"chosen in the section below."
+msgstr ""
+"&kde; ermöglicht hier das Laden von Hintergrundbildern, die über "
+"Farbverläufen angezeigt werden."
+
+#. Tag: para
+#: index.docbook:534
+#, no-c-format
+msgid "There are three choices available here:"
+msgstr "Hier stehen drei Möglichkeiten zur Auswahl:"
+
+#. Tag: guilabel
+#: index.docbook:538
+#, no-c-format
+msgid "No Picture"
+msgstr "Kein Hintergrundbild"
+
+#. Tag: para
+#: index.docbook:540
+#, no-c-format
+msgid ""
+"No picture background will be shown. The color and pattern choices below "
+"will still take effect."
+msgstr ""
+"Es wird kein Hintergrundbild angezeigt. Die Auswahl von Farbe und Muster "
+"gleich darunter wird als Hintergrund verwendet."
+
+#. Tag: guilabel
+#: index.docbook:546
+#, no-c-format
+msgid "Picture"
+msgstr "Bild"
+
+#. Tag: para
+#: index.docbook:548
+#, no-c-format
+msgid ""
+"A single picture will be used as the background for the selected desktops."
+msgstr ""
+"Ein einzelnes Bild wird als Hintergrund für die ausgewählten Arbeitsflächen "
+"verwendet."
+
+#. Tag: para
+#: index.docbook:550
+#, no-c-format
+msgid "How this picture is positioned and scaled can be fine tuned below."
+msgstr ""
+"Gleich unterhalb kann eingestellt werden, wie das Bild angeordnet und "
+"skaliert wird."
+
+#. Tag: guilabel
+#: index.docbook:556
+#, no-c-format
+msgid "Slide show"
+msgstr "Diaschau"
+
+#. Tag: para
+#: index.docbook:558
+#, no-c-format
+msgid ""
+"&kde; allows you to have an automatic slide show of wallpaper images. To "
+"enable this option, press the <guibutton>Setup...</guibutton> button. In the "
+"resulting dialog you may choose any image or folder of images available on "
+"your computer, using the <guibutton>Add...</guibutton> button to navigate "
+"your file system. <guibutton>Remove</guibutton> will remove the currently "
+"selected entry from the list."
+msgstr ""
+"&kde; gestattet die Einrichtung einer Diaschau mit Hintergrundbildern. Zum "
+"Einrichten dieser Option drücken Sie den Knopf <guibutton>Einrichtung</"
+"guibutton>. Im sich dann öffnenden Dialogfenster können Sie dann jedes Bild "
+"oder ein auf Ihrem Computer verfügbares Verzeichnis mit Bildern hinzufügen, "
+"indem Sie auf den Knopf <guibutton>Hinzufügen ...</guibutton> klicken, es "
+"wird dann ein Dateiauswahlfenster geöffnet. Klicken auf "
+"<guibutton>Entfernen</guibutton> löscht den aktuell ausgewählten Eintrag aus "
+"der Liste."
+
+#. Tag: para
+#: index.docbook:566
+#, no-c-format
+msgid ""
+"You may choose the length of time any image is displayed in the "
+"<guilabel>Change picture after:</guilabel> box, and you may choose "
+"<guibutton>Show pictures in random order</guibutton> if you don't want them "
+"displayed in the order they are listed."
+msgstr ""
+"Sie können die Zeitdauer zwischen den Bildwechseln im Drehfeld "
+"<guilabel>Bild wechseln nach:</guilabel> einstellen und Sie können "
+"einstellen, ob die Bilder so wie in der Liste angezeigt der Reihe nach oder "
+"in zufälliger Reihenfolge angezeigt werden sollen."
+
+#. Tag: para
+#: index.docbook:571
+#, no-c-format
+msgid ""
+"Displaying wallpaper requires that the image be kept in memory. If you are "
+"low on memory, using a small, tiled image or none at all is recommended."
+msgstr ""
+"Das Anzeigen des Bildes erfordert, das dieses Bild im Speicher gehalten "
+"wird. Wenn Sie nur wenig Hauptspeicher zur Verfügung haben, benutzen Sie ein "
+"kleines gekacheltes Bild oder besser: Arbeiten Sie ganz ohne Hintergrundbild."
+
+#. Tag: para
+#: index.docbook:575
+#, no-c-format
+msgid ""
+"Scaling or centering a small image still requires an image the size of your "
+"display to be maintained in memory."
+msgstr ""
+"Skalieren oder Zentrieren eines kleinen Bildes erfordert trotzdem das "
+"Speichern eines Bildes in der Größe Ihres Bildschirmes im Hauptspeicher."
+
+#. Tag: guilabel
+#: index.docbook:584
+#, no-c-format
+msgid "Options"
+msgstr "Optionen"
+
+#. Tag: guilabel
+#: index.docbook:588
+#, no-c-format
+msgid "Position:"
+msgstr "Position:"
+
+#. Tag: term
+#: index.docbook:590
+#, no-c-format
+msgid "Centered"
+msgstr "Zentriert"
+
+#. Tag: para
+#: index.docbook:591
+#, no-c-format
+msgid ""
+"The image will be centered on the screen without changing the size of the "
+"image. The background colors will be present anywhere the image does not "
+"cover."
+msgstr ""
+"Das Bild wird auf dem Bildschirm zentriert in unveränderter Größe angezeigt. "
+"Die Hintergrundfarben sind dort sichtbar, wo das Bild den Bildschirm nicht "
+"überdeckt."
+
+#. Tag: term
+#: index.docbook:596
+#, no-c-format
+msgid "Tiled"
+msgstr "Gekachelt"
+
+#. Tag: para
+#: index.docbook:597
+#, no-c-format
+msgid ""
+"The image will be duplicated until it fills the entire desktop. The first "
+"image will be placed in the upper left corner of the screen, and duplicated "
+"downward and to the right."
+msgstr ""
+"Das Bild wird so oft dupliziert bis der gesammte Desktop bedeckt ist. Das "
+"erste Bild wird dabei in der linken oberen Ecke des Bildschirms plaziert, "
+"danach nach unten und nach rechts erneut angefügt."
+
+#. Tag: term
+#: index.docbook:602
+#, no-c-format
+msgid "Center Tiled"
+msgstr "Zentriert gekachelt"
+
+#. Tag: para
+#: index.docbook:603
+#, no-c-format
+msgid ""
+"The image will be duplicated until it fills the entire desktop. The first "
+"image will be placed in the center of the screen, and duplicated upward, "
+"downward to the right, and to the left."
+msgstr ""
+"Das Bild wird so oft dupliziert bis der gesammte Desktop bedeckt ist. Das "
+"erste Bild wird dabei in der Mitte des Bildschirms plaziert, danach nach "
+"Oben, Unten, Links und Rechts erneut angefügt."
+
+#. Tag: term
+#: index.docbook:608
+#, no-c-format
+msgid "Centered Maxpect"
+msgstr "Zentriert und skaliert (korrektes Seitenverhältnis)"
+
+#. Tag: para
+#: index.docbook:609
+#, no-c-format
+msgid ""
+"The image will be placed in the center of the screen. It will be scaled to "
+"fit the desktop, but it will not change the aspect ratio of the original "
+"image. This will provide you with an image that is not distorted."
+msgstr ""
+"Das Bild wird in der Mitte des Bildschirms plaziert. Es wird skaliert um den "
+"Desktop zu füllen, aber das Seitenverhältnis bleibt erhalten. Dadurch wird "
+"das Bild nicht verzerrt."
+
+#. Tag: term
+#: index.docbook:615
+#, no-c-format
+msgid "Tiled Maxpect"
+msgstr "Gekachelt (korrektes Seitenverhältnis)"
+
+#. Tag: para
+#: index.docbook:617
+#, no-c-format
+msgid ""
+"The image will be placed in the corner of the screen. It will be scaled to "
+"fit the desktop, but it will not change the aspect ratio of the original "
+"image. This will provide you with an image that is not distorted. If there "
+"is any space over, the image will be duplicated to fill it."
+msgstr ""
+"Das Bild wird in der Mitte des Bildschirms platziert und dann so lange "
+"vergrößert, bis es entweder in der Höhe oder der Breite den gesamten "
+"Bildschirm ausfüllt. Das Verhältnis von Höhe zu Breite des Bildes bleibt "
+"hier unverändert. Wenn dann noch Platz frei ist, wird das Bild wiederholt, "
+"um diesen Platz zu füllen."
+
+#. Tag: term
+#: index.docbook:625
+#, no-c-format
+msgid "Scaled"
+msgstr "Skaliert"
+
+#. Tag: para
+#: index.docbook:626
+#, no-c-format
+msgid ""
+"The image will be scaled to fit the desktop. It will be stretched to fit to "
+"all four corners. This may distort the image."
+msgstr ""
+"Das Bild wird in diesem Modus so vergrößert, dass es den Hintergrund "
+"ausfüllt. Die Vergrößerung erfolgt für Höhe und Breite unabhängig und dies "
+"kann das Bild verfälschen."
+
+#. Tag: term
+#: index.docbook:630
+#, no-c-format
+msgid "Centered Auto fit"
+msgstr "Zentriert mit autom. Anpassung"
+
+#. Tag: para
+#: index.docbook:632
+#, no-c-format
+msgid ""
+"If the picture fits the desktop size, this mode works like the centered "
+"option. If the picture is larger than the desktop then it is scaled down to "
+"fit while keeping the aspect ratio."
+msgstr ""
+"Wenn das Bild auf die Arbeitsfläche passt, dann wird es wie bei der Option "
+"Zentriert in Bildschirmmitte platziert. Wenn das Bild größer ist als die "
+"Arbeitsfläche, dann wird es unter Beibehaltung der Seitenverhältnisse "
+"verkleinert, sodass es auf die Arbeitsfläche passt."
+
+#. Tag: term
+#: index.docbook:639
+#, no-c-format
+msgid "Scale &amp; Crop"
+msgstr "Skaliert und beschnitten"
+
+#. Tag: para
+#: index.docbook:641
+#, no-c-format
+msgid ""
+"Magnify the picture without distorting it until it fills both the width and "
+"height of the desktop (cropping the picture if necessary), and then center "
+"it on the desktop."
+msgstr ""
+"Vergrößert das Bild ohne es zu verzerren solange, bis das Bild Breite und "
+"Höhe der Arbeitsfläche ausfüllt. Dabei wird das Bild wenn nötig beschnitten. "
+"Die Bildmitte wird dann mittig auf der Arbeitsfläche platziert."
+
+#. Tag: guilabel
+#: index.docbook:650
+#, no-c-format
+msgid "Colors:"
+msgstr "Farben:"
+
+#. Tag: para
+#: index.docbook:652
+#, no-c-format
+msgid ""
+"The first drop down box allows you to choose the type of color, gradient, or "
+"pattern to display under (or in place of) wallpaper."
+msgstr ""
+"Das erste Auswahlfeld erlaubt die Auswahl der Farbe, des Verlaufs oder des "
+"Musters, das unter dem (oder als) Hintergrundbild angezeigt werden soll."
+
+#. Tag: para
+#: index.docbook:654
+#, no-c-format
+msgid ""
+"If you are going to be using a picture as a wallpaper, you can skip this "
+"section of the dialog box."
+msgstr ""
+"Wenn Sie Bilder als Hintergrund benutzen wollen, können Sie diese Auswahl "
+"ignorieren."
+
+#. Tag: para
+#: index.docbook:656
+#, no-c-format
+msgid ""
+"However, if your chosen wallpaper does not cover the entire desktop, the "
+"chosen colors will still show in the remaining space."
+msgstr ""
+"Wenn jedoch das benutzte Hintergrundbild nicht die gesamte Arbeitsfläche "
+"bedeckt, wird der verbleibende Rand in den eingestellten Farben angezeigt."
+
+#. Tag: guilabel
+#: index.docbook:662
+#, no-c-format
+msgid "Single Color"
+msgstr "Durchgehende Farbe"
+
+#. Tag: para
+#: index.docbook:663
+#, no-c-format
+msgid ""
+"By choosing this mode, you select one color using the first color bar, and "
+"the entire background is covered with this one color."
+msgstr ""
+"Für diesen Modus wählen Sie eine Farbe im ersten Auswahlfeld aus und der "
+"gesamte Hintergrund wird mit dieser Farbe eingefärbt."
+
+#. Tag: guilabel
+#: index.docbook:668
+#, no-c-format
+msgid "Horizontal Gradient"
+msgstr "Waagerechter Verlauf"
+
+#. Tag: para
+#: index.docbook:669
+#, no-c-format
+msgid ""
+"By choosing this mode, you select two colors (using both color buttons). "
+"&kde; will then start with the primary color selected with the left button "
+"on the left edge of the screen, and slowly transform into the blend color "
+"selected with the right button by the time it gets to the right edge of the "
+"screen."
+msgstr ""
+"Für diesen Modus wählen Sie zwei Farben in den Auswahlfeldern aus. &kde; "
+"beginnt am linken Rand des Bildschirms mit der im linken Feld festgelegten "
+"primären Farbe und wandelt diese auf dem Weg zum rechten Bildschirmrand "
+"langsam in die im rechten Feld gewählte zweite Farbe um."
+
+#. Tag: guilabel
+#: index.docbook:676
+#, no-c-format
+msgid "Vertical Gradient"
+msgstr "Senkrechter Verlauf"
+
+#. Tag: para
+#: index.docbook:677
+#, no-c-format
+msgid ""
+"By choosing this mode, you select two colors (using both color buttons). "
+"&kde; will then start with the primary color selected with the left button "
+"on the top edge of the screen, and slowly transform into the blend color "
+"selected with the right button as it moves to the bottom of the screen."
+msgstr ""
+"Für diesen Modus wählen Sie zwei Farben in den Auswahlfeldern aus. &kde; "
+"beginnt am oberen Rand des Bildschirms mit der im linken Feld festgelegten "
+"primären Farbe und wandelt diese auf dem Weg zum unteren Bildschirmrand "
+"langsam in die im rechten Feld gewählte zweite Farbe um."
+
+#. Tag: guilabel
+#: index.docbook:684
+#, no-c-format
+msgid "Pyramid Gradient"
+msgstr "Pyramidialer Verlauf"
+
+#. Tag: para
+#: index.docbook:685
+#, no-c-format
+msgid ""
+"By choosing this mode, you select two colors (using both color buttons). "
+"&kde; will then start with the primary color selected with the left button "
+"in each corner of the screen, and slowly transform into the blend color "
+"selected with the right button as it moves to the center of the screen."
+msgstr ""
+"Für diesen Modus wählen Sie zwei Farben in den Auswahlfeldern aus. &kde; "
+"beginnt in jeder Ecke des Bildschirms mit der im linken Feld festgelegten "
+"primären Farbe und wandelt diese auf dem Weg zur Mitte des Bildschirms "
+"langsam in die im rechten Feld gewählte zweite Farbe um."
+
+#. Tag: guilabel
+#: index.docbook:692
+#, no-c-format
+msgid "Pipecross Gradient"
+msgstr "Röhrenkreuzverlauf"
+
+#. Tag: para
+#: index.docbook:693
+#, no-c-format
+msgid ""
+"By choosing this mode, you select two colors (using both color buttons). "
+"&kde; will then start with the primary color selected with the left button "
+"in each corner of the screen, and slowly transform into the blend color "
+"selected with the right button as it moves to the center of the screen. The "
+"shape of this gradient is different than the pyramid gradient."
+msgstr ""
+"Für diesen Modus wählen Sie zwei Farben in den Auswahlfeldern aus. &kde; "
+"beginnt in jeder Ecke des Bildschirms mit der im linken Feld festgelegten "
+"primären Farbe und wandelt diese auf dem Weg zur Mitte des Bildschirms "
+"langsam in die im rechten Feld gewählte zweite  Farbe um. Die Form dieses "
+"Verlaufs unterscheidet sich von der des pyramidialen Verlaufs."
+
+#. Tag: guilabel
+#: index.docbook:700
+#, no-c-format
+msgid "Elliptic Gradient"
+msgstr "Elliptischer Verlauf"
+
+#. Tag: para
+#: index.docbook:701
+#, no-c-format
+msgid ""
+"By choosing this mode, you select two colors (using both color buttons). "
+"&kde; will then start with the blend color selected with the right button in "
+"the center of the screen, and slowly transform into the primary color "
+"selected by the left button as it moves to the edges, in an elliptical "
+"pattern."
+msgstr ""
+"Für diesen Modus wählen Sie zwei Farben in den Auswahlfeldern aus. &kde; "
+"beginnt in der Mitte des Bildschirms mit der im rechten Feld festgelegten "
+"zweiten Farbe und wandelt diese auf dem Weg zu den Bildschirmrändern in "
+"elliptischer Form langsam in die im linken Feld gewählte Farbe um."
+
+#. Tag: replaceable
+#: index.docbook:709
+#, no-c-format
+msgid "Pattern"
+msgstr "Muster"
+
+#. Tag: para
+#: index.docbook:711
+#, no-c-format
+msgid ""
+"The rest of the list are the names of various patterns or textures you can "
+"choose."
+msgstr ""
+"Der Rest der Liste enthält die Namen von verschiedenen Mustern, die zur "
+"Auswahl stehen."
+
+#. Tag: para
+#: index.docbook:713
+#, no-c-format
+msgid ""
+"For more on patterns, see the section <link linkend=\"bkgnd-patterns"
+"\">Adding, Removing and Modifying Patterns</link>."
+msgstr ""
+"Weitere Informationen zu Mustern finden Sie unter <link linkend=\"bkgnd-"
+"patterns\">Hinzufügen, Entfernen und Ändern von Mustern</link>."
+
+#. Tag: para
+#: index.docbook:717
+#, no-c-format
+msgid ""
+"Select the primary color with the first color bar. If you have chosen a "
+"pattern that requires two colors to be set the secondary color can be set by "
+"pressing the appropriate button."
+msgstr ""
+"Wählen Sie zuerst die primäre Farbe im linken Auswahlfeld und - wenn Sie ein "
+"Muster ausgewählt haben, das aus zwei Farben besteht - dann im rechten "
+"Auswahlfeld die zweite oder Überblendfarbe."
+
+#. Tag: guilabel
+#: index.docbook:730
+#, no-c-format
+msgid "Blending:"
+msgstr "Überblendung:"
+
+#. Tag: para
+#: index.docbook:732
+#, no-c-format
+msgid ""
+"The drop down box labeled <guilabel>Blending:</guilabel> contains the "
+"options to make a smooth transition (blend) from the wallpaper as it changes "
+"to the background."
+msgstr ""
+"Die Einstellung <guilabel>Überblendung</guilabel> enthält die Optionen zur "
+"Überblendung des Hintergrundbildes in den Rest des Hintergrundes."
+
+#. Tag: para
+#: index.docbook:737
+#, no-c-format
+msgid ""
+"A drop down box allows you to select the blending mode. Many of the modes "
+"are similar to blending modes for background colors. Select your mode from "
+"the list, and the preview window shows you what it will look like."
+msgstr ""
+"Das Auswahlfeld ermöglicht Ihnen die Auswahl der Überblendmethode. Viele der "
+"Überblendmethoden sind denen für die Überblendung zwischen den "
+"Hintergrundfarben sehr ähnlich. Wählen Sie einen Modus von der Liste und der "
+"Vorschaumonitor zeigt Ihnen, wie es aussehen wird."
+
+#. Tag: para
+#: index.docbook:741
+#, no-c-format
+msgid ""
+"The <guilabel>Balance</guilabel> slider adjusts the blending. The results "
+"can be seen immediately in the preview window."
+msgstr ""
+"Der Schieberegler <guilabel>Balance:</guilabel> stellt das Überblenden ein. "
+"Sie erhalten im Vorschaumonitor wieder einen Eindruck, wie die Einstellung "
+"die Anzeige beeinflussen wird."
+
+#. Tag: para
+#: index.docbook:744
+#, no-c-format
+msgid ""
+"The <guilabel>Reverse roles</guilabel> can reverse the role of the picture "
+"and the background for some types of blending."
+msgstr ""
+"Die Option <guilabel>Umgekehrt</guilabel> kann für einige Überblendarten die "
+"Behandlung von Hintergrundmuster und -bild vertauschen."
+
+#. Tag: title
+#: index.docbook:757
+#, no-c-format
+msgid "Advanced options"
+msgstr "Erweiterte Einstellungen"
+
+#. Tag: para
+#: index.docbook:758
+#, no-c-format
+msgid ""
+"Located below the preview monitor is a button labeled <guibutton>Advanced "
+"Options</guibutton>."
+msgstr ""
+"Unter dem Vorschaumonitor gibt es einen Knopf mit dem Namen "
+"<guibutton>Erweiterte Einstellungen</guibutton>."
+
+#. Tag: para
+#: index.docbook:761
+#, no-c-format
+msgid ""
+"To use an external program to determine and change the background of &kde;, "
+"simply select <guilabel>Use the following program for drawing the "
+"background</guilabel>. Available &kde; programs are listed, select one to "
+"enable it."
+msgstr ""
+"Um ein externes Programm zum Erzeugen des Hintergrundes für &kde; zu "
+"verwenden, wählen Sie <guilabel>Folgendes Programm für den Hintergrund "
+"verwenden</guilabel>. Wählen Sie eines der verfügbaren &kde;-Programme aus "
+"der Liste aus."
+
+#. Tag: title
+#: index.docbook:795
+#, no-c-format
+msgid "Adding, Removing and Modifying Wallpapers and Patterns"
+msgstr "Hinzufügen, Entfernen und Ändern von Mustern"
+
+#. Tag: para
+#: index.docbook:797
+#, no-c-format
+msgid ""
+"There is a button under the preview monitor labeled <guibutton>Get New "
+"Wallpapers</guibutton> that helps you fetch new wallpaper images from a "
+"selection of popular images from the <ulink url=\"http://www.kde-look.org"
+"\">KDE-Look</ulink> website. You can of course select any image you have "
+"available to use as wallpaper, and it may be stored in any location on your "
+"hard drive. To have a wallpaper show up in the list automatically for all "
+"users, you should save it to the <filename class=\"directory\">"
+"$<envar>KDEDIR</envar>/share/wallpapers</filename> folder."
+msgstr ""
+"Unter dem Vorschaumonitor gibt es einen weiteren Knopf mit der Bezeichnung "
+"<guibutton>Neue Hintergrundbilder herunterladen</guibutton>, der Sie beim "
+"Herunterladen von neuen Hintergrundmustern von der Webseite <ulink url="
+"\"http://www.kde-look.org\">KDE-Look</ulink> unterstützt. Natürlich können "
+"Sie auch jedes irgendwo auf Ihrer Festplatte verfügbare Bild als Hintergrund "
+"verwenden. Damit der Hintergrund automatisch für alle Benutzer in der Liste "
+"erscheint, sollten Sie diesen im Ordner <filename class=\"directory\">"
+"$<envar>KDEDIR</envar>/share/wallpapers</filename> speichern."
+
+#. Tag: para
+#: index.docbook:807
+#, no-c-format
+msgid ""
+"A pattern is a picture file which &kde; uses as a template to draw your "
+"background. The picture file provides the shapes, but &kde; provides the "
+"colors. &kde; is packaged with several patterns, and you also can add new "
+"patterns."
+msgstr ""
+"Ein Muster ist eine Bilddatei, die &kde; als Vorlage zum Zeichnen Ihres "
+"Hintergrundes benutzt. Das Bild stellt die Umrisse bereit, während &kde; die "
+"Farben hinzufügt. &kde; selbst liefert einige Muster, Sie können aber auch "
+"selbst neue Muster hinzufügen."
+
+#. Tag: para
+#: index.docbook:812
+#, no-c-format
+msgid ""
+"To add a new pattern that is available to every user on your computer, "
+"simply place the file in <filename class=\"directory\">$<envar>KDEDIR</"
+"envar>/share/apps/kdm/patterns/</filename>."
+msgstr ""
+"Zum Hinzufügen eines neuen Musters, das allen Benutzern des Rechners zur "
+"Verfügung stehen soll, müssen Sie die Datei in <filename class=\"directory\">"
+"$<envar>KDEDIR</envar>/share/apps/kdm/patterns/</filename> speichern."
+
+#. Tag: para
+#: index.docbook:816
+#, no-c-format
+msgid ""
+"Copy a <literal role=\"extension\">.desktop</literal> file from this folder, "
+"and name it the same as your new pattern image file. Modify the contents to "
+"suit your new pattern."
+msgstr ""
+"Kopieren Sie eine <literal role=\"extension\">.desktop</literal>-Datei  aus "
+"diesem Verzeichnis und benennen Sie diese Datei wie Ihre neue Musterdatei. "
+"Ändern Sie dann den Inhalt passend zu Ihrem neuen Muster."
+
+#. Tag: para
+#: index.docbook:820
+#, no-c-format
+msgid ""
+"To add a new pattern for a single user, add the files to <filename class="
+"\"directory\">$<envar>KDEHOME</envar>/share/apps/kdm/patterns/</filename>."
+msgstr ""
+"Zum Hinzufügen eines neuen Musters für einen Benutzer müssen Sie die Datei "
+"in <filename class=\"directory\">$<envar>KDEHOME</envar>/share/apps/kdm/"
+"patterns/</filename> speichern."
+
+#. Tag: para
+#: index.docbook:824
+#, no-c-format
+msgid "For best results, the pattern should be a grayscale PNG file."
+msgstr ""
+"Um die besten Resultate zu erzielen, sollten die Musterdateien vom Typ PNG "
+"sein und nur Graustufen beinhalten."
+
+#. Tag: title
+#: index.docbook:831
+#, no-c-format
+msgid "Theme"
+msgstr "Design"
+
+#. Tag: para
+#: index.docbook:832
+#, no-c-format
+msgid "This page consists of three sections:"
+msgstr "Diese Karteikarte enthält drei Bereiche:"
+
+#. Tag: para
+#: index.docbook:834
+#, no-c-format
+msgid "A list of installed themes, where you can select the one to be used."
+msgstr ""
+"Eine Liste der installierten Designs. Wählen Sie das Design aus, welches "
+"benutzt werden soll."
+
+#. Tag: para
+#: index.docbook:836
+#, no-c-format
+msgid ""
+"A screenshot with a preview of the selected theme and additional information "
+"like <guilabel>Copyright</guilabel> and <guilabel>Description</guilabel>."
+msgstr ""
+"Ein Bildschirm mit der Vorschau des ausgewählten Designs und zusätzlichen "
+"Informationen wie das <guilabel>Copyright</guilabel> und eine "
+"<guilabel>Beschreibung</guilabel>."
+
+#. Tag: para
+#: index.docbook:839
+#, no-c-format
+msgid ""
+"Three buttons to install or remove a theme and a button to launch the "
+"<guilabel>Get Hot New Stuff</guilabel> dialog where you can download new "
+"themes."
+msgstr ""
+"Knöpfe um Designs zu installieren, zu entfernen und um den Dialog "
+"<guilabel>Neue Erweiterungen herunterladen</guilabel> zu öffnen, in dem "
+"zusätzliche Designs installiert werden können."
+
+#. Tag: para
+#: index.docbook:842
+#, no-c-format
+msgid "The settings on this page are only available in themed mode."
+msgstr "Die Einstellungen auf dieser Seite sind nur im Designmodus aktiviert."
+
+#. Tag: title
+#: index.docbook:847
+#, no-c-format
+msgid "Shutdown"
+msgstr "Herunterfahren"
+
+#. Tag: guilabel
+#: index.docbook:849
+#, no-c-format
+msgid "Allow Shutdown"
+msgstr "Herunterfahren zulassen"
+
+#. Tag: para
+#: index.docbook:850
+#, no-c-format
+msgid "Use this drop down box to choose who is allowed to shut down:"
+msgstr ""
+"Mit diesem Auswahlfeld können sie festlegen, wer das System herunterfahren "
+"darf:"
+
+#. Tag: para
+#: index.docbook:853
+#, no-c-format
+msgid ""
+"<guilabel>Nobody</guilabel>: No one can shutdown the computer using &kdm;. "
+"You must be logged in, and execute a command."
+msgstr ""
+"<guilabel>Niemand</guilabel>: Niemand kann das System mit &kdm; "
+"herunterfahren. Sie müssen angemeldet sein und einen entsprechenden Befehl "
+"eingeben."
+
+#. Tag: para
+#: index.docbook:857
+#, no-c-format
+msgid ""
+"<guilabel>Everybody</guilabel>: Everyone can shutdown the computer using "
+"&kdm;."
+msgstr ""
+"<guilabel>Jeder</guilabel>: Jeder kann das System mit &kdm; herunterfahren."
+
+#. Tag: para
+#: index.docbook:860
+#, no-c-format
+msgid ""
+"<guilabel>Only Root</guilabel>: &kdm; requires that the <systemitem>root</"
+"systemitem> password be entered before shutting down the computer."
+msgstr ""
+"<guilabel>Nur Systemverwalter</guilabel>: &kdm; erfordert, dass das "
+"<systemitem>root</systemitem>-Passwort eingegeben wird, bevor der Rechner "
+"heruntergefahren werden kann."
+
+#. Tag: para
+#: index.docbook:865
+#, no-c-format
+msgid ""
+"You can independently configure who is allowed to issue a shutdown command "
+"for the <guilabel>Local:</guilabel> and <guilabel>Remote:</guilabel> users."
+msgstr ""
+"Diese Einstellungen können separat für lokale Benutzer und für Benutzer, die "
+"über einen <guilabel>Fremdrechner</guilabel> angemeldet sind, vorgenommen "
+"werden."
+
+#. Tag: emphasis
+#: index.docbook:869
+#, no-c-format
+msgid "Commands"
+msgstr "Befehle"
+
+#. Tag: para
+#: index.docbook:869
+#, no-c-format
+msgid "Use these text fields to define the exact shutdown command."
+msgstr ""
+"In diesen Textfeldern können Sie die Befehle zum Herunterfahren "
+"spezifizieren."
+
+#. Tag: para
+#: index.docbook:870
+#, no-c-format
+msgid ""
+"The <guilabel>Halt:</guilabel> command defaults to <command>/sbin/halt</"
+"command>. The <guilabel>Reboot:</guilabel> command defaults to <command>/"
+"sbin/reboot</command>."
+msgstr ""
+"Der Befehl <guilabel>System herunterfahren</guilabel> hat die Voreinstellung "
+"<command>/sbin/halt</command>, der Befehl <guilabel>Neustart</guilabel> die "
+"Voreinstellung <command>/sbin/reboot</command>."
+
+#. Tag: para
+#: index.docbook:877
+#, no-c-format
+msgid ""
+"When <guilabel>Boot manager</guilabel> is set to <guilabel>Grub</guilabel> "
+"or <guilabel>Lilo</guilabel>, &kdm; will on reboot offer you options for "
+"these boot managers. Note that this option is not available on all operating "
+"systems."
+msgstr ""
+"Wenn als <guilabel>Boot-Manager</guilabel> <guilabel>Grub</guilabel> oder "
+"<guilabel>Lilo</guilabel> eingestellt ist, werden beim Neustart Optionen für "
+"diese Bootmanager angezeigt. Beachten Sie, dass diese Option nicht auf allen "
+"Betriebssystem verfügbar ist."
+
+#. Tag: title
+#: index.docbook:885
+#, no-c-format
+msgid "Users"
+msgstr "Benutzer"
+
+#. Tag: para
+#: index.docbook:887
+#, no-c-format
+msgid ""
+"From here you can change the way users are represented in the login window."
+msgstr ""
+"Hier können Sie einstellen wie die Benutzer im Anmeldungsfenster dargestellt "
+"werden."
+
+#. Tag: para
+#: index.docbook:890
+#, no-c-format
+msgid ""
+"Independently of the users you specify by name, you can use the "
+"<guilabel>System UIDs</guilabel> to specify a range of valid <acronym>UID</"
+"acronym>s that are shown in the list. By default user id's under 1000, which "
+"are often system or daemon users, and user id's over 30000, are not shown."
+msgstr ""
+"Unabhängig von den namentlich gelisteten Benutzern können Sie einen Bereich "
+"der numerischen <guilabel>System-Benutzerkennungen (UIDs)</guilabel> "
+"festlegen der in der Liste angezeigt werden soll. Die Voreinstellung "
+"schließt <acronym>UID</acronym>s unterhalb von 1000 aus, da diese häufig "
+"Dämonen oder Systemdienste sind. Gleichfalls werden UIDs größer als 30000 "
+"nicht angezeigt."
+
+#. Tag: para
+#: index.docbook:896
+#, no-c-format
+msgid ""
+"You may disable the user list in &kdm; entirely in the <guilabel>Users</"
+"guilabel> section. You can choose from:"
+msgstr ""
+"Sie können die Benutzerliste im Abschnitt <guilabel>Benutzer</guilabel> von "
+"&kdm; ganz ausblenden. Sie haben folgende Wahlmöglichkeiten:"
+
+#. Tag: guilabel
+#: index.docbook:901
+#, no-c-format
+msgid "Show list"
+msgstr "Benutzerliste anzeigen"
+
+#. Tag: para
+#: index.docbook:903
+#, no-c-format
+msgid ""
+"Only show users you have specifically not excluded in the list alongside"
+msgstr ""
+"Zeigt nur Benutzer an, die in der nebenstehenden Liste nicht ausgeschlossen "
+"sind."
+
+#. Tag: para
+#: index.docbook:905
+#, no-c-format
+msgid ""
+"If you do not check this box, no list will be shown. This is the most secure "
+"setting, since an attacker would then have to guess a valid login name as "
+"well as a password. It is also the preferred option if you have more than a "
+"handful of users to list, or the list itself would become unwieldy."
+msgstr ""
+"Wenn Sie das Ankreuzfeld nicht markieren, wird keine Liste angezeigt. Das "
+"ist die sicherste Einstellung, da ein Angreifer erst einen gültigen "
+"Benutzernamen und ein gültiges Passwort finden muss. Außerdem ist es eine "
+"gute Einstellung, wenn Sie zahlreiche Benutzer auf diesem System haben - die "
+"Liste kann sonst unübersichtlich werden."
+
+#. Tag: guilabel
+#: index.docbook:913
+#, no-c-format
+msgid "Autocompletion"
+msgstr "Autom. Vervollständigung"
+
+#. Tag: para
+#: index.docbook:915
+#, no-c-format
+msgid ""
+"If this option is checked, &kdm; will automatically complete user names "
+"while they are typed in the line edit."
+msgstr ""
+"Wenn diese Einstellung aktiv ist, wird  den Benutzernamen beim Eintippen "
+"automatisch vervollständigen."
+
+#. Tag: guilabel
+#: index.docbook:920
+#, no-c-format
+msgid "Inverse selection"
+msgstr "Umgekehrte Auswahl"
+
+#. Tag: para
+#: index.docbook:922
+#, no-c-format
+msgid ""
+"Allows you to instead select a list of users that should be shown, and all "
+"other users will <emphasis>not</emphasis> be listed."
+msgstr ""
+"Mit dieser Einstellung können Sie aus einer Liste die Benutzer auswählen, "
+"die<emphasis>nicht</emphasis> angezeigt werden sollen. Alle anderen werden "
+"angezeigt."
+
+#. Tag: para
+#: index.docbook:929
+#, no-c-format
+msgid ""
+"You can also enable the <guilabel>Sort users</guilabel> checkbox, to have "
+"the user list sorted alphabetically. If this is disabled, users will appear "
+"in the order they are listed in the password file. &kdm; will also "
+"autocomplete user names if you enable the <guilabel>Autocompletion</"
+"guilabel> option."
+msgstr ""
+"Sie können auch die Option <guilabel>Benutzer sortieren</guilabel> "
+"ankreuzen, um die Benutzer in alphabetischer Reihenfolge anzuzeigen. Ist "
+"diese Einstellung nicht markiert, werden die Benutzer in der Reihenfolge "
+"angezeigt, in der sie in der Passwortdatei stehen. Wenn Sie die Einstellung "
+"<guilabel>Autom. Vervollständigung</guilabel> eingeschaltet haben, "
+"vervollständigt &kdm; Benutzernamen."
+
+#. Tag: para
+#: index.docbook:935
+#, no-c-format
+msgid ""
+"If you choose to show users, then the login window will show images (which "
+"you select), of a list of users. When someone is ready to login, they may "
+"select their user name/image, enter their password, and they are granted "
+"access."
+msgstr ""
+"Wenn Sie die Benutzer anzeigen lassen, zeigt das Anmeldungsfenster eine "
+"Liste mit (wählbaren) Bilder für die Benutzer an. Wenn sich jemand anmelden "
+"möchte, kann er seinen Benutzernamen oder sein Bild anklicken, das Passwort "
+"eingeben und wird dann angemeldet."
+
+#. Tag: para
+#: index.docbook:940
+#, no-c-format
+msgid ""
+"If you permit a user image, then you can configure the <guilabel> User Image "
+"Source</guilabel>:"
+msgstr ""
+"Wenn Sie Benutzerbilder zulassen, dann können Sie die <guilabel>Quelle für "
+"Benutzerbild</guilabel> einstellen:"
+
+#. Tag: para
+#: index.docbook:943
+#, no-c-format
+msgid ""
+"Here you can specify where &kdm; will obtain the images that represent "
+"users. <guilabel>System</guilabel> represents the global folder; these are "
+"the pictures you can set below. <guilabel>User</guilabel> means that &kdm; "
+"should read the user's <filename>$<envar>HOME</envar>/.face.icon</filename> "
+"file. The two selections in the middle define the order of preference if "
+"both sources are available."
+msgstr ""
+"Hier können Sie angeben, woher &kdm; die Bilder für die Benutzer bezieht. "
+"<guilabel>System</guilabel> steht für den globalen Ordner, Sie sehen die "
+"Bilder weiter unten aufgeführt. <guilabel>Benutzer</guilabel> bedeutet, dass "
+"&kdm; das Bild aus der Datei <filename>$<envar>HOME</envar>/.face.icon</"
+"filename> lädt. Mit den beiden mittleren Einstellungen können Sie bestimmen, "
+"in welcher Reihenfolge das Vorhandensein der Bilddateien geprüft wird."
+
+#. Tag: para
+#: index.docbook:951
+#, no-c-format
+msgid ""
+"If you choose not to show users, then the login window will be more "
+"traditional. Users will need to type their username and password to gain "
+"entrance. This is the preferred way if you have many users on this terminal."
+msgstr ""
+"Wenn Sie die Benutzerliste nicht anzeigen, ist das Erscheinungsbild des "
+"Anmeldefensters eher traditionell. Benutzer müssen ihren Benutzernamen und "
+"ihr Passwort eingeben, um sich anzumelden. Bei sehr vielen Benutzern wird "
+"diese Option empfohlen."
+
+#. Tag: title
+#: index.docbook:959
+#, no-c-format
+msgid "Convenience"
+msgstr "Vereinfachung"
+
+#. Tag: para
+#: index.docbook:961
+#, no-c-format
+msgid ""
+"In the <guilabel>Convenience</guilabel> tab you can configure some options "
+"that make life easier for lazy people, like automatic login or disabling "
+"passwords."
+msgstr ""
+"Auf der Karteikarte <guilabel>Vereinfachung</guilabel> können Sie Ihr Leben "
+"einfacher gestalten. Hier lässt sich die automatische Anmeldung einstellen "
+"und hier können Passwörter abgeschaltet werden."
+
+#. Tag: para
+#: index.docbook:965
+#, no-c-format
+msgid ""
+"Please think more than twice before using these options. Every option in the "
+"<guilabel>Convenience</guilabel> tab is well-suited to seriously compromise "
+"your system security. Practically, these options are only to be used in a "
+"completely non-critical environment, &eg; a private computer at home."
+msgstr ""
+"Diese Einstellungen sollte man sich genau überlegen. Alle Optionen im "
+"Reiter<guilabel>Vereinfachung</guilabel> können die Sicherheit Ihres Systems "
+"schwer beeinträchtigen. Im Normalfall sollten diese Optionen nur in einer "
+"absolut unkritischen Umgebung benutzt werden - &eg; bei einem Privatcomputer "
+"Zuhause."
+
+#. Tag: title
+#: index.docbook:972
+#, no-c-format
+msgid "Automatic Login"
+msgstr "Automatische Anmeldung"
+
+#. Tag: para
+#: index.docbook:974
+#, no-c-format
+msgid ""
+"Automatic login will give anyone access to a certain account on your system "
+"without doing any authentication. You can enable it using the option "
+"<guilabel>Enable Auto-Login</guilabel>."
+msgstr ""
+"Automatische Anmeldung ermöglicht jedem den Zugang zu einem bestimmten "
+"Benutzerkonto auf Ihrem System - ohne irgendeine Überprüfung. Dies kann über "
+"die Option <guilabel>Automatische Anmeldung erlauben</guilabel> "
+"eingeschaltet werden."
+
+#. Tag: para
+#: index.docbook:978
+#, no-c-format
+msgid ""
+"You can choose the account to be used for automatic login from the list "
+"labeled <guilabel>User:</guilabel>."
+msgstr ""
+"Das dafür zugelassene Benutzerkonto können sie aus der Liste "
+"<guilabel>Benutzer:</guilabel>auswählen."
+
+#. Tag: para
+#: index.docbook:981
+#, no-c-format
+msgid ""
+"With <guilabel>Lock session</guilabel> the automatically started session "
+"will be locked immediately (provided it is a &kde; session). This can be "
+"used to obtain a super-fast login restricted to one user."
+msgstr ""
+"Mit der Einstellung <guilabel>Sitzung sperren</guilabel> wird die "
+"automatisch gestartete Sitzung sofort gesperrt (sofern es sich um eine &kde;-"
+"Sitzung handelt). Auf diese Weise ist eine sehr schnelle Anmeldung möglich "
+"(beschränkt auf einen Benutzer)."
+
+#. Tag: para
+#: index.docbook:986
+#, no-c-format
+msgid ""
+"Automatic login can be suppressed by pressing the &Shift; key immediately "
+"after the &X-Server; switches to graphics mode and releasing it when &kdm;'s "
+"hourglass cursor appears."
+msgstr ""
+"Die automatische Anmeldung kann durch Betätigen der &Shift;taste direkt "
+"nachdem der &X-Server; in den grafischen Modus gewechselt ist unterdrückt "
+"werden. Sie können die &Shift;taste wieder loslassen, wenn der Stundenglas-"
+"Mauszeiger von &kdm; erscheint. "
+
+#. Tag: guilabel
+#: index.docbook:992
+#, no-c-format
+msgid "Preselected User"
+msgstr "Vorausgewählter Benutzer"
+
+#. Tag: para
+#: index.docbook:994
+#, no-c-format
+msgid ""
+"You can also choose which user is <quote>preselected</quote> when &kdm; "
+"starts. The default is <guilabel>None</guilabel>, but you can choose "
+"<guilabel>Previous</guilabel> to have &kdm; default to the last successfully "
+"logged in user, or you can <guilabel>Specify</guilabel> a particular user to "
+"always be selected from the list. You can also have &kdm; set the focus to "
+"the password field, so that when you reach the &kdm; login screen, you can "
+"type the password immediately."
+msgstr ""
+"Sie können auch auswählen welcher Benutzer beim Start von &kdm; zunächst "
+"<quote>vorgeschlagen</quote> wird. Als Voreinstellung steht "
+"<guilabel>Keiner</guilabel>.Die Option <guilabel>Vorheriger</guilabel> "
+"schlägt automatisch den bei der letzten erfolgreichen Anmeldung verwendeten "
+"Namen vor. Es ist auch möglich immer einen bestimmten Benutzer "
+"vorzuschlagen. Zusätzlich kann &kdm; den Cursor in das Passwort-Feld setzen "
+"- dann können Sie bei Anzeige des Anmeldefensters sofort Ihr Passwort "
+"eingeben."
+
+#. Tag: guilabel
+#: index.docbook:1006
+#, no-c-format
+msgid "Password-Less Login"
+msgstr "Anmeldung ohne Passwort"
+
+#. Tag: para
+#: index.docbook:1008
+#, no-c-format
+msgid ""
+"Using this feature, you can allow certain users to login without having to "
+"provide their password. Enable this feature using the <guilabel>Enable "
+"Password-Less Logins</guilabel> option."
+msgstr ""
+"Mit dieser Option können sich bestimmte Benutzer ohne Passwort anmelden. "
+"Diese Funktion wird über <guilabel>Anmeldung ohne Passwort zulassen</"
+"guilabel> aktiviert."
+
+#. Tag: para
+#: index.docbook:1012
+#, no-c-format
+msgid ""
+"Below this option you'll see a list of users on the system. Enable password-"
+"less login for specific users by checking the checkbox next to the login "
+"names. By default, this feature is disabled for all users."
+msgstr ""
+"Unterhalb dieser Einstellung sehen Sie eine Liste mit Benutzern des Systems. "
+"Benutzer die sich ohne Passwort anmelden können, können dort angekreuzt "
+"werden. In Normaleinstellung ist keiner der Benutzer angekreuzt."
+
+#. Tag: para
+#: index.docbook:1017
+#, no-c-format
+msgid ""
+"Again, this option should only be used in a safe environment. If you enable "
+"it on a rather public system you should take care that only users with heavy "
+"access restrictions are granted password-less login, &eg; <systemitem>guest</"
+"systemitem>."
+msgstr ""
+"Wie gesagt, sollte diese Option nur in einer sicheren Umgebung verwendet "
+"werden. Wird sie in einem eher öffentlich zugänglichen System verwendet, "
+"dann sollten Sie sicherstellen, dass sie nur bei Benutzerkonten mit niedrig "
+"gesetzten Zugriffsrechten eingesetzt wird - &eg; beim Konto "
+"<systemitem>guest</systemitem>."
+
+#. Tag: para
+#: index.docbook:1023
+#, no-c-format
+msgid ""
+"The <guilabel>Automatically login after X server crash</guilabel> option "
+"allows you to skip the authentication procedure when your X server "
+"accidentally crashed."
+msgstr ""
+"Die Option <guilabel>Nach Absturz des X-Servers automatisch wieder anmelden</"
+"guilabel> überspringt die Anmeldeprozedur falls ihr X-Server unbeabsichtigt "
+"abstürzt."
+
+#. Tag: title
+#: index.docbook:1041
+#, no-c-format
+msgid "Configuring your system to use &kdm;"
+msgstr "Ihr System für die Benutzung von &kdm; einrichten"
+
+#. Tag: para
+#: index.docbook:1043
+#, no-c-format
+msgid ""
+"This chapter assumes that your system is already configured to run the &X-"
+"Window;, and that you only need to reconfigure it to allow graphical login."
+msgstr ""
+"Für dieses Kapitel wird vorausgesetzt, dass Ihr System bereits für das X "
+"Window System eingerichtet ist und das Sie es nur noch für eine grafische "
+"Anmeldung einstellen müssen."
+
+#. Tag: title
+#: index.docbook:1048
+#, no-c-format
+msgid "Setting up &kdm;"
+msgstr "&kdm; einstellen"
+
+#. Tag: para
+#: index.docbook:1050
+#, no-c-format
+msgid ""
+"The fundamental thing that controls whether your computer boots to a "
+"terminal prompt (console mode) or a graphical login prompt is the default "
+"runlevel. The runlevel is set by the program <application> <ulink url=\"man:"
+"init\">/sbin/init</ulink></application> under the control of the "
+"configuration file <filename>/etc/inittab</filename>. The default runlevels "
+"used by different &UNIX; systems (and different &Linux; distributions) vary, "
+"but if you look at <filename>/etc/inittab</filename> the start of it should "
+"be something like this:"
+msgstr ""
+"Der Standard-Runlevel bestimmt, ob Ihr Systemstart mit einer "
+"Eingabeaufforderung auf einem Terminal (Konsolen-Modus) endet oder mit einer "
+"grafischen Eingabeaufforderung wie &kdm;. Der Runlevel wird vom Programm "
+"<application><ulink url=\"man:init\">/sbin/init</ulink></application> "
+"gesetzt, das die Datei <filename>/etc/inittab</filename> benutzt. Die "
+"Standard-Runlevel, die von verschiedenen Unix-Systemen (und Linux-"
+"Distributionen) benutzt werden, sind unterschiedlich, aber wenn Sie die "
+"Datei <filename>/etc/inittab</filename> betrachten, sollte der Anfang dieser "
+"Datei in etwa so aussehen:"
+
+#. Tag: screen
+#: index.docbook:1059
+#, no-c-format
+msgid ""
+"# Default runlevel. The runlevels used by RHS are:\n"
+"# 0 - halt (Do NOT set initdefault to this)\n"
+"# 1 - Single user mode\n"
+"# 2 - Multiuser, without NFS\n"
+"# 3 - Full multiuser mode\n"
+"# 4 - unused\n"
+"# 5 - X11\n"
+"# 6 - reboot (Do NOT set initdefault to this)\n"
+"\n"
+"id:3:initdefault:"
+msgstr ""
+"# Default Runlevel. The Runlevels used by RHS are:\n"
+"# 0 - halt (Do NOT set initdefault to this)\n"
+"# 1 - Single user mode\n"
+"# 2 - Multiuser, without NFS\n"
+"# 3 - Full multiuser mode\n"
+"# 4 - unused\n"
+"# 5 - X11\n"
+"# 6 - reboot (Do NOT set initdefault to this)\n"
+"\n"
+"id:3:initdefault:"
+
+#. Tag: para
+#: index.docbook:1061
+#, no-c-format
+msgid ""
+"All but the last line of this extract are comments. The comments show that "
+"runlevel 5 is used for X11 and that runlevel 3 is used for multi-user mode "
+"without X11 (console mode). The final line specifies that the default "
+"runlevel of the system is 3 (console mode). If your system currently uses "
+"graphical login (for example, using &xdm;) its default runlevel will match "
+"the runlevel specified for X11."
+msgstr ""
+"Alle Zeilen dieses Auszuges bis auf die letzte sind Kommentare. Die "
+"Kommentare zeigen, dass Runlevel 5 für X11 benutzt wird und Runlevel 3 für "
+"den Mehrfachbenutzermodus ohne X11 (Konsolen-Modus). Die letzte Zeile legt "
+"fest, dass der Standard-Runlevel des Systems 3 ist (Konsolen-Modus). Wenn "
+"Ihr System zurzeit eine grafische Eingabeaufforderung benutzt (&eg; &xdm;), "
+"wird sein Standard-Runlevel dem für X11 entsprechen."
+
+#. Tag: para
+#: index.docbook:1068
+#, no-c-format
+msgid ""
+"The runlevel with graphical login (&xdm;) for some common &Linux; "
+"distributions is:"
+msgstr ""
+"Der Runlevel mit grafischer Eingabeaufforderung (&xdm;) hat für einige "
+"gebräuchliche Linux-Distributionen folgende Werte:"
+
+#. Tag: para
+#: index.docbook:1072
+#, no-c-format
+msgid "5 for &RedHat; 3.x and later, and for &Mandrake;"
+msgstr "5 für &RedHat; ab 3.x und für &Mandrake;"
+
+#. Tag: para
+#: index.docbook:1073
+#, no-c-format
+msgid "4 for Slackware"
+msgstr "4 für Slackware"
+
+#. Tag: para
+#: index.docbook:1074
+#, no-c-format
+msgid "3 for &SuSE;. 4.x and 5.x"
+msgstr "3 für &SuSE; 4.x, und 5.x"
+
+#. Tag: para
+#: index.docbook:1077
+#, no-c-format
+msgid ""
+"The first step in configuring your system is to ensure that you can start "
+"&kdm; from the command line. Once this is working, you can change your "
+"system configuration so that &kdm; starts automatically each time you reboot "
+"your system."
+msgstr ""
+"Der erste Schritt für Ihr System ist, sicherzustellen, dass Sie &kdm; von "
+"der Befehlszeile aus starten können. Wenn das funktioniert, können Sie Ihr "
+"System so einrichten, dass &kdm; automatisch bei jedem System(neu)start "
+"startet."
+
+#. Tag: para
+#: index.docbook:1082
+#, no-c-format
+msgid ""
+"To test &kdm;, you must first bring your system to a runlevel that does not "
+"run &xdm;. To do so, issue a command like this:"
+msgstr ""
+"Um &kdm; zu testen, müssen Sie Ihr System zuerst in einen Runlevel bringen, "
+"in dem &xdm; nicht läuft. Dazu müssen Sie einen Befehl wie den folgenden "
+"geben:"
+
+#. Tag: screen
+#: index.docbook:1085
+#, no-c-format
+msgid "<command>/sbin/init <option>3</option></command>"
+msgstr "<command>/sbin/init <option>3</option></command>"
+
+#. Tag: para
+#: index.docbook:1087
+#, no-c-format
+msgid ""
+"Instead of the number <option>3</option> you should specify the appropriate "
+"runlevel for console mode on your system."
+msgstr ""
+"Anstelle der Zahl <option>3</option> müssen Sie den entsprechenden Wert für "
+"den Konsolen-Modus auf Ihrem System benutzen."
+
+#. Tag: para
+#: index.docbook:1090
+#, no-c-format
+msgid ""
+"If your system uses Pluggable Authentication Modules (<abbrev>PAM</abbrev>), "
+"which is normal with recent &Linux; and &Solaris; systems, you should check "
+"that your <abbrev>PAM</abbrev> configuration permits login through the "
+"service named <literal>kde</literal>. If you previously used &xdm; "
+"successfully, you should not need to make any changes to your <abbrev>PAM</"
+"abbrev> configuration in order to use &kdm;. <filename>/etc/pam.conf</"
+"filename> or <filename>/etc/pam.d/kde</filename>. Information on configuring "
+"<abbrev>PAM</abbrev> is beyond the scope of this handbook, but <abbrev>PAM</"
+"abbrev> comes with comprehensive documentation (try looking in <filename>/"
+"usr/share/doc/*pam*/html/</filename>)."
+msgstr ""
+"Wenn Ihr System Pluggable Authentication Modules (<abbrev>PAM</abbrev>) "
+"benutzt, was bei den meisten modernen &Linux;- und Solaris-Systemen der Fall "
+"ist, sollten Sie prüfen, ob Ihre <abbrev>PAM</abbrev>-Einstellungen das "
+"Anmelden mit einem Dienst namens<literal>kde</literal> erlauben. Wenn Sie "
+"&xdm; bereits vorher erfolgreich benutzt haben, müssen Sie Ihre <abbrev>PAM</"
+"abbrev>-Einstellungen nicht ändern, um &kdm; benutzen zu können (<filename>/"
+"etc/pam.conf</filename> oder <filename>/etc/pam.d/kde</filename>). Hinweise "
+"zur Einrichtung von <abbrev>PAM</abbrev> würden den Rahmen dieses Handbuches "
+"sprengen, aber zu <abbrev>PAM</abbrev> gibt es eine umfangreiche "
+"Dokumentation.(siehe auch <filename>/usr/share/doc/*pam*/html/</filename>)."
+
+#. Tag: para
+#: index.docbook:1102
+#, no-c-format
+msgid "Now it's time for you to test &kdm; by issuing the following command:"
+msgstr "Jetzt sollten Sie &kdm; mit dem folgenden Befehl testen:"
+
+#. Tag: screen
+#: index.docbook:1105
+#, no-c-format
+msgid "<command>kdm <option>-nodaemon</option></command>"
+msgstr "<command>kdm <option>-nodaemon</option></command>"
+
+#. Tag: para
+#: index.docbook:1107
+#, no-c-format
+msgid ""
+"If you get a &kdm; login dialog and you are able to log in, things are going "
+"well. The main thing that can go wrong here is that the run-time linker "
+"might not find the shared &Qt; or &kde; libraries. If you have a binary "
+"distribution of the &kde; libraries, make sure &kdm; is installed where the "
+"libraries believe &kde; is installed and try setting some environment "
+"variables to point to your &kde; and &Qt; libraries."
+msgstr ""
+"Wenn Sie das &kdm;-Anmeldefenster sehen und sich anmelden können, ist alles "
+"in Ordnung. Das Schlimmste, was hier passieren kann, ist dass der Laufzeit-"
+"Linker die shared libraries für &Qt; oder &kde; nicht findet. Wenn Sie eine "
+"binäre Distribution der &kde;-Bibliotheken installiert haben, stellen Sie "
+"sicher, dass &kdm; dort installiert ist, wo die Bibliotheken die anderen "
+"Bestandteile von &kde; vermuten und setzen Sie die Umgebungsvariablen, die "
+"auf Ihre &kde;- und &Qt;-Bibliotheken zeigen."
+
+#. Tag: para
+#: index.docbook:1115
+#, no-c-format
+msgid "For example:"
+msgstr "Zum Beispiel:"
+
+#. Tag: screen
+#: index.docbook:1117
+#, no-c-format
+msgid ""
+"<command>export \n"
+"<option>KDEDIR=<replaceable>/opt/kde</replaceable></option></command>\n"
+"<command>export \n"
+"<option>QTDIR=<replaceable>/usr/lib/qt4</replaceable></option></command>\n"
+"<command>export \n"
+"<option>PATH=<replaceable>$KDEDIR/bin:$QTDIR/bin:$PATH</replaceable></"
+"option></command>\n"
+"<command>export \n"
+"<option>LD_LIBRARY_PATH=<replaceable>$KDEDIR/lib:$QTDIR/lib</replaceable></"
+"option></command>"
+msgstr ""
+"<command>export \n"
+"<option>KDEDIR=<replaceable>/opt/kde</replaceable></option></command>\n"
+"<command>export \n"
+"<option>QTDIR=<replaceable>/usr/lib/qt4</replaceable></option></command>\n"
+"<command>export \n"
+"<option>PATH=<replaceable>$KDEDIR/bin:$QTDIR/bin:$PATH</replaceable></"
+"option></command>\n"
+"<command>export \n"
+"<option>LD_LIBRARY_PATH=<replaceable>$KDEDIR/lib:$QTDIR/lib</replaceable></"
+"option></command>"
+
+#. Tag: para
+#: index.docbook:1119
+#, no-c-format
+msgid ""
+"If you are still unsuccessful, try starting &xdm; instead, to make sure that "
+"you are not suffering from a more serious X configuration problem."
+msgstr ""
+"Wenn Sie noch immer keinen Erfolg haben, versuchen Sie, stattdessen &xdm; zu "
+"starten um sicherzustellen, dass kein grundlegenderes Problem mit den X-"
+"Einstellungen dahinter steckt."
+
+#. Tag: para
+#: index.docbook:1123
+#, no-c-format
+msgid ""
+"When you are able to start &kdm; successfully, you can start to replace "
+"&xdm; by &kdm;. Again, this is distribution-dependent."
+msgstr ""
+"Wenn Sie &kdm; erfolgreich starten können, ersetzen Sie &xdm; durch &kdm;. "
+"Dies ist wieder je nach Distribution unterschiedlich."
+
+#. Tag: para
+#: index.docbook:1128
+#, no-c-format
+msgid ""
+"For &RedHat;, edit <filename>/etc/inittab</filename>, look for this line:"
+msgstr ""
+"Bei einer &RedHat;.-Distribution bearbeiten Sie in <filename>/etc/inittab</"
+"filename>, diese Zeile:"
+
+#. Tag: screen
+#: index.docbook:1130
+#, no-c-format
+msgid "x:5:respawn:/usr/X11/bin/xdm -nodaemon"
+msgstr "x:5:respawn:/usr/X11/bin/xdm -nodaemon"
+
+#. Tag: para
+#: index.docbook:1131
+#, no-c-format
+msgid "and replace with:"
+msgstr "und ersetzen Sie diese durch:"
+
+#. Tag: screen
+#: index.docbook:1132
+#, no-c-format
+msgid "x:5:respawn:/opt/kde/bin/kdm"
+msgstr "x:5:respawn:/opt/kde/bin/kdm"
+
+#. Tag: para
+#: index.docbook:1133
+#, no-c-format
+msgid ""
+"This tells <command>init</command>(8) to respawn &kdm; when the system is in "
+"run level 5. Note that &kdm; does not need the <option>-nodaemon</option> "
+"option."
+msgstr ""
+"Dadurch wird <command>init</command> dazu veranlasst &kdm; neu zu starten, "
+"wenn sich das System im Runlevel 5 befindet. Beachten Sie, dass &kdm; die "
+"Option <option>-nodaemon</option> nicht benötigt."
+
+#. Tag: para
+#: index.docbook:1138
+#, no-c-format
+msgid ""
+"For &Mandrake;, the X11 runlevel in <filename>/etc/inittab</filename> "
+"invokes the shell script <filename>/etc/X11/prefdm</filename>, which is set "
+"up to select from amongst several display managers, including &kdm;. Make "
+"sure that all the paths are correct for your installation."
+msgstr ""
+"Bei einer &Mandrake;-Distribution wird im X11 Runlevel in <filename>/etc/"
+"inittab</filename> das Shellskript <filename>/etc/X11/prefdm</filename> "
+"aufgerufen. In diesem Skript wird ausgewählt, welcher Anmeldungsmanager "
+"(unter anderem &kdm;) benutzt wird. Stellen Sie sicher, dass alle "
+"Verzeichnispfade korrekt sind."
+
+#. Tag: para
+#: index.docbook:1145
+#, no-c-format
+msgid ""
+"For &SuSE;, edit <filename>/sbin/init.d/xdm</filename> to add a first line:"
+msgstr ""
+"Bei einer&SuSE; -Distribution müssen Sie in der Datei <filename>/sbin/init.d/"
+"xdm</filename> ganz am Anfang die folgende Zeilen hinzufügen:"
+
+#. Tag: screen
+#: index.docbook:1148
+#, no-c-format
+msgid ""
+". /etc/rc.config\n"
+"DISPLAYMANAGER=kdm\n"
+"export DISPLAYMANAGER"
+msgstr ""
+". /etc/rc.config\n"
+"DISPLAYMANAGER=kdm\n"
+"export DISPLAYMANAGER"
+
+#. Tag: para
+#: index.docbook:1150
+#, no-c-format
+msgid ""
+"For FreeBSD, edit <filename>/etc/ttys</filename> and find the line like this:"
+msgstr ""
+"Bei FreeBSD bearbeiten Sie <filename>/etc/ttys</filename> und suchen Sie die "
+"folgende Zeile:"
+
+#. Tag: screen
+#: index.docbook:1152
+#, no-c-format
+msgid "ttyv8   \"/usr/X11R6/bin/xdm -nodaemon\"  xterm   off secure"
+msgstr "ttyv8   \"/usr/X11R6/bin/xdm -nodaemon\"  xterm   off secure"
+
+#. Tag: para
+#: index.docbook:1153
+#, no-c-format
+msgid "and edit it to this:"
+msgstr "und ändern Sie diese wie folgt:"
+
+#. Tag: screen
+#: index.docbook:1154
+#, no-c-format
+msgid "ttyv8   \"/opt/kde/bin/kdm\"  xterm   on secure"
+msgstr "ttyv8   \"/opt/kde/bin/kdm\"  xterm   on secure"
+
+#. Tag: para
+#: index.docbook:1157
+#, no-c-format
+msgid "Most other distributions are a variation of one of these."
+msgstr ""
+"Bei den meisten anderen Distributionen wird die Einrichtung auf eine "
+"vergleichbare Art vorgenommen."
+
+#. Tag: para
+#: index.docbook:1161
+#, no-c-format
+msgid ""
+"At this stage, you can test &kdm; again by bringing your system to the "
+"runlevel that should now run &kdm;. To do so, issue a command like this:"
+msgstr ""
+"Nun können Sie &kdm; testen, indem Sie Ihr System auf den Runlevel für die "
+"grafische Anmeldung bringen. Geben Sie auf der Befehlszeile folgenden Befehl "
+"ein:"
+
+#. Tag: screen
+#: index.docbook:1165
+#, no-c-format
+msgid "<command>/sbin/init <option>5</option></command>"
+msgstr "<command>/sbin/init <option>5</option></command>"
+
+#. Tag: para
+#: index.docbook:1167
+#, no-c-format
+msgid ""
+"Instead of the number <option>5</option> you should specify the appropriate "
+"runlevel for running X11 on your system."
+msgstr ""
+"Anstelle der Zahl <option>5</option> nehmen Sie den entsprechenden Wert für "
+"den Runlevel auf Ihrem System, der X11 startet."
+
+#. Tag: para
+#: index.docbook:1170
+#, no-c-format
+msgid ""
+"The final step is to edit the <parameter>initdefault</parameter> entry in "
+"<filename>/etc/inittab</filename> to specify the appropriate runlevel for "
+"X11."
+msgstr ""
+"Als letzten Schritt müssen Sie den Parameter <parameter>initdefault</"
+"parameter> in der Datei <filename>/etc/inittab</filename> ändern. Geben Sie "
+"hier den Runlevel an, der X11 startet."
+
+#. Tag: para
+#: index.docbook:1174
+#, no-c-format
+msgid ""
+"Before you make this change, ensure that you have a way to reboot your "
+"system if a problem occurs. This might be a <quote>rescue</quote> floppy-"
+"disk provided by your operating system distribution or a specially-designed "
+"<quote>rescue</quote> floppy-disk, such as <literal>tomsrtbt</literal>. "
+"Ignore this advice at your peril."
+msgstr ""
+"Bevor Sie diese Änderungen durchführen, sollten Sie sicherstellen, dass Sie "
+"ihr System neu starten können, falls ein Problem auftritt. Dies kann in Form "
+"einer <quote>Rettungs</quote>-Bootdiskette Ihrer Distribution oder auch "
+"durch ein spezielles <quote>Rettungssystem</quote> wie etwa "
+"<literal>tomsrtbt</literal> geschehen. Bitte nehmen Sie diese Warnung ernst."
+
+#. Tag: para
+#: index.docbook:1181
+#, no-c-format
+msgid "This usually involves changing the line:"
+msgstr "Das erfordert gewöhnlich eine Änderung der folgenden Zeile:"
+
+#. Tag: screen
+#: index.docbook:1182
+#, no-c-format
+msgid "id:3:initdefault:"
+msgstr "id:3:initdefault:"
+
+#. Tag: para
+#: index.docbook:1183
+#, no-c-format
+msgid "<para>to</para>"
+msgstr "<para>zu</para>"
+
+#. Tag: screen
+#: index.docbook:1184
+#, no-c-format
+msgid "id:5:initdefault:"
+msgstr "id:5:initdefault:"
+
+#. Tag: para
+#: index.docbook:1186
+#, no-c-format
+msgid ""
+"When you reboot your system, you should end up with the graphical &kdm; "
+"login dialog."
+msgstr ""
+"Nach einem Neustart sollten Sie jetzt das grafische Anmeldungsfenster von "
+"&kdm; sehen."
+
+#. Tag: para
+#: index.docbook:1189
+#, no-c-format
+msgid ""
+"If this step is unsuccessful the most likely problem is that the environment "
+"used at boot time differs from the environment that you used for testing at "
+"the command line. If you are trying to get two versions of &kde; to co-"
+"exist, be particularly careful that the settings you use for your "
+"<envar>PATH</envar> and <envar>LD_LIBRARY_PATH</envar> environment variables "
+"are consistent, and that the startup scripts are not over-riding them in "
+"some way."
+msgstr ""
+"Sollte das nicht geschehen, so liegt das Problem wahrscheinlich darin, dass "
+"die Umgebungsvariable während des Bootvorgangs andere Werte haben, als "
+"während ihres Tests. Falls Sie versuchen, zwei Version von &kde; "
+"nebeneinander zu betreiben, sollten Sie besonders darauf achten, dass die "
+"Umgebungsvariablen <envar>PATH</envar> und <envar>LD_LIBRARY_PATH</envar> "
+"korrekt gesetzt sind, und dass die Startup-Skripte diese nicht irgendwie "
+"überschreiben."
+
+#. Tag: title
+#: index.docbook:1202
+#, no-c-format
+msgid "Supporting multiple window managers"
+msgstr "Unterstützung mehrerer Window-Manager"
+
+#. Tag: para
+#: index.docbook:1204
+#, no-c-format
+msgid ""
+"&kdm; detects most available window managers and desktop environments when "
+"it is run. Installing a new one should make it automatically available in "
+"the &kdm; main dialog's <guimenuitem>Session Type</guimenuitem> submenu."
+msgstr ""
+"&kdm; erkennt die meisten verfügbaren Window-Manager und Arbeitsumgebungen "
+"beim Start. Neu installierte Umgebungen sollten automatisch im Hauptdialog "
+"von &kdm; unter <guimenuitem>Sitzungstyp</guimenuitem> erscheinen."
+
+#. Tag: para
+#: index.docbook:1208
+#, no-c-format
+msgid ""
+"If you have a very new window manager, or something that &kdm; does not "
+"support, the first thing you should check is that the executable to be run "
+"is in the <envar>PATH</envar> and has not been renamed by the distributor "
+"into something unexpected."
+msgstr ""
+"Verwenden Sie einen ziemlich neuen Window-Manager oder eine Umgebung, die "
+"&kdm; nicht unterstützt, sollten Sie zunächst prüfen, ob das ausführbare "
+"Programm im <envar>PATH</envar> steht und oder von der Distribution einen "
+"unüblichen Namen erhalten hat."
+
+#. Tag: para
+#: index.docbook:1213
+#, no-c-format
+msgid ""
+"If the case is that the session type is not supported by &kdm; yet (maybe "
+"because it is too new), you can quite easily add it."
+msgstr ""
+"Falls der Sitzungstyp sehr neu ist und von &kdm; noch nicht unterstützt "
+"wird, können Sie einen neuen Sitzungstyp einfach selbst hinzufügen."
+
+#. Tag: para
+#: index.docbook:1216
+#, no-c-format
+msgid ""
+"The session types are defined by <firstterm>.desktop</firstterm> files "
+"located in the directories listed in <link linkend=\"option-sessionsdirs"
+"\"><option>SessionsDirs</option></link>. The last named directory contains "
+"the system-provided default session types and is <filename class=\"directory"
+"\">$<envar>KDEDIR</envar>/share/apps/kdm/sessions</filename> in an "
+"installation from source. Software upgrades will typically overwrite "
+"anything in here, so it is unwise to use it for configuration purposes. "
+"Instead, a separate configuration directory should be listed first. It is "
+"set to <filename class=\"directory\">$<envar>KDEDIR</envar>/share/config/kdm/"
+"sessions</filename> in an installation from source, but distributors often "
+"change it to something like <filename class=\"directory\">/etc/kde4/kdm/"
+"sessions</filename>. You can simply add an appropriately named <literal role="
+"\"extension\">.desktop</literal> files here. The fields are:"
+msgstr ""
+"Die Sitzungstypen sind durch <firstterm>.desktop</firstterm>-Dateien "
+"definiert, die sich in den unter <link linkend=\"option-sessionsdirs"
+"\"><option>SessionsDirs</option></link> aufgeführten Ordnern befinden.Der "
+"zuletzt genannte Ordner enthält die vom System bereitgestellten "
+"Standardsitzungstypen. Bei einer Installation aus dem Quelltext befindet ist "
+"dieser der Ordner <filename class=\"directory\">$<envar>KDEDIR</envar>/share/"
+"apps/kdm/sessions</filename>. Bei der Aktualisierung der Software wird der "
+"Inhalt dieses Ordners normalerweise überschrieben. Daher sollten die Dateien "
+"in dem Ordner nicht für benutzerdefinierte Einstellungen verwendet werden. "
+"Stattdessen sollte zuerst ein eigener Ordner für benutzerdefinierte "
+"Einstellungen aufgeführt werden. Bei einer Installation aus dem Quelltext "
+"ist dies <filename class=\"directory\">$<envar>KDEDIR</envar>/share/config/"
+"kdm/sessions</filename>, Distributionen benutzen häufig Pfade wie <filename "
+"class=\"directory\">/etc/kde4/kdm/sessions</filename>. In diesen Ordner "
+"können Sie jede richtig benannte <literal role=\"extension\">.desktop</"
+"literal>-Datei einfügen. Diese Datei enthält folgende Einträge:"
+
+#. Tag: programlisting
+#: index.docbook:1232
+#, no-c-format
+msgid ""
+"[Desktop Entry]\n"
+"Encoding=UTF-8 <lineannotation>This is fixed to <option>UTF-8</option> and\n"
+"may be omitted</lineannotation>\n"
+"Type=XSession <lineannotation>This is fixed to <option>XSession</option> "
+"and\n"
+"may be omitted</lineannotation>\n"
+"Exec=<replaceable>executable name</replaceable> <lineannotation>Passed to\n"
+"<command>eval exec</command> in a Bourne shell</lineannotation>\n"
+"TryExec=<replaceable>executable name</replaceable> "
+"<lineannotation>Supported\n"
+"but not required</lineannotation>\n"
+"Name=<replaceable>name to show in the &kdm; session list</replaceable>"
+msgstr ""
+"[Desktop Entry]\n"
+"Encoding=UTF-8 <lineannotation>Dieses Feld ist auf <option>UTF-8</option> "
+"festgelegt und kann\n"
+"ausgelassen werden.</lineannotation>\n"
+"Type=XSession <lineannotation> Dieses Feld ist auf <option>XSession</option> "
+"festgelegt\n"
+"und kann ausgelassen werden.</lineannotation>\n"
+"Exec=<replaceable>executable name</replaceable> <lineannotation>Wird an \n"
+"<command>eval exec</command> in einer Bourne-Shell übergeben.</"
+"lineannotation>\n"
+"TryExec=<replaceable>executable name</replaceable> "
+"<lineannotation>Unterstützt, \n"
+"aber nicht erforderlich.</lineannotation>\n"
+"Name=<replaceable>Der Name, der in der  Liste der &kdm;-Sitzungen</"
+"replaceable> erscheint"
+
+#. Tag: para
+#: index.docbook:1234
+#, no-c-format
+msgid "There are also three <quote>magic</quote> types:"
+msgstr "Es gibt außerdem noch drei <quote>magische</quote> Sitzungstypen:"
+
+#. Tag: term
+#: index.docbook:1238
+#, no-c-format
+msgid "default"
+msgstr "Standard"
+
+#. Tag: para
+#: index.docbook:1240
+#, no-c-format
+msgid ""
+"The default session for &kdm; is normally &kde; but can be configured by the "
+"system administrator."
+msgstr ""
+"Die Standard-Sitzung für &kdm; ist normalerweise &kde;, aber Sie kann vom "
+"Systemverwalter angepasst werden."
+
+#. Tag: term
+#: index.docbook:1247
+#, no-c-format
+msgid "custom"
+msgstr "Benutzerdefiniert"
+
+#. Tag: para
+#: index.docbook:1249
+#, no-c-format
+msgid ""
+"The Custom session will run the user's ~/.xsession if it exists, falling "
+"back to the default session otherwise."
+msgstr ""
+"Die Sitzung <quote>Benutzerdefiniert</quote> führt die Datei ~/.xsession des "
+"Benutzers aus, sofern diese existiert. Existiert diese Datei nicht, wird "
+"eine Standardsitzung gestartet."
+
+#. Tag: term
+#: index.docbook:1256
+#, no-c-format
+msgid "failsafe"
+msgstr "Abgesichert"
+
+#. Tag: para
+#: index.docbook:1258
+#, no-c-format
+msgid ""
+"Failsafe will run a very plain session, and is useful only for debugging "
+"purposes."
+msgstr ""
+"Abgesichert startet eine minimale Arbeitssitzung und dient nur zu Debugging-"
+"Zwecken."
+
+#. Tag: para
+#: index.docbook:1266
+#, no-c-format
+msgid ""
+"To override a session type, copy the .desktop file from the data dir to the "
+"config dir and edit it at will. Removing the shipped session types can be "
+"accomplished by <quote>shadowing</quote> them with .desktop files containing "
+"Hidden=true. For the magic session types no .desktop files exist by default, "
+"but &kdm; pretends they would, so you can override them like any other type."
+msgstr ""
+"Um einen Sitzungstyp zu überschreiben, kopieren Sie die .desktop-Datei aus "
+"dem data-Ordern in den config-Ordner und bearbeiten Sie nach Ihren Wünschen. "
+"Die mitgelieferten Sitzungstypen können entfernt werden, indem diese durch ."
+"desktop-Dateien <quote>ausgeblendet</quote> werden, die den Eintrag "
+"Hidden=true enthalten. Für die magischen Sitzungstypen existieren per "
+"Voreinstellung keine .desktop-Dateien, aber &kdm; tut so, als sei dies der "
+"Fall. Deshalb können Sie diese wie jeden anderen Sitzungstyp überschreiben."
+
+#. Tag: title
+#: index.docbook:1276
+#, no-c-format
+msgid "Using &kdm; for Remote Logins (&XDMCP;)"
+msgstr "&kdm; für Anmeldungen über Fremdrechner benutzen (&XDMCP;)"
+
+#. Tag: para
+#: index.docbook:1278
+#, no-c-format
+msgid ""
+"&XDMCP; is the Open Group standard, the <quote>X Display Manager Control "
+"Protocol</quote>. This is used to set up connections between remote systems "
+"over the network."
+msgstr ""
+"&XDMCP; ist der Open-Group-Standard, das <quote>X Display Manager Control "
+"Protocol</quote>. Dieses wird benutzt um Verbindungen zwischen verschiedenen "
+"Rechnern eines Netzwerks herzustellen."
+
+#. Tag: para
+#: index.docbook:1282
+#, no-c-format
+msgid ""
+"&XDMCP; is useful in multiuser situations where there are users with "
+"workstations and a more powerful server that can provide the resources to "
+"run multiple X sessions. For example, &XDMCP; is a good way to reuse old "
+"computers - a Pentium or even 486 computer with 16 Mb RAM is sufficient to "
+"run X itself, and using &XDMCP; such a computer can run a full modern &kde; "
+"session from a server. For the server part, once a single &kde; (or other "
+"environment) session is running, running another one requires very few extra "
+"resources."
+msgstr ""
+"&XDMCP; ist in Situation von Nutzen in denen sich mehrere Benutzer mit "
+"Workstations einen leistungsstarken Server teilen, der mehrere X-Sitzungen "
+"gleichzeitig abwickeln kann. Zum Beispiel lässt sich &XDMCP; einsetzen um "
+"selbst alte Computer weiter verwenden zu können. Ein Pentium oder sogar nur "
+"ein 486er-Computer mit 16 MB RAM ist ausreichend um X zu betreiben. Mittels "
+"&XDMCP; kann so ein Computer eine komplette, moderne &kde;-Sitzung eines "
+"Servers ausführen. Auf dem Server gilt, dass weitere &kde;-Sitzungen zu "
+"einer bereits bestehenden nur geringfügig mehr Ressourcen verbrauchen."
+
+#. Tag: para
+#: index.docbook:1291
+#, no-c-format
+msgid ""
+"However, allowing another method of login to your machine obviously has "
+"security implications. You should run this service only if you need to allow "
+"remote X Servers to start login sessions on your system. Users with a single "
+"&UNIX; computer should not need to run this."
+msgstr ""
+"Dennoch - eine weitere Methode zur Anmeldung zum System bereitzustellen hat "
+"natürlich einen Einfluß auf die Sicherheit des Systems. Es empfiehlt sich "
+"diesen Service nur dann einzurichten wenn X-Server von Fremdrechnern auf "
+"diesem System Anmeldevorgänge durchführen sollen. Benutzer mit nur einem "
+"&UNIX;-System sollten diesen Service nicht aktivieren."
+
+#. Tag: title
+#: index.docbook:1300
+#, no-c-format
+msgid "Advanced Topics"
+msgstr "Fortgeschrittene Themen"
+
+#. Tag: title
+#: index.docbook:1303
+#, no-c-format
+msgid "Command Sockets"
+msgstr "Befehls-Sockets"
+
+#. Tag: para
+#: index.docbook:1305
+#, no-c-format
+msgid ""
+"This is a feature you can use to remote-control &kdm;. It's mostly intended "
+"for use by &ksmserver; and &kdesktop; from a running session, but other "
+"applications are possible as well."
+msgstr ""
+"Mit dieser Funktion können Sie &kdm; fernsteuern. Sie ist hauptsächlich für "
+"die Verwendung durch &ksmserver; und &kdesktop; aus einer laufenden Sitzung "
+"heraus gedacht, kann aber auch von anderen Anwendungen genutzt werden."
+
+#. Tag: para
+#: index.docbook:1309
+#, no-c-format
+msgid ""
+"The sockets are &UNIX; domain sockets which live in subdirectories of the "
+"directory specified by <option>FifoDir</option>=. The subdir is the key to "
+"addressing and security; the sockets all have the file name "
+"<filename>socket</filename> and file permissions <literal>rw-rw-rw-</"
+"literal> (0666). This is because some systems don't care for the file "
+"permission of the socket files."
+msgstr ""
+"Hierbei handelt es sich um &UNIX; Domain-Sockets, die sich in den "
+"Unterordnern des Ordners befinden, der durch <option>FifoDir</option>= "
+"festgelegt wurde. Der Unterordner ist der Schlüssel zur Adressierung und die "
+"Sicherheit. Alle Sockets haben den Namen <filename>socket</filename> sowie "
+"die Dateiberechtigung <literal>rw-rw-rw-</literal> (0666). Dies ist dadurch "
+"bedingt, dass manche Systeme die Dateiberechtigungen von Socket-Dateien "
+"ignorieren."
+
+#. Tag: para
+#: index.docbook:1316
+#, no-c-format
+msgid ""
+"There are two types of sockets: the global one (dmctl) and the per-display "
+"ones (dmctl-&lt;display&gt;)."
+msgstr ""
+"Es gibt zwei Arten von Sockets: den globalen (dmctl) und die display-"
+"spezifischen (dmctl-&lt;display&gt;)."
+
+#. Tag: para
+#: index.docbook:1319
+#, no-c-format
+msgid ""
+"The global one's subdir is owned by root, the subdirs of the per-display "
+"ones' are owned by the user currently owning the session (root or the logged "
+"in user). Group ownership of the subdirs can be set via FifoGroup=, "
+"otherwise it's root. The file permissions of the subdirs are rwxr-x--- "
+"(0750)."
+msgstr ""
+"Der Unterordner des globalen Sockets gehört dem Systemverwalter root, die "
+"Unterordner der Display-spezifischen gehören dem Benutzer der jeweiligen "
+"Arbeitssitzung (root oder der angemeldete Benutzer). Die "
+"Gruppenzugehörigkeit der Unterordner kann über FifoGroup= umgestellt werden, "
+"anderenfalls ist die Gruppe root. Die Dateiberechtigungen der Unterordner "
+"sind rwxr-x--- (0750)."
+
+#. Tag: para
+#: index.docbook:1325
+#, no-c-format
+msgid ""
+"The fields of a command are separated by tabs (<token>\\t</token>), the "
+"fields of a list are separated by spaces, literal spaces in list fields are "
+"denoted by <token>\\s</token>."
+msgstr ""
+"Die Felder eines Befehls werden durch Tabulatoren (<token>\\t</token>) "
+"getrennt, die Felder einer Liste durch Leerzeichen. Leerzeichen in einem "
+"Listenfeld werden durch <token>\\s</token> dargestellt."
+
+#. Tag: para
+#: index.docbook:1329
+#, no-c-format
+msgid "The command is terminated by a newline (<token>\\n</token>)."
+msgstr ""
+"Der Befehl wird mit einem Zeilenumbruch (<token>\\n</token>) abgeschlossen."
+
+#. Tag: para
+#: index.docbook:1331
+#, no-c-format
+msgid ""
+"The same applies to replies. The reply on success is <returnvalue>ok</"
+"returnvalue>, possibly followed by the requested information. The reply on "
+"error is an errno-style word (&eg; <returnvalue>perm</returnvalue>, "
+"<returnvalue>noent</returnvalue>, &etc;) followed by a longer explanation."
+msgstr ""
+"Dasselbe gilt für Antworten. Die Antwort bei Erfolg ist <returnvalue>ok</"
+"returnvalue>, eventuell gefolgt von der angeforderten Information. Die "
+"Antwort bei einem Fehler ist ein Datenwort im Stil von errno (&eg; "
+"<returnvalue>perm</returnvalue>, <returnvalue>noent</returnvalue>, &etc;), "
+"gefolgt von einer längeren Erläuterung."
+
+#. Tag: title
+#: index.docbook:1338
+#, no-c-format
+msgid "Global commands:"
+msgstr "Globale Befehle:"
+
+#. Tag: term
+#: index.docbook:1341
+#, no-c-format
+msgid ""
+"<command>login</command> <option>display</option> (<parameter>now</"
+"parameter> | <parameter>schedule</parameter>) <parameter>user</parameter> "
+"<parameter>password</parameter> [session_arguments]"
+msgstr ""
+"<command>login</command> <option>display</option> (<parameter>now</"
+"parameter> | <parameter>schedule</parameter>) <parameter>Benutzer</"
+"parameter> <parameter>Passwort</parameter> [session_arguments]"
+
+#. Tag: para
+#: index.docbook:1345
+#, no-c-format
+msgid ""
+"login user at specified display. if <parameter>now</parameter> is specified, "
+"a possibly running session is killed, otherwise the login is done after the "
+"session exits. session_arguments are printf-like escaped contents for .dmrc. "
+"Unlisted keys will default to previously saved values."
+msgstr ""
+"Benutzer am angegebenen Display anmelden. Wenn <parameter>now</parameter> "
+"angegeben ist, wird eine gerade laufende Sitzung abgebrochen, anderenfalls "
+"wird die Anmeldung erst nach Beenden der aktuellen Sitzung durchgeführt. "
+"<quote>session_arguments</quote> sind im Format von printf angegebene Inhalt "
+"für .dmrc. Nicht aufgeführte Schlüssel sind mit den zuletzt gespeicherten "
+"Werten vorbelegt."
+
+#. Tag: para
+#: index.docbook:1355
+#, no-c-format
+msgid "Force return from console mode, even if TTY logins are still active."
+msgstr ""
+"Erzwingt die Rückkehr aus dem Konsolen-Modus, sogar wenn noch Anmeldungen "
+"auf TTY's aktiv sind."
+
+#. Tag: term
+#: index.docbook:1361
+#, no-c-format
+msgid ""
+"<command>manage</command> <parameter>display</parameter> "
+"[<parameter>display_class</parameter> [<parameter>auth_name</parameter> "
+"<parameter>auth_data</parameter>]]"
+msgstr ""
+"<command>manage</command> <parameter>display</parameter> "
+"[<parameter>display_class</parameter> [<parameter>auth_name</parameter> "
+"<parameter>auth_data</parameter>]]"
+
+#. Tag: para
+#: index.docbook:1365
+#, no-c-format
+msgid "Start managing the named foreign display."
+msgstr "Startet die Verwaltung des angegeben entfernten Displays."
+
+#. Tag: para
+#: index.docbook:1366
+#, no-c-format
+msgid ""
+"<parameter>display_class</parameter>, if specified and non-empty, will be "
+"used for configuration matching; see <xref linkend=\"kdm-files\"/>."
+msgstr ""
+"Wenn <parameter>display_class</parameter> angegeben und nicht leer ist, wird "
+"dieser Wert für die Einrichtung benutzt, siehe auch  <xref linkend=\"kdm-"
+"files\"/>."
+
+#. Tag: para
+#: index.docbook:1369
+#, no-c-format
+msgid ""
+"<parameter>auth_name</parameter> and <parameter>auth_data</parameter> need "
+"to be passed if the display requires X authorization. The format is the same "
+"as the 2nd and 3rd column of the <command>xauth list</command> output."
+msgstr ""
+"<parameter>auth_name</parameter> und <parameter>auth_data</parameter> müssen "
+"angegeben werden, wenn eine X-Autorisierung am Display erforderlich ist. "
+"Diese Parameter  haben das gleiche Format wie die zweite und dritte Spalte "
+"der Ausgabe von  <command>xauth list</command>."
+
+#. Tag: term
+#: index.docbook:1377
+#, no-c-format
+msgid "<command>unmanage</command> <parameter>display</parameter>"
+msgstr "<command>unmanage</command> <parameter>display</parameter>"
+
+#. Tag: para
+#: index.docbook:1379
+#, no-c-format
+msgid "Stop managing the named foreign display."
+msgstr "Stoppt die Verwaltung des angegeben entfernten Displays."
+
+#. Tag: title
+#: index.docbook:1386
+#, no-c-format
+msgid "Per-display commands:"
+msgstr "Display-spezifische Befehle:"
+
+#. Tag: para
+#: index.docbook:1390
+#, no-c-format
+msgid ""
+"The display is marked as locked. If the &X-Server; crashes in this state, no "
+"auto-relogin will be performed even if the option is on."
+msgstr ""
+"Dieses Display ist als gesperrt markiert. Wenn der X-Server in diesem "
+"Zustand abstürzt, erfolgt keine automatische Anmeldung."
+
+#. Tag: para
+#: index.docbook:1397
+#, no-c-format
+msgid ""
+"Reverse the effect of <command>lock</command>, and re-enable auto-relogin."
+msgstr ""
+"Hebt den Effekt von <command>lock</command> auf und schaltet die "
+"automatische Anmeldung wieder ein."
+
+#. Tag: para
+#: index.docbook:1404
+#, no-c-format
+msgid ""
+"The currently running session is forcibly terminated. No auto-relogin is "
+"attempted, but a scheduled \"login\" command will be executed."
+msgstr ""
+"Die derzeit laufende Arbeitssitzung wird zum Abbruch gezwungen. Es wird "
+"keine automatische Anmeldung versucht, aber ein geplantes <quote>login</"
+"quote> ausgeführt."
+
+#. Tag: title
+#: index.docbook:1411
+#, no-c-format
+msgid "Commands for all sockets"
+msgstr "Befehle für alle Sockets"
+
+#. Tag: para
+#: index.docbook:1416
+#, no-c-format
+msgid "Returns a list of this socket's capabilities:"
+msgstr "Gibt eine Liste der Eigenschaften dieses Sockets zurück:"
+
+#. Tag: returnvalue
+#: index.docbook:1420
+#, no-c-format
+msgid "<returnvalue>kdm</returnvalue>"
+msgstr "<returnvalue>kdm</returnvalue>"
+
+#. Tag: para
+#: index.docbook:1422
+#, no-c-format
+msgid "identifies &kdm;, in case some other DM implements this protocol, too"
+msgstr ""
+"identifiziert kdm für den Fall, dass ein anderer Display-Manager dieses "
+"Protokoll ebenfalls unterstützt."
+
+#. Tag: term
+#: index.docbook:1427
+#, no-c-format
+msgid ""
+"<returnvalue>list</returnvalue>, <returnvalue>lock</returnvalue>, "
+"<returnvalue>suicide</returnvalue>, <returnvalue>login</returnvalue>, "
+"<returnvalue>resume</returnvalue>, <returnvalue>manage</returnvalue>"
+msgstr ""
+"<returnvalue>list</returnvalue>, <returnvalue>lock</returnvalue>, "
+"<returnvalue>suicide</returnvalue>, <returnvalue>login</returnvalue>, "
+"<returnvalue>resume</returnvalue>, <returnvalue>manage</returnvalue>"
+
+#. Tag: para
+#: index.docbook:1432
+#, no-c-format
+msgid "The respective command is supported"
+msgstr "Der entsprechende Befehl wird unterstützt"
+
+#. Tag: returnvalue
+#: index.docbook:1436
+#, no-c-format
+msgid "bootoptions"
+msgstr "bootoptions"
+
+#. Tag: para
+#: index.docbook:1438
+#, no-c-format
+msgid ""
+"The <command>listbootoptions</command> command and the <option>=</option> to "
+"<command>shutdown</command> are supported"
+msgstr ""
+"Der Befehl <command>listbootoptions</command> und <option>=</option> zum "
+"<command>shutdown</command> werden unterstützt"
+
+#. Tag: returnvalue
+#: index.docbook:1443
+#, no-c-format
+msgid "shutdown &lt;list&gt;"
+msgstr "shutdown &lt;list&gt;"
+
+#. Tag: para
+#: index.docbook:1445
+#, no-c-format
+msgid ""
+"<command>shutdown</command> is supported and allowed for the listed users (a "
+"comma separated list.) <returnvalue>*</returnvalue> means all authenticated "
+"users."
+msgstr ""
+"<command>shutdown</command> wird unterstützt und ist für die aufgeführten "
+"Benutzer (eine kommaseparierte Liste) erlaubt. <returnvalue>*</returnvalue> "
+"steht für alle authentifizierten Benutzer."
+
+#. Tag: returnvalue
+#: index.docbook:1451
+#, no-c-format
+msgid "nuke &lt;list&gt;"
+msgstr "nuke &lt;list&gt;"
+
+#. Tag: para
+#: index.docbook:1453
+#, no-c-format
+msgid "Forced shutdown may be performed by the listed users."
+msgstr ""
+"Ein erzwungenes Herunterfahren kann von allen aufgeführten Benutzern "
+"ausgeführt werden."
+
+#. Tag: returnvalue
+#: index.docbook:1457
+#, no-c-format
+msgid "nuke"
+msgstr "nuke"
+
+#. Tag: para
+#: index.docbook:1459
+#, no-c-format
+msgid "Forced shutdown may be performed by everybody"
+msgstr ""
+"Ein erzwungenes Herunterfahren kann von jedem Benutzer ausgeführt werden"
+
+#. Tag: returnvalue
+#: index.docbook:1463
+#, no-c-format
+msgid "reserve &lt;number&gt;"
+msgstr "reserve &lt;anzahl&gt;"
+
+#. Tag: para
+#: index.docbook:1465
+#, no-c-format
+msgid ""
+"Reserve displays are configured, and <returnvalue>number</returnvalue> are "
+"available at this time"
+msgstr ""
+"Es sind Reserve-Displays eingerichtet, und davon sind <returnvalue>anzahl</"
+"returnvalue> gerade verfügbar"
+
+#. Tag: term
+#: index.docbook:1475
+#, no-c-format
+msgid ""
+"<command>list</command> [<parameter>all</parameter> | <parameter>alllocal</"
+"parameter>]"
+msgstr ""
+"<command>list</command> [<parameter>all</parameter> | <parameter>alllocal</"
+"parameter>]"
+
+#. Tag: para
+#: index.docbook:1478
+#, no-c-format
+msgid ""
+"Return a list of running sessions. By default all active sessions are listed "
+"(this is useful for a shutdown warning). If <parameter>all</parameter> is "
+"specified, passive sessions are listed as well. If <parameter>alllocal</"
+"parameter> is specified, passive sessions are listed as well, but all "
+"incoming remote sessions are skipped (this is useful for a fast user "
+"switching agent)."
+msgstr ""
+"Gibt eine Liste der laufenden Sitzungen zurück. Als Voreinstellung werden "
+"alle aktiven Sitzungen aufgeführt, dies kann für eine Warnung beim "
+"Herunterfahren benutzt werden. Wird <parameter>all</parameter> angegeben, "
+"werden auch passive Sitzungen aufgeführt. Wird <parameter>alllocal</"
+"parameter> angegeben, werden passive Sitzungen ebenfalls aufgelistet aber "
+"alle eingehenden Sitzungen auf anderen Rechnern übergangen. Die kann für "
+"einen Dienst zu schnellen Wechseln des Benutzers verwendet werden."
+
+#. Tag: para
+#: index.docbook:1484
+#, no-c-format
+msgid "Each session entry is a comma separated tuple of:"
+msgstr ""
+"Jeder Eintrag für eine Sitzung besteht aus einem mit Kommata getrennten "
+"Tupel aus:"
+
+#. Tag: para
+#: index.docbook:1486
+#, no-c-format
+msgid "Display or TTY name"
+msgstr "Display- oder TTY-Name"
+
+#. Tag: para
+#: index.docbook:1487
+#, no-c-format
+msgid ""
+"VT name for local sessions, remote host name prefixed by <literal>@</"
+"literal> for remote TTY sessions, otherwise empty"
+msgstr ""
+"Der Name des virtuellen Terminals für lokale Sitzungen, bei entfernten TTY-"
+"Sitzungen wird der Name des entfernten Rechners mit <literal>@</literal> "
+"vorangestellt, ansonsten leer."
+
+#. Tag: para
+#: index.docbook:1489
+#, no-c-format
+msgid ""
+"Logged in user's name, empty for passive sessions and outgoing remote "
+"sessions (local chooser mode)"
+msgstr ""
+"Dem Namen des angemeldeten Benutzers oder einem leeren Eintrag bei passiven "
+"Sitzungen und ausgehenden Sitzungen auf anderen Rechnern"
+
+#. Tag: para
+#: index.docbook:1491
+#, no-c-format
+msgid ""
+"Session type for active local sessions, remote hostname for outgoing remote "
+"sessions, empty for passive sessions."
+msgstr ""
+"Sitzungstyp für aktive lokale Sitzungen, für ausgehende Sitzungen auf "
+"anderen Rechnern, leer für passive Sitzungen."
+
+#. Tag: para
+#: index.docbook:1493
+#, no-c-format
+msgid "A Flag field:"
+msgstr "Einem Flag-Feld:"
+
+#. Tag: para
+#: index.docbook:1494
+#, no-c-format
+msgid ""
+"<literal>*</literal> for the display belonging to the requesting socket."
+msgstr ""
+"<literal>*</literal> für den Display, der zum anfragenden Socket gehört."
+
+#. Tag: para
+#: index.docbook:1496
+#, no-c-format
+msgid ""
+"<literal>!</literal> for sessions that cannot be killed by the requesting "
+"socket."
+msgstr ""
+"<literal>!</literal> für Sitzungen, die vom anfragenden Socket nicht "
+"abgebrochen werden können."
+
+#. Tag: para
+#: index.docbook:1498
+#, no-c-format
+msgid "<literal>t</literal> for TTY sessions."
+msgstr "<literal>t</literal> für TTY-Sitzungen."
+
+#. Tag: para
+#: index.docbook:1502
+#, no-c-format
+msgid "New fields may be added in the future."
+msgstr "Zukünftig können hier weitere Felder hinzukommen."
+
+#. Tag: para
+#: index.docbook:1509
+#, no-c-format
+msgid ""
+"Start a reserve login screen. If nobody logs in within some time, the "
+"display is removed again. When the session on the display exits, the display "
+"is removed, too."
+msgstr ""
+"Startet einen Reserver-Anmeldebildschirm. Wenn sich innerhalb einer  "
+"bestimmten Zeit niemand anmeldet, wird der Display wieder entfernt. Wenn die "
+"Sitzung auf diesem Display beendet wird, wird dieser ebenfalls wieder "
+"entfernt."
+
+#. Tag: para
+#: index.docbook:1512 index.docbook:1524
+#, no-c-format
+msgid "Permitted only on sockets of local displays and the global socket."
+msgstr ""
+"Nur erlaubt bei Sockets für lokale Displays und für den globalen Socket."
+
+#. Tag: term
+#: index.docbook:1518
+#, no-c-format
+msgid ""
+"<command>activate</command> (<parameter>vt</parameter>|<parameter>display</"
+"parameter>)"
+msgstr ""
+"<command>activate</command> (<parameter>vt</parameter>|<parameter>display</"
+"parameter>)"
+
+#. Tag: para
+#: index.docbook:1521
+#, no-c-format
+msgid ""
+"Switch to a particular VT (virtual terminal). The VT may be specified either "
+"directly (&eg; <parameter>vt3</parameter>) or by a display using it (eg; "
+"<parameter>:2</parameter>)."
+msgstr ""
+"Wechselt zu einem bestimmten VT (Virtuellen Terminal). Das VT kann entweder "
+"direkt angegebenen werden (&eg; <parameter>vt3</parameter>) oder über den "
+"Display, auf dem es benutzt wird (&eg; <parameter>:2</parameter>)."
+
+#. Tag: para
+#: index.docbook:1532
+#, no-c-format
+msgid "List available boot options."
+msgstr "Zeigt alle verfügbaren Boot-Optionen an."
+
+#. Tag: para
+#: index.docbook:1533
+#, no-c-format
+msgid "The return value contains these tokens:"
+msgstr "Der Rückgabewert enthält diese Bestandteile:"
+
+#. Tag: para
+#: index.docbook:1536
+#, no-c-format
+msgid "A list of boot options (as shown in &kdm; itself)."
+msgstr "Eine Liste der Boot-Optionen (wie in &kdm; selbst angezeigt)."
+
+#. Tag: para
+#: index.docbook:1539
+#, no-c-format
+msgid "The default boot option."
+msgstr "Die Standard-Boot-Option."
+
+#. Tag: para
+#: index.docbook:1542
+#, no-c-format
+msgid "The current boot option."
+msgstr "Die aktuelle Boot-Option."
+
+#. Tag: para
+#: index.docbook:1545
+#, no-c-format
+msgid ""
+"The default and current option are zero-based indices into the list of boot "
+"options. If either one is unset or not determinable, it is -1."
+msgstr ""
+"Die Optionen für Standard und Aktuell stellen nullbasierte Indizes in der "
+"Liste der Boot-Optionen dar. Ist einer der Werte nicht gesetzt oder kann "
+"nicht bestimmt werden, wird -1 angenommen."
+
+#. Tag: term
+#: index.docbook:1551
+#, no-c-format
+msgid ""
+"<command>shutdown</command> (<parameter>reboot</parameter> | "
+"<parameter>halt</parameter>) [<parameter>=<replaceable>bootchoice</"
+"replaceable></parameter>] (<parameter>ask</parameter>|<parameter>trynow</"
+"parameter>|<parameter>forcenow</parameter>|<parameter>schedule</parameter>|"
+"<parameter>start (<parameter>-1</parameter>|<parameter>end "
+"(<parameter>force</parameter>|<parameter>forcemy</parameter>|"
+"<parameter>cancel)</parameter>)</parameter>)</parameter>)"
+msgstr ""
+"<command>shutdown</command> (<parameter>reboot</parameter> | "
+"<parameter>halt</parameter>) [<parameter>=<replaceable>bootchoice</"
+"replaceable></parameter>] (<parameter>ask</parameter>|<parameter>trynow</"
+"parameter>|<parameter>forcenow</parameter>|<parameter>schedule</parameter>|"
+"<parameter>start (<parameter>-1</parameter>|<parameter>end "
+"(<parameter>force</parameter>|<parameter>forcemy</parameter>|"
+"<parameter>cancel)</parameter>)</parameter>)</parameter>)"
+
+#. Tag: para
+#: index.docbook:1558
+#, no-c-format
+msgid "Request a system shutdown, either a reboot or a halt/poweroff."
+msgstr ""
+"Das System erhält die Aufforderung zum Herunterfahren, entweder als reboot "
+"oder halt/poweroff."
+
+#. Tag: para
+#: index.docbook:1559
+#, no-c-format
+msgid ""
+"An OS choice for the next boot may be specified from the list returned by "
+"<command>listbootoptions</command>"
+msgstr ""
+"Aus der Liste, die von <command>listbootoptions</command> zurückgegeben "
+"wird, kann das Betriebssystem für den nächsten Rechnerstart angegeben werden"
+
+#. Tag: para
+#: index.docbook:1561
+#, no-c-format
+msgid ""
+"Shutdowns requested from per-display sockets are executed when the current "
+"session on that display exits. Such a request may pop up a dialog asking for "
+"confirmation and/or authentication"
+msgstr ""
+"Anfragen zum Herunterfahren des Systems, die von Display-spezifischen "
+"Sockets ausgehen, werden ausgeführt, sobald die Sitzung auf diesem Display "
+"beendet wird. Bei dieser Anfrage kann ein Dialog erscheinen, der nach einer "
+"Bestätigung oder Authentifizierung fragt"
+
+#. Tag: para
+#: index.docbook:1564
+#, no-c-format
+msgid ""
+"<parameter>start</parameter> is the time for which the shutdown is "
+"scheduled. If it starts with a plus-sign, the current time is added. Zero "
+"means immediately."
+msgstr ""
+"<parameter>start</parameter> gibt den Zeitpunkt an, zu dem das System "
+"heruntergefahren werden soll. Beginnt dieser Wert mit einem Pluszeichen, "
+"wird die aktuelle Uhrzeit hinzuaddiert. Eine Null bedeutet <quote>Sofort</"
+"quote>."
+
+#. Tag: para
+#: index.docbook:1567
+#, no-c-format
+msgid ""
+"<parameter>end</parameter> is the latest time at which the shutdown should "
+"be performed if active sessions are still running. If it starts with a plus-"
+"sign, the start time is added. -1 means wait infinitely. If end is through "
+"and active sessions are still running, &kdm; can do one of the following:"
+msgstr ""
+"<parameter>end</parameter> ist der späteste Zeitpunkt, zu dem das System "
+"heruntergefahren werden soll, wenn noch aktive Sitzungen laufen. Beginnt der "
+"Wert mit einem Pluszeichen, wird die Startzeit aufaddiert. <quote>-1</quote> "
+"bedeutet, dass unbegrenzt gewartet wird. Wenn der Endzeitpunkt erreicht ist "
+"und immer noch Sitzungen aktiv sind, kann &kdm; eine der folgenden Aktionen "
+"durchführen:"
+
+#. Tag: para
+#: index.docbook:1573
+#, no-c-format
+msgid "<parameter>cancel</parameter> - give up the shutdown"
+msgstr ""
+"<parameter>cancel</parameter> - das Herunterfahren wird nicht durchgeführt"
+
+#. Tag: para
+#: index.docbook:1575
+#, no-c-format
+msgid "<parameter>force</parameter> - shut down nonetheless"
+msgstr ""
+"<parameter>force</parameter> - das Herunterfahren wird trotzdem durchgeführt"
+
+#. Tag: para
+#: index.docbook:1577
+#, no-c-format
+msgid ""
+"<parameter>forcemy</parameter> - shut down nonetheless if all active "
+"sessions belong to the requesting user. Only for per-display sockets."
+msgstr ""
+"<parameter>forcemy</parameter> - Das Herunterfahren wird trotzdem "
+"durchgeführt, wenn alle aktiven Sitzungen zu dem Benutzer gehören, der das "
+"Herunterfahren angefordert hat. Gültig nur für Display-spezifische Sockets."
+
+#. Tag: para
+#: index.docbook:1581
+#, no-c-format
+msgid ""
+"<parameter>start</parameter> and <parameter>end</parameter> are specified in "
+"seconds since the &UNIX; epoch."
+msgstr ""
+"<parameter>start</parameter> und <parameter>end</parameter> werden in "
+"Sekunden seit Beginn der &UNIX;-Epoche angegeben."
+
+#. Tag: para
+#: index.docbook:1583
+#, no-c-format
+msgid ""
+"<parameter>trynow</parameter> is a synonym for <parameter>0 0 cancel</"
+"parameter>, <parameter>forcenow</parameter> for <parameter>0 0 force</"
+"parameter> and <parameter>schedule</parameter> for <parameter>0 -1</"
+"parameter>."
+msgstr ""
+"<parameter>trynow</parameter> ist gleichbedeutend mit <parameter>0 0 cancel</"
+"parameter>, <parameter>forcenow</parameter> mit <parameter>0 0 force</"
+"parameter> und <parameter>schedule</parameter> mit <parameter>0 -1</"
+"parameter>."
+
+#. Tag: para
+#: index.docbook:1587
+#, no-c-format
+msgid ""
+"<parameter>ask</parameter> attempts an immediate shutdown and interacts with "
+"the user if active sessions are still running. Only for per-display sockets."
+msgstr ""
+"<parameter>ask</parameter> versucht ein sofortiges Herunterfahren und fragt "
+"beim Benutzer an, sofern noch aktive Sitzungen laufen. Gültig nur für "
+"Display-spezifische Sockets."
+
+#. Tag: term
+#: index.docbook:1594
+#, no-c-format
+msgid ""
+"<command>shutdown cancel</command> [<parameter>local</parameter>|"
+"<parameter>global</parameter>}"
+msgstr ""
+"<command>shutdown cancel</command> [<parameter>local</parameter>|"
+"<parameter>global</parameter>}"
+
+#. Tag: para
+#: index.docbook:1597
+#, no-c-format
+msgid ""
+"Cancel a scheduled shutdown. The global socket always cancels the currently "
+"pending shutdown, while per-display sockets default to cancelling their "
+"queued request."
+msgstr ""
+"Ein geplantes Herunterfahren abbrechen. Der globale Socket bricht immer das "
+"gerade anstehende Herunterfahren ab, die Display-spezifischen Sockets per "
+"Voreinstellung nur die von ihnen eingestellten Anfragen."
+
+#. Tag: command
+#: index.docbook:1604
+#, no-c-format
+msgid "shutdown status"
+msgstr "shutdown status"
+
+#. Tag: para
+#: index.docbook:1606
+#, no-c-format
+msgid "Return a list with information about shutdowns."
+msgstr ""
+"Zurückliefern einer Liste mit Informationen über Anforderungen zum "
+"Herunterfahren."
+
+#. Tag: para
+#: index.docbook:1607
+#, no-c-format
+msgid "The entries are a comma-separated tuples of:"
+msgstr "Die Einträge sind durch Kommata getrennte Tupel von:"
+
+#. Tag: para
+#: index.docbook:1610
+#, no-c-format
+msgid ""
+"(<returnvalue>global</returnvalue>|<returnvalue>local</returnvalue>) - "
+"pending vs. queued shutdown. A local entry can be returned only by a per-"
+"display socket."
+msgstr ""
+"(<returnvalue>global</returnvalue>|<returnvalue>local</returnvalue>) - "
+"anstehende oder in der Warteschlange eingestellte Anfragen zum "
+"Herunterfahren. Ein lokaler Eintrag kann nur von einem Display-spezifischen "
+"Socket zurückgeliefert werden."
+
+#. Tag: para
+#: index.docbook:1614
+#, no-c-format
+msgid "(<returnvalue>halt</returnvalue>|<returnvalue>reboot</returnvalue>)"
+msgstr "(<returnvalue>halt</returnvalue>|<returnvalue>reboot</returnvalue>)"
+
+#. Tag: para
+#: index.docbook:1615
+#, no-c-format
+msgid "start"
+msgstr "start"
+
+#. Tag: para
+#: index.docbook:1616
+#, no-c-format
+msgid "<para>end</para>"
+msgstr "<para>end</para>"
+
+# |, no-fancy-quote
+#. Tag: para
+#: index.docbook:1617
+#, no-c-format
+msgid "(\"ask\"|\"force\"|\"forcemy\"|\"cancel\")"
+msgstr ""
+"(<quote>ask</quote>|<quote>force</quote>|<quote>forcemy</quote>|"
+"<quote>cancel</quote>)"
+
+#. Tag: para
+#: index.docbook:1618
+#, no-c-format
+msgid "Numeric user ID of the requesting user, -1 for the global socket."
+msgstr ""
+"Die numerische Benutzer-ID des anfragenden Benutzers, -1 für den globalen "
+"Socket."
+
+#. Tag: para
+#: index.docbook:1620
+#, no-c-format
+msgid "The next boot OS choice or \"-\" for none."
+msgstr ""
+"Das als nächstes zu bootende Betriebssystem oder <quote>-</quote> für keines."
+
+#. Tag: para
+#: index.docbook:1622
+#, no-c-format
+msgid "New fields might be added later"
+msgstr "Zukünftig können weitere Felder hinzukommen"
+
+#. Tag: para
+#: index.docbook:1628
+#, no-c-format
+msgid "There are two ways of using the sockets:"
+msgstr "Sockets können auf zwei Arten benutzt werden:"
+
+#. Tag: para
+#: index.docbook:1631
+#, no-c-format
+msgid ""
+"Connecting them directly. FifoDir is exported as $<envar>DM_CONTROL</envar>; "
+"the name of per-display sockets can be derived from $<envar>DISPLAY</envar>."
+msgstr ""
+"Direkte Verbindung. FifoDir wird als $<envar>DM_CONTROL</envar> exportiert; "
+"der Name von Display-spezifischen Sockets kann aus $<envar>DISPLAY</envar> "
+"abgeleitet werden."
+
+#. Tag: para
+#: index.docbook:1636
+#, no-c-format
+msgid ""
+"By using the <command>kdmctl</command> command (&eg; from within a shell "
+"script). Try <command>kdmctl</command> <option>-h</option> to find out more."
+msgstr ""
+"Durch Verwendung des Befehls <command>kdmctl</command> (&eg; aus einem Shell-"
+"Skript). Um mehr darüber zu erfahren, rufen Sie <command>kdmctl</"
+"command><option>-h</option> auf."
+
+#. Tag: para
+#: index.docbook:1642
+#, no-c-format
+msgid "Here is an example bash script <quote>reboot into FreeBSD</quote>:"
+msgstr ""
+"Hier ist ein Beispiel für ein Bash-Skript <quote>reboot mit FreeBSD</quote>:"
+
+#. Tag: programlisting
+#: index.docbook:1644
+#, no-c-format
+msgid ""
+"if kdmctl | grep -q shutdown; then\n"
+"  IFS=$'\\t'\n"
+"  set -- `kdmctl listbootoptions`\n"
+"  if [ \"$1\" = ok ]; then\n"
+"    fbsd=$(echo \"$2\" | tr ' ' '\\n' | sed -ne 's,\\\\s, ,g;/freebsd/I{p;"
+"q}')\n"
+"    if [ -n \"$fbsd\" ]; then\n"
+"      kdmctl shutdown reboot \"=$fbsd\" ask &gt; /dev/null\n"
+"    else\n"
+"      echo \"FreeBSD boot unavailable.\"\n"
+"    fi\n"
+"  else\n"
+"    echo \"Boot options unavailable.\"\n"
+"  fi\n"
+"else\n"
+"  echo \"Cannot reboot system.\"\n"
+"fi"
+msgstr ""
+"if kdmctl | grep -q shutdown; then\n"
+"  IFS=$'\\t'\n"
+"  set -- `kdmctl listbootoptions`\n"
+"  if [ \"$1\" = ok ]; then\n"
+"    fbsd=$(echo \"$2\" | tr ' ' '\\n' | sed -ne 's,\\\\s, ,g;/freebsd/I{p;"
+"q}')\n"
+"    if [ -n \"$fbsd\" ]; then\n"
+"      kdmctl shutdown reboot \"=$fbsd\" ask &gt; /dev/null\n"
+"    else\n"
+"      echo \"FreeBSD boot unavailable.\"\n"
+"    fi\n"
+"  else\n"
+"    echo \"Boot options unavailable.\"\n"
+"  fi\n"
+"else\n"
+"  echo \"Cannot reboot system.\"\n"
+"fi"
+
+#. Tag: title
+#: index.docbook:1650
+#, no-c-format
+msgid "Other sources of information"
+msgstr "Weiterführende Informationen"
+
+#. Tag: para
+#: index.docbook:1652
+#, no-c-format
+msgid ""
+"Since &kdm; is descended from &xdm;, the <ulink url=\"man:xdm\">xdm man "
+"page</ulink> may provide useful background information. For X-related "
+"problems try the man pages <ulink url=\"man:X\">X</ulink> and <ulink url="
+"\"man:startx\">startx</ulink>. If you have questions about &kdm; that are "
+"not answered by this handbook, take advantage of the fact the &kdm; is "
+"provided under the terms of the &GNU; General Public License: look at the "
+"source code."
+msgstr ""
+"Da &kdm; von &xdm; abstammt, finden Sie in der Manual-Seite von <ulink url="
+"\"man:xdm\">xdm</ulink> hilfreiche Hintergrundinformationen. Bei Problemen "
+"mit X sollten Sie die Manual-Seiten von <ulink url=\"man:X\">X</ulink> und "
+"<ulink url=\"man:startx\">startx</ulink> lesen. Wenn Sie Fragen zu &kdm; "
+"haben, die dieses Handbuch nicht beantwortet, so nutzen Sie die Tatsache, "
+"dass &kdm; unter den Lizenzbedingungen von &GNU; entwickelt wurde: Schauen "
+"Sie direkt in den Quellcode."
+
+#. Tag: title
+#: index.docbook:1664
+#, no-c-format
+msgid "Credits and License"
+msgstr "Danksagungen und Lizenz"
+
+#. Tag: para
+#: index.docbook:1666
+#, no-c-format
+msgid ""
+"&kdm; is derived from, and includes code from, &xdm; &copy; Keith Packard, "
+"MIT X Consortium."
+msgstr ""
+"&kdm; stammt von &xdm; ab und enthält Code daraus. &copy; Keith Packard, MIT "
+"X Consortium."
+
+#. Tag: para
+#: index.docbook:1669
+#, no-c-format
+msgid ""
+"&kdm; 0.1 was written by &Matthias.Ettrich;. Later versions till &kde; 2.0.x "
+"were written by &Steffen.Hansen;. Some new features for &kde; 2.1.x and a "
+"major rewrite for &kde; 2.2.x made by &Oswald.Buddenhagen;."
+msgstr ""
+"&kdm; 0.1 wurde von &Matthias.Ettrich; geschrieben. Spätere Versionen bis "
+"&kde; 2.0.x wurden von &Steffen.Hansen; erstellt. Einige neue Funktionen für "
+"&kde; 2.1.x und eine Generalüberholung für &kde; 2.2.x wurden von &Oswald."
+"Buddenhagen; durchgeführt."
+
+#. Tag: para
+#: index.docbook:1673
+#, no-c-format
+msgid ""
+"Other parts of the &kdm; code are copyright by the authors, and licensed "
+"under the terms of the <ulink url=\"common/gpl-license.html\">&GNU; GPL</"
+"ulink>. Anyone is allowed to change &kdm; and redistribute the result as "
+"long as the names of the authors are mentioned."
+msgstr ""
+"Andere Teile des &kdm;-Codes gehören urheberrechtlich den Autoren und sind "
+"nach den Bedingungen der <ulink url=\"common/gpl-license.html\">GNU GPL</"
+"ulink> lizenziert. Jeder darf &kdm; ändern und das Ergebnis neu verteilen, "
+"solange die Namen der Autoren genannt werden."
+
+#. Tag: para
+#: index.docbook:1678
+#, no-c-format
+msgid "&kdm; requires the &Qt; library, which is copyright Troll Tech AS."
+msgstr ""
+"&kdm; benötigt die &Qt;-Bibliothek, für die Troll Tech AS das Copyright "
+"besitzt."
+
+#. Tag: para
+#: index.docbook:1680
+#, no-c-format
+msgid "Documentation contributors:"
+msgstr "Mitwirkende an der Dokumentation:"
+
+#. Tag: para
+#: index.docbook:1683
+#, no-c-format
+msgid "Documentation written by &Steffen.Hansen; &Steffen.Hansen.mail;"
+msgstr ""
+"Die Dokumentation wurde von &Steffen.Hansen; &Steffen.Hansen.mail; "
+"geschrieben."
+
+#. Tag: para
+#: index.docbook:1686
+#, no-c-format
+msgid ""
+"Documentation extended by Gregor Zumstein<email>zumstein@ssd.ethz.ch</"
+"email>. Last update August 9, 1998"
+msgstr ""
+"Erweiterungen der Dokumentation wurden von Gregor "
+"Zumstein<email>zumstein@ssd.ethz.ch</email> hinzugefügt. Letzte Änderung am "
+"09.08.1998"
+
+#. Tag: para
+#: index.docbook:1690
+#, no-c-format
+msgid ""
+"Documentation revised for &kde; 2 by &Neal.Crook; &Neal.Crook.mail;. Last "
+"update August 6, 2000"
+msgstr ""
+"Für &kde; 2 wurde die Dokumentation von &Neal.Crook; überarbeitet &Neal."
+"Crook.mail;. Letzte Änderung am 06.08.2000"
+
+#. Tag: para
+#: index.docbook:1694
+#, no-c-format
+msgid ""
+"Documentation extended and revised for &kde; 2.2 and 4.0 by &Oswald."
+"Buddenhagen; &Oswald.Buddenhagen.mail;. Last update December 7, 2007"
+msgstr ""
+"Für &kde; 2.2 und 4.0 wurde die Dokumentation von &Oswald.Buddenhagen; "
+"&Oswald.Buddenhagen.mail; überarbeitet und erweitert. Letzte Änderung: 7. "
+"Dezember 2007"
+
+#. Tag: para
+#: index.docbook:1700
+#, no-c-format
+msgid ""
+"Documentation copyright &Steffen.Hansen;, Gregor Zumstein, &Neal.Crook; and "
+"&Oswald.Buddenhagen;. This document also includes large parts of the &xdm; "
+"man page, which is &copy; Keith Packard. The theme format documentation is "
+"heavily based on the GDM manual, which is &copy; Martin K. Petersen, George "
+"Lebl, &RedHat;, Inc. and Sun Microsystems, Inc."
+msgstr ""
+"Copyright der Dokumentation &Steffen.Hansen;, Gregor Zumstein, &Neal.Crook; "
+"und &Oswald.Buddenhagen;. Diese Dokument enthält auch große Teile der &xdm;-"
+"Manual-Seite, Copyright Keith Packard. Die Dokumentation für das Format der "
+"Designs basiert stark auf dem GDM-Handbuch, &copy; Martin K. Petersen, "
+"George Lebl, &RedHat;, Inc. and Sun Microsystems, Inc."
+
+#. Tag: trans_comment
+#: index.docbook:1708
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<!-- <para>Volker Dose <email>vpdose@cpmgut.toppoint.de</email>, Hartmut "
+"Haase <email>hartmut.haase@web.de</email>, Stefan Doll "
+"<email>stefan@laugenweck.de</email></para> -->"
+
+#. Tag: chapter
+#: index.docbook:1708
+#, no-c-format
+msgid "&underFDL;"
+msgstr "&underFDL;"
+
+#. Tag: title
+#: index.docbook:1715
+#, no-c-format
+msgid "Glossary"
+msgstr "Glossar"
+
+#. Tag: glossterm
+#: index.docbook:1718
+#, no-c-format
+msgid "greeter"
+msgstr "Anmeldefenster"
+
+#. Tag: para
+#: index.docbook:1719
+#, no-c-format
+msgid ""
+"The greeter is the login dialog, &ie; the part of &kdm; which the user sees."
+msgstr ""
+"Das Fenster das der Benutzer von &kdm; sieht - das Fenster mit dem er sich "
+"anmeldet."
+
+#. Tag: glossterm
+#: index.docbook:1725
+#, no-c-format
+msgid "entropy"
+msgstr "Entropie"
+
+#. Tag: para
+#: index.docbook:1726
+#, no-c-format
+msgid ""
+"The entropy of a system is the measure of its unpredictability. This is used "
+"during the generation of random numbers."
+msgstr ""
+"Die Entropie eines Systems ist ein Maß für seine Unvorhersehbarkeit. Dies "
+"wird bei der Erzeugung von Zufallszahlen benutzt."
+
+#~ msgid "resume"
+#~ msgstr "resume"
+
+#~ msgid "lock"
+#~ msgstr "lock"
+
+#~ msgid "unlock"
+#~ msgstr "unlock"
+
+#~ msgid "suicide"
+#~ msgstr "suicide"
+
+#~ msgid "caps"
+#~ msgstr "caps"
+
+#~ msgid "reserve"
+#~ msgstr "reserve"
+
+#~ msgid "listbootoptions"
+#~ msgstr "listbootoptions"
+
+#~ msgid "VT name for local sessions"
+#~ msgstr "VT-Namen für lokale Sitzungen"
+
+#~ msgid ""
+#~ "The sessions are defined in <firstterm>.desktop</firstterm> files in "
+#~ "<filename class=\"directory\">$<envar>KDEDIR</envar>/share/apps/kdm/"
+#~ "sessions</filename>. You can simply add an appropriately named <literal "
+#~ "role=\"extension\">.desktop</literal> file in this directory. The fields "
+#~ "are:"
+#~ msgstr ""
+#~ "Die Sitzungen sind in <firstterm>.desktop</firstterm>-Dateien im Order "
+#~ "<filename class=\"directory\"><envar>KDEDIR</envar>/share/apps/kdm/"
+#~ "sessions</filename> abgelegt. Sie können einfach eine entsprechend "
+#~ "benannte <literal role=\"extension\">.desktop</literal>-Datei in diesem "
+#~ "Ordner ablegen. Die Felder sind:"
+
+#~ msgid ""
+#~ "<command>reserve</command> [<parameter>timeout in seconds</parameter>]"
+#~ msgstr ""
+#~ "<command>reserve</command> [<parameter>Wartezeit in Sekunden</parameter>]"
+
+#~ msgid ""
+#~ "If you are not currently logged in as a superuser, you will need to click "
+#~ "the <guibutton>Administrator Mode...</guibutton> Button. You will then be "
+#~ "asked for a superuser password. Entering a correct password will allow "
+#~ "you to modify the settings of this module."
+#~ msgstr ""
+#~ "Falls Sie nicht bereits als Systemverwalter (root) angemeldet sind, "
+#~ "müssen Sie auf den Knopf <guibutton>Systemverwaltungsmodus</guibutton> "
+#~ "klicken. Sie werden dann nach dem Passwort des Systemverwalters (root) "
+#~ "gefragt. Nach Eingabe des korrekten Passworts können Sie die "
+#~ "Einstellungen dieses Moduls verändern."
+
+#~ msgid "Appearance"
+#~ msgstr "Erscheinungsbild"
+
+#~ msgid "Font"
+#~ msgstr "Schrift"
+
+#~ msgid "Background"
+#~ msgstr "Hintergrund"
+
+#~ msgid ""
+#~ "You can configure the admin picture here, for each user on the system. "
+#~ "Depending on the order selected above, users may be able to override your "
+#~ "selection."
+#~ msgstr ""
+#~ "Sie können hier das Admin-Bild für jeden Benutzer im System einstellen. "
+#~ "Abhängend von der oben getroffenen Auswahl können die Benutzer für sich "
+#~ "stattdessen ein anderes Bild wählen."
+
+#~ msgid ""
+#~ "A <guilabel>Menu</guilabel> drop down box that allows &kdm; to be used to "
+#~ "start sessions with various different window managers or desktop "
+#~ "environments installed on the system."
+#~ msgstr ""
+#~ "Ein Auswahlfeld <guilabel>Sitzungsart:</guilabel> zur Auswahl der "
+#~ "gewünschten Sitzungsart. &kdm; kann eine Sitzung mit verschiedenen "
+#~ "Fenstermanagern und Desktopumgebungen, die auf dem System installiert "
+#~ "sind, starten."
+
+#~ msgid ""
+#~ "A <guibutton>Clear</guibutton> button that clears the text from the "
+#~ "<guilabel>Login</guilabel> and <guilabel>Pass</guilabel> fields."
+#~ msgstr ""
+#~ "Einen <guibutton>Abbrechen</guibutton>-Knopf, der die "
+#~ "<guilabel>Benutzername</guilabel>- und <guilabel>Passwort</guilabel>-"
+#~ "Felder löscht."
+
+#~ msgid "<term>Shutdown</term>"
+#~ msgstr "<term>Herunterfahren</term>"
+
+#~ msgid "Restart"
+#~ msgstr "Neu starten"
+
+#~ msgid ""
+#~ "Stop and then restart the X-server. Typically, you might need to use this "
+#~ "option if you have changed your X11 configuration in some way."
+#~ msgstr ""
+#~ "Diese Option können Sie benutzen, wenn Sie Ihre X11-Einstellungen "
+#~ "geändert haben."
+
+#~ msgid "Console Mode"
+#~ msgstr "Konsolen-Modus"
+
+#~ msgid ""
+#~ "Stop the &X-Server; and return the system to console mode. This is "
+#~ "achieved by bringing the system down to runlevel 3. Typically, the system "
+#~ "manager might need to use this option before upgrading or re-configuring "
+#~ "X11 software."
+#~ msgstr ""
+#~ "Hält den &X-Server; an und bringt das System in den Konsolen-Modus "
+#~ "zurück. Das wird dadurch erreicht, dass das System auf den Runlevel 3 "
+#~ "gebracht wird. Typischerweise benutzt der Systemadministrator diese "
+#~ "Option, wenn er das System aktualisieren oder die X11-Einstellungen "
+#~ "ändern will."
+
+#~ msgid ""
+#~ "Here you can change the desktop background which will be displayed before "
+#~ "a user logs in. You can have a single color or an image as a background. "
+#~ "If you have an image as the background and select center, the selected "
+#~ "background color will be used around the image if it is not large enough "
+#~ "to cover the entire desktop."
+#~ msgstr ""
+#~ "Hier können Sie den Desktop-Hintergrund einstellen, der beim Anmelden "
+#~ "angezeigt wird. Dabei kann sowohl eine einzelne Farbe als auch ein Bild "
+#~ "verwendet werden. Falls Sie ein Bild verwenden, das kleiner ist als der "
+#~ "Desktop und Zentrieren auswählen, wird um das Bild herum die gewählte "
+#~ "Hintergrundfarbe angezeigt."
+
+#~ msgid ""
+#~ "The background colors and effects are controlled by the options on the "
+#~ "tab labeled <guilabel>Background</guilabel> and you select a background "
+#~ "image and its placement from the options on the tab labeled "
+#~ "<guilabel>Wallpaper</guilabel>."
+#~ msgstr ""
+#~ "Die Hintergrundfarben und -effekte werden von den Optionen des Reiters "
+#~ "<guilabel>Hintergrund</guilabel> bestimmt. Ein Hintergrundbild und die "
+#~ "Plazierung des Hintergrundbild werden mit den Optionen des Reiters "
+#~ "<guilabel>Hintergrundbild</guilabel> ausgewählt."
+
+#~ msgid ""
+#~ "To change the default background color(s) simply click either of the "
+#~ "color buttons and select a new color."
+#~ msgstr ""
+#~ "Um die Standardfarbe(n) zu ändern klicken Sie einfach auf die Farbknöpfe "
+#~ "und wählen Sie eine neue Farbe aus."
+
+#~ msgid ""
+#~ "The drop down box above the color buttons provides you with several "
+#~ "different blend effects. Choose one from the list, and it will be "
+#~ "previewed on the small monitor at the top of the window. Your choices are:"
+#~ msgstr ""
+#~ "Das Auswahlmenü über den Farbknöpfen bietet verschiedene Verlaufs-Modi. "
+#~ "Wenn Sie einen dieser Modi auswählen wird der Effekt auf dem kleinen "
+#~ "Monitor im oberen Fensterbereich angezeigt. Ihre Möglichkeiten sind:"
+
+#~ msgid "Flat"
+#~ msgstr "Durchgehend"
+
+#~ msgid ""
+#~ "By choosing this mode, you select two colors (using both color buttons)."
+#~ msgstr ""
+#~ "Bei diesem Modus werden zwei Farben verwendet (mit den beiden Farbknöpfen "
+#~ "bestimmt)."
+
+#~ msgid ""
+#~ "You then select a pattern by clicking <guilabel>Setup</guilabel>. This "
+#~ "opens a new dialog window, which gives you the opportunity to select a "
+#~ "pattern. Simply click once on the pattern of your choice, then click on "
+#~ "<guilabel>OK</guilabel>, and &kde; will render the pattern you selected "
+#~ "using the two colors you selected. For more on patterns, see the section "
+#~ "<ulink url=\"help:/kcontrol/background/index.html#bkgnd-patterns"
+#~ "\">Background: Adding, Removing and Modifying Patterns</ulink>."
+#~ msgstr ""
+#~ "Danach läßt sich mit <guilabel>Einrichtung ...</guilabel> ein Muster "
+#~ "auswählen. Dazu wird ein neues Dialogfenster geöffnet - selektieren Sie "
+#~ "einfach ein Muster und klicken sie auf <guilabel>OK</guilabel>. &kde; "
+#~ "wird dann das Muster mit den von Ihnen bestimmten Farben generieren. "
+#~ "Weitere Informationen finden Sie im Kapitel <ulink url=\"help:/kcontrol/"
+#~ "background/index.html#bkgnd-patterns\">Hintergrund: Hinzufügen, Löschen "
+#~ "und Verändern von Mustern</ulink>."
+
+#~ msgid "Background Program"
+#~ msgstr "Hintergrund-Programm"
+
+#~ msgid ""
+#~ "By selecting this option, you can have &kde; use an external program to "
+#~ "determine the background. This can be any program of your choosing. For "
+#~ "more information on this option, see the section entitled <ulink url="
+#~ "\"help:/kcontrol/background/index.html#bkgnd-programs\">Background: Using "
+#~ "an external program</ulink>."
+#~ msgstr ""
+#~ "Bei dieser Einstellung ruft &kde; ein externes Programm zur Generierung "
+#~ "des Hintergrunds auf. Dabei können Sie ein beliebiges Programm verwenden "
+#~ "- Genaueres findet sich im Kapitel <ulink url=\"help:/kcontrol/background/"
+#~ "index.html#bkgnd-programs\">Hintergrund: Verwendung eines externen "
+#~ "Programms</ulink>."
+
+#~ msgid ""
+#~ "The setup button is only needed for if you select <guilabel>Background "
+#~ "program</guilabel> or <guilabel>Patterns</guilabel>. In these instances, "
+#~ "another window will appear to configure the specifics."
+#~ msgstr ""
+#~ "Der Knopf <guilabel>Einrichtung ...</guilabel> wird nur benötigt wenn Sie "
+#~ "die Modi <guilabel>Hintergrund-Programm</guilabel> oder <guilabel>Muster</"
+#~ "guilabel> wählen. In diesen Fällen ist der Knopf aktiv und kann zum "
+#~ "Einstellen der Parameter verwendet werden."
+
+#~ msgid "Wallpaper"
+#~ msgstr "Hintergrundbild"
+
+#~ msgid ""
+#~ "To select a new background image first, click on the "
+#~ "<guilabel>Wallpapers</guilabel> tab, then you can either select an image "
+#~ "from the drop down list labeled <guilabel>Wallpaper</guilabel> or select "
+#~ "<guibutton>Browse...</guibutton> and select an image file from a file "
+#~ "selector."
+#~ msgstr ""
+#~ "Um ein neues Hintergrundbild auszuwählen klicken Sie auf den Reiter "
+#~ "<guilabel>Hintergrundbild</guilabel>; dann lässt sich eines der Bilder "
+#~ "aus der Liste <guilabel>Hintergrundbild</guilabel> auswählen. Alternativ "
+#~ "können Sie mit dem Knopf <guibutton>Auswählen</guibutton> ein beliebiges "
+#~ "Bild verwenden."
+
+#~ msgid "The image can be displayed in six different ways:"
+#~ msgstr "Das Bild kann auf sechs verschieden Weisen angezeigt werden:"
+
+#~ msgid "No wallpaper"
+#~ msgstr "Kein Hintergrundbild"
+
+#~ msgid "&kdm;"
+#~ msgstr "&kdm;"

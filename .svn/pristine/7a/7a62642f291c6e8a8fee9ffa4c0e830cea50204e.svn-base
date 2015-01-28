@@ -1,0 +1,794 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:26+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: index.docbook:12
+#, no-c-format
+msgid "The &klipper; Handbook"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:15
+#, no-c-format
+msgid "&Philip.Rodrigues; &Philip.Rodrigues.mail;"
+msgstr ""
+
+#. Tag: othercredit
+#: index.docbook:17
+#, no-c-format
+msgid "&Carsten.Pfeiffer; &Carsten.Pfeiffer.mail;"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:22
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+
+#. Tag: holder
+#: index.docbook:28
+#, no-c-format
+msgid "&Philip.Rodrigues;"
+msgstr ""
+
+#. Tag: date
+#: index.docbook:33
+#, no-c-format
+msgid "2013-06-02"
+msgstr ""
+
+#. Tag: releaseinfo
+#: index.docbook:34
+#, no-c-format
+msgid "0.9.7 (&kde; 4.11)"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:37
+#, no-c-format
+msgid "&klipper; is the &kde; clipboard cut &amp; paste utility."
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:41
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:42
+#, no-c-format
+msgid "Klipper"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:43
+#, no-c-format
+msgid "kdebase"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:44
+#, no-c-format
+msgid "clipboard"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:49
+#, no-c-format
+msgid "Introduction"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:50
+#, no-c-format
+msgid ""
+"&klipper; is the &kde; clipboard utility. It stores clipboard history, and "
+"allows you to link clipboard contents to application actions. Please report any "
+"problems or feature requests to <ulink url=\"http://bugs.kde.org\">"
+"KDEs bugzilla</ulink> or use the <guimenuitem>Report Bug</guimenuitem> "
+"item in the <guimenu>Help</guimenu> menu."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:59
+#, no-c-format
+msgid "Using &klipper;"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:62
+#, no-c-format
+msgid "Basic Usage"
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:64
+#, no-c-format
+msgid "The &klipper; icon."
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:70
+#, no-c-format
+msgid "The &klipper; icon"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:75
+#, no-c-format
+msgid ""
+"To display the clipboard history, click on the &klipper; icon in the &kde; "
+"panel, or press <keycombo action=\"simul\">&Ctrl;&Alt;<keycap>V</keycap> "
+"</keycombo>. Previous clipboard entries are shown at the top of the popup menu "
+"which appears. Selecting one of these copies it to the clipboard, from where it "
+"can be pasted into any &kde; or X application as usual."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:83
+#, no-c-format
+msgid ""
+"The shortcut for this action has to be configured in the <guilabel>"
+"System Tray Settings</guilabel> on the <guilabel>Entries</guilabel> page."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:87
+#, no-c-format
+msgid ""
+"You can search through the clipboard history by opening it (click on &klipper;) "
+"and typing your query. The results are updated as you type. In case you're "
+"wondering how to use the accelerator keys in the &klipper; menu, just press "
+"&Alt; and the accelerator you want. For example, to clear the clipboard history "
+"when the &klipper; menu is open, press &Alt; and the underlined letter in "
+"<guimenuitem>Clear Clipboard History</guimenuitem> ."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:95
+#, no-c-format
+msgid ""
+"Select <guilabel>Show Barcode</guilabel> from the &klipper; popup menu to open "
+"a dialog with a <ulink url=\"http://en.wikipedia.org/wiki/QR_Code\">"
+"QRCode</ulink> and a <ulink url=\"http://en.wikipedia.org/wiki/Datamatrix\">"
+"DataMatrix</ulink> barcode. Use &ksnapshot; to capture the barcodes and save "
+"them."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:101
+#, no-c-format
+msgid ""
+"To disable &klipper;, click on its icon and from the menu that appears, select "
+"<guimenuitem>Quit</guimenuitem>."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:108
+#, no-c-format
+msgid "Actions"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:110
+#, no-c-format
+msgid ""
+"&klipper; can perform actions on the contents of the clipboard, based on "
+"whether they match a particular regular expression. For example, any clipboard "
+"contents starting with <quote>http://</quote> can be passed to Firefox or "
+"&konqueror; as &URL;s to open. In addition, if the contents matches a path, "
+"similar actions can be performed according to the file's type. E.g, if the path "
+"to a <acronym>PDF</acronym> file is copied to the clipboard, the file can be "
+"viewed in &okular;."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:118
+#, no-c-format
+msgid ""
+"To use this feature, just select a &URL; or path. If there is a matching "
+"regular expression in &klipper;'s list, a menu will appear showing you the "
+"programs for your selection. Use the mouse or cursor keys to select a program, "
+"and &klipper; will run this program, opening the address pointed to by the "
+"selection."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:125
+#, no-c-format
+msgid ""
+"If you do not want to perform any actions on the clipboard contents, select "
+"<guimenuitem>Disable This Popup</guimenuitem> on the pop-up menu to return to "
+"what you were doing before. If you leave the menu, it will disappear, leaving "
+"you to continue your work. You can change the time that the menu remains for in "
+"the <guilabel>Configure Klipper...</guilabel> dialog, with the option <guilabel>"
+"Timeout for action popups</guilabel> under the <guilabel>General</guilabel> "
+"page. You can separately disable the file path part using the option <guilabel>"
+"Enable MIME-based actions</guilabel> under the <guilabel>Actions</guilabel> "
+"page."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:135
+#, no-c-format
+msgid ""
+"Actions can be disabled completely by clicking on &klipper; and deselecting "
+"<guimenuitem>Enable Clipboard Actions</guimenuitem>, or by pressing <keycombo "
+"action=\"simul\">&Ctrl;&Alt;<keycap>X</keycap></keycombo>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:139
+#, no-c-format
+msgid ""
+"Clipboard contents which match a regular expression can also be edited before "
+"performing an action on them. Select <guimenuitem>Edit contents...</guimenuitem> "
+"on the &klipper; pop-up menu, and you can change the clipboard contents in the "
+"dialog which appears, before clicking the <guibutton>OK</guibutton> "
+"button to run the appropriate action."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:146
+#, no-c-format
+msgid ""
+"Pressing <keycombo action=\"simul\">&Ctrl;&Alt;<keycap>R</keycap></keycombo> "
+"shows the pop-up menu to repeat the last action which &klipper; performed."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:153
+#, no-c-format
+msgid "Clipboard/Selection Behavior"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:156
+#, no-c-format
+msgid "General"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:157
+#, no-c-format
+msgid ""
+"&klipper; can be used to set the behavior of the clipboard and selection in "
+"&kde;."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:162
+#, no-c-format
+msgid ""
+"The &X-Window; uses two separate clipboard buffers: the <quote>selection</quote> "
+"and the <quote>clipboard</quote>. Text is placed in the selection buffer by "
+"simply selecting it, and can be pasted with the middle mouse button. To place "
+"text in the clipboard buffer, select it and press <keycombo>&Ctrl;<keycap>"
+"X</keycap> </keycombo> or <keycombo>&Ctrl;<keycap>C</keycap> </keycombo>"
+". Text from the clipboard buffer is pasted using <keycombo>&Ctrl;<keycap>"
+"V</keycap> </keycombo> or by selecting <menuchoice><guimenu>Edit</guimenu>"
+"<guimenuitem>Paste</guimenuitem> </menuchoice>."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:193
+#, no-c-format
+msgid "Changing Clipboard/Selection Behavior"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:194
+#, no-c-format
+msgid ""
+"In order to change clipboard/selection behavior, select <guimenuitem>"
+"Configure &klipper;...</guimenuitem> from the &klipper; pop-up menu, and in the "
+"dialog box that appears, select the <guilabel>General</guilabel> "
+"page. Unchecking <guilabel>Synchronize contents of the clipboard and the "
+"selection</guilabel> makes the clipboard and selection function as completely "
+"separate buffers as described above. With this option set, the option <guilabel>"
+"Ignore selection</guilabel> will prevent &klipper; from including the contents "
+"of the selection in its clipboard history and from performing actions on the "
+"contents of the selection. Selecting <guilabel>Synchronize contents of the "
+"clipboard and the selection</guilabel> causes the clipboard and selection "
+"buffers to always be the same, meaning that text in the selection can be pasted "
+"with either the <mousebutton>middle</mousebutton> mouse button or the key "
+"combination <keycombo>&Ctrl;<keycap>V</keycap> </keycombo>"
+", and similarly for text in the clipboard buffer."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:225
+#, no-c-format
+msgid "Configuring &klipper;"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:229
+#, no-c-format
+msgid "Viewing the Configuration Dialog"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:231
+#, no-c-format
+msgid ""
+"To view or change &klipper;'s settings, open the &klipper; pop-up menu, and "
+"select <guimenuitem>Configure Klipper...</guimenuitem>"
+". The &klipper; configuration dialog will appear. Its contents are described "
+"below."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:239
+#, no-c-format
+msgid "General Options"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:244
+#, no-c-format
+msgid "Save clipboard contents on exit"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:245
+#, no-c-format
+msgid ""
+"If this option is on, the clipboard history will be saved when &klipper; exits, "
+"allowing you to use it next time &klipper; starts."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:252
+#, no-c-format
+msgid "Prevent empty clipboard"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:253
+#, no-c-format
+msgid ""
+"If selected, the clipboard will never be empty: &klipper; will insert the most "
+"recent item from the clipboard history into the clipboard instead of allowing "
+"it to be empty."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:259
+#, no-c-format
+msgid "Ignore images"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:260
+#, no-c-format
+msgid ""
+"When an area of the screen is selected with mouse or keyboard, this is called "
+"the <quote>selection</quote>. If this option is selected, only text selections "
+"are stored in the history, while images and other selections are not."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:268
+#, no-c-format
+msgid "Ignore selection"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:269
+#, no-c-format
+msgid ""
+"Sets the clipboard mode. This option will prevent &klipper; from including the "
+"contents of the selection in its clipboard history and from performing actions "
+"on the contents of the selection. See <xref linkend=\"clipboard-modes\"/>."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:277
+#, no-c-format
+msgid "Text selection only"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:278
+#, no-c-format
+msgid ""
+"When an area of the screen is selected with mouse or keyboard, this is called "
+"the <quote>selection</quote>. If this option is selected, only text selections "
+"are stored in the history, while images and other selections are not. See <xref "
+"linkend=\"clipboard-modes\"/>."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:287
+#, no-c-format
+msgid "Synchronize contents of the clipboard and the selection"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:289
+#, no-c-format
+msgid ""
+"Sets the clipboard mode. When an area of the screen is selected with mouse or "
+"keyboard, this is called the <quote>selection</quote>"
+". If this option is selected, the selection and the clipboard is kept the same, "
+"so that anything in the selection is immediately available for pasting "
+"elsewhere using any method, including the traditional middle mouse button. "
+"Otherwise, the selection is recorded in the clipboard history, but the "
+"selection can only be pasted using the middle mouse button. Also see the "
+"<guilabel>Ignore selection</guilabel> option. See <xref "
+"linkend=\"clipboard-modes\"/>."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:303
+#, no-c-format
+msgid "Timeout for Action pop-ups"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:304
+#, no-c-format
+msgid ""
+"Set the time that a popup menu will remain for if you do nothing with it."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:308
+#, no-c-format
+msgid "Clipboard history size"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:310
+#, no-c-format
+msgid "Sets the number of items that are stored in the clipboard history."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:319
+#, no-c-format
+msgid "Actions Options"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:323
+#, no-c-format
+msgid "Replay actions on an item selected from history"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:325
+#, no-c-format
+msgid ""
+"If this is switched on, selecting an item from the history causes &klipper; to "
+"display the actions pop-up on that item, if appropriate."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:332
+#, no-c-format
+msgid "Remove white space when executing actions"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:333
+#, no-c-format
+msgid ""
+"If selected, any white space (spaces, tabs, &etc;) at the beginning and end of "
+"the clipboard contents will be removed before passing the clipboard contents to "
+"an application. This is useful, for example, if the clipboard contains a &URL; "
+"with spaces which, if opened by a web browser, would cause an error."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:342
+#, no-c-format
+msgid "Enable MIME-based actions"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:343
+#, no-c-format
+msgid ""
+"If selected, in addition to the actions you defined a list of applications for "
+"the detected MIME type will appear in the popup menu."
+msgstr ""
+
+#. Tag: term
+#: index.docbook:349
+#, no-c-format
+msgid "Editing Expressions/Actions"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:350
+#, no-c-format
+msgid ""
+"On the <guilabel>Actions</guilabel> page, double-click the regular expression "
+"or action that you want to edit or select it and press the <guibutton>"
+"Edit Action</guibutton> button. A dialog will appear in which the expression "
+"text can be edited as you wish."
+msgstr ""
+
+#. Tag: term
+#: index.docbook:357
+#, no-c-format
+msgid "Adding Expressions/Actions"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:358
+#, no-c-format
+msgid ""
+"Click the <guibutton>Add Action</guibutton> button to add a regular expression "
+"for &klipper; to match. &klipper; uses &Qt;'s <classname>QRegExp</classname>"
+", which understands most regular expressions as you would use in <application>"
+"grep</application> or <application>egrep</application> for instance."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:363
+#, no-c-format
+msgid ""
+"You can add a description of the regular expression type (&eg; <quote>"
+"HTTP URL</quote>) by <mousebutton>left</mousebutton> clicking in the <guilabel>"
+"Description</guilabel> column."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:367
+#, no-c-format
+msgid ""
+"You can find detailed information about the use of <classname>"
+"QRegExp</classname> regular expressions at <ulink "
+"url=\"http://qt-project.org/doc/qt-4.8/qregexp.html#details\">"
+"http://qt-project.org/doc/qt-4.8/qregexp.html#details</ulink>"
+". Note that &klipper; does not support the wildcard mode mentioned on this "
+"page."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:373
+#, no-c-format
+msgid ""
+"Edit the regular expression as described above. To add a command to execute, "
+"click <guimenuitem>Add Command</guimenuitem> and edit the command in an "
+"in-place text editing box. Double-clicking on a command allows you to edit it."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:377
+#, no-c-format
+msgid ""
+"Note that <token>%s</token> in the command line is replaced with the clipboard "
+"contents, &eg; if your command definition is <userinput><command>"
+"kwrite</command> <token>%s</token></userinput> and your clipboard contents are "
+"<filename>/home/phil/textfile</filename>, the command <userinput><command>"
+"kwrite</command> <filename>/home/phil/textfile</filename></userinput> "
+"will be run. To include <token>%s</token> in the command line, escape it with a "
+"backslash, as so: <userinput>\\%s</userinput>."
+msgstr ""
+
+#. Tag: guibutton
+#: index.docbook:387
+#, no-c-format
+msgid "Advanced"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:388
+#, no-c-format
+msgid ""
+"Brings up the <guilabel>Disable Actions for windows of type WM_CLASS</guilabel> "
+"dialog."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:390
+#, no-c-format
+msgid ""
+"Some programs, such as &konqueror;, use the clipboard internally. If you get "
+"unwanted &klipper; pop-ups all the time when using a certain application, do "
+"the following:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:395
+#, no-c-format
+msgid "Open the application."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:396
+#, no-c-format
+msgid ""
+"From a terminal, run <userinput><command>xprop</command> | <command>"
+"grep</command> <parameter>WM_CLASS</parameter></userinput> "
+"and then click on the window of the application you are running."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:400
+#, no-c-format
+msgid "The first string after the equals sign is the one to enter."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:404
+#, no-c-format
+msgid ""
+"Once the WM_CLASS is added, no more actions will be generated for windows of "
+"that application."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:413
+#, no-c-format
+msgid "Shortcuts Options"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:415
+#, no-c-format
+msgid ""
+"The shortcuts page allows you to change the keyboard shortcuts which are used "
+"to access &klipper; functions. You can change the shortcut to one of three "
+"things:"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:421
+#, no-c-format
+msgid "None"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:422
+#, no-c-format
+msgid "The selected action cannot be accessed directly from the keyboard"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:426
+#, no-c-format
+msgid "Default"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:427
+#, no-c-format
+msgid ""
+"The selected action uses &klipper;'s default key. These are the shortcuts "
+"referred to in this manual."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:431
+#, no-c-format
+msgid "Custom"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:432
+#, no-c-format
+msgid "The selected action is assigned to the keys you choose."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:433
+#, no-c-format
+msgid ""
+"To choose a custom key for the action you have selected, click on <guilabel>"
+"Custom</guilabel> and then <guilabel>None</guilabel>"
+". Now type the desired key combination on your keyboard, as in any &kde; "
+"application."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:440
+#, no-c-format
+msgid ""
+"If you define a shortcut for <guilabel>Open Klipper at Mouse Position</guilabel> "
+"pressing this shortcut will open the &klipper; popup menu at the position of "
+"the mouse cursor, instead of their default position (in the &kde; Panel). "
+"Useful if you use the mouse more than the keyboard."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:449
+#, no-c-format
+msgid "Credits and License"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:451
+#, no-c-format
+msgid "&klipper;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:454
+#, no-c-format
+msgid ""
+"Program copyright 1998 &Andrew.Stanley-Jones; <email>asj@cban.com</email>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:457
+#, no-c-format
+msgid "Program copyright 1998-2000 &Carsten.Pfeiffer; &Carsten.Pfeiffer.mail;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:459
+#, no-c-format
+msgid ""
+"Currently maintained by Esben Mose Hansen. See <ulink "
+"url=\"http://mosehansen.dk/about\">http://mosehansen.dk/about</ulink> "
+"for contact details."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:465
+#, no-c-format
+msgid ""
+"Documentation copyright 2000-2003, 2005 &Philip.Rodrigues; "
+"&Philip.Rodrigues.mail;"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:469
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+
+#. Tag: chapter
+#: index.docbook:469
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:476
+#, no-c-format
+msgid "Installation"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:479
+#, no-c-format
+msgid "How to obtain &klipper;"
+msgstr ""
+
+#. Tag: sect1
+#: index.docbook:479
+#, no-c-format
+msgid "&install.intro.documentation;"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:486
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr ""
+
+#. Tag: sect1
+#: index.docbook:486
+#, no-c-format
+msgid "&install.compile.documentation;"
+msgstr ""

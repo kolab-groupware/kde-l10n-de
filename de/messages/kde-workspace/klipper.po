@@ -1,0 +1,720 @@
+# Thomas Diehl <thd@kde.org>, 2002, 2003, 2004.
+# Stephan Johach <hunsum@gmx.de>, 2005, 2006.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006, 2007, 2008, 2009, 2010.
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2011, 2012, 2013.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2009, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: klipper\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-01-14 05:45+0000\n"
+"PO-Revision-Date: 2013-06-10 21:18+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Thomas Diehl"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "thd@kde.org"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ReplayActionInHistory)
+#: actionsconfig.ui:17
+msgid "Replay actions on an item selected from history"
+msgstr "Aktion erneut an einem aus dem Verlauf gewählten Element ausführen"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_StripWhiteSpace)
+#: actionsconfig.ui:24
+msgid "Remove whitespace when executing actions"
+msgstr "Leerräume bei der Befehlsausführung entfernen"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableMagicMimeActions)
+#. i18n: ectx: label, entry (EnableMagicMimeActions), group (Actions)
+#: actionsconfig.ui:31 klipper.kcfg:84
+msgid "Enable MIME-based actions"
+msgstr "MIME-basierte Aktionen aktivieren"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: actionsconfig.ui:38
+msgid "Action list:"
+msgstr "Aktionsliste:"
+
+#. i18n: ectx: property (text), widget (ActionsTreeWidget, kcfg_ActionList)
+#: actionsconfig.ui:49
+msgid "Regular Expression"
+msgstr "Regulärer Ausdruck"
+
+#. i18n: ectx: property (text), widget (ActionsTreeWidget, kcfg_ActionList)
+#: actionsconfig.ui:54 editactiondialog.cpp:223
+msgid "Description"
+msgstr "Beschreibung"
+
+#. i18n: ectx: property (text), widget (QPushButton, pbAddAction)
+#: actionsconfig.ui:64
+msgid "Add Action..."
+msgstr "Aktion hinzufügen ..."
+
+#. i18n: ectx: property (text), widget (QPushButton, pbEditAction)
+#: actionsconfig.ui:71
+msgid "Edit Action..."
+msgstr "Aktion bearbeiten ..."
+
+#. i18n: ectx: property (text), widget (QPushButton, pbDelAction)
+#: actionsconfig.ui:78
+msgid "Delete Action"
+msgstr "Aktion löschen"
+
+#. i18n: ectx: property (text), widget (QPushButton, pbAdvanced)
+#: actionsconfig.ui:85
+msgid "Advanced..."
+msgstr "Erweitert ..."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: actionsconfig.ui:94
+#, no-c-format
+msgid ""
+"Click on a highlighted item's column to change it. \"%s\" in a command will "
+"be replaced with the clipboard contents.<br>For more information about "
+"regular expressions, you could have a look at the <a href=\"http://en."
+"wikipedia.org/wiki/Regular_expression\">Wikipedia entry about this topic</a>."
+msgstr ""
+"Klicken Sie auf die Spalte eines hervorgehobenen Elements, um es zu ändern. "
+"„%s“ in einem Befehl wird durch den Inhalt der Zwischenablage ersetzt."
+"<br>Weitere Informationen zu regulären Ausdrücken finden Sie auf der <a href="
+"\"http://de.wikipedia.org/wiki/Regulärer_Ausdruck\">Wikipedia-Seite</a>."
+
+#: configdialog.cpp:36
+msgid " second"
+msgid_plural " seconds"
+msgstr[0] " Sekunde"
+msgstr[1] " Sekunden"
+
+#: configdialog.cpp:37
+msgid " entry"
+msgid_plural " entries"
+msgstr[0] " Eintrag"
+msgstr[1] " Einträge"
+
+#: configdialog.cpp:263
+msgid "Advanced Settings"
+msgstr "Erweiterte Einstellungen"
+
+#: configdialog.cpp:286
+msgctxt "General Config"
+msgid "General"
+msgstr "Allgemein"
+
+#: configdialog.cpp:286
+msgid "General Configuration"
+msgstr "Allgemeine Einstellungen"
+
+#: configdialog.cpp:287
+msgctxt "Actions Config"
+msgid "Actions"
+msgstr "Aktionen"
+
+#: configdialog.cpp:287
+msgid "Actions Configuration"
+msgstr "Aktionen-Einstellungen"
+
+#: configdialog.cpp:291
+msgctxt "Shortcuts Config"
+msgid "Shortcuts"
+msgstr "Kurzbefehle"
+
+#: configdialog.cpp:291
+msgid "Shortcuts Configuration"
+msgstr "Kurzbefehl-Einstellungen"
+
+#: configdialog.cpp:381
+msgid "D&isable Actions for Windows of Type WM_CLASS"
+msgstr "Aktionen &deaktivieren für Fenster des Typs WM_CLASS"
+
+#: configdialog.cpp:389
+msgid ""
+"<qt>This lets you specify windows in which Klipper should not invoke "
+"\"actions\". Use<br /><br /><center><b>xprop | grep WM_CLASS</b></"
+"center><br />in a terminal to find out the WM_CLASS of a window. Next, click "
+"on the window you want to examine. The first string it outputs after the "
+"equal sign is the one you need to enter here.</qt>"
+msgstr ""
+"<qt>Das ermöglicht die Angabe von Fenstern, in denen Klipper keine "
+"„Aktionen“ ausführen sollte. Geben Sie <br /><br /><center><b>xprop | grep "
+"WM_CLASS</b></center><br />in einem Terminal ein, um die WM_CLASS eines "
+"Fensters herauszufinden. Als Nächstes klicken Sie auf das Fenster, das Sie "
+"überprüfen möchten. Die erste Zeichenkette, die es nach dem "
+"Gleichheitszeichen ausgibt, ist diejenige, die Sie hier eingeben müssen.</qt>"
+
+#: editactiondialog.cpp:35
+msgid "Ignore"
+msgstr "Ignorieren"
+
+#: editactiondialog.cpp:37
+msgid "Replace Clipboard"
+msgstr "Zwischenablage ersetzen"
+
+#: editactiondialog.cpp:39
+msgid "Add to Clipboard"
+msgstr "In die Zwischenablage"
+
+#: editactiondialog.cpp:219
+msgid "Command"
+msgstr "Befehl"
+
+#: editactiondialog.cpp:221
+msgid "Output Handling"
+msgstr "Ausgabebehandlung"
+
+#: editactiondialog.cpp:263
+msgid "Action Properties"
+msgstr "Aktions-Eigenschaften"
+
+#: editactiondialog.cpp:366
+msgid "new command"
+msgstr "Neuer Befehl"
+
+#: editactiondialog.cpp:367
+msgid "Command Description"
+msgstr "Befehls-Beschreibung"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: editactiondialog.ui:20
+msgid "Action properties:"
+msgstr "Aktions-Eigenschaften:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: editactiondialog.ui:42
+msgid "Regular expression:"
+msgstr "Regulärer Ausdruck:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: editactiondialog.ui:52
+msgid "Description:"
+msgstr "Beschreibung:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: editactiondialog.ui:62
+msgid "Automatic:"
+msgstr "Automatisch:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: editactiondialog.ui:87
+msgid "List of commands for this action:"
+msgstr "Liste der Befehle für diese Aktion:"
+
+#. i18n: ectx: property (text), widget (QPushButton, pbAddCommand)
+#: editactiondialog.ui:144
+msgid "Add Command"
+msgstr "Befehl hinzufügen"
+
+#. i18n: ectx: property (text), widget (QPushButton, pbRemoveCommand)
+#: editactiondialog.ui:151
+msgid "Remove Command"
+msgstr "Befehl entfernen"
+
+#. i18n: ectx: property (toolTip), widget (QTableView, twCommandList)
+#: editactiondialog.ui:176
+msgid "Double-click an item to edit"
+msgstr "Doppelklicken Sie auf ein Element, um es zu ändern"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_KeepClipboardContents)
+#: generalconfig.ui:17
+msgid "Save clipboard contents on exit"
+msgstr "Inhalt der Zwischenablage beim Verlassen speichern"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_PreventEmptyClipboard)
+#. i18n: ectx: label, entry (PreventEmptyClipboard), group (General)
+#: generalconfig.ui:24 klipper.kcfg:16
+msgid "Prevent empty clipboard"
+msgstr "Leere Zwischenablage vermeiden"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_IgnoreImages)
+#. i18n: ectx: label, entry (IgnoreImages), group (General)
+#: generalconfig.ui:31 klipper.kcfg:21
+msgid "Ignore images"
+msgstr "Bilder ignorieren"
+
+#. i18n: ectx: property (title), widget (QGroupBox, selection_group)
+#: generalconfig.ui:38
+msgid "Selection and Clipboard"
+msgstr "Auswahl und Zwischenablage"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_IgnoreSelection)
+#: generalconfig.ui:44
+msgid "Ignore selection"
+msgstr "Auswahl ignorieren"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SelectionTextOnly)
+#: generalconfig.ui:51
+msgid "Text selection only"
+msgstr "Nur Textauswahl"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SyncClipboards)
+#: generalconfig.ui:58
+msgid "Synchronize contents of the clipboard and the selection"
+msgstr "Inhalt von Zwischenablage und aktueller Auswahl angleichen"
+
+#. i18n: ectx: property (text), widget (QLabel, timeout_label)
+#: generalconfig.ui:68
+msgid "Timeout for action popups:"
+msgstr "Zeitlimit für Aktionen-Menüs:"
+
+#. i18n: ectx: property (text), widget (QLabel, history_size_label)
+#: generalconfig.ui:82
+msgid "Clipboard history size:"
+msgstr "Größe des Verlaufsspeichers:"
+
+#: klipper.cpp:147
+msgid "Enable Clipboard Actions"
+msgstr "Zwischenablageaktionen aktivieren"
+
+#: klipper.cpp:173
+msgid "C&lear Clipboard History"
+msgstr "&Bisherigen Inhalt der Zwischenablage löschen"
+
+#: klipper.cpp:179
+msgid "&Configure Klipper..."
+msgstr "&Klipper einrichten ..."
+
+#: klipper.cpp:184
+msgctxt "@item:inmenu Quit Klipper"
+msgid "&Quit"
+msgstr "Be&enden"
+
+#: klipper.cpp:188
+msgid "Manually Invoke Action on Current Clipboard"
+msgstr "Aktionen der aktuellen Zwischenablage manuell aufrufen"
+
+#: klipper.cpp:195
+msgid "&Edit Contents..."
+msgstr "&Inhalt bearbeiten ..."
+
+#: klipper.cpp:202
+msgid "&Show Barcode..."
+msgstr "&Strichcode anzeigen ..."
+
+#: klipper.cpp:209
+msgid "Next History Item"
+msgstr "Nächstes Element im Verlauf"
+
+#: klipper.cpp:213
+msgid "Previous History Item"
+msgstr "Vorheriges Element im Verlauf"
+
+#: klipper.cpp:219
+msgid "Open Klipper at Mouse Position"
+msgstr "Klipper an Mausposition öffnen"
+
+#: klipper.cpp:472
+msgid ""
+"You can enable URL actions later by left-clicking on the Klipper icon and "
+"selecting 'Enable Clipboard Actions'"
+msgstr ""
+"Sie können URL-Aktionen (Adress-Aufrufe) auch noch später einschalten, indem "
+"Sie mit der linken Maustaste auf das Klipper-Symbol klicken und "
+"„Zwischenaktionen aktivieren“ auswählen."
+
+#: klipper.cpp:500
+msgid "Should Klipper start automatically when you login?"
+msgstr ""
+"Soll Klipper automatisch gestartet werden, wenn Sie sich am System anmelden?"
+
+#: klipper.cpp:501
+msgid "Automatically Start Klipper?"
+msgstr "Klipper automatisch starten?"
+
+#: klipper.cpp:501
+msgid "Start"
+msgstr "Automatisch starten"
+
+#: klipper.cpp:502
+msgid "Do Not Start"
+msgstr "Nicht automatisch starten"
+
+#: klipper.cpp:912
+msgid "KDE cut & paste history utility"
+msgstr "KDE-Dienstprogramm für den Verlauf von Ausschneiden & Einfügen"
+
+#: klipper.cpp:916 tray.cpp:37
+msgid "Klipper"
+msgstr "Klipper"
+
+#: klipper.cpp:918
+msgid ""
+"(c) 1998, Andrew Stanley-Jones\n"
+"1998-2002, Carsten Pfeiffer\n"
+"2001, Patrick Dubroy"
+msgstr ""
+"© 1998, Andrew Stanley-Jones\n"
+"1998–2002, Carsten Pfeiffer\n"
+"2001, Patrick Dubroy"
+
+#: klipper.cpp:922
+msgid "Carsten Pfeiffer"
+msgstr "Carsten Pfeiffer"
+
+#: klipper.cpp:923
+msgid "Author"
+msgstr "Autor"
+
+#: klipper.cpp:926
+msgid "Andrew Stanley-Jones"
+msgstr "Andrew Stanley-Jones"
+
+#: klipper.cpp:927
+msgid "Original Author"
+msgstr "Ursprünglicher Autor"
+
+#: klipper.cpp:930
+msgid "Patrick Dubroy"
+msgstr "Patrick Dubroy"
+
+#: klipper.cpp:931
+msgid "Contributor"
+msgstr "Mitarbeiter"
+
+#: klipper.cpp:934
+msgid "Luboš Luňák"
+msgstr "Luboš Luňák"
+
+#: klipper.cpp:935
+msgid "Bugfixes and optimizations"
+msgstr "Fehlerkorrekturen und Optimierungen"
+
+#: klipper.cpp:938
+msgid "Esben Mose Hansen"
+msgstr "Esben Mose Hansen"
+
+#: klipper.cpp:939
+msgid "Maintainer"
+msgstr "Betreuer"
+
+#: klipper.cpp:962
+msgid "Edit Contents"
+msgstr "Inhalt bearbeiten"
+
+#: klipper.cpp:995
+msgid "Mobile Barcode"
+msgstr "Mobiler Strichcode"
+
+#: klipper.cpp:1023
+msgid "Really delete entire clipboard history?"
+msgstr "Möchten Sie wirklich den gesamten Verlauf der Zwischenablage löschen?"
+
+#: klipper.cpp:1024
+msgid "Delete clipboard history?"
+msgstr "Verlauf der Zwischenablage löschen?"
+
+#: klipper.cpp:1042 klipper.cpp:1051
+msgid "Clipboard history"
+msgstr "Verlauf der Zwischenablage"
+
+#: klipper.cpp:1068
+msgid "up"
+msgstr "nach oben"
+
+#: klipper.cpp:1075
+msgid "current"
+msgstr "aktuelle"
+
+#: klipper.cpp:1082
+msgid "down"
+msgstr "nach unten"
+
+#. i18n: ectx: label, entry (Version), group (General)
+#: klipper.kcfg:9
+msgid "Klipper version"
+msgstr "Klipper-Version"
+
+#. i18n: ectx: label, entry (KeepClipboardContents), group (General)
+#: klipper.kcfg:12
+msgid "Keep clipboard contents"
+msgstr "Inhalt der Zwischenablage behalten"
+
+#. i18n: ectx: whatsthis, entry (PreventEmptyClipboard), group (General)
+#: klipper.kcfg:18
+msgid ""
+"Selecting this option has the effect, that the clipboard can never be "
+"emptied. E.g. when an application exits, the clipboard would usually be "
+"emptied."
+msgstr ""
+"Die Aktivierung dieser Einstellung führt dazu, dass die Zwischenablage nicht "
+"geleert wird. Dies würde sonst automatisch nach dem Beenden eines Programms "
+"geschehen."
+
+#. i18n: ectx: label, entry (IgnoreSelection), group (General)
+#: klipper.kcfg:25
+msgid "Ignore Selection"
+msgstr "Auswahl ignorieren"
+
+#. i18n: ectx: whatsthis, entry (IgnoreSelection), group (General)
+#: klipper.kcfg:27
+msgid ""
+"<qt>When an area of the screen is selected with mouse or keyboard, this is "
+"called \"the selection\".<br/>If this option is set, the selection is not "
+"entered into the clipboard history, though it is still available for pasting "
+"using the middle mouse button.</qt>"
+msgstr ""
+"<qt>Wenn ein Bereich mit Hilfe der Maus oder der Tastatur markiert wird, "
+"bezeichnet man dies als „Auswahl“. <br/>Wenn Sie diese Einstellung "
+"aktivieren, wird eine solche Auswahl nicht automatisch in die Zwischenablage "
+"eingefügt; Sie können die Auswahl aber weiterhin mit der mittleren Maustaste "
+"an einer anderen Stelle einfügen.</qt>"
+
+#. i18n: ectx: label, entry (SyncClipboards), group (General)
+#: klipper.kcfg:34
+msgid "Synchronize clipboard and selection"
+msgstr "Inhalt der Zwischenablage und Textauswahl abgleichen"
+
+#. i18n: ectx: whatsthis, entry (SyncClipboards), group (General)
+#: klipper.kcfg:36
+msgid ""
+"<qt>When an area of the screen is selected with mouse or keyboard, this is "
+"called \"the selection\".<br/>If this option is selected, the selection and "
+"the clipboard is kept the same, so that anything in the selection is "
+"immediately available for pasting elsewhere using any method, including the "
+"traditional middle mouse button. Otherwise, the selection is recorded in the "
+"clipboard history, but the selection can only be pasted using the middle "
+"mouse button. Also see the 'Ignore Selection' option.</qt>"
+msgstr ""
+"<qt>Wenn ein Bereich mit Hilfe der Maus oder der Tastatur markiert wird, "
+"bezeichnet man dies als „Auswahl“. <br/>Wenn Sie diese Einstellung "
+"aktivieren, werden die Auswahl und die Zwischenablage abgeglichen; auf diese "
+"Weise ist der Inhalt der Auswahl automatisch auch über die Zwischenablage "
+"verfügbar, egal welche Methode Sie zum Einfügen verwenden. Auch der unter "
+"Linux übliche mittlere Mausklick kann weiterhin zum Einfügen verwendet "
+"werden. Wenn Sie diese Einstellung nicht aktivieren, wird die Auswahl zwar "
+"im Verlauf der Zwischenablage gespeichert, jedoch können Sie den "
+"ausgewählten Text ausschließlich mit der mittleren Maustaste einfügen. "
+"Beachten Sie dazu auch die Option „Auswahl ignorieren“.</qt>"
+
+#. i18n: ectx: label, entry (SelectionTextOnly), group (General)
+#: klipper.kcfg:39
+msgid "Selection text only"
+msgstr "Nur Textauswahl"
+
+#. i18n: ectx: whatsthis, entry (SelectionTextOnly), group (General)
+#: klipper.kcfg:41
+msgid ""
+"<qt>When an area of the screen is selected with mouse or keyboard, this is "
+"called \"the selection\".<br/>If this option is selected, only text "
+"selections are stored in the history, while images and other selections are "
+"not.</qt>"
+msgstr ""
+"<qt>Wenn ein Bereich mit Hilfe der Maus oder der Tastatur markiert wird, "
+"bezeichnet man dies als „Auswahl“. <br/>Wenn Sie diese Einstellung "
+"aktivieren, wird nur Text im Verlauf der Zwischenablage gespeichert, keine "
+"Bilder oder sonstige ausgewählte Objekte.</qt>"
+
+#. i18n: ectx: label, entry (UseGUIRegExpEditor), group (General)
+#: klipper.kcfg:44
+msgid "Use graphical regexp editor"
+msgstr "Grafischen Editor für reguläre Ausdrücke verwenden"
+
+#. i18n: ectx: label, entry (URLGrabberEnabled), group (General)
+#: klipper.kcfg:48
+msgid "URL grabber enabled"
+msgstr "URL-Aktionen aktivieren"
+
+#. i18n: ectx: label, entry (NoActionsForWM_CLASS), group (General)
+#: klipper.kcfg:53
+msgid "No actions for WM_CLASS"
+msgstr "Keine Aktionen für WM_CLASS"
+
+#. i18n: ectx: label, entry (TimeoutForActionPopups), group (General)
+#: klipper.kcfg:56
+msgid "Timeout for action popups (seconds)"
+msgstr "&Zeitlimit für Aktionen-Menüs (Sekunden)"
+
+#. i18n: ectx: tooltip, entry (TimeoutForActionPopups), group (General)
+#: klipper.kcfg:60
+msgid "A value of 0 disables the timeout"
+msgstr "Ein Wert von 0 deaktiviert das Zeitlimit"
+
+#. i18n: ectx: label, entry (MaxClipItems), group (General)
+#: klipper.kcfg:63
+msgid "Clipboard history size"
+msgstr "Größe des Verlaufsspeichers"
+
+#. i18n: ectx: label, entry (ActionList), group (General)
+#: klipper.kcfg:69
+msgid "Dummy entry for indicating changes in an action's tree widget"
+msgstr "Pseudo-Eintrag zum Anzeigen von Änderungen im Baumelement einer Aktion"
+
+#. i18n: ectx: label, entry (StripWhiteSpace), group (Actions)
+#: klipper.kcfg:75
+msgid "Strip whitespace when executing an action"
+msgstr "Leerräume bei der Befehlsausführung entfernen"
+
+#. i18n: ectx: whatsthis, entry (StripWhiteSpace), group (Actions)
+#: klipper.kcfg:77
+msgid ""
+"Sometimes, the selected text has some whitespace at the end, which, if "
+"loaded as URL in a browser would cause an error. Enabling this option "
+"removes any whitespace at the beginning or end of the selected string (the "
+"original clipboard contents will not be modified)."
+msgstr ""
+"Gelegentlich ergibt sich ein Leerzeichen oder sonstiger Leerraum am Ende von "
+"ausgewähltem Text. Das führt zu Fehlermeldungen des Browsers, falls es sich "
+"dabei um eine Web-Adresse handelt. Bei Aktivierung dieser Einstellung werden "
+"solche Leerräume am Textanfang und -ende entfernt. Die Originale in der "
+"Zwischenablage bleiben unangetastet."
+
+#. i18n: ectx: label, entry (ReplayActionInHistory), group (Actions)
+#: klipper.kcfg:80
+msgid "Replay action in history"
+msgstr "Aktion aus dem Verlauf erneut ausführen"
+
+#: klipperpopup.cpp:92
+msgid "<empty clipboard>"
+msgstr "<Zwischenablage leer>"
+
+#: klipperpopup.cpp:93
+msgid "<no matches>"
+msgstr "<keine Übereinstimmung>"
+
+#: klipperpopup.cpp:139
+msgid "Klipper - Clipboard Tool"
+msgstr "Klipper – Dienstprogramm für die Zwischenablage"
+
+#: popupproxy.cpp:171
+msgid "&More"
+msgstr "&Mehr"
+
+#: tray.cpp:39
+msgid "Clipboard Contents"
+msgstr "Inhalt der Zwischenablage"
+
+#: tray.cpp:39 tray.cpp:56
+msgid "Clipboard is empty"
+msgstr "Die Zwischenablage ist leer"
+
+#: urlgrabber.cpp:222
+#, kde-format
+msgid "%1 - Actions For: %2"
+msgstr "%1 – Aktionen für: %2"
+
+#: urlgrabber.cpp:250
+msgid "Disable This Popup"
+msgstr "Aufklappmenü deaktivieren"
+
+#: urlgrabber.cpp:256
+msgid "&Cancel"
+msgstr "&Abbrechen"
+
+#~ msgid "Enable Clipboard &Actions"
+#~ msgstr "Zwischenablageaktionen &aktivieren"
+
+#~ msgid "Show Klipper Popup-Menu"
+#~ msgstr "Klipper-Aufklappmenü anzeigen"
+
+#~ msgid "Popup menu at mouse-cursor position"
+#~ msgstr "Kontextmenü an Mauszeigerposition öffnen"
+
+#~ msgid "Replace"
+#~ msgstr "Ersetzen"
+
+#~ msgid "Add"
+#~ msgstr "Hinzufügen"
+
+#~ msgid "Use Output"
+#~ msgstr "Ausgabe verwenden"
+
+#~ msgid "Clipboard/Selection Behavior"
+#~ msgstr "Zwischenablage/Auswahl-Verhalten"
+
+#~ msgid "Separate clipboard and selection"
+#~ msgstr "Inhalt der Zwischenablage und Textauswahl getrennt vorhalten"
+
+#~ msgid ""
+#~ "This option prevents the selection being recorded in the clipboard "
+#~ "history. Only explicit clipboard changes are recorded."
+#~ msgstr ""
+#~ "Diese Einstellung verhindert, dass jede Auswahl im Verlaufsspeicher der "
+#~ "Zwischenablage registriert wird. Es werden nur noch ausdrückliche "
+#~ "Änderungen aufgenommen."
+
+#~ msgid ""
+#~ "<qt>There are two different clipboard buffers available:<br /><br /"
+#~ "><b>Clipboard</b> is filled by selecting something and pressing Ctrl+C, "
+#~ "or by clicking \"Copy\" in a toolbar or menubar.<br /><br /><b>Selection</"
+#~ "b> is available immediately after selecting some text. The only way to "
+#~ "access the selection is to press the middle mouse button.<br /><br />You "
+#~ "can configure the relationship between Clipboard and Selection.</qt>"
+#~ msgstr ""
+#~ "<qt>In KDE sind zwei verschiedene Ablagespeicher verfügbar:<br /><br /"
+#~ ">Die <b>Zwischenablage</b>, die Sie mit Inhalten füllen, indem Sie ein "
+#~ "Element auswählen und Strg+C drücken oder „Kopieren“ in einer "
+#~ "Werkzeugleiste bzw. in einem Menü auswählen.<br /><br />Die "
+#~ "<b>Textauswahl</b>, die einfach durch die Hervorhebung eines beliebigen "
+#~ "Textes per Maus oder Textcursor erfolgt. Die einzige Art, an diesen Text "
+#~ "heranzukommen, besteht im Drücken der mittleren Maustaste.<br /><br />Sie "
+#~ "können das Verhalten von Zwischenablage und Textauswahl zueinander durch "
+#~ "Einstellungen beeinflussen.</qt>"
+
+#~ msgid "Klipper - clipboard tool"
+#~ msgstr "Klipper - Dienstprogramm für die Zwischenablage"
+
+#, fuzzy
+#~| msgid "Action &list (right click to add/remove commands):"
+#~ msgid "Action list (right click to add/remove commands):"
+#~ msgstr ""
+#~ "Aktions&liste (zum Hinzufügen/Entfernen von Befehlen rechts klicken)"
+
+#~ msgid "Double-click here to set the command to be executed"
+#~ msgstr "Doppelklicken Sie hier, um den Befehl festzulegen"
+
+#~ msgid "Double-click here to set the regular expression"
+#~ msgstr "Doppelklicken Sie hier, um den regulären Ausdruck festzulegen"
+
+#~ msgid "<new action>"
+#~ msgstr "<Neue Aktion>"
+
+#~ msgid "Selecting this option synchronizes these two buffers."
+#~ msgstr ""
+#~ "Wenn diese Einstellung aktiv ist, werden die zwei Ablagespeicher "
+#~ "zusammengelegt."
+
+#~ msgid ""
+#~ "Using this option will only set the selection when highlighting something "
+#~ "and the clipboard when choosing e.g. \"Copy\" in a menubar."
+#~ msgstr ""
+#~ "Wenn diese Einstellung aktiv ist, wird eine Auswahl nur dann registriert, "
+#~ "wenn Sie ausdrücklich etwas hervorheben, und eine Aktion der "
+#~ "Zwischenablage nur dann, wenn Sie z. B. den Befehl „Kopieren“ in einem "
+#~ "Menü auswählen."
+
+#~ msgid "&Use graphical editor for editing regular expressions"
+#~ msgstr ""
+#~ "&Grafische Oberfläche zum Bearbeiten von regulären Ausdrücken verwenden"
+
+#~ msgid ""
+#~ "Click on a highlighted item's column to change it. \"%s\" in a command "
+#~ "will be replaced with the clipboard contents."
+#~ msgstr ""
+#~ "Klicken Sie auf die Spalte eines hervorgehobenen Elements, um es zu "
+#~ "ändern. „%s“ in einem Befehl wird durch den Inhalt der Zwischenablage "
+#~ "ersetzt."
+
+#~ msgid "Enable &Actions"
+#~ msgstr "&Aktionen aktivieren"
+
+#~ msgid "&Actions Enabled"
+#~ msgstr "A&ktionen aktiviert"
+
+#~ msgid ""
+#~ "Regular Expression (see http://doc.trolltech.com/qregexp.html#details)"
+#~ msgstr ""
+#~ "Regulärer Ausdruck (siehe http://doc.trolltech.com/qregexp.html#details)"
+
+#~ msgid "Configure"
+#~ msgstr "Einrichten"

@@ -1,0 +1,471 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2009, 2010, 2011, 2013, 2014.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcontrol_autostart\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:26+0000\n"
+"PO-Revision-Date: 2014-04-02 07:59+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: branches/KDE/4.1/kdebase/workspace/doc/kcontrol/"
+"autostart/index.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 811605\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:9
+#, no-c-format
+msgid "Autostart"
+msgstr "Autostart"
+
+#. Tag: author
+#: index.docbook:11
+#, no-c-format
+msgid "&Anne-Marie.Mahfouf;"
+msgstr "&Anne-Marie.Mahfouf;"
+
+#. Tag: trans_comment
+#: index.docbook:12
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Thomas</"
+"firstname><surname>Reitelbach</"
+"surname><affiliation><address><email>tr@erdfunkstelle.de</email></address></"
+"affiliation><contrib>Deutsche Übersetzung</contrib></othercredit>"
+
+#. Tag: date
+#: index.docbook:15
+#, no-c-format
+msgid "2013-12-05"
+msgstr "2013-12-05"
+
+#. Tag: releaseinfo
+#: index.docbook:16
+#, no-c-format
+msgid "&kde; 4.12"
+msgstr "&kde; 4.12"
+
+#. Tag: keyword
+#: index.docbook:19
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:20
+#, no-c-format
+msgid "System Settings"
+msgstr "Systemeinstellungen"
+
+#. Tag: keyword
+#: index.docbook:21
+#, no-c-format
+msgid "autostart"
+msgstr "Autostart"
+
+#. Tag: keyword
+#: index.docbook:22
+#, no-c-format
+msgid "desktop file"
+msgstr "Desktop-Datei"
+
+#. Tag: keyword
+#: index.docbook:23
+#, no-c-format
+msgid "script file"
+msgstr "Skriptdatei"
+
+#. Tag: title
+#: index.docbook:28
+#, no-c-format
+msgid "Autostart Manager"
+msgstr "Autostart-Verwaltung"
+
+#. Tag: para
+#: index.docbook:30
+#, no-c-format
+msgid ""
+"This module is a configuration tool for managing what programs start up with "
+"your personal &kde;. It allows you to add programs or scripts so they "
+"automatically start during the startup of your &kde; session and to manage "
+"them."
+msgstr ""
+"Dieses Einrichtungsmodul ermöglicht Ihnen die Verwaltung von Programmen, die "
+"mit Ihrer &kde;-Sitzung gestartet werden. Sie können Programme oder Skripte "
+"hinzufügen und ändern, die zusammen mit Ihrer KDE-Sitzung starten sollen."
+
+#. Tag: para
+#: index.docbook:32
+#, no-c-format
+msgid "Please note that in this module all changes are immediately applied."
+msgstr ""
+"Beachten Sie, dass alle Änderungen in diesem Dialog sofort angewendet werden."
+
+#. Tag: para
+#: index.docbook:34
+#, no-c-format
+msgid ""
+"The program scans <filename>~/.config/autostart/</filename>, your <filename "
+"class=\"directory\">KDE Autostart</filename> folder (<filename class="
+"\"directory\">$KDEHOME/Autostart</filename> as default), <filename class="
+"\"directory\">$KDEHOME/env</filename> and <filename class=\"directory\">"
+"$KDEHOME/shutdown</filename> folders to check what programs and scripts are "
+"already there and displays them. It allows you to manage them easily."
+msgstr ""
+"Das Einrichtungsmodul untersucht die Ordner <filename>~/.config/autostart/</"
+"filename>, Ihren <filename class=\"directory\">KDE-Autostart-Ordner</"
+"filename> (üblicherweise <filename class=\"directory\">$KDEHOME/Autostart</"
+"filename>), <filename class=\"directory\">$KDEHOME/env</filename> und "
+"<filename class=\"directory\">$KDEHOME/shutdown</filename> nach bereits "
+"vorhandenen Programmen und Skripten und zeigt diese an. Die Verwaltung "
+"dieser Autostart-Programme ist leicht gemacht."
+
+#. Tag: para
+#: index.docbook:47
+#, no-c-format
+msgid ""
+"Note that you can change the location of your <filename class=\"directory"
+"\">Autostart</filename> folder in <menuchoice><guimenu>Account Details</"
+"guimenu> <guimenuitem>Paths</guimenuitem></menuchoice> in the "
+"<guilabel>Common Appearance and Behaviour</guilabel> category of the "
+"&systemsettings; and set a different folder than <filename class=\"directory"
+"\">$KDEHOME/Autostart</filename>."
+msgstr ""
+"Der Ort des <filename class=\"directory\">Autostart</filename>-Ordners kann "
+"in <menuchoice><guimenu>Benutzerkontodetails</guimenu> <guimenuitem>Pfade</"
+"guimenuitem></menuchoice> in den &systemsettings; im Abschnitt "
+"<guilabel>Allgemeines Erscheinungsbild und Verhalten</guilabel> geändert "
+"werden. Ändern Sie hier den vorgegebenen Ordner <filename class=\"directory"
+"\">$KDEHOME/Autostart</filename>."
+
+#. Tag: title
+#: index.docbook:57
+#, no-c-format
+msgid "Files display"
+msgstr "Dateianzeige"
+
+#. Tag: para
+#: index.docbook:58
+#, no-c-format
+msgid ""
+"The main part of the module displays the programs that are loaded when &kde; "
+"starts and scripts that are run when &kde; starts, shutdowns or before &kde; "
+"starts."
+msgstr ""
+"Der Hauptteil des Einrichtungsmoduls zeigt die eingerichteten Autostart-"
+"Dateien an. Programme können bei der KDE-Anmeldung gestartet werden. Skripte "
+"können sowohl bei der KDE-Anmeldung, als auch vor der KDE-Anmeldung und beim "
+"Beenden von KDE ausgeführt werden."
+
+#. Tag: guilabel
+#: index.docbook:61
+#, no-c-format
+msgid "Name"
+msgstr "Name"
+
+#. Tag: para
+#: index.docbook:63
+#, no-c-format
+msgid ""
+"You cannot amend this column. It states the name of the program or script "
+"you want to start with &kde;. The name is extracted from the Desktop file "
+"from the Name key for a program and is the filename for a script."
+msgstr ""
+"Diese Spalte ist nicht veränderbar. Hier wird der Name des Programmes oder "
+"Skriptes angezeigt, das gestartet werden soll. Der Name wird aus der "
+"Einrichtungsdatei ermittelt bzw. bei Skripten aus dem Dateinamen."
+
+#. Tag: guilabel
+#: index.docbook:69
+#, no-c-format
+msgid "Command"
+msgstr "Befehl"
+
+#. Tag: para
+#: index.docbook:71
+#, no-c-format
+msgid ""
+"This column lists the commands that are run to start the program. Commands "
+"can be modified through the <guibutton>Properties</guibutton> button or by "
+"double clicking the program/script row. The command is extracted from the "
+"Desktop file from the Exec key."
+msgstr ""
+"In dieser Spalte werden die Autostart-Programme angezeigt. Der auszuführende "
+"Befehl kann geändert werden, indem Sie den Knopf <guibutton>Eigenschaften</"
+"guibutton> drücken oder auf das Program doppelklicken. Der auszuführende "
+"Befehl wird bei Einrichtungsdateien aus dem Schlüsselwort „Exec“ ausgelesen."
+
+#. Tag: para
+#: index.docbook:74
+#, no-c-format
+msgid "For a script the command is the path to the script."
+msgstr ""
+"Für ein Skript enthält dieser Befehl den vollständigen Pfad zum Skript."
+
+#. Tag: guilabel
+#: index.docbook:80
+#, no-c-format
+msgid "Status"
+msgstr "Status"
+
+#. Tag: para
+#: index.docbook:82
+#, no-c-format
+msgid ""
+"This setting is only available for programs through Desktop files. You can "
+"keep a program in the <filename class=\"directory\">Autostart</filename> "
+"folder but disable it from being run at &kde; start. Setting the program to "
+"<guilabel>Disabled</guilabel> will not run it on start."
+msgstr ""
+"Diese Einstellung ist nur für Programme verfügbar, die über eine "
+"Einrichtungsdatei aufgerufen werden. Sie können ein Programm in die Liste "
+"der Autostart-Programme aufnehmen, den automatischen Start aber dennoch "
+"unterbinden, indem Sie das Programm hier auf <guilabel>Deaktiviert</"
+"guilabel> stellen."
+
+#. Tag: para
+#: index.docbook:85
+#, no-c-format
+msgid ""
+"Setting a program to <guilabel>Disabled</guilabel> sets the Desktop file "
+"Hidden property to true in the <filename class=\"directory\">Autostart</"
+"filename> folder."
+msgstr ""
+"Wenn Sie ein Autostart-Programm deaktivieren, so wird die Eigenschaft "
+"„Hidden“ in der Einrichtungsdatei im Autostart-Ordner auf wahr gesetzt."
+
+#. Tag: guilabel
+#: index.docbook:91
+#, no-c-format
+msgid "Run On"
+msgstr "Ausführungszeitpunkt"
+
+#. Tag: para
+#: index.docbook:93
+#, no-c-format
+msgid ""
+"Programs (Desktop files) can only be run on startup. Scripts can be run on "
+"<guilabel>Startup</guilabel>, <guilabel>Shutdown</guilabel> or <guilabel>Pre-"
+"KDE Startup</guilabel>. This column allows you to change when your script is "
+"run. Startup is when &kde; starts, shutdown is when you log out of &kde; and "
+"pre-KDE startup is before &kde; starts."
+msgstr ""
+"Programme (Einrichtungsdateien) können nur bei der KDE-Anmeldung ausgeführt "
+"werden. Skripte hingegen können beim <guilabel>Anmelden</guilabel>, "
+"<guilabel>Abmelden</guilabel> und <guilabel>Vor der KDE-Anmeldung</guilabel> "
+"ausgeführt werden. In dieser Spalte können Sie festlegen, wann das Skript "
+"ausgeführt wird. <guilabel>Anmelden</guilabel> heißt, wenn KDE startet, "
+"<guilabel>Abmelden</guilabel> heißt, wenn KDE beendet wird und <guilabel>Vor "
+"der KDE-Anmeldung</guilabel> heißt, bevor KDE gestartet wird."
+
+#. Tag: para
+#: index.docbook:96
+#, no-c-format
+msgid ""
+"Scripts and desktop files set to run on <guilabel>Startup</guilabel> are "
+"copied or symlinked in <filename class=\"directory\">$KDEHOME/Autostart</"
+"filename> and will be run during &kde; startup."
+msgstr ""
+"Skripte und Einrichtungsdateien, die für die KDE-<guilabel>Anmeldung</"
+"guilabel> zum Start eingeplant sind, erhalten eine symbolische Verknüpfung "
+"oder werden in den Ordner <filename class=\"directory\">$KDEHOME/Autostart</"
+"filename> kopiert. Bei der KDE-Anmeldung werden sie dann ausgeführt."
+
+#. Tag: para
+#: index.docbook:99
+#, no-c-format
+msgid ""
+"Scripts set on to be ran on <guilabel>Shutdown</guilabel> are copied or "
+"symlinked in the <filename class=\"directory\">$KDEHOME/shutdown</filename> "
+"directory and will be automatically run during &kde; shutdown after the user "
+"has logged out."
+msgstr ""
+"Skripte, die für die KDE-<guilabel>Abmeldung</guilabel> zum Start eingeplant "
+"sind, erhalten eine symbolische Verknüpfung oder werden in den Ordner "
+"<filename class=\"directory\">$KDEHOME/shutdown</filename> kopiert. Nach der "
+"KDE-Abmeldung des Benutzers werden sie ausgeführt."
+
+#. Tag: para
+#: index.docbook:102
+#, no-c-format
+msgid ""
+"Scripts set to run at <guilabel>Pre-&kde; Startup</guilabel> are copied or "
+"symlinked in <filename class=\"directory\">$KDEHOME/env</filename> and are "
+"sourced during &kde; startup (the <filename>startkde</filename> script will "
+"look for scripts here)."
+msgstr ""
+"Skripte, die <guilabel>vor der KDE-Anmeldung</guilabel> zum Start eingeplant "
+"sind, erhalten eine symbolische Verknüpfung oder werden in den Ordner "
+"<filename class=\"directory\">$KDEHOME/env</filename> kopiert und dort "
+"während dem KDE-Start eingelesen (sourced). Das Skript <filename>startkde</"
+"filename> sucht in diesem Ordner nach ausführbaren Skripten."
+
+#. Tag: para
+#: index.docbook:105
+#, no-c-format
+msgid ""
+"Only scripts with the <filename>sh</filename> extension can be read by &kde; "
+"for <guilabel>Pre-&kde; startup</guilabel> and <guilabel>Shutdown</guilabel> "
+"modes."
+msgstr ""
+"Skripte, die vor der KDE-Anmeldung oder nach der Abmeldung ausgeführt werden "
+"sollen, müssen die Dateierweiterung <filename>.sh</filename> haben."
+
+#. Tag: title
+#: index.docbook:114
+#, no-c-format
+msgid "Actions"
+msgstr "Aktionen"
+
+#. Tag: para
+#: index.docbook:115
+#, no-c-format
+msgid ""
+"On the right you have some buttons to change the way Autostart is configure. "
+"You can add programs or scripts, remove them or change their properties."
+msgstr ""
+"Zur Rechten finden Sie einige Knöpfe, mit denen Sie das Verhalten von KDEs "
+"Autostart beeinflussen können. Hier können Sie Programme und Skripte "
+"hinzufügen, entfernen oder ihre Eigenschaften ändern."
+
+#. Tag: guibutton
+#: index.docbook:120
+#, no-c-format
+msgid "Add Program"
+msgstr "Programm hinzufügen"
+
+#. Tag: para
+#: index.docbook:122
+#, no-c-format
+msgid ""
+"Clicking this button displays the standard &kde; <guilabel>Choose "
+"Application</guilabel> dialog and allows you to choose which program you "
+"want to start. After choosing the program, clicking <guibutton>OK</"
+"guibutton> brings you the properties for this program."
+msgstr ""
+"Wenn Sie auf diesen Knopf klicken, öffnet sich der bekannte "
+"<guilabel>Programm auswählen</guilabel>-Dialog von KDE, mit dessen Hilfe Sie "
+"ein Programm aus einer Liste auswählen können. Nachdem Sie das gewünschte "
+"Programm ausgewählt haben, klicken Sie auf <guibutton>OK</guibutton>, "
+"anschließend werden Ihnen die Eigenschaften zu dem Programm angezeigt."
+
+#. Tag: para
+#: index.docbook:125
+#, no-c-format
+msgid ""
+"This will copy the program Desktop file in your <filename class=\"directory"
+"\">Autostart</filename> folder."
+msgstr ""
+"Die Einrichtungsdatei des Programms wird in Ihren <filename class=\"directory"
+"\">Autostart</filename>-Ordner kopiert."
+
+#. Tag: guibutton
+#: index.docbook:131
+#, no-c-format
+msgid "Add Script"
+msgstr "Skript hinzufügen"
+
+#. Tag: para
+#: index.docbook:133
+#, no-c-format
+msgid ""
+"This button opens a dialog which asks you for the location of the script you "
+"want to add. If you keep <guilabel>Create as symlink</guilabel> checked "
+"(default) then the script will be added as a symlink. If you uncheck this "
+"option then the script will be copied in the corresponding local folder."
+msgstr ""
+"Dieser Knopf öffnet ein Dialogfenster, in dem Sie den Namen bzw. den Pfad zu "
+"einem Skript eingeben müssen, das Sie hinzufügen möchten. Wenn Sie die "
+"Einstellung <guilabel>Als Verknüpfung erstellen</guilabel> aktiviert lassen, "
+"wird das Skript als Verknüpfung hinzugefügt. Wenn Sie die Markierung bei "
+"dieser Einstellung entfernen, wird das Skript in den entsprechenden Ordner "
+"kopiert."
+
+#. Tag: guibutton
+#: index.docbook:138
+#, no-c-format
+msgid "Remove"
+msgstr "Entfernen"
+
+#. Tag: para
+#: index.docbook:140
+#, no-c-format
+msgid ""
+"Remove will immediately remove the Desktop file for the program or the "
+"script or symbolic link in the <filename class=\"directory\">Autostart</"
+"filename> folder."
+msgstr ""
+"Damit wird die Einrichtungsdatei des Programms, das Skript oder die "
+"symbolische Verknüpfung im Ordner <filename class=\"directory\">Autostart</"
+"filename> sofort gelöscht."
+
+#. Tag: guibutton
+#: index.docbook:145
+#, no-c-format
+msgid "Properties"
+msgstr "Eigenschaften"
+
+#. Tag: para
+#: index.docbook:147
+#, no-c-format
+msgid ""
+"This button (only enabled for programs &ie; Desktop files) allows you to "
+"change the properties of the program or script. You have general properties, "
+"permissions properties, a preview when applicable and properties related to "
+"the application for programs."
+msgstr ""
+"Mit diesem Knopf, der nur für Programme &ie; Desktop-Dateien aktiviert ist, "
+"können Sie die Eigenschaften eines Programms oder Skriptes ändern. Es gibt "
+"allgemeine Eigenschaften, sowie Rechte, eine Vorschau und Eigenschaften,  "
+"die sich auf das ausführbare Programm als solches beziehen."
+
+#. Tag: guibutton
+#: index.docbook:152
+#, no-c-format
+msgid "Advanced"
+msgstr "Erweitert"
+
+#. Tag: para
+#: index.docbook:154
+#, no-c-format
+msgid ""
+"This button only applies to programs (&ie; Desktop files). A dialog asks you "
+"if you only want the program to autostart only in &kde; (and not in other "
+"desktop environments you might run). By default, the program will autostart "
+"in all desktop environments you might run. Checking <guilabel>Autostart only "
+"in KDE</guilabel> will autostart the program only if you start the &kde; "
+"desktop environment."
+msgstr ""
+"Dieser Knopf bezieht sich  nur auf Programme (&ie; Einrichtungsdateien). Ein "
+"Dialogfenster fragt Sie, ob das Programm nur in KDE gestartet werden soll "
+"(und nicht in anderen möglichen Arbeitsumgebungen, die Sie vielleicht "
+"starten). In der Voreinstellung werden Autostart-Programme auch in anderen "
+"Arbeitsumgebungen automatisch gestartet. Wenn Sie diese Einstellung hier "
+"jedoch aktivieren, so wird das Programm nur in KDE automatisch bei der "
+"Anmeldung starten."
+
+#. Tag: para
+#: index.docbook:157
+#, no-c-format
+msgid ""
+"This sets the value KDE to the OnlyShowIn key of the program Desktop file."
+msgstr ""
+"Damit wird der Wert „KDE“ für das Schlüsselwort <quote>OnlyShowIn</quote> in "
+"der Einrichtungsdatei des Programmes gesetzt. "
+
+#~ msgid "2011-08-12"
+#~ msgstr "2011-08-12"
+
+#~ msgid "2008-03-21"
+#~ msgstr "2008-03-21"
+
+#~ msgid "<releaseinfo>1.0</releaseinfo>"
+#~ msgstr "<releaseinfo>1.0</releaseinfo>"

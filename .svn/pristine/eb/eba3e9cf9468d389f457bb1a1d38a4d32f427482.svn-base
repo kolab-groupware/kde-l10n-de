@@ -1,0 +1,789 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2011, 2012, 2013.
+# Markus Drexelius <markusd112@web.de>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kmymoney_details-schedules\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: 2013-04-27 16:15+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/playground/office/doc/kmymoney/details-"
+"schedules.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 966679\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: author
+#: details-schedules.docbook:5
+#, no-c-format
+msgid "&Roger.Lum; &Roger.Lum.mail;"
+msgstr "&Roger.Lum; &Roger.Lum.mail;"
+
+#. Tag: author
+#: details-schedules.docbook:6
+#, no-c-format
+msgid "&Michael.T.Edwardes; &Michael.T.Edwardes.mail;"
+msgstr "&Michael.T.Edwardes; &Michael.T.Edwardes.mail;"
+
+#. Tag: date
+#: details-schedules.docbook:8
+#, no-c-format
+msgid "2010-07-25"
+msgstr "2010-07-25"
+
+#. Tag: releaseinfo
+#: details-schedules.docbook:9
+#, no-c-format
+msgid "<releaseinfo>4.5</releaseinfo>"
+msgstr "<releaseinfo>4.5</releaseinfo>"
+
+#. Tag: title
+#: details-schedules.docbook:12
+#, no-c-format
+msgid "Schedules"
+msgstr "Geplante Buchungen"
+
+#. Tag: title
+#: details-schedules.docbook:15
+#, no-c-format
+msgid "Introduction"
+msgstr "Einführung"
+
+#. Tag: quote
+#: details-schedules.docbook:18
+#, no-c-format
+msgid ""
+"Schedules maintain information about transactions that occur one or more "
+"times over a specified period of time."
+msgstr ""
+"Geplante Buchungen enthalten Informationen über Buchungen, die ein- oder "
+"mehrmalig in einer bestimmten Zeitperiode vorkommen."
+
+#. Tag: para
+#: details-schedules.docbook:24
+#, no-c-format
+msgid ""
+"Sometimes called a recurring transaction, a schedule provides a means to "
+"record information about a transaction that happen on a regular basis. A "
+"common schedule is your salary. Once a month, or maybe weekly, the company "
+"you work for pays you for services rendered. This payment can happen in many "
+"different ways, but each month or week you will receive a payment that needs "
+"to be recorded."
+msgstr ""
+"Geplante Buchungen sind regelmäßig wiederkehrende Buchung und werden deshalb "
+"auch manchmal sich \"wiederholende Buchungen\" genannt. Eine bekannte "
+"geplante Buchung ist zum Beispiel Ihr Gehalt. Einmal pro Monat oder "
+"vielleicht auch wöchentlich zahlt Ihnen Ihre Firma Geld für die von Ihnen "
+"geleistete Arbeit. Diese Zahlung kann auf verschiedenen Wegen erfolgen, aber "
+"Sie erhalten monatlich oder wöchentlich eine Zahlung, die aufgezeichnet "
+"werden muss."
+
+#. Tag: para
+#: details-schedules.docbook:33
+#, no-c-format
+msgid ""
+"Because you know these payments are regularly made to you, you can create a "
+"Schedule to record information about the payment and even create the "
+"transaction for you when pay day arrives."
+msgstr ""
+"Sie wissen, dass diese Zahlungen regelmäßig erfolgen, sodass Sie eine "
+"geplante Buchung anlegen können, sodass die Buchung automatisch für Sie "
+"erzeugt wird, sobald das Gehalt gezahlt wird."
+
+#. Tag: para
+#: details-schedules.docbook:39
+#, no-c-format
+msgid ""
+"Other types of schedules can also be recorded to reflect money coming in and "
+"out of your accounts. Common expenses, such as utility bills or money "
+"transfers, can be recorded with schedules, along with loan repayments. "
+"Scheduling a payment can also provide a useful reminder that you need to "
+"make a payment."
+msgstr ""
+"Auch andere Arten von geplanten Buchungen können hinterlegt werden, um den "
+"Ein- und Ausgang von Geld auf Ihren Konten zu hinterlegen. Allgemeine "
+"Ausgaben, wie Dienstleisterrechnungen oder Überweisungen, können genauso als "
+"geplante Buchung hinterlegt werden, wie z.B. Lohnzahlungen. Eine geplante "
+"Buchung bietet Ihnen außerdem eine gute Möglichkeit, um Sie an fällige "
+"Zahlungen zu erinnern."
+
+#. Tag: para
+#: details-schedules.docbook:47
+#, no-c-format
+msgid ""
+"A schedule consists of two main parts: the scheduling data and the "
+"transaction data. The scheduling data records the occurrence of the "
+"schedule, i.e., when the transaction is to be entered into the ledger and "
+"how. The transaction data records the normal details about the transaction, "
+"and will be entered in to the ledger as-is."
+msgstr ""
+"Eine geplante Buchung besteht aus zwei Hauptteilen: den Daten zum Zeitpunkt, "
+"sowie dem Inhalt der Buchung. Die Daten des Zeitpunkts geben an, wann und "
+"wie die Buchung in das Kontenblatt eingetragen wird. Die Buchungsdaten "
+"enthalten die üblichen Details zur Buchung und werden so wie sie sind in das "
+"Kontenbuch übernommen."
+
+#. Tag: title
+#: details-schedules.docbook:57
+#, no-c-format
+msgid "Types of schedules"
+msgstr "Arten von geplanten Buchungen"
+
+#. Tag: para
+#: details-schedules.docbook:59
+#, no-c-format
+msgid ""
+"There are four different types of schedules in the current version of "
+"&kappname;:"
+msgstr ""
+"In der aktuellen Version von &kappname; gibt es vier verschiedene Arten von "
+"geplanten Buchungen:"
+
+#. Tag: para
+#: details-schedules.docbook:65
+#, no-c-format
+msgid "<para>Bills</para>"
+msgstr "<para>Rechnungen</para>"
+
+#. Tag: para
+#: details-schedules.docbook:66
+#, no-c-format
+msgid "<para>Deposits</para>"
+msgstr "<para>Einzahlungen</para>"
+
+#. Tag: para
+#: details-schedules.docbook:67
+#, no-c-format
+msgid "<para>Loans</para>"
+msgstr "<para>Kredite</para>"
+
+#. Tag: para
+#: details-schedules.docbook:68
+#, no-c-format
+msgid "<para>Transfers</para>"
+msgstr "<para>Buchungen</para>"
+
+#. Tag: title
+#: details-schedules.docbook:72
+#, no-c-format
+msgid "<title>Bills</title>"
+msgstr "<title>Rechnungen</title>"
+
+#. Tag: para
+#: details-schedules.docbook:74
+#, no-c-format
+msgid ""
+"A Bill Schedule is used for money going out of your account, such as a Gym "
+"membership or a utility bill."
+msgstr ""
+"Eine geplante Buchung vom Typ \"Rechnung\" wird immer dann verwendet, wenn "
+"Geld von Ihrem Konto abfließt, z.B. für die Mitgliedschaft im Fitness-Studio "
+"oder eine Rechnung für eine Dienstleistung."
+
+#. Tag: title
+#: details-schedules.docbook:81
+#, no-c-format
+msgid "<title>Deposits</title>"
+msgstr "<title>Einzahlungen</title>"
+
+#. Tag: para
+#: details-schedules.docbook:83
+#, no-c-format
+msgid ""
+"A Deposit Schedule is for money coming into your account, such as a pay "
+"check."
+msgstr ""
+"Eine geplante Buchung vom Typ \"Einzahlung\" wird verwendet, wenn Geld auf "
+"Ihr Konto kommt, z.B. Ihr Gehalt."
+
+#. Tag: title
+#: details-schedules.docbook:89
+#, no-c-format
+msgid "<title>Loans</title>"
+msgstr "<title>Kredite</title>"
+
+#. Tag: para
+#: details-schedules.docbook:91
+#, no-c-format
+msgid ""
+"A Loan Schedule is a special type of schedule and is created when dealing "
+"with <link linkend=\"details.loans\">Loan</link> accounts."
+msgstr ""
+"Eine geplante Kreditzahlung ist eine spezielle geplante Buchung und wird "
+"erstellt, wenn Sie ein <link linkend=\"details.loans\">Kreditkonto</link> "
+"erstellen."
+
+#. Tag: title
+#: details-schedules.docbook:98
+#, no-c-format
+msgid "<title>Transfers</title>"
+msgstr "<title>Buchungen</title>"
+
+#. Tag: para
+#: details-schedules.docbook:100
+#, no-c-format
+msgid ""
+"A Transfer Schedule is used for money coming out of one account and going "
+"into another, such as making a credit card payment from your checking "
+"account."
+msgstr ""
+"Eine geplante Buchung des Typs \"Buchung\" wird verwendet, wenn Geld von "
+"einem Konto zum anderen fließt, z.B. wenn eine Kreditkartenabrechnung von "
+"Ihrem Girokonto abgebucht wird."
+
+#. Tag: title
+#: details-schedules.docbook:109
+#, no-c-format
+msgid "The schedule view"
+msgstr "Die Ansicht der geplanten Buchungen"
+
+#. Tag: para
+#: details-schedules.docbook:111
+#, no-c-format
+msgid ""
+"Open the schedule view by clicking on the <guiicon>Schedule "
+"<inlinemediaobject><imageobject><imagedata fileref=\"schedule_view.png\"/></"
+"imageobject></inlinemediaobject></guiicon> icon in the view selector."
+msgstr ""
+"Öffnen Sie die Ansicht der geplanten Buchungen, indem Sie auf das "
+"<guiicon>geplante Buchungen<inlinemediaobject><imageobject><imagedata "
+"fileref=\"schedule_view.png\"/></imageobject></inlinemediaobject></guiicon> "
+"Symbol in der linken Navigationsleiste klicken."
+
+#. Tag: phrase
+#: details-schedules.docbook:125
+#, no-c-format
+msgid "Schedule View"
+msgstr "Die Ansicht der geplanten Buchungen"
+
+#. Tag: para
+#: details-schedules.docbook:131
+#, no-c-format
+msgid ""
+"The schedule view consists of a view area with two tabs along with a "
+"<guibutton>New Schedule</guibutton> button above it. The first tab "
+"<guibutton>List View</guibutton> shows all schedules, grouped by type. The "
+"second tab <guibutton>Calendar View</guibutton> is described in its own "
+"section below."
+msgstr ""
+"Die Ansicht „Geplante Buchungen“ besteht aus zwei Karteikarten, die über "
+"entsprechende Karteireiter erreicht werden können, sowie dem Knopf "
+"<guibutton>Neue Buchung planen</guibutton> darüber. Die erste Karteikarte "
+"<guibutton>Listenansicht</guibutton> zeigt alle geplanten Buchungen, "
+"gruppiert nach dem Typ der Buchung. Die zweite Karteikarte "
+"<guibutton>Kalenderansicht</guibutton> wird in einem separaten Abschnitt "
+"weiter unten erläutert."
+
+#. Tag: para
+#: details-schedules.docbook:139
+#, no-c-format
+msgid ""
+"To create a new schedule click on the button. For Bill, Deposit, and "
+"Transfer schedules, &kappname; will display the new schedule dialog. Loan "
+"schedules are handled differently, and are described in the section on Loans."
+msgstr ""
+"Um eine neue geplante Buchung anzulegen, klicken Sie auf den entsprechenden "
+"Knopf. Für Rechnungen, Einzahlungen und Umbuchungen zeigt Ihnen &kappname; "
+"das Dialogfenster für neue geplante Buchungen. Kreditbuchungen werden anders "
+"behandelt und im Abschnitt über Kreditkonten näher erläutert."
+
+#. Tag: title
+#: details-schedules.docbook:147
+#, no-c-format
+msgid "The new schedule dialog"
+msgstr "Das Dialogfenster „Geplante Buchung bearbeiten“"
+
+#. Tag: phrase
+#: details-schedules.docbook:155
+#, no-c-format
+msgid "New Schedule"
+msgstr "Neue geplante Buchung"
+
+#. Tag: para
+#: details-schedules.docbook:161
+#, no-c-format
+msgid ""
+"A new dialog window is now shown, prompting for the schedule and transaction "
+"data. The requested data includes the following:"
+msgstr ""
+"Es öffnet sich ein Dialogfenster, in das Sie die Daten zum Zeitpunkt und dem "
+"Inhalt der geplanten Buchung eingeben können.  Hierzu gehören:"
+
+#. Tag: para
+#: details-schedules.docbook:167
+#, no-c-format
+msgid "Schedule Name"
+msgstr "Name der geplanten Buchung"
+
+#. Tag: para
+#: details-schedules.docbook:168
+#, no-c-format
+msgid "Next due date"
+msgstr "Nächste Fälligkeit am"
+
+#. Tag: para
+#: details-schedules.docbook:169
+#, no-c-format
+msgid "Frequency"
+msgstr "Häufigkeit"
+
+#. Tag: para
+#: details-schedules.docbook:170
+#, no-c-format
+msgid "Payment method"
+msgstr "Zahlungsmethode"
+
+#. Tag: para
+#: details-schedules.docbook:171
+#, no-c-format
+msgid "Amount"
+msgstr "Betrag"
+
+#. Tag: para
+#: details-schedules.docbook:172
+#, no-c-format
+msgid "Other transaction details"
+msgstr "Weitere Buchungsdetails"
+
+#. Tag: para
+#: details-schedules.docbook:173
+#, no-c-format
+msgid "Schedule options"
+msgstr "Optionen der geplanten Buchung"
+
+#. Tag: title
+#: details-schedules.docbook:177
+#, no-c-format
+msgid "Filling in the fields"
+msgstr "Ausfüllen der Felder"
+
+#. Tag: para
+#: details-schedules.docbook:179
+#, no-c-format
+msgid ""
+"Enter the name and the date of the next occurrence of this schedule into "
+"their respective fields. The name is how the schedule will be shown in the "
+"list view. Specify how often the schedule should occur, using the Frequency "
+"field and drop down list. For example \"every 6 weeks\" or \"every 3 months"
+"\". If the amount varies transaction to transaction make sure to check the "
+"<guilabel>Estimate</guilabel> check box and you will be prompted for the "
+"correct amount when it is entered into the ledger. Fill in all the "
+"transaction fields as you would normally with the ledger view."
+msgstr ""
+"Geben Sie den Namen und das nächste Fälligkeitsdatum dieser geplanten "
+"Buchung in die entsprechenden Eingabefelder ein. Der Name der geplanten "
+"Buchung wird in der Liste der geplanten Buchungen angezeigt. Geben Sie an, "
+"wie oft die geplante Buchung fällig ist, indem Sie die entsprechende "
+"Häufigkeit in das Eingabefeld eintragen und aus der Auswahlliste auswählen. "
+"Zum Beispiel \"alle 6 Wochen\" oder \"alle 3 Monate\". Wenn der Betrag von "
+"Buchung zu Buchung variiert, markieren Sie die Option <guilabel>Dies ist "
+"eine Schätzung, da der Betrag für jede Zahlung schwankt</guilabel>. Sie "
+"werden dann nach dem genauen Betrag gefragt, wenn &kappname; die Buchung in "
+"das Kontenbuch eintragen möchte. Füllen Sie alle Buchungsfelder so aus, als "
+"würden Sie die Buchung im Kontenbuch eintragen."
+
+#. Tag: title
+#: details-schedules.docbook:192
+#, no-c-format
+msgid "Modifying the schedule behavior"
+msgstr "Das Verhalten der geplanten Buchung verändern"
+
+#. Tag: para
+#: details-schedules.docbook:193
+#, no-c-format
+msgid ""
+"At the bottom of the dialog are some optional fields that can modify how the "
+"schedule behaves. If the schedule occurs on a weekend you can choose whether "
+"to enter the transaction on the weekend day, the previous Friday, or the "
+"next Monday. Typically this option is used to replicate some real world "
+"operation such as a bank transaction."
+msgstr ""
+"Im unteren Bereich des Fensters gibt es einige Optionen, die das Verhalten "
+"der geplanten Buchung verändern. Wenn das Fälligkeitsdatum auf ein "
+"Wochenende fällt, können Sie auswählen, ob das Datum unverändert bestehen "
+"bleibt, ob die Buchung am vorhergehenden Freitag oder am darauf folgenden "
+"Montag gebucht wird. Normalerweise wird diese Option verwendet, um die reale "
+"Welt in Form von Bankbuchungen abzubilden."
+
+#. Tag: title
+#: details-schedules.docbook:203
+#, no-c-format
+msgid "Letting &kappname; enter the transaction into the register"
+msgstr "Buchungen von &kappname; automatisch eintragen lassen"
+
+#. Tag: para
+#: details-schedules.docbook:205
+#, no-c-format
+msgid ""
+"To let &kappname; automatically enter the transaction for you when needed, "
+"make sure that the check box labeled <guilabel>Enter this schedule into the "
+"ledger automatically when it is due</guilabel> is checked. Otherwise, when "
+"the transaction is due to be entered, &kappname; will open a dialog box "
+"asking you to confirm that you want it to be entered. This behavior is "
+"configurable, and more information can be found in the Settings section."
+msgstr ""
+"&kappname; kann die Buchungen automatisch bei Fälligkeit in das Kontenbuch "
+"eintragen. Aktivieren Sie dafür die Kontrollbox <guilabel>Buchung bei "
+"Fälligkeit automatisch in das Kontenbuch eintragen</guilabel>.  Ansonsten "
+"wird &kappname; ein Dialogfenster öffnen, sobald das Fälligkeitsdatum der "
+"geplanten Buchung erreicht ist und Sie auffordern, die Buchung in das "
+"Kontenbuch eintragen zu lassen.  Dieses Verhalten ist konfigurierbar, "
+"weitere Informationen dazu finden Sie im Abschnitt über die "
+"Programmeinstellungen."
+
+#. Tag: title
+#: details-schedules.docbook:216
+#, no-c-format
+msgid "Letting &kappname; know when the schedule will finish"
+msgstr "&kappname;  wissen lassen, wann eine geplante Buchung endet"
+
+#. Tag: para
+#: details-schedules.docbook:218
+#, no-c-format
+msgid ""
+"If you know how many transactions are left or when they are due to finish, "
+"this information can be entered so the transactions are not entered "
+"indefinitely. Check the appropriate check box and enter the appropriate "
+"information. Only the date or the number of transactions remaining is needed "
+"because the other can be calculated."
+msgstr ""
+"Wenn Sie wissen, wie viele Buchungen noch übrig sind oder wann die "
+"regelmäßige Buchung endet, so können Sie diese Information hinterlegen, "
+"sodass die geplante Buchung nicht unendlich ist. Klicken Sie die "
+"entsprechende Option an und geben Sie das Ende der geplanten Buchung ein. "
+"Nur das Enddatum oder die verbleibende Anzahl der Buchungen müssen "
+"eingegeben werden, der jeweils andere Wert kann daraus errechnet werden. "
+
+#. Tag: para
+#: details-schedules.docbook:226
+#, no-c-format
+msgid ""
+"When you have entered all the necessary information click on <guibutton>OK</"
+"guibutton> to continue."
+msgstr ""
+"Wenn Sie alle notwendigen Daten eingegeben haben, klicken Sie auf den Knopf "
+"<guibutton>OK</guibutton> um fortzufahren."
+
+#. Tag: title
+#: details-schedules.docbook:235
+#, no-c-format
+msgid "Editing schedules"
+msgstr "Geplante Buchungen bearbeiten"
+
+#. Tag: para
+#: details-schedules.docbook:237
+#, no-c-format
+msgid ""
+"To edit a schedule simply select the entry in the list and right click to "
+"bring up the context menu and select <guimenuitem>Edit</guimenuitem>. This "
+"will bring up a dialog similar to the New Schedule dialog, where you can "
+"alter the necessary data."
+msgstr ""
+"Um eine geplante Buchung zu editieren, wählen Sie diese in der Liste und "
+"klicken mit der rechten Maustaste darauf. Aus dem erscheinenden Kontextmenü "
+"wählen Sie <guimenuitem>Bearbeiten</guimenuitem> aus. Es erscheint der "
+"bereits vom Anlegen der geplanten Buchung bekannte Dialog, mit dessen Hilfe "
+"Sie die Daten der geplanten Buchungen verändern können."
+
+#. Tag: title
+#: details-schedules.docbook:246
+#, no-c-format
+msgid "Deleting schedules"
+msgstr "Geplante Buchungen löschen"
+
+#. Tag: para
+#: details-schedules.docbook:248
+#, no-c-format
+msgid ""
+"To delete a schedule simply select the entry in the list and right click to "
+"bring up the context menu and select <guimenuitem>Delete</guimenuitem>."
+msgstr ""
+"Um eine geplante Buchung zu löschen, wählen Sie den gewünschten Eintrag in "
+"der Liste und wählen mit der rechten Maustaste aus dem Kontextmenü den Punkt "
+"<guimenuitem>Löschen</guimenuitem>."
+
+#. Tag: title
+#: details-schedules.docbook:255
+#, no-c-format
+msgid "The calendar view"
+msgstr "Die Kalenderansicht"
+
+#. Tag: para
+#: details-schedules.docbook:257
+#, no-c-format
+msgid ""
+"The calendar tab presents the schedules in a calendar format so it is easier "
+"to see when they occur. To switch to the calendar view click on the "
+"<guibutton>Calendar View</guibutton> tab."
+msgstr ""
+"Die Kalenderansicht zeigt Ihnen alle geplanten Buchungen in einem Kalender, "
+"sodass Sie sehr übersichtlich sehen können, wann diese fällig sind. Um in "
+"die Kalenderansicht zu gelangen klicken Sie einfach auf den Karteireiter "
+"<guibutton>Kalenderansicht</guibutton>. "
+
+#. Tag: phrase
+#: details-schedules.docbook:270
+#, no-c-format
+msgid "Calendar View"
+msgstr "Kalenderansicht"
+
+#. Tag: para
+#: details-schedules.docbook:276
+#, no-c-format
+msgid ""
+"The calendar type can be changed using the <guibutton>Select Style</"
+"guibutton> button. Currently only two types exist: Week and Month. The "
+"monthly view is the default, and is usually the most useful. Navigate "
+"through the dates using the controls as you would with the date input "
+"control."
+msgstr ""
+"Der Kalendertyp kann mit Hilfe des Knopfs <guibutton>Darstellung auswählen</"
+"guibutton> verändert werden. Derzeit gibt es nur zwei Typen: Woche und "
+"Monat. Die Monatsansicht ist die Voreinstellung und die wohl hilfreichste "
+"Darstellungsform. Navigieren Sie durch den Kalender, indem Sie die "
+"Steuerelemente rechts oben verwenden."
+
+#. Tag: para
+#: details-schedules.docbook:283
+#, no-c-format
+msgid ""
+"On any day with scheduled transactions, the number of transactions scheduled "
+"for that day is displayed on the calendar."
+msgstr ""
+"An Tagen mit geplanten Buchungen wird die Anzahl der Buchungen für den "
+"betreffenden Tag im Kalender angezeigt."
+
+#. Tag: para
+#: details-schedules.docbook:298
+#, no-c-format
+msgid ""
+"To view the schedule(s) that fall on that day, move the mouse cursor over "
+"the highlight and a popup window will be displayed allowing you to view the "
+"schedule summary."
+msgstr ""
+"Um die geplanten Buchungen, die auf den gewählten Tag fallen, anzusehen, "
+"bewegen Sie den Mauszeiger über den Eintrag. Es erscheint ein Fenster, in "
+"dem die Zusammenfassung der geplanten Buchung angezeigt wird."
+
+#. Tag: para
+#: details-schedules.docbook:314
+#, no-c-format
+msgid ""
+"If more than one schedule falls on that day you can cycle through them using "
+"the arrow buttons in the upper corners of the popup window."
+msgstr ""
+"Wenn mehrere geplante Buchung auf einen Tag fallen, können Sie die einzelnen "
+"geplanten Buchungen durch die Schaltflächen in den oberen Ecken des Fensters "
+"durchblättern."
+
+#. Tag: para
+#: details-schedules.docbook:319
+#, no-c-format
+msgid ""
+"If you find that the display is cluttered with schedules and you only want "
+"to view one type of schedule, then this is possible from the "
+"<guibutton>Select Schedules</guibutton> dropdown. After clicking on this "
+"button the different schedule types are listed and are checked by default"
+msgstr ""
+"Wenn Ansicht mit geplanten Buchungen übersät ist und Sie nur einen "
+"bestimmten Typ an geplanten Buchungen sehen möchten, können Sie diese durch "
+"den Knopf <guibutton>Planungen wählen</guibutton> filtern. Nachdem Sie "
+"diesen Knopf anklicken, sehen Sie die verschiedenen Buchungstypen und diese "
+"sind standardmäßig alle ausgewählt."
+
+#. Tag: para
+#: details-schedules.docbook:336
+#, no-c-format
+msgid "To remove a type from the calendar view simply uncheck it in the list."
+msgstr ""
+"Um einen Buchungstyp aus dem Kalender auszublenden, entfernen Sie das "
+"gewünschte Kreuzchen aus der Liste."
+
+#. Tag: title
+#: details-schedules.docbook:343
+#, no-c-format
+msgid "Entering scheduled transactions"
+msgstr "Geplante Buchungen eintragen"
+
+#. Tag: para
+#: details-schedules.docbook:345
+#, no-c-format
+msgid ""
+"Entering a scheduled transaction means actually entering a transaction into "
+"the appropriate ledger, using the details specified in the schedule. "
+"Scheduled transactions can be entered in one of four different ways:"
+msgstr ""
+"Eine geplante Buchung eintragen bedeutet, im entsprechenden Kontenbuch eine "
+"neue Buchung auf Basis der in der geplanten Buchung hinterlegten "
+"Informationen anzulegen. Geplante Buchungen können auf eine von vier "
+"verschiedenen Weisen eingetragen werden:"
+
+#. Tag: para
+#: details-schedules.docbook:352
+#, no-c-format
+msgid "Manually by right clicking on the list entry"
+msgstr "Manuell durch Klick mit der rechten Maustaste auf den Listeneintrag"
+
+#. Tag: para
+#: details-schedules.docbook:353
+#, no-c-format
+msgid "Manually via the popup window in the calendar view"
+msgstr "Manuell über das Aufklapp-Fenster in der Kalenderansicht"
+
+#. Tag: para
+#: details-schedules.docbook:355
+#, no-c-format
+msgid "&kappname; can enter them with or without your interaction upon startup"
+msgstr ""
+"&kappname; kann sie aber auch mit oder ohne Ihr Zutun beim Starten eintragen"
+
+#. Tag: para
+#: details-schedules.docbook:360
+#, no-c-format
+msgid ""
+"&kappname; can enter them with your interaction during online banking or "
+"import of an electronic bank statement"
+msgstr ""
+"&kappname; kann sie mit Ihrer Interaktion während des Online-Bankings oder "
+"Imports von elektronischen Kontoauszügen anlegen"
+
+#. Tag: title
+#: details-schedules.docbook:368
+#, no-c-format
+msgid "Manually entering scheduled transactions"
+msgstr "Manuelles Eintragen von geplanten Buchungen"
+
+#. Tag: para
+#: details-schedules.docbook:370
+#, no-c-format
+msgid ""
+"You can enter a scheduled transaction manually by right clicking on the list "
+"entry and selecting <guimenuitem>Enter</guimenuitem> from the popup menu or "
+"by clicking on the <guibutton>Enter</guibutton> button on the popup window "
+"in the calendar view."
+msgstr ""
+"Sie können eine geplante Buchung manuell eintragen lassen, indem Sie mit der "
+"rechten Maustaste die gewünschte geplante Buchung anklicken und aus dem "
+"Kontextmenü <guimenuitem>Nächste Zahlung eintragen</guimenuitem> auswählen., "
+"oder indem Sie den Knopf <guibutton>Eintragen</guibutton> im erscheinenden "
+"Kontextmenü in der Kalenderansicht betätigen."
+
+#. Tag: title
+#: details-schedules.docbook:379
+#, no-c-format
+msgid "Confirming the transaction to enter"
+msgstr "Die einzutragende Buchung bestätigen"
+
+#. Tag: para
+#: details-schedules.docbook:381
+#, no-c-format
+msgid ""
+"After selecting either method the Enter Scheduled Transaction dialog window "
+"is shown prompting you with the required information that was entered when "
+"you created the schedule."
+msgstr ""
+"Nachdem Sie das Eintragen der geplanten Buchungen auf eine der beschriebenen "
+"Arten angestoßen haben, erscheint das Dialogfenster zum Eintragen einer "
+"geplanten Buchung mit den dort hinterlegten Informationen."
+
+#. Tag: para
+#: details-schedules.docbook:397
+#, no-c-format
+msgid ""
+"This information can be changed, and the changes can be applied to just this "
+"one instance of the schedule or to all subsequent transactions. After "
+"checking that all the data is correct clicking on <guibutton>OK</guibutton> "
+"will add the transaction to the ledger and update the next due date of the "
+"schedule to the next occurrence. If you have changed any of the transaction "
+"data a further confirmation of what you changed will be displayed, giving "
+"you a final chance to accept or reject the changes."
+msgstr ""
+"Diese Informationen können nun nach Bedarf verändert und entweder für diese "
+"eine oder auch für alle zukünftigen Buchungen übernommen werden. Nachdem Sie "
+"geprüft haben, dass alles in Ordnung ist, klicken Sie den Knopf "
+"<guibutton>OK</guibutton>, um die Buchung ins Kontenbuch zu übernehmen und "
+"das nächste Fälligkeitsdatum der geplanten Buchung auf den nächsten Termin "
+"zu setzen. Wenn Sie irgendein Feld der Buchung geändert haben, werden Sie "
+"nochmals gefragt, ob die angezeigten Änderungen übernommen oder verworfen "
+"werden sollen."
+
+#. Tag: para
+#: details-schedules.docbook:417
+#, no-c-format
+msgid ""
+"Select what you want to do with the information presented and click "
+"<guibutton>OK</guibutton> or <guibutton>Cancel</guibutton>."
+msgstr ""
+"Wählen Sie die gewünschte Aktion aus und klicken Sie den Knopf "
+"<guibutton>OK</guibutton> oder <guibutton>Abbrechen</guibutton>."
+
+#. Tag: title
+#: details-schedules.docbook:424
+#, no-c-format
+msgid "Letting &kappname; enter the scheduled transaction(s) for you"
+msgstr "Lassen Sie &kappname; Ihre geplante(n) Buchung(en) für Sie eintragen"
+
+#. Tag: para
+#: details-schedules.docbook:426
+#, no-c-format
+msgid ""
+"Alternatively, &kappname; can check which schedules are due upon startup and "
+"enter them for you if the appropriate option was checked when setting up the "
+"schedule."
+msgstr ""
+"Als Alternative zum manuellen Eintragen kann &kappname; beim Programmstart "
+"überprüfen, welche geplanten Buchungen fällig sind und diese automatisch in "
+"das Kontenbuch eintragen, wenn Sie die entsprechende Option beim Anlegen der "
+"geplanten Buchung aktiviert haben."
+
+#. Tag: para
+#: details-schedules.docbook:432
+#, no-c-format
+msgid ""
+"If the option was not checked then &kappname; will open the previously "
+"mentioned dialog and you can follow the steps mentioned there. &kappname; "
+"will also open the dialog if the amount is an estimate so you can enter the "
+"real amount."
+msgstr ""
+"Wenn das automatische Eintragen nicht aktiviert wurde, öffnet &kappname; das "
+"oben beschriebene Dialogfenster und Sie können die Buchung über den "
+"beschriebenen Weg ins Kontenbuch eintragen lassen. Das gleiche Fenster "
+"öffnet sich, wenn Sie beim Anlegen der geplanten Buchung angegeben haben, "
+"dass der Betrag eine Schätzung ist. Sie können nun den tatsächlichen "
+"Geldbetrag der Buchung eintragen."
+
+#. Tag: para
+#: details-schedules.docbook:439
+#, no-c-format
+msgid ""
+"You can also opt to have &kappname; not check which transactions are "
+"scheduled on startup by deselecting the option in the Settings dialog and "
+"any overdue transaction or transactions due 'today' will be shown in the "
+"Home view for you to enter manually."
+msgstr ""
+"Sie können &kappname; auch so konfigurieren, dass beim Programmstart nicht "
+"geprüft wird, ob fällige geplante Buchungen vorhanden sind. Verwenden Sie "
+"hierfür im Einstellungsdialog von &kappname; die Option \"Geplante Buchungen "
+"beim Start überprüfen\"."
+
+#~ msgid "<firstname>Roger</firstname> <surname>Lum</surname>"
+#~ msgstr "<firstname>Roger</firstname> <surname>Lum</surname>"
+
+#~ msgid "rogerlum@gmail.com"
+#~ msgstr "rogerlum@gmail.com"
+
+#~ msgid ""
+#~ "<firstname>Michael</firstname> <othername>T.</othername> "
+#~ "<surname>Edwardes</surname>"
+#~ msgstr ""
+#~ "<firstname>Michael</firstname> <othername>T.</othername> "
+#~ "<surname>Edwardes</surname>"
+
+#~ msgid "mte@users.sourceforge.net"
+#~ msgstr "mte@users.sourceforge.net"

@@ -1,0 +1,2700 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2011, 2012, 2013, 2014.
+# Frederik Schwarzer <schwarzer@kde.org>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kmymoney_details-impexp\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-09-08 02:19+0000\n"
+"PO-Revision-Date: 2014-09-15 10:42+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/playground/office/doc/kmymoney/details-impexp."
+"docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 967958\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: author
+#: details-impexp.docbook:5 details-impexp.docbook:908
+#, no-c-format
+msgid "&Ace.Jones; &Ace.Jones.mail;"
+msgstr "&Ace.Jones; &Ace.Jones.mail;"
+
+#. Tag: date
+#: details-impexp.docbook:7
+#, no-c-format
+msgid "2011-07-3"
+msgstr "2011-07-3"
+
+#. Tag: releaseinfo
+#: details-impexp.docbook:8
+#, no-c-format
+msgid "<releaseinfo>4.6</releaseinfo>"
+msgstr "<releaseinfo>4.6</releaseinfo>"
+
+#. Tag: title
+#: details-impexp.docbook:11
+#, no-c-format
+msgid "Importing and Exporting"
+msgstr "Importieren und Exportieren"
+
+#. Tag: author
+#: details-impexp.docbook:15
+#, no-c-format
+msgid "&Tony.Bloomfield; &Tony.Bloomfield.mail;"
+msgstr "&Tony.Bloomfield; &Tony.Bloomfield.mail;"
+
+#. Tag: title
+#: details-impexp.docbook:18
+#, no-c-format
+msgid "GnuCash Importer"
+msgstr "GnuCash-Import"
+
+#. Tag: title
+#: details-impexp.docbook:21
+#, no-c-format
+msgid "GnuCash Files"
+msgstr "GnuCash-Dateien"
+
+#. Tag: para
+#: details-impexp.docbook:23
+#, no-c-format
+msgid ""
+"The &kappname; GnuCash importer handles direct reading of standard (&XML;) "
+"files as produced by GnuCash versions 1.8 and 2.0. The following are not "
+"supported:"
+msgstr ""
+"Das GnuCash-Importmodul von &kappname; kann Standard-&XML;-Dateien von "
+"GnuCash Version 1.8 und 2.0 direkt einlesen. Die folgenden Formate können "
+"nicht importiert werden:"
+
+#. Tag: para
+#: details-impexp.docbook:30
+#, no-c-format
+msgid "import of database (Postgres) data"
+msgstr "Import aus Datenbanken (Postgres)"
+
+#. Tag: para
+#: details-impexp.docbook:31
+#, no-c-format
+msgid "import of 'multi-book' files"
+msgstr "Import von „multi-book“-Dateien"
+
+#. Tag: para
+#: details-impexp.docbook:32
+#, no-c-format
+msgid "import into an existing &kappname; file"
+msgstr "Import in eine vorhandene &kappname;-Datei"
+
+#. Tag: para
+#: details-impexp.docbook:33
+#, no-c-format
+msgid "import of small-business specific features (Employees, Invoices, etc.)"
+msgstr ""
+"Import von Funktionen für kleine und mittlere Unternehmen (Beschäftigte, "
+"Kunden, Rechnungen &etc;)"
+
+#. Tag: para
+#: details-impexp.docbook:35
+#, no-c-format
+msgid "export to GnuCash files."
+msgstr "Export in GnuCash-Dateien"
+
+#. Tag: para
+#: details-impexp.docbook:38
+#, no-c-format
+msgid ""
+"The import will probably only work correctly if presented with a valid file. "
+"It is recommended that the GnuCash <guimenuitem>Check &amp; Repair All</"
+"guimenuitem> function (in the <guimenu>Actions</guimenu> menu) be run before "
+"attempting to import."
+msgstr ""
+"Der Import funktioniert wahrscheinlich nur richtig, wenn eine gültige und "
+"fehlerfreie Datei angegeben wird. Es wird empfohlen, in GnuCash die Funktion "
+"<menuchoice><guisubmenu>Überprüfen</guisubmenu><guimenuitem>Alle überprüfen</"
+"guimenuitem></menuchoice> im Menü <guimenu>Aktionen</guimenu> vor dem Export "
+"aufzurufen."
+
+#. Tag: para
+#: details-impexp.docbook:44
+#, no-c-format
+msgid ""
+"Files can be opened by specifying the filename on the command line "
+"(<command>kmymoney &lt;path to file&gt;</command>), or by means of the "
+"&kappname; <menuchoice> <shortcut><keycombo>&Ctrl;<keycap>O</keycap></"
+"keycombo></shortcut> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> "
+"</menuchoice> or <menuchoice> <guimenu>File</guimenu><guimenuitem>Import</"
+"guimenuitem> </menuchoice> menu items."
+msgstr ""
+"Dateien können durch die Angabe des Dateinamens auf der Befehlszeile "
+"(<command>kmymoney &lt;pfad/zu/datei&gt;</command>), über das Menü mit "
+"<menuchoice> <shortcut><keycombo>&Ctrl;<keycap>O</keycap></keycombo></"
+"shortcut> <guimenu>Datei</guimenu><guimenuitem>Öffnen</guimenuitem> </"
+"menuchoice> oder mit <menuchoice> <guimenu>Datei</"
+"guimenu><guimenuitem>Importieren</guimenuitem> </menuchoice> geöffnet werden."
+
+#. Tag: para
+#: details-impexp.docbook:56
+#, no-c-format
+msgid ""
+"The similarity between the two products means that much day-to-day data can "
+"be imported in a straightforward fashion. However, there are some areas "
+"where differences arise, and various options are provided to deal with "
+"these. The following sections will describe some of these differences; "
+"understanding them should lead to a smoother importation."
+msgstr ""
+"Wegen der Ähnlichkeit zwischen beiden Programmen können viele alltägliche "
+"Daten ohne Probleme importiert werden. Es gibt jedoch einige Bereiche, die "
+"in beiden Programmen unterschiedlich verarbeitet werden. Dafür gibt es "
+"mehrere Einstellungen. Im Folgenden werden einige der Unterschiede "
+"erläutert, damit werden diese Unterschiede verständlich und können beim "
+"Import berücksichtigt werden."
+
+#. Tag: title
+#: details-impexp.docbook:66
+#, no-c-format
+msgid "Similarities, Differences, and Terminology"
+msgstr "Ähnlichkeiten, Unterschiede und Fachausdrücke"
+
+#. Tag: title
+#: details-impexp.docbook:69
+#, no-c-format
+msgid "Small Business Usage"
+msgstr "Funktionen für kleine und mittlere Unternehmen"
+
+#. Tag: para
+#: details-impexp.docbook:71
+#, no-c-format
+msgid ""
+"It should be noted that &kappname; is a <emphasis>personal</emphasis> "
+"finance manager, and as such, does not directly support any of the business "
+"features of GnuCash, such as tax tables, payroll, and tracking of lots. Any "
+"Accounts Payable or Receivable accounts found in a file will be imported as "
+"Liability or Asset accounts respectively."
+msgstr ""
+"&kappname; ist ein Finanzverwaltungsprogramm für den <emphasis>persönlichen</"
+"emphasis> Gebrauch, daher werden die geschäftlichen Funktionen in GnuCash "
+"wie Steuertabellen, Gehaltsabrechnungen und die Überwachung von Lieferungen "
+"nicht direkt unterstützt. Alle Verbindlichkeiten oder Forderungen in einer "
+"Datei werden als Verbindlichkeits- oder Anlagenkonto importiert."
+
+#. Tag: title
+#: details-impexp.docbook:81
+#, no-c-format
+msgid "Accounts"
+msgstr "Konten"
+
+#. Tag: title
+#: details-impexp.docbook:84
+#, no-c-format
+msgid "Account types"
+msgstr "Kontenarten"
+
+#. Tag: para
+#: details-impexp.docbook:86
+#, no-c-format
+msgid ""
+"For both products, the highest level of structure in the file is the "
+"account. &kappname; supports 5 main types of account: Asset, Liability, "
+"Income, Expense and Equity, each of which may have various subtypes, &eg;, "
+"Checking, Credit Card, &etc; &kappname; includes a 'standard' account for "
+"each of these five types, and all other accounts are held subordinate to one "
+"of these. &kappname; enforces more consistency (or less flexibility, "
+"depending on your point of view) between account types than does GnuCash, "
+"and the importer will correct any inconsistencies it detects. This may "
+"result in a slightly different account structure, though this can, within "
+"reason, be amended after the import is complete."
+msgstr ""
+"In beiden Produkten ist ein Konto die oberste Strukturebene in der Datei. "
+"&kappname; unterstützt fünf Hauptarten von Konten: Anlagen, "
+"Verbindlichkeiten, Einnahmen, Ausgaben und Eigenkapital. Jeder dieser "
+"Kontotypen kann mehrere Untertypen haben, &eg; Scheckkonto, "
+"Kreditkartenkonto &etc; &kappname; enthält ein Standardkonto mit allen fünf "
+"Kontentypen und alle anderen Konten werden diesen Konten untergeordnet. "
+"Dadurch erzwingt &kappname; mehr Konsistenz oder weniger Flexibilität, je "
+"nach Betrachtungsweise, zwischen den Kontentypen als GnuCash. Das "
+"Importmodul korrigiert alle erkannten Inkonsistenzen. Das kann zu einer "
+"geringfügig abweichenden Kontenstruktur führen, lässt sich aber innerhalb "
+"gewisser Grenzen nach dem Import korrigieren."
+
+#. Tag: title
+#: details-impexp.docbook:101
+#, no-c-format
+msgid "Categories"
+msgstr "Kategorien"
+
+#. Tag: para
+#: details-impexp.docbook:103
+#, no-c-format
+msgid ""
+"&kappname; uses the term Category to denote an account of an Income or "
+"Expense type. Unlike GnuCash, these are not considered as 'ledger' accounts, "
+"and entry of transactions folder into categories is not supported; "
+"allocations are made during transaction entry into other account types."
+msgstr ""
+"&kappname; benutzt den Begriff Kategorie für Konten vom Typ Einnahme oder "
+"Ausgabe. Anders als in GnuCash werden diese Konten nicht als reale Konten "
+"betrachtet, die Eingabe von Buchungen für Kategorien ist nicht möglich. "
+"Zuweisungen während der Buchungseingabe erfolgen für andere Kontentypen."
+
+#. Tag: title
+#: details-impexp.docbook:112
+#, no-c-format
+msgid "Structure and Placeholders"
+msgstr "Strukturen und Platzhalter"
+
+#. Tag: para
+#: details-impexp.docbook:114
+#, no-c-format
+msgid ""
+"GnuCash supports the use of Placeholder accounts. In effect, these are just "
+"read-only accounts into which no transactions can be entered, but which "
+"function in an analogous fashion to folders in a folder structure, as a "
+"holder for other accounts. Though &kappname; does not support this feature "
+"as such, it does provide a parent/child account relationship, so the "
+"importer simulates placeholders by creating empty accounts."
+msgstr ""
+"GnuCash verwendet Platzhalterkonten. Tatsächlich handelt es sich dabei um "
+"nur lesbare Konten, es können keine Buchungen eingegeben werden. Diese "
+"Konten funktionieren wie Ordner in einem Verzeichnis als Platzhalter für "
+"andere Konten. Obwohl &kappname; diese Funktion nicht direkt unterstützt, "
+"erstellt das Importmodul eine Kontenstruktur mit über- und untergeordneten "
+"Konten und simuliert diese Platzhalter, indem es leere Konten erstellt."
+
+#. Tag: title
+#: details-impexp.docbook:125
+#, no-c-format
+msgid "Account Type map"
+msgstr "Zuordnung der Kontoart"
+
+#. Tag: entry
+#: details-impexp.docbook:131
+#, no-c-format
+msgid "GnuCash type"
+msgstr "GnuCash-Typ"
+
+#. Tag: entry
+#: details-impexp.docbook:131
+#, no-c-format
+msgid "&kappname; type"
+msgstr "&kappname;-Typ"
+
+#. Tag: entry
+#: details-impexp.docbook:136
+#, no-c-format
+msgid "BANK"
+msgstr "BANK"
+
+#. Tag: entry
+#: details-impexp.docbook:136 details-impexp.docbook:139
+#, no-c-format
+msgid "Checking"
+msgstr "Checking (Girokonto)"
+
+#. Tag: entry
+#: details-impexp.docbook:139
+#, no-c-format
+msgid "CHECKING"
+msgstr "CHECKING"
+
+#. Tag: entry
+#: details-impexp.docbook:142
+#, no-c-format
+msgid "SAVINGS"
+msgstr "SAVINGS"
+
+#. Tag: entry
+#: details-impexp.docbook:142
+#, no-c-format
+msgid "Savings"
+msgstr "Savings (Sparkonto)"
+
+#. Tag: entry
+#: details-impexp.docbook:145
+#, no-c-format
+msgid "ASSET"
+msgstr "ASSET"
+
+#. Tag: entry
+#: details-impexp.docbook:145 details-impexp.docbook:178
+#, no-c-format
+msgid "Asset"
+msgstr "Asset (Anlagen)"
+
+#. Tag: entry
+#: details-impexp.docbook:148
+#, no-c-format
+msgid "CASH"
+msgstr "CASH"
+
+#. Tag: entry
+#: details-impexp.docbook:148 details-impexp.docbook:151
+#, no-c-format
+msgid "Cash"
+msgstr "Cash (Bargeld)"
+
+#. Tag: entry
+#: details-impexp.docbook:151
+#, no-c-format
+msgid "CURRENCY"
+msgstr "CURRENCY"
+
+#. Tag: entry
+#: details-impexp.docbook:154
+#, no-c-format
+msgid "MONEYMRKT"
+msgstr "MONEYMRKT"
+
+#. Tag: entry
+#: details-impexp.docbook:154
+#, no-c-format
+msgid "MoneyMarket"
+msgstr "MoneyMarket"
+
+#. Tag: entry
+#: details-impexp.docbook:157
+#, no-c-format
+msgid "STOCK"
+msgstr "STOCK"
+
+#. Tag: entry
+#: details-impexp.docbook:157 details-impexp.docbook:160
+#, no-c-format
+msgid "Stock"
+msgstr "Stock (Wertpapier)"
+
+#. Tag: entry
+#: details-impexp.docbook:160
+#, no-c-format
+msgid "MUTUAL"
+msgstr "MUTUAL"
+
+#. Tag: entry
+#: details-impexp.docbook:163
+#, no-c-format
+msgid "EQUITY"
+msgstr "EQUITY"
+
+#. Tag: entry
+#: details-impexp.docbook:163
+#, no-c-format
+msgid "Equity"
+msgstr "Equity (Eigenkapital)"
+
+#. Tag: entry
+#: details-impexp.docbook:166
+#, no-c-format
+msgid "LIABILITY"
+msgstr "LIABILITY"
+
+#. Tag: entry
+#: details-impexp.docbook:166 details-impexp.docbook:181
+#, no-c-format
+msgid "Liability"
+msgstr "Liability (Verbindlichkeiten)"
+
+#. Tag: entry
+#: details-impexp.docbook:169
+#, no-c-format
+msgid "CREDIT"
+msgstr "CREDIT"
+
+#. Tag: entry
+#: details-impexp.docbook:169
+#, no-c-format
+msgid "CreditCard"
+msgstr "CreditCard (Kreditkarte)"
+
+#. Tag: entry
+#: details-impexp.docbook:172
+#, no-c-format
+msgid "INCOME"
+msgstr "INCOME"
+
+#. Tag: entry
+#: details-impexp.docbook:172
+#, no-c-format
+msgid "Income"
+msgstr "Income (Einnahmen)"
+
+#. Tag: entry
+#: details-impexp.docbook:175
+#, no-c-format
+msgid "EXPENSE"
+msgstr "EXPENSE"
+
+#. Tag: entry
+#: details-impexp.docbook:175
+#, no-c-format
+msgid "Expense"
+msgstr "Expense (Ausgaben)"
+
+#. Tag: entry
+#: details-impexp.docbook:178
+#, no-c-format
+msgid "RECEIVABLE"
+msgstr "RECEIVABLE"
+
+#. Tag: entry
+#: details-impexp.docbook:181
+#, no-c-format
+msgid "PAYABLE"
+msgstr "PAYABLE"
+
+#. Tag: title
+#: details-impexp.docbook:190
+#, no-c-format
+msgid "Transactions and Splits"
+msgstr "Buchungen und Split-Buchungen"
+
+#. Tag: title
+#: details-impexp.docbook:193
+#, no-c-format
+msgid "Balanced transactions"
+msgstr "Ausgeglichene Buchungen"
+
+#. Tag: para
+#: details-impexp.docbook:195
+#, no-c-format
+msgid ""
+"As with GnuCash, data is entered in the form of transactions, each generally "
+"consisting of 2 or more split entries. In fact, valid GnuCash transactions "
+"will always contain at least 2 splits, and to conform to GnuCash's double-"
+"entry bookkeeping standard, these must be in monetary balance (i.e., they "
+"must balance out to zero). &kappname; encourages, but does not enforce, this "
+"standard, but any imported transaction which is not balanced will be marked "
+"in the ledger view as having a problem."
+msgstr ""
+"Wie in GnuCash werden Daten als Buchungen eingegeben. Im Allgemeinen besteht "
+"jede Buchung aus zwei Einträgen. Gültige Buchungen in GnuCash bestehen immer "
+"aus mindestens zwei Einträgen, da eine doppelte Buchführung verwendet wird "
+"und beide Einträge wertmäßig ausgeglichen sein müssen. &kappname; "
+"unterstützt diesen Standard, er ist aber nicht zwingend erforderlich. Jede "
+"nicht ausgeglichene importierte Buchung wird im Kontenbuch als "
+"möglicherweise fehlerhaft markiert."
+
+#. Tag: title
+#: details-impexp.docbook:207
+#, no-c-format
+msgid "Payees"
+msgstr "Zahlungsempfänger"
+
+#. Tag: para
+#: details-impexp.docbook:209
+#, no-c-format
+msgid ""
+"&kappname; prefers that all transactions have a Payee (a generic term that "
+"encompasses both payees and payers), and unlike GnuCash, a list of these "
+"payees is maintained. Payee names are generated by the importer from the "
+"GnuCash transaction's Description field."
+msgstr ""
+"In &kappname; sollten alle Buchungen einen Zahler/Zahlungsempfänger haben "
+"und im Gegensatz zu GnuCash wird eine Liste der Zahler/Zahlungsempfänger "
+"geführt. Die Namen der Zahler/Zahlungsempfänger werden vom Importmodul aus "
+"der Beschreibung der  GnuCash-Buchung generiert."
+
+#. Tag: title
+#: details-impexp.docbook:218
+#, no-c-format
+msgid "Transfers"
+msgstr "Buchungen"
+
+#. Tag: para
+#: details-impexp.docbook:220
+#, no-c-format
+msgid ""
+"&kappname; uses the term Transfer to describe a transaction which does not "
+"involve a Category, but only transfers money between Asset and/or Liability "
+"accounts."
+msgstr ""
+"In &kappname; wird der Begriff Umbuchung für eine Buchung benutzt, in der "
+"keine Kategorien betroffen sind. Dabei werden nur Geldbeträge zwischen "
+"Anlagen- und/oder Verbindlichkeitskonten verschoben."
+
+#. Tag: title
+#: details-impexp.docbook:228
+#, no-c-format
+msgid "Reconcile"
+msgstr "Abgleichen "
+
+#. Tag: para
+#: details-impexp.docbook:230
+#, no-c-format
+msgid ""
+"&kappname; provides an account reconciliation function similar to that of "
+"GnuCash, and the corresponding transaction status will be imported."
+msgstr ""
+"&kappname; enthält eine Abgleichfunktion wie GnuCash, der zugehörige "
+"Buchungsstatus wird importiert."
+
+#. Tag: title
+#: details-impexp.docbook:238
+#, no-c-format
+msgid "Commodities"
+msgstr "Wertpapiere und Währungen"
+
+#. Tag: para
+#: details-impexp.docbook:240
+#, no-c-format
+msgid ""
+"GnuCash uses the term Commodity to cover both currencies and non-currency "
+"assets. These are treated separately in &kappname;."
+msgstr ""
+"GnuCash benutzt den Begriff Waren sowohl für Währungen wie auch für Anlagen "
+"ohne Währung. In &kappname; werden beide gesondert behandelt."
+
+#. Tag: title
+#: details-impexp.docbook:246
+#, no-c-format
+msgid "Currencies"
+msgstr "Währungen"
+
+#. Tag: para
+#: details-impexp.docbook:248
+#, no-c-format
+msgid ""
+"&kappname; has built-in support for all foreign <link linkend=\"details."
+"currencies\">currency</link> types. &kappname; also requires that the user "
+"specify a base currency, this being the default currency for new accounts. "
+"The importer will attempt to determine the most likely base currency, though "
+"this choice may be rejected in favor of an alternative."
+msgstr ""
+"&kappname; kann alle ausländischen <link linkend=\"details.currencies"
+"\">Währungen</link> verarbeiten. Es ist erforderlich, eine Basiswährung als "
+"Standard für neue Konten einzustellen. Das Importmodul versucht die "
+"wahrscheinlichste Basiswährung dafür zu ermitteln. Die vorgeschlagene "
+"Währung kann aber geändert werden."
+
+#. Tag: para
+#: details-impexp.docbook:257
+#, no-c-format
+msgid ""
+"(NOTE: &kappname; does not currently support accounts denominated in "
+"'defunct' currencies (except those replaced by the Euro). At present, it "
+"will be necessary to remove any such accounts from your GnuCash file before "
+"importing. We hope to improve on this situation in a future release.)"
+msgstr ""
+"Hinweis: In &kappname; kann zurzeit kein Konto in nicht mehr existierenden "
+"Währungen mit Ausnahme der durch den Euro ersetzten Währungen geführt "
+"werden. Daher müssen alle Konten mit solchen Währungen aus der GnuCash-Datei "
+"vor dem Export gelöscht werden."
+
+#. Tag: title
+#: details-impexp.docbook:266
+#, no-c-format
+msgid "Securities and Investments"
+msgstr "Wertpapiere und Investitionen"
+
+#. Tag: para
+#: details-impexp.docbook:268
+#, no-c-format
+msgid ""
+"Non-currency assets (normally stocks and bonds) are called Securities by "
+"&kappname;, and represent the main difference between the two products, in "
+"that &kappname; requires any account denominated in a security to be "
+"subordinate to an Investment Account. This is described in more detail in "
+"the chapter on <link linkend=\"details.investments\">Investments</link>. "
+"Though users may have implemented such a relationship, GnuCash imposes no "
+"defined structure on it, so the importer is unable to detect it and perform "
+"an automatic conversion. Three options are therefore made available:"
+msgstr ""
+"Anlagen ohne Währung, normalerweise Aktien und Anleihen, werden in "
+"&kappname; als Wertpapiere bezeichnet. Der wichtigste Unterschied zwischen "
+"den beiden Produkten besteht darin, dass in &kappname; jedes Wertpapierkonto "
+"einem Investitionskonto zugeordnet werden muss. Weitere Details dazu finden "
+"Sie im Kapitel <link linkend=\"details.investments\">Investitionen</link>. "
+"Obwohl auch in GnuCash solche Beziehungen durch den Benutzer definiert "
+"werden können, enthält GnuCash keine definierten Strukturen dafür. Daher "
+"kann das Importmodul diese Beziehung nicht erkennen und führt eine "
+"automatische Umwandlung durch. Deshalb gibt es für diesen Fall folgende "
+"Optionen:"
+
+#. Tag: para
+#: details-impexp.docbook:281
+#, no-c-format
+msgid ""
+"Create a separate Investment account for each security, with the same name "
+"as the security"
+msgstr ""
+"Erstellen Sie ein eigenes Investmentkonto für jedes Wertpapier und geben Sie "
+"ihm den gleichen Namen wie das Wertpapier."
+
+#. Tag: para
+#: details-impexp.docbook:286
+#, no-c-format
+msgid ""
+"Create a single Investment account which will act as 'parent' for all "
+"security accounts"
+msgstr ""
+"Erstellen Sie ein eigenes Investmentkonto, das als übergeordnetes Konto für "
+"alle Wertpapierkonten dient."
+
+#. Tag: para
+#: details-impexp.docbook:291
+#, no-c-format
+msgid ""
+"Create several Investment accounts, and assign securities to them as "
+"directed by the user."
+msgstr ""
+"Erstellen Sie mehrere Investmentkonten und weisen Sie ihnen nach Ihren "
+"Vorstellungen Wertpapiere zu"
+
+#. Tag: para
+#: details-impexp.docbook:296
+#, no-c-format
+msgid ""
+"It depends entirely on user requirements which of these options is relevant "
+"in each situation, and in some cases, manual restructuring of accounts after "
+"importation may be necessary."
+msgstr ""
+"Es hängt ganz von Ihren Anforderungen ab, welche dieser Optionen Sie wählen "
+"sollten. In einigen Fällen ist das manuelle Umstrukturieren der Konten nach "
+"dem Import nötig."
+
+#. Tag: title
+#: details-impexp.docbook:304
+#, no-c-format
+msgid "Prices and currency rates"
+msgstr "Preise und Währungskurse"
+
+#. Tag: para
+#: details-impexp.docbook:306
+#, no-c-format
+msgid ""
+"Security prices and currency exchange rates as displayed in the GnuCash "
+"Price Editor will be imported. In addition, price and rate entries will be "
+"generated from all transactions involving securities and multiple currencies."
+msgstr ""
+"Wertpapierpreise und Währungskurse aus dem Preiseditor in GnuCash werden "
+"importiert. Zusätzlich werden Einträge für Preise und Umtauschkurse aus "
+"allen Buchungen von Wertpapieren und in mehreren Währungen generiert."
+
+#. Tag: title
+#: details-impexp.docbook:314 details-impexp.docbook:439
+#, no-c-format
+msgid "Online Quotes"
+msgstr "Online-Kursnotizen"
+
+#. Tag: para
+#: details-impexp.docbook:316
+#, no-c-format
+msgid ""
+"For obtaining online price and currency rate quotations, GnuCash uses a "
+"package called Finance::Quote. Recent versions of &kappname; contain support "
+"for this package for obtaining stock quotes, and this will be used by "
+"default when importing data. You may however select to convert to the native "
+"method used by &kappname; which is covered in more detail in <link linkend="
+"\"details.investments.onlinequotes\">online quotes</link>."
+msgstr ""
+"GnuCash verwendet das Paket „Finance::Quote“, um Aktien- und Währungskurse "
+"aus dem Internet herunterzuladen. Aktuelle Versionen von &kappname; "
+"unterstützen ebenfalls dieses Paket, daher wird diese Methode als Standard "
+"beim Import benutzt. Sie können jedoch die &kappname;-Funktion benutzen, die "
+"im Abschnitt <link linkend=\"details.investments.onlinequotes\">Online-"
+"Kursnotizen</link> erläutert wird."
+
+#. Tag: para
+#: details-impexp.docbook:325
+#, no-c-format
+msgid ""
+"If you choose to do so, the following dialog will allow selection of a "
+"'native' &kappname; price source, or a user-defined source, for each account "
+"for which online quotes are required. However, the stock (ticker) symbol "
+"will be imported unchanged. Since this symbol will almost certainly be "
+"different in the two packages, it will need to be manually edited after "
+"completion of the import process. Future currency rate updates will not use "
+"Finance::Quote, and will always use the native retrieval method."
+msgstr ""
+"Im folgenden Dialog können Sie eine der in &kappname; bekannten Online-"
+"Quellen auswählen oder eigene Quellen definieren. Das Börsensymbol wird "
+"jedoch unverändert importiert. Das dies Symbol im mehreren Paketen sehr "
+"wahrscheinlich nicht übereinstimmt, muss es später nach Abschluß des Imports "
+"von Hand bearbeitet werden. Spätere Aktualisierungen von Währungskursen "
+"verwenden das Paket Finance::Quote dann nicht mehr, sondern die in "
+"&kappname; eingebaute Funktion."
+
+#. Tag: title
+#: details-impexp.docbook:348 details-impexp.docbook:452
+#, no-c-format
+msgid "Scheduled Transactions"
+msgstr "Geplante Buchungen"
+
+#. Tag: para
+#: details-impexp.docbook:350
+#, no-c-format
+msgid ""
+"&kappname; does not retain the separation made in GnuCash between template "
+"transactions and their frequency of occurrence. Transaction data will be "
+"duplicated if the same template is used in different schedules, but this is "
+"not likely to be of great significance."
+msgstr ""
+"&kappname; unterstützt die in GnuCash benutzte Unterscheidung zwischen "
+"Buchungsvorlagen und Häufigkeit der Buchung nicht. Buchungen werden doppelt "
+"importiert, wenn die gleiche Vorlage für verschiedene Wiederholungszeiträume "
+"verwendet wird, das ist aber wahrscheinlich unwichtig."
+
+#. Tag: title
+#: details-impexp.docbook:358
+#, no-c-format
+msgid "Schedule types"
+msgstr "Arten von geplanten Buchungen"
+
+#. Tag: para
+#: details-impexp.docbook:360
+#, no-c-format
+msgid ""
+"&kappname; classifies all schedules as one of three types, Bills, Deposits, "
+"or Transfers. Since GnuCash does not make such a distinction, the importer "
+"attempts to determine the classification from the accounts and direction of "
+"money movements. It may be that in some cases incorrect assumptions are "
+"made, and these will need manual correction."
+msgstr ""
+"&kappname; kennt drei Arten von geplanten Buchungen. Gutschrift, Belastung "
+"und Umbuchung. In GnuCash gibt es diese Unterscheidung nicht. Das "
+"Importmodul versucht die Art der Buchungen aus den Konten und Richtungen des "
+"Geldflusses zu ermitteln. Das gelingt nicht in allen Fällen und muss dann "
+"manuell korrigiert werden. "
+
+#. Tag: title
+#: details-impexp.docbook:370
+#, no-c-format
+msgid "Suspect Schedules"
+msgstr "Möglicherweise fehlerhafte geplante Buchungen"
+
+#. Tag: para
+#: details-impexp.docbook:372
+#, no-c-format
+msgid ""
+"Some features of GnuCash scheduled transactions are not available in "
+"&kappname;, so the importer tries in each case to reach a reasonable "
+"compromise in converting the data. These transactions will be flagged as "
+"suspect, and the user will be given the option of editing them directly "
+"during the import process. Examples of situations which may cause this are:"
+msgstr ""
+"Einige Funktionen von geplanten Buchungen in GnuCash sind in &kappname; "
+"nicht verfügbar. Dann versucht das Importmodul in diesen Fällen, die Daten "
+"sinnvoll zu konvertieren. Diese Buchungen werden als möglicherweise "
+"fehlerhaft gekennzeichnet. Sie können vom Benutzer beim Import direkt "
+"bearbeitet werden. Beispiele für möglicherweise falsche Buchungen sind:"
+
+#. Tag: para
+#: details-impexp.docbook:382
+#, no-c-format
+msgid ""
+"some frequency intervals supported in GnuCash are not currently available in "
+"&kappname;"
+msgstr ""
+"Einige in GnuCash unterstützte Wiederholungszeiträume können zurzeit in "
+"&kappname; nicht eingestellt werden."
+
+#. Tag: para
+#: details-impexp.docbook:387
+#, no-c-format
+msgid ""
+"&kappname; does not support the use of formulae and variables in amount "
+"fields"
+msgstr "&kappname; erlaubt keine Formeln und Variablen in Wertefeldern"
+
+#. Tag: para
+#: details-impexp.docbook:392
+#, no-c-format
+msgid "complex cases which have not yet been identified for import."
+msgstr "Schwierige Fälle, die zurzeit beim Import noch nicht erkannt werden."
+
+#. Tag: para
+#: details-impexp.docbook:396
+#, no-c-format
+msgid ""
+"Despite best efforts, it is possible that, due to the many options involved, "
+"a scheduled transaction may cause a fatal error within &kappname;. If this "
+"sort of problem seems to be occurring, the importer offers the option to "
+"drop all suspect schedules."
+msgstr ""
+"Wegen der vielen möglichen Einstellungen kann es vorkommen, dass eine "
+"geplante Buchung einen schwerwiegenden Fehler in &kappname; auslöst. In "
+"diesen Fällen können im Importmodul alle möglicherweise fehlerhaften "
+"Buchungen ausgelassen werden."
+
+#. Tag: title
+#: details-impexp.docbook:406
+#, no-c-format
+msgid "Reports"
+msgstr "Berichte"
+
+#. Tag: para
+#: details-impexp.docbook:408
+#, no-c-format
+msgid ""
+"&kappname; provides a comprehensive selection of configurable reports, "
+"described in more detail in <link linkend=\"details.reports\">Reports.</"
+"link> These will not necessarily, however, match precisely those reports "
+"available in GnuCash."
+msgstr ""
+"&kappname; bietet eine umfassende Auswahl an einstellbaren Berichten. "
+"Ausführliche Informationen dazu finden Sie im Abschnitt <link linkend="
+"\"details.reports\">Berichte</link>. Die Berichte in &kappname; entsprechen "
+"nicht unbedingt genau den Berichten in GnuCash."
+
+#. Tag: title
+#: details-impexp.docbook:418
+#, no-c-format
+msgid "Selecting Importer Options"
+msgstr "Auswahl der Import-Einstellungen"
+
+#. Tag: title
+#: details-impexp.docbook:431
+#, no-c-format
+msgid "Investment Handling"
+msgstr "Verarbeitung von Investitionen"
+
+#. Tag: para
+#: details-impexp.docbook:433
+#, no-c-format
+msgid ""
+"See <link linkend=\"gncsecurities\">\"Securities and Investments\"</link> "
+"above."
+msgstr ""
+"Siehe <link linkend=\"gncsecurities\">Wertpapiere und Investitionen</link> "
+"weiter oben."
+
+#. Tag: para
+#: details-impexp.docbook:441
+#, no-c-format
+msgid ""
+"Turn this off if you wish to use the native method for future online price "
+"quotes."
+msgstr ""
+"Schalten Sie diese Einstellung aus, wenn Sie die Standardmethode für "
+"zukünftige Online-Kursnotizen verwenden möchten."
+
+#. Tag: para
+#: details-impexp.docbook:446
+#, no-c-format
+msgid ""
+"See <link linkend=\"details.impexp.gncquotes\">\"Online Quotes\"</link> "
+"above."
+msgstr ""
+"Siehe <link linkend=\"details.impexp.gncquotes\">Online-Kursnotizen</link> "
+"weiter oben."
+
+#. Tag: para
+#: details-impexp.docbook:454
+#, no-c-format
+msgid ""
+"See <link linkend=\"gncschedules\">\"Scheduled Transactions\"</link> above."
+msgstr ""
+"Siehe <link linkend=\"gncschedules\">Geplante Buchungen</link> weiter oben."
+
+#. Tag: title
+#: details-impexp.docbook:460
+#, no-c-format
+msgid "Decoding Options"
+msgstr "Kodierungs-Einstellungen"
+
+#. Tag: para
+#: details-impexp.docbook:462
+#, no-c-format
+msgid ""
+"If your native language is written in letters or symbols which are different "
+"from those used in the 'Latin' languages (i.e., generally Western European), "
+"these are represented in a special fashion ('encoded') in your GnuCash file. "
+"If these letters are not displayed correctly on your screen, then they must "
+"be decoded. Currently, it is often not possible to detect accurately which "
+"form of decoding must be used, so you may need to set this option and select "
+"an entry from the list. In general, the first item in the list will be that "
+"which is considered appropriate for your locale (i.e., the country and "
+"language which was selected as native when your operating system was "
+"installed), so this should be tried first. Since the import process does not "
+"overwrite your GnuCash file, you are free to experiment with any of these "
+"selections."
+msgstr ""
+"Werden in Ihrer Sprache Buchstaben oder Symbole in anderen Kodierungen als "
+"„Latin“ (Westeuropäisch) geschrieben, dann sind Sie in der GnuCash-Datei "
+"kodiert. Werden diese Buchstaben auf dem Bildschirm nicht korrekt angezeigt, "
+"dann müssen Sie dekodiert werden. Oft ist es nicht möglich, die richtige "
+"Kodierung zu erkennen. Dann muss diese Einstellung gewählt und ein Eintrag "
+"aus der Liste gewählt werden. Als erstes Element in der Liste wird die in "
+"den Regionaleinstellungen benutzte Kodierung angeführt und sollte zuerst "
+"ausprobiert werden. Da beim Import keine Daten in der GnuCash-Datei "
+"überschrieben werden, können Sie problemlos alle Einstellungen ausprobieren."
+
+#. Tag: title
+#: details-impexp.docbook:479
+#, no-c-format
+msgid "Transaction Notes option"
+msgstr "Einstellungen der Buchungsnotizen"
+
+#. Tag: para
+#: details-impexp.docbook:481
+#, no-c-format
+msgid ""
+"Under some usage conditions, non-split GnuCash transactions may contain "
+"residual, often incorrect, memo data which is not normally visible to the "
+"user. When imported into &kappname; however, due to display differences, "
+"this data can become visible. Often, these transactions will have a Notes "
+"field describing the real purpose of the transaction. If this option is "
+"selected, these notes, if present, will be used to override the extraneous "
+"memo data."
+msgstr ""
+"Manchmal enthalten nicht geteilte GnuCash-Buchungen noch restliche "
+"Memodaten, die normalerweise nicht angezeigt werden. Beim Import in "
+"&kappname; kann es wegen der unterschiedlichen Anzeige vorkommen, dass diese "
+"Daten angezeigt werden. Häufig haben diese Buchungen ein Notizfeld mit "
+"Hinweisen zum Grund der Buchung. Mit der Einstellung Buchungsnotizen werden "
+"diese belanglosen Memodaten durch den Inhalt des Notizfeldes überschrieben."
+
+#. Tag: title
+#: details-impexp.docbook:492
+#, no-c-format
+msgid "Debug Options"
+msgstr "Einstellungen zur Fehlersuche"
+
+#. Tag: para
+#: details-impexp.docbook:494
+#, no-c-format
+msgid ""
+"These need only be used in the event of import problems. If you have such "
+"problems, you should also report them to the &kappname; developer list "
+"&devlist;. Note that the traces produced by these options may contain data "
+"of a confidential nature, and the Anonymize option should be used if they "
+"are to be made publicly available."
+msgstr ""
+"Diese Einstellungen sind nur bei Problemen mit dem Import erforderlich. In "
+"diesen Fällen sollten Sie diese Probleme auch an die Liste &devlist; der "
+"&kappname;-Entwickler schicken. Denken Sie daran, dass die Fehlerprotokolle "
+"vertrauliche Daten enthalten können. Daher sollten Sie die Funktion zur "
+"Anonymisierung der Daten benutzen, ehe Sie sie an eine öffentliche "
+"Mailingliste schicken."
+
+#. Tag: title
+#: details-impexp.docbook:505
+#, no-c-format
+msgid "Import Report"
+msgstr "Importbericht"
+
+#. Tag: para
+#: details-impexp.docbook:507
+#, no-c-format
+msgid ""
+"At the end of processing, the importer produces a report showing the number "
+"of different entities processed, and any errors or anomalies encountered. "
+"This report will be displayed on screen, and may be saved to a file for "
+"later review. A full report may contain the following sections:"
+msgstr ""
+"Am Ende des Importprozesses wird ein Bericht mit der Anzahl der bearbeiteten "
+"Einträge, Fehlern oder ungewöhnlichen Vorkommnissen erstellt. Dieser Bericht "
+"wird auf dem Bildschirm angezeigt und kann zur späteren Überprüfung in einer "
+"Datei gespeichert werden. Ein vollständiger Bericht beinhaltet folgende "
+"Abschnitte:"
+
+#. Tag: para
+#: details-impexp.docbook:516
+#, no-c-format
+msgid "Record counts"
+msgstr "Anzahl der Datensätze"
+
+#. Tag: para
+#: details-impexp.docbook:520
+#, no-c-format
+msgid "Inconsistencies in account types and actions taken"
+msgstr "Widersprüche bei Kontenarten und durchgeführten Aktionen"
+
+#. Tag: para
+#: details-impexp.docbook:524
+#, no-c-format
+msgid "Details of suspect schedules"
+msgstr "Einzelheiten für ungewöhnliche geplante Buchungen"
+
+#. Tag: author
+#: details-impexp.docbook:542 details-impexp.docbook:909
+#, no-c-format
+msgid "&Thomas.Baumgart; &Thomas.Baumgart.mail;"
+msgstr "&Thomas.Baumgart; &Thomas.Baumgart.mail;"
+
+#. Tag: title
+#: details-impexp.docbook:545
+#, no-c-format
+msgid "QIF Importer"
+msgstr "QIF-Importer"
+
+#. Tag: title
+#: details-impexp.docbook:548
+#, no-c-format
+msgid "QIF format considered harmful"
+msgstr "Warum das QIF-Format nicht benutzt werden sollte"
+
+#. Tag: para
+#: details-impexp.docbook:550
+#, no-c-format
+msgid ""
+"Generally speaking, the QIF format should be avoided wherever possible. It "
+"is a poor choice for transporting financial data. Among other things, QIF "
+"suffers from these problems:"
+msgstr ""
+"Im allgemeinen sollte das QIF-Format, wenn möglich, nicht benutzt werden. Es "
+"ist eine schlechte Wahl für die Übertragung von Finanzdaten. Unter anderem "
+"gibt es folgende Probleme mit dem Format:"
+
+#. Tag: para
+#: details-impexp.docbook:558
+#, no-c-format
+msgid ""
+"Lack of standardized format: Different versions of the same program will "
+"impart different meanings to the same element."
+msgstr ""
+"Fehlende Standardisierung des Formats: Verschiedene Versionen des gleichen "
+"Programms können gleichen Elementen verschiedenen Bedeutungen zuweisen."
+
+#. Tag: para
+#: details-impexp.docbook:563
+#, no-c-format
+msgid ""
+"Lack of transaction identifier: Because there is no ID number associated "
+"with each transaction, matching duplicate transactions is haphazard at best."
+msgstr ""
+"Kennung für Buchungen fehlt: Da es keine Kennung für einzelne Buchungen "
+"gibt, können doppelte Buchungen nur durch Raten festgestellt werden."
+
+#. Tag: para
+#: details-impexp.docbook:569
+#, no-c-format
+msgid ""
+"Lack of expressiveness: The grammar is really simple, and cannot portray the "
+"depth of financial information found in today's financial environment."
+msgstr ""
+"Mangelnde Ausdrucksfähigkeit: Die Grammatik des Formats ist ziemlich einfach "
+"und kann die komplexen Informationen nicht darstellen, die heute für eine "
+"Finanzverwaltung gebraucht werden."
+
+#. Tag: para
+#: details-impexp.docbook:575
+#, no-c-format
+msgid ""
+"This is generally why Intuit stopped supporting QIF input at all with "
+"Quicken 2005. If you have the option of getting data some other way, like "
+"OFX, always choose that option."
+msgstr ""
+"Aus diesen Gründen hat Intuit die Unterstützung des QIF-Formats in Quicken "
+"2005 vollständig eingestellt. Können Sie Daten in anderen Formaten wie zum "
+"Beispiel QFX erhalten, sollten Sie das QIF-Format nicht benutzen."
+
+#. Tag: title
+#: details-impexp.docbook:583
+#, no-c-format
+msgid "How to import a QIF file"
+msgstr "Import einer QIF-Datei"
+
+#. Tag: para
+#: details-impexp.docbook:585
+#, no-c-format
+msgid ""
+"To import a QIF file, first ensure you have a valid &kappname; file open. "
+"Then select <menuchoice><guimenuitem>Import</guimenuitem> <guimenuitem>QIF..."
+"</guimenuitem> </menuchoice> from the <guimenu>File</guimenu> menu."
+msgstr ""
+"Um eine QIF-Datei zu importieren, müssen Sie zuerst eine gültige &kappname;-"
+"Datei geöffnet haben. Wählen Sie dann <menuchoice><guimenuitem>Importieren</"
+"guimenuitem> <guimenuitem>QIF ...</guimenuitem> </menuchoice> aus dem Menü "
+"<guimenu>Datei</guimenu>."
+
+#. Tag: para
+#: details-impexp.docbook:602
+#, no-c-format
+msgid ""
+"The resulting dialog prompts for the QIF filename allowing you to locate the "
+"file by clicking on the <guibutton>Browse</guibutton> button."
+msgstr ""
+"Im nächsten Dialog müssen Sie den Namen der QIF-Datei eingeben. Klicken Sie "
+"auf <guibutton>Durchsuchen</guibutton>, um die Datei zu finden."
+
+#. Tag: para
+#: details-impexp.docbook:607
+#, no-c-format
+msgid ""
+"Also, &kappname; differentiates between the import of a bank statement file "
+"and historic data exported from another application. The default is to "
+"import a bank statement file. In case you are importing data from your "
+"previous personal finance manager application select the appropriate option."
+msgstr ""
+"&kappname; unterscheidet zwischen dem Import einer Datei mit dem Kontoauszug "
+"einer Bank und einer Datei mit Daten, die von einem anderem Programm "
+"exportiert wurden. Möchten Sie die Daten aus Ihren früheren "
+"Finanzverwaltungsprogramm importieren, dann wählen Sie die passende "
+"Einstellung."
+
+#. Tag: para
+#: details-impexp.docbook:614
+#, no-c-format
+msgid ""
+"In general the default QIF profile should work with your QIF data. In some "
+"cases it might become necessary to use a modified QIF profile. See the <link "
+"linkend=\"details.impexp.qifimp.profile\">next section</link> for more "
+"details on that subject."
+msgstr ""
+"Normalerweise funktioniert das QIF-Standardprofil mit den meisten QIF-Daten "
+"zufriedenstellend. In manchen Fällen ist es nötig, ein angepasstes QIF-"
+"Profil zu verwenden. Weitere Informationen dazu finden Sie im <link linkend="
+"\"details.impexp.qifimp.profile\">nächsten Abschnitt</link>."
+
+#. Tag: para
+#: details-impexp.docbook:621
+#, no-c-format
+msgid "Click on <guibutton>Import</guibutton> to import the QIF file."
+msgstr ""
+"Klicken Sie auf <guibutton>Importieren</guibutton>, um die Daten aus der QIF-"
+"Datei einzufügen."
+
+#. Tag: para
+#: details-impexp.docbook:625
+#, no-c-format
+msgid ""
+"&kappname; will start scanning the file to determine the formats used to "
+"represent dates and numbers. In case it cannot determine a date format "
+"unambiguously, &kappname; will ask the user to select one from the list of "
+"possible date formats."
+msgstr ""
+"&kappname; startet das Einlesen der Datei und versucht, das verwendete "
+"Format für Datum und Zahlen zu bestimmen. Kann ein Datum nicht eindeutig "
+"bestimmt werden, müssen Sie das richtige Format aus einer Liste von "
+"möglicherweise passenden Formaten auswählen."
+
+#. Tag: para
+#: details-impexp.docbook:632
+#, no-c-format
+msgid ""
+"Next, &kappname; imports the data and creates all necessary objects, such as "
+"payee information, accounts and category records, and stock price "
+"information. Wherever possible, existing transactions will be matched "
+"against the imported information. A progress bar is shown and updated during "
+"the import process."
+msgstr ""
+"Als nächstes importiert &kappname; die Daten und erzeugt alle nötigen "
+"Objekte, wie zum Beispiel Zahler/Zahlungsempfänger, Konten, Kategorien  und "
+"Aktienkurse. Soweit möglich werden die importierten Informationen an "
+"vorhandene Buchungen angepasst. Während des Imports wird der Fortschritt des "
+"Vorgangs angezeigt und laufend aktualisiert."
+
+#. Tag: para
+#: details-impexp.docbook:639
+#, no-c-format
+msgid ""
+"In case &kappname; could not detect the name of the account to be imported, "
+"the user will be asked to select the account into which the data should be "
+"imported. If the account does not already exist in your file, a new account "
+"can be created by clicking on <guibutton>Create</guibutton>."
+msgstr ""
+"Wenn &kappname; den Namen des zu importierenden Kontos nicht ermitteln kann, "
+"muss der Benutzer angeben, in welches Konto die Daten importiert werden "
+"sollen. Ist das Konto noch nicht in Ihrer Datei vorhanden, kann mit dem "
+"Knopf <guibutton>Erstellen</guibutton> das neue Konto angelegt werden."
+
+#. Tag: para
+#: details-impexp.docbook:646
+#, no-c-format
+msgid ""
+"At the end of the import, &kappname; shows a statement import statistics "
+"window."
+msgstr ""
+"Am Ende des Imports zeigt &kappname; eine Zusammenfassung der Ergebnisse an."
+
+#. Tag: screeninfo
+#: details-impexp.docbook:653
+#, no-c-format
+msgid "<screeninfo>Statement statistics</screeninfo>"
+msgstr "<screeninfo>Statistik der Zusammenfassung</screeninfo>"
+
+#. Tag: phrase
+#: details-impexp.docbook:659
+#, no-c-format
+msgid "<phrase>Statement statistics</phrase>"
+msgstr "<phrase>Statistik der Zusammenfassung</phrase>"
+
+#. Tag: para
+#: details-impexp.docbook:665
+#, no-c-format
+msgid ""
+"After importing, all of the imported transactions will be shown with a "
+"yellow background in the ledger view. In case &kappname; was able to match "
+"an imported transaction with an already existing transaction, the background "
+"is shown in light green."
+msgstr ""
+"Nach dem Import werden alle importierten Buchungen in einer gelben "
+"Hintergrundfarbe in der Kontenbuchansicht angezeigt. Konnten die "
+"importierten Buchungen bereits vorhandenen Buchungen zugeordnet werden, wird "
+"ein helles Grün als Hintergrundfarbe verwendet."
+
+#. Tag: para
+#: details-impexp.docbook:672
+#, no-c-format
+msgid ""
+"The next step is to verify the imported data and accept it. This is a "
+"general process and also applies to imports from other sources. It is "
+"outlined in a separate section of this document."
+msgstr ""
+"Als nächstes müssen die importierten Daten überprüft und übernommen werden. "
+"Dieser Schritt muss immer ausgeführt werden, auch beim Import aus anderen "
+"Quellen. Informationen dazu finden Sie in einem extra Abschnitt dieses "
+"Handbuchs."
+
+#. Tag: para
+#: details-impexp.docbook:679
+#, no-c-format
+msgid ""
+"The colors used to mark imported and matched transactions are customizable "
+"and may be different in your environment."
+msgstr ""
+"Die Farben für importierte und zugeordnete Buchungen können angepasst werden "
+"und weichen bei Ihnen möglicherweise ab."
+
+#. Tag: title
+#: details-impexp.docbook:730
+#, no-c-format
+msgid "Setting up a QIF profile"
+msgstr "Einrichtung eines QIF-Profils"
+
+#. Tag: para
+#: details-impexp.docbook:732
+#, no-c-format
+msgid ""
+"Because there is no universally standard format for a QIF file, different "
+"vendors have taken liberties with the format, and introduced their own "
+"nuances. The QIF Profile allows &kappname; to know about the peculiarities "
+"of your file. To edit an existing QIF Profile, or to create a new one, press "
+"the <guibutton>New</guibutton> button on the QIF Import dialog, near the "
+"profile selector."
+msgstr ""
+"Da es kein allgemeines Standardformat für eine QIF-Datei gibt, haben mehrere "
+"Softwareanbieter das Format verändert und eigenen Versionen benutzt. Mit "
+"einem QIF-Profil können Sie &kappname; angeben, wie die Ihre veränderte "
+"Datei verarbeitet werden soll. Um ein vorhandenes QIF-Profil zu bearbeiten "
+"oder ein neues Profil zu erstellen, wählen Sie den Knopf <guibutton>Neu</"
+"guibutton> im QIF-Importdialog neben der Profilauswahl."
+
+#. Tag: phrase
+#: details-impexp.docbook:747
+#, no-c-format
+msgid "QIF Profile Editor"
+msgstr "QIF-Profileditor"
+
+#. Tag: para
+#: details-impexp.docbook:754
+#, no-c-format
+msgid ""
+"Previous versions of &kappname; used to have a tab for date and amount "
+"specifications. &kappname; now determines those settings by scanning the "
+"file. If it cannot figure out all settings, it will interrogate the user "
+"during import."
+msgstr ""
+"In früheren Versionen von &kappname; wurden Karteikarten für Datum und "
+"Betrag benutzt. Jetzt bestimmt &kappname; diese Einstellungen beim Einlesen "
+"der Datei. Werden nicht alle Einstellungen erkannt, dann werden die "
+"fehlenden Informationen beim Import abgefragt."
+
+#. Tag: title
+#: details-impexp.docbook:803
+#, no-c-format
+msgid "Transaction matching"
+msgstr "Buchungs-Zuordnung"
+
+#. Tag: para
+#: details-impexp.docbook:805
+#, no-c-format
+msgid ""
+"As noted previously, one of the major drawbacks of the QIF format is the "
+"lack of a unique identifier for each transaction. Thus, if you import a QIF "
+"file and some of the transactions are already in your ledger, you may get "
+"duplicates. &kappname; attempts to get around this by looking for "
+"transactions that look similar to those you already have. If it finds "
+"something that looks like the same transaction, it will match the apparent "
+"duplicate."
+msgstr ""
+"Wie bereits vorher erklärt, ist die fehlende einzigartige Kennung jeder "
+"Buchung eines der Hauptprobleme des QIF-Formats. Daher können beim Import "
+"von QIF-Dateien doppelte Buchungen auftreten, wenn Sie bereits einige "
+"Buchungen in Ihrem Kontenbuch vorhanden sind. &kappname; versucht, beim "
+"Import Buchungen ähnlich bereits vorhanden zu erkennen. Werden anscheinend "
+"gleiche Buchungen festgestellt, dann werden sie als möglicherweise doppelte "
+"Buchungen markiert."
+
+#. Tag: para
+#: details-impexp.docbook:815
+#, no-c-format
+msgid ""
+"This can be a problem if you have transactions that look too similar but are "
+"actually different. In this case, you can unmatch those transactions later "
+"in the ledger view."
+msgstr ""
+"Das ist ein Problem bei ähnlichen aussehenden Buchungen, die aber "
+"tatsächlich verschieden sind. In diesen Fällen können Sie diese Buchungen "
+"später im Kontenbuch wieder trennen."
+
+#. Tag: title
+#: details-impexp.docbook:823
+#, no-c-format
+msgid "Writing an import filter"
+msgstr "Entwicklung eines Importfilters"
+
+#. Tag: para
+#: details-impexp.docbook:825
+#, no-c-format
+msgid ""
+"Sometimes you may have data in a custom format, like comma-separated-values "
+"(CSV) or something else unique to your situation. As of version 4.6, "
+"&kappname; includes a CSV Importer Plugin, but you can still import other "
+"types of files into &kappname; using a QIF Import Filter. A filter is a "
+"custom program you write which takes your special file as input, and "
+"produces a QIF file as output. This can be a shell script, a perl script, a "
+"compiled program written in C/C++, or anything else you can dream of, as "
+"long as the system can run it."
+msgstr ""
+"Möglicherweise liegen Ihre Daten in einem benutzerdefinierten Format vor, "
+"wie zum Beispiel als durch Komma getrennte Werte (CSV) oder anderen "
+"Formaten. Ab Version 4.6 enthält &kappname; ein CSV-Importmodul. Sie können "
+"aber auch andere Datenformate mit dem QIF-Importfilter in &kappname; "
+"importieren. Ein Filter ist ein selbst geschriebenes Programm, das die "
+"Importdatei als Eingabe liest und eine QIF-Datei als Ausgabe schreibt. Der "
+"Filter kann ein Bash-Skript, ein Perl-Skript oder ein kompiliertes in C/C++ "
+"geschriebenes Programm sein."
+
+#. Tag: para
+#: details-impexp.docbook:836
+#, no-c-format
+msgid ""
+"To use it, edit your favorite QIF Profile, and select the Filter tab. Enter "
+"the location of your filter program where prompted. Then, whenever you do a "
+"QIF import using this profile, the file you select for importing will be run "
+"through your filter first."
+msgstr ""
+"Um einen eigenen Importfilter einzusetzen, bearbeiten Sie Ihr bevorzugtes "
+"QIF-Profil und gehen zur Karteikarte „Filter“. Geben Sie dort den "
+"Speicherort des Filterprogramms ein. Wenn Sie dann eine QIF-Datei mit diesem "
+"Profil importieren, werden die Daten zuerst vom angegebenem Filterprogramm "
+"bearbeitet."
+
+#. Tag: para
+#: details-impexp.docbook:843
+#, no-c-format
+msgid ""
+"A common problem is to convert a list of comma-separated-values into a QIF "
+"file. This is a textbook case for the awk tool. Create a script called "
+"csv2qif.awk, with the following two lines as contents:"
+msgstr ""
+"Ein häufiges Problem ist die Umwandlung einer Liste von durch Kommata "
+"getrennten Werten in das QIF-Format. Dies ist ein typischer Anwendungsfall "
+"für das Programm „awk“. Erstellen Sie ein Skript mit den Namen csv2qif.awk "
+"und fügen Sie folgende Zeilen ein:"
+
+#. Tag: programlisting
+#: details-impexp.docbook:849
+#, no-c-format
+msgid ""
+"BEGIN { FS=&quot;,&quot;; print &quot;!Type:Bank&quot; }\n"
+"\n"
+"        { print &quot;D&quot;$1; print &quot;T&quot;$2; print &quot;N&quot;"
+"$3; print &quot;P&quot;$4; print &quot;M&quot;$5; print &quot;^&quot; }"
+msgstr ""
+"BEGIN { FS=&quot;,&quot;; print &quot;!Type:Bank&quot; }\n"
+"\n"
+"        { print &quot;D&quot;$1; print &quot;T&quot;$2; print &quot;N&quot;"
+"$3; print &quot;P&quot;$4; print &quot;M&quot;$5; print &quot;^&quot; }"
+
+#. Tag: para
+#: details-impexp.docbook:851
+#, no-c-format
+msgid ""
+"Then, change the QIF keys (D,T,N,P,M) to match the order of your csv data. "
+"Set the input filter to <userinput>awk -f csv2qif.awk</userinput>."
+msgstr ""
+"Ändern Sie dann die QIF-Schlüssel (D,T,N,P,M) passend zur Reihenfolge der "
+"CSV-Daten. Stellen Sie als Eingabefilter <userinput>awk -f csv2qif.awk</"
+"userinput> ein."
+
+#. Tag: para
+#: details-impexp.docbook:856
+#, no-c-format
+msgid ""
+"Another problem sometimes arises in the encoding of QIF files. &kappname; "
+"expects files to be UTF8 encoded. If your file is encoded in something else, "
+"it can be useful to convert it to UTF8. For example to convert it from "
+"iso-8859-1, you would set the input filter to <userinput>recode iso-8859-1.."
+"utf-8</userinput>."
+msgstr ""
+"Ein anderes Problem tritt manchmal mit der Zeichenkodierung von QIF-Dateien "
+"auf. &kappname; nimmt an, dass Dateien im Format UTF8 kodiert sind. Haben "
+"Sie eine QIF-Datei in einem abweichenden Format, sollten Sie die Kodierung "
+"in UTF8 ändern. Um zum Beispiel eine Datei im Format iso-8859-1 zu "
+"importieren, setzen Sie den Eingabefilter auf <userinput>recode iso-8859-1.."
+"utf-8</userinput>."
+
+#. Tag: title
+#: details-impexp.docbook:866
+#, no-c-format
+msgid "Special &kappname; QIF extensions"
+msgstr "Besondere &kappname;-Erweiterungen für das QIF-Format"
+
+#. Tag: para
+#: details-impexp.docbook:868
+#, no-c-format
+msgid ""
+"As already mentioned, one of the major drawbacks of the QIF format is the "
+"lack of a unique identifier for each transaction. If you are writing your "
+"own QIF file creator (or filter, as described above), you can overcome this "
+"problem. &kappname; supports the '#' field. The importer will interpret this "
+"as a unique transaction ID, and disregard the record if the transaction is "
+"already in the system."
+msgstr ""
+"Wie bereits vorher erwähnt, ist die fehlende einzigartige Kennung jeder "
+"Buchung eines der Hauptprobleme des QIF-Formats. Schreiben Sie Ihr eigenes "
+"Programm oder Filter für das QIF-Format, können Sie diese Problem umgehen, "
+"indem Sie das Feld „#“ von &kappname; benutzen. Das Importmodul "
+"interpretiert dies als eindeutige Buchungskennung und übergeht den "
+"Datensatz, wenn die Buchung bereits im System vorhanden ist."
+
+#. Tag: title
+#: details-impexp.docbook:880
+#, no-c-format
+msgid "QIF Exporter"
+msgstr "QIF-Export"
+
+#. Tag: para
+#: details-impexp.docbook:881
+#, no-c-format
+msgid ""
+"To export one of your accounts to a QIF file, choose the "
+"<menuchoice><guimenuitem>Export</guimenuitem> <guimenuitem>QIF</"
+"guimenuitem></menuchoice> from the <guimenu>File</guimenu> menu. You will be "
+"prompted for which single account to export, what file to export it to, and "
+"what QIF Profile to use."
+msgstr ""
+"Um ein Konto in eine QIF-Datei zu exportieren, wählen Sie "
+"<menuchoice><guimenuitem>Exportieren</guimenuitem> <guimenuitem>QIF ...</"
+"guimenuitem></menuchoice> aus dem Menü <guimenu>Datei</guimenu>. Im Dialog "
+"müssen Sie dann das Konto für den Export, eine Ausgabedatei und das zu "
+"verwendende QIF-Profil angeben."
+
+#. Tag: para
+#: details-impexp.docbook:888
+#, no-c-format
+msgid "At the moment, QIF Exporter does not handle export of investments."
+msgstr ""
+"Zur Zeit können noch keine Investitionen mit dem QIF-Modul exportiert werden."
+
+#. Tag: phrase
+#: details-impexp.docbook:899
+#, no-c-format
+msgid "QIF Export"
+msgstr "QIF-Export"
+
+#. Tag: title
+#: details-impexp.docbook:911
+#, no-c-format
+msgid "OFX Importer Plugin"
+msgstr "OFX-Importmodul"
+
+#. Tag: title
+#: details-impexp.docbook:914
+#, no-c-format
+msgid "Getting the plugin"
+msgstr "Installation des Moduls"
+
+#. Tag: para
+#: details-impexp.docbook:916
+#, no-c-format
+msgid ""
+"&kappname; will import OFX files painlessly. However, this functionality is "
+"not built into the core program. You must obtain and install the OFX "
+"Importer Plugin. Once that is installed, the command to import OFX files "
+"will automatically show up under the <menuchoice><guimenu>File</guimenu> "
+"<guimenuitem>Import</guimenuitem></menuchoice> menu."
+msgstr ""
+"&kappname; importiert QFX-Dateien ohne Probleme. diese Funktion ist aber "
+"nicht im eigentlichen Programm enthalten. Sie müssen das QFX-Importmodul "
+"besorgen und installieren. Dann ist diese Aktion automatisch im Menü "
+"<menuchoice><guimenu>Datei</guimenu> <guimenuitem>Importieren</guimenuitem></"
+"menuchoice> verfügbar."
+
+#. Tag: para
+#: details-impexp.docbook:924
+#, no-c-format
+msgid ""
+"Note that many prepackaged versions of &kappname; were built with the OFX "
+"importer already included or available as a separate package. If the OFX "
+"importer does not seem to be installed in your version, the first place to "
+"check is in the same place you got your base &kappname; package."
+msgstr ""
+"Es gibt fertige Pakete für &kappname;. die bereits das OFX-Modul enthalten "
+"oder als getrenntes Paket bereitstellen. Ist das OFX-Importmodul anscheinend "
+"nicht auf Ihren System installiert, sollten Sie zuerst überprüfen, ob es in "
+"der Paketquelle Ihres &kappname;-Programms erhältlich ist."
+
+#. Tag: para
+#: details-impexp.docbook:931
+#, no-c-format
+msgid ""
+"If you have installed from RPM, the OFX Importer Plugin is contained within "
+"the kmymoney-ofx RPM. It should be available from whatever source you got "
+"the base &kappname; RPM. If you have built from sources, all you need to do "
+"is have preferably the libOFX 0.9 development headers and libraries "
+"installed on your system. The &kappname; build process will detect these and "
+"compile the plugin. At the time of release of &kappname; 4.6, the latest "
+"libofx version was 0.9.4, which is also the minimum required version."
+msgstr ""
+"Haben Sie das Programm aus RPM-Paketen installiert, dann ist das OFX-"
+"Importmodul im RPM-Paket kmymoney-ofx enthalten. Dieses Paket finden Sie im "
+"Archiv, aus dem Sie das Programm &kappname; installiert haben. Installieren "
+"Sie &kappname; aus den Quelltexten, dann muss die Entwicklerversion der "
+"Bibliothek libOFX Version 0.9 auf Ihrem System installiert sein. Beim "
+"Kompilieren von &kappname; werden dann diese Bibliotheken gefunden und das "
+"Modul erstellt. Mit der Version 4.6 von &kappname; ist mindestens die "
+"Version 0.9.4 der Bibliothek libofx erforderlich."
+
+#. Tag: para
+#: details-impexp.docbook:941
+#, no-c-format
+msgid ""
+"Should you run into trouble trying to compile &kappname;, and you are "
+"certain you have the correct version of libOFX installed, please contact the "
+"developers list &devlist; for assistance. Include a copy of your config.log "
+"file, compressed first via gzip."
+msgstr ""
+"Haben Sie Probleme beim Kompilieren von &kappname;, aber die richtige "
+"Version der Bibliothek libOFX ist installiert, bitten Sie auf der "
+"Entwicklerliste &devlist; um Hilfe. Fügen Sie der E-Mail eine Kopie Ihrer "
+"Protokolldatei der Kompilierung als komprimierte GZip-Datei hinzu."
+
+#. Tag: title
+#: details-impexp.docbook:950
+#, no-c-format
+msgid "What is OFX"
+msgstr "Was ist OFX?"
+
+#. Tag: para
+#: details-impexp.docbook:952
+#, no-c-format
+msgid ""
+"OFX stands for <quote>Open Financial Exchange</quote>. According to the "
+"<ulink url=\"http://www.ofx.net/\">OFX web site</ulink> <quote>Open "
+"Financial Exchange (OFX) is a unified specification for the electronic "
+"exchange of financial data between financial institutions, businesses and "
+"consumers via the Internet. OFX is not a financial institution.</quote> The "
+"specification defines formats for transfer of financial data both by file "
+"and by direct interchange."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:962
+#, no-c-format
+msgid ""
+"Although the standard is much more complete and robust than QIF, there are "
+"still variations, depending on the specific implementation used by any "
+"institution. OFX files may have an extension of <quote>OFX</quote> or "
+"<quote>QFX</quote> (upper or lower case); this does not imply any particular "
+"difference in the content. The specification is based on XML, so the files "
+"can be read in any text editor, but as whitespace is not relevant to the "
+"content itself, some implementations do not use any, making it very hard for "
+"a human to read."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:973
+#, no-c-format
+msgid ""
+"Another site with good information is <ulink url=\"http:/ofxhome.com/\">OFX "
+"Home</ulink>. They maintain a directory of financial institutions that "
+"support OFX. This can be useful if you have problems setting up <link "
+"linkend=\"details.impexp.ofxdirectconnect\">OFX direct connect.</link> They "
+"also have a forum for discussions about OFX issues."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:983
+#, no-c-format
+msgid "Importing an OFX file"
+msgstr "Import einer OFX-Datei"
+
+#. Tag: para
+#: details-impexp.docbook:985
+#, no-c-format
+msgid ""
+"The most basic way to import an OFX file is to choose the importer from the "
+"menu bar. From the <guimenu>File</guimenu> menu, choose <guimenuitem>Import</"
+"guimenuitem>, and then <guimenuitem>OFX...</guimenuitem>. If OFX does not "
+"show up under Import, you do not have the OFX Importer Plugin installed "
+"correctly. Please see the previous section."
+msgstr ""
+"Um eine OFX-Datei zu importieren,wählen Sie das Importmodul aus der "
+"Menüleiste <menuchoice><guimenu>Datei</guimenu> <guisubmenu>Importieren</"
+"guisubmenu><guimenuitem>OFX ...</guimenuitem></menuchoice>. Wird der "
+"Menüeintrag <guimenuitem>OFX ...</guimenuitem> nicht angezeigt, ist kein OFX-"
+"Importmodul installiert. Im vorherigen Abschnitt finden Sie Hinweise zur "
+"Installation des OFX-Importmoduls."
+
+#. Tag: para
+#: details-impexp.docbook:994
+#, no-c-format
+msgid ""
+"The first thing the importer will do is ask you into which account to import "
+"the transactions. If there are transactions from multiple accounts in your "
+"file, you will be asked this question multiple times."
+msgstr ""
+"Zuerst müssen Sie im Importmodul das Konto für den Import der Buchungen "
+"angeben. Enthält die Datei Buchungen aus mehreren Konten, muss diese Angabe "
+"auch mehrfach erfolgen."
+
+#. Tag: para
+#: details-impexp.docbook:1000
+#, no-c-format
+msgid ""
+"After importing, some of your transactions may be shown with an exclamation "
+"mark on a yellow triangle in the ledger. This is because they need to be "
+"assigned a category. The importer was not able to automatically assign a "
+"category based on your past transaction history. You can edit each "
+"transaction in the ledger to assign a category, and the mark will be removed."
+msgstr ""
+"Nach dem Import werden möglicherweise einige Buchungen mit einen "
+"Ausrufungszeichen in einem gelben Dreieck im Kontenbuch angezeigt. Die "
+"Ursache dafür liegt darin, dass diese Buchungen einer Kategorie zugeordnet "
+"werden müssen. Das Importmodul konnte keine passende Kategorie auf der Basis "
+"der vorherigen Buchungen ermitteln. Sie können jede Buchung im Kontenbuch "
+"bearbeiten und ihr eine Kategorie zuweisen, dann wird diese Markierung "
+"entfernt."
+
+#. Tag: para
+#: details-impexp.docbook:1008
+#, no-c-format
+msgid ""
+"Please note that this section describes the <quote>native</quote> OFX "
+"importer. OFX files may also be imported using the AqBanking Importer Plugin "
+"if you have installed that. Note that the two importers do behave slightly "
+"differently, and they are written and supported by two different developers."
+msgstr ""
+"Bitte beachten Sie, dass in diesem Abschnitt das in &kappname; "
+"<quote>eingebaute</quote> OFX-Importmodul beschrieben wird. OFX-Dateien "
+"können auch mit dem AqBanking-Importmodul importiert werden, wenn es auf "
+"Ihren System installiert ist. Beide Module verhalten sich unterschiedlich, "
+"sie wurden von verschiedenen Entwicklern geschrieben."
+
+#. Tag: title
+#: details-impexp.docbook:1017
+#, no-c-format
+msgid "Importing Investments"
+msgstr "Import von Investitionen"
+
+#. Tag: para
+#: details-impexp.docbook:1019
+#, no-c-format
+msgid ""
+"Please note that if you are importing a file with investment transactions, "
+"those investments must first exist in your &kappname; file. The trading "
+"symbol is used to match, so please ensure that the symbol in &kappname; is "
+"exactly the same as the one in the file you're importing."
+msgstr ""
+"Denken Sie daran, dass beim Import von Investitionsbuchungen Konten für "
+"diese Investitionen bereits in Ihrer &kappname;-Datei vorhanden sein müssen. "
+"Das Handelssymbol wird für die Zuordnung der Buchungen verwendet. Überprüfen "
+"Sie daher, ob das in &kappname; verwendete Symbol mit dem Symbol in der "
+"Importdatei übereinstimmt."
+
+#. Tag: title
+#: details-impexp.docbook:1028
+#, no-c-format
+msgid "Web Connect"
+msgstr "Verbindung zum Internet"
+
+#. Tag: para
+#: details-impexp.docbook:1030
+#, no-c-format
+msgid ""
+"The easiest way to import an OFX file is to set up Web Connect. Visit your "
+"bank's web site, and click on a link to download an OFX file. Your browser "
+"should ask you what program you would like to use to open the file. Point "
+"your browser to &kappname;. It will then import the downloaded OFX file into "
+"the &kappname; file you most recently had open. You can also change the file "
+"associations of your desktop environment, and have &kappname; open the OFX "
+"file automatically for you."
+msgstr ""
+"Am einfachsten ist der Import einer QFX-Datei über eine Internetverbindung. "
+"Gehen Sie zur Webseite Ihrer Bank und klicken Sie auf eine Verknüpfung zum "
+"Herunterladen einer QFX-Datei. In Ihrem Browser sollte die Abfrage "
+"erscheinen, mit welchem Programm Sie heruntergeladene Datei öffnen möchten. "
+"Geben Sie dafür das Programm &kappname; an. Die heruntergeladene QFX-Datei "
+"wird in die letzte mit &kappname; geöffnete Datei importiert. Sie können "
+"auch die Dateizuordnung Ihrer Arbeitsumgebung ändern und hier &kappname; "
+"angeben. Dann werden OFX-Dateien automatisch ohne Nachfrage in &kappname; "
+"geöffnet."
+
+#. Tag: para
+#: details-impexp.docbook:1040
+#, no-c-format
+msgid ""
+"If you need to import the OFX file into some other &kappname; file, load up "
+"that file in &kappname; first, and then visit your bank's web site."
+msgstr ""
+"Möchten Sie die QFX-Datei in eine &kappname;-Datei importieren, laden Sie "
+"zuerst diese Datei in &kappname; und gehen Sie dann zur Webseite Ihrer Bank."
+
+#. Tag: title
+#: details-impexp.docbook:1047
+#, no-c-format
+msgid "Direct Connect"
+msgstr "Direktverbindung"
+
+#. Tag: para
+#: details-impexp.docbook:1049
+#, no-c-format
+msgid ""
+"OFX Direct Connect is now supported in &kappname;. This gives you the "
+"ability to contact your bank directly to obtain statements. In the future, "
+"there will be more help written, and this will be moved to its own section."
+msgstr ""
+"Die OFX-Direktverbindung ist jetzt in &kappname; verfügbar. Damit haben Sie "
+"die Möglichkeit, Verbindung mit Ihrer Bank aufzunehmen und Kontoauszüge "
+"abzurufen. In den nächsten Versionen des Handbuchs finden Sie zu diesem "
+"Thema mehr Informationen in einem eigenen Kapitel."
+
+#. Tag: para
+#: details-impexp.docbook:1055
+#, no-c-format
+msgid ""
+"To enable this feature, you must compile &kappname; with the --enable-"
+"ofxbanking switch (now the default)."
+msgstr ""
+"Um diese Funktion nutzen zu können, muss &kappname; mit der Option --enable-"
+"ofxbanking kompiliert werden, das ist die Standardeinstellung."
+
+#. Tag: para
+#: details-impexp.docbook:1060
+#, no-c-format
+msgid ""
+"Please be warned: Many banks require a separate signup, will give you a "
+"separate password or PIN, and may even charge you a separate fee for this "
+"service. No bank directly supports &kappname;. You will have to tell them "
+"you want to bank directly from MS Money or Quicken."
+msgstr ""
+"Hinweis: Manche Banken verlangen eine getrennte Anmeldung, ein eigenes "
+"Passwort oder PIN und berechnen Ihnen möglicherweise eine zusätzliche Gebühr "
+"für diesen Dienst. Keine Bank unterstützt &kappname;, Sie müssen angeben, "
+"dass Sie die Programme MS Money oder Quicken verwenden."
+
+#. Tag: para
+#: details-impexp.docbook:1067
+#, no-c-format
+msgid ""
+"The first step is to configure each account for which you wish to download "
+"statements. Go to the Accounts view, right click on the account you wish to "
+"configure, and choose <guimenuitem>Map to online account...</guimenuitem>. "
+"In case more than one online banking plugin is installed on your system you "
+"will be asked which one to use. For the internal OFX method select "
+"<guimenuitem>KMyMoney OFX</guimenuitem>. A list of banks will be downloaded "
+"from the Internet and a wizard will guide you through choosing a bank, "
+"entering your username and password, and selecting an account. Should you "
+"find that your bank is not listed, then it may still be possible to use the "
+"manual option. Your bank may be able to provide the required parameters, or "
+"you may have to do some research to find them."
+msgstr ""
+"Zuerst muss jedes Konto, für das Sie Auszüge herunterladen möchten, dafür "
+"eingerichtet werden. Hegen Sie zur Ansicht <guilabel>Konten</guilabel>, "
+"klicken Sie mit der &RMBn; auf ein Konto und wählen im Kontextmenü "
+"<guimenuitem>Einem Onlinekonto zuordnen</guimenuitem>. Haben Sie mehrere "
+"Module für Online-Banking installiert, müssen Sie das gewünschte Modul "
+"angeben, zum Beispiel <guimenuitem>KMyMoney OFX</guimenuitem> für die "
+"interne OFX-Methode. Dann wird eine Liste von Banken aus dem Internet "
+"heruntergeladen. Ein Assistent unterstützt Sie bei der Auswahl der Bank und "
+"des Kontos sowie bei der Eingabe von Benutzername und Passwort. Ist Ihre "
+"Bank in der heruntergeladenen Liste nicht enthalten, fragen Sie Ihre Bank "
+"nach den erforderlichen Daten und nutzen die manuelle Eingabe."
+
+#. Tag: para
+#: details-impexp.docbook:1082
+#, no-c-format
+msgid ""
+"Setting up OFX Direct Connect can sometimes be a challenge, especially as "
+"the implementation at most institutions do not provide sufficient details in "
+"error messages. One particular issue to note is that many institutions "
+"require you to change your password the first time you access it online "
+"using this method. Unfortunately, at this time, the library that &kappname; "
+"uses (libofx) does not have a way to interactively change a password. In "
+"some cases, it is possible to get a techincal support person at the "
+"institution to change the password for you. Until we are able to expand this "
+"section with more detailed troubleshooting information, if you have trouble "
+"getting this to work for you, you can ask for help on the &kappname; "
+"developer list &devlist;."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:1097
+#, no-c-format
+msgid ""
+"Once you have an account set up with online banking, go to the ledger for "
+"that account. Then from the <guimenu>Account</guimenu> menu, choose "
+"<guimenuitem>Update account...</guimenuitem>. This will connect to your "
+"bank, and download a statement for the last 60 days."
+msgstr ""
+"Haben Sie ein Konto mit Online-Banking eingerichtet, wechseln Sie zur "
+"Kontenbuchansicht für diese Konto. Wählen Sie dann aus dem Menü "
+"<menuchoice><guimenu>Konto</guimenu><guimenuitem>Konto aktualisieren ...</"
+"guimenuitem></menuchoice>. Dann wird die Verbiegung zur Bank hergestellt und "
+"die Kontoauszüge der letzten 60 Tage werden heruntergeladen."
+
+#. Tag: para
+#: details-impexp.docbook:1105
+#, no-c-format
+msgid ""
+"In version of &kappname; prior to 4.6, the payee name was always taken from "
+"the PAYEEID field. As of version 4.6, the payee name can be based on either "
+"the PAYEEID, NAME, or MEMO field in the OFX transaction. You can configure "
+"this feature and some other OFX direct connect settings by selecting the "
+"appropriate tab in the <link linkend=\"details.accounts.edit\">Edit account</"
+"link> dialog."
+msgstr ""
+"In Versionen von &kappname; vor 4.6 wurde der Name des Zahlungsempfänger "
+"immer aus dem Feld PAYEEID genommen. Ab Version 4.6 kann der Name des "
+"Zahlungsempfängers aus dem Feld PAYEEID, NAME, oder MEMO der OFX-Buchung "
+"verwendet werden. Die Auswahl des zu verwendenden Feldes und weitere "
+"Einstellungen zur OFX-Direktverbindung können Sie im Dialog <link linkend="
+"\"details.accounts.edit\">Konto bearbeiten</link> auf der Karteikarte "
+"<guilabel>Online-Einstellungen</guilabel> ändern."
+
+#. Tag: title
+#: details-impexp.docbook:1117
+#, no-c-format
+msgid "Exporting an OFX file"
+msgstr "Export einer OFX-Datei"
+
+#. Tag: para
+#: details-impexp.docbook:1119
+#, no-c-format
+msgid ""
+"It is not possible to export your data as an OFX file currently. If you are "
+"interested to contribute in this area, please contact the libofx development "
+"team for details."
+msgstr ""
+"Zur Zeit ist es nicht möglich, Ihre Finanzdaten im QFX-Format zu "
+"exportieren. Wenn Sie mithelfen möchten, diese Funktion mit zu entwickeln, "
+"nehmen Sie Kontakt mit den Libofx-Entwicklern auf."
+
+#. Tag: chapter
+#: details-impexp.docbook:1125
+#, no-c-format
+msgid "&details-impexp-csv;"
+msgstr "&details-impexp-csv;"
+
+#. Tag: title
+#: details-impexp.docbook:1133
+#, no-c-format
+msgid "Writing Importer Plugins"
+msgstr "Entwicklung von Importmodulen"
+
+#. Tag: para
+#: details-impexp.docbook:1135
+#, no-c-format
+msgid ""
+"&kappname; contains explicit support for importer plugins. If you have a "
+"custom format, and you would like to write an importer plugin, we would "
+"value your contribution. To do so, you'll need to compile the program from "
+"source. Then use the OFX Importer Plugin as an example."
+msgstr ""
+"&kappname; enthält eine Schnittstelle, um Importmodule einzubinden. Benutzen "
+"Sie eine benutzerdefiniertes Format und Sie möchten ein Importmodul dafür "
+"schreiben, dann nehmen es die Entwickler gern in &kappname; auf. Zur "
+"Entwicklung des Moduls müssen Sie das Programm aus dem Quelltext "
+"kompilieren. Nehmen Sie das OFX-Importmodul als Vorlage für die Entwicklung."
+
+#~ msgid "&Allan.Anderson; &Allan.Anderson.mail;"
+#~ msgstr "&Allan.Anderson; &Allan.Anderson.mail;"
+
+#~ msgid "CSV Importer Plugin"
+#~ msgstr "CSV-Importmodul"
+
+#~ msgid "Reasons for importing CSV Files"
+#~ msgstr "Gründe für den Import von CSV-Dateien"
+
+#~ msgid ""
+#~ "In general, it is preferable to import OFX. However, not all institutions "
+#~ "provide data in that format. CSV (comma separated value) files are almost "
+#~ "always available (sometimes described as Excel or spreadsheet.) Also, "
+#~ "they can often be created fairly easily by capturing the data you want to "
+#~ "import, such as in a text file, and manually editing it."
+#~ msgstr ""
+#~ "Normalerweise ist der OFX-Import zu bevorzugen. Leider liefern nicht alle "
+#~ "Banken die Daten in diesem Format. CSV-Dateien (durch Komma getrennte "
+#~ "Werte) sind immer verfügbar, manchmal wird dieses Format Excel oder "
+#~ "Tabellenkalkulation genannt. Außerdem dann dieses Format einfach durch "
+#~ "Aufnehmen der Daten, die Sie importieren möchten, und manuelles "
+#~ "Bearbeiten erstellt werden."
+
+#~ msgid ""
+#~ "The primary focus of the plugin is on importing data from bank "
+#~ "statements, but there is also a capability to import some investment "
+#~ "statements. In addition, it retains its initial ability to produce QIF "
+#~ "files from CSV."
+#~ msgstr ""
+#~ "Die wichtigste Anwendung des Moduls ist der Import von Kontoauszügen "
+#~ "einer Bank, es können aber auch einige Kontoauszüge von Investitionen "
+#~ "importiert werden. Zusätzlich können Sie mit diesem Modul CSV-Daten in "
+#~ "das QIF-Format umwandeln."
+
+#~ msgid ""
+#~ "&kappname; will import CSV (comma separated values) files. However, this "
+#~ "functionality is not built into the core program, although the source is "
+#~ "now provided as part of the &kappname; tarball, which needs to be "
+#~ "installed. Once that is done, the command to import CSV files will "
+#~ "automatically show up under the <menuchoice><guimenu>File</"
+#~ "guimenu><guimenuitem>Import</guimenuitem></menuchoice> menu."
+#~ msgstr ""
+#~ "&kappname; kann CSV-Dateien mit durch Komma getrennten Werten "
+#~ "importieren. Diese Funktion ist jedoch nicht im Kernprogramm enthalten, "
+#~ "der Quelltext dieses Importmoduls ist jetzt im Quelltextarchiv (Tarball) "
+#~ "von &kappname;. Dieses Importmodul muss installiert werden, dann ist "
+#~ "diese Aktion automatisch im Menü <menuchoice><guimenu>Datei</guimenu> "
+#~ "<guimenuitem>Importieren</guimenuitem></menuchoice> verfügbar."
+
+#~ msgid ""
+#~ "The CSV importer plugin is much newer than the OFX plugin, so it may take "
+#~ "some time until many prepackaged versions of &kappname; are built with "
+#~ "the CSV importer already included or available as a separate package. "
+#~ "Ensure that it is enabled within &kappname;. Check the "
+#~ "<menuchoice><guimenu>Settings</guimenu><guimenuitem>Configure KMyMoney</"
+#~ "guimenuitem><guimenuitem>Plugins</guimenuitem></menuchoice> menu. If the "
+#~ "CSV importer does not seem to be installed in your version, the first "
+#~ "place to check is in the same place you got your base &kappname; package."
+#~ msgstr ""
+#~ "Das CSV-Importmodul ist neuer als das OFX-Modul, daher kann es einige "
+#~ "Zeit dauern, bis Pakete von &kappname; für Ihre Distribution mit dem CSV-"
+#~ "Importmodul oder mit dem CSV-Importmodul als eigenes Paket zu Verfügung "
+#~ "stehen. Um zu überprüfen, ob Ihre Version von &kappname; dieses Modul "
+#~ "bereits enthält, öffnen Sie die Seite <menuchoice><guimenu>Einstellungen</"
+#~ "guimenu><guimenuitem>&kappname; einrichten ...</"
+#~ "guimenuitem><guimenuitem>Erweiterungen</guimenuitem></menuchoice>. Fehlt "
+#~ "hier das CSV-Importmodul, sollten Sie als erstes in der Bezugsquelle des "
+#~ "&kappname;-Pakets nach diesem Modul suchen."
+
+#~ msgid ""
+#~ "If you have installed from RPM, the CSV Importer Plugin may be contained "
+#~ "within the kmymoney-csv RPM. It should be available from whatever source "
+#~ "you got the base &kappname; RPM. If you have built from sources, there "
+#~ "should be no additional requirements. The &kappname; build process should "
+#~ "detect the plugin source and compile the plugin."
+#~ msgstr ""
+#~ "Haben Sie das Programm aus RPM-Paketen installiert, dann ist das CSV-"
+#~ "Importmodul im RPM-Paket kmymoney-csv enthalten. Dieses Paket finden Sie "
+#~ "im Archiv, aus dem Sie das Programm &kappname; installiert haben. "
+#~ "Installieren Sie &kappname; aus den Quelltexten, dann gibt es keine "
+#~ "zusätzlichen Anforderungen. Beim Kompilieren von &kappname; werden dann "
+#~ "die Quelltexte des Moduls gefunden und das Modul erstellt."
+
+#~ msgid ""
+#~ "Should you run into trouble trying to compile &kappname;, and you are "
+#~ "certain you have the plugin source available, please contact the "
+#~ "developers list &devlist; for assistance. Include a copy of your config."
+#~ "log file, compressed first via gzip."
+#~ msgstr ""
+#~ "Haben Sie Probleme beim Kompilieren von &kappname;, aber der Quelltext "
+#~ "des Moduls ist vorhanden, bitten Sie auf der Entwicklerliste &devlist; um "
+#~ "Hilfe. Fügen Sie der E-Mail eine Kopie Ihrer Protokolldatei der "
+#~ "Kompilierung als komprimierte GZip-Datei hinzu."
+
+#~ msgid "Importing a CSV file"
+#~ msgstr "Import einer CSV-Datei"
+
+#~ msgid ""
+#~ "To import a CSV file, choose the importer from the menu bar: "
+#~ "<menuchoice><guimenu>File</guimenu><guimenuitem>Import</"
+#~ "guimenuitem><guimenuitem>CSV...</guimenuitem></menuchoice>. If CSV does "
+#~ "not show up under Import, you do not have the CSV Importer Plugin "
+#~ "installed correctly. Please see the previous section."
+#~ msgstr ""
+#~ "Um eine CSV-Datei zu importieren, wählen Sie aus dem Menü "
+#~ "<menuchoice><guimenu>Datei</guimenu><guimenuitem>Importieren</"
+#~ "guimenuitem><guimenuitem>CSV ...</guimenuitem></menuchoice>. Ist dieser "
+#~ "Menüeintrag bei Ihnen nicht vorhanden, ist das Modul nicht  installiert. "
+#~ "Im vorherigen Abschnitt finden Sie Hinweise zur Installation des CSV-"
+#~ "Importmoduls."
+
+#~ msgid "The CSV Importer window has three main sections."
+#~ msgstr "Das Fenster für den CSV-Import besteht aus drei Bereichen."
+
+#~ msgid ""
+#~ "The upper left area has three tabs, Banking, Investment, and Settings. "
+#~ "Because of differences in processing banking and investment data, you "
+#~ "need to indicate which type of data you are importing before you select "
+#~ "the file. You do this by clicking on either the <guilabel>Banking</"
+#~ "guilabel> or <guilabel>Investment</guilabel> tab. The selected tab is "
+#~ "indicated by a \"*\" after the label, as a reminder in case you "
+#~ "accidentally click the wrong tab. If later you select the other tab, the "
+#~ "plugin warns you that you will lose your current settings, and gives you "
+#~ "an option to cancel the switch. All three tabs are described in more "
+#~ "detail below."
+#~ msgstr ""
+#~ "Oben links finden Sie die drei Karteikarten <guilabel>Bank</guilabel>, "
+#~ "<guilabel>Investition</guilabel> und <guilabel>Allgemein</guilabel>. "
+#~ "Bank- und Investitionsdaten werden unterschiedlich verarbeitet, daher "
+#~ "müssen Sie vor der Auswahl der Importdatei die Art der Daten angeben. "
+#~ "Dazu klicken Sie entweder auf <guilabel>Bank</guilabel> oder "
+#~ "<guilabel>Investition</guilabel>. Die gewählte Karteikarte wird durch das "
+#~ "Symbol „*“ hinter dem Namen markiert. Wechseln Sie zu einer anderen "
+#~ "Karteikarte, erscheint ein Warnhinweis, das Ihre aktuellen Einstellungen "
+#~ "verworfen werden. Sie können das Wechseln dann abbrechen. Alle drei "
+#~ "Karteikarten werden weiter unten ausführlich beschrieben."
+
+#~ msgid ""
+#~ "The lower section of the window displays the contents of the csv file "
+#~ "currently being imported."
+#~ msgstr ""
+#~ "im unteren Teil des Fensters wird der Inhalt der zu importierenden CSV-"
+#~ "Datei angezeigt."
+
+#~ msgid ""
+#~ "The upper right area contains some buttons for controlling the import "
+#~ "process."
+#~ msgstr ""
+#~ "Oben rechts befinden sich einige Knöpfe, um den Importprozess zu steuern."
+
+#~ msgid "Open File"
+#~ msgstr "Datei öffnen"
+
+#~ msgid ""
+#~ "This is used to select the file to import. As noted above, the file will "
+#~ "be imported as either banking or investment data, as indicated by which "
+#~ "tab is marked with an asterisk (\"*\")."
+#~ msgstr ""
+#~ "Mit diesem Knopf wird die Datei für den Import ausgewählt. Wie bereits "
+#~ "vorher erläutert, werden die Datei entweder als Bank- oder "
+#~ "Investitionsdaten importiert. Dies wird durch ein angehängten Stern (\"*"
+#~ "\") am Namen der Karteikarte angezeigt."
+
+#~ msgid "Import"
+#~ msgstr "Importieren"
+
+#~ msgid ""
+#~ "This tells the plugin to actually import the data from the file, based on "
+#~ "the choices you have made on the <guilabel>Banking</guilabel> or "
+#~ "<guilabel>Investment</guilabel> tab and on the <guilabel>Settings</"
+#~ "guilabel> tab, all as described below. &kappname; will prompt you for the "
+#~ "correct account into which to import the data."
+#~ msgstr ""
+#~ "Mit diesem Knopf starten Sie tatsächlich den Import der Daten aus der "
+#~ "Datei. Dabei werden die Einstellungen auf den Karteikarten "
+#~ "<guilabel>Bank</guilabel> oder <guilabel>Investition</guilabel> und auf "
+#~ "der Karteikarte <guilabel>Allgemein</guilabel> verwendet, die im nächsten "
+#~ "Abschnitt erläutert werden."
+
+#~ msgid "Save as QIF"
+#~ msgstr "Als QIF-Datei speichern"
+
+#~ msgid ""
+#~ "This button gives you the ability, after the import has been completed, "
+#~ "to save the data from the csv file as a qif file, should you require one "
+#~ "for any reason."
+#~ msgstr ""
+#~ "Nach dem Beenden des Imports können Sie mit diesem Knopf die Daten der "
+#~ "CSV-Datei im QIF-Format speichern, falls Sie die Daten in diesem Format "
+#~ "benötigen."
+
+#~ msgid "Quit"
+#~ msgstr "Beenden"
+
+#~ msgid "Closes the plugin, after saving your settings."
+#~ msgstr "Beendet das Modul, nachdem Ihre Einstellungen gespeichert wurden."
+
+#~ msgid "Clear selections"
+#~ msgstr "Auswahl löschen"
+
+#~ msgid "Clear all the columns and settings you have chosen or adjusted."
+#~ msgstr ""
+#~ "Löscht alle Spalten und Einstellungen, die ausgewählt oder geändert "
+#~ "wurden."
+
+#~ msgid ""
+#~ "Importing a CSV file is a multi-step process. Not all steps will always "
+#~ "be necessary, and the exact order of these steps depends on the specifics "
+#~ "of the data being imported."
+#~ msgstr ""
+#~ "Der Import von CSV-Dateien wird in mehreren Schritten durchgeführt. Nicht "
+#~ "immer sind alle Schritte erforderlich. Die genaue Reihenfolge dieser "
+#~ "Schritte hängt von den zu importierenden Daten ab."
+
+#~ msgid "Choose whether you are importing banking or investment data."
+#~ msgstr ""
+#~ "Wählen Sie aus. ob Sie Bank- oder Investitionsdaten importieren möchten"
+
+#~ msgid "Open the file containing the data."
+#~ msgstr "Öffnen Sie die Datei mit den Daten."
+
+#~ msgid ""
+#~ "Confirm the field delimiter, and possibly the text delimiter, and set the "
+#~ "starting and ending lines to be imported."
+#~ msgstr ""
+#~ "Passen Sie die Einstellungen für das Feldtrennzeichen und das "
+#~ "Textbegrenzungszeichen an und geben Sie die erste und letzte Zeile für "
+#~ "den Import an."
+
+#~ msgid ""
+#~ "Assign which fields or columns contain particular types of data relevant "
+#~ "to the import type."
+#~ msgstr ""
+#~ "Geben Sie an, welche Felder oder Spalten bestimmte Datentypen für den "
+#~ "Importtyp enthalten."
+
+#~ msgid "Confirm or adjust settings such as date format and decimal."
+#~ msgstr ""
+#~ "Passen Sie die Einstellungen für das Datumsformat und das Dezimalzeichen "
+#~ "an."
+
+#~ msgid "Confirm the import."
+#~ msgstr "Bestätigen Sie den Import"
+
+#~ msgid ""
+#~ "Once you have selected the <guilabel>Banking</guilabel> or "
+#~ "<guilabel>Investment</guilabel> tab, click the <guibutton>Open File</"
+#~ "guibutton> button, and select your input csv file. Before actually "
+#~ "proceeding with the import of the file, you need to give &kappname; some "
+#~ "details about the layout of the file, which differs depending on whether "
+#~ "the file contains banking or investment data. First, however, you may "
+#~ "need to adjust some settings common to both file types."
+#~ msgstr ""
+#~ "Haben Sie eine der Karteikarten <guilabel>Bank</guilabel> oder "
+#~ "<guilabel>Investition</guilabel> ausgewählt, klicken Sie auf "
+#~ "<guibutton>Datei öffnen</guibutton> und wählen Sie die CSV-Datei für den "
+#~ "Import. Ehe der Import tatsächlich beginnen kann, müssen Sie die "
+#~ "Anordnung der Datei in der Datei angeben. Diese Anordnung ist bei Bank- "
+#~ "und Investitionsdaten verschieden. Zuerst sollten Sie jedoch die "
+#~ "gemeinsamen Einstellungen für beide Dateiarten anpassen."
+
+#~ msgid "CSV Importer Plugin Settings"
+#~ msgstr "Einstellungen für das CSV-Importmodul"
+
+#~ msgid ""
+#~ "Select the Settings tab on the importer window. Here you configure a "
+#~ "number of fields that allows the plugin to correctly interpret your input "
+#~ "file. In general, this is done after you indicate whether you are "
+#~ "importing banking or investment data and you have opened the file, but "
+#~ "you may need first to correct the field delimiter if the display is "
+#~ "obviously incorrect. Then assign specific fields to columns. Note that "
+#~ "this information is saved, so you will only need to set or confirm it "
+#~ "once, unless you are importing a csv file created with different "
+#~ "settings. In addition, some of the settings may already be correct, based "
+#~ "on your current locale setting."
+#~ msgstr ""
+#~ "Wählen Sie im Importdialog die Karteikarte <guilabel>Allgemein</"
+#~ "guilabel>. Die Einstellungen hier sind für die richtige Interpretation "
+#~ "der Daten erforderlich. Normalerweise bearbeiten Sie diese Einstellungen, "
+#~ "nachdem Sie Bank- oder Investitionsdaten ausgewählt und die Datei "
+#~ "geöffnet haben. Ist die Anzeige der Daten offensichtlich falsch, "
+#~ "korrigieren Sie als erstes Feldtrennzeichen. Dann weisen Sie den Spalten "
+#~ "bestimmte Felder zu. Diese Einstellungen werden gespeichert und können "
+#~ "daher wiederverwendet werden, wenn die Einstellungen in der CSV-Datei "
+#~ "unverändert sind. Einige Felder werden mit den Vorgaben der "
+#~ "Regionaleinstellungen belegt."
+
+#~ msgid "Field Delimiter"
+#~ msgstr "Feldtrennzeichen"
+
+#~ msgid ""
+#~ "Even though the file is still called comma delimited, the character used "
+#~ "to separate values in the file may be a comma, semicolon, or tab. Once "
+#~ "this is set correctly, your data should appear correctly split into "
+#~ "fields."
+#~ msgstr ""
+#~ "Auch wenn die Datei als \"durch Komma getrennt\" bezeichnet wird, können "
+#~ "beliebige Zeichen wie Komma, Semikolon oder Tabulatoren als "
+#~ "Feldtrennzeichen benutzt werden. Ist hier das richtige Zeichen "
+#~ "eingestellt, werden Ihre Daten mit der korrekten Aufteilung in einzelne "
+#~ "Felder angezeigt."
+
+#~ msgid "Text Delimiter"
+#~ msgstr "Textbegrenzungszeichen"
+
+#~ msgid ""
+#~ "This will usually be a single or double quote character. It is important "
+#~ "in case the field delimiter character appears within a column, such as "
+#~ "the memo field."
+#~ msgstr ""
+#~ "Dies ist normalerweise ein einfaches oder doppeltes Anführungszeichen. "
+#~ "Diese Einstellung ist wichtig, wenn Feldtrennzeichen in einer Spalte wie "
+#~ "zum Beispiel in einem Notizfeld vorkommen."
+
+#~ msgid ""
+#~ "Once the fields are correctly displayed, you have to tell the plugin "
+#~ "about the column layout of the input file, which you do on the Banking or "
+#~ "Investment tab, as appropriate. Note that you can switch between the data "
+#~ "type tab and the settings tab without losing any data. On the Banking or "
+#~ "Investment tab, if you make a mistake when entering column numbers, just "
+#~ "re-enter the correct column number. Alternatively, click <guibutton>Clear "
+#~ "selections</guibutton> to clear all the selections and try again."
+#~ msgstr ""
+#~ "Werden die Felder richtig angezeigt, müssen Sie als nächstes die "
+#~ "Anordnung der Spalten in der Importdatei auf der Karteikarte "
+#~ "<guilabel>Bank</guilabel> oder <guilabel>Investition</guilabel> angeben. "
+#~ "Sie können zwischen den Karteikarten Allgemein und einer der beiden "
+#~ "Datenarten wechseln, ohne Ihre Einstellungen zu verlieren. Haben Sie auf "
+#~ "den Karteikarten <guilabel>Bank</guilabel> oder <guilabel>Investition</"
+#~ "guilabel> eine Spaltennummer falsch angegeben, korrigieren Sie diesen "
+#~ "Fehler. Alternativ klicken Sie den Knopf <guibutton>Auswahl leeren</"
+#~ "guibutton>, um alle Spalteneinstellungen zurückzusetzen."
+
+#~ msgid "Decimal Symbol"
+#~ msgstr "Dezimalzeichen"
+
+#~ msgid ""
+#~ "For each import, after the fields have been selected, the decimal symbol "
+#~ "should now be selected, as it triggers a validation process on your "
+#~ "monetary column choices in the <guilabel>Banking</guilabel> or "
+#~ "<guilabel>Investment</guilabel> tab. Set the Decimal Symbol to match "
+#~ "those in your file, not your locale. If your locale setting has a "
+#~ "different value, conversion will be seen to take place. In the display of "
+#~ "the file in the lower part of the window, numeric fields are highlighted "
+#~ "to show in green if this setting produces valid results, otherwise in "
+#~ "red. The highlighting also reflects the start and end lines settings (see "
+#~ "below). There could be warnings if any of the selected cells appear not "
+#~ "to contain the selected symbol."
+#~ msgstr ""
+#~ "Bei jedem Import sollte nach der Auswahl der Felder das richtige "
+#~ "Dezimalzeichen eingestellt werden. Die löst eine Überprüfung der Spalten "
+#~ "mit Geldbeträgen auf den Karteikarten <guilabel>Bank</guilabel> oder "
+#~ "<guilabel>Investition</guilabel> aus. Passen Sie das Dezimalzeichen an "
+#~ "das in der Importdatei benutzte Zeichen an, nicht an das Zeichen aus den "
+#~ "Regionaleinstellungen. Verwenden Sie in den Regionaleinstellungen ein "
+#~ "anderes Zeichen, wird das Dezimalzeichen in der Importdatei beim Einlesen "
+#~ "passend geändert. Im unteren Bereich des Dialogfensters mit den Daten aus "
+#~ "der Datei werden numerische Felder grün hervorgehoben angezeigt, wenn mit "
+#~ "dem eingestellten Dezimalzeichen gültige Werte erzeugt werden, ansonsten "
+#~ "werden die numerischen Felder in roter Farbe hervorgehoben. Die "
+#~ "Hervorhebung zeigt auch die Einstellung der Start- und Endzeilen an."
+#~ "Enthalten einige der ausgewählten Zellen anscheinend nicht das "
+#~ "ausgewählte Zeichen, wird ein Warnhinweis angezeigt."
+
+#~ msgid "Thousands Symbol"
+#~ msgstr "Tausender-Unterteilung"
+
+#~ msgid ""
+#~ "This does not need to be selected, as it is set automatically based on "
+#~ "the <guilabel>Decimal Symbol</guilabel>. It is provided purely as a guide."
+#~ msgstr ""
+#~ "Diese Einstellung kann nicht geändert werden, sie wird automatisch aus "
+#~ "der Einstellung des <guilabel>Dezimalzeichens</guilabel> abgeleitet. "
+#~ "Dieses Feld ist nur ein Hinweis für den Benutzer."
+
+#~ msgid "Date format"
+#~ msgstr "Datumsformat"
+
+#~ msgid ""
+#~ "This needs to be set according to the order of year, month, and day in "
+#~ "any dates in the file. If the plugin finds data incompatible with this "
+#~ "setting, it will complain when you try to import. However, if the setting "
+#~ "is wrong, but doesn't produce invalid results (such as data with no days "
+#~ "higher than 12, so month and day could be confused) you will simply get "
+#~ "incorrect data, because the plugin cannot know you made a mistake, but "
+#~ "the error will be obvious in the ledger after import."
+#~ msgstr ""
+#~ "Hier muss die Reihenfolge von Jahr, Monat und Tag passend zum "
+#~ "Datumsformat in der Datei eingestellt werden. Stimmen diese Formate nicht "
+#~ "überein, erhalten Sie beim Import einen Warnhinweis. Wenn die Einstellung "
+#~ "zwar falsch ist, aber keine ungültigen Daten ergibt, erhalten Sie falsche "
+#~ "Daten. Dies passiert zum Beispiel wenn alle Tagesdaten in der Datei "
+#~ "kleiner als 12 sind. Dann können beim Import Tag und Monat vertauscht "
+#~ "werden und dieser Fehler wird vom Importmodul nicht erkannt. Nach dem "
+#~ "Import sind diese Fehler im Kontenbuch offensichtlich zu erkennen."
+
+#~ msgid "Start line"
+#~ msgstr "Erste Zeile"
+
+#~ msgid "Set this so the importer skips any header lines in the file."
+#~ msgstr ""
+#~ "Stellen Sie hier den richtigen Wert ein, so dass beim Import die "
+#~ "Vorspannzeilen in der Datei übersprungen werden."
+
+#~ msgid "End line"
+#~ msgstr "Letzte Zeile"
+
+#~ msgid ""
+#~ "The importer will automatically set this to the last line in the file. "
+#~ "You will only need to adjust it if there are footer lines in the file the "
+#~ "importer should ignore. Otherwise, you are likely to get a data error "
+#~ "warning."
+#~ msgstr ""
+#~ "Das Importmodul nimmt automatisch die letzte Zeile der Datei als "
+#~ "Voreinstellung an. Sie müssen diesen Wert nur dann anpassen, wenn es "
+#~ "Fußzeilen in der Datei gibt, die beim Import ausgelassen werden sollen, "
+#~ "da diese Fußzeilen wahrscheinlich zu Warnungen über Datenfehler führen."
+
+#~ msgid "Importing banking data"
+#~ msgstr "Bankdaten importieren"
+
+#~ msgid ""
+#~ "Importing banking data is fairly straightforward, you just need to select "
+#~ "the appropriate column numbers, which is done on the <guilabel>Banking</"
+#~ "guilabel> tab."
+#~ msgstr ""
+#~ "Der Import von Bankdaten ist ziemlich unkompliziert, Sie müssen nur die "
+#~ "passenden Spaltennummern auswählen. Dies erfolgt auf der Karteikarte "
+#~ "<guilabel>Bank</guilabel>."
+
+#~ msgid ""
+#~ "If your file has just a single column for the amount, click the "
+#~ "<guilabel>Amount column</guilabel> radio button, and enter the "
+#~ "appropriate column number in the <guilabel>Amount</guilabel> dropdown."
+#~ msgstr ""
+#~ "Enthält Ihre Datei nur eine einzelne Spalte mit dem Betrag, aktivieren "
+#~ "Sie den Auswahlknopf <guilabel>Betragspalte</guilabel> und stellen die "
+#~ "richtige Spaltennummer im Auswahlfeld <guilabel>Betrag</guilabel> ein."
+
+#~ msgid ""
+#~ "If there are two columns - debit and credit - click the <guilabel>Debit / "
+#~ "credit columns</guilabel> radio button, and enter the appropriate column "
+#~ "numbers in the <guilabel>Debits</guilabel> and <guilabel>Credits</"
+#~ "guilabel> dropdowns."
+#~ msgstr ""
+#~ "Gibt es zwei Spalten mit Soll und Haben, dann drücken Sie den "
+#~ "Auswahlknopf <guilabel>Soll- / Haben-Spalten</guilabel>. Stellen Sie dann "
+#~ "die passenden Spaltennummern in den Auswahlfeldern <guilabel>Soll</"
+#~ "guilabel> und <guilabel>Haben</guilabel> ein. "
+
+#~ msgid ""
+#~ "If you wish to save the values from more than one column in the memo "
+#~ "field, just select those columns sequentially. An asterisk appears "
+#~ "against the selected choices, as a reminder."
+#~ msgstr ""
+#~ "Möchten Sie Werte von mehreren Spalten in das Notizfeld einfügen, wählen "
+#~ "Sie diese Spalten nacheinander aus. Als Hinweis wird ein Sternsymbol an "
+#~ "den ausgewählten Spaten angezeigt."
+
+#~ msgid ""
+#~ "The plugin detects attempts to select the same column for two different "
+#~ "fields. Because it cannot know which one is correct, it will output an "
+#~ "error message and clear both selections."
+#~ msgstr ""
+#~ "Das Modul stellt fest, ob die gleiche Spalte für zwei verschiedene Felder "
+#~ "ausgewählt wurde. Da die richtige Spalte nicht bestimmt werden kann, wird "
+#~ "die Auswahl beider Felder gelöscht."
+
+#~ msgid ""
+#~ "Once you are happy with the settings and column selection, you can import "
+#~ "the file, as described further below."
+#~ msgstr ""
+#~ "Haben Sie alle Einstellungen und angepasst die Spalten richtig "
+#~ "ausgewählt, können Sie den Import beginnen. Dies wird im Folgenden "
+#~ "beschrieben."
+
+#~ msgid "Importing investment data"
+#~ msgstr "Import von Investitionsdaten"
+
+#~ msgid ""
+#~ "To import investment data, click the <guilabel>Investment</guilabel> tab. "
+#~ "The procedure is similar to the above."
+#~ msgstr ""
+#~ "Um Investitionsdaten zu importieren, klicken Sie auf die Karteikarte "
+#~ "<guilabel>Investitionen</guilabel>. Die Vorgehensweise ist ähnlich wie "
+#~ "bei Bankdaten."
+
+#~ msgid ""
+#~ "Select the column which contains the <guilabel>Date</guilabel> of the "
+#~ "transaction."
+#~ msgstr ""
+#~ "Wählen Sie eine Spalte, die das <guilabel>Datum</guilabel> der Buchung "
+#~ "enthält."
+
+#~ msgid ""
+#~ "Select the column which contains the <guilabel>Price</guilabel>. The "
+#~ "<guilabel>Price Fraction</guilabel> setting is for matching the imported "
+#~ "pricing units with the existing pricing, where for instance one is in $ "
+#~ "and the other in cents, or £ versus pence, etc. For example, if your "
+#~ "&kappname; data file pricing is in dollars, and so is the CSV file, then "
+#~ "set Price Fraction to 1.0. If however, the CSV file pricing is in cents, "
+#~ "set the fraction to 0.01."
+#~ msgstr ""
+#~ "Wählen Sie die Spalte, die den <guilabel>Preis</guilabel> enthält. Mit "
+#~ "der Einstellung <guilabel>Preisfaktor</guilabel> passen Sie die Einheit "
+#~ "der importierten Preise an die vorhandenen Preise an, wenn zum Beispiel $ "
+#~ "und cent oder £ und pence &etc; benutzt werden. Haben die Preise in Ihrer "
+#~ "&kappname;-Datei die Einheit Dollar wie auch die Preise in der CSV-Datei, "
+#~ "setzen Sie diesen Wert auf 1.0. Sind aber die Preise in der CSV-Datei in "
+#~ "cent angegeben, stellen Sie 0,01 als Preisfaktor ein."
+
+#~ msgid ""
+#~ "The <guilabel>Type/Action</guilabel> column is where the activity is "
+#~ "described: buy, sell, reinvest, etc."
+#~ msgstr ""
+#~ "In der Spalte <guilabel>Typ/Aktion</guilabel> wird die Aktivität "
+#~ "beschrieben: kaufen, verkaufen, wieder anlegen &etc;"
+
+#~ msgid ""
+#~ "Select the column which contains the <guilabel>Quantity</guilabel> or "
+#~ "number of shares of the transaction."
+#~ msgstr ""
+#~ "Wählen Sie die Spalte, die die <guilabel>Menge</guilabel> oder Anzahl der "
+#~ "Aktien der Buchung enthält."
+
+#~ msgid ""
+#~ "Assign a <guilabel>Fee Column</guilabel> according to whether any fee is "
+#~ "involved, and click the <guilabel>Fee is Percentage</guilabel> box if the "
+#~ "imported fee is a percentage rather than a value. (Just a warning here. "
+#~ "It may be that the fee has been taken into account in the unit price. If "
+#~ "so, don't select any fee column, although any fee shown may be retained "
+#~ "by selecting the fee column as another memo column.)"
+#~ msgstr ""
+#~ "Enthält die Buchung Gebühren, wählen Sie eine <guilabel>Gebühren-Spalte</"
+#~ "guilabel> aus und aktivieren Sie <guilabel>Gebühren in Prozent</"
+#~ "guilabel>, wenn prozentuale Gebühren und nicht ein absoluter Betrag "
+#~ "vorliegt. Es kann sein, dass Gebühren bereits im Einheitspreis enthalten "
+#~ "sind. Wählen Sie in diesem Fall keine Spalte für Gebühren, obwohl jede "
+#~ "angezeigte Gebühr beibehalten werden kann, wenn die Gebühren-Spalte als "
+#~ "weitere Memo-Spalte ausgewählt wird."
+
+#~ msgid ""
+#~ "As with banking data, the <guilabel>Memo</guilabel> field can be used to "
+#~ "select more than one column (sequentially) to include multiple values in "
+#~ "the memo field of the imported transaction."
+#~ msgstr ""
+#~ "Wie bei den Bankdaten kann das Feld <guilabel>Notiz</guilabel> benutzt "
+#~ "werden, um fortlaufend mehr als eine Spalte zu wählen. Damit können "
+#~ "mehrere Werte in das Notizfeld der importierten Buchung eingefügt werden."
+
+#~ msgid "Select the column which contains the <guilabel>Amount</guilabel>."
+#~ msgstr "Wählen Sie die Spalte, die den <guilabel>Betrag</guilabel> enthält."
+
+#~ msgid ""
+#~ "Enter the name of the security in the <guilabel>Security Name</guilabel> "
+#~ "field, ensuring it matches exactly the existing security as specified in "
+#~ "&kappname;. If the security name appears in the imported file, double "
+#~ "click on it to select it, then copy and paste/edit to match, taking care "
+#~ "if you have used a variation or abbreviation within &kappname;. As you "
+#~ "enter security names in this field, they are retained in the resource "
+#~ "file (see <link linkend=\"details.impexp.csv.config\">below</link> for "
+#~ "more details on this file.) This means they will be available in this "
+#~ "dropdown when you run the plugin the next time. If you wish, you can also "
+#~ "edit the resource file to add a complete list of securities you expect to "
+#~ "encounter in your import files. If you have entered a name incorrectly, "
+#~ "click the <guilabel>Hide Security</guilabel> button. This just removes "
+#~ "the name from the plugin list and has no effect on your data in "
+#~ "&kappname;."
+#~ msgstr ""
+#~ "Tragen Sie den Namen des Wertpapiers in das angegeben Feld ein. Achten "
+#~ "Sie darauf, dass der Name genauso schrieben ist wie das vorhandene "
+#~ "Wertpapier in &kappname;. Erscheint der Name des Wertpapiers in der "
+#~ "importierten Datei, wählen Sie ihn durch Doppelklicken aus und kopieren "
+#~ "und bearbeiten ihn. Achten Sie darauf in &kappname; keine abweichenden "
+#~ "Schreibweisen oder Abkürzungen zu verwenden. Nach der Eingabe der Namen "
+#~ "werden diese in die Ressourcendatei eingefügt, weitere Details zu dieser "
+#~ "Datei finden Sie weiter <link linkend=\"details.impexp.csv.config"
+#~ "\">unten</link>. Benutzen Sie das Importmodul das nächste Mal, werden "
+#~ "alle vorher eingegebenen Name im Auswahlfeld angezeigt. Sie können aber "
+#~ "auch die Ressourcendatei direkt bearbeiten und eine Liste aller "
+#~ "Wertpapiere eingeben, die in Ihren Importdateien vorkommen. Haben Sie "
+#~ "einen Namen falsch eingegeben, drücken Sie den Knopf <guilabel>Wertpapier "
+#~ "ausblenden</guilabel>. Damit wird der Name aus der im Modul verwendeten "
+#~ "Liste entfernt. Das hat keinen Einfluß auf die Daten in &kappname;."
+
+#~ msgid ""
+#~ "Because of the lack of standardization of formats, the current version of "
+#~ "the plugin is restricted to importing data for one security in one "
+#~ "account at a time. If your file contains data for more than one security, "
+#~ "you can import it in stages, using the start line and end line to "
+#~ "identify only one at a time."
+#~ msgstr ""
+#~ "Wegen der fehlenden Standardisierung des Formats kann die aktuelle "
+#~ "Version des Moduls auf einmal nur Daten eines Wertpapiers in ein Konto "
+#~ "importieren. Enthält Ihre Datei Daten mehrere Wertpapiere, importieren "
+#~ "Sie die Daten in mehreren Schritten, indem Sie den Datenbereich mit "
+#~ "passenden Werten für die erste und letzte Zeile auf ein Wertpapier "
+#~ "beschränken."
+
+#~ msgid "Completing the import"
+#~ msgstr "Import fertigstellen"
+
+#~ msgid ""
+#~ "For either banking or investment data, once you have selected all the "
+#~ "appropriate columns, click <guibutton>Import</guibutton>. &kappname; will "
+#~ "now display a selector dialog box for you to choose the correct account "
+#~ "into which to import the data. It is possible at this stage to save to a "
+#~ "qif file, should you require one for any reason, by clicking "
+#~ "<guibutton>Save as QIF</guibutton>."
+#~ msgstr ""
+#~ "Haben Sie die Spalten für die Bank- oder Investitionsdaten richtig "
+#~ "zugeordnet, klicken Sie auf <guibutton>Importieren</guibutton>. Dann wird "
+#~ "ein Auswahlfeld angezeigt, in dem Sie das richtige Konto für den Import "
+#~ "der Daten auswählen. Benötigen Sie die Daten auch im QIF-Format, drücken "
+#~ "Sie den Knopf <guibutton>QIF-Datei speichern</guibutton>."
+
+#~ msgid ""
+#~ "For investment data, if any transaction involves another account, &eg;, a "
+#~ "checking or brokerage account for a received dividend or for making a "
+#~ "payment, a message box will pop up for the account name to be entered for "
+#~ "the transfer. If the investment account allows for, say, writing checks, "
+#~ "you may enter an existing checking/brokerage account name. Similarly "
+#~ "enter the column number containing the payee, if requested. If a mistake "
+#~ "is made when entering the account name, the import will go ahead, but "
+#~ "&kappname; will not recognize it, and will flag those transactions as "
+#~ "missing a category assignment. If the required account name is rather "
+#~ "long, just enter a few characters. The import will proceed but the "
+#~ "transactions will be flagged by &kappname; as missing a category "
+#~ "assignment, and the correct transfer account will need to be selected."
+#~ msgstr ""
+#~ "Betrifft bei Investitionsdaten eine Buchung ein anderes Konto, &eg; ein "
+#~ "Scheck- oder Wertpapierkonto für eine ausgeschüttete Dividende oder ein "
+#~ "Zahlung, erscheint ein Dialog, in dem der Kontenname für die Buchung "
+#~ "eingegeben werden kann. Können in dem Investitionskonto Schecks "
+#~ "ausgestellt werden, geben Sie den Namen eines vorhandenen Scheck- oder "
+#~ "Wertpapierkontos ein, ebenso die Nummer der Spalte mit dem Zahler/"
+#~ "Zahlungsempfänger. Fehler bei der Eingabe des Kontennamens werden "
+#~ "übergangen, aber nicht erkannt. Diese Buchungen werden wegen fehlender "
+#~ "Zuweisung einer Kategorie als fehlerhaft markiert. Ist der einzugebende "
+#~ "Kontenname sehr lang, geben Sie nur einige Zeichen ein. Der Import wird "
+#~ "fortgesetzt. aber die Buchung wird als fehlerhaft markiert und das "
+#~ "richtige Buchungskonto muss noch ausgewählt werden."
+
+#~ msgid ""
+#~ "If, during import of a transaction, the plugin finds no valid transaction "
+#~ "type, it will display the offending transaction, and the user may select "
+#~ "a valid type to substitute, depending on the combination of quantity, "
+#~ "price, and amount values. For every transaction, the plugin will validate "
+#~ "the column contents to ensure they match the action type. For instance, "
+#~ "if a quantity appears but no price or amount, it is assumed that the "
+#~ "transaction can be only an add or remove shares. Or, if there is an "
+#~ "amount but no quantity or price, then a Dividend is assumed, etc.."
+#~ msgstr ""
+#~ "Findet das Modul beim Import einer Buchung keinen gültigen Buchungstyp, "
+#~ "wird die betreffende Buchung angezeigt und Sie können einen passenden Typ "
+#~ "abhängig von der Kombination von Menge, Preis und Betrag als Ersatz "
+#~ "auswählen. Bei jeder Buchung überprüft das Modul, ob der Inhalt der "
+#~ "Spalte zu dem Aktivitätstyp passt. Wenn zum Beispiel eine Menge ohne "
+#~ "Preis oder Betrag vorkommt, wird angenommen, das bei der Buchung nur die "
+#~ "Anzahl der Aktien geändert wird. Kommt nur ein Betrag ohne Preis und "
+#~ "Menge vor, wird das als Dividendenzahlung eingestuft."
+
+#~ msgid ""
+#~ "If you find that your investment statements keep including activity types "
+#~ "that are not recognized, just add them to the section in the resource "
+#~ "file. (See <link linkend=\"details.impexp.csv.config\">below</link> for "
+#~ "more details on this file.) For instance, in the [InvestmentSettings] "
+#~ "section of the file, the BuyParam field includes entries for Purchase, "
+#~ "Buy, New Inv, and Switch In. If you find a different one, add it to the "
+#~ "correct list and restart the plugin. You may notice that there are "
+#~ "similarities in the entries in different fields, and you may find that "
+#~ "the wrong activity type is being selected. The plugin checks these lists "
+#~ "in the following order: Shrsin, DivX, Reinvdiv, Brokerage, Buy, Sell, "
+#~ "Remove. Re-ordering the lists to suit this does not work as might be "
+#~ "expected, since the entries in the resource file get sorted into "
+#~ "alphabetical order. If the offending parameter is one you don't need, "
+#~ "just delete it from the file. If that is not possible, you may need to "
+#~ "edit your file before input."
+#~ msgstr ""
+#~ "Enthalten Ihre Investitionsbuchungen Aktivitätstypen, die nicht erkannt "
+#~ "werden, fügen Sie sie in den entsprechenden Abschnitt der Ressourcendatei "
+#~ "ein. Weitere Informationen zu dieser Datei finden Sie im <link linkend="
+#~ "\"details.impexp.csv.config\">folgenden Abschnitt</link>. Der Abschnitt "
+#~ "[InvestmentSettings] in der Ressourcendatei enthält zum Beispiel das Feld "
+#~ "„BuyParam“ mit Einträgen für „Purchase“, „Buy“, „New Inv“ und „Switch "
+#~ "In“. Benötigen Sie einen weiteren Aktivitätstyp, fügen Sie ihn in die "
+#~ "richtige Liste ein und starten das Importmodul neu. Es gibt ähnliche "
+#~ "Einträge in verschiedenen Feldern, daher wird manchmal der falsche "
+#~ "Aktivitätstyp ausgewählt. Das Importmodul überprüft die Liste in "
+#~ "folgender Reihenfolge: „Shrsin“, „DivX“, „Reinvdiv“, „Brokerage“, „Buy“, "
+#~ "„Sell“, „Remove“. Eine Änderung dieser Reihenfolge in der Liste "
+#~ "funktioniert nicht, da die Einträge in der Ressourcendatei in "
+#~ "alphabetischer Reihenfolge sortiert werden. Benötigen Sie den störenden "
+#~ "Parameter nicht, löschen Sie ihn aus der Datei. Ist das nicht möglich, "
+#~ "müssen Sie die Datei vor dem Import bearbeiten."
+
+#~ msgid ""
+#~ "Note that it may appear that the displayed entries in the lower section "
+#~ "of the plugin window may be edited, and in fact they may, but the edits "
+#~ "are not kept. The display is purely for display, not for editing. The "
+#~ "input file is never altered by the plugin, and the data actually imported "
+#~ "comes from the input file, not from the display."
+#~ msgstr ""
+#~ "Beachten Sie, dass die im unteren Bereich des Importdialogs zwar "
+#~ "bearbeitet werden können, diese Änderungen aber nicht benutzt werden. "
+#~ "Dieser Bereich ist nur für die Anzeige und nicht für das Bearbeiten von "
+#~ "Daten vorgesehen. Die Daten in der Importdatei werden vom Modul nicht "
+#~ "geändert. Tatsächlich werden die Daten aus der Datei und nicht aus der "
+#~ "Anzeige importiert."
+
+#~ msgid "Configuration of CSV importer plugin"
+#~ msgstr "Einrichtung des CSV-Importmoduls"
+
+#~ msgid ""
+#~ "A well-known drawback of QIF format is that it is a fairly loose format. "
+#~ "With CSV files, there is this same problem, only more so, in that there "
+#~ "is no agreed standard at all. With investment files, in particular, there "
+#~ "is much more scope for variation in specifying the different types of "
+#~ "activities represented in the data. The plugin handles this by listing "
+#~ "these activity types in a resource file, called csvimporterrc. The "
+#~ "location of this file depends on your distribution. It will usually be "
+#~ "located in ~/.kde4/share/config/, but may be in ~/.kde/... instead. Using "
+#~ "this resource file allows the user to add an activity type that the "
+#~ "developer had not encountered. If the file does not exist when the "
+#~ "importer first runs, the plugin will create a default version, containing "
+#~ "a few of the more obvious descriptions."
+#~ msgstr ""
+#~ "Ein bekannter Nachteil von QIF-Daten ist das ziemlich unbestimmte Format. "
+#~ "Mit CSV-Daten gibt es das noch größere Problem, dass überhaupt kein "
+#~ "allgemein anerkannter Standard existiert. Besonders bei Investitionsdaten "
+#~ "gibt es einen weiten Spielraum für die Spezifizierung der verschiedenen "
+#~ "Arten von Aktivitäten in den Daten. Das Importmodul verwendet eine Liste "
+#~ "von Aktivitäten, die in der Ressourcendatei „csvimporterrc“ gespeichert "
+#~ "werden. Der Speicherort dieser Datei ist je nach Ihrer Distribution "
+#~ "normalerweise in „~/.kde4/share/config/“ oder „~/.kde/share/config/“. In "
+#~ "dieser Ressourcendatei können Sie neue Aktivitätstypen einfügen. Gibt es "
+#~ "diese Datei nicht, wird Sie bei der ersten Ausführung des Importmoduls in "
+#~ "einer Standardversion mit den am häufigsten benötigten Werten erstellt."
+
+#~ msgid ""
+#~ "A number of sample csv files are provided (in the kmymoney/contrib/"
+#~ "csvimporter/ folder in the source tree) in the hope that they may help. "
+#~ "For example, in the investment sample, an activity type is "
+#~ "\"ReInvestorContract Buy : ReInvested Units\". In the validation process, "
+#~ "the first successful match is on the ReInv in ReInvestorContract Buy, so "
+#~ "the transaction therefore gets classed as Reinvdiv, even though Buy also "
+#~ "is mentioned. Another example which has been observed is an activity type "
+#~ "of Reinvest even though the transaction included neither price nor "
+#~ "amount, but only a quantity, so that needed to be treated as Add Shares, "
+#~ "or Shrsin."
+#~ msgstr ""
+#~ "Im Ordner „kmymoney/contrib/csvimporter/“ im Quelltextarchiv finden Sie "
+#~ "einige Beispiele von CSV-Dateien, die vielleicht hilfreich sind. Im "
+#~ "Beispiel einer CSV-Datei für Investitionen gibt es die Aktivität "
+#~ "„ReInvestorContract Buy : ReInvested Units“. Bei der Überprüfung wird "
+#~ "zuerst „ReInv“ in „ReInvestorContract Buy“ gefunden, daher wird diese "
+#~ "Buchung als „Reinvdiv“eingestuft, obwohl auch „Buy“ in dem Begriff "
+#~ "vorkommt. Ein weiteres Beispiel ist der Aktivitätstyp Reinvest bei einer "
+#~ "Buchung ohne Preis oder Betrag, aber nur mit einer Menge. Dies muss als "
+#~ "„Add Shares“ oder „Shrsin“ eingestuft werden."
+
+#~ msgid ""
+#~ "When this plugin was created, only a few investment formats had been seen "
+#~ "as examples, and it may well be that you will encounter one which cannot "
+#~ "be handled correctly. If you find such a file, please send a suitable "
+#~ "example (edited to remove or replace personal information) to the "
+#~ "&kappname; user list &userlist; or developer list &devlist;, the "
+#~ "developer will do his best to modify the plugin to handle it."
+#~ msgstr ""
+#~ "Als dieses Modul entwickelt wurde, gab es nur wenige Beispiele von "
+#~ "Investitions-Formaten. Daher wird Ihr Format möglicherweise nicht richtig "
+#~ "verarbeitet. Haben Sie ein Beispiel für eine solche Datei, senden Sie sie "
+#~ "bitte ohne persönliche Daten an die Benutzerliste &userlist; oder die "
+#~ "Entwicklerliste &devlist;. Dann können die Entwickler diese Datei "
+#~ "untersuchen und das Modul anpassen."
+
+#~ msgid "<firstname>Thomas</firstname> <surname>Baumgart</surname>"
+#~ msgstr "<firstname>Thomas</firstname> <surname>Baumgart</surname>"
+
+#~ msgid "ipwizard@users.sourceforge.net"
+#~ msgstr "ipwizard@users.sourceforge.net"
+
+#~ msgid "<firstname>Ace</firstname> <surname>Jones</surname>"
+#~ msgstr "<firstname>Ace</firstname> <surname>Jones</surname>"
+
+#~ msgid "acejones@users.sourceforge.net"
+#~ msgstr "acejones@users.sourceforge.net"
+
+#~ msgid "<firstname>Tony</firstname> <surname>Bloomfield</surname>"
+#~ msgstr "<firstname>Tony</firstname> <surname>Bloomfield</surname>"
+
+#~ msgid "tonybloom@users.sourceforge.net"
+#~ msgstr "tonybloom@users.sourceforge.net"

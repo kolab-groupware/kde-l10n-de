@@ -1,0 +1,225 @@
+# Stephan Johach <hunsum@gmx.de>, 2003.
+# Burkhard Lück <lueck@hube-lueck.de>, 2010, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcontrol_smb\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: 2013-12-08 13:37+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:10 index.docbook:27
+#, no-c-format
+msgid "Windows Shares"
+msgstr "Windows-Freigaben"
+
+#. Tag: author
+#: index.docbook:12
+#, no-c-format
+msgid "&Mike.McBride; &Mike.McBride.mail;"
+msgstr "&Mike.McBride; &Mike.McBride.mail;"
+
+#. Tag: author
+#: index.docbook:13
+#, no-c-format
+msgid "&Jost.Schenck; &Jost.Schenck.mail;"
+msgstr "&Jost.Schenck; &Jost.Schenck.mail;"
+
+#. Tag: trans_comment
+#: index.docbook:14
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Stefan</"
+"firstname><surname>Winter</"
+"surname><affiliation><address><email>kickdown@online.de</email></address></"
+"affiliation><contrib>Deutsche Übersetzung</contrib></othercredit>"
+
+#. Tag: date
+#: index.docbook:17
+#, no-c-format
+msgid "2013-12-05"
+msgstr "2013-12-05"
+
+#. Tag: releaseinfo
+#: index.docbook:18
+#, no-c-format
+msgid "&kde; 4.12"
+msgstr "&kde; 4.12"
+
+#. Tag: keyword
+#: index.docbook:21
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:22
+#, no-c-format
+msgid "Systemsettings"
+msgstr "Systemeinstellungen"
+
+#. Tag: keyword
+#: index.docbook:23
+#, no-c-format
+msgid "Windows shares"
+msgstr "Windows-Freigaben"
+
+#. Tag: title
+#: index.docbook:30
+#, no-c-format
+msgid "Introduction"
+msgstr "Einleitung"
+
+#. Tag: para
+#: index.docbook:32
+#, no-c-format
+msgid ""
+"In many small local area networks, the <acronym>SMB</acronym> protocol is "
+"used to offer network services. Names like <quote>&Windows; Network</quote> "
+"or <quote>&Windows; for Workgroups Network</quote> or <quote>LanManager</"
+"quote> are often used as well. Using <acronym>SMB</acronym> you can access "
+"so-called <quote>shares</quote> (&ie; folders made available by the server) "
+"as well as printers."
+msgstr ""
+"In vielen kleinen lokalen Netzen wird das <acronym>SMB</acronym>-Protokoll "
+"benutzt, um das Netzwerkdienste bereitzustellen. Bezeichnungen wie "
+"<quote>&Windows;-Netzwerk</quote> oder <quote>&Windows; for Workgroups</"
+"quote> oder <quote>Lan-Manager</quote> werden ebenfalls häufig benutzt. Mit "
+"Hilfe von <acronym>SMB</acronym> können <quote>Ressourcen</quote> (also "
+"freigegebene Ordner und Drucker) im Netz zur Verfügung gestellt werden."
+
+#. Tag: para
+#: index.docbook:40
+#, no-c-format
+msgid ""
+"&kde; comes with built-in support for the <acronym>SMB</acronym> protocol. "
+"As &kde; is network-transparent that means you can access <acronym>SMB</"
+"acronym> shares from everywhere you can access your local files, for example "
+"in the &konqueror; file manager and in the file dialog. To make use of this "
+"you should provide &kde; with some information on your <acronym>SMB</"
+"acronym> network. But don't worry, this is normally pretty simple as, for "
+"example, all the Windows clients in your network need and have the same "
+"information."
+msgstr ""
+"&kde; verfügt über eine eingebaute <acronym>SMB</acronym>-Unterstützung. Da "
+"&kde; netzwerk-transparent arbeitet, können Sie auf <acronym>SMB</acronym>-"
+"Freigaben genau wie auf lokale Dateien zugreifen, zum Beispiel im "
+"&konqueror;-Dateimanager und im Dialog <quote>Datei öffnen</quote>. Um davon "
+"Gebrauch machen zu können, sollten Sie &kde; einige Informationen über Ihr "
+"<acronym>SMB</acronym>-Netzwerk zur Verfügung stellen. Das ist normalerweise "
+"ganz einfach, denn sämtliche Windows-Rechner in Ihrem Netzwerk benötigen und "
+"besitzen diese Informationen bereits."
+
+#. Tag: para
+#: index.docbook:58
+#, no-c-format
+msgid ""
+"For the <acronym>SMB</acronym> protocol to work, it is required to have "
+"<application>Samba</application> correctly installed."
+msgstr ""
+"Damit das <acronym>SMB</acronym>-Protokoll funktioniert, müssen Sie "
+"<application>Samba</application> installiert haben."
+
+#. Tag: title
+#: index.docbook:68
+#, no-c-format
+msgid "<title>Use</title>"
+msgstr "<title>Benutzung</title>"
+
+#. Tag: para
+#: index.docbook:70
+#, no-c-format
+msgid ""
+"Although there are a lot of insecure <acronym>SMB</acronym> networks out "
+"there which allow access to anyone, in principle you have to authenticate "
+"yourself to access the services of an <acronym>SMB</acronym> server. By "
+"default, &kde; will use the data entered in the <guilabel>Default user name</"
+"guilabel> and <guilabel>Default password</guilabel> fields to authenticate "
+"itself on <acronym>SMB</acronym> hosts. If you leave the field "
+"<guilabel>Default user name</guilabel> empty, &kde; will try to access "
+"<acronym>SMB</acronym> hosts without a username. If you leave the default "
+"password empty, it will try without a password. If &kde; is unsuccessful "
+"accessing the host using these settings, you will be asked for a username "
+"and a password."
+msgstr ""
+"Obwohl es sehr viele ungesicherte <acronym>SMB</acronym>-Netzwerke gibt, die "
+"jedem Zugriff auf alles erlauben, muss man sich prinzipiell bei einem "
+"<acronym>SMB</acronym>-Netz authentifizieren, bevor man auf Daten zugreifen "
+"kann. Standardmäßig verwendet &kde; zur Anmeldung auf dem <acronym>SMB</"
+"acronym>-Server die Daten, die Sie unter <guilabel>Standard-Benutzername</"
+"guilabel> und <guilabel>Standard-Passwort</guilabel> eingetragen haben. Wenn "
+"Sie das Feld <guilabel>Standard-Benutzername</guilabel> leer lassen, "
+"versucht &kde; sich ohne Benutzername bei den <acronym>SMB</acronym>-Servern "
+"anzumelden. Geben Sie kein <guilabel>Standard-Passwort</guilabel> an, "
+"versucht &kde; die Anmeldung ohne Passwort. Falls &kde; damit keinen Erfolg "
+"hat, werden Sie zur Eingabe eines Benutzernamens und Passwortes aufgefordert."
+
+#. Tag: para
+#: index.docbook:83
+#, no-c-format
+msgid ""
+"While it makes things more comfortable if &kde; stores your <acronym>SMB</"
+"acronym> password, this may be a security problem. If you are using "
+"<acronym>SMB</acronym> in a security conscious environment, you should not "
+"store your password here but rather enter it anew every time you need to "
+"access an <acronym>SMB</acronym> host."
+msgstr ""
+"Auch wenn das Speichern von <acronym>SMB</acronym>-Passwörtern bequem ist, "
+"könnte daraus ein Sicherheitsproblem entstehen. Wenn Sie in einem "
+"<acronym>SMB</acronym>-Netz arbeiten, bei dem es auf Sicherheit ankommt, "
+"sollten Sie keine Passwörter speichern, sondern stattdessen Ihr Passwort "
+"jedesmal neu eingeben, wenn Sie Zugriff auf einen <acronym>SMB</acronym>-"
+"Server benötigen."
+
+#~ msgid "2009-11-20"
+#~ msgstr "2009-11-20"
+
+#~ msgid ""
+#~ "For the <acronym>SMB</acronym> protocol to work, it is required to have "
+#~ "<application>Samba</application> correctly installed. If you have an NT "
+#~ "domain controller, you will need at least <application>Samba</"
+#~ "application> version 2.0 or higher. If you want to access &Windows; 2000 "
+#~ "shares, you will need <application>Samba</application> version 2.0.7 or "
+#~ "higher. Older versions may work too, but have not been tested."
+#~ msgstr ""
+#~ "Damit das <acronym>SMB</acronym>-Protokoll funktioniert, müssen Sie "
+#~ "<application>Samba</application> installiert haben. Wenn Sie einen NT-"
+#~ "Domain-Controller verwenden wollen, benötigen Sie mindestens Version 2.0 "
+#~ "von <application>Samba</application>. Wenn Sie Zugriff auf &Windows; 2000 "
+#~ "Freigaben benötigen, muss <application>Samba</application> minimal in der "
+#~ "Version 2.0.7 vorliegen. Ältere Versionen funktionieren möglicherweise "
+#~ "auch, wurden aber nicht daraufhin getestet."
+
+#~ msgid "KControl"
+#~ msgstr "Kontrollzentrum"
+
+#~ msgid ""
+#~ "In the <guilabel>Workgroup</guilabel> field, you can enter your workgroup "
+#~ "name. If you don't know it, ask your system administrator or have a look "
+#~ "at other already configured machines in your network. However, in most "
+#~ "cases providing the workgroup name is not required, so you probably can "
+#~ "also leave this empty."
+#~ msgstr ""
+#~ "Im Feld <guilabel>Arbeitsgruppe</guilabel> können Sie den Namen Ihrer "
+#~ "Arbeitsgruppe eintragen. Ist dieser Name nicht bekannt, fragen Sie den "
+#~ "Systemverwalter danach oder werfen Sie einen Blick auf die Einstellungen "
+#~ "eines bereits konfigurierten Computers. In den meisten Fällen ist es "
+#~ "nicht erforderlich, den Arbeitsgruppennamen anzugeben, sodass Sie das "
+#~ "Feld vermutlich leer lassen können."
+
+#~ msgid ""
+#~ "If the option <guilabel>Show hidden shares</guilabel> is checked, shares "
+#~ "ending with a <quote>$</quote> will be shown."
+#~ msgstr ""
+#~ "Wenn die Option <guilabel>Versteckte Freigaben anzeigen</guilabel> "
+#~ "ausgewählt ist, werden auch Freigaben angezeigt, die mit einem <quote>$</"
+#~ "quote> enden."

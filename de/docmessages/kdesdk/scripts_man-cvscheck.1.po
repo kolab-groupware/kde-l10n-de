@@ -1,0 +1,258 @@
+# Stephan Johach <hunsum@gmx.de>, 2006.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2006.
+# Burkhard Lück <lueck@hube-lueck.de>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: scripts_man-cvscheck.1\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:10+0000\n"
+"PO-Revision-Date: 2014-01-11 12:12+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: branches/KDE/3.5/kdesdk/doc/scripts/man-cvscheck.1."
+"docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 385546\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: date
+#: man-cvscheck.1.docbook:10
+#, no-c-format
+msgid "March 8, 2003"
+msgstr "8. März 2003"
+
+#. Tag: refentrytitle
+#: man-cvscheck.1.docbook:14
+#, no-c-format
+msgid "<refentrytitle>&cvscheck;</refentrytitle>"
+msgstr "<refentrytitle>&cvscheck;</refentrytitle>"
+
+#. Tag: manvolnum
+#: man-cvscheck.1.docbook:15
+#, no-c-format
+msgid "<manvolnum>1</manvolnum>"
+msgstr "<manvolnum>1</manvolnum>"
+
+#. Tag: refname
+#: man-cvscheck.1.docbook:19
+#, no-c-format
+msgid "<refname>&cvscheck;</refname>"
+msgstr "<refname>&cvscheck;</refname>"
+
+#. Tag: refpurpose
+#: man-cvscheck.1.docbook:20
+#, no-c-format
+msgid "Offline status report for files in a checked-out &CVS; module."
+msgstr ""
+"Erzeugt einen Offline-Statusbericht für eine lokal vorhandene &CVS;-"
+"Arbeitskopie."
+
+#. Tag: cmdsynopsis
+#: man-cvscheck.1.docbook:24
+#, no-c-format
+msgid "&cvscheck; <group><replaceable>dir</replaceable></group>"
+msgstr "&cvscheck; <group><replaceable>dir</replaceable></group>"
+
+#. Tag: title
+#: man-cvscheck.1.docbook:32
+#, no-c-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. Tag: para
+#: man-cvscheck.1.docbook:34
+#, no-c-format
+msgid ""
+"&cvscheck; prints information about the status of your local &CVS; checkout "
+"without communicating with the server. This means it is extremely fast and "
+"does not require a network connection."
+msgstr ""
+"&cvscheck; gibt Informationen über den Status Ihrer lokalen &CVS;-"
+"Arbeitskopie aus, ohne dazu über das Netzwerk mit dem Server kommunizieren "
+"zu müssen. Daher ist es besonders schnell und spart Netzwerk-Bandbreite."
+
+#. Tag: para
+#: man-cvscheck.1.docbook:38
+#, no-c-format
+msgid ""
+"The given directory and all of its subdirectories will be processed "
+"recursively. If no directory is given, the current directory and its "
+"recursed subdirectories will be used."
+msgstr ""
+"Der angegebene Ordner und alle seine Unterordner werden rekursiv "
+"abgearbeitet. Wenn kein Ordner angegeben wird, so wird der aktuelle Ordner "
+"mit seinen Unterordnern verwendet."
+
+#. Tag: para
+#: man-cvscheck.1.docbook:42
+#, no-c-format
+msgid ""
+"Each file with an interesting status will be printed with a status character "
+"in front of its name. The status characters are as follows."
+msgstr ""
+"Jede Datei mit besonderem Status wird mit einem Status-Zeichen vor dem "
+"Dateinamen ausgegeben. Die folgenden Status-Zeichen sind möglich."
+
+#. Tag: term
+#: man-cvscheck.1.docbook:48
+#, no-c-format
+msgid "<returnvalue>?</returnvalue> <filename>foobar.c</filename>"
+msgstr "<returnvalue>?</returnvalue> <filename>foobar.c</filename>"
+
+#. Tag: para
+#: man-cvscheck.1.docbook:50
+#, no-c-format
+msgid "The file is not known to &CVS;"
+msgstr "Die Datei ist nicht im &CVS;."
+
+#. Tag: term
+#: man-cvscheck.1.docbook:54
+#, no-c-format
+msgid "<returnvalue>M</returnvalue> <filename>foobar.c</filename>"
+msgstr "<returnvalue>M</returnvalue> <filename>foobar.c</filename>"
+
+#. Tag: para
+#: man-cvscheck.1.docbook:57
+#, no-c-format
+msgid "The file is definitely locally modified"
+msgstr "Die Datei enthält definitiv lokale Änderungen"
+
+#. Tag: term
+#: man-cvscheck.1.docbook:61
+#, no-c-format
+msgid "<returnvalue>m</returnvalue> <filename>foobar.c</filename>"
+msgstr "<returnvalue>m</returnvalue> <filename>foobar.c</filename>"
+
+#. Tag: para
+#: man-cvscheck.1.docbook:64
+#, no-c-format
+msgid ""
+"The file <emphasis>might</emphasis> have local changes. You should "
+"<command>diff</command> with the server to make sure."
+msgstr ""
+"Die Datei enthält <emphasis>möglicherweise</emphasis> lokale Änderungen. Sie "
+"sollten dies mittels <emphasis>diff</emphasis> zum Server überprüfen."
+
+#. Tag: term
+#: man-cvscheck.1.docbook:69
+#, no-c-format
+msgid "<returnvalue>C</returnvalue> <filename>foobar.c</filename>"
+msgstr "<returnvalue>C</returnvalue> <filename>foobar.c</filename>"
+
+#. Tag: para
+#: man-cvscheck.1.docbook:72
+#, no-c-format
+msgid "The file has a &CVS; conflict and therefore cannot be committed."
+msgstr ""
+"Die Datei steht im Konflikt mit dem &CVS; und kann daher nicht eingespielt "
+"werden."
+
+#. Tag: term
+#: man-cvscheck.1.docbook:77
+#, no-c-format
+msgid "<returnvalue>U</returnvalue> <filename>foobar.c</filename>"
+msgstr "<returnvalue>U</returnvalue> <filename>foobar.c</filename>"
+
+#. Tag: para
+#: man-cvscheck.1.docbook:80
+#, no-c-format
+msgid "This file is in &CVS; but is missing in your local checkout."
+msgstr ""
+"Die Datei befindet sich im &CVS;, fehlt aber in Ihrer lokalen Arbeitskopie."
+
+#. Tag: term
+#: man-cvscheck.1.docbook:85
+#, no-c-format
+msgid "<returnvalue>T</returnvalue> <filename>foobar.c</filename>"
+msgstr "<returnvalue>T</returnvalue> <filename>foobar.c</filename>"
+
+#. Tag: para
+#: man-cvscheck.1.docbook:87
+#, no-c-format
+msgid "This file has an unusual sticky &CVS; tag."
+msgstr "Die Datei hat ein ungewöhnliches &CVS;-Sticky-Tag."
+
+#. Tag: term
+#: man-cvscheck.1.docbook:91
+#, no-c-format
+msgid "<returnvalue>A</returnvalue> <filename>foobar.c</filename>"
+msgstr "<returnvalue>A</returnvalue> <filename>foobar.c</filename>"
+
+#. Tag: para
+#: man-cvscheck.1.docbook:94
+#, no-c-format
+msgid ""
+"You have done a <userinput><command>cvs</command> <option>add</option></"
+"userinput> for this file, but have not yet committed it."
+msgstr ""
+"Sie haben für die Datei <userinput><command>cvs</command> <option>add</"
+"option></userinput> ausgeführt, die Änderungen aber noch nicht übertragen "
+"(commited)."
+
+#. Tag: term
+#: man-cvscheck.1.docbook:100
+#, no-c-format
+msgid "<returnvalue>R</returnvalue> <filename>foobar.c</filename>"
+msgstr "<returnvalue>R</returnvalue> <filename>foobar.c</filename>"
+
+#. Tag: para
+#: man-cvscheck.1.docbook:103
+#, no-c-format
+msgid ""
+"You have done a <userinput><command>cvs</command> <option>rm</option></"
+"userinput> for this file, but have not yet committed it."
+msgstr ""
+"Sie haben für die Datei <userinput><command>cvs</command> <option>rm</"
+"option></userinput> ausgeführt, die Änderungen aber noch nicht übertragen "
+"(commited)."
+
+#. Tag: para
+#: man-cvscheck.1.docbook:110
+#, no-c-format
+msgid "This utility is part of the &kde; Software Development Kit."
+msgstr ""
+"Dieses Hilfsprogramm ist Teil der &kde; Software-Entwicklungswerkzeuge."
+
+#. Tag: title
+#: man-cvscheck.1.docbook:115
+#, no-c-format
+msgid "See Also"
+msgstr "Siehe auch"
+
+#. Tag: para
+#: man-cvscheck.1.docbook:117
+#, no-c-format
+msgid "cvs(1)"
+msgstr "cvs(1)"
+
+#. Tag: title
+#: man-cvscheck.1.docbook:122
+#, no-c-format
+msgid "Authors"
+msgstr "Autoren"
+
+#. Tag: para
+#: man-cvscheck.1.docbook:124
+#, no-c-format
+msgid ""
+"cvscheck was written by &Dirk.Mueller; &Dirk.Mueller.mail; and &Sirtaj.Singh."
+"Kang; &Sirtaj.Singh.Kang.mail;"
+msgstr ""
+"cvscheck wurde von &Dirk.Mueller; &Dirk.Mueller.mail; und &Sirtaj.Singh."
+"Kang; &Sirtaj.Singh.Kang.mail; geschrieben."
+
+#. Tag: para
+#: man-cvscheck.1.docbook:127
+#, no-c-format
+msgid ""
+"This manual page was prepared by <personname><firstname>Ben</firstname> "
+"<surname>Burton</surname></personname> <email>bab@debian.org</email> for the "
+"Debian GNU/Linux system (but may be used by others)."
+msgstr ""
+"Diese Handbuchseite wurde von <personname><firstname>Ben</firstname> "
+"<surname>Burton</surname></personname> <email>bab@debian.org</email> für "
+"Debian GNU/Linux geschrieben (darf aber auch von anderen verwendet werden)."

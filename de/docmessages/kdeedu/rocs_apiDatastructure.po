@@ -1,0 +1,287 @@
+#
+# Burkhard Lück <lueck@hube-lueck.de>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: 2013-08-08 09:48+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: apiDatastructure.docbook:2
+#, no-c-format
+msgid "Scripting API for every Data Structure"
+msgstr "Skript-API für jede Datenstruktur"
+
+#. Tag: title
+#: apiDatastructure.docbook:4
+#, no-c-format
+msgid "Abstract Data Structure Object"
+msgstr "Abstraktes Datenstruktur-Objekt"
+
+#. Tag: para
+#: apiDatastructure.docbook:5
+#, no-c-format
+msgid ""
+"The abstract data structure defines a set of data elements and possible "
+"connections between them, this is the prototype for every other data "
+"structure. Data structures are identified by their names. Assuming you "
+"created a data structure with name <literal>testgraph</literal>, then you "
+"can access the data structure simply by writing this identifier. For "
+"example, to get an array with all data elements in the given data structure, "
+"you can write <literal>testgraph.list_nodes();</literal> in the script."
+msgstr ""
+"Die abstrakte Datenstruktur definiert eine Menge von Datenelementen und "
+"mögliche Verbindungen zwischen Ihnen. Dies ist der Prototyp aller weiteren "
+"Datenstrukturen. Datenstrukturen werden über ihren Namen identifiziert. "
+"Haben Sie eine Datenstruktur mit dem Namen <literal>testgraph</literal> "
+"erstellt, dann können Sie über diesen Namen auf die Datenstruktur zugreifen. "
+"Um zum Beispiel ein Feld mit allen Datenelementen einer Struktur zu "
+"erhalten, verwenden Sie <literal>testgraph.list_nodes();</literal> im Skript."
+
+#. Tag: title
+#: apiDatastructure.docbook:13 apiDatastructure.docbook:32
+#: apiDatastructure.docbook:79
+#, no-c-format
+msgid "Properties"
+msgstr "Eigenschaften"
+
+#. Tag: para
+#: apiDatastructure.docbook:16
+#, no-c-format
+msgid "<emphasis>name</emphasis> :"
+msgstr "<emphasis>name</emphasis> :"
+
+#. Tag: para
+#: apiDatastructure.docbook:19
+#, no-c-format
+msgid "The unique name of this data structure."
+msgstr "Der eindeutige Name dieser Datenstruktur."
+
+#. Tag: title
+#: apiDatastructure.docbook:26
+#, no-c-format
+msgid "Abstract Data"
+msgstr "Abstraktes Datenelement"
+
+#. Tag: para
+#: apiDatastructure.docbook:27
+#, no-c-format
+msgid ""
+"An abstract data element is a unit of information that belongs to an "
+"abstract data structure and possibly is connected to other data elements by "
+"pointers."
+msgstr ""
+"Ein abstraktes Datenelement ist eine Einheit von Informationen, die zu einer "
+"abstrakten Datenstruktur gehören, und kann mit anderen Datenelementen durch "
+"Zeiger verbunden sein."
+
+#. Tag: para
+#: apiDatastructure.docbook:35 apiDatastructure.docbook:82
+#, no-c-format
+msgid "<emphasis>width</emphasis> :"
+msgstr "<emphasis>width</emphasis> :"
+
+#. Tag: para
+#: apiDatastructure.docbook:38
+#, no-c-format
+msgid "The size of this data element."
+msgstr "Die Größe dieses Datenelements."
+
+#. Tag: para
+#: apiDatastructure.docbook:42
+#, no-c-format
+msgid "<emphasis>x</emphasis> :"
+msgstr "<emphasis>x</emphasis> :"
+
+#. Tag: para
+#: apiDatastructure.docbook:45
+#, no-c-format
+msgid "The x-coordinate of this data element."
+msgstr "Die X-Koordinate dieses Datenelements."
+
+#. Tag: para
+#: apiDatastructure.docbook:49
+#, no-c-format
+msgid "<emphasis>y</emphasis> :"
+msgstr "<emphasis>y</emphasis> :"
+
+#. Tag: para
+#: apiDatastructure.docbook:52
+#, no-c-format
+msgid "The y-coordinate of this data element."
+msgstr "Die y-Koordinate dieses Datenelements."
+
+#. Tag: para
+#: apiDatastructure.docbook:56
+#, no-c-format
+msgid "<emphasis>id</emphasis> :"
+msgstr "<emphasis>id</emphasis> :"
+
+#. Tag: para
+#: apiDatastructure.docbook:59
+#, no-c-format
+msgid "The unique identifier of this data element."
+msgstr "Der eindeutige Bezeichner für dieses Datenelement."
+
+#. Tag: para
+#: apiDatastructure.docbook:63 apiDatastructure.docbook:110
+#, no-c-format
+msgid "<emphasis>color</emphasis> :"
+msgstr "<emphasis>color</emphasis> :"
+
+#. Tag: para
+#: apiDatastructure.docbook:66
+#, no-c-format
+msgid "The color of this data element stated as hexadecimal value."
+msgstr "Die Farbe dieses Datenelements als Hexadezimalwert."
+
+#. Tag: title
+#: apiDatastructure.docbook:74
+#, no-c-format
+msgid "Abstract Pointer"
+msgstr "Abstrakter Zeiger"
+
+#. Tag: para
+#: apiDatastructure.docbook:75
+#, no-c-format
+msgid ""
+"A pointer connects two data elements and can itself hold information by its "
+"properties."
+msgstr ""
+"Ein Zeiger verbindet zwei Datenelemente und kann Informationen über seine "
+"Eigenschaften enthalten."
+
+#. Tag: para
+#: apiDatastructure.docbook:85
+#, no-c-format
+msgid "The width of the connection."
+msgstr "Die Breite der Verbindung."
+
+#. Tag: para
+#: apiDatastructure.docbook:89
+#, no-c-format
+msgid "<emphasis>directed</emphasis> :"
+msgstr "<emphasis>directed</emphasis> :"
+
+#. Tag: para
+#: apiDatastructure.docbook:92
+#, no-c-format
+msgid ""
+"If true, the connection is directed. Otherwise is connection is undirected."
+msgstr ""
+"Falls wahr, ist die Verbindung gerichtet, andernfalls ist sie ungerichtet."
+
+#. Tag: para
+#: apiDatastructure.docbook:96
+#, no-c-format
+msgid "<emphasis>from</emphasis> :"
+msgstr "<emphasis>from</emphasis> :"
+
+#. Tag: para
+#: apiDatastructure.docbook:99
+#, no-c-format
+msgid "Start of the connection."
+msgstr "Der Start der Verbindung."
+
+#. Tag: para
+#: apiDatastructure.docbook:103
+#, no-c-format
+msgid "<emphasis>to</emphasis> :"
+msgstr "<emphasis>to</emphasis> :"
+
+#. Tag: para
+#: apiDatastructure.docbook:106
+#, no-c-format
+msgid "End of the connection"
+msgstr "Das Ende der Verbindung"
+
+#. Tag: para
+#: apiDatastructure.docbook:113
+#, no-c-format
+msgid "ID of the connection type."
+msgstr "Kennung des Verbindungstyps."
+
+#. Tag: title
+#: apiDatastructure.docbook:120
+#, no-c-format
+msgid "Methods"
+msgstr "Methoden"
+
+#. Tag: term
+#: apiDatastructure.docbook:124
+#, no-c-format
+msgid "remove()"
+msgstr "remove()"
+
+#. Tag: para
+#: apiDatastructure.docbook:126
+#, no-c-format
+msgid "Remove this connection."
+msgstr "Entfernt diese Verbindung."
+
+#. Tag: funcprototype
+#: apiDatastructure.docbook:127
+#, no-c-format
+msgid ""
+"<funcdef>void <function>remove</function></funcdef> <paramdef></paramdef>"
+msgstr ""
+"<funcdef>void <function>remove</function></funcdef> <paramdef></paramdef>"
+
+#. Tag: term
+#: apiDatastructure.docbook:136
+#, no-c-format
+msgid "add_property(name, value)"
+msgstr "add_property(name, value)"
+
+#. Tag: para
+#: apiDatastructure.docbook:138
+#, no-c-format
+msgid "Add a new property to the connection."
+msgstr "Fügt der Verbindung eine neue Eigenschaft hinzu."
+
+#. Tag: funcprototype
+#: apiDatastructure.docbook:139
+#, no-c-format
+msgid ""
+"<funcdef>void <function>add_property</function></funcdef> <paramdef>string "
+"<parameter><replaceable>name</replaceable></parameter></paramdef> "
+"<paramdef>string <parameter><replaceable>value</replaceable></parameter></"
+"paramdef>"
+msgstr ""
+"<funcdef>void <function>add_property</function></funcdef> <paramdef>string "
+"<parameter><replaceable>name</replaceable></parameter></paramdef> "
+"<paramdef>string <parameter><replaceable>value</replaceable></parameter></"
+"paramdef>"
+
+#. Tag: term
+#: apiDatastructure.docbook:149
+#, no-c-format
+msgid "remove_property(name)"
+msgstr "remove_property(name)"
+
+#. Tag: para
+#: apiDatastructure.docbook:151
+#, no-c-format
+msgid "Remove an existing property from the connection."
+msgstr "Entfernt eine bestehende Eigenschaft der Verbindung."
+
+#. Tag: funcprototype
+#: apiDatastructure.docbook:152
+#, no-c-format
+msgid ""
+"<funcdef>void <function>remove_property</function></funcdef> "
+"<paramdef>string <parameter><replaceable>name</replaceable></parameter></"
+"paramdef>"
+msgstr ""
+"<funcdef>void <function>remove_property</function></funcdef> "
+"<paramdef>string <parameter><replaceable>name</replaceable></parameter></"
+"paramdef>"

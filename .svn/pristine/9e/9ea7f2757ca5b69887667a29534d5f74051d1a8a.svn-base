@@ -1,0 +1,637 @@
+# Marco Wegner <mail@marcowegner.de>, 2002.
+# Stephan Johach <hunsum@gmx.de>, 2003, 2005, 2007.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2006.
+# Burkhard Lück <lueck@hube-lueck.de>, 2007, 2009, 2010, 2011, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcontrol_kcmnotify\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: 2013-12-06 06:46+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:9 index.docbook:29
+#, no-c-format
+msgid "System Notification Settings"
+msgstr "Benachrichtigungen verwalten"
+
+#. Tag: author
+#: index.docbook:13
+#, no-c-format
+msgid "&Mike.McBride; &Mike.McBride.mail;"
+msgstr "&Mike.McBride; &Mike.McBride.mail;"
+
+#. Tag: trans_comment
+#: index.docbook:14
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Frank</"
+"firstname><surname>Schütte</surname><affiliation><address><email>F."
+"Schuette@t-online.de</email></address></affiliation><contrib>Deutsche "
+"Übersetzung</contrib></othercredit>"
+
+#. Tag: date
+#: index.docbook:17
+#, no-c-format
+msgid "2013-12-05"
+msgstr "2013-12-05"
+
+#. Tag: releaseinfo
+#: index.docbook:18
+#, no-c-format
+msgid "&kde; 4.12"
+msgstr "&kde; 4.12"
+
+#. Tag: keyword
+#: index.docbook:21
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:22
+#, no-c-format
+msgid "Systemsettings"
+msgstr "Systemeinstellungen"
+
+#. Tag: keyword
+#: index.docbook:23
+#, no-c-format
+msgid "system notification"
+msgstr "Systemnachrichten"
+
+#. Tag: keyword
+#: index.docbook:24
+#, no-c-format
+msgid "notification"
+msgstr "Nachrichten"
+
+#. Tag: para
+#: index.docbook:31
+#, no-c-format
+msgid ""
+"&kde;, like all applications, needs to inform the user when a problem "
+"occurs, a task is completed, or something has happened. &kde; uses a set of "
+"<quote>System Notifications</quote> to keep the user informed on what is "
+"happening."
+msgstr ""
+"Wie andere Anwendungen muss auch KDE den Benutzer informieren, wenn ein "
+"Problem aufgetreten ist, wenn eine Aufgabe beendet wurde oder wenn ein "
+"anderes Ereignis eingetreten ist. KDE verwendet eine Reihe von "
+"<quote>Systemnachrichten</quote>, um den Benutzer zu informieren."
+
+#. Tag: para
+#: index.docbook:36
+#, no-c-format
+msgid ""
+"Using this module, you can determine what &kde; does to communicate each "
+"event."
+msgstr ""
+"In diesem Modul können Sie einstellen, wie KDE Ereignisse bekanntmachen soll."
+
+#. Tag: para
+#: index.docbook:39
+#, no-c-format
+msgid ""
+"This settings module consists of the two tabs <guilabel>Applications</"
+"guilabel> and <guilabel>Player Settings</guilabel>."
+msgstr ""
+"Dieses Einstellungsmodul besteht aus den zwei Karteikarten "
+"<guilabel>Anwendungen</guilabel> und <guilabel>Wiedergabe-Einstellungen</"
+"guilabel>."
+
+#. Tag: title
+#: index.docbook:43
+#, no-c-format
+msgid "Applications"
+msgstr "Anwendungen"
+
+#. Tag: para
+#: index.docbook:44
+#, no-c-format
+msgid ""
+"To configure a notification, simply select the application from the drop "
+"down box at the top of the dialog labeled <guilabel>Event source:</"
+"guilabel>. This will lead to a list of all configurable notifications for "
+"the application. The list of notifications includes 6 columns to the left of "
+"the notification name. These columns (from left to right) are:"
+msgstr ""
+"Um eine Systemnachricht einzurichten, wählen Sie die Anwendung aus dem "
+"Auswahlfeld <guilabel>Quelle für das Ereignis:</guilabel>. Dies führt zur "
+"Anzeige aller für diese Anwendung verfügbaren Systemnachrichten. Die Liste "
+"hat links vom Namen der Nachricht sechs Spalten. Diese Spalten (von links "
+"nach rechts) sind:"
+
+#. Tag: guiicon
+#: index.docbook:51
+#, no-c-format
+msgid "<guiicon>Play a sound</guiicon>"
+msgstr "<guiicon>Klang abspielen</guiicon>"
+
+#. Tag: para
+#: index.docbook:52
+#, no-c-format
+msgid ""
+"This does exactly what you think it does. If an icon is present in this "
+"column, &kde; will play a specific sound over the speakers. This is commonly "
+"used by games in &kde; for starting a new game, or other action within the "
+"game."
+msgstr ""
+"Wird in dieser Spalte ein Symbol angezeigt, spielt &kde; einen bestimmten "
+"Klang ab. Diese Einstellung wird häufig von Spielen genutzt, um den Beginn "
+"eines neuen Spiels oder andere Ereignisse zu signalisieren."
+
+#. Tag: guiicon
+#: index.docbook:56
+#, no-c-format
+msgid "<guiicon>Show a message in a pop up</guiicon>"
+msgstr "<guiicon>Meldungsfenster anzeigen</guiicon>"
+
+#. Tag: para
+#: index.docbook:57
+#, no-c-format
+msgid ""
+"If an icon is present in this column, &kde; will open a message box and "
+"inform the user of the notification. This is probably the most commonly "
+"selected option for alerting users to an error."
+msgstr ""
+"Wird in dieser Spalte ein Symbol angezeigt, öffnet &kde; ein Fenster, um den "
+"Anwender über die Nachricht zu informieren. Dies ist die wahrscheinlich "
+"häufigste Einstellung, um Anwender über Fehler zu informieren."
+
+#. Tag: guiicon
+#: index.docbook:61
+#, no-c-format
+msgid "<guiicon>Log to a file</guiicon>"
+msgstr "<guiicon>In Protokolldatei schreiben</guiicon>"
+
+#. Tag: para
+#: index.docbook:62
+#, no-c-format
+msgid ""
+"If an icon is present in this column, &kde; will write certain information "
+"to a file on disk for later retrieval. This is useful for tracking problems "
+"or important system changes."
+msgstr ""
+"Wird in dieser Spalte ein Symbol angezeigt, schreibt &kde; bestimmte "
+"Informationen in eine Datei auf der Festplatte. Diese kann später "
+"ausgewertet werden, um Problemen nachzugehen oder wichtige Systemänderungen "
+"nachzuvollziehen."
+
+#. Tag: guiicon
+#: index.docbook:66
+#, no-c-format
+msgid "<guiicon>Mark taskbar entry</guiicon>"
+msgstr "<guiicon>Eintrag in Fensterleiste hervorheben</guiicon>"
+
+#. Tag: para
+#: index.docbook:67
+#, no-c-format
+msgid ""
+"If an icon is present in this column, &kde; will cause the taskbar to flash "
+"until the user has clicked the taskbar entry. This is most useful when you "
+"want the user to look at the program (such as a new email message was "
+"received, or the users name was said on an IRC channel)."
+msgstr ""
+"Wird in dieser Spalte ein Symbol angezeigt, veranlasst &kde; die "
+"Programmleiste dazu, die Anwendung zu markieren bis der Anwender den Eintrag "
+"angeklickt hat. Dies ist vor allem nützlich, wenn der Anwender auf das "
+"Programm aufmerksam werden soll (&eg; wenn eine neue E-Mail eingetroffen ist "
+"oder der Name des Benutzers in einem IRC-Kanal erwähnt wurde)."
+
+#. Tag: guilabel
+#: index.docbook:71 index.docbook:119
+#, no-c-format
+msgid "Speech"
+msgstr "Sprachausgabe"
+
+#. Tag: para
+#: index.docbook:72 index.docbook:110
+#, no-c-format
+msgid ""
+"If a mark is in this checkbox, &kde; will cause the taskbar of the program "
+"sending the notification to flash until the user has clicked the taskbar "
+"entry."
+msgstr ""
+"Ist dieses Ankreuzfeld markiert, blinkt der Eintrag der betreffenden "
+"Anwendung Programmleiste bis der Anwender auf den Eintrag geklickt hat."
+
+#. Tag: guiicon
+#: index.docbook:77
+#, no-c-format
+msgid "<guiicon>Run command</guiicon>"
+msgstr "<guiicon>Programm ausführen</guiicon>"
+
+#. Tag: para
+#: index.docbook:78
+#, no-c-format
+msgid ""
+"If an icon is present in this column, a separate program will be executed "
+"when this notification is performed. This can be used to execute a program "
+"to help restore data, shutdown a potentially compromised system or email "
+"another user to alert them to a problem."
+msgstr ""
+"Wird in dieser Spalte ein Symbol angezeigt, wird beim Eintreffen der "
+"Nachricht ein externes Programm ausgeführt. Damit können Sie &eg; ein "
+"Programm zur Wiederherstellung von Daten aufrufen, ein möglicherweise "
+"kompromittiertes System herunterfahren oder einen anderen Benutzer mit einer "
+"E-Mail auf das Programm aufmerksam machen."
+
+#. Tag: title
+#: index.docbook:83
+#, no-c-format
+msgid "Change a notification"
+msgstr "Das Ändern einer Nachricht"
+
+#. Tag: para
+#: index.docbook:84
+#, no-c-format
+msgid ""
+"To make a change to a notification, click on the name of the notification "
+"once with the &LMB;. The notification will be highlighted and the checkboxes "
+"for all notification types are enabled."
+msgstr ""
+"Um eine Nachricht zu bearbeiten, klicken Sie mit der &LMBn; auf den Namen "
+"der Nachricht. Die Nachricht wird nun hervorgehoben und Ankreuzfelder für "
+"alle Arten von Benachrichtigungen sind auswählbar."
+
+#. Tag: para
+#: index.docbook:87
+#, no-c-format
+msgid ""
+"You can have more than one event triggered by a single notification. As an "
+"example, it is easy to have a sound played and a message box appear in "
+"response to a system notification. One notification does not prevent other "
+"notifications from operating."
+msgstr ""
+"Eine Nachricht kann mehr als ein Ereignis auslösen. So kann beispielsweise "
+"als Reaktion auf eine Systemnachricht ein Klang abgespielt und ein "
+"Benachrichtigungsfenster angezeigt werden. Eine Benachrichtigung schließt "
+"andere Formen der Benachrichtigung nicht aus."
+
+#. Tag: para
+#: index.docbook:90
+#, no-c-format
+msgid ""
+"The following list details each of the notification types and how to use "
+"them."
+msgstr ""
+"Die folgende Liste beschreibt alle Nachrichtentypen und wie sie verwendet "
+"werden."
+
+#. Tag: guilabel
+#: index.docbook:94
+#, no-c-format
+msgid "<guilabel>Play a sound</guilabel>"
+msgstr "<guilabel>Klang abspielen</guilabel>"
+
+#. Tag: para
+#: index.docbook:95
+#, no-c-format
+msgid ""
+"If a mark is in this checkbox, &kde; will play a sound everytime this "
+"notification is initiated. To specify the sound, use the text box to the "
+"right of the checkbox to enter the folder location of the sound file you "
+"want &kde; to play. You can use the folder button (located to the far right "
+"of the dialog box) to browse your directory tree. To hear a test of your "
+"sound, simply click on the play button (small button directly to the right "
+"of <guilabel>Play a sound</guilabel>.)"
+msgstr ""
+"Ist dieses Ankreuzfeld markiert, spielt &kde; immer dann, wenn diese "
+"Nachricht eingeht, einen Klang ab. Um die Klangdatei auswählen, können Sie "
+"das Eingabefeld rechts vom Ankreuzfeld benutzen. Um eine Datei in einem "
+"Ordner zu suchen, können Sie außerdem den Knopf ganz rechts verwenden. Um "
+"die Klangdatei zu testen, klicken Sie auf den Knopf rechts neben "
+"<guilabel>Klang abspielen</guilabel>."
+
+#. Tag: guilabel
+#: index.docbook:99
+#, no-c-format
+msgid "<guilabel>Show a message in a pop up</guilabel>"
+msgstr "<guilabel>Meldungsfenster anzeigen</guilabel>"
+
+#. Tag: para
+#: index.docbook:100
+#, no-c-format
+msgid ""
+"If a mark is in this checkbox, &kde; will open a message box and inform the "
+"user of the notification. The text of the box can not be changed from this "
+"dialog."
+msgstr ""
+"Ist diese Einstellung angekreuzt, öffnet &kde; ein Fenster, um den Anwender "
+"über die Nachricht zu informieren. Der Text der Benachrichtigung kann hier "
+"nicht eingestellt werden."
+
+#. Tag: guilabel
+#: index.docbook:104
+#, no-c-format
+msgid "<guilabel>Log to a file</guilabel>"
+msgstr "<guilabel>In Protokolldatei schreiben</guilabel>"
+
+#. Tag: para
+#: index.docbook:105
+#, no-c-format
+msgid ""
+"If a mark is in this checkbox, &kde; will write certain information to a "
+"file on disk for later retrieval. To specify the log file to use, enter the "
+"pathname in the text box to the right of the checkbox. You can use the "
+"folder button (located to the far right of the dialog box) to browse your "
+"directory tree."
+msgstr ""
+"Ist dieses Ankreuzfeld markiert, schreibt &kde; bestimmte Informationen zur "
+"späteren Auswertung in eine Datei. Um die Protokolldatei auszuwählen, geben "
+"Sie den Pfad in das Eingabefeld rechts vom Ankreuzfeld ein. Um eine Datei in "
+"einem Ordner zu suchen, können Sie außerdem den Knopf ganz rechts verwenden."
+
+#. Tag: guilabel
+#: index.docbook:109
+#, no-c-format
+msgid "<guilabel>Mark taskbar entry</guilabel>"
+msgstr "<guilabel>Eintrag in Fensterleiste hervorheben</guilabel>"
+
+#. Tag: guilabel
+#: index.docbook:114
+#, no-c-format
+msgid "<guilabel>Run command</guilabel>"
+msgstr "<guilabel>Programm ausführen</guilabel>"
+
+#. Tag: para
+#: index.docbook:115
+#, no-c-format
+msgid ""
+"If a mark is in this checkbox, a separate program will be executed when this "
+"notification is performed. To specify the program to execute, enter the "
+"pathname in the text box to the right of the checkbox. You can use the "
+"folder button (located to the far right of the dialog box) to browse your "
+"directory tree."
+msgstr ""
+"Ist dieses Ankreuzfeld markiert, wird bei Eintreffen dieser Nachricht ein "
+"externes Programm ausgeführt. Um das externe Programm anzugeben, gebe Sie "
+"den Programmpfad in das Eingabefeld rechts ein. Sie können den Knopf (ganz "
+"rechts im Dialog) dazu verwenden, einen Ordner auszuwählen."
+
+#. Tag: para
+#: index.docbook:120
+#, no-c-format
+msgid ""
+"If a mark is in this checkbox, &kde; will use Jovie to speak the event "
+"message, event name or custom text."
+msgstr ""
+"Ist dieses Ankreuzfeld markiert, benutzt &kde; das Programm Jovie, um die "
+"Nachricht oder den Namen des Ereignisses oder benutzerdefinierten Text "
+"vorzulesen."
+
+#. Tag: para
+#: index.docbook:122
+#, no-c-format
+msgid ""
+"If you select <guilabel>Speak Custom Text</guilabel>, enter the text in the "
+"box. You may use the following substitution strings in the text:"
+msgstr ""
+"Wählen Sie <guilabel>Benutzerdefinierten Text ausgeben</guilabel> und "
+"schreiben Sie diesen Text in das Eingabefeld. Dabei können folgende "
+"Platzhalter im Text verwendet werden:"
+
+#. Tag: member
+#: index.docbook:126
+#, no-c-format
+msgid "<userinput>%e</userinput> Name of the event"
+msgstr "<userinput>%e</userinput> Name des Ereignisses"
+
+#. Tag: member
+#: index.docbook:127
+#, no-c-format
+msgid "<userinput>%a</userinput> Application that sent the event"
+msgstr "<userinput>%a</userinput> Anwendung, die das Ereignis verschickt hat"
+
+#. Tag: member
+#: index.docbook:128
+#, no-c-format
+msgid "<userinput>%m</userinput> Message sent by the application"
+msgstr "<userinput>%m</userinput> Nachricht, die die Anwendung verschickt hat"
+
+#. Tag: para
+#: index.docbook:134
+#, no-c-format
+msgid ""
+"You can use the icon columns (located to the left of the notifications) to "
+"quickly select or deselect the options. Clicking in the column with the "
+"&LMB; will toggle the notification on and off."
+msgstr ""
+"Sie können die Symbolspalten (links von der Nachricht) dazu benutzen, die "
+"jeweilige Einstellung an- oder auszuschalten. Klicken Sie dazu mit der "
+"&LMBn; in die betreffende Spalte."
+
+#. Tag: title
+#: index.docbook:139
+#, no-c-format
+msgid "Player Settings"
+msgstr "Wiedergabe-Einstellungen"
+
+#. Tag: guilabel
+#: index.docbook:143
+#, no-c-format
+msgid "Use the &kde; sound system"
+msgstr "&kde;-Soundsystem verwenden"
+
+#. Tag: para
+#: index.docbook:144
+#, no-c-format
+msgid ""
+"If a mark is in this radio button, &kde; will play all sound notifications "
+"through the &kde; sound system. You can adjust the volume of system "
+"notifications using the slider."
+msgstr ""
+"Ist dieser Auswahlknopf markiert, spielt &kde; alle Klangbenachrichtungen "
+"mit dem Soundsystem von &kde; ab. Sie können die Lautstärke mit dem "
+"Schieberegler einstellen."
+
+#. Tag: para
+#: index.docbook:145
+#, no-c-format
+msgid ""
+"The slider only affects &kde; system notifications. Changes to this slider "
+"will not affect other sounds on your computer."
+msgstr ""
+"Der Schieberegler hat nur Einfluss auf Systemnachrichten von &kde;. Andere "
+"Klänge auf dem Rechner werden nicht beeinflusst."
+
+#. Tag: guilabel
+#: index.docbook:148
+#, no-c-format
+msgid "Use an external player"
+msgstr "Externen Abspieler verwenden"
+
+#. Tag: para
+#: index.docbook:149
+#, no-c-format
+msgid ""
+"If a mark is in this radio button, &kde; will not use the &kde; sound system "
+"to play the sound. This is a good choice if the sound format you want to use "
+"is not supported by the &kde; notification system. After checking the radio "
+"box, enter the full path and name of the program you want to use into the "
+"text field. You can use the folder button (located along the right side) to "
+"browse the directory tree."
+msgstr ""
+"Ist dieser Auswahlknopf markiert, verwendet &kde; nicht das Soundsystem von "
+"&kde; zum Abspielen von Klängen. Dies ist dann von Vorteil, wenn Sie ein "
+"Datenformat verwenden möchten, das vom Nachrichtensystem von &kde; nicht "
+"unterstützt wird. Wenn Sie den Auswahlknopf markiert haben, können Sie den "
+"Pfad des gewünschten Programms zum Abspielen der Klänge in das Eingabefeld "
+"eingeben. Um eine Datei in einem Ordner zu suchen, können Sie außerdem den "
+"Knopf ganz rechts verwenden."
+
+#. Tag: guilabel
+#: index.docbook:152
+#, no-c-format
+msgid "No audio output"
+msgstr "Keine Audioausgabe"
+
+#. Tag: para
+#: index.docbook:153
+#, no-c-format
+msgid "Disables all sound notifications."
+msgstr "Deaktiviert alle Sound-Benachrichtigungen."
+
+#~ msgid "2011-11-28"
+#~ msgstr "2011-11-28"
+
+#~ msgid ""
+#~ "If a mark is in this checkbox, &kde; will open a message box and inform "
+#~ "the user of the notification. The text of the box can not be changed from "
+#~ "this dialog. If you place a mark in the checkbox labeled <guilabel>Use a "
+#~ "passive window that does not interrupt other work</guilabel>, &kde; will "
+#~ "open the message box, but it will not change desktops and the message box "
+#~ "will not appear until the user returns to the program sending the "
+#~ "notification. If that box is left empty, the user must respond to the "
+#~ "message box even if it means they have to stop working on another program."
+#~ msgstr ""
+#~ "Ist dieses Ankreuzfeld markiert, öffnet &kde; ein Benachrichtungsfenster "
+#~ "und informiert den Anwender über die Nachricht. Der Text der Nachricht "
+#~ "kann in diesem Dialog nicht geändert werden. Markieren Sie das "
+#~ "Ankreuzfeld <guilabel>Passives Fenster verwenden, das keine anderen "
+#~ "Abläufe unterbricht</guilabel>, öffnet &kde; ein Benachrichtungsfenster, "
+#~ "aber dieses erscheint erst, wenn der Anwender zu dem Programm wechselt, "
+#~ "das die Nachricht versendet hat. Wird dieses Ankreuzfeld nicht markiert, "
+#~ "muss der Anwender auf das Benachrichtigungsfenster reagieren, auch wenn "
+#~ "dadurch die Arbeit mit einem anderen Programm unterbrochen werden muss."
+
+#~ msgid "KControl"
+#~ msgstr "Kontrollzentrum"
+
+#~ msgid ""
+#~ "The panel consists of a large list of specific events which need to be "
+#~ "communicated to the user. This list is organized into groups by "
+#~ "applications."
+#~ msgstr ""
+#~ "Dieser Abschnitt besteht aus einer langen Liste von Ereignissen, die dem "
+#~ "Benutzer bekanntgegeben werden müssen. Diese Liste ist nach Anwendungen "
+#~ "in Gruppen organisiert."
+
+#~ msgid "<guiicon>Execute a program</guiicon>"
+#~ msgstr "<guiicon>Programm ausführen</guiicon>"
+
+#~ msgid "Print to standard error output"
+#~ msgstr "Nachricht an Standard-Fehlerausgabe senden"
+
+#~ msgid ""
+#~ "If an icon is present in this column, &kde; will send a message to the "
+#~ "computers standard output."
+#~ msgstr ""
+#~ "Wird in dieser Spalte ein Symbol angezeigt, verschickt &kde; eine "
+#~ "Nachricht an die Standard-Fehlerausgabe des Rechners."
+
+#~ msgid "Display a message box"
+#~ msgstr "Nachricht in extra Fenster anzeigen"
+
+#~ msgid "Flash the taskbar entry"
+#~ msgstr "Programmleisten-Eintrag markieren"
+
+#~ msgid "<guilabel>Execute a program</guilabel>"
+#~ msgstr "<guilabel>Programm ausführen</guilabel>"
+
+#~ msgid "Print a message to standard error output"
+#~ msgstr "Nachricht an Standard-Fehlerausgabe senden"
+
+#~ msgid "Mark taskbar entry"
+#~ msgstr "Programmleisten-Eintrag markieren."
+
+#~ msgid "Change all notifications in all &kde; applications"
+#~ msgstr "Alle Nachrichten in allen &kde;-Anwendungen ändern"
+
+#~ msgid ""
+#~ "You can alter more than one notification at a time by using the section "
+#~ "of the dialog labeled <guilabel>Quick Controls</guilabel>."
+#~ msgstr ""
+#~ "Im Abschnitt <guilabel>Schnell-Kontrollen</guilabel> können Sie mehrere "
+#~ "Nachrichten gleichzeitig ändern."
+
+#~ msgid ""
+#~ "The first item in this section is a checkbox labeled <guilabel>Apply to "
+#~ "all applications</guilabel>. If there is a mark in this checkbox, any "
+#~ "changes made in the <guilabel>Quick Controls</guilabel> area are applied "
+#~ "to all applications (not just the selected application). If there is no "
+#~ "mark in this checkbox, any changes are limited to the application "
+#~ "selected at the top of the dialog."
+#~ msgstr ""
+#~ "Der erste Eintrag in diesem Abschnitt ist mit <guilabel>Auf alle "
+#~ "Programme anwenden</guilabel> beschriftet. Ist das Ankreuzfeld markiert, "
+#~ "werden alle Änderungen, die Sie unter <guilabel>Schnell-Kontrollen</"
+#~ "guilabel> durchführen auf alle (und nicht nur die ausgewählten) "
+#~ "Anwendungen angewendet. Ist das Ankreuzfeld nicht markiert, ist nur die "
+#~ "im oberen Bereich des Dialogs ausgewählte Anwendung von den Änderungen "
+#~ "betroffen."
+
+#~ msgid ""
+#~ "The next line consists of a button and a drop down box. This is used to "
+#~ "enable every notification of a single type. Simply select the "
+#~ "notification type from the drop down box (on the right) and click the "
+#~ "button labeled <guibutton>Turn On All</guibutton>. This will enable all "
+#~ "notifications of that type."
+#~ msgstr ""
+#~ "Die nächste Zeile besteht aus einem Knopf und einem Auswahlfeld. Hier "
+#~ "können Sie alle Benachrichtigungen eines bestimmten Typs einschalten. "
+#~ "Wählen Sie den Benachrichtigungstyp im Auswahlfeld aus und klicken Sie "
+#~ "auf den Knopf <guibutton>Alle aktivieren</guibutton>. Nun sind alle "
+#~ "Benachrichtigungen dieses Typs aktiv."
+
+#~ msgid ""
+#~ "The bottom line operates the same, but when you select the button labeled "
+#~ "<guibutton>Turn Off All</guibutton>, all the notifications of the "
+#~ "selected type will be disabled."
+#~ msgstr ""
+#~ "Die Zeile darunter funktioniert ganz ähnlich, allerdings werden hier "
+#~ "durch Klicken des Knopfes <guibutton>Alle deaktivieren</guibutton> alle "
+#~ "Benachrichtigungen des ausgewählten Typs abgeschaltet."
+
+#~ msgid "Change sound player options"
+#~ msgstr "Ändern der Wiedergabe-Einstellungen"
+
+#~ msgid ""
+#~ "If you click the button labeled <guibutton>Player settings</guibutton>, a "
+#~ "small dialog box will appear with three radio buttons:"
+#~ msgstr ""
+#~ "Wenn Sie den Knopf <guibutton>Wiedergabe-Einstellungen</guibutton> "
+#~ "anklicken, erscheint ein Dialog mit drei Auswahlknöpfen:"
+
+#~ msgid ""
+#~ "When you have made your selection, click <guibutton>Apply</guibutton> to "
+#~ "save changes but keep the dialog box open. Click <guibutton>OK</"
+#~ "guibutton> to save changes and close dialog box. Click <guibutton>Cancel</"
+#~ "guibutton> to close the dialog box without making any changes."
+#~ msgstr ""
+#~ "Wenn Sie ihre Auwahl getroffen haben, klicken Sie auf "
+#~ "<guibutton>Anwenden</guibutton>, um die Änderungen zu übernehmen während "
+#~ "der Dialog geöffnet bleibt. Klicken Sie <guibutton>OK</guibutton>, um die "
+#~ "Einstellungen zu übernehmen und den Dialog zu schließen. Klicken Sie "
+#~ "<guibutton>Abbrechen</guibutton>, um den Dialog zu schließen, ohne die "
+#~ "Änderungen zu übernehmen."

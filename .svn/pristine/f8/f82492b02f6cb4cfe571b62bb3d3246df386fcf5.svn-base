@@ -1,0 +1,191 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+  <!ENTITY % German "INCLUDE"
+><!-- change language only here -->
+]>
+
+<refentry>
+
+<refentryinfo>
+<title
+>&kde;-Benutzerhandbuch</title>
+<author
+><firstname
+>Sebastian</firstname
+> <surname
+>Trueg</surname
+> <affiliation
+> <address
+><email
+>trueg@kde.org</email
+></address>
+</affiliation>
+</author>
+
+<date
+>2009-04-28</date>
+<releaseinfo
+>0.01.01</releaseinfo>
+
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>nepomukserver</command
+></refentrytitle>
+<manvolnum
+>8</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>nepomukserver</command
+></refname>
+<refpurpose
+>&kde;-Dienst - Der Nepomuk-Server.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<title
+>Kurzbeschreibung</title>
+
+<cmdsynopsis
+><command
+>nepomukserver</command
+> <arg choice="opt"
+>--help</arg
+> <arg choice="opt"
+>Allgemeine Optionen</arg
+> <arg choice="opt"
+>&Qt;-Optionen</arg
+> <arg choice="opt"
+>&kde;-Optionen</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Beschreibung</title>
+
+<para
+><command
+>nepomukserver</command
+> startet den Nepomuk-Server, der alle Nepomuk-Dienste verwaltet und eine Programmierschnittstelle zu D-Bus zur Verfügung stellt. </para>
+<para
+>Das Programm benutzt <command
+>nepomukservicestub</command
+>, um alle eingerichteten Nepomuk-Dienste zu starten. </para>
+</refsect1>
+
+<refsect1>
+<title
+>Allgemeine Optionen</title>
+<para>
+<variablelist>
+
+<varlistentry>
+<term
+><option
+>--author</option
+></term>
+<listitem>
+<para
+>Zeigt Informationen über den Autor.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--help</option
+></term>
+<listitem>
+<para
+>Hilfe zu den Optionen anzeigen.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--help-all</option
+></term>
+<listitem>
+<para
+>Alle Optionen anzeigen</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--help-kde</option
+></term>
+<listitem>
+<para
+>&kde;-Optionen anzeigen.</para>
+
+
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--help-qt</option
+></term>
+<listitem>
+<para
+>Spezielle Optionen für Qt anzeigen</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--license</option
+></term>
+<listitem>
+<para
+>Lizenzinformationen anzeigen.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>-v</option
+> <option
+>--version</option
+></term>
+<listitem>
+<para
+>Versionsinformation anzeigen</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+</refsect1>
+
+<refsect1>
+<title
+>Siehe auch</title>
+<para
+><replaceable
+>nepomukservicestub</replaceable
+>(8) </para>
+</refsect1>
+
+<refsect1>
+<title
+>Fehler</title>
+<para
+>Berichten Sie Fehler auf <ulink url="http://bugs.kde.org"
+>bugs.kde.org</ulink
+>.</para>
+</refsect1>
+
+</refentry>

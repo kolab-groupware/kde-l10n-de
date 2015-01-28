@@ -1,0 +1,31 @@
+#! /bin/sh
+
+# Copyright 2007 Nicolas GOUTTE <goutte@kde.org>
+# License: GNU LGPL 2.0+
+
+# This script checks the PO files with the help of Gettext's msgfmt tool
+
+if test -f subdirs; then
+     for lang in `cat subdirs`; do
+         # Note: we do not use 'cd' here, to allow msgfmt to generate errors and warnings with paths containing the language code
+
+         if test -f $lang/messages/kdelibs/kdelibs4.po; then
+             find $lang -name *.po | xargs perl scripts/change-header.pl $lang/messages/kdelibs/kdelibs4.po
+         fi
+
+         # Check all PO files with Gettext's msgfmt
+         find $lang -name \*.po | xargs -r -n1 msgfmt --check-header -o /dev/null
+
+         # Find POT files (which should not be there)
+         pot=`find $lang -name \*.pot`
+         if test `echo "$pot"| wc --bytes` -gt 1; then
+             echo "Warning: language $lang contains POT files!"
+             echo $pot
+             echo "--- end of list ---"
+         fi
+     done
+      
+     perl scripts/check_desktop_files
+else
+     echo "ERROR: could not find the subdirs file! (Wrong directory?)"
+fi 

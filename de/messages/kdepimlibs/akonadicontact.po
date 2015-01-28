@@ -1,0 +1,1764 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2011, 2012, 2013, 2014.
+# Frederik Schwarzer <schwarzer@kde.org>, 2009, 2010, 2011, 2012.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2009.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2010.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
+# Intevation GmbH, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: akonadicontact\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-01-20 06:58+0000\n"
+"PO-Revision-Date: 2014-02-20 08:44+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Frederik Schwarzer"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "schwarzer@kde.org"
+
+#. i18n: ectx: whatsthis, entry (ShowAddressAction), group (Show Address Settings)
+#: actions/contactactionssettings.kcfg.cmake:17
+msgid ""
+"Defines which application shall be used to show the postal address of a "
+"contact on a map. If 'Web Browser' is selected, an URL can be defined with "
+"placeholders for the single address parts. If 'External Application' is "
+"selected, a command with placeholders can be defined."
+msgstr ""
+"Legt die Anwendung fest, die zur Anzeige der postalischen Adresse eines "
+"Kontakts auf einer Karte verwendet werden soll. Wenn „Webbrowser“ ausgewählt "
+"ist, können Sie eine Adresse mit Platzhaltern angeben. Die Platzhalter "
+"können dann durch einzelne Teile der fraglichen Adresse ersetzt werden. Wenn "
+"„Externe Anwendung“ ausgewählt ist, können Sie einen Befehl mit "
+"entsprechenden Platzhaltern angeben."
+
+#. i18n: ectx: whatsthis, entry (AddressUrl), group (Show Address Settings)
+#: actions/contactactionssettings.kcfg.cmake:22
+msgid ""
+"This URL defines the website that shall be used to show a contact's postal "
+"address."
+msgstr ""
+"Diese Adresse definiert die Internetseite, mit der die Anschrift des "
+"Kontakts angezeigt werden soll."
+
+#. i18n: ectx: tooltip, entry (AddressUrl), group (Show Address Settings)
+#: actions/contactactionssettings.kcfg.cmake:28
+#, no-c-format
+msgid ""
+"The following placeholders can be used in the URL:\n"
+"   %s: Street\n"
+"   %r: Region\n"
+"   %l: Location\n"
+"   %z: Zip Code\n"
+"   %c: Country ISO Code"
+msgstr ""
+"Die folgenden Platzhalter können in der Adresse verwendet werden:\n"
+"   %s: Straße\n"
+"   %r: Region\n"
+"   %l: Ort\n"
+"   %z: Postleitzahl\n"
+"   %c: ISO-Ländercode"
+
+#. i18n: ectx: label, entry (AddressCommand), group (Show Address Settings)
+#: actions/contactactionssettings.kcfg.cmake:31
+msgid "Address Command"
+msgstr "Adress-Befehl"
+
+#. i18n: ectx: whatsthis, entry (AddressCommand), group (Show Address Settings)
+#: actions/contactactionssettings.kcfg.cmake:32
+msgid ""
+"This command defines the application that shall be executed to show a "
+"contact's postal address."
+msgstr ""
+"Dieser Befehl definiert die Anwendung, mit der die Postanschrift des "
+"Kontakts angezeigt werden soll."
+
+#. i18n: ectx: tooltip, entry (AddressCommand), group (Show Address Settings)
+#: actions/contactactionssettings.kcfg.cmake:38
+#, no-c-format
+msgid ""
+"The following placeholders can be used in the command:\n"
+"   %s: Street\n"
+"   %r: Region\n"
+"   %l: Location\n"
+"   %z: Zip Code\n"
+"   %c: Country ISO Code"
+msgstr ""
+"Die folgenden Platzhalter können in dem Befehl verwendet werden:\n"
+"   %s: Straße\n"
+"   %r: Region\n"
+"   %l: Ort\n"
+"   %z: Postleitzahl\n"
+"   %c: ISO-Ländercode"
+
+#. i18n: ectx: whatsthis, entry (DialPhoneNumberAction), group (Phone Dial Settings)
+#: actions/contactactionssettings.kcfg.cmake:51
+msgid ""
+"Defines which application shall be used to dial the phone number of a "
+"contact. If 'Skype' is selected the Skype application will be started (if "
+"installed on the computer) and the number is dialed. If 'External "
+"Application' is selected, a command with placeholders can be defined."
+msgstr ""
+"Legt die Anwendung fest, mit deren Hilfe die Telefonnummer eines Kontakts "
+"angerufen werden soll. Wenn Sie „Skype“ auswählen, wird Skype gestartet "
+"(sofern es installiert ist) und die Rufnummer wird gewählt. Wenn Sie eine "
+"externe Anwendung auswählen, können Sie einen Befehl mit Platzhaltern "
+"angeben."
+
+#. i18n: ectx: label, entry (PhoneCommand), group (Phone Dial Settings)
+#: actions/contactactionssettings.kcfg.cmake:55
+msgid "Phone Command"
+msgstr "Telefon-Befehl"
+
+#. i18n: ectx: whatsthis, entry (PhoneCommand), group (Phone Dial Settings)
+#: actions/contactactionssettings.kcfg.cmake:56
+msgid ""
+"This command defines the application that shall be executed to dial a "
+"contact's phone number."
+msgstr ""
+"Dieser Befehl definiert die Anwendung, mit der eine Telefonverbindung mit "
+"dem Kontakt hergestellt werden soll."
+
+#. i18n: ectx: tooltip, entry (PhoneCommand), group (Phone Dial Settings)
+#: actions/contactactionssettings.kcfg.cmake:59
+#, no-c-format
+msgid ""
+"The following placeholders can be used in the command:\n"
+"   %N: The raw number as stored in the address book.\n"
+"   %n: The normalized number with all non-digit characters removed."
+msgstr ""
+"Die folgenden Platzhalter können in dem Befehl verwendet werden:\n"
+"   %N: Die Nummer, wie sie im Adressbuch gespeichert ist.\n"
+"   %n: Die bereinigte Nummer, in der nur noch Ziffern vorkommen."
+
+#. i18n: ectx: whatsthis, entry (SendSmsAction), group (Send SMS Settings)
+#: actions/contactactionssettings.kcfg.cmake:71
+msgid ""
+"Defines which application shall be used to send an SMS to the phone number "
+"of a contact. If 'Skype' is selected the Skype application will be started "
+"(if installed on the computer) and the SMS is sent via Skype. If 'External "
+"Application' is selected, a command with placeholders can be defined."
+msgstr ""
+"Legt die Anwendung fest, mit deren Hilfe eine SMS an die Telefonnummer eines "
+"Kontakts gesendet werden soll. Wenn Sie „Skype“ auswählen, wird Skype "
+"gestartet (sofern es installiert ist) und die SMS wird über Skype "
+"verschickt. Wenn Sie eine externe Anwendung auswählen, können Sie einen "
+"Befehl mit Platzhaltern angeben."
+
+#. i18n: ectx: label, entry (SmsCommand), group (Send SMS Settings)
+#: actions/contactactionssettings.kcfg.cmake:75
+msgid "SMS Command"
+msgstr "SMS-Befehl"
+
+#. i18n: ectx: whatsthis, entry (SmsCommand), group (Send SMS Settings)
+#: actions/contactactionssettings.kcfg.cmake:76
+msgid ""
+"This command defines the application that shall be executed to send an SMS "
+"to a contact's phone number."
+msgstr ""
+"Dieser Befehl definiert die Anwendung, mit der eine SMS an die Telefonnummer "
+"eines Kontakts gesendet werden soll."
+
+#. i18n: ectx: tooltip, entry (SmsCommand), group (Send SMS Settings)
+#: actions/contactactionssettings.kcfg.cmake:80
+#, no-c-format
+msgid ""
+"The following placeholders can be used in the command:\n"
+"   %N: The raw number as stored in the address book.\n"
+"   %n: The normalized number with all non-digit characters removed.\n"
+"   %t: The text"
+msgstr ""
+"Die folgenden Platzhalter können in dem Befehl verwendet werden:\n"
+"   %N: Die Nummer, wie sie im Adressbuch gespeichert ist.\n"
+"   %n: Die bereinigte Nummer, in der nur noch Ziffern vorkommen.\n"
+"   %t: Der Text."
+
+#: actions/dialphonenumberaction.cpp:76 actions/sendsmsaction.cpp:59
+msgid ""
+"There is no application set which could be executed.\n"
+"Please go to the settings dialog and configure one."
+msgstr ""
+"Es ist keine Anwendung festgelegt, die ausgeführt werden kann.\n"
+"Diese muss erst im Dialog „Einstellungen“ eingerichtet werden."
+
+#: actions/qdialer.cpp:39
+msgid "Dialing a number is not supported"
+msgstr "Anwählen einer Telefonnummer wird nicht unterstützt"
+
+#: actions/qdialer.cpp:48
+msgid "Sending an SMS is not supported"
+msgstr "Das Senden einer SMS wird nicht unterstützt"
+
+#: actions/qekigadialer.cpp:84
+msgid ""
+"Unable to start ekiga process, check that ekiga executable is in your PATH "
+"variable."
+msgstr ""
+"Der Ekiga-Prozess kann nicht gestartet werden. Bitte stellen Sie sicher, "
+"dass sich die ausführbare Ekiga-Datei in einem Pfad der PATH-"
+"Umgebungsvariable befindet."
+
+#: actions/qekigadialer.cpp:105
+msgid "Ekiga Public API (D-Bus) seems to be disabled."
+msgstr "Die „Ekiga Public API (D-Bus)“ scheint deaktiviert zu sein."
+
+#: actions/qekigadialer.cpp:125
+msgid "Sending an SMS is currently not supported on Ekiga."
+msgstr "Das Senden einer SMS wird momentan für Ekiga nicht unterstützt."
+
+#: actions/qsflphonedialer.cpp:68
+msgid ""
+"Unable to start sflphone-client-kde process, check that sflphone-client-kde "
+"executable is in your PATH variable."
+msgstr ""
+"Der Prozess „sflphone-client-kde“ kann nicht gestartet werden. Bitte stellen "
+"Sie sicher, dass sich die ausführbare Datei „sflphone-client-kde“ in einem "
+"Pfad der PATH-Umgebungsvariable befindet."
+
+#: actions/qskypedialer.cpp:87
+msgid ""
+"Unable to start skype process, check that skype executable is in your PATH "
+"variable."
+msgstr ""
+"Der Skype-Prozess kann nicht gestartet werden. Bitte stellen Sie sicher, "
+"dass sich die ausführbare Skype-Datei in einem Pfad der PATH-"
+"Umgebungsvariable befindet."
+
+#: actions/qskypedialer.cpp:108
+msgid "Skype Public API (D-Bus) seems to be disabled."
+msgstr "Die „Skype Public API (D-Bus)“ scheint deaktiviert zu sein."
+
+#: actions/qskypedialer.cpp:117
+msgid "Skype registration failed."
+msgstr "Skype-Registrierung fehlgeschlagen."
+
+#: actions/qskypedialer.cpp:126
+msgid "Protocol mismatch."
+msgstr "Protokollfehler."
+
+#: actions/smsdialog.cpp:49
+msgid "SMS text"
+msgstr "SMS-Text"
+
+#: actions/smsdialog.cpp:62
+#, kde-format
+msgid "Please insert SMS text for an SMS to the following number: %1"
+msgstr "Bitte geben Sie den Text für eine SMS an die folgende Nummer ein: %1"
+
+#: actions/smsdialog.cpp:95
+#, kde-format
+msgid "%1/%2 (%3 SMS)"
+msgstr "%1/%2 (%3 SMS)"
+
+#: contacteditor.cpp:168
+msgid ""
+"The contact has been changed by someone else.\n"
+"What should be done?"
+msgstr ""
+"Der Kontakt wurde von jemand anderem geändert.\n"
+"Wie soll damit weiter verfahren werden?"
+
+#: contacteditor.cpp:169 contactgroupeditor.cpp:144
+msgid "Take over changes"
+msgstr "Änderungen übernehmen"
+
+#: contacteditor.cpp:170 contactgroupeditor.cpp:145
+msgid "Ignore and Overwrite changes"
+msgstr "Änderungen ignorieren und überschreiben"
+
+#: contacteditor.cpp:273 contacteditor.cpp:324 contactgroupeditor.cpp:280
+msgid "Select Address Book"
+msgstr "Adressbuch auswählen"
+
+#: contacteditor.cpp:274 contacteditor.cpp:325
+msgid "Select the address book the new contact shall be saved in:"
+msgstr ""
+"Wählen Sie das Adressbuch, in dem der neue Kontakt gespeichert werden soll:"
+
+#: contacteditordialog.cpp:48
+msgid "New Contact"
+msgstr "Neuer Kontakt"
+
+#: contacteditordialog.cpp:48
+msgid "Edit Contact"
+msgstr "Kontakt bearbeiten"
+
+#: contacteditordialog.cpp:63 contactgroupeditordialog.cpp:100
+msgid "Add to:"
+msgstr "Hinzufügen zu:"
+
+#: contactgroupeditor.cpp:143
+msgid ""
+"The contact group has been changed by someone else.\n"
+"What should be done?"
+msgstr ""
+"Die Kontaktgruppe wurde von jemand anderem geändert.\n"
+"Wie soll damit weiter verfahren werden?"
+
+#: contactgroupeditor.cpp:176
+msgid "The name of the contact group must not be empty."
+msgstr "Der Name der Kontaktgruppe kann nicht leer sein."
+
+#: contactgroupeditor.cpp:281
+msgid "Select the address book the new contact group shall be saved in:"
+msgstr ""
+"Wählen Sie das Adressbuch, in dem die neue Kontaktgruppe gespeichert werden "
+"soll:"
+
+#. i18n: ectx: property (text), widget (QLabel, groupNameLabel)
+#: contactgroupeditor.ui:17
+msgctxt "@label The name of a contact group"
+msgid "Name:"
+msgstr "Name:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: contactgroupeditor.ui:43
+msgctxt "@label"
+msgid "Contact group members:"
+msgstr "Mitglieder der Kontaktgruppe:"
+
+#: contactgroupeditordialog.cpp:82
+msgid "New Contact Group"
+msgstr "Neue Kontaktgruppe"
+
+#: contactgroupeditordialog.cpp:82
+msgid "Edit Contact Group"
+msgstr "Kontaktgruppe bearbeiten"
+
+#: contactgrouplineedit.cpp:197
+msgid "Select preferred email address"
+msgstr "Bevorzugte E-Mail-Adresse auswählen"
+
+#: contactgroupmodel.cpp:212
+#, kde-format
+msgid "The member with name <b>%1</b> is missing an email address"
+msgstr "Dem Mitglied mit dem Namen <b>%1</b> fehlt die E-Mail-Adresse"
+
+#: contactgroupmodel.cpp:258
+msgid "Contact does not exist any more"
+msgstr "Der Kontakt ist nicht mehr vorhanden."
+
+#: contactgroupmodel.cpp:413
+msgctxt "contact's name"
+msgid "Name"
+msgstr "Name"
+
+#: contactgroupmodel.cpp:415
+msgctxt "contact's email address"
+msgid "EMail"
+msgstr "E-Mail"
+
+#: contactgroupviewer.cpp:69
+#, kde-format
+msgid "Contact Group %1"
+msgstr "Kontaktgruppe %1"
+
+#: contactgroupviewer.cpp:83 standardcontactformatter.cpp:216
+msgid "Address Book"
+msgstr "Adressbuch"
+
+#: contactgroupviewerdialog.cpp:42
+msgid "Show Contact Group"
+msgstr "Kontaktgruppe anzeigen"
+
+#: contactstreemodel.cpp:234
+msgctxt "@title:column address books overview"
+msgid "Address Books"
+msgstr "Adressbücher"
+
+#: contactstreemodel.cpp:244
+msgctxt "@title:column name of a person"
+msgid "Name"
+msgstr "Name"
+
+#: contactstreemodel.cpp:246
+msgctxt "@title:column family name of a person"
+msgid "Family Name"
+msgstr "Nachname"
+
+#: contactstreemodel.cpp:248
+msgctxt "@title:column given name of a person"
+msgid "Given Name"
+msgstr "Vorname"
+
+#: contactstreemodel.cpp:252
+msgctxt "@title:column home address of a person"
+msgid "Home"
+msgstr "Privat"
+
+#: contactstreemodel.cpp:254
+msgctxt "@title:column work address of a person"
+msgid "Work"
+msgstr "Dienstlich"
+
+#: contactstreemodel.cpp:256
+msgctxt "@title:column phone numbers of a person"
+msgid "Phone Numbers"
+msgstr "Telefonnummern"
+
+#: contactstreemodel.cpp:258
+msgctxt "@title:column the preferred email addresses of a person"
+msgid "Preferred EMail"
+msgstr "Bevorzugte E-Mail-Adresse"
+
+#: contactstreemodel.cpp:260
+msgctxt "@title:column all email addresses of a person"
+msgid "All EMails"
+msgstr "Alle E-Mail-Adressen"
+
+#: contactviewer.cpp:82
+#, kde-format
+msgid "Contact %1"
+msgstr "Kontakt %1"
+
+#: contactviewerdialog.cpp:67
+msgid "Show Contact"
+msgstr "Kontakt anzeigen"
+
+#: editor/addresseditwidget.cpp:196 editor/phoneeditwidget.cpp:86
+msgctxt "@item:inlistbox Category of contact info field"
+msgid "Other..."
+msgstr "Weitere ..."
+
+#: editor/addresseditwidget.cpp:241 editor/addresseditwidget.cpp:418
+msgctxt "@label:listbox type of address"
+msgid "Address type:"
+msgstr "Adresstyp:"
+
+#: editor/addresseditwidget.cpp:259
+msgctxt "@action:button street/postal"
+msgid "New..."
+msgstr "Neu ..."
+
+#: editor/addresseditwidget.cpp:261
+msgctxt "@action:button street/postal"
+msgid "Edit..."
+msgstr "Bearbeiten ..."
+
+#: editor/addresseditwidget.cpp:263
+msgctxt "@action:button street/postal"
+msgid "Delete"
+msgstr "Löschen"
+
+#: editor/addresseditwidget.cpp:325
+msgid "Do you really want to delete this address?"
+msgstr "Möchten Sie diese Adresse wirklich löschen?"
+
+#: editor/addresseditwidget.cpp:406
+msgctxt "street/postal"
+msgid "Edit Address"
+msgstr "Adresse bearbeiten"
+
+#: editor/addresseditwidget.cpp:425
+#, kde-format
+msgctxt "<streetLabel>:"
+msgid "%1:"
+msgstr "%1:"
+
+#: editor/addresseditwidget.cpp:436
+#, kde-format
+msgctxt "<postOfficeBoxLabel>:"
+msgid "%1:"
+msgstr "%1:"
+
+#: editor/addresseditwidget.cpp:442
+#, kde-format
+msgctxt "<localityLabel>:"
+msgid "%1:"
+msgstr "%1:"
+
+#: editor/addresseditwidget.cpp:448
+#, kde-format
+msgctxt "<regionLabel>:"
+msgid "%1:"
+msgstr "%1:"
+
+#: editor/addresseditwidget.cpp:454
+#, kde-format
+msgctxt "<postalCodeLabel>:"
+msgid "%1:"
+msgstr "%1:"
+
+#: editor/addresseditwidget.cpp:460
+#, kde-format
+msgctxt "<countryLabel>:"
+msgid "%1:"
+msgstr "%1:"
+
+#: editor/addresseditwidget.cpp:466
+msgid "Edit Label..."
+msgstr "Bezeichnung bearbeiten ..."
+
+#: editor/addresseditwidget.cpp:474
+msgctxt "street/postal"
+msgid "This is the preferred address"
+msgstr "Dies ist die bevorzugte Adresse"
+
+#: editor/addresseditwidget.cpp:566
+msgctxt "street/postal"
+msgid "Edit Address Type"
+msgstr "Art der Adresse bearbeiten"
+
+#: editor/addresseditwidget.cpp:576
+msgctxt "street/postal"
+msgid "Address Types"
+msgstr "Adressarten"
+
+#: editor/contacteditorwidget.cpp:161
+msgctxt "@title:tab"
+msgid "Contact"
+msgstr "Kontakt"
+
+#: editor/contacteditorwidget.cpp:163
+msgctxt "@title:group Name related properties of a contact"
+msgid "Name"
+msgstr "Name"
+
+#: editor/contacteditorwidget.cpp:164
+msgctxt "@title:group"
+msgid "Internet"
+msgstr "Internet"
+
+#: editor/contacteditorwidget.cpp:165
+msgctxt "@title:group"
+msgid "Phones"
+msgstr "Telefonnummern"
+
+#: editor/contacteditorwidget.cpp:179
+msgctxt "@label The name of a contact"
+msgid "Name:"
+msgstr "Name:"
+
+#: editor/contacteditorwidget.cpp:190
+msgctxt "@label The display name of a contact"
+msgid "Display:"
+msgstr "Anzeigen:"
+
+#: editor/contacteditorwidget.cpp:198
+msgctxt "@label The nickname of a contact"
+msgid "Nickname:"
+msgstr "Spitzname:"
+
+#: editor/contacteditorwidget.cpp:206
+msgctxt "@label The pronunciation of a contact's name"
+msgid "Pronunciation:"
+msgstr "Aussprache:"
+
+#: editor/contacteditorwidget.cpp:217
+msgctxt "@label The email address of a contact"
+msgid "Email:"
+msgstr "E-Mail:"
+
+#: editor/contacteditorwidget.cpp:225
+msgctxt "@label The homepage URL of a contact"
+msgid "Homepage:"
+msgstr "Internetseite:"
+
+#: editor/contacteditorwidget.cpp:233
+msgctxt "@label The blog URL of a contact"
+msgid "Blog:"
+msgstr "Blog:"
+
+#: editor/contacteditorwidget.cpp:241
+msgctxt "@label The instant messaging address of a contact"
+msgid "Messaging:"
+msgstr "Instant-Messaging:"
+
+#: editor/contacteditorwidget.cpp:259
+msgctxt "@label The categories of a contact"
+msgid "Categories:"
+msgstr "Kategorien: "
+
+#: editor/contacteditorwidget.cpp:270
+msgid "Messages"
+msgstr "Nachrichten"
+
+#: editor/contacteditorwidget.cpp:276
+msgid "Show messages received from this contact as:"
+msgstr "Nachrichten von diesem Kontakt anzeigen als:"
+
+#: editor/contacteditorwidget.cpp:281
+msgid "Default"
+msgstr "Standard"
+
+#: editor/contacteditorwidget.cpp:281
+msgid "Plain Text"
+msgstr "Einfacher Text"
+
+#: editor/contacteditorwidget.cpp:281
+msgid "HTML"
+msgstr "HTML"
+
+#: editor/contacteditorwidget.cpp:289
+msgid "Allow remote content in received HTML messages"
+msgstr ""
+"Inhalte von entfernten Servern in empfangenen HTML-Nachrichten zulassen"
+
+#: editor/contacteditorwidget.cpp:300
+msgctxt "@title:tab"
+msgid "Location"
+msgstr "Ort"
+
+#: editor/contacteditorwidget.cpp:302
+msgctxt "@title:group"
+msgid "Addresses"
+msgstr "Adressen"
+
+#: editor/contacteditorwidget.cpp:303
+msgctxt "@title:group"
+msgid "Coordinates"
+msgstr "Koordinaten"
+
+#: editor/contacteditorwidget.cpp:328
+msgctxt "@title:tab"
+msgid "Business"
+msgstr "Geschäftlich"
+
+#: editor/contacteditorwidget.cpp:330
+msgctxt "@title:group General properties of a contact"
+msgid "General"
+msgstr "Allgemein"
+
+#: editor/contacteditorwidget.cpp:331
+msgctxt "@title:group"
+msgid "Groupware"
+msgstr "Arbeitsgruppen"
+
+#: editor/contacteditorwidget.cpp:345
+msgctxt "@label The organization of a contact"
+msgid "Organization:"
+msgstr "Organisation:"
+
+#: editor/contacteditorwidget.cpp:353
+msgctxt "@label The profession of a contact"
+msgid "Profession:"
+msgstr "Beruf:"
+
+#: editor/contacteditorwidget.cpp:361
+msgctxt "@label The title of a contact"
+msgid "Title:"
+msgstr "Titel:"
+
+#: editor/contacteditorwidget.cpp:369
+msgctxt "@label The department of a contact"
+msgid "Department:"
+msgstr "Abteilung:"
+
+#: editor/contacteditorwidget.cpp:377
+msgctxt "@label The office of a contact"
+msgid "Office:"
+msgstr "Büro:"
+
+#: editor/contacteditorwidget.cpp:385
+msgctxt "@label The manager's name of a contact"
+msgid "Manager's name:"
+msgstr "Name des Managers:"
+
+#: editor/contacteditorwidget.cpp:393
+msgctxt "@label The assistant's name of a contact"
+msgid "Assistant's name:"
+msgstr "Name des Assistenten:"
+
+#: editor/contacteditorwidget.cpp:402
+msgctxt "@label The free/busy information of a contact"
+msgid "Free/Busy:"
+msgstr "Frei/Beschäftigt:"
+
+#: editor/contacteditorwidget.cpp:417
+msgctxt "@title:tab Personal properties of a contact"
+msgid "Personal"
+msgstr "Persönliches"
+
+#: editor/contacteditorwidget.cpp:419
+msgctxt "@title:group Date related properties of a contact"
+msgid "Dates"
+msgstr "Daten"
+
+#: editor/contacteditorwidget.cpp:420
+msgctxt "@title:group Family related properties of a contact"
+msgid "Family"
+msgstr "Familie"
+
+#: editor/contacteditorwidget.cpp:431
+msgctxt "@label The birthdate of a contact"
+msgid "Birthdate:"
+msgstr "Geburtstag:"
+
+#: editor/contacteditorwidget.cpp:439
+msgctxt "@label The wedding anniversary of a contact"
+msgid "Anniversary:"
+msgstr "Jahrestag:"
+
+#: editor/contacteditorwidget.cpp:451
+msgctxt "@label The partner's name of a contact"
+msgid "Partner's name:"
+msgstr "Name des Partners:"
+
+#: editor/contacteditorwidget.cpp:467
+msgctxt "@title:tab"
+msgid "Notes"
+msgstr "Notizen"
+
+#: editor/contacteditorwidget.cpp:479
+msgctxt "@title:tab"
+msgid "Custom Fields"
+msgstr "Eigene Felder"
+
+#: editor/customfieldeditordialog.cpp:35
+msgid "Edit Custom Field"
+msgstr "Eigenes Feld bearbeiten"
+
+#: editor/customfieldeditordialog.cpp:46
+msgid "Use field for all contacts"
+msgstr "Dieses Feld für alle Kontakte verwenden"
+
+#: editor/customfieldeditordialog.cpp:48
+msgctxt "The title of a custom field"
+msgid "Title"
+msgstr "Titel"
+
+#: editor/customfieldeditordialog.cpp:49
+msgctxt "The type of a custom field"
+msgid "Type"
+msgstr "Art"
+
+#: editor/customfieldeditordialog.cpp:54
+msgid "Key"
+msgstr "Schlüssel"
+
+#: editor/customfieldeditordialog.cpp:57
+msgctxt "@label Opens the advanced dialog"
+msgid "Advanced"
+msgstr "Erweitert"
+
+#: editor/customfieldeditordialog.cpp:59
+msgid "Text"
+msgstr "Text"
+
+#: editor/customfieldeditordialog.cpp:60
+msgid "Numeric"
+msgstr "Numerisch"
+
+#: editor/customfieldeditordialog.cpp:61
+msgid "Boolean"
+msgstr "Boolesch"
+
+#: editor/customfieldeditordialog.cpp:62
+msgid "Date"
+msgstr "Datum"
+
+#: editor/customfieldeditordialog.cpp:63
+msgid "Time"
+msgstr "Zeit"
+
+#: editor/customfieldeditordialog.cpp:64
+msgid "DateTime"
+msgstr "Datum/Zeit"
+
+#: editor/customfieldeditordialog.cpp:65
+msgid "Url"
+msgstr "Adresse (URL)"
+
+#: editor/customfieldseditwidget.cpp:67 editor/emaileditwidget.cpp:209
+msgid "Add..."
+msgstr "Hinzufügen ..."
+
+#: editor/customfieldseditwidget.cpp:68 editor/emaileditwidget.cpp:214
+msgid "Edit..."
+msgstr "Bearbeiten ..."
+
+#: editor/customfieldseditwidget.cpp:69 editor/dateeditwidget.cpp:51
+#: editor/emaileditwidget.cpp:220 editor/phoneeditwidget.cpp:297
+#: editor/soundeditwidget.cpp:161
+msgid "Remove"
+msgstr "Entfernen"
+
+#: editor/customfieldseditwidget.cpp:327
+msgctxt "Custom Fields"
+msgid "Do you really want to delete the selected custom field?"
+msgstr "Möchten Sie das ausgewählte Feld wirklich löschen?"
+
+#: editor/customfieldseditwidget.cpp:328
+msgid "Confirm Delete"
+msgstr "Löschen bestätigen"
+
+#: editor/customfieldsmodel.cpp:218
+msgctxt "custom field title"
+msgid "Title"
+msgstr "Titel"
+
+#: editor/customfieldsmodel.cpp:220
+msgctxt "custom field value"
+msgid "Value"
+msgstr "Wert"
+
+#: editor/displaynameeditwidget.cpp:60
+msgid "Short Name"
+msgstr "Kurzname"
+
+#: editor/displaynameeditwidget.cpp:61
+msgid "Full Name"
+msgstr "Vollständiger Name"
+
+#: editor/displaynameeditwidget.cpp:62
+msgid "Reverse Name with Comma"
+msgstr "Umgekehrter Name mit Komma"
+
+#: editor/displaynameeditwidget.cpp:63
+msgid "Reverse Name"
+msgstr "Umgekehrter Name"
+
+#: editor/displaynameeditwidget.cpp:64
+msgid "Organization"
+msgstr "Organisation"
+
+#: editor/displaynameeditwidget.cpp:65
+msgctxt "@item:inlistbox A custom name format"
+msgid "Custom"
+msgstr "Benutzerdefiniert"
+
+#: editor/emaileditwidget.cpp:186
+msgid "Edit Email Addresses"
+msgstr "E-Mail-Adressen bearbeiten"
+
+#: editor/emaileditwidget.cpp:226
+msgid "Set as Standard"
+msgstr "Als Standard festlegen"
+
+#: editor/emaileditwidget.cpp:284
+msgid "Add Email"
+msgstr "E-Mail-Adresse hinzufügen"
+
+#: editor/emaileditwidget.cpp:284
+msgid "New Email:"
+msgstr "Neue E-Mail-Adresse:"
+
+#: editor/emaileditwidget.cpp:311
+msgid "Edit Email"
+msgstr "E-Mail-Adresse bearbeiten"
+
+#: editor/emaileditwidget.cpp:312
+msgctxt "@label:textbox Inputfield for an email address"
+msgid "Email:"
+msgstr "E-Mail:"
+
+#: editor/emaileditwidget.cpp:338
+#, kde-format
+msgid ""
+"<qt>Are you sure that you want to remove the email address <b>%1</b>?</qt>"
+msgstr "<qt>Möchten Sie die E-Mail-Adresse <b>%1</b> wirklich löschen?</qt>"
+
+#: editor/emaileditwidget.cpp:339
+msgid "Confirm Remove"
+msgstr "Löschen bestätigen"
+
+#: editor/emaileditwidget.cpp:341
+msgid "&Delete"
+msgstr "&Löschen"
+
+#: editor/geoeditwidget.cpp:102
+msgctxt "@label"
+msgid "Latitude:"
+msgstr "Breitengrad:"
+
+#: editor/geoeditwidget.cpp:109
+msgctxt "@label"
+msgid "Longitude:"
+msgstr "Längengrad:"
+
+#: editor/geoeditwidget.cpp:116
+msgctxt "@label Change the coordinates"
+msgid "Change..."
+msgstr "Ändern ..."
+
+#: editor/geoeditwidget.cpp:149 editor/geoeditwidget.cpp:150
+msgctxt "@label Coordinates are not available"
+msgid "n/a"
+msgstr "n/v"
+
+#: editor/geoeditwidget.cpp:152 editor/geoeditwidget.cpp:153
+#, kde-format
+msgctxt "@label The formatted coordinates"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: editor/geoeditwidget.cpp:211
+msgctxt "@title:window"
+msgid "Coordinate Selection"
+msgstr "Auswahl der Koordinaten"
+
+#: editor/geoeditwidget.cpp:225
+msgctxt "@title:group Decimal representation of coordinates"
+msgid "Decimal"
+msgstr "Dezimal"
+
+#: editor/geoeditwidget.cpp:230 editor/geoeditwidget.cpp:259
+msgctxt "@label:spinbox"
+msgid "Latitude:"
+msgstr "Breitengrad:"
+
+#: editor/geoeditwidget.cpp:242 editor/geoeditwidget.cpp:291
+msgctxt "@label:spinbox"
+msgid "Longitude:"
+msgstr "Längengrad:"
+
+#: editor/geoeditwidget.cpp:254
+msgctxt "@title:group"
+msgid "Sexagesimal"
+msgstr "Sexagesimal"
+
+#: editor/geoeditwidget.cpp:287
+msgctxt "@item:inlistbox Latitude direction"
+msgid "North"
+msgstr "Nord"
+
+#: editor/geoeditwidget.cpp:288
+msgctxt "@item:inlistbox Latitude direction"
+msgid "South"
+msgstr "Süd"
+
+#: editor/geoeditwidget.cpp:317
+msgctxt "@item:inlistbox Longtitude direction"
+msgid "East"
+msgstr "Ost"
+
+#: editor/geoeditwidget.cpp:318
+msgctxt "@item:inlistbox Longtitude direction"
+msgid "West"
+msgstr "West"
+
+#: editor/geoeditwidget.cpp:514
+msgctxt "@item:inlistbox Undefined location"
+msgid "Undefined"
+msgstr "Undefiniert"
+
+#: editor/im/imeditordialog.cpp:40
+msgctxt "@title:window"
+msgid "Edit Instant Messaging Addresses"
+msgstr "Instant-Messaging-Adressen bearbeiten"
+
+#: editor/im/imeditordialog.cpp:49
+msgctxt "@action:button"
+msgid "Add..."
+msgstr "Hinzufügen ..."
+
+#: editor/im/imeditordialog.cpp:50
+msgctxt "@action:button"
+msgid "Edit..."
+msgstr "Bearbeiten ..."
+
+#: editor/im/imeditordialog.cpp:51
+msgctxt "@action:button"
+msgid "Remove"
+msgstr "Entfernen"
+
+#: editor/im/imeditordialog.cpp:52
+msgctxt "@action:button"
+msgid "Set as Standard"
+msgstr "Als Standard festlegen"
+
+#: editor/im/imeditordialog.cpp:115
+msgctxt "@title:window"
+msgid "Add IM Address"
+msgstr "IM-Adresse hinzufügen .."
+
+#: editor/im/imeditordialog.cpp:135
+msgctxt "@title:window"
+msgid "Edit IM Address"
+msgstr "IM-Adresse bearbeiten"
+
+#: editor/im/imeditordialog.cpp:158
+#, kde-format
+msgctxt "@info Instant messaging"
+msgid ""
+"Do you really want to delete the selected <resource>%1</resource> address?"
+msgstr ""
+"Möchten Sie die ausgewählte Adresse <resource>%1</resource> wirklich löschen?"
+
+#: editor/im/imeditordialog.cpp:160
+msgctxt "@title:window"
+msgid "Confirm Delete Resource"
+msgstr "Löschen der Ressource bestätigen"
+
+#: editor/im/imitemdialog.cpp:48
+msgctxt "@item:inlistbox select from a list of IM protocols"
+msgid "Select..."
+msgstr "Auswählen ..."
+
+#: editor/im/imitemdialog.cpp:49
+msgctxt "@label:listbox"
+msgid "Protocol:"
+msgstr "Protokoll:"
+
+#: editor/im/imitemdialog.cpp:59
+msgctxt "@label:textbox IM address"
+msgid "Address:"
+msgstr "Adresse:"
+
+#: editor/im/immodel.cpp:212
+msgctxt "instant messaging protocol"
+msgid "Protocol"
+msgstr "Protokoll"
+
+#: editor/im/immodel.cpp:214
+msgctxt "instant messaging address"
+msgid "Address"
+msgstr "Adresse"
+
+#: editor/imagewidget.cpp:83
+msgid "This contact's image cannot be found."
+msgstr "Das Bild dieses Kontakts kann nicht gefunden werden."
+
+#: editor/imagewidget.cpp:123
+msgid "The photo of the contact (click to change)"
+msgstr "Das Foto des Kontakts (Klicken zum Ändern)"
+
+#: editor/imagewidget.cpp:125
+msgid "The logo of the company (click to change)"
+msgstr "Das Logo der Firma (Klicken zum Ändern)"
+
+#: editor/imagewidget.cpp:232
+msgid "Change photo..."
+msgstr "Photo ändern ..."
+
+#: editor/imagewidget.cpp:236
+msgid "Save photo..."
+msgstr "Photo speichern ..."
+
+#: editor/imagewidget.cpp:239
+msgid "Remove photo"
+msgstr "Photo entfernen"
+
+#: editor/imagewidget.cpp:244
+msgid "Change logo..."
+msgstr "Logo ändern ..."
+
+#: editor/imagewidget.cpp:248
+msgid "Save logo..."
+msgstr "Logo speichern ..."
+
+#: editor/imagewidget.cpp:251
+msgid "Remove logo"
+msgstr "Logo entfernen"
+
+#: editor/imeditwidget.cpp:46 editor/nameeditwidget.cpp:48
+msgid "..."
+msgstr "..."
+
+#: editor/kdatepickerpopup.cpp:95
+msgctxt "@option today"
+msgid "&Today"
+msgstr "&Heute"
+
+#: editor/kdatepickerpopup.cpp:96
+msgctxt "@option tomorrow"
+msgid "To&morrow"
+msgstr "&Morgen"
+
+#: editor/kdatepickerpopup.cpp:97
+msgctxt "@option next week"
+msgid "Next &Week"
+msgstr "Nächste &Woche"
+
+#: editor/kdatepickerpopup.cpp:98
+msgctxt "@option next month"
+msgid "Next M&onth"
+msgstr "Nächsten M&onat"
+
+#: editor/kdatepickerpopup.cpp:106
+msgctxt "@option do not specify a date"
+msgid "No Date"
+msgstr "Kein Datum"
+
+#: editor/nameeditdialog.cpp:33
+msgid "Edit Contact Name"
+msgstr "Kontaktnamen bearbeiten"
+
+#: editor/nameeditdialog.cpp:56
+msgid "Honorific prefixes:"
+msgstr "Titel-Abk. (vor Name):"
+
+#: editor/nameeditdialog.cpp:57
+msgid "Given name:"
+msgstr "Vorname:"
+
+#: editor/nameeditdialog.cpp:58
+msgid "Additional names:"
+msgstr "Zusätzliche Namen:"
+
+#: editor/nameeditdialog.cpp:59
+msgid "Family names:"
+msgstr "Nachnamen:"
+
+#: editor/nameeditdialog.cpp:60
+msgid "Honorific suffixes:"
+msgstr "Titel-Abk. (nach Name):"
+
+#: editor/nameeditdialog.cpp:64
+msgid "Dr."
+msgstr "Dr."
+
+#: editor/nameeditdialog.cpp:65
+msgid "Miss"
+msgstr "Fräulein"
+
+#: editor/nameeditdialog.cpp:66
+msgid "Mr."
+msgstr "Herr"
+
+#: editor/nameeditdialog.cpp:67
+msgid "Mrs."
+msgstr "Frau"
+
+#: editor/nameeditdialog.cpp:68
+msgid "Ms."
+msgstr "Frau"
+
+#: editor/nameeditdialog.cpp:69
+msgid "Prof."
+msgstr "Prof."
+
+#: editor/nameeditdialog.cpp:74
+msgid "I"
+msgstr "I"
+
+#: editor/nameeditdialog.cpp:75
+msgid "II"
+msgstr "II"
+
+#: editor/nameeditdialog.cpp:76
+msgid "III"
+msgstr "III"
+
+#: editor/nameeditdialog.cpp:77
+msgid "Jr."
+msgstr "Jun."
+
+#: editor/nameeditdialog.cpp:78
+msgid "Sr."
+msgstr "Sen."
+
+#: editor/phoneeditwidget.cpp:293
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: editor/phoneeditwidget.cpp:350
+msgid "Edit Phone Number"
+msgstr "Telefonnummer bearbeiten"
+
+#: editor/phoneeditwidget.cpp:362
+msgid "This is the preferred phone number"
+msgstr "Dies ist die bevorzugte Telefonnummer"
+
+#: editor/phoneeditwidget.cpp:365
+msgid "Types"
+msgstr "Arten"
+
+#: editor/soundeditwidget.cpp:86
+msgid "This contact's sound cannot be found."
+msgstr "Der Klang dieses Kontakts kann nicht gefunden werden."
+
+#: editor/soundeditwidget.cpp:138
+msgid "Click to play pronunciation"
+msgstr "Klicken Sie, um die Aussprache anzuhören"
+
+#: editor/soundeditwidget.cpp:141
+msgid "No pronunciation available"
+msgstr "Keine Aussprache-Informationen verfügbar"
+
+#: editor/soundeditwidget.cpp:150
+msgid "Play"
+msgstr "Wiedergeben"
+
+#: editor/soundeditwidget.cpp:154
+msgid "Change..."
+msgstr "Ändern ..."
+
+#: editor/soundeditwidget.cpp:158
+msgid "Save..."
+msgstr "Speichern ..."
+
+#: emailaddressselectionproxymodel.cpp:36
+#, kde-format
+msgid "Distribution List %1"
+msgstr "Verteilerliste %1"
+
+#: emailaddressselectionproxymodel.cpp:147
+#, kde-format
+msgctxt "Name and email address of a contact"
+msgid "%1 <%2>"
+msgstr "%1 <%2>"
+
+#: emailaddressselectionwidget.cpp:138
+msgctxt "@label Search in a list of contacts"
+msgid "Search:"
+msgstr "Suchen:"
+
+#: recentcontactscollectionrequestjob.cpp:41
+msgctxt "recent contacts folder"
+msgid "Recent Contacts"
+msgstr "Kürzlich verwendete Kontakte"
+
+#. i18n: ectx: label, entry (DefaultResourceId), group (SpecialCollections)
+#: recentcontactscollections.kcfg:9
+msgid "Id of the resource containing the default recent contacts collection."
+msgstr ""
+"Kennung der Ressource, die die voreingestellte Sammlung kürzlich verwendeter "
+"Kontakte enthält."
+
+#. i18n: ectx: whatsthis, entry (DefaultResourceId), group (SpecialCollections)
+#: recentcontactscollections.kcfg:10
+msgid "Id of the contacts resource containing the recent contacts collection."
+msgstr ""
+"Kennung der Kontakte-Ressource, die die Sammlung kürzlich verwendeter "
+"Kontakte enthält."
+
+#: standardcontactactionmanager.cpp:111
+msgid "Add Address Book Folder..."
+msgstr "Adressbuchordner hinzufügen ..."
+
+#: standardcontactactionmanager.cpp:114
+msgid ""
+"Add a new address book folder to the currently selected address book folder."
+msgstr ""
+"Einen neuen Adressbuchordner zum aktuell ausgewählten Adressbuchordner "
+"hinzufügen."
+
+#: standardcontactactionmanager.cpp:117
+msgctxt "@title:window"
+msgid "New Address Book Folder"
+msgstr "Neuen Adressbuchordner erstellen"
+
+#: standardcontactactionmanager.cpp:121
+#, kde-format
+msgid "Could not create address book folder: %1"
+msgstr "Adressbuchordner kann nicht erstellt werden: %1"
+
+#: standardcontactactionmanager.cpp:125
+msgid "Address book folder creation failed"
+msgstr "Erstellen des Adressbuchordners ist fehlgeschlagen"
+
+#: standardcontactactionmanager.cpp:130
+#, kde-format
+msgid "Copy Address Book Folder"
+msgid_plural "Copy %1 Address Book Folders"
+msgstr[0] "Adressbuchordner kopieren"
+msgstr[1] "%1 Adressbuchordner kopieren"
+
+#: standardcontactactionmanager.cpp:133
+msgid "Copy the selected address book folders to the clipboard."
+msgstr "Die ausgewählten Adressbuchordner in die Zwischenablage kopieren."
+
+#: standardcontactactionmanager.cpp:137
+#, kde-format
+msgid "Delete Address Book Folder"
+msgid_plural "Delete %1 Address Book Folders"
+msgstr[0] "Adressbuchordner löschen"
+msgstr[1] "%1 Adressbuchordner löschen"
+
+#: standardcontactactionmanager.cpp:140
+msgid "Delete the selected address book folders from the address book."
+msgstr "Die ausgewählten Adressbuchordner aus dem Adressbuch löschen."
+
+#: standardcontactactionmanager.cpp:144
+#, kde-format
+msgid ""
+"Do you really want to delete this address book folder and all its sub-"
+"folders?"
+msgid_plural ""
+"Do you really want to delete %1 address book folders and all their sub-"
+"folders?"
+msgstr[0] ""
+"Möchten Sie den Adressbuchordner und alle Unterordner wirklich löschen?"
+msgstr[1] ""
+"Möchten Sie %1 Adressbuchordner und alle deren Unterordner wirklich löschen?"
+
+#: standardcontactactionmanager.cpp:148
+msgctxt "@title:window"
+msgid "Delete address book folder?"
+msgid_plural "Delete address book folders?"
+msgstr[0] "Adressbuchordner löschen?"
+msgstr[1] "%1 Adressbuchordner löschen?"
+
+#: standardcontactactionmanager.cpp:152
+#, kde-format
+msgid "Could not delete address book folder: %1"
+msgstr "Adressbuchordner kann nicht gelöscht werden: %1"
+
+#: standardcontactactionmanager.cpp:156
+msgid "Address book folder deletion failed"
+msgstr "Löschen des Adressbuchordners ist fehlgeschlagen"
+
+#: standardcontactactionmanager.cpp:160
+#, kde-format
+msgid "Update Address Book Folder"
+msgid_plural "Update %1 Address Book Folders"
+msgstr[0] "Adressbuchordner aktualisieren"
+msgstr[1] "%1 Adressbuchordner aktualisieren"
+
+#: standardcontactactionmanager.cpp:163
+msgid "Update the content of the selected address book folders."
+msgstr "Inhalt des ausgewählten Adressbuchordners aktualisieren."
+
+#: standardcontactactionmanager.cpp:167
+#, kde-format
+msgid "Cut Address Book Folder"
+msgid_plural "Cut %1 Address Book Folders"
+msgstr[0] "Adressbuchordner ausschneiden"
+msgstr[1] "%1 Adressbuchordner ausschneiden"
+
+#: standardcontactactionmanager.cpp:170
+msgid "Cut the selected address book folders from the address book."
+msgstr "Die ausgewählten Adressbuchordner aus dem Adressbuch ausschneiden."
+
+#: standardcontactactionmanager.cpp:174
+msgid "Folder Properties..."
+msgstr "Ordner-Eigenschaften ..."
+
+#: standardcontactactionmanager.cpp:176
+msgid ""
+"Open a dialog to edit the properties of the selected address book folder."
+msgstr ""
+"Dialog zum Bearbeiten der Eigenschaften des ausgewählten Adressbuchordners "
+"öffnen."
+
+#: standardcontactactionmanager.cpp:179
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Address Book Folder %1"
+msgstr "Eigenschaften des Adressbuchordners %1"
+
+#: standardcontactactionmanager.cpp:183 standardcontactactionmanager.cpp:337
+#, kde-format
+msgid "Copy Contact"
+msgid_plural "Copy %1 Contacts"
+msgstr[0] "Kontakt kopieren"
+msgstr[1] "%1 Kontakte kopieren"
+
+#: standardcontactactionmanager.cpp:185
+msgid "Copy the selected contacts to the clipboard."
+msgstr "Die ausgewählten Kontakte in die Zwischenablage kopieren."
+
+#: standardcontactactionmanager.cpp:189 standardcontactactionmanager.cpp:347
+#, kde-format
+msgid "Delete Contact"
+msgid_plural "Delete %1 Contacts"
+msgstr[0] "Kontakt löschen"
+msgstr[1] "%1 Kontakte löschen"
+
+#: standardcontactactionmanager.cpp:191
+msgid "Delete the selected contacts from the address book."
+msgstr "Die ausgewählten Kontakte aus dem Adressbuch löschen."
+
+#: standardcontactactionmanager.cpp:194
+#, kde-format
+msgid "Do you really want to delete the selected contact?"
+msgid_plural "Do you really want to delete %1 contacts?"
+msgstr[0] "Möchten Sie den ausgewählten Kontakt wirklich löschen?"
+msgstr[1] "Möchten Sie die %1 ausgewählten Kontakte wirklich löschen?"
+
+#: standardcontactactionmanager.cpp:199
+msgctxt "@title:window"
+msgid "Delete Contact?"
+msgid_plural "Delete Contacts?"
+msgstr[0] "Kontakt löschen?"
+msgstr[1] "%1 Kontakte löschen?"
+
+#: standardcontactactionmanager.cpp:203
+#, kde-format
+msgid "Could not delete contact: %1"
+msgstr "Kontakt kann nicht gelöscht werden: %1"
+
+#: standardcontactactionmanager.cpp:207
+msgid "Contact deletion failed"
+msgstr "Löschen des Kontakts fehlgeschlagen"
+
+#: standardcontactactionmanager.cpp:211 standardcontactactionmanager.cpp:351
+#, kde-format
+msgid "Cut Contact"
+msgid_plural "Cut %1 Contacts"
+msgstr[0] "Kontakt ausschneiden"
+msgstr[1] "%1 Kontakte ausschneiden"
+
+#: standardcontactactionmanager.cpp:213
+msgid "Cut the selected contacts from the address book."
+msgstr "Die ausgewählten Kontakte aus dem Adressbuch ausschneiden."
+
+#: standardcontactactionmanager.cpp:217
+msgid "Add &Address Book..."
+msgstr "Adressbuch hinzufügen ..."
+
+#: standardcontactactionmanager.cpp:219
+msgid ""
+"Add a new address book<p>You will be presented with a dialog where you can "
+"select the type of the address book that shall be added.</p>"
+msgstr ""
+"Neues Adressbuch hinzufügen<p>Es wird Ihnen ein Dialog angezeigt, in dem Sie "
+"die Art des neuen Adressbuchs auswählen können</p>"
+
+#: standardcontactactionmanager.cpp:224
+msgctxt "@title:window"
+msgid "Add Address Book"
+msgstr "Adressbuch hinzufügen"
+
+#: standardcontactactionmanager.cpp:228
+#, kde-format
+msgid "Could not create address book: %1"
+msgstr "Adressbuch kann erstellt werden: %1"
+
+#: standardcontactactionmanager.cpp:232
+msgid "Address book creation failed"
+msgstr "Erstellen des Adressbuchs ist fehlgeschlagen"
+
+#: standardcontactactionmanager.cpp:237
+#, kde-format
+msgid "&Delete Address Book"
+msgid_plural "&Delete %1 Address Books"
+msgstr[0] "Adressbuch löschen"
+msgstr[1] "%1 Adressbücher löschen"
+
+#: standardcontactactionmanager.cpp:240
+msgid ""
+"Delete the selected address books<p>The currently selected address books "
+"will be deleted, along with all the contacts and contact groups they contain."
+"</p>"
+msgstr ""
+"Die ausgewählten Adressbücher löschen.<p>Die momentan ausgewählten "
+"Adressbücher werden zusammen mit allen ihren Kontakten und Gruppen gelöscht."
+"</p>"
+
+#: standardcontactactionmanager.cpp:245
+#, kde-format
+msgid "Do you really want to delete this address book?"
+msgid_plural "Do you really want to delete %1 address books?"
+msgstr[0] "Möchten Sie dieses Adressbuch wirklich löschen?"
+msgstr[1] "Möchten Sie diese %1 Adressbücher wirklich löschen?"
+
+#: standardcontactactionmanager.cpp:250
+msgctxt "@title:window"
+msgid "Delete Address Book?"
+msgid_plural "Delete Address Books?"
+msgstr[0] "Adressbuch löschen?"
+msgstr[1] "%1 Adressbücher löschen?"
+
+#: standardcontactactionmanager.cpp:256
+msgid "Address Book Properties..."
+msgstr "Adressbucheigenschaften"
+
+#: standardcontactactionmanager.cpp:258
+msgid "Open a dialog to edit properties of the selected address book."
+msgstr ""
+"Dialog zum Bearbeiten der Eigenschaften des ausgewählten Adressbuchs öffnen."
+
+#: standardcontactactionmanager.cpp:262
+#, kde-format
+msgid "Update Address Book"
+msgid_plural "Update %1 Address Books"
+msgstr[0] "Adressbuch aktualisieren"
+msgstr[1] "%1 Adressbücher aktualisieren"
+
+#: standardcontactactionmanager.cpp:266
+msgid "Updates the content of all folders of the selected address books."
+msgstr ""
+"Aktualisiert den Inhalt aller Ordner in den ausgewählten Adressbüchern."
+
+#: standardcontactactionmanager.cpp:272
+#, kde-format
+msgid "Could not paste contact: %1"
+msgstr "Kontakt kann nicht eingefügt werden: %1"
+
+#: standardcontactactionmanager.cpp:276
+msgid "Paste failed"
+msgstr "Einfügen fehlgeschlagen"
+
+#: standardcontactactionmanager.cpp:340 standardcontactactionmanager.cpp:343
+msgid "Copy Contact To"
+msgstr "Kontakt kopieren nach"
+
+#: standardcontactactionmanager.cpp:354 standardcontactactionmanager.cpp:357
+msgid "Move Contact To"
+msgstr "Kontakt verschieben nach"
+
+#: standardcontactactionmanager.cpp:360 standardcontactactionmanager.cpp:596
+msgid "Edit Contact..."
+msgstr "Kontakt bearbeiten ..."
+
+#: standardcontactactionmanager.cpp:365
+#, kde-format
+msgid "Copy Group"
+msgid_plural "Copy %1 Groups"
+msgstr[0] "Gruppe kopieren "
+msgstr[1] "%1 Gruppen kopieren"
+
+#: standardcontactactionmanager.cpp:368 standardcontactactionmanager.cpp:371
+msgid "Copy Group To"
+msgstr "Gruppe kopieren nach"
+
+#: standardcontactactionmanager.cpp:375
+#, kde-format
+msgid "Delete Group"
+msgid_plural "Delete %1 Groups"
+msgstr[0] "Gruppe löschen"
+msgstr[1] "%1 Gruppen löschen"
+
+#: standardcontactactionmanager.cpp:379
+#, kde-format
+msgid "Cut Group"
+msgid_plural "Cut %1 Groups"
+msgstr[0] "Gruppe ausschneiden"
+msgstr[1] "%1 Gruppen ausschneiden"
+
+#: standardcontactactionmanager.cpp:382 standardcontactactionmanager.cpp:385
+msgid "Move Group To"
+msgstr "Kontaktgruppe %1"
+
+#: standardcontactactionmanager.cpp:388
+msgid "Edit Group..."
+msgstr "Gruppe bearbeiten ..."
+
+#: standardcontactactionmanager.cpp:515
+#, kde-format
+msgid "Contact cannot be stored: %1"
+msgstr "Der Kontakt kann nicht gespeichert werden: %1"
+
+#: standardcontactactionmanager.cpp:515
+msgid "Failed to store contact"
+msgstr "Speichern des Kontakts ist fehlgeschlagen"
+
+#: standardcontactactionmanager.cpp:576
+msgid "New &Contact..."
+msgstr "Neuer &Kontakt ..."
+
+#: standardcontactactionmanager.cpp:578
+msgid ""
+"Create a new contact<p>You will be presented with a dialog where you can add "
+"data about a person, including addresses and phone numbers.</p>"
+msgstr ""
+"Neuen Kontakt erstellen<p>Es wird Ihnen ein Dialog angezeigt, in dem Sie die "
+"Daten für eine Person, inklusive Adressen und Telefonnummern hinzufügen "
+"können.</p>"
+
+#: standardcontactactionmanager.cpp:586
+msgid "New &Group..."
+msgstr "Neue &Gruppe ..."
+
+#: standardcontactactionmanager.cpp:588
+msgid ""
+"Create a new group<p>You will be presented with a dialog where you can add a "
+"new group of contacts.</p>"
+msgstr ""
+"Neue Gruppe erstellen <p>Es wird Ihnen ein Dialog angezeigt, in dem Sie eine "
+"neue Gruppe für Kontakte hinzufügen können.</p>"
+
+#: standardcontactactionmanager.cpp:597
+msgid ""
+"Edit the selected contact<p>You will be presented with a dialog where you "
+"can edit the data stored about a person, including addresses and phone "
+"numbers.</p>"
+msgstr ""
+"Ausgewählten Kontakt bearbeiten<p>Es wird Ihnen ein Dialog angezeigt, in dem "
+"Sie die gespeicherten Daten zu einer Person, inklusive Adressen und "
+"Telefonnummern bearbeiten können.</p>"
+
+#: standardcontactformatter.cpp:120
+#, kde-format
+msgid "(One year old)"
+msgid_plural "(%1 years old)"
+msgstr[0] "(Ein Jahr alt)"
+msgstr[1] "(%1 Jahre alt)"
+
+#: standardcontactformatter.cpp:132
+msgctxt "@info:tooltip"
+msgid "Send SMS"
+msgstr "SMS verschicken"
+
+#: standardcontactformatter.cpp:148
+msgctxt "a contact's email address"
+msgid "Email"
+msgstr "E-Mail"
+
+#: standardcontactformatter.cpp:165
+msgid "Homepage"
+msgstr "Internetseite"
+
+#: standardcontactformatter.cpp:171
+msgid "Blog Feed"
+msgstr "Blog-Quelle"
+
+#: standardcontactformatter.cpp:189
+msgctxt "@info:tooltip"
+msgid "Show address on map"
+msgstr "Adresse auf der Karte anzeigen"
+
+#: standardcontactformatter.cpp:201
+msgid "Notes"
+msgstr "Bemerkungen"
+
+#: standardcontactformatter.cpp:208
+msgid "Department"
+msgstr "Abteilung"
+
+#: standardcontactformatter.cpp:209
+msgid "Profession"
+msgstr "Beruf"
+
+#: standardcontactformatter.cpp:210
+msgid "Assistant's Name"
+msgstr "Name des Assistenten"
+
+#: standardcontactformatter.cpp:211
+msgid "Manager's Name"
+msgstr "Name des Managers"
+
+#: standardcontactformatter.cpp:212
+msgctxt "Wife/Husband/..."
+msgid "Partner's Name"
+msgstr "Name des Partners"
+
+#: standardcontactformatter.cpp:213
+msgid "Office"
+msgstr "Büro"
+
+#: standardcontactformatter.cpp:214
+msgid "IM Address"
+msgstr "IM-Adresse"
+
+#: standardcontactformatter.cpp:215
+msgid "Anniversary"
+msgstr "Jahrestag"
+
+#: standardcontactformatter.cpp:264
+msgctxt "Boolean value"
+msgid "yes"
+msgstr "Ja"
+
+#: standardcontactformatter.cpp:266
+msgctxt "Boolean value"
+msgid "no"
+msgstr "Nein"
+
+#: textbrowser.cpp:73
+msgctxt "@action:inmenu Copy the text of a general item"
+msgid "Copy Item"
+msgstr "Eintrag kopieren"
+
+#: textbrowser.cpp:82
+msgctxt "@action:inmenu Copy a displayed email address"
+msgid "Copy Email Address"
+msgstr "E-Mail-Adresse kopieren"
+
+#: textbrowser.cpp:91
+msgctxt "@action:inmenu Copy a link URL"
+msgid "Copy Link URL"
+msgstr "Verknüpfungsadresse kopieren"
+
+#: textbrowser.cpp:121
+msgctxt "@action:inmenu Copy a contact photo"
+msgid "Copy Photo"
+msgstr "Foto kopieren"
+
+#: textbrowser.cpp:125
+msgctxt "@action:inmenu Copy a QR or Datamatrix image"
+msgid "Copy Code"
+msgstr "QR-Code kopieren"
+
+#: waitingoverlay.cpp:50
+msgid "<p style=\"color: white;\"><b>Waiting for operation</b><br/></p>"
+msgstr "<p style=\"color: white;\"><b>Warten auf Operation</b><br/></p>"
+
+#~ msgctxt "@title:window"
+#~ msgid "Change Tags"
+#~ msgstr "Stichwörter ändern"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Tags"
+#~ msgstr "Stichwörter hinzufügen"
+
+#~ msgctxt "@label:textbox"
+#~ msgid "Configure which tags should be applied."
+#~ msgstr "Richten Sie hier ein, welche Stichwörter hinzugefügt werden sollen."
+
+#~ msgctxt "@label"
+#~ msgid "Create new tag"
+#~ msgstr "Neues Stichwort erstellen"
+
+#~ msgctxt "@info"
+#~ msgid "Delete tag"
+#~ msgstr "Stichwort löschen"
+
+#~ msgid "An error occurred while creating a new tag"
+#~ msgstr ""
+#~ "Bei der Erstellung eines neuen Stichworts ist ein Fehler aufgetreten"
+
+#~ msgid "Failed to create a new tag"
+#~ msgstr "Erstellen des neuen Stichworts ist fehlgeschlagen"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Should the tag <resource>%1</resource> really be deleted for all files?"
+#~ msgstr ""
+#~ "Soll das Stichwort <resource>%1</resource> für alle Dateien gelöscht "
+#~ "werden?"
+
+#~ msgctxt "@title"
+#~ msgid "Delete tag"
+#~ msgstr "Stichwort löschen"
+
+#~ msgctxt "@action:button"
+#~ msgid "Delete"
+#~ msgstr "Löschen"
+
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "Abbrechen"
+
+#~ msgid "Could not call phone number %1"
+#~ msgstr "Telefonnummer %1 kann nicht gewählt werden"
+
+#~ msgid "Sending an SMS is currently not supported on WinCE"
+#~ msgstr "Das Senden einer SMS wird momentan für WinCE nicht unterstützt"
+
+#~ msgctxt "street/postal"
+#~ msgid "Edit..."
+#~ msgstr "Bearbeiten ..."
+
+#~ msgid "Prefers to receive messages formatted as:"
+#~ msgstr "Bevorzugt Nachrichten im Format:"
+
+#~ msgid "Unknown"
+#~ msgstr "Unbekannt"
+
+#~ msgid "Sending an SMS is currently not supported on SflPhone"
+#~ msgstr "Das Senden einer SMS wird momentan für SflPhone nicht unterstützt"
+
+#~ msgid "Set Standard"
+#~ msgstr "Als Standard festlegen"
+
+#, fuzzy
+#~| msgid "Do you really want to delete this address?"
+#~ msgid "Do you really want to delete %1 address book, '%2'?"
+#~ msgid_plural "Do you really want to delete %1 address books?"
+#~ msgstr[0] "Möchten Sie diese Adresse wirklich löschen?"
+#~ msgstr[1] "Möchten Sie diese Adresse wirklich löschen?"
+
+#, fuzzy
+#~| msgid "Do you really want to delete this address?"
+#~ msgid "Do you really want to delete the address book search folder '%1'?"
+#~ msgstr "Möchten Sie diese Adresse wirklich löschen?"
+
+#~ msgctxt "@title:group"
+#~ msgid "Notes"
+#~ msgstr "Bemerkungen"
+
+#~ msgid "The member with email address <b>%1</b> is missing a name"
+#~ msgstr "Dem Mitglied mit der E-Mail-Adresse <b>%1</b> fehlt der Name."

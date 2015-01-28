@@ -1,0 +1,926 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+
+  <!ENTITY kappname "&rocs;">
+  <!ENTITY package "rocs">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE">
+
+  <!ENTITY apiConsole SYSTEM "apiConsole.docbook">
+  <!ENTITY apiDatastructure SYSTEM "apiDatastructure.docbook">
+  <!ENTITY apiGraphstructure SYSTEM "apiGraphstructure.docbook">
+  <!ENTITY apiLinkedListstructure SYSTEM "apiLinkedListstructure.docbook">
+  <!ENTITY apiRootedTreestructure SYSTEM "apiRootedTreestructure.docbook">
+
+  <!ENTITY chapterImportExport SYSTEM "chapterImportExport.docbook">
+]>
+<book id="rocs" lang="&language;">
+
+<bookinfo>
+<title
+>Das Handbuch zu &rocs;</title>
+<authorgroup>
+<author
+><personname
+> <firstname
+>Tomaz</firstname
+> <surname
+>Canabrava</surname
+> </personname
+> <email
+>tomaz.canabrava@gmail.com</email
+> </author>
+<author
+><personname
+> <firstname
+>Andreas</firstname
+> <surname
+>Cord-Landwehr</surname
+> </personname
+> <email
+>cordlandwehr@kde.org</email
+> </author>
+
+<othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright
+><year
+>2009</year
+><holder
+>Tomaz Canabrava</holder
+></copyright>
+<copyright
+><year
+>2011-2013</year
+><holder
+>Andreas Cord-Landwehr</holder
+></copyright>
+
+<date
+>2013-07-03</date>
+<releaseinfo
+>1.10.0 &kde; 4.12</releaseinfo>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<abstract>
+<para
+>&rocs; ist ein Graphentheorie-Werkzeug für &kde;. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdeedu</keyword>
+<keyword
+>Mathematik</keyword>
+<keyword
+>Mathe</keyword>
+<keyword
+>Graphen</keyword>
+<keyword
+>Knoten</keyword>
+<keyword
+>Kante</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Einführung</title>
+<para
+>In diesem Kapitel finden Sie einen Überblick über die Funktionen und den Arbeitsablauf in &rocs;. Leser, die sofort mit &rocs; beginnen möchten, sollten auf jeden Fall <xref linkend="introduction-nutshell"/> lesen und <xref linkend=" scripting"/> beim Schreiben von Algorithmen als Referenz benutzen. </para>
+
+<sect1 id="introduction-goals">
+<title
+>Ziel, Zielgruppe und Arbeitsablauf</title>
+<para
+>&rocs; ist eine Entwicklungsumgebung für Graphen-Theorie für Alle, die an der Entwicklung und Analyse von Graphen-Algorithmen arbeiten, unter anderem:</para>
+<itemizedlist>
+    <listitem
+><para
+>Lehrer, die Ihren Studenten Algorithmen demonstrieren möchten,</para
+></listitem>
+    <listitem
+><para
+>Studenten, die verstehen und sehen möchten, wie ein Algorithmus funktioniert,</para
+></listitem>
+    <listitem
+><para
+>Und alle, die an Datenstrukturen und Algorithmen interessiert sind</para
+></listitem>
+</itemizedlist>
+
+<para
+>Für alle diese Benutzer stellt &rocs; einen einfach zu bedienenden Editor für die Erstellung von Datenstrukturen, ein leistungsfähiges Skriptmodul zur Ausführung von Algorithmen und mehrere Hilfswerkzeuge für Ihre Simulationen und Experimente bereit. </para>
+
+<para
+>Beim typischen Arbeitsablauf erstellen Sie als erstes einen Graphen mit dem visuellen Editor. Den Graphen können Sie von Hand erstellen, indem Sie Datenelemente hinzufügen und sie verbinden. Wenn es einen Generator für die ausgewählte Backend der aktuellen Datenstruktur gibt, können Sie alternativ auch aus dem Menü <menuchoice
+><guimenu
+>Graphendokument</guimenu
+><guisubmenu
+>Extras</guisubmenu
+><guimenuitem
+>Graphen erstellen</guimenuitem
+></menuchoice
+> verwenden. Mit <menuchoice
+><guimenu
+>Graphendokument</guimenu
+><guisubmenu
+>Extras</guisubmenu
+><guimenuitem
+>Werte zuweisen</guimenuitem
+></menuchoice
+> ist es auch möglich, den Datenstrukturelementen eines Graphen Werte zuzuweisen. Zum Schluß müssen Sie den Algorithmus in der Sprache JavaScript schreiben und mit  der gerade erstellten Datenstruktur ausführen. Alle Änderungen an der Datenstruktur durch den Algorithmus sind sofort auf der Zeichenfläche des visuellen Graphen-Editors sichtbar. </para>
+
+<screenshot>
+<screeninfo
+>Bildschirmphoto von &rocs;</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="rocs-screenshot.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Bildschirmphoto von &rocs;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+</sect1>
+
+<sect1 id="introduction-nutshell">
+<title
+>&rocs; kurz zusammengefasst</title>
+<para
+>Dieser Abschnitt enthält eine knappe Übersicht über die wichtigsten Elemente von &rocs;. Die wichtigen Begriffe Datenstrukturen, Backends für Datenstrukturen und Elementarten werden erläutert. Kenntnis dieser Elemente hilft beim Verständnis, wie Datenstrukturen in &rocs; erstellt und geändert werden können. </para>
+<para
+>Im allgemeinen arbeitet &rocs; mit Projekten: wenn Sie &rocs; starten, wird ein leeres Projekt erstellt. Dieses Projekt können Sie durch Laden oder Importieren eines anderen Projekts ersetzen. Ein Projekt besteht aus <emphasis
+>Graphendokumenten</emphasis
+> und <emphasis
+>Skripten</emphasis
+>. </para>
+
+<sect2>
+<title
+>Backends für Graphendokumente und Datenstrukturen</title>
+<para
+>Ein Graphendokument repräsentiert den Inhalt der Zeichenfläche im visuellen Graphen-Editor.Daher kann ein Graphendokument gleichzeitig mehrere Datenstrukturen, aber nur ein Backend für Datenstrukturen enthalten. Es gibt Backends für Datenstrukturen für mehrere Graphentypen (Allgemeine Graphen, verkettete Listen, Wurzelbäume), die zusätzliche Funktionen beinhalten wie zum Beispiel automatische Anordnung der Elemente, besondere Symbole oder erweiterte Skriptfunktionen, die in Algorithmen benutzt werden können. Es ist möglich, das Backend der Datenstruktur eines Graphendokuments zu ändern, dabei gehen aber unter Umständen Informationen verloren. Es werden zum Beispiel die Kanten eines Kreises in einem allgemeinen Graphen nicht zu einer Baumstruktur hinzugefügt, wenn Sie zum Backend Wurzelbaum wechseln. </para>
+<para
+>Graphendokumente bilden auch die Basis für die Definition von Zeiger- und Datentypen. </para>
+</sect2>
+
+<sect2>
+<title
+>Datenstrukturen</title>
+<para
+>Datenstrukturen sind die Grundlage aller Arbeit mit &rocs;. Sie können eine oder mehrere Datenstrukturen zu einem Graphendokument hinzufügen, Datenelemente (Knoten, Daten) und Zeiger auf Knoten einfügen und sie mit Skripten bearbeiten. Dazu hat jede Datenstruktur einen eindeutigen Namen oder Bezeichner, über den im Skript auf die Struktur zugegriffen werden kann. Für ein aktuell ausgewähltes Backend der Datenstruktur können die Datenstrukturen nicht willkürlich geändert werden, &eg; darf eine Baumstruktur keine Kreisstruktur haben. Die Datenstruktur wird durch das verwendete Struktur-Backend aus dem Graphendokument, das dieses Backend enthält, vorgegeben </para>
+</sect2>
+
+<sect2>
+<title
+>Zeigertypen</title>
+<para
+>Es lassen sich verschiedene Zeigertypen definieren, die in Datenstrukturen verwendet werden können. Ein Zeigertyp kann ein individuelles Layout - im wesentlichen eine Farbe - erhalten. Es ist dann leicht möglich, Zugriff nur auf Zeiger eines bestimmten Typs in den Skripten zu erhalten. Ein typischer Anwendungsfall für Zeiger ist die Implementierung von Metakanten einer Datenstruktur, um Beziehungen zwischen Datenelementen zu visualisieren. Aber auch wenn das Skript bestimmte Arten von Kanten wie zum Beispiel Baum- und Kreuzkanten bei einer Tiefensuche (englisch depth-first search) identifizieren soll, sind Zeigertypen ein elegante Implementation dafür. </para>
+</sect2>
+
+<sect2>
+<title
+>Datentypen</title>
+<para
+>Bei vielen Problemen, die mit Datenstrukturen bearbeitet werden, sollte eine Gruppe von Datenelementen in eigene Strukturtypen aufgeteilt werden, &eg; bei Cluster- und Überdeckungsproblemen. Für die Ausführung eines Algorithmus ist es nützlich, einen Datenelementtyp für einen bestimmten Typ wie zum Beispiel Breitensuche (english breadth-first search) anzugeben. Für solche Anwendungsfälle können eigene Datentypen definiert werden. Jeder Datentyp hat ein eigenes Symbol. Für eigene definierte Datentypen ist der Zugriff vom Skript leicht möglich. </para>
+</sect2>
+
+<sect2>
+<title
+>Dynamische Eigenschaften</title>
+<para
+>Jedes Datenelement und jeder Zeiger kann viele Eigenschaften haben. Einige dieser Eigenschaften werden als Standard vom Backend der Datenstruktur vorgegeben. Weitere Informationen dazu finden Sie in der Dokumentation zu den Backends der Datenstrukturen. Um die Eigenschaften von Datenelementen und Zeigern zu erweitern, können <emphasis
+>dynamische Eigenschaften</emphasis
+> hinzugefügt werden. Jede dynamische Eigenschaft wird über ihren Namen identifiziert und darf einen beliebigen zugeordneten Wert haben. Der Name muss mit einem Buchstaben (a-z oder A-Z) beginnen und darf nur Buchstaben, Zahlen und den Unterstrich „_“ enthalten. Wenn Sie ungültige Zeichen im Namen der Eigenschaft verwenden, wird die Eigenschaft nicht geändert. </para>
+<para
+>Um dynamische Eigenschaften hinzuzufügen, können Sie die Dialoge <guilabel
+>Eigenschaften des Datenelements</guilabel
+> und <guilabel
+>Zeigereigenschaften</guilabel
+> aus dem Kontextmenü der entsprechenden Elemente oder die Skriptfunktionen benutzen, die im Abschnitt <xref linkend="scripting-data-structure"/> erläutert werden. </para>
+<para
+>Sie können auch Skripte dafür verwenden. Sie müssen nur <literal
+>add_property</literal
+> mit dem Namen und Wert Ihrer Eigenschaft verwenden. Danach können Sie mit <literal
+>node.propertyName</literal
+> oder <literal
+>pointer.propertyName</literal
+> die Werte lesen oder setzen. </para>
+<para
+>Hier ein Beispiel, wie dynamische Eigenschaften mit dem Backend für die Datenstruktur „Graph“ benutzt werden können. <programlisting
+>nodes = myGraph.list_nodes()
+for (var i = 0; i &lt; nodes.length; ++i ){
+    nodes[i].add_property("MyProperty", 0)
+}
+nodes[0].MyProperty = 2
+nodes[1].MyProperty = nodes[0].MyProperty + 2
+    </programlisting>
+</para>
+</sect2>
+</sect1>
+
+<sect1 id="introduction-tutorial">
+<title
+>Anleitung</title>
+<para
+>In diesem Abschnitt wird ein Beispielprojekt erzeugt, um die wichtigsten Funktionen von &rocs; zu zeigen. Als Ziel soll ein Graph und ein Skript erstellt werden, um damit einen einfachen  Approximationsalgorithmus für das <emphasis
+>Minimum-Knotenüberdeckungproblem</emphasis
+> zu zeigen, der eine Knotenüberdeckung mit Güte 2 berechnet. Mit dem Minimum-Knotenüberdeckungsproblem wird eine Untermenge von Graphenknoten C mit minimaler Größe gesucht, so dass jede Graphenkante mit mindestens einem Knoten in C verbunden ist. Dies Problem ist NP-vollständig. Es soll gezeigt werden, wie eine Approximation mit dem Faktor 2 durch Suchen nach Matching in den angegebenen Graphen gefunden wird. Im Folgenden werden die üblichen Begriffe für Graphenalgorithmen verwendet: Graph für die Datenstruktur, Knoten für die Datenelemente und Kanten für die Zeiger. </para>
+<para
+>Ziel ist die Visualisierung der Übereinstimmung von Matching-Knotenüberdeckungen und Minimum-Knotenüberdeckungen. Dazu werden zwei Zeigertypen definiert, einer für die Matching-Kanten und einer zur Darstellung normaler Kanten, außerdem noch zwei Datentypen, die zur Unterscheidung von in C enthaltenen bzw. nicht enthaltenen Knoten verwendet werden. </para>
+
+<sect2>
+<title
+>Einen Graphen erstellen</title>
+<para
+>Für das Backend der Datenstruktur <quote
+>Graph</quote
+> können mit &rocs; Graphen erzeugt werden. Wählen Sie dazu <menuchoice
+><guimenu
+>Graphendokument</guimenu
+> <guisubmenu
+>Extras</guisubmenu
+> <guimenuitem
+>Graph erstellen</guimenuitem
+></menuchoice
+>. Erstellen Sie einen <guilabel
+>Zufälligen Graph</guilabel
+> mit 30 Knoten, 90 Kanten und mit Seed = 1. Seed ist der Startwert für den Generator des zufälligen Graphen. Wird der gleiche Seed verwendet, ergibt das auch reproduzierbar den gleichen Graphen. Dann ändern Sie den Namen des Graphen im Datenstrukturbereich in <literal
+>testgraph</literal
+>. </para>
+</sect2>
+
+<sect2>
+<title
+>Typen erstellen</title>
+<para
+>Klicken Sie auf den Knopf <guibutton
+>Eigenschaften</guibutton
+> im Dokumentenauswahlbereich, um den Einstellungsdialog für Daten- und Zeigertypen des aktuellen Dokuments zu öffnen. Als Datentyp wird ein neuer Typ namens „C“ hinzugefügt. Dieser erhält automatisch die Kennung <literal
+>1</literal
+>. Als Symbol wird das Serverbild ausgewählt. Dann wird der Dialog Eigenschaften des Zeigertyps geöffnet und ein neuer Zeigertyp mit dem Namen „matching“ erstellt. Er erhält automatisch die Kennung <literal
+>1</literal
+>. Als Farbe wird Blau eingestellt. </para>
+</sect2>
+
+<sect2>
+<title
+>Der Algorithmus</title>
+<para
+>Dann muss der Algorithmus der Approximation wie im folgenden implementiert werden: </para>
+<programlisting
+>var E = testgraph.list_edges(); // Menge der nicht bearbeiteten Kanten
+var C = new Array();            // Matching-Kanten
+while (E.length 
+> 0) {
+    var e = E[0];        // die erste Kante e={u,v}
+    var u = e.start();
+    var v = e.end();
+    e.set_type(1);        // als Matching-Kanten setzen
+    E.shift();            // e (i.e., E[0]) aus der Liste der Kanten entfernen
+    C.push(u);            // u zu C hinzufügen
+    C.push(v);            // v zu C hinzufügen
+
+
+    // u,v als Knoten von C markieren C
+    u.set_type(1);
+    v.set_type(1);
+
+    // von E alle Kanten entfernen, die inzident zu u oder v sind
+    var adjacent = u.adj_edges();
+    for (var i=0; i &lt; adjacent.length; i++) {
+        var index = E.indexOf(adjacent[i]); // Index suchen
+        if (index!=-1) {
+            E.splice(index, 1); // Löschen, wenn gefunden
+        }
+    }
+    var adjacent = v.adj_edges();
+    for (var i=0; i &lt; adjacent.length; i++) {
+        var index = E.indexOf(adjacent[i]); // Index suchen
+        if (index!=-1) {
+            E.splice(index, 1); // Löschen, wenn gefunden
+        }
+    }
+}
+Console.log("Knotenüberdeckung enthält " + C.length + " Knoten.");
+</programlisting>
+</sect2>
+
+<sect2>
+<title
+>Ausführung des Algorithmus</title>
+<para
+>Schließlich soll der Algorithmus ausgeführt werden. Die Ausführung wird mit dem Knopf <guibutton
+>Ausführen</guibutton
+> der Bedienelemente für Skripte gestartet. </para>
+</sect2>
+</sect1>
+</chapter>
+
+<chapter id="user-interface">
+<title
+>Die Benutzerschnittstelle von &rocs;</title>
+
+<sect1 id="user-interface-all">
+<title
+>Standardelemente der Benutzeroberfläche</title>
+<para
+>Die Benutzerschnittstelle besteht aus mehreren logischen Teilen, die im folgenden Bildschirmfoto gezeigt werden. </para>
+<screenshot>
+    <screeninfo
+>Bedienungselemente der &rocs;-Benutzeroberfläche</screeninfo>
+    <mediaobject>
+    <imageobject>
+    <imagedata fileref="rocs-interfaces.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+    <phrase
+>Bedienungselemente der &rocs;-Benutzeroberfläche</phrase>
+    </textobject>
+    </mediaobject>
+</screenshot>
+<variablelist>
+<varlistentry>
+    <term
+>Dokumentenauswahl</term>
+    <listitem
+><para
+>In dieser Werkzeugleiste wird das aktuelle Dokument und die Datenstruktur ausgewählt. Erstellen und Löschen von Datenstrukturen wie auch das Ändern der Eigenschaften von Datenstrukturen ist hier möglich. </para
+></listitem>
+</varlistentry>
+<varlistentry>
+    <term
+>Visueller Graphen-Editor</term>
+    <listitem
+><para
+>Dies ist die Zeichenfläche, auf der Datenstrukturen erstellt und bearbeitet werden. Klicken Sie mit der &RMBn; auf die Zeichenfläche, auf Datenelemente oder Zeiger, um die zugehörigen Kontextmenüs zu öffnen. Sie können auch die Aktionen aus der Werkzeugleiste benutzen, um die Elemente auf der Zeichenfläche zu bearbeiten.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+    <term
+>Werkzeugleiste für den visuellen Graphen-Editor</term>
+    <listitem
+><para
+>In dieser Werkzeugleiste finden Sie Aktionen für den visuellen Graphen-Editor. Mit <inlinemediaobject
+><imageobject
+><imagedata fileref="hi22-action-rocsadddata.png" format="PNG"/></imageobject
+> </inlinemediaobject
+><guibutton
+>Element hinzufügen</guibutton
+> oder <inlinemediaobject
+><imageobject
+><imagedata fileref="hi22-action-rocsaddedge.png" format="PNG"/></imageobject
+></inlinemediaobject
+><guibutton
+>Verbindungen hinzufügen</guibutton
+> können neue Datenelemente erstellt und Verbindungen hinzugefügt werden. Neue Datenelemente werden zu der aktuellen Datenstruktur in der <emphasis
+>Dokumenten-Auswahl</emphasis
+> hinzugefügt. Beachten Sie dass <guibutton
+>Element hinzufügen</guibutton
+> und auch <guibutton
+>Verbindungen hinzufügen</guibutton
+> Untermenüs enthalten können, um den Typ der neuen Elemente auszuwählen. Weitere Informationen dazu im Abschnitt <xref linkend="user-interface-toolbars"/>. </para
+></listitem>
+</varlistentry>
+<varlistentry>
+    <term
+>Seitenleiste</term>
+    <listitem
+><para
+>Rechts finden Sie die Seitenleiste mit mehreren Werkzeugen zur Unterstützung Ihres Arbeitsablaufs. <itemizedlist>
+        <listitem
+><para
+>Elementtypen: Hier haben Sie direkten Zugriff auf alle vorhandenen Zeiger- und Datentypen.</para
+></listitem>
+        <listitem
+><para
+>Journal: Für jedes Projekt gibt es ein Journal, um &eg; Aufgaben, Ergebnisse oder Beobachtungen festzuhalten.</para
+></listitem>
+        <listitem
+><para
+>Handbuch: Benutzen Sie dieses Fenster zu Zugriff auf das Handbuch und dadurch auch zur Skriptdokumentation.</para
+></listitem>
+        <listitem
+><para
+>Skript-API: Benutzen Sie dieses Fenster zu Zugriff auf das Handbuch und dadurch auch zur Skriptdokumentation.</para
+></listitem>
+        </itemizedlist>
+    </para
+></listitem>
+</varlistentry>
+<varlistentry>
+    <term
+>Skripteditor</term>
+    <listitem
+><para
+>In diesem Texteditor können Sie Algorithmen schreiben, das wird im <xref linkend="scripting"/> erläutert. Sie können gleichzeitig an mehreren Skriptdokumenten arbeiten, indem Sie Unterfenster verwenden. Enthält ein Unterfenster noch nicht gespeicherte Änderungen, dann wird ein kleines Diskettensymbol auf dem Karteireiter angezeigt. </para
+></listitem>
+</varlistentry>
+<varlistentry>
+    <term
+>Skriptausgabe</term>
+    <listitem
+><para
+>In diesem Textfeld werden Fehlermeldungen oder Skriptausgaben Ihres Algorithmus angezeigt, abhängig von der gewählten Einstellung der Ausgabe oben. Tritt ein Fehler in Ihrem Skript auf, wird automatisch die Fehlerausgabe angezeigt. </para
+></listitem>
+</varlistentry>
+<varlistentry>
+    <term
+>Bedienelemente</term>
+    <listitem
+><para
+>In diesem Bereich finden Sie die Bedienelelemente, um die Ausführung von Skripten zu steuern. Mit dem Knopf <guibutton
+>Ausführen</guibutton
+> starten Sie das aktuell im Editor geöffnete Skript. Wird ein Skript ausgeführt, können Sie es mit <guibutton
+>Anhalten</guibutton
+> stoppen. Beachten Sie, dass die Ausführung von <guibutton
+>Ein Schritt</guibutton
+> nur bei bestimmten Schlüsselwörtern anhält, siehe <xref linkend="scripting"/>. </para
+></listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+
+<sect1 id="user-interface-toolbars">
+<title
+>Werkzeugleisten</title>
+<para
+>Es gibt mehrere verschiedene Werkzeugleisten für den visuellen Graphen-Editor, die den Zugriff auf alle Aktion mit einem Mausklick ermöglichen. In der Voreinstellung werden folgende Werkzeugleisten angezeigt:</para>
+<itemizedlist>
+    <listitem
+><para
+>Haupt-Werkzeugleiste</para
+></listitem>
+    <listitem
+><para
+>Layout-Werkzeugleiste</para
+></listitem>
+</itemizedlist>
+<!--  -->
+<sect2 id="user-interface-toolbars-main">
+<title
+>Haupt-Werkzeugleiste</title>
+<para
+>Die <emphasis
+>Haupt-Werkzeugleiste</emphasis
+> enthält die im Folgenden genannten Aktionen. Klicken Sie auf den Knopf für eine Aktion, dann können Sie diese Aktion anschließend mit dem Mauszeiger auf die Elemente auf der Zeichenfläche anwenden.</para>
+<itemizedlist>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi22-action-rocsselectmove.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Verschieben</guilabel
+>: Um Elemente auszuwählen, klicken Sie entweder mit der &LMBn; auf eine freie Stelle auf der Zeichenfläche, halten die Maustaste gedrückt und ziehen ein Rechteck um Datenelemente und/oder Zeiger, um sie auszuwählen oder klicken Sie sonst zur Auswahl auf ein nicht ausgewähltes Element. Klicken Sie dann auf ein oder mehrere ausgewählte Elemente und verschieben sie mit gedrückter Maustaste. Ausgewählte Elemente können auch mit den Pfeiltasten verschoben werden.</para
+></listitem>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi22-action-rocsadddata.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Element hinzufügen</guilabel
+>: Klicken Sie mit der &LMBn; auf eine beliebige Position auf der Zeichenfläche, um ein neues Datenelement für die gerade ausgewählte Datenstruktur zu erstellen. Halten Sie die Maustaste gedrückt, dann erscheint ein Menü, aus dem der Datentyp des neu erstellten Datenelements ausgewählt werden kann, wenn es mehrere Datentypen gibt.</para
+></listitem>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi22-action-rocsaddedge.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Verbindung hinzufügen</guilabel
+>: Klicken Sie mit der &LMBn; auf ein Datenelement, halten Sie die Maustaste gedrückt und ziehen Sie eine Linie zu einem anderen Datenelement. Diese Aktion kann nur dann ausgeführt werden, wenn beim aktuellen Graphen diese Kante hinzugefügt werden kann. In einem ungerichteten Graphen dürfen Sie &eg; nicht mehrere Kanten zwischen zwei Datenelementen einfügen. Halten Sie die Maustaste gedrückt, dann erscheint ein Kontextmenü, aus dem der Datentyp des neu erstellten Zeigers ausgewählt werden kann, wenn es mehrere Zeigertypen gibt.</para
+></listitem>
+<!--FIXME no different pointer names here -->
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi22-action-rocsdeletedata.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Löschen</guilabel
+>: Klicken Sie auf ein Element, um es zu löschen. Löschen Sie einen Knoten, dann werden alle anliegenden Kanten ebenfalls gelöscht.</para
+></listitem>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi22-action-rocszoom.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Vergrößerung</guilabel
+>: Klicken Sie auf die Zeichenfläche, halten Sie die &LMB; gedrückt und zeichnen Sie ein Rechteck. Die Zeichenfläche wird auf diesen gewählten Bereich vergrößert. Mit dem Mausrad können Sie die Ansicht ebenfalls vergrößern bzw. verkleinern. Doppelklicken mit der &LMBn; stellt die ursprüngliche Vergrößerung wieder her.</para
+></listitem>
+</itemizedlist>
+</sect2>
+
+<sect2 id="user-interface-toolbars-alignment">
+<title
+>Layout-Werkzeugleiste</title>
+<para
+>Weiterhin gibt es noch die zusätzliche <emphasis
+>Layout-Werkzeugleiste</emphasis
+>. Drücken Sie einen Knopf in dieser Werkzeugleiste, dann wird die Aktion direkt an aktuell ausgewählten Knoten ausgeführt:</para>
+<itemizedlist>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi22-action-rocsaligntop.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Oben</guilabel
+>: Richtet die Datenelemente an der senkrechten Position des obersten Datenelements aus. Die waagerechte Position bleibt unverändert.</para
+></listitem>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi22-action-rocsalignvmiddle.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Mittig</guilabel
+>: Richtet die Datenelemente an der senkrechten Position aus, die durch die Mitte der senkrechten Positionen aller ausgewählten Datenelemente bestimmt wird. Die waagerechte Position bleibt unverändert.</para
+></listitem>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi22-action-rocsalignbottom.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Unten</guilabel
+>: Richtet die Datenelemente an der senkrechten Position des untersten Datenelements aus. Die waagerechte Position bleibt unverändert.</para
+></listitem>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi22-action-rocsalignleft.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Mittig</guilabel
+>: Richtet die Datenelemente an der waagerechten Position des obersten Datenelements aus. Die senkrechte Position bleibt unverändert.</para
+></listitem>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi22-action-rocsalignhmiddle.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Mittig</guilabel
+>: Richtet die Datenelemente an der waagerechten Position des obersten Datenelements aus. Die senkrechte Position bleibt unverändert.</para
+></listitem>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi22-action-rocsalignright.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Rechts</guilabel
+>: Richtet die Datenelemente an der waagerechten Position des rechten Datenelements aus. Die senkrechte Position bleibt unverändert.</para
+></listitem>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi22-action-rocsaligncircle.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Kreis</guilabel
+>: Richtet die Datenelemente auf einem Kreis mit dem größten Abstand der Datenelemente als Durchmesser aus. Die Datenelemente werden in der Reihenfolge angeordnet, die sich aus der Sicht des Schwerpunkts der durch die Datenelemente gebildeten Fläche ergibt.</para
+></listitem>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi22-action-rocsaligntree.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Kreuzende Kanten minimieren</guilabel
+>: Verwendet den Fruchterman-Reingold-Algorithmus, um durch eine geänderte Anordnung der Datenelemente die Anzahl der kreuzenden Verbindungen zu minimieren.</para
+></listitem>
+</itemizedlist>
+</sect2>
+</sect1>
+
+<sect1 id="user-interface-documents">
+<title
+>Arbeiten mit Graphendokumenten</title>
+<para
+>Ein &rocs;-Dokument enthält ein oder mehrere Graphendokumente, die mit dem visuellen Grapheneditor bearbeitet werden können. Jedes Dokument kann eine beliebige Anzahl von Datenstrukturen enthalten. Die Datenstrukturen eines Dokuments verwenden alle das gleiche Backend für Datenstrukturen. In diesem Abschnitt wird erläutert, wie Sie zwischen Dokumenten wechseln und neue Dokumente erzeugen. </para>
+
+<sect2 id="user-interface-documents-selector">
+<title
+>Die Dokumentenauswahl-Leiste</title>
+<para
+>In der Dokumentenauswahl-Leiste kann das aktuelle Graphendokument und auch die verwendete Datenstruktur ausgewählt werden. Die mit dem visuellen Grapheneditor erzeugten Elemente werden automatisch zur aktuellen Datenstruktur hinzugefügt. In dieser Leiste gibt es außerdem auch Aktionen, um vorhandene Datenstrukturen zu löschen und neue Datenstrukturen im aktuellen Dokument hinzuzufügen. </para>
+
+<itemizedlist>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi22-action-rocsnew.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Neu</guilabel
+>: Diese Aktion erzeugt neue Datenstrukturen mit einem automatisch generierten Namensmuster, das vom an der Backend der Datenstruktur vorgegeben wird. Die erzeugte Datenstruktur wird zum aktuell ausgewählten Graphendokument hinzugefügt. </para
+></listitem>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi22-action-rocsdelete.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Löschen</guilabel
+>: Mit dieser Aktion wird die aktuell ausgewählte Datenstruktur aus dem aktuellen geöffneten Dokument entfernt. </para
+></listitem>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi22-action-rocsproperties.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Eigenschaften</guilabel
+> für <guilabel
+>Graphendokument</guilabel
+>: Öffnet einen Dialog mit Zugriff auf die Eigenschaften eines Dokuments und auch die Daten- und Zeigertypen des Dokuments. </para
+></listitem>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi22-action-rocsproperties.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Eigenschaften</guilabel
+> für <guilabel
+>Datenstruktur</guilabel
+>: Öffnet einen Dialog zum Zugriff auf die Eigenschaften von Datenstrukturen. </para
+></listitem>
+  </itemizedlist>
+
+<screenshot>
+<screeninfo
+>Die Haupt-Werkzeugleiste.</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="document-selector.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Die Dokumentenauswahl-Leiste.</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+</sect2>
+
+<sect2 id="user-interface-documents-menu">
+<title
+>Erstellen und Importieren von Graphendokumenten</title>
+<para
+>Um ein neues Graphendokument zu erstellen oder ein vorhandenes zum Projekt hinzuzufügen, benutzen Sie <menuchoice
+><guimenu
+>Projekt</guimenu
+> <guimenuitem
+>Neues Projekt</guimenuitem
+></menuchoice
+> oder <menuchoice
+><guimenu
+>Graphendokument</guimenu
+> <guimenuitem
+>Graphen importieren</guimenuitem
+></menuchoice
+>. Sie können auch Graphendokumente aus anderen Programmen importieren, siehe <xref linkend="import-export"/>. </para>
+</sect2>
+
+</sect1>
+</chapter>
+
+
+<chapter id="scripting">
+<title
+>Schreiben und Ausführen von Algorithmen in &rocs;</title>
+
+<para
+>&rocs; verwendet intern QtScript als Skriptmodul, das von JavaScript abgeleitet ist. Daher müssen Ihre implementierten Algorithmen in JavaScript geschrieben werden. Diese Skriptsprache wird hier nicht erklärt, nur der Zugriff auf Datenstrukturen, Datenelemente und Zeiger Ihrer Datenstrukturen mit dem Skriptmodul. Sie verwenden nie ein Basisstrukturobjekt, sondern immer das Objekt, das vom gerade verwendeten Backend der Datenstruktur bereitgestellt wird. Die Funktionalität der Datenstruktur wird also durch das zugehörige Backend erweitert. Daher sollten Sie die speziellen Funktionen der Backends benutzen. Insbesondere verwenden Datenstrukturmodule die üblichen Begriffe Ihrer Domäne wie zum Beispiel Knoten und Kanten für Graphen und Wurzel und Blätter für Baumstrukturen &etc; </para>
+<para
+>Beachten Sie, dass Änderungen durch das Skriptmodul direkt die Eigenschaften im visuellen Graphen-Editor auf der Zeichenfläche verändern. Daher ändern Skripte tatsächlich die Datenstruktur. </para>
+
+
+<sect1 id="scripting-controls">
+<title
+>Kontrolle der Skriptausführung</title>
+ 
+
+<sect2>
+<title
+>Dateien einbeziehen</title>
+<para
+>Ihr Skriptdokument kann andere Skripte einschließen. Das ist nützlich, um die Größe des Skriptdokuments zu verringern und die Lesbarkeit zu verbessern. Benutzen Sie <menuchoice
+><guimenu
+>Skripte</guimenu
+><guimenuitem
+>Mögliche Includes</guimenuitem
+></menuchoice
+> aus dem Menü, um eine Liste von Skriptdateien anzuzeigen, die mit &rocs; ausgeliefert werden. Eine Skriptdatei schließen Sie mit folgendem Befehl ein: </para>
+<programlisting
+>include_script(string path);            // relativer oder absoluter Pfad zur Skriptdatei
+</programlisting>
+</sect2>
+
+<sect2 id="scripting-output">
+<title
+>Skriptausgabe</title>
+<para
+>Bei der Ausführung eines Algorithmus werden Meldungen in der <emphasis
+>Fehler- &amp; Skriptausgabe</emphasis
+> angezeigt. Erkennt das Skriptmodul einen Syntaxfehler in Ihrem Skript, wird der Fehler als Debug-Nachricht angezeigt. Auch alle Programmausgaben werden in der Fehlerausgabe als fett gedruckter Text angezeigt. </para>
+<para
+>Sie können den angezeigten Text in der Skriptausgabe mit folgenden Funktionen steuern: </para>
+<programlisting
+>Console.log(string message);            // zeigt message als Skriptausgabe
+    Console.debug(string message);             // zeigt message als Fehlerausgabe
+</programlisting>
+</sect2>
+
+<sect2 id="scripting-controlling">
+<title
+>Kontrolle der Skriptausführung</title>
+<para
+>Es gibt verschiedene Ausführungsmodi für Skripte. </para>
+<para
+>Sie können den angezeigten Text in der Skriptausgabe mit folgenden Funktionen steuern: </para>
+<itemizedlist>
+    <listitem
+><para>
+        <inlinemediaobject
+><imageobject>
+        <imagedata fileref="rocs-control-engine-run.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Ausführen</guilabel
+>: Führt das Skript bis zum Ende aus.</para
+></listitem>
+    <listitem
+><para>
+        <inlinemediaobject
+><imageobject>
+        <imagedata fileref="rocs-control-engine-step.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Ein Schritt</guilabel
+>: Führt das Skript bis zum Ende eines Schritts aus. Ein Schritt endet, wenn das Skript die Funktion <literal
+>interrupt()</literal
+> aufruft:</para>
+    <programlisting
+>interrupt();    // beendet einen Schritt
+    </programlisting>
+    </listitem>
+    <listitem
+><para>
+        <inlinemediaobject
+><imageobject>
+        <imagedata fileref="rocs-control-engine-debug.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Debuggen</guilabel
+>: Führt das Skript im Debug-Modus aus, damit wird der QtScript-Debugdialog geöffnet.</para
+></listitem>
+    <listitem
+><para>
+        <inlinemediaobject
+><imageobject>
+        <imagedata fileref="rocs-control-engine-stop.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <guilabel
+>Anhalten</guilabel
+>: Hält die Ausführung eines Skripts an und ist nur während der Ausführung aktiviert.</para
+></listitem>
+</itemizedlist>
+</sect2>
+</sect1>
+</chapter>
+
+
+<chapter id="scripting-API">
+<title
+>Skriptmodul-API</title>
+<para
+>Jedes Backend stellt einen speziellen Satz von Funktionen und Eigenschaften für seine Datenstrukturen und deren Elemente bereit,außerdem noch die Eigenschaften und Funktionen, die für die Basisdatenstruktur definiert wurden. </para>
+&apiDatastructure; &apiGraphstructure; &apiLinkedListstructure; &apiRootedTreestructure; &apiConsole; </chapter>
+
+
+&chapterImportExport;
+
+
+<chapter id="credits">
+<title
+>Danksagungen und Lizenz</title>
+
+<para
+>&rocs; </para>
+<para
+>Copyright für das Programm:</para>
+<itemizedlist>
+	<listitem
+><para
+>Copyright 2008 Ugo Sangiori (ugorox AT gmail.com)</para
+></listitem>
+	<listitem
+><para
+>Copyright 2008-2012 Tomaz Canabrava (tcanabrava AT kde.org)</para
+></listitem>
+	<listitem
+><para
+>Copyright 2008-2012 Wagner Reck (wagner.reck AT gmail.com)</para
+></listitem>
+	<listitem
+><para
+>Copyright 2011-2013 Andreas Cord-Landwehr (cordlandwehr AT kde.org)</para
+></listitem>
+</itemizedlist>
+
+<para
+>Copyright der Dokumentation:</para>
+<itemizedlist>
+	<listitem
+><para
+>Dokumentation Copyright 2009 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail; </para
+></listitem>
+	<listitem
+><para
+>Dokumentation Copyright 2009 Tomaz Canabrava (tcanabrava AT kde.org)</para
+></listitem>
+	<listitem
+><para
+>Dokumentation copyright 2011-2013 Andreas Cord-Landwehr (cordlandwehr AT kde.org)</para
+></listitem>
+</itemizedlist>
+
+<para
+>Übersetzung Burkhard Lück <email
+>lueck@hube-lueck.de</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+<appendix id="installation">
+<title
+>Installation</title>
+
+<sect1 id="getting-rocs">
+<title
+>Wie Sie &rocs; erhalten</title>
+&install.intro.documentation; </sect1>
+
+<sect1 id="compilation">
+<title
+>Kompilierung und Installation</title>
+&install.compile.documentation; </sect1>
+</appendix>
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes: nil
+sgml-general-insert-case: lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

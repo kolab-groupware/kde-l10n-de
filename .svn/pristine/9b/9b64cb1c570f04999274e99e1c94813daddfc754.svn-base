@@ -1,0 +1,789 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+
+  <!ENTITY kabcclient "<application
+>KABC-Client</application
+>">
+  <!ENTITY kappname "KABCClient">
+  <!ENTITY package "kdepim">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE">
+]>
+<!-- The language must NOT be changed here. -->
+
+<book id="kabcclient" lang="&language;">
+
+<bookinfo id="kabcclientinfo">
+
+<title
+>Das Handbuch zu &kabcclient;</title>
+
+<authorgroup>
+  <author
+><firstname
+>Kevin</firstname
+> <surname
+>Krammer</surname
+> <affiliation
+> <address
+> <email
+>kevin.krammer@gmx.at</email>
+      </address>
+    </affiliation>
+  </author>
+  <othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+  <year
+>2008</year>
+  <holder
+>Kevin Krammer</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Don't change format of date and version of the documentation -->
+
+<date
+>2008-11-20</date>
+<releaseinfo
+>1.1.1</releaseinfo>
+
+<abstract>
+  <para
+>&kabcclient; ist ein Befehlszeilenprogramm für das &kde;-Adressbuch.</para>
+</abstract>
+
+
+<keywordset>
+  <keyword
+>KDE</keyword>
+  <keyword
+>&package;</keyword>
+  <keyword
+>&kappname;</keyword>
+  <keyword
+>KAddressBook</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Einleitung</title>
+
+<para
+>&kabcclient; ist ein Befehlszeilenprogramm für das &kde;-Adressbuch. Es können Kontakte angezeigt, gesucht, eingefügt, gelöscht oder zusammengeführt werden, entweder über die Befehlszeile oder mit Skripten. &kabcclient; kann verschiedene Formate für die Ein- und Ausgabe verarbeiten. Es ist möglich, mit dem Programm vollständige  &kde;-Adressbücher zu importieren oder zu exportieren. </para>
+
+<para
+>Beim Aufruf ohne Argumente arbeitet &kabcclient; im Suchmodus. Zu den auf der Standardeingabe eingelesenen Daten werden passende Kontakte im &kde;-Adressbuch gesucht.</para>
+
+<para
+>Hauptfunktionen von &kabcclient;: <itemizedlist>
+  <listitem
+><para
+>Anzeige aller Kontakte aus dem &kde;-Adressbuch</para
+></listitem>
+  <listitem
+><para
+>Suche nach passenden Kontakten für die Eingaben</para
+></listitem>
+  <listitem
+><para
+>Einfügen von Kontakten </para
+></listitem>
+  <listitem
+><para
+>Löschen von Kontakten</para
+></listitem>
+  <listitem
+><para
+>Zusammenführen und Ändern passender Kontakte mit neuen Daten</para
+></listitem>
+</itemizedlist
+></para>
+
+<para
+>&kabcclient; ist <emphasis
+>keine</emphasis
+> weitere grafische Benutzerschnittstelle zum &kde;-Adressbuch wie zum Beispiel &kaddressbook;, &kabcclient; wird ausschließlich dann benutzt, wenn die Arbeit mit einer grafischen Benutzerschnittstelle nicht praktikabel oder nicht möglich ist.</para>
+
+<para
+>&kabcclient; bietet <emphasis
+>keine</emphasis
+> vollständige Befehlssprache für die Abfrage der Einträge im Adressbuch, das ist auch nicht beabsichtigt. Dafür gibt es  andere Befehlszeilenprogramme. </para>
+
+<para
+>Um alle Möglichkeiten der Verarbeitung von Daten anzuzeigen, kann jede Option, die ein Argument erfordert, mit dem Wert <replaceable
+>help</replaceable
+> aufgerufen werden. Dann werden alle gültigen Werte der Argumente für diese Option ausgegeben. </para>
+
+</chapter>
+
+<chapter id="features">
+<title
+>Funktionen</title>
+<para
+>Dieses Kapitel erläutert die Funktionen von &kabcclient; und deren Kontrolle über Befehlszeilenparameter (wiederum: &kabcclient; ist keine grafische Benutzeroberfläche, sondern lediglich ein Befehlszeilenprogramm).</para>
+
+<para
+>Das Einfügen, Löschen und die Suche von Kontaktdaten wird hier erläutert, ebenso die Verwendung der verschiedenen Formate für Ein- und Ausgabe. </para>
+
+<sect1 id="listing">
+<title
+>Anzeige der Einträge im Adressbuch</title>
+
+<para
+>Dies ist die Hauptarbeitsweise von &kabcclient;, sie wird mit der Option <parameter
+>--list</parameter
+> oder <parameter
+>-L</parameter
+> gestartet. Damit werden alle Kontakte des &kde;-Adressbuchs auf der Standardausgabe des Programms angezeigt. Menge und Format der Daten hängt von dem gewählten Ausgabeformat ab.</para>
+
+<para>
+<informalexample
+><para
+>Zur Ausgabe aller Kontakte im Standard-vCard-Format geben Sie ein:</para>
+
+<para>
+<screen
+><prompt
+>%</prompt
+><userinput
+> <command
+>kabcclient <option
+>-L</option
+></command>
+</userinput
+>
+</screen>
+</para>
+</informalexample>
+</para>
+
+<para>
+<informalexample
+><para
+>Um jeden Kontakt auf einer eigenen Zeile zum Beispiel zum Zählen anzuzeigen, geben Sie folgendes ein:</para>
+
+<para>
+<screen
+><prompt
+>%</prompt
+><userinput
+> <command
+>kabcclient <option
+>-L</option
+> <option
+>-of <replaceable
+>uid</replaceable
+></option
+></command>
+</userinput
+>
+</screen>
+</para>
+</informalexample>
+</para>
+
+<para>
+<informalexample
+><para
+>Mit dem nächsten Beispiel werden alle E-Mail-Adressen ausgegeben:</para>
+
+<para>
+<screen
+><prompt
+>%</prompt
+><userinput
+> <command
+>kabcclient</command
+> <option
+>--list</option
+> <option
+>-of <replaceable
+>email</replaceable
+></option>
+</userinput
+>
+</screen>
+</para>
+</informalexample>
+</para>
+
+</sect1>
+
+<sect1 id="searching">
+<title
+>Suche nach passenden Kontakten für Eingabedaten</title>
+
+<para
+>&kabcclient; kann Daten von der Befehlszeile oder über die Standardeingabe des Programms einlesen und nach passenden Werten in allen Kontakten des &kde;-Adressbuchs suchen. Suchen ist der Standard-Verabeitungsmodus, dies kann aber auch ausdrücklich mit den Befehlszeilenargumenten <parameter
+>--search</parameter
+> oder <parameter
+>-S</parameter
+> ausgewählt werden. </para>
+
+<para>
+<informalexample
+><para
+>Im folgenden Beispiel werden alle Kontakte mit <replaceable
+>jane</replaceable
+>  in einem Teil eines beliebigen Namensfeldes oder der E-Mail-Adresse im Format vCard auf der Standardausgabe angezeigt. Das Format vCard ist die Voreinstellung für die Option <option
+>--output-format</option
+>:</para>
+
+<para>
+<screen
+><prompt
+>%</prompt
+><userinput
+> <command
+>kabcclient</command
+> <option
+>--search</option
+> <replaceable
+>jane</replaceable
+></userinput
+></screen>
+</para>
+</informalexample>
+</para>
+
+<para>
+<informalexample
+><para
+>Die gleiche Abfrage, diesmal wird der Suchtext auf der Standardeingabe des Programms gelesen:</para>
+
+<para>
+<screen
+><prompt
+>%</prompt
+><userinput
+> <command
+>echo</command
+> <replaceable
+>jane</replaceable
+> | <command
+>kabcclient</command
+> <option
+>--search</option
+></userinput
+></screen>
+</para>
+</informalexample>
+</para>
+
+<para
+>Mit der Option <option
+>--match-case</option
+> kann eingestellt werden, ob bei der Suche die Groß-/Kleinschreibung beachtet wird.</para>
+</sect1>
+
+<sect1 id="adding">
+<title
+>Kontakte hinzufügen</title>
+
+<para
+>Mit &kabcclient; ist es möglich, neue Kontakte mit dem Befehlszeilenargument <parameter
+>--add</parameter
+> oder <parameter
+>-A</parameter
+> zum &kde;-Adressbuch hinzuzufügen. Die Daten können entweder als zusätzliche Argumente der Befehlszeile angegeben oder über die Standardeingabe gelesen werden. Bei erfolgreicher Ausführung werden die hinzugefügten Kontakte zur Standardausgabe des Programms geschrieben. Da mit dieser Operation Daten des Adressbuchs verändert werden, kann ein Probelauf mit der Option <option
+>--nosave</option
+> durchgeführt werden. </para>
+
+<para>
+<informalexample
+><para
+>Hinzufügen eines Kontaktes mit Namen und E-Mail-Adresse, die Daten werden durch ein zusätzliches Befehlszeilenargument angegeben:</para>
+
+<para>
+<screen
+><prompt
+>%</prompt
+><userinput
+> <command
+>kabcclient</command
+> <option
+>--add</option
+> <option
+>--input-format <replaceable
+>email</replaceable
+> </option
+><replaceable
+>"John Doe &lt;j.doe@example.com&gt;"</replaceable
+></userinput
+></screen>
+</para>
+</informalexample>
+</para>
+
+<para>
+<informalexample
+><para
+>Hinzufügen aller Kontakte aus einer vCard-Datei, die über die Standardeingabe des Programms eingelesen wird:</para>
+
+<para>
+<screen
+><prompt
+>%</prompt
+><userinput
+> <command
+>cat <replaceable
+>beispiel-datei.vcf</replaceable
+></command
+> | <command
+>kabcclient</command
+> <option
+>--add</option
+> <option
+>--input-format <replaceable
+>vcard</replaceable
+> </option
+></userinput
+></screen>
+</para>
+</informalexample>
+</para>
+</sect1>
+
+<sect1 id="deleting">
+<title
+>Kontakte löschen</title>
+
+<para
+>Mit &kabcclient; ist es möglich, neue Kontakte mit dem Befehlszeilenargument <parameter
+>--remove</parameter
+> oder <parameter
+>-R</parameter
+> aus dem &kde;-Adressbuchzu löschen. Die Eingabedaten werden wie bei der Suche im Adressbuch angegeben. Bei erfolgreicher Ausführung werden die entfernten Kontakte zur Standardausgabe des Programms geschrieben. Da mit dieser Operation Daten des Adressbuchs verändert werden, kann ein Probelauf mit der Option <option
+>--nosave</option
+> durchgeführt werden. </para>
+
+<warning
+><para
+>Das Löschen eines Eintrages aus dem Adressbuch kann <emphasis
+>nicht</emphasis
+> rückgängig gemacht werden. Ein entfernter Eintrag ist und bleibt gelöscht.</para
+></warning>
+
+<para>
+<informalexample
+><para
+>Probelauf des Löschens aller Kontakte mit <replaceable
+>jane</replaceable
+>  in einem Teil eines beliebigen Namensfeldes oder der E-Mail-Adresse:</para>
+
+<para>
+<screen
+><prompt
+>%</prompt
+><userinput
+> <command
+>kabcclient</command
+> <option
+>--remove</option
+> <option
+>--nosave</option
+> <replaceable
+>jane</replaceable
+></userinput
+></screen>
+</para>
+</informalexample>
+</para>
+
+</sect1>
+
+<sect1 id="formats">
+<title
+>Ein- und Ausgabeformate</title>
+
+<para
+>&kabcclient; kann nach verschiedenen Formatierungsregeln Eingabedaten interpretieren oder Ausgabedaten formatieren. Die besten Ergebnisse für diese Funktionen werden bei verschiedenen Aufgaben mit bestimmten Kombinationen der Formate erzielt. Für einige Formate gibt es zusätzliche Parameter, um den Ablauf der Verarbeitung genauer zu steuern. </para>
+
+<para
+>Da Textdaten in unterschiedlichen Kodierungen vorliegen können, kann für die Ein- und Ausgabe eine bestimmte Kodierung vorgegeben werden. </para>
+
+<para
+>Für alle diese Befehlszeilenoptionen gibt es den speziellen Wert <replaceable
+>help</replaceable
+>, damit werden alle zulässigen Werte dieser Optionen angezeigt.</para>
+
+<sect2 id="vcard-format">
+<title
+>vCard-Format</title>
+
+<para
+>vCard (<acronym
+>RFC</acronym
+> 2426) ist das Standardformat für Kontaktdaten, Es kann alle Informationen aufnehmen, sodass andere Adressbuchprogramme wie &kaddressbook; darauf zugreifen können. Daher ist das vCard-Format der Standard für die Formatierung der Ausgaben. </para>
+</sect2>
+
+<sect2 id="csv-format">
+<title
+>Durch Komma getrennte Werte (<quote
+><acronym
+>CSV</acronym
+></quote
+>-Format)</title>
+
+<para
+>Das CSV-Format kann als Eingabeformat benutzt werden, um Daten in bestimmte Felder eines Kontakteintrages einzufügen. Als Ausgabeformat wird es verwendet, um die Datenmenge zu verringern oder die Daten für eine weitere Bearbeitung umzusortieren. Eine beliebige Zuordnung von Kontaktfeldern zu CSV-Spalten kann durch Beschreibungsdateien für CSV-Vorlagen festgelegt werden. Diese Beschreibungsdateien werden von &kaddressbook; ebenfalls für diesen Zweck benutzt. </para>
+</sect2>
+</sect1>
+</chapter>
+
+<chapter id="features-commandline-options">
+<title
+>Befehlszeilenargumente</title>
+
+<para
+>&kabcclient; unterstützt folgende Optionen:</para>
+
+<informaltable>
+<tgroup cols="2">
+<thead>
+<row>
+  <entry
+>Option</entry>
+  <entry
+>Beschreibung</entry>
+</row>
+</thead>
+<tbody>
+<row>
+  <entry
+><option
+>--help, --help-all</option
+></entry>
+  <entry
+>Zeigt Hilfetexte zu den Optionen an.</entry>
+</row>
+<row>
+  <entry
+><option
+>--author</option
+></entry>
+  <entry
+>Zeigt Informationen über die Programmautoren.</entry>
+</row>
+<row>
+  <entry
+><option
+>-v, --version</option
+></entry>
+  <entry
+>Zeigt die Versionsnummer des Programms an.</entry>
+</row>
+<row>
+  <entry
+><option
+>--license</option
+></entry>
+  <entry
+>Zeigt Informationen zu den Lizenzbestimmungen.</entry>
+</row>
+<row>
+  <entry
+><option
+>--verbose</option
+></entry>
+  <entry
+>Gibt nützliche Laufzeitmeldungen aus.</entry>
+</row>
+<row>
+  <entry
+><option
+>--nosave</option
+></entry>
+  <entry
+>Führt den Befehl aus und zeigt das Ergebnis an. Es werden jedoch keine Daten im &kde;-Adressbuch geändert, vorhandene Kontakte werden nicht bearbeitet, es werden keine Daten eingefügt oder gelöscht.</entry>
+</row>
+<row>
+  <entry
+><option
+>--match-case</option
+></entry>
+  <entry
+>Verwendet Groß-/Kleinschreibungeibun, wenn der Eingabetext mit den Kontakteinträgen verglichen wird.</entry>
+</row>
+<row>
+  <entry
+><emphasis
+>Hauptarbeitsmodi:</emphasis
+></entry>
+</row>
+<row>
+  <entry
+><option
+>-L, --list</option
+></entry>
+  <entry
+>Gibt alle Kontakte in vorgegebenen Format aus.</entry>
+</row>
+<row>
+  <entry
+><option
+>-A, --add</option
+></entry>
+  <entry
+>Fügt Kontakte in das Adressbuch ein.</entry>
+</row>
+<row>
+  <entry
+><option
+>-R, --remove</option
+></entry>
+  <entry
+>Löscht Kontakte aus dem Adressbuch.</entry>
+</row>
+<row>
+  <entry
+><option
+>-M, --merge</option
+></entry>
+  <entry
+>Führt die Daten aus der Eingabe mit den zugehörigen Kontakten aaus dem Adressbuch zusammen.</entry>
+</row>
+<row>
+  <entry
+><emphasis
+>Formatierung und Kodierung</emphasis
+></entry>
+</row>
+<row>
+  <entry
+><option
+>-if, --input-format</option
+> <replaceable
+>format</replaceable
+></entry>
+  <entry
+>Legt fest, wie die Eingabedaten interpretiert werden sollen. Mit <replaceable
+>help</replaceable
+> wird eine Liste aller möglichen Werte angezeigt.</entry>
+</row>
+<row>
+  <entry
+><option
+>-of, --output-format</option
+> <replaceable
+>format</replaceable
+></entry>
+  <entry
+>Legt fest, wie die Ausgabedaten formatiert werden sollen. Mit <replaceable
+>help</replaceable
+> wird eine Liste aller möglichen Werte angezeigt.</entry>
+</row>
+<row>
+  <entry
+><option
+>-if-opts, --input-format-options</option
+> <replaceable
+>optionen</replaceable
+></entry>
+  <entry
+>Benutzerdefinierte Optionen für das Eingabeformat. Mit <replaceable
+>help</replaceable
+> wird eine Liste aller möglichen Werte angezeigt.</entry>
+</row>
+<row>
+  <entry
+><option
+>-of-opts, --output-format-options</option
+> <replaceable
+>optionen</replaceable
+></entry>
+  <entry
+>Benutzerdefinierte Optionen für das Ausgabeformat. Mit <replaceable
+>help</replaceable
+> wird eine Liste aller möglichen Werte angezeigt.</entry>
+</row>
+<row>
+  <entry
+><option
+>-ic, --input-codec</option
+> <replaceable
+>encoding</replaceable
+></entry>
+  <entry
+>Textkodierung für die Anzeige der Eingabedaten. Mit <replaceable
+>help</replaceable
+> wird eine Liste aller möglichen Werte angezeigt.</entry>
+</row>
+<row>
+  <entry
+><option
+>-oc, --output-codec</option
+> <replaceable
+>encoding</replaceable
+></entry>
+  <entry
+>Textkodierung für die Anzeige der Ausgabedaten. Mit <replaceable
+>help</replaceable
+> wird eine Liste aller möglichen Werte angezeigt.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+
+</chapter>
+
+<chapter id="faq">
+<title
+>Fragen und Antworten</title>
+&reporting.bugs; &updating.documentation; <qandaset id="faqlist">
+<qandaentry>
+<question>
+<para
+>Welche Konfigurationsdateien verwendet &kabcclient;?</para>
+</question>
+<answer>
+<para
+>Keine.</para>
+</answer>
+</qandaentry>
+
+
+<qandaentry>
+<question>
+<para
+>Wie lautet der Programmname von &kabcclient;?</para>
+</question>
+<answer>
+<para
+>Der Programmname von &kabcclient; lautet  <application
+>kabcclient</application
+>.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para
+>Wie kann ich eine Frage zu den <acronym
+>FAQ</acronym
+> hinzufügen?</para>
+</question>
+<answer>
+<para
+>Senden Sie Ihre Fragen an <email
+>kevin.krammer@gmx.at</email
+>.</para>
+</answer>
+</qandaentry>
+
+</qandaset>
+</chapter>
+
+
+<chapter id="credits">
+
+<title
+>Danksagungen und Lizenz</title>
+
+<para
+>&kabcclient; Programm Copyright 2005-2008:</para>
+
+<itemizedlist>
+<listitem
+><para
+>Kevin Krammer <email
+>kevin.krammer@gmx.at</email
+></para
+></listitem>
+</itemizedlist>
+
+<para
+>Dokumentation Copyright 2008:</para>
+<itemizedlist>
+<listitem
+><para
+>Kevin Krammer <email
+>kevin.krammer@gmx.at</email
+></para
+></listitem>
+</itemizedlist>
+
+<para
+>Übersetzung Burkhard Lück<email
+>lueck@hube-lueck.de</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+<appendix id="installation">
+<title
+> Installation</title>
+
+<sect1 id="obtaining-application">
+<title
+>Bezugsquellen von &kabcclient;</title>
+&install.intro.documentation; <para
+>&kabcclient; ist Bestandteil von &kde;4 und nicht einzeln erhältlich. </para>
+
+</sect1>
+
+<sect1 id="requirements">
+<title
+>Anforderungen</title>
+
+<para
+>Für &kabcclient; müssen die &kde;-Standardbibliotheken (also das <filename
+>kdelibs</filename
+> und das <filename
+>kdepimlibs</filename
+>-Paket) installiert sein. Zur Kompilierung wird außerdem &Qt; und die Entwicklerpakete zu <filename
+>kdelibs</filename
+> und  <filename
+>kdepimlibs</filename
+> benötigt.</para>
+
+<para
+>Ein Liste von Änderungen finden Sie in der Datei <filename
+>ChangeLog</filename
+>.</para>
+</sect1>
+
+<sect1 id="configuration">
+<title
+>Einrichtung</title>
+
+<para
+>Zur Verwendung von &kabcclient; mit der &kde;-Arbeitsoberfläche sind keine weiteren Konfigurationen notwendig.</para>
+
+</sect1>
+
+</appendix>
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

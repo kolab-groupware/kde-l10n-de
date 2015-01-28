@@ -1,0 +1,1869 @@
+# Stephan Johach <hunsum@gmx.de>, 2004, 2005.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005.
+# Burkhard Lück <lueck@hube-lueck.de>, 2007, 2009, 2011, 2013.
+# Frederik Schwarzer <schwarzer@kde.org>, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: knode_using-morefeatures\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:11+0000\n"
+"PO-Revision-Date: 2013-05-26 19:17+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: using-morefeatures.docbook:2
+#, no-c-format
+msgid "The Advanced &knode; Features"
+msgstr "Weiterführende Funktionen von &knode;"
+
+#. Tag: title
+#: using-morefeatures.docbook:5
+#, no-c-format
+msgid "Defining and Using Filters"
+msgstr "Definieren und Anwenden von Filtern"
+
+#. Tag: para
+#: using-morefeatures.docbook:7
+#, no-c-format
+msgid ""
+"You may already have read about using filters in the chapter explaining the "
+"configuration of &knode;; there, we were talking about the built-in filters "
+"provided by &knode; there. You can configure the built-in filters like all "
+"the others. The screenshot below shows the dialog box for configuring the "
+"filters."
+msgstr ""
+"Im Kapitel über die Einrichtung von &knode; haben wir bereits die Anwendung "
+"von Filtern anhand der vordefinierten Filter betrachtet, die &knode; zur "
+"Verfügung stellt. Auch diese können, wie alle Filter, jederzeit von Ihnen "
+"bearbeitet und an Ihre persönlichen Bedürfnisse angepasst werden. Die "
+"Abbildung zeigt den Dialog zum Bearbeiten der Filter."
+
+#. Tag: para
+#: using-morefeatures.docbook:13
+#, no-c-format
+msgid ""
+"While filters and scoring are very powerful and have many uses, one of the "
+"most common requirements is simply to add all posts written by someone you "
+"don't wish to read to a <quote>killfile</quote>. At the <link linkend="
+"\"killfiles\">end of this section</link> is a quick guide to using filters "
+"and scores to create such a killfile."
+msgstr ""
+"Obwohl Filtern und Bewerten leistungsfähige Funktionen sind und vielfältig "
+"eingesetzt werden können, ist eine der meistgefragten Funktionen die "
+"Möglichkeit alle Artikel eines Absenders, von dem Sie nichts lesen wollen, "
+"in ein <quote>killfile</quote> einzutragen. Am Ende <link linkend=\"killfiles"
+"\">dieses Abschnitts</link> finden Sie eine kurze Anleitung wie Sie das mit "
+"Filtern und Bewerten erreichen."
+
+#. Tag: screeninfo
+#: using-morefeatures.docbook:21
+#, no-c-format
+msgid "<screeninfo>The <guilabel>New Filter</guilabel> dialog</screeninfo>"
+msgstr "<screeninfo>Der Dialog <guilabel>Neuer Filter</guilabel></screeninfo>"
+
+#. Tag: phrase
+#: using-morefeatures.docbook:26
+#, no-c-format
+msgid "<phrase>The <guilabel>New Filter</guilabel> dialog</phrase>"
+msgstr "<phrase>Der Dialog <guilabel>Neuer Filter</guilabel></phrase>"
+
+#. Tag: para
+#: using-morefeatures.docbook:29
+#, no-c-format
+msgid "<para>The <guilabel>New Filter</guilabel> dialog</para>"
+msgstr "<para>Der Dialog <guilabel>Neuer Filter</guilabel></para>"
+
+#. Tag: para
+#: using-morefeatures.docbook:34
+#, no-c-format
+msgid ""
+"First we will create a new filter. You may, at some point, want to find your "
+"own articles amongst all the others; or, you may not want to see the "
+"articles posted by a particular person at all: both cases can be solved by a "
+"simple filter on the Sender. Here are some examples:"
+msgstr ""
+"Zunächst wollen wir einen neuen Filter erstellen. Es gibt sicherlich den "
+"Fall, dass Sie Ihre eigenen Artikel im Wust der anderen finden möchten, oder "
+"aber Artikel einer bestimmten Person überhaupt nicht sehen möchten. Beide "
+"Fälle können sehr einfach durch einen Filter auf den Absender abgedeckt "
+"werden. Hier einige Beispiele für Filter:"
+
+#. Tag: title
+#: using-morefeatures.docbook:41
+#, no-c-format
+msgid "Do Not Show The Articles by a Particular Person"
+msgstr "<glossterm> Artikel</glossterm> einer bestimmten Person nicht anzeigen"
+
+#. Tag: menuchoice
+#: using-morefeatures.docbook:43 using-morefeatures.docbook:85
+#: using-morefeatures.docbook:124
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu><guimenuitem>Configure KNode...</"
+"guimenuitem><guilabel>Reading News</guilabel><guilabel>Filters</guilabel>"
+msgstr ""
+"<guimenu> Einstellungen</guimenu> <guimenuitem> KNode einrichten ...</"
+"guimenuitem> <guilabel> News lesen</guilabel> <guilabel> Filter</guilabel> "
+
+#. Tag: para
+#: using-morefeatures.docbook:48
+#, no-c-format
+msgid "Select <guibutton>New...</guibutton>"
+msgstr "Wählen Sie <guibutton>Neu ...</guibutton> "
+
+#. Tag: para
+#: using-morefeatures.docbook:51
+#, no-c-format
+msgid ""
+"Insert <userinput>Do not show idiot</userinput> in the Text Box "
+"<guilabel>Name</guilabel>"
+msgstr ""
+"Im Feld <guilabel>Name</guilabel> geben Sie <userinput>Nervensäge nicht "
+"anzeigen</userinput> ein."
+
+#. Tag: para
+#: using-morefeatures.docbook:55
+#, no-c-format
+msgid ""
+"To make the filter appear on the menu, check <guilabel>Show in menu</"
+"guilabel>."
+msgstr ""
+"Damit der Filter im Menü später angezeigt wird, markieren Sie das "
+"Ankreuzfeld <guilabel>Im Menü anzeigen</guilabel>."
+
+#. Tag: para
+#: using-morefeatures.docbook:59
+#, no-c-format
+msgid "Go to the <guilabel>From</guilabel> area."
+msgstr "Begeben Sie sich in den Bereich <guilabel>Absender</guilabel>."
+
+#. Tag: para
+#: using-morefeatures.docbook:62
+#, no-c-format
+msgid "Choose <guilabel>Does NOT contain</guilabel> from the drop-down box."
+msgstr ""
+"Wählen Sie in der nebenstehenden Auswahlbox den Eintrag <guilabel>enthält "
+"NICHT</guilabel> aus."
+
+#. Tag: para
+#: using-morefeatures.docbook:66
+#, no-c-format
+msgid ""
+"Insert the name of the person you want to ignore in the now- active Text "
+"Box; for example, <userinput>Idiot</userinput>."
+msgstr ""
+"In das nun aktiv gewordene Eingabefeld tragen Sie den Namen des "
+"unerwünschten Absenders ein. Beispielsweise <userinput>Nervensäge</"
+"userinput>."
+
+#. Tag: para
+#: using-morefeatures.docbook:70
+#, no-c-format
+msgid "Confirm the filter settings with <guibutton>OK</guibutton>."
+msgstr ""
+"Bestätigen Sie das Erstellen des Filters mit <guibutton>OK</guibutton>."
+
+#. Tag: para
+#: using-morefeatures.docbook:75
+#, no-c-format
+msgid ""
+"The filter now shows all articles, except the ones containing <quote>Idiot</"
+"quote> in the From: line."
+msgstr ""
+"Der Filter zeigt nun alle <glossterm>Artikel</glossterm> an, außer denen, "
+"die den Absender <quote>Nervensäge</quote> haben."
+
+#. Tag: para
+#: using-morefeatures.docbook:78
+#, no-c-format
+msgid ""
+"You can combine the settings of the 'Subject + From' tab with the settings "
+"on the other tabs. For example:"
+msgstr ""
+"Selbstverständlich können Sie die Einstellungen der Dialogseite Betreff + "
+"Absender mit den Einstellungen auf den anderen Dialogseiten kombinieren. Ein "
+"Beispiel hierzu:"
+
+#. Tag: title
+#: using-morefeatures.docbook:82
+#, no-c-format
+msgid "Show only discussion with unread follow-ups on own articles."
+msgstr ""
+"Nur Diskussionen anzeigen, in denen ungelesene Folgenachrichten auf Ihre "
+"<glossterm>Artikel</glossterm> vorliegen"
+
+#. Tag: para
+#: using-morefeatures.docbook:90
+#, no-c-format
+msgid ""
+"Select the predefined filter <guilabel>threads with own articles</guilabel>"
+msgstr ""
+"Wählen Sie den vordefinierten Filter <guilabel>Diskussionen mit eigenen "
+"Artikeln</guilabel> aus."
+
+#. Tag: para
+#: using-morefeatures.docbook:94
+#, no-c-format
+msgid "Select <guibutton>Copy</guibutton>"
+msgstr "Betätigen Sie <guibutton>Kopieren</guibutton> "
+
+#. Tag: para
+#: using-morefeatures.docbook:97
+#, no-c-format
+msgid ""
+"Insert <userinput>My threads with unread</userinput> in the <guilabel>Name</"
+"guilabel> field."
+msgstr ""
+"Im Feld <guilabel>Name</guilabel> geben Sie <userinput>Meine Diskussionen "
+"mit Ungelesenen</userinput> ein."
+
+#. Tag: para
+#: using-morefeatures.docbook:101
+#, no-c-format
+msgid "Select the <guilabel>Status</guilabel> tab"
+msgstr "Wechseln Sie zur Dialogseite <guilabel>Status</guilabel>."
+
+#. Tag: para
+#: using-morefeatures.docbook:104
+#, no-c-format
+msgid "Select <guilabel>has new followups</guilabel>"
+msgstr ""
+"Wählen Sie das Ankreuzfeld <guilabel>ungelesene Folgenachrichten liegen vor</"
+"guilabel> "
+
+#. Tag: para
+#: using-morefeatures.docbook:107
+#, no-c-format
+msgid "Select <guilabel>true</guilabel> in the drop-down box next to it."
+msgstr ""
+"Wählen Sie in der Auswahlbox daneben die Einstellung <guilabel>wahr</"
+"guilabel>."
+
+#. Tag: para
+#: using-morefeatures.docbook:111 using-morefeatures.docbook:161
+#, no-c-format
+msgid "Confirm the filter settings with <guibutton>OK</guibutton>"
+msgstr ""
+"Bestätigen Sie das Erstellen des Filters mit <guibutton>OK</guibutton> "
+
+#. Tag: para
+#: using-morefeatures.docbook:113
+#, no-c-format
+msgid ""
+"This filter shows all the threads your are participating in which have "
+"unread messages; also, you have seen the possibility of using existing "
+"filters as a base for new ones: this makes life easier for complex filters."
+msgstr ""
+"Der Filter zeigt nun alle Diskussionen an, bei denen sie beteiligt sind und "
+"in denen noch ungelesene Antworten auf Ihre Artikel vorliegen. Gleichzeitig "
+"haben Sie gesehen, dass Sie neue Filter auf Grundlage bereits vorhandener "
+"Filter erstellen können. Dies stellt bei komplexeren Filtern, die sich nur "
+"durch Details unterscheiden eine große Erleichterung dar."
+
+#. Tag: title
+#: using-morefeatures.docbook:121
+#, no-c-format
+msgid ""
+"Show all articles, no older than 3 days, containing KNode in the subject."
+msgstr ""
+"Alle Artikel zeigen, die im Betreff das Wort KNode enthalten und nicht älter "
+"als drei Tage sind."
+
+#. Tag: para
+#: using-morefeatures.docbook:129
+#, no-c-format
+msgid "Select <guibutton>Add</guibutton>"
+msgstr "Wählen Sie <guibutton>Hinzufügen</guibutton> "
+
+#. Tag: para
+#: using-morefeatures.docbook:132
+#, no-c-format
+msgid ""
+"Insert <userinput>Latest KNode threads</userinput> in the <guilabel>Name</"
+"guilabel> field."
+msgstr ""
+"Im Feld <guilabel>Name</guilabel> geben Sie <userinput>Letzte KNode "
+"Diskussionen</userinput> ein."
+
+#. Tag: para
+#: using-morefeatures.docbook:136
+#, no-c-format
+msgid ""
+"To make the filter appear in the menu, check <guilabel>show in menu</"
+"guilabel>."
+msgstr ""
+"Damit der Filter im Menü später angezeigt wird, markieren Sie das "
+"Ankreuzfeld <guilabel>Im Menü anzeigen</guilabel>."
+
+#. Tag: para
+#: using-morefeatures.docbook:140
+#, no-c-format
+msgid ""
+"From the <guilabel>apply on</guilabel> drop-down box select <guilabel>single "
+"articles</guilabel>"
+msgstr ""
+"In der Auswahlbox <guilabel>Anwenden auf</guilabel> wählen Sie "
+"<guilabel>Einzelne Artikel</guilabel>"
+
+#. Tag: para
+#: using-morefeatures.docbook:144
+#, no-c-format
+msgid ""
+"Go to the <guilabel>Subject</guilabel> area and select <guilabel>does "
+"contain</guilabel> in the drop-down box."
+msgstr ""
+"Wählen Sie im Bereich <guilabel>Betreff</guilabel> den Eintrag "
+"<guilabel>enthält</guilabel> aus dem Auswahlfeld aus."
+
+#. Tag: para
+#: using-morefeatures.docbook:148
+#, no-c-format
+msgid "Insert <userinput>knode</userinput> in the text box."
+msgstr ""
+"In das Eingabefeld tragen Sie das Wort <userinput>knode</userinput> ein."
+
+#. Tag: para
+#: using-morefeatures.docbook:151
+#, no-c-format
+msgid "Change to the <guilabel>Additional</guilabel> tab"
+msgstr "Wechseln Sie zur Dialogseite <guilabel>Weitere</guilabel>"
+
+#. Tag: para
+#: using-morefeatures.docbook:154
+#, no-c-format
+msgid "Select the <guilabel>Age</guilabel> check box"
+msgstr "Wählen Sie das Ankreuzfeld <guilabel>Alter</guilabel>"
+
+#. Tag: para
+#: using-morefeatures.docbook:157
+#, no-c-format
+msgid "Enter the following settings: <guilabel>0 &lt; days &lt;= 3</guilabel>"
+msgstr ""
+"Treffen Sie folgende Einstellung <guilabel> 0 &lt; Tage &gt;= 3</guilabel>"
+
+#. Tag: para
+#: using-morefeatures.docbook:163
+#, no-c-format
+msgid ""
+"This filter, now, shows all articles, no older than 3 days, containing "
+"<emphasis>knode</emphasis> in the subject."
+msgstr ""
+"Der Filter zeigt nun alle Artikel an, die nicht älter als drei Tage sind, "
+"und in denen im Betreff der Begriff<emphasis> knode</emphasis> auftaucht."
+
+#. Tag: title
+#: using-morefeatures.docbook:169 using-morefeatures.docbook:188
+#, no-c-format
+msgid "Creating a Killfile"
+msgstr "Das Anlegen eines Killfiles"
+
+#. Tag: para
+#: using-morefeatures.docbook:171
+#, no-c-format
+msgid ""
+"&knode; offers viewing filters (<guilabel>all</guilabel>, <guilabel>unread "
+"only</guilabel>, <guilabel>my posts</guilabel>, &etc;) and scoring filters "
+"(threads and articles start with a score of zero and can be adjusted "
+"according to author, thread, &etc;)."
+msgstr ""
+"&knode; bietet Ansichtsfilter (<guilabel>Alle</guilabel>, "
+"<guilabel>Ungelesene</guilabel>, <guilabel>Eigene Artikel</guilabel>) und "
+"Bewertungsfilter (Diskussionen und Artikel haben zunächst eine Bewertung von "
+"0 und dies kann abhängig von Autor, Diskussion &etc; angepasst werden)."
+
+#. Tag: para
+#: using-morefeatures.docbook:176
+#, no-c-format
+msgid ""
+"Using viewing filters you could hide articles according to poster, but this "
+"is not really suitable when you want to kill several posters universally."
+msgstr ""
+"Mit den Ansichtsfiltern können Sie Artikel abhängig vom Autor ausblenden. "
+"Aber das ist nicht wirklich nützlich, wenn Sie mehrere Autoren übergreifend "
+"ignorieren möchten. "
+
+#. Tag: para
+#: using-morefeatures.docbook:180
+#, no-c-format
+msgid ""
+"Using the scoring gives lots of control but filters only at the thread "
+"level, i.e. you can watch and ignore threads; the disadvantage of this, "
+"however, is that you may lose otherwise-useful threads just because of one "
+"poster."
+msgstr ""
+"Die Verwendung der Bewertungsfunktion ermöglicht Vieles, funktioniert aber "
+"nur auf der Ebene von Diskussionen: Sie können Diskussionen überwachen und "
+"ignorieren. Das hat aber den Nachteil, dass Sie hierbei ansonsten "
+"interessante Diskussionen nur wegen eines Autors komplett ignorieren müssten."
+
+#. Tag: para
+#: using-morefeatures.docbook:185
+#, no-c-format
+msgid "The solution is to use these in combination."
+msgstr "Die Lösung liegt in der Kombination dieser Funktionalitäten."
+
+#. Tag: para
+#: using-morefeatures.docbook:190
+#, no-c-format
+msgid ""
+"Go to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Configure KNode</"
+"guimenuitem><guilabel>Reading News</guilabel><guilabel>Filters</guilabel></"
+"menuchoice>."
+msgstr ""
+"Öffnen Sie <menuchoice><guimenu>Einstellungen</guimenu><guimenuitem>KNode "
+"einrichten ...</guimenuitem><guilabel>News lesen</guilabel><guilabel>Filter</"
+"guilabel></menuchoice>."
+
+#. Tag: para
+#: using-morefeatures.docbook:197
+#, no-c-format
+msgid ""
+"Create a new filter below <guilabel>unread</guilabel>, called "
+"<userinput>killfile on</userinput>. Be sure that <guilabel>Apply to single "
+"articles</guilabel> is set and then click on the <guilabel>Additional</"
+"guilabel> tab. Set score <quote>equal to or less than zero</quote> "
+"(<guilabel>&lt;=</guilabel>); then click the <guibutton>OK</guibutton> until "
+"you have exited the dialog."
+msgstr ""
+"Erstellen Sie einen neuen Filter unter <guilabel>Ungelesene</guilabel> und "
+"geben Sie ihm den Namen <userinput>killfile an</userinput>. Stellen Sie "
+"sicher, dass <guilabel>Anwenden auf einzelne Artikel</guilabel> gesetzt ist "
+"und wechseln Sie zur Karteikarte <guilabel>Sonstiges</guilabel>. Setzen Sie "
+"Bewertung auf <quote>kleiner oder gleich Null</quote> (<guilabel>&lt;=</"
+"guilabel>); und klicken Sie auf <guibutton>OK</guibutton>, um den Dialog zu "
+"schließen."
+
+#. Tag: para
+#: using-morefeatures.docbook:206
+#, no-c-format
+msgid ""
+"Open an article whose author should be killed and just type <keycombo action="
+"\"simul\">&Ctrl;<keycap>L</keycap></keycombo> (or select, from the "
+"<guimenu>Scoring</guimenu> menu, <guimenuitem>Lower Score for Author</"
+"guimenuitem>). This opens the Rule Editor (a part of scoring). You can "
+"optionally give the rule a name that matches the author (<userinput>Kook</"
+"userinput>, for example.) and then, if this is to be permanent, uncheck the "
+"<guilabel>Expire rule automatically</guilabel> box; you'll see that this "
+"rule will change the author's score to minus ten (or the score you entered); "
+"finally, click <guibutton>OK</guibutton>."
+msgstr ""
+"Öffnen Sie einen Artikel eines Absenders, der in das killfile soll und geben "
+"Sie <keycombo action=\"simul\">&Ctrl;<keycap>L</keycap></keycombo> ein (oder "
+"wählen Sie im Menü <guimenu>Bewertung</guimenu>, <guimenuitem>Bewertung für "
+"Autor herabsetzen</guimenuitem>). Der Regeleditor wird geöffnet. Optional "
+"können Sie der Regel einen Namen geben (z. B. <userinput>Kook</userinput>) "
+"und diese dauerhaft machen, indem Sie das Ankreuzfeld <guilabel>Regel wird "
+"automatisch ungültig</guilabel> ausschalten. Sie werden feststellen, dass "
+"diese Regel die Bewertung des Absenders auf -10 (oder den gewünschten Wert) "
+"setzt. Speichern Sie die Regel mit <guibutton>OK</guibutton>."
+
+#. Tag: para
+#: using-morefeatures.docbook:218
+#, no-c-format
+msgid ""
+"Go to the menu item <menuchoice><guimenu>View</guimenu><guisubmenu>Filter</"
+"guisubmenu><guimenuitem>killfile on</guimenuitem> </menuchoice>."
+msgstr ""
+"Gehen Sie zum Menüpunkt <menuchoice><guimenu>Ansicht</"
+"guimenu><guisubmenu>Filter</guisubmenu><guimenuitem>killfile</guimenuitem> </"
+"menuchoice>."
+
+#. Tag: para
+#: using-morefeatures.docbook:224
+#, no-c-format
+msgid ""
+"This will cause any articles with scores less than zero will disappear; to "
+"kill additional authors you only need repeat the <keycombo action=\"simul"
+"\">&Ctrl;<keycap>L</keycap></keycombo> part of these instructions."
+msgstr ""
+"Alle Artikel mit einer Bewertung, die kleiner als 0 ist, werden nicht mehr "
+"angezeigt. Um weitere Absender in das killfile einzutragen, müssen Sie nur "
+"die den mit <keycombo action=\"simul\">&Ctrl;<keycap>L</keycap></keycombo> "
+"durchgeführten Teil dieser Anleitung für diesen Absender wiederholen."
+
+#. Tag: title
+#: using-morefeatures.docbook:234
+#, no-c-format
+msgid "The Composer"
+msgstr "Der Editor"
+
+#. Tag: para
+#: using-morefeatures.docbook:237
+#, no-c-format
+msgid ""
+"The &knode; composer provides many features, especially for posting and "
+"replying to articles."
+msgstr ""
+"Der Editor von &knode; bietet neben den bereits vorgestellten Funktionen "
+"weitere Eigenschaften, die das Verfassen und Beantworten von Artikeln und E-"
+"Mails erleichtern."
+
+#. Tag: title
+#: using-morefeatures.docbook:241
+#, no-c-format
+msgid "Publish Articles in Multiple Newsgroups"
+msgstr "Artikel in mehreren Newsgruppen veröffentlichen"
+
+#. Tag: para
+#: using-morefeatures.docbook:243
+#, no-c-format
+msgid ""
+"By selecting the Button <guilabel>Browse</guilabel> you can choose "
+"additional newsgroups you want to publish your article in."
+msgstr ""
+"Über den Knopf <guilabel>Auswählen</guilabel> können Sie weitere Newsgruppen "
+"auswählen, in denen Ihr Artikel erscheinen soll."
+
+#. Tag: para
+#: using-morefeatures.docbook:248
+#, no-c-format
+msgid ""
+"It is generally undesirable to post articles in multiple newsgroups: please "
+"think twice about it; if you are not sure where to post your article ask in "
+"one of the possible groups &mdash; somebody will tell you were to post."
+msgstr ""
+"Das Veröffentlichen eines Artikels in mehreren Newsgruppen ist in den "
+"allermeisten Fällen unerwünscht und sollte sehr sorgfältig erwogen werden. "
+"Wenn Sie nicht genau wissen, wohin Ihr Artikel gehört, fragen Sie lieber in "
+"einer der in Frage kommenden Gruppen nach. Dort wird man Sie ggf. in die "
+"richtige Newsgruppe umleiten."
+
+#. Tag: title
+#: using-morefeatures.docbook:256
+#, no-c-format
+msgid "Redirect Followups"
+msgstr "Folgenachrichten umleiten"
+
+#. Tag: para
+#: using-morefeatures.docbook:258
+#, no-c-format
+msgid ""
+"The main use of this feature is when a thread has gone off topic for the "
+"newsgroup in which it is posted; for example, a thread may start in a &kde; "
+"newsgroup discussing how to redirect a followup in &knode;, but may leads to "
+"a dicussion about graphical and text based newsreaders."
+msgstr ""
+"Die hauptsächliche Verwendung dieser Funktion erfolgt dann, wenn im Verlauf "
+"einer Diskussion ein Themenwechsel stattfindet, der dazu führt, dass diese "
+"off-topic wird, d. h. die Diskussion verlässt das Themengebiet der "
+"Newsgruppe. Ein Beispiel hierfür wäre eine Diskussion in einer &kde;-Gruppe, "
+"die ursprünglich aus der Frage bestand, wie man mit &knode; eine "
+"Folgenachricht umleitet und die dann zu der Diskussion führt, ob "
+"grundsätzlich grafischen den textorientierten Newsreadern der Vorzug zu "
+"geben ist."
+
+#. Tag: para
+#: using-morefeatures.docbook:264
+#, no-c-format
+msgid ""
+"Sometimes it happens that usenet users post an article into the wrong "
+"newsgroup; very often those articles are just ignored. If it looks like the "
+"author did this unintentionally, you might like to tell them politely and "
+"make the followup articles go into the right group."
+msgstr ""
+"Zuweilen kommt es vor, dass ein Usenet-Teilnehmer, sei es aus Unwissenheit "
+"oder Ignoranz einen Artikel veröffentlicht, der in dieser Newsgruppe "
+"eigentlich nichts verloren hat. Sehr häufig werden diese Artikel einfach "
+"ignoriert. Wenn aber deutlich ist, dass der Verfasser dies eher "
+"unabsichtlich getan hat, sollten Sie ihn in Ihrer Antwort höflich darauf "
+"hinweisen und gleichzeitig dafür sorgen, dass die nachfolgende Artikel "
+"dieser Diskussion in die richtige Newsgruppe umgeleitet werden."
+
+#. Tag: para
+#: using-morefeatures.docbook:270
+#, no-c-format
+msgid ""
+"Another reason for using <guilabel>Followup-To:</guilabel> is a when dealing "
+"with articles cross-posted across in multiple newsgroups: you should take "
+"care that the replies are only posted in one single newsgroup."
+msgstr ""
+"Eine weitere Anwendung für <guilabel>Folgenachricht an</guilabel> ist die "
+"Veröffentlichung eines Artikels in mehreren Newsgruppen, ein sogenanntes "
+"Crossposting. Sie sollten dafür sorgen, dass die Antworten nur noch in einer "
+"Newsgruppe landen."
+
+#. Tag: para
+#: using-morefeatures.docbook:274
+#, no-c-format
+msgid ""
+"You can activate this by filling the text box <guilabel>Followup-To:</"
+"guilabel>; here you can enter the suitable group. If there are multiple "
+"newsgroups in the <guilabel>Groups:</guilabel> field, they are shown in the "
+"drop-down list."
+msgstr ""
+"Dies geschieht über das Auswahlfeld <guilabel>Folgenachricht an</guilabel>. "
+"In diesem Feld können Sie die passende Newsgruppe eintragen. Sind unter "
+"<guilabel>Gruppen:</guilabel> bereits mehrere Gruppen eingetragen, werden "
+"diese bereits als Auswahl angeboten."
+
+#. Tag: para
+#: using-morefeatures.docbook:281
+#, no-c-format
+msgid ""
+"If you enter <userinput>poster</userinput> here, instead of a newsgroup, the "
+"replies will go directly to the author, not to the newsgroup."
+msgstr ""
+"Wenn Sie hier <userinput> poster</userinput> anstelle einer Newsgruppe "
+"eingeben, wird Ihre Antwort per E-Mail an den Verfasser des Artikels (den "
+"Poster) umgeleitet und nicht in die Newsgruppe."
+
+#. Tag: para
+#: using-morefeatures.docbook:285
+#, no-c-format
+msgid ""
+"Some people put an email address here, but this is not a valid entry: use "
+"<userinput>poster</userinput> and correctly set your Reply-To address in the "
+"normal &knode; settings."
+msgstr ""
+"Einige Leute tragen hier eine E-Mailadresse ein, aber das ist kein gültiger "
+"Eintrag. Verwenden Sie <userinput>poster</userinput> und tragen Sie die "
+"Antwortadresse in den &knode;-Einstellungen korrekt ein."
+
+#. Tag: title
+#: using-morefeatures.docbook:294
+#, no-c-format
+msgid "Working With an External Editor"
+msgstr "Arbeiten mit einem externen Editor"
+
+#. Tag: para
+#: using-morefeatures.docbook:296
+#, no-c-format
+msgid ""
+"Using <menuchoice><guimenu>Tools</guimenu><guimenuitem>Start External "
+"Editor</guimenuitem></menuchoice> you can start an editor of your choice for "
+"editing the reply; this way you can use your preferred Editor for writing "
+"articles and e-mails."
+msgstr ""
+"Über den Menüpunkt <menuchoice><guimenu>Extras</guimenu><guimenuitem> "
+"Externen Editor aufrufen</guimenuitem></menuchoice> wird ein Editor Ihrer "
+"Wahl aufgerufen, in dem Sie den geöffneten Artikel bearbeiten können. Dies "
+"hat den Vorteil, dass Sie Ihren bevorzugten Editor zum Verfassen der Artikel "
+"und E-Mails verwenden können."
+
+#. Tag: title
+#: using-morefeatures.docbook:304
+#, no-c-format
+msgid "Spelling"
+msgstr "Rechtschreibprüfung"
+
+#. Tag: para
+#: using-morefeatures.docbook:306
+#, no-c-format
+msgid ""
+"By selecting <menuchoice><guimenu>Tools</guimenu><guimenuitem>Spelling</"
+"guimenuitem></menuchoice>, you can check the article in the composer for "
+"spelling errors."
+msgstr ""
+"Über den Menüpunkt <menuchoice><guimenu>Extras</"
+"guimenu><guimenuitem>Rechtschreibung ...</guimenuitem> </menuchoice> können "
+"Sie die den Inhalt des Artikels im Editor auf Rechtschreibfehler überprüfen "
+"lassen. Es erscheint der Dialog für die Rechtschreibprüfung von &kde;."
+
+#. Tag: title
+#: using-morefeatures.docbook:313
+#, no-c-format
+msgid "<title>Sending Attachments</title>"
+msgstr "<title>Anhänge versenden</title>"
+
+#. Tag: para
+#: using-morefeatures.docbook:315
+#, no-c-format
+msgid ""
+"By selecting <menuchoice><guimenu>Attach</guimenu><guimenuitem>Attach File</"
+"guimenuitem></menuchoice> you can open the File Selection Dialog Box; here "
+"you can choose the file you want to attach."
+msgstr ""
+"Über den Menüpunkt <menuchoice><guimenu>Anhängen</guimenu><guimenuitem>Datei "
+"anhängen</guimenuitem></menuchoice> öffnet sich der Dateiauswahl-Dialog, in "
+"dem Sie bequem die anzuhängende Datei auswählen können."
+
+#. Tag: para
+#: using-morefeatures.docbook:320
+#, no-c-format
+msgid ""
+"Most of the time, &knode; determines the correct <acronym>MIME</acronym> "
+"type for the attachment; if &knode; detects it incorrectly, you can correct "
+"the <acronym>MIME</acronym> type manually."
+msgstr ""
+"&knode; erkennt in den allermeisten Fällen selbstständig den korrekten "
+"<acronym>MIME</acronym>-Typ des Anhangs. Sollte sich &knode; einmal irren, "
+"können Sie den <acronym>MIME</acronym>-Typ notfalls auch von Hand ändern."
+
+#. Tag: para
+#: using-morefeatures.docbook:324
+#, no-c-format
+msgid ""
+"This screenshot shows the Composer with 2 attachments: a text file and a PNG "
+"picture."
+msgstr ""
+"Die Abbildung zeigt den Artikel-Editor mit einer PNG-Grafik und einer "
+"Textdatei, die als Anhang versendet werden sollen."
+
+#. Tag: screeninfo
+#: using-morefeatures.docbook:328
+#, no-c-format
+msgid "<screeninfo>Sending Attachments</screeninfo>"
+msgstr "<screeninfo>Anhänge versenden</screeninfo>"
+
+#. Tag: phrase
+#: using-morefeatures.docbook:333
+#, no-c-format
+msgid "<phrase>Sending Attachments</phrase>"
+msgstr "<phrase>Anhänge versenden</phrase>"
+
+#. Tag: para
+#: using-morefeatures.docbook:336
+#, no-c-format
+msgid "<para>Sending Attachments</para>"
+msgstr "<para>Anhänge versenden</para>"
+
+#. Tag: para
+#: using-morefeatures.docbook:342
+#, no-c-format
+msgid ""
+"Only do this if you know what you're doing! An incorrect <acronym>MIME</"
+"acronym> type could cause the attachment to be sent incorrectly, or mean "
+"that the attachment will not be able to be rebuilt after sending."
+msgstr ""
+"Tun Sie dies aber nur, wenn Sie genau wissen, was Sie tun. Ein falsch "
+"eingetragener <acronym>MIME</acronym>-Typ kann dazu führen, dass der Anhang "
+"nicht korrekt versendet wird bzw. später nicht mehr korrekt "
+"wiederhergestellt werden kann."
+
+#. Tag: para
+#: using-morefeatures.docbook:349
+#, no-c-format
+msgid ""
+"The English word attachment is used all over the world; you can use it in "
+"your language, too."
+msgstr ""
+"Anhänge werden im Englischen als Attachments bezeichnet, und viele Usenet "
+"Teilnehmer verwenden vorzugsweise diesen Ausdruck."
+
+#. Tag: para
+#: using-morefeatures.docbook:354
+#, no-c-format
+msgid ""
+"In most newsgroups, attachments are prohibited: do not send unsolicited "
+"attachments; if you are asked to send them, look who is asking for them "
+"&mdash; normally, the person will want you to send them by email."
+msgstr ""
+"In den allermeisten Newsgruppen sind Anhänge verpönt. Versenden Sie einen "
+"Anhang nicht ohne explizit dazu aufgefordert worden zu sein, und selbst dann "
+"sollten Sie darauf achten, wer Sie dazu auffordert. Oft wird es so sein, "
+"dass der entsprechende Teilnehmer Sie auffordert, ihm die entsprechenden "
+"Anhänge, sofern Sie nötig sind, per E-Mail zu schicken."
+
+#. Tag: para
+#: using-morefeatures.docbook:359
+#, no-c-format
+msgid ""
+"The news server will probably reject articles with attachments for most "
+"groups anyway; those that do accept attachments normally have the word "
+"<quote>binaries</quote> in their name. Some news servers even stop carrying "
+"non-binaries newsgroups that continuously receive attachments."
+msgstr ""
+"Der Newsserver weist Artikel mit Anhängen für die meisten Gruppen sowieso "
+"zurück. Die Gruppen, bei denen Anhänge akzeptiert werden, tragen meist den "
+"Bestandteil <quote>binaries</quote> im Namen. Einige Server akzeptieren "
+"Gruppen nicht, bei denen regelmäßig Anhänge auftauchen."
+
+#. Tag: title
+#: using-morefeatures.docbook:369
+#, no-c-format
+msgid "Searching for Articles"
+msgstr "Das Suchen nach Artikeln"
+
+#. Tag: para
+#: using-morefeatures.docbook:371
+#, no-c-format
+msgid ""
+"Sooner or later, you will want to search for one specific article; the "
+"&knode; search feature is an easy way to do this."
+msgstr ""
+"Wenn Sie häufiger News lesen und eine Reihe von Gruppen abonniert haben, "
+"werden Sie früher oder später in die Situation kommen, dass Sie einen ganz "
+"bestimmten Artikel suchen. Die Suchen-Funktion von &knode; bietet hier eine "
+"wesentliche Erleichterung."
+
+#. Tag: para
+#: using-morefeatures.docbook:374
+#, no-c-format
+msgid ""
+"You can reach the search function by selecting <menuchoice><guimenu>Edit</"
+"guimenu><guimenuitem>Search Articles...</guimenuitem></menuchoice> or the by "
+"pressing <keycap>F4</keycap>. The screenshot below shows the Search Dialog "
+"Box."
+msgstr ""
+"Sie erreichen die Suchen-Funktion von &knode; über "
+"<menuchoice><guimenu>Bearbeiten</guimenu> <guimenuitem>Nach Artikeln "
+"suchen ...</guimenuitem> </menuchoice> oder die Taste <keycap>F4</keycap> . "
+"Die folgende Abbildung zeigt den Dialog „Suchen“."
+
+#. Tag: screeninfo
+#: using-morefeatures.docbook:380
+#, no-c-format
+msgid "<screeninfo>The Search Dialog Box</screeninfo>"
+msgstr "<screeninfo>Der Dialog „Suchen“</screeninfo>"
+
+#. Tag: phrase
+#: using-morefeatures.docbook:385
+#, no-c-format
+msgid "<phrase>The Search Dialog Box</phrase>"
+msgstr "<phrase>Der Dialog „Suchen“</phrase>"
+
+#. Tag: para
+#: using-morefeatures.docbook:388
+#, no-c-format
+msgid "<para>The Search Dialog Box</para>"
+msgstr "<para>Der Dialog „Suchen“</para>"
+
+#. Tag: para
+#: using-morefeatures.docbook:393
+#, no-c-format
+msgid ""
+"The Search Dialog Box has four tabs which allow several search criteria: the "
+"first tab contains the settings for the <guilabel>Subject</guilabel> and "
+"<guilabel>From</guilabel> criteria; the second tab contains the settings for "
+"the <guilabel>Message-IDs</guilabel> of an article and its references; the "
+"third tab contains the settings for the <guilabel>Status</guilabel> of an "
+"article; the fourth tab, <guilabel>Additional</guilabel>, contains the "
+"remaining criteria."
+msgstr ""
+"Der Dialog „Suchen“ besteht aus vier Karteikarten, die eine Unterteilung der "
+"Suchkriterien vornehmen und die Sie über die Reiter oben anwählen können. "
+"Die erste Karteikarte enthält die Einstellungen für die Suchkriterien "
+"<guilabel>Betreff</guilabel> und <guilabel>Absender</guilabel>. Die zweite "
+"Karteikarte enthält die Angaben für die <guilabel>Message-ID</guilabel> des "
+"Artikels und seiner Referenzen. Die dritte Karteikarte enthält die "
+"Einstellungen, die den <guilabel>Status</guilabel> einer Nachricht betreffen "
+"und die letzte, die den Titel <guilabel>Sonstiges</guilabel> trägt, "
+"Suchkriterien, die sich nicht den anderen Kategorien zuordnen lassen."
+
+#. Tag: para
+#: using-morefeatures.docbook:402
+#, no-c-format
+msgid ""
+"You have probably already noticed the similarities between the Filter Dialog "
+"Box and the Search Dialog Box: the usage is the same and should not be too "
+"complicated if you have already defined your own filters."
+msgstr ""
+"Wie Sie bereits bemerkt haben werden, ähnelt der Dialog <guilabel>Suchen</"
+"guilabel> sehr stark dem Dialog für die Definition von Filtern. Die "
+"Bedienung ist identisch und sollte Ihnen keine Probleme bereiten, wenn Sie "
+"bereits eigene Filter definiert haben."
+
+#. Tag: para
+#: using-morefeatures.docbook:407
+#, no-c-format
+msgid ""
+"&knode; always searches in the currently-active newsgroup; a search in all "
+"newsgroups is not possible at the moment. After the Search has finished the "
+"articles found appear in the article view; when you close the Search Dialog "
+"Box using <guibutton>Close</guibutton> the search results are deleted, and "
+"the old view of the newsgroup appears again."
+msgstr ""
+"Die Such-Funktion von &knode; bezieht sich auf die aktuelle Newsgruppe. Eine "
+"Suche über alle Newsgruppen ist derzeit nicht möglich. Wenn Sie eine Suche "
+"durchgeführt haben, erscheinen die betreffenden Artikel in der "
+"Artikelansicht. Sobald Sie den Dialog <guibutton>Suchen</guibutton> mit "
+"<guibutton>Schließen</guibutton> beenden, wird das Suchergebnis in der "
+"Artikelansicht gelöscht, und die vorherige Ansicht der Newsgruppe wird "
+"angezeigt."
+
+#. Tag: guilabel
+#: using-morefeatures.docbook:415
+#, no-c-format
+msgid "Search"
+msgstr "Suchen"
+
+#. Tag: para
+#: using-morefeatures.docbook:417
+#, no-c-format
+msgid ""
+"With this button you start the Search with the search criteria you defined; "
+"all articles in the selected newsgroup, fulfilling these criteria, appear in "
+"the article view."
+msgstr ""
+"Mit diesem Knopf starten Sie die Suche nach den von Ihnen vorgegebenen "
+"Kriterien. Im Betrachter erscheinen alle Artikel der Newsgruppe, die die "
+"Suchkriterien erfüllen."
+
+#. Tag: guilabel
+#: using-morefeatures.docbook:424
+#, no-c-format
+msgid "Clear"
+msgstr "Löschen"
+
+#. Tag: para
+#: using-morefeatures.docbook:426
+#, no-c-format
+msgid "This button resets all search criteria."
+msgstr "Dieser Knopf löscht alle eingestellten Suchkriterien."
+
+#. Tag: title
+#: using-morefeatures.docbook:432
+#, no-c-format
+msgid "Supersede and Cancel Articles"
+msgstr "Überschreiben und Zurücknehmen von Artikeln"
+
+#. Tag: para
+#: using-morefeatures.docbook:434
+#, no-c-format
+msgid ""
+"This chapter deals with superseding and canceling articles. You will not use "
+"these two features very often, but they do exist should you, one day, need "
+"them."
+msgstr ""
+"Diese Kapitel befasst sich mit dem Überschreiben und Zurücknehmen von "
+"Artikeln, zwei Funktionen, die Sie normalerweise nicht sehr oft benötigen, "
+"die aber zu den Komfortfunktionen eines Newsreaders gehören."
+
+#. Tag: para
+#: using-morefeatures.docbook:439
+#, no-c-format
+msgid ""
+"Both functions need a news server prepared to handle them; you should also "
+"remember that there is no guarantee that no one has already read your "
+"article before it is superseded or canceled."
+msgstr ""
+"Beide Funktionen setzen voraus, dass die News-Server mit dieser "
+"Funktionalität umgehen können. Zudem sollten Sie bedenken, dass diese "
+"Funktionen nicht garantieren können, dass der zu löschende oder zu "
+"überschreibende Artikel nicht bereits von anderen Usenet-Teilnehmern gelesen "
+"wurde, ehe der News-Server die Anweisung zum Überschreiben oder Zurücknehmen "
+"erhält."
+
+#. Tag: para
+#: using-morefeatures.docbook:444
+#, no-c-format
+msgid "So first think, then post."
+msgstr ""
+"Dies sollten sie vor allem dann im Auge behalten, wenn Sie bislang der "
+"Meinung waren, ein unbedacht veröffentlichter <glossterm>Artikel</glossterm> "
+"lasse sich ja ganz einfach wieder löschen. Es gilt also weiterhin: Erst "
+"nachdenken, dann veröffentlichen."
+
+#. Tag: title
+#: using-morefeatures.docbook:448
+#, no-c-format
+msgid "Cancel"
+msgstr "Zurücknehmen"
+
+#. Tag: para
+#: using-morefeatures.docbook:450
+#, no-c-format
+msgid "Canceling an article means deleting it from the newsgroup."
+msgstr ""
+"Einen <glossterm>Artikel</glossterm> zurücknehmen bedeutet eigentlich, ihn "
+"aus der Newsgruppe zu löschen. Im Englischen wird hierfür der Begriff Cancel "
+"verwendet."
+
+#. Tag: para
+#: using-morefeatures.docbook:453
+#, no-c-format
+msgid ""
+"Why should you want to cancel an article? Perhaps you flamed somebody in a "
+"rage and now you want to get this article out of the newsgroup because you "
+"regret what you wrote: a personal insult, read by everybody, doesn't look "
+"good, especially when you regret it; so, there is only one thing you can do "
+"&mdash; cancel the article."
+msgstr ""
+"Warum sollte man einen Artikel zurücknehmen? Manchmal hat man sich einfach "
+"im Affekt zu einer Reaktion hinreißen lassen, die man nun nicht einfach so "
+"stehen lassen will. Eine persönliche Beleidigung, die von allen gelesen "
+"werden kann, macht sich nicht gut, vor allem dann, wenn es einem später Leid "
+"tut. Also hilft nur noch eins: Sie müssen den Artikel zurücknehmen."
+
+#. Tag: para
+#: using-morefeatures.docbook:459
+#, no-c-format
+msgid ""
+"Select the article you want to cancel and choose <guimenuitem>Cancel "
+"article</guimenuitem> from its context menu. If you are sure it is the right "
+"article, confirm &knode;s question with <guibutton>Yes</guibutton>. Now you "
+"will be asked if you want to send the Cancel message now or later; for this "
+"example we decide to send it <guibutton>Later</guibutton>. You will notice "
+"the new message in the folder <guilabel>Outbox</guilabel>."
+msgstr ""
+"Dazu markieren Sie den Artikel, den Sie zurücknehmen wollen, und wählen im "
+"Kontextmenü den Eintrag <guimenuitem>Artikel zurücknehmen</guimenuitem> . "
+"Wenn Sie sicher sind, dass es der richtige Artikel ist, bestätigen Sie die "
+"Nachfrage von &knode; mit <guibutton>Ja</guibutton>. Daraufhin werden Sie "
+"gefragt, ob Sie die Zurücknahme-Nachricht sofort oder erst später "
+"verschicken möchten. Zur Anschauung entscheiden wir uns jetzt für den Knopf "
+"<guibutton>Später</guibutton>. Sie werden feststellen, das jetzt eine neue "
+"Nachricht im Ordner <guilabel>Ausgang</guilabel> liegt."
+
+#. Tag: para
+#: using-morefeatures.docbook:467
+#, no-c-format
+msgid ""
+"Now we want to look at the so-called cancel message. In the subject you will "
+"find something like:"
+msgstr ""
+"Nun wollen wir die so genannte Zurückname-Nachricht näher betrachten. Im "
+"Betreff steht nun etwa der Wortlaut:"
+
+#. Tag: screen
+#: using-morefeatures.docbook:470
+#, no-c-format
+msgid ""
+"<computeroutput>cancel of &lt;n177m8.1m.ln@konqui.org&gt;</computeroutput>"
+msgstr ""
+"<computeroutput>cancel of &lt;n177m8.1m.ln@konqui.org&gt;</computeroutput>"
+
+#. Tag: para
+#: using-morefeatures.docbook:472
+#, no-c-format
+msgid ""
+"This strange letters between the brackets are the Message-ID of the article "
+"you want to cancel. This message tells the newsserver to delete your "
+"article: if you look at complete header of this message, by selecting "
+"<menuchoice><guimenu>View</guimenu><guisubmenu>Headers</"
+"guisubmenu><guimenuitem>All Headers</guimenuitem></menuchoice>, you will "
+"notice a line with the name <emphasis>control</emphasis> and the content "
+"<emphasis>cancel &lt;xxxxx@ddddd.dd&gt;</emphasis> &mdash; this line tells "
+"the server that this message is a control message and, in our case, tells "
+"the server to cancel your article."
+msgstr ""
+"Die seltsame Zeichenfolge in spitzen Klammern ist die Message-ID des "
+"Artikels, den Sie zurücknehmen wollen, und die Nachricht ist eine Mitteilung "
+"für den News-Server, Ihren Artikel zu löschen. Wenn Sie den Artikel im "
+"Betrachter betrachten und dabei über <menuchoice> <guimenu>Ansicht</guimenu> "
+"<guisubmenu>Vorspannanzeige</guisubmenu><guimenuitem>Alle Vorspannzeilen</"
+"guimenuitem></menuchoice> den Vorspann einblenden, wie er vom Server gelesen "
+"wird, erkennen Sie, dass der Vorspann eine Zeile mit dem Namen "
+"<emphasis>control</emphasis> und dem Inhalt <emphasis>cancel &lt;xxxxx@ddddd."
+"dd&gt;</emphasis> enthält. Daran erkennt der Server, dass es sich nicht um "
+"einen gewöhnlichen Artikel, sondern um eine Steuernachricht handelt. In "
+"diesem Fall um das Löschen (cancel) eines Artikels."
+
+#. Tag: para
+#: using-morefeatures.docbook:482
+#, no-c-format
+msgid ""
+"You can still delete the control message from the <guilabel>Outbox</"
+"guilabel> should you change your mind."
+msgstr ""
+"Da wir uns dafür entschieden haben, die Steuernachricht nicht sofort "
+"abzuschicken, können wir Sie selbst an diesem Punkt noch aus dem Ordner "
+"<guilabel>Ausgang</guilabel> löschen."
+
+#. Tag: para
+#: using-morefeatures.docbook:486
+#, no-c-format
+msgid ""
+"Keep in mind that articles can only be identified by their Message-IDs; you "
+"need this Message-ID if you want to cancel an article. Normally, your "
+"article gets a Message-ID when it arrives at the newsserver &mdash; that's "
+"why you can only cancel an article once it has been published. The articles "
+"in the <guilabel>Sent</guilabel> folder have no Message-ID, so you cannot "
+"cancel them from there."
+msgstr ""
+"Beachten Sie bitte, dass ein Artikel eindeutig nur über seine Message-ID zu "
+"identifizieren ist. Das setzt für das Zurücknehmen des Artikels das "
+"Vorhandensein der Message-ID voraus. Normalerweise erhält der Artikel seine "
+"Message-ID erst, wenn er beim News-Server anlangt. Darum können Sie Ihre "
+"Artikel nur Zurücknehmen, wenn Sie bereits in der Newsgruppe veröffentlicht "
+"wurden. Die Artikel im Ordner <guilabel>Gesendete</guilabel> besitzt noch "
+"keine Message-ID und sind darum von dort aus nicht zu löschen."
+
+#. Tag: para
+#: using-morefeatures.docbook:494
+#, no-c-format
+msgid ""
+"There is one exception: if you have configured &knode; to generate a Message-"
+"ID you can cancel you articles in folder <guilabel>Sent</guilabel> too."
+msgstr ""
+"Eine Ausnahme gibt es: Wenn Sie &knode; so konfiguriert haben, dass er "
+"selbst eine Message-ID generiert, können Sie Ihre Artikel auch aus dem "
+"Ordner <guilabel>Gesendete</guilabel> heraus zurücknehmen."
+
+#. Tag: para
+#: using-morefeatures.docbook:498
+#, no-c-format
+msgid ""
+"&knode; allows only to cancel your own articles: it refuses to cancel "
+"articles from other authors."
+msgstr ""
+"&knode; erlaubt nur das Zurücknehmen eigener Artikel und weigert sich ganz "
+"einfach die  Artikel anderer Usenet-Teilnehmer zu löschen."
+
+#. Tag: para
+#: using-morefeatures.docbook:503
+#, no-c-format
+msgid ""
+"Since the cancel feature is so easily fooled, by newsreaders that let you "
+"cancel any post, many news servers do not acknowledge cancel messages from "
+"posters; even if your own <acronym>ISP</acronym> accepts the cancel and "
+"passes it on, many other servers will ignore it <emphasis>and will not pass "
+"it on</emphasis>."
+msgstr ""
+"Da die Zurücknehmen-Funktion leicht von Newsreadern, die das Zurücknehmen "
+"beliebiger Artikel gestatten, ausgehebelt werden kann, bestätigen Newsserver "
+"Zurücknehmen-Nachrichten häufig nicht. Auch falls der eigene Internet-"
+"Anbieter die Zurücknehmen-Nachricht akzeptiert und weiterleitet, werden "
+"viele andere Server sie ignorieren und <emphasis>nicht weiterleiten</"
+"emphasis>."
+
+#. Tag: para
+#: using-morefeatures.docbook:509
+#, no-c-format
+msgid ""
+"You should consider any previously-sent article, canceled or not, to be "
+"published and publicly available."
+msgstr ""
+"Man sollte jeden gesendeten Artikel, zurückgenommen oder nicht, als "
+"veröffentlicht und öffentlich verfügbar betrachten."
+
+#. Tag: title
+#: using-morefeatures.docbook:516
+#, no-c-format
+msgid "Supersede"
+msgstr "Überschreiben"
+
+#. Tag: para
+#: using-morefeatures.docbook:518
+#, no-c-format
+msgid ""
+"Supersede overwrites your article with a new version. One reason for doing "
+"this could be:"
+msgstr ""
+"Das Überschreiben, im Englischen mit supersede bezeichnet, dient dazu einen "
+"<glossterm> Artikel</glossterm> durch eine neue bzw. geänderte Fassung zu "
+"ersetzen. Ein Beispiel für die Anwendung der Überschreiben Funktion wäre "
+"folgendes Szenario:"
+
+#. Tag: para
+#: using-morefeatures.docbook:521
+#, no-c-format
+msgid ""
+"You have written a long article and have already posted it; now, you have "
+"found an error in this article: you could cancel this article, and post a "
+"new, corrected, article; or, you can use Supersede."
+msgstr ""
+"Sie haben gerade einen recht langen Artikel über ein bestimmtes Thema "
+"verfasst und diesen bereits versendet. Leider fällt Ihnen dabei auf, dass "
+"der letzte Abschnitt einen peinlichen Fehler enthält. Nun könnten Sie "
+"hingehen und den Artikel über die Funktion <guilabel>Zurücknehmen</guilabel> "
+"möglichst schnell löschen und einen neuen, überarbeiteten Artikel in der "
+"Newsgruppe zu veröffentlichen. Es geht aber auch einfacher."
+
+#. Tag: para
+#: using-morefeatures.docbook:525
+#, no-c-format
+msgid ""
+"Select the article in the article view. From its context menu select "
+"<guimenuitem>Supersede article...</guimenuitem>. &knode; will ask you if you "
+"really want to overwrite this article; if you confirm with <guibutton>Yes</"
+"guibutton> the Composer appears."
+msgstr ""
+"Markieren Sie den betreffenden Artikel in der Artikelansicht und wählen Sie "
+"über das Kontextmenü den Eintrag <guimenuitem>Artikel überschreiben</"
+"guimenuitem>. &knode; fragt Sie nun, ob Sie diesen Artikel tatsächlich "
+"überschreiben wollen. Bejahen Sie diese Frage, wird der Artikel-Editor mit "
+"dem Inhalt des betreffenden Artikels geöffnet."
+
+#. Tag: para
+#: using-morefeatures.docbook:530
+#, no-c-format
+msgid ""
+"In the Composer you can now make the desired corrections and changes. You "
+"can then publish this article in the same way as you post every other "
+"article; when the newsserver receives this article it reads some special "
+"lines in the header which tell the newsserver to supersede the older "
+"article. Select <menuchoice><guimenu>File</guimenu><guimenuitem>Send Later</"
+"guimenuitem></menuchoice> for now, because we want to look at the article's "
+"header in the <guilabel>Outbox</guilabel>."
+msgstr ""
+"Im Editor können Sie nun die beabsichtigten Änderungen oder Korrekturen "
+"vornehmen und den Artikel wie einen gewöhnlichen Artikel versenden. Wenn der "
+"Artikel nun vom News-Server in Empfang genommen wird, erkennt dieser anhand "
+"bestimmter Vorspannzeilen, dass dieser Artikel einen bestimmten anderen "
+"ersetzen soll. Versenden Sie den <glossterm>Artikel</glossterm> probeweise "
+"über <menuchoice><guimenu>Datei</guimenu><guimenuitem>Später versenden</"
+"guimenuitem></menuchoice>, damit wir den betreffenden <glossterm>Artikel</"
+"glossterm> im Ordner <guilabel>Ausgang</guilabel> betrachten können."
+
+#. Tag: para
+#: using-morefeatures.docbook:539
+#, no-c-format
+msgid ""
+"Activate <menuchoice><guimenu>View</guimenu><guisubmenu>Headers</"
+"guisubmenu><guimenuitem>All Headers</guimenuitem></menuchoice>, because we "
+"want to see all the headers the newsserver receives. You will notice a line "
+"like:"
+msgstr ""
+"Schalten Sie über <menuchoice><guimenu>Ansicht</"
+"guimenu><guisubmenu>Vorspannanzeige</guisubmenu><guimenuitem>Alle "
+"Vorspannzeilen</guimenuitem></menuchoice> die Ansicht des Vorspanns ein, den "
+"der News-Server erhält. Wenn Sie genau hinsehen, werden Sie eine Zeile wie "
+"diese sehen:"
+
+#. Tag: para
+#: using-morefeatures.docbook:543
+#, no-c-format
+msgid "Supersedes: &lt;oggcm8.4n5.ln@konqi.org&gt;"
+msgstr "Supersedes: &lt;oggcm8.4n5.ln@konqi.org&gt;"
+
+#. Tag: para
+#: using-morefeatures.docbook:545
+#, no-c-format
+msgid ""
+"This is the instruction for the newsserver for superseding the article with "
+"the Message-ID &lt;oggcm8.4n5.ln@konqi.org&gt; with the new article."
+msgstr ""
+"Dies ist die Anweisung für den News-Server, den<glossterm> Artikel</"
+"glossterm> mit der<glossterm> Message-ID</glossterm> &lt;oggcm8.4n5.ln@konqi."
+"org&gt; durch den neu eingetroffenen<glossterm> Artikel</glossterm> zu "
+"ersetzen."
+
+#. Tag: para
+#: using-morefeatures.docbook:549
+#, no-c-format
+msgid ""
+"Besides this, Supersede is used for periodical posted articles, &eg; an "
+"<acronym>FAQ</acronym>. The new article supersedes the old one and the "
+"newsgroups do not end up with lots of different versions."
+msgstr ""
+"Abgesehen von diesem Beispiel findet das Überschreiben von Artikel vor allem "
+"bei regelmäßig veröffentlichten Artikeln wie beispielsweise den "
+"<acronym>FAQ</acronym>s seine Anwendung. So werden ältere Artikel einfach "
+"von den aktualisierten Artikeln überschreiben, ohne dass sich eine Fülle "
+"verschiedener Versionen in der betreffenden Newsgruppe ansammelt."
+
+#. Tag: para
+#: using-morefeatures.docbook:554
+#, no-c-format
+msgid ""
+"Again, using this function is only possible if the article already has a "
+"Message-ID. Normally, articles get their Message-ID from the newsserver: "
+"this means that you can only supersede articles which have already been "
+"published."
+msgstr ""
+"Auch hier gilt: Der Einsatz dieser Funktion ist nur möglich, wenn &knode; "
+"die Message-ID des betreffenden Artikels kennt. Diese ist aber im "
+"Allgemeinen erst bekannt, wenn der Artikel bereits in der Newsgruppe "
+"veröffentlicht wurde, da die Message-ID vom News-Server vergeben wird. Ein "
+"Überschreiben ist also nur über den bereits veröffentlichten Artikel in der "
+"Newsgruppe möglich."
+
+#. Tag: para
+#: using-morefeatures.docbook:559
+#, no-c-format
+msgid ""
+"You can configure &knode; to generate this Message-ID, then you can "
+"supersede your articles in the folder <guilabel>Sent</guilabel>, too."
+msgstr ""
+"Eine Ausnahme ist dann gegeben, wenn Sie &knode; so konfiguriert haben, dass "
+"er selbst eine Message-ID generiert. In diesem Fall können Sie Ihre Artikel "
+"auch über den Ordner <guilabel>Gesendete</guilabel> überschreiben."
+
+#. Tag: para
+#: using-morefeatures.docbook:563
+#, no-c-format
+msgid "&knode; allows you to only supersede your own articles."
+msgstr "&knode; gestattet nur das Überschreiben eigener Artikel."
+
+#. Tag: para
+#: using-morefeatures.docbook:568
+#, no-c-format
+msgid ""
+"As with cancels, supersede messages have been abused in the past, with, for "
+"example, certain parties sending hundreds or even thousands of them to "
+"overwrite legitimate posts with random computer generated junk; again, as "
+"with cancels, many news servers do not honor supersede messages, nor do they "
+"pass them on."
+msgstr ""
+"Wie bei Zurücknahme-Nachrichten wurden auch Überschreib-Nachrichten in der "
+"Vergangenheit häufig missbraucht, um z. B. Hunderte oder sogar Tausende "
+"davon zu senden und damit die Beiträge anderer Benutzer mit rechnererzeugten "
+"zufälligen Zeichenfolgen zu überschreiben. Daher ignorieren viele Newsserver "
+"Überschreib-Nachrichten und leiten diese auch nicht weiter."
+
+#. Tag: title
+#: using-morefeatures.docbook:579
+#, no-c-format
+msgid "Score, watch, ignore"
+msgstr "Bewerten, Überwachen und Ignorieren"
+
+#. Tag: para
+#: using-morefeatures.docbook:582
+#, no-c-format
+msgid "Score, Watch and Ignore are different names for the same feature."
+msgstr ""
+"Das Bewerten sowie das Überwachen und Ignorieren von Diskussionen sind im "
+"Grunde nur drei unterschiedliche Bezeichnungen für ein und denselben Vorgang."
+
+#. Tag: para
+#: using-morefeatures.docbook:585
+#, no-c-format
+msgid ""
+"By scoring a thread, you determine its importance. &knode; allows scores "
+"between -100000 and 100000. A normal article will get a score of 0 if you do "
+"not change this; threads with a score below 0 are less important than "
+"average; threads with a score above 0 are more important than average."
+msgstr ""
+"Mit dem Bewerten einer Diskussion legen Sie deren Wichtigkeit fest. &knode; "
+"erlaubt eine Bewertung zwischen -100000 und 100000, wobei ein Artikel immer "
+"eine Bewertung von 0 erhält, sofern Sie dies nicht ändern. Daraus können Sie "
+"ableiten, dass Diskussionen, die eine Bewertung von &lt; 0 haben, als "
+"unterdurchschnittlich wichtig zu betrachten sind. Andererseits wären somit "
+"Artikel, die eine Bewertung von &gt; 0 erhalten, wichtiger als der "
+"Durchschnitt."
+
+#. Tag: para
+#: using-morefeatures.docbook:591
+#, no-c-format
+msgid ""
+"The score is an attribute of the thread and the articles in this thread, so "
+"you can use the score for filtering and searching articles; for example, you "
+"can define a filter to show only articles with a score &gt; 0, i.e. all "
+"articles in which you are specifically interested."
+msgstr ""
+"Die Bewertung ist eine Eigenschaft der Diskussion und jedes Artikels darin. "
+"Demzufolge können Sie die Bewertung auch als Filterkriterium und bei der "
+"Suche nach Artikeln einsetzen. Beispielsweise könnten Sie einen Filter "
+"definieren, der alle Artikel anzeigt, die eine Bewertung von &gt; 0 haben, "
+"also von Ihnen als wichtig angesehen werden."
+
+#. Tag: para
+#: using-morefeatures.docbook:597
+#, no-c-format
+msgid ""
+"The function <guilabel>Watch</guilabel> sets the score of all article in a "
+"thread to 100; this way they get a high score and &knode; labels them with a "
+"special icon."
+msgstr ""
+"Die Funktion <guilabel>Überwachen</guilabel> bewirkt nichts anderes, als "
+"dass alle Artikel einer Diskussion automatisch die Bewertung 100 erhalten. "
+"Sie erhalten also eine hohe Bewertung und werden von &knode; mit einem "
+"besonderen Symbol gekennzeichnet."
+
+#. Tag: para
+#: using-morefeatures.docbook:601
+#, no-c-format
+msgid ""
+"The function <guilabel>Ignore</guilabel> does the opposite: it scores all "
+"articles in a thread with -100 so &knode; does not show these articles "
+"anymore."
+msgstr ""
+"Die Funktion <guilabel>Ignorieren</guilabel> bewirkt genau das Gegenteil. "
+"Die betreffenden Artikel erhalten standardmäßig die Bewertung -100, und "
+"&knode; zeigt diese Artikel dann einfach nicht mehr an."
+
+#. Tag: para
+#: using-morefeatures.docbook:606
+#, no-c-format
+msgid ""
+"The English word <quote>scoring</quote> is used in many other countries, too."
+msgstr ""
+"Das Bewerten eines Artikels wird im Englischen als <quote>Scoring</quote> "
+"bezeichnet, und dieser Begriff wird auch von vielen deutschen Usenet-"
+"Teilnehmern bevorzugt."
+
+#. Tag: para
+#: using-morefeatures.docbook:610
+#, no-c-format
+msgid ""
+"You can score an article or a thread manually with the right mouse button or "
+"with the <guimenu>Scoring</guimenu> menu &mdash; here you can score with "
+"<guilabel>Watch Thread</guilabel> and <guilabel>Ignore Thread</guilabel> "
+"directly. Apart from scoring manually you can let &knode; score the articles "
+"with scoring rules automatically; you can configure these rules at "
+"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Configure KNode...</"
+"guimenuitem><guimenuitem>Reading News</guimenuitem><guimenuitem>Scoring</"
+"guimenuitem></menuchoice> or at <menuchoice><guimenu>Scoring</"
+"guimenu><guimenuitem>Edit scoring rules...</guimenuitem></menuchoice> "
+"&mdash; the only difference between these dialogs is that the last one has "
+"the rule-list next to the rule configuration. In the following guide I'm "
+"using the editor that appears if <menuchoice><guimenu>Scoring</"
+"guimenu><guimenuitem>Edit scoring rules...</guimenuitem></menuchoice> is "
+"chosen."
+msgstr ""
+"Die Bewertung eines Artikels oder einer Diskussion können Sie entweder "
+"manuell über die rechte Maustaste oder das Menü <guimenu>Bewerten</guimenu> "
+"vornehmen. Hier können Sie erst einmal die Bewertung mit "
+"<guilabel>Diskussion überwachen</guilabel> und <guilabel>Diskussion "
+"ignorieren</guilabel> den Wert direkt setzen. Außerdem können Sie die "
+"Bewertung von &knode; durch die Definition von Bewertungsregeln automatisch "
+"vornehmen lassen. Diese können Sie unter <menuchoice><guimenu>Einstellungen</"
+"guimenu><guimenuitem>KNode einrichten ...</guimenuitem> <guimenuitem>News "
+"lesen</guimenuitem><guimenuitem>Bewertung</guimenuitem> </menuchoice> oder "
+"unter <menuchoice><guimenu>Bewertung</guimenu><guimenuitem>Bewertungsregeln "
+"bearbeiten ...</guimenuitem></menuchoice> einrichten. Die Dialoge "
+"unterscheiden sich nur dadurch, dass bei letzterem der Bereich mit der "
+"Regelliste neben den Einstellungen angedockt ist. Ich werde mich in der "
+"folgenden Anleitung auf den Editor beziehen, den Sie über "
+"<menuchoice><guimenu>Bewertung</guimenu><guimenuitem>Bewertungsregeln "
+"bearbeiten ...</guimenuitem> </menuchoice> erreichen."
+
+#. Tag: screeninfo
+#: using-morefeatures.docbook:626
+#, no-c-format
+msgid "<screeninfo>The Rule Editor</screeninfo>"
+msgstr "<screeninfo>Der Regel-Editor</screeninfo>"
+
+#. Tag: phrase
+#: using-morefeatures.docbook:631
+#, no-c-format
+msgid "<phrase>The Rule Editor</phrase>"
+msgstr "<phrase>Der Regel-Editor</phrase>"
+
+#. Tag: para
+#: using-morefeatures.docbook:634
+#, no-c-format
+msgid "<para>The Rule Editor</para>"
+msgstr "<para>Der Regel-Editor</para>"
+
+#. Tag: para
+#: using-morefeatures.docbook:639
+#, no-c-format
+msgid ""
+"The composer consists of 4 areas: on the left side is the list of the rules; "
+"with the buttons below the list you can add, delete or copy an existing "
+"rule; below that you have the possibility to limit the rules which are shown "
+"&mdash; you have the choice whether to show all rules or only the rules for "
+"a specific <glossterm>newsgroup</glossterm>."
+msgstr ""
+"Der Regel-Editor besteht aus vier Bereichen. Links sehen Sie eine Liste "
+"aller bereits vorhandener Regeln. Mit den Knöpfen unter der Liste können Sie "
+"eine neue Regel hinzufügen, eine bestehende Regel löschen oder eine Regel "
+"kopieren. Ganz unten haben Sie noch die Möglichkeit, die Anzeige der Regeln "
+"zu beschränken. Es können wahlweise alle oder nur die Regeln, die für eine "
+"bestimmte <glossterm>Newsgruppe</glossterm> gelten, angezeigt werden."
+
+#. Tag: para
+#: using-morefeatures.docbook:645
+#, no-c-format
+msgid ""
+"If you choose a rule-name in the list the rule will be displayed on the "
+"right-hand side; now you can edit the rule. At the top you can change the "
+"name of the rule and set the newsgroups to which this rule applies. You can "
+"choose one or more than one group, note that group names must be separated "
+"by a semicolon. You can choose from the subscribed groups with the drop-down "
+"list and the <guibutton>Add group</guibutton> button; or you can use regular "
+"expressions and wild cards, &eg; <quote>.*</quote> for all groups. The "
+"<guilabel>Expire rule automatically</guilabel> option makes it possible to "
+"delete the rule automatically after the configured number of days; this is "
+"useful if a specific person behaves badly and you do not want to read "
+"anything from this person for a few days."
+msgstr ""
+"Wenn Sie in der Liste eine Regel auswählen, erscheint diese auf der rechten "
+"Seite und kann dort bearbeitet werden. Oben können Sie zuerst den Namen der "
+"Regel verändern und festlegen, für welche Newsgruppen die Regel gelten soll. "
+"Sie können hier entweder eine oder mehrere Gruppen angeben, ggf. durch "
+"Semikola getrennt. Weiterhin haben Sie die Möglichkeit, abonnierte Gruppen "
+"mit dem Auswahlfeld und dem Knopf <guibutton>Gruppe hinzufügen</guibutton> "
+"hinzuzufügen oder einen regulären Ausdruck zu verwenden, &eg; <quote>.*</"
+"quote> für alle Gruppen. Die Einstellung <guilabel>Regel wird automatisch "
+"ungültig</guilabel> ermöglicht es, die Regel automatisch von &knode; nach "
+"den eingestellten Tagen löschen zu lassen. Dies macht z. B. dann Sinn, wenn "
+"sich eine Person etwas daneben benimmt und Sie erst einmal einige Tage "
+"nichts mehr von demjenigen lesen wollen."
+
+#. Tag: para
+#: using-morefeatures.docbook:659
+#, no-c-format
+msgid ""
+"In the <guilabel>Condition</guilabel> field you enter the condition on which "
+"this rule is activated. Normally, you can enter only one condition, but you "
+"can change this by pressing the <guibutton>More</guibutton> and "
+"<guibutton>Fewer</guibutton> buttons. If you have more than one condition, "
+"you must tell knode whether all conditions need to be fulfilled or only one "
+"of them; this can be done by choosing <guilabel>Match all conditions</"
+"guilabel> or <guilabel>Match any condition</guilabel> respectively."
+msgstr ""
+"Im Feld <guilabel>Bedingungen</guilabel> geben Sie die Bedingungen an, die "
+"erfüllt sein müssen, damit die Regel greift. Standardmäßig ist dort nur eine "
+"Bedingung vorgesehen, das können Sie aber mit den Knöpfen <guibutton>Mehr</"
+"guibutton> und <guibutton>Weniger</guibutton> verändern. Wenn Sie mehrere "
+"Bedingungen haben, bestimmt das Feld <guilabel>Passt auf alle Bedingungen</"
+"guilabel>, dass die Regel erst dann greift, wenn alle Bedingungen erfüllt "
+"sind. Ist das Feld <guilabel>Passt auf beliebige Bedingungen</guilabel> "
+"ausgewählt, reicht es, wenn eine Bedingung erfüllt ist, damit die Regel "
+"greift."
+
+#. Tag: para
+#: using-morefeatures.docbook:669
+#, no-c-format
+msgid ""
+"Each condition consists of 2 drop-down lists and a text field. In the first "
+"list you chose the part of the message which should be used for the "
+"condition &mdash; this part will be compared with the text field; the second "
+"drop-down list tells &knode; how it is to be compared, for example, whether "
+"the chosen header should be identical to the text entered in the text field, "
+"or if it just needs to match part of it. Regular expressions are allowed, "
+"too. If you check <guilabel>Not</guilabel> then the conditions under which "
+"the condition is satisfied are reversed, and the condition will be satisfied "
+"if the opposite of its shown conditions is true."
+msgstr ""
+"Die Bedingung besteht grundsätzlich aus zwei Auswahlfeldern und einem freien "
+"Text. In dem ersten Auswahlfeld wird der Teil des Artikels ausgewählt, auf "
+"den sich die Bedingung bezieht. Dieser Teil wird mit dem freien Textfeld "
+"verglichen. Wie das verglichen wird, gibt das zweite Auswahlfeld an. Hier "
+"kann bestimmt werden, ob der freie Text ein Teil des ausgewählten "
+"Vorspannfeldes sein soll, ob er dem genau entsprechen soll, ob er größer "
+"oder kleiner sein soll. Auch reguläre Ausdrücke sind hier wieder möglich. "
+"Wenn Sie bei <guilabel>Nicht</guilabel> einen Haken setzen, ist die "
+"Bedingung erfüllt, wenn die Vorgabe nicht zutrifft."
+
+#. Tag: para
+#: using-morefeatures.docbook:680
+#, no-c-format
+msgid "Now, let's have a look at some examples."
+msgstr "Jetzt ein paar praktische Beispiele."
+
+#. Tag: para
+#: using-morefeatures.docbook:685
+#, no-c-format
+msgid ""
+"Maybe you want to filter away all the postings by Theodor Test; to do this "
+"choose the <guilabel>From</guilabel> header line from the first drop-down "
+"list, choose <guilabel>is exactly the same as</guilabel> from the second "
+"drop-down list, and enter his name in the text field. But, before doing this "
+"you should have a look at the <glossterm>header</glossterm> of one of "
+"Theodor's articles and see what is in the <quote>From</quote> line."
+msgstr ""
+"Sie wollen alle Artikel von Theodor Test ausfiltern. Dann stellen Sie im "
+"ersten Auswahlfeld als Vorspannzeile <guilabel>Absender</guilabel> ein und "
+"im zweiten Auswahlfeld <guilabel>stimmt genau überein mit</guilabel>. In das "
+"Textfeld geben Sie nun den Namen ein. Aber schauen Sie sich vorher einmal "
+"die <glossterm>Vorspannzeile</glossterm> eines Artikels von Theodor Test an, "
+"um den tatsächlichen Inhalt der Zeile <quote>From</quote> zu überprüfen."
+
+#. Tag: para
+#: using-morefeatures.docbook:695
+#, no-c-format
+msgid ""
+"If you do not want to read articles with more than 100 lines, choose the "
+"header entry <guilabel>Lines</guilabel> from the first drop-down list, "
+"choose <guilabel>greater than</guilabel> from the second, and enter "
+"<userinput>100</userinput> in the text field. You probably, then, want to "
+"score down the message."
+msgstr ""
+"Wenn Sie Artikel mit mehr als 100 Zeilen gar nicht erst lesen wollen, wählen "
+"Sie im ersten Auswahlfeld <guilabel>Zeilen</guilabel> und im zweiten "
+"<guilabel>größer als</guilabel> aus und geben im Textfeld den Wert "
+"<userinput>100</userinput> ein. Gegebenenfalls können Sie dann noch die "
+"Bewertung der Nachricht herabsetzen."
+
+#. Tag: para
+#: using-morefeatures.docbook:702
+#, no-c-format
+msgid ""
+"Last example: of course, you're very interested in every article that refers "
+"to &knode;. Choose the header entry <guilabel>Subject</guilabel>, then "
+"<guilabel>contains substring</guilabel> and enter <userinput>knode</"
+"userinput> in the text field. But what do you do if &knode; is not mentioned "
+"in the <guilabel>Subject</guilabel>? I suggest using a regular expression: "
+"change <guilabel>contains substring</guilabel> to <guilabel>matches regular "
+"expression</guilabel> and type <userinput>knode|newsreader|usenet</"
+"userinput> into the text field to match either knode, newsreader or usenet "
+"&mdash; the <userinput>|</userinput> symbol means OR. Alternatively, you can "
+"make 3 conditions &mdash; one that matches knode, one that matches "
+"newsreader and so on &mdash; and choose <guilabel>Match any condition</"
+"guilabel>; but, this needs a lot of space and it is not very elegant, is it?"
+msgstr ""
+"Letztes Beispiel: Sie interessieren sich natürlich brennend für alle "
+"Artikel, die mit &knode; zu tun haben. Wählen Sie den Eintrag "
+"<guilabel>Betreff</guilabel>, dann <guilabel>Enthält Teilzeichenkette</"
+"guilabel> und im Textfeld den Wert <userinput>knode</userinput>. Was machen "
+"Sie aber, wenn &knode; nicht erwähnt wird? In diesem Fall bietet sich aber "
+"ein regulärer Ausdruck an. Hier ist der Einsatz eines regulären Ausdrucks "
+"angebracht. Ändern Sie <guilabel>Enthält Teilzeichenkette</guilabel> auf "
+"<guilabel>Trifft auf regulären Ausdruck zu</guilabel> und geben Sie in das "
+"Textfeld <userinput>knode|newsreader|usenet</userinput> ein. Damit fangen "
+"Sie alle Artikel ein, bei denen eines der drei Worte im Betreff vorkommt. "
+"Das Zeichen <userinput>|</userinput> hat hier die Bedeutung eines ODER. "
+"Alternativ können Sie natürlich für die drei Worte auch drei Bedingungen "
+"anlegen und die Option <guilabel>passt auf beliebige Bedingung</guilabel> "
+"auswählen. Aber diese nimmt deutlich mehr Platz in Anspruch und ist eher "
+"unelegant."
+
+#. Tag: para
+#: using-morefeatures.docbook:720
+#, no-c-format
+msgid ""
+"Once your condition is ready you should set an action down in the "
+"<guilabel>Actions</guilabel> section. The most important action is "
+"<guilabel>adjust score</guilabel>; if this action is chosen you can raise or "
+"lower the score, by the configured value, for articles to which this rule "
+"applies. &knode; can also show you a little message when finding such an "
+"article or colorize the header in the article list; for example, you could "
+"make interesting articles screaming pink so you would notice them very "
+"quickly."
+msgstr ""
+"Zu guter Letzt können und sollten Sie noch festlegen, was mit den "
+"ausgewählten Artikeln jetzt eigentlich passieren soll. Hierzu dient der "
+"Bereich <guilabel>Aktion</guilabel>. Die wichtigste Aktion hier ist "
+"<guilabel>Bewertung anpassen</guilabel>. Ist diese Aktion ausgewählt, kann "
+"die Bewertung der Artikels, die auf die Regel passen, um den angegebenen "
+"Wert erhöht oder verringert werden. &knode; kann auch eine Nachricht "
+"anzeigen, wenn ein solcher Artikel gefunden wird oder die Nachricht in der "
+"Artikelliste andersfarbig darstellen. Interessante Artikel lassen sich so "
+"zum Beispiel in grellem Lila darstellen und fallen sofort ins Auge."
+
+#. Tag: para
+#: using-morefeatures.docbook:729
+#, no-c-format
+msgid ""
+"When leaving the editor, or when the <menuchoice><guimenu>Scoring</"
+"guimenu><guimenuitem>Recalculate scores</guimenuitem></menuchoice> menu item "
+"is chosen, the rules are executed; furthermore, the rules are automatically "
+"used for new <glossterm>articles</glossterm>. Scoring makes the most sense "
+"when used with filters: by scoring some articles down and filtering them "
+"away they won't appear in the article list."
+msgstr ""
+"Wenn Sie nach dem Bearbeiten den Editor verlassen oder den Menüpunkt "
+"<menuchoice><guimenu>Bewertung</guimenu><guimenuitem>Neuberechnung der "
+"Bewertung</guimenuitem></menuchoice> anwählen, werden die Regeln auf die "
+"vorhandenen <glossterm>Artikel</glossterm> angewendet. Außerdem werden Sie "
+"automatisch auf alle neuen <glossterm>Artikel</glossterm> angewendet. "
+"Bewertungen machen am meisten Sinn im Zusammenhang mit Filtern, d. h. Sie "
+"setzen die Bewertung herunter und filtern die betreffenden Artikel über den "
+"Wert aus der Anzeige heraus."
+
+#. Tag: title
+#: using-morefeatures.docbook:740
+#, no-c-format
+msgid "Group identities"
+msgstr "Lokale Identitäten"
+
+#. Tag: para
+#: using-morefeatures.docbook:742
+#, no-c-format
+msgid ""
+"With &knode; you can use a different identity with every newsgroup to which "
+"you are subscribed; i.e. you can set a name, email address, reply-to address "
+"and signature to use with that group."
+msgstr ""
+"Mit &knode; können Sie für jede abonnierte Newsgruppe eine eigene Identität "
+"festlegen, d. h. Sie können für die betreffende Newsgruppe Name, E-Mail-"
+"Adresse, Antwortadresse und Signatur unabhängig von den globalen "
+"Einstellungen festlegen."
+
+#. Tag: para
+#: using-morefeatures.docbook:746
+#, no-c-format
+msgid ""
+"It is easy to set group identities. First, with the right mouse button, "
+"click on the name of the newsgroup in which to have a different identity in; "
+"then, select <guimenuitem>Group Properties</guimenuitem> from the context "
+"menu that appears. In the dialog that appears the second tab contains fields "
+"identical to the global identity settings; enter your settings here and "
+"click <guibutton>OK</guibutton> to confirm the changes: then, your articles "
+"in this group will always posted with this newly-entered identity."
+msgstr ""
+"Die Einrichtung einer lokalen Identität ist denkbar einfach und erfolgt "
+"hinsichtlich der Eingabe, wie bei Ihrer globalen Identität. Um eine lokale "
+"Identität anzulegen, markieren Sie den News-Zugang oder die entsprechende "
+"<glossterm>Newsgruppe</glossterm> in der Ordneransicht und wählen aus dem "
+"Kontextmenü den Menüeintrag <guimenuitem>Gruppen-Einstellungen</"
+"guimenuitem>. Die zweite Karteikarte entspricht dem von den "
+"Eingabemöglichkeiten dem Dialog für die globale Identität. Bestätigen Sie "
+"Ihre Eingaben mit <guibutton>OK</guibutton>, werden alle Ihre Artikel für "
+"diese Newsgruppe bzw. fortan mit den hier getroffenen Einstellungen "
+"veröffentlicht."
+
+#. Tag: para
+#: using-morefeatures.docbook:755
+#, no-c-format
+msgid ""
+"When you unsubscribe from a group you lose its identity settings for this "
+"group: if you re-subscribe to the group, you will need to re-enter its "
+"identity settings. For new newsgroups, the global identity is used."
+msgstr ""
+"Wenn Sie eine abonnierte Gruppe kündigen, bei der Sie eine lokale Identität "
+"eingestellt hatten, gehen diese Einstellungen verloren. Abonnieren Sie "
+"dieselbe Gruppe zu einem späteren Zeitpunkt wieder, müssen Sie die "
+"entsprechenden Einstellungen erneut vornehmen. Für neu abonnierte "
+"Newsgruppen gilt als Voreinstellung immer die globale Identität."
+
+#. Tag: title
+#: using-morefeatures.docbook:764
+#, no-c-format
+msgid "Managing Multiple News Accounts"
+msgstr "Mehrere News-Zugänge verwalten"
+
+#. Tag: para
+#: using-morefeatures.docbook:766
+#, no-c-format
+msgid ""
+"&knode; can handle an unlimited number of news server accounts in addition "
+"to your main news server; most users don't need this feature, but it can be "
+"very useful to if your main newsserver does not provide all groups you want "
+"to read. Typical cases of this are when support groups for commercial "
+"software are hosted on a special, private, server or binary newsgroups, "
+"which are only available from some servers."
+msgstr ""
+"&knode; bietet Ihnen die Möglichkeit Ihre News von mehreren Servern zu "
+"beziehen. Im Allgemeinen besteht keine Notwendigkeit, mehrere News-Zugänge "
+"anzulegen, aber diese Möglichkeit ist dann nützlich, wenn der News-Zugang, "
+"den Sie normalerweise verwenden nicht alle gewünschten Newsgruppen anbietet. "
+"Typische Fälle sind Support-Gruppen für kommerzielle Software oder "
+"Newsgruppen, in denen Binärdateien angeboten, die nur auf speziellen Servern "
+"angeboten werden."
+
+#. Tag: para
+#: using-morefeatures.docbook:773
+#, no-c-format
+msgid ""
+"Another example of why you sometimes need more than one newsserver is that "
+"sometimes not all interesting newsgroups are on one server; in fact, there "
+"is very often only a selection of newsgroups. For example, many servers do "
+"not support binary groups with pictures or programs; if you want such a "
+"newsgroup and your newsserver provider does not want to serve it you can "
+"configure &knode; to get it from another server."
+msgstr ""
+"Ein anderes Beispiel für die Notwendigkeit eines zweiten oder mehrerer News-"
+"Zugänge ergibt sich aus der Tatsache, dass ein News-Server nicht alle "
+"existierenden Newsgruppen bereitstellen muss. Hiervon sind vor allem Gruppen "
+"betroffen, in denen binäre Inhalte wie Bilder und Programmen angeboten "
+"werden. Bietet Ihr News-Server die von Ihnen gewünschte Gruppe nicht an und "
+"findet sich der Betreiber auch nicht bereit, diese auf Ihre Bitte hin "
+"bereitzustellen, können Sie &knode; anweisen, diese Newsgruppe bei einem "
+"anderen News-Server anzufordern."
+
+#. Tag: para
+#: using-morefeatures.docbook:781
+#, no-c-format
+msgid ""
+"Or, perhaps you find you are just subscribed to too many newsgroups, and "
+"would like to organize them a little better; you could set up several "
+"accounts for the same server, perhaps one for groups you read every day, and "
+"one for groups you read less often, so that you do not have to search for "
+"your <quote>everyday</quote> groups in a long list of subscribed groups."
+msgstr ""
+"Oder wenn Sie der Meinung sind, dass Sie zu viele Newsgruppen abonniert "
+"haben und diese daher übersichtlicher organisieren wollen. Dazu können Sie "
+"verschiedene Zugänge zum gleichen Server einrichten, z. B. einen für "
+"Newsgruppen, die Sie täglich lesen und einen für seltener gelesene Gruppen. "
+"Damit müssen Sie die <quote>täglichen</quote> Gruppen nicht in einer langen "
+"Liste mühsam suchen."
+
+#. Tag: para
+#: using-morefeatures.docbook:788
+#, no-c-format
+msgid ""
+"In order to add an new account, open the preferences dialog via "
+"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Configure KNode...</"
+"guimenuitem><guilabel>Accounts</guilabel><guilabel>Newsgroup Servers</"
+"guilabel> </menuchoice>. The <guibutton>New</guibutton> button creates a new "
+"account; you then have to enter the same data as for your first account, "
+"typically a name for the account, the host name, and a user name and "
+"password if the server requires authentication. When this is done the new "
+"server will appear both in the configuration dialog and in the group view: "
+"you can now subscribe to newsgroups."
+msgstr ""
+"Um einen neuen News-Zugang anzulegen, gehen Sie über "
+"<menuchoice><guimenu>Einstellungen</guimenu> <guimenuitem>KNode "
+"einrichten ...</guimenuitem><guilabel>Zugänge</"
+"guilabel><guilabel>Newsgruppen-Server</guilabel> </menuchoice> in den "
+"Einstellungsdialog für die News-Zugänge. Hier können Sie über den Knopf "
+"<guibutton>Hinzufügen</guibutton> einen neuen Zugang anlegen. Das Einrichten "
+"ist identisch mit dem Ihres ersten News-Zugangs, abgesehen davon, dass Sie "
+"natürlich die entsprechenden Daten wie den Servernamen und die Zugangsdaten "
+"entsprechend anpassen müssen. Wenn der Zugang angelegt ist, erscheint er in "
+"der Ordneransicht, und Sie können nun die gewünschten Newsgruppen abonnieren."
+
+#. Tag: para
+#: using-morefeatures.docbook:800
+#, no-c-format
+msgid ""
+"You can delete the currently-selected account by pressing the "
+"<guibutton>Delete</guibutton> button."
+msgstr ""
+"Das Löschen eines vorhandenen News-Zugangs erfolgt über den Knopf "
+"<guibutton>Löschen</guibutton>."
+
+#. Tag: para
+#: using-morefeatures.docbook:804
+#, no-c-format
+msgid ""
+"In the <guimenu>Account properties</guimenu> dialog (available from the "
+"context menu of the newsserver) you can setup an identity for use only on "
+"this newsserver."
+msgstr ""
+"Über <guimenu>Zugangseinstellungen</guimenu> im Kontextmenü des News-Zugangs "
+"können Sie eine Identität einstellen, die nur für diesen News-Zugang gültig "
+"ist."
+
+#. Tag: title
+#: using-morefeatures.docbook:811
+#, no-c-format
+msgid "Sign and Verify Articles with <acronym>PGP</acronym>"
+msgstr "Artikel mit <acronym>PGP</acronym> signieren und überprüfen"
+
+#. Tag: para
+#: using-morefeatures.docbook:814
+#, no-c-format
+msgid ""
+"<acronym>PGP</acronym> is the most-widespread method used to encrypt or sign "
+"data. Using the <glossterm>PGP-signature</glossterm> you can verify if an "
+"article is really from the original author or if it has been changed by "
+"others. You can find PGP-programs and guides at <ulink url=\"http://www.pgpi."
+"org\">http://www.pgpi.org</ulink>."
+msgstr ""
+"<acronym>PGP</acronym> ist das verbreitetste Verfahren, zur Verschlüsselung "
+"von Daten und zum Signieren. Anhand der <glossterm>PGP-Signatur</glossterm> "
+"kann man überprüfen, ob der Artikel tatsächlich von dem angegebenen Absender "
+"stammt oder ob die Daten durch Dritte verfälscht wurden. PGP-Programme "
+"inklusive Anleitungen finden Sie im Internet unter<ulink url=\"http://www."
+"pgpi.org\"> http://www.pgpi.org</ulink>."
+
+#. Tag: para
+#: using-morefeatures.docbook:820
+#, no-c-format
+msgid ""
+"With &knode; you can sign an article with <acronym>PGP</acronym> and to "
+"verify <acronym>PGP</acronym>-signed article. After you have configured the "
+"<acronym>PGP</acronym> support, at <menuchoice><guimenu>Settings</"
+"guimenu><guimenuitem>Configure Knode...</guimenuitem><guilabel>Signing/"
+"Verifying</guilabel></menuchoice>, you can sign articles in the editor with "
+"the <menuchoice><guimenu>Tools</guimenu><guimenuitem>Sign article with PGP</"
+"guimenuitem></menuchoice> menu item &mdash; you will be asked for your "
+"passphrase and after that the article will be signed."
+msgstr ""
+"&knode; bietet Ihnen die Möglichkeit, Ihre Artikel mit <acronym>PGP</"
+"acronym> zu signieren und mit <acronym>PGP</acronym> signierte Artikel zu "
+"überprüfen. Nachdem Sie die <acronym>PGP</acronym>-Unterstützung unter "
+"<menuchoice><guimenu>Einstellungen</guimenu><guimenuitem>KNode einrichten ..."
+"</guimenuitem> <guilabel> Signieren / Prüfen</guilabel> </menuchoice> "
+"eingerichtet haben, können Sie einen Artikel signieren, indem Sie im Editor "
+"im Menü <menuchoice> <guimenu>Extras</guimenu> <guimenuitem> Artikel mit PGP "
+"signieren</guimenuitem> </menuchoice> auswählen. Sie werden daraufhin nach "
+"Ihrem PGP-Passwort gefragt und die Nachricht wird anschließend signiert."
+
+#. Tag: para
+#: using-morefeatures.docbook:831
+#, no-c-format
+msgid ""
+"Your <application>GnuPG</application>/<acronym>PGP</acronym> <acronym>ID</"
+"acronym> is automatically built from your name and your email address and is "
+"identical to the sender of the message (<quote>From</quote>-header)."
+msgstr ""
+"Ihre <application>GnuPG</application>/<acronym>PGP</acronym>-<acronym>ID</"
+"acronym> wird automatisch aus dem eingestellten Namen und der E-Mail-Adresse "
+"gebildet und ist mit dem <quote>Absender</quote> im Header des Artikels "
+"identisch."
+
+#~ msgid "Start Search"
+#~ msgstr "Suchen"
+
+#~ msgid ""
+#~ "To verify a <glossterm>PGP-signature</glossterm> you have to choose the "
+#~ "menu item <menuchoice><guimenu>View</guimenu><guimenuitem>Verify PGP-"
+#~ "signature</guimenuitem></menuchoice>."
+#~ msgstr ""
+#~ "Um eine <glossterm>PGP-Signatur</glossterm> zu überprüfen, gehen Sie im "
+#~ "Menü auf den Eintrag <menuchoice><guimenu>Ansicht</guimenu> "
+#~ "<guimenuitem>PGP-Signatur überprüfen</guimenuitem> </menuchoice>."

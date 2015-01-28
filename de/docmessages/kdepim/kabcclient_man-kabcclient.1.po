@@ -1,0 +1,718 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2009, 2010, 2011, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kabcclient_man-kabcclient.1\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:11+0000\n"
+"PO-Revision-Date: 2013-09-08 22:28+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdepim/doc/kabcclient/man-kabcclient.1."
+"docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 891400\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: man-kabcclient.1.docbook:8
+#, no-c-format
+msgid "&kde; User's Manual"
+msgstr "&kde;-Benutzerhandbuch"
+
+#. Tag: author
+#: man-kabcclient.1.docbook:9
+#, no-c-format
+msgid "<firstname>Kevin</firstname> <surname>Krammer</surname>"
+msgstr "<firstname>Kevin</firstname> <surname>Krammer</surname>"
+
+#. Tag: email
+#: man-kabcclient.1.docbook:13
+#, no-c-format
+msgid "kevin.krammer@gmx.at"
+msgstr "kevin.krammer@gmx.at"
+
+#. Tag: contrib
+#: man-kabcclient.1.docbook:15
+#, no-c-format
+msgid "<contrib>Author</contrib>"
+msgstr "<contrib>Author</contrib>"
+
+#. Tag: date
+#: man-kabcclient.1.docbook:17
+#, no-c-format
+msgid "2005-09-08"
+msgstr "2005-09-08"
+
+#. Tag: productname
+#: man-kabcclient.1.docbook:18
+#, no-c-format
+msgid "K Desktop Environment"
+msgstr "K Desktop Environment"
+
+#. Tag: manvolnum
+#: man-kabcclient.1.docbook:23
+#, no-c-format
+msgid "<manvolnum>1</manvolnum>"
+msgstr "<manvolnum>1</manvolnum>"
+
+#. Tag: refname
+#: man-kabcclient.1.docbook:26
+#, no-c-format
+msgid "<refname>kabcclient</refname>"
+msgstr "<refname>kabcclient</refname>"
+
+#. Tag: refpurpose
+#: man-kabcclient.1.docbook:27
+#, no-c-format
+msgid "commandline client for the &kde; addressbook"
+msgstr "Befehlszeilenprogramm für das &kde;-Adressbuch"
+
+#. Tag: cmdsynopsis
+#: man-kabcclient.1.docbook:31
+#, no-c-format
+msgid ""
+"<command>kabcclient</command> <group> <arg choice=\"opt\">-A</arg> <arg "
+"choice=\"opt\">-R</arg> <arg choice=\"opt\">-M</arg> <arg choice=\"opt\">-S</"
+"arg> <arg choice=\"opt\">-L</arg> </group> <arg choice=\"opt\">--match-case</"
+"arg> <arg choice=\"opt\">--nosave</arg> <arg choice=\"opt\">-ic "
+"<replaceable>codec</replaceable></arg> <arg choice=\"opt\">-if "
+"<replaceable>format</replaceable></arg> <arg choice=\"opt\">-if-opts "
+"<replaceable>format-options</replaceable></arg> <arg choice=\"opt\">-oc "
+"<replaceable>codec</replaceable></arg> <arg choice=\"opt\">-of "
+"<replaceable>format</replaceable></arg> <arg choice=\"opt\">-of-opts "
+"<replaceable>format-options</replaceable></arg> <arg choice=\"opt\"> input-"
+"data </arg>"
+msgstr ""
+"<command>kabcclient</command> <group> <arg choice=\"opt\">-A</arg> <arg "
+"choice=\"opt\">-R</arg> <arg choice=\"opt\">-M</arg> <arg choice=\"opt\">-S</"
+"arg> <arg choice=\"opt\">-L</arg> </group> <arg choice=\"opt\">--match-case</"
+"arg> <arg choice=\"opt\">--nosave</arg> <arg choice=\"opt\">-ic "
+"<replaceable>codec</replaceable></arg> <arg choice=\"opt\">-if "
+"<replaceable>format</replaceable></arg> <arg choice=\"opt\">-if-opts "
+"<replaceable>format-options</replaceable></arg> <arg choice=\"opt\">-oc "
+"<replaceable>codec</replaceable></arg> <arg choice=\"opt\">-of "
+"<replaceable>format</replaceable></arg> <arg choice=\"opt\">-of-opts "
+"<replaceable>format-options</replaceable></arg> <arg choice=\"opt\"> input-"
+"data </arg>"
+
+#. Tag: title
+#: man-kabcclient.1.docbook:54
+#, no-c-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:55
+#, no-c-format
+msgid ""
+"<command>kabcclient</command> allows commandline access to the &kde; "
+"addressbook, for example in shell scripts. It supports input from stdin or "
+"through additional commandline arguments. Output is always written to stdout."
+msgstr ""
+"Das Programm <command>kabcclient</command> erlaubt den Zugriff auf das &kde;-"
+"Adressbuch auf der Befehlszeile, zum Beispiel in Shell-Skripten. Eingaben "
+"können über stdin (Standardeingabe) oder über zusätzliche "
+"Befehlszeilenargumente gelesen werden. Daten werden immer auf die "
+"Standardausgabe (stdout) ausgegeben."
+
+#. Tag: title
+#: man-kabcclient.1.docbook:62
+#, no-c-format
+msgid "Options"
+msgstr "Optionen"
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:66
+#, no-c-format
+msgid "Operation modes"
+msgstr "Arbeitsmodi"
+
+#. Tag: option
+#: man-kabcclient.1.docbook:71
+#, no-c-format
+msgid "-A, --add"
+msgstr "-A, --add"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:73
+#, no-c-format
+msgid "Add a new contact entry to the addressbook"
+msgstr "Fügt einen Kontakt in das Adressbuch ein"
+
+#. Tag: option
+#: man-kabcclient.1.docbook:77
+#, no-c-format
+msgid "-R, --remove"
+msgstr "-R, --remove"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:79
+#, no-c-format
+msgid "Removes an existing contact entry from the addressbook"
+msgstr "Entfernt einen vorhandenen Kontakt aus dem Adressbuch"
+
+#. Tag: option
+#: man-kabcclient.1.docbook:83
+#, no-c-format
+msgid "-M, --merge"
+msgstr "-M, --merge"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:85
+#, no-c-format
+msgid ""
+"Merges input data with an existing contact entry from the addressbook. This "
+"appends any new information to the already existing one"
+msgstr ""
+"Eingabedaten mit Daten von vorhandenen Einträgen des Adressbuchs "
+"zusammenführen. Jede zusätzliche neue Information wird an die bereits "
+"vorhandenen Daten angefügt."
+
+#. Tag: option
+#: man-kabcclient.1.docbook:90
+#, no-c-format
+msgid "-S, --search"
+msgstr "-S, --search"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:92
+#, no-c-format
+msgid "Searches the addressbook for matching contact entries"
+msgstr "Sucht im Adressbuch nach passenden Kontakten"
+
+#. Tag: option
+#: man-kabcclient.1.docbook:96
+#, no-c-format
+msgid "-L, --list"
+msgstr "-L, --list"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:98
+#, no-c-format
+msgid "Lists all contact entries of the addressbook"
+msgstr "Zeigt alle Kontakte aus dem Adressbuch an"
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:108
+#, no-c-format
+msgid "Input options"
+msgstr "Optionen für die Eingabe"
+
+#. Tag: option
+#: man-kabcclient.1.docbook:113
+#, no-c-format
+msgid "-ic, --input-codec"
+msgstr "-ic, --input-codec"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:115
+#, no-c-format
+msgid ""
+"Pass input text through a specified text encoding. See <option>-ic</"
+"option><replaceable> help</replaceable> for additional information about "
+"input codecs. Default is <emphasis>local</emphasis> which will use the codec "
+"for the current <citerefentry><refentrytitle>locale</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry> settings"
+msgstr ""
+"Filtert die Eingabedaten durch die vorgegebene Textkodierung. Weitere "
+"Informationen über Eingabekodierungen werden mit der Option <option>-ic</"
+"option><replaceable> help</replaceable> angezeigt. Standard-Eingabekodierung "
+"ist <emphasis>local</emphasis>, damit wird die Kodierung der aktuellen "
+"Einstellung aus  <citerefentry><refentrytitle>locale</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry> verwendet"
+
+#. Tag: option
+#: man-kabcclient.1.docbook:125
+#, no-c-format
+msgid "-if, --input-format"
+msgstr "-if, --input-format"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:127
+#, no-c-format
+msgid ""
+"Parses the input text according to given formatting rules. See <option>-if</"
+"option><replaceable> help</replaceable> for available formats. Default is "
+"<emphasis>search</emphasis>"
+msgstr ""
+"Filtert die Eingabedaten durch die vorgegebenen Formatierungsregeln. Weitere "
+"Informationen verfügbare Formate werden mit der Option <option>-if</"
+"option><replaceable> help</replaceable> angezeigt. Die Standardeinstellung "
+"ist <emphasis>search</emphasis>"
+
+#. Tag: term
+#: man-kabcclient.1.docbook:134
+#, no-c-format
+msgid ""
+"Instead of reading input text kabcclient can show a dialog for selecting "
+"contacts using the input format"
+msgstr ""
+"Wählt Kontakte in einem Dialog aus anstelle des Einlesens von Textdaten"
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:136
+#, no-c-format
+msgid "dialog"
+msgstr "dialog"
+
+#. Tag: option
+#: man-kabcclient.1.docbook:140
+#, no-c-format
+msgid "-if-opts, --input-format-options"
+msgstr "-if-opts, --input-format-options"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:142
+#, no-c-format
+msgid ""
+"Additional options for the chosen input format. Can be optional as well as "
+"mandatory depending on the format. See <option>-if-opts</"
+"option><replaceable> help</replaceable> for available format options"
+msgstr ""
+"Zusätzliche Optionen für das gewählte Eingabeformat. Abhängig vom Format "
+"können diese Optionen optional, aber auch erforderlich sein. Weitere "
+"Informationen über verfügbare Formatoptionen werden mit <option>-if-opts</"
+"option><replaceable> help</replaceable> angezeigt."
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:154
+#, no-c-format
+msgid "Output options"
+msgstr "Optionen für die Ausgabe"
+
+#. Tag: option
+#: man-kabcclient.1.docbook:159
+#, no-c-format
+msgid "-oc, --output-codec"
+msgstr "-oc, --output-codec"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:161
+#, no-c-format
+msgid ""
+"Pass output text through a specified text encoding. See <option>-oc</"
+"option><replaceable> help</replaceable> for additional information about "
+"output codecs. Default is <emphasis>local</emphasis> which will use the "
+"codec for the current <citerefentry><refentrytitle>locale</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry> settings."
+msgstr ""
+"Filtert die Ausgabedaten durch die vorgegebene Textkodierung. Weitere "
+"Informationen über Ausgabekodierungen werden mit der Option <option>-oc</"
+"option><replaceable> help</replaceable> angezeigt. Standard-Ausgabekodierung "
+"ist <emphasis>local</emphasis>, damit wird die Kodierung der aktuellen "
+"Einstellung aus  <citerefentry><refentrytitle>locale</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry> verwendet."
+
+#. Tag: option
+#: man-kabcclient.1.docbook:171
+#, no-c-format
+msgid "-of, --output-format"
+msgstr "-of, --output-format"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:173
+#, no-c-format
+msgid ""
+"Formats the output text according to given formatting rules. See <option>-"
+"of</option><replaceable> help</replaceable> for available formats. Default "
+"is <emphasis>vcard</emphasis>."
+msgstr ""
+"Filtert die Ausgabedaten durch die vorgegebenen Formatierungsregeln. Weitere "
+"Informationen über verfügbare Formate werden mit der Option <option>-if</"
+"option><replaceable> help</replaceable> angezeigt. Die Standardeinstellung "
+"ist <emphasis>vcard</emphasis>."
+
+#. Tag: option
+#: man-kabcclient.1.docbook:180
+#, no-c-format
+msgid "-of-opts, --output-format-options"
+msgstr "-of-opts, --output-format-options"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:182
+#, no-c-format
+msgid ""
+"Additional options for the chosen output format. Can be optional as well as "
+"mandatory depending on the format. See <option>-of-opts</"
+"option><replaceable> help</replaceable> for available format options"
+msgstr ""
+"Zusätzliche Optionen für das gewählte Ausgabeformat. Abhängig vom Format "
+"können diese Optionen optional, aber auch erforderlich sein. Weitere "
+"Informationen über verfügbare Formatoptionen werden mit <option>-of-opts</"
+"option><replaceable> help</replaceable> angezeigt."
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:194
+#, no-c-format
+msgid "Additional options"
+msgstr "Weitere Optionen"
+
+#. Tag: option
+#: man-kabcclient.1.docbook:199
+#, no-c-format
+msgid "--match-case"
+msgstr "--match-case"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:201
+#, no-c-format
+msgid ""
+"Use case sensitive text matching when comparing input text with contact "
+"entries"
+msgstr ""
+"Verwendet Groß-/Kleinschreibung, wenn der Eingabetext mit den "
+"Kontakteinträgen verglichen wird"
+
+#. Tag: option
+#: man-kabcclient.1.docbook:205
+#, no-c-format
+msgid "--nosave"
+msgstr "--nosave"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:207
+#, no-c-format
+msgid ""
+"Perform information changing operations like <option>-A, -R</option> or "
+"<option>-M</option> only in memory but do not write the changes back to the "
+"addressbook"
+msgstr ""
+"Führt Operationen wie <option>-A, -R</option> oder <option>-M</option>, die "
+"Daten verändern, nur im Arbeitsspeicher aus, die Änderungen werden aber "
+"nicht im Adressbuch gespeichert."
+
+#. Tag: title
+#: man-kabcclient.1.docbook:223
+#, no-c-format
+msgid "Diagnostics"
+msgstr "Diagnose"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:224
+#, no-c-format
+msgid ""
+"As usual an exit status of zero indicates success. Depending on the chosen "
+"operation mode a non-zero exit status indicates a certain problem the "
+"application encountered"
+msgstr ""
+"Wie in Unix üblich, wird bei erfolgreicher Ausführung einer Operation der "
+"Wert Null zurückgegeben. Abhängig von der Arbeitsweise zeigt ein "
+"Rückgabewert > 0 ein Problem an. das bei der Ausführung aufgetreten ist."
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:230
+#, no-c-format
+msgid "<emphasis>ADD</emphasis>"
+msgstr "<emphasis>ADD</emphasis>"
+
+#. Tag: literal
+#: man-kabcclient.1.docbook:235 man-kabcclient.1.docbook:265
+#: man-kabcclient.1.docbook:298 man-kabcclient.1.docbook:322
+#, no-c-format
+msgid "<literal>1</literal>"
+msgstr "<literal>1</literal>"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:237 man-kabcclient.1.docbook:267
+#: man-kabcclient.1.docbook:300 man-kabcclient.1.docbook:324
+#, no-c-format
+msgid "Reading the input text failed"
+msgstr "Das Lesen des Eingabetextes fehlgeschlagen"
+
+#. Tag: literal
+#: man-kabcclient.1.docbook:241 man-kabcclient.1.docbook:271
+#: man-kabcclient.1.docbook:304 man-kabcclient.1.docbook:328
+#, no-c-format
+msgid "<literal>2</literal>"
+msgstr "<literal>2</literal>"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:243
+#, no-c-format
+msgid ""
+"Creating a suitable contact entry from the input text failed, e.g. not data "
+"or wrongly formatted input for the chosen input format"
+msgstr ""
+"Die Erstellung eines passenden Kontakteintrags aus den Eingabedaten ist "
+"fehlgeschlagen, &eg; weil nicht genügend Daten eingeben wurden oder weil die "
+"Eingabe für das gewählte Format falsch formatiert ist"
+
+#. Tag: literal
+#: man-kabcclient.1.docbook:248 man-kabcclient.1.docbook:281
+#: man-kabcclient.1.docbook:314
+#, no-c-format
+msgid "<literal>3</literal>"
+msgstr "<literal>3</literal>"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:250 man-kabcclient.1.docbook:283
+#: man-kabcclient.1.docbook:316
+#, no-c-format
+msgid ""
+"Saving the addressbook changes failed. This can be caused for example by "
+"other applications currently locking the addressbook."
+msgstr ""
+"Die Speicherung des Adressbuchs ist fehlgeschlagen. Die Ursache für diesen "
+"Fehler kann zum Beispiel darin liegen, dass das Adressbuch aktuell durch "
+"andere Programme gesperrt ist."
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:260
+#, no-c-format
+msgid "REMOVE"
+msgstr "REMOVE"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:273
+#, no-c-format
+msgid ""
+"The program could not remove any contact entry from the addressbook. This "
+"can be caused by failing to parse the input text, failing to find a matching "
+"contact entry in the addressbook or finding more than one matching contact "
+"entry in the addressbook. In the latter case an error message is written to "
+"stderr"
+msgstr ""
+"Das Programm kann keinem Kontakteintrag aus dem Adressbuch entfernen. Die "
+"Ursache dafür kann bei einem Fehler beim Lesen der Eingabedaten liegen oder "
+"weil es keinen oder mehrere passende Kontakteinträge im Adressbuch gibt. Im "
+"letzten Fall wird eine Fehlermeldung auf der Standardausgabe angezeigt."
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:293
+#, no-c-format
+msgid "MERGE"
+msgstr "MERGE"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:306
+#, no-c-format
+msgid ""
+"The program could not merge the input with any contact entry from the "
+"addressbook. This can be caused by failing to parse the input text, failing "
+"to find a matching contact entry in the addressbook or finding more than one "
+"matching contact entry in the addressbook. In the latter case an error "
+"message is written to stderr"
+msgstr ""
+"Das Programm kann die Eingabe nicht mit einem Kontakteintrag aus dem "
+"Adressbuch zusammenführen. Die Ursache dafür kann bei einem Fehler beim "
+"Lesen der Eingabedaten liegen oder weil es keinen oder mehrere passende "
+"Kontakteinträge im Adressbuch gibt. Im letzten Fall wird eine Fehlermeldung "
+"auf der Standardausgabe angezeigt."
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:321
+#, no-c-format
+msgid "SEARCH"
+msgstr "SEARCH"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:330
+#, no-c-format
+msgid ""
+"The program could not find any matching contact entry in the addressbook. "
+"This can be caused by failing to parse the input text or failing to find a "
+"matching contact entry in the addressbook"
+msgstr ""
+"Das Programm kann keinen passenden Kontakteintrag im Adressbuch finden. Die "
+"Ursache kann beim Einlesefehler des Eingabetextes oder bei einem Fehler bei "
+"der Suche nach einem passenden Kontakteintrag im Adressbuch liegen."
+
+#. Tag: title
+#: man-kabcclient.1.docbook:344
+#, no-c-format
+msgid "Examples"
+msgstr "Beispiele"
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:345
+#, no-c-format
+msgid "Look for contact entries with Joe in either name or email addresses"
+msgstr "Suche nach Kontakten mit „Joe“ im Namen oder der E-Mail-Adresse"
+
+#. Tag: literallayout
+#: man-kabcclient.1.docbook:346
+#, no-c-format
+msgid "kabcclient -S Joe"
+msgstr "kabcclient -S Joe"
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:348
+#, no-c-format
+msgid "Do the same but use case sensitive matching"
+msgstr "Die gleiche Suche mit Beachtung von Groß-/Kleinschreibung."
+
+#. Tag: literallayout
+#: man-kabcclient.1.docbook:349
+#, no-c-format
+msgid "kabcclient --match-case -S Joe"
+msgstr "kabcclient --match-case -S Joe"
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:351
+#, no-c-format
+msgid "Do the same but read input text from stdin"
+msgstr ""
+"Die gleiche Suche mit Einlesen des Eingabetexts aus der Standardeingabe"
+
+#. Tag: literallayout
+#: man-kabcclient.1.docbook:352
+#, no-c-format
+msgid "echo \"Joe\" | kabcclient --match-case -S"
+msgstr "echo <quote>Joe</quote> | kabcclient --match-case -S"
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:354
+#, no-c-format
+msgid ""
+"Try to add a new contact entry using data from a formatted email address"
+msgstr ""
+"Hinzufügen eines neuen Kontakteintrags mit Daten aus einer formatierten E-"
+"Mail-Adresse"
+
+#. Tag: literallayout
+#: man-kabcclient.1.docbook:355
+#, no-c-format
+msgid ""
+"kabcclient --nosave --add -if email \"Marilyn Monroe &lt;mmonroe@moviestars."
+"com&gt;\""
+msgstr ""
+"kabcclient --nosave --add -if email <quote>Marilyn Monroe &lt;"
+"mmonroe@moviestars.com&gt;</quote>"
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:357
+#, no-c-format
+msgid "Do the same but this time really save the changed addressbook"
+msgstr "Das Gleiche, aber mit Speicherung der geänderten Daten des Adressbuchs"
+
+#. Tag: literallayout
+#: man-kabcclient.1.docbook:358
+#, no-c-format
+msgid ""
+"kabcclient --add -if email \"Marilyn Monroe &lt;mmonroe@moviestars.com&gt;\""
+msgstr ""
+"kabcclient --add -if email <quote>Marilyn Monroe &lt;mmonroe@moviestars."
+"com&gt;</quote>"
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:360
+#, no-c-format
+msgid "Listing the available input formats"
+msgstr "Anzeige aller verfügbaren Eingabeformate"
+
+#. Tag: literallayout
+#: man-kabcclient.1.docbook:361
+#, no-c-format
+msgid "kabcclient -if help"
+msgstr "kabcclient -if help"
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:363
+#, no-c-format
+msgid "Listing the available output formats"
+msgstr "Anzeige aller verfügbaren Ausgabeformate"
+
+#. Tag: literallayout
+#: man-kabcclient.1.docbook:364
+#, no-c-format
+msgid "kabcclient -of help"
+msgstr "kabcclient -of help"
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:366
+#, no-c-format
+msgid "Listing the available options for the 'email' output format"
+msgstr "Anzeige aller verfügbaren Optionen für das 'email'-Ausgabeformat"
+
+#. Tag: literallayout
+#: man-kabcclient.1.docbook:367
+#, no-c-format
+msgid "kabcclient -of email -of-opts help"
+msgstr "kabcclient -of email -of-opts help"
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:369
+#, no-c-format
+msgid "Listing all email addresses for all contacts containing 'Marilyn'"
+msgstr ""
+"Ausgabe aller E-Mail-Adressen der Kontakte, die den Text 'Marilyn' enthalten"
+
+#. Tag: literallayout
+#: man-kabcclient.1.docbook:370
+#, no-c-format
+msgid "kabcclient -of email -of-opts allemails -S Marilyn"
+msgstr "kabcclient -of email -of-opts allemails -S Marilyn"
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:372
+#, no-c-format
+msgid "Remove all contacts the user selected in the contact selection dialog"
+msgstr ""
+"Entfernen aller Kontakte, die im Dialog Kontaktauswahl markiert wurden."
+
+#. Tag: literallayout
+#: man-kabcclient.1.docbook:373
+#, no-c-format
+msgid "kabcclient --remove -if dialog"
+msgstr "kabcclient --remove -if dialog"
+
+#. Tag: emphasis
+#: man-kabcclient.1.docbook:375
+#, no-c-format
+msgid "Export selected contacts to a vCard (default output format) file"
+msgstr ""
+"Exportieren der ausgewählten Kontakte in eine vCard-Datei, das "
+"Standardausgabeformat"
+
+#. Tag: literallayout
+#: man-kabcclient.1.docbook:376
+#, no-c-format
+msgid "kabcclient -S -if dialog &gt; contacts.vcf"
+msgstr "kabcclient -S -if dialog &gt; contacts.vcf"
+
+#. Tag: title
+#: man-kabcclient.1.docbook:380
+#, no-c-format
+msgid "<title>Author</title>"
+msgstr "<title>Author</title>"
+
+#. Tag: para
+#: man-kabcclient.1.docbook:381
+#, no-c-format
+msgid ""
+"This manual page was written by Kevin Krammer &lt;kevin.krammer@gmx.at&gt;. "
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU General Public License, Version 2 any later version "
+"published by the Free Software Foundation."
+msgstr ""
+"Diese Handbuchseite wurde von Kevin Krammer &lt;kevin.krammer@gmx.at&gt; "
+"geschrieben. Es ist erlaubt, dieses Dokument nach den Regeln der GNU General "
+"Public License, Version 2 oder einer späteren von der Free Software "
+"Foundation herausgegebenen Lizenz zu kopieren, zu verbreiten oder zu "
+"verändern."
+
+#. Tag: para
+#: man-kabcclient.1.docbook:386
+#, no-c-format
+msgid ""
+"On Debian systems, the complete text of the GNU General Public License can "
+"be found in /usr/share/common-licenses/GPL."
+msgstr ""
+"Auf Debian-Systemen kann der gesamte Text der GNU General Public License im "
+"Ordner /usr/share/common-licenses/GPL gefunden werden."
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "<command>kabcclient</command>"
+#~ msgstr "<command>kabcclient</command>"
+
+#~ msgid ""
+#~ "<date>2005-09-08</date> <productname>K Desktop Environment</productname>"
+#~ msgstr ""
+#~ "<date>08.09.2005</date> <productname>K Desktop Environment</productname>"

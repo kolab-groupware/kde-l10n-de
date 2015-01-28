@@ -1,0 +1,230 @@
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2008, 2009.
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2012.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2009, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2009, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_system-monitor\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-12-25 05:10+0000\n"
+"PO-Revision-Date: 2012-02-24 21:56+0100\n"
+"Last-Translator: Frederik Schwarzer <schwarzerf@gmail.com>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: applet.cpp:277
+msgid "No data sources being displayed"
+msgstr "Es werden keine Datenquellen angezeigt"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: cpu-config.ui:23
+msgid "&CPUs:"
+msgstr "&Prozessoren:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: cpu-config.ui:48 hdd-config.ui:48 hdd_activity-config.ui:48
+#: net-config.ui:48 ram-config.ui:48 temperature-config.ui:45
+msgid "Update &interval:"
+msgstr "Aktualisierungs&intervall:"
+
+#: cpu.cpp:47 cpu.cpp:131 hwinfo.cpp:139
+msgid "CPU"
+msgstr "Prozessor"
+
+#: cpu.cpp:91
+msgid "total"
+msgstr "gesamt"
+
+#: cpu.cpp:149 hdd_activity.cpp:201 net.cpp:167 ram.cpp:239
+#: temperature.cpp:119
+msgctxt "second"
+msgid " s"
+msgstr " Sek."
+
+#: cpu.cpp:150
+msgid "CPUs"
+msgstr "Prozessoren"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: hdd-config.ui:23 hdd_activity-config.ui:23
+msgid "Hard &disks:"
+msgstr "&Festplatten:"
+
+#: hdd.cpp:49
+msgid "Disk Space"
+msgstr "Festplattenspeicher"
+
+#: hdd.cpp:85
+msgid "Mount Point"
+msgstr "Mountpunkt"
+
+#: hdd.cpp:86 hdd_activity.cpp:165 temperature.cpp:96
+msgid "Name"
+msgstr "Name"
+
+#: hdd.cpp:110
+msgid " minute"
+msgid_plural " minutes"
+msgstr[0] " Minute"
+msgstr[1] " Minuten"
+
+#: hdd.cpp:112
+msgid "Partitions"
+msgstr "Partitionen"
+
+#: hdd.cpp:164
+msgctxt "the root filesystem"
+msgid "root"
+msgstr "root"
+
+#: hdd.cpp:170
+msgid "Unknown filesystem"
+msgstr "Unbekanntes Dateisystem"
+
+#: hdd.cpp:185
+#, kde-format
+msgctxt "hard disk label (not mounted or accessible)"
+msgid "%1 (not accessible)"
+msgstr "%1 (nicht verfügbar)"
+
+#: hdd.cpp:298
+msgid "File System"
+msgstr "Dateisystem"
+
+#: hdd.cpp:299
+msgid "Raid"
+msgstr "RAID"
+
+#: hdd_activity.cpp:79
+msgid "Disk Activity"
+msgstr "Festplatten-Aktivität"
+
+#: hdd_activity.cpp:202
+msgid "Hard Disks"
+msgstr "Festplatten"
+
+#: hwinfo.cpp:57 hwinfo.cpp:156
+msgid "Hardware Info"
+msgstr "Hardware-Informationen"
+
+#: hwinfo.cpp:68
+msgid "Getting hardware information..."
+msgstr "Hardware-Informationen werden ermittelt ..."
+
+#: hwinfo.cpp:141
+msgid "GPU"
+msgstr "Grafik-Prozessor"
+
+#: hwinfo.cpp:143
+msgid "Audio"
+msgstr "Audio"
+
+#: hwinfo.cpp:146 net.cpp:46
+msgid "Network"
+msgstr "Netzwerk"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: net-config.ui:23
+msgid "&Network interfaces:"
+msgstr "&Netzwerkschnittstellen:"
+
+#: net.cpp:150
+msgid "Network Interface"
+msgstr "Netzwerkschnittstelle"
+
+#: net.cpp:168
+msgid "Interfaces"
+msgstr "Schnittstellen"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ram-config.ui:23
+msgid "&Memory:"
+msgstr "&Speicher:"
+
+#: ram.cpp:48 ram.cpp:206 ram.cpp:240
+msgid "RAM"
+msgstr "RAM"
+
+#: ram.cpp:101 ram.cpp:218
+msgctxt "noun, hardware, physical RAM/memory"
+msgid "physical"
+msgstr "Arbeitsspeicher"
+
+#: ram.cpp:103 ram.cpp:220
+msgctxt "noun, hardware, swap file/partition"
+msgid "swap"
+msgstr "Auslagerungsspeicher"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: temperature-config.ui:20
+msgid "&Available temperatures:"
+msgstr "Verfügbare &Temperaturinformationen:"
+
+#: temperature.cpp:57 temperature.cpp:121
+msgid "Temperature"
+msgstr "Temperatur"
+
+#: temperature.cpp:95
+msgid "Sensor"
+msgstr "Sensor"
+
+#: temperature.cpp:97
+msgid "Offset"
+msgstr "Versatz"
+
+#~ msgid ""
+#~ "<tr><td>Interface:%1</td><td>Upstream:%2</td><td>Downstream:%3</td></tr>"
+#~ msgstr ""
+#~ "<tr><td>Schnittstelle:%1</td><td>Ausgehend:%2</td><td>Eingehend:%3</td></"
+#~ "tr>"
+
+#~ msgid "\\u00b0"
+#~ msgstr "\\u00b0"
+
+#~ msgid "%1 °C"
+#~ msgstr "%1 °C"
+
+#~ msgid "%1 °F"
+#~ msgstr "%1 °F"
+
+#~ msgid " second"
+#~ msgid_plural " seconds"
+#~ msgstr[0] " Sekunde"
+#~ msgstr[1] " Sekunden"
+
+#~ msgid "Advanced"
+#~ msgstr "Erweitert"
+
+#~ msgid "Show CPU name above the graph"
+#~ msgstr "CPU-Name über der Grafik anzeigen"
+
+#~ msgid "Show plotter background"
+#~ msgstr "Kurven-Hintergrund anzeigen"
+
+#~ msgid "Graph color:"
+#~ msgstr "Farbe für die Kurve:"
+
+#~ msgid "Show interface name above the graph"
+#~ msgstr "Schnittstellen-Name über der Grafik anzeigen"
+
+#, fuzzy
+#~ msgid "In color:"
+#~ msgstr "Innen-Farbe:"
+
+#, fuzzy
+#~ msgid "Out color:"
+#~ msgstr "Außen-Farbe:"
+
+#~ msgid "Show RAM name above the graph"
+#~ msgstr "RAM-Namen über der Grafik anzeigen"
+
+#~ msgid "Show plotters"
+#~ msgstr "Kurven anzeigen"
+
+#~ msgid "seconds"
+#~ msgstr "Sekunden"

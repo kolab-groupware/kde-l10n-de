@@ -1,0 +1,459 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2011, 2012, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: kmymoney_installation\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-09-08 02:19+0000\n"
+"PO-Revision-Date: 2014-09-17 14:02+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: author
+#: installation.docbook:5
+#, no-c-format
+msgid "&Jack.H.Ostroff; &Jack.H.Ostroff.mail;"
+msgstr "&Jack.H.Ostroff; &Jack.H.Ostroff.mail;"
+
+#. Tag: date
+#: installation.docbook:7
+#, no-c-format
+msgid "2014-08-30"
+msgstr "2014-08-30"
+
+#. Tag: releaseinfo
+#: installation.docbook:8
+#, no-c-format
+msgid "4.7.01"
+msgstr "4.7.01"
+
+#. Tag: title
+#: installation.docbook:11
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#. Tag: para
+#: installation.docbook:13
+#, no-c-format
+msgid ""
+"This appendix primarily addresses the installation of &kappname; under the "
+"&Linux; operating system. The <link linkend=\"installation.nonlinux\">final "
+"section</link> addresses other operating systems."
+msgstr ""
+"In diesem Anhang wird vor allem die Installation von &kappname; unter dem "
+"&Linux;-Betriebssystem erläutert. Im <link linkend=\"installation.nonlinux"
+"\">letzten Abschnitt</link> finden Sie Hinweise für andere Betriebssysteme."
+
+#. Tag: title
+#: installation.docbook:20
+#, no-c-format
+msgid "How to obtain &kappname;"
+msgstr "Bezugsquellen von &kappname;"
+
+#. Tag: para
+#: installation.docbook:22
+#, fuzzy, no-c-format
+#| msgid ""
+#| "Although &kappname; has existed for a number of years, we are still "
+#| "working on full integration into &kde;. Early stable versions (1.0.x) "
+#| "required libraries from &kde; 3, and so were not available in many Linux "
+#| "distributions, which had already migrated to &kde; 4. However, with the "
+#| "release of version 4.5 in August 2010, &kappname; could be easily "
+#| "compiled and installed on any version of &kde; 4.3 or higher. The current "
+#| "version, 4.6, requires &kde; 4.3, specifically kdelibs and kdepimlibs."
+msgid ""
+"&kappname; has existed for a number of years, and we have worked very hard "
+"on full integration into &kde;. The earliest stable versions (1.0.x) "
+"required libraries from &kde; 3, and so were not available in many Linux "
+"distributions, which had already migrated to &kde; 4. However, with the "
+"release of version 4.5 in August 2010, &kappname; could be easily compiled "
+"and installed on any version of &kde; 4.3 or higher. The current version, "
+"4.7, requires &kde; 4.6, specifically kdelibs and kdepimlibs."
+msgstr ""
+"Obwohl &kappname; bereits seit einigen Jahren verfügbar ist, wird immer noch "
+"an der vollständigen Integration in &kde; gearbeitet. Die ersten stabilen "
+"Versionen (1.0.x) erforderten die Bibliotheken von &kde; 3. Daher gab es "
+"&kappname; in vielen Linux-Distributionen nicht, die bereits zu &kde; 4 "
+"gewechselt waren. Seit Veröffentlichung der Version 4.5 im August 2010 kann "
+"&kappname; auf jeder &kde;-Version ab 4.3 kompiliert und installiert werden. "
+"Die aktuelle Version benötigt &kde; 4.3, insbesondere die Module kdelibs und "
+"kdepimlibs."
+
+#. Tag: para
+#: installation.docbook:32
+#, no-c-format
+msgid ""
+"Although work has begun porting &kappname; to the new KDE Frameworks 5, this "
+"is still very early, and not yet usable. Hopefully it will be available in "
+"the 5.0 version, which we expect to release in early 2015. Until then, if "
+"you are specifically interested in following this work, you should subscribe "
+"to the developers mailing list &devlist;."
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:40
+#, no-c-format
+msgid ""
+"The rest of this section will describe installing &kappname; using the "
+"standard software installation process for your Linux distribution. The "
+"following section will discuss compiling from source."
+msgstr ""
+"In diesem Abschnitt wird im folgenden die Installation von &kappname; mit "
+"den Paketverwaltungsprogrammen Ihrer Linux-Distribution erläutert. Im "
+"nächsten Abschnitt finden Sie Informationen zum Kompilieren des Quelltextes."
+
+#. Tag: title
+#: installation.docbook:47
+#, no-c-format
+msgid "Official Distribution Packages"
+msgstr "Offizielle Distributions-Pakete"
+
+#. Tag: para
+#: installation.docbook:48
+#, no-c-format
+msgid ""
+"The best way to install &kappname; is to use the package manager of your "
+"distribution, such as apt-get, yum, portage, or pacman. This will take care "
+"of all the dependencies and required libraries. Although it takes some time "
+"after the release a new version of &kappname; for all the distributions to "
+"add it to their official repositories, please check there first."
+msgstr ""
+"Am einfachsten installieren Sie &kappname; mit dem Paketverwaltungsprogramm "
+"Ihrer Distribution wie zum Beispiel „apt-get“, „ yum“, „portage“, oder "
+"„pacman“. Diese Programme berücksichtigen alle Abhängigkeiten und "
+"erforderlichen Bibliotheken. Nutzen Sie zuerst diese Installation, auch wenn "
+"es manchmal nach der Veröffentlichung einer neuen Version von &kappname; "
+"einige Zeit dauert, bis die Distributionen diese Version den offiziellen "
+"Archiven hinzugefügt haben."
+
+#. Tag: title
+#: installation.docbook:58
+#, no-c-format
+msgid "Unsupported Repositories"
+msgstr "Nicht unterstützte Paketquellen"
+
+#. Tag: para
+#: installation.docbook:59
+#, no-c-format
+msgid ""
+"Many Linux distributions have users who provide unsupported repositories "
+"that offer more up-to-date packages than the distributions' official "
+"repositories. A list of these may be found at the <ulink url=\"http://www."
+"kmymoney.org\">&kappname; home page</ulink>."
+msgstr ""
+"Für viele Linux-Distributionen stellen Benutzer inoffizielle Archive bereit, "
+"die aktuellere Pakete als die offiziellen Archive der Distributionen "
+"enthalten. Eine Liste dieser inoffiziellen Archive finden Sie auf der <ulink "
+"url=\"http://www.kmymoney.org\">&kappname;-Webseite</ulink>."
+
+#. Tag: title
+#: installation.docbook:69
+#, no-c-format
+msgid "Compiling &kappname; from Source"
+msgstr "&kappname; aus dem Quelltext installieren"
+
+#. Tag: para
+#: installation.docbook:71
+#, no-c-format
+msgid ""
+"More up-to-date information on the latest available version and any known "
+"installation issues will be available on the <ulink url=\"http://www."
+"kmymoney.org\">&kappname; home page</ulink>. That page will also have links "
+"to tarballs of recent versions as well as instructions for obtaining the "
+"source from &kde; Git, in case you want to compile the latest, development "
+"version."
+msgstr ""
+"Aktuellere Informationen über die neuesten verfügbaren Versionen und alle "
+"bekannten Probleme bei der Installation finden Sie auf der <ulink url="
+"\"http://www.kmymoney.org\">&kappname;-Webseite</ulink>. Diese Seite enthält "
+"auch Verknüpfungen zu komprimierten Quelltextarchiven der neuesten Versionen "
+"und Anleitungen zum Abrufen der Quelltexte aus dem Git-Archiv, falls Sie die "
+"aktuelle Entwicklerversion kompilieren möchten."
+
+#. Tag: para
+#: installation.docbook:80
+#, no-c-format
+msgid ""
+"As the previous paragraph implied, there are two distinct reasons to compile "
+"&kappname; from source. If you cannot find a version specifically packaged "
+"for your distribution, please download the tarball of the most recent stable "
+"release. This is version 4.6.0 as of the time this is being written. This is "
+"the compile option recommended for normal users."
+msgstr ""
+"Aus dem vorherigen Absatz können Sie entnahmen, dass es zwei verschiedene "
+"Gründe dafür gibt, &kappname; aus dem Quelltext zu kompilieren. Wenn Ihre "
+"Distribution kein Paket für &kappname; enthält, laden Sie bitte das "
+"komprimierte Quelltextarchiv der neuesten stabilen Version herunter. Zu Zeit "
+"ist das die Version 4.6.0. Dies wird für alle Benutzer empfohlen, die "
+"&kappname; in einer stabilen Version für den normalen Gebrauch benötigen."
+
+#. Tag: para
+#: installation.docbook:88
+#, no-c-format
+msgid ""
+"On the other hand, if you want to see the current state of development, to "
+"check out a recent bug fix or new feature, you can download a tarball which "
+"is a snapshot of the development repository. You can also check the source "
+"directly out of the repository. The version 4.x source is in &kde; Git. (The "
+"version 1.0.x source was in SourceForge cvs, but it is no longer being "
+"developed or supported at all.) Instructions for access are on the project "
+"home page."
+msgstr ""
+"Möchten Sie aber den aktuellen Stand der Entwicklung ausprobieren oder "
+"testen, ob ein Fehler behoben wurde oder eine neue Funktion richtig  "
+"arbeitet, dann können Sie ein komprimiertes Quelltextarchiv mit einem "
+"bestimmten Stand der Entwicklung herunterladen. Sie können den Quelltext "
+"auch direkt aus dem Git-Archiv herunterladen. Den Quelltext ab Version 4.x "
+"finden im &kde;-Git-Archiv. Der Quelltext der Version 1.0.x befand im CSV-"
+"Archiv auf SourceForge, wird aber nicht weiter entwickelt und nicht "
+"unterstützt. Anleitungen für den Zugriff auf die Archive finden Sie auf der "
+"Webseite des Projekts."
+
+#. Tag: para
+#: installation.docbook:99
+#, no-c-format
+msgid ""
+"The code in the Git repository and in development snapshots is under active "
+"development: it may have bugs, it may crash, and it may mess up or lose "
+"data. If you use it, be absolutely sure to make adequate backups. Unless you "
+"have a good reason to use this, stick to a stable released version."
+msgstr ""
+"Der Quelltext im Git-Archiv und in den Quelltextarchiven von "
+"Entwicklungsversionen wird ständig verändert: Er kann Fehler enthalten, das "
+"Programm kann abstürzen und möglicherweise werden Daten nicht richtig "
+"verarbeitet oder nicht richtig gespeichert. Wenn Sie diese Versionen "
+"benutzen möchten, sollten Sie auf jeden Fall Ihre Daten häufig sichern. "
+"Arbeiten Sie mit stabilen Versionen, solange Sie nicht besondere Gründe für "
+"die Verwendung von Entwicklungsversionen haben."
+
+#. Tag: title
+#: installation.docbook:107
+#, no-c-format
+msgid "Required libraries"
+msgstr "Erforderliche Bibliotheken"
+
+#. Tag: para
+#: installation.docbook:108
+#, no-c-format
+msgid ""
+"&kappname; depends on certain libraries in order to compile and run "
+"properly. First is KDE version 4.3.5 or later, specifically kdelibs and "
+"kdepimlibs. Depending on your distribution, you may need to explicitly load "
+"the <quote>-devel</quote> versions in order to compile &kappname;, rather "
+"than just running a pre-compiled version. As of version 4.6.0, &kappname; "
+"also depends on libalkimia, version 4.3.1 or higher. Additional requirements "
+"may be detected during the <quote>cmake</quote> step below."
+msgstr ""
+"&kappname; braucht einige Bibliotheken, um kompiliert und ausgeführt werden "
+"zu können. Als erstes KDE in Version 4.3.5 oder neuer, daraus insbesondere "
+"die Module kdelibs und kdepimlibs. Von Ihrer Distribution müssen Sie "
+"wahrscheinlich ausdrücklich sie Entwicklungspakete (<quote>-devel</quote> "
+"oder <quote>-dev</quote>) dieser Bibliotheken installieren, um &kappname; "
+"kompilieren zu können. Ab Version 4.6.0 benötigt &kappname; außerdem die "
+"Bibliothek libalkimia mindestens in Version 4.3.1. Weiter nötige "
+"Bibliotheken werden möglicherweise erst beim Ausführen des Befehls "
+"<quote>cmake</quote> festgestellt."
+
+#. Tag: para
+#: installation.docbook:118
+#, no-c-format
+msgid ""
+"Additional functionality can be obtained if extra libraries are available at "
+"compile time. The two most common are"
+msgstr ""
+"Zusätzliche Funktionen sind verfügbar, wenn weitere Bibliotheken beim "
+"Kompilieren vorhanden sind. Die beiden wichtigsten sind:"
+
+#. Tag: para
+#: installation.docbook:125
+#, no-c-format
+msgid ""
+"libofx, version 0.9.4 or higher, to be able to import financial data in the "
+"OFX format, and"
+msgstr ""
+"libofx, Version mindestens 0.9.4 für den Import von Daten im OFX-Format und"
+
+#. Tag: para
+#: installation.docbook:130
+#, no-c-format
+msgid ""
+"AqBanking, version 5.0.0 or higher, to be able to use certain on-line "
+"banking features. Note that version 5.0.14 or higher is strongly "
+"recommended, due to bugs in earlier versions."
+msgstr ""
+"AqBanking in Version 5.0.0 oder neuer,damit können bestimmte Funktionen des "
+"Online-Banking genutzt werden. Sie sollten unbedingt mindestens Version "
+"5.0.14 benutzen, da alle älteren Funktionen Fehler hatten."
+
+#. Tag: title
+#: installation.docbook:137
+#, no-c-format
+msgid "Build instructions"
+msgstr "Anleitung zum Kompilieren"
+
+#. Tag: para
+#: installation.docbook:138
+#, no-c-format
+msgid ""
+"&kappname; uses the cmake build system. Further information can be found in "
+"the README.cmake file in the root folder of the source. The basic steps are "
+"the following:"
+msgstr ""
+"&kappname; benutzt das CMake-System. Weitere Informationen finden Sie in der "
+"Datei README.cmake im obersten Ordner des Quelltextes. Folgende Schritte "
+"sind auszuführen:"
+
+#. Tag: command
+#: installation.docbook:145 installation.docbook:182
+#, no-c-format
+msgid "$ mkdir build"
+msgstr "$ mkdir build"
+
+#. Tag: command
+#: installation.docbook:146 installation.docbook:167 installation.docbook:183
+#, no-c-format
+msgid "$ cd build"
+msgstr "$ cd build"
+
+#. Tag: command
+#: installation.docbook:147 installation.docbook:184
+#, no-c-format
+msgid "$ cmake .. -DCMAKE_INSTALL_PREFIX=/usr/"
+msgstr "$ cmake .. -DCMAKE_INSTALL_PREFIX=/usr/"
+
+#. Tag: command
+#: installation.docbook:148 installation.docbook:168 installation.docbook:185
+#, no-c-format
+msgid "$ make"
+msgstr "$ make"
+
+#. Tag: command
+#: installation.docbook:149 installation.docbook:169 installation.docbook:186
+#, no-c-format
+msgid "$ sudo make install/fast"
+msgstr "$ sudo make install/fast"
+
+#. Tag: para
+#: installation.docbook:152
+#, no-c-format
+msgid ""
+"Note that the last step is required. &kappname; expects to find certain "
+"components in standard locations, and if you run it from within the build "
+"directory without the install step, you will have missing icons or other "
+"surprises."
+msgstr ""
+"Der letzte Befehl muss unbedingt ausgeführt werden. &kappname; sucht nach "
+"bestimmten Komponenten in Standardordnern. Starten Sie &kappname; vom "
+"Erstellungsordner („build“) ohne diesen Installationsschritt, werden Sie mit "
+"fehlenden Symbolen und anderen Überraschungen konfrontiert."
+
+#. Tag: para
+#: installation.docbook:159
+#, no-c-format
+msgid ""
+"If you have compiled the source from git, and want to update to the latest "
+"revision, most of the time you can do the following:"
+msgstr ""
+"Haben Sie das Programm aus dem Quelltext im Git-Archiv kompiliert und "
+"möchten zur neuesten Revision aktualisieren, sollten Sie folgenden Befehl "
+"eingeben:"
+
+#. Tag: command
+#: installation.docbook:165 installation.docbook:179
+#, no-c-format
+msgid "$ cd &lt;path to root of source&gt;"
+msgstr "$ cd &lt;pfad zum Basisordner des Quelltextes&gt;"
+
+#. Tag: command
+#: installation.docbook:166 installation.docbook:180
+#, no-c-format
+msgid "$ git pull --rebase"
+msgstr "$ git pull --rebase"
+
+#. Tag: para
+#: installation.docbook:172
+#, no-c-format
+msgid ""
+"However, changes made by the developers sometimes cause compile problems if "
+"you do not start with a clean code base. In these cases, you need to do the "
+"following:"
+msgstr ""
+"Manchmal lässt sich das Programm auf Grund von Änderungen der Entwickler "
+"nicht mehr ohne Probleme kompilieren, wenn Sie nicht mit einem bereinigten "
+"Quelltext starten. In diesen Fällen sollten Sie folgenden Befehl ausführen:"
+
+#. Tag: command
+#: installation.docbook:181
+#, no-c-format
+msgid "$ rm -r build"
+msgstr "$ rm -r build"
+
+#. Tag: title
+#: installation.docbook:192
+#, no-c-format
+msgid "Installing &kappname; without Linux"
+msgstr "&kappname; ohne Linux installieren"
+
+#. Tag: para
+#: installation.docbook:194
+#, no-c-format
+msgid ""
+"&kappname; has been successfully compiled for &MacOS; X, and is available at "
+"the <ulink url=\"http://www.macports.com\">MacPorts web site</ulink>."
+msgstr ""
+"&kappname; wurde erfolgreich für &MacOS; X kompiliert und kann von der "
+"<ulink url=\"http://www.macports.com\">MacPorts-Webseite</ulink> "
+"heruntergeladen werden."
+
+#. Tag: para
+#: installation.docbook:198
+#, no-c-format
+msgid ""
+"&kappname; is also available for &Windows;. This initiative is still a work "
+"in progress, but great improvements have been made in the past year. For "
+"more information about running &kde;, including &kappname; on &Windows; see "
+"the <ulink url=\"http://windows.kde.org\">KDE on Windows Initiative</ulink> "
+"page. For a standalone installer that only installs &kappname; see the "
+"download link on the right of the <ulink url=\"http://www.kmymoney.org"
+"\">&kappname; home page</ulink>. Note that the most recent version of this "
+"installer no longer works on &Windows; XP. At the time of this release, it "
+"was not known if this could be changed, as the issue was related to the "
+"tools used to build the application, not the application itself."
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:211
+#, no-c-format
+msgid ""
+"If you know of &kappname; being successfully compiled and made available for "
+"any other operating system, please let us know, so we can spread the word."
+msgstr ""
+"Ist Ihnen bekannt, dass &kappname; auf weiteren Betriebssystemen erfolgreich "
+"kompiliert wurde und verfügbar ist, teilen Sie uns das bitte mit, damit "
+"diese Information verbreitet werden kann."
+
+#~ msgid "2011-07-20"
+#~ msgstr "2011-07-20"
+
+#~ msgid "<releaseinfo>4.6</releaseinfo>"
+#~ msgstr "<releaseinfo>4.6</releaseinfo>"
+
+#~ msgid ""
+#~ "&kappname; is also reported to be available for &Windows;. This "
+#~ "initiative is still a work in progress, and more information can be found "
+#~ "at the <ulink url=\"http://windows.kde.org\">KDE on Windows Initiative</"
+#~ "ulink> page."
+#~ msgstr ""
+#~ "&kappname; ist auch für &Windows; verfügbar. Diese Portierung wird immer "
+#~ "noch weiterentwickelt und verbessert. Weitere Informationen finden Sie "
+#~ "auf der Webseite <ulink url=\"http://windows.kde.org\">KDE unter Windows</"
+#~ "ulink>."
+
+#~ msgid "$ svn update"
+#~ msgstr "$ git up"

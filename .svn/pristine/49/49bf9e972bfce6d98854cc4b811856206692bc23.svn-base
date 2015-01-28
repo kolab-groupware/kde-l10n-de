@@ -1,0 +1,206 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2010.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kjscmd_man-kjscmd.1\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:13+0000\n"
+"PO-Revision-Date: 2010-08-24 20:51+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdelibs/doc/kjscmd/man-kjscmd.1.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 878497\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: man-kjscmd.1.docbook:9
+#, no-c-format
+msgid "&kde; User's Manual"
+msgstr "&kde;-Benutzerhandbuch"
+
+#. Tag: author
+#: man-kjscmd.1.docbook:13
+#, no-c-format
+msgid "<firstname>Harri</firstname> <surname>Porten</surname>"
+msgstr "<firstname>Harri</firstname> <surname>Porten</surname>"
+
+#. Tag: email
+#: man-kjscmd.1.docbook:17
+#, no-c-format
+msgid "porten@kde.org"
+msgstr "porten@kde.org"
+
+#. Tag: date
+#: man-kjscmd.1.docbook:21
+#, no-c-format
+msgid "2008-10-16"
+msgstr "2008-10-16"
+
+#. Tag: releaseinfo
+#: man-kjscmd.1.docbook:22
+#, no-c-format
+msgid "0.01.01"
+msgstr "0.01.01"
+
+#. Tag: manvolnum
+#: man-kjscmd.1.docbook:28
+#, no-c-format
+msgid "<manvolnum>1</manvolnum>"
+msgstr "<manvolnum>1</manvolnum>"
+
+#. Tag: refpurpose
+#: man-kjscmd.1.docbook:33
+#, no-c-format
+msgid "&kde; KJSEmbed interpreter"
+msgstr "&kde;-KJSEmbed-Interpreter"
+
+#. Tag: title
+#: man-kjscmd.1.docbook:37
+#, no-c-format
+msgid "Synopsis"
+msgstr "Synopsis"
+
+#. Tag: cmdsynopsis
+#: man-kjscmd.1.docbook:39
+#, no-c-format
+msgid ""
+"<command>kjscmd</command> <arg choice=\"opt\">--help</arg> <group> <arg "
+"choice=\"opt\">-e</arg> <arg choice=\"opt\">--exec</arg> </group> <group> "
+"<arg choice=\"opt\">-i</arg> <arg choice=\"opt\">-interactive</arg> </group> "
+"<group> <arg choice=\"opt\">-n</arg> <arg choice=\"opt\">-no-kde</arg> </"
+"group> <arg choice=\"opt\">file</arg>"
+msgstr ""
+"<command>kjscmd</command> <arg choice=\"opt\">--help</arg> <group> <arg "
+"choice=\"opt\">-e</arg> <arg choice=\"opt\">--exec</arg> </group> <group> "
+"<arg choice=\"opt\">-i</arg> <arg choice=\"opt\">-interactive</arg> </group> "
+"<group> <arg choice=\"opt\">-n</arg> <arg choice=\"opt\">-no-kde</arg> </"
+"group> <arg choice=\"opt\">file</arg>"
+
+#. Tag: title
+#: man-kjscmd.1.docbook:65
+#, no-c-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. Tag: para
+#: man-kjscmd.1.docbook:67
+#, no-c-format
+msgid ""
+"<command>kjscmd</command> is a tool for launching KJSEmbed scripts from the "
+"command line. It will run the scripts contained in the named "
+"<parameter>file</parameter> using KJSEmbed. It does not accept - (stdin) as "
+"a <parameter>file</parameter>."
+msgstr ""
+"<command>kjscmd</command> ist ein Werkzeug zum Laden von KJSEmbed-Skripten "
+"von der Befehlszeile aus. Es wird das Skript in der angegebenen Datei "
+"<parameter>file</parameter> mit KJSEmbed ausführen. Die Standard-Eingabe "
+"(stdin) kann nicht als Skriptquelle anstelle von <parameter>file</parameter> "
+"verwendet werden."
+
+#. Tag: title
+#: man-kjscmd.1.docbook:149
+#, no-c-format
+msgid "Application Options"
+msgstr "Anwendungsoptionen"
+
+#. Tag: term
+#: man-kjscmd.1.docbook:153
+#, no-c-format
+msgid "<option>-e</option>,<option>--exec</option>"
+msgstr "<option>-e</option>,<option>--exec</option>"
+
+#. Tag: para
+#: man-kjscmd.1.docbook:155
+#, no-c-format
+msgid "execute script in <parameter>file</parameter> without gui support."
+msgstr ""
+"Führt das Skript in der Datei <parameter>file</parameter> ohne Unterstützung "
+"für eine grafische Oberfläche aus."
+
+#. Tag: term
+#: man-kjscmd.1.docbook:162
+#, no-c-format
+msgid "<option>-i</option>,<option>--interactive</option>"
+msgstr "<option>-i</option>,<option>--interactive</option>"
+
+#. Tag: para
+#: man-kjscmd.1.docbook:164
+#, no-c-format
+msgid "start interactive <command>kjs</command> interpreter."
+msgstr "Startet einen interaktiven <command>kjs</command>-Interpreter."
+
+#. Tag: term
+#: man-kjscmd.1.docbook:169
+#, no-c-format
+msgid "<option>-n</option>,<option>--no-kde</option>"
+msgstr "<option>-n</option>,<option>--no-kde</option>"
+
+#. Tag: para
+#: man-kjscmd.1.docbook:171
+#, no-c-format
+msgid "start without &kde; KApplication support."
+msgstr "Startet ohne Unterstützung für &kde;-KApplication."
+
+#. Tag: title
+#: man-kjscmd.1.docbook:181
+#, no-c-format
+msgid "Usage"
+msgstr "Benutzung"
+
+#. Tag: para
+#: man-kjscmd.1.docbook:182
+#, no-c-format
+msgid ""
+"The most common way to run <command>kjscmd</command> is simply as "
+"<literallayout>\n"
+"<userinput><command>kjscmd</command> <parameter>file</parameter>\n"
+"</userinput>\n"
+"</literallayout> If no parameter <parameter>file</parameter> is used, it "
+"executes a predefined test script that measures the start speed of "
+"<command>kjscmd</command>."
+msgstr ""
+"Der meistgenutzte Aufruf von <command>kjscmd</command> ist ganz einfach: "
+"<literallayout><userinput><command>kjscmd</command> <parameter>file</"
+"parameter></userinput></literallayout>. Falls der Parameter <parameter>file</"
+"parameter> weggelassen wird, wird ein vorgefertigtes Testskript ausgeführt, "
+"welches die Startgeschwindigkeit von <command>kjscmd</command> misst."
+
+#. Tag: title
+#: man-kjscmd.1.docbook:191
+#, no-c-format
+msgid "See Also"
+msgstr "Siehe auch"
+
+#. Tag: para
+#: man-kjscmd.1.docbook:192
+#, no-c-format
+msgid "<replaceable>kjs</replaceable>(1)"
+msgstr "<replaceable>kjs</replaceable>(1)"
+
+#. Tag: title
+#: man-kjscmd.1.docbook:196
+#, no-c-format
+msgid "Bugs"
+msgstr "Fehler"
+
+#. Tag: para
+#: man-kjscmd.1.docbook:197
+#, no-c-format
+msgid ""
+"There are probably tons of bugs. Use <ulink url=\"http://bugs.kde.org\">bugs."
+"kde.org</ulink> to report them."
+msgstr ""
+"Berichten Sie Fehler auf <ulink url=\"http://bugs.kde.org\">bugs.kde.org</"
+"ulink>."
+
+#~ msgid "kjscmd"
+#~ msgstr "kjscmd"
+
+#~ msgid "<date>2008-10-16</date> <releaseinfo>0.01.01</releaseinfo>"
+#~ msgstr "<date>16.10.2008</date> <releaseinfo>0.01.01</releaseinfo>"

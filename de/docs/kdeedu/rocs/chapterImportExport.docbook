@@ -1,0 +1,133 @@
+<chapter id="import-export">
+<title
+>Import und Export</title>
+<sect1 id="import-export-projects">
+    <title
+>&rocs;-Projekte austauschen</title>
+    <para
+>&rocs;-Projekte können als Archivdateien im Format <literal
+>.tar.gz</literal
+> importiert und exportiert werden. Diese Archive können zum Austausch von Projekten benutzt werden. Der Import und Export erfolgt mit <menuchoice
+><guimenu
+>Graphendokument</guimenu
+> <guimenuitem
+>Graphen importieren</guimenuitem
+></menuchoice
+> beziehungsweise <menuchoice
+><guimenu
+>Graphendokument</guimenu
+> <guimenuitem
+>Graphen exportieren unter ...</guimenuitem
+></menuchoice
+> </para>
+</sect1>
+
+<sect1 id="import-export-graphs">
+    <title
+>Import und Export von Graphendokumenten</title>
+    <para
+>&rocs; unterstützt zurzeit den Import und Export folgender Dateiformate:</para>
+    <itemizedlist>
+        <listitem
+><para
+>DOT-Dateien, auch als Graphviz-Dateien bekannt.</para
+></listitem>
+        <listitem
+><para
+>GML-Dateien</para
+></listitem>
+        <listitem
+><para
+>„Trivial Graph“-Dateien</para
+></listitem>
+        <listitem
+><para
+>Keyhole-Markup-Sprachformat</para
+></listitem>
+    </itemizedlist>
+
+<sect2 id="format-specification-tgf">
+<title
+>„Trivial Graph“-Dateiformat</title>
+<para
+>Das <emphasis
+>„Trivial Graph“-Format</emphasis
+> (TGF) ist ein einfaches textbasiertes Dateiformat zur Beschreibung von Graphen. Eine TGF-Datei besteht aus einer Liste von Knotendefinitionen mit der Zuordnung von Kennungen zu Beschriftungen, gefolgt von einer Liste von Kanten. In diesem Format kann es nur eine Beschriftung für einen Knoten und einen Wert für eine Kante geben. &rocs; interpretiert importierte Graphen als ungerichtet. Exportierte Graphen enthalten zwei Kanten für jede zweiseitige Verbindung. </para>
+
+<sect3>
+<title
+>Beschreibung des Formats</title>
+    <itemizedlist>
+        <listitem
+><para
+>Die Datei beginnt mit einer Liste der Knoten, jeder Knoten auf einer einzelnen Zeile. Dann folgt eine Zeile nur mit dem Zeichen  „#“, gefolgt von einer Liste von Kanten in einer eigenen Zeile.</para
+></listitem>
+        <listitem
+><para
+>Ein Knoten wird durch eine ganze Zahl als Kennung, dann ein Leerzeichen und ein beliebiger Text beschrieben.</para
+></listitem>
+        <listitem
+><para
+>Die Beschreibung einer Kante besteht aus zwei ganzen Zahlen (Kennungen von Knoten), durch Leerzeichen getrennt, dann folgt nach einem Leerzeichen ein beliebiger Text. Es wird angenommen, dass die gerichtete Kante von der ersten zur zweiten Kennung zeigt.</para
+></listitem>
+    </itemizedlist>
+</sect3>
+<sect3>
+<title
+>Beispiel</title>
+<programlisting
+>1 starting node
+2 transmitter
+3 sink
+#
+1 2 blue
+2 1 red
+2 3 green
+</programlisting>
+</sect3>
+</sect2>
+
+<sect2 id="format-specification-dot">
+<title
+>DOT-Sprache / Graphviz.Graphendateiformat</title>
+<para
+>„DOT“ ist eine Beschreibungssprache für Graphen, die ein einfaches Textformat verwendet. Damit ist die Darstellung von Graphen für den Benutzer gut lesbar und sie kann effizient durch Anzeigeprogramme für Graphen verarbeitet werden. „DOT“ ist das Standardformat für das Visualisierungsprogramm Graphviz, wird aber auch häufig von anderen Graphenprogrammen verwendet. „DOT“-Dateien haben üblicherweise die Erweiterung <emphasis
+>.gv</emphasis
+> und <emphasis
+>.dot</emphasis
+>. </para>
+
+<sect3>
+<title
+>Nicht unterstützte Fähigkeiten</title>
+<para
+>&rocs; kann jede Graphendatei einlesen und verarbeiten, die in der Sprache „DOT“<footnote
+><para
+>http://www.graphviz.org/content/dot-language</para
+></footnote
+> spezifizierte Graphen enthält. Die Funktionen der Sprache werden vollständig mit folgenden AUsnahmen unterstützt: </para>
+    <itemizedlist>
+        <listitem
+><para
+>Untergraph: Wegen des fehlenden Konzepts für Untergraphen in &rocs; werden Untergraphen nur als Menge von Datenelementen und Verbindungen importiert. Besonders Verbindungen zu oder von Untergraphen werden nicht importiert.</para
+></listitem>
+        <listitem
+><para
+>&HTML; und &XML; Attribute: Attribute wie Beschriftungen mit &HTML;- oder &XML;-Syntax werden unverändert eingelesen. Insbesondere werden keine Anpassungen für Schriften und Stile aus diesen Attributen eingelesen.</para
+></listitem>
+    </itemizedlist>
+</sect3>
+<sect3>
+<title
+>Beispiel</title>
+<programlisting
+>digraph myGraph {
+    a -> b -> c;
+    b -> d;
+}
+</programlisting>
+</sect3>
+</sect2>
+
+</sect1>
+</chapter>

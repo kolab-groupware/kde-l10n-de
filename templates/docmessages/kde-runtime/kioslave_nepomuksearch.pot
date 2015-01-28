@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: index.docbook:10
+#, no-c-format
+msgid "nepomuksearch"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:13
+#, no-c-format
+msgid ""
+"<personname> <firstname>Sebastian</firstname> <surname>Tr&uuml;g</surname> "
+"</personname> <email>trueg@kde.org</email>"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:20
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+
+#. Tag: date
+#: index.docbook:23
+#, no-c-format
+msgid "2010-09-10"
+msgstr ""
+
+#. Tag: releaseinfo
+#: index.docbook:24
+#, no-c-format
+msgid "1.0.0"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:28
+#, no-c-format
+msgid "Overview"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:30
+#, no-c-format
+msgid ""
+"The <acronym>nepomuksearch</acronym> protocol allows to search the Nepomuk meta "
+"data store for files or any other type of resource (although files is the most "
+"important use case since we are talking about virtual file systems here)."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:32
+#, no-c-format
+msgid ""
+"For it to work the Nepomuk system needs to be activated. Activating the Strigi "
+"file indexer provides better results and way more search possibilities."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:35
+#, no-c-format
+msgid ""
+"Typically <acronym>nepomuksearch</acronym> is used transparently to the user "
+"through an application like <application>Dolphin</application> "
+"which provide GUI elements to construct the necessary query and the "
+"corresponding URL. However, it is also possible to write a query URL manually. "
+"There are two different possibilities which might be of interest to the user "
+"(be aware that queries created as presented below are not restricted to files):"
+msgstr ""
+
+#. Tag: userinput
+#: index.docbook:39
+#, no-c-format
+msgid "nepomuksearch:/?query=Nepomuk"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:42
+#, no-c-format
+msgid ""
+"will look for anything containing the word \"Nepomuk\". \"Nepomuk\" can be "
+"replaced with anything the simple <xref linkend=\"query_syntax\"/> allows."
+msgstr ""
+
+#. Tag: userinput
+#: index.docbook:47
+#, no-c-format
+msgid ""
+"nepomuksearch:/?sparql=select ?r where { ?r nao:hasTag ?tag . ?tag "
+"nao:prefLabel 'Nepomuk'^^xsd:string . }"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:50
+#, no-c-format
+msgid ""
+"will execute the <acronym>SPARQL</acronym> query which in this case looks for "
+"all resources that are tagged with a tag that has the label \"Nepomuk\". Be "
+"aware that the query needs to be percent-encoded, &ie; a URI like <userinput>"
+"&lt;http://www.semanticdesktop.org/ontologies/2007/08/15/nao#Tag&gt;</userinput> "
+"would have to be written as "
+"<userinput>%3chttp:%2f%2fwww.semanticdesktop.org%2fontologies%2f2007%2f08%2f15%2"
+"fnao#Tag%3e</userinput>."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:58
+#, no-c-format
+msgid "Nepomuk Query Syntax"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:59
+#, no-c-format
+msgid ""
+"The syntax is fairly simple. Multiple query terms can be combined with the "
+"keywords <command>AND</command> or <command>OR</command>"
+", terms can be excluded by prefixing them with a minus, and specific properties "
+"can be searched by combining the property name with a comparator and the value."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:61
+#, no-c-format
+msgid ""
+"This syntax can also be used in standard search fields such as the <application>"
+"Dolphin</application> one."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:64
+#, no-c-format
+msgid "Examples"
+msgstr ""
+
+#. Tag: term
+#: index.docbook:67
+#, no-c-format
+msgid ""
+"<userinput>Nepomuk KDE</userinput> or <userinput>Nepomuk AND KDE</userinput>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:71
+#, no-c-format
+msgid ""
+"search for everything containing the words \"Nepomuk\" and \"KDE\" in any of "
+"their properties (this includes the content of files)."
+msgstr ""
+
+#. Tag: userinput
+#: index.docbook:76
+#, no-c-format
+msgid "Nepomuk OR KDE"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:79
+#, no-c-format
+msgid ""
+"search for everything containing either the word \"Nepomuk\" or the word "
+"\"KDE\" in any of their properties."
+msgstr ""
+
+#. Tag: userinput
+#: index.docbook:84
+#, no-c-format
+msgid "\"Nepomuk KDE\""
+msgstr ""
+
+#. Tag: para
+#: index.docbook:87
+#, no-c-format
+msgid ""
+"search for everything containing the exact phrase \"Nepomuk KDE\" in any of "
+"their properties."
+msgstr ""
+
+#. Tag: userinput
+#: index.docbook:92
+#, no-c-format
+msgid "hastag:Nepomuk"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:95
+#, no-c-format
+msgid "search for everything that is tagged with a tag named \"Nepomuk\"."
+msgstr ""
+
+#. Tag: userinput
+#: index.docbook:100
+#, no-c-format
+msgid "+hastag:nepomuk AND -hastag:scribo"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:103
+#, no-c-format
+msgid ""
+"search for everything that has a tag labeled \"nepomuk\" but not a tag labeled "
+"\"scribo\"."
+msgstr ""

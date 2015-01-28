@@ -1,0 +1,444 @@
+<chapter id="using-kmplot">
+<title
+>Arbeiten mit &kmplot;</title>
+
+<para
+>In &kmplot; können Sie mit unterschiedliche Arten von Funktionen benutzen, dabei können Sie sie als Funktion oder als Ausdruck eingeben.</para>
+
+<itemizedlist>
+	<listitem
+><para
+>Kartesische Funktionen können Sie entweder als &eg; <quote
+>y = x^2</quote
+>, dabei muss x als Name der Variable benutzt werden, oder als &eg; <quote
+>f(a) = a^2</quote
+> eingeben, dabei können Sie einen beliebigen Namen für die Variable verwenden.</para
+></listitem>
+	<listitem
+><para
+>In parametrischen Funktionen werden die x- und y-Koordinaten als Ausdrücke von t, &eg; <quote
+>x = sin(t)</quote
+>, <quote
+>y = cos(t)</quote
+> oder als Funktionen wie &eg; <quote
+>f_x(s) = sin(s)</quote
+>, <quote
+>f_y(s) = cos(s)</quote
+> eingegeben.</para
+></listitem>
+	<listitem
+><para
+>Polare Funktionen können entweder als Ausdrücke von &thgr;, &eg; <quote
+>r = &thgr;</quote
+> oder als Funktionen wie &eg; <quote
+>f(x) = x</quote
+> eingegeben werden.</para
+></listitem>
+	<listitem
+><para
+>Bei impliziten Funktionen kann der Name der Funktion getrennt von dem Ausdruck für die x- und y-Koordinaten eingegeben werden. Wenn die Variablen x und y über den Funktionsnamen festgelegt werden (&eg; mit <quote
+>f(a,b)</quote
+> als Name der Funktion), dann werden diese Variablen a und b verwendet. Ansonsten werden die Buchstaben x und y für die Variablen benutzt.</para
+></listitem>
+	<listitem
+><para
+>Explizite Differentialfunktionen werden durch Differentialgleichungen beschrieben, in denen die höchste Ableitung als Ausdruck der niedrigeren Ableitungen angegeben wird. Die Ableitung wird durch das Zeichen <keycap
+>'</keycap
+> gekennzeichnet. Als Funktionsform lautet die Gleichung zum Beispiel <quote
+>f''(x) = f' &minus; f</quote
+>, als Gleichungsform <quote
+>y'' = y' &minus; y</quote
+>. In beiden Fällen wird <quote
+>(x)</quote
+> nicht in den niedrigeren Ableitungen eingefügt. Die richtige Schreibweise ist also <quote
+>f'(x) = &minus;f</quote
+> und nicht <quote
+>f'(x) = &minus;f(x)</quote
+>).</para
+></listitem>
+</itemizedlist>
+
+<para
+>Die Eingabefelder der Funktionen haben rechts einen Knopf. Damit öffnen Sie den <guilabel
+>Gleichungseditor</guilabel
+>, der folgende Funktionen bietet: <itemizedlist>
+		<listitem>
+			<para
+>Eingabe vieler mathematischer Symbole, die nicht auf der normalen Tastatur vorhanden sind, in Funktionsgleichungen.</para>
+		</listitem>
+		<listitem>
+			<para
+>Eingabe benutzerdefinierter Konstanten und die Möglichkeit zur Bearbeitung dieser Konstanten.</para>
+		</listitem>
+		<listitem>
+			<para
+>Eine Liste vordefinierter Funktionen. Wenn Sie bereits Text markiert haben, wird dieser Text als Argument benutzt, wenn Sie eine Funktion einfügen. Ist zum Beispiel <quote
+>1 + x</quote
+> in der Gleichung <quote
+>y = 1 + x</quote
+> markiert und Sie wählen die Sinusfunktion, erstellen Sie damit die Gleichung <quote
+> y = sin(1+x)</quote
+>. </para>
+		</listitem>
+	</itemizedlist>
+</para>
+
+<screenshot>
+	<screeninfo
+>Hier ist ein Bildschirmfoto von &kmplot; beim Start</screeninfo>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="main.png" format="PNG"/>
+		</imageobject>
+		<textobject>
+			<phrase
+>Bildschirmfoto</phrase>
+		</textobject>
+	</mediaobject>
+</screenshot>
+
+<sect1 id="function-types">
+	<title
+>Funktionstypen</title>
+	
+	<sect2 id="cartesian-functions">
+		<title
+>Kartesische Funktionen</title>
+		<para
+>Eine explizite Funktion (&ie; eine Funktion in der Form y=f(x)), können Sie in &kmplot; auf folgende Art eingeben: <screen
+><userinput
+><replaceable
+>f</replaceable
+>(<replaceable
+>x</replaceable
+>)=<replaceable
+>Ausdruck</replaceable
+></userinput
+></screen
+> Dabei ist: <itemizedlist>
+				<listitem
+><para
+><replaceable
+>f</replaceable
+> der Name der Funktion und kann aus jeder Kombination von Buchstaben und Zahlen bestehen.</para>
+				</listitem>
+				
+				<listitem
+><para
+><replaceable
+>x</replaceable
+> die waagerechte Koordinate, die im Ausdruck benutzt wird, der nach dem Gleichheitszeichen folgt. Das ist ein Platzhalter, also können Sie jeden beliebigen Namen verwenden, das Ergebnis ist das Gleiche.</para>
+				</listitem>
+				
+				<listitem>
+					<para
+><replaceable
+>Ausdruck</replaceable
+> ist der Ausdruck, der gezeichnet werden soll, in der von &kmplot; geforderten Schreibweise. Siehe dazu <xref linkend="math-syntax"/>. </para>
+				</listitem>
+				
+			</itemizedlist>
+		</para>
+	</sect2>
+	
+	<sect2 id="parametric-functions">
+		<title
+>Parametrische Funktionen</title>
+		<para
+>In parametrischen Funktionen werden die x- und y-Koordinaten über unabhängige Funktionen einer anderen Variable, oft t genannt, definiert. Um eine parametrische Funktion in &kmplot; zu zeichnen, geben Sie die x- und y-Funktion als kartesische Funktionen ein. Auch hier können Sie einen beliebigen Variablennamen für die Parameter verwenden.</para>
+		<para
+>Angenommen, Sie möchten eine Kreis mit dem parametrischen Ausdruck x = sin(t), y = cos(t) zeichnen. Wählen Sie dazu Parametrische Zeichnung und geben Sie die passenden Ausdrücke in das x- und y-Eingabefeld ein, &ie; <userinput
+>f_x(t)=sin(t)</userinput
+> and <userinput
+>f_y(t)=cos(t)</userinput
+>. </para>
+		<para
+>Sie können noch weitere Optionen für die Zeichnung im Funktionen-Editor einstellen: <variablelist
+> <varlistentry>
+					<term
+><guilabel
+>Min</guilabel
+></term>
+					<term
+><guilabel
+>Max</guilabel
+></term>
+					<listitem>
+						<para
+>Diese Einstellungen geben den Wertebereich des Parameters t an, für den die Funktion gezeichnet wird.</para>
+					</listitem>
+				</varlistentry>
+			</variablelist>
+		</para>
+	</sect2>
+	
+	<sect2 id="polar-functions">
+		<title
+>Funktionen in Polarkoordinaten</title>
+		
+		<para
+>Polarkoordinaten bestimmen einen Punkt durch den Abstand vom Ursprung (üblicherweise r genannt) und durch den Winkel einer Linie vom Ursprung durch den Punkt zur waagerechten Achse (üblicherweise mit dem griechischen Buchstaben &thgr; bezeichnet). Funktionen in polaren Koordinaten erzeugen Sie, indem Sie auf <guilabel
+>Erstellen</guilabel
+> klicken und <guilabel
+>Polare Zeichnung</guilabel
+> wählen. Im Eingabefeld geben Sie die Definition der Funktion mit dem Namen der theta-Variablen ein. Um &eg; die Spirale des Archimedes r = &thgr; zu zeichnen, geben Sie ein: <screen
+><userinput
+>r(&thgr;) = &thgr;</userinput
+></screen
+>. Sie können jeden beliebigen Namen als theta-Variable verwenden, daher ergibt <quote
+>r(t) = t</quote
+> oder <quote
+>f(x) = x</quote
+> die gleiche Zeichnung. </para>
+	</sect2>
+	
+	<sect2 id="implicit-functions">
+		<title
+>Implizite Funktionen</title>
+		
+		<para
+>Ein impliziter Ausdruck gibt die Beziehung zwischen x- und y-Koordinaten als Gleichung an. Um zum Beispiel einen Kreis zu zeichnen, klicken Sie auf den Knopf <guilabel
+>Erstellen</guilabel
+> und wählen <guilabel
+>Implizite Zeichnung</guilabel
+> aus der Liste. Tragen Sie dann im Gleichungsfeld unter dem Funktionsnamen folgendes ein: <screen
+><userinput
+>x^2 + y^2 = 25</userinput
+></screen>
+		</para>
+	</sect2>
+	
+	<sect2 id="differential-functions">
+		<title
+>Differentielle Funktionen</title>
+		
+		<para
+>&kmplot; kann explizite Differentialgleichungen darstellen. Dies sind Gleichungen in der Form y<superscript
+>(n)</superscript
+> = F(x,y',y'',...,y<superscript
+>(n&minus;1)</superscript
+>), dabei ist y<superscript
+>n</superscript
+> die n-<superscript
+>te</superscript
+> Ableitung von y(x). Die Ordnung der Ableitung wird aus der Anzahl der <keycap
+>'</keycap
+> nach der Funktionsbezeichnung bestimmt. Um zum Beispiel eine sinusförmige Kurve zu zeichnen, geben Sie als Differentialgleichung <userinput
+>y'' = &minus; y</userinput
+> oder <userinput
+>f''(x) = −f</userinput
+> ein. </para>
+		
+		<para
+>Jedoch nur die Differentialgleichung allein ist noch nicht ausreichend für die Erstellung der Zeichnung. Jede Kurve im Diagramm wird durch die Differentialgleichung und die Startbedingung festgelegt. Wenn eine Differentialgleichung ausgewählt ist, können Sie die Startbedingung auf der gleichnamigen Karteikarte eingeben. Die Anzahl der Spalten für die Eingabe der Startbedingungen wird durch die Ordnung der Differentialgleichung bestimmt. </para>
+		
+		<para
+>Sie können noch weitere Optionen für die Zeichnung im Funktionen-Editor einstellen: <variablelist
+> <varlistentry>
+					<term
+><guilabel
+>Schritt</guilabel
+></term>
+					<listitem>
+						<para
+>Die Schrittweite im Feld Genauigkeit wird zur numerischen Lösung der Differentialgleichung mit der Runge-Kutta-Methode benutzt. Der Wert bestimmt die maximale Schrittweite, bei Vergrößerung der Zeichnung wird mit einer kleineren Schrittweite gerechnet.</para>
+					</listitem>
+				</varlistentry>
+			</variablelist>
+		</para>
+		
+	</sect2>
+</sect1>
+
+<sect1 id="combining-functions">
+	<title
+>Funktionskombinationen</title>
+	<para
+>Funktionen können zu neuen Funktionen kombiniert werden. Geben Sie einfach die Funktionen nach dem Gleichheitszeichen ein, als ob sie Variable wären. Wenn Sie zum Beispiel die Funktionen f(x) und g(x) definiert haben, können Sie die Summe von f und g zeichnen lassen mit: <screen
+><userinput
+>sum(x) = f(x) + g(x)</userinput
+></screen>
+	</para>
+</sect1>
+
+<sect1 id="function-appearance">
+	<title
+>Das Aussehen von Funktionen verändern</title>
+	
+	<para
+>Um das Aussehen des Graphen der Funktion im Hauptfenster zu ändern, wählen Sie die Funktion im Bereich <guilabel
+>Funktionen</guilabel
+> aus. Klicken auf den Knopf <guibutton
+>Farbe</guibutton
+> oder unten in Abschnitt <guilabel
+>Erscheinungsbild</guilabel
+> auf <guibutton
+>Erweitert ...</guibutton
+>, um die Linienbreite, die Farbe der Linie und weitere Einstellungen zu verändern.  </para>
+	
+	<para
+>Wenn Sie eine kartesische Funktion bearbeiten, werden drei Karteikarten angezeigt. Auf der ersten Karte geben Sie den Ausdruck der Funktion ein. Auf der Karte <guilabel
+>Ableitungen</guilabel
+> können Sie ankreuzen, ob die erste und zweite Ableitung der Funktion gezeichnet werden soll. Und auf der Karte <guilabel
+>Integral</guilabel
+> können Sie auswählen, ob das Integral der Funktion auch gezeichnet werden soll. </para>
+</sect1>
+
+<sect1 id="popupmenu">
+	<title
+>Kontextmenü</title>
+	<screenshot>
+	<screeninfo
+>Kontextmenü des Graphen</screeninfo>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="popup.png" format="PNG"/>
+		</imageobject>
+		<textobject>
+			<phrase
+>Kontextmenü des Graphen</phrase>
+		</textobject>
+	</mediaobject>
+	</screenshot>
+
+	<para
+>Mit einem rechten Mausklick auf eine Zeichnungsfunktion oder eine parametrische Einzelpunkt-Funktion öffnen Sie ein Kontextmenü mit folgenden Einträgen:</para>
+	
+	<variablelist>
+		<varlistentry>
+			<term
+><menuchoice
+><guimenuitem
+>Bearbeiten</guimenuitem>
+				</menuchoice
+></term>
+			<listitem>
+				<para
+>Wählt die Funktion zur Bearbeitung im Bereich <guilabel
+>Funktionen</guilabel
+> aus.</para>
+			</listitem>
+		</varlistentry>
+
+		<varlistentry>
+			<term
+><menuchoice
+><guimenuitem
+>Ausblenden</guimenuitem>
+				</menuchoice
+></term>
+			<listitem>
+				<para
+>Blendet den gewählten Graphen aus. Andere Graphen der Funktion werden weiter angezeigt. </para>
+			</listitem>
+		</varlistentry>
+		
+		<varlistentry>
+			<term
+><menuchoice
+><guimenuitem
+>Entfernen</guimenuitem>
+				</menuchoice
+></term>
+			<listitem>
+				<para
+>Entfernt die Funktion und alle ihre Graphen in der Zeichnung.</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term
+><menuchoice
+><guimenuitem
+>Zeichnung animieren ...</guimenuitem>
+				</menuchoice
+></term>
+			<listitem>
+				<para
+>Öffnet den Dialog <guilabel
+>Parameteranimation</guilabel
+>.</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term
+><menuchoice
+><guimenuitem
+>Rechner</guimenuitem>
+				</menuchoice
+></term>
+			<listitem>
+				<para
+>Öffnet den Dialog <guilabel
+>Rechner</guilabel
+>.</para>
+			</listitem>
+		</varlistentry>
+	</variablelist>
+	
+	<para
+>Für die unterschiedlichen Funktionstypen gibt es noch vier weitere Einträge:</para>
+	
+	<variablelist>
+		<varlistentry>
+			<term
+><menuchoice
+><guimenuitem
+>Fläche zeichnen ...</guimenuitem>
+				</menuchoice
+></term>
+			<listitem>
+				<para
+>Wählen Sie die minimalen und maximalen waagerechten Werte für den Graphen. Dann wird das Integral berechnet und die Fläche zwischen dem Graphen und der waagerechten Achse im gewählten Intervall wird in der Farbe des Graphen gezeichnet. </para>
+			</listitem>
+		</varlistentry>
+		
+		<varlistentry>
+			<term
+><menuchoice
+><guimenuitem
+>Minimumpunkt suchen ...</guimenuitem>
+				</menuchoice
+></term>
+			<listitem>
+				<para
+>Sucht den minimalen Wert des Graphen im angegebenen Bereich. Der gewählte Graph wird im angezeigten Dialog hervorgehoben. Geben Sie den unteren und oberen Grenzwert für den Bereich der Suche nach dem Minimum ein. </para>
+				<para
+>Hinweis: Im Dialog <guilabel
+>Erscheinungsbild der Zeichnung</guilabel
+> können Sie einstellen, dass die Extremwerte eines Graphen markiert werden. Diesen Dialog öffnen Sie mit dem Knopf <guibutton
+>Erweitert ..</guibutton
+> in der Seitenleiste <guilabel
+>Funktionen</guilabel
+>. </para>
+			</listitem>
+		</varlistentry>
+		
+		<varlistentry>
+			<term
+><menuchoice
+><guimenuitem
+>Maximumpunkt suchen ...</guimenuitem>
+				</menuchoice
+></term>
+			<listitem>
+				<para
+>Wie <guimenuitem
+>Minimumpunkt suchen ...</guimenuitem
+> weiter oben, aber es wird das Maximum, nicht das Minimum gesucht.</para>
+			</listitem>
+		</varlistentry>
+		
+	</variablelist>
+</sect1>
+
+</chapter>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+sgml-parent-document:("index.docbook" "BOOK" "CHAPTER")
+End:
+-->

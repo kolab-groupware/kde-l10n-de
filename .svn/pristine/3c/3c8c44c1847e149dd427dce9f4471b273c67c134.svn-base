@@ -1,0 +1,425 @@
+# Thomas Diehl <thd@kde.org>, 2004.
+# Stephan Johach <hunsum@gmx.de>, 2004.
+# Matthias Kalle Dalheimer <kalle@kdab.net>, 2004.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2007, 2008, 2009.
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2010, 2012, 2013.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2013.
+# Torbjörn Klatt <torbjoern.k@googlemail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: messageviewer_text_calendar_plugin\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-10-31 01:33+0000\n"
+"PO-Revision-Date: 2013-03-16 15:32+0100\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: attendeeselector.cpp:32
+msgid "Select Attendees"
+msgstr "Teilnehmer auswählen"
+
+#: attendeeselector.cpp:42
+msgid "Click to add a new attendee"
+msgstr "Klicken Sie, um einen neuen Teilnehmer hinzuzufügen"
+
+#. i18n: ectx: property (text), widget (KPushButton, addButton)
+#: attendeeselector.ui:24
+msgid "Add"
+msgstr "Hinzufügen"
+
+#. i18n: ectx: property (text), widget (KPushButton, removeButton)
+#: attendeeselector.ui:37
+msgid "Remove"
+msgstr "Entfernen"
+
+#: delegateselector.cpp:35
+msgid "Select delegate"
+msgstr "Empfänger wählen"
+
+#: delegateselector.cpp:42
+msgid "Delegate:"
+msgstr "Delegieren:"
+
+#: delegateselector.cpp:45
+msgid "Keep me informed about status changes of this incidence."
+msgstr "Ich möchte über Status-Änderungen des Ereignisses informiert werden."
+
+#: text_calendar.cpp:421
+#, kde-format
+msgid "No attachment named \"%1\" found in the invitation."
+msgstr "In der Einladung befindet sich kein Anhang namens „%1“."
+
+#: text_calendar.cpp:429
+#, kde-format
+msgid ""
+"The invitation attachment \"%1\" is a web link that is inaccessible from "
+"this computer. Please ask the event organizer to resend the invitation with "
+"this attachment stored inline instead of a link."
+msgstr ""
+"Bei dem Anhang „%1“ in der Einladung handelt es sich um eine Internet-"
+"Verknüpfung, die von diesem Rechner aus nicht aufgerufen werden kann. Bitten "
+"Sie den Absender darum, die Einladung erneut zu senden und den Anhang in die "
+"Einladung einzubinden anstatt eine Verknüpfung anzuhängen."
+
+#: text_calendar.cpp:483
+msgid ""
+"<qt>None of your identities match the receiver of this message,<br/>please "
+"choose which of the following addresses is yours, if any, or select one of "
+"your identities to use in the reply:</qt>"
+msgstr ""
+"<qt>Keine Ihrer Identitäten kann dem Empfänger dieser Nachricht zugeordnet "
+"werden,<br />bitte wählen Sie aus den folgenden Adressen Ihre eigene aus "
+"(falls vorhanden) bzw. entscheiden Sie sich für eine Identität, die für die "
+"Antwort verwendet werden soll:</qt>"
+
+#: text_calendar.cpp:489
+msgid ""
+"<qt>Several of your identities match the receiver of this message,<br/"
+">please choose which of the following addresses is yours:</qt>"
+msgstr ""
+"<qt>Zu dem Empfänger dieser Nachricht passen mehrere Ihrer Identitäten,<br/"
+">bitte wählen Sie aus den folgenden Adressen Ihre eigene aus:</qt>"
+
+#: text_calendar.cpp:504
+msgid "Select Address"
+msgstr "Adresse auswählen"
+
+#: text_calendar.cpp:565
+msgid "Answer: "
+msgstr "Antwort: "
+
+#: text_calendar.cpp:568
+#, kde-format
+msgctxt "Not able to attend."
+msgid "Declined: %1"
+msgstr "Abgelehnt: %1"
+
+#: text_calendar.cpp:571
+#, kde-format
+msgctxt "Unsure if it is possible to attend."
+msgid "Tentative: %1"
+msgstr "Vorläufig: %1"
+
+#: text_calendar.cpp:574
+#, kde-format
+msgctxt "Accepted the invitation."
+msgid "Accepted: %1"
+msgstr "Akzeptiert: %1"
+
+#: text_calendar.cpp:723
+msgid "Incidence with no summary"
+msgstr "Ereignis ohne Zusammenfassung"
+
+#: text_calendar.cpp:728
+#, kde-format
+msgid "Answer: %1"
+msgstr "Antwort: %1"
+
+#: text_calendar.cpp:731
+#, kde-format
+msgid "Delegated: %1"
+msgstr "Delegiert: %1"
+
+#: text_calendar.cpp:734
+#, kde-format
+msgid "Forwarded: %1"
+msgstr "Weitergeleitet: %1"
+
+#: text_calendar.cpp:737
+#, kde-format
+msgid "Declined Counter Proposal: %1"
+msgstr "Gegenvorschlag abgelehnt: %1"
+
+#: text_calendar.cpp:788 text_calendar.cpp:794
+#, kde-format
+msgid "\"%1\" occurred already."
+msgstr "„%1“ ist bereits eingetreten."
+
+#: text_calendar.cpp:790 text_calendar.cpp:808
+#, kde-format
+msgid "\"%1\" is currently in-progress."
+msgstr "„%1“ ist im Gange."
+
+#: text_calendar.cpp:796
+#, kde-format
+msgid "\"%1\", happening all day today, is currently in-progress."
+msgstr "„%1“, heute und ganztägig, ist im Gange."
+
+#: text_calendar.cpp:806 text_calendar.cpp:818
+#, kde-format
+msgid "\"%1\" is past due."
+msgstr "„%1“ ist überfällig."
+
+#: text_calendar.cpp:812
+#, kde-format
+msgid "\"%1\" has already started."
+msgstr "„%1“ hat bereits angefangen."
+
+#: text_calendar.cpp:821
+#, kde-format
+msgid "\"%1\", happening all-day today, is currently in-progress."
+msgstr "„%1“, heute und ganztägig, ist im Gange."
+
+#: text_calendar.cpp:826
+#, kde-format
+msgid "\"%1\", happening all day, has already started."
+msgstr "„%1“, heute und ganztägig, hat bereits angefangen."
+
+#: text_calendar.cpp:836
+msgid "Do you still want to accept the task?"
+msgstr "Möchten Sie die Aufgabe dennoch annehmen?"
+
+#: text_calendar.cpp:838
+msgid "Do you still want to accept the invitation?"
+msgstr "Möchten Sie die Einladung dennoch annehmen?"
+
+#: text_calendar.cpp:843
+msgid "Do you still want to send conditional acceptance of the invitation?"
+msgstr "Möchten Sie die bedingte Annahme der Einladung dennoch senden?"
+
+#: text_calendar.cpp:845
+msgid "Do you still want to send conditional acceptance of the task?"
+msgstr "Möchten Sie die bedingte Annahme der Aufgabe dennoch senden?"
+
+#: text_calendar.cpp:848
+msgid "Do you still want to accept the counter proposal?"
+msgstr "Möchten Sie den Gegenvorschlag dennoch annehmen?"
+
+#: text_calendar.cpp:850
+msgid "Do you still want to send a counter proposal?"
+msgstr "Möchten Sie den Gegenvorschlag dennoch senden?"
+
+#: text_calendar.cpp:852
+msgid "Do you still want to send a decline response?"
+msgstr "Möchten Sie die Absage dennoch senden?"
+
+#: text_calendar.cpp:854
+msgid "Do you still want to decline the counter proposal?"
+msgstr "Möchten Sie den Gegenvorschlag dennoch ablehnen?"
+
+#: text_calendar.cpp:856
+msgid "Do you still want to record this response in your calendar?"
+msgstr "Möchten Sie diese Antwort dennoch in Ihren Kalender übernehmen?"
+
+#: text_calendar.cpp:859
+msgid "Do you still want to delegate this task?"
+msgstr "Möchten Sie diese Aufgabe dennoch delegieren?"
+
+#: text_calendar.cpp:861
+msgid "Do you still want to delegate this invitation?"
+msgstr "Möchten Sie diese Einladung dennoch delegieren?"
+
+#: text_calendar.cpp:865
+msgid "Do you still want to forward this task?"
+msgstr "Möchten Sie diese Aufgabe dennoch weiterleiten?"
+
+#: text_calendar.cpp:867
+msgid "Do you still want to forward this invitation?"
+msgstr "Möchten Sie diese Einladung dennoch weiterleiten?"
+
+#: text_calendar.cpp:871
+msgid "Do you still want to cancel this task?"
+msgstr "Möchten Sie die Aufgabe immer noch abbrechen?"
+
+#: text_calendar.cpp:873
+msgid "Do you still want to cancel this invitation?"
+msgstr "Möchten Sie die Einladung immer noch zurücknehmen?"
+
+#: text_calendar.cpp:876
+msgid "Do you still want to check your calendar?"
+msgstr "Möchten Sie dennoch Ihren Kalender überprüfen?"
+
+#: text_calendar.cpp:879
+msgid "Do you still want to record this task in your calendar?"
+msgstr "Möchten Sie diese Aufgabe dennoch in Ihren Kalender eintragen?"
+
+#: text_calendar.cpp:881
+msgid "Do you still want to record this invitation in your calendar?"
+msgstr "Möchten Sie die Einladung dennoch in Ihren Kalender übernehmen?"
+
+#: text_calendar.cpp:885
+msgid "Do you really want to cancel this task?"
+msgstr "Möchten Sie die Aufgabe wirklich abbrechen?"
+
+#: text_calendar.cpp:887
+msgid "Do you really want to cancel this invitation?"
+msgstr "Möchten Sie die Einladung wirklich zurücknehmen?"
+
+#: text_calendar.cpp:892
+#, kde-format
+msgid "%1?"
+msgstr "%1?"
+
+#: text_calendar.cpp:897
+#, kde-format
+msgid ""
+"%1\n"
+"%2"
+msgstr ""
+"%1\n"
+"%2"
+
+#: text_calendar.cpp:926
+msgid "Reaction to Invitation"
+msgstr "Reaktion auf die Einladung"
+
+#: text_calendar.cpp:926 text_calendar.cpp:1181
+msgid "Comment:"
+msgstr "Kommentar:"
+
+#: text_calendar.cpp:933 text_calendar.cpp:1188
+msgid "You forgot to add proposal. Please add it. Thanks"
+msgstr "Sie haben keinen Vorschlag angefügt, bitte anhängen."
+
+#: text_calendar.cpp:969
+msgid "Delegation to organizer is not possible."
+msgstr "Delegierung an Organisator ist nicht möglich."
+
+#: text_calendar.cpp:1100
+msgid "Save Invitation Attachment"
+msgstr "Einladungs-Anhang speichern"
+
+#: text_calendar.cpp:1107
+#, kde-format
+msgctxt "@info"
+msgid "File <filename>%1</filename> exists.<nl/> Do you want to replace it?"
+msgstr ""
+"Eine Datei namens <filename>%1</filename> existiert bereits.<nl/>Soll sie "
+"ersetzt werden?"
+
+#: text_calendar.cpp:1181
+msgid "Decline Counter Proposal"
+msgstr "Gegenvorschlag ablehnen"
+
+#: text_calendar.cpp:1229
+msgid ""
+"You have no writable calendar folders for invitations, so storing or saving "
+"a response will not be possible.\n"
+"Please create at least 1 writable events calendar and re-sync."
+msgstr ""
+"Sie haben keinen beschreibbaren Kalender-Ordner für Einladungen; es ist "
+"nicht möglich, die Einladung bzw. Antworten darauf zu speichern.\n"
+"Bitte legen Sie mindestens einen beschreibbaren Kalender-Ordner an und "
+"gleichen Sie dann E-Mails ab."
+
+#: text_calendar.cpp:1249
+msgid ""
+"The calendar invitation stored in this email message is broken in some way. "
+"Unable to continue."
+msgstr ""
+"Die in dieser E-Mail enthaltene Einladung weist Defekte auf. Es kann nicht "
+"fortgefahren werden."
+
+#: text_calendar.cpp:1315
+msgctxt "@info"
+msgid ""
+"The organizer is not expecting a reply to this invitation but you can send "
+"them an email message if you desire.\n"
+"\n"
+"Would you like to send the organizer a message regarding this invitation?\n"
+"Press the [Cancel] button to cancel the recording operation."
+msgstr ""
+"Der Organisator erwartet keine Antwort auf seine Einladung, aber Sie können "
+"ihm dennoch eine E-Mail senden.\n"
+"\n"
+"Möchten Sie dem Organisator eine E-Mail bzgl. dieser Einladung senden?\n"
+"Mit dem Knopf „Abbrechen“ können Sie den Vorgang abbrechen."
+
+#: text_calendar.cpp:1319
+msgctxt "@title:window"
+msgid "Send Email to Organizer"
+msgstr "E-Mail an den Organisator senden"
+
+#: text_calendar.cpp:1320
+msgid "Do Not Send"
+msgstr "Nicht senden"
+
+#: text_calendar.cpp:1321
+msgid "Send EMail"
+msgstr "E-Mail senden"
+
+#: text_calendar.cpp:1329
+#, kde-format
+msgid "Re: %1"
+msgstr "Re: %1"
+
+#: text_calendar.cpp:1389
+msgid "Open Attachment"
+msgstr "Anhang öffnen"
+
+#: text_calendar.cpp:1391
+msgid "Save Attachment As..."
+msgstr "Anhang speichern &unter ..."
+
+#: text_calendar.cpp:1408
+msgid "Accept invitation"
+msgstr "Einladung annehmen"
+
+#: text_calendar.cpp:1411
+msgid "Accept invitation conditionally"
+msgstr "Einladung bedingt annehmen"
+
+#: text_calendar.cpp:1414
+msgid "Accept counter proposal"
+msgstr "Gegenvorschlag annehmen"
+
+#: text_calendar.cpp:1417
+msgid "Create a counter proposal..."
+msgstr "Gegenvorschlag machen ..."
+
+#: text_calendar.cpp:1420
+msgid "Throw mail away"
+msgstr "Nachrichten wegwerfen"
+
+#: text_calendar.cpp:1423
+msgid "Decline invitation"
+msgstr "Einladung ablehnen"
+
+#: text_calendar.cpp:1426
+msgid "Decline counter proposal"
+msgstr "Gegenvorschlag ablehnen"
+
+#: text_calendar.cpp:1429
+msgid "Check my calendar..."
+msgstr "Meinen Kalender überprüfen ..."
+
+#: text_calendar.cpp:1432
+msgid "Record response into my calendar"
+msgstr "Antwort in meinen Kalender übernehmen"
+
+#: text_calendar.cpp:1435
+msgid "Record invitation into my calendar"
+msgstr "Einladung in meinen Kalender übernehmen"
+
+#: text_calendar.cpp:1438
+msgid "Move this invitation to my trash folder"
+msgstr "Einladung in den Papierkorb werfen"
+
+#: text_calendar.cpp:1441
+msgid "Delegate invitation"
+msgstr "Einladung delegieren"
+
+#: text_calendar.cpp:1444
+msgid "Forward invitation"
+msgstr "Einladung weiterleiten"
+
+#: text_calendar.cpp:1447
+msgid "Remove invitation from my calendar"
+msgstr "Einladung aus meinem Kalender entfernen"
+
+#: text_calendar.cpp:1451
+#, kde-format
+msgid "Open attachment \"%1\""
+msgstr "Anhang „%1“ öffnen"
+
+#~ msgid "No writable calendar found."
+#~ msgstr "Es wurde kein schreibbarer Kalender gefunden."
+
+#~ msgid "Decline incidence"
+#~ msgstr "Ereignis ablehnen"

@@ -1,0 +1,449 @@
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2007, 2008, 2009, 2010.
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2011, 2012.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2009, 2010.
+# Moritz Baumann <flamingmo@online.de>, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_launcher\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-11-05 11:50+0000\n"
+"PO-Revision-Date: 2013-06-27 21:36+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Thomas Reitelbach"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "tr@erdfunkstelle.de"
+
+#: applet/applet.cpp:84
+msgid "Kickoff Application Launcher"
+msgstr "Kickoff-Anwendungsstarter"
+
+#: applet/applet.cpp:85
+msgid ""
+"Favorites, applications, computer places, recently used items and desktop "
+"sessions"
+msgstr "Favoriten, Anwendungen, Orte auf dem Rechner, Verlauf und Sitzungen"
+
+#: applet/applet.cpp:108 simpleapplet/simpleapplet.cpp:343
+msgid "Edit Applications..."
+msgstr "Menüeinträge bearbeiten ..."
+
+#: applet/applet.cpp:114
+msgid "Switch to Classic Menu Style"
+msgstr "Zum klassischen Menüstil wechseln"
+
+#: applet/applet.cpp:159
+msgctxt "General configuration page"
+msgid "General"
+msgstr "Allgemein"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: applet/kickoffConfig.ui:27
+msgid "Show applications by &name:"
+msgstr "Anwendungen nach &Namen sortieren:"
+
+#. i18n: ectx: property (text), widget (QLabel, iconLabel)
+#: applet/kickoffConfig.ui:73
+msgid "&Icon:"
+msgstr "&Symbol:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: applet/kickoffConfig.ui:86
+msgid "Switch &tabs on hover:"
+msgstr "Kategorien durch Überfahren mit der &Maus wechseln:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: applet/kickoffConfig.ui:106 simpleapplet/simpleapplet.cpp:491
+msgid "Show 'Recently Installed':"
+msgstr "„Kürzlich Installierte“ anzeigen"
+
+#: core/applicationmodel.cpp:294
+msgid "Recently Installed"
+msgstr "Kürzlich Installierte"
+
+#: core/applicationmodel.cpp:384
+msgid "Games"
+msgstr "Spiele"
+
+#: core/applicationmodel.cpp:478 ui/launcher.cpp:1056
+msgid "All Applications"
+msgstr "Alle Programme"
+
+#: core/favoritesmodel.cpp:49 simpleapplet/simpleapplet.cpp:196
+#: ui/launcher.cpp:123 ui/launcher.cpp:193
+msgid "Favorites"
+msgstr "Favoriten"
+
+#: core/favoritesmodel.cpp:322
+msgctxt "@title:column"
+msgid "Favorites"
+msgstr "Favoriten"
+
+#: core/leavemodel.cpp:50 simpleapplet/simpleapplet.cpp:213
+msgid "Log out"
+msgstr "Abmelden"
+
+#: core/leavemodel.cpp:52
+msgid "End session"
+msgstr "Sitzung beenden"
+
+#: core/leavemodel.cpp:54
+msgid "Lock"
+msgstr "Sperren"
+
+#: core/leavemodel.cpp:56
+msgid "Lock screen"
+msgstr "Bildschirm sperren"
+
+#: core/leavemodel.cpp:58
+msgid "Switch user"
+msgstr "Benutzer wechseln"
+
+#: core/leavemodel.cpp:60
+msgid "Start a parallel session as a different user"
+msgstr "Weitere Sitzung starten"
+
+#: core/leavemodel.cpp:62 simpleapplet/simpleapplet.cpp:212
+msgid "Shut down"
+msgstr "Herunterfahren"
+
+#: core/leavemodel.cpp:64
+msgid "Turn off computer"
+msgstr "Rechner ausschalten"
+
+#: core/leavemodel.cpp:66
+msgctxt "Restart computer"
+msgid "Restart"
+msgstr "Neustart"
+
+#: core/leavemodel.cpp:68
+msgid "Restart computer"
+msgstr "Rechner neu starten"
+
+#: core/leavemodel.cpp:70 simpleapplet/simpleapplet.cpp:206
+msgid "Save Session"
+msgstr "Sitzung speichern"
+
+#: core/leavemodel.cpp:72
+msgid "Save current session for next login"
+msgstr "Aktuelle Sitzung für die nächste Anmeldung speichern"
+
+#: core/leavemodel.cpp:74 simpleapplet/simpleapplet.cpp:208
+msgctxt "Puts the system on standby"
+msgid "Standby"
+msgstr "Bereitschaft"
+
+#: core/leavemodel.cpp:76
+msgid "Pause without logging out"
+msgstr "Arbeitsunterbrechung ohne Abmelden"
+
+#: core/leavemodel.cpp:78 simpleapplet/simpleapplet.cpp:209
+msgid "Hibernate"
+msgstr "Tiefschlaf"
+
+#: core/leavemodel.cpp:80
+msgid "Suspend to disk"
+msgstr "Tiefschlaf"
+
+#: core/leavemodel.cpp:82 simpleapplet/simpleapplet.cpp:210
+msgid "Sleep"
+msgstr "Ruhezustand"
+
+#: core/leavemodel.cpp:84
+msgid "Suspend to RAM"
+msgstr "Ruhezustand"
+
+#: core/leavemodel.cpp:107 simpleapplet/simpleapplet.cpp:214
+#: ui/launcher.cpp:181
+msgid "Leave"
+msgstr "Verlassen"
+
+#: core/leavemodel.cpp:119
+msgid "Session"
+msgstr "Sitzung"
+
+#: core/leavemodel.cpp:150
+msgid "System"
+msgstr "System"
+
+#: core/models.cpp:121
+msgid "Home Folder"
+msgstr "Persönlicher Ordner"
+
+#: core/models.cpp:124
+msgid "Network Folders"
+msgstr "Netzwerkordner"
+
+#: core/recentlyusedmodel.cpp:109
+msgid "Documents"
+msgstr "Dokumente"
+
+#: core/recentlyusedmodel.cpp:120 core/systemmodel.cpp:74
+#: simpleapplet/simpleapplet.cpp:198 ui/launcher.cpp:125 ui/launcher.cpp:241
+msgid "Applications"
+msgstr "Anwendungen"
+
+#: core/recentlyusedmodel.cpp:186 simpleapplet/simpleapplet.cpp:200
+#: ui/launcher.cpp:126 ui/launcher.cpp:254
+msgid "Recently Used"
+msgstr "Verlauf"
+
+#: core/recentlyusedmodel.cpp:188 simpleapplet/simpleapplet.cpp:202
+msgid "Recently Used Documents"
+msgstr "Verlauf (Dokumente)"
+
+#: core/recentlyusedmodel.cpp:190 simpleapplet/simpleapplet.cpp:201
+msgid "Recently Used Applications"
+msgstr "Verlauf (Programme)"
+
+#: core/systemmodel.cpp:75
+msgid "Places"
+msgstr "Orte"
+
+#: core/systemmodel.cpp:76
+msgid "Removable Storage"
+msgstr "Wechselmedien"
+
+#: core/systemmodel.cpp:77
+msgid "Storage"
+msgstr "Speichermedien"
+
+#: core/systemmodel.cpp:207 simpleapplet/simpleapplet.cpp:204
+msgid "Run Command..."
+msgstr "Befehl ausführen ..."
+
+#: core/systemmodel.cpp:211
+msgid "Run a command or a search query"
+msgstr "Befehl ausführen oder Suche starten"
+
+#: core/systemmodel.cpp:319 simpleapplet/simpleapplet.cpp:199
+#: ui/launcher.cpp:125 ui/launcher.cpp:275
+msgid "Computer"
+msgstr "Rechner"
+
+#: main.cpp:32
+msgid "Kickoff"
+msgstr "Kickoff"
+
+#: main.cpp:33
+msgid "Application Launcher"
+msgstr "Anwendungs-Starter"
+
+#: simpleapplet/simpleapplet.cpp:197
+msgid "Bookmarks"
+msgstr "Lesezeichen"
+
+#: simpleapplet/simpleapplet.cpp:203
+msgid "System Settings"
+msgstr "Systemeinstellungen"
+
+#: simpleapplet/simpleapplet.cpp:205
+msgid "Switch User"
+msgstr "Benutzer wechseln"
+
+#: simpleapplet/simpleapplet.cpp:207
+msgid "Lock Screen"
+msgstr "Bildschirm sperren"
+
+#: simpleapplet/simpleapplet.cpp:211
+msgctxt "Restart Computer"
+msgid "Restart"
+msgstr "Neustart"
+
+#: simpleapplet/simpleapplet.cpp:270
+msgid "Application Launcher Menu"
+msgstr "Anwendungsstarter-Menü"
+
+#: simpleapplet/simpleapplet.cpp:349
+msgid "Switch to Application Launcher Style"
+msgstr "Zum Kickoff-Anwendungsstarter-Stil wechseln"
+
+#: simpleapplet/simpleapplet.cpp:448
+msgid "View"
+msgstr "Ansicht"
+
+#: simpleapplet/simpleapplet.cpp:455
+msgid "Icon:"
+msgstr "Symbol:"
+
+#: simpleapplet/simpleapplet.cpp:462
+msgctxt "@label:listbox How to present applications in a KMenu-like menu"
+msgid "Format:"
+msgstr "Format:"
+
+#: simpleapplet/simpleapplet.cpp:466
+msgctxt "@item:inlistbox Format:"
+msgid "Name Only"
+msgstr "Nur Name"
+
+#: simpleapplet/simpleapplet.cpp:467
+msgctxt "@item:inlistbox Format:"
+msgid "Description Only"
+msgstr "Nur Beschreibung"
+
+#: simpleapplet/simpleapplet.cpp:468
+msgctxt "@item:inlistbox Format:"
+msgid "Name (Description)"
+msgstr "Name (Beschreibung)"
+
+#: simpleapplet/simpleapplet.cpp:469
+msgctxt "@item:inlistbox Format:"
+msgid "Description (Name)"
+msgstr "Beschreibung (Name)"
+
+#: simpleapplet/simpleapplet.cpp:470
+msgctxt "@item:inlistbox Format:"
+msgid "Name - Description"
+msgstr "Name – Beschreibung"
+
+#: simpleapplet/simpleapplet.cpp:475
+msgid "Recently used applications:"
+msgstr "Verlauf (Programme):"
+
+#: simpleapplet/simpleapplet.cpp:485
+msgid "Show menu titles:"
+msgstr "Menütitel anzeigen:"
+
+#: simpleapplet/simpleapplet.cpp:498
+msgid "Options"
+msgstr "Einstellungen"
+
+#: simpleapplet/simpleapplet.cpp:644
+msgid "Actions"
+msgstr "Aktionen"
+
+#: ui/contextmenufactory.cpp:85
+msgid "Advanced"
+msgstr "Erweitert"
+
+#: ui/contextmenufactory.cpp:178
+msgid "Remove From Favorites"
+msgstr "Aus Favoriten entfernen"
+
+#: ui/contextmenufactory.cpp:183
+msgid "Add to Favorites"
+msgstr "Zu Favoriten hinzufügen"
+
+#: ui/contextmenufactory.cpp:215
+msgid "Add to Desktop"
+msgstr "Zur Arbeitsfläche hinzufügen"
+
+#: ui/contextmenufactory.cpp:223
+msgid "Add to Panel"
+msgstr "Zur Kontrollleiste hinzufügen"
+
+#: ui/contextmenufactory.cpp:236
+msgid "Uninstall"
+msgstr "Deinstallieren"
+
+#: ui/contextmenufactory.cpp:261
+msgid "Eject"
+msgstr "Auswerfen"
+
+#: ui/contextmenufactory.cpp:263
+msgid "Safely Remove"
+msgstr "Sicher entfernen"
+
+#: ui/launcher.cpp:196
+msgid "Sort Alphabetically (A to Z)"
+msgstr "Alphabetisch sortieren (A bis Z)"
+
+#: ui/launcher.cpp:199
+msgid "Sort Alphabetically (Z to A)"
+msgstr "Alphabetisch sortieren (Z bis A)"
+
+#: ui/launcher.cpp:256
+msgid "Clear Recent Applications"
+msgstr "Verlauf (Programme) leeren"
+
+#: ui/launcher.cpp:257
+msgid "Clear Recent Documents"
+msgstr "Verlauf (Dokumente) leeren"
+
+#: ui/launcher.cpp:565
+#, kde-format
+msgctxt "login name, hostname"
+msgid "User <b>%1</b> on <b>%2</b>"
+msgstr "Benutzer <b>%1</b> an <b>%2</b>"
+
+#: ui/launcher.cpp:567
+#, kde-format
+msgctxt "full name, login name, hostname"
+msgid "<b>%1 (%2)</b> on <b>%3</b>"
+msgstr "<b>%1 (%2)</b> an <b>%3</b>"
+
+#: ui/searchbar.cpp:70
+msgctxt "Label of the search bar textedit"
+msgid "Search:"
+msgstr "Suchen:"
+
+#~ msgid "Switch to Kickoff Menu Style"
+#~ msgstr "Zum Kickoff-Menüstil wechseln"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Menü-Editor"
+
+#~ msgid "run:/"
+#~ msgstr "run:/"
+
+#~ msgid "Web Searches"
+#~ msgstr "Web-Suchen"
+
+#~ msgid "Search web for '%1'"
+#~ msgstr "Im Web suchen nach ‚%1‘"
+
+#~ msgid "Lock the screen"
+#~ msgstr "Bildschirm sperren"
+
+#~ msgid "Known Applications"
+#~ msgstr "Bekannte Anwendungen"
+
+#~ msgctxt "@item:inlistbox View:"
+#~ msgid "Standard"
+#~ msgstr "Standard"
+
+#~ msgctxt "@item:inlistbox View:"
+#~ msgid "Favorites"
+#~ msgstr "Favoriten"
+
+#~ msgctxt "@item:inlistbox View:"
+#~ msgid "Applications"
+#~ msgstr "Programme"
+
+#~ msgctxt "@item:inlistbox View:"
+#~ msgid "Computer"
+#~ msgstr "Rechner"
+
+#~ msgctxt "@item:inlistbox View:"
+#~ msgid "Recently Used"
+#~ msgstr "Kürzlich verwendete"
+
+#~ msgctxt "@item:inlistbox View:"
+#~ msgid "Leave"
+#~ msgstr "Verlassen"
+
+#~ msgid "Leave..."
+#~ msgstr "Verlassen ..."
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure Launcher"
+#~ msgstr "Anwendungs-Starter einrichten"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure Menu"
+#~ msgstr "Menü einrichten"
+
+#~ msgid "Number of visible items:"
+#~ msgstr "Anzahl sichtbarer Einträge:"

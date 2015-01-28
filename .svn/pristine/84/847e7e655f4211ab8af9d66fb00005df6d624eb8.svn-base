@@ -1,0 +1,217 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: PolicyKit-kde_authorizationagent\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:26+0000\n"
+"PO-Revision-Date: 2009-08-10 19:44+0200\n"
+"Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/extragear/base/doc/PolicyKit-kde/"
+"authorizationagent.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 922859\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: authorizationagent.docbook:2
+#, no-c-format
+msgid "Authorization Agent"
+msgstr "Berechtigungsagent"
+
+#. Tag: title
+#: authorizationagent.docbook:5
+#, no-c-format
+msgid "Manual"
+msgstr "Handbuch"
+
+#. Tag: para
+#: authorizationagent.docbook:7
+#, no-c-format
+msgid ""
+"The Authorization Agent is the application that is called whenever an user "
+"wants to obtain a given authorization. It's a &DBus; activated daemon which "
+"uses <quote>libpolkit-grant</quote> that in turn uses PAM for authentication "
+"services (however, other authentication back-ends can be plugged in as "
+"required)."
+msgstr ""
+"Der <emphasis>Berechtigungsagent</emphasis> ist die Anwendung, die jedes Mal "
+"aufgerufen wird, wenn ein Benutzer eine bestimmte Berechtigung anfordert. Es "
+"handelt sich hierbei um einen &DBus;-Dienst, der „libpolkit-grant“ und "
+"dadurch <emphasis>PAM</emphasis> für die <emphasis>Berechtigungs</"
+"emphasis>dienste nutzt (jedoch können auch andere <emphasis>Berechtigungs</"
+"emphasis>dienste verwendet werden, soweit sie benötigt werden)."
+
+#. Tag: title
+#: authorizationagent.docbook:16
+#, no-c-format
+msgid "Authorization Agent dialog"
+msgstr "Dialog des Berechtigungsagenten"
+
+#. Tag: para
+#: authorizationagent.docbook:18
+#, no-c-format
+msgid ""
+"The appearance of the authentication dialog depends on the result from "
+"PolicyKit and also whether administrator authentication is defined as "
+"<quote>authenticate as the root user</quote> or <quote>authenticate as one "
+"of the users from UNIX group wheel</quote> or however the PolicyKit library "
+"is configured (see the PolicyKit.conf(5) manual page for details). Note that "
+"some of the screenshots below were made on a system set up to use the <ulink "
+"url=\"http://thinkfinger.sourceforge.net/\">ThinkFinger</ulink> PAM module. "
+"The text shown in the authentication dialogs stems from the PolicyKit ."
+"policy XML files residing in /usr/share/PolicyKit/policy and is read by the "
+"authentication daemon when an applications asks to obtain an authorization. "
+"Thus, what the user sees is not under application control (e.g. it's not "
+"passed from the application) which rules out a class of attacks where "
+"applications are trying to fool the user into gaining a privilege."
+msgstr ""
+"Das Erscheinungsbild für den Berechtigungsdialog hängt vom Ergebnis von "
+"PolicyKit und der Nachfrage nach einer <emphasis>Administrator</emphasis>-"
+"Berechtigung ab („Berechtigung des <emphasis>root</emphasis>-Benutzers“ oder "
+"„Berechtigung eines Gruppenmitglieds“) oder der Einrichtung der PolicyKit-"
+"Bibliothek (siehe <userinput>man PolicyKit.conf</userinput>). Es ist zu "
+"beachten, dass manche der nachstehenden Bildschirmfotos auf einem System mit "
+"installiertem <ulink url=\"http://thinkfinger.sourceforge.net/"
+"\">ThinkFinger</ulink>-PAM-Modul erstellt wurden. Der Text in den gezeigten "
+"<emphasis>Berechtigungs</emphasis>dialogen stammt von PolicyKit. Die "
+"<filename>XML</filename>-Dateien mit den Berechtigungen befinden sich im "
+"Ordner <filename>/usr/share/PolicyKit/policy/</filename> und werden vom "
+"<emphasis>Berechtigungs</emphasis>dienst eingelesen, sobald eine Anwendung "
+"nach einer Berechtigung fragt. Was der Benutzer nun sieht steht nicht unter "
+"Kontrolle der Anwendung (z. B. stammt es nicht von der Anwendung), welche "
+"versucht den Benutzer durch eine Täuschung die Berechtigung zu entlocken."
+
+#. Tag: para
+#: authorizationagent.docbook:34
+#, no-c-format
+msgid ""
+"The authentication dialog where the user is asked to authenticate as root "
+"using the password or swiping the finger. The details shows the application "
+"that's requesting the action, the action itself and the action vendor. If "
+"clicking in the action link it will open the authorization manager pointing "
+"to the given action, and the vendor might also provide a link for the given "
+"action that will be fired when clicking on the <quote>Vendor</quote> link:"
+msgstr ""
+"Der Berechtigungsdialog für die <emphasis>root</emphasis>-Berechtigung, "
+"fragt nach dem Passwort oder Fingerabdruck. Die Informationen zeigen die "
+"anfragende Anwendung, die Aktion selbst und den Hersteller der Aktion. Mit "
+"einem Klick auf die Verknüpfung neben <guilabel>Aktion:</guilabel> wird der "
+"Berechtigungsverwalter für die angegebene Aktion geöffnet. Möglicherweise "
+"wird neben <guilabel>Hersteller:</guilabel> auch eine Verknüpfung angezeigt "
+"und ruft bei einem Klick darauf die Verknüpfung auf:"
+
+#. Tag: phrase
+#: authorizationagent.docbook:45
+#, no-c-format
+msgid ""
+"The authentication dialog asking for root, swipe finger and showing "
+"descriptions"
+msgstr ""
+"Der Berechtigungsdialog für die Abfrage des <emphasis>root</emphasis>-"
+"Passworts bzw. <emphasis>root</emphasis>-Fingerabdrucks und Anzeige der "
+"Beschreibungen"
+
+#. Tag: para
+#: authorizationagent.docbook:52
+#, no-c-format
+msgid ""
+"Authentication dialog where the user is asked to authenticate as an "
+"administrative user and PolicyKit is configured to use the root password for "
+"this:"
+msgstr ""
+"Der Berechtigungsdialog für die Abfrage des Passworts für einen "
+"<emphasis>administrativen</emphasis> Benutzers (wobei PolicyKit für die "
+"Anwendung des <emphasis>root</emphasis>-Passworts eingestellt ist): "
+
+#. Tag: phrase
+#: authorizationagent.docbook:58
+#, no-c-format
+msgid "The authentication dialog asking for root"
+msgstr ""
+"Der Berechtigungsdialog zur Abfrage des <emphasis>root</emphasis>-Passworts"
+
+#. Tag: para
+#: authorizationagent.docbook:65
+#, no-c-format
+msgid ""
+"Authentication dialog where the user is asked to authenticate as an "
+"administrative user and PolicyKit is configured to use a group for this:"
+msgstr ""
+"Der Berechtigungsdialog für die Abfrage des Passworts für einen "
+"<emphasis>administrativen</emphasis> Benutzers (wobei PolicyKit für eine "
+"Gruppe eingestellt ist):"
+
+#. Tag: phrase
+#: authorizationagent.docbook:71
+#, no-c-format
+msgid "The authentication dialog asking for a user of the administrative group"
+msgstr ""
+"Der Berechtigungsdialog zur Abfrage des Passworts für einen Benutzer der "
+"<emphasis>administrativen</emphasis> Gruppe"
+
+#. Tag: para
+#: authorizationagent.docbook:78
+#, no-c-format
+msgid ""
+"Same authentication dialog, showing drop down box where the user can be "
+"selected:"
+msgstr ""
+"Der gleiche Berechtigungsdialog mit einer Auswahlbox für die Auswahl des "
+"Benutzers:"
+
+#. Tag: phrase
+#: authorizationagent.docbook:83
+#, no-c-format
+msgid ""
+"Same authentication dialog, showing drop down box where the user can be "
+"selected"
+msgstr ""
+"Der gleiche Berechtigungsdialog mit einer Auswahlbox für die Auswahl des "
+"Benutzers"
+
+#. Tag: para
+#: authorizationagent.docbook:91
+#, no-c-format
+msgid ""
+"Authentication dialog showing an Action where the privilege can be retained "
+"indefinitely:"
+msgstr ""
+"Der Berechtigungsdialog für die Berechtigung einer Aktion auf unbestimmte "
+"Zeit:"
+
+#. Tag: phrase
+#: authorizationagent.docbook:96
+#, no-c-format
+msgid ""
+"Authentication dialog showing an Action where the privilege can be retained "
+"indefinitely"
+msgstr ""
+"Der Berechtigungsdialog für die Berechtigung einer Aktion auf unbestimmte "
+"Zeit"
+
+#. Tag: para
+#: authorizationagent.docbook:104
+#, no-c-format
+msgid ""
+"Authentication dialog showing an Action where the privilege can be retained "
+"only for the remainder of the desktop session:"
+msgstr ""
+"Der Berechtigungsdialog für die Berechtigung einer Aktion bis zum Ablauf der "
+"aktuellen Sitzung:"
+
+#. Tag: phrase
+#: authorizationagent.docbook:110
+#, no-c-format
+msgid ""
+"Authentication dialog showing an Action where the privilege can be retained "
+"only for the remainder of the desktop session"
+msgstr ""
+"Der Berechtigungsdialog für die Berechtigung einer Aktion bis zum Ablauf der "
+"aktuellen Sitzung"

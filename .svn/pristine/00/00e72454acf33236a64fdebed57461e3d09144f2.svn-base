@@ -1,0 +1,256 @@
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011, 2012.
+# Torbjörn Klatt <torbjoern.k@googlemail.com>, 2011.
+# Burkhard Lück <lueck@hube-lueck.de>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_runner_events\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-11-05 05:28+0000\n"
+"PO-Revision-Date: 2013-08-27 05:44+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: datetime_parser.cpp:27
+#, kde-format
+msgctxt "In number of minutes phrase (may contain regexp symbols)"
+msgid "in %1 minutes (after)?"
+msgstr "in %1 Minuten (nach)?"
+
+#: datetime_parser.cpp:28
+#, kde-format
+msgctxt "In number of hours phrase (may contain regexp symbols)"
+msgid "in %1 hours (after)?"
+msgstr "in %1 Stunden (nach)?"
+
+#: datetime_parser.cpp:29
+#, kde-format
+msgctxt "In number of days phrase (may contain regexp symbols)"
+msgid "in %1 days (after)?"
+msgstr "in %1 Tagen (nach)?"
+
+#: datetime_parser.cpp:30
+#, kde-format
+msgctxt "In number of weeks phrase (may contain regexp symbols)"
+msgid "in %1 weeks (after)?"
+msgstr "in %1 Wochen (nach)?"
+
+#: datetime_parser.cpp:31
+#, kde-format
+msgctxt "In number of months phrase (may contain regexp symbols)"
+msgid "in %1 months (after)?"
+msgstr "in %1 Monaten (nach)?"
+
+#: datetime_parser.cpp:32
+#, kde-format
+msgctxt "In number of years phrase (may contain regexp symbols)"
+msgid "in %1 years (after)?"
+msgstr "in %1 Jahren (nach)?"
+
+#: datetime_parser.cpp:35
+msgctxt "Current time keyword"
+msgid "now"
+msgstr "jetzt"
+
+#: datetime_parser.cpp:36
+msgctxt "Current day keyword"
+msgid "today"
+msgstr "heute"
+
+#: datetime_parser.cpp:37
+msgctxt "Next day keyword"
+msgid "tomorrow"
+msgstr "morgen"
+
+#: datetime_parser.cpp:38
+msgctxt "Previous day keyword"
+msgid "yesterday"
+msgstr "gestern"
+
+#: datetime_parser.cpp:40
+msgctxt "Keyword for start datetime"
+msgid "from"
+msgstr "von"
+
+#: datetime_parser.cpp:41
+msgctxt "Keyword for finish datetime"
+msgid "to"
+msgstr "bis"
+
+#: events.cpp:47
+msgctxt "Event creation keyword"
+msgid "event"
+msgstr "Ereignis"
+
+#: events.cpp:48
+msgctxt "Todo creation keyword"
+msgid "todo"
+msgstr "Aufgabe"
+
+#: events.cpp:49
+msgctxt "Todo completion keyword"
+msgid "complete"
+msgstr "Vervollständigen"
+
+#: events.cpp:50
+msgctxt "Event comment keyword"
+msgid "comment"
+msgstr "Kommentar"
+
+#: events.cpp:51
+msgctxt "Event list keyword"
+msgid "events"
+msgstr "Ereignisse"
+
+#: events.cpp:52
+msgctxt "Todo list keyword"
+msgid "todos"
+msgstr "Aufgaben"
+
+#: events.cpp:207
+msgid ""
+"Creates event in calendar by its description in :q:, which consists of parts "
+"divided by semicolons. The first two parts (both obligatory) are the event "
+"summary and its start date. The third, optional, is list of event "
+"categories, divided by commas."
+msgstr ""
+"Erstellt ein Ereignis mittels Beschreibung in :q:, welches aus mit "
+"Strichpunkten (Semikolon) getrennten Teilen besteht. Die beiden "
+"(obligatorischen) ersten Teile stellen die Zusammenfassung und das "
+"Anfangsdatum des Ereignisses dar. Der optionale dritte Teil ist die Liste "
+"der Kategorien, welche mit Komma getrennt werden."
+
+#: events.cpp:208
+msgid "event description"
+msgstr "Ereignis-Beschreibung"
+
+#: events.cpp:211
+msgid ""
+"Creates todo in calendar by its description in :q:, which consists of parts "
+"divided by semicolons. The first two parts (both obligatory) are a summary "
+"of the todo, and its due date. The third, optional, is list of todo "
+"categories, divided by commas."
+msgstr ""
+"Erstellt eine Aufgabe mittels Beschreibung in :q:, welche aus mit "
+"Strichpunkten (Semikolon) getrennten Teilen besteht. Die beiden "
+"(obligatorischen) ersten Teile stellen die Zusammenfassung und das "
+"Gültigkeitsdatum der Aufgabe dar. Der optionale dritte Teil ist die Liste "
+"der Kategorien, welche mit Komma getrennt werden."
+
+#: events.cpp:212
+msgid "todo description"
+msgstr "Aufgabenbeschreibung"
+
+#: events.cpp:215
+msgid ""
+"Selects todo from calendar by its summary in :q: and marks it as completed."
+msgstr ""
+"Wählt eine Aufgabe aus dem Kalender mittels Zusammenfassung in :q: und "
+"markiert sie als erledigt."
+
+#: events.cpp:216
+msgctxt "The command syntax description for complete"
+msgid "complete todo description"
+msgstr "Aufgabenbeschreibung vervollständigen"
+
+#: events.cpp:219
+msgid ""
+"Selects event from calendar by its summary in :q: and append <comment> to "
+"its body."
+msgstr ""
+"Wählt ein Ereignis aus dem Kalender mittels Zusammenfassung in :q: und fügt "
+"<comment> hinzu."
+
+#: events.cpp:220
+msgctxt "The command syntax description for comment"
+msgid "comment todo description"
+msgstr "Aufgabenbeschreibung kommentieren"
+
+#: events.cpp:223
+msgid "Shows events from calendar by its date in :q:."
+msgstr "Zeigt ein Ereignis aus dem Kalender anhand des Datums in :q: an."
+
+#: events.cpp:224
+msgctxt "The command syntax description for event"
+msgid "event date/time"
+msgstr "Ereignisdatum/-zeit"
+
+#: events.cpp:227
+msgid "Shows todos from calendar by its date in :q:."
+msgstr "Zeigt Aufgaben aus dem Kalender anhand des Datums in :q: an."
+
+#: events.cpp:228
+msgctxt "The command syntax description for todo"
+msgid "todo date/time"
+msgstr "Aufgabendatum/-zeit"
+
+#: events.cpp:269
+#, kde-format
+msgctxt "%1 is the summary of event, %2 is the start time of event"
+msgid "Create event \"%1\" at %2"
+msgstr "Ereignis „%1“ um %2 erstellen"
+
+#: events.cpp:271
+#, kde-format
+msgctxt ""
+"%1 is the summary of event, %2 is the start time of event, %3 is the end "
+"time of event"
+msgid "Create event \"%1\" from %2 to %3"
+msgstr "Ereignis „%1“ von %2 bis %3 erstellen"
+
+#: events.cpp:276
+#, kde-format
+msgctxt "%1 is the summary of todo, %2 is the due time of todo"
+msgid "Create todo \"%1\" due to %2"
+msgstr "Aufgabe „%1“ fällig um %2 erstellen"
+
+#: events.cpp:278
+#, kde-format
+msgctxt ""
+"%1 is the summary of todo, %2 is the start time of todo, %3 is the due time "
+"of todo"
+msgid "Create todo \"%1\" due to %3 starting at %2"
+msgstr "Aufgabe „%1“ von %2 fällig um %3 erstellen"
+
+#: events.cpp:290
+#, kde-format
+msgid "Categories: %1"
+msgstr "Kategorien: %1"
+
+#: events.cpp:313
+#, kde-format
+msgctxt "The todo is complete"
+msgid "Complete todo \"%1\""
+msgstr "Aufgabe „%1“ erledigt"
+
+#: events.cpp:314 events.cpp:327 events.cpp:329 events.cpp:361 events.cpp:373
+#: events.cpp:375
+#, kde-format
+msgid "Date: %1"
+msgstr "Datum: %1"
+
+#: events.cpp:324
+#, kde-format
+msgid "Comment incidence \"%1\""
+msgstr "Ereignis „%1“ kommentieren"
+
+#. i18n: ectx: property (title), widget (QGroupBox, akonadiGroup)
+#: events_config.ui:17
+msgid "Akonadi collections"
+msgstr "Akonadi-Sammlungen"
+
+#. i18n: ectx: property (text), widget (QLabel, eventCollectionLabel)
+#: events_config.ui:33
+msgid "Insert events into:"
+msgstr "Ereignisse einfügen in:"
+
+#. i18n: ectx: property (text), widget (QLabel, todoCollectionLabel)
+#: events_config.ui:43
+msgid "Insert tasks into:"
+msgstr "Aufgaben einfügen in:"

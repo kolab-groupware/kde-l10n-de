@@ -1,0 +1,1509 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-09-08 02:19+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: author
+#: details-impexp.docbook:5 details-impexp.docbook:908
+#, no-c-format
+msgid "&Ace.Jones; &Ace.Jones.mail;"
+msgstr ""
+
+#. Tag: date
+#: details-impexp.docbook:7
+#, no-c-format
+msgid "2011-07-3"
+msgstr ""
+
+#. Tag: releaseinfo
+#: details-impexp.docbook:8
+#, no-c-format
+msgid "<releaseinfo>4.6</releaseinfo>"
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:11
+#, no-c-format
+msgid "Importing and Exporting"
+msgstr ""
+
+#. Tag: author
+#: details-impexp.docbook:15
+#, no-c-format
+msgid "&Tony.Bloomfield; &Tony.Bloomfield.mail;"
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:18
+#, no-c-format
+msgid "GnuCash Importer"
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:21
+#, no-c-format
+msgid "GnuCash Files"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:23
+#, no-c-format
+msgid ""
+"The &kappname; GnuCash importer handles direct reading of standard (&XML;) "
+"files as produced by GnuCash versions 1.8 and 2.0. The following are not "
+"supported:"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:30
+#, no-c-format
+msgid "import of database (Postgres) data"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:31
+#, no-c-format
+msgid "import of 'multi-book' files"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:32
+#, no-c-format
+msgid "import into an existing &kappname; file"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:33
+#, no-c-format
+msgid "import of small-business specific features (Employees, Invoices, etc.)"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:35
+#, no-c-format
+msgid "export to GnuCash files."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:38
+#, no-c-format
+msgid ""
+"The import will probably only work correctly if presented with a valid file. It "
+"is recommended that the GnuCash <guimenuitem>Check &amp; Repair "
+"All</guimenuitem> function (in the <guimenu>Actions</guimenu> "
+"menu) be run before attempting to import."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:44
+#, no-c-format
+msgid ""
+"Files can be opened by specifying the filename on the command line (<command>"
+"kmymoney &lt;path to file&gt;</command>), or by means of the &kappname; "
+"<menuchoice> <shortcut><keycombo>&Ctrl;<keycap>O</keycap></keycombo></shortcut> "
+"<guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </menuchoice> "
+"or <menuchoice> <guimenu>File</guimenu><guimenuitem>Import</guimenuitem> "
+"</menuchoice> menu items."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:56
+#, no-c-format
+msgid ""
+"The similarity between the two products means that much day-to-day data can be "
+"imported in a straightforward fashion. However, there are some areas where "
+"differences arise, and various options are provided to deal with these. The "
+"following sections will describe some of these differences; understanding them "
+"should lead to a smoother importation."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:66
+#, no-c-format
+msgid "Similarities, Differences, and Terminology"
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:69
+#, no-c-format
+msgid "Small Business Usage"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:71
+#, no-c-format
+msgid ""
+"It should be noted that &kappname; is a <emphasis>personal</emphasis> "
+"finance manager, and as such, does not directly support any of the business "
+"features of GnuCash, such as tax tables, payroll, and tracking of lots. Any "
+"Accounts Payable or Receivable accounts found in a file will be imported as "
+"Liability or Asset accounts respectively."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:81
+#, no-c-format
+msgid "Accounts"
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:84
+#, no-c-format
+msgid "Account types"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:86
+#, no-c-format
+msgid ""
+"For both products, the highest level of structure in the file is the account. "
+"&kappname; supports 5 main types of account: Asset, Liability, Income, Expense "
+"and Equity, each of which may have various subtypes, &eg;, Checking, Credit "
+"Card, &etc; &kappname; includes a 'standard' account for each of these five "
+"types, and all other accounts are held subordinate to one of these. &kappname; "
+"enforces more consistency (or less flexibility, depending on your point of "
+"view) between account types than does GnuCash, and the importer will correct "
+"any inconsistencies it detects. This may result in a slightly different account "
+"structure, though this can, within reason, be amended after the import is "
+"complete."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:101
+#, no-c-format
+msgid "Categories"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:103
+#, no-c-format
+msgid ""
+"&kappname; uses the term Category to denote an account of an Income or Expense "
+"type. Unlike GnuCash, these are not considered as 'ledger' accounts, and entry "
+"of transactions folder into categories is not supported; allocations are made "
+"during transaction entry into other account types."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:112
+#, no-c-format
+msgid "Structure and Placeholders"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:114
+#, no-c-format
+msgid ""
+"GnuCash supports the use of Placeholder accounts. In effect, these are just "
+"read-only accounts into which no transactions can be entered, but which "
+"function in an analogous fashion to folders in a folder structure, as a holder "
+"for other accounts. Though &kappname; does not support this feature as such, it "
+"does provide a parent/child account relationship, so the importer simulates "
+"placeholders by creating empty accounts."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:125
+#, no-c-format
+msgid "Account Type map"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:131
+#, no-c-format
+msgid "GnuCash type"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:131
+#, no-c-format
+msgid "&kappname; type"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:136
+#, no-c-format
+msgid "BANK"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:136 details-impexp.docbook:139
+#, no-c-format
+msgid "Checking"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:139
+#, no-c-format
+msgid "CHECKING"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:142
+#, no-c-format
+msgid "SAVINGS"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:142
+#, no-c-format
+msgid "Savings"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:145
+#, no-c-format
+msgid "ASSET"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:145 details-impexp.docbook:178
+#, no-c-format
+msgid "Asset"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:148
+#, no-c-format
+msgid "CASH"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:148 details-impexp.docbook:151
+#, no-c-format
+msgid "Cash"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:151
+#, no-c-format
+msgid "CURRENCY"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:154
+#, no-c-format
+msgid "MONEYMRKT"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:154
+#, no-c-format
+msgid "MoneyMarket"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:157
+#, no-c-format
+msgid "STOCK"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:157 details-impexp.docbook:160
+#, no-c-format
+msgid "Stock"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:160
+#, no-c-format
+msgid "MUTUAL"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:163
+#, no-c-format
+msgid "EQUITY"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:163
+#, no-c-format
+msgid "Equity"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:166
+#, no-c-format
+msgid "LIABILITY"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:166 details-impexp.docbook:181
+#, no-c-format
+msgid "Liability"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:169
+#, no-c-format
+msgid "CREDIT"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:169
+#, no-c-format
+msgid "CreditCard"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:172
+#, no-c-format
+msgid "INCOME"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:172
+#, no-c-format
+msgid "Income"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:175
+#, no-c-format
+msgid "EXPENSE"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:175
+#, no-c-format
+msgid "Expense"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:178
+#, no-c-format
+msgid "RECEIVABLE"
+msgstr ""
+
+#. Tag: entry
+#: details-impexp.docbook:181
+#, no-c-format
+msgid "PAYABLE"
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:190
+#, no-c-format
+msgid "Transactions and Splits"
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:193
+#, no-c-format
+msgid "Balanced transactions"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:195
+#, no-c-format
+msgid ""
+"As with GnuCash, data is entered in the form of transactions, each generally "
+"consisting of 2 or more split entries. In fact, valid GnuCash transactions will "
+"always contain at least 2 splits, and to conform to GnuCash's double-entry "
+"bookkeeping standard, these must be in monetary balance (i.e., they must "
+"balance out to zero). &kappname; encourages, but does not enforce, this "
+"standard, but any imported transaction which is not balanced will be marked in "
+"the ledger view as having a problem."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:207
+#, no-c-format
+msgid "Payees"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:209
+#, no-c-format
+msgid ""
+"&kappname; prefers that all transactions have a Payee (a generic term that "
+"encompasses both payees and payers), and unlike GnuCash, a list of these payees "
+"is maintained. Payee names are generated by the importer from the GnuCash "
+"transaction's Description field."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:218
+#, no-c-format
+msgid "Transfers"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:220
+#, no-c-format
+msgid ""
+"&kappname; uses the term Transfer to describe a transaction which does not "
+"involve a Category, but only transfers money between Asset and/or Liability "
+"accounts."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:228
+#, no-c-format
+msgid "Reconcile"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:230
+#, no-c-format
+msgid ""
+"&kappname; provides an account reconciliation function similar to that of "
+"GnuCash, and the corresponding transaction status will be imported."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:238
+#, no-c-format
+msgid "Commodities"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:240
+#, no-c-format
+msgid ""
+"GnuCash uses the term Commodity to cover both currencies and non-currency "
+"assets. These are treated separately in &kappname;."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:246
+#, no-c-format
+msgid "Currencies"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:248
+#, no-c-format
+msgid ""
+"&kappname; has built-in support for all foreign <link "
+"linkend=\"details.currencies\">currency</link> types. &kappname; also requires "
+"that the user specify a base currency, this being the default currency for new "
+"accounts. The importer will attempt to determine the most likely base currency, "
+"though this choice may be rejected in favor of an alternative."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:257
+#, no-c-format
+msgid ""
+"(NOTE: &kappname; does not currently support accounts denominated in 'defunct' "
+"currencies (except those replaced by the Euro). At present, it will be "
+"necessary to remove any such accounts from your GnuCash file before importing. "
+"We hope to improve on this situation in a future release.)"
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:266
+#, no-c-format
+msgid "Securities and Investments"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:268
+#, no-c-format
+msgid ""
+"Non-currency assets (normally stocks and bonds) are called Securities by "
+"&kappname;, and represent the main difference between the two products, in that "
+"&kappname; requires any account denominated in a security to be subordinate to "
+"an Investment Account. This is described in more detail in the chapter on <link "
+"linkend=\"details.investments\">Investments</link>. Though users may have "
+"implemented such a relationship, GnuCash imposes no defined structure on it, so "
+"the importer is unable to detect it and perform an automatic conversion. Three "
+"options are therefore made available:"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:281
+#, no-c-format
+msgid ""
+"Create a separate Investment account for each security, with the same name as "
+"the security"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:286
+#, no-c-format
+msgid ""
+"Create a single Investment account which will act as 'parent' for all security "
+"accounts"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:291
+#, no-c-format
+msgid ""
+"Create several Investment accounts, and assign securities to them as directed "
+"by the user."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:296
+#, no-c-format
+msgid ""
+"It depends entirely on user requirements which of these options is relevant in "
+"each situation, and in some cases, manual restructuring of accounts after "
+"importation may be necessary."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:304
+#, no-c-format
+msgid "Prices and currency rates"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:306
+#, no-c-format
+msgid ""
+"Security prices and currency exchange rates as displayed in the GnuCash Price "
+"Editor will be imported. In addition, price and rate entries will be generated "
+"from all transactions involving securities and multiple currencies."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:314 details-impexp.docbook:439
+#, no-c-format
+msgid "Online Quotes"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:316
+#, no-c-format
+msgid ""
+"For obtaining online price and currency rate quotations, GnuCash uses a package "
+"called Finance::Quote. Recent versions of &kappname; contain support for this "
+"package for obtaining stock quotes, and this will be used by default when "
+"importing data. You may however select to convert to the native method used by "
+"&kappname; which is covered in more detail in <link "
+"linkend=\"details.investments.onlinequotes\">online quotes</link>."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:325
+#, no-c-format
+msgid ""
+"If you choose to do so, the following dialog will allow selection of a 'native' "
+"&kappname; price source, or a user-defined source, for each account for which "
+"online quotes are required. However, the stock (ticker) symbol will be imported "
+"unchanged. Since this symbol will almost certainly be different in the two "
+"packages, it will need to be manually edited after completion of the import "
+"process. Future currency rate updates will not use Finance::Quote, and will "
+"always use the native retrieval method."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:348 details-impexp.docbook:452
+#, no-c-format
+msgid "Scheduled Transactions"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:350
+#, no-c-format
+msgid ""
+"&kappname; does not retain the separation made in GnuCash between template "
+"transactions and their frequency of occurrence. Transaction data will be "
+"duplicated if the same template is used in different schedules, but this is not "
+"likely to be of great significance."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:358
+#, no-c-format
+msgid "Schedule types"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:360
+#, no-c-format
+msgid ""
+"&kappname; classifies all schedules as one of three types, Bills, Deposits, or "
+"Transfers. Since GnuCash does not make such a distinction, the importer "
+"attempts to determine the classification from the accounts and direction of "
+"money movements. It may be that in some cases incorrect assumptions are made, "
+"and these will need manual correction."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:370
+#, no-c-format
+msgid "Suspect Schedules"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:372
+#, no-c-format
+msgid ""
+"Some features of GnuCash scheduled transactions are not available in "
+"&kappname;, so the importer tries in each case to reach a reasonable compromise "
+"in converting the data. These transactions will be flagged as suspect, and the "
+"user will be given the option of editing them directly during the import "
+"process. Examples of situations which may cause this are:"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:382
+#, no-c-format
+msgid ""
+"some frequency intervals supported in GnuCash are not currently available in "
+"&kappname;"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:387
+#, no-c-format
+msgid ""
+"&kappname; does not support the use of formulae and variables in amount fields"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:392
+#, no-c-format
+msgid "complex cases which have not yet been identified for import."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:396
+#, no-c-format
+msgid ""
+"Despite best efforts, it is possible that, due to the many options involved, a "
+"scheduled transaction may cause a fatal error within &kappname;. If this sort "
+"of problem seems to be occurring, the importer offers the option to drop all "
+"suspect schedules."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:406
+#, no-c-format
+msgid "Reports"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:408
+#, no-c-format
+msgid ""
+"&kappname; provides a comprehensive selection of configurable reports, "
+"described in more detail in <link linkend=\"details.reports\">Reports.</link> "
+"These will not necessarily, however, match precisely those reports available in "
+"GnuCash."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:418
+#, no-c-format
+msgid "Selecting Importer Options"
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:431
+#, no-c-format
+msgid "Investment Handling"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:433
+#, no-c-format
+msgid ""
+"See <link linkend=\"gncsecurities\">\"Securities and Investments\"</link> "
+"above."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:441
+#, no-c-format
+msgid ""
+"Turn this off if you wish to use the native method for future online price "
+"quotes."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:446
+#, no-c-format
+msgid ""
+"See <link linkend=\"details.impexp.gncquotes\">\"Online Quotes\"</link> above."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:454
+#, no-c-format
+msgid ""
+"See <link linkend=\"gncschedules\">\"Scheduled Transactions\"</link> above."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:460
+#, no-c-format
+msgid "Decoding Options"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:462
+#, no-c-format
+msgid ""
+"If your native language is written in letters or symbols which are different "
+"from those used in the 'Latin' languages (i.e., generally Western European), "
+"these are represented in a special fashion ('encoded') in your GnuCash file. If "
+"these letters are not displayed correctly on your screen, then they must be "
+"decoded. Currently, it is often not possible to detect accurately which form of "
+"decoding must be used, so you may need to set this option and select an entry "
+"from the list. In general, the first item in the list will be that which is "
+"considered appropriate for your locale (i.e., the country and language which "
+"was selected as native when your operating system was installed), so this "
+"should be tried first. Since the import process does not overwrite your GnuCash "
+"file, you are free to experiment with any of these selections."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:479
+#, no-c-format
+msgid "Transaction Notes option"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:481
+#, no-c-format
+msgid ""
+"Under some usage conditions, non-split GnuCash transactions may contain "
+"residual, often incorrect, memo data which is not normally visible to the user. "
+"When imported into &kappname; however, due to display differences, this data "
+"can become visible. Often, these transactions will have a Notes field "
+"describing the real purpose of the transaction. If this option is selected, "
+"these notes, if present, will be used to override the extraneous memo data."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:492
+#, no-c-format
+msgid "Debug Options"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:494
+#, no-c-format
+msgid ""
+"These need only be used in the event of import problems. If you have such "
+"problems, you should also report them to the &kappname; developer list "
+"&devlist;. Note that the traces produced by these options may contain data of a "
+"confidential nature, and the Anonymize option should be used if they are to be "
+"made publicly available."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:505
+#, no-c-format
+msgid "Import Report"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:507
+#, no-c-format
+msgid ""
+"At the end of processing, the importer produces a report showing the number of "
+"different entities processed, and any errors or anomalies encountered. This "
+"report will be displayed on screen, and may be saved to a file for later "
+"review. A full report may contain the following sections:"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:516
+#, no-c-format
+msgid "Record counts"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:520
+#, no-c-format
+msgid "Inconsistencies in account types and actions taken"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:524
+#, no-c-format
+msgid "Details of suspect schedules"
+msgstr ""
+
+#. Tag: author
+#: details-impexp.docbook:542 details-impexp.docbook:909
+#, no-c-format
+msgid "&Thomas.Baumgart; &Thomas.Baumgart.mail;"
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:545
+#, no-c-format
+msgid "QIF Importer"
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:548
+#, no-c-format
+msgid "QIF format considered harmful"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:550
+#, no-c-format
+msgid ""
+"Generally speaking, the QIF format should be avoided wherever possible. It is a "
+"poor choice for transporting financial data. Among other things, QIF suffers "
+"from these problems:"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:558
+#, no-c-format
+msgid ""
+"Lack of standardized format: Different versions of the same program will impart "
+"different meanings to the same element."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:563
+#, no-c-format
+msgid ""
+"Lack of transaction identifier: Because there is no ID number associated with "
+"each transaction, matching duplicate transactions is haphazard at best."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:569
+#, no-c-format
+msgid ""
+"Lack of expressiveness: The grammar is really simple, and cannot portray the "
+"depth of financial information found in today's financial environment."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:575
+#, no-c-format
+msgid ""
+"This is generally why Intuit stopped supporting QIF input at all with Quicken "
+"2005. If you have the option of getting data some other way, like OFX, always "
+"choose that option."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:583
+#, no-c-format
+msgid "How to import a QIF file"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:585
+#, no-c-format
+msgid ""
+"To import a QIF file, first ensure you have a valid &kappname; file open. Then "
+"select <menuchoice><guimenuitem>Import</guimenuitem> <guimenuitem>"
+"QIF...</guimenuitem> </menuchoice> from the <guimenu>File</guimenu> menu."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:602
+#, no-c-format
+msgid ""
+"The resulting dialog prompts for the QIF filename allowing you to locate the "
+"file by clicking on the <guibutton>Browse</guibutton> button."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:607
+#, no-c-format
+msgid ""
+"Also, &kappname; differentiates between the import of a bank statement file and "
+"historic data exported from another application. The default is to import a "
+"bank statement file. In case you are importing data from your previous personal "
+"finance manager application select the appropriate option."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:614
+#, no-c-format
+msgid ""
+"In general the default QIF profile should work with your QIF data. In some "
+"cases it might become necessary to use a modified QIF profile. See the <link "
+"linkend=\"details.impexp.qifimp.profile\">next section</link> "
+"for more details on that subject."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:621
+#, no-c-format
+msgid "Click on <guibutton>Import</guibutton> to import the QIF file."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:625
+#, no-c-format
+msgid ""
+"&kappname; will start scanning the file to determine the formats used to "
+"represent dates and numbers. In case it cannot determine a date format "
+"unambiguously, &kappname; will ask the user to select one from the list of "
+"possible date formats."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:632
+#, no-c-format
+msgid ""
+"Next, &kappname; imports the data and creates all necessary objects, such as "
+"payee information, accounts and category records, and stock price information. "
+"Wherever possible, existing transactions will be matched against the imported "
+"information. A progress bar is shown and updated during the import process."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:639
+#, no-c-format
+msgid ""
+"In case &kappname; could not detect the name of the account to be imported, the "
+"user will be asked to select the account into which the data should be "
+"imported. If the account does not already exist in your file, a new account can "
+"be created by clicking on <guibutton>Create</guibutton>."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:646
+#, no-c-format
+msgid ""
+"At the end of the import, &kappname; shows a statement import statistics "
+"window."
+msgstr ""
+
+#. Tag: screeninfo
+#: details-impexp.docbook:653
+#, no-c-format
+msgid "<screeninfo>Statement statistics</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: details-impexp.docbook:659
+#, no-c-format
+msgid "<phrase>Statement statistics</phrase>"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:665
+#, no-c-format
+msgid ""
+"After importing, all of the imported transactions will be shown with a yellow "
+"background in the ledger view. In case &kappname; was able to match an imported "
+"transaction with an already existing transaction, the background is shown in "
+"light green."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:672
+#, no-c-format
+msgid ""
+"The next step is to verify the imported data and accept it. This is a general "
+"process and also applies to imports from other sources. It is outlined in a "
+"separate section of this document."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:679
+#, no-c-format
+msgid ""
+"The colors used to mark imported and matched transactions are customizable and "
+"may be different in your environment."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:730
+#, no-c-format
+msgid "Setting up a QIF profile"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:732
+#, no-c-format
+msgid ""
+"Because there is no universally standard format for a QIF file, different "
+"vendors have taken liberties with the format, and introduced their own nuances. "
+"The QIF Profile allows &kappname; to know about the peculiarities of your file. "
+"To edit an existing QIF Profile, or to create a new one, press the <guibutton>"
+"New</guibutton> button on the QIF Import dialog, near the profile selector."
+msgstr ""
+
+#. Tag: phrase
+#: details-impexp.docbook:747
+#, no-c-format
+msgid "QIF Profile Editor"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:754
+#, no-c-format
+msgid ""
+"Previous versions of &kappname; used to have a tab for date and amount "
+"specifications. &kappname; now determines those settings by scanning the file. "
+"If it cannot figure out all settings, it will interrogate the user during "
+"import."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:803
+#, no-c-format
+msgid "Transaction matching"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:805
+#, no-c-format
+msgid ""
+"As noted previously, one of the major drawbacks of the QIF format is the lack "
+"of a unique identifier for each transaction. Thus, if you import a QIF file and "
+"some of the transactions are already in your ledger, you may get duplicates. "
+"&kappname; attempts to get around this by looking for transactions that look "
+"similar to those you already have. If it finds something that looks like the "
+"same transaction, it will match the apparent duplicate."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:815
+#, no-c-format
+msgid ""
+"This can be a problem if you have transactions that look too similar but are "
+"actually different. In this case, you can unmatch those transactions later in "
+"the ledger view."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:823
+#, no-c-format
+msgid "Writing an import filter"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:825
+#, no-c-format
+msgid ""
+"Sometimes you may have data in a custom format, like comma-separated-values "
+"(CSV) or something else unique to your situation. As of version 4.6, &kappname; "
+"includes a CSV Importer Plugin, but you can still import other types of files "
+"into &kappname; using a QIF Import Filter. A filter is a custom program you "
+"write which takes your special file as input, and produces a QIF file as "
+"output. This can be a shell script, a perl script, a compiled program written "
+"in C/C++, or anything else you can dream of, as long as the system can run it."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:836
+#, no-c-format
+msgid ""
+"To use it, edit your favorite QIF Profile, and select the Filter tab. Enter the "
+"location of your filter program where prompted. Then, whenever you do a QIF "
+"import using this profile, the file you select for importing will be run "
+"through your filter first."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:843
+#, no-c-format
+msgid ""
+"A common problem is to convert a list of comma-separated-values into a QIF "
+"file. This is a textbook case for the awk tool. Create a script called "
+"csv2qif.awk, with the following two lines as contents:"
+msgstr ""
+
+#. Tag: programlisting
+#: details-impexp.docbook:849
+#, no-c-format
+msgid ""
+"BEGIN { FS=&quot;,&quot;; print &quot;!Type:Bank&quot; }\n"
+"\n"
+"        { print &quot;D&quot;$1; print &quot;T&quot;$2; print &quot;N&quot;$3; "
+"print &quot;P&quot;$4; print &quot;M&quot;$5; print &quot;^&quot; }"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:851
+#, no-c-format
+msgid ""
+"Then, change the QIF keys (D,T,N,P,M) to match the order of your csv data. Set "
+"the input filter to <userinput>awk -f csv2qif.awk</userinput>."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:856
+#, no-c-format
+msgid ""
+"Another problem sometimes arises in the encoding of QIF files. &kappname; "
+"expects files to be UTF8 encoded. If your file is encoded in something else, it "
+"can be useful to convert it to UTF8. For example to convert it from iso-8859-1, "
+"you would set the input filter to <userinput>recode "
+"iso-8859-1..utf-8</userinput>."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:866
+#, no-c-format
+msgid "Special &kappname; QIF extensions"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:868
+#, no-c-format
+msgid ""
+"As already mentioned, one of the major drawbacks of the QIF format is the lack "
+"of a unique identifier for each transaction. If you are writing your own QIF "
+"file creator (or filter, as described above), you can overcome this problem. "
+"&kappname; supports the '#' field. The importer will interpret this as a unique "
+"transaction ID, and disregard the record if the transaction is already in the "
+"system."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:880
+#, no-c-format
+msgid "QIF Exporter"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:881
+#, no-c-format
+msgid ""
+"To export one of your accounts to a QIF file, choose the <menuchoice>"
+"<guimenuitem>Export</guimenuitem> <guimenuitem>QIF</guimenuitem></menuchoice> "
+"from the <guimenu>File</guimenu> menu. You will be prompted for which single "
+"account to export, what file to export it to, and what QIF Profile to use."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:888
+#, no-c-format
+msgid "At the moment, QIF Exporter does not handle export of investments."
+msgstr ""
+
+#. Tag: phrase
+#: details-impexp.docbook:899
+#, no-c-format
+msgid "QIF Export"
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:911
+#, no-c-format
+msgid "OFX Importer Plugin"
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:914
+#, no-c-format
+msgid "Getting the plugin"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:916
+#, no-c-format
+msgid ""
+"&kappname; will import OFX files painlessly. However, this functionality is not "
+"built into the core program. You must obtain and install the OFX Importer "
+"Plugin. Once that is installed, the command to import OFX files will "
+"automatically show up under the <menuchoice><guimenu>File</guimenu> "
+"<guimenuitem>Import</guimenuitem></menuchoice> menu."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:924
+#, no-c-format
+msgid ""
+"Note that many prepackaged versions of &kappname; were built with the OFX "
+"importer already included or available as a separate package. If the OFX "
+"importer does not seem to be installed in your version, the first place to "
+"check is in the same place you got your base &kappname; package."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:931
+#, no-c-format
+msgid ""
+"If you have installed from RPM, the OFX Importer Plugin is contained within the "
+"kmymoney-ofx RPM. It should be available from whatever source you got the base "
+"&kappname; RPM. If you have built from sources, all you need to do is have "
+"preferably the libOFX 0.9 development headers and libraries installed on your "
+"system. The &kappname; build process will detect these and compile the plugin. "
+"At the time of release of &kappname; 4.6, the latest libofx version was 0.9.4, "
+"which is also the minimum required version."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:941
+#, no-c-format
+msgid ""
+"Should you run into trouble trying to compile &kappname;, and you are certain "
+"you have the correct version of libOFX installed, please contact the developers "
+"list &devlist; for assistance. Include a copy of your config.log file, "
+"compressed first via gzip."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:950
+#, no-c-format
+msgid "What is OFX"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:952
+#, no-c-format
+msgid ""
+"OFX stands for <quote>Open Financial Exchange</quote>"
+". According to the <ulink url=\"http://www.ofx.net/\">OFX web site</ulink> "
+"<quote>Open Financial Exchange (OFX) is a unified specification for the "
+"electronic exchange of financial data between financial institutions, "
+"businesses and consumers via the Internet. OFX is not a financial "
+"institution.</quote> The specification defines formats for transfer of "
+"financial data both by file and by direct interchange."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:962
+#, no-c-format
+msgid ""
+"Although the standard is much more complete and robust than QIF, there are "
+"still variations, depending on the specific implementation used by any "
+"institution. OFX files may have an extension of <quote>OFX</quote> or <quote>"
+"QFX</quote> (upper or lower case); this does not imply any particular "
+"difference in the content. The specification is based on XML, so the files can "
+"be read in any text editor, but as whitespace is not relevant to the content "
+"itself, some implementations do not use any, making it very hard for a human to "
+"read."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:973
+#, no-c-format
+msgid ""
+"Another site with good information is <ulink url=\"http:/ofxhome.com/\">"
+"OFX Home</ulink>. They maintain a directory of financial institutions that "
+"support OFX. This can be useful if you have problems setting up <link "
+"linkend=\"details.impexp.ofxdirectconnect\">OFX direct connect.</link> "
+"They also have a forum for discussions about OFX issues."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:983
+#, no-c-format
+msgid "Importing an OFX file"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:985
+#, no-c-format
+msgid ""
+"The most basic way to import an OFX file is to choose the importer from the "
+"menu bar. From the <guimenu>File</guimenu> menu, choose <guimenuitem>"
+"Import</guimenuitem>, and then <guimenuitem>OFX...</guimenuitem>"
+". If OFX does not show up under Import, you do not have the OFX Importer Plugin "
+"installed correctly. Please see the previous section."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:994
+#, no-c-format
+msgid ""
+"The first thing the importer will do is ask you into which account to import "
+"the transactions. If there are transactions from multiple accounts in your "
+"file, you will be asked this question multiple times."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:1000
+#, no-c-format
+msgid ""
+"After importing, some of your transactions may be shown with an exclamation "
+"mark on a yellow triangle in the ledger. This is because they need to be "
+"assigned a category. The importer was not able to automatically assign a "
+"category based on your past transaction history. You can edit each transaction "
+"in the ledger to assign a category, and the mark will be removed."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:1008
+#, no-c-format
+msgid ""
+"Please note that this section describes the <quote>native</quote> "
+"OFX importer. OFX files may also be imported using the AqBanking Importer "
+"Plugin if you have installed that. Note that the two importers do behave "
+"slightly differently, and they are written and supported by two different "
+"developers."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:1017
+#, no-c-format
+msgid "Importing Investments"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:1019
+#, no-c-format
+msgid ""
+"Please note that if you are importing a file with investment transactions, "
+"those investments must first exist in your &kappname; file. The trading symbol "
+"is used to match, so please ensure that the symbol in &kappname; is exactly the "
+"same as the one in the file you're importing."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:1028
+#, no-c-format
+msgid "Web Connect"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:1030
+#, no-c-format
+msgid ""
+"The easiest way to import an OFX file is to set up Web Connect. Visit your "
+"bank's web site, and click on a link to download an OFX file. Your browser "
+"should ask you what program you would like to use to open the file. Point your "
+"browser to &kappname;. It will then import the downloaded OFX file into the "
+"&kappname; file you most recently had open. You can also change the file "
+"associations of your desktop environment, and have &kappname; open the OFX file "
+"automatically for you."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:1040
+#, no-c-format
+msgid ""
+"If you need to import the OFX file into some other &kappname; file, load up "
+"that file in &kappname; first, and then visit your bank's web site."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:1047
+#, no-c-format
+msgid "Direct Connect"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:1049
+#, no-c-format
+msgid ""
+"OFX Direct Connect is now supported in &kappname;. This gives you the ability "
+"to contact your bank directly to obtain statements. In the future, there will "
+"be more help written, and this will be moved to its own section."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:1055
+#, no-c-format
+msgid ""
+"To enable this feature, you must compile &kappname; with the "
+"--enable-ofxbanking switch (now the default)."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:1060
+#, no-c-format
+msgid ""
+"Please be warned: Many banks require a separate signup, will give you a "
+"separate password or PIN, and may even charge you a separate fee for this "
+"service. No bank directly supports &kappname;. You will have to tell them you "
+"want to bank directly from MS Money or Quicken."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:1067
+#, no-c-format
+msgid ""
+"The first step is to configure each account for which you wish to download "
+"statements. Go to the Accounts view, right click on the account you wish to "
+"configure, and choose <guimenuitem>Map to online account...</guimenuitem>"
+". In case more than one online banking plugin is installed on your system you "
+"will be asked which one to use. For the internal OFX method select <guimenuitem>"
+"KMyMoney OFX</guimenuitem>. A list of banks will be downloaded from the "
+"Internet and a wizard will guide you through choosing a bank, entering your "
+"username and password, and selecting an account. Should you find that your bank "
+"is not listed, then it may still be possible to use the manual option. Your "
+"bank may be able to provide the required parameters, or you may have to do some "
+"research to find them."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:1082
+#, no-c-format
+msgid ""
+"Setting up OFX Direct Connect can sometimes be a challenge, especially as the "
+"implementation at most institutions do not provide sufficient details in error "
+"messages. One particular issue to note is that many institutions require you to "
+"change your password the first time you access it online using this method. "
+"Unfortunately, at this time, the library that &kappname; uses (libofx) does not "
+"have a way to interactively change a password. In some cases, it is possible to "
+"get a techincal support person at the institution to change the password for "
+"you. Until we are able to expand this section with more detailed "
+"troubleshooting information, if you have trouble getting this to work for you, "
+"you can ask for help on the &kappname; developer list &devlist;."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:1097
+#, no-c-format
+msgid ""
+"Once you have an account set up with online banking, go to the ledger for that "
+"account. Then from the <guimenu>Account</guimenu> menu, choose <guimenuitem>"
+"Update account...</guimenuitem>. This will connect to your bank, and download a "
+"statement for the last 60 days."
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:1105
+#, no-c-format
+msgid ""
+"In version of &kappname; prior to 4.6, the payee name was always taken from the "
+"PAYEEID field. As of version 4.6, the payee name can be based on either the "
+"PAYEEID, NAME, or MEMO field in the OFX transaction. You can configure this "
+"feature and some other OFX direct connect settings by selecting the appropriate "
+"tab in the <link linkend=\"details.accounts.edit\">Edit account</link> dialog."
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:1117
+#, no-c-format
+msgid "Exporting an OFX file"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:1119
+#, no-c-format
+msgid ""
+"It is not possible to export your data as an OFX file currently. If you are "
+"interested to contribute in this area, please contact the libofx development "
+"team for details."
+msgstr ""
+
+#. Tag: chapter
+#: details-impexp.docbook:1125
+#, no-c-format
+msgid "&details-impexp-csv;"
+msgstr ""
+
+#. Tag: title
+#: details-impexp.docbook:1133
+#, no-c-format
+msgid "Writing Importer Plugins"
+msgstr ""
+
+#. Tag: para
+#: details-impexp.docbook:1135
+#, no-c-format
+msgid ""
+"&kappname; contains explicit support for importer plugins. If you have a custom "
+"format, and you would like to write an importer plugin, we would value your "
+"contribution. To do so, you'll need to compile the program from source. Then "
+"use the OFX Importer Plugin as an example."
+msgstr ""

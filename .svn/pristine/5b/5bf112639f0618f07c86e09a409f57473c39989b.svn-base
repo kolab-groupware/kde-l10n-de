@@ -1,0 +1,1220 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2011, 2012, 2013, 2014.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2009, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011, 2012, 2013.
+# Markus Slopianka <kamikazow@fishmouth.net>, 2010.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
+# Björn Ricks <bjoern.ricks@intevation.de>, 2010.
+# Intevation GmbH, 2010, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: akonadi_imap_resource\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-10-29 05:22+0000\n"
+"PO-Revision-Date: 2014-10-05 21:12+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: addcollectiontask.cpp:48
+#, kde-format
+msgid "Cannot add IMAP folder '%1' for a non-existing parent folder '%2'."
+msgstr ""
+"Der IMAP-Ordner „%1“ kann nicht hinzugefügt werden, da der Eltern-Ordner "
+"„%2“ nicht existiert."
+
+#: addcollectiontask.cpp:84
+#, kde-format
+msgid "Failed to create the folder '%1' on the IMAP server. "
+msgstr "Fehler beim Erstellen des Ordners „%1“ auf dem IMAP-Server."
+
+#: addcollectiontask.cpp:104 movecollectiontask.cpp:145
+#, kde-format
+msgid ""
+"Failed to subscribe to the folder '%1' on the IMAP server. It will disappear "
+"on next sync. Use the subscription dialog to overcome that"
+msgstr ""
+"Der Ordner „%1“ auf dem IMAP-Server kann nicht abonniert werden. Beim "
+"nächsten Abgleich wird dieser wieder verschwinden. Benutzen Sie den "
+"Abonnierungsdialog, um dieses Problem zu beheben."
+
+#: addcollectiontask.cpp:147 changecollectiontask.cpp:278
+#, kde-format
+msgid "Failed to write some annotations for '%1' on the IMAP server. %2"
+msgstr ""
+"Fehler beim Schreiben einiger Annotationen für „%1“ auf dem IMAP-Server. %2"
+
+#: additemtask.cpp:141 changeitemtask.cpp:210 changeitemtask.cpp:237
+#: moveitemstask.cpp:226
+msgid "Could not determine the UID for the newly created message on the server"
+msgstr ""
+"Die UID für die neu auf dem Server erzeugte Nachricht kann nicht bestimmt "
+"werden"
+
+#: changecollectiontask.cpp:48
+#, kde-format
+msgid "Cannot modify IMAP folder '%1', it does not exist on the server."
+msgstr ""
+"Der IMAP-Ordner „%1“ kann nicht modifiziert werden; er ist auf dem Server "
+"nicht vorhanden."
+
+#: changecollectiontask.cpp:61
+#, kde-format
+msgid ""
+"ACLs for '%1' need to be retrieved from the IMAP server first. Skipping ACL "
+"change"
+msgstr ""
+"Die Zugriffskontrolllisten für „%1“ müssen zunächst vom IMAP-Server "
+"abgerufen werden. Änderungen an der Zugriffskontrolle werden übersprungen."
+
+#: changecollectiontask.cpp:238
+msgid "Failed to rename the folder, restoring folder list."
+msgstr ""
+"Fehler beim Umbenennen des Ordners; die Ordnerliste wird wiederhergestellt."
+
+#: changecollectiontask.cpp:257
+#, kde-format
+msgid ""
+"Failed to subscribe to the renamed folder '%1' on the IMAP server. It will "
+"disappear on next sync. Use the subscription dialog to overcome that"
+msgstr ""
+"Der Ordner „%1“ auf dem IMAP-Server kann nicht umbenannt werden. Die "
+"Änderung wird beim nächsten Abgleich wieder verschwinden. Benutzen Sie den "
+"Abonnierungsdialog, um dieses Problem zu beheben."
+
+#: changecollectiontask.cpp:268
+#, kde-format
+msgid "Failed to write some ACLs for '%1' on the IMAP server. %2"
+msgstr ""
+"Fehler beim Schreiben einiger Zugriffskontrollen für „%1“ auf dem IMAP-"
+"Server. %2"
+
+#: imapresource.cpp:49
+msgid "IMAP Account"
+msgstr "IMAP-Konto"
+
+#. i18n: ectx: label, entry (ImapServer), group (network)
+#: imapresource.kcfg:10
+msgid "IMAP server"
+msgstr "IMAP-Server"
+
+#. i18n: ectx: label, entry (ImapPort), group (network)
+#: imapresource.kcfg:13
+msgid "Defines the port the IMAP service is running on"
+msgstr "Legt den Port fest, auf dem der IMAP-Dienst läuft."
+
+#. i18n: ectx: label, entry (UserName), group (network)
+#: imapresource.kcfg:17
+msgid "Username"
+msgstr "Benutzername"
+
+#. i18n: ectx: label, entry (Safety), group (network)
+#: imapresource.kcfg:20
+msgid "Defines the encryption type to use"
+msgstr "Legt die verwendete Verschlüsselungsart fest."
+
+#. i18n: ectx: label, entry (OverrideEncryption), group (network)
+#: imapresource.kcfg:24
+msgid "Override configured encryption mode"
+msgstr "Eingerichteten Verschlüsselungsmodus überschreiben"
+
+#. i18n: ectx: label, entry (Authentication), group (network)
+#: imapresource.kcfg:27
+msgid "Defines the authentication type to use"
+msgstr "Legt die Authentifizierungsmethode fest."
+
+#. i18n: ectx: label, entry (SubscriptionEnabled), group (network)
+#: imapresource.kcfg:31
+msgid "Defines if the server side subscription is enabled"
+msgstr "Legt fest, ob serverseitige Abonnements verwendet werden."
+
+#. i18n: ectx: label, entry (DisconnectedModeEnabled), group (cache)
+#: imapresource.kcfg:40
+msgid "Defines if all the IMAP data should be cached locally all the time"
+msgstr ""
+"Legt fest, ob sämtliche IMAP-Daten die ganze Zeit lokal zwischengespeichert "
+"werden sollen."
+
+#. i18n: ectx: label, entry (IntervalCheckEnabled), group (cache)
+#: imapresource.kcfg:44
+msgid "Defines if interval checking is enabled."
+msgstr "Legt fest, ob der Posteingang regelmäßig geprüft wird."
+
+#. i18n: ectx: label, entry (IntervalCheckTime), group (cache)
+#: imapresource.kcfg:48
+msgid "Check interval in minutes"
+msgstr "Prüfintervall in Minuten"
+
+#. i18n: ectx: label, entry (RetrieveMetadataOnFolderListing), group (cache)
+#: imapresource.kcfg:53
+msgid ""
+"Defines if the annotations, ACLs and quota information of mailboxes should\n"
+"             also be retrieved when the mailboxes get listed."
+msgstr ""
+"Legt fest ob Anmerkungen, ACLs und Kontingent-Informationen der Postfächer "
+"auch\n"
+"            abgerufen werden sollen, wenn das Postfach aufgelistet wird. "
+
+#. i18n: ectx: label, entry (AutomaticExpungeEnabled), group (cache)
+#: imapresource.kcfg:58
+msgid ""
+"Defines if the expunge command is issued automatically, otherwise it should "
+"be\n"
+"             triggered manually through the D-Bus interface."
+msgstr ""
+"Legt fest, ob der expunge-Befehl (Ordner komprimieren) automatisch "
+"ausgeführt werden soll.\n"
+"Ansonsten muss er manuell über die D-Bus-Schnittstelle aufgerufen werden."
+
+#. i18n: ectx: label, entry (TrashCollection), group (cache)
+#: imapresource.kcfg:62
+msgid "Define which folder is used for trash"
+msgstr "Den Ordner für den Papierkorb festlegen"
+
+#. i18n: ectx: label, entry (TrashCollectionMigrated), group (cache)
+#: imapresource.kcfg:66
+msgid "Define if the trash collection received the special attribute"
+msgstr ""
+"Festlegen, ob die Papierkorb-„Collection“ das spezielle Attribut erhalten hat"
+
+#. i18n: ectx: label, entry (UseDefaultIdentity), group (cache)
+#: imapresource.kcfg:70
+msgid "Define if account uses the default identity"
+msgstr "Festlegen, ob der Zugang die vorgegebene Identität verwendet"
+
+#. i18n: ectx: label, entry (AccountIdentity), group (cache)
+#: imapresource.kcfg:74
+msgid "Identity account"
+msgstr "Konto der Identität"
+
+#. i18n: ectx: label, entry (KnownMailBoxes), group (cache)
+#: imapresource.kcfg:77
+msgid "List of mailbox names reported by the server the last time"
+msgstr "Liste der vom Server zuletzt gemeldeten Postfächer"
+
+#. i18n: ectx: label, entry (IdleRidPath), group (idle)
+#: imapresource.kcfg:82
+msgid "RID path to the mailbox to watch for changes"
+msgstr "RID-Pfad zum Postfach, um es auf Änderungen zu überwachen."
+
+#. i18n: ectx: label, entry (SieveSupport), group (siever)
+#: imapresource.kcfg:87
+msgid "Define if server supports sieve"
+msgstr "Legt fest, ob der Server Sieve unterstützt."
+
+#. i18n: ectx: label, entry (SieveReuseConfig), group (siever)
+#: imapresource.kcfg:91
+msgid "Define if we reuse host and login configuration"
+msgstr ""
+"Legt fest, ob Rechner- und Anmeldeinformationen wieder verwendet werden."
+
+#. i18n: ectx: label, entry (SievePort), group (siever)
+#: imapresource.kcfg:95
+msgid "Define sieve port"
+msgstr "Sieve-Port festlegen"
+
+#. i18n: ectx: label, entry (SieveAlternateUrl), group (siever)
+#: imapresource.kcfg:99
+msgid "Define alternate URL"
+msgstr "Legt alternative Adresse fest."
+
+#. i18n: ectx: label, entry (SieveVacationFilename), group (siever)
+#: imapresource.kcfg:102
+msgid "Define default sieve vacation filename"
+msgstr "Legt vorgegeben Sieve-Vacation-Dateinamen fest."
+
+#. i18n: ectx: label, entry (SieveCustomUsername), group (siever)
+#: imapresource.kcfg:106
+msgid "Define username used from custom server sieve url"
+msgstr ""
+"Definiert den Benutzernamen, der von der benutzerdefinierten Adresse (URL) "
+"des Sieve-Servers verwendet wird"
+
+#. i18n: ectx: label, entry (SieveCustomAuthentification), group (siever)
+#: imapresource.kcfg:110
+msgid "Defines the type of identification used by custom sieve server"
+msgstr ""
+"Legt die Art der Identifizierung fest, die vom benutzerdefinierten Sieve-"
+"Server verwendet werden"
+
+#: imapresourcebase.cpp:241
+msgid "No server configured yet."
+msgstr "Es ist noch kein Server eingerichtet."
+
+#: imapresourcebase.cpp:274
+msgctxt "@title:window"
+msgid "Serverside Subscription"
+msgstr "Serverseitiges Abonnement"
+
+#: imapresourcebase.cpp:296
+msgid "Connection established."
+msgstr "Verbindung aufgebaut."
+
+#: imapresourcebase.cpp:312
+msgid "Server is not available."
+msgstr "Der Server ist nicht verfügbar."
+
+#: imapresourcebase.cpp:367
+#, kde-format
+msgctxt "@info:status"
+msgid "Adding item in '%1'"
+msgstr "Element wird in „%1“ wird hinzugefügt"
+
+#: imapresourcebase.cpp:374
+#, kde-format
+msgctxt "@info:status"
+msgid "Updating item in '%1'"
+msgstr "Element in „%1“ wird aktualisiert"
+
+#: imapresourcebase.cpp:382
+msgctxt "@info:status"
+msgid "Updating items"
+msgstr "Elemente werden aktualisiert"
+
+#: imapresourcebase.cpp:396
+msgctxt "@info:status"
+msgid "Removing items"
+msgstr "Elemente werden entfernt"
+
+#: imapresourcebase.cpp:414
+#, kde-format
+msgctxt "@info:status"
+msgid "Moving items from '%1' to '%2'"
+msgstr "Elemente werden von „%1“ nach „%2“ verschoben"
+
+#: imapresourcebase.cpp:425
+msgctxt "@info:status"
+msgid "Retrieving folders"
+msgstr "Ordner empfangen"
+
+#: imapresourcebase.cpp:432
+#, kde-format
+msgctxt "@info:status"
+msgid "Retrieving extra folder information for '%1'"
+msgstr "Zusätzliche Ordnerinformationen für „%1“ werden abgeholt"
+
+#: imapresourcebase.cpp:450
+#, kde-format
+msgctxt "@info:status"
+msgid "Creating folder '%1'"
+msgstr "Ordner „%1“ wird erstellt"
+
+#: imapresourcebase.cpp:456
+#, kde-format
+msgctxt "@info:status"
+msgid "Updating folder '%1'"
+msgstr "Ordner „%1“ wird aktualisiert"
+
+#: imapresourcebase.cpp:469
+#, kde-format
+msgctxt "@info:status"
+msgid "Removing folder '%1'"
+msgstr "Ordner „%1“ wird gelöscht"
+
+#: imapresourcebase.cpp:477
+#, kde-format
+msgctxt "@info:status"
+msgid "Moving folder '%1' from '%2' to '%3'"
+msgstr "Ordner „%1“ wird von „%2“ nach „%3“ verschoben"
+
+#: imapresourcebase.cpp:506
+msgctxt "@info:status"
+msgid "Searching..."
+msgstr "Suche läuft ..."
+
+#: movecollectiontask.cpp:47
+#, kde-format
+msgid "Cannot move IMAP folder '%1', it does not exist on the server."
+msgstr ""
+"Der IMAP-Ordner „%1“ kann nicht verschoben werden; er ist auf dem Server "
+"nicht vorhanden."
+
+#: movecollectiontask.cpp:54
+#, kde-format
+msgid ""
+"Cannot move IMAP folder '%1' out of '%2', '%2' does not exist on the server."
+msgstr ""
+"Der IMAP-Ordner „%1“ kann nicht aus „%2“ verschoben werden; „%2“ ist auf dem "
+"Server nicht vorhanden."
+
+#: movecollectiontask.cpp:62
+#, kde-format
+msgid ""
+"Cannot move IMAP folder '%1' to '%2', '%2' does not exist on the server."
+msgstr ""
+"Der IMAP-Ordner „%1“ kann nicht nach „%2“ verschoben werden; „%2“ ist auf "
+"dem Server nicht vorhanden."
+
+#: moveitemstask.cpp:54
+msgid "Cannot move message, it does not exist on the server."
+msgstr ""
+"Die Nachricht kann nicht verschoben werden; sie nicht auf dem Server "
+"vorhanden."
+
+#: moveitemstask.cpp:61
+#, kde-format
+msgid "Cannot move message out of '%1', '%1' does not exist on the server."
+msgstr ""
+"Die Nachricht kann nicht aus „%1“ verschoben werden; „%1“ ist nicht auf dem "
+"Server vorhanden."
+
+#: moveitemstask.cpp:69
+#, kde-format
+msgid "Cannot move message to '%1', '%1' does not exist on the server."
+msgstr ""
+"Die Nachricht kann nicht nach „%1“ verschoben werden; „%1“ ist nicht auf dem "
+"Server vorhanden."
+
+#: moveitemstask.cpp:128
+#, kde-format
+msgid "Failed to copy item, it has no message payload. Remote id: %1"
+msgstr ""
+"Element kann nicht kopiert werden; es enthält keine Nachrichtendaten. Remote "
+"id: %1"
+
+#: moveitemstask.cpp:177
+#, kde-format
+msgid ""
+"Failed to mark the message from '%1' for deletion on the IMAP server. It "
+"will reappear on next sync."
+msgstr ""
+"Die Nachricht kann nicht zum Löschen aus „%1“ auf dem IMAP-Server markiert "
+"werden. Sie wird beim nächsten Abgleich wieder erscheinen."
+
+#: removecollectionrecursivetask.cpp:131 removecollectionrecursivetask.cpp:148
+#: removecollectionrecursivetask.cpp:161
+msgid "Failed to delete the folder, restoring folder list."
+msgstr ""
+"Fehler beim Löschen des Ordners, die Ordnerliste wird wiederhergestellt."
+
+#: removecollectionrecursivetask.cpp:166
+msgid "Failed to find the folder to be deleted, restoring folder list."
+msgstr ""
+"Der zu löschende Ordner kann nicht gefunden werden, die Ordnerliste wird "
+"wiederhergestellt."
+
+#: resourcetask.cpp:69
+msgid "There is currently no connection to the IMAP server."
+msgstr "Derzeit besteht keine Verbindung zu dem IMAP-Server."
+
+#: resourcetask.cpp:100
+msgid "There is currently no session to the IMAP server available."
+msgstr "Derzeit besteht keine Verbindung zu dem IMAP-Server."
+
+#: resourcetask.cpp:130 resourcetask.cpp:141
+msgid "Connection lost"
+msgstr "Verbindung abgebrochen"
+
+#: resourcetask.cpp:484
+msgid "killed"
+msgstr "Abgebrochen"
+
+#: retrievecollectionmetadatatask.cpp:236
+#, kde-format
+msgid ""
+"<p>Your access rights to folder <b>%1</b> have been restricted, it will no "
+"longer be possible to add messages to this folder.</p>"
+msgstr ""
+"<p>Die Zugriffsrechte zum Ordner <b>%1</b> sind eingeschränkt. Sie können "
+"keine weiteren Nachrichten zu diesem Ordner hinzufügen.</p>"
+
+#: retrievecollectionmetadatatask.cpp:239
+msgid "Access rights revoked"
+msgstr "Zugriffsrechte wurden widerrufen"
+
+#: retrievecollectionstask.cpp:169
+msgid "Inbox"
+msgstr "Posteingang"
+
+#: retrievecollectionstask.cpp:177
+msgid "Shared Folders"
+msgstr "Freigegebene Ordner"
+
+#: retrieveitemstask.cpp:501
+#, kde-format
+msgctxt "@info:status"
+msgid "Fetching missing mail bodies in %3: %1/%2"
+msgstr "Fehlende Nachrichtentexte in %3 werden abgerufen: %1/%2"
+
+#: retrieveitemtask.cpp:51
+msgid "Remote id is empty or invalid"
+msgstr "Die entfernte Kennung ist leer oder ungültig"
+
+#: retrieveitemtask.cpp:122
+msgid "No message retrieved, failed to read the message."
+msgstr "Keine Nachricht erhalten, das Lesen der Nachricht ist fehlgeschlagen."
+
+#: retrieveitemtask.cpp:142
+msgid "No message retrieved, server reply was empty."
+msgstr "Keine Nachricht erhalten. Die Serverantwort enthielt keine Daten."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, ServerInfo)
+#. i18n: ectx: property (text), widget (QPushButton, showServerInfo)
+#: serverinfo.ui:14 setupserverview_desktop.ui:595
+#: setupserverview_mobile.ui:440
+msgid "Server Info"
+msgstr "Serverinfo"
+
+#: serverinfodialog.cpp:32
+msgctxt ""
+"@title:window Dialog title for dialog showing information about a server"
+msgid "Server Info"
+msgstr "Serverinfo"
+
+#: sessionpool.cpp:235 sessionpool.cpp:384
+#, kde-format
+msgid ""
+"Could not connect to the IMAP-server %1.\n"
+"%2"
+msgstr ""
+"Die Verbindung zum IMAP-Server %1 kann nicht hergestellt werden.\n"
+"%2"
+
+#: sessionpool.cpp:239
+#, kde-format
+msgid ""
+"Could not connect to the IMAP server.\n"
+"%1"
+msgstr ""
+"Die Verbindung zum IMAP-Server kann nicht hergestellt werden.\n"
+"%1"
+
+#: sessionpool.cpp:278
+#, kde-format
+msgid "Could not create another extra connection to the IMAP-server %1."
+msgstr ""
+"Es kann keine zusätzliche Verbindung zum IMAP-Server %1 hergestellt werden."
+
+#: sessionpool.cpp:296 sessionpool.cpp:366 sessionpool.cpp:407
+#: sessionpool.cpp:466
+msgid "Disconnected from server during login."
+msgstr "Die Verbindung wurde während der Anmeldung unterbrochen."
+
+#: sessionpool.cpp:310
+msgid "Could not read the password: user rejected wallet access"
+msgstr ""
+"Das Passwort kann nicht gelesen werden: Der Benutzer hat den Zugriff auf den "
+"Passwortspeicher verweigert."
+
+#: sessionpool.cpp:318
+msgid "Empty password"
+msgstr "Leeres Passwort"
+
+#: sessionpool.cpp:330
+#, kde-format
+msgid ""
+"You requested TLS/SSL to connect to %1, but your system does not seem to be "
+"set up for that."
+msgstr ""
+"Sie haben TLS/SSL für die Verbindung zu %1 eingestellt, Ihr System scheint "
+"jedoch nicht für diese Verbindungsmethode eingerichtet zu sein."
+
+#: sessionpool.cpp:390
+#, kde-format
+msgid ""
+"Could not connect to the IMAP-server.\n"
+"%1"
+msgstr ""
+"Die Verbindung zum IMAP-Server kann nicht hergestellt werden.\n"
+"%1"
+
+#: sessionpool.cpp:415
+#, kde-format
+msgid ""
+"Could not test the capabilities supported by the IMAP server %1.\n"
+"%2"
+msgstr ""
+"Die unterstützten Fähigkeiten des IMAP-Servers %1 können nicht getestet "
+"werden.\n"
+"%2"
+
+#: sessionpool.cpp:422
+#, kde-format
+msgid ""
+"Could not test the capabilities supported by the IMAP server.\n"
+"%1"
+msgstr ""
+"Die unterstützten Fähigkeiten des IMAP-Servers können nicht getestet "
+"werden.\n"
+"%1"
+
+#: sessionpool.cpp:442
+#, kde-format
+msgid ""
+"Cannot use the IMAP server %1, some mandatory capabilities are missing: %2. "
+"Please ask your sysadmin to upgrade the server."
+msgstr ""
+"Der IMAP-Server %1 kann nicht verwendet werden, da einige erforderliche "
+"Fähigkeiten nicht unterstützt werden: %2. Bitten Sie Ihren Systemverwalter, "
+"den Server entsprechend zu aktualisieren."
+
+#: settings.cpp:146
+#, kde-format
+msgid "Please enter password for user '%1' on IMAP server '%2'."
+msgstr ""
+"Geben Sie bitte das Passwort für den Benutzer „%1“ auf dem IMAP-Server „%2“ "
+"ein."
+
+#: settingspasswordrequester.cpp:64
+#, kde-format
+msgid ""
+"The server for account \"%2\" refused the supplied username and password. Do "
+"you want to go to the settings, have another attempt at logging in, or do "
+"nothing?\n"
+"\n"
+"%1"
+msgstr ""
+"Der Server hat den Benutzernamen und das Passwort für das Konto „%2“ "
+"zurückgewiesen. Möchten Sie die Einstellungen anzeigen, die Anmeldung erneut "
+"versuchen, oder nichts weiter unternehmen?\n"
+"\n"
+"%1"
+
+#: settingspasswordrequester.cpp:69
+msgid "Could Not Authenticate"
+msgstr "Anmeldung nicht möglich"
+
+#: settingspasswordrequester.cpp:72
+msgid "Account Settings"
+msgstr "Zugangseinstellungen"
+
+# hier könnte auch eventuell "Wiederholen" passen
+#: settingspasswordrequester.cpp:73
+msgctxt "Input username/password manually and not store them"
+msgid "Try Again"
+msgstr "Erneut versuchen"
+
+#: setupserver.cpp:88
+msgctxt "Authentication method"
+msgid "Clear text"
+msgstr "Klartext"
+
+#: setupserver.cpp:90
+msgctxt "Authentication method"
+msgid "Anonymous"
+msgstr "Anonym"
+
+#: setupserver.cpp:130
+msgid "Folder Archive"
+msgstr "Ordnerarchiv"
+
+#: setupserver.cpp:145
+msgid " minute"
+msgid_plural " minutes"
+msgstr[0] " Minute"
+msgstr[1] " Minuten"
+
+#: setupserver.cpp:379
+msgid ""
+"Could not access KWallet. If you want to store the password permanently then "
+"you have to activate it. If you do not want to use KWallet, check the box "
+"below, but note that you will be prompted for your password when needed."
+msgstr ""
+"Der Passwortspeicher ist nicht verfügbar. Wenn Sie Passwörter dauerhaft "
+"speichern möchten, sollten Sie das Passwortspeicher-System KWallet "
+"aktivieren. Falls Sie den Passwortspeicher nicht verwenden möchten, "
+"markieren Sie das Ankreuzfeld unten; Sie werden dann immer bei Bedarf nach "
+"dem Passwort gefragt."
+
+#: setupserver.cpp:384
+msgid "Do not use KWallet"
+msgstr "Passwortspeicher nicht verwenden"
+
+#: setupserver.cpp:493
+msgid "Unable to connect to the server, please verify the server address."
+msgstr ""
+"Es kann keine Verbindung mit dem Server hergestellt werden. Überprüfen Sie "
+"die Serveradresse."
+
+#: setupserver.cpp:504
+msgid "<qt><b>TLS is supported and recommended.</b></qt>"
+msgstr "<qt><b>TLS wird unterstützt und empfohlen.</b></qt>"
+
+#: setupserver.cpp:507
+msgid "<qt><b>SSL is supported and recommended.</b></qt>"
+msgstr "<qt><b>SSL wird unterstützt und empfohlen.</b></qt>"
+
+#: setupserver.cpp:510
+msgid ""
+"<qt><b>No security is supported. It is not recommended to connect to this "
+"server.</b></qt>"
+msgstr ""
+"<qt><b>Es werden keine Sicherheitsmechanismen unterstützt. Eine Verbindung "
+"mit diesem Server wird nicht empfohlen.</b></qt>"
+
+#: setupserver.cpp:513
+msgid "<qt><b>It is not possible to use this server.</b></qt>"
+msgstr "<qt><b>Es ist nicht möglich, diesen Server zu verwenden.</b></qt>"
+
+#: setupserver.cpp:612
+msgid "Serverside Subscription"
+msgstr "Serverseitiges Abonnement"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: setupserverview_desktop.ui:21
+msgid "General"
+msgstr "Allgemein"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: setupserverview_desktop.ui:27
+msgid "Account Information"
+msgstr "Informationen zum Konto"
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: setupserverview_desktop.ui:33 setupserverview_mobile.ui:49
+msgid "Account Name:"
+msgstr "Kontenname:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, label)
+#: setupserverview_desktop.ui:47 setupserverview_mobile.ui:59
+msgid ""
+"Indicate the IMAP server. If you want to connect to a non-standard port for "
+"a specific encryption scheme, you can add \":port\" to indicate that. For "
+"example: \"imap.foo.com:144\"."
+msgstr ""
+"Geben Sie den IMAP-Server an. Wenn Sie die Verbindung zu einem unüblichen "
+"Port herstellen möchten, z. B. für eine besondere Verschlüsselungsart, dann "
+"fügen Sie der Serveradresse einen Doppelpunkt und die Portnummer an („:"
+"port“). Beispiel: „imapserver.irgendwo.de:144“."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: setupserverview_desktop.ui:50
+msgid "IMAP Server:"
+msgstr "IMAP-Server:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, label_2)
+#: setupserverview_desktop.ui:67 setupserverview_mobile.ui:163
+msgid "The username."
+msgstr "Der Benutzername."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), widget (QLabel, label_12)
+#: setupserverview_desktop.ui:70 setupserverview_desktop.ui:278
+#: setupserverview_mobile.ui:166
+msgid "Username:"
+msgstr "Benutzername:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, label_3)
+#: setupserverview_desktop.ui:87 setupserverview_mobile.ui:179
+msgid "The password."
+msgstr "Das Passwort."
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label_13)
+#: setupserverview_desktop.ui:90 setupserverview_desktop.ui:271
+#: setupserverview_mobile.ui:182
+msgid "Password:"
+msgstr "Passwort:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, checkOptions)
+#: setupserverview_desktop.ui:114
+msgid "Mail Checking Options"
+msgstr "Einstellungen zur Nachrichtenaktualisierung"
+
+#. i18n: ectx: property (text), widget (QCheckBox, disconnectedModeEnabled)
+#: setupserverview_desktop.ui:120 setupserverview_mobile.ui:311
+msgid "&Download all messages for offline use"
+msgstr "Alle Nachrichten zur Offline-Verwendung herunterla&den"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enableMailCheckBox)
+#: setupserverview_desktop.ui:127
+msgid "Enable &interval mail checking"
+msgstr "Posteingang regelmäßig überprüfen"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: setupserverview_desktop.ui:136
+msgid "Check mail interval:"
+msgstr "Prüfintervall:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: setupserverview_desktop.ui:178
+msgid "Filtering"
+msgstr "Filtern"
+
+#. i18n: ectx: property (text), widget (QCheckBox, managesieveCheck)
+#: setupserverview_desktop.ui:184 setupserverview_mobile.ui:392
+msgid "Server supports Sieve"
+msgstr "Der Server unterstützt Sieve"
+
+#. i18n: ectx: property (text), widget (QCheckBox, sameConfigCheck)
+#: setupserverview_desktop.ui:191 setupserverview_mobile.ui:399
+msgid "Reuse host and login configuration"
+msgstr "Rechner- und Anmeldeinformationen wieder verwenden"
+
+#. i18n: ectx: property (text), widget (QLabel, label_14)
+#: setupserverview_desktop.ui:198
+msgid ""
+"The server port changed when ManageSieve turned into a full RFC Standard. "
+"Old server implementations still use port 2000, while newer standard conform "
+"server can only be accessed via port 4190."
+msgstr ""
+"Der Serverport wurde geändert, als „Managesieve“ als vollständiger RFC-"
+"Standard veröffentlicht wurde. Alte Server-Implementationen benutzen immer "
+"noch den Port 2000, während neuere standardkonforme Server nur über den Port "
+"4190 erreicht werden können."
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: setupserverview_desktop.ui:210 setupserverview_mobile.ui:421
+msgid "Managesieve port:"
+msgstr "Sieve-Verwaltungs-Port:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: setupserverview_desktop.ui:228 setupserverview_mobile.ui:408
+msgid "Alternate URL:"
+msgstr "Alternativadresse:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, authentification)
+#: setupserverview_desktop.ui:245
+msgid "Authentication"
+msgstr "Authentifizierung"
+
+#. i18n: ectx: property (text), widget (QRadioButton, noAuthentification)
+#: setupserverview_desktop.ui:261
+msgid "No authentication"
+msgstr "Keine Authentifizierung"
+
+#. i18n: ectx: property (text), widget (QRadioButton, customUserPassword)
+#: setupserverview_desktop.ui:285
+msgid "Username and Password"
+msgstr "Benutzername und Passwort"
+
+#. i18n: ectx: property (text), widget (QRadioButton, imapUserPassword)
+#: setupserverview_desktop.ui:302
+msgid "IMAP Username and Password"
+msgstr "IMAP-Benutzername und -Passwort"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_4)
+#: setupserverview_desktop.ui:332
+msgid "Advanced"
+msgstr "Erweitert"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: setupserverview_desktop.ui:338
+msgid "IMAP Settings"
+msgstr "IMAP-Einstellungen"
+
+#. i18n: ectx: property (text), widget (QCheckBox, subscriptionEnabled)
+#: setupserverview_desktop.ui:346
+msgid "Enable server-side subscriptions"
+msgstr "Serverseitiges Abonnement aktivieren"
+
+#. i18n: ectx: property (text), widget (KPushButton, subscriptionButton)
+#: setupserverview_desktop.ui:356 setupserverview_mobile.ui:328
+msgid "Serverside Subscription..."
+msgstr "Serverseitiges Abonnement ..."
+
+#. i18n: ectx: property (text), widget (QCheckBox, autoExpungeCheck)
+#: setupserverview_desktop.ui:365
+msgid "Automaticall&y compact folders (expunges deleted messages)"
+msgstr ""
+"Ordner automatisch komprimieren (beseitigt als &gelöscht markierte "
+"Nachrichten)"
+
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: setupserverview_desktop.ui:374 setupserverview_mobile.ui:344
+msgid "Trash folder:"
+msgstr "Papierkorb-Ordner:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, identityBox)
+#: setupserverview_desktop.ui:386
+msgid "Identity Settings"
+msgstr "Einstellungen zur Identität"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, useDefaultIdentityCheck)
+#: setupserverview_desktop.ui:392 setupserverview_mobile.ui:356
+msgid "Use the default identity for this account"
+msgstr "Die Standard-Identität für diesen Zugang verwenden"
+
+#. i18n: ectx: property (text), widget (QCheckBox, useDefaultIdentityCheck)
+#: setupserverview_desktop.ui:395 setupserverview_mobile.ui:359
+msgid "Use &default identity"
+msgstr "&Standard-Identität verwenden"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, identityLabel)
+#: setupserverview_desktop.ui:404 setupserverview_mobile.ui:377
+msgid "Select the KMail identity used for this account"
+msgstr "Wählen Sie die Identität für diesen Zugang."
+
+#. i18n: ectx: property (text), widget (QLabel, identityLabel)
+#: setupserverview_desktop.ui:407 setupserverview_mobile.ui:380
+msgid "Identity:"
+msgstr "Identität:"
+
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, safeImap)
+#: setupserverview_desktop.ui:428
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'HandelGotDLig'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'Sans Serif'; font-weight:600;\">SSL/TLS</span><span style=\" font-"
+"family:'Sans Serif';\"> is safe IMAP over port 993;</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'Sans Serif'; font-weight:600;\">STARTTLS</span><span style=\" font-"
+"family:'Sans Serif';\"> will operate on port 143 and switch to a secure "
+"connection directly after connecting;</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'Sans Serif'; font-weight:600;\">None</span><span style=\" font-"
+"family:'Sans Serif';\"> will connect to port 143 but not switch to a secure "
+"connection. This setting is not recommended.</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'HandelGotDLig'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'Sans Serif'; font-weight:600;\">SSL/TLS</span><span style=\" font-"
+"family:'Sans Serif';\"> ist sicheres IMAP über Port 993;</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'Sans Serif'; font-weight:600;\">STARTTLS</span><span style=\" font-"
+"family:'Sans Serif';\"> läuft über Port 143 und wechselt direkt nach der "
+"Anmeldung zu einer verschlüsselten Verbindung.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'Sans Serif'; font-weight:600;\">Keine</span><span style=\" font-"
+"family:'Sans Serif';\"> läuft über Port 143, wechselt aber nicht zu einer "
+"verschlüsselten Verbindung; diese Einstellung ist nicht empfehlenswert!</"
+"span></p></body></html>"
+
+#. i18n: ectx: property (title), widget (QGroupBox, safeImap)
+#: setupserverview_desktop.ui:431
+msgid "Connection Settings"
+msgstr "Verbindungseinstellungen"
+
+#. i18n: ectx: property (text), widget (KPushButton, testButton)
+#: setupserverview_desktop.ui:437 setupserverview_mobile.ui:100
+msgid "Auto Detect"
+msgstr "Automatisch erkennen"
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: setupserverview_desktop.ui:449
+msgid "Encryption:"
+msgstr "Verschlüsselung:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, noRadio)
+#: setupserverview_desktop.ui:458 setupserverview_mobile.ui:125
+msgid "None"
+msgstr "Keine"
+
+#. i18n: ectx: property (text), widget (QRadioButton, sslRadio)
+#: setupserverview_desktop.ui:471
+msgid "SSL/TLS"
+msgstr "SSL/TLS"
+
+#. i18n: ectx: property (text), widget (QRadioButton, tlsRadio)
+#: setupserverview_desktop.ui:481
+msgid "STARTTLS"
+msgstr "STARTTLS"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: setupserverview_desktop.ui:493 setupserverview_mobile.ui:199
+msgid "Port:"
+msgstr "Port:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: setupserverview_desktop.ui:513
+msgid "Authentication:"
+msgstr "Authentifizierung:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, authenticationCombo)
+#: setupserverview_desktop.ui:521 setupserverview_mobile.ui:231
+msgid "Clear text"
+msgstr "Klartext"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, authenticationCombo)
+#: setupserverview_desktop.ui:526 setupserverview_mobile.ui:236
+msgid "LOGIN"
+msgstr "LOGIN"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, authenticationCombo)
+#: setupserverview_desktop.ui:531 setupserverview_mobile.ui:241
+msgid "PLAIN"
+msgstr "PLAIN"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, authenticationCombo)
+#: setupserverview_desktop.ui:536 setupserverview_mobile.ui:246
+msgid "CRAM-MD5"
+msgstr "CRAM-MD5"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, authenticationCombo)
+#: setupserverview_desktop.ui:541 setupserverview_mobile.ui:251
+msgid "DIGEST-MD5"
+msgstr "DIGEST-MD5"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, authenticationCombo)
+#: setupserverview_desktop.ui:546 setupserverview_mobile.ui:256
+msgid "NTLM"
+msgstr "NTLM"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, authenticationCombo)
+#: setupserverview_desktop.ui:551 setupserverview_mobile.ui:261
+msgid "GSSAPI"
+msgstr "GSSAPI"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, authenticationCombo)
+#: setupserverview_desktop.ui:556 setupserverview_mobile.ui:266
+msgid "Anonymous"
+msgstr "Anonym"
+
+#. i18n: ectx: property (text), widget (QLabel, testInfo)
+#: setupserverview_desktop.ui:575 setupserverview_mobile.ui:83
+msgid "Empty"
+msgstr "Leer"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: setupserverview_mobile.ui:62
+msgid "IMAP server:"
+msgstr "IMAP-Server:"
+
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, safeImap)
+#: setupserverview_mobile.ui:113
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">SSL</span> is safe IMAP over port 993;</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">TLS</span> will operate on port 143 and switch to a secure "
+"connection directly after connecting;</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">None</span> will connect to port 143 but not switch to a "
+"secure connection. This setting is not recommended.</p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">SSL</span> ist sicheres IMAP über Port 993;</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">TLS</span> läuft über Port 143 und wechselt direkt nach der "
+"Anmeldung zu einer verschlüsselten Verbindung.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Keine</span> läuft über Port 143, wechselt aber nicht zu einer "
+"verschlüsselten Verbindung; diese Einstellung ist nicht empfehlenswert!</p></"
+"body></html>"
+
+#. i18n: ectx: property (title), widget (QGroupBox, safeImap)
+#: setupserverview_mobile.ui:116
+msgid "Encryption"
+msgstr "Verschlüsselung"
+
+#. i18n: ectx: property (text), widget (QRadioButton, sslRadio)
+#: setupserverview_mobile.ui:138
+msgid "SSL"
+msgstr "SSL"
+
+#. i18n: ectx: property (text), widget (QRadioButton, tlsRadio)
+#: setupserverview_mobile.ui:148
+msgid "TLS"
+msgstr "TLS"
+
+#. i18n: ectx: property (title), widget (QGroupBox, authImap)
+#: setupserverview_mobile.ui:221
+msgid "Authentication Method"
+msgstr "Anmeldeverfahren"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enableMailCheckBox)
+#: setupserverview_mobile.ui:277
+msgid "Enable interval mail checking"
+msgstr "Posteingang regelmäßig überprüfen"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: setupserverview_mobile.ui:286
+msgid "Check interval:"
+msgstr "Prüfintervall:"
+
+#. i18n: ectx: property (suffix), widget (KIntNumInput, checkInterval)
+#: setupserverview_mobile.ui:299
+msgid " minutes"
+msgstr " Minuten"
+
+#. i18n: ectx: property (text), widget (QCheckBox, subscriptionEnabled)
+#: setupserverview_mobile.ui:318
+msgid "Enable Server-Side Subscriptions"
+msgstr "Serverseitiges Abonnement aktivieren"
+
+#. i18n: ectx: property (text), widget (QCheckBox, autoExpungeCheck)
+#: setupserverview_mobile.ui:335
+msgid "Automaticall&y expunge deleted messages"
+msgstr "Gelöschte E-Mails automatisch endgültig entfernen"
+
+#: subscriptiondialog.cpp:81
+msgctxt "@action:button"
+msgid "Reload &List"
+msgstr "&Liste neu laden"
+
+#: subscriptiondialog.cpp:92
+msgctxt "@option:check"
+msgid "Enable server-side subscriptions"
+msgstr "Serverseitiges Abonnement aktivieren"
+
+#: subscriptiondialog.cpp:100
+msgctxt "@label search for a subscription"
+msgid "Search:"
+msgstr "Suchen:"
+
+#: subscriptiondialog.cpp:111
+msgctxt "@option:check"
+msgid "Subscribed only"
+msgstr "Nur abonnierte"
+
+#~ msgid "Failed to collect metadata."
+#~ msgstr "Fehler beim Zusammenstellen der Metadaten."
+
+#~ msgid "Failed to retrieve items."
+#~ msgstr "Die Elemente können nicht geladen werden."
+
+#~ msgid "Enable disconnected mode"
+#~ msgstr "Offline-Modus aktivieren"
+
+#~ msgid "Enable Disconnected Mode"
+#~ msgstr "Offline-Modus aktivieren"
+
+#~ msgid "IMAP Account %1"
+#~ msgstr "IMAP-Konto %1"
+
+#~ msgid "Authentification"
+#~ msgstr "Authentifizierung"
+
+#~| msgid ""
+#~| "Cannot move IMAP folder '%1' to '%2', '%2' does not exist on the server."
+#~ msgid ""
+#~ "Cannot move IMAP folder '%1' to '%2', en error occurred when closing "
+#~ "folder"
+#~ msgstr ""
+#~ "Der IMAP-Ordner „%1“ kann nicht nach „%2“ verschoben werden, es ist ein "
+#~ "Fehler beim Schließen des Ordners aufgetreten"
+
+#~ msgctxt "@info:status"
+#~ msgid "Retrieving folder attributes for '%1'"
+#~ msgstr "Ordnerattribute für „%1“ werden abgeholt"
+
+#~ msgid " "
+#~ msgstr " "
+
+#~ msgctxt "Dialog title for dialog showing information about a server"
+#~ msgid "Server Info"
+#~ msgstr "Serverinfo"
+
+#~ msgid "Settings"
+#~ msgstr "Einstellungen anzeigen"
+
+#~ msgctxt "Input username/password manually and not store them"
+#~ msgid "Single Input"
+#~ msgstr "Einmalige Eingabe"
+
+#~ msgid "Password"
+#~ msgstr "Passwort"
+
+#~ msgctxt "no interval mail check"
+#~ msgid "Never"
+#~ msgstr "Niemals"
+
+#~ msgid "Enable Subscriptions?"
+#~ msgstr "Abonnementfunktion einschalten?"
+
+#~ msgid "Enable"
+#~ msgstr "Einschalten"
+
+#~ msgid "Do Not Enable"
+#~ msgstr "Nicht einschalten"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Currently subscriptions are not used for server <resource>%1</resource>."
+#~ "<nl/>\n"
+#~ "Do you want to enable subscriptions?"
+#~ msgstr ""
+#~ "Abonnements werden für den Server <resource>%1</resource> momentan nicht "
+#~ "benutzt. \n"
+#~ "Möchten Sie die Abonnementfunktion aktivieren?"
+
+#~ msgid ""
+#~ "Failed to move message out of '%1' on the IMAP server. Could not select "
+#~ "'%1'."
+#~ msgstr ""
+#~ "Die Nachricht kann nicht aus „%1“ auf den IMAP-Server verschoben werden. "
+#~ "„%1“ kann nicht ausgewählt werden."
+
+#~ msgid ""
+#~ "Failed to move message to '%1' on the IMAP server. Could not copy into "
+#~ "'%1'."
+#~ msgstr ""
+#~ "Die Nachricht kann nicht nach „%1“ auf den IMAP-Server verschoben werden. "
+#~ "In „%1“ kann nicht kopiert werden."
+
+#~ msgid "Failed to move folder '%1' out of '%2' on the IMAP server."
+#~ msgstr ""
+#~ "Der IMAP-Ordner „%1“ kann nicht aus „%2“ auf dem IMAP-Server verschoben "
+#~ "werden."
+
+#~ msgid ""
+#~ "Failed to subscribe to the newly moved folder '%1' on the IMAP server."
+#~ msgstr ""
+#~ "Der gerade verschobene Ordner „%1“ auf dem IMAP-Server kann nicht "
+#~ "abonniert werden."
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Thomas Reitelbach"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "tr@erdfunkstelle.de"
+
+#~ msgid "Authentication failed."
+#~ msgstr "Authentifizierung fehlgeschlagen."
+
+#~ msgid "Include this account when clicking on the toolbar button"
+#~ msgstr "Diesen Zugang beim Drücken des Symbolleistenknopfes einbeziehen"
+
+#~ msgid "Include in man&ual mail check"
+#~ msgstr "Bei m&anueller Prüfung einbeziehen"
+
+#, fuzzy
+#~| msgid "Could not connect to the IMAP-server %1."
+#~ msgid "There is curently no connection to the IMAP server."
+#~ msgstr "Die Verbindung zum IMAP-Server %1 kann nicht hergestellt werden."
+
+#~ msgid "safeImapGroup"
+#~ msgstr "safeImapGroup"
+
+#~ msgid "authImapGroup"
+#~ msgstr "authImapGroup"
+
+#~ msgid "Server reported: %1."
+#~ msgstr "Serverantwort lautet: %1."

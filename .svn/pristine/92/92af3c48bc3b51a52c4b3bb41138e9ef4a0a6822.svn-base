@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: extending.docbook:5 extending.docbook:17
+#, no-c-format
+msgid "Extending &kommander;"
+msgstr ""
+
+#. Tag: author
+#: extending.docbook:7
+#, no-c-format
+msgid "<firstname></firstname> <surname></surname>"
+msgstr ""
+
+#. Tag: trans_comment
+#: extending.docbook:12
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+
+#. Tag: title
+#: extending.docbook:26
+#, no-c-format
+msgid "Creating &kommander; Widgets"
+msgstr ""
+
+#. Tag: para
+#: extending.docbook:27
+#, no-c-format
+msgid ""
+"With Kommander you can create new widgets based on non-&kommander; widgets "
+"fairly easily. The approach is to derive your new &kommander; widget class from "
+"the &Qt;/&kde; widget which you wish to integrate with &kommander;, and then "
+"also from the KommanderWidget class. Overriding methods from this class gives "
+"the &kommander; widget its functionality."
+msgstr ""
+
+#. Tag: para
+#: extending.docbook:34
+#, no-c-format
+msgid ""
+"Most of the code of a &kommander; widget is just template code. Therefore, you "
+"can use the widgetgenerator.kmdr &kommander; dialog to generate most the "
+"&kommander; widget code for you. All you have to do is fill in the important "
+"parts relating to your widget like any state information, widget text etc."
+msgstr ""
+
+#. Tag: para
+#: extending.docbook:41
+#, no-c-format
+msgid ""
+"Let's say we want to create a new line edit widget for &kommander;, based on "
+"the &kde; widget KLineEdit. Using the &kommander; widget generator dialog, we "
+"get something like this in the outputted header file:"
+msgstr ""

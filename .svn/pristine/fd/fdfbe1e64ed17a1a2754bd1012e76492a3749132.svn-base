@@ -1,0 +1,1214 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2011, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: tellico_configuration\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:27+0000\n"
+"PO-Revision-Date: 2013-02-23 12:29+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/playground/office/doc/tellico/configuration."
+"docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 927059\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: configuration.docbook:2
+#, no-c-format
+msgid "Configuration"
+msgstr "Einrichtung"
+
+#. Tag: para
+#: configuration.docbook:5
+#, no-c-format
+msgid ""
+"The <interface>Configuration Dialog</interface> contains all the options for "
+"changing some of the default behaviour of &appname;."
+msgstr ""
+"Der <interface>Einrichtungsdialog</interface> enthält alle Einstellungen, um "
+"das Standardverhalten von &appname; zu ändern."
+
+#. Tag: para
+#: configuration.docbook:10
+#, no-c-format
+msgid ""
+"Clicking the <guibutton>Apply</guibutton> button <action>causes the changes "
+"to take effect immediately</action> without closing the dialog, while "
+"<guibutton>OK</guibutton> <action>applies the changes and closes the dialog</"
+"action>. <guibutton>Cancel</guibutton> closes the dialog, but any changes "
+"already made and applied will remain. The <guibutton>Defaults</guibutton> "
+"button <action>reverts the options</action> on the current page of the "
+"dialog to their default values, while <guibutton>Help</guibutton> "
+"<action>opens the &khelpcenter;</action> to the relative section of the "
+"&appname; manual."
+msgstr ""
+"Klicken Sie auf den Knopf <guibutton>Anwenden</guibutton>, dann werden die "
+"<action>Änderungen sofort übernommen</action> ohne den Dialog zu schließen. "
+"Mit dem Knopf <guibutton>OK</guibutton> <action>wenden Sie alle Änderungen "
+"an</action> und schließen den Dialog. <guibutton>Abbrechen</guibutton> "
+"schließt den Dialog, alle mit <guibutton>Anwenden</guibutton> übernommenen "
+"Änderungen bleiben erhalten, die Übrigen werden verworfen. "
+"<guibutton>Voreinstellungen</guibutton> <action>setzt</action> die "
+"Einstellungen auf der angezeigten Seite des Dialogs wieder auf die "
+"Standardwerte zurück. Mit dem Knopf <guibutton>Hilfe</guibutton> wird "
+"<action>das &khelpcenter; mit dem zugehörigen Abschnitt des Handbuchs zu "
+"&appname; geöffnet</action>."
+
+#. Tag: para
+#: configuration.docbook:20
+#, no-c-format
+msgid ""
+"Some minor settings can only be changed by editing the configuration file "
+"itself. See <link linkend=\"hidden-options\">Hidden Options</link>."
+msgstr ""
+"Einige weniger wichtige Einstellungen können nur durch direktes Bearbeiten "
+"der Einrichtungsdatei geändert werden. Weitere Informationen dazu unter "
+"<link linkend=\"hidden-options\">Versteckte Einstellungen</link>."
+
+#. Tag: guilabel
+#: configuration.docbook:25
+#, no-c-format
+msgid "General Options"
+msgstr "Allgemeine Einstellungen"
+
+#. Tag: screeninfo
+#: configuration.docbook:28
+#, no-c-format
+msgid "<screeninfo>The General Options Dialog</screeninfo>"
+msgstr "<screeninfo>Die Seite „Allgemeine Optionen“</screeninfo>"
+
+#. Tag: phrase
+#: configuration.docbook:31
+#, no-c-format
+msgid "<phrase>The General Options Dialog</phrase>"
+msgstr "<phrase>Die Seite „Allgemeine Optionen“</phrase>"
+
+#. Tag: para
+#: configuration.docbook:35
+#, no-c-format
+msgid ""
+"The <guilabel>General Options</guilabel> control the general behavior. "
+"Images may be included in the data files, or saved separately in the "
+"&appname; application folder. Also, when &appname; is started, it can "
+"automatically reopen the last data file that was open. The <guilabel>Tip of "
+"the Day</guilabel> dialog contains helpful hints on using &appname; and "
+"appears at program startup. You may want to read through some of the hints "
+"and then disable the dialog."
+msgstr ""
+"Hier können <guilabel>Allgemeine Optionen</guilabel> für das Verhalten des "
+"Programms eingestellt werden. Bilder können in der Datendatei oder getrennt "
+"im Anwendungsverzeichnis von &appname; gespeichert werden. Bei Start kann "
+"&appname; automatisch wieder die zuletzt geöffnete Datei laden. im Dialog "
+"<guilabel>Tipp des Tages</guilabel> werden hilfreiche Informationen zum "
+"Arbeiten mit &appname; angezeigt, er kann beim Start angezeigt werden. Sie "
+"sollten diese Tipps einmal lesen und dann den Dialog deaktivieren."
+
+#. Tag: para
+#: configuration.docbook:44
+#, no-c-format
+msgid ""
+"The <guilabel>Formatting Options</guilabel> control the level of automatic "
+"formatting that &appname; does. For examples, see the <link linkend=\"field-"
+"formatting\">Field Formatting section</link>. Capitalization and formatting "
+"are distinct options, since a field may be capitalized without having the "
+"order of the words changed, and vice-versa. The auto-capitalization can be "
+"changed to ignore certain words. The automatic formatting includes "
+"grammatical articles in titles, along with prefixes and suffixes for "
+"personal names. The values are case-insensitive, and should be separated by "
+"a semi-colon."
+msgstr ""
+"In den <guilabel>Formatierungseinstellungen</guilabel> geben Sie die "
+"automatisch von &appname; verwendeten Formatierungen. Beispiele dazu finden "
+"Sie im Abschnitt <link linkend=\"field-formatting\">Feldformatierung</link>. "
+"Großschreibung und Formatierung lassen sich getrennt einstellen, da zum "
+"Beispiel ein Feldinhalt großgeschrieben werden soll, ohne die Reihenfolge "
+"der Wörter zu ändern und umgekehrt. Die automatische Formatierung behandelt "
+"Grammatik-Artikel in Titeln und Vor- und Nachsilben für Personennamen. Bei "
+"diesen Einträgen Wird die Groß- und Kleinschreibung beachtet, die Werte "
+"sollten durch ein Semikolon getrennt werden."
+
+#. Tag: para
+#: configuration.docbook:55
+#, no-c-format
+msgid ""
+"The formatting rules follow general English usage, which may not work for "
+"other languages. Articles are appended to the end of the title, with a "
+"comma. Personal names are formatted to have the last name first, followed by "
+"a comma, then the first name. Personal suffixes, such as Jr., are kept with "
+"the last name. Prefixes, such as <emphasis>von</emphasis>, are kept with the "
+"last name, but are ignored when the values are being sorted."
+msgstr ""
+"Die Formatierungsregeln sind für den normalen englischen Sprachgebrauch "
+"ausgelegt, das ist aber nicht unbedingt für andere Sprachen geeignet. "
+"Artikel werden an das Ende eines Titels gestellt, bei Personennamen wird "
+"zuerst der Nachname aufgeführt und dann der Vorname durch Komma getrennt. "
+"Nachsilben von Personennamen wie „jr.“ werden beim Nachnamen aufgeführt, bei "
+"der Sortierung aber außer Acht gelassen."
+
+#. Tag: para
+#: configuration.docbook:62
+#, no-c-format
+msgid ""
+"<emphasis>John Q. von Public, III</emphasis> would become <emphasis>von "
+"Public, III, John Q.</emphasis> and <emphasis>Public</emphasis> would be "
+"used as the sort key."
+msgstr ""
+"<emphasis>John Q. von Public, III</emphasis> wird zu <emphasis>von Public, "
+"III, John Q.</emphasis> geändert und <emphasis>Public</emphasis> wird als "
+"Sortierschlüssel verwendet."
+
+#. Tag: para
+#: configuration.docbook:66
+#, no-c-format
+msgid ""
+"Only single word prefixes are supported. If a name includes <emphasis>van "
+"der</emphasis>, for example, both <emphasis>van</emphasis> and "
+"<emphasis>der</emphasis> should be included in the surname prefix list. "
+"Articles ending with an apostrophe are supported for sorting order, as well."
+msgstr ""
+"Nur einzelne Vorsilben des Nachnamens werden berücksichtigt. Wenn ein Name "
+"zum Beispiel <emphasis>van der</emphasis> enthält, sollten beide Vorsilben "
+"<emphasis>van</emphasis> und <emphasis>der</emphasis> in der Liste mit "
+"Vorsilben des Nachnamens eingefügt werden. Artikel, die mit einem Apostroph "
+"enden, werden bei der Reihenfolge der Sortierung ebenfalls berücksichtigt."
+
+#. Tag: para
+#: configuration.docbook:73
+#, no-c-format
+msgid ""
+"The actual values in the collection are <emphasis>not</emphasis> changed, "
+"only the visible text used for the interface. So the formatting options can "
+"be changed back and forth without affecting any of the data in the "
+"collection."
+msgstr ""
+"Die tatsächlichen Werte in der Sammlung werden <emphasis>nicht</emphasis> "
+"geändert, nur der in der Benutzeroberfläche angezeigte Text. Daher können "
+"Sie die Formatierungseinstellungen beliebig ohne Datenverlust in der "
+"Sammlung ändern."
+
+#. Tag: guilabel
+#: configuration.docbook:80
+#, no-c-format
+msgid "Printing Options"
+msgstr "Druckoptionen"
+
+#. Tag: para
+#: configuration.docbook:82
+#, no-c-format
+msgid ""
+"&appname; uses an &xslt; template for creating &HTML; and then passes that "
+"to the &kde; printing service. Only the fields visible in the <link linkend="
+"\"detailed-view\"><interface>Column View</interface></link> are printed. "
+"Furthermore, if the collection is being filtered, only the visible entries "
+"will be printed. Initially, a warning message is shown if filtering is "
+"active."
+msgstr ""
+"&appname; benutzt eine &xslt;-Vorlage zur Erzeugung der &HTML;-Seiten und "
+"übergibt sie dann dem &kde;-Drucksystem. Nur die in der <link linkend="
+"\"detailed-view\"><interface>Spaltenansicht</interface></link> gezeigten "
+"Felder werden gedruckt. Haben Sie für die Sammlung einen Filter aufgerufen, "
+"werden nur die gefilterten Einträge gedruckt. In diesem Fall wird ein Dialog "
+"mit dem Hinweis auf die Filterung angezeigt."
+
+#. Tag: screeninfo
+#: configuration.docbook:90
+#, no-c-format
+msgid "<screeninfo>The Print Options Dialog</screeninfo>"
+msgstr "<screeninfo>Die Seite Druckoptionen</screeninfo>"
+
+#. Tag: phrase
+#: configuration.docbook:93
+#, no-c-format
+msgid "<phrase>The Print Options Dialog</phrase>"
+msgstr "<phrase>Die Seite Druckoptionen</phrase>"
+
+#. Tag: para
+#: configuration.docbook:97
+#, no-c-format
+msgid ""
+"The <guilabel>Printing Options</guilabel> allow you to change some "
+"formatting when printing a collection. If <guilabel>Format titles and names</"
+"guilabel> is checked, then the fields are <link linkend=\"field-formatting"
+"\">auto-formatted</link> when they are printed. Otherwise, they are printed "
+"exactly as they were entered."
+msgstr ""
+"Auf der Seite <guilabel>Druckoptionen</guilabel> können Sie einige "
+"Formatierungen für den Druck einer Sammlung einstellen. Wenn <guilabel>Titel "
+"und Namen formatieren</guilabel> aktiviert ist, werden die Felder beim Druck "
+"<link linkend=\"field-formatting\">automatisch formatiert</link>. Ansonsten "
+"werden Sie genauso wie gedruckt wie sie eingegeben wurden."
+
+#. Tag: para
+#: configuration.docbook:104
+#, no-c-format
+msgid ""
+"The default printing stylesheet prints the collection with the field values "
+"in columns. <guilabel>Print field headers</guilabel> controls whether the "
+"field title is printed at the top of the column."
+msgstr ""
+"Die Standardvorlage druckt die Sammlung mit den Feldwerten in Spalten. "
+"Aktivieren Sie <guilabel>Feld-Kopfzeilen drucken</guilabel>, damit der Titel "
+"des Feldes über der Spalte auf dem Ausdruck erscheint."
+
+#. Tag: para
+#: configuration.docbook:110
+#, no-c-format
+msgid ""
+"In the printout, the entries will be sorted as they are in the <link linkend="
+"\"detailed-view\"><interface>Column View</interface></link>. Additionally, "
+"they may be grouped as they are in the <link linkend=\"group-view"
+"\"><interface>Group View</interface></link>."
+msgstr ""
+"In der Druckausgabe werden die Einträge wie in der <link linkend=\"detailed-"
+"view\"><interface>Spaltenansicht</interface></link> sortiert. Zusätzlich "
+"können die Einträge wie in der <link linkend=\"group-view"
+"\"><interface>Gruppen</interface></link> angeordnet werden."
+
+#. Tag: para
+#: configuration.docbook:114
+#, no-c-format
+msgid ""
+"Finally, when image fields are included in the printout, the images may be "
+"resized, while maintaining their aspect ratio. The maximum image width and "
+"height define the largest possible size of the image, though it will never "
+"be increased."
+msgstr ""
+"Wenn Bilder in der Druckausgabe enthalten Sind, kann ihre Größe unter "
+"Beibehaltung des Seitenverhältnisses angepasst werden. Die größte Bildbreite "
+"und -höhe bestimmt die maximale Größe des Bildes, darüber hinaus wird es nie "
+"vergrößert."
+
+#. Tag: guilabel
+#: configuration.docbook:122
+#, no-c-format
+msgid "Template Options"
+msgstr "Vorlagen-Optionen"
+
+#. Tag: para
+#: configuration.docbook:124
+#, no-c-format
+msgid ""
+"The <link linkend=\"entry-view\"><interface>Entry View</interface></link> "
+"uses templates to show the field values. You can specify a different "
+"template for each collection type. Some templates, such as the "
+"<emphasis>Album</emphasis> or <emphasis>Video</emphasis> templates are for a "
+"specific collection type, and a short error message will appear in the "
+"<interface>Entry View</interface> if they are used for other types. The "
+"<guilabel>Preview</guilabel> button pops up a window to show you a preview "
+"of what the template looks like. Custom fonts and colors may be passed to "
+"the template, and all of the default templates will honor those settings. "
+"However, custom template may choose to ignore them."
+msgstr ""
+"Die <link linkend=\"entry-view\"><interface>Eintragsansicht</interface></"
+"link> verwendet Vorlagen zur Anzeige der Feldwerte. Für jede Art von "
+"Sammlung können verschiedene Vorlagen angegeben werden. Einige Vorlagen wie "
+"<emphasis>Album</emphasis> oder <emphasis>Video</emphasis> sind nur für "
+"bestimmte Sammlungen geeignet. Wenn Sie sie für andere Sammlungen benutzen, "
+"wird eine Fehlermeldung in der <interface>Eintragsansicht</interface> "
+"angezeigt. Durch Klicken auf <guilabel>Vorschau</guilabel> öffnen Sie ein "
+"Fenster mit dem Erscheinungsbild der ausgewählten Vorlage. "
+"Benutzerdefinierte Schriften und Farben können für eine Vorlage angegeben "
+"werden, alle Standardvorlagen berücksichtigen diese Einstellungen. Verwenden "
+"Sie benutzerdefinierte Vorlagen, können diese Einstellungen aber auch "
+"ignoriert werden."
+
+#. Tag: para
+#: configuration.docbook:134
+#, no-c-format
+msgid ""
+"Additional templates may be installed directly, or downloaded from <ulink "
+"url=\"http://kde-files.org/index.php?amp;xcontentmode=676\">kde-files.org</"
+"ulink> by clicking the <guilabel>Download</guilabel> button. Any templates "
+"installed by the user may also be deleted. Entry templates are saved in "
+"<filename class=\"directory\">$<envar>KDEHOME</envar>/share/apps/tellico/"
+"entry-templates/</filename>."
+msgstr ""
+"Zusätzliche Vorlagen können Sie direkt installieren oder von <ulink url="
+"\"http://kde-files.org/index.php?amp;xcontentmode=676\">kde-files.org</"
+"ulink> erhalten, indem Sie auf <guilabel>Herunterladen</guilabel> klicken. "
+"Vom Benutzer installierte Vorlagen können gelöscht werden. Vorlagen für "
+"Einträge werden im Ordner <filename class=\"directory\">$<envar>KDEHOME</"
+"envar>/share/apps/tellico/entry-templates/</filename> gespeichert."
+
+#. Tag: para
+#: configuration.docbook:141
+#, no-c-format
+msgid ""
+"If you create a new template, please consider submitting it at <ulink url="
+"\"http://kde-files.org/index.php?amp;xcontentmode=676\">kde-files.org</"
+"ulink>!"
+msgstr ""
+"Wenn Sie eine neue Vorlage erstellt haben, laden Sie sie bitte auf <ulink "
+"url=\"http://kde-files.org/index.php?amp;xcontentmode=676\">kde-files.org</"
+"ulink> hoch."
+
+#. Tag: screeninfo
+#: configuration.docbook:144
+#, no-c-format
+msgid "<screeninfo>The Template Options Dialog</screeninfo>"
+msgstr "<screeninfo>Die Seite Vorlagen-Optionen</screeninfo>"
+
+#. Tag: phrase
+#: configuration.docbook:147
+#, no-c-format
+msgid "<phrase>The Template Options Dialog</phrase>"
+msgstr "<phrase>Die Seite Vorlagen-Optionen</phrase>"
+
+#. Tag: guilabel
+#: configuration.docbook:154
+#, no-c-format
+msgid "Data Sources Options"
+msgstr "Einstellungen für Datenquellen"
+
+#. Tag: para
+#: configuration.docbook:156
+#, no-c-format
+msgid ""
+"&appname; can use various sources for importing data, which can be "
+"configured in the Data Sources Dialog. There are many available types and "
+"sources:"
+msgstr ""
+"&appname; kann verschiedene Quellen für den Import von Daten nutzen, "
+"Einstellungen dazu finden Sie auf der Seite „Datenquellen“ im "
+"Einstellungsdialog. Es gibt viele mögliche Typen und Quellen: "
+
+#. Tag: para
+#: configuration.docbook:161
+#, no-c-format
+msgid "<link linkend=\"amazon-web-services\">Amazon.com Web Services</link>,"
+msgstr "<link linkend=\"amazon-web-services\">Amazon.com-Web-Dienste</link>,"
+
+#. Tag: para
+#: configuration.docbook:162
+#, no-c-format
+msgid "the <link linkend=\"imdb\">Internet Movie Database</link>,"
+msgstr "<link linkend=\"imdb\">Internet-Filmdatenbank</link>,"
+
+#. Tag: para
+#: configuration.docbook:163
+#, no-c-format
+msgid "<link linkend=\"z3950\">z39.50 servers</link>,"
+msgstr "<link linkend=\"z3950\">z39.50-Server</link>,"
+
+#. Tag: para
+#: configuration.docbook:164
+#, no-c-format
+msgid "<link linkend=\"sru\">SRU servers</link>,"
+msgstr "<link linkend=\"sru\">SRU-Server</link>,"
+
+#. Tag: para
+#: configuration.docbook:165
+#, no-c-format
+msgid "<link linkend=\"entrez\">Entrez (PubMed) databases</link>,"
+msgstr "<link linkend=\"entrez\">Entrez-(PubMed)-Datenbanken</link>,"
+
+#. Tag: para
+#: configuration.docbook:166
+#, no-c-format
+msgid "<link linkend=\"yahoo\">Yahoo! Audio Search</link>,"
+msgstr "<link linkend=\"yahoo\">Yahoo! Audio-Suche</link>,"
+
+#. Tag: para
+#: configuration.docbook:167
+#, no-c-format
+msgid "<link linkend=\"animenfo\">AnimeNfo.com</link>,"
+msgstr "<link linkend=\"animenfo\">AnimeNfo.com</link>,"
+
+#. Tag: para
+#: configuration.docbook:168
+#, no-c-format
+msgid "<link linkend=\"ibs\">Internet Bookshop Italia</link>,"
+msgstr "<link linkend=\"ibs\">Internet-Buchhandlung Italia</link>,"
+
+#. Tag: para
+#: configuration.docbook:169
+#, no-c-format
+msgid "<link linkend=\"isbndb\">ISBNdb.com</link>,"
+msgstr "<link linkend=\"isbndb\">ISBNdb.com</link>."
+
+#. Tag: para
+#: configuration.docbook:170
+#, no-c-format
+msgid ""
+"<link linkend=\"gcstarplugin\"><application>GCstar</application> Plugins</"
+"link>,"
+msgstr ""
+"<link linkend=\"gcstarplugin\"><application>GCstar</application>Module</"
+"link>,"
+
+#. Tag: para
+#: configuration.docbook:171
+#, no-c-format
+msgid "<link linkend=\"bib-sources\">arxiv.org</link>,"
+msgstr "<link linkend=\"bib-sources\">arxiv.org</link>,"
+
+#. Tag: para
+#: configuration.docbook:172
+#, no-c-format
+msgid "<link linkend=\"bib-sources\">bibsonomy.org</link>,"
+msgstr "<link linkend=\"bib-sources\">bibsonomy.org</link>,"
+
+#. Tag: para
+#: configuration.docbook:173
+#, no-c-format
+msgid "<link linkend=\"bib-sources\">citebase.org</link>,"
+msgstr "<link linkend=\"bib-sources\">citebase.org</link>,"
+
+#. Tag: para
+#: configuration.docbook:174
+#, no-c-format
+msgid "<link linkend=\"bib-sources\">crossref.org</link>,"
+msgstr "<link linkend=\"bib-sources\">crossref.org</link>,"
+
+#. Tag: para
+#: configuration.docbook:175
+#, no-c-format
+msgid "<link linkend=\"discogs\">Discogs.com</link>,"
+msgstr "<link linkend=\"discogs\">Discogs.com</link>,"
+
+#. Tag: para
+#: configuration.docbook:176
+#, no-c-format
+msgid "<link linkend=\"winecom\">Wine.com</link>,"
+msgstr "<link linkend=\"winecom\">Wine.com</link>,"
+
+#. Tag: para
+#: configuration.docbook:177
+#, no-c-format
+msgid "<link linkend=\"tmdb\">TheMovieDB.org</link>,"
+msgstr "<link linkend=\"tmdb\">TheMovieDB.org</link>,"
+
+#. Tag: para
+#: configuration.docbook:178
+#, no-c-format
+msgid "<link linkend=\"musicbrainz\">MusicBrainz.org</link>,"
+msgstr "<link linkend=\"musicbrainz\">MusicBrainz.org</link>,"
+
+#. Tag: para
+#: configuration.docbook:179
+#, no-c-format
+msgid "<link linkend=\"giantbomb\">GiantBomb.com</link>,"
+msgstr "<link linkend=\"giantbomb\">GiantBomb.com</link>,"
+
+#. Tag: para
+#: configuration.docbook:180
+#, no-c-format
+msgid "<link linkend=\"openlibrary\">OpenLibrary.org</link>,"
+msgstr "<link linkend=\"openlibrary\">OpenLibrary.org</link>,"
+
+#. Tag: para
+#: configuration.docbook:181
+#, no-c-format
+msgid "<link linkend=\"freebase\">Freebase.com</link>,"
+msgstr "<link linkend=\"freebase\">Freebase.com</link>,"
+
+#. Tag: para
+#: configuration.docbook:182
+#, no-c-format
+msgid ""
+"<link linkend=\"externalexec\">other external scripts or applications</link>,"
+msgstr ""
+"<link linkend=\"externalexec\">andere externe Skripte oder Programme</link>,"
+
+#. Tag: para
+#: configuration.docbook:183
+#, no-c-format
+msgid ""
+"<link linkend=\"multiple-sources\">combinations of any of the above sources</"
+"link>."
+msgstr ""
+"<link linkend=\"multiple-sources\">Kombinationen jeder der oben genannten "
+"Quellen</link>"
+
+#. Tag: screeninfo
+#: configuration.docbook:187
+#, no-c-format
+msgid "<screeninfo>The Data Sources Options Dialog</screeninfo>"
+msgstr "<screeninfo>Die Seite „Einstellungen für Datenquellen“</screeninfo>"
+
+#. Tag: phrase
+#: configuration.docbook:190
+#, no-c-format
+msgid "<phrase>The Data Sources Options Dialog</phrase>"
+msgstr "<phrase>Die Seite „Einstellungen für Datenquellen“</phrase>"
+
+#. Tag: para
+#: configuration.docbook:194
+#, no-c-format
+msgid ""
+"New sources may be added by clicking the <guibutton>New...</guibutton> "
+"button, while existing ones may be modified or deleted, using the "
+"<guibutton>Modify...</guibutton> or <guibutton>Delete</guibutton> buttons. "
+"The order of the sources, which shows up in the entry updating menus, can "
+"also be changed."
+msgstr ""
+"Quellen können hinzugefügt werden, indem Sie auf den Knopf <guibutton>Neu ..."
+"</guibutton> drücken, während vorhandene Quellen mit den Knöpfen "
+"<guibutton>Ändern ...</guibutton> oder <guibutton>Löschen</guibutton> "
+"geändert oder gelöscht werden können. Die Reihenfolge der Quellen, die im "
+"Untermenü <guisubmenu>Eintrag aktualisieren</guisubmenu> angezeigt werden, "
+"kann hier ebenfalls geändert werden."
+
+#. Tag: para
+#: configuration.docbook:201
+#, no-c-format
+msgid ""
+"Additional templates may be downloaded from the author's online repository "
+"by clicking the <guilabel>Download</guilabel> button. Those scripts are gpg-"
+"signed by the author to guard against dangerous scripts from unknown "
+"sources, which could cause damage to your system."
+msgstr ""
+"Weitere Vorlagen können Sie vom Online-Archiv des Autors erhalten, indem Sie "
+"den Knopf <guilabel>Herunterladen</guilabel> drücken. Diese Skripte sind vom "
+"Autor mit GpG signiert, um Sie gegen gefährliche Skripte aus unbekannten "
+"Quellen zu schützen, die Ihr System beschädigen könnten."
+
+#. Tag: para
+#: configuration.docbook:208
+#, no-c-format
+msgid ""
+"Never install and run a script from an untrusted source. They are executed "
+"with the same permissions as the user, and as a result, could modify or "
+"delete files or otherwise mess up your system."
+msgstr ""
+"Installieren Sie niemals ein Skript aus einer nicht vertrauenswürdigen Quell "
+"und führen es aus. Diese Skripte werden mit den Berechtigungen des Benutzers "
+"ausgeführt und könnten daher Dateien ändern und löschen oder auf andere Art "
+"Ihr System beschädigen."
+
+#. Tag: para
+#: configuration.docbook:214
+#, no-c-format
+msgid ""
+"Many of the data sources offer more information than the default fields in "
+"&appname;. Those other fields are shown on the right of the configuration "
+"box. If any of those fields are checked, they will be added to the "
+"collection when an entry is added from that source."
+msgstr ""
+"Viele Datenquellen bieten mehr Informationen als die Standardfelder in "
+"&appname;. Diese zusätzlichen Felder werden im Dialog rechts angezeigt. "
+"Aktivieren Sie einige dieser Felder, dann werden sie zur Sammlung "
+"hinzugefügt, wenn ein Eintrag aus dieser Quelle abgerufen wird."
+
+#. Tag: title
+#: configuration.docbook:223
+#, no-c-format
+msgid "Book and Bibliographic Data Sources"
+msgstr "Buch- und Literaturnachweis-Datenquellen"
+
+#. Tag: title
+#: configuration.docbook:226
+#, no-c-format
+msgid "z39.50 Servers"
+msgstr "z39.50-Server"
+
+#. Tag: para
+#: configuration.docbook:228
+#, no-c-format
+msgid ""
+"The <ulink url=\"http://www.cni.org/pub/NISO/docs/Z39.50-brochure/50."
+"brochure.toc.html\">z39.50 protocol</ulink> is used to access libraries and "
+"bibliographic information providers around the world. Lists of public z39.50 "
+"servers are <ulink url=\"http://www.indexdata.dk/targettest/\">available "
+"from indexdata.dk</ulink>, among others. &appname; comes with several preset "
+"configurations for major libraries, or you can specify the connection "
+"information manually."
+msgstr ""
+"Das <ulink url=\"http://www.cni.org/pub/NISO/docs/Z39.50-brochure/50."
+"brochure.toc.html\">z39.50-Protokoll</ulink> wird benutzt, um auf Daten von "
+"Bibliotheken und Anbietern von Literaturnachweisen in aller Welt "
+"zuzugreifen. Eine Liste der öffentlichen z39.50-Server finden Sie auf <ulink "
+"url=\"http://www.indexdata.dk/targettest/\">indexdata.dk</ulink>. &appname; "
+"enthält mehrere vorbereitete Einstellungen für große Bibliotheken, Sie "
+"können außerdem die Daten einer Verbindung selbst eintragen."
+
+#. Tag: para
+#: configuration.docbook:232
+#, no-c-format
+msgid ""
+"&appname; is able to read data in the <acronym>MODS</acronym>, "
+"<acronym>USMARC</acronym>/<acronym>MARC21</acronym>, or <acronym>UNIMARC</"
+"acronym> format, using the <ulink url=\"http://www.indexdata.dk/yaz/\">yaz "
+"library</ulink>. In addition, there is limited support for the "
+"<acronym>GRS-1</acronym> format."
+msgstr ""
+"&appname; kann Daten im <acronym>MODS</acronym>-, <acronym>USMARC</acronym>-/"
+"<acronym>MARC21</acronym>- oder <acronym>UNIMARC</acronym>-Format lesen. "
+"Dazu wird die <ulink url=\"http://www.indexdata.dk/yaz/\">yaz-Bibliothek</"
+"ulink> benutzt. Zusätzlich gibt es eingeschränkte Unterstützung für das "
+"<acronym>GRS-1</acronym>-Format."
+
+#. Tag: para
+#: configuration.docbook:243
+#, no-c-format
+msgid ""
+"To use one of the preset libraries, check the box and then select the "
+"library. The other configuration entries will be disabled. If you need to "
+"set the information manually, uncheck the preset box."
+msgstr ""
+"Um einen der vordefinierten Bibliotheken zu benutzen, aktivieren Sie das "
+"Ankreuzfeld <guilabel>Voreingestellten Server verwenden</guilabel> und "
+"wählen dann eine Bibliothek im Auswahlfeld. Die anderen Einstellungen sind "
+"dann deaktiviert. Möchten sie die Daten manuell einstellen, wählen Sie das "
+"Ankreuzfeld ab."
+
+#. Tag: para
+#: configuration.docbook:247
+#, no-c-format
+msgid ""
+"The default port for z39.50 access is 210, but some servers may use a "
+"different one. &appname; assumes the server uses the MARC-8 character "
+"encoding, unless configured otherwise. If an incorrect character encoding is "
+"used, an error message may appear on the program output, or possibly no "
+"entries are retrieved."
+msgstr ""
+"Als Standardport für z39.50-Server wird 210 benutzt, einige Server haben "
+"einen anderen Port. &appname; unterstellt eine Zeichenkodierung im Format "
+"MARC-8, sofern nicht anders angegeben. Wird der falsche Zeichensatz "
+"verwendet, kann entweder eine Fehlermeldung in der Ausgabe des Programms "
+"erscheinen oder es werden keine Informationen erhalten."
+
+#. Tag: para
+#: configuration.docbook:251
+#, no-c-format
+msgid ""
+"Some servers require a username and password for access. &appname; can use "
+"and save that password, but be aware that is written to the &appname; "
+"configuration file in plain text and is not secure. For most public servers, "
+"the username and password fields may be left empty."
+msgstr ""
+"Für den Zugriff auf einige Server müssen Sie einen Benutzernamen und ein "
+"Passwort angeben. Diese Daten können in der Einrichtungsdatei für &appname; "
+"gespeichert werden. Die Speicherung erfolgt als Klartext und ist nicht "
+"sicher. Für die meisten öffentlichen Server benötigen Sie keinen "
+"Benutzernamen oder Passwort."
+
+#. Tag: title
+#: configuration.docbook:258
+#, no-c-format
+msgid "SRU Servers"
+msgstr "SRU-Server"
+
+#. Tag: para
+#: configuration.docbook:260
+#, no-c-format
+msgid ""
+"SRU stands for <ulink url=\"http://www.loc.gov/standards/sru/\">Search/"
+"Retrieve via &URL;</ulink> and is a standard search protocol for Internet "
+"searches. Some libraries use it for providing access to their data catalogs. "
+"Among them, the <ulink url=\"http://www.loc.gov/z3950/lcserver.html#oppr"
+"\">US Library of Congress</ulink> is probably the best known."
+msgstr ""
+"SRU bedeutet <ulink url=\"http://www.loc.gov/standards/sru/\">Search/"
+"Retrieve via &URL; (Suchen/Abfragen über &URL;)</ulink>. Es ist ein "
+"Standardprotokoll zur Internetsuche. Einige Bibliotheken stellen darüber "
+"einen Zugriff auf ihre Datenkataloge zur Verfügung. Die bekannteste darunter "
+"ist wahrscheinlich die  <ulink url=\"http://www.loc.gov/z3950/lcserver."
+"html#oppr\">US Library of Congress (Bibliothek des amerikanischen Kongresses)"
+"</ulink>."
+
+#. Tag: title
+#: configuration.docbook:275
+#, no-c-format
+msgid "Entrez Databases"
+msgstr "Entrez-Datenbanken"
+
+#. Tag: para
+#: configuration.docbook:276
+#, no-c-format
+msgid ""
+"<ulink url=\"http://www.ncbi.nlm.nih.gov/Entrez/\">Entrez</ulink> is the "
+"integrated, text-based search and retrieval system used at the National "
+"Center for Biotechnology Information (NCBI). The most well-known Entrez "
+"database is <ulink url=\"http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?"
+"db=PubMed\">PubMed</ulink>, the database for life science articles from many "
+"biological journals. At the moment, the only Entrez database supported by "
+"&appname; is PubMed."
+msgstr ""
+"<ulink url=\"http://www.ncbi.nlm.nih.gov/Entrez/\">Entrez</ulink> ist das "
+"textbasierte Such- und Abfragesystem des National Center for Biotechnology "
+"Information (NCBI). Die bekannteste Entrez-Datenbank ist <ulink url=\"http://"
+"www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed\">PubMed</ulink>, eine "
+"Datenbank mit wissenschaftlichen Artikeln über Biowissenschaft von vielen "
+"verschiedenen Biologie-Zeitschriften. Zur Zeit wird als einzige Entrez-"
+"Datenbank nur PubMed von &appname; unterstützt."
+
+#. Tag: title
+#: configuration.docbook:281
+#, no-c-format
+msgid "Bibliographic Databases"
+msgstr "Literaturnachweis-Datenbanken"
+
+#. Tag: para
+#: configuration.docbook:282
+#, no-c-format
+msgid ""
+"<ulink url=\"http://arxiv.org\">arXiv.org</ulink>, <ulink url=\"http://"
+"bibsonomy.org\">Bibsonomy</ulink>, <ulink url=\"http://citebase.org"
+"\">Citebase</ulink>, and <ulink url=\"http://crossref.org\">CrossRef</ulink> "
+"are online databases for academic articles and bibliographic information. "
+"For access to the CrossRef source, you must <ulink url=\"http://www.crossref."
+"org/requestaccount/\">request an account</ulink> and add your account "
+"information to the data source configuration."
+msgstr ""
+"<ulink url=\"http://arxiv.org\">arXiv.org</ulink>, <ulink url=\"http://"
+"bibsonomy.org\">Bibsonomy</ulink>, <ulink url=\"http://citebase.org"
+"\">Citebase</ulink> und <ulink url=\"http://crossref.org\">CrossRef</ulink> "
+"sind Online-Datenbanken für wissenschaftliche Artikel und "
+"Literaturverzeichnisse. Für die Nutzung der „CrossRef“-Datenquelle ist eine "
+"<ulink url=\"http://www.crossref.org/requestaccount/\">Anmeldung</ulink> "
+"erforderlich. Tragen Sie die Daten der Anmeldung in den Einstellungen für "
+"diese Datenquelle ein."
+
+#. Tag: title
+#: configuration.docbook:287
+#, no-c-format
+msgid "Internet Bookstore Italia"
+msgstr "Internet-Buchhandlung Italia"
+
+#. Tag: para
+#: configuration.docbook:288
+#, no-c-format
+msgid ""
+"<ulink url=\"http://ibs.it\">IBS, or Internet Bookstore Italia</ulink>, is "
+"an online Italian bookstore."
+msgstr ""
+"<ulink url=\"http://ibs.it\">IBS oder Internet-Buchhandlung Italia</ulink>, "
+"ist eine italienische Online-Buchhandlung."
+
+#. Tag: title
+#: configuration.docbook:294
+#, no-c-format
+msgid "ISBNdb.com"
+msgstr "ISBNdb.com"
+
+#. Tag: para
+#: configuration.docbook:295
+#, no-c-format
+msgid ""
+"<ulink url=\"http://isbndb.com\">ISBNdb.com</ulink> is an online book "
+"database, with data collection libraries around the world."
+msgstr ""
+"<ulink url=\"http://isbndb.com\">ISBNdb.com</ulink> ist eine Internet-"
+"Buchdatenbank mit Daten von Büchereien aus aller Welt."
+
+#. Tag: title
+#: configuration.docbook:301
+#, no-c-format
+msgid "OpenLibrary.org"
+msgstr "OpenLibrary.org"
+
+#. Tag: para
+#: configuration.docbook:302
+#, no-c-format
+msgid ""
+"<ulink url=\"http://openlibrary.org\">OpenLibrary.org</ulink> is an online "
+"book database that aims to have one page for every book."
+msgstr ""
+"<ulink url=\"http://openlibrary.org\">OpenLibrary.org</ulink> ist eine "
+"Internet-Buchdatenbank mit dem Ziel, mindestens eine Seite für jedes Buch "
+"zur Verfügung zu stellen."
+
+#. Tag: title
+#: configuration.docbook:312
+#, no-c-format
+msgid "Comic Book Data Sources"
+msgstr "Comicbuch-Datenquellen"
+
+#. Tag: title
+#: configuration.docbook:315
+#, no-c-format
+msgid "AnimeNfo.com"
+msgstr "AnimeNfo.com"
+
+#. Tag: para
+#: configuration.docbook:316
+#, no-c-format
+msgid ""
+"<ulink url=\"http://www.animenfo.com\">AnimeNfo</ulink> is a popular site "
+"for information on anime, or Japanese animation."
+msgstr ""
+"<ulink url=\"http://www.animenfo.com\">AnimeNfo</ulink> ist eine bekannte "
+"Internetseite für „Anime“ oder in Japan produzierte Animationsfilme."
+
+#. Tag: title
+#: configuration.docbook:326
+#, no-c-format
+msgid "Movie Data Sources"
+msgstr "Film-Datenquellen"
+
+#. Tag: title
+#: configuration.docbook:329
+#, no-c-format
+msgid "Internet Movie Database"
+msgstr "Internet-Filmdatenbank"
+
+#. Tag: para
+#: configuration.docbook:331
+#, no-c-format
+msgid ""
+"The <ulink url=\"http://www.imdb.com\">Internet Movie Database</ulink> "
+"provides information about movies and videos. When a search is conducted for "
+"a <emphasis>Person</emphasis>, if more than one possible result is returned, "
+"a dialog box is opened to allow you to select the correct person. The "
+"configuration options include selecting which IMDb nationality to use and "
+"whether images are fetched or not. Since IMDb can return a large number of "
+"cast members, you can limit that to a certain number."
+msgstr ""
+"Die <ulink url=\"http://www.imdb.com\">Internet-Filmdatenbank</ulink> "
+"enthält Informationen zu Filmen und Videos. Wird nach einer "
+"<emphasis>Person</emphasis> gesucht, aber der Suchbegriff auf mehrere "
+"Personen zutrifft, dann können Sie in einem Dialog die richtige Person "
+"auswählen. Es kann hier die Sprache der IMDb-Datenbank eingegeben und "
+"ausgewählt werden, ob Bilder heruntergeladen werden sollen. Da eine Abfrage "
+"bei der Internet-Filmdatenbank eine große Anzahl an Rollen liefern kann, "
+"lässt sich dieser Wert begrenzen."
+
+#. Tag: title
+#: configuration.docbook:344
+#, no-c-format
+msgid "TheMovieDB.org"
+msgstr "TheMovieDB.org"
+
+#. Tag: para
+#: configuration.docbook:345
+#, no-c-format
+msgid ""
+"<ulink url=\"http://themoviedb.org\">TheMovieDB.org</ulink> is a free and "
+"open online movie database. Registration for a free account is required."
+msgstr ""
+"<ulink url=\"http://themoviedb.org\">TheMovieDB.org</ulink> ist eine freie "
+"und offene Online-Datenbank für Filme. Die Anmeldung ist für einen freien "
+"Zugriff auf die Daten erforderlich."
+
+#. Tag: title
+#: configuration.docbook:354
+#, no-c-format
+msgid "Music Data Sources"
+msgstr "Musik-Datenquellen"
+
+#. Tag: title
+#: configuration.docbook:357
+#, no-c-format
+msgid "Discogs.com"
+msgstr "Discogs.com"
+
+#. Tag: para
+#: configuration.docbook:358
+#, no-c-format
+msgid ""
+"<ulink url=\"http://discogs.com\">Discogs.com</ulink> is a user-built music "
+"database containing information on artists, labels, and their recordings. "
+"Registration for a free account is required."
+msgstr ""
+"<ulink url=\"http://discogs.com\">Discogs.com</ulink> ist eine von "
+"Freiwilligen erstellte Musikdatenbank mit Informationen über Künstler, "
+"Labels und Aufnahmen. Die Anmeldung ist für einen freien Zugriff auf die "
+"Daten erforderlich."
+
+#. Tag: title
+#: configuration.docbook:364
+#, no-c-format
+msgid "MusicBrainz.org"
+msgstr "MusicBrainz.org"
+
+#. Tag: para
+#: configuration.docbook:365
+#, no-c-format
+msgid ""
+"<ulink url=\"http://musicbrainz.org\">MusicBrainz.org</ulink> is a community "
+"music metadatabase that attempts to create a comprehensive music information "
+"site."
+msgstr ""
+"<ulink url=\"http://musicbrainz.org\">MusicBrainz.org</ulink> ist eine von "
+"Benutzern gemeinsam erstellte Datenbank für Musik-Metadaten die umfassende "
+"Informationen über Musik zur Verfügung stellt."
+
+#. Tag: title
+#: configuration.docbook:371
+#, no-c-format
+msgid "Yahoo! Audio Search"
+msgstr "Yahoo! Audio-Suche"
+
+#. Tag: para
+#: configuration.docbook:372
+#, no-c-format
+msgid ""
+"The <ulink url=\"http://audio.search.yahoo.com\">Yahoo! Audio Search</ulink> "
+"may be used to search for music album information. This data source is often "
+"unavailable or broken."
+msgstr ""
+"<ulink url=\"http://audio.search.yahoo.com\">Yahoo! Audio-Suche</ulink> kann "
+"für die Suche nach Informationen über Musikalben benutzt werden. Leider ist "
+"diese Datenquelle oft nicht erreichbar oder liefert falsche Informationen."
+
+#. Tag: title
+#: configuration.docbook:381
+#, no-c-format
+msgid "Wine Data Sources"
+msgstr "Wein-Datenquellen"
+
+#. Tag: title
+#: configuration.docbook:384
+#, no-c-format
+msgid "Wine.com"
+msgstr "Wine.com"
+
+#. Tag: para
+#: configuration.docbook:385
+#, no-c-format
+msgid ""
+"<ulink url=\"http://wine.com\">Wine.com</ulink> is an online wine seller, "
+"and offers access to a database information on wine varietals. Registration "
+"for a free account is required."
+msgstr ""
+"<ulink url=\"http://wine.com\">Wine.com</ulink> ist ein Internet-Weinhandel "
+"und bietet Zugang zu einer Datenbank mit Informationen über Rebsorten. Für "
+"einen freien Zugang ist die Registrierung erforderlich."
+
+#. Tag: title
+#: configuration.docbook:394
+#, no-c-format
+msgid "Video Game Data Sources"
+msgstr "Videospiel-Datenquellen"
+
+#. Tag: title
+#: configuration.docbook:397
+#, no-c-format
+msgid "GiantBomb.com"
+msgstr "GiantBomb.com"
+
+#. Tag: para
+#: configuration.docbook:398
+#, no-c-format
+msgid ""
+"<ulink url=\"http://giantbomb.com\">GiantBomb.com</ulink> is a large "
+"community-driven video game database. Registration for a free account is "
+"required."
+msgstr ""
+"<ulink url=\"http://giantbomb.com\">GiantBomb.com</ulink> ist eine große von "
+"Freiwilligen gemeinsam erstellte Datenbank über Videospiele. Die Anmeldung "
+"ist für einen freien Zugriff auf die Daten erforderlich."
+
+#. Tag: title
+#: configuration.docbook:407
+#, no-c-format
+msgid "Data Sources for Multiple Collection Types"
+msgstr "Datenquellen für mehrere Datenquellen"
+
+#. Tag: title
+#: configuration.docbook:410
+#, no-c-format
+msgid "Amazon.com"
+msgstr "Amazon.com"
+
+#. Tag: para
+#: configuration.docbook:412
+#, no-c-format
+msgid ""
+"Using the Amazon Web Services, &appname; can search any of nine different "
+"international sites operated by <ulink url=\"http://amazon.com\">Amazon.com</"
+"ulink> for information: United States, United Kingdom, Germany, Japan, "
+"France, Canada, China, Spain, and Italy."
+msgstr ""
+"Mit den Amazon-Web-Diensten kann &appname; in jeder der neun internationalen "
+"Internetseiten nach Informationen suchen, die von <ulink url=\"http://amazon."
+"com\">Amazon.com</ulink> betrieben werden: USA. Vereinigtes Königreich von "
+"Großbritannien und Nordirland, Deutschland, Japan, Frankreich, Kanada, "
+"China, Spanien und Italien."
+
+#. Tag: para
+#: configuration.docbook:423
+#, no-c-format
+msgid ""
+"Configuring each Amazon.com source involves three settings: the server "
+"location, image size, and associate's ID. Some information from <ulink url="
+"\"http://amazon.com\">Amazon.com</ulink> may include an image, such as a "
+"book or video cover. That image may be downloaded in three different sizes, "
+"depending on the item. The associate's ID must be used to access the Amazon."
+"com Web Services, and is included in the links back to the item, as dictated "
+"by the license agreement for the use of the Amazon.com Web Services."
+msgstr ""
+"Für jede „Amazon.com“-Datenquelle sind drei Einstellungen nötig: Der "
+"Serverort, die Bildgröße und die Mitglieds-ID. Einige Informationen von "
+"<ulink url=\"http://amazon.com\">Amazon.com</ulink> können Bilder enthalten, "
+"wie zum Beispiel von einem Buch oder einem Video. Das Bild kann je nach "
+"ausgewähltem Element in drei verschiedenen Größen heruntergeladen werden. "
+"Die Mitglieds-ID ist für den Zugriff auf Amazon-Web-Dienste erforderlich. "
+"Die wird in den Verknüpfung zurück zum Element eingeschlossen und wird durch "
+"die Nutzungsbedingungen der Amazon-Web-Dienste gefordert."
+
+#. Tag: title
+#: configuration.docbook:431
+#, no-c-format
+msgid "GCstar Plugins"
+msgstr "GCstar-Module"
+
+#. Tag: para
+#: configuration.docbook:432
+#, no-c-format
+msgid ""
+"If <application><ulink url=\"http://www.gcstar.org\">GCstar</ulink></"
+"application> is installed, &appname; is able to take advantage of the wide "
+"range of search plugins available for GCstar. Depending on the collection "
+"type, various online resources are available for usage as a data source in "
+"&appname;"
+msgstr ""
+"Ist das Programm <application><ulink url=\"http://www.gcstar.org\">GCstar</"
+"ulink></application> installiert, kann &appname; die von GCstar "
+"bereitgestellten Suchmodule verwenden. Je nach Art der Sammlung können "
+"verschiedene Onlineressourcen als Datenquellen in &appname; benutzt werden."
+
+#. Tag: title
+#: configuration.docbook:438
+#, no-c-format
+msgid "Freebase.com"
+msgstr "Freebase.com"
+
+#. Tag: para
+#: configuration.docbook:439
+#, no-c-format
+msgid ""
+"<ulink url=\"http://freebase.com\">Freebase.com</ulink> is an online "
+"database, collecting information on any topic. Tellico is able to search "
+"Freebase for information on books, comic book, music, movies, video games, "
+"and board games."
+msgstr ""
+"<ulink url=\"http://freebase.com\">Freebase.com</ulink> ist eine Online-"
+"Datenbank für alle möglichen Themen. &appname; kann Freebase.com nach "
+"Informationen über Bücher, Comics, Filme, Videospiele und Brettspiele "
+"durchsuchen."
+
+#. Tag: title
+#: configuration.docbook:445
+#, no-c-format
+msgid "External Scripts or Applications"
+msgstr "Externe Skripte oder Programme"
+
+#. Tag: para
+#: configuration.docbook:446
+#, no-c-format
+msgid ""
+"As an easier way for &appname; to integrate with third-party plugins, "
+"external scripts or applications may be used as an interface for searching "
+"other information sources. &appname; will execute a command, and pass the "
+"search terms as command-line options."
+msgstr ""
+"Als weitere einfache Möglichkeit zur Integration von Module Dritter in "
+"&appname; können externe Skripte oder Programme als Schnittstelle zur Suche "
+"in weiteren Informationsquellen benutzt werden. &appname; führt einen Befehl "
+"aus und übergibt die Suchbegriffe als Befehlszeilenoptionen."
+
+#. Tag: para
+#: configuration.docbook:450
+#, no-c-format
+msgid ""
+"Some scripts are distributed with &appname; itself. <ulink url=\"http://www."
+"allocine.fr\">Allocine.fr</ulink> is an French website for movies. The "
+"<ulink url=\"http://www.mcu.es\">Spanish Ministry of Culture</ulink> is an "
+"online Spanish book database. <ulink url=\"http://darkhorse.com\">Dark Horse "
+"Comics</ulink> is a comic book publisher. All three of those data sources "
+"require <ulink url=\"http://python.org\">Python</ulink>. <ulink url=\"http://"
+"boardgamegeek.com\">BoardGameGeek</ulink> is a website with extensive data "
+"for board games, and the script requires <ulink url=\"http://www.ruby-lang."
+"org\">ruby</ulink>."
+msgstr ""
+"Einige Skripte werden bereits mit &appname; ausgeliefert: <ulink url="
+"\"http://www.allocine.fr\">Allocine.fr</ulink> ist eine französische "
+"Internetseite für Filme. Das <ulink url=\"http://www.mcu.es\">spanische "
+"Kulturministerium</ulink> bietet eine spanische Online-Buchdatenbank. <ulink "
+"url=\"http://darkhorse.com\">Dark Horse Comics</ulink> ist ein Comicbuch-"
+"Verleger. Für alle drei Datenquellen muss <ulink url=\"http://python.org"
+"\">Python</ulink> installiert sein. <ulink url=\"http://boardgamegeek.com"
+"\">BoardGameGeek</ulink> ist eine Webseite mit umfassenden Informationen "
+"über Brettspiele. Für die Nutzung dieses Skripts muss <ulink url=\"http://"
+"www.ruby-lang.org\">Ruby</ulink> installiert sein."
+
+#. Tag: para
+#: configuration.docbook:459
+#, no-c-format
+msgid ""
+"The collection type returned by the script must be set, along with the data "
+"format. Not only can &appname; import data from scripts that use the <link "
+"linkend=\"file-format\">default &appname; &XML; format</link>, but it can "
+"also import other formats as well, such as bibtex."
+msgstr ""
+"Die vom Skript zurückgegebene Art der Sammlung und das Datenformat muss "
+"eingestellt werden. &appname; kann nicht nur Daten im <link linkend=\"file-"
+"format\">Standard-&XML;-Format von &appname;</link>, sondern auch andere "
+"Formate wie Bibtex importieren."
+
+#. Tag: para
+#: configuration.docbook:464
+#, no-c-format
+msgid ""
+"The full path to the application should be entered in the source options. Be "
+"aware that the application is executed on the system with the same "
+"permissions as the current user, so do not use scripts from untrusted "
+"sources. Check the boxes next to the search keys supported by the "
+"application, and enter the required command line options in the edit box. "
+"The search value will be inserted where <userinput>%1</userinput> appears."
+msgstr ""
+"Der vollständige Pfad zum Skript oder zum Programm muss in den Einstellungen "
+"angegeben werden. Beachten Sie, dass das Skript oder Programm mit den "
+"Rechten des aktuellen Benutzers ausgeführt wird, benutzen Sie daher keine "
+"Skripte aus nicht vertrauenswürdigen Quellen. Aktivieren Sie die "
+"Ankreuzfelder neben den Suchschlüsseln, die vom Skript unterstützt werden, "
+"und tragen Sie die erforderlichen Befehlszeilenoptionen in das Eingabefeld "
+"ein. Die Platzhalter <userinput>%1</userinput> werden durch das Suchergebnis "
+"ersetzt."
+
+#. Tag: para
+#: configuration.docbook:467
+#, no-c-format
+msgid ""
+"For updating entries already in the collection, the final check box and edit "
+"box are used to determine the command-line options. The entry fields used to "
+"find an update must be entered, in the same format as used for <link linkend="
+"\"derived\">derived value</link> fields."
+msgstr ""
+"Zur Aktualisierung bereits in der Sammlung vorhandener Einträge aktivieren "
+"Sie das letzte Ankreuzfeld und geben die Befehlszeilenoptionen in das "
+"Eingabefeld ein. Die Felder der Einträge, die für die Suche nach "
+"Aktualisierungen benutzt werden, müssen das gleiche Format wie die <link "
+"linkend=\"derived\">abgeleiteten Werte</link> haben."
+
+#. Tag: title
+#: configuration.docbook:475
+#, no-c-format
+msgid "Multiple Combined Data Sources"
+msgstr "Mehrere kombinierte Datenquellen"
+
+#. Tag: para
+#: configuration.docbook:476
+#, no-c-format
+msgid ""
+"Combinations of up to eight existing data sources can be used as a single "
+"source, where the search results from all the sources are merged. The "
+"collection type to be used must be set before adding sources."
+msgstr ""
+"Kombinationen von bis zu acht vorhandenen Datenquellen können als eine "
+"einzelne Datenquelle genutzt werden. Die Suchergebnisse aller Quellen werden "
+"zusammengefasst. Ehe Quellen hinzugefügt werden können, muss der Typ der "
+"Sammlung festgelegt werden."
+
+#. Tag: para
+#: configuration.docbook:486
+#, no-c-format
+msgid ""
+"Only existing data sources can be used in combination. The search request is "
+"sent to each source, and the results are combined. Since the merged results "
+"depend on the order of the search results, the combined set may be different "
+"depending on network and source speed."
+msgstr ""
+"Nur bereits vorhandene Datenquellen können als Kombination benutzt werden. "
+"Die Suchanfragen werden an jede Quelle geschickt und die Ergebnisse "
+"zusammengefasst. Da das Ergebnis von der Reihenfolge der eingegangenen "
+"Suchergebnisse abhängt, kann die Zusammenfassung abhängig vom Netzwerk und "
+"der Antwortzeit der Quellen unterschiedlich ausfallen."

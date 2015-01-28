@@ -1,0 +1,139 @@
+# Frederik Schwarzer <schwarzer@kde.org>, 2011.
+# Torbjoern Klatt <torbjoern.k@googlemail.com>, 2011.
+# Burkhard Lück <lueck@hube-lueck.de>, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio_magnet\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2012-08-14 19:51+0200\n"
+"PO-Revision-Date: 2013-01-12 12:59+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: dbushandler.cpp:96
+msgid ""
+"The Web share for magnet-links is disabled. You can set it up at settings:/"
+"network-and-connectivity/sharing"
+msgstr ""
+"Die Verteilung über Magnet-Verweise ist deaktiviert. Sie können dies unter "
+"settings:/network-and-connecctivity/sharing einstellen."
+
+#: dbushandler.cpp:120
+msgid ""
+"Cannot start process for KTorrent.                           This should not "
+"happen, even if KTorrent is not installed.                           Check "
+"your machines resources and limits."
+msgstr ""
+"Der KTorrent-Prozess kann nicht gestartet werden. Dies sollte nicht "
+"geschehen, selbst wenn KTorrent nicht installiert ist. Bitte überprüfen Sie "
+"die Ressourcen und Grenzen Ihres Systems."
+
+#: dbushandler.cpp:158
+#, kde-format
+msgid ""
+"Could not connect to KTorrent via DBus                                     "
+"after %1 seconds. Is it broken?"
+msgstr ""
+"Es kann nach %1 Sekunden keine Verbindung zu KTorrent mit D-Bus hergestellt "
+"werden. Ist es installiert?"
+
+#: dbushandler.cpp:180
+msgid ""
+"Could not get the group list, do you have a compatible KTorrent version "
+"running?"
+msgstr ""
+"Die Liste der Gruppe kann nicht ermittelt werden. Läuft die passende "
+"KTorrent-Version?"
+
+#: dbushandler.cpp:333
+#, kde-format
+msgid "The link for %1 does not contain the required btih hash-parameter."
+msgstr ""
+"Der Verweis für „%1“ enthält nicht den erforderlichen btih-Hashwert-"
+"Parameter."
+
+#: dbushandler.cpp:345
+#, kde-format
+msgid "The found value (%1) for the hash is neither 32 nor 40 chars long."
+msgstr ""
+"Der gefundene Wert (%1) für den Hash ist weder 32 noch 40 Zeichen lang."
+
+#: dbushandler.cpp:624
+msgid "Torrent has been removed from KTorrent."
+msgstr "Der Torrent ist aus KTorrent entfernt worden."
+
+#: kio_magnet.cpp:294 kio_magnet.cpp:395
+#, kde-format
+msgid ""
+"File exists in KTorrent, but cannot open it on disk at path\"%1\". Have you "
+"removed the file manually?"
+msgstr ""
+"Die Datei existiert in KTorrent, kann aber im Pfad „%1“ nicht geöffnet "
+"werden. Haben Sie die Datei manuell gelöscht?"
+
+#: kio_magnet.cpp:375
+msgid "You cannot write to magnet resources."
+msgstr "Sie können nicht in Magnet-Ressourcen schreiben."
+
+#: kio_magnet.cpp:403
+#, kde-format
+msgid "File \"%1\" is a directory. This should not happen. Please file a bug."
+msgstr ""
+"Die Datei „%1“ ist ein Ordner. Dies sollte nicht passieren. Bitte berichten "
+"Sie den Fehler."
+
+#: kio_magnet.cpp:429
+#, kde-format
+msgid ""
+"File exists in KTorrent, but cannot open it on disk at path \"%1\". Have you "
+"removed the file manually?"
+msgstr ""
+"Die Datei existiert in KTorrent, kann aber im Pfad „%1“ nicht geöffnet "
+"werden. Haben Sie die Datei manuell gelöscht?"
+
+#. i18n: ectx: label, entry (Enabled), group (Magnet)
+#: magnetsettings.kcfg:10
+msgid "Enable the global magnet-link support."
+msgstr "Unterstützung für Magnet-Verknüpfungen global aktivieren."
+
+#. i18n: ectx: label, entry (ShareSize), group (Magnet)
+#: magnetsettings.kcfg:14
+msgid "Total maximum size used by the share in MiB."
+msgstr "Absolute maximale Größe in MiB zur Verwendung durch die Freigabe."
+
+#. i18n: ectx: label, entry (TrustedHosts), group (Magnet)
+#: magnetsettings.kcfg:18
+msgid "List of hosts which are directly accepted on loading"
+msgstr "Liste der Rechner, die beim Laden direkt zugelassen werden"
+
+#. i18n: ectx: label, entry (ManagedTorrents), group (Magnet)
+#: magnetsettings.kcfg:21
+msgid "Torrents inside KTorrent which are managed by these modules."
+msgstr "Torrents in KTorrent, die von diesem Modul verwaltet werden."
+
+#. i18n: ectx: label, entry (RunningTorrents), group (Magnet)
+#: magnetsettings.kcfg:24
+msgid "Torrents currently used by the I/O-Slaves."
+msgstr "Derzeit verwendete Torrents durch die I/O-Slaves."
+
+#. i18n: ectx: label, entry (MaxShareRatio), group (Magnet)
+#: magnetsettings.kcfg:27
+msgid "The maximum share ratio which should be targeted for each torrent."
+msgstr ""
+"Das maximale Verteilungsverhältnis, das für jeden Torrent angestrebt werden "
+"soll."
+
+#~ msgid "(no name given)"
+#~ msgstr "(kein Name angegeben)"
+
+#~ msgid "(no path given)"
+#~ msgstr "(kein Pfad angegeben)"
+
+#~ msgid "(magnet dht)"
+#~ msgstr "(magnet dht)"

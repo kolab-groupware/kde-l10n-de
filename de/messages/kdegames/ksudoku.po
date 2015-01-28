@@ -1,0 +1,922 @@
+# Stefan Winter <swinter@kde.org>, 2007.
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2011, 2013.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2009.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2009, 2011, 2012.
+# Frederik Schwarzer <schwarzer@kde.org>, 2011, 2012.
+# Jonas Schürmann <jonasschuermann@aol.de>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: ksudoku\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-01-05 05:18+0000\n"
+"PO-Revision-Date: 2013-12-18 15:27+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Stefan Winter"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "swinter@kde.org"
+
+#: src/generator/sudokuboard.cpp:151
+#, kde-format
+msgid ""
+"After %1 tries, the best difficulty level achieved is %2, with internal "
+"difficulty rating %3, but you requested difficulty level %4. Do you wish to "
+"try again or accept the puzzle as is?\n"
+"\n"
+"If you accept the puzzle, it may help to change to No Symmetry or some low "
+"symmetry type, then use Game->New and try generating another puzzle."
+msgstr ""
+"Der Rätselgenerator hat nach %1 Versuchen nur einen Schwierigkeitsgrad von "
+"%2 mit einem internen Schwierigkeitsgrad von %3 erreicht, aber es wurde ein "
+"Schwierigkeitsgrad von %4 angefordert. Soll ein erneuter Versuch gestartet "
+"oder das aktuelle Rätsel verwendet werden?\n"
+"\n"
+"Beim Verwenden des aktuellen Rätsels kann das Ändern auf „Keine Symmetrie“ "
+"oder eine geringe Symmetrie sowie Erstellen eines anderen Rätsels helfen."
+
+#: src/generator/sudokuboard.cpp:161 src/generator/sudokuboard.cpp:180
+#: src/generator/sudokuboard.cpp:194
+msgid "Difficulty Level"
+msgstr "Schwierigkeitsgrad"
+
+#: src/generator/sudokuboard.cpp:162
+msgid "&Try Again"
+msgstr "&Erneut versuchen"
+
+#: src/generator/sudokuboard.cpp:162
+msgid "&Accept"
+msgstr "&Annehmen"
+
+#: src/generator/sudokuboard.cpp:175
+#, kde-format
+msgid ""
+"It will be possible to solve the generated puzzle by logic alone. No "
+"guessing will be required.\n"
+"\n"
+"The internal difficulty rating is %1. There are %2 clues at the start and %3 "
+"moves to go."
+msgstr ""
+"Dieses Rätsel kann allein durch Logik gelöst werden (ohne zu raten).\n"
+"\n"
+"Der interne Schwierigkeitsgrad liegt bei %1 wobei zu Beginn %2 Felder "
+"vorgegeben sowie %3 Felder auszufüllen sind."
+
+#: src/generator/sudokuboard.cpp:181 src/generator/sudokuboard.cpp:195
+msgid "&OK"
+msgstr "&OK"
+
+#: src/generator/sudokuboard.cpp:181 src/generator/sudokuboard.cpp:195
+msgid "&Retry"
+msgstr "E&rneut versuchen"
+
+#: src/generator/sudokuboard.cpp:187
+#, kde-format
+msgid ""
+"Solving the generated puzzle will require an average of %1 guesses or branch "
+"points and if you guess wrong, backtracking will be necessary. The first "
+"guess should come after %2 moves.\n"
+"\n"
+"The internal difficulty rating is %3, there are %4 clues at the start and %5 "
+"moves to go."
+msgstr ""
+"In dem erstellten Rätsel sind durchschnittlich %1 Felder durch Raten oder "
+"Zweigpunkte auszufüllen. Werden die Felder falsch ausgefüllt, sind die "
+"Eingaben wieder zurückzunehmen. Das erste Raten ist nach dem Ausfüllen von "
+"%2 Feldern erforderlich.\n"
+"\n"
+"Der interne Schwierigkeitsgrad liegt bei %3 wobei zu Beginn %4 Felder "
+"vorgegeben sowie %5 Felder auszufüllen sind."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintMulti)
+#: src/gui/configgame.ui:20
+msgid "When printing, try to fit more than one puzzle on a page"
+msgstr "Mehr als ein Rätsel je Seite drucken, wenn möglich"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_ShowHighlights)
+#: src/gui/configgame.ui:43
+msgid "Highlight the row, column and block that contain the selected cell"
+msgstr "Zeile, Spalte und Block des ausgewählten Felds hervorheben"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ShowHighlights)
+#: src/gui/configgame.ui:46
+msgid ""
+"Highlight the row, column and block that contain the selected cell. Blocks "
+"may be square or irregular (as in jigsaw-type or XSudoku puzzles)."
+msgstr ""
+"Zeile, Spalte und Block des ausgewählten Felds hervorheben. Blöcke können "
+"quadratisch oder unregelmäßig (wie zum Beispiel bei Stichsägen- oder XSudoku-"
+"Rätseln) sein."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowHighlights)
+#: src/gui/configgame.ui:49
+msgid "Show highlights in 2-D puzzles"
+msgstr "Hervorhebungen bei 2D-Rätseln anzeigen"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_ShowErrors)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ShowErrors)
+#: src/gui/configgame.ui:56 src/gui/configgame.ui:59
+msgid "Highlight in red any cells whose values break the Sudoku rules."
+msgstr "Felder, deren Inhalt gegen die Regeln verstößt, in Rot anzeigen"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowErrors)
+#: src/gui/configgame.ui:62
+msgid "Show errors"
+msgstr "Fehler anzeigen"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_ShowHighlights3D)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ShowHighlights3D)
+#: src/gui/configgame.ui:69 src/gui/configgame.ui:72
+msgid "Highlight the planes (blocks) that contain the selected cell."
+msgstr "Die Flächen (Blöcke) des ausgewählten Felds hervorheben."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowHighlights3D)
+#: src/gui/configgame.ui:75
+msgid "Show highlights in 3-D puzzles"
+msgstr "Hervorhebungen in 3D-Rätseln anzeigen"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: src/gui/configgame.ui:103
+msgid "Settings for 3-D Puzzles Only"
+msgstr "Einstellungen für 3D-Rätsel"
+
+#. i18n: ectx: property (toolTip), widget (QSlider, kcfg_OverallSize3D)
+#. i18n: ectx: property (whatsThis), widget (QSlider, kcfg_OverallSize3D)
+#. i18n: ectx: property (toolTip), widget (QLabel, label_6)
+#. i18n: ectx: property (whatsThis), widget (QLabel, label_6)
+#: src/gui/configgame.ui:118 src/gui/configgame.ui:121
+#: src/gui/configgame.ui:164 src/gui/configgame.ui:167
+msgid "Set the relative size of 3-D cells and the spaces between them."
+msgstr "Relative Größe der 3D-Felder und der Zwischenräume."
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: src/gui/configgame.ui:170
+msgid "Overall size of 3-D cells"
+msgstr "Allgemeine Größe der 3D-Felder"
+
+#. i18n: ectx: property (toolTip), widget (QSlider, kcfg_SelectionSize3D)
+#. i18n: ectx: property (whatsThis), widget (QSlider, kcfg_SelectionSize3D)
+#. i18n: ectx: property (toolTip), widget (QLabel, label)
+#. i18n: ectx: property (whatsThis), widget (QLabel, label)
+#: src/gui/configgame.ui:190 src/gui/configgame.ui:193
+#: src/gui/configgame.ui:236 src/gui/configgame.ui:239
+#, no-c-format
+msgid "Shrink or expand a cell by up to 30% when it is selected."
+msgstr "Verkleinerung oder Vergrößerung der Felder um bis zu 30 % bei Auswahl."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: src/gui/configgame.ui:242
+msgid "Size of selected 3-D cell"
+msgstr "Größe eines ausgewählten 3D-Felds"
+
+#. i18n: ectx: property (toolTip), widget (QSlider, kcfg_HighlightedSize3D)
+#. i18n: ectx: property (whatsThis), widget (QSlider, kcfg_HighlightedSize3D)
+#. i18n: ectx: property (toolTip), widget (QLabel, label_3)
+#. i18n: ectx: property (whatsThis), widget (QLabel, label_3)
+#: src/gui/configgame.ui:262 src/gui/configgame.ui:265
+#: src/gui/configgame.ui:299 src/gui/configgame.ui:302
+#, no-c-format
+msgid "Shrink or expand cells by up to 30% when they are highlighted."
+msgstr ""
+"Verkleinerung oder Vergrößerung der Felder um bis zu 30 % bei Hervorhebung."
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: src/gui/configgame.ui:305
+msgid "Size of highlighted 3-D cells"
+msgstr "Größe hervorgehobener 3D-Felder"
+
+#. i18n: ectx: property (toolTip), widget (QSlider, kcfg_OuterCellSize3D)
+#. i18n: ectx: property (toolTip), widget (QLabel, label_5)
+#: src/gui/configgame.ui:325 src/gui/configgame.ui:362
+#, no-c-format
+msgid ""
+"Shrink cells by up to 60% if they are not in an NxNxN cube that contains the "
+"selected cell."
+msgstr ""
+"Verkleinerung der Felder, die sich nicht im Würfel des ausgewählten Felds "
+"befinden, um bis zu 60 %."
+
+#. i18n: ectx: property (whatsThis), widget (QSlider, kcfg_OuterCellSize3D)
+#. i18n: ectx: property (whatsThis), widget (QLabel, label_5)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_DarkenOuterCells3D)
+#: src/gui/configgame.ui:328 src/gui/configgame.ui:365
+#: src/gui/configgame.ui:388
+#, no-c-format
+msgid ""
+"Shrink cells by up to 60% if they are not in an NxNxN cube that contains the "
+"selected cell. This is useful if a 3-D puzzle has more than one cube."
+msgstr ""
+"Verkleinerung der Felder, die sich nicht im Würfel des ausgewählten Felds "
+"befinden, um bis zu 60 %. Das ist bei 3D-Rätseln mit mehr als einem Würfel "
+"praktisch."
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: src/gui/configgame.ui:368
+msgid "Size of 3-D cells outside the selected volume"
+msgstr "Größe der 3D-Felder außerhalb des ausgewählten Bereichs."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_DarkenOuterCells3D)
+#: src/gui/configgame.ui:385
+msgid ""
+"Darken cells if they are not in an NxNxN cube that contains the selected "
+"cell."
+msgstr ""
+"Felder abdunkeln, wenn sie sich nicht im Würfel des ausgewählten Felds "
+"befinden."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DarkenOuterCells3D)
+#: src/gui/configgame.ui:391
+msgid "Darken 3-D cells outside the selected volume"
+msgstr "Felder außerhalb des ausgewählten Bereichs abdunkeln"
+
+#: src/gui/gamevariants.cpp:243 src/gui/gamevariants.cpp:295
+msgid "Configuration not yet implemented"
+msgstr "Einstellungen sind noch nicht implementiert"
+
+#: src/gui/ksudoku.cpp:80
+msgid ""
+"Sorry, your solution contains mistakes.\n"
+"\n"
+"Enable \"Show errors\" in the settings to highlight them."
+msgstr ""
+"Ihre Lösung enthält Fehler.\n"
+"\n"
+"Aktivieren Sie „Fehler anzeigen“ in den Einstellungen, um Fehler "
+"hervorzuheben."
+
+#: src/gui/ksudoku.cpp:91
+#, kde-format
+msgid "Congratulations! You made it in 1 second. With some tricks."
+msgid_plural "Congratulations! You made it in %1 seconds. With some tricks."
+msgstr[0] ""
+"Glückwunsch! Sie haben es in 1 Sekunde geschafft. Mit ein bisschen Hilfe."
+msgstr[1] ""
+"Glückwunsch! Sie haben es in %1 Sekunden geschafft. Mit ein bisschen Hilfe."
+
+#: src/gui/ksudoku.cpp:93
+#, kde-format
+msgid "Congratulations! You made it in 1 minute. With some tricks."
+msgid_plural "Congratulations! You made it in %1 minutes. With some tricks."
+msgstr[0] ""
+"Glückwunsch! Sie haben es in 1 Minute geschafft. Mit ein bisschen Hilfe."
+msgstr[1] ""
+"Glückwunsch! Sie haben es in %1 Minuten geschafft. Mit ein bisschen Hilfe."
+
+#: src/gui/ksudoku.cpp:95 src/gui/ksudoku.cpp:102
+#, kde-format
+msgid "1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] "1 Minute"
+msgstr[1] "%1 Minuten"
+
+#: src/gui/ksudoku.cpp:95 src/gui/ksudoku.cpp:102
+#, kde-format
+msgid "1 second"
+msgid_plural "%1 seconds"
+msgstr[0] "1 Sekunde"
+msgstr[1] "%1 Sekunden"
+
+#: src/gui/ksudoku.cpp:95
+#, kde-format
+msgctxt "The two parameters are strings like '2 minutes' or '1 second'."
+msgid "Congratulations! You made it in %1 and %2. With some tricks."
+msgstr ""
+"Glückwunsch! Sie haben es in %1 und %2 geschafft. Mit ein bisschen Hilfe."
+
+#: src/gui/ksudoku.cpp:98
+#, kde-format
+msgid "Congratulations! You made it in 1 second."
+msgid_plural "Congratulations! You made it in %1 seconds."
+msgstr[0] "Glückwunsch! Sie haben es in 1 Sekunde geschafft."
+msgstr[1] "Glückwunsch! Sie haben es in %1 Sekunden geschafft."
+
+#: src/gui/ksudoku.cpp:100
+#, kde-format
+msgid "Congratulations! You made it in 1 minute."
+msgid_plural "Congratulations! You made it in %1 minutes."
+msgstr[0] "Glückwunsch! Sie haben es in 1 Minute geschafft."
+msgstr[1] "Glückwunsch! Sie haben es in %1 Minuten geschafft."
+
+#: src/gui/ksudoku.cpp:102
+#, kde-format
+msgctxt "The two parameters are strings like '2 minutes' or '1 second'."
+msgid "Congratulations! You made it in %1 and %2."
+msgstr "Glückwunsch! Sie haben es in %1 und %2 geschafft."
+
+#: src/gui/ksudoku.cpp:184
+msgid "Sudoku Standard (9x9)"
+msgstr "Sudoku Standard (9×9)"
+
+#: src/gui/ksudoku.cpp:185
+msgid "The classic and fashionable game"
+msgstr "Das klassische und beliebte Standardspiel"
+
+#: src/gui/ksudoku.cpp:188
+msgid "Roxdoku 9 (3x3x3)"
+msgstr "Roxdoku 9 (3×3×3)"
+
+#: src/gui/ksudoku.cpp:189
+msgid "The Rox 3D Sudoku"
+msgstr "Das „Rox“ 3D-Sudoku"
+
+#: src/gui/ksudoku.cpp:204
+msgid "Missing Variant Name"
+msgstr "Name der Variante fehlt"
+
+#: src/gui/ksudoku.cpp:218
+msgid "Sudoku 16x16"
+msgstr "Sudoku 16×16"
+
+#: src/gui/ksudoku.cpp:219
+msgid "Sudoku with 16 symbols"
+msgstr "Sudoku mit 16 Symbolen"
+
+#: src/gui/ksudoku.cpp:221
+msgid "Sudoku 25x25"
+msgstr "Sudoku 25×25"
+
+#: src/gui/ksudoku.cpp:222
+msgid "Sudoku with 25 symbols"
+msgstr "Sudoku mit 25 Symbolen"
+
+#: src/gui/ksudoku.cpp:225
+msgid "Roxdoku 16 (4x4x4)"
+msgstr "Roxdoku 16 (4×4×4)"
+
+#: src/gui/ksudoku.cpp:226
+msgid "The Rox 3D sudoku with 16 symbols"
+msgstr "Das „Rox“ 3D-Sudoku mit 16 Symbolen"
+
+#: src/gui/ksudoku.cpp:228
+msgid "Roxdoku 25 (5x5x5)"
+msgstr "Roxdoku 25 (5×5×5)"
+
+#: src/gui/ksudoku.cpp:229
+msgid "The Rox 3D sudoku with 25 symbols"
+msgstr "Das „Rox“ 3D-Sudoku mit 25 Symbolen"
+
+#: src/gui/ksudoku.cpp:326
+msgid "The puzzle you entered contains some errors."
+msgstr "Das eingegebene Rätsel enthält Fehler."
+
+#: src/gui/ksudoku.cpp:338
+msgid "Sorry, no solutions have been found."
+msgstr "Es wurden keine Lösungen zum Rätsel gefunden."
+
+#: src/gui/ksudoku.cpp:342
+msgid "The Puzzle you entered has only one solution."
+msgstr "Das eingegebene Rätsel hat nur eine Lösung."
+
+#: src/gui/ksudoku.cpp:344
+msgid "The Puzzle you entered has multiple solutions."
+msgstr "Das eingegebene Rätsel hat mehrere Lösungen."
+
+#: src/gui/ksudoku.cpp:347
+msgid "Do you want to play the puzzle now?"
+msgstr "Möchten Sie dieses Rätsel jetzt spielen?"
+
+#: src/gui/ksudoku.cpp:347
+msgid "Play Puzzle"
+msgstr "Rätsel spielen"
+
+#: src/gui/ksudoku.cpp:347
+msgid "Play"
+msgstr "Spielen"
+
+#: src/gui/ksudoku.cpp:393
+msgid "Check"
+msgstr "Prüfen"
+
+#: src/gui/ksudoku.cpp:401
+msgid "Home Page"
+msgstr "Startseite"
+
+#: src/gui/ksudoku.cpp:414
+msgid "Difficulty"
+msgstr "Schwierigkeitsgrad"
+
+#: src/gui/ksudoku.cpp:423
+msgctxt "A level of difficulty in Sudoku puzzles"
+msgid "Diabolical"
+msgstr "Teuflisch"
+
+#: src/gui/ksudoku.cpp:425
+msgctxt "A level of difficulty in Sudoku puzzles"
+msgid "Unlimited"
+msgstr "Unbegrenzt"
+
+#: src/gui/ksudoku.cpp:438
+msgid "Symmetry"
+msgstr "Symmetrie"
+
+#: src/gui/ksudoku.cpp:443
+msgctxt "Symmetry of layout of clues when puzzle starts"
+msgid "Symmetry"
+msgstr "Symmetrie"
+
+#: src/gui/ksudoku.cpp:445
+msgid "The symmetry of layout of the clues when the puzzle starts"
+msgstr "Die Symmetrie der vorgegebenen Felder zu Beginn des Rätsels."
+
+#: src/gui/ksudoku.cpp:447
+msgctxt "Symmetry of layout of clues"
+msgid "Diagonal"
+msgstr "Diagonal"
+
+#: src/gui/ksudoku.cpp:448
+msgctxt "Symmetry of layout of clues"
+msgid "Central"
+msgstr "Zentriert"
+
+#: src/gui/ksudoku.cpp:449
+msgctxt "Symmetry of layout of clues"
+msgid "Left-Right"
+msgstr "Links-Rechts"
+
+#: src/gui/ksudoku.cpp:450
+msgctxt "Symmetry of layout of clues"
+msgid "Spiral"
+msgstr "Spirale"
+
+#: src/gui/ksudoku.cpp:451
+msgctxt "Symmetry of layout of clues"
+msgid "Four-Way"
+msgstr "Vierfach"
+
+#: src/gui/ksudoku.cpp:452
+msgctxt "Symmetry of layout of clues"
+msgid "Random Choice"
+msgstr "Zufällige Wahl"
+
+#: src/gui/ksudoku.cpp:453
+msgid "No Symmetry"
+msgstr "Keine Symmetrie"
+
+#: src/gui/ksudoku.cpp:565
+msgid "Do you really want to end this game in order to start a new one?"
+msgstr ""
+"Möchten Sie dieses Spiel wirklich beenden, um danach ein neues zu starten?"
+
+#: src/gui/ksudoku.cpp:566
+msgctxt "window title"
+msgid "Restart Game"
+msgstr "Spiel neu starten"
+
+#: src/gui/ksudoku.cpp:567
+msgctxt "button label"
+msgid "Restart Game"
+msgstr "Spiel neu starten"
+
+#: src/gui/ksudoku.cpp:581 src/gui/ksudoku.cpp:934
+msgid "Open Location"
+msgstr "Spiel laden"
+
+#: src/gui/ksudoku.cpp:587
+msgid "Could not load game."
+msgstr "Spiel kann nicht geladen werden."
+
+#: src/gui/ksudoku.cpp:632
+msgid "There seems to be no puzzle to print."
+msgstr "Es gibt kein Rätsel zum Drucken."
+
+#: src/gui/ksudoku.cpp:643
+msgid "Sorry, cannot print three-dimensional puzzles."
+msgstr "Leider können dreidimensionale Rätsel nicht gedruckt werden."
+
+#: src/gui/ksudoku.cpp:661
+msgid "Print Sudoku Puzzle"
+msgstr "Sudoku-Rätsel drucken"
+
+#: src/gui/ksudoku.cpp:794
+msgid ""
+"The KSudoku setting for printing several puzzles per page is currently "
+"selected.\n"
+"\n"
+"Your puzzle will be printed when no more will fit on the page or when "
+"KSudoku terminates."
+msgstr ""
+"In den Einstellungen für KSudoku ist das Drucken von mehreren Rätseln je "
+"Seite aktiviert.\n"
+"Ihr Rätsel wird gedruckt, wenn die Seite voll ist oder wenn KSudoku beendet "
+"wird."
+
+#: src/gui/ksudoku.cpp:810
+msgid "KSudoku has sent output to your printer."
+msgstr "Die Ausgabe wurde an den Drucker gesendet."
+
+#: src/gui/ksudoku.cpp:840
+msgctxt "Game Section in Config"
+msgid "Game"
+msgstr "Spiel"
+
+#: src/gui/ksudoku.cpp:841
+msgid "Theme"
+msgstr "Design"
+
+#: src/gui/ksudoku.cpp:893
+msgid ""
+"Warning: The Unlimited difficulty level has no limit on how many guesses or "
+"branch points are required to solve the puzzle and there is no lower limit "
+"on how soon guessing becomes necessary."
+msgstr ""
+"Achtung: Der „unbegrenzte“ Schwierigkeitsgrad bietet keine Obergrenze für "
+"die zu erratenden Felder bzw. Zweigfelder. Zudem ist keine Untergrenze für "
+"den Zeitpunkt vorgegeben, zu dem das erste Feld zu erraten ist."
+
+#: src/gui/ksudoku.cpp:897
+msgid "Warning"
+msgstr "Warnung"
+
+#. i18n: ectx: label, entry (Theme), group (Themes)
+#: src/gui/ksudoku.kcfg:38
+msgid "The graphical theme to be used."
+msgstr "Das zu verwendende grafische Design."
+
+#. i18n: ectx: label, entry (Symbols), group (Themes)
+#: src/gui/ksudoku.kcfg:41
+msgid "Select the themes you want to use"
+msgstr "Wählen Sie das gewünschte Design"
+
+#. i18n: ectx: Menu (game)
+#: src/gui/ksudokuui.rc:10
+msgid "&Game"
+msgstr "&Spiel"
+
+#. i18n: ectx: Menu (move)
+#: src/gui/ksudokuui.rc:22
+msgid "&Move"
+msgstr "&Zug"
+
+#. i18n: ectx: Menu (help)
+#: src/gui/ksudokuui.rc:33
+msgid "&Help"
+msgstr "&Hilfe"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: src/gui/ksudokuui.rc:41
+msgid "Main Toolbar"
+msgstr "Haupt-Werkzeugleiste"
+
+#. i18n: ectx: ToolBar (actionsToolbar)
+#: src/gui/ksudokuui.rc:47
+msgid "Actions Toolbar"
+msgstr "Aktionen-Werkzeugleiste"
+
+#: src/gui/serializer.cpp:359 src/gui/serializer.cpp:397
+#, kde-format
+msgid "Cannot read XML file on line %1"
+msgstr "XML-Datei kann in Zeile %1 nicht gelesen werden"
+
+#: src/gui/serializer.cpp:369 src/gui/serializer.cpp:406
+msgid "Cannot load file."
+msgstr "Datei kann nicht geladen werden."
+
+#: src/gui/views/gameactions.cpp:48
+#, kde-format
+msgid "Select %1 (%2)"
+msgstr "Auswahl %1 (%2)"
+
+#: src/gui/views/gameactions.cpp:55
+#, kde-format
+msgid "Enter %1 (%2)"
+msgstr "Eingabe %1 (%2)"
+
+#: src/gui/views/gameactions.cpp:68
+#, kde-format
+msgid "Mark %1 (%2)"
+msgstr "Markierung %1 (%2)"
+
+#: src/gui/views/gameactions.cpp:82
+msgid "Move Up"
+msgstr "Nach oben"
+
+#: src/gui/views/gameactions.cpp:89
+msgid "Move Down"
+msgstr "Nach unten"
+
+#: src/gui/views/gameactions.cpp:96
+msgid "Move Left"
+msgstr "Nach links"
+
+#: src/gui/views/gameactions.cpp:103
+msgid "Move Right"
+msgstr "Nach rechts"
+
+#: src/gui/views/gameactions.cpp:110
+msgid "Clear Cell"
+msgstr "Feld leeren"
+
+#: src/gui/welcomescreen.cpp:115
+msgid "GetNewVariant not implemented"
+msgstr "GetNewVariant ist nicht implementiert"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
+#: src/gui/welcomescreen.ui:17
+msgid "Choose your Game"
+msgstr "Spiel auswählen"
+
+#. i18n: ectx: property (text), widget (QPushButton, getNewGameButton)
+#: src/gui/welcomescreen.ui:28
+msgid "Get New"
+msgstr "Neu"
+
+#. i18n: ectx: property (text), widget (QPushButton, startEmptyButton)
+#: src/gui/welcomescreen.ui:48
+msgid "Enter In A Puzzle"
+msgstr "Rätsel eingeben"
+
+#. i18n: ectx: property (text), widget (QPushButton, puzzleGeneratorButton)
+#: src/gui/welcomescreen.ui:55
+msgid "Generate A Puzzle"
+msgstr "Rätsel ausfüllen"
+
+#: src/main.cpp:37
+msgid "KSudoku - Sudokus and more"
+msgstr "KSudoku – Sudokus und mehr"
+
+#: src/main.cpp:47
+msgid "KSudoku"
+msgstr "KSudoku"
+
+#: src/main.cpp:49
+msgid "KSudoku - Sudoku games and more"
+msgstr "KSudoku – Sudoku-Spiele und mehr"
+
+#: src/main.cpp:51
+msgid "(c) 2005-2007 The KSudoku Authors"
+msgstr "© 2005–2007, Die KSudoku-Autoren"
+
+#: src/main.cpp:53
+msgid "Francesco Rossi"
+msgstr "Francesco Rossi"
+
+#: src/main.cpp:53
+msgid "KSudoku Author"
+msgstr "KSudoku-Autor"
+
+#: src/main.cpp:54
+msgid "Johannes Bergmeier"
+msgstr "Johannes Bergmeier"
+
+#: src/main.cpp:54
+msgid "Maintainer"
+msgstr "Betreuer"
+
+#: src/main.cpp:55
+msgid "Ian Wadham"
+msgstr "Ian Wadham"
+
+#: src/main.cpp:55
+msgid "New puzzle generator and solver"
+msgstr "Neuer Rätselgenerator und -löser"
+
+#: src/main.cpp:56
+msgid "Mick Kappenburg"
+msgstr "Mick Kappenburg"
+
+#: src/main.cpp:56
+msgid "Printing and export of 0.4"
+msgstr "Drucken und Export von 0.4"
+
+#: src/main.cpp:57
+msgid "Thanks to NeHe for OpenGL tutorials"
+msgstr "Dank an NeHe für die OpenGL-Anleitungen"
+
+#: src/main.cpp:58
+msgid "David Bau"
+msgstr "David Bau"
+
+#: src/main.cpp:58
+msgid ""
+"Algorithms for new puzzle generator and solver at davidbau.com/"
+"archives/2006/09/04/sudoku_generator.html"
+msgstr ""
+"Weitere Informationen zum neuen Rätselgenerator und -löser:\n"
+"http://davidbau.com/archives/2006/09/04/sudoku_generator.html"
+
+#: src/main.cpp:62
+msgid "Document to open"
+msgstr "Zu öffnendes Dokument"
+
+#~ msgid "A0"
+#~ msgstr "A0"
+
+#~ msgid "A1"
+#~ msgstr "A1"
+
+#~ msgid "A2"
+#~ msgstr "A2"
+
+#~ msgid "A3"
+#~ msgstr "A3"
+
+#~ msgid "A4"
+#~ msgstr "A4"
+
+#~ msgid "A5"
+#~ msgstr "A5"
+
+#~ msgid "A6"
+#~ msgstr "A6"
+
+#~ msgid "A7"
+#~ msgstr "A7"
+
+#~ msgid "A8"
+#~ msgstr "A8"
+
+#~ msgid "A9"
+#~ msgstr "A9"
+
+#~ msgid "B0"
+#~ msgstr "B0"
+
+#~ msgid "B1"
+#~ msgstr "B1"
+
+#~ msgid "B10"
+#~ msgstr "B10"
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "B4"
+#~ msgstr "B4"
+
+#~ msgid "B5"
+#~ msgstr "B5"
+
+#~ msgid "B6"
+#~ msgstr "B6"
+
+#~ msgid "B7"
+#~ msgstr "B7"
+
+#~ msgid "B8"
+#~ msgstr "B8"
+
+#~ msgid "B9"
+#~ msgstr "B9"
+
+#~ msgid "C5E"
+#~ msgstr "C5E"
+
+#~ msgid "Comm10E"
+#~ msgstr "Comm10E"
+
+#~ msgid "DLE"
+#~ msgstr "DLE"
+
+#~ msgid "Folio"
+#~ msgstr "Folio"
+
+#~ msgid "Ledger"
+#~ msgstr "Ledger"
+
+#~ msgid "Legal"
+#~ msgstr "Legal"
+
+#~ msgid "Letter"
+#~ msgstr "Letter"
+
+#~ msgid "Tabloid"
+#~ msgstr "Tabloid"
+
+#~ msgid "Custom"
+#~ msgstr "Benutzerdefiniert"
+
+#~ msgid "Sorry. I am not able to export this puzzle type (yet)"
+#~ msgstr "Dieser Rätseltyp kann (noch) nicht exportiert werden"
+
+#~ msgid "Export Ksudoku"
+#~ msgstr "KSudoku exportieren"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Ein Dokument mit diesem Namen gibt es bereits.\n"
+#~ "Möchten Sie es überschreiben?"
+
+#~ msgid "1 puzzle available"
+#~ msgid_plural "%1 puzzles available"
+#~ msgstr[0] "1 Rätsel verfügbar"
+#~ msgstr[1] "%1 Rätsel verfügbar"
+
+#~ msgid "generating puzzle %1 of %2"
+#~ msgstr "Rätsel wird erstellt: %1 von %2"
+
+#~ msgid "KSudoku options"
+#~ msgstr "KSudoku-Einstellungen"
+
+#~ msgid "Ksudoku Export"
+#~ msgstr "Ksudoku Export"
+
+#~ msgid "Game Count"
+#~ msgstr "Anzahl der Spiele"
+
+#~ msgid "Spacing"
+#~ msgstr "Leerzeichen"
+
+#~ msgid "Output Size (Save only)"
+#~ msgstr "Ausgabegröße (nur beim Speichern)"
+
+#~ msgid "Custom Size (mm)"
+#~ msgstr "Eigene Größe (mm)"
+
+#~ msgid "Lock"
+#~ msgstr "Sperren"
+
+#~ msgid "View (and generate) game data"
+#~ msgstr "Spieldaten generieren und anzeigen"
+
+#~ msgid "Use current game"
+#~ msgstr "Aktuelles Spiel verwenden"
+
+#~ msgid "%"
+#~ msgstr "%"
+
+#~ msgid "Start Empty"
+#~ msgstr "Leer starten"
+
+#~ msgid "Configure..."
+#~ msgstr "Einstellungen ..."
+
+#~ msgid "Easy"
+#~ msgstr "Leicht"
+
+#~ msgid "Hard"
+#~ msgstr "Schwierig"
+
+#~ msgctxt "list arg2 consists of arg1 symbols: arg3"
+#~ msgid "<html><h4>%2</h4>consists of 1 symbol:<br/>%3</html>"
+#~ msgid_plural "<html><h4>%2</h4>consists of %1 symbols:<br/>%3</html>"
+#~ msgstr[0] "<html><h4>%2</h4>besteht aus %1 Symbol:<br/>%3</html>"
+#~ msgstr[1] "<html><h4>%2</h4>besteht aus %1 Symbolen:<br/>%3</html>"
+
+#~ msgid "Symbol Themes"
+#~ msgstr "Aussehen der Symbole"
+
+#~ msgid "Simple Forms"
+#~ msgstr "Einfache Formen"
+
+#~ msgid "Dices"
+#~ msgstr "Würfel"
+
+#~ msgid "Digits"
+#~ msgstr "Ziffern"
+
+#~ msgid "Small Letters"
+#~ msgstr "Kleinbuchstaben"
+
+#~ msgid "Capital Letters"
+#~ msgstr "Großbuchstaben"
+
+#~ msgid "The Puzzle you entered has only one solution. (Forks required: %1)"
+#~ msgstr ""
+#~ "Das von Ihnen eingegebene Rätsel hat genau eine Lösung. (Benötigte "
+#~ "Verzweigungen: %1)"
+
+#~ msgid "Selected item %1, Time elapsed %2. Press SHIFT to highlight."
+#~ msgstr ""
+#~ "Gewählte Zahl %1, Verbrauchte Zeit %2. Drücken Sie die Umschalttaste zum "
+#~ "Hervorheben."
+
+#~ msgid ""
+#~ "Selected item %1, Time elapsed %2. Use RMB to pencil-mark(superscript)."
+#~ msgstr ""
+#~ "Gewählte Zahl %1, Verbrauchte Zeit %2. Klicken Sie rechts zum Stift-"
+#~ "markieren (Drüberschreiben)."
+
+#~ msgid ""
+#~ "Selected item %1, Time elapsed %2. Type in a cell to replace that number "
+#~ "in it."
+#~ msgstr ""
+#~ "Gewählte Zahl %1, Verbrauchte Zeit %2. Schreiben Sie in eine Zelle, um "
+#~ "die darin enthaltene Nummer zu ersetzen."
+
+#~ msgid "BUG: No default color defined, but it is apparently needed"
+#~ msgstr ""
+#~ "FEHLER: Keine Standardfarbe definiert, sie wird aber offensichtlich "
+#~ "benötigt"
+
+#~ msgid ""
+#~ "Sorry the solution you entered is not correct.\n"
+#~ "If you want to see error check Options->Guided mode please."
+#~ msgstr ""
+#~ "Die von Ihnen eingegebene Lösung ist leider nicht richtig.\n"
+#~ "Wenn Sie die Fehler sehen möchten, schalten Sie bitte Optionen-"
+#~ ">Begleiteter Modus ein."

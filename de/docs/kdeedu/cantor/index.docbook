@@ -1,0 +1,1045 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+
+  <!ENTITY kappname "&cantor;">
+  <!ENTITY package "kdeedu">
+  <!ENTITY latex "L<superscript
+>A</superscript
+>T<subscript
+>E</subscript
+>X">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE">
+]>
+<book id="cantor" lang="&language;">
+
+<bookinfo>
+<title
+>Das Handbuch zu &cantor;</title>
+
+<authorgroup>
+<author
+><personname
+> <firstname
+>Alexander</firstname
+> <surname
+>Rieder</surname
+> </personname
+> <email
+>alexanderrieder@gmail.com</email
+> </author>
+<othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2009</year>
+<holder
+>Alexander Rieder</holder>
+</copyright>
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2014-05-09</date>
+<releaseinfo
+>0.5 (&kde; 4.14)</releaseinfo>
+
+<abstract>
+<para
+>&cantor; ist ein Programm, das ein Arbeitsblatt als grafische Bedienungsoberfläche für andere freie Mathematikpakete zu Verfügung stellt. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdeedu</keyword>
+<keyword
+>Mathematik</keyword>
+<keyword
+>Mathe</keyword>
+<keyword
+>Cantor</keyword>
+<keyword
+>Sage</keyword>
+<keyword
+>Python</keyword>
+<keyword
+>Lua</keyword>
+<keyword
+>Scilab</keyword>
+<keyword
+>R</keyword>
+<keyword
+>Maxima</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Einleitung</title>
+
+<para
+>&cantor; ist ein Programm, um Ihre Lieblings-Mathematikpakete in &kde; mit einem Arbeitsblatt als grafische Schnittstelle zu benutzen. Dialoge unterstützen Sie bei häufig vorkommenden Aufgaben und Sie können Arbeitsblätter mit anderen gemeinsam nutzen. </para>
+</chapter>
+
+<chapter id="using-kapp">
+<title
+>&cantor; benutzen</title>
+
+<para
+>Bildschirmfoto: <screenshot>
+<screeninfo
+>Ein Bildschirmfoto von &cantor;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="screenshot.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Bildschirmfoto</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+
+
+<sect1 id="kapp-features">
+<title
+>Leistungsmerkmale von &cantor;</title>
+<itemizedlist>
+  <listitem
+><para
+>Intuitive Arbeitsblattansicht zur Berechnung von Ausdrücken.</para
+></listitem>
+  <listitem
+><para
+>Graphische Ausgaben werden im Arbeitsblatt dargestellt.</para
+></listitem>
+  <listitem
+><para
+>Modulbasierte Struktur, daher können verschiedene Module hinzugefügt werden.</para
+></listitem>
+  <listitem
+><para
+>Mit der Funktion „Neue Erweiterungen“ können Beispiel-Arbeitsblätter aus dem Internet herunter- oder hochgeladen werden.</para
+></listitem>
+  <listitem
+><para
+>Schriftsatz für mathematische Formeln mit Hilfe von &latex;.</para
+></listitem>
+  <listitem
+><para
+>Syntaxhervorhebung passend zum verwendeten Modul.</para
+></listitem>
+  <listitem
+><para
+>Abhängig vom verwendeten Modul gibt es Assistenten als Dialoge für häufig vorkommende Aufgaben wie die Integration einer Funktion oder die Eingabe einer Matrix.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="backends">
+<title
+>Die Module von &cantor;</title>
+<para
+>In &cantor; stehen mehrere Module zur Auswahl, je nach Aufgabenstellung wählen Sie das am besten geeignete Modul aus. </para>
+<para
+>Zur Zeit sind folgende Module vorhanden: <variablelist>
+    <varlistentry>
+      <term
+>Sage:</term>
+      <listitem>
+	<para
+>Sage ist ein unter der GPL lizenziertes freies Mathematik-Software-System.Es kombiniert die Stärken vieler Open-Source-Pakete mit einer gemeinsamen Python-basierten Schnittstelle. Weitere Informationen finden Sie auf der Webseite <ulink url="http://sagemath.org"
+>http://sagemath.org</ulink
+>. </para>
+	</listitem>
+    </varlistentry>
+    <varlistentry>
+      <term
+>Maxima:</term>
+      <listitem>
+	<para
+>Maxima ist ein System für die Manipulation von symbolischen und numerischen Ausdrücken, einschließlich Differenzierung, Integration, Taylorreihe, Laplace-Transformation, gewöhnliche Differentialgleichungen, lineare Gleichungssysteme, Polynome und Mengen, Listen, Vektoren, Matrizen und Tensoren. Durch exakte Brüche sowie Langzahlarithmetik und Gleitkommazahlen mit beliebiger Genauigkeit (arbitrary precision) erzeugt Maxima Ergebnisse mit hoher numerischer Präzision. Maxima kann Funktionen und Daten zwei- und dreidimensional grafisch darstellen. Weitere Informationen finden Sie auf der Webseite <ulink url="http://maxima.sourceforge.net"
+>http://maxima.sourceforge.net</ulink
+>. </para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term
+>R:</term>
+      <listitem>
+	<para
+>„R“ ist eine Sprache und eine Umgebung für statistische Berechnungen und Grafiken, ähnlich zur Sprache und Umgebung „S“. Es stellt eine große Auswahl an statistischen (lineare und nicht lineare Modellierung, klassische statistische Tests, Zeitreihenanalyse, Klassifikation, Clustering, ...) und grafischen Techniken bereit und lässt sich stark erweitern. Die Sprache „S“ ist oft das bevorzugte Mittel für Forschungen mit statistischer Methodologie und „R“ stellt die Open-Source-Mittel für die Teilnahme an diesen Aktivitäten bereit. Weitere Informationen finden Sie auf der Webseite <ulink url="http://www.r-project.org"
+>http://www.r-project.org</ulink
+>. </para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term
+>&kalgebra;:</term>
+      <listitem>
+	<para
+>&kalgebra; ist ein grafischen Mathematikprogramm auf der Basis von MathML. Es ist im Projekt &kde;-Lernprogramme enthalten. Weitere Informationen finden Sie auf der Webseite <ulink url="http://edu.kde.org/kalgebra/"
+>http://edu.kde.org/kalgebra/</ulink
+>. </para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term
+>Qalculate!:</term>
+      <listitem>
+  <para
+>Qalculate! ist mehr als nur ein einfacher Rechner und nutzt die Schnittstellen, Rechenleistung und Flexibilität moderner Rechner aus. Der wichtigste Begriff in Qalculate! ist der Ausdruck. Anstatt jede Zahl in mathematischen Ausdrücken einzeln einzugeben, schreiben Sie den gesamten Ausdruck und bearbeiten ihn dann. Die Interpretation der Ausdrücke ist flexibel und fehlertolerant. Bei fehlerhaften Eingaben erhalten Sie Hinweise zur Korrektur. Nicht vollständig lösbare Ausdrücke führen aber nicht zu Fehlern, sondern diese Ausdrücke werden durch Qalculate! soweit wie möglich vereinfacht und als geänderter Ausdruck zurückgegeben. Zusätzlich zu Zahlen und arithmetischen Operatoren darf ein Ausdruck eine beliebige Kombination von Variablen, Einheiten und Funktionen enthalten. Weitere Informationen finden Sie auf <ulink url="http://qalculate.sourceforge.net/"
+>http://qalculate.sourceforge.net/</ulink
+>. </para>
+  </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term
+>Python2:</term>
+      <listitem>
+  <para
+>Python ist eine außergewöhnlich leistungsfähige dynamische Programmiersprache, die in vielen verschiedenen Anwendungsbereichen benutzt wird. Es gibt mehrere Python-Pakete für wissenschaftliche Programmierung. </para>
+  <para
+>Python wird unter der „Python Software Foundation“-Lizenz (kompatibel zur GPL) verbreitet. Weitere Informationen dazu finden Sie auf <ulink url="http://www.python.org/"
+>offiziellen Webseite</ulink
+>. </para>
+  <note>
+    <para
+>Diese Modul fügt den zusätzlichen Eintrag <guimenu
+>Paket</guimenu
+> zum Hauptmenü von &cantor; hinzu. Benutzen Sie dann <menuchoice
+><guimenu
+>Paket</guimenu
+><guimenuitem
+>Paket importieren</guimenuitem
+></menuchoice
+>, um Python-Pakete in das Arbeitsblatt zu importieren. </para>
+  </note>
+  <warning>
+    <para
+>Diese Modul unterstützt nur Python 2. </para>
+  </warning>
+  </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term
+>Scilab:</term>
+      <listitem>
+  <para
+>Scilab ist ein freies Softwarepaket für numerische Berechnungen für verschiedene Betriebssysteme und eine höhere Programmiersprache für numerische Probleme. </para>
+  <para
+>Scilab wird unter der CeCILL-Lizenz (kompatibel zur GPL) verbreitet. Weitere Informationen dazu finden Sie auf <ulink url="http://www.scilab.org/"
+>http://www.scilab.org/</ulink
+>. </para>
+  <warning>
+    <para
+>Scilab in Version 5.5 oder neuer muss auf Ihrem System installiert sein, damit Sie mit diesem Modul arbeiten können. </para>
+  </warning>
+  </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term
+>Octave:</term>
+      <listitem>
+  <para
+>&GNU; Octave ist eine „höhere Programmiersprache“, die hauptsächlich für numerische Berechnungen vorgesehen ist. Sie stellt eine praktische Befehlszeilenoberfläche für das numerische Lösen von linearen und nichtlinearen Problemen und für das Durchführen von anderen numerischen Experimenten bereit. Die Sprache ist dabei weitestgehend kompatibel zu <ulink url="http://www.mathworks.com/products/matlab/"
+>Matlab</ulink
+>. Weitere Informationen finden Sie unter <ulink url="http://www.gnu.org/software/octave/"
+>http://www.gnu.org/software/octave/</ulink
+>. </para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term
+>Lua:</term>
+      <listitem>
+  <para
+>Lua ist eine schnelle und leichtgewichtige Skript-Sprache mit einer einfachen prozeduralen Syntax. Es gibt mehrere Bibliotheken für Mathematik und Wissenschaft in Lua. </para>
+  <para
+>Weitere Informationen dazu finden Sie auf <ulink url="http://www.lua.org/"
+>http://www.lua.org/</ulink
+>. </para>
+  <para
+>Dieses Modul unterstützt <ulink url="http://luajit.org/"
+>luajit 2</ulink
+>. </para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</para>
+</sect1>
+
+<sect1 id="workspace">
+<title
+>Der Arbeitsbereich von &cantor;</title>
+<para>
+<screenshot>
+  <screeninfo
+>Der Arbeitsbereich von &cantor;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="screenshot.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Der Arbeitsbereich von &cantor;</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+<para
+>Der Arbeitsbereich von &cantor; besteht aus drei Teilen: <orderedlist>
+    <listitem
+><para
+>Der Karteireiterleiste, mit der Sie zwischen den geöffneten Arbeitsblättern wechseln können.</para
+></listitem>
+    <listitem
+><para
+>Einem Hilfebereich, hier werden Informationen zu den Befehlen angezeigt, wenn Sie „? befehl“ eingeben.</para
+></listitem>
+    <listitem
+><para
+>Einer Seitenleiste mit der Variablen-Verwaltung, in der eine Liste aller verfügbaren Variablen auf dem aktuellen Arbeitsblatt angezeigt wird. Die  Seitenleiste von &cantor; enthält Karteikarten mit Hilfe und der Variablen-Verwaltung. Die Variablen-Verwaltung kann mit Maxima (wenn auf der Seite  <menuchoice
+><guimenu
+>Einstellungen</guimenu
+><guimenuitem
+>&cantor; einrichten ...</guimenuitem
+></menuchoice
+> <guilabel
+>Maxima</guilabel
+>aktiviert) und mit &kalgebra;, Octave, Python2, Qalculate und Scilab verwendet werden.</para
+></listitem>
+    <listitem
+><para
+>Dem Arbeitsblatt selbst.</para
+></listitem>
+  </orderedlist>
+</para>
+<sect2 id="worksheet">
+<title
+>Das Arbeitsblatt</title>
+<para
+>Das Arbeitsblatt ist der wichtigste Bereich für die Arbeit mit &cantor;. Hier geben Sie Ausdrücke ein, lassen sie vom Modul auswerten und hier werden die Ergebnisse angezeigt. Die Befehle, die im Arbeitsblatt benutzt werden können, sind durch das ausgewählte Modul vorgeben. Daher sollten Sie die Syntax des gewählten Moduls lernen. Im Menü „Hilfe“ finden Sie einen Eintrag für das aktuell benutzte Modul, damit können Sie die Dokumentation des Moduls online lesen. Brauchen Sie zu einem bekannten Befehl weitere Hilfe, geben Sie "? <replaceable
+>befehl</replaceable
+>" ein, dann wird die Dokumentation zum Befehl rechts im Arbeitsblatt angezeigt. Möchten Sie einige Beispielarbeitsblätter laden, wählen Sie <guimenuitem
+>Beispielarbeitsblatt herunterladen</guimenuitem
+> im Menü <guimenu
+>Datei</guimenu
+>. Dann können Sie von anderen Benutzern veröffentlichte Arbeitsblätter herunterladen. </para>
+<para
+>Um jeden Befehlseintrag im Arbeitsblatt zu kontrollieren, verwenden Sie die Knöpfe, die rechts im Arbeitsblatt angezeigt werden, wenn der Mauszeiger über einem Eingabefeld steht. Es gibt drei grundlegende Aktionen für jeden Eintrag. Mit <guilabel
+>Eintrag auswerten</guilabel
+> wird das Ergebnis der Berechnung dieses Eintrags aktualisiert, mit <guilabel
+>Eintrag ziehen</guilabel
+> kann der Eintrag an eine anderen Platz im Arbeitsblatt verschoben werden und mit <guilabel
+>Eintrag entfernen</guilabel
+> wird ein Eintrag vom aktuellen Arbeitsblatt gelöscht </para>
+<para
+>Einstellungen für Schriften und die Ausrichtung von Elementen im Arbeitsblatt können mit den Aktionen in der Werkzeugleiste über dem Arbeitsblatt geändert werden. </para>
+<sect3 id="worksheet-settings">
+  <title
+>Einstellungen</title>
+  <para
+>Im Menü <guimenu
+>Einstellungen</guimenu
+> kann das Erscheinungsbild des aktuellen Arbeitsblatts geändert werden. </para>
+  <variablelist>
+    <varlistentry>
+      <term
+>Schriftsatz mit Hilfe von &latex;</term>
+      <listitem>
+	<para
+>Diese Einstellung ändert die Anzeige von Ergebnissen. Ist sie aktiviert, werden die Ergebnisse vor der Anzeige vom &latex;-System bearbeitet. Damit wird eine ansprechende Darstellung der Formeln möglich. Aus <quote
+>3*x^2*sqrt(2)*x+2/3</quote
+> zum Beispiel wird <inlinemediaobject>
+	      <imageobject>
+		<imagedata fileref="latex_formula.png" format="PNG"/>
+	      </imageobject>
+	      <textobject
+><phrase
+>3*x^2*sqrt(2)*x+2/3</phrase
+></textobject>
+	  </inlinemediaobject>
+	</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term
+>Syntaxhervorhebung aktivieren</term>
+      <listitem>
+	<para
+>Syntaxhervorhebung verbessert die Lesbarkeit des Quelltextes, indem Schlüsselworte oder zusammengehörige Klammern farblich hervorgehoben werden. </para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term
+>Vervollständigung</term>
+      <listitem>
+	<para
+>Ist dies aktiviert, zeigt &cantor; bei der Eingabe eine Liste aller mit den bisher eingetippten Buchstaben beginnenden Befehle an, wenn die Tabulatortaste gedrückt wird. Gibt es nur noch einen passenden Befehl, wird er vervollständigt. </para>
+      </listitem>
+    </varlistentry>
+  <varlistentry>
+    <term
+>Zeilennummern</term>
+    <listitem>
+      <para
+>Mit dieser Einstellung legen Sie fest, ob die Ausdrücke mit einer Zeilennummer gekennzeichnet werden sollen. Damit können vorher bereits eingegebene Ergebnisse wieder aufgerufen werden - in Maxima funktioniert dies zum Beispiel mit dem Befehl <quote
+>%O1</quote
+>. </para>
+    </listitem>
+  </varlistentry>
+  <varlistentry>
+    <term
+>Arbeitsblatt animieren</term>
+    <listitem>
+      <para
+>Ist diese Einstellung aktiv. werden verschiedene Animationen verwendet, um Änderungen auf einem Arbeitsblatt hervorzuheben. </para>
+    </listitem>
+  </varlistentry>
+  </variablelist>
+</sect3>
+</sect2>
+</sect1>
+<!--
+<sect1 id="assistant-dlgs">
+<title
+>The assistant dialogs</title>
+TODO add screenshots and descriptions of each assistant
+</sect1>
+-->
+</chapter>
+<chapter id="commands">
+<title
+>Befehlsreferenz</title>
+
+<sect1 id="kapp-mainwindow">
+<title
+>Das Hauptfenster von &cantor;</title>
+
+<para
+>&cantor; benutzt die bekannten &kde;-Menüeinträge, weitere Informationen dazu finden Sie im Kapitel <ulink url="help:/fundamentals/ui.html#menus"
+>Menüs</ulink
+> der &kde;-Grundlagen. </para>
+
+<para
+>Zusätzliche oder besondere Menüeinträge in &cantor;: </para>
+
+<sect2 id="file-menu">
+<title
+>Das Menü Datei</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl; <keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Datei</guimenu
+> <guimenuitem
+>Neu</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Erstellt ein neues Arbeitsblatt mit dem Standardmodul.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+> <guisubmenu
+>Neu</guisubmenu
+> <guimenuitem
+><replaceable
+>Modul</replaceable
+></guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Erstellt ein neues Arbeitsblatt mit dem ausgewählten Modul.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+> <guimenuitem
+>Beispielarbeitsblatt herunterladen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet einen Dialog, um Beispiele, die von anderen Benutzer von &cantor; veröffentlicht wurden, mit der Funktion <ulink url="http://userbase.kde.org/Special:MyLanguage/Glossary#Get_Hot_New_Stuff"
+>Neue Erweiterungen</ulink
+> herunterzuladen.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+> <guimenuitem
+>Beispieldatei öffnen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet einen Dialog, um eine Beispiel auszuwählen und zu laden</action
+>. Die Beispiele können zum Beispiel vorher mit <menuchoice
+><guimenu
+>Datei</guimenu
+> <guimenuitem
+>Beispielarbeitsblatt herunterladen</guimenuitem
+></menuchoice
+> auf der Festplatte gespeichert werden.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+> <guimenuitem
+>Als einfache Textdatei speichern</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Ermöglicht das Speichern des aktuellen Arbeitsblatts als einfaches Textdokument.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+> <guimenuitem
+>LaTeX-Export</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Ermöglicht das Speichern des aktuellen Arbeitsblatts als &latex;-Dokument.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+> <guimenuitem
+>Arbeitsblatt veröffentlichen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet einen Dialog, um Ihr aktuelles Arbeitsblatt zu veröffentlichen und anderen Benutzer von &cantor; über die Funktion <ulink url="http://userbase.kde.org/Special:MyLanguage/Glossary#Get_Hot_New_Stuff"
+>„Neue Erweiterungen“ veröffentlichen</ulink
+> zur Verfügung zu stellen.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Datei</guimenu
+> <guimenuitem
+>Skript ausführen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Ermöglicht das Laden und Ausführen der Skripte für das aktuelle Modul.</action
+></para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2 id="view-menu">
+<title
+>Das Menü Ansicht</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>+</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Vergrößern</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Vergrößert</action
+> das aktuelle Arbeitsblatt um 10 %.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>-</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Verkleinern</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Verkleinert</action
+> das aktuelle Arbeitsblatt um 10 %.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Skripteditor anzeigen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öffnet das Skripteditorfenster für das aktuell gewählte Modul.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ansicht</guimenu
+> <guisubmenu
+>Seitenleisten</guisubmenu
+><guimenuitem
+>Hilfe</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Schaltet</action
+> die Anzeige der Karteikarte <guilabel
+>Hilfe</guilabel
+> in der Seitenleiste an oder aus.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ansicht</guimenu
+> <guisubmenu
+>Seitenleisten</guisubmenu
+><guimenuitem
+>Variablen-Verwaltung</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Schaltet</action
+> die Anzeige der Karteikarte <guilabel
+>Variablen-Verwaltung</guilabel
+> in der Seitenleiste an oder aus.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+</sect2>
+
+<sect2 id="worsheet-menu">
+<title
+>Das Menü Arbeitsblatt</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Arbeitsblatt</guimenu
+> <guimenuitem
+>Arbeitsblatt auswerten</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Startet</action
+> die Auswertung des gesamten Arbeitsblatts.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Shift;<keycap
+>Eingabe</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Arbeitsblatt</guimenu
+> <guimenuitem
+>Eintrag auswerten</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Startet</action
+> die Auswertung des aktuellen Eintrags.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Eingabe</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Arbeitsblatt</guimenu
+> <guimenuitem
+>Befehlseintrag einfügen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Fügt unter der aktuellen Cursor-Position einen neuen Befehlseintrag ein.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Arbeitsblatt</guimenu
+> <guimenuitem
+>Texteintrag einfügen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Fügt unter der aktuellen Cursor-Position einen neuen Texteintrag ein.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Arbeitsblatt</guimenu
+> <guimenuitem
+>Bild einfügen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Fügt unter der aktuellen Cursor-Position eine Bildvorlage ein</action
+>. Klicken Sie mit der &RMBn; darauf, um das Bild zu laden und einzustellen.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Arbeitsblatt</guimenu
+> <guimenuitem
+>Seitenumbruch einfügen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Fügt unter der aktuellen Cursor-Position einen Seitenumbruch ein.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Shift;<keycap
+>Del</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Arbeitsblatt</guimenu
+> <guimenuitem
+>Aktuellen Eintrag entfernen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Löscht</action
+> den aktuellen Eintrag aus dem Arbeitsblatt.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+</sect2>
+
+<sect2 id="settings-menu">
+<title
+>Das Menü Einstellungen</title>
+<para
+>Dieses Menü enthält die Standardeinträge des &kde;-Menüs <guimenu
+>Einstellungen</guimenu
+> und zusätzlich die im Abschnitt <link linkend="worksheet-settings"
+>Einstellungen</link
+> beschriebenen Einträge. </para>
+</sect2>
+
+<sect2 id="help-menu">
+<title
+>Das Menü Hilfe</title>
+&help.menu.documentation; </sect2>
+
+</sect1>
+</chapter>
+
+<chapter id="developers">
+<title
+>Entwicklerhandbuch zu &cantor;</title>
+
+<para
+>&cantor; kann sehr einfach durch Module erweitert werden. Folgende Arten von Modulen gibt es: <variablelist>
+  <varlistentry>
+    <term
+>Module:</term>
+    <listitem>
+      <para
+>Mit einem neuen Modul kann die Benutzerschnittstelle von &cantor; mit anderen Programmen benutzt werden. </para>
+    </listitem>
+  </varlistentry>
+  <varlistentry>
+    <term
+>Assistenten:</term>
+    <listitem>
+      <para
+>Assistenten bestehen aus Dialogen, mit denen häufig vorkommende Aufgaben automatisch ausgeführt werden können, zum Beispiel die Eingabe einer Matrix  oder das Ausführen eines Skripts. </para>
+    </listitem>
+  </varlistentry>
+</variablelist>
+</para>
+<para
+>Zur Zeit gibt es keine spezielle Entwickler- oder Schnittstellendokumentation. Um ein neues Modul zu schreiben, müssen Sie den Quelltext lesen. Alle Definitionen der Schnittstellen finden Sie im Ordner <filename role="directory"
+>lib</filename
+>, Beispiele der bereits in &cantor; implementierten Module im Ordner <filename role="directory"
+>plugins</filename
+>. </para>
+
+</chapter>
+
+<chapter id="faq">
+<title
+>Fragen und Antworten</title>
+&reporting.bugs; &updating.documentation; <qandaset id="faqlist">
+<qandaentry>
+  <question
+><para
+>Der Menüeintrag <guimenuitem
+>Schriftsatz mit Hilfe von LaTeX</guimenuitem
+> ist nicht vorhanden</para
+></question>
+  <answer
+><para
+>Diese Funktion wird nicht von allen Modulen unterstützt. In der aktuellen Version wird die &latex;-Ausgabe mit den Modulen Maxima, Qalculate! und Sage unterstützt.</para
+></answer>
+</qandaentry>
+<qandaentry>
+  <question
+><para
+>Ich habe Sage/Maxima installiert, aber das zugehörige Modul wird nicht angezeigt.</para
+></question>
+  <answer>
+    <para
+>Möglicherweise hat &cantor; den Pfad zu diesen Modulen nicht gefunden. Öffnen Sie den Einrichtungsdialog mit <menuchoice
+><guimenu
+>Einstellungen</guimenu
+><guimenuitem
+>&kappname; einrichten ...</guimenuitem
+></menuchoice
+> und stellen Sie dort den Pfad zu den Programmen richtig ein. </para>
+  </answer>
+</qandaentry>
+<qandaentry>
+  <question
+><para
+>Was hat der eigenartige Name des Programms mit Mathematik zu tun?</para
+></question>
+  <answer
+><para
+>Das Programm ist nach dem deutschen Mathematiker <ulink url="http://en.wikipedia.org/wiki/Georg_Cantor"
+>Georg Cantor</ulink
+> benannt, dem Entdecker der Mengenlehre.</para
+></answer>
+</qandaentry>
+</qandaset>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Danksagungen und Lizenz</title>
+
+<para
+>&cantor; </para>
+<para
+>Programm Copyright 2009-2011 Alexander Rieder <email
+>alexanderrieder@gmail.com</email
+> </para>
+
+<para
+>Dokumentation Copyright &copy; 2009-2011 Alexander Rieder <email
+>alexanderrieder@gmail.com</email
+> </para>
+
+<para
+>Übersetzung Burkhard Lück<email
+>lueck@hube-lueck.de</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+<appendix id="installation">
+<title
+>Installation</title>
+
+<sect1 id="getting-kapp">
+<title
+>Bezugsquellen von &cantor;</title>
+&install.intro.documentation; </sect1>
+
+<sect1 id="requirements">
+<title
+>Systemanforderungen</title>
+
+<para
+>&cantor; läuft nur unter &kde; 4. Möchten Sie den LaTeX-Schriftsatz benutzen, müssen die Programme &latex; und LibSpectre installiert sein. Für die verschiedenen Berechnungsmodule ist jeweils das zugehörige Mathematikpaket erforderlich. </para>
+
+<!--
+<para>
+All required libraries as well as &cantor; itself can be found
+on <ulink url="ftp://ftp.kapp.org"
+>The &cantor; home page</ulink
+>.
+</para>
+-->
+
+
+<!-- For a list of updates, you may refer to the application web site
+or the ChangeLog file, or ... -->
+<!--
+<para>
+You can find a list of changes at <ulink
+url="http://apps.kde.org/kapp"
+>http://apps.kde.org/kapp</ulink
+>.
+</para>
+-->
+</sect1>
+
+<sect1 id="compilation">
+<title
+>Kompilieren und Installation</title>
+&install.compile.documentation; </sect1>
+
+<sect1 id="configuration">
+<title
+>Einstellungen</title>
+
+<para
+>Abhängig von Ihrem System müssen eventuell die Pfade zu den verschiedenen von &cantor; genutzten Programmen angepasst werden. </para>
+
+</sect1>
+
+</appendix>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

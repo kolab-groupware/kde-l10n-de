@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<article id="kwinscreenedges" lang="&language;">
+<articleinfo>
+
+<title
+>Bildschirmränder</title>
+<authorgroup>
+<author
+>&Mike.McBride; &Mike.McBride.mail;</author>
+<othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2014-10-05</date>
+<releaseinfo
+>&kde; 4.11</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Systemeinstellungen</keyword>
+<keyword
+>Arbeitsfläche</keyword>
+<keyword
+>Effekte</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+>Aktive Bildschirmränder ermöglichen Ihnen das Auslösen eines Effektes, indem Sie die Maus an eine Bildschirmränder bewegen. Hier können Sie einstellen, welche Effekte für welche Bildschirmränder aktiviert werden sollen. </para>
+
+<para
+>Klicken Sie mit einer Maustaste auf ein Quadrat und wählen Sie aus dem Kontextmenü einen Effekt aus. Ränder mit aktivierten Effekten werden als schwarzes Quadrat angezeigt, für Ränder mit grauen Quadraten sind keine Effekte ausgewählt.</para>
+
+<para
+>Die Anzahl der verfügbaren Elemente im Kontextmenü hängt von den Einstellungen im Modul <ulink url="help:/kcontrol/kwincompositing/index.html"
+> <guilabel
+>Arbeitsflächen-Effekte</guilabel
+></ulink
+> im Abschnitt <guilabel
+>Erscheinungsbild und Verhalten der Arbeitsfläche</guilabel
+> ab. Aktivieren Sie Arbeitsflächeneffekte, um Composite einzuschalten. Wählen Sie dann Ihre bevorzugten Effekte auf der Karteikarte <guilabel
+>Alle Effekte</guilabel
+> aus der Gruppe <guilabel
+>Fensterverwaltung</guilabel
+>. Damit werden dann auch die zugehörigen Einträge im Kontextmenü dieses Moduls aktiviert.</para>
+
+<para
+>Einstellungsmöglichkeiten für den Wechsel der Arbeitsfläche durch Berührung des Bildschirmrandes mit dem Mauszeiger finden Sie im Kontextmenü, wählen Sie im Kontextmenü einen der oben genannten Effekte aus der Gruppe <guilabel
+>Fensterverwaltung</guilabel
+>.</para>
+
+<para
+>Im Abschnitt <guilabel
+>Fensterverwaltung</guilabel
+> gibt es zwei zusätzliche Einstellungen für das Ziehen von Fenstern an Bildschirmränder: <itemizedlist
+> 
+<listitem
+><para
+>Fenster durch Ziehen zum oberen Bildschirmrand maximieren. </para
+></listitem>
+<listitem
+><para
+>Fenster durch Ziehen zum seitlichen Bildschirmrand anordnen. Die Fenster werden in einen Viertel des Bildschirms angeordnet, wenn Sie zum oberen oder unteren Teil der Bildschirmhöhe gezogen werden, der durch den Wert im Drehfeld festgelegt ist. Ansonsten werden Sie auf der ganzen Höhe des Bildschirms angeordnet. </para
+></listitem>
+</itemizedlist>
+</para>
+
+<para
+>Im Abschnitt <guilabel
+>Andere Einstellungen</guilabel
+> können Sie das Verhalten festlegen, das durch das Anstoßen eines Bildschirmrands mit dem Mauszeiger ausgelöst wird.</para>
+<para
+><guilabel
+>Rand für Arbeitsflächenwechsel</guilabel
+>: Arbeitsfläche wechseln, wenn die Maus an einen Bildschirmrand anstößt. Wenn <guilabel
+>Immer aktiviert</guilabel
+> ausgewählt ist, werden alle eingerichteten Effekte für Bildschirmränder im ersten Abschnitt diese Moduls deaktiviert. </para>
+<para
+><guilabel
+>Aktivierungsverzögerung</guilabel
+>: Die benötigte Zeit zum Anstoßen an einen Arbeitsflächenrand, bevor die Aktion ausgelöst wird. </para>
+<para
+><guilabel
+>Reaktivierungsverzögerung</guilabel
+>: Das erforderliches Zeitfenster nach einer Aktion, bevor die nächste ausgelöst werden kann. </para>
+
+</article>

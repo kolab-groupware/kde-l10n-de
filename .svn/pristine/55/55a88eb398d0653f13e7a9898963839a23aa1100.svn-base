@@ -1,0 +1,129 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+  <!ENTITY policykit-kde "<application
+>PolicyKit-kde</application
+>">
+  <!ENTITY policykit     "<application
+>PolicyKit</application
+>">
+  <!ENTITY kappname "&policykit-kde;">
+  <!ENTITY policykit-kde-introduction SYSTEM "introduction.docbook">
+  <!ENTITY policykit-kde-howitworks SYSTEM "howitworks.docbook">
+  <!ENTITY policykit-kde-authorization SYSTEM "authorization.docbook">
+  <!ENTITY policykit-kde-authorizationagent SYSTEM "authorizationagent.docbook">
+  <!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+  <!ENTITY % addindex "IGNORE">
+]>
+
+<book id="PolicyKit-kde" lang="&language;">
+
+<bookinfo>
+<title
+>Das Handbuch zu &policykit-kde;</title>
+
+<authorgroup>
+<author
+><firstname
+>Daniel</firstname
+> <surname
+>Nicoletti</surname
+> </author>
+<othercredit role="translator"
+><firstname
+>Johannes</firstname
+><surname
+>Obermayr</surname
+><affiliation
+><address
+><email
+>johannesobermayr@gmx.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2008-2009</year>
+<holder
+>Daniel Nicoletti</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2009-01-25</date>
+<releaseinfo
+>0.9.0</releaseinfo>
+
+<abstract>
+<para
+>&policykit-kde; ist eine grafische Bedienoberfläche für das <emphasis
+>PolicyKit</emphasis
+>-System und wird für die Rechteverwaltung verwendet.</para>
+<para
+>&policykit; ist ein Werkzeug, mit dem <emphasis
+>benachteiligte</emphasis
+> Prozesse mit <emphasis
+>bevorzugten</emphasis
+> Prozessen kommunizieren können. Dies geschieht durch zentralisierte Informationen von Aktionen und berechtigte Anwendungen.</para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>System</keyword>
+<keyword
+>Password</keyword>
+<keyword
+>Verwalter</keyword>
+<keyword
+>Authentifizierung</keyword>
+<keyword
+>polkit</keyword>
+<keyword
+>policykit</keyword>
+<keyword
+>Regelung</keyword>
+<keyword
+>Regeln</keyword>
+</keywordset>
+
+</bookinfo>
+
+&policykit-kde-introduction;
+&policykit-kde-howitworks;
+&policykit-kde-authorization;
+&policykit-kde-authorizationagent;
+
+<chapter id="credits">
+<title
+>Danksagungen und Lizenz</title>
+
+<para
+>&policykit-kde; </para>
+<para
+>Programm Copyright 2008-2009 Daniel Nicoletti </para>
+<para
+>Dokumentation Copyright 2008-2009 Daniel Nicoletti </para>
+
+<para
+>Übersetzung: Johannes Obermayr <email
+>johannesobermayr@gmx.de</email
+></para
+> 
+&underFDL; </chapter>
+
+&documentation.index; 
+
+</book>
+
+<!--
+vim:tabstop=2:shiftwidth=2:expandtab 
+-->

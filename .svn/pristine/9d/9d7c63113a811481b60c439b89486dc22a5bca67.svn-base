@@ -1,0 +1,1630 @@
+# Arnold Krille <arnold@roederberg.dyndns.org>, 2004.
+# Arnold Krille <arnold@arnoldarts.de>, 2005.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005.
+# Burkhard Lück <lueck@hube-lueck.de>, 2006, 2007, 2010, 2011, 2012, 2013, 2014.
+# Frederik Schwarzer <schwarzer@kde.org>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kmix\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: 2014-02-02 22:55+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:12
+#, no-c-format
+msgid "The &kmix; Handbook"
+msgstr "Das Handbuch zu &kmix;"
+
+#. Tag: author
+#: index.docbook:15
+#, no-c-format
+msgid ""
+"<firstname>Gaurav</firstname> <surname>Chaturvedi</surname> "
+"<address><email>gaurav.p.chaturvedi@gmail.com</email></address>"
+msgstr ""
+"<firstname>Gaurav</firstname> <surname>Chaturvedi</surname> "
+"<address><email>gaurav.p.chaturvedi@gmail.com</email></address>"
+
+#. Tag: othercredit
+#: index.docbook:21
+#, no-c-format
+msgid "<firstname>Christian</firstname> <surname>Esken</surname>"
+msgstr "<firstname>Christian</firstname> <surname>Esken</surname>"
+
+#. Tag: email
+#: index.docbook:24
+#, no-c-format
+msgid "esken@kde.org"
+msgstr "esken@kde.org"
+
+#. Tag: contrib
+#: index.docbook:25 index.docbook:32 index.docbook:40
+#, no-c-format
+msgid "Developer"
+msgstr "Entwickler"
+
+#. Tag: othercredit
+#: index.docbook:28
+#, no-c-format
+msgid "<firstname>Helio</firstname> <surname>Chissini de Castro</surname>"
+msgstr "<firstname>Helio</firstname> <surname>Chissini de Castro</surname>"
+
+#. Tag: email
+#: index.docbook:31
+#, no-c-format
+msgid "helio@kde.org"
+msgstr "helio@kde.org"
+
+#. Tag: othercredit
+#: index.docbook:36
+#, no-c-format
+msgid "<firstname>Brian</firstname> <surname>Hanson</surname>"
+msgstr "<firstname>Brian</firstname> <surname>Hanson</surname>"
+
+#. Tag: email
+#: index.docbook:39
+#, no-c-format
+msgid "bhanson@hotmail.com"
+msgstr "bhanson@hotmail.com"
+
+#. Tag: trans_comment
+#: index.docbook:43
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Gregor</"
+"firstname><surname>Zumstein</"
+"surname><affiliation><address><email>zumstein@ssd.ethz.ch</email></address></"
+"affiliation><contrib>Übersetzung</contrib></othercredit><othercredit role="
+"\"translator\"><firstname>Frank</firstname><surname>Schütte</"
+"surname><affiliation><address><email>F.Schuette@t-online.de</email></"
+"address></affiliation><contrib>Überarbeitung der Übersetzung</contrib></"
+"othercredit><othercredit role=\"translator\"><firstname>Arnold</"
+"firstname><surname>Krille</"
+"surname><affiliation><address><email>arnold@arnoldarts.de</email></address></"
+"affiliation><contrib>Überarbeitung der Übersetzung</contrib></othercredit>"
+
+#. Tag: holder
+#: index.docbook:48
+#, no-c-format
+msgid "Christian Esken &amp; &Matt.Johnston;"
+msgstr "Christian Esken &amp; &Matt.Johnston;"
+
+#. Tag: date
+#: index.docbook:53
+#, no-c-format
+msgid "2013-12-21"
+msgstr "2013-12-21"
+
+#. Tag: releaseinfo
+#: index.docbook:54
+#, no-c-format
+msgid "4.5 (&kde; 4.13)"
+msgstr "4.5 (&kde; 4.13)"
+
+#. Tag: para
+#: index.docbook:57
+#, no-c-format
+msgid ""
+"&kmix; is an application that allows you to change the volume of your sound "
+"card."
+msgstr ""
+"&kmix; ist eine Anwendung, die es Ihnen erlaubt, die Lautstärkeeinstellungen "
+"Ihrer Soundkarte zu verändern."
+
+#. Tag: keyword
+#: index.docbook:61
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:62
+#, no-c-format
+msgid "KMix"
+msgstr "KMix"
+
+#. Tag: keyword
+#: index.docbook:63
+#, no-c-format
+msgid "kdemultimedia"
+msgstr "kdemultimedia"
+
+#. Tag: keyword
+#: index.docbook:64
+#, no-c-format
+msgid "sound"
+msgstr "Sound"
+
+#. Tag: keyword
+#: index.docbook:65
+#, no-c-format
+msgid "volume"
+msgstr "Mixer"
+
+#. Tag: keyword
+#: index.docbook:66
+#, no-c-format
+msgid "mixer"
+msgstr "Lautstärkeregelung"
+
+#. Tag: title
+#: index.docbook:75
+#, no-c-format
+msgid "Introduction"
+msgstr "Einleitung"
+
+#. Tag: para
+#: index.docbook:81
+#, no-c-format
+msgid "&kmix; supports several platforms and sound drivers."
+msgstr "&kmix; unterstützt verschiedene Betriebssysteme und Sound-Treiber."
+
+#. Tag: para
+#: index.docbook:90
+#, no-c-format
+msgid ""
+"If you have both ALSA and Open Sound System drivers installed, &kmix; will "
+"use the ALSA driver."
+msgstr ""
+"Wenn sowohl ALSA als auch das Open Sound System installiert sind, benutzt "
+"&kmix; standardmäßig ALSA."
+
+#. Tag: screeninfo
+#: index.docbook:94 index.docbook:115
+#, no-c-format
+msgid "<screeninfo>Screenshot of &kmix;</screeninfo>"
+msgstr "<screeninfo>Bildschirmfoto von &kmix;</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:100 index.docbook:121
+#, no-c-format
+msgid "<phrase>Screenshot of &kmix;</phrase>"
+msgstr "<phrase>Bildschirmfoto von &kmix;</phrase>"
+
+#. Tag: title
+#: index.docbook:111
+#, no-c-format
+msgid "Main Window"
+msgstr "Hauptfenster"
+
+#. Tag: para
+#: index.docbook:113
+#, no-c-format
+msgid "Overview of &kmix; Main Window"
+msgstr "Übersicht über das Hauptfenster von &kmix;"
+
+#. Tag: title
+#: index.docbook:127
+#, no-c-format
+msgid "File Options"
+msgstr "Dateioptionen"
+
+#. Tag: screeninfo
+#: index.docbook:129
+#, no-c-format
+msgid "<screeninfo>&kmix; File options</screeninfo>"
+msgstr "<screeninfo>Dateioptionen von &kmix;</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:135
+#, no-c-format
+msgid "<phrase>&kmix; File options</phrase>"
+msgstr "<phrase>Dateioptionen von &kmix;</phrase>"
+
+#. Tag: menuchoice
+#: index.docbook:142
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Esc;</keycombo> </shortcut> "
+"<guimenu>File</guimenu> <guimenuitem>Hide Mixer Window</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Esc;</keycombo> </shortcut> "
+"<guimenu>Datei</guimenu> <guimenuitem>Lautstärkeregler ausblenden</"
+"guimenuitem>"
+
+#. Tag: action
+#: index.docbook:149
+#, no-c-format
+msgid "Hide Mixer Window"
+msgstr "Lautstärkeregler ausblenden"
+
+#. Tag: title
+#: index.docbook:155
+#, no-c-format
+msgid "Settings"
+msgstr "Einstellungen"
+
+#. Tag: screeninfo
+#: index.docbook:158
+#, no-c-format
+msgid "<screeninfo>&kmix; Settings</screeninfo>"
+msgstr "<screeninfo>Einstellungen von &kmix;</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:164
+#, no-c-format
+msgid "<phrase>&kmix; Settings</phrase>"
+msgstr "<phrase>Einstellungen von &kmix;</phrase>"
+
+#. Tag: menuchoice
+#: index.docbook:171
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Audio Setup</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guimenuitem>Audio-Einrichtung</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:175
+#, no-c-format
+msgid ""
+"<action>Open <ulink url=\"help:/kcontrol/phonon\">&phonon; &systemsettings; "
+"module</ulink></action> to configure the sound and video device preference "
+"and the backends used by &kde; multimedia API, &phonon;."
+msgstr ""
+"<action>Öffnet</action> das <ulink url=\"help:/kcontrol/phonon"
+"\">&systemsettings;-Modul für &phonon;</ulink>, um die Gerätepriorität für "
+"Audio und Video sowie die Backends für die &kde;-Schnittstelle zu &phonon; "
+"festzulegen."
+
+#. Tag: title
+#: index.docbook:199
+#, no-c-format
+msgid "Select Master Channel"
+msgstr "Auswahl des Hauptkanals"
+
+#. Tag: screeninfo
+#: index.docbook:201
+#, no-c-format
+msgid "<screeninfo>&kmix; Master Channel</screeninfo>"
+msgstr "<screeninfo>&kmix;-Hauptkanal</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:207
+#, no-c-format
+msgid "<phrase>&kmix; Master Channel</phrase>"
+msgstr "<phrase>&kmix;-Hauptkanal</phrase>"
+
+#. Tag: para
+#: index.docbook:211
+#, no-c-format
+msgid "Select your &kmix; master channel."
+msgstr "Wählen Sie Ihren &kmix;-Hauptkanal."
+
+#. Tag: title
+#: index.docbook:215
+#, no-c-format
+msgid "Configure &kmix;"
+msgstr "&kmix; einrichten"
+
+#. Tag: title
+#: index.docbook:217
+#, no-c-format
+msgid "General configuration"
+msgstr "Allgemeine Einstellungen"
+
+#. Tag: screeninfo
+#: index.docbook:221
+#, no-c-format
+msgid "<screeninfo>General configuration of &kmix;</screeninfo>"
+msgstr "<screeninfo>Allgemeine Einstellungen von &kmix;</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:227
+#, no-c-format
+msgid "<phrase>General configuration of &kmix;</phrase>"
+msgstr "<phrase>Allgemeine Einstellungen von &kmix;</phrase>"
+
+#. Tag: para
+#: index.docbook:231
+#, no-c-format
+msgid "Configure general &kmix; parameters."
+msgstr "Stellen Sie verschiedene allgemeine &kmix;-Parameter ein."
+
+#. Tag: menuchoice
+#: index.docbook:235
+#, no-c-format
+msgid "<guimenu>Behavior</guimenu> <guimenuitem>Volume Feedback</guimenuitem>"
+msgstr ""
+"<guimenu>Verhalten</guimenu> <guimenuitem>Rückmeldung der Lautstärke</"
+"guimenuitem>"
+
+#. Tag: action
+#: index.docbook:239
+#, no-c-format
+msgid "Check this box to enable audible feedback on volume change."
+msgstr ""
+"Aktivieren Sie diese Option, um eine akustische Rückmeldung beim Ändern "
+"derLautstärke zu erhalten."
+
+#. Tag: menuchoice
+#: index.docbook:243
+#, no-c-format
+msgid "<guimenu>Behavior</guimenu> <guimenuitem>Volume Overdrive</guimenuitem>"
+msgstr ""
+"<guimenu>Verhalten</guimenu> <guimenuitem>Lautstärke-Übersteuerung</"
+"guimenuitem>"
+
+#. Tag: para
+#: index.docbook:247
+#, no-c-format
+msgid ""
+"Check this box to allow volume to be more than recommended value (sometimes "
+"PulseAudio maximal volume exceeds the normal value). &kmix; restart is "
+"needed for this setting to take effect."
+msgstr ""
+"Aktivieren Sie dieses Ankreuzfeld, um für die Lautstärke erhöhte Werte "
+"zuzulassen. Manchmal überschreitet die maximale Lautstärke von PulseAudio "
+"den normalen Wert. Damit diese Einstellung wirksam wird, muss &kmix; neu "
+"gestartet werden."
+
+#. Tag: para
+#: index.docbook:249
+#, no-c-format
+msgid ""
+"Uncheck this item if there are audible sound distortions at the maximal "
+"volume."
+msgstr ""
+"Gibt es hörbare Verzerrungen bei maximaler Lautstärke, schalten Sie dies ab."
+
+#. Tag: menuchoice
+#: index.docbook:257
+#, no-c-format
+msgid "<guimenu>Visual</guimenu> <guimenuitem>Show tickmarks</guimenuitem>"
+msgstr ""
+"<guimenu>Visuell</guimenu> <guimenuitem>Skalenstriche anzeigen</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:261
+#, no-c-format
+msgid "Check this box to show tickmarks on controls."
+msgstr ""
+"Aktivieren Sie diese Option, um Skalenstriche an den Lautstärkereglern "
+"anzuzeigen."
+
+#. Tag: menuchoice
+#: index.docbook:265
+#, no-c-format
+msgid "<guimenu>Visual</guimenu> <guimenuitem>Show labels</guimenuitem>"
+msgstr ""
+"<guimenu>Visuell</guimenu> <guimenuitem>Bezeichnungen anzeigen</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:269
+#, no-c-format
+msgid "Check this box to show labels of controls."
+msgstr ""
+"Aktivieren Sie diese Option, um die Bezeichnungen der Lautstärkeregler "
+"anzuzeigen."
+
+#. Tag: menuchoice
+#: index.docbook:273
+#, no-c-format
+msgid ""
+"<guimenu>Visual</guimenu> <guimenuitem>Show On Screen Display (OSD)</"
+"guimenuitem>"
+msgstr ""
+"<guimenu>Visuell</guimenu> <guimenuitem>On-Screen-Display (OSD) anzeigen</"
+"guimenuitem>"
+
+#. Tag: action
+#: index.docbook:277
+#, no-c-format
+msgid "Check this box to enable OSD show on hovering &kmix; tray widget."
+msgstr ""
+"Aktivieren Sie diese Option, um beim Überfahren des &kmix;-Symbols in der "
+"Kontrollleiste das OSD (On Screen Display) anzuzeigen."
+
+#. Tag: menuchoice
+#: index.docbook:281
+#, no-c-format
+msgid ""
+"<guimenu>Slider orientation</guimenu> <guimenuitem>Horizontal</guimenuitem>"
+msgstr ""
+"<guimenu>Regler-Ausrichtung</guimenu> <guimenuitem>Horizontal</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:285
+#, no-c-format
+msgid "Check this radio button to orientate the control slider horizontally."
+msgstr ""
+"Wählen Sie diese Einstellung, wenn die Lautstärkeregler horizontal "
+"dargestellt werden sollen."
+
+#. Tag: menuchoice
+#: index.docbook:289
+#, no-c-format
+msgid ""
+"<guimenu>Slider orientation</guimenu> <guimenuitem>Vertical</guimenuitem>"
+msgstr ""
+"<guimenu>Regler-Ausrichtung</guimenu> <guimenuitem>Vertikal</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:293
+#, no-c-format
+msgid "Check this radio button to orientate the control slider vertically."
+msgstr ""
+"Wählen Sie diese Einstellung, wenn die Lautstärkeregler vertikal dargestellt "
+"werden sollen."
+
+#. Tag: menuchoice
+#: index.docbook:297
+#, no-c-format
+msgid ""
+"<guimenu>Slider orientation (System tray volume control)</guimenu> "
+"<guimenuitem>Horizontal/Vertical</guimenuitem>"
+msgstr ""
+"<guimenu>Ausrichtung der Lautstärkeregler in Kontrollleiste</guimenu> "
+"<guimenuitem>Horizontal/Vertikal</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:301
+#, no-c-format
+msgid ""
+"Same as the previous two radio buttons but for the system tray volume "
+"control (the panel that is shown after &LMB; click on &kmix; tray icon)."
+msgstr ""
+"Die Ausrichtung der Lautstärkeregler, diesmal im Systemabschnitt der "
+"Kontrollleiste, das durch Klicken mit der &LMBn; auf das &kmix;-Symbol "
+"angezeigt wird."
+
+#. Tag: title
+#: index.docbook:308
+#, no-c-format
+msgid "Start configuration"
+msgstr "Starteinstellungen"
+
+#. Tag: screeninfo
+#: index.docbook:312
+#, no-c-format
+msgid "<screeninfo>Start configuration of &kmix;</screeninfo>"
+msgstr "<screeninfo>Starteinstellungen für &kmix;</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:318
+#, no-c-format
+msgid "<phrase>Start configuration of &kmix;</phrase>"
+msgstr "<phrase>Starteinstellungen für &kmix;</phrase>"
+
+#. Tag: para
+#: index.docbook:322
+#, no-c-format
+msgid "This page allows you to configure various &kmix; start parameters."
+msgstr ""
+"Auf dieser Seite können Sie verschiedene Parameter für den Start von &kmix; "
+"einstellen."
+
+#. Tag: menuchoice
+#: index.docbook:326
+#, no-c-format
+msgid ""
+"<guimenu>Startup</guimenu> <guimenuitem>Restore volumes on login</"
+"guimenuitem>"
+msgstr ""
+"<guimenu>Programmstart</guimenu> <guimenuitem>Lautstärken beim Anmelden "
+"wiederherstellen</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:330
+#, no-c-format
+msgid "Check this box to enable volume restoration on login."
+msgstr ""
+"Aktivieren Sie diese Option, wenn die in der vorherigen Sitzung eingestellte "
+"Lautstärke beim Anmelden wiederhergestellt werden soll."
+
+#. Tag: para
+#: index.docbook:332
+#, no-c-format
+msgid "Dynamic controls from PulseAudio and MPRIS2 will not be restored."
+msgstr ""
+"Dynamische Steuerung von Pulseaudio und MPRIS2 wird nicht wieder hergestellt."
+
+#. Tag: menuchoice
+#: index.docbook:340
+#, no-c-format
+msgid "<guimenu>Startup</guimenu> <guimenuitem>Autostart</guimenuitem>"
+msgstr ""
+"<guimenu>Programmstart</guimenu> <guimenuitem>Automatisch starten</"
+"guimenuitem>"
+
+#. Tag: action
+#: index.docbook:344
+#, no-c-format
+msgid "Check this box to enable &kmix; autostart with desktop environment."
+msgstr ""
+"Aktivieren Sie diese Option, im &kmix; automatisch mit der "
+"Arbeitsflächenumgebung zu starten."
+
+#. Tag: title
+#: index.docbook:351
+#, no-c-format
+msgid "Sound menu configuration"
+msgstr "Einrichtung des Soundmenüs"
+
+#. Tag: screeninfo
+#: index.docbook:355
+#, no-c-format
+msgid "<screeninfo>Sound menu configuration of &kmix;</screeninfo>"
+msgstr "<screeninfo>Einrichtung des Soundmenüs für &kmix;</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:361
+#, no-c-format
+msgid "<phrase>Sound menu configuration of &kmix;</phrase>"
+msgstr "<phrase>Einrichtung des Soundmenüs für &kmix;</phrase>"
+
+#. Tag: para
+#: index.docbook:365
+#, no-c-format
+msgid "This page allows you to configure various &kmix; sound menu parameters."
+msgstr ""
+"Auf dieser Seite stellen Sie die verschiedenen &kmix;-Parameter des "
+"Soundmenüs ein."
+
+#. Tag: guilabel
+#: index.docbook:369
+#, no-c-format
+msgid "Dock in system tray"
+msgstr "An Kontrollleiste andocken"
+
+#. Tag: action
+#: index.docbook:371
+#, no-c-format
+msgid "Check this box to dock &kmix; in system tray."
+msgstr ""
+"Aktivieren Sie diese Option, um &kmix; an die Kontrollleiste anzudocken."
+
+#. Tag: para
+#: index.docbook:375
+#, no-c-format
+msgid ""
+"It is possible to select mixers that will be shown in the sound menu using "
+"the corresponding list on this page."
+msgstr ""
+"Es können Mixer aus der zugehörigen Liste auf dieser Seite ausgewählt "
+"werden, die dann im Soundmenü angezeigt werden."
+
+#. Tag: title
+#: index.docbook:384
+#, no-c-format
+msgid "Advanced usage"
+msgstr "Weiterführende Funktionen"
+
+#. Tag: title
+#: index.docbook:386
+#, no-c-format
+msgid "Remote controlling and scripting via &DBus;"
+msgstr "Fernsteuerung und Skripte für &DBus;"
+
+#. Tag: para
+#: index.docbook:387
+#, no-c-format
+msgid ""
+"You can control &kmix; via &DBus;. This is for advanced users who want to "
+"achieve special tasks, like muting the PC every day at 10 pm, or for any "
+"other scripting task."
+msgstr ""
+"&kmix; kann über &DBus; gesteuert werden. Dies ist für erfahrene Anwender "
+"gedacht, um besondere Aufgaben durchzuführen wie zum Beispiel den Rechner "
+"jeden Tag um 10 Uhr stummzuschalten und um &kmix; über Skripte zu steuern."
+
+#. Tag: para
+#: index.docbook:391
+#, no-c-format
+msgid "List all &kmix; related &DBus; methods and properties"
+msgstr "Alle &DBus;-Methoden und -Eigenschaften für &kmix; auflisten:"
+
+#. Tag: programlisting
+#: index.docbook:393
+#, no-c-format
+msgid "qdbus org.kde.kmix"
+msgstr "qdbus org.kde.kmix"
+
+#. Tag: para
+#: index.docbook:396
+#, no-c-format
+msgid "Getting volume level (0-100%):"
+msgstr "Lautstärke (0-100 %) abfragen:"
+
+#. Tag: programlisting
+#: index.docbook:398
+#, no-c-format
+msgid ""
+"qdbus org.kde.kmix /Mixers/0/Master_0 org.freedesktop.DBus.Properties.Get "
+"org.kde.KMix.Control volume"
+msgstr ""
+"qdbus org.kde.kmix /Mixers/0/Master_0 org.freedesktop.DBus.Properties.Get "
+"org.kde.KMix.Control volume"
+
+#. Tag: para
+#: index.docbook:401
+#, no-c-format
+msgid "Setting volume level (0-100%):"
+msgstr "Lautstärke (0-100 %) einstellen:"
+
+#. Tag: programlisting
+#: index.docbook:403
+#, no-c-format
+msgid ""
+"qdbus org.kde.kmix /Mixers/0/Master_0 org.freedesktop.DBus.Properties.Set "
+"org.kde.KMix.Control volume 70"
+msgstr ""
+"qdbus org.kde.kmix /Mixers/0/Master_0 org.freedesktop.DBus.Properties.Set "
+"org.kde.KMix.Control volume 70"
+
+#. Tag: title
+#: index.docbook:410
+#, no-c-format
+msgid "Credits and License"
+msgstr "Danksagungen und Lizenz"
+
+#. Tag: para
+#: index.docbook:412
+#, no-c-format
+msgid "&kmix;"
+msgstr "&kmix;"
+
+#. Tag: para
+#: index.docbook:416
+#, no-c-format
+msgid ""
+"Documentation copyright &copy; 2010 Gaurav Chaturvedi <email>gaurav.p."
+"chaturvedi@gmail.com </email>"
+msgstr ""
+"Copyright für die Dokumentation &copy; 2010 Gaurav Chaturvedi <email>gaurav."
+"p.chaturvedi@gmail.com </email>"
+
+#. Tag: para
+#: index.docbook:417
+#, no-c-format
+msgid "Thanks to:"
+msgstr "Dank an:"
+
+#. Tag: para
+#: index.docbook:418
+#, no-c-format
+msgid ""
+"&Matt.Johnston; &Matt.Johnston.mail; (copy and pasted a lot of things from "
+"his old &kmix; documentation)"
+msgstr ""
+"&Matt.Johnston; &Matt.Johnston.mail; (brachte einiges aus seiner alten "
+"&kmix;-Dokumentation ein)"
+
+#. Tag: trans_comment
+#: index.docbook:420
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Übersetzung Gregor Zumstein <email>zumstein@ssd.ethz.ch</email></para> "
+"<para>Überarbeitung der Übersetzung Frank Schütte <email>F.Schuette@t-online."
+"de</email></para><para>Arnold Krille<email>arnold@arnoldarts.de</email></"
+"para>"
+
+#. Tag: chapter
+#: index.docbook:420
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr "&underFDL; &underGPL;"
+
+#. Tag: title
+#: index.docbook:427
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#. Tag: title
+#: index.docbook:430
+#, no-c-format
+msgid "How to obtain &kmix;"
+msgstr "Wie erhalte ich &kmix;?"
+
+#. Tag: sect1
+#: index.docbook:430
+#, no-c-format
+msgid "&install.intro.documentation;"
+msgstr "&install.intro.documentation;"
+
+#. Tag: title
+#: index.docbook:437
+#, no-c-format
+msgid "Compilation and installation"
+msgstr "Kompilierung und Installation"
+
+#. Tag: sect1
+#: index.docbook:437
+#, no-c-format
+msgid "&install.compile.documentation;"
+msgstr "&install.compile.documentation;"
+
+#~ msgid "<releaseinfo>4.5</releaseinfo>"
+#~ msgstr "<releaseinfo>4.5</releaseinfo>"
+
+#~ msgid "2012-11-03"
+#~ msgstr "2012-11-03"
+
+#~ msgid "<title>Configure &kmix;</title>"
+#~ msgstr "<title>Konfiguration von &kmix;</title>"
+
+#~ msgid ""
+#~ "<guimenu>Behavior</guimenu> <guimenuitem>Dock in system tray</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Verhalten</guimenu> <guimenuitem>An Kontrollleiste andocken</"
+#~ "guimenuitem>"
+
+#~ msgid ""
+#~ "<guimenu>Behavior</guimenu> <guimenuitem>Enable system tray volume "
+#~ "control</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Verhalten</guimenu> <guimenuitem>Lautstärkeregler der "
+#~ "Kontrollleiste aktivieren</guimenuitem>"
+
+#~ msgid "Check this box to enable the volume control from system tray."
+#~ msgstr ""
+#~ "Aktivieren Sie diese Option, um die Lautstärkeregelung in der "
+#~ "Kontrollleiste zu ermöglichen."
+
+#~ msgid "2010-02-18"
+#~ msgstr "2010-02-18"
+
+#~ msgid "Configure audio channels"
+#~ msgstr "Konfiguration der Audio-Kanäle"
+
+#~ msgid "<screeninfo>&kmix; Channels</screeninfo>"
+#~ msgstr "<screeninfo>&kmix;-Kanäle</screeninfo>"
+
+#~ msgid "<phrase>&kmix; Channels</phrase>"
+#~ msgstr "<phrase>&kmix;-Kanäle</phrase>"
+
+#~ msgid ""
+#~ "Select the &kmix; channels you want to be used for output or input audio "
+#~ "information."
+#~ msgstr ""
+#~ "Wählen Sie die &kmix;-Kanäle aus, die für die Aus- und Eingabe von Audio-"
+#~ "Informationen verwendet werden sollen."
+
+#~ msgid "<firstname>Matt</firstname> <surname>Johnston</surname>"
+#~ msgstr "<firstname>Matt</firstname><surname>Johnston</surname>"
+
+#~ msgid "&Matt.Johnston.mail;"
+#~ msgstr "&Matt.Johnston.mail;"
+
+#~ msgid "<firstname>Stefan</firstname> <surname>Schimanski</surname>"
+#~ msgstr "<firstname>Stefan</firstname> <surname>Schimanski</surname>"
+
+#~ msgid "1Stein@gmx.de"
+#~ msgstr "1Stein@gmx.de"
+
+#~ msgid "<firstname>Lauri</firstname> <surname>Watts</surname>"
+#~ msgstr "<firstname>Lauri</firstname> <surname>Watts</surname>"
+
+#~ msgid "&Lauri.Watts.mail;"
+#~ msgstr "&Lauri.Watts.mail;"
+
+#~ msgid "Reviewer"
+#~ msgstr "Korrektur"
+
+#~ msgid ""
+#~ "Warning: This handbook contains the documentation for an older version of "
+#~ "&kmix;, namely the version that ships with &kde; 3.5."
+#~ msgstr ""
+#~ "Hinweis: Diese Handbuch enthält die Dokumentation für &kmix; aus &kde; "
+#~ "3.5. "
+
+#~ msgid ""
+#~ "&kmix; is &kde;'s soundcard mixer program. Though small, it is full-"
+#~ "featured. The program should give controls for each of your soundcards."
+#~ msgstr ""
+#~ "&kmix; ist das Mixer-Programm von &kde;. Obwohl es klein ist, besitzt es "
+#~ "alle nötigen Fähigkeiten. Für jedes Gerät gibt es einen separaten Regler."
+
+#~ msgid "The ALSA soundcard driver."
+#~ msgstr "Der ALSA-Soundkartentreiber."
+
+#~ msgid ""
+#~ "All Open Sound System platforms. Explicitly tested are &Linux;, FreeBSD, "
+#~ "NetBSD and BSDI."
+#~ msgstr ""
+#~ "Alle Open-Sound-System-Plattformen. Explizit getestet sind &Linux;, "
+#~ "FreeBSD, NetBSD und BSDI."
+
+#~ msgid "&Solaris; based machines."
+#~ msgstr "Rechner mit &Solaris;."
+
+#~ msgid "&IRIX; based machines."
+#~ msgstr "Rechner mit &IRIX;."
+
+#~ msgid "&HP-UX; based machines."
+#~ msgstr "Rechner mit &HP-UX;."
+
+#~ msgid "Working with &kmix;"
+#~ msgstr "Arbeiten mit &kmix;"
+
+#~ msgid "Basics"
+#~ msgstr "Grundlagen"
+
+#~ msgid ""
+#~ "&kmix; usage is straightforward. Every mixer control that your soundcard "
+#~ "provides is represented by a volume slider. Mono controls have a single "
+#~ "slider, stereo controls can have either one or two sliders, depending on "
+#~ "your choice. Additionally there is a panning slider at the bottom of the "
+#~ "&kmix; window. If you have more than one soundcard, a list will be "
+#~ "displayed on the top of the window, where you can choose between your "
+#~ "soundcards."
+#~ msgstr ""
+#~ "Die Benutzung von &kmix; ist einfach. Jedes Mixer-Gerät Ihrer Soundkarte "
+#~ "wird durch einen Lautstärkeregler dargestellt. Mono-Geräte haben nur "
+#~ "einen Regler, Stereo-Geräte je nach Wahl einen oder zwei. Zusätzlich gibt "
+#~ "es einen Schieberegler am unteren Rand des &kmix;-Fensters für die "
+#~ "Lautstärkeverteilung auf linken und rechten Audioausgang. Wenn mehrere "
+#~ "Soundkarten vorhanden sind, wird oben eine Liste zur Auswahl der "
+#~ "Soundkarte angezeigt."
+
+#~ msgid ""
+#~ "The Window can have up to three sections with different soundcard "
+#~ "controls: <guilabel>Output</guilabel>, <guilabel>Input</guilabel> and "
+#~ "<guilabel>Switches</guilabel>. Those sections contain volume sliders, "
+#~ "switches for enabling/disabling record or playback, and multiple-choice "
+#~ "selectors."
+#~ msgstr ""
+#~ "Das Fenster kann bis zu drei Abschnitte für die verschiedenen "
+#~ "Soundkartenregler anzeigen: <guilabel>Ausgänge</guilabel>, "
+#~ "<guilabel>Eingänge</guilabel> und <guilabel>Schalter</guilabel>. Diese "
+#~ "Abschnitte enthalten Lautstärkeregler, Schalter zum Ein- bzw. Ausschalten "
+#~ "von Aufnahme und Abspielen, und Auswahlfelder mit mehreren Möglichkeiten."
+
+#~ msgid ""
+#~ "<guilabel>Output</guilabel>: This holds the controls that are most likely "
+#~ "playback related, like the <guilabel>Master</guilabel> volume control."
+#~ msgstr ""
+#~ "<guilabel>Ausgänge</guilabel>: Enthält die Regler, die sehr "
+#~ "wahrscheinlich die Wiedergabe beeinflussen, wie zum Beispiel den "
+#~ "<guilabel>Master</guilabel>-Regler."
+
+#~ msgid ""
+#~ "<guilabel>Input</guilabel>: This holds all controls that are most likely "
+#~ "record related, like <guilabel>Capture</guilabel>."
+#~ msgstr ""
+#~ "<guilabel>Eingänge</guilabel>: Enthält Regler, die sehr wahrscheinlich "
+#~ "mit Aufnahmen zu tun haben, zum Beispiel <guilabel>Capture</guilabel>."
+
+#~ msgid ""
+#~ "<guilabel>Switches</guilabel>: This holds all controls, that allows only "
+#~ "to switch some functionality ON or OFF (like \"Mic Boost (+20dB)\"), and "
+#~ "multiple-choice controls (like <guilabel>Mic Select</guilabel>: "
+#~ "<guilabel>Mic1</guilabel> or <guilabel>Mic2</guilabel>)."
+#~ msgstr ""
+#~ "<guilabel>Schalter</guilabel>: Enthält alle Kontrollelemente, wo etwas "
+#~ "ein- oder ausgeschaltet wird (zum Beispiel <quote>Mic Boost (+20dB)</"
+#~ "quote>), oder aus einer Liste auszuwählen ist ( zum Beispiel "
+#~ "<guilabel>Mic Select</guilabel>: <guilabel>Mic1</guilabel> oder "
+#~ "<guilabel>Mic2</guilabel>)."
+
+#~ msgid ""
+#~ "Besides volumes controls, &kmix; also features LED's. The general "
+#~ "coloring rule is:"
+#~ msgstr "Neben den Reglern enthält &kmix; auch LEDs. Die Farben bedeuten:"
+
+#~ msgid "Green: A LED dealing with playback"
+#~ msgstr "Grün: Eine LED für Wiedergabeoptionen."
+
+#~ msgid "Red: A LED dealing with recording"
+#~ msgstr "Rot: Eine LED für Aufnahmeoptionen."
+
+#~ msgid "Yellow: A LED dealing with special soundcard capabilities"
+#~ msgstr "Gelb: Eine LED für spezielle Soundkarteneinstellungen."
+
+#~ msgid ""
+#~ "These 3 colors come in two flavours: A lit LED means ON, a non-lit LED "
+#~ "means OFF."
+#~ msgstr ""
+#~ "Diese drei Farben gibt es in zwei Stärken: eine beleuchtete LED bedeutet "
+#~ "<quote>AN</quote>, eine nicht beleuchtete LED bedeutet <quote>AUS</quote>."
+
+#~ msgid "Volume controls"
+#~ msgstr "Lautstärkeregler"
+
+#~ msgid ""
+#~ "The volume controls in section <guilabel>Output</guilabel> and "
+#~ "<guilabel>Input</guilabel> consist of (top to bottom):"
+#~ msgstr ""
+#~ "Die Lautstärkeregler in den Bereichen <guilabel>Ausgänge</guilabel> und "
+#~ "<guilabel>Eingänge</guilabel> bestehen aus den folgenden Elementen (von "
+#~ "oben nach unten):"
+
+#~ msgid ""
+#~ "<screeninfo>Volume control (<guilabel>Input</guilabel> Section)</"
+#~ "screeninfo>"
+#~ msgstr ""
+#~ "<screeninfo>Lautstärkeregler (<guilabel>Eingänge</guilabel>)</screeninfo>"
+
+#~ msgid "<phrase>Volume control (<guilabel>Input</guilabel> Section)</phrase>"
+#~ msgstr "<phrase> Lautstärkeregler (<guilabel>Eingänge</guilabel>)</phrase>"
+
+#~ msgid "An icon, representing the function of the control."
+#~ msgstr "Ein Symbol, das die Funktion des Elements repräsentieren soll."
+
+#~ msgid "A volume value indicator (optional)."
+#~ msgstr "Eine Anzeige für die Lautstärke (optional)."
+
+#~ msgid ""
+#~ "A Green Mute LED, that allows you to mute a control (light goes off/gets "
+#~ "dark) or unmute it again (light goes on/gets bright)."
+#~ msgstr ""
+#~ "Eine grüne LED für Stummschaltung (LED aus/dunkel bedeutet Stumm, LED an/"
+#~ "hell bedeutet, der Kanal ist eingeschaltet)."
+
+#~ msgid ""
+#~ "A slider, for volume control (Hint: You can hide the label on the slider, "
+#~ "for example if the mixer takes too much of your screen space)."
+#~ msgstr ""
+#~ "Ein Regler, um die Lautstärke einzustellen. Tipp: Die Bezeichnung an der "
+#~ "Seite kann ausgeblendet werden, falls sie zu viel Platz wegnimmt."
+
+#~ msgid ""
+#~ "If a control supports recording, there will be a red Record LED. If the "
+#~ "LED is lit (bright red), the control is selected for recording. If it is "
+#~ "not lit (dark red), the control is NOT selected for recording."
+#~ msgstr ""
+#~ "Wenn ein Element Aufnahmen unterstützt, besitzt es eine rote LED, wenn "
+#~ "diese hell leuchtet, ist der Kanal für Aufnahmen ausgewählt. Wenn die LED "
+#~ "dunkel ist, ist der Kanal nicht für Aufnahmen ausgewählt."
+
+#~ msgid ""
+#~ "<screeninfo>Volume control with Recording Switch (<guilabel>Output</"
+#~ "guilabel> Section)</screeninfo>"
+#~ msgstr ""
+#~ "<screeninfo>Lautstärkeregler mit Aufnahmeschalter (<guilabel>Ausgang</"
+#~ "guilabel>)</screeninfo>"
+
+#~ msgid ""
+#~ "<phrase>Volume control with Recording Switch (<guilabel>Output</guilabel> "
+#~ "Section)</phrase>"
+#~ msgstr ""
+#~ "<phrase>Lautstärkeregler mit Aufnahmeschalter (<guilabel>Ausgang</"
+#~ "guilabel>)</phrase>"
+
+#~ msgid ""
+#~ "Most of these controls have a context menu, accessible by right clicking "
+#~ "on the control or device icon. Several entries are possible in the "
+#~ "context menu, but only those applicable are shown."
+#~ msgstr ""
+#~ "Die meisten der Regler haben ein Kontextmenü, das Sie durch Klicken mit "
+#~ "der &RMBn; auf den Regler oder das oberhalb stehende Gerätesymbol "
+#~ "aktivieren können. Das Menü hat verschiedene Einträge, wobei jeweils nur "
+#~ "die für das Gerät passenden angezeigt werden."
+
+#~ msgid ""
+#~ "Show either one or two sliders. This is only applicable to stereo "
+#~ "devices. The right slider controls right side volume, and the left "
+#~ "controls left side volume."
+#~ msgstr ""
+#~ "Einen oder zwei Lautstärkeregler für das Gerät anzeigen. Das gilt nur für "
+#~ "Stereogeräte. Der rechte Regler kontrolliert die Lautstärke rechts und "
+#~ "der linke Regler die Lautstärke links."
+
+#~ msgid "Muted"
+#~ msgstr "Stumm"
+
+#~ msgid "Mute or unmute the device"
+#~ msgstr "Das Gerät stummschalten."
+
+#~ msgid "Hide"
+#~ msgstr "Ausblenden"
+
+#~ msgid ""
+#~ "If you are not interested in regulating this device you can hide it with "
+#~ "this option. If you want to show it again, you can only do this by "
+#~ "selecting the <guimenuitem>Channels</guimenuitem> option (see below)"
+#~ msgstr ""
+#~ "Kanäle, die nicht geändert werden sollen, können mit dieser Option "
+#~ "ausgeblendet werden. Wenn diese wieder gezeigt werden sollen, geht dies "
+#~ "nur über die Option <guilabel>Kanäle</guilabel> (siehe weiter unten)."
+
+#~ msgid "Configure Global Shortcuts..."
+#~ msgstr "Kurzbefehle festlegen ..."
+
+#~ msgid ""
+#~ "You can control a device with your keyboard. Use this menu option to show "
+#~ "the &kde; <guilabel>Configure Shortcuts</guilabel> dialog. Here you can "
+#~ "define keys for increasing and decreasing volume and for muting the "
+#~ "device. The keys are global and operate also when &kmix; is iconified or "
+#~ "docked."
+#~ msgstr ""
+#~ "Sie können Regler auch mit der Tastatur steuern. Mit diesem Menüeintrag "
+#~ "können Sie den Dialog <guilabel>Kurzbefehle festlegen</guilabel> "
+#~ "aufrufen. Hier können Sie Tasten festlegen, mit denen Lautstärken erhöht "
+#~ "oder erniedrigt, oder Kanäle stummgeschaltet werden. Diese "
+#~ "Tastenkombinationen sind global und funktionieren auch, wenn &kmix; "
+#~ "minimiert oder angedockt ist."
+
+#~ msgid "Channels"
+#~ msgstr "Kanäle"
+
+#~ msgid ""
+#~ "You will get a dialog box where you can configure per section "
+#~ "(<guilabel>Output</guilabel>, <guilabel>Input</guilabel>, "
+#~ "<guilabel>Switches</guilabel>), which channels you want to see."
+#~ msgstr ""
+#~ "Zeigt einen Dialog, in dem für jeden der Bereiche (<guilabel>Ausgang</"
+#~ "guilabel>, <guilabel>Eingang</guilabel> und <guilabel>Schalter</"
+#~ "guilabel>) festgelegt werden kann, welche Kanäle angezeigt werden sollen."
+
+#~ msgid "Show/Hide Menubar"
+#~ msgstr "Menüleiste anzeigen/ausblenden"
+
+#~ msgid ""
+#~ "This option is not device specific, but affects the mixer window. You can "
+#~ "hide and show the menubar with this option. You can also do this by "
+#~ "pressing the shortcut (usually <keycombo action=\"simul\">&Ctrl;"
+#~ "<keycap>M</keycap></keycombo>)"
+#~ msgstr ""
+#~ "Diese Option ist nicht abhängig von den Geräten, sondern betrifft das "
+#~ "Fenster von &kmix;. Hiermit kann die Menüleiste angezeigt bzw. "
+#~ "ausgeblendet werden. Dies geht auch mit dem üblichen Kurzbefehl "
+#~ "(normalerweise <keycombo action=\"simul\">&Ctrl;<keycap>M</keycap></"
+#~ "keycombo>)."
+
+#~ msgid "Switches and Multiple-Choice selectors"
+#~ msgstr "Schalter und Mehrfachauswahlen"
+
+#~ msgid ""
+#~ "The controls in the section <guilabel>Switches</guilabel> consist of a "
+#~ "LED and a short label describing the function. The <guilabel>Switches</"
+#~ "guilabel> section can also contain Multiple-Choice selectors. Please note "
+#~ "that these controls are often very special and usually don't need to be "
+#~ "changed by the average user. The context menu contains the "
+#~ "<guimenuitem>Channels</guimenuitem> and <guimenuitem>Show/Hide Menubar</"
+#~ "guimenuitem> entries already described. <screenshot> <screeninfo>Switches "
+#~ "and Multiple-Choice selectors (<guilabel>Switches</guilabel> Section)</"
+#~ "screeninfo> <mediaobject> <imageobject> <imagedata fileref=\"kmix-channel-"
+#~ "switches.png\" format=\"PNG\"/></imageobject> "
+#~ "<textobject><phrase>Switches and Multiple-Choice selectors "
+#~ "(<guilabel>Switches</guilabel> Section)</phrase></textobject> </"
+#~ "mediaobject> </screenshot> Please remember, red LED's are recording "
+#~ "related, yellow LED's control special soundcard capabilities. The "
+#~ "screenshot above shows from left to right an unlit <guilabel>IEC958 "
+#~ "Output</guilabel> LED (yellow = special control), a lit <guilabel>Mix</"
+#~ "guilabel> LED (red = Recording related), an unlit recording related LED, "
+#~ "a lit special control and one multiple-choice selector (<guilabel>PCM Out "
+#~ "Path &amp; Mute</guilabel>). If you are uncertain about the meaning of a "
+#~ "control, please ask your soundcard driver supplier (for most current "
+#~ "&Linux; distributions this is <ulink url=\"http://www.alsa-project.org"
+#~ "\">ALSA</ulink>)."
+#~ msgstr ""
+#~ "Die Regler im Abschnitt <guilabel>Schalter</guilabel> bestehen aus einer "
+#~ "LED und einer kurzen Beschreibung der Funktion. Der Abschnitt "
+#~ "<guilabel>Schalter</guilabel> kann zudem Mehrfachauswahlen enthalten. "
+#~ "Beachten Sie, dass diese Einstellungen oft sehr speziell sind und "
+#~ "eigentlich keiner Anpassung durch den durchschnittlichen Benutzer "
+#~ "bedürfen. Das Kontextmenü enthält die Einträge <guimenuitem>Kanäle</"
+#~ "guimenuitem> und <guimenuitem>Menüleiste anzeigen/ausblenden</"
+#~ "guimenuitem>, die bereits beschrieben wurden. "
+#~ "<screenshot><screeninfo>Schalter und Mehrfachauswahlen (Abschnitt "
+#~ "<guilabel>Schalter</guilabel>)</"
+#~ "screeninfo><mediaobject><imageobject><imagedata fileref=\"kmix-channel-"
+#~ "switches.png\" format=\"PNG\"/></imageobject><textobject><phrase>Schalter "
+#~ "und Mehrfachauswahlen (Abschnitt <guilabel>Schalter</guilabel>)</phrase></"
+#~ "textobject></mediaobject></screenshot> Rote LEDs sind mit Aufnahmen "
+#~ "verbunden; gelbe LEDs steuern besondere Fähigkeiten der Soundkarte. Das "
+#~ "obige Bildschirmfoto zeigt von links nach rechts eine unbeleuchtete LDE "
+#~ "für <guilabel>IEC958 Output</guilabel> (gelb = besonderer Regler), eine "
+#~ "beleuchtete LED für <guilabel>Mix</guilabel> (rot = Aufnahme), eine "
+#~ "unbeleuchtete Aufnahme-LED, eine beleuchtete besondere LED und ein "
+#~ "Auswahlfeld (<guilabel>PCM Out Path &amp; Mute</guilabel>). Wenn Sie sich "
+#~ "über die Bedeutung eines Reglers nicht sicher sind, fragen Sie den "
+#~ "Hersteller Ihres Soundkartentreibers (unter &Linux; ist dies meistens "
+#~ "<ulink url=\"http://www.alsa-project.org\">ALSA</ulink>)."
+
+#~ msgid "Panning slider"
+#~ msgstr "Verteilung der Lautstärke auf links und rechts"
+
+#~ msgid ""
+#~ "With this slider you can control the volume distribution between left and "
+#~ "right speaker. This slider is an overall regulator, which affects the "
+#~ "Master Volume. The middle position is the default. Dragging the slider to "
+#~ "the left lowers the volume of the right speaker, dragging it to the right "
+#~ "vice versa. Of course, these might be swapped if your speakers aren't "
+#~ "positioned correctly."
+#~ msgstr ""
+#~ "Mit diesem Regler können Sie die Verteilung der Lautstärke zwischen "
+#~ "linkem und rechtem Lautsprecher einstellen. Dieser Regler betrifft alle "
+#~ "Geräte gleichermaßen. Standard ist die Mittelstellung. Wenn Sie den "
+#~ "Regler nach links ziehen, vermindert dies die Lautstärke des rechten "
+#~ "Lautsprechers und umgekehrt. Natürlich kann diese Zuordnung vertauscht "
+#~ "sein, falls Ihre Lautsprecher falsch herum angeschlossen sind."
+
+#~ msgid ""
+#~ "For Surround Systems please be aware that the <guilabel>Master</guilabel> "
+#~ "device often regulates only the Front Speakers. This is a limitation of "
+#~ "your Soundcard driver."
+#~ msgstr ""
+#~ "Für Surroundsysteme sei folgende Tatsache erwähnt: Meist regelt der "
+#~ "<guilabel>Master</guilabel>-Regler nur die vorderen Lautsprecher. Das ist "
+#~ "eine Beschränkung Ihres Soundkartentreiber."
+
+#~ msgid ""
+#~ "If your soundcard has no <guilabel>Master</guilabel> device, some other "
+#~ "device might get picked by &kmix; - for most people this is the "
+#~ "<guilabel>Wave</guilabel> (or <guilabel>PCM</guilabel>) control."
+#~ msgstr ""
+#~ "Wenn Ihre Soundkarte keinen <guilabel>Master</guilabel>-Regler besitzt, "
+#~ "wählt &kmix; ein anderes Gerät. Meistens ist dies <guilabel>Wave</"
+#~ "guilabel> oder <guilabel>PCM</guilabel>."
+
+#~ msgid ""
+#~ "Use <menuchoice><guimenu>Settings</guimenu><guimenuitem>Configure "
+#~ "&kmix;...</guimenuitem></menuchoice> from the menubar to choose "
+#~ "preferences. These items are:"
+#~ msgstr ""
+#~ "Über das Menü <menuchoice><guimenu>Einstellungen</"
+#~ "guimenu><guimenuitem>&kmix; einrichten ...</guimenuitem></menuchoice> "
+#~ "können diverse Einstellungen vorgenommen werden:"
+
+#~ msgid "Dock into panel"
+#~ msgstr "An Kontrollleiste andocken"
+
+#~ msgid ""
+#~ "If checked, &kmix; will dock in the systray when pressing the window "
+#~ "close button. If not checked, &kmix; will quit on pressing the window "
+#~ "close button. Attention: After quitting you will not be able to control "
+#~ "the volume if you have assigned keys for this."
+#~ msgstr ""
+#~ "Wenn diese Option angewählt ist, zeigt &kmix; ein kleines Symbol in der "
+#~ "Kontrollleiste an, wenn das Fenster von &kmix; geschlossen wird. "
+#~ "Ansonsten wird &kmix; beim Schließen des Fensters beendet. Achtung: Nach "
+#~ "dem Beenden von &kmix; funktionieren auch die Tastaturkurzbefehle nicht "
+#~ "mehr."
+
+#~ msgid "Enable system tray volume control"
+#~ msgstr "Lautstärkeregler der Kontrollleiste aktivieren"
+
+#~ msgid ""
+#~ "If enabled, a left-clicking the &kmix; dock icon will show a popup window "
+#~ "with a volume control for the preferred device (Hint: currently you "
+#~ "cannot change this device - it is selected by &kmix; instead). If the "
+#~ "option is disabled, the &kmix; Main Window will be shown on a left-click "
+#~ "on the &kmix; dock icon."
+#~ msgstr ""
+#~ "Ist diese Einstellung aktiviert, kann durch normales Klicken auf das "
+#~ "&kmix;-Symbol der primäre Lautstärkeregler bedient werden. Dieser Regler "
+#~ "wird derzeit von &kmix; automatisch festgelegt. Ansonsten öffnet ein "
+#~ "Klick das Fenster von &kmix;."
+
+#~ msgid "Show tickmarks"
+#~ msgstr "Skalenstriche anzeigen"
+
+#~ msgid "Show lines to mark positions on the sliders."
+#~ msgstr "Kurze Striche anzeigen, um die Position der Regler zu markieren."
+
+#~ msgid "Show labels"
+#~ msgstr "Bezeichnungen anzeigen"
+
+#~ msgid ""
+#~ "Display labels for each of the sound devices. Wether this item is checked "
+#~ "or not, by holding the mouse over the icon for each device, you can see "
+#~ "this information."
+#~ msgstr ""
+#~ "Zeigt die Bezeichnungen der Lautstärkeregler an. Auch wenn Sie dieses "
+#~ "Ankreuzfeld nicht markiert haben, wird die Bezeichnung angezeigt, wenn "
+#~ "Sie mit dem Mauszeiger über dem Symbol verweilen."
+
+#~ msgid "Restore volumes on login"
+#~ msgstr "Lautstärkeeinstellungen beim Anmelden laden"
+
+#~ msgid ""
+#~ "Let &kde; restore the volumes when you Login: This restores your personal "
+#~ "volume levels, stored when you last logged out. If your Operating System "
+#~ "saves the volume levels, you might not need this option (but on a "
+#~ "computer with multiple users it is still needed)."
+#~ msgstr ""
+#~ "Ist diese Einstellung aktiviert, stellt &kde; die Lautstärkeeinstellungen "
+#~ "wieder her, die beim letzten Beenden von &kde; gespeichert wurden. Wenn "
+#~ "Ihr System dies bereits tut, werden Sie diese Option wahrscheinlich nicht "
+#~ "benötigen. Bei einem Rechner mit mehreren Benutzern werden Sie diese "
+#~ "Option aber verwenden."
+
+#~ msgid "Volume Values:"
+#~ msgstr "Lautstärkewerte:"
+
+#~ msgid ""
+#~ "Select if and how volume values are displayed: <guilabel>None</guilabel>, "
+#~ "<guilabel>Absolute</guilabel> or <guilabel>Relative</guilabel>."
+#~ msgstr ""
+#~ "Wählen Sie, ob und wie die Lautstärke angezeigt wird: <guilabel>Keine</"
+#~ "guilabel>, <guilabel>Absolut</guilabel> oder <guilabel>Relativ</guilabel>."
+
+#~ msgid "Slider Orientation"
+#~ msgstr "Regler-Ausrichtung:"
+
+#~ msgid ""
+#~ "With this option you can turn the &kmix; main window content by 90 "
+#~ "degrees. Sliders, texts and everything else (if applicable) is rotated. "
+#~ "There are some exclusions to this rule, most notably the menubar, the "
+#~ "mixer selector (if shown at all), the panning slider and the multiple-"
+#~ "choice selectors."
+#~ msgstr ""
+#~ "Mit dieser Einstellung können Sie den Inhalt des &kmix;-Hauptfensters um "
+#~ "90 Grad drehen/ Schieberegler, Texte und vieles mehr wird gedreht. Davon "
+#~ "ausgeschlossen sind &eg; die Menüleiste, die Mixerauswahl (wenn "
+#~ "vorhanden), der Rechts-Links-Abgleich und die Mehrfachauswahlen."
+
+#~ msgid "The &kmix; panel applet"
+#~ msgstr "Das &kmix;-Miniprogramm"
+
+#~ msgid ""
+#~ "The &kmix; panel applet is an alternative interface to &kmix;. You can "
+#~ "add it to the &kde; panel by selecting <guimenuitem>Add Applet to Panel..."
+#~ "</guimenuitem> in the <guimenu>Panel Menu</guimenu> or context menu. "
+#~ "Choose <guilabel>Sound Mixer</guilabel> and click the <guibutton>Add to "
+#~ "Panel</guibutton> or double click <guilabel>Sound Mixer</guilabel>."
+#~ msgstr ""
+#~ "Das Miniprogramm von &kmix; ist eine alternative Schnittstelle zu &kmix;. "
+#~ "Es kann der &kde;-Kontrollleiste durch Auswahl von <guimenuitem>Zur "
+#~ "Kontrollleiste hinzufügen ...</guimenuitem> im "
+#~ "<guimenu>Kontrollleistenmenü</guimenu> oder über das Kontextmenü "
+#~ "hinzugefügt werden. Wählen Sie <guilabel>Sound-Mixer</guilabel> und "
+#~ "klicken Sie auf <guibutton>Hinzufügen</guibutton>, oder doppelklicken Sie "
+#~ "<guilabel>Sound-Mixer</guilabel>."
+
+#~ msgid ""
+#~ "You can work with the &kmix; applet as described for the <link linkend="
+#~ "\"working-with-kmix\">main window</link> - including the context menu. "
+#~ "Due to the limited space in the panel there are differences:"
+#~ msgstr ""
+#~ "Sie können mit dem Miniprogramm genauso wie mit dem <link linkend="
+#~ "\"working-with-kmix\">Hauptfenster</link> inklusive des Kontextmenüs "
+#~ "arbeiten. Allerdings ergeben sich aufgrund des beschränkten Platzes ein "
+#~ "paar Änderungen:"
+
+#~ msgid "No main menu available."
+#~ msgstr "Es ist kein Hauptmenü verfügbar."
+
+#~ msgid ""
+#~ "If you have multiple soundcards, you cannot change the selected mixer "
+#~ "after the initial selection."
+#~ msgstr ""
+#~ "Wenn Sie mehrere Soundkarten eingebaut haben, können Sie lediglich beim "
+#~ "ersten Starten die zu steuernde Karte auswählen."
+
+#~ msgid ""
+#~ "No dock icon. If you want to use the dock item you must additionally "
+#~ "start &kmix; with <menuchoice><guimenu>K-Menu</"
+#~ "guimenu><guisubmenu>Multimedia</guisubmenu><guimenuitem>&kmix; Sound "
+#~ "Mixer</guimenuitem></menuchoice>."
+#~ msgstr ""
+#~ "Es gibt kein Symbol im Systemabschnitt der Kontrollleiste. Wenn Sie "
+#~ "dieses Symbol brauchen, müssen Sie zusätzlich &kmix; über "
+#~ "<menuchoice><guimenu>K-Menü</guimenu><guisubmenu>Multimedia</"
+#~ "guisubmenu><guimenuitem>&kmix;</guimenuitem></menuchoice> starten."
+
+#~ msgid "Icons only available when panel is big enough."
+#~ msgstr ""
+#~ "Die Symbole sind nur verfügbar, wenn die Kontrollleiste groß genug ist."
+
+#~ msgid "No device name labels available."
+#~ msgstr "Es sind keine Bezeichnungen für die Regler verfügbar."
+
+#~ msgid ""
+#~ "Configuration is done via panel menu - you can configure colors and "
+#~ "slider direction there."
+#~ msgstr ""
+#~ "Die Einstellungen werden über das Kontrollleistenmenü vorgenommen. Es "
+#~ "können sowohl die Farben, als auch die Richtung der Regler eingestellt "
+#~ "werden."
+
+#~ msgid ""
+#~ "No automatic volume saving. If you want your volumes saved when you "
+#~ "logout for later restauration, you must also start &kmix; from the K-Menu."
+#~ msgstr ""
+#~ "Es gibt kein automatisches Speichern der Lautstärken. Wenn Sie dies "
+#~ "wünschen müssen Sie &kmix; aus dem K-Menü starten."
+
+#~ msgid "Advanced &kmix; features"
+#~ msgstr "Forgeschrittene Eigenschaften von &kmix;"
+
+#~ msgid ""
+#~ "This chapter describes &kmix; functionality that is targeted at the "
+#~ "experienced user. Most users will never have a need for this "
+#~ "functionality, so you can safely skip this chapter"
+#~ msgstr ""
+#~ "Dieses Kapitel beschreibt Möglichkeiten in &kmix;, die eher "
+#~ "fortgeschrittene Benutzer interessieren. Die meisten werden diese "
+#~ "Funktionen nicht benötigen und können dies Kapitel überspringen."
+
+#~ msgid "The &DCOP; Interface"
+#~ msgstr "Die &DCOP;-Schnittstelle"
+
+#~ msgid ""
+#~ "Sometimes you want to do specialized things. Things like controlling the "
+#~ "mixer from another application or muting the master device every day at "
+#~ "10pm. &kmix; has a &DCOP; interface that allows you to achieve much with "
+#~ "minimal work. You can start a shell and type <userinput><command>dcop "
+#~ "kmix</command></userinput> to start exploring the &kmix; &DCOP; "
+#~ "interface. The &kmix; specific interfaces are:"
+#~ msgstr ""
+#~ "Manchmal werden spezielle Funktionen gebraucht. Dinge wie zum Beispiel, "
+#~ "den Lautstärkeregler von einem anderen Programm aus zu steuern oder den "
+#~ "<quote>Master</quote>-Regler jeden Tag um 22 Uhr stumm schalten. Für "
+#~ "diese Funktionen hat &kmix; eine &DCOP;-Schnittstelle. In einer Konsole "
+#~ "können Sie mit dem Befehl <guilabel>dcop kmix</guilabel> beginnen, die "
+#~ "&DCOP;-Schnittstelle von &kmix; zu erforschen. Die speziellen "
+#~ "Schnittstellen in &kmix; sind:"
+
+#~ msgid "Mixer0"
+#~ msgstr "Mixer0"
+
+#~ msgid ""
+#~ "Allows manipulating the first mixer. You can set volume levels, mute the "
+#~ "device, change balance, retrieve the mixer name and much more. Type "
+#~ "<userinput><command>dcop kmix Mixer0</command></userinput> if you want to "
+#~ "explore all the features. There are more entries like "
+#~ "<userinput><command>Mixer1</command></userinput> in case multiple "
+#~ "soundcards are installed."
+#~ msgstr ""
+#~ "Dies erlaubt Änderungen des ersten Lautstärkereglers. Es können die "
+#~ "Lautstärken geändert, Kanäle stummgeschaltet, die Balance geändert, der "
+#~ "Name der Regler abgefragt werden und vieles mehr. Mit "
+#~ "<userinput><command>dcop kmix Mixer0</command></userinput> können all "
+#~ "diese Möglichkeiten erforscht werden. Es gibt weitere Einträge wie "
+#~ "<userinput><command>Mixer1</command></userinput>, sofern weitere "
+#~ "Soundkarten installiert sind."
+
+#~ msgid "kmix-mainwindow#1"
+#~ msgstr "kmix-mainwindow#1"
+
+#~ msgid ""
+#~ "The &GUI; window can be controlled with this command. You can hide and "
+#~ "show the window, resize it and much more. Type <userinput><command>dcop "
+#~ "kmix kmix-mainwindow#1</command></userinput> if you want to explore all "
+#~ "the features."
+#~ msgstr ""
+#~ "Das Hauptfenster von &kmix; kann hiermit kontrolliert werden. Sie können "
+#~ "es ausblenden und anzeigen, die Größe ändern, und vieles mehr. Geben Sie "
+#~ "<userinput><command>dcop kmix kmix-mainwindow#1</command></userinput> "
+#~ "ein, um die Möglichkeiten zu erforschen."
+
+#~ msgid "&DCOP; Examples"
+#~ msgstr "&DCOP;-Beispiele"
+
+#~ msgid "dcop kmix kmix-mainwindow#1 hide"
+#~ msgstr "dcop kmix kmix-mainwindow#1 hide"
+
+#~ msgid ""
+#~ "Hides the &GUI; window. Use <userinput><command>dcop kmix kmix-"
+#~ "mainwindow#1 show</command></userinput> or the dock icon to show it again."
+#~ msgstr ""
+#~ "Blendet das Fenster von &kmix; aus. <userinput><command>dcop kmix kmix-"
+#~ "mainwindow#1 show</command></userinput> zeigt es wieder an."
+
+#~ msgid "dcop kmix kmix-mainwindow#1 resize 1 1"
+#~ msgstr "dcop kmix kmix-mainwindow#1 resize 1 1"
+
+#~ msgid ""
+#~ "Resizes the &GUI; window to the smallest size possible. This is the size "
+#~ "so that all sliders (and other &GUI; elements) will fit into the window."
+#~ msgstr ""
+#~ "Ändert die Größe des Fensters auf die kleinstmögliche Größe, so dass alle "
+#~ "Elemente gerade so in das Fenster passen."
+
+#~ msgid "dcop kmix Mixer0 mixerName"
+#~ msgstr "dcop kmix Mixer0 mixerName"
+
+#~ msgid ""
+#~ "Tells the name of the first Mixer, for example <computeroutput>Sound "
+#~ "Fusion CS46xx</computeroutput>."
+#~ msgstr ""
+#~ "Zeigt den Namen des ersten Gerätes, zum Beispiel <computeroutput>Sound "
+#~ "Fusion CS46xx</computeroutput>."
+
+#~ msgid "dcop kmix Mixer1 setVolume 0 10"
+#~ msgstr "dcop kmix Mixer1 setVolume 0 10"
+
+#~ msgid ""
+#~ "Sets the volume on the second mixer, device 0 to 10 percent. Device 0 is "
+#~ "often the master device, but not always. If you want to quiet down the "
+#~ "(first) master device on your second soundcard, you can use "
+#~ "<userinput><command>dcop kmix Mixer1 setMasterVolume 0</command></"
+#~ "userinput>"
+#~ msgstr ""
+#~ "Setzt die Lautstärke der zweiten Soundkarte, Gerät 0 auf 10&nbsp;%. Gerät "
+#~ "0 ist oft der Hauptregler, allerdings nicht immer. Wenn der erste "
+#~ "Hauptregler der zweiten Soundkarte heruntergeregelt werden soll, "
+#~ "verwenden Sie <userinput><command>dcop kmix Mixer1 setMasterVolume 0</"
+#~ "command></userinput>."
+
+#~ msgid ""
+#~ "You can directly execute these commands from a shell that you started "
+#~ "from inside &kde;. If you need to execute dcop commands from somewhere "
+#~ "else, for example from a crontab script, you need to define the "
+#~ "<envar>DCOPSERVER</envar> environment variable (as seen in the first line "
+#~ "of your <filename>~/.DCOPserver_hostname_:0</filename> file), for example:"
+#~ msgstr ""
+#~ "Sie können diese Befehle direkt in einer Konsole innerhalb von &kde; "
+#~ "ausführen. Wenn Sie &DCOP;-Befehle irgendwo anders, zum Beispiel in einem "
+#~ "Cron-Skript ausführen wollen, müssen Sie die Umgebungsvariable "
+#~ "<envar>DCOPSERVER</envar> setzen (genauso, wie in der ersten Zeile der "
+#~ "Datei ~/.DCOPServer_hostname_:0). Zum Beispiel mit: "
+
+#~ msgid ""
+#~ "#!/bin/sh\n"
+#~ "DCOPSERVER=`cat /home/yourhome/.DCOPserver_yourhostname_:0 | grep local`\n"
+#~ "export DCOPSERVER\n"
+#~ "dcop kmix Mixer0 setMasterVolume 0"
+#~ msgstr ""
+#~ "#!/bin/sh\n"
+#~ "DCOPSERVER=`cat /home/yourhome/.DCOPserver_yourhostname_:0 | grep local`\n"
+#~ "export DCOPSERVER\n"
+#~ "dcop kmix Mixer0 setMasterVolume 0"
+
+#~ msgid "Tips and Tricks"
+#~ msgstr "Tipps und Tricks"
+
+#~ msgid "Using ALSA and OSS driver at the same time"
+#~ msgstr "ALSA und OSS gleichzeitig verwenden"
+
+#~ msgid ""
+#~ "&kmix; on &Linux; can use either the ALSA driver or the OSS driver, not "
+#~ "both. If you really need to use both drivers at the same time (a very "
+#~ "rare situation), you can do it as follows: Quit &kmix; and add the "
+#~ "following line to your <filename>kmixrc</filename> file in the global "
+#~ "configuration section."
+#~ msgstr ""
+#~ "&kmix; kann unter &Linux; nur entweder ALSA oder OSS verwenden. Wenn Sie "
+#~ "wirklich beide Treiber gleichzeitig benutzen müssen (was sehr selten "
+#~ "vorkommt), können Sie folgendes machen: Beenden Sie &kmix; und fügen Sie "
+#~ "die folgende Zeile in Ihre <guilabel>kmixrc</guilabel>-Datei in der "
+#~ "Sektion der globalen Konfiguration ein."
+
+#~ msgid "MultiDriver=true"
+#~ msgstr "MultiDriver=true"
+
+#~ msgid ""
+#~ "Start &kmix; again. If you click <menuchoice><guimenu>Help</"
+#~ "guimenu><guimenuitem>Hardware Information</guimenuitem></menuchoice> you "
+#~ "should see <guilabel>Sound drivers used: ALSA0.9 + OSS</guilabel> and "
+#~ "<guilabel>Experimental multiple-Driver mode activated</guilabel>."
+#~ msgstr ""
+#~ "Starten Sie &kmix; erneut. Wenn Sie <menuchoice><guimenu>Hilfe</"
+#~ "guimenu><guimenuitem>Hardware Informationen</guimenuitem></menuchoice> "
+#~ "anwählen, sollten Sie <quote><guilabel>Benutzte Soundtreiber: ALSA0.9 + "
+#~ "OSS</guilabel></quote> und <quote><guilabel>Experimenteller "
+#~ "Multitreibermodus aktiviert</guilabel></quote> sehen."
+
+#~ msgid "You will probably see all of your mixers doubled."
+#~ msgstr ""
+#~ "Warnung: Wahrscheinlich werden Sie nun alle Lautstärkeregler doppelt "
+#~ "angezeigt bekommen."
+
+#~ msgid "There is no support for this kind of configuration."
+#~ msgstr "Es gibt für diese Art der Konfiguration keinerlei Unterstützung."
+
+#~ msgid "Main developers"
+#~ msgstr "Hauptentwickler"
+
+#~ msgid "Copyright 1996-2000 Christian Esken"
+#~ msgstr "Copyright 1996-2000 Christian Esken"
+
+#~ msgid "Copyright 2000-2003 Christian Esken &amp; Stefan Schimanski"
+#~ msgstr "Copyright 2000-2003 Christian Esken &amp; Stefan Schimanski"
+
+#~ msgid "Copyright 2003-2005 Christian Esken &amp; Helio Chissini de Castro"
+#~ msgstr "Copyright 2003-2005 Christian Esken &amp; Helio Chissini de Castro"
+
+#~ msgid "Contributors:"
+#~ msgstr "Mitwirkende:"
+
+#~ msgid "Christian Esken <email>esken@kde.org</email>"
+#~ msgstr "Christian Esken <email>esken@kde.org</email>"
+
+#~ msgid "Stefan Schimanski <email>1Stein@gmx.de</email>"
+#~ msgstr "Stefan Schimanski <email>1Stein@gmx.de</email>"
+
+#~ msgid "Paul Kendall <email>paul@orion.co.nz</email> - &SGI; Port"
+#~ msgstr "Paul Kendall <email>paul@orion.co.nz</email> - &SGI;-Portierung"
+
+#~ msgid ""
+#~ "Sebestyen Zoltan <email>szoli@digo.inf.elte.hu</email> - FreeBSD Fixes"
+#~ msgstr ""
+#~ "Sebestyen Zoltan <email>szoli@digo.inf.elte.hu</email> - FreeBSD-"
+#~ "Anpassungen"
+
+#~ msgid "Faraut Jean-Louis <email>jlf@essi.fr</email> - &Solaris; Fixes"
+#~ msgstr ""
+#~ "Faraut Jean-Louis <email>jlf@essi.fr</email> - &Solaris;-Anpassungen"
+
+#~ msgid "Nick Lopez <email>kimo_sabe@usa.net</email> - ALSA Port"
+#~ msgstr "Nick Lopez <email>kimo_sabe@usa.net</email> - ALSA-Portierung"
+
+#~ msgid "&Helge.Deller; <email>deller@gmx.de</email> - &HP;-UX Port"
+#~ msgstr "Helge Deller <email>deller@gmx.de</email> - &HP;-UX-Portierung"
+
+#~ msgid ""
+#~ "Lennart Augustsson <email>augustss@cs.chalmers.se</email> - *BSD Fixes"
+#~ msgstr ""
+#~ "Lennart Augustsson <email>augustss@cs.chalmers.se</email> - *BSD-"
+#~ "Anpassungen"
+
+#~ msgid "Documentation copyright 2000 &Matt.Johnston; &Matt.Johnston.mail;"
+#~ msgstr "Dokumentation Copyright 2000 &Matt.Johnston;&Matt.Johnston.mail;"
+
+#~ msgid ""
+#~ "Updated 2003 to match &kmix; V1.91 by Christian Esken <email>esken@kde."
+#~ "org</email>"
+#~ msgstr ""
+#~ "2003 von Christian Esken <email>esken@kde.org</email> aktualisiert, um zu "
+#~ "&kmix; V1.91 zu passen."
+
+#~ msgid ""
+#~ "Updated 2005 to match &kmix; V2.2 by Christian Esken <email>esken@kde."
+#~ "org</email>"
+#~ msgstr ""
+#~ "2005 von Christian Esken <email>esken@kde.org</email> aktualisiert, um zu "
+#~ "&kmix; V2.2 zu passen."
+
+#~ msgid ""
+#~ "Updated 7/2005 to match &kmix; V2.6 by Christian Esken <email>esken@kde."
+#~ "org</email>"
+#~ msgstr ""
+#~ "7/2005 von Christian Esken <email>esken@kde.org</email> aktualisiert, um "
+#~ "zu &kmix; V2.2 zu passen."
+
+#~ msgid ""
+#~ "Based on documentation by Christian Esken <email>esken@kde.org</email>"
+#~ msgstr ""
+#~ "Basierend auf der Dokumentation von Christian Esken <email>esken@kde.org</"
+#~ "email>"
+
+#~ msgid "Requirements"
+#~ msgstr "Voraussetzungen"
+
+#~ msgid ""
+#~ "Obviously, &kmix; is only of use if you have a soundcard. &kmix; supports "
+#~ "several platforms and sound drivers:"
+#~ msgstr ""
+#~ "&kmix; ist nur dann sinnvoll zu benutzen, wenn Sie eine Soundkarte in "
+#~ "Ihrem System installiert haben. &kmix; unterstützt verschiedene "
+#~ "Soundkarten und Sound-Treiber:"
+
+#~ msgid "mattj@flashmail.com"
+#~ msgstr "mattj@flashmail.com"
+
+#~ msgid "lauri@kde.org"
+#~ msgstr "lauri@kde.org"
+
+#~ msgid "The Window has three sections with soundcard controls:"
+#~ msgstr ""
+#~ "Das Fenster hat drei Bereiche mit Kontrollelementen für die Soundkarte:"
+
+#~ msgid ""
+#~ "The controls in section \"Switches\" consist of a LED and a short label "
+#~ "describing the function. Please remember, red LED's are for recording "
+#~ "issues, yellow LED's are for special soundcard features. If you are "
+#~ "uncertain about the meaning of a control, please ask your soundcard "
+#~ "driver supplier (for most current Linux distributions this is ALSA from "
+#~ "http://www.alsa-project.org)."
+#~ msgstr ""
+#~ "Die Elemente im Bereich <quote>Schalter</quote> bestehen aus einer LED "
+#~ "und einem kurzen Text, der die Funktion beschreibt. Wie erwähnt bedeuten "
+#~ "rote LED‚s Aufnahmefunktionen und gelbe LED‘s spezielle "
+#~ "Soundkartenfunktionen. Wenn Sie unsicher sind, was die Elemente für "
+#~ "Bedeutungen haben, fragen Sie bitte den Anbieter Ihres "
+#~ "Soundkartentreibers (bei den meisten Linuxdistributionen wird ALSA von "
+#~ "http://www.alsa-project.org/ mitgeliefert)."
+
+#~ msgid "#!/bin/sh"
+#~ msgstr "#!/bin/sh"
+
+#~ msgid "export DCOPSERVER"
+#~ msgstr "export DCOPSERVER"
+
+#~ msgid "dcop kmix Mixer0 setMasterVolume 0"
+#~ msgstr "dcop kmix Mixer0 setMasterVolume 0"

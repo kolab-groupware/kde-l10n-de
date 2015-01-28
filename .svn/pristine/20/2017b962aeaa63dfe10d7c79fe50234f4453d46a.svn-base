@@ -1,0 +1,51 @@
+#! /usr/bin/env bash
+# This file extract .desktop like files for translation
+# The default extensions extracted are in the big find inside the for
+# If you need to extract a .desktop like file for your project
+# DO NOT add your own extension to the big find, just create a
+# ExtraDesktop.sh file in your project that returns in each line
+# the names of the files you want to be extracted
+
+if test -z "$1"; then
+  echo "call: $0 <filename>"
+  exit
+fi
+
+filelist=$1
+dir=`dirname $0`
+. $dir/get_paths
+
+ml="`list_modules $dir` l10n"
+
+rm -f "$filelist"_* $filelist
+
+: > $filelist
+
+for mod in $ml; do
+  dir=$BASEDIR/`get_path $mod`
+  if test ! -d $dir; then
+    echo "ERROR: module $mod cannot be found in directory $dir"
+    continue
+  fi
+  echo "$dir"
+  find $dir \( -name \*.directory -o -name \*.desktop -o -name \*.desktop.cmake -o -name \*.kimap -o -name \*.themerc -o -name \*.kcsrc -o -name \*.setdlg -o -name index.theme -o -name \*.notifyrc -o -name \*.protocol -o -name \*.profile -o -name \*.actions \) -a \( -type f -o -type l \) >> $filelist
+  extradesktopscripts=`find $dir -name ExtraDesktop.sh`
+  initialdir=`pwd`
+  for extradesktopscript in $extradesktopscripts; do
+    dirwithscript=`dirname $extradesktopscript`
+    cd $dirwithscript
+    extradesktopfiles=`bash $extradesktopscript`
+    for extradesktopfile in $extradesktopfiles; do
+      echo $dirwithscript/$extradesktopfile >> $filelist
+    done
+  done
+  cd $initialdir
+done
+
+sort -o $filelist -u $filelist
+
+for mod in $ml; do 
+    subfile="$filelist"_$mod
+    fgrep $BASEDIR/`get_path $mod`/ $filelist > $subfile
+done
+

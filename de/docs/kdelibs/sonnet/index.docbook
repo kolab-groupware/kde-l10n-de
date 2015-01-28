@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+  <!ENTITY kappname "&sonnet;">
+  <!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+  <!ENTITY % addindex "IGNORE">
+]>
+
+<article id="sonnet" lang="&language;">
+
+<articleinfo>
+<!--title
+>The &sonnet; Handbook</title-->
+<title
+>Der Dialog Rechtschreibprüfung</title>
+
+<authorgroup>
+<author
+>&David.Sweet; &David.Sweet.mail;</author>
+
+<othercredit role="translator"
+><firstname
+>Frank</firstname
+><surname
+>Schütte</surname
+><affiliation
+><address
+><email
+>f.schuette@t-online.de</email
+></address
+></affiliation
+><contrib
+>Deutsche Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2010-09-02</date>
+<releaseinfo
+>&kde; 4.5</releaseinfo>
+<abstract>
+<para
+>&sonnet; ist das Rechtschreibprogramm, das von den &kde;-Programmen wie &kate;, &kmail; und &kword; verwendet wird. Es handelt sich um eine Benutzeroberfläche zu verschiedenen freien Rechtschreibprogrammen. Weitere Informationen zu den unterstützten Rechtschreibprogrammen und Wörterbüchern finden Sie in der Dokumentation zum &systemsettings;-Modul <ulink url="help:kcontrol/spellchecking"
+>Rechtschreibprüfung</ulink
+>.</para>
+
+</abstract>
+<keywordset>
+<keyword
+>spell</keyword>
+<keyword
+>Rechtschreibung</keyword>
+<keyword
+>sonnet</keyword>
+<keyword
+>ispell</keyword>
+<keyword
+>aspell</keyword>
+<keyword
+>prüfen</keyword>
+<keyword
+>Prüfer</keyword>
+<keyword
+>KDE</keyword>
+</keywordset>
+</articleinfo>
+
+<para
+><anchor id="spelldlg"/> Die erste Zeile des Dialogs zeigt das im Dokument gefundene, vermutlich fehlerhafte Wort. &sonnet; versucht geeignete Worte zur Ersetzung zu finden. Es kann dabei eines oder mehrere gefunden werden.</para>
+<para
+>Das wahrscheinlichste Wort wird rechts von <guilabel
+>Ersetzen durch</guilabel
+> gezeigt. Zur Bestätigung der Ersetzung klicken Sie auf <guibutton
+>Ersetzen</guibutton
+>.</para
+> 
+<para
+>Stattdessen können Sie auch ein anderes Wort aus der Liste der Vorschläge auswählen und dann auf <guibutton
+>Ersetzen</guibutton
+> klicken. Um weitere Wörter aus dem Wörterbuch in der Vorschlagsliste anzuzeigen, klicken Sie auf den Knopf <guibutton
+>Vorschläge</guibutton
+>.</para>
+
+<para
+>Um die ursprüngliche Schreibweise beizubehalten, klicken Sie auf <guilabel
+>Ignorieren</guilabel
+>.</para>
+
+<para
+>Um die Rechtschreibprüfung zu beenden -- alle bisherigen Änderungen werden beibehalten -- klicken Sie auf <guibutton
+>Abgeschlossen</guibutton
+>.</para>
+
+<para
+>Um die Rechtschreibprüfung zu beenden und alle bisherigen Änderungen zu verwerfen, klicken Sie auf <guibutton
+>Abbrechen</guibutton
+>.</para>
+
+<para
+>Klicken Sie auf <guibutton
+>Alle ersetzen</guibutton
+>, wird die gleiche Funktion ausgeführt wie beim Klicken auf <guibutton
+>Ersetzen</guibutton
+>. Es wird aber jedes Vorkommen des fehlerhaften Wortes durch die gewählte Ersetzung im gesamten weiteren Dokument ersetzt.</para>
+
+<para
+>Der Knopf <guibutton
+>Alle ignorieren</guibutton
+> ignoriert folgerichtig jedes weitere Vorkommen des fehlerhaften Wortes.</para>
+
+<para
+>Klicken Sie auf <guibutton
+>Zum Wörterbuch hinzufügen</guibutton
+>, wird das fehlerhafte Wort zum persönlichen Wörterbuch (es unterscheidet sich vom Systemwörterbuch, daher sind die hinzugefügten Worte nicht für andere Benutzer sichtbar) hinzugefügt.</para>
+
+<para
+>Im Auswahlfeld <guilabel
+>Sprache</guilabel
+> unten im Dialog können Sie vorübergehend ein anderes Wörterbuch für die Rechtschreibprüfung einstellen.</para>
+
+<para
+>Die Standardeinstellungen für die Rechtschreibprüfung finden Sie im &systemsettings;-Modul <ulink url="help:kcontrol/spellchecking"
+>Rechtschreibprüfung</ulink
+>.</para>
+
+</article>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+sgml-general-insert-case: lower
+End:
+-->
+

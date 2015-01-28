@@ -1,0 +1,834 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: chatstyle.docbook:5
+#, no-c-format
+msgid "&kopete; Chat Window Style Guide"
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:7
+#, no-c-format
+msgid "&kopete; Chat Window Style reference."
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:8
+#, no-c-format
+msgid ""
+"Beginning with &kopete; 0.12, we are now using <ulink "
+"url=\"http://www.adiumx.com/\">Adium</ulink> format for our Chat Window style. "
+"The theme format is based on <acronym>HTML</acronym> templates and <acronym>"
+"CSS</acronym>. They are easier to make and develop, only a knowledge of "
+"<acronym>HTML</acronym> and <acronym>CSS</acronym> is needed. Also, styles can "
+"have variants (defined as <acronym>CSS</acronym> file) which add more "
+"customization value :)."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:16
+#, no-c-format
+msgid "Reference guide."
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:17
+#, no-c-format
+msgid ""
+"Adium format consist of a directory structure, <acronym>HTML</acronym> "
+"templates, <acronym>CSS</acronym> files and keywords that are replaced each "
+"time the template is processed. The final conversation is a <acronym>"
+"XHTML</acronym> page where messages are added with <acronym>DOM</acronym> "
+"operations. The central element is a div element named <filename>Chat</filename>"
+". Before and after this div element goes the Header and Footer template. "
+"Messages are children of the <filename>Chat</filename> div element."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:22
+#, no-c-format
+msgid "Directory Structure"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:23
+#, no-c-format
+msgid ""
+"A style must respect this directory structure. Code in &kopete; are thinking "
+"around this directory structure. When archiving the style, archive the "
+"<filename>styleName</filename> directory. The directory structure is a "
+"structure of a <application>Mac OS X</application> bundle for those familiar "
+"with that operating system. Also you must respect the case displayed here, "
+"because a <acronym>UNIX</acronym> system is case-sensitive."
+msgstr ""
+
+#. Tag: programlisting
+#: chatstyle.docbook:24
+#, no-c-format
+msgid ""
+"styleName\\ (can have .adiumMessageStyle as suffix, because in Mac OS X it is a "
+"bundle)\n"
+"        Contents\\\n                Info.plist\n"
+"                Resources\\\n                        main.css\n"
+"                        Header.html\n"
+"                        Footer.html\n"
+"                        Status.html\n"
+"                        Incoming\\ (and Outgoing\\)\n"
+"                                Content.html\n"
+"                                NextContent.html (for consecutive messages)\n"
+"                                Context.html (for message history)\n"
+"                                NextContext.html\n"
+"                                Action.html\n"
+"                        Variants\\\n                                *.css"
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:28
+#, no-c-format
+msgid "About &lt;div id=\"insert\"&gt;&lt;/div&gt;"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:29
+#, no-c-format
+msgid ""
+"This is a special div element used internally. It is a placeholder to indicate "
+"where to insert the next message. If it is a new message, it is removed and the "
+"new message take place. But if it is a consecutive message, the div element is "
+"replaced with the content of new message. This special div element is <emphasis>"
+"required</emphasis> in Content,Context,NextContent,NextContext templates. "
+"Though it not harm to put it also in Action and Status template."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:34
+#, no-c-format
+msgid "HTML templates."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:36
+#, no-c-format
+msgid "Template description."
+msgstr ""
+
+#. Tag: term
+#: chatstyle.docbook:38
+#, no-c-format
+msgid "<filename>Header.html</filename> (Required)"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:40
+#, no-c-format
+msgid ""
+"Use the Header template to display a nice header to the conversation. This "
+"template is inserted before <filename>Chat</filename> "
+"div element. If you don't use it, just put an empty file."
+msgstr ""
+
+#. Tag: term
+#: chatstyle.docbook:46
+#, no-c-format
+msgid "<filename>Footer.html</filename> (Required)"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:48
+#, no-c-format
+msgid ""
+"This is mostly the same as Header but it is for the footer of a conversation. "
+"This template is inserted after <filename>Chat</filename> "
+"div element. If you don't use it, just put an empty file."
+msgstr ""
+
+#. Tag: term
+#: chatstyle.docbook:54
+#, no-c-format
+msgid "<filename>Status.html</filename> (Required)"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:56
+#, no-c-format
+msgid ""
+"This template is used to display an internal message. Internal messages such as "
+"status change, message from Kopete (&eg; Incoming File Transfer). When the "
+"style do not supply an Action template, it is used to display Action message."
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:62
+#, no-c-format
+msgid "Incoming/Content.html"
+msgstr ""
+
+#. Tag: term
+#: chatstyle.docbook:63
+#, no-c-format
+msgid "<filename>Outgoing/Content.html</filename> (Required)"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:65
+#, no-c-format
+msgid ""
+"The content template is the message core. Think it as a block that will hold "
+"messages. Make sure it is ready to receive consecutive messages, don't design "
+"it to only display one message. Consecutive messages will be inserted at the "
+"div insert element."
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:71
+#, no-c-format
+msgid "Incoming/NextContent.html"
+msgstr ""
+
+#. Tag: term
+#: chatstyle.docbook:72
+#, no-c-format
+msgid "<filename>Outgoing/NextContent.html</filename> (Required)"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:74
+#, no-c-format
+msgid ""
+"The NextContent template is a message fragment for consecutive messages. It "
+"will be inserted into the main message block. The HTML template should contain "
+"the bare minimum to display a message."
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:81
+#, no-c-format
+msgid "Incoming/Action.html"
+msgstr ""
+
+#. Tag: term
+#: chatstyle.docbook:82
+#, no-c-format
+msgid ""
+"<filename>Outgoing/Action.html</filename> (Optional) (&kopete; Extension)"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:84
+#, no-c-format
+msgid ""
+"This template is a &kopete; extension to the Adium format. It is available for "
+"Incoming and Outgoing direction. Action messages are special message to tell we "
+"are doing an action. Example: \"/me is installing &kopete;\" would be displayed "
+"as \"DarkShock is installing &kopete;\"."
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:90
+#, no-c-format
+msgid "Incoming/Context.html"
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:91
+#, no-c-format
+msgid "Incoming/NextContext.html"
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:92
+#, no-c-format
+msgid "Outgoing/Context.html"
+msgstr ""
+
+#. Tag: term
+#: chatstyle.docbook:93
+#, no-c-format
+msgid "<filename>Outgoing/NextContext.html</filename> (Optional)"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:95
+#, no-c-format
+msgid ""
+"These templates are not used in Kopete. In Adium, they are used to display "
+"history. It is mostly the same thing as Content and NextContent but with some "
+"differences to distinguish from normal messages."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:106
+#, no-c-format
+msgid "About CSS styles and Variants"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:107
+#, no-c-format
+msgid ""
+"HTML template are used to describe how the structure is made. But all the style "
+"is described in <acronym>CSS</acronym> files. <filename>main.css</filename> "
+"is the main style, where variants are just alterations of the main style. "
+"Examples of variants are different colors, no display of user photo. Both "
+"<filename>main.css</filename> and variants and imported in final <acronym>"
+"XHTML</acronym> page."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:109
+#, no-c-format
+msgid "-<filename>main.css</filename>"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:110
+#, no-c-format
+msgid ""
+"This is the main <acronym>CSS</acronym> file which is common for all variants. "
+"This file should contain all the main description of the style."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:113
+#, no-c-format
+msgid "-Variants"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:114
+#, no-c-format
+msgid ""
+"Variants are <acronym>CSS</acronym> files located in <filename>"
+"Variants/</filename> directory. Each variant is a single <acronym>CSS</acronym> "
+"file that include the <filename>main.css</filename> and do alteration to the "
+"main style."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:119
+#, no-c-format
+msgid "Debugging styles"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:120
+#, no-c-format
+msgid "Here is two tips for testing a style while creating it."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:122
+#, no-c-format
+msgid "-Save a sample conversation."
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:123
+#, no-c-format
+msgid ""
+"In Chat Window, you can <action>save</action> a conversation. This is a copy of "
+"the internal XHTML page displayed. Use it in <application>"
+"Konqueror</application> to test your <acronym>CSS</acronym> files."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:126
+#, no-c-format
+msgid "-Disable style cache."
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:127
+#, no-c-format
+msgid ""
+"A little configuration switch exist to disable the style cache. When enabled, "
+"it reload the HTML templates each time the style is asked. Add the following "
+"lines to your <filename>kopeterc</filename>. Very useful when testing a style "
+"in &kopete;"
+msgstr ""
+
+#. Tag: programlisting
+#: chatstyle.docbook:128
+#, no-c-format
+msgid ""
+"[KopeteStyleDebug]\n"
+"disableStyleCache=true"
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:135
+#, no-c-format
+msgid "Keywords reference"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:136
+#, no-c-format
+msgid ""
+"Keywords are likes holes to fill with details. On each new message, they are "
+"replaced with the correct value corresponding to their context. To fully "
+"support all features of Kopete, we added some keywords extensions to the Adium. "
+"Also some keywords are only available in certain context."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:138
+#, no-c-format
+msgid "Keywords list for Header and Footer templates."
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:139
+#, no-c-format
+msgid "There keywords are processed at the beginning of the chat."
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:140
+#, no-c-format
+msgid "%chatName%"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:142
+#, no-c-format
+msgid ""
+"This is the name of the current chat session. For a typical session, it display "
+"the name of the contact and his status. For <acronym>IRC</acronym>"
+", it display the topic of a channel."
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:148
+#, no-c-format
+msgid "%sourceName%"
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:149
+#, no-c-format
+msgid "%destinationName%"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:151
+#, no-c-format
+msgid ""
+"These are the name of the contacts for a chatsession. <filename>"
+"%sourceName%</filename> is your name. <filename>%destinationName%</filename> "
+"is the name of the contact you are chatting with. Prefer <filename>"
+"%chatName%</filename> over those, because they could be confusing for groupchat "
+"and IRC."
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:157
+#, no-c-format
+msgid "%incomingIconPath%"
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:158
+#, no-c-format
+msgid "%outgoingIconPath%"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:160
+#, no-c-format
+msgid ""
+"These are the image/photo/avatar of the contacts for a chatsession. Incoming "
+"represent the contact photo and Outgoing represent your own photo. If they are "
+"no photo available, it use <filename>buddy_icon.png</filename> "
+"image which is located in <filename>Incoming</filename> or <filename>"
+"Outgoing</filename> directory."
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:166
+#, no-c-format
+msgid "%timeOpened%"
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:167
+#, no-c-format
+msgid "%timeOpened{X}%"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:169
+#, no-c-format
+msgid ""
+"It is the time when the chat session begin. <filename>%timeOpened%</filename> "
+"use the default time format for the current locale. If you want to use a "
+"specific time format, use <filename>%timeOpened{X}%</filename> "
+"where X is a string containing the time format. The time parameters are the "
+"same as the glibc function <function>strftime</function>. Do <command>"
+"man strftime</command> to get the list of available parameters."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:177
+#, no-c-format
+msgid ""
+"Keywords list for Content, NextContent, Context, NextContext, Action template"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:178
+#, no-c-format
+msgid "There keywords are processed for each message."
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:180
+#, no-c-format
+msgid "%userIconPath%"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:182
+#, no-c-format
+msgid ""
+"This is the image/photo/avatar of the contact associated with the message. If "
+"they are no photo available, it use <filename>buddy_icon.png</filename> "
+"image which is located in <filename>Incoming</filename> and <filename>"
+"Outgoing</filename> directory depending of the message direction."
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:188
+#, no-c-format
+msgid "%senderScreenName%"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:190
+#, no-c-format
+msgid ""
+"This is the contact ID of the contact associated with the message. Examples: "
+"me@hotmail.com, 45566576, JohnSmith."
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:196
+#, no-c-format
+msgid "%sender%"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:198
+#, no-c-format
+msgid ""
+"This is the name of the contact associated with the message. It use MetaContact "
+"display name as a source."
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:204
+#, no-c-format
+msgid "%service%"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:206
+#, no-c-format
+msgid ""
+"Display the name of the service associated with the message. Examples: Jabber, "
+"Yahoo, MSN."
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:212
+#, no-c-format
+msgid "%textbackgroundcolor{X}%"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:214
+#, no-c-format
+msgid ""
+"In &kopete;, this keyword is used to represent the highlight background color. "
+"Ignore parameter in the braces and only use it as <filename>"
+"%textbackgroundcolor{}</filename>."
+msgstr ""
+
+#. Tag: term
+#: chatstyle.docbook:220
+#, no-c-format
+msgid "<filename>%senderStatusIcon%</filename> (&kopete; extension)"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:222
+#, no-c-format
+msgid ""
+"Display the status icon of the contact associated with the message. It's a file "
+"path."
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:228
+#, no-c-format
+msgid "%senderColor%"
+msgstr ""
+
+#. Tag: term
+#: chatstyle.docbook:228
+#, no-c-format
+msgid "<filename>%senderColor{N}%</filename> (&kopete; extension)"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:230
+#, no-c-format
+msgid ""
+"Generate a color from the sender contact id. Can be used to display a different "
+"color for contact nickname."
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:233
+#, no-c-format
+msgid ""
+"<filename>%senderColor{N}%</filename> where N is a positive number. If N is "
+"greater than 100, it represent a lighter color than the contact's color. If N "
+"equal 150 it is a color which is 50% brighter. If N is less than 100 then it is "
+"a darker color. Useful for having a background colored differently for each "
+"contact."
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:237
+#, no-c-format
+msgid ""
+"If you want to use theses colors in a variant, but not in the main style, you "
+"have to workaround. <programlisting>\n"
+"<![CDATA[\n"
+"<div style=\"color:%senderColor%;border:none;border-color:%senderColor{40}%;\">"
+"<p class=\"message\">...</p></div>\n"
+"]]>\n"
+"</programlisting> you can apply color to the p.message element in your "
+"<filename>main.css</filename> file, and in your variant put something like"
+msgstr ""
+
+#. Tag: programlisting
+#: chatstyle.docbook:241
+#, no-c-format
+msgid "p.message { color:inherit; border-color:inherit; }"
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:249
+#, no-c-format
+msgid "Keyword list common for messages and Status.html"
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:251
+#, no-c-format
+msgid "%message%"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:253
+#, no-c-format
+msgid "The message itself. This is a HTML fragment."
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:259
+#, no-c-format
+msgid "%time%"
+msgstr ""
+
+#. Tag: filename
+#: chatstyle.docbook:260
+#, no-c-format
+msgid "%time{X}%"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:262
+#, no-c-format
+msgid ""
+"The time when the message was received. <filename>%time%</filename> "
+"use the default time format for the current locale. If you want to use a "
+"specific time format, use <filename>%time{X}%</filename> "
+"where X is a string containing the time format. The time parameters are the "
+"same as the glibc function <function>strftime</function>. Do <command>"
+"man strftime</command> to get the list of available parameters."
+msgstr ""
+
+#. Tag: term
+#: chatstyle.docbook:268
+#, no-c-format
+msgid "<filename>%messageDirection%</filename> (&kopete; Extension)"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:270
+#, no-c-format
+msgid ""
+"Represent the message direction, if the message must be displayed right-to-left "
+"or left-to-right. The values are either \"rtl\" or \"ltr\". Read <link "
+"linkend=\"chatstyle-guideline-direction\">Message Direction guideline</link> "
+"to see how to use this keyword properly."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:281
+#, no-c-format
+msgid "&kopete; Chat Window Style Guideline"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:282
+#, no-c-format
+msgid ""
+"The &kopete; Chat Window Style Guideline is a set of things that your Chat "
+"Window style must support to be compliant with Kopete."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:284
+#, no-c-format
+msgid "Support highlight"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:285
+#, no-c-format
+msgid ""
+"Your style must show highlight. In Kopete and Adium, the <filename>"
+"%textbackgroundcolor{}%</filename> is replaced with the highlight color. Add "
+"this style attribute: <userinput>background-color: "
+"%textbackgroundcolor{}%</userinput> to the HTML element that display the "
+"message."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:288
+#, no-c-format
+msgid "Consecutive message templates are required."
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:289
+#, no-c-format
+msgid ""
+"This guideline is for people rewriting old XSL styles to the new format. All "
+"styles must supply a template for consecutive messages. It is now a default "
+"feature."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:293
+#, no-c-format
+msgid "Use <acronym>UTF-8</acronym> encoding."
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:294
+#, no-c-format
+msgid ""
+"The title said it all. You must save your files to <acronym>UTF-8</acronym>."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:298
+#, no-c-format
+msgid ""
+"Supply <filename>Contents/Info.plist</filename> for interopability with Adium"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:299
+#, no-c-format
+msgid ""
+"The <filename>Contents/Info.plist</filename> file is not used in Kopete yet. "
+"But if you want your style to be compatible with <application>"
+"Adium</application>, you must supply that file. Here a basic example file. "
+"Strings to replace are enclosed with \"$\"."
+msgstr ""
+
+#. Tag: programlisting
+#: chatstyle.docbook:300
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+"<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" "
+"\"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n"
+"<plist version=\"1.0\">\n"
+"<dict>\n"
+"        <key>CFBundleDevelopmentRegion</key>\n"
+"        <string>English</string>\n"
+"        <key>CFBundleGetInfoString</key>\n"
+"        <string>$Your style full name$</string>\n"
+"        <key>CFBundleIdentifier</key>\n"
+"        <string>$Your style ID in the form: "
+"com.adiumx.smooth.operator.style$</string>\n"
+"        <key>CFBundleInfoDictionaryVersion</key>\n"
+"        <string>1.0</string>\n"
+"        <key>CFBundleName</key>\n"
+"        <string>$Your style name here$</string>\n"
+"        <key>CFBundlePackageType</key>\n"
+"        <string>AdIM</string>\n"
+"        <key>MessageViewVersion</key>\n"
+"        <integer>3</integer>\n"
+"</dict>\n"
+"</plist>\n"
+"]]>"
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:305
+#, no-c-format
+msgid "Supply <filename>buddy_icon.png</filename>"
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:306
+#, no-c-format
+msgid ""
+"You must place a file named <filename>buddy_icon.png</filename> "
+"in the <filename>Incoming</filename> and <filename>Outgoing</filename>"
+". These images will be used when the contact have no photo."
+msgstr ""
+
+#. Tag: title
+#: chatstyle.docbook:310
+#, no-c-format
+msgid ""
+"Support right-to-left languages with <filename>%messageDirection%</filename> "
+"keyword."
+msgstr ""
+
+#. Tag: para
+#: chatstyle.docbook:311
+#, no-c-format
+msgid ""
+"<filename>%messageDirection%</filename> keyword is present for languages in the "
+"world that write right-to-left. It define the message direction, if it is "
+"\"rtl\" (right-to-left) or \"ltr\" (left-to-right). Add this style attribute to "
+"the HTML element that display the message: <userinput>"
+"direction: %messageDirection%</userinput>. Style preview in appearance config "
+"include a right-to-left to check if your style display it correctly. It should "
+"begin the string from the right."
+msgstr ""

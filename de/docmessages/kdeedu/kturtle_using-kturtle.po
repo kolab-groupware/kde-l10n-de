@@ -1,0 +1,1369 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2004, 2005, 2006, 2008, 2009, 2010, 2011, 2013.
+# Stephan Johach <hunsum@gmx.de>, 2004, 2005.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: kturtle_using-kturtle\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: 2013-05-19 12:04+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: using-kturtle.docbook:2
+#, no-c-format
+msgid "Using &kturtle;"
+msgstr "Arbeiten mit &kturtle;"
+
+#. Tag: screeninfo
+#: using-kturtle.docbook:5
+#, no-c-format
+msgid "Here is a screenshot of &kturtle; in action"
+msgstr "Dies ist ein Bildschirmfoto von &kturtle; in Aktion"
+
+#. Tag: phrase
+#: using-kturtle.docbook:11
+#, no-c-format
+msgid "&kturtle; Main Window"
+msgstr "Das Hauptfenster von &kturtle; "
+
+#. Tag: para
+#: using-kturtle.docbook:16
+#, no-c-format
+msgid ""
+"The main window of &kturtle; has three main parts: <link linkend=\"the-editor"
+"\">the editor</link> (1) on the left where you type the &turtlescript; "
+"commands, the <link linkend=\"the-canvas\">the canvas</link> (2) on the "
+"right where the turtle make your drawing, and the <link linkend=\"the-"
+"inspector\">inspector</link> (3) which gives you information when your "
+"program executes. Besides these you find <link linkend=\"the-menubar\">the "
+"menu bar</link> (5) from where all the actions can be reached, <link linkend="
+"\"the-toolbar\">the toolbar</link> (4) that allows you to quickly select the "
+"most used actions, the <guilabel>Console</guilabel>, that you can use to "
+"enter a one line command to test it, and <link linkend=\"the-statusbar\">the "
+"statusbar</link> (along the bottom of the window) where you will find "
+"feedback on the state of &kturtle;."
+msgstr ""
+"Das Hauptfenster von &kturtle; besteht aus drei Teilen: dem <link linkend="
+"\"the-editor\">Editor</link> (1) auf der linken Seite, wo Sie die "
+"&turtlescript;-Befehle eingeben, der <link linkend=\"the-canvas"
+"\">Zeichenfläche</link> (2) in der Mitte, auf der die Schildkröte zeichnet, "
+"und dem <link linkend=\"the-inspector\">Kontrollfenster</link> (3) mit "
+"Informationen über die Variablen während der Programmausführung. Außerdem "
+"gibt es die <link linkend=\"the-menubar\">Menüleiste</link> (5), in der Sie "
+"alle Befehle erreichen können, die <link linkend=\"the-toolbar"
+"\">Werkzeugleiste</link> (4) für den direkten Zugriff auf häufig gebrauchte "
+"Befehle, die Konsole, in der Sie einen einzelnen Befehl eingeben und testen "
+"können  und die <link linkend=\"the-statusbar\">Statusleiste</link>, wo Sie "
+"den Zustand von &kturtle; sehen können."
+
+#. Tag: title
+#: using-kturtle.docbook:19
+#, no-c-format
+msgid "The Editor"
+msgstr "Der Editor"
+
+#. Tag: para
+#: using-kturtle.docbook:20
+#, no-c-format
+msgid ""
+"In the editor you type the &turtlescript; commands. Most of functions of the "
+"editor can be found in the <link linkend=\"the-file-menu\">File</link> and "
+"<link linkend=\"the-edit-menu\">Edit</link> menus. The editor can be docked "
+"on each border of the main window or it can be detached and placed anywhere "
+"on your desktop."
+msgstr ""
+"Im Editor geben Sie die &turtlescript;-Befehle ein. Die meisten Funktionen "
+"finden Sie in den Menüeinträgen <link linkend=\"the-edit-menu\">Bearbeiten</"
+"link>. Der Editor kann auf jeder Seite des Hauptfensters oder losgelöst vom "
+"Hauptfenster irgendwo auf Ihrer Arbeitsfläche angeordnet werden."
+
+#. Tag: para
+#: using-kturtle.docbook:21
+#, no-c-format
+msgid ""
+"You have several ways to get some code in the editor. The easiest way is to "
+"use an example: choose <menuchoice><guimenu>File</"
+"guimenu><guisubmenu>Examples</guisubmenu></menuchoice> in the <link linkend="
+"\"the-file-menu\">File menu</link> and select an example. The file example "
+"you choose will be opened in the <link linkend=\"the-editor\">the editor</"
+"link>, you can then use <menuchoice><guimenu>Run</guimenu><guimenuitem>Run</"
+"guimenuitem></menuchoice> from the menubar or the <guibutton>Run</guibutton> "
+"from the toolbar to run the code if you like."
+msgstr ""
+"Es gibt mehrere Möglichkeiten, Quelltext im Editor zu erstellen. Am "
+"einfachsten ist es, ein Beispiel zu laden: Wählen Sie mit  "
+"<menuchoice><guimenu>Datei</guimenu><guisubmenu>Beispiele</guisubmenu></"
+"menuchoice> im <link linkend=\"the-file-menu\">Menü Datei</link> ein "
+"Beispiel aus. Die ausgewählte Datei wird im <link linkend=\"the-editor"
+"\">Editor</link> geöffnet, dann können Sie mit "
+"<menuchoice><guimenu>Ausführen</guimenu><guimenuitem>Ausführen</"
+"guimenuitem></menuchoice> in der Menüleiste oder <guibutton>Ausführen</"
+"guibutton> in der Werkzeugleiste das Programm starten."
+
+#. Tag: para
+#: using-kturtle.docbook:22
+#, no-c-format
+msgid ""
+"You can open &turtlescript; files by choosing <menuchoice><guimenu>File</"
+"guimenu><guimenuitem>Open...</guimenuitem></menuchoice>."
+msgstr ""
+"Sie können &turtlescript;-Dateien mit <menuchoice><guimenu>Datei</"
+"guimenu><guimenuitem>Öffnen ...</guimenuitem> </menuchoice> einfügen."
+
+#. Tag: para
+#: using-kturtle.docbook:23
+#, no-c-format
+msgid ""
+"The third way is to directly type your own code in the editor or to copy/"
+"paste some code."
+msgstr ""
+"Als dritte Möglichkeit können Sie den eigenen Quelltext direkt im Editor "
+"eingeben oder &ie; aus diesem Handbuch kopieren und einfügen."
+
+#. Tag: title
+#: using-kturtle.docbook:28
+#, no-c-format
+msgid "The Canvas"
+msgstr "Die Zeichenfläche"
+
+#. Tag: para
+#: using-kturtle.docbook:29
+#, no-c-format
+msgid ""
+"The canvas is the domain of the turtle, here the turtle draws according to "
+"the commands it gets. After getting some code in the <link linkend=\"the-"
+"editor\">Editor</link> and executing it, two things can happen: either the "
+"code executes fine, and will you most likely see something change on the "
+"canvas; or you have made an error in your code in that case the error tab "
+"will appear explaining you what mistake you made."
+msgstr ""
+"Die Zeichenfläche ist der Bereich, wo die Schildkröte die Ausgaben der "
+"Befehle zeichnet. Nach der Eingabe des Quelltextes im <link linkend=\"the-"
+"editor\">Editor</link> und der Ausführung kann folgendes passieren: Entweder "
+"der Quelltext wird fehlerfrei ausgeführt und Sie sehen dann Änderungen auf "
+"der Zeichenfläche oder Sie haben einen Fehler im Quelltext und es erscheint "
+"ein Fenster, das Ihnen die Art des Fehlers meldet."
+
+#. Tag: para
+#: using-kturtle.docbook:30
+#, no-c-format
+msgid "You can zoom in and out the canvas with your mouse wheel."
+msgstr ""
+"Mit dem Mausrad können Sie die den Ausschnitt der Zeichenfläche vergrößern "
+"oder verkleinern."
+
+#. Tag: title
+#: using-kturtle.docbook:35
+#, no-c-format
+msgid "The Inspector"
+msgstr "Das Kontrollfenster"
+
+#. Tag: para
+#: using-kturtle.docbook:36
+#, no-c-format
+msgid ""
+"The inspector informs you about the variables, the learned functions and "
+"show the code tree while the program is running."
+msgstr ""
+"Im Kontrollfenster finden Sie während der Programmausführung Informationen "
+"über die Variablen, die gelernten Funktionen und den Quelltextbaum."
+
+#. Tag: para
+#: using-kturtle.docbook:37
+#, no-c-format
+msgid ""
+"The inspector can be docked on each border of the main window or it can be "
+"detached and placed anywhere on your desktop."
+msgstr ""
+"Das Kontrollfenster können Sie an jeder Seite des Hauptfenster oder "
+"freischwebend auf Ihrem Bildschirm anordnen."
+
+#. Tag: title
+#: using-kturtle.docbook:42
+#, no-c-format
+msgid "The Toolbar"
+msgstr "Die Werkzeugleiste"
+
+#. Tag: para
+#: using-kturtle.docbook:43
+#, no-c-format
+msgid ""
+"Here you can quickly reach the most used actions. The Toolbar also contains "
+"the <guilabel>Console</guilabel> where you can quickly invoke commands, this "
+"might be useful in case you want to test a command without modifying the "
+"content of the <link linkend=\"the-editor\">Editor</link>."
+msgstr ""
+"Hier können Sie schnell die am häufigsten gebrauchten Aktionen erreichen. "
+"Die Werkzeugleiste enthält außerdem die das Feld <guilabel>Konsole</"
+"guilabel>, mit dem Sie schnell Befehle zum Testen ausführen können, ohne den "
+"Text im <link linkend=\"the-editor\">Editor</link> zu verändern."
+
+#. Tag: para
+#: using-kturtle.docbook:44
+#, no-c-format
+msgid ""
+"You can configure the toolbar using <menuchoice><guimenu>Settings</"
+"guimenu><guimenuitem>Configure Toolbars...</guimenuitem></menuchoice> to "
+"better fit your preferences."
+msgstr ""
+"Die Werkzeugleiste können Sie mit <menuchoice><guimenu>Einstellungen</"
+"guimenu><guimenuitem>Werkzeugleisten einrichten ...</guimenuitem></"
+"menuchoice> an Ihre Bedürfnisse anpassen."
+
+#. Tag: title
+#: using-kturtle.docbook:49
+#, no-c-format
+msgid "The Menubar"
+msgstr "Die Menüleiste"
+
+#. Tag: para
+#: using-kturtle.docbook:50
+#, no-c-format
+msgid ""
+"In the menubar you find all the actions of &kturtle;. They are in the "
+"following groups: <guimenu>File</guimenu>, <guimenu>Edit</guimenu>, "
+"<guimenu>Canvas</guimenu>, <guimenu>Run</guimenu>, <guimenu>Tools</guimenu>, "
+"<guimenu>Settings</guimenu>, and <guimenu>Help</guimenu>. This section "
+"describes them all."
+msgstr ""
+"In der Menüleiste finden Sie alle Befehle für &kturtle; in folgenden "
+"Gruppen: <guimenu>Datei</guimenu>, <guimenu>Bearbeiten</guimenu>, "
+"<guimenu>Zeichenfläche</guimenu>, <guimenu>Ausführen</guimenu>, "
+"<guimenu>Extras</guimenu>, <guimenu>Einstellungen</guimenu> und "
+"<guimenu>Hilfe</guimenu>. Dieser Abschnitt beschreibt alle Menüeinträge."
+
+#. Tag: title
+#: using-kturtle.docbook:53
+#, no-c-format
+msgid "The <guimenu>File</guimenu> Menu"
+msgstr "Das Menü <guimenu>Datei</guimenu>"
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:58
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>N</keycap></keycombo> </shortcut> "
+"<guimenu>File</guimenu> <guimenuitem>New</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo>&Ctrl;<keycap>N</keycap></keycombo> </shortcut> "
+"<guimenu>Datei</guimenu> <guimenuitem>Neu</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:65
+#, no-c-format
+msgid "Creates a new, empty &turtlescript; file."
+msgstr "Erstellt eine neue leere &turtlescript;-Datei."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:71
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>O</keycap></keycombo> </shortcut> "
+"<guimenu>File</guimenu> <guimenuitem>Open...</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo></"
+"shortcut><guimenu>Datei</guimenu><guimenuitem>Öffnen ...</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:78
+#, no-c-format
+msgid "Opens a &turtlescript; file."
+msgstr "Öffnet eine &turtlescript;-Datei."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:84
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guisubmenu>Open Recent</guisubmenu>"
+msgstr ""
+"<guimenu>Datei</guimenu> <guisubmenu>Zuletzt geöffnete Dateien</guisubmenu>"
+
+#. Tag: para
+#: using-kturtle.docbook:88
+#, no-c-format
+msgid "Opens a &turtlescript; file that has been opened recently."
+msgstr "Öffnet eine der zuletzt geöffneten &turtlescript;-Dateien."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:94
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guisubmenu>Examples</guisubmenu>"
+msgstr "<guimenu>Datei</guimenu> <guisubmenu>Beispiele</guisubmenu>"
+
+#. Tag: para
+#: using-kturtle.docbook:98
+#, no-c-format
+msgid ""
+"Open example &turtlescript; programs. The examples are in your favorite "
+"language that you can choose in <menuchoice><guimenu>Settings</"
+"guimenu><guisubmenu>Script Language</guisubmenu></menuchoice>."
+msgstr ""
+"Öffnet die &turtlescript;-Beispielprogramme. Die Beispiele sind in der "
+"Sprache übersetzt, die Sie mit <menuchoice><guimenu>Einstellungen</"
+"guimenu><guisubmenu>Skript-Sprache</guisubmenu></menuchoice> ausgewählt "
+"haben."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:104
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Get more examples...</guimenuitem>"
+msgstr ""
+"<guimenu>Datei</guimenu> <guimenuitem>Weitere Beispiele herunterladen ...</"
+"guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:108
+#, no-c-format
+msgid ""
+"Open the get <guilabel>Hot New Stuff</guilabel> dialog to download "
+"additional &turtlescript; files from the Internet."
+msgstr ""
+"Öffnet den Dialog <guilabel>„Neue Erweiterungen“ herunterladen</guilabel>, "
+"um zusätzliche &turtlescript;-Dateien aus dem Internet zu holen."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:116
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>S</keycap></keycombo> </shortcut> "
+"<guimenu>File</guimenu> <guimenuitem>Save</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo>&Ctrl;<keycap> S</keycap></keycombo></shortcut> "
+"<guimenu>Datei</guimenu><guimenuitem>Speichern</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:123
+#, no-c-format
+msgid "Saves the currently opened &turtlescript; file."
+msgstr "Speichert die gerade geöffnete &turtlescript;-Datei."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:129
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Save As...</guimenuitem>"
+msgstr ""
+"<guimenu>Datei</guimenu> <guimenuitem>Speichern unter ...</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:133
+#, no-c-format
+msgid "Saves the currently opened &turtlescript; file on a specified location."
+msgstr ""
+"Speichert die gerade geöffnete &turtlescript;-Datei in einem bestimmten "
+"Ordner."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:139
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Export to HTML...</guimenuitem>"
+msgstr ""
+"<guimenu>Datei</guimenu> <guimenuitem>Als HTML exportieren ...</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:143
+#, no-c-format
+msgid ""
+"Exports the current content of the Editor as an HTML file that includes "
+"highlighting colors."
+msgstr ""
+"Exportiert den aktuellen Inhalt des Editors als HTML-Datei mit den farbigen "
+"Hervorhebungen."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:149
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>P</keycap></keycombo> </shortcut> "
+"<guimenu>File</guimenu> <guimenuitem>Print...</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>P</keycap></keycombo></"
+"shortcut> <guimenu>Datei</guimenu><guimenuitem>Drucken ...</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:156
+#, no-c-format
+msgid "Prints the current code in the editor."
+msgstr "Druckt den aktuellen Quelltext im Editor."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:162
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>Q</keycap></keycombo> </shortcut> "
+"<guimenu>File</guimenu> <guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> </"
+"shortcut><guimenu>Datei</guimenu><guimenuitem>Beenden</guimenuitem> "
+
+#. Tag: para
+#: using-kturtle.docbook:169
+#, no-c-format
+msgid "Quits &kturtle;."
+msgstr "Beendet &kturtle;."
+
+#. Tag: title
+#: using-kturtle.docbook:175
+#, no-c-format
+msgid "The <guimenu>Edit</guimenu> Menu"
+msgstr "Das Menü <guimenu>Bearbeiten</guimenu>"
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:179
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>Z</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap></keycombo></"
+"shortcut> <guimenu>Bearbeiten</guimenu> <guimenuitem>Rückgängig</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:186
+#, no-c-format
+msgid "Undoes the last change to code. &kturtle; has unlimited undos."
+msgstr ""
+"Macht die letzte Änderung des Quelltextes wieder rückgängig. Die Anzahl "
+"dieser Rückgängig-Schritte in &kturtle; ist nicht begrenzt."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:192
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;&Shift;<keycap>Z</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Redo</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap></keycombo></"
+"shortcut> <guimenu>Bearbeiten</guimenu> <guimenuitem>Rückgängig</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:199
+#, no-c-format
+msgid "Redoes an undone change to the code."
+msgstr "Nimmt das letzte Rückgängig wieder zurück."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:205
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>X</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Cut</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>X</keycap></keycombo></"
+"shortcut> <guimenu>Bearbeiten</guimenu> <guimenuitem>Ausschneiden</"
+"guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:212
+#, no-c-format
+msgid ""
+"Cuts the selected text from <link linkend=\"the-editor\">the editor</link> "
+"to the clipboard."
+msgstr ""
+"Schneidet den gewählten Text aus dem <link linkend=\"the-editor\">Editor</"
+"link> aus und fügt ihn in die Zwischenablage ein."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:218
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>C</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Copy</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>C</keycap></keycombo> </"
+"shortcut> <guimenu>Bearbeiten</guimenu><guimenuitem>Kopieren</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:225
+#, no-c-format
+msgid ""
+"Copies the selected text from <link linkend=\"the-editor\">the editor</link> "
+"to the clipboard."
+msgstr ""
+"Kopiert den gewählten Text aus dem <link linkend=\"the-editor\">Editor</"
+"link> in die Zwischenablage."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:231
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>V</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Paste</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>V</keycap></keycombo> </"
+"shortcut> <guimenu>Bearbeiten</guimenu><guimenuitem>Einfügen</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:238
+#, no-c-format
+msgid ""
+"Pastes the text from the clipboard to <link linkend=\"the-editor\">the "
+"editor</link>."
+msgstr ""
+"Fügt den Text aus der Zwischenablage in den <link linkend=\"the-editor"
+"\">Editor</link> ein."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:244
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>A</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Select All</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>A</keycap></keycombo> </"
+"shortcut> <guimenu>Bearbeiten</guimenu><guimenuitem>Alles auswählen</"
+"guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:251
+#, no-c-format
+msgid ""
+"Selects all the text from <link linkend=\"the-editor\">the editor</link>."
+msgstr ""
+"Wählt den gesamten Text im <link linkend=\"the-editor\">Editor</link> aus."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:257
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>F</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Find...</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo>&Ctrl;<keycap>F</keycap></keycombo> </shortcut> "
+"<guimenu>Bearbeiten</guimenu> <guimenuitem>Suchen ...</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:264
+#, no-c-format
+msgid "With this action you can find phrases in the code."
+msgstr "Mit diesem Befehl können Sie Textpassagen im Quelltext suchen."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:270
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo><keysym>F3</keysym></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Find Next</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo><keysym>F3</keysym></keycombo> </shortcut> "
+"<guimenu>Bearbeiten</guimenu> <guimenuitem>Weitersuchen</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:277
+#, no-c-format
+msgid "Use this to find the next occurrence of the phrase you searched for."
+msgstr "Geht zum nächsten Auftreten des zuletzt gesuchten Textes."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:283
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Shift;<keysym>F3</keysym></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Find Previous</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo>&Shift;<keysym>F3</keysym></keycombo> </shortcut> "
+"<guimenu>Bearbeiten</guimenu> <guimenuitem>Frühere suchen</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:290
+#, no-c-format
+msgid ""
+"Use this to find the previous occurrence of the phrase you searched for."
+msgstr "Geht zum vorherigen Auftreten des zuletzt gesuchten Textes."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:309
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo><keycap>Ins</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Overwrite Mode</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo><keycap>Einf</keycap></keycombo></shortcut> "
+"<guimenu>Bearbeiten</guimenu> <guimenuitem>Überschreiben-Modus</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:316
+#, no-c-format
+msgid "Toggle between the 'insert' and 'overwrite' mode."
+msgstr "Schaltet im Editor zwischen Einfügen und Überschreiben um."
+
+#. Tag: title
+#: using-kturtle.docbook:323
+#, no-c-format
+msgid "The <guimenu>Canvas</guimenu> Menu"
+msgstr "Das Menü <guimenu>Zeichenfläche</guimenu>"
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:327
+#, no-c-format
+msgid ""
+"<guimenu>Canvas</guimenu> <guimenuitem>Export to Image (PNG)...</guimenuitem>"
+msgstr ""
+"<guimenu>Zeichenfläche</guimenu> <guimenuitem>Als Bild (PNG) exportieren ..."
+"</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:331
+#, no-c-format
+msgid ""
+"Exports the current content of the <link linkend=\"the-canvas\">Canvas</"
+"link> as a raster image of the PNG (Portable Network Graphics) type."
+msgstr ""
+"Exportiert den aktuellen Inhalt der <link linkend=\"the-canvas"
+"\">Zeichenfläche</link> als Rasterbild im Format PNG (Portable Network "
+"Graphics)."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:337
+#, no-c-format
+msgid ""
+"<guimenu>Canvas</guimenu> <guimenuitem>Export to Drawing (SVG)...</"
+"guimenuitem>"
+msgstr ""
+"<guimenu>Zeichenfläche</guimenu> <guimenuitem>Als Zeichnung (SVG) "
+"exportieren ...</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:341
+#, no-c-format
+msgid ""
+"Exports the current content of the <link linkend=\"the-canvas\">Canvas</"
+"link> as a vector drawing of the SVG (Scalable Vector Graphics) type."
+msgstr ""
+"Exportiert den aktuellen Inhalt der <link linkend=\"the-canvas"
+"\">Zeichenfläche</link> als Vektorzeichnung im Format SVG (Scalable Vector "
+"Graphics)."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:347
+#, no-c-format
+msgid "<guimenu>Canvas</guimenu> <guimenuitem>Print Canvas...</guimenuitem>"
+msgstr ""
+"<guimenu>Zeichenfläche</guimenu> <guimenuitem>Zeichenfläche drucken ...</"
+"guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:351
+#, no-c-format
+msgid ""
+"Prints the current content of the <link linkend=\"the-canvas\">Canvas</link>."
+msgstr ""
+"Druckt den aktuellen Inhalt der <link linkend=\"the-canvas\">Zeichenfläche</"
+"link>."
+
+#. Tag: title
+#: using-kturtle.docbook:357
+#, no-c-format
+msgid "The <guimenu>Run</guimenu> Menu"
+msgstr "Das Menü <guimenu>Ausführen</guimenu>"
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:361
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo><keysym>F5</keysym></keycombo> </shortcut> "
+"<guimenu>Run</guimenu> <guimenuitem>Run</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo><keysym>F5</keysym></keycombo> </shortcut> "
+"<guimenu>Ausführen</guimenu> <guimenuitem>Ausführen</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:368
+#, no-c-format
+msgid "Starts the execution of the commands in the editor."
+msgstr "Startet die Ausführung der Befehle im Editor."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:374
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo><keysym>F6</keysym></keycombo> </shortcut> "
+"<guimenu>Run</guimenu> <guimenuitem>Pause</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo><keysym>F6</keysym></keycombo> </shortcut> "
+"<guimenu>Ausführen</guimenu> <guimenuitem>Pause</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:381
+#, no-c-format
+msgid ""
+"Pauses the execution. This action is only enabled when the commands are "
+"actually executing."
+msgstr ""
+"Hält die Ausführung an. Diesen Menüeintrag können Sie nur auswählen, wenn "
+"gerade Befehle ausgeführt werden."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:387
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo><keysym>F7</keysym></keycombo> </shortcut> "
+"<guimenu>Run</guimenu> <guimenuitem>Abort</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo><keysym>F7</keysym></keycombo> </shortcut> "
+"<guimenu>Ausführen</guimenu> <guimenuitem>Abbrechen</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:394
+#, no-c-format
+msgid ""
+"Stops the execution. This action is only enabled when the commands are "
+"actually executing."
+msgstr ""
+"Bricht die Ausführung ab. Diesen Menüeintrag können Sie nur auswählen, wenn "
+"gerade Befehle ausgeführt werden."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:400
+#, no-c-format
+msgid "<guimenu>Run</guimenu> <guisubmenu>Run Speed</guisubmenu>"
+msgstr ""
+"<guimenu>Ausführen</guimenu> <guisubmenu>Bewegungs-Geschwindigkeit</"
+"guisubmenu>"
+
+#. Tag: para
+#: using-kturtle.docbook:404
+#, no-c-format
+msgid ""
+"Present a list of possible execution speeds, consisting of: "
+"<guimenuitem>Full Speed (no highlighting and inspector)</guimenuitem>, "
+"<guimenuitem>Full Speed</guimenuitem>, <guimenuitem>Slow</guimenuitem>, "
+"<guimenuitem>Slower</guimenuitem>, <guimenuitem>Slowest</guimenuitem> and "
+"<guimenuitem>Step-by-Step</guimenuitem>. When the execution speed is set to "
+"<guimenuitem>Full Speed</guimenuitem> (default) we can barely keep up with "
+"what is happening. Sometimes this behavior is wanted, but sometimes we want "
+"to keep track of the execution. In the latter case you want to set the "
+"execution speed to <guimenuitem>Slow</guimenuitem>, <guimenuitem>Slower</"
+"guimenuitem> or <guimenuitem>Slowest</guimenuitem>. When one of the slow "
+"modes is selected the current position of the executor will be shown in the "
+"editor. <guimenuitem>Step-by-Step</guimenuitem> will execute one command at "
+"a time."
+msgstr ""
+"Enthält eine Liste mit unterschiedlichen Ausführungsgeschwindigkeiten: "
+"<guimenuitem>Volle Geschwindigkeit</guimenuitem>, <guimenuitem>Volle "
+"Geschwindigkeit (keine Hervorhebung und Kontrollfenster)</guimenuitem>, "
+"<guimenuitem>Langsam</guimenuitem>, <guimenuitem>Langsamer</guimenuitem>, "
+"<guimenuitem>Am Langsamsten</guimenuitem>, <guimenuitem>Schritt-für-Schritt</"
+"guimenuitem>. Wenn die Ausführungsgeschwindigkeit auf <guimenuitem>Volle "
+"Geschwindigkeit</guimenuitem> (Standard) eingestellt ist, können Sie kaum "
+"verfolgen, was passiert. Manchmal ist dieses Verhalten gewollt, aber "
+"manchmal möchten Sie die Ausführung verfolgen können. In diesen Fällen "
+"setzen Sie die Ausführungsgeschwindigkeit auf <guimenuitem>Langsam</"
+"guimenuitem>, <guimenuitem>Langsamer</guimenuitem> oder <guimenuitem>Am "
+"Langsamsten</guimenuitem>, dann wird auch die aktuelle Position der "
+"Ausführung im Quelltexteditor angezeigt. Mit <guimenuitem>Schritt-für-"
+"Schritt</guimenuitem> können Sie die Befehle einzeln ausführen."
+
+#. Tag: title
+#: using-kturtle.docbook:412
+#, no-c-format
+msgid "The <guimenu>Tools</guimenu> Menu"
+msgstr "Das Menü <guimenu>Extras</guimenu>"
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:416
+#, no-c-format
+msgid ""
+"<guimenu>Tools</guimenu> <guimenuitem>Direction Chooser...</guimenuitem>"
+msgstr ""
+"<guimenu>Extras</guimenu> <guimenuitem>Richtungsauswahl ...</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:420
+#, no-c-format
+msgid "This action opens the direction chooser dialog."
+msgstr "Öffnet den Dialog zur Richtungsauswahl."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:426
+#, no-c-format
+msgid "<guimenu>Tools</guimenu> <guimenuitem>Color Picker...</guimenuitem>"
+msgstr "<guimenu>Extras</guimenu> <guimenuitem>Farbauswahl ...</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:430
+#, no-c-format
+msgid "This action opens the color picker dialog."
+msgstr "Öffnet den Dialog zur Farbauswahl."
+
+#. Tag: title
+#: using-kturtle.docbook:436
+#, no-c-format
+msgid "The <guimenu>Settings</guimenu> Menu"
+msgstr "Das Menü <guimenu>Einstellungen</guimenu>"
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:440
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guisubmenu>Script Language</guisubmenu>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guisubmenu>Skript-Sprache</guisubmenu>"
+
+#. Tag: para
+#: using-kturtle.docbook:441
+#, no-c-format
+msgid "<action>Choose</action> the language for the code."
+msgstr "<action>Wählen</action> Sie hier die Sprache für den Quelltext aus."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:447
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>E</keycap></keycombo> </shortcut> "
+"<guimenu>Settings</guimenu> <guimenuitem>Show Editor</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo>&Ctrl;<keycap>E</keycap></keycombo> </shortcut> "
+"<guimenu>Einstellungen</guimenu> <guimenuitem>Quelltexteditor anzeigen</"
+"guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:454
+#, no-c-format
+msgid "Show or hide the <link linkend=\"the-editor\">Editor</link>."
+msgstr ""
+"Zeigt den <link linkend=\"the-editor\">Editor</link> an oder blendet ihn aus."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:460
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>I</keycap></keycombo> </shortcut> "
+"<guimenu>Settings</guimenu> <guimenuitem>Show Inspector</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo>&Ctrl;<keycap> I</keycap></keycombo></shortcut> "
+"<guimenu>Einstellungen</guimenu><guimenuitem>Kontrollfenster anzeigen</"
+"guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:467
+#, no-c-format
+msgid "Show or hide <link linkend=\"the-inspector\">the inspector</link>."
+msgstr ""
+"Zeigt das <link linkend=\"the-inspector\">Kontrollfenster</link> an oder "
+"blendet es aus."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:473
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Errors</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guimenuitem>Fehler anzeigen</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:477
+#, no-c-format
+msgid ""
+"Show or hide the <guilabel>Error</guilabel> tab with a list of errors "
+"resulting from running the code. If this option is enabled, click on "
+"<guilabel>Canvas</guilabel> to see the turtle again."
+msgstr ""
+"Schaltet die Anzeige des <guilabel>Fehler</guilabel>fensters mit einer Liste "
+"aller Fehler des aktuellen Quelltextes ein oder aus. Ist das Fehlerfenster "
+"eingeblendet, klicken Sie auf <guilabel>Zeichenfläche</guilabel>, um die "
+"Schildkröte wieder zu sehen."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:483
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo><keysym>F11</keysym></keycombo> </shortcut> "
+"<guimenu>Settings</guimenu> <guimenuitem>Show Line Numbers</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo><keysym>F11</keysym></keycombo> </shortcut> "
+"<guimenu>Einstellungen</guimenu> <guimenuitem>Zeilennummern anzeigen</"
+"guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:490
+#, no-c-format
+msgid ""
+"With this action you can show the line numbers in <link linkend=\"the-editor"
+"\">the editor</link>. This can be handy for finding errors."
+msgstr ""
+"Mir diesem Befehl werden im <link linkend=\"the-editor\">Editor</link> "
+"Zeilennummern angezeigt. Das erleichtert die Fehlersuche."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:496
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Show Toolbar</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guimenuitem>Werkzeugleiste anzeigen</"
+"guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:497
+#, no-c-format
+msgid "<action>Toggle</action> the Main Toolbar"
+msgstr "<action>Zeigt</action> die Werkzeugleiste an bzw. blendet sie aus"
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:503
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Show Statusbar</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guimenuitem>Statusleiste anzeigen</"
+"guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:504
+#, no-c-format
+msgid "<action>Toggle</action> the Statusbar"
+msgstr "<action>Zeigt</action> die Statusleiste an bzw. blendet sie aus"
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:510
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Configure Shortcuts...</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guimenuitem>Kurzbefehle festlegen ...</"
+"guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:514
+#, no-c-format
+msgid "Standard &kde; dialog to configure the shortcuts."
+msgstr "Öffnet den &kde;-Standarddialog zur Einstellung der Kurzbefehle."
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:520
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Configure Toolbars...</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guimenuitem>Werkzeugleisten einrichten ..."
+"</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:524
+#, no-c-format
+msgid "The standard &kde; dialog for configuring the toolbars."
+msgstr ""
+"Öffnet den &kde;-Standarddialog zur Einrichtung der Symbole in den "
+"Werkzeugleisten."
+
+#. Tag: title
+#: using-kturtle.docbook:530
+#, no-c-format
+msgid "The <guimenu>Help</guimenu> Menu"
+msgstr "Das Menü <guimenu>Hilfe</guimenu>"
+
+#. Tag: sect2
+#: using-kturtle.docbook:530
+#, no-c-format
+msgid "&help.menu.documentation;"
+msgstr "&help.menu.documentation;"
+
+#. Tag: menuchoice
+#: using-kturtle.docbook:535
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo><keysym>F2</keysym></keycombo> </shortcut> "
+"<guimenu>Help</guimenu> <guimenuitem>Help on: ...</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo><keysym>F2</keysym></keycombo> </shortcut> "
+"<guimenu>Hilfe</guimenu> <guimenuitem>Hilfe zu: ...</guimenuitem>"
+
+#. Tag: para
+#: using-kturtle.docbook:542
+#, no-c-format
+msgid ""
+"This is a very useful function: it provides help on the code where the "
+"cursor in the editor is at. So, &eg;, you have used the <userinput>print</"
+"userinput> command in your code, and you want to read and to know what the "
+"handbook says on this command. You just move your cursor so it is in the "
+"<userinput>print</userinput> command and you press <keysym>F2</keysym>. The "
+"handbook will then show all info on the <userinput>print</userinput> command."
+msgstr ""
+"Dies ist eine sehr hilfreiche Funktion, sie zeigt Hilfe zum Quelltext, in "
+"dem der Cursor gerade steht. Wenn Sie &eg; den Befehl <userinput>drucke</"
+"userinput> in Ihrem Quelltext benutzen und die Hilfe zu diesem Befehl lesen "
+"möchten, bewegen Sie den Cursor in diesen Befehl <userinput>drucke</"
+"userinput> und drücken <keysym>F2</keysym>. Das Handbuch zeigt Ihnen dann "
+"alle Informationen zum Befehl <userinput>drucke</userinput>. "
+
+#. Tag: para
+#: using-kturtle.docbook:543
+#, no-c-format
+msgid "This function can prove to be useful while learning &turtlescript;."
+msgstr ""
+"Diese Funktion ist in der Lernphase des Programmierens mit &turtlescript; "
+"sehr hilfreich."
+
+#. Tag: title
+#: using-kturtle.docbook:552
+#, no-c-format
+msgid "The Statusbar"
+msgstr "Die Statusleiste"
+
+#. Tag: para
+#: using-kturtle.docbook:553
+#, no-c-format
+msgid ""
+"On the status bar you get feedback of the state of &kturtle;. On the left "
+"side it shows the feedback on the last action. On the right side you find "
+"the current location of the cursor (line and column numbers). In the middle "
+"of the status bar is indicated the current language used for the commands."
+msgstr ""
+"In der Statusleiste sehen Sie Informationen über den Zustand von &kturtle;. "
+"Auf der linken Seite wird das Ergebnis des letzten Befehls gezeigt. Auf der "
+"rechten Seite sehen Sie die aktuelle Position des Cursors (Zeilen- und "
+"Spaltennummer). In der Mitte der Statusleiste wird die aktuell eingestellte "
+"Sprache für die Befehle angezeigt."
+
+#~ msgid ""
+#~ "The cursor position is indicated in <link linkend=\"the-statusbar\">the "
+#~ "statusbar</link>, on the right with the Line number and Column number."
+#~ msgstr ""
+#~ "Die Cursorposition wird auf der rechten Seite der <link linkend=\"the-"
+#~ "statusbar\">Statusleiste</link> mit Zeilen- und Spaltennummer angezeigt."
+
+#~ msgid "This message should help you to resolve the error."
+#~ msgstr "Mit Hilfe dieser Meldung sollten Sie den Fehler beseitigen können."
+
+#~ msgid ""
+#~ "<guimenu>File</guimenu> <guimenuitem>Save as Picture...</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Datei</guimenu> <guimenuitem>Als Bild speichern ...</guimenuitem>"
+
+#~ msgid "Save the current canvas as a picture."
+#~ msgstr "Speichert die aktuelle Zeichnung als Bild."
+
+#~ msgid "The <guimenu>View</guimenu> Menu"
+#~ msgstr "Das Menü <guimenu>Ansicht</guimenu>"
+
+#~ msgid "Show or hide the Code Editor."
+#~ msgstr "Zeigt den Quelltexteditor an oder blendet ihn aus."
+
+#~ msgid "Show or hide the Inspector."
+#~ msgstr "Zeigt das Kontrollfenster an oder blendet es aus."
+
+#~ msgid "<guimenu>View</guimenu> <guimenuitem>Show Errors</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Ansicht</guimenu> <guimenuitem>Fehler anzeigen</guimenuitem>"
+
+#~ msgid ""
+#~ "Here you can quickly reach the most used actions. By default, you will "
+#~ "find here all main useful commands ending with the <guiicon>Run</"
+#~ "guiicon>, <guiicon>Pause</guiicon> and <guiicon>Abort</guiicon> icons. "
+#~ "The last item at the end of the toolbar is the <guilabel>Console</"
+#~ "guilabel>, that you can use to enter a one line command and test it."
+#~ msgstr ""
+#~ "Hier können Sie die oft gebrauchten Befehle leicht erreichen. In der "
+#~ "Standardeinstellung finden Sie hier die wichtigsten Befehle "
+#~ "einschließlich <guiicon>Ausführen</guiicon>, <guiicon>Pause</guiicon> und "
+#~ "<guiicon>Abbrechen</guiicon>. Rechts am Ende der Werkzeugleiste befindet "
+#~ "sich die <guilabel>Konsole</guilabel>, damit können Sie einen einzelnen "
+#~ "Befehl eingeben und testen."
+
+#~ msgid "<guimenu>View</guimenu> <guimenuitem>Show Inspector</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Ansicht</guimenu> <guimenuitem>Kontrollfenster anzeigen</"
+#~ "guimenuitem>"
+
+#~ msgid ""
+#~ "<shortcut> <keycombo><keysym>F1</keysym></keycombo> </shortcut> "
+#~ "<guimenu>Help</guimenu> <guimenuitem>&kturtle; Handbook</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo><keysym>F1</keysym></keycombo> </shortcut> "
+#~ "<guimenu>Hilfe</guimenu> <guimenuitem>Handbuch zu &kturtle;</guimenuitem>"
+
+#~ msgid "This action shows the handbook that you are currently reading."
+#~ msgstr "Dieser Befehl zeigt das Handbuch an, das Sie gerade lesen."
+
+#~ msgid ""
+#~ "<shortcut> <keycombo>&Shift;<keysym>F1</keysym></keycombo> </shortcut> "
+#~ "<guimenu>Help</guimenu> <guimenuitem>What's This?</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo>&Shift;<keysym>F1</keysym></keycombo> </shortcut> "
+#~ "<guimenu>Hilfe</guimenu> <guimenuitem>Was ist das?</guimenuitem>"
+
+#~ msgid ""
+#~ "After activating this action the mouse arrow will be changed into a "
+#~ "<quote>question mark arrow</quote>. When this arrow is used to click on "
+#~ "parts of &kturtle; main window, a description of the particular part pops-"
+#~ "up."
+#~ msgstr ""
+#~ "Nach der Auswahl dieses Befehls wird der Mauszeiger zu einem "
+#~ "<quote>Fragezeichen</quote>. Wenn Sie mit diesem Mauszeiger auf Teile des "
+#~ "Hauptfensters von &kturtle; klicken, sehen Sie eine Beschreibung zu "
+#~ "diesen ausgewählten Bereichen."
+
+#~ msgid ""
+#~ "Use this to report a problem with &kturtle; to the developers. These "
+#~ "reports can be used to make future versions of &kturtle; even better."
+#~ msgstr ""
+#~ "Mit diesem Befehl können Sie einen Fehlerbericht über &kturtle; an die "
+#~ "Entwickler schicken. Diese Berichte helfen, die zukünftigen Versionen von "
+#~ "&kturtle; zu verbessern."
+
+#~ msgid "<guimenu>Help</guimenu> <guimenuitem>About &kturtle;</guimenuitem>"
+#~ msgstr "<guimenu>Hilfe</guimenu> <guimenuitem>Über &kturtle;</guimenuitem>"
+
+#~ msgid ""
+#~ "Here you find information on &kturtle;, like the authors and the license "
+#~ "it comes with."
+#~ msgstr ""
+#~ "Hier finden Sie Informationen über &kturtle;, wie &eg; über den Autor und "
+#~ "die Lizenz des Programms."
+
+#~ msgid "<guimenu>Help</guimenu> <guimenuitem>About &kde;</guimenuitem>"
+#~ msgstr "<guimenu>Hilfe</guimenu> <guimenuitem>Über &kde;</guimenuitem>"
+
+#~ msgid ""
+#~ "Here you can find information on &kde;. If you do not know yet what &kde; "
+#~ "is, this is a place you should not miss."
+#~ msgstr ""
+#~ "Zeigt Ihnen Informationen über &kde;. Wenn Sie nicht wissen, was &kde; "
+#~ "ist, sollten Sie sich unbedingt dort informieren."
+
+#~ msgid ""
+#~ "Prints either the current code in the editor or the current drawing on "
+#~ "the canvas."
+#~ msgstr "Druckt entweder den aktuellen Quelltext oder die Zeichnung."
+
+#~ msgid "<title>New</title>"
+#~ msgstr "<title>Neu</title>"
+
+#~ msgid "Open"
+#~ msgstr "Öffnen ..."
+
+#~ msgid "Open Recent"
+#~ msgstr "Zuletzt geöffnete Dateien"
+
+#~ msgid "Save"
+#~ msgstr "Speichern"
+
+#~ msgid "Save As"
+#~ msgstr "Speichern unter ..."
+
+#, fuzzy
+#~| msgid "Open Examples"
+#~ msgid "Try Examples"
+#~ msgstr "Beispiele öffnen"
+
+#~ msgid "Execution Speed"
+#~ msgstr "Ausführungsgeschwindigkeit"
+
+#~ msgid "<title>Run</title>"
+#~ msgstr "<title>Ausführen</title>"
+
+#~ msgid "Pause"
+#~ msgstr "Pause"
+
+#~ msgid "Abort"
+#~ msgstr "Abbrechen"
+
+#~ msgid "Print"
+#~ msgstr "Drucken"
+
+#~ msgid "Quit"
+#~ msgstr "Beenden"
+
+#~ msgid ""
+#~ "<shortcut> <keycombo>&Alt;<keycap>C</keycap></keycombo> </shortcut> "
+#~ "<guimenu>Tools</guimenu> <guimenuitem>Direction Chooser</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Extras</guimenu> <guimenuitem>Richtungsauswahl</guimenuitem>"
+
+#~ msgid ""
+#~ "<shortcut> <keycombo><keysym>Pause</keysym></keycombo> </shortcut> "
+#~ "<guimenu>File</guimenu> <guimenuitem>Pause Execution</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo><keysym>Pause</keysym></keycombo> </shortcut> "
+#~ "<guimenu>Datei</guimenu> <guimenuitem>Ausführung anhalten</guimenuitem>"
+
+#~ msgid "Stop"
+#~ msgstr "Stop"
+
+#~ msgid ""
+#~ "<shortcut> <keycombo><keysym>Escape</keysym></keycombo> </shortcut> "
+#~ "<guimenu>File</guimenu> <guimenuitem>Stop Execution</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo><keysym>Escape</keysym></keycombo> </shortcut> "
+#~ "<guimenu>Datei</guimenu> <guimenuitem>Ausführung anhalten</guimenuitem>"
+
+#~ msgid ""
+#~ "<shortcut> <keycombo>&Ctrl;<keycap>R</keycap></keycombo> </shortcut> "
+#~ "<guimenu>Edit</guimenu> <guimenuitem>Replace...</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo>&Ctrl;<keycap>R</keycap></keycombo> </shortcut> "
+#~ "<guimenu>Bearbeiten</guimenu> <guimenuitem>Ersetzen ...</guimenuitem>"
+
+#~ msgid "With this action you can replace phrases in the code."
+#~ msgstr "Mit diesem Befehl ersetzen Sie Textpassagen im Quelltext."
+
+#~ msgid ""
+#~ "<shortcut> <keycombo>&Ctrl;&Shift;<keycap>F</keycap></keycombo> </"
+#~ "shortcut> <guimenu>View</guimenu> <guimenuitem>Full Screen Mode</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo>&Ctrl;&Shift;<keycap>F</keycap></keycombo> </"
+#~ "shortcut> <guimenu>Ansicht</guimenu> <guimenuitem>Vollbildmodus</"
+#~ "guimenuitem>"
+
+#~ msgid "With this action you toggle the full screen mode."
+#~ msgstr "Mit diesem Befehl schalten Sie in den Vollbildmodus um."
+
+#~ msgid ""
+#~ "Note: When code is executed while in full screen mode everything but the "
+#~ "canvas is hidden. This makes it possible to write <quote>full screen</"
+#~ "quote> programs in &kturtle;."
+#~ msgstr ""
+#~ "Achtung: Wenn Quelltext im Vollbildmodus ausgeführt wird, ist alles außer "
+#~ "der Zeichenfläche nicht sichtbar. So können Sie Programme in &kturtle; "
+#~ "schreiben, die als <quote>Vollbild</quote> ausgeführt werden."
+
+#~ msgid ""
+#~ "This action opens the color picker. Using the color picker you can easily "
+#~ "select a <glossterm linkend=\"rgb\">color code</glossterm> and insert it "
+#~ "in <link linkend=\"the-code-editor\">the code editor</link>."
+#~ msgstr ""
+#~ "Dieser Befehl öffnet die Farbwahl. damit können Sie leicht einen "
+#~ "<glossterm linkend=\"rgb\">Farbcode</glossterm> auswählen und ihn in den "
+#~ "<link linkend=\"the-code-editor\">Quelltexteditor</link> einfügen."
+
+#~ msgid ""
+#~ "<shortcut> <keycombo>&Ctrl;<keycap>I</keycap></keycombo> </shortcut> "
+#~ "<guimenu>Tools</guimenu> <guimenuitem>Indent</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo>&Ctrl;<keycap>I</keycap></keycombo> </shortcut> "
+#~ "<guimenu>Extras</guimenu> <guimenuitem>Einrücken</guimenuitem>"
+
+#~ msgid ""
+#~ "This action <quote>indents</quote> (adds white space at the beginning of) "
+#~ "the lines that are selected. When <quote>indentation</quote> is used "
+#~ "properly this can make code much easier to read. All examples use "
+#~ "indentation, please check them out."
+#~ msgstr ""
+#~ "Dieser Befehl <quote>rückt</quote> die ausgewählten Zeilen ein (fügt "
+#~ "Leerzeichen am Anfang ein). Mit <quote>Einrücken</quote> ist der "
+#~ "Quelltext viel leichter zu lesen. In allen Beispiele werden Zeilen "
+#~ "eingerückt."
+
+#~ msgid ""
+#~ "<shortcut> <keycombo>&Ctrl;&Shift;<keycap>I</keycap></keycombo> </"
+#~ "shortcut> <guimenu>Tools</guimenu> <guimenuitem>Unindent</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo>&Ctrl;&Shift;<keycap>I</keycap></keycombo> </"
+#~ "shortcut> <guimenu>Extras</guimenu> <guimenuitem>Einrücken rückgängig</"
+#~ "guimenuitem>"
+
+#~ msgid ""
+#~ "This action <quote>unindents</quote> (removes the white space at the "
+#~ "beginning of) the lines that are selected."
+#~ msgstr ""
+#~ "Dieser Befehl macht die letzte <quote>Einrückung</quote> wieder "
+#~ "rückgängig und entfernt Leerzeichen am Anfang der ausgewählten Zeilen."
+
+#~ msgid ""
+#~ "<guimenu>Tools</guimenu> <guimenuitem>Clean Indentation</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Extras</guimenu> <guimenuitem>Einrückung säubern</guimenuitem>"
+
+#~ msgid ""
+#~ "This action cleans <quote>indentation</quote> (removes all the white "
+#~ "space at the beginning of) the lines that are selected."
+#~ msgstr ""
+#~ "Dieser Befehl löscht die <quote>Einrückung</quote> (entfernt alle "
+#~ "Leerzeichen) bis zum am Anfang der ausgewählten Zeilen."
+
+#~ msgid ""
+#~ "<shortcut> <keycombo>&Ctrl;<keycap>D</keycap></keycombo> </shortcut> "
+#~ "<guimenu>Tools</guimenu> <guimenuitem>Comment</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo>&Ctrl;<keycap>D</keycap></keycombo> </shortcut> "
+#~ "<guimenu>Extras</guimenu> <guimenuitem>Kommentar</guimenuitem>"
+
+#~ msgid ""
+#~ "This action add comment characters (#) in from of the lines that are "
+#~ "selected. Lines that start with a comment character are ignored when the "
+#~ "code is executed. Comments allow the programmer to explain a bit about "
+#~ "his code or they can be used to temporarily prevent a certain piece of "
+#~ "code from being executed."
+#~ msgstr ""
+#~ "Dieser Befehl fügt ein Kommentarzeichen (#) am Anfang der ausgewählten "
+#~ "Zeilen ein. Zeilen, die mit einem Kommentarzeichen beginnen, werden bei "
+#~ "der Ausführung des Quelltextes ausgelassen. Mit Kommentaren können "
+#~ "Programmierer ihren Quelltext erläutern oder damit zeitweise die "
+#~ "Ausführung von Teilen des Quelltextes verhindern."
+
+#~ msgid ""
+#~ "<shortcut> <keycombo>&Ctrl;&Shift;<keycap>D</keycap></keycombo> </"
+#~ "shortcut> <guimenu>Tools</guimenu> <guimenuitem>Uncomment</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo>&Ctrl;&Shift;<keycap>D</keycap></keycombo> </"
+#~ "shortcut> <guimenu>Extras</guimenu> <guimenuitem>Kommentar entfernen</"
+#~ "guimenuitem>"
+
+#~ msgid "This action removes the comment characters from the selected lines."
+#~ msgstr ""
+#~ "Dieser Befehl entfernt das Kommentarzeichen in den ausgewählten Zeilen."
+
+#~ msgid ""
+#~ "<guimenu>Settings</guimenu> <guisubmenu>Advanced Settings</guisubmenu>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu> <guisubmenu>Erweiterte Einstellungen</"
+#~ "guisubmenu>"
+
+#~ msgid ""
+#~ "Here you can change things you normally do not need to change. The "
+#~ "<guisubmenu>Advanced Settings</guisubmenu> submenu has three items: "
+#~ "<guimenuitem>Configure Editor...</guimenuitem> (the standard &kate; "
+#~ "editor settings dialog), <guimenuitem>Configure Shortcuts...</"
+#~ "guimenuitem> (the standard &kde; shortcut settings dialog), and "
+#~ "<guimenuitem>Configure Toolbars...</guimenuitem> (the standard &kde; "
+#~ "toolbars setting dialog)."
+#~ msgstr ""
+#~ "Hier können Sie selten gebrauchte Einstellungen ändern. Das Untermenü "
+#~ "<guisubmenu>Erweiterte Einstellungen</guisubmenu> hat drei Einträge: "
+#~ "<guimenuitem>Editor einrichten ...</guimenuitem> (der Standard &kate;-"
+#~ "Einstellungsdialog), <guimenuitem>Kurzbefehle festlegen ...</guimenuitem> "
+#~ "(der Standard &kde;-Dialog für die Tastenkürzel) und "
+#~ "<guimenuitem>Werkzeugleisten einrichten ...</guimenuitem> (der Standard "
+#~ "&kde;-Dialog für die Werkzeugleiste)."
+
+#~ msgid ""
+#~ "This is used to configure &kturtle;. Here you can change the language of "
+#~ "the &logo; commands or set a new initial canvas size."
+#~ msgstr ""
+#~ "Hier richten Sie &kturtle; ein. Sie können die Sprache für die &logo;-"
+#~ "Befehle oder die Anfangsgröße der Zeichenfläche einstellen."
+
+#~ msgid ""
+#~ "The picture that is drawn can be saved as an image (using "
+#~ "<menuchoice><guimenu>File</guimenu><guimenuitem>Save Canvas</guimenuitem> "
+#~ "</menuchoice>) or printed (using <menuchoice><guimenu>File</"
+#~ "guimenu><guimenuitem>Print...</guimenuitem> </menuchoice>)."
+#~ msgstr ""
+#~ "Das gezeichnete Bild können Sie mit <menuchoice> <guimenu>Datei</"
+#~ "guimenu><guimenuitem>Zeichenfläche speichern</guimenuitem> </menuchoice> "
+#~ "speichern oder mit <menuchoice><guimenu>Datei</guimenu> "
+#~ "<guimenuitem>Drucken ...</guimenuitem> </menuchoice> ausdrucken."
+
+#~ msgid ""
+#~ "<shortcut> <keycombo>&Ctrl;<keycap>E</keycap></keycombo> </shortcut> "
+#~ "<guimenu>File</guimenu> <guimenuitem>Open Examples</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo>&Ctrl;<keycap>E</keycap></keycombo> </shortcut> "
+#~ "<guimenu>Datei</guimenu> <guimenuitem>Beispiele öffnen ...</guimenuitem>"
+
+#~ msgid "Save Canvas"
+#~ msgstr "Zeichenfläche speichern ..."
+
+#~ msgid "Execute"
+#~ msgstr "Ausführen"
+
+#~ msgid ""
+#~ "<shortcut> <keycombo>&Alt;<keysym>Return</keysym></keycombo> </shortcut> "
+#~ "<guimenu>File</guimenu> <guimenuitem>Execute Commands</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo>&Alt;<keysym>Eingabe</keysym></keycombo> </shortcut> "
+#~ "<guimenu>Datei</guimenu> <guimenuitem>Befehle ausführen</guimenuitem>"

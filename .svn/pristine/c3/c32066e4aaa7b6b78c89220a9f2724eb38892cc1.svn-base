@@ -1,0 +1,251 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2010, 2012, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-desktop_tools_man-plasmapkg.1\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: 2014-02-10 13:07+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: branches/KDE/4.5/kdebase/workspace/doc/plasma-desktop/"
+"tools/man-plasmapkg.1.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 1192760\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: man-plasmapkg.1.docbook:8
+#, no-c-format
+msgid "KDE User's Manual"
+msgstr "KDE-Benutzerhandbuch"
+
+#. Tag: date
+#: man-plasmapkg.1.docbook:9
+#, no-c-format
+msgid "2012-12-05"
+msgstr "2012-12-05"
+
+#. Tag: productname
+#: man-plasmapkg.1.docbook:10
+#, no-c-format
+msgid "K Desktop Environment"
+msgstr "K Desktop Environment"
+
+#. Tag: manvolnum
+#: man-plasmapkg.1.docbook:15
+#, no-c-format
+msgid "<manvolnum>1</manvolnum>"
+msgstr "<manvolnum>1</manvolnum>"
+
+#. Tag: refpurpose
+#: man-plasmapkg.1.docbook:20
+#, no-c-format
+msgid "Install, list, remove Plasma packages"
+msgstr "Installieren, Auflisten und Entfernen von Plasma-Paketen"
+
+#. Tag: cmdsynopsis
+#: man-plasmapkg.1.docbook:24
+#, no-c-format
+msgid ""
+"<command>plasmapkg</command> <group choice=\"opt\"><option>-h, --hash</"
+"option> <replaceable> path</replaceable></group> <group choice=\"opt"
+"\"><option>-g, --global</option></group> <group choice=\"opt\"><option>-t, --"
+"type</option> <replaceable> type</replaceable></group> <group choice=\"opt"
+"\"><option>-i, --install</option> <replaceable> path</replaceable></group> "
+"<group choice=\"opt\"><option>-u, --upgrade</option> <replaceable> path</"
+"replaceable></group> <group choice=\"opt\"><option>-l, --list</option></"
+"group> <group choice=\"opt\"><option>--list-types</option></group> <group "
+"choice=\"opt\"><option>-r, --remove</option> <replaceable> name</"
+"replaceable></group> <group choice=\"opt\"><option>-p, --packageroot</"
+"option> <replaceable> path</replaceable></group> <arg choice=\"opt\">KDE "
+"Generic Options</arg> <arg choice=\"opt\">Qt Generic Options</arg>"
+msgstr ""
+"<command>plasmapkg</command> <group choice=\"opt\"><option>-h, --hash</"
+"option> <replaceable> path</replaceable></group> <group choice=\"opt"
+"\"><option>-g, --global</option></group> <group choice=\"opt\"><option>-t, --"
+"type</option> <replaceable> type</replaceable></group> <group choice=\"opt"
+"\"><option>-i, --install</option> <replaceable> path</replaceable></group> "
+"<group choice=\"opt\"><option>-u, --upgrade</option> <replaceable> path</"
+"replaceable></group> <group choice=\"opt\"><option>-l, --list</option></"
+"group> <group choice=\"opt\"><option>--list-types</option></group> <group "
+"choice=\"opt\"><option>-r, --remove</option> <replaceable> name</"
+"replaceable></group> <group choice=\"opt\"><option>-p, --packageroot</"
+"option> <replaceable> path</replaceable></group> <arg choice=\"opt"
+"\">Allgemeine KDE-Optionen</arg> <arg choice=\"opt\">Allgemeine Qt-Optionen</"
+"arg>"
+
+#. Tag: title
+#: man-plasmapkg.1.docbook:42
+#, no-c-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. Tag: para
+#: man-plasmapkg.1.docbook:43
+#, no-c-format
+msgid ""
+"<command>plasmapkg</command> is a command line tool to install, list, remove "
+"Plasma packages."
+msgstr ""
+"<command>plasmapkg</command> ist ein Befehlszeilenprogramm zum Installieren, "
+"Auflisten und Entfernen von Plasma-Paketen."
+
+#. Tag: title
+#: man-plasmapkg.1.docbook:49
+#, no-c-format
+msgid "Options"
+msgstr "Optionen"
+
+#. Tag: term
+#: man-plasmapkg.1.docbook:53
+#, no-c-format
+msgid "<option>-h, --hash</option> <replaceable> path</replaceable>"
+msgstr "<option>-h, --hash</option> <replaceable> path</replaceable>"
+
+#. Tag: para
+#: man-plasmapkg.1.docbook:54
+#, no-c-format
+msgid "Generate a SHA1 hash for the package at <quote>path</quote>."
+msgstr "SHA1-Hash für das Paket in <quote>path</quote> generieren."
+
+#. Tag: option
+#: man-plasmapkg.1.docbook:57
+#, no-c-format
+msgid "-g, --global"
+msgstr "-g, --global"
+
+#. Tag: para
+#: man-plasmapkg.1.docbook:58
+#, no-c-format
+msgid "For install or remove, operates on packages installed for all users."
+msgstr ""
+"Zum Installieren oder Entfernen, beeinflusst Plasma-Pakete für alle Benutzer."
+
+#. Tag: term
+#: man-plasmapkg.1.docbook:61
+#, no-c-format
+msgid "<option>-t, --type</option> <replaceable> type</replaceable>"
+msgstr "<option>-t, --type</option> <replaceable> type</replaceable>"
+
+#. Tag: para
+#: man-plasmapkg.1.docbook:62
+#, no-c-format
+msgid ""
+"The type of package, &eg; theme, wallpaper, plasmoid, dataengine, runner, "
+"layout-template, &etc; [plasmoid]."
+msgstr ""
+"Der Pakettyp, &eg; Design, Hintergrundbild, Plasmoid, Datenquelle, Starter, "
+"Layout-Vorlage &etc;[Plasmoid]."
+
+#. Tag: term
+#: man-plasmapkg.1.docbook:65
+#, no-c-format
+msgid "<option>-i, --install</option> <replaceable> path</replaceable>"
+msgstr "<option>-i, --install</option> <replaceable> path</replaceable>"
+
+#. Tag: para
+#: man-plasmapkg.1.docbook:66
+#, no-c-format
+msgid "Install the package at <quote>path</quote>."
+msgstr "Paket in <quote>path</quote> installieren."
+
+#. Tag: term
+#: man-plasmapkg.1.docbook:69
+#, no-c-format
+msgid "<option>-u, --upgrade</option> <replaceable> path</replaceable>"
+msgstr "<option>-u, --upgrade</option> <replaceable> path</replaceable>"
+
+#. Tag: para
+#: man-plasmapkg.1.docbook:70
+#, no-c-format
+msgid "Upgrade the package at <quote>path</quote>."
+msgstr "Paket von <quote>path</quote> aktualisieren."
+
+#. Tag: option
+#: man-plasmapkg.1.docbook:73
+#, no-c-format
+msgid "-l, --list"
+msgstr "-l, --list"
+
+#. Tag: para
+#: man-plasmapkg.1.docbook:74
+#, no-c-format
+msgid "List installed packages."
+msgstr "Installierte Pakete anzeigen."
+
+#. Tag: term
+#: man-plasmapkg.1.docbook:77
+#, no-c-format
+msgid "<option>-r, --remove</option> <replaceable> name</replaceable>"
+msgstr "<option>-r, --remove</option> <replaceable> name</replaceable>"
+
+#. Tag: para
+#: man-plasmapkg.1.docbook:78
+#, no-c-format
+msgid "Remove the package named <quote>name</quote>."
+msgstr "Paket namens <quote>name</quote> entfernen."
+
+#. Tag: term
+#: man-plasmapkg.1.docbook:81
+#, no-c-format
+msgid "<option>-p, --packageroot</option> <replaceable> path</replaceable>"
+msgstr "<option>-p, --packageroot</option> <replaceable> path</replaceable>"
+
+#. Tag: para
+#: man-plasmapkg.1.docbook:82
+#, no-c-format
+msgid ""
+"Absolute path to the package root. If not supplied, then the standard data "
+"directories for this &kde; session will be searched instead."
+msgstr ""
+"Absoluter Pfad zum Paket. Falls nicht angegeben, werden die Standard-"
+"Datenpfade dieser &kde;-Sitzung durchsucht."
+
+#. Tag: title
+#: man-plasmapkg.1.docbook:91
+#, no-c-format
+msgid "See Also"
+msgstr "Siehe auch"
+
+#. Tag: para
+#: man-plasmapkg.1.docbook:93
+#, no-c-format
+msgid ""
+"More detailed user documentation is available from <ulink url=\"help:/plasma-"
+"desktop\">help:/plasma-desktop</ulink> (either enter this <acronym>URL</"
+"acronym> into &konqueror;, or run <userinput><command>khelpcenter</command> "
+"<parameter>help:/plasma-desktop</parameter></userinput>)."
+msgstr ""
+"Weitere ausführliche Dokumentation finden Sie unter <ulink url=\"help:/"
+"plasma-desktop\">help:/plasma-desktop</ulink> (geben Sie diese <acronym>URL</"
+"acronym> entweder im &konqueror; ein oder starten Sie "
+"<userinput><command>khelpcenter</command> <parameter>help:/plasma-desktop</"
+"parameter></userinput>)."
+
+#. Tag: title
+#: man-plasmapkg.1.docbook:102
+#, no-c-format
+msgid "Authors"
+msgstr "Autor"
+
+#. Tag: para
+#: man-plasmapkg.1.docbook:103
+#, no-c-format
+msgid ""
+"<command>plasmapkg</command> was written by <personname><firstname>Aaron</"
+"firstname><surname>Seigo</surname></personname> <email>aseigo@kde.org</"
+"email>."
+msgstr ""
+"<command>plasmapkg</command> wurde von <personname><firstname>Aaron</"
+"firstname><surname>Seigo</surname></personname> <email>aseigo@kde.org</"
+"email> geschrieben."
+
+#~ msgid "2010-10-22"
+#~ msgstr "2010-10-22"
+
+#~ msgid "plasmapkg"
+#~ msgstr "plasmapkg"

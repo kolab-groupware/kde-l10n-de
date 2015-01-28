@@ -1,0 +1,580 @@
+#! /bin/bash
+# kate: space-indent on; indent-width 2; replace-tabs on;
+
+# This script is run from kde-common/makemessages - not useful outside of it
+
+# Note to developers:
+#  there are not many comments in this code to avoid to slow down the code
+#  So please look also in the svn log to have comments about the code
+
+umask 022
+
+extract_desktop() {
+  perl ./scripts/createdesktopcontext.pl --file-list=./$1 --base-dir=$2 > desktop.$$.tmp
+  dest=$3
+  msguniq --to-code=UTF-8 -o desktop.$$ desktop.$$.tmp 2>/dev/null
+  if test -f desktop.$$; then
+    if test ! -f  $dest; then 
+      echo "File $dest is missing!" 
+      mv desktop.$$ $dest
+    elif diff -q -I^\"POT-Creation-Date: desktop.$$ $dest > /dev/null; then
+      rm -f desktop.$$
+      touch $dest
+    else
+      mv desktop.$$ $dest
+    fi
+  fi
+  rm -f desktop.$$ desktop.$$.tmp
+}
+
+postprocess_pot_file()
+{
+# $1: name of the file to process
+  mv $1 $1.orig
+  # sed -e 's,^"Content-Type: text/plain; charset=CHARSET\\n"$,"Content-Type: text/plain; charset=UTF-8\\n", ; s,"Content-Transfer-Encoding: ENCODING\\n","Content-Transfer-Encoding: 8bit\\n", ; s,"Language-Team: LANGUAGE <LL@li.org>\\n","Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\\n",' < $1.orig > $1
+  sed -e 's,^"Content-Type: text/plain; charset=CHARSET\\n"$,"Content-Type: text/plain; charset=UTF-8\\n", ; s,"Language-Team: LANGUAGE <LL@li.org>\\n","Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\\n",' < $1.orig > $1
+  rm -f $1.orig
+}
+
+pot_files_diff()
+{
+# $1 and $2 are the two .pot files to compare
+# We do not check: Content-Type, Content-Transfer-Encoding, POT-Creation-Date Language-Team
+  diff -q -I^\"POT-Creation-Date: -I^\"Content-T -I^\"Language-Team: $1 $2 > /dev/null
+}
+
+update_translations() {
+  echo "@@@ Processing branch $transmod ..."
+  test -z "$TIMING1" || date
+
+  if [ "x$DOOCBOOK_LOCATION" = "x" ]; then
+    DOCBOOK_LOCATION=/usr/share/xml/docbook/schema/dtd/4.2/
+  fi
+
+  if [ "x$DOOCBOOKXSL_LOCATION" = "x" ]; then
+    DOCBOOKXSL_LOCATION=/usr/share/xml/docbook/stylesheet/nwalsh/
+  fi
+
+  for i in qt $releases l10n; do
+    vcs=`get_vcs $i`
+    if test -n "$NOUPDATE"; then
+      if test "$vcs" = git; then
+        branch=`get_branch $i`
+        i=`get_path $i`
+        if ! (cd $i && git reset $SVNQUIETFLAG --hard origin/$branch); then
+          echo "ERROR: failed to switch to $branch in $i"
+        fi
+      fi
+      continue
+    fi
+    test -z "$VERBOSE1" || echo "updating $i"
+  
+    modname=$i
+    i=`get_path $i`
+    if test ! -d $i; then
+      case "$vcs" in
+        svn)
+          mkdir -p $i
+          svn co -q $SVNROOT/$i $i || echo "ERROR: checking out $i has failed!"
+          ;;
+        git)
+          git clone -v --no-checkout $SVNQUIETFLAG `get_url $modname` $i || echo "ERROR: checking out $i has failed!"
+          ;;
+        *)
+          echo "ERROR: unexpected VCS type?!"
+          exit 1
+          ;;
+      esac
+    fi
+  
+    if cd $i; then
+      if test "$vcs" = "git"; then
+        # cleanup the old branches
+        git remote prune origin || echo "ERROR: pruning $i has failed!"
+        git fetch $SVNQUIETFLAG || echo "ERROR: fetching $i has failed!"
+        branch=`get_branch $modname`
+      fi
+      ### TODO: perhaps we could combine cleanup/svn-clean/revert (One svn stat -u, if it fails cleanup and revert are called, otherwise only svn-cleanup is done.)
+      if test -z "$NO_INITIAL_CLEANUP"; then
+      case "$vcs" in
+        svn)
+          svn cleanup .
+          perl $kdesdkscriptsdir/svn-clean -f | fgrep -v "Subversion working directory" | grep -v '^F'
+          test -z "$VERBOSE1" || echo
+          # revert all changes, so that the following "svn update" is without conflicts
+          svn revert $SVNQUIETFLAG -R .
+          ### TODO: do we need to revert the external directories of l10n too? (Are we modifying them at all?)
+          ;;
+        git)
+          git clean -dxf $SVNQUIETFLAG
+          ;;
+        *)
+          echo "ERROR: unexpected VCS type?!"
+          exit 1
+          ;;
+      esac
+      fi # test -z $NO_INITIAL_CLEANUP
+
+      test -z "$VERBOSE1" || echo
+      case "$vcs" in
+        svn)
+          svn update $SVNQUIETFLAG || echo "ERROR: module $i was not correctly updated"
+          ;;
+        git)
+          if ! git reset $SVNQUIETFLAG --hard origin/$branch; then
+            echo "ERROR: failed to switch to branch $branch for module $modname."
+            #FIXME I'd rather gracefully skip this module. but how?
+	    #perhaps I could filter $releases. findfiles could be trouble though.
+          fi
+          ;;
+        *)
+          echo "ERROR: unexpected VCS type?!"
+          exit 1
+          ;;
+      esac
+      cd $BASEDIR
+    else
+      echo "ERROR: could not enter directory $i ! The module's update is SKIPPED!"
+    fi
+  done
+  
+  test -z "$VERBOSE1" || echo "finished updating"
+  test -z "$TIMING1" || date
+  
+  rm -fr backup
+  mkdir backup
+  ### TODO: try to find a way to still use hardlinks
+  cp -a $transmod/templates backup
+  
+  # Where are the tools needed for message extraction?
+  
+  extractrc=$kdesdkscriptsdir/extractrc
+  extractattr=$kdesdkscriptsdir/extractattr
+  extractqml=$kdesdkscriptsdir/extractqml
+  extractgrantlee=$kdesdkscriptsdir/grantlee_strings_extractor.py
+  preparetips=$kdelibsdir/kdeui/preparetips
+  repackpot=$BASEDIR/$transmod/scripts/repack-pot.pl
+  
+  kdelibs=
+
+  for logmod in $releases; do
+  
+    test -z "$NOXGETTEXT" || continue
+
+    templatename=`get_po_path $logmod`
+    mod=`get_path $logmod`
+    rm -rf /tmp/cvslog.$logmod
+    if cd $BASEDIR/$mod; then
+
+      if test ! -d $BASEDIR/$transmod/templates/messages/$templatename; then
+        if cd $BASEDIR/$transmod/templates/messages; then
+          echo "creating templates directory for $templatename"
+          mkdir $BASEDIR/backup/templates/messages/$templatename
+          svn mkdir $templatename
+          cd $BASEDIR/$mod
+        else
+          echo "SKIPPING $mod - no template directory!"
+          continue
+        fi
+      fi
+  
+      test -z "$VERBOSE1" || echo "making messages in $mod"
+      vcs=`get_vcs $logmod`
+      branch=`get_branch $logmod`
+      if test ! -d po; then
+        modpodir=$BASEDIR/$transmod/templates/messages/$templatename
+        echo "$logmod $modpodir"
+        mkdir po
+
+        ( XGETTEXT=`which xgettext` \
+          MSGCAT=`which msgcat` \
+          EXTRACTRC="perl $extractrc --ignore-no-input" \
+          EXTRACTATTR="perl $extractattr" \
+          EXTRACT_GRANTLEE_TEMPLATE_STRINGS="python $extractgrantlee" \
+          PREPARETIPS="perl $preparetips" \
+          REPACKPOT="perl $repackpot" \
+          PACKAGE=$mod \
+          IGNORE=".$vcs" \
+          bash $BASEDIR/$transmod/scripts/extract-messages.sh)
+        rm -f messages.log
+
+        ( XGETTEXT=`which xgettext` \
+          SUBMODULE=$templatename \
+          FILLXMLFROMPO="python $BASEDIR/$transmod/scripts/fillxmlfrompo.py" \
+          L10NDIR=$BASEDIR/$transmod \
+          bash $BASEDIR/$transmod/scripts/extract-xml.sh)
+
+        ( SUBMODULE=$templatename \
+          ASMETAINFOITS=$BASEDIR/$transmod/scripts/as-metainfo.its \
+          L10NDIR=$BASEDIR/$transmod \
+          bash $BASEDIR/$transmod/scripts/extract_metainfo.sh)
+
+        ( XGETTEXT=`which xgettext` \
+          MSGCAT=`which msgcat` \
+          EXTRACTRC="perl $extractrc --ignore-no-input" \
+          EXTRACTATTR="perl $extractattr" \
+          EXTRACT_GRANTLEE_TEMPLATE_STRINGS="python $extractgrantlee" \
+          PREPARETIPS="perl $preparetips" \
+          REPACKPOT="perl $repackpot" \
+          PACKAGE=$mod \
+          IGNORE=".$vcs" \
+          BASEDIR=$BASEDIR \
+          transmod=$transmod \
+          templatename=$templatename \
+          bash $BASEDIR/$transmod/scripts/process-static-messages.sh)
+
+        rm -f messages.log
+
+        find po -name \*.pot | xargs -r mv -t $modpodir
+        xfiles=`find po -type f`
+        if test -n "$xfiles"; then
+          echo "Warning: some unexpected files created in po/ directory:"
+          echo "$xfiles"
+        fi
+        rm -rf po
+      else
+        echo "Warning: unexpected po/ directory found, skipping extraction. Extra info: $logmod | $templatename | $mod"
+      fi
+      case "$vcs" in
+        svn)
+          svn commit $SVNQUIETFLAG -m "SVN_SILENT made messages (after extraction)" > /dev/null
+          ;;
+        git)
+          #FIXME what'll the equivalent of SVN_SILENT be?
+          if git pull $SVNQUIETFLAG origin $branch; then
+            status=`git status -s`
+            if [ "x$status" != "x" ]; then
+              git add .
+              if git commit -a $SVNQUIETFLAG -m "SVN_SILENT made messages (after extraction)"; then
+                git push $SVNQUIETFLAG origin HEAD:$branch || echo "WARNING: commit failed in $mod"
+              else
+                test -z "$VERBOSE1" || echo "nothing to commit for $mod?"
+              fi
+            fi
+          else
+            echo "WARNING: possible conflict in $mod"
+          fi
+          ;;
+        *)
+          echo "ERROR: unexpected VCS type?!"
+          exit 1
+          ;;
+      esac
+      if cd $BASEDIR/$transmod/templates/messages/$templatename ; then
+        for i in *.pot; do
+          if test ! -f $i; then continue; fi
+          if test ! -f $BASEDIR/backup/templates/messages/$templatename/$i ; then
+            postprocess_pot_file $i
+            echo "Adding .pot file: $i"
+            svn add $i
+            cp -f $i $BASEDIR/backup/templates/messages/$templatename/$i
+          elif pot_files_diff $i $BASEDIR/backup/templates/messages/$templatename/$i > /dev/null ; then
+            if test `stat -c %Y $i` -lt $STARTTIME; then
+              cp -f -p $BASEDIR/backup/templates/messages/$templatename/$i $i
+            else
+              cp -f $BASEDIR/backup/templates/messages/$templatename/$i $i
+            fi
+          else
+            postprocess_pot_file $i
+            cp -f $i $BASEDIR/backup/templates/messages/$templatename/$i
+          fi
+        done
+        cd $BASEDIR/$mod
+      fi
+      rm -rf po.backup
+    else
+      echo "Failed to cd to $BASEDIR/$mod"
+    fi
+  
+  done
+  cd $BASEDIR
+  
+  test -z "$VERBOSE1" || echo "extracting qt"
+  # As qt is updated rarely (compared to other modules) and to simplify the code, we let the "late" code below do most of the work.
+  ### TODO: check if in long-term this minimalistic approach is really the best
+  podir=$BASEDIR/$transmod/templates/messages/qt EXTRACTRC="perl $extractrc --ignore-no-input" qtcopydir=$BASEDIR/`get_path qt` \
+    bash $BASEDIR/$transmod/scripts/MessagesQt.sh
+
+  test -z "$VERBOSE1" || echo "updating files in $transmod"
+  if cd $transmod; then
+    rm -f statuslist.tmp
+    test -z "$VERBOSE1" || echo "adding missing templates"
+    test -z "$TIMING1" || date
+    list=`find templates/messages -name '*.pot'`
+    for i in $list; do
+      if test ! -f $BASEDIR/backup/$i; then
+        postprocess_pot_file $i
+        echo "Adding .pot file: $i (late)"
+        svn add $i;
+        cp -f $i $BASEDIR/backup/$i
+      elif pot_files_diff $i $BASEDIR/backup/$i > /dev/null ; then
+        stat -c "%Y %n" $i >> statuslist.tmp
+        cp -fp $BASEDIR/backup/$i $i
+      else
+        postprocess_pot_file $i
+        cp -f $i $BASEDIR/backup/$i
+      fi;
+    done
+    test -z "$VERBOSE1" || echo "committing l10n/templates/messages"
+    test -z "$TIMING1" || date
+    svn commit $SVNQUIETFLAG -m "SVN_SILENT made messages (.pot file)" templates/messages > /dev/null
+    if test -z "$NOXGETTEXT"; then
+       echo "Potentially obsolete .pot files:"
+       perl -n -e "use POSIX qw(strftime); /([0-9]+) (.+)/; if ( \$2 =~ m/\/desktop_.+\.pot/ ) {} elsif ( \$1 < $STARTTIME ) { print strftime (\"%Y-%m-%d\", gmtime(\$1)).\" \".\$2. \"\n\";}" < statuslist.tmp | sort
+       echo "--- end of list ---"
+    fi
+    rm -f statuslist.tmp
+    test -z "$VERBOSE1" || echo "reupdating l10n/templates/messages"
+    test -z "$TIMING1" || date
+    svn revert $SVNQUIETFLAG -R templates/messages
+    svn update $SVNQUIETFLAG templates/messages | egrep -v "^(U | U|UU) "
+    # Note the -type f in the following find is needed to exclude the names of the "pruned" directories
+    find templates/messages \( -name .svn -prune -o -name "*.pot" \) -type f -printf "%f\\n" | sort | uniq -d > templatenames.tmp
+    if test -s templatenames.tmp; then
+      echo "ERROR: there are duplicated POT files:"
+      cat templatenames.tmp
+      echo "--- end duplicated POT files ---"
+    fi
+    rm -f templatenames.tmp
+    
+    test -z "$VERBOSE1" || echo "creating desktop*.pot files"
+    test -z "$TIMING1" || date
+    bash scripts/findfiles `pwd`/all_files 
+
+    for mod in $releases l10n; do
+      case "$mod" in
+        # FIXME: HORRIBLE temporary hacks
+        workspace_kde-gtk-config)
+          extract_desktop all_files_$mod $BASEDIR/`get_path $mod` templates/messages/`get_po_path $mod`/desktop_extragear-base_kde-gtk-config.pot
+          ;;
+        workspace_muon)
+          extract_desktop all_files_$mod $BASEDIR/`get_path $mod` templates/messages/`get_po_path $mod`/desktop_extragear-sysadmin_muon.pot
+          ;;
+        extragear-*_*)
+          extract_desktop all_files_$mod $BASEDIR/`get_path $mod` templates/messages/`get_po_path $mod`/desktop_$mod.pot
+          ;;
+        extragear-*)
+          basedir=$BASEDIR/`get_path $mod`
+          subdirs=`fgrep $basedir all_files_$mod | sed -e "s,$basedir/,," | cut -d/ -f1`
+          for subdir in $subdirs; do
+            mods="$mod""_$subdir"
+            fgrep $basedir/$subdir all_files_$mod > all_files_$mods
+            extract_desktop all_files_$mods $basedir/$subdir templates/messages/$mod/desktop_$mods.pot
+          done
+          rm -f all_files_$mod
+          ;;
+        l10n)
+          extract_desktop all_files_$mod $BASEDIR/`get_path $mod` templates/messages/kdelibs/desktop_l10n.pot
+          ;;
+        *)
+          extract_desktop all_files_$mod $BASEDIR/`get_path $mod` templates/messages/`get_po_path $mod`/desktop_$mod.pot
+          ;;
+      esac
+    done
+
+    test -z "$VERBOSE1" || echo "commiting desktop*.pot files"
+    test -z "$TIMING1" || date
+    if cd templates/messages; then
+      list=`find . -name desktop\*.pot`
+      # desktop*.pot files have already a correct Content-Type, so we do not need to check it or even to modify it
+      for i in $list; do
+        if test ! -f $BASEDIR/backup/templates/messages/$i; then
+          echo "Adding desktop*.pot file: $i"
+          svn add $i;
+        elif ! test $i -nt $BASEDIR/backup/templates/messages/$i; then
+          echo "$i was not regenerated. Probably needs to be removed"  
+        elif pot_files_diff $i $BASEDIR/backup/templates/messages/$i > /dev/null ; then
+          cp -f $BASEDIR/backup/templates/messages/$i $i
+        fi
+      done
+      svn commit $SVNQUIETFLAG -m "SVN_SILENT made messages (desktop*.pot file committed)" > /dev/null
+      cd ../..
+    fi
+    
+    rm -fr $BASEDIR/backup
+    
+    echo "%% Creating documentation templates begin"
+    sed s#@DOCBOOKXML_CURRENTDTD_DIR@#$DOCBOOK_LOCATION#g $kdelibsdir/kdoctools/customization/dtd/kdex.dtd.cmake > $kdelibsdir/kdoctools/customization/dtd/kdex.dtd
+    sed s#@DOCBOOKXSL_DIR@#$DOCBOOKXSL_LOCATION#g $kdelibsdir/kdoctools/customization/kde-include-common.xsl.cmake > $kdelibsdir/kdoctools/customization/kde-include-common.xsl
+    sed s#@DOCBOOKXSL_DIR@#$DOCBOOKXSL_LOCATION#g $kdelibsdir/kdoctools/customization/kde-include-man.xsl.cmake > $kdelibsdir/kdoctools/customization/kde-include-man.xsl
+    docbookl10nhelper $DOCBOOKXSL_LOCATION $kdelibsdir/kdoctools/customization/xsl/ $kdelibsdir/kdoctools/customization/xsl/
+
+    bash ./scripts/createdoctemplates.sh --commit --check --autosvnadd
+    rm -f $kdelibsdir/kdoctools/customization/dtd/kdex.dtd \
+      $kdelibsdir/kdoctools/customization/kde-include-common.xsl \
+      $kdelibsdir/kdoctools/customization/kde-include-man.xsl \
+      $kdelibsdir/kdoctools/customization/xsl/all-l10n.xml \
+      $kdelibsdir/kdoctools/customization/xsl/kde-custom-l10n.xml
+    echo "%% Creating documentation templates end"
+    
+    test -z "$VERBOSE1" || echo "checking svn:executable in l10n"
+    test -z "$TIMING1" || date
+    # try to find all "executable" PO, POT, PNG, JPEG, DocBook, WAV, OGG, SVG, SVGZ files and remove the svn:executable property
+    find . \( -name .svn -o -name documentation \) -prune , -type f \( -name \*.po -o -name \*.pot -o -name \*.png -o -name \*.jpeg -o -name \*.jpg -o -name \*.docbook -o -name \*.wav -o -name \*.ogg -o -name \*.svg -o -name \*.svgz \) -perm -u+x | xargs --no-run-if-empty svn propdel svn:executable
+    svn commit $SVNQUIETFLAG -m "SVN_SILENT made messages (svn:executable)"
+    test -z "$VERBOSE1" || echo "reupdating l10n"
+    test -z "$TIMING1" || date
+    svn cleanup
+    svn update $SVNQUIETFLAG | egrep -v "^(U | U|UU) "
+    # clear conflicts by using "svn revert"
+    svn revert $SVNQUIETFLAG -R .
+    test -z "$VERBOSE1" || echo "merging"
+    test -z "$TIMING1" || date
+    echo
+    echo "%% TRANSLATOR START $transmod"
+    echo
+    bash scripts/merge_all.sh
+    echo
+    echo "%% TRANSLATOR END $transmod"
+    echo
+    test -z "$VERBOSE1" || echo "Preparing to commit new files"
+    test -z "$TIMING1" || date
+    # SVN 1.2.3: svn status without parameters has not changed its output format
+    list=`svn status | fgrep -v "Performing" | cut -b8-`
+    for i in $list; do
+      if test ! -s $i; then
+        svn revert $SVNQUIETFLAG $i
+      fi
+    done
+    # Note: we assume here that names of PO files never start with a digit
+    # SVN 1.2.3: svn stat -u has still the modified-on-server flag at the 8th column, followed by a revision number and the file name
+    svn status --show-updates | perl -n -e "if ( /^Performing/ ) { } elsif ( /^.{7}\*\s+[0-9]*\s+([^0-9].+)/ ) { print \$1.\"\n\"; }" > ../conflicts.tmp
+    if test -s ../conflicts.tmp; then
+      for i in `cat ../conflicts.tmp`; do
+        if test -f $i; then
+          test -z "$VERBOSE" || echo "File was updated on server: $i"
+          svn revert $SVNQUIETFLAG $i
+        elif test -d $i; then
+          echo "Directory was updated on server: $i"
+          # If the file was modified locally and on the server, we have to revert the local change
+	  # Note: we assume here that names of PO files never start with a digit
+          ### TODO: what about property changes on server
+	  # SVN 1.2.3: svn stat -u has still the modified flag at the 1st column, the modified-on-server flag at the 8th column, followed by a revision number and the file name
+          svn status --show-updates $i | perl -n -e "if ( /^Performing/ ) { } elsif ( /^M.{6}\*\s+[0-9]*\s+([^0-9].+)/ ) { print \$1.\"\n\"; }" > ../dir_conflicts.tmp
+          fgrep -v .svn ../dir_conflicts.tmp | xargs --no-run-if-empty rm -v 
+          svn update $SVNQUIETFLAG $i
+        elif test ! -e $i; then
+          # We do not know the file yet, so no need to do anything 
+          echo "New file on server: $i"
+        else
+          # As we do not know what we got, try to get as much information as possible
+          echo "Unknown file type, updated on server: $i"
+          svn status --verbose --show-updates $i
+          svn revert $i
+        fi
+      done
+    fi
+    rm -f ../conflicts.tmp ../dir_conflicts.tmp
+    test -z "$VERBOSE1" || echo "commiting new files"
+    test -z "$TIMING1" || date
+    if ! svn commit $SVNQUIETFLAG -m "SVN_SILENT made messages (.po file)" > /dev/null; then
+      test -z "$VERBOSE1" || echo "commiting new files, second try"
+      test -z "$TIMING1" || date
+      ### TODO: find a good way to avoid using the subdirs file
+      for i in `cat subdirs`; do
+        if cd $i; then
+          if ! svn commit $SVNQUIETFLAG -m "SVN_SILENT made messages (.po file, second try)"; then
+            echo "Could not commit l10n/$i . Reverting!"
+            svn revert $SVNQUIETFLAG -R .
+          fi
+	  cd ..
+        else
+          echo "Cannot commit, unknown directory l10n/$i"
+        fi
+      done
+    fi
+    cd $BASEDIR
+  fi
+
+  if true; then
+    if cd $transmod; then
+      test -z "$VERBOSE1" || echo "applying desktop file translations"
+      test -z "$TIMING1" || date
+      # Note: the executable should not be renamed to applycontext to avoid to have to change the script merge_desktop_files.sh
+      g++ -O2 -march=nocona -o apply scripts/applycontext.cpp
+      bash scripts/merge_desktop_files.sh 
+      cd $BASEDIR
+    fi
+    test -z "$VERBOSE1" || echo "commiting desktop files"
+    test -z "$TIMING1" || date
+    for i in $releases l10n; do
+      if cd $BASEDIR/`get_path $i`; then
+        vcs=`get_vcs $i`
+        branch=`get_branch $i`
+        case "$vcs" in
+          svn)
+            if ! svn commit $SVNQUIETFLAG -m "SVN_SILENT made messages (.desktop file)" > /dev/null; then
+              # If the commit fails, then it means that a file was modified. Normally it will not be a .desktop file
+              echo "Need to update $i"
+              svn update $SVNQUIETFLAG
+              if ! svn commit $SVNQUIETFLAG -m "SVN_SILENT made messages (.desktop file, second try)"; then
+                echo "ERROR: commiting .desktop files failed for module $i!"
+                svn revert -R .
+              fi
+            fi
+            ;;
+          git)
+            if git pull $SVNQUIETFLAG origin $branch; then
+              status=`git status -s`
+              if [ "x$status" != "x" ]; then
+                if git commit -a $SVNQUIETFLAG -m "SVN_SILENT made messages (.desktop file)"; then
+                  if ! git push $SVNQUIETFLAG origin HEAD:$branch; then
+                    echo "ERROR: commiting .desktop files failed for module $i!"
+                    git reset --hard $SVNQUIETFLAG origin/$branch
+                  fi
+                else
+                  test -z "$VERBOSE1" || echo "nothing to commit for $i?"
+                fi
+              fi
+            else
+              echo "ERROR: commiting .desktop files failed for module $i (possible conflict)"
+              git reset --hard $SVNQUIETFLAG origin/$branch
+            fi
+            ;;
+          *)
+            echo "ERROR: unexpected VCS type?!"
+            exit 1
+            ;;
+        esac
+      fi
+    done
+  else
+    echo "Skipping processing of .desktop files"
+  fi
+
+  rm -rf apply all_files* messages
+  cd $BASEDIR
+  
+  
+  if cd $transmod; then
+    echo "%% Updating x-test begin"
+    bash x-test/internal/update_xx.sh
+    svn commit x-test $SVNQUIETFLAG -m "SVN_SILENT made messages (x-test)"
+    echo "%% Updating x-test end"
+
+    echo "%% Finding po without pot begin"
+    bash ./scripts/find_po_without_pot.sh --silent
+    echo "%% Finding po without pot end"
+
+    echo "%% Checking language docs are valid begin"
+    kdelibsdir=$kdelibsdir bash ./scripts/checkdocs.sh --optimized
+    echo "%% Checking language docs are valid end"
+    
+    cd $BASEDIR
+  fi
+  
+  echo "@@@ branch $transmod processed!"
+  test -z "$TIMING1" || date
+}
+
+# releases: paths of modules - kdelibs has to be first
+# transmod: path of the corresponding l10n module
+
+# test only
+dir=`dirname $0`
+. $dir/get_paths
+transmod=`get_path l10n`
+releases=`list_modules $dir`
+kdelibsdir=$BASEDIR/`get_path kdelibs`
+kdesdkscriptsdir=$BASEDIR/`get_path kdesdk_kde-dev-scripts`
+update_translations

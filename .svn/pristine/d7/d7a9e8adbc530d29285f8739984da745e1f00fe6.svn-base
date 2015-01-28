@@ -1,0 +1,416 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2007, 2008, 2009, 2010, 2011, 2014.
+# Stephan Johach <hunsum@gmx.de>, 2007.
+# Thomas Reitelbach, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kbuildsycoca4_man-kbuildsycoca4.8\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:13+0000\n"
+"PO-Revision-Date: 2014-01-17 09:41+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdelibs/doc/kbuildsycoca4/man-"
+"kbuildsycoca4.8.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 718365\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: man-kbuildsycoca4.8.docbook:9
+#, no-c-format
+msgid "&kde; User's Manual"
+msgstr "&kde;-Benutzerhandbuch"
+
+#. Tag: author
+#: man-kbuildsycoca4.8.docbook:10
+#, no-c-format
+msgid "<firstname>Darian</firstname> <surname>Lanx</surname>"
+msgstr "<firstname>Darian</firstname> <surname>Lanx</surname>"
+
+#. Tag: email
+#: man-kbuildsycoca4.8.docbook:14
+#, no-c-format
+msgid "content@openprojects.net"
+msgstr "content@openprojects.net"
+
+#. Tag: date
+#: man-kbuildsycoca4.8.docbook:18
+#, no-c-format
+msgid "2010-01-04"
+msgstr "2010-01-04"
+
+#. Tag: releaseinfo
+#: man-kbuildsycoca4.8.docbook:19
+#, no-c-format
+msgid "1.1 (&kde; 4.4)"
+msgstr "1.1 (&kde; 4.4)"
+
+#. Tag: manvolnum
+#: man-kbuildsycoca4.8.docbook:25
+#, no-c-format
+msgid "<manvolnum>8</manvolnum>"
+msgstr "<manvolnum>8</manvolnum>"
+
+#. Tag: refpurpose
+#: man-kbuildsycoca4.8.docbook:30
+#, no-c-format
+msgid "Rebuilds the system configuration cache."
+msgstr "Erstellt den Zwischenspeicher für die Systemeinstellungen neu."
+
+#. Tag: title
+#: man-kbuildsycoca4.8.docbook:34
+#, no-c-format
+msgid "Synopsis"
+msgstr "Synopsis"
+
+#. Tag: cmdsynopsis
+#: man-kbuildsycoca4.8.docbook:36
+#, no-c-format
+msgid ""
+"<command>kbuildsycoca4</command> <group> <arg choice=\"opt\">--nosignal</"
+"arg> <arg choice=\"opt\">--noincremental</arg> <arg choice=\"opt\">--"
+"checkstamps</arg> <arg choice=\"opt\">--nocheckfiles</arg> <arg choice=\"opt"
+"\">--global</arg> <arg choice=\"opt\">--menutest</arg> <arg choice=\"opt\">--"
+"track <replaceable>menu-id</replaceable></arg> <arg choice=\"opt\">--help</"
+"arg> <arg choice=\"opt\">--help-qt</arg> <arg choice=\"opt\">--help-kde</"
+"arg> <arg choice=\"opt\">--help-all</arg> <arg choice=\"opt\">--author</arg> "
+"<arg choice=\"opt\">-v, --version</arg> <arg choice=\"opt\">--license</arg> "
+"</group>"
+msgstr ""
+"<command>kbuildsycoca4</command> <group> <arg choice=\"opt\">--nosignal</"
+"arg> <arg choice=\"opt\">--noincremental</arg> <arg choice=\"opt\">--"
+"checkstamps</arg> <arg choice=\"opt\">--nocheckfiles</arg> <arg choice=\"opt"
+"\">--global</arg> <arg choice=\"opt\">--menutest</arg> <arg choice=\"opt\">--"
+"track <replaceable>menu-id</replaceable></arg> <arg choice=\"opt\">--help</"
+"arg> <arg choice=\"opt\">--help-qt</arg> <arg choice=\"opt\">--help-kde</"
+"arg> <arg choice=\"opt\">--help-all</arg> <arg choice=\"opt\">--author</arg> "
+"<arg choice=\"opt\">-v, --version</arg> <arg choice=\"opt\">--license</arg> "
+"</group>"
+
+#. Tag: title
+#: man-kbuildsycoca4.8.docbook:60
+#, no-c-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:62
+#, no-c-format
+msgid ""
+"<command>kbuildsycoca4</command>, as part of the &kde; command line tools "
+"ensures the proper operation of &kde; by reading in all the <literal role="
+"\"extension\">.desktop</literal>, <literal role=\"extension\">.xml</"
+"literal>, and <literal role=\"extension\">.protocol</literal> files to "
+"construct a binary database."
+msgstr ""
+"<command>kbuildsycoca4</command> stellt als Teil der &kde;-"
+"Befehlszeilenwerkzeuge das korrekte Funktionieren von &kde; sicher, indem es "
+"alle Dateien mit der Erweiterung <literal role=\"extension\">.desktop</"
+"literal>, <literal role=\"extension\">.directory</literal>, <literal role="
+"\"extension\">.xml</literal> und <literal role=\"extension\">.protocol</"
+"literal> einliest und zu einer Datenbank verknüpft."
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:71
+#, no-c-format
+msgid ""
+"&kde; itself accesses this database during operation to provide "
+"configuration information a program needs to run."
+msgstr ""
+"&kde; greift zur Laufzeit auf diese Datenbank zu, um Konfigurationsdaten für "
+"die laufenden Programme bereitzustellen."
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:76
+#, no-c-format
+msgid ""
+"This tool is part of ksycoca4, which stands for &kde; System Configuration "
+"Cache"
+msgstr ""
+"Dieses Werkzeug gehört zu ksycoca4. Dieser Name steht für &kde; System "
+"Configuration Cache (KDE-Zwischenspeicher für Systemkonfigurationsdaten)."
+
+#. Tag: title
+#: man-kbuildsycoca4.8.docbook:84
+#, no-c-format
+msgid "Options"
+msgstr "Optionen"
+
+#. Tag: option
+#: man-kbuildsycoca4.8.docbook:88
+#, no-c-format
+msgid "--nosignal"
+msgstr "--nosignal"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:90
+#, no-c-format
+msgid "Do not signal applications to update"
+msgstr "Anwendungen nicht über Aktualisierungen benachrichtigen"
+
+#. Tag: option
+#: man-kbuildsycoca4.8.docbook:95
+#, no-c-format
+msgid "--noincremental"
+msgstr "--noincremental"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:97
+#, no-c-format
+msgid "Disable incremental update, re-read everything"
+msgstr "Inkrementelle Aktualisierung deaktivieren, alles neu einlesen"
+
+#. Tag: option
+#: man-kbuildsycoca4.8.docbook:102
+#, no-c-format
+msgid "--checkstamps"
+msgstr "--checkstamps"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:104
+#, no-c-format
+msgid "Check file timestamps"
+msgstr "Datei-Änderungszeiten überprüfen"
+
+#. Tag: option
+#: man-kbuildsycoca4.8.docbook:109
+#, no-c-format
+msgid "--nocheckfiles"
+msgstr "--nocheckfiles"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:111
+#, no-c-format
+msgid "Disable checking files (dangerous)"
+msgstr "Dateiprüfung abschalten (gefährlich)"
+
+#. Tag: option
+#: man-kbuildsycoca4.8.docbook:116
+#, no-c-format
+msgid "--global"
+msgstr "--global"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:118
+#, no-c-format
+msgid "Create global database"
+msgstr "Globale Datenbank erstellen"
+
+#. Tag: option
+#: man-kbuildsycoca4.8.docbook:123
+#, no-c-format
+msgid "--menutest"
+msgstr "--menutest"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:125
+#, no-c-format
+msgid "Perform menu generation test run only"
+msgstr "Nur Test für Menü-Erstellung ausführen"
+
+#. Tag: option
+#: man-kbuildsycoca4.8.docbook:130
+#, no-c-format
+msgid "--track <replaceable>menu-id</replaceable>"
+msgstr "--track <replaceable>menu-id</replaceable>"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:132
+#, no-c-format
+msgid "Track menu id for debug purposes"
+msgstr "Menü-Kennung (ID) für Fehlersuche zurückverfolgen"
+
+#. Tag: option
+#: man-kbuildsycoca4.8.docbook:140
+#, no-c-format
+msgid "--help"
+msgstr "--help"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:142
+#, no-c-format
+msgid "Show help about options"
+msgstr "Hilfe zu verfügbaren Optionen anzeigen."
+
+#. Tag: option
+#: man-kbuildsycoca4.8.docbook:149
+#, no-c-format
+msgid "--help-qt"
+msgstr "--help-qt"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:151
+#, no-c-format
+msgid "Show Qt specific options"
+msgstr "Spezielle Optionen für Qt anzeigen"
+
+#. Tag: option
+#: man-kbuildsycoca4.8.docbook:158
+#, no-c-format
+msgid "--help-kde"
+msgstr "--help-kde"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:160
+#, no-c-format
+msgid "Show KDE specific options"
+msgstr "Spezielle Optionen für KDE anzeigen"
+
+#. Tag: option
+#: man-kbuildsycoca4.8.docbook:167
+#, no-c-format
+msgid "--help-all"
+msgstr "--help-all"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:169
+#, no-c-format
+msgid "Show all options"
+msgstr "Alle Optionen anzeigen"
+
+#. Tag: option
+#: man-kbuildsycoca4.8.docbook:176
+#, no-c-format
+msgid "--author"
+msgstr "--author"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:178
+#, no-c-format
+msgid "Show author information"
+msgstr "Zeigt Informationen über den Autor."
+
+#. Tag: option
+#: man-kbuildsycoca4.8.docbook:185
+#, no-c-format
+msgid "-v , --version"
+msgstr "-v , --version"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:187
+#, no-c-format
+msgid "Show version information"
+msgstr "Versionsinformation anzeigen"
+
+#. Tag: option
+#: man-kbuildsycoca4.8.docbook:194
+#, no-c-format
+msgid "--license"
+msgstr "--license"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:196
+#, no-c-format
+msgid "Show license information"
+msgstr "Lizenz-Informationen anzeigen"
+
+#. Tag: title
+#: man-kbuildsycoca4.8.docbook:206
+#, no-c-format
+msgid "Usage"
+msgstr "Benutzung"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:207
+#, no-c-format
+msgid ""
+"A standard way to run this program is by simply specifying the following "
+"command at the prompt <userinput><command>kbuildsycoca4</command></userinput>"
+msgstr ""
+"Der normale Weg, das Programm  aufzurufen, sieht wie folgt aus: "
+"<userinput><command>kbuildsycoca4</command></userinput>"
+
+#. Tag: title
+#: man-kbuildsycoca4.8.docbook:216
+#, no-c-format
+msgid "Files"
+msgstr "Dateien"
+
+#. Tag: filename
+#: man-kbuildsycoca4.8.docbook:220
+#, no-c-format
+msgid "/var/tmp/kde-$USER/ksycoca4"
+msgstr "/var/tmp/kde-$USER/ksycoca4"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:222
+#, no-c-format
+msgid "The default directory where the cache files are stored."
+msgstr "Der Standardordner für die Zwischenspeicherdateien."
+
+#. Tag: title
+#: man-kbuildsycoca4.8.docbook:230
+#, no-c-format
+msgid "Environment Variables"
+msgstr "Umgebungsvariablen"
+
+#. Tag: term
+#: man-kbuildsycoca4.8.docbook:233
+#, no-c-format
+msgid "$<envar>KDEDIRS</envar>"
+msgstr "$<envar>KDEDIRS</envar>"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:235
+#, no-c-format
+msgid "Specifies which directories are part of the KDE installations"
+msgstr "Gibt an, welche Ordner Teil der KDE-Installation sind."
+
+#. Tag: term
+#: man-kbuildsycoca4.8.docbook:240
+#, no-c-format
+msgid "$<envar>KDESYCOCA</envar>"
+msgstr "$<envar>KDESYCOCA</envar>"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:242
+#, no-c-format
+msgid "Specifies the path to the sycoca database file"
+msgstr "Gibt den Pfad zur Sycoca-Datenbankdatei an"
+
+#. Tag: title
+#: man-kbuildsycoca4.8.docbook:250
+#, no-c-format
+msgid "See Also"
+msgstr "Siehe auch"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:252
+#, no-c-format
+msgid "kdeinit4"
+msgstr "kdeinit4"
+
+#. Tag: title
+#: man-kbuildsycoca4.8.docbook:257
+#, no-c-format
+msgid "Bugs"
+msgstr "Fehler"
+
+#. Tag: para
+#: man-kbuildsycoca4.8.docbook:259
+#, no-c-format
+msgid ""
+"There are probably tons of bugs. Use <ulink url=\"http://bugs.kde.org\">bugs."
+"kde.org</ulink> to report them."
+msgstr ""
+"Berichten Sie Fehler auf <ulink url=\"http://bugs.kde.org\">bugs.kde.org</"
+"ulink>."
+
+#~ msgid "kbuildsycoca4"
+#~ msgstr "kbuildsycoca4"
+
+#~ msgid "<date>2010-01-04</date> <releaseinfo>1.1 (&kde; 4.4)</releaseinfo>"
+#~ msgstr "<date>2010-01-04</date> <releaseinfo>1.1 (&kde; 4.4)</releaseinfo>"
+
+#~ msgid "Incremental Update"
+#~ msgstr "Inkrementelle Aktualisierung"
+
+#~ msgid "<para>...</para>"
+#~ msgstr "<para>...</para>"
+
+#~ msgid "There are no known bugs at the time of writing."
+#~ msgstr "Zur Zeit der Erstellung dieses Textes waren keine Fehler bekannt."

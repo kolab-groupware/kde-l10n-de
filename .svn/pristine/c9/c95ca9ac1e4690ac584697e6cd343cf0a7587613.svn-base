@@ -1,0 +1,193 @@
+# The syntax of the file is easy
+# A module needs to have a line declaring the module
+# Syntax:
+#      module modulename
+# After that there can be one root line or not and any entry lines
+# root lines point to a directory with multiple docs for that module
+# entry lines point to a directory with single doc for that module
+# Syntax:
+#      root scm_path
+#      entry dir_name scm_path
+# Where
+#      scm_path can be
+#        a svn url
+#        a git repo followed by branch:path_to_folder
+#      dir_name is name of the entry e.g. konversation
+
+module kdelibs
+root git://anongit.kde.org/kdelibs.git KDE/4.14:doc
+
+module applications
+root git://anongit.kde.org/kde-baseapps.git Applications/14.12:doc
+
+module kde-runtime
+root git://anongit.kde.org/kde-runtime.git Applications/14.12:doc
+
+module kde-workspace
+root git://anongit.kde.org/kde-workspace.git KDE/4.11:doc
+
+module kdegames
+entry bomber git://anongit.kde.org/bomber.git Applications/14.12:doc
+entry bovo git://anongit.kde.org/bovo.git Applications/14.12:doc
+entry granatier git://anongit.kde.org/granatier.git Applications/14.12:doc
+entry kajongg git://anongit.kde.org/kajongg.git Applications/14.12:doc
+entry kapman git://anongit.kde.org/kapman.git Applications/14.12:doc
+entry katomic git://anongit.kde.org/katomic.git Applications/14.12:doc
+entry kblackbox git://anongit.kde.org/kblackbox.git Applications/14.12:doc
+entry kblocks git://anongit.kde.org/kblocks.git Applications/14.12:doc
+entry kbounce git://anongit.kde.org/kbounce.git Applications/14.12:doc
+entry kbreakout git://anongit.kde.org/kbreakout.git Applications/14.12:doc
+entry kdiamond git://anongit.kde.org/kdiamond.git Applications/14.12:doc
+entry kfourinline git://anongit.kde.org/kfourinline.git Applications/14.12:doc
+entry kgoldrunner git://anongit.kde.org/kgoldrunner.git Applications/14.12:doc
+entry kigo git://anongit.kde.org/kigo.git Applications/14.12:doc
+entry killbots git://anongit.kde.org/killbots.git Applications/14.12:doc
+entry kiriki git://anongit.kde.org/kiriki.git Applications/14.12:doc
+entry kjumpingcube git://anongit.kde.org/kjumpingcube.git Applications/14.12:doc
+entry klickety git://anongit.kde.org/klickety.git Applications/14.12:doc
+entry klines git://anongit.kde.org/klines.git Applications/14.12:doc
+entry kmahjongg git://anongit.kde.org/kmahjongg.git Applications/14.12:doc
+entry kmines git://anongit.kde.org/kmines.git Applications/14.12:doc
+entry knavalbattle git://anongit.kde.org/knavalbattle.git Applications/14.12:doc
+entry knetwalk git://anongit.kde.org/knetwalk.git Applications/14.12:doc
+entry kolf git://anongit.kde.org/kolf.git Applications/14.12:doc
+entry kollision git://anongit.kde.org/kollision.git Applications/14.12:doc
+entry konquest git://anongit.kde.org/konquest.git Applications/14.12:doc
+entry kpat git://anongit.kde.org/kpat.git Applications/14.12:doc
+entry kreversi git://anongit.kde.org/kreversi.git Applications/14.12:doc
+entry kshisen git://anongit.kde.org/kshisen.git Applications/14.12:doc
+entry ksirk git://anongit.kde.org/ksirk.git Applications/14.12:doc
+entry kspaceduel git://anongit.kde.org/kspaceduel.git Applications/14.12:doc
+entry ksquares git://anongit.kde.org/ksquares.git Applications/14.12:doc
+entry ksudoku git://anongit.kde.org/ksudoku.git Applications/14.12:doc
+entry ktron git://anongit.kde.org/ksnakeduel.git Applications/14.12:doc
+entry ktuberling git://anongit.kde.org/ktuberling.git Applications/14.12:doc
+entry kubrick git://anongit.kde.org/kubrick.git Applications/14.12:doc
+entry lskat git://anongit.kde.org/lskat.git Applications/14.12:doc
+entry palapeli git://anongit.kde.org/palapeli.git Applications/14.12:doc
+entry picmi git://anongit.kde.org/picmi.git Applications/14.12:doc
+
+module kdesdk
+entry cervisia git://anongit.kde.org/cervisia.git Applications/14.12:doc
+entry kcachegrind git://anongit.kde.org/kcachegrind.git Applications/14.12:doc
+entry kmtrace git://anongit.kde.org/kde-dev-utils.git Applications/14.12:kmtrace/doc
+entry kompare git://anongit.kde.org/kompare.git Applications/14.12:doc
+entry lokalize git://anongit.kde.org/lokalize.git Applications/14.12:doc
+entry poxml git://anongit.kde.org/poxml.git Applications/14.12:doc
+entry scripts git://anongit.kde.org/kde-dev-scripts.git Applications/14.12:doc
+entry umbrello git://anongit.kde.org/umbrello.git Applications/14.12:doc
+
+module kdegraphics
+entry kcontrol/kamera git://anongit.kde.org/kamera.git Applications/14.12:doc
+entry kcontrol/kgamma git://anongit.kde.org/kgamma.git Applications/14.12:doc
+entry kolourpaint git://anongit.kde.org/kolourpaint.git Applications/14.12:doc
+entry kruler git://anongit.kde.org/kruler.git Applications/14.12:doc
+entry ksnapshot git://anongit.kde.org/ksnapshot.git Applications/14.12:doc
+entry okular git://anongit.kde.org/okular.git Applications/14.12:doc
+
+module kdeutils
+entry ark git://anongit.kde.org/ark.git Applications/14.12:doc
+entry filelight git://anongit.kde.org/filelight.git Applications/14.12:doc
+entry kcalc git://anongit.kde.org/kcalc.git Applications/14.12:doc
+entry kcharselect git://anongit.kde.org/kcharselect.git Applications/14.12:doc
+entry kcontrol/blockdevices git://anongit.kde.org/kdf.git Applications/14.12:doc/kcontrol
+entry kcontrol/kremotecontrol git://anongit.kde.org/kremotecontrol.git Applications/14.12:doc
+entry kdf git://anongit.kde.org/kdf.git Applications/14.12:doc/app
+entry kfloppy git://anongit.kde.org/kfloppy.git Applications/14.12:doc
+entry kgpg git://anongit.kde.org/kgpg.git Applications/14.12:doc
+entry ktimer git://anongit.kde.org/ktimer.git Applications/14.12:doc
+entry kwalletmanager git://anongit.kde.org/kwalletmanager.git Applications/14.12:doc
+entry superkaramba git://anongit.kde.org/superkaramba.git Applications/14.12:doc
+entry sweeper git://anongit.kde.org/sweeper.git Applications/14.12:doc
+
+module kdenetwork
+entry kget git://anongit.kde.org/kget.git Applications/14.12:doc
+entry kopete git://anongit.kde.org/kopete.git Applications/14.12:doc
+entry kppp git://anongit.kde.org/kppp.git Applications/14.12:doc
+entry krdc git://anongit.kde.org/krdc.git Applications/14.12:doc
+entry krfb git://anongit.kde.org/krfb.git Applications/14.12:doc
+
+module kdemultimedia
+entry dragonplayer git://anongit.kde.org/dragon.git Applications/14.12:doc
+entry juk git://anongit.kde.org/juk.git Applications/14.12:doc
+entry kmix git://anongit.kde.org/kmix.git Applications/14.12:doc
+entry kcontrol/cddbretrieval git://anongit.kde.org/libkcddb.git Applications/14.12:kcmcddb/doc
+entry kioslave/audiocd git://anongit.kde.org/audiocd-kio.git Applications/14.12:doc
+
+module kdeadmin
+entry kcron git://anongit.kde.org/kcron.git Applications/14.12:doc
+entry ksystemlog git://anongit.kde.org/ksystemlog.git Applications/14.12:doc
+entry kuser git://anongit.kde.org/kuser.git Applications/14.12:doc
+
+module kdetoys
+entry amor git://anongit.kde.org/amor.git Applications/14.12:doc
+entry kteatime git://anongit.kde.org/kteatime.git Applications/14.12:doc
+
+module kdepimlibs
+root git://anongit.kde.org/kdepimlibs.git KDE/4.14:doc
+
+module kdepim
+root git://anongit.kde.org/kdepim.git KDE/4.14:doc
+
+module kdeedu
+entry artikulate git://anongit.kde.org/artikulate.git Applications/14.12:doc
+entry kiten git://anongit.kde.org/kiten.git Applications/14.12:doc
+entry ktouch git://anongit.kde.org/ktouch.git Applications/14.12:doc
+entry klettres git://anongit.kde.org/klettres.git Applications/14.12:doc
+entry step git://anongit.kde.org/step.git Applications/14.12:doc
+entry kbruch git://anongit.kde.org/kbruch.git Applications/14.12:doc
+entry blinken git://anongit.kde.org/blinken.git Applications/14.12:doc
+entry cantor git://anongit.kde.org/cantor.git Applications/14.12:doc
+entry kturtle git://anongit.kde.org/kturtle.git Applications/14.12:doc
+entry kwordquiz git://anongit.kde.org/kwordquiz.git Applications/14.12:doc
+entry kalzium git://anongit.kde.org/kalzium.git Applications/14.12:doc
+entry kgeography git://anongit.kde.org/kgeography.git Applications/14.12:doc
+entry kmplot git://anongit.kde.org/kmplot.git Applications/14.12:doc
+entry kstars git://anongit.kde.org/kstars.git Applications/14.12:doc
+entry pairseditor git://anongit.kde.org/pairs.git Applications/14.12:doc
+entry rocs git://anongit.kde.org/rocs.git Applications/14.12:doc
+entry marble git://anongit.kde.org/marble.git Applications/14.12:doc
+
+module kdeaccessibility
+entry jovie git://anongit.kde.org/jovie.git Applications/14.12:doc
+entry kmag git://anongit.kde.org/kmag.git Applications/14.12:doc
+entry kmousetool git://anongit.kde.org/kmousetool.git Applications/14.12:doc
+entry kmouth git://anongit.kde.org/kmouth.git Applications/14.12:doc
+
+module kdewebdev
+root svn://anonsvn.kde.org/home/kde/branches/Applications/14.12/kdewebdev/doc
+
+module calligra
+root git://anongit.kde.org/calligra.git calligra/2.8:doc
+
+module extragear-sysadmin
+entry partitionmanager git://anongit.kde.org/partitionmanager.git 1.1:doc
+
+module extragear-graphics
+entry kxstitch git://anongit.kde.org/kxstitch.git release-1.2.0:doc
+entry SymbolEditor git://anongit.kde.org/symboleditor.git release-1.5.0:doc
+entry kgraphviewer git://anongit.kde.org/kgraphviewer.git 2.2:doc/en_US
+
+module extragear-multimedia
+entry k3b git://anongit.kde.org/k3b.git 2.0:doc
+entry kamoso git://anongit.kde.org/kamoso.git 2.1:doc
+
+module extragear-network
+entry konversation git://anongit.kde.org/konversation.git 1.5:doc
+entry ktorrent git://anongit.kde.org/ktorrent.git 4.3:doc
+entry smb4k git://anongit.kde.org/smb4k.git 1.1:doc
+
+module extragear-office
+entry kmymoney git://anongit.kde.org/kmymoney.git 4.7:doc
+entry kile git://anongit.kde.org/kile.git 2.1:doc
+entry tellico git://anongit.kde.org/tellico.git 2.3:doc
+
+module extragear-utils
+entry krecipes git://anongit.kde.org/krecipes.git 2.0:doc
+
+module extragear-kdevelop
+entry kdevelop git://anongit.kde.org/kdevelop.git 4.7:doc/kdevelop
+
+# This is just a placeholder because the script
+# is dumb and forgets to process the last line if there is not an empty line at the end
+# having this at the end we make sure that is not a problem :-)

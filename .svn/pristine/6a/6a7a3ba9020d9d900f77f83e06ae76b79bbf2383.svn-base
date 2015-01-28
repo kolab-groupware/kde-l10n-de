@@ -1,0 +1,301 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: tricks.docbook:2
+#, no-c-format
+msgid "Modem Tricks and Hints"
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:4
+#, no-c-format
+msgid ""
+"This section should get the fearful started on the (not so) arcane art of modem "
+"tweaking. The commands here are all Hayes AT standard, but all modems are not "
+"equal, so your mileage may vary."
+msgstr ""
+
+#. Tag: title
+#: tricks.docbook:9
+#, no-c-format
+msgid "Modem Sessions"
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:11
+#, no-c-format
+msgid ""
+"A Modem session allows you to interact with the modem directly. You type "
+"commands, and it will respond. To obtain a modem session, when no connection is "
+"active, open the <guilabel>Configure &kppp;</guilabel> "
+"dialog, select to edit a modem and then click the <guibutton>"
+"Terminal</guibutton> button on the <guilabel>Modem</guilabel> "
+"tab. This will open a window for interactive configuration of the modem. Try "
+"typing <userinput><command>ATZ</command></userinput> "
+"(which resets your modem) Your should get an OK response. Use <menuchoice>"
+"<guimenu>File</guimenu><guimenuitem>Close</guimenuitem></menuchoice> "
+"to end the session."
+msgstr ""
+
+#. Tag: title
+#: tricks.docbook:25
+#, no-c-format
+msgid "Modem Profiles"
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:26
+#, no-c-format
+msgid ""
+"One reason you might want to send the modem commands directly is if you have a "
+"set of modem configurations you want to keep, and not have to specify for every "
+"connection. A good way to do that is via modem profiles. Modems can have "
+"several stored profiles numbered 0,1,... <command>AT&amp;V</command> "
+"can be used to view them all. The default profile is usually 0 (this can be "
+"changed via <command>AT&amp;Y</command>.) The profile currently in use is "
+"called the <quote>active</quote> profile."
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:34
+#, no-c-format
+msgid ""
+"When you change a setting, the active profile is modified. The <command>"
+"ATZ</command> command will have the modem load the default profile, erasing any "
+"changes you have made. To save changes, Load the profile you want to change via "
+"<command>ATZ<replaceable>n</replaceable></command> (where <replaceable>"
+"n</replaceable> is the profile number). Make the changes you want, then save it "
+"with <command>AT&amp;W<replaceable>n</replaceable></command>"
+". To have kppp use the profile you want, change the modem initialization string "
+"(<guibutton>Modem Commands</guibutton> <guilabel>Initialization "
+"String</guilabel> on the <guilabel>Modem</guilabel> tab). For example <command>"
+"ATZ1</command> will have the kppp reset the modem and use stored profile #1."
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:46
+#, no-c-format
+msgid ""
+"If you want reset you modem to get back to some known starting point, use "
+"<command>AT&amp;F&amp;W</command> to set the active profile to the factory "
+"defaults, and store those settings as the default profile."
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:50
+#, no-c-format
+msgid "Examples of profile changes are in the next section"
+msgstr ""
+
+#. Tag: title
+#: tricks.docbook:55
+#, no-c-format
+msgid "Getting the modem to hang up"
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:57
+#, no-c-format
+msgid ""
+"Sometimes you may find that &kppp; has difficulties hanging up the modem. This "
+"is likely the result of a mismatch between &kppp; settings and those of the "
+"modem. A standard modem uses two methods to decide to hangup: <link "
+"linkend=\"hangup-command-method\">Command</link>, and <link "
+"linkend=\"hangup-dtr-method\"><acronym>DTR</acronym></link>"
+". The Command method involves sending an escape sequence to the modem, which "
+"puts it in command mode, then issuing the hangup command (<command>ATH</command>"
+")."
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:65
+#, no-c-format
+msgid ""
+"Outside of &kppp;, when configuring the <application>pppd</application> "
+"package manually, it's often helpful to use the command method, so that one can "
+"exit a terminal session, and then start <application>pppd</application> "
+"without having the modem hangup. In most other situations, the <acronym>"
+"DTR</acronym> method is preferred, as it is simpler."
+msgstr ""
+
+#. Tag: title
+#: tricks.docbook:72
+#, no-c-format
+msgid "<acronym>DTR</acronym> (<command>AT&amp;Dn</command>) method"
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:74
+#, no-c-format
+msgid ""
+"The <acronym>DTR</acronym> method will have the modem hangup whenever &kppp; "
+"stops using the modem. If you obtain a modem session, and query the state via "
+"<command>AT&amp;V</command>, and you can see among the displayed settings for "
+"the active profile a <command>&amp;D0</command>, then the <acronym>DTR</acronym> "
+"hangup method is disabled. To enable the <acronym>DTR</acronym> "
+"method, use the <guibutton>Terminal</guibutton> button to get a modem session, "
+"then:"
+msgstr ""
+
+#. Tag: screen
+#: tricks.docbook:82
+#, no-c-format
+msgid ""
+"<userinput><command>ATZ</command></userinput> <lineannotation>"
+"# reset to default profile</lineannotation>\n"
+"<userinput><command>AT&amp;D2</command></userinput>  <lineannotation>"
+"# Set to hang up on DTR drop</lineannotation>\n"
+"<userinput><command>AT&amp;W</command></userinput>  <lineannotation>"
+"# Write to default profile</lineannotation>"
+msgstr ""
+
+#. Tag: title
+#: tricks.docbook:85
+#, no-c-format
+msgid "How the <acronym>DTR</acronym> method works"
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:87
+#, no-c-format
+msgid ""
+"Whenever the Data Terminal Ready (<acronym>DTR</acronym>"
+") line on the serial line between the host computer and the modem goes high, "
+"the modem hangs up. When &kppp; opens the serial port, the <acronym>"
+"DTR</acronym> line is pulled low, on an external modem, you can see the "
+"<acronym>DTR</acronym> (or <acronym>TR</acronym>) light come on when this "
+"happens. When the <acronym>TR</acronym> light goes out (because &kppp; has "
+"closed the serial port, or something worse!), the modem will hangup."
+msgstr ""
+
+#. Tag: title
+#: tricks.docbook:99
+#, no-c-format
+msgid "Command method"
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:101
+#, no-c-format
+msgid ""
+"The other way to have a modem hang up when connected (used when <command>"
+"AT&amp;D<replaceable>n</replaceable></command> where <replaceable>"
+"n</replaceable> is not <returnvalue>2</returnvalue>) is to have the modem "
+"accept the command when a session is in progress. To have it hang up properly, "
+"get a modem session, and set the guard time to a short interval like so:"
+msgstr ""
+
+#. Tag: screen
+#: tricks.docbook:108
+#, no-c-format
+msgid ""
+"<userinput><command>ATZ</command></userinput>\n"
+"<userinput><command>ATS12=5</command></userinput>\n"
+"<userinput><command>AT&amp;W</command></userinput>"
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:110
+#, no-c-format
+msgid ""
+"Then use the <guilabel>Guard Time</guilabel> slider in the Modem commands "
+"section to match the register (<varname>S12</varname> "
+"to this value <returnvalue>5</returnvalue>. The modem should then hangup "
+"properly."
+msgstr ""
+
+#. Tag: title
+#: tricks.docbook:115
+#, no-c-format
+msgid "How the Command Method Works"
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:117
+#, no-c-format
+msgid ""
+"When the local modem is connected to a remote modem, it is in the <quote>"
+"connect</quote> state, where it passes all characters it receives to the remote "
+"modem without interpretation. To have the modem accept the characters as "
+"commands for itself, one must put the modem into the command state. The escape "
+"code does this."
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:123
+#, no-c-format
+msgid ""
+"The escape code is defined as being three intervals of time whose length is "
+"defined by <varname>S12</varname> in fiftieths of a second."
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:128 tricks.docbook:136
+#, no-c-format
+msgid "Quiet (must last more than <varname>S12</varname>/50 seconds)"
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:131
+#, no-c-format
+msgid ""
+"Escape character (defined by the register <varname>S2</varname>"
+", the default is <quote>+</quote>), repeated three times (less than <varname>"
+"S12</varname>/50 seconds between each."
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:140
+#, no-c-format
+msgid ""
+"Once the modem is in the command state, you can send it commands. To have it "
+"hang up, send the command <command>ATH</command>. The escape codes and the "
+"hangup string used by &kppp; are shown in the <link linkend=\"modem-commands\">"
+"<guilabel>Modem Commands</guilabel></link> dialog. These should match your "
+"modem."
+msgstr ""
+
+#. Tag: title
+#: tricks.docbook:151
+#, no-c-format
+msgid "Make Tone dialing faster"
+msgstr ""
+
+#. Tag: para
+#: tricks.docbook:153
+#, no-c-format
+msgid ""
+"If you can use tone dialing, the amount of time it takes to dial can be changed "
+"using the <varname>S11</varname> register. It gives the duration (in "
+"100hundreds of a second) to send each tone while dialing. The default is "
+"usually 95 (almost a second.) How fast you can dial depends on the phone "
+"company's switching equipment which handles your line. The minimum duration is "
+"50, almost twice as fast, and that speed often works."
+msgstr ""
+
+#. Tag: screen
+#: tricks.docbook:160
+#, no-c-format
+msgid ""
+"<userinput><command>ATZ</command></userinput>        <lineannotation>"
+"# reset to default profile</lineannotation>\n"
+"<userinput><command>ATS11=50</command></userinput>   <lineannotation>"
+"# fastest possible dialing, use a higher number if it doesn't "
+"work</lineannotation>\n"
+"<userinput><command>AT&amp;W</command></userinput>   <lineannotation>"
+"# write to default profile</lineannotation>"
+msgstr ""

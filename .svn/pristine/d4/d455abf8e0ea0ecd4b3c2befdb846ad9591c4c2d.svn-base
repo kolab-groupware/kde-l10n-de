@@ -1,0 +1,259 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<article id="nepomuk" lang="&language;">
+<articleinfo>
+<title
+>Einrichtung der Nepomuk-Desktop-Suche</title>
+
+<authorgroup>
+<author
+><firstname
+>Sebastian</firstname
+><surname
+>Trueg</surname
+><email
+>trueg@kde.org</email
+></author>
+<author
+>&Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;</author>
+<othercredit role="translator"
+><firstname
+>Johannes</firstname
+><surname
+>Obermayr</surname
+><affiliation
+><address
+><email
+>johannesobermayr@gmx.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2013-11-01</date>
+<releaseinfo
+>&kde; 4.12</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>KControl</keyword>
+<keyword
+>Nepomuk</keyword>
+<keyword
+>Desktop-Suche</keyword>
+</keywordset>
+</articleinfo>
+<!-- FIXME add links to 
+http://techbase.kde.org/Projects/Nepomuk 
+http://kdenepomukmanual.wordpress.com/2012/02/06/-->
+<sect1 id="introduction">
+<title
+>Einführung</title>
+
+<para
+>Dieses Moduls ermöglicht die Einrichtung der Desktop-Suche und des Nepomuk Semantik-Dienstes. Weitere Informationen zu den Nepomuk Semantik-Diensten finden Sie auf der <ulink url="http://nepomuk.kde.org/"
+>Nepomuk-Webseite</ulink
+>.</para>
+
+<sect2 id="basic">
+<title
+>Grundeinstellungen</title>
+
+<para
+>Die <guilabel
+>Grundeinstellungen</guilabel
+> ermöglichen das Ein- und Ausschalten des <emphasis
+>semantischen Desktops</emphasis
+> und des Desktop-Suchsystems.</para>
+
+<para
+>Hier gibt es drei Ankreuzfelder:</para>
+<itemizedlist>
+<listitem
+><para
+><guilabel
+>Nepomuk-Semantik-Dienste aktivieren</guilabel
+>: Mit dem Einschalten der Nepomuk-Semantik-Dienste werden die Nepomuk-Dienste ausgeführt. Diese Dienste ermöglichen das Speichern von Metadaten/Vermerken (die Dateien können z. B. in &dolphin; markiert oder bewertet werden) und auch die Desktop-Suche mittels dem Programmstarter von &kde; oder nochmals &dolphin;.</para
+></listitem>
+<listitem
+><para
+><guilabel
+>Nepomuk-Datei-Indizierung aktivieren</guilabel
+>: Mit dem Einschalten der Nepomuk-Datei-Indizierung werden der Indizierungsdienste zusätzlich zu den standardmäßigen Diensten gestartet. Der Datei-Indizierungsdienst arbeitet sich durch alle Dateien in den eingestellten Ordnern (siehe unten) und extrahiert Metadaten von ihnen (z. B. Titel oder Interpret bei Musikdateien oder einfache Sachen wie das Erstellungsdatum). Diese Metadaten werden dann durch die Desktop-Suche offen gelegt (wie die - bereits erwähnten - manuellen Anmerkungen).</para
+></listitem>
+<listitem
+><para
+><guilabel
+>PIM-Daten-Indizierung aktivieren</guilabel
+> Diese Einstellung muss aktiv sein, um die Volltextsuche in &kmail; zu verwenden.</para
+></listitem>
+</itemizedlist>
+
+<para
+>Rechts neben <guilabel
+>Nepomuk-Semantik-Dienste aktivieren</guilabel
+> können Sie auf <guilabel
+>Details...</guilabel
+> klicken, dann werden Informationen über den Status des KDE-Metadatenspeichers angezeigt: Die Anzahl der indizierten Dateien und die Nepomuk-Speichergröße.</para>
+
+<para
+>Unter dem Auswahlfeld <guilabel
+>Nepomuk-Datei-Indizierung aktivieren</guilabel
+> wird der aktuelle Status des Indizierungsdienstes angezeigt. Der Dienst hat vier Zustände:</para>
+<itemizedlist>
+<listitem
+><para
+><guilabel
+>Der Datei-Indizierung ist inaktiv.</guilabel
+> - Der Datei-Indizierungsdienst wird derzeit nicht ausgeführt und wartet auf einen Anlass für eine Aktualisierung (ein Anlass kann eine neu erstellte oder geänderte Datei oder ein Zeitplan für eine wiederholende vollständige Prüfung sein).</para
+></listitem>
+<listitem
+><para
+><guilabel
+>Dateien im Ordner ... werden indiziert</guilabel
+> - Die Datei-Indizierung wird gerade im angegebenen Ordner ausgeführt und analysiert neue oder geänderte Dateien.</para
+></listitem>
+<listitem
+><para
+><guilabel
+>Dateien für die Desktop-Suche werden nach neuen Änderungen durchsucht</guilabel
+> - Die Datei-Indizierung führt gerade die wiederholende Prüfung nach neuen Dateien in allen festgelegten Ordnern aus. Diese Prüfung ist zum Auffinden von Dateien, die nicht durch die normale Dateisystem-Überwachung gefunden werden.</para
+></listitem>
+<listitem
+><para
+><guilabel
+>Die Datei-Indizierung ist ausgesetzt.</guilabel
+> - Die Datei-Indizierung wurde ausgesetzt (z. B. im Pause-Status). Dies kann entweder durch den Benutzer, wenig Festplattenspeicher oder Energiesparmodus (bei Laptops) bedingt sein. In den beiden zuletzt genannten Gründen wird die Datei-Indizierung nach Wegfall des Grundes automatisch wieder ausgeführt.</para
+></listitem>
+</itemizedlist>
+
+<para
+>Abgesehen vom normalen Betrieb kann der Index-Dienst auch einen Fehler-Status haben. Hier gibt es zwei Möglichkeiten:</para>
+<itemizedlist>
+<listitem
+><para
+><guilabel
+>Der Datei-Indizierungsdienst kann nicht initialisiert werden - wahrscheinlich liegt ein Installationsproblem vor</guilabel
+> - Dies sollte nur sehr selten vorkommen und bedeutet, dass ein benötigtes Modul nicht geladen werden kann. Dies kann durch ein Installationsproblem (fehlende Abhängigkeiten) oder ein fehlerhafte Einstellung in den Modulen von &kde; bedingt sein.</para
+></listitem>
+<listitem
+><para
+>Jeder andere Fehler bedeutet ein Kommunikationsproblem mit dem Dienst. Diese Fehler werden vom &DBus;-Untersystem erzeugt und müssen in jedem Fall einzeln untersucht werden.</para
+></listitem>
+</itemizedlist>
+
+</sect2>
+
+<sect2 id="file-indexing">
+<title
+>Indizierung</title>
+
+<para
+>Auf dieser Karteikarte können Dateien und Ordnern ausgewählt werden, die durch den vorher beschriebenen Indizierungs-Dienst analysiert werden sollen. Als Voreinstellung sind hier Dokumente, Audio-Dateien, Bilder und Video-Dateien ausgewählt. </para>
+
+<para
+>Klicken Sie auf <guibutton
+>Ordner einrichten</guibutton
+>, um Ordner aus- und abzuwählen, in denen Dateien analysiert werden. In der Voreinstellung werden der <emphasis
+>Persönliche Ordner</emphasis
+> mit allen Unterordnern analysiert. Durch ein einfaches Entfernen der Markierung wird der entsprechende Ordner ausgenommen. Es ist aber auch möglich, nur einen Unterordner eines ausgenommenen Ordners analysieren zu lassen. Dadurch wird ein sehr spezielle Auswahl der zu analysierenden Ordner ermöglicht.</para>
+
+<para
+>Klicken Sie auf <guibutton
+>Erweitert</guibutton
+>, um Ausschlussfilter über Mimetypen oder den Dateinamen einzustellen. Die Mimetypen und Dateinamen der Dateien in den eingestellten Ordnern werden mit diesen Filterregeln verglichen. Nur wenn keine davon auf die Datei zutrifft, wird sie analysiert. Das ist sehr hilfreich, damit Protokoll- und Sicherungsdateien und dergleichen nicht indiziert werden.</para>
+
+<para
+><guilabel
+>Umgang mit Wechselmedien</guilabel
+>: Nepomuk kann Dateien auf Wechselmedien wie USB-Sticks oder externen Festplatten für die schnelle Desktop-Suche indizieren. Voreingestellt werden keine Dateien indiziert. Hier kann das Verhalten auf eine der beiden Einstellungen angepasst werden:</para>
+<itemizedlist>
+<listitem
+><para
+><guilabel
+>Dateien auf allen Wechselmedien indizieren</guilabel
+> - Dateien auf Wechselmedien werden indiziert, sobald das Medium eingebunden wird. Achtung: Geräte, die unter Verwendung der zweiten Einstellung ausgeschlossen wurden, sind hiervon nicht betroffen.</para
+></listitem>
+<listitem
+><para
+><guilabel
+>Nachfragen, wenn ein Wechselmedium neu eingebunden wird</guilabel
+> - Der Benutzer wird gefragt, ob Dateien auf dem gerade eingebundenen Medium indiziert werden sollen. Ist dies einmal entschieden, wird nicht noch einmal nachgefragt.</para
+></listitem>
+</itemizedlist>
+</sect2>
+
+<sect2 id="backup">
+<title
+>Sicherung</title>
+
+<para
+>Auf dieser Karteikarte können Sie reguläre automatische Sicherungen aller Daten aktivieren, die anderenfalls nicht wiederhergestellt werden können. Dies beinhaltet manuell erstellte Markierungen, Bewertungen aber auch statistische Daten. Als Voreinstellung wird keine Sicherung erstellt, diese Option muss aktiviert werden. Es gibt zwei Arten von Sicherungen, automatische und manuelle.</para>
+
+<sect3 id="automatic">
+<title
+>Automatische Sicherungen</title>
+<para
+>Stellen Sie zuerst die <guilabel
+>Sicherungsfrequenz</guilabel
+> ein: Die Standardeinstellung ist <guilabel
+>Automatische Sicherungen deaktivieren</guilabel
+>. Sie können hier <guilabel
+>Tägliche Sicherung</guilabel
+> oder <guilabel
+>Wöchentliche Sicherung</guilabel
+> auswählen. Stellen Sie dann die <guilabel
+>Sicherungszeit</guilabel
+> mit Hilfe des Drehfeldes und einen Wochentag für wöchentliche Sicherungen ein. Um die Anzahl der Sicherungsdateien zu auf den gewünschten Wert zu begrenzen, ändern Sie die <guilabel
+>Maximale Anzahl an Sicherungen</guilabel
+> mit dem Drehfeld. Damit verhindern Sie, Speicherplatz auf der Festplatte zu verschwenden. Nur die eingetragene Anzahl der letzten Dateien wird behalten, als Standard sind die 10 letzten Dateien eingestellt.</para>
+<para
+>Ihre automatischen Sicherungen werden lokal im folgenden Ordner gespeichert: <filename class="directory"
+>$KDEHOME/share/apps/nepomuk/backupsync/backups/</filename
+>.</para>
+</sect3>
+
+<sect3 id="tools">
+<title
+>Extras</title>
+<itemizedlist>
+<listitem
+><para
+><guilabel
+>Manuelle Sicherung ...</guilabel
+>: Hiermit können Sie jederzeit eigene Sicherungen erstellen. Diese manuellen Sicherungen werden als Datei im ausgewählten Ordner gespeichert. Drücken Sie diesen Knopf und folgen den Anweisungen im Assistenten. Zuerst müssen Sie den Speicherort der Sicherungsdatei angeben. Tragen Sie einen vollständigen gültigen Pfad in das Eingabefeld ein oder wählen Sie mit dem Dateidialog eine Datei aus.</para>
+<note
+><para
+>Sie können eine neue Datei im ausgewählten Ordner erstellen und diese Datei hier angeben.</para
+></note>
+<para
+>Klicken Sie dann auf den Knopf <guibutton
+>Weiter</guibutton
+>, dann wird eine Sicherung begonnen und die Fertigstellung im Dialog angezeigt. </para>
+</listitem>
+<listitem
+><para
+><guilabel
+>Sicherung zurückspielen ...</guilabel
+>: Möchten Sie später eine Sicherung wiederherstellen, drücken Sie diesen Knopf und folgen den Anweisungen im Assistenten. Die Daten werden in die lokale Nepomuk-Datenbank eingefügt. </para
+></listitem>
+</itemizedlist>
+</sect3>
+
+</sect2>
+
+</sect1>
+
+</article>

@@ -1,0 +1,254 @@
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2007, 2008, 2009.
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2012.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2009, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_notifier\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-11-05 11:50+0000\n"
+"PO-Revision-Date: 2012-09-02 17:12+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. i18n: ectx: property (text), widget (QRadioButton, kcfg_removableDevices)
+#: package/contents/ui/config.ui:17
+msgid "Removable devices only"
+msgstr "Nur Wechselmedien"
+
+#. i18n: ectx: property (text), widget (QRadioButton, kcfg_nonRemovableDevices)
+#: package/contents/ui/config.ui:24
+msgid "Non-removable devices only"
+msgstr "Nur Nicht-Wechselmedien"
+
+#. i18n: ectx: property (text), widget (QRadioButton, kcfg_allDevices)
+#: package/contents/ui/config.ui:44
+msgid "All devices"
+msgstr "Alle Geräte"
+
+#: package/contents/ui/DeviceItem.qml:164
+msgctxt ""
+"Accessing is a less technical word for Mounting; translation should be short "
+"and mean 'Currently mounting this device'"
+msgid "Accessing..."
+msgstr "Wird eingebunden ..."
+
+#: package/contents/ui/DeviceItem.qml:164
+msgctxt ""
+"Removing is a less technical word for Unmounting; translation shoud be short "
+"and mean 'Currently unmounting this device'"
+msgid "Removing..."
+msgstr "Einbindung wird gelöst ..."
+
+#: package/contents/ui/DeviceItem.qml:177
+#, kde-format
+msgid "1 action for this device"
+msgid_plural "%1 actions for this device"
+msgstr[0] "1 Aktion für dieses Gerät"
+msgstr[1] "%1 Aktionen für dieses Gerät"
+
+#: package/contents/ui/DeviceItem.qml:186
+#, kde-format
+msgctxt "@info:status Free disk space"
+msgid "%1 free"
+msgstr "%1 frei"
+
+#: package/contents/ui/DeviceItem.qml:225
+msgid "Click to mount this device."
+msgstr "Klicken Sie, um dieses Gerät einzubinden."
+
+#: package/contents/ui/DeviceItem.qml:227
+msgid "Click to eject this disc."
+msgstr "Klicken Sie, um dieses Medium auszuwerfen."
+
+#: package/contents/ui/DeviceItem.qml:229
+msgid "Click to safely remove this device."
+msgstr "Klicken Sie, um dieses Gerät sicher zu trennen."
+
+#: package/contents/ui/DeviceItem.qml:231
+msgid "Click to access this device from other applications."
+msgstr ""
+"Klicken Sie, um mit anderen Anwendungen auf das Gerät zugreifen zu können."
+
+#: package/contents/ui/DeviceItem.qml:241
+msgid ""
+"It is currently <b>not safe</b> to remove this device: applications may be "
+"accessing it. Click the eject button to safely remove this device."
+msgstr ""
+"Das Entfernen dieses Gerätes ist derzeit <b>nicht sicher,</b> da "
+"möglicherweise Anwendungen darauf zugreifen. Drücken Sie auf den <b>Auswurf</"
+"b>knopf, um es sicher entfernen zu können."
+
+#: package/contents/ui/DeviceItem.qml:243
+msgid "This device is currently accessible."
+msgstr "Auf dieses Gerät kann zurzeit zugegriffen werden."
+
+#: package/contents/ui/DeviceItem.qml:248
+msgid ""
+"It is currently <b>not safe</b> to remove this device: applications may be "
+"accessing other volumes on this device. Click the eject button on these "
+"other volumes to safely remove this device."
+msgstr ""
+"Das Entfernen dieses Gerätes ist derzeit <b>nicht sicher,</b> da "
+"möglicherweise Anwendungen auf andere Partitionen zugreifen. Drücken Sie auf "
+"die <b>Auswurf</b>knöpfe der anderen Partitionen, um es sicher entfernen zu "
+"können."
+
+#: package/contents/ui/DeviceItem.qml:250
+msgid "It is currently safe to remove this device."
+msgstr "Es ist sicher, dieses Gerät zu entfernen."
+
+#: package/contents/ui/DeviceItem.qml:253
+msgid "This device is not currently accessible."
+msgstr "Auf dieses Gerät kann zurzeit nicht zugegriffen werden."
+
+#: package/contents/ui/devicenotifier.qml:163
+msgid "No devices available"
+msgstr "Es sind keine Geräte verfügbar"
+
+#: package/contents/ui/devicenotifier.qml:166
+msgid "Most recent device"
+msgstr "Zuletzt angeschlossenes Gerät"
+
+#: package/contents/ui/devicenotifier.qml:193
+msgid "Available Devices"
+msgstr "Verfügbare Geräte"
+
+#: package/contents/ui/devicenotifier.qml:193
+msgid "No Devices Available"
+msgstr "Es sind keine Geräte verfügbar"
+
+#~ msgid "This device is currently not accessible."
+#~ msgstr "Auf dieses Gerät ist zurzeit kein Zugriff möglich."
+
+#~ msgid "Display"
+#~ msgstr "Anzeige"
+
+#~ msgid "Automounting"
+#~ msgstr "Automatisches Einbinden"
+
+#~ msgid "Show hidden devices"
+#~ msgstr "Versteckte Geräte anzeigen"
+
+#~ msgctxt "Hide a device"
+#~ msgid "Hide %1"
+#~ msgstr "„%1“ ausblenden"
+
+#~ msgid "Mounting..."
+#~ msgstr "Wird eingebunden ..."
+
+#, fuzzy
+#~| msgid "Device is plugged in and can be accessed by applications."
+#~ msgid ""
+#~ "Device is plugged in and the volume can be accessed by applications. It "
+#~ "is not safe to remove this device."
+#~ msgstr ""
+#~ "Das Gerät ist angeschlossen und ist für den Zugriff durch Anwendungen "
+#~ "verfügbar."
+
+#, fuzzy
+#~| msgid "Device is plugged in, but not mounted for access yet."
+#~ msgid ""
+#~ "Device is plugged in and the volume is not mounted for access yet. The "
+#~ "device can be safely removed."
+#~ msgstr ""
+#~ "Das Gerät ist angeschlossen, jedoch noch nicht für den Zugriff "
+#~ "eingebunden."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not unmount the device.\n"
+#~| "One or more files on this device are open within an application."
+#~ msgid ""
+#~ "Could not unmount device %1.\n"
+#~ "One or more files on this device are open within an application."
+#~ msgstr ""
+#~ "Die Geräteeinbindung lässt sich nicht lösen.\n"
+#~ "Eine oder mehrere Dateien auf dem Gerät werden von einer Anwendung offen "
+#~ "gehalten."
+
+#~ msgid ""
+#~ "Cannot eject the disc.\n"
+#~ "One or more files on this disc are open within an application."
+#~ msgstr ""
+#~ "Das Medium lässt sich nicht auswerfen.\n"
+#~ "Eine oder mehrere Dateien auf dem Medium werden von einer Anwendung offen "
+#~ "gehalten."
+
+#, fuzzy
+#~| msgid "Most recent device: %1"
+#~ msgid "Could not mount device %1."
+#~ msgstr "Zuletzt angeschlossenes Gerät: %1"
+
+#~ msgid "Cannot mount the disc."
+#~ msgstr "Das Medium kann nicht eingebunden werden."
+
+#~ msgid "No devices plugged in"
+#~ msgstr "Keine Geräte angeschlossen"
+
+#~ msgctxt "General options page"
+#~ msgid "General"
+#~ msgstr "Allgemein"
+
+#~ msgid "No devices plugged in."
+#~ msgstr "Keine Geräte angeschlossen."
+
+#~ msgid "Devices recently plugged in:"
+#~ msgstr "Kürzlich angeschlossene Geräte:"
+
+#~ msgid "Show "
+#~ msgstr "Anzeigen "
+
+#~ msgid " second"
+#~ msgid_plural " seconds"
+#~ msgstr[0] " Sekunde"
+#~ msgstr[1] " Sekunden"
+
+#~ msgid "Show all the items"
+#~ msgstr "Alle Elemente zeigen"
+
+#~ msgid "never"
+#~ msgstr "nie"
+
+#~ msgid "&Time to stay on top:"
+#~ msgstr "Anzeige&dauer im Vordergrund:"
+
+#~ msgid "&Number of items displayed:"
+#~ msgstr "Anzahl anzuzeigender &Elemente:"
+
+#~ msgid "Unlimited"
+#~ msgstr "Unbegrenzt"
+
+#~ msgid "&Display time of items:"
+#~ msgstr "Anzeigedauer der &Elemente:"
+
+#~ msgid "Configure New Device Notifier"
+#~ msgstr "Gerätebenachrichtigung einrichten"
+
+#, fuzzy
+#~| msgid "1 action available"
+#~| msgid_plural "%1 actions available"
+#~ msgid "0 action available"
+#~ msgid_plural "%1 actions available"
+#~ msgstr[0] "1 Aktion verfügbar"
+#~ msgstr[1] "%1 Aktionen verfügbar"
+
+#~ msgid "Height of movement (px):"
+#~ msgstr "Höhe der Bewegung (px):"
+
+#~ msgid ""
+#~ "Welcome to Device Notifier \n"
+#~ " Plug a device to test"
+#~ msgstr ""
+#~ "Willkommen bei der Gerätebenachrichtigung\n"
+#~ " Schließen Sie zum Testen ein Gerät an."
+
+#~ msgid "A new device has been detected: \n"
+#~ msgstr "Es wurde ein neues Gerät gefunden: \n"

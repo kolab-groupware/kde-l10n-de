@@ -1,0 +1,95 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: PolicyKit-kde_introduction\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:26+0000\n"
+"PO-Revision-Date: 2009-07-20 21:08+0200\n"
+"Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/extragear/base/doc/PolicyKit-kde/introduction."
+"docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 922859\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: introduction.docbook:2
+#, no-c-format
+msgid "Overview"
+msgstr "Übersicht"
+
+#. Tag: para
+#: introduction.docbook:4
+#, no-c-format
+msgid ""
+"&policykit-kde; is a implementation of PolicyKit tool to the look and feel "
+"of KDE."
+msgstr ""
+"&policykit-kde; ist die Einbindung des Werkzeugs <emphasis>PolicyKit</"
+"emphasis> mit dem Aussehen und der Bedienung von &kde;."
+
+#. Tag: para
+#: introduction.docbook:7
+#, no-c-format
+msgid ""
+"PolicyKit allows easy and secure password management, it can be used by "
+"applications to ask their users for a password. Each application defines a "
+"set of actions that can be executed by their program. The application will "
+"call PolicyKit to see if the user can perform a given action, if not, the "
+"application can issue the auth dialog where the user can enter his/her "
+"password, root password, the password of a given group of users or even "
+"swipe the finger."
+msgstr ""
+"PolicyKit ermöglicht die einfache und sichere Passwortverwaltung und kann "
+"von Anwendungen zur Abfrage des Passwort der Benutzer verwendet werden. Jede "
+"Anwendung definiert einen Satz an Aktionen, die ausgeführt werden können. "
+"Die Anwendung <emphasis>fragt</emphasis> PolicyKit, ob die Berechtigung zum "
+"Ausführen der Aktion vorliegt. Falls nicht, kann die Anwendung ein Fenster "
+"zur Abfrage des eigenen, Root- oder Gruppenpassworts oder auch des "
+"Fingerabdrucks aufrufen."
+
+#. Tag: para
+#: introduction.docbook:15
+#, no-c-format
+msgid ""
+"&policykit-kde; consists of two applications: The Authorization agent that "
+"receives requests for authentication, and shows a dialog asking for a "
+"password. The Authorization manager that is used to manage the "
+"authorizations, it is mainly used by system administrators that may want to "
+"change the default behavior of a program policies."
+msgstr ""
+"&policykit-kde; besteht aus zwei Anwendungen: Dem "
+"<emphasis>Berechtigungsagenten</emphasis>, der die Anfragen zu den "
+"Berechtigungen erhält und ein Fenster zur Passwortabfrage anzeigt und dem "
+"<emphasis>Berechtigungsverwalter</emphasis>, der die Berechtigungen "
+"verwaltet und meist von Systemadministratoren zur Änderung des "
+"standardmäßigen Verhaltens von Programmabläufen verwendet wird."
+
+#. Tag: para
+#: introduction.docbook:22
+#, no-c-format
+msgid ""
+"For Qt/KDE developers there is Qt library to allow easy integration with you "
+"application and PolicyKit."
+msgstr ""
+"Für Qt/KDE-Entwickler gibt es eine Qt-Bibliothek zur einfachen Einbindung "
+"von PolicyKit in die Anwendung."
+
+#. Tag: para
+#: introduction.docbook:25
+#, no-c-format
+msgid ""
+"For more information of how PolicyKit works, it's design and API visit "
+"<ulink url=\"http://hal.freedesktop.org/docs/PolicyKit/\">PolicyKit Library "
+"Reference Manual</ulink>"
+msgstr ""
+"Für weitere Informationen zur Funktionsweise, zum Aufbau und zur API von "
+"PolicyKit sollte das <ulink url=\"http://hal.freedesktop.org/docs/PolicyKit/"
+"\">PolicyKit-Handbuch</ulink> beachtet werden."

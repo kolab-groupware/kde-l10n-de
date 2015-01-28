@@ -1,0 +1,309 @@
+# Stephan Johach <hunsum@gmx.de>, 2004.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006.
+# Frederik Schwarzer <schwarzer@kde.org>, 2007, 2008, 2009.
+# Burkhard Lück <lueck@hube-lueck.de>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio_svn\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-03-10 03:45+0100\n"
+"PO-Revision-Date: 2009-11-29 12:06+0100\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Frederik Schwarzer"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "schwarzer@kde.org"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, CommitDlg)
+#: ksvnd/commitdlg.ui:13
+msgid "Log Message"
+msgstr "Protokollmeldung"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton1)
+#. i18n: ectx: property (text), widget (QPushButton, buttonOk)
+#: ksvnd/commitdlg.ui:49 svnhelper/subversiondiff.ui:56
+#: svnhelper/subversionlog.ui:59
+msgid "&OK"
+msgstr "&OK"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton2)
+#: ksvnd/commitdlg.ui:56
+msgid "&Cancel"
+msgstr "&Abbrechen"
+
+#: ksvnd/ksvnd.cpp:381 svnhelper/kio_svn_helper.cpp:310
+msgid "Subversion"
+msgstr "Subversion"
+
+#: svn.cpp:233
+#, kde-format
+msgid "Looking for %1..."
+msgstr "Suchen nach %1 ..."
+
+#: svn.cpp:343
+msgid "For reasons of safety, directories are not yet supported."
+msgstr "Aus Sicherheitsgründen sind Ordner noch nicht unterstützt."
+
+#: svn.cpp:1198
+msgid "Nothing to commit."
+msgstr "Nichts zum Übertragen."
+
+#: svn.cpp:1200
+#, kde-format
+msgid "Committed revision %1."
+msgstr "Revision %1 übertragen."
+
+#: svn.cpp:1453
+#, kde-format
+msgid "A (bin) %1"
+msgstr "A (bin) %1"
+
+#: svn.cpp:1455 svn.cpp:1487
+#, kde-format
+msgid "A %1"
+msgstr "A %1"
+
+#: svn.cpp:1461 svn.cpp:1483
+#, kde-format
+msgid "D %1"
+msgstr "D %1"
+
+#: svn.cpp:1464
+#, kde-format
+msgid "Restored %1."
+msgstr "Wiederhergestellt: %1"
+
+#: svn.cpp:1467
+#, kde-format
+msgid "Reverted %1."
+msgstr "Rückgängig gemacht: %1"
+
+#: svn.cpp:1470
+#, kde-format
+msgid ""
+"Failed to revert %1.\n"
+"Try updating instead."
+msgstr ""
+"Rückgängigmachen von %1 ist fehlgeschlagen.\n"
+"Versuchen Sie stattdessen zu aktualisieren."
+
+#: svn.cpp:1473
+#, kde-format
+msgid "Resolved conflicted state of %1."
+msgstr "Konfliktstatus von %1 aufgelöst."
+
+#: svn.cpp:1477
+#, kde-format
+msgid "Skipped missing target %1."
+msgstr "Fehlendes Ziel wurde übersprungen: %1"
+
+#: svn.cpp:1479
+#, kde-format
+msgid "Skipped  %1."
+msgstr "Übersprungen: %1"
+
+#: svn.cpp:1532
+#, kde-format
+msgid "Exported external at revision %1."
+msgstr "External wurde exportiert bei Revision %1."
+
+#: svn.cpp:1534
+#, kde-format
+msgid "Exported revision %1."
+msgstr "Revision exportiert: %1"
+
+#: svn.cpp:1537
+#, kde-format
+msgid "Checked out external at revision %1."
+msgstr "External ausgelesen bei Revision %1."
+
+#: svn.cpp:1539
+#, kde-format
+msgid "Checked out revision %1."
+msgstr "Revision ausgelesen: %1"
+
+#: svn.cpp:1543
+#, kde-format
+msgid "Updated external to revision %1."
+msgstr "External aktualisiert zu Revision: %1"
+
+#: svn.cpp:1545
+#, kde-format
+msgid "Updated to revision %1."
+msgstr "Aktualisiert zu Revision: %1"
+
+#: svn.cpp:1548
+#, kde-format
+msgid "External at revision %1."
+msgstr "External bei Revision: %1"
+
+#: svn.cpp:1550
+#, kde-format
+msgid "At revision %1."
+msgstr "Bei Revision: %1"
+
+#: svn.cpp:1556
+msgid "External export complete."
+msgstr "Export von Externals abgeschlossen."
+
+#: svn.cpp:1558
+msgid "Export complete."
+msgstr "Export abgeschlossen."
+
+#: svn.cpp:1561
+msgid "External checkout complete."
+msgstr "Auslesen von Externals abgeschlossen."
+
+#: svn.cpp:1563
+msgid "Checkout complete."
+msgstr "Auslesen abgeschlossen."
+
+#: svn.cpp:1566
+msgid "External update complete."
+msgstr "Aktualisierung von Externals abgeschlossen."
+
+#: svn.cpp:1568
+msgid "Update complete."
+msgstr "Aktualisierung abgeschlossen."
+
+#: svn.cpp:1578
+#, kde-format
+msgid "Fetching external item into %1."
+msgstr "Eintrag von External werden geholt nach: %1"
+
+#: svn.cpp:1582
+#, kde-format
+msgid "Status against revision: %1."
+msgstr "Status zu Revision: %1"
+
+#: svn.cpp:1585
+#, kde-format
+msgid "Performing status on external item at %1."
+msgstr "Status für External-Eintrag bei %1"
+
+#: svn.cpp:1588
+#, kde-format
+msgid "Sending %1"
+msgstr "Wird gesendet: %1"
+
+#: svn.cpp:1592
+#, kde-format
+msgid "Adding (bin) %1."
+msgstr "Wird hinzugefügt (bin): %1"
+
+#: svn.cpp:1594
+#, kde-format
+msgid "Adding %1."
+msgstr "Wird hinzugefügt: %1"
+
+#: svn.cpp:1598
+#, kde-format
+msgid "Deleting %1."
+msgstr "Wird gelöscht: %1"
+
+#: svn.cpp:1601
+#, kde-format
+msgid "Replacing %1."
+msgstr "Wird ersetzt: %1"
+
+#: svn.cpp:1606
+msgid "Transmitting file data "
+msgstr "Datei-Daten werden übertragen "
+
+#: svnhelper/kio_svn_helper.cpp:48
+msgid "Subversion Checkout"
+msgstr "Subversion Checkout"
+
+#: svnhelper/kio_svn_helper.cpp:70
+msgid "Subversion Switch"
+msgstr "Subversion Switch"
+
+#: svnhelper/kio_svn_helper.cpp:282
+msgid "Request not recognized - it might not be implemented yet."
+msgstr ""
+"Unbekannte Anfrage. Diese Funktion ist möglicherweise noch nicht eingebaut."
+
+#: svnhelper/kio_svn_helper.cpp:282
+msgid "Feature Not Implemented"
+msgstr "Funktion nicht eingebaut"
+
+#: svnhelper/kio_svn_helper.cpp:318
+msgid "Subversion Helper"
+msgstr "Subversion-Hilfe"
+
+#: svnhelper/kio_svn_helper.cpp:318
+msgid "KDE frontend for SVN"
+msgstr "KDE-Programm für SVN"
+
+#: svnhelper/kio_svn_helper.cpp:325
+msgid "Update given URL"
+msgstr "Übergebene Adresse aktualisieren (update)"
+
+#: svnhelper/kio_svn_helper.cpp:327
+msgid "Commit given URL"
+msgstr "Übergebene Adresse einspielen (commit)"
+
+#: svnhelper/kio_svn_helper.cpp:329
+msgid "Checkout in given directory"
+msgstr "In übergebenen Ordner auslesen (checkout)"
+
+#: svnhelper/kio_svn_helper.cpp:331
+msgid "Add given URL to the working copy"
+msgstr "Übergebene Adresse der Arbeitskopie hinzufügen (add)"
+
+#: svnhelper/kio_svn_helper.cpp:333
+msgid "Delete given URL from the working copy"
+msgstr "Übergebene Adresse aus Arbeitskopie entfernen (delete)"
+
+#: svnhelper/kio_svn_helper.cpp:335
+msgid "Switch given working copy to another branch"
+msgstr "Übergebene Arbeitskopie zu einem anderen Zweig wechseln (switch)"
+
+#: svnhelper/kio_svn_helper.cpp:337
+msgid "Revert local changes"
+msgstr "Lokale Änderungen verwerfen (revert)"
+
+#: svnhelper/kio_svn_helper.cpp:339
+msgid "Merge changes between two branches"
+msgstr "Änderungen aus zwei Zweigen zusammenführen (merge)"
+
+#: svnhelper/kio_svn_helper.cpp:341
+msgid "Show locally made changements with diff"
+msgstr "Lokale Änderungen anzeigen (diff)"
+
+#: svnhelper/kio_svn_helper.cpp:343
+msgid "URL to update/commit/add/delete from Subversion"
+msgstr ""
+"Adresse zum Aktualisieren/Einspielen/Hinzufügen/Entfernen in Subversion"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: svnhelper/subversioncheckout.ui:37 svnhelper/subversionswitch.ui:37
+msgid "Revision (0 for HEAD):"
+msgstr "Revision (0 für HEAD):"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, Subversion_Diff)
+#: svnhelper/subversiondiff.ui:13
+msgid "Subversion Diff"
+msgstr "Subversion Diff"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, Subversion_Log)
+#: svnhelper/subversionlog.ui:13
+msgid "Subversion Log"
+msgstr "Subversion-Protokoll"
+
+#~ msgid "&Help"
+#~ msgstr "&Hilfe"
+
+#~ msgid "F1"
+#~ msgstr "F1"

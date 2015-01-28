@@ -1,0 +1,416 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: tellico_advanced\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:27+0000\n"
+"PO-Revision-Date: 2012-04-24 08:27+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/playground/office/doc/tellico/advanced.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 942831\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: advanced.docbook:2
+#, no-c-format
+msgid "Advanced Usage"
+msgstr "Weiterführende Funktionen"
+
+#. Tag: title
+#: advanced.docbook:5
+#, no-c-format
+msgid "Command Line Options"
+msgstr "Befehlszeilenoptionen"
+
+#. Tag: para
+#: advanced.docbook:7
+#, no-c-format
+msgid ""
+"When running &appname; from the command line, there are several options for "
+"opening data files. They may be seen by running <userinput>tellico --help</"
+"userinput>."
+msgstr ""
+"Wenn &appname; von der Befehlszeile gestartet wird, gibt es mehrere Optionen "
+"zur Öffnung von Sammlungsdateien. Diese Optionen werden beim Aufruf von "
+"<userinput>tellico --help</userinput> angezeigt."
+
+#. Tag: programlisting
+#: advanced.docbook:11
+#, no-c-format
+msgid ""
+"Usage: tellico [Qt-options] [KDE-options] [options] [filename]\n"
+"\n"
+"Tellico - a collection manager for KDE\n"
+"\n"
+"Options:\n"
+"  --nofile                  Do not reopen the last open file\n"
+"  --bibtex                  Import &lt;filename&gt; as a bibtex file\n"
+"  --mods                    Import &lt;filename&gt; as a MODS file\n"
+"  --ris                     Import &lt;filename&gt; as a RIS file\n"
+"\n"
+"Arguments:\n"
+"  filename                  File to open"
+msgstr ""
+"Aufruf: tellico [Qt-options] [KDE-options] [options] [filename]\n"
+"\n"
+"Tellico - eine Sammlungsverwaltung für KDE\n"
+"\n"
+"Optionen:\n"
+"  --nofile                  Die letzte offene Datei nicht erneut öffnen\n"
+"  --bibtex                  &lt;Dateiname&gt; als Bibtex-Datei importieren\n"
+"  --mods                    &lt;filename&gt; als MODS-Datei importieren\n"
+"  --ris                     &lt;filename&gt; als RIS-Datei importieren\n"
+"\n"
+"Argumente:\n"
+"  filename                  Zu öffnende Datei"
+
+#. Tag: title
+#: advanced.docbook:16
+#, no-c-format
+msgid "&DBus; Interface"
+msgstr "&DBus;-Schnittstelle"
+
+#. Tag: para
+#: advanced.docbook:18
+#, no-c-format
+msgid ""
+"&appname; has a minimal &DBus; interface, which can be useful for scripting "
+"or interacting with a running application from the command-line. As with all "
+"&DBus; calls, you need to specify the service you want to interface with, "
+"and the particular interface. The name of the &DBus; service is "
+"<constant>org.kde.tellico</constant>."
+msgstr ""
+"&appname; hat eine minimale &DBus;-Schnittstelle, die für Skripte oder die "
+"Steuerung eines laufenden Programms von der Befehlszeile aus benutzt werden "
+"kann. Wie bei allen &DBus;-Aufrufen, müssen Sie den Dienst angeben, mit dem "
+"Sie kommunizieren möchten und die spezielle Schnittelle. Der Name des &DBus;-"
+"Dienstes für dies Programm lautet <constant>org.kde.tellico</constant>."
+
+#. Tag: title
+#: advanced.docbook:23
+#, no-c-format
+msgid "&DBus; Commands"
+msgstr "&DBus;-Befehle"
+
+#. Tag: para
+#: advanced.docbook:25
+#, no-c-format
+msgid ""
+"Two &DBus; primary objects are available in the tellico interface: "
+"<constant>Tellico</constant> and <constant>Collections</constant>."
+msgstr ""
+"Zwei &DBus;-Objekte sind über die &appname;-Schnittstelle verfügbar: "
+"<constant>Tellico</constant> und <constant>Collections</constant>."
+
+#. Tag: title
+#: advanced.docbook:28
+#, no-c-format
+msgid "The <constant>Tellico</constant> Object"
+msgstr "Das Objekt <constant>Tellico</constant>"
+
+#. Tag: para
+#: advanced.docbook:30
+#, no-c-format
+msgid ""
+"The full list of &DBus; commands in the <constant>tellico</constant> object "
+"is shown below:"
+msgstr ""
+"Die vollständige Liste der &DBus;-Befehle für das Objekt <constant>tellico</"
+"constant> wird im folgenden gezeigt:"
+
+#. Tag: programlisting
+#: advanced.docbook:32
+#, no-c-format
+msgid ""
+"bool importTellico(QString file, QString action)\n"
+"bool importBibtex(QString file, QString action)\n"
+"bool importMODS(QString file, QString action)\n"
+"bool importRIS(QString file, QString action)\n"
+"bool exportXML(QString file)\n"
+"bool exportZip(QString file)\n"
+"bool exportBibtex(QString file)\n"
+"bool exportHTML(QString file)\n"
+"bool exportCSV(QString file)\n"
+"bool exportPilotDB(QString file)\n"
+"QList&lt;int&gt; selectedEntries()\n"
+"QList&lt;int&gt; filteredEntries()\n"
+"void openFile(QString file)\n"
+"void setFilter(QString text)\n"
+"bool showEntry(int id)"
+msgstr ""
+"bool importTellico(QString file, QString action)\n"
+"bool importBibtex(QString file, QString action)\n"
+"bool importMODS(QString file, QString action)\n"
+"bool importRIS(QString file, QString action)\n"
+"bool exportXML(QString file)\n"
+"bool exportZip(QString file)\n"
+"bool exportBibtex(QString file)\n"
+"bool exportHTML(QString file)\n"
+"bool exportCSV(QString file)\n"
+"bool exportPilotDB(QString file)\n"
+"QList&lt;int&gt; selectedEntries()\n"
+"QList&lt;int&gt; filteredEntries()\n"
+"void openFile(QString file)\n"
+"void setFilter(QString text)\n"
+"bool showEntry(int id)"
+
+#. Tag: para
+#: advanced.docbook:34
+#, no-c-format
+msgid ""
+"For the four import commands, the first argument is the file to import, and "
+"the second is the import action. Three actions are available: "
+"<emphasis>replace</emphasis>, <emphasis>append</emphasis>, and "
+"<emphasis>merge</emphasis>. Four file formats are supported for importing: "
+"Tellico &XML; files, Bibtex files, MODS files, and RIS files."
+msgstr ""
+"Bei den vier Import-Befehlen ist das erste Argument die zu importierende "
+"Datei und das zweite Argument die Importaktion. Drei Aktionen sind "
+"vorhanden: <emphasis>replace</emphasis>, <emphasis>append</emphasis> und "
+"<emphasis>merge</emphasis>. Vier Dateiformate werden zum Importieren "
+"unterstützt: Tellico-&XML;-Dateien, Bibtex-Dateien, MODS-Dateien und RIS-"
+"Dateien."
+
+#. Tag: para
+#: advanced.docbook:38
+#, no-c-format
+msgid ""
+"The current open collection in &appname; may be exported to a file, in "
+"either Tellico &XML; format, Tellico ZIP format, Bibtex, &HTML;, comma-"
+"separated values (CSV), or the PilotDB format."
+msgstr ""
+"Die aktuell geöffnete Sammlung in &appname; kann in eine Datei exportiert "
+"werden, entweder im Tellico-&XML;-Format, im Tellico-ZIP-Format, im Bibtex-"
+"Format, im &HTML;-Format, als durch Komma getrennte Werte (CSV), oder im "
+"PilotDB-Format."
+
+#. Tag: para
+#: advanced.docbook:42
+#, no-c-format
+msgid ""
+"A list of the entry IDs currently selected or being filtered is able to "
+"facilitate showing or updating entries in the view."
+msgstr ""
+"Mit einer Liste der ID's der ausgewählten oder gefilterten Einträge können "
+"Einträge angezeigt oder die Anzeige aktualisiert werden."
+
+#. Tag: para
+#: advanced.docbook:44
+#, no-c-format
+msgid ""
+"A new data file may be opened by using the <command>openFile()</command> "
+"command. The full path must be specified."
+msgstr ""
+"Eine neue Sammlungsdatei kann mit dem Befehl <command>openFile()</command> "
+"geöffnet werden. Der vollständige Pfad zur Datei muss angegeben werden."
+
+#. Tag: para
+#: advanced.docbook:46
+#, no-c-format
+msgid ""
+"A new filter may be set using the <command>setFilter()</command> command, "
+"which is the equivalent of typing in the filter box in the main window."
+msgstr ""
+"Ein neuer Filter kann mit dem Befehl <command>setFilter()</command> gesetzt "
+"werden. Dies entspricht der Eingabe im Filterfeld im Hauptfenster."
+
+#. Tag: para
+#: advanced.docbook:48
+#, no-c-format
+msgid ""
+"Given an entry ID, <command>showEntry()</command> will select that entry and "
+"show the entry details in the main window."
+msgstr ""
+"Mit einer angegebenen ID wird mit dem Befehl <command>showEntry()</command> "
+"dieser Eintrag ausgewählt und dessen Details im Hauptfenster gezeigt."
+
+#. Tag: title
+#: advanced.docbook:52
+#, no-c-format
+msgid "The <constant>Collections</constant> Object"
+msgstr "Das Objekt <constant>Collections</constant>"
+
+#. Tag: para
+#: advanced.docbook:54
+#, no-c-format
+msgid ""
+"The full list of &DBus; commands in the <constant>Collections</constant> "
+"object is shown below:"
+msgstr ""
+"Die vollständige Liste der &DBus;-Befehle für das Objekt "
+"<constant>Collections</constant> wird im folgenden gezeigt:"
+
+#. Tag: programlisting
+#: advanced.docbook:56
+#, no-c-format
+msgid ""
+"int addEntry()\n"
+"bool removeEntry(int entryID)\n"
+"QStringList allValues(QString fieldName)\n"
+"QStringList entryValues(int entryID, QString fieldName)\n"
+"QStringList selectedBibtexKeys()\n"
+"QString entryBibtexKey(int entryID)\n"
+"bool setEntryValue(int entryID, QString fieldName, QString value)\n"
+"bool addEntryValue(int entryID, QString fieldName, QString value)"
+msgstr ""
+"int addEntry()\n"
+"bool removeEntry(int entryID)\n"
+"QStringList allValues(QString fieldName)\n"
+"QStringList entryValues(int entryID, QString fieldName)\n"
+"QStringList selectedBibtexKeys()\n"
+"QString entryBibtexKey(int entryID)\n"
+"bool setEntryValue(int entryID, QString fieldName, QString value)\n"
+"bool addEntryValue(int entryID, QString fieldName, QString value)"
+
+#. Tag: para
+#: advanced.docbook:58
+#, no-c-format
+msgid ""
+"A new empty entry may be created in the current collection using the "
+"<command>addEntry()</command> command. The return value is the entry ID, "
+"which can then be used to set the field values in the entry. An entry can be "
+"deleted from the collection by calling <command>removeEntry()</command>."
+msgstr ""
+"Ein neuer leerer Eintrag in der aktuell geöffneten Sammlung kann mit dem "
+"Befehl <command>addEntry()</command> erzeugt werden. Der Rückgabewert dieses "
+"Befehls ist die ID des Eintrags. Diese ID kann benutzt werden, um die Werte "
+"der Felder des Eintrags einzugeben. Um einen Eintrag aus der Sammlung zu "
+"löschen, benutzen Sie den Befehl <command>removeEntry()</command>."
+
+#. Tag: para
+#: advanced.docbook:62
+#, no-c-format
+msgid ""
+"Calling <command>allValues()</command> using just a field name will return "
+"all the values for that field for the currently selected entries. If no "
+"entries are selected, the return list is empty. If an entry ID is included "
+"in the command, the field values for that specific entry are returned."
+msgstr ""
+"Der Aufruf von <command>allValues()</command> nur mit einem Feldnamen gibt "
+"alle Werte des Feldes für die aktuell ausgewählten Einträge zurück. Sind "
+"keine Einträge ausgewählt, ist die zurückgegeben Liste leer. Ist die Kennung "
+"(ID) eines Eintrags angegeben, werden die Feldwerte für diesen Eintrag "
+"zurückgegeben. "
+
+#. Tag: para
+#: advanced.docbook:66
+#, no-c-format
+msgid ""
+"If the current collection is a bibliography, calling "
+"<command>selectedBibtexKeys()</command> will return the Bibtex citation key "
+"for all selected entries. The bibtexKey for a specific entry may be found by "
+"using the <command>entryBibtexKey()</command> command."
+msgstr ""
+"Ist die geöffnete Sammlung ein Literaturverzeichnis, dann gibt der Aufruf "
+"von <command>selectedBibtexKeys()</command> den Bibtex-Zitatschlüssel aller "
+"ausgewählten Einträge zurück. Der bibtexKey für einen bestimmten Eintrag "
+"kann mit dem Befehl <command>entryBibtexKey()</command> gefunden werden."
+
+#. Tag: para
+#: advanced.docbook:70
+#, no-c-format
+msgid ""
+"Entries can be edited directly with the &DBus; interface. Given an entry ID, "
+"<command>setEntryValue()</command> will set the field value directly. To add "
+"a value, without affecting the existing values, use <command>addEntryValue()"
+"</command>. The new value gets appended to the end of the existing list."
+msgstr ""
+"Einträge können direkt über die &DBus;-Schnittstelle bearbeitet werden. Mit "
+"der Kennung (ID) eines Eintrags setzte der Befehl <command>setEntryValue()</"
+"command> den Wert des Feldes. Um einen Wert hinzuzufügen, ohne vorhanden "
+"Daten zu ändern, verwenden Sie den Befehl <command>addEntryValue()</"
+"command>. Der neue Wert wird an das Ende der vorhandenen Liste angehängt"
+
+#. Tag: title
+#: advanced.docbook:78
+#, no-c-format
+msgid "&DBus; Examples"
+msgstr "&DBus;-Beispiele"
+
+#. Tag: para
+#: advanced.docbook:80
+#, no-c-format
+msgid ""
+"Here are some examples for scripting &appname; using the &DBus; interface."
+msgstr ""
+"Hier finden Sie einige Beispiele von Skripten für &appname; mit der &DBus;-"
+"Schnittstelle."
+
+#. Tag: screen
+#: advanced.docbook:84
+#, no-c-format
+msgid ""
+"<emphasis>Open a Bibtex file</emphasis>\n"
+"<prompt>%</prompt> <userinput>qdbus org.kde.tellico /Tellico org.kde.tellico."
+"importBibtex \"/home/robby/reference.bib\" \"replace\"</userinput>\n"
+"<computeroutput>true</computeroutput>"
+msgstr ""
+"<emphasis>Öffnen einer Bibtex-Datei</emphasis>\n"
+"<prompt>%</prompt> <userinput>qdbus org.kde.tellico /Tellico org.kde.tellico."
+"importBibtex \"/home/robby/reference.bib\" \"replace\"</userinput>\n"
+"<computeroutput>true</computeroutput>"
+
+#. Tag: screen
+#: advanced.docbook:86
+#, no-c-format
+msgid ""
+"<emphasis>Export a Bibtex file</emphasis>\n"
+"<prompt>%</prompt> <userinput>qdbus org.kde.tellico /Tellico org.kde.tellico."
+"exportBibtex ~/documents/reference.bib</userinput>\n"
+"<computeroutput>true</computeroutput>"
+msgstr ""
+"<emphasis>Export einer Bibtex-Datei</emphasis>\n"
+"<prompt>%</prompt> <userinput>qdbus org.kde.tellico /Tellico org.kde.tellico."
+"exportBibtex ~/documents/reference.bib</userinput>\n"
+"<computeroutput>true</computeroutput>"
+
+#. Tag: screen
+#: advanced.docbook:88
+#, no-c-format
+msgid ""
+"<emphasis>Echo the citation key of the current selection</emphasis>\n"
+"<prompt>%</prompt> <userinput>qdbus org.kde.tellico /Collections org.kde."
+"tellico.selectedBibtexKeys</userinput>\n"
+"<computeroutput>stephenson2004</computeroutput>"
+msgstr ""
+"<emphasis>Anzeige des Zitatschlüssels der aktuellen Auswahl</emphasis>\n"
+"<prompt>%</prompt> <userinput>qdbus org.kde.tellico /Collections org.kde."
+"tellico.selectedBibtexKeys</userinput>\n"
+"<computeroutput>stephenson2004</computeroutput>"
+
+#. Tag: screen
+#: advanced.docbook:90
+#, no-c-format
+msgid ""
+"<emphasis>Add a new entry and set the title</emphasis>\n"
+"<prompt>%</prompt> <userinput>myid=`qdbus org.kde.tellico /Collections org."
+"kde.tellico.addEntry`</userinput>\n"
+"<prompt>%</prompt> <userinput>qdbus org.kde.tellico /Collections org.kde."
+"tellico.setEntryValue $myid title \"My New Book\"</userinput>\n"
+"<computeroutput>true</computeroutput>"
+msgstr ""
+"<emphasis>Neuen Eintrag hinzufügen und den Titel eingeben</emphasis>\n"
+"<prompt>%</prompt> <userinput>myid=`qdbus org.kde.tellico /Collections org."
+"kde.tellico.addEntry`</userinput>\n"
+"<prompt>%</prompt> <userinput>qdbus org.kde.tellico /Collections org.kde."
+"tellico.setEntryValue $myid title \"My New Book\"</userinput>\n"
+"<computeroutput>true</computeroutput>"
+
+#~ msgid ""
+#~ "Here are some examples for scripting &appname; using the &DBus; "
+#~ "interface. Since the <emphasis>pid</emphasis> must be known, the easiest "
+#~ "way to include that in the shell command is like so: <userinput>dbus "
+#~ "$(dbus | grep tellico) tellico</userinput>."
+#~ msgstr ""
+#~ "Hier finden Sie einige Beispiele, um Skripte für &appname; über die "
+#~ "&DBus;-Schnittstelle zu schreiben. Da die <emphasis>pid</emphasis> "
+#~ "(Prozesskennung) dafür anzugeben ist, sollten Sie sollten Sie Shell-"
+#~ "Befehle in dieser Form verwenden: <userinput>dbus $(dbus | grep tellico) "
+#~ "tellico</userinput>."

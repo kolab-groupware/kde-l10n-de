@@ -1,0 +1,277 @@
+#
+# Burkhard Lück <lueck@hube-lueck.de>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-11-01 02:17+0000\n"
+"PO-Revision-Date: 2014-11-08 21:23+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: emoticonspec.docbook:4
+#, no-c-format
+msgid "Emoticons Specification"
+msgstr "Emoticons-Spezifikation"
+
+#. Tag: releaseinfo
+#: emoticonspec.docbook:5
+#, no-c-format
+msgid "Version 0.1"
+msgstr "Version 0.1"
+
+#. Tag: date
+#: emoticonspec.docbook:6
+#, no-c-format
+msgid "07 January 2005"
+msgstr "07-01-2005"
+
+#. Tag: author
+#: emoticonspec.docbook:8
+#, no-c-format
+msgid "<firstname>Olivier</firstname> <surname>Goffart</surname>"
+msgstr "<firstname>Olivier</firstname> <surname>Goffart</surname>"
+
+#. Tag: email
+#: emoticonspec.docbook:13
+#, no-c-format
+msgid "ogoffart@tiscalinet.be"
+msgstr "ogoffart@tiscalinet.be"
+
+#. Tag: title
+#: emoticonspec.docbook:20
+#, no-c-format
+msgid "Emoticons"
+msgstr "Emoticons"
+
+#. Tag: title
+#: emoticonspec.docbook:23
+#, no-c-format
+msgid "Introduction"
+msgstr "Einführung"
+
+#. Tag: para
+#: emoticonspec.docbook:24
+#, no-c-format
+msgid ""
+"This DRAFT document defines how to make a theme of emoticons typically used "
+"in instant messaging applications"
+msgstr ""
+
+#. Tag: para
+#: emoticonspec.docbook:28
+#, no-c-format
+msgid ""
+"The basic scheme is very simple. The theme consists in one sub directory "
+"which contains all the pictures and an &XML; file that gives each picture "
+"ASCII symbols. A .directory file might be used."
+msgstr ""
+
+#. Tag: title
+#: emoticonspec.docbook:34
+#, no-c-format
+msgid "File locations"
+msgstr ""
+
+#. Tag: para
+#: emoticonspec.docbook:35
+#, no-c-format
+msgid ""
+"Files involved in this specification are located according to the \"desktop "
+"base directory specification\" which can be found on <ulink url=\"http://www."
+"freedesktop.org/standards/\">www.freedesktop.org</ulink>."
+msgstr ""
+
+#. Tag: para
+#: emoticonspec.docbook:40
+#, no-c-format
+msgid ""
+"All the files of the theme must be placed in a sub directory of <varname>"
+"$XDG_DATA_DIRS</varname>/emoticons/ The name of the directory must be equal "
+"to the name of the theme. That directory <emphasis>must</emphasis> contains "
+"a file called <varname>emoticons.xml</varname> the format of that file is "
+"described below."
+msgstr ""
+
+#. Tag: para
+#: emoticonspec.docbook:47
+#, no-c-format
+msgid ""
+"The theme directory may also contain a .directory file which contains "
+"translations of the theme name and/or an icon for that theme."
+msgstr ""
+
+#. Tag: title
+#: emoticonspec.docbook:53
+#, no-c-format
+msgid "Format of the emoticons.xml file"
+msgstr "Format der Datei emoticons.xml"
+
+#. Tag: para
+#: emoticonspec.docbook:54
+#, no-c-format
+msgid ""
+"Emoticon map files must be well-formed XML files. Implementations should "
+"ignore unknown tag or unknown attributes."
+msgstr ""
+
+#. Tag: title
+#: emoticonspec.docbook:59
+#, no-c-format
+msgid "Elements"
+msgstr "Elemente"
+
+#. Tag: term
+#: emoticonspec.docbook:63
+#, no-c-format
+msgid "&lt;messaging-emoticon-map&gt; [version=\"0.1\"]"
+msgstr "&lt;messaging-emoticon-map&gt; [version=\"0.1\"]"
+
+#. Tag: para
+#: emoticonspec.docbook:65
+#, no-c-format
+msgid ""
+"The root element is &lt;messaging-emoticon-map&gt; all other elements are "
+"contained by it."
+msgstr ""
+
+#. Tag: term
+#: emoticonspec.docbook:72
+#, no-c-format
+msgid "&lt;emoticon file=\"...\"&gt;"
+msgstr "&lt;emoticon file=\"...\"&gt;"
+
+#. Tag: para
+#: emoticonspec.docbook:74
+#, no-c-format
+msgid ""
+"This element represents one emoticon. The attribute file is the name of the "
+"image file which must be in the same directory. The extension may be "
+"omitted. In that case, the implementation look in that directory for a file "
+"with the same name in a supported format."
+msgstr ""
+
+#. Tag: para
+#: emoticonspec.docbook:80
+#, no-c-format
+msgid ""
+"There are no order for emoticon in the map. But the first icon in the map is "
+"generally used to identify the theme graphically. By convention the this "
+"SHOULD be :-)"
+msgstr ""
+
+#. Tag: term
+#: emoticonspec.docbook:88
+#, no-c-format
+msgid "&lt;string&gt;"
+msgstr "&lt;string&gt;"
+
+#. Tag: para
+#: emoticonspec.docbook:90
+#, no-c-format
+msgid ""
+"This element may only appear below &lt;emoticon&gt;. It represents the ASCII "
+"string which will be matched in the text, and replaced by the image "
+"specified by the file attribute of the emoticon."
+msgstr ""
+
+#. Tag: para
+#: emoticonspec.docbook:95
+#, no-c-format
+msgid "There may be several strings per emoticon."
+msgstr ""
+
+#. Tag: para
+#: emoticonspec.docbook:98
+#, no-c-format
+msgid ""
+"There is no order for string inside an emoticon. But the first one SHOULD be "
+"the default one, and will be taken if there is a GUI selector."
+msgstr ""
+
+#. Tag: title
+#: emoticonspec.docbook:110
+#, no-c-format
+msgid "Format of the image."
+msgstr "Format der Bilder"
+
+#. Tag: para
+#: emoticonspec.docbook:111
+#, no-c-format
+msgid "All images SHOULD be in a supported format : PNG, GIF or MNG."
+msgstr ""
+
+#. Tag: title
+#: emoticonspec.docbook:117
+#, no-c-format
+msgid "Implementations notes"
+msgstr ""
+
+#. Tag: title
+#: emoticonspec.docbook:119
+#, no-c-format
+msgid "Emoticon parser"
+msgstr ""
+
+#. Tag: para
+#: emoticonspec.docbook:120
+#, no-c-format
+msgid ""
+"There are no real recommendation how to parse emoticons. But an emoticon "
+"with a longer string should have the priority over one with a shorter "
+"string. (Example: if both :-() and :-( are in a theme, the picture for the "
+"first one should be used when :-() is encountered)"
+msgstr ""
+
+#. Tag: title
+#: emoticonspec.docbook:130
+#, no-c-format
+msgid "Example"
+msgstr "Beispiel"
+
+#. Tag: programlisting
+#: emoticonspec.docbook:132
+#, no-c-format
+msgid ""
+"&lt;messaging-emoticon-map&gt;\n"
+"        &lt;emoticon file=\"smile.png\"&gt;\n"
+"                        &lt;string&gt;:-)&lt;/string&gt;\n"
+"                        &lt;string&gt;:)&lt;/string&gt;\n"
+"                        &lt;string&gt;:o)&lt;/string&gt;\n"
+"        &lt;/emoticon&gt;\n"
+"\n"
+"        &lt;emoticon file=\"wink.png\"&gt;\n"
+"                        &lt;string&gt;;-)&lt;/string&gt;\n"
+"                        &lt;string&gt;;)&lt;/string&gt;\n"
+"        &lt;/emoticon&gt;\n"
+"\n"
+"        &lt;emoticon file=\"unhappy.png\"&gt;\n"
+"                        &lt;string&gt;:-(&lt;/string&gt;\n"
+"                        &lt;string&gt;:(&lt;/string&gt;\n"
+"        &lt;/emoticon&gt;\n"
+"&lt;/messaging-emoticon-map&gt;"
+msgstr ""
+"&lt;messaging-emoticon-map&gt;\n"
+"        &lt;emoticon file=\"smile.png\"&gt;\n"
+"                        &lt;string&gt;:-)&lt;/string&gt;\n"
+"                        &lt;string&gt;:)&lt;/string&gt;\n"
+"                        &lt;string&gt;:o)&lt;/string&gt;\n"
+"        &lt;/emoticon&gt;\n"
+"\n"
+"        &lt;emoticon file=\"wink.png\"&gt;\n"
+"                        &lt;string&gt;;-)&lt;/string&gt;\n"
+"                        &lt;string&gt;;)&lt;/string&gt;\n"
+"        &lt;/emoticon&gt;\n"
+"\n"
+"        &lt;emoticon file=\"unhappy.png\"&gt;\n"
+"                        &lt;string&gt;:-(&lt;/string&gt;\n"
+"                        &lt;string&gt;:(&lt;/string&gt;\n"
+"        &lt;/emoticon&gt;\n"
+"&lt;/messaging-emoticon-map&gt;"

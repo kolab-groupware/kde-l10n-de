@@ -1,0 +1,27 @@
+Thsese scripts will work only if you retain repository's file layout:
+l10n-kde4/
+-scripts/
+--lokalize/
+LL/
+-lokalize-scripts/
+--scripts.rc
+KDE/
+-kdelibs/
+-kdebase/
+...
+
+INSTALLATION
+In Lokalize (from KDE 4.3) select Project->Configure->Scripts.
+Then drop an .rc onto treeview. Restart Lokalize.
+The action will appear under Tools menu
+
+
+opensrc:
+This actions enables opening source (.cpp) files referenced from .po files.
+Install, restart, then try clicking links in the 'Unit metadata' view.
+If the file is found, it will be opened in kate
+
+msgfmt:
+compiles .po files so you can test your translation
+(you'll have to restart the program being tested)
+you need gettext package for the script to work.

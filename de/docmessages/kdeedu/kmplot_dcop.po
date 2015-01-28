@@ -1,0 +1,1165 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2005, 2006, 2008, 2010, 2013.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: kmplot_dcop\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: 2013-08-21 12:39+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: dcop.docbook:2
+#, no-c-format
+msgid "Scripting &kmplot;"
+msgstr "Skripte für &kmplot;"
+
+#. Tag: para
+#: dcop.docbook:3
+#, no-c-format
+msgid ""
+"A new feature in &kde; 3.4 is that you can write scripts for &kmplot; using "
+"&DBus; in &kde; 4. For example, if you want to define a new function "
+"<userinput>f(x)=2sin x+3cos x</userinput>, set its line width to 20 and then "
+"draw it, you type in a console:"
+msgstr ""
+"Seit &kde; 3.4 können Sie jetzt auch Skripte für &kmplot; mit &DBus; in "
+"&kde; 4 schreiben. Wenn Sie zum Beispiel eine neue Funktion <userinput>f(x)"
+"=2sin x+3cos x</userinput> definieren, die Linienbreite auf 20 Einheiten "
+"einstellen und den Graphen dieser Funktion zeichnen wollen, geben Sie in "
+"einer Konsole folgendes ein:"
+
+#. Tag: para
+#: dcop.docbook:5
+#, no-c-format
+msgid ""
+"<command>qdbus org.kde.kmplot-PID /parser org.kde.kmplot.Parser.addFunction "
+"\"f(x)=2sin x+3cos x\" \"\"</command> As a result, the new function's id "
+"number will be returned, or -1 if the function could not be defined."
+msgstr ""
+"<command>qdbus org.kde.kmplot-PID /parser org.kde.kmplot.Parser.addFunction "
+"\"f(x)=2sin x+3cos x\"</command> Als Ergebnis wird die ID-Nummer der neuen "
+"Funktion zurückgegeben, oder -1, wenn die Funktion nicht definiert werden "
+"konnte."
+
+#. Tag: para
+#: dcop.docbook:7
+#, no-c-format
+msgid ""
+"<command>qdbus org.kde.kmplot-PID /parser org.kde.kmplot.Parser."
+"setFunctionFLineWidth ID 20</command> This command sets the function with "
+"the id number ID the line width to 20."
+msgstr ""
+"<command>qdbus org.kde.kmplot-PID /parser org.kde.kmplot.Parser."
+"setFunctionFLineWidth ID 20</command> Dieser Befehl stellt die Linienbreite "
+"der Funktion mit der Nummer ID auf 20 Einheiten ein."
+
+#. Tag: para
+#: dcop.docbook:9
+#, no-c-format
+msgid ""
+"<command>qdbus org.kde.kmplot-PID /view org.kde.kmplot.View.drawPlot</"
+"command> This command repaints the window so that the function get visible."
+msgstr ""
+"<command>qdbus org.kde.kmplot-PID /view org.kde.kmplot.View.drawPlot</"
+"command> Dieser Befehl zeichnet das Fenster neu, dadurch wird die Funktion "
+"angezeigt."
+
+#. Tag: para
+#: dcop.docbook:11
+#, no-c-format
+msgid "A list of the available functions:"
+msgstr "Die Liste aller vorhandenen Funktionen:"
+
+#. Tag: term
+#: dcop.docbook:15
+#, no-c-format
+msgid "/kmplot org.kde.kmplot.KmPlot.fileOpen url"
+msgstr "/kmplot org.kde.kmplot.KmPlot.fileOpen url"
+
+#. Tag: para
+#: dcop.docbook:19
+#, no-c-format
+msgid "Load the file <parameter>url</parameter>."
+msgstr "Lädt die Datei <parameter>url</parameter>."
+
+#. Tag: term
+#: dcop.docbook:23
+#, no-c-format
+msgid "/maindlg org.kde.kmplot.MainDlg.isModified"
+msgstr "/maindlg org.kde.kmplot.MainDlg.isModified"
+
+#. Tag: para
+#: dcop.docbook:27
+#, no-c-format
+msgid "Returns true if any changes are done."
+msgstr "Gibt Wahr zurück, wenn Änderungen vorgenommen wurden."
+
+#. Tag: term
+#: dcop.docbook:31
+#, no-c-format
+msgid "/maindlg org.kde.kmplot.MainDlg.checkModified"
+msgstr "/maindlg org.kde.kmplot.MainDlg.checkModified"
+
+#. Tag: para
+#: dcop.docbook:35
+#, no-c-format
+msgid ""
+"If there are any unsaved changes, a dialog appears to save, discard or "
+"cancel the plots."
+msgstr ""
+"Wenn Änderungen noch nicht gespeichert sind, erscheint ein Dialog, in dem "
+"Sie Speichern, Verwerfen oder Abbrechen wählen können."
+
+#. Tag: term
+#: dcop.docbook:39
+#, no-c-format
+msgid "/maindlg org.kde.kmplot.MainDlg.editAxes"
+msgstr "/maindlg org.kde.kmplot.MainDlg.editAxes"
+
+#. Tag: para
+#: dcop.docbook:43
+#, no-c-format
+msgid "Opens the coordinate system edit dialog."
+msgstr "Öffnet den Dialog zur Bearbeitung des Koordinatensystems."
+
+#. Tag: term
+#: dcop.docbook:47
+#, no-c-format
+msgid "/maindlg org.kde.kmplot.MainDlg.toggleShowSlider"
+msgstr "/maindlg org.kde.kmplot.MainDlg.toggleShowSlider"
+
+#. Tag: para
+#: dcop.docbook:51
+#, no-c-format
+msgid "Shows/hides parameter slider window."
+msgstr "Blendet das Fenster mit den Schieberegler ein und aus."
+
+#. Tag: term
+#: dcop.docbook:55
+#, no-c-format
+msgid "/maindlg org.kde.kmplot.MainDlg.slotSave"
+msgstr "/maindlg org.kde.kmplot.MainDlg.slotSave"
+
+#. Tag: para
+#: dcop.docbook:59
+#, no-c-format
+msgid "Saves the functions (opens the save dialog if it is a new file)."
+msgstr ""
+"Speichert die Funktionen (und öffnet dazu den Dateidialog bei einer neuen "
+"Datei)."
+
+#. Tag: term
+#: dcop.docbook:63
+#, no-c-format
+msgid "/maindlg org.kde.kmplot.MainDlg.slotSaveas"
+msgstr "/maindlg org.kde.kmplot.MainDlg.slotSaveas"
+
+#. Tag: para
+#: dcop.docbook:67
+#, no-c-format
+msgid ""
+"The same as choosing <menuchoice><guimenu>File</guimenu><guimenuitem>Save "
+"As</guimenuitem></menuchoice> in the menu."
+msgstr ""
+"Wie im Menü <menuchoice><guimenu>Datei</guimenu><guimenuitem>Speichern "
+"unter ...</guimenuitem></menuchoice>."
+
+#. Tag: term
+#: dcop.docbook:71
+#, no-c-format
+msgid "/maindlg org.kde.kmplot.MainDlg.slotPrint"
+msgstr "/maindlg org.kde.kmplot.MainDlg.slotPrint"
+
+#. Tag: para
+#: dcop.docbook:75
+#, no-c-format
+msgid "Opens the print dialog."
+msgstr "Öffnet den Druckdialog."
+
+#. Tag: term
+#: dcop.docbook:79
+#, no-c-format
+msgid "/maindlg org.kde.kmplot.MainDlg.slotResetView"
+msgstr "/maindlg org.kde.kmplot.MainDlg.slotResetView"
+
+#. Tag: para
+#: dcop.docbook:83
+#, no-c-format
+msgid ""
+"The same as choosing <menuchoice><guimenu>View</guimenu><guimenuitem>Reset "
+"View</guimenuitem></menuchoice> in the menu."
+msgstr ""
+"Wie im Menü <menuchoice><guimenu>Ansicht</guimenu><guimenuitem>Ansicht "
+"zurücksetzen</guimenuitem></menuchoice>."
+
+#. Tag: term
+#: dcop.docbook:87
+#, no-c-format
+msgid "/maindlg org.kde.kmplot.MainDlg.slotExport"
+msgstr "/maindlg org.kde.kmplot.MainDlg.slotExport"
+
+#. Tag: para
+#: dcop.docbook:91
+#, no-c-format
+msgid "Opens the export dialog."
+msgstr "Öffnet den Exportdialog."
+
+#. Tag: term
+#: dcop.docbook:95
+#, no-c-format
+msgid "/maindlg org.kde.kmplot.MainDlg.slotSettings"
+msgstr "/maindlg org.kde.kmplot.MainDlg.slotSettings"
+
+#. Tag: para
+#: dcop.docbook:99
+#, no-c-format
+msgid "Opens the settings dialog."
+msgstr "Öffnet den Einrichtungsdialog."
+
+#. Tag: term
+#: dcop.docbook:103
+#, no-c-format
+msgid "/maindlg org.kde.kmplot.MainDlg.slotNames"
+msgstr "/maindlg org.kde.kmplot.MainDlg.slotNames"
+
+#. Tag: para
+#: dcop.docbook:107
+#, no-c-format
+msgid "Shows the predefined math functions in the handbook."
+msgstr ""
+"Zeigt eine Liste der vordefinierten mathematischen Funktionen im Handbuch an."
+
+#. Tag: term
+#: dcop.docbook:111
+#, no-c-format
+msgid "/maindlg org.kde.kmplot.MainDlg.findMinimumValue"
+msgstr "/maindlg org.kde.kmplot.MainDlg.findMinimumValue"
+
+#. Tag: para
+#: dcop.docbook:115
+#, no-c-format
+msgid ""
+"The same as choosing <menuchoice><guimenu>Tools</"
+"guimenu><guimenuitem>Minimum Value...</guimenuitem></menuchoice> in the menu."
+msgstr ""
+"Wie im Menü <menuchoice><guimenu>Extras</guimenu><guimenuitem>Minimumpunkt "
+"suchen ...</guimenuitem></menuchoice>."
+
+#. Tag: term
+#: dcop.docbook:119
+#, no-c-format
+msgid "/maindlg org.kde.kmplot.MainDlg.findMaximumValue"
+msgstr "/maindlg org.kde.kmplot.MainDlg.findMaximumValue"
+
+#. Tag: para
+#: dcop.docbook:123
+#, no-c-format
+msgid ""
+"The same as choosing <menuchoice><guimenu>Tools</"
+"guimenu><guimenuitem>Maximum Value...</guimenuitem></menuchoice> in the menu."
+msgstr ""
+"Wie im Menü <menuchoice><guimenu>Extras</guimenu><guimenuitem>Maximumpunkt "
+"suchen ...</guimenuitem></menuchoice>."
+
+#. Tag: term
+#: dcop.docbook:127
+#, no-c-format
+msgid "/maindlg org.kde.kmplot.MainDlg.graphArea"
+msgstr "/maindlg org.kde.kmplot.MainDlg.graphArea"
+
+#. Tag: para
+#: dcop.docbook:131
+#, no-c-format
+msgid ""
+"The same as choosing <menuchoice><guimenu>Tools</guimenu><guimenuitem>Plot "
+"Area</guimenuitem></menuchoice> in the menu."
+msgstr ""
+"Wie im Menü <menuchoice><guimenu>Extras</"
+"guimenu><guimenuitem>Zeichenbereich ...</guimenuitem></menuchoice>."
+
+#. Tag: term
+#: dcop.docbook:135
+#, no-c-format
+msgid "/maindlg org.kde.kmplot.MainDlg.calculator"
+msgstr "/maindlg org.kde.kmplot.MainDlg.calculator"
+
+#. Tag: para
+#: dcop.docbook:139
+#, no-c-format
+msgid ""
+"The same as choosing <menuchoice><guimenu>Tools</"
+"guimenu><guimenuitem>Calculator</guimenuitem></menuchoice> in the menu."
+msgstr ""
+"Wie im Menü <menuchoice><guimenu>Extras</guimenu><guimenuitem>Rechner</"
+"guimenuitem></menuchoice>."
+
+#. Tag: term
+#: dcop.docbook:143
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.addFunction f_str0 f_fstr1"
+msgstr "/parser org.kde.kmplot.Parser.addFunction f_str0 f_fstr1"
+
+#. Tag: para
+#: dcop.docbook:147
+#, no-c-format
+msgid ""
+"Adds a new function with the expressions <parameter>f_str0</parameter> and "
+"<parameter>f_str1</parameter>. If the expression does not contain a function "
+"name, it will be auto-generated. The id number of the new function is "
+"returned, or -1 if the function could not be defined."
+msgstr ""
+"Fügt eine neue Funktion mit den Ausdrücken <parameter>f_str0</parameter> und "
+"<parameter>f_str1</parameter> hinzu. Wenn der Ausdruck keinen Funktionsnamen "
+"enthält, wird er automatisch erzeugt. Die ID-Nummer der neuen Funktion wird "
+"zurückgegeben, oder -1, wenn die Funktion nicht definiert werden konnte."
+
+#. Tag: term
+#: dcop.docbook:151
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.removeFunction id"
+msgstr "/parser org.kde.kmplot.Parser.removeFunction id"
+
+#. Tag: para
+#: dcop.docbook:155
+#, no-c-format
+msgid ""
+"Removes the function with the id number <parameter>id</parameter>. If the "
+"function could not be deleted, false is returned, otherwise true."
+msgstr ""
+"Entfernt die Funktion mit der Nummer <parameter>id</parameter>. Wenn die "
+"Funktion nicht gelöscht werden konnte, wird Falsch zurückgegeben, sonst Wahr."
+
+#. Tag: term
+#: dcop.docbook:159
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.setFunctionExpression id eq f_str"
+msgstr "/parser org.kde.kmplot.Parser.setFunctionExpression id eq f_str"
+
+#. Tag: para
+#: dcop.docbook:163
+#, no-c-format
+msgid ""
+"Sets the expression for the function with the id number <parameter>id</"
+"parameter> to <parameter>f_str</parameter>. Returns true if it succeed, "
+"otherwise false."
+msgstr ""
+"Setzt den Ausdruck für die Funktion mit der Nummer <parameter>id</parameter> "
+"auf <parameter>f_str</parameter>. Gibt Wahr zurück, wenn dies erfolgreich "
+"war, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:167
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.countFunctions"
+msgstr "/parser org.kde.kmplot.Parser.countFunctions"
+
+#. Tag: para
+#: dcop.docbook:171
+#, no-c-format
+msgid ""
+"Returns the number of functions (parametric functions are calculated as two)."
+msgstr ""
+"Gibt die Anzahl der Funktionen zurück (Parametrische Funktionen werden "
+"doppelt gezählt)."
+
+#. Tag: term
+#: dcop.docbook:176
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.listFunctionNames"
+msgstr "/parser org.kde.kmplot.Parser.listFunctionNames"
+
+#. Tag: para
+#: dcop.docbook:180
+#, no-c-format
+msgid "Returns a list with all functions."
+msgstr "Gibt eine Liste mit allen Funktionen zurück."
+
+#. Tag: term
+#: dcop.docbook:184
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.fnameToID f_str"
+msgstr "/parser org.kde.kmplot.Parser.fnameToID f_str"
+
+#. Tag: para
+#: dcop.docbook:188
+#, no-c-format
+msgid ""
+"Returns the id number of <parameter>f_str</parameter> or -1 if the function "
+"name <parameter>f_str</parameter> was not found."
+msgstr ""
+"Gibt die ID-Nummer von <parameter>f_str</parameter> oder -1 zurück, wenn der "
+"Funktionsname <parameter>f_str</parameter> nicht gefunden wurde."
+
+#. Tag: term
+#: dcop.docbook:192
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.functionFVisible id"
+msgstr "/parser org.kde.kmplot.Parser.functionFVisible id"
+
+#. Tag: para
+#: dcop.docbook:196
+#, no-c-format
+msgid ""
+"Returns true if the function with the ID <parameter>id</parameter> is "
+"visible, otherwise false."
+msgstr ""
+"Gibt Wahr zurück, wenn die Funktion mit der Nummer <parameter>id</parameter> "
+"sichtbar ist, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:200
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.functionF1Visible id"
+msgstr "/parser org.kde.kmplot.Parser.functionF1Visible id"
+
+#. Tag: para
+#: dcop.docbook:204
+#, no-c-format
+msgid ""
+"Returns true if the first derivative of the function with the ID "
+"<parameter>id</parameter> is visible, otherwise false."
+msgstr ""
+"Gibt Wahr zurück, wenn die erste Ableitung der Funktion mit der Nummer "
+"<parameter>id</parameter> sichtbar ist, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:208
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.functionF2Visible id"
+msgstr "/parser org.kde.kmplot.Parser.functionF2Visible id"
+
+#. Tag: para
+#: dcop.docbook:212
+#, no-c-format
+msgid ""
+"Returns true if the second derivative of the function with the ID "
+"<parameter>id</parameter> is visible, otherwise false."
+msgstr ""
+"Gibt Wahr zurück, wenn die zweite Ableitung der Funktion mit der Nummer "
+"<parameter>id</parameter> sichtbar ist, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:216
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.functionIntVisible id"
+msgstr "/parser org.kde.kmplot.Parser.functionIntVisible id"
+
+#. Tag: para
+#: dcop.docbook:220
+#, no-c-format
+msgid ""
+"Returns true if the integral of the function with the ID <parameter>id</"
+"parameter> is visible, otherwise false."
+msgstr ""
+"Gibt Wahr zurück, wenn das Integral der Funktion mit der Nummer "
+"<parameter>id</parameter> sichtbar ist, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:224
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.setFunctionFVisible id visible"
+msgstr "/parser org.kde.kmplot.Parser.setFunctionFVisible id visible"
+
+#. Tag: para
+#: dcop.docbook:228
+#, no-c-format
+msgid ""
+"Shows the function with the ID <parameter>id</parameter> if "
+"<parameter>visible</parameter> is true. If <parameter>visible</parameter> is "
+"false, the function will be hidden. True is returned if the function exists, "
+"otherwise false"
+msgstr ""
+"Zeigt die Funktion mit der Nummer <parameter>id</parameter> an, wenn "
+"<parameter>visible</parameter> Wahr ist. Ist <parameter>visible</parameter> "
+"Falsch, dann wird die Funktion ausgeblendet. Gibt Wahr zurück, wenn die "
+"Funktion existiert, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:232
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.setFunctionF1Visible id visible"
+msgstr "/parser org.kde.kmplot.Parser.setFunctionF1Visible id visible"
+
+#. Tag: para
+#: dcop.docbook:236
+#, no-c-format
+msgid ""
+"Shows the first derivative of the function with the ID <parameter>id</"
+"parameter> if <parameter>visible</parameter> is true. If <parameter>visible</"
+"parameter> is false, the function will be hidden. True is returned if the "
+"function exists, otherwise false."
+msgstr ""
+"Zeigt die erste Ableitung der Funktion mit der Nummer <parameter>id</"
+"parameter> an, wenn <parameter>visible</parameter> Wahr ist. Ist "
+"<parameter>visible</parameter> Falsch, dann wird die Funktion ausgeblendet. "
+"Gibt Wahr zurück, wenn die Funktion existiert, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:240
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.setFunctionF2Visible id visible"
+msgstr "/parser org.kde.kmplot.Parser.setFunctionF2Visible id visible"
+
+#. Tag: para
+#: dcop.docbook:244
+#, no-c-format
+msgid ""
+"Shows the second derivative of the function with the ID <parameter>id</"
+"parameter> if <parameter>visible</parameter> is true. If <parameter>visible</"
+"parameter> is false, the function will be hidden. True is returned if the "
+"function exists, otherwise false."
+msgstr ""
+"Zeigt die zweite Ableitung der Funktion mit der Nummer <parameter>id</"
+"parameter> an, wenn <parameter>visible</parameter> Wahr ist. Ist "
+"<parameter>visible</parameter> Falsch, dann wird die Funktion ausgeblendet. "
+"Gibt Wahr zurück, wenn die Funktion existiert, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:248
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.setFunctionIntVisible id visible"
+msgstr "/parser org.kde.kmplot.Parser.setFunctionIntVisible id visible"
+
+#. Tag: para
+#: dcop.docbook:252
+#, no-c-format
+msgid ""
+"Shows the integral of the function with the ID <parameter>id</parameter> if "
+"<parameter>visible</parameter> is true. If <parameter>visible</parameter> is "
+"false, the function will be hidden. True is returned if the function exists, "
+"otherwise false."
+msgstr ""
+"Zeigt das Integral der Funktion mit der Nummer <parameter>id</parameter> an, "
+"wenn <parameter>visible</parameter> Wahr ist. Ist <parameter>visible</"
+"parameter> Falsch, dann wird die Funktion ausgeblendet. Gibt Wahr zurück, "
+"wenn die Funktion existiert, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:256
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.functionStr id eq"
+msgstr "/parser org.kde.kmplot.Parser.functionStr id eq"
+
+#. Tag: para
+#: dcop.docbook:260
+#, no-c-format
+msgid ""
+"Returns the function expression of the function with the ID <parameter>id</"
+"parameter>. If the function not exists, an empty string is returned instead."
+msgstr ""
+"Gibt den Funktionsausdruck der Funktion mit der Nummer <parameter>id</"
+"parameter> zurück. Wenn die Funktion nicht existiert, wird eine leere "
+"Zeichenkette zurückgegeben."
+
+#. Tag: term
+#: dcop.docbook:264
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.functionFLineWidth id"
+msgstr "/parser org.kde.kmplot.Parser.functionFLineWidth id"
+
+#. Tag: para
+#: dcop.docbook:268
+#, no-c-format
+msgid ""
+"Returns the line width of the function with the ID <parameter>id</"
+"parameter>. If the function not exists, 0 is returned."
+msgstr ""
+"Gibt die Linienbreite der Funktion mit der Nummer <parameter>id</parameter> "
+"zurück. Wenn die Funktion nicht existiert, wird 0 zurückgegeben."
+
+#. Tag: term
+#: dcop.docbook:272
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.functionF1LineWidth id"
+msgstr "/parser org.kde.kmplot.Parser.functionF1LineWidth id"
+
+#. Tag: para
+#: dcop.docbook:276
+#, no-c-format
+msgid ""
+"Returns the line width of the first derivative of the function with the ID "
+"<parameter>id</parameter>. If the function not exists, 0 is returned."
+msgstr ""
+"Gibt die Linienbreite der ersten Ableitung der Funktion mit der Nummer "
+"<parameter>id</parameter> zurück. Wenn die Funktion nicht existiert, wird 0 "
+"zurückgegeben."
+
+#. Tag: term
+#: dcop.docbook:280
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.functionF2LineWidth id"
+msgstr "/parser org.kde.kmplot.Parser.functionF2LineWidth id"
+
+#. Tag: para
+#: dcop.docbook:284
+#, no-c-format
+msgid ""
+"Returns the line width of the second derivative of the function with the ID "
+"<parameter>id</parameter>. If the function not exists, 0 is returned."
+msgstr ""
+"Gibt die Linienbreite der zweiten Ableitung der Funktion mit der Nummer "
+"<parameter>id</parameter> zurück. Wenn die Funktion nicht existiert, wird 0 "
+"zurückgegeben."
+
+#. Tag: term
+#: dcop.docbook:288
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.functionIntLineWidth id"
+msgstr "/parser org.kde.kmplot.Parser.functionIntLineWidth id"
+
+#. Tag: para
+#: dcop.docbook:292
+#, no-c-format
+msgid ""
+"Returns the line width of the integral of the function with the ID "
+"<parameter>id</parameter>. If the function not exists, 0 is returned."
+msgstr ""
+"Gibt die Linienbreite des Integrals der Funktion mit der Nummer "
+"<parameter>id</parameter> zurück. Wenn die Funktion nicht existiert, wird 0 "
+"zurückgegeben."
+
+#. Tag: term
+#: dcop.docbook:296
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.setFunctionFLineWidth id linewidth"
+msgstr "/parser org.kde.kmplot.Parser.setFunctionFLineWidth id linewidth"
+
+#. Tag: para
+#: dcop.docbook:300
+#, no-c-format
+msgid ""
+"Sets the line width of the function with the ID <parameter>id</parameter> to "
+"<parameter>linewidth</parameter>. True is returned if the function exists, "
+"otherwise false."
+msgstr ""
+"Stellt die Linienbreite der Funktion mit der Nummer <parameter>id</"
+"parameter> auf <parameter>linewidth</parameter> Einheiten. Wenn die Funktion "
+"existiert, wird Wahr zurückgegeben, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:304
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.setFunctionF1LineWidth id linewidth"
+msgstr "/parser org.kde.kmplot.Parser.setFunctionF1LineWidth id linewidth"
+
+#. Tag: para
+#: dcop.docbook:308
+#, no-c-format
+msgid ""
+"Sets the line width of the first derivative of the function with the ID "
+"<parameter>id</parameter> to <parameter>linewidth</parameter>. True is "
+"returned if the function exists, otherwise false."
+msgstr ""
+"Stellt die Linienbreite der ersten Ableitung der Funktion mit der Nummer "
+"<parameter>id</parameter> auf <parameter>linewidth</parameter> Einheiten. "
+"Wenn die Funktion existiert, wird Wahr zurückgegeben, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:312
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.setFunctionF2LineWidth id linewidth"
+msgstr "/parser org.kde.kmplot.Parser.setFunctionF2LineWidth id linewidth"
+
+#. Tag: para
+#: dcop.docbook:316
+#, no-c-format
+msgid ""
+"Sets the line width of the second derivative of the function with the ID "
+"<parameter>id</parameter> to <parameter>linewidth</parameter>. True is "
+"returned if the function exists, otherwise false."
+msgstr ""
+"Stellt die Linienbreite der zweiten Ableitung der Funktion mit der Nummer "
+"<parameter>id</parameter> auf <parameter>linewidth</parameter> Einheiten. "
+"Wenn die Funktion existiert, wird Wahr zurückgegeben, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:320
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.setFunctionIntLineWidth id linewidth"
+msgstr "/parser org.kde.kmplot.Parser.setFunctionIntLineWidth id linewidth"
+
+#. Tag: para
+#: dcop.docbook:324
+#, no-c-format
+msgid ""
+"Sets the line width of the integral of the function with the ID "
+"<parameter>id</parameter> to <parameter>linewidth</parameter>. True is "
+"returned if the function exists, otherwise false."
+msgstr ""
+"Stellt die Linienbreite des Integrals der Funktion mit der Nummer "
+"<parameter>id</parameter> auf <parameter>linewidth</parameter> Einheiten. "
+"Wenn die Funktion existiert, wird Wahr zurückgegeben, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:328
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.functionParameterList id"
+msgstr "/parser org.kde.kmplot.Parser.functionParameterList id"
+
+#. Tag: para
+#: dcop.docbook:332
+#, no-c-format
+msgid ""
+"Returns a list with all the parameter values for the function with the ID "
+"<parameter>id</parameter>."
+msgstr ""
+"Gibt eine Liste mit allen Parameterwerten der Funktion mit der Nummer "
+"<parameter>id</parameter> zurück."
+
+#. Tag: term
+#: dcop.docbook:336
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.functionAddParameter id new_parameter"
+msgstr "/parser org.kde.kmplot.Parser.functionAddParameter id new_parameter"
+
+#. Tag: para
+#: dcop.docbook:340
+#, no-c-format
+msgid ""
+"Adds the parameter value <parameter>new_parameter</parameter> to the "
+"function with the ID <parameter>id</parameter>. True is returned if the "
+"operation succeed, otherwise false."
+msgstr ""
+"Fügt den Parameterwert <parameter>new_parameter</parameter> zu der Funktion "
+"mit der Nummer <parameter>id</parameter> hinzu. Gibt Wahr zurück, wenn diese "
+"Operation erfolgreich war, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:344
+#, no-c-format
+msgid ""
+"/parser org.kde.kmplot.Parser.functionRemoveParameter id remove_parameter"
+msgstr ""
+"/parser org.kde.kmplot.Parser.functionRemoveParameter id remove_parameter"
+
+#. Tag: para
+#: dcop.docbook:348
+#, no-c-format
+msgid ""
+"Removes the parameter value <parameter>remove_parameter</parameter> from the "
+"function with the ID <parameter>id</parameter>. True is returned if the "
+"operation succeed, otherwise false."
+msgstr ""
+"Entfernt den Parameterwert <parameter>remove_parameter</parameter> aus der "
+"Funktion mit der Nummer <parameter>id</parameter> hinzu. Gibt Wahr zurück, "
+"wenn diese Operation erfolgreich war, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:352
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.functionMinValue id"
+msgstr "/parser org.kde.kmplot.Parser.functionMinValue id"
+
+#. Tag: para
+#: dcop.docbook:356
+#, no-c-format
+msgid ""
+"Returns the minimum plot range value of the function with the ID "
+"<parameter>id</parameter>. If the function not exists or if the minimum "
+"value is not defined, an empty string is returned."
+msgstr ""
+"Gibt den minimalen Wert des Zeichenbereichs der Funktion mit der Nummer "
+"<parameter>id</parameter> zurück. Wenn die Funktion nicht existiert oder das "
+"Minimum nicht definiert ist, wird eine leere Zeichenkette zurückgegeben."
+
+#. Tag: term
+#: dcop.docbook:360
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.functionMaxValue id"
+msgstr "/parser org.kde.kmplot.Parser.functionMaxValue id"
+
+#. Tag: para
+#: dcop.docbook:364
+#, no-c-format
+msgid ""
+"Returns the maximum plot range value of the function with the ID "
+"<parameter>id</parameter>. If the function not exists or if the maximum "
+"value is not defined, an empty string is returned."
+msgstr ""
+"Gibt den maximalen Wert des Zeichenbereichs der Funktion mit der Nummer "
+"<parameter>id</parameter> zurück. Wenn die Funktion nicht existiert oder das "
+"Maximum nicht definiert ist, wird eine leere Zeichenkette zurückgegeben."
+
+#. Tag: term
+#: dcop.docbook:368
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.setFunctionMinValue id min"
+msgstr "/parser org.kde.kmplot.Parser.setFunctionMinValue id min"
+
+#. Tag: para
+#: dcop.docbook:372
+#, no-c-format
+msgid ""
+"Sets the minimum plot range value of the function with the ID <parameter>id</"
+"parameter> to <parameter>min</parameter>. True is returned if the function "
+"exists and the expression is valid, otherwise false."
+msgstr ""
+"Setzt den minimalen Wert des Zeichenbereichs der Funktion mit der Nummer "
+"<parameter>id</parameter> auf <parameter>min</parameter>. Wenn die Funktion "
+"existiert und der Ausdruck gültig ist, wird Wahr zurückgegeben, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:376
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.setFunctionMaxValue id max"
+msgstr "/parser org.kde.kmplot.Parser.setFunctionMaxValue id max"
+
+#. Tag: para
+#: dcop.docbook:380
+#, no-c-format
+msgid ""
+"Sets the maximum plot range value of the function with the ID <parameter>id</"
+"parameter> to <parameter>max</parameter>. True is returned if the function "
+"exists and the expression is valid, otherwise false."
+msgstr ""
+"Setzt den maximalen Wert des Zeichenbereichs der Funktion mit der Nummer "
+"<parameter>id</parameter> auf <parameter>max</parameter>. Wenn die Funktion "
+"existiert und der Ausdruck gültig ist, wird Wahr zurückgegeben, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:385
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.functionStartXValue id"
+msgstr "/parser org.kde.kmplot.Parser.functionStartXValue id"
+
+#. Tag: para
+#: dcop.docbook:389
+#, no-c-format
+msgid ""
+"Returns the initial x point for the integral of the function with the ID "
+"<parameter>id</parameter>. If the function not exists or if the x-point-"
+"expression is not defined, an empty string is returned."
+msgstr ""
+"Gibt den Anfangs-x-Punkt für das Integral der Funktion mit der Nummer "
+"<parameter>id</parameter> zurück. Wenn die Funktion nicht existiert oder der "
+"Ausdruck für den x-Punkt nicht definiert ist, wird ein leere Zeichenkette "
+"zurückgegeben."
+
+#. Tag: term
+#: dcop.docbook:393
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.functionStartYValue id"
+msgstr "/parser org.kde.kmplot.Parser.functionStartYValue id"
+
+#. Tag: para
+#: dcop.docbook:397
+#, no-c-format
+msgid ""
+"Returns the initial y point for the integral of the function with the ID "
+"<parameter>id</parameter>. If the function not exists or if the y-point-"
+"expression is not defined, an empty string is returned."
+msgstr ""
+"Gibt den Anfangs-y-Punkt für das Integral der Funktion mit der Nummer "
+"<parameter>id</parameter> zurück. Wenn die Funktion nicht existiert oder der "
+"Ausdruck für den y-Punkt nicht definiert ist, wird ein leere Zeichenkette "
+"zurückgegeben."
+
+#. Tag: term
+#: dcop.docbook:401
+#, no-c-format
+msgid "/parser org.kde.kmplot.Parser.setFunctionStartValue id x y"
+msgstr "/parser org.kde.kmplot.Parser.setFunctionStartValue id x y"
+
+#. Tag: para
+#: dcop.docbook:405
+#, no-c-format
+msgid ""
+"Sets the initial x and y point for the integral of the function with the ID "
+"<parameter>id</parameter> to <parameter>x</parameter> and <parameter>y</"
+"parameter>. True is returned if the function exists and the expression is "
+"valid, otherwise false."
+msgstr ""
+"Setzt den Startwerte von x und y für das Integral der Funktion mit der "
+"Nummer <parameter>id</parameter> auf <parameter>x</parameter> und "
+"<parameter>y</parameter>. Wenn die Funktion existiert und der Ausdruck "
+"gültig ist, wird Wahr zurückgegeben, sonst Falsch."
+
+#. Tag: term
+#: dcop.docbook:409
+#, no-c-format
+msgid "/view org.kde.kmplot.View.stopDrawing"
+msgstr "/view org.kde.kmplot.View.stopDrawing"
+
+#. Tag: para
+#: dcop.docbook:413
+#, no-c-format
+msgid "If &kmplot; currently is drawing a function, the procedure will stop."
+msgstr ""
+"Wenn &kmplot; gerade eine Funktion zeichnet, wird dieser Vorgang angehalten."
+
+#. Tag: term
+#: dcop.docbook:417
+#, no-c-format
+msgid "/view org.kde.kmplot.View.drawPlot"
+msgstr "/view org.kde.kmplot.View.drawPlot"
+
+#. Tag: para
+#: dcop.docbook:421
+#, no-c-format
+msgid "Redraws all functions."
+msgstr "Zeichnet alle Funktionen neu."
+
+#~ msgid "KmPlotShell fileOpen &amp;url"
+#~ msgstr "KmPlotShell fileOpen &amp;url"
+
+#~ msgid "MainDlg isModified"
+#~ msgstr "MainDlg isModified"
+
+#~ msgid "MainDlg editColors"
+#~ msgstr "MainDlg editColors"
+
+#~ msgid "Opens the color edit dialog."
+#~ msgstr "Öffnet den Dialog zur Farbwahl."
+
+#~ msgid "MainDlg editAxes"
+#~ msgstr "MainDlg editAxes"
+
+#~ msgid "MainDlg editScaling"
+#~ msgstr "MainDlg editScaling"
+
+#~ msgid "Opens the scaling edit dialog."
+#~ msgstr "Öffnet die Dialogbox zur Bearbeitung der Skalierung."
+
+#~ msgid "MainDlg editFonts"
+#~ msgstr "MainDlg editFonts"
+
+#~ msgid "Opens the fonts edit dialog."
+#~ msgstr "Öffnet die Dialogbox zur Einstellung der Schriftarten."
+
+#~ msgid "MainDlg editConstants"
+#~ msgstr "MainDlg editConstants"
+
+#~ msgid "Opens the constants edit dialog."
+#~ msgstr "Öffnet den Dialog zur Bearbeitung der Konstanten."
+
+#~ msgid "MainDlg newFunction"
+#~ msgstr "MainDlg newFunction"
+
+#~ msgid "Opens the new function plot dialog."
+#~ msgstr "Öffnet den Dialog für eine neue Funktionszeichnung. "
+
+#~ msgid "MainDlg newParametric"
+#~ msgstr "MainDlg newParametric"
+
+#~ msgid "Opens the new parametric plot dialog."
+#~ msgstr "Öffnet den Dialog für eine neue parametrische Zeichnung."
+
+#~ msgid "MainDlg newPolar"
+#~ msgstr "MainDlg newPolar"
+
+#~ msgid "Opens the new polar plot dialog."
+#~ msgstr "Öffnet den Dialog für eine neue polare Zeichnung."
+
+#~ msgid "MainDlg toggleShowSlider1"
+#~ msgstr "MainDlg toggleShowSlider1"
+
+#~ msgid "Shows/hides parameter slider window number 2."
+#~ msgstr ""
+#~ "Schaltet die Anzeige des Schiebereglers 2 für Parameter ein und aus."
+
+#~ msgid "MainDlg toggleShowSlider2"
+#~ msgstr "MainDlg toggleShowSlider2"
+
+#~ msgid "Shows/hides parameter slider window number 3."
+#~ msgstr ""
+#~ "Schaltet die Anzeige des Schiebereglers 3 für Parameter ein und aus."
+
+#~ msgid "MainDlg toggleShowSlider3"
+#~ msgstr "MainDlg toggleShowSlider3"
+
+#~ msgid "Shows/hides parameter slider window number 4."
+#~ msgstr ""
+#~ "Schaltet die Anzeige des Schiebereglers 4 für Parameter ein und aus."
+
+#~ msgid "MainDlg slotSave"
+#~ msgstr "MainDlg slotSave"
+
+#~ msgid "MainDlg slotSaveas"
+#~ msgstr "MainDlg slotSaveas"
+
+#~ msgid "MainDlg slotEditPlots"
+#~ msgstr "MainDlg slotEditPlots"
+
+#~ msgid "Opens the edit plots dialog."
+#~ msgstr "Öffnet den Dialog zur Bearbeitung einer Zeichnung."
+
+#~ msgid "MainDlg slotPrint"
+#~ msgstr "MainDlg slotPrint"
+
+#~ msgid "MainDlg slotExport"
+#~ msgstr "MainDlg slotExport"
+
+#~ msgid "MainDlg slotSettings"
+#~ msgstr "MainDlg slotSettings"
+
+#~ msgid "MainDlg slotNames"
+#~ msgstr "MainDlg slotNames"
+
+#~ msgid "MainDlg slotCoord1"
+#~ msgstr "MainDlg slotCoord1"
+
+#~ msgid "Coordinate System I."
+#~ msgstr "Koordinatensystem I."
+
+#~ msgid "MainDlg slotCoord2"
+#~ msgstr "MainDlg slotCoord2"
+
+#~ msgid "Coordinate System II."
+#~ msgstr "Koordinatensystem II."
+
+#~ msgid "MainDlg slotCoord3"
+#~ msgstr "MainDlg slotCoord3"
+
+#~ msgid "Coordinate System III."
+#~ msgstr "Koordinatensystem III."
+
+#~ msgid "MainDlg getYValue"
+#~ msgstr "MainDlg getYValue"
+
+#~ msgid ""
+#~ "The same as choosing <menuchoice><guimenu>Tools</guimenu><guimenuitem>Get "
+#~ "y-Value...</guimenuitem></menuchoice> in the menu."
+#~ msgstr ""
+#~ "Wie im Menü <menuchoice><guimenu>Extras</guimenu><guimenuitem>y-Wert "
+#~ "auslesen ...</guimenuitem></menuchoice>."
+
+#~ msgid "MainDlg graphArea"
+#~ msgstr "MainDlg graphArea"
+
+#~ msgid "Parser addFunction f_str"
+#~ msgstr "Parser addFunction f_str"
+
+#~ msgid "Parser delfkt id"
+#~ msgstr "Parser delfkt id"
+
+#~ msgid "Parser fnameToId f_str"
+#~ msgstr "Parser fnameToId f_str"
+
+#~ msgid "Parser id x"
+#~ msgstr "Parser id x"
+
+#~ msgid ""
+#~ "Calculates the value <parameter>x</parameter> for the function with the "
+#~ "ID <parameter>id</parameter> or returns 0.0 if <parameter>id</parameter> "
+#~ "does not exist."
+#~ msgstr ""
+#~ "Berechnet den Wert <parameter>x</parameter> der Funktion mit der Nummer "
+#~ "<parameter>id</parameter> oder gibt 0,0 zurück, wenn die Funktion nicht "
+#~ "existiert."
+
+#~ msgid "Parser functionStr id"
+#~ msgstr "Parser functionStr id"
+
+#~ msgid "Parser functionFColor id"
+#~ msgstr "Parser functionFColor id"
+
+#~ msgid ""
+#~ "Returns the color of the function with the ID <parameter>id</parameter>."
+#~ msgstr ""
+#~ "Gibt die Farbe der Funktion mit der Nummer <parameter>id</parameter> "
+#~ "zurück."
+
+#~ msgid "Parser functionF1Color id"
+#~ msgstr "Parser functionF1Color id"
+
+#~ msgid ""
+#~ "Returns the color of the first derivative of the function with the ID "
+#~ "<parameter>id</parameter>."
+#~ msgstr ""
+#~ "Gibt die Farbe der ersten Ableitung der Funktion mit der Nummer "
+#~ "<parameter>id</parameter> zurück."
+
+#~ msgid "Parser functionF2Color id"
+#~ msgstr "Parser functionF2Color id"
+
+#~ msgid ""
+#~ "Returns the color of the second derivative of the function with the ID "
+#~ "<parameter>id</parameter>."
+#~ msgstr ""
+#~ "Gibt die Farbe der zweiten Ableitung der Funktion mit der Nummer "
+#~ "<parameter>id</parameter> zurück."
+
+#~ msgid "Parser functionIntColor id"
+#~ msgstr "Parser functionIntColor id"
+
+#~ msgid ""
+#~ "Returns the color of the integral of the function with the ID "
+#~ "<parameter>id</parameter>."
+#~ msgstr ""
+#~ "Gibt die Farbe des Integrals der Funktion mit der Nummer <parameter>id</"
+#~ "parameter> zurück."
+
+#~ msgid "Parser setFunctionFColor color id"
+#~ msgstr "Parser setFunctionFColor color id"
+
+#~ msgid ""
+#~ "Sets the color of the function with the ID <parameter>id</parameter> to "
+#~ "<parameter>color</parameter>. True is returned if the function exists, "
+#~ "otherwise false."
+#~ msgstr ""
+#~ "Setzt die Farbe der Funktion mit der Nummer <parameter>id</parameter> auf "
+#~ "<parameter>color</parameter>. Wenn die Funktion existiert, wird Wahr "
+#~ "zurückgegeben, sonst Falsch."
+
+#~ msgid "Parser setFunctionF1Color color id"
+#~ msgstr "Parser setFunctionF1Color color id"
+
+#~ msgid ""
+#~ "Sets the color of the first derivative of the function with the ID "
+#~ "<parameter>id</parameter> to <parameter>color</parameter>. True is "
+#~ "returned if the function exists, otherwise false."
+#~ msgstr ""
+#~ "Setzt die Farbe der ersten Ableitung der Funktion mit der Nummer "
+#~ "<parameter>id</parameter> auf <parameter>color</parameter>. Wenn die "
+#~ "Funktion existiert, wird Wahr zurückgegeben, sonst Falsch."
+
+#~ msgid "Parser setFunctionF2Color color id"
+#~ msgstr "Parser setFunctionF2Color color id"
+
+#~ msgid ""
+#~ "Sets the color of the second derivative of the function with the ID "
+#~ "<parameter>id</parameter> to <parameter>color</parameter>. True is "
+#~ "returned if the function exists, otherwise false."
+#~ msgstr ""
+#~ "Setzt die Farbe der zweiten Ableitung der Funktion mit der Nummer "
+#~ "<parameter>id</parameter> auf <parameter>color</parameter>. Wenn die "
+#~ "Funktion existiert, wird Wahr zurückgegeben, sonst Falsch."
+
+#~ msgid "Parser setFunctionIntColor color id"
+#~ msgstr "Parser setFunctionIntColor color id"
+
+#~ msgid ""
+#~ "Sets the color of the integral of the function with the ID <parameter>id</"
+#~ "parameter> to <parameter>color</parameter>. True is returned if the "
+#~ "function exists, otherwise false."
+#~ msgstr ""
+#~ "Setzt die Farbe des Integralsder Funktion mit der Nummer <parameter>id</"
+#~ "parameter> auf <parameter>color</parameter>. Wenn die Funktion existiert, "
+#~ "wird Wahr zurückgegeben, sonst Falsch."
+
+#~ msgid "Parser setFunctionStartYValue max id"
+#~ msgstr "Parser setFunctionStartYValue max id"
+
+#~ msgid ""
+#~ "Sets the initial y point for the integral of the function with the ID "
+#~ "<parameter>id</parameter> to <parameter>y</parameter>. True is returned "
+#~ "if the function exists and the expression is valid, otherwise false."
+#~ msgstr ""
+#~ "Setzt den Anfangs-y-Punkt für das Integral der Funktion mit der Nummer "
+#~ "<parameter>id</parameter> auf <parameter>y</parameter>. Wenn die Funktion "
+#~ "existiert und der Ausdruck gültig ist, wird Wahr zurückgegeben, sonst "
+#~ "Falsch."
+
+#~ msgid "View stopDrawing"
+#~ msgstr "View stopDrawing"
+
+#~ msgid "View drawPlot"
+#~ msgstr "View drawPlot"

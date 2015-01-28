@@ -1,0 +1,2939 @@
+# Arnold Krille <arnold@arnoldarts.de>, 2005.
+# Stephan Johach <hunsum@gmx.de>, 2004, 2005, 2006, 2007.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006, 2007.
+# Stephan Johach <lucardus@onlinehome.de>, 2006.
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2009, 2010, 2013, 2014.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2009, 2010.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: jovie\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-24 01:36+0000\n"
+"PO-Revision-Date: 2014-04-28 10:55+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Stephan Johach"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "hunsum@gmx.de"
+
+#: filters/main.cpp:36
+msgid "testfilter"
+msgstr "Testfilter"
+
+#: filters/main.cpp:37
+msgid "A utility for testing Jovie filter plugins."
+msgstr "Ein Programm zum Testen von Filtermodulen für Jovie."
+
+#: filters/main.cpp:38
+msgid "Copyright 2005, Gary Cramblitt &lt;garycramblitt@comcast.net&gt;"
+msgstr "Copyright 2005, Gary Cramblitt &lt;garycramblitt@comcast.net&gt;"
+
+#: filters/main.cpp:39 jovie/main.cpp:45 kcmkttsmgr/kcmkttsmgr.cpp:675
+msgid "Gary Cramblitt"
+msgstr "Gary Cramblitt"
+
+#: filters/main.cpp:39 kcmkttsmgr/kcmkttsmgr.cpp:675
+msgid "Maintainer"
+msgstr "Betreuer"
+
+#: filters/main.cpp:45
+msgid "Name of a Jovie filter plugin (required)"
+msgstr "Name des Jovie-Filtermoduls (zwingend erforderlich)"
+
+#: filters/main.cpp:47
+msgid "Talker code passed to filter"
+msgstr "Sprechercode an Filter übergeben"
+
+#: filters/main.cpp:49
+msgid "D-Bus application ID passed to filter"
+msgstr "D-Bus-Anwendungs-ID an Filter übergeben"
+
+#: filters/main.cpp:51
+msgid "Config file group name passed to filter"
+msgstr "Konfigurationsdatei-Gruppenname für den Filter"
+
+#: filters/main.cpp:52
+msgid "Display list of available Filter PlugIns and exit"
+msgstr "Liste der verfügbaren Filtermodule anzeigen und beenden"
+
+#: filters/main.cpp:54
+msgid "Display tabs as \\t, otherwise they are removed"
+msgstr "Tabulatoren als \\t anzeigen, anderenfalls werden sie entfernt"
+
+#: filters/main.cpp:55
+msgid "Display list of available filter plugins and exit"
+msgstr "Liste der verfügbaren Filtermodule anzeigen und beenden"
+
+#. i18n: ectx: property (title), widget (QGroupBox, typeGroupBox)
+#: filters/stringreplacer/editreplacementwidget.ui:23
+msgid "&Type"
+msgstr "&Typ"
+
+#. i18n: ectx: property (text), widget (QRadioButton, wordRadioButton)
+#: filters/stringreplacer/editreplacementwidget.ui:35
+msgid "&Word"
+msgstr "&Wort"
+
+#. i18n: ectx: property (text), widget (QRadioButton, regexpRadioButton)
+#: filters/stringreplacer/editreplacementwidget.ui:45
+msgid "Regular &expression"
+msgstr "&Regulärer Ausdruck"
+
+#. i18n: ectx: property (text), widget (QLabel, matchLabel)
+#: filters/stringreplacer/editreplacementwidget.ui:63
+msgid "&Match:"
+msgstr "Ü&bereinstimmung:"
+
+#. i18n: ectx: property (text), widget (QLabel, substLabel)
+#: filters/stringreplacer/editreplacementwidget.ui:76
+msgid "&Replace with:"
+msgstr "&Ersetzen durch:"
+
+#. i18n: ectx: property (text), widget (KPushButton, matchButton)
+#. i18n: ectx: property (text), widget (KPushButton, languageBrowseButton)
+#. i18n: ectx: property (text), widget (KPushButton, reEditorButton)
+#. i18n: ectx: property (text), widget (KPushButton, talkerButton)
+#: filters/stringreplacer/editreplacementwidget.ui:119
+#: filters/stringreplacer/stringreplacerconfwidget.ui:143
+#: filters/talkerchooser/talkerchooserconfwidget.ui:143
+#: filters/talkerchooser/talkerchooserconfwidget.ui:206
+msgid "..."
+msgstr "..."
+
+#. i18n: ectx: property (text), widget (QCheckBox, matchCaseCheckBox)
+#: filters/stringreplacer/editreplacementwidget.ui:133
+msgid "Match &case"
+msgstr "&Groß-/Kleinschreibung beachten"
+
+#. i18n: ectx: property (text), widget (QTableWidget, AvailableTalkersTable)
+#: filters/stringreplacer/selectlanguagedlg.cpp:56
+#: kcmkttsmgr/talkerwidget.ui:65 libkttsd/talkerlistmodel.cpp:137
+msgid "Language"
+msgstr "Sprache"
+
+#: filters/stringreplacer/selectlanguagedlg.cpp:57
+msgid "Code"
+msgstr "Code"
+
+#: filters/stringreplacer/selectlanguagedlg.h:66
+msgid "Select Language"
+msgstr "Sprache auswählen"
+
+#: filters/stringreplacer/stringreplacerconf.cpp:128
+msgid "Unable to open file."
+msgstr "Die Datei kann nicht geöffnet werden."
+
+#: filters/stringreplacer/stringreplacerconf.cpp:134
+msgid "File not in proper XML format."
+msgstr "Die Datei enthält kein gültiges XML-Format."
+
+#: filters/stringreplacer/stringreplacerconf.cpp:226
+#: filters/stringreplacer/stringreplacerconf.cpp:573
+msgctxt "Abbreviation for 'Regular Expression'"
+msgid "RegExp"
+msgstr "Reg. Ausdr."
+
+#: filters/stringreplacer/stringreplacerconf.cpp:226
+#: filters/stringreplacer/stringreplacerconf.cpp:312
+#: filters/stringreplacer/stringreplacerconf.cpp:386
+#: filters/stringreplacer/stringreplacerconf.cpp:541
+#: filters/stringreplacer/stringreplacerconf.cpp:571
+msgid "Word"
+msgstr "Wort"
+
+#: filters/stringreplacer/stringreplacerconf.cpp:229
+#: filters/stringreplacer/stringreplacerconf.cpp:318
+#: filters/stringreplacer/stringreplacerconf.cpp:546
+#: filters/stringreplacer/stringreplacerconf.cpp:574
+msgctxt "Yes or no"
+msgid "Yes"
+msgstr "Ja"
+
+#: filters/stringreplacer/stringreplacerconf.cpp:229
+#: filters/stringreplacer/stringreplacerconf.cpp:574
+msgctxt "Yes or no"
+msgid "No"
+msgstr "Nein"
+
+#: filters/stringreplacer/stringreplacerconf.cpp:267
+msgid "Unable to open file "
+msgstr "Die Datei kann nicht geöffnet werden "
+
+#: filters/stringreplacer/stringreplacerconf.cpp:354
+#: filters/stringreplacer/stringreplacerconf.cpp:376
+msgid "String Replacer"
+msgstr "Zeichenketten-Ersetzer"
+
+#: filters/stringreplacer/stringreplacerconf.cpp:374
+#: filters/stringreplacer/stringreplacerconf.cpp:415
+#: filters/stringreplacer/stringreplacerconf.cpp:419
+msgid "Multiple Languages"
+msgstr "Mehrere Sprachen"
+
+#: filters/stringreplacer/stringreplacerconf.cpp:387
+msgctxt "Abbreviation for 'Regular Expresion'"
+msgid "RegExp"
+msgstr "RegExp"
+
+#: filters/stringreplacer/stringreplacerconf.cpp:389
+msgid "Error"
+msgstr "Fehler"
+
+#: filters/stringreplacer/stringreplacerconf.cpp:396
+msgid "Select Languages"
+msgstr "Sprachen auswählen"
+
+#: filters/stringreplacer/stringreplacerconf.cpp:562
+msgid "Edit String Replacement"
+msgstr "Zeichenkettenersetzung bearbeiten"
+
+#: filters/stringreplacer/stringreplacerconf.cpp:661
+#: filters/stringreplacer/stringreplacerconf.cpp:677
+msgid "String Replacer Word List (*.xml)"
+msgstr "Zeichenkettenersetzer-Wortliste (*.xml)"
+
+#: filters/stringreplacer/stringreplacerconf.cpp:668
+#: filters/stringreplacer/stringreplacerconf.cpp:684
+msgid "Error Opening File"
+msgstr "Fehler beim Öffnen der Datei"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, StringReplacerConfWidget)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:15
+msgid "Configure String Replacer"
+msgstr "Zeichenkettenersetzung einrichten"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, nameLabel)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:35
+#: filters/talkerchooser/talkerchooserconfwidget.ui:35
+msgctxt "What's this text"
+msgid "Enter any name you like for this filter."
+msgstr "Geben Sie einen Namen für diesen Filter ein."
+
+#. i18n: ectx: property (text), widget (QLabel, nameLabel)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:38
+#: filters/talkerchooser/talkerchooserconfwidget.ui:38
+#: filters/xmltransformer/xmltransformerconfwidget.ui:92
+msgid "&Name:"
+msgstr "&Name:"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, nameLineEdit)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:51
+#: filters/talkerchooser/talkerchooserconfwidget.ui:51
+msgid "Enter any name you like for this filter."
+msgstr "Geben Sie einen Namen für diesen Filter ein."
+
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, applyGroupBox)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:60
+#: filters/talkerchooser/talkerchooserconfwidget.ui:60
+#: filters/xmltransformer/xmltransformerconfwidget.ui:139
+msgid "These settings determines when the filter is applied to text."
+msgstr ""
+"Diese Einstellungen legen fest, wann der Filter auf Text angewendet wird."
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, languageLabel)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:80
+msgctxt "What's this text"
+msgid ""
+"This filter is applied to text jobs of the specified language.  You may "
+"select more than one language by clicking the browse button and Ctrl-"
+"clicking on more than one in the list.  If blank the filter applies to all "
+"text jobs of any language."
+msgstr ""
+"Dieser Filter wird angewendet bei Textaufträgen in der angegebenen Sprache. "
+"Sie können durch Anklicken des Knopfes Durchsuchen und mit Strg-Klick auch "
+"mehrere Einträge aus der Liste auswählen. Ist dieses Feld leer, wird der "
+"Filter auf alle Textaufträge in jeder Sprache angewendet."
+
+#. i18n: ectx: property (text), widget (QLabel, languageLabel)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:83
+msgid "Lan&guage is:"
+msgstr "&Sprache ist:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, appIdLabel)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:96
+#: filters/talkerchooser/talkerchooserconfwidget.ui:99
+msgid ""
+"Enter a D-Bus Application ID.  This filter will only apply to text jobs "
+"queued by that application.  You may enter more than one ID separated by "
+"commas.  If blank, this filter applies to text jobs queued by all "
+"applications.  Tip: Use kdcop from the command line to get the Application "
+"IDs of running applications.  Example: \"konversation, kvirc,ksirc,kopete\""
+msgstr ""
+"Geben Sie eine D-Bus-Anwendungs-ID ein. Dieser Filter wird nur auf "
+"Textaufträge angewendet, die von dieser Anwendung kommen. Sie können auch "
+"mehrere durch Komma getrennte IDs angeben. Ist dieses Feld leer, wird der "
+"Filter auf alle Textaufträge angewendet. Hinweis: Um die Anwendungs-ID einer "
+"laufenden Anwendung zu erfahren, können Sie kdcop auf der Befehlszeile "
+"benutzen. Beispiel: „konversation, kvirc, ksirc, kopete“"
+
+#. i18n: ectx: property (text), widget (QLabel, appIdLabel)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:99
+#: filters/talkerchooser/talkerchooserconfwidget.ui:102
+msgid "Application &ID contains:"
+msgstr "Anwendungs-ID enthält:"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, languageLineEdit)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:133
+msgid ""
+"This filter is applied to text jobs of the specified language.  You may "
+"select more than one language by clicking the browse button and Ctrl-"
+"clicking on more than one in the list.  If blank the filter applies to all "
+"text jobs of any language."
+msgstr ""
+"Dieser Filter wird angewendet bei Textaufträgen in der angegebenen Sprache. "
+"Sie können durch Anklicken des Knopfes Durchsuchen und mit Strg-Klick auch "
+"mehrere Einträge aus der Liste auswählen. Ist dieses Feld leer, wird der "
+"Filter auf alle Textaufträge in jeder Sprache angewendet."
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, languageBrowseButton)
+#. i18n: ectx: property (whatsThis), widget (KPushButton, reEditorButton)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:140
+#: filters/talkerchooser/talkerchooserconfwidget.ui:140
+msgid ""
+"Click to select one or more languages.  This filter will be applied to text "
+"jobs of those languages."
+msgstr ""
+"Klicken Sie, um eine oder mehrere Sprachen auszuwählen. Dieser Filter wird "
+"auf Textaufträge in dieser Sprache angewendet."
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, appIdLineEdit)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:152
+#: filters/talkerchooser/talkerchooserconfwidget.ui:152
+msgid ""
+"<qt>Enter a D-Bus Application ID.  This filter will only apply to text jobs "
+"queued by that application.  You may enter more than one ID separated by "
+"commas.  Use <b>knotify</b> to match all messages sent as KDE "
+"notifications.  If blank, this filter applies to text jobs queued by all "
+"applications.  Tip: Use kdcop from the command line to get the Application "
+"IDs of running applications.  Example: \"konversation, kvirc,ksirc,kopete\"</"
+"qt>"
+msgstr ""
+"<qt>Geben Sie eine D-Bus-Anwendungs-ID ein. Dieser Filter wird nur auf "
+"Textaufträge angewendet, die von dieser Anwendung kommen. Sie können auch "
+"mehrere durch Komma getrennte IDs angeben. Ist dieses Feld leer, wird der "
+"Filter auf alle Textaufträge angewendet. Hinweis: Um die Anwendungs-ID einer "
+"laufenden Anwendung zu erfahren, können Sie kdcop auf der Befehlszeile "
+"benutzen. Beispiel: „konversation, kvirc, ksirc, kopete“</qt>"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, loadButton)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:180
+msgid "Click to load a word list from a file."
+msgstr "Klicken Sie, um eine Wortliste aus einer Datei zu laden."
+
+#. i18n: ectx: property (text), widget (KPushButton, loadButton)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:183
+msgctxt "Load a word list from a file"
+msgid "Load"
+msgstr "Laden"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, saveButton)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:198
+msgid "Click to save word list to a file."
+msgstr "Klicken Sie, um eine Wortliste in eine Datei zu speichern."
+
+#. i18n: ectx: property (text), widget (KPushButton, saveButton)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:201
+msgid "&Save"
+msgstr "&Speichern"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, clearButton)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:216
+msgid "Click to empty the word list."
+msgstr "Klicken Sie, um die Wortliste zu leeren."
+
+#. i18n: ectx: property (text), widget (KPushButton, clearButton)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:219
+msgctxt "Clear the word list"
+msgid "Clear"
+msgstr "Löschen"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, addButton)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:252
+msgid "Click to add another word or regular expression to the list."
+msgstr ""
+"Klicken Sie, um ein Wort oder einen Regulären Ausdruck zur Liste "
+"hinzuzufügen."
+
+#. i18n: ectx: property (text), widget (KPushButton, addButton)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:255
+msgid "&Add"
+msgstr "&Hinzufügen"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, upButton)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:270
+msgid ""
+"Click to move selected word up in the list.  Words higher in the list are "
+"applied first."
+msgstr ""
+"Klicken Sie, um das ausgewählte Wort in der Liste aufwärts zu verschieben. "
+"Wörter, die höher in der Liste stehen, werden zuerst angewandt."
+
+#. i18n: ectx: property (text), widget (QPushButton, upButton)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:273
+msgid "&Up"
+msgstr "&Aufwärts"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, downButton)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:288
+msgid ""
+"Click to move a word down in the list.  Words lower in the list are applied "
+"last."
+msgstr ""
+"Klicken Sie, um das ausgewählte Wort in der Liste abwärts zu schieben. "
+"Wörter, die unten in der Liste stehen, werden zuletzt angewandt."
+
+#. i18n: ectx: property (text), widget (KPushButton, lowerTalkerPriorityButton)
+#. i18n: ectx: property (text), widget (KPushButton, lowerFilterPriorityButton)
+#. i18n: ectx: property (text), widget (QPushButton, downButton)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:291
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:117 kcmkttsmgr/kcmkttsmgrwidget.ui:238
+msgid "Do&wn"
+msgstr "Ab&wärts"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, editButton)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:309
+msgid "Click to modify an existing word or regular expression in the list."
+msgstr ""
+"Klicken Sie, um ein vorhandenes Wort oder einen Regulären Ausdruck aus der "
+"Liste zu bearbeiten."
+
+#. i18n: ectx: property (text), widget (KPushButton, editButton)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:312
+msgid "&Edit"
+msgstr "&Bearbeiten"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, removeButton)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:330
+msgid "Click to remove a word or regular expression from the list."
+msgstr ""
+"Klicken Sie, um ein Wort oder einen Regulären Ausdruck aus der Liste zu "
+"entfernen."
+
+#. i18n: ectx: property (text), widget (KPushButton, removeTalkerButton)
+#. i18n: ectx: property (text), widget (KPushButton, removeFilterButton)
+#. i18n: ectx: property (text), widget (KPushButton, removeButton)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:333
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:155 kcmkttsmgr/kcmkttsmgrwidget.ui:276
+msgid "&Remove"
+msgstr "&Entfernen"
+
+#. i18n: ectx: property (text), widget (QTableWidget, substLView)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:371
+msgid "Type"
+msgstr "Typ"
+
+#. i18n: ectx: property (text), widget (QTableWidget, substLView)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:376
+msgid "Match Case"
+msgstr "Groß-/Kleinschreibung beachten"
+
+#. i18n: ectx: property (text), widget (QTableWidget, substLView)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:381
+msgid "Match"
+msgstr "Übereinstimmung"
+
+#. i18n: ectx: property (text), widget (QTableWidget, substLView)
+#: filters/stringreplacer/stringreplacerconfwidget.ui:386
+msgid "Replace With"
+msgstr "Ersetzen durch"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, SelectTalkerWidget)
+#: filters/talkerchooser/selecttalkerdlg.h:59
+#: filters/talkerchooser/selecttalkerwidget.ui:21
+#: filters/talkerchooser/talkerchooserconf.cpp:196 jovie/jovietrayicon.cpp:106
+msgid "Select Talker"
+msgstr "Sprecherauswahl"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, useDefaultRadioButton)
+#: filters/talkerchooser/selecttalkerwidget.ui:58
+msgid ""
+"When checked, will use the default Talker, which is the topmost Talker "
+"listed in the Talkers tab."
+msgstr ""
+"Ist diese Einstellung markiert, wird der Standardsprecher benutzt. Dies ist "
+"der auf der Karteikarte Sprecher zuerst in der Liste aufgeführte Sprecher."
+
+#. i18n: ectx: property (text), widget (QRadioButton, useDefaultRadioButton)
+#: filters/talkerchooser/selecttalkerwidget.ui:61
+msgid "&Use default Talker"
+msgstr "&Standardsprecher verwenden"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, useSpecificTalkerRadioButton)
+#: filters/talkerchooser/selecttalkerwidget.ui:68
+msgid ""
+"When checked, will use the specific Talker (if it is still configured), "
+"otherwise the Talker most closely matching."
+msgstr ""
+"Ist diese Einstellung markiert, wird der ausgewählte Sprecher verwendet "
+"(sofern er noch eingerichtet ist), anderenfalls der Sprecher, der diesem am "
+"ehesten entspricht."
+
+#. i18n: ectx: property (text), widget (QRadioButton, useSpecificTalkerRadioButton)
+#: filters/talkerchooser/selecttalkerwidget.ui:71
+msgid "Use specific &Talker"
+msgstr "&Sprecherauswahl"
+
+#: filters/talkerchooser/talkerchooserconf.cpp:135
+msgid "Talker Chooser"
+msgstr "Sprecherauswahl"
+
+#: filters/talkerchooser/talkerchooserconf.cpp:212
+#: filters/talkerchooser/talkerchooserconf.cpp:226
+msgid "Talker Chooser Config (*rc)"
+msgstr "Sprecherauswahl-Konfiguration (*rc)"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, TalkerChooserConfWidget)
+#: filters/talkerchooser/talkerchooserconfwidget.ui:15
+msgid "Configure Talker Chooser"
+msgstr "Einrichtung Sprecherauswahl"
+
+#. i18n: ectx: property (title), widget (QGroupBox, applyGroupBox)
+#: filters/talkerchooser/talkerchooserconfwidget.ui:63
+msgid "&Apply This Filter When"
+msgstr "Diesen &Filter anwenden, wenn"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, reLabel)
+#: filters/talkerchooser/talkerchooserconfwidget.ui:83
+msgctxt "What's this text"
+msgid ""
+"This filter is applied to text jobs of the specified language.  You may "
+"select more than one language by clicking the browse button and Ctrl-"
+"clicking on more than one in the list.  If blank, the filter applies to all "
+"text jobs of any language."
+msgstr ""
+"Dieser Filter wird angewendet bei Textaufträgen in der angegebenen Sprache. "
+"Sie können durch Anklicken des Knopfes Durchsuchen und mit Strg-Klick auch "
+"mehrere Einträge aus der Liste auswählen. Ist dieses Feld leer, wird der "
+"Filter auf alle Textaufträge in jeder Sprache angewendet."
+
+#. i18n: ectx: property (text), widget (QLabel, reLabel)
+#: filters/talkerchooser/talkerchooserconfwidget.ui:86
+msgid "Te&xt contains:"
+msgstr "&Text enthält:"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, reLineEdit)
+#: filters/talkerchooser/talkerchooserconfwidget.ui:133
+msgid ""
+"This filter is applied to text jobs of the specified language.  You may "
+"select more than one language by clicking the browse button and Ctrl-"
+"clicking on more than one in the list.  If blank, the filter applies to all "
+"text jobs of any language."
+msgstr ""
+"Dieser Filter wird angewendet bei Textaufträgen in der angegebenen Sprache. "
+"Sie können durch Anklicken des Knopfes Durchsuchen und mit Strg-Klick auch "
+"mehrere Einträge aus der Liste auswählen. Ist dieses Feld leer, wird der "
+"Filter auf alle Textaufträge in jeder Sprache angewendet."
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, talkerLabel)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, talkerLineEdit)
+#: filters/talkerchooser/talkerchooserconfwidget.ui:180
+#: filters/talkerchooser/talkerchooserconfwidget.ui:196
+msgid ""
+"The new Talker that will be used when the conditions above are met.  The "
+"default Talker is the topmost in the Talkers tab.  Click the button to "
+"choose a Talker."
+msgstr ""
+"Der neue Sprecher, der verwendet wird, wenn die oben angegebenen Bedingungen "
+"zutreffen. Der Standardsprecher ist der auf der Karteikarte Sprecher zuerst "
+"aufgeführte Sprecher. Klicken Sie auf den Knopf, um einen Sprecher "
+"auszuwählen."
+
+#. i18n: ectx: property (text), widget (QLabel, talkerLabel)
+#: filters/talkerchooser/talkerchooserconfwidget.ui:183
+msgid "&Talker:"
+msgstr "&Sprecher:"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, talkerButton)
+#: filters/talkerchooser/talkerchooserconfwidget.ui:203
+msgid "Click to select a Talker."
+msgstr "Klicken Sie, um einen Sprecher auszuwählen."
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, loadButton)
+#: filters/talkerchooser/talkerchooserconfwidget.ui:231
+msgid "Click to load a Talker Chooser configuration from a file."
+msgstr "Klicken Sie, um eine Sprecherauswahl-Konfiguration zu laden."
+
+#. i18n: ectx: property (text), widget (KPushButton, loadButton)
+#: filters/talkerchooser/talkerchooserconfwidget.ui:234
+msgid "&Load..."
+msgstr "&Laden ..."
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, saveButton)
+#: filters/talkerchooser/talkerchooserconfwidget.ui:249
+msgid "Click to save this Talker Chooser to a file."
+msgstr "Klicken Sie, um diese Sprecherauswahl zu speichern."
+
+#. i18n: ectx: property (text), widget (KPushButton, saveButton)
+#: filters/talkerchooser/talkerchooserconfwidget.ui:252
+msgid "&Save..."
+msgstr "&Speichern ..."
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, clearButton)
+#: filters/talkerchooser/talkerchooserconfwidget.ui:267
+msgid "Click to clear everything."
+msgstr "Klicken Sie, um alles zu löschen."
+
+#. i18n: ectx: property (text), widget (KPushButton, clearButton)
+#: filters/talkerchooser/talkerchooserconfwidget.ui:270
+msgid "Cl&ear"
+msgstr "&Löschen"
+
+#: filters/xmltransformer/xmltransformerconf.cpp:115
+msgid "XML Transformer"
+msgstr "XML-Umformer"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, XmlTransformerConfWidget)
+#: filters/xmltransformer/xmltransformerconfwidget.ui:14
+msgid "Configure XML Transformer"
+msgstr "XML-Umformer einrichten"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, nameLineEdit)
+#: filters/xmltransformer/xmltransformerconfwidget.ui:42
+msgid "Enter any descriptive name you like for this filter."
+msgstr "Geben Sie einen aussagekräftigen Namen für diesen Filter ein."
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, xsltPath)
+#. i18n: ectx: property (whatsThis), widget (QLabel, xsltLabel)
+#: filters/xmltransformer/xmltransformerconfwidget.ui:57
+#: filters/xmltransformer/xmltransformerconfwidget.ui:105
+msgid ""
+"Enter the full path to an XML Style Language - Transforms (XSLT) stylesheet "
+"file.  XSLT files usually end with extension .xsl."
+msgstr ""
+"Geben Sie den vollständigen Pfad zu einer XSLT-Stilvorlagendatei ein. XSLT-"
+"Dateien besitzen gewöhnlich die Erweiterung .xsl."
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, xsltprocPath)
+#. i18n: ectx: property (whatsThis), widget (QLabel, xsltprocLabel)
+#: filters/xmltransformer/xmltransformerconfwidget.ui:72
+#: filters/xmltransformer/xmltransformerconfwidget.ui:121
+msgid ""
+"Enter the path to the xsltproc executable program.  If it is in the PATH "
+"environment variable, just enter \"xsltproc\"."
+msgstr ""
+"Geben Sie den Pfad zur ausführbaren Datei xsltproc ein. Befindet sich dieser "
+"in Ihrem PATH, reicht die Angabe von „xsltproc“."
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, nameLabel)
+#: filters/xmltransformer/xmltransformerconfwidget.ui:89
+msgctxt "What's this text"
+msgid "Enter any descriptive name you like for this filter."
+msgstr "Geben Sie einen aussagekräftigen Namen für diesen Filter ein."
+
+#. i18n: ectx: property (text), widget (QLabel, xsltLabel)
+#: filters/xmltransformer/xmltransformerconfwidget.ui:108
+msgid "&XSLT file:"
+msgstr "&XSLT-Datei:"
+
+#. i18n: ectx: property (text), widget (QLabel, xsltprocLabel)
+#: filters/xmltransformer/xmltransformerconfwidget.ui:124
+msgid "xsltproc &executable:"
+msgstr "Ausführbare Datei &xsltproc:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, applyGroupBox)
+#: filters/xmltransformer/xmltransformerconfwidget.ui:142
+msgid "Apply This &Filter When"
+msgstr "Diesen &Filter anwenden, wenn"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, rootElementLineEdit)
+#: filters/xmltransformer/xmltransformerconfwidget.ui:170
+msgid ""
+"This filter will be applied only to text having the specified XML root "
+"element.  If blank, applies to all text.  You may enter more than one root "
+"element separated by commas.  Example: \"html\"."
+msgstr ""
+"Dieser Filter wird nur auf Textaufträge mit dem angegebenen XML-"
+"Wurzelelement angewendet. Ist dieses Feld leer, wird er auf alle "
+"Textaufträge angewendet. Sie können mehrere Wurzelelemente durch Komma "
+"getrennt angeben. Beispiel: „html“."
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, doctypeLineEdit)
+#. i18n: ectx: property (whatsThis), widget (QLabel, doctypeLabel)
+#: filters/xmltransformer/xmltransformerconfwidget.ui:185
+#: filters/xmltransformer/xmltransformerconfwidget.ui:233
+msgid ""
+"This filter will be applied only to text having the specified DOCTYPE "
+"specification.  If blank, applies to all text.  You may enter more than one "
+"DOCTYPE separated by commas.  Example: \"xhtml\"."
+msgstr ""
+"Dieser Filter wird nur auf Textaufträge mit dem angegebenen DOCTYPE "
+"angewendet. Ist dieses Feld leer, wird er auf alle Textaufträge angewendet. "
+"Sie können mehrere DOCTYPEs durch Komma getrennt angeben. Beispiel: „xhtml“."
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, appIdLineEdit)
+#. i18n: ectx: property (whatsThis), widget (QLabel, appIdLabel)
+#: filters/xmltransformer/xmltransformerconfwidget.ui:200
+#: filters/xmltransformer/xmltransformerconfwidget.ui:249
+msgid ""
+"<qt>Enter a D-Bus Application ID.  This filter will only apply to text "
+"queued by that application.  You may enter more than one ID separated by "
+"commas.  Use <b>knotify</b> to match all messages sent as KDE "
+"notifications.  If blank, this filter applies to text queued by all "
+"applications.  Tip: Use kdcop from the command line to get the Application "
+"IDs of running applications.  Example: \"konversation, kvirc,ksirc,kopete\"</"
+"qt>"
+msgstr ""
+"<qt>Geben Sie eine D-Bus-Anwendungs-ID ein. Dieser Filter wird nur auf "
+"Textaufträge angewendet, die von dieser Anwendung kommen. Sie können auch "
+"mehrere durch Komma getrennte IDs angeben. Verwenden Sie <b>knofiy</b>, um "
+"alle Nachrichten, die als KDE-Nachrichten versandt werden, auszuwählen. Ist "
+"dieses Feld leer, wird der Filter auf alle Textaufträge angewendet. Hinweis: "
+"Um die Anwendungs-ID einer laufenden Anwendung zu erfahren, können Sie kdcop "
+"auf der Befehlszeile benutzen. Beispiel: „konversation, kvirc, ksirc, "
+"kopete“</qt>"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, rootElementLabel)
+#: filters/xmltransformer/xmltransformerconfwidget.ui:217
+msgctxt "What's this text"
+msgid ""
+"This filter will be applied only to text having the specified XML root "
+"element.  If blank, applies to all text.  You may enter more than one root "
+"element separated by commas.  Example: \"html\"."
+msgstr ""
+"Dieser Filter wird nur auf Textaufträge mit dem angegebenen XML-"
+"Wurzelelement angewendet. Ist dieses Feld leer, wird er auf alle "
+"Textaufträge angewendet. Sie können mehrere Wurzelelemente durch Komma "
+"getrennt angeben. Beispiel: „html“."
+
+#. i18n: ectx: property (text), widget (QLabel, rootElementLabel)
+#: filters/xmltransformer/xmltransformerconfwidget.ui:220
+msgid "&Root element is:"
+msgstr "&Wurzelelement ist:"
+
+#. i18n: ectx: property (text), widget (QLabel, doctypeLabel)
+#: filters/xmltransformer/xmltransformerconfwidget.ui:236
+msgid "or DOC&TYPE is:"
+msgstr "oder DOC&TYPE ist:"
+
+#. i18n: ectx: property (text), widget (QLabel, appIdLabel)
+#: filters/xmltransformer/xmltransformerconfwidget.ui:252
+msgid "and Application &ID contains:"
+msgstr "und Anwendungs-&ID enthält:"
+
+#: jovie/jovie.cpp:485 jovie/jovietrayicon.cpp:224
+msgid "KDE Text-to-Speech"
+msgstr "KDE-Sprachausgabe"
+
+#: jovie/jovietrayicon.cpp:67
+msgid "KDE Text-to-Speech Manager"
+msgstr "KDE-Sprachausgabeverwaltung"
+
+#: jovie/jovietrayicon.cpp:75
+msgid "&Stop/Delete"
+msgstr "&Stopp/Löschen"
+
+#: jovie/jovietrayicon.cpp:81
+msgid "&Pause"
+msgstr "&Anhalten"
+
+#: jovie/jovietrayicon.cpp:87
+msgid "&Resume"
+msgstr "&Fortfahren"
+
+#: jovie/jovietrayicon.cpp:93
+msgid "R&epeat"
+msgstr "&Wiederholen"
+
+#: jovie/jovietrayicon.cpp:102
+msgid "Spea&k Clipboard Contents"
+msgstr "&Inhalt der Zwischenablage vorsprechen"
+
+#: jovie/main.cpp:40
+msgid "Jovie"
+msgstr "Jovie"
+
+#: jovie/main.cpp:41
+msgid "Text-to-speech synthesis daemon"
+msgstr "Sprachausgabe-Dienst"
+
+#: jovie/main.cpp:42
+msgid "(C) 2002, José Pablo Ezequiel Fernández"
+msgstr "© 2002, José Pablo Ezequiel Fernández"
+
+#: jovie/main.cpp:43
+msgid "Jeremy Whiting"
+msgstr "Jeremy Whiting"
+
+#: jovie/main.cpp:43
+msgid "Current Maintainer"
+msgstr "Aktueller Betreuer"
+
+#: jovie/main.cpp:44 kcmkttsmgr/kcmkttsmgr.cpp:674
+msgid "José Pablo Ezequiel Fernández"
+msgstr "José Pablo Ezequiel Fernández"
+
+#: jovie/main.cpp:44
+msgid "Original Author"
+msgstr "Ursprünglicher Autor"
+
+#: jovie/main.cpp:45
+msgid "Previous Maintainer"
+msgstr "Früherer Betreuer"
+
+#: jovie/main.cpp:46
+msgid "Gunnar Schmi Dt"
+msgstr "Gunnar Schmi Dt"
+
+#: jovie/main.cpp:46 jovie/main.cpp:47 jovie/main.cpp:48 jovie/main.cpp:49
+#: kcmkttsmgr/kcmkttsmgr.cpp:676 kcmkttsmgr/kcmkttsmgr.cpp:677
+msgid "Contributor"
+msgstr "Beiträge"
+
+#: jovie/main.cpp:47 kcmkttsmgr/kcmkttsmgr.cpp:676
+msgid "Olaf Schmidt"
+msgstr "Olaf Schmidt"
+
+#: jovie/main.cpp:48 kcmkttsmgr/kcmkttsmgr.cpp:677
+msgid "Paul Giannaros"
+msgstr "Paul Giannaros"
+
+#: jovie/main.cpp:49
+msgid "Simion Ploscariu"
+msgstr "Simion Ploscariu"
+
+#: jovie/main.cpp:50
+msgid "Jorge Luis Arzola"
+msgstr "Jorge Luis Arzola"
+
+#: jovie/main.cpp:50 jovie/main.cpp:51
+msgid "Testing"
+msgstr "Testen"
+
+#: jovie/main.cpp:51
+msgid "David Powell"
+msgstr "David Powell"
+
+#: kcmkttsmgr/addtalker.cpp:39
+msgid "Add Talker"
+msgstr "Sprecher hinzufügen"
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:181 kcmkttsmgr/kcmkttsmgr.cpp:801
+msgid "Filter"
+msgstr "Filter"
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:620
+msgid ""
+"You have made changes to the configuration but have not saved them yet.  "
+"Click Apply to save the changes or Cancel to abandon the changes."
+msgstr ""
+"Sie haben Änderungen bei der Einrichtung vorgenommen diese aber noch nicht "
+"gespeichert. Klicken Sie auf „Anwenden“, um die Änderungen zu übernehmen "
+"oder „Abbrechen“, um die Änderungen zu verwerfen."
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:661
+msgid ""
+"<h1>Text-to-Speech</h1><p>This is the configuration for the text-to-speech D-"
+"Bus service</p><p>This allows other applications to access text-to-speech "
+"resources</p><p>Be sure to configure a default language for the language you "
+"are using as this will be the language used by most of the applications</p>"
+msgstr ""
+"<h1>Sprachausgabe</h1><p>Dies ist die Einrichtung des D-Bus-Dienstes für "
+"Sprachausgabe</p><p>Er ermöglicht anderen Anwendungen den Zugriff auf die "
+"vorhandenen Hilfsmittel zur Sprachausgabe</p><p>Vergewissern Sie sich, dass "
+"Sie eine Standardsprache für die von Ihnen verwendete Sprache einrichten, da "
+"diese von den meisten Anwendungen benutzt werden wird.</p>"
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:670
+msgid "jovie"
+msgstr "Jovie"
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:670
+msgid "KCMKttsMgr"
+msgstr "KCMKttsMgr"
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:672
+msgid "(c) 2010, Jeremy Whiting"
+msgstr "© 2010, Jeremy Whiting"
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:674
+msgid "Author"
+msgstr "Autor"
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:800
+msgid "Select Filter"
+msgstr "Filter auswählen"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, kttsjobmgr)
+#: kcmkttsmgr/kcmkttsmgr.cpp:1095 kcmkttsmgr/kttsjobmgr.ui:14
+msgid "Jobs"
+msgstr "Aufträge"
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:1117
+#, kde-format
+msgid "Jovie Version: %1"
+msgstr "Jovie-Version: %1"
+
+#. i18n: ectx: property (text), widget (QLabel, kttsdVersion)
+#: kcmkttsmgr/kcmkttsmgr.cpp:1157 kcmkttsmgr/kcmkttsmgrwidget.ui:40
+msgid "Jovie not running"
+msgstr "Jovie läuft nicht"
+
+#: kcmkttsmgr/kcmkttsmgr.cpp:1266
+msgid "Filter Configuration"
+msgstr "Filter-Einrichtung"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:34
+msgctxt "General, as title of window"
+msgid "General"
+msgstr "Allgemein"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, enableJovieCheckBox)
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:63
+msgid "Check to start the Jovie Daemon and enable Text-to-Speech."
+msgstr ""
+"Markieren Sie dieses Ankreuzfeld, um den Jovie-Dienst zu starten und die "
+"Sprachausgabe zu aktivieren."
+
+#. i18n: ectx: property (text), widget (QCheckBox, enableJovieCheckBox)
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:66
+msgid "&Enable Text-to-Speech System (Jovie)"
+msgstr "&Sprachausgabe aktivieren (Jovie)"
+
+#. i18n: ectx: attribute (title), widget (QWidget, TabPage)
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:74
+msgid "Talkers"
+msgstr "Sprecher"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, addTalkerButton)
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:88
+msgid "Click to add and configure a new Talker (speech synthesizer)."
+msgstr ""
+"Klicken Sie, um einen neuen Sprecher (Sprachsynthesizer) hinzuzufügen und "
+"einzurichten."
+
+#. i18n: ectx: property (text), widget (KPushButton, addTalkerButton)
+#. i18n: ectx: property (text), widget (KPushButton, addFilterButton)
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:91 kcmkttsmgr/kcmkttsmgrwidget.ui:206
+msgid "Add..."
+msgstr "Hinzufügen ..."
+
+#. i18n: ectx: property (text), widget (KPushButton, higherTalkerPriorityButton)
+#. i18n: ectx: property (text), widget (KPushButton, higherFilterPriorityButton)
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:104 kcmkttsmgr/kcmkttsmgrwidget.ui:222
+msgid "U&p"
+msgstr "&Aufwärts"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, configureTalkerButton)
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:133
+msgid "Click to configure options for the highlighted Talker."
+msgstr ""
+"Klicken Sie, um die Einstellungen für den ausgewählten Sprecher zu "
+"bearbeiten."
+
+#. i18n: ectx: property (text), widget (KPushButton, configureTalkerButton)
+#. i18n: ectx: property (text), widget (KPushButton, configureFilterButton)
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:136 kcmkttsmgr/kcmkttsmgrwidget.ui:257
+msgid "&Edit..."
+msgstr "&Bearbeiten ..."
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, removeTalkerButton)
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:152
+msgid "Click to remove the highlighted Talker."
+msgstr "Klicken Sie, um den ausgewählten Sprecher zu entfernen."
+
+#. i18n: ectx: attribute (title), widget (QWidget, TabPage)
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:184
+msgid "Filters"
+msgstr "Filter"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, addFilterButton)
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:203
+msgid "Click to add and configure a new Filter."
+msgstr "Klicken Sie, um einen neuen Filter hinzuzufügen und einzurichten."
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, higherFilterPriorityButton)
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:219
+msgid ""
+"Click to move selected filter up in the list.  Filters higher in the list "
+"are applied first."
+msgstr ""
+"Klicken Sie, um den ausgewählten Filter in der Liste aufwärts zu schieben. "
+"Filter, die in der Liste höher stehen, werden zuerst angewendet."
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, lowerFilterPriorityButton)
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:235
+msgid ""
+"Click to move a filter down in the list.  Filters lower in the list are "
+"applied last."
+msgstr ""
+"Klicken Sie, um den ausgewählten Filter in der Liste abwärts zu schieben. "
+"Filter, die in der Liste unten stehen, werden zuletzt angewendet."
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, configureFilterButton)
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:254
+msgid "Click to configure options for the highlighted Filter."
+msgstr ""
+"Klicken Sie, um die Einstellungen für den ausgewählten Filter zu bearbeiten."
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, removeFilterButton)
+#: kcmkttsmgr/kcmkttsmgrwidget.ui:273
+msgid "Click to remove the highlighted Filter."
+msgstr "Klicken Sie, um den ausgewählten Filter zu entfernen."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: kcmkttsmgr/kttsjobmgr.ui:20
+msgid "Speech Control"
+msgstr "Sprachkontrolle"
+
+#. i18n: ectx: property (text), widget (KPushButton, stopButton)
+#: kcmkttsmgr/kttsjobmgr.ui:31
+msgid "Stop"
+msgstr "Anhalten"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, cancelButton)
+#: kcmkttsmgr/kttsjobmgr.ui:41
+msgid ""
+"<p>Deletes the job.  If it is currently speaking, it stops speaking.  The "
+"next speakable job in the list begins speaking.</p>"
+msgstr ""
+"<p>Löscht den Auftrag. Wird er gerade gesprochen, wird der Vorgang "
+"abgebrochen. Der nächste Auftrag wird gesprochen.</p>"
+
+#. i18n: ectx: property (text), widget (KPushButton, cancelButton)
+#: kcmkttsmgr/kttsjobmgr.ui:44
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, pauseButton)
+#: kcmkttsmgr/kttsjobmgr.ui:54
+msgid ""
+"<p>Changes a job to Paused state.  If currently speaking, the job stops "
+"speaking. Paused jobs prevent jobs that follow them from speaking, so either "
+"click <b>Resume</b> to make the job speakable, or click <b>Later</b> to move "
+"it down in the list.</p>"
+msgstr ""
+"<p>Versetzt einen Auftrag in den Status „Angehalten“. Wird er gerade "
+"vorgelesen, wird dieser Vorgang unterbrochen. Angehaltene Aufträge "
+"verhindern, dass Aufträge, die nach ihnen in der Liste stehen, abgearbeitet "
+"werden. Sie müssen dann entweder auf <b>Fortsetzen</b> klicken oder den "
+"Auftrag mit <b>Später</b> in der Liste nach hinten schieben.</p>"
+
+#. i18n: ectx: property (text), widget (KPushButton, pauseButton)
+#: kcmkttsmgr/kttsjobmgr.ui:57
+msgid "Pause"
+msgstr "Anhalten"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, resumeButton)
+#: kcmkttsmgr/kttsjobmgr.ui:67
+msgid ""
+"<p>Resumes a paused job or changes a Queued job to Waiting.  If the job is "
+"the top speakable job in the list, it begins speaking.</p>"
+msgstr ""
+"<p>Setzt einen angehaltenen Auftrag fort oder versetzt einen Auftrag, der in "
+"die Warteschlange eingereiht wurde in den Status „wartend“. Steht der "
+"Auftrag an erster Stelle in der Liste, wird er sofort gesprochen.</p>"
+
+#. i18n: ectx: property (text), widget (KPushButton, resumeButton)
+#: kcmkttsmgr/kttsjobmgr.ui:70
+msgid "Resume"
+msgstr "Fortfahren"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, speak_clipboard)
+#: kcmkttsmgr/kttsjobmgr.ui:81
+msgid ""
+"<p>Queues the current contents of the clipboard for speaking and sets its "
+"state to Waiting.  If the job is the topmost in the list, it begins "
+"speaking.  The job will be spoken by the topmost Talker in the <b>Talkers</"
+"b> tab.</p>"
+msgstr ""
+"<p>Legt den Inhalt der Zwischenablage in der Warteschlange ab und setzt den "
+"Auftrag auf den Status „wartend“. Ist der Auftrag der erste in der Liste, "
+"wird er sofort vorgelesen. Der Auftrag wird vom Sprecher vorgelesen, der auf "
+"der Karteikarte <b>Sprecher</b> als erster in der Liste aufgeführt ist.</p>"
+
+#. i18n: ectx: property (text), widget (KPushButton, speak_clipboard)
+#: kcmkttsmgr/kttsjobmgr.ui:84
+msgid "&Speak Clipboard"
+msgstr "&Zwischenablage vorsprechen"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, speak_file)
+#: kcmkttsmgr/kttsjobmgr.ui:91
+msgid ""
+"<p>Prompts you for a file name and queues the contents of the file for "
+"speaking.  You must click the <b>Resume</b> button before the job will be "
+"speakable.  The job will be spoken by the topmost Talker in the <b>Talkers</"
+"b> tab.</p>"
+msgstr ""
+"<p>Fragt nach einem Dateinamen und legt den Inhalt der Datei als Auftrag in "
+"der Warteschlange ab. Sie müssen auf <b>Fortsetzen</b> klicken, damit der "
+"Auftrag vorgelesen wird. Der Auftrag wird vom Sprecher vorgelesen, der auf "
+"der Karteikarte <b>Sprecher</b> als erster in der Liste aufgeführt ist.</p>"
+
+#. i18n: ectx: property (text), widget (KPushButton, speak_file)
+#: kcmkttsmgr/kttsjobmgr.ui:94
+msgid "Spea&k File"
+msgstr "&Datei vorsprechen"
+
+#. i18n: ectx: property (text), widget (QLabel, nameLabel)
+#: kcmkttsmgr/talkerwidget.ui:18
+msgid "&Name"
+msgstr "&Name"
+
+#. i18n: ectx: property (text), widget (QTableWidget, AvailableTalkersTable)
+#: kcmkttsmgr/talkerwidget.ui:70 libkttsd/talkerlistmodel.cpp:138
+msgid "Synthesizer"
+msgstr "Synthesizer"
+
+#. i18n: ectx: property (text), widget (QTableWidget, AvailableTalkersTable)
+#: kcmkttsmgr/talkerwidget.ui:75
+msgid "Voice Name"
+msgstr "Stimmenname"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: kcmkttsmgr/talkerwidget.ui:87
+msgid "Voice &Type"
+msgstr "Stimm&typ"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, voiceComboBox)
+#: kcmkttsmgr/talkerwidget.ui:104
+msgid "Male 1"
+msgstr "Männlich 1"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, voiceComboBox)
+#: kcmkttsmgr/talkerwidget.ui:109 libkttsd/talkercode.cpp:317
+msgid "Male 2"
+msgstr "Männlich 2"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, voiceComboBox)
+#: kcmkttsmgr/talkerwidget.ui:114 libkttsd/talkercode.cpp:318
+msgid "Male 3"
+msgstr "Männlich 3"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, voiceComboBox)
+#: kcmkttsmgr/talkerwidget.ui:119
+msgid "Female 1"
+msgstr "Weiblich 1"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, voiceComboBox)
+#: kcmkttsmgr/talkerwidget.ui:124 libkttsd/talkercode.cpp:320
+msgid "Female 2"
+msgstr "Weiblich 2"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, voiceComboBox)
+#: kcmkttsmgr/talkerwidget.ui:129 libkttsd/talkercode.cpp:321
+msgid "Female 3"
+msgstr "Weiblich 3"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, voiceComboBox)
+#: kcmkttsmgr/talkerwidget.ui:134
+msgid "Male Child"
+msgstr "Junge"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, voiceComboBox)
+#: kcmkttsmgr/talkerwidget.ui:139
+msgid "Female Child"
+msgstr "Mädchen"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: kcmkttsmgr/talkerwidget.ui:164 libkttsd/talkerlistmodel.cpp:143
+msgid "Punctuation"
+msgstr "Interpunktion"
+
+#. i18n: ectx: property (toolTip), widget (KComboBox, punctuationComboBox)
+#: kcmkttsmgr/talkerwidget.ui:174
+msgid ""
+"<html><head/><body><p><span style=\" font-weight:600; font-style:italic; "
+"text-decoration: underline;\">All</span> means speak all punctuation "
+"characters.</p><p><span style=\" font-weight:600; font-style:italic; text-"
+"decoration: underline;\">None</span> means speak no punctuation characters.</"
+"p><p><span style=\" font-weight:600; font-style:italic; text-decoration: "
+"underline;\">Some</span> means speak only punctuation characters given in "
+"the speech-dispatcher configuration.</p></body></html>"
+msgstr ""
+"<html><head/><body><p><span style=\" font-weight:600; font-style:italic; "
+"text-decoration: underline;\">Alle</span> Es werden alle Interpunktions-"
+"Zeichen vorgelesen.</p><p><span style=\" font-weight:600; font-style:italic; "
+"text-decoration: underline;\">Keine</span> Es werden keine Interpunktions-"
+"Zeichen vorgelesen.</p><p><span style=\" font-weight:600; font-style:italic; "
+"text-decoration: underline;\">Einige</span>  Es werden nur Interpunktions-"
+"Zeichen vorgelesen, die in den Einstellungen für „speech-dispatcher“ "
+"angegeben sind.</p></body></html>"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, punctuationComboBox)
+#: kcmkttsmgr/talkerwidget.ui:181 libkttsd/talkercode.cpp:197
+msgid "All"
+msgstr "Alle"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, punctuationComboBox)
+#: kcmkttsmgr/talkerwidget.ui:186 libkttsd/talkercode.cpp:203
+msgid "None"
+msgstr "Keine"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, punctuationComboBox)
+#: kcmkttsmgr/talkerwidget.ui:191 libkttsd/talkercode.cpp:200
+msgid "Some"
+msgstr "Einige"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: kcmkttsmgr/talkerwidget.ui:203
+msgid "&Speed"
+msgstr "&Geschwindigkeit"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: kcmkttsmgr/talkerwidget.ui:249
+msgid "&Pitch"
+msgstr "&Tonlage"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: kcmkttsmgr/talkerwidget.ui:295
+msgid "&Volume"
+msgstr "&Lautstärke"
+
+#: libkttsd/talkercode.cpp:308
+msgctxt "Default language code"
+msgid "default"
+msgstr "Standard"
+
+#: libkttsd/talkercode.cpp:316
+msgctxt "The name of the first Male voice"
+msgid "Male 1"
+msgstr "Männlich 1"
+
+#: libkttsd/talkercode.cpp:319
+msgctxt "The name of the first Female voice"
+msgid "Female 1"
+msgstr "Weiblich 1"
+
+#: libkttsd/talkercode.cpp:322
+msgctxt "The name of the male child voice"
+msgid "Boy"
+msgstr "Junge"
+
+#: libkttsd/talkercode.cpp:323
+msgctxt "The name of the female child voice"
+msgid "Girl"
+msgstr "Mädchen"
+
+#: libkttsd/talkercode.cpp:325
+msgctxt ""
+"Somehow user has gotten a voice type that is not valid, i.e. not Male1, "
+"Male2, etc."
+msgid "Invalid voice type"
+msgstr "Ungültiger Stimmtyp"
+
+#: libkttsd/talkercode.cpp:353
+msgctxt "Other language"
+msgid "Other"
+msgstr "Weitere"
+
+#: libkttsd/talkercode.cpp:363
+msgctxt "full country name"
+msgid "United States of America"
+msgstr "Vereinigte Staaten von Amerika"
+
+#: libkttsd/talkercode.cpp:364
+msgctxt "abbreviated country name"
+msgid "USA"
+msgstr "USA"
+
+#: libkttsd/talkercode.cpp:365
+msgctxt "full country name"
+msgid "United Kingdom"
+msgstr "Vereinigtes Königreich"
+
+#: libkttsd/talkercode.cpp:366
+msgctxt "abbreviated country name"
+msgid "UK"
+msgstr "UK"
+
+#: libkttsd/talkerlistmodel.cpp:136
+msgid "Name"
+msgstr "Name"
+
+#: libkttsd/talkerlistmodel.cpp:139
+msgid "Voice Type"
+msgstr "Stimmtyp"
+
+#: libkttsd/talkerlistmodel.cpp:140
+msgctxt "Volume of noise"
+msgid "Volume"
+msgstr "Lautstärke"
+
+#: libkttsd/talkerlistmodel.cpp:141
+msgid "Speed"
+msgstr "Geschwindigkeit"
+
+#: libkttsd/talkerlistmodel.cpp:142
+msgid "Pitch"
+msgstr "Tonlage"
+
+#~ msgid "&Configure"
+#~ msgstr "Einrich&ten"
+
+#~ msgid "Jovie &Handbook"
+#~ msgstr "&Handbuch zu Jovie"
+
+#~ msgid "&About Jovie"
+#~ msgstr "Ü&ber Jovie"
+
+#~ msgid ""
+#~ "<p>Prompts you with a list of your configured Talkers from the "
+#~ "<b>Talkers</b> tab.  The job will be spoken using the selected Talker.</p>"
+#~ msgstr ""
+#~ "<p>Bietet eine Liste der eingerichteten Sprecher an. Der Auftrag wird vom "
+#~ "ausgewählten Sprecher vorgelesen.</p>"
+
+#~ msgid "Change Talker"
+#~ msgstr "Sprecher wechseln"
+
+#~ msgid "Output Module"
+#~ msgstr "Ausgabemodule"
+
+#~ msgid "Voice"
+#~ msgstr "Stimme"
+
+#~ msgid ""
+#~ "When checked, and KTTSMgr was automatically started when speech began, "
+#~ "automatically exits when speech has finished.  Does not automatically "
+#~ "exit if KTTSMgr was started manually or started from the System Settings."
+#~ msgstr ""
+#~ "Ist diese Einstellung markiert und KTTSMgr wurde für die Sprachausgabe "
+#~ "automatisch gestartet, beendet er sich wieder, sobald der Sprecher fertig "
+#~ "ist. Wurde KTTSMgr manuell oder aus den KDE-Systemeinstellungen "
+#~ "gestartet, erfolgt kein automatisches Beenden."
+
+#~ msgid "E&xit when speaking is finished"
+#~ msgstr "&Beenden, wenn der Sprecher fertig ist"
+
+#~ msgid ""
+#~ "When checked, if KTTSMgr is not already running and speech begins, starts "
+#~ "KTTSMgr and displays an icon in the system tray.  <em>Note</em>: KTTSMgr "
+#~ "only automatically starts for text jobs having 5 sentences or more."
+#~ msgstr ""
+#~ "Ist diese Einstellung markiert und KTTSMgr läuft noch nicht, startet "
+#~ "KTTSMgr mit Beginn der Sprachausgabe minimiert im Systembereich der "
+#~ "Kontrollleiste. <em>Anmerkung</em>: KTTSMgr startet nur dann automatisch, "
+#~ "wenn die Sprachausgabe mindestens fünf Sätze umfasst."
+
+#~ msgid "Sta&rt minimized in system tray when speaking"
+#~ msgstr ""
+#~ "Bei Sprachausgabe minimiert im Systembereich der Kontrollleiste starten"
+
+#~ msgid "kttsd"
+#~ msgstr "kttsd"
+
+#~ msgid "(c) 2002, José Pablo Ezequiel Fernández"
+#~ msgstr "© 2002, José Pablo Ezequiel Fernández"
+
+#~ msgid "&About KTTSMgr"
+#~ msgstr "Ü&ber KTTSMgr"
+
+#~ msgid "KTTSMgr"
+#~ msgstr "KTTSMgr"
+
+#~ msgid "Exit when speaking is finished"
+#~ msgstr "Beenden, wenn der Sprecher fertig ist"
+
+#~ msgid "Queued"
+#~ msgstr "Warteschlange"
+
+#~ msgctxt "Waiting for an action"
+#~ msgid "Waiting"
+#~ msgstr "Wartend"
+
+#~ msgid "Speaking"
+#~ msgstr "Spricht"
+
+#~ msgid "Paused"
+#~ msgstr "Angehalten"
+
+#~ msgctxt "Finished the job"
+#~ msgid "Finished"
+#~ msgstr "Beendet"
+
+#~ msgctxt "State is unknown"
+#~ msgid "Unknown"
+#~ msgstr "Unbekannt"
+
+#~ msgid "Text-to-Speech System is not running"
+#~ msgstr "Der Sprachausgabe-Dienst läuft nicht"
+
+#~ msgid "1 job"
+#~ msgid_plural "%1 jobs"
+#~ msgstr[0] "1 Auftrag"
+#~ msgstr[1] "%1 Aufträge"
+
+#~ msgid ", current job %1 at sentence %2 of %3 sentences"
+#~ msgstr ", aktueller Auftrag %1 bei Satz %2 von %3 Sätzen."
+
+#~ msgid "KttsJobMgr"
+#~ msgstr "KttsJobMgr"
+
+#~ msgid "Job Num"
+#~ msgstr "Auftragsnummer"
+
+#~ msgid "Owner"
+#~ msgstr "Eigentümer"
+
+#~ msgid "Priority"
+#~ msgstr "Priorität"
+
+#~ msgid "Talker ID"
+#~ msgstr "Sprecher-ID"
+
+#~ msgctxt "State of the section"
+#~ msgid "State"
+#~ msgstr "Status"
+
+#~ msgid "Position"
+#~ msgstr "Position"
+
+#~ msgid "Sentences"
+#~ msgstr "Sätze"
+
+#~ msgid "Filtering"
+#~ msgstr "Filtert"
+
+#~ msgctxt "Waiting for a job"
+#~ msgid "Waiting"
+#~ msgstr "Wartend"
+
+#~ msgid "Interrupted"
+#~ msgstr "Unterbrochen"
+
+#~ msgctxt "The job is finished"
+#~ msgid "Finished"
+#~ msgstr "Beendet"
+
+#~ msgctxt "The state is unknown"
+#~ msgid "Unknown"
+#~ msgstr "Unbekannt"
+
+#~ msgid "Screen Reader"
+#~ msgstr "Bildschirmleseprogramm"
+
+#~ msgctxt "Prioritylevel: warning"
+#~ msgid "Warning"
+#~ msgstr "Warnung"
+
+#~ msgid "Message"
+#~ msgstr "Nachricht"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgctxt "Prioritylevel: unknown"
+#~ msgid "Unknown"
+#~ msgstr "Unbekannt"
+
+#~ msgid "&Language:"
+#~ msgstr "&Sprache:"
+
+#~ msgid "Checked items are preferred over unchecked items."
+#~ msgstr "Markierte Elemente haben Vorrang vor nicht markierten Elementen."
+
+#~ msgid "&Synthesizer:"
+#~ msgstr "&Synthesizer:"
+
+#~ msgid "&Rate:"
+#~ msgstr "&Geschwindigkeit:"
+
+#~ msgid "&Gender:"
+#~ msgstr "&Geschlecht:"
+
+#~ msgid "&Volume:"
+#~ msgstr "&Lautstärke:"
+
+#~ msgid ""
+#~ "When checked, will use a configured Talker most closely matching the "
+#~ "attributes you choose.  Attributes with checks next to them will be "
+#~ "preferred over unchecked attributes.  Language is always preferred."
+#~ msgstr ""
+#~ "Ist diese Einstellung markiert, wird der eingerichtete Sprecher "
+#~ "verwendet, der den ausgewählten Eigenschaften am ehesten entspricht. "
+#~ "Eigenschaften, die markiert sind, werden gegenüber den anderen bevorzugt. "
+#~ "Die Sprache hat immer Vorrang."
+
+#~ msgid "Use closest &matching Talker having"
+#~ msgstr "&Sprecher verwenden, der am ehesten dem Folgenden entspricht"
+
+#~ msgctxt "Male gender"
+#~ msgid "male"
+#~ msgstr "männlich"
+
+#~ msgctxt "Female gender"
+#~ msgid "female"
+#~ msgstr "weiblich"
+
+#~ msgctxt "neutral gender"
+#~ msgid "neutral"
+#~ msgstr "geschlechtslos"
+
+#~ msgctxt "medium sound"
+#~ msgid "medium"
+#~ msgstr "normal"
+
+#~ msgctxt "loud sound"
+#~ msgid "loud"
+#~ msgstr "laut"
+
+#~ msgctxt "soft sound"
+#~ msgid "soft"
+#~ msgstr "leise"
+
+#~ msgctxt "medium speed"
+#~ msgid "medium"
+#~ msgstr "normal"
+
+#~ msgctxt "fast speed"
+#~ msgid "fast"
+#~ msgstr "schnell"
+
+#~ msgctxt "slow speed"
+#~ msgid "slow"
+#~ msgstr "langsam"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Voice Code"
+#~ msgstr "Stimmcode"
+
+#~ msgid "Gender"
+#~ msgstr "Geschlecht"
+
+#~ msgid "Rate"
+#~ msgstr "Geschwindigkeit"
+
+#, fuzzy
+#~| msgid "Text-to-Speech System is not running"
+#~ msgid "speech-dispatcher not running"
+#~ msgstr "Der Sprachausgabe-Dienst läuft nicht"
+
+#~ msgid ""
+#~ "<p>Rewinds a job to the beginning and changes its state to Waiting.  If "
+#~ "the job is the top speakable job in the list, it begins speaking.</p>"
+#~ msgstr ""
+#~ "<p>Setzt einen Auftrag auf den Anfang zurück und ändert den Status auf "
+#~ "„Wartend“. Handelt es sich um den ersten Auftrag in der Liste, wird mit "
+#~ "der Ausgabe begonnen.</p>"
+
+#~ msgctxt "Restart a job to the beginning"
+#~ msgid "R&estart"
+#~ msgstr "&Neustart"
+
+#~ msgid "Re&move"
+#~ msgstr "&Entfernen"
+
+#~ msgid ""
+#~ "<p>Moves a job downward in the list so that it will be spoken later.  If "
+#~ "the job is currently speaking, its state changes to Paused.</p>"
+#~ msgstr ""
+#~ "<p>Verschiebt einen Auftrag in der Liste nach unten, so dass er später "
+#~ "gesprochen wird. Wird der Auftrag gerade gesprochen, wird sein Status auf "
+#~ "„Pause“ gesetzt.</p>"
+
+#~ msgid "&Later"
+#~ msgstr "&Später"
+
+#~ msgid "<p>Rewinds a job to the previous sentence.</p>"
+#~ msgstr "<p>Setzt einen Auftrag auf den vorherigen Satz zurück.</p>"
+
+#~ msgid "&Previous Sentence"
+#~ msgstr "Vorheriger &Satz"
+
+#~ msgid "<p>Advances a job to the next sentence.</p>"
+#~ msgstr "<p>Springt zum nächsten Satz im Auftrag.</p>"
+
+#~ msgid "&Next Sentence"
+#~ msgstr "&Nächster Satz"
+
+#~ msgid "<p>Refresh the list of jobs.</p>"
+#~ msgstr "<p>Aktualisiert die Liste der Aufträge.</p>"
+
+#~ msgid "&Refresh"
+#~ msgstr "&Aktualisieren"
+
+#~ msgid "<p>The text of the sentence currently speaking.</p>"
+#~ msgstr "<p>Der Text des gerade gesprochenen Satzes.</p>"
+
+#, fuzzy
+#~| msgid "Message"
+#~ msgid "Message text:"
+#~ msgstr "Nachricht"
+
+#, fuzzy
+#~| msgid "Filter"
+#~ msgid "Filtered text:"
+#~ msgstr "Filter"
+
+#~ msgid "Remove &All"
+#~ msgstr "&Alle entfernen"
+
+#~ msgid "Cannot find method '%1'"
+#~ msgstr "Die Methode „%1“ kann nicht gefunden werden"
+
+#~ msgid "Sorry, cannot pass arg of type %1 yet."
+#~ msgstr "Ein Parameter vom Typ %1 kann derzeit noch nicht übergeben werden."
+
+#~ msgid "Could not convert '%1' to type '%2'."
+#~ msgstr "„%1“ kann nicht in den Typ „%2“ umgewandelt werden."
+
+#~ msgid "Invalid number of parameters."
+#~ msgstr "Ungültige Anzahl Parameter."
+
+#~ msgid "Enter HELP &lt;option&gt; where &lt;option&gt; may be:"
+#~ msgstr ""
+#~ "Geben Sie HELP &lt;option&gt; ein, wobei &lt;option&gt; Folgendes sein "
+#~ "kann:"
+
+#~ msgid "  COMMANDS to list local commands understood by kspeak."
+#~ msgstr "  COMMANDS, um alle Befehle aufzulisten, die kspeak versteht."
+
+#~ msgid "  SIGNALS to list KTTSD signals sent via D-Bus."
+#~ msgstr ""
+#~ "  SIGNALS, um alle KTSSD-Signale aufzulisten, die über D-Bus verschickt "
+#~ "werden."
+
+#~ msgid "  MEMBERS to list all commands that may be sent to KTTSD via D-Bus."
+#~ msgstr ""
+#~ "  MEMBERS, um alle Befehle aufzulisten, die über D-Bus an KTTSD versendet "
+#~ "werden können."
+
+#~ msgid ""
+#~ "  &lt;member&gt; to show a single command that may be sent to KTTSD via D-"
+#~ "Bus."
+#~ msgstr ""
+#~ " &lt;member&gt;, um einen Befehl anzuzeigen, der über D-Bus an KTTSD "
+#~ "verschickt werden kann."
+
+#~ msgid "Options may be entered in lower- or uppercase.  Examples:"
+#~ msgstr ""
+#~ "Optionen können in Groß- oder Kleinschreibung angegeben werden. Beispiele:"
+
+#~ msgid "  help commands"
+#~ msgstr "  help commands"
+
+#~ msgid "  help say"
+#~ msgstr "  help say"
+
+#~ msgid "Member argument types are displayed in brackets."
+#~ msgstr "Parameter-Typen der Member werden in Klammern angezeigt."
+
+#~ msgid "Exit kspeak."
+#~ msgstr "Kspeak beenden."
+
+#~ msgid "Echo inputs to stdin."
+#~ msgstr "Eingaben parallel auf stdin weiterleiten."
+
+#~ msgid "Do not echo inputs."
+#~ msgstr "Eingaben nicht auf stdin weiterleiten."
+
+#~ msgid "Stop if any errors occur."
+#~ msgstr "Beim Auftreten von Fehlern abbrechen."
+
+#~ msgid "Do not stop if an error occurs."
+#~ msgstr "Beim Auftreten von Fehlern nicht abbrechen."
+
+#~ msgid "Display values returned by KTTSD."
+#~ msgstr "Rückgabewerte von KTTSD anzeigen."
+
+#~ msgid "Do not display KTTSD return values."
+#~ msgstr "Rückgabewerte von KTTSD nicht anzeigen."
+
+#~ msgid "Display signals emitted by KTTSD."
+#~ msgstr "Von KTTSD gesendete Signale anzeigen."
+
+#~ msgid "Do not display KTTSD signals."
+#~ msgstr "Keine Signale von KTTSD anzeigen."
+
+#~ msgid "Set the WAIT timeout to &lt;msec&gt; milliseconds. 0 waits forever."
+#~ msgstr ""
+#~ "Setzt die Zeitüberschreitung für WAIT auf &lt;msec&gt; Millisekunden. 0 "
+#~ "wartet ohne Beschränkung."
+
+#~ msgid "Start filling a buffer."
+#~ msgstr "Pufferfüllung starten"
+
+#~ msgid "Stop filling buffer."
+#~ msgstr "Pufferfüllung stoppen"
+
+#~ msgid "  Example buffer usage:"
+#~ msgstr "  Beispiel für eine Pufferfüllung:"
+
+#~ msgid "Pause &lt;msec&gt; milliseconds.  Example:"
+#~ msgstr "Pause &lt;msec&gt; Millisekunden.  Beispiel:"
+
+#~ msgid ""
+#~ "Wait for &lt;signal&gt; with (optional) &lt;args&gt; arguments.  Example:"
+#~ msgstr ""
+#~ "Warte auf &lt;signal&gt; mit (optionalen) &lt;args&gt; Parametern.  "
+#~ "Beispiel:"
+
+#~ msgid "Values returned by a member may be assigned to a variable."
+#~ msgstr ""
+#~ "Werte, die von einem Member zurückgeliefert werden, können einer Variable "
+#~ "zugewiesen werden."
+
+#~ msgid "Variables may be substituted in format $(variable).  Examples:"
+#~ msgstr "Variablen können durch durch $(variable) ersetzt werden. Beispiele:"
+
+#~ msgid "ERROR: No such member."
+#~ msgstr "Fehler: Member existiert nicht."
+
+#~ msgctxt "Deleted the job"
+#~ msgid "Deleted"
+#~ msgstr "Gelöscht"
+
+#~ msgctxt "Job state unknown"
+#~ msgid "Unknown"
+#~ msgstr "Unbekannt"
+
+#~ msgid "Starting KTTSD failed with message: %1"
+#~ msgstr "Der Start von KTTSD ist mit folgender Meldung fehlgeschlagen: %1"
+
+#~ msgid "ERROR: Invalid SET command."
+#~ msgstr "Fehler: Ungültiger SET-Befehl."
+
+#~ msgid "ERROR: Invalid WAIT command."
+#~ msgstr "Fehler: Ungültiger WAIT-Befehl."
+
+#~ msgid "ERROR: "
+#~ msgstr "Fehler: "
+
+#~ msgid "kspeak"
+#~ msgstr "kspeak"
+
+#~ msgid "A utility for sending speech commands to KTTSD service via D-Bus."
+#~ msgstr ""
+#~ "Ein Hilfsprogramm zum Senden von Befehlen an den Dienst KTTSD über D-Bus."
+
+#~ msgid "Copyright 2006, Gary Cramblitt &lt;garycramblitt@comcast.net&gt;"
+#~ msgstr "Copyright 2006, Gary Cramblitt &lt;garycramblitt@comcast.net&gt;"
+
+#~ msgid "Echo commands. [off]"
+#~ msgstr "Befehle ausgeben. [aus]"
+
+#~ msgid "Show KTTSD D-Bus replies. [off]"
+#~ msgstr "KTTSD-D-Bus Rückgaben anzeigen [aus]"
+
+#~ msgid "Show KTTSD D-Bus signals. [off]"
+#~ msgstr "KTTSD-D-Bus Signale anzeigen. [aus]"
+
+#~ msgid "Start KTTSD if not already running. [off]"
+#~ msgstr "KTTSD starten, falls es noch nicht läuft. [aus]"
+
+#~ msgid "Continue on error."
+#~ msgstr "Nach Fehler fortfahren."
+
+#~ msgid "Name of script to run.  Use '-' for stdin."
+#~ msgstr "Name des auszuführenden Skriptes. Verwenden Sie „-“ für stdin. "
+
+#~ msgid "Optional arguments passed to script."
+#~ msgstr "Optionale Parameter wurden an das Skript übergeben."
+
+#~ msgid "Type 'help' for kspeak commands."
+#~ msgstr "Geben Sie „help“ ein, um die kspeak Befehle anzusehen."
+
+#~ msgid "No script file specified"
+#~ msgstr "Keine Skript-Datei angegeben"
+
+#~ msgid ""
+#~ "<p>These are all the text jobs.  The <b>State</b> column may be:\n"
+#~ "        <ul>\n"
+#~ "        <li><b>Queued</b> - the job is waiting and will not be spoken "
+#~ "until its state is changed to <b>Waiting</b> by clicking the <b>Resume</"
+#~ "b> or <b>Restart</b> buttons.</li>\n"
+#~ "        <li><b>Waiting</b> - the job is ready to be spoken.  It will be "
+#~ "spoken when the jobs preceding it in the list have finished.</li>\n"
+#~ "        <li><b>Speaking</b> - the job is speaking.  The <b>Position</b> "
+#~ "column shows the current sentence of the job being spoken.  You may pause "
+#~ "a speaking job by clicking the <b>Hold</b> button.</li>\n"
+#~ "        <li><b>Paused</b> - the job is currently paused.  Paused jobs "
+#~ "prevent jobs below them from speaking.  Use the <b>Resume</b> or "
+#~ "<b>Restart</b> buttons to resume speaking the job, or click <b>Later</b> "
+#~ "to move the job down in the list.</li>\n"
+#~ "        <li><b>Finished</b> - the job has finished speaking.  When a "
+#~ "second job finishes, this one will be deleted.  You may click <b>Restart</"
+#~ "b> to repeat the job.</li>\n"
+#~ "        </ul>\n"
+#~ "        <em>Note</em>: Messages, Warnings, and Screen Reader Output do "
+#~ "not appear in this list.  See the Handbook for more information.\n"
+#~ "        </p>"
+#~ msgstr ""
+#~ "<p>Hier sind alle Textaufträge aufgeführt. Die Spalte <b>Status</b> kann "
+#~ "die folgenden Zustände zeigen:\n"
+#~ "       <ul>\n"
+#~ "       <li><b>in Warteschlange</b> - der Auftrag wartet und wird nicht "
+#~ "vorgelesen bis sein Status auf <b>Wartend</b> geändert wird oder die "
+#~ "Knöpfe <b>Fortsetzen</b> bzw. <b>Neustart</b> gedrückt werden.</li>\n"
+#~ "       <li><b>Wartend</b> - der Auftrag wartet darauf, gesprochen zu "
+#~ "werden. Er wird vorgelesen, sobald die vor ihm in der Liste stehenden "
+#~ "Aufträge abgearbeitet wurden.</li>\n"
+#~ "       <li><b>wird gesprochen</b> - der Auftrag wird gerade vorgelesen. "
+#~ "Die Spalte <b>Position</b> zeigt den gerade gesprochenen Satz. Sie können "
+#~ "einen gerade gesprochenen Auftrag anhalten, in dem Sie auf den Knopf "
+#~ "<b>Anhalten</b> klicken.</li>\n"
+#~ "       <li><b>Angehalten</b> - der Auftrag ist angehalten. Angehaltene "
+#~ "Aufträge verhindern, dass Aufträge, die nach ihnen in der Liste stehen, "
+#~ "gesprochen werden. Benutzen Sie die Knöpfe <b>Fortsetzen</b> oder "
+#~ "<b>Neustarten</b>, um den Auftrag wieder vorzulesen, oder klicken Sie auf "
+#~ "<b>Später</b>, um den Auftrag in der Liste nach hinten zu schieben.</li>\n"
+#~ "        <li><b>Fertig</b> - der Auftrag wurde bereits vorgelesen. Wird "
+#~ "der nächste Auftrag abgeschlossen, verschwindet der Auftrag mit diesem "
+#~ "Status aus der Liste und wird durch den nächsten ersetzt. Sie können auf "
+#~ "<b>Neustart</b> klicken, um den Auftrag zu wiederholen.</li>\n"
+#~ "        </ul>\n"
+#~ "        <em>Anmerkung</em>: Nachrichten, Warnungen und die Ausgabe eines "
+#~ "Screen-Readers erscheinen nicht in dieser Liste. Im Handbuch finden Sie "
+#~ "weitere Informationen hierzu.\n"
+#~ "        </p>"
+
+#~ msgid "Hold"
+#~ msgstr "Anhalten"
+
+#~ msgid ""
+#~ "The radio buttons below determine which box shows all possibilities.  The "
+#~ "box to the left of the checked button shows all possibilities.  The box "
+#~ "to the left of the unchecked box only shows those possibilities that "
+#~ "match the other box."
+#~ msgstr ""
+#~ "Die Auswahlknöpfe unten legen fest, welches Auswahlfeld alle "
+#~ "Möglichkeiten anzeigt. Das Auswahlfeld links neben dem angekreuzten "
+#~ "Auswahlknopf zeigt alle Möglichkeiten. Das Auswahlfeld links neben dem "
+#~ "nicht angekreuzten Auswahlknopf zeigt nur die Auswahlmöglichkeiten, die "
+#~ "mit der Auswahl in der anderen Auswahlbox korrespondieren."
+
+#~ msgid "Show All"
+#~ msgstr "Alle anzeigen"
+
+#~ msgid ""
+#~ "Check this box to display all the available synthesizers in the "
+#~ "Synthesizer box to the left.  When a synthesizer is chosen, only the "
+#~ "languages that can be spoken by that synthesizer appear in the Language "
+#~ "box."
+#~ msgstr ""
+#~ "Aktivieren Sie diese Einstellung, um alle möglichen Synthesizer im "
+#~ "Auswahlfeld für die Synthesizer links anzuzeigen. Ist ein Synthesizer "
+#~ "ausgewählt, zeigt das Auswahlfeld für Auswahl der Sprachen nur die "
+#~ "Sprachen an, die der ausgewählte Synthesizer anbietet."
+
+#~ msgid ""
+#~ "Check to list all the possible languages in the Language box at the "
+#~ "left.  When a language has been chosen, the Synthesizer box will show "
+#~ "only those synthesizers that can speak in the chosen language."
+#~ msgstr ""
+#~ "Aktivieren Sie diese Einstellung, um alle möglichen Sprachen im "
+#~ "Sprachauswahlfeld links anzuzeigen. Ist eine Sprache ausgewählt, zeigt "
+#~ "das Auswahlfeld für den Synthesizer nur die Synthesizer an, die eine "
+#~ "Sprachausgabe in der gewählten Sprache anbieten."
+
+#~ msgid "Select the speech synthesizer to do the speaking."
+#~ msgstr ""
+#~ "Wählen Sie den Sprachsynthesizer, mit dem die Sprachausgabe erfolgen soll."
+
+#~ msgid ""
+#~ "Select the language to be spoken.  Note that after you configure a "
+#~ "Talker, your chosen Language may be overridden by the synthesizer, "
+#~ "depending upon the options you choose."
+#~ msgstr ""
+#~ "Wählen Sie die gesprochene Sprache. Beachten Sie, dass der Synthesizer "
+#~ "die gewählte Sprache nach der Einrichtung, abhängig von den gewählten "
+#~ "Einstellungen, überschreiben kann."
+
+#~ msgid ""
+#~ "Click this button to edit the Sentence Boundary Detector (SBD) "
+#~ "configuration or add additional SBD filters."
+#~ msgstr ""
+#~ "Klicken Sie hier, um die Einstellungen für die Satzgrenzen-Erkennung "
+#~ "(SGE) zu ändern oder weitere SGE-Filter hinzuzufügen."
+
+#~ msgid "Co&nfigure"
+#~ msgstr "Einrich&ten"
+
+#~ msgid ""
+#~ "Check the Pre-sound box and choose a Pre-sound audio file, which will "
+#~ "sound when a text job is interrupted by another message."
+#~ msgstr ""
+#~ "Markieren Sie das Ankreuzfeld „Einleitender Klang“ und wählen Sie eine "
+#~ "Audiodatei, die abgespielt wird, sobald eine Sprachausgabe durch eine "
+#~ "andere Sprachausgabe unterbrochen wird."
+
+#~ msgid ""
+#~ "Check the Post-message box and enter a Post-message, which will be spoken "
+#~ "when a text job resumes after being interrupted by another message."
+#~ msgstr ""
+#~ "Markieren Sie das Ankreuzfeld „Abschließende Nachricht“ und geben Sie die "
+#~ "Nachricht ein, die vorgesprochen werden soll, wenn eine Sprachausgabe, "
+#~ "die durch eine Sprachausgabe unterbrochen wurde, fortgesetzt wird."
+
+#~ msgid "Post-&message:"
+#~ msgstr "Abschließende &Nachricht:"
+
+#~ msgid "Pre-sou&nd:"
+#~ msgstr "Einleitender &Klang:"
+
+#~ msgid ""
+#~ "Check the Pre-message box and enter a Pre-message, which will be spoken "
+#~ "whenever a text job is interrupted by another message."
+#~ msgstr ""
+#~ "Markieren Sie das Ankreuzfeld „Einleitende Nachricht“ und geben Sie einen "
+#~ "Text ein, der vorgesprochen wird, sobald eine Sprachausgabe durch eine "
+#~ "andere Sprachausgabe unterbrochen wird."
+
+#~ msgid "&Pre-message:"
+#~ msgstr "&Einleitende Nachricht:"
+
+#~ msgid ""
+#~ "Check the Post-sound and choose a Post-sound audio file, which will sound "
+#~ "before a text job resumes after being interrupted by another message."
+#~ msgstr ""
+#~ "Markieren Sie das Ankreuzfeld „Abschließender Klang“ und wählen Sie eine "
+#~ "Audiodatei, die abgespielt wird, sobald eine Sprachausgabe, die durch "
+#~ "eine andere Sprachausgabe unterbrochen wurde, fortgesetzt wird."
+
+#~ msgid "Post-s&ound:"
+#~ msgstr "&Abschließender Klang:"
+
+#~ msgid "Audio"
+#~ msgstr "Audio"
+
+#~ msgid ""
+#~ "<p>Select the audio output method desired.  If you select <b>GStreamer</"
+#~ "b>, you must also select a <b>Sink</b>.</p><p><em>Note</em>:  You must "
+#~ "have GStreamer >= 0.87 to use GStreamer.</p>"
+#~ msgstr ""
+#~ "<p>Wählen Sie das gewünschte System zur Audioausgabe. Wenn Sie "
+#~ "<b>GStreamer</b> wählen, müssen Sie auch ein <b>Ausgabemodul</b> wählen.</"
+#~ "p> <p><em>Anmerkung</em>: Für GStreamer wird eine Version 0.87 oder "
+#~ "aktueller benötigt.</p>"
+
+#~ msgid "Out&put Using"
+#~ msgstr "Verwendete &Ausgabe"
+
+#~ msgid "Select the sound sink to be used for GStreamer output."
+#~ msgstr "Wählt das verwendete Ausgabemodul für die GStreamer-Ausgabe."
+
+#~ msgid "Device:"
+#~ msgstr "Gerät:"
+
+#~ msgid ""
+#~ "Select the PCM device to be used for ALSA output.  Select \"default\" to "
+#~ "use the default ALSA device."
+#~ msgstr ""
+#~ "Wählen Sie das PCM-Gerät, das für die ALSA-Ausgabe verwendet wird. Wählen "
+#~ "Sie „Standard“, um das Standard-ALSA-Gerät zu verwenden."
+
+#~ msgid ""
+#~ "Check to use Advanced Linux Sound Architecture (ALSA) for audio output."
+#~ msgstr ""
+#~ "Markieren Sie diese Einstellung, wenn Sie die Advanced Linux Sound "
+#~ "Architecture (ALSA) als System für die Audioausgabe verwenden wollen."
+
+#~ msgid "ALSA"
+#~ msgstr "ALSA"
+
+#~ msgid "KDE (Phonon)"
+#~ msgstr "KDE (Phonon)"
+
+#~ msgid ""
+#~ "Check this if you want to keep the generated audio (wav) files.  You will "
+#~ "find them in the indicated directory."
+#~ msgstr ""
+#~ "Markieren Sie diese Einstellung, wenn Sie die erzeugten Audiodateien (wav-"
+#~ "Dateien) aufbewahren möchten. Sie finden Sie im angegebenen Ordner."
+
+#~ msgid "&Keep audio files:"
+#~ msgstr "&Audio-Dateien aufbewahren:"
+
+#~ msgid "Specify the directory in which the audio files will be copied."
+#~ msgstr "Geben Sie den Ordner für die Aufbewahrung der Audiodateien an."
+
+#~ msgid ""
+#~ "Sets the speed of speech.  Slide the slider to the left to slow speech "
+#~ "down; to the right to increase talking speed.  Anything less than 75 "
+#~ "percent is considered \"slow\", and anything greater than 125 percent is "
+#~ "considered \"fast\".  You cannot change the speed of MultiSyn voices."
+#~ msgstr ""
+#~ "Legt die Ausgabegeschwindigkeit der Sprache fest. Bewegen Sie den "
+#~ "Schieberegler nach links, um die Ausgabegeschwindigkeit der Sprache zu "
+#~ "verlangsamen, und nach rechts, um die Ausgabegeschwindigkeit zu erhöhen. "
+#~ "Alles unterhalb von 75 % wird als „langsam“ betrachtet, alles oberhalb "
+#~ "von 125 % als „schnell“. Die Ausgabegeschwindigkeit von MultiSyn-Stimmen "
+#~ "kann nicht verändert werden."
+
+#~ msgid " %"
+#~ msgstr " %"
+
+#~ msgid "Current Sentence"
+#~ msgstr "Aktueller Satz"
+
+#~ msgid ""
+#~ "<b>WARNING: This filter is a key component of the KTTS system. Please "
+#~ "read the KTTS Handbook before modifying these settings.</b>"
+#~ msgstr ""
+#~ "<b>WARNUNG: Dieser Filter ist eine wichtige Komponente des KTTS-Systems. "
+#~ "Bitte lesen Sie das Handbuch bevor Sie diese Einstellungen ändern.</b>"
+
+#~ msgctxt "What's this text"
+#~ msgid "The name of this filter.  Enter any descriptive name you like."
+#~ msgstr ""
+#~ "Der Name dieses Filters. Geben Sie einen aussagekräftigen Namen Ihrer "
+#~ "Wahl ein."
+
+#~ msgid "The name of this filter.  Enter any descriptive name you like."
+#~ msgstr ""
+#~ "Der Name dieses Filters. Geben Sie einen aussagekräftigen Namen Ihrer "
+#~ "Wahl ein."
+
+#~ msgctxt "What's this text"
+#~ msgid ""
+#~ "The regular expression that detects boundaries between sentences in text "
+#~ "jobs."
+#~ msgstr "Der reguläre Ausdruck, mit dem Satzgrenzen erkannt werden."
+
+#~ msgid "&Sentence boundary regular expression:"
+#~ msgstr "&Satzgrenze (regulärer Ausdruck):"
+
+#~ msgid ""
+#~ "The regular expression that detects boundaries between sentences in text "
+#~ "jobs."
+#~ msgstr "Der reguläre Ausdruck, mit dem Satzgrenzen erkannt werden."
+
+#~ msgctxt "What's this text"
+#~ msgid ""
+#~ "This string replaces the matched regular expression.  <b>Important</b>: "
+#~ "must end with tab (\\t)."
+#~ msgstr ""
+#~ "Dieses Zeichenkette ersetzt den gefundenen regulären Ausdruck. "
+#~ "<b>Wichtig</b>: die Zeichenkette muss mit einem Tabulator (\\t) enden."
+
+#~ msgid "&Replacement sentence boundary:"
+#~ msgstr "&Ersatz-Satzgrenze:"
+
+#~ msgid ""
+#~ "This string replaces the matched regular expression.  <b>Important</b>: "
+#~ "must end with tab (\\t)."
+#~ msgstr ""
+#~ "Dieses Zeichenkette ersetzt den gefundenen regulären Ausdruck. "
+#~ "<b>Wichtig</b>: die Zeichenkette muss mit einem Tabulator (\\t) enden."
+
+#~ msgid "&Language is:"
+#~ msgstr "&Sprache ist:"
+
+#~ msgid ""
+#~ "Click to load a Sentence Boundary Detection configuration from a file."
+#~ msgstr "Klicken Sie, um eine Satzgrenzen-Erkennungs-Konfiguration zu laden."
+
+#~ msgid "Lo&ad..."
+#~ msgstr "&Laden ..."
+
+#~ msgid ""
+#~ "Click to save this Sentence Boundary Detection configuration to a file."
+#~ msgstr ""
+#~ "Klicken Sie, um diese Konfiguration zur Satzgrenzen-Erkennung zu "
+#~ "speichern."
+
+#~ msgid "Sa&ve..."
+#~ msgstr "S&peichern ..."
+
+#~ msgid "Co&mmand Configuration"
+#~ msgstr "&Befehlseinstellungen"
+
+#~ msgid "Command &for speaking texts:"
+#~ msgstr "Befehl zum &Vorlesen von Texten:"
+
+#~ msgid ""
+#~ "This field specifies both the command used for speaking texts and its "
+#~ "parameters. If you want to pass the text as a parameter, write %t at the "
+#~ "place where the text should be inserted.  To pass a file of the text, "
+#~ "write %f.  To synthesize only and let KTTSD play the synthesized text, "
+#~ "write %w for the generated audio file."
+#~ msgstr ""
+#~ "Dieses Feld legt sowohl den Befehl für die Ausgabe von Texte als auch "
+#~ "dessen Parameter fest. Wenn Sie den auszugebenden Text als Parameter "
+#~ "übergeben wollen, fügen Sie an der entsprechenden Stelle den Platzhalter "
+#~ "%t, eine Datei wird mit %f angegeben. Soll der Text nur verarbeitet und "
+#~ "von KTTSD ausgegeben werden, geben Sie die erstellte Audiodatei mit dem "
+#~ "Platzhalter %w an."
+
+#~ msgid "&Send the data as standard input"
+#~ msgstr "&Daten über Standardeingabe übergeben"
+
+#~ msgid ""
+#~ "This check box specifies whether the text is sent as standard input "
+#~ "(stdin) to the speech synthesizer."
+#~ msgstr ""
+#~ "Dieses Ankreuzfeld legt fest, ob der Text über die Standardeingabe "
+#~ "(stdin) an den Sprachsynthesizer übergeben wird."
+
+#~ msgid "&Test"
+#~ msgstr "&Test"
+
+#~ msgid "Character &encoding:"
+#~ msgstr "&Zeichenkodierung:"
+
+#~ msgid ""
+#~ "This combo box specifies which character encoding is used for passing the "
+#~ "text."
+#~ msgstr ""
+#~ "Dieses Auswahlfeld legt fest, welche Zeichenkodierung für die Übergabe "
+#~ "von Text verwendet wird."
+
+#~ msgid ""
+#~ "Parameters:\n"
+#~ "  %t: Text to be spoken\n"
+#~ "  %f: Filename of a temporary file containing the text\n"
+#~ "  %l: Language (two letter code)\n"
+#~ "  %w: Filename of a temporary file for generated audio"
+#~ msgstr ""
+#~ "Parameter:\n"
+#~ "  %t: der auszugebende Text\n"
+#~ "  %f: Name einer temporären Datei, die den Text enthält\n"
+#~ "  %l: Sprache (Zweistelliger Ländercode)\n"
+#~ "  %w: Name einer temporären Datei, die die erstellten Audiodaten enthält"
+
+#~ msgid "Epos Config UI"
+#~ msgstr "Epos-Einstellungen"
+
+#~ msgid ""
+#~ "This is the configuration dialog for the Epos Czech and Slovak speech "
+#~ "synthesizer."
+#~ msgstr ""
+#~ "Dies ist der Einrichtungsdialog für den tschechischen und slowakischen "
+#~ "Sprachsynthesizer Epos."
+
+#~ msgid "E&pos Configuration"
+#~ msgstr "&Epos-Einrichtung"
+
+#~ msgid "Specifies which character encoding is used for passing the text."
+#~ msgstr ""
+#~ "Gibt an, welche Zeichenkodierung für die Übergabe des Textes verwendet "
+#~ "wird."
+
+#~ msgid ""
+#~ "Sets the speed of speech.  Slide the slider to the left to slow speech "
+#~ "down; to the right to increase talking speed.  Anything less than 75 "
+#~ "percent is considered \"slow\", and anything greater than 125 percent is "
+#~ "considered \"fast\"."
+#~ msgstr ""
+#~ "Legt die Ausgabegeschwindigkeit der Sprache fest. Verschieben Sie den "
+#~ "Schieberegler nach links, um die Ausgabegeschwindigkeit der Sprache zu "
+#~ "verlangsamen, und nach rechts, um die Ausgabegeschwindigkeit zu erhöhen. "
+#~ "Alles unterhalb von 75 % wird als „langsam“ betrachtet, alles oberhalb "
+#~ "von 125 % als „schnell“."
+
+#~ msgid "Speed:"
+#~ msgstr "Geschwindigkeit:"
+
+#~ msgid ""
+#~ "Sets the tone (frequency) of speech.  Slide the slider to the left to "
+#~ "lower the voice tone; to the right to increase tone.  Anything less than "
+#~ "75 percent is considered \"low\", and anything greater than 125 percent "
+#~ "is considered \"high\"."
+#~ msgstr ""
+#~ "Legt die Höhe (Frequenz) der Sprache fest. Verschieben Sie den "
+#~ "Schieberegler nach links, um die Tonlage der Sprache zu senken, und nach "
+#~ "rechts, um die Tonlage zu erhöhen. Alles unterhalb von 75 % wird als "
+#~ "„tief“ betrachtet, alles oberhalb von 125 % als „hoch“."
+
+#~ msgid "Pitch:"
+#~ msgstr "&Tonlage:"
+
+#~ msgid ""
+#~ "If the Epos server program will be found due to your PATH environment "
+#~ "variable, simply enter \"epos\", otherwise enter the full path to the "
+#~ "Epos server executable program."
+#~ msgstr ""
+#~ "Wenn sich das Serverprogramm von Epos im PATH befindet, geben Sie hier "
+#~ "einfach „epos“ ein, ansonsten müssen Sie den vollständigen Pfad angeben."
+
+#~ msgid "Epos server executable path:"
+#~ msgstr "Pfad zur Programmdatei des Epos-Servers:"
+
+#~ msgid ""
+#~ "If the Epos client program will be found due to the PATH environment "
+#~ "variable, simply enter \"say\" here.  Otherwise, specify the full path to "
+#~ "the Epos client program."
+#~ msgstr ""
+#~ "Wenn sich das Clientprogramm von Epos im PATH befindet, geben Sie hier "
+#~ "einfach „say“ ein, ansonsten müssen Sie den vollständigen Pfad angeben."
+
+#~ msgid "Epos client executable path:"
+#~ msgstr "Pfad zur Programmdatei des Epos-Clients:"
+
+#~ msgid "Additional Options (advanced)"
+#~ msgstr "Weitere Einstellungen"
+
+#~ msgid ""
+#~ "Optional.  Enter any server command line options here.  To see available "
+#~ "options, enter \"epos -h\" in a terminal.  Do not use \"-o\"."
+#~ msgstr ""
+#~ "Optional: Geben Sie hier Befehlszeilenparameter für das Serverprogramm "
+#~ "ein. Geben Sie in der Konsole „epos -h“ ein, um die möglichen Parameter "
+#~ "anzeigen zu lassen. Verwenden Sie nicht den Parameter „-o“."
+
+#~ msgid ""
+#~ "Specify options to be passed to Epos client.  To see available options, "
+#~ "enter \"say -h\" in a terminal.  Do not use \"-o\"."
+#~ msgstr ""
+#~ "Optional: Geben Sie hier Befehlszeilenparameter für das Epos-"
+#~ "Clientprogramm ein. Geben Sie in der Konsole „say -h“ ein, um die "
+#~ "möglichen Parameter anzeigen zu lassen. Verwenden Sie nicht den Parameter "
+#~ "„-o“."
+
+#~ msgid "Epos server:"
+#~ msgstr "Epos-Server:"
+
+#~ msgid "Epos client:"
+#~ msgstr "Epos-Client:"
+
+#~ msgid ""
+#~ "Click to test the configuration.  If correct, you will hear a sentence "
+#~ "spoken."
+#~ msgstr ""
+#~ "Klicken Sie, um die Einstellungen zu testen. Ist alles korrekt, hören Sie "
+#~ "einen gesprochenen Satz."
+
+#~ msgid "Festival Config UI"
+#~ msgstr "Festival-Einstellungen"
+
+#~ msgid ""
+#~ "This is the dialog for configuring the Festival speech synthesizer in "
+#~ "interactive mode."
+#~ msgstr ""
+#~ "Dieser Dialog dient zur Konfiguration des Festival-Sprachsynthesizers im "
+#~ "interaktiven Modus."
+
+#~ msgid "Festival &Interactive Configuration"
+#~ msgstr "Festival &Interaktive Konfiguration"
+
+#~ msgid "&Festival executable:"
+#~ msgstr "&Festival-Programmdatei:"
+
+#~ msgid ""
+#~ "If Festival is in your PATH environment variable, just enter \"festival"
+#~ "\", otherwise specify the full path to the Festival executable program."
+#~ msgstr ""
+#~ "Wenn Festival sich im PATH befindet, geben Sie hier einfach „festival“ "
+#~ "ein, ansonsten müssen Sie den vollständigen Pfad angeben."
+
+#~ msgid "&Select voice:"
+#~ msgstr "&Stimmenauswahl:"
+
+#~ msgid ""
+#~ "Select a voice to speak text with.  MultiSyn voices are high quality but "
+#~ "are slow to load.  If no voices are shown, check the Festival executable "
+#~ "path.  You must install at least one Festival voice.  If you have "
+#~ "installed a voice and still none are shown, check your Festival "
+#~ "configuration.  (See the README that comes with Festival.)"
+#~ msgstr ""
+#~ "Wählen Sie eine Stimme aus, mit der der Text gesprochen werden soll. "
+#~ "MultiSyn-Stimmen haben eine höhere Qualität, allerdings dauert das Laden "
+#~ "länger. Werden keine Stimmen zur Auswahl angeboten, prüfen Sie den Pfad "
+#~ "zur ausführbaren Datei von Festival. Es muss mindestens eine Festival-"
+#~ "Stimme installiert sein. Ist dies der Fall und Sie können immer noch "
+#~ "keine Stimme auswählen, prüfen Sie die Einstellungen von Festival. "
+#~ "Näheres dazu finden Sie in der Datei README, die mit Festival "
+#~ "ausgeliefert wird."
+
+#~ msgctxt "Rescan for voices"
+#~ msgid "&Rescan"
+#~ msgstr "&Neu einlesen"
+
+#~ msgid ""
+#~ "Sets the volume (loudness) of speech.  Slide the slider to the left to "
+#~ "lower the volume; to the right to increase volume.  Anything less than 75 "
+#~ "percent is considered \"soft\", and anything greater than 125 percent is "
+#~ "considered \"loud\"."
+#~ msgstr ""
+#~ "Stellt die Lautstärke der Sprachausgabe ein. Verschieben Sie den "
+#~ "Schieberegler nach links, um die Lautstärke herabzusetzen und nach "
+#~ "rechts, um die Lautstärke anzuheben. Alle Einstellungen unterhalb von 75 "
+#~ "% werden als „sanft“ betrachtet, alles über 125 % als „laut“."
+
+#~ msgid "Sp&eed:"
+#~ msgstr "&Geschwindigkeit:"
+
+#~ msgid ""
+#~ "Sets the tone (frequency) of speech.  Slide the slider to the left to "
+#~ "lower the voice tone; to the right to increase tone.  Anything less than "
+#~ "75 percent is considered \"low\", and anything greater than 125 percent "
+#~ "is considered \"high\".  You cannot change the pitch of MultiSyn voices."
+#~ msgstr ""
+#~ "Legt die Höhe (Frequenz) der Sprache fest. Verschieben Sie den "
+#~ "Schieberegler nach links, um die Tonlage der Sprache zu senken, und nach "
+#~ "rechts, um die Tonlage zu erhöhen. Alles unterhalb von 75 % wird als "
+#~ "„tief“ betrachtet, alles oberhalb von 125 % als „hoch“."
+
+#~ msgid "&Load this voice when starting KTTSD"
+#~ msgstr "&Diese Stimme beim Start von KTTSD laden"
+
+#~ msgid ""
+#~ "If checked, Festival will be started and this voice will be loaded when "
+#~ "the Text-to-Speech Daemon (KTTSD) is started.  Check when a voice "
+#~ "requires a long time to load in Festival (for example, multisyn voices), "
+#~ "otherwise, leave unchecked."
+#~ msgstr ""
+#~ "Ist diese Einstellung aktiv, wird Festival gestartet und diese Stimme "
+#~ "geladen, sobald das Sprachausgabe-Dienstprogramm (KTTSD) gestartet wird. "
+#~ "Markieren Sie dieses Ankreuzfeld, wenn eine Stimme in Festival eine lange "
+#~ "Ladezeit hat (beispielsweise MultiSyn-Stimmen)."
+
+#~ msgid ""
+#~ "Click to test the configuration.  Festival will be started and a test "
+#~ "sentence will be spoken."
+#~ msgstr ""
+#~ "Klicken Sie hier, um die Konfiguration zu testen. Festival wird gestartet "
+#~ "und ein Testsatz gesprochen."
+
+#~ msgid "Character e&ncoding:"
+#~ msgstr "Zeichen&kodierung:"
+
+#~ msgid "Flite Config UI"
+#~ msgstr "Flite-Einstellungen"
+
+#~ msgid ""
+#~ "This is the configuration dialog for the Festival Lite (Flite) speech "
+#~ "synthesis engine."
+#~ msgstr ""
+#~ "Dieser Dialog dient zur Konfiguration des Festival Lite (Flite) "
+#~ "Sprachsynthesizers."
+
+#~ msgid "Festival &Lite (flite) Configuration"
+#~ msgstr "Festival &Lite (flite) Konfiguration"
+
+#~ msgid "&Flite executable path:"
+#~ msgstr "Programmdatei &Flite:"
+
+#~ msgid ""
+#~ "If Flite is in your PATH environment variable, simply enter \"flite\", "
+#~ "otherwise specify the complete path to the Flite executable program."
+#~ msgstr ""
+#~ "Wenn sich Flite im PATH befindet, geben Sie hier einfach „flite“ ein, "
+#~ "ansonsten müssen Sie den vollständigen Pfad angeben."
+
+#~ msgid "flite"
+#~ msgstr "flite"
+
+#~ msgid "FreeTTS Config UI"
+#~ msgstr "FreeTTS-Konfiguration"
+
+#~ msgid "FreeTTS Interactive Configuration"
+#~ msgstr "FreeTTS Interaktive Einrichtung"
+
+#~ msgid "&FreeTTS jar file:"
+#~ msgstr "&FreeTTS jar-Datei:"
+
+#~ msgctxt "Test the settings"
+#~ msgid "Test"
+#~ msgstr "Test"
+
+#~ msgid "Hadifix Configuration"
+#~ msgstr "Hadifix-Einrichtung"
+
+#~ msgid ""
+#~ "This is the configuration dialog for the Hadifix (txt2pho and Mbrola) "
+#~ "speech synthesizer."
+#~ msgstr ""
+#~ "Dies ist der Einrichtungsdialog für den Hadifix (txt2pho und Mbrola) "
+#~ "Sprachsynthesizer."
+
+#~ msgid "Had&ifix Configuration"
+#~ msgstr "Had&ifix-Einrichtung"
+
+#~ msgid "&Basic Options"
+#~ msgstr "&Grundeinstellungen"
+
+#~ msgid "&Voice file:"
+#~ msgstr "&Stimmdatei:"
+
+#~ msgid ""
+#~ "Select a voice for speaking text.  If no voices are listed, check your "
+#~ "Mbrola configuration.  You must install at least one voice."
+#~ msgstr ""
+#~ "Wählen Sie eine Stimme zum Vorlesen von Text. Sind keine Stimmen "
+#~ "aufgelistet, überprüfen Sie die Einrichtung von Mbrola auf Ihrem -System. "
+#~ "Sie müssen zumindest eine Stimme installiert haben."
+
+#~ msgid "&Select..."
+#~ msgstr "&Auswählen ..."
+
+#~ msgid "Volume &ratio:"
+#~ msgstr "&Lautstärke:"
+
+#~ msgid ""
+#~ "Adjusts the volume of speech.  Slide to left for softer speech; to the "
+#~ "right for louder."
+#~ msgstr ""
+#~ "Regelt die Lautstärke der Ausgabe. Bewegen Sie den Schieberegler nach "
+#~ "links für eine leisere Ausgabe oder nach rechts für eine lautere Ausgabe."
+
+#~ msgid ""
+#~ "Adjusts the speed of speech.  Slide to left for slower speech; to the "
+#~ "right for faster."
+#~ msgstr ""
+#~ "Regelt die Geschwindigkeit der Sprachausgabe. Bewegen Sie den "
+#~ "Schieberegler nach links für eine langsamere Ausgabe oder nach rechts für "
+#~ "eine schnellere Ausgabe."
+
+#~ msgid ""
+#~ "Adjusts the pitch (tone) of speech.  Slide to left for lower speech; to "
+#~ "the right for higher."
+#~ msgstr ""
+#~ "Legt die Höhe (Frequenz) der Sprache fest. Verschieben Sie den "
+#~ "Schieberegler nach links, um die Tonlage der Sprache zu senken, und nach "
+#~ "rechts, um die Tonlage zu erhöhen."
+
+#~ msgid "&Advanced Options"
+#~ msgstr "&Zusätzliche Einstellungen"
+
+#~ msgid "txt2pho e&xecutable:"
+#~ msgstr "&txt2pho-Programmdatei:"
+
+#~ msgid ""
+#~ "If the txt2pho program is in your PATH environment variable, simply enter "
+#~ "\"txt2pho\", otherwise specify the full path to the txt2pho executable "
+#~ "program."
+#~ msgstr ""
+#~ "Wenn sich txt2pho im PATH befindet, geben Sie hier einfach „txt2pho“ ein, "
+#~ "ansonsten müssen Sie den vollständigen Pfad angeben."
+
+#~ msgid "&Mbrola executable:"
+#~ msgstr "&Mbrola-Programmdatei:"
+
+#~ msgid ""
+#~ "If the Mbrola program is in your PATH environment variable, simply enter "
+#~ "\"mbrola\", otherwise specify the full path to the Mbrola executable "
+#~ "program."
+#~ msgstr ""
+#~ "Wenn sich Mbrola im PATH befindet, geben Sie hier einfach „mbrola“ ein, "
+#~ "ansonsten müssen Sie den vollständigen Pfad angeben."
+
+#~ msgid ""
+#~ "This combo box specifies which character encoding is used for passing the "
+#~ "text.  For most western languages, use ISO-8859-1.  For Hungarian, use "
+#~ "ISO-8859-2."
+#~ msgstr ""
+#~ "Dieses Auswahlfeld legt fest, welche Zeichenkodierung für die Übergabe "
+#~ "von Text verwendet wird. Für die meisten westlichen Sprachen verwenden "
+#~ "Sie ISO-8859-1, für Ungarisch ISO-8859-2."
+
+#~ msgid "Click to test the configuration.  You should hear a spoken sentence."
+#~ msgstr ""
+#~ "Klicken Sie hier, um die Konfiguration zu testen. Sie sollten einen "
+#~ "gesprochenen Satz hören."
+
+#~ msgid "Selecting Voice File"
+#~ msgstr "Auswahl der Stimmdatei"
+
+#~ msgid "Path of the voice file:"
+#~ msgstr "Pfad zur Stimmdatei:"
+
+#~ msgid "Try to Determine From Voice File"
+#~ msgstr "Erkennung aus der Stimmdatei"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "American Male"
+#~ msgstr "Männlich, Englisch mit amerikanischer Aussprache"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "American Female, MBROLA"
+#~ msgstr "Weiblich, Englisch mit amerikanischer Aussprache"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "American Male, MBROLA"
+#~ msgstr "Männlich, Englisch mit amerikanischer Aussprache (MBROLA)"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "British Male"
+#~ msgstr "Männlich, Englisch mit britischer Aussprache"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Castilian Spanish Male"
+#~ msgstr "Männlich, Spanisch mit kastilischer Aussprache"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "American Male, HTS"
+#~ msgstr "Männlich, Englisch mit amerikanischer Aussprache (HTS)"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "American Female, HTS"
+#~ msgstr "Weiblich, Englisch mit amerikanischer Aussprache (HTS)"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Canadian English Male, HTS"
+#~ msgstr "Männlich, Englisch mit kanadischer Aussprache (HTS)"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Scottish Male, HTS"
+#~ msgstr "Männlich, Englisch mit schottischer Aussprache (HTS)"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Canadian English Male, MultiSyn"
+#~ msgstr "Männlich, Englisch mit kanadischer Aussprache (MultiSyn)"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Scottish Male, MultiSyn"
+#~ msgstr "Männlich, Englisch mit schottischer Aussprache (MultiSyn)"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "German Female, Festival"
+#~ msgstr "Weiblich, Deutsch (Festival)"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "German Male, Festival"
+#~ msgstr "Männlich, Deutsch (Festival)"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Mexican Spanish Male, OGC"
+#~ msgstr "Männlich, Spanisch mit mexikanischer Aussprache (OGC)"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Mexican Spanish Female, OGC"
+#~ msgstr "Weiblich, Spanisch mit mexikanischer Aussprache (OGC)"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "American Male, OGC"
+#~ msgstr "Männlich, Englisch mit amerikanischer Aussprache (OGC)"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "American Female, OGC"
+#~ msgstr "Weiblich, Englisch mit amerikanischer Aussprache (OGC)"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "British Male, OGC"
+#~ msgstr "Männlich, Englisch mit britischer Aussprache (OGC)"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Finnish Male"
+#~ msgstr "Männlich, Finnisch"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Czech Male, MBROLA"
+#~ msgstr "Männlich, Tschechisch (MBROLA)"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Polish Male"
+#~ msgstr "Männlich, Polnisch"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Russian Male"
+#~ msgstr "Männlich, Russisch"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Italian Male"
+#~ msgstr "Männlich, Italienisch"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Italian Female"
+#~ msgstr "Weiblich, Italienisch"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Kiswahili Male"
+#~ msgstr "Männlich, Swahili"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Ibibio Female"
+#~ msgstr "Weiblich, Ibibio"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Zulu Male"
+#~ msgstr "Männlich, Zulu"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "American Female"
+#~ msgstr "Weiblich, Englisch mit amerikanischer Aussprache"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "British Female"
+#~ msgstr "Weiblich, Englisch mit britischer Aussprache"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "French Canadian Male"
+#~ msgstr "Männlich, Französisch mit kanadischer Aussprache"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "French Canadian Female"
+#~ msgstr "Weiblich, Französisch mit kanadischer Aussprache"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "German Male"
+#~ msgstr "Männlich, Deutsch"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "German Female"
+#~ msgstr "Weiblich, Deutsch"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Americas Spanish Male"
+#~ msgstr "Männlich, Spanisch (amerikanischer Kontinent)"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Americas Spanish Female"
+#~ msgstr "Weiblich, Spanisch (amerikanischer Kontinent)"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Vietnamese Male"
+#~ msgstr "Männlich, Vietnamesisch"
+
+#~ msgctxt "FestivalVoiceName"
+#~ msgid "Vietnamese Female"
+#~ msgstr "Weiblich, Vietnamesisch"
+
+#~ msgid "Text interrupted. Message."
+#~ msgstr "Text unterbrochen. Nachricht."
+
+#~ msgid "Resuming text."
+#~ msgstr "Text zum Fortfahren."
+
+#~ msgid "Sentence Boundary Detector"
+#~ msgstr "Satzgrenzen-Erkennung"
+
+#~ msgctxt "One slot up"
+#~ msgid "U&p"
+#~ msgstr "&Aufwärts"
+
+#~ msgid "&Add..."
+#~ msgstr "&Hinzufügen ..."
+
+#~ msgid "Talker Configuration"
+#~ msgstr "Sprecher-Einrichtung"
+
+#~ msgid "Standard Sentence Boundary Detector"
+#~ msgstr "Standard-Satzgrenzen-Erkennung"
+
+#~ msgid ""
+#~ "KTTS has not yet been configured.  At least one Talker must be "
+#~ "configured.  Would you like to configure it now?"
+#~ msgstr ""
+#~ "KTTS wurde noch nicht eingerichtet. Sie müssen mindestens einen Sprecher "
+#~ "eingerichtet haben. Möchten Sie die Einrichtung nun vornehmen?"
+
+#~ msgid "KTTS Not Configured"
+#~ msgstr "KTTS ist nicht eingerichtet"
+
+#~ msgid "Configure"
+#~ msgstr "Einrichten"
+
+#~ msgid "Do Not Configure"
+#~ msgstr "Nicht einrichten"
+
+#~ msgctxt "Local charset"
+#~ msgid "Local"
+#~ msgstr "Lokal"
+
+#~ msgctxt "Latin charset"
+#~ msgid "Latin1"
+#~ msgstr "Latin1"
+
+#~ msgid "Unicode"
+#~ msgstr "Unicode"
+
+#~ msgid "Invalid S S M L."
+#~ msgstr "Ungültige S S M L."
+
+#~ msgid "Testing."
+#~ msgstr "Testen."
+
+#~ msgctxt "The voice is unknown"
+#~ msgid "Unknown"
+#~ msgstr "Unbekannt"
+
+#~ msgid "Scanning... Please wait."
+#~ msgstr "Einlesen ... Bitte warten."
+
+#~ msgid "Query Voices"
+#~ msgstr "Abfrage der Stimmen"
+
+#~ msgid ""
+#~ "Querying Festival for available voices.  This could take up to 15 seconds."
+#~ msgstr ""
+#~ "Abfrage der verfügbaren Stimmen bei Festival. Dieser Vorgang kann bis zu "
+#~ "fünfzehn Sekunden dauern."
+
+#~ msgid ""
+#~ "Testing.  MultiSyn voices require several seconds to load.  Please be "
+#~ "patient."
+#~ msgstr ""
+#~ "Prüfen. MultiSyn-Stimmen benötigen einige Sekunden Ladezeit. Bitte haben "
+#~ "Sie Geduld."
+
+#~ msgid ""
+#~ "Unable to locate freetts.jar in your path.\n"
+#~ "Please specify the path to freetts.jar in the Properties tab before using "
+#~ "KDE Text-to-Speech"
+#~ msgstr ""
+#~ "Die Datei freetts.jar kann im PATH nicht gefunden werden.\n"
+#~ "Geben Sie den Pfad zu freetts.jar im Reiter Eigenschaften an, bevor Sie "
+#~ "die KDE-Sprachausgabe benutzen."
+
+#~ msgid "Male voice \"%1\""
+#~ msgstr "Männliche Stimme „%1“"
+
+#~ msgid "Female voice \"%1\""
+#~ msgstr "Weibliche Stimme „%1“"
+
+#~ msgid "Unknown voice \"%1\""
+#~ msgstr "Unbekannte Stimme „%1“"
+
+#~ msgid "This plugin is distributed under the terms of the GPL v2 or later."
+#~ msgstr ""
+#~ "Dieses Modul wird unter den Bedingungen der GPL v2 oder neuer "
+#~ "veröffentlicht."
+
+#~ msgid "Voice File - Hadifix Plugin"
+#~ msgstr "Stimmdatei - Hadifix-Modul"
+
+#~ msgid "The gender of the voice file %1 could not be detected."
+#~ msgstr ""
+#~ "Das Geschlecht der Stimme in der Stimmdatei %1 kann nicht erkannt werden."
+
+#~ msgid "Trying to Determine the Gender - Hadifix Plug In"
+#~ msgstr "Geschlecht wird bestimmt - Hadifix-Modul"
+
+#~ msgid "The file %1 does not seem to be a voice file."
+#~ msgstr "Die Datei %1 scheint keine Stimmdatei zu sein."
+
+#~ msgid ""
+#~ "Enter a DCOP Application ID.  This filter will only apply to text jobs "
+#~ "queued by that application.  You may enter more than one ID separated by "
+#~ "commas.  If blank, this filter applies to text jobs queued by all "
+#~ "applications.  Tip: Use kdcop from the command line to get the "
+#~ "Application IDs of running applications.  Example: \"konversation, kvirc,"
+#~ "ksirc,kopete\""
+#~ msgstr ""
+#~ "Geben Sie eine DCOP-Anwendungs-ID ein. Dieser Filter wird nur auf "
+#~ "Textaufträge angewendet, die von dieser Anwendung kommen. Sie können auch "
+#~ "mehrere durch Komma getrennte IDs angeben. Ist dieses Feld leer, wird der "
+#~ "Filter auf alle Textaufträge angewendet. Hinweis: Um die Anwendungs-ID "
+#~ "einer laufenden Anwendung zu erfahren, können Sie kdcop auf der "
+#~ "Befehlszeile benutzen. Beispiel: „konversation, kvirc, ksirc, kopete“"
+
+#~ msgid ""
+#~ "<qt>Enter a DCOP Application ID.  This filter will only apply to text "
+#~ "jobs queued by that application.  You may enter more than one ID "
+#~ "separated by commas.  Use <b>knotify</b> to match all messages sent as "
+#~ "KDE notifications.  If blank, this filter applies to text jobs queued by "
+#~ "all applications.  Tip: Use kdcop from the command line to get the "
+#~ "Application IDs of running applications.  Example: \"konversation, kvirc,"
+#~ "ksirc,kopete\"</qt>"
+#~ msgstr ""
+#~ "<qt>Geben Sie eine DCOP-Anwendungs-ID ein. Dieser Filter wird nur auf "
+#~ "Textaufträge angewendet, die von dieser Anwendung kommen. Sie können auch "
+#~ "mehrere durch Komma getrennte IDs angeben. Ist dieses Feld leer, wird der "
+#~ "Filter auf alle Textaufträge angewendet. Hinweis: Um die Anwendungs-ID "
+#~ "einer laufenden Anwendung zu erfahren, können Sie kdcop auf der "
+#~ "Befehlszeile benutzen. Beispiel: „konversation, kvirc, ksirc, kopete“</qt>"
+
+#~ msgid "&Tools"
+#~ msgstr "E&xtras"
+
+#~ msgid "Main Toolbar"
+#~ msgstr "Haupt-Werkzeugleiste"
+
+#~ msgid "Speak Text"
+#~ msgstr "Text vorlesen"
+
+#~ msgid "Starting KTTSD Failed"
+#~ msgstr "Der Start von KTTSD ist fehlgeschlagen"
+
+#~ msgid "D-Bus Call Failed"
+#~ msgstr "Der D-Bus-Aufruf ist fehlgeschlagen"
+
+#, fuzzy
+#~| msgid "The D-Bus call startText failed."
+#~ msgid "The D-Bus call say failed."
+#~ msgstr "Der Aufruf der D-Bus-Funktion startText ist fehlgeschlagen."
+
+#~ msgid "The D-Bus call setText failed."
+#~ msgstr "Der Aufruf der D-Bus-Funktion setText ist fehlgeschlagen."
+
+#~ msgid "<qt>Text-to-Speech Manager"
+#~ msgstr "<qt>Sprachausgabeverwaltung"
+
+#~ msgid ""
+#~ "Specify options to be passed to Epos client.  Do not use -o.  To see "
+#~ "available options, enter \"say -h\" in a terminal.  Do not use \"-o\"."
+#~ msgstr ""
+#~ "Optional: Geben Sie hier Befehlszeilenparameter für das Epos-"
+#~ "Clientprogramm ein. Geben Sie in der Konsole „say -h“ ein, um die "
+#~ "möglichen Parameter anzeigen zu lassen. Verwenden Sie nicht den Parameter "
+#~ "„-o“!"
+
+#~ msgid "&Notifications"
+#~ msgstr "&Benachrichtigungen"
+
+#~ msgid ""
+#~ "The Talker that will speak the notification.  The \"default\" Talker is "
+#~ "the topmost talker listed on the Talkers tab."
+#~ msgstr ""
+#~ "Der Sprecher liest die Benachrichtigung vor. Der „Standard“-Sprecher ist "
+#~ "der auf der Karteikarte „Sprecher“ als erstes aufgeführte Sprecher."
+
+#~ msgid "Talke&r:"
+#~ msgstr "&Sprecher:"
+
+#~ msgid "Click to select the Talker to speak the notification."
+#~ msgstr "Klicken Sie, um den Sprecher für die Benachrichtigung auszuwählen"
+
+#~ msgid ""
+#~ "Applies only to the default event.  Does not affect application-specific "
+#~ "events.  Only events that display in the manner which you select will be "
+#~ "spoken."
+#~ msgstr ""
+#~ "Gilt nur für das Standard-Ereignis. Anwendungsspezifische Ereignisse sind "
+#~ "hiervon nicht betroffen. Es werden nur Ereignisse vorgelesen, die in der "
+#~ "angegebenen Weise angezeigt werden."
+
+#~ msgid "Notifications to speak:"
+#~ msgstr "Auszugebende Benachrichtigungen:"
+
+#~ msgid "Click to configure notification for a specific application event."
+#~ msgstr ""
+#~ "Klicken Sie, um die Einstellungen für ein anwendungsspezifisches Ereignis "
+#~ "einzurichten."
+
+#~ msgid ""
+#~ "Click to remove a specific notification event from the list.  You cannot "
+#~ "remove the default event."
+#~ msgstr ""
+#~ "Klicken Sie hier, um ein Ereignis aus der Liste zu entfernen. Das "
+#~ "Standard-Ereignis kann nicht entfernt werden."
+
+#~ msgid ""
+#~ "Removes all the application specific events.  The default event remains."
+#~ msgstr ""
+#~ "Entfernt alle anwendungsspezifischen Ereignisse. Das Standard-Ereignis "
+#~ "ist davon nicht betroffen."
+
+#~ msgid "Click to read configured notification events from a file."
+#~ msgstr "Klicken Sie, um eine Konfiguration für Ereignisse zu laden."
+
+#~ msgid "Click to write all the configured application events to a file."
+#~ msgstr ""
+#~ "Klicken Sie, um die eingerichteten anwendungsspezifischen Ereignisse in "
+#~ "eine Datei zu speichern"
+
+#~ msgid "Click to test notification"
+#~ msgstr "Klicken Sie, um die Benachrichtigung zu testen"
+
+#~ msgid ""
+#~ "Click this button to test the notification.  A sample message will be "
+#~ "spoken.  Note: The Text-to-Speech system must be enabled."
+#~ msgstr ""
+#~ "Klicken Sie auf diesen Knopf, um die Benachrichtigung zu testen. Es wird "
+#~ "eine Beispielnachricht gesprochen. Beachten Sie: Die Sprachausgabe muss "
+#~ "hierzu aktiv sein."
+
+#~ msgid ""
+#~ "<qt>Specifies how KTTS should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>Legt fest, wie KTTS ein eintreffendes Ereignis ausgeben soll. Wenn "
+#~ "Sie „Benutzerdefinierten Text sprechen“ markiert haben, können Sie den "
+#~ "Text hier eingeben. Die folgenden Platzhalter stehen zur Verfügung: "
+#~ "<dl><dt>%e</dt><dd>Name des Ereignisses</dd> <dt>%a</dt><dd>Anwendung, "
+#~ "die das Ereignis verschickt hat</dd> <dt>%m</dt><dd>Die Nachricht, die "
+#~ "von der Anwendung verschickt wurde</dd></dl></qt>"
+
+#~ msgid "Ac&tion:"
+#~ msgstr "A&ktion:"
+
+#~ msgid ""
+#~ "When checked and KTTS is enabled, notification events from applications "
+#~ "sent via KNotify will be spoken according to the options you set on this "
+#~ "tab."
+#~ msgstr ""
+#~ "Ist diese Einstellung markiert und KTTS ist aktiv, werden von Anwendungen "
+#~ "über KNotify verschickte Benachrichtigungen entsprechend den hier "
+#~ "getroffenen Einstellungen vorgelesen."
+
+#~ msgid "Speak notifications (&KNotify)"
+#~ msgstr "Benachrichtigungen &vorlesen (KNotify)"
+
+#~ msgid ""
+#~ "When checked, notification events that have a sound will not be spoken."
+#~ msgstr ""
+#~ "Ist diese Einstellung markiert, werden Ereignisse, denen eine Klangdatei "
+#~ "zugewiesen wurde, nicht vorgelesen."
+
+#~ msgid "E&xclude notifications with a sound"
+#~ msgstr "Benachrichtigungen, die mit einem Klang verbunden sind, ausnehmen"
+
+#~ msgid "Event source:"
+#~ msgstr "Ereignisquelle:"
+
+#~ msgid "Event"
+#~ msgstr "Ereignis"
+
+#~ msgid "EventName(Hidden)"
+#~ msgstr "EventName(Hidden)"
+
+#~ msgid "Application/Event"
+#~ msgstr "Anwendung/Ereignis"
+
+#~ msgid "Action"
+#~ msgstr "Aktion"
+
+#~ msgid "Talker"
+#~ msgstr "Sprecher"
+
+#~ msgid "sample notification message"
+#~ msgstr "Beispiel-Benachrichtigung"
+
+#~ msgid "sample application"
+#~ msgstr "Beispielanwendung"
+
+#~ msgid "sample event"
+#~ msgstr "Beispielereignis"
+
+#~ msgid "Default (all other events)"
+#~ msgstr "Standard (alle anderen Ereignisse)"
+
+#~ msgid "All other %1 events"
+#~ msgstr "Alle anderen %1-Ereignisse"
+
+#~ msgid "Select Event"
+#~ msgstr "Ereignisauswahl:"
+
+#~ msgctxt "file type"
+#~ msgid "Notification Event List"
+#~ msgstr "Benachrichtungsliste"
+
+#~ msgid "No description available"
+#~ msgstr "Keine Beschreibung verfügbar"
+
+#~ msgid "Speak event name"
+#~ msgstr "Ereignis vorlesen"
+
+#~ msgid "Speak the notification message"
+#~ msgstr "Benachrichtigung vorlesen"
+
+#~ msgid "Do not speak the notification"
+#~ msgstr "Benachrichtigung nicht vorlesen"
+
+#~ msgid "Speak custom text:"
+#~ msgstr "Text vorlesen:"
+
+#~ msgid "none"
+#~ msgstr "kein"
+
+#~ msgid "notification dialogs"
+#~ msgstr "Benachrichtigungsdialoge"
+
+#~ msgid "passive popups"
+#~ msgstr "Passive Aufklappfenster"
+
+#~ msgid "notification dialogs and passive popups"
+#~ msgstr "Benachrichtigungsdialog und passive Aufklappfenster"
+
+#~ msgid "all notifications"
+#~ msgstr "Alle Benachrichtigungen"

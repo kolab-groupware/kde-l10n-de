@@ -1,0 +1,593 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+  <!ENTITY % German "INCLUDE"
+><!-- change language only here -->
+]>
+
+<refentry>
+
+<refentryinfo>
+<title
+>&kde;-Benutzerhandbuch</title>
+<author
+><firstname
+>David</firstname
+> <surname
+>Faure</surname
+> <affiliation
+> <address
+><email
+>faure@kde.org</email
+></address>
+</affiliation>
+</author>
+
+<author
+><firstname
+>Waldo</firstname
+> <surname
+>Bastian</surname
+> <affiliation
+> <address
+><email
+>bastian@kde.org</email
+></address>
+</affiliation>
+</author>
+
+<date
+>2010-10-28</date>
+<releaseinfo
+>&kde; 4.5</releaseinfo>
+
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kded4</command
+></refentrytitle>
+<manvolnum
+>8</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>kded4</command
+></refname>
+<refpurpose
+>&kde;-Dienst: Löst Aktualisierungen der Sycoca-Datenbank aus, wenn erforderlich</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<title
+>Synopsis</title>
+
+<cmdsynopsis
+><command
+>kded4</command
+> <arg choice="opt"
+>--help</arg
+> <arg choice="opt"
+>Allgemeine Optionen</arg
+> <arg choice="opt"
+>Qt-Optionen</arg
+> <arg choice="opt"
+>KDE-Optionen</arg
+> <arg choice="opt"
+>--check</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Beschreibung</title>
+
+<para
+><command
+>kded4</command
+> ist verantwortlich für die Anlage und Pflege der sycoca-Datei, also dem binären Zwischenspeicher für Diensttypen, MIME-Typen und Dienste für jeden einzelnen Benutzer. </para>
+<para
+>Es überwacht die Ordner mit .desktop-Dateien. Wenn eine neue Datei hinzugefügt oder eine vorhandene entfernt wird, wartet es 5 Sekunden (falls noch mehr Änderungen vorgenommen werden), und startet anschließend <command
+>kbuildsycoca4</command
+> um die Systemdatenbank mit den Einstellungen zu aktualisieren. </para>
+<para
+>Es überprüft neu installierte Aktualisierungsdateien, &ie; *upd-Dateien, die verwendet werden, um bei Änderung des Formats von Einrichtungsdateien die Einrichtungsdateien der Benutzer zu aktualisieren. Das Programm <command
+>kconf_update</command
+> führt diese Aktualisierungen durch. </para>
+<para
+>Wenn der Rechnername geändert wird, ändert es die notwendigen Einstellungen für die KDE-Arbeitsumgebung und den X-Server, sodass das System auch weiterhin richtig funktioniert. Für diese Änderungen wird das Programm <command
+>kdontchangethehostname</command
+> gestartet. </para>
+<para
+>Diese Aufgaben werden auch bei jedem Start von kded4 durchgeführt, damit ist sichergestellt, dass die Benutzereinstellungen immer aktuell sind. </para>
+<para
+>Es ist dafür verantwortlich, auf Anforderung kded4-Module zu starten und die Ausführung von aktivierten Modulen zu ermöglichen wie zum Beispiel: <variablelist>
+<varlistentry>
+<term
+><option
+>Konqueror-Webbrowser-Schnellstarter</option
+></term>
+<listitem
+><para
+>Lädt Konqueror im Voraus und verringert so die Ladezeit.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Ordnerüberwachung</option
+></term>
+<listitem
+><para
+>Ordner auf Änderungen überwachen.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Hardwareerkennung</option
+></term>
+<listitem
+><para
+>Stellt eine Benutzeroberfläche für Hardwareereignisse zur Verfügung.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>SSL-Zertifikat-Regel</option
+></term>
+<listitem
+><para
+>Stellt den Anwendungen benutzerdefinierte SSL-Zertifikat-Regel zur Verfügung.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Netzwerk-Proxy-Einrichtung</option
+></term>
+<listitem
+><para
+>Sucht nach einem Proxy-Server und richtet ihn ein.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Passwort-Zwischenspeicherung</option
+></term>
+<listitem
+><para
+>Zwischenspeicherung von Passwörtern, sodass zum Beispiel eine Webseite mit HTTP-Authentisierung nicht für jede einzelne Verknüpfung oder jedes Bild auf der Seite immer wieder das Passwort abgefragt wird. Diese Passwörter bleiben nur innerhalb einer KDE-Sitzung gültig, im Gegensatz zu Passwörtern, die in <command
+>KWallet</command
+> gespeichert werden.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Audioregelungen</option
+></term>
+<listitem
+><para
+>Stellt den Anwendungen Audiosystemregeln zur Verfügung.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Webseiten-Symbole</option
+></term>
+<listitem
+><para
+>Webseitensymbole speichern.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Bildschirmverwaltung</option
+></term>
+<listitem
+><para
+>Bildschirme und Grafikkarten verwalten.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Cookie-Behälter</option
+></term>
+<listitem
+><para
+>Netzwerk-Cookies speichern.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Netzwerküberwachung</option
+></term>
+<listitem
+><para
+>Überwacht das Netzwerk und aktualisiert Ordnerauflistungen des Protokolls <application
+>network:/</application
+>.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Subversion-Unterstützung</option
+></term>
+<listitem
+><para
+>Stellt Dateiverwaltungsprogrammen und anderen Anwendungen verschiedene Aktionen für die Subversion-Quelltextverwaltung zur Verfügung.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>Netzwerkstatus</option
+></term>
+<listitem
+><para
+>Überprüft den Status von Netzwerkschnittstellen und benachrichtigt Programme, die das Netzwerk verwenden.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>„Write“-Dienst</option
+></term>
+<listitem
+><para
+>Überwacht Meldungen lokaler Benutzer, die mit <replaceable
+>write</replaceable
+>(1) oder <replaceable
+>wall</replaceable
+>(1) gesendet werden.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Überwachung des Benachrichtigungsbereichs</option
+></term>
+<listitem
+><para
+>Überwacht Anwendungen, die über das D-Bus-System den Benachrichtigungsbereich verwenden möchten.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>KMixD</option
+></term>
+<listitem
+><para
+>KMixD-Lautstärkeregelungsdienst</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Dienst für den Systemabschnitt der Kontrollleiste</option
+></term>
+<listitem
+><para
+>Überwacht Anwendungen, die über das D-Bus-System den Systemabschnitt der Kontrollleiste verwenden möchten.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Tastatur-Dienst</option
+></term>
+<listitem
+><para
+>Überwacht Tastatur-Änderungen (neue Tastatur, geändertes Tastaturlayout)</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Überwachung für Dateien auf Fremdrechnern</option
+></term>
+<listitem>
+<para
+>Benachrichtigt den Anwender über Änderungen an Dateien in Netzwerkordnern.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Aktivitätenverwaltung</option
+></term>
+<listitem
+><para
+>Das Hintergrundprogramm für den Nepomuk-Aktivitäten-Dienst</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Bildschirmverwaltung (Anzeige ändern)</option
+></term>
+<listitem
+><para
+>Benachrichtigt, wenn der Bildschirm gedreht wurde, sofern diese Information verfügbar ist</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Speicherplatzbenachrichtigung</option
+></term>
+<listitem
+><para
+>Gibt eine Warnung aus, wenn der freie Speicherplatz in Ihrem Persönlichen Ordner knapp wird.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Automounter für Wechselmedien</option
+></term>
+<listitem
+><para
+>Bindet Geräte bei Bedarf automatisch ein.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Nepomuk-Suchmodul</option
+></term>
+<listitem
+><para
+>Hilfsmodul für KIO zur automatischen Aktualisierung von Nepomuk Suchergebnis-Listen.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Energieverwaltung</option
+></term>
+<listitem
+><para
+>Akku-, Anzeige- und Prozessorleistungsverwaltung und -benachrichtigung.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Fernsteuerungsdienst für KDE</option
+></term>
+<listitem
+><para
+>Verwaltet die empfangenen Fernbedienungsbefehle</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Statusbenachrichtigungs-Verwaltung</option
+></term>
+<listitem
+><para
+>Verwaltet Dienste, die eine Schnittstelle für Status-Informationen bereitstellen.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>DNS-SD-Dienst-Überwachung</option
+></term>
+<listitem
+><para
+>Überwacht das Netzwerk nach DNS-SD-Diensten.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Laufwerksauswurf</option
+></term>
+<listitem
+><para
+>Automatisches Lösen der Laufwerkseinbindung bei Betätigung des Auswurfknopfes.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Zeitzone</option
+></term>
+<listitem
+><para
+>Ermöglicht Anwendungen den Zugriff auf die Systemzeitzonen.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><option
+>Tastenkombinationen</option
+></term>
+<listitem
+><para
+>„Tastenkombinationen“ führt benutzerdefinierte Aktionen auf Tastendruck aus..</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+
+ <para
+>Diese Startmodule können in den &systemsettings; unter <menuchoice
+><guimenu
+>Systemverwaltung</guimenu
+> <guisubmenu
+>starten und Beenden</guisubmenu
+> <guimenuitem
+>Diensteverwaltung</guimenuitem
+></menuchoice
+> ein- und ausgeschaltet werden.</para>
+
+</refsect1>
+
+<refsect1
+><title
+>Allgemeine Optionen</title>
+<!--<para
+>--><variablelist>
+<varlistentry>
+<term
+><option
+>--author</option
+></term>
+<listitem>
+<para
+>Zeigt Informationen über den Autor.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--help</option
+></term>
+<listitem>
+<para
+>Hilfe zu verfügbaren Optionen anzeigen.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--help-all</option
+></term>
+<listitem>
+<para
+>Alle Optionen anzeigen</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--help-kde</option
+></term>
+<listitem>
+<para
+>Spezielle Optionen für KDE anzeigen.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--help-qt</option
+></term>
+<listitem>
+<para
+>Spezielle Optionen für Qt anzeigen.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--license</option
+></term>
+<listitem>
+<para
+>Lizenz-Informationen anzeigen.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>-v</option
+> <option
+>--version</option
+></term>
+<listitem>
+<para
+>Versionsinformation anzeigen</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+<!--</para
+>-->
+</refsect1>
+
+<refsect1>
+<title
+>Anwendungsoptionen</title>
+<variablelist>
+
+<varlistentry>
+<term
+><option
+>--check</option
+></term>
+<listitem>
+<para
+>Sycoca-Datenbank nur einmal überprüfen. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>Benutzung</title>
+<para
+>Falls <command
+>kded4</command
+> ohne Parameter aufgerufen wird und bereits läuft, erscheint die Meldung: <screen
+>KDE Daemon (kded) already running.</screen>
+</para>
+<para
+>Wenn Sie <command
+>kded4</command
+> mit dem Befehl <command
+>kded4 --check</command
+> aufrufen, wird die &kde;-sycoca-Datenbank mit dem Programm <command
+>kbuildsycoca4</command
+> aktualisiert. </para>
+</refsect1>
+
+<refsect1>
+<title
+>Siehe auch</title>
+<para
+><replaceable
+>kdeoptions</replaceable
+>(7), <replaceable
+>qtoptions</replaceable
+>(7), <replaceable
+>kbuildsycoca4</replaceable
+>(8) </para>
+</refsect1>
+
+<refsect1>
+<title
+>Fehler</title>
+<para
+>Berichten Sie Fehler auf <ulink url="http://bugs.kde.org"
+>bugs.kde.org</ulink
+>.</para>
+</refsect1>
+
+</refentry>

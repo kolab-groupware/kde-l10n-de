@@ -1,0 +1,261 @@
+#
+# Burkhard Lück <lueck@hube-lueck.de>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: 2013-08-08 08:59+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: chapterImportExport.docbook:2
+#, no-c-format
+msgid "Import and Export"
+msgstr "Import und Export"
+
+#. Tag: title
+#: chapterImportExport.docbook:4
+#, no-c-format
+msgid "Exchange &rocs; Projects"
+msgstr "&rocs;-Projekte austauschen"
+
+#. Tag: para
+#: chapterImportExport.docbook:5
+#, no-c-format
+msgid ""
+"&rocs; projects can be imported and exported as archived <literal>.tar.gz</"
+"literal> files. These archives can be used to exchange projects. Import and "
+"Export can be done with <menuchoice><guimenu>Graph Document</guimenu> "
+"<guimenuitem>Import Graph</guimenuitem></menuchoice> and "
+"<menuchoice><guimenu>Graph Document</guimenu> <guimenuitem>Export Graph as</"
+"guimenuitem></menuchoice>, respectively."
+msgstr ""
+"&rocs;-Projekte können als Archivdateien im Format <literal>.tar.gz</"
+"literal> importiert und exportiert werden. Diese Archive können zum "
+"Austausch von Projekten benutzt werden. Der Import und Export erfolgt mit "
+"<menuchoice><guimenu>Graphendokument</guimenu> <guimenuitem>Graphen "
+"importieren</guimenuitem></menuchoice> beziehungsweise "
+"<menuchoice><guimenu>Graphendokument</guimenu> <guimenuitem>Graphen "
+"exportieren unter ...</guimenuitem></menuchoice>"
+
+#. Tag: title
+#: chapterImportExport.docbook:13
+#, no-c-format
+msgid "Import and Export of Graph Documents"
+msgstr "Import und Export von Graphendokumenten"
+
+#. Tag: para
+#: chapterImportExport.docbook:14
+#, no-c-format
+msgid ""
+"&rocs; currently supports import and export of the following file formats:"
+msgstr ""
+"&rocs; unterstützt zurzeit den Import und Export folgender Dateiformate:"
+
+#. Tag: para
+#: chapterImportExport.docbook:16
+#, no-c-format
+msgid "DOT files, also known as Graphviz files"
+msgstr "DOT-Dateien, auch als Graphviz-Dateien bekannt."
+
+#. Tag: para
+#: chapterImportExport.docbook:17
+#, no-c-format
+msgid "GML files"
+msgstr "GML-Dateien"
+
+#. Tag: para
+#: chapterImportExport.docbook:18
+#, no-c-format
+msgid "Trivial Graph Format files"
+msgstr "„Trivial Graph“-Dateien"
+
+#. Tag: para
+#: chapterImportExport.docbook:19
+#, no-c-format
+msgid "Keyhole Markup Language Format"
+msgstr "Keyhole-Markup-Sprachformat"
+
+#. Tag: title
+#: chapterImportExport.docbook:23
+#, no-c-format
+msgid "Trivial Graph File Format"
+msgstr "„Trivial Graph“-Dateiformat"
+
+#. Tag: para
+#: chapterImportExport.docbook:24
+#, no-c-format
+msgid ""
+"The <emphasis>Trivial Graph Format</emphasis> (TGF) is a simple text-based "
+"file format for describing graphs. A TGF file consists of a list of node "
+"definitions, that map the node IDs to labels, followed by a list of the "
+"edges. In this format it is only possible to have one label per node and one "
+"value per edge. &rocs; interprets imported graphs as undirected graphs. "
+"Exported graphs will contain two edges per connection if connections are "
+"bidirectional."
+msgstr ""
+"Das <emphasis>„Trivial Graph“-Format</emphasis> (TGF) ist ein einfaches "
+"textbasiertes Dateiformat zur Beschreibung von Graphen. Eine TGF-Datei "
+"besteht aus einer Liste von Knotendefinitionen mit der Zuordnung von "
+"Kennungen zu Beschriftungen, gefolgt von einer Liste von Kanten. In diesem "
+"Format kann es nur eine Beschriftung für einen Knoten und einen Wert für "
+"eine Kante geben. &rocs; interpretiert importierte Graphen als ungerichtet. "
+"Exportierte Graphen enthalten zwei Kanten für jede zweiseitige Verbindung."
+
+#. Tag: title
+#: chapterImportExport.docbook:33
+#, no-c-format
+msgid "Format Specification"
+msgstr "Beschreibung des Formats"
+
+#. Tag: para
+#: chapterImportExport.docbook:35
+#, no-c-format
+msgid ""
+"The file starts with a list of nodes (one node per line), followed by a line "
+"with the only character \"#\", followed by a list of edges (one edge per "
+"line)."
+msgstr ""
+"Die Datei beginnt mit einer Liste der Knoten, jeder Knoten auf einer "
+"einzelnen Zeile. Dann folgt eine Zeile nur mit dem Zeichen  „#“, gefolgt von "
+"einer Liste von Kanten in einer eigenen Zeile."
+
+#. Tag: para
+#: chapterImportExport.docbook:36
+#, no-c-format
+msgid ""
+"A node consists of an integer (identifier), followed by a space, followed by "
+"an arbitrary string."
+msgstr ""
+"Ein Knoten wird durch eine ganze Zahl als Kennung, dann ein Leerzeichen und "
+"ein beliebiger Text beschrieben."
+
+#. Tag: para
+#: chapterImportExport.docbook:37
+#, no-c-format
+msgid ""
+"An edge consists of two integers (identifiers) separated by a space, "
+"followed by a space, followed by an arbitrary string. It is assumed that the "
+"directed edge points from the first identifier to the second identifier."
+msgstr ""
+"Die Beschreibung einer Kante besteht aus zwei ganzen Zahlen (Kennungen von "
+"Knoten), durch Leerzeichen getrennt, dann folgt nach einem Leerzeichen ein "
+"beliebiger Text. Es wird angenommen, dass die gerichtete Kante von der "
+"ersten zur zweiten Kennung zeigt."
+
+#. Tag: title
+#: chapterImportExport.docbook:41 chapterImportExport.docbook:66
+#, no-c-format
+msgid "Example"
+msgstr "Beispiel"
+
+#. Tag: programlisting
+#: chapterImportExport.docbook:42
+#, no-c-format
+msgid ""
+"1 starting node\n"
+"2 transmitter\n"
+"3 sink\n"
+"#\n"
+"1 2 blue\n"
+"2 1 red\n"
+"2 3 green"
+msgstr ""
+"1 starting node\n"
+"2 transmitter\n"
+"3 sink\n"
+"#\n"
+"1 2 blue\n"
+"2 1 red\n"
+"2 3 green"
+
+#. Tag: title
+#: chapterImportExport.docbook:47
+#, no-c-format
+msgid "DOT Language / Graphviz Graph File Format"
+msgstr "DOT-Sprache / Graphviz.Graphendateiformat"
+
+#. Tag: para
+#: chapterImportExport.docbook:48
+#, no-c-format
+msgid ""
+"The DOT language is a plain text graph description language that allows both,"
+"a good human readable representation of graphs as well as an efficient "
+"processing by graph layout programs. DOT is the default file format for the "
+"Graphviz graph visualization suite, but is also widely used by other graph "
+"tools. The usual file endings for DOT are <emphasis>.gv</emphasis> and "
+"<emphasis>.dot</emphasis>."
+msgstr ""
+"„DOT“ ist eine Beschreibungssprache für Graphen, die ein einfaches "
+"Textformat verwendet. Damit ist die Darstellung von Graphen für den Benutzer "
+"gut lesbar und sie kann effizient durch Anzeigeprogramme für Graphen "
+"verarbeitet werden. „DOT“ ist das Standardformat für das "
+"Visualisierungsprogramm Graphviz, wird aber auch häufig von anderen "
+"Graphenprogrammen verwendet. „DOT“-Dateien haben üblicherweise die "
+"Erweiterung <emphasis>.gv</emphasis> und <emphasis>.dot</emphasis>."
+
+#. Tag: title
+#: chapterImportExport.docbook:55
+#, no-c-format
+msgid "Unsupported Features"
+msgstr "Nicht unterstützte Fähigkeiten"
+
+#. Tag: para
+#: chapterImportExport.docbook:56
+#, no-c-format
+msgid ""
+"&rocs; can parse every graph file that contains a graph specified according "
+"to the DOT language specification<footnote><para>http://www.graphviz.org/"
+"content/dot-language</para></footnote>. The support of language features is "
+"complete, despite of the following exceptions:"
+msgstr ""
+"&rocs; kann jede Graphendatei einlesen und verarbeiten, die in der Sprache "
+"„DOT“<footnote><para>http://www.graphviz.org/content/dot-language</para></"
+"footnote> spezifizierte Graphen enthält. Die Funktionen der Sprache werden "
+"vollständig mit folgenden AUsnahmen unterstützt:"
+
+#. Tag: para
+#: chapterImportExport.docbook:61
+#, no-c-format
+msgid ""
+"subgraph: Due to the lack of a subgraph concept in &rocs;, subgraphs are "
+"only imported as a set of date elements and connections. Especially, "
+"connections to or from subgraphs are not imported."
+msgstr ""
+"Untergraph: Wegen des fehlenden Konzepts für Untergraphen in &rocs; werden "
+"Untergraphen nur als Menge von Datenelementen und Verbindungen importiert. "
+"Besonders Verbindungen zu oder von Untergraphen werden nicht importiert."
+
+#. Tag: para
+#: chapterImportExport.docbook:62
+#, no-c-format
+msgid ""
+"&HTML; and &XML; attributes: Attributes (like labels) that contain &HTML; or "
+"&XML; syntax are read unchanged. Especially, not adjustment of fonts and "
+"styles are read from those attributes."
+msgstr ""
+"&HTML; und &XML; Attribute: Attribute wie Beschriftungen mit &HTML;- oder "
+"&XML;-Syntax werden unverändert eingelesen. Insbesondere werden keine "
+"Anpassungen für Schriften und Stile aus diesen Attributen eingelesen."
+
+#. Tag: programlisting
+#: chapterImportExport.docbook:67
+#, no-c-format
+msgid ""
+"digraph myGraph {\n"
+"    a -> b -> c;\n"
+"    b -> d;\n"
+"}"
+msgstr ""
+"digraph myGraph {\n"
+"    a -> b -> c;\n"
+"    b -> d;\n"
+"}"

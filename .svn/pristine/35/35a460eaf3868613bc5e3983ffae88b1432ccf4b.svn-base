@@ -1,0 +1,283 @@
+# Marco Wegner <mail@marcowegner.de>, 2002.
+# Stephan Johach <hunsum@gmx.de>, 2003, 2005.
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2010, 2011, 2013.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcontrol_clock\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:26+0000\n"
+"PO-Revision-Date: 2013-12-27 11:18+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:10 index.docbook:32
+#, no-c-format
+msgid "Date &amp; Time"
+msgstr "Datum &amp; Zeit"
+
+#. Tag: author
+#: index.docbook:12
+#, no-c-format
+msgid "&Mike.McBride; &Mike.McBride.mail;"
+msgstr "&Mike.McBride; &Mike.McBride.mail;"
+
+#. Tag: trans_comment
+#: index.docbook:13
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Frank</"
+"firstname><surname>Schütte</surname><affiliation><address><email>f."
+"Schuette@t-online.de</email></address></affiliation><contrib>Deutsche "
+"Übersetzung</contrib></othercredit>"
+
+#. Tag: date
+#: index.docbook:16
+#, no-c-format
+msgid "2013-12-05"
+msgstr "2013-12-05"
+
+#. Tag: releaseinfo
+#: index.docbook:17
+#, no-c-format
+msgid "4.12"
+msgstr "4.12"
+
+#. Tag: keyword
+#: index.docbook:20
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:21
+#, no-c-format
+msgid "Systemsettings"
+msgstr "Systemeinstellungen"
+
+#. Tag: keyword
+#: index.docbook:22
+#, no-c-format
+msgid "clock"
+msgstr "clock"
+
+#. Tag: keyword
+#: index.docbook:23
+#, no-c-format
+msgid "date"
+msgstr "Datum"
+
+#. Tag: keyword
+#: index.docbook:24
+#, no-c-format
+msgid "time"
+msgstr "Zeit"
+
+#. Tag: keyword
+#: index.docbook:25
+#, no-c-format
+msgid "<keyword>set</keyword>"
+msgstr "<keyword>set</keyword>"
+
+#. Tag: keyword
+#: index.docbook:26
+#, no-c-format
+msgid "configure"
+msgstr "Ändern"
+
+#. Tag: para
+#: index.docbook:34
+#, no-c-format
+msgid ""
+"You can use this module to alter the system date and time, using a "
+"convenient graphical interface."
+msgstr ""
+"Dieses Modul erlaubt die Einstellung von Datum und Zeit über eine grafische "
+"Benutzeroberfläche."
+
+#. Tag: para
+#: index.docbook:37
+#, no-c-format
+msgid ""
+"As these settings do not only affect you as a user, but rather the whole "
+"system, you must have system administrator (<systemitem class=\"username"
+"\">root</systemitem>) access to change the system date and time. If you do "
+"not have this access level, this module will only show you the current "
+"settings, but your changes will not be saved."
+msgstr ""
+"Da diese Einstellung für alle Benutzer verwendet werden, benötigen Sie "
+"Rechte als Systemverwalter (<systemitem class=\"username\">root</"
+"systemitem>), um das Systemdatum und die Zeit zu verändern. Wenn Sie diese "
+"Rechte nicht haben, zeigt das Modul lediglich die aktuellen Einstellungen "
+"an, aber Ihre Änderungen werden nicht gespeichert."
+
+#. Tag: title
+#: index.docbook:44
+#, no-c-format
+msgid "Date and Time"
+msgstr "Datum und Zeit"
+
+#. Tag: para
+#: index.docbook:46
+#, no-c-format
+msgid ""
+"If you check <guilabel>Set date and time automatically</guilabel> you are "
+"able to select a <guilabel>Time server</guilabel> from the drop down box and "
+"all other settings in this dialog are disabled."
+msgstr ""
+"Aktivieren Sie <guilabel>Datum und Uhrzeit automatisch setzen</guilabel>, "
+"dann können Sie einen <guilabel>Zeitserver</guilabel> im Auswahlfeld "
+"einstellen und alle anderen Einstellungen in diesem Dialog sind deaktiviert. "
+
+#. Tag: para
+#: index.docbook:51
+#, no-c-format
+msgid ""
+"The applications <command>rdate</command> or <command>ntpdate</command> are "
+"used in this module to fetch date and time from a time server. This happens "
+"when you log in to &kde; while being online or when you later connect to the "
+"Internet and access to time servers is possible."
+msgstr ""
+"In diesem Modul werden die Programme <command>rdate</command> oder "
+"<command>ntpdate</command> verwendet, um Datum und Zeit bei einem Zeitserver "
+"abzufragen. Dies passiert, wenn Sie bei der Anmeldung in &kde; eine "
+"Verbindung zum Internet haben, oder wenn Sie später diese Verbindung "
+"herstellen und damit Zeitserver erreichbar sind."
+
+#. Tag: para
+#: index.docbook:55
+#, no-c-format
+msgid ""
+"Both applications are simple <acronym>NTP</acronym> clients that set a "
+"system's clock to match the time obtained by communicating with one or more "
+"<acronym>NTP</acronym> servers. This is not sufficient, however, for "
+"maintaining an accurate clock in the long run. This is useful for "
+"occasionally setting the time on machines that do not have full-time network "
+"access, such as laptops."
+msgstr ""
+"Beide Programme sind einfache <acronym>NTP</acronym>-Dienste, die die Uhr "
+"des Rechners auf die Zeit einstellen, die von einem oder mehreren "
+"<acronym>NTP</acronym>-Zeitservern abgefragt wurden. Dieses Verfahren ist "
+"aber nicht ausreichend, um für einen längeren Zeitraum eine korrekte Zeit "
+"der Rechneruhr zu gewährleisten. Für Rechner, die wie zum Beispiel Laptops "
+"keine dauernde Verbindung zum Netzwerk haben, ist es nützlich, um "
+"gelegentlich die Zeit einzustellen."
+
+#. Tag: para
+#: index.docbook:62
+#, no-c-format
+msgid ""
+"If you do not use a time server, you are able to set the date manually using "
+"the lower half of the tab. Simply choose your month and year using the "
+"controls at the top of the calendar and the day of the month by clicking on "
+"the day in the calendar."
+msgstr ""
+"Wenn Sie keinen Zeitserver verwenden, kann das Datum im unteren Teil der "
+"Karteikarte eingestellt werden. Wählen Sie den Monat und das Jahr mit den "
+"Pfeilen über dem Kalender und den Tag des Monats durch Klicken auf den Tag "
+"im Kalender."
+
+#. Tag: para
+#: index.docbook:67
+#, no-c-format
+msgid ""
+"Use the controls at the bottom of the calendar to select the current date, "
+"enter the date in the edit box or select the week of the year from the drop "
+"down box."
+msgstr ""
+"Unter dem Kalender kann durch Klicken auf das Kalendersymbol das aktuelle "
+"Datum gewählt werden. Außerdem ist auch die direkte Eingabe des Datums im "
+"Textfeld oder die Einstellung der Kalenderwoche des Jahres im Auswahlfeld "
+"möglich."
+
+#. Tag: para
+#: index.docbook:71
+#, no-c-format
+msgid ""
+"You set the time using the spin boxes at the bottom of the analog clock. You "
+"can also directly enter your value."
+msgstr ""
+"Die Zeit kann über das Drehfeld im unteren Bereich der Uhr gesetzt werden. "
+"Sie können aber auch direkt einen Wert eingeben."
+
+#. Tag: title
+#: index.docbook:83
+#, no-c-format
+msgid "Time Zone"
+msgstr "Zeitzone"
+
+#. Tag: para
+#: index.docbook:84
+#, no-c-format
+msgid ""
+"To set a new time zone, simply select your area from the list below. Use the "
+"filter box to find the desired <guilabel>Area</guilabel> or "
+"<guilabel>Region</guilabel>."
+msgstr ""
+"Um eine neue Zeitzone einzustellen, wählen Sie einen Eintrag aus der Liste. "
+"Mit dem Filterfeld können Sie die Anzeige auf einen  bestimmte "
+"<guilabel>Bezirk</guilabel> oder <guilabel>Region</guilabel> einschränken."
+
+#~ msgid "2009-11-22"
+#~ msgstr "2009-11-22"
+
+#~ msgid "<releaseinfo>4.4</releaseinfo>"
+#~ msgstr "<releaseinfo>4.4</releaseinfo>"
+
+#~ msgid "<guilabel>Date and Time</guilabel> tab"
+#~ msgstr "Karteikarte <guilabel>Datum und Zeit</guilabel>"
+
+#~ msgid ""
+#~ "The time is represented in 24 hour format. If you want the system time to "
+#~ "be set to 8:00 PM, you need to set the hour spinbox to <guilabel>20</"
+#~ "guilabel> (8 + 12). If you want the system time set to 8:00 AM, you "
+#~ "should set the hour spinbox to <guilabel>8</guilabel>."
+#~ msgstr ""
+#~ "Die Zeit wird im 24-Stundenformat angezeigt und eingegeben. Wenn man die "
+#~ "Zeit auf 8:00 PM setzen will, muss das Stundenfeld auf <guilabel>20</"
+#~ "guilabel> (8+12) gesetzt werden. Wenn man die Zeit auf 8:00 AM einstellen "
+#~ "will, muss das Feld <guilabel>8</guilabel> enthalten."
+
+#~ msgid "<guilabel>Time Zone</guilabel> tab"
+#~ msgstr "Karteikarte <guilabel>Zeitzone</guilabel>"
+
+#~ msgid "To set a new time zone, simply select your area from the list below."
+#~ msgstr "Wählen Sie die neue Zeitzone aus dem Listenfeld im unteren Bereich."
+
+#~ msgid "<guilabel>NTP</guilabel> tab"
+#~ msgstr "<guilabel>Zeitserver</guilabel>"
+
+#~ msgid "KControl"
+#~ msgstr "Kontrollzentrum"
+
+#~ msgid ""
+#~ "When you first start, you are in display mode only. To modify your "
+#~ "settings, click on <guibutton>Administrator Mode</guibutton>. If you are "
+#~ "logged in as <systemitem class=\"username\">root</systemitem>, you will "
+#~ "go straight to the change dialog. If not, &kde; will ask for a superuser "
+#~ "password."
+#~ msgstr ""
+#~ "Beim Start befindet sich das Modul im Anzeigemodus. Um die Einstellungen "
+#~ "zu verändern, klickt man auf <guibutton>Systemverwaltungsmodus</"
+#~ "guibutton>. Wenn man als <systemitem class=\"username\">root</systemitem> "
+#~ "angemeldet ist, erscheint der Änderungsdialog. Wenn nicht, fragt &kde; "
+#~ "nach dem Passwort des Systemverwalters."
+
+#~ msgid "Modifying your settings"
+#~ msgstr "Änderung der Einstellungen"
+
+#~ msgid ""
+#~ "When you have set the correct date and time, simply click "
+#~ "<guibutton>Apply</guibutton> to make the changes permanent."
+#~ msgstr ""
+#~ "Wenn man die richtigen Einstellungen für Datum und Zeit gefunden hat, "
+#~ "klickt man auf <guibutton>Anwenden</guibutton>, um die Einstellungen zu "
+#~ "fixieren."

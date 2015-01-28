@@ -1,0 +1,893 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: index.docbook:17
+#, no-c-format
+msgid "The &kabcclient; Handbook"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:20
+#, no-c-format
+msgid "<firstname>Kevin</firstname> <surname>Krammer</surname>"
+msgstr ""
+
+#. Tag: email
+#: index.docbook:25
+#, no-c-format
+msgid "kevin.krammer@gmx.at"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:29
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+
+#. Tag: holder
+#: index.docbook:34
+#, no-c-format
+msgid "Kevin Krammer"
+msgstr ""
+
+#. Tag: date
+#: index.docbook:41
+#, no-c-format
+msgid "2008-11-20"
+msgstr ""
+
+#. Tag: releaseinfo
+#: index.docbook:42
+#, no-c-format
+msgid "1.1.1"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:45
+#, no-c-format
+msgid "&kabcclient; is a command line interface to &kde; address books."
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:50
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:51
+#, no-c-format
+msgid "&package;"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:52
+#, no-c-format
+msgid "&kappname;"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:53
+#, no-c-format
+msgid "KAddressBook"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:59
+#, no-c-format
+msgid "Introduction"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:61
+#, no-c-format
+msgid ""
+"&kabcclient; is a command line interface to &kde; address book. It lets you "
+"list, search, insert, remove, or merge contacts by way of the command line or "
+"from a scripting language. &kabcclient; can handle a variety of formats on both "
+"input and output, enabling it to be used for import and export of whole &kde; "
+"address books."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:68
+#, no-c-format
+msgid ""
+"When invoked without arguments &kabcclient; will be put into search mode and "
+"try to match any input it can read from standard input to contact entries in "
+"the &kde; address book"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:70
+#, no-c-format
+msgid "Main features of &kabcclient;:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:72
+#, no-c-format
+msgid "List all contacts of the &kde; address book"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:73
+#, no-c-format
+msgid "Search for contacts matching the input"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:74
+#, no-c-format
+msgid "Insert (add) contacts"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:75
+#, no-c-format
+msgid "Remove (delete) contacts"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:76
+#, no-c-format
+msgid "Merge (change) matching contacts with new data"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:79
+#, no-c-format
+msgid ""
+"&kabcclient; is <emphasis>not</emphasis> another graphical user interface to "
+"the &kde; address book (i.e. &kaddressbook;). &kabcclient; is intended solely "
+"for uses where a graphical user interface is not practical or possible."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:84
+#, no-c-format
+msgid ""
+"&kabcclient; does <emphasis>not</emphasis> provide a full-featured language for "
+"making queries of the user's address book nor is it the intention of the "
+"authors to ever write such a capability. Any such processing can be done "
+"through other command line tools or the script's own language's capabilities."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:90
+#, no-c-format
+msgid ""
+"To ease discoverability of its capabilities, any option requiring an argument "
+"can be called with the value <replaceable>help</replaceable>"
+". This will then list all the valid values one can pass to that option."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:96
+#, no-c-format
+msgid "Features"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:97
+#, no-c-format
+msgid ""
+"In this chapter you'll learn about the main features of &kabcclient; and how to "
+"control them using the command line parameters (remember that &kabcclient; is "
+"not a graphical user interface; it is a command line program only)."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:102
+#, no-c-format
+msgid ""
+"You'll learn about inserting, deleting, and searching for contact data, and how "
+"to use different formats for input and output."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:108
+#, no-c-format
+msgid "Listing the address book"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:110
+#, no-c-format
+msgid ""
+"This is the most basic operation mode, initiated using the <parameter>"
+"--list</parameter> or <parameter>-L</parameter> option. &kabcclient; will list "
+"all contacts in the &kde; address book, writing the data to the program's "
+"standard output. Amount and format of the output will depend on the chosen "
+"output format."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:114
+#, no-c-format
+msgid "To list all contacts as standard vCard entries, simply run:"
+msgstr ""
+
+#. Tag: screen
+#: index.docbook:117
+#, no-c-format
+msgid ""
+"<prompt>%</prompt><userinput> <command>kabcclient <option>-L</option></command>"
+"\n"
+"</userinput>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:123
+#, no-c-format
+msgid "To get just one line per contact, &eg; for counting, simply run:"
+msgstr ""
+
+#. Tag: screen
+#: index.docbook:126
+#, no-c-format
+msgid ""
+"<prompt>%</prompt><userinput> <command>kabcclient <option>-L</option> <option>"
+"-of <replaceable>uid</replaceable></option></command>\n"
+"</userinput>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:132
+#, no-c-format
+msgid "In this next example, we list all email addresses:"
+msgstr ""
+
+#. Tag: screen
+#: index.docbook:135
+#, no-c-format
+msgid ""
+"<prompt>%</prompt><userinput> <command>kabcclient</command> <option>"
+"--list</option> <option>-of <replaceable>email</replaceable></option>\n"
+"</userinput>"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:143
+#, no-c-format
+msgid "Searching for contacts matching the input data"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:145
+#, no-c-format
+msgid ""
+"&kabcclient; can take data from the command line or from the program's standard "
+"input and check it for similarities against all contacts in the &kde; address "
+"book. Searching is the default mode but it can be explicitly be chosen using "
+"the <parameter>--search</parameter> or <parameter>-S</parameter> "
+"command line argument."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:149
+#, no-c-format
+msgid ""
+"In the following example, all contacts with <replaceable>jane</replaceable> "
+"as part of any name field or email address will be written to the program's "
+"standard output, formatted as vCards (since this is the default for the <option>"
+"--output-format</option> option):"
+msgstr ""
+
+#. Tag: screen
+#: index.docbook:152
+#, no-c-format
+msgid ""
+"<prompt>%</prompt><userinput> <command>kabcclient</command> <option>"
+"--search</option> <replaceable>jane</replaceable></userinput>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:158
+#, no-c-format
+msgid ""
+"Same query again, this time reading the search string from the program's "
+"standard input:"
+msgstr ""
+
+#. Tag: screen
+#: index.docbook:161
+#, no-c-format
+msgid ""
+"<prompt>%</prompt><userinput> <command>echo</command> <replaceable>"
+"jane</replaceable> | <command>kabcclient</command> <option>--search</option>"
+"</userinput>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:166
+#, no-c-format
+msgid ""
+"Case sensitivity of queries can be toggled using the <option>"
+"--match-case</option> option."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:170
+#, no-c-format
+msgid "Adding contacts"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:172
+#, no-c-format
+msgid ""
+"&kabcclient; supports adding new contacts to the &kde; address book using the "
+"<parameter>--add</parameter> or <parameter>-A</parameter> "
+"command line argument. The data can either be passed as additional command line "
+"arguments or read from standard input. On success the resulting contacts will "
+"be written to the program's standard output. Since this is an operation which "
+"applies changes to the address book it can be run in a \"Dry run\" mode using "
+"the <option>--nosave</option> option."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:177
+#, no-c-format
+msgid ""
+"Add a contact with name and email address by interpreting an additional command "
+"line argument as the input data:"
+msgstr ""
+
+#. Tag: screen
+#: index.docbook:180
+#, no-c-format
+msgid ""
+"<prompt>%</prompt><userinput> <command>kabcclient</command> <option>"
+"--add</option> <option>--input-format <replaceable>email</replaceable> </option>"
+"<replaceable>\"John Doe &lt;j.doe@example.com&gt;\"</replaceable></userinput>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:186
+#, no-c-format
+msgid ""
+"Add all contacts from a vCard file streamed into the program's standard input:"
+msgstr ""
+
+#. Tag: screen
+#: index.docbook:189
+#, no-c-format
+msgid ""
+"<prompt>%</prompt><userinput> <command>cat <replaceable>"
+"example-file.vcf</replaceable></command> | <command>kabcclient</command> "
+"<option>--add</option> <option>--input-format <replaceable>vcard</replaceable> "
+"</option></userinput>"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:196
+#, no-c-format
+msgid "Deleting contacts"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:198
+#, no-c-format
+msgid ""
+"&kabcclient; supports deleting contacts from the &kde; address book using the "
+"<parameter>--remove</parameter> or <parameter>-R</parameter> "
+"command line argument. The input data is basically a query like when searching "
+"the address book. On success the removed contacts will be written to the "
+"program's standard output. Since this is an operation which applies changes to "
+"the address book it can be run in a \"Dry run\" mode using the <option>"
+"--nosave</option> option."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:202
+#, no-c-format
+msgid ""
+"When you delete something from the address book you <emphasis>cannot</emphasis> "
+"undo it! In other words, when you delete a contact you cannot reverse the "
+"deletion. It's gone for good."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:207
+#, no-c-format
+msgid ""
+"Test removing all contacts with <replaceable>jane</replaceable> "
+"in any contact name field or any email address:"
+msgstr ""
+
+#. Tag: screen
+#: index.docbook:210
+#, no-c-format
+msgid ""
+"<prompt>%</prompt><userinput> <command>kabcclient</command> <option>"
+"--remove</option> <option>--nosave</option> <replaceable>jane</replaceable>"
+"</userinput>"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:218
+#, no-c-format
+msgid "Input and Output Formats"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:220
+#, no-c-format
+msgid ""
+"&kabcclient; can interpret input data and format output data according to "
+"various formatting rules. Depending on the actual usage scenario certain "
+"combinations will render the most useful result. Some of the formats understand "
+"additional parameters for further customizing their behavior."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:225
+#, no-c-format
+msgid ""
+"Since textual data can be encoded both input and output can be subjected to "
+"additional decoding or encoding respectively."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:229
+#, no-c-format
+msgid ""
+"All those command line options will react to the special value <replaceable>"
+"help</replaceable> by listing the allowed values."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:232
+#, no-c-format
+msgid "vCard Format"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:234
+#, no-c-format
+msgid ""
+"vCard (<acronym>RFC</acronym> 2426) is the standard format for contact data and "
+"as such can present all information other address book applications such as "
+"&kaddressbook; can access. It is therefore the default format for output "
+"formatting."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:239
+#, no-c-format
+msgid "Comma-Separated Values (<acronym>CSV</acronym>) Format"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:241
+#, no-c-format
+msgid ""
+"Comma-Separated Value Format can be used as input format to fill data into "
+"specific field of a contact entry and as an output format to reduce or re-order "
+"data for further processing. To allow for enough flexibility mapping of contact "
+"fields to CSV columns can be specified using CSV-template description files "
+"also used by &kaddressbook; for the same purpose."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:248
+#, no-c-format
+msgid "Command Line Arguments"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:250
+#, no-c-format
+msgid "&kabcclient; supports the following options:"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:256
+#, no-c-format
+msgid "Option"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:257
+#, no-c-format
+msgid "Description"
+msgstr ""
+
+#. Tag: option
+#: index.docbook:262
+#, no-c-format
+msgid "--help, --help-all"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:263
+#, no-c-format
+msgid "Shows help about the program options."
+msgstr ""
+
+#. Tag: option
+#: index.docbook:266
+#, no-c-format
+msgid "--author"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:267
+#, no-c-format
+msgid "Shows the program author information."
+msgstr ""
+
+#. Tag: option
+#: index.docbook:270
+#, no-c-format
+msgid "-v, --version"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:271
+#, no-c-format
+msgid "Shows the program version information."
+msgstr ""
+
+#. Tag: option
+#: index.docbook:274
+#, no-c-format
+msgid "--license"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:275
+#, no-c-format
+msgid "Shows the program license information."
+msgstr ""
+
+#. Tag: option
+#: index.docbook:278
+#, no-c-format
+msgid "--verbose"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:279
+#, no-c-format
+msgid "Print helpful runtime messages."
+msgstr ""
+
+#. Tag: option
+#: index.docbook:282
+#, no-c-format
+msgid "--nosave"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:283
+#, no-c-format
+msgid ""
+"Print what would have been done, but do not execute. Do not change anything in "
+"the &kde; address book; do not insert, remove, modify any existing contacts."
+msgstr ""
+
+#. Tag: option
+#: index.docbook:286
+#, no-c-format
+msgid "--match-case"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:287
+#, no-c-format
+msgid ""
+"Use case sensitive matching when comparing input data with contact data from "
+"the address book."
+msgstr ""
+
+#. Tag: emphasis
+#: index.docbook:290
+#, no-c-format
+msgid "Major Operation Modes:"
+msgstr ""
+
+#. Tag: option
+#: index.docbook:293
+#, no-c-format
+msgid "-L, --list"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:294
+#, no-c-format
+msgid "Print all contacts in specified export format."
+msgstr ""
+
+#. Tag: option
+#: index.docbook:297
+#, no-c-format
+msgid "-A, --add"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:298
+#, no-c-format
+msgid "Insert contacts into the address book."
+msgstr ""
+
+#. Tag: option
+#: index.docbook:301
+#, no-c-format
+msgid "-R, --remove"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:302
+#, no-c-format
+msgid "Delete contacts from the address book."
+msgstr ""
+
+#. Tag: option
+#: index.docbook:305
+#, no-c-format
+msgid "-M, --merge"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:306
+#, no-c-format
+msgid "Merge data from the input with matching contacts from the address book."
+msgstr ""
+
+#. Tag: emphasis
+#: index.docbook:309
+#, no-c-format
+msgid "Formatting and Encoding:"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:312
+#, no-c-format
+msgid "<option>-if, --input-format</option> <replaceable>format</replaceable>"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:314
+#, no-c-format
+msgid ""
+"How to interpret the input data. Use <replaceable>help</replaceable> "
+"for a list of available values."
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:317
+#, no-c-format
+msgid "<option>-of, --output-format</option> <replaceable>format</replaceable>"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:319
+#, no-c-format
+msgid ""
+"How to format the output data. Use <replaceable>help</replaceable> "
+"for a list of available values."
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:322
+#, no-c-format
+msgid ""
+"<option>-if-opts, --input-format-options</option> <replaceable>"
+"options</replaceable>"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:324
+#, no-c-format
+msgid ""
+"Input format specific customization options. Use <replaceable>help</replaceable> "
+"for a list of available values."
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:327
+#, no-c-format
+msgid ""
+"<option>-of-opts, --output-format-options</option> <replaceable>"
+"options</replaceable>"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:329
+#, no-c-format
+msgid ""
+"Output format specific customization options. Use <replaceable>"
+"help</replaceable> for a list of available values."
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:332
+#, no-c-format
+msgid "<option>-ic, --input-codec</option> <replaceable>encoding</replaceable>"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:334
+#, no-c-format
+msgid ""
+"Text encoding used to present the input data. Use <replaceable>"
+"help</replaceable> for a list of available values."
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:337
+#, no-c-format
+msgid ""
+"<option>-oc, --output-codec</option> <replaceable>encoding</replaceable>"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:339
+#, no-c-format
+msgid ""
+"Text encoding which should be used to present the output data. Use <replaceable>"
+"help</replaceable> for a list of available values."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:349
+#, no-c-format
+msgid "Questions and Answers"
+msgstr ""
+
+#. Tag: chapter
+#: index.docbook:349
+#, no-c-format
+msgid "&reporting.bugs; &updating.documentation;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:357
+#, no-c-format
+msgid "What configuration files does &kabcclient; use?"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:360
+#, no-c-format
+msgid "None."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:367
+#, no-c-format
+msgid "What are the application names of &kabcclient;?"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:370
+#, no-c-format
+msgid ""
+"&kabcclient;'s application name is <application>kabcclient</application>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:376
+#, no-c-format
+msgid "How do I have my question added to this <acronym>FAQ</acronym>?"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:379
+#, no-c-format
+msgid "Send your questions to <email>kevin.krammer@gmx.at</email>."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:389
+#, no-c-format
+msgid "Credits and License"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:391
+#, no-c-format
+msgid "&kabcclient; Program copyright 2005-2008:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:394 index.docbook:399
+#, no-c-format
+msgid "Kevin Krammer <email>kevin.krammer@gmx.at</email>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:397
+#, no-c-format
+msgid "Documentation copyright 2008:"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:402
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+
+#. Tag: chapter
+#: index.docbook:402
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:411
+#, no-c-format
+msgid "Installation"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:414
+#, no-c-format
+msgid "How to obtain &kabcclient;"
+msgstr ""
+
+#. Tag: sect1
+#: index.docbook:414
+#, no-c-format
+msgid "&install.intro.documentation;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:418
+#, no-c-format
+msgid ""
+"&kabcclient; comes included with &kde;4 and is not available separately."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:424
+#, no-c-format
+msgid "Requirements"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:426
+#, no-c-format
+msgid ""
+"&kabcclient; requires the standard &kde; libraries to be installed (the "
+"<filename>kdelibs</filename> package and <filename>kdepimlibs</filename>"
+"). To compile from source, you also need the &Qt;, <filename>kdelibs</filename> "
+"and <filename>kdepimlibs</filename> development packages."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:431
+#, no-c-format
+msgid ""
+"You can find a list of changes in the <filename>ChangeLog</filename> file."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:436
+#, no-c-format
+msgid "Configuration"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:438
+#, no-c-format
+msgid ""
+"No special configuration is required to set up &kabcclient; to run on the &kde; "
+"desktop."
+msgstr ""

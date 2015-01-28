@@ -1,0 +1,272 @@
+# Uwe Krieg, 2005.
+# Stephan Johach <hunsum@gmx.de>, 2005.
+# Burkhard Lück <lueck@hube-lueck.de>, 2006, 2007, 2010, 2011, 2012.
+# Frederik Schwarzer <schwarzer@kde.org>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: konqueror_man-kbookmarkmerger.1\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:10+0000\n"
+"PO-Revision-Date: 2012-05-25 20:50+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: man-kbookmarkmerger.1.docbook:10
+#, no-c-format
+msgid "KDE User's Manual"
+msgstr "KDE-Benutzerhandbuch"
+
+#. Tag: author
+#: man-kbookmarkmerger.1.docbook:11
+#, no-c-format
+msgid "<author>&Frerich.Raabe; &Frerich.Raabe.mail;</author>"
+msgstr "<author>&Frerich.Raabe; &Frerich.Raabe.mail;</author>"
+
+#. Tag: date
+#: man-kbookmarkmerger.1.docbook:15
+#, no-c-format
+msgid "February 1st, 2005"
+msgstr "01. Februar 2005"
+
+#. Tag: productname
+#: man-kbookmarkmerger.1.docbook:16
+#, no-c-format
+msgid "K Desktop Environment"
+msgstr "K-Arbeitsflächenumgebung"
+
+#. Tag: refentrytitle
+#: man-kbookmarkmerger.1.docbook:20
+#, no-c-format
+msgid "<refentrytitle>&kbookmarkmerger;</refentrytitle>"
+msgstr "<refentrytitle>&kbookmarkmerger;</refentrytitle>"
+
+#. Tag: manvolnum
+#: man-kbookmarkmerger.1.docbook:21
+#, no-c-format
+msgid "<manvolnum>1</manvolnum>"
+msgstr "<manvolnum>1</manvolnum>"
+
+#. Tag: refname
+#: man-kbookmarkmerger.1.docbook:25
+#, no-c-format
+msgid "<refname>&kbookmarkmerger;</refname>"
+msgstr "<refname>&kbookmarkmerger;</refname>"
+
+#. Tag: refpurpose
+#: man-kbookmarkmerger.1.docbook:26
+#, no-c-format
+msgid ""
+"A program for merging a given set of bookmarks into the user's list of "
+"bookmarks."
+msgstr ""
+"Ein Programm zum Zusammenführen mehrerer vorgegebener Lesezeichenlisten zu "
+"einer Lesezeichenliste für den Benutzer."
+
+#. Tag: cmdsynopsis
+#: man-kbookmarkmerger.1.docbook:31
+#, no-c-format
+msgid ""
+"&kbookmarkmerger; <arg choice=\"opt\" rep=\"repeat\">Qt Options</arg> <arg "
+"choice=\"opt\" rep=\"repeat\">KDE Options</arg> <arg choice=\"req"
+"\">directory</arg>"
+msgstr ""
+"&kbookmarkmerger; <arg choice=\"opt\" rep=\"repeat\">Qt-Optionen</arg> <arg "
+"choice=\"opt\" rep=\"repeat\">KDE-Optionen</arg> <arg choice=\"req"
+"\">Verzeichnis</arg>"
+
+#. Tag: title
+#: man-kbookmarkmerger.1.docbook:40
+#, no-c-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. Tag: para
+#: man-kbookmarkmerger.1.docbook:41
+#, no-c-format
+msgid ""
+"&kbookmarkmerger; is a program for merging a given set of bookmarks into the "
+"user's set of bookmarks; if the user doesn't have any bookmarks created yet, "
+"a new bookmark list is created and the given bookmarks are inserted into it. "
+"While doing this, &kbookmarkmerger; keeps track of which files were merged "
+"in a previous run already, so no bookmark will get installed to the user's "
+"bookmarks more than once. In case &kde; is running while &kbookmarkmerger; "
+"is executed, the &kde; bookmark subsystem will be informed of any changes to "
+"the user's bookmarks, so that all applications accessing that information "
+"(&ie; &konqueror;) will pick the changes up instantly."
+msgstr ""
+"&kbookmarkmerger; ist ein Programm zum Zusammenführen mehrerer vorgegebener "
+"Lesezeichenlisten zu einer einzigen Lesezeichenliste für den Benutzer. Wenn "
+"der Benutzer noch keine Lesezeichen erzeugt hat, wird eine neue "
+"Lesezeichenliste erzeugt und die vorgegebenen Lesezeichen werden in diese "
+"Liste  abgelegt. Beim Zusammenführen achtet &kbookmarkmerger; darauf, welche "
+"Dateien in einem vorherigen Lauf bereits zusammengeführt worden sind, sodass "
+"kein Lesezeichen in der Lesezeichenliste des Benutzers mehr als einmal "
+"eingebaut wird. Wenn &kbookmarkmerger; unter &kde; ausgeführt wird, wird das "
+"&kde;-Lesezeichensystem über alle Änderungen an der Lesezeichenliste des "
+"Benutzers auf dem Laufenden gehalten, sodass diese Änderungen allen "
+"Anwendungen, die auf diese Informationen zugreifen (&eg; &konqueror;), "
+"unmittelbar zur Verfügung stehen."
+
+#. Tag: para
+#: man-kbookmarkmerger.1.docbook:51
+#, no-c-format
+msgid ""
+"The traditionally used approach to achieve something like this was to use "
+"carefully crafted skeleton home directories when creating a new user "
+"account, to provide the user with a standard set of bookmarks. The problem "
+"with this approach is that after the user account has been created, no new "
+"bookmarks can be propagated."
+msgstr ""
+"Die traditionelle Herangehensweise, um so etwas zu erreichen, bestand darin, "
+"bei der Erzeugung von neuen Benutzer-Accounts ein sorgfältig gestaltetes "
+"Gerüst von persönlichen Verzeichnissen zu nutzen, um dem Benutzer einen "
+"Standardsatz von Lesezeichen zur Verfügung zu stellen. Das Problem bei "
+"diesem Zugang bestand darin, dass nach der Erzeugung des Benutzer-Accounts "
+"keine neuen Lesezeichen verteilt werden konnten."
+
+#. Tag: para
+#: man-kbookmarkmerger.1.docbook:57
+#, no-c-format
+msgid ""
+"This mechanism is useful for system administrators who want to propagate a "
+"bookmark pointing to a certain document (for instance, important notes about "
+"the system) to all users. Distributors might find it useful as well, for "
+"instance by augmenting the software packages they supply with bookmark files "
+"which &kbookmarkmerger; merges into the user's bookmark list when the "
+"package is installed. That way, documentation shipped with a software "
+"package is easily and visibly accessible right after the package has been "
+"installed."
+msgstr ""
+"Dieser Mechanismus ist nützlich für Systemadministratoren, die ein "
+"Lesezeichen, das auf ein bestimmtes Dokument verweist (zum Beispiel wichtige "
+"Anmerkungen zum System), an alle Benutzer verteilen wollen. Auch für "
+"Distributoren kann es nützlich sein, ihren Softwarepaketen "
+"Lesezeichendateien beizulegen, die während der Installation von "
+"&kbookmarkmerger; in die Lesezeichenliste des Benutzers eingefügt werden. So "
+"kann man unmittelbar nachdem das Softwarepaket installiert wurde, auf die "
+"mitgelieferte Dokumentation auf einfache und klare Weise zugreifen."
+
+#. Tag: para
+#: man-kbookmarkmerger.1.docbook:66
+#, no-c-format
+msgid ""
+"The only parameter required by &kbookmarkmerger; is the name of a directory "
+"which shall be scanned for bookmark files. All files in the given directory "
+"will be considered for being merged into the user's setup. The files in the "
+"given directory should be valid <acronym>XBEL</acronym> files."
+msgstr ""
+"Der einzige von &kbookmarkmerger; benötigte Parameter ist der Name eines "
+"Verzeichnisses, das nach Lesezeichendateien durchsucht werden soll. Alle "
+"Dateien im angegebenen Verzeichnis werden für die Zusammenlegung in die "
+"Einrichtungsdateien des Benutzers berücksichtigt. Die Dateien im angegebenen "
+"Verzeichnis sollten gültige<acronym>XBEL</acronym>-Dateien sein."
+
+#. Tag: title
+#: man-kbookmarkmerger.1.docbook:74
+#, no-c-format
+msgid "See Also"
+msgstr "Siehe auch"
+
+#. Tag: ulink
+#: man-kbookmarkmerger.1.docbook:75
+#, no-c-format
+msgid "&konqueror; manual"
+msgstr "Handbuch zu &konqueror;"
+
+#. Tag: title
+#: man-kbookmarkmerger.1.docbook:79
+#, no-c-format
+msgid "Examples"
+msgstr "Beispiele"
+
+#. Tag: screen
+#: man-kbookmarkmerger.1.docbook:80
+#, no-c-format
+msgid ""
+"joe@hal9000:~> <command>kbookmarkmerger <filename>/usr/local/extra-"
+"bookmarks</filename></command>"
+msgstr ""
+"joe@hal9000:~> <command>kbookmarkmerger <filename>/usr/local/extra-"
+"bookmarks</filename></command>"
+
+#. Tag: para
+#: man-kbookmarkmerger.1.docbook:81
+#, no-c-format
+msgid ""
+"Merges all bookmark files stored in <filename>/usr/local/extra-bookmarks</"
+"filename> into joe's list of bookmarks."
+msgstr ""
+"Fasst alle unter <filename>/usr/local/extra-bookmarks</filename> abgelegten "
+"Lesezeichendateien in die Lesezeichenliste des Benutzers joe zusammen."
+
+#. Tag: title
+#: man-kbookmarkmerger.1.docbook:87
+#, no-c-format
+msgid "Standards"
+msgstr "Standards"
+
+#. Tag: ulink
+#: man-kbookmarkmerger.1.docbook:90
+#, no-c-format
+msgid "<acronym>XBEL</acronym> specification"
+msgstr "<acronym>XBEL</acronym>-Spezifikation"
+
+#. Tag: title
+#: man-kbookmarkmerger.1.docbook:96
+#, no-c-format
+msgid "Restrictions"
+msgstr "Einschränkungen"
+
+#. Tag: para
+#: man-kbookmarkmerger.1.docbook:97
+#, no-c-format
+msgid ""
+"When determining whether a given bookmark file has been merged into the "
+"user's bookmarks already or not, &kbookmarkmerger; merely looks at the "
+"filename of the bookmark file - the contents are not checked at all. This "
+"means that changing a bookmark file which was already merged into a user's "
+"bookmarks will not trigger merging it once again."
+msgstr ""
+"Um herauszufinden, ob eine gegebene Lesezeichendatei bereits in die "
+"Lesezeichendatei des Benutzers eingearbeitet wurde oder nicht, betrachtet "
+"&kbookmarkmerger; nur den Dateinamen der Lesezeichendatei - Inhalte werden "
+"nicht berücksichtigt. Das bedeutet, dass Änderungen an einer "
+"Lesezeichendatei, die bereits in eine Lesezeichendatei des Benutzers "
+"eingearbeitet wurde, keine erneute Verarbeitung dieser Datei auslösen."
+
+#. Tag: para
+#: man-kbookmarkmerger.1.docbook:103
+#, no-c-format
+msgid ""
+"Also note that in case a user modifies a bookmark which was merged into his "
+"setup, the original bookmark file will be left unmodified."
+msgstr ""
+"Beachten Sie auch, dass, wenn ein Benutzer eine Datei bearbeitet, die für "
+"ihn zusammengefügt wurde, die ursprüngliche Lesezeichendatei unverändert "
+"bleibt."
+
+#. Tag: title
+#: man-kbookmarkmerger.1.docbook:108
+#, no-c-format
+msgid "Author"
+msgstr "Autor"
+
+#. Tag: para
+#: man-kbookmarkmerger.1.docbook:109
+#, no-c-format
+msgid "<para>&Frerich.Raabe; &Frerich.Raabe.mail;</para>"
+msgstr "<para>&Frerich.Raabe; &Frerich.Raabe.mail;</para>"
+
+#~ msgid ""
+#~ "<date>February 1st, 2005</date> <productname>K Desktop Environment</"
+#~ "productname>"
+#~ msgstr ""
+#~ "<date>1. Februar 2005</date> <productname>K Desktop Environment</"
+#~ "productname>"

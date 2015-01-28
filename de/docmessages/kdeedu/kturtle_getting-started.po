@@ -1,0 +1,446 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2004, 2005, 2006, 2008, 2010, 2013.
+# Stephan Johach <hunsum@gmx.de>, 2004.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: kturtle_getting-started\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: 2013-02-23 12:56+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: getting-started.docbook:2
+#, no-c-format
+msgid "Getting Started"
+msgstr "Erste Schritte"
+
+#. Tag: para
+#: getting-started.docbook:3
+#, no-c-format
+msgid ""
+"When you start &kturtle; you will see something like this: <screenshot> "
+"<screeninfo>Here is a screenshot of &kturtle; when you start it for the "
+"first time</screeninfo> <mediaobject> <imageobject> <imagedata fileref="
+"\"mainwindow.png\" format=\"PNG\"/> </imageobject> <textobject> "
+"<phrase>&kturtle; on a fresh start</phrase> </textobject> </mediaobject> </"
+"screenshot> In this Getting Started guide we assume that the language of the "
+"&turtlescript; commands is English. You can change this language with "
+"<menuchoice><guimenu>Settings</guimenu><guisubmenu>Script Language</"
+"guisubmenu></menuchoice>. Be aware that the language you set here for "
+"&kturtle; is the one you use to type the &turtlescript; commands, not the "
+"language used by &kde; on your computer and used to display the &kturtle; "
+"interface and menus."
+msgstr ""
+"Beim ersten Start von &kturtle; sehen Sie folgendes Bild: <screenshot> "
+"<screeninfo>Hier ist ein Bildschirmfoto von &kturtle;, wenn Sie es das erste "
+"Mal starten</screeninfo><mediaobject><imageobject> <imagedata fileref="
+"\"mainwindow.png\" format=\"PNG\"/> </imageobject> <textobject> "
+"<phrase>&kturtle; beim ersten Start</phrase> </textobject> </mediaobject>  </"
+"screenshot> In diesem Handbuch zur Einführung wird angenommen, dass die "
+"Sprache der &turtlescript;-Befehle auf deutsch eingestellt ist. Die "
+"Spracheinstellung können Sie unter <menuchoice><guimenu>Einstellungen</"
+"guimenu><guisubmenu>Skript-Sprache</guisubmenu></menuchoice>  finden. Die "
+"hier für &kturtle; eingestellte Sprache wird für die &turtlescript;-Befehle "
+"verwendet, das ist nicht die Sprache für &kde; und für die grafische "
+"Oberfläche und die Menüs von &kturtle;."
+
+#. Tag: title
+#: getting-started.docbook:18
+#, no-c-format
+msgid "First steps with &turtlescript;: meet the Turtle!"
+msgstr "Erste Schritte mit &turtlescript;: Spielen Sie mit der Schildkröte!"
+
+#. Tag: para
+#: getting-started.docbook:19
+#, no-c-format
+msgid ""
+"You must have noticed the turtle in the middle of the canvas: you are just "
+"about to learn how to control it using commands in the editor."
+msgstr ""
+"Wie Sie sicher bemerkt haben, steht die Schildkröte mitten auf der "
+"Zeichenfläche: Sie lernen hier, die Schildkröte mit Befehlen im Editor zu "
+"kontrollieren."
+
+#. Tag: title
+#: getting-started.docbook:22
+#, no-c-format
+msgid "The Turtle Moves"
+msgstr "Die Schildkröte bewegt sich"
+
+#. Tag: para
+#: getting-started.docbook:23
+#, no-c-format
+msgid ""
+"Let us start by getting the turtle moving. Our turtle can do 3 types of "
+"moves, (1) it can move forwards and backwards, (2) it can turn left and "
+"right and (3) it can go (jump) directly to a position on the screen. Try "
+"this for example:"
+msgstr ""
+"Beginnen Sie damit, die Schildkröte in Bewegung zu setzen. Unsere "
+"Schildkröte kennt drei Arten von Bewegungen. (1) sie kann vorwärts oder "
+"rückwärts gehen, (2) sie kann nach links oder rechts drehen und (3) sie kann "
+"direkt zu einer Position auf der Zeichenfläche springen. Versuchen Sie zum "
+"Beispiel diese Befehle:"
+
+#. Tag: screen
+#: getting-started.docbook:25
+#, no-c-format
+msgid ""
+"forward 100\n"
+"turnleft 90"
+msgstr ""
+"vorwärts 100\n"
+"linksdrehen 90"
+
+#. Tag: para
+#: getting-started.docbook:25
+#, no-c-format
+msgid ""
+"Type or copy-paste the code to the editor and execute it (using <link "
+"linkend=\"run-execute\"><menuchoice><guimenu>Run</guimenu><guimenuitem>Run</"
+"guimenuitem></menuchoice></link>) to see the result."
+msgstr ""
+"Im Editor können Sie Text direkt eingeben oder kopieren und einfügen. Mit "
+"<link linkend=\"run-execute\"><menuchoice><guimenu>Ausführen</"
+"guimenu><guimenuitem>Ausführen</guimenuitem></menuchoice></link> sehen Sie "
+"das Ergebnis."
+
+#. Tag: para
+#: getting-started.docbook:28
+#, no-c-format
+msgid ""
+"When you typed and executed the commands like above in the editor you might "
+"have noticed one or more of the following things:"
+msgstr ""
+"Nach der Eingabe und Ausführung der oben gezeigten Befehle im Editor ist "
+"Ihnen vielleicht folgendes aufgefallen:"
+
+#. Tag: para
+#: getting-started.docbook:30
+#, no-c-format
+msgid ""
+"That &mdash; after executing the commands &mdash; the turtle moves up, draws "
+"a line, and then turns a quarter turn to the left. This because you have "
+"used the <link linkend=\"forward\"><userinput>forward</userinput></link> and "
+"the <link linkend=\"turnleft\"><userinput>turnleft</userinput></link> "
+"commands."
+msgstr ""
+"Die Schildkröte bewegt sich &mdash; nach der Ausführung der Befehle &mdash; "
+"nach oben, zeichnet eine Linie und macht dann eine Vierteldrehung nach "
+"links. Dies haben Sie mit den Befehlen <link linkend=\"forward"
+"\"><userinput>vorwärts</userinput></link> und <link linkend=\"turnleft"
+"\"><userinput>linksdrehen</userinput></link> erreicht."
+
+#. Tag: para
+#: getting-started.docbook:33
+#, no-c-format
+msgid ""
+"That the color of the code changed while you where typing it: this feature "
+"is called <emphasis>intuitive highlighting</emphasis> &mdash; different "
+"types of commands are highlighted differently. This makes reading large "
+"blocks of code more easy."
+msgstr ""
+"Die Farbe des Codes hat sich bei der Eingabe verändert, diese Eigenschaft "
+"nennt sich <emphasis>intuitive Hervorhebung</emphasis> &mdash;, verschiedene "
+"Arten von Befehlen werden unterschiedlich dargestellt. Dies erleichtert das "
+"Lesen von Quelltexten."
+
+#. Tag: para
+#: getting-started.docbook:36
+#, no-c-format
+msgid "That the turtle draws a thin black line."
+msgstr "Die Schildkröte zeichnet eine dünne schwarze Linie."
+
+#. Tag: para
+#: getting-started.docbook:39
+#, no-c-format
+msgid ""
+"Maybe you got an error message. This could simply mean two things: you could "
+"have made a mistake while copying the commands, or you should still set the "
+"correct language for the &turtlescript; commands (you can do that by "
+"choosing <menuchoice><guimenu>Settings</guimenu><guisubmenu>Script Language</"
+"guisubmenu></menuchoice>)."
+msgstr ""
+"Vielleicht haben Sie auch eine Fehlermeldung bekommen. Das kann zwei Gründe "
+"haben, entweder haben Sie die Befehle falsch geschrieben oder Sie müssen "
+"noch die richtige Sprache für die &turtlescript;-Befehle einstellen (mit "
+"<menuchoice><guimenu>Einstellungen</guimenu><guisubmenu>Skript-Sprache</"
+"guisubmenu></menuchoice>)."
+
+#. Tag: para
+#: getting-started.docbook:43
+#, no-c-format
+msgid ""
+"You will likely understand that <userinput>forward 100</userinput> "
+"instructed the turtle to move forward leaving a line, and that "
+"<userinput>turnleft 90</userinput> instructed the turtle to turn 90 "
+"<glossterm linkend=\"degrees\">degrees</glossterm> to the left."
+msgstr ""
+"Sie sehen wahrscheinlich, das <userinput>vorwärts 100</userinput> die "
+"Schildkröte vorwärts bewegt und dabei eine Linie zeichnet, und das "
+"<userinput>linksdrehen 90</userinput> die Schildkröte um 90 <glossterm "
+"linkend=\"degrees\">Grad</glossterm> nach links dreht."
+
+#. Tag: para
+#: getting-started.docbook:45
+#, no-c-format
+msgid ""
+"Please see the following links to the reference manual for a complete "
+"explanation of the new commands: <link linkend=\"forward"
+"\"><userinput>forward</userinput></link>, <link linkend=\"backward"
+"\"><userinput>backward</userinput></link>, <link linkend=\"turnleft"
+"\"><userinput>turnleft</userinput></link>, and <link linkend=\"turnright"
+"\"><userinput>turnright</userinput></link>."
+msgstr ""
+"In den folgenden Verweisen zum Referenzhandbuch finden Sie ausführliche "
+"Erklärungen der neuen Befehle: <link linkend=\"forward"
+"\"><userinput>vorwärts</userinput></link>, <link linkend=\"backward"
+"\"><userinput>rückwärts</userinput></link>, <link linkend=\"turnleft"
+"\"><userinput>linksdrehen</userinput></link> und <link linkend=\"turnright"
+"\"><userinput>rechtsdrehen</userinput></link>."
+
+#. Tag: title
+#: getting-started.docbook:49
+#, no-c-format
+msgid "More examples"
+msgstr "Weitere Beispiele"
+
+#. Tag: para
+#: getting-started.docbook:50
+#, no-c-format
+msgid "The first example was very simple, so let us go on!"
+msgstr "Das erste Beispiel war sehr einfach, deshalb machen wir weiter!"
+
+#. Tag: screen
+#: getting-started.docbook:54
+#, no-c-format
+msgid ""
+"reset\n"
+"\n"
+"canvassize 200,200\n"
+"canvascolor 0,0,0\n"
+"pencolor 255,0,0\n"
+"penwidth 5\n"
+"\n"
+"go 20,20\n"
+"direction 135\n"
+"\n"
+"forward 200\n"
+"turnleft 135\n"
+"forward 100\n"
+"turnleft 135\n"
+"forward 141\n"
+"turnleft 135\n"
+"forward 100\n"
+"turnleft 45\n"
+"\n"
+"go 40,100"
+msgstr ""
+"zurücksetzen\n"
+"\n"
+"papiergröße 200,200\n"
+"papierfarbe 0,0,0\n"
+"stiftfarbe 255,0,0\n"
+"stiftbreite 5\n"
+"\n"
+"gehe 20,20\n"
+"richtung 135\n"
+"\n"
+"vorwärts 200\n"
+"linksdrehen 135\n"
+"vorwärts 100\n"
+"linksdrehen 135\n"
+"vorwärts 141\n"
+"linksdrehen 135\n"
+"vorwärts 100\n"
+"linksdrehen 45\n"
+"\n"
+"gehe 40, 100"
+
+#. Tag: para
+#: getting-started.docbook:54
+#, no-c-format
+msgid ""
+"Again you can type or copy-paste the code to the editor or open the "
+"<filename>arrow</filename> example in the <guimenu>Examples</guimenu> menu "
+"and execute it (using <link linkend=\"run-execute"
+"\"><menuchoice><guimenu>Run</guimenu><guimenuitem>Run</guimenuitem></"
+"menuchoice></link>) to see the result. In the next examples you are expected "
+"to know the drill."
+msgstr ""
+"Auch hier können Sie den Quelltext eingeben oder kopieren und in den Editor "
+"einfügen. Oder Sie öffnen die Datei <filename>pfeil</filename> im Menü "
+"<guimenu>Beispiele</guimenu> und führen sie aus (mit <link linkend=\"run-"
+"execute\"><menuchoice><guimenu>Ausführen</guimenu><guimenuitem>Ausführen</"
+"guimenuitem></menuchoice></link>), um das Ergebnis zu sehen. In den "
+"folgenden  Beispielen werden diese Möglichkeiten zur Eingabe von Quelltext "
+"nicht mehr ausdrücklich genannt."
+
+#. Tag: para
+#: getting-started.docbook:57
+#, no-c-format
+msgid ""
+"You might have noticed that this second example uses a lot more code. You "
+"have also seen a couple of new commands. Here a short explanation of all the "
+"new commands:"
+msgstr ""
+"Wie Sie vielleicht festgestellt haben, benutzt das zweite Beispiel viel mehr "
+"Quelltext. Außerdem enthält es viele neue Befehle, die im folgenden kurz "
+"erklärt werden."
+
+#. Tag: para
+#: getting-started.docbook:59
+#, no-c-format
+msgid ""
+"After a <userinput>reset</userinput> command everything is like is was when "
+"you had just started &kturtle;."
+msgstr ""
+"Mit dem Befehl <userinput>zurücksetzen</userinput> wird alles wieder wie "
+"direkt nach dem Start von &kturtle; eingestellt."
+
+#. Tag: para
+#: getting-started.docbook:61
+#, no-c-format
+msgid ""
+"<userinput>canvassize 200,200</userinput> sets the canvas width and height "
+"to 200 <glossterm linkend=\"pixels\">pixels</glossterm>. The width and the "
+"height are equal, so the canvas will be a square."
+msgstr ""
+"<userinput>papiergröße 200,200</userinput> setzt die Breite und Höhe der "
+"Zeichenfläche auf 200 <glossterm linkend=\"pixels\">Pixel</glossterm>. "
+"Breite und Höhe sind gleich, also ist die Zeichenfläche ein Quadrat."
+
+#. Tag: para
+#: getting-started.docbook:63
+#, no-c-format
+msgid ""
+"<userinput>canvascolor 0,0,0</userinput> makes the canvas black. "
+"<userinput>0,0,0</userinput> is a <glossterm linkend=\"rgb\">RGB-"
+"combination</glossterm> where all values are set to <userinput>0</"
+"userinput>, which results in black."
+msgstr ""
+"<userinput>papierfarbe 0,0,0</userinput> färbt die Zeichenfläche schwarz. "
+"<userinput>papierfarbe 0,0,0</userinput> ist eine <glossterm linkend=\"rgb"
+"\">RGB-Kombination</glossterm>, in der alle Werte auf <userinput>0</"
+"userinput> gesetzt sind, das Ergebnis ist schwarz."
+
+#. Tag: para
+#: getting-started.docbook:65
+#, no-c-format
+msgid ""
+"<userinput>pencolor 255,0,0</userinput> sets the color of the pen to red. "
+"<userinput>255,0,0</userinput> is a <glossterm linkend=\"rgb\">RGB-"
+"combination</glossterm> where only the red value is set to <userinput>255</"
+"userinput> (fully on) while the others (green and blue) are set to "
+"<userinput>0</userinput> (fully off). This results in a bright shade of red."
+msgstr ""
+"<userinput>stiftfarbe 255,0,0</userinput> setzt die Farbe des Zeichenstiftes "
+"auf Rot. <userinput>255,0,0</userinput> ist eine <glossterm linkend=\"rgb"
+"\">RGB-Kombination</glossterm>, in der nur der Wert für Rot auf "
+"<userinput>255</userinput> gesetzt ist, während die anderen (Grün und Blau) "
+"den Wert <userinput>0</userinput> (aus) haben. Das Ergebnis ist ein "
+"leuchtendes Rot."
+
+#. Tag: para
+#: getting-started.docbook:67
+#, no-c-format
+msgid ""
+"If you do not understand the color values, be sure to read the glossary on "
+"<glossterm linkend=\"rgb\">RGB-combination</glossterm>."
+msgstr ""
+"Wenn Sie die Farbwerte nicht verstehen, finden Sie dazu weitere "
+"Erläuterungen unter dem Begriff <glossterm linkend=\"rgb\">RGB-"
+"Kombinationen</glossterm>"
+
+#. Tag: para
+#: getting-started.docbook:69
+#, no-c-format
+msgid ""
+"<userinput>penwidth 5</userinput> sets the width (the size) of the pen to "
+"<userinput>5</userinput> <glossterm linkend=\"pixels\">pixels</glossterm>. "
+"From now on every line the turtle draw will have a thickness of "
+"<userinput>5</userinput>, until we change the <userinput>penwidth</"
+"userinput> to something else."
+msgstr ""
+"<userinput>stiftbreite 5</userinput> setzt die Breite des Zeichenstiftes auf "
+"<userinput>5</userinput> <glossterm linkend=\"pixels\">Pixel</glossterm>. "
+"Nach diesem Befehl zeichnet die Schildkröte jede Linie mit einer Breite von "
+"<userinput>5</userinput>, bis Sie die <userinput>stiftbreite</userinput> auf "
+"einen anderen Wert einstellen."
+
+#. Tag: para
+#: getting-started.docbook:71
+#, no-c-format
+msgid ""
+"<userinput>go 20,20</userinput> commands the turtle to go to a certain place "
+"on the canvas. Counted from the upper left corner, this place is 20 "
+"<glossterm linkend=\"pixels\">pixels</glossterm> across from the left, and "
+"20 <glossterm linkend=\"pixels\">pixels</glossterm> down from the top of the "
+"canvas. Note that using the <userinput>go</userinput> command the turtle "
+"will not draw a line."
+msgstr ""
+"<userinput>gehe 20,20</userinput> bewegt die Schildkröte auf eine bestimmte "
+"Stelle auf der Zeichenfläche, die 20 <glossterm linkend=\"pixels\">Pixel</"
+"glossterm> vom linken Rand und 20 <glossterm linkend=\"pixels\">Pixel</"
+"glossterm> vom oberen Rand der Zeichenfläche entfernt ist. Mit dem Befehl "
+"<userinput>gehe</userinput> zeichnet die Schildkröte keine Linie. "
+
+#. Tag: para
+#: getting-started.docbook:73
+#, no-c-format
+msgid ""
+"<userinput>direction 135</userinput> set the turtle's direction. The "
+"<userinput>turnleft</userinput> and <userinput>turnright</userinput> "
+"commands change the turtle's angle starting from its current direction. The "
+"<userinput>direction</userinput> command changes the turtle's angle from "
+"zero, and thus is not relative to the turtle previous direction."
+msgstr ""
+"<userinput>richtung 135</userinput> setzt die Bewegungsrichtung der "
+"Schildkröte. Die Befehle <userinput>linksdrehen</userinput> und "
+"<userinput>rechtsdrehen</userinput> ändern die Bewegungsrichtung der "
+"Schildkröte relativ zur vorhandenen Richtung. Der Befehl "
+"<userinput>richtung</userinput> setzt die Bewegungsrichtung unabhängig von "
+"der vorhandenen Richtung neu."
+
+#. Tag: para
+#: getting-started.docbook:75
+#, no-c-format
+msgid ""
+"After the <userinput>direction</userinput> command a lot of "
+"<userinput>forward</userinput> and <userinput>turnleft</userinput> commands "
+"follow. These command do the actual drawing."
+msgstr ""
+"Nach dem Befehl <userinput>richtung</userinput> folgen viele "
+"<userinput>vorwärts</userinput> und <userinput>linksdrehen</userinput> "
+"Befehle. Diese Befehle erzeugen die aktuelle Zeichnung."
+
+#. Tag: para
+#: getting-started.docbook:77
+#, no-c-format
+msgid ""
+"At last another <userinput>go</userinput> command is used to move the turtle "
+"aside."
+msgstr ""
+"Zum Schluss bewegt der Befehl <userinput>gehe</userinput> die Schildkröte zu "
+"Seite."
+
+#. Tag: para
+#: getting-started.docbook:79
+#, no-c-format
+msgid ""
+"Make sure you follow the links to the reference. The reference explains each "
+"command more thoroughly."
+msgstr ""
+"Lesen Sie die Verknüpfungen zur Befehlsreferenz, in der die einzelnen "
+"Befehle ausführlicher erklärt werden."
+
+#~ msgid "<userinput>clear</userinput> clear the canvas, that is all it does."
+#~ msgstr "<userinput>lösche</userinput> löscht die Zeichenfläche."

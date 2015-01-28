@@ -1,0 +1,78 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Burkhard Lück <lueck@hube-lueck.de>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
+"PO-Revision-Date: 2014-09-17 13:52+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, LatexConfig)
+#: latex/latex-config.ui:14
+msgid "LatexConfig"
+msgstr "LaTeX-Einrichtung"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: latex/latex-config.ui:20
+msgid "LaTeX header:"
+msgstr "LaTeX-Header:"
+
+#. i18n: ectx: property (plainText), widget (QPlainTextEdit, kcfg_LatexHeader)
+#: latex/latex-config.ui:31
+msgid ""
+"\\documentclass{minimal}\n"
+"\\usepackage{color}\n"
+"\\pagestyle{empty}\n"
+"\\color{black}\n"
+msgstr ""
+"\\documentclass{standalone}\n"
+"\\usepackage{color}\n"
+"\\usepackage{amsmath,latexsym,amsfonts,amssymb,ulem}\n"
+"\\usepackage{graphicx}\n"
+"\\pagestyle{empty}\n"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: latex/latex-config.ui:38
+msgid "LaTeX command line:"
+msgstr "LaTeX-Befehlszeile:"
+
+#. i18n: ectx: property (text), widget (KLineEdit, kcfg_LatexCmd)
+#: latex/latex-config.ui:45
+msgid "latex -interaction=batchmode -halt-on-error"
+msgstr "latex -interaction=batchmode -halt-on-error"
+
+#: otr/otr-filter.cpp:35
+msgid "<i>Encrypted message</i>"
+msgstr "<i>Verschlüsselte Nachricht</i>"
+
+#: texttospeech/tts-filter.cpp:42
+msgid "KDE Instant Messaging"
+msgstr "KDE-Instant-Messaging"
+
+#: texttospeech/tts-filter.cpp:63
+#, kde-format
+msgctxt "Text to Speech - text message %1 is name, %2 is message"
+msgid "%1 says %2"
+msgstr "%1 sagt %2"
+
+#: texttospeech/tts-filter.cpp:66
+#, kde-format
+msgctxt "Text to Speech - text message %1 is name, %2 is message"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#~ msgid "New message. %1"
+#~ msgstr "Neue Nachricht. %1"
+
+#~ msgid "Click to view in browser"
+#~ msgstr "Klicken Sie zur Ansicht im Browser"

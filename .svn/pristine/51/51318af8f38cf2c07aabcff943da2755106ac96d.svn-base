@@ -1,0 +1,212 @@
+# Stephan Johach <hunsum@gmx.de>, 2006.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: scripts_man-create_makefiles.1\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:10+0000\n"
+"PO-Revision-Date: 2006-12-27 20:21+0100\n"
+"Last-Translator: Thomas Reitelbach <tr@erdfunkstelle.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: branches/KDE/3.5/kdesdk/doc/scripts/man-"
+"create_makefiles.1.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 385546\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: date
+#: man-create_makefiles.1.docbook:9
+#, no-c-format
+msgid "March 8, 2003"
+msgstr "8. März 2003"
+
+#. Tag: refentrytitle
+#: man-create_makefiles.1.docbook:13
+#, no-c-format
+msgid "<refentrytitle>&create_makefiles;</refentrytitle>"
+msgstr "<refentrytitle>&create_makefiles;</refentrytitle>"
+
+#. Tag: manvolnum
+#: man-create_makefiles.1.docbook:14
+#, no-c-format
+msgid "<manvolnum>1</manvolnum>"
+msgstr "<manvolnum>1</manvolnum>"
+
+#. Tag: refname
+#: man-create_makefiles.1.docbook:18
+#, no-c-format
+msgid "<refname>&create_makefiles;</refname>"
+msgstr "<refname>&create_makefiles;</refname>"
+
+#. Tag: refpurpose
+#: man-create_makefiles.1.docbook:19
+#, no-c-format
+msgid "Recreates all <filename>Makefile</filename>s beneath a directory"
+msgstr ""
+"Erzeugt alle <filename>Makefile</filename>s unterhalb eines Ordners neu."
+
+#. Tag: cmdsynopsis
+#: man-create_makefiles.1.docbook:23
+#, no-c-format
+msgid "&create_makefiles; <group><replaceable>dir</replaceable></group>"
+msgstr "&create_makefiles; <group><replaceable>ordner</replaceable></group>"
+
+#. Tag: title
+#: man-create_makefiles.1.docbook:31
+#, no-c-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. Tag: para
+#: man-create_makefiles.1.docbook:33
+#, no-c-format
+msgid ""
+"&create_makefiles; recreates all <filename>Makefile</filename>s in "
+"<replaceable>dir</replaceable> and its (recursed) subdirectories from the "
+"corresponding <filename>Makefile.am</filename> templates."
+msgstr ""
+"&create_makefiles; erzeugt alle <filename>Makefile</filename>s in "
+"<replaceable>ordner</replaceable> und seinen Unterordnern neu und verwendet "
+"dazu die <filename>Makefile.am</filename>-Vorlagedateien."
+
+#. Tag: para
+#: man-create_makefiles.1.docbook:38
+#, no-c-format
+msgid ""
+"This script must be run from the toplevel directory (the one containing "
+"configure). This script saves time compared to re-running configure "
+"completely."
+msgstr ""
+"Dieses Skript muss im Basisordner ausgeführt werden (wo sich das Skript "
+"<quote>configure</quote> befindet). Das Skript braucht weniger Zeit, als "
+"wenn configure erneut ausgeführt werden würde."
+
+#. Tag: para
+#: man-create_makefiles.1.docbook:42
+#, no-c-format
+msgid ""
+"If the source directory is different from the build directory (see the "
+"environment variables below), it will be assumed that each "
+"<filename>Makefile.am</filename> and <filename>Makefile.in</filename> "
+"belongs beneath the source directory and that each <filename>Makefile</"
+"filename> belongs beneath the build directory."
+msgstr ""
+"Wenn Sie unterschiedliche Quelltext-Ordner und Kompilier-Ordner verwenden "
+"(siehe die unten stehenden Umgebungsvariablen), wird davon ausgegangen, dass "
+"alle <filename>Makefile.am</filename>- und <filename>Makefile.in</filename>-"
+"Dateien in den Quelltext-Ordner und alle <filename>Makefile</filename>-"
+"Dateien in den Kompilier-Ordner gehören."
+
+#. Tag: para
+#: man-create_makefiles.1.docbook:49
+#, no-c-format
+msgid "This utility is part of the &kde; Software Development Kit."
+msgstr ""
+"Dieses Hilfsprogramm ist Teil der &kde; Software-Entwicklungswerkzeuge."
+
+#. Tag: title
+#: man-create_makefiles.1.docbook:54
+#, no-c-format
+msgid "Environment"
+msgstr "Umgebungsvariablen"
+
+#. Tag: para
+#: man-create_makefiles.1.docbook:55
+#, no-c-format
+msgid ""
+"One of the following variables (but not both) should be set if the source "
+"directory is different from the build directory. If the build directory is "
+"simply a subdirectory of the source directory, the simpler variable "
+"<envar>OBJ_SUBDIR</envar> should be used."
+msgstr ""
+"Sie sollten eine der beiden Variablen (aber niemals beide) setzen, wenn sich "
+"der Quelltext-Ordner vom Kompilier-Ordner unterscheidet. Wenn der Kompilier-"
+"Ordner einfach ein Unterordner des Quelltext-Ordners ist, sollte die "
+"einfachere Variable <envar>OBJ_SUBDIR</envar> verwendet werden."
+
+#. Tag: envar
+#: man-create_makefiles.1.docbook:62
+#, no-c-format
+msgid "OBJ_SUBJDIR"
+msgstr "OBJ_SUBJDIR"
+
+#. Tag: para
+#: man-create_makefiles.1.docbook:63
+#, no-c-format
+msgid ""
+"Indicates that the build directory is in the given subdirectory of the "
+"source directory. For instance, if the source directory is <filename class="
+"\"directory\">kdesdk</filename> and the build directory is <filename class="
+"\"directory\">kdesdk/obj-i386-linux</filename>, then <envar>OBJ_SUBDIR</"
+"envar> should be set to <parameter>obj-i386-linux</parameter>."
+msgstr ""
+"Gibt an, dass der Kompilier-Ordner der angegebene Unterordner des Quelltext-"
+"Ordners ist. Wenn der Quelltextordner beispielsweise <filename class="
+"\"directory\">kdesdk</filename> lautet und der Kompilier-Ordner <filename "
+"class=\"directory\">kdesdk/obj-i386-linux</filename> lautet, dann sollte "
+"<envar>OBJ_SUBDIR</envar> auf <parameter>obj-i386-linux</parameter> "
+"eingestellt werden."
+
+#. Tag: envar
+#: man-create_makefiles.1.docbook:66
+#, no-c-format
+msgid "OBJ_REPLACEMENT"
+msgstr "OBJ_REPLACEMENT"
+
+#. Tag: para
+#: man-create_makefiles.1.docbook:67
+#, no-c-format
+msgid ""
+"A <command>sed</command> expression that is used to transform the source "
+"directory into the build directory. For instance, if the source directory is "
+"<filename class=\"directory\">kdesdk/obj-i386-linux</filename>, then "
+"<envar>OBJ_REPLACEMENT</envar> should be set to <parameter>s#kdesdk#kdesdk-"
+"obj#</parameter>."
+msgstr ""
+"Ein <command>sed</command>-Ausdruck zur Umsetzung des Quelltext-Ordners in "
+"den Kompilier-Ordner. Wenn der Quelltext-Ordner beispielsweise <filename "
+"class=\"directory\">kdesdk/obj-i386-linux</filename> ist, dann sollte "
+"<envar>OBJ_REPLACEMENT</envar> auf <parameter>s#kdesdk#kdesdk-obj#</"
+"parameter> eingestellt werden."
+
+#. Tag: title
+#: man-create_makefiles.1.docbook:74
+#, no-c-format
+msgid "See Also"
+msgstr "Siehe auch"
+
+#. Tag: para
+#: man-create_makefiles.1.docbook:76
+#, no-c-format
+msgid "create_makefile(1) make(2)"
+msgstr "create_makefile(1) make(2)"
+
+#. Tag: title
+#: man-create_makefiles.1.docbook:81
+#, no-c-format
+msgid "Authors"
+msgstr "Autoren"
+
+#. Tag: para
+#: man-create_makefiles.1.docbook:83
+#, no-c-format
+msgid "&create_makefiles; was written by &David.Faure; &David.Faure.mail;."
+msgstr ""
+"&create_makefiles; wurde von &David.Faure; &David.Faure.mail; geschrieben."
+
+#. Tag: para
+#: man-create_makefiles.1.docbook:85
+#, no-c-format
+msgid ""
+"This manual page was prepared by <personname><firstname>Ben</"
+"firstname><surname>Burton</surname></personname> <email>bab@debian.org</"
+"email> for the Debian GNU/Linux system (but may be used by others)."
+msgstr ""
+"Diese Handbuchseite wurde von <personname><firstname>Ben</"
+"firstname><surname>Burton</surname></personname> <email>bab@debian.org</"
+"email> für Debian GNU/Linux geschrieben (darf aber auch von anderen "
+"verwendet werden)."

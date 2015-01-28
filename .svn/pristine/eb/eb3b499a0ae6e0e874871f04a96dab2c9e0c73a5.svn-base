@@ -1,0 +1,324 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:27+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: faqs.docbook:2
+#, no-c-format
+msgid "Questions and Answers"
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:18
+#, no-c-format
+msgid "How do I enter multiple authors?"
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:22
+#, no-c-format
+msgid ""
+"Author names should be separated by a semi-colon, like so: <userinput>"
+"Brian W. Kernighan; Dennis M. Ritchie</userinput>. Don't include the word "
+"\"and\" or anything similar, even if you have 20 authors. If you have the "
+"auto-format option checked, then the last name will automatically be shown "
+"first for each author."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:28
+#, no-c-format
+msgid ""
+"Other properties which allow multiple values, like \"genre\" and \"keywords\", "
+"are entered in the same way, with a semi-colon (;) separating each value."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:37
+#, no-c-format
+msgid "Can I modify what the printed page looks like?"
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:41
+#, no-c-format
+msgid ""
+"Yes, most certainly. Find the file <filename>tellico-printing.xsl</filename> "
+"which should be in the $<envar>KDEDIR</envar>/share/apps/tellico/ directory. "
+"You can copy that to $<envar>KDEHOME</envar>/share/apps/tellico/ for personal "
+"modifications. You'll have to know <ulink url=\"http://www.w3.org/TR/xslt\">"
+"&xslt;</ulink>, but modifying that file is how you change the printing layout. "
+"&HTML; is generated from the file, and the easiest way to change the appearance "
+"of the printout is to modify the &CSS; in the top portion."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:50
+#, no-c-format
+msgid ""
+"Be aware that the <filename>tellico-printing.xsl</filename> "
+"references another file, <filename>tellico-common.xsl</filename>"
+", that contains some common &xslt; templates. If you copy <filename>"
+"tellico-printing.xsl</filename> to $<envar>KDEHOME</envar>"
+", you must either modify the &lt;xsl:import&gt; element to point to the actual "
+"location of the <filename>tellico-common.xsl</filename> "
+"file or copy the common file as well."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:57
+#, no-c-format
+msgid "How do I group by a property other than the ones listed in the toolbar?"
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:60
+#, no-c-format
+msgid ""
+"To allow grouping by a field which doesn't allow grouping by default, check the "
+"\"Allow Grouping\" box for that particular field in the \"Collection Fields\" "
+"dialog."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:68
+#, no-c-format
+msgid "Why does all that gobbledy-gook show up when I run &appname;?"
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:70
+#, no-c-format
+msgid ""
+"Stuff like: <screen width=\"40\">\n"
+"<computeroutput>Tellico::updateCollectionToolBar</computeroutput>\n"
+"<computeroutput>GroupView::setGroupAttribute - author</computeroutput>\n"
+"<computeroutput>GroupView::slotAddCollection</computeroutput>\n"
+"<computeroutput>QCheckBox::property( \"title\" ) failed: property invalid\n"
+"or does not exist</computeroutput>\n"
+"</screen> is debug info. At compile time, this can be stopped by compiling with "
+"the <userinput><option>--disable-debug</option></userinput> "
+"flag. You might also want to use <userinput><option>--enable-final</option>"
+"</userinput>, too, which takes a bit more memory when compiling, but is more "
+"efficient when running the application."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:80
+#, no-c-format
+msgid ""
+"The last message is slightly different, it just means your &Qt; installation "
+"was compiled with some debugging information."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:83
+#, no-c-format
+msgid ""
+"Or, if &appname; is already installed, run <userinput><command>"
+"kdebugdialog</command></userinput> and make sure that \"0 (generic)\" is "
+"unchecked. That turns off debug messages from all generic &kde; apps &ie; those "
+"not distributed officially by &kde;."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:93
+#, no-c-format
+msgid "How do I change which columns are shown?"
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:95
+#, no-c-format
+msgid ""
+"Right-click on the header bar. You can also drag the headers to re-order the "
+"columns, and click on them to sort by that field."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:101
+#, no-c-format
+msgid "How do I filter by something like the \"Read\" field?"
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:104
+#, no-c-format
+msgid ""
+"Internally, the checkbox fields in &appname; are saved as \"true\", so if you'd "
+"like to filter to show only the science fiction books which you've not read, "
+"for example, then you have two rules. Make sure the \"Match all of the "
+"following\" button is checked. Set the first rule to have \"Genre\" "
+"\"contains\" \"Science Fiction\" (no quotes) and the second rule to have "
+"\"Read\" \"does not contain\" \"true\" (no quotes)."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:112
+#, no-c-format
+msgid ""
+"Also, the quick filter in the toolbar will match any field, and if there is a "
+"non-word character, the text is interpreted as a regular expression. So if you "
+"quickly want to filter your books to show those by Weber or Bujold, then type "
+"\"weber|bujold\" (no quotes) in the toolbar."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:121
+#, no-c-format
+msgid "How do I add new entry templates?"
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:124
+#, no-c-format
+msgid ""
+"Entry templates should be saved in <filename class=\"directory\">$<envar>"
+"KDEHOME</envar>/share/apps/tellico/entry-templates/</filename> "
+"for access for a single user or <filename class=\"directory\">$<envar>"
+"KDEDIR</envar>/share/apps/tellico/entry-templates/</filename> "
+"for access by everyone. Templates in $<envar>KDEHOME</envar> "
+"will override any files by the same name in $<envar>KDEDIRS</envar>"
+". The entry templates can be set on a per collection-type basis in the settings "
+"dialog."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:133
+#, no-c-format
+msgid ""
+"Templates for the <interface>Report Dialog</interface> "
+"are saved in <filename class=\"directory\">$<envar>KDEHOME</envar>"
+"/share/apps/tellico/report-templates/</filename>."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:139
+#, no-c-format
+msgid ""
+"Compiling and installing went fine, but when &appname; starts up, the window is "
+"blank. What's wrong?"
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:144
+#, no-c-format
+msgid ""
+"&kde; programs look for data in the locations defined in the $<envar>"
+"KDEDIRS</envar> environmental variable. If you install in <filename "
+"class=\"directory\">/usr/local</filename> for example, but $<envar>"
+"KDEDIRS</envar> is empty or just <filename class=\"directory\">/usr</filename>"
+", then &appname; won't be able to find the files it needs. This is particularly "
+"true for &SuSE;, for which you should compile with <userinput><option>"
+"--prefix</option>=<filename class=\"directory\">/opt/kde3</filename></userinput>"
+". Alternatively, you could add a line to your <filename>.profile</filename> "
+"file to set $<envar>KDEDIRS</envar>. Check the documentation for your shell."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:158
+#, no-c-format
+msgid "How do I export additional bibtex fields?"
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:160
+#, no-c-format
+msgid ""
+"&appname; uses the <emphasis>bibtex</emphasis> property to know how to export "
+"bibtex fields. If you want to add additional fields to export, such as an "
+"abstract, open up the <interface>Collection Fields Dialog</interface>"
+", and click the <guibutton>Set Properties</guibutton> button. Add a <emphasis>"
+"bibtex</emphasis> property with value <emphasis>abstract</emphasis>"
+". Then, when you export to bibtex or bibtexml, that property will be used for "
+"the bibtex field name."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:171
+#, no-c-format
+msgid "What happened to Bookcase?"
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:175
+#, no-c-format
+msgid ""
+"Due to a trademark conflict, Bookcase was renamed Tellico in September 2004. "
+"Tellico 0.12 was then released, which was identical to Bookcase 0.11, except "
+"for the name change."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:183
+#, no-c-format
+msgid "What does the name Tellico have to do with anything?"
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:187
+#, no-c-format
+msgid ""
+"I thought about <ulink "
+"url=\"http://www.periapsis.org/archives/2004/09/13/renaming_bookcase.html\">"
+"several other names</ulink>, a few of which were connected with book "
+"collections. However, Tellico can handle more than just books, and besides, "
+"this is a hobby, so I chose a neat-sounding (to me) name, one taken from a town "
+"close to where I grew up."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:196
+#, no-c-format
+msgid "What do you include those links to Amazon.com in the search results?"
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:200
+#, no-c-format
+msgid ""
+"The <ulink "
+"url=\"http://www.amazon.com/gp/browse.html/002-0927720-5265623?node=3440661\">"
+"terms of agreement for accessing the Amazon.com Web Services</ulink> "
+"require all images pulled from the service to be linked back to Amazon.com, as "
+"well as an additional link. The Amazon.com associate's ID is necessarily "
+"included, so any referral payments are duly collected."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:208
+#, no-c-format
+msgid "Why don't you use a real database?"
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:212
+#, no-c-format
+msgid ""
+"Part of the reason I started &appname; was to learn C++. I didn't know SQL at "
+"the time, and at the moment, I only have a faint knowledge of how to use it. "
+"Simply put, &appname; didn't start out as a relational database, and that won't "
+"change until sometime in the future when I get around to learning SQL and have "
+"the time and motivation to change the data model. If that bothers you, well, "
+"don't use &appname; then."
+msgstr ""
+
+#. Tag: para
+#: faqs.docbook:218
+#, no-c-format
+msgid ""
+"Of course, anyone is welcome to make any changes they want to with the source "
+"code."
+msgstr ""

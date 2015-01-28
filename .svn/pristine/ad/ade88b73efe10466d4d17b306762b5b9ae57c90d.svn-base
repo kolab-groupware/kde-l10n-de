@@ -1,0 +1,129 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2010.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kioslave_network\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: 2010-08-24 17:42+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdebase/runtime/doc/kioslave/network/index."
+"docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 961289\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:10
+#, no-c-format
+msgid "network"
+msgstr "Netzwerk"
+
+#. Tag: author
+#: index.docbook:14
+#, no-c-format
+msgid ""
+"<personname><firstname>Friedrich W. H.</firstname><surname>Kossebau</"
+"surname></personname> <email>kossebau@kde.org</email>"
+msgstr ""
+"<personname><firstname>Friedrich W. H.</firstname><surname>Kossebau</"
+"surname></personname> <email>kossebau@kde.org</email>"
+
+#. Tag: trans_comment
+#: index.docbook:18
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Johannes</"
+"firstname><surname>Obermayr</"
+"surname><affiliation><address><email>johannesobermayr@gmx.de</email></"
+"address></affiliation><contrib>Übersetzung</contrib></othercredit>"
+
+#. Tag: date
+#: index.docbook:21
+#, no-c-format
+msgid "2009-04-28"
+msgstr "2009-04-28"
+
+#. Tag: releaseinfo
+#: index.docbook:22
+#, no-c-format
+msgid "<releaseinfo>0.1</releaseinfo>"
+msgstr "<releaseinfo>0.1</releaseinfo>"
+
+#. Tag: para
+#: index.docbook:27
+#, no-c-format
+msgid ""
+"The network ioslave enables the user to browse the devices connected to the "
+"local network and the services running on them. It it also possible to start "
+"programs for services whose type is known."
+msgstr ""
+"Das Ein-/Ausgabemodul „Netzwerk“ ermöglicht es, mit dem lokalen Netzwerk "
+"verbundene Geräte und alle darauf ausgeführten Dienste zu durchsuchen. "
+"Außerdem können Programme für Dienste gestartet werden, deren Art bekannt "
+"ist."
+
+#. Tag: para
+#: index.docbook:33
+#, no-c-format
+msgid ""
+"To see all the devices found, enter <userinput><command>network:/</command></"
+"userinput>."
+msgstr ""
+"Um alle gefundenen Geräte anzuzeigen, geben Sie <userinput><command>network:/"
+"</command></userinput>ein."
+
+#. Tag: para
+#: index.docbook:38
+#, no-c-format
+msgid ""
+"<userinput><command>network:/</command><replaceable>hostname_of_device</"
+"replaceable></userinput> will list the services found to be running on a "
+"device."
+msgstr ""
+"<userinput><command>network:/</command><replaceable>rechnername_des_geräts</"
+"replaceable></userinput> zeigt alle laufenden Dienste auf einem Gerät an."
+
+#. Tag: para
+#: index.docbook:43
+#, no-c-format
+msgid ""
+"Selecting a service will forward to a url which matches the service, given "
+"there is a suitable, e.g. <userinput><command>ssh:/</"
+"command>hostname_of_device:port/</userinput> for a <acronym>SSH</acronym> "
+"service. Each known service type has a mimetype assigned to it, so a user "
+"can assign new handlers for the resulting urls. This is done with the "
+"control module <menuchoice><guimenuitem>File Associations</guimenuitem></"
+"menuchoice> in &systemsettings;. The mimetypes of the services are currently "
+"all named <userinput>inode/vnd.kde.service.*</userinput>."
+msgstr ""
+"Die Auswahl eines Dienstes leitet zu einer übereinstimmenden Adresse weiter "
+"(soweit verfügbar). Beispielsweise sei hier <userinput><command>ssh:/</"
+"command><replaceable>Gerätename:Port/</replaceable></userinput> für einen "
+"<acronym>SSH</acronym>-Dienst genannt. Jeder Dienst hat seinen "
+"entsprechenden MIME-Typ und der Benutzer kann somit neue Steuerungsprogramme "
+"für die Adressen festlegen. Dies wird in den &systemsettings; unter "
+"<menuchoice><guimenu>Erweitert</guimenu><guisubmenu>Dateizuordnungen</"
+"guisubmenu><guimenuitem>inode</guimenuitem></menuchoice> vorgenommen. Die "
+"MIME-Typen der Dienste werden derzeit alle mit <userinput>vnd.kde.service.*</"
+"userinput> bezeichnet."
+
+#. Tag: para
+#: index.docbook:53
+#, no-c-format
+msgid ""
+"The network kioslave currently only finds and displays devices and services "
+"which are actively advertising themselves using the service discovery "
+"framework <ulink url=\"http://www.dns-sd.org/\">DNS-SD</ulink>."
+msgstr ""
+"Das Ein-/Ausgabemodule „Netzwerk“ findet derzeit nur Geräte und Dienste, die "
+"sich selbst mittels dem <ulink url=\"http://www.dns-sd.org/\">DNS Service "
+"Discovery</ulink>-Grundgerüst <emphasis>veröffentlichen</emphasis> (und "
+"zeigen auch nur diese an)."

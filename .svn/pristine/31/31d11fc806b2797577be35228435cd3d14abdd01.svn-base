@@ -1,0 +1,219 @@
+# Marco Wegner <mail@marcowegner.de>, 2002.
+# Stephan Johach <hunsum@gmx.de>, 2004.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005.
+# Burkhard Lück <lueck@hube-lueck.de>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kioslave_mailto\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:13+0000\n"
+"PO-Revision-Date: 2012-02-08 12:13+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:9
+#, no-c-format
+msgid "mailto"
+msgstr "mailto"
+
+#. Tag: author
+#: index.docbook:12
+#, no-c-format
+msgid ""
+"<firstname>Christopher</firstname> <surname>Yeleighton</surname> "
+"<email>giecrilj@stegny.2a.pl</email>"
+msgstr ""
+"<firstname>Christopher</firstname> <surname>Yeleighton</surname> "
+"<email>giecrilj@stegny.2a.pl</email>"
+
+#. Tag: trans_comment
+#: index.docbook:17
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Marco</"
+"firstname><surname>Wegner</"
+"surname><affiliation><address><email>mail@marcowegner.de</email></address></"
+"affiliation><contrib>Übersetzer</contrib></othercredit>"
+
+#. Tag: date
+#: index.docbook:20
+#, no-c-format
+msgid "2012-01-28"
+msgstr "2012-01-28"
+
+#. Tag: releaseinfo
+#: index.docbook:21
+#, no-c-format
+msgid "&kde; 4.8"
+msgstr "&kde; 4.8"
+
+#. Tag: para
+#: index.docbook:23
+#, no-c-format
+msgid ""
+"The kioslave mailto is responsible for launching the mail composer of your "
+"choice when you open a &URL; in the mailto scheme (<ulink url=\"http://tools."
+"ietf.org/html/rfc6068\">RFC6068</ulink>)."
+msgstr ""
+"Das Ein-/Ausgabemodul „mailto“ startet das von Ihnen eingestellte E-Mail-"
+"Editor, wenn Sie eine &URL; mit dem „mailto“-Schema (<ulink url=\"http://"
+"tools.ietf.org/html/rfc6068\">RFC6068</ulink>) öffnen."
+
+#. Tag: term
+#: index.docbook:30
+#, no-c-format
+msgid "Syntax"
+msgstr "Syntax"
+
+#. Tag: para
+#: index.docbook:31
+#, no-c-format
+msgid "The syntax of a mailto &URL; follows the following pattern:"
+msgstr "Die Syntax einer „mailto“-&URL; hat folgendes Schema:"
+
+#. Tag: para
+#: index.docbook:33
+#, no-c-format
+msgid "mailto:recipients?query"
+msgstr "mailto:recipients?query"
+
+#. Tag: para
+#: index.docbook:35
+#, no-c-format
+msgid ""
+"where recipients form a list of restricted &SMTP; address specifications, "
+"and the query part may contain one or more of the following parameters:"
+msgstr ""
+"dabei besteht „recipients“ (Empfänger) aus einer Liste von &SMTP;-Adressen "
+"und der „query“-Teil aus einem oder mehreren der folgenden Parameter:"
+
+#. Tag: term
+#: index.docbook:40
+#, no-c-format
+msgid "&amp;to=recipients"
+msgstr "&amp;to=Empfänger"
+
+#. Tag: para
+#: index.docbook:41
+#, no-c-format
+msgid "Specifies additional recipients."
+msgstr "Gibt zusätzliche Empfänger an."
+
+#. Tag: term
+#: index.docbook:45
+#, no-c-format
+msgid "&amp;cc=recipients"
+msgstr "&amp;cc=Empfänger"
+
+#. Tag: para
+#: index.docbook:46
+#, no-c-format
+msgid "Specifies additional recipients of carbon copies."
+msgstr "Weitere Empfänger, die eine Kopie der E-Mail erhalten."
+
+#. Tag: term
+#: index.docbook:50
+#, no-c-format
+msgid "&amp;bcc=recipients"
+msgstr "&amp;bcc=Empfänger"
+
+#. Tag: para
+#: index.docbook:51
+#, no-c-format
+msgid ""
+"Specifies additional recipients of blind carbon copies. These recipients "
+"will receive the message, but all other recipients will not know about that."
+msgstr ""
+"Weitere Empfänger, die eine Blindkopie der E-Mail erhalten. Diese Empfänger "
+"erhalten ebenfalls die E-Mail, das ist für die anderen Empfänger aber nicht "
+"erkennbar."
+
+#. Tag: term
+#: index.docbook:56
+#, no-c-format
+msgid "&amp;body=text"
+msgstr "&amp;body=Text"
+
+#. Tag: para
+#: index.docbook:57
+#, no-c-format
+msgid ""
+"Specifies the text of the message. This text should not be long, as there "
+"may be hard limits on how long an &URL; may be."
+msgstr ""
+"Der Text der E-Mail. Dieser Text sollte nicht zu lang sein, da es "
+"Begrenzungen für die Länge der &URL; geben kann."
+
+#. Tag: term
+#: index.docbook:62
+#, no-c-format
+msgid "&amp;subject=text"
+msgstr "&amp;subject=Text"
+
+#. Tag: para
+#: index.docbook:63
+#, no-c-format
+msgid "Specifies the subject of the message."
+msgstr "Gibt den Betreff der E-Mail an."
+
+#. Tag: term
+#: index.docbook:72
+#, no-c-format
+msgid "Example"
+msgstr "Beispiel"
+
+#. Tag: literal
+#: index.docbook:74
+#, no-c-format
+msgid ""
+"mailto:info@kde.org?cc=kde@kde.org&amp;subject=Thank%20you!&amp;body=KDE"
+"%20rocks!%20How%20can%20I%20help%3F"
+msgstr ""
+"mailto:info@kde.org?cc=kde@kde.org&amp;subject=Vielen%20Dank!&amp;body=KDE"
+"%20ist%20klasse!%20Wie%20kann%20ich%20mitmachen%3F"
+
+#. Tag: term
+#: index.docbook:79
+#, no-c-format
+msgid "Configuration"
+msgstr "Einrichtung"
+
+#. Tag: para
+#: index.docbook:80
+#, no-c-format
+msgid ""
+"Choose the application to handle mailto locators in &systemsettings; "
+"<menuchoice><guimenu>Workspace Appearance and Behaviour</"
+"guimenu><guimenuitem>Default Applications</guimenuitem></menuchoice>."
+msgstr ""
+"Wählen Sie das Programm zur Verarbeitung von „mailto“-&URL;s in den "
+"&systemsettings; auf der Seite <menuchoice><guimenu>Erscheinungsbild und "
+"Verhalten der Arbeitsfläche</guimenu><guimenuitem>Standard-Komponenten</"
+"guimenuitem></menuchoice>."
+
+#~ msgid "&Ferdinand.Gassauer; &Ferdinand.Gassauer.mail;"
+#~ msgstr "&Ferdinand.Gassauer; &Ferdinand.Gassauer.mail;"
+
+#~ msgid ""
+#~ "The mailto kioslave is used when you click on a mailto link in an "
+#~ "<acronym>HTML</acronym> page. &konqueror; will open the preferred mail "
+#~ "client you have configured, with a composer window. Any information "
+#~ "supplied in the <acronym>URL</acronym> will be filled in for you."
+#~ msgstr ""
+#~ "Das mailto-Modul wird verwendet, wenn Sie auf einer <acronym>HTML</"
+#~ "acronym>-Seite einen mailto-Verweis anklicken. &konqueror; öffnet das "
+#~ "bevorzugte E-Mail-Programm. Die im <acronym>URL</acronym> enthaltenen "
+#~ "Informationen werden dabei übernommen."
+
+#~ msgid "See the manual: <ulink url=\"man:/mailto\">mailto</ulink>."
+#~ msgstr ""
+#~ "Schauen Sie auch in das Handbuch: <ulink url=\"man:/mailto\">mailto</"
+#~ "ulink>."

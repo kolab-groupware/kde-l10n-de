@@ -1,0 +1,357 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: dcop.docbook:5 dcop.docbook:20
+#, no-c-format
+msgid "&DCOP; Functions"
+msgstr ""
+
+#. Tag: author
+#: dcop.docbook:7
+#, no-c-format
+msgid "<firstname></firstname> <surname></surname>"
+msgstr ""
+
+#. Tag: trans_comment
+#: dcop.docbook:15
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:22
+#, no-c-format
+msgid ""
+"&DCOP; can be called in several ways in &kommander;. First is the console "
+"method"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:25
+#, no-c-format
+msgid ""
+"dcop kmdr-executor-@pid KommanderIf changeWidgetText myWidget <quote>"
+"new text</quote>"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:28
+#, no-c-format
+msgid ""
+"This assumes you are inside a &kommander; file and have access to the special "
+"@pid which contains the process ID. In fact it is simpler to replace <quote>"
+"kmdr-executor-@pid</quote> with @dcopid. However, you can use this syntax "
+"(obviously without the specials) from the command line or any external script "
+"to alter the &kommander; window."
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:31
+#, no-c-format
+msgid ""
+"Because &kommander; does not have a full parser in it's Alpha stage, if you "
+"want to use the much faster internal &DCOP; from another application window "
+"(console &DCOP; is very slow) it is more complicated because you must give lots "
+"of information, including a prototype of the call. The above call would become:"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:34
+#, no-c-format
+msgid ""
+"@dcop(@dcopid, KommanderIf, <quote>enableWidget(QString, bool)</quote>"
+", Widget, true)"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:37
+#, no-c-format
+msgid ""
+"At the time of this writing you should be aware that nesting &DCOP; calls "
+"inside script language structures (like <application>bash</application>"
+") means that you must use console method calls. <emphasis>"
+"If you use internal &DCOP; all &kommander; specials will be executed first and "
+"then the script will be executed.</emphasis>"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:40
+#, no-c-format
+msgid ""
+"There is a new simplified way to use &DCOP; inside &kommander; using an object "
+"syntax. Let's say you want to change the text in a widget name @LineEdit1. It "
+"would look like this."
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:43
+#, no-c-format
+msgid "@LineEdit1.changeWidgetText(New text)"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:46
+#, no-c-format
+msgid ""
+"As you can see the new syntax is very easy, as well as consistent visually with "
+"function groups. All the &DCOP; reference here will use the new object syntax "
+"listed above. <emphasis>Please note that if you are referencing a widget using "
+"&DCOP; from another window or another application the first parameter will "
+"always be the widget name. All functions are listed here starting with the "
+"second parameter.</emphasis>"
+msgstr ""
+
+#. Tag: title
+#: dcop.docbook:51
+#, no-c-format
+msgid "&DCOP; for Global Variables"
+msgstr ""
+
+#. Tag: term
+#: dcop.docbook:54
+#, no-c-format
+msgid "global(QString variableName)"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:56
+#, no-c-format
+msgid ""
+"Returns the value of the specified global variable. When a script is run from "
+"within a &kommander; window any (non-global) variables set in that script will "
+"cease to exist after the script completes and therfore will not be available to "
+"other script processes or in a new instance of the calling process. The global "
+"<quote>scope</quote> means the variable will exist for any process of the "
+"window until that window is closed. You may change these variables at any time "
+"with a new call to <function>@setGlobal</function>."
+msgstr ""
+
+#. Tag: term
+#: dcop.docbook:62
+#, no-c-format
+msgid "setGlobal(QString variableName, QString value)"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:64
+#, no-c-format
+msgid ""
+"Creates a variable that is global to the window process and assigns the value "
+"to it. This value can be retrieved with global(QString variableName) or set "
+"again."
+msgstr ""
+
+#. Tag: title
+#: dcop.docbook:73
+#, no-c-format
+msgid "&DCOP; for all Widgets"
+msgstr ""
+
+#. Tag: term
+#: dcop.docbook:77
+#, no-c-format
+msgid "changeWidgetText(QString text)"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:79
+#, no-c-format
+msgid ""
+"This should be renamed setWidgetText and this name will probably be deprecated. "
+"This removes the text displayed in the widget and replaces it with the text "
+"supplied."
+msgstr ""
+
+#. Tag: term
+#: dcop.docbook:85
+#, no-c-format
+msgid "enableWidget(bool enable)"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:87
+#, no-c-format
+msgid "Enables or disables a widget."
+msgstr ""
+
+#. Tag: term
+#: dcop.docbook:93
+#, no-c-format
+msgid "associatedText"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:95
+#, no-c-format
+msgid ""
+"Returns the text associated with the specified widget. This is not the same as "
+"the displayed text. It would be <quote>@widgetText</quote> "
+"or the text and/or scripting used to arrive at the displayed value."
+msgstr ""
+
+#. Tag: term
+#: dcop.docbook:101
+#, no-c-format
+msgid "setAssociatedText(QString text)"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:103
+#, no-c-format
+msgid ""
+"This sets the &kommander; Text default string. This is typically set to <quote>"
+"@widgetText</quote> to display what is entered into the widget. It is unlikely "
+"you will have much need for this, but if you do it is there. Applies to all "
+"widgets that can contain data."
+msgstr ""
+
+#. Tag: title
+#: dcop.docbook:112
+#, no-c-format
+msgid "&DCOP; for ListBox and ComboBox Widgets"
+msgstr ""
+
+#. Tag: term
+#: dcop.docbook:115
+#, no-c-format
+msgid "addListItem(QString item, int index)"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:117
+#, no-c-format
+msgid ""
+"Adds an item to a ListBox widget at the specified index. List index starts at "
+"zero. To add to the end of the list use -1."
+msgstr ""
+
+#. Tag: term
+#: dcop.docbook:123
+#, no-c-format
+msgid "addListItems(QStringList items, int index)"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:125
+#, no-c-format
+msgid ""
+"This adds a list of strings all at once. The list should be delimited by "
+"<acronym>EOL</acronym> (\\n - newlines). This is handy as you can use bash to "
+"derive the list rather easily. For instance, using @exec(ls -l ~/projects | "
+"grep kmdr) for items will give you a directory listing of &kommander; files in "
+"your projects folder. List index starts at zero. Use -1 to add to the end of "
+"the list."
+msgstr ""
+
+#. Tag: term
+#: dcop.docbook:131
+#, no-c-format
+msgid "addUniqueItem(QString item)"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:133
+#, no-c-format
+msgid ""
+"addUniqueItem will add an item to the end of the list only if it is unique."
+msgstr ""
+
+#. Tag: term
+#: dcop.docbook:139
+#, no-c-format
+msgid "clearList"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:141
+#, no-c-format
+msgid "Removes all items."
+msgstr ""
+
+#. Tag: term
+#: dcop.docbook:147
+#, no-c-format
+msgid "removeListItem(int index)"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:149
+#, no-c-format
+msgid "Removes the item at the specified index."
+msgstr ""
+
+#. Tag: term
+#: dcop.docbook:155
+#, no-c-format
+msgid "item(int index)"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:157
+#, no-c-format
+msgid "Returns the text of the item at the specified index."
+msgstr ""
+
+#. Tag: term
+#: dcop.docbook:163
+#, no-c-format
+msgid "setCurrentListItem(int index)"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:165
+#, no-c-format
+msgid ""
+"Set the current (or selected) item to the index specified. Applies to ListBox "
+"and ComboBox widgets."
+msgstr ""
+
+#. Tag: title
+#: dcop.docbook:174
+#, no-c-format
+msgid "&DCOP; for CheckBox and RadioButton Widgets"
+msgstr ""
+
+#. Tag: term
+#: dcop.docbook:177
+#, no-c-format
+msgid "setChecked(QString widgetName, bool checked)"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:179
+#, no-c-format
+msgid "Checks/unchecks CheckBox or RadioButton widgets."
+msgstr ""
+
+#. Tag: title
+#: dcop.docbook:188
+#, no-c-format
+msgid "&DCOP; for TabWidget Widgets"
+msgstr ""
+
+#. Tag: term
+#: dcop.docbook:191
+#, no-c-format
+msgid "setCurrentTab(QString widgetName, int index)"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:193
+#, no-c-format
+msgid "Selected the tab by index for TabWidgets. Index starts at 0."
+msgstr ""

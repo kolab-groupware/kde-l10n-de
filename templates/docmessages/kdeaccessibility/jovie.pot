@@ -1,0 +1,1907 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: index.docbook:18
+#, no-c-format
+msgid "The &jovie; Handbook"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:21
+#, no-c-format
+msgid ""
+"<personname> <firstname>Jeremy</firstname> <surname>Whiting</surname> "
+"</personname> <email>jpwhiting@kde.org</email>"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:28
+#, no-c-format
+msgid ""
+"<personname> <firstname>Gary</firstname> <othername>R.</othername> <surname>"
+"Cramblitt</surname> </personname> <email>garycramblitt@comcast.net</email>"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:37
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+
+#. Tag: holder
+#: index.docbook:43
+#, no-c-format
+msgid "Jeremy Whiting"
+msgstr ""
+
+#. Tag: holder
+#: index.docbook:47
+#, no-c-format
+msgid "Gary R. Cramblitt"
+msgstr ""
+
+#. Tag: date
+#: index.docbook:53
+#, no-c-format
+msgid "2013-06-23"
+msgstr ""
+
+#. Tag: releaseinfo
+#: index.docbook:54
+#, no-c-format
+msgid "0.6 (&kde; 4.11)"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:59
+#, no-c-format
+msgid ""
+"&jovie; - the &kde; Text-to-Speech system - is a plugin based service that "
+"allows any &kde; (or non-&kde;) application to speak using the &DBus; "
+"interface."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:65
+#, no-c-format
+msgid ""
+"&jovie; intends to be the implementation for the &kde; Text-to-Speech API."
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:74
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:75
+#, no-c-format
+msgid "accessibility"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:76
+#, no-c-format
+msgid "kdeaccessibility"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:77
+#, no-c-format
+msgid "<keyword>TTS</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:78
+#, no-c-format
+msgid "Text-to-Speech"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:79
+#, no-c-format
+msgid "Jovie"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:80
+#, no-c-format
+msgid "speech-dispatcher"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:81
+#, no-c-format
+msgid "espeak"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:82
+#, no-c-format
+msgid "festival"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:83
+#, no-c-format
+msgid "flite"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:84
+#, no-c-format
+msgid "hadifix"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:85
+#, no-c-format
+msgid "MBROLA"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:86
+#, no-c-format
+msgid "freetts"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:87
+#, no-c-format
+msgid "epos"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:88
+#, no-c-format
+msgid "SSML"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:94
+#, no-c-format
+msgid "Introduction"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:96
+#, no-c-format
+msgid ""
+"&jovie; is a subsystem within &kde; for producing Text-to-Speech (TTS). It "
+"provides a common API for &kde; programmers to give TTS capabilities to their "
+"applications. It provides some nice capabilities for end users as well."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:101
+#, no-c-format
+msgid "User features:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:104
+#, no-c-format
+msgid "Speak contents of a text file."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:105
+#, no-c-format
+msgid "Speak &kde; notification events (KNotify)."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:106
+#, no-c-format
+msgid "Speak all or part of the text of a web page in &konqueror;."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:107
+#, no-c-format
+msgid ""
+"Speak all or part of the text in &kate; text editor, including instances where "
+"&kate; is embedded in another &kde; application."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:109
+#, no-c-format
+msgid ""
+"Speech is spoken via speech-dispatcher, so any speech-dispatcher backend can be "
+"used (espeak, festival, &etc;)"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:110
+#, no-c-format
+msgid ""
+"User-configurable filters for substituting misspoken words, choosing speech "
+"synthesizers, and transforming XHMTL/&XML; documents."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:114
+#, no-c-format
+msgid "Programmer features:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:117
+#, no-c-format
+msgid ""
+"Priority system for screen reader outputs, warnings and messages, while still "
+"playing regular texts."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:118
+#, no-c-format
+msgid ""
+"Permit generation of speech from the command line (or via shell scripts) using "
+"the &qdbus; utility."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:119
+#, no-c-format
+msgid ""
+"Provide a lightweight and easily usable interface for applications to generate "
+"speech output."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:120
+#, no-c-format
+msgid ""
+"Applications need not be concerned about contention over the speech device."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:121
+#, no-c-format
+msgid ""
+"FUTURE: Provide support for speech markup languages, such as VoiceXML, Sable, "
+"&Java; Speech Markup Language (JSML), and Speech Markup Meta-language (SMML)."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:122
+#, no-c-format
+msgid "FUTURE: Provide limited support for embedded speech markers."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:123
+#, no-c-format
+msgid "Asynchronous to prevent system blocking."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:126
+#, no-c-format
+msgid "&jovie; actually consists of several programs:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:131
+#, no-c-format
+msgid ""
+"the &kde; Text-to-Speech Daemon, which is an application that provides TTS "
+"services to applications via &DBus;. It also sits in the system tray."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:138
+#, no-c-format
+msgid ""
+"A plugin for the &konqueror; web browser that permits you to speak all or a "
+"portion of the text on a web page."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:144
+#, no-c-format
+msgid ""
+"A plugin for the &kate; text editor that permits you to speak all or a portion "
+"of a text file."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:154
+#, no-c-format
+msgid "Support"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:155
+#, no-c-format
+msgid ""
+"In addition to the &kde; Bugzilla database ( <ulink "
+"url=\"http://bugs.kde.org/\">http://bugs.kde.org/</ulink> "
+"), discussions for &jovie; currently take place in the kde-accessibility "
+"mailing list. Subscribe at <ulink "
+"url=\"https://mail.kde.org/mailman/listinfo/kde-accessibility\"> "
+"https://mail.kde.org/mailman/listinfo/kde-accessibility</ulink>"
+". Developers also hang out in IRC (irc.kde.org, channel #kde-accessibility)."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:171
+#, no-c-format
+msgid "Using &jovie;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:174
+#, no-c-format
+msgid ""
+"Before you can use &jovie;, you must install speech-dispatcher and make sure it "
+"is working. See <xref linkend=\"installation\"/>."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:182
+#, no-c-format
+msgid "Starting <command>jovie</command>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:184
+#, no-c-format
+msgid "To start the &jovie; system, type the following command in a &konsole;"
+msgstr ""
+
+#. Tag: userinput
+#: index.docbook:188 index.docbook:1139
+#, no-c-format
+msgid "<userinput>jovie</userinput>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:190
+#, no-c-format
+msgid "or click on &jovie; in the &kde; Menu."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:192
+#, no-c-format
+msgid ""
+"If this is the first time running <command>jovie</command>"
+", or if you have not yet configured any talkers, the <guilabel>"
+"Talkers</guilabel> screen appears. See <xref linkend=\"configure-talkers\"/>"
+". If you have already configured at least one talker, the <guilabel>"
+"General</guilabel> screen appears. See <xref linkend=\"general\"/>."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:204
+#, no-c-format
+msgid "Configuring Talkers"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:206
+#, no-c-format
+msgid ""
+"Most text-to-speech (TTS) synthesizers offer multiple languages and voices and "
+"may offer multiple speaking genders, volumes, and rates. You may configure more "
+"than one instance of a synthesizer. Each combination of language, synthesizer, "
+"voice, gender, volume, and rate is called a talker. You should configure at "
+"least one talker before you use &jovie; otherwise speech-dispatcher will use a "
+"default voice."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:212
+#, no-c-format
+msgid ""
+"Multiple talkers for the same synthesizer is similar to multiple print queues "
+"for a single physical printer."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:215
+#, no-c-format
+msgid ""
+"When you click the <guilabel>Talkers</guilabel> tab in <command>jovie</command>"
+", the <guilabel>Talkers</guilabel> screen appears. This screen also "
+"automatically appears if you start <command>jovie</command> "
+"and you have not yet configured any talkers."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:222
+#, no-c-format
+msgid "The &kde; Text-to-Speech Manager (Talkers tab)."
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:238
+#, no-c-format
+msgid "The &kde; Text-to-Speech Manager (Talkers tab)"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:246
+#, no-c-format
+msgid "Click to add a new talker."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:247
+#, no-c-format
+msgid ""
+"All the configured <guilabel>Talkers</guilabel> are listed here. Highest "
+"priority <guilabel>Talkers</guilabel> are listed at the top. The top-most "
+"talker will be used to do the speaking when an application does not specify a "
+"talker."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:248
+#, no-c-format
+msgid ""
+"Click on a talker in the list to highlight it and click this button to remove "
+"it."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:249
+#, no-c-format
+msgid ""
+"Click on a talker in the list to highlight it and click this button to change "
+"its configuration. See below."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:250
+#, no-c-format
+msgid ""
+"Click on a talker in the list to highlight it and click this button to move it "
+"down one row in the list. The lower a talker appears in the list, the lower its "
+"priority."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:251
+#, no-c-format
+msgid ""
+"Click one of these buttons to apply the changes you have made to the running "
+"&jovie; system."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:255
+#, no-c-format
+msgid ""
+"When you click the <guibutton>Add</guibutton> button, the <guilabel>"
+"Add Talker</guilabel> screen appears."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:259
+#, no-c-format
+msgid "Add Talker screen."
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:274
+#, no-c-format
+msgid "Add Talker screen"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:283
+#, no-c-format
+msgid "You should give your new talker a name, this can be anything."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:287
+#, no-c-format
+msgid "Choose the language and synthesizer here."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:289
+#, no-c-format
+msgid ""
+"Choose the voice type here, there are three Male, three Female, one Male Child "
+"and one Female Child voices to choose from."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:294
+#, no-c-format
+msgid "Set any custom voice parameters here."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:296
+#, no-c-format
+msgid ""
+"When you click here your new talker will appear in the list in the <guilabel>"
+"Talkers</guilabel> screen. Click the <guibutton>Edit</guibutton> "
+"button to edit the talker's configuration."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:303
+#, no-c-format
+msgid ""
+"You are almost ready to begin using &jovie;. Now go back to the <guilabel>"
+"General</guilabel> tab and check the <guilabel>Enable Text-to-Speech System "
+"(Jovie)</guilabel> box. This will start the &kde; TTS Daemon. See <xref "
+"linkend=\"general\"/>. You may now begin using &jovie; to speak text. Click the "
+"<guilabel>Jobs</guilabel> tab to create and manage text jobs. See <xref "
+"linkend=\"jobmgr\"/>."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:318
+#, no-c-format
+msgid "Starting &jovie; and Setting General Options"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:320
+#, no-c-format
+msgid ""
+"Once you have configured at least one talker, you can start the &kde; "
+"Text-to-Speech System. Click on the <guilabel>General</guilabel> "
+"tab. The <guilabel>General</guilabel> screen appears. You can also set some "
+"general options on this screen."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:328
+#, no-c-format
+msgid "The &kde; Text-to-Speech Manager (General tab)."
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:340
+#, no-c-format
+msgid "The &kde; Text-to-Speech Manager (General tab)"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:348
+#, no-c-format
+msgid ""
+"Check this box to activate the &jovie; system. This starts the &kde; TTS Daemon "
+"(&jovie;). If Jovie starts successfully, the <guilabel>Jobs</guilabel> "
+"tab will appear. Once &jovie; has been started, you can begin creating and "
+"speaking text jobs. See <xref linkend=\"jobmgr\"/>. Unchecking will stop Jovie "
+"and deactivate the &kde; TTS system."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:354
+#, no-c-format
+msgid "Be sure to click here to save your settings."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:364
+#, no-c-format
+msgid "Managing Text Jobs"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:366
+#, no-c-format
+msgid ""
+"When you click the <guilabel>Jobs</guilabel> tab in <command>jovie</command>"
+", the <guilabel>Jobs</guilabel> screen appears."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:370
+#, no-c-format
+msgid "The &kde; Text-to-Speech Manager (Jobs tab)."
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:384
+#, no-c-format
+msgid "The &kde; Text-to-Speech Manager (Jobs tab)"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:390
+#, no-c-format
+msgid ""
+"The controls here allow you to change attributes of the currently speaking "
+"voice. Note this only works if you have no voices configured in the Talkers "
+"tab."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:392
+#, no-c-format
+msgid ""
+"The buttons in this row permit you to stop, cancel, pause and resume the "
+"current text job."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:394
+#, no-c-format
+msgid ""
+"The buttons in this row permit you to speak the text currently in the &kde; "
+"clipboard, or open a text file for speaking. You can also change the talker for "
+"a job."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:397
+#, no-c-format
+msgid ""
+"When you click <guibutton>OK</guibutton> or <guibutton>Apply</guibutton>"
+", all changes to settings on other screens are applied (if any)."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:403
+#, no-c-format
+msgid ""
+"The <guilabel>Jobs</guilabel> tab only appears when &jovie; is running. If you "
+"do not see the <guilabel>Jobs</guilabel> tab, click on the <guilabel>"
+"General</guilabel> tab and check the <guilabel>Enable Text-to-Speech "
+"(Jovie)</guilabel> box."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:414
+#, no-c-format
+msgid "Speaking Text from Web Pages"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:416
+#, no-c-format
+msgid ""
+"While running the &kde; &konqueror; web browser, you can speak the text of the "
+"web page displayed. First ensure that &jovie; is running. Highlight the text "
+"you want spoken and choose <menuchoice> <guisubmenu>Tools</guisubmenu> "
+"<guisubmenu>Speak Text</guisubmenu> </menuchoice> on the main menu. <action>"
+"After a moment, the highlighted text should begin speaking.</action>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:426
+#, no-c-format
+msgid ""
+"It is almost always a good idea to highlight the text on the web page you want "
+"spoken. You can skip this step, but you will hear a lot of &HTML; headers and "
+"other invisible tags spoken."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:436
+#, no-c-format
+msgid "Speaking Text from &kate; Text Editor"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:438
+#, no-c-format
+msgid ""
+"While running the &kde; Advanced Text Editor (&kate;), you can speak the text "
+"displayed. First ensure that &jovie; is running and enable the <guilabel>"
+"KTextEditor Jovie Text-to-Speech Plugin</guilabel> in &kate;'s settings dialog. "
+"Highlight the text you want spoken and choose <menuchoice> <guisubmenu>"
+"Tools</guisubmenu> <guisubmenu>Speak Text</guisubmenu> </menuchoice> "
+"on the main menu. <action>After a moment, the highlighted text should begin "
+"speaking.</action>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:449
+#, no-c-format
+msgid ""
+"You do not have to first highlight text. In this case, the entire file will be "
+"spoken."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:452
+#, no-c-format
+msgid ""
+"This also works when &kate; is running embedded in another application, such as "
+"&konqueror; or &quanta;."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:460
+#, no-c-format
+msgid "Speaking Notifications (KNotify)"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:462
+#, no-c-format
+msgid ""
+"KNotify is the notification subsystem within &kde;, which alerts you to events "
+"you configure within the &kde; system. You can configure &jovie; to speak text "
+"notifications."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:466
+#, no-c-format
+msgid ""
+"For example, &konversation;, a &kde; IRC application, permits you to configure "
+"a wide variety of notifications. For instance, you can tell &konversation; to "
+"notify you whenever a message appears in an IRC channel with your nickname in "
+"it. Together with &jovie; you can have &kde; speak the text of the IRC message "
+"to you."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:472
+#, no-c-format
+msgid ""
+"In general, if a &kde; application supports KNotify, a <guilabel>"
+"Notifications</guilabel> menu item will appear under the application's "
+"<guilabel>Settings</guilabel> menu. The specifics for configuring each "
+"application with KNotify vary from application to application."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:477
+#, no-c-format
+msgid ""
+"String Replacer filters are a good way to clean up messages sent from "
+"applications if they are mispronounced or misspoken in &jovie;. The <filename>"
+"kmail.xml</filename> file, which comes with &jovie;, is a good example. It "
+"removes <command>br</command>, and <command>b</command> "
+"tags from the &kmail; notification messages and also removes the phrase "
+"<command>/local/inbox/</command>, since this may be safely assumed in most "
+"cases. See <xref linkend=\"stringreplacer\"/>."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:528
+#, no-c-format
+msgid "Filters (Advanced)"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:530
+#, no-c-format
+msgid ""
+"Filters are an advanced feature of &jovie;. For the basic operation of &jovie;, "
+"they are not needed."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:533
+#, no-c-format
+msgid ""
+"Filters are used to pre-process text before it is sent to speech-dispatcher. "
+"They are useful for enhancing speech, substituting for misspoken words or "
+"abbreviations, choosing the appropriate language and talker to do the speaking, "
+"or working around certain limitations of speech synthesizers and their voices."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:542
+#, no-c-format
+msgid "Types of &jovie; Messages"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:544
+#, no-c-format
+msgid ""
+"To understand how to use filters, it is helpful to first understand how text is "
+"processed by speech-dispatcher. Text spoken by &jovie; is of four possible "
+"types."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:550
+#, no-c-format
+msgid "Screen Reader Output."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:551
+#, no-c-format
+msgid "Warnings."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:552
+#, no-c-format
+msgid "Messages"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:553
+#, no-c-format
+msgid "Text Jobs"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:557
+#, no-c-format
+msgid ""
+"The type is determined by the application that sends the text to &jovie;."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:560
+#, no-c-format
+msgid ""
+"Screen Reader Output has the highest priority. It is reserved for use by Screen "
+"Reader applications. Screen Reader Output preempts all other messages, causing "
+"those jobs to pause. Once the Screen Reader Output has been spoken, the "
+"preempted messages will automatically resume."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:566
+#, no-c-format
+msgid ""
+"Warnings are the next highest priority. It is reserved for high-priority "
+"messages, such as \"CPU is over-heating.\" A Warning will preempt Messages and "
+"regular text, causing those jobs to pause. Once the Warning has been spoken, "
+"the preempted messages will automatically resume."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:571
+#, no-c-format
+msgid ""
+"Messages are the next highest priority. A Message will preempt regular text "
+"jobs. &kmouth; is an example of an application that uses Messages. For example, "
+"while reading out long text from a web page, &kmouth; can be used to greet "
+"someone who walks into the room. &kde; Notifications are also Messages (see "
+"<xref linkend=\"knotify\"/>)."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:577
+#, no-c-format
+msgid ""
+"The rest are ordinary Text Jobs. Any job you initiate from the <guilabel>"
+"Jobs</guilabel> tab is a Text Job. KSayit is an example of an application that "
+"uses Text Jobs. Text Jobs are intended for longer speech output that is not "
+"urgent."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:582
+#, no-c-format
+msgid ""
+"All four kinds of jobs are queues, except for Screen Reader Output. If a Screen "
+"Reader Output is sent from an application while &jovie; is speaking another "
+"Screen Reader Output, the speaking message is stopped and discarded."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:592
+#, no-c-format
+msgid "Types of Filters"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:594
+#, no-c-format
+msgid ""
+"The first thing you must know about filters is that they are never applied to "
+"Screen Reader Output. They are applied to Warnings, Messages, and Text jobs, "
+"and also &kde; notifications (KNotify)."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:598
+#, no-c-format
+msgid ""
+"Filters process the text and pass it on to the next filter. There are currently "
+"three kinds of filters."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:604
+#, no-c-format
+msgid "String Replacers."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:605
+#, no-c-format
+msgid "&XML; Transformers"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:606
+#, no-c-format
+msgid "Talker Choosers."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:610
+#, no-c-format
+msgid ""
+"Filters are implemented using a plugin architecture. In the future, there may "
+"be additional kinds of filters."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:613
+#, no-c-format
+msgid ""
+"String Replacer filters substitute pieces of text with other text. The replaced "
+"pieces are matched either as words or as regular expressions. &jovie; comes "
+"with pre-defined String Replacer filters for speaking abbreviations, speaking "
+"chat emoticons, such as \":-)\", or reformatting notification messages from "
+"&konversation; or &kmail; into a more understandable form."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:622
+#, no-c-format
+msgid ""
+"&XML; Transformers use an &XML; Style Language - Transforms (XSLT) file to "
+"convert &XML; of one format to another format. &jovie; comes with a couple of "
+"XSLT files for converting &XHTML; into SSML."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:628
+#, no-c-format
+msgid ""
+"Talker Choosers permit you redirect jobs to a talker based on the contents of "
+"the text, or upon the application that sent it to &jovie;. For example, if you "
+"have configured a female talker in the <guilabel>Talkers</guilabel> "
+"tab, you can direct text coming from KSayIt to that talker. See <xref "
+"linkend=\"configure-talkers\"/>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:635
+#, no-c-format
+msgid ""
+"Each of these kinds of filters has configurable rules for when the filter "
+"should apply itself to the text to be spoken. If the filter determines that it "
+"should not apply itself, the text is passed on to the next filter unaltered."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:640
+#, no-c-format
+msgid ""
+"When a Text Job, Message, Warning, or &kde; Notification message is sent to "
+"&jovie;, it passes through each of the enabled filters you have configured in "
+"the screen below. The order is from top to bottom."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:650
+#, no-c-format
+msgid "Configuring Filters"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:652
+#, no-c-format
+msgid ""
+"To use filters, click the <guilabel>Filters</guilabel> tab in <command>"
+"jovie</command>."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:656
+#, no-c-format
+msgid "The &kde; Text-to-Speech Manager (Filters tab)."
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:672
+#, no-c-format
+msgid "The &kde; Text-to-Speech Manager (Filters tab)"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:680
+#, no-c-format
+msgid ""
+"This is the list of configured ordinary filters. If unchecked, the filter is "
+"inactive and will be bypassed. Filters are applied in the order specified here, "
+"top to bottom."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:683
+#, no-c-format
+msgid ""
+"Click here to add a new filter. You will be prompted for the kind of filter to "
+"add. After choosing the kind, see the configuration dialogs below."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:686
+#, no-c-format
+msgid "Click here to remove a filter."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:687
+#, no-c-format
+msgid ""
+"Click here to change the configuration of a filter. See the configuration "
+"dialogs below."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:689
+#, no-c-format
+msgid "Click these buttons to move a filter up or down in the list."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:691
+#, no-c-format
+msgid "Be sure to click here, otherwise your settings will not take effect."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:701
+#, no-c-format
+msgid "Configuring String Replacer Filters"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:703
+#, no-c-format
+msgid ""
+"You configure String Replacer filters by supplying a list of words or regular "
+"expressions to be matched. When the matched words or regular expressions are "
+"found in the text, each is replaced by a substitute string you supply."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:710
+#, no-c-format
+msgid "<screeninfo>String Replacer</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:729
+#, no-c-format
+msgid "<phrase>String Replacer</phrase>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:737 index.docbook:836 index.docbook:921
+#, no-c-format
+msgid ""
+"Enter a name for your filter. Use any name you like that distinguishes it from "
+"all other filters."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:739
+#, no-c-format
+msgid ""
+"This is the list of words and regular expressions. The filter searches for "
+"matches on each string in the <guilabel>Match</guilabel> "
+"column, replacing the matched string with the string in the <guilabel>"
+"Replace With</guilabel> column. The list is processed in the order displayed, "
+"top to bottom."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:744
+#, no-c-format
+msgid "Click here to add another word or regular expression to the list."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:746
+#, no-c-format
+msgid ""
+"Click here to move the currently highlighted word or regular expression up or "
+"down in the list."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:748
+#, no-c-format
+msgid "Click to change an existing word or regular expression in the list."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:750
+#, no-c-format
+msgid ""
+"Click to remove the currently highlighted word or regular expression from the "
+"list."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:752
+#, no-c-format
+msgid ""
+"Use these buttons to load a list of words or regular expression from a file, "
+"save the current list to a file, or clear the entire list. When loading from a "
+"file, the items in the file are appended to the existing list."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:756
+#, no-c-format
+msgid ""
+"If not blank, the filter will apply itself only if the job's talker language "
+"matches the language you enter here. Click the button to display a list of "
+"languages. You may select more than one language by pressing &Ctrl; while "
+"clicking."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:761 index.docbook:852 index.docbook:930
+#, no-c-format
+msgid ""
+"If not blank, the filter will apply itself only if the text came from one of "
+"the applications listed. You may enter more than one application separated by "
+"commas. Example: <command><userinput>konversation,kmail</userinput></command>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:765 index.docbook:856 index.docbook:934
+#, no-c-format
+msgid ""
+"You can discover the <guilabel>Application ID</guilabel> "
+"of running programs using the <command>&qdbus;</command> "
+"program. You should leave the &DBus; numbers out. For example, if &qdbus; shows "
+"an Application ID of <command>kopete-3432</command>, you would just enter "
+"<command><userinput>kopete</userinput></command>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:773
+#, no-c-format
+msgid ""
+"The String Replacer filter will only apply itself to the text if all non-blank "
+"conditions are met in the <guilabel>Apply This Filter When</guilabel> "
+"box. If all the boxes are blank, the filter will apply to all text."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:778
+#, no-c-format
+msgid ""
+"When matching words, the String Replacer filter internally uses a regular "
+"expression of the form <command>\\s<userinput>word</userinput>\\s</command>"
+". In other words, the word must have word boundaries (spaces) on either side of "
+"it."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:782
+#, no-c-format
+msgid ""
+"A discussion on how to write regular expressions is outside the scope of this "
+"handbook. If you have the &kde; Regular Expression editor installed, there is a "
+"button available on the <guilabel>Add</guilabel> or <guilabel>Edit</guilabel> "
+"screens that will assist you at constructing regular expressions. The &kde; "
+"Regular Expression Editor is part of the Utils Git module in playground."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:789
+#, no-c-format
+msgid ""
+"&jovie; comes with a few word list files, including a list of emoticons, such "
+"as \":-)\", some abbreviations typically used in IRC or instant messaging "
+"applications, and a list of other abbreviations. There is also a list of "
+"special characters which the current version of the Polish Festival voice "
+"cannot handle. If you develop useful word lists of your own, use the <guibutton>"
+"Save</guibutton> button to save them to a file and send them to the &jovie; "
+"team for inclusion in the next version."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:803
+#, no-c-format
+msgid "Configuring &XML; Transformer Filters"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:805
+#, no-c-format
+msgid ""
+"The &XML; Transformer filter uses XSLT files to transform &XML; from one format "
+"to another. XSLT, the &XML; Style Language - Transforms, is a W3C standard "
+"language for performing such transformations. It can only be used on "
+"well-formed &XML;. You must have the <command>xsltproc</command> "
+"utility installed."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:813
+#, no-c-format
+msgid "<screeninfo>&XML; Transformer</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:828
+#, no-c-format
+msgid "<phrase>&XML; Transformer</phrase>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:838
+#, no-c-format
+msgid ""
+"Enter the full path to an existing XSLT file, which will perform the "
+"transformation."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:840
+#, no-c-format
+msgid ""
+"Specify the path to the <command>xsltproc</command> utility. If xsltproc is in "
+"your environment PATH, simply enter <command><userinput>xsltproc</userinput>"
+"</command>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:843
+#, no-c-format
+msgid ""
+"If not blank, the filter will apply itself only if the &XML; has the specified "
+"root element or a <command><![CDATA[<!DOCTYPE]]></command> "
+"specification beginning with the entered string. This distinguishes one form of "
+"&XML; from another. For example, <command><userinput>html</userinput></command> "
+"in the <guilabel>DOCTYPE</guilabel> box will match <command>"
+"<![CDATA[<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" "
+"\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">]]></command>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:864
+#, no-c-format
+msgid ""
+"The &XML; Transformer filter will only apply itself to the text if the "
+"specified root element or DOCTYPE are met and if the application ID is met in "
+"the <guilabel>Apply This Filter When</guilabel> box. If an item in this box is "
+"blank, the test is not performed, so if all the boxes are blank, the filter "
+"will apply itself to all text. However, you should fill in at least one box, "
+"since many text jobs will not be in &XML; format."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:878
+#, no-c-format
+msgid "Configuring Talker Chooser Filters"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:880
+#, no-c-format
+msgid ""
+"Talker Chooser filters are used to direct the text to a desired talker "
+"configured in the <guilabel>Talker</guilabel> tab, or to any talker having "
+"specified attributes. For example, you can specify that text coming from "
+"<command>kmail</command> should be spoken using a talker configured with a "
+"female voice. See <xref linkend=\"configure-talkers\"/>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:887
+#, no-c-format
+msgid ""
+"Just before &jovie; begins sending text to each of the filters, it picks a "
+"talker to speak the text. The talker chosen is based on the talker attributes "
+"specified by the application that sent the text to &jovie; and the attributes "
+"of the talkers that you have configured on the <guilabel>Talkers</guilabel> "
+"tab. The Talker Chooser filter permits you to override the chosen talker."
+msgstr ""
+
+#. Tag: screeninfo
+#: index.docbook:898
+#, no-c-format
+msgid "<screeninfo>Talker Chooser</screeninfo>"
+msgstr ""
+
+#. Tag: phrase
+#: index.docbook:913
+#, no-c-format
+msgid "<phrase>Talker Chooser</phrase>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:923
+#, no-c-format
+msgid ""
+"If not blank, the filter will apply itself only if the text contains the "
+"entered regular expression. If it is installed, click the browse button to "
+"launch the &kde; Regular Expression Editor to assist you at entering the "
+"regular expression."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:927
+#, no-c-format
+msgid ""
+"For better performance, try to \"anchor\" the regular expression to the start "
+"of the string. In other words, start your regular expression with <command>"
+"<userinput><![CDATA[^]]></userinput></command>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:939
+#, no-c-format
+msgid ""
+"Specify the attributes of the talker you prefer to speak the text here. If the "
+"text meets the filter conditions above, a talker will be chosen that most "
+"closely matches the attributes you specify here. Click the button at the right "
+"to display the <guilabel>Select Talker</guilabel> screen."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:945
+#, no-c-format
+msgid ""
+"Use these buttons to save your Talker Chooser settings, load settings from a "
+"saved file, or clear all the settings."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:951
+#, no-c-format
+msgid ""
+"The Talker Chooser filter will only apply itself to the text if all non-blank "
+"conditions are met in the <guilabel>Apply This Filter When</guilabel> "
+"box. You must fill in at least one of the boxes."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:1103
+#, no-c-format
+msgid "Developer's Guide to &jovie;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1105
+#, no-c-format
+msgid "&jovie; has two Application Programmer Interfaces (APIs):"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1109
+#, no-c-format
+msgid ""
+"The &kde; Text-to-Speech API, which is used by application programmers to give "
+"their applications TTS capabilities. Applications communicate with &jovie; via "
+"&DBus;."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1112
+#, no-c-format
+msgid ""
+"The &jovie; Text-to-Speech Plugin API, which is used to add speech synthesis "
+"plugins to &jovie; so that &jovie; will work with a new speech synthesis "
+"engine."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1117
+#, no-c-format
+msgid ""
+"The following section gives a short description of the &kde; Text-to-Speech API "
+"&DBus; Interface. Full documentation for both APIs is available online at the "
+"<ulink url=\"http://accessibility.kde.org/developer/kttsd/\"> "
+"&kde; Accessibility</ulink> web site (http://accessibility.kde.org)."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:1129
+#, no-c-format
+msgid "The &jovie; &DBus; Interface"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1131
+#, no-c-format
+msgid ""
+"Applications communicate requests for Text-to-Speech services via the &kde; "
+"&DBus; interface to program <command>jovie</command> object <command>"
+"KSpeech</command>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1135
+#, no-c-format
+msgid "Enter the following commands in a &konsole;."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1137
+#, no-c-format
+msgid "If &jovie; is not already running"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1141
+#, no-c-format
+msgid "To queue a text job to be spoken"
+msgstr ""
+
+#. Tag: userinput
+#: index.docbook:1143
+#, no-c-format
+msgid ""
+"qdbus org.kde.jovie /KSpeech say \"<replaceable>text</replaceable>"
+"\" \"<replaceable>options</replaceable>\""
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1145
+#, no-c-format
+msgid ""
+"where <userinput><replaceable>text</replaceable></userinput> "
+"is the text to be spoken, and <userinput><replaceable>options</replaceable>"
+"</userinput> is a language code such as <userinput><replaceable>en</replaceable>"
+"</userinput>, <userinput><replaceable>cy</replaceable></userinput>, &etc;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1148
+#, no-c-format
+msgid "Example."
+msgstr ""
+
+#. Tag: userinput
+#: index.docbook:1150
+#, no-c-format
+msgid "qdbus org.kde.jovie /KSpeech say \"This is a test.\" \"en\""
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1152
+#, no-c-format
+msgid ""
+"There are many more commands that can be sent. To see a list of possible "
+"commands,"
+msgstr ""
+
+#. Tag: userinput
+#: index.docbook:1155
+#, no-c-format
+msgid "qdbus org.kde.jovie /KSpeech"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1157
+#, no-c-format
+msgid ""
+"or read the <ulink url=\"http://accessibility.kde.org/developer/kttsd/\"> "
+"&kde; Text-to-Speech API</ulink> online."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:1168
+#, no-c-format
+msgid "Questions and Answers"
+msgstr ""
+
+#. Tag: chapter
+#: index.docbook:1168
+#, no-c-format
+msgid "&reporting.bugs; &updating.documentation;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1176
+#, no-c-format
+msgid "I need to start over. How do I get &jovie; completely terminated?"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1179
+#, no-c-format
+msgid "Enter the following commands in a &konsole;:"
+msgstr ""
+
+#. Tag: programlisting
+#: index.docbook:1180
+#, no-c-format
+msgid "kquitapp jovie"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1186
+#, no-c-format
+msgid "How can I see debugging output from <command>jovie</command>?"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1189
+#, no-c-format
+msgid "Open a &konsole; window. Then start <command>jovie</command>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1194
+#, no-c-format
+msgid ""
+"None of the supported speech synthesizers support the language I need. Where "
+"can I get a synth for my language?"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1198
+#, no-c-format
+msgid ""
+"Google(tm) is your friend. This <ulink "
+"url=\"http://tcts.fpms.ac.be/synthesis/mbrola/mbrtts.html\">link</ulink> "
+"might also help. If you find a free synthesis engine that supports your desired "
+"language, and want to add support for it to &jovie;, please contact the "
+"development team. Open source engines are especially welcome. If you know of a "
+"commercial synth, perhaps you can persuade the vendor to donate a free copy to "
+"the &jovie; development team. In the meantime, you may be able to get the synth "
+"working using speech-dispatchers command backend."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1211
+#, no-c-format
+msgid ""
+"I have the &HTML; &XML; Transformer filter configured, but web pages are not "
+"spoken at all using the Festival plugin."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1215
+#, no-c-format
+msgid ""
+"Due to a bug in Festival 1.95 beta, you must install the <command>"
+"rab_diphone</command> (British male) voice for SABLE to work at all, even if "
+"you are not using that voice to speak the web pages. Also, make sure the "
+"<command>xsltproc</command> utility is installed and in the PATH."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1223
+#, no-c-format
+msgid ""
+"Certain characters or punctuation seem to be producing errors in the "
+"synthesizer, making it skip entire sentences, or pronounce gibberish. What can "
+"I do?"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1227
+#, no-c-format
+msgid ""
+"First, make sure the <guilabel>Character encoding</guilabel> "
+"option in the talker's configuration dialog is properly set for the language. "
+"If certain words or characters are causing problems, a String Replacer filter "
+"might help. See <xref linkend=\"filters\"/>."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:1240
+#, no-c-format
+msgid "Credits and License"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1242
+#, no-c-format
+msgid "&jovie;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1245
+#, no-c-format
+msgid ""
+"Program Copyright &copy; 2002 Jos&#233; Pablo Ezequiel \"Pupeno\" "
+"Fern&#225;ndez <email>pupeno@kde.org</email>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1248
+#, no-c-format
+msgid "Current Maintainer: Jeremy Whiting <email>jpwhiting@kde.org</email>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1251
+#, no-c-format
+msgid "Contributors:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1254
+#, no-c-format
+msgid "Gary Cramblitt <email>garycramblitt@comcast.net</email>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1256
+#, no-c-format
+msgid "Olaf Schmidt <email>ojschmidt@kde.org</email>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1258
+#, no-c-format
+msgid "Gunnar Schmi Dt <email>gunnar@schmi-dt.de</email>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1260
+#, no-c-format
+msgid "Paul Giannaros <email>ceruleanblaze@gmail.com</email>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1265
+#, no-c-format
+msgid ""
+"Documentation Copyright &copy; 2009 Jeremy Whiting <email>"
+"jpwhiting@kde.org</email> &copy; 2004 Gary R. Cramblitt <email>"
+"garycramblitt@comcast.net</email>"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:1270
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+
+#. Tag: chapter
+#: index.docbook:1270
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1275
+#, no-c-format
+msgid ""
+"Speech synthesis engines used by &jovie; have their own licenses. See each "
+"engine's documentation or website for details. Some voices also have their own "
+"licensing."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:1284
+#, no-c-format
+msgid "Installation"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:1290
+#, no-c-format
+msgid "How to obtain &jovie;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1292
+#, no-c-format
+msgid "&install.intro.documentation;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1296
+#, no-c-format
+msgid "Debian Install Command: <command>apt-get install jovie</command>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1299
+#, no-c-format
+msgid ""
+"You will find links to source and binary packages on the <ulink "
+"url=\"http://accessibility.kde.org/developer/kttsd/\"> "
+"&kde; Accessibility</ulink> web site (http://accessibility.kde.org)."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1303
+#, no-c-format
+msgid ""
+"If you have access to the &kde; code repository, you can download &jovie; by "
+"checking out the <command>jovie</command> archive. &jovie; will be found in the "
+"<filename class=\"directory\">jovie</filename> folder. You can also download "
+"tarballs of the &jovie; source code from <ulink "
+"url=\"http://download.kde.org/stable/\">http://download.kde.org/stable/</ulink>"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:1316
+#, no-c-format
+msgid "Requirements"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1318
+#, no-c-format
+msgid "Mandatory requirements:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1322
+#, no-c-format
+msgid "&kde; version 4.8 or later."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1323
+#, no-c-format
+msgid "speech-dispatcher version 0.67 or later."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1324
+#, no-c-format
+msgid ""
+"A speech synthesizer. The following synthesizers and spoken languages are "
+"currently supported."
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:1333
+#, no-c-format
+msgid "Espeak"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:1334
+#, no-c-format
+msgid ""
+"Most languages, check <ulink "
+"url=\"http://espeak.sourceforge.net/languages.html\">"
+"http://espeak.sourceforge.net/languages.html</ulink> "
+"for the current list of supported languages"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:1339
+#, no-c-format
+msgid "Festival"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:1340
+#, no-c-format
+msgid ""
+"American English, British, Spanish, German, Finnish, Czech, Polish, Russian, "
+"Italian, French Canadian, Kiswahili, Zulu, and Ibibio"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1349
+#, no-c-format
+msgid ""
+"It also works with any synthesis engine that can be run from a command in a "
+"&konsole;."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1352
+#, no-c-format
+msgid ""
+"The languages listed above may not be comprehensive or up-to-date. Check the "
+"specifications for each engine for a complete list of supported languages. Also "
+"check the <ulink url=\"http://accessibility.kde.org/developer/kttsd/index.php\"> "
+"&jovie;</ulink> website for additional information that might not have made it "
+"into this handbook."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1362
+#, no-c-format
+msgid ""
+"speech-dispatcher uses a flexible plugin architecture for speech synthesis "
+"engines. If you want to enhance &jovie; to support another engine, contact the "
+"development team."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1369
+#, no-c-format
+msgid ""
+"See <xref linkend=\"configuration\"/> for specific instructions for each of "
+"these engines."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1377
+#, no-c-format
+msgid "Optional components:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1383
+#, no-c-format
+msgid ""
+"The <command>xsltproc</command> utility is needed for SSML support and for the "
+"&XML; Transformer filter, but not required. Debian users can install xsltproc "
+"with the command <command>apt-get install xsltproc</command>."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:1397
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1399
+#, no-c-format
+msgid ""
+"In order to compile &jovie;, you must have a recent (&kde; 4.8 or greater) copy "
+"of the &kde; development files, including kdelibs and the development files for "
+"speech-dispatcher."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1403
+#, no-c-format
+msgid ""
+"If you downloaded the &jovie; source from the <filename>"
+"kdeaccessibility</filename> code repository module, or downloaded the nightly "
+"tarball, use the following commands to compile and install."
+msgstr ""
+
+#. Tag: programlisting
+#: index.docbook:1408
+#, no-c-format
+msgid ""
+"cd jovie\n"
+"mkdir build\n"
+"cd build\n"
+"cmake ../\n"
+"make\n"
+"sudo make install"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:1416
+#, no-c-format
+msgid "Configuration"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1418
+#, no-c-format
+msgid ""
+"Make sure speech-dispatcher is working with your speech synthesis engine before "
+"using &jovie;. The shell script spd-conf can be used for that."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:1421
+#, no-c-format
+msgid ""
+"&jovie; in &kde; 4.5 is a rename of KTTSD and kttsmgr. In the future &jovie; "
+"will be able to configure speech-dispatcher directly without spd-conf."
+msgstr ""

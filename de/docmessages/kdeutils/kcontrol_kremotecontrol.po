@@ -1,0 +1,1150 @@
+# Gregor Zumstein <zumstein@ssd.ethz.ch>, 2005.
+# Stephan Johach <hunsum@gmx.de>, 2005.
+# Stephan Johach <lucardus@onlinehome.de>, 2006.
+# Burkhard Lück <lueck@hube-lueck.de>, 2007, 2009, 2010, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcontrol_kremotecontrol\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: 2013-02-23 13:18+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:11
+#, no-c-format
+msgid "KDE Remote Control Configuration"
+msgstr "Einstellungen für Fernbedienungen unter &kde;"
+
+#. Tag: author
+#: index.docbook:14
+#, no-c-format
+msgid "<firstname>Michael</firstname> <surname>Zanetti</surname>"
+msgstr "<firstname>Michael</firstname> <surname>Zanetti</surname>"
+
+#. Tag: email
+#: index.docbook:18
+#, no-c-format
+msgid "michael_zanetti@gmx.net"
+msgstr "michael_zanetti@gmx.net"
+
+#. Tag: trans_comment
+#: index.docbook:21
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Gregor</"
+"firstname><surname>Zumstein</"
+"surname><affiliation><address><email>gz@orchester-bremgarten.ch</email></"
+"address></affiliation><contrib>Deutsche Übersetzung</contrib></othercredit>"
+
+#. Tag: date
+#: index.docbook:24
+#, no-c-format
+msgid "2010-03-05"
+msgstr "2010-03-05"
+
+#. Tag: releaseinfo
+#: index.docbook:25
+#, no-c-format
+msgid "<releaseinfo>1.0</releaseinfo>"
+msgstr "<releaseinfo>1.0</releaseinfo>"
+
+#. Tag: holder
+#: index.docbook:29
+#, no-c-format
+msgid "Michael Zanetti"
+msgstr "Michael Zanetti"
+
+#. Tag: para
+#: index.docbook:33
+#, no-c-format
+msgid ""
+"&kremotecontrol; configuration: The infrastructure for the &kde;'s Remote "
+"Control functionality."
+msgstr ""
+"&kremotecontrol;-Einstellungen: Die Infrastruktur für die &kde;-"
+"Fernbedienungsfunktionalität."
+
+#. Tag: keyword
+#: index.docbook:40
+#, no-c-format
+msgid "KRemoteControl"
+msgstr "KRemoteControl"
+
+#. Tag: keyword
+#: index.docbook:41
+#, no-c-format
+msgid "kcm_remotecontrol"
+msgstr "kcm_remotecontrol"
+
+#. Tag: keyword
+#: index.docbook:42
+#, no-c-format
+msgid "Remote Control"
+msgstr "Fernbedienung"
+
+#. Tag: title
+#: index.docbook:48 index.docbook:278
+#, no-c-format
+msgid "Introduction"
+msgstr "Einführung"
+
+#. Tag: para
+#: index.docbook:50
+#, no-c-format
+msgid ""
+"This module allows you to configure your remote controls. You can assign "
+"actions that are executed on button presses. Actions can start applications, "
+"control them or execute system commands, such as powering off your computer."
+msgstr ""
+"In diesem Modul können Sie Ihre Fernbedienungen einrichten und ihnen "
+"Aktionen zuweisen, die beim Drücken eines Knopfes ausgeführt werden. "
+"Aktionen können Programme starten, sie steuern oder Systembefehle wie das "
+"Herunterfahren des Rechners ausführen."
+
+#. Tag: title
+#: index.docbook:57
+#, no-c-format
+msgid "Requirements"
+msgstr "Voraussetzungen"
+
+#. Tag: para
+#: index.docbook:59
+#, no-c-format
+msgid ""
+"To use &kremotecontrol; you must have set up a compatible backend for remote "
+"controls on your computer. Currently there is only a backend for LIRC "
+"available. If LIRC is properly set up, the &kremotecontrol; icon in the "
+"system tray will light up red <inlinemediaobject> <imageobject> <imagedata "
+"fileref=\"irkick.png\" format=\"PNG\"/> </imageobject> </inlinemediaobject>. "
+"If not, it will be gray and crossed out <inlinemediaobject> <imageobject> "
+"<imagedata fileref=\"irkickoff.png\" format=\"PNG\"/> </imageobject> </"
+"inlinemediaobject>."
+msgstr ""
+"Um &kremotecontrol; benutzen zu können, müssen Sie ein kompatibles "
+"Dienstprogramm für Fernbedienungen auf Ihren Rechner installieren. Zur Zeit "
+"gibt es nur ein Dienstprogramm für LIRC. Wenn LIRC richtig eingerichtet ist, "
+"wird das Symbol für &kremotecontrol; im Systemabschnitt der Kontrollleiste "
+"hellrot angezeigt <inlinemediaobject> <imageobject> <imagedata fileref="
+"\"irkick.png\" format=\"PNG\"/> </imageobject> </inlinemediaobject>. Sonst "
+"ist das Symbol grau mit einem Kreuz <inlinemediaobject> <imageobject> "
+"<imagedata fileref=\"irkickoff.png\" format=\"PNG\"/> </imageobject> </"
+"inlinemediaobject>."
+
+#. Tag: para
+#: index.docbook:76
+#, no-c-format
+msgid ""
+"For more information about LIRC, visit their website at http://www.lirc.org."
+msgstr ""
+"Weitere Informationen zu LIRC finden Sie auf der Homepage http://www.lirc."
+"org."
+
+#. Tag: title
+#: index.docbook:84
+#, no-c-format
+msgid "Usage"
+msgstr "Benutzung"
+
+#. Tag: para
+#: index.docbook:86
+#, no-c-format
+msgid ""
+"The configuration module consists of two lists. The list on the left shows "
+"the available remote controls and their modes. The list on the right "
+"displays all configured actions for the current selected remote and mode."
+msgstr ""
+"Dieses Einstellungsmodul besteht aus zwei Listen. Die linke Liste zeigt alle "
+"vorhandenen Fernsteuerungen und deren Modi an. In der rechten Liste werden "
+"alle eingerichteten Aktionen für die aktuell ausgewählte Fernsteuerung und "
+"den Modus aufgeführt."
+
+#. Tag: screeninfo
+#: index.docbook:91
+#, no-c-format
+msgid "KRemoteControl configuration"
+msgstr "Einrichtung von KRemoteControl"
+
+#. Tag: phrase
+#: index.docbook:97
+#, no-c-format
+msgid "Lists of remotes and configured modes and actions"
+msgstr "Liste der Fernbedienungen und der eingerichteten Modi und Aktionen."
+
+#. Tag: title
+#: index.docbook:104
+#, no-c-format
+msgid "Remote Controls and Modes"
+msgstr "Fernbedienungen und Modi"
+
+#. Tag: para
+#: index.docbook:106
+#, no-c-format
+msgid ""
+"Each remote control can have a number of different modes. Having multiple "
+"modes allows buttons to execute different actions in different situations. "
+"Think of it as a TV/Video/Satellite/DVD multi-purpose remote control. "
+"Instead of using different remote controls for different applications, you "
+"can change the behavior of one remote control to adapt to an application by "
+"creating different modes and switching them as needed. Actions defined "
+"directly to the remote control are always available, no matter in what mode "
+"the remote currently is. Actions defined in a mode are only executed if the "
+"remote is currently set to that mode. Each remote control can be only in one "
+"mode at a time. It may also be in no mode at all meaning that only always "
+"available actions are executed on button presses. You can also define a "
+"default mode, which is the mode automatically assigned on startup."
+msgstr ""
+"Jede Fernbedienung hat eine Anzahl unterschiedlicher Modi. Unterschiedliche "
+"Modi erlauben es, einer Taste je nach Anwendungsbereich unterschiedliche "
+"Funktionen zuzuweisen. Auf diese Weise können Fernbedienungen viele "
+"verschiedene Geräte mit nur einigen wenigen Knöpfen steuern. Ein Beispiel "
+"hierfür sind die Vielzweck-Fernbedienungen für TV/Video/DVD und weiteres. "
+"Diese haben wenige Tasten, welche je nach zu bedienendem Gerät "
+"unterschiedliche Funktionen besitzen. Direkt für die Fernbedienung "
+"definierte Aktionen sind immer verfügbar, unabhängig vom aktuellen Modus der "
+"Fernbedienung. Aktionen, die für einen Modus definiert wurden, werden auch "
+"nur dann ausgeführt, wenn sich die Fernbedienung in diesem Modus befindet. "
+"Für eine Fernbedienung kann gleichzeitig nur ein Modus oder auch kein Modus "
+"aktiviert sein. Ist kein Modus aktiviert, werden nur die direkt definierten "
+"und immer verfügbaren Aktionen beim Drücken eines Knopfes ausgeführt. "
+"Außerdem kann ein Standardmodus angegeben werden, der der Fernbedienung "
+"automatisch beim Start zugewiesen wird."
+
+#. Tag: para
+#: index.docbook:119
+#, no-c-format
+msgid ""
+"You can add modes to a remote control by selecting the remote and using the "
+"<guibutton>+</guibutton> button besides to the list. When creating a mode "
+"you need to supply a name for it. Optionally you can assign a button that is "
+"used to activate the mode and an icon that is used for notifications for "
+"this mode. You can delete modes by selecting them and using the <guibutton>-"
+"</guibutton> button."
+msgstr ""
+"Modi können für eine Fernbedienung hinzugefügt werden, indem Sie sie "
+"auswählen und dann auf den Knopf <guibutton>+</guibutton> rechts neben der "
+"Liste klicken. Ein neu erstellter Modus muss als ersten einen Namen "
+"erhalten. Wahlweise können Sie dem Modus eine Taste zur Aktivierung und ein "
+"Symbol zuweisen, das in Benachrichtigungen zu diesem Modus benutzt wird. Um "
+"einen Modus zu löschen, wählen sie ihn aus und drücken den Knopf <guibutton>-"
+"</guibutton>."
+
+#. Tag: screeninfo
+#: index.docbook:126
+#, no-c-format
+msgid "Add mode"
+msgstr "Modus hinzufügen"
+
+#. Tag: phrase
+#: index.docbook:132
+#, no-c-format
+msgid "Adding a new mode"
+msgstr "Einen neuen Modus hinzufügen"
+
+#. Tag: para
+#: index.docbook:137
+#, no-c-format
+msgid ""
+"By default, if there are multiple modes with the same assigned button, the "
+"button is used to cycle through those modes. This way you can group your "
+"modes. For example you could assign a button named <quote>Music</quote> to "
+"cycle through modes for &amarok; and &juk; while a button named "
+"<quote>Video</quote> could cycle through modes for &dragon; or KMplayer. If "
+"you rather would like to have a button for cycling though all modes and a "
+"second one to reverse-cycling through the modes, you can set this behavior "
+"in a remotes preferences by selecting a remote and pressing the edit button."
+msgstr ""
+"Gibt es mehrere Modi mit der gleichen zugewiesenen Taste, wird diese Taste "
+"in der Voreinstellung zum Moduswechsel benutzt. Damit können Sie Ihre Modi "
+"gruppieren. Sie können zum Beispiel eine Taste <quote>Musik</quote> für das "
+"Wechseln der Modi in &amarok; und &juk; benutzen oder eine Taste "
+"<quote>Video</quote> auf die gleiche Art für &dragon; oder KMplayer. Möchten "
+"Sie mit einer Taste durch alle Modi vorwärts und mit einer weiteren Taste "
+"durch alle Modi rückwärts wechseln, wählen Sie eine Fernsteuerung aus. "
+"Drücken Sie den Knopf „Bearbeiten“ und stellen Sie dies Verhalten im "
+"Einrichtungsdialog ein."
+
+#. Tag: screeninfo
+#: index.docbook:147
+#, no-c-format
+msgid "EditRemote"
+msgstr "Fernbedienung bearbeiten"
+
+#. Tag: phrase
+#: index.docbook:153
+#, no-c-format
+msgid "Editing a remote"
+msgstr "Eine Fernbedienung bearbeiten"
+
+#. Tag: title
+#: index.docbook:162
+#, no-c-format
+msgid "Actions"
+msgstr "Aktionen"
+
+#. Tag: para
+#: index.docbook:164
+#, no-c-format
+msgid ""
+"After selecting a remote or a mode, you can add actions to it using the "
+"<guibutton>+</guibutton> button on the right. There are two different ways "
+"how actions can be created. By using a template or by browsing the D-Bus "
+"session bus manually."
+msgstr ""
+"Wenn Sie eine Fernbedienung oder einen Modus ausgewählt haben, können Sie "
+"Ihnen mit dem Knopf <guibutton>+</guibutton> auf der rechten Seite Aktionen "
+"hinzufügen. Aktionen können auf zwei unterschiedliche Arten erstellt werden, "
+"entweder unter Verwendung einer Vorlage oder manuell mit Durchsehen der D-"
+"Bus-Sitzung."
+
+#. Tag: screeninfo
+#: index.docbook:169
+#, no-c-format
+msgid "AddAction"
+msgstr "Aktion hinzufügen"
+
+#. Tag: phrase
+#: index.docbook:175
+#, no-c-format
+msgid "Adding an action"
+msgstr "Eine Aktion hinzufügen"
+
+#. Tag: para
+#: index.docbook:180
+#, no-c-format
+msgid ""
+"Creating actions using templates is easier but limited. You can find "
+"templates for the most common applications such as &amarok; or the &kde; "
+"program launcher and system commands for shutting down your computer. Those "
+"templates are collected in profiles that group them into similar task. For "
+"example there is a Profile called <quote>Power management</quote> that "
+"contains templates for shutting down or suspending your computer."
+msgstr ""
+"Aktionen mithilfe von Vorlagen zu erstellen, ist einfach, die "
+"Einstellungsmöglichkeiten für diese Aktionen sind aber begrenzt. Vorlagen "
+"für häufig benutzte Anwendungen wie &amarok; oder den &kde;-Programmstarter "
+"und Systembefehle für das Herunterfahren des Rechners werden mit "
+"installiert. Diese Vorlagen sind in Profilen für ähnlichen Aufgaben "
+"zusammengefasst. Es gibt zum Beispiel ein Profil <quote>Power management</"
+"quote> mit Vorlagen um den Rechner in den Ruhezustand oder Tiefschlaf zu "
+"versetzen oder herunterzufahren."
+
+#. Tag: screeninfo
+#: index.docbook:188
+#, no-c-format
+msgid "AddProfileAction"
+msgstr "Profil hinzufügen"
+
+#. Tag: phrase
+#: index.docbook:194
+#, no-c-format
+msgid "Adding an action using a template"
+msgstr "Aktion mit Hilfe einer Vorlage hinzufügen"
+
+#. Tag: para
+#: index.docbook:199
+#, no-c-format
+msgid ""
+"Creating actions by browsing the D-Bus lists all currently running "
+"applications. You can browse through them and their functions. This requires "
+"a basic understanding of how D-Bus works, but you can use more applications "
+"and functions than those in the template list."
+msgstr ""
+"Durchsuchen Sie den D-Bus um Aktionen zu erstellen, dann werden alle "
+"laufenden Programme angezeigt und Sie können alle Funktionen dieser "
+"Programme durchsehen. Dazu sind aber Grundkenntnisse zum D-Bus erforderlich, "
+"es lassen sich damit dann mehr Programme und Funktionen als in der "
+"Vorlagenliste benutzen."
+
+#. Tag: screeninfo
+#: index.docbook:204
+#, no-c-format
+msgid "AddDBusAction"
+msgstr "D-Bus-Aktion hinzufügen"
+
+#. Tag: phrase
+#: index.docbook:210
+#, no-c-format
+msgid "Adding an action using D-Bus"
+msgstr "Eine D-Bus-Aktion hinzufügen"
+
+#. Tag: para
+#: index.docbook:215
+#, no-c-format
+msgid ""
+"When adding an action you can tweak a few more options. The first one of "
+"them defines if the actions is executed repeatedly when the button on the "
+"remote control is being held down. This is a useful behavior for actions "
+"like increasing or decreasing volume but may be undesired for actions like "
+"toggling play/pause on a media player. The second one defines if the target "
+"application should be started if it is not running yet when the button is "
+"pressed. For example it would not make sense for actions that should close "
+"an application to launch it. The third and last option for actions is to "
+"define which instance of an application should receive the action if there "
+"are more then on instances running. If you have selected an application that "
+"cannot be run multiple times this option is disabled."
+msgstr ""
+"Für D-Bus-Aktionen gibt es einige zusätzliche Optionen. Als erstes muss "
+"definiert werden, ob Aktionen wiederholt ausgeführt wird, wenn Sie eine "
+"Taste  auf der Fernbedienung länger drücken. Diesen Verhalten ist zum "
+"Beispiel sinnvoll, um die Lautstärke zu erhöhen oder zu verringern. Für "
+"Aktionen wie Wiedergabe/Pause bei der Medienwiedergabe ist es nicht "
+"geeignet. Weiterhin muss festgelegt werden, ob das Programm automatisch beim "
+"Drücken der Taste gestartet werden soll, wenn es noch nicht läuft. Das "
+"automatische Starten sollte zum Beispiel nicht für eine Aktion gewählt "
+"werden, die eine Anwendung beendet. Als dritte und letzte Option für "
+"Aktionen ist anzugeben, welche Instanz einer Anwendung die Aktion ausführen "
+"soll, falls die Anwendung mehrfach gestartet werden kann. Diese Option ist "
+"für Anwendung deaktiviert, die nur einmal laufen können."
+
+#. Tag: screeninfo
+#: index.docbook:229
+#, no-c-format
+msgid "AddActionOptions"
+msgstr "Einstellungen für Aktionen"
+
+#. Tag: phrase
+#: index.docbook:235
+#, no-c-format
+msgid "Options for actions"
+msgstr "Einstellungen für Aktionen"
+
+#. Tag: para
+#: index.docbook:240
+#, no-c-format
+msgid ""
+"Actions may also be automatically populated using the wizard button. This "
+"means that &kremotecontrol; can attempt to match buttons to functions for "
+"you. The autopopulate dialog shows all available templates collections with "
+"a flag. Depending on the color of the flag your remote control is fully, "
+"partially or not supported by that profile. Green means all contained "
+"templates can be matched to your remote control, yellow means some of the "
+"contained actions match and red means none of the templates can be matched "
+"to buttons of your remote control. This doesn't mean that you cannot use "
+"those templates. You just have to configure them one by one, setting the "
+"desired button by yourself."
+msgstr ""
+"Mithilfe des Assistenten lassen sich Aktionen auch automatisch erzeugen. "
+"Dabei versucht &kremotecontrol; automatisch Aktionen für Tasten zu finden. "
+"Im Dialog „Automatisch ausfüllen“ werden alle vorhandenen Vorlagen mit einer "
+"Markierung gekennzeichnet. An der Farbe dieser Markierung erkennen Sie, ob "
+"Ihre Fernbedienung vollständig (Grün). teilweise (Gelb) oder gar nicht (Rot) "
+"unterstützt wird. Bei einem grünen Symbol passen alle enthaltenen Vorlagen "
+"zu Ihrer Fernbedienung, ein gelbes Symbol zeigt an, dass nur ein Teil der "
+"enthaltenen Aktionen unterstützt wird. Passt keine der Vorlagen zu Ihrer "
+"Fernbedienung, sehen Sie eine rote Markierung. Auch bei einer roten "
+"Markierung können diese Vorlegen benutzt werden, Sie müssen aber alle "
+"gewünschten Tasten manuell einrichten."
+
+#. Tag: screeninfo
+#: index.docbook:250
+#, no-c-format
+msgid "AutoPopulate"
+msgstr "Automatisch ausfüllen"
+
+#. Tag: phrase
+#: index.docbook:256
+#, no-c-format
+msgid "Automatically generate actions using templates"
+msgstr "Aktionen automatisch mit Vorlagen erstellen"
+
+#. Tag: para
+#: index.docbook:261
+#, no-c-format
+msgid ""
+"<emphasis role=\"strong\">Note:</emphasis> If your remote control isn't "
+"compatible to any profile you might haven't configured LIRC using namespaces."
+msgstr ""
+"<emphasis role=\"strong\">Hinweis:</emphasis> Wenn Ihre Fernbedienung mit "
+"keinem Profil kompatibel ist, haben Sie LIRC vermutlich nicht für die "
+"Verwendung von Namensräumen eingerichtet."
+
+#. Tag: title
+#: index.docbook:268
+#, no-c-format
+msgid "Advanced Information"
+msgstr "Zusätzliche Informationen"
+
+#. Tag: para
+#: index.docbook:269
+#, no-c-format
+msgid ""
+"This chapter will discuss some information which might be interesting for "
+"more advanced users or developers. You will learn how to create your own "
+"profiles."
+msgstr ""
+"In diesem Kapitel werden zusätzliche Information vorgestellt, die für einen "
+"erfahrenen Benutzer oder Entwickler von Interesse sind. In diesem Kapitel "
+"finden Sie eine Anweisung, um benutzerdefinierte Profile zu erstellen."
+
+#. Tag: title
+#: index.docbook:275
+#, no-c-format
+msgid "Creating a Profile"
+msgstr "Ein Profil erstellen"
+
+#. Tag: para
+#: index.docbook:279
+#, no-c-format
+msgid ""
+"Nearly all &DBus; capable applications can be used with &kremotecontrol; "
+"without any further actions. However, to provide user friendly configuration "
+"and let the application appear in the autopopulate dialog you might want to "
+"create a profile for it."
+msgstr ""
+"Fast alle Programme mit einer &DBus;-Schnittstelle können durch "
+"&kremotecontrol; ohne zusätzliche Aktionen benutzt werden. Um aber eine "
+"grafische  Benutzerschnittstelle für die Einrichtung bereitzustellen und das "
+"Programm im Dialog <guilabel>Automatisch ausfüllen</guilabel> anzuzeigen, "
+"sollten Sie ein Profil dafür erstellen."
+
+#. Tag: para
+#: index.docbook:284
+#, no-c-format
+msgid ""
+"A profile tells &kremotecontrol; (and the user!) what the various &DBus; "
+"calls do. Essentially this is a kind of documentation for &DBus; calls. You "
+"don't have to include all &DBus; calls - just the ones that you feel end-"
+"users would benefit the most (usually <quote>interface adjusting</quote> "
+"calls rather the <quote>information gathering</quote> calls)."
+msgstr ""
+"Ein Profil gibt &kremotecontrol; und dem Benutzer die Funktion der "
+"verschiedenen &DBus;-Aufrufe an, Im Grunde ist das eine Art von "
+"Dokumentation der &DBus;-Aufrufe. Es müssen nicht alle &DBus;-Aufrufe "
+"aufgeführt sein, nur die Wichtigsten für den Endbenutzer. Dazu gehören eher "
+"die Aufrufe um die <quote>Schnittstelle einzurichten</quote> als die Aufrufe "
+"zu Abfrage von <quote>Informationen</quote>."
+
+#. Tag: title
+#: index.docbook:294
+#, no-c-format
+msgid "Profile HowTo"
+msgstr "Anleitung zur Erstellung von Profilen"
+
+#. Tag: title
+#: index.docbook:298
+#, no-c-format
+msgid "&DBus;"
+msgstr "&DBus;"
+
+#. Tag: para
+#: index.docbook:299
+#, no-c-format
+msgid ""
+"Make sure the application you want to create the profile for, provides "
+"functions on the &DBus; session bus. You can check this by trying to add "
+"actions for that application using the manual method in &kremotecontrol;. "
+"<quote>qdbusviewer</quote>, an application which is shipped with your Qt4 "
+"installation is also a very good tool to find out about &DBus; capabilities "
+"of applications."
+msgstr ""
+"Überprüfen Sie, ob das Programm für das Sie ein Profil erstellen möchten, "
+"Funktionen über einen &DBus;-Sitzungsbus anbietet. Dazu versuchen Sie, in "
+"&kremotecontrol; manuell eine Aktion für dieses Programm hinzuzufügen. Auch "
+"mit dem Programm <quote>qdbusviewer</quote>, das zusammen mit Qt4 "
+"installiert wird, können Sie Informationen über die &DBus;-Schnittstelle "
+"eines Programms finden."
+
+#. Tag: title
+#: index.docbook:309
+#, no-c-format
+msgid "Step by step"
+msgstr "Ausführliche Anleitung"
+
+#. Tag: para
+#: index.docbook:310
+#, no-c-format
+msgid ""
+"Once you have found the appropriate &DBus; functions you need to describe "
+"them in a <filename>appname.profile.xml</filename> document. Here is a quick "
+"guide how to create such files:"
+msgstr ""
+"Wenn Sie die passenden &DBus;-Funktionen gefunden haben, müssen diese in der "
+"Datei <filename>appname.profile.xml</filename> beschrieben werden. Im "
+"folgenden Abschnitt finden Sie eine kurze Einführung zur Erstellung dieser "
+"Dateien:"
+
+#. Tag: para
+#: index.docbook:318
+#, no-c-format
+msgid ""
+"First create a new file containing the content below. The tag <quote>name</"
+"quote> defines a short descriptive name of the profile. Add a description of "
+"the profile in the <quote>description</quote> tag. Also add your name into "
+"the <quote>author</quote> tag and a version number in the <quote>version</"
+"quote> tag. The version number is important for upgrading your profile. "
+"&kremotecontrol; will use the one with the highest number if multiple "
+"versions of your profile are found on the system."
+msgstr ""
+"Erstellen Sie zuerst eine Datei mit den weiter unten angezeigten Inhalt. In "
+"<quote>name</quote> geben Sie einen kurzen Namen des Profils ein, der dessen "
+"Funktion beschreibt, in <quote>description</quote> eine Beschreibung dieses "
+"Profils. Tragen Sie Ihren Namen in <quote>author</quote>  und eine "
+"Versionsnummer in <quote>version</quote> ein. Die Versionsnummer ist für die "
+"Aktualisierung des Profils wichtig, wenn &kremotecontrol; mehrere Versionen "
+"eines Profils auf Ihrem Rechner findet, wird das Profil mit der größten "
+"Versionsnummer benutzt."
+
+#. Tag: programlisting
+#: index.docbook:327
+#, no-c-format
+msgid ""
+"&lt;xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+"&lt;profile xmlns=\"urn:org-kde-kremotecontrol\"\n"
+"  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n"
+"  xsi:schemaLocation=\"urn:org-kde-kremotecontrol file:profile.xsd\"&gt;\n"
+"\n"
+"    &lt;name&gt;My Profile&lt;/name&gt;\n"
+"    &lt;version&gt;0.1&lt;/version&gt;\n"
+"    &lt;author&gt;Me&lt;/author&gt;\n"
+"    &lt;description&gt;Some descriptive information about what the profile "
+"does&lt;/description&gt;\n"
+"    &lt;action&gt;\n"
+"        &lt;--  This tag will be explained in the next step--&gt;\n"
+"    &lt;action&gt;\n"
+"\n"
+"&lt;/profile&gt;"
+msgstr ""
+"&lt;xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+"&lt;profile xmlns=\"urn:org-kde-kremotecontrol\"\n"
+"  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n"
+"  xsi:schemaLocation=\"urn:org-kde-kremotecontrol file:profile.xsd\"&gt;\n"
+"\n"
+"    &lt;name&gt;Mein Profil&lt;/name&gt;\n"
+"    &lt;version&gt;0.1&lt;/version&gt;\n"
+"    &lt;author&gt;Ich&lt;/author&gt;\n"
+"    &lt;description&gt;Beschreibung der Funktionen des Profils&lt;/"
+"description&gt;\n"
+"    &lt;action&gt;\n"
+"        &lt;--  Dies wird im nächsten Schritt erklärt --&gt;\n"
+"    &lt;action&gt;\n"
+"\n"
+"&lt;/profile&gt;"
+
+#. Tag: para
+#: index.docbook:331
+#, no-c-format
+msgid ""
+"After you have created the profile skeleton it's time to add some action "
+"templates."
+msgstr "In diesen Profilentwurf müssen nun einige Aktionen eingefügt werden."
+
+#. Tag: programlisting
+#: index.docbook:336
+#, no-c-format
+msgid ""
+"&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+"&lt;profile xmlns=\"urn:org-kde-kremotecontrol\"\n"
+"  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n"
+"  xsi:schemaLocation=\"urn:org-kde-kremotecontrol file:profile.xsd\"&gt;\n"
+"\n"
+"    &lt;name&gt;My Profile&lt;/name&gt;\n"
+"    &lt;version&gt;0.1&lt;/version&gt;\n"
+"    &lt;author&gt;Me&lt;/author&gt;\n"
+"    &lt;description&gt;Some descriptive information about what the profile "
+"does&lt;/description&gt;\n"
+"\n"
+"    &lt;action id=\"someUniquId\"  repeat=\"true|false\" button=\"someButton"
+"\"&gt;\n"
+"      &lt;name&gt;My Action&lt;/name&gt;\n"
+"      &lt;description&gt;What this action does&lt;/description&gt;\n"
+"      &lt;prototype&gt;\n"
+"        &lt;--  This tag will be explained in the next step--&gt;\n"
+"      &lt;prototype&gt;\n"
+"      &lt;ifmulti&gt;ifMultiOption&lt;/ifmulti&gt;\n"
+"    &lt;/action&gt;\n"
+"    \n"
+"&lt;/profile&gt;"
+msgstr ""
+"&lt;xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+"&lt;profile xmlns=\"urn:org-kde-kremotecontrol\"\n"
+"  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n"
+"  xsi:schemaLocation=\"urn:org-kde-kremotecontrol file:profile.xsd\"&gt;\n"
+"\n"
+"    &lt;name&gt;Mein Profil&lt;/name&gt;\n"
+"    &lt;version&gt;0.1&lt;/version&gt;\n"
+"    &lt;author&gt;Ich&lt;/author&gt;\n"
+"    &lt;description&gt;Beschreibung der Funktionen des Profils&lt;/"
+"description&gt;\n"
+"    &lt;action id=\"someUniquId\"  repeat=\"true|false\" button=\"eineTaste"
+"\"&gt;\n"
+"      &lt;name&gt;Meine Aktion&lt;/name&gt;\n"
+"      &lt;description&gt;Beschreibung der Funktion dieser Aktion&lt;/"
+"description&gt;\n"
+"      &lt;prototype&gt;\n"
+"        &lt;--  Dies wird im nächsten Schritt erklärt --&gt;\n"
+"      &lt;prototype&gt;\n"
+"      &lt;ifmulti&gt;ifMultiOption&lt;/ifmulti&gt;\n"
+"    &lt;action&gt;\n"
+"\n"
+"&lt;/profile&gt;"
+
+#. Tag: para
+#: index.docbook:337
+#, no-c-format
+msgid ""
+"First define a unique identifier. This will be used by &kremotecontrol; to "
+"match existing actions to the template, for example for reading the "
+"description. This id must be unique through the whole profile. The "
+"<quote>button</quote> attribute is used for the autopopulate function. Look "
+"at the <quote>profile.xsd</quote> schema file for a complete list of "
+"available button names. The <quote>repeat</quote> attribute tells whether "
+"the action should be executed multiple times if the button on the remote is "
+"being held pressed. If the application should be started if not running on "
+"incoming button presses set <quote>autostart</quote> to <quote>true</quote>. "
+"The attributes <quote>button</quote>, <quote>repeat</quote> and "
+"<quote>autostart</quote> are optional. If <quote>repeat</quote> and "
+"<quote>autostart</quote> are not defined, they will default to <quote>false</"
+"quote>."
+msgstr ""
+"Geben Sie als erstes einen eindeutigen Bezeichner an. Diese ID wird in "
+"&kremotecontrol; dazu benutzt, um vorhandene Aktionen einer Vorlage "
+"zuzuordnen, wenn zum Beispiel die Beschreibung eingelesen wird. Diese ID "
+"muss innerhalb eines Profils eindeutig sein. Das Attribut <quote>button</"
+"quote> wird für das automatische Ausfüllen verwendet. In der Schemadatei "
+"<quote>profile.xsd</quote> finden Sie eine vollständige Liste aller "
+"möglichen Tastennamen. Das Attribut <quote>repeat</quote> legt fest, ob eine "
+"Aktion mehrfach ausgeführt wird, wenn eine Tasten längere Zeit gedrückt "
+"wird. Um eine Anwendung, die noch nicht läuft, auf Tastendruck automatisch "
+"zu starten, setzen Sie den Wert für  <quote>autostart</quote> auf "
+"<quote>true</quote>. Die Attribute <quote>button</quote>, <quote>repeat</"
+"quote> und <quote>autostart</quote> dürfen auch weggelassen werden. Sind "
+"<quote>repeat</quote> und <quote>autostart</quote> nicht definiert, wird als "
+"Voreinstellung <quote>false</quote> benutzt."
+
+#. Tag: para
+#: index.docbook:351
+#, no-c-format
+msgid ""
+"Add a short name to the <quote>name</quote> tag and a description using the "
+"<quote>description</quote> tag. The <quote>ifmulti</quote> property "
+"specifies what &kremotecontrol; should do if there are multiple instances "
+"running when a button is pressed. You can use the following values for this "
+"property: <quote>sendtotop</quote> (send call to the instance on top of the "
+"window stack), <quote>sendtobottom</quote> (send call to the instance on "
+"bottom of the window stack), <quote>sendtoall</quote> (send to all "
+"instances), <quote>dontsend</quote> (don't send the action to any instance) "
+"and <quote>unique</quote> (This application does not allow multiple "
+"instances). If this tag is not defined &kremotecontrol; assumes that the "
+"applications cannot be run multiple times, defaulting this tag to "
+"<quote>unique</quote>."
+msgstr ""
+"Geben Sie einen kurzen Namen für <quote>name</quote> und eine Beschreibung "
+"für <quote>description</quote> ein. Die Eigenschaft <quote>ifmulti</quote> "
+"legt fest, wie sich &kremotecontrol; bei einem Tastendruck verhält, wenn es "
+"mehrere laufenden Instanzen einer Anwendung gibt. Für diese Eigenschaft sind "
+"folgende Werte erlaubt: <quote>sendtotop</quote> - die Aktion wird an die "
+"oberste Anwendung im dem Fensterstapel weitergegeben, <quote>sendtobottom</"
+"quote> - die Aktion wird an die unterste Anwendung im dem Fensterstapel "
+"weitergegeben, <quote>sendtoall</quote>  -an alle Instanzen, "
+"<quote>dontsend</quote> - die Aktion wird nicht an alle Instanzen "
+"weitergereicht und <quote>unique</quote> - für diese Anwendung ist nur eine "
+"Instanz möglich. Ist dieser Wert nicht definiert, geht &kremotecontrol; "
+"davon aus, dass die Anwendung nur einmal ausgeführt werden kann und benutzt "
+"die Voreinstellung <quote>unique</quote>."
+
+#. Tag: para
+#: index.docbook:367
+#, no-c-format
+msgid ""
+"Next define the &DBus; function which should be executed in the "
+"<quote>prototype</quote> tag:"
+msgstr ""
+"Als nächstes wird die auszuführende &DBus;-Funktion in <quote>prototype</"
+"quote> definiert:"
+
+#. Tag: programlisting
+#: index.docbook:371
+#, no-c-format
+msgid ""
+"&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+"&lt;profile xmlns=\"urn:org-kde-kremotecontrol\"\n"
+"  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n"
+"  xsi:schemaLocation=\"urn:org-kde-kremotecontrol file:profile.xsd\"&gt;\n"
+"\n"
+"    &lt;name&gt;My Profile&lt;/name&gt;\n"
+"    &lt;version&gt;0.1&lt;/version&gt;\n"
+"    &lt;author&gt;Me&lt;/author&gt;\n"
+"    &lt;description&gt;Some descriptive information about what the profile "
+"does&lt;/description&gt;\n"
+"\n"
+"    &lt;action id=\"someUniquId\"  repeat=\"true|false\" button=\"someButton"
+"\"&gt;\n"
+"      &lt;name&gt;My Action&lt;/name&gt;\n"
+"      &lt;description&gt;What this action does&lt;/description&gt;\n"
+"\n"
+"      &lt;prototype&gt;\n"
+"        &lt;serviceName&gt;org.example.application&lt;/serviceName&gt;\n"
+"        &lt;node&gt;Some/Node&lt;/node&gt;\n"
+"        &lt;function&gt;function&lt;/function&gt;\n"
+"      &lt;/prototype&gt;\n"
+"\n"
+"      &lt;ifmulti&gt;ifMultiOption&lt;/ifmulti&gt;\n"
+"    &lt;/action&gt;\n"
+"\n"
+"&lt;/profile&gt;"
+msgstr ""
+"&lt;xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+"&lt;profile xmlns=\"urn:org-kde-kremotecontrol\"\n"
+"  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n"
+"  xsi:schemaLocation=\"urn:org-kde-kremotecontrol file:profile.xsd\"&gt;\n"
+"\n"
+"    &lt;name&gt;Mein Profil&lt;/name&gt;\n"
+"    &lt;version&gt;0.1&lt;/version&gt;\n"
+"    &lt;author&gt;Ich&lt;/author&gt;\n"
+"    &lt;description&gt;Beschreibung der Funktionen des Profils&lt;/"
+"description&gt;\n"
+"    &lt;action id=\"someUniquId\"  repeat=\"true|false\" button=\"eineTaste"
+"\"&gt;\n"
+"      &lt;name&gt;Meine Aktion&lt;/name&gt;\n"
+"      &lt;description&gt;Beschreibung der Funktion dieser Aktion&lt;/"
+"description&gt;\n"
+"      &lt;prototype&gt;\n"
+"        &lt;serviceName&gt;org.example.application&lt;/serviceName&gt;\n"
+"        &lt;node&gt;Some/Node&lt;/node&gt;\n"
+"        &lt;function&gt;function&lt;/function&gt;\n"
+"      &lt;prototype&gt;\n"
+"      &lt;ifmulti&gt;ifMultiOption&lt;/ifmulti&gt;\n"
+"    &lt;action&gt;\n"
+"\n"
+"&lt;/profile&gt;"
+
+#. Tag: para
+#: index.docbook:372
+#, no-c-format
+msgid ""
+"<quote>servicename</quote> holds the &DBus; service name for the "
+"application, &eg; <quote>org.kde.plasma-desktop</quote>. <quote>node</quote> "
+"holds the respective &DBus; node such as <quote>App</quote>. Add the "
+"function name without return value and arguments using the <quote>function</"
+"quote> tag. For example <quote>toggleDashboard</quote>."
+msgstr ""
+"<quote>servicename</quote> enthält den Namen des &DBus;-Dienstes für die "
+"Anwendung, &eg; <quote>org.kde.plasma-desktop</quote>. In <quote>node</"
+"quote> ist der zugehörige &DBus;-Knoten wie <quote>App</quote> einzutragen. "
+"Geben Sie den Funktionsnamen ohne Rückgabewert und Argumente in "
+"<quote>function</quote> an, zum Beispiel <quote>toggleDashboard</quote>."
+
+#. Tag: para
+#: index.docbook:382
+#, no-c-format
+msgid ""
+"If the function has arguments you need to describe each one of those, "
+"providing a description for the user, a type and optionally a default value. "
+"A list of supported types is can be found in the <quote>profile.xsd</quote> "
+"schema file. The <quote>comment</quote> tag should contain a nice user "
+"friendly description of what the argument is used for. You should also "
+"declare a default value for each argument between the <quote>default</quote> "
+"tags. Note that templates containing a button need to supply a default value "
+"for all arguments or the autopopulate function will produce broken functions."
+msgstr ""
+"Erfordert eine Funktion zusätzliche Argumente, muss für jedes Argument der "
+"Typ, eine Beschreibung für den Benutzer und optional ein Standardwert "
+"angegeben werden. Eine Liste der möglichen Argumenttypen finden Sie in der "
+"Schemadatei <quote>profile.xsd</quote>. In <quote>comment</quote> sollte "
+"eine benutzerfreundliche Beschreibung der Funktion des Arguments enthalten "
+"sein. In <quote>default</quote> sollten Sie einen Standardwert vorgeben. In "
+"Vorlagen für eine Taste müssen alle Argumente Standardwerte haben, sonst "
+"führt die Verwendung von <quote>Automatisch ausfüllen</quote> zu nicht "
+"korrekt arbeitenden Funktionen."
+
+#. Tag: programlisting
+#: index.docbook:393
+#, no-c-format
+msgid ""
+"&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+"&lt;profile xmlns=\"urn:org-kde-kremotecontrol\"\n"
+"   xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n"
+"   xsi:schemaLocation=\"urn:org-kde-kremotecontrol file:profile.xsd\"&gt;\n"
+"\n"
+"   &lt;name&gt;My Profile&lt;/name&gt;\n"
+"    &lt;version&gt;0.1&lt;/version&gt;\n"
+"    &lt;author&gt;Me&lt;/author&gt;\n"
+"    &lt;description&gt;Some descriptive information about what the profile "
+"does&lt;/description&gt;\n"
+"\n"
+"    &lt;action id=\"someUniquId\"  repeat=\"true|false\" button=\"someButton"
+"\"&gt;\n"
+"      &lt;name&gt;My Action&lt;/name&gt;\n"
+"      &lt;description&gt;What this action does&lt;/description&gt;\n"
+"\n"
+"      &lt;prototype&gt;\n"
+"        &lt;serviceName&gt;org.example.application&lt;/serviceName&gt;\n"
+"        &lt;node&gt;SomeNode&lt;/node&gt;\n"
+"        &lt;function&gt;function&lt;/function&gt;\n"
+"\n"
+"        &lt;arguments&gt;\n"
+"          &lt;argument type=\"QString\"&gt;\n"
+"            &lt;comment&gt;Additional comment&lt;/comment&gt;\n"
+"            &lt;default&gt;someValue&lt;/default&gt;\n"
+"          &lt;/argument&gt;\n"
+"        &lt;/arguments&gt;\n"
+"\n"
+"      &lt;/prototype&gt;\n"
+"\n"
+"      &lt;ifmulti&gt;ifMultiOption&lt;/ifmulti&gt;\n"
+"    &lt;/action&gt;\n"
+"\n"
+"&lt;/profile&gt;"
+msgstr ""
+"&lt;xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+"&lt;profile xmlns=\"urn:org-kde-kremotecontrol\"\n"
+"  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n"
+"  xsi:schemaLocation=\"urn:org-kde-kremotecontrol file:profile.xsd\"&gt;\n"
+"\n"
+"    &lt;name&gt;Mein Profil&lt;/name&gt;\n"
+"    &lt;version&gt;0.1&lt;/version&gt;\n"
+"    &lt;author&gt;Ich&lt;/author&gt;\n"
+"    &lt;description&gt;Beschreibung der Funktionen des Profils&lt;/"
+"description&gt;\n"
+"    &lt;action id=\"someUniquId\"  repeat=\"true|false\" button=\"eineTaste"
+"\"&gt;\n"
+"      &lt;name&gt;Meine Aktion&lt;/name&gt;\n"
+"      &lt;description&gt;Beschreibung der Funktion dieser Aktion&lt;/"
+"description&gt;\n"
+"      &lt;prototype&gt;\n"
+"        &lt;serviceName&gt;org.example.application&lt;/serviceName&gt;\n"
+"        &lt;node&gt;Some/Node&lt;/node&gt;\n"
+"        &lt;function&gt;function&lt;/function&gt;\n"
+"\n"
+"        &lt;arguments&gt;\n"
+"          &lt;argument type=\"QString\"&gt;\n"
+"            &lt;comment&gt;Zusätzlicher Kommentar&lt;/comment&gt;\n"
+"            &lt;default&gt;einWert&lt;/default&gt;\n"
+"          &lt;/argument&gt;\n"
+"        &lt;/arguments&gt;\n"
+"\n"
+"      &lt;prototype&gt;\n"
+"      &lt;ifmulti&gt;ifMultiOption&lt;/ifmulti&gt;\n"
+"    &lt;action&gt;\n"
+"\n"
+"&lt;/profile&gt;"
+
+#. Tag: title
+#: index.docbook:400
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#. Tag: para
+#: index.docbook:401
+#, no-c-format
+msgid ""
+"To test and use the profile you need to copy it into <filename>"
+"$(kde_datadir)/profiles</filename> and restart &kremotecontrol;."
+msgstr ""
+"Um das Profil zu benutzen und zu testen, müssen Sie es in den Ordner "
+"<filename>$(kde_datadir)/profiles</filename> kopieren und &kremotecontrol; "
+"neu starten."
+
+#. Tag: para
+#: index.docbook:405
+#, no-c-format
+msgid ""
+"If you would like to contribute the profile to the &kde; SC please send it "
+"to the kdeutils team at <email>kde-utils-devel@kde.org</email>."
+msgstr ""
+"Möchten Sie Profile zur &kde; SC beisteuern, senden Sie sie bitte unter der "
+"Adresse <email>kde-utils-devel@kde.org</email> an das KDE-Utils-Team ."
+
+#, fuzzy
+#~| msgid "<firstname>Gav</firstname> <surname>Wood</surname>"
+#~ msgid "<firstname>Frank</firstname> <surname>Scheffold</surname>"
+#~ msgstr "<firstname>Gav</firstname> <surname>Wood</surname>"
+
+#~ msgid "<firstname>Gav</firstname> <surname>Wood</surname>"
+#~ msgstr "<firstname>Gav</firstname> <surname>Wood</surname>"
+
+#~ msgid "gav@kde.org"
+#~ msgstr "gav@kde.org"
+
+#~ msgid "Gav Wood"
+#~ msgstr "Gav Wood"
+
+#~ msgid "<keyword>KDE</keyword>"
+#~ msgstr "<keyword>KDE</keyword>"
+
+#~ msgid "irkick"
+#~ msgstr "irkick"
+
+#~ msgid "kdelirc"
+#~ msgstr "kdelirc"
+
+#~ msgid "kcmlirc"
+#~ msgstr "kcmlirc"
+
+#~ msgid "lirc"
+#~ msgstr "lirc"
+
+#, fuzzy
+#~| msgid "Introduction"
+#~ msgid "Controller Functions"
+#~ msgstr "Einführung"
+
+#, fuzzy
+#~| msgid ""
+#~| "The list contains any remote controls detected on your system. Modes may "
+#~| "be added and removed by selecting the desired remote control and using "
+#~| "the buttons directly below the list Add, Remove. Modes may be renamed "
+#~| "\"inline\" in the standard KDE fashion by first selecting the mode in "
+#~| "the list box, and then clicking it again after a short pause. The Edit "
+#~| "button allows mode names to be edited, and also allows you to define an "
+#~| "icon that will show up in the system tray when that mode is entered."
+#~ msgid ""
+#~ "The list on the left contains all remote controls detected on your "
+#~ "system. Modes may be added and removed by selecting the desired remote "
+#~ "control or mode and using the buttons directly below the list. The Edit "
+#~ "button allows you to change existing modes."
+#~ msgstr ""
+#~ "Die Liste enthält alle angeschlossenen und entdeckten Fernbedienungen. "
+#~ "Modi können hinzugefügt und wieder gelöscht werden, indem die gewünschte "
+#~ "Fernbedienung ausgewählt und anschließend einer der Knöpfe unterhalb der "
+#~ "Liste (Modus hinzufügen, Modus entfernen) gedrückt wird. Modi können "
+#~ "direkt umbenannt werden, indem wie bei &kde; üblich der Modus ausgewählt "
+#~ "wird und der Name nach einer kurzen Zeit nochmals angeklickt wird. "
+#~ "Mittels <quote>Modus bearbeiten</quote>-Knopf kann der Name ebenfalls "
+#~ "geändert werden. Zusätzlich kann ein Symbol für jeden Modus definiert "
+#~ "werden, welches im Systembereich der Kontrollleiste angezeigt wird, wenn "
+#~ "dieser Modus ausgewählt ist."
+
+#~ msgid ""
+#~ "For the KDELirc framework to be utilised you must have setup a LIRC on "
+#~ "your computer. If it is properly set up, the &kdelirc; icon in the system "
+#~ "tray (show icon here) will light up red. If not, it will be grey and "
+#~ "crossed out."
+#~ msgstr ""
+#~ "Um das KDELirc-System zu benutzen, muss LIRC auf dem Rechner richtig "
+#~ "aufgesetzt sein. Ist es richtig aufgesetzt, erscheint das &kdelirc;-"
+#~ "Symbol im Systemabschnitt der Kontrollleiste rot. Ansonsten ist es grau "
+#~ "und durchgestrichen."
+
+#~ msgid ""
+#~ "There are several sections of the configuration. The list on the left "
+#~ "details the remote controls and modes. The selection of that dictates the "
+#~ "contents of the right-most list, which shows button/action bindings. "
+#~ "Flicking the main tab over to Loaded Extensions will show a list of "
+#~ "applications and remote controls that are recognized for the advanced "
+#~ "functionality; some data is also viewable by selecting one of the items."
+#~ msgstr ""
+#~ "Innerhalb der Einstellungen gibt es mehrere Bereiche: Auf der linken "
+#~ "Seite werden die Fernbedienungen und deren Modi aufgeführt. In "
+#~ "Abhängigkeit der dort getätigten Auswahl werden auf der rechten Seite die "
+#~ "Zuweisungen von Tasten zu Aktionen dargestellt. Der zweite Karteireiter "
+#~ "zeigt die geladenen Erweiterungen. Auf der linken Seite werden die "
+#~ "unterstützten Fernbedienungen und Programme, die erweiterte Funktionen "
+#~ "anbieten, aufgelistet. Wählen Sie einen Eintrag aus, um zusätzliche "
+#~ "Informationen hierfür zu sehen."
+
+#~ msgid ""
+#~ "Each remote control can be in at most one mode at once (it may also be in "
+#~ "no mode at all). The remote control also has a \"default mode\", which is "
+#~ "the mode that it starts in, and the mode that it gets reset to normally. "
+#~ "This may be set by using the Edit button."
+#~ msgstr ""
+#~ "Jede Fernbedienung befindet sich zu einem bestimmten Zeitpunkt in maximal "
+#~ "einem Modus (sie kann auch in gar keinem Modus sein). Jede Fernbedienung "
+#~ "hat eine <quote>Standardmodus</quote>, in welchem sie sich beim Starten "
+#~ "befindet. Dieser kann mit dem Knopf <quote>Bearbeiten</quote> gesetzt "
+#~ "werden."
+
+#~ msgid "Action-Button Bindings"
+#~ msgstr "Bindungen von Tasten an Aktionen"
+
+#~ msgid ""
+#~ "An action/button binding (\"action\") is a connection between a button "
+#~ "press and an effect. The effect may be to switch modes, to start a "
+#~ "program or to execute a function in a program (using D-Bus)."
+#~ msgstr ""
+#~ "Die Bindung einer Taste an eine Aktion ist eine Verbindung zwischen dem "
+#~ "Drücken einer Taste der Fernbedienung und einem Effekt. Der Effekt kann "
+#~ "ein Moduswechsel sein, ebenso wie der Start eines Programms oder das "
+#~ "Aufrufen einer Funktion innerhalb eines laufenden Programms über D-Bus."
+
+#~ msgid ""
+#~ "Actions may be associated with a mode of the remote control; if it is, "
+#~ "the action will only have effect when the remote control is in that mode. "
+#~ "Actions may also be placed out of any mode. Such actions will always have "
+#~ "their desired effect no matter what mode that remote control happens to "
+#~ "be in."
+#~ msgstr ""
+#~ "Aktionen können mit bestimmten Modi der Fernbedienung gekoppelt werden; "
+#~ "eine Aktion hat dann nur einen Effekt, wenn sich die Fernbedienung in "
+#~ "diesem Modus befindet. Aktionen können auch ohne Modus definiert werden. "
+#~ "Diese Aktionen haben immer eine Auswirkung, egal in welchem Modus sich "
+#~ "die Fernbedienung befindet."
+
+#~ msgid ""
+#~ "To add an action/button binding simply use the Add button. Removal may be "
+#~ "performed by selecting the action(s) to be removed and clicking the "
+#~ "Remove button. Actions may be Edited with the Edit button, and moved to "
+#~ "different modes by dragging and dropping onto the desired mode in the "
+#~ "remotes/modes list."
+#~ msgstr ""
+#~ "Um eine Bindung einer Taste an eine Aktion vorzunehmen müssen Sie den "
+#~ "Hinzufügen-Knopf verwenden. Zum Löschen wählen sie alle gewünschten "
+#~ "Aktionen aus und drücken den Löschen-Knopf. Mit dem Bearbeiten-Knopf "
+#~ "rufen Sie das entsprechende Fenster auf und durch Ziehen und Fallenlassen "
+#~ "können Sie Aktionen zwischen verschiedenen Modi hin und her schieben."
+
+#~ msgid ""
+#~ "Actions may also be \"automatically\" populated. This handles the "
+#~ "instance when you have a supported remote control and you wish to map its "
+#~ "buttons to a supported application's functions. &kdelirc; can attempt to "
+#~ "match buttons to functions for you; this behaviour may have to be "
+#~ "tweaked, however."
+#~ msgstr ""
+#~ "Aktionen können <quote>automagisch</quote> geladen werden. Dies ist dann "
+#~ "möglich, wenn Ihre Fernbedienung von &kdelirc; unterstützt ist und Sie "
+#~ "eine Bindung zwischen Tasten der Fernbedienung und unterstützten "
+#~ "Programmen herstellen wollen. In diesem Fall kann &kdelirc; versuchen, "
+#~ "Tasten auf Funktionen zuzuordnen. Das Resultat muss allerdings (noch) von "
+#~ "Hand nachbearbeitet werden."
+
+#~ msgid "Loaded Extensions"
+#~ msgstr "Geladene Erweiterungen"
+
+#~ msgid ""
+#~ "There is another tab available named \"Loaded Extensions\". This details "
+#~ "the applications and remote controls that &kdelirc; recognises. &kdelirc; "
+#~ "can also use unsupported remote controls and applications, but the Auto-"
+#~ "Populate function will not work as well (if at all)."
+#~ msgstr ""
+#~ "Der zweite Karteireiter heißt <quote>Geladene Erweiterungen</quote>. Auf "
+#~ "diesem Karteireiter werden die von &kdelirc; unterstützten "
+#~ "Fernbedienungen und Anwendungen mit vielen Details aufgelistet. &kdelirc; "
+#~ "kann auch nicht unterstützte Fernbedienungen und Anwendungen benutzen, "
+#~ "hier funktioniert aber das <quote>automagische</quote> Abfüllen der "
+#~ "Bindungen definitiv nicht."
+
+#~ msgid ""
+#~ "By clicking on an entry you can see information on it such as the "
+#~ "author's details."
+#~ msgstr ""
+#~ "Klicken Sie auf einen Eintrag, um Informationen (z.B. Details zum Autor) "
+#~ "angezeigt zu bekommen."
+
+#~ msgid "Credits and Licenses"
+#~ msgstr "Danksagungen und Lizenz"
+
+#~ msgid ""
+#~ "&kdelirc; Framework Copyright (c) 2004 Gav Wood <email>gav@kde.org</"
+#~ "email>."
+#~ msgstr ""
+#~ "&kdelirc; LIRC-System Copyright (c) 2004 Gav Wood<email>gav@kde.org</"
+#~ "email>."
+
+#~ msgid ""
+#~ "Documentation Copyright (c) 2004 by Gav Wood <email>gav@kde.org</email>."
+#~ msgstr ""
+#~ "Copyright für die Dokumentation: Gav Wood <email>gav@kde.org</email>."
+
+#~ msgid "&underFDL; &underGPL;"
+#~ msgstr "&underFDL; &underGPL;"

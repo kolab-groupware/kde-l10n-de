@@ -1,0 +1,890 @@
+# Thorsten Mürell <thorsten@muerell.de>, 2003, 2004.
+# Burkhard Lück <lueck@hube-lueck.de>, 2005, 2011, 2012, 2013.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: kstars_config\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:16+0000\n"
+"PO-Revision-Date: 2013-01-10 19:24+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: config.docbook:2
+#, no-c-format
+msgid "Configuring &kstars;"
+msgstr "&kstars; einrichten"
+
+#. Tag: title
+#: config.docbook:5
+#, no-c-format
+msgid "Setting the Geographic Location"
+msgstr "Einstellung des Standorts"
+
+#. Tag: para
+#: config.docbook:7
+#, no-c-format
+msgid ""
+"Here is a screenshot of the <guilabel>Set Geographic Location</guilabel> "
+"window:"
+msgstr ""
+"Hier ist ein Bildschirmfoto des Dialogs <guilabel>Standort einstellen</"
+"guilabel> "
+
+#. Tag: screeninfo
+#: config.docbook:11
+#, no-c-format
+msgid "Changing the Geographic Location"
+msgstr "Änderung des Standorts"
+
+#. Tag: phrase
+#: config.docbook:17
+#, no-c-format
+msgid "Set Location Window"
+msgstr "Der Dialog <quote>Standort einstellen</quote>"
+
+#. Tag: para
+#: config.docbook:23
+#, no-c-format
+msgid ""
+"There is a list of over 2500 predefined cities available to choose from. You "
+"set your location by highlighting a city from this list. Each city is "
+"represented in the world map as a small dot, and when a city is highlighted "
+"in the list, a red crosshairs appears on its location in the map."
+msgstr ""
+"Es gibt eine Liste mit mehr als 2500 Standorten zur Auswahl. Sie stellen den "
+"Standort ein, in dem Sie eine Stadt aus dieser Liste auswählen. Jede Stadt "
+"wird in der Weltkarte als kleiner Punkt dargestellt. Wenn Sie eine Stadt in "
+"der Liste auswählen, wird der Standort als rotes Kreuz in der Karte "
+"angezeigt."
+
+#. Tag: primary
+#: config.docbook:32 config.docbook:54
+#, no-c-format
+msgid "Geographic Location Tool"
+msgstr "Das Hilfsmittel <quote>Geografischer Standort</quote>"
+
+#. Tag: secondary
+#: config.docbook:33
+#, no-c-format
+msgid "Filtering"
+msgstr "Filtern"
+
+#. Tag: para
+#: config.docbook:33
+#, no-c-format
+msgid ""
+"It is not practical to scroll through the full list of 2500 locations, "
+"looking for a specific city. To make searches easier, the list can be "
+"filtered by entering text in the boxes below the map. For example, in the "
+"screenshot, the text <quote>Ba</quote> appears in the <guilabel>City Filter</"
+"guilabel> box, while <quote>M</quote> has been entered in the "
+"<guilabel>Province Filter</guilabel> box, and <quote>USA</quote> is in the "
+"<guilabel>Country Filter</guilabel> box. Note that all of the cities "
+"displayed in the list have city, province, and country names that begin with "
+"the entered filter strings, and that the message below the filter boxes "
+"indicates that 7 cities are matched by the filters. Also notice that the "
+"dots representing these seven cities in the map have been colored white, "
+"while the unmatched cities remain gray."
+msgstr ""
+"Es ist unpraktisch, durch die ganze Liste mit 2500 Orten zu blättern, um "
+"eine bestimmte Stadt zu finden. Um die Suche zu erleichtern, können Sie die "
+"Liste durch Eingabe von Text in die Felder unter der Karte filtern. Im "
+"Bildschirmfoto sehen Sie zum Beispiel den Text <quote>BA</quote> im Feld "
+"<guilabel>Stadt</guilabel>, <quote>M</quote> im Feld <guilabel>Provinz</"
+"guilabel> und <quote>USA</quote> im Feld <guilabel>Land</guilabel>. Beachten "
+"Sie, dass für alle in der Liste angezeigten Städte die ersten Buchstaben von "
+"Name, Provinz und Land mit den Zeichen in den Filterfeldern übereinstimmen "
+"und darunter angezeigt wird, dass sieben Städte die Filterbedingungen "
+"erfüllen. Außerdem werden diese sieben Städte in der Karte als weiße Punkte "
+"dargestellt, alle andern Städte aber weiterhin als graue Punkte."
+
+#. Tag: para
+#: config.docbook:47
+#, no-c-format
+msgid ""
+"The list can also be filtered by location in the map. Clicking anywhere in "
+"the world map will show only those cities within two degrees of the clicked "
+"location. At this time, you can search by name, or by location, but not both "
+"at once. In other words, when you click on the map, the name filters are "
+"ignored, and vice versa."
+msgstr ""
+"Sie können die Liste auch über Orte auf der Karte filtern. Klicken Sie auf "
+"irgendeinen Punkt auf der Weltkarte und nur Städte im Umkreis von zwei Grad "
+"um diesen Punkt werden angezeigt. Zurzeit können Sie nur nach Namen oder "
+"über Orte auf der Karte filtern. Wenn Sie also auf einen Punkt auf der Karte "
+"klicken, dann wird der Namensfilter nicht angewandt und umgekehrt."
+
+#. Tag: secondary
+#: config.docbook:55
+#, no-c-format
+msgid "Custom locations"
+msgstr "Eigene Standorte"
+
+#. Tag: para
+#: config.docbook:55
+#, no-c-format
+msgid ""
+"The <link linkend=\"ai-geocoords\">longitude, latitude</link> and <link "
+"linkend=\"ai-timezones\">time zone</link> information for the currently-"
+"selected location are displayed in the boxes at the bottom of the window. If "
+"you feel that any of these values are inaccurate, you can modify them and "
+"press the <guibutton>Add City to List</guibutton> button to record your "
+"custom version of the location. You can also define a completely new "
+"location by pressing the <guibutton>Clear Fields</guibutton> button, and "
+"entering the data for the new location. Note that all fields except the "
+"optional <guilabel>State/Province</guilabel> must be filled before the new "
+"location can be added to the list. &kstars; will automatically load your "
+"custom locations for all future sessions. Please note, at this point, the "
+"only way to remove a custom location is to remove the appropriate line from "
+"the file <filename>~/.kde/share/apps/kstars/mycities.dat</filename>."
+msgstr ""
+"Die Angaben zum <link linkend=\"ai-geocoords\">Längengrad, Breitengrad</"
+"link> und zur <link linkend=\"ai-timezones\">Zeitzone</link> des aktuell "
+"eingestellten Standortes werden am unteren Rand des Fensters angezeigt. Wenn "
+"Sie feststellen, dass einige dieser Angaben falsch sind, können Sie sie "
+"ändern und dann auf den Knopf <guibutton>Stadt zur Liste hinzufügen</"
+"guibutton> drücken, um Ihre Eingabe zu speichern. Sie können außerdem einen "
+"völlig neuen Standort eingeben, indem Sie den Knopf <guibutton>Felder "
+"löschen</guibutton> drücken und die Daten für den neuen Standort eingeben. "
+"Alle Felder außer der freigestellten Angabe von <guilabel>Staat/Provinz</"
+"guilabel> müssen ausgefüllt werden, ehe der neue Standort in die Liste "
+"aufgenommen werden kann. &kstars; lädt dann automatisch in allen späteren "
+"Sitzungen Ihre eigenen Standorte. Beachten Sie, dass Sie zurzeit die selbst "
+"eingegebenen Standorte nur löschen können, indem Sie die zugehörige Zeile in "
+"der Datei <filename>~/.kde/share/apps/kstars/mycities.dat</filename> löschen."
+
+#. Tag: para
+#: config.docbook:71
+#, no-c-format
+msgid ""
+"If you add custom locations (or modify existing ones), please send us your "
+"<filename>mycities.dat</filename> file so that we can add your locations to "
+"the master list."
+msgstr ""
+"Wenn Sie eigene Standorte eingeben (oder vorhandene bearbeiten), senden Sie "
+"uns bitte Ihre Datei <filename>mycities.dat</filename>, damit wir Ihre "
+"Standorte in die Hauptliste einfügen können."
+
+#. Tag: title
+#: config.docbook:79
+#, no-c-format
+msgid "Setting the Time"
+msgstr "Einstellung der Zeit"
+
+#. Tag: primary
+#: config.docbook:81 config.docbook:96 config.docbook:108
+#, no-c-format
+msgid "Date and Time"
+msgstr "Datum und Zeit"
+
+#. Tag: secondary
+#: config.docbook:82
+#, no-c-format
+msgid "The simulation clock"
+msgstr "Die Simulationsuhr"
+
+#. Tag: para
+#: config.docbook:82
+#, no-c-format
+msgid ""
+"When &kstars; starts up, the time is set to your computer's system clock, "
+"and the &kstars; clock is running to keep up with the real time. If you want "
+"to stop the clock, select <guimenuitem>Stop Clock</guimenuitem> from the "
+"<guimenu>Time</guimenu> menu, or simply click on the <guiicon>Stop Clock</"
+"guiicon> icon in the toolbar. You can make the clock run slower or faster "
+"than normal, or even make it run backward, using the time-step spinbox in "
+"the toolbar. This spinbox has two sets of up/down buttons. The first one "
+"will step through all 83 available time steps, one by one. The second one "
+"will skip to the next higher (or lower) unit of time, which allows you to "
+"make large timestep changes more quickly."
+msgstr ""
+"Beim Start von &kstars; wird die Zeit in &kstars; auf die Zeit Ihres "
+"Computers gestellt und die Uhr in &kstars; läuft wie in der Wirklichkeit. "
+"Wenn Sie die Uhr anhalten wollen, wählen Sie <guimenuitem>Uhr anhalten</"
+"guimenuitem> im Menü <guimenu>Zeit</guimenu> oder klicken Sie einfach auf "
+"das Symbol <guiicon>Uhr anhalten</guiicon> in der Werkzeugleiste. Mit dem "
+"Drehfeld Zeitschritt in der Werkzeugleiste können Sie die Zeit schneller "
+"oder langsamer als normal und sogar rückwärts laufen lassen. Dieses Drehfeld "
+"hat zwei Gruppen von Knöpfen für Auf/Ab. Die erste durchläuft alle "
+"vorhandenen 83 Zeitschritte nacheinander. Die zweite wechselt zur "
+"nächsthöheren (oder niedrigeren) Zeiteinheit, damit Sie große Zeitschritte "
+"schneller ablaufen lassen können."
+
+#. Tag: secondary
+#: config.docbook:97
+#, no-c-format
+msgid "Setting"
+msgstr "Einstellung"
+
+#. Tag: para
+#: config.docbook:97
+#, no-c-format
+msgid ""
+"You can set the time and date by selecting <guimenuitem>Set Time...</"
+"guimenuitem> from the <guimenu>Time</guimenu> menu, or by pressing the "
+"<guiicon>time</guiicon> icon in the toolbar. The <guilabel>Set Time</"
+"guilabel> window uses a standard &kde; Date Picker widget, coupled with two "
+"spinboxes for setting the hours and minutes. If you want to re-synchronize "
+"the simulation clock back to the current CPU time, just select "
+"<guimenuitem>Set Time to Now</guimenuitem> from the <guimenu>Time</guimenu> "
+"menu."
+msgstr ""
+"Zeit und Datum können Sie mit <guimenuitem>Zeit einstellen ...</guimenuitem> "
+"im Menü <guimenu>Zeit</guimenu> oder mit dem Symbol <guiicon>Zeit</guiicon> "
+"in der Werkzeugleiste einstellen. Im Fenster <guilabel>Zeit einstellen</"
+"guilabel> finden Sie die &kde;-Standard Datumsauswahl zusammen mit zwei  "
+"Drehfeldern für die Einstellung von Stunden, Minuten. Wollen Sie die "
+"Simulationsuhr wieder auf die Zeit des Computers einstellen, wählen Sie nur "
+"<guimenuitem>Aktuelle Zeit einstellen</guimenuitem> aus dem Menü "
+"<guimenu>Zeit</guimenu>."
+
+#. Tag: secondary
+#: config.docbook:109
+#, no-c-format
+msgid "Extended range of dates"
+msgstr "Erweiterter Bereich für Zeitdaten"
+
+#. Tag: para
+#: config.docbook:109
+#, no-c-format
+msgid ""
+"&kstars; can accept very remote dates beyond the usual limits imposed by "
+"QDate. Currently, you can set the date between the years -50000 and +50000. "
+"We may extend this range even further in future releases. However, please be "
+"aware that the accuracy of the simulation becomes more and more degraded as "
+"more remote dates are examined. This is especially true for the positions of "
+"solar system bodies."
+msgstr ""
+"&kstars; kann weit entfernte Zeitdaten über die normale durch QDate "
+"vorgegebene Grenze hinaus verarbeiten. Zurzeit können Sie Daten im Bereich "
+"von -50000 bis +50000 Jahren einstellen. Dieser Bereich wird vielleicht in "
+"zukünftigen Versionen erweitert werden.Beachten Sie aber, dass die "
+"Genauigkeit der Simulation für weit entfernte Zeiten immer mehr abnimmt. "
+"Dies betrifft besonders die Position der Himmelskörper im Sonnensystem."
+
+#. Tag: title
+#: config.docbook:120
+#, no-c-format
+msgid "The Configure &kstars; Window"
+msgstr "Der Dialog &kstars; einrichten"
+
+#. Tag: primary
+#: config.docbook:122 config.docbook:152 config.docbook:168 config.docbook:182
+#: config.docbook:194 config.docbook:235
+#, no-c-format
+msgid "Configure &kstars; window"
+msgstr "Dialog &kstars; einrichten"
+
+#. Tag: para
+#: config.docbook:122
+#, no-c-format
+msgid ""
+"The <guilabel>Configure &kstars;</guilabel> window allows you to modify a "
+"wide range of display options. You can access the window with the "
+"<guiicon>configure</guiicon> toolbar icon, or by selecting "
+"<guimenuitem>Configure &kstars;...</guimenuitem> from the <guimenu>Settings</"
+"guimenu> menu. The window is depicted below:"
+msgstr ""
+"Im Dialog <guilabel>&kstars; einrichten</guilabel> können Sie eine große "
+"Anzahl von Optionen für die Ansicht einstellen. Diesen Dialog öffnen Sie mit "
+"entweder mit dem Symbol <guiicon>Einstellungen</guiicon> in der "
+"Werkzeugleiste, oder durch Auswahl von <guimenuitem>&kstars; einrichten ...</"
+"guimenuitem> aus dem Menü <guimenu>Einstellungen</guimenu>. Das Fenster ist "
+"unten dargestellt:"
+
+#. Tag: screeninfo
+#: config.docbook:131
+#, no-c-format
+msgid "<screeninfo>Configure &kstars; Window</screeninfo>"
+msgstr "<screeninfo>Dialog &kstars; einrichten</screeninfo>"
+
+#. Tag: phrase
+#: config.docbook:137
+#, no-c-format
+msgid "<phrase>Configure &kstars; Window</phrase>"
+msgstr "<phrase>Dialog &kstars; einrichten</phrase>"
+
+#. Tag: para
+#: config.docbook:143
+#, no-c-format
+msgid ""
+"The <guilabel>Configure &kstars;</guilabel> window is divided into nine "
+"pages: <guilabel>Catalogs</guilabel>, <guilabel>Solar System</guilabel>, "
+"<guilabel>Satellites</guilabel>, <guilabel>Supernovae</guilabel>, "
+"<guilabel>Guides</guilabel>, <guilabel>Colors</guilabel>, <guilabel>INDI</"
+"guilabel>, <guilabel>Xplanet</guilabel>, and <guilabel>Advanced</guilabel>."
+msgstr ""
+"Der Dialog <guilabel>&kstars; einrichten</guilabel> ist in neun Seiten "
+"eingeteilt: <guilabel>Kataloge</guilabel>, <guilabel>Sonnensystem</"
+"guilabel>, <guilabel>Satelliten</guilabel>, <guilabel>Supernovae</guilabel>, "
+"<guilabel>Orientierungshilfen</guilabel>, <guilabel>Farben</guilabel>, "
+"<guilabel>INDI</guilabel>, <guilabel>Xplanet</guilabel> und "
+"<guilabel>Erweitert</guilabel>. "
+
+#. Tag: secondary
+#: config.docbook:153
+#, no-c-format
+msgid "Catalogs page"
+msgstr "Die Seite <quote>Kataloge</quote>"
+
+#. Tag: para
+#: config.docbook:153
+#, no-c-format
+msgid ""
+"In the <guilabel>Catalogs</guilabel> page, you determine which object "
+"catalogs are displayed in the map. The <guilabel>Stars</guilabel> section "
+"also allows you to set the <quote>faint <link linkend=\"ai-magnitude"
+"\">magnitude</link> limit</quote> for stars, and the <link linkend=\"ai-"
+"magnitude\">magnitude</link> limit for displaying the names and/or "
+"magnitudes of stars. Below the stars section, the <guilabel>Deep-Sky "
+"Objects</guilabel> section controls the display of several non-stellar "
+"object catalogs. By default, the list includes the Messier, NGC and IC "
+"catalogs. You can add your own custom object catalogs by pressing the "
+"<guibutton>Import Catalog</guibutton> or <guilabel>Load Catalog</guilabel> "
+"button. For detailed instructions on preparing a catalog data file, see the "
+"<filename>README.customize</filename> file that ships with &kstars;."
+msgstr ""
+"Auf der Seite <guilabel>Kataloge</guilabel> können Sie wählen, welche "
+"Objektkataloge in der Karte angezeigt werden. Im Abschnitt <guilabel>Sterne</"
+"guilabel> können Sie auch das <quote>untere <link linkend=\"ai-magnitude"
+"\">Helligkeit</link>slimit</quote> für Sterne einstellen und ein <link "
+"linkend=\"ai-magnitude\">Magnituden</link>limit für die Anzeige der Namen "
+"und/oder Magnitude der Sterne. Unter dem Abschnitt <quote>Sterne</quote> "
+"befindet sich der Abschnitt <guilabel>Deep-Sky-Objekte</guilabel> mit den "
+"Einstellungen für die Anzeige von nichtstellaren Himmelsobjekten. Als "
+"Standard enthält die Liste den Messier-, NGC- und IC-Katalog. Sie können "
+"Ihre eigenen Objektkataloge hinzufügen, indem Sie den Knopf "
+"<guibutton>Katalog importieren ...</guibutton> drücken. Genauere "
+"Informationen zu eigenen Katalogdateien finden Sie in der Datei "
+"<filename>README.customize</filename>, die mit &kstars; ausgeliefert wird."
+
+#. Tag: secondary
+#: config.docbook:169
+#, no-c-format
+msgid "Solar System page"
+msgstr "Die Seite <quote>Sonnensystem</quote>"
+
+#. Tag: para
+#: config.docbook:169
+#, no-c-format
+msgid ""
+"In the <guilabel>Solar System</guilabel> page, you can specify whether the "
+"Sun, Moon, planets, comets and asteroids are displayed, and whether the "
+"major bodies are drawn as colored circles or actual images. You can also "
+"toggle whether solar system bodies have name labels attached, and control "
+"how many of the comets and asteroids get name labels. There is an option to "
+"automatically attach a temporary <quote>orbit trail</quote> whenever a solar "
+"system body is tracked, and another to toggle whether the color of the orbit "
+"trail fades into the background sky color."
+msgstr ""
+"Auf der Seite <guilabel>Sonnensystem</guilabel> können Sie angeben, ob die "
+"Sonne, der Mond, die Planeten, Kometen und Asteroiden angezeigt werden "
+"sollen und ob diese Himmelskörper als farbige Kreise oder mit ihren "
+"wirklichen Bildern angezeigt werden sollen. Sie können auch bestimmen, ob "
+"die Sonnensystemkörper Bezeichnungen tragen und können kontrollieren, wie "
+"viele der Kometen und Asteroiden Namensbezeichnungen tragen. Es gibt eine "
+"Einstellung, um automatisch <quote>Umlaufspuren</quote> hinzuzufügen, wenn "
+"ein Sonnensystemkörper verfolgt wird und eine andere Einstellung, ob die "
+"Planetenfarbe in den Sternenhintergrund verläuft."
+
+#. Tag: secondary
+#: config.docbook:183
+#, no-c-format
+msgid "Guides page"
+msgstr "Die Seite <quote>Orientierungshilfen</quote>"
+
+#. Tag: para
+#: config.docbook:183
+#, no-c-format
+msgid ""
+"The <guilabel>Guides</guilabel> page lets you toggle whether non-objects are "
+"displayed (&ie;, constellation lines, constellation names, the Milky Way "
+"contour, the <link linkend=\"ai-cequator\">celestial equator</link>, <link "
+"linkend=\"ai-ecliptic\">the ecliptic</link>, <link linkend=\"ai-horizon"
+"\">the horizon line</link>, and the opaque ground). You can also choose "
+"whether you would like to see Latin constellation names, <acronym>IAU</"
+"acronym>-standard three-letter abbreviations, or constellation names using "
+"your local language."
+msgstr ""
+"Auf der Seite <guilabel>Orientierungshilfen</guilabel> können Sie "
+"einstellen, was außer den Objekten angezeigt werden soll (&eg; "
+"Sternbildlinien, Sternbildnamen, Milchstraßenkonturen, <link linkend=\"ai-"
+"cequator\">Himmelsäquator</link>, <link linkend=\"ai-ecliptic\">Ekliptik</"
+"link>, <link linkend=\"ai-horizon\">Horizont</link> und undurchsichtiger "
+"Boden). Sie können auch auswählen, ob Sie lateinische Sternbildnamen, "
+"dreibuchstabige <acronym>IAU</acronym>-Standardabkürzungen oder Namen in "
+"ihrer eigenen Sprache sehen wollen."
+
+#. Tag: secondary
+#: config.docbook:195
+#, no-c-format
+msgid "Colors page"
+msgstr "Die Seite <quote>Farben</quote>"
+
+#. Tag: primary
+#: config.docbook:196 config.docbook:296
+#, no-c-format
+msgid "Color Schemes"
+msgstr "Farbschemata"
+
+#. Tag: secondary
+#: config.docbook:197 config.docbook:304 config.docbook:311 config.docbook:335
+#, no-c-format
+msgid "Customizing"
+msgstr "Anpassen"
+
+#. Tag: para
+#: config.docbook:197
+#, no-c-format
+msgid ""
+"The <guilabel>Colors</guilabel> page allows you to set the color scheme, and "
+"to define custom color schemes. The tab is split into two panels:"
+msgstr ""
+"Sie können das Farbenschema auf der Seite <guilabel>Farben</guilabel> "
+"einstellen. Die Seite ist in zwei Felder aufgeteilt:"
+
+#. Tag: para
+#: config.docbook:201
+#, no-c-format
+msgid ""
+"The left panel shows a list of all display items with adjustable colors. "
+"Click on any item to bring up a color selection window to adjust its color. "
+"Below the list is the <guilabel>Star Color Mode</guilabel> selection box. By "
+"default, &kstars; draws stars with a <link linkend=\"ai-colorandtemp"
+"\">realistic color</link> tint according to the spectral type of the star. "
+"However, you may also choose to draw the stars as solid white, black or red "
+"circles. If you are using the realistic star colors, you can set the "
+"saturation level of the star colors with the <guilabel>Star Color Intensity</"
+"guilabel> spinbox."
+msgstr ""
+"Die linke Seite zeigt eine Liste aller Objekte, deren Farben verändert "
+"werden kann. Klicken Sie auf einen Eintrag, um einen Dialog zur Farbwahl zu "
+"öffnen, in dem Sie die Farbe verändern können. Unter der Liste ist das "
+"<guilabel>Sternenfarben</guilabel>-Auswahlfeld. Standardmäßig zeichnet "
+"&kstars; die Sterne mit <link linkend=\"ai-colorandtemp\">realistischen "
+"Farben</link>, die vom Spektraltyp des Sterns abhängen. Dennoch können Sie "
+"auch auswählen, dass die Sterne nur als weiße, schwarze oder rote Kreise "
+"angezeigt werden. Wenn Sie die realistischen Sternenfarben benutzen, können "
+"Sie die Sättigungsstufe der Sternenfarben im Drehfeld "
+"<guilabel>Sternenfarbenintensität</guilabel> einstellen."
+
+#. Tag: para
+#: config.docbook:212
+#, no-c-format
+msgid ""
+"The right panel lists the defined color schemes. There are four predefined "
+"schemes: the <guilabel>Default Colors</guilabel> scheme, <guilabel>Star "
+"Chart</guilabel>, which uses black stars on a white background, "
+"<guilabel>Night Vision</guilabel>, which uses only shades of red in order to "
+"protect dark-adapted vision, and <guilabel>Moonless Night</guilabel>, a more "
+"realistic, dark theme. Additionally, you can save the current color settings "
+"as a custom scheme by clicking the <guibutton>Save Current Colors</"
+"guibutton> button. It will prompt you for a name for the new scheme, and "
+"then your scheme will appear in the list in all future &kstars; sessions. To "
+"remove a custom scheme, simply highlight it in the list, and press the "
+"<guibutton>Remove Color Scheme</guibutton> button."
+msgstr ""
+"Im rechten Rahmen werden die definierten Farbschemata aufgelistet. Es gibt "
+"drei vordefinierte Schemata: Das <guilabel>Standardfarben</guilabel>-Schema, "
+"ein <guilabel>Sternenkarte</guilabel>nschema mit schwarzen Sternen auf einem "
+"weißen Hintergrund, <guilabel>Nachtsicht</guilabel> nur mit Abstufungen in "
+"roter Farbe, um Ihre nachtangepasste Sicht nicht zu stören und "
+"<guilabel>Mondlose Nacht</guilabel>, ein realistischeres, dunkles Design."
+"Zusätzlich können Sie die aktuellen Farbeinstellungen als eigene Einstellung "
+"speichern, indem Sie auf den Knopf <guibutton>Aktuelle Farben speichern</"
+"guibutton> klicken. Sie werden nach einem Namen für das neue Schema gefragt "
+"und dann wird ihr Schema in allen weiteren &kstars;-Sitzungen in der Liste "
+"auftauchen. Um ein eigenes Schema zu löschen, wählen Sie das Schema aus der "
+"Liste und drücken Sie den Knopf <guibutton>Farbschema entfernen</guibutton>."
+
+#. Tag: para
+#: config.docbook:226
+#, no-c-format
+msgid ""
+"For detailed explanation of the options on the <guilabel>INDI</guilabel> "
+"page see the <link linkend=\"indi-configure\">Configure INDI</link> section."
+msgstr ""
+"Eine ausführliche Erklärung der Einstellungen auf der Seite <guilabel>INDI</"
+"guilabel> finden Sie im Abschnitt <link linkend=\"indi-configure\">INDI "
+"einrichten</link>."
+
+#. Tag: secondary
+#: config.docbook:236
+#, no-c-format
+msgid "Advanced page"
+msgstr "Die Seite <quote>Erweitert</quote>"
+
+#. Tag: para
+#: config.docbook:236
+#, no-c-format
+msgid ""
+"The <guilabel>Advanced</guilabel> page provides fine-grained control over "
+"the more subtle behaviors of &kstars;."
+msgstr ""
+"Die Seite <guilabel>Erweitert</guilabel> ermöglicht Ihnen eine genaue "
+"Einstellung der Verhaltensweise von &kstars;."
+
+#. Tag: primary
+#: config.docbook:240
+#, no-c-format
+msgid "Atmospheric Refraction"
+msgstr "Atmosphärische Lichtbrechung"
+
+#. Tag: para
+#: config.docbook:240
+#, no-c-format
+msgid ""
+"The <guilabel>Correct for atmospheric refraction</guilabel> checkbox "
+"controls whether the positions of objects are corrected for the effects of "
+"the atmosphere. Because the atmosphere is a spherical shell, light from "
+"outer space is <quote>bent</quote> as it passes through the atmosphere to "
+"our telescopes or eyes on the Earth's surface. The effect is largest for "
+"objects near the horizon, and actually changes the predicted rise or set "
+"times of objects by a few minutes. In fact, when you <quote>see</quote> a "
+"sunset, the Sun's actual position is already well below the horizon; "
+"atmospheric refraction makes it seem as if the Sun is still in the sky. Note "
+"that atmospheric refraction is never applied if you are using "
+"<guilabel>Equatorial coordinates</guilabel>."
+msgstr ""
+"Das Ankreuzfeld <guilabel>Atmosphärische Lichtbrechung korrigieren</"
+"guilabel> kontrolliert, ob die Positionen der Objekte wegen der Effekte der "
+"Lichtbrechung korrigiert werden. Da die Atmosphäre eine kugelförmige Muschel "
+"ist, wird das Licht aus dem All <quote>gebrochen</quote>, wenn es durch die "
+"Atmosphäre zu unseren Teleskopen oder unseren Augen auf der Erdoberfläche "
+"kommt. Der Effekt ist dabei am größten bei Objekten in der Nähe des "
+"Horizonts und verändert tatsächlich die vorhergesagten Aufgangs- und "
+"Untergangszeiten von Objekten um mehrere Minuten! Wenn Sie einen "
+"Sonnenuntergang <quote>sehen</quote>, ist die Position der Sonne tatsächlich "
+"schon unter dem Horizont, die atmosphärische Lichtbrechung lässt dabei die "
+"Sonne immer noch scheinbar am Himmel sichtbar sein. Beachten Sie, dass die "
+"atmosphärische Lichtbrechung nie verwendet wird, wenn Sie "
+"<guilabel>Äquatoriale Koordinaten</guilabel> benutzen."
+
+#. Tag: primary
+#: config.docbook:253
+#, no-c-format
+msgid "Animated Slewing"
+msgstr "Animierte Bewegung"
+
+#. Tag: para
+#: config.docbook:253
+#, no-c-format
+msgid ""
+"The <guilabel>Use animating slewing</guilabel> checkbox controls how the "
+"display changes when a new focus position is selected in the map. By "
+"default, you will see the sky drift or <quote>slew</quote> to the new "
+"position; if you uncheck this option, then the display will instead "
+"<quote>snap</quote> immediately to the new focus position."
+msgstr ""
+"Die Einstellung <guilabel>Animierte Bewegung benutzen</guilabel> "
+"kontrolliert, wie die Anzeige sich verändert, wenn eine neue Position in der "
+"Karte ausgewählt wird. Normalerweise sehen Sie den Himmel zu der neuen "
+"Position an sich <quote>vorbeidriften</quote>; Falls Sie die Einstellung "
+"deaktivieren, wird die Anzeige stattdessen sofort zu neuen Position "
+"<quote>springen</quote>."
+
+#. Tag: primary
+#: config.docbook:260 config.docbook:271
+#, no-c-format
+msgid "Objects in the Sky"
+msgstr "Objekte im Himmel"
+
+#. Tag: secondary
+#: config.docbook:261
+#, no-c-format
+msgid "Labeling"
+msgstr "Bezeichnung"
+
+#. Tag: tertiary
+#: config.docbook:262
+#, no-c-format
+msgid "Automatic"
+msgstr "Automatisch"
+
+#. Tag: para
+#: config.docbook:263
+#, no-c-format
+msgid ""
+"If the <guilabel>Attach label to centered object</guilabel> checkbox is "
+"selected, then a name label will automatically be attached to an object when "
+"it is being tracked by the program. The label will be removed when the "
+"object is no longer being tracked. Note that you can also manually attach a "
+"persistent name label to any object with its <link linkend=\"popup-menu"
+"\">popup menu</link>."
+msgstr ""
+"Falls die Einstellung <guilabel>Marke zum zentrierten Objekt hinzufügen</"
+"guilabel> aktiviert ist, wird eine Namensmarke automatisch an das Objekt "
+"angefügt, wenn es vom Programm verfolgt wird. Die Bezeichnung wird entfernt, "
+"wenn das Objekt nicht länger verfolgt wird. Beachten Sie, dass Sie auch eine "
+"dauerhafte Namensmarke im <link linkend=\"popup-menu\">Kontextmenü</link> "
+"hinzufügen können."
+
+#. Tag: secondary
+#: config.docbook:272
+#, no-c-format
+msgid "Hiding"
+msgstr "Ausblenden"
+
+#. Tag: para
+#: config.docbook:272
+#, no-c-format
+msgid ""
+"There are three situations when &kstars; must redraw the sky display very "
+"rapidly: when a new focus position is selected (and <guilabel>Use animated "
+"slewing</guilabel> is checked), when the sky is dragged with the mouse, and "
+"when the time step is large. In these situations, the positions of all "
+"objects must be recomputed as rapidly as possible, which can put a large "
+"load on the <abbrev>CPU</abbrev>. If the <abbrev>CPU</abbrev> cannot keep up "
+"with the demand, then the display will seem sluggish or jerky. To mitigate "
+"this, &kstars; will hide certain objects during these rapid-redraw "
+"situations, as long as the <guilabel>Hide objects while moving</guilabel> "
+"checkbox is selected. The timestep threshold above which objects will be "
+"hidden is determined by the <guilabel>Also hide if timescale greater than:</"
+"guilabel> timestep-spinbox. You can specify the objects that should be "
+"hidden in the <guilabel>Configure Hidden Objects</guilabel> group box."
+msgstr ""
+"Es gibt drei Situationen, in denen &kstars; die Himmelskarte sehr schnell "
+"neu zeichnen muss: Wenn eine neue Fokusposition ausgewählt wird (und "
+"<guilabel>Animierte Bewegung benutzen</guilabel> ausgewählt ist), wenn der "
+"Himmel mit der Maus bewegt wird und wenn die Zeitschritteinheit relativ groß "
+"ist. In diesen Situationen müssen alle Objektpositionen schnell neu "
+"berechnet werden, was eine hohe Last auf die <abbrev>CPU</abbrev> bedeutet. "
+"Wenn die <abbrev>CPU</abbrev> den Anforderungen nicht nachkommen kann, sieht "
+"die Anzeige unschön aus. Um das zu umgehen, wird &kstars; bestimmte Objekte "
+"in diesen Situationen ausblenden, wenn die Einstellung <guilabel>Objekte "
+"während der Bewegung ausblenden</guilabel> ausgewählt ist. Die "
+"Zeitschrittgrenze, über der Objekte ausgeblendet werden, wird durch die "
+"Einstellbox <guilabel>Auch ausblenden wenn Zeitschritt größer ist als:</"
+"guilabel> kontrolliert. Sie können die auszublendenden Objekte über den "
+"Abschnitt <guilabel>Auszublendende Objekte</guilabel> bestimmen. "
+
+#. Tag: title
+#: config.docbook:290
+#, no-c-format
+msgid "Customizing the Display"
+msgstr "Anpassung der Anzeige"
+
+#. Tag: para
+#: config.docbook:292
+#, no-c-format
+msgid "There are several ways to modify the display to your liking."
+msgstr ""
+"Es gibt mehrere Möglichkeiten, die Anzeige nach Ihren Wünschen einzustellen."
+
+#. Tag: secondary
+#: config.docbook:296
+#, no-c-format
+msgid "Selecting"
+msgstr "Auswahl"
+
+#. Tag: para
+#: config.docbook:296
+#, no-c-format
+msgid ""
+"Select a different color scheme in the <menuchoice><guimenu>Settings</"
+"guimenu><guimenuitem>Color Schemes</guimenuitem></menuchoice> menu. There "
+"are four predefined color schemes, and you can define your own in the <link "
+"linkend=\"config\"><guilabel>Configure &kstars;</guilabel></link> window."
+msgstr ""
+"Wählen Sie ein anderes Farbschema im Menü "
+"<menuchoice><guimenu>Einstellungen</guimenu><guimenuitem>Farbschemata</"
+"guimenuitem></menuchoice>. Es gibt vier vordefinierte Schemata und "
+"zusätzlich können Sie auch Eigene im Dialog <link linkend=\"config"
+"\"><guilabel>&kstars; einrichten</guilabel></link> einstellen."
+
+#. Tag: primary
+#: config.docbook:303
+#, no-c-format
+msgid "Toolbars"
+msgstr "Werkzeugleisten"
+
+#. Tag: para
+#: config.docbook:304
+#, no-c-format
+msgid ""
+"Toggle whether the Toolbars are drawn in the <menuchoice><guimenu>Settings</"
+"guimenu><guimenuitem>Toolbars Shown</guimenuitem></menuchoice> menu. Like "
+"most KDE toolbars, they can also be dragged around and anchored on any "
+"window edge, or even detached from the window completely if they are "
+"unlocked."
+msgstr ""
+"Im Menü <menuchoice><guimenu>Einstellungen</guimenu><guimenuitem>Angezeigte "
+"Werkzeugleisten</guimenuitem></menuchoice> können Sie die Anzeige der beiden "
+"Werkzeugleisten ein- und ausschalten. Wie die meisten KDE-Werkzeugleisten "
+"können Sie sie auch zu jeder Seite des Fensters ziehen und dort verankern "
+"oder sie sogar losgelöst vom Fenster auf Ihrem Bildschirm anordnen, wenn die "
+"Werkzeugleisten nicht gesperrt sind."
+
+#. Tag: primary
+#: config.docbook:311 config.docbook:312
+#, no-c-format
+msgid "Info Boxes"
+msgstr "Infoboxen"
+
+#. Tag: secondary
+#: config.docbook:312
+#, no-c-format
+msgid "Shading"
+msgstr "Ausblenden"
+
+#. Tag: para
+#: config.docbook:312
+#, no-c-format
+msgid ""
+"Toggle whether the Info Boxes are drawn in the "
+"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Info Boxes</"
+"guimenuitem></menuchoice> menu. In addition, you can manipulate the three "
+"Info Boxes with the mouse. Each box has additional lines of data that are "
+"hidden by default. You can toggle whether these additional lines are visible "
+"by double-clicking a box to <quote>shade</quote> it. Also, you can "
+"reposition a box by dragging it with the mouse. When a box hits a window "
+"edge, it will <quote>stick</quote> to the edge when the window is resized."
+msgstr ""
+"Die Anzeige der Infoboxen können Sie im Menü "
+"<menuchoice><guimenu>Einstellungen</guimenu><guimenuitem>Infoboxen anzeigen</"
+"guimenuitem></menuchoice> ein- und ausschalten. Zusätzlich können Sie die "
+"drei Infoboxen mit der Maus bearbeiten. Jede Infobox enthält zusätzliche "
+"Zeilen mit Daten, die als Standard ausgeblendet sind. Mit einem Doppelklick "
+"in eine Infobox können Sie die Anzeige dieser zusätzlichen Zeilen ein- und "
+"ausschalten. Außerdem können Sie eine Infobox auch mit der Maus verschieben. "
+"Eine Infobox am Rand des Fensters behält diese Position, wenn die Größe des "
+"Fenster geändert wird."
+
+#. Tag: primary
+#: config.docbook:324 config.docbook:335 config.docbook:375
+#, no-c-format
+msgid "Field-of-View Symbols"
+msgstr "Sichtfeld-Symbole"
+
+#. Tag: secondary
+#: config.docbook:324
+#, no-c-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. Tag: para
+#: config.docbook:324
+#, no-c-format
+msgid ""
+"Choose an <quote>FOV Symbol</quote> using the <menuchoice><guimenu>Settings</"
+"guimenu><guimenuitem>FOV Symbols</guimenuitem></menuchoice> menu. "
+"<firstterm>FOV</firstterm> is an acronym for <quote>field-of-view</quote>. "
+"An FOV symbol is drawn at the center of the window to indicate where the "
+"display is pointing. Different symbols have different angular sizes; you can "
+"use a symbol to show what the view through a particular telescope would look "
+"like. For example, if you choose the <quote>7x35 Binoculars</quote> FOV "
+"symbol, then a circle is drawn on the display that is 9.2 degrees in "
+"diameter; this is the field-of-view for 7x35 binoculars."
+msgstr ""
+"Wählen Sie ein <quote>STF-Symbol</quote> im Menü "
+"<menuchoice><guimenu>Einstellungen</guimenu><guimenuitem>STF-Symbol</"
+"guimenuitem></menuchoice>. <firstterm>STF</firstterm> ist eine Abkürzung für "
+"<quote>Sichtfeld</quote>. Ein STF-Symbol wird in der Mitte des Fensters "
+"gezeichnet, um die Blickrichtung anzuzeigen. Die Symbole haben "
+"unterschiedliche Sichtfeldwinkel, mit einem Symbol können Sie anzeigen, wie "
+"der Blick durch eine bestimmtes Teleskop aussehen würde. Wenn Sie zum "
+"Beispiel das STF-Symbol <quote>7x35 Fernglas</quote> wählen, wird in der "
+"Ansicht ein Kreis mit einem Durchmesser von 9,2 Grad gezeichnet, dies ist "
+"das Sichtfeld eines 7x35 Fernglases."
+
+#. Tag: para
+#: config.docbook:335
+#, no-c-format
+msgid ""
+"You can define your own FOV symbols (or modify the existing symbols) using "
+"the <guimenuitem>Edit FOV Symbols...</guimenuitem> menu item, which launches "
+"the FOV Editor:"
+msgstr ""
+"Mit dem Menüeintrag <guimenuitem>STF-Symbole bearbeiten..</guimenuitem> "
+"können Sie Ihre eigenen STF-Symbole erstellen (oder vorhandene Symbole "
+"ändern) . Damit öffnen Sie den Dialog zur Bearbeitung von STF-Symbolen:"
+
+#. Tag: screeninfo
+#: config.docbook:340
+#, no-c-format
+msgid "Field-of-View Symbols Editor"
+msgstr "Editor für Sichtfeld-Symbole"
+
+#. Tag: phrase
+#: config.docbook:346
+#, no-c-format
+msgid "FOV Symbol Editor"
+msgstr "STF-Symbol Editor"
+
+#. Tag: para
+#: config.docbook:351
+#, no-c-format
+msgid ""
+"The list of defined FOV symbols is displayed on the left. On the right are "
+"buttons for adding a new symbol, editing the highlighted symbol's "
+"properties, and removing the highlighted symbol from the list. Note that you "
+"can even modify or remove the four predefined symbols (if you remove all "
+"symbols, the four defaults will be restored the next time you start "
+"&kstars;). Below these three buttons is a graphical preview display showing "
+"the highlighted symbol from the list. When the <guibutton>New...</guibutton> "
+"or <guibutton>Edit...</guibutton> button is pressed, the <guilabel>New FOV "
+"Indicator</guilabel> window is opened:"
+msgstr ""
+"Die Liste der vorhandenen STF-Symbole wird auf der linken Seite angezeigt. "
+"Auf der rechten Seite finden Sie Knöpfe, um neue Symbole hinzuzufügen, die "
+"Eigenschaften des gewählten Symbol zu bearbeiten oder das gewählten Symbol "
+"aus der Liste zu entfernen. Sie können sogar die vier Standard-Symbole "
+"bearbeiten oder entfernen (wenn Sie alle Symbole entfernen, werden beim "
+"nächsten Start von &kstars; die vier Standard-Symbole wieder hergestellt). "
+"Unter diesen drei Knöpfen sehen Sie in eine Voransicht des ausgewählten "
+"Symbols aus der Liste. Wenn Sie auf <guibutton>Neu ...</guibutton> oder "
+"<guibutton>Bearbeiten ...</guibutton> drücken, wird der Dialog "
+"<guilabel>Neues STF-Symbol</guilabel> angezeigt:"
+
+#. Tag: screeninfo
+#: config.docbook:363
+#, no-c-format
+msgid "New Field-of-View Symbol"
+msgstr "Neues Sichtfeld-Symbol"
+
+#. Tag: phrase
+#: config.docbook:369
+#, no-c-format
+msgid "New FOV Symbol"
+msgstr "Neues STF-Symbol"
+
+#. Tag: secondary
+#: config.docbook:375
+#, no-c-format
+msgid "Defining New"
+msgstr "Neues Symbol erstellen"
+
+#. Tag: para
+#: config.docbook:375
+#, no-c-format
+msgid ""
+"This window lets you modify the four properties that define a FOV symbol: "
+"name, size, shape, and color. The angular size for the symbol can either be "
+"entered directly in the <guilabel>Field of View</guilabel> edit box, or you "
+"can use the Eyepiece/Camera Tabs to calculate the field-of-view angle, given "
+"parameters of your telescope/eyepiece or telescope/camera setup. The four "
+"available shapes are: Circle, Square, Crosshairs, and Bullseye. Once you "
+"have specified all four parameters, press <guibutton>Ok</guibutton>, and the "
+"symbol will appear in the list of defined symbols. It will also be available "
+"from the <menuchoice><guimenu>Settings</guimenu><guisubmenu>FOV Symbols</"
+"guisubmenu></menuchoice> menu."
+msgstr ""
+"In diesem Dialog können Sie vier Eigenschaften eines STF-Symbols einstellen: "
+"Name, Größe, Form und Farbe. Die Winkelgröße des Symbols können Sie entweder "
+"direkt im Eingabefeld <guilabel>Sichtfeld</guilabel> eingeben, oder Sie "
+"können mit <quote>STF berechnen</quote> den Sichtfeldwinkel aus den "
+"Parametern Ihrer Teleskop/Okular- oder Teleskop/Kamera-Einstellungen "
+"berechnen. Es gibt folgende vier Formen: Kreis, Quadrat, Fadenkreuz und "
+"Zielscheibe. Wenn Sie alle vier Parameter eingestellt haben, drücken Sie auf "
+"<guibutton>Ok</guibutton>, und das Symbol wird in die Liste der definierten "
+"Symbole aufgenommen. Das neue Symbol finden Sie dann auch unter "
+"<guisubmenu>STF-Symbole</guisubmenu> im Menü <guimenu>Einstellungen</"
+"guimenu>."

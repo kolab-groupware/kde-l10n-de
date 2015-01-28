@@ -1,0 +1,849 @@
+# Thorsten Mürell <thorsten@muerell.de>, 2002, 2003.
+# Burkhard Lück <lueck@hube-lueck.de>, 2005, 2006, 2008, 2011, 2013.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: kmplot_using\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: 2013-08-25 16:45+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: using.docbook:2
+#, no-c-format
+msgid "Using &kmplot;"
+msgstr "Arbeiten mit &kmplot;"
+
+#. Tag: para
+#: using.docbook:4
+#, no-c-format
+msgid ""
+"&kmplot; deals with several different types of functions, which can be "
+"written in function form or as an equation:"
+msgstr ""
+"In &kmplot; können Sie mit unterschiedliche Arten von Funktionen benutzen, "
+"dabei können Sie sie als Funktion oder als Ausdruck eingeben."
+
+#. Tag: para
+#: using.docbook:7
+#, no-c-format
+msgid ""
+"Cartesian plots can either be written as &eg; <quote>y = x^2</quote>, where "
+"x has to be used as the variable; or as &eg; <quote>f(a) = a^2</quote>, "
+"where the name of the variable is arbitrary."
+msgstr ""
+"Kartesische Funktionen können Sie entweder als &eg; <quote>y = x^2</quote>, "
+"dabei muss x als Name der Variable benutzt werden, oder als &eg; <quote>f(a) "
+"= a^2</quote> eingeben, dabei können Sie einen beliebigen Namen für die "
+"Variable verwenden."
+
+#. Tag: para
+#: using.docbook:8
+#, no-c-format
+msgid ""
+"Parametric plots are similar to Cartesian plots. The x and y coordinates can "
+"be entered as equations in t, &eg; <quote>x = sin(t)</quote>, <quote>y = cos"
+"(t)</quote>, or as functions, &eg; <quote>f_x(s) = sin(s)</quote>, <quote>f_y"
+"(s) = cos(s)</quote>."
+msgstr ""
+"In parametrischen Funktionen werden die x- und y-Koordinaten als Ausdrücke "
+"von t, &eg; <quote>x = sin(t)</quote>, <quote>y = cos(t)</quote> oder als "
+"Funktionen wie &eg; <quote>f_x(s) = sin(s)</quote>, <quote>f_y(s) = cos(s)</"
+"quote> eingegeben."
+
+#. Tag: para
+#: using.docbook:9
+#, no-c-format
+msgid ""
+"Polar plots are also similar to Cartesian plots. They can be either be "
+"entered as an equation in &thgr;, &eg; <quote>r = &thgr;</quote>, or as a "
+"function, &eg; <quote>f(x) = x</quote>."
+msgstr ""
+"Polare Funktionen können entweder als Ausdrücke von &thgr;, &eg; <quote>r = "
+"&thgr;</quote> oder als Funktionen wie &eg; <quote>f(x) = x</quote> "
+"eingegeben werden."
+
+#. Tag: para
+#: using.docbook:11
+#, no-c-format
+msgid ""
+"For implicit plots, the name of the function is entered separately from the "
+"expression relating the x and y coordinates. If the x and y variables are "
+"specified via the function name (by entering &eg;<quote>f(a,b)</quote> as "
+"the function name), then these variables will be used. Otherwise, the "
+"letters x and y will be used for the variables."
+msgstr ""
+"Bei impliziten Funktionen kann der Name der Funktion getrennt von dem "
+"Ausdruck für die x- und y-Koordinaten eingegeben werden. Wenn die Variablen "
+"x und y über den Funktionsnamen festgelegt werden (&eg; mit <quote>f(a,b)</"
+"quote> als Name der Funktion), dann werden diese Variablen a und b "
+"verwendet. Ansonsten werden die Buchstaben x und y für die Variablen benutzt."
+
+#. Tag: para
+#: using.docbook:12
+#, no-c-format
+msgid ""
+"Explicit differential plots are differential equations whereby the highest "
+"derivative is given in terms of the lower derivatives. Differentiation is "
+"denoted by a prime ('). In function form, the equation will look like "
+"<quote>f''(x) = f' &minus; f</quote>. In equation form, it will look like "
+"<quote>y'' = y' &minus; y</quote>. Note that in both cases, the <quote>(x)</"
+"quote> part is not added to the lower order differential terms (so you would "
+"enter <quote>f'(x) = &minus;f</quote> and not <quote>f'(x) = &minus;f(x)</"
+"quote>)."
+msgstr ""
+"Explizite Differentialfunktionen werden durch Differentialgleichungen "
+"beschrieben, in denen die höchste Ableitung als Ausdruck der niedrigeren "
+"Ableitungen angegeben wird. Die Ableitung wird durch das Zeichen <keycap>'</"
+"keycap> gekennzeichnet. Als Funktionsform lautet die Gleichung zum Beispiel "
+"<quote>f''(x) = f' &minus; f</quote>, als Gleichungsform <quote>y'' = y' "
+"&minus; y</quote>. In beiden Fällen wird <quote>(x)</quote> nicht in den "
+"niedrigeren Ableitungen eingefügt. Die richtige Schreibweise ist also "
+"<quote>f'(x) = &minus;f</quote> und nicht <quote>f'(x) = &minus;f(x)</"
+"quote>)."
+
+#. Tag: para
+#: using.docbook:15
+#, no-c-format
+msgid ""
+"All the equation entry boxes come with a button on the right. Clicking this "
+"invokes the advanced <guilabel>Equation Editor</guilabel> dialog, which "
+"provides:"
+msgstr ""
+"Die Eingabefelder der Funktionen haben rechts einen Knopf. Damit öffnen Sie "
+"den <guilabel>Gleichungseditor</guilabel>, der folgende Funktionen bietet:"
+
+#. Tag: para
+#: using.docbook:19
+#, no-c-format
+msgid ""
+"A variety of mathematical symbols that can be used in equations, but aren't "
+"found on normal keyboards."
+msgstr ""
+"Eingabe vieler mathematischer Symbole, die nicht auf der normalen Tastatur "
+"vorhanden sind, in Funktionsgleichungen."
+
+#. Tag: para
+#: using.docbook:22
+#, no-c-format
+msgid "The list of user constants and a button for editing them."
+msgstr ""
+"Eingabe benutzerdefinierter Konstanten und die Möglichkeit zur Bearbeitung "
+"dieser Konstanten."
+
+#. Tag: para
+#: using.docbook:25
+#, no-c-format
+msgid ""
+"The list of predefined functions. Note that if you have text already "
+"selected, it will be used as the function argument when a function is "
+"inserted. For example, if <quote>1 + x</quote> is selected in the equation "
+"<quote>y = 1 + x</quote>, and the sine function is chosen, then the equation "
+"will become <quote> y = sin(1+x)</quote>."
+msgstr ""
+"Eine Liste vordefinierter Funktionen. Wenn Sie bereits Text markiert haben, "
+"wird dieser Text als Argument benutzt, wenn Sie eine Funktion einfügen. Ist "
+"zum Beispiel <quote>1 + x</quote> in der Gleichung <quote>y = 1 + x</quote> "
+"markiert und Sie wählen die Sinusfunktion, erstellen Sie damit die Gleichung "
+"<quote> y = sin(1+x)</quote>."
+
+#. Tag: screeninfo
+#: using.docbook:32
+#, no-c-format
+msgid "Here is a screenshot of the &kmplot; welcome window"
+msgstr "Hier ist ein Bildschirmfoto von &kmplot; beim Start"
+
+#. Tag: phrase
+#: using.docbook:38
+#, no-c-format
+msgid "Screenshot"
+msgstr "Bildschirmfoto"
+
+#. Tag: title
+#: using.docbook:44
+#, no-c-format
+msgid "Function Types"
+msgstr "Funktionstypen"
+
+#. Tag: title
+#: using.docbook:47
+#, no-c-format
+msgid "Cartesian Functions"
+msgstr "Kartesische Funktionen"
+
+#. Tag: para
+#: using.docbook:48
+#, no-c-format
+msgid ""
+"To enter an explicit function (&ie;, a function in the form y=f(x)) into "
+"&kmplot;, just enter it in the following form: "
+"<screen><userinput><replaceable>f</replaceable>(<replaceable>x</"
+"replaceable>) = <replaceable>expression</replaceable></userinput></screen> "
+"where:"
+msgstr ""
+"Eine explizite Funktion (&ie; eine Funktion in der Form y=f(x)), können Sie "
+"in &kmplot; auf folgende Art eingeben: <screen><userinput><replaceable>f</"
+"replaceable>(<replaceable>x</replaceable>)=<replaceable>Ausdruck</"
+"replaceable></userinput></screen> Dabei ist:"
+
+#. Tag: para
+#: using.docbook:53
+#, no-c-format
+msgid ""
+"<replaceable>f</replaceable> is the name of the function, and can be any "
+"string of letters and numbers."
+msgstr ""
+"<replaceable>f</replaceable> der Name der Funktion und kann aus jeder "
+"Kombination von Buchstaben und Zahlen bestehen."
+
+#. Tag: para
+#: using.docbook:58
+#, no-c-format
+msgid ""
+"<replaceable>x</replaceable> is the horizontal coordinate, to be used in the "
+"expression following the equals sign. It is a dummy variable, so you can use "
+"any variable name you like to achieve the same effect."
+msgstr ""
+"<replaceable>x</replaceable> die waagerechte Koordinate, die im Ausdruck "
+"benutzt wird, der nach dem Gleichheitszeichen folgt. Das ist ein "
+"Platzhalter, also können Sie jeden beliebigen Namen verwenden, das Ergebnis "
+"ist das Gleiche."
+
+#. Tag: para
+#: using.docbook:65
+#, no-c-format
+msgid ""
+"<replaceable>expression</replaceable> is the expression to be plotted, given "
+"in the appropriate syntax for &kmplot;. See <xref linkend=\"math-syntax\"/>."
+msgstr ""
+"<replaceable>Ausdruck</replaceable> ist der Ausdruck, der gezeichnet werden "
+"soll, in der von &kmplot; geforderten Schreibweise. Siehe dazu <xref linkend="
+"\"math-syntax\"/>."
+
+#. Tag: title
+#: using.docbook:75
+#, no-c-format
+msgid "Parametric Functions"
+msgstr "Parametrische Funktionen"
+
+#. Tag: para
+#: using.docbook:76
+#, no-c-format
+msgid ""
+"Parametric functions are those in which the x and y coordinates are defined "
+"by separate functions of another variable, often called t. To enter a "
+"parametric function in &kmplot;, follow the procedure as for a Cartesian "
+"function for each of the x and y functions. As with Cartesian functions, you "
+"may use any variable name you wish for the parameter."
+msgstr ""
+"In parametrischen Funktionen werden die x- und y-Koordinaten über "
+"unabhängige Funktionen einer anderen Variable, oft t genannt, definiert. Um "
+"eine parametrische Funktion in &kmplot; zu zeichnen, geben Sie die x- und y-"
+"Funktion als kartesische Funktionen ein. Auch hier können Sie einen "
+"beliebigen Variablennamen für die Parameter verwenden."
+
+#. Tag: para
+#: using.docbook:81
+#, no-c-format
+msgid ""
+"As an example, suppose you want to draw a circle, which has parametric "
+"equations x = sin(t), y = cos(t). After creating a parametric plot, enter "
+"the appropriate equations in the x and y boxes, &ie;, <userinput>f_x(t)=sin"
+"(t)</userinput> and <userinput>f_y(t)=cos(t)</userinput>."
+msgstr ""
+"Angenommen, Sie möchten eine Kreis mit dem parametrischen Ausdruck x = sin"
+"(t), y = cos(t) zeichnen. Wählen Sie dazu Parametrische Zeichnung und geben "
+"Sie die passenden Ausdrücke in das x- und y-Eingabefeld ein, &ie; "
+"<userinput>f_x(t)=sin(t)</userinput> and <userinput>f_y(t)=cos(t)</"
+"userinput>."
+
+#. Tag: para
+#: using.docbook:86 using.docbook:138
+#, no-c-format
+msgid "You can set some further options for the plot in the function editor:"
+msgstr ""
+"Sie können noch weitere Optionen für die Zeichnung im Funktionen-Editor "
+"einstellen:"
+
+#. Tag: guilabel
+#: using.docbook:89
+#, no-c-format
+msgid "<guilabel>Min</guilabel>"
+msgstr "<guilabel>Min</guilabel>"
+
+#. Tag: guilabel
+#: using.docbook:90
+#, no-c-format
+msgid "<guilabel>Max</guilabel>"
+msgstr "<guilabel>Max</guilabel>"
+
+#. Tag: para
+#: using.docbook:92
+#, no-c-format
+msgid ""
+"These options control the range of the parameter t for which the function is "
+"plotted."
+msgstr ""
+"Diese Einstellungen geben den Wertebereich des Parameters t an, für den die "
+"Funktion gezeichnet wird."
+
+#. Tag: title
+#: using.docbook:100
+#, no-c-format
+msgid "Functions in Polar Coordinates"
+msgstr "Funktionen in Polarkoordinaten"
+
+#. Tag: para
+#: using.docbook:102
+#, no-c-format
+msgid ""
+"Polar coordinates represent a point by its distance from the origin (usually "
+"called r), and the angle a line from the origin to the point makes with the "
+"horizontal axis (usually represented by &thgr; the Greek letter theta). To "
+"enter functions in polar coordinates, click the <guilabel>Create</guilabel> "
+"button and select <guilabel>Polar Plot</guilabel> from the list. In the "
+"definition box, complete the function definition, including the name of the "
+"theta variable you want to use, &eg;, to draw the Archimedes' spiral r = "
+"&thgr;, enter: <screen><userinput>r(&thgr;) = &thgr;</userinput></screen> "
+"Note that you can use any name for the theta variable, so <quote>r(t) = t</"
+"quote> or <quote>f(x) = x</quote> will produce exactly the same output."
+msgstr ""
+"Polarkoordinaten bestimmen einen Punkt durch den Abstand vom Ursprung "
+"(üblicherweise r genannt) und durch den Winkel einer Linie vom Ursprung "
+"durch den Punkt zur waagerechten Achse (üblicherweise mit dem griechischen "
+"Buchstaben &thgr; bezeichnet). Funktionen in polaren Koordinaten erzeugen "
+"Sie, indem Sie auf <guilabel>Erstellen</guilabel> klicken und "
+"<guilabel>Polare Zeichnung</guilabel> wählen. Im Eingabefeld geben Sie die "
+"Definition der Funktion mit dem Namen der theta-Variablen ein. Um &eg; die "
+"Spirale des Archimedes r = &thgr; zu zeichnen, geben Sie ein: "
+"<screen><userinput>r(&thgr;) = &thgr;</userinput></screen>. Sie können jeden "
+"beliebigen Namen als theta-Variable verwenden, daher ergibt <quote>r(t) = t</"
+"quote> oder <quote>f(x) = x</quote> die gleiche Zeichnung."
+
+#. Tag: title
+#: using.docbook:116
+#, no-c-format
+msgid "Implicit Functions"
+msgstr "Implizite Funktionen"
+
+#. Tag: para
+#: using.docbook:118
+#, no-c-format
+msgid ""
+"An implicit expression relates the x and y coordinates as an equality. To "
+"create a circle, for example, click the <guilabel>Create</guilabel> button "
+"and select <guilabel>Implicit Plot</guilabel> from the list. Then, enter "
+"into the equation box (below the function name box) the following:"
+msgstr ""
+"Ein impliziter Ausdruck gibt die Beziehung zwischen x- und y-Koordinaten als "
+"Gleichung an. Um zum Beispiel einen Kreis zu zeichnen, klicken Sie auf den "
+"Knopf <guilabel>Erstellen</guilabel> und wählen <guilabel>Implizite "
+"Zeichnung</guilabel> aus der Liste. Tragen Sie dann im Gleichungsfeld unter "
+"dem Funktionsnamen folgendes ein:"
+
+#. Tag: screen
+#: using.docbook:121
+#, no-c-format
+msgid "<userinput>x^2 + y^2 = 25</userinput>"
+msgstr "<userinput>x^2 + y^2 = 25</userinput>"
+
+#. Tag: title
+#: using.docbook:126
+#, no-c-format
+msgid "Differential Functions"
+msgstr "Differentielle Funktionen"
+
+#. Tag: para
+#: using.docbook:128
+#, no-c-format
+msgid ""
+"&kmplot; can plot explicit differential equations. These are equations of "
+"the form y<superscript>(n)</superscript> = F(x,y',y'',...,y<superscript>"
+"(n&minus;1)</superscript>), where y<superscript>k</superscript> is the "
+"k<superscript>th</superscript> derivative of y(x). &kmplot; can only "
+"interpret the derivative order as the number of primes following the "
+"function name. To draw a sinusoidal curve, for example, you would use the "
+"differential equation <userinput>y'' = &minus; y</userinput> or "
+"<userinput>f''(x) = −f</userinput>."
+msgstr ""
+"&kmplot; kann explizite Differentialgleichungen darstellen. Dies sind "
+"Gleichungen in der Form y<superscript>(n)</superscript> = F(x,y',y'',...,"
+"y<superscript>(n&minus;1)</superscript>), dabei ist y<superscript>n</"
+"superscript> die n-<superscript>te</superscript> Ableitung von y(x). Die "
+"Ordnung der Ableitung wird aus der Anzahl der <keycap>'</keycap> nach der "
+"Funktionsbezeichnung bestimmt. Um zum Beispiel eine sinusförmige Kurve zu "
+"zeichnen, geben Sie als Differentialgleichung <userinput>y'' = &minus; y</"
+"userinput> oder <userinput>f''(x) = −f</userinput> ein."
+
+#. Tag: para
+#: using.docbook:135
+#, no-c-format
+msgid ""
+"However, a differential equation on its own isn't enough to determine a "
+"plot. Each curve in the diagram is generated by a combination of the "
+"differential equation and the initial conditions. You can edit the initial "
+"conditions by clicking on the <guilabel>Initial Conditions</guilabel> tab "
+"when a differential equation is selected. The number of columns provided for "
+"editing the initial conditions is dependent on the order of the differential "
+"equation."
+msgstr ""
+"Jedoch nur die Differentialgleichung allein ist noch nicht ausreichend für "
+"die Erstellung der Zeichnung. Jede Kurve im Diagramm wird durch die "
+"Differentialgleichung und die Startbedingung festgelegt. Wenn eine "
+"Differentialgleichung ausgewählt ist, können Sie die Startbedingung auf der "
+"gleichnamigen Karteikarte eingeben. Die Anzahl der Spalten für die Eingabe "
+"der Startbedingungen wird durch die Ordnung der Differentialgleichung "
+"bestimmt."
+
+#. Tag: guilabel
+#: using.docbook:141
+#, no-c-format
+msgid "Step"
+msgstr "Schritt"
+
+#. Tag: para
+#: using.docbook:143
+#, no-c-format
+msgid ""
+"The step value in the precision box is used in numerically solving the "
+"differential equation (using the Runge Kutta method). Its value is the "
+"maximum step size used; a smaller step size may be used if part of the "
+"differential plot is zoomed in close enough."
+msgstr ""
+"Die Schrittweite im Feld Genauigkeit wird zur numerischen Lösung der "
+"Differentialgleichung mit der Runge-Kutta-Methode benutzt. Der Wert bestimmt "
+"die maximale Schrittweite, bei Vergrößerung der Zeichnung wird mit einer "
+"kleineren Schrittweite gerechnet."
+
+#. Tag: title
+#: using.docbook:153
+#, no-c-format
+msgid "Combining Functions"
+msgstr "Funktionskombinationen"
+
+#. Tag: para
+#: using.docbook:154
+#, no-c-format
+msgid ""
+"Functions can be combined to produce new ones. Simply enter the functions "
+"after the equals sign in an expression as if the functions were variables. "
+"For example, if you have defined functions f(x) and g(x), you can plot the "
+"sum of f and g with:"
+msgstr ""
+"Funktionen können zu neuen Funktionen kombiniert werden. Geben Sie einfach "
+"die Funktionen nach dem Gleichheitszeichen ein, als ob sie Variable wären. "
+"Wenn Sie zum Beispiel die Funktionen f(x) und g(x) definiert haben, können "
+"Sie die Summe von f und g zeichnen lassen mit:"
+
+#. Tag: screen
+#: using.docbook:158
+#, no-c-format
+msgid "<userinput>sum(x) = f(x) + g(x)</userinput>"
+msgstr "<userinput>sum(x) = f(x) + g(x)</userinput>"
+
+#. Tag: title
+#: using.docbook:163
+#, no-c-format
+msgid "Changing the appearance of functions"
+msgstr "Das Aussehen von Funktionen verändern"
+
+#. Tag: para
+#: using.docbook:165
+#, no-c-format
+msgid ""
+"To change the appearance of a function's graph on the main plot window, "
+"select the function in the <guilabel>Functions</guilabel> sidebar. You can "
+"change the plot's line width, color and many other aspects by clicking on "
+"the <guibutton>Color</guibutton> or <guibutton>Advanced...</guibutton> "
+"button at the bottom of the section <guilabel>Appearance</guilabel>."
+msgstr ""
+"Um das Aussehen des Graphen der Funktion im Hauptfenster zu ändern, wählen "
+"Sie die Funktion im Bereich <guilabel>Funktionen</guilabel> aus. Klicken auf "
+"den Knopf <guibutton>Farbe</guibutton> oder unten in Abschnitt "
+"<guilabel>Erscheinungsbild</guilabel> auf <guibutton>Erweitert ...</"
+"guibutton>, um die Linienbreite, die Farbe der Linie und weitere "
+"Einstellungen zu verändern. "
+
+#. Tag: para
+#: using.docbook:172
+#, no-c-format
+msgid ""
+"If you are editing a Cartesian function, the function editor will have three "
+"tabs. In the first one you specify the equation of the function. The "
+"<guilabel>Derivatives</guilabel> tab lets you draw the first and second "
+"derivative to the function. With the <guilabel>Integral</guilabel> tab you "
+"can draw the integral of the function."
+msgstr ""
+"Wenn Sie eine kartesische Funktion bearbeiten, werden drei Karteikarten "
+"angezeigt. Auf der ersten Karte geben Sie den Ausdruck der Funktion ein. Auf "
+"der Karte <guilabel>Ableitungen</guilabel> können Sie ankreuzen, ob die "
+"erste und zweite Ableitung der Funktion gezeichnet werden soll. Und auf der "
+"Karte <guilabel>Integral</guilabel> können Sie auswählen, ob das Integral "
+"der Funktion auch gezeichnet werden soll."
+
+#. Tag: title
+#: using.docbook:181
+#, no-c-format
+msgid "Popup menu"
+msgstr "Kontextmenü"
+
+#. Tag: screeninfo
+#: using.docbook:183
+#, no-c-format
+msgid "<screeninfo>Graph right-click popup menu</screeninfo>"
+msgstr "<screeninfo>Kontextmenü des Graphen</screeninfo>"
+
+#. Tag: phrase
+#: using.docbook:189
+#, no-c-format
+msgid "<phrase>Graph right-click popup menu</phrase>"
+msgstr "<phrase>Kontextmenü des Graphen</phrase>"
+
+#. Tag: para
+#: using.docbook:194
+#, no-c-format
+msgid ""
+"When right-clicking on a plot function or a single-point parametric plot "
+"function a popup menu will appear. In the menu there are three items "
+"available:"
+msgstr ""
+"Mit einem rechten Mausklick auf eine Zeichnungsfunktion oder eine "
+"parametrische Einzelpunkt-Funktion öffnen Sie ein Kontextmenü mit folgenden "
+"Einträgen:"
+
+#. Tag: guimenuitem
+#: using.docbook:199
+#, no-c-format
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#. Tag: para
+#: using.docbook:202
+#, no-c-format
+msgid ""
+"Selects the function in the <guilabel>Functions</guilabel> sidebar for "
+"editing."
+msgstr ""
+"Wählt die Funktion zur Bearbeitung im Bereich <guilabel>Funktionen</"
+"guilabel> aus."
+
+#. Tag: guimenuitem
+#: using.docbook:207
+#, no-c-format
+msgid "Hide"
+msgstr "Ausblenden"
+
+#. Tag: para
+#: using.docbook:210
+#, no-c-format
+msgid ""
+"Hides the selected graph. Other plots of the graph's function will still be "
+"shown."
+msgstr ""
+"Blendet den gewählten Graphen aus. Andere Graphen der Funktion werden weiter "
+"angezeigt. "
+
+#. Tag: guimenuitem
+#: using.docbook:215
+#, no-c-format
+msgid "Remove"
+msgstr "Entfernen"
+
+#. Tag: para
+#: using.docbook:218
+#, no-c-format
+msgid "Removes the function. All its graphs will disappear."
+msgstr "Entfernt die Funktion und alle ihre Graphen in der Zeichnung."
+
+#. Tag: guimenuitem
+#: using.docbook:222
+#, no-c-format
+msgid "Animate Plot..."
+msgstr "Zeichnung animieren ..."
+
+#. Tag: para
+#: using.docbook:225
+#, no-c-format
+msgid "Displays the <guilabel>Parameter Animator</guilabel> dialog."
+msgstr "Öffnet den Dialog <guilabel>Parameteranimation</guilabel>."
+
+#. Tag: guimenuitem
+#: using.docbook:229
+#, no-c-format
+msgid "Calculator"
+msgstr "Rechner"
+
+#. Tag: para
+#: using.docbook:232
+#, no-c-format
+msgid "Opens the <guilabel>Calculator</guilabel> dialog."
+msgstr "Öffnet den Dialog <guilabel>Rechner</guilabel>."
+
+#. Tag: para
+#: using.docbook:237
+#, no-c-format
+msgid ""
+"Depending on the plot type, there will also be up to four tools available:"
+msgstr ""
+"Für die unterschiedlichen Funktionstypen gibt es noch vier weitere Einträge:"
+
+#. Tag: guimenuitem
+#: using.docbook:241
+#, no-c-format
+msgid "Plot Area..."
+msgstr "Fläche zeichnen ..."
+
+#. Tag: para
+#: using.docbook:244
+#, no-c-format
+msgid ""
+"Select the minimum and maximum horizontal values for the graph in the new "
+"dialog that appears. Calculates the integral and draws the area between the "
+"graph and the horizontal axis in the selected range in the color of the "
+"graph."
+msgstr ""
+"Wählen Sie die minimalen und maximalen waagerechten Werte für den Graphen. "
+"Dann wird das Integral berechnet und die Fläche zwischen dem Graphen und der "
+"waagerechten Achse im gewählten Intervall wird in der Farbe des Graphen "
+"gezeichnet."
+
+#. Tag: guimenuitem
+#: using.docbook:252
+#, no-c-format
+msgid "Find Minimum..."
+msgstr "Minimumpunkt suchen ..."
+
+#. Tag: para
+#: using.docbook:255
+#, no-c-format
+msgid ""
+"Find the minimum value of the graph in a specified range. The selected graph "
+"will be highlighted in the dialog that appears. Enter the lower and upper "
+"boundaries of the region in which you want to search for a minimum."
+msgstr ""
+"Sucht den minimalen Wert des Graphen im angegebenen Bereich. Der gewählte "
+"Graph wird im angezeigten Dialog hervorgehoben. Geben Sie den unteren und "
+"oberen Grenzwert für den Bereich der Suche nach dem Minimum ein."
+
+#. Tag: para
+#: using.docbook:261
+#, no-c-format
+msgid ""
+"Note: You can also tell the plot to visually show the extreme points in the "
+"<guilabel>Plot Appearance</guilabel> dialog, accessible in the "
+"<guilabel>Functions</guilabel> sidebar by clicking on <guibutton>Advanced..."
+"</guibutton>."
+msgstr ""
+"Hinweis: Im Dialog <guilabel>Erscheinungsbild der Zeichnung</guilabel> "
+"können Sie einstellen, dass die Extremwerte eines Graphen markiert werden. "
+"Diesen Dialog öffnen Sie mit dem Knopf <guibutton>Erweitert ..</guibutton> "
+"in der Seitenleiste <guilabel>Funktionen</guilabel>."
+
+#. Tag: guimenuitem
+#: using.docbook:268
+#, no-c-format
+msgid "Find Maximum..."
+msgstr "Maximumpunkt suchen ..."
+
+#. Tag: para
+#: using.docbook:271
+#, no-c-format
+msgid ""
+"This is the same as <guimenuitem>Find Minimum...</guimenuitem> above, but "
+"finds the maximum value instead of the minimum value."
+msgstr ""
+"Wie <guimenuitem>Minimumpunkt suchen ...</guimenuitem> weiter oben, aber es "
+"wird das Maximum, nicht das Minimum gesucht."
+
+#~ msgid "Get y-Value"
+#~ msgstr "y-Wert auslesen ..."
+
+#, fuzzy
+#~ msgid ""
+#~ "Opens a dialog in which you can find the y-value corresponding to a "
+#~ "specific x-value. The selected graph will be highlighted in the dialog. "
+#~ "Enter an x value in the <guilabel>X:</guilabel> box, and hit Enter. The "
+#~ "corresponding y will be automatically calculated and shown underneath."
+#~ msgstr ""
+#~ "Öffnet einen Dialog, in dem Sie den y-Wert zu einem bestimmten x-Wert "
+#~ "suchen können. Der gewählte Graph wird im Dialog hervorgehoben. Geben Sie "
+#~ "einen x-Wert im Feld <guilabel>X:</guilabel> ein und klicken Sie auf "
+#~ "<guibutton>Berechnen</guibutton> (oder drücken Sie die Eingabetaste). "
+#~ "Dann wird der y-Wert im Feld <guilabel>Y:</guilabel> angezeigt."
+
+#~ msgid "Search for Minimum Value"
+#~ msgstr "Nach Minimumwert suchen ..."
+
+#~ msgid "Search for Maximum Value"
+#~ msgstr "Nach Maximumwert suchen ..."
+
+#~ msgid ""
+#~ "&kmplot; deals with named functions, which can be specified in terms of "
+#~ "Cartesian coordinates (called <quote>explicit functions</quote>), polar "
+#~ "coordinates or as parametric functions. To enter a function, choose "
+#~ "<menuchoice><guimenu>Plot</guimenu><guimenuitem>Edit Plots...</"
+#~ "guimenuitem> </menuchoice>. You can also enter new functions in the "
+#~ "<guilabel>Function equation</guilabel> text box in the main &kmplot; "
+#~ "window. The text box can handle explicit and polar functions. Each "
+#~ "function you enter must have a unique name (&ie;, a name that is not "
+#~ "taken by any of the existing functions displayed in the list box). A "
+#~ "function name will be automatically generated if you do not specify one."
+#~ msgstr ""
+#~ "&kmplot; behandelt benannte Funktionen, die in Ausdrücken von "
+#~ "kartesischen Koordinaten (genannt <quote>explizite Funktionen</quote>), "
+#~ "polaren Koordinaten oder als parametrische Funktionen angegeben werden "
+#~ "können. Um eine Funktion einzugeben, benutzen Sie "
+#~ "<menuchoice><guimenu>Zeichnung</guimenu><guimenuitem>Zeichnungen "
+#~ "bearbeiten ...</guimenuitem> </menuchoice>. Sie können neue Funktionen "
+#~ "auch in das Textfeld <guilabel>Funktionsgleichung</guilabel> im "
+#~ "Hauptfenster von &kmplot; eingeben, aber nur explizite und polare "
+#~ "Funktionen. Jede Funktion, die Sie eingeben, muss einen eindeutigen Namen "
+#~ "haben (d.h. einen Namen, der noch nicht von einer vorhandenen Funktion im "
+#~ "Listenfeld benutzt wird). Wenn Sie keinen Funktionnamen angeben, wird er "
+#~ "automatisch erzeugt."
+
+#~ msgid ""
+#~ "For more information on &kmplot; functions, see <xref linkend=\"reference"
+#~ "\"/>."
+#~ msgstr ""
+#~ "Weitere Informationen zu den Funktionen in &kmplot; finden Sie unter "
+#~ "<xref linkend=\"reference\"/>."
+
+#~ msgid ""
+#~ "As an example, to draw the graph of y=x<superscript>2</superscript>+2x, "
+#~ "enter the following into the functions dialog of &kmplot;:"
+#~ msgstr ""
+#~ "Um zum Beispiel den Graphen von y=x<superscript>2</superscript>+2x zu "
+#~ "zeichnen, geben Sie folgendes im Funktionsdialog von &kmplot; ein:"
+
+#~ msgid "f(x)=x^2+2x"
+#~ msgstr "f(x)=x^2+2x"
+
+#~ msgid ""
+#~ "As an example, suppose you want to draw a circle, which has parametric "
+#~ "equations x=sin(t), y=cos(t). In the &kmplot; functions dialog, do the "
+#~ "following: <orderedlist> <listitem><para>Open the parametric plot dialog "
+#~ "with <menuchoice><guimenu>Plot</guimenu><guimenuitem>New Parametric "
+#~ "Plot...</guimenuitem> </menuchoice>.</para> </listitem> "
+#~ "<listitem><para>Enter a name for the function, say, <userinput>circle</"
+#~ "userinput>, in the <guilabel>Name</guilabel> box. The names of the x and "
+#~ "y functions change to match this name: the x function becomes "
+#~ "<guilabel>xcircle(t)</guilabel> and the y function becomes "
+#~ "<guilabel>ycircle(t)</guilabel>.</para> </listitem> <listitem> <para>In "
+#~ "the x and y boxes, enter the appropriate equations, &ie;, "
+#~ "<guilabel>xcircle(t)=</guilabel><userinput>sin(t)</userinput> and "
+#~ "<guilabel>ycircle(t)=</guilabel><userinput>cos(t)</userinput>.</para> </"
+#~ "listitem> </orderedlist> Click on <guibutton>OK</guibutton> and the "
+#~ "function will be drawn."
+#~ msgstr ""
+#~ "Angenommen, Sie wollen zum Beispiel einen Kreis zeichnen, mit dem "
+#~ "parametrischen Ausdruck x=sin(t), y=cos(t). Im Funktionsdialog von "
+#~ "&kmplot; verfahren Sie folgendermaßen: <orderedlist> "
+#~ "<listitem><para>Öffnen Sie den Dialog parametrische Zeichnung mit "
+#~ "<menuchoice><guimenu>Zeichnung</guimenu><guimenuitem>Neue parametrische "
+#~ "Zeichnung ...</guimenuitem> </menuchoice>.</para> </listitem> "
+#~ "<listitem><para>Geben Sie den Namen der Funktion, z. B. <userinput>Kreis</"
+#~ "userinput>, im Feld <guilabel>Name</guilabel> ein. Die Bezeichner der x- "
+#~ "und y-Funktionen ändern sich entsprechend: die x-Funktion wird zu "
+#~ "<guilabel>xKreis(t)</guilabel> und die y-Funktion wird zu <guilabel>yKreis"
+#~ "(t)</guilabel>.</para> </listitem> <listitem> <para>In den Felder für x "
+#~ "und y geben Sie die passenden Ausdrücke ein, z. B. <guilabel>xKreis(t)=</"
+#~ "guilabel><userinput>sin(t)</userinput> und <guilabel>yKreis(t)=</"
+#~ "guilabel><userinput>cos(t)</userinput>.</para> </listitem> </orderedlist> "
+#~ "Klicken Sie auf <guibutton>OK</guibutton> und die Funktion wird "
+#~ "gezeichnet."
+
+#~ msgid ""
+#~ "If this option is selected, the plot is not drawn, but &kmplot; remembers "
+#~ "the function definition, so you can use it to define other functions."
+#~ msgstr ""
+#~ "Wenn Sie diese Option ausgewählt haben, wird der Graph nicht gezeichnet, "
+#~ "aber &kmplot; speichert die Funktionsdefinition, so dass Sie damit andere "
+#~ "Funktionen definieren können."
+
+#~ msgid "Custom plot minimum-range"
+#~ msgstr "Eigener minimaler Zeichenbereich"
+
+#~ msgid "Custom plot maximum-range"
+#~ msgstr "Eigener maximaler Zeichenbereich"
+
+#~ msgid ""
+#~ "If this options are selected, you can change the maximum and minimum "
+#~ "values of the parameter t for which the function is plotted using the "
+#~ "<guilabel>Min:</guilabel> and <guilabel>Max:</guilabel> boxes."
+#~ msgstr ""
+#~ "Wenn Sie diese Option ausgewählt haben, können Sie den maximalen und "
+#~ "minimalen Wert des Parameters t, für den die Funktion gezeichnet wird, in "
+#~ "den Feldern <guilabel>Min:</guilabel> und <guilabel>Max:</guilabel> "
+#~ "ändern."
+
+#~ msgid "Line width:"
+#~ msgstr "Linienbreite:"
+
+#~ msgid ""
+#~ "With this option you can set the width of the line drawn on the plot "
+#~ "area, in units of 0.1mm."
+#~ msgstr ""
+#~ "Mit dieser Option können Sie die Breite der Linien in der Zeichnung in "
+#~ "Einheiten von 0,1 mm einstellen."
+
+#~ msgid "Color:"
+#~ msgstr "Farben:"
+
+#~ msgid ""
+#~ "Click on the color box and pick a color in the dialog that appears. The "
+#~ "line on the plot will be drawn in this color."
+#~ msgstr ""
+#~ "Klicken Sie auf das Farbfeld und wählen Sie dann im Dialog eine Farbe "
+#~ "aus. Die Linie in der Zeichnung wird in dieser Farbe gezeichnet."
+
+#~ msgid ""
+#~ "Note that you can only combine functions of the same type, &eg; an "
+#~ "explicit function cannot be combined with a polar function."
+#~ msgstr ""
+#~ "Beachten Sie, dass Sie nur Funktionen gleichen Typs kombinieren können, d."
+#~ "h. eine explizite Funktion kann nicht mit einer polaren Funktion "
+#~ "kombiniert werden."
+
+#~ msgid ""
+#~ "Another way to edit a function is to right click on the graph. In the "
+#~ "popup menu that appears, choose <guibutton>Edit</guibutton>"
+#~ msgstr ""
+#~ "Außerdem können Sie eine Funktion mit Klicken mit der rechten Maustaste "
+#~ "auf den Graphen bearbeiten. Wählen Sie im dann angezeigten Kontextmenü "
+#~ "<guibutton>Bearbeiten</guibutton>."
+
+#~ msgid ""
+#~ "For more information on the popup menu, see <xref linkend=\"popupmenu\"/>."
+#~ msgstr ""
+#~ "Weitere Informationen zum Kontextmenü finden Sie unter <xref linkend="
+#~ "\"popupmenu\"/>."
+
+#~ msgid "<guimenuitem>Hide</guimenuitem>"
+#~ msgstr "<guimenuitem>Ausblenden</guimenuitem>"
+
+#~ msgid "Shows the editor dialog for the selected function."
+#~ msgstr "Öffnet den Dialog zur Bearbeitung der gewählten Funktion."
+
+#~ msgid "Copy"
+#~ msgstr "Kopieren"
+
+#~ msgid "Copies the graph to another running &kmplot; instance."
+#~ msgstr "Kopiert den Graphen in eine anderes laufendes &kmplot;-Programm."
+
+#~ msgid "Move"
+#~ msgstr "Verschieben"
+
+#~ msgid "Moves the graph to another running &kmplot; instance."
+#~ msgstr "Verschiebt den Graphen in eine anderes laufendes &kmplot;-Programm."
+
+#~ msgid "For plot functions the following four items are also available:"
+#~ msgstr "Für Zeichnungsfunktionen sind noch vier weitere Einträge vorhanden:"

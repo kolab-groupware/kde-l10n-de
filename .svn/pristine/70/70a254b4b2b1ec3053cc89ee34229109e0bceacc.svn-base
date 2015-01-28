@@ -1,0 +1,373 @@
+# Georg Schuster <gschuster@utanet.at>, 2005, 2006.
+# Stephan Johach <hunsum@gmx.de>, 2005.
+# Burkhard Lück <lueck@hube-lueck.de>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kommander_basics\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:10+0000\n"
+"PO-Revision-Date: 2009-03-09 10:35+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 0.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: basics.docbook:5 basics.docbook:27
+#, no-c-format
+msgid "&kommander; Basics"
+msgstr "&kommander;-Grundlagen"
+
+#. Tag: author
+#: basics.docbook:7
+#, no-c-format
+msgid "<firstname>Tamara</firstname> <surname>King</surname>"
+msgstr "<firstname>Tamara</firstname> <surname>King</surname>"
+
+#. Tag: email
+#: basics.docbook:11
+#, no-c-format
+msgid "tik@acm.org"
+msgstr "tik@acm.org"
+
+#. Tag: author
+#: basics.docbook:14
+#, no-c-format
+msgid "<firstname>Eric</firstname> <surname>Laffoon</surname>"
+msgstr "<firstname>Eric</firstname> <surname>Laffoon</surname>"
+
+#. Tag: email
+#: basics.docbook:18
+#, no-c-format
+msgid "sequitur@kde.org"
+msgstr "sequitur@kde.org"
+
+#. Tag: trans_comment
+#: basics.docbook:22
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Georg</"
+"firstname><surname>Schuster</"
+"surname><affiliation><address><email>gschuster@utanet.at</email></address></"
+"affiliation><contrib>Deutsche Übersetzung</contrib></othercredit>"
+
+#. Tag: title
+#: basics.docbook:34
+#, no-c-format
+msgid "Concepts"
+msgstr "Konzepte"
+
+#. Tag: para
+#: basics.docbook:37
+#, no-c-format
+msgid ""
+"&kommander; was originally designed around a simple concept that has proven "
+"somewhat revolutionary among visual design tools. Typically these tools "
+"allow you to create dialogs and possibly mainwindow interfaces. Of course a "
+"mainwindow interface is the main program window which typically has menus, "
+"toolbars, statusbar and the application area. Dialogs are child windows "
+"which typically don't have menus and are so named because their purpose is "
+"to <quote>have a dialog</quote> or exchange information between you and the "
+"main application. The elements on a dialog are called <quote>widgets</quote> "
+"and you hook your program into these widgets. &kommander; is different "
+"because it is inherently nonprogrammatic here. It uses the concept of "
+"associating text with the widgets on the dialog. Initially this was called "
+"<quote>Associated Text</quote> but now it is called <quote>&kommander; Text</"
+"quote>. Widgets on &kommander; dialogs can include the content of other "
+"widgets by reference and a widget can reference its own content by use of a "
+"<quote>Special</quote> that looks like this, @widgetText. Specials are "
+"commands with special meaning in &kommander;. So if you created a dialog "
+"with two LineEditwidgets and named the first <quote>FirstName</quote> and "
+"the second <quote>LastName</quote> you could create a button and set its "
+"&kommander; Text to <quote>My name is @FirstName @LastName</quote>. You "
+"would need to set @widgetText in the first and last name widgets. Remember? "
+"We need to tell &kommander; to reference the text in them. You could run "
+"this from a <application>Konsole</application> and it would output the "
+"string for you. So it would reference the first name like so: @FirstName -> "
+"get the widget named FirstName(@FirstName) -> @widgetText -> get the "
+"contents of the LineEdit widget. So in this case @FirstName returns "
+"<quote>Eric</quote>: @FirstName -> @widgetText -> <quote>Eric</quote>."
+msgstr ""
+"&kommander; wurde ursprünglich rund um ein einfaches Konzept entworfen, das "
+"sich als revolutionär unter den visuellen Entwicklungswerkzeugen entpuppt "
+"hat. Typischerweise ermöglichen diese Werkzeuge die Erstellung von Dialogen "
+"und möglicheweise von Benutzeroberflächen. So eine Benutzeroberfläche hat "
+"Menüs, Werkzeugleisten, eine Statusleiste und den Anwendungsbereich. Dialoge "
+"sind Kindfenster ohne Menüs und tragen ihren Namen weil ihr Zweck ist, "
+"<quote>in Dialog</quote> mit dem Benutzer zu treten oder mit ihm "
+"Informationen auszutauschen. Die Elemente auf einem Dialog werden "
+"<quote>Bedienelemente</quote> genannt und man verknüpft das Programm und "
+"diese Bedienelemente. &kommander; ist anders, weil es von vorneherein nicht "
+"programmiert. Es benutzt ein Konzept der Verknüpfung von Text mit den "
+"Bedienelementen im Dialog. Ursprünglich wurde dies <quote>Assoziierter Text</"
+"quote> genannt, nun heißt es einfach <quote>&kommander;-Text</quote>. "
+"Bedienelemente in &kommander;-Dialogen können den Inhalt anderer "
+"Bedienelemente durch Referenz enthalten und ein Bedienelement kann seinen "
+"eigenen Inhalt referenzieren, mittels <quote>Anweisung</quote>, die so "
+"aussieht: @BedienelementText. Anweisungensind Befehle mit besonderer "
+"Bedeutung in &kommander;. Es kann also, wenn ein Dialog mit zwei einzeiligen "
+"Eingabefeld-Bedienelementen, dem ersten <quote>Vorname</quote> und dem "
+"zweiten <quote>Nachname</quote>, erstellt wurde, eine Schaltfläche mit dem "
+"&kommander;-Text <quote>Mein Name ist @Vorname @Nachname</quote> hinzugefügt "
+"werden. Zuerst müßte Vor- und Nachname ausgefüllt werden, dann könnte "
+"&kommander; die Referenz benutzen. Von der <application>Konsole</"
+"application> gestartet, könnte die ganze Zeichenkette ausgegeben werden. Es "
+"würde den Vornamen so erhalten: @Vorname -> hole das Bedienelement Vorname "
+"(@Vorname) -> @BedienelementText -> hole den Inhalt des einzeiligen "
+"Eingabefeldes. Wenn dort <quote>Eric</quote> eingegeben worden wäre, liefert "
+"@Vorname also <quote>Eric</quote>."
+
+#. Tag: para
+#: basics.docbook:41
+#, no-c-format
+msgid ""
+"That is the simple core of &kommander;. What you can do with this is where "
+"it gets interesting. First of all it is worth noting that compared to the "
+"normal approach of a language based tool &kommander; does not need "
+"programming statements to define these operations. This makes &kommander; "
+"quick for developers. For end users it's much simpler than learning language "
+"constructs. For everyone it means you can focus on your task instead of "
+"having your reference material eternally at hand. Initially when people are "
+"exposed to a tool like &kommander; the first question is <quote>Where could "
+"I find a use for this cool tool?</quote> As it turns out, manipulating "
+"strings is used just about anywhere you look."
+msgstr ""
+"Das ist, vereinfacht, der Kern von &kommander;. Interessant ist, was man "
+"daraus machen kann. Zunächst sollte angemerkt werden, dass, verglichen mit "
+"der Art von auf Programmiersprachen gestützten Werkzeugen, &kommander; keine "
+"Programmanweisungen für solche Operationen braucht. Das macht &kommander; "
+"schnell für Entwickler. Für Endbenutzer ist es einfacher, als "
+"Programmiersprachen zu lernen. Für Jedermann bedeutet es, die Aufgabe in den "
+"Mittelpunkt zu stellen, statt die Sprachreferenz ewig mitzuführen. Anfangs, "
+"wenn Leute mit einem Werkzeug wie &kommander; in Berührung kommen, ist die "
+"erste Frage <quote> Wofür kann ich dieses Werkzeug nutzen?</quote> Es stellt "
+"sich heraus, dass der Umgang mit Zeichenketten allgegenwärtig ist."
+
+#. Tag: para
+#: basics.docbook:45
+#, no-c-format
+msgid ""
+"So what can &kommander; do? Here is the list distilled to the base "
+"operations. &kommander; can:"
+msgstr ""
+"Also, was kann &kommander; leisten? Hier die Liste mit grundlegenden "
+"Operationen. &kommander; kann:"
+
+#. Tag: para
+#: basics.docbook:51
+#, no-c-format
+msgid "Pass strings to the calling program via stdout."
+msgstr "Zeichenketten an das aufrufende Programm über stdout weitergeben."
+
+#. Tag: para
+#: basics.docbook:52
+#, no-c-format
+msgid "Call executable programs."
+msgstr "Programme aufrufen."
+
+#. Tag: para
+#: basics.docbook:53
+#, no-c-format
+msgid "Use &DCOP; to interact with &kde; programs"
+msgstr "&DCOP; benutzen um mit &kde;-Programmen zusammenzuarbeiten"
+
+#. Tag: para
+#: basics.docbook:56
+#, no-c-format
+msgid ""
+"If you're not a programmer you may want that in laymans terms. In number "
+"one, if you launch &kommander; from a console then the console is the "
+"calling program. There is a parent child relationship there. Sending a "
+"message to console is done with the standard output (stdout) of the child "
+"program, so named because there is also error output. This is interesting "
+"because some programs, like &quantaplus;, use stdout to receive information "
+"from programs they launch. So &kommander; dialogs can output their text "
+"strings directly into &quantaplus;'s editor if they are called from "
+"&quantaplus;. This means &kommander; dialogs can be useful extentions to "
+"programs."
+msgstr ""
+"Wenn sie keine Programmierer sind, möchten Sie die Erklärung allgemein "
+"verständlich. Erstens, wenn &kommander; von der Konsole gestartet wird, ist "
+"die Konsole das aufrufende Programm. Es besteht eine Eltern-Kind Beziehung "
+"hier. Durch die Standardausgabe (stdout), so genannt, weil es auch eine "
+"Fehlerausgabe gibt, des Kindprogrammes kann eine Nachricht zur Konsole "
+"geschickt werden. Dies ist interessant, weil Programme wie &quantaplus; die "
+"Standardausgabe nutzen, um Information von Programmen, dies sie starten, zu "
+"erhalten. Auf diese Weise können &kommander;-Dialoge ihre Text-Ausgabe "
+"direkt an den Editor von &quantaplus; lierfern, wenn sie aus &quantaplus; "
+"gestartet wurden. Das bedeutet, &kommander;-Dialoge können für die "
+"Erweiterung eines Programmes genutzt werden."
+
+#. Tag: para
+#: basics.docbook:60
+#, no-c-format
+msgid ""
+"The second case is calling an executable. Any program that runs on your "
+"system is an executable. Even a script program is run by the script's "
+"interpreter so technically it's executed too. &kommander; can run commands "
+"just like the console even if you run it from the menu. So for instance if "
+"you wanted it to open &GIMP; you would have a button derive the string "
+"<quote>gimp</quote> and put it in a special like so: @exec(gimp). Just like "
+"that you will see &GIMP; open when using this. You could also exec <quote>ls "
+"-l</quote> too but you would only see the output if you were running from a "
+"console."
+msgstr ""
+"Der zweite Fall ist der Aufruf einer ausführbaren Datei. Jedes Programm, das "
+"auf ihrem Rechner läuft, ist ausführbar. Auch ein Skript-Programm, das von "
+"einem Interpreter ausgeführt wird, ist, technisch gesehen, ausführbar. "
+"&kommander; kann Befehle wie auf der Konsole ausführen, auch wenn vom Menü "
+"gestartet. So würde beispielsweise, wenn es &GIMP; starten soll, eine "
+"Schaltfläche die Beschriftung <quote>The Gimp</quote> tragen und eine "
+"Anweisung wie: @exec(gimp) enthalten. Das genügt, um bei Benutzung &GIMP; "
+"starten zu lassen. Man könnte auch <quote>ls -l</quote> ausführen lassen, "
+"aber das Ergebnis wäre nur von einer Konsole aus sichtbar."
+
+#. Tag: para
+#: basics.docbook:64
+#, no-c-format
+msgid ""
+"The third case is very interesting indeed. &DCOP; is short for &kde;'s "
+"<emphasis>D</emphasis>esktop <emphasis>CO</emphasis>mmunication <emphasis>P</"
+"emphasis>rotocol and it is very powerful. Go ahead and run the "
+"<application>kdcop</application> program and have a look around. You'll "
+"quickly see that any &kde; application that is built to standards has things "
+"happening in &DCOP; and the well designed ones have a lot going on. With "
+"&DCOP; you can query information of all sorts as well as set widget values "
+"and more. There is a section on using &DCOP; in this manual. &kommander; can "
+"send &DCOP; to any &kde; program as well as be controlled by &DCOP;. In fact "
+"you can send &DCOP; from the command line to any &kde; program. So what's "
+"the big deal? The deal is, if you want to do any volume of commands you "
+"begin to realized that command line &DCOP; is adequate for short commands, "
+"but it can cause delays for instance being called from a loop several "
+"hundred times. This is why &kommander; has a @dcop special, because this is "
+"roughly 1000 times faster. Because &kommander; can send and receive &DCOP;, "
+"&DCOP; can be used to script &kommander;. That is why we also have a local "
+"&DCOP; special, @ldcop, that allows you to type a lot less to issue a "
+"command."
+msgstr ""
+"Der dritte Fall ist besonders interessant. &DCOP; ist die Abkürzung für &kde;"
+"s <emphasis>D</emphasis>esktop <emphasis>CO</emphasis>mmunication "
+"<emphasis>P</emphasis>rotocol und ist sehr leistungsfähig. Starten Sie das "
+"<application>kdcop</application>-Programm und sehen Sie die Liste an. Jede "
+"standardkonforme &kde;-Anwendung hat Dinge in &DCOP; und die fortschrittlich "
+"gestalteten benutzen es intensiv. Mit &DCOP; ist die Suche nach "
+"Informationen jeder Art ebenso wie die Einstellung von Bedienelement-Werten "
+"und mehr möglich. Ein Teil dieses Handbuches beschreibt die Verwendung von "
+"&DCOP;. &kommander; kann &DCOP;-Anforderungen senden als auch selbst über "
+"&DCOP; gesteuert werden. Von der Befehlszeile können &DCOP;-Anfragen an "
+"jedes &kde;-Programm gesendet werden. Wo ist also die Verbesserung? Bei "
+"einer großen Anzahl von &DCOP;-Anforderungen über die Befehlszeile wird es "
+"sehr langsam, wenn z. B. Schleifen hunderte Mal ausgeführt werden. Hier hat "
+"&kommander; eine @dcop Anweisung, weil das etwa 1000 Mal schneller läuft. "
+"Weil &kommander; &DCOP; senden und empfangen kann, ist es möglich, damit "
+"&kommander; zu skripten. Daher haben wir auch eine lokale &DCOP; Anweisung, "
+"@ldcop, um weniger für das Absetzen eines Befehls eingeben zu müssen."
+
+#. Tag: para
+#: basics.docbook:68
+#, no-c-format
+msgid ""
+"Is that all the core concepts in &kommander;? No, but it should help you to "
+"make sense of how it works so that what is covered does not look like a "
+"foreign language to you. There are a few more. Signals and slots are how "
+"&kommander; handles events. An event in a program basically means "
+"<quote>something happened</quote> like a widget was created or had its text "
+"changed. These changes <quote>emit signals</quote> and you can connect those "
+"signals to a receiving slot which will then do something when the event "
+"happens. One use of this in &kommander; is the sibling of &kommander; Text, "
+"<quote>Population Text</quote>. Population Text will populate a widget when "
+"called. Just like &kommander; Text, Population Text can contain text strings "
+"or scripts."
+msgstr ""
+"Sind das alle Kernkonzepte in &kommander;? Nein, aber es sollte für das "
+"grundsätzliche Verständnis, wie es funktioniert, hilfreich sein, sodass es "
+"nicht wie eine Fremdsprache wirkt. Es gibt aber noch mehr. Mit Signalen und "
+"Slots behandelt &kommander; Ereignisse. Ein Ereignis in einem Programm meint "
+"<quote>irgendetwas geschah</quote>, wie die Schaffung eines Bedienelementes "
+"oder die Änderung des enthaltenen Textes. Diese Änderungen <quote>senden "
+"Signal aus</quote>, die mit einem empfangenden Slot verbunden werden können, "
+"der dann etwas tut, wenn das Ereignis auftritt. Eine Anwendung in "
+"&kommander; ist <quote>Population-Text</quote>, das bei Aufruf ein "
+"Bedienelement mit Text befüllt. Ebenso wie &kommander;-Text kann Population-"
+"Text Zeichenketten oder Skripte enthalten."
+
+#. Tag: para
+#: basics.docbook:72
+#, no-c-format
+msgid ""
+"That should give you the base concepts to begin using &kommander;. We try to "
+"keep the number of Specials low and we use &DCOP; a lot. The idea is that we "
+"want to keep the power of &kommander; as consistent and streamlined as "
+"possible. You will find that you can incorporate any scripting language into "
+"&kommander; where ever you need to and even multiple scripting languages in "
+"a dialog. The rest of the information in this document assumes you are "
+"familiar with the concepts and terms presented here. The examples and "
+"tutorials are also very useful to understanding what can be done with "
+"&kommander;."
+msgstr ""
+"Das sollte die Basis für den Beginn mit &kommander; legen. Wir versuchen die "
+"Anzahl der Anweisungen niedrig zu halten und verwenden häufig  &DCOP;. Die "
+"Idee ist, die Mächtigkeit von &kommander; so schlank und einheitlich wie "
+"möglich zu gewährleisten. Es kann jede Skriptsprache in &kommander; "
+"eingebaut werden, sogar mehrere gleichzeitig in einem Dialog. Im weiteren "
+"Bereich der Dokumentation wird vorausgesetzt, dass die hier präsentierten "
+"Konzepte und Begriffe bekannt sind. Sehr nützlich für das Verständnis, was "
+"mit &kommander; möglich ist, sind auch die Beispiele und Anleitungen."
+
+#. Tag: chapter
+#: basics.docbook:75
+#, no-c-format
+msgid "&editor;"
+msgstr "&editor;"
+
+#. Tag: title
+#: basics.docbook:80
+#, no-c-format
+msgid "The Executor"
+msgstr "Der Executor"
+
+#. Tag: para
+#: basics.docbook:82
+#, no-c-format
+msgid ""
+"The executor, called <application>kmdr-executor</application>, runs "
+"&kommander; scripts. It loads <literal role=\"extension\">.kmdr</literal> "
+"files and dynamically produces a fully functional dialog."
+msgstr ""
+"Der Executer, benannt <application>kmdr-executor</application>, führt "
+"&kommander;-Skripte aus. Er ladet <literal role=\"extension\">.kmdr</"
+"literal> Dateien und erzeugt dynamische, voll funktionale Dialoge."
+
+#. Tag: title
+#: basics.docbook:87
+#, no-c-format
+msgid "Executor for Programmers"
+msgstr "Excecutor für Entwickler"
+
+#. Tag: para
+#: basics.docbook:89
+#, no-c-format
+msgid ""
+"C++ developers can easily use the KmdrDialogInstance class in their C++ "
+"programs so that the execution functionality is embedded in the their "
+"application obsoleting the need for running the external executor program. "
+"For standard dialog the dialog creation overhead is minimal but the creation "
+"of the &kde; application may delay the dialog for around a second."
+msgstr ""
+"C++ Entwickler können leicht die KmdrDialogInstance Klasse in ihren C++-"
+"Programmen nutzen und damit die Funktionalität in ihre Anwendungen "
+"einbetten, sodass kein Bedarf besteht, das eigenständige Executor-Programm "
+"auszuführen. Für Standarddialoge ist der Aufwand für die Dialogerstellung "
+"minimal, aber die Erstellung der &kde;-Anwendung beim Start kann den Dialog "
+"für etwa eine Sekunde verzögern."
+
+#. Tag: title
+#: basics.docbook:97
+#, no-c-format
+msgid "Creating a Dialog"
+msgstr "Einen Dialog erstellen"

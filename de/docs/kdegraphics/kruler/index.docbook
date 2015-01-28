@@ -1,0 +1,635 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+  <!ENTITY kappname "&kruler;">
+  <!ENTITY package "kdegraphics">
+  <!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+  <!ENTITY % addindex "IGNORE">
+]>
+
+<book id="kruler" lang="&language;">
+
+<bookinfo>
+<title
+>Das Handbuch zu &kruler;</title>
+
+<authorgroup>
+<author
+><firstname
+>Lauri</firstname
+> <surname
+>Watts</surname
+> <affiliation
+> <address
+><email
+>&Lauri.Watts.mail;</email
+></address>
+</affiliation>
+</author>
+
+<othercredit role="translator"
+><firstname
+>Robert</firstname
+><surname
+>Gogolok</surname
+> <affiliation
+><address
+><email
+>robertgogolok@gmx.de</email
+></address
+></affiliation
+> <contrib
+>Übersetzung des Handbuchs</contrib
+></othercredit
+> <othercredit role="translator"
+><firstname
+>Marco</firstname
+><surname
+>Wegner</surname
+> <affiliation
+><address
+><email
+>mail@marcowegner.de</email
+></address
+></affiliation
+> <contrib
+>Überarbeitung der Übersetzung</contrib
+></othercredit
+> <othercredit role="translator"
+><firstname
+>Stefan</firstname
+><surname
+>Winter</surname
+> <affiliation
+><address
+><email
+>swinter@kde.org</email
+></address
+></affiliation
+> <contrib
+>Übersetzung der Programmoberfläche</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<copyright>
+<year
+>2001</year>
+<holder
+>&Lauri.Watts;</holder>
+</copyright>
+
+<date
+>2013-06-24</date>
+<releaseinfo
+>&kde; 4.11</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&kruler; kann verwendet werden, um Objekte auf dem Bildschirm zu vermessen. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>KRuler</keyword>
+<keyword
+>kdegraphics</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Einleitung</title>
+
+<para
+>&kruler; ist eine sehr einfache Anwendung mit nur einem Ziel: Abstände von Pixeln und Farben auf dem Bildschirm zu messen. Es hilft z. B. bei Arbeiten an Webseiten-Layouts oder bei der Arbeit an Dialogen &etc;</para>
+
+<para
+>Um &kruler; zu starten, wählen Sie <menuchoice
+><guimenu
+>Programme</guimenu
+><guisubmenu
+>Grafik</guisubmenu
+> <guisubmenu
+>Weitere Programme</guisubmenu
+> <guimenuitem
+>Bildschirmlineal - KRuler</guimenuitem
+></menuchoice
+> aus dem &kmenu;.</para>
+
+<screenshot>
+<screeninfo
+>&kruler;</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="kruler.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>&kruler;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>Klicken mit der <mousebutton
+>linken</mousebutton
+> Maustaste auf &kruler; ändert den Mauszeiger in ein Kreuz mit vier Pfeilen und ermöglicht es Ihnen, &kruler; auf dem Bildschirm zu verschieben.</para>
+
+<para
+>Wenn Sie die Maus über &kruler; bewegen, ändert sich ihr Zeiger in einen verlängerten Pfeil mit einem Kreis an einem Ende. Wenn Sie den Mauszeiger bewegen, zeigt &kruler; an, wie weit der Kreis am Ende des Zeigers gerade von dem Punkt entfernt ist, der mit <guilabel
+>0</guilabel
+> markiert ist. &kruler; zeigt auch den &HTML;-Code der Farbe unter dem Kreis an. Das ist sehr nützlich beim Auslesen von Farben eines Bildes. Wenn sie die Maus weit genug fort bewegen, sodass der Zeiger mit dem Pfeil nicht mehr &kruler; berührt, kehrt der Zeiger in den normalen Zustand zurück, der es Ihnen erlaubt, die Arbeit mit anderen Anwendungen fortzusetzen.</para>
+
+<para
+>Sie können die Ausrichtung des Lineals auf drei verschieden Arten ändern:</para>
+
+<simplelist>
+<member
+>Klicken Sie mit der &MMBn; auf das Lineal, um zwischen der vertikalen und horizontalen Ausrichtung zu wechseln.</member>
+<member
+>Klicken Sie auf die Drehsymbole, um das Lineal in Schritten von 90 Grad im oder gegen den Uhrzeigersinn zu drehen. Werden die Drehsymbole auf dem Lineal nicht angezeigt, aktivieren Sie die Anzeige mit <guilabel
+>„Drehen“-Knopf anzeigen</guilabel
+> im <link linkend="settings-dialog"
+>Einrichtungsdialog</link
+>.</member>
+<member
+>Benutzen Sie das Kontextmenü, wie im nächsten Kapitel beschrieben.</member>
+</simplelist>
+
+</chapter>
+
+<chapter id="menu-reference">
+<title
+>Menüreferenz</title>
+
+<para
+>Das Klicken mit der <mousebutton
+>rechten</mousebutton
+> Maustaste auf das Lineal öffnet ein Kontextmenü mit den folgenden Einträgen: </para>
+
+<variablelist>
+<varlistentry>
+<term>
+<menuchoice>
+<guisubmenu
+>Ausrichtung</guisubmenu>
+</menuchoice>
+</term>
+<listitem>
+<para
+>Dieses Untermenü enthält Einträge, die es Ihnen erlauben, die Ausrichtung von &kruler; zu ändern.</para>
+
+<variablelist>
+<varlistentry>
+<term>
+<menuchoice
+><shortcut
+> <keycap
+>N</keycap
+> </shortcut
+> <guisubmenu
+>Ausrichtung</guisubmenu
+> <guimenuitem
+>Nord</guimenuitem
+> </menuchoice>
+</term>
+<listitem>
+<para
+>Dreht &kruler; so, dass das Lineal waagerecht liegt und der Maßstab im oberen Teil (Norden) des Lineals ist.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+<menuchoice
+><shortcut
+> <keycap
+>E</keycap
+> </shortcut
+> <guisubmenu
+>Ausrichtung</guisubmenu
+> <guimenuitem
+>Ost</guimenuitem
+> </menuchoice>
+</term>
+<listitem>
+<para
+>Dreht &kruler; so, dass das Lineal senkrecht liegt und sich der Maßstab auf der rechten Seite (Osten) des Lineals befindet.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+<menuchoice
+><shortcut
+> <keycap
+>S</keycap
+> </shortcut
+> <guisubmenu
+>Ausrichtung</guisubmenu
+> <guimenuitem
+>Süd</guimenuitem
+> </menuchoice>
+</term>
+<listitem>
+<para
+>Dreht &kruler; so, dass das Lineal waagerecht liegt und sich der Maßstab im unteren Teil (Süden) des Lineals befindet.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+<menuchoice
+><shortcut
+><keycap
+>W</keycap
+></shortcut
+> <guisubmenu
+>Ausrichtung</guisubmenu
+><guimenuitem
+>West</guimenuitem
+> </menuchoice>
+</term>
+<listitem>
+<para
+>Dreht &kruler; so, dass das Lineal senkrecht liegt und sich der Maßstab auf der linken Seite (Westen) des Lineals befindet.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+<menuchoice
+><shortcut
+><keycap
+>R</keycap
+></shortcut
+> <guisubmenu
+>Ausrichtung</guisubmenu
+><guimenuitem
+>Im Uhrzeigersinn drehen</guimenuitem
+> </menuchoice>
+</term>
+<listitem>
+<para
+>Dreht das Lineal 90 Grad nach rechts. War es zum Beispiel nach Süden orientiert, so ändert sich die Ausrichtung auf West.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+<menuchoice
+><shortcut
+><keycap
+>L</keycap
+></shortcut
+> <guisubmenu
+>Ausrichtung</guisubmenu
+><guimenuitem
+>Gegen den Uhrzeigersinn drehen</guimenuitem
+> </menuchoice>
+</term>
+<listitem>
+<para
+>Dreht das Lineal 90 Grad nach links. War es zum Beispiel nach Westen orientiert, so ändert sich die Ausrichtung auf Süd.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+<menuchoice>
+<guisubmenu
+>Länge</guisubmenu>
+</menuchoice>
+</term>
+<listitem>
+<para
+>Dieses Untermenü enthält Einträge, die es Ihnen erlauben, die Länge von &kruler; zu verändern.</para>
+<variablelist>
+<varlistentry>
+<term>
+<menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl; <keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guisubmenu
+>Länge</guisubmenu
+> <guimenuitem
+>Kurz</guimenuitem
+> </menuchoice>
+</term>
+<listitem>
+<para
+>Minimale Länge für &kruler; - etwa 385 Pixel.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+<menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+> </shortcut
+> <guisubmenu
+>Länge</guisubmenu
+> <guimenuitem
+>Mittel</guimenuitem
+> </menuchoice>
+</term>
+<listitem>
+<para
+>Mittlere Länge für &kruler; - etwa 640 Pixel.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+<menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>T</keycap
+></keycombo
+> </shortcut
+> <guisubmenu
+>Länge</guisubmenu
+> <guimenuitem
+>Lang</guimenuitem
+> </menuchoice>
+</term>
+<listitem>
+<para
+>Maximale Länge für &kruler; - etwa 960 Pixel.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+<menuchoice
+><shortcut
+>  <keycombo action="simul"
+>&Ctrl;<keycap
+>F</keycap
+></keycombo
+> </shortcut
+> <guisubmenu
+>Länge</guisubmenu
+> <guimenuitem
+>Volle Bildschirmbreite</guimenuitem
+> </menuchoice>
+</term>
+<listitem>
+<para
+>Bringt &kruler; auf Bildschirmbreite.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+<menuchoice
+><guisubmenu
+>Länge</guisubmenu
+> <guimenuitem
+>Länge ...</guimenuitem
+> </menuchoice>
+</term>
+<listitem>
+<para
+>Öffnet einen Dialog, in dem Sie die Größe direkt eingeben können.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+<para
+>Zusätzlich können Sie die Länge und die rechte Seite des Lineals mit dem Mausrad ändern. Wenn Sie dabei die &Shift;taste gedrückt halten, wird die linke Seite geändert. </para>
+
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<menuchoice>
+<guimenuitem
+>Skalieren</guimenuitem>
+</menuchoice>
+</term>
+<listitem>
+<para
+>Für die Skala des Lineals gibt es folgende Einstellungen: <guilabel
+>Rechts nach links</guilabel
+> (<keycap
+>D</keycap
+>), <guilabel
+>Ursprung zentriert</guilabel
+> (<keycap
+>C</keycap
+>), <guilabel
+>Versatz</guilabel
+> (<keycap
+>O</keycap
+>) und <guilabel
+>Prozent</guilabel
+>.</para>
+<para
+>Der Versatz kann auch mit dem Mausrad geändert geändert werden, wenn Sie dabei die &LMB; gedrückt halten.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<menuchoice>
+<guimenuitem
+>Durchsichtigkeit</guimenuitem>
+</menuchoice>
+</term>
+<listitem>
+<para
+>Dieses Menüeintrag zeigt einen Schieberegler um die Deckkraft von &kruler; zu ändern.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<menuchoice>
+<guimenuitem
+>Kurzbefehle festlegen ...</guimenuitem>
+</menuchoice>
+</term>
+<listitem>
+<para
+>Der Dialog <guilabel
+>Kurzbefehle festlegen</guilabel
+> ermöglicht es Ihnen, &kruler;-Aktionen Tastaturkürzel zuzuweisen und die schon vorhandene Kurzbefehl einzurichten.</para>
+<para
+>Weitere Informationen dazu finden Sie im Abschnitt <ulink url="help:/fundamentals/confightml#shortcuts"
+>Kurzbefehle</ulink
+> der &kde;-Grundlagen. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry id= "settings-dialog">
+<term>
+<menuchoice>
+<guimenuitem
+>&kruler; einrichten ...</guimenuitem>
+</menuchoice>
+</term>
+<listitem>
+<para>
+<screenshot>
+<screeninfo
+>&kruler;s Einstellungsdialog</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="kruler-settings.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>&kruler;s Einstellungsdialog</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+</para>
+<para
+>In diesem Dialog können Sie die Hintergrundfarbe, die Schriftart auf dem Lineal, die Knöpfe zum Schließen und Drehen aktivieren und &kruler; als Symbol in der Kontrollleiste anzeigen lassen.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>C</keycap
+></keycombo
+> </shortcut
+> <guimenuitem
+>Farbe kopieren</guimenuitem
+> </menuchoice>
+</term>
+<listitem>
+<para
+>Kopiert den Farbcode der aktuellen Farbe unter dem Kreis im &HTML;-Format in die Zwischenablage.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+> 
+<menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>W</keycap
+></keycombo
+> </shortcut
+> <guimenuitem
+>Schließen</guimenuitem
+> </menuchoice>
+</term>
+<listitem>
+<para
+><action
+>Blendet</action
+> &kruler; aus. Durch Klicken auf das Symbol in der Kontrollleiste kann &kruler; wieder angezeigt werden. Das Kontextmenü enthält diesen Eintrag nur, wenn <guilabel
+>Symbol im Systemabschnitt der Kontrollleiste</guilabel
+> im <link linkend="settings-dialog"
+>Einrichtungsdialog</link
+> aktiviert ist.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenuitem
+>Beenden</guimenuitem
+> </menuchoice>
+</term>
+<listitem>
+<para
+><action
+>Beendet</action
+> &kruler;</para>
+</listitem>
+</varlistentry>
+</variablelist>
+<para
+>&kruler; benutzt die bekannten &kde;-Einträge im Menü <guimenu
+>Hilfe</guimenu
+>, weitere Informationen dazu finden Sie im Abschnitt über das Menü <ulink url="help:/fundamentals/uihtml#menus-help"
+>Hilfe</ulink
+> der &kde;-Grundlagen. </para>
+
+</chapter>
+
+<chapter id="credits-and-license">
+<title
+>Danksagungen und Lizenz</title>
+
+<para
+>&kruler;</para>
+
+<para
+>Copyright 2000, 2001 Till Krech <email
+>till@snafu.de</email
+></para>
+<para
+>Copyright 2009 Mathias Soeken <email
+>msoeken@tzi.de</email
+></para>
+
+<para
+>Dank geht an Gunnstein Lye <email
+>gl@ez.no</email
+> für die ursprüngliche Portierung auf &kde; 2</para>
+
+<para
+>Copyright für die Dokumentation &Lauri.Watts; &Lauri.Watts.mail;</para>
+
+<para
+>Übersetzung des Handbuchs: Robert Gogolok <email
+>robertgogolok@gmx.de</email
+> und Marco Wegner <email
+>mail@marcowegner.de</email
+></para
+> <para
+>Übersetzung der Programmoberfläche: Stefan Winter <email
+>swinter@kde.org</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+<appendix id="installation">
+<title
+>Installation</title>
+
+&install.intro.documentation;
+
+&install.compile.documentation;
+
+</appendix>
+
+&documentation.index; 
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes: nil
+sgml-general-insert-case: lower
+End:
+-->
+

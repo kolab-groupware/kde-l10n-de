@@ -1,0 +1,264 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: PolicyKit-kde_authorization\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:26+0000\n"
+"PO-Revision-Date: 2009-07-30 22:04+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/extragear/base/doc/PolicyKit-kde/authorization."
+"docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 922859\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: authorization.docbook:2
+#, no-c-format
+msgid "Authorization manager"
+msgstr "Berechtigungsverwalter"
+
+#. Tag: title
+#: authorization.docbook:5
+#, no-c-format
+msgid "Manual"
+msgstr "Handbuch"
+
+#. Tag: para
+#: authorization.docbook:7
+#, no-c-format
+msgid ""
+"The Authorization manager is the application that system administrators can "
+"use to easily change the default behavior of any actions. This page does not "
+"aim to explain how to create new actions or define new <quote>.policy</"
+"quote> files."
+msgstr ""
+"Der <emphasis>Berechtigungsverwalter</emphasis> ist die Anwendung, mit der "
+"Systemadministratoren das standardmäßige Verhalten jeglicher Aktionen auf "
+"einfache Art und Weise ändern können. Diese Seite beinhaltet jedoch nicht "
+"die Erklärungen zum Erstellen neuer Aktionen oder definieren von neuen "
+"<filename>.policy</filename>-Dateien."
+
+#. Tag: para
+#: authorization.docbook:13
+#, no-c-format
+msgid ""
+"The Authorization screen is divided in two parts, at the left we have all "
+"the actions that PolicyKit knows, you are able to search the actions using "
+"the search bar at the top, and at the right we have the selected action. "
+"This screenshot shows the main Authorization screen:"
+msgstr ""
+"Das Fenster <guilabel>PolicyKit-Berechtigungen - Systemeinstellungen</"
+"guilabel> ist in zwei Teile unterteilt. Links sind alle Aktionen aufgeführt, "
+"die PolicyKit kennt und die Aktionen können mit der Suchleiste gesucht "
+"werden. Auf der rechten Seite ist die ausgewählte Aktion aufgeführt. Dieses "
+"Bildschirmfoto zeigt das Hauptfenster:"
+
+#. Tag: phrase
+#: authorization.docbook:24
+#, no-c-format
+msgid "Main window with source device"
+msgstr "Hauptfenster mit dem Quellgerät"
+
+#. Tag: para
+#: authorization.docbook:29
+#, no-c-format
+msgid ""
+"When you select an action it's details will be shown at the right side, the "
+"action might have an icon, a description and the vendor name. Next in the "
+"view we have the <quote>Implicit Authorizations</quote> and <quote>Explicit "
+"Authorizations</quote>."
+msgstr ""
+"Bei der Auswahl einer Aktion werden die Eigenschaften auf der rechten Seite "
+"angezeigt. Die Aktion hat möglicherweise ein Symbol, eine Beschreibung und "
+"den Namen des Erstellers. Darunter werden <guilabel>Implizite "
+"Berechtigungen</guilabel> und <guilabel>Explizite Berechtigungen</guilabel> "
+"aufgeführt."
+
+#. Tag: para
+#: authorization.docbook:36
+#, no-c-format
+msgid ""
+"The <quote>Implicit Authorizations</quote> are authorizations automatically "
+"given to users based on certain criteria such as if they are on the local "
+"console. These authorizations are read from the <quote>.policy</quote> files "
+"that the given application defined, they are the defaults settings of the "
+"action. These are the valid values"
+msgstr ""
+"<guilabel>Implizite Berechtigungen</guilabel> sind Berechtigungen, die den "
+"Benutzern basierend auf bestimmten Kriterien automatisch gegeben werden (z. "
+"B. wenn sie sich auf der lokalen Konsole befinden). Diese Berechtigungen "
+"werden aus den <filename>.policy</filename>-Dateien gelesen, die die "
+"jeweilige Anwendung festlegt und sind damit die standardmäßigen "
+"Einstellungen der Aktion. Die gültigen Werte sind:"
+
+#. Tag: para
+#: authorization.docbook:45
+#, no-c-format
+msgid "<para>no</para>"
+msgstr "<para>no</para>"
+
+#. Tag: para
+#: authorization.docbook:46
+#, no-c-format
+msgid "auth_self_one_shot"
+msgstr "auth_self_one_shot"
+
+#. Tag: para
+#: authorization.docbook:47
+#, no-c-format
+msgid "auth_self"
+msgstr "auth_self"
+
+#. Tag: para
+#: authorization.docbook:48
+#, no-c-format
+msgid "auth_self_keep_session"
+msgstr "auth_self_keep_session"
+
+#. Tag: para
+#: authorization.docbook:49
+#, no-c-format
+msgid "auth_self_keep_always"
+msgstr "auth_self_keep_always"
+
+#. Tag: para
+#: authorization.docbook:50
+#, no-c-format
+msgid "auth_admin_one_shot"
+msgstr "auth_admin_one_shot"
+
+#. Tag: para
+#: authorization.docbook:51
+#, no-c-format
+msgid "auth_admin"
+msgstr "auth_admin"
+
+#. Tag: para
+#: authorization.docbook:52
+#, no-c-format
+msgid "auth_admin_keep_session"
+msgstr "auth_admin_keep_session"
+
+#. Tag: para
+#: authorization.docbook:53
+#, no-c-format
+msgid "auth_admin_keep_always"
+msgstr "auth_admin_keep_always"
+
+#. Tag: para
+#: authorization.docbook:54
+#, no-c-format
+msgid "<para>yes</para>"
+msgstr "<para>yes</para>"
+
+#. Tag: para
+#: authorization.docbook:57
+#, no-c-format
+msgid ""
+"You can change these defaults values simply by changing it on the combo box, "
+"the not bold value is the default one so if you want to change one value "
+"back you can select it, to make you selection take effect you have to click "
+"on the <quote>Modify</quote> button. The <quote>Revert to defaults</quote> "
+"can be used to change all <quote>Implicit Authorizations</quote> to it's "
+"defaults values. Note that both <quote>Modify</quote> and <quote>Revert to "
+"defaults</quote> requires you to issue the PolicyKit <quote>org.freedesktop."
+"policykit.modify-defaults</quote> action which might ask a password."
+msgstr ""
+"Diese voreingestellten Werte können über das Auswahlfeld auf einfache Art "
+"und Weise geändert werden. Der in <emphasis>normaler</emphasis> Schrift "
+"dargestellte Wert ist der Standardwert und kann somit einfach gefunden und "
+"wieder eingestellt werden. Die Änderung wird mit einem Klick auf "
+"<guibutton>Ändern</guibutton> übernommen und angewandt. Mit einem Klick auf "
+"<guibutton>Auf Standardwerte zurücksetzen</guibutton> werden alle "
+"<guilabel>Impliziten Berechtigungen</guilabel> auf die Standardwerte "
+"zurückgesetzt. Dabei ist zu beachten, dass sowohl <guibutton>Ändern</"
+"guibutton> als auch <guibutton>Auf Standardwerte zurücksetzen</guibutton> "
+"die Aktion „org.freedesktop.policykit.modify-defaults“ von PolicyKit "
+"aufrufen und möglicherweise nach einem Passwort gefragt wird."
+
+#. Tag: para
+#: authorization.docbook:68
+#, no-c-format
+msgid ""
+"The <quote>Explicit Authorizations</quote> are authorizations that are "
+"either obtained through authentication process or specifically given to the "
+"action in question. The default behavior is to only show the current user "
+"explicit authorizations; if you want to see others users explicit "
+"authorizations click on the <quote>Show authorizations from all users</"
+"quote>, note that this requires you to issue the PolicyKit <quote>org."
+"freedesktop.policykit.read</quote> action which might ask a password. "
+"Blocked authorizations are marked with a <quote>STOP</quote> sign."
+msgstr ""
+"<guilabel>Explizite Berechtigungen</guilabel> sind Berechtigungen, die "
+"entweder durch einen <emphasis>Berechtigungs</emphasis>prozess oder speziell "
+"durch die Abfrage bezogen werden. Das standardmäßige Verhalten zeigt nur die "
+"expliziten Berechtigungen des aktuellen Benutzers an. Sollen die expliziten "
+"Berechtigungen aller Benutzer angezeigt werden, ist nur ein Klick auf "
+"<guibutton>Berechtigungen aller Benutzer anzeigen</guibutton> notwendig. "
+"Dabei ist zu beachten, dass die Aktion „org.freedesktop.policykit.read“ von "
+"PolicyKit aufgerufen und möglicherweise nach einem Passwort gefragt wird. "
+"Blockierte Berechtigungen sind mit einem <guilabel>STOP</guilabel>-Zeichen "
+"markiert."
+
+#. Tag: para
+#: authorization.docbook:79
+#, no-c-format
+msgid ""
+"The <quote>Revoke</quote> button is used to revoke an explicit "
+"authorization. Note that this requires you to issue the PolicyKit <quote>org."
+"freedesktop.policykit.revoke</quote> action which might ask a password."
+msgstr ""
+"Der Knopf <guibutton>Zurückziehen</guibutton> wird für die Rücknahme einer "
+"Berechtigung verwendet. Dabei ist zu beachten, dass die Aktion „org."
+"freedesktop.policykit.revoke“ von PolicyKit aufgerufen und möglicherweise "
+"nach einem Passwort gefragt wird."
+
+#. Tag: para
+#: authorization.docbook:85
+#, no-c-format
+msgid ""
+"If you want to specifically grant or block a given user of performing a "
+"given action you can click on the <quote>Grant</quote> or <quote>Block</"
+"quote>. The following screenshot you see the Grant/Block dialog:"
+msgstr ""
+"Falls einem Benutzer spezielle Rechte für eine Aktion erteilt oder entzogen "
+"werden sollen, kann dies durch einen Klick auf <guibutton>Erlauben</"
+"guibutton> bzw. <guibutton>Blockieren</guibutton> erfolgen. Das folgende "
+"Bildschirmfoto zeigt den entsprechenden Dialog:"
+
+#. Tag: phrase
+#: authorization.docbook:95
+#, no-c-format
+msgid "Grant/Block explicit authorizations dialog"
+msgstr "Dialog zum Erteilen/Entziehen der Berechtigungen"
+
+#. Tag: para
+#: authorization.docbook:100
+#, no-c-format
+msgid ""
+"To grant/block explicit authorizations you have to select the user that will "
+"receive the authorization. You can also select the <quote>Constraints</"
+"quote> to limit the authorization such that it only applies under certain "
+"circumstances. <warning><para>Be aware that explicit blocking and "
+"authorization might self lock you of performing the given action so be sure "
+"of what you are doing</para></warning> Note that this requires you to issue "
+"the PolicyKit <quote>org.freedesktop.policykit.grant</quote> action which "
+"might ask a password."
+msgstr ""
+"Um die expliziten Berechtigungen zu erteilen bzw. entziehen, muss erst der "
+"entsprechende Benutzer für diese Berechtigung ausgewählt werden. Hierbei "
+"können auch <guilabel>Einschränkungen</guilabel> festgelegt werden, damit "
+"die Berechtigungen nur unter den genannten Umständen erteilt werden. "
+"<warning><para>Das explizite Entziehen bzw. Erteilen von Berechtigungen kann "
+"dazu führen, dass man selbst keine Aktionen mehr ausführen kann. Daher "
+"sollte man sicher sein, was man hier macht.</para></warning>Dabei ist zu "
+"beachten, dass die Aktion „org.freedesktop.policykit.grant“ von PolicyKit "
+"aufgerufen und möglicherweise nach einem Passwort gefragt wird."

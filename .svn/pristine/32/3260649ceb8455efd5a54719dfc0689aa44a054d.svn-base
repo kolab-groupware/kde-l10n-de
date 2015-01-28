@@ -1,0 +1,263 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: apiDatastructure.docbook:2
+#, no-c-format
+msgid "Scripting API for every Data Structure"
+msgstr ""
+
+#. Tag: title
+#: apiDatastructure.docbook:4
+#, no-c-format
+msgid "Abstract Data Structure Object"
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:5
+#, no-c-format
+msgid ""
+"The abstract data structure defines a set of data elements and possible "
+"connections between them, this is the prototype for every other data structure. "
+"Data structures are identified by their names. Assuming you created a data "
+"structure with name <literal>testgraph</literal>, then you can access the data "
+"structure simply by writing this identifier. For example, to get an array with "
+"all data elements in the given data structure, you can write <literal>"
+"testgraph.list_nodes();</literal> in the script."
+msgstr ""
+
+#. Tag: title
+#: apiDatastructure.docbook:13 apiDatastructure.docbook:32
+#: apiDatastructure.docbook:79
+#, no-c-format
+msgid "Properties"
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:16
+#, no-c-format
+msgid "<emphasis>name</emphasis> :"
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:19
+#, no-c-format
+msgid "The unique name of this data structure."
+msgstr ""
+
+#. Tag: title
+#: apiDatastructure.docbook:26
+#, no-c-format
+msgid "Abstract Data"
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:27
+#, no-c-format
+msgid ""
+"An abstract data element is a unit of information that belongs to an abstract "
+"data structure and possibly is connected to other data elements by pointers."
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:35 apiDatastructure.docbook:82
+#, no-c-format
+msgid "<emphasis>width</emphasis> :"
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:38
+#, no-c-format
+msgid "The size of this data element."
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:42
+#, no-c-format
+msgid "<emphasis>x</emphasis> :"
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:45
+#, no-c-format
+msgid "The x-coordinate of this data element."
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:49
+#, no-c-format
+msgid "<emphasis>y</emphasis> :"
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:52
+#, no-c-format
+msgid "The y-coordinate of this data element."
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:56
+#, no-c-format
+msgid "<emphasis>id</emphasis> :"
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:59
+#, no-c-format
+msgid "The unique identifier of this data element."
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:63 apiDatastructure.docbook:110
+#, no-c-format
+msgid "<emphasis>color</emphasis> :"
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:66
+#, no-c-format
+msgid "The color of this data element stated as hexadecimal value."
+msgstr ""
+
+#. Tag: title
+#: apiDatastructure.docbook:74
+#, no-c-format
+msgid "Abstract Pointer"
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:75
+#, no-c-format
+msgid ""
+"A pointer connects two data elements and can itself hold information by its "
+"properties."
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:85
+#, no-c-format
+msgid "The width of the connection."
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:89
+#, no-c-format
+msgid "<emphasis>directed</emphasis> :"
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:92
+#, no-c-format
+msgid ""
+"If true, the connection is directed. Otherwise is connection is undirected."
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:96
+#, no-c-format
+msgid "<emphasis>from</emphasis> :"
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:99
+#, no-c-format
+msgid "Start of the connection."
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:103
+#, no-c-format
+msgid "<emphasis>to</emphasis> :"
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:106
+#, no-c-format
+msgid "End of the connection"
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:113
+#, no-c-format
+msgid "ID of the connection type."
+msgstr ""
+
+#. Tag: title
+#: apiDatastructure.docbook:120
+#, no-c-format
+msgid "Methods"
+msgstr ""
+
+#. Tag: term
+#: apiDatastructure.docbook:124
+#, no-c-format
+msgid "remove()"
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:126
+#, no-c-format
+msgid "Remove this connection."
+msgstr ""
+
+#. Tag: funcprototype
+#: apiDatastructure.docbook:127
+#, no-c-format
+msgid ""
+"<funcdef>void <function>remove</function></funcdef> <paramdef></paramdef>"
+msgstr ""
+
+#. Tag: term
+#: apiDatastructure.docbook:136
+#, no-c-format
+msgid "add_property(name, value)"
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:138
+#, no-c-format
+msgid "Add a new property to the connection."
+msgstr ""
+
+#. Tag: funcprototype
+#: apiDatastructure.docbook:139
+#, no-c-format
+msgid ""
+"<funcdef>void <function>add_property</function></funcdef> <paramdef>"
+"string <parameter><replaceable>name</replaceable></parameter></paramdef> "
+"<paramdef>string <parameter><replaceable>value</replaceable></parameter>"
+"</paramdef>"
+msgstr ""
+
+#. Tag: term
+#: apiDatastructure.docbook:149
+#, no-c-format
+msgid "remove_property(name)"
+msgstr ""
+
+#. Tag: para
+#: apiDatastructure.docbook:151
+#, no-c-format
+msgid "Remove an existing property from the connection."
+msgstr ""
+
+#. Tag: funcprototype
+#: apiDatastructure.docbook:152
+#, no-c-format
+msgid ""
+"<funcdef>void <function>remove_property</function></funcdef> <paramdef>"
+"string <parameter><replaceable>name</replaceable></parameter></paramdef>"
+msgstr ""

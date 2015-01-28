@@ -1,0 +1,581 @@
+# Stephan Johach <hunsum@gmx.de>, 2006.
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2010, 2011, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: ark_man-ark.1\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: 2013-09-09 06:52+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: branches/KDE/3.5/kdeutils/doc/ark/man-ark.1.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 433079\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: man-ark.1.docbook:9
+#, no-c-format
+msgid "&kde; User's Manual"
+msgstr "&kde;-Benutzerhandbuch"
+
+#. Tag: author
+#: man-ark.1.docbook:10
+#, no-c-format
+msgid "<firstname>Lauri</firstname><surname>Watts</surname>"
+msgstr "<firstname>Lauri</firstname><surname>Watts</surname>"
+
+#. Tag: contrib
+#: man-ark.1.docbook:10
+#, no-c-format
+msgid "Initial version of &ark; man page."
+msgstr "Ursprüngliche Version der &ark;-Handbuchseite"
+
+#. Tag: author
+#: man-ark.1.docbook:12
+#, no-c-format
+msgid "<firstname>Raphael</firstname><surname>Kubo da Costa</surname>"
+msgstr "<firstname>Raphael</firstname><surname>Kubo da Costa</surname>"
+
+#. Tag: contrib
+#: man-ark.1.docbook:12
+#, no-c-format
+msgid "Update &ark; man page."
+msgstr "Aktualisierung der &ark;-Handbuchseite"
+
+#. Tag: date
+#: man-ark.1.docbook:14
+#, no-c-format
+msgid "2013-08-23"
+msgstr "2013-08-23"
+
+#. Tag: releaseinfo
+#: man-ark.1.docbook:15
+#, no-c-format
+msgid "2.19 (&kde; 4.11)"
+msgstr "2.19 (&kde; 4.11)"
+
+#. Tag: productname
+#: man-ark.1.docbook:16
+#, no-c-format
+msgid "K Desktop Environment"
+msgstr "K Desktop Environment"
+
+#. Tag: manvolnum
+#: man-ark.1.docbook:21
+#, no-c-format
+msgid "<manvolnum>1</manvolnum>"
+msgstr "<manvolnum>1</manvolnum>"
+
+#. Tag: refpurpose
+#: man-ark.1.docbook:26
+#, no-c-format
+msgid "&kde; archiving tool"
+msgstr "&kde;-Archivprogramm"
+
+#. Tag: cmdsynopsis
+#: man-ark.1.docbook:30
+#, no-c-format
+msgid ""
+"<command>ark</command> <group choice=\"opt\"><option>-b</option></group> "
+"<group choice=\"opt\"><option>-a</option></group> <group choice=\"opt"
+"\"><option>-e</option></group> <group choice=\"opt\"><option>-c</option></"
+"group> <group choice=\"opt\"><option>-f</option> <replaceable> suffix</"
+"replaceable></group> <group choice=\"opt\"><option>-p</option></group> "
+"<group choice=\"opt\"><option>-t</option> <replaceable> file</replaceable></"
+"group> <group choice=\"opt\"><option>-d</option></group> <group choice=\"opt"
+"\"><option>-o</option> <replaceable> directory</replaceable></group> <arg "
+"choice=\"opt\">&kde; Generic Options</arg> <arg choice=\"opt\">&Qt; Generic "
+"Options</arg>"
+msgstr ""
+"<command>ark</command> <group choice=\"opt\"><option>-b</option></group> "
+"<group choice=\"opt\"><option>-a</option></group> <group choice=\"opt"
+"\"><option>-e</option></group> <group choice=\"opt\"><option>-c</option></"
+"group> <group choice=\"opt\"><option>-f</option> <replaceable> erweiterung</"
+"replaceable></group> <group choice=\"opt\"><option>-p</option></group> "
+"<group choice=\"opt\"><option>-t</option> <replaceable> datei</replaceable></"
+"group> <group choice=\"opt\"><option>-d</option></group> <group choice=\"opt"
+"\"><option>-o</option> <replaceable> ordner</replaceable></group> <arg "
+"choice=\"opt\">Allgemeine &kde;-Optionen</arg> <arg choice=\"opt"
+"\">Allgemeine &Qt;-Option</arg>"
+
+#. Tag: title
+#: man-ark.1.docbook:50
+#, no-c-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. Tag: para
+#: man-ark.1.docbook:51
+#, no-c-format
+msgid ""
+"&ark; is a program for managing various compressed file formats within "
+"&kde;. Archives can be viewed, extracted, created and modified with &ark;. "
+"The program can handle various formats such as <application>tar</"
+"application>, <application>gzip</application>, <application>bzip2</"
+"application>, <application>zip</application>, <application>rar</application> "
+"(when the appropriate libraries or command-line programs are installed)."
+msgstr ""
+"&ark; ist ein Programm zur Verwaltung verschiedener komprimierter "
+"Archivformate in &kde;. Mit &ark; können Archive angezeigt, ausgepackt, "
+"erzeugt und bearbeitet werden. Das Programm beherrscht verschiedene Format "
+"wie <application>tar</application>, <application>gzip</application>, "
+"<application>bzip2</application>, <application>zip</application> und "
+"<application>rar</application>. Hierzu müssen die entsprechenden "
+"Befehlszeilenprogramme installiert sein."
+
+#. Tag: title
+#: man-ark.1.docbook:62
+#, no-c-format
+msgid "Operation modes"
+msgstr "Arbeitsmodi"
+
+#. Tag: para
+#: man-ark.1.docbook:63
+#, no-c-format
+msgid ""
+"&ark; can be used either as a stand-alone &GUI; program as well as a command-"
+"line program in order to perform some specific tasks."
+msgstr ""
+"&ark; kann sowohl als eigenständiges Programm mit grafischer "
+"Benutzeroberfläche wie auch als Befehlszeilenprogramm für bestimmte Aufgaben "
+"eingesetzt werden."
+
+#. Tag: para
+#: man-ark.1.docbook:65
+#, no-c-format
+msgid ""
+"If invoked without the -b (--batch) or -c (--add) options, &ark; is started "
+"as a normal &GUI; program."
+msgstr ""
+"Wird &ark; ohne die Optionen  -b (--batch) or -c (--add) aufgerufen, started "
+"es mit der grafischen Benutzeroberfläche."
+
+#. Tag: para
+#: man-ark.1.docbook:67
+#, no-c-format
+msgid ""
+"When the -b (--batch) option is used, &ark; can be used to extract the "
+"contents of one or more files directly from the command-line, without "
+"launching its &GUI;."
+msgstr ""
+"Mit der Option -b (--batch) kann &ark; verwendet werden, um den Inhalt von "
+"einer oder mehrerer Dateien direkt von der Befehlszeile aus zu extrahieren, "
+"ohne dazu die grafische Benutzeroberfläche zu starten."
+
+#. Tag: para
+#: man-ark.1.docbook:70
+#, no-c-format
+msgid ""
+"When the -c (--add) option is used, &ark; prompts for files that should be "
+"added to a new archive or to an existing archive."
+msgstr ""
+"Wird die Option -c (--add) benutzt, fragt &ark; nach den Dateien, die zum "
+"neuen Archiv oder zu einem vorhandenen Archiv hinzugefügt werden sollen."
+
+#. Tag: title
+#: man-ark.1.docbook:77
+#, no-c-format
+msgid "Options"
+msgstr "Aufrufparameter"
+
+#. Tag: option
+#: man-ark.1.docbook:81
+#, no-c-format
+msgid "-d, --dialog"
+msgstr "-d, --dialog"
+
+#. Tag: para
+#: man-ark.1.docbook:83
+#, no-c-format
+msgid "Show a dialog for specifying the options for a batch or add operation."
+msgstr ""
+"Zeigt einen Dialog für die Angabe von Einstellungen für eine "
+"Stapelverarbeitung oder das Hinzufügen an."
+
+#. Tag: option
+#: man-ark.1.docbook:87
+#, no-c-format
+msgid "-o, --destination <replaceable>directory</replaceable>"
+msgstr "-o, --destination <replaceable>ordner</replaceable>"
+
+#. Tag: para
+#: man-ark.1.docbook:89
+#, no-c-format
+msgid ""
+"Default the extraction directory to <replaceable>directory</replaceable>. If "
+"not passed, the current path is used."
+msgstr ""
+"Zielordner für das Entpacken nach <replaceable>ordner</replaceable>. Ohne "
+"diese Option wird der aktuelle Ordner verwendet."
+
+#. Tag: title
+#: man-ark.1.docbook:96
+#, no-c-format
+msgid "Options for adding files"
+msgstr "Einstellungen für das Hinzufügen von Dateien"
+
+#. Tag: option
+#: man-ark.1.docbook:99
+#, no-c-format
+msgid "-c, --add"
+msgstr "-c, --add"
+
+#. Tag: para
+#: man-ark.1.docbook:101
+#, no-c-format
+msgid ""
+"Query the user for an archive filename and add specified files to it. Quit "
+"when finished."
+msgstr ""
+"Fragt den Benutzer nach einem Archivnamen und fügt die angegebenen Dateien "
+"hinzu. &ark; wird beendet, wenn die Aktion abgeschlossen ist."
+
+#. Tag: option
+#: man-ark.1.docbook:106
+#, no-c-format
+msgid "-t, --add-to <replaceable>filename</replaceable>"
+msgstr "-t, --add-to <replaceable>dateiname</replaceable>"
+
+#. Tag: para
+#: man-ark.1.docbook:108
+#, no-c-format
+msgid ""
+"Add the specified files to <replaceable>filename</replaceable>. Create "
+"archive if it does not exist. Quit when finished."
+msgstr ""
+"Die angegebenen Dateien zu <replaceable>dateiname</replaceable> hinzufügen. "
+"Erzeugt ein neues Archiv, falls noch keines mit diesem Namen existiert. "
+"&ark; wird beendet, wenn die Aktion abgeschlossen ist."
+
+#. Tag: option
+#: man-ark.1.docbook:113
+#, no-c-format
+msgid "-p, --changetofirstpath"
+msgstr "-p, --changetofirstpath"
+
+#. Tag: para
+#: man-ark.1.docbook:115
+#, no-c-format
+msgid ""
+"Change the current directory to the first entry and add all other entries "
+"relative to this one."
+msgstr ""
+"Aktuellen Ordner gemäß erstem Eintrag ändern und alle anderen Einträge "
+"relativ dazu hinzufügen."
+
+#. Tag: option
+#: man-ark.1.docbook:121
+#, no-c-format
+msgid "-f, --autofilename <replaceable>suffix</replaceable>"
+msgstr "-f, --autofilename <replaceable>erweiterung</replaceable>"
+
+#. Tag: para
+#: man-ark.1.docbook:123
+#, no-c-format
+msgid ""
+"Automatically choose a filename, with the selected <replaceable>suffix</"
+"replaceable> (for example rar, tar.gz, zip or any other supported types)."
+msgstr ""
+"Automatisch einen Dateinamen mit der angegeben "
+"Datei<replaceable>erweiterung</replaceable> (&eg; rar, tar.gz, zip oder ein "
+"andere unterstützter Typ) wählen."
+
+#. Tag: title
+#: man-ark.1.docbook:131
+#, no-c-format
+msgid "Options for batch extraction"
+msgstr "Einstellungen für das Entpacken mittels Stapelverarbeitung"
+
+#. Tag: option
+#: man-ark.1.docbook:134
+#, no-c-format
+msgid "-b, --batch"
+msgstr "-b, --batch"
+
+#. Tag: para
+#: man-ark.1.docbook:136
+#, no-c-format
+msgid ""
+"Use the batch interface instead of the usual dialog. This option is implied "
+"if more than one url is specified."
+msgstr ""
+"Die Stapelverarbeitungsschnittstelle anstelle des normalen Dialogs "
+"verwenden. Diese Einstellung wird angenommen, wenn mehr als eine Adresse "
+"angegeben wird."
+
+#. Tag: option
+#: man-ark.1.docbook:142
+#, no-c-format
+msgid "-e, --autodestination"
+msgstr "-e, --autodestination"
+
+#. Tag: para
+#: man-ark.1.docbook:144
+#, no-c-format
+msgid ""
+"The destination argument will be set to the path of the first file supplied."
+msgstr "Das Ziel wird auf den Pfad der ersten angegebenen Datei gesetzt."
+
+#. Tag: option
+#: man-ark.1.docbook:150
+#, no-c-format
+msgid "-a, --autosubfolder"
+msgstr "-a, --autosubfolder"
+
+#. Tag: para
+#: man-ark.1.docbook:152
+#, no-c-format
+msgid ""
+"Archive contents will be read, and if detected to not be a single folder "
+"archive, a subfolder by the name of the archive will be created."
+msgstr ""
+"Der Archivinhalt wird gelesen. Falls es sich um ein Archiv mit mehr als "
+"einem Ordner handelt, wird ein Unterordner mit dem Namen des Archivs "
+"erstellt."
+
+#. Tag: title
+#: man-ark.1.docbook:162
+#, no-c-format
+msgid "Examples"
+msgstr "Beispiele"
+
+#. Tag: userinput
+#: man-ark.1.docbook:166
+#, no-c-format
+msgid ""
+"<command>ark</command> <option>--batch</option> <replaceable>archive.tar."
+"bz2</replaceable>"
+msgstr ""
+"<command>ark</command> <option>--batch</option> <replaceable>archive.tar."
+"bz2</replaceable>"
+
+#. Tag: para
+#: man-ark.1.docbook:169
+#, no-c-format
+msgid ""
+"Will extract <replaceable>archive.tar.bz2</replaceable> into the current "
+"directory without showing any &GUI;."
+msgstr ""
+"Entpackt das Archiv <replaceable>archive.tar.bz2</replaceable> in den "
+"aktuellen Ordner, ohne die grafische Benutzeroberfläche zu starten."
+
+#. Tag: userinput
+#: man-ark.1.docbook:176
+#, no-c-format
+msgid ""
+"<command>ark</command> <option>-b</option> <option>-d</option> "
+"<replaceable>archive.tar.bz2</replaceable> <replaceable>archive2.zip</"
+"replaceable>"
+msgstr ""
+"<command>ark</command> <option>-b</option> <option>-d</option> "
+"<replaceable>archive.tar.bz2</replaceable> <replaceable>archive2.zip</"
+"replaceable>"
+
+#. Tag: para
+#: man-ark.1.docbook:179
+#, no-c-format
+msgid ""
+"Will first show an extraction options dialog and then extract both "
+"<replaceable>archive.tar.bz2</replaceable> and <replaceable>archive2.zip</"
+"replaceable> into the directory chosen in the dialog."
+msgstr ""
+"Zuerst wird ein Dialog mit Optionen zum Entpacken angezeigt, dann werden "
+"beide Archive <replaceable>archive.tar.bz2</replaceable> und "
+"<replaceable>archive2.zip</replaceable> in den Ordner entpackt, der im "
+"Dialog ausgewählt wurde."
+
+#. Tag: userinput
+#: man-ark.1.docbook:186
+#, no-c-format
+msgid ""
+"<command>ark</command> <option>--add-to</option> <replaceable>my-archive."
+"zip</replaceable> <replaceable>photo1.jpg</replaceable> <replaceable>text."
+"txt</replaceable>"
+msgstr ""
+"<command>ark</command> <option>--add-to</option> <replaceable>mein-archiv."
+"zip</replaceable> <replaceable>photo1.jpg</replaceable> <replaceable>text."
+"txt</replaceable>"
+
+#. Tag: para
+#: man-ark.1.docbook:190
+#, no-c-format
+msgid ""
+"Will create <replaceable>my-archive.zip</replaceable> if does not exist and "
+"then add <replaceable>photo1.jpg</replaceable> and <replaceable>text.txt</"
+"replaceable> to it."
+msgstr ""
+"Erstellt <replaceable>mein-archiv.zip</replaceable>, sofern dieses Archiv "
+"noch nicht existiert und fügt dann  <replaceable>photo1.jpg</replaceable> "
+"und <replaceable>text.txt</replaceable> hinzu."
+
+#. Tag: title
+#: man-ark.1.docbook:200
+#, no-c-format
+msgid "Authors"
+msgstr "Autoren"
+
+#. Tag: para
+#: man-ark.1.docbook:201
+#, no-c-format
+msgid ""
+"&ark; is currently maintained by &Harald.Hvaal; &Harald.Hvaal.mail; and "
+"&Raphael.Kubo.da.Costa; &Raphael.Kubo.da.Costa.mail;."
+msgstr ""
+"&Harald.Hvaal; &Harald.Hvaal.mail; und &Raphael.Kubo.da.Costa; &Raphael.Kubo."
+"da.Costa.mail; sind zurzeit die Betreuer von &ark;."
+
+#. Tag: para
+#: man-ark.1.docbook:203
+#, no-c-format
+msgid ""
+"This man page was first written by &Lauri.Watts; &Lauri.Watts.mail; in 2005 "
+"for &kde; 3.4, and was later updated in 2009 by &Raphael.Kubo.da.Costa; "
+"&Raphael.Kubo.da.Costa.mail;."
+msgstr ""
+"Diese Handbuchseite wurde von &Lauri.Watts;&Lauri.Watts.mail; für &kde; 3.4 "
+"geschrieben und wurde 2009 durch &Raphael.Kubo.da.Costa; &Raphael.Kubo.da."
+"Costa.mail;. überarbeitet. "
+
+#~ msgid "&Lauri.Watts;&Lauri.Watts.mail;"
+#~ msgstr "&Lauri.Watts;&Lauri.Watts.mail;"
+
+#~ msgid "&Raphael.Kubo.da.Costa; &Raphael.Kubo.da.Costa.mail;"
+#~ msgstr "&Raphael.Kubo.da.Costa; &Raphael.Kubo.da.Costa.mail;"
+
+#~ msgid "2009-09-10"
+#~ msgstr "2009-09-10"
+
+#~ msgid "<command>ark</command>"
+#~ msgstr "<command>ark</command>"
+
+#~ msgid ""
+#~ "<date>2009-09-10</date> <releaseinfo>2.13 (&kde; 4.3.1)</releaseinfo> "
+#~ "<productname>K Desktop Environment</productname>"
+#~ msgstr ""
+#~ "<date>2009-09-10</date> <releaseinfo>2.13 (&kde; 4.3.1)</releaseinfo> "
+#~ "<productname>K Desktop Environment</productname>"
+
+#~ msgid "&kappname;"
+#~ msgstr "&kappname;"
+
+#~ msgid ""
+#~ "<command>ark</command> <group> <option>--extract</option> <option>--"
+#~ "extract-to</option> <option>--add</option> <option>--add-to</option> "
+#~ "<option>--guess-name</option> </group> <arg choice=\"opt\">folder</arg> "
+#~ "<arg choice=\"opt\">files</arg> <arg choice=\"opt\">archive</arg> <arg "
+#~ "choice=\"opt\">KDE Generic Options</arg> <arg choice=\"opt\">Qt Generic "
+#~ "Options</arg>"
+#~ msgstr ""
+#~ "<command>ark</command> <group> <option>--extract</option> <option>--"
+#~ "extract-to</option> <option>--add</option> <option>--add-to</option> "
+#~ "<option>--guess-name</option> </group> <arg choice=\"opt\">ordner</arg> "
+#~ "<arg choice=\"opt\">files</arg> <arg choice=\"opt\">archiv</arg> <arg "
+#~ "choice=\"opt\">Allgemeine KDE-Optionen</arg> <arg choice=\"opt"
+#~ "\">Allgemeine Qt-Optionen</arg>"
+
+#~ msgid "--extract"
+#~ msgstr "--extract"
+
+#~ msgid "Open extract dialog, quit when finished"
+#~ msgstr ""
+#~ "Öffnet den Dialog zum Auspacken. Nach Beenden des Auspackvorgangs wird "
+#~ "die Anwendung geschlossen."
+
+#~ msgid ""
+#~ "--extract-to <replaceable>folder</replaceable> <replaceable>archive</"
+#~ "replaceable>"
+#~ msgstr ""
+#~ "--extract-to <replaceable>ordner</replaceable> <replaceable>archiv</"
+#~ "replaceable>"
+
+#~ msgid ""
+#~ "Add <replaceable>files</replaceable> to <replaceable>archive</"
+#~ "replaceable>. Quit when finished. <replaceable>archive</replaceable> will "
+#~ "be created if it does not exist."
+#~ msgstr ""
+#~ "Fügt die Dateien <replaceable>dateien</replaceable> dem Archiv "
+#~ "<replaceable>archiv</replaceable> hinzu. Beendet sich danach. Wenn "
+#~ "<replaceable>archiv</replaceable> noch nicht existiert, wird es angelegt."
+
+#~ msgid ""
+#~ "--guess-name <replaceable>folder</replaceable> <replaceable>archive</"
+#~ "replaceable>"
+#~ msgstr ""
+#~ "--guess-name <replaceable>ordner</replaceable> <replaceable>archiv</"
+#~ "replaceable>"
+
+#~ msgid ""
+#~ "Used with <option>--extract-to</option>. When specified, "
+#~ "<replaceable>archive</replaceable> will be extracted to a subfolder of "
+#~ "<replaceable>folder</replaceable> whose name will be the name of "
+#~ "<replaceable>archive without the filename extension.</replaceable>"
+#~ msgstr ""
+#~ "Wird mit dem Aufrufparameter <option>--extract-to</option> verwendet. "
+#~ "Wird dieser Parameter angegeben, wird <replaceable>archiv</replaceable> "
+#~ "in einen Unterordner von <replaceable>ordner</replaceable> ausgepackt, "
+#~ "der den <replaceable>Namen des Archivs ohne Dateiendung</replaceable> "
+#~ "erhält."
+
+#~ msgid "$<envar>PATH</envar>"
+#~ msgstr "$<envar>PATH</envar>"
+
+#~ msgid ""
+#~ "The commandline programs to deal with the archives you wish to handle in "
+#~ "&kappname; must be available in your $<envar>PATH</envar>."
+#~ msgstr ""
+#~ "Die Befehlszeilenprogramme für die Bearbeitung der Archive in &kappname; "
+#~ "müssen im $<envar>PATH</envar> installiert sein."
+
+#~ msgid ""
+#~ "<command>ark</command> <option>--extract-to --guess-name</option> "
+#~ "<parameter>.</parameter> <parameter>An-Archive.tar.bz2</parameter>"
+#~ msgstr ""
+#~ "<command>ark</command> <option>--extract-to --guess-name</option> "
+#~ "<parameter>.</parameter> <parameter>Ein-Archiv.tar.bz2</parameter>"
+
+#~ msgid ""
+#~ "Will extract <filename>An-Archive.tar.bz2</filename> into a folder named "
+#~ "<filename class=\"directory\">An-Archive</filename> in the current "
+#~ "directory."
+#~ msgstr ""
+#~ "Packt <filename>Ein-Archiv.tar.bz2</filename> im aktuellen Ordner in "
+#~ "einen Unterordner mit dem Namen <filename class=\"directory\">Ein-Archiv</"
+#~ "filename> aus."
+
+#~ msgid ""
+#~ "Add all files ending in *.jpg to an archive named <filename>pictures.tar."
+#~ "bz2</filename>, creating it if it doesn't already exist."
+#~ msgstr ""
+#~ "Fügt alle Dateien, die auf *.jpg enden zum Archiv <filename>bilder.tar."
+#~ "bz2</filename> hinzu und legt das Archiv, falls noch nicht vorhanden, an."
+
+#~ msgid "See Also"
+#~ msgstr "Siehe auch"
+
+#~ msgid "tar(1), gzip(1), bzip2(1), zip(1), rar(1), lha(1)"
+#~ msgstr "tar(1), gzip(1), bzip2(1), zip(1), rar(1), lha(1)"
+
+#~ msgid ""
+#~ "More detailed user documentation is available from <ulink url=\"help:/ark"
+#~ "\">help:/ark</ulink> (either enter this <acronym>URL</acronym> into "
+#~ "&konqueror;, or run <userinput><command>khelpcenter</command> "
+#~ "<parameter>help:/ark</parameter></userinput>)."
+#~ msgstr ""
+#~ "Ausführlichere Informationen finden Sie mit <ulink url=\"help:/ark\">help:"
+#~ "ark</ulink>. (Sie können diese <acronym>URL</acronym> in der Adressleiste "
+#~ "von &konqueror; eingeben oder führen Sie <userinput><command>khelpcenter</"
+#~ "command><parameter>help:/ark</parameter></userinput> aus.)"
+
+#~ msgid ""
+#~ "&ark; is maintained by <personname><firstname>Henrique</"
+#~ "firstname><surname>Pinto</surname></personname> <email>stampede@coltec."
+#~ "ufmg.br</email>"
+#~ msgstr ""
+#~ "&ark; wird betreut von <personname><firstname>Henrique</"
+#~ "firstname><surname>Pinto</surname></personname> <email>stampede@coltec."
+#~ "ufmg.br</email>"

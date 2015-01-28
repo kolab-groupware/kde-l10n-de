@@ -1,0 +1,621 @@
+# Frank Schütte <F.Schuette@t-online.de>, 2003.
+# Stephan Johach <hunsum@gmx.de>, 2005.
+# Burkhard Lück <lueck@hube-lueck.de>, 2007, 2011, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kppp_callback\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:14+0000\n"
+"PO-Revision-Date: 2013-07-08 15:16+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: callback.docbook:2
+#, no-c-format
+msgid "Configuring &kppp; for callback"
+msgstr "Konfigurieren von &kppp; für Rückrufverbindungen"
+
+#. Tag: para
+#: callback.docbook:4
+#, no-c-format
+msgid ""
+"This chapter is based on material provided by Martin H&auml;fner, "
+"<email>mh@ap-dec717c.physik.uni-karlsruhe.de</email>"
+msgstr ""
+"Das folgende Kapitel wurde von Martin H&auml;fner <email>mh@ap-dec717c."
+"physik.uni-karlsruhe.de</email>zur Verfügung gestellt."
+
+#. Tag: title
+#: callback.docbook:8
+#, no-c-format
+msgid "&UNIX; or &Linux; callback server"
+msgstr "&UNIX; oder &Linux; Rückruf-Server"
+
+#. Tag: para
+#: callback.docbook:10
+#, no-c-format
+msgid ""
+"This section introduces &UNIX; (&Linux;) callback, and how &kppp; can be "
+"configured to connect to a &UNIX; callback server, especially to a script "
+"based &Linux; callback server"
+msgstr ""
+"Dieser Abschnitt ist eine Einführung in den Ablauf beim Aufbau einer &UNIX; "
+"(&Linux;)-Rückrufverbindung und wie &kppp; eingestellt werden kann, um eine "
+"Verbindung mit einem &UNIX; Rückruf-Server, speziell mit einen Skript-"
+"basierten &Linux; Rückruf-Server, zu erstellen."
+
+#. Tag: title
+#: callback.docbook:15
+#, no-c-format
+msgid "An Introduction to callback"
+msgstr "Einführung in Rückrufverbindungen"
+
+#. Tag: para
+#: callback.docbook:17
+#, no-c-format
+msgid ""
+"There are several reasons to consider using callback. Some of these are:"
+msgstr ""
+"Es gibt verschiedene Gründe für die Benutzung von Rückrufverbindungen. "
+"Einige davon sind:"
+
+#. Tag: para
+#: callback.docbook:21
+#, no-c-format
+msgid "To increase the security of your local network"
+msgstr "Die Sicherheit Ihres lokalen Netzwerkes erhöhen."
+
+#. Tag: para
+#: callback.docbook:24
+#, no-c-format
+msgid "To reduce expenses of external co-workers"
+msgstr "Die Kosten von auswärtigen Mitarbeitern senken."
+
+#. Tag: para
+#: callback.docbook:27
+#, no-c-format
+msgid "To control telephone costs where calls are claimed as business expenses"
+msgstr ""
+"Telefonkosten kontrollieren, die als Geschäftsausgaben deklariert wurden."
+
+#. Tag: para
+#: callback.docbook:32
+#, no-c-format
+msgid ""
+"Think about someone calling the number of your dial in server, and then "
+"cracking a password. Why bother to maintain a firewall for your internet "
+"connection, if access to your network is that easy?."
+msgstr ""
+"Machen Sie sich Sorgen, dass jemand Ihren Einwahl-Server anwählt und "
+"versucht ein Passwort zu entschlüsseln? Warum betreiben Sie dann überhaupt "
+"einen Firewall für Ihre Internetverbindungen?"
+
+#. Tag: para
+#: callback.docbook:36
+#, no-c-format
+msgid ""
+"Callback software generally asks for your name, and then hangs up the line. "
+"It then calls you back, usually at a number that is stored <emphasis>on the "
+"server</emphasis> in a database. The client then picks up the phone line and "
+"continues with the dial-in as if nothing had happened. The server now "
+"requests your username and password, knowing that you are who you said you "
+"were when you first dialled in, or at the least, you are where you said you "
+"were. The connection is established normally, and the <application>pppd</"
+"application> is started."
+msgstr ""
+"Rückrufverbindungs-Software fragt normalerweise nach Ihrem Namen und "
+"unterbricht dann die Verbindung. Dann ruft sie Sie zurück, meistens unter "
+"einer Nummer die <emphasis>auf dem Server </emphasis> in einer Datenbank "
+"gespeichert ist.Der Client nimmt den Anruf an und fährt mit dem "
+"Verbindungsaufbau fort, als wenn nichts gewesen wäre. Der Server fragt Sie "
+"nun nach Ihrem Benutzernamen und Passwort, wohlwissend das Sie die Person "
+"sind, deren Namen bei der ersten Einwahl angegeben wurde. Die Verbindung "
+"wird normal aufgebaut und <application>pppd</application> wird gestartet."
+
+#. Tag: para
+#: callback.docbook:45
+#, no-c-format
+msgid ""
+"Now the big question is, how to tell the client to pick up the phone, when "
+"the server calls you back. Do you need a special program, such as "
+"<application>mgetty</application>? The answer is, <emphasis>no</emphasis>, "
+"you don't need a special client program. In general, any client can be used "
+"for callback connections, you could even use an ordinary terminal program "
+"such as <application>minicom</application> to connect."
+msgstr ""
+"Die Frage ist, wie sage ich dem Client er soll den Anruf annehmen, wenn der "
+"Server zurückruft? Brauchen Sie dazu ein Programm wie <application>mgetty</"
+"application>? Die Antwort ist <emphasis>Nein</emphasis>! Sie brauchen kein "
+"spezielles Client-Programm.Allgemein gesagt, können alle Clients für "
+"Rückrufverbindungen benutzt werden. Sie können sogar ein gewöhnliches "
+"Terminalprogramm wie <application>minicom</application> dazu benutzen, eine "
+"Verbindung zu einem Rückruf-Server aufzubauen. "
+
+#. Tag: para
+#: callback.docbook:52
+#, no-c-format
+msgid ""
+"The only thing you have to do is tell your modem to <command>AutoAnswer</"
+"command> the phone when a <computeroutput>RING</computeroutput> is detected "
+"by the modem. This is done with the following modem command:"
+msgstr ""
+"Das einzige was Sie tun müssen ist Ihrem Modem zu sagen <command>AutoAnswer</"
+"command> den Anruf, wenn ein <computeroutput>RING</computeroutput> "
+"aufgetreten ist durch das Modem. Dieses erreichen Sie durch den folgenden "
+"Modem-Befehl:"
+
+#. Tag: screen
+#: callback.docbook:57
+#, no-c-format
+msgid "<userinput><command>AT&amp;SO=1</command></userinput>"
+msgstr "<userinput><command>AT&amp;SO=1</command></userinput>"
+
+#. Tag: para
+#: callback.docbook:59
+#, no-c-format
+msgid ""
+"This tells the modem to pick the phone up after one <computeroutput>RING</"
+"computeroutput>."
+msgstr ""
+"Dieser Befehl sagt dem Modem, nimm ab nach einem <computeroutput>RING</"
+"computeroutput>."
+
+#. Tag: para
+#: callback.docbook:62
+#, no-c-format
+msgid ""
+"Like a lot of other client programs, &kppp; checks to see if the connection "
+"is closed by the server, and then stops the current session if a "
+"<computeroutput>NO CARRIER</computeroutput> is detected. This, then, is the "
+"real problem when setting up callback. <computeroutput>NO CARRIER</"
+"computeroutput> will of course be detected the moment the callback server "
+"hangs up the line. Some servers therefore use a special login program. So "
+"how do you solve this problem? You tell your modem to show "
+"<computeroutput>CARRIER UP</computeroutput> at all times (which causes no "
+"problems if you tell the client to hang up the line.) You can do this with "
+"the following modem command:"
+msgstr ""
+"Das heißt, Ihr Modem nimmt einen Anruf nach einem <literal>RING</literal> "
+"an. Erinnern Sie sich, dies passiert ohne Mitwirkung einer Software auf "
+"Ihrem Rechner. Wie viele andere Wählprogramme auch, prüft <emphasis>Kppp</"
+"emphasis> ob die Verbindung vom Server beendet wurde und beendet dann die "
+"Verbindung, wenn ein <literal>NO CARRIER</literal> registriert wurde. Und "
+"das ist das nächste Problem: <literal>NO CARRIER</literal> wird auch "
+"registriert, wenn der Rückruf-Server auflegt, nachdem er weiß unter welcher "
+"Nummer er zurückrufen soll. Manche Server benutzen dafür ein spezielles "
+"Anmeldeprogramm. Wie können Sie dieses Problem lösen? Sagen Sie Ihrem Modem, "
+"dass es die ganze Zeit eine <emphasis>offene Leitung</emphasis> zeigen soll "
+"(was kein Problem bereitet, wenn der Client auflegt), indem Sie den "
+"Modembefehl benutzen:"
+
+#. Tag: screen
+#: callback.docbook:73
+#, no-c-format
+msgid "<userinput><command>AT&amp;C0</command></userinput>"
+msgstr "<userinput><command>AT&amp;C0</command></userinput>"
+
+#. Tag: para
+#: callback.docbook:75
+#, no-c-format
+msgid ""
+"If you want to test this, you can first use an ordinary terminal program "
+"such as <application>minicom</application>, and call your callback server, "
+"to see what hapens."
+msgstr ""
+"Wenn Sie das testen wollen, können Sie zuerst ein normales Terminalprogramm "
+"wie <emphasis>minicom</emphasis> benutzen und Ihren Rückruf-Server anrufen."
+
+#. Tag: title
+#: callback.docbook:82
+#, no-c-format
+msgid "The &kppp; setup"
+msgstr "Die &kppp; Einstellungen"
+
+#. Tag: para
+#: callback.docbook:84
+#, no-c-format
+msgid ""
+"So, now that you've seen the theory in action, how do you go about setting "
+"up &kppp; to handle the connection?"
+msgstr ""
+"Jetzt, wo Sie die Theorie in Aktion gesehen haben, wie müssen Sie &kppp; "
+"einstellen, um damit zu einem Rückruf-Server zu verbinden?"
+
+#. Tag: para
+#: callback.docbook:87
+#, no-c-format
+msgid "The procedure is quite straightforward, as follows."
+msgstr "Die folgende Prozedur ist sehr einfach."
+
+#. Tag: para
+#: callback.docbook:91
+#, no-c-format
+msgid ""
+"First tell the modem to accept connections, and to not stop the negotiation "
+"when the callback server hangs up the line for the first time. You can add "
+"both these options in the <guilabel>Modem</guilabel> tab of the &kppp; "
+"configuration, by adding to the option <guilabel>Dial String</guilabel> the "
+"string <command>AT&amp;C0S0=1DT</command>"
+msgstr ""
+"Zuerst müssen Sie Ihrem Modem mitteilen, dass es Anrufe annehmen soll und "
+"die Leitung nicht schließt, wenn der Rückruf-Server auflegt, um "
+"zurückzurufen. Beide Einstellungen können Sie auf der <guilabel>Modem</"
+"guilabel> Karte der &kppp; Konfiguration vornehmen durch hinzufügen von "
+"<command>AT&amp;C0S0=1DT</command> zu der Option <guilabel>Wähl-"
+"Zeichenfolge</guilabel>."
+
+#. Tag: para
+#: callback.docbook:96
+#, no-c-format
+msgid ""
+"There are no other changes with configuration for &kppp;. If you meet "
+"trouble with modem init and reset, check the <link linkend=\"callback-"
+"troubleshooting\">Troubleshooting</link> section for more information."
+msgstr ""
+"Alle anderen Einstellungen für &kppp; können Sie belassen. Falls Sie auf "
+"Probleme beim Modem Initialisieren und Zurücksetzen treffen, lesen Sie im "
+"Abschnitt <link linkend=\"callback-troubleshooting\">Problembeseitigung</"
+"link> nach."
+
+#. Tag: para
+#: callback.docbook:102
+#, no-c-format
+msgid ""
+"Think about your server for a moment. Remember that &UNIX;, &Windows; and "
+"Macintosh operating systems have differing opinions about how to end a line "
+"in a text file, and therefore, in login procedures too. If you are "
+"connecting to a &Windows; server, use <userinput>CR/LF</userinput>, if you "
+"are connecting to a &UNIX; server, use <userinput>CR</userinput>, and if you "
+"are connecting to a Macintosh server, use <userinput>LF</userinput>"
+msgstr ""
+"Machen Sie sich jetzt ein paar Gedanken über Ihren Server. Denken Sie daran, "
+"dass &Windows; und &UNIX;-Betriebssysteme unterschiedlicher Meinung sind, "
+"wie Zeilenenden in Textdateien (und Anmeldeprozeduren) aussehen: einfaches "
+"CR oder CR/LF oder LF. Falls Sie eine Verbindung zu einem Macintosh-Server "
+"aufbauen wollen, benutzen Sie <emphasis>CR</emphasis> als Zeilenende."
+
+#. Tag: para
+#: callback.docbook:112
+#, no-c-format
+msgid ""
+"We are assuming for these instructions that you are calling a &Linux; "
+"callback package which uses ordinary login (not <acronym>PAP</acronym> or "
+"such)."
+msgstr ""
+"Der nächste Abschnitt beschreibt die Einstellung von &kppp; auf der Basis "
+"eines &Linux; Rückruf-Pakets (siehe unten), das eine gewöhnliche "
+"Anmeldeprozedur (kein <acronym>PAP</acronym> oder sonstiges) benutzt."
+
+#. Tag: para
+#: callback.docbook:115
+#, no-c-format
+msgid ""
+"Set the <guilabel>Authentication</guilabel> style in the <guilabel>Dial</"
+"guilabel> tab of the account configuration to <guilabel>Script-based</"
+"guilabel>"
+msgstr ""
+"Setzen Sie die Art der <guilabel>Authentifizierung</guilabel> auf der "
+"<guilabel>Wählen</guilabel> Karte der Zugangseinstellung auf "
+"<guilabel>Skript-basiert</guilabel>"
+
+#. Tag: para
+#: callback.docbook:120
+#, no-c-format
+msgid ""
+"Now you have to build the login script. Editing of login scripts is one of "
+"the very cool features of &kppp;. You can find it in the <guilabel>Login "
+"Script</guilabel> tab of the <guilabel>Edit Account</guilabel> dialog."
+msgstr ""
+"Nun müssen Sie das Anmeldeskript schreiben. Sie finden es auf der "
+"Karteikarte <guilabel>Anmeldeskript</guilabel> des Dialogs <guilabel>Zugang "
+"bearbeiten</guilabel>."
+
+#. Tag: para
+#: callback.docbook:124
+#, no-c-format
+msgid ""
+"In this example, the user <systemitem>userxyz</systemitem> needs the "
+"following script to be called. The callback server already knows the table "
+"of names and their applicable phone numbers, so you select the phone number "
+"to be used with an alias, for security purposes."
+msgstr ""
+"In diesem Beispiel braucht der Benutzer <systemitem>Benutzer xyz</"
+"systemitem> das folgende Skript, um zu Hause zurückgerufen zu werden (der "
+"Rückruf-Server hat eine Tabelle mit Namen und Nummern, sodass Sie Ihre "
+"Telefonnummer aus Sicherheitsgründen über einen Alias auswählen müssen )."
+
+#. Tag: para
+#: callback.docbook:129
+#, no-c-format
+msgid ""
+"For each line, choose the criteria from the drop down list on the left of "
+"the dialog, and type in the action in the text box on its right. Choose the "
+"<guibutton>Add</guibutton> to add each line to the script. You can use "
+"<guibutton>Insert</guibutton> to add a line into the middle of the script, "
+"and <guibutton>Remove</guibutton> to delete a line if you made a mistake."
+msgstr ""
+"Für jede Zeile wählen Sie das Kriterium von der Auswahlliste auf der linken "
+"Seite des Dialoges aus und schreiben in das Textfeld auf der rechten Seite. "
+"Wählen Sie <guibutton>Hinzufügen</guibutton> um die einzelnen Zeilen zum "
+"Skript hinzuzufügen. Sie können die Option <guibutton>Einfügen</guibutton> "
+"benutzen, um eine Zeile inmitten des Skripts einzufügen und "
+"<guibutton>Löschen</guibutton>, um eine Zeile zu löschen, falls Sie einen "
+"Fehler gemacht haben."
+
+#. Tag: para
+#: callback.docbook:135
+#, no-c-format
+msgid ""
+"The entire script should look something like this (without the comments, "
+"shown here starting with a #)"
+msgstr ""
+"Das Skript könnte etwa folgendermaßen aussehen ( ohne die Kommentare, "
+"beginnend mit #): "
+
+#. Tag: screen
+#: callback.docbook:138
+#, no-c-format
+msgid ""
+"Expect       ogin:           <lineannotation># remember, we do ordinary "
+"terminal login</lineannotation>\n"
+"ID           \"\"              <lineannotation># kppp sends the id you "
+"configured in\n"
+"the main dialog</lineannotation>\n"
+"Expect       for userxyz:    <lineannotation># a list of available numbers "
+"is\n"
+"shown, the user should choose one</lineannotation> \n"
+"Send         userxyz-home    <lineannotation># the user wants to be called "
+"back\n"
+"on their home number</lineannotation>\n"
+"Expect       ogin:           <lineannotation># The callback process is now\n"
+"running, a new connection, and so a new login.</lineannotation>\n"
+"ID\n"
+"Expect       assword:        <lineannotation># Now send your password</"
+"lineannotation>\n"
+"Expect       &gt;            <lineannotation># Wait for the command prompt "
+"(the\n"
+"prompt may vary)</lineannotation>\n"
+"Send         start_ppp       <lineannotation># this command starts the pppd</"
+"lineannotation>"
+msgstr ""
+"Expect       ogin:           <lineannotation># denken Sie daran, wir melden "
+"uns auf einem Terminal an</lineannotation>\n"
+"ID           \"\"              <lineannotation># Kppp sendet den "
+"Benutzernamen,den Sie im Hauptfenster\n"
+"                                                          # angegeben haben."
+"</lineannotation>\n"
+"Expect       for xyz:    <lineannotation># Eine Liste verfügbarer Nummern "
+"wird gezeigt, von denen\n"
+"                                                           # der Benutzer "
+"eine auswählen muss</lineannotation> \n"
+"Send         xyz-home    <lineannotation># Der Benutzer will zurückgerufen "
+"werden</lineannotation>\n"
+"Expect       ogin:           <lineannotation># Der Rückrufprozess läuft. "
+"Eine neue Verbindung, eine neue Anmeldung</lineannotation>\n"
+"ID\n"
+"Expect       assword:        <lineannotation># Jetzt Ihr Passwort</"
+"lineannotation>\n"
+"Expect       &gt;            <lineannotation># warte auf die "
+"Eingabeaufforderung (das kann variieren)</lineannotation>\n"
+"Send         start_ppp       <lineannotation># start_ppp startet den pppd</"
+"lineannotation>"
+
+#. Tag: para
+#: callback.docbook:140
+#, no-c-format
+msgid ""
+"After waiting for the login request, the user sends his ID and waits for a "
+"list of available phone numbers for that username. Then he tells the server "
+"which of the numbers offered he would like to be called back on. &kppp; can "
+"open a dialog for this, if your location changes often, &eg; you are a sales "
+"representative and move from hotel to hotel. Now the server is expecting "
+"login and password for authentication, but in the meantime, the server hangs "
+"up and calls the user back. The authentication information is sent, and "
+"&kppp; waits for a command prompt, and then starts a small script (here "
+"called <filename>start_ppp</filename> which fires up <application>pppd</"
+"application> on the server."
+msgstr ""
+"Nachdem die Anmeldeaufforderung erscheint, sendet der Benutzer seinen "
+"Benutzernamen und wartet auf die Liste mit verfügbaren Verbindungen. Dann "
+"teilt er dem Server mit, unter welcher Nummer er zurückgerufen werden will. "
+"&kppp; kann dafür einen Dialog öffnen, falls sich Ihr Aufenthaltsort oft "
+"ändert (&eg; wenn Sie ein Vertreter sind und von Hotel zu H otel reisen). "
+"Danach erwartet der Server Ihren Benutzernamen und die Passworteingabe. In "
+"der Zwischenzeit hängt der Server auf und ruft den Benutzer zurück. &kppp; "
+"wartet auf die Eingabeaufforderung und startet dann ein kurzes Skript (hier "
+"genannt <filename>start_ppp</filename>), welches den <application>pppd</"
+"application> auf dem Server startet. "
+
+#. Tag: para
+#: callback.docbook:151
+#, no-c-format
+msgid ""
+"The <filename>start_ppp</filename> script might look something like the "
+"following:"
+msgstr ""
+"Das <filename>start_ppp</filename> Skript könnte etwa folgendermaßen "
+"aussehen: "
+
+#. Tag: programlisting
+#: callback.docbook:154
+#, no-c-format
+msgid ""
+"#!/bin/sh\n"
+"stty -echo\n"
+"exec /usr/sbin/pppd -detach silent modem"
+msgstr ""
+"#!/bin/sh\n"
+"stty -echo\n"
+"exec /usr/sbin/pppd -detach silent modem"
+
+#. Tag: para
+#: callback.docbook:156
+#, no-c-format
+msgid ""
+"Of course, setting up a <acronym>PPP</acronym> server is not within the "
+"scope of this document. For detailed information, see the <application>pppd</"
+"application> man pages."
+msgstr ""
+"Natürlich geht die Konfiguration eines <acronym>PPP</acronym>-Servers etwas "
+"über die Intention dieses Kapitel hinaus. Für mehr Informationen lesen Sie "
+"die <application>pppd</application>-Manpage."
+
+#. Tag: para
+#: callback.docbook:162
+#, no-c-format
+msgid ""
+"All other configuration issues, such as <application>pppd</application> "
+"configuration or <acronym>IP</acronym> settings work as normal, and no "
+"special software is required to pick up the line."
+msgstr ""
+"Alle anderen Einstellungen (&eg; pppd Konfiguration oder IP-Einstellungen) "
+"sind die gleichen wie sonst auch. Denken Sie daran, dass keine spezielle "
+"Software nötig ist, um den Rückruf anzunehmen."
+
+#. Tag: para
+#: callback.docbook:167
+#, no-c-format
+msgid ""
+"&kppp; callback and other programs such as <application>mgetty</application> "
+"or any other faxgetty can be run on the same serial port. There are no "
+"problems with the dial in, as &kppp; creates a lock file which will tell the "
+"getty program that another application (in this case, &kppp; of course,) is "
+"using the line at that time."
+msgstr ""
+"<emphasis>Hinweis:</emphasis> <emphasis>Kppp</emphasis> Rückruf und andere "
+"Programme wie mgetty oder andere faxgetty können auf die gleiche serielle "
+"Schnittstelle zugreifen. Dabei gibt es beim Einwählen keine Probleme, da "
+"<emphasis>Kppp</emphasis> eine Sperrdatei erzeugt, die anderen getty-"
+"Programmen anzeigt, dass gerade ein anderes Programm die Leitung benutzt."
+
+#. Tag: title
+#: callback.docbook:177
+#, no-c-format
+msgid "Troubleshooting"
+msgstr "Problembeseitigung"
+
+#. Tag: para
+#: callback.docbook:179
+#, no-c-format
+msgid "There are some known problems with &kppp; in callback mode:"
+msgstr "Es gibt ein paar bekannte Probleme mit &kppp; im Rückruf-Modus:"
+
+#. Tag: para
+#: callback.docbook:183
+#, no-c-format
+msgid ""
+"As you initialize the modem to auto answer, you need to reset the modem "
+"after your connection is closed. Otherwise, your modem will continue to pick "
+"up the line for you, which is not a good idea if the line in question is "
+"your main phone line."
+msgstr ""
+"Da Sie das Modem mit <literal>AutoAnswer</literal> initialisieren, müssen "
+"Sie es nach dem Verbindungsabbruch zurücksetzen. Wenn Sie das nicht tun, "
+"wird das Modem alle Anrufe für Sie annehmen."
+
+#. Tag: para
+#: callback.docbook:189
+#, no-c-format
+msgid ""
+"&kppp; has some small problems when sharing a line with another program, "
+"such as <application>mgetty</application>. If <application>mgetty</"
+"application> is running on the same modem line, &kppp; is not able to "
+"initialize the modem correctly."
+msgstr ""
+"&kppp; hat leichte Problem, wenn die Modemschnittstelle mit einem anderen "
+"Programm wie <application>mgetty</application> gemeinsam benutzt wird. Wenn "
+"<application>mgetty</application> die gleiche Schnittstelle benutzt, kann "
+"&kppp; das Modem nicht korrekt initialisieren."
+
+#. Tag: para
+#: callback.docbook:196
+#, no-c-format
+msgid ""
+"&kppp; is unable to prompt for certain user input during a scripting based "
+"login. Unfortunately, when using the example script above, &kppp; also asks "
+"for the user name the second time the callback server requests it. You can "
+"get rid of this by hardcoding your userid into the login script (not very "
+"portable or nice, but it works."
+msgstr ""
+"&kppp; kann während einer Skript-basierten Verbindung nach einer "
+"Benutzereingabe fragen. Leider fragt &kppp; Sie auch nach dem Benutzernamen, "
+"wenn der Server zum zweiten Mal den Benutzernamen wissen will. Wenn Sie das "
+"abstellen wollen, müssen Sie Ihren Benutzernamen direkt in das Anmeldeskript "
+"schreiben (nicht sehr schön, aber es hilft)."
+
+#. Tag: title
+#: callback.docbook:233
+#, no-c-format
+msgid "&Windows; NT <acronym>RAS</acronym> callback"
+msgstr "&Windows; NT <acronym>RAS</acronym> Rückrufverbindungen"
+
+#. Tag: para
+#: callback.docbook:235
+#, no-c-format
+msgid ""
+"&Windows; NT uses a completely different approach than the one described "
+"above. NT requires an extension to the <acronym>PPP</acronym> protocol "
+"itself, called <acronym>CBCP</acronym> (Call Back Control Protocol). "
+"<application>pppd</application> has support for this protocol, but you must "
+"recompile <application>pppd</application>. If anybody has experience with "
+"successfully connecting to an NT callback server, please let us know."
+msgstr ""
+"Windows NT benutzt einen völlig verschiedenen Ansatz als der hier "
+"beschriebene (wie üblich). NT benötigt eine Erweiterung des PPP Protokolls "
+"namens CBCP (Call Back Control Protocol). <literal>pppd</literal> "
+"unterstützt dieses Protokoll, aber Sie müssen <literal>pppd</literal> dazu "
+"neu kompilieren."
+
+#~ msgid "Internet Resources for server software"
+#~ msgstr "Serversoftware im Internet"
+
+#~ msgid ""
+#~ "&Linux; callback server software bundles are available in many places."
+#~ msgstr ""
+#~ "&Linux; Rückruf-Server Softwarepakete sind überall im Internet "
+#~ "erhältlich. "
+
+#~ msgid ""
+#~ "The well known <application>mgetty</application> is a very powerful "
+#~ "program, and is also able to handle callback connections. A description "
+#~ "of how to set up <application>mgetty</application> for this purpose is "
+#~ "maintained at <ulink url=\"http://www.dyer.demon.co.uk/slug/tipscrip.htm"
+#~ "\"> http://www.dyer.demon.co.uk/slug/tipscrip.htm</ulink>, by Colin "
+#~ "McKinnon, <email>colin@wew.co.uk</email>."
+#~ msgstr ""
+#~ "Natürlich gehört auch das sehr bekannte und leistungsfähige "
+#~ "<application>mgetty</application> dazu, mit dem man auch "
+#~ "Rückrufverbindungen erstellen kann. Eine Beschreibung, wie man "
+#~ "<application>mgetty</application> dafür konfigurieren muss, gibt es unter "
+#~ "<ulink url=\"http://www.dyer.demon.co.uk/slug/tipscrip.htm\">http://www."
+#~ "dyer.demon.co.uk/slug/tipscrip.htm</ulink> betreut von Colin McKinnon, "
+#~ "<email>colin@wew.co.uk</email>."
+
+#~ msgid ""
+#~ "There is also a ready to use package for &Linux; at <ulink url=\"http://"
+#~ "www.icce.rug.nl/docs/programs/callback/callback.html\"> http://www.icce."
+#~ "rug.nl/docs/programs/callback/callback.html</ulink>. This package is "
+#~ "maintained by Frank B. Brokken, <email>frank@icce.rug.nl</email>. As the "
+#~ "setup, although straightforward, is not very easy, I have written a short "
+#~ "introduction for it at <ulink url=\"http://ap-dec717c.physik.uni-"
+#~ "karlsruhe.de/~mh/callback\">http://ap-dec717c.physik.uni-karlsruhe.de/~mh/"
+#~ "callback/</ulink>, which also contains a more general introduction to "
+#~ "callback."
+#~ msgstr ""
+#~ "Aber es ist auch ein fertig benutzbares Paket für &Linux; Rückruf-Server "
+#~ "unter <ulink url=\"http://www.icce.rug.nl/docs/programs/callback/callback."
+#~ "html\"> http://www.icce.rug.nl/docs/programs/callback/callback.html</"
+#~ "ulink> erhältlich. Dieses Paket wird betreut von Frank B. Brokken "
+#~ "<email>frank@icce.rug.nl</email>.Weil das Paket nicht so leicht "
+#~ "einzustellen ist,habe ich eine kurze Einleitung dafür geschrieben unter "
+#~ "<ulink url=\"http://ap-dec717c.physik.uni-karlsruhe.de/~mh/callback\"> "
+#~ "http://ap-dec717c.physik.uni-karlsruhe.de/~mh/callback/</ulink>Schauen "
+#~ "Sie dort ebenfalls nach, wenn Sie eine weitergehende allgemeine "
+#~ "Einführung in Rückrufverbindungen wollen. "

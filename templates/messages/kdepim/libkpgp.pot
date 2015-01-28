@@ -1,0 +1,643 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2012-08-20 04:26+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: kpgp.cpp:198
+msgid ""
+"Could not find PGP executable.\n"
+"Please check your PATH is set correctly."
+msgstr ""
+
+#: kpgp.cpp:217
+msgid "OpenPGP Security Check"
+msgstr ""
+
+#: kpgp.cpp:228
+msgid "Passphrase is too long, it must contain fewer than 1024 characters."
+msgstr ""
+
+#: kpgp.cpp:230
+msgid "Out of memory."
+msgstr ""
+
+#: kpgp.cpp:303
+msgid ""
+"You just entered an invalid passphrase.\n"
+"Do you want to try again, or cancel and view the message undecrypted?"
+msgstr ""
+
+#: kpgp.cpp:306 kpgp.cpp:369 kpgp.cpp:402 kpgp.cpp:425 kpgp.cpp:455
+#: kpgp.cpp:640 kpgp.cpp:663
+msgid "PGP Warning"
+msgstr ""
+
+#: kpgp.cpp:306 kpgp.cpp:370
+msgid "&Retry"
+msgstr ""
+
+#: kpgp.cpp:362
+msgid ""
+"You entered an invalid passphrase.\n"
+"Do you want to try again, continue and leave the message unsigned, or cancel "
+"sending the message?"
+msgstr ""
+
+#: kpgp.cpp:371 kpgp.cpp:403
+msgid "Send &Unsigned"
+msgstr ""
+
+#: kpgp.cpp:395
+#, kde-format
+msgctxt "%1 = 'signing failed' error message"
+msgid ""
+"%1\n"
+"Do you want to send the message unsigned, or cancel sending the message?"
+msgstr ""
+
+#: kpgp.cpp:417
+#, kde-format
+msgctxt "%1 = 'bad keys' error message"
+msgid ""
+"%1\n"
+"Do you want to encrypt anyway, leave the message as-is, or cancel sending "
+"the message?"
+msgstr ""
+
+#: kpgp.cpp:426 kpgp.cpp:664
+msgid "Send &Encrypted"
+msgstr ""
+
+#: kpgp.cpp:427 kpgp.cpp:641 kpgp.cpp:665
+msgid "Send &Unencrypted"
+msgstr ""
+
+#: kpgp.cpp:448
+#, kde-format
+msgctxt "%1 = 'missing keys' error message"
+msgid ""
+"%1\n"
+"Do you want to leave the message as-is, or cancel sending the message?"
+msgstr ""
+
+#: kpgp.cpp:456
+msgid "&Send As-Is"
+msgstr ""
+
+#: kpgp.cpp:469
+#, kde-format
+msgid ""
+"The following error occurred:\n"
+"%1"
+msgstr ""
+
+#: kpgp.cpp:471
+#, kde-format
+msgid ""
+"This is the error message of %1:\n"
+"%2"
+msgstr ""
+
+#: kpgp.cpp:630
+msgid ""
+"You did not select an encryption key for the recipient of this message; "
+"therefore, the message will not be encrypted."
+msgstr ""
+
+#: kpgp.cpp:633
+msgid ""
+"You did not select an encryption key for any of the recipients of this "
+"message; therefore, the message will not be encrypted."
+msgstr ""
+
+#: kpgp.cpp:653
+msgid ""
+"You did not select an encryption key for one of the recipients; this person "
+"will not be able to decrypt the message if you encrypt it."
+msgstr ""
+
+#: kpgp.cpp:656
+msgid ""
+"You did not select encryption keys for some of the recipients; these persons "
+"will not be able to decrypt the message if you encrypt it."
+msgstr ""
+
+#: kpgp.cpp:938
+msgid ""
+"This feature is\n"
+"still missing"
+msgstr ""
+
+#: kpgp.cpp:986 kpgp.cpp:1021 kpgp.cpp:1057
+msgid ""
+"You either do not have GnuPG/PGP installed or you chose not to use GnuPG/PGP."
+msgstr ""
+
+#: kpgp.cpp:1270 kpgp.cpp:1334 kpgp.cpp:1360 kpgpui.cpp:1533 kpgpui.cpp:1545
+msgid "Encryption Key Selection"
+msgstr ""
+
+#: kpgp.cpp:1274
+#, kde-format
+msgctxt ""
+"if in your language something like 'key(s)' isn't possible please use the "
+"plural in the translation"
+msgid ""
+"There is a problem with the encryption key(s) for \"%1\".\n"
+"\n"
+"Please re-select the key(s) which should be used for this recipient."
+msgstr ""
+
+#: kpgp.cpp:1338
+#, kde-format
+msgctxt ""
+"if in your language something like 'key(s)' isn't possible please use the "
+"plural in the translation"
+msgid ""
+"No valid and trusted OpenPGP key was found for \"%1\".\n"
+"\n"
+"Select the key(s) which should be used for this recipient."
+msgstr ""
+
+#: kpgp.cpp:1364
+#, kde-format
+msgctxt ""
+"if in your language something like 'key(s)' isn't possible please use the "
+"plural in the translation"
+msgid ""
+"More than one key matches \"%1\".\n"
+"\n"
+"Select the key(s) which should be used for this recipient."
+msgstr ""
+
+#: kpgpbase2.cpp:137 kpgpbaseG.cpp:151
+#, kde-format
+msgid ""
+"Could not find public keys matching the userid(s)\n"
+"%1;\n"
+"the message is not encrypted."
+msgstr ""
+
+#: kpgpbase2.cpp:142 kpgpbaseG.cpp:156
+#, kde-format
+msgid ""
+"Could not find public keys matching the userid(s)\n"
+"%1;\n"
+"these persons will not be able to read the message."
+msgstr ""
+
+#: kpgpbase2.cpp:168
+#, kde-format
+msgid ""
+"Public keys not certified with trusted signature for userid(s)\n"
+"%1.\n"
+"The message is not encrypted."
+msgstr ""
+
+#: kpgpbase2.cpp:174
+#, kde-format
+msgid ""
+"Public keys not certified with trusted signature for userid(s)\n"
+"%1;\n"
+"these persons will not be able to read the message."
+msgstr ""
+
+#: kpgpbase2.cpp:195
+msgid "Bad passphrase; could not sign."
+msgstr ""
+
+#: kpgpbase2.cpp:203
+msgid ""
+"Signing failed: please check your PGP User Identity, the PGP setup, and the "
+"key rings."
+msgstr ""
+
+#: kpgpbase2.cpp:211
+msgid "Encryption failed: please check your PGP setup and the key rings."
+msgstr ""
+
+#: kpgpbase2.cpp:257 kpgpbase6.cpp:57 kpgpbase6.cpp:351
+msgid "error running PGP"
+msgstr ""
+
+#: kpgpbase2.cpp:297 kpgpbase5.cpp:224 kpgpbase6.cpp:82 kpgpbaseG.cpp:261
+msgid "Bad passphrase; could not decrypt."
+msgstr ""
+
+#: kpgpbase2.cpp:308 kpgpbase5.cpp:235 kpgpbaseG.cpp:282
+msgid "You do not have the secret key needed to decrypt this message."
+msgstr ""
+
+#: kpgpbase2.cpp:448
+#, kde-format
+msgid ""
+"The keyring file %1 does not exist.\n"
+"Please check your PGP setup."
+msgstr ""
+
+#: kpgpbase2.cpp:454
+msgid "Unknown error"
+msgstr ""
+
+#: kpgpbase5.cpp:86
+msgid "Neither recipients nor passphrase specified."
+msgstr ""
+
+#: kpgpbase5.cpp:129
+msgid "The passphrase you entered is invalid."
+msgstr ""
+
+#: kpgpbase5.cpp:155
+msgid ""
+"The key(s) you want to encrypt your message to are not trusted. No "
+"encryption done."
+msgstr ""
+
+#: kpgpbase5.cpp:158
+#, kde-format
+msgid ""
+"The following key(s) are not trusted:\n"
+"%1\n"
+"Their owner(s) will not be able to decrypt the message."
+msgstr ""
+
+#: kpgpbase5.cpp:170
+#, kde-format
+msgid ""
+"Missing encryption key(s) for:\n"
+"%1"
+msgstr ""
+
+#: kpgpbase5.cpp:205
+msgid "Error running PGP"
+msgstr ""
+
+#: kpgpbase6.cpp:90
+msgid "You do not have the secret key for this message."
+msgstr ""
+
+#: kpgpbase6.cpp:167
+msgid "??? (file ~/.pgp/pubring.pkr not found)"
+msgstr ""
+
+#: kpgpbaseG.cpp:118
+msgid "Unknown error."
+msgstr ""
+
+#: kpgpbaseG.cpp:181
+msgid "Signing failed because the passphrase is wrong."
+msgstr ""
+
+#: kpgpbaseG.cpp:188
+msgid "Signing failed because your secret key is unusable."
+msgstr ""
+
+#: kpgpbaseG.cpp:219
+msgid "Error running gpg"
+msgstr ""
+
+#: kpgpbaseG.cpp:289
+msgid "The passphrase dialog was cancelled."
+msgstr ""
+
+#: kpgpbaseG.cpp:366
+msgid "??? (file ~/.gnupg/pubring.gpg not found)"
+msgstr ""
+
+#: kpgpui.cpp:81
+msgid "Please enter your OpenPGP passphrase:"
+msgstr ""
+
+#: kpgpui.cpp:83
+#, kde-format
+msgid ""
+"Please enter the OpenPGP passphrase for\n"
+"\"%1\":"
+msgstr ""
+
+#: kpgpui.cpp:112
+msgid "Warning"
+msgstr ""
+
+#: kpgpui.cpp:117
+msgid ""
+"Please check if encryption really works before you start using it seriously. "
+"Also note that attachments are not encrypted by the PGP/GPG module."
+msgstr ""
+
+#: kpgpui.cpp:130
+msgid "Encryption Tool"
+msgstr ""
+
+#: kpgpui.cpp:136
+msgid "Select encryption tool to &use:"
+msgstr ""
+
+#: kpgpui.cpp:140
+msgid "Autodetect"
+msgstr ""
+
+#: kpgpui.cpp:141
+msgid "GnuPG - Gnu Privacy Guard"
+msgstr ""
+
+#: kpgpui.cpp:142
+msgid "PGP Version 2.x"
+msgstr ""
+
+#: kpgpui.cpp:143
+msgid "PGP Version 5.x"
+msgstr ""
+
+#: kpgpui.cpp:144
+msgid "PGP Version 6.x"
+msgstr ""
+
+#: kpgpui.cpp:145
+msgid "Do not use any encryption tool"
+msgstr ""
+
+#: kpgpui.cpp:154
+msgid "Options"
+msgstr ""
+
+#: kpgpui.cpp:157
+msgid "&Keep passphrase in memory"
+msgstr ""
+
+#: kpgpui.cpp:162
+msgid ""
+"<qt><p>When this option is enabled, the passphrase of your private key will "
+"be remembered by the application as long as the application is running. Thus "
+"you will only have to enter the passphrase once.</p><p>Be aware that this "
+"could be a security risk. If you leave your computer, others can use it to "
+"send signed messages and/or read your encrypted messages. If a core dump "
+"occurs, the contents of your RAM will be saved onto disk, including your "
+"passphrase.</p><p>Note that when using KMail, this setting only applies if "
+"you are not using gpg-agent. It is also ignored if you are using crypto "
+"plugins.</p></qt>"
+msgstr ""
+
+#: kpgpui.cpp:175
+msgid "Always encr&ypt to self"
+msgstr ""
+
+#: kpgpui.cpp:180
+msgid ""
+"<qt><p>When this option is enabled, the message/file will not only be "
+"encrypted with the receiver's public key, but also with your key. This will "
+"enable you to decrypt the message/file at a later time. This is generally a "
+"good idea.</p></qt>"
+msgstr ""
+
+#: kpgpui.cpp:189
+msgid "&Show signed/encrypted text after composing"
+msgstr ""
+
+#: kpgpui.cpp:195
+msgid ""
+"<qt><p>When this option is enabled, the signed/encrypted text will be shown "
+"in a separate window, enabling you to know how it will look before it is "
+"sent. This is a good idea when you are verifying that your encryption system "
+"works.</p></qt>"
+msgstr ""
+
+#: kpgpui.cpp:201
+msgid "Always show the encryption keys &for approval"
+msgstr ""
+
+#: kpgpui.cpp:206
+msgid ""
+"<qt><p>When this option is enabled, the application will always show you a "
+"list of public keys from which you can choose the one it will use for "
+"encryption. If it is off, the application will only show the dialog if it "
+"cannot find the right key or if there are several which could be used. </p></"
+"qt>"
+msgstr ""
+
+#: kpgpui.cpp:340
+msgid "&Search for:"
+msgstr ""
+
+#: kpgpui.cpp:352
+msgid "Key ID"
+msgstr ""
+
+#: kpgpui.cpp:353
+msgid "User ID"
+msgstr ""
+
+#: kpgpui.cpp:368
+msgid "Remember choice"
+msgstr ""
+
+#: kpgpui.cpp:371
+msgid ""
+"<qt><p>If you check this box your choice will be stored and you will not be "
+"asked again.</p></qt>"
+msgstr ""
+
+#: kpgpui.cpp:407
+msgid "&Reread Keys"
+msgstr ""
+
+#: kpgpui.cpp:482
+#, kde-format
+msgid "Fingerprint: %1"
+msgstr ""
+
+#: kpgpui.cpp:517
+msgid "Revoked"
+msgstr ""
+
+#: kpgpui.cpp:520
+msgid "Expired"
+msgstr ""
+
+#: kpgpui.cpp:523
+msgid "Disabled"
+msgstr ""
+
+#: kpgpui.cpp:526
+msgid "Invalid"
+msgstr ""
+
+#: kpgpui.cpp:532
+msgid "Undefined trust"
+msgstr ""
+
+#: kpgpui.cpp:535
+msgid "Untrusted"
+msgstr ""
+
+#: kpgpui.cpp:538
+msgid "Marginally trusted"
+msgstr ""
+
+#: kpgpui.cpp:541
+msgid "Fully trusted"
+msgstr ""
+
+#: kpgpui.cpp:544
+msgid "Ultimately trusted"
+msgstr ""
+
+#: kpgpui.cpp:548
+msgid "Unknown"
+msgstr ""
+
+#: kpgpui.cpp:551
+msgid "Secret key available"
+msgstr ""
+
+#: kpgpui.cpp:554
+msgid "Sign only key"
+msgstr ""
+
+#: kpgpui.cpp:557
+msgid "Encryption only key"
+msgstr ""
+
+#: kpgpui.cpp:565
+#, kde-format
+msgctxt "creation date and status of an OpenPGP key"
+msgid "Creation date: %1, Status: %2"
+msgstr ""
+
+#: kpgpui.cpp:571
+#, kde-format
+msgctxt "creation date, status and remark of an OpenPGP key"
+msgid "Creation date: %1, Status: %2 (%3)"
+msgstr ""
+
+#: kpgpui.cpp:1009
+msgid "Checking Keys"
+msgstr ""
+
+#: kpgpui.cpp:1010
+msgid "Checking key 0xMMMMMMMM..."
+msgstr ""
+
+#: kpgpui.cpp:1021
+#, kde-format
+msgid "Checking key 0x%1..."
+msgstr ""
+
+#: kpgpui.cpp:1046
+msgid "Recheck Key"
+msgstr ""
+
+#: kpgpui.cpp:1179
+msgid "OpenPGP Key Selection"
+msgstr ""
+
+#: kpgpui.cpp:1180
+msgid "Please select an OpenPGP key to use."
+msgstr ""
+
+#: kpgpui.cpp:1200
+msgid "Clear"
+msgstr ""
+
+#: kpgpui.cpp:1203 kpgpui.cpp:1401 kpgpui.cpp:1458
+msgid "Change..."
+msgstr ""
+
+#: kpgpui.cpp:1339
+msgid "Encryption Key Approval"
+msgstr ""
+
+#: kpgpui.cpp:1358
+msgid "The following keys will be used for encryption:"
+msgstr ""
+
+#: kpgpui.cpp:1381
+msgid "Your keys:"
+msgstr ""
+
+#: kpgpui.cpp:1384 kpgpui.cpp:1441
+msgctxt "@info"
+msgid "<placeholder>none</placeholder> means 'no key'"
+msgstr ""
+
+#: kpgpui.cpp:1432
+msgid "Recipient:"
+msgstr ""
+
+#: kpgpui.cpp:1438
+msgid "Encryption keys:"
+msgstr ""
+
+#: kpgpui.cpp:1467
+msgid "Encryption preference:"
+msgstr ""
+
+#: kpgpui.cpp:1469
+msgctxt "@item:inlistbox"
+msgid "<placeholder>none</placeholder>"
+msgstr ""
+
+#: kpgpui.cpp:1470
+msgctxt "@item:inlistbox"
+msgid "Never Encrypt with This Key"
+msgstr ""
+
+#: kpgpui.cpp:1471
+msgctxt "@item:inlistbox"
+msgid "Always Encrypt with This Key"
+msgstr ""
+
+#: kpgpui.cpp:1472
+msgctxt "@item:inlistbox"
+msgid "Encrypt Whenever Encryption is Possible"
+msgstr ""
+
+#: kpgpui.cpp:1473
+msgctxt "@item:inlistbox"
+msgid "Always Ask"
+msgstr ""
+
+#: kpgpui.cpp:1474
+msgctxt "@item:inlistbox"
+msgid "Ask Whenever Encryption is Possible"
+msgstr ""
+
+#: kpgpui.cpp:1537
+msgctxt ""
+"if in your language something like 'key(s)' isn't possible please use the "
+"plural in the translation"
+msgid ""
+"Select the key(s) which should be used to encrypt the message to yourself."
+msgstr ""
+
+#: kpgpui.cpp:1549
+#, kde-format
+msgctxt ""
+"if in your language something like 'key(s)' isn't possible please use the "
+"plural in the translation"
+msgid ""
+"Select the key(s) which should be used to encrypt the message for\n"
+"%1"
+msgstr ""
+
+#: kpgpui.cpp:1626
+msgid "OpenPGP Information"
+msgstr ""
+
+#: kpgpui.cpp:1637
+msgid "Result of the last encryption/sign operation:"
+msgstr ""

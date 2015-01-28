@@ -1,0 +1,516 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+  <!ENTITY kremotecontrol "<application
+>KRemoteControl</application
+>">
+  
+  <!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+  <!ENTITY % addindex "IGNORE">
+]>
+
+<book id="kremotecontrol" lang="&language;">
+  <bookinfo>
+    <title
+>Einstellungen für Fernbedienungen unter &kde;</title>
+
+    <authorgroup>
+      <author
+><firstname
+>Michael</firstname
+> <surname
+>Zanetti</surname
+> <affiliation
+> <address
+><email
+>michael_zanetti@gmx.net</email
+></address>
+        </affiliation>
+      </author>
+    <othercredit role="translator"
+><firstname
+>Gregor</firstname
+><surname
+>Zumstein</surname
+><affiliation
+><address
+><email
+>gz@orchester-bremgarten.ch</email
+></address
+></affiliation
+><contrib
+>Deutsche Übersetzung</contrib
+></othercredit
+> 
+    </authorgroup>
+
+    <date
+>2010-03-05</date>
+    <releaseinfo
+>1.0</releaseinfo>
+
+    <copyright>
+      <year
+>2010</year>
+      <holder
+>Michael Zanetti</holder>
+    </copyright>
+
+    <abstract>
+      <para
+>&kremotecontrol;-Einstellungen: Die Infrastruktur für die &kde;-Fernbedienungsfunktionalität. </para>
+    </abstract>
+    
+    <keywordset>
+      <keyword
+>KRemoteControl</keyword>
+      <keyword
+>kcm_remotecontrol</keyword>
+      <keyword
+>Fernbedienung</keyword>
+    </keywordset>
+
+  </bookinfo>
+
+  <chapter id="introduction">
+    <title
+>Einführung</title>
+
+    <para
+>In diesem Modul können Sie Ihre Fernbedienungen einrichten und ihnen Aktionen zuweisen, die beim Drücken eines Knopfes ausgeführt werden. Aktionen können Programme starten, sie steuern oder Systembefehle wie das Herunterfahren des Rechners ausführen. </para>
+
+    <sect1 id="requirements">
+      <title
+>Voraussetzungen</title>
+
+      <para
+>Um &kremotecontrol; benutzen zu können, müssen Sie ein kompatibles Dienstprogramm für Fernbedienungen auf Ihren Rechner installieren. Zur Zeit gibt es nur ein Dienstprogramm für LIRC. Wenn LIRC richtig eingerichtet ist, wird das Symbol für &kremotecontrol; im Systemabschnitt der Kontrollleiste hellrot angezeigt <inlinemediaobject
+> <imageobject
+> <imagedata fileref="irkick.png" format="PNG"/> </imageobject
+> </inlinemediaobject
+>. Sonst ist das Symbol grau mit einem Kreuz <inlinemediaobject
+> <imageobject
+> <imagedata fileref="irkickoff.png" format="PNG"/> </imageobject
+> </inlinemediaobject
+>. </para>
+
+      <para
+>Weitere Informationen zu LIRC finden Sie auf der Homepage http://www.lirc.org. </para>
+
+    </sect1>
+  </chapter>
+
+  <chapter id="usage">
+    <title
+>Benutzung</title>
+
+    <para
+>Dieses Einstellungsmodul besteht aus zwei Listen. Die linke Liste zeigt alle vorhandenen Fernsteuerungen und deren Modi an. In der rechten Liste werden alle eingerichteten Aktionen für die aktuell ausgewählte Fernsteuerung und den Modus aufgeführt. <screenshot>
+      <screeninfo
+>Einrichtung von KRemoteControl</screeninfo>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="kcmremotecontrol.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Liste der Fernbedienungen und der eingerichteten Modi und Aktionen.</phrase>
+          </textobject>
+        </mediaobject>
+      </screenshot>
+    </para>
+
+    <sect1 id="modes">
+      <title
+>Fernbedienungen und Modi</title>
+
+      <para
+>Jede Fernbedienung hat eine Anzahl unterschiedlicher Modi. Unterschiedliche Modi erlauben es, einer Taste je nach Anwendungsbereich unterschiedliche Funktionen zuzuweisen. Auf diese Weise können Fernbedienungen viele verschiedene Geräte mit nur einigen wenigen Knöpfen steuern. Ein Beispiel hierfür sind die Vielzweck-Fernbedienungen für TV/Video/DVD und weiteres. Diese haben wenige Tasten, welche je nach zu bedienendem Gerät unterschiedliche Funktionen besitzen. Direkt für die Fernbedienung definierte Aktionen sind immer verfügbar, unabhängig vom aktuellen Modus der Fernbedienung. Aktionen, die für einen Modus definiert wurden, werden auch nur dann ausgeführt, wenn sich die Fernbedienung in diesem Modus befindet. Für eine Fernbedienung kann gleichzeitig nur ein Modus oder auch kein Modus aktiviert sein. Ist kein Modus aktiviert, werden nur die direkt definierten und immer verfügbaren Aktionen beim Drücken eines Knopfes ausgeführt. Außerdem kann ein Standardmodus angegeben werden, der der Fernbedienung automatisch beim Start zugewiesen wird. </para>
+      <para
+>Modi können für eine Fernbedienung hinzugefügt werden, indem Sie sie auswählen und dann auf den Knopf <guibutton
+>+</guibutton
+> rechts neben der Liste klicken. Ein neu erstellter Modus muss als ersten einen Namen erhalten. Wahlweise können Sie dem Modus eine Taste zur Aktivierung und ein Symbol zuweisen, das in Benachrichtigungen zu diesem Modus benutzt wird. Um einen Modus zu löschen, wählen sie ihn aus und drücken den Knopf <guibutton
+>-</guibutton
+>. <screenshot>
+        <screeninfo
+>Modus hinzufügen</screeninfo>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="AddMode.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+              <phrase
+>Einen neuen Modus hinzufügen</phrase>
+            </textobject>
+          </mediaobject>
+        </screenshot>
+      </para>
+      <para
+>Gibt es mehrere Modi mit der gleichen zugewiesenen Taste, wird diese Taste in der Voreinstellung zum Moduswechsel benutzt. Damit können Sie Ihre Modi gruppieren. Sie können zum Beispiel eine Taste <quote
+>Musik</quote
+> für das Wechseln der Modi in &amarok; und &juk; benutzen oder eine Taste <quote
+>Video</quote
+> auf die gleiche Art für &dragon; oder KMplayer. Möchten Sie mit einer Taste durch alle Modi vorwärts und mit einer weiteren Taste durch alle Modi rückwärts wechseln, wählen Sie eine Fernsteuerung aus. Drücken Sie den Knopf „Bearbeiten“ und stellen Sie dies Verhalten im Einrichtungsdialog ein. <screenshot>
+        <screeninfo
+>Fernbedienung bearbeiten</screeninfo>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="EditMasterMode.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+              <phrase
+>Eine Fernbedienung bearbeiten</phrase>
+            </textobject>
+          </mediaobject>
+        </screenshot>
+      </para>
+
+    </sect1>
+
+    <sect1 id="actions">
+      <title
+>Aktionen</title>
+
+      <para
+>Wenn Sie eine Fernbedienung oder einen Modus ausgewählt haben, können Sie Ihnen mit dem Knopf <guibutton
+>+</guibutton
+> auf der rechten Seite Aktionen hinzufügen. Aktionen können auf zwei unterschiedliche Arten erstellt werden, entweder unter Verwendung einer Vorlage oder manuell mit Durchsehen der D-Bus-Sitzung. <screenshot>
+        <screeninfo
+>Aktion hinzufügen</screeninfo>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="AddAction.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+              <phrase
+>Eine Aktion hinzufügen</phrase>
+            </textobject>
+          </mediaobject>
+        </screenshot>
+      </para>
+      <para
+>Aktionen mithilfe von Vorlagen zu erstellen, ist einfach, die Einstellungsmöglichkeiten für diese Aktionen sind aber begrenzt. Vorlagen für häufig benutzte Anwendungen wie &amarok; oder den &kde;-Programmstarter und Systembefehle für das Herunterfahren des Rechners werden mit installiert. Diese Vorlagen sind in Profilen für ähnlichen Aufgaben zusammengefasst. Es gibt zum Beispiel ein Profil <quote
+>Power management</quote
+> mit Vorlagen um den Rechner in den Ruhezustand oder Tiefschlaf zu versetzen oder herunterzufahren. <screenshot>
+        <screeninfo
+>Profil hinzufügen</screeninfo>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="AddProfileAction.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+              <phrase
+>Aktion mit Hilfe einer Vorlage hinzufügen</phrase>
+            </textobject>
+          </mediaobject>
+        </screenshot>
+      </para>
+      <para
+>Durchsuchen Sie den D-Bus um Aktionen zu erstellen, dann werden alle laufenden Programme angezeigt und Sie können alle Funktionen dieser Programme durchsehen. Dazu sind aber Grundkenntnisse zum D-Bus erforderlich, es lassen sich damit dann mehr Programme und Funktionen als in der Vorlagenliste benutzen. <screenshot>
+        <screeninfo
+>D-Bus-Aktion hinzufügen</screeninfo>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="AddDBusAction.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+              <phrase
+>Eine D-Bus-Aktion hinzufügen</phrase>
+            </textobject>
+          </mediaobject>
+        </screenshot>
+      </para>
+      <para
+>Für D-Bus-Aktionen gibt es einige zusätzliche Optionen. Als erstes muss definiert werden, ob Aktionen wiederholt ausgeführt wird, wenn Sie eine Taste  auf der Fernbedienung länger drücken. Diesen Verhalten ist zum Beispiel sinnvoll, um die Lautstärke zu erhöhen oder zu verringern. Für Aktionen wie Wiedergabe/Pause bei der Medienwiedergabe ist es nicht geeignet. Weiterhin muss festgelegt werden, ob das Programm automatisch beim Drücken der Taste gestartet werden soll, wenn es noch nicht läuft. Das automatische Starten sollte zum Beispiel nicht für eine Aktion gewählt werden, die eine Anwendung beendet. Als dritte und letzte Option für Aktionen ist anzugeben, welche Instanz einer Anwendung die Aktion ausführen soll, falls die Anwendung mehrfach gestartet werden kann. Diese Option ist für Anwendung deaktiviert, die nur einmal laufen können. </para>
+      <para>
+        <screenshot>
+        <screeninfo
+>Einstellungen für Aktionen</screeninfo>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="AddActionOptions.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+              <phrase
+>Einstellungen für Aktionen</phrase>
+            </textobject>
+          </mediaobject>
+        </screenshot>
+      </para>
+      <para
+>Mithilfe des Assistenten lassen sich Aktionen auch automatisch erzeugen. Dabei versucht &kremotecontrol; automatisch Aktionen für Tasten zu finden. Im Dialog „Automatisch ausfüllen“ werden alle vorhandenen Vorlagen mit einer Markierung gekennzeichnet. An der Farbe dieser Markierung erkennen Sie, ob Ihre Fernbedienung vollständig (Grün). teilweise (Gelb) oder gar nicht (Rot) unterstützt wird. Bei einem grünen Symbol passen alle enthaltenen Vorlagen zu Ihrer Fernbedienung, ein gelbes Symbol zeigt an, dass nur ein Teil der enthaltenen Aktionen unterstützt wird. Passt keine der Vorlagen zu Ihrer Fernbedienung, sehen Sie eine rote Markierung. Auch bei einer roten Markierung können diese Vorlegen benutzt werden, Sie müssen aber alle gewünschten Tasten manuell einrichten. <screenshot>
+        <screeninfo
+>Automatisch ausfüllen</screeninfo>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="AutoPopulate.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+              <phrase
+>Aktionen automatisch mit Vorlagen erstellen</phrase>
+            </textobject>
+          </mediaobject>
+        </screenshot>
+      </para>
+      <para
+><emphasis role="strong"
+>Hinweis:</emphasis
+> Wenn Ihre Fernbedienung mit keinem Profil kompatibel ist, haben Sie LIRC vermutlich nicht für die Verwendung von Namensräumen eingerichtet. </para>
+    </sect1>
+  </chapter>
+  <chapter id="advancedInformation">
+    <title
+>Zusätzliche Informationen</title>
+    <para
+>In diesem Kapitel werden zusätzliche Information vorgestellt, die für einen erfahrenen Benutzer oder Entwickler von Interesse sind. In diesem Kapitel finden Sie eine Anweisung, um benutzerdefinierte Profile zu erstellen. </para>
+
+    <sect1 id="profileCreation">
+      <title
+>Ein Profil erstellen</title>
+
+      <sect2>
+        <title
+>Einführung</title>
+        <para
+>Fast alle Programme mit einer &DBus;-Schnittstelle können durch &kremotecontrol; ohne zusätzliche Aktionen benutzt werden. Um aber eine grafische  Benutzerschnittstelle für die Einrichtung bereitzustellen und das Programm im Dialog <guilabel
+>Automatisch ausfüllen</guilabel
+> anzuzeigen, sollten Sie ein Profil dafür erstellen. </para>
+        <para
+>Ein Profil gibt &kremotecontrol; und dem Benutzer die Funktion der verschiedenen &DBus;-Aufrufe an, Im Grunde ist das eine Art von Dokumentation der &DBus;-Aufrufe. Es müssen nicht alle &DBus;-Aufrufe aufgeführt sein, nur die Wichtigsten für den Endbenutzer. Dazu gehören eher die Aufrufe um die <quote
+>Schnittstelle einzurichten</quote
+> als die Aufrufe zu Abfrage von <quote
+>Informationen</quote
+>. </para>
+      </sect2>
+
+      <sect2>
+        <title
+>Anleitung zur Erstellung von Profilen</title>
+        <procedure>
+
+          <step>
+            <title
+>&DBus;</title>
+            <para
+>Überprüfen Sie, ob das Programm für das Sie ein Profil erstellen möchten, Funktionen über einen &DBus;-Sitzungsbus anbietet. Dazu versuchen Sie, in &kremotecontrol; manuell eine Aktion für dieses Programm hinzuzufügen. Auch mit dem Programm <quote
+>qdbusviewer</quote
+>, das zusammen mit Qt4 installiert wird, können Sie Informationen über die &DBus;-Schnittstelle eines Programms finden. </para>
+          </step>
+
+          <step>
+            <title
+>Ausführliche Anleitung</title>
+            <para
+>Wenn Sie die passenden &DBus;-Funktionen gefunden haben, müssen diese in der Datei <filename
+>appname.profile.xml</filename
+> beschrieben werden. Im folgenden Abschnitt finden Sie eine kurze Einführung zur Erstellung dieser Dateien: </para>
+
+            <substeps>
+              <step>
+                <para
+>Erstellen Sie zuerst eine Datei mit den weiter unten angezeigten Inhalt. In <quote
+>name</quote
+> geben Sie einen kurzen Namen des Profils ein, der dessen Funktion beschreibt, in <quote
+>description</quote
+> eine Beschreibung dieses Profils. Tragen Sie Ihren Namen in <quote
+>author</quote
+>  und eine Versionsnummer in <quote
+>version</quote
+> ein. Die Versionsnummer ist für die Aktualisierung des Profils wichtig, wenn &kremotecontrol; mehrere Versionen eines Profils auf Ihrem Rechner findet, wird das Profil mit der größten Versionsnummer benutzt. </para>
+                <programlisting
+>&lt;xml version="1.0" encoding="UTF-8"?>
+&lt;profile xmlns="urn:org-kde-kremotecontrol"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:org-kde-kremotecontrol file:profile.xsd"&gt;
+
+    &lt;name&gt;Mein Profil&lt;/name&gt;
+    &lt;version&gt;0.1&lt;/version&gt;
+    &lt;author&gt;Ich&lt;/author&gt;
+    &lt;description&gt;Beschreibung der Funktionen des Profils&lt;/description&gt;
+    &lt;action&gt;
+        &lt;--  Dies wird im nächsten Schritt erklärt --&gt;
+    &lt;action&gt;
+
+&lt;/profile&gt;
+                </programlisting>
+              </step>
+
+              <step>
+                <para
+>In diesen Profilentwurf müssen nun einige Aktionen eingefügt werden. </para>
+
+                <programlisting
+>&lt;xml version="1.0" encoding="UTF-8"?>
+&lt;profile xmlns="urn:org-kde-kremotecontrol"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:org-kde-kremotecontrol file:profile.xsd"&gt;
+
+    &lt;name&gt;Mein Profil&lt;/name&gt;
+    &lt;version&gt;0.1&lt;/version&gt;
+    &lt;author&gt;Ich&lt;/author&gt;
+    &lt;description&gt;Beschreibung der Funktionen des Profils&lt;/description&gt;
+    &lt;action id="someUniquId"  repeat="true|false" button="eineTaste"&gt;
+      &lt;name&gt;Meine Aktion&lt;/name&gt;
+      &lt;description&gt;Beschreibung der Funktion dieser Aktion&lt;/description&gt;
+      &lt;prototype&gt;
+        &lt;--  Dies wird im nächsten Schritt erklärt --&gt;
+      &lt;prototype&gt;
+      &lt;ifmulti&gt;ifMultiOption&lt;/ifmulti&gt;
+    &lt;action&gt;
+
+&lt;/profile&gt;
+                </programlisting>
+               <para
+>Geben Sie als erstes einen eindeutigen Bezeichner an. Diese ID wird in &kremotecontrol; dazu benutzt, um vorhandene Aktionen einer Vorlage zuzuordnen, wenn zum Beispiel die Beschreibung eingelesen wird. Diese ID muss innerhalb eines Profils eindeutig sein. Das Attribut <quote
+>button</quote
+> wird für das automatische Ausfüllen verwendet. In der Schemadatei <quote
+>profile.xsd</quote
+> finden Sie eine vollständige Liste aller möglichen Tastennamen. Das Attribut <quote
+>repeat</quote
+> legt fest, ob eine Aktion mehrfach ausgeführt wird, wenn eine Tasten längere Zeit gedrückt wird. Um eine Anwendung, die noch nicht läuft, auf Tastendruck automatisch zu starten, setzen Sie den Wert für  <quote
+>autostart</quote
+> auf <quote
+>true</quote
+>. Die Attribute <quote
+>button</quote
+>, <quote
+>repeat</quote
+> und <quote
+>autostart</quote
+> dürfen auch weggelassen werden. Sind <quote
+>repeat</quote
+> und <quote
+>autostart</quote
+> nicht definiert, wird als Voreinstellung <quote
+>false</quote
+> benutzt. </para>
+                 
+               <para
+>Geben Sie einen kurzen Namen für <quote
+>name</quote
+> und eine Beschreibung für <quote
+>description</quote
+> ein. Die Eigenschaft <quote
+>ifmulti</quote
+> legt fest, wie sich &kremotecontrol; bei einem Tastendruck verhält, wenn es mehrere laufenden Instanzen einer Anwendung gibt. Für diese Eigenschaft sind folgende Werte erlaubt: <quote
+>sendtotop</quote
+> - die Aktion wird an die oberste Anwendung im dem Fensterstapel weitergegeben, <quote
+>sendtobottom</quote
+> - die Aktion wird an die unterste Anwendung im dem Fensterstapel weitergegeben, <quote
+>sendtoall</quote
+>  -an alle Instanzen, <quote
+>dontsend</quote
+> - die Aktion wird nicht an alle Instanzen weitergereicht und <quote
+>unique</quote
+> - für diese Anwendung ist nur eine Instanz möglich. Ist dieser Wert nicht definiert, geht &kremotecontrol; davon aus, dass die Anwendung nur einmal ausgeführt werden kann und benutzt die Voreinstellung <quote
+>unique</quote
+>. </para>
+              </step>
+
+              <step>
+                <para
+>Als nächstes wird die auszuführende &DBus;-Funktion in <quote
+>prototype</quote
+> definiert: </para>
+                <programlisting
+>&lt;xml version="1.0" encoding="UTF-8"?>
+&lt;profile xmlns="urn:org-kde-kremotecontrol"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:org-kde-kremotecontrol file:profile.xsd"&gt;
+
+    &lt;name&gt;Mein Profil&lt;/name&gt;
+    &lt;version&gt;0.1&lt;/version&gt;
+    &lt;author&gt;Ich&lt;/author&gt;
+    &lt;description&gt;Beschreibung der Funktionen des Profils&lt;/description&gt;
+    &lt;action id="someUniquId"  repeat="true|false" button="eineTaste"&gt;
+      &lt;name&gt;Meine Aktion&lt;/name&gt;
+      &lt;description&gt;Beschreibung der Funktion dieser Aktion&lt;/description&gt;
+      &lt;prototype&gt;
+        &lt;serviceName&gt;org.example.application&lt;/serviceName&gt;
+        &lt;node&gt;Some/Node&lt;/node&gt;
+        &lt;function&gt;function&lt;/function&gt;
+      &lt;prototype&gt;
+      &lt;ifmulti&gt;ifMultiOption&lt;/ifmulti&gt;
+    &lt;action&gt;
+
+&lt;/profile&gt;
+                </programlisting>
+                <para
+><quote
+>servicename</quote
+> enthält den Namen des &DBus;-Dienstes für die Anwendung, &eg; <quote
+>org.kde.plasma-desktop</quote
+>. In <quote
+>node</quote
+> ist der zugehörige &DBus;-Knoten wie <quote
+>App</quote
+> einzutragen. Geben Sie den Funktionsnamen ohne Rückgabewert und Argumente in <quote
+>function</quote
+> an, zum Beispiel <quote
+>toggleDashboard</quote
+>. </para>
+              </step>
+
+              <step>
+                <para
+>Erfordert eine Funktion zusätzliche Argumente, muss für jedes Argument der Typ, eine Beschreibung für den Benutzer und optional ein Standardwert angegeben werden. Eine Liste der möglichen Argumenttypen finden Sie in der Schemadatei <quote
+>profile.xsd</quote
+>. In <quote
+>comment</quote
+> sollte eine benutzerfreundliche Beschreibung der Funktion des Arguments enthalten sein. In <quote
+>default</quote
+> sollten Sie einen Standardwert vorgeben. In Vorlagen für eine Taste müssen alle Argumente Standardwerte haben, sonst führt die Verwendung von <quote
+>Automatisch ausfüllen</quote
+> zu nicht korrekt arbeitenden Funktionen. </para>
+      
+                  <programlisting
+>&lt;xml version="1.0" encoding="UTF-8"?>
+&lt;profile xmlns="urn:org-kde-kremotecontrol"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:org-kde-kremotecontrol file:profile.xsd"&gt;
+
+    &lt;name&gt;Mein Profil&lt;/name&gt;
+    &lt;version&gt;0.1&lt;/version&gt;
+    &lt;author&gt;Ich&lt;/author&gt;
+    &lt;description&gt;Beschreibung der Funktionen des Profils&lt;/description&gt;
+    &lt;action id="someUniquId"  repeat="true|false" button="eineTaste"&gt;
+      &lt;name&gt;Meine Aktion&lt;/name&gt;
+      &lt;description&gt;Beschreibung der Funktion dieser Aktion&lt;/description&gt;
+      &lt;prototype&gt;
+        &lt;serviceName&gt;org.example.application&lt;/serviceName&gt;
+        &lt;node&gt;Some/Node&lt;/node&gt;
+        &lt;function&gt;function&lt;/function&gt;
+
+        &lt;arguments&gt;
+          &lt;argument type="QString"&gt;
+            &lt;comment&gt;Zusätzlicher Kommentar&lt;/comment&gt;
+            &lt;default&gt;einWert&lt;/default&gt;
+          &lt;/argument&gt;
+        &lt;/arguments&gt;
+
+      &lt;prototype&gt;
+      &lt;ifmulti&gt;ifMultiOption&lt;/ifmulti&gt;
+    &lt;action&gt;
+
+&lt;/profile&gt;
+                  </programlisting>
+              </step>
+            </substeps>
+          </step>
+        </procedure>
+      </sect2>
+      <sect2>
+        <title
+>Installation</title>
+          <para
+>Um das Profil zu benutzen und zu testen, müssen Sie es in den Ordner <filename
+>$(kde_datadir)/profiles</filename
+> kopieren und &kremotecontrol; neu starten. </para>
+          <para
+>Möchten Sie Profile zur &kde; SC beisteuern, senden Sie sie bitte unter der Adresse <email
+>kde-utils-devel@kde.org</email
+> an das KDE-Utils-Team . </para>
+        </sect2>
+    </sect1>
+  </chapter>
+</book>

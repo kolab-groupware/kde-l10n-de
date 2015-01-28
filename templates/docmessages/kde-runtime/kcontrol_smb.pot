@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: index.docbook:10 index.docbook:27
+#, no-c-format
+msgid "Windows Shares"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:12
+#, no-c-format
+msgid "&Mike.McBride; &Mike.McBride.mail;"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:13
+#, no-c-format
+msgid "&Jost.Schenck; &Jost.Schenck.mail;"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:14
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+
+#. Tag: date
+#: index.docbook:17
+#, no-c-format
+msgid "2013-12-05"
+msgstr ""
+
+#. Tag: releaseinfo
+#: index.docbook:18
+#, no-c-format
+msgid "&kde; 4.12"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:21
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:22
+#, no-c-format
+msgid "Systemsettings"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:23
+#, no-c-format
+msgid "Windows shares"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:30
+#, no-c-format
+msgid "Introduction"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:32
+#, no-c-format
+msgid ""
+"In many small local area networks, the <acronym>SMB</acronym> "
+"protocol is used to offer network services. Names like <quote>"
+"&Windows; Network</quote> or <quote>&Windows; for Workgroups Network</quote> "
+"or <quote>LanManager</quote> are often used as well. Using <acronym>"
+"SMB</acronym> you can access so-called <quote>shares</quote> "
+"(&ie; folders made available by the server) as well as printers."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:40
+#, no-c-format
+msgid ""
+"&kde; comes with built-in support for the <acronym>SMB</acronym> "
+"protocol. As &kde; is network-transparent that means you can access <acronym>"
+"SMB</acronym> shares from everywhere you can access your local files, for "
+"example in the &konqueror; file manager and in the file dialog. To make use of "
+"this you should provide &kde; with some information on your <acronym>"
+"SMB</acronym> network. But don't worry, this is normally pretty simple as, for "
+"example, all the Windows clients in your network need and have the same "
+"information."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:58
+#, no-c-format
+msgid ""
+"For the <acronym>SMB</acronym> protocol to work, it is required to have "
+"<application>Samba</application> correctly installed."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:68
+#, no-c-format
+msgid "<title>Use</title>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:70
+#, no-c-format
+msgid ""
+"Although there are a lot of insecure <acronym>SMB</acronym> "
+"networks out there which allow access to anyone, in principle you have to "
+"authenticate yourself to access the services of an <acronym>SMB</acronym> "
+"server. By default, &kde; will use the data entered in the <guilabel>"
+"Default user name</guilabel> and <guilabel>Default password</guilabel> "
+"fields to authenticate itself on <acronym>SMB</acronym> "
+"hosts. If you leave the field <guilabel>Default user name</guilabel> "
+"empty, &kde; will try to access <acronym>SMB</acronym> "
+"hosts without a username. If you leave the default password empty, it will try "
+"without a password. If &kde; is unsuccessful accessing the host using these "
+"settings, you will be asked for a username and a password."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:83
+#, no-c-format
+msgid ""
+"While it makes things more comfortable if &kde; stores your <acronym>"
+"SMB</acronym> password, this may be a security problem. If you are using "
+"<acronym>SMB</acronym> in a security conscious environment, you should not "
+"store your password here but rather enter it anew every time you need to access "
+"an <acronym>SMB</acronym> host."
+msgstr ""

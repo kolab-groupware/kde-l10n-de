@@ -1,0 +1,2596 @@
+# Marco Wegner <mail@marcowegner.de>, 2002, 2003.
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2009, 2010, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kompare\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:10+0000\n"
+"PO-Revision-Date: 2012-09-03 12:02+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:13
+#, no-c-format
+msgid "The &kompare; Handbook"
+msgstr "Das Handbuch zu &kompare;"
+
+#. Tag: author
+#: index.docbook:17
+#, no-c-format
+msgid ""
+"<firstname>Sean</firstname><surname>Wheller</surname><email>sean@inwords.co."
+"za</email>"
+msgstr ""
+"<firstname>Sean</firstname><surname>Wheller</surname><email>sean@inwords.co."
+"za</email>"
+
+#. Tag: trans_comment
+#: index.docbook:18
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Ingo</"
+"firstname><surname>Malchow</"
+"surname><affiliation><address><email>ingomalchow@googlemail.com</email></"
+"address></affiliation><contrib>Übersetzung</contrib></othercredit>"
+
+#. Tag: holder
+#: index.docbook:23
+#, no-c-format
+msgid "Sean Wheller"
+msgstr "Sean Wheller"
+
+#. Tag: date
+#: index.docbook:28
+#, no-c-format
+msgid "2010-07-22"
+msgstr "2010-07-22"
+
+#. Tag: releaseinfo
+#: index.docbook:29
+#, no-c-format
+msgid "&version;"
+msgstr "&version;"
+
+#. Tag: para
+#: index.docbook:34
+#, no-c-format
+msgid ""
+"&kompare; is a &GUI; front-end program that enables differences between "
+"source files to be viewed and merged. &kompare; can be used to compare "
+"differences on files or the contents of folders. &kompare; supports a "
+"variety of diff formats and provide many options to customize the "
+"information level displayed."
+msgstr ""
+"&kompare; ist ein Programm mit grafischer Bedienungsoberfläche, um "
+"Abweichungen zwischen Textdateien zu betrachten und sie zusammenzuführen. "
+"&kompare; kann Abweichungen zwischen einzelnen Dateien oder zwischen Ordnern "
+"und deren Inhalt anzeigen. &kompare; unterstützt eine Vielzahl an Diff-"
+"Formaten und bietet viele Einstellungsmöglichkeiten für die Anzeige der "
+"Abweichungen."
+
+#. Tag: para
+#: index.docbook:38
+#, no-c-format
+msgid "This document describes &kompare; version &version;."
+msgstr "Dieses Dokument beschreibt &kompare; Version &version;."
+
+#. Tag: keyword
+#: index.docbook:43
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:44
+#, no-c-format
+msgid "Kompare"
+msgstr "Kompare"
+
+#. Tag: keyword
+#: index.docbook:45
+#, no-c-format
+msgid "<keyword>Diff</keyword>"
+msgstr "<keyword>Diff</keyword>"
+
+#. Tag: keyword
+#: index.docbook:46
+#, no-c-format
+msgid "Merge"
+msgstr "Zusammenführen"
+
+#. Tag: keyword
+#: index.docbook:47
+#, no-c-format
+msgid "Patch"
+msgstr "Patch"
+
+#. Tag: keyword
+#: index.docbook:48
+#, no-c-format
+msgid "Hunk"
+msgstr "Gruppe"
+
+#. Tag: title
+#: index.docbook:54
+#, no-c-format
+msgid "Introduction"
+msgstr "Einleitung"
+
+#. Tag: para
+#: index.docbook:56
+#, no-c-format
+msgid ""
+"When two or more people are working on a file and passing it back and forth "
+"between one another, it becomes difficult to see what changes have been made "
+"to a new version or copy of the file. Opening the new copy and the original, "
+"side-by-side in the application used to create it is one solution but, "
+"laborious, time consuming, and prone to error. This is where a program to "
+"show differences, diffs for short, is useful."
+msgstr ""
+"Wenn mehrere Personen an einer Datei arbeiten und immer wieder untereinander "
+"austauschen, dann ist es schwierig zu erkennen, welche Änderungen an einer "
+"neuen Version der Datei oder der Kopie gemacht wurden. Die neue Kopie und "
+"das Original nebeneinander im Editorprogramm zu vergleichen, ist eine "
+"Lösung, aber arbeitsaufwendig, zeitaufwendig und fehleranfällig. Dafür ist "
+"ein Programm zur Anzeige von Abweichungen - sogenannter Diffs - besser "
+"geeignet."
+
+#. Tag: para
+#: index.docbook:61
+#, no-c-format
+msgid ""
+"As would be expected, an appropriate name for such a program would be &quot;"
+"diff&quot;. As it happens, the program diff is installed on most &Linux;-"
+"based systems and is used for exactly this purpose. Developers often use "
+"diff, as a command line tool, to show differences between versions of a "
+"source code file. However, the use of diff is not limited to showing "
+"differences in code source files, it can be used on many text-based file "
+"types."
+msgstr ""
+"Natürlich ist der naheliegende Name für ein solches Programm &quot;"
+"diff&quot;. Zufällig ist das Programm diff auch auf den meisten &Linux;-"
+"basierten Systemen installiert und wird genau für diesen Zweck verwendet. "
+"Entwickler verwenden diff als Werkzeug in einer Konsole, um Unterschiede "
+"zwischen verschiedenen Versionen einer Quelltextdatei aufzuzeigen. Dennoch "
+"ist <command>diff</command> nicht nur für die Anzeige von Unterschieden  "
+"zwischen Quelltextdateien geeignet, es kann für viele andere Textdateien "
+"verwendet werden."
+
+#. Tag: para
+#: index.docbook:66
+#, no-c-format
+msgid ""
+"Using diff from the command line can be confusing, learning the diff command "
+"syntax and deciphering the output can bewilder most people. This is where "
+"&kompare; comes into play. Providing a graphical front-end to the diff "
+"program, the interface displays source and destination files side-by-side "
+"with all differences automatically highlighted. From this starting point, "
+"changes in one file can be sequentially applied to the other file on a "
+"selective and controlled basis. Not all changes need to be applied and if "
+"you do apply a change it can always be &apos;unapplied&apos;. When all "
+"required changes have been applied they can be saved and will display as "
+"normal in the original application used to create the file."
+msgstr ""
+"Arbeiten mit dem Programm <command>diff</command> auf der Befehlszeile "
+"erfordert die Kenntnis aller Optionen für diesen Befehl. Die Ausgabe des "
+"Programms ist für Anwender schwierig zu lesen und zu verstehen. Diese "
+"Aufgabe wird durch das Programm &kompare; erleichtert. Es bietet eine "
+"grafische Oberfläche für das Programm <command>diff</command> und zeigt die "
+"Quell- und Zieldatei nebeneinander an, die Abweichungen werden dabei "
+"automatisch hervorgehoben. Nun können die Änderungen aus einer Datei "
+"nacheinander an der anderen Datei angewendet werden. Nicht alle Änderungen "
+"müssen angewendet werden, wenn Sie eine Änderung anwenden, kann diese "
+"jederzeit &apos; zurückgesetzt&apos; werden. Wenn alle benötigten Änderungen "
+"angewendet wurden, kann das Ergebnis gespeichert werden. Im Editor mit dem "
+"die Datei erstellt wurde, wird sie wie jede beliebige Datei angezeigt."
+
+#. Tag: para
+#: index.docbook:72
+#, no-c-format
+msgid ""
+"In addition to displaying differences between a source and destination file, "
+"&kompare; can be used to create and view a special file called a &apos;"
+"diff&apos;. This file captures the differences between the two sources into "
+"a single file that can be used to view and apply changes to any other copy "
+"of the file. For example, if two people are editing a document. The first "
+"person wants to make changes and send just the changes made to the second "
+"person. Normally, the first person would send a complete copy of the "
+"modified document to the second person, who would then have to compare the "
+"modified document side-by-side with unmodified version. The process for this "
+"is much like what we have described in the previous paragraphs. With "
+"&kompare; the first person would first make a local copy of the file to be "
+"modified, then make changes and compare the original and modified copy. Now "
+"using &kompare; a diff file can be created that captures only the changes "
+"made. This can be sent to the second person in place of a whole file "
+"containing the changes."
+msgstr ""
+"Zusätzlich zu der Anzeige von Abweichungen zwischen Quell- und Zieldateien "
+"kann &kompare; dazu benutzt werden, eine spezielle Datei zu erstellen, die "
+"&apos;diff&apos; genannt wird. Diese Datei enthält alle Abweichungen "
+"zwischen zwei Quelldateien und kann benutzt werden, um Änderungen anzusehen "
+"und an einer anderen Kopie der Datei anzuwenden. Wenn zum Beispiel zwei "
+"Personen am gleichen Dokument arbeiten und die erste Person möchte "
+"Änderungen durchführen und nur diese Änderungen an die zweite Person senden. "
+"Normalerweise würde die erste Person die komplette veränderte Datei an die "
+"zweite Person senden, welche dann beide Dateien nebeneinander vergleichen "
+"müsste. Dieser Prozess entspricht der in den vorherigen Abschnitten "
+"erklärten Arbeitsweise. Mit &kompare; würde die erste Person zunächst eine "
+"lokale Kopie der zu verändernden Datei anlegen, dann Änderungen durchführen "
+"und dann das Original mit der veränderten Datei vergleichen. Mit &kompare; "
+"kann eine diff-Datei angelegt werden, die nur die Änderungen enthält. Diese "
+"kann dann der zweiten Person anstelle der kompletten Datei geschickt werden."
+
+#. Tag: para
+#: index.docbook:80
+#, no-c-format
+msgid ""
+"Using &kompare; the second person can view the diff file, compare it to the "
+"local copy of the document and apply the changes made by the first person. "
+"So the process can go on for many versions of the document, each person "
+"making changes, creating diffs, distributing them and applying them. This "
+"process is commonly called &quot;patching&quot;, a term taken from the "
+"program named &quot;patch&quot; which is another command line tool "
+"specifically designed for the purpose of applying diff files."
+msgstr ""
+"Mithilfe von &kompare; kann nun die zweite Person die diff-Datei ansehen, "
+"mit der lokalen Kopie des Dokuments vergleichen und die Änderungen der "
+"ersten Person anwenden.  Und so kann der Prozess für viele Versionen des "
+"Dokuments weitergehen, jede Person macht Änderungen, verteilt sie und wendet "
+"sie an. Dieser Prozess ist weitläufig &quot;Patchen&quot; genannt, ein "
+"Begriff benannt nach dem Programm &quot;patch&quot;, ein weiteres "
+"Befehlszeilenprogramm zur Verarbeitung von diff-Dateien."
+
+#. Tag: para
+#: index.docbook:85
+#, no-c-format
+msgid ""
+"It sometimes happens that people edit a file at the same time. In this "
+"situation it is likely that people will make changes in the document at "
+"exactly the same line. This creates a problem because, without applied "
+"caution, people could be overwriting each others work as they apply the diff "
+"files they receive. Fortunately the developers of the diff and patch "
+"programs took this into consideration and so these tools will not allow such "
+"changes to be applied without manual intervention. When this state is "
+"reached, it is known as a &quot;conflict&quot;. &kompare; will display "
+"conflicts so that you can manually resolve them, deciding which changes "
+"should be applied to which file."
+msgstr ""
+"Manchmal wird eine Datei durch mehrere Personen gleichzeitig bearbeitet. "
+"Dann kann es auch vorkommen, dass Änderungen in der gleichen Zeile in der "
+"Datei erfolgt sind. Würden jetzt die Diff-Dateien angewendet, könnten die "
+"Änderungen gegenseitig überschrieben werden. Glücklicherweise haben die "
+"Entwickler diese Situation bei der Entwicklung dieser Programme bedacht, es "
+"ist in diesem Fall nicht möglich, diese Änderungen ohne manuelle Bearbeitung "
+"durchzuführen. Dieses Problem wird als &quot;Konflikt&quot; bezeichnet. In "
+"&kompare; werden diese Konflikte angezeigt. Dann können Sie sie manuell "
+"lösen können, indem Sie entscheiden, welche Änderungen an welcher Datei "
+"durchgeführt werden sollen."
+
+#. Tag: para
+#: index.docbook:91
+#, no-c-format
+msgid ""
+"&kompare; is also a great program for comparison of file changes on a folder "
+"level. When used to compare folders &kompare; recursively examines "
+"subfolders and their file contents for differences. In this use case, each "
+"file where differences are found are automatically opened and listed by "
+"&kompare; where easy navigation between the various files is possible."
+msgstr ""
+"&kompare; kann zusätzlich auch Ordner vergleichen. In diesem Fall werden "
+"rekursiv alle Unterordner und deren Dateien auf Abweichungen untersucht. "
+"Dann werden alle Dateien mit Abweichungen automatisch geöffnet und von "
+"&kompare; aufgelistet, damit wird das Navigieren in den verschiedenen "
+"Dateien erleichtert."
+
+#. Tag: title
+#: index.docbook:98
+#, no-c-format
+msgid "Using &kompare;"
+msgstr "Arbeiten mit &kompare;"
+
+#. Tag: title
+#: index.docbook:101
+#, no-c-format
+msgid "Getting Started"
+msgstr "Erste Schritte"
+
+#. Tag: para
+#: index.docbook:103
+#, no-c-format
+msgid ""
+"This section provides instructions for starting &kompare; and provides a "
+"quick tour to the &kompare; main interface."
+msgstr ""
+"Dieser Abschnitt beschreibt, wie &kompare; gestartet wird, und bietet einen "
+"kurzen Überblick über die Bedienungsoberfläche von &kompare;."
+
+#. Tag: title
+#: index.docbook:106
+#, no-c-format
+msgid "Starting &kompare;"
+msgstr "Starten von &kompare;"
+
+#. Tag: para
+#: index.docbook:108
+#, no-c-format
+msgid ""
+"A shortcut for starting &kompare; can be found in the K menu in the "
+"Development group <menuchoice><guimenu>Development</"
+"guimenu><guimenuitem>Kompare</guimenuitem></menuchoice>."
+msgstr ""
+"Zum Starten von &kompare; wählen Sie im Programmstarter aus der Gruppe "
+"<menuchoice><guimenu>Entwicklung</guimenu><guimenuitem>Kompare</"
+"guimenuitem></menuchoice>."
+
+#. Tag: para
+#: index.docbook:111
+#, no-c-format
+msgid ""
+"When &kompare; starts the first thing it does is display a dialog from which "
+"to select the files you wish to compare. Special settings for the properties "
+"of the diff and the appearance thereof can also be selected. In the file "
+"form select a source and destination source to compare. This can be any two "
+"files, folders or a &URL; and a file. Once the source and destination are "
+"selected click the <guibutton>Compare</guibutton> button."
+msgstr ""
+"Beim Start zeigt &kompare; einen Dialog zur Auswahl der Dateien für den "
+"Vergleich an. In diesem Dialog können auch Einstellungen für das Programm "
+"„Diff“ und für das Erscheinungsbild ausgewählt werden. Geben Sie zuerst "
+"Quelle und Ziel an, die miteinander verglichen werden sollen. Es können "
+"Dateien, Ordner oder eine &URL; und eine Datei angegeben werden. Zum Starten "
+"drücken Sie dann den Knopf <guibutton>Vergleichen</guibutton>."
+
+#. Tag: para
+#: index.docbook:116
+#, no-c-format
+msgid ""
+"Once &kompare; has discovered the differences it will display the main "
+"interface. When comparing two files or a URL and a file the process takes "
+"just a few seconds. However, when comparing folders with many subfolders and "
+"files, this process can take awhile."
+msgstr ""
+"Sobald &kompare; die Abweichungen ermittelt hat, wird das Hauptfenster "
+"angezeigt. Wenn zwei Dateien oder eine URL und eine Datei verglichen werden, "
+"dauert dieser Prozess nur wenige Sekunden. Aber wenn Sie Ordner mit vielen "
+"Unterordnern und Dateien vergleichen, kann der Prozess durchaus länger "
+"dauern."
+
+#. Tag: para
+#: index.docbook:120
+#, no-c-format
+msgid ""
+"For explanation of the options available from diff and appearance forms see "
+"<xref linkend=\"configure-preferences\"/>."
+msgstr ""
+"Informationen über die möglichen Einstellungen für „Diff“ und "
+"„Erscheinungsbild“ finden im <xref linkend=\"configure-preferences\"/>."
+
+#. Tag: title
+#: index.docbook:124
+#, no-c-format
+msgid "The Main Interface"
+msgstr "Das Hauptfenster"
+
+#. Tag: para
+#: index.docbook:126
+#, no-c-format
+msgid ""
+"This section provides a quick tour of the main interface which is comprised "
+"of the following areas:"
+msgstr ""
+"Dieser Abschnitt bietet einen kurze Übersicht über die Bedienungsoberfläche, "
+"die folgende Bereiche enthält:"
+
+#. Tag: para
+#: index.docbook:128
+#, no-c-format
+msgid "<para>Menus</para>"
+msgstr "<para>Menüs</para>"
+
+#. Tag: para
+#: index.docbook:129
+#, no-c-format
+msgid "<para>Toolbar</para>"
+msgstr "<para>Werkzeugleiste</para>"
+
+#. Tag: para
+#: index.docbook:130
+#, no-c-format
+msgid "<para>Source and Destination Folders</para>"
+msgstr "<para>Quell- und Zielordner</para>"
+
+#. Tag: para
+#: index.docbook:131
+#, no-c-format
+msgid "<para>Source and Destination Files</para>"
+msgstr "<para>Quell- und Zieldateien</para>"
+
+#. Tag: para
+#: index.docbook:132
+#, no-c-format
+msgid "<para>Source and Destination Line Changes</para>"
+msgstr "<para>Abweichende Zeilen in der Quell- und Zieldatei</para>"
+
+#. Tag: para
+#: index.docbook:133
+#, no-c-format
+msgid "Source and Destination Text View"
+msgstr "Anzeige des Textes in Quelle und Ziel"
+
+#. Tag: para
+#: index.docbook:134
+#, no-c-format
+msgid "<para>Statusbar</para>"
+msgstr "<para>Statusleiste</para>"
+
+#. Tag: title
+#: index.docbook:138
+#, no-c-format
+msgid "<title>Menus</title>"
+msgstr "<title>Menüs</title>"
+
+#. Tag: para
+#: index.docbook:139
+#, no-c-format
+msgid ""
+"&kompare; provides a menu driven interface. Explanation to the menu items "
+"and their options is provided in <xref linkend=\"command-reference\"/>."
+msgstr ""
+"&kompare; bietet eine menügesteuerte Oberfläche. Erklärungen zu dem Menü und "
+"den Menüeinträgen finden Sie unter im <xref linkend=\"command-reference\"/>."
+
+#. Tag: title
+#: index.docbook:143
+#, no-c-format
+msgid "<title>Toolbar</title>"
+msgstr "<title>Werkzeugleiste</title>"
+
+#. Tag: para
+#: index.docbook:144
+#, no-c-format
+msgid ""
+"The &kompare; toolbar provides shortcuts to the most frequently used diff "
+"and merge operations. The toolbar orientation, text positioning, icon size "
+"properties and which shortcut icons are displayed can be customized from the "
+"toolbar context menu accessed when right-clicking the toolbar with the "
+"mouse. The toolbar context menu also enables the toolbar to be hidden. If "
+"the toolbar is hidden and you wish to unhide it, select "
+"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Show Toolbar</"
+"guimenuitem></menuchoice>."
+msgstr ""
+"In der Werkzeugleiste von &kompare; finden Sie die am häufigsten gebrauchten "
+"Aktionen für Abweichungen und das Zusammenführen. Die Ausrichtung, "
+"Textposition, Symbolgröße und die angezeigten Aktionen können in einem "
+"Kontextmenü eingestellt werden, das mit dem Klicken der rechten Maustaste "
+"auf die Werkzeugleiste geöffnet wird. Im Kontextmenu lässt sich die "
+"Werkzeugleiste auch ausblenden. Um sie wieder anzuzeigen, wählen Sie im Menü "
+"<menuchoice><guimenu>Einstellungen</guimenu><guimenuitem>Werkzeugleiste "
+"anzeigen</guimenuitem></menuchoice>."
+
+#. Tag: title
+#: index.docbook:151
+#, no-c-format
+msgid "<title>Source and Destination Folders</title>"
+msgstr "<title>Quell- und Zielordner</title>"
+
+#. Tag: para
+#: index.docbook:152
+#, no-c-format
+msgid ""
+"The source folder and destination folder panes display the folders in which "
+"compared files reside. When many subfolders are included in the comparison, "
+"then selecting a folder will display the first document in that folder where "
+"a difference was found between the source and destination."
+msgstr ""
+"Diese Ansicht zeigt die Ordner mit den darin enthaltenen Dateien. Wenn viele "
+"Unterordner vorhanden sind, dann wird bei der Auswahl eines Ordners das "
+"erste Dokument angezeigt, das eine Abweichung zwischen Quelle und Ziel "
+"aufweist."
+
+#. Tag: title
+#: index.docbook:158
+#, no-c-format
+msgid "<title>Source and Destination Files</title>"
+msgstr "<title>Quell- und Zieldateien</title>"
+
+#. Tag: para
+#: index.docbook:159
+#, no-c-format
+msgid ""
+"The source and destination file pane displays files where a difference was "
+"found for the currently selected source or destination folder. When a folder "
+"has multiple documents containing differences, all documents with a "
+"difference are listed. The selected document is displayed."
+msgstr ""
+"Die Ansicht der Quell- und Zieldateien zeigt alle Dateien, in denen "
+"Abweichungen zwischen dem aktuell gewählten Quell- und Zielordner gefunden "
+"wurden. Wenn ein Ordner mehrere Dokumente mit Abweichungen enthält, werden "
+"alle diese Dokumente angezeigt. Der Inhalt des ausgewählte Dokuments wird in "
+"der Quell- und Zielansicht dargestellt."
+
+#. Tag: title
+#: index.docbook:164
+#, no-c-format
+msgid "<title>Source and Destination Line Changes</title>"
+msgstr "<title>Abweichende Zeilen in der Quell- und Zieldatei</title>"
+
+#. Tag: para
+#: index.docbook:165
+#, no-c-format
+msgid ""
+"The source and destination line changes pane summarizes the differences "
+"found between the current source and destination documents. Selecting a "
+"record within the pane highlights and selects the difference. This is a "
+"useful way to navigate and inspect long documents with many differences."
+msgstr ""
+"In dieser Ansicht wird eine Übersicht der gefundenen Abweichungen zwischen "
+"den Quell und Zieldateien angezeigt. Wird hier ein Eintrag ausgewählt, dann "
+"wird die Abweichung im Hauptfenster hervorgehoben und ausgewählt. Auf diese "
+"Weise kann auch ein langes Dokument mit vielen Abweichungen schnell "
+"durchsucht werden."
+
+#. Tag: title
+#: index.docbook:170
+#, no-c-format
+msgid "Source and Destination View"
+msgstr "Quell- und Zielansicht"
+
+#. Tag: para
+#: index.docbook:171
+#, no-c-format
+msgid ""
+"The source and destination view is the main workspace of &kompare;. The "
+"contents and highlighted differences of the currently selected source and "
+"destination file are displayed here with line numbers."
+msgstr ""
+"Die  Quell- und Zielansicht ist der Hauptarbeitsbereich von &kompare;. Hier "
+"werden der Inhalt und die hervorgehobenen Abweichungen der aktuell "
+"ausgewählten Quell- und Zieldatei mit den Zeilennummern angezeigt."
+
+#. Tag: title
+#: index.docbook:176
+#, no-c-format
+msgid "Text View"
+msgstr "Text-Ansicht"
+
+#. Tag: para
+#: index.docbook:177
+#, no-c-format
+msgid ""
+"The <guilabel>Text View</guilabel> is not displayed by default. It can be "
+"opened by selecting <menuchoice><guimenu>Settings</guimenu><guimenuitem>Show "
+"Text View</guimenuitem></menuchoice>."
+msgstr ""
+"Die <guilabel>Text-Ansicht</guilabel> wird in der Voreinstellung nicht "
+"angezeigt. Sie kann mit <menuchoice><guimenu>Einstellungen</"
+"guimenu><guimenuitem>Text-Ansicht</guimenuitem></menuchoice> geöffnet werden."
+
+#. Tag: title
+#: index.docbook:183
+#, no-c-format
+msgid "<title>Statusbar</title>"
+msgstr "<title>Statusleiste</title>"
+
+#. Tag: para
+#: index.docbook:184
+#, no-c-format
+msgid ""
+"The status bar provides a summary of the current source and destination file "
+"or folder under comparison. The status bar also reports the number of "
+"changes found in the current document and counts the differences that have "
+"been applied. Furthermore, the status bar shows the overall number of "
+"documents containing differences and the current document number selected "
+"from this set. For example, a comparison run over two folders may return "
+"1890 files with differences. The currently selected document is number 18 of "
+"1890."
+msgstr ""
+"In der Statusleiste wird eine Übersicht über die aktuelle Quell- und "
+"Zieldatei oder Ordner angezeigt, dazu auch die Anzahl der Änderungen in dem "
+"aktuellen Dokument und die Anzahl bereits angewendeten Abweichungen. "
+"Zusätzlich wird noch die Anzahl der Dokumente mit Abweichungen und die "
+"Nummer des aktuellen Dokuments angegeben. Zum Beispiel könnte ein Vergleich "
+"über zwei Ordner zu einer Anzahl von 1890 Dateien mit Abweichungen führen. "
+"Das aktuell ausgewählte Dokument ist dann vielleicht Nummer 18 von 1890 "
+"Dateien."
+
+#. Tag: title
+#: index.docbook:193
+#, no-c-format
+msgid "Viewing Differences"
+msgstr "Anzeige von Unterschieden"
+
+#. Tag: title
+#: index.docbook:196
+#, no-c-format
+msgid "Managing Screen Real-Estate"
+msgstr "Bildschirmplatz ausnutzen"
+
+#. Tag: para
+#: index.docbook:197
+#, no-c-format
+msgid ""
+"&kompare; displays the source and destination file under using equal "
+"percentage of the main interface view work area. This view area provides "
+"some features that help optimize use of screen real-estate while viewing "
+"differences, including:"
+msgstr ""
+"&kompare; zeigt die Quell- und Zieldatei in zwei gleichgroßen Fenstern im "
+"Hauptfensters an. Dieser Ansichtsbereich bietet einige Funktionen, den "
+"verfügbaren Bildschirmplatz optimal auszunutzen, darunter:"
+
+#. Tag: term
+#: index.docbook:201
+#, no-c-format
+msgid "Dual Scrollbars"
+msgstr "Zweifache Bildlaufleisten"
+
+#. Tag: para
+#: index.docbook:202
+#, no-c-format
+msgid ""
+"The most obvious feature is that scrollbars are provided both on the right "
+"and bottom edges of the view area. Using the scrollbars it is possible to "
+"move rapidly through the comparison."
+msgstr ""
+"Der Ansichtsbereich hat sowohl am rechten wie auch am unteren Rand "
+"Bildlaufleisten. Damit ist es möglich, die angezeigten Abweichungen in den "
+"Dateien schnell durchzublättern."
+
+#. Tag: term
+#: index.docbook:206
+#, no-c-format
+msgid "Share Grip Handle"
+msgstr "Dokumententrennbalken"
+
+#. Tag: para
+#: index.docbook:207
+#, no-c-format
+msgid ""
+"The vertical space between the source and destination view not only makes it "
+"possible to clearly see the start and end of lines in each of the panes, but "
+"is also a grip handle that allows adjustment of percentage occupied between "
+"the source and destinate views that comprise the view pane. To change pane "
+"size for one of the views, hover the mouse pointer over the grip handle then "
+"hold down the mouse button and drag left or right. Naturally, increasing the "
+"area of one pane will decrease the area available to the opposite pane "
+"within the view panel area."
+msgstr ""
+"Der vertikale Streifen zwischen der Quell- und Zieldatei ermöglicht nicht "
+"nur eine einfache Ansicht von Anfang und Ende jeder Zeile in den beiden "
+"Bereichen, er dient auch als Griff, um den Anteil der Ansicht von Quelle und "
+"Ziel zu verändern. Dazu führen Sie den Mauszeiger über den Trennbalken, "
+"halten den linken Mausknopf gedrückt und ziehen Sie ihn nach links oder "
+"rechts. Das Vergrößern des einen Bereiches führt natürlich zu einer "
+"Verkleinerung des anderen Bereichs innerhalb des Ansichtsfensters."
+
+#. Tag: para
+#: index.docbook:211
+#, no-c-format
+msgid ""
+"A second horizontal handle is available between the navigation panel and the "
+"source and destination view."
+msgstr ""
+"Ein zweiter horizontaler verschieblicher Trennbalken befindet sich zwischen "
+"dem Navigationsbereich und der Quell- und Zielansicht"
+
+#. Tag: term
+#: index.docbook:214
+#, no-c-format
+msgid "Docking"
+msgstr "Andocken"
+
+#. Tag: para
+#: index.docbook:215
+#, no-c-format
+msgid ""
+"The navigation panel can be undocked from the main interface by clicking the "
+"<inlinemediaobject> <imageobject><imagedata fileref=\"undock.png\" format="
+"\"PNG\"/></imageobject></inlinemediaobject> icon located top right of the "
+"panel. This opens it in a window of its own, allowing you to move it across "
+"the screen. You can even hide the navigation panel by clicking the "
+"<inlinemediaobject><imageobject><imagedata fileref=\"dock.png\" format=\"PNG"
+"\"/></imageobject></inlinemediaobject> icon. To display a hidden navigation "
+"bar again, click with the &RMB; into the menubar and select "
+"<guilabel>Navigation</guilabel> from the context menu."
+msgstr ""
+"Der Navigationsbereich kann durch Klicken auf das Symbol <inlinemediaobject> "
+"<imageobject><imagedata fileref=\"undock.png\" format=\"PNG\"/></"
+"imageobject></inlinemediaobject> rechts oben aus dem Hauptfenster gelöst und "
+"als getrenntes Fenster angezeigt werden. Dieses Fenster kann auf dem "
+"Bildschirm beliebig verschoben werden. Durch Klicken auf das Symbol "
+"<inlinemediaobject><imageobject><imagedata fileref=\"dock.png\" format=\"PNG"
+"\"/></imageobject></inlinemediaobject> kann der Navigationsbereich "
+"ausgeblendet werden. Um ihn wieder anzuzeigen, klicken Sie mit der &RMBn; in "
+"der Menüleiste und wählen <guilabel>Navigation</guilabel> aus dem "
+"Kontextmenü."
+
+#. Tag: term
+#: index.docbook:222
+#, no-c-format
+msgid "Statusbar Toggle"
+msgstr "Anzeige der Statusleiste"
+
+#. Tag: para
+#: index.docbook:224
+#, no-c-format
+msgid ""
+"The status bar of the view panel can be toggled on and off by selecting "
+"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Show Statusbar</"
+"guimenuitem></menuchoice>."
+msgstr ""
+"Die Anzeige der Statusleiste können Sie mit "
+"<menuchoice><guimenu>Einstellungen</guimenu><guimenuitem>Statusleiste "
+"anzeigen</guimenuitem></menuchoice> ein- und ausschalten."
+
+#. Tag: title
+#: index.docbook:231
+#, no-c-format
+msgid "Switching Source and Destination Views"
+msgstr "Wechseln zwischen Quell- und Zielansichten"
+
+#. Tag: para
+#: index.docbook:233
+#, no-c-format
+msgid ""
+"Sometimes it can be useful to consider what the file to which differences "
+"where to be applied as the source. For example, when comparing two modified "
+"versions of a file and discovering that the one file has many more "
+"modifications that the other. The file with more changed would be better as "
+"the source, since then fewer differences would need to be applied."
+msgstr ""
+"Manchmal sollte überlegt werden, welche Datei mit den Abweichungen als "
+"Quelle angenommen wird. Wenn zum Beispiel beim Vergleich von zwei veränderte "
+"Versionen einer Datei festgestellt wird, dass die eine Datei viel mehr "
+"Änderungen als die andere enthält, ist die Datei mit mehr Änderungen dann "
+"besser als Quelldatei geeignet, da dann weniger Änderungen angewendet werden "
+"müssen."
+
+#. Tag: para
+#: index.docbook:236
+#, no-c-format
+msgid ""
+"In this case select <menuchoice><guimenu>File</guimenu><guimenuitem>Swap "
+"Source with Destination</guimenuitem></menuchoice>. This will switch the "
+"files displayed in all &kompare; panels."
+msgstr ""
+"In diesem Fall wählen Sie <menuchoice><guimenu>Datei</"
+"guimenu><guimenuitem>Quelle mit Ziel austauschen</guimenuitem></menuchoice>. "
+"Dadurch werden die Dateien in allen Ansichten von &kompare; vertauscht."
+
+#. Tag: title
+#: index.docbook:241
+#, no-c-format
+msgid "Displaying Difference Statistics"
+msgstr "Anzeige der Statistik der Unterschiede"
+
+#. Tag: para
+#: index.docbook:242
+#, no-c-format
+msgid ""
+"For a quick overview of the differences, select <menuchoice><guimenu>File</"
+"guimenu><guimenuitem>Show Statistics</guimenuitem></menuchoice>. This will "
+"display the <guilabel>Diff Statistics</guilabel> dialog. The following "
+"information is provided:"
+msgstr ""
+"Für eine schnelle Übersicht der Unterschiede wählen Sie "
+"<menuchoice><guimenu>Datei</guimenu><guimenuitem>Statistik anzeigen</"
+"guimenuitem></menuchoice>. Damit wird der Dialog <guilabel>Diff-Statistik</"
+"guilabel> geöffnet. Die folgenden Informationen werden darin angezeigt:"
+
+#. Tag: guilabel
+#: index.docbook:246
+#, no-c-format
+msgid "Old file:"
+msgstr "Alte Datei:"
+
+#. Tag: para
+#: index.docbook:247
+#, no-c-format
+msgid ""
+"The file name of what is usually the source file or file that is unmodified."
+msgstr "Der Name der Quelldatei oder der unveränderten Datei."
+
+#. Tag: guilabel
+#: index.docbook:250
+#, no-c-format
+msgid "New file:"
+msgstr "Neue Datei:"
+
+#. Tag: para
+#: index.docbook:251
+#, no-c-format
+msgid ""
+"The file name of what is usually the destination file or file that is "
+"modified and to which differences will be applied."
+msgstr ""
+"Der Name der Zieldatei oder der Datei, die durch das Anwenden der "
+"Abweichungen verändert wird."
+
+#. Tag: guilabel
+#: index.docbook:254
+#, no-c-format
+msgid "Format:"
+msgstr "Format:"
+
+#. Tag: para
+#: index.docbook:255
+#, no-c-format
+msgid ""
+"The diff format used to display the difference (see <xref linkend=\"diff-"
+"format\"/>)."
+msgstr ""
+"Das Diff-Format, das zur Darstellung der Unterschiede verwendet wird (siehe "
+"<xref linkend=\"diff-format\"/>)."
+
+#. Tag: guilabel
+#: index.docbook:258
+#, no-c-format
+msgid "Number of hunks:"
+msgstr "Anzahl Gruppen (hunks):"
+
+#. Tag: para
+#: index.docbook:260
+#, no-c-format
+msgid "The number of hunks found in the difference."
+msgstr "Die Anzahl an Gruppen, die in den Änderungen gefunden wurden."
+
+#. Tag: para
+#: index.docbook:261
+#, no-c-format
+msgid ""
+"A hunk is a <quote>c<emphasis>hunk</emphasis></quote> of lines that have "
+"been marked as different between source and destination and may include "
+"context lines depending on the diff format <guilabel>Lines of Context</"
+"guilabel> value (see <xref linkend=\"diff-format\"/>)."
+msgstr ""
+"Eine Gruppe besteht aus einer Anzahl von Zeilen, die als abweichend in "
+"Quelle und Ziel markiert wurden und zusätzlich Kontextzeilen enthalten "
+"könnten, abhängig vom gewählten Diff-Format."
+
+#. Tag: guilabel
+#: index.docbook:265
+#, no-c-format
+msgid "Number of differences"
+msgstr "Anzahl Abweichungen"
+
+#. Tag: para
+#: index.docbook:266
+#, no-c-format
+msgid ""
+"The actual number of differences found, not hunks. A hunk can contain one or "
+"more differences when the line change range and the context lines of any two "
+"or more changes overlap."
+msgstr ""
+"Die Anzahl der gefundenen Abweichungen, nicht der Gruppen. Eine Gruppe kann "
+"eine oder mehrere Abweichungen enthalten, wenn die Bereiche mit abweichenden "
+"Zeilen und Kontextzeilen sich überlappen."
+
+#. Tag: title
+#: index.docbook:273
+#, no-c-format
+msgid "Navigating the Difference View"
+msgstr "Navigation in der Ansicht der Abweichungen"
+
+#. Tag: para
+#: index.docbook:274
+#, no-c-format
+msgid ""
+"&kompare; enables rapid navigation of differences on a file level and of "
+"multiple difference files when comparing folder trees."
+msgstr ""
+"&kompare; ermöglicht eine schnelle Navigation durch die Abweichungen "
+"einzelner Dateien und auch mehrerer Dateien beim Vergleichen von Ordnern."
+
+#. Tag: title
+#: index.docbook:277
+#, no-c-format
+msgid "Selecting a Difference"
+msgstr "Auswahl einer Abweichung"
+
+#. Tag: para
+#: index.docbook:278
+#, no-c-format
+msgid "A difference can be selected using by:"
+msgstr "Eine Abweichung kann ausgewählt werden durch:"
+
+#. Tag: para
+#: index.docbook:280
+#, no-c-format
+msgid ""
+"clicking a line in the Source and Destination Line Changes pane (top right "
+"of the main window)."
+msgstr ""
+"Anklicken einer Zeile im Fenster mit der Ansicht der Abweichungen an Quell- "
+"und Zielzeilen (oben rechts im Hauptfenster)."
+
+#. Tag: para
+#: index.docbook:281
+#, no-c-format
+msgid "clicking the highlighted difference in the View pane."
+msgstr "Anklicken der hervorgehobenen Abweichungen im Ansichtsbereich."
+
+#. Tag: para
+#: index.docbook:282
+#, no-c-format
+msgid ""
+"traversing the listed differences in a comparison (see <xref linkend="
+"\"traversing-differences\"/>)."
+msgstr ""
+"Durchgehen der aufgelisteten Abweichungen in einem Vergleich (siehe <xref "
+"linkend=\"traversing-differences\"/>)."
+
+#. Tag: para
+#: index.docbook:284
+#, no-c-format
+msgid ""
+"When a difference is selected it is considered to be <quote>in focus</quote> "
+"and is displayed in a brighter color that non-selected differences."
+msgstr ""
+"Wenn eine Abweichung ausgewählt ist, dann besitzt sie den <quote>Fokus</"
+"quote> und wird in einer helleren Farbe als die übrigen Abweichungen "
+"dargestellt."
+
+#. Tag: title
+#: index.docbook:288
+#, no-c-format
+msgid "Traversing Differences"
+msgstr "Durchgehen der Abweichungen"
+
+#. Tag: para
+#: index.docbook:289
+#, no-c-format
+msgid ""
+"When a comparison finds many differences one of the best ways to approach "
+"reviewing them is to traverse the differences in a logical order, usually "
+"from top to bottom."
+msgstr ""
+"Wenn ein Vergleich viele Abweichungen findet, ist die beste Arbeitsweise, "
+"sie in einer logischen Reihenfolge durchzugehen, normalerweise von oben nach "
+"unten."
+
+#. Tag: para
+#: index.docbook:290
+#, no-c-format
+msgid ""
+"By default &kompare; selects the first difference found in a comparison. By "
+"selecting <menuchoice><guimenu>Difference</guimenu><guimenuitem>Next "
+"Difference</guimenuitem></menuchoice> (<keycombo action=\"simul\">&Ctrl;"
+"<keycap>Down</keycap></keycombo>) the difference following the current "
+"selection is brought into focus. To select the difference before the current "
+"difference select <menuchoice><guimenu>Difference</"
+"guimenu><guimenuitem>Previous Difference</guimenuitem></menuchoice> "
+"(<keycombo action=\"simul\">&Ctrl;<keycap>Up</keycap></keycombo>)."
+msgstr ""
+"Als Standard wählt &kompare; die erste gefundene Abweichung aus. Durch "
+"<menuchoice><guimenu>Abweichung</guimenu><guimenuitem>Nächste Abweichung</"
+"guimenuitem></menuchoice> (<keycombo action=\"simul\">&Ctrl;<keycap>Pfeil "
+"runter</keycap></keycombo>) wird die darauf folgende Abweichung ausgewählt. "
+"Um zur vorigen Abweichung zu gehen, benutzen Sie "
+"<menuchoice><guimenu>Abweichung</guimenu><guimenuitem>Vorige Abweichung</"
+"guimenuitem></menuchoice> (<keycombo action=\"simul\">&Ctrl;<keycap>Pfeil "
+"hoch</keycap></keycombo>)."
+
+#. Tag: para
+#: index.docbook:296
+#, no-c-format
+msgid ""
+"In this way it is possible to traverse differences in an orderly manner, "
+"applying and unapply differences upon review."
+msgstr ""
+"Auf diese Weise ist es möglich, die Abweichungen während der Durchsicht  "
+"nacheinander durchzugehen, anzuwenden und eventuell zurückzunehmen."
+
+#. Tag: title
+#: index.docbook:300
+#, no-c-format
+msgid "Switching Between Files"
+msgstr "Wechseln zwischen Dateien"
+
+#. Tag: para
+#: index.docbook:301
+#, no-c-format
+msgid ""
+"When a comparison is performed on folder level, many files may be found with "
+"differences. A complete list of the files compared with difference found is "
+"provided in the <quote>Source and Destination Folders</quote>, and "
+"<quote>Source and Destination Files</quote> panes. However, &kompare; "
+"displays differences between source and destination one comparison at time."
+msgstr ""
+"Bei einem Vergleich von Ordnern werden unter Umständen viele Dateien mit "
+"Abweichungen gefunden. Eine vollständige Liste dieser Dateien und Ordner "
+"wird dann in den Bereichen <quote>Quell- und Zielordner</quote> sowie "
+"<quote>Quell- und Zieldatei</quote> angezeigt. Im Hauptfenster von &kompare; "
+"werden jedoch immer die Abweichungen zwischen einer Quell- und Zieldatei "
+"dargestellt."
+
+#. Tag: para
+#: index.docbook:304
+#, no-c-format
+msgid ""
+"To switch between documents in this scenario the following options are "
+"available:"
+msgstr ""
+"In diesem Fall gibt es folgende Möglichkeiten, zwischen den Dokumenten zu "
+"wechseln:"
+
+#. Tag: para
+#: index.docbook:306
+#, no-c-format
+msgid ""
+"Select the <quote>Source and Destination Folders</quote> pane to display "
+"file differences found in the <quote>Source and Destination Files</quote> "
+"pane, then select a file."
+msgstr ""
+"Klicken Sie in den Bereich <quote>Quell- und Zielordner</quote>, um die "
+"abweichenden <quote>Quell- und Zieldateien</quote> anzuzeigen. Wählen Sie  "
+"dann daraus eine Datei aus."
+
+#. Tag: para
+#: index.docbook:308
+#, no-c-format
+msgid ""
+"Select <menuchoice><guimenu>Difference</guimenu><guimenuitem>Previous File</"
+"guimenuitem></menuchoice> (<keycombo action=\"simul\">&Ctrl;<keycap>PgUp</"
+"keycap></keycombo>) or <menuchoice><guimenu>Difference</"
+"guimenu><guimenuitem>Next File</guimenuitem></menuchoice> (<keycombo action="
+"\"simul\">&Ctrl;<keycap>PgDown</keycap></keycombo>) to display the previous "
+"or next difference file found in the <quote>Source and Destination Files</"
+"quote> pane."
+msgstr ""
+"Wählen Sie <menuchoice><guimenu>Abweichung</guimenu><guimenuitem>Vorige "
+"Datei</guimenuitem></menuchoice> (<keycombo action=\"simul\">&Ctrl;"
+"<keycap>Bild auf</keycap></keycombo>) oder <menuchoice><guimenu>Abweichung</"
+"guimenu><guimenuitem>Nächste Datei</guimenuitem></menuchoice> (<keycombo "
+"action=\"simul\">&Ctrl;<keycap>Bild ab</keycap></keycombo>) um die vorige "
+"oder nächste Datei mit Abweichungen im Bereich <quote>Quell- und Zieldatei</"
+"quote> anzuzeigen."
+
+#. Tag: title
+#: index.docbook:320
+#, no-c-format
+msgid "Merging Differences"
+msgstr "Abweichungen zusammenführen"
+
+#. Tag: para
+#: index.docbook:322
+#, no-c-format
+msgid ""
+"&kompare; makes the task of applying and unapplying differences as simple as "
+"point and click. Multiple apply and unapply operations can be performed on a "
+"difference as all operations are performed in memory and not written to the "
+"files on disk until the save operation is performed."
+msgstr ""
+"&kompare; erleichtert das Arbeit mit Abweichungen erheblich. Abweichungen "
+"können mehrfach angewendet und auch wieder zurückgenommen werden. Alle "
+"Aktionen werden nur im Arbeitsspeicher ausgeführt und erst beim Speichern in "
+"die Dateien geschrieben."
+
+#. Tag: title
+#: index.docbook:326
+#, no-c-format
+msgid "Applying a Difference"
+msgstr "Anwenden einer Abweichung"
+
+#. Tag: para
+#: index.docbook:327
+#, no-c-format
+msgid ""
+"To apply a difference, click the highlighted difference region, then select "
+"<menuchoice><guimenu>Difference</guimenu><guimenuitem>Apply Difference</"
+"guimenuitem></menuchoice> (<keycombo><keycap>Space</keycap></keycombo>)."
+msgstr ""
+"Um eine Abweichung anzuwenden, klicken Sie auf einen Bereich mit "
+"unterschiedlichen Zeilen im Hauptfenster und wählen dann "
+"<menuchoice><guimenu>Abweichung</guimenu><guimenuitem>Abweichung annehmen</"
+"guimenuitem></menuchoice> (<keycombo><keycap>Leertaste</keycap></keycombo>)."
+
+#. Tag: title
+#: index.docbook:332
+#, no-c-format
+msgid "Unapplying a Difference"
+msgstr "Zurücknehmen einer Abweichung"
+
+#. Tag: para
+#: index.docbook:333
+#, no-c-format
+msgid ""
+"To unapply a difference, click the highlighted difference region previously "
+"applied, then select <menuchoice><guimenu>Difference</"
+"guimenu><guimenuitem>Unapply Difference</guimenuitem></menuchoice> "
+"(<keycombo>&Backspace;</keycombo>)."
+msgstr ""
+"Um ein Abweichung wieder zurückzunehmen, klicken Sie auf einen Bereichen mit "
+"Zeilen, für die vorher eine Abweichung angewandt wurde, und wählen dann "
+"<menuchoice><guimenu>Abweichung</guimenu><guimenuitem>Annahme rückgängig</"
+"guimenuitem></menuchoice> (<keycombo>&Backspace;</keycombo>)."
+
+#. Tag: title
+#: index.docbook:338
+#, no-c-format
+msgid "Applying All Differences"
+msgstr "Anwenden aller Abweichungen"
+
+#. Tag: para
+#: index.docbook:339
+#, no-c-format
+msgid ""
+"After reviewing differences between files and finding all acceptable it is "
+"possible apply them all with a single operation by selecting "
+"<menuchoice><guimenu>Difference</guimenu><guimenuitem>Apply All</"
+"guimenuitem></menuchoice> (<keycombo action=\"simul\">&Ctrl;<keycap>A</"
+"keycap></keycombo>)."
+msgstr ""
+"Es ist auch möglich, in einem Zuge alle Abweichungen zwischen den Dateien zu "
+"übernehmen. Wählen Sie dazu im Menü <menuchoice><guimenu>Abweichung</"
+"guimenu><guimenuitem>Alle annehmen</guimenuitem></menuchoice> (<keycombo "
+"action=\"simul\">&Ctrl;<keycap>A</keycap></keycombo>)."
+
+#. Tag: title
+#: index.docbook:344
+#, no-c-format
+msgid "Unapplying All Differences"
+msgstr "Zurücknehmen aller angewendeten Abweichungen"
+
+#. Tag: para
+#: index.docbook:345
+#, no-c-format
+msgid ""
+"To revert all differences that have been applied previously select "
+"<menuchoice><guimenu>Difference</guimenu><guimenuitem>Unapply All</"
+"guimenuitem></menuchoice> (<keycombo action=\"simul\">&Ctrl;<keycap>U</"
+"keycap></keycombo>)."
+msgstr ""
+"Um alle vorher angewendeten Abweichungen zurückzunehmen, wählen Sie im Menü "
+"<menuchoice><guimenu>Abweichung</guimenu><guimenuitem>Alle Änderungen "
+"zurücknehmen</guimenuitem></menuchoice> (<keycombo action=\"simul\">&Ctrl;"
+"<keycap>U</keycap></keycombo>)."
+
+#. Tag: title
+#: index.docbook:350
+#, no-c-format
+msgid "Saving Changes"
+msgstr "Änderungen speichern"
+
+#. Tag: para
+#: index.docbook:351
+#, no-c-format
+msgid ""
+"Once differences have been applied they can be saved by selecting "
+"<menuchoice><guimenu>File</guimenu><guimenuitem>Save</guimenuitem></"
+"menuchoice> or <menuchoice><guimenu>File</guimenu><guimenuitem>Save All</"
+"guimenuitem></menuchoice>."
+msgstr ""
+"Sobald Abweichungen angewendet wurden, können die Änderungen durch Auswahl "
+"von <menuchoice><guimenu>Datei</guimenu><guimenuitem>Speichern</"
+"guimenuitem></menuchoice> oder <menuchoice><guimenu>Datei</"
+"guimenu><guimenuitem>Alles speichern</guimenuitem></menuchoice> gespeichert "
+"werden."
+
+#. Tag: para
+#: index.docbook:354
+#, no-c-format
+msgid "Applied differences are saved to both the source and destination file."
+msgstr ""
+"Angewandte Abweichungen werden sowohl in Quell- als auch Zieldatei "
+"gespeichert."
+
+#. Tag: title
+#: index.docbook:359
+#, no-c-format
+msgid "Working with Diff Files"
+msgstr "Arbeiten mit Diff-Dateien"
+
+#. Tag: para
+#: index.docbook:360
+#, no-c-format
+msgid ""
+"Diff files contain only the changes made between files, or a set of files "
+"within a folder system, and may or may not contain a number of context lines "
+"before and after line changes. The sum of a line change and its context "
+"lines is known a hunk. A diff file therefore may contain multiple hunks from "
+"one or more files. When the context lines of two or more hunks overlap, they "
+"are considered a single hunk. Diff files can be used to:"
+msgstr ""
+"Diff-Dateien enthalten nur die Abweichungen zwischen zwei Dateien oder "
+"mehreren Dateien in einem Ordner und sowie eventuell einige Kontextzeilen "
+"vor und nach den geänderten Zeilen. Zusammenhängende geänderte Zeilen und "
+"die zugehörige Kontextzeilen werden als Gruppe bezeichnet. Eine Diff-Datei "
+"kann daher mehrere Gruppen aus einer oder mehreren Dateien enthalten. Wenn "
+"sich die Kontextzeilen von zwei oder mehr Gruppen überlappen, werden sie als "
+"einzelne Gruppe betrachtet. Diff-Dateien können benutzt werden, um:"
+
+#. Tag: para
+#: index.docbook:364
+#, no-c-format
+msgid "Apply the changes contained in the hunks to an original file."
+msgstr "Änderungen in den Gruppen auf eine Originaldatei anzuwenden."
+
+#. Tag: para
+#: index.docbook:365
+#, no-c-format
+msgid ""
+"Apply the changes contained in the hunks to a file or set of original files "
+"within a folder system."
+msgstr ""
+"Änderungen in den Gruppen auf eine Datei oder mehrere Dateien in einem "
+"Ordner anzuwenden."
+
+#. Tag: para
+#: index.docbook:366
+#, no-c-format
+msgid ""
+"Modified before being applied to an original file or set of original files "
+"within a folder system."
+msgstr ""
+"Nach Bearbeitung die Änderungen auf eine Datei oder mehrere Dateien in einem "
+"Ordner anzuwenden."
+
+#. Tag: title
+#: index.docbook:370
+#, no-c-format
+msgid "Creating a Diff"
+msgstr "Erstellen einer Diff-Datei"
+
+#. Tag: para
+#: index.docbook:371
+#, no-c-format
+msgid ""
+"To create a diff file a comparison must be displayed in &kompare;. Assuming "
+"this is the case, then select <menuchoice><guimenu>File</"
+"guimenu><guimenuitem>Save Diff...</guimenuitem></menuchoice> This will "
+"display the <guilabel>Diff Options</guilabel> dialog (see <xref linkend="
+"\"diff-settings\"/> for more information on diff formats and options). After "
+"configuring these options, click the <guibutton>Save</guibutton> button and "
+"save the diff to a file with the extension <filename class=\"extension\">."
+"diff</filename>."
+msgstr ""
+"Um eine Diff-Datei zu erstellen, muss in &kompare; die Abweichungen von "
+"Dateien angezeigt werden. Dann wählen Sie im Menü  "
+"<menuchoice><guimenu>Datei</guimenu><guimenuitem>Diff speichern...</"
+"guimenuitem></menuchoice> und öffnen damit den Dialog <guilabel>Diff-"
+"Optionen</guilabel> (siehe <xref linkend=\"diff-settings\"/> für mehr "
+"Informationen zum Diff-Format und dessen Optionen). Nachdem alle "
+"Einstellungen ausgewählt sind, drücken Sie auf den Knopf "
+"<guibutton>Speichern</guibutton> und speichern damit den Diff in einer Datei "
+"mit der Endung <filename class=\"extension\">.diff</filename>."
+
+#. Tag: title
+#: index.docbook:377
+#, no-c-format
+msgid "Displaying a Diff"
+msgstr "Anzeigen einer Diff-Datei"
+
+#. Tag: para
+#: index.docbook:378
+#, no-c-format
+msgid ""
+"It is possible to display the contents of a diff file within &kompare; by "
+"opening the diff file from <menuchoice><guimenu>File</"
+"guimenu><guimenuitem>Open Diff...</guimenuitem></menuchoice>."
+msgstr ""
+"Es ist möglich, den Inhalt einer Diff-Datei in &kompare; anzuzeigen, indem "
+"Sie die Diff-Datei mit <menuchoice><guimenu>Datei</guimenu><guimenuitem>Diff "
+"öffnen ...</guimenuitem></menuchoice> auswählen."
+
+#. Tag: para
+#: index.docbook:379
+#, no-c-format
+msgid ""
+"When viewing a diff file the hunks between the source and destination file "
+"are shown, remember that only the hunks are shown, no unmodified lines will "
+"be shown. In some cases a diff file is created with 0 lines of context. In "
+"this case only the changed lines will be displayed."
+msgstr ""
+"Bei der Anzeige einer Diff-Datei werden nur die Gruppen mit geänderten "
+"Zeilen sowie eventuell Kontextzeilen dargestellt, aber keine Zeilen ohne "
+"Abweichungen. Wurde eine Diff-Datei ohne Kontextzeilen erstellt, enthält sie "
+"nur abweichende Zeilen."
+
+#. Tag: para
+#: index.docbook:381
+#, no-c-format
+msgid ""
+"When a diff file contains hunks from multiple files &kompare; displays the "
+"hunks from each file one at a time and you can switch between files as "
+"though they were real files even though this information is only provided by "
+"the diff file contents."
+msgstr ""
+"Wenn eine Diff-Datei Gruppen aus mehreren Dateien enthält, werden jeweils "
+"nur die Gruppen aus einer Datei in &kompare; angezeigt. Sie können nun "
+"zwischen den angezeigten Dateiein wie zwischen richtigen Dateien wechseln, "
+"obwohl diese Information nur in einer einzigen Diff-Datei enthalten ist."
+
+#. Tag: title
+#: index.docbook:386
+#, no-c-format
+msgid "Applying Differences in a Diff File"
+msgstr "Anwenden von Abweichungen in einer Diff-Datei"
+
+#. Tag: para
+#: index.docbook:387
+#, no-c-format
+msgid ""
+"When viewing differences in a diff file it is possible to apply difference "
+"as you would when comparing source and destination files (see <xref linkend="
+"\"merging-differences\"/>)."
+msgstr ""
+"Beim Betrachten von Abweichungen in einer Diff-Datei ist es möglich, die "
+"Abweichungen anzuwenden, genau wie beim Vergleich von Quell- und Zieldateien "
+"(siehe <xref linkend=\"merging-differences\"/>)."
+
+#. Tag: title
+#: index.docbook:391
+#, no-c-format
+msgid "Blending a &URL; with a Diff"
+msgstr "URL mit einem Diff mischen"
+
+#. Tag: para
+#: index.docbook:392
+#, no-c-format
+msgid ""
+"In cases where a diff file is provided it is possible to compare the hunks "
+"in the diff against a file or folder. To do this select "
+"<menuchoice><guimenu>File</guimenu><guimenuitem>Blend URL with Diff...</"
+"guimenuitem></menuchoice>. Then input the <guilabel>File/Folder</guilabel> "
+"and <guilabel>Diff Output</guilabel> paths."
+msgstr ""
+"Auch eine Diff-Datei kann benutzt werden, um die Gruppen mit den "
+"Abweichungen darin mit einer Datei oder einem Ordner zu vergleichen. Dazu "
+"wählen Sie <menuchoice><guimenu>Datei</guimenu><guimenuitem>URL mit Diff "
+"mischen ...</guimenuitem></menuchoice> und geben dann <guilabel>Datei/"
+"Ordner</guilabel> und den Pfad der <guilabel>Ausgabe von diff</guilabel> ein."
+
+#. Tag: para
+#: index.docbook:395
+#, no-c-format
+msgid ""
+"When viewing differences between a source file and a diff file it is "
+"possible to apply difference as you would when comparing source and "
+"destination files (see <xref linkend=\"merging-differences\"/>)."
+msgstr ""
+"Beim Betrachten von Abweichungen zwischen einer Quelldatei und einer Diff-"
+"Datei ist es möglich, die Abweichungen anzuwenden, genau wie beim Vergleich "
+"von Quell- und Zieldateien (siehe <xref linkend=\"merging-differences\"/>)."
+
+#. Tag: title
+#: index.docbook:402
+#, no-c-format
+msgid "Configuring Preferences"
+msgstr "Einstellungen ändern"
+
+#. Tag: para
+#: index.docbook:404
+#, no-c-format
+msgid ""
+"&kompare; enables users to set appearance preferences for difference "
+"formatting in the main interface and set behavioural properties of the diff "
+"program. The <guilabel>Preferences</guilabel> dialog can be accessed by "
+"selecting <menuchoice><guimenu>Settings</guimenu><guisubmenu>Configure "
+"&kompare;...</guisubmenu></menuchoice>."
+msgstr ""
+"In &kompare; kann die Anzeige von Abweichungen im Hauptfenster und die "
+"Arbeitsweise des Programms diff eingestellt werden. Öffnen Sie dazu mit "
+"<menuchoice><guimenu>Einstellungen</guimenu><guisubmenu>&kompare; "
+"einrichten ...</guisubmenu></menuchoice> den Dialog <guilabel>Einstellungen</"
+"guilabel>."
+
+#. Tag: para
+#: index.docbook:408
+#, no-c-format
+msgid ""
+"To configure preferences for appearance select the <guilabel>View</guilabel> "
+"menu item (see <xref linkend=\"view-settings\"/>)."
+msgstr ""
+"Die Einstellungen für das Erscheinungsbild finden Sie auf der Seite "
+"<guilabel>Ansicht</guilabel>, siehe auch <xref linkend=\"view-settings\"/>)"
+
+#. Tag: para
+#: index.docbook:410
+#, no-c-format
+msgid ""
+"To configure preferences for diff program properties select the "
+"<guilabel>Diff</guilabel> menu item (see <xref linkend=\"diff-settings\"/>)."
+msgstr ""
+"Die Einstellungen für das Programm „Diff“ finden Sie auf der Seite "
+"<guilabel>Diff</guilabel>, siehe auch <xref linkend=\"diff-settings\"/>)"
+
+#. Tag: title
+#: index.docbook:413
+#, no-c-format
+msgid "View Settings"
+msgstr "Ansichtseinstellungen"
+
+#. Tag: para
+#: index.docbook:414
+#, no-c-format
+msgid ""
+"The <guimenu>View</guimenu> page in the <guilabel>Preferences</guilabel> "
+"dialog displays the <guilabel>Appearance</guilabel> and <guilabel>Fonts</"
+"guilabel> tabbed forms."
+msgstr ""
+"Die Seite <guilabel>Ansicht</guilabel> des Einstellungsdialogs besteht aus "
+"den Karteikarten <guilabel>Erscheinungsbild</guilabel> und "
+"<guilabel>Schriftarten</guilabel>."
+
+#. Tag: title
+#: index.docbook:418
+#, no-c-format
+msgid "Appearance"
+msgstr "Erscheinungsbild"
+
+#. Tag: para
+#: index.docbook:419
+#, no-c-format
+msgid ""
+"The <guilabel>Appearance</guilabel> form provides controls to manage the "
+"<guilabel>Colors</guilabel> used to denote difference in the main interface, "
+"behaviour of the <guilabel>Mouse Wheel</guilabel> when jogging up and down "
+"and how <guilabel>Tabs to Spaces</guilabel> conversion is managed."
+msgstr ""
+"Hier finden Sie Einstellungen für die <guilabel>Farben</guilabel>, die zur "
+"Anzeige der Abweichungen im Hauptfenster verwendet werden, für die "
+"Schrittweite der Navigation mit dem <guilabel>Mausrad</guilabel> und Sie "
+"können die <guilabel>Anzahl Leerzeichen für Tabulator</guilabel> einstellen. "
+
+#. Tag: screeninfo
+#: index.docbook:423
+#, no-c-format
+msgid "<screeninfo>&kompare; Appearance Settings</screeninfo>"
+msgstr ""
+"<screeninfo>Einstellung des Erscheinungsbildes für &kompare;</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:429
+#, no-c-format
+msgid "<phrase>&kompare; Appearance Settings</phrase>"
+msgstr "<phrase>Einstellung des Erscheinungsbildes für &kompare;</phrase>"
+
+#. Tag: title
+#: index.docbook:434
+#, no-c-format
+msgid "Color Group"
+msgstr "Farben"
+
+#. Tag: para
+#: index.docbook:435
+#, no-c-format
+msgid ""
+"To adjust color preferences used when displaying differences, click the "
+"color button to display the <guilabel>Select Color</guilabel> dialog for the "
+"following states:"
+msgstr ""
+"Um die Farben zur Anzeige von Abweichungen zu ändern, klicken Sie auf das "
+"Farbfeld rechts von den Einträgen. Damit wird der Dialog <guilabel>Farbe "
+"auswählen</guilabel> für zur Einstellung der Farben für folgende Zustände "
+"geöffnet:"
+
+#. Tag: guilabel
+#: index.docbook:437
+#, no-c-format
+msgid "Removed color"
+msgstr "Farbe für Gelöschtes:"
+
+#. Tag: para
+#: index.docbook:438
+#, no-c-format
+msgid ""
+"Lines that have been removed, do not exist, between source and destination."
+msgstr ""
+"Farbe der gelöschten oder nicht vorhandenen Zeilen beim Vergleich zwischen "
+"Quell- und Zieltext."
+
+#. Tag: guilabel
+#: index.docbook:441
+#, no-c-format
+msgid "Changed color"
+msgstr "Farbe für Geändertes:"
+
+#. Tag: para
+#: index.docbook:442
+#, no-c-format
+msgid "Lines that have been changed, modified, between source and destination."
+msgstr ""
+"Farbe der geänderten Zeilen beim Vergleich zwischen Quell- und Zieltext."
+
+#. Tag: guilabel
+#: index.docbook:445
+#, no-c-format
+msgid "Added color"
+msgstr "Farbe für Neues:"
+
+#. Tag: para
+#: index.docbook:446
+#, no-c-format
+msgid "Lines that have been added between source and destination."
+msgstr ""
+"Farbe der hinzugefügten Zeilen beim Vergleich zwischen Quell- und Zieltext."
+
+#. Tag: guilabel
+#: index.docbook:449
+#, no-c-format
+msgid "Applied color"
+msgstr "Farbe für Übernommenes:"
+
+#. Tag: para
+#: index.docbook:450
+#, no-c-format
+msgid ""
+"Any of the above states where the difference has been applied between source "
+"and destination."
+msgstr ""
+"Farbe der Zeilen, deren Abweichung zwischen Quelle- und Zieldatei bereits "
+"übernommen wurde."
+
+#. Tag: title
+#: index.docbook:454
+#, no-c-format
+msgid "Mouse Wheel"
+msgstr "Mausrad"
+
+#. Tag: guilabel
+#: index.docbook:456
+#, no-c-format
+msgid "Number of lines"
+msgstr "Anzahl Zeilen:"
+
+#. Tag: para
+#: index.docbook:457
+#, no-c-format
+msgid ""
+"The number of lines to jog the differences when turning the mouse wheel "
+"forward or backward."
+msgstr ""
+"Schrittweite der Navigation bei der Drehung des Mausrades vorwärts oder "
+"rückwärts."
+
+#. Tag: title
+#: index.docbook:461
+#, no-c-format
+msgid "Tabs to Spaces"
+msgstr "Tabulatoren in Leerzeichen umwandeln"
+
+#. Tag: guilabel
+#: index.docbook:463
+#, no-c-format
+msgid "Number of spaces to convert a tab character to"
+msgstr "Anzahl Leerzeichen für Tabulator:"
+
+#. Tag: para
+#: index.docbook:464
+#, no-c-format
+msgid "Convert each tab character to n space characters."
+msgstr ""
+"Dieser Wert gibt die Anzahl der Leerzeichen an, durch die ein "
+"Tabulatorzeichen ersetzt wird."
+
+#. Tag: title
+#: index.docbook:470
+#, no-c-format
+msgid "Fonts"
+msgstr "Schriftarten"
+
+#. Tag: screeninfo
+#: index.docbook:472
+#, no-c-format
+msgid "<screeninfo>&kompare; Fonts Settings</screeninfo>"
+msgstr "<screeninfo>Einstellung der Schriftarten für &kompare;</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:478
+#, no-c-format
+msgid "<phrase>&kompare; Fonts Settings</phrase>"
+msgstr "<phrase>Einstellung der Schriftarten für &kompare;</phrase>"
+
+#. Tag: para
+#: index.docbook:482
+#, no-c-format
+msgid "Select the font family and size to display when displaying differences."
+msgstr "Auswahl der Schriftart und -größe für die Anzeige der Abweichungen."
+
+#. Tag: title
+#: index.docbook:487
+#, no-c-format
+msgid "Diff Settings"
+msgstr "Diff-Optionen"
+
+#. Tag: para
+#: index.docbook:488
+#, no-c-format
+msgid ""
+"The <guimenu>Diff</guimenu> page in the <guilabel>Preferences</guilabel> "
+"dialog displays the <guilabel>Diff</guilabel>, <guilabel>Format</guilabel>, "
+"<guilabel>Options</guilabel> and <guilabel>Exclude</guilabel> tabbed forms. "
+"These forms can be used to configure the behavioural properties of the Diff "
+"program."
+msgstr ""
+"Auf der Seite <guimenu>Diff</guimenu> im Dialog <guilabel>Einstellungen</"
+"guilabel> gibt es die Karteikarten <guilabel>Diff</guilabel>, "
+"<guilabel>Format</guilabel>, <guilabel>Einstellungen</guilabel> und "
+"<guilabel>Ausschließen</guilabel>. Mit den Optionen auf diesen Karteikarten "
+"kann die Arbeitsweise des Programms Diff gesteuert werden."
+
+#. Tag: title
+#: index.docbook:493
+#, no-c-format
+msgid "<title>Diff</title>"
+msgstr "<title>Diff</title>"
+
+#. Tag: screeninfo
+#: index.docbook:495
+#, no-c-format
+msgid "<screeninfo>&kompare; Diff Settings</screeninfo>"
+msgstr "<screeninfo>Einstellung der Diff-Optionen für &kompare;</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:501
+#, no-c-format
+msgid "<phrase>&kompare; Diff Settings</phrase>"
+msgstr "<phrase>Einstellung der Diff-Optionen für &kompare;</phrase>"
+
+#. Tag: para
+#: index.docbook:505
+#, no-c-format
+msgid ""
+"The command used to run the diff program (default <application>diff</"
+"application>)."
+msgstr ""
+"Der Befehl für das diff-Programm (Voreinstellung <application>diff</"
+"application>)."
+
+#. Tag: title
+#: index.docbook:509
+#, no-c-format
+msgid "Format"
+msgstr "Format"
+
+#. Tag: screeninfo
+#: index.docbook:511
+#, no-c-format
+msgid "<screeninfo>&kompare; Format Settings</screeninfo>"
+msgstr "<screeninfo>Einstellung des Ausgabeformats für &kompare;</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:517
+#, no-c-format
+msgid "<phrase>&kompare; Format Settings</phrase>"
+msgstr "<phrase>Einstellung des Ausgabeformats für &kompare;</phrase>"
+
+#. Tag: para
+#: index.docbook:521
+#, no-c-format
+msgid ""
+"Adjust options for the <guilabel>Output Format</guilabel> and number of "
+"<guilabel>Lines of Context</guilabel>."
+msgstr ""
+"Stellen Sie hier das <guilabel>Ausgabeformat</guilabel> und die Anzahl der "
+"<guilabel>Kontextzeilen</guilabel> ein."
+
+#. Tag: title
+#: index.docbook:523
+#, no-c-format
+msgid "Output Format"
+msgstr "Ausgabeformat"
+
+#. Tag: guilabel
+#: index.docbook:525
+#, no-c-format
+msgid "Context"
+msgstr "Mit Kontextzeilen"
+
+#. Tag: para
+#: index.docbook:527
+#, no-c-format
+msgid ""
+"The context output format adds several lines of context around the lines "
+"that differ."
+msgstr ""
+"Im Kontextformat werden mehrere Zeilen vor und nach den Zeilen mit "
+"Abweichungen hinzugefügt."
+
+#. Tag: guilabel
+#: index.docbook:532
+#, no-c-format
+msgid "Normal"
+msgstr "Normal"
+
+#. Tag: para
+#: index.docbook:534
+#, no-c-format
+msgid ""
+"The normal output format displays differing lines without any surrounding "
+"lines of context."
+msgstr ""
+"Im Normalformat werden keine Zeilen vor und nach den Zeilen mit Abweichungen "
+"ausgegeben."
+
+#. Tag: guilabel
+#: index.docbook:539
+#, no-c-format
+msgid "Unified"
+msgstr "Vereinheitlichtes Kontext-Format (unified)"
+
+#. Tag: para
+#: index.docbook:541
+#, no-c-format
+msgid ""
+"The unified output format is a variation on the context format. It is "
+"considered better than context because the output is more compact than that "
+"of context as it omits redundant context lines."
+msgstr ""
+"Diese Ausgabeformat ist eine Abwandlung des Kontextformats, aber einer "
+"kompakteren Ausgabe, da doppelte Kontextzeilen ausgelassen werden."
+
+#. Tag: title
+#: index.docbook:555
+#, no-c-format
+msgid "Lines of Context"
+msgstr "Kontextzeilen"
+
+#. Tag: guilabel
+#: index.docbook:557
+#, no-c-format
+msgid "Number of context lines"
+msgstr "Anzahl"
+
+#. Tag: para
+#: index.docbook:559
+#, no-c-format
+msgid ""
+"When performing a diff with context or unified output format use this "
+"parameter to control the number of context lines included."
+msgstr ""
+"Für eine Diff-Ausgabe im Kontext- oder Unified-Format wird die hier "
+"angegebene Zahl an Kontextzeilen verwendet."
+
+#. Tag: title
+#: index.docbook:566
+#, no-c-format
+msgid "Options"
+msgstr "Einstellungen"
+
+#. Tag: screeninfo
+#: index.docbook:568
+#, no-c-format
+msgid "<screeninfo>&kompare; Options Settings</screeninfo>"
+msgstr "<screeninfo>Einstellungen für &kompare;</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:574
+#, no-c-format
+msgid "<phrase>&kompare; Options Settings</phrase>"
+msgstr "<phrase>Einstellungen für &kompare;</phrase>"
+
+#. Tag: para
+#: index.docbook:578
+#, no-c-format
+msgid ""
+"The <guilabel>Options</guilabel> tab form allows configuration of the "
+"options supported by the diff program."
+msgstr ""
+"Auf der Karteikarte <guilabel>Optionen</guilabel> können die Einstellungen "
+"für das Programm Diff bearbeitet werden."
+
+#. Tag: title
+#: index.docbook:580
+#, no-c-format
+msgid "General"
+msgstr "Allgemein"
+
+#. Tag: guilabel
+#: index.docbook:582
+#, no-c-format
+msgid "Treat new files as empty"
+msgstr "Neue Dateien als leer betrachten"
+
+#. Tag: para
+#: index.docbook:583
+#, no-c-format
+msgid ""
+"With this option enabled diff will treat a file that only exists in one of "
+"the directories as empty in the other directory. This means that the file is "
+"compared with an empty file and because of this will appear as one big "
+"insertion or deletion."
+msgstr ""
+"Ist diese Einstellung aktiviert, behandelt Diff Dateien, die nur in einem "
+"der Ordner existieren als leere Dateien in dem anderen Ordner. Das bedeutet, "
+"dass die Datei mit einer leeren Datei verglichen wird, also als ein großer "
+"hinzugefügter oder gelöschter Block erscheint."
+
+#. Tag: guilabel
+#: index.docbook:589
+#, no-c-format
+msgid "Look for smaller changes"
+msgstr "Nach kleineren Änderungen suchen"
+
+#. Tag: para
+#: index.docbook:590
+#, no-c-format
+msgid ""
+"Forces diff to display changes in case, punctuation, space, &etc; when "
+"checked."
+msgstr ""
+"Ist diese Einstellung aktiv, werden Unterschiede in Groß-/Kleinschreibung, "
+"in Satz- und Leerzeichen angezeigt."
+
+#. Tag: guilabel
+#: index.docbook:593
+#, no-c-format
+msgid "Optimize for large files"
+msgstr "Für große Dateien optimieren"
+
+#. Tag: para
+#: index.docbook:594
+#, no-c-format
+msgid "Switches diff to process files with high-speed when checked."
+msgstr ""
+"Ist diese Einstellung aktiv, bearbeitet das Programm „Diff“ die Dateien "
+"schneller."
+
+#. Tag: guilabel
+#: index.docbook:597
+#, no-c-format
+msgid "Ignore changes in case"
+msgstr "Änderungen bei Groß-/Kleinschreibung ignorieren"
+
+#. Tag: para
+#: index.docbook:598
+#, no-c-format
+msgid ""
+"Lower and Uppercase character changes are omitted when this option is "
+"checked."
+msgstr ""
+"Mit dieser Einstellung werden Abweichungen bei der Groß- und Kleinschreibung "
+"ignoriert"
+
+#. Tag: guilabel
+#: index.docbook:603
+#, no-c-format
+msgid "Ignore regexp"
+msgstr "Regulären Ausdruck ignorieren"
+
+#. Tag: para
+#: index.docbook:604
+#, no-c-format
+msgid "Ignore lines matching a regular expression."
+msgstr "Ignoriert Zeilen, die auf einen regulären Ausdruck passen."
+
+#. Tag: title
+#: index.docbook:608
+#, no-c-format
+msgid "Whitespace"
+msgstr "Leerzeichen"
+
+#. Tag: guilabel
+#: index.docbook:610
+#, no-c-format
+msgid "Expand tabs to spaces in output"
+msgstr "In der Ausgabe Tabulatoren in Leerzeichen umwandeln"
+
+#. Tag: para
+#: index.docbook:611
+#, no-c-format
+msgid ""
+"When checked diff outputs will converts tab characters to the number of "
+"spaces defined in the <guilabel>Preferences</guilabel> dialog <guimenu>View</"
+"guimenu> menu <guilabel>Tabs to Spaces</guilabel> option."
+msgstr ""
+"Ist diese Einstellung aktiv, werden in der Ausgabe von Diff alle "
+"Tabulatorzeichen durch die Anzahl der Leerzeichen ersetzt, die auf der Seite "
+"<guilabel>Ansicht</guilabel> in  der Einstellung <guilabel>Anzahl "
+"Leerzeichen für Tabulator</guilabel> festgelegt sind."
+
+#. Tag: guilabel
+#: index.docbook:616
+#, no-c-format
+msgid "Ignore added or removed empty lines"
+msgstr "Neue oder entfernte Leerzeilen ignorieren"
+
+#. Tag: para
+#: index.docbook:617
+#, no-c-format
+msgid ""
+"lines of zero length that differ between source and destination are ignored "
+"when this option is checked."
+msgstr ""
+"Ist diese Einstellung aktiv, werden abweichende leere Zeilen in Quell- und "
+"Zieltext ignoriert. "
+
+#. Tag: guilabel
+#: index.docbook:620
+#, no-c-format
+msgid "Ignore changes in the amount of whitespace"
+msgstr "Änderung der Anzahl aufeinanderfolgernder Leerräume ignorieren"
+
+#. Tag: para
+#: index.docbook:621
+#, no-c-format
+msgid ""
+"White space before, after and between lines may change depending on "
+"different editors. When this option is checked such changes are ignored."
+msgstr ""
+"Leerzeichen vor, nach und zwischen Zeilen können in einzelnen Editoren "
+"unterschiedlich behandelt werden. Mit dieser Einstellung werden solche "
+"Abweichungen ignoriert."
+
+#. Tag: guilabel
+#: index.docbook:625
+#, no-c-format
+msgid "Ignore all whitespace"
+msgstr "Leerräume beim Vergleich ignorieren"
+
+#. Tag: para
+#: index.docbook:626
+#, no-c-format
+msgid "when checked white space differences are completely ignored."
+msgstr ""
+"Ist diese Einstellung aktiv, werden alle Abweichungen von Leerräumen "
+"ignoriert."
+
+#. Tag: guilabel
+#: index.docbook:629
+#, no-c-format
+msgid "Ignore changes due to tab expansion"
+msgstr "Änderungen durch Tabulator-Expansion ignorieren"
+
+#. Tag: para
+#: index.docbook:630
+#, no-c-format
+msgid "when checked white space resulting from tab characters is ignored."
+msgstr ""
+"Ist diese Einstellung aktiv, werden alle Abweichungen durch Tabulatorzeichen "
+"ignoriert."
+
+#. Tag: title
+#: index.docbook:636
+#, no-c-format
+msgid "Exclude"
+msgstr "Ausschließen"
+
+#. Tag: para
+#: index.docbook:637
+#, no-c-format
+msgid ""
+"The <guilabel>Exclude</guilabel> form enables use of the filter options "
+"provided by the diff program."
+msgstr ""
+"Auf der Karteikarte <guilabel>Ausschließen</guilabel> können Filter für das "
+"Programm Diff eingestellt werden."
+
+#. Tag: screeninfo
+#: index.docbook:639
+#, no-c-format
+msgid "<screeninfo>&kompare; Exclude Settings</screeninfo>"
+msgstr "<screeninfo>Einstellung für Ausschluss</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:645
+#, no-c-format
+msgid "<phrase>&kompare; Exclude Settings</phrase>"
+msgstr "<phrase>Einstellung für Ausschluss</phrase>"
+
+#. Tag: title
+#: index.docbook:650
+#, no-c-format
+msgid "<title>File Pattern to Exclude</title>"
+msgstr "<title>Dateimuster für Ausschluss</title>"
+
+#. Tag: guilabel
+#: index.docbook:652
+#, no-c-format
+msgid "<guilabel>File Pattern to Exclude</guilabel>"
+msgstr "<guilabel>Dateimuster für Ausschluss</guilabel>"
+
+#. Tag: para
+#: index.docbook:653
+#, no-c-format
+msgid "Exclude files based on wild card filtering"
+msgstr ""
+"Hier können Sie ein Dateimuster für die Namen der Dateien eingeben, die beim "
+"Vergleich nicht berücksichtigt werden sollen."
+
+#. Tag: title
+#: index.docbook:657
+#, no-c-format
+msgid "<title>File with Filenames to Exclude</title>"
+msgstr "<title>Datei mit Liste der auszuschließenden Dateien</title>"
+
+#. Tag: guilabel
+#: index.docbook:659
+#, no-c-format
+msgid "<guilabel>File with Filenames to Exclude</guilabel>"
+msgstr "<guilabel>Datei mit Liste der auszuschließenden Dateien</guilabel>"
+
+#. Tag: para
+#: index.docbook:660
+#, no-c-format
+msgid "Define the filter based on the content of an externally managed file."
+msgstr ""
+"Die Filtereinstellungen werden aus einer externen Datei mit der Namen der "
+"auszuschließenden Dateien gelesen."
+
+#. Tag: title
+#: index.docbook:669
+#, no-c-format
+msgid "Command Reference"
+msgstr "Befehlsreferenz"
+
+#. Tag: title
+#: index.docbook:672
+#, no-c-format
+msgid "The File Menu"
+msgstr "Das Menü Datei"
+
+#. Tag: menuchoice
+#: index.docbook:675
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu><guimenuitem>Open Diff...</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo> </"
+"shortcut> <guimenu>Datei</guimenu><guimenuitem>Diff öffnen...</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:680
+#, no-c-format
+msgid "Displays the <guilabel>Open</guilabel> dialog."
+msgstr "Zeigt den Dialog <guilabel>Öffnen</guilabel> an."
+
+#. Tag: menuchoice
+#: index.docbook:684
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>C</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu><guimenuitem>Compare Files...</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>C</keycap></keycombo> </"
+"shortcut> <guimenu>Datei</guimenu><guimenuitem>Dateien vergleichen ...</"
+"guimenuitem>"
+
+#. Tag: para
+#: index.docbook:689
+#, no-c-format
+msgid "Displays the <guilabel>Compare Files or Folders</guilabel> dialog."
+msgstr "Zeigt den Dialog <guilabel>Dateien oder Ordner vergleichen</guilabel>."
+
+#. Tag: menuchoice
+#: index.docbook:693
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>B</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu><guimenuitem>Blend URL with Diff...</"
+"guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>B</keycap></keycombo> </"
+"shortcut> <guimenu>Datei</guimenu><guimenuitem>URL mit Diff mischen ...</"
+"guimenuitem>"
+
+#. Tag: para
+#: index.docbook:698
+#, no-c-format
+msgid ""
+"Displays the <guilabel>Blend File/Folder with diff Output</guilabel> dialog."
+msgstr ""
+"Zeigt den Dialog <guilabel>Datei/Ordner mit Ausgabe von diff mischen</"
+"guilabel>."
+
+#. Tag: menuchoice
+#: index.docbook:702
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu><guimenuitem>Save</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo></"
+"shortcut> <guimenu>Datei</guimenu> <guimenuitem>Speichern</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:707
+#, no-c-format
+msgid "Writes applied differences to current source and or destination file."
+msgstr ""
+"Speichert die angewendeten Abweichungen in der aktuellen Quell- und "
+"Zieldatei."
+
+#. Tag: menuchoice
+#: index.docbook:711
+#, no-c-format
+msgid "<guimenu>File</guimenu><guimenuitem>Save All</guimenuitem>"
+msgstr "<guimenu>Datei</guimenu> <guimenuitem>Alles speichern</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:712
+#, no-c-format
+msgid "Writes applied differences to all source and or destination files."
+msgstr ""
+"Speichert alle angewendeten Abweichungen in allen Quell- und Zieldateien."
+
+#. Tag: menuchoice
+#: index.docbook:716
+#, no-c-format
+msgid "<guimenu>File</guimenu><guimenuitem>Save Diff...</guimenuitem>"
+msgstr "<guimenu>Datei</guimenu><guimenuitem>Diff speichern ...</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:717
+#, no-c-format
+msgid ""
+"Displays the <guilabel>Diff Options</guilabel> dialog to define diff format "
+"and options."
+msgstr ""
+"Öffnet den Dialog <guilabel>Diff-Optionen</guilabel>, in dem Sie das Diff-"
+"Format und alle Optionen einstellen können."
+
+#. Tag: menuchoice
+#: index.docbook:721
+#, no-c-format
+msgid ""
+"<guimenu>File</guimenu><guimenuitem>Swap Source with Destination</"
+"guimenuitem>"
+msgstr ""
+"<guimenu>Datei</guimenu><guimenuitem>Quelle mit Ziel austauschen</"
+"guimenuitem>"
+
+#. Tag: para
+#: index.docbook:722
+#, no-c-format
+msgid "Changes source and destination."
+msgstr "Vertauscht Quelle und Ziel."
+
+#. Tag: menuchoice
+#: index.docbook:726
+#, no-c-format
+msgid "<guimenu>File</guimenu><guimenuitem>Show Statistics</guimenuitem>"
+msgstr "<guimenu>Datei</guimenu><guimenuitem>Statistik anzeigen</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:728
+#, no-c-format
+msgid "Displays the <guilabel>Display Statistics</guilabel> dialog."
+msgstr "Zeigt den Dialog <guilabel>Diff-Statistik</guilabel> an."
+
+#. Tag: menuchoice
+#: index.docbook:732
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu><guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\"> &Ctrl;<keycap>Q</keycap> </keycombo></"
+"shortcut> <guimenu>Datei</guimenu> <guimenuitem>Beenden</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:737
+#, no-c-format
+msgid "Exits &kompare;."
+msgstr "Beendet &kompare;."
+
+#. Tag: title
+#: index.docbook:743
+#, no-c-format
+msgid "The Difference Menu"
+msgstr "Das Menü Abweichung"
+
+#. Tag: menuchoice
+#: index.docbook:746
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>U</keycap></keycombo> </"
+"shortcut> <guimenu>Difference</guimenu><guimenuitem>Unapply All</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>U</keycap></keycombo> </"
+"shortcut> <guimenu>Abweichung</guimenu><guimenuitem>Alle Änderungen "
+"zurücknehmen</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:751
+#, no-c-format
+msgid ""
+"Unapply all differences previously applied between source and destination."
+msgstr ""
+"Alle vorher angewendeten Abweichungen zwischen Quelle und Ziel werden wieder "
+"zurückgenommen."
+
+#. Tag: menuchoice
+#: index.docbook:755
+#, no-c-format
+msgid ""
+"<shortcut>&Backspace;</shortcut> <guimenu>Difference</"
+"guimenu><guimenuitem>Unapply Difference</guimenuitem>"
+msgstr ""
+"<shortcut>&Backspace;</shortcut> <guimenu>Abweichung</"
+"guimenu><guimenuitem>Annahme rückgängig</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:758
+#, no-c-format
+msgid "Revert a selected difference previously applied."
+msgstr "Die ausgewählte angewendete Abweichung wird wieder zurückgenommen."
+
+#. Tag: menuchoice
+#: index.docbook:762
+#, no-c-format
+msgid ""
+"<shortcut><keycap>Space</keycap></shortcut> <guimenu>Difference</"
+"guimenu><guimenuitem>Apply Difference</guimenuitem>"
+msgstr ""
+"<shortcut><keycap>Leertaste</keycap></shortcut> <guimenu>Abweichung</"
+"guimenu><guimenuitem>Abweichung annehmen</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:765
+#, no-c-format
+msgid "Apply a selected difference."
+msgstr "Die ausgewählte Abweichung zwischen Quelle und Ziel wird angewendet."
+
+#. Tag: menuchoice
+#: index.docbook:769
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>A</keycap></keycombo> </"
+"shortcut> <guimenu>Difference</guimenu><guimenuitem>Apply All</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>A</keycap></keycombo> </"
+"shortcut> <guimenu>Abweichung</guimenu><guimenuitem>Alle annehmen</"
+"guimenuitem>"
+
+#. Tag: para
+#: index.docbook:774
+#, no-c-format
+msgid "Apply all differences between source and destination."
+msgstr "Alle Abweichungen zwischen Quelle und Ziel werden angewendet."
+
+#. Tag: menuchoice
+#: index.docbook:778
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>PgUp</keycap></keycombo> "
+"</shortcut> <guimenu>Difference</guimenu><guimenuitem>Previous File</"
+"guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Bild auf</keycap></"
+"keycombo> </shortcut> <guimenu>Abweichung</guimenu><guimenuitem>Vorige "
+"Datei</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:783
+#, no-c-format
+msgid ""
+"Make the previous difference, in the list of differences, the current file "
+"in the view pane."
+msgstr ""
+"Geht zurück zur vorigen Datei mit Abweichungen und zeigt sie im Hauptfenster "
+"an."
+
+#. Tag: menuchoice
+#: index.docbook:787
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>PgDown</keycap></"
+"keycombo> </shortcut> <guimenu>Difference</guimenu><guimenuitem>Next File</"
+"guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Bild ab</keycap></"
+"keycombo> </shortcut> <guimenu>Abweichung</guimenu><guimenuitem>Nächste "
+"Datei</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:792
+#, no-c-format
+msgid ""
+"Make the next difference, in the list of differences, the current file in "
+"the view pane."
+msgstr ""
+"Geht zur nächsten Datei mit Abweichungen und zeigt sie im Hauptfenster an."
+
+#. Tag: menuchoice
+#: index.docbook:796
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Up</keycap></keycombo> </"
+"shortcut> <guimenu>Difference</guimenu><guimenuitem>Previous Difference</"
+"guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Pfeil hoch</keycap></"
+"keycombo> </shortcut> <guimenu>Abweichung</guimenu><guimenuitem>Vorige "
+"Abweichung</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:801
+#, no-c-format
+msgid "Select the difference above the currently selected difference."
+msgstr "Geht zurück zur vorigen Abweichung,"
+
+#. Tag: menuchoice
+#: index.docbook:805
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Down</keycap></keycombo> "
+"</shortcut> <guimenu>Difference</guimenu><guimenuitem>Next Difference</"
+"guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Pfeil runter</keycap></"
+"keycombo> </shortcut> <guimenu>Abweichung</guimenu><guimenuitem>Nächste "
+"Abweichung</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:810
+#, no-c-format
+msgid "Select the difference below the currently selected difference."
+msgstr "Geht weiter zur nächsten Abweichung."
+
+#. Tag: title
+#: index.docbook:816
+#, no-c-format
+msgid "The Settings Menu"
+msgstr "Das Menü Einstellungen"
+
+#. Tag: menuchoice
+#: index.docbook:819
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Show Toolbar</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guimenuitem>Werkzeugleiste anzeigen</"
+"guimenuitem>"
+
+#. Tag: para
+#: index.docbook:820
+#, no-c-format
+msgid "Toggle the toolbar display ON/OFF."
+msgstr "Blendet die Werkzeugleiste ein bzw. aus."
+
+#. Tag: menuchoice
+#: index.docbook:823
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Show Statusbar</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu><guimenuitem>Statusleiste anzeigen</"
+"guimenuitem>"
+
+#. Tag: para
+#: index.docbook:824
+#, no-c-format
+msgid "Toggle the status bar display ON/OFF."
+msgstr "Schaltet die Anzeige der Statusleiste ein und aus."
+
+#. Tag: menuchoice
+#: index.docbook:827
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Show Text View</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu><guimenuitem>Text-Ansicht</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:828
+#, no-c-format
+msgid "Display the <guilabel>Text View</guilabel> pane."
+msgstr "Zeigt das Fenster <guilabel>Text-Ansicht</guilabel> an."
+
+#. Tag: menuchoice
+#: index.docbook:831
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu><guimenuitem>Configure Shortcuts...</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guimenuitem>Kurzbefehle festlegen ...</"
+"guimenuitem> "
+
+#. Tag: para
+#: index.docbook:832
+#, no-c-format
+msgid "Display the <guilabel>Configure Shortcuts</guilabel> dialog."
+msgstr "Öffnet den Dialog <guilabel>Kurzbefehle festlegen</guilabel>."
+
+#. Tag: menuchoice
+#: index.docbook:835
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu><guimenuitem>Configure Toolbars...</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu><guimenuitem>Werkzeugleisten einrichten ...</"
+"guimenuitem> "
+
+#. Tag: para
+#: index.docbook:836
+#, no-c-format
+msgid "Display the <guilabel>Configure Toolbar</guilabel>."
+msgstr "Öffnet den Dialog <guilabel>Werkzeugleisten einrichten</guilabel>."
+
+#. Tag: menuchoice
+#: index.docbook:839
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu><guimenuitem>Configure &kompare;...</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu><guimenuitem>&kompare; einrichten ...</"
+"guimenuitem>"
+
+#. Tag: para
+#: index.docbook:840
+#, no-c-format
+msgid "Display the &kompare; <guilabel>Preference</guilabel> dialog."
+msgstr "Öffnet den Dialog <guilabel>Einstellungen</guilabel> von &kompare;."
+
+#. Tag: title
+#: index.docbook:846
+#, no-c-format
+msgid "The Help Menu"
+msgstr "Das Menü Hilfe"
+
+#. Tag: sect1
+#: index.docbook:846
+#, no-c-format
+msgid "&help.menu.documentation;"
+msgstr "&help.menu.documentation;"
+
+#. Tag: title
+#: index.docbook:854
+#, no-c-format
+msgid "Credits and License"
+msgstr "Danksagungen und Lizenz"
+
+#. Tag: para
+#: index.docbook:856
+#, no-c-format
+msgid "&kompare;"
+msgstr "&kompare;"
+
+#. Tag: para
+#: index.docbook:859
+#, no-c-format
+msgid ""
+"Program copyright 2001-2004, &John.Firebaugh; &John.Firebaugh.mail; and Otto "
+"Bruggeman <email>otto.bruggeman@home.nl</email>"
+msgstr ""
+"Programm Copyright 2001-2004, &John.Firebaugh; &John.Firebaugh.mail; und "
+"Otto Bruggeman <email>otto.bruggeman@home.nl</email>"
+
+#. Tag: para
+#: index.docbook:864
+#, no-c-format
+msgid ""
+"Documentation Copyright &copy; 2007 Sean Wheller <email>sean@inwords.co.za</"
+"email>"
+msgstr ""
+"Dokumentation Copyright &copy; 2007 Sean Wheller <email>sean@inwords.co.za</"
+"email>"
+
+#. Tag: trans_comment
+#: index.docbook:868
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Übersetzung Ingo Malchow <email>ingomalchow@googlemail.com</email></"
+"para>"
+
+#. Tag: chapter
+#: index.docbook:868
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr "&underFDL; &underGPL;"
+
+#. Tag: title
+#: index.docbook:876
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#. Tag: title
+#: index.docbook:879
+#, no-c-format
+msgid "How to obtain &kompare;"
+msgstr "Woher Sie &kompare; erhalten"
+
+#. Tag: sect1
+#: index.docbook:879
+#, no-c-format
+msgid "&install.intro.documentation;"
+msgstr "&install.intro.documentation;"
+
+#. Tag: title
+#: index.docbook:887
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr "Kompilierung und Installation"
+
+#. Tag: sect1
+#: index.docbook:887
+#, no-c-format
+msgid "&install.compile.documentation;"
+msgstr "&install.compile.documentation;"
+
+#~ msgid "<guilabel>Ed</guilabel>"
+#~ msgstr "<guilabel>Ed-Skript</guilabel>"
+
+#~ msgid ""
+#~ "diff can produce commands that direct the ed text editor to change the "
+#~ "first file into the second file. Historically, this was the only output "
+#~ "mode suitable for automatically editing one file into another. With the "
+#~ "advent of <application>patch</application> this option is hardly ever "
+#~ "used."
+#~ msgstr ""
+#~ "Diff kann als Ausgabe Befehle erzeugen, die der Texteditor ed direkt "
+#~ "verarbeiten kann, um die Abweichungen aus der ersten Datei in die zweite "
+#~ "Datei zu schreiben. Früher war dies das einzige Ausgabeformat, mit dem "
+#~ "die Abweichungen aus einer Datei automatisch in eine andere Datei "
+#~ "geschrieben werden konnten. Da es heute das Programm <application>patch</"
+#~ "application> gibt, wird diese Option nicht mehr benutzt."
+
+#~ msgid "<guilabel>RCS</guilabel>"
+#~ msgstr "<guilabel>RCS</guilabel>"
+
+#~ msgid ""
+#~ "The RCS output format is designed specifically for use by the Revision "
+#~ "Control System (<acronym>RCS</acronym>). Like Ed format, this format is "
+#~ "rarely used since the <application>patch</application> program was "
+#~ "introduced."
+#~ msgstr ""
+#~ "Das RCS-Ausgabeformat ist für die Anwendung mit dem Revision Control "
+#~ "System (<acronym>RCS</acronym>) geeignet. Wie das Ed-Format wird auch "
+#~ "dieses Format nur noch selten gebraucht, seitdem es das Programm "
+#~ "<application>patch</application> gibt."
+
+#~ msgid "&kompare; OptionsSettings"
+#~ msgstr "Einstellungen für &kompare;"
+
+#~ msgid "&kompare; Options Settings"
+#~ msgstr "Einstellungen für &kompare;"
+
+#~ msgid "The <guimenu>File</guimenu> Menu"
+#~ msgstr "Das Menü <guimenu>Datei</guimenu>"
+
+#~ msgid "The <guimenu>Settings</guimenu> Menu"
+#~ msgstr "Das Menü <guimenu>Einstellungen</guimenu>"
+
+#~ msgid "The <guimenu>Help</guimenu> Menu"
+#~ msgstr "Das Menü <guimenu>Hilfe</guimenu>"
+
+#~ msgid ""
+#~ "The main workspace can be undocked from the main interface by clicking "
+#~ "the <guibutton>undock</guibutton> button located top right of the main "
+#~ "workspace panel. This opens the main workspace in a window of its own, "
+#~ "allowing it to be maximized and resized across the screen."
+#~ msgstr ""
+#~ "Der Navigationsbereich kann mit Klicken auf das kleine Kreissymbol rechts "
+#~ "oben aus den Hauptfenster gelöst und dann als eigenständiges Fenster auf "
+#~ "dem Bildschirm verschoben werden."
+
+#~ msgid "Side-by-side"
+#~ msgstr "Nebeneinander"
+
+#~ msgid "<guilabel>Ignore regexp</guilabel>"
+#~ msgstr "<guilabel>Regulären Ausdruck ignorieren</guilabel>"
+
+#~ msgid "&kompare; is a program to view the differences between files."
+#~ msgstr ""
+#~ "&kompare; ist ein Programm zum Darstellen und Anschauen der Unterschiede "
+#~ "zwischen Dateien."
+
+#~ msgid ""
+#~ "The documentation for &kappname; was not finished when &kde; was "
+#~ "installed on this computer."
+#~ msgstr ""
+#~ "Leider war das Handbuch für &kappname; noch nicht fertiggestellt, als "
+#~ "&kde; auf diesem Rechner installiert wurde."
+
+#, fuzzy
+#~ msgid ""
+#~ "If you need help, please check <ulink url=\"http://www.kde.org\">The "
+#~ "&kde; Website</ulink> for updates, or by submitting your question to "
+#~ "<ulink url=\"mailto:kde@kde.org\">The &kde; User Mailing list</ulink>."
+#~ msgstr ""
+#~ "Für Hilfe besuchen Sie doch die <ulink url=\"http://www.kde.org\">KDE "
+#~ "Website</ulink>. Möglicherweise gibt es dort auch bereits eine "
+#~ "aktualisierte Hilfe. Sie können auch eine Frage an <ulink url=\"mailto:"
+#~ "kde-user@kde.org\">die Mailing-Liste für &kde;-Benutzer</ulink> stellen."
+
+#~ msgid "The &kde; Team"
+#~ msgstr "Das &kde;-Team"

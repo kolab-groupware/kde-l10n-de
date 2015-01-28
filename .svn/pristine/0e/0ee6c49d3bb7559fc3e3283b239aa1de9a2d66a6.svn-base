@@ -1,0 +1,79 @@
+<chapter id="first-steps">
+<title
+>Einführung zu &kmplot;</title>
+
+<sect1 id="simple-function-plot">
+	<title
+>Einfache Funktionszeichnung</title>
+	
+	<para
+>Im Navigationsbereich links gibt es den Knopf <guilabel
+>Erstellen</guilabel
+>, mit dem Sie ein Auswahlfeld für neue Funktionen öffnen. Klicken Sie darauf und wählen Sie <guilabel
+>Kartesische Zeichnung</guilabel
+> aus. Das Eingabefeld für die Gleichung dieser Funktion wird aktiviert. Ersetzen Sie den vorgegebenen Text durch <screen
+><userinput
+>y = x^2</userinput
+></screen
+>  und drücken Sie die &Enter;taste. Dann wird die Funktion y = x<superscript
+>2</superscript
+> im Koordinatensystem gezeichnet. Klicken Sie wieder auf <guilabel
+>Erstellen</guilabel
+>, wählen Sie <guilabel
+>Kartesische Zeichnung</guilabel
+> und geben Sie diesmal <screen
+><userinput
+>y = 5sin(x)</userinput
+></screen
+> für eine weiter Funktionszeichnung ein. </para>
+	
+	<para
+>Klicken Sie auf eine der Linien, die Sie gerade gezeichnet haben. Nun erhält das Fadenkreuz die Farbe der Linie und ist damit verbunden. Mit der Maus können Sie das Fadenkreuz entlang der Linie bewegen. In der Statusleiste am unteren Rand des Fensters werden die Koordinaten der aktuellen Position angezeigt. Berührt die Linie die waagerechte Achse, wird auch die Nullstelle in der Statusleiste gezeigt.</para>
+	
+	<para
+>Klicken Sie noch einmal mit der Maustaste und das Fadenkreuz wird wieder von der Linie gelöst.</para>
+</sect1>
+
+<sect1 id="edit-properties">
+	<title
+>Eigenschaften bearbeiten</title>
+	
+	<para
+>Bearbeiten Sie die Funktionen und ändern Sie die Farbe der Graphen.</para>
+	
+	<para
+>Im Bereich <guilabel
+>Funktionen</guilabel
+> werden alle gezeichneten Funktionen aufgeführt. Wählen Sie <guilabel
+>y = x^2</guilabel
+> aus. Jetzt können Sie viele Einstellungen für diese Funktion bearbeiten. Geben Sie der Funktion einen neuen Namen und verschieben Sie sie um 5 Einheiten nach unten. Dazu ändern Sie den Funktionsausdruck in <screen
+><userinput
+>parabel(x) = x^2 - 5</userinput
+></screen
+> und drücken die Eingabetaste. Um die Funktion in einer anderen Farbe zu zeichnen, klicken Sie auf den Knopf <guilabel
+>Farbe</guilabel
+> im Abschnitt <guilabel
+>Erscheinungsbild</guilabel
+> unten im Funktionsbereich und wählen Sie im Dialog eine neue Farbe aus. <note
+> <para
+>Alle Änderungen können Sie mit <menuchoice
+><guimenu
+>Bearbeiten</guimenu
+><guimenuitem
+>Rückgängig</guimenuitem
+></menuchoice
+> wieder zurücknehmen.</para>
+		</note>
+	</para>
+</sect1>
+</chapter>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+sgml-parent-document:("index.docbook" "BOOK" "CHAPTER")
+End:
+-->

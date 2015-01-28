@@ -1,0 +1,1340 @@
+# Thorsten Mürell <thorsten@muerell.de>, 2003.
+# Burkhard Lück <lueck@hube-lueck.de>, 2005, 2006, 2008, 2012, 2013.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2008.
+# Frederik Schwarzer <schwarzer@kde.org>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kmplot_reference\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: 2013-08-27 06:32+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: reference.docbook:2
+#, no-c-format
+msgid "&kmplot; Reference"
+msgstr "&kmplot;-Referenz"
+
+#. Tag: title
+#: reference.docbook:20
+#, no-c-format
+msgid "Function Syntax"
+msgstr "Funktionssyntax"
+
+#. Tag: para
+#: reference.docbook:22
+#, no-c-format
+msgid "Some syntax rules must be complied with:"
+msgstr "Einige Syntaxregeln müssen Sie beachten:"
+
+#. Tag: screen
+#: reference.docbook:24
+#, no-c-format
+msgid "<userinput>name(var1[, var2])=term [;extensions]</userinput>"
+msgstr "<userinput>name(var1[, var2])=term [;erweiterungen]</userinput>"
+
+#. Tag: term
+#: reference.docbook:29
+#, no-c-format
+msgid "name"
+msgstr "name"
+
+#. Tag: para
+#: reference.docbook:32
+#, no-c-format
+msgid ""
+"The function name. If the first character is <quote>r</quote> the parser "
+"assumes that you are using polar coordinates. If the first character is "
+"<quote>x</quote> (for instance <quote>xfunc</quote>) the parser expects a "
+"second function with a leading <quote>y</quote> (here <quote>yfunc</quote>) "
+"to define the function in parametric form."
+msgstr ""
+"Der Funktionsname. Falls der erste Buchstabe ein <quote>r</quote> ist, nimmt "
+"der Funktionsanalysierer an, dass Sie polare Koordinaten benutzen. Falls der "
+"erste Buchstabe ein <quote>x</quote> ist (zum Beispiel <quote>xfunc</quote>) "
+"erwartet die Analyse eine zweite Funktion mit einem führenden <quote>y</"
+"quote> (hier also <quote>yfunc</quote>), um die Funktion in der "
+"parametrischen Form zu definieren."
+
+#. Tag: term
+#: reference.docbook:41
+#, no-c-format
+msgid "var1"
+msgstr "var1"
+
+#. Tag: para
+#: reference.docbook:42
+#, no-c-format
+msgid "The function's variable"
+msgstr "Die Funktionsvariable"
+
+#. Tag: term
+#: reference.docbook:45
+#, no-c-format
+msgid "var2"
+msgstr "var2"
+
+#. Tag: para
+#: reference.docbook:46
+#, no-c-format
+msgid ""
+"The function <quote>group parameter</quote>. It must be separated from the "
+"function's variable by a comma. You can use the group parameter to, for "
+"example, plot a number of graphs from one function. The parameter values can "
+"be selected manually or you can choose to have a slider bar that controls "
+"one parameter. By changing the value of the slider the value parameter will "
+"be changed. The slider can be set to an integer between 0 and 100."
+msgstr ""
+"Der <quote>Scharparameter</quote> der Funktion. Er muss durch ein Komma von "
+"der Funktionsvariable abgetrennt werden. Sie können einen Scharparameter zum "
+"Beispiel dafür benutzen, um mehrere Graphen einer Funktion zu zeichnen. Die "
+"Werte der Parameter können Sie direkt eingeben oder über einen Schieberegler "
+"bestimmen. Bewegen Sie den Schieberegler, so ändert sich der Wert des "
+"Parameters entsprechend. Den Schieberegler können sie auf ganzzahlige Werte "
+"zwischen 0 und 100 einstellen."
+
+#. Tag: term
+#: reference.docbook:51
+#, no-c-format
+msgid "term"
+msgstr "term"
+
+#. Tag: para
+#: reference.docbook:52
+#, no-c-format
+msgid "The expression defining the function."
+msgstr "Der Ausdruck, der die Funktion definiert."
+
+#. Tag: title
+#: reference.docbook:58
+#, no-c-format
+msgid "Predefined Function Names and Constants"
+msgstr "Vordefinierte Funktionsnamen und Konstanten"
+
+#. Tag: para
+#: reference.docbook:60
+#, no-c-format
+msgid ""
+"All the predefined functions and constants that &kmplot; knows can be shown "
+"by selecting <menuchoice><guimenu>Help</guimenu><guimenuitem>Predefined Math "
+"Functions</guimenuitem> </menuchoice>, which displays this page of "
+"&kmplot;'s handbook."
+msgstr ""
+"Alle vordefinierten Funktionen und Konstanten, die &kmplot; kennt, können "
+"Sie mit <menuchoice><guimenu>Hilfe</guimenu> <guimenuitem>Vordefinierte "
+"mathematische Funktionen</guimenuitem></menuchoice> anzeigen, dann wird "
+"diese Seite des Handbuchs von &kmplot; geöffnet."
+
+#. Tag: para
+#: reference.docbook:66
+#, no-c-format
+msgid ""
+"These functions and constants and even all user defined functions can be "
+"used to determine the axes settings as well. See <xref linkend=\"axes-config"
+"\"/>."
+msgstr ""
+"Mit diesen Funktionen und Konstanten und sogar mit allen benutzerdefinierten "
+"Funktionen können Sie die Achseneinstellungen festlegen. Siehe <xref linkend="
+"\"axes-config\"/>."
+
+#. Tag: title
+#: reference.docbook:72
+#, no-c-format
+msgid "Trigonometric Functions"
+msgstr "Trigonometrische Funktionen"
+
+#. Tag: para
+#: reference.docbook:74
+#, no-c-format
+msgid ""
+"By default, the trigonometric functions work in radians. However, this can "
+"be changed via <menuchoice><guimenu>Settings</guimenu><guimenuitem>Configure "
+"&kmplot;</guimenuitem></menuchoice>."
+msgstr ""
+"In der Voreinstellung verwenden die trigonometrischen Funktion die Einheit "
+"Bogenmaß. Dies können Sie mit <menuchoice><guimenu>Einstellungen</guimenu> "
+"<guimenuitem>&kmplot; einrichten ...</guimenuitem></menuchoice> ändern."
+
+#. Tag: term
+#: reference.docbook:81
+#, no-c-format
+msgid "sin(x)"
+msgstr "sin(x)"
+
+#. Tag: term
+#: reference.docbook:82
+#, no-c-format
+msgid "arcsin(x)"
+msgstr "arcsin(x)"
+
+#. Tag: term
+#: reference.docbook:83
+#, no-c-format
+msgid "cosec(x)"
+msgstr "cosec(x)"
+
+#. Tag: term
+#: reference.docbook:84
+#, no-c-format
+msgid "arccosec(x)"
+msgstr "arccosec(x)"
+
+#. Tag: para
+#: reference.docbook:85
+#, no-c-format
+msgid "The sine, inverse sine, cosecant and inverse cosecant respectively."
+msgstr "Die Sinus-, Arkussinus-, Kosecans- und Arkuskosekans-Funktionen. "
+
+#. Tag: term
+#: reference.docbook:89
+#, no-c-format
+msgid "cos(x)"
+msgstr "cos(x)"
+
+#. Tag: term
+#: reference.docbook:90
+#, no-c-format
+msgid "arccos(x)"
+msgstr "arccos(x)"
+
+#. Tag: term
+#: reference.docbook:91
+#, no-c-format
+msgid "sec(x)"
+msgstr "sec(x)"
+
+#. Tag: term
+#: reference.docbook:92
+#, no-c-format
+msgid "arcsec(x)"
+msgstr "arcsec(x)"
+
+#. Tag: para
+#: reference.docbook:93
+#, no-c-format
+msgid "The cosine, inverse cosine, secant and inverse secant respectively."
+msgstr "Die Kosinus-, Arkuskosinus-, Secans- und Arkussekans-Funktionen."
+
+#. Tag: term
+#: reference.docbook:97
+#, no-c-format
+msgid "tan(x)"
+msgstr "tan(x)"
+
+#. Tag: term
+#: reference.docbook:98
+#, no-c-format
+msgid "arctan(x)"
+msgstr "arctan(x)"
+
+#. Tag: term
+#: reference.docbook:99
+#, no-c-format
+msgid "cot(x)"
+msgstr "cot(x)"
+
+#. Tag: term
+#: reference.docbook:100
+#, no-c-format
+msgid "arccot(x)"
+msgstr "arccot(x)"
+
+#. Tag: para
+#: reference.docbook:101
+#, no-c-format
+msgid ""
+"The tangent, inverse tangent, cotangent and inverse cotangent respectively."
+msgstr ""
+"Die Tangens-, Arkustangens-, Kotangens- und Arkuskotangens-Funktionen. "
+
+#. Tag: title
+#: reference.docbook:108
+#, no-c-format
+msgid "Hyperbolic Functions"
+msgstr "Hyperbolische Funktionen"
+
+#. Tag: para
+#: reference.docbook:109
+#, no-c-format
+msgid "The Hyperbolic Functions."
+msgstr "Die hyperbolische Funktionen."
+
+#. Tag: term
+#: reference.docbook:114
+#, no-c-format
+msgid "sinh(x)"
+msgstr "sinh(x)"
+
+#. Tag: term
+#: reference.docbook:115
+#, no-c-format
+msgid "arcsinh(x)"
+msgstr "arcsinh(x)"
+
+#. Tag: term
+#: reference.docbook:116
+#, no-c-format
+msgid "cosech(x)"
+msgstr "cosech(x)"
+
+#. Tag: term
+#: reference.docbook:117
+#, no-c-format
+msgid "arccosech(x)"
+msgstr "arccosech(x)"
+
+#. Tag: para
+#: reference.docbook:118
+#, no-c-format
+msgid ""
+"The hyperbolic sine, inverse sine, cosecant and inverse cosecant "
+"respectively."
+msgstr ""
+"Die hyperbolischen Sinus-, Arkussinus-, Kosecans- und Arkuskosekans-"
+"Funktionen."
+
+#. Tag: term
+#: reference.docbook:122
+#, no-c-format
+msgid "cosh(x)"
+msgstr "cosh(x)"
+
+#. Tag: term
+#: reference.docbook:123
+#, no-c-format
+msgid "arccosh(x)"
+msgstr "arccosh(x)"
+
+#. Tag: term
+#: reference.docbook:124
+#, no-c-format
+msgid "sech(x)"
+msgstr "sech(x)"
+
+#. Tag: term
+#: reference.docbook:125
+#, no-c-format
+msgid "arcsech(x)"
+msgstr "arcsech(x)"
+
+#. Tag: para
+#: reference.docbook:126
+#, no-c-format
+msgid ""
+"The hyperbolic cosine, inverse cosine, secant and inverse secant "
+"respectively."
+msgstr ""
+"Die hyperbolischen Kosinus-, Arkuskosinus-, Secans- und Arkussekans-"
+"Funktionen."
+
+#. Tag: term
+#: reference.docbook:130
+#, no-c-format
+msgid "tanh(x)"
+msgstr "tanh(x)"
+
+#. Tag: term
+#: reference.docbook:131
+#, no-c-format
+msgid "arctanh(x)"
+msgstr "arctanh(x)"
+
+#. Tag: term
+#: reference.docbook:132
+#, no-c-format
+msgid "coth(x)"
+msgstr "coth(x)"
+
+#. Tag: term
+#: reference.docbook:133
+#, no-c-format
+msgid "arccoth(x)"
+msgstr "arccoth(x)"
+
+#. Tag: para
+#: reference.docbook:134
+#, no-c-format
+msgid ""
+"The hyperbolic tangent, inverse tangent, cotangent and inverse cotangent "
+"respectively."
+msgstr ""
+"Die hyperbolischen Tangens-, Arkustangens-, Kotangens- und Arkuskotangens-"
+"Funktionen. "
+
+#. Tag: title
+#: reference.docbook:141
+#, no-c-format
+msgid "Other Functions"
+msgstr "Andere Funktionen"
+
+#. Tag: term
+#: reference.docbook:145
+#, no-c-format
+msgid "sqr(x)"
+msgstr "sqr(x)"
+
+#. Tag: para
+#: reference.docbook:146
+#, no-c-format
+msgid "The square x^2 of x."
+msgstr "Das Quadrat x^2 von x."
+
+#. Tag: term
+#: reference.docbook:150
+#, no-c-format
+msgid "sqrt(x)"
+msgstr "sqrt(x)"
+
+#. Tag: para
+#: reference.docbook:151
+#, no-c-format
+msgid "The square root of x."
+msgstr "Die Quadratwurzel aus x."
+
+#. Tag: term
+#: reference.docbook:155
+#, no-c-format
+msgid "sign(x)"
+msgstr "sign(x)"
+
+#. Tag: para
+#: reference.docbook:156
+#, no-c-format
+msgid ""
+"The sign of x. Returns 1 if x is positive, 0 if x is zero, or &minus;1 if x "
+"is negative."
+msgstr ""
+"Das Vorzeichen von x. Ergibt 1 für positive x, 0 für x=0 und &minus;1 für "
+"negative Werte von x."
+
+#. Tag: term
+#: reference.docbook:160
+#, no-c-format
+msgid "H(x)"
+msgstr "H(x)"
+
+#. Tag: para
+#: reference.docbook:161
+#, no-c-format
+msgid ""
+"The Heaviside Step Function. Returns 1 if x is positive, 0.5 if x is zero, "
+"or 0 if x is negative."
+msgstr ""
+"Die Heaviside-Funktion. Gibt für positive x den Wert 1 zurück, 0,5 für x = 0 "
+"und 0 für negative Werte von x."
+
+#. Tag: term
+#: reference.docbook:165
+#, no-c-format
+msgid "exp(x)"
+msgstr "exp(x)"
+
+#. Tag: para
+#: reference.docbook:166
+#, no-c-format
+msgid "The exponent e^x of x."
+msgstr "Der Potenz e^x von x"
+
+#. Tag: term
+#: reference.docbook:170
+#, no-c-format
+msgid "ln(x)"
+msgstr "ln(x)"
+
+#. Tag: para
+#: reference.docbook:171
+#, no-c-format
+msgid "The natural logarithm (inverse exponent) of x."
+msgstr "Der natürliche Logarithmus von x."
+
+#. Tag: term
+#: reference.docbook:175
+#, no-c-format
+msgid "log(x)"
+msgstr "log(x)"
+
+#. Tag: para
+#: reference.docbook:176
+#, no-c-format
+msgid "The logarithm of x to base 10."
+msgstr "Der Logarithmus von x zur Basis 10."
+
+#. Tag: term
+#: reference.docbook:180
+#, no-c-format
+msgid "abs(x)"
+msgstr "abs(x)"
+
+#. Tag: para
+#: reference.docbook:181
+#, no-c-format
+msgid "The absolute value of x."
+msgstr "Der absolute Wert von x."
+
+#. Tag: term
+#: reference.docbook:185
+#, no-c-format
+msgid "floor(x)"
+msgstr "floor(x)"
+
+#. Tag: para
+#: reference.docbook:186
+#, no-c-format
+msgid "Rounds x to closest integer less than or equal to x."
+msgstr "Rundet x auf den nächsten ganzzahligen Wert kleiner oder gleich x."
+
+#. Tag: term
+#: reference.docbook:190
+#, no-c-format
+msgid "ceil(x)"
+msgstr "ceil(x)"
+
+#. Tag: para
+#: reference.docbook:191
+#, no-c-format
+msgid "Rounds x to the closest integer greater than or equal to x."
+msgstr "Rundet x auf den nächsten ganzzahligen Wert größer oder gleich x."
+
+#. Tag: term
+#: reference.docbook:195
+#, no-c-format
+msgid "round(x)"
+msgstr "round(x)"
+
+#. Tag: para
+#: reference.docbook:196
+#, no-c-format
+msgid "Rounds x to the closest integer."
+msgstr "Rundet x auf den nächsten ganzzahligen Wert."
+
+#. Tag: term
+#: reference.docbook:200
+#, no-c-format
+msgid "gamma(x)"
+msgstr "gamma(x)"
+
+#. Tag: para
+#: reference.docbook:201
+#, no-c-format
+msgid "The gamma function."
+msgstr "Die Gamma-Funktion."
+
+#. Tag: term
+#: reference.docbook:205
+#, no-c-format
+msgid "factorial(x)"
+msgstr "factorial(x)"
+
+#. Tag: para
+#: reference.docbook:206
+#, no-c-format
+msgid "The factorial of x."
+msgstr "Die Fakultät von x."
+
+#. Tag: term
+#: reference.docbook:210
+#, no-c-format
+msgid ""
+"min(x<subscript>1</subscript>,x<subscript>2</subscript>,...,x<subscript>n</"
+"subscript>)"
+msgstr ""
+"min(x<subscript>1</subscript>,x<subscript>2</subscript>,...,x<subscript>n</"
+"subscript>)"
+
+#. Tag: para
+#: reference.docbook:211
+#, no-c-format
+msgid ""
+"Returns the minimum of the set of numbers {x<subscript>1</subscript>,"
+"x<subscript>2</subscript>,...,x<subscript>n</subscript>}."
+msgstr ""
+"Gibt den kleinsten Wert aus der Menge der Zahlen {x<subscript>1</subscript>,"
+"x<subscript>2</subscript>,...,x<subscript>n</subscript>} zurück."
+
+#. Tag: term
+#: reference.docbook:215
+#, no-c-format
+msgid ""
+"max(x<subscript>1</subscript>,x<subscript>2</subscript>,...,x<subscript>n</"
+"subscript>)"
+msgstr ""
+"max(x<subscript>1</subscript>,x<subscript>2</subscript>,...,x<subscript>n</"
+"subscript>)"
+
+#. Tag: para
+#: reference.docbook:216
+#, no-c-format
+msgid ""
+"Returns the maximum of the set of numbers {x<subscript>1</subscript>,"
+"x<subscript>2</subscript>,...,x<subscript>n</subscript>}."
+msgstr ""
+"Gibt den größten Wert aus der Menge der Zahlen {x<subscript>1</subscript>,"
+"x<subscript>2</subscript>,...,x<subscript>n</subscript>} zurück."
+
+#. Tag: term
+#: reference.docbook:220
+#, no-c-format
+msgid ""
+"mod(x<subscript>1</subscript>,x<subscript>2</subscript>,...,x<subscript>n</"
+"subscript>)"
+msgstr ""
+"mod(x<subscript>1</subscript>,x<subscript>2</subscript>,...,x<subscript>n</"
+"subscript>)"
+
+#. Tag: para
+#: reference.docbook:221
+#, no-c-format
+msgid ""
+"Returns the modulus (Euclidean length) of the set of numbers {x<subscript>1</"
+"subscript>,x<subscript>2</subscript>,...,x<subscript>n</subscript>}."
+msgstr ""
+"Gibt den Modulus (Euklidische Länge) aus der Menge der Zahlen "
+"{x<subscript>1</subscript>,x<subscript>2</subscript>,...,x<subscript>n</"
+"subscript>} zurück."
+
+#. Tag: title
+#: reference.docbook:230
+#, no-c-format
+msgid "Predefined Constants"
+msgstr "Vordefinierte Konstanten"
+
+#. Tag: term
+#: reference.docbook:234
+#, no-c-format
+msgid "<term>pi</term>"
+msgstr "<term>pi</term>"
+
+#. Tag: term
+#: reference.docbook:235
+#, no-c-format
+msgid "&pgr;"
+msgstr "&pgr;"
+
+#. Tag: para
+#: reference.docbook:237
+#, no-c-format
+msgid "Constants representing &pgr; (3.14159...)."
+msgstr "Die Konstante &pgr; (3,14159...)."
+
+#. Tag: term
+#: reference.docbook:242
+#, no-c-format
+msgid "<term>e</term>"
+msgstr "<term>e</term>"
+
+#. Tag: para
+#: reference.docbook:244
+#, no-c-format
+msgid "Constant representing Euler's Number e (2.71828...)."
+msgstr "Die Eulersche Zahl e (2,71828...)."
+
+#. Tag: title
+#: reference.docbook:253
+#, no-c-format
+msgid "Extensions"
+msgstr "Erweiterungen"
+
+#. Tag: para
+#: reference.docbook:254
+#, no-c-format
+msgid ""
+"An extension for a function is specified by entering a semicolon, followed "
+"by the extension, after the function definition. The extension can be "
+"entered by using the &DBus; method parser addFunction. None of the "
+"extensions are available for parametric functions but N and D[a,b] work for "
+"polar functions too. For example: <screen>\n"
+"                        <userinput>\n"
+"                                f(x)=x^2; A1\n"
+"                        </userinput>\n"
+"                </screen> will show the graph y=x<superscript>2</"
+"superscript> with its first derivative. Supported extensions are described "
+"below:"
+msgstr ""
+"Eine Erweiterung für eine Funktion wird durch ein Semikolon nach der "
+"Funktionsdefinition angegeben, gefolgt von der Erweiterung. Die Erweiterung "
+"können Sie mit der &DBus;-Methode <quote>Parser addFunction</quote> "
+"eingeben. Auf parametrische Funktionen können Sie keine Erweiterungen "
+"anwenden, aber N und D[a,b] funktionieren auch mit polaren Funktionen. Zum "
+"Beispiel: <screen>\n"
+"      <userinput>\n"
+"        f(x)=x^2; A1\n"
+"      </userinput>\n"
+"    </screen> zeigt den Graph y=x<superscript>2</superscript> mit seiner "
+"ersten Ableitung. Die unterstützten Erweiterungen werden im Folgenden "
+"beschrieben:"
+
+#. Tag: term
+#: reference.docbook:262
+#, no-c-format
+msgid "<term>N</term>"
+msgstr "<term>N</term>"
+
+#. Tag: para
+#: reference.docbook:264
+#, no-c-format
+msgid ""
+"The function will be stored but not be drawn. It can be used like any other "
+"user-defined or predefined function."
+msgstr ""
+"Die Funktion wird gespeichert, aber nicht gezeichnet. Sie kann wie jede "
+"andere benutzerdefinierte oder vordefinierte Funktion verwendet werden."
+
+#. Tag: term
+#: reference.docbook:271
+#, no-c-format
+msgid "<term>A1</term>"
+msgstr "<term>A1</term>"
+
+#. Tag: para
+#: reference.docbook:273
+#, no-c-format
+msgid ""
+"The graph of the derivative of the function will be drawn additionally with "
+"the same color but less line width."
+msgstr ""
+"Der Graph der Ableitung der Funktion wird zusätzlich in derselben Farbe aber "
+"einer geringeren Linienbreite gezeichnet."
+
+#. Tag: term
+#: reference.docbook:280
+#, no-c-format
+msgid "<term>A2</term>"
+msgstr "<term>A2</term>"
+
+#. Tag: para
+#: reference.docbook:282
+#, no-c-format
+msgid ""
+"The graph of the second derivative of the function will be drawn "
+"additionally with the same color but less line width."
+msgstr ""
+"Der Graph der zweiten Ableitung der Funktion wird in derselben Farbe aber "
+"einer geringeren Linienbreite gezeichnet."
+
+#. Tag: term
+#: reference.docbook:289
+#, no-c-format
+msgid "D[a,b]"
+msgstr "D[a,b]"
+
+#. Tag: para
+#: reference.docbook:291
+#, no-c-format
+msgid "Sets the domain for which the function will be displayed."
+msgstr "Bestimmt den Definitionsbereich, für den die Funktion angezeigt wird."
+
+#. Tag: term
+#: reference.docbook:297
+#, no-c-format
+msgid "P[a{,b...}]"
+msgstr "P[a{,b...}]"
+
+#. Tag: para
+#: reference.docbook:299
+#, no-c-format
+msgid ""
+"Give a set of values of a group parameter for which the function should be "
+"displayed. For example: <userinput>f(x,k)=k*x;P[1,2,3]</userinput> will plot "
+"the functions f(x)=x, f(x)=2*x and f(x)=3*x. You can also use functions as "
+"the arguments to the P option."
+msgstr ""
+"Gibt eine Anzahl von Werten für einen Scharparameter an, für den die "
+"Funktion gezeichnet werden soll. Zum Beispiel: <userinput>f(x,k)=k*x;P[1,2,]"
+"</userinput> zeichnet die Funktionen f(x)=x, f(x)=2*x und f(x)=3*x. Sie "
+"können auch Funktionen für die Werte von P benutzen."
+
+#. Tag: para
+#: reference.docbook:309
+#, no-c-format
+msgid ""
+"Please note that you can do all of these operations by editing the items in "
+"the <guilabel>Derivates</guilabel> tab, the <guilabel>Custom plot range</"
+"guilabel> section and the <guilabel>Parameters</guilabel> section in the "
+"<guilabel>Functions</guilabel> sidebar too."
+msgstr ""
+"Diese Einstellungen können Sie auch im Navigationsbereich "
+"<guilabel>Funktionen</guilabel> im Unterfenstern <guilabel>Ableitungen</"
+"guilabel> und in den Abschnitten <guilabel>Benutzerdefinierter "
+"Zeichenbereich</guilabel> und <guilabel>Parameter</guilabel> vornehmen."
+
+#. Tag: title
+#: reference.docbook:315
+#, no-c-format
+msgid "Mathematical Syntax"
+msgstr "Mathematische Syntax"
+
+#. Tag: para
+#: reference.docbook:316
+#, no-c-format
+msgid ""
+"&kmplot; uses a common way of expressing mathematical functions, so you "
+"should have no trouble working it out. The operators &kmplot; understands "
+"are, in order of decreasing precedence:"
+msgstr ""
+"&kmplot; benutzt den üblichen Methode, um mathematische Funktionen zu "
+"schreiben, sie sollten keine Probleme haben, damit zu arbeiten. Die "
+"Rechenoperationen, die &kmplot; versteht, sind in absteigender Reihenfolge "
+"der Auswertung:"
+
+#. Tag: term
+#: reference.docbook:322
+#, no-c-format
+msgid "<term>^</term>"
+msgstr "<term>^</term>"
+
+#. Tag: para
+#: reference.docbook:323
+#, no-c-format
+msgid ""
+"The caret symbol performs exponentiation. &eg;, <userinput>2^4</userinput> "
+"returns 16."
+msgstr ""
+"Dieses Zeichen für das Potenzieren, &eg; <userinput>2^4</userinput> gibt 16 "
+"zurück. "
+
+#. Tag: term
+#: reference.docbook:329
+#, no-c-format
+msgid "<term>*</term>"
+msgstr "<term>*</term>"
+
+#. Tag: term
+#: reference.docbook:330
+#, no-c-format
+msgid "<term>/</term>"
+msgstr "<term>/</term>"
+
+#. Tag: para
+#: reference.docbook:332
+#, no-c-format
+msgid ""
+"The asterisk and slash symbols perform multiplication and division . &eg;, "
+"<userinput>3*4/2</userinput> returns 6."
+msgstr ""
+"Der Stern und der Schrägstrich für die Multiplikation und die Division. &eg; "
+"<userinput>3*4/2</userinput> ergibt 6."
+
+#. Tag: term
+#: reference.docbook:339
+#, no-c-format
+msgid "<term>+</term>"
+msgstr "<term>+</term>"
+
+#. Tag: term
+#: reference.docbook:340
+#, no-c-format
+msgid "&minus;"
+msgstr "&minus;"
+
+#. Tag: para
+#: reference.docbook:341
+#, no-c-format
+msgid ""
+"The plus and minus symbols perform addition and subtraction. &eg;, "
+"<userinput>1+3&minus;2</userinput> returns 2."
+msgstr ""
+"Die Symbole Plus und Minus für die Addition und die Subtraktion, &eg; "
+"<userinput>1+3&minus;2</userinput> ergibt 2."
+
+#. Tag: term
+#: reference.docbook:347
+#, no-c-format
+msgid "&lt;"
+msgstr "&lt;"
+
+#. Tag: term
+#: reference.docbook:348
+#, no-c-format
+msgid "&gt;"
+msgstr "&gt;"
+
+#. Tag: term
+#: reference.docbook:349
+#, no-c-format
+msgid "&le;"
+msgstr "&le;"
+
+#. Tag: term
+#: reference.docbook:350
+#, no-c-format
+msgid "&ge;"
+msgstr "&ge;"
+
+#. Tag: para
+#: reference.docbook:351
+#, no-c-format
+msgid ""
+"Comparison operators. They return 1 if the expression is true, otherwise "
+"they return 0. &eg;, <userinput>1 &le; 2</userinput> returns 1."
+msgstr ""
+"Vergleichsoperatoren. Ist der Ausdruck wahr, wird 1 zurückgegeben, sonst 0. "
+"&eg;, <userinput>1 &le; 2</userinput> ergibt 1."
+
+#. Tag: term
+#: reference.docbook:357
+#, no-c-format
+msgid "&radic;"
+msgstr "&radic;"
+
+#. Tag: para
+#: reference.docbook:358
+#, no-c-format
+msgid ""
+"The square root of a number. &eg;, <userinput>&radic;4</userinput> returns 2."
+msgstr ""
+"Die Quadratwurzel einer Zahl, &eg; <userinput>&radic;4</userinput> gibt 2 "
+"zurück. "
+
+#. Tag: term
+#: reference.docbook:364
+#, no-c-format
+msgid "<term>|x|</term>"
+msgstr "<term>|x|</term>"
+
+#. Tag: para
+#: reference.docbook:365
+#, no-c-format
+msgid ""
+"The absolute value of x. &eg;, <userinput>|&minus;4|</userinput> returns 4."
+msgstr ""
+"Der absolute Wert von x, &eg; <userinput>|&minus;4|</userinput> gibt 4 "
+"zurück. "
+
+#. Tag: term
+#: reference.docbook:371
+#, no-c-format
+msgid "&plusmn;"
+msgstr "&plusmn;"
+
+#. Tag: para
+#: reference.docbook:373
+#, no-c-format
+msgid ""
+"Each plus-minus sign gives two sets of plots: one in which the plus is "
+"taken, and one in which the minus is taken.&eg;. <userinput>y = &plusmn;sqrt"
+"(1&minus;x^2)</userinput> will draw a circle. These, therefore, cannot be "
+"used in constants."
+msgstr ""
+"Mit dem Plus-Minus-Zeichen erstellen Sie zwei Zeichnungen, einmal mit dem "
+"positiven Wert und einmal mit dem negativen Wert. &eg; <userinput>y = "
+"&plusmn;sqrt(1&minus;x^2)</userinput> zeichnet einen Kreis. Dieses Zeichen "
+"kann nicht in Konstanten verwendet werden."
+
+#. Tag: para
+#: reference.docbook:383
+#, no-c-format
+msgid ""
+"Note the precedence, which means that if parentheses are not used, "
+"exponentiation is performed before multiplication/division, which is "
+"performed before addition/subtraction. So <userinput>1+2*4^2</userinput> "
+"returns 33, and not, say 144. To override this, use parentheses. To use the "
+"above example, <userinput>((1+2)*4)^2</userinput> <emphasis>will</emphasis> "
+"return 144."
+msgstr ""
+"Beachten Sie die Reihenfolge der Auswertung, wenn Sie also keine Klammern "
+"benutzen, wird die Potenzierung vor der Multiplikation/Division ausgeführt, "
+"diese wiederum vor der Addition/Subtraktion. So ergibt <userinput>1+2*4^2</"
+"userinput> 33 und nicht &eg; 144. Um die Reihenfolge der Auswertung "
+"festzulegen, benutzen Sie Klammern. Für das vorherige Beispiel ergibt "
+"<userinput>((1+2)*4)^2</userinput> <emphasis>sicher</emphasis> 144."
+
+#. Tag: title
+#: reference.docbook:416
+#, no-c-format
+msgid "Plotting Area"
+msgstr "Zeichenbereich"
+
+#. Tag: para
+#: reference.docbook:417
+#, no-c-format
+msgid ""
+"By default, explicitly given functions are plotted for the whole of the "
+"visible part of the horizontal axis. You can specify an other range in the "
+"edit-dialog for the function. If the plotting area contains the resulting "
+"point it is connected to the last drawn point by a line."
+msgstr ""
+"Als Voreinstellung werden explizit angegebene Funktionen für den gesamten "
+"sichtbaren Bereich der waagerechten Achse gezeichnet, diesen Bereich können "
+"Sie im Navigationsbereich Funktionen ändern. Falls der resultierende Punkt "
+"im Zeichenbereich liegt, wird er zum letzten gezeichneten Punkt mit einer "
+"Linie verbunden."
+
+#. Tag: para
+#: reference.docbook:423
+#, no-c-format
+msgid ""
+"Parametric and polar functions have a default plotting range of 0 to 2&pgr;. "
+"This plotting range can also be changed in the <guilabel>Functions</"
+"guilabel> sidebar."
+msgstr ""
+"Parametrische und polare Funktionen haben einen voreingestellten "
+"Zeichenbereich von 0 bis 2&pgr;. Diesen Bereich können Sie im "
+"Navigationsbereich <guilabel>Funktionen</guilabel> ändern."
+
+#. Tag: title
+#: reference.docbook:430
+#, no-c-format
+msgid "Crosshair Cursor"
+msgstr "Fadenkreuzzeiger"
+
+#. Tag: para
+#: reference.docbook:431
+#, no-c-format
+msgid ""
+"While the mouse cursor is over the plotting area the cursor changes to a "
+"crosshair. The current coordinates can be seen at the intersections with the "
+"coordinate axes and also in the status bar at the bottom of the main window."
+msgstr ""
+"Während sich die Maus über der Zeichenfläche befindet, verändert sich der "
+"Zeiger zu einem Fadenkreuz. Die aktuellen Koordinaten werden an den "
+"Schnittpunkten mit den Koordinatenachsen und in der Statusleiste am unteren "
+"Rand des Hauptfensters angezeigt."
+
+#. Tag: para
+#: reference.docbook:434
+#, no-c-format
+msgid ""
+"You can trace a function's values more precisely by clicking onto or next to "
+"a graph. The selected function is shown in the status bar in the right "
+"column. The crosshair then will be caught and be colored in the same color "
+"as the graph. If the graph has the same color as the background color, the "
+"crosshair will have the inverted color of the background. When moving the "
+"mouse or pressing the keys Left or Right the crosshair will follow the "
+"function and you see the current horizontal and vertical value. If the "
+"crosshair is close to vertical axis, the root-value is shown in the "
+"statusbar. You can switch function with the Up and Down keys. A second click "
+"anywhere in the window or pressing any non-navigating key will leave this "
+"trace mode."
+msgstr ""
+"Sie können die Werte einer Funktion genauer verfolgen, indem Sie auf oder in "
+"die Nähe des Graphen klicken. Die ausgewählte Funktion wird in der rechten "
+"Spalte der Statuszeile angezeigt. Das Fadenkreuz wird mit dem Graphen "
+"verbunden und in der gleichen Farbe dargestellt. Wenn der Graph in der "
+"Hintergrundfarbe gezeichnet wurde, erhält das Fadenkreuz die umgekehrte "
+"Farbe. Wenn Sie jetzt den Mauszeiger bewegen oder die linke oder rechte "
+"Cursor-Taste drücken, bewegt sich das Fadenkreuz auf dem Graphen der "
+"Funktion und der aktuelle waagerechte und senkrechte Wert wird angezeigt. "
+"Wenn das Fadenkreuz die senkrechte Achse berührt, wird die Nullstelle in der "
+"Statusleiste angezeigt. Die Funktionen können Sie mit den Tasten <quote>Auf</"
+"quote> und <quote>Ab</quote> wechseln. Ein zweiter Mausklick irgendwo in das "
+"Zeichenfeld oder der Druck auf eine Taste, die nicht zur Navigation benutzt "
+"wird, beendet diesen Modus. "
+
+#. Tag: para
+#: reference.docbook:437
+#, no-c-format
+msgid ""
+"For more advanced tracing, open up the configuration dialog, and select "
+"<guilabel>Draw tangent and normal when tracing</guilabel> from the "
+"<guilabel>General Settings</guilabel> page. This option will draw the "
+"tangent, normal and oscillating circle of the plot currently being traced."
+msgstr ""
+"Im Einrichtungsdialog finden Sie auf der Seite <guilabel>Allgemeine "
+"Einstellungen</guilabel> noch die zusätzliche Option <guilabel>Tangente und "
+"Normale beim Verfolgen zeichnen</guilabel>. Mit dieser Einstellung wird die "
+"Tangente, die Normale und ein oszillierender Kreis beim Verfolgen angezeigt."
+
+#. Tag: title
+#: reference.docbook:444
+#, no-c-format
+msgid "Coordinate System Configuration"
+msgstr "Einstellung des Koordinatensystem"
+
+#. Tag: para
+#: reference.docbook:445
+#, no-c-format
+msgid ""
+"To open this dialog select <menuchoice><guimenu>View</"
+"guimenu><guimenuitem>Coordinate System...</guimenuitem></menuchoice> from "
+"the menubar."
+msgstr ""
+"Um diesen Einstellungsdialog zu öffnen, wählen Sie in der Menüleiste "
+"<menuchoice><guimenu>Ansicht</guimenu><guimenuitem>Koordinatensystem ...</"
+"guimenuitem></menuchoice>"
+
+#. Tag: screeninfo
+#: reference.docbook:447
+#, no-c-format
+msgid "<screeninfo>Screenshot of the Coordinate System dialog</screeninfo>"
+msgstr "<screeninfo>Bildschirmfoto des Koordinatensystem-Dialogs</screeninfo>"
+
+#. Tag: phrase
+#: reference.docbook:453
+#, no-c-format
+msgid "<phrase>Screenshot of the Coordinate System dialog</phrase>"
+msgstr "<phrase>Bildschirmfoto des Koordinatensystem-Dialogs</phrase>"
+
+#. Tag: title
+#: reference.docbook:459
+#, no-c-format
+msgid "Axes Configuration"
+msgstr "Einstellung der Achsen"
+
+#. Tag: guilabel
+#: reference.docbook:464
+#, no-c-format
+msgid "Horizontal axis Range"
+msgstr "Bereich der waagerechten Achse"
+
+#. Tag: para
+#: reference.docbook:466
+#, no-c-format
+msgid ""
+"Sets the range for the horizontal axis scale. Note that you can use the "
+"predefined functions and constants (see <xref linkend=\"func-predefined\"/>) "
+"as the extremes of the range (&eg;, set <guilabel>Min:</guilabel> to "
+"<userinput>2*pi</userinput>). You can even use functions you have defined to "
+"set the extremes of the axis range. For example, if you have defined a "
+"function <userinput>f(x) = x^2</userinput>, you could set <guilabel>Min:</"
+"guilabel> to <userinput>f(3)</userinput>, which would make the lower end of "
+"the range equal to 9."
+msgstr ""
+"Legt den Wertebereich für die waagerechte Achse fest. Sie können hier auch "
+"vordefinierte Funktionen (siehe <xref linkend=\"func-predefined\"/>) und "
+"Konstanten als maximale und minimale Werte verwenden, &eg; für "
+"<guilabel>Min</guilabel> den Wert <userinput>2*pi</userinput>) eingeben. "
+"Auch selbst definierte Funktionen können als Wertebereich für die "
+"waagerechte Achse benutzt werden. Wenn Sie zum Beispiel die Funktion "
+"<userinput>f(x) = x^2</userinput> definiert haben, können Sie für "
+"<guilabel>Min</guilabel> den Wert <userinput>f(3)</userinput>) eingeben. "
+"Damit wird der untere Wert des Bereichs gleich 9."
+
+#. Tag: guilabel
+#: reference.docbook:479
+#, no-c-format
+msgid "Vertical axis Range"
+msgstr "Bereich der waagerechten Achse"
+
+#. Tag: para
+#: reference.docbook:481
+#, no-c-format
+msgid ""
+"Sets the range for the vertical axis. See <quote>Horizontal axis Range</"
+"quote> above."
+msgstr ""
+"Setzt den Wertebereich der senkrechten Achse. Siehe <quote>Bereich der "
+"waagerechten Achse</quote> oben."
+
+#. Tag: guilabel
+#: reference.docbook:486
+#, no-c-format
+msgid "Horizontal axis Grid Spacing"
+msgstr "Rasterabstand der waagerechten Achse"
+
+#. Tag: para
+#: reference.docbook:488
+#, no-c-format
+msgid ""
+"This controls the spacing between grid lines in the horizontal direction. If "
+"<guilabel>Automatic</guilabel> is selected, then &kmplot; will try to find a "
+"grid line spacing of about two centimeters that is also numerically nice. If "
+"<guilabel>Custom</guilabel> is selected, then you can enter the horizontal "
+"grid spacing. This value will be used regardless of the zoom. For example, "
+"if a value of 0.5 is entered, and the x range is 0 to 8, then 16 grid lines "
+"will be shown."
+msgstr ""
+"Einstellung für den Abstand der senkrechten Rasterlinien. Mit "
+"<guilabel>Automatisch</guilabel> verwendet &kmplot; einen gerundeten Wert "
+"von etwa zwei Zentimetern. Wählen Sie <guilabel>Benutzerdefiniert</"
+"guilabel>, um einen bestimmten Abstand direkt einzugeben. Dieser Wert wird "
+"dann bei jeder beliebigen Vergrößerung der Ansicht benutzt. Wenn Sie zum "
+"Beispiel einen Wert von 0,5 eingeben, werden 16 Rasterlinien bei einem "
+"Wertebereich der X-Achse von 0 bis 8 gezeichnet."
+
+#. Tag: guilabel
+#: reference.docbook:496
+#, no-c-format
+msgid "Vertical axis Grid Spacing"
+msgstr "Rasterabstand der senkrechten Achse"
+
+#. Tag: para
+#: reference.docbook:498
+#, no-c-format
+msgid ""
+"This controls the spacing between grid lines in the vertical direction. See "
+"<quote>Horizontal axis Grid Spacing</quote> above."
+msgstr ""
+"Setzt den Abstand der waagerechten Rasterlinien für die senkrechte Achse. "
+"Siehe <quote>Rasterabstand der waagerechten Achse</quote> oben."
+
+#. Tag: title
+#: reference.docbook:511
+#, no-c-format
+msgid "Constants Configuration"
+msgstr "Einstellung der Konstanten"
+
+#. Tag: para
+#: reference.docbook:512
+#, no-c-format
+msgid ""
+"To open this dialog select <menuchoice><guimenu>Edit</"
+"guimenu><guimenuitem>Constants...</guimenuitem></menuchoice> from the "
+"menubar."
+msgstr ""
+"Um diesen Einstellungsdialog zu öffnen, wählen Sie in der Menüleiste "
+"<menuchoice><guimenu>Bearbeiten</guimenu><guimenuitem>Konstanten ...</"
+"guimenuitem></menuchoice>."
+
+#. Tag: screeninfo
+#: reference.docbook:515
+#, no-c-format
+msgid "<screeninfo>Screenshot of the Constants dialog</screeninfo>"
+msgstr "<screeninfo>Bildschirmfoto des Konstantendialogs</screeninfo>"
+
+#. Tag: phrase
+#: reference.docbook:521
+#, no-c-format
+msgid "<phrase>Screenshot of the Constants dialog</phrase>"
+msgstr "<phrase>Bildschirmfoto des Konstantendialogs</phrase>"
+
+#. Tag: para
+#: reference.docbook:526
+#, no-c-format
+msgid ""
+"Constants can be used as part of an expression anywhere inside of &kmplot;. "
+"Each constant must have a name and a value. Some names are invalid, however, "
+"such as existing function names or existing constants."
+msgstr ""
+"Konstanten können in &kmplot; in jedem beliebigen Ausdruck verwendet werden. "
+"Für jede Konstante muss ein Name und ein Wert definiert werden. Dieser Name "
+"muss eindeutig sein, Sie können die Namen bereits vorhandener Funktionen "
+"oder Konstanten nicht verwenden."
+
+#. Tag: para
+#: reference.docbook:530
+#, no-c-format
+msgid "There are two options that control the scope of a constant:"
+msgstr ""
+"Es gibt zwei Einstellungen für den Gültigkeitsbereich einer Konstanten:"
+
+#. Tag: guilabel
+#: reference.docbook:536
+#, no-c-format
+msgid "Document"
+msgstr "Dokument"
+
+#. Tag: para
+#: reference.docbook:538
+#, no-c-format
+msgid ""
+"If you select the <guilabel>Document</guilabel> checkbox, then the Constant "
+"will be saved along with the current diagram when you save it to file. "
+"However, unless you have also selected the <guilabel>Global</guilabel> "
+"option, the constant will not be available between instances of &kmplot;."
+msgstr ""
+"Wenn Sie als Gültigkeitsbereich <guilabel>Dokument</guilabel> angekreuzt "
+"haben, wird die Konstante mit der aktuellen Zeichnung in einer Datei "
+"gespeichert. Die Konstante ist aber nur dann in verschiedenen Instanzen von "
+"&kmplot; verfügbar, wenn Sie zusätzlich auch den Gültigkeitsbereich "
+"<guilabel>Global</guilabel> auswählen."
+
+#. Tag: guilabel
+#: reference.docbook:543
+#, no-c-format
+msgid "Global"
+msgstr "Global"
+
+#. Tag: para
+#: reference.docbook:545
+#, no-c-format
+msgid ""
+"If you select the <guilabel>Global</guilabel> checkbox, then the Constant's "
+"name and value will be written to &kde; settings (where it can also be used "
+"by &kcalc;). The constant will not be lost when &kmplot; is closed, and will "
+"be available again for use when &kmplot; is started again."
+msgstr ""
+"Mit der Einstellung <guilabel>Global</guilabel> wird der Name und der Wert "
+"der Konstante in den &kde;-Einstellungen gespeichert. Die Konstante kann "
+"dann auch mit &kcalc; genutzt werden. Bein nächsten Start von &kmplot; ist "
+"diese Konstante dann auch wieder in &kmplot; verfügbar."
+
+#~ msgid "Y-axis Range"
+#~ msgstr "Bereich der senkrechten Achse"
+
+#~ msgid "Y-axis Grid Spacing"
+#~ msgstr "Rasterabstand der senkrechten Achse"
+
+#~ msgid ""
+#~ "Please note that you can do all of these operations by using the function "
+#~ "editor dialog too."
+#~ msgstr ""
+#~ "Beachten Sie, dass Sie diese Erweiterungen auch über den Dialog Funktion "
+#~ "bearbeiten eingeben können."
+
+#~ msgid "sqr, sqrt"
+#~ msgstr "sqr, sqrt"
+
+#~ msgid "Return the square and square root of a number, respectively."
+#~ msgstr "Gibt das Quadrat bzw. die Quadratwurzel einer Zahl zurück."
+
+#~ msgid "exp, ln"
+#~ msgstr "exp, ln"
+
+#~ msgid ""
+#~ "Return the exponential and natural logarithm of a number, respectively."
+#~ msgstr ""
+#~ "Gibt den Wert der Exponentialfunktion bzw. den natürlichen Logarithmus "
+#~ "einer Zahl zurück."
+
+#~ msgid "<term>log</term>"
+#~ msgstr "<term>log</term>"
+
+#~ msgid ""
+#~ "Return the sine and inverse sine of a number, respectively. Note that the "
+#~ "argument to sin and the return value of arcsin are in radians."
+#~ msgstr ""
+#~ "Gibt den Sinus bzw. den Arcussinus einer Zahl zurück. Beachten Sie, dass "
+#~ "das Argument zu sin und der Rückgabewert von arcsin im Bogenmaß ist."
+
+#~ msgid ""
+#~ "Return the tangent and inverse tangent of a number, respectively. Also in "
+#~ "radians."
+#~ msgstr ""
+#~ "Gibt den Tangens bzw. den Arcustanges einer Zahl zurück, ebenfalls in "
+#~ "Bogenmaß."
+
+#~ msgid "sinh, arcsinh"
+#~ msgstr "sinh, arcsinh"
+
+#~ msgid "cosh, arccosh"
+#~ msgstr "cosh, arccosh"
+
+#~ msgid "tanh, arctanh"
+#~ msgstr "tanh, arctanh"
+
+#~ msgid "pi, e"
+#~ msgstr "pi, e"
+
+#~ msgid "*, /"
+#~ msgstr "*, /"
+
+#~ msgid "+, -"
+#~ msgstr "+, -"
+
+#~ msgid ""
+#~ "Parametric functions are plotted for parameter values from 0 up to "
+#~ "2&pgr;. You can set the plotting range in the dialog for the function too."
+#~ msgstr ""
+#~ "Parametrische Funktionen werden für Parameterwerte von 0 bis 2&pgr; "
+#~ "gezeichnet. Sie können den Plotbereich auch im Dialog für die Funktion "
+#~ "einstellen."
+
+#~ msgid ""
+#~ "Note that tracing is only possible with explicitly given functions. The "
+#~ "coordinates are always displayed according to a Cartesian system of "
+#~ "coordinates. Neither non-single-point parametric functions nor functions "
+#~ "given in polar coordinates can be traced in this way."
+#~ msgstr ""
+#~ "Beachten Sie, dass dies nur mit explizit angegebenen Funktionen möglich "
+#~ "ist. Die Koordinaten werden immer auf das kartesische Koordinatensystem "
+#~ "bezogen angegeben. Weder parametrische Funktionen, die keine Einzelpunkt-"
+#~ "Funktionen sind, noch Funktionen in Polarkoordinaten können auf diesem "
+#~ "Weg verfolgt werden."

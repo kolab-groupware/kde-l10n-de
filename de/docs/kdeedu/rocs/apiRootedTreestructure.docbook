@@ -1,0 +1,63 @@
+<sect1 id="scripting-backend-rootedtree">
+<title
+>Skript-API für das Backend „Wurzelbaum“</title>
+<sect2>
+<title
+>Datenstruktur „Wurzelbaum“</title>
+<para
+>Im Dialog <guilabel
+>Eigenschaften der Datenstruktur</guilabel
+> finden Sie die die Einstellungen für ein bestimmtes Graphen-Backend. Kreuzen Sie in diesem Dialog <guilabel
+>Alle Zeiger anzeigen</guilabel
+> an, dann werden alle Zeiger zwischen den Baumknoten angezeigt. Ist diese Einstellung nicht aktiv, werden mehrere Zeiger zwischen denselben Knoten zusammengefasst. </para>
+</sect2>
+
+<sect2>
+<title
+>Die Struktur „Wurzelbaum“</title>
+<para
+>Für jedes Datenstrukturobjekt vom Typ „Wurzelbaum“ können folgende Eigenschaften geschrieben oder gelesen werden: </para>
+<programlisting
+>ShowAllPointers     // wenn wahr, werden alle Kanten angezeigt. Setzen Sie dies auf falsch, wenn mehrfache Kanten zusammengefasst werden sollen
+</programlisting>
+<para
+>Mit einem Datenstrukturobjekt vom Typ „Wurzelbaum“ können Sie folgende Member-Funktionen aufrufen: </para>
+<programlisting
+>node add_data(string name);         // fügt einen Knoten mit dem angegebenen Namen zum Baum hinzu
+    void set_root_node(node root);      // setzt root als Wurzel des Baums
+    node root_node();                   // gibt den Wurzelknoten des Baums zurück
+</programlisting>
+</sect2>
+
+<sect2>
+<title
+>Knoten von Wurzelbäumen</title>
+<para
+>Für ein Knotenobjekt vom Typ „Wurzelbaum“ können folgende Eigenschaften geschrieben oder gelesen werden: </para>
+<programlisting
+>int numberOfChilds                  // setzt die Anzahl der zulässigen Unterknoten für diesen Knoten
+    node left_child                     // nur lesbar: gibt den linken Unterknoten zurück
+    node right_child                    // nur lesbar: gibt den rechten Unterknoten zurück
+    node node_parent                    // nur lesbar: gibt den übergeordneten Knoten zurück
+</programlisting>
+<para
+>Mit einem Knotenobjekt vom Typ „Wurzelbaum“ können Sie folgende Member-Funktionen aufrufen: </para>
+<programlisting
+>node add_left_child(node child);    // linken Unterknoten hinzufügen
+    node add_right_child(node child);   // rechten Unterknoten hinzufügen
+    node add_child(node child, int i);  // Unterknoten als n-ten Unterknoten zum Knoten hinzufügen
+    node add_node_parent(node child);   // Übergeordneten Knoten hinzufügen (nur möglich, wenn noch nicht vorhanden)
+    node left_child();                  // rechten Unterknoten zurückgeben
+    node right_child();                 // linken Unterknoten zurückgeben
+    node child_at(int i);               // n-ten Unterknoten des Knotens zurückgeben
+    node node_parent();                 // Übergeordneten Knoten zurückgeben
+</programlisting>
+</sect2>
+
+<sect2>
+<title
+>Kanten von Wurzelbäumen</title>
+<para
+>Für Kanten einer Datenstruktur vom Typ „Wurzelbaum“ sind nur die Eigenschaften der Basis-Datenstruktur verfügbar. </para>
+</sect2>
+</sect1>

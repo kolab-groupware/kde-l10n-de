@@ -1,0 +1,746 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: author
+#: details-database.docbook:5
+#, no-c-format
+msgid "&Tony.Bloomfield; &Tony.Bloomfield.mail;"
+msgstr ""
+
+#. Tag: date
+#: details-database.docbook:7
+#, no-c-format
+msgid "2011-07-21"
+msgstr ""
+
+#. Tag: releaseinfo
+#: details-database.docbook:8
+#, no-c-format
+msgid "<releaseinfo>4.6</releaseinfo>"
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:11
+#, no-c-format
+msgid "Database"
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:14
+#, no-c-format
+msgid "Using relational databases"
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:17
+#, no-c-format
+msgid "Introduction"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:18
+#, no-c-format
+msgid ""
+"As of release 1.0, &kappname; allows you to hold your data in a relational "
+"database. One of the advantages of using this industry-standard format is that "
+"it may allow you to view your data using one of the graphic front ends such as "
+"OpenOffice.org<trademark class=\"copyright\"></trademark> "
+"or LibreOffice<trademark class=\"copyright\"></trademark>"
+", perhaps in some format that &kappname; currently doesn't provide. Also, a "
+"little knowledge of SQL (Structured Query Language, the language used "
+"world-wide to access relational databases) should enable you more easily to "
+"export data to an external program, for example, a budgeting application."
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:31
+#, no-c-format
+msgid "Preparation"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:33
+#, no-c-format
+msgid ""
+"To access the database, &kappname; uses the SQL module supplied by &Qt; "
+"Software as part of their &Qt; programming system. This module supports a "
+"number of different database systems through a collection of drivers. Among the "
+"more popular open-source systems for which drivers are available are "
+"MySQL<trademark class=\"registered\"></trademark>, SQLite (version 3 and "
+"upwards only), and PostgreSQL. The module also supports the 'heavier', more "
+"industrial, systems such as Oracle<trademark class=\"registered\"></trademark> "
+"and IBM DB2<trademark class=\"registered\"></trademark>."
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:42
+#, no-c-format
+msgid ""
+"With the exception of SQLite, these systems use a client/server model, where "
+"the 'client' software sits on 'your' machine, while the server lives on the "
+"same machine as the database itself, which may be elsewhere on a network. Of "
+"course, in the normal scenario for a personal finance application such as "
+"&kappname;, 'your' machine acts as both client and server. Your first task "
+"therefore, having decided which database system you wish to use, is to install "
+"the client, and most probably server, software."
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:52
+#, no-c-format
+msgid ""
+"In addition to the database software itself, you must also install the "
+"corresponding &Qt; driver module. Most distributions will include driver "
+"modules for the more popular databases. Otherwise, check with the <ulink "
+"url=\"http://qt-project.org\">&Qt; software web site</ulink> "
+"and search for 'SQL drivers'"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:61
+#, no-c-format
+msgid ""
+"SQLite does not operate on a client/server model; each database is held in a "
+"regular file, local or remote, accessed using the normal methods supplied by "
+"the underlying operating system. In this case, therefore, there is only one "
+"software package and the driver to install. Also, some of the following "
+"information, particularly that related to administration, may not apply to "
+"SQLite."
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:72
+#, no-c-format
+msgid "Administration"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:74
+#, no-c-format
+msgid ""
+"Looking after databases is a little more complex than dealing with regular "
+"files. Each system has different methods for performing those necessary "
+"administrative tasks such as creating databases, assigning permissions to "
+"various users, producing backups, &etc; Describing these tasks is outside the "
+"scope of this manual, but all of the supported products provide comprehensive "
+"reference documentation, and a quick search of the web will point you at many "
+"tutorials on the subject."
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:85
+#, no-c-format
+msgid "Creating the database"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:87
+#, no-c-format
+msgid ""
+"Code has been included to create an initial database to hold your data if one "
+"doesn't exist. However, it is strongly recommended that you pre-create a "
+"database, because most of the products provide a number of options which may be "
+"relevant. One that may be of particular importance to some would be the "
+"designation of the character set (&eg;, UTF-8) to be used for text fields."
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:96
+#, no-c-format
+msgid ""
+"At this time, you will also need to specify permissions for various users to "
+"perform different operations on the database. In most systems, the user who "
+"creates the database will be automatically assigned all permissions, but this "
+"is an area in which the documentation should be consulted."
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:103
+#, no-c-format
+msgid ""
+"For your first use of the database, and occasionally at other times when the "
+"database layout changes, you will need permission (also called privileges) to "
+"create and alter tables and views (see next paragraph). There may be different "
+"names for the permission/privilege in different systems, but something like "
+"CREATE and ALTER should be commonplace. For normal running, you will need to be "
+"able to read and write records; these are normally defined in SQL as SELECT, "
+"INSERT, UPDATE, and DELETE permissions."
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:115
+#, no-c-format
+msgid "Creating Tables"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:117
+#, no-c-format
+msgid ""
+"On your first use, &kappname; will attempt to create the necessary table "
+"structures. In order to achieve the maximum compatibility between various "
+"database types, only a subset of common data types are used. There may "
+"nevertheless be situations where a particular type is not supported, and in "
+"this case, provision has been made to generate the SQL code necessary to create "
+"tables. This code can then be modified as required and used to create the "
+"tables outside of &kappname;. Should you find yourself in this situation, help "
+"can usually be obtained from &devlist;. See <link "
+"linkend=\"details.database.generatesql\">Manual Database Creation</link> "
+"for more information."
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:132
+#, no-c-format
+msgid "Creating a Database"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:134
+#, no-c-format
+msgid ""
+"Using &kappname;, open or import an existing data file, or create a new one. "
+"Then select <guimenuitem>Save as Database</guimenuitem> from the <guimenu>"
+"File</guimenu> menu. This will present the following dialog:"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:148
+#, no-c-format
+msgid ""
+"Complete the fields appropriate to the database type you have selected (as "
+"usual, mandatory fields will be highlighted) and click <guibutton>OK</guibutton> "
+"to create the database."
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:155
+#, no-c-format
+msgid "Database Type"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:157
+#, no-c-format
+msgid ""
+"This box lists all &Qt; SQL drivers installed on your system. Select the driver "
+"for your database type. If the one you want is not in the list, you need to "
+"install the appropriate driver. See your distribution documentation, or visit "
+"the <ulink url=\"http://qt-project.org/\" type=\"\">"
+"&Qt; software web site</ulink> and search for 'SQL drivers'."
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:167
+#, no-c-format
+msgid "File (SQLite only)"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:168
+#, no-c-format
+msgid ""
+"SQLite has one database per file so enter the filename in which you wish to "
+"create the database. To browse the file system, click the icon to the right of "
+"the filename. For SQLite databases, the <guilabel>Host name</guilabel>"
+", <guilabel>Username</guilabel>, and <guilabel>Password</guilabel> "
+"fields are not relevant. The SQLite file must have the appropriate read/write "
+"permissions set by the underlying file system to enable the appropriate access "
+"for the currently logged-in user."
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:180
+#, no-c-format
+msgid "Database name (others)"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:181
+#, no-c-format
+msgid ""
+"The default database name is KMyMoney, but you may choose some other name if "
+"you like. For some database types, &kappname; may not be able to create the "
+"database, so it must be pre-created using the appropriate administrative "
+"procedure. However, &kappname; will usually be able to create all table "
+"structures where necessary. If not, you can create them yourself. See <link "
+"linkend=\"details.database.generatesql\">Manual Database Creation</link> "
+"for more information."
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:192
+#, no-c-format
+msgid "Host name"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:193
+#, no-c-format
+msgid ""
+"For the average user, the default name of <quote>localhost</quote>"
+", being the machine you are currently using, is correct. For networked "
+"databases, enter the connected host name."
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:202
+#, no-c-format
+msgid "User name and password"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:203
+#, no-c-format
+msgid ""
+"Check the permissions set up on your database, or contact the database "
+"administrator, for the correct values to use here. The user name must be "
+"capable of selecting, inserting, updating, and deleting records. If the user "
+"name is the same as your login name, a password is not normally required."
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:213
+#, no-c-format
+msgid "Accessing your data"
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:216
+#, no-c-format
+msgid "Table design"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:218
+#, no-c-format
+msgid ""
+"To access your data in &kappname;, use the <guimenuitem>"
+"Open Database</guimenuitem> entry in the <guimenu>File</guimenu> "
+"menu. This will open a dialog similar to the above."
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:225
+#, no-c-format
+msgid ""
+"If you created your database by first opening a file, and then doing "
+"<guimenuitem>Save as Database</guimenuitem>, as described above, then any "
+"subsequent changes to your data are saved only in the database, not in the "
+"file. This means that you can use the file as a backup or snapshot of your data "
+"at a particular time. To make a new backup like this, open your database, do "
+"<menuchoice><guimenu>File</guimenu><guimenuitem>Save As...</guimenuitem>"
+"</menuchoice>, giving an appropriate file name. Remember to re-open your "
+"database, so &kappname; does not continue to use the file."
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:237
+#, no-c-format
+msgid ""
+"To access your data in other formats, you will need to know a little about how "
+"it is held in relational databases. By far the easiest way to get a feel for "
+"this is to open the database in a front-end such as OpenOffice.org. This "
+"provides a list of the various tables which make up the database, and enables "
+"you to see the layout of each of them."
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:245
+#, no-c-format
+msgid ""
+"To extract data, &eg;, into a spreadsheet or external file, it is almost "
+"invariably necessary to select linked data from more than one table. This is "
+"done by 'joining' the tables, using a field which is common to each. You can "
+"find a lot more information about how this is done from the online database "
+"tutorials mentioned above. The following table lists the fields used to define "
+"these inter-table relationships."
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:259
+#, no-c-format
+msgid "Relationship"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:262
+#, no-c-format
+msgid "Match"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:265
+#, no-c-format
+msgid "With"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:272
+#, no-c-format
+msgid "Institutions and Accounts"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:275
+#, no-c-format
+msgid "kmmInstitutions.id"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:278
+#, no-c-format
+msgid "kmmAccounts.institutionId"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:283
+#, no-c-format
+msgid "Accounts Parent/Child"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:286 details-database.docbook:308
+#, no-c-format
+msgid "kmmAccounts.id"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:289
+#, no-c-format
+msgid "kmmAccounts.parentId"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:294
+#, no-c-format
+msgid "Transactions and Splits (see Note 1)"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:297 details-database.docbook:333
+#, no-c-format
+msgid "kmmTransactions.id"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:300
+#, no-c-format
+msgid "kmmSplits.transactionId"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:305
+#, no-c-format
+msgid "Accounts and Splits"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:311
+#, no-c-format
+msgid "kmmSplits.accountId"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:316
+#, no-c-format
+msgid "Payees and Splits"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:319
+#, no-c-format
+msgid "kmmPayees.id"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:322
+#, no-c-format
+msgid "kmmSplits.payeeId"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:327
+#, no-c-format
+msgid "Schedules and Transactions"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:330
+#, no-c-format
+msgid "kmmSchedules.id"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:338
+#, no-c-format
+msgid "Transactions and Currencies"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:341
+#, no-c-format
+msgid "kmmTransactions.currencyId"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:344 details-database.docbook:374
+#, no-c-format
+msgid "kmmCurrencies.ISOCode"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:349
+#, no-c-format
+msgid "Accounts and Securities (see Note 2)"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:352
+#, no-c-format
+msgid "kmmAccounts.currencyId"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:355 details-database.docbook:363
+#, no-c-format
+msgid "kmmSecurities.id"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:360
+#, no-c-format
+msgid "Securities and Prices"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:366 details-database.docbook:377
+#, no-c-format
+msgid "kmmPrices.fromId or kmmPrices.toId"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:371
+#, no-c-format
+msgid "Currency Rates"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:384
+#, no-c-format
+msgid "Notes:"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:388
+#, no-c-format
+msgid ""
+"1 &#x2013; txType = &#x201C;N&#x201D; for normal transactions, "
+"&#x201C;S&#x201D; for scheduled transactions"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:393
+#, no-c-format
+msgid "2 &#x2013; if kmmAccounts.isStockAccount = &#x201C;Y&#x201D;"
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:399
+#, no-c-format
+msgid "Field formats"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:401
+#, no-c-format
+msgid ""
+"Several of the data fields are held in an internal format which may not be "
+"immediately useful to external programs. In these cases, the information has "
+"been duplicated in both internal and external formats."
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:407
+#, no-c-format
+msgid ""
+"Monetary amounts and share values are shown both in numerator/denominator "
+"format, and, with a field name suffixed with 'Formatted', in the form as shown "
+"on your screens."
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:413
+#, no-c-format
+msgid ""
+"Similarly, some fields, such as account type appear both as a numeric code, and "
+"in a field suffixed 'String' in the form and language of the application."
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:420
+#, no-c-format
+msgid "Updating your data"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:422
+#, no-c-format
+msgid ""
+"Having data in an industry standard format does give you the ability to modify "
+"it outside the &kappname; application. DO NOT DO IT unless you really know what "
+"you are doing, and always be certain to make a backup copy of your data first. "
+"If you get it wrong, &kappname; may not be able to access your data, and you "
+"could even end up losing it altogether. You have been warned!"
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:432
+#, no-c-format
+msgid "Stored queries"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:434
+#, no-c-format
+msgid ""
+"Most database systems allow you to store commonly used queries and procedures, "
+"and in some cases, these may be held as tables or other objects within your "
+"database itself. As you will have guessed from the above, all the tables used "
+"by &kappname; begin with the lowercase letters 'kmm'. This standard will be "
+"maintained, and only tables beginning with these letters will be updated. Thus, "
+"provided you avoid these in the naming of your queries &etc;, you should not "
+"experience any problems."
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:447
+#, no-c-format
+msgid "Manual database creation"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:449
+#, no-c-format
+msgid ""
+"This section covers more advanced database usage and may be skipped by the "
+"general user."
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:455
+#, no-c-format
+msgid "When to use"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:456
+#, no-c-format
+msgid ""
+"There may be occasions when &kappname; is unable to create the database "
+"automatically, or creates it without some options required by the user. For "
+"example, the database system used may not completely conform to standard SQL "
+"usage, or support may be introduced for new systems which have not been fully "
+"tested in &kappname;."
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:461
+#, no-c-format
+msgid ""
+"Prior to using this facility, you should try just creating the database entry "
+"itself (&ie; with the CREATE DATABASE statement). Provided the database exists, "
+"&kappname; may well be able to create the tables, &etc; in the normal database "
+"save procedure described above."
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:469
+#, no-c-format
+msgid "Generating the SQL"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:470
+#, no-c-format
+msgid ""
+"If this fails, it is possible to generate the basic SQL commands needed to "
+"create the various tables, views and indexes required by the application. "
+"Select <guimenuitem>Generate Database SQL</guimenuitem> from the <guimenu>"
+"Tools</guimenu> menu. This will present the following dialog:"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:483
+#, no-c-format
+msgid ""
+"On selecting the database type, the appropriate SQL will appear in the "
+"<guilabel>SQL for creation</guilabel> text box; this can be edited by the user, "
+"or saved to a text file by clicking <guibutton>Save SQL</guibutton>"
+". In the latter case, the database must be created using the administrative "
+"functions provided by the database system."
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:488
+#, no-c-format
+msgid ""
+"If after editing the text in the dialog, you want &kappname; to create the "
+"database, you will need to complete the other fields in the dialog, as detailed "
+"in <link linkend=\"details.database.selectdatabase\">Creating a Database</link> "
+"above, and click <guibutton>Create Tables</guibutton>"
+". Note that, except in the case of SQLite, you will need either to include a "
+"suitable CREATE DATABASE statement as the first command, or have previously "
+"issued such a command externally to &kappname;"
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:499
+#, no-c-format
+msgid "Warning"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:500
+#, no-c-format
+msgid ""
+"You should be very careful editing the definitions of any of the basic tables "
+"or views (those with names beginning with 'kmm'). Some changes, such as "
+"increasing the length of an integer field, may have little impact, but you "
+"should not remove or change the sequence of any fields, or &kappname; may "
+"refuse to function, or may corrupt your data."
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:506
+#, no-c-format
+msgid ""
+"Whilst adding or removing indexes may improve performance, you should also be "
+"aware that the opposite may happen. Some knowledge of the internal operation of "
+"&kappname; may help to get the best performance in these circumstances."
+msgstr ""
+
+#. Tag: title
+#: details-database.docbook:516
+#, no-c-format
+msgid "Encryption"
+msgstr ""
+
+#. Tag: para
+#: details-database.docbook:518
+#, no-c-format
+msgid "Encryption of data in your database is not currently supported."
+msgstr ""

@@ -1,0 +1,152 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       CVS -->
+  <!ENTITY kapplication "<application
+>headerthemeeditor</application
+>">
+  <!ENTITY kappname "&kapplication;">
+  <!ENTITY package "kdepim">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE"
+> 
+]>
+
+<book id="headerthemeeditor" lang="&language;">
+
+<bookinfo id="headerthemeeditorinfo">
+
+<title
+>Das Handbuch zu &kapplication;</title>
+
+<authorgroup>
+<author
+><personname
+> <firstname
+>Laurent</firstname
+> <surname
+>Montel</surname
+> </personname
+> <email
+>montel@kde.org</email
+> </author>
+<othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2013</year>
+<holder
+>Laurent Montel</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2013-04-23</date>
+<releaseinfo
+>1.0</releaseinfo>
+
+<abstract>
+<para
+>&kapplication; ist ein Editor für den Vorspann von KMail. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>KMail</keyword>
+</keywordset>
+
+</bookinfo>
+<chapter id="introduction">
+<title
+>Einführung</title>
+
+<para
+>&kapplication; ist ein Editor für den Vorspann von KMail auf der Basis von <ulink url="http://www.grantlee.org/"
+>Grantlee</ulink
+>.</para>
+</chapter>
+
+<chapter id="using-kapp">
+<title
+>&kapplication; verwenden</title>
+<para
+>Eine kurze Einführung zu dieser Anwendung finden Sie in diesem <ulink url="http://www.aegiap.eu/kdeblog/2013/05/news-in-kdepim-4-11-header-theme-33-grantlee-theme-generator-headerthemeeditor/"
+>Blog</ulink
+>.</para
+><para
+>Weitere Informationen finden Sie in der <ulink url="http://www.grantlee.org/apidox/"
+>Dokumention zu Grantlee</ulink
+>. </para
+><para
+>Beispiele für Vorspanndesigns finden Sie im &kde;-Archiv unter <ulink url="http://websvn.kde.org/branches/work/soc-pim/kdepim/examples/mail_grantlee/themes/"
+>Grantlee-Designs</ulink
+>.</para>
+
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Danksagungen und Lizenz</title>
+
+<para
+>&kapplication;</para>
+<para
+>Programm Copyright 2013 Laurent Montel montel@kde.org </para>
+<para
+>Dokumentation Copyright &copy; 2013 Laurent Montel montel@kde.org </para>
+
+<para
+>Übersetzung Burkhard Lück<email
+>lueck@hube-lueck.de</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+<appendix id="installation">
+<title
+>Installation</title>
+
+
+<sect1 id="compilation">
+<title
+>Kompilierung und Installation</title>
+&install.compile.documentation; </sect1>
+
+</appendix>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

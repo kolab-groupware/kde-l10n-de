@@ -1,0 +1,832 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2010, 2013.
+# Frederik Schwarzer <schwarzer@kde.org>, 2008.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2008.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2009, 2010.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kubrick\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2012-08-20 03:44+0200\n"
+"PO-Revision-Date: 2013-01-10 19:28+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Johannes Obermayr"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "johannesobermayr@gmx.de"
+
+#: game.cpp:85
+msgid "Front View"
+msgstr "Vorderansicht"
+
+#: game.cpp:86
+msgid "Back View"
+msgstr "Rückansicht"
+
+#: game.cpp:93
+msgid "DEMO - Click anywhere to begin playing"
+msgstr "Demonstration läuft ... Klicken Sie, um einen Würfel zu lösen."
+
+#: game.cpp:148
+msgid ""
+"Sorry, the cube cannot be shuffled at the moment.  The number of shuffling "
+"moves is set to zero.  Please select your number of shuffling moves in the "
+"options dialog at menu item Game->Choose Puzzle Type->Make Your Own..."
+msgstr ""
+"Der Würfel kann nicht verdreht werden, da die Anzahl der Verdrehungen auf "
+"Null gesetzt ist. Bitte geben Sie die Anzahl der Verdrehungen in den "
+"Einstellungen an."
+
+#: game.cpp:152
+msgid "New Puzzle"
+msgstr "Neuer Würfel"
+
+#: game.cpp:169
+msgid "Load Puzzle"
+msgstr "Würfel laden"
+
+#: game.cpp:239
+msgid "Undo"
+msgstr "Zurücknehmen"
+
+#: game.cpp:245
+msgid "Redo"
+msgstr "Wiederherstellen"
+
+#: game.cpp:255
+msgid "This cube has not been shuffled, so there is nothing to solve."
+msgstr "Dieser Würfel ist nicht verdreht und somit ist nichts zu lösen."
+
+#: game.cpp:257
+msgid "Solve the Cube"
+msgstr "Würfel lösen"
+
+#: game.cpp:354
+msgid "Restart Puzzle (Undo All)"
+msgstr "Würfel neu starten (alle Drehungen zurücknehmen)"
+
+#: game.cpp:360 kubrick.cpp:305
+msgid "Redo All"
+msgstr "Alles wiederherstellen"
+
+#: game.cpp:421
+#, kde-format
+msgid ""
+"Sorry, could not find a valid Kubrick demo file called %1.  It should have "
+"been installed in the 'apps/kubrick' sub-directory."
+msgstr ""
+"Es kann keine gültige Demodatei namens %1 gefunden werden. Sie muss im "
+"Unterordner „apps/kubrick“ vorliegen."
+
+#: game.cpp:424
+msgid "File Not Found"
+msgstr "Datei nicht gefunden"
+
+#: game.cpp:1048
+msgid "Only one of your dimensions can be one cubie wide."
+msgstr "Nur eine Dimension des Würfels darf eine Kantenlänge von 1 haben."
+
+#: game.cpp:1049
+msgid "Cube Options"
+msgstr "Würfeleinstellungen"
+
+#: game.cpp:1334
+msgid "Save Puzzle"
+msgstr "Würfel speichern "
+
+#: game.cpp:1556
+msgid "You have no moves to undo."
+msgstr "Es können keine Drehungen zurückgenommen werden."
+
+#: game.cpp:1586
+msgid ""
+"There are no moves to redo.\n"
+"\n"
+"That could be because you have not undone any or you have redone them all or "
+"because all previously undone moves are automatically deleted whenever you "
+"make a new move using the keyboard or mouse."
+msgstr ""
+"Es können keine Drehungen wiederhergestellt werden.\n"
+"\n"
+"Dies könnte daran liegen, dass keine Drehungen zurückgenommen bzw. alle "
+"wiederhergestellt wurden oder es sind alle zurückgenommenen Drehungen "
+"gelöscht, weil bereits eine neue Drehung gemacht wurde."
+
+#: game.cpp:1877
+msgid ""
+"The cube has animated moves in progress or the demo is running.\n"
+"\n"
+"Please wait or click on the cube to stop the demo."
+msgstr ""
+"Die Drehung des Würfels oder die Würfeldemo wird gerade animiert.\n"
+"\n"
+"Bitte warten Sie, oder klicken Sie auf den Würfel, um die Animation zu "
+"beenden."
+
+#: game.cpp:1880
+msgid "Sorry, too busy."
+msgstr "Es wird gerade ein Befehl ausgeführt."
+
+#: gamedialog.cpp:41
+msgid "Rubik's Cube Options"
+msgstr "Einstellungen für Rubiks Würfel"
+
+#: gamedialog.cpp:59
+msgid "Cube dimensions:"
+msgstr "Würfelgröße:"
+
+#: gamedialog.cpp:72
+msgid "Moves per shuffle (difficulty):"
+msgstr "Anzahl der Verdrehungen (Schwierigkeitsgrad):"
+
+#: gamedialog.cpp:79
+#, kde-format
+msgid "Cube dimensions: %1x%2x%3"
+msgstr "Würfelgröße: %1×%2×%3"
+
+#: gamedialog.cpp:85
+#, kde-format
+msgid "Moves per shuffle (difficulty): %1"
+msgstr "Anzahl der Verdrehungen (Schwierigkeitsgrad): %1"
+
+#: gamedialog.cpp:92
+msgid ""
+"<i>Please use <nobr>'Choose Puzzle Type->Make Your Own...'</nobr> to set the "
+"above options.</i>"
+msgstr ""
+"<i>Bitte verwenden Sie <nobr>„Würfelart wählen --> Eigener Würfel ...“</"
+"nobr>, um die angegebene Einstellung zu wählen.</i>"
+
+#: gamedialog.cpp:110
+msgid "Watch shuffling in progress?"
+msgstr "Verdrehen animieren"
+
+#: gamedialog.cpp:113
+msgid "Watch your moves in progress?"
+msgstr "Eigene Drehungen animieren"
+
+#: gamedialog.cpp:120
+msgid "Speed of moves:"
+msgstr "Dreh-Geschwindigkeit:"
+
+#: gamedialog.cpp:131
+#, no-c-format
+msgid "% of bevel on edges of cubies:"
+msgstr "Abrundung der Würfelkanten (in %):"
+
+#: gamedialog.cpp:186
+msgid ""
+"You can choose any size of cube (or brick) up to 6x6x6, but only one side "
+"can have dimension 1 (otherwise the puzzle becomes trivial).  The easiest "
+"puzzle is 2x2x1 and 3x3x1 is a good warmup for the original Rubik's Cube, "
+"which is 3x3x3.  Simple puzzles have 2 to 5 shuffling moves, a difficult "
+"3x3x3 puzzle has 10 to 20 --- or you can choose zero shuffling then shuffle "
+"the cube yourself, maybe for a friend to solve.\n"
+"The other options determine whether you can watch the shuffling and/or your "
+"own moves and how fast the animation goes.  The bevel option affects the "
+"appearance of the small cubes.  Try setting it to 30 and you'll see what we "
+"mean."
+msgstr ""
+"Sie können jede Größe des Würfels (der Matte/des Quaders) bis zu einer "
+"Kantenlänge von 6×6×6 wählen. Jedoch darf nur eine Dimension eine "
+"Kantenlänge von 1 besitzen (ansonsten ist der Würfel belanglos). Der "
+"leichteste Würfel besitzt eine Kantenlänge von 2×2×1. Für den Anfang ist "
+"eine Kantenlänge von 3×3×1 gut geeignet, um später Rubiks Würfel mit einer "
+"Kantenlänge von 3×3×3 lösen zu können. Einfache Würfel werden drei- bis "
+"fünfmal verdreht und schwere Würfel mit einer Kantenlänge von 3×3×3 werden "
+"zehn- bis zwanzigmal verdreht. Die Anzahl der automatischen Verdrehungen "
+"kann auch auf Null gestellt werden, um den Würfel selbst zu verdrehen (z. B. "
+"um ihn von einem Freund lösen zu lassen).\n"
+"Die anderen Einstellungen legen fest, ob die Verdrehungen/Versuche animiert "
+"werden und wie hoch die Geschwindigkeit dafür ist.\n"
+"Die Einstellung für die Abrundung wirkt sich auf die Erscheinung von kleinen "
+"Würfeln aus. Versuchen Sie einen Wert von 30 und achten Sie auf die "
+"Veränderung."
+
+#: gamedialog.cpp:198
+msgid "HELP: Rubik's Cube Options"
+msgstr "Hilfe zu Einstellungen für Rubiks Würfel"
+
+#: kubrick.cpp:83
+msgid "Welcome to Kubrick"
+msgstr "Willkommen zu Kubrick"
+
+#: kubrick.cpp:102
+msgid "2x2x1 mat, 1 move"
+msgstr "Matte (2×2×1), 1 Verdrehung"
+
+#: kubrick.cpp:103
+msgid "2x2x1 mat, 2 moves"
+msgstr "Matte (2×2×1), 2 Verdrehungen"
+
+#: kubrick.cpp:104
+msgid "2x2x1 mat, 3 moves"
+msgstr "Matte (2×2×1), 3 Verdrehungen"
+
+#: kubrick.cpp:105
+msgid "2x2x2 cube, 2 moves"
+msgstr "Würfel (2×2×2), 2 Verdrehungen"
+
+#: kubrick.cpp:106
+msgid "2x2x2 cube, 3 moves"
+msgstr "Würfel (2×2×2), 3 Verdrehungen"
+
+#: kubrick.cpp:107
+msgid "2x2x2 cube, 4 moves"
+msgstr "Würfel (2×2×2), 4 Verdrehungen"
+
+#: kubrick.cpp:108
+msgid "3x3x1 mat, 4 moves"
+msgstr "Matte (3×3×1), 4 Verdrehungen"
+
+#: kubrick.cpp:109 kubrick.cpp:116
+msgid "3x3x3 cube, 3 moves"
+msgstr "Würfel (3×3×3), 3 Verdrehungen"
+
+#: kubrick.cpp:110 kubrick.cpp:117
+msgid "3x3x3 cube, 4 moves"
+msgstr "Würfel (3×3×3), 4 Verdrehungen"
+
+#: kubrick.cpp:118
+msgid "4x4x4 cube, 4 moves"
+msgstr "Würfel (4×4×4), 4 Verdrehungen"
+
+#: kubrick.cpp:119
+msgid "5x5x5 cube, 4 moves"
+msgstr "Würfel (5×5×5), 4 Verdrehungen"
+
+#: kubrick.cpp:120
+msgid "6x3x2 brick, 4 moves"
+msgstr "Quader (6×3×2), 4 Verdrehungen"
+
+#: kubrick.cpp:126
+msgid "3x3x3 cube, 7 moves"
+msgstr "Würfel (3×3×3), 7 Verdrehungen"
+
+#: kubrick.cpp:127
+msgid "4x4x4 cube, 5 moves"
+msgstr "Würfel (4×4×4), 5 Verdrehungen"
+
+#: kubrick.cpp:128
+msgid "5x5x5 cube, 6 moves"
+msgstr "Würfel (5×5×5), 6 Verdrehungen"
+
+#: kubrick.cpp:129
+msgid "6x6x6 cube, 6 moves"
+msgstr "Würfel (6×6×6), 6 Verdrehungen"
+
+#: kubrick.cpp:130
+msgid "6x4x1 mat, 9 moves"
+msgstr "Matte (6×4×1), 9 Verdrehungen"
+
+#: kubrick.cpp:131
+msgid "6x3x2 brick, 6 moves"
+msgstr "Quader (6×3×2), 6 Verdrehungen"
+
+#: kubrick.cpp:137
+msgid "3x3x3 cube, 12 moves"
+msgstr "Würfel (3×3×3), 12 Verdrehungen"
+
+#: kubrick.cpp:138
+msgid "3x3x3 cube, 15 moves"
+msgstr "Würfel (3×3×3), 15 Verdrehungen"
+
+#: kubrick.cpp:139
+msgid "3x3x3 cube, 20 moves"
+msgstr "Würfel (3×3×3), 20 Verdrehungen"
+
+#: kubrick.cpp:140
+msgid "4x4x4 cube, 12 moves"
+msgstr "Würfel (4×4×4), 12 Verdrehungen"
+
+#: kubrick.cpp:141
+msgid "5x5x5 cube, 15 moves"
+msgstr "Würfel (5×5×5), 15 Verdrehungen"
+
+#: kubrick.cpp:142
+msgid "6x6x6 cube, 25 moves"
+msgstr "Würfel (6×6×6), 25 Verdrehungen"
+
+#: kubrick.cpp:148
+msgid ""
+"Rubik's Cube can be moved into many interesting patterns.  Here are a few "
+"from David Singmaster's classic book 'Notes on Rubik's Magic Cube, Fifth "
+"Edition', pages 47-49, published in 1981.  After a pattern has formed, you "
+"can use the Solve action (default key S) to undo and redo it as often as you "
+"like."
+msgstr ""
+"Rubiks Würfel kann zu verschiedenen neuen Würfeln gedreht werden. Hier sind "
+"ein paar aus David Singmaster, Notes on Rubik's Magic Cube, fünfte Auflage, "
+"Seiten 47 bis 49, Erscheinungsjahr 1981. Sobald eine Verdrehung vollzogen "
+"ist, kann der ursprüngliche Würfel mit Hilfe der Lösen-Aktion (Standardtaste "
+"S) beliebig oft wieder hergestellt werden und die Verdrehung von Neuem "
+"begonnen werden."
+
+#: kubrick.cpp:157 kubrick.cpp:192
+msgid "Info"
+msgstr "Information"
+
+# oder einfach „6 Xe“?
+#: kubrick.cpp:158
+msgid "3x3x3, 6 X"
+msgstr "(3×3×3), 6 Kreuze"
+
+# oder einfach „2 Xe“?
+#: kubrick.cpp:159
+msgid "3x3x3, 2 X"
+msgstr "(3×3×3), 2 Kreuze"
+
+#: kubrick.cpp:160
+msgid "3x3x3, 6 Spot"
+msgstr "(3×3×3), 6 Punkte"
+
+#: kubrick.cpp:161
+msgid "3x3x3, 4 Spot"
+msgstr "(3×3×3), 4 Punkte"
+
+#: kubrick.cpp:162
+msgid "3x3x3, 4 Plus"
+msgstr "(3×3×3), 4 Plus"
+
+#: kubrick.cpp:163
+msgid "3x3x3, 4 Bar"
+msgstr "(3×3×3), 4 Balken"
+
+# oder einfach „6 Us“?
+#: kubrick.cpp:164
+msgid "3x3x3, 6 U"
+msgstr "(3×3×3), 6 U-Buchstaben"
+
+# oder einfach „4 Us“?
+#: kubrick.cpp:165
+msgid "3x3x3, 4 U"
+msgstr "(3×3×3), 4 U-Buchstaben"
+
+#: kubrick.cpp:166
+msgid "3x3x3, Snake"
+msgstr "(3×3×3), Schlange"
+
+#: kubrick.cpp:167
+msgid "3x3x3, Worm"
+msgstr "(3×3×3), Wurm"
+
+#: kubrick.cpp:168
+msgid "3x3x3, Tricolor"
+msgstr "(3×3×3), Dreifarbig"
+
+#: kubrick.cpp:169
+msgid "3x3x3, Double Cube"
+msgstr "(3×3×3), Doppelwürfel"
+
+# |, no-fancy-quote
+#: kubrick.cpp:175
+msgid ""
+"<qt>Mathematicians calculate that a 3x3x3 cube can be shuffled into "
+"43,252,003,274,489,856,000 different patterns, yet they conjecture that all "
+"positions can be solved in 20 moves or less.  The method that can do that "
+"(as yet undiscovered) is called God's Algorithm.<br><br>Many longer methods "
+"are known.  See the two Wikipedia articles on Rubik's Cube and Optimal "
+"Solutions for Rubik's Cube.<br><br>Several methods work systematically by "
+"building the solution one layer at a time, using sequences of moves that "
+"solve a few pieces without disturbing what has already been done.  The "
+"'Beginner Solution' demonstrated here uses that approach.  Just over 100 "
+"moves solve a cube that is shuffled in 20.</qt>"
+msgstr ""
+"<qt>Mathematiker berechneten, dass ein Würfel mit einer Kantenlänge von "
+"3×3×3 zu 43.252.003.274.489.856.000 (ca. 43,25 Trillionen) neuen Würfeln "
+"verdreht werden kann. Jedoch vermuten sie, dass jede Verdrehung in zwanzig "
+"oder weniger Schritten gelöst werden kann. Diese – noch unerforschte – "
+"Methode wird Gott-Algorithmus genannt.<br><br>Viele andere Methoden sind "
+"bereits bekannt. Beachten Sie die beiden Artikel „Rubik's Cube“ und „Optimal "
+"Solutions for Rubik's Cube“ auf den englischen Seiten von Wikipedia."
+"<br><br>Mehrere Methoden funktionieren systematisch durch das Lösen der "
+"Schichten nacheinander, ohne dabei die vollendeten Schichten wieder zu "
+"zerstören. Die „Einführung“ verwendet diesen Ansatz. Mit etwas mehr als "
+"hundert Drehungen kann damit ein Würfel gelöst werden, der zwanzig Mal "
+"verdreht wurde.</qt>"
+
+#: kubrick.cpp:193
+msgid "3x3x3 Layer 1, Edges First"
+msgstr "(3×3×3) Ebene 1, Kanten zuerst"
+
+#: kubrick.cpp:194
+msgid "3x3x3 Layer 2, Edge from Bottom Right"
+msgstr "(3×3×3) Ebene 2, Kante von unten rechts"
+
+#: kubrick.cpp:195
+msgid "3x3x3 Layer 2, Edge from Bottom Left"
+msgstr "(3×3×3) Ebene 2, Kante von unten links"
+
+#: kubrick.cpp:196
+msgid "3x3x3 Layer 3, Flip Edge Pieces"
+msgstr "(3×3×3) Ebene 3, Gegenüberliegende Kanten vertauschen"
+
+#: kubrick.cpp:197
+msgid "3x3x3 Layer 3, Place Corners"
+msgstr "(3×3×3) Ebene 3, Ecken platzieren"
+
+#: kubrick.cpp:198
+msgid "3x3x3 Layer 3, Twist Corners"
+msgstr "(3×3×3) Ebene 3, Ecken verdrehen"
+
+#: kubrick.cpp:199
+msgid "3x3x3 Layer 3, Place Edges and DONE!"
+msgstr "(3×3×3) Ebene 3, Kanten platzieren und fertigstellen"
+
+#: kubrick.cpp:200
+msgid "3x3x3 Cube, Complete Solution"
+msgstr "(3×3×3) Würfel, Komplettlösung"
+
+#: kubrick.cpp:201
+msgid "3x3x3 Swap 2 Pairs of Edges"
+msgstr "(3×3×3), Zwei Kantenpaare vertauschen"
+
+#: kubrick.cpp:202
+msgid "3x3x3 Untwist 2 Corners"
+msgstr "(3×3×3), Zwei Ecken drehen"
+
+#: kubrick.cpp:203
+msgid "3x3x3 Flip 2 Edges"
+msgstr "(3×3×3), Zwei Kanten vertauschen"
+
+#: kubrick.cpp:216
+msgid "&New Puzzle"
+msgstr "&Neues Spiel"
+
+#: kubrick.cpp:217
+msgid "Start a new puzzle."
+msgstr "Ein neues Spiel starten."
+
+#: kubrick.cpp:218
+msgid ""
+"Finish the puzzle you are working on and start a new puzzle with the same "
+"dimensions and number of shuffling moves."
+msgstr ""
+"Beendet den aktuellen Würfel und startet einen neuen mit den gleichen "
+"Dimensionen und Verdrehungen."
+
+#: kubrick.cpp:226
+msgid "&Load Puzzle..."
+msgstr "Würfel &laden ..."
+
+#: kubrick.cpp:227
+msgid "Reload a saved puzzle from a file."
+msgstr "Einen gespeicherten Würfel laden."
+
+#: kubrick.cpp:228
+msgid ""
+"Reload a puzzle you have previously saved on a file, including its "
+"dimensions, settings, current state and history of moves."
+msgstr ""
+"Lädt einen gespeicherten Würfel mit den Dimensionen, Einstellungen, dem "
+"Spielstand und -verlauf."
+
+#: kubrick.cpp:236
+msgid "&Save Puzzle..."
+msgstr "Würfel &speichern ... "
+
+#: kubrick.cpp:237
+msgid "Save the puzzle on a file."
+msgstr "Den Würfel in eine Datei speichern."
+
+#: kubrick.cpp:238
+msgid ""
+"Save the puzzle on a file, including its dimensions, settings, current state "
+"and history of moves."
+msgstr ""
+"Speichert den Würfel in eine Datei inklusive Dimensionen, Einstellungen, dem "
+"Spielstand und -verlauf."
+
+#: kubrick.cpp:245
+msgid "&Save Puzzle As..."
+msgstr "Würfel speichern &unter ..."
+
+#: kubrick.cpp:250
+msgid "Restart &Puzzle..."
+msgstr "Würfel &neu starten ..."
+
+#: kubrick.cpp:251 kubrick.cpp:253
+msgid "Undo all previous moves and start again."
+msgstr ""
+"Hiermit werden alle bereits erfolgten Drehungen zurückgenommen, um mit der "
+"Lösung von neuem zu beginnen."
+
+#: kubrick.cpp:265 kubrick.cpp:266
+msgid "Undo the last move."
+msgstr "Die letzte Drehung zurücknehmen."
+
+#: kubrick.cpp:271
+msgid "Redo a previously undone move."
+msgstr "Alle zurückgenommenen Drehungen wiederherstellen."
+
+#: kubrick.cpp:272
+msgid "Redo a previously undone move (repeatedly from the start if required)."
+msgstr "Einen zuvor zurückgenommenen Zug wieder herstellen."
+
+#: kubrick.cpp:278
+msgid "Show the solution of the puzzle."
+msgstr "Lösung des Würfels anzeigen."
+
+#: kubrick.cpp:279
+msgid ""
+"Show the solution of the puzzle by undoing and re-doing all shuffling moves."
+msgstr ""
+"Die Lösung des Spiels anzeigen, indem alle Züge zurückgenommen und erneut "
+"durchgeführt werden."
+
+#: kubrick.cpp:285
+msgid "Main &Demo"
+msgstr "&Demomodus"
+
+#: kubrick.cpp:286
+msgid "Run a demonstration of puzzle moves."
+msgstr "Spielt eine Animation von Würfellösungen ab."
+
+#: kubrick.cpp:287
+msgid ""
+"Run a demonstration of puzzle moves, in which randomly chosen cubes, bricks "
+"or mats are shuffled and solved."
+msgstr ""
+"Spielt eine Animation von Lösungen zufällig verdrehter Würfel, Quader oder "
+"Matten ab."
+
+#: kubrick.cpp:292
+msgid "Realign Cube"
+msgstr "Würfel neu ausrichten"
+
+#: kubrick.cpp:293
+msgid ""
+"Realign the cube so that the top, front and right faces are visible together."
+msgstr ""
+"Den Würfel so ausrichten, dass die Kopf-, Vorder- und rechte Seite "
+"gleichzeitig sichtbar sind."
+
+#: kubrick.cpp:295
+msgid ""
+"Realign the cube so that the top, front and right faces are visible together "
+"and the cube's axes are parallel to the XYZ axes, thus making keyboard moves "
+"properly meaningful."
+msgstr ""
+"Den Würfel so ausrichten, dass die Kopf-, Vorder- und rechte Seite "
+"gleichzeitig sichtbar sind und die Achsen des Würfels parallel zu der X-, Y- "
+"und Z-Achse verlaufen, damit Drehungen, die mit der Tastatur eingeleitet "
+"werden, unmissverständlich sind."
+
+#: kubrick.cpp:310
+msgid "Singmaster Moves"
+msgstr "Singmaster-Drehungen"
+
+#: kubrick.cpp:321
+msgid "This area shows Singmaster moves."
+msgstr "Dieses Feld zeigt die Singmaster-Drehungen."
+
+#: kubrick.cpp:326
+msgctxt ""
+"The letters RLFBUD are mathematical notation based on English words. Please "
+"leave those letters and words untranslated in some form."
+msgid ""
+"This area shows Singmaster moves. They are based on the letters RLFBUD, "
+"representing (in English) the Right, Left, Front, Back, Up and Down faces. "
+"In normal view, the letters RFU represent clockwise moves of the three "
+"visible faces and LBD appear as anticlockwise moves of the hidden faces. "
+"Adding a ' (apostrophe) to a letter gives the reverse of that letter's move. "
+"To move inner slices, add periods (or dots) before the letter of the nearest "
+"face."
+msgstr ""
+"Dieses Feld zeigt die Singmaster-Drehungen. Sie basieren auf den Buchstaben "
+"R, L, F, B, U und D (Englisch für rechts, links, zurück, hoch und runter). "
+"In der normalen Ansicht bedeuten die Buchstaben R, F und U die Drehung der "
+"drei sichtbaren Seiten im Uhrzeiger und L, B und D die Drehung der "
+"verborgenen Seiten gegen den Uhrzeiger. Das ' (Apostroph) hinter den "
+"Buchstaben bedeutet die umgekehrte Drehrichtung. Durch Voranstellen von "
+"Perioden (oder Punkten) können die anderen Ebenen gedreht werden."
+
+#: kubrick.cpp:350
+msgid "&Easy"
+msgstr "&Einfach"
+
+#: kubrick.cpp:355
+msgid "&Not So Easy"
+msgstr "&Normal"
+
+#: kubrick.cpp:360
+msgid "&Hard"
+msgstr "&Schwer"
+
+#: kubrick.cpp:365
+msgid "&Very Hard"
+msgstr "Se&hr schwer"
+
+#: kubrick.cpp:371
+msgid "Make your own..."
+msgstr "Eigener Würfel ..."
+
+#: kubrick.cpp:383
+msgid "1 Cube"
+msgstr "Eine Ansicht"
+
+#: kubrick.cpp:385
+msgid "Show one view of this cube."
+msgstr "Zeigt eine Ansicht dieses Würfels."
+
+#: kubrick.cpp:386
+msgid "Show one view of this cube, from the front."
+msgstr "Zeigt eine Ansicht dieses Würfels von vorne."
+
+#: kubrick.cpp:394
+msgid "2 Cubes"
+msgstr "Zwei Ansichten"
+
+#: kubrick.cpp:396
+msgid "Show two views of this cube."
+msgstr "Zeigt zwei Ansichten dieses Würfels."
+
+#: kubrick.cpp:397
+msgid ""
+"Show two views of this cube, from the front and the back.  Both can rotate."
+msgstr ""
+"Zeigt zwei Ansichten dieses Würfels (von vorne und von hinten). Beide können "
+"gedreht werden."
+
+#: kubrick.cpp:404
+msgid "3 Cubes"
+msgstr "Drei Ansichten"
+
+#: kubrick.cpp:406
+msgid "Show three views of this cube."
+msgstr "Zeigt drei Ansichten dieses Würfels."
+
+#: kubrick.cpp:407
+msgid ""
+"Show three views of this cube, a large one, from the front, and two small "
+"ones, from the front and the back.  Only the large one can rotate."
+msgstr ""
+"Zeigt drei Ansichten dieses Würfels (einen großen von vorne, zwei kleine von "
+"vorne und hinten). Nur der große kann gedreht werden."
+
+#: kubrick.cpp:419
+msgid "&Watch Shuffling"
+msgstr "Verdrehen &animieren"
+
+#: kubrick.cpp:424
+msgid "Watch Your &Own Moves"
+msgstr "&Eigene Drehungen animieren"
+
+#: kubrick.cpp:440
+msgid "Kubri&ck Game Settings"
+msgstr "Kubrick ein&richten ..."
+
+#: kubrick.cpp:445
+msgid "Keyboard S&hortcut Settings"
+msgstr "Einstellungen zu &Kurzbefehlen"
+
+#: kubrick.cpp:455
+msgid "X Axis"
+msgstr "X-Achse"
+
+#: kubrick.cpp:461
+msgid "Y Axis"
+msgstr "Y-Achse"
+
+#: kubrick.cpp:467
+msgid "Z Axis"
+msgstr "Z-Achse"
+
+#: kubrick.cpp:482
+#, kde-format
+msgid "Slice %1"
+msgstr "Scheibe %1"
+
+#: kubrick.cpp:490
+msgid "Turn whole cube"
+msgstr "Ganzen Würfel drehen"
+
+#: kubrick.cpp:501
+msgid "Anti-clockwise"
+msgstr "Gegen den Uhrzeigersinn"
+
+#: kubrick.cpp:507
+msgid "Clockwise"
+msgstr "Im Uhrzeigersinn"
+
+#: kubrick.cpp:517
+msgid "Move 'Up' face"
+msgstr "Oberseite drehen"
+
+#: kubrick.cpp:519
+msgid "Move 'Down' face"
+msgstr "Unterseite drehen"
+
+#: kubrick.cpp:521
+msgid "Move 'Left' face"
+msgstr "Linke Seite drehen"
+
+#: kubrick.cpp:523
+msgid "Move 'Right' face"
+msgstr "Rechte Seite drehen"
+
+#: kubrick.cpp:525
+msgid "Move 'Front' face"
+msgstr "Vorderseite drehen"
+
+#: kubrick.cpp:527
+msgid "Move 'Back' face"
+msgstr "Rückseite drehen"
+
+#: kubrick.cpp:529
+msgid "Anti-clockwise move"
+msgstr "Gegen den Uhrzeigersinn drehen"
+
+#: kubrick.cpp:531
+msgid "Singmaster two-slice move"
+msgstr "Singmaster Zwei-Scheiben-Drehung"
+
+#: kubrick.cpp:533
+msgid "Singmaster anti-slice move"
+msgstr "Singmaster Gegen-Scheiben-Drehung"
+
+#: kubrick.cpp:535
+msgid "Move an inner slice"
+msgstr "Innere Scheibe drehen"
+
+#: kubrick.cpp:537 kubrick.cpp:539
+msgid "Complete a Singmaster move"
+msgstr "Singmaster-Drehung vervollständigen"
+
+#: kubrick.cpp:541
+msgid "Add space to Singmaster moves"
+msgstr "Zwischenraum zu Singmaster-Drehungen hinzufügen"
+
+#: kubrick.cpp:670
+msgid "Pretty Patterns"
+msgstr "Schöne Würfel"
+
+#: kubrick.cpp:688
+msgid "Solution Moves"
+msgstr "Lösungsversuche"
+
+#: kubrick.cpp:697
+#, kde-format
+msgid "%1x%2x%3 cube, %4 shuffling moves"
+msgstr "Würfel (%1×%2×%3), %4 Verdrehungen"
+
+#: kubrick.cpp:701
+#, kde-format
+msgid "%1x%2x%3 brick, %4 shuffling moves"
+msgstr "Quader (%1×%2×%3), %4 Verdrehungen"
+
+#: kubrick.cpp:705
+#, kde-format
+msgid "%1x%2x%3 mat, %4 shuffling moves"
+msgstr "Matte (%1×%2×%3), %4 Verdrehungen"
+
+#. i18n: ectx: Menu (puzzles)
+#: kubrickui.rc:10
+msgid "&Choose Puzzle Type"
+msgstr "Würfelart &wählen"
+
+#. i18n: ectx: Menu (demos)
+#: kubrickui.rc:28
+msgid "&Demos"
+msgstr "&Demomodus"
+
+#. i18n: ectx: Menu (puzzles)
+#: kubrickui.rc:30
+msgid "&Pretty Patterns"
+msgstr "&Schöne Würfel"
+
+#. i18n: ectx: Menu (puzzles)
+#: kubrickui.rc:33
+msgid "&Solution Moves"
+msgstr "Lö&sungsversuche"
+
+#: main.cpp:27
+msgid "A game based on Rubik's Cube (TM)"
+msgstr "Ein Spiel angelehnt an Rubiks Würfel (TM)"
+
+#: main.cpp:33
+msgid "Kubrick"
+msgstr "Kubrick"
+
+#: main.cpp:36
+msgid "(C) 2008 Ian Wadham"
+msgstr "© 2008, Ian Wadham"
+
+#: main.cpp:38
+msgid "Ian Wadham"
+msgstr "Ian Wadham"
+
+#: main.cpp:38
+msgid "Author"
+msgstr "Autor"

@@ -1,0 +1,30 @@
+<chapter id="introduction">
+<title
+>Übersicht</title>
+
+<para
+>&policykit-kde; ist die Einbindung des Werkzeugs <emphasis
+>PolicyKit</emphasis
+> mit dem Aussehen und der Bedienung von &kde;.</para>
+
+<para
+>PolicyKit ermöglicht die einfache und sichere Passwortverwaltung und kann von Anwendungen zur Abfrage des Passwort der Benutzer verwendet werden. Jede Anwendung definiert einen Satz an Aktionen, die ausgeführt werden können. Die Anwendung <emphasis
+>fragt</emphasis
+> PolicyKit, ob die Berechtigung zum Ausführen der Aktion vorliegt. Falls nicht, kann die Anwendung ein Fenster zur Abfrage des eigenen, Root- oder Gruppenpassworts oder auch des Fingerabdrucks aufrufen.</para>
+
+<para
+>&policykit-kde; besteht aus zwei Anwendungen: Dem <emphasis
+>Berechtigungsagenten</emphasis
+>, der die Anfragen zu den Berechtigungen erhält und ein Fenster zur Passwortabfrage anzeigt und dem <emphasis
+>Berechtigungsverwalter</emphasis
+>, der die Berechtigungen verwaltet und meist von Systemadministratoren zur Änderung des standardmäßigen Verhaltens von Programmabläufen verwendet wird.</para>
+
+<para
+>Für Qt/KDE-Entwickler gibt es eine Qt-Bibliothek zur einfachen Einbindung von PolicyKit in die Anwendung.</para>
+
+<para
+>Für weitere Informationen zur Funktionsweise, zum Aufbau und zur API von PolicyKit sollte das <ulink url="http://hal.freedesktop.org/docs/PolicyKit/"
+>PolicyKit-Handbuch</ulink
+> beachtet werden.</para>
+
+</chapter>

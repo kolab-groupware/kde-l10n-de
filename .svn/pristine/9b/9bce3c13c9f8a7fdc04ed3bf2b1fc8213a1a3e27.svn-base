@@ -1,0 +1,494 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2011, 2012, 2014.
+# Frederik Schwarzer <schwarzer@kde.org>, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_icontasks\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-11-05 05:28+0000\n"
+"PO-Revision-Date: 2014-01-19 18:00+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. i18n: ectx: property (text), widget (QLabel, style_label)
+#: appearanceconfig.ui:20
+msgid "Style:"
+msgstr "Stil:"
+
+#. i18n: ectx: property (text), widget (QLabel, rotate_label)
+#: appearanceconfig.ui:30
+msgid "Rotate vertical frames:"
+msgstr "Rahmen drehen, wenn senkrecht:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, rotate)
+#: appearanceconfig.ui:40
+msgid ""
+"<p>Controls whether the frames drawn around taskbar entries should be "
+"rotated 90-degrees counter-clockwise when the taskbar is in a vertical panel."
+"</p>"
+msgstr ""
+"<p>Legt fest, ob der Rahmen um die Fensterleisten-Symbole um 90° gedreht "
+"werden sollen, wenn sich die Fensterleiste in einer vertikalen "
+"Kontrollleiste befindet.</p>"
+
+#. i18n: ectx: property (text), widget (QLabel, toolTips_label)
+#: appearanceconfig.ui:50
+msgid "Tooltips:"
+msgstr "Kurzinfos:"
+
+#. i18n: ectx: property (text), widget (QLabel, previewSize_label)
+#: appearanceconfig.ui:66
+msgid "Window preview size:"
+msgstr "Fenster-Vorschaugröße:"
+
+#. i18n: ectx: property (toolTip), widget (KIntSpinBox, previewSize)
+#: appearanceconfig.ui:76
+msgid "<p>Controls the width of window previews with tooltips.</p>"
+msgstr "<p>Steuert die Breite von Fenstervorschauen mit Kurzinfos.</p>"
+
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, previewSize)
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, spacing)
+#: appearanceconfig.ui:79 appearanceconfig.ui:148
+msgid "px"
+msgstr "px"
+
+#. i18n: ectx: property (text), widget (QLabel, launcherIcons_label)
+#: appearanceconfig.ui:89
+msgid "Always use launcher icons:"
+msgstr "Immer Starter-Symbole verwenden:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, launcherIcons)
+#: appearanceconfig.ui:102
+msgid ""
+"<p>Enabling this item forces the icon for a running application to be the "
+"same as that used for the launcher. This resolves some oddities where the "
+"launcher icon is different from the application icon - as happens with "
+"LibreOffice.</p>"
+msgstr ""
+"<p>Durch Aktivieren dieser Option wird als Symbol eines laufenden Programms "
+"die Verwendung des Starter-Symbols erzwungen. Dies löst bestimmte "
+"Merkwürdigkeiten, bei denen sich das Starter-Symbol vom Programmsymbol "
+"unterscheidet, wie beispielsweise bei LibreOffice.</p>"
+
+#. i18n: ectx: property (text), widget (QLabel, iconScale_label)
+#: appearanceconfig.ui:112
+msgid "Scale icons to:"
+msgstr "Symbole skalieren auf:"
+
+#. i18n: ectx: property (toolTip), widget (KIntSpinBox, iconScale)
+#: appearanceconfig.ui:122
+msgid ""
+"<p>Controls the scaling of the taskbar icon. When set to \"Automatic\", the "
+"taskbar will attempt to determine the optimal size.</p>"
+msgstr ""
+"<p>Legt die Skalierung der Fensterleisten-Symbole fest. Ist sie auf "
+"„Automatisch“ gesetzt, wird die optimale Größe automatisch ermittelt.</p>"
+
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, iconScale)
+#: appearanceconfig.ui:125
+#, no-c-format
+msgid "%"
+msgstr " %"
+
+#. i18n: ectx: property (text), widget (QLabel, spacing_label)
+#: appearanceconfig.ui:135
+msgid "Spacing:"
+msgstr "Abstand: "
+
+#. i18n: ectx: property (toolTip), widget (KIntSpinBox, spacing)
+#: appearanceconfig.ui:145
+msgid "<p>Set the amount of extra spacing between items.</p>"
+msgstr "<p>Zusätzlicher Abstand zwischen Elementen.</p>"
+
+#. i18n: ectx: property (text), widget (QLabel, maxRows_label)
+#: appearanceconfig.ui:161
+msgid "Maximum rows:"
+msgstr "Maximale Anzahl Zeilen:"
+
+#. i18n: ectx: property (toolTip), widget (KIntSpinBox, maxRows)
+#: appearanceconfig.ui:174
+msgid ""
+"<p>Controls the maximum number of rows (for a horizontal taskbar), or "
+"columns (for a vertical taskbar), that will be used.</p>"
+msgstr ""
+"<p>Legt die maximale Anzahl an Zeilen (für horizontale Kontrollleisten) bzw. "
+"Spalten (für vertikale Kontrollleisten) fest.</p>"
+
+#. i18n: ectx: property (text), widget (QLabel, sortingStrategy_label)
+#: appearanceconfig.ui:187
+msgid "Sorting:"
+msgstr "Sortierung:"
+
+#. i18n: ectx: property (text), widget (QLabel, showSeparator_label)
+#: appearanceconfig.ui:210
+msgid "Separator:"
+msgstr "Trennzeichen:"
+
+#. i18n: ectx: property (toolTip), widget (QComboBox, showSeparator)
+#: appearanceconfig.ui:220
+msgid ""
+"<p>When enabled, and there is only 1 row/column, then a separator will be "
+"drawn between the launchers/tasks-with-launchers and non-launcher tasks.</p>"
+msgstr ""
+"<p>Wenn diese Option aktiviert ist und lediglich eine Zeile/Spalte vorhanden "
+"ist, wird ein Trennstrich zwischen den Startern bzw. Programmen, die einen "
+"Starter haben, und Programmen ohne Starter angezeigt.</p>"
+
+#. i18n: ectx: property (text), widget (QLabel, highlightWindows_label)
+#: appearanceconfig.ui:227
+msgid "Highlight windows:"
+msgstr "Fenster hervorheben:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: behaviourconfig.ui:20
+msgid "General"
+msgstr "Allgemein"
+
+#. i18n: ectx: property (text), widget (QLabel, showProgress_label)
+#: behaviourconfig.ui:26
+msgid "Show job progress on task icon:"
+msgstr "Fortschritt von Vorgängen auf Symbolen anzeigen:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, showProgress)
+#: behaviourconfig.ui:36
+msgid ""
+"<p>When enabled, a progressbar will be drawn over the applications icons to "
+"represent its overall job progress.</p>"
+msgstr ""
+"<p>Ist diese Option aktiviert, wird ein Fortschrittsbalken auf "
+"Programmsymbolen angezeigt, der den Gesamtfortschritt wiedergibt.</p>"
+
+#. i18n: ectx: property (text), widget (QLabel, mediaButtons_label)
+#: behaviourconfig.ui:46
+msgid "Show control buttons on media player tooltips:"
+msgstr "Wiedergabesteuerung auf Kurzinfos von Medienspielern anzeigen:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mediaButtons)
+#: behaviourconfig.ui:56
+msgid ""
+"<p>When enabled - previous, play/pause, and next buttons will be shown in "
+"the tooltips for media players.</p>"
+msgstr ""
+"<p>Ist diese Option aktiviert, werden Schaltflächen für vorheriges und "
+"nächstes Lied sowie Wiedergabe bzw. Pause in den Kurzinfos von "
+"Medienspielern angezeigt.</p>"
+
+#. i18n: ectx: property (text), widget (QLabel, unity_label)
+#: behaviourconfig.ui:66
+msgid "Enable support for Unity features:"
+msgstr "Unterstützung für Unity-Erweiterungen aktivieren:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, unity)
+#: behaviourconfig.ui:76
+msgid "<p>Toggles support for the Unity D-Bus API.</p>"
+msgstr ""
+"<p>Aktiviert die Unterstützung für die Unity-D-Bus-Programmierschnittstelle."
+"</p>"
+
+#. i18n: ectx: property (text), widget (QLabel, recentDocuments_label)
+#: behaviourconfig.ui:86
+msgid "Show recent documents:"
+msgstr "Zuletzt geöffnete Dokumente anzeigen:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, recentDocuments)
+#: behaviourconfig.ui:96
+msgid ""
+"<p>Toggles support for listing an application's recent documents in its "
+"popup menu.</p>"
+msgstr ""
+"<p>Aktiviert die Anzeige der zuletzt verwendeten Dokumente eines Programms "
+"in dessen Kontextmenü.</p>"
+
+#. i18n: ectx: property (text), widget (QLabel, groupClick_label)
+#: behaviourconfig.ui:106
+msgid "Group click action:"
+msgstr "Aktion für Programmgruppierung:"
+
+#. i18n: ectx: property (toolTip), widget (QComboBox, groupClick)
+#: behaviourconfig.ui:119
+msgid "<p>Configures what should occur when a task group is clicked.</p>"
+msgstr ""
+"<p>Legt fest, was beim Klicken einer Programmgruppierung geschehen soll.</p>"
+
+#. i18n: ectx: property (text), widget (QLabel, middleClick_label)
+#: behaviourconfig.ui:126
+msgid "Middle-click action:"
+msgstr "Aktion für mittlere Maustaste:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: behaviourconfig.ui:142
+msgid "Filters"
+msgstr "Filter"
+
+#. i18n: ectx: property (text), widget (QLabel, showOnlyCurrentScreen_label)
+#: behaviourconfig.ui:151
+msgid "Only show tasks from the current screen:"
+msgstr "Nur Vorgänge des aktuellen Bildschirms anzeigen:"
+
+#. i18n: ectx: property (text), widget (QLabel, showOnlyCurrentDesktop_label)
+#: behaviourconfig.ui:171
+msgid "Only show tasks from the current desktop:"
+msgstr "Nur Fenster der aktuellen Arbeitsfläche anzeigen:"
+
+#. i18n: ectx: property (text), widget (QLabel, showOnlyCurrentActivity_label)
+#: behaviourconfig.ui:191
+msgid "Only show tasks from the current activity:"
+msgstr "Nur Aufgaben der aktuellen Aktivität anzeigen:"
+
+#: dockconfig.cpp:66
+msgid "Dock Manager"
+msgstr "Dock-Verwaltung"
+
+#: dockconfig.cpp:165
+msgid "Open"
+msgstr "Öffnen"
+
+#: dockconfig.cpp:184
+#, kde-format
+msgid ""
+"Sorry, failed to download\n"
+"%1"
+msgstr "Das Herunterladen von %1 ist fehlgeschlagen"
+
+#: dockconfig.cpp:258
+msgid "<p>Contents of metadata file are invalid.<ul>"
+msgstr "<p>Der Inhalt der Metadatendatei ist ungültig.<ul>"
+
+#: dockconfig.cpp:260
+msgid "<li><i>Name</i> field is missing.</li>"
+msgstr "<li>Das Feld <i>Name</i> fehlt.</li>"
+
+#: dockconfig.cpp:263
+msgid "<li><i>Description</i> field is missing.</li>"
+msgstr "<li>Das Feld <i>Beschreibung</i> fehlt.</li>"
+
+#: dockconfig.cpp:268
+msgid "<p>Metadata file does not contain <i>DockmanagerHelper</i> group.</p>"
+msgstr ""
+"<p>Die Metadatendatei enthält keine Gruppe <i>DockmanagerHelper</i>.</p>"
+
+#: dockconfig.cpp:272 dockconfig.cpp:341
+msgid "Invalid DockManager plugin."
+msgstr "Ungültiges Dock-Verwaltung-Modul."
+
+#: dockconfig.cpp:275
+#, kde-format
+msgid "<p>A Plugin named <b>%1</b> already exists.</p><p>Overwrite?</p>"
+msgstr ""
+"<p>Ein Modul mit dem Namen <b>%1</b> existiert bereits.</p><p>Möchten Sie es "
+"überschreiben?</p>"
+
+#: dockconfig.cpp:278
+msgid "Overwrite?"
+msgstr "Überschreiben?"
+
+#: dockconfig.cpp:282 dockconfig.cpp:287
+#, kde-format
+msgid ""
+"<p>Sorry, failed to remove previous plugin metadata file.</p><p><i>%1</i></p>"
+msgstr ""
+"<p>Das Entfernen der Metadatendatei des vorherigen Moduls ist fehlgeschlagen."
+"</p><p><i>%1</i></p>"
+
+#: dockconfig.cpp:292
+#, kde-format
+msgid "<p>Sorry, failed to create scripts folder.</p><p><i>%1</i></p>"
+msgstr ""
+"<p>Die Erstellung des Skriptordners ist fehlgeschlagen.</p><p><i>%1</i></p>"
+
+#: dockconfig.cpp:297
+#, kde-format
+msgid "<p>Sorry, failed to create metadata folder.</p><p><i>%1</i></p>"
+msgstr ""
+"<p>Die Erstellung des Metadatenordners ist fehlgeschlagen.</p><p><i>%1</i></"
+"p>"
+
+#: dockconfig.cpp:304
+msgid "Sorry, failed to install script file."
+msgstr "Die Installation der Skriptdatei ist fehlgeschlagen."
+
+#: dockconfig.cpp:311
+msgid "Sorry, failed to install metadata file."
+msgstr "Die Installation der Metadatendatei ist fehlgeschlagen."
+
+#: dockconfig.cpp:335
+msgid "<li>Script file is missing.</li>"
+msgstr "<li>Die Skriptdatei fehlt.</li>"
+
+#: dockconfig.cpp:338
+msgid "<li>Metadata file is missing.</li>"
+msgstr "<li>Die Metadatendatei fehlt.</li>"
+
+#: dockconfig.cpp:358
+#, kde-format
+msgid "<p>Are you sure you wish to delete <b>%1</b></p><p><i>(%2)</i></p>"
+msgstr ""
+"<p>Sind Sie sicher, dass Sie <b>%1</b> löschen möchten?</p><p><i>(%2)</i></p>"
+
+#: dockconfig.cpp:360
+msgid "Remove Script"
+msgstr "Skript entfernen"
+
+#: dockconfig.cpp:376
+#, kde-format
+msgid "<p>Failed to delete the script file.</p><p><i>%1</i></p>"
+msgstr "<p>Fehler beim Entfernen der Skriptdatei .</p><p><i>%1</i></p>"
+
+#: dockconfig.cpp:586
+#, kde-format
+msgid "<tr><td align=\"right\">Script File:</td><td>%1</td></tr>"
+msgstr "<tr><td align=\"right\">Skriptdatei:</td><td>%1</td></tr>"
+
+#: dockconfig.cpp:587
+#, kde-format
+msgid "<tr><td align=\"right\">Location:</td><td>%1</td></tr>"
+msgstr "<tr><td align=\"right\">Ort:</td><td>%1</td></tr>"
+
+#: dockconfig.cpp:588
+#, kde-format
+msgid "<tr><td align=\"right\">Application:</td><td>%1</td></tr>"
+msgstr "<tr><td align=\"right\">Programm:</td><td>%1</td></tr>"
+
+#: dockconfig.cpp:589
+#, kde-format
+msgid "<tr><td align=\"right\">D-Bus:</td><td>%1</td></tr>"
+msgstr "<tr><td align=\"right\">D-Bus:</td><td>%1</td></tr>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enable)
+#: dockconfig.ui:20
+msgid "Enable DockManager Plugins"
+msgstr "Dock-Verwaltung-Module aktivieren"
+
+#. i18n: ectx: property (text), widget (QPushButton, addButton)
+#: dockconfig.ui:34
+msgid "Add"
+msgstr "Hinzufügen"
+
+#. i18n: ectx: property (text), widget (QPushButton, removeButton)
+#: dockconfig.ui:41
+msgid "Remove"
+msgstr "Entfernen"
+
+#: recentdocuments.cpp:154
+msgid "Recent Documents"
+msgstr "Zuletzt geöffnete Dokumente"
+
+#: tasks.cpp:563
+msgid "Appearance"
+msgstr "Erscheinungsbild"
+
+#: tasks.cpp:564
+msgid "Behaviour"
+msgstr "Verhalten"
+
+#: tasks.cpp:566
+msgid "Do Not Show"
+msgstr "Nicht anzeigen"
+
+#: tasks.cpp:567
+msgid "Show Immediately"
+msgstr "Sofort anzeigen"
+
+#: tasks.cpp:568
+msgid "Show After Delay"
+msgstr "Verzögert anzeigen"
+
+#: tasks.cpp:574
+msgid "Minimize/Restore"
+msgstr "Minimieren/Wiederherstellen"
+
+#: tasks.cpp:575
+msgid "Present Windows Effect"
+msgstr "Effekt „Fenster zeigen“"
+
+#: tasks.cpp:576
+msgid "Show Popup Menu"
+msgstr "Aufklappmenü anzeigen"
+
+#: tasks.cpp:579
+msgid "Use Workspace Theme"
+msgstr "Arbeitsflächen-Design verwenden"
+
+#: tasks.cpp:580
+msgid "Use Indicators"
+msgstr "Indikatoren verwenden"
+
+#: tasks.cpp:581
+msgid "Use Indicators & Colored Background"
+msgstr "Indikatoren und farbigen Hintergrund verwenden"
+
+#: tasks.cpp:583
+msgid "Never Show"
+msgstr "Niemals anzeigen"
+
+#: tasks.cpp:584
+msgid "Show When Required"
+msgstr "Anzeigen wenn benötigt"
+
+#: tasks.cpp:585
+msgid "Always Show"
+msgstr "Immer anzeigen"
+
+#: tasks.cpp:587
+msgid "Start New Instance"
+msgstr "Neue Instanz starten"
+
+#: tasks.cpp:588
+msgid "Close Application"
+msgstr "Programm beenden"
+
+#: tasks.cpp:589
+msgid "Move To Current Desktop"
+msgstr "Auf aktuelle Arbeitsfläche verschieben"
+
+#: tasks.cpp:590
+msgid "Nothing"
+msgstr "Nichts"
+
+#: tasks.cpp:605
+msgid "Automatic"
+msgstr "Automatisch"
+
+#: tasks.cpp:610
+msgid "Manually"
+msgstr "Manuell"
+
+#: tasks.cpp:611
+msgid "Alphabetically"
+msgstr "Alphabetisch"
+
+#: tasks.cpp:612
+msgid "By Desktop"
+msgstr "Nach Arbeitsfläche"
+
+#: tasks.cpp:717
+msgid "Unlock Launchers"
+msgstr "Starter entsperren"
+
+#: tasks.cpp:723
+msgid "Lock Launchers"
+msgstr "Starter sperren"
+
+#: tasks.cpp:731
+msgid "Refresh"
+msgstr "Aktualisieren"
+
+#: tooltips/windowpreview.cpp:387
+msgid "(On All Desktops)"
+msgstr "(Auf allen Arbeitsflächen)"
+
+#: tooltips/windowpreview.cpp:388
+#, kde-format
+msgctxt "Which virtual desktop a window is currently on"
+msgid "(On %1)"
+msgstr "(auf %1)"
+
+#: tooltips/windowpreview.cpp:408
+#, kde-format
+msgid "Plus %1 more..."
+msgstr "Und %1 weitere ..."

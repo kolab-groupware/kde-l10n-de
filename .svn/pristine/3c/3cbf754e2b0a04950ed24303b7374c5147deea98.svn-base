@@ -1,0 +1,202 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2010.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kjs_man-kjs.1\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:13+0000\n"
+"PO-Revision-Date: 2010-08-24 20:50+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdelibs/doc/kjs/man-kjs.1.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 876640\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: man-kjs.1.docbook:9
+#, no-c-format
+msgid "&kde; User's Manual"
+msgstr "&kde;-Benutzerhandbuch"
+
+#. Tag: author
+#: man-kjs.1.docbook:11
+#, no-c-format
+msgid "<firstname>Harri</firstname> <surname>Porten</surname>"
+msgstr "<firstname>Harri</firstname> <surname>Porten</surname>"
+
+#. Tag: email
+#: man-kjs.1.docbook:15
+#, no-c-format
+msgid "porten@kde.org"
+msgstr "porten@kde.org"
+
+#. Tag: date
+#: man-kjs.1.docbook:19
+#, no-c-format
+msgid "2008-10-15"
+msgstr "2008-10-15"
+
+#. Tag: releaseinfo
+#: man-kjs.1.docbook:20
+#, no-c-format
+msgid "0.01.01"
+msgstr "0.01.01"
+
+#. Tag: manvolnum
+#: man-kjs.1.docbook:26
+#, no-c-format
+msgid "<manvolnum>1</manvolnum>"
+msgstr "<manvolnum>1</manvolnum>"
+
+#. Tag: refpurpose
+#: man-kjs.1.docbook:31
+#, no-c-format
+msgid "&kde; ECMAScript compatible interpreter"
+msgstr "&kde;-ECMAScript-kompatibler Interpreter"
+
+#. Tag: title
+#: man-kjs.1.docbook:35
+#, no-c-format
+msgid "Synopsis"
+msgstr "Kurzbeschreibung"
+
+#. Tag: cmdsynopsis
+#: man-kjs.1.docbook:37
+#, no-c-format
+msgid ""
+"<command>kjs</command> <group> <arg choice=\"opt\">--help</arg> <arg choice="
+"\"opt\">-help</arg> <arg choice=\"opt\">-h</arg> </group> <group> <arg "
+"choice=\"opt\">-e<replaceable> statement</replaceable></arg> </group> "
+"<group> <arg choice=\"plain\"><replaceable>script</replaceable></arg> </"
+"group>"
+msgstr ""
+"<command>kjs</command> <group> <arg choice=\"opt\">--help</arg> <arg choice="
+"\"opt\">-help</arg> <arg choice=\"opt\">-h</arg> </group> <group> <arg "
+"choice=\"opt\">-e<replaceable> statement</replaceable></arg> </group> "
+"<group> <arg choice=\"plain\"><replaceable>script</replaceable></arg> </"
+"group>"
+
+#. Tag: title
+#: man-kjs.1.docbook:60
+#, no-c-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. Tag: para
+#: man-kjs.1.docbook:62
+#, no-c-format
+msgid "<command>kjs</command> is KDE ECMAScript/JavaScript engine."
+msgstr "<command>kjs</command> ist der KDE-ECMAScript/JavaScript-Interpreter."
+
+#. Tag: title
+#: man-kjs.1.docbook:141
+#, no-c-format
+msgid "Application Options"
+msgstr "Anwendungsoptionen"
+
+#. Tag: term
+#: man-kjs.1.docbook:145
+#, no-c-format
+msgid "<option>--help</option>,<option>-help</option>,<option>-h</option>"
+msgstr "<option>--help</option>,<option>-help</option>,<option>-h</option>"
+
+#. Tag: para
+#: man-kjs.1.docbook:147
+#, no-c-format
+msgid "Show <command>kjscmd</command> usage."
+msgstr "Hilfe zu <command>kjscmd</command> anzeigen."
+
+#. Tag: term
+#: man-kjs.1.docbook:154
+#, no-c-format
+msgid "<option>-e</option><parameter> statement</parameter>"
+msgstr "<option>-e</option><parameter> statement</parameter>"
+
+#. Tag: para
+#: man-kjs.1.docbook:156
+#, no-c-format
+msgid "Executes the statement and exits. For example:"
+msgstr "Führt den Skript-Ausdruck aus und beendet anschließend. Beispiel:"
+
+#. Tag: screen
+#: man-kjs.1.docbook:157
+#, no-c-format
+msgid "<command>kjs</command> -e \"print('hello world')\""
+msgstr "<command>kjs</command> -e \"print('hello world')\""
+
+#. Tag: parameter
+#: man-kjs.1.docbook:162
+#, no-c-format
+msgid "script"
+msgstr "script"
+
+#. Tag: para
+#: man-kjs.1.docbook:164
+#, no-c-format
+msgid "Executes the statements included in file <parameter>script</parameter>."
+msgstr ""
+"Führt die Skript-Befehle aus, die in der Datei <parameter>script</parameter> "
+"enthalten sind."
+
+#. Tag: title
+#: man-kjs.1.docbook:173
+#, no-c-format
+msgid "Usage"
+msgstr "Benutzung"
+
+#. Tag: para
+#: man-kjs.1.docbook:174
+#, no-c-format
+msgid ""
+"<command>kjs</command> <parameter>file</parameter>, as many other "
+"interpreters, when called without parameters uses a line editor to enter "
+"statements, showing the prompt <literallayout>JS></literallayout> To exit "
+"the line editor type <command>quit()</command> or press <command>Ctrl+D</"
+"command>."
+msgstr ""
+"Wird <command>kjs</command> <parameter>file</parameter> ohne Parameter "
+"aufgerufen, verhält sich das Programm wie viele andere Interpreter auch: Es "
+"wird eine Eingabeaufforderung <literallayout>JS></literallayout> angezeigt, "
+"an der Sie Befehle eingeben können. Beenden Sie die Eingabeaufforderung mit "
+"dem Befehl <command>quit()</command> oder drücken Sie <command>Strg+D</"
+"command>."
+
+#. Tag: title
+#: man-kjs.1.docbook:183
+#, no-c-format
+msgid "See Also"
+msgstr "Siehe auch"
+
+#. Tag: para
+#: man-kjs.1.docbook:184
+#, no-c-format
+msgid "<replaceable>kjs</replaceable>(1)"
+msgstr "<replaceable>kjs</replaceable>(1)"
+
+#. Tag: title
+#: man-kjs.1.docbook:188
+#, no-c-format
+msgid "Bugs"
+msgstr "Fehler"
+
+#. Tag: para
+#: man-kjs.1.docbook:189
+#, no-c-format
+msgid ""
+"There are probably tons of bugs. Use <ulink url=\"http://bugs.kde.org\">bugs."
+"kde.org</ulink> to report them."
+msgstr ""
+"Berichten Sie Fehler auf <ulink url=\"http://bugs.kde.org\">bugs.kde.org</"
+"ulink>."
+
+#~ msgid "<command>kjs</command>"
+#~ msgstr "<command>kjs</command>"
+
+#~ msgid "<date>2008-10-15</date> <releaseinfo>0.01.01</releaseinfo>"
+#~ msgstr "<date>15.10.2008</date> <releaseinfo>0.01.01</releaseinfo>"

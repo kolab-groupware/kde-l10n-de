@@ -1,0 +1,193 @@
+#! /bin/bash
+
+function check_xml() 
+{
+  if test -f $trans_doc; then
+   case $trans_doc in
+     */api/index.docbook) ;;
+     */index.docbook|*/man-*.docbook)
+       dir=`dirname $trans_doc`
+       status=`svn st $dir`
+       if [ "x$status" != "x" ]; then
+         if ! $MEINPROC_COMMAND $trans_doc > /dev/null; then
+           $MEINPROC_COMMAND $trans_doc
+            if test "$delete" -eq 1; then
+              echo "RESTORING $trans_doc"
+              echo "RESTORING $trans_doc">>update_xml.log
+              rm -f $trans_doc
+              svn revert $trans_doc
+            else
+              echo "Failed on $trans_doc. Exiting."
+              exit 1
+            fi
+         fi
+       fi
+       ;;
+     *) ;;
+   esac
+  fi
+}
+
+LANG=C
+LC_ALL=C
+LC_MESSAGES=C
+
+. scripts/find_meinproc
+
+# Check for some version of meinproc
+MEINPROC_COMMAND=`find_meinproc`
+test -z "${MEINPROC_COMMAND}" && echo "No suitable version of meinproc was found. Exiting..." && exit 1
+
+if test $# -eq 0 || test "$1" = "--help" ; then
+  echo "update_xml [--nodelete] [--commit] [--noupdate] <lang_subdir> [module [program]]"
+  exit
+fi
+
+delete=1
+if test "$1" = "--nodelete"; then
+  delete=0
+  shift
+fi
+
+commit=0
+if test "$1" = "--commit"; then
+  commit=1
+  shift
+fi
+
+update=1
+if test "$1" = "--noupdate"; then
+  update=0
+  shift
+fi
+
+subdir=$1
+selection=$2
+if test -z "$selection"; then
+   selection=*
+   if test "$update" -eq 1; then
+     bash ./scripts/populate_documentation.sh
+   fi
+   modules=`ls -1 documentation`
+else
+   modules=$selection
+   if test "$update" -eq 1; then
+     bash ./scripts/populate_documentation.sh $selection
+   fi
+fi
+program=$3
+
+if [ $commit = "1" ]; then
+	if test -n "$program"; then
+		echo "--commit is not supported with a single catalog"
+		exit
+	fi
+fi
+
+for m in $modules; do
+   test -d documentation/$m || continue
+	 
+   files=`find -H documentation/$m -name "*.docbook"`
+
+   if test -n "$files"; then
+     for i in $files; do
+	case $i in
+	  *_original.docbook)
+		continue
+		;;
+          *$selection*)
+		;;
+	  *)
+ 	    continue;;
+	esac
+	j=`echo $i | sed -e "s#documentation/$m/##" | sed -e 's#.docbook$##' | sed -e 's#/index$##' | sed -e "s#/#_#g"`
+	translations=`ls -1 $subdir/docmessages/$m/$j.po 2>/dev/null`
+	for t in $translations;	do
+		# If a single program selected, skip unless this is the one.
+		if test -n "$program"; then
+			test `echo $t | sed "s#/$program.*.po##"` = $t && continue
+		fi
+		bd=`dirname $t`
+		p=`echo $i | sed -e "s#documentation/$m/##"`
+		trans_doc="$bd/../../docs/$m/$p"
+		dir=`dirname $trans_doc`
+		mbase=`dirname $dir`
+		result=`msgfmt -o /dev/null --statistics $t 2>&1`
+                ret=$?
+                if test $delete -eq 0 && test "$ret" -ne 0; then
+                      echo "ERROR: msgfmt $t failed. Exiting."
+                      exit 1
+                fi
+		if test "$ret" -ne 0 || echo $result | grep -q untranslated; then
+		   echo "$t: $result"
+	           continue
+		fi
+		if echo $result | grep -q fuzzy; then
+	  	   echo "$t: $result" 
+	           continue
+		fi
+		echo po2xml $i $t
+		if ! po2xml $i $t > temp.xml; then
+                   echo "ERROR: po2xml $i $t failed! Exiting!"
+                   exit 1
+                fi
+		language=`cat $bd/../language `
+		if test -n "$language"; then 
+		   sed -e "s,<!ENTITY % English,<!ENTITY % $language," temp.xml > temp.xml.new
+		   mv temp.xml.new temp.xml
+		fi
+		lang=$subdir
+
+        # call external postfilter if it exists (try several locations)
+        postfilter="$bd/../post-po2xml"
+        test -x $postfilter || postfilter="$subdir/internal/post-po2xml"
+        test -x $postfilter || postfilter="$subdir/../internal/post-po2xml"
+        if test -x $postfilter; then
+            if $postfilter <temp.xml >temp.xml.new; then
+                mv temp.xml.new temp.xml
+            else
+                echo "ERROR: $postfilter failed! Exiting!"
+                rm -f temp.xml.new
+                exit 1
+            fi
+        fi
+
+		# if missing, add base module dir to svn (<lang>/docs/<base module>)
+		if ! svn info $mbase 1>/dev/null 2>/dev/null || test ! -d $mbase; then
+		   mkdir -p $mbase
+		   svn add --force --parents -N $mbase
+		fi
+		
+		if ! svn info $dir 1>/dev/null 2>/dev/null || test ! -d $dir; then
+			mkdir -p $dir
+			rm -f $trans_doc
+			mv temp.xml $trans_doc
+			echo Makefile > ignore.$$
+			echo CMake* >> ignore.$$
+			  # For those who build in the same dir:
+			  echo *.cmake >> ignore.$$
+			  echo DartTextfile.txt >> ignore.$$
+			svn add --force $dir
+			svn ps svn:ignore -F ignore.$$ $dir
+			rm ignore.$$
+		else
+			if ! cmp -s temp.xml $trans_doc; then
+				:
+				rm -f $trans_doc
+				mv temp.xml $trans_doc
+				if test "`svn status $trans_doc | cut -b-6`" = '?     ';  then
+					svn add --force $trans_doc 
+				fi
+			else
+				rm temp.xml
+			fi
+		fi
+		check_xml
+	done
+     done
+   fi
+done
+
+if [ $commit = "1" ]; then
+	svn commit -m "SVN_SILENT made docs" $subdir/docs/$selection
+fi

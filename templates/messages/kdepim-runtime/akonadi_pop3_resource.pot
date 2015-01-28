@@ -1,0 +1,594 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-15 12:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: accountdialog.cpp:82
+msgid "POP3 Account Settings"
+msgstr ""
+
+#: accountdialog.cpp:107
+msgid " minute"
+msgid_plural " minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: accountdialog.cpp:168
+msgid "POP3 Account"
+msgstr ""
+
+#: accountdialog.cpp:241
+msgid "Wallet disabled in system settings"
+msgstr ""
+
+#: accountdialog.cpp:270
+msgid "Unable to open wallet"
+msgstr ""
+
+#: accountdialog.cpp:334
+msgid ""
+"The server does not seem to support unique message numbers, but this is a "
+"requirement for leaving messages on the server.\n"
+"Since some servers do not correctly announce their capabilities you still "
+"have the possibility to turn leaving fetched messages on the server on."
+msgstr ""
+
+#: accountdialog.cpp:350
+msgid ""
+"The server does not seem to support fetching message headers, but this is a "
+"requirement for filtering messages on the server.\n"
+"Since some servers do not correctly announce their capabilities you still "
+"have the possibility to turn filtering messages on the server on."
+msgstr ""
+
+#: accountdialog.cpp:365
+msgid ""
+"Please note that this feature can cause some POP3 servers that do not "
+"support pipelining to send corrupted mail;\n"
+"this is configurable, though, because some servers support pipelining but do "
+"not announce their capabilities. To check whether your POP3 server announces "
+"pipelining support use the \"Check What the Server Supports\" button at the "
+"bottom of the dialog;\n"
+"if your server does not announce it, but you want more speed, then you "
+"should do some testing first by sending yourself a batch of mail and "
+"downloading it."
+msgstr ""
+
+#: accountdialog.cpp:393
+msgid "Please specify a server and port on the General tab first."
+msgstr ""
+
+#: accountdialog.cpp:427
+msgid "Unable to connect to the server, please verify the server address."
+msgstr ""
+
+#: accountdialog.cpp:468
+msgid ""
+"The server does not seem to support pipelining; therefore, this option has "
+"been disabled.\n"
+"Since some servers do not correctly announce their capabilities you still "
+"have the possibility to turn pipelining on. But please note that this "
+"feature can cause some POP servers that do not support pipelining to send "
+"corrupt messages. So before using this feature with important mail you "
+"should first test it by sending yourself a larger number of test messages "
+"which you all download in one go from the POP server."
+msgstr ""
+
+#: accountdialog.cpp:489
+msgid ""
+"The server does not seem to support unique message numbers, but this is a "
+"requirement for leaving messages on the server; therefore, this option has "
+"been disabled.\n"
+"Since some servers do not correctly announce their capabilities you still "
+"have the possibility to turn leaving fetched messages on the server on."
+msgstr ""
+
+#: accountdialog.cpp:504
+msgid ""
+"The server does not seem to support fetching message headers, but this is a "
+"requirement for filtering messages on the server; therefore, this option has "
+"been disabled.\n"
+"Since some servers do not correctly announce their capabilities you still "
+"have the possibility to turn filtering messages on the server on."
+msgstr ""
+
+#: accountdialog.cpp:539
+msgid " day"
+msgid_plural " days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: accountdialog.cpp:545
+msgid " message"
+msgid_plural " messages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: accountdialog.cpp:551
+msgid " byte"
+msgid_plural " bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: jobs.cpp:285
+msgid "Unable to create POP3 slave, aborting mail check."
+msgstr ""
+
+#: pop3resource.cpp:104
+msgid "Mail check aborted."
+msgstr ""
+
+#: pop3resource.cpp:110
+msgid "Mail check was canceled manually."
+msgstr ""
+
+#: pop3resource.cpp:143
+#, kde-format
+msgid "Please enter the username and password for account '%1'."
+msgstr ""
+
+#: pop3resource.cpp:169
+msgid ""
+"You are asked here because the password could not be loaded from the wallet."
+msgstr ""
+
+#: pop3resource.cpp:208
+msgid "Account:"
+msgstr ""
+
+#: pop3resource.cpp:225
+msgid "No username and password supplied."
+msgstr ""
+
+#: pop3resource.cpp:248
+#, kde-format
+msgid "Preparing transmission from \"%1\"."
+msgstr ""
+
+#: pop3resource.cpp:275
+msgid "Executing precommand."
+msgstr ""
+
+#: pop3resource.cpp:307
+msgid "You are asked here because the previous login was not successful."
+msgstr ""
+
+#: pop3resource.cpp:309
+msgid "You are asked here because the username you supplied is empty."
+msgstr ""
+
+#: pop3resource.cpp:311
+msgid "You are asked here because the wallet password storage is disabled."
+msgstr ""
+
+#: pop3resource.cpp:345
+msgid "Fetching mail listing."
+msgstr ""
+
+#: pop3resource.cpp:404
+msgid "Saving downloaded messages."
+msgstr ""
+
+#: pop3resource.cpp:419
+msgid "Deleting messages from the server."
+msgstr ""
+
+#: pop3resource.cpp:447
+msgid "Saving password to the wallet."
+msgstr ""
+
+#: pop3resource.cpp:465
+msgid "Error while trying to get the local inbox folder, aborting mail check."
+msgstr ""
+
+#: pop3resource.cpp:471
+#, kde-format
+msgid ""
+"<qt>The folder you deleted was associated with the account <b>%1</b> which "
+"delivered mail into it. The folder the account delivers new mail into was "
+"reset to the main Inbox folder.</qt>"
+msgstr ""
+
+#: pop3resource.cpp:491
+msgid ""
+"Error while trying to get the folder for incoming mail, aborting mail check."
+msgstr ""
+
+#: pop3resource.cpp:504
+msgid "Could not find folder for incoming mail, aborting mail check."
+msgstr ""
+
+#: pop3resource.cpp:516
+msgid "Error while executing precommand."
+msgstr ""
+
+#: pop3resource.cpp:531
+#, kde-format
+msgid "Unable to login to the server %1."
+msgstr ""
+
+#: pop3resource.cpp:542
+msgid "Error while getting the list of messages on the server."
+msgstr ""
+
+#: pop3resource.cpp:557
+msgid "Error while getting list of unique mail identifiers from the server."
+msgstr ""
+
+#: pop3resource.cpp:572
+#, kde-format
+msgid ""
+"Your POP3 server (Account: %1) does not support the UIDL command: this "
+"command is required to determine, in a reliable way, which of the mails on "
+"the server KMail has already seen before;\n"
+"the feature to leave the mails on the server will therefore not work "
+"properly."
+msgstr ""
+
+#: pop3resource.cpp:586
+msgid "Error while fetching mails from the server."
+msgstr ""
+
+#: pop3resource.cpp:655
+#, kde-format
+msgid ""
+"Fetching message %1 of %2 (%3 of %4 KB) for %5 (%6 KB remain on the server)."
+msgstr ""
+
+#: pop3resource.cpp:663
+#, kde-format
+msgid "Fetching message %1 of %2 (%3 of %4 KB) for %5"
+msgstr ""
+
+#: pop3resource.cpp:684
+msgid "Unable to store downloaded mails."
+msgstr ""
+
+#: pop3resource.cpp:815
+msgid "Failed to delete the messages from the server."
+msgstr ""
+
+#: pop3resource.cpp:855
+msgid "Finished mail check, no message downloaded."
+msgstr ""
+
+#: pop3resource.cpp:857
+#, kde-format
+msgid "Finished mail check, 1 message downloaded."
+msgid_plural "Finished mail check, %1 messages downloaded."
+msgstr[0] ""
+msgstr[1] ""
+
+#: pop3resource.cpp:867
+msgid "Unable to complete the mail fetch."
+msgstr ""
+
+#: pop3resource.cpp:1005
+msgid "Mail check already in progress, unable to start a second check."
+msgstr ""
+
+#: pop3resource.cpp:1027
+msgid "Ready"
+msgstr ""
+
+#: pop3resource.cpp:1030
+msgid "Mail check aborted after going offline."
+msgstr ""
+
+#: pop3resource.cpp:1032
+msgid "Offline"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, titleLabel)
+#: popsettings.ui:23
+msgid "Account Type: POP Account"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, page1)
+#: popsettings.ui:46
+msgid "General"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: popsettings.ui:65
+msgid "Mail Checking Options"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, intervalCheck)
+#: popsettings.ui:71
+msgid ""
+"If active, the POP3 account will be checked for new mail every x minutes"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, intervalCheck)
+#: popsettings.ui:74
+msgid "Enable &interval mail checking"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, intervalLabel)
+#: popsettings.ui:83
+msgid "Check mail interval:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: popsettings.ui:111
+msgid "Account Information"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, label_2)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, loginEdit)
+#: popsettings.ui:120 popsettings.ui:182
+msgid ""
+"Your Internet Service Provider gave you a <em>user name</em> which is used "
+"to authenticate you with their servers. It usually is the first part of your "
+"email address (the part before <em>@</em>)."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: popsettings.ui:123
+msgid "Account &name:"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, nameEdit)
+#: popsettings.ui:133
+msgid "Name displayed in the list of accounts"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, nameEdit)
+#: popsettings.ui:136
+msgid "Account name: This defines the name displayed in the account list."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: popsettings.ui:146
+msgid "Incoming mail &server:"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, hostEdit)
+#: popsettings.ui:156
+msgid "Address of the mail POP3 server"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, hostEdit)
+#: popsettings.ui:159
+msgid ""
+"The address of the POP3 server, e.g. pop3.yourprovider.org. You should get "
+"this address from your mail provider."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: popsettings.ui:169
+msgid "Username:"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, loginEdit)
+#: popsettings.ui:179
+msgid "The username that identifies you against the mail server"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, passwordLabel)
+#: popsettings.ui:192
+msgid "P&assword:"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, passwordEdit)
+#: popsettings.ui:202
+msgid "Password for access to the mail server"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, passwordEdit)
+#: popsettings.ui:205
+msgid "Password: The password given to you by your mail provider."
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, page2)
+#: popsettings.ui:222
+msgid "Advanced"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_5)
+#: popsettings.ui:228
+msgid "POP Settings"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, leaveOnServerCheck)
+#: popsettings.ui:234
+msgid "If checked the message is not deleted from the mail server"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, leaveOnServerCheck)
+#: popsettings.ui:237
+msgid ""
+"Check this option if you want to fetch only copies of the mails and leave "
+"the original mails on the server."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, leaveOnServerCheck)
+#: popsettings.ui:240
+msgid "Lea&ve fetched messages on the server"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, leaveOnServerDaysCheck)
+#: popsettings.ui:253
+msgid "The original message is deleted from the server after x days"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, leaveOnServerDaysCheck)
+#: popsettings.ui:256
+msgid "Days to leave messages on the server:"
+msgstr ""
+
+#. i18n: ectx: property (suffix), widget (KIntNumInput, leaveOnServerDaysSpin)
+#: popsettings.ui:275
+msgctxt "Number of days that the message will be left on the server."
+msgid " days"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, leaveOnServerCountCheck)
+#: popsettings.ui:282
+msgid "Only the x most recent messages are kept on the server"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, leaveOnServerCountCheck)
+#: popsettings.ui:285
+msgid ""
+"Check this option if you want to only keep the x most recent messages on the "
+"server and delete all older."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, leaveOnServerCountCheck)
+#: popsettings.ui:288
+msgid "Number of messages to keep:"
+msgstr ""
+
+#. i18n: ectx: property (suffix), widget (KIntNumInput, leaveOnServerCountSpin)
+#: popsettings.ui:307
+msgid " messages"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, leaveOnServerSizeCheck)
+#: popsettings.ui:314
+msgid "Keep most recent messages within the quota and delete oldest"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, leaveOnServerSizeCheck)
+#: popsettings.ui:317
+msgid ""
+"If active, most recent messages are kept until the quota is reached and "
+"oldest messages are deleted."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, leaveOnServerSizeCheck)
+#: popsettings.ui:320
+msgid "Maximum megabytes to keep:"
+msgstr ""
+
+#. i18n: ectx: property (suffix), widget (KIntNumInput, leaveOnServerSizeSpin)
+#: popsettings.ui:339
+msgid " MB"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, filterOnServerCheck)
+#. i18n: ectx: property (whatsThis), widget (KIntNumInput, filterOnServerSizeSpin)
+#: popsettings.ui:346 popsettings.ui:359
+msgid ""
+"If you select this option, POP Filters will be used to decide what to do "
+"with messages. You can then select to download, delete or keep them on the "
+"server."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, filterOnServerCheck)
+#: popsettings.ui:349
+msgid "&Filter messages larger than:"
+msgstr ""
+
+#. i18n: ectx: property (suffix), widget (KIntNumInput, filterOnServerSizeSpin)
+#: popsettings.ui:374
+msgid " bytes"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, usePipeliningCheck)
+#: popsettings.ui:381
+msgid "&Use pipelining for faster mail download"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: popsettings.ui:396
+msgid "Destination folder:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, preCommandLabel)
+#: popsettings.ui:403
+msgid "Pre-com&mand:"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, precommand)
+#: popsettings.ui:419
+msgid "Command that is executed before checking mail"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, safeImap)
+#: popsettings.ui:453
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'HandelGotDLig'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'Sans Serif'; font-weight:600;\">SSL/TLS</span><span style=\" font-"
+"family:'Sans Serif';\"> is safe IMAP over port 993;</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'Sans Serif'; font-weight:600;\">STARTTLS</span><span style=\" font-"
+"family:'Sans Serif';\"> will operate on port 143 and switch to a secure "
+"connection directly after connecting;</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'Sans Serif'; font-weight:600;\">None</span><span style=\" font-"
+"family:'Sans Serif';\"> will connect to port 143 but not switch to a secure "
+"connection. This setting is not recommended.</span></p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, safeImap)
+#: popsettings.ui:456
+msgid "Connection Settings"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (KPushButton, checkCapabilities)
+#: popsettings.ui:469
+msgid "Auto Detect"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: popsettings.ui:496
+msgid "Encryption:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, encryptionNone)
+#: popsettings.ui:505
+msgid "None"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, encryptionSSL)
+#: popsettings.ui:515
+msgid "SSL/TLS"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, encryptionTLS)
+#: popsettings.ui:522
+msgid "STARTTLS"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_12)
+#: popsettings.ui:531
+msgid "Authentication:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_13)
+#: popsettings.ui:541
+msgid "Port:"
+msgstr ""
+
+#. i18n: ectx: label, entry (authenticationMethod), group (General)
+#: settings.kcfg:26
+msgid "Defines the authentication type to use"
+msgstr ""

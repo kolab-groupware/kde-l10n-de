@@ -1,0 +1,1272 @@
+# Stephan Johach <hunsum@gmx.de>, 2007.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2007, 2008, 2009, 2010.
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2009, 2013.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkleopatra\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-11-13 05:31+0000\n"
+"PO-Revision-Date: 2013-05-03 10:05+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: backends/chiasmus/chiasmusbackend.cpp:286
+msgid "General"
+msgstr "Allgemein"
+
+#: backends/chiasmus/chiasmusbackend.cpp:341
+#: backends/chiasmus/chiasmusbackend.cpp:440
+msgid "Chiasmus"
+msgstr "Chiasmus"
+
+#: backends/chiasmus/chiasmusbackend.cpp:386
+msgid "Chiasmus command line tool"
+msgstr "Chiasmus-Befehlszeilenprogramm"
+
+#: backends/chiasmus/chiasmusbackend.cpp:460
+#: backends/chiasmus/chiasmusbackend.cpp:466
+#: backends/chiasmus/chiasmusbackend.cpp:495
+#: backends/qgpgme/qgpgmebackend.cpp:380
+#, kde-format
+msgid "Unsupported protocol \"%1\""
+msgstr "Nicht unterstütztes Protokoll „%1“"
+
+#: backends/chiasmus/chiasmusbackend.cpp:482
+#, kde-format
+msgid "File \"%1\" does not exist or is not executable."
+msgstr "Die Datei „%1“ existiert nicht oder ist nicht ausführbar."
+
+#: backends/chiasmus/chiasmusjob.cpp:166
+msgid "Output from chiasmus"
+msgstr "Ausgabe von chiasmus"
+
+#: backends/chiasmus/chiasmusjob.cpp:208 ui/messagebox.cpp:259
+#, kde-format
+msgid "Encryption failed: %1"
+msgstr "Verschlüsseln fehlgeschlagen: %1"
+
+#: backends/chiasmus/chiasmusjob.cpp:209
+#, kde-format
+msgid "Decryption failed: %1"
+msgstr "Entschlüsselung fehlgeschlagen: %1"
+
+#: backends/chiasmus/chiasmusjob.cpp:211
+#, kde-format
+msgid ""
+"The following was received on stderr:\n"
+"%1"
+msgstr ""
+"Auf stderr wurde Folgendes ausgegeben:\n"
+"%1"
+
+#: backends/chiasmus/chiasmuslibrary.cpp:75
+#: backends/chiasmus/chiasmuslibrary.cpp:86
+#, kde-format
+msgid "Failed to load %1: %2"
+msgstr "%1 kann nicht geladen werden: %2"
+
+#: backends/chiasmus/chiasmuslibrary.cpp:87
+msgid "Library does not contain the symbol \"Chiasmus\"."
+msgstr "Die Bibliothek enthält nicht das Symbol „Chiasmus“."
+
+#: backends/chiasmus/obtainkeysjob.cpp:95
+#, kde-format
+msgid "Scanning directory %1..."
+msgstr "Ordner %1 wird eingelesen ..."
+
+#: backends/qgpgme/qgpgmebackend.cpp:89 ui/keyselectiondialog.cpp:256
+#: ui/keyselectiondialog.cpp:258 ui/keyselectiondialog.cpp:265
+#: ui/keyselectiondialog.cpp:267 ui/keyselectiondialog.cpp:268
+msgid "unknown"
+msgstr "unbekannt"
+
+#: backends/qgpgme/qgpgmebackend.cpp:330
+msgid "GpgME"
+msgstr "GpgME"
+
+#: backends/qgpgme/qgpgmebackend.cpp:354
+#, kde-format
+msgid "GPGME was compiled without support for %1."
+msgstr "GPGME wurde ohne Unterstützung für %1 kompiliert."
+
+#: backends/qgpgme/qgpgmebackend.cpp:356
+#, kde-format
+msgid "Engine %1 is not installed properly."
+msgstr "Das Hintergrundprogramm %1 wurde nicht korrekt installiert."
+
+#: backends/qgpgme/qgpgmebackend.cpp:358
+#, kde-format
+msgid "Engine %1 version %2 installed, but at least version %3 is required."
+msgstr ""
+"Das Hintergrundprogramm %1 wurde in Version %2 installiert; es wird aber "
+"mindestens Version %3 benötigt."
+
+#: backends/qgpgme/qgpgmebackend.cpp:362
+#, kde-format
+msgid "Unknown problem with engine for protocol %1."
+msgstr "Unbekanntes Problem mit dem Hintergrundprogramm für das Protokoll %1."
+
+#: backends/qgpgme/qgpgmecryptoconfig.cpp:112
+msgid "program terminated unexpectedly"
+msgstr "Das Programm hat sich unerwartet beendet."
+
+#: backends/qgpgme/qgpgmecryptoconfig.cpp:114
+msgid "program not found or cannot be started"
+msgstr "Das Programm kann nicht gefunden oder gestartet werden."
+
+#: backends/qgpgme/qgpgmecryptoconfig.cpp:117
+#: backends/qgpgme/qgpgmenewcryptoconfig.cpp:97
+#, kde-format
+msgid "<qt>Failed to execute gpgconf:<p>%1</p></qt>"
+msgstr "<qt>Fehler bei der Ausführung von gpgconf:<p>%1</p></qt>"
+
+#: backends/qgpgme/qgpgmecryptoconfig.cpp:367
+msgid ""
+"Could not start gpgconf.\n"
+"Check that gpgconf is in the PATH and that it can be started."
+msgstr ""
+"gpgconf lässt sich nicht starten.\n"
+"Überprüfen Sie, ob sich gpgconf im PATH befindet und gestartet werden kann."
+
+#: backends/qgpgme/qgpgmecryptoconfig.cpp:373
+#: backends/qgpgme/qgpgmenewcryptoconfig.cpp:208
+#, kde-format
+msgid "Error from gpgconf while saving configuration: %1"
+msgstr "Fehler in gpgconf beim Speichern der Einstellungen: %1"
+
+#: backends/qgpgme/qgpgmekeylistjob.cpp:152
+#: backends/qgpgme/qgpgmelistallkeysjob.cpp:154 ui/keyrequester.cpp:231
+#: ui/keyselectiondialog.cpp:603
+#, kde-format
+msgid ""
+"<qt><p>An error occurred while fetching the keys from the backend:</p><p><b>"
+"%1</b></p></qt>"
+msgstr ""
+"<qt><p>Bei der Abfrage der Schlüssel vom Hintergrundprogramm ist folgender "
+"Fehler aufgetreten:</p><p><b>%1</b></p></qt>"
+
+#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:50
+msgid "Generating DSA key..."
+msgstr "DSA-Schlüssel wird erzeugt ..."
+
+#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:54
+msgid "Generating ElGamal key..."
+msgstr "ElGamal-Schlüssel wird erzeugt ..."
+
+#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:59
+msgid "Searching for a large prime number..."
+msgstr "Suche nach einer großen Primzahl läuft ..."
+
+#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:63
+msgid ""
+"Waiting for new entropy from random number generator (you might want to "
+"exercise the harddisks or move the mouse)..."
+msgstr ""
+"Warten auf neue Zufallsdaten vom Zufallszahlengenerator (Sie können zur "
+"Beschleunigung Festplattenaktivität erzeugen oder auch die Maus bewegen) ..."
+
+#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:67
+msgid "Please wait..."
+msgstr "Bitte warten ..."
+
+#: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:71
+msgid ""
+"Starting gpg-agent (you should consider starting a global instance "
+"instead)..."
+msgstr ""
+"gpg-agent wird gestartet (Sie sollten in Betracht ziehen, eine globale "
+"Instanz zu starten) ..."
+
+#: kleo/checksumdefinition.cpp:105
+#, kde-format
+msgid "Error in checksum definition %1: %2"
+msgstr "Fehler in der Prüfsummen-Definition %1: %2"
+
+#: kleo/checksumdefinition.cpp:150
+#, kde-format
+msgid "Cannot use both %f and | in '%1'"
+msgstr "Kann nicht beides, %f und | in '%1' benutzen"
+
+#: kleo/checksumdefinition.cpp:158
+#, kde-format
+msgid "Quoting error in '%1' entry"
+msgstr "Fehler mit Anführungszeichen in Eintrag '%1'"
+
+#: kleo/checksumdefinition.cpp:160
+#, kde-format
+msgid "'%1' too complex (would need shell)"
+msgstr "'%1' zu komplex (würde eine Shell benötigen)"
+
+#: kleo/checksumdefinition.cpp:163
+#, kde-format
+msgid "'%1' entry is empty/missing"
+msgstr "'%1' Eintrag ist leer/fehlt"
+
+#: kleo/checksumdefinition.cpp:170
+#, kde-format
+msgid "'%1' empty or not found"
+msgstr "'%1' ist leer oder wurde nicht gefunden"
+
+#: kleo/checksumdefinition.cpp:206
+msgid "'id' entry is empty/missing"
+msgstr "Der Eintrag „id“ ist leer oder fehlt"
+
+#: kleo/checksumdefinition.cpp:208
+msgid "'output-file' entry is empty/missing"
+msgstr "Der Eintrag „output-file“ ist leer oder fehlt"
+
+#: kleo/checksumdefinition.cpp:210
+msgid "'file-patterns' entry is empty/missing"
+msgstr "Der Eintrag „file-patterns“ ist leer oder fehlt"
+
+#: kleo/checksumdefinition.cpp:356
+#, kde-format
+msgid "Caught unknown exception in group %1"
+msgstr "Unbekannte Ausnahme in Gruppe %1 aufgetreten"
+
+#: kleo/cryptobackendfactory.cpp:172
+#, kde-format
+msgid "While scanning for %1 support in backend %2:"
+msgstr "Beim Suchen nach Unterstützung für %1 im Hintergrundprogramm %2:"
+
+#: kleo/dn.cpp:458
+msgid "Common name"
+msgstr "Allgemeiner Name"
+
+#: kleo/dn.cpp:459
+msgid "Surname"
+msgstr "Nachname"
+
+#: kleo/dn.cpp:460
+msgid "Given name"
+msgstr "Vorname"
+
+#: kleo/dn.cpp:461
+msgid "Location"
+msgstr "Ort"
+
+#: kleo/dn.cpp:462
+msgid "Title"
+msgstr "Titel"
+
+#: kleo/dn.cpp:463
+msgid "Organizational unit"
+msgstr "Abteilung"
+
+#: kleo/dn.cpp:464
+msgid "Organization"
+msgstr "Organisation"
+
+#: kleo/dn.cpp:465
+msgid "Postal code"
+msgstr "Postleitzahl"
+
+#: kleo/dn.cpp:466
+msgid "Country code"
+msgstr "Ländercode"
+
+#: kleo/dn.cpp:467
+msgid "State or province"
+msgstr "Land oder Provinz"
+
+#: kleo/dn.cpp:468
+msgid "Domain component"
+msgstr "Domänenkomponente"
+
+#: kleo/dn.cpp:469
+msgid "Business category"
+msgstr "Geschäftsbereich"
+
+#: kleo/dn.cpp:470
+msgid "Email address"
+msgstr "E-Mail-Adresse"
+
+#: kleo/dn.cpp:471
+msgid "Mail address"
+msgstr "Postanschrift"
+
+#: kleo/dn.cpp:472
+msgid "Mobile phone number"
+msgstr "Mobiltelefonnummer"
+
+#: kleo/dn.cpp:473
+msgid "Telephone number"
+msgstr "Telefonnummer"
+
+#: kleo/dn.cpp:474
+msgid "Fax number"
+msgstr "Faxnummer"
+
+#: kleo/dn.cpp:475
+msgid "Street address"
+msgstr "Hausanschrift"
+
+#: kleo/dn.cpp:476
+msgid "Unique ID"
+msgstr "Eindeutige Kennung"
+
+#: kleo/enum.cpp:46
+msgid "Inline OpenPGP (deprecated)"
+msgstr "Inline-OpenPGP (veraltet)"
+
+#: kleo/enum.cpp:49
+msgid "OpenPGP/MIME"
+msgstr "OpenPGP/MIME"
+
+#: kleo/enum.cpp:52
+msgid "S/MIME"
+msgstr "S/MIME"
+
+#: kleo/enum.cpp:55
+msgid "S/MIME Opaque"
+msgstr "S/MIME opak"
+
+#: kleo/enum.cpp:80
+msgid "Any"
+msgstr "Alle"
+
+#: kleo/enum.cpp:142
+msgid "Never Encrypt"
+msgstr "Nie verschlüsseln"
+
+#: kleo/enum.cpp:144
+msgid "Always Encrypt"
+msgstr "Immer verschlüsseln"
+
+#: kleo/enum.cpp:146
+msgid "Always Encrypt If Possible"
+msgstr "Verschlüsseln, wenn möglich"
+
+#: kleo/enum.cpp:148 kleo/enum.cpp:200
+msgid "Ask"
+msgstr "Nachfragen"
+
+#: kleo/enum.cpp:150 kleo/enum.cpp:202
+msgid "Ask Whenever Possible"
+msgstr "Wann immer möglich nachfragen"
+
+#: kleo/enum.cpp:152
+msgctxt "no specific preference"
+msgid "<placeholder>none</placeholder>"
+msgstr "<placeholder>Keine</placeholder>"
+
+#: kleo/enum.cpp:194
+msgid "Never Sign"
+msgstr "Nie signieren"
+
+#: kleo/enum.cpp:196
+msgid "Always Sign"
+msgstr "Immer signieren"
+
+#: kleo/enum.cpp:198
+msgid "Always Sign If Possible"
+msgstr "Signieren, wenn möglich"
+
+#: kleo/enum.cpp:204
+msgctxt "no specific preference"
+msgid "<none>"
+msgstr "<kein>"
+
+#: kleo/hierarchicalkeylistjob.cpp:130 kleo/multideletejob.cpp:91
+#, kde-format
+msgctxt "progress info: \"%1 of %2\""
+msgid "%1/%2"
+msgstr "%1/%2"
+
+#: kleo/keyfiltermanager.cpp:81
+msgid "All Certificates"
+msgstr "Alle Zertifikate"
+
+#: kleo/keyfiltermanager.cpp:95
+msgid "My Certificates"
+msgstr "Meine Zertifikate"
+
+#: kleo/keyfiltermanager.cpp:112
+msgid "Trusted Certificates"
+msgstr "Vertrauenswürdige Zertifikate"
+
+#: kleo/keyfiltermanager.cpp:128
+msgid "Other Certificates"
+msgstr "Andere Zertifikate"
+
+#: ui/cryptoconfigdialog.cpp:40
+msgid "Configure GnuPG Backend"
+msgstr "GnuPG einrichten"
+
+#: ui/cryptoconfigdialog.cpp:44
+msgid "&Reset"
+msgstr "&Zurücksetzen"
+
+#: ui/cryptoconfigmodule.cpp:155
+msgid "GpgConf Error"
+msgstr "GpgConf-Fehler"
+
+#: ui/cryptoconfigmodule.cpp:208
+#, kde-format
+msgid ""
+"The gpgconf tool used to provide the information for this dialog does not "
+"seem to be installed properly. It did not return any components. Try running "
+"\"%1\" on the command line for more information."
+msgstr ""
+"Das Dienstprogramm gpgconf, welches die Informationen für diesen Dialog "
+"aufbereitet, scheint nicht korrekt installiert zu sein. Es hat keine "
+"Komponenten übergeben. Führen Sie bitte auf der Befehlszeile „%1“ aus, um "
+"weitere Informationen zu erhalten."
+
+#: ui/cryptoconfigmodule.cpp:470
+msgctxt ""
+"Translate this to 'yes' or 'no' (use the English words!) depending on "
+"whether your language uses Sentence style capitalisation in GUI labels (yes) "
+"or not (no). Context: We get some backend strings in that have the wrong "
+"capitalizaion (in English, at least) so we need to force the first character "
+"to upper-case. It is this behaviour you can control for your language with "
+"this translation."
+msgid "yes"
+msgstr "yes"
+
+#: ui/cryptoconfigmodule.cpp:519
+msgid "0 - None (no debugging at all)"
+msgstr "0 – Keine (Keinerlei Debug-Meldungen)"
+
+#: ui/cryptoconfigmodule.cpp:520
+msgid "1 - Basic (some basic debug messages)"
+msgstr "1 – Einfach (nur die wichtigsten Meldungen)"
+
+#: ui/cryptoconfigmodule.cpp:521
+msgid "2 - Advanced (more verbose debug messages)"
+msgstr "2 – Fortgeschritten (ausführliche Fehlermeldungen)"
+
+#: ui/cryptoconfigmodule.cpp:522
+msgid "3 - Expert (even more detailed messages)"
+msgstr "3 – Experte (noch detailliertere Meldungen)"
+
+#: ui/cryptoconfigmodule.cpp:523
+msgid "4 - Guru (all of the debug messages you can get)"
+msgstr "4 – Guru (alle verfügbaren Meldungen)"
+
+#: ui/cryptoconfigmodule.cpp:532
+msgid "Set the debugging level to"
+msgstr "Debug-Stufe festlegen auf"
+
+#: ui/cryptoconfigmodule.cpp:857
+msgid "Show..."
+msgstr "Anzeigen ..."
+
+#: ui/cryptoconfigmodule.cpp:857 ui/cryptoconfigmodule.cpp:926
+msgid "Edit..."
+msgstr "Bearbeiten ..."
+
+#: ui/cryptoconfigmodule.cpp:889
+msgid "Configure LDAP Servers"
+msgstr "LDAP-Server einrichten"
+
+#: ui/cryptoconfigmodule.cpp:911
+msgid "No server configured yet"
+msgstr "Kein Server eingerichtet"
+
+#: ui/cryptoconfigmodule.cpp:913
+#, kde-format
+msgid "1 server configured"
+msgid_plural "%1 servers configured"
+msgstr[0] "1 Server eingerichtet"
+msgstr[1] "%1 Server eingerichtet"
+
+#: ui/cryptoconfigmodule.cpp:930
+msgid "Use keyserver at"
+msgstr "Verwendeter Schlüsselserver"
+
+#: ui/cryptoconfigmodule.cpp:1006
+msgid "Configure Keyservers"
+msgstr "Schlüsselserver einrichten"
+
+#: ui/directoryserviceswidget.cpp:65
+msgctxt "default server name, keep it a valid domain name, ie. no spaces"
+msgid "server"
+msgstr "Server"
+
+#: ui/directoryserviceswidget.cpp:86
+msgid "hkp"
+msgstr "hkp"
+
+#: ui/directoryserviceswidget.cpp:87
+msgid "http"
+msgstr "http"
+
+#: ui/directoryserviceswidget.cpp:88
+msgid "https"
+msgstr "https"
+
+#: ui/directoryserviceswidget.cpp:89
+msgid "ftp"
+msgstr "ftp"
+
+#: ui/directoryserviceswidget.cpp:90
+msgid "ftps"
+msgstr "ftps"
+
+#: ui/directoryserviceswidget.cpp:91
+msgid "ldap"
+msgstr "ldap"
+
+#: ui/directoryserviceswidget.cpp:92
+msgid "ldaps"
+msgstr "ldaps"
+
+#: ui/directoryserviceswidget.cpp:508
+msgctxt "New X.509 Directory Server"
+msgid "X.509"
+msgstr "X.509"
+
+#: ui/directoryserviceswidget.cpp:509
+msgctxt "New OpenPGP Directory Server"
+msgid "OpenPGP"
+msgstr "OpenPGP"
+
+#: ui/directoryserviceswidget.cpp:628
+msgid "Scheme"
+msgstr "Protokoll"
+
+#: ui/directoryserviceswidget.cpp:629
+msgid "Server Name"
+msgstr "Servername"
+
+#: ui/directoryserviceswidget.cpp:630
+msgid "Server Port"
+msgstr "Server-Port"
+
+#: ui/directoryserviceswidget.cpp:631
+msgid "Base DN"
+msgstr "Basis-DN"
+
+#: ui/directoryserviceswidget.cpp:632
+msgid "User Name"
+msgstr "Benutzername"
+
+#: ui/directoryserviceswidget.cpp:633
+msgid "Password"
+msgstr "Passwort"
+
+#: ui/directoryserviceswidget.cpp:634
+msgid "X.509"
+msgstr "X.509"
+
+#: ui/directoryserviceswidget.cpp:635
+msgid "OpenPGP"
+msgstr "OpenPGP"
+
+#: ui/directoryserviceswidget.cpp:654
+msgid "(read-only)"
+msgstr "(nur lesen)"
+
+#: ui/directoryserviceswidget.cpp:656
+#, kde-format
+msgctxt "amended tooltip; %1: original tooltip"
+msgid "%1 (read-only)"
+msgstr "%1 (nur lesen)"
+
+#: ui/directoryserviceswidget.cpp:838
+msgid ""
+"Select the access protocol (scheme) that the directory service is available "
+"through."
+msgstr ""
+"Wählen Sie das Zugriffsprotokoll, über das der Zertifikatsserver zur "
+"Verfügung steht. "
+
+#: ui/directoryserviceswidget.cpp:840
+msgid ""
+"Enter the name or IP address of the server hosting the directory service."
+msgstr ""
+"Geben Sie den Namen oder die IP-Adresse des Rechners an, der den "
+"Zertifikatsserver anbietet."
+
+#: ui/directoryserviceswidget.cpp:842
+msgid ""
+"<b>(Optional, the default is fine in most cases)</b> Pick the port number "
+"the directory service is listening on."
+msgstr ""
+"<b>(Optional, die Voreinstellung ist meistens eine gute Wahl)</b> Wählen Sie "
+"die Port-Nummer, über die der Zertifikatsserver erreichbar ist."
+
+#: ui/directoryserviceswidget.cpp:845
+msgid ""
+"<b>(Only for LDAP)</b> Enter the base DN for this LDAP server to limit "
+"searches to only that subtree of the directory."
+msgstr ""
+"<b>(Nur für LDAP)</b> Geben Sie die Basis-DN für diesen LDAP-Server an, um "
+"Suchen auf einen Teilbereich des Verzeichnisses zu beschränken."
+
+#: ui/directoryserviceswidget.cpp:848
+msgid "<b>(Optional)</b> Enter your user name here, if needed."
+msgstr ""
+"<b>(Optional)</b> Geben Sie hier Ihren Benutzernamen an, falls notwendig."
+
+#: ui/directoryserviceswidget.cpp:850
+msgid ""
+"<b>(Optional, not recommended)</b> Enter your password here, if needed. Note "
+"that the password will be saved in the clear in a config file in your home "
+"directory."
+msgstr ""
+"<b>(Optional, nicht empfohlen)</b> Geben Sie hier Ihr Passwort ein, falls "
+"notwendig. Beachten Sie, dass Ihr Passwort unverschlüsselt in einer "
+"Konfigurationsdatei in Ihrem persönlichen Ordner gespeichert wird."
+
+#: ui/directoryserviceswidget.cpp:854
+msgid ""
+"Check this column if this directory service is providing S/MIME (X.509) "
+"certificates."
+msgstr ""
+"Aktivieren Sie diese Spalte, falls der Zertifikatsserver S/MIME (X.509)-"
+"Zertifikate anbietet."
+
+#: ui/directoryserviceswidget.cpp:856
+msgid ""
+"Check this column if this directory service is providing OpenPGP "
+"certificates."
+msgstr ""
+"Aktivieren Sie diese Spalte, falls der Zertifikatsserver OpenPGP-Zertifikate "
+"anbietet. "
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, DirectoryServicesWidget)
+#: ui/directoryserviceswidget.ui:14
+msgid "Directory Services Configuration"
+msgstr "Einrichtung der Zertifikatsserver"
+
+#. i18n: ectx: property (text), widget (QLabel, x500LA)
+#: ui/directoryserviceswidget.ui:26
+msgid "Directory services:"
+msgstr "Zertifikatsserver:"
+
+#. i18n: ectx: property (whatsThis), widget (QTreeView, treeView)
+#: ui/directoryserviceswidget.ui:35
+msgid ""
+"This is a list of all directory services that are configured for use with "
+"X.509 and OpenPGP."
+msgstr ""
+"Dies ist eine Liste aller für X.509 und OpenPGP eingerichteten "
+"Zertifikatsserver. "
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, newTB)
+#: ui/directoryserviceswidget.ui:62
+msgid "Click to add a service"
+msgstr "Klicken Sie hier, um einen Dienst hinzuzufügen."
+
+#. i18n: ectx: property (whatsThis), widget (QToolButton, newTB)
+#: ui/directoryserviceswidget.ui:65
+msgid ""
+"Click this button to create a new directory service entry as a clone of the "
+"currently selected one (or with default values, if no other is selected). "
+"You can then configure details in the table on the left hand."
+msgstr ""
+"Hier können Sie einen neuen Zertifikatsserver auf der Basis eines bereits "
+"eingetragenen Servers (oder mit Standardwerten, falls keiner ausgewählt "
+"wurde) erstellen. Die Einzelheiten können in der Tabelle rechts angepasst "
+"werden."
+
+#. i18n: ectx: property (text), widget (QToolButton, newTB)
+#: ui/directoryserviceswidget.ui:68
+msgid "New"
+msgstr "Neu"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, deleteTB)
+#: ui/directoryserviceswidget.ui:90
+msgid "Click to remove the currently selected service"
+msgstr "Klicken Sie hier, um den ausgewählten Dienst zu entfernen."
+
+#. i18n: ectx: property (whatsThis), widget (QToolButton, deleteTB)
+#: ui/directoryserviceswidget.ui:93
+msgid ""
+"Click this button to remove the currently selected directory service. The "
+"change will only take effect once you acknowledge the main configuration "
+"dialog."
+msgstr ""
+"Hier können Sie den derzeit ausgewählten Zertifikatsserver entfernen. Diese "
+"Änderung wird erst übernommen, wenn der Haupt-Einrichtungsdialog bestätigt "
+"wird."
+
+#. i18n: ectx: property (text), widget (QToolButton, deleteTB)
+#: ui/directoryserviceswidget.ui:96
+msgid "Delete"
+msgstr "Löschen"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, showUserAndPasswordCB)
+#: ui/directoryserviceswidget.ui:126
+msgid ""
+"Use this option to switch display of username and password information on or "
+"off in the above table."
+msgstr ""
+"Mit dieser Einstellung können Sie festlegen, ob Benutzername und Passwort im "
+"obigen Feld angezeigt oder ausgeblendet wird."
+
+#. i18n: ectx: property (text), widget (QCheckBox, showUserAndPasswordCB)
+#: ui/directoryserviceswidget.ui:129
+msgid "Show user and password information"
+msgstr "Benutzername und Passwort anzeigen"
+
+#: ui/dnattributeorderconfigwidget.cpp:74
+msgid "Description"
+msgstr "Beschreibung"
+
+#: ui/dnattributeorderconfigwidget.cpp:93
+msgid "Available attributes:"
+msgstr "Verfügbare Attribute:"
+
+#: ui/dnattributeorderconfigwidget.cpp:94
+msgid "Current attribute order:"
+msgstr "Aktuelle Attributreihenfolge:"
+
+#: ui/dnattributeorderconfigwidget.cpp:117
+msgid "All others"
+msgstr "Alle anderen"
+
+#: ui/dnattributeorderconfigwidget.cpp:134
+msgid "Move to top"
+msgstr "Nach ganz oben"
+
+#: ui/dnattributeorderconfigwidget.cpp:135
+msgid "Move one up"
+msgstr "Nach oben"
+
+#: ui/dnattributeorderconfigwidget.cpp:136
+msgid "Remove from current attribute order"
+msgstr "Von der aktuellen Attributreihenfolge entfernen"
+
+#: ui/dnattributeorderconfigwidget.cpp:137
+msgid "Add to current attribute order"
+msgstr "Zur aktuellen Attributreihenfolge hinzufügen"
+
+#: ui/dnattributeorderconfigwidget.cpp:138
+msgid "Move one down"
+msgstr "Nach unten"
+
+#: ui/dnattributeorderconfigwidget.cpp:139
+msgid "Move to bottom"
+msgstr "Ganz nach unten"
+
+#: ui/keyapprovaldialog.cpp:85
+msgid "<placeholder>none</placeholder>"
+msgstr "<placeholder>kein</placeholder>"
+
+#: ui/keyapprovaldialog.cpp:86
+msgid "Never Encrypt with This Key"
+msgstr "Nie mit diesem Schlüssel verschlüsseln"
+
+#: ui/keyapprovaldialog.cpp:87
+msgid "Always Encrypt with This Key"
+msgstr "Immer mit diesem Schlüssel verschlüsseln"
+
+#: ui/keyapprovaldialog.cpp:88
+msgid "Encrypt Whenever Encryption is Possible"
+msgstr "Immer verschlüsseln, wenn Verschlüsselung möglich ist"
+
+#: ui/keyapprovaldialog.cpp:89
+msgid "Always Ask"
+msgstr "Immer nachfragen"
+
+#: ui/keyapprovaldialog.cpp:90
+msgid "Ask Whenever Encryption is Possible"
+msgstr "Immer nachfragen, wenn Verschlüsselung möglich ist"
+
+#: ui/keyapprovaldialog.cpp:111
+msgid "Encryption Key Approval"
+msgstr "Verschlüsselungsschlüssel akzeptieren"
+
+#: ui/keyapprovaldialog.cpp:123
+msgid "The following keys will be used for encryption:"
+msgstr "Die folgenden Schlüssel werden zur Verschlüsselung verwendet:"
+
+#: ui/keyapprovaldialog.cpp:143
+msgid "Your keys:"
+msgstr "Ihre Schlüssel:"
+
+#: ui/keyapprovaldialog.cpp:155
+msgid "Recipient:"
+msgstr "Empfänger:"
+
+#: ui/keyapprovaldialog.cpp:160
+msgid "Encryption keys:"
+msgstr "Verschlüsselungsschlüssel:"
+
+#: ui/keyapprovaldialog.cpp:167
+msgid "Encryption preference:"
+msgstr "Verschlüsselungseinstellungen:"
+
+#: ui/keyrequester.cpp:123
+msgid "Clear"
+msgstr "Leeren"
+
+#: ui/keyrequester.cpp:126
+msgid "Change..."
+msgstr "Ändern ..."
+
+#: ui/keyrequester.cpp:219 ui/keyselectiondialog.cpp:228
+msgid "<placeholder>unknown</placeholder>"
+msgstr "<placeholder>unbekannt</placeholder>"
+
+#: ui/keyrequester.cpp:236 ui/keyrequester.cpp:265 ui/keyrequester.cpp:289
+#: ui/keyselectiondialog.cpp:575 ui/keyselectiondialog.cpp:608
+msgid "Key Listing Failed"
+msgstr "Auflisten der Schlüssel fehlgeschlagen"
+
+#: ui/keyrequester.cpp:263
+msgid ""
+"The OpenPGP backend does not support listing keys. Check your installation."
+msgstr ""
+"Das OpenPGP-Hintergrundprogramm unterstützt das Auflisten von Schlüsseln "
+"nicht. Bitte überprüfen Sie die korrekte Installation."
+
+#: ui/keyrequester.cpp:287
+msgid ""
+"The S/MIME backend does not support listing keys. Check your installation."
+msgstr ""
+"Das S/MIME-Hintergrundprogramm unterstützt das Auflisten von Schlüsseln "
+"nicht. Bitte überprüfen Sie die korrekte Installation."
+
+#: ui/keyrequester.cpp:398
+msgid "OpenPGP Key Selection"
+msgstr "OpenPGP-Schlüsselauswahl"
+
+#: ui/keyrequester.cpp:399
+msgid "Please select an OpenPGP key to use."
+msgstr "Bitte wählen Sie den zu verwendenden OpenPGP-Schlüssel."
+
+#: ui/keyrequester.cpp:401
+msgid "S/MIME Key Selection"
+msgstr "S/MIME-Schlüsselauswahl"
+
+#: ui/keyrequester.cpp:402
+msgid "Please select an S/MIME key to use."
+msgstr "Bitte wählen Sie den zu verwendenden S/MIME-Schlüssel."
+
+#: ui/keyrequester.cpp:404
+msgid "Key Selection"
+msgstr "Schlüsselauswahl"
+
+#: ui/keyrequester.cpp:405
+msgid "Please select an (OpenPGP or S/MIME) key to use."
+msgstr ""
+"Bitte wählen Sie einen (OpenPGP- oder S/MIME-) Schlüssel zur Verwendung."
+
+#: ui/keyselectiondialog.cpp:204
+msgid "Key ID"
+msgstr "Schlüsselkennung"
+
+#: ui/keyselectiondialog.cpp:205
+msgid "User ID"
+msgstr "Benutzer-ID"
+
+#: ui/keyselectiondialog.cpp:249
+msgid "never"
+msgstr "nie"
+
+#: ui/keyselectiondialog.cpp:252
+#, kde-format
+msgid ""
+"OpenPGP key for %1\n"
+"Created: %2\n"
+"Expiry: %3\n"
+"Fingerprint: %4"
+msgstr ""
+"OpenPGP-Schlüssel für %1\n"
+"Erzeugt: %2\n"
+"Verfallsdatum: %3\n"
+"Fingerabdruck: %4"
+
+#: ui/keyselectiondialog.cpp:260
+#, kde-format
+msgid ""
+"S/MIME key for %1\n"
+"Created: %2\n"
+"Expiry: %3\n"
+"Fingerprint: %4\n"
+"Issuer: %5"
+msgstr ""
+"S/MIME-Schlüssel für %1\n"
+"Erzeugt: %2\n"
+"Verfallsdatum: %3\n"
+"Fingerabdruck: %4\n"
+"Aussteller: %5"
+
+#: ui/keyselectiondialog.cpp:407
+msgid "Search for &External Certificates"
+msgstr "Suche nach &Externen Zertifikaten"
+
+#: ui/keyselectiondialog.cpp:423
+msgid "&Search for:"
+msgstr "&Suchen nach:"
+
+#: ui/keyselectiondialog.cpp:447
+msgid "&Remember choice"
+msgstr "&Auswahl merken"
+
+#: ui/keyselectiondialog.cpp:450
+msgid ""
+"<qt><p>If you check this box your choice will be stored and you will not be "
+"asked again.</p></qt>"
+msgstr ""
+"<qt><p>Wenn Sie diese Einstellung aktivieren, wird Ihre Auswahl gespeichert "
+"und Sie werden nicht noch einmal danach gefragt.</p></qt>"
+
+#: ui/keyselectiondialog.cpp:467
+msgid "&Reread Keys"
+msgstr "Schlüssel neu &einlesen"
+
+#: ui/keyselectiondialog.cpp:468
+msgid "&Start Certificate Manager"
+msgstr "Zertifikatsverwaltung &starten"
+
+#: ui/keyselectiondialog.cpp:573
+msgid "No backends found for listing keys. Check your installation."
+msgstr ""
+"Keine Hintergrundprogramme zum Auflisten der Schlüssel gefunden. Bitte "
+"überprüfen Sie die korrekte Installation."
+
+#: ui/keyselectiondialog.cpp:592
+msgid "Could not start certificate manager; please check your installation."
+msgstr ""
+"Die Zertifikatsverwaltung kann nicht gestartet werden. Bitte überprüfen Sie "
+"die korrekte Installation."
+
+#: ui/keyselectiondialog.cpp:594
+msgid "Certificate Manager Error"
+msgstr "Fehler der Zertifikatsverwaltung"
+
+#: ui/keyselectiondialog.cpp:644
+msgid "Checking selected keys..."
+msgstr "Ausgewählte Schlüssel überprüfen ..."
+
+#: ui/keyselectiondialog.cpp:644
+msgid "Fetching keys..."
+msgstr "Schlüssel holen ..."
+
+#: ui/keyselectiondialog.cpp:669
+#, kde-format
+msgid ""
+"<qt>One backend returned truncated output.<p>Not all available keys are "
+"shown</p></qt>"
+msgid_plural ""
+"<qt>%1 backends returned truncated output.<p>Not all available keys are "
+"shown</p></qt>"
+msgstr[0] ""
+"<qt>Ein Hintergrundprogramm hat eine verkürzte Ausgabe zurückgegeben."
+"<p>Nicht alle verfügbaren Schlüssel werden angezeigt</p></qt>"
+msgstr[1] ""
+"<qt>%1 Hintergrundprogramme haben eine verkürzte Ausgabe zurückgegeben."
+"<p>Nicht alle verfügbaren Schlüssel werden angezeigt</p></qt>"
+
+#: ui/keyselectiondialog.cpp:674
+msgid "Key List Result"
+msgstr "Ergebnis des Auflistens der Schlüssel"
+
+#: ui/keyselectiondialog.cpp:781
+msgid "Recheck Key"
+msgstr "Schlüssel erneut überprüfen"
+
+#: ui/messagebox.cpp:69
+msgid "&Save to Disk..."
+msgstr "In Datei &speichern ..."
+
+#: ui/messagebox.cpp:75
+msgid "&Copy to Clipboard"
+msgstr "In die Zwischenablage &kopieren"
+
+#: ui/messagebox.cpp:75
+msgid "Copy Audit Log to Clipboard"
+msgstr "Prüfprotokoll in die Zwischenablage kopieren"
+
+#: ui/messagebox.cpp:80
+msgid "&Show Audit Log"
+msgstr "Prüfprotokoll &anzeigen"
+
+#: ui/messagebox.cpp:90
+msgid "View GnuPG Audit Log"
+msgstr "GnuPG-Prüfprotokoll ansehen"
+
+#: ui/messagebox.cpp:138 ui/messagebox.cpp:140
+msgid "Choose File to Save GnuPG Audit Log to"
+msgstr "Datei für GnuPG-Prüfprotokoll wählen"
+
+#: ui/messagebox.cpp:163
+#, kde-format
+msgid "Could not save to file \"%1\": %2"
+msgstr "Die Datei „%1“ lässt sich nicht speichern: %2"
+
+#: ui/messagebox.cpp:165
+msgid "File Save Error"
+msgstr "Speichern fehlgeschlagen"
+
+#: ui/messagebox.cpp:203
+msgid "Your system does not have support for GnuPG Audit Logs"
+msgstr "Ihr System bietet keine Unterstützung für GnuPG-Prüfprotokolle"
+
+#: ui/messagebox.cpp:204
+msgid "System Error"
+msgstr "Systemfehler"
+
+#: ui/messagebox.cpp:211
+#, kde-format
+msgid ""
+"An error occurred while trying to retrieve the GnuPG Audit Log:\n"
+"%1"
+msgstr ""
+"Fehler beim Einlesen des GnuPG-Prüfprotokolls:\n"
+"%1"
+
+#: ui/messagebox.cpp:213
+msgid "GnuPG Audit Log Error"
+msgstr "GnuPG-Prüfprotokollfehler"
+
+#: ui/messagebox.cpp:220
+msgid "No GnuPG Audit Log available for this operation."
+msgstr "Für diese Operation ist kein GnuPG-Prüfprotokoll verfügbar."
+
+#: ui/messagebox.cpp:221
+msgid "No GnuPG Audit Log"
+msgstr "Kein GnuPG-Prüfprotokoll"
+
+#: ui/messagebox.cpp:239 ui/messagebox.cpp:244
+msgid "GnuPG Audit Log Viewer"
+msgstr "GnuPG-Prüfprotokollbetrachter"
+
+#: ui/messagebox.cpp:249
+#, kde-format
+msgid "Signing failed: %1"
+msgstr "Signieren fehlgeschlagen: %1"
+
+#: ui/messagebox.cpp:250
+msgid "Signing successful"
+msgstr "Signieren abgeschlossen"
+
+#: ui/messagebox.cpp:260
+msgid "Encryption successful"
+msgstr "Verschlüsseln abgeschlossen"
+
+#: ui/messagebox.cpp:277
+msgid "Signing Result"
+msgstr "Ergebnis der Signatur"
+
+#: ui/messagebox.cpp:287
+msgid "Signing Error"
+msgstr "Signieren fehlgeschlagen"
+
+#: ui/messagebox.cpp:297 ui/messagebox.cpp:317
+msgid "Encryption Result"
+msgstr "Ergebnis der Verschlüsselung"
+
+#: ui/messagebox.cpp:307 ui/messagebox.cpp:327
+msgid "Encryption Error"
+msgstr "Verschlüsselungsfehler"
+
+#: ui/progressdialog.cpp:89
+#, kde-format
+msgid "%1: %2"
+msgstr "%1: %2"
+
+#~ msgid "Add or Change Directory Service"
+#~ msgstr "Zertifikatsserver hinzufügen oder ändern"
+
+#~ msgid "&Server name:"
+#~ msgstr "&Servername:"
+
+#~ msgid "389"
+#~ msgstr "389"
+
+#~ msgid "&User name (optional):"
+#~ msgstr "&Benutzername (optional):"
+
+#~ msgid "Pass&word (optional):"
+#~ msgstr "Pass&wort (optional):"
+
+#~ msgid "&OK"
+#~ msgstr "&OK"
+
+#~ msgid "&Cancel"
+#~ msgstr "&Abbrechen"
+
+#~ msgid "&Base DN:"
+#~ msgstr "&Basis-DN:"
+
+#~ msgid "&Port:"
+#~ msgstr "&Port:"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Matthias Kalle Dalheimer"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "kalle@klaralvdalens-datakonsult.se"
+
+#~ msgid "failed"
+#~ msgstr "fehlgeschlagen"
+
+#~ msgctxt ""
+#~ "Items in Kleo::BackendConfigWidget listview (1: protocol; 2: "
+#~ "implementation name)"
+#~ msgid "%1 (%2)"
+#~ msgstr "%1 (%2)"
+
+#~ msgid "Available Backends"
+#~ msgstr "Verfügbare Hintergrundprogramme"
+
+#~ msgid "Confi&gure..."
+#~ msgstr "Ein&richten ..."
+
+#~ msgid "Rescan"
+#~ msgstr "Neu einlesen"
+
+#~ msgid "The following problems where encountered during scanning:"
+#~ msgstr "Die folgenden Probleme sind beim Einlesen aufgetreten:"
+
+#~ msgctxt "@title:window Results of the scanning"
+#~ msgid "Scan Results"
+#~ msgstr "Suchergebnisse"
+
+#~ msgid "(Unknown Protocol)"
+#~ msgstr "(Unbekanntes Protokoll)"
+
+#~ msgid "Error while initializing plugin \"%1\""
+#~ msgstr "Fehler bei der Initialisierung des Moduls „%1“"
+
+#~ msgid "Can't start decrypt job"
+#~ msgstr "Entschlüsselung kann nicht gestartet werden."
+
+#~ msgid "Can't start combined decrypt/verify operation"
+#~ msgstr ""
+#~ "Kombinierte Entschlüsselung und Gültigkeitsprüfung kann nicht gestartet "
+#~ "werden."
+
+#~ msgid "Can't start encrypt job"
+#~ msgstr "Verschlüsselung kann nicht gestartet werden."
+
+#~ msgid "Error adding signer %1."
+#~ msgstr "Fehler beim Hinzufügen der Unterschrift von %1."
+
+#~ msgid ""
+#~ "You need a passphrase to unlock the secret key for user:<br/> %1 (retry)"
+#~ msgstr ""
+#~ "Sie benötigen ein Passwort, um den geheimen Schlüssel für Benutzer <br/>"
+#~ "%1 verwenden zu können (nochmal)."
+
+#~ msgid "You need a passphrase to unlock the secret key for user:<br/> %1"
+#~ msgstr ""
+#~ "Sie benötigen ein Passwort, um den geheimen Schlüssel für Benutzer <br/>"
+#~ "%1 verwenden zu können."
+
+#~ msgid ""
+#~ "This dialog will reappear every time the passphrase is needed. For a more "
+#~ "secure solution that also allows caching the passphrase, use gpg-agent."
+#~ msgstr ""
+#~ "Dieser Dialog wird jedes Mal angezeigt, wenn das Passwort benötigt wird. "
+#~ "Für eine sicherere Lösung, die auch das Zwischenspeichern des Passworts "
+#~ "erlaubt, installieren Sie gpg-agent."
+
+#~ msgid "gpg-agent was found in %1, but does not appear to be running."
+#~ msgstr "gpg-agent wurde in %1 gefunden, scheint aber nicht zu laufen."
+
+#~ msgid "gpg-agent is part of gnupg-%1, which you can download from %2"
+#~ msgstr ""
+#~ "gpg-agent ist Teil von gnupg-%1, das Sie von %2 herunterladen können."
+
+#~ msgid "For information on how to set up gpg-agent, see %1"
+#~ msgstr "Informationen zur Einrichtung von gpg-agent finden Sie in %1."
+
+#~ msgid "Enter passphrase:"
+#~ msgstr "Passwort eingeben:"
+
+#~ msgid "Passphrase Dialog"
+#~ msgstr "Passwort-Dialog"
+
+#~ msgid "Can't start combined sign-encrypt job"
+#~ msgstr ""
+#~ "Kombiniertes Verschlüsseln und Signieren kann nicht gestartet werden."
+
+#~ msgid "Can't start sign job"
+#~ msgstr "Signieren kann nicht gestartet werden."
+
+#~ msgid "Can't start detached signature verification"
+#~ msgstr "Überprüfen der angehängten Signatur kann nicht gestartet werden."
+
+#~ msgid "Can't start opaque signature verification"
+#~ msgstr "Überprüfen der opaken Signatur kann nicht gestartet werden."
+
+#~ msgid "Configure"
+#~ msgstr "Konfi&gurieren ..."
+
+#~ msgid "Select Directory Services to Use Here"
+#~ msgstr "Wählen Sie hier die zu verwendenden Verzeichnisdienste aus"
+
+#~ msgid ""
+#~ "<qt>\n"
+#~ "<h1>X.500 Directory Services</h1>\n"
+#~ "You can use X.500 directory services to retrieve certificates and "
+#~ "certificate revocation lists that are not saved locally. Ask your local "
+#~ "administrator if you want to make use of this feature and are unsure "
+#~ "which directory service you can use.\n"
+#~ "<p>\n"
+#~ "If you do not use a directory service, you can still use local "
+#~ "certificates.\n"
+#~ "</qt>"
+#~ msgstr ""
+#~ "<qt>\n"
+#~ "<h1>X.500-Verzeichnisdienste</h1>\n"
+#~ "Sie können X.500-Verzeichnisdienste verwenden, um Zertifikate und "
+#~ "Zertifikats-Widerrufslisten abzufragen, die derzeit nicht lokal "
+#~ "gespeichert sind. Fragen Sie Ihren lokalen Administrator, wenn Sie diese "
+#~ "Funktion verwenden möchten und sich nicht sicher sind, welchen "
+#~ "Verzeichnisdienst Sie verwenden können.\n"
+#~ "<p>\n"
+#~ "Auch wenn Sie keinen Verzeichnisdienst verwenden, können Sie weiterhin "
+#~ "lokale Zertifikate benutzen.\n"
+#~ "</qt>"
+
+#~ msgid "Port"
+#~ msgstr "Port"
+
+#~ msgid ""
+#~ "<qt>\n"
+#~ "<h1>Add a Directory Service</h1>\n"
+#~ "By clicking this button, you can select a new directory service to be "
+#~ "used for retrieving certificates and CRLs. You will be asked for the "
+#~ "server name and an optional description.\n"
+#~ "</qt>"
+#~ msgstr ""
+#~ "<qt>\n"
+#~ "<h1>Verzeichnisdienst hinzufügen</h1>\n"
+#~ "Wenn Sie diese Schaltfläche betätigen, können Sie einen neuen "
+#~ "Verzeichnisdienst auswählen, der zum Abfragen von Zertifikaten und CRLs "
+#~ "abgefragt werden soll. Sie werden nach dem Servernamen und einer "
+#~ "optionalen Beschreibung gefragt werden.\n"
+#~ "</qt>"
+
+#~ msgid "&Add Service..."
+#~ msgstr "Dienst &hinzufügen ..."
+
+#~ msgid ""
+#~ "<qt>\n"
+#~ "<h1>Remove Directory Service</h1>\n"
+#~ "By clicking this button, you can remove the currently selected directory "
+#~ "service in the list above. You will have a chance to rethink your "
+#~ "decision before the entry is deleted from the list.\n"
+#~ "</qt>"
+#~ msgstr ""
+#~ "<qt>\n"
+#~ "<h1>Verzeichnisdienst entfernen</h1>\n"
+#~ "Wenn Sie diesen Knopf betätigen, können Sie den aktuell ausgewählten "
+#~ "Verzeichnisdienst aus der obigen Liste entfernen. Sie können Ihre "
+#~ "Entscheidung noch einmal überdenken, bevor der Eintrag aus der Liste "
+#~ "gelöscht wird.\n"
+#~ "</qt>"
+
+#~ msgid "&Remove Service"
+#~ msgstr "Dienst &entfernen"
+
+#~ msgid "<placeholder>unnamed</placeholder>"
+#~ msgstr "<placeholder>unbenannt</placeholder>"

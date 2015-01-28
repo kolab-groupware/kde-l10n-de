@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: apiRootedTreestructure.docbook:2
+#, no-c-format
+msgid "Scripting API for Rooted Tree Backend"
+msgstr ""
+
+#. Tag: title
+#: apiRootedTreestructure.docbook:4
+#, no-c-format
+msgid "Rooted Tree Data Structure"
+msgstr ""
+
+#. Tag: para
+#: apiRootedTreestructure.docbook:5
+#, no-c-format
+msgid ""
+"The data structure properties dialog allows access to configure settings "
+"specific to the Graph backend. There, by checking the <guilabel>"
+"Show all pointers</guilabel> property, all pointers between the tree nodes are "
+"shown. If unchecked, multiple pointers between same nodes are collapsed to one."
+msgstr ""
+
+#. Tag: title
+#: apiRootedTreestructure.docbook:13
+#, no-c-format
+msgid "The Rooted Tree Structure"
+msgstr ""
+
+#. Tag: para
+#: apiRootedTreestructure.docbook:14
+#, no-c-format
+msgid ""
+"Given a data structure object of type \"Rooted Tree\", the following properties "
+"can be read or written:"
+msgstr ""
+
+#. Tag: programlisting
+#: apiRootedTreestructure.docbook:17
+#, no-c-format
+msgid ""
+"ShowAllPointers     // set to true if show all edges, set to false if multiple "
+"edges shall be compressed"
+msgstr ""
+
+#. Tag: para
+#: apiRootedTreestructure.docbook:18
+#, no-c-format
+msgid ""
+"Given a data structure object of type \"Rooted Tree\", you can call the "
+"following member functions:"
+msgstr ""
+
+#. Tag: programlisting
+#: apiRootedTreestructure.docbook:21
+#, no-c-format
+msgid ""
+"node add_data(string name);         // add a node to tree with given name\n"
+"    void set_root_node(node root);      // set root as root node of the tree\n"
+"    node root_node();                   // return root node of the tree"
+msgstr ""
+
+#. Tag: title
+#: apiRootedTreestructure.docbook:25
+#, no-c-format
+msgid "Rooted Tree Nodes"
+msgstr ""
+
+#. Tag: para
+#: apiRootedTreestructure.docbook:26
+#, no-c-format
+msgid ""
+"Given a node object of type \"Rooted Tree\", the following properties can be "
+"read or written:"
+msgstr ""
+
+#. Tag: programlisting
+#: apiRootedTreestructure.docbook:29
+#, no-c-format
+msgid ""
+"int numberOfChilds                  // set the number of (allowed) children for "
+"this node\n"
+"    node left_child                     // read only: node that is the left "
+"child\n"
+"    node right_child                    // read only: node that is the right "
+"child\n"
+"    node node_parent                    // read only: node that is the parent"
+msgstr ""
+
+#. Tag: para
+#: apiRootedTreestructure.docbook:30
+#, no-c-format
+msgid ""
+"Given a node object of type \"Rooted Tree\", you can call the following member "
+"functions:"
+msgstr ""
+
+#. Tag: programlisting
+#: apiRootedTreestructure.docbook:33
+#, no-c-format
+msgid ""
+"node add_left_child(node child);    // add left child\n"
+"    node add_right_child(node child);   // add right child\n"
+"    node add_child(node child, int i);  // add a child as the i-th child of the "
+"node\n"
+"    node add_node_parent(node child);   // add parent (only successful if no "
+"parent set, yet)\n"
+"    node left_child();                  // return right child\n"
+"    node right_child();                 // return left child\n"
+"    node child_at(int i);               // return the i-th child of the node\n"
+"    node node_parent();                 // return the node's parent"
+msgstr ""
+
+#. Tag: title
+#: apiRootedTreestructure.docbook:37
+#, no-c-format
+msgid "Rooted Tree Edges"
+msgstr ""
+
+#. Tag: para
+#: apiRootedTreestructure.docbook:38
+#, no-c-format
+msgid ""
+"Given edges of a data structure of type \"Rooted Tree\", only the properties of "
+"the base data structure are available."
+msgstr ""

@@ -1,0 +1,144 @@
+# Marco Wegner <mail@marcowegner.de>, 2002.
+# Stephan Johach <hunsum@gmx.de>, 2004, 2005.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005.
+# Burkhard Lück <lueck@hube-lueck.de>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kioslave_smb\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: 2010-07-18 22:03+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:9
+#, no-c-format
+msgid "<title>SMB</title>"
+msgstr "<title>SMB</title>"
+
+#. Tag: author
+#: index.docbook:12
+#, no-c-format
+msgid "&Alexander.Neundorf; &Alexander.Neundorf.mail;"
+msgstr "&Alexander.Neundorf; &Alexander.Neundorf.mail;"
+
+#. Tag: trans_comment
+#: index.docbook:13
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Marco</"
+"firstname><surname>Wegner</"
+"surname><affiliation><address><email>mail@marcowegner.de</email></address></"
+"affiliation><contrib>Übersetzer</contrib></othercredit>"
+
+#. Tag: para
+#: index.docbook:16
+#, no-c-format
+msgid ""
+"The smb ioslave enables you to browse the shares of a &Windows; (or Samba) "
+"network."
+msgstr ""
+"Das smb-Modul ermöglicht es Ihnen, auf Freigaben in &Windows;- (oder Samba-) "
+"Netzwerken zuzugreifen."
+
+#. Tag: para
+#: index.docbook:21
+#, no-c-format
+msgid ""
+"To see the workgroups, enter <userinput><command>smb:/</command></userinput>."
+msgstr ""
+"Um die Arbeitsgruppen anzuzeigen, geben Sie <userinput><command>smb:/</"
+"command></userinput> ein."
+
+#. Tag: para
+#: index.docbook:25
+#, no-c-format
+msgid ""
+"<userinput><command>smb://</command><replaceable>a_workgroup</replaceable></"
+"userinput> will list the hosts in this workgroup."
+msgstr ""
+"<userinput><command>smb://</command><replaceable>arbeitsgruppe</"
+"replaceable></userinput> listet alle Rechner in der Arbeitsgruppe auf."
+
+#. Tag: para
+#: index.docbook:29
+#, no-c-format
+msgid ""
+"To see the shares of a host, enter <userinput><command>smb://</"
+"command><replaceable>the_host</replaceable></userinput> or "
+"<userinput><command>smb:/</command><replaceable>a_workgroup</replaceable>/"
+"<replaceable>the_host</replaceable></userinput>."
+msgstr ""
+"Um die Freigaben eines Rechners sehen zu können, geben Sie entweder "
+"<userinput><command>smb://</command><replaceable>rechnername</replaceable></"
+"userinput> oder <userinput><command>smb://</"
+"command><replaceable>arbeitsgruppe</replaceable>/<replaceable>rechnername</"
+"replaceable></userinput> ein."
+
+#. Tag: para
+#: index.docbook:35
+#, no-c-format
+msgid ""
+"To access a share directly enter <userinput><command>smb://</"
+"command><replaceable>the_host/the_share</replaceable></userinput> or "
+"<userinput><command>smb:/</command><replaceable>a_workgroup</replaceable>/"
+"<replaceable>the_host</replaceable>/<replaceable>the_share</replaceable></"
+"userinput>"
+msgstr ""
+"Um direkt auf die Freigaben eines Rechners zuzugreifen, geben Sie "
+"<userinput><command>smb://</command><replaceable>rechnername/freigabe</"
+"replaceable></userinput> oder <userinput><command>smb://</"
+"command><replaceable>arbeitsgruppe</replaceable>/<replaceable>rechnername</"
+"replaceable>/<replaceable>freigabe</replaceable></userinput> ein."
+
+#. Tag: para
+#: index.docbook:42
+#, no-c-format
+msgid ""
+"The smb ioslave requires that you have libsmbclient to use this ioslave."
+msgstr "Das Ein-/Ausgabemodul für smb benötigt die Bibliothek libsmbclient."
+
+#. Tag: para
+#: index.docbook:46
+#, no-c-format
+msgid ""
+"You can set your default user name and password in the &systemsettings; "
+"category <guilabel>Network and Connectivity</guilabel> in "
+"<menuchoice><guisubmenu>Sharing</guisubmenu><guimenuitem> Windows Shares</"
+"guimenuitem></menuchoice>. This is especially useful if you are a member of "
+"a &Windows; <acronym>NT</acronym> domain. There you can also set your "
+"workgroup name, but in most cases this is not required. The kioslave will "
+"ask for your username and password if a default is not set."
+msgstr ""
+"Sie können Ihren Benutzernamen und das Passwort in den &systemsettings; im "
+"Abschnitt <guilabel>Netzwerk und Verbindungen</guilabel> aus der Seite "
+"<menuchoice><guisubmenu>Freigabe</guisubmenu><guimenuitem>Samba</"
+"guimenuitem></menuchoice> festlegen. Dies ist besonders nützlich, falls Sie "
+"Mitglied einer &Windows; <acronym>NT</acronym>-Domäne sind. Dort können Sie "
+"auch den Namen der Arbeitsgruppe festlegen, dies ist jedoch in den meisten "
+"Fällen nicht notwendig. Das Ein-/Ausgabemodul fragt Sie nach Benutzernamen "
+"und Passwort, falls keine Voreinstellungen festgelegt sind."
+
+#. Tag: para
+#: index.docbook:55
+#, no-c-format
+msgid ""
+"This ioslave is tested and developed using mainly Samba 2.0.7, but other "
+"versions of Samba should work too."
+msgstr ""
+"Das Modul wurde hauptsächlich getestet und entwickelt mit Samba 2.0.7, aber "
+"andere Versionen von Samba sollten ebenfalls funktionieren."
+
+#. Tag: para
+#: index.docbook:60
+#, no-c-format
+msgid "Author: Alexander Neundorf <email>neundorf@kde.org</email>"
+msgstr "Autor: Alexander Neundorf <email>neundorf@kde.org</email>"

@@ -1,0 +1,244 @@
+# Thomas Diehl <thd@kde.org>, 2002.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006, 2007, 2008.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011, 2012.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010, 2011.
+# Burkhard Lück <lueck@hube-lueck.de>, 2011, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: libtaskmanager\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-13 06:11+0000\n"
+"PO-Revision-Date: 2014-03-18 14:14+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: launcherconfig.cpp:44
+msgid "Launcher Matching Rules"
+msgstr "Regeln für Starter-Verknüpfungen"
+
+#: launcherconfig.cpp:144
+#, kde-format
+msgid "A launcher is already defined for %1"
+msgstr "Ein Starter für %1 ist bereits definiert."
+
+#: launcherconfig.cpp:201
+msgid ""
+"To associate an application with a launcher, the task manager reads the "
+"application's window class and name. These are then used to look up the "
+"launcher details of an installed application. This attempts to match these "
+"against the application's 'Name'. This can sometimes fail. The list above "
+"allows you to manually set the class+name to launcher/name mapping."
+msgstr ""
+"Um eine Anwendung mit einem Starter zu verknüpfen, liest die "
+"Prozessverwaltung die Klasse und den Namen des Anwendungsfensters. Diese "
+"werden dann verwendet, um nach den Starter-Details einer installierten "
+"Anwendung zu suchen. Dabei wird probiert, ob sie auf den „Name“ der "
+"Anwendung passen. Dies kann manchmal fehlschlagen. Die obige Liste erlaubt "
+"Ihnen daher, die Klasse und den Namen für die Starter/Anwendung-Verknüpfung "
+"manuell festzulegen."
+
+#. i18n: ectx: property (text), widget (QTreeWidget, view)
+#: launcherconfig.ui:39
+msgid "Window Class"
+msgstr "Fensterklasse"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, view)
+#: launcherconfig.ui:44
+msgid "Window Name"
+msgstr "Fenstername"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, view)
+#: launcherconfig.ui:49
+msgid "Launcher"
+msgstr "Programmstarter"
+
+#. i18n: ectx: property (text), widget (KPushButton, add)
+#: launcherconfig.ui:57
+msgid "Add"
+msgstr "Hinzufügen"
+
+#. i18n: ectx: property (text), widget (KPushButton, edit)
+#: launcherconfig.ui:64
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#. i18n: ectx: property (text), widget (KPushButton, remove)
+#: launcherconfig.ui:71
+msgid "Remove"
+msgstr "Entfernen"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: launcherconfig.ui:91
+msgid ""
+"<b>NOTE:</b> The above list is only required when the automatic window to "
+"launcher rules do not work. You do not need to add an entry here for each "
+"launcher."
+msgstr ""
+"<b>Hinweis:</b> Die obige Liste ist nur erforderlich, wenn die automatischen "
+"Fenster-zu-Starter-Regeln nicht funktionieren. Sie müssen hier nicht für "
+"jeden Starter einen Eintrag hinzufügen."
+
+#. i18n: ectx: property (text), widget (KUrlLabel, label)
+#: launcherconfig.ui:101
+msgid "More information..."
+msgstr "Weitere Informationen ..."
+
+#: launcherproperties.cpp:46
+msgid "Launcher Properties"
+msgstr "Starter-Eigenschaften"
+
+#: launcherproperties.cpp:96
+msgid "Select launcher application:"
+msgstr "Programmstarter auswählen:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: launcherproperties.ui:17
+msgid "Window class:"
+msgstr "Fensterklasse:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: launcherproperties.ui:27
+msgid "Window name:"
+msgstr "Fenstername:"
+
+#. i18n: ectx: property (text), widget (KPushButton, detect)
+#: launcherproperties.ui:37
+msgid "Detect Window Properties"
+msgstr "Fenster-Eigenschaften ermitteln"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: launcherproperties.ui:44
+msgid "Launcher:"
+msgstr "Programmstarter:"
+
+#: strategies/manualgroupingstrategy.cpp:77
+msgid "Leave Group"
+msgstr "Gruppe verlassen"
+
+#: strategies/manualgroupingstrategy.cpp:84
+msgid "Remove Group"
+msgstr "Gruppe entfernen"
+
+#: strategies/programgroupingstrategy.cpp:76
+msgid "Allow this program to be grouped"
+msgstr "Gruppierung dieses Programms zulassen"
+
+#: strategies/programgroupingstrategy.cpp:78
+msgid "Do not allow this program to be grouped"
+msgstr "Gruppierung dieses Programms nicht zulassen"
+
+#: task.cpp:257
+msgctxt "marks that a task has been modified"
+msgid "modified"
+msgstr "geändert"
+
+#: taskactions.cpp:174
+msgid "Mi&nimize"
+msgstr "M&inimieren"
+
+#: taskactions.cpp:185
+msgid "Ma&ximize"
+msgstr "Ma&ximieren"
+
+#: taskactions.cpp:195
+msgid "&Shade"
+msgstr "&Fensterheber"
+
+#: taskactions.cpp:205
+msgid "Re&size"
+msgstr "&Größe ändern"
+
+#: taskactions.cpp:213
+msgid "&Move"
+msgstr "Ver&schieben"
+
+#: taskactions.cpp:222
+msgid "&Close"
+msgstr "Sch&ließen"
+
+#: taskactions.cpp:255
+msgid "Move &To Current Desktop"
+msgstr "Auf a&ktuelle Arbeitsfläche verschieben"
+
+#: taskactions.cpp:276
+msgid "&All Desktops"
+msgstr "&Alle Arbeitsflächen"
+
+#: taskactions.cpp:299
+msgid "&New Desktop"
+msgstr "&Neue Arbeitsfläche"
+
+#: taskactions.cpp:323
+msgid "Move To &Desktop"
+msgstr "Auf &Arbeitsfläche verschieben"
+
+#: taskactions.cpp:343
+msgid "Keep &Above Others"
+msgstr "Immer im &Vordergrund"
+
+#: taskactions.cpp:353
+msgid "Keep &Below Others"
+msgstr "Immer im &Hintergrund"
+
+#: taskactions.cpp:363
+msgid "&Fullscreen"
+msgstr "&Vollbild"
+
+#: taskactions.cpp:373
+msgid "More Actions"
+msgstr "Weitere Aktionen"
+
+#: taskactions.cpp:400
+msgid "&Leave Group"
+msgstr "Gruppe &verlassen"
+
+#: taskactions.cpp:428
+msgid "Remove This Launcher"
+msgstr "Diesen Starter entfernen"
+
+#: taskactions.cpp:449
+msgid "&Show A Launcher When Not Running"
+msgstr "Einen &Starter anlegen"
+
+#: taskactions.cpp:482
+msgid ""
+"The application, to which this task is associated with, could not be "
+"determined. Please select the appropriate application from the list below:"
+msgstr ""
+"Die Anwendung, mit der diese Aufgabe verknüpft ist, kann nicht bestimmt "
+"werden. Wählen Sie bitte eine angemessene Anwendung aus der Liste:"
+
+#: taskactions.cpp:529
+msgid "Start New Instance"
+msgstr "Neue Instanz starten"
+
+#: taskactions.cpp:553
+msgid "&Edit Group"
+msgstr "Gruppe &bearbeiten"
+
+#~ msgid "Ad&vanced"
+#~ msgstr "E&rweitert"
+
+#~ msgid "All &to Current Desktop"
+#~ msgstr "Alle auf a&ktuelle Arbeitsfläche"
+
+#~ msgid "Mi&nimize All"
+#~ msgstr "Alle mi&nimieren"
+
+#~ msgid "Ma&ximize All"
+#~ msgstr "Alle ma&ximieren"
+
+#~ msgid "&Restore All"
+#~ msgstr "Alle &wiederherstellen"
+
+#~ msgid "&Close All"
+#~ msgstr "Alle &schließen"
+
+#~ msgid "All to &Desktop"
+#~ msgstr "Alle auf &Arbeitsfläche"

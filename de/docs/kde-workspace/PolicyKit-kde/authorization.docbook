@@ -1,0 +1,153 @@
+<chapter id="authorization">
+<title
+>Berechtigungsverwalter</title>
+
+<sect1 id="authorization-manual">
+<title
+>Handbuch</title>
+
+<para
+>Der <emphasis
+>Berechtigungsverwalter</emphasis
+> ist die Anwendung, mit der Systemadministratoren das standardmäßige Verhalten jeglicher Aktionen auf einfache Art und Weise ändern können. Diese Seite beinhaltet jedoch nicht die Erklärungen zum Erstellen neuer Aktionen oder definieren von neuen <filename
+>.policy</filename
+>-Dateien.</para>
+
+<para
+>Das Fenster <guilabel
+>PolicyKit-Berechtigungen - Systemeinstellungen</guilabel
+> ist in zwei Teile unterteilt. Links sind alle Aktionen aufgeführt, die PolicyKit kennt und die Aktionen können mit der Suchleiste gesucht werden. Auf der rechten Seite ist die ausgewählte Aktion aufgeführt. Dieses Bildschirmfoto zeigt das Hauptfenster: </para>
+
+<para>
+<screenshot>
+<mediaobject>
+<imageobject
+><imagedata fileref="authorization_1.png" format="PNG"/></imageobject>
+<textobject
+><phrase
+>Hauptfenster mit dem Quellgerät</phrase
+></textobject>
+</mediaobject>
+</screenshot>
+</para>
+
+<para
+>Bei der Auswahl einer Aktion werden die Eigenschaften auf der rechten Seite angezeigt. Die Aktion hat möglicherweise ein Symbol, eine Beschreibung und den Namen des Erstellers. Darunter werden <guilabel
+>Implizite Berechtigungen</guilabel
+> und <guilabel
+>Explizite Berechtigungen</guilabel
+> aufgeführt. </para>
+
+<para
+><guilabel
+>Implizite Berechtigungen</guilabel
+> sind Berechtigungen, die den Benutzern basierend auf bestimmten Kriterien automatisch gegeben werden (z. B. wenn sie sich auf der lokalen Konsole befinden). Diese Berechtigungen werden aus den <filename
+>.policy</filename
+>-Dateien gelesen, die die jeweilige Anwendung festlegt und sind damit die standardmäßigen Einstellungen der Aktion. Die gültigen Werte sind: </para>
+
+<itemizedlist>
+<listitem
+><para
+>no</para
+></listitem>
+<listitem
+><para
+>auth_self_one_shot</para
+></listitem>
+<listitem
+><para
+>auth_self</para
+></listitem>
+<listitem
+><para
+>auth_self_keep_session</para
+></listitem>
+<listitem
+><para
+>auth_self_keep_always</para
+></listitem>
+<listitem
+><para
+>auth_admin_one_shot</para
+></listitem>
+<listitem
+><para
+>auth_admin</para
+></listitem>
+<listitem
+><para
+>auth_admin_keep_session</para
+></listitem>
+<listitem
+><para
+>auth_admin_keep_always</para
+></listitem>
+<listitem
+><para
+>yes</para
+></listitem>
+</itemizedlist>
+
+<para
+>Diese voreingestellten Werte können über das Auswahlfeld auf einfache Art und Weise geändert werden. Der in <emphasis
+>normaler</emphasis
+> Schrift dargestellte Wert ist der Standardwert und kann somit einfach gefunden und wieder eingestellt werden. Die Änderung wird mit einem Klick auf <guibutton
+>Ändern</guibutton
+> übernommen und angewandt. Mit einem Klick auf <guibutton
+>Auf Standardwerte zurücksetzen</guibutton
+> werden alle <guilabel
+>Impliziten Berechtigungen</guilabel
+> auf die Standardwerte zurückgesetzt. Dabei ist zu beachten, dass sowohl <guibutton
+>Ändern</guibutton
+> als auch <guibutton
+>Auf Standardwerte zurücksetzen</guibutton
+> die Aktion „org.freedesktop.policykit.modify-defaults“ von PolicyKit aufrufen und möglicherweise nach einem Passwort gefragt wird. </para>
+
+<para
+><guilabel
+>Explizite Berechtigungen</guilabel
+> sind Berechtigungen, die entweder durch einen <emphasis
+>Berechtigungs</emphasis
+>prozess oder speziell durch die Abfrage bezogen werden. Das standardmäßige Verhalten zeigt nur die expliziten Berechtigungen des aktuellen Benutzers an. Sollen die expliziten Berechtigungen aller Benutzer angezeigt werden, ist nur ein Klick auf <guibutton
+>Berechtigungen aller Benutzer anzeigen</guibutton
+> notwendig. Dabei ist zu beachten, dass die Aktion „org.freedesktop.policykit.read“ von PolicyKit aufgerufen und möglicherweise nach einem Passwort gefragt wird. Blockierte Berechtigungen sind mit einem <guilabel
+>STOP</guilabel
+>-Zeichen markiert. </para>
+
+<para
+>Der Knopf <guibutton
+>Zurückziehen</guibutton
+> wird für die Rücknahme einer Berechtigung verwendet. Dabei ist zu beachten, dass die Aktion „org.freedesktop.policykit.revoke“ von PolicyKit aufgerufen und möglicherweise nach einem Passwort gefragt wird. </para>
+
+<para
+>Falls einem Benutzer spezielle Rechte für eine Aktion erteilt oder entzogen werden sollen, kann dies durch einen Klick auf <guibutton
+>Erlauben</guibutton
+> bzw. <guibutton
+>Blockieren</guibutton
+> erfolgen. Das folgende Bildschirmfoto zeigt den entsprechenden Dialog: </para>
+
+<para>
+<screenshot>
+<mediaobject>
+<imageobject
+><imagedata fileref="authorization_2.png" format="PNG"/></imageobject>
+<textobject
+><phrase
+>Dialog zum Erteilen/Entziehen der Berechtigungen</phrase
+></textobject>
+</mediaobject>
+</screenshot>
+</para>
+
+<para
+>Um die expliziten Berechtigungen zu erteilen bzw. entziehen, muss erst der entsprechende Benutzer für diese Berechtigung ausgewählt werden. Hierbei können auch <guilabel
+>Einschränkungen</guilabel
+> festgelegt werden, damit die Berechtigungen nur unter den genannten Umständen erteilt werden. <warning
+><para
+>Das explizite Entziehen bzw. Erteilen von Berechtigungen kann dazu führen, dass man selbst keine Aktionen mehr ausführen kann. Daher sollte man sicher sein, was man hier macht.</para
+></warning
+>Dabei ist zu beachten, dass die Aktion „org.freedesktop.policykit.grant“ von PolicyKit aufgerufen und möglicherweise nach einem Passwort gefragt wird. </para>
+
+</sect1>
+
+</chapter>

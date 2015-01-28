@@ -1,0 +1,712 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+
+  <!ENTITY artikulate "Artikulate">
+  <!ENTITY kappname "&artikulate;">
+  <!ENTITY package "artikulate">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE">
+]>
+<book id="artikulate" lang="&language;">
+
+<bookinfo>
+<title
+>Das Handbuch zu &artikulate;</title>
+<authorgroup>
+<author
+><personname
+> <firstname
+>Andreas</firstname
+> <surname
+>Cord-Landwehr</surname
+> </personname
+> <email
+>cordlandwehr@kde.org</email
+> </author>
+
+<author
+><personname
+> <firstname
+>Ondrila</firstname
+> <surname
+>Gupta</surname
+> </personname
+> <email
+>oindrila.gupta92@gmail.com</email
+> </author>
+
+<othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright
+><year
+>2014</year
+><holder
+>Die &artikulate;-Entwickler</holder
+></copyright>
+
+<date
+>2014-03-15</date>
+<releaseinfo
+>0.3.0 &kde; 4.13</releaseinfo>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<abstract>
+<para
+>&artikulate; ist eine Anwendung zum Üben der Aussprache und hilft beim Verbessern und Perfektionieren Ihrer Aussprachefähigkeiten. Zum Üben wird die Aussprache des Benutzers aufgenommen und mit den Aufnahmen von Muttersprachlern verglichen. &artikulate; ist Teil des &kde;-Edu-Projekts.  </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdeedu</keyword>
+<keyword
+>Sprache</keyword>
+<keyword
+>Übung</keyword>
+<keyword
+>Einheit</keyword>
+<keyword
+>Redewendung</keyword>
+<keyword
+>Schülerprofil</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Einleitung</title>
+<para
+>&artikulate; ist eine Anwendung zum Üben der Aussprache und hilft beim Verbessern und Perfektionieren Ihrer Aussprachefähigkeiten für eine fremde Sprache. Dazu können Übungen mit Aufnahmen von Muttersprachlern aus der Zielsprache heruntergeladen werden. Dann wird eine Gruppe von Redewendungen ausgewählt, die eigene Stimme beim Aussprechen der Redewendungen aufgenommen und mit den Aufnahmen von Muttersprachlern verglichen. </para>
+
+<sect1 id="introduction-concept">
+<title
+>Das Lernkonzept</title>
+<para
+>Mit diesem Programm wird folgendes Lernkonzept umgesetzt: Durch Wiederholen und Vergleichen eigener Aufnahmen von gesprochenen Redewendungen mit den Aufnahmen von einer repräsentativen Gruppe von Muttersprachlern, können <itemizedlist
+> <listitem
+><para
+>Schwächen in der Aussprache der fremden Sprache erkannt und</para
+></listitem
+> <listitem
+><para
+>die Aussprache an die Muttersprachler angepasst werden.</para
+></listitem
+> </itemizedlist
+> Für den besten Lernerfolg sind besonders entwickelte Übungen für jede unterstützte Sprache nötig. Diese Übungen können auf bestimmte Szenarien wie das Bestellen von Essen in einem Restaurant oder auf das Üben der Aussprache von schwierigen Silben und Wörtern einer bestimmten Sprache ausgerichtet sein. </para>
+</sect1>
+
+<sect1 id="introduction-first-steps">
+<title
+>Erste Schritte mit &artikulate;</title>
+<para
+>Dieses Kapitel erläutert die ersten Schritte in &artikulate;, besonders das Erstellen einer Schüler-Identität, die Auswahl einer Sprache, das Herunterladen der Aufnahmen von Muttersprachlern und das Starten von Übungen. </para>
+
+<sect2>
+<title
+>1. Schüler-Identität erstellen</title>
+<para
+>Für jeden Schüler muss eine eigene Identität erstellt werden, für die der Lernfortschritt gespeichert wird. Dadurch können mehrere Personen &artikulate; auf dem gleichen Rechner benutzen und jeder hat seine eigenen privaten Lernstatistiken. Um eine Identität zu erstellen, klicken Sie auf den Knopf <guilabel
+>Schüler-Identität erstellen</guilabel
+>, wenn Sie &artikulate; zum ersten mal starten. Ansonsten wählen Sie oben links im Fenster mit dem Knopf eine Schüler-Identität aus. Ihren Namen können Sie mit dem Knopf <guilabel
+>Bearbeiten</guilabel
+> ändern. </para>
+<screenshot>
+<screeninfo
+>Eine Schüler-Identität erstellen.</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="first-steps-1-create-profile.png" format="PNG"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</sect2>
+
+<sect2>
+<title
+>2. Sprache auswählen</title>
+<para
+>Die Übungssprache eines Benutzers wird im Bereich <guilabel
+>Bevorzugte Sprachen</guilabel
+> durch Klicken auf eine Sprache eingestellt. Das zugehörige Sternsymbols vor der ausgewählten Sprache wird in gelber Farbe angezeigt. Schließen Sie den Dialog Schüler-Identität mit dem Knopf <guilabel
+>Ausgewählte Identität verwenden</guilabel
+>. Wenn Sie Übungen herunterladen, wird die Sprache dieser Übung automatisch für die gerade ausgewählte Schüler-Identität aktiviert. </para>
+<screenshot>
+<screeninfo
+>Bevorzugte Sprachen einstellen.</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="first-steps-2-set-language.png" format="PNG"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</sect2>
+
+<sect2>
+<title
+>3. Sprachübung herunterladen</title>
+<para
+>Angenommen Sie möchten Polnisch lernen und möchten daher eine Ausspracheübung für Polnisch herunterladen. Wählen Sie dazu <menuchoice
+><guimenu
+>Datei</guimenu
+><guimenuitem
+>Neue Sprachübungen herunterladen</guimenuitem
+></menuchoice
+> oder klicken Sie auf den orangefarbenen Stern rechts oben. Es wird ein Dialog geöffnet, in dem alle von der &kde;-Gemeinschaft zur Verfügung gestellten Sprachen angezeigt werden. Die Liste können Sie mit den Knöpfen rechts sortieren. Laden Sie die Übung für Polnisch herunter, indem Sie auf <guilabel
+>Installieren</guilabel
+> klicken. </para>
+<screenshot>
+<screeninfo
+>Übung herunterladen.</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="first-steps-3-download-course.png" format="PNG"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</sect2>
+
+<sect2>
+<title
+>4. Übung starten</title>
+<para
+>Übungen bestehen aus mehreren Einheiten, die jeweils eine Gruppe von Redewendungen für eine Szenario enthalten. Wählen Sie eine der auf der linken Seite aufgelisteten Einheiten und klicken Sie auf <guilabel
+>Übung starten</guilabel
+>. </para>
+<screenshot>
+<screeninfo
+>Einheit wählen und Übung starten.</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="first-steps-4-start-training.png" format="PNG"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</sect2>
+
+<sect2>
+<title
+>Übung beenden / Statistik </title>
+<para
+>Nach dem Üben aller Redewendungen in einer Einheit wird eine Statistik mit den Ergebnissen angezeigt. Darin können Sie die Anzahl der Versuche für die verschiedenen Arten von Redewendungen sehen. Durch Klicken auf den Knopf <guilabel
+>Übung beenden</guilabel
+> rechts oben können Sie die Statistik schließen. </para>
+</sect2>
+</sect1>
+</chapter>
+
+
+<chapter id="screens">
+<title
+>Programmfenster</title>
+<sect1 id="screens-training">
+<title
+>Das Übungsfenster</title>
+<para
+>Das Übungsfenster ist die wichtigste Ansicht in &artikulate;. Immer wenn eine Übung begonnen wird, wird diese Fenster angezeigt und es bleibt solange geöffnet, bis die ausgewählte Übungseinheit beendet ist oder der Benutzer die Übung abbricht. In der Mitte des Fensters gibt es Knöpfe für das Abspielen der Aufnahme der Muttersprachler, der Text der zugehörigen Redewendung und Knöpfe für die Aufnahme und Wiedergabe der eigenen Stimme. Findet der Benutzer, dass er mit dem Lernen der Aussprache der aktuellen Redewendung zufrieden ist, markiert er diese Redewendung mit dem Knopf <guilabel
+>OK</guilabel
+> als gelernt und die nächste Redewendung wird ausgewählt. Ansonsten wird die aktuelle Redewendung mit <guilabel
+>Später erneut versuchen</guilabel
+> zurückgestellt und die nächste Redewendung ausgewählt. </para>
+
+<para
+>Zum Üben der Aussprache der aktuellen Redewendung, soll zuerst die Aufnahme des Muttersprachlers durch Drücken des Knopfes <guilabel
+>Wiedergabe</guilabel
+> abgespielt werden.  Dann wird der Knopf <guilabel
+>Aufnahme</guilabel
+> gedrückt und die angezeigte Redewendung laut vorgelesen. Ein weiterer Druck auf den Knopf <guilabel
+>Aufnahme</guilabel
+> beendet die Aufnahme. Nun kann durch Drücken auf den Knopf <guilabel
+>Wiedergabe</guilabel
+> die Aufnahme abgespielt werden. Durch das Hören beider Aufnahmen kann der Schüler entscheiden, ob die Redewendung richtig ausgesprochen wurde. Wenn ja, dann wird mit Klicken auf <guilabel
+>OK</guilabel
+> die Redewendung als gelernt markiert. Ansonsten kann entweder die Aufnahme wiederholt oder die Redewendung für ein späteres Üben mit <guilabel
+>Später erneut versuchen</guilabel
+> zurückgestellt werden. </para>
+
+<para
+>Lerneinheiten in &artikulate; bestehen aus einer Liste von Redewendungen unterschiedlicher Länge, zum Beispiel Wörter, Ausdrücke, Sätze und Absätze. In der <link linkend="screens-training-progressbar"
+>Fortschrittsanzeige</link
+> unten im Fenster kann der Benutzer den Lernfortschritt verfolgen. Mit Hilfe der Fortschrittsanzeige kann auch zwischen Redewendungen gewechselt werden. </para>
+
+<para
+>Eine Übung kann jederzeit durch Klicken auf den Knopf <guilabel
+>Übung beenden</guilabel
+> oben rechts im Fenster angehalten werden. </para>
+
+<screenshot>
+<screeninfo
+>Das Übungsfenster.</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="screen-training-overview.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Bildschirmfoto des Übungsfensters.</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<sect2 id="screens-training-sound-controls">
+<title
+>Lautstärkesteuerung</title>
+<itemizedlist>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi32-action-artikulate-media-record.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <quote
+>Aufnahme</quote
+>: Aufnahme Ihrer Aussprache mit dem Mikrofon. Klicken Sie erneut auf diesen Knopf, um die Aufnahme zu beenden. </para
+></listitem>
+
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="hi32-action-artikulate-media-playback-start.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <quote
+>Wiedergabe</quote
+>: Spielt eine Sounddatei ab. Klicken Sie erneut auf den Knopf, um die Wiedergabe anzuhalten. </para
+></listitem>
+
+</itemizedlist>
+</sect2>
+
+<sect2 id="screens-training-learning-controls">
+<title
+>Lernsteuerung</title>
+<itemizedlist>
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="training-ok.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <quote
+>OK</quote
+>: Markiert die aktuelle Redewendung als gelernt und geht weiter zur nächsten Redewendung. </para
+></listitem>
+
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="training-retry.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <quote
+>Später erneut üben</quote
+>: Setzt die Übung mit der nächsten Redewendung fort, geht aber später wieder zu dieser Redewendung zurück. </para
+></listitem>
+
+<listitem
+><para>
+<inlinemediaobject
+><imageobject>
+<imagedata fileref="training-finish.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> <quote
+>Anhalten</quote
+>. Beendet die Übung und zeigt die Statistik an. Das aktuelle Ergebnis der Übung wird in den Trainingsstatistiken gespeichert. </para
+></listitem>
+</itemizedlist>
+</sect2>
+
+<sect2 id="screens-training-progressbar">
+<title
+>Fortschrittsanzeige</title>
+<para
+>Die Fortschrittsanzeige zeigt den Lernfortschritt in der aktuellen Übungseinheit. Die Fortschrittsanzeige besteht aus Blöcken, die die Redewendungen in der aktuellen Einheit darstellen. Die Farbe der Blöcke zeigt die Länge der Redewendungen an. Fahren Sie mit dem Mauszeiger über einen Block, dann werden die Redewendungen angezeigt. Klicken Sie auf einen Block, um die aktuell geübte Redewendung zu wechseln. Redewendungen in Blöcken in dunklen Farben wurden bereits geübt, Redewendungen in Blöcken in hellen Farben noch nicht. </para>
+<screenshot>
+<screeninfo
+>Fortschrittsanzeige</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="screen-training-progressbar.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Die Fortschrittsanzeige für die aktuelle Einheit.</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+<para
+>Über der Fortschrittsanzeige wird die Art der gerade gelernten Redewendung angezeigt. Feldende Arten von Redewendungen sind verfügbar: <itemizedlist>
+    <listitem
+><para
+>Wort: einzelnes Wort, Buchstabe oder Zahl</para
+></listitem>
+    <listitem
+><para
+>Ausdruck: ein Ausdruck bestehend aus mehreren Wörtern, die aber keinen vollständigen Satz bilden</para
+></listitem>
+    <listitem
+><para
+>Satz: ein vollständiger Satz</para
+></listitem>
+    <listitem
+><para
+>Absatz: mehrere Sätze, normalerweise 2 bis 3 </para
+></listitem>
+</itemizedlist>
+</para>
+</sect2>
+</sect1>
+</chapter>
+
+<chapter>
+<title
+>Editor</title>
+<para
+>Der integrierte Übungseditor erlaubt das Erstellen und gemeinsame Bearbeiten von Sprachübungen für &artikulate;. Einerseits können Sprachübungen erstellt und die Klangdateien von Muttersprachlern aufgenommen werden. Andererseits ist es möglich, sogenannte <emphasis
+>Vorlagen</emphasis
+> die Prototypen für Sprachübungen zu erstellen. Mit Hilfe dieser Vorlagen können schnell und einfach neue von einer Vorlage generierte Übungen erstellt werden. Mit dem Editor werden nur eigene Dateien bearbeitet, nicht die die Übungen für &artikulate; heruntergeladenen Dateien. </para>
+
+<sect1>
+<title
+>Überblick</title>
+
+<sect2>
+<title
+>Editor-Begriffe</title>
+<para
+>Beim Übungseditor werden bestimmte Begriffe verwendet, die auch in den folgenden Erläuterungen angewendet werden. </para>
+<variablelist>
+<varlistentry>
+    <term
+>Sprache:</term>
+    <listitem>
+    <para
+>Sprachen sind in &artikulate; nur verfügbar, wenn dafür Sprachdefinitionen angegeben sind. </para>
+    </listitem>
+</varlistentry>
+<varlistentry>
+    <term
+>Übung:</term>
+    <listitem>
+    <para
+>Eine Übung ist einer Sprache zugeordnet und enthält eine Liste von Einheiten. </para>
+    </listitem>
+</varlistentry>
+<varlistentry>
+    <term
+>Einheit:</term>
+    <listitem>
+    <para
+>Eine Einheit besteht aus Redewendungen aus einem bestimmten Themenbereich, z. B. aus Redewendungen, die im Restaurant benutzt werden, oder Redewendung aus einer Unterhaltung auf der Straße, in der ein Tourist nach dem Weg fragt. </para>
+    </listitem>
+</varlistentry>
+<varlistentry>
+    <term
+>Übungsvorlagen:</term>
+    <listitem>
+    <para
+>Eine Übungsvorlage ist der Prototyp für eine Übung. Mit den Vorlagen ist ein einfach, neue Übungen in mehreren Sprachen zu erstellen, da diese Vorlagen eine Gruppe von Einheiten und Redewendungen in Englisch enthalten, mit denen eine Übung in neuen Sprachen generiert werden kann. Aktualisierungen von Vorlagen können auch in Übungen importiert werden, die von einer Vorlage generiert wurden. </para>
+    </listitem>
+</varlistentry>
+<varlistentry>
+    <term
+>Redewendungen:</term>
+    <listitem>
+    <para
+>Redewendungen bestehen aus einem Text und und der Aufnahme der Aussprache durch einen Muttersprachler. Redewendungen werden anhand ihre Länge unterschiedlichen. Es gibt folgende Längen von Redewendungen: <itemizedlist>
+        <listitem>
+        <para
+><inlinemediaobject
+><imageobject>
+        <imagedata fileref="hi32-action-artikulate-word.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> Wort: einzelnes Wort, Buchstabe oder Zahl</para>
+        </listitem>
+        <listitem>
+        <para
+><inlinemediaobject
+><imageobject>
+        <imagedata fileref="hi32-action-artikulate-expression.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> Ausdruck: ein Ausdruck bestehend aus mehreren Wörtern, die aber keinen vollständigen Satz bilden</para>
+        </listitem>
+        <listitem>
+        <para
+><inlinemediaobject
+><imageobject>
+        <imagedata fileref="hi32-action-artikulate-sentence.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> Satz: ein vollständiger Satz</para>
+        </listitem>
+        <listitem>
+        <para
+><inlinemediaobject
+><imageobject>
+        <imagedata fileref="hi32-action-artikulate-paragraph.png" format="PNG"/></imageobject>
+</inlinemediaobject
+> Absatz: mehrere Sätze, normalerweise 2 bis 3</para>
+        </listitem>
+        </itemizedlist>
+    </para>
+    </listitem>
+</varlistentry>
+</variablelist>
+<para
+>Eine Übung ist einer bestimmten Sprache zugeordnet und besteht aus mehreren Einheiten. Jede Einheit wiederum enthält eine Gruppe von Redewendungen in verschiedenen Längen. </para>
+</sect2>
+
+<sect2>
+<title
+>Speicherordner/Übungsarchiv einstellen</title>
+<para
+>Der Editor arbeitet mit einem eigenen Ordner, der im folgenden <emphasis
+>Archiv</emphasis
+> genannt wird, da er sich in einem Versionverwaltungssystem befinden sollte. In diesem Ordner sucht der Editor nach Übungen und Vorlagendateien zur Bearbeitung und speichert hier auch neue Dateien. </para>
+<para
+>Das Übungsarchiv kann im Einrichtungsdialog festgelegt werden. Öffnen Sie diesen Einrichtungsdialog mit <menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>&artikulate; einrichten</guimenuitem
+></menuchoice
+> und passen Sie den Ordner auf der Seite <guilabel
+>Übungs-Ressourcen</guilabel
+> an. </para>
+<screenshot>
+<screeninfo
+>Übungsarchiv für den Editor einstellen</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="editor-set-repository.png" format="PNG"/>
+</imageobject>
+<caption
+><para
+>Übungsarchiv für den Editor einstellen</para
+></caption>
+</mediaobject>
+</screenshot>
+</sect2>
+</sect1>
+
+<sect1>
+<title
+>Bearbeitung einer Übung</title>
+<para
+>Der Editor kann im Hauptmenü mit <menuchoice
+><guimenu
+>Modus</guimenu
+> <guimenuitem
+>Übungseditormodus</guimenuitem
+></menuchoice
+> geöffnet werden. Dort haben Sie die Möglichkeiten, mit vorhandenen Vorlagendateien zu arbeiten, neue Übungen zu erstellen oder vorhandene zu bearbeiten. Nach der Auswahl einer Sprache können Sie eine vorhandene Übung zum Bearbeiten öffnen oder mit <guilabel
+>Neue Übung</guilabel
+> eine neue Übung für diese Sprache erstellen. In beiden Fällen wird eine Liste mit den Einheiten der Übung angezeigt, in der Sie neue Einheiten erstellen oder vorhandene Einheiten zur Bearbeitung öffnen können. </para>
+
+<sect2>
+<title
+>Bearbeitung einer Einheit</title>
+<para
+>Wenn eine Einheit zur Bearbeitung geöffnet wird, wird eine Liste der darin enthaltenen Redewendungen wie im folgenden Bildschirmfoto angezeigt. Jede Zeile in dieser Liste enthält die folgenden Informationen: <orderedlist>
+    <listitem
+><para
+>Bearbeitungsknopf: Öffnet diese Redewendung zum Ändern</para
+></listitem>
+    <listitem
+><para
+>Art der Redewendung: Ein Symbol, das die Art dieser Redewendung wie zum Beispiel Wort oder Ausdruck kennzeichnet.</para
+></listitem>
+    <listitem
+><para
+>Bearbeitungsstatus: Ein farbiges Quadrat, das den Bearbeitungsstatus dieser Redewendung kennzeichnet: Rot - unbekannt oder kein Status gesetzt, Orange - übersetzt, Grün - fertiggestellt.</para
+></listitem>
+    <listitem
+><para
+>Redewendung</para
+></listitem>
+    <listitem
+><para
+>Knopf zum Ausschluß: Wurde die Übung aus einer Vorlage abgeleitet, können Sie mit diesem Knopf Redewendungen aus der Einheit ausschließen.</para
+></listitem>
+</orderedlist>
+</para>
+<screenshot>
+<screeninfo
+>Editor-Fenster: Liste der Redewendungen in einer Einheit</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="editor-screenshot-unit.png" format="PNG"/>
+</imageobject>
+<caption
+><para
+>Editor-Fenster: Liste der Redewendungen in einer Einheit</para
+></caption>
+</mediaobject>
+</screenshot>
+</sect2>
+
+<sect2>
+<title
+>Bearbeitung einer Redewendung</title>
+<para
+>Wenn Sie eine Redewendung zur Bearbeitung öffnen, wird das folgende Bildschirmfoto angezeigt. Dieser Dialog enthält die folgenden Elemente: </para>
+<itemizedlist>
+    <listitem
+><para
+>Text der Redewendung, wie er in der Übung angezeigt wird</para
+></listitem>
+    <listitem
+><para
+>Ursprüngliche Redewendung, wenn Sie eine Übungsvorlage verwenden</para
+></listitem>
+    <listitem
+><para
+>Bearbeitungsstatus der Redewendung</para
+></listitem>
+    <listitem
+><para
+>Art und Länge der Redewendung</para
+></listitem>
+    <listitem
+><para
+>Knöpfe zur Steuerung der Aufnahme des Muttersprachlers</para
+></listitem>
+    <listitem
+><para
+>Knöpfe zur Kennzeichnung interessanter Phoneme  in der Redewendung, die wird zurzeit im Übungsmodus nicht verwendet.</para
+></listitem>
+</itemizedlist>
+<para
+>Sie können alle Änderungen einer Redewendung mit <inlinemediaobject
+><imageobject
+> <imagedata fileref="editor-apply.png" format="PNG"/></imageobject
+> </inlinemediaobject
+> übernehmen oder mit <inlinemediaobject
+><imageobject
+> <imagedata fileref="editor-cancel.png" format="PNG"/></imageobject
+> </inlinemediaobject
+> verwerfen. </para>
+<screenshot>
+<screeninfo
+>Editor zur Bearbeitung einer Redewendung</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="editor-screenshot-editing-phrase.png" format="PNG"/>
+</imageobject>
+<caption
+><para
+>Editor zur Bearbeitung einer Redewendung</para
+></caption>
+</mediaobject>
+</screenshot>
+</sect2>
+
+<sect2>
+<title
+>Vom Übungsprototypen aktualisieren</title>
+<para
+>Wurde die gerade bearbeitete Übung von einer Vorlage abgeleitet, kann die Übung von der letzten Version der Vorlage mit <guilabel
+>Vom Übungsprototypen aktualisieren</guilabel
+> oben links im Fenster aktualisiert werden. Dieser Knopf ist deaktiviert, wenn die Übung nicht aus einer Vorlage abgeleitet worden ist. </para>
+</sect2>
+</sect1>
+</chapter>
+
+
+<chapter id="credits">
+<title
+>Danksagungen und Lizenz</title>
+
+<para
+>&artikulate; </para>
+<para
+>Copyright für das Programm:</para>
+<itemizedlist>
+    <listitem
+><para
+>Copyright 2013-2014 Andreas Cord-Landwehr</para
+></listitem>
+    <listitem
+><para
+>Copyright 2013 Oindrila Gupta</para
+></listitem>
+    <listitem
+><para
+>Copyright 2013 Magdalena Konkiewitz</para
+></listitem>
+    <listitem
+><para
+>Copyright 2013-2014 Samikshan Bairagya</para
+></listitem>
+</itemizedlist>
+
+<para
+>Copyright der Dokumentation:</para>
+<itemizedlist>
+    <listitem
+><para
+>Copyright 2014 Andreas Cord-Landwehr</para
+></listitem>
+</itemizedlist>
+
+<para
+>Übersetzung Burkhard Lück<email
+>lueck@hube-lueck.de</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+<appendix id="installation">
+<title
+>Installation</title>
+
+<sect1 id="getting-artikulate">
+<title
+>Bezugsquellen von &artikulate;</title>
+&install.intro.documentation; </sect1>
+
+<sect1 id="compilation">
+<title
+>Kompilierung und Installation</title>
+&install.compile.documentation; <sect2 id="compilation-details">
+<title
+>Spezielle Anleitung zu &artikulate;</title>
+<para
+>Weitere Hinweise zum Kompilieren von &artikulate; finden Sie auf der Seite <ulink url="http://techbase.kde.org/Projects/Edu/Artikulate"
+><citetitle
+>Technische Dokumentation zu &artikulate;</citetitle
+></ulink
+> in der &kde;-Techbase. </para>
+</sect2>
+
+</sect1>
+</appendix>
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes: nil
+sgml-general-insert-case: lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

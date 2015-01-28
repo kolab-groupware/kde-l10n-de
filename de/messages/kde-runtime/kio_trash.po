@@ -1,0 +1,218 @@
+# Stephan Johach <hunsum@gmx.de>, 2005.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006, 2008, 2009.
+# Burkhard Lück <lueck@hube-lueck.de>, 2009.
+# Frederik Schwarzer <schwarzer@kde.org>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio_trash\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-10-30 01:44+0000\n"
+"PO-Revision-Date: 2013-03-16 15:33+0100\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: kcmtrash.cpp:158 kcmtrash.cpp:256
+msgid " day"
+msgid_plural " days"
+msgstr[0] " Tag"
+msgstr[1] " Tage"
+
+#: kcmtrash.cpp:247
+msgid "Delete files older than:"
+msgstr "Dateien löschen, die älter sind als:"
+
+#: kcmtrash.cpp:249
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Check this box to allow <b>automatic deletion</b> of files that are "
+"older than the value specified. Leave this disabled to <b>not</b> "
+"automatically delete any items after a certain timespan</para>"
+msgstr ""
+"<para>Aktivieren Sie diese Einstellung, um das <b>automatische Löschen</b> "
+"von Dateien zu erlauben, die älter als der angegebene Wert sind. Wenn die "
+"Einstellung deaktiviert ist, werden <b>keine</b> Dateien automatisch nach "
+"einer bestimmten Zeit aus dem Papierkorb gelöscht.</para>"
+
+#: kcmtrash.cpp:258
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Set the number of days that files can remain in the trash. Any files "
+"older than this will be automatically deleted.</para>"
+msgstr ""
+"<para>Legen Sie die Anzahl Tage fest, die Dateien im Papierkorb verbleiben "
+"können, bevor sie automatisch gelöscht werden.</para>"
+
+#: kcmtrash.cpp:266
+msgid "Limit to maximum size"
+msgstr "Auf Maximalgröße beschränken"
+
+#: kcmtrash.cpp:268
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Check this box to limit the trash to the maximum amount of disk space "
+"that you specify below. Otherwise, it will be unlimited.</para>"
+msgstr ""
+"<para>Aktivieren Sie diese Einstellung, um die Größe des Papierkorbs auf den "
+"eingestellten Maximalwert einzustellen. Wenn Sie diese Einstellung nicht "
+"vornehmen, wird der Platz im Papierkorb nicht begrenzt.</para>"
+
+#: kcmtrash.cpp:286
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>This is the maximum percent of disk space that will be used for the "
+"trash.</para>"
+msgstr ""
+"<para>Dies ist die maximale Größe in Prozent von der Festplattenkapazität, "
+"die der Papierkorb annehmen kann.</para>"
+
+#: kcmtrash.cpp:291
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>This is the calculated amount of disk space that will be allowed for "
+"the trash, the maximum.</para>"
+msgstr ""
+"<para>Dies ist der errechnete maximale Speicherplatz, der für den Papierkorb "
+"zur Verfügung steht.</para>"
+
+#: kcmtrash.cpp:294
+msgid "Maximum size:"
+msgstr "Maximalgröße:"
+
+#: kcmtrash.cpp:296
+msgid "When limit reached:"
+msgstr "Wenn die Maximalgröße erreicht ist:"
+
+#: kcmtrash.cpp:300
+msgid "Warn Me"
+msgstr "Warnen"
+
+#: kcmtrash.cpp:301
+msgid "Delete Oldest Files From Trash"
+msgstr "Älteste Dateien unwiderruflich löschen"
+
+#: kcmtrash.cpp:302
+msgid "Delete Biggest Files From Trash"
+msgstr "Größte Dateien unwiderruflich löschen"
+
+#: kcmtrash.cpp:304
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>When the size limit is reached, it will prefer to delete the type of "
+"files that you specify, first. If this is set to warn you, it will do so "
+"instead of automatically deleting files.</para>"
+msgstr ""
+"<para>Wenn die Größenbeschränkung erreicht wird, wird ein bestimmter "
+"Dateityp bevorzugt gelöscht. Wenn dies auf Warnen eingestellt ist, wird eine "
+"Warnung ausgegeben, anstatt automatisch zu löschen.</para>"
+
+#: kio_trash.cpp:92 kio_trash.cpp:155 kio_trash.cpp:310 kio_trash.cpp:342
+#: kio_trash.cpp:510 kio_trash.cpp:522
+#, kde-format
+msgid "Malformed URL %1"
+msgstr "Ungültige Adresse %1"
+
+#: kio_trash.cpp:111
+#, kde-format
+msgid ""
+"The directory %1 does not exist anymore, so it is not possible to restore "
+"this item to its original location. You can either recreate that directory "
+"and use the restore operation again, or drag the item anywhere else to "
+"restore it."
+msgstr ""
+"Der Ordner %1 existiert nicht mehr. Darum ist eine Wiederherstellung dieses "
+"Eintrags an der ursprünglichen Stelle nicht möglich. Sie können entweder den "
+"Ordner neu anlegen und die Wiederherstellung erneut versuchen oder den "
+"Eintrag an eine andere Stelle schieben."
+
+#: kio_trash.cpp:140 kio_trash_win.cpp:228
+msgid "This file is already in the trash bin."
+msgstr "Diese Datei befindet sich bereits im Papierkorb."
+
+#: kio_trash.cpp:228 kio_trash_win.cpp:252
+msgid "Internal error in copyOrMove, should never happen"
+msgstr ""
+"Interner Fehler in der Aktion „copyOrMove“. Dies sollte niemals passieren."
+
+#: kio_trash_win.cpp:241
+msgid "not supported"
+msgstr "nicht unterstützt"
+
+#: ktrash.cpp:32
+msgid "ktrash"
+msgstr "KDE-Papierkorb"
+
+#: ktrash.cpp:34
+msgid ""
+"Helper program to handle the KDE trash can\n"
+"Note: to move files to the trash, do not use ktrash, but \"kioclient move "
+"'url' trash:/\""
+msgstr ""
+"Hilfsprogramm für den KDE-Papierkorb\n"
+"Hinweis: Zum Werfen von Dateien in den Papierkorb bitte nicht „ktrash“, "
+"sondern stattdessen „kioclient move ‚Datei-url‘ trash:/“ verwenden."
+
+#: ktrash.cpp:38
+msgid "Empty the contents of the trash"
+msgstr "Papierkorb leeren"
+
+#: ktrash.cpp:40
+msgid "Restore a trashed file to its original location"
+msgstr "Datei im Papierkorb am Ursprungsort wiederherstellen"
+
+#: ktrash.cpp:42
+msgid "Ignored"
+msgstr "Ignoriert"
+
+#: trashimpl.cpp:1124
+msgid ""
+"The trash has reached its maximum size!\n"
+"Cleanup the trash manually."
+msgstr ""
+"Der Papierkorb hat seine maximale Größe erreicht!\n"
+"Bitte leeren Sie ihn von Hand."
+
+#: trashimpl.cpp:1135
+msgid "The file is too large to be trashed."
+msgstr "Diese Datei ist zu groß für den Papierkorb."
+
+#~ msgid "Byte"
+#~ msgstr "Byte"
+
+#~ msgid "KByte"
+#~ msgstr "KByte"
+
+#~ msgid "MByte"
+#~ msgstr "MByte"
+
+#~ msgid "GByte"
+#~ msgstr "GByte"
+
+#~ msgid "TByte"
+#~ msgstr "TByte"
+
+#~ msgctxt ""
+#~ "%1 is amount of disk space, %2 the unit, KBytes, MBytes, GBytes, TBytes, "
+#~ "etc."
+#~ msgid "(%1 %2)"
+#~ msgstr "(%1 %2)"
+
+#~ msgid "Protocol name"
+#~ msgstr "Protokoll-Name"
+
+#~ msgid "Socket name"
+#~ msgstr "Socket-Name"
+
+#~ msgid "General"
+#~ msgstr "Allgemein"
+
+#~ msgid "Original Path"
+#~ msgstr "Ursprünglicher Pfad"
+
+#~ msgid "Date of Deletion"
+#~ msgstr "Datum des Löschvorgangs"

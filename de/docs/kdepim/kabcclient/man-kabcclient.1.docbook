@@ -1,0 +1,627 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+  <!ENTITY % German "INCLUDE"
+><!-- change language only here -->
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>&kde;-Benutzerhandbuch</title>
+<author
+><firstname
+>Kevin</firstname
+> <surname
+>Krammer</surname
+> <affiliation
+> <address
+><email
+>kevin.krammer@gmx.at</email
+></address>
+  </affiliation>
+  <contrib
+>Author</contrib>
+</author>
+<date
+>2005-09-08</date>
+<productname
+>K Desktop Environment</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kabcclient</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+<refnamediv id='name'>
+<refname
+>kabcclient</refname>
+<refpurpose
+>Befehlszeilenprogramm für das &kde;-Adressbuch</refpurpose>
+</refnamediv>
+<!-- body begins here -->
+<refsynopsisdiv id='synopsis'>
+<cmdsynopsis
+><command
+>kabcclient</command
+> <group
+> <arg choice="opt"
+>-A</arg
+> <arg choice="opt"
+>-R</arg
+> <arg choice="opt"
+>-M</arg
+> <arg choice="opt"
+>-S</arg
+> <arg choice="opt"
+>-L</arg
+> </group
+> <arg choice="opt"
+>--match-case</arg
+> <arg choice="opt"
+>--nosave</arg
+> <arg choice="opt"
+>-ic <replaceable
+>codec</replaceable
+></arg
+> <arg choice="opt"
+>-if <replaceable
+>format</replaceable
+></arg
+> <arg choice="opt"
+>-if-opts <replaceable
+>format-options</replaceable
+></arg
+> <arg choice="opt"
+>-oc <replaceable
+>codec</replaceable
+></arg
+> <arg choice="opt"
+>-of <replaceable
+>format</replaceable
+></arg
+> <arg choice="opt"
+>-of-opts <replaceable
+>format-options</replaceable
+></arg
+> <arg choice="opt"
+> input-data </arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1 id='description'>
+<title
+>Beschreibung</title
+> 
+<para
+>Das Programm <command
+>kabcclient</command
+> erlaubt den Zugriff auf das &kde;-Adressbuch auf der Befehlszeile, zum Beispiel in Shell-Skripten. Eingaben können über stdin (Standardeingabe) oder über zusätzliche Befehlszeilenargumente gelesen werden. Daten werden immer auf die Standardausgabe (stdout) ausgegeben.</para>
+</refsect1>
+
+<refsect1 id='options'>
+<title
+>Optionen</title>
+<variablelist>
+
+<varlistentry>
+<term
+><emphasis
+>Arbeitsmodi</emphasis
+></term>
+<listitem>
+<variablelist>
+
+<varlistentry>
+  <term
+><option
+>-A, --add</option
+></term>
+  <listitem>
+<para
+>Fügt einen Kontakt in das Adressbuch ein</para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+><option
+>-R, --remove</option
+></term>
+  <listitem>
+<para
+>Entfernt einen vorhandenen Kontakt aus dem Adressbuch</para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+><option
+>-M, --merge</option
+></term>
+  <listitem>
+<para
+>Eingabedaten mit Daten von vorhandenen Einträgen des Adressbuchs zusammenführen. Jede zusätzliche neue Information wird an die bereits vorhandenen Daten angefügt.</para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+><option
+>-S, --search</option
+></term>
+  <listitem>
+<para
+>Sucht im Adressbuch nach passenden Kontakten</para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+><option
+>-L, --list</option
+></term>
+  <listitem>
+<para
+>Zeigt alle Kontakte aus dem Adressbuch an</para>
+  </listitem>
+  </varlistentry>
+
+</variablelist>
+</listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term
+><emphasis
+>Optionen für die Eingabe</emphasis
+></term>
+<listitem>
+<variablelist>
+
+  <varlistentry>
+  <term
+><option
+>-ic, --input-codec</option
+></term>
+  <listitem>
+<para
+>Filtert die Eingabedaten durch die vorgegebene Textkodierung. Weitere Informationen über Eingabekodierungen werden mit der Option <option
+>-ic</option
+><replaceable
+> help</replaceable
+> angezeigt. Standard-Eingabekodierung ist <emphasis
+>local</emphasis
+>, damit wird die Kodierung der aktuellen Einstellung aus  <citerefentry
+><refentrytitle
+>locale</refentrytitle
+><manvolnum
+>5</manvolnum
+></citerefentry
+> verwendet</para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+><option
+>-if, --input-format</option
+></term>
+  <listitem>
+<para
+>Filtert die Eingabedaten durch die vorgegebenen Formatierungsregeln. Weitere Informationen verfügbare Formate werden mit der Option <option
+>-if</option
+><replaceable
+> help</replaceable
+> angezeigt. Die Standardeinstellung ist <emphasis
+>search</emphasis
+></para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+>Wählt Kontakte in einem Dialog aus anstelle des Einlesens von Textdaten</term>
+  <listitem>
+<para
+><emphasis
+>dialog</emphasis
+></para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+><option
+>-if-opts, --input-format-options</option
+></term>
+  <listitem>
+<para
+>Zusätzliche Optionen für das gewählte Eingabeformat. Abhängig vom Format können diese Optionen optional, aber auch erforderlich sein. Weitere Informationen über verfügbare Formatoptionen werden mit <option
+>-if-opts</option
+><replaceable
+> help</replaceable
+> angezeigt.</para>
+  </listitem>
+  </varlistentry>
+
+</variablelist>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><emphasis
+>Optionen für die Ausgabe</emphasis
+></term>
+<listitem>
+<variablelist>
+
+  <varlistentry>
+  <term
+><option
+>-oc, --output-codec</option
+></term>
+  <listitem>
+<para
+>Filtert die Ausgabedaten durch die vorgegebene Textkodierung. Weitere Informationen über Ausgabekodierungen werden mit der Option <option
+>-oc</option
+><replaceable
+> help</replaceable
+> angezeigt. Standard-Ausgabekodierung ist <emphasis
+>local</emphasis
+>, damit wird die Kodierung der aktuellen Einstellung aus  <citerefentry
+><refentrytitle
+>locale</refentrytitle
+><manvolnum
+>5</manvolnum
+></citerefentry
+> verwendet.</para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+><option
+>-of, --output-format</option
+></term>
+  <listitem>
+<para
+>Filtert die Ausgabedaten durch die vorgegebenen Formatierungsregeln. Weitere Informationen über verfügbare Formate werden mit der Option <option
+>-if</option
+><replaceable
+> help</replaceable
+> angezeigt. Die Standardeinstellung ist <emphasis
+>vcard</emphasis
+>.</para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+><option
+>-of-opts, --output-format-options</option
+></term>
+  <listitem>
+<para
+>Zusätzliche Optionen für das gewählte Ausgabeformat. Abhängig vom Format können diese Optionen optional, aber auch erforderlich sein. Weitere Informationen über verfügbare Formatoptionen werden mit <option
+>-of-opts</option
+><replaceable
+> help</replaceable
+> angezeigt.</para>
+  </listitem>
+  </varlistentry>
+
+</variablelist>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><emphasis
+>Weitere Optionen</emphasis
+></term>
+<listitem>
+<variablelist>
+
+  <varlistentry>
+  <term
+><option
+>--match-case</option
+></term>
+  <listitem>
+<para
+>Verwendet Groß-/Kleinschreibung, wenn der Eingabetext mit den Kontakteinträgen verglichen wird</para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+><option
+>--nosave</option
+></term>
+  <listitem>
+<para
+>Führt Operationen wie <option
+>-A, -R</option
+> oder <option
+>-M</option
+>, die Daten verändern, nur im Arbeitsspeicher aus, die Änderungen werden aber nicht im Adressbuch gespeichert.</para>
+  </listitem>
+  </varlistentry>
+
+</variablelist>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</refsect1>
+
+<refsect1 id='diagnostics'>
+<title
+>Diagnose</title>
+<para
+>Wie in Unix üblich, wird bei erfolgreicher Ausführung einer Operation der Wert Null zurückgegeben. Abhängig von der Arbeitsweise zeigt ein Rückgabewert 
+> 0 ein Problem an. das bei der Ausführung aufgetreten ist.</para>
+<variablelist>
+
+<varlistentry>
+<term
+><emphasis
+>ADD</emphasis
+></term>
+<listitem>
+<variablelist>
+
+  <varlistentry>
+  <term
+><literal
+>1</literal
+></term>
+  <listitem>
+<para
+>Das Lesen des Eingabetextes fehlgeschlagen</para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+><literal
+>2</literal
+></term>
+  <listitem>
+<para
+>Die Erstellung eines passenden Kontakteintrags aus den Eingabedaten ist fehlgeschlagen, &eg; weil nicht genügend Daten eingeben wurden oder weil die Eingabe für das gewählte Format falsch formatiert ist</para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+><literal
+>3</literal
+></term>
+  <listitem>
+<para
+>Die Speicherung des Adressbuchs ist fehlgeschlagen. Die Ursache für diesen Fehler kann zum Beispiel darin liegen, dass das Adressbuch aktuell durch andere Programme gesperrt ist.</para>
+  </listitem>
+  </varlistentry>
+
+</variablelist>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><emphasis
+>REMOVE</emphasis
+></term>
+<listitem>
+<variablelist>
+
+  <varlistentry>
+  <term
+><literal
+>1</literal
+></term>
+  <listitem>
+<para
+>Das Lesen des Eingabetextes fehlgeschlagen</para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+><literal
+>2</literal
+></term>
+  <listitem>
+<para
+>Das Programm kann keinem Kontakteintrag aus dem Adressbuch entfernen. Die Ursache dafür kann bei einem Fehler beim Lesen der Eingabedaten liegen oder weil es keinen oder mehrere passende Kontakteinträge im Adressbuch gibt. Im letzten Fall wird eine Fehlermeldung auf der Standardausgabe angezeigt.</para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+><literal
+>3</literal
+></term>
+  <listitem>
+<para
+>Die Speicherung des Adressbuchs ist fehlgeschlagen. Die Ursache für diesen Fehler kann zum Beispiel darin liegen, dass das Adressbuch aktuell durch andere Programme gesperrt ist.</para>
+  </listitem>
+  </varlistentry>
+
+</variablelist>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><emphasis
+>MERGE</emphasis
+></term>
+<listitem>
+<variablelist>
+
+  <varlistentry>
+  <term
+><literal
+>1</literal
+></term>
+  <listitem>
+<para
+>Das Lesen des Eingabetextes fehlgeschlagen</para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+><literal
+>2</literal
+></term>
+  <listitem>
+<para
+>Das Programm kann die Eingabe nicht mit einem Kontakteintrag aus dem Adressbuch zusammenführen. Die Ursache dafür kann bei einem Fehler beim Lesen der Eingabedaten liegen oder weil es keinen oder mehrere passende Kontakteinträge im Adressbuch gibt. Im letzten Fall wird eine Fehlermeldung auf der Standardausgabe angezeigt.</para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+><literal
+>3</literal
+></term>
+  <listitem>
+<para
+>Die Speicherung des Adressbuchs ist fehlgeschlagen. Die Ursache für diesen Fehler kann zum Beispiel darin liegen, dass das Adressbuch aktuell durch andere Programme gesperrt ist.</para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+><emphasis
+>SEARCH</emphasis
+></term>
+  <term
+><literal
+>1</literal
+></term>
+  <listitem>
+<para
+>Das Lesen des Eingabetextes fehlgeschlagen</para>
+  </listitem>
+  </varlistentry>
+  <varlistentry>
+  <term
+><literal
+>2</literal
+></term>
+  <listitem>
+<para
+>Das Programm kann keinen passenden Kontakteintrag im Adressbuch finden. Die Ursache kann beim Einlesefehler des Eingabetextes oder bei einem Fehler bei der Suche nach einem passenden Kontakteintrag im Adressbuch liegen.</para>
+  </listitem>
+  </varlistentry>
+
+</variablelist>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</refsect1>
+
+<refsect1 id='examples'>
+<title
+>Beispiele</title>
+<para
+><emphasis
+>Suche nach Kontakten mit „Joe“ im Namen oder der E-Mail-Adresse</emphasis
+></para>
+<literallayout
+>kabcclient -S Joe
+</literallayout>
+
+<para
+><emphasis
+>Die gleiche Suche mit Beachtung von Groß-/Kleinschreibung.</emphasis
+></para>
+<literallayout
+>kabcclient --match-case -S Joe
+</literallayout>
+
+<para
+><emphasis
+>Die gleiche Suche mit Einlesen des Eingabetexts aus der Standardeingabe</emphasis
+></para>
+<literallayout
+>echo <quote
+>Joe</quote
+> | kabcclient --match-case -S
+</literallayout>
+
+<para
+><emphasis
+>Hinzufügen eines neuen Kontakteintrags mit Daten aus einer formatierten E-Mail-Adresse</emphasis
+></para>
+<literallayout
+>kabcclient --nosave --add -if email <quote
+>Marilyn Monroe &lt;mmonroe@moviestars.com&gt;</quote
+>
+</literallayout
+> 
+
+<para
+><emphasis
+>Das Gleiche, aber mit Speicherung der geänderten Daten des Adressbuchs</emphasis
+></para>
+<literallayout
+>kabcclient --add -if email <quote
+>Marilyn Monroe &lt;mmonroe@moviestars.com&gt;</quote
+>
+</literallayout>
+
+<para
+><emphasis
+>Anzeige aller verfügbaren Eingabeformate</emphasis
+></para>
+<literallayout
+>kabcclient -if help
+</literallayout>
+
+<para
+><emphasis
+>Anzeige aller verfügbaren Ausgabeformate</emphasis
+></para>
+<literallayout
+>kabcclient -of help
+</literallayout>
+
+<para
+><emphasis
+>Anzeige aller verfügbaren Optionen für das 'email'-Ausgabeformat</emphasis
+></para>
+<literallayout
+>kabcclient -of email -of-opts help
+</literallayout>
+
+<para
+><emphasis
+>Ausgabe aller E-Mail-Adressen der Kontakte, die den Text 'Marilyn' enthalten</emphasis
+></para>
+<literallayout
+>kabcclient -of email -of-opts allemails -S Marilyn
+</literallayout>
+
+<para
+><emphasis
+>Entfernen aller Kontakte, die im Dialog Kontaktauswahl markiert wurden.</emphasis
+></para>
+<literallayout
+>kabcclient --remove -if dialog
+</literallayout>
+
+<para
+><emphasis
+>Exportieren der ausgewählten Kontakte in eine vCard-Datei, das Standardausgabeformat</emphasis
+></para>
+<literallayout
+>kabcclient -S -if dialog &gt; contacts.vcf
+</literallayout>
+
+</refsect1>
+
+<refsect1 id='author'
+><title
+>Author</title>
+<para
+>Diese Handbuchseite wurde von Kevin Krammer &lt;kevin.krammer@gmx.at&gt; geschrieben. Es ist erlaubt, dieses Dokument nach den Regeln der GNU General Public License, Version 2 oder einer späteren von der Free Software Foundation herausgegebenen Lizenz zu kopieren, zu verbreiten oder zu verändern.</para>
+
+<para
+>Auf Debian-Systemen kann der gesamte Text der GNU General Public License im Ordner /usr/share/common-licenses/GPL gefunden werden.</para>
+</refsect1>
+</refentry>

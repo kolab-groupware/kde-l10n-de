@@ -1,0 +1,399 @@
+# Stephan Johach <hunsum@gmx.de>, 2005.
+# Burkhard Lück <lueck@hube-lueck.de>, 2007, 2008, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: qtoptions_man-qtoptions.7\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:13+0000\n"
+"PO-Revision-Date: 2010-08-24 20:52+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: man-qtoptions.7.docbook:8
+#, no-c-format
+msgid "KDE User's Manual"
+msgstr "KDE-Benutzerhandbuch"
+
+#. Tag: author
+#: man-qtoptions.7.docbook:9
+#, no-c-format
+msgid "&Lauri.Watts; &Lauri.Watts.mail;"
+msgstr "&Lauri.Watts; &Lauri.Watts.mail;"
+
+#. Tag: date
+#: man-qtoptions.7.docbook:10
+#, no-c-format
+msgid "2004-02-02"
+msgstr "2004-02-02"
+
+#. Tag: productname
+#: man-qtoptions.7.docbook:11
+#, no-c-format
+msgid "K Desktop Environment"
+msgstr "K Desktop Environment"
+
+#. Tag: refentrytitle
+#: man-qtoptions.7.docbook:15
+#, no-c-format
+msgid "<refentrytitle>qtoptions</refentrytitle>"
+msgstr "<refentrytitle>qtoptions</refentrytitle>"
+
+#. Tag: manvolnum
+#: man-qtoptions.7.docbook:16
+#, no-c-format
+msgid "<manvolnum>7</manvolnum>"
+msgstr "<manvolnum>7</manvolnum>"
+
+#. Tag: refname
+#: man-qtoptions.7.docbook:20
+#, no-c-format
+msgid "<refname>qtoptions</refname>"
+msgstr "<refname>qtoptions</refname>"
+
+#. Tag: refpurpose
+#: man-qtoptions.7.docbook:21
+#, no-c-format
+msgid "Common commandline options for all applications based on the Qt toolkit"
+msgstr ""
+"Allgemeine Befehlszeilenparameter für alle Anwendungen, die auf dem Qt-"
+"Toolkit basieren."
+
+#. Tag: cmdsynopsis
+#: man-qtoptions.7.docbook:25
+#, no-c-format
+msgid ""
+"<command><replaceable>Qt application</replaceable></command> <arg choice="
+"\"opt\">Qt Generic Options</arg>"
+msgstr ""
+"<command><replaceable>Qt-Anwendung</replaceable></command> <arg choice=\"opt"
+"\">Allgemeine Qt-Optionen</arg>"
+
+#. Tag: title
+#: man-qtoptions.7.docbook:33
+#, no-c-format
+msgid "Options"
+msgstr "Optionen"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:35
+#, no-c-format
+msgid "The following options apply to all &Qt; applications:"
+msgstr "Die folgenden Parameter gelten für alle &Qt;-Anwendungen:"
+
+#. Tag: term
+#: man-qtoptions.7.docbook:39
+#, no-c-format
+msgid "<option>--display</option> <parameter>displayname</parameter>"
+msgstr "<option>--display</option> <parameter>Displayname</parameter>"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:43
+#, no-c-format
+msgid "Use the X-server display <parameter>displayname</parameter>."
+msgstr "Verwende den X-Server-Display <parameter>Displayname</parameter>."
+
+#. Tag: term
+#: man-qtoptions.7.docbook:49
+#, no-c-format
+msgid "<option>--session</option> <parameter>sessionId</parameter>"
+msgstr "<option>--session</option> <parameter>Sitzungs-ID</parameter>"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:53
+#, no-c-format
+msgid "Restore the application for the given <parameter>sessionId</parameter>."
+msgstr ""
+"Wiederherstellung der Anwendung für die angegebene <parameter>Sitzungs-ID</"
+"parameter>."
+
+#. Tag: option
+#: man-qtoptions.7.docbook:60
+#, no-c-format
+msgid "--cmap"
+msgstr "--cmap"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:63
+#, no-c-format
+msgid ""
+"Causes the application to install a private color map on an 8-bit display."
+msgstr ""
+"Bewirkt, dass die Anwendung auf einem 8-Bit-Display eine eigene Farbtabelle "
+"anlegt. "
+
+#. Tag: term
+#: man-qtoptions.7.docbook:69
+#, no-c-format
+msgid "<option>--ncols</option> <parameter>count</parameter>"
+msgstr "<option>--ncols</option> <parameter>Anzahl</parameter>"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:73
+#, no-c-format
+msgid ""
+"Limits the number of colors allocated in the color cube on an 8-bit display, "
+"if the application is using the <methodname>QApplication::ManyColor</"
+"methodname> color specification."
+msgstr ""
+"Beschränkt die Anzahl der Farben auf einem 8-Bit-Display, wenn die Anwendung "
+"die Farbspezifikation <methodname>QApplication::ManyColor</methodname> "
+"verwendet."
+
+#. Tag: option
+#: man-qtoptions.7.docbook:82
+#, no-c-format
+msgid "--nograb"
+msgstr "--nograb"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:85
+#, no-c-format
+msgid "Tells &Qt; to never grab the mouse or the keyboard."
+msgstr ""
+"Bewirkt, dass &Qt; weder Maus noch Tastatur für sich allein beansprucht "
+"(grab)."
+
+#. Tag: option
+#: man-qtoptions.7.docbook:91
+#, no-c-format
+msgid "--dograb"
+msgstr "--dograb"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:94
+#, no-c-format
+msgid ""
+"Running under a debugger can cause an implicit <option>--nograb</option>, "
+"use <option>--dograb</option> to override."
+msgstr ""
+"In einem Debugger kann es vorkommen, dass implizit der Parameter <option>--"
+"nograb</option> gesetzt ist. Verwenden Sie <option>--dograb</option>, um "
+"diese Einstellung zu überschreiben."
+
+#. Tag: option
+#: man-qtoptions.7.docbook:102
+#, no-c-format
+msgid "--sync"
+msgstr "--sync"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:105
+#, no-c-format
+msgid "Switches to synchronous mode for debugging."
+msgstr "Wechselt zum Debuggen in den Synchronmodus."
+
+#. Tag: term
+#: man-qtoptions.7.docbook:110
+#, no-c-format
+msgid ""
+"<option>--fn</option>,<option>--font</option> <parameter>fontname</parameter>"
+msgstr ""
+"<option>--fn</option>,<option>--font</option> <parameter>Schriftname</"
+"parameter>"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:115
+#, no-c-format
+msgid "Defines the application font."
+msgstr "Legt die Schriftart für die Anwendung fest."
+
+#. Tag: term
+#: man-qtoptions.7.docbook:120
+#, no-c-format
+msgid ""
+"<option>--bg</option>,<option>--background</option> <parameter>color</"
+"parameter>"
+msgstr ""
+"<option>--bg</option>,<option>--background</option> <parameter>Farbe</"
+"parameter>"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:125
+#, no-c-format
+msgid ""
+"Sets the default background color and an application palette (light and dark "
+"shades are calculated)."
+msgstr ""
+"Legt die Standardhintergrundfarbe und eine Farbpalette für die Anwendung "
+"fest (helle und dunkle Schattierungen werden berechnet)."
+
+#. Tag: term
+#: man-qtoptions.7.docbook:131
+#, no-c-format
+msgid ""
+"<option>--fg</option>,<option>--foreground</option> <parameter>color</"
+"parameter>"
+msgstr ""
+"<option>--fg</option>,<option>--foreground</option> <parameter>Farbe</"
+"parameter>"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:136
+#, no-c-format
+msgid "Sets the default foreground color"
+msgstr "Legt die Standardvordergrundfarbe fest."
+
+#. Tag: term
+#: man-qtoptions.7.docbook:141
+#, no-c-format
+msgid ""
+"<option>--btn</option>,<option>--button</option> <parameter>color</parameter>"
+msgstr ""
+"<option>--btn</option>,<option>--button</option> <parameter>Farbe</parameter>"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:146
+#, no-c-format
+msgid "Sets the default button color."
+msgstr "Legt die Standardfarbe für Knöpfe fest."
+
+#. Tag: term
+#: man-qtoptions.7.docbook:152
+#, no-c-format
+msgid "<option>--name</option> <parameter>name</parameter>"
+msgstr "<option>--name</option> <parameter>Name</parameter>"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:156
+#, no-c-format
+msgid "Sets the application name."
+msgstr "Legt den Namen der Anwendung fest"
+
+#. Tag: term
+#: man-qtoptions.7.docbook:161
+#, no-c-format
+msgid "<option>--title</option> <parameter>title</parameter>"
+msgstr "<option>--title</option> <parameter>Titel</parameter>"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:165
+#, no-c-format
+msgid "Sets the application title (caption)."
+msgstr "Legt den Titel der Anwendung fest (Fenstertitel)"
+
+#. Tag: term
+#: man-qtoptions.7.docbook:170
+#, no-c-format
+msgid "<option>--visual</option> <parameter>TrueColor</parameter>"
+msgstr "<option>--visual</option> <parameter>TrueColor</parameter>"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:174
+#, no-c-format
+msgid ""
+"Forces the application to use a <parameter>TrueColor</parameter> visual on "
+"an 8-bit display."
+msgstr ""
+"Erzwingt für die Anwendung eine <parameter>TrueColore</parameter>-"
+"Darstellung auf einem 8-Bit-Display."
+
+#. Tag: term
+#: man-qtoptions.7.docbook:181
+#, no-c-format
+msgid "<option>--inputstyle</option> <parameter>inputstyle</parameter>"
+msgstr "<option>--inputstyle</option> <parameter>Eingabestil</parameter>"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:185
+#, no-c-format
+msgid ""
+"Sets XIM (X Input Method) input style. Possible values are "
+"<parameter>onthespot</parameter>, <parameter>overthespot</parameter>, "
+"<parameter>offthespot</parameter> and <parameter>root</parameter>."
+msgstr ""
+"Legt den XIM (X Input Method) Eingabestil fest. Mögliche Werte sind "
+"<parameter>onthespot</parameter>, <parameter>overthespot</parameter>, "
+"<parameter>offthespot</parameter> und <parameter>root</parameter>."
+
+#. Tag: term
+#: man-qtoptions.7.docbook:193
+#, no-c-format
+msgid "<option>--im</option> <parameter>XIM server</parameter>"
+msgstr "<option>--im</option> <parameter>XIM-Server</parameter>"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:197
+#, no-c-format
+msgid "Set XIM server."
+msgstr "Legt den XIM-Server fest."
+
+#. Tag: option
+#: man-qtoptions.7.docbook:203
+#, no-c-format
+msgid "--noxim"
+msgstr "--noxim"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:206
+#, no-c-format
+msgid "Disable XIM"
+msgstr "XIM abschalten"
+
+#. Tag: option
+#: man-qtoptions.7.docbook:212
+#, no-c-format
+msgid "--reverse"
+msgstr "--reverse"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:215
+#, no-c-format
+msgid "mirrors the whole layout of widgets"
+msgstr "Ordnet sämtliche Bedienelemente spiegelverkehrt an"
+
+#. Tag: term
+#: man-qtoptions.7.docbook:220
+#, no-c-format
+msgid "<option>--stylesheet</option> <replaceable>file.qss</replaceable>"
+msgstr "<option>--stylesheet</option> <replaceable>file.qss</replaceable>"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:224
+#, no-c-format
+msgid "applies the Qt stylesheet to the application widgets"
+msgstr "Wendet die Qt-Stilvorlage auf Anwendungs-Dialoge an."
+
+#. Tag: title
+#: man-qtoptions.7.docbook:234
+#, no-c-format
+msgid "See Also"
+msgstr "Siehe auch"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:235
+#, no-c-format
+msgid "<replaceable>kdeoptions</replaceable>(7)"
+msgstr "<replaceable>kdeoptions</replaceable>(7)"
+
+#. Tag: title
+#: man-qtoptions.7.docbook:240
+#, no-c-format
+msgid "Authors"
+msgstr "Autoren"
+
+#. Tag: para
+#: man-qtoptions.7.docbook:241
+#, no-c-format
+msgid "Man page written by &Lauri.Watts; &Lauri.Watts.mail;"
+msgstr "Handbuchseite geschrieben von &Lauri.Watts;&Lauri.Watts.mail;"
+
+#~ msgid ""
+#~ "<date>2004-02-02</date> <productname>K Desktop Environment</productname>"
+#~ msgstr ""
+#~ "<date>2004-02-02</date> <productname>K Desktop Environment</productname>"
+
+#~ msgid "kdeoptions(7)"
+#~ msgstr "kdeoptions(7)"
+
+#~ msgid "qtoptions"
+#~ msgstr "qtoptions"
+
+#~ msgid "Qt options"
+#~ msgstr "Qt-Parameter"

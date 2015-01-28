@@ -1,0 +1,651 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: makekdewidgets_man-makekdewidgets.1\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:13+0000\n"
+"PO-Revision-Date: 2010-08-24 20:51+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: branches/KDE/4.1/kdelibs/doc/makekdewidgets/man-"
+"makekdewidgets.1.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 808898\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: man-makekdewidgets.1.docbook:9
+#, no-c-format
+msgid "Programming Tool"
+msgstr "Programmier-Werkzeug"
+
+#. Tag: author
+#: man-makekdewidgets.1.docbook:11
+#, no-c-format
+msgid ""
+"<firstname>Ian</firstname> <othername>Reinhart</othername> <surname>Geiser</"
+"surname>"
+msgstr ""
+"<firstname>Ian</firstname> <othername>Reinhart</othername> <surname>Geiser</"
+"surname>"
+
+#. Tag: email
+#: man-makekdewidgets.1.docbook:17
+#, no-c-format
+msgid "geiseri@kde.org"
+msgstr "geiseri@kde.org"
+
+#. Tag: date
+#: man-makekdewidgets.1.docbook:22
+#, no-c-format
+msgid "2006-06-01"
+msgstr "2006-06-01"
+
+#. Tag: productname
+#: man-makekdewidgets.1.docbook:23
+#, no-c-format
+msgid "K Desktop Environment"
+msgstr "K Desktop Environment"
+
+#. Tag: manvolnum
+#: man-makekdewidgets.1.docbook:30
+#, no-c-format
+msgid "<manvolnum>1</manvolnum>"
+msgstr "<manvolnum>1</manvolnum>"
+
+#. Tag: refname
+#: man-makekdewidgets.1.docbook:34
+#, no-c-format
+msgid "<refname>makekdewidgets</refname>"
+msgstr "<refname>makekdewidgets</refname>"
+
+#. Tag: refpurpose
+#: man-makekdewidgets.1.docbook:35
+#, no-c-format
+msgid "Builds &Qt; widget plugins from an ini style description file."
+msgstr ""
+"Erstellt Hilfsprogramme (Module) für &Qt;-Bedienelemente (Widgets) aus einer "
+"Beschreibungsdatei im „ini“-Stil."
+
+#. Tag: cmdsynopsis
+#: man-makekdewidgets.1.docbook:41
+#, no-c-format
+msgid ""
+"<command>makekdewidgets</command> <arg>&Qt;-options</arg> <arg>&kde;-"
+"options</arg> <arg choice=\"plain\"><replaceable>file</replaceable></arg>"
+msgstr ""
+"<command>makekdewidgets</command> <arg>&Qt;-Optionen</arg> <arg>&kde;-"
+"Optionen</arg> <arg choice=\"plain\"><replaceable>Datei</replaceable></arg>"
+
+#. Tag: title
+#: man-makekdewidgets.1.docbook:50
+#, no-c-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:51
+#, no-c-format
+msgid ""
+"<command>makekdewidgets</command> builds &Qt; widget plugins from an ini "
+"style description file."
+msgstr ""
+"<command>makekdewidgets</command> erstellt Hilfsprogramme (Module) für &Qt;-"
+"Bedienelemente (Widgets) aus einer Beschreibungsdatei im „ini“-Stil."
+
+#. Tag: title
+#: man-makekdewidgets.1.docbook:57
+#, no-c-format
+msgid "Options"
+msgstr "Optionen"
+
+#. Tag: emphasis
+#: man-makekdewidgets.1.docbook:61
+#, no-c-format
+msgid "Arguments:"
+msgstr "Argumente:"
+
+#. Tag: replaceable
+#: man-makekdewidgets.1.docbook:64
+#, no-c-format
+msgid "file"
+msgstr "Datei"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:67
+#, no-c-format
+msgid "Input file"
+msgstr "Eingabedatei"
+
+#. Tag: emphasis
+#: man-makekdewidgets.1.docbook:75
+#, no-c-format
+msgid "Options:"
+msgstr "Optionen"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:78
+#, no-c-format
+msgid "-o &lt;file&gt;"
+msgstr "-o &lt;Datei&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:81
+#, no-c-format
+msgid "Output file"
+msgstr "Ausgabedatei"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:86
+#, no-c-format
+msgid "-n &lt;plugin name&gt;"
+msgstr "-n &lt;Modulname&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:89
+#, no-c-format
+msgid "Name of the plugin class to generate [WidgetsPlugin]"
+msgstr "Name der Modul-Klasse, die erstellt werden soll [WidgetsPlugin]"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:94
+#, no-c-format
+msgid "-g &lt;group&gt;"
+msgstr "-g &lt;Gruppe&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:97
+#, no-c-format
+msgid "Default widget group name to display in designer [Custom]"
+msgstr ""
+"Standardname der Bedienelement-Gruppe (Widget Group) im Designer [Custom]"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:102
+#, no-c-format
+msgid "-p &lt;pixmap dir&gt;"
+msgstr "-p &lt;pixmap dir&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:105
+#, no-c-format
+msgid "Embed pixmaps from a source directory"
+msgstr "Bettet Pixmasp aus einen Quellordner ein."
+
+#. Tag: emphasis
+#: man-makekdewidgets.1.docbook:113
+#, no-c-format
+msgid "Generic options:"
+msgstr "Allgemeine Optionen:"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:117
+#, no-c-format
+msgid "--help"
+msgstr "--help"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:120
+#, no-c-format
+msgid "Show help about options"
+msgstr "Hilfe zu verfügbaren Optionen anzeigen."
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:126
+#, no-c-format
+msgid "--help-qt"
+msgstr "--help-qt"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:129
+#, no-c-format
+msgid "Show &Qt; specific options"
+msgstr "Spezielle Optionen für &Qt; anzeigen"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:135
+#, no-c-format
+msgid "--help-kde"
+msgstr "--help-kde"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:138
+#, no-c-format
+msgid "Show &kde; specific options"
+msgstr "Zeigt die &kde;-spezifischen Optionen"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:144
+#, no-c-format
+msgid "--help-all"
+msgstr "--help-all"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:147
+#, no-c-format
+msgid "Show all options"
+msgstr "Alle Optionen anzeigen"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:153
+#, no-c-format
+msgid "--author"
+msgstr "--author"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:156
+#, no-c-format
+msgid "Show author information"
+msgstr "Zeigt Informationen über den Autor."
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:162
+#, no-c-format
+msgid "-v, --version"
+msgstr "-v, --version"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:165
+#, no-c-format
+msgid "Show version information"
+msgstr "Versionsinformation anzeigen"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:171
+#, no-c-format
+msgid "--license"
+msgstr "--license"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:174
+#, no-c-format
+msgid "Show license information"
+msgstr "Lizenz-Informationen anzeigen"
+
+#. Tag: emphasis
+#: man-makekdewidgets.1.docbook:182
+#, no-c-format
+msgid "&kde; Options:"
+msgstr "&kde;-Optionen:"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:186
+#, no-c-format
+msgid "--caption &lt;caption&gt;"
+msgstr "--caption &lt;Titel&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:189
+#, no-c-format
+msgid "Use 'caption' as name in the titlebar"
+msgstr "Verwendet „Titel“ als Name in der Titelleiste"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:195
+#, no-c-format
+msgid "--icon &lt;icon&gt;"
+msgstr "--icon &lt;Symbol&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:198 man-makekdewidgets.1.docbook:207
+#, no-c-format
+msgid "Use 'icon' as the application icon"
+msgstr "„Symbol“ für die Anwendung benutzen"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:204
+#, no-c-format
+msgid "--miniicon &lt;icon&gt;"
+msgstr "--miniicon &lt;Symbol&gt;"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:213
+#, no-c-format
+msgid "--config &lt;filename&gt;"
+msgstr "--config &lt;Dateiname&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:216
+#, no-c-format
+msgid "Use alternative configuration file"
+msgstr "Andere Einrichtungsdatei verwenden"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:222
+#, no-c-format
+msgid "--dcopserver &lt;server&gt;"
+msgstr "--dcopserver &lt;Server&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:225
+#, no-c-format
+msgid "Use the &DCOP; server specified by 'server'"
+msgstr "Verwendet den unter 'Server' angegebenen &DCOP;-Server."
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:231
+#, no-c-format
+msgid "--nocrashhandler"
+msgstr "--nocrashhandler"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:234
+#, no-c-format
+msgid "Disable crash handler to get core dumps"
+msgstr ""
+"Abschalten des Crash-Handlers, damit Fehlerprotokolle (core dumps) erstellt "
+"werden."
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:240
+#, no-c-format
+msgid "--waitforwm"
+msgstr "--waitforwm"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:243
+#, no-c-format
+msgid "Waits for a WM_NET compatible windowmanager"
+msgstr "Wartet auf einen Fenstermanager, der WM_NET-kompatibel ist."
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:249
+#, no-c-format
+msgid "--style &lt;style&gt;"
+msgstr "--style &lt;Stil&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:252
+#, no-c-format
+msgid "Sets the application &GUI; style"
+msgstr "Legt den Stil der Anwendung fest"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:258
+#, no-c-format
+msgid "--geometry &lt;geometry&gt;"
+msgstr "--geometry &lt;Geometrie&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:261
+#, no-c-format
+msgid ""
+"Sets the client geometry of the main widget - see man X for the argument "
+"format"
+msgstr ""
+"Legt die Geometrie des Hauptelements im Client-Programm fest. Das Format für "
+"die Argumente finden Sie mit „man X“"
+
+#. Tag: emphasis
+#: man-makekdewidgets.1.docbook:269
+#, no-c-format
+msgid "&Qt; options:"
+msgstr "&Qt;-Optionen:"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:273
+#, no-c-format
+msgid "--display &lt;displayname&gt;"
+msgstr "--display &lt;Anzeigename&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:276
+#, no-c-format
+msgid "Use the X-server display 'displayname'"
+msgstr "Verwendet die X-Server-Anzeige 'Anzeigename'."
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:282
+#, no-c-format
+msgid "--session &lt;sessionId&gt;"
+msgstr "--session &lt; Sitzungs-ID&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:285
+#, no-c-format
+msgid "Restore the application for the given 'sessionId'"
+msgstr "Wiederherstellung der Anwendung für die angegebene 'Sitzungs-ID'."
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:291
+#, no-c-format
+msgid "--cmap"
+msgstr "--cmap"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:294
+#, no-c-format
+msgid ""
+"Causes the application to install a private color map on an 8-bit display"
+msgstr ""
+"Bewirkt, dass die Anwendung auf einem 8-Bit-Display eine eigene Farbtabelle "
+"anlegt. "
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:300
+#, no-c-format
+msgid "--ncols &lt;count&gt;"
+msgstr "--ncols &lt;Anzahl&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:303
+#, no-c-format
+msgid ""
+"Limits the number of colors allocated in the color cube on an 8-bit display, "
+"if the application is using the QApplication::ManyColor color specification"
+msgstr ""
+"Beschränkt die Anzahl der Farben auf einem 8-Bit-Display, wenn die Anwendung "
+"die Farbspezifikation QApplication::ManyColor verwendet."
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:309
+#, no-c-format
+msgid "--nograb"
+msgstr "--nograb"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:312
+#, no-c-format
+msgid "Tells &Qt; to never grab the mouse or the keyboard"
+msgstr ""
+"Bewirkt, dass &Qt; weder Maus noch Tastatur für sich allein beansprucht "
+"(grab). "
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:318
+#, no-c-format
+msgid "--sync"
+msgstr "--sync"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:321
+#, no-c-format
+msgid "Switches to synchronous mode for debugging"
+msgstr "Wechselt zum Debuggen in den Synchronmodus"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:327
+#, no-c-format
+msgid "--fn, --font &lt;fontname&gt;"
+msgstr "--fn, --font &lt;Schriftname&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:330
+#, no-c-format
+msgid "Defines the application font"
+msgstr "Legt die Schriftart für die Anwendung fest."
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:336
+#, no-c-format
+msgid "--bg, --background &lt;color&gt;"
+msgstr "--bg, --background &lt;Farbe&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:339
+#, no-c-format
+msgid ""
+"Sets the default background color and an application palette (light and dark "
+"shades are calculated)"
+msgstr ""
+"Legt die Standardhintergrundfarbe und eine Farbpalette für die Anwendung "
+"fest (helle und dunkle Schattierungen werden berechnet)."
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:345
+#, no-c-format
+msgid "--fg, --foreground &lt;color&gt;"
+msgstr "--fg, --foreground &lt;Farbe&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:348
+#, no-c-format
+msgid "Sets the default foreground color"
+msgstr "Legt die Standardvordergrundfarbe fest"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:354
+#, no-c-format
+msgid "--btn, --button &lt;color&gt;"
+msgstr "--btn, --button &lt;Farbe&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:357
+#, no-c-format
+msgid "Sets the default button color"
+msgstr "Legt die Standardfarbe für Knöpfe fest."
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:363
+#, no-c-format
+msgid "--name &lt;name&gt;"
+msgstr "--name &lt;Name&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:366
+#, no-c-format
+msgid "Sets the application name"
+msgstr "Legt den Namen der Anwendung fest"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:372
+#, no-c-format
+msgid "--title &lt;title&gt;"
+msgstr "--title &lt;Titel&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:375
+#, no-c-format
+msgid "Sets the application title (caption)"
+msgstr "Legt den Titel der Anwendung fest (Fenstertitel)"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:381
+#, no-c-format
+msgid "--visual TrueColor"
+msgstr "--visual TrueColor"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:384
+#, no-c-format
+msgid "Forces the application to use a TrueColor visual on an 8-bit display"
+msgstr "Erzwingt die Verwendung von Echtfarben auf einer 8-Bit-Anzeige"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:390
+#, no-c-format
+msgid "--inputstyle &lt;inputstyle&gt;"
+msgstr "--inputstyle &lt;Eingabestil&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:393
+#, no-c-format
+msgid ""
+"Sets XIM (X Input Method) input style. Possible values are onthespot, "
+"overthespot, offthespot, and root"
+msgstr ""
+"Legt den Eingabestil von XIM (X Input Method) fest. Mögliche Werte sind "
+"onthespot, overthespot, offthespot und root."
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:399
+#, no-c-format
+msgid "--im &lt;XIM server&gt;"
+msgstr "--im &lt;XIM-Server&gt;"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:402
+#, no-c-format
+msgid "Sets XIM server"
+msgstr "Legt den XIM-Server fest"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:408
+#, no-c-format
+msgid "--noxim"
+msgstr "--noxim"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:411
+#, no-c-format
+msgid "Disable XIM"
+msgstr "XIM abschalten"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:417
+#, no-c-format
+msgid "--reverse"
+msgstr "--reverse"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:420
+#, no-c-format
+msgid "Mirrors the whole layout of widgets"
+msgstr "Ordnet sämtliche Bedienelemente spiegelverkehrt an"
+
+#. Tag: title
+#: man-makekdewidgets.1.docbook:429
+#, no-c-format
+msgid "See Also"
+msgstr "Siehe auch"
+
+#. Tag: option
+#: man-makekdewidgets.1.docbook:433
+#, no-c-format
+msgid "http://developer.kde.org"
+msgstr "http://developer.kde.org"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:436
+#, no-c-format
+msgid "&kde; Developer's Corner website"
+msgstr "&kde;-Entwickler-Webseite"
+
+#. Tag: title
+#: man-makekdewidgets.1.docbook:443
+#, no-c-format
+msgid "Bugs"
+msgstr "Fehler"
+
+#. Tag: para
+#: man-makekdewidgets.1.docbook:444
+#, no-c-format
+msgid ""
+"Please use <ulink url=\"http://bugs.kde.org\">bugs.kde.org</ulink> to report "
+"bugs, do not mail the authors directly."
+msgstr ""
+"Bitte verwenden Sie <ulink url=\"http://bugs.kde.org\">bugs.kde.org</ulink> "
+"für Fehlerberichte, schicken Sie keine E-Mails direkt an die Autoren."
+
+#~ msgid "<command>makekdewidgets</command>"
+#~ msgstr "<command>makekdewidgets</command>"
+
+#~ msgid ""
+#~ "<date>2006-06-01</date> <productname>K Desktop Environment</productname>"
+#~ msgstr ""
+#~ "<date>01.06.2006</date> <productname>K Desktop Environment</productname>"

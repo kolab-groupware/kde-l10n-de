@@ -1,0 +1,2176 @@
+# Stephan Johach <hunsum@gmx.de>, 2007.
+# Burkhard Lück <lueck@hube-lueck.de>, 2007, 2008, 2009, 2010, 2013.
+# Frederik Schwarzer <schwarzer@kde.org>, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdm_theme-ref\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:26+0000\n"
+"PO-Revision-Date: 2013-12-13 12:32+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdebase/workspace/doc/kdm/theme-ref."
+"docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 745978\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: theme-ref.docbook:2
+#, no-c-format
+msgid "Creating themes for the &kdm; greeter"
+msgstr "Das Erstellen von Designs für den Anmeldungsmanager von &kdm;"
+
+#. Tag: para
+#: theme-ref.docbook:4
+#, no-c-format
+msgid ""
+"This section describes the creation of themes for the themed greeter. For "
+"examples including screenshots, see the installed standard themes and the "
+"themes from <ulink type=\"http\" url=\"http://www.kde-look.org/index.php?"
+"xcontentmode=40\"> the theme website</ulink>."
+msgstr ""
+"Dieser Abschnitt beschreibt das Erstellen von Designs für den "
+"Anmeldungsmanager. Beispiele mit Bildschirmfotos finden Sie bei den "
+"installierten Standarddesigns und den Designs von der <ulink type=\"http\" "
+"url=\"http://www.kde-look.org/index.php?xcontentmode=40\">Design-Webseite</"
+"ulink>."
+
+#. Tag: title
+#: theme-ref.docbook:13
+#, no-c-format
+msgid "Theme Overview"
+msgstr "Überblick über Designs"
+
+#. Tag: para
+#: theme-ref.docbook:15
+#, no-c-format
+msgid ""
+"&kdm; themes can be created by creating an XML file that follows the "
+"specification in <filename>$<envar>KDEDIR</envar>/share/apps/doc/kdm/greeter."
+"dtd</filename>. Theme files are stored in the directory <filename class="
+"\"directory\">$<envar>KDEDIR</envar>/share/apps/kdm/themes/"
+"<replaceable>theme_name</replaceable></filename>. The theme directory should "
+"contain a file called <filename>KdmGreeterTheme.desktop</filename> which has "
+"similar format to other <filename class=\"extension\">.desktop</filename> "
+"files and looks like:"
+msgstr ""
+"Designs für &kdm; können mit Hilfe einer XML-Datei, die der Spezifikation in "
+"<filename>$<envar>KDEDIR</envar>/share/apps/doc/kdm/greeter.dtd</filename> "
+"folgt, erstellt werden. Designs werden im Ordner <filename class=\"directory"
+"\">$<envar>KDEDIR</envar>/share/apps/kdm/themes/<replaceable>design_name</"
+"replaceable></filename> abgelegt. Der Design-Ordner sollte eine Datei mit "
+"dem Namen <filename>KdmGreeterTheme.desktop</filename> enthalten, die ein "
+"ähnliches Format aufweist wie die anderen <filename class=\"extension\">."
+"desktop</filename>-Dateien und wie folgt aussieht:"
+
+#. Tag: programlisting
+#: theme-ref.docbook:26
+#, no-c-format
+msgid ""
+"[KdmGreeterTheme]\n"
+"Greeter=circles.xml\n"
+"Name=Circles\n"
+"Description=Theme with blue circles\n"
+"Author=Bond, James Bond\n"
+"Copyright=(c) 2002 Bond, James Bond\n"
+"Screenshot=screenshot.png"
+msgstr ""
+"[KdmGreeterTheme]\n"
+"Greeter=circles.xml\n"
+"Name=Circles\n"
+"Description=Theme with blue circles\n"
+"Author=Bond, James Bond\n"
+"Copyright=(c) 2002 Bond, James Bond\n"
+"Screenshot=screenshot.png"
+
+#. Tag: para
+#: theme-ref.docbook:29
+#, no-c-format
+msgid ""
+"The <literal>Name</literal>, <literal>Description</literal>, "
+"<literal>Author</literal> and <literal>Copyright</literal> fields can be "
+"translated just like in other <filename class=\"extension\">.desktop</"
+"filename> files. All the files that are mentioned should be in the theme "
+"directory itself. The <literal>Screenshot</literal> field points to a file "
+"which should be a 200x150 screenshot of the theme in action (it is OK not to "
+"have one, but it makes it nicer for the user). The <literal>Greeter</"
+"literal> entry points to an XML file that contains the description of the "
+"theme."
+msgstr ""
+"Die Felder <literal>Name</literal>, <literal>Description</literal>, "
+"<literal>Author</literal> und <literal>Copyright</literal> können wie bei "
+"den anderen <filename class=\"extension\">.desktop</filename>-Dateien "
+"übersetzt werden. Alle aufgeführten Dateien sollten sich im Design-Ordner "
+"befinden. Das Feld <literal>Screenshot</literal> verweist auf eine Datei mit "
+"einem 200x150 großen Bildschirmfoto des Designs. (Sie können darauf auch "
+"verzichten, aber für den Anwender bietet es einen Vorteil.) Der Eintrag "
+"<literal>Greeter</literal> verweist auf eine XML-Datei, die die Beschreibung "
+"des Designs enthält."
+
+#. Tag: para
+#: theme-ref.docbook:74
+#, no-c-format
+msgid ""
+"Once a theme has been fully tested, make a tarball that contains the "
+"directory as it would be installed to the <filename class=\"directory\">"
+"$<envar>KDEDIR</envar>/share/apps/kdm/themes</filename> directory. This is "
+"the standard format for distributing &kdm; themes."
+msgstr ""
+"Wenn das Design gründlich getestet ist, erstellen Sie ein tar-Archiv, das "
+"den Ordner in dem Zustand enthält, wie er im Ordner <filename class="
+"\"directory\">$<envar>KDEDIR</envar>/share/apps/kdm/themes</filename> "
+"installiert werden soll. Dies ist das Standardformat für die Verteilung von "
+"Designs für &kdm;."
+
+#. Tag: title
+#: theme-ref.docbook:83
+#, no-c-format
+msgid "Detailed Description of Theme XML format"
+msgstr "Ausführliche Beschreibung des XML-Formats für Designs"
+
+#. Tag: title
+#: theme-ref.docbook:86
+#, no-c-format
+msgid "Toplevel Node"
+msgstr "Wurzel-Knoten"
+
+#. Tag: para
+#: theme-ref.docbook:88
+#, no-c-format
+msgid ""
+"&kdm; themes are XML files with the &lt;greeter&gt; tag at their root. The "
+"toplevel node is an <link linkend=\"item-nodes\">item node</link> of type "
+"<literal>rect</literal> with an implicit <link linkend=\"fixed-nodes\">fixed "
+"layout</link>."
+msgstr ""
+"Designs für &kdm; sind XML-Dateien mit dem Tag &lt;greeter&gt; als Wurzel. "
+"Der Knoten auf der obersten Ebene ist ein <link linkend=\"item-nodes"
+"\">Elementknoten</link> des Typs <literal>rect</literal> mit einer "
+"impliziten <link linkend=\"fixed-nodes\">festgelegten Anordnung</link>."
+
+#. Tag: programlisting
+#: theme-ref.docbook:104
+#, no-c-format
+msgid ""
+"&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n"
+"&lt;!DOCTYPE greeter SYSTEM \"greeter.dtd\"&gt;\n"
+"&lt;greeter&gt;\n"
+"[...]\n"
+"&lt;/greeter&gt;"
+msgstr ""
+"&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n"
+"&lt;!DOCTYPE greeter SYSTEM \"greeter.dtd\"&gt;\n"
+"&lt;greeter&gt;\n"
+"[...]\n"
+"&lt;/greeter&gt;"
+
+#. Tag: para
+#: theme-ref.docbook:106
+#, no-c-format
+msgid ""
+"Contained within the greeter tag can be the nodes described in the next "
+"sections of this document. Some of these nodes are containers (layout nodes, "
+"item nodes) which can contain other nodes again."
+msgstr ""
+"Eingeschlossen in das greeter-Tag können weitere Knoten sein, die in den "
+"folgenden Abschnitten dieses Dokuments beschrieben sind. Einige dieser "
+"Knoten sind Container (Anordnungs-Knoten, Element-Knoten), die weitere "
+"Knoten enthalten können."
+
+#. Tag: title
+#: theme-ref.docbook:115
+#, no-c-format
+msgid "Item Nodes"
+msgstr "Element-Knoten"
+
+#. Tag: para
+#: theme-ref.docbook:117
+#, no-c-format
+msgid ""
+"A &kdm; theme is created by specifying a hierarchy of item and layout nodes. "
+"Item nodes can have the following value for the <literal>type</literal> "
+"attribute:"
+msgstr ""
+"Ein &kdm;-Design wird durch die Angabe einer Hierarchie von Element- und "
+"Anordnungsknoten erstellt. Element-Knoten können folgende Werte für das "
+"Attribut <literal>Typ</literal> haben:"
+
+#. Tag: term
+#: theme-ref.docbook:126
+#, no-c-format
+msgid "button"
+msgstr "button"
+
+#. Tag: para
+#: theme-ref.docbook:128
+#, no-c-format
+msgid "A button field. This field uses a Qt button."
+msgstr "Ein Knopf-Feld. Dieses Feld benutzt einen Qt-Knopf."
+
+#. Tag: para
+#: theme-ref.docbook:131
+#, no-c-format
+msgid ""
+"It is also possible to make any other item act like a button by setting its "
+"<literal>button</literal> attribute to <literal>true</literal>. However, it "
+"is better to use Qt buttons in &kdm; themes since these are accessible to "
+"users with disabilities."
+msgstr ""
+"Sie können jeden anderen Eintrag dazu veranlassen sich wie ein Knopf zu "
+"verhalten, indem Sie das Attribut <literal>button</literal> auf "
+"<literal>true</literal> setzen. Sie sollten allerdings in &kdm;-Designs "
+"lieber Qt-Knöpfe verwenden, da diese auch für Benutzer mit Behinderungen "
+"zugänglich sind."
+
+#. Tag: term
+#: theme-ref.docbook:142
+#, no-c-format
+msgid "entry"
+msgstr "Eintrag"
+
+#. Tag: para
+#: theme-ref.docbook:144
+#, no-c-format
+msgid ""
+"An input widget like a line edit or combo box. Note that this is merely a "
+"placeholder for Qt widgets."
+msgstr ""
+"Ein Eingabe-Element wie ein Textfeld oder ein Kombinationsfeld. Beachten "
+"Sie, dies ist nur ein Platzhalter für Qt-Elemente."
+
+#. Tag: term
+#: theme-ref.docbook:150
+#, no-c-format
+msgid "<term>label</term>"
+msgstr "<term>label</term>"
+
+#. Tag: para
+#: theme-ref.docbook:152
+#, no-c-format
+msgid ""
+"A text label. Must contain either a <link linkend=\"text-nodes"
+"\"><literal>text</literal> node</link> or a <link linkend=\"stock-nodes"
+"\"><literal>stock</literal> node</link> to specify the text."
+msgstr ""
+"Eine Beschriftung. Diese muss entweder einen <link linkend=\"text-nodes"
+"\"><literal>text</literal>-Knoten</link> oder einen <link linkend=\"stock-"
+"nodes\"><literal>stock</literal>-Knoten</link> mit der Angabe des Textes "
+"enthalten."
+
+#. Tag: term
+#: theme-ref.docbook:163
+#, no-c-format
+msgid "list"
+msgstr "list"
+
+#. Tag: para
+#: theme-ref.docbook:165
+#, no-c-format
+msgid "A face browser widget."
+msgstr "Ein Widget für eine Gesichterliste"
+
+#. Tag: term
+#: theme-ref.docbook:170
+#, no-c-format
+msgid "<term>pixmap</term>"
+msgstr "<term>pixmap</term>"
+
+#. Tag: para
+#: theme-ref.docbook:172
+#, no-c-format
+msgid "A raster image in a format that Qt supports, &eg; PNG, JPEG, Tiff, etc."
+msgstr ""
+"Ein Rasterbild in einem von Qt unterstützten Format, &eg; PNG, JPEG, Tiff "
+"usw."
+
+#. Tag: term
+#: theme-ref.docbook:178
+#, no-c-format
+msgid "<term>rect</term>"
+msgstr "<term>rect</term>"
+
+#. Tag: para
+#: theme-ref.docbook:180
+#, no-c-format
+msgid "A plain rectangle."
+msgstr "Ein einfaches Rechteck."
+
+#. Tag: term
+#: theme-ref.docbook:185
+#, no-c-format
+msgid "<term>svg</term>"
+msgstr "<term>svg</term>"
+
+#. Tag: para
+#: theme-ref.docbook:187
+#, no-c-format
+msgid "A vector image in SVG format."
+msgstr "Ein Vektorbild im SVG-Format."
+
+#. Tag: para
+#: theme-ref.docbook:192
+#, no-c-format
+msgid ""
+"For example: <programlisting>\n"
+"&lt;item type=&quot;label&quot;&gt;\n"
+"</programlisting> An item that acts as a button:"
+msgstr ""
+"Ein Beispiel: <programlisting>\n"
+"&lt;item type=&quot;label&quot;&gt;\n"
+"</programlisting> Ein Eintrag, der sich wie ein Knopf verhält:"
+
+#. Tag: programlisting
+#: theme-ref.docbook:197
+#, no-c-format
+msgid ""
+"&lt;item type=&quot;rect&quot; id=&quot;disconnect_button&quot; button=&quot;"
+"true&quot;&gt;."
+msgstr ""
+"&lt;item type=&quot;rect&quot; id=&quot;disconnect_button&quot; button=&quot;"
+"true&quot;&gt;."
+
+#. Tag: para
+#: theme-ref.docbook:200
+#, no-c-format
+msgid ""
+"By default, the &kdm; login screen will disappear after authentication. This "
+"can result in flicker between the login screen and the session. The "
+"<literal>background</literal> attribute allows users to specify what "
+"elements of the theme are the background image. When used, this will cause "
+"&kdm; to remove all non-background items from the display and render the "
+"remaining <literal>background</literal> items to the root window. This can "
+"be used to create a smooth transition between the login screen and the "
+"session: <programlisting>\n"
+"&lt;item type=&quot;rect&quot; background=&quot;true&quot;&gt;\n"
+"  &lt;normal file=\"background.svg\"/&gt;\n"
+"  &lt;pos x=&quot;0&quot; y=&quot;0&quot; width=&quot;100%&quot; "
+"height=&quot;-75&quot;/&gt;\n"
+"&lt;/item&gt;\n"
+"</programlisting> To use a different background for login transition than "
+"the one used for login, the theme should specify two item nodes (which could "
+"contain pixmaps or svg images, for example). The item which corresponds to "
+"the greeter background should not have the <literal>background</literal> "
+"property while the item which corresponds to the transition background "
+"should have the <literal>background</literal> property. For instance :"
+msgstr ""
+"In der Voreinstellung verschwindet der Anmeldebildschirm von &kdm; nach der "
+"Authentifizierung. Dadurch kann es zu einem Flackern beim Umschalten "
+"zwischen Anmeldebildschirm und Arbeitssitzung führen. Mit dem Attribut "
+"<literal>background</literal> kann der Benutzer angeben, welche Elemente des "
+"Designs zum Hintergrundbild gehören. In diesem Fall entfernt &kdm; alle "
+"Elemente, die nicht zum Hintergrund gehören vom Display und rendert die "
+"verbleibenden <literal>background</literal>-Elemente in das "
+"Hintergrundfenster (root window). Damit erreicht man einen sanften Übergang "
+"zwischen dem Anmeldebildschirm und der Arbeitssitzung: <programlisting>\n"
+"&lt;item type=&quot;rect&quot; background=&quot;true&quot;&gt;\n"
+"  &lt;normal file=\"background.svg\"/&gt;\n"
+"  &lt;pos x=&quot;0&quot; y=&quot;0&quot; width=&quot;100%&quot; "
+"height=&quot;-75&quot;/&gt;\n"
+"&lt;/item&gt;\n"
+"</programlisting> Wenn für den Übergang vom Anmeldebildschirm ein anderer "
+"Hintergrund verwendet werden soll als für den Anmeldebildschirm, sollte das "
+"Design zwei Element-Knoten angeben (die &eg; Pixmaps oder SVG-Bilder "
+"enthalten können). Das Element, das zum Hintergrund für den "
+"Anmeldungsmanager gehört, sollte keine Eigenschaft <literal>background</"
+"literal> haben, während das Element für den Übergangshintergrund die "
+"Eigenschaft <literal>background</literal> haben sollte. Ein Beispiel:"
+
+#. Tag: programlisting
+#: theme-ref.docbook:220
+#, no-c-format
+msgid ""
+"&lt;?xml version=\"1.0\" encoding=&quot;UTF-8&quot;?&gt;\n"
+"&lt;!DOCTYPE greeter SYSTEM &quot;greeter.dtd&quot;&gt;\n"
+"&lt;greeter&gt;\n"
+"  &lt;item type=&quot;rect&quot; background=&quot;true&quot;&gt;\n"
+"    &lt;normal file=\"background_for_login.svg\" element=\"background\"/"
+"&gt;\n"
+"    &lt;pos x=&quot;0&quot; y=&quot;0&quot; width=&quot;100%&quot; "
+"height=&quot;100%&quot;/&gt;\n"
+"  &lt;/item&gt;\n"
+"  &lt;item type=&quot;rect&quot;&gt;\n"
+"    &lt;normal file=\"background_for_greeter.svg\"/&gt;\n"
+"    &lt;pos x=&quot;0&quot; y=&quot;0&quot; width=&quot;100%&quot; "
+"height=&quot;100%&quot;/&gt;\n"
+"  &lt;/item&gt;\n"
+"  [...]\n"
+"&lt;/greeter&gt;"
+msgstr ""
+"&lt;?xml version=\"1.0\" encoding=&quot;UTF-8&quot;?&gt;\n"
+"&lt;!DOCTYPE greeter SYSTEM &quot;greeter.dtd&quot;&gt;\n"
+"&lt;greeter&gt;\n"
+"  &lt;item type=&quot;rect&quot; background=&quot;true&quot;&gt;\n"
+"    &lt;normal file=\"background_for_login.svg\" element=\"background\"/"
+"&gt;\n"
+"    &lt;pos x=&quot;0&quot; y=&quot;0&quot; width=&quot;100%&quot; "
+"height=&quot;100%&quot;/&gt;\n"
+"  &lt;/item&gt;\n"
+"  &lt;item type=&quot;rect&quot;&gt;\n"
+"    &lt;normal file=\"background_for_greeter.svg\"/&gt;\n"
+"    &lt;pos x=&quot;0&quot; y=&quot;0&quot; width=&quot;100%&quot; "
+"height=&quot;100%&quot;/&gt;\n"
+"  &lt;/item&gt;\n"
+"  [...]\n"
+"&lt;/greeter&gt;"
+
+#. Tag: para
+#: theme-ref.docbook:224
+#, no-c-format
+msgid ""
+"In multi-screen setups, themes may also specify the look of other screens "
+"than the one the greeter is on - but typically only background items will "
+"appear there. To specify which screen(s) an item should appear on, the "
+"<literal>screen</literal> attribute can be used with the value being one of "
+"<literal>greeter</literal>, <literal>other</literal> or <literal>all</"
+"literal>, meaning the screen the greeter is on, all screens the greeter is "
+"not on and all screens, resp."
+msgstr ""
+"Für Systeme mit mehreren Bildschirmen kann im Design auch das "
+"Erscheinungsbild für die Bildschirme ohne Anmeldungsmanager vorgegeben "
+"werden, typischerweise nur Elemente für den Bildschirmhintergrund. Um den "
+"Bildschirm anzugeben, auf dem ein Element angezeigt werden soll, kann das "
+"Attribut <literal>screen</literal> mit einem der Werte <literal>greeter</"
+"literal> (für den Bildschirm mit dem Anmeldungsmanager), <literal>other</"
+"literal> (für die Bildschirme ohne Anmeldungsmanager) oder <literal>all</"
+"literal> (für alle Bildschirme) benutzt werden."
+
+#. Tag: para
+#: theme-ref.docbook:235
+#, no-c-format
+msgid ""
+"Each item can be given a name via the <literal>id</literal> attribute. "
+"Certain ids are recognized by &kdm; to give those items a special function:"
+msgstr ""
+"Jedem Elemente kann über das Attribut <literal>id</literal> ein Name "
+"zugeordnet werden. &kdm; kennt bestimmte ids, um diesen Elementen besondere "
+"Funktionen zuzuordnen:"
+
+#. Tag: term
+#: theme-ref.docbook:277
+#, no-c-format
+msgid ""
+"<literal>button</literal> items and items with the <literal>button=&quot;"
+"true&quot;</literal> attribute."
+msgstr ""
+"<literal>button</literal>-Elemente und Elemente mit dem Attribut "
+"<literal>button=&quot;true&quot;</literal>."
+
+#. Tag: para
+#: theme-ref.docbook:281
+#, no-c-format
+msgid ""
+"Buttons typically trigger certain actions. Addionally, &kdm; will hide "
+"buttons whose actions are not available for some reason."
+msgstr ""
+"Knöpfe lösen typischerweise bestimmte Aktionen aus. Knöpfe, deren Aktionen "
+"aus irgendeinem Grund nicht verfügbar sind, werden von &kdm; ausgeblendet."
+
+#. Tag: segtitle
+#: theme-ref.docbook:289 theme-ref.docbook:357 theme-ref.docbook:396
+#: theme-ref.docbook:469
+#, no-c-format
+msgid "<segtitle>Id</segtitle>"
+msgstr "<segtitle>Id</segtitle>"
+
+#. Tag: segtitle
+#: theme-ref.docbook:289
+#, no-c-format
+msgid "Action"
+msgstr "Aktion"
+
+#. Tag: seg
+#: theme-ref.docbook:292
+#, no-c-format
+msgid "chooser_button"
+msgstr "chooser_button"
+
+#. Tag: seg
+#: theme-ref.docbook:293
+#, no-c-format
+msgid "Runs the XDMCP chooser."
+msgstr "Startet die XDMCP-Auswahl"
+
+#. Tag: seg
+#: theme-ref.docbook:304
+#, no-c-format
+msgid "disconnect_button"
+msgstr "disconnect_button"
+
+#. Tag: seg
+#: theme-ref.docbook:305
+#, no-c-format
+msgid "Disconnect from remote session."
+msgstr "Verbindung zu Fremdrechner abbrechen."
+
+#. Tag: seg
+#: theme-ref.docbook:333
+#, no-c-format
+msgid "session_button"
+msgstr "session_button"
+
+#. Tag: seg
+#: theme-ref.docbook:334
+#, no-c-format
+msgid "Open the session type selection menu."
+msgstr "Öffnet das Auswahlmenü für den Sitzungstyp."
+
+#. Tag: seg
+#: theme-ref.docbook:338
+#, no-c-format
+msgid "system_button"
+msgstr "system_button"
+
+#. Tag: seg
+#: theme-ref.docbook:339
+#, no-c-format
+msgid ""
+"Open a catch-all menu with various options and actions, depending on the "
+"configuration."
+msgstr ""
+"Öffnet ein allumfassendes Menü mit verschiedenen Optionen und Aktion, "
+"abhängig von der Konfiguration."
+
+#. Tag: term
+#: theme-ref.docbook:347
+#, no-c-format
+msgid "<literal>label</literal> items"
+msgstr "<literal>label</literal>-Einträge"
+
+#. Tag: para
+#: theme-ref.docbook:350
+#, no-c-format
+msgid ""
+"&kdm; will show/hide these labels and set their text depending on the state "
+"of the login dialog."
+msgstr ""
+"&kdm; blendet diese Beschriftungen ein bzw. aus und setzt ihren Text "
+"abhängig vom Status des Anmeldedialogs."
+
+#. Tag: segtitle
+#: theme-ref.docbook:357 theme-ref.docbook:396
+#, no-c-format
+msgid "Function"
+msgstr "Funktion"
+
+#. Tag: seg
+#: theme-ref.docbook:377
+#, no-c-format
+msgid "pam-error"
+msgstr "pam-error"
+
+#. Tag: seg
+#: theme-ref.docbook:378
+#, no-c-format
+msgid "This displays the <guilabel>Login failed.</guilabel> message."
+msgstr ""
+"Hiermit wird die Nachricht <guilabel>Anmeldung fehlgeschlagen</guilabel> "
+"angezeigt."
+
+#. Tag: term
+#: theme-ref.docbook:387
+#, no-c-format
+msgid "Widget embedding items"
+msgstr "Einträge mit eingebetteten Elementen"
+
+#. Tag: para
+#: theme-ref.docbook:390
+#, no-c-format
+msgid "&kdm; will embed particular Qt widgets into these items."
+msgstr "&kdm; bettet bestimmte Qt-Elemente in diese Einträge ein."
+
+#. Tag: seg
+#: theme-ref.docbook:399
+#, no-c-format
+msgid "user-entry"
+msgstr "user-entry"
+
+#. Tag: seg
+#: theme-ref.docbook:400
+#, no-c-format
+msgid "Entry field for username entry."
+msgstr "Eingabefeld für den Benutzernamen."
+
+#. Tag: seg
+#: theme-ref.docbook:404
+#, no-c-format
+msgid "pw-entry"
+msgstr "pw-entry"
+
+#. Tag: seg
+#: theme-ref.docbook:405
+#, no-c-format
+msgid "Entry field for password entry."
+msgstr "Eingabefeld für das Passwort."
+
+#. Tag: seg
+#: theme-ref.docbook:409
+#, no-c-format
+msgid "domain-entry"
+msgstr "domain-entry"
+
+#. Tag: seg
+#: theme-ref.docbook:410
+#, no-c-format
+msgid ""
+"Some <quote>conversation</quote> plugins use this field to query a domain "
+"name. If this field is present, the related enclosing items should have "
+"<link linkend=\"show-nodes\">show nodes</link> with the type <literal>plugin-"
+"domain-entry</literal>."
+msgstr ""
+"Einige <quote>Kommunikationserweiterungen</quote> benutzen dieses Feld zur "
+"Abfrage eines Domänen-Namens. Ist dieses Feld vorhanden, sollten die damit "
+"verbundenen, umschließenden Elemente <link linkend=\"show-nodes"
+"\">Anzeigeknoten</link> vom Typ <literal>plugin-domain-entry</literal> haben."
+
+#. Tag: seg
+#: theme-ref.docbook:418
+#, no-c-format
+msgid "talker"
+msgstr "talker"
+
+#. Tag: seg
+#: theme-ref.docbook:419
+#, no-c-format
+msgid ""
+"This item should be of type <literal>rect</literal>. It represents the "
+"<quote>hot</quote> area of the greeter: it contains the <literal>label</"
+"literal> and <literal>entry</literal> items which concern the authentication "
+"process. If a given <quote>conversation</quote> plugin cannot match the "
+"existing items with its needs, it tries to embed a complex widget with an "
+"own layout into this item, thus completely overriding the theme's "
+"<quote>talker</quote>. Strictily speaking, &kdm; themes do not need to "
+"provide own <quote>talker</quote> designs at all, as all &kdm; "
+"authentication plugins are able make use of the <literal>talker</literal> "
+"item."
+msgstr ""
+"Dieses Element sollte den Typ <literal>rect</literal> haben. Es stellt den "
+"<quote>heißen</quote> Bereich des Anmeldemanagers dar: Es enthält die "
+"<literal>label</literal>- und <literal>entry</literal>-Elemente, die sich um "
+"den Authentifizierungsvorgang kümmern. Findet eine "
+"<quote>Kommunikationserweiterung</quote> nicht die benötigten Elemente, "
+"versucht es ein komplexes Bildschirmelement mit eigener Anordnung in dieses "
+"Element einzubetten und damit den <quote>talker</quote> des Designs komplett "
+"zu überschreiben. Streng genommen müssen &kdm;-Designs keine eigenen "
+"<quote>talker</quote>-Designs bereitstellen, da alle "
+"Authentifizierungserweiterungen von &kdm; das Element <literal>talker</"
+"literal> benutzen können."
+
+#. Tag: seg
+#: theme-ref.docbook:436
+#, no-c-format
+msgid "userlist"
+msgstr "userlist"
+
+#. Tag: seg
+#: theme-ref.docbook:437
+#, no-c-format
+msgid ""
+"This item must be of type <literal>list</literal>. If the user list feature "
+"is enabled, &kdm; will embed the user list widget here. Otherwise, this item "
+"is hidden."
+msgstr ""
+"Dieser Eintrag muss vom Typ <literal>list</literal> sein. Ist die Funktion "
+"Benutzerliste eingeschaltet, bettet &kdm; das Element mit der Benutzerliste "
+"hier ein. Anderenfalls ist der Eintrag unsichtbar."
+
+#. Tag: seg
+#: theme-ref.docbook:444
+#, no-c-format
+msgid "xconsole"
+msgstr "xconsole"
+
+#. Tag: seg
+#: theme-ref.docbook:445
+#, no-c-format
+msgid ""
+"This item should be of type <literal>rect</literal>. If the built-in "
+"<command>xconsole</command> feature is compiled in and enabled, &kdm; will "
+"embed the console log widget here. Otherwise, this item is hidden."
+msgstr ""
+"Dieser Eintrag sollte vom Typ <literal>rect</literal> sein. Ist die "
+"eingebaute Funktion <command>xconsole</command> einkompiliert und aktiviert, "
+"bettet &kdm; das Protokoll-Element für die Konsole hier ein. Anderenfalls "
+"ist dieser Eintrag ausgeblendet."
+
+#. Tag: term
+#: theme-ref.docbook:457
+#, no-c-format
+msgid "Other items"
+msgstr "Andere Einträge"
+
+#. Tag: para
+#: theme-ref.docbook:460
+#, no-c-format
+msgid ""
+"&kdm; will show/hide these items depending on the configuration and the "
+"current state of the greeter. &kdm; does not impose type requirements on "
+"them, but they usually lend themselves to a particular type."
+msgstr ""
+"&kdm; blendet diese Elemente ein bzw. aus, abhängig von der Konfiguration "
+"und dem aktuellen Status des Anmeldemanagers. &kdm; setzt hier keinen "
+"bestimmten Typ voraus, aber es bietet sich ein bestimmter Typ an."
+
+#. Tag: segtitle
+#: theme-ref.docbook:469
+#, no-c-format
+msgid "Shown only when ..."
+msgstr "Nur anzeigen, wenn ..."
+
+#. Tag: seg
+#: theme-ref.docbook:472 theme-ref.docbook:1221
+#, no-c-format
+msgid "timed-label"
+msgstr "timed-label"
+
+#. Tag: seg
+#: theme-ref.docbook:473
+#, no-c-format
+msgid "... timed login is in progress."
+msgstr "... eine geplante Anmeldung läuft."
+
+#. Tag: seg
+#: theme-ref.docbook:477 theme-ref.docbook:1175
+#, no-c-format
+msgid "caps-lock-warning"
+msgstr "caps-lock-warning"
+
+#. Tag: seg
+#: theme-ref.docbook:478
+#, no-c-format
+msgid "... Caps Lock is active."
+msgstr "... die Feststelltaste aktiv ist."
+
+#. Tag: seg
+#: theme-ref.docbook:482
+#, no-c-format
+msgid "xauth-warning"
+msgstr "xauth-warning"
+
+#. Tag: seg
+#: theme-ref.docbook:483
+#, no-c-format
+msgid "... the &X-Server; requires no X authorization to connect."
+msgstr "... der &X-Server; keine X-Authorisierung zum Verbinden benötigt."
+
+#. Tag: seg
+#: theme-ref.docbook:497
+#, no-c-format
+msgid "userlist-rect"
+msgstr "userlist-rect"
+
+#. Tag: seg
+#: theme-ref.docbook:498
+#, no-c-format
+msgid ""
+"... the user list is enabled. By nesting the <literal>userlist</literal> "
+"item into this one, it is possible to create something like a frame around "
+"the list and have it shown only when the user list itself if shown."
+msgstr ""
+"... die Benutzerliste eingeschaltet ist. Indem Sie das Element "
+"<literal>userlist</literal> hierin einbetten, ist es möglich so etwas wie "
+"einen Rahmen um die Liste zu erstellen, der nur angezeigt wird, wenn auch "
+"die Benutzerliste angezeigt wird."
+
+#. Tag: seg
+#: theme-ref.docbook:505
+#, no-c-format
+msgid "xconsole-rect"
+msgstr "xconsole-rect"
+
+#. Tag: seg
+#: theme-ref.docbook:506
+#, no-c-format
+msgid ""
+"... the built-in <command>xconsole</command> is enabled. Analogous to "
+"<literal>userlist-rect</literal>."
+msgstr ""
+"... die eingebaute <command>xconsole</command> eingeschaltet ist. Verhält "
+"sich analog zu <literal>userlist-rect</literal>."
+
+#. Tag: title
+#: theme-ref.docbook:519
+#, no-c-format
+msgid "Layout Container Nodes"
+msgstr "Anordnungscontainer-Knoten"
+
+#. Tag: para
+#: theme-ref.docbook:521
+#, no-c-format
+msgid ""
+"Layout nodes appear inside item nodes and contain item nodes again. The type "
+"of the layout node determines the arrangement of its child nodes. An item "
+"node can contain one layout node of each type."
+msgstr ""
+"Anordnungsknoten tauchen innerhalb von Element-Knoten auf und enthalten "
+"wiederum selbst Element-Knoten. Der Typ des Anordnungsknoten legt das "
+"Arrangement der Kindknoten fest. Ein Element-Knoten kann einen "
+"Anordnungsknoten beliebigen Typs enthalten."
+
+#. Tag: title
+#: theme-ref.docbook:528
+#, no-c-format
+msgid "Box Nodes"
+msgstr "Kastenknoten"
+
+#. Tag: para
+#: theme-ref.docbook:530
+#, no-c-format
+msgid ""
+"Box nodes automatically arrange their children in a row. They are specified "
+"as follows: <programlisting>\n"
+"&lt;box orientation=&quot;<replaceable>alignment</replaceable>&quot; min-"
+"width=&quot;<replaceable>num</replaceable>&quot; min-height=&quot;"
+"<replaceable>num</replaceable>&quot;\n"
+"    xpadding=&quot;<replaceable>num</replaceable>&quot; ypadding=&quot;"
+"<replaceable>num</replaceable>&quot; spacing=&quot;<replaceable>num</"
+"replaceable>&quot;\n"
+"    homogeneous=&quot;<replaceable>bool</replaceable>&quot;&gt;\n"
+"</programlisting> Where <replaceable>num</replaceable> means number of "
+"pixels and <replaceable>bool</replaceable> means either <literal>true</"
+"literal> or <literal>false</literal>. The <replaceable>alignment</"
+"replaceable> value can be either <literal>horizontal</literal> or "
+"<literal>vertical</literal>. If you leave any attribute off, it will default "
+"to zero for numbers, <literal>false</literal> for bools and "
+"<literal>vertical</literal> for the orientation."
+msgstr ""
+"Kastenknoten ordnen ihre Kinder automatisch in einer Reihe an. Sie sind wie "
+"folgt spezifiziert:<programlisting>\n"
+"&lt;box orientation=&quot;<replaceable>alignment</replaceable>&quot; min-"
+"width=&quot;<replaceable>num</replaceable>&quot; min-height=&quot;"
+"<replaceable>num</replaceable>&quot;\n"
+"    xpadding=&quot;<replaceable>num</replaceable>&quot; ypadding=&quot;"
+"<replaceable>num</replaceable>&quot; spacing=&quot;<replaceable>num</"
+"replaceable>&quot;\n"
+"    homogeneous=&quot;<replaceable>bool</replaceable>&quot;&gt;\n"
+"</programlisting> Hierbei bedeutet <replaceable>num</replaceable> die Anzahl "
+"der Pixel und <replaceable>bool</replaceable> bedeutet entweder "
+"<literal>true</literal> oder <literal>false</literal>. Der Wert "
+"<replaceable>alignment</replaceable> kann entweder <literal>horizontal</"
+"literal> oder <literal>vertical</literal> sein. Lassen Sie ein Attribut aus, "
+"wird dieses mit dem Wert 0 für Zahlen, <literal>false</literal> für bool und "
+"<literal>vertical</literal> für alignment angenommen."
+
+#. Tag: para
+#: theme-ref.docbook:544
+#, no-c-format
+msgid ""
+"The spacing is the distance between neighboring child items. The padding is "
+"the box' outer margin. If the box is homogeneous, the same amount of space "
+"is allocated to each child item."
+msgstr ""
+"Spacing ist der Abstand zwischen zwei benachbarten Kindelementen. Padding "
+"ist der äußere Rand des Kastens. Ist der Kasten <quote>homogeneous</quote>, "
+"wird für jedes Kindelement derselbe Platz bereitgestellt."
+
+#. Tag: title
+#: theme-ref.docbook:553
+#, no-c-format
+msgid "Fixed Nodes"
+msgstr "Fixierte Knoten"
+
+#. Tag: para
+#: theme-ref.docbook:555
+#, no-c-format
+msgid ""
+"Fixed is a container that has its children laid out at precise coordinates. "
+"The size of this container is the smallest rectangle that contains all the "
+"children. Fixed has no extra attributes and so you just use: "
+"<programlisting>\n"
+"&lt;fixed&gt;\n"
+"</programlisting> Then you put other items with proper position nodes inside "
+"it."
+msgstr ""
+"Fixiert ist ein Container, dessen Kindelemente an präzisen Koordinaten "
+"ausgerichtet sind. Die Größe dieses Containers wird durch das kleinste "
+"mögliche Rechteck festgelegt, dass alle Kinder umfasst.  Das Tag fixed "
+"verfügt über keine weiteren Attribute, und darum wird es einfach so "
+"verwendet: <programlisting>\n"
+"&lt;fixed&gt;\n"
+"</programlisting> Dann platzieren Sie weitere Elemente mit entsprechenden "
+"Positionsknoten darin."
+
+#. Tag: title
+#: theme-ref.docbook:568
+#, no-c-format
+msgid "Position Nodes"
+msgstr "Positionsknoten"
+
+#. Tag: para
+#: theme-ref.docbook:570
+#, no-c-format
+msgid ""
+"Each item can specify its position and size via the <literal>pos</literal> "
+"node. For example:"
+msgstr ""
+"Jedes Element kann seine Position und Größe über den <literal>pos</literal>-"
+"Knoten festlegen. Ein Beispiel:"
+
+#. Tag: programlisting
+#: theme-ref.docbook:573
+#, no-c-format
+msgid ""
+"&lt;pos x=&quot;0&quot; y=&quot;4&quot; width=&quot;100%&quot; "
+"height=&quot;100%&quot;/&gt;"
+msgstr ""
+"&lt;pos x=&quot;0&quot; y=&quot;4&quot; width=&quot;100%&quot; "
+"height=&quot;100%&quot;/&gt;"
+
+#. Tag: para
+#: theme-ref.docbook:576
+#, no-c-format
+msgid ""
+"If the size is not specified, it will be the item's <quote>natural</quote> "
+"size, called the size hint. Note that not all items have a useful size hint."
+msgstr ""
+"Ist keine Größe angegeben, wird die <quote>natürliche</quote> Größe des "
+"Elements verwendet, diese wird auch Größenhinweis genannt. Beachten Sie, "
+"dass nicht alle Elemente einen sinnvollen Größenhinweis haben."
+
+#. Tag: para
+#: theme-ref.docbook:582
+#, no-c-format
+msgid ""
+"Both position and size can be given in percent and will be calculated "
+"relative to the size of the enclosing container in this case. For toplevel "
+"items it is the percentage of the whole screen. By appending circumflexes "
+"(<literal>^</literal>) to the size specification it is possible to modify it "
+"to be relative to the size of the enclosing item's enclosing item and so on."
+msgstr ""
+"Position und size können in Prozent angegeben werden und werden in diesem "
+"Fall relativ zur Größe des umgebenden Containers berechnet. Bei Elementen "
+"der obersten Ebene bezieht sich der Prozentwert auf den gesamten Bildschirm. "
+"Durch Anhängen von Circumflexes (<literal>^</literal>) an die Angabe für "
+"size, kann diese auch relativ zur Größe des umschließenden Elements oder "
+"dessen umschließenden Elements &etc; angegeben werden."
+
+#. Tag: para
+#: theme-ref.docbook:591
+#, no-c-format
+msgid ""
+"If the item contains a box, <literal>width</literal> and <literal>height</"
+"literal> can be specified to be <literal>box</literal> to mean that they are "
+"supposed to be the width and height of the box, that is the items in the box "
+"plus the padding."
+msgstr ""
+"Enthält der Container einen Kasten, können <literal>width</literal> und "
+"<literal>height</literal> mit dem Wert <literal>box</literal> angegeben "
+"werden, was bedeutet, dass hier die Breite und Höhe des Kastens (die den "
+"Elementen im Kasten zuzüglich des Randes entspricht) gemeint ist."
+
+#. Tag: para
+#: theme-ref.docbook:598
+#, no-c-format
+msgid ""
+"One of <literal>width</literal> and <literal>height</literal> can be "
+"specified to be <literal>scale</literal> to mean that it should be scaled "
+"according to the other dimension's scale relative to its size hint. Use this "
+"to preserve the aspect ratio of scaled images automatically."
+msgstr ""
+"Entweder <literal>width</literal> oder <literal>height</literal> kann hier "
+"den Wert <literal>scale</literal> erhalten. Damit ist gemeint, dass die "
+"betreffende Abmessung entsprechend der Größe der anderen Dimension relativ "
+"zum Größenhinweis ausgelegt wird. Hiermit kann automatisch das "
+"Seitenverhältnis skalierter Bilder beibehalten werden."
+
+#. Tag: para
+#: theme-ref.docbook:606
+#, no-c-format
+msgid ""
+"If the <literal>expand</literal> attribute is specified and <literal>true</"
+"literal>, this item will be expanded in the enclosing box as much as "
+"possible (that is it will be given more space if available)."
+msgstr ""
+"Ist das Attribut <literal>expand</literal> angegeben und hat den Wert "
+"<literal>true</literal>, wird das Element im umschließenden Kasten so weit "
+"wie möglich ausgedehnt (das bedeutet, es erhält mehr Platz, wenn dies "
+"möglich ist)."
+
+#. Tag: para
+#: theme-ref.docbook:613
+#, no-c-format
+msgid ""
+"If <literal>width</literal> or <literal>height</literal> is a plain number, "
+"a negative value represents an offset from the enclosing container's size. "
+"Note that it is possible to specify a positive offset by writing two minus "
+"signs."
+msgstr ""
+"Wenn <literal>width</literal> oder <literal>height</literal> als Zahlenwert "
+"angegeben werden, bedeutet ein negativer Wert einen Abstand zur Größe des "
+"umschließenden Containers. Beachten Sie, dass auch ein positiver Versatz "
+"angegeben werden kann, indem Sie zwei Minuszeichen angeben."
+
+#. Tag: para
+#: theme-ref.docbook:620
+#, no-c-format
+msgid ""
+"In either case it is possible to constrain the final size with the "
+"<literal>min-width</literal>, <literal>min-height</literal>, <literal>max-"
+"width</literal> and <literal>max-height</literal> attributes which can be "
+"specified in the same ways as <literal>width</literal> and <literal>height</"
+"literal>."
+msgstr ""
+"In jedem Fall kann die endgültige Größe durch die Attribute <literal>min-"
+"width</literal>, <literal>min-height</literal>, <literal>max-width</literal> "
+"und <literal>max-height</literal> eingeschränkt werden, die genau so "
+"angegeben werden können wie die Attribute <literal>width</literal> und "
+"<literal>height</literal>."
+
+#. Tag: para
+#: theme-ref.docbook:628
+#, no-c-format
+msgid ""
+"If <literal>x</literal> or <literal>y</literal> is a plain number, a "
+"negative value represents an offset from the right resp. bottom edge, unlike "
+"the default which is the left resp. top edge."
+msgstr ""
+"Wenn <literal>x</literal> oder <literal>y</literal> ein Zahlenwert ist, "
+"bedeutet ein negativer Wert den Abstand vom rechten bzw. unteren Rand, "
+"anders als in der Voreinstellung, bei der der linke bzw. obere Rand gemeint "
+"ist."
+
+#. Tag: para
+#: theme-ref.docbook:634
+#, no-c-format
+msgid ""
+"It is also possible to specify which point within the item the position "
+"refers to. This is called the anchor and can be either <literal>c</literal> "
+"for center or one of <literal>n</literal>, <literal>ne</literal>, "
+"<literal>e</literal>, <literal>se</literal>, <literal>s</literal>, "
+"<literal>sw</literal>, <literal>w</literal> and <literal>nw</literal> which "
+"stand for the different edges/corners corresponding the directions on a "
+"topographical map. The default is <literal>nw</literal>, which is the upper "
+"left corner. For example:"
+msgstr ""
+"Es besteht auch die Möglichkeit den Punkt innerhalb des Elements anzugeben, "
+"auf den sich die Position bezieht. Dieser wird Anker genannt und kann "
+"entweder <literal>c</literal> für zentriert oder<literal>n</literal>, "
+"<literal>ne</literal>, <literal>e</literal>, <literal>se</literal>, "
+"<literal>s</literal>, <literal>sw</literal>, <literal>w</literal> und "
+"<literal>nw</literal> sein. Diese Abkürzungen stehen für die verschiedenen "
+"Ränder/Ecken einer topografischen Karte. (Anm. d. Übers.: Die Abkürzungen "
+"beziehen sich auf die englischen Himmelsrichtungen). Die Voreinstellung ist "
+"<literal>nw</literal>, für die obere linke Ecke. Ein Beispiel:"
+
+#. Tag: programlisting
+#: theme-ref.docbook:645
+#, no-c-format
+msgid ""
+"&lt;pos x=&quot;10%&quot; y=&quot;50%&quot; anchor=&quot;w&quot; "
+"width=&quot;80%&quot; height=&quot;95&quot;/&gt;"
+msgstr ""
+"&lt;pos x=&quot;10%&quot; y=&quot;50%&quot; anchor=&quot;w&quot; "
+"width=&quot;80%&quot; height=&quot;95&quot;/&gt;"
+
+#. Tag: title
+#: theme-ref.docbook:651
+#, no-c-format
+msgid "Show Nodes"
+msgstr "Anzeigeknoten"
+
+#. Tag: para
+#: theme-ref.docbook:685
+#, no-c-format
+msgid ""
+"You can specify the <literal>type</literal> attribute to indicate that "
+"certain items should only be displayed if the type is set. Prefixing the "
+"type with an exclamation mark (<literal>!</literal>) reverses the condition. "
+"Valid values include the following:"
+msgstr ""
+"Sie können das Attribut <literal>type</literal> angeben. Damit zeigen sie "
+"an, dass bestimmte Element nur angezeigt werden sollen, wenn der Typ gesetzt "
+"ist. Wird dem Typ ein Ausrufezeichen vorangestellt (<literal>!</literal>) "
+"wird die Bedingung umgekehrt. Gültige Werte sind folgende:"
+
+#. Tag: segtitle
+#: theme-ref.docbook:694 theme-ref.docbook:1154
+#, no-c-format
+msgid "Type"
+msgstr "Typ"
+
+#. Tag: segtitle
+#: theme-ref.docbook:694
+#, no-c-format
+msgid "Display if ..."
+msgstr "Anzeigen wenn ..."
+
+#. Tag: literal
+#: theme-ref.docbook:697
+#, no-c-format
+msgid "<literal>chooser</literal>"
+msgstr "<literal>chooser</literal>"
+
+#. Tag: seg
+#: theme-ref.docbook:698
+#, no-c-format
+msgid "switching to remote login is permitted."
+msgstr "ein Umschalten auf das Anmelden an Fremdrechnern erlaubt ist."
+
+#. Tag: seg
+#: theme-ref.docbook:710
+#, no-c-format
+msgid "<literal>halt</literal> and <literal>reboot</literal>"
+msgstr "<literal>halt</literal> und <literal>reboot</literal>"
+
+#. Tag: seg
+#: theme-ref.docbook:711
+#, no-c-format
+msgid "system shutdown is permitted."
+msgstr "das Herunterfahren des Systems erlaubt ist."
+
+#. Tag: literal
+#: theme-ref.docbook:722
+#, no-c-format
+msgid "<literal>system</literal>"
+msgstr "<literal>system</literal>"
+
+#. Tag: seg
+#: theme-ref.docbook:723
+#, no-c-format
+msgid "no condition (always set in &kdm;)."
+msgstr "keine Bedingung (In &kdm; immer gesetzt)."
+
+#. Tag: seg
+#: theme-ref.docbook:734
+#, no-c-format
+msgid "<literal>plugin-</literal><replaceable>entry-name</replaceable>"
+msgstr "<literal>plugin-</literal><replaceable>entry-name</replaceable>"
+
+#. Tag: seg
+#: theme-ref.docbook:735
+#, no-c-format
+msgid ""
+"the <quote>conversation</quote> plugin provides a corresponding input field."
+msgstr ""
+"die <quote>Kommunikationserweiterung</quote> bietet ein entsprechendes "
+"Eingabefeld."
+
+#. Tag: para
+#: theme-ref.docbook:742 theme-ref.docbook:1243
+#, no-c-format
+msgid "For example:"
+msgstr "Zum Beispiel:"
+
+#. Tag: programlisting
+#: theme-ref.docbook:744
+#, no-c-format
+msgid "&lt;show type=&quot;chooser&quot;/&gt;"
+msgstr "&lt;show type=&quot;chooser&quot;/&gt;"
+
+#. Tag: para
+#: theme-ref.docbook:747
+#, no-c-format
+msgid ""
+"Alternatively, you can specify a <literal>min-screen-width</literal> or "
+"<literal>min-screen-height</literal> value to indicate that certain items "
+"should be displayed only if the screen resolution is the at least the "
+"specified size. For example:"
+msgstr ""
+"Alternativ können Sie auch einen Wert <literal>min-screen-width</literal> "
+"oder <literal>min-screen-height</literal> angeben, der vorgibt, dass "
+"bestimmte Elemente nur dann angezeigt werden sollen, wenn die "
+"Bildschirmauflösung mindestens den angegebenen Wert hat. Ein Beispiel:"
+
+#. Tag: programlisting
+#: theme-ref.docbook:753
+#, no-c-format
+msgid "&lt;show min-screen-height=&quot;768&quot;/&gt;"
+msgstr "&lt;show min-screen-height=&quot;768&quot;/&gt;"
+
+#. Tag: title
+#: theme-ref.docbook:759
+#, no-c-format
+msgid "Normal/Active/Prelight Nodes"
+msgstr "Normal-/Active-/Prelight-Knoten"
+
+#. Tag: para
+#: theme-ref.docbook:761
+#, no-c-format
+msgid "The look of most item types can be parametrized via the following tags:"
+msgstr ""
+"Das Aussehen der meisten Elemente kann mit den folgenden Tags angepasst "
+"werden:"
+
+#. Tag: literal
+#: theme-ref.docbook:768
+#, no-c-format
+msgid "normal"
+msgstr "normal"
+
+#. Tag: para
+#: theme-ref.docbook:770
+#, no-c-format
+msgid "Normal state."
+msgstr "Normaler Zustand"
+
+#. Tag: literal
+#: theme-ref.docbook:774
+#, no-c-format
+msgid "prelight"
+msgstr "prelight"
+
+#. Tag: para
+#: theme-ref.docbook:776
+#, no-c-format
+msgid "When the mouse is hovering over the item."
+msgstr "Wenn sich der Mauszeiger darüber befindet."
+
+#. Tag: literal
+#: theme-ref.docbook:780
+#, no-c-format
+msgid "active"
+msgstr "active"
+
+#. Tag: para
+#: theme-ref.docbook:782
+#, no-c-format
+msgid "When a mouse button is clicked on the item."
+msgstr "Wenn eine Maustaste auf dem Element betätigt wird."
+
+#. Tag: para
+#: theme-ref.docbook:789
+#, no-c-format
+msgid "The exact set of available attributes depends on the item type:"
+msgstr ""
+"Der genaue Umfang der verfügbaren Attribute hängt vom Typ des Elements ab:"
+
+#. Tag: literal
+#: theme-ref.docbook:794
+#, no-c-format
+msgid "<literal>rect</literal>"
+msgstr "<literal>rect</literal>"
+
+#. Tag: programlisting
+#: theme-ref.docbook:797
+#, no-c-format
+msgid "&lt;normal color=&quot;#000000&quot; alpha=&quot;0.0&quot;/&gt;"
+msgstr "&lt;normal color=&quot;#000000&quot; alpha=&quot;0.0&quot;/&gt;"
+
+#. Tag: para
+#: theme-ref.docbook:797
+#, no-c-format
+msgid ""
+"Either of the attributes may be omitted, in which case the default is used "
+"(the example represents the defaults). <literal>alpha</literal> is a "
+"floating point number between zero (transparent) and one (opaque). "
+"<literal>color</literal> is a hashmark followed by a six-digit hex number; "
+"the format is <quote><literal>#</literal><replaceable>rrggbb</replaceable></"
+"quote>. Alternatively, <literal>color</literal> may be specified as an eight-"
+"digit hex number, in which case the first two digits are the alpha value."
+msgstr ""
+"Beide Attribute können weggelassen werden. In diesem Fall wird der "
+"Standardwert benutzt (das Beispiel zeigt die Standardwerte). <literal>alpha</"
+"literal> ist eine Fließkommazahl zwischen 0 (transparent) und 1 "
+"(undurchsichtig). <literal>color</literal> ist ein Doppelkreuz gefolgt von "
+"einem sechstelligen Hexadezimalwert; Das Format ist <quote><literal>#</"
+"literal><replaceable>rrggbb</replaceable></quote>. Alternativ kann "
+"<literal>color</literal> als achtstellige Hexadezimalzahl angegeben werden, "
+"wobei die beiden ersten Ziffern den Alphawert darstellen."
+
+#. Tag: literal
+#: theme-ref.docbook:813
+#, no-c-format
+msgid "<literal>label</literal>"
+msgstr "<literal>label</literal>"
+
+#. Tag: programlisting
+#: theme-ref.docbook:816
+#, no-c-format
+msgid ""
+"&lt;normal color=&quot;#ffffff&quot; alpha=&quot;1.0&quot; font=&quot;Sans "
+"14&quot;/&gt;"
+msgstr ""
+"&lt;normal color=&quot;#ffffff&quot; alpha=&quot;1.0&quot; font=&quot;Sans "
+"14&quot;/&gt;"
+
+#. Tag: para
+#: theme-ref.docbook:816
+#, no-c-format
+msgid ""
+"<literal>alpha</literal> and <literal>color</literal> are specified like in "
+"<quote>rect</quote> items."
+msgstr ""
+"<literal>alpha</literal> und <literal>color</literal> werden angegeben wie "
+"bei <quote>rect</quote>-Einträgen."
+
+#. Tag: para
+#: theme-ref.docbook:820
+#, no-c-format
+msgid ""
+"<literal>font</literal> follows the format <quote><replaceable>family-list</"
+"replaceable>&nbsp;<replaceable>style-options</replaceable>&nbsp;"
+"<replaceable>size</replaceable></quote>. Each part is optional."
+msgstr ""
+"<literal>font</literal> folgt dem Format <quote><replaceable>family-list</"
+"replaceable>&nbsp;<replaceable>style-options</replaceable>&nbsp;"
+"<replaceable>size</replaceable></quote>. Alle Bestandteile sind optional."
+
+#. Tag: para
+#: theme-ref.docbook:825
+#, no-c-format
+msgid ""
+"<replaceable>family-list</replaceable> is a comma-separated list of font "
+"families like <quote>helvetica</quote>, <quote>monospace</quote>, etc."
+msgstr ""
+"<replaceable>family-list</replaceable> ist eine komma-separierte Liste von "
+"Schriftfamilien wie <quote>helvetica</quote>, <quote>monospace</quote> &etc;"
+
+#. Tag: para
+#: theme-ref.docbook:830
+#, no-c-format
+msgid ""
+"<replaceable>style-options</replaceable> is a space-delimited list of "
+"keywords from the categories style, weight and stretch; from each category "
+"at most one. The style can be <literal>normal</literal>, <literal>italic</"
+"literal> or <literal>oblique</literal>. Weight can be <literal>ultra-light</"
+"literal>, <literal>light</literal>, <literal>medium</literal>, <literal>semi-"
+"bold</literal>, <literal>bold</literal>, <literal>ultra-bold</literal> or "
+"<literal>heavy</literal>. Allowable stretches comprise <literal>ultra-"
+"condensed</literal>, <literal>extra-condensed</literal>, <literal>condensed</"
+"literal>, <literal>semi-condensed</literal>, <literal>normal</literal>, "
+"<literal>semi-expanded</literal>, <literal>expanded</literal>, "
+"<literal>extra-expanded</literal> and <literal>ultra-expanded</literal>."
+msgstr ""
+"<replaceable>style-options</replaceable> ist eine leerzeichen-getrennte "
+"Liste von Schlüsselwörtern aus den Kategorien style, weight und stretch; aus "
+"jeder Kategorie höchstens eins. Style kann  <literal>normal</literal>, "
+"<literal>italic</literal> or <literal>oblique</literal>. Weight kann sein "
+"<literal>ultra-light</literal>, <literal>light</literal>, <literal>medium</"
+"literal>, <literal>semi-bold</literal>, <literal>bold</literal>, "
+"<literal>ultra-bold</literal> or <literal>heavy</literal>. Die Werte für "
+"stretch umfassen <literal>ultra-condensed</literal>, <literal>extra-"
+"condensed</literal>, <literal>condensed</literal>, <literal>semi-condensed</"
+"literal>, <literal>normal</literal>, <literal>semi-expanded</literal>, "
+"<literal>expanded</literal>, <literal>extra-expanded</literal> and "
+"<literal>ultra-expanded</literal>."
+
+#. Tag: para
+#: theme-ref.docbook:846
+#, no-c-format
+msgid ""
+"<replaceable>size</replaceable> is either a floating point number "
+"representing the size in points (1/72 inch) or an integer followed by "
+"<literal>px</literal> representing the size in pixels. Point sizes are "
+"preferable, as they are independent from the display resolution."
+msgstr ""
+"<replaceable>size</replaceable> ist entweder eine Fließkommazahl, die die "
+"Größe in Punkten (1/72 Zoll) darstellt oder eine Ganzzahl, gefolgt von "
+"<literal>px</literal>, um die Größe in Pixeln anzugeben. Größenangaben in "
+"Punkten sind vorzuziehen, da diese unabhängig von der Bildschirmauflösung "
+"sind."
+
+#. Tag: para
+#: theme-ref.docbook:853
+#, no-c-format
+msgid ""
+"If either attribute is left out, the values from the <link linkend=\"style-"
+"nodes\">style node</link> are used. If this yields no window-text color "
+"specification, white is used. The default font is the one configured in "
+"&kdmrc;."
+msgstr ""
+"Wir ein Attribut ausgelassen, werden die Wert des <link linkend=\"style-nodes"
+"\">Stilknotens</link> benutzt. Ergibt diese keine Farbangabe für window-"
+"text, wird Weiß verwendet. Die Standardschriftart ist die in &kdmrc; "
+"eingerichtete."
+
+#. Tag: literal
+#: theme-ref.docbook:863
+#, no-c-format
+msgid "<literal>pixmap</literal>"
+msgstr "<literal>pixmap</literal>"
+
+#. Tag: literal
+#: theme-ref.docbook:864
+#, no-c-format
+msgid "<literal>svg</literal>"
+msgstr "<literal>svg</literal>"
+
+#. Tag: programlisting
+#: theme-ref.docbook:867
+#, no-c-format
+msgid ""
+"&lt;normal file=&quot;picture.png&quot; tint=&quot;#dddddd&quot; "
+"alpha=&quot;1.0&quot;/&gt;"
+msgstr ""
+"&lt;normal file=&quot;picture.png&quot; tint=&quot;#dddddd&quot; "
+"alpha=&quot;1.0&quot;/&gt;"
+
+#. Tag: para
+#: theme-ref.docbook:870
+#, no-c-format
+msgid ""
+"<literal>file</literal> specifies the file containing the image. Relative "
+"pathnames are relative to the theme's directory."
+msgstr ""
+"<literal>file</literal> gibt die Datei an, die das Bild enthält. Relative "
+"Pfade sind relativ zum Ordner des Designs."
+
+#. Tag: para
+#: theme-ref.docbook:875
+#, no-c-format
+msgid ""
+"<literal>wallpaper</literal> can be used instead of <literal>file</literal> "
+"to have &kdm; look for images in the usual locations for &kde; wallpapers. "
+"Plasma wallpaper packages are supported."
+msgstr ""
+"<literal>wallpaper</literal> kann statt <literal>file</literal> benutzt "
+"werden, damit &kdm; auch nach Bildern in den Standard-Ordnern für &kde;-"
+"Hintergrundbilder sucht. Auch Pakete mit Plasma-Hintergrundbildern werden "
+"unterstützt."
+
+#. Tag: para
+#: theme-ref.docbook:882
+#, no-c-format
+msgid ""
+"<literal>element</literal> specifies the element id of a SVG file. If empty, "
+"the whole SVG image will be rendered."
+msgstr ""
+"<literal>element</literal> gibt die Element-ID in einer SVG-Datei an. Ohne "
+"diese Angabe wird das ganze SVG-Bild angezeigt."
+
+#. Tag: para
+#: theme-ref.docbook:887
+#, no-c-format
+msgid ""
+"For <literal>pixmap</literal> nodes, it is possible to provide multiple "
+"images, so the best-quality image for a given resolution can be used. Size-"
+"tagged file names have the format <replaceable>basename</"
+"replaceable><literal>-</literal><replaceable>width</replaceable><literal>x</"
+"literal><replaceable>height</replaceable><literal>.</"
+"literal><replaceable>extension</replaceable>. If the not size-tagged file "
+"exists and it is no Plasma wallpaper package, &kdm; will accept only a "
+"perfect match for a given size and otherwise fall back to the original file. "
+"Otherwise it will try to find an image whose dimensions come closest to the "
+"required size if no perfect match is found."
+msgstr ""
+"Für <literal>pixmap</literal>-Knoten können mehrere Bilder angegeben werden, "
+"sodass  für eine vorgegebene Auflösung das qualitativ beste Bild verwendet "
+"werden kann. Dateinamen mit Kennzeichnung der Größe haben die Bezeichnung "
+"<replaceable>basename</replaceable><literal>-</literal><replaceable>width</"
+"replaceable><literal>x</literal><replaceable>height</replaceable><literal>.</"
+"literal><replaceable>extension</replaceable>. Wenn eine Daten ohne "
+"Kennzeichnung der Größe angegeben ist und dies keine Paket mit einem Plasma-"
+"Hintergrundbild ist, akzeptiert &kdm; nur eine exakte Übereinstimmung mit "
+"einer vorgegebenen Größe und benutzt anderenfalls die Originaldatei. "
+"Ansonsten versucht &kdm; ein Bild mit der am besten übereinstimmenden Größe "
+"zu finden, wenn kein genau passendes Bild gefunden wurde."
+
+#. Tag: para
+#: theme-ref.docbook:913
+#, no-c-format
+msgid ""
+"<literal>scalemode</literal> specifies how to adjust the size of images "
+"which do not match the element's size. <literal>free</literal> (the default) "
+"means to simply scale the image to the right size, possibly distorting its "
+"aspect ratio. The other two modes maintain the image's aspect ratio: "
+"<literal>fit</literal> means to zoom the image to the maximal size which "
+"fits into the element's geometry. The image will be centered. The remaining "
+"area will not be painted by this element, so it should be placed on top of a "
+"solid-filled <literal>rect</literal>. <literal>crop</literal> means to zoom "
+"the image to the minimal size which completely fills the element's geometry. "
+"The image will be clipped symmetrically."
+msgstr ""
+"<literal>scalemode</literal> legt fest, wie die Größe von Bildern geändert "
+"wird, die nicht in das Element passen. Mit der Voreinstellung <literal>free</"
+"literal> wird die Größe der Bilder angepasst, dabei wird unter Umständen das "
+"Seitenverhältnis geändert. Mit den beiden folgenden Einstellungen bleibt das "
+"Seitenverhältnis erhalten: Mit <literal>fit</literal> wird die Größe des "
+"Bildes so geändert, dass es in das Element passt. Dabei wird das Bild "
+"zentriert. Der vom Bild nicht überdeckte Bereich des Elements wird nicht "
+"durch das Element gezeichnet, daher sollte das Bild auf einem einfarbigen  "
+"<literal>rect</literal> angeordnet werden. Mit der Einstellung "
+"<literal>crop</literal> wird das Bild so vergrößert, dass das Bild das "
+"Element ganz ausfüllt. Die überstehenden Teile des Bildes werden symmetrisch "
+"abgeschnitten. "
+
+#. Tag: para
+#: theme-ref.docbook:928
+#, no-c-format
+msgid ""
+"<literal>tint</literal> and <literal>alpha</literal> form a color "
+"specification like in <literal>rect</literal> items. Each pixel of the image "
+"is multiplied with this color component-wise."
+msgstr ""
+"<literal>tint</literal> und <literal>alpha</literal> bilden eine Farbangabe "
+"wie bei <literal>rect</literal>-Elementen. Jedes Pixel des Bildes wird "
+"komponentenweise mit dieser Farbe multipliziert."
+
+#. Tag: title
+#: theme-ref.docbook:942
+#, no-c-format
+msgid "Widget Style Nodes"
+msgstr "Element-Stil-Knoten"
+
+#. Tag: para
+#: theme-ref.docbook:944
+#, no-c-format
+msgid ""
+"This tag makes it possible to change the appearance of labels and Qt widgets "
+"embedded into the theme, e.g., line edits, buttons or the user list. The "
+"style settings are inherited by child items, but can be overridden "
+"individually. The defaults are taken from &kdmrc;."
+msgstr ""
+"Mit diesem Tag das Erscheinungsbild in das Design eingebetteter "
+"Beschriftungen und Qt-Widgets geändert werden, &eg; Eingabefelder, Knöpfe "
+"oder die Benutzerliste. Die Vorgaben für den Stil werden von Kindelementen "
+"geerbt, können aber individuell überschrieben werden. Die Standardwerte "
+"werden aus &kdmrc; übernommen."
+
+#. Tag: para
+#: theme-ref.docbook:952
+#, no-c-format
+msgid ""
+"The <literal>font</literal> attribute defines the font for all widgets. For "
+"widgets with an input function it can be overridden with the <literal>edit-"
+"font</literal> attribute. Fonts are specified the same way as in <link "
+"linkend=\"nor-act-pre-nodes\">normal/active/prelight nodes</link>."
+msgstr ""
+"Das Attribut <literal>font</literal> legt die Schriftart für alle Widgets "
+"fest. Für Widgets mit einer Eingabefunktion kann die Schriftart mit dem "
+"Attribut <literal>edit-font</literal> überschrieben werden. Schriftarten "
+"werden genauso angegeben wie in <link linkend=\"nor-act-pre-nodes\">Normal/"
+"Active/Prelight</link>."
+
+#. Tag: para
+#: theme-ref.docbook:960
+#, no-c-format
+msgid ""
+"Usually, the theming engine tries hard to remove any frames from Qt widgets, "
+"so they melt into the theme seamlessly. In cases where this is not desired, "
+"the <literal>frame</literal> attribute can be set to <literal>true</literal>."
+msgstr ""
+"Normalerweise gibt sich die Design-Engine alle Mühe die Rahmen von Qt-"
+"Widgets zu entfernen, sodass diese übergangslos im Design dargestellt "
+"werden. In Fällen, in denen dies nicht gewünscht ist, kann das Attribut "
+"<literal>frame</literal> auf den Wert <literal>true</literal> gesetzt werden."
+
+#. Tag: para
+#: theme-ref.docbook:967
+#, no-c-format
+msgid ""
+"The <literal>guistyle</literal> attribute can be used to override the Qt GUI "
+"style for embedded widgets. The default is given by <option>GUIStyle</"
+"option> in &kdmrc;"
+msgstr ""
+"Das Attribut <literal>guistyle</literal> kann benutzt werden, um den Qt-GUI-"
+"Stil für eingebettete Widgets zu überschreiben. Als Voreinstellung wird die "
+"Option <option>GUIStyle</option> in &kdmrc; verwendet."
+
+#. Tag: para
+#: theme-ref.docbook:973
+#, no-c-format
+msgid ""
+"It is possible to specify almost the entire palette for the widgets as "
+"documented at <ulink type=\"http\" url=\"http://doc.trolltech.com/4.3/"
+"qpalette.html\">Trolltech's site</ulink>. Attribute names are composed from "
+"a scope, a color role and a suffix. Possible scopes are - in order of "
+"increasing precedence - <literal>all-</literal> for all color groups, no "
+"scope for the active and inactive color groups and <literal>active-</"
+"literal>, <literal>inactive-</literal> and <literal>disabled-</literal> for "
+"the respective color group. Supported color roles are <literal>window</"
+"literal>, <literal>window-text</literal>, <literal>base</literal>, "
+"<literal>alternate-base</literal>, <literal>text</literal>, <literal>bright-"
+"text</literal>, <literal>highlight</literal>, <literal>highlighted-text</"
+"literal>, <literal>button</literal> and <literal>button-text</literal>. The "
+"suffix can be <literal>-color</literal> or <literal>-alpha</literal> with "
+"the respective meaning as in <link linkend=\"nor-act-pre-nodes\">normal/"
+"active/prelight nodes</link>."
+msgstr ""
+"Sie können beinah die gesamte auf der <ulink type=\"http\" url=\"http://doc."
+"trolltech.com/4.3/qpalette.html\">Trolltech-Webseite</ulink> dokumentierte "
+"Palette für die Widgets angeben. Attributnamen setzen sich aus einem "
+"Gültigkeitsbereich, einer Farbrolle und einem Suffix zusammen. Mögliche "
+"Gültigkeitsbereiche, in aufsteigender Rangfolge, sind <literal>all-</"
+"literal> für alle Farbgruppen, keiner für die aktiven und inaktiven "
+"Farbgruppen und <literal>active-</literal>, <literal>inactive-</literal> und "
+"<literal>disabled-</literal> für die entsprechenden Farbgruppen. "
+"Unterstützte Farbrollen sind <literal>window</literal>, <literal>window-"
+"text</literal>, <literal>base</literal>, <literal>alternate-base</literal>, "
+"<literal>text</literal>, <literal>bright-text</literal>, <literal>highlight</"
+"literal>, <literal>highlighted-text</literal>, <literal>button</literal> und "
+"<literal>button-text</literal>. Das Suffix kann den Wert <literal>-color</"
+"literal> oder <literal>-alpha</literal> mit der entsprechenden Bedeutung aus "
+"<link linkend=\"nor-act-pre-nodes\">normal/active/prelight nodes</link> "
+"haben."
+
+#. Tag: para
+#: theme-ref.docbook:997
+#, no-c-format
+msgid ""
+"As an alternative to specifying the palette inline, the "
+"<literal>colorscheme</literal> attribute can be used to load a complete "
+"&kde; color scheme. The default is given by <option>ColorScheme</option> in "
+"&kdmrc;. Individual <literal>color</literal> specifications will override "
+"the colors from the scheme."
+msgstr ""
+"Alternativ zur Angabe einer Palette in der Datei kann das Attribut "
+"<literal>colorscheme</literal> benutzt werden, um eine vollständiges &kde;-"
+"Farbschema zu laden. Die Vorgabe ist die Option <option>ColorScheme</option> "
+"in der Datei &kdmrc;. Individuelle Festlegung von <literal>color</literal> "
+"überschreibt die Farbe des Schemas."
+
+#. Tag: para
+#: theme-ref.docbook:1006
+#, no-c-format
+msgid "Example:"
+msgstr "Beispiel:"
+
+#. Tag: programlisting
+#: theme-ref.docbook:1008
+#, no-c-format
+msgid ""
+"&lt;style edit-font=&quot;Comic 16&quot; text-color=&quot;#dddddd&quot; "
+"frame=&quot;true&quot;/&gt;"
+msgstr ""
+"&lt;style edit-font=&quot;Comic 16&quot; text-color=&quot;#dddddd&quot; "
+"frame=&quot;true&quot;/&gt;"
+
+#. Tag: title
+#: theme-ref.docbook:1013
+#, no-c-format
+msgid "Face Browser Color Nodes"
+msgstr "Farbknoten für die Gesichterliste"
+
+#. Tag: para
+#: theme-ref.docbook:1015
+#, no-c-format
+msgid ""
+"Color nodes permit overriding the background color of the items in the face "
+"browser. <literal>labelcolor</literal> and <literal>altlabelcolor</literal> "
+"are essentially equivalent to <literal>all-base-color</literal> resp. "
+"<literal>all-alternate-base-color</literal> in <link linkend=\"style-nodes"
+"\">style nodes</link>. If only <literal>labelcolor</literal> is specified, "
+"alternating item backgrounds are disabled."
+msgstr ""
+"Farbknoten erlauben das Überschreiben der Hintergrundfarbe von Elementen in "
+"der Gesichterliste. <literal>labelcolor</literal> und "
+"<literal>altlabelcolor</literal> sind im Wesentlichen äquivalent zu "
+"<literal>all-base-color</literal> bzw. <literal>all-alternate-base-color</"
+"literal> in <link linkend=\"style-nodes\">style nodes</link>. Wird nur "
+"<literal>labelcolor</literal> angegeben, werden alternierende "
+"Elementhintergründe abgeschaltet."
+
+#. Tag: programlisting
+#: theme-ref.docbook:1027
+#, no-c-format
+msgid ""
+"&lt;color labelcolor=&quot;#80ffffff&quot; altlabelcolor=&quot;"
+"#80f0f0f0&quot;/&gt;"
+msgstr ""
+"&lt;color labelcolor=&quot;#80ffffff&quot; altlabelcolor=&quot;"
+"#80f0f0f0&quot;/&gt;"
+
+#. Tag: title
+#: theme-ref.docbook:1032
+#, no-c-format
+msgid "Text Nodes"
+msgstr "Text-Knoten"
+
+#. Tag: para
+#: theme-ref.docbook:1034
+#, no-c-format
+msgid ""
+"Text tags are used by labels. They can be used to display localized text as "
+"follows (if the <literal>xml:lang</literal> attribute is omitted, the POSIX "
+"locale is assumed):"
+msgstr ""
+"Text-Tags werden von Beschriftungen verwendet. Diese können zur Anzeige von "
+"lokalisiertem Text wie folgt benutzt werden (fehlt das Attribut <literal>xml:"
+"lang</literal>, wird das POSIX locale vorausgesetzt):"
+
+#. Tag: programlisting
+#: theme-ref.docbook:1038
+#, no-c-format
+msgid "&lt;text xml:lang=&quot;fr&quot;&gt;Option&lt;/text&gt;"
+msgstr "&lt;text xml:lang=&quot;fr&quot;&gt;Option&lt;/text&gt;"
+
+#. Tag: para
+#: theme-ref.docbook:1050
+#, no-c-format
+msgid ""
+"Text nodes can contain the following special character sequences which will "
+"be translated as follows:"
+msgstr ""
+"Text-Knoten können die folgenden Sonderzeichenfolgen enthalten, die wie "
+"folgt übersetzt werden:"
+
+#. Tag: segtitle
+#: theme-ref.docbook:1057
+#, no-c-format
+msgid "Sequence"
+msgstr "Zeichenfolge"
+
+#. Tag: segtitle
+#: theme-ref.docbook:1057 theme-ref.docbook:1154
+#, no-c-format
+msgid "Expansion"
+msgstr "Auflösung"
+
+#. Tag: seg
+#: theme-ref.docbook:1060
+#, no-c-format
+msgid "<seg>%%</seg>"
+msgstr "<seg>%%</seg>"
+
+#. Tag: seg
+#: theme-ref.docbook:1061
+#, no-c-format
+msgid "A literal % character"
+msgstr "Ein %-Zeichen"
+
+#. Tag: seg
+#: theme-ref.docbook:1065
+#, no-c-format
+msgid "<seg>%c</seg>"
+msgstr "<seg>%c</seg>"
+
+#. Tag: seg
+#: theme-ref.docbook:1066
+#, no-c-format
+msgid "Wall clock time and date"
+msgstr "Uhrzeit und Datum"
+
+#. Tag: seg
+#: theme-ref.docbook:1070
+#, no-c-format
+msgid "<seg>%d</seg>"
+msgstr "<seg>%d</seg>"
+
+#. Tag: seg
+#: theme-ref.docbook:1071
+#, no-c-format
+msgid "Display name (<envar>DISPLAY</envar> environment variable)"
+msgstr "Der Display-Name (Umgebungsname <envar>DISPLAY</envar>)"
+
+#. Tag: seg
+#: theme-ref.docbook:1075
+#, no-c-format
+msgid "<seg>%h</seg>"
+msgstr "<seg>%h</seg>"
+
+#. Tag: seg
+#: theme-ref.docbook:1076
+#, no-c-format
+msgid "Hostname (<function>gethostname</function> output)"
+msgstr "Rechnername (Ausgabe von <function>gethostname</function>)"
+
+#. Tag: seg
+#: theme-ref.docbook:1080
+#, no-c-format
+msgid "<seg>%m</seg>"
+msgstr "<seg>%m</seg>"
+
+#. Tag: seg
+#: theme-ref.docbook:1081
+#, no-c-format
+msgid ""
+"Machine name (<structfield>machine</structfield> part of <function>uname</"
+"function> output)"
+msgstr ""
+"Maschinentyp (Bestandteil <structfield>machine</structfield> der Ausgabe von "
+"<function>uname</function>)"
+
+#. Tag: seg
+#: theme-ref.docbook:1086
+#, no-c-format
+msgid "<seg>%n</seg>"
+msgstr "<seg>%n</seg>"
+
+#. Tag: seg
+#: theme-ref.docbook:1087
+#, no-c-format
+msgid ""
+"Node name (<structfield>nodename</structfield> part of <function>uname</"
+"function> output)"
+msgstr ""
+"Netzwerkname (<structfield>nodename</structfield>, Bestandteil der Ausgabe "
+"von <function>uname</function>."
+
+#. Tag: seg
+#: theme-ref.docbook:1092
+#, no-c-format
+msgid "<seg>%o</seg>"
+msgstr "<seg>%o</seg>"
+
+#. Tag: seg
+#: theme-ref.docbook:1093
+#, no-c-format
+msgid "Domain name (<function>getdomainname</function> output)"
+msgstr "Domänen-Name (Ausgabe von <function>getdomainname</function>)"
+
+#. Tag: seg
+#: theme-ref.docbook:1097
+#, no-c-format
+msgid "<seg>%r</seg>"
+msgstr "<seg>%r</seg>"
+
+#. Tag: seg
+#: theme-ref.docbook:1098
+#, no-c-format
+msgid ""
+"Release name (<structfield>release</structfield> part of <function>uname</"
+"function> output)"
+msgstr ""
+"Release-Nummer (<structfield>release</structfield>, Bestandteil der Ausgabe "
+"von <function>uname</function>)"
+
+#. Tag: seg
+#: theme-ref.docbook:1103
+#, no-c-format
+msgid "<seg>%s</seg>"
+msgstr "<seg>%s</seg>"
+
+#. Tag: seg
+#: theme-ref.docbook:1104
+#, no-c-format
+msgid ""
+"System name (<structfield>sysname</structfield> part of <function>uname</"
+"function> output)"
+msgstr ""
+"Systemname (<structfield>sysname</structfield>, Bestandteil der Ausgabe von "
+"<function>uname</function>)"
+
+#. Tag: seg
+#: theme-ref.docbook:1109
+#, no-c-format
+msgid "<seg>%t</seg>"
+msgstr "<seg>%t</seg>"
+
+#. Tag: seg
+#: theme-ref.docbook:1110
+#, no-c-format
+msgid ""
+"Remaining number of seconds until timed login is performed, plus the "
+"appropriate i18n plural form of <quote>second</quote>"
+msgstr ""
+"Verbleibende Anzahl Sekunden bis zur Ausführung einer geplanten Anmeldung. "
+"Hinzu kommt die passende i18n-Pluralform für <quote>Sekunde</quote>."
+
+#. Tag: seg
+#: theme-ref.docbook:1115
+#, no-c-format
+msgid "<seg>%u</seg>"
+msgstr "<seg>%u</seg>"
+
+#. Tag: seg
+#: theme-ref.docbook:1116
+#, no-c-format
+msgid "Username for timed login"
+msgstr "Benutzername für geplante Anmeldung"
+
+#. Tag: seg
+#: theme-ref.docbook:1127
+#, no-c-format
+msgid "<seg>_</seg>"
+msgstr "<seg>_</seg>"
+
+#. Tag: seg
+#: theme-ref.docbook:1128
+#, no-c-format
+msgid "Causes the following character to be an accelerator"
+msgstr "Macht das folgende Zeichen zu einem Kurzbefehl."
+
+#. Tag: para
+#: theme-ref.docbook:1133
+#, no-c-format
+msgid ""
+"<literal>%t</literal> and <literal>%u</literal> are intended to be used only "
+"internally to display the <literal>timed-label</literal> message, which is "
+"automatically updated every second."
+msgstr ""
+"<literal>%t</literal> und <literal>%u</literal> sind nur zum internen "
+"Gebrauch zur Anzeige der Nachricht <literal>timed-label</literal> gedacht, "
+"die automatisch jede Sekunde aktualisiert wird."
+
+#. Tag: title
+#: theme-ref.docbook:1141
+#, no-c-format
+msgid "Stock Nodes"
+msgstr "Bestandsknoten"
+
+#. Tag: para
+#: theme-ref.docbook:1143
+#, no-c-format
+msgid ""
+"Certain common localized labels can be specified via the stock tags. The "
+"<literal>text</literal> tag is ignored if the <literal>stock</literal> tag "
+"is used. You really should use the stock labels rather than just putting all "
+"the translations into the themes. This yields faster load times and likely "
+"better translations. The following values are valid:"
+msgstr ""
+"Bestimmte häufige, lokalisierte Beschriftungen können über Bestandsknoten "
+"angegeben werden. Das Tag <literal>text</literal> wird ignoriert, wenn das "
+"Tag <literal>stock</literal> angegeben ist. Sie sollten lieber die "
+"Bestandsbeschriftungen verwenden als sämtliche Übersetzungen in den Designs "
+"abzulegen. Dies führt zu schnelleren Ladezeiten und wahrscheinlich zu "
+"besseren Übersetzungen. Die folgenden Werte sind gültig:"
+
+#. Tag: quote
+#: theme-ref.docbook:1176
+#, no-c-format
+msgid "Caps Lock is enabled"
+msgstr "Feststelltaste ist aktiviert"
+
+#. Tag: seg
+#: theme-ref.docbook:1179
+#, no-c-format
+msgid "<seg>chooser</seg>"
+msgstr "<seg>chooser</seg>"
+
+#. Tag: quote
+#: theme-ref.docbook:1180
+#, no-c-format
+msgid "XDMCP Choose_r"
+msgstr "_XDMCP-Rechnermenü"
+
+#. Tag: seg
+#: theme-ref.docbook:1183
+#, no-c-format
+msgid "quit"
+msgstr "quit"
+
+#. Tag: quote
+#: theme-ref.docbook:1184
+#, no-c-format
+msgid "_Quit"
+msgstr "Be_enden"
+
+#. Tag: seg
+#: theme-ref.docbook:1187
+#, no-c-format
+msgid "disconnect"
+msgstr "disconnect"
+
+#. Tag: quote
+#: theme-ref.docbook:1188
+#, no-c-format
+msgid "Disconn_ect"
+msgstr "_Trennen"
+
+#. Tag: seg
+#: theme-ref.docbook:1191
+#, no-c-format
+msgid "halt"
+msgstr "halt"
+
+#. Tag: quote
+#: theme-ref.docbook:1192
+#, no-c-format
+msgid "Power o_ff"
+msgstr "Aus_schalten"
+
+#. Tag: seg
+#: theme-ref.docbook:1195
+#, no-c-format
+msgid "language"
+msgstr "language"
+
+#. Tag: quote
+#: theme-ref.docbook:1196
+#, no-c-format
+msgid "Lan_guage"
+msgstr "_Sprache"
+
+#. Tag: seg
+#: theme-ref.docbook:1199
+#, no-c-format
+msgid "login"
+msgstr "login"
+
+#. Tag: quote
+#: theme-ref.docbook:1200
+#, no-c-format
+msgid "_Login"
+msgstr "_Anmelden"
+
+#. Tag: seg
+#: theme-ref.docbook:1203
+#, no-c-format
+msgid "session"
+msgstr "session"
+
+#. Tag: quote
+#: theme-ref.docbook:1204
+#, no-c-format
+msgid "Session _Type"
+msgstr "Sitzungs_art"
+
+#. Tag: seg
+#: theme-ref.docbook:1207
+#, no-c-format
+msgid "reboot"
+msgstr "reboot"
+
+#. Tag: quote
+#: theme-ref.docbook:1208
+#, no-c-format
+msgid "Re_boot"
+msgstr "_Neustart"
+
+#. Tag: seg
+#: theme-ref.docbook:1217
+#, no-c-format
+msgid "<seg>system</seg>"
+msgstr "<seg>system</seg>"
+
+#. Tag: quote
+#: theme-ref.docbook:1218
+#, no-c-format
+msgid "_Menu"
+msgstr "_Menü"
+
+#. Tag: quote
+#: theme-ref.docbook:1222
+#, no-c-format
+msgid "User %u will login in %t"
+msgstr "Benutzer %u wird angemeldet in %t"
+
+#. Tag: seg
+#: theme-ref.docbook:1225
+#, no-c-format
+msgid "domain-label"
+msgstr "domain-label"
+
+#. Tag: quote
+#: theme-ref.docbook:1226
+#, no-c-format
+msgid "_Domain:"
+msgstr "_Domain:"
+
+#. Tag: seg
+#: theme-ref.docbook:1229
+#, no-c-format
+msgid "username-label"
+msgstr "username-label"
+
+#. Tag: quote
+#: theme-ref.docbook:1230
+#, no-c-format
+msgid "_Username:"
+msgstr "_Benutzername:"
+
+#. Tag: seg
+#: theme-ref.docbook:1233
+#, no-c-format
+msgid "password-label"
+msgstr "password-label"
+
+#. Tag: quote
+#: theme-ref.docbook:1234
+#, no-c-format
+msgid "_Password:"
+msgstr "_Passwort:"
+
+#. Tag: seg
+#: theme-ref.docbook:1237
+#, no-c-format
+msgid "welcome-label"
+msgstr "welcome-label"
+
+#. Tag: quote
+#: theme-ref.docbook:1238
+#, no-c-format
+msgid "Welcome to %h"
+msgstr "Willkommen auf %h"
+
+#. Tag: programlisting
+#: theme-ref.docbook:1245
+#, no-c-format
+msgid "&lt;stock type=&quot;welcome-label&quot;/&gt;"
+msgstr "&lt;stock type=&quot;welcome-label&quot;/&gt;"
+
+#. Tag: title
+#: theme-ref.docbook:1250
+#, no-c-format
+msgid "Buddy Nodes"
+msgstr "Buddy-Knoten"
+
+#. Tag: para
+#: theme-ref.docbook:1252
+#, no-c-format
+msgid ""
+"Items which do not directly cause an action can be assigned a buddy. The "
+"buddy is given input focus when the item is activated (clicked or a "
+"<literal>label</literal>'s accelerator pressed)."
+msgstr ""
+"Elementen, die nur indirekt eine Aktion auslösen, kann ein Buddy zugewiesen "
+"werden. Sobald das Element aktiviert wird (angeklickt oder der "
+"<literal>Kurzbefehl</literal> einer Beschriftung wird betätigt), erhält das "
+"Buddy-Element den Eingabefokus."
+
+#. Tag: para
+#: theme-ref.docbook:1258
+#, no-c-format
+msgid ""
+"The buddy is referenced by id with the <literal>idref</literal> attribute. "
+"Obviously, it must be given an id. Example:"
+msgstr ""
+"Der Buddy wird über seine Id mit dem Attribut <literal>idref</literal> "
+"adressiert. Es ist daher offensichtlich, dass er eine Id erhalten muss. "
+"Beispiel:"
+
+#. Tag: programlisting
+#: theme-ref.docbook:1261
+#, no-c-format
+msgid ""
+"&lt;item type=&quot;label&quot;&gt;\n"
+"  &lt;stock type=&quot;username-label&quot;/&gt;\n"
+"  &lt;buddy idref=&quot;user-entry&quot;/&gt;\n"
+"  [...]\n"
+"&lt;/item&gt;\n"
+"[...]\n"
+"&lt;item type=&quot;entry&quot; id=&quot;user-entry&quot;&gt;\n"
+"  [...]\n"
+"&lt;/item&gt;"
+msgstr ""
+"&lt;item type=&quot;label&quot;&gt;\n"
+"  &lt;stock type=&quot;username-label&quot;/&gt;\n"
+"  &lt;buddy idref=&quot;user-entry&quot;/&gt;\n"
+"  [...]\n"
+"&lt;/item&gt;\n"
+"[...]\n"
+"&lt;item type=&quot;entry&quot; id=&quot;user-entry&quot;&gt;\n"
+"  [...]\n"
+"&lt;/item&gt;"
+
+#~ msgid ""
+#~ "You can specify the <literal>type</literal> attribute to indicate that "
+#~ "certain items should only be displayed if the type is set. Prefixing the "
+#~ "type with an exclamation mark (<literal>!</literal>) reverses the "
+#~ "condition. Valid values include the following: <segmentedlist> "
+#~ "<segtitle>Type</segtitle><segtitle>Display if ...</segtitle> "
+#~ "<seglistitem> <seg><literal>chooser</literal></seg> <seg>switching to "
+#~ "remote login is permitted.</seg> </seglistitem> <seglistitem> "
+#~ "<seg><literal>halt</literal> and <literal>reboot</literal></seg> "
+#~ "<seg>system shutdown is permitted.</seg> </seglistitem> <seglistitem> "
+#~ "<seg><literal>system</literal></seg> <seg>no condition (always set in "
+#~ "&kdm;).</seg> </seglistitem> <seglistitem> <seg><literal>plugin-</"
+#~ "literal><replaceable>entry-name</replaceable></seg> <seg>the "
+#~ "<quote>conversation</quote> plugin provides a corresponding input field.</"
+#~ "seg> </seglistitem> </segmentedlist> For example:"
+#~ msgstr ""
+#~ "Sie können das Attribut <literal>type</literal> angeben. Damit zeigen sie "
+#~ "an, dass bestimmte Element nur angezeigt werden sollen, wenn der Typ "
+#~ "gesetzt ist. Wird dem Typ ein Ausrufezeichen vorangestellt (<literal>!</"
+#~ "literal>) wird die Bedingung umgekehrt. Gültige Werte sind folgende: "
+#~ "<segmentedlist> <segtitle>Type</segtitle> <segtitle>Anzeigen wenn ...</"
+#~ "segtitle> <seglistitem> <seg><literal>chooser</literal></seg> <seg>ein "
+#~ "Umschalten auf das Anmelden an Fremdrechnern erlaubt ist.</seg> </"
+#~ "seglistitem> <seglistitem> <seg><literal>halt</literal> und "
+#~ "<literal>reboot</literal></seg> <seg>Das Herunterfahren des Systems ist "
+#~ "erlaubt.</seg> </seglistitem> <seglistitem> <seg><literal>system</"
+#~ "literal></seg> <seg>keine Bedingung (In &kdm; immer gesetzt).</seg> </"
+#~ "seglistitem> <seglistitem> <seg><literal>plugin-</"
+#~ "literal><replaceable>entry-name</replaceable></seg> <seg> die "
+#~ "<quote>Kommunikationserweiterung</quote> bietet ein entsprechendes "
+#~ "Eingabefeld.</seg> </seglistitem> </segmentedlist> Zum Beispiel:"
+
+#~ msgid "chooser"
+#~ msgstr "chooser"
+
+#~ msgid "system"
+#~ msgstr "system"

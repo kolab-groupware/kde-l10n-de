@@ -1,0 +1,305 @@
+<chapter id="configuration">
+<title
+>&kmplot; einrichten</title
+> 
+<para
+>Um den Dialog zur Einrichtung von &kmplot; zu öffnen, wählen Sie <menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>&kmplot; einrichten ...</guimenuitem
+></menuchoice
+>. Die Einstellungen für die  (<guimenuitem
+>Konstanten ...</guimenuitem
+> können Sie nur im Menü <guimenu
+>Bearbeiten</guimenu
+> ändern und das <guimenuitem
+>Koordinatensystem...</guimenuitem
+> nur im Menü <guimenu
+>Ansicht</guimenu
+>. </para>
+
+<sect1 id="general-config">
+	<title
+>Allgemeine Einstellungen</title>
+	
+	<screenshot>
+		<screeninfo
+>Bildschirmfoto des Einrichtungsdialogs</screeninfo>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="settings-general.png" format="PNG"/>
+			</imageobject>
+			<textobject>
+				<phrase
+>Bildschirmfoto des Einrichtungsdialogs</phrase>
+			</textobject>
+		</mediaobject>
+	</screenshot>
+	
+	<para
+>Hier können Sie die allgemeinen Einstellungen ändern, die beim Beenden von &kmplot; gespeichert werden. Dazu gehören die Winkeleinheiten (Bogenmaß oder Grad), die Faktoren für Vergrößerung und Verkleinerung und das Zeichnen von Tangente und Normale beim Verfolgen. </para>
+</sect1>
+
+<sect1 id="diagram-config">
+	<title
+>Diagrammeinstellungen</title>
+	
+	<screenshot>
+		<screeninfo
+>Bildschirmfoto des Dialogs Diagrammaussehen</screeninfo>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="settings-diagram.png" format="PNG"/>
+			</imageobject>
+			<textobject>
+				<phrase
+>Bildschirmfoto des Dialogs Diagrammaussehen</phrase>
+			</textobject>
+		</mediaobject>
+	</screenshot>
+	
+	<para
+>Sie können den <guilabel
+>Stil</guilabel
+> für das Gitter auf einen der vier möglichen Werten setzen: <variablelist>
+			
+			<varlistentry>
+				<term
+><guilabel
+>Nichts</guilabel
+></term>
+				<listitem>
+					<para
+>Es werden keine Gitterlinien auf der Zeichenfläche dargestellt</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+><guilabel
+>Linien</guilabel
+></term>
+				<listitem>
+					<para
+>Gerade Linien bilden ein quadratisches Gitter auf der Zeichenfläche.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+><guilabel
+>Kreuzgitter</guilabel
+></term>
+				<listitem>
+					<para
+>Kreuze werden gezeichnet, um Punkte anzudeuten, an denen x und y ganzzahlige Werte haben. (&eg; (1,1), (4,2) &etc;).</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+><guilabel
+>Polar</guilabel
+></term>
+				<listitem>
+					<para
+>Linien mit konstantem Radius und Winkel werden auf der Zeichenfläche gezeichnet.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</para>
+	
+	<para
+>Weitere Einstellungen für das Aussehen des Diagramms: <variablelist>
+			<varlistentry>
+				<term
+><guilabel
+>Achsenbeschriftung</guilabel
+></term>
+				<listitem>
+					<para
+>Legt die Beschriftungen der waagerechten und senkrechten Achsen fest.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+><guilabel
+>Achsenbreite:</guilabel
+></term>
+				<listitem>
+					<para
+>Stellt die Breite der Achsenlinien ein.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+><guilabel
+>Linienbreite:</guilabel
+></term>
+				<listitem>
+					<para
+>Stellt die Breite der Gitterlinien ein.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+><guilabel
+>Skalenstrichbreite:</guilabel
+></term>
+				<listitem>
+					<para
+>Stellt die Breite der Linien ein, die die Skalenstriche auf den Achsen darstellen.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+><guilabel
+>Skalenstrichlänge:</guilabel
+></term>
+				<listitem>
+					<para
+>Stellt die Länge der Linien ein, die die Skalenstriche auf den Achsen darstellen.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+><guilabel
+>Beschriftungen anzeigen</guilabel
+></term>
+				<listitem>
+					<para
+>Falls dieses Feld gewählt ist, werden die Beschriftung der waagerechten und senkrechten Achsen in der Zeichnung angezeigt und die Skalenstriche werden beschriftet.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+><guilabel
+>Achsen anzeigen</guilabel
+></term>
+				<listitem>
+					<para
+>Falls dieses Feld gewählt ist, werden die Achsen angezeigt.</para>
+				</listitem>
+			</varlistentry>
+			
+			<varlistentry>
+				<term
+><guilabel
+>Pfeile anzeigen</guilabel
+></term>
+				<listitem>
+					<para
+>Falls dieses Feld gewählt ist, werden die Achsen mit Pfeilen an den Enden gezeichnet.</para>
+				</listitem>
+			</varlistentry>
+			
+		</variablelist>
+		
+	</para>
+</sect1>
+
+<sect1 id="colors-config">
+	<title
+>Farbeneinstellung</title>
+	
+	<screenshot>
+		<screeninfo
+>Bildschirmfoto des Einrichtungsdialogs für Farben</screeninfo>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="settings-colors.png" format="PNG"/>
+			</imageobject>
+			<textobject>
+				<phrase
+>Bildschirmfoto des Einrichtungsdialogs für Farben</phrase>
+			</textobject>
+		</mediaobject>
+	</screenshot>
+	
+	<para
+>Auf der Karte <guilabel
+>Farben</guilabel
+> des Einrichtungsdialogs können Sie im Abschnitt <guilabel
+>Koordinaten</guilabel
+> die Farben der Achsen, des Gitters und der Zeichenfläche von &kmplot; verändern. </para>
+	
+	<para
+>Im Abschnitt <guilabel
+>Normale Funktionsfarben</guilabel
+> können Sie die Farben für neue Funktionen anpassen.</para>
+</sect1>
+
+<sect1 id="font-config">
+	<title
+>Schrifteneinstellungen</title>
+	
+	<screenshot>
+		<screeninfo
+>Bildschirmfoto des Einrichtungsdialogs für die Schriften</screeninfo>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="settings-fonts.png" format="PNG"/>
+			</imageobject>
+			<textobject>
+				<phrase
+>Bildschirmfoto des Einrichtungsdialogs für die Schriften</phrase>
+			</textobject>
+		</mediaobject>
+	</screenshot>
+	
+	<variablelist>
+		
+		<varlistentry>
+			<term
+><guilabel
+>Achsenbeschriftung</guilabel
+></term>
+			<listitem>
+				<para
+>Die Schrift für die Ziffern und Bezeichnungen der Achsen.</para>
+			</listitem>
+		</varlistentry>
+		
+		<varlistentry>
+			<term
+><guilabel
+>Diagrammbeschriftungen</guilabel
+></term>
+			<listitem>
+				<para
+>Die Schrift für die Beschriftung des Diagramms (&eg; für den Namen der Zeichnung und der Extrempunkte).</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term
+><guilabel
+>Kopfzeile der Tabelle</guilabel
+></term>
+			<listitem>
+				<para
+>Die Schrift für die Kopfzeile beim Ausdruck einer Zeichnung.</para>
+			</listitem>
+		</varlistentry>
+		
+	</variablelist>
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+sgml-parent-document:("index.docbook" "BOOK" "CHAPTER")
+End:
+-->

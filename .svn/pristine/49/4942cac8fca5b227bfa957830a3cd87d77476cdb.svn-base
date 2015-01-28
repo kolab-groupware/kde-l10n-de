@@ -1,0 +1,344 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kopete_pipes\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:14+0000\n"
+"PO-Revision-Date: 2009-03-09 09:51+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-xml2pot; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: branches/KDE/4.1/kdenetwork/doc/kopete/pipes.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 773438\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 0.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: pipes.docbook:5
+#, no-c-format
+msgid "&kopete; Pipes Plugin Implementation Guide"
+msgstr "Handbuch zur Implementierung für das Modul Umleitung"
+
+#. Tag: para
+#: pipes.docbook:6
+#, no-c-format
+msgid ""
+"Beginning with &kopete; 1.0, &kopete; ships with a plugin called Pipes. "
+"Pipes allows you to pipe incoming or outgoing messages through an external "
+"script or executable. An incoming message will be piped through the "
+"executable before it reaches your chat window, while outgoing messages will "
+"be piped through the executable before they are sent over the internet. "
+"Pipes can receive text in one of three forms: <variablelist> <varlistentry> "
+"<term>Plain text body</term> <listitem><para>The body of the message, in "
+"plain &ascii; text</para></listitem> </varlistentry> <varlistentry> "
+"<term>&html; text body</term> <listitem><para>The body of the message, in "
+"&html;, as it would be if your chat peer had sent HTML to you, which will be "
+"rendered in the chat window</para></listitem> </varlistentry> <varlistentry> "
+"<term>&xml; full message</term> <listitem><para>An &xml; document that "
+"describes all the characteristics of the message, including the &html; body."
+"</para></listitem> </varlistentry> </variablelist> This document describes "
+"the specifics of the &xml; format, and how to write a program that can "
+"handle it."
+msgstr ""
+"Ab Version 1.0 enthält &kopete; ein Modul namens Umleitung. Mit diesem Modul "
+"können ein- oder ausgehende Nachrichten durch ein externes Skript oder "
+"Programm geleitet werden. Durch das Programm geleitet werden alle eingehen "
+"Nachrichten, ehe sie das Chatfenster erreichen und alle ausgehenden "
+"Nachrichten, ehe sie ins Internet geschickt werden. Für Umleitungen gibt es "
+"drei verschiedene Format für den Text: <variablelist> <varlistentry> "
+"<term>Unformatierter Text</term> <listitem><para>Die eigentliche Nachricht "
+"im &ascii;-Textformat</para></listitem> </varlistentry> <varlistentry> "
+"<term>&html;-Text</term> <listitem><para>Die eigentliche Nachricht im &html;-"
+"Format, die für die Anzeige im Chatfenster gerendert wird</para></listitem> "
+"</varlistentry> <varlistentry> <term>Vollständige &xml;-Nachricht</term> "
+"<listitem><para>Ein &xml;-Dokument mit einer vollständigen Beschreibung der "
+"Nachricht einschließlich des &html;-Textteils</para></listitem> </"
+"varlistentry> </variablelist>Dieses Dokument beschreibt die Besonderheiten "
+"des &xml;-Formats und gibt Hinweise, wie ein Programm zur Bearbeitung dieses "
+"Formats zu schreiben ist."
+
+#. Tag: title
+#: pipes.docbook:26
+#, no-c-format
+msgid "&xml; Output"
+msgstr "&xml;-Ausgabe"
+
+#. Tag: para
+#: pipes.docbook:27
+#, no-c-format
+msgid ""
+"Here's an example of what a program will receive in its standard input "
+"stream: <literallayout>\n"
+"&lt;?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n"
+"&lt;message subject=\"\"\n"
+"        route=\"outbound\"\n"
+"        importance=\"1\"\n"
+"        formattedTimestamp=\"11:06:46 am\"\n"
+"        timestamp=\"Sat Dec 1 11:06:46 2007\"\n"
+"        type=\"normal\"\n"
+"        mainContactId=\"spacemonkey1234\"\n"
+"        time=\"11:06 am\" >\n"
+"        &lt;from>\n"
+"                &lt;contact contactId=\"tdurden\"\n"
+"                        protocolIcon=\"aim_protocol\"\n"
+"                        userPhoto=\"/home/kde-devel/.kde4/share/apps/kopete/"
+"oscarpictures/tdurden.jpg\" >\n"
+"                        &lt;contactDisplayName dir=\"ltr\" text=\"tdurden\" /"
+">\n"
+"                        &lt;metaContactDisplayName dir=\"ltr\"\n"
+"                                text=\"Tyler\" />\n"
+"                &lt;/contact>\n"
+"        &lt;/from>\n"
+"        &lt;to>\n"
+"                &lt;contact contactId=\"spacemonkey1234\"\n"
+"                        protocolIcon=\"aim_protocol\"\n"
+"                        userPhoto=\"/home/kde-devel/.kde4/share/apps/kopete/"
+"avatars/User/7e542903e0ac7519a7496e85f5a5b99d.png\" >\n"
+"                        &lt;contactDisplayName dir=\"ltr\" text="
+"\"spacemonkey1234\" />\n"
+"                        &lt;metaContactDisplayName dir=\"ltr\" text=\"Robert "
+"Paulson\" />\n"
+"                &lt;/contact>\n"
+"                &lt;/to>\n"
+"        &lt;body dir=\"ltr\"\n"
+"                bgcolor=\"#000000\"\n"
+"                color=\"#000000\" >\n"
+"                &amp;lt;span style=\" color:#000000;\">hey&amp;lt;/span>&lt;/"
+"body>\n"
+"&lt;/message>\n"
+"</literallayout> This &xml; is loosely based on the XSD used for chatstyles "
+"found at <ulink url=\"http://kopete.kde.org/files/kopetemessage.xsd\">the "
+"Kopete website</ulink>. This code represents one message. There are a few "
+"things to note:"
+msgstr ""
+"Ein Beispiel für den Datenstrom, den ein Programm auf der Standardeingabe "
+"empfängt: <literallayout>\n"
+"&lt;?xml version=<quote>1.0</quote> encoding=<quote>ISO-8859-1</quote>?>\n"
+"&lt;message subject=\"\"\n"
+"        route=<quote>outbound</quote>\n"
+"        importance=<quote>1</quote>\n"
+"        formattedTimestamp=<quote>11:06:46 am</quote>\n"
+"        timestamp=<quote>Sat Dec 1 11:06:46 2007</quote>\n"
+"        type=<quote>normal</quote>\n"
+"        mainContactId=<quote>spacemonkey1234</quote>\n"
+"        time=<quote>11:06 am</quote> >\n"
+"        &lt;from>\n"
+"                &lt;contact contactId=<quote>tdurden</quote>\n"
+"                        protocolIcon=<quote>aim_protocol</quote>\n"
+"                        userPhoto=<quote>/home/kde-devel/.kde4/share/apps/"
+"kopete/oscarpictures/tdurden.jpg</quote> >\n"
+"                        &lt;contactDisplayName dir=<quote>ltr</quote> "
+"text=<quote>tdurden</quote> />\n"
+"                        &lt;metaContactDisplayName dir=<quote>ltr</quote>\n"
+"                                text=<quote>Tyler</quote> />\n"
+"                &lt;/contact>\n"
+"        &lt;/from>\n"
+"        &lt;to>\n"
+"                &lt;contact contactId=<quote>spacemonkey1234</quote>\n"
+"                        protocolIcon=<quote>aim_protocol</quote>\n"
+"                        userPhoto=<quote>/home/kde-devel/.kde4/share/apps/"
+"kopete/avatars/User/7e542903e0ac7519a7496e85f5a5b99d.png</quote> >\n"
+"                        &lt;contactDisplayName dir=<quote>ltr</quote> "
+"text=<quote>spacemonkey1234</quote> />\n"
+"                        &lt;metaContactDisplayName dir=<quote>ltr</quote> "
+"text=<quote>Robert Paulson</quote> />\n"
+"                &lt;/contact>\n"
+"                &lt;/to>\n"
+"        &lt;body dir=<quote>ltr</quote>\n"
+"                bgcolor=<quote>#000000</quote>\n"
+"                color=<quote>#000000</quote> >\n"
+"                &amp;lt;span style=<quote> color:#000000;</quote>>hey&amp;"
+"lt;/span>&lt;/body>\n"
+"&lt;/message>\n"
+"</literallayout> Diese Daten im &xml;-Format basieren mehr oder weniger auf "
+"der XSD für Chatstile von der <ulink url=\"http://kopete.kde.org/files/"
+"kopetemessage.xsd\">Kopete Webseite</ulink>. Dieser Quelltext stellt eine "
+"Nachricht dar. Es gibt einige Dinge zu beachten:"
+
+#. Tag: para
+#: pipes.docbook:34
+#, no-c-format
+msgid ""
+"The \"timestamp\" attribute in the \"message\" element is in ISO 8601 "
+"standard format."
+msgstr ""
+"Das Attribut <quote>timestamp</quote> im Element <quote>message</quote> hat "
+"das Standardformat der ISO 8601."
+
+#. Tag: para
+#: pipes.docbook:35
+#, no-c-format
+msgid ""
+"The \"protocolIcon\" attribute in the \"contact\" element is chosen like "
+"this:"
+msgstr ""
+"Das Attribut <quote>protocolIcon</quote> im Element <quote>contact</quote> "
+"wird folgendermaßen bestimmt:"
+
+#. Tag: para
+#: pipes.docbook:37
+#, no-c-format
+msgid "If the Contact object has the photo property set, that path is used."
+msgstr ""
+"Ist für das Kontaktobjekt das Attribut <quote>userPhoto</quote> gesetzt, "
+"wird dieses verwendet."
+
+#. Tag: para
+#: pipes.docbook:38
+#, no-c-format
+msgid ""
+"If not, the Contact's MetaContact is asked for a picture path, and that is "
+"used regardless of being null or not."
+msgstr ""
+"Fehlt das Attribut, wird der Pfad zu einem Bild des Metakontakts für diesen "
+"Kontakt verwendet, unabhängig davon, ob dieser Pfad existiert."
+
+#. Tag: para
+#: pipes.docbook:41
+#, no-c-format
+msgid ""
+"The \"color\" and \"bgcolor\" attributes in the \"body\" element are empty "
+"strings if they are not set in Kopete. They are in web color format."
+msgstr ""
+"Die Attribute „color“ und „bgcolor“ im Element „body“ sind leere "
+"Zeichenketten, sofern in Kopete kein Wert eingesetzt wurde. Dieser Wert hat "
+"das Format für Webfarben."
+
+#. Tag: para
+#: pipes.docbook:42
+#, no-c-format
+msgid ""
+"The content inside the \"body\" element has \"&lt;\" escaped, so it is not "
+"confused with the actual &xml; structure. Obviously, to correctly interpret "
+"the body as HTML, one would have to convert the \"&amp;lt;\"s to \"&lt;\"s."
+msgstr ""
+"Im Text innerhalb des Elements „body“ ist das Zeichen „&lt;“ maskiert, da "
+"das unmaskierte Zeichen für die &xml;-Struktur verwendet wird. Um den Text "
+"korrekt als HTML zu interpretieren, muss „&amp;lt;“ in „&lt;“ umgewandelt "
+"werden."
+
+#. Tag: title
+#: pipes.docbook:48
+#, no-c-format
+msgid "&xml; Input"
+msgstr "&xml;-Eingabe"
+
+#. Tag: para
+#: pipes.docbook:49
+#, no-c-format
+msgid ""
+"Your program will receive &xml; in its standard input stream, it will have "
+"the opportunity to modify it, and then it must hand it back to &kopete; by "
+"way of its standard output stream. If your program modifies the following "
+"elements, the internal knowledge that &kopete; has of the message will be "
+"modified to reflect your changes. <itemizedlist> <listitem><para>\"message\" "
+"attribute \"timestamp\" but not other time attributes</para></listitem> "
+"<listitem><para>\"message\" attribute \"subject\"</para></listitem> "
+"<listitem><para>\"message\" attribute \"type\"</para></listitem> "
+"<listitem><para>\"message\" attribute \"importance\"</para></listitem> "
+"<listitem><para>\"body\" attribute \"color\". This is usually set to a web "
+"color number, but can be set to a name. The names defined by <ulink url="
+"\"http://www.w3.org/TR/SVG/types.html#ColorKeywords\">SVG</ulink> are "
+"accepted by QColor in Qt 4, so they are the only names that may be used.</"
+"para></listitem> <listitem><para>\"body\" attribute \"bgcolor\" &mdash; same "
+"behaviour as \"color\"</para></listitem> <listitem><para>content of element "
+"\"body\"</para></listitem> </itemizedlist> If you modify elements or their "
+"attributes not mentioned above, your changes to those elements will have no "
+"effect."
+msgstr ""
+"Ihr Programm empfängt &xml;-Daten auf der Standardeingabe, kann sie "
+"bearbeiten und die Daten wieder auf der Standardausgabe an &kopete; "
+"übergeben. Wenn Ihr Programm fogende Elemente verändert, wird das von "
+"&kopete; verarbeitet: <itemizedlist> <listitem><para>Attribut „timestamp“ im "
+"Element „message“, aber keine anderen Attribute für Datum</para></listitem> "
+"<listitem><para>Attribut „subject“ im Element „message“</para></listitem> "
+"<listitem><para>Attribut „type“ im Element „message“</para></listitem> "
+"<listitem><para>Attribut „importance“ im Element „message“</para></listitem> "
+"<listitem><para>Attribut „color“ im Element „body“. Dieses Attribut enthält "
+"normalerweise die Nummer einer Webfarbe, es können aber auch Namen für "
+"Farben benutzt werden. <ulink url=\"http://www.w3.org/TR/SVG/types."
+"html#ColorKeywords\">SVG</ulink>-Namen werden von der Funktion QColor in Qt "
+"4 korrekt verarbeitet, daher sollten nur diese Bezeichnungen vewendet werden."
+"</para></listitem> <listitem><para>„body“ Attribut „bgcolor“ im Element "
+"„body“ &mdash; hier gelten die gleichen Regeln wie für das Attribut „color“</"
+"para></listitem> <listitem><para>Inhalt des Elements „body“</para></"
+"listitem> </itemizedlist> Die Veränderung von hier nicht genannten Elementen "
+"und ihrer Attribute werden von Kopete nicht berücksichtigt und verworfen."
+
+#. Tag: title
+#: pipes.docbook:65
+#, no-c-format
+msgid "Acceptable Values"
+msgstr "Zulässige Werte"
+
+#. Tag: para
+#: pipes.docbook:66
+#, no-c-format
+msgid ""
+"Some attributes have certain acceptable values. The Pipes plugin's output "
+"will always have legal values. If your program chooses to change these "
+"attributes, they must remain legal. If not, &kopete;'s behavior is undefined."
+msgstr ""
+"Für einige Attribute sind nur bestimmte Werte erlaubt. In der Ausgabe des "
+"Moduls „Umleitung“ sind nur zulässige Werte enthalten. Wenn diese Werte im "
+"Programm geändert werden, müssen sie immer noch gültig bleiben. Anderfalls "
+"ist das Verhalten von &kopete; nicht definiert."
+
+#. Tag: term
+#: pipes.docbook:69
+#, no-c-format
+msgid "Attribute \"route\" in element \"message\""
+msgstr "Attribut <quote>route</quote> im Element <quote>message</quote>"
+
+#. Tag: para
+#: pipes.docbook:69
+#, no-c-format
+msgid "Must be \"inbound\", \"outbound\", or \"internal\""
+msgstr ""
+"Zulässige Werte: <quote>inbound</quote>, <quote>outbound</quote>, oder "
+"<quote>internal</quote>"
+
+#. Tag: term
+#: pipes.docbook:70
+#, no-c-format
+msgid "Attribute \"type\" in element \"message\""
+msgstr "Attribute <quote>type</quote> im Element <quote>message</quote>"
+
+#. Tag: para
+#: pipes.docbook:70
+#, no-c-format
+msgid "Must be \"action\" or \"normal\""
+msgstr "Zulässige Werte: <quote>action</quote> oder <quote>normal</quote>"
+
+#. Tag: term
+#: pipes.docbook:71
+#, no-c-format
+msgid "Attribute \"importance\" in element \"message\""
+msgstr "Attribut <quote>importance</quote> im Element <quote>message</quote>"
+
+#. Tag: para
+#: pipes.docbook:71
+#, no-c-format
+msgid "Must be \"0\" for low, \"1\" for normal, and \"2\" for high"
+msgstr ""
+"Zulässige Werte: <quote>0</quote> für niedrig, <quote>1</quote> für normal "
+"und <quote>2</quote> für hoch"
+
+#. Tag: term
+#: pipes.docbook:72
+#, no-c-format
+msgid "Attribute \"dir\" in many elements"
+msgstr "Attribut <quote>dir</quote> in vielen Elementen"
+
+#. Tag: para
+#: pipes.docbook:72
+#, no-c-format
+msgid "Must be \"ltr\" for left-to-right or \"rtl\" for right-to-left"
+msgstr ""
+"Zulässige Werte: <quote>ltr</quote> für Schriften, die von links nach rechts "
+"geschrieben werden und <quote>rtl</quote> für Schriften, die von rechts nach "
+"links geschrieben werden"

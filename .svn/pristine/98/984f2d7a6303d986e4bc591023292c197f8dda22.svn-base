@@ -1,0 +1,384 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: index.docbook:10
+#, no-c-format
+msgid "Nepomuk Desktop Search Configuration"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:13
+#, no-c-format
+msgid ""
+"<firstname>Sebastian</firstname><surname>Trueg</surname><email>"
+"trueg@kde.org</email>"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:14
+#, no-c-format
+msgid "&Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:15
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+
+#. Tag: date
+#: index.docbook:18
+#, no-c-format
+msgid "2013-11-01"
+msgstr ""
+
+#. Tag: releaseinfo
+#: index.docbook:19
+#, no-c-format
+msgid "&kde; 4.12"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:22
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:23
+#, no-c-format
+msgid "KControl"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:24
+#, no-c-format
+msgid "nepomuk"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:25
+#, no-c-format
+msgid "desktop search"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:32
+#, no-c-format
+msgid "Introduction"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:34
+#, no-c-format
+msgid ""
+"This module allows to configure certain parts of the desktop search and the "
+"Nepomuk semantic desktop. More information about the Nepomuk semantic desktop "
+"can be found at the <ulink url=\"http://nepomuk.kde.org/\">"
+"Nepomuk homepage</ulink>."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:38
+#, no-c-format
+msgid "Basic Settings"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:40
+#, no-c-format
+msgid ""
+"The basic settings tab allows to enable or disable the semantic desktop and "
+"desktop search systems."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:42
+#, no-c-format
+msgid "There are three checkboxes:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:44
+#, no-c-format
+msgid ""
+"<guilabel>Enable Nepomuk Semantic Desktop</guilabel> "
+"Enabling the Nepomuk semantic desktop means that the Nepomuk services are "
+"running. These services provide metadata/annotation storage (files can be "
+"tagged or rated in &dolphin; for example) but also desktop search which can be "
+"used through the &kde; runner or again &dolphin;."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:47
+#, no-c-format
+msgid ""
+"<guilabel>Enable Nepomuk File Indexer</guilabel> Enabling the nepomuk file "
+"indexer means that the file indexer service is started in addition to the "
+"standard services already running. The file indexer service will run through "
+"all files in the configured folders (see below) and extract metadata from them "
+"(such as title or artist on music files or even simple things like the creation "
+"date). This metadata is then exposed through the desktop search just like the "
+"manual annotations mentioned earlier."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:52
+#, no-c-format
+msgid ""
+"<guilabel>Enable PIM Data Indexer</guilabel> This option has to be checked to "
+"allow full text search in &kmail;."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:56
+#, no-c-format
+msgid ""
+"On the right of <guilabel>Enable Nepomuk Semantic Desktop</guilabel> "
+"you can click on <guilabel>Details...</guilabel> and a dialog will inform you "
+"on the status of the KDE metadata store: how many files are indexed and the "
+"size of the store."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:59
+#, no-c-format
+msgid ""
+"Under the <guilabel>Enable Nepomuk File Indexer</guilabel> "
+"checkbox the current status of the file indexing service is shown. The service "
+"has four normal operation states:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:62
+#, no-c-format
+msgid ""
+"<guilabel>File indexer is idle</guilabel> - The file indexer is currently not "
+"working and waiting for an event to trigger an update (an event can be a newly "
+"created file or a changed file or a timeout for the recurring full check)"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:64
+#, no-c-format
+msgid ""
+"<guilabel>Indexing files in folder foobar</guilabel> "
+"- The file indexer is currently running though all files in folder foobar and "
+"analyzes new or changed files."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:66
+#, no-c-format
+msgid ""
+"<guilabel>Scanning for recent changes in files for desktop search</guilabel> "
+"- The file indexer is currently performing its recurring check for new files in "
+"all index folders. This check is intended to find files that were not caught "
+"through normal file system monitoring."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:69
+#, no-c-format
+msgid ""
+"<guilabel>File indexer is suspended</guilabel> - The file indexer has been "
+"suspended, &ie; it is in a paused state. This can either be triggered by the "
+"user or due to low disk space or a laptop being in a power-saving state. In the "
+"two latter cases the indexer will resume once the reason for the suspension has "
+"been resolved."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:74
+#, no-c-format
+msgid ""
+"Apart from the normal operation states the indexer service can have an "
+"erroneous state. There are two possibilities:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:76
+#, no-c-format
+msgid ""
+"<guilabel>File indexing service failed to initialize, most likely due to an "
+"installation problem</guilabel> - This should rarely occur that means that a "
+"mandatory plugin could not be loaded. This can be due to an installation "
+"problem (missing dependency) or due to a faulty setup of the &kde; plugin "
+"system."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:79
+#, no-c-format
+msgid ""
+"Any other error means a communication problem with the service. These errors "
+"are produced by the &DBus; subsystem and need to be evaluated case by case."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:86
+#, no-c-format
+msgid "Indexing"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:88
+#, no-c-format
+msgid ""
+"This tab allows to select the files and folders that are to be analyzed by the "
+"file indexer explained above. By default Documents, Audio, Images and Videos "
+"are selected here."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:92
+#, no-c-format
+msgid ""
+"Click the <guibutton>Customize Folders</guibutton> button to select and "
+"de-select folders that should be searched for files to be analyzed. By default "
+"the home folder and all subfolders are analyzed. By simply unchecking a folder "
+"it can be excluded. It is also possible to include a subfolder of an excluded "
+"one by checking it again. This allows a rather fine selection of the folders to "
+"be analyzed."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:97
+#, no-c-format
+msgid ""
+"Clicking the <guibutton>Advanced</guibutton> button allows to define exclude "
+"filters using the mime type or the name of a file. The mime types and names of "
+"all files found in the configured folders will be matched against these "
+"filters. Only if none of them matches the file will be analyzed. This is very "
+"helpful to exclude log and backup files and the like."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:101
+#, no-c-format
+msgid ""
+"<guilabel>Removable media handling</guilabel>: Nepomuk can index files on "
+"removable devices like USB keys or external hard-disks for fast desktop "
+"searches. By default no files are indexed. Here this behaviour can be changed "
+"to one of two options:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:104
+#, no-c-format
+msgid ""
+"<guilabel>Index files on all removable devices</guilabel> "
+"- Files on removable media are indexed as soon as the medium is mounted. "
+"Caution: this does not include media which have been rejected via the second "
+"option"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:106
+#, no-c-format
+msgid ""
+"<guilabel>Ask individually when newly mounted</guilabel> "
+"- The user will be asked to decide if files on the newly mounted medium should "
+"be indexed or not. Once decided Nepomuk will not ask again."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:112
+#, no-c-format
+msgid "Backup"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:114
+#, no-c-format
+msgid ""
+"On this tab you can decide to make a backup of all data that could not be "
+"restored otherwise. This includes manually created tags, ratings but also "
+"statistical data. No backup is done as default so you need to decide what you "
+"want to do. You have two possibilities: automatic backups and manual ones."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:119
+#, no-c-format
+msgid "Automatic Backups"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:120
+#, no-c-format
+msgid ""
+"First choose the <guilabel>Backup Frequency</guilabel>"
+": this is set to <guilabel>Disable Automatic Backups</guilabel> "
+"but you can choose <guilabel>Daily Backup</guilabel> or <guilabel>"
+"Weekly Backup</guilabel>. Then set the <guilabel>Backup Time:</guilabel> "
+"to anything convenient for you using the spinbox: you can set the hour and "
+"minutes and the day of the week for weekly backups. Finally you can set a limit "
+"for the number of backup files using <guilabel>Max Number of Backups:</guilabel>"
+". This will ensure you do not waste disk space with the backup files and only "
+"the N last files will be kept, N being the number you set there, 10 as default."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:127
+#, no-c-format
+msgid ""
+"Your automatic backups are saved locally in the following directory: <filename "
+"class=\"directory\">$KDEHOME/share/apps/nepomuk/backupsync/backups/</filename>."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:132
+#, no-c-format
+msgid "Tools"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:134
+#, no-c-format
+msgid ""
+"<guilabel>Manual Backup...</guilabel> You can also perform manual backups. "
+"Manual backups will be saved in your chosen location, as a file. Click on "
+"<guilabel>Manual Backup...</guilabel> and a wizard will guide you. You first "
+"need to point to the location of the backup file. Enter a full valid path in "
+"the field or use the file dialog to point to a file."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:138
+#, no-c-format
+msgid ""
+"You can create a new file in the folder of your choice and then point to this "
+"new file."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:139
+#, no-c-format
+msgid ""
+"Then click on the <guibutton>Next</guibutton> button and the dialog should "
+"report that the backup has been done."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:141
+#, no-c-format
+msgid ""
+"<guilabel>Restore Backup...</guilabel> If you want to later restore your "
+"backup, use this button and follow the wizard. The backup will be merged into "
+"the local Nepomuk database."
+msgstr ""

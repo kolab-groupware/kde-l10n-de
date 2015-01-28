@@ -1,0 +1,171 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2013.
+# Frederik Schwarzer <schwarzer@kde.org>, 2009.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
+# Benjamin Weis <benjamin.weis@gmx.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_systemloadviewer\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-11-05 05:28+0000\n"
+"PO-Revision-Date: 2013-10-24 20:37+0200\n"
+"Last-Translator: Benjamin\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, coloursConfig)
+#: coloursconfig.ui:14
+msgid "Colors"
+msgstr "Farben"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: coloursconfig.ui:26
+msgid "Background"
+msgstr "Hintergrund"
+
+#. i18n: ectx: property (text), widget (QLabel, lblSwapUsed_2)
+#: coloursconfig.ui:49
+msgid "Color:"
+msgstr "Farbe:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: coloursconfig.ui:88
+msgid "Translucency:"
+msgstr "Durchsichtigkeit:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: coloursconfig.ui:120
+msgid "CPU"
+msgstr "Prozessor"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: coloursconfig.ui:127
+msgid "Nice:"
+msgstr "Nice:"
+
+#. i18n: ectx: property (text), widget (QLabel, lblUser)
+#: coloursconfig.ui:164
+msgid "User:"
+msgstr "Benutzer:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: coloursconfig.ui:207
+msgid "IOWait:"
+msgstr "IOWait:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: coloursconfig.ui:244
+msgid "System:"
+msgstr "System:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: coloursconfig.ui:303
+msgid "Memory"
+msgstr "Speicher"
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: coloursconfig.ui:310
+msgid "Buffers:"
+msgstr "Puffer:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: coloursconfig.ui:347
+msgid "Cached:"
+msgstr "Zwischengespeichert:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#. i18n: ectx: property (text), widget (QLabel, lblSwapUsed)
+#: coloursconfig.ui:384 coloursconfig.ui:450
+msgid "Used:"
+msgstr "Belegt:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: coloursconfig.ui:443
+msgid "Swap"
+msgstr "Auslagerungsspeicher"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, generalConfig)
+#: generalconfig.ui:14
+msgid "General Config"
+msgstr "Allgemeine Einstellungen"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: generalconfig.ui:20
+msgid "Show vertically in panel:"
+msgstr "In Kontrollleiste vertikal anzeigen:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: generalconfig.ui:40
+msgid "Show usage of all processors:"
+msgstr "Auslastung aller Prozessoren anzeigen:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: generalconfig.ui:60
+msgid "Update interval:"
+msgstr "Aktualisierungsintervall:"
+
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, spbxUpdateInterval)
+#: generalconfig.ui:73
+msgid " ms"
+msgstr " ms"
+
+#: systemloadviewer.cpp:333
+msgctxt "@title:group General options"
+msgid "General"
+msgstr "Allgemein"
+
+#: systemloadviewer.cpp:334
+msgctxt "@title:group"
+msgid "Colors"
+msgstr "Farben"
+
+#: systemloadviewer.cpp:656
+#, kde-format
+msgid "CPU %1 Usage: %2% at %3 MHz<br />"
+msgstr "CPU-%1-Auslastung: %2 % bei %3 MHz<br />"
+
+#: systemloadviewer.cpp:659
+#, kde-format
+msgid "CPU %1 Usage: %2%<br />"
+msgstr "CPU-%1-Auslastung: %2 %<br />"
+
+#: systemloadviewer.cpp:666
+#, kde-format
+msgid "CPU Usage: %1% at %2 MHz/CPU<br />"
+msgstr "CPU-Auslastung: %1 % bei %2 MHz/CPU<br />"
+
+#: systemloadviewer.cpp:669
+#, kde-format
+msgid "CPU Usage: %1% at %2 MHz<br />"
+msgstr "CPU-Auslastung: %1 % bei %2 MHz<br />"
+
+#: systemloadviewer.cpp:673
+#, kde-format
+msgid "CPU Usage: %1%<br />"
+msgstr "CPU-Auslastung: %1 %<br />"
+
+#: systemloadviewer.cpp:680
+#, kde-format
+msgid "Ram Usage: %1% of %2 MiB<br />"
+msgstr "RAM-Belegung: %1 % von %2 MiB<br />"
+
+#: systemloadviewer.cpp:686
+#, kde-format
+msgid "Swap Usage: %1% of %2 MiB"
+msgstr "Auslagerungsspeicher-Belegung: %1 % von %2 MiB"
+
+#: systemloadviewer.cpp:688
+msgctxt "not available means the system does not have swap"
+msgid "Swap: not available"
+msgstr "Auslagerungsspeicher: nicht verfügbar"
+
+#: systemloadviewer.cpp:691
+msgid "System Load Viewer"
+msgstr "Systemlastanzeige"
+
+#~ msgid "Apperance"
+#~ msgstr "Erscheinungsbild"

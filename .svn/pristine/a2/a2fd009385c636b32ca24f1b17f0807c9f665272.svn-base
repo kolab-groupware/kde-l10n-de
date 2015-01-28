@@ -1,0 +1,562 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: widgets.docbook:5 widgets.docbook:20
+#, no-c-format
+msgid "Widgets"
+msgstr ""
+
+#. Tag: author
+#: widgets.docbook:7
+#, no-c-format
+msgid "<firstname></firstname> <surname></surname>"
+msgstr ""
+
+#. Tag: trans_comment
+#: widgets.docbook:15
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:22
+#, no-c-format
+msgid ""
+"The building blocks of a &kommander; dialog are the widgets. They are like any "
+"other widget in the &Qt; and &kde; libraries except they have some extra "
+"functionality that allows them to have a <quote>text association</quote>"
+". Text is associated with a state of the widget or its populate slot. The "
+"number of states depends on the widget. If a widget only has one state, that "
+"state is called default."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:26
+#, no-c-format
+msgid "Widget text blah blah"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:28
+#, no-c-format
+msgid ""
+"The dialog has two special states for &kommander; text. They are Initiate and "
+"Destroy. These are run when the dialog is initialized and when it is destroyed. "
+"These protect against what is know as <quote>race</quote> "
+"problems on open and mean that you do not require any special procedures on "
+"close to manage housekeeping."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:36
+#, no-c-format
+msgid "ButtonGroup"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:40
+#, no-c-format
+msgid ""
+"A container to organize buttons into a group. An optional title can be set "
+"using the title property. The frame can be adjusted with the lineWidth "
+"property. The button group can be set to exclusive by setting the exclusive "
+"property to true. This means when one toggle button is clicked all other toggle "
+"buttons will be set to off with the exception of radio buttons that are always "
+"mutual exclusive even if the group is non-exclusive. Radio buttons can be set "
+"to non-exclusive using the radioButtonExclusive property. (I am not so sure "
+"that this property actually works.)"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:43
+#, no-c-format
+msgid "ButtonGroup has one state, default."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:44
+#, no-c-format
+msgid ""
+"The widget text for a ButtonGroup is the text associations for each of the "
+"buttons in the order they appear in the ButtonGroup."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:54
+#, no-c-format
+msgid "CheckBox"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:58
+#, no-c-format
+msgid ""
+"A button that can be checked on and off. It can also be semi-checked if the "
+"tristate property is set to true. The label associated with the CheckBox is set "
+"in the text property. Setting the checked property will have the CheckBox "
+"initially checked."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:61
+#, no-c-format
+msgid "A CheckBox has 3 states, checked, semichecked, and unchecked."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:64
+#, no-c-format
+msgid "The widget text for a CheckBox is the value from the text property."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:74
+#, no-c-format
+msgid "CloseButton"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:78
+#, no-c-format
+msgid ""
+"A button that when clicked, executes its text association and then closes the "
+"dialog. The label on the button is set with the text property. Output from the "
+"text association (how to say that) will be echoed to stdout if the writeStdout "
+"property is set to true. The button can be the default action for the dialog if "
+"the default property is set to true."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:81
+#, no-c-format
+msgid "CloseButton has one state, default."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:84
+#, no-c-format
+msgid "There isn't any widget text associated with a CloseButton."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:94
+#, no-c-format
+msgid "ComboBox"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:98
+#, no-c-format
+msgid ""
+"ComboBox is a selection widget that combines a button and a pop-up menu. It "
+"shows the user's current choice from a list of options in minimal space. Items "
+"are added to the list using the edit window. If the editable property is set to "
+"true the user can enter arbitrary strings."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:101
+#, no-c-format
+msgid "ComboBox has one state, default."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:104
+#, no-c-format
+msgid "The widget text for a ComboBox is the text of the selected item."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:114
+#, no-c-format
+msgid "ExecButton"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:118
+#, no-c-format
+msgid ""
+"A button that when clicked executes its text association. The label on the "
+"button is set with the text property. Output from the text association (how to "
+"say that) will be echoed to stdout if the writeStdout property is set to true. "
+"The button can be the default action for the dialog if the default property is "
+"set to true."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:121
+#, no-c-format
+msgid "ExecButton has one state, default."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:124
+#, no-c-format
+msgid "There isn't widget text associated with ExecButton."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:134
+#, no-c-format
+msgid "FileChooser"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:138
+#, no-c-format
+msgid ""
+"The FileChooser widget combines a LineEdit with a button when clicked will "
+"present the user with dialog for the selection of files/folders. The "
+"file/folder selected is stored in the LineEdit. The type of the FileChooser is "
+"set with the selectionType property. Available types are Open, Save, and "
+"Directory. Multiple files/folders can be selected if the selectionOpenMutliple "
+"property is set to true. A caption for the FileChooser can be set with the "
+"selectionCaption property. This is display as the window title of the dialog. "
+"If a caption isn't specified, the type of selection will be display in the "
+"title. The files displayed in the dialog can be limited using the "
+"selectionFilter property."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:141
+#, no-c-format
+msgid "FileChooser has one state, default."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:144
+#, no-c-format
+msgid ""
+"The widget text for a FileChooser is the text contained in the LineEdit (the "
+"file chosen by the user)."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:154
+#, no-c-format
+msgid "GroupBox"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:158
+#, no-c-format
+msgid ""
+"A container widget that holds other widgets. The frame is adjusted with the "
+"lineWidth property. A title can be added by setting the title property."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:161
+#, no-c-format
+msgid "GroupBox has one state, default."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:164
+#, no-c-format
+msgid ""
+"The widget text for GroupBox is the text associations of each of the widgets it "
+"contains combined. They will be in the order they appear inside of the "
+"GroupBox."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:174
+#, no-c-format
+msgid "LineEdit"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:178
+#, no-c-format
+msgid ""
+"A LineEdit widget is a one line text editor. It allows the user to enter and "
+"modify a single line of text. Initial text for the editor can be set in the "
+"text property. The widget can be set to read-only with the readOnly property. "
+"There are 3 modes for the widget, Normal, NoEcho, and Password. The mode is set "
+"with the echoMode property."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:181
+#, no-c-format
+msgid "LineEdit has one state, default."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:184
+#, no-c-format
+msgid "The widget text for LineEdit is the text contained in the editor."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:194
+#, no-c-format
+msgid "ListBox"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:198
+#, no-c-format
+msgid ""
+"A ListBox widget provides a list of selectable items. Normally one or no items "
+"are selected. This behavior can be changed with the selectionMode property. "
+"Items are added to the ListBox using the edit window."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:201
+#, no-c-format
+msgid "A ListBox has only 1 state, default."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:204
+#, no-c-format
+msgid ""
+"The widget text for a ListBox is the items contained in the ListBox. "
+"@selectedWidgetText will return only the items that are currently selected."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:214
+#, no-c-format
+msgid "ListView"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:218
+#, no-c-format
+msgid ""
+"This widget is now &kommander; enabled. It is functionally the same as the tree "
+"widget so please reference that."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:228
+#, no-c-format
+msgid "PixmapLabel"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:232
+#, no-c-format
+msgid ""
+"A simple widget that contains an image or text label. The pixmap to display is "
+"set in the pixmap property. The text is set in the text property. Only one of "
+"these properties can be set at the same time (I think, I can't get the editor "
+"to set both at the same time). If scaledContents is set to true the image will "
+"be scaled to fit the size of the widget. The format of the text can be set with "
+"the textFormat property."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:235
+#, no-c-format
+msgid ""
+"This widget isn't &kommander; enabled and doesn't have any states or widget "
+"text."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:245
+#, no-c-format
+msgid "RadioButton"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:249
+#, no-c-format
+msgid ""
+"A button that can be checked or unchecked, usually used in the ButtonGroup to "
+"make an exclusive choice. A label associated with the button can be set in the "
+"text property. A button can be initialized to checked by setting the checked "
+"property to true. If all RadioButtons in a ButtonGroup have the checked "
+"property set to true, then the last button will be the one that is checked."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:252
+#, no-c-format
+msgid "RadioButton has 2 states checked and unchecked."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:255
+#, no-c-format
+msgid "There is no widget text associated with a RadioButton."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:265
+#, no-c-format
+msgid "RichTextEditor"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:269
+#, no-c-format
+msgid ""
+"This widget provides a text editor that allows for simple text formatting."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:272
+#, no-c-format
+msgid "RichTextEditor has one state, default."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:275
+#, no-c-format
+msgid ""
+"The widget text for RichTextEditor is the text contained in the editor in rich "
+"text format. Selected text can be returned with @selectedWidgetText."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:285
+#, no-c-format
+msgid "SpinBoxInt"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:289
+#, no-c-format
+msgid ""
+"A widget that allows the user to change a integer value by either press up and "
+"down arrows or entering a value into the box. Minimum and maximum values for "
+"the widget can be set with the minValue and maxValue properties. The "
+"specialValueText property is used to set a text value that will be displayed "
+"instead of the minimum value."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:292
+#, no-c-format
+msgid "This widget has only one state, default."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:295
+#, no-c-format
+msgid "The widget text for a SpinBoxInt is the currently displayed integer."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:305
+#, no-c-format
+msgid "SubDialog"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:309
+#, no-c-format
+msgid ""
+"A button that runs another &kommander; dialog when pressed. The dialog to run "
+"is set in the kmdrFile property. If the default property is set to true, the "
+"dialog will be run if enter is pressed while the dialog has focus. I think that "
+"you can also use it as a container. I need to play with this some more."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:312
+#, no-c-format
+msgid "SubDialog has one state, default."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:315
+#, no-c-format
+msgid ""
+"The widget text for SubDialog is the text association of the dialog it "
+"executes."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:318
+#, no-c-format
+msgid ""
+"This was meant to contain the dialog, which is deprectaed with the new project "
+"concept. Should we leave it with <function>@dialog()</function> "
+"in its &kommander; text or get rid of it? As it is it is not right."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:326
+#, no-c-format
+msgid "TabWidget"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:330
+#, no-c-format
+msgid "A widget that provides multiple tabs each may contain other widgets."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:340
+#, no-c-format
+msgid "TextEdit"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:344
+#, no-c-format
+msgid "A simple multi-line text editor."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:354
+#, no-c-format
+msgid "TextLabel"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:358
+#, no-c-format
+msgid ""
+"A simple widget that contains a piece of text. This widget lets you set a "
+"pixmap too. OK, the editor says that they are both QLabels. Why do we have 2 "
+"widgets that look to be the same thing, but different names? - Scheduled to be "
+"fixed in A7."
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:361
+#, no-c-format
+msgid ""
+"As of Alpha 6 this widget is partially enabled and can be set using external "
+"DCOP calls."
+msgstr ""
+
+#. Tag: term
+#: widgets.docbook:371
+#, no-c-format
+msgid "TreeWidget"
+msgstr ""
+
+#. Tag: para
+#: widgets.docbook:375
+#, no-c-format
+msgid ""
+"A widget that provides a list in the form of a tree structure. This widget is "
+"now fully enabled to add or remove items as of Alpha 6. You can add child items "
+"and multi-column data. The current limitation is that you cannot modify "
+"columns. To add a child node use <quote>/</quote> as a separator. To add column "
+"data use the escaped tab <quote>\\t</quote> character between columns."
+msgstr ""

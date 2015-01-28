@@ -1,0 +1,316 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE">
+]>
+<book id="pairseditor" lang="&language;">
+<bookinfo>
+<title
+>Das Handbuch zu Pairs-Editor</title>
+<authorgroup>
+<author>
+<personname
+><firstname
+>Dieses Handbuch wurde aus der <ulink url=" http://userbase.kde.org/Pairs/Editor"
+>Pairs/Editor</ulink
+>-Webseite der &kde;-Userbase erstellt.</firstname
+> <surname
+></surname
+> </personname>
+      </author>
+<othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+      </authorgroup>
+<legalnotice
+>&FDLNotice;</legalnotice>
+<date
+>2012-12-30</date>
+      <releaseinfo
+>1.0.0 (&kde; SC 4.10)</releaseinfo>
+<abstract>
+<para
+><application
+>Pairs</application
+>-Editor ist Bestandteil des Projekts <application
+>Pairs</application
+>. Mit dieser Anwendung können Designs für <application
+>Pairs</application
+> erstellt und bearbeitet werden.</para>
+      </abstract>
+      <keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Pairs</keyword>
+<keyword
+>Lernprogramme</keyword>
+<keyword
+>Klang</keyword>
+<keyword
+>Bild</keyword>
+<keyword
+>Design</keyword>
+<keyword
+>Editor</keyword>
+</keywordset>
+</bookinfo>
+<!--userbase <timestamp
+>2012-12-30T14:09:02Z</timestamp
+>-->
+
+<!--userbase-content-->
+<chapter id="pairs-editor"
+><title
+>Pairs-Editor</title>
+<para
+><application
+>Pairs</application
+>-Editor ist Bestandteil des Projekts <application
+>Pairs</application
+>. Mit dieser Anwendung können Designs für <application
+>Pairs</application
+> erstellt und bearbeitet werden. </para>
+<para>
+<screenshot>
+<screeninfo
+></screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="pairseditor.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+></phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+<sect1 id="main-toolbar"
+><title
+>Haupt-Werkzeugleiste</title>
+<para
+>In der Werkzeugleiste gibt es fünf Knöpfe, deren Größe und Text geändert werden kann. </para>
+<sect2 id="new"
+><title
+>Neu</title>
+<para
+>Mit diesem Knopf wird ein neues Design erstellt. </para>
+</sect2>
+<sect2 id="open"
+><title
+>Öffnen</title>
+<para
+>Mit diesem Knopf kann eine vorhandenes Design geöffnet werden. </para>
+</sect2>
+<sect2 id="save-save-as"
+><title
+>Speichern / Speichern unter</title>
+<para
+>Mit diesen beiden Knöpfen wird ein erstelltes oder geändertes Design gespeichert. </para>
+</sect2>
+<sect2 id="try"
+><title
+>Ausprobieren</title>
+<para
+>Dieser Knopf kann dazu verwendet werden, das bearbeitete Design auszuprobieren. Das Programm <application
+>Pairs</application
+> wird mit dem geöffneten Design gestartet. </para>
+</sect2>
+</sect1>
+<sect1 id="creating-a-new-theme"
+><title
+>Erstellung eines neuen Designs</title>
+<para
+>Ein neues Design zu erstellen ist recht einfach und erfordert folgende Schritte: </para>
+<itemizedlist>
+<listitem
+><para
+>Eingabe von Titel, Beschreibung, Autor, Datum und Version für das Design.</para
+></listitem>
+<listitem
+><para
+>Der <guilabel
+>Haupttyp</guilabel
+> beschreibt die Art des Designs. Der Typ <guilabel
+>Bild</guilabel
+> zum Beispiel wird für ein Design aus Bilderpaaren verwendet.</para
+></listitem>
+<listitem
+><para
+>Fügen Sie ein Bild für die Rückseite hinzu. Dieses Bild wird in <application
+>Pairs</application
+> auf der Rückseite der Karten angezeigt.</para
+></listitem>
+</itemizedlist>
+<para>
+<screenshot>
+<screeninfo
+></screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="pairseditor1.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+></phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+<itemizedlist>
+<listitem
+><para
+>Mit <inlinemediaobject
+> <imageobject
+> <imagedata fileref="Icon-list-add.png" format="PNG"/> </imageobject
+> </inlinemediaobject
+> werden Elemente zum Design hinzugefügt. Diesen Elementen weisen Sie dann Bilder, Wörter oder Klänge zu. Elemente definieren die Beziehung zwischen zwei Bildern, Wörtern oder Klängen. Fügen Sie zum Beispiel zwei Bilder zu einem Element hinzu, wird daraus ein Paar. Das gilt ebenso für zwei Klänge oder zwei Wörter und sogar für einen Klang und ein Bild.</para
+></listitem>
+</itemizedlist>
+<para>
+<screenshot>
+<screeninfo
+></screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="pairseditor2.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+></phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+<itemizedlist>
+<listitem
+><para
+>Fügen Sie einen <guilabel
+>Treffer-Klang</guilabel
+> hinzu. Dieser Klang wird abgespielt, wenn passende Paare in <application
+>Pairs</application
+> aufgedeckt werden. Für jedes Element gibt es nur einen Klang für diese Aktion.</para
+></listitem>
+</itemizedlist>
+<para>
+<screenshot>
+<screeninfo
+></screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="pairseditor3.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+></phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+<itemizedlist>
+<listitem
+><para
+>Fügen Sie weitere Elemente hinzu. Damit wird die Anzahl der Paare im Spiel vergrößert und das Spiel interessanter und schwieriger.</para
+></listitem>
+</itemizedlist>
+<para>
+<screenshot>
+<screeninfo
+></screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="pairseditor4.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+></phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+<itemizedlist>
+  <listitem
+><para
+>Nach diesen Schritten speichern Sie Ihr Design und drücken auf den Knopf <guilabel
+>Ausprobieren</guilabel
+>. Dann wird <application
+>Pairs</application
+> mit Ihrem geöffneten Design gestartet.</para
+></listitem>
+</itemizedlist>
+<para>
+<informaltable>
+  <tgroup cols="2">
+  <tbody>
+  <row>
+<entry>
+<para>
+<screenshot>
+<screeninfo
+></screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="pairseditor5.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+></phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry>
+<para>
+<screenshot>
+<screeninfo
+></screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="pairseditor6.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+></phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+</entry>
+  </row>
+  </tbody>
+  </tgroup>
+</informaltable>
+</para>
+</sect1>
+</chapter>
+
+<!--userbase-content-->
+<chapter id="credits">
+<title
+>Danksagungen und Lizenz</title>
+      <para
+>Copyright der Dokumentation: siehe <ulink url="http://userbase.kde.org/index.php?title=Pairs/Editor&amp;action=history"
+>Versionsgeschichte der Pairs/Editor-Seite</ulink
+></para>
+      <para
+>Übersetzung Burkhard Lück<email
+>lueck@hube-lueck.de</email
+></para
+> 
+&underFDL; </chapter>
+&documentation.index;
+</book>

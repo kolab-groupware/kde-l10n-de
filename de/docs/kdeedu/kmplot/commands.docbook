@@ -1,0 +1,301 @@
+<chapter id="commands">
+<title
+>Befehlsreferenz</title
+> 
+
+<sect1 id="menu">
+<title
+>Menüeinträge</title>
+
+<para
+>Außer den bekannten &kde;-Menüeinträgen, die im Kapitel <ulink url="help:/fundamentals/ui.html#menus"
+>Menüs</ulink
+> der &kde;-Grundlagen beschrieben werden, gibt es folgende spezielle Menüeinträge für &kmplot;: </para>
+
+<sect2 id="a-file-menu">
+	<title
+>Das Menü Datei</title>
+	<variablelist>
+		
+		<varlistentry>
+			<term>
+				<menuchoice
+><guimenu
+>Datei</guimenu
+> <guimenuitem
+>Exportieren ...</guimenuitem
+></menuchoice
+></term>
+			<listitem
+><para
+><action
+>Exportiert</action
+> den gezeichneten Graphen in eine Bilddatei in allen von &kde; unterstützten Grafikformaten.</para
+></listitem>
+		</varlistentry>
+		
+	</variablelist>
+</sect2>
+
+<sect2 id="a-edit-menu">
+	<title
+>Das Menu Bearbeiten</title>
+	<variablelist>
+		<varlistentry>
+			<term
+><menuchoice
+><guimenu
+>Bearbeiten</guimenu
+> <guimenuitem
+>Konstanten ...</guimenuitem
+> </menuchoice
+></term>
+			<listitem
+><para
+>Öffnet den Dialog <guilabel
+>Konstanten</guilabel
+>. Siehe <xref linkend="constants-config"/>. </para>
+			</listitem>
+		</varlistentry>
+	</variablelist>
+</sect2>
+
+<sect2 id="a-view-menu">
+	<title
+>Das Menü Ansicht</title>
+	<para
+>Die ersten drei Einträge in diesem Menü ändern den Zoom-Modus.</para>
+	
+	<variablelist>
+		<varlistentry>
+			<term>
+				<menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>1</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Vergrößern</guimenuitem
+> </menuchoice>
+			</term>
+			<listitem>
+				<para
+>Mit diesem Menüeintrag können Sie die Zeichnung auf zwei Arten vergrößern. Klicken Sie auf einen Punkt in der Zeichnung, um sie mit diesem Punkt als Mittelpunkt zu der vergrößern. Um einen bestimmten Bereich der Zeichnung zu vergrößern, ziehen Sie mit gedrückter Maustaste ein Rechteck für den neuen Bereich der Achsenwerte und lassen Sie dann die Maustaste los. </para>
+			</listitem>
+		</varlistentry>
+		
+		<varlistentry>
+			<term>
+				<menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>2</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Verkleinern</guimenuitem
+> </menuchoice>
+			</term>
+			<listitem>
+				<para
+>Mit diesem Menüeintrag können Sie die Zeichnung auf zwei Arten verkleinern. Klicken Sie auf einen Punkt in der Zeichnung, um sie mit diesem Punkt als Mittelpunkt zu der verkleinern. Um einen bestimmten Bereich der Zeichnung zu verkleinern, ziehen Sie mit gedrückter Maustaste ein Rechteck für den neuen Bereich der Achsenwerte und lassen Sie dann die Maustaste los. </para
+></listitem>
+		</varlistentry>
+		
+		<varlistentry>
+			<term>
+				<menuchoice
+><guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Fläche an trigonometrische Funktionen anpassen</guimenuitem
+> </menuchoice>
+			</term>
+			<listitem
+><para
+>Die Vergrößerung wird an trigonometrische Funktionen angepasst. Dies funktioniert für Bogenmaß und Grad.</para
+></listitem>
+		</varlistentry>
+		
+		<varlistentry>
+			<term
+><menuchoice
+><guimenu
+>Ansicht</guimenu
+><guimenuitem
+>Ansicht zurücksetzen</guimenuitem
+> </menuchoice
+></term>
+			<listitem
+><para
+>Setzt die Ansicht auf die ursprüngliche Vergrößerung zurück. </para>
+			</listitem>
+		</varlistentry>
+		
+		<varlistentry>
+			<term
+><menuchoice
+><guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Koordinatensystem ...</guimenuitem
+> </menuchoice
+></term>
+			<listitem
+><para
+>Öffnet den Dialog <guilabel
+>Koordinatensystem</guilabel
+>. Siehe <xref linkend="coords-config"/>. </para>
+			</listitem>
+		</varlistentry>
+		
+		<varlistentry>
+			<term
+><menuchoice
+><guimenu
+>Ansicht</guimenu
+> <guimenuitem
+>Schieberegler anzeigen</guimenuitem
+> </menuchoice
+></term>
+			<listitem>
+				<para
+><action
+>Blendet</action
+> den Dialog Schieberegler ein oder aus. Verschieben Sie in diesem Dialog einen Regler, um den Parameter der damit verbundenen Funktion zu ändern.</para>
+				<para
+>Aktivieren Sie den Schieberegler auf der Karteikarte Funktion und wählen Sie einen Regler für die dynamische Änderung eines Parameterwertes. In der Voreinstellung geht der Wertebereich von 0 (links) bis 10 (rechts), das kann jedoch im Dialog Schieberegler geändert werden.</para>
+				<para
+>Eine kurze Anleitung finden Sie auf der &kde;-Userbase im Artikel <ulink url="http://userbase.kde.org/KmPlot/Using_Sliders"
+>Schieberegler verwenden</ulink
+>.</para>
+				<!--http://forum.kde.org/viewtopic.php?f=21&t=90183 kmplot slider examples
+				KmPlot supports only one parameter. Feature request on bugs.kde.org: https://bugs.kde.org/show_bug.cgi?id=139097-->
+			</listitem>
+		</varlistentry>
+		
+	</variablelist>
+</sect2>
+
+<sect2 id="a-tools-menu">
+	<title
+>Das Menü Extras</title>
+	
+	<para
+>Diese Menü enthält einige nützliche Hilfsmittel für die Funktionen:</para>
+	
+	<variablelist>
+		
+		<varlistentry>
+			<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Rechner</guimenuitem
+> </menuchoice
+></term>
+			<listitem>
+				<para
+>Öffnet den Dialog <guilabel
+>Rechner</guilabel
+>.</para>
+			</listitem>
+		</varlistentry>
+		
+		<varlistentry>
+			<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Fläche zeichnen ...</guimenuitem
+> </menuchoice
+></term>
+			<listitem>
+				<para
+>Wählen Sie im Dialog einen Graphen und die waagerechten Werte für den Graphen. Dann wird das Integral berechnet und die Fläche zwischen dem Graphen und der waagerechten Achse im gewählten Intervall wird in der Farbe des Graphen gezeichnet.</para>
+			</listitem>
+		</varlistentry>
+		
+		<varlistentry>
+			<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Minimumpunkt suchen...</guimenuitem
+> </menuchoice
+></term>
+			<listitem>
+				<para
+>Sucht den minimalen Wert des Graphen im vorgegebenen Bereich.</para>
+			</listitem>
+		</varlistentry>
+		
+		<varlistentry>
+			<term
+><menuchoice
+><guimenu
+>Extras</guimenu
+> <guimenuitem
+>Maximumpunkt suchen ...</guimenuitem
+> </menuchoice
+></term>
+			<listitem>
+				<para
+>Sucht den maximalen Wert des Graphen im vorgegebenen Bereich.</para>
+			</listitem>
+		</varlistentry>
+		
+	</variablelist>
+</sect2>
+
+<sect2 id="a-help-menu">
+	<title
+>Das Menü Hilfe</title>
+	
+	<para
+>&kmplot; hat die normale &kde;-<guimenu
+>Hilfe</guimenu
+> mit einem zusätzlichen Eintrag:</para>
+	
+	<variablelist>
+		<varlistentry>
+			<term
+><menuchoice
+><guimenu
+>Hilfe</guimenu
+> <guimenuitem
+>Vordefinierte mathematische Funktionen</guimenuitem
+> </menuchoice
+></term>
+			<listitem>
+				<para
+>Öffnet dieses Handbuch mit einer Liste vordefinierter Funktionsnamen und Konstanten, die &kmplot; kennt.</para>
+			</listitem>
+		</varlistentry>
+	</variablelist>
+	
+</sect2>
+</sect1>
+
+
+</chapter>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+sgml-parent-document:("index.docbook" "BOOK" "CHAPTER")
+End:
+-->

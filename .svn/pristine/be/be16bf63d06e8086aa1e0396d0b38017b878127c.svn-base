@@ -1,0 +1,230 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE">
+]>
+<article id="kdepasswd" lang="&language;">
+<title
+>Passwort &amp; Benutzerzugang</title>
+<articleinfo>
+<authorgroup>
+<author
+><firstname
+>Michael</firstname
+> <surname
+>Anderson</surname
+> <affiliation
+> <address
+><email
+>nosrednaekim@gmail.com</email
+></address>
+</affiliation>
+</author>
+<author
+><firstname
+>Anne-Marie</firstname
+> <surname
+>Mahfouf</surname
+> <affiliation
+> <address
+>&Anne-Marie.Mahfouf.mail;</address>
+</affiliation
+></author>
+<othercredit role="translator"
+><firstname
+>Thomas</firstname
+><surname
+>Reitelbach</surname
+><affiliation
+><address
+><email
+>tr@erdfunkstelle.de</email
+></address
+></affiliation
+><contrib
+>Deutsche Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2013-06-25</date>
+<releaseinfo
+>&kde; 4.11</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Systemeinstellungen</keyword>
+<keyword
+>Benutzer</keyword>
+<keyword
+>Zugang</keyword>
+<keyword
+>Passwort</keyword>
+</keywordset>
+</articleinfo>
+
+<sect1 id="kcm_useraccount">
+<title
+>Benutzerinformationen</title>
+<sect2 id="intro">
+<title
+>Einführung</title>
+
+<para>
+<screenshot>
+<screeninfo
+>Bildschirmfoto der Benutzerverwaltung</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="password.png" format="PNG"/>
+    </imageobject>
+     <textobject>
+      <phrase
+>Die Benutzerverwaltung</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Dies ist ein Modul für die Systemeinstellungen, mit dem Benutzerinformationen und einige grundlegende Einstellungen festgelegt werden können (z. B. Passwort und Benutzerbild). Die hier eingestellten Informationen werden von verschiedenen KDE-Anwendungen verwendet (z. B. E-Mail- oder Textverarbeitungsprogramme). Sie können:</para>
+
+<itemizedlist>
+<listitem
+><para
+>Ihr Anmeldungs-Symbol ändern</para
+></listitem>
+<listitem
+><para
+>Ihr Anmeldungs-Passwort ändern</para
+></listitem>
+<listitem
+><para
+>Persönliche Angaben eintragen</para
+></listitem>
+<listitem
+><para
+>Die Eingabeaufforderung für das Passwort einstellen</para
+></listitem>
+</itemizedlist>
+
+</sect2>
+
+<sect2 id="themes">
+<title
+>Benutzersymbol und -passwort</title>
+
+<variablelist>
+<varlistentry
+><term
+>Benutzerbild</term>
+<listitem>
+<para
+>Dieses Benutzerbild wird angezeigt, wenn Sie sich mit einem Anmeldungsmanager anmelden. Wenn Sie darauf klicken, können Sie ein neues Bild aus der mitgelieferten Galerie aussuchen, oder ein eigenes Bild angeben. Klicken Sie anschließend auf <guibutton
+>Anwenden</guibutton
+>, um Ihre Änderungen zu übernehmen. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry
+><term
+><guibutton
+>Passwort ändern ...</guibutton
+></term>
+<listitem>
+<para
+>Klicken Sie auf diesen Knopf, so können Sie Ihr Anmeldungs-Passwort ändern. Dies ist das Passwort, mit dem Sie sich am Rechner anmelden. Sie werden zuerst nach Ihrem bisherigen Passwort gefragt; anschließend müssen Sie das neue Passwort zweimal eingeben. </para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect2>
+
+<sect2 id="user-info">
+<title
+>Benutzerinformationen</title>
+<variablelist>
+<varlistentry
+><term
+><guilabel
+>Name:</guilabel
+></term>
+<listitem>
+<para
+>Geben Sie hier den vollständigen Namen ein (in der Regel Vor- und Nachname). </para>
+</listitem>
+</varlistentry>
+
+<varlistentry
+><term
+><guilabel
+>Organisation</guilabel
+></term>
+<listitem>
+<para
+>Hier können Sie den Beruf oder die Gruppe eintragen, mit der der Benutzer in Verbindung gebracht wird. </para>
+</listitem>
+</varlistentry>
+<varlistentry
+><term
+><guilabel
+>E-Mail-Adresse:</guilabel
+></term>
+<listitem>
+<para
+>Geben Sie hier die E-Mail-Adresse des Benutzers ein. </para>
+</listitem>
+</varlistentry>
+<varlistentry
+><term
+><guilabel
+>SMTP-Server:</guilabel
+></term>
+<listitem>
+<para
+>Hier können Sie einen Mailserver eintragen, der im lokalen Netzwerk E-Mails ausliefert. </para>
+</listitem>
+</varlistentry>
+<varlistentry
+><term
+><guilabel
+>Benutzer-ID</guilabel
+></term>
+<listitem>
+<para
+>Dieses Feld dient nur Ihrer Information; hier wird die Benutzerkennung angezeigt. Diese ist in <filename
+>/etc/passwd</filename
+> eingetragen und wurde beim Erstellen des Benutzerkontos erzeugt (Sie keine Änderung vornehmen). </para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+<sect2 id="password">
+<title
+>Bei der Passworteingabe</title>
+
+<para
+>Hier können Sie einstellen, wie Passworteingaben aussehen sollen. In der Voreinstellung wird für jeden Buchstaben ein Punkt angezeigt. Sie können hier aber auch einstellen, dass je Buchstabe drei Punkte angezeigt werden. So ist es für Zuschauer schwieriger, zu erraten, wie viele Buchstaben Ihr Passwort hat. Sie können sogar einstellen, dass gar nichts angezeigt wird, wodurch die Passworteingabe noch sicherer wird. </para>
+
+</sect2>
+
+</sect1>
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

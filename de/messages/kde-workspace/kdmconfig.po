@@ -1,0 +1,1112 @@
+# Thomas Diehl <thd@kde.org>, 2002, 2003, 2004.
+# Stephan Johach <hunsum@gmx.de>, 2004, 2005, 2006.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006, 2007, 2008, 2009.
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2009, 2010.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
+# Frank Steinmetzger <Warp_7@gmx.de>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdmconfig\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-11-05 11:50+0000\n"
+"PO-Revision-Date: 2011-12-14 18:00+0100\n"
+"Last-Translator: Frank Steinmetzger <Warp_7@gmx.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.2\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Volker Dose,Thomas Diehl,Thomas Reitelbach"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "vpdose@cpmgut.toppoint.de,thd@kde.org,tr@erdfunkstelle.de"
+
+#: background.cpp:39
+msgid "E&nable background"
+msgstr "Hin&tergrund aktivieren"
+
+#: background.cpp:41
+msgid ""
+"If this is checked, KDM will use the settings below for the background. If "
+"it is disabled, you have to look after the background yourself. This is done "
+"by running some program (possibly xsetroot) in the script specified in the "
+"Setup= option in kdmrc (usually Xsetup)."
+msgstr ""
+"Wenn aktiviert, wird KDM die gewählten Einstellungen für den Hintergrund "
+"benutzen. Ansonsten können Sie den Hintergrund zum Beispiel durch ein "
+"gesondertes Programm bestimmen (wie etwa xsetroot). Dies müssen Sie in der "
+"Skriptdatei eintragen, die durch die Option „Setup=“ in kdmrc spezifiziert "
+"ist; dies ist im Allgemeinen jedoch Xsetup."
+
+#: kdm-conv.cpp:49
+msgid "<big><b><center>Attention<br/>Read help</center></b></big>"
+msgstr "<big><b><center>Achtung<br/>Lesen Sie die Hilfe</center></b></big>"
+
+#: kdm-conv.cpp:59
+msgid "Enable Au&to-Login"
+msgstr "Automatische Anmeldung er&lauben"
+
+#: kdm-conv.cpp:65
+msgid ""
+"Turn on the auto-login feature. This applies only to KDM's graphical login. "
+"Think twice before enabling this!"
+msgstr ""
+"Schaltet die Funktion „Automatische Anmeldung“ ein. Das bezieht sich nur auf "
+"die grafische Anmeldung in KDM. Bitte überlegen Sie gründlich, bevor Sie "
+"diese Einstellung aktivieren."
+
+#: kdm-conv.cpp:72
+msgid "Use&r:"
+msgstr "&Benutzer:"
+
+#: kdm-conv.cpp:81
+msgid "Select the user to be logged in automatically."
+msgstr ""
+"Wählen Sie den Benutzer aus der Liste, der automatisch angemeldet werden "
+"soll."
+
+#: kdm-conv.cpp:84
+msgid "Loc&k session"
+msgstr "Sitzung &sperren"
+
+#: kdm-conv.cpp:88
+msgid ""
+"The automatically started session will be locked immediately (provided it is "
+"a KDE session). This can be used to obtain a super-fast login restricted to "
+"one user."
+msgstr ""
+"Die automatisch gestartete Sitzung wird sofort gesperrt (sofern es sich um "
+"eine KDE-Sitzung handelt). Auf diese Weise ist eine sehr schnelle Anmeldung "
+"möglich (beschränkt auf einen Benutzer)."
+
+#: kdm-conv.cpp:92
+msgctxt "@title:group"
+msgid "Preselect User"
+msgstr "Vorausgewählter Benutzer"
+
+#: kdm-conv.cpp:96
+msgctxt "@option:radio preselected user"
+msgid "&None"
+msgstr "&Keiner"
+
+#: kdm-conv.cpp:97
+msgctxt "@option:radio preselected user"
+msgid "Prev&ious"
+msgstr "&Vorheriger"
+
+#: kdm-conv.cpp:99
+msgid ""
+"Preselect the user that logged in previously. Use this if this computer is "
+"usually used several consecutive times by one user."
+msgstr ""
+"Der zuletzt angemeldete Benutzer erscheint in der Anmeldung vorausgewählt. "
+"Nutzen Sie diese Funktion, wenn der Rechner hauptsächlich von verschiedenen "
+"Personen genutzt wird."
+
+#: kdm-conv.cpp:101
+msgctxt "@option:radio preselected user"
+msgid "Specifi&ed:"
+msgstr "&Festgelegt:"
+
+#: kdm-conv.cpp:103
+msgid ""
+"Preselect the user specified in the combo box to the right. Use this if this "
+"computer is predominantly used by a certain user."
+msgstr ""
+"Bestimmen Sie den Benutzer, der bei der Anmeldung vorausgewählt werden soll. "
+"Dies ist sinnvoll, wenn dieser Rechner lediglich von einer einzigen Person "
+"genutzt wird."
+
+#: kdm-conv.cpp:120
+msgid ""
+"Select the user to be preselected for login. This box is editable, so you "
+"can specify an arbitrary non-existent user to mislead possible attackers."
+msgstr ""
+"Bestimmen Sie den Benutzer, der bei der Anmeldung vorausgewählt werden soll. "
+"Sie können hier auch einen nicht-existierenden Benutzer eintragen, um "
+"mögliche Missetäter am Rechner in die Irre zu führen."
+
+#: kdm-conv.cpp:135
+msgctxt "@option:check action"
+msgid "Focus pass&word"
+msgstr "Pass&wort-Eingabefeld aktiv"
+
+#: kdm-conv.cpp:138
+msgid ""
+"When this option is on, KDM will place the cursor in the password field "
+"instead of the user field after preselecting a user. Use this to save one "
+"key press per login, if the preselection usually does not need to be changed."
+msgstr ""
+"Wenn diese Einstellung aktiv ist, wird KDM die Schreibmarke in das "
+"Passwortfeld setzen, sobald Sie einen Benutzer angewählt haben. Dies spart "
+"einen Tastendruck für die Anmeldung, falls sich der anmeldende Benutzer nur "
+"selten ändert."
+
+#: kdm-conv.cpp:144
+msgid "Enable Password-&Less Logins"
+msgstr "Anmeldung &ohne Passwort zulassen"
+
+#: kdm-conv.cpp:151
+msgid ""
+"When this option is checked, the checked users from the list below will be "
+"allowed to log in without entering their password. This applies only to "
+"KDM's graphical login. Think twice before enabling this!"
+msgstr ""
+"Wenn diese Einstellung aktiv ist, werden die Benutzer in der rechten Liste "
+"auch ohne Angabe ihres Passworts beim System angemeldet. Das bezieht sich "
+"nur auf die grafische Anmeldung in KDM. Bitte überlegen Sie gründlich, bevor "
+"Sie diese Einstellung aktivieren."
+
+#: kdm-conv.cpp:158
+msgid "No password re&quired for:"
+msgstr "Kein Passwort er&forderlich für:"
+
+#: kdm-conv.cpp:164
+msgid ""
+"Check all users you want to allow a password-less login for. Entries denoted "
+"with '@' are user groups. Checking a group is like checking all users in "
+"that group."
+msgstr ""
+"Markieren Sie alle Benutzer, denen Sie die Anmeldung ohne Passwort gestatten "
+"möchten. Einträge mit „@“ bezeichnen Gruppen und schließen alle der Gruppe "
+"zugehörigen Benutzer mit ein."
+
+#: kdm-conv.cpp:168 kdm-shut.cpp:95
+msgctxt "@title:group"
+msgid "Miscellaneous"
+msgstr "Verschiedenes"
+
+#: kdm-conv.cpp:172
+msgid "Automatically log in again after &X server crash"
+msgstr "Nach Absturz des X-Servers automatisch &wieder anmelden"
+
+#: kdm-conv.cpp:174
+msgid ""
+"When this option is on, a user will be logged in again automatically when "
+"their session is interrupted by an X server crash; note that this can open a "
+"security hole: if you use a screen locker than KDE's integrated one, this "
+"will make circumventing a password-secured screen lock possible."
+msgstr ""
+"Wenn Sie diese Einstellung aktivieren, wird ein Benutzer automatisch wieder "
+"beim System angemeldet, wenn seine Sitzung aufgrund eines Absturzes des X-"
+"Servers unterbrochen wurde. Bitte bedenken Sie, dass sich hierdurch ein "
+"Sicherheitsproblem ergeben kann: Wenn Sie nicht das in KDE integrierte, "
+"sondern ein anderes Programm für die Bildschirmsperre benutzen, ist der "
+"Passwortschutz umgehbar."
+
+#: kdm-dlg.cpp:64
+msgid "&Greeting:"
+msgstr "Be&grüßung:"
+
+#: kdm-dlg.cpp:71
+msgid ""
+"<p>This is the \"headline\" for KDM's login window. You may want to put some "
+"nice greeting or information about the operating system here.</p><p>KDM will "
+"substitute the following character pairs with the respective contents:</"
+"p><ul><li>%d -> current display</li><li>%h -> host name, possibly with "
+"domain name</li><li>%n -> node name, most probably the host name without "
+"domain name</li><li>%s -> the operating system</li><li>%r -> the operating "
+"system's version</li><li>%m -> the machine (hardware) type</li><li>%% -> a "
+"single %</li></ul>"
+msgstr ""
+"<p>Dies ist die „Überschrift“ im Anmeldefenster von KDM. Sie können hier z. "
+"B. eine freundliche Begrüßung und/oder Informationen über das Betriebssystem "
+"eintragen.</p><p>KDM wird dabei die folgenden Platzhalter durch die "
+"eigentlichen Werte ersetzen:</p><ul><li>%d -> aktueller Bildschirm (Display)"
+"</li><li>%h -> Rechnername, eventuell mit Domain</li><li>%n -> Node-Name, "
+"üblicherweise der Name des Rechners ohne Domain</li><li>%s -> "
+"Betriebssystem</li><li>%r -> Version des Betriebssystems</li><li>%m -> "
+"Rechnertyp</li><li>%% -> ein Prozentzeichen</li></ul>"
+
+#: kdm-dlg.cpp:92
+msgid "Logo area:"
+msgstr "Logo-Bereich:"
+
+#: kdm-dlg.cpp:97
+msgctxt "logo area"
+msgid "&None"
+msgstr "&Kein Logo"
+
+#: kdm-dlg.cpp:98
+msgid "Show cloc&k"
+msgstr "&Uhr anzeigen"
+
+#: kdm-dlg.cpp:99
+msgid "Sho&w logo"
+msgstr "Logo &anzeigen"
+
+#: kdm-dlg.cpp:110
+msgid ""
+"You can choose to display a custom logo (see below), a clock or no logo at "
+"all."
+msgstr ""
+"Sie können auswählen, ob ein von Ihnen festgelegtes Logo, eine Uhr oder gar "
+"nichts angezeigt werden soll."
+
+#: kdm-dlg.cpp:116
+msgid "&Logo:"
+msgstr "L&ogo:"
+
+#: kdm-dlg.cpp:127
+msgid ""
+"Click here to choose an image that KDM will display. You can also drag and "
+"drop an image onto this button (e.g. from Konqueror)."
+msgstr ""
+"Klicken Sie hier, um ein Bild auszuwählen, das KDM anzeigen soll. Sie können "
+"auch ein Bild (z. B. aus Konqueror) auf diesen Knopf ziehen."
+
+#: kdm-dlg.cpp:138
+msgid "Dialog &position:"
+msgstr "Fenster-&Position:"
+
+#: kdm-dlg.cpp:221
+#, kde-format
+msgid ""
+"There was an error loading the image:\n"
+"%1\n"
+"It will not be saved."
+msgstr ""
+"Fehler beim Laden des Bildes:\n"
+"%1\n"
+"Es wird nicht gespeichert ..."
+
+#: kdm-dlg.cpp:257 kdm-dlg.cpp:285
+#, c-format
+msgid "Welcome to %s at %n"
+msgstr "Willkommen zu %s auf %n"
+
+#: kdm-dlg.cpp:295
+msgid ""
+"<h1>KDM - Dialog</h1> Here you can configure the basic appearance of the KDM "
+"login manager in dialog mode, i.e. a greeting string, an icon etc."
+msgstr ""
+"<h1>KDM-Erscheinungsbild</h1> Hier können Sie das grundsätzliche "
+"Erscheinungsbild des Anmeldebildschirms KDM festlegen (z. B. Begrüßungstext, "
+"Symbol usw.)"
+
+#: kdm-gen.cpp:47
+msgctxt "@title:group 'man locale' ..."
+msgid "Locale"
+msgstr "Regionales"
+
+#: kdm-gen.cpp:56
+msgid "&Language:"
+msgstr "S&prache:"
+
+#: kdm-gen.cpp:58
+msgid ""
+"Here you can choose the language used by KDM. This setting does not affect a "
+"user's personal settings; that will take effect after login."
+msgstr ""
+"Hier können Sie die Sprache wählen, die von KDM verwendet werden soll. Diese "
+"Vorgabe hat keinen Einfluss auf die persönlichen Einstellungen eines "
+"Benutzers nach der Anmeldung."
+
+#: kdm-gen.cpp:65
+msgctxt "@title:group"
+msgid "Appearance"
+msgstr "Erscheinungsbild"
+
+#: kdm-gen.cpp:70
+msgid ""
+"&Use themed greeter\n"
+"(Warning: poor accessibility)"
+msgstr ""
+"Design für den Anmeldebildschirm verwenden\n"
+"(Achtung: schlechter zugänglich)"
+
+# Authentifizierungsmethoden: Anmeldemethoden? (ist etwas leichter zu lesen)
+#: kdm-gen.cpp:73
+msgid ""
+"Enable this if you would like to use a themed Login Manager.<br>Note that "
+"the themed greeter is challenged accessibility-wise (keyboard usage), and "
+"themes may lack support for features like a user list or alternative "
+"authentication methods."
+msgstr ""
+"Aktivieren Sie diese Einstellung, wenn der Anmeldebildschirm in einem "
+"bestimmten Design angezeigt werden soll.<br> Beachten Sie, dass der "
+"Anmeldebildschirm bei der Verwendung von Designs schlechter zugänglich ist "
+"(Verwendung der Tastatur) und dass Designs bestimmte Funktionen wie eine "
+"Benutzerliste oder alternative Authentifizierungsmethoden nicht unterstützen "
+"könnten."
+
+#: kdm-gen.cpp:80 kdm-gen.cpp:91 kdm-users.cpp:114
+msgid "<placeholder>default</placeholder>"
+msgstr "<placeholder>standard</placeholder>"
+
+#: kdm-gen.cpp:85
+msgid "GUI s&tyle:"
+msgstr "Oberflächensti&l:"
+
+#: kdm-gen.cpp:87
+msgid "You can choose a basic GUI style here that will be used by KDM only."
+msgstr ""
+"Hier können Sie einen Oberflächenstil wählen, der ausschließlich von KDM "
+"benutzt werden soll."
+
+#: kdm-gen.cpp:95
+msgid "Color sche&me:"
+msgstr "&Farbschema:"
+
+#: kdm-gen.cpp:97
+msgid "You can choose a basic Color Scheme here that will be used by KDM only."
+msgstr ""
+"Hier können Sie ein Farbschema wählen, das ausschließlich von KDM benutzt "
+"werden soll."
+
+#: kdm-gen.cpp:100
+msgctxt "@title:group"
+msgid "Fonts"
+msgstr "Schriftarten"
+
+#: kdm-gen.cpp:107
+msgid ""
+"This changes the font which is used for all the text in the login manager "
+"except for the greeting and failure messages."
+msgstr ""
+"Ändert die Schriftart im gesamten Anmeldebildschirm, außer für den "
+"Begrüßungsbereich und Warnungen zu fehlgeschlagenen Anmeldungen."
+
+#: kdm-gen.cpp:110
+msgctxt "... font"
+msgid "&General:"
+msgstr "&Allgemein:"
+
+#: kdm-gen.cpp:114
+msgid ""
+"This changes the font which is used for failure messages in the login "
+"manager."
+msgstr ""
+"Ändert die Schriftart, die für Nachrichten über fehlgeschlagene Anmeldungen "
+"verwendet wird."
+
+#: kdm-gen.cpp:116
+msgctxt "font for ..."
+msgid "&Failure:"
+msgstr "&Fehlversuche:"
+
+#: kdm-gen.cpp:120
+msgid "This changes the font which is used for the login manager's greeting."
+msgstr ""
+"Ändert die Schriftart, die für die Begrüßung auf dem Anmeldebildschirm "
+"verwendet wird"
+
+#: kdm-gen.cpp:122
+msgctxt "font for ..."
+msgid "Gree&ting:"
+msgstr "Be&grüßung:"
+
+#: kdm-gen.cpp:124
+msgid "Use anti-aliasing for fonts"
+msgstr "Kantenglättung für Schriftdarstellung verwenden"
+
+#: kdm-gen.cpp:126
+msgid ""
+"If you check this box and your X-Server has the Xft extension, fonts will be "
+"antialiased (smoothed) in the login dialog."
+msgstr ""
+"Wenn diese Einstellung aktiv ist und Ihr X-Server über die Xft-Erweiterungen "
+"verfügt, werden die Schriftarten im Anmeldedialog geglättet dargestellt "
+"(Anti-Aliasing)."
+
+#: kdm-shut.cpp:45
+msgid "Allow Shutdown"
+msgstr "Herunterfahren zulassen"
+
+#: kdm-shut.cpp:49
+msgctxt "shutdown request origin"
+msgid "&Local:"
+msgstr "&Lokal:"
+
+#: kdm-shut.cpp:51 kdm-shut.cpp:59
+msgctxt "@item:inlistbox allow shutdown"
+msgid "Everybody"
+msgstr "Jeder"
+
+#: kdm-shut.cpp:52 kdm-shut.cpp:60
+msgctxt "@item:inlistbox allow shutdown"
+msgid "Only Root"
+msgstr "Nur Systemverwalter"
+
+#: kdm-shut.cpp:53 kdm-shut.cpp:61
+msgctxt "@item:inlistbox allow shutdown"
+msgid "Nobody"
+msgstr "Niemand"
+
+#: kdm-shut.cpp:57
+msgctxt "shutdown request origin"
+msgid "&Remote:"
+msgstr "Von F&remdrechner:"
+
+#: kdm-shut.cpp:64
+msgid ""
+"Here you can select who is allowed to shutdown the computer using KDM. You "
+"can specify different values for local (console) and remote displays. "
+"Possible values are:<ul> <li><em>Everybody:</em> everybody can shutdown the "
+"computer using KDM</li> <li><em>Only root:</em> KDM will only allow shutdown "
+"after the user has entered the root password</li> <li><em>Nobody:</em> "
+"nobody can shutdown the computer using KDM</li></ul>"
+msgstr ""
+"Hier können Sie festlegen, wem das Ausschalten des Rechners erlaubt sein "
+"soll. Mögliche Einstellungen sind:<ul> <li><em>Jeder:</em> Jeder kann den "
+"Recher über KDM herunterfahren und ausschalten</li> <li><em>Nur Konsole:</"
+"em> Nur Benutzer, die direkt am Rechner sitzen, können ihn über KDM "
+"herunterfahren</li><li><em>Nur Systemverwalter:</em> KDM wird den Rechner "
+"nur dann herunterfahren, wenn der Benutzer das Passwort des Systemverwalters "
+"eingibt</li> <li><em>Niemand:</em> Keiner darf mit Hilfe von KDM den Rechner "
+"herunterfahren</li></ul>"
+
+#: kdm-shut.cpp:74
+msgctxt "@title:group shell commands for shutdown"
+msgid "Commands"
+msgstr "Befehle"
+
+#: kdm-shut.cpp:77
+msgctxt "command for ..."
+msgid "H&alt:"
+msgstr "System &herunterfahren:"
+
+#: kdm-shut.cpp:81
+msgid "Command to initiate the system halt. Typical value: /sbin/halt"
+msgstr ""
+"Befehl, um das Herunterfahren des Systems einzuleiten. Typischer Eintrag: /"
+"sbin/halt"
+
+#: kdm-shut.cpp:86
+msgctxt "command for ..."
+msgid "Reb&oot:"
+msgstr "&Neustart:"
+
+#: kdm-shut.cpp:90
+msgid "Command to initiate the system reboot. Typical value: /sbin/reboot"
+msgstr ""
+"Befehl, um den Neustart des Systems einzuleiten. Typischer Eintrag: /sbin/"
+"reboot"
+
+#: kdm-shut.cpp:98
+msgctxt "boot manager"
+msgid "None"
+msgstr "Keiner"
+
+#: kdm-shut.cpp:99
+msgid "Grub"
+msgstr "Grub"
+
+#: kdm-shut.cpp:100
+msgid "Grub2"
+msgstr "Grub2"
+
+#: kdm-shut.cpp:101
+msgid "Burg"
+msgstr "Burg"
+
+#: kdm-shut.cpp:103
+msgid "Lilo"
+msgstr "Lilo"
+
+#: kdm-shut.cpp:105
+msgid "Boot manager:"
+msgstr "Boot-&Manager:"
+
+#: kdm-shut.cpp:108
+msgid "Enable boot options in the \"Shutdown...\" dialog."
+msgstr "Startoptionen im Dialog „Herunterfahren“ aktivieren."
+
+#: kdm-theme.cpp:98
+msgctxt "@title:column"
+msgid "Theme"
+msgstr "Design"
+
+#: kdm-theme.cpp:99
+msgctxt "@title:column"
+msgid "Author"
+msgstr "Autor"
+
+#: kdm-theme.cpp:103
+msgid ""
+"This is a list of installed themes.\n"
+"Click the one to be used."
+msgstr ""
+"Sie sehen hier eine Liste der installierten Designs.\n"
+"Wählen Sie das Design aus, welches benutzt werden soll."
+
+#: kdm-theme.cpp:111
+msgid "This is a screen shot of what KDM will look like."
+msgstr "Auf diesem Vorschaubild sehen Sie, wie KDM aussehen wird."
+
+#: kdm-theme.cpp:119
+msgid "This contains information about the selected theme."
+msgstr "Dies sind Informationen über das ausgewählte Design."
+
+#: kdm-theme.cpp:123
+msgctxt "@action:button"
+msgid "Install &new theme"
+msgstr "&Neues Design installieren"
+
+#: kdm-theme.cpp:124
+msgid "This will install a theme into the theme directory."
+msgstr "Dies wird ein neues Design in den Design-Ordner installieren."
+
+#: kdm-theme.cpp:128
+msgctxt "@action:button"
+msgid "&Remove theme"
+msgstr "Design &entfernen"
+
+#: kdm-theme.cpp:129
+msgid "This will remove the selected theme."
+msgstr "Hierdurch wird das ausgewählte Design entfernt."
+
+#: kdm-theme.cpp:133
+msgctxt "@action:button"
+msgid "&Get New Themes"
+msgstr "Neue Designs &herunterladen"
+
+#: kdm-theme.cpp:216
+#, kde-format
+msgid "<qt><strong>Copyright:</strong> %1<br/></qt>"
+msgstr "<qt><strong>Copyright:</strong> %1<br/></qt>"
+
+#: kdm-theme.cpp:219
+#, kde-format
+msgid "<qt><strong>Description:</strong> %1</qt>"
+msgstr "<qt><strong>Beschreibung:</strong> %1</qt>"
+
+#: kdm-theme.cpp:236 kdm-users.cpp:339
+#, kde-format
+msgid "Unable to create folder %1"
+msgstr "Der Ordner %1 lässt sich nicht anlegen."
+
+#: kdm-theme.cpp:244
+msgid "Drag or Type Theme URL"
+msgstr "Geben Sie eine Design-Adresse ein oder ziehen Sie sie herein"
+
+#: kdm-theme.cpp:263
+#, kde-format
+msgid "Unable to find the KDM theme archive %1."
+msgstr "Das KDM-Design-Archiv namens „%1“ kann nicht gefunden werden."
+
+#: kdm-theme.cpp:265
+#, kde-format
+msgid ""
+"Unable to download the KDM theme archive;\n"
+"please check that address %1 is correct."
+msgstr ""
+"Das KDM-Design-Archiv kann nicht heruntergeladen werden;\n"
+"bitte stellen Sie sicher, dass die Adresse %1 richtig ist."
+
+#: kdm-theme.cpp:288
+msgid "The file is not a valid KDM theme archive."
+msgstr "Bei der Datei handelt es sich nicht um ein gültiges KDM-Design-Archiv."
+
+#: kdm-theme.cpp:291
+msgctxt "@title:window"
+msgid "Installing KDM themes"
+msgstr "Installieren von KDM-Designs"
+
+#: kdm-theme.cpp:303
+#, kde-format
+msgctxt "@info:progress"
+msgid "<qt>Unpacking <strong>%1</strong> theme</qt>"
+msgstr "<qt>Das Design <strong>%1</strong> wird entpackt.</qt>"
+
+#: kdm-theme.cpp:315
+msgctxt "@info:progress"
+msgid "<qt>Installing the themes</qt>"
+msgstr "<qt>Die Designs werden installiert.</qt>"
+
+#: kdm-theme.cpp:324
+msgid "There were errors while installing the following themes:\n"
+msgstr "Beim Installieren der folgenden Designs sind Fehler aufgetreten:\n"
+
+#: kdm-theme.cpp:363
+msgid "Are you sure you want to remove the following themes?"
+msgstr "Sind Sie sicher, dass die folgenden Designs entfernt werden sollen?"
+
+#: kdm-theme.cpp:364
+msgctxt "@title:window"
+msgid "Remove themes?"
+msgstr "Designs entfernen?"
+
+#: kdm-theme.cpp:377
+msgid "There were errors while deleting the following themes:\n"
+msgstr "Beim Entfernen der folgenden Designs sind Fehler aufgetreten:\n"
+
+#: kdm-users.cpp:111
+msgid ""
+"User 'nobody' does not exist. Displaying user images will not work in KDM."
+msgstr ""
+"Der Benutzer „nobody“ existiert nicht. Im Anmeldebildschirm werden keine "
+"Benutzerbilder angezeigt."
+
+#: kdm-users.cpp:117
+msgctxt "@title:group UIDs belonging to system users like 'cron'"
+msgid "System U&IDs"
+msgstr "System-Benutzerkennungen (U&IDs)"
+
+#: kdm-users.cpp:119
+msgid ""
+"Users with a UID (numerical user identification) outside this range will not "
+"be listed by KDM and this setup dialog. Note that users with the UID 0 "
+"(typically root) are not affected by this and must be explicitly excluded in "
+"\"Inverse selection\" mode."
+msgstr ""
+"Benutzerkennungen, die nicht im Bereich der gewählten UIDs (numerische "
+"Benutzeridentifikation) liegen, werden von KDM und diesem Dialog nicht "
+"angezeigt. Beachten Sie jedoch, das Benutzer mit der UID 0 (dies ist "
+"typischerweise der Systemverwalter „root“) von dieser Regel nicht erfasst "
+"werden. Möchten Sie auch „root“ ausschließen, so müssen Sie dies im Modus "
+"„Umgekehrte Auswahl“ einstellen."
+
+#: kdm-users.cpp:125
+msgctxt "UIDs"
+msgid "Below:"
+msgstr "Unter:"
+
+#: kdm-users.cpp:132
+msgctxt "UIDs"
+msgid "Above:"
+msgstr "Über:"
+
+#: kdm-users.cpp:145
+msgctxt "@title:group"
+msgid "Users"
+msgstr "Benutzer"
+
+#: kdm-users.cpp:146
+msgctxt "... of users"
+msgid "Show list"
+msgstr "Benutzerliste anzeigen"
+
+#: kdm-users.cpp:148
+msgid ""
+"If this option is checked, KDM will show a list of users, so users can click "
+"on their name or image rather than typing in their login."
+msgstr ""
+"Wenn diese Einstellung aktiv ist, wird KDM eine Benutzerliste mit Bildern "
+"anzeigen, sodass Benutzer auf ihren Namen oder ihr Bild klicken können, "
+"statt ihren Benutzernamen über die Tastatur einzugeben."
+
+#: kdm-users.cpp:150
+msgctxt "user ..."
+msgid "Autocompletion"
+msgstr "Autom. Vervollständigung"
+
+#: kdm-users.cpp:152
+msgid ""
+"If this option is checked, KDM will automatically complete user names while "
+"they are typed in the line edit."
+msgstr ""
+"Wenn diese Einstellung aktiv ist, wird KDM den Benutzernamen beim Eintippen "
+"automatisch vervollständigen."
+
+#: kdm-users.cpp:155
+msgctxt "@option:check mode of the user selection"
+msgid "Inverse selection"
+msgstr "Umgekehrte Auswahl"
+
+#: kdm-users.cpp:157
+msgid ""
+"This option specifies how the users for \"Show list\" and \"Autocompletion\" "
+"are selected in the \"Select users and groups\" list: If not checked, select "
+"only the checked users. If checked, select all non-system users, except the "
+"checked ones."
+msgstr ""
+"Die Einstellung gibt an, wie die Benutzer unter „Liste anzeigen“ bzw. "
+"„Autom. Vervollständigung“ in der Liste „Benutzer und Gruppen auswählen“ "
+"behandelt werden: Ist das Kästchen leer, werden nur angekreuzte Benutzer "
+"ausgewählt. Ist das Kästchen markiert, werden alle Benutzer ausgewählt, die "
+"für Systemfunktionen stehen, außer den jeweils angekreuzten."
+
+#: kdm-users.cpp:161
+msgid "Sor&t users"
+msgstr "Benutzer s&ortieren"
+
+#: kdm-users.cpp:163
+msgid ""
+"If this is checked, KDM will alphabetically sort the user list. Otherwise "
+"users are listed in the order they appear in the password file."
+msgstr ""
+"Wenn diese Einstellung aktiv ist, wird KDM die Benutzer in alphabetischer "
+"Reihenfolge anzeigen. Ansonsten werden die Benutzer in der Reihenfolge "
+"angezeigt, wie sie in der Passwort-Datei eingetragen sind."
+
+#: kdm-users.cpp:180
+msgid "S&elect users and groups:"
+msgstr "B&enutzer und Gruppen auswählen:"
+
+#: kdm-users.cpp:184
+msgid "Selected Users"
+msgstr "Ausgewählte Benutzer"
+
+#: kdm-users.cpp:186
+msgid ""
+"KDM will show all checked users. Entries denoted with '@' are user groups. "
+"Checking a group is like checking all users in that group."
+msgstr ""
+"KDM zeigt alle markierten Benutzer an. Einträge mit „@“ bezeichnen Gruppen "
+"und schließen alle der Gruppe zugehörigen Benutzer mit ein."
+
+#: kdm-users.cpp:195
+msgid "Excluded Users"
+msgstr "Ausgeschlossene Benutzer"
+
+#: kdm-users.cpp:197
+msgid ""
+"KDM will show all non-checked non-system users. Entries denoted with '@' are "
+"user groups. Checking a group is like checking all users in that group."
+msgstr ""
+"KDM zeigt alle Benutzer an, die nicht für Systemfunktionen stehen bzw. deren "
+"Anzeige nicht durch Markierung deaktiviert wurden. Einträge mit „@“ "
+"bezeichnen Gruppen und schließen alle der Gruppe zugehörigen Benutzer mit "
+"ein."
+
+#: kdm-users.cpp:206
+msgctxt "@title:group source for user faces"
+msgid "User Image Source"
+msgstr "Quelle für Benutzerbild"
+
+#: kdm-users.cpp:208
+msgid ""
+"Here you can specify where KDM will obtain the images that represent users. "
+"\"System\" represents the global folder; these are the pictures you can set "
+"below. \"User\" means that KDM should read the user's $HOME/.face.icon file. "
+"The two selections in the middle define the order of preference if both "
+"sources are available."
+msgstr ""
+"Hier können Sie angeben, woher KDM die Bilder für die Benutzer bezieht. "
+"„System“ steht für den globalen Ordner, Sie sehen die Bilder weiter unten "
+"aufgeführt. „Benutzer“ bedeutet, dass KDM das Bild aus der Datei $HOME/.face."
+"icon lädt. Mit den beiden mittleren Einstellungen können Sie bestimmen, in "
+"welcher Reihenfolge das Vorhandensein der Bilddateien geprüft wird."
+
+#: kdm-users.cpp:212
+msgctxt "@option:radio image source"
+msgid "System"
+msgstr "System"
+
+#: kdm-users.cpp:213
+msgctxt "@option:radio image source"
+msgid "System, user"
+msgstr "System, Benutzer"
+
+#: kdm-users.cpp:214
+msgctxt "@option:radio image source"
+msgid "User, system"
+msgstr "Benutzer, System"
+
+#: kdm-users.cpp:215
+msgctxt "@option:radio image source"
+msgid "User"
+msgstr "Benutzer"
+
+#: kdm-users.cpp:230
+msgctxt "@title:group user face assignments"
+msgid "User Images"
+msgstr "Benutzerbilder"
+
+#: kdm-users.cpp:232
+msgid "The user the image below belongs to."
+msgstr "Der Benutzer, zu dem das Bild unten gehört."
+
+#: kdm-users.cpp:235
+msgid "User:"
+msgstr "Benutzer:"
+
+#: kdm-users.cpp:244
+msgid "Click or drop an image here"
+msgstr "Klicken Sie hier oder ziehen Sie ein Bild hier her."
+
+#: kdm-users.cpp:246
+msgid ""
+"Here you can see the image assigned to the user selected in the combo box "
+"above. Click on the image button to select from a list of images or drag and "
+"drop your own image on to the button (e.g. from Konqueror)."
+msgstr ""
+"Hier sehen Sie den Benutzernamen und das zugehörige Benutzerbild. Klicken "
+"Sie auf den Bildknopf, um aus einer Liste von Bildern wählen zu können oder "
+"ziehen Sie ein Bild Ihrer Wahl (z. B. aus Konqueror) auf den Knopf und "
+"lassen es dort fallen."
+
+#: kdm-users.cpp:250
+msgctxt "@action:button assign default user face"
+msgid "R&eset"
+msgstr "&Zurücksetzen"
+
+#: kdm-users.cpp:252
+msgid ""
+"Click this button to make KDM use the default image for the selected user."
+msgstr ""
+"Wählen Sie diese Einstellung, damit KDM das Standardbild für den "
+"ausgewählten Benutzer anzeigt."
+
+#: kdm-users.cpp:351
+msgid "Save image as default?"
+msgstr "Bild als Voreinstellung festlegen?"
+
+#: kdm-users.cpp:360
+#, kde-format
+msgid ""
+"There was an error while loading the image\n"
+"%1"
+msgstr ""
+"Fehler beim Laden des Bildes:\n"
+"%1"
+
+#: kdm-users.cpp:379
+#, kde-format
+msgid ""
+"There was an error while saving the image:\n"
+"%1"
+msgstr ""
+"Fehler beim Speichern des Bildes:\n"
+"%1"
+
+#: kdm-users.cpp:408
+#, kde-format
+msgid ""
+"There was an error while removing the image:\n"
+"%1"
+msgstr ""
+"Fehler beim Entfernen des Bildes:\n"
+"%1"
+
+#: main.cpp:73
+#, kde-format
+msgid "Unable to authenticate/execute the action: %1 (code %2)"
+msgstr "Die Aktion kann nicht berechtigt/ausgeführt werden: %1 (Code %2)"
+
+#: main.cpp:96
+#, kde-format
+msgid ""
+"%1 does not appear to be an image file.\n"
+"Please use files with these extensions:\n"
+"%2"
+msgstr ""
+"%1 scheint keine Bilddatei zu sein.\n"
+"Bitte benutzen Sie Dateien mit folgenden Erweiterungen:\n"
+"%2"
+
+#: main.cpp:115
+msgid "KDE Login Manager Config Module"
+msgstr "Einrichtung des KDE-Anmeldebildschirms"
+
+#: main.cpp:117
+msgid "(c) 1996-2010 The KDM Authors"
+msgstr "© 1996–2010, die KDM-Autoren"
+
+#: main.cpp:120
+msgid "Thomas Tanghus"
+msgstr "Thomas Tanghus"
+
+#: main.cpp:120
+msgid "Original author"
+msgstr "Ursprünglicher Autor"
+
+#: main.cpp:121
+msgid "Steffen Hansen"
+msgstr "Steffen Hansen"
+
+#: main.cpp:122
+msgid "Oswald Buddenhagen"
+msgstr "Oswald Buddenhagen"
+
+#: main.cpp:122
+msgid "Current maintainer"
+msgstr "Aktueller Betreuer"
+
+#: main.cpp:123
+msgid "Stephen Leaf"
+msgstr "Stephen Leaf"
+
+#: main.cpp:124
+msgid "Igor Krivenko"
+msgstr "Igor Krivenko"
+
+#: main.cpp:127
+msgid ""
+"<h1>Login Manager</h1> In this module you can configure the various aspects "
+"of the KDE Login Manager. This includes the look and feel as well as the "
+"users that can be selected for login. Note that you can only make changes if "
+"you run the module with superuser rights.<h2>General</h2> On this tab page, "
+"you can configure parts of the Login Manager's look, and which language it "
+"should use. The language settings made here have no influence on the user's "
+"language settings.<h2>Dialog</h2>Here you can configure the look of the "
+"\"classical\" dialog based mode if you have chosen to use it. "
+"<h2>Background</h2>If you want to set a special background for the dialog-"
+"based login screen, this is where to do it.<h2>Themes</h2> Here you can "
+"specify the theme to be used by the Login Manager.<h2>Shutdown</h2> Here you "
+"can specify who is allowed to shutdown/reboot the machine and whether a boot "
+"manager should be used.<h2>Users</h2>On this tab page, you can select which "
+"users the Login Manager will offer you for logging in.<h2>Convenience</h2> "
+"Here you can specify a user to be logged in automatically, users not needing "
+"to provide a password to log in, and other convenience features.<br/>Note "
+"that by their nature, these settings are security holes, so use them very "
+"carefully."
+msgstr ""
+"<h1>Anmeldebildschirm</h1>In diesem Modul können Sie die verschiedenen "
+"Aspekte des Anmeldebildschirms von KDE einrichten. Das schließt sowohl das "
+"äußere Erscheinungsbild ein als auch die Anzeige derjenigen Benutzer, die im "
+"Anmeldungsdialog ausgewählt werden können. Beachten Sie, dass Sie Änderungen "
+"in diesem Bereich nur vornehmen können, wenn Sie Systemverwaltungsrechte "
+"besitzen.<h2>Allgemein</h2>Auf dieser Karteikarte können Sie einstellen, wie "
+"der Anmeldebildschirm aussehen und welche Sprache verwendet werden soll. Die "
+"Spracheinstellung an dieser Stelle hat keinen Einfluss auf die "
+"Arbeitsflächen-Einstellungen einzelner Benutzer.<h2>Dialog</h2>Hier können "
+"Sie das Aussehen des „klassischen“ Begrüßungsdialogs auswählen, falls Sie "
+"sich für diesen entschieden haben.<h2>Hintergrund</h2>Falls Sie einen "
+"besonderen Hintergrund für den Anmeldebildschirm einstellen möchten, dann "
+"ist dies der Ort, an dem Sie das tun können.<h2>Design</h2>Hier legen Sie "
+"das Design fest, welches vom Anmeldebildschirm verwendet werden soll."
+"<h2>Herunterfahren</h2>Hier können Sie angeben, wer den Rechner "
+"herunterfahren bzw. neustarten darf und ob ein Bootmanager verwendet werden "
+"soll.<h2>Benutzer</h2>Auf dieser Karteikarte können Sie einstellen, welche "
+"Benutzer Ihnen der Anmeldebildschirm anzeigt.<h2>Vereinfachung</h2> Hier "
+"können Sie festlegen, dass ein bestimmter Benutzer automatisch angemeldet "
+"werden soll, dass andere für die Anmeldung kein Passwort einzugeben brauchen "
+"und dergleichen mehr. <br/>Bitte bedenken Sie, dass diese Einstellung "
+"naturgemäß ein Sicherheitsproblem darstellt. Aktivieren Sie sie also nicht "
+"leichtfertig."
+
+#: main.cpp:212
+msgid "&General"
+msgstr "&Allgemein"
+
+#: main.cpp:218
+msgid "&Dialog"
+msgstr "&Dialog"
+
+#: main.cpp:223
+msgid "There is no login dialog window in themed mode."
+msgstr ""
+"Sie verwenden den Design-Modus. Im Design-Modus ist kein Dialog-Fenster "
+"vorgesehen."
+
+#: main.cpp:229
+msgid "&Background"
+msgstr "&Hintergrund"
+
+#: main.cpp:234
+msgid "The background cannot be configured separately in themed mode."
+msgstr ""
+"Sie verwenden den Design-Modus. Der Hintergrund kann daher nicht getrennt "
+"eingerichtet werden."
+
+#: main.cpp:240
+msgid "&Theme"
+msgstr "&Design"
+
+#: main.cpp:242
+msgid "Themed mode is disabled. See \"General\" tab."
+msgstr ""
+"Der Design-Modus ist nicht aktiviert. Bitte schauen Sie auf der Karteikarte "
+"„Allgemein“ nach."
+
+#: main.cpp:251
+msgid "&Shutdown"
+msgstr "&Herunterfahren"
+
+#: main.cpp:255
+msgid "&Users"
+msgstr "Ben&utzer"
+
+#: main.cpp:265
+msgid "&Convenience"
+msgstr "&Vereinfachung"
+
+#: main.cpp:361
+#, kde-format
+msgid ""
+"Unable to install new kdmrc file from\n"
+"%1"
+msgstr ""
+"Die neue „kdmrc“-Datei aus\n"
+"%1\n"
+"kann nicht installiert werden."
+
+#: main.cpp:366
+#, kde-format
+msgid ""
+"Unable to install new backgroundrc file from\n"
+"%1"
+msgstr ""
+"Die neue „backgroundrc“-Datei aus\n"
+"%1\n"
+"kann nicht installiert werden."
+
+#: main.cpp:371
+#, kde-format
+msgid ""
+"Unable to install new kdmrc file from\n"
+"%1\n"
+"and new backgroundrc file from\n"
+"%2"
+msgstr ""
+"Die neue „kdmrc“-Datei aus\n"
+"%1\n"
+"und die neue „backgroundrc“-Datei aus\n"
+"%2\n"
+"können nicht installiert werden."
+
+#: positioner.cpp:98
+msgid ""
+"Drag the anchor to move the center of the dialog to the desired position. "
+"Keyboard control is possible as well: Use the arrow keys or Home to center. "
+"Note that the actual proportions of the dialog are probably different."
+msgstr ""
+"Durch Ziehen des Ankers können Sie die mittlere Position des Dialogs "
+"festlegen. Sie können dazu auch die Tastatur verwenden: Betätigen Sie die "
+"Pfeil-Tasten oder „Pos 1“, um den Anker in die Mitte zu bringen. Hinweis: "
+"Die eigentlichen Proportionen können abweichen."
+
+#~ msgid "&Use themed greeter"
+#~ msgstr "&Design für den Anmeldebildschirm verwenden"
+
+#~ msgid "Enable this if you would like to use a themed Login Manager."
+#~ msgstr ""
+#~ "Aktivieren Sie diese Einstellung, wenn der Anmeldebildschirm in einem "
+#~ "bestimmten Design angezeigt werden soll"
+
+#~ msgid "Us&er:"
+#~ msgstr "&Benutzer:"
+
+#~ msgid "General (&1)"
+#~ msgstr "Erscheinungsbild(&1)"
+
+#~ msgid "Theme (&4)"
+#~ msgstr "Design (&4)"
+
+#~ msgid "Users (&6)"
+#~ msgstr "Benutzer (&6)"
+
+#~ msgid ""
+#~ "<big style='color:red;text-align:center;font-weight:bold;'>Attention<br/"
+#~ ">Read help</big>"
+#~ msgstr ""
+#~ "<big style='color:red;text-align:center;font-weight:bold;'>Achtung<br/"
+#~ ">Lesen Sie die Hilfe</big>"
+
+#~ msgid "Get New Themes"
+#~ msgstr "Neue Designs holen"
+
+#~ msgid "Admin"
+#~ msgstr "Admin"
+
+#~ msgid "Admin, user"
+#~ msgstr "Admin, Benutzer"
+
+#~ msgid "Unset"
+#~ msgstr "Nicht aktivieren"
+
+#~ msgid "kcmkdm"
+#~ msgstr "kcmkdm"
+
+#~ msgid "Hidden Users"
+#~ msgstr "Versteckte Benutzerkennungen"

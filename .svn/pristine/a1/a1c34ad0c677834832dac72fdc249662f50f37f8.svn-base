@@ -1,0 +1,1117 @@
+# Marco Wegner <mail@marcowegner.de>, 2002.
+# Stephan Johach <hunsum@gmx.de>, 2003, 2005.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2006.
+# Burkhard Lück <lueck@hube-lueck.de>, 2007, 2008, 2010, 2013.
+# Frederik Schwarzer <schwarzer@kde.org>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcontrol_mouse\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:26+0000\n"
+"PO-Revision-Date: 2013-12-27 11:17+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:10 index.docbook:33
+#, no-c-format
+msgid "Mouse"
+msgstr "Maus"
+
+#. Tag: author
+#: index.docbook:12
+#, no-c-format
+msgid "&Mike.McBride; &Mike.McBride.mail;"
+msgstr "&Mike.McBride; &Mike.McBride.mail;"
+
+#. Tag: author
+#: index.docbook:13
+#, no-c-format
+msgid "&Brad.Hards; &Brad.Hards.mail;"
+msgstr "&Brad.Hards; &Brad.Hards.mail;"
+
+#. Tag: trans_comment
+#: index.docbook:14
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr "<!-- Wissen wir nicht! -->"
+
+#. Tag: date
+#: index.docbook:17
+#, no-c-format
+msgid "2013-12-05"
+msgstr "2013-12-05"
+
+#. Tag: releaseinfo
+#: index.docbook:18
+#, no-c-format
+msgid "&kde; 4.12"
+msgstr "&kde; 4.12"
+
+#. Tag: para
+#: index.docbook:21
+#, no-c-format
+msgid ""
+"This is the documentation for the &kde; &systemsettings; module that "
+"configures mice and other pointing devices."
+msgstr ""
+"Dies ist die Dokumentation für das &kde; &systemsettings;-Modul, mit dem die "
+"Maus und andere Zeigegeräte eingerichtet werden."
+
+#. Tag: keyword
+#: index.docbook:26
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:27
+#, no-c-format
+msgid "Systemsettings"
+msgstr "Systemeinstellungen"
+
+#. Tag: keyword
+#: index.docbook:28
+#, no-c-format
+msgid "mouse"
+msgstr "mouse"
+
+#. Tag: para
+#: index.docbook:35
+#, no-c-format
+msgid ""
+"This module allows you to configure your pointing device. Your pointing "
+"device may be a mouse, a track ball, a touch-pad, or another piece of "
+"hardware that performs a similar function."
+msgstr ""
+"Dieses Modul erlaubt Ihnen die Einrichtung Ihres Zeigegerätes. Das kann eine "
+"Maus, ein Trackball, ein Touchpad oder alles andere sein, das die gleiche "
+"Funktion erfüllt."
+
+#. Tag: para
+#: index.docbook:39
+#, no-c-format
+msgid ""
+"This module is divided into several tabs: <link linkend=\"mouse-general"
+"\">General</link>, <link linkend=\"mouse-advanced\">Advanced</link> and "
+"<link linkend=\"mouse-navigation\">Mouse Navigation</link>. There may also "
+"be one or more additional tabs if you have a Logitech mouse or trackball, "
+"providing access to special features."
+msgstr ""
+"Das Modul ist in verschiedene Karteikarten unterteilt: <link linkend=\"mouse-"
+"general\">Allgemein</link>, <link linkend=\"mouse-advanced\">Erweitert</"
+"link> und <link linkend=\"mouse-navigation\">Mausnavigation</link>. Wenn Sie "
+"eine Logitech-Maus oder -Trackball haben, sind möglicherweise ein oder zwei "
+"zusätzliche Karteikarten vorhanden, die spezielle Funktionen anbieten."
+
+#. Tag: title
+#: index.docbook:48
+#, no-c-format
+msgid "General"
+msgstr "Allgemein"
+
+#. Tag: guilabel
+#: index.docbook:52
+#, no-c-format
+msgid "Button Order"
+msgstr "Knopfreihenfolge"
+
+#. Tag: para
+#: index.docbook:53
+#, no-c-format
+msgid ""
+"If you are left-handed, you may prefer to swap the functions of the "
+"<mousebutton>left</mousebutton> and <mousebutton>right</mousebutton> buttons "
+"on your pointing device by choosing the <quote>Left handed</quote> option. "
+"If your pointing device has more than two buttons, only those that function "
+"as the <mousebutton>left</mousebutton> and <mousebutton>right</mousebutton> "
+"buttons are affected. For example, if you have a three-button mouse, the "
+"<mousebutton>middle</mousebutton> button is unaffected."
+msgstr ""
+"Falls Sie Linkshänder sind, wollen Sie vielleicht die Funktionen der "
+"<mousebutton>linken</mousebutton> und <mousebutton>rechten</mousebutton> "
+"Taste Ihres Zeigegerätes tauschen, indem Sie die Option <quote>Linkshändige "
+"Bedienung</quote> wählen. Wenn Ihr Zeigegerät mehr als zwei Tasten hat,, "
+"werden nur die <mousebutton>linke</mousebutton> und die <mousebutton>rechte</"
+"mousebutton> Taste angepasst. Haben Sie zum Beispiel eine Maus mit drei "
+"Tasten, so wird die <mousebutton>mittlere</mousebutton> Maustaste nicht "
+"verändert."
+
+#. Tag: guilabel
+#: index.docbook:66
+#, no-c-format
+msgid "Reverse scroll direction"
+msgstr "Laufrichtung des Mausrades umkehren"
+
+#. Tag: para
+#: index.docbook:67
+#, no-c-format
+msgid ""
+"With this check box selected, the scroll wheel (if any) will work in the "
+"opposite direction (so that if rolling the top of the scroll wheel towards "
+"you previously causes a scroll down, then it will now cause a scroll up). "
+"This may be useful to handle a unusual setup of the X server."
+msgstr ""
+"Ist dieses Ankreuzfeld markiert, arbeitet das Mausrad (falls vorhanden) in "
+"entgegengesetzter Richtung. Wenn das Bewegen des Mausrades in ihre Richtung "
+"zuvor eine Bewegung nach unten auf dem Bildschirm ausgelöst hat, wird es nun "
+"eine Bewegung nach oben sein. Dies kann bei einem ungewöhnlich "
+"eingerichteten X-Server von Vorteil sein."
+
+#. Tag: guilabel
+#: index.docbook:74
+#, no-c-format
+msgid "Double-click to open files and folders (select icons on first click)"
+msgstr ""
+"Doppelklick zum Öffnen von Dateien/Ordnern (bei Einfachklick nur auswählen)"
+
+#. Tag: para
+#: index.docbook:76
+#, no-c-format
+msgid ""
+"If this option is not checked, icons/files will be opened with a single "
+"click of the <mousebutton>left</mousebutton> mouse-button. This default "
+"behavior is consistent with what you would expect when you click links in "
+"most web browsers. If checked however, icons/files will be opened with a "
+"double click, while a single click will only select the icon or file. This "
+"is the behavior you may know from other desktops or operating systems."
+msgstr ""
+"Wenn diese Option nicht markiert ist, werden Symbole/Dateien durch einen "
+"einfachen Klick der <mousebutton>linken Maustaste</mousebutton> geöffnet. "
+"Dieses Verhalten stimmt mit dem Verhalten der meisten Internet-Browser "
+"überein. Wenn diese Option markiert ist, werden Symbole/Dateien durch einen "
+"Doppelklick geöffnet. Ein einfacher Klick wählt das Symbol nur. Dieses "
+"Verhalten kennen Sie vielleicht von anderen Benutzeroberflächen und "
+"Betriebssystemen."
+
+#. Tag: para
+#: index.docbook:84
+#, no-c-format
+msgid ""
+"This option can be changed in the configuration dialogs of &dolphin; and "
+"&konqueror; on the <guilabel>Navigation</guilabel> tab as well."
+msgstr ""
+"Diese Einstellung kan auch in den Einrichtungsdialogen von &dolphin; und "
+"&konqueror; auf der Karteikarte <guilabel>Navigation</guilabel> geändert "
+"werden."
+
+#. Tag: guilabel
+#: index.docbook:91
+#, no-c-format
+msgid "Single-click to open files and folders"
+msgstr "Einfacher Klick zum Öffnen von Dateien und Verzeichnissen"
+
+#. Tag: para
+#: index.docbook:93
+#, no-c-format
+msgid ""
+"This is the default setting for &kde;. Clicking once on an icon will open "
+"it. To select you can drag around the icon(s) or <keycombo action=\"simul"
+"\">&Ctrl;<mousebutton>Right</mousebutton></keycombo> click, or simply click "
+"and hold to drag it. You can also enable automatic selection of icons using "
+"the <guilabel>Automatically select icons</guilabel> check box, discussed "
+"below."
+msgstr ""
+"Dies ist die Standardeinstellung von &kde;. Ein einfacher Klick auf ein "
+"Symbol öffnet es. Zur Auswahl können Sie einen Rahmen um die Symbole ziehen "
+"oder <keycombo action=\"simul\">&Ctrl;<mousebutton>Rechte Maustaste</"
+"mousebutton></keycombo> verwenden oder aber einfach klicken und die Taste "
+"zum Verschieben gedrückt halten. Sie können darüber hinaus auch die "
+"automatische Selektierung von Symbolen aktivieren, wenn Sie das Ankreuzfeld "
+"<guilabel>Symbole automatisch auswählen</guilabel> markieren."
+
+#. Tag: guilabel
+#: index.docbook:101
+#, no-c-format
+msgid "Change pointer shape over icons"
+msgstr "Zeigerform über Symbolen verändern"
+
+#. Tag: para
+#: index.docbook:103
+#, no-c-format
+msgid ""
+"When this option is checked, the shape of the mouse pointer changes whenever "
+"it is over an icon."
+msgstr ""
+"Ist diese Option ausgewählt, ändert sich die Zeigerform, sobald sich der "
+"Zeiger über einem Symbol befindet."
+
+#. Tag: para
+#: index.docbook:106
+#, no-c-format
+msgid ""
+"This option should be checked in most situations. It gives more visual "
+"feedback and says, in essence, if you click here, something will happen."
+msgstr ""
+"Normalerweise sollte diese Option aktiviert sein. Dadurch erhalten Sie mehr "
+"visuelle Informationen und Sie können leichter erkennen, ob im Falle eines "
+"Klicks etwas passiert."
+
+#. Tag: guilabel
+#: index.docbook:114
+#, no-c-format
+msgid "Automatically select icons"
+msgstr "Symbole automatisch auswählen"
+
+#. Tag: para
+#: index.docbook:116
+#, no-c-format
+msgid ""
+"As noted above, if you have <guilabel>Single-click to open files and "
+"folders</guilabel> selected, you can select icons by dragging around them, "
+"or by using <keycombo action=\"simul\">&Ctrl;<mousebutton>Right</"
+"mousebutton></keycombo> click. If you routinely need to select icons, you "
+"may want to enable this check box, which will allow icons to be selected "
+"automatically by pausing over the icon. The <guilabel>Delay:</guilabel> "
+"slider determines how long is required before the automatic selection takes "
+"effect."
+msgstr ""
+"Wie bereits erwähnt, können Sie, wenn <guilabel>Einfacher Klick zum Öffnen "
+"von Dateien und Ordnern</guilabel> eingestellt ist, Symbole durch Umfahren "
+"mit dem Mauszeiger oder durch Anklicken mit <keycombo action=\"simul\">&Ctrl;"
+"<mousebutton>rechte Maustaste</mousebutton></keycombo> auswählen. Wenn Sie "
+"häufig Symbole auswählen, können Sie dieses Ankreuzfeld aktivieren, sodass "
+"Symbole automatisch ausgewählt werden, wenn Sie mit dem Mauszeiger lange "
+"genug darauf verharren. Der Schieberegler <guilabel>Verzögerung</guilabel> "
+"legt fest, wie lange es dauert, bis das Symbol ausgewählt wird."
+
+#. Tag: title
+#: index.docbook:127
+#, no-c-format
+msgid "Advanced"
+msgstr "Erweitert"
+
+#. Tag: guilabel
+#: index.docbook:132
+#, no-c-format
+msgid "Pointer acceleration"
+msgstr "Zeigerbeschleunigung"
+
+#. Tag: para
+#: index.docbook:134
+#, no-c-format
+msgid ""
+"This option allows you to change the relationship between the distance that "
+"the mouse pointer moves on the screen and the relative movement of the "
+"physical device itself (which may be a mouse, track-ball, or some other "
+"pointing device.)"
+msgstr ""
+"Diese Option ermöglicht Ihnen die Einstellung der Beziehung zwischen der auf "
+"dem Monitor dargestellten Bewegung des Zeigers und der tatsächlichen "
+"Bewegung Ihres Zeigegerätes. Dabei ist es gleichgültig, um was für ein Gerät "
+"es sich dabei handelt (also Maus, Joystick, Trackball &etc;)."
+
+#. Tag: para
+#: index.docbook:140
+#, no-c-format
+msgid ""
+"A high value for the acceleration multiplier will lead to large movements of "
+"the mouse pointer on the screen, even when you only make a small movement "
+"with the physical device."
+msgstr ""
+"Ein hoher Wert für den Multiplikator wird zu sehr schnellen Bewegungen des "
+"Zeigers führen, auch wenn Sie mit dem Zeigegerät nur eine kleine Bewegung "
+"machen."
+
+#. Tag: para
+#: index.docbook:144
+#, no-c-format
+msgid ""
+"A multiplier between <guilabel>1x</guilabel> and <guilabel>3x</guilabel> "
+"will works well for many systems. With a multiplier over <guilabel>3x</"
+"guilabel> the mouse pointer may become difficult to control."
+msgstr ""
+"Ein Multiplikator zwischen <guilabel>1x</guilabel> und <guilabel>3x</"
+"guilabel> wird in den meisten Fällen die richtige Wahl sein. Bei einem "
+"Multiplikator über <guilabel>3x</guilabel> wird der Zeiger wahrscheinlich "
+"schwer kontrollierbar."
+
+#. Tag: guilabel
+#: index.docbook:152
+#, no-c-format
+msgid "Pointer threshold"
+msgstr "Schwellenwert für Zeiger"
+
+#. Tag: para
+#: index.docbook:154
+#, no-c-format
+msgid ""
+"The threshold is the smallest distance that the mouse pointer must move on "
+"the screen before acceleration has any effect. If the movement is within the "
+"threshold, the mouse pointer moves as if the acceleration were set to "
+"<guilabel>1x</guilabel>."
+msgstr ""
+"Der hier eingestellte Wert bestimmt die Entfernung in Pixeln, die der Zeiger "
+"zurücklegen muss, bevor er beschleunigt wird. Innerhalb dieser Entfernung "
+"bewegt sich der Zeiger, als ob eine Beschleunigung von <guilabel>1x</"
+"guilabel> eingestellt wäre."
+
+#. Tag: para
+#: index.docbook:159
+#, no-c-format
+msgid ""
+"Thus, when you make small movements with the physical device (&eg; mouse), "
+"you still have fine control of the mouse pointer on the screen, whereas "
+"larger movements of the physical device will move the mouse pointer rapidly "
+"to different areas on the screen."
+msgstr ""
+"Dies ermöglicht Ihnen bei kleinen Abständen auf dem Monitor eine genaue "
+"Kontrolle des Zeigers. Andersherum können Sie trotzdem große Abstände mit "
+"einer hohen Geschwindigkeit überwinden und so schnell in einen anderen "
+"Bereich auf Ihrem Monitor gelangen."
+
+#. Tag: para
+#: index.docbook:164
+#, no-c-format
+msgid ""
+"You can set the threshold by entering a value into the edit box or by "
+"clicking the up/down arrows to the right of the box."
+msgstr ""
+"Diesen Schwellenwert verändern Sie, indem Sie einen Wert eingeben oder einen "
+"der beiden Pfeile auf der rechten Seite des Eingabefeldes benutzen."
+
+#. Tag: para
+#: index.docbook:167
+#, no-c-format
+msgid ""
+"In general, the higher you set the <guilabel>Pointer acceleration</guilabel> "
+"value, the higher you will want to set the <guilabel>Pointer threshold</"
+"guilabel> value. For example, a <guilabel>Pointer threshold</guilabel> of 4 "
+"pixels may be appropriate for a <guilabel>Pointer Acceleration</guilabel> of "
+"2x, but 10 pixels might be better for 3x."
+msgstr ""
+"Allgemein kann man sagen, dass bei einer hohen "
+"<guilabel>Zeigerbeschleunigung</guilabel> auch ein hoher "
+"<guilabel>Schwellenwert</guilabel> eingestellt werden sollte. So wäre ein "
+"<guilabel>Schwellenwert</guilabel> von 4 Pixeln angemessen für eine "
+"<guilabel>Zeigerbeschleunigung</guilabel> von 2x, wohingegen 10 Pixel besser "
+"wären bei einer eingestellten <guilabel>Zeigerbeschleunigung</guilabel> von "
+"3x."
+
+#. Tag: guilabel
+#: index.docbook:178
+#, no-c-format
+msgid "Double click interval"
+msgstr "Doppelklick-Abstand"
+
+#. Tag: para
+#: index.docbook:180
+#, no-c-format
+msgid ""
+"This is the maximum amount of time between clicks for &kde; to register a "
+"double click. If you click twice, and the time between those two clicks is "
+"less than this number, &kde; recognizes that as a double click. If the time "
+"between these two clicks is greater than this number, &kde; recognizes those "
+"as two <emphasis>separate</emphasis> single clicks."
+msgstr ""
+"Die hier eingestellte Zeit ist die Zeit, die maximal zwischen zwei Klicks "
+"verstreichen darf, damit &kde; sie noch als Doppelklick interpretiert. "
+"Klicken Sie also innerhalb der eingestellten Zeit zweimal, wird &kde; einen "
+"Doppelklick ausführen. War die zwischen den beiden Klicks verstrichene Zeit "
+"hingegen größer, so wird &kde; sie als zwei <emphasis>einzelne</emphasis> "
+"Klicks behandeln."
+
+#. Tag: term
+#: index.docbook:190
+#, no-c-format
+msgid ""
+"<guilabel>Drag start time</guilabel> and <guilabel>Drag start distance</"
+"guilabel>"
+msgstr ""
+"<guilabel>Startzeit für Ziehen (Drag)</guilabel> und <guilabel>Startbereich "
+"für Ziehen (Drag)</guilabel>"
+
+#. Tag: para
+#: index.docbook:194
+#, no-c-format
+msgid ""
+"If you <itemizedlist> <listitem><para>click with the mouse</para></listitem> "
+"<listitem><para>drag within the time specified in <guilabel>Drag start time</"
+"guilabel>, and </para></listitem> <listitem><para>move a distance equal to "
+"or greater than the number (of pixels) specified in <guilabel>Drag start "
+"distance</guilabel></para> </listitem> </itemizedlist> &kde; will drag the "
+"selected item."
+msgstr ""
+"Wenn sie mit der Maus <itemizedlist><listitem><para>auf etwas klicken</"
+"para></listitem> <listitem><para>innerhalb der in <guilabel>Startzeit für "
+"Ziehen</guilabel> eingestellten Zeit </para></listitem> <listitem><para>den "
+"Zeiger über eine mindestens so große wie in <guilabel>Startbereich für "
+"Ziehen</guilabel> eingestellte Entfernung in Pixeln bewegen, </para></"
+"listitem></itemizedlist> verschiebt &kde; das Objekt."
+
+#. Tag: guilabel
+#: index.docbook:209
+#, no-c-format
+msgid "Mouse wheel scrolls by"
+msgstr "Mausrad erzeugt Bildlauf um"
+
+#. Tag: para
+#: index.docbook:211
+#, no-c-format
+msgid ""
+"If you have a wheel mouse, use the spin box to determine how many lines of "
+"text one <quote>step</quote> of the mouse wheel will scroll."
+msgstr ""
+"Wenn Sie eine Radmaus haben, verwenden Sie dieses Drehfeld, um festzulegen, "
+"wie viele Textzeilen ein <quote>Schritt</quote> des Mausrades das Bild "
+"weiterlaufen lässt."
+
+#. Tag: title
+#: index.docbook:222
+#, no-c-format
+msgid "Mouse Navigation"
+msgstr "Mausnavigation"
+
+#. Tag: para
+#: index.docbook:224
+#, no-c-format
+msgid ""
+"This tab allows you to configure the keyboard number pad keys as a mouse-"
+"type device. This may be useful when you are working on a device without "
+"another pointing device, or where you have no other use for the number pad."
+msgstr ""
+"Auf dieser Karteikarte können Sie den Zahlenblock auf der Tastatur wie ein "
+"mausähnliches Gerät einrichten. Das kann nützlich sein, wenn es keine "
+"Anschlußmöglichkeit für ein Zeigegerät gibt oder der Zahlenblock ansonsten "
+"nicht genutzt wird."
+
+#. Tag: guilabel
+#: index.docbook:231
+#, no-c-format
+msgid "Move pointer with keyboard (using the num pad)"
+msgstr "Maus per Tastatur bewegen (Zahlenblock)"
+
+#. Tag: para
+#: index.docbook:233
+#, no-c-format
+msgid ""
+"To enable keyboard mouse mode, you need to select the check box labeled "
+"<guilabel>Move pointer with keyboard (using the num pad)</guilabel>. When "
+"you do this, the other settings will become enabled, and you can customize "
+"the keyboard pointer behavior further, if required."
+msgstr ""
+"Um den Zahlenblock im Mausmodus zu verwenden, müssen Sie das Ankreuzfeld "
+"<guilabel>Maus per Tastatur bewegen (Zahlenblock)</guilabel> aktivieren. "
+"Daraufhin werden die anderen Einstellungen freigeschaltet, und Sie können "
+"das Verhalten der Tastatur im Mausmodus, wenn nötig, an Ihre Bedürfnisse "
+"anpassen."
+
+#. Tag: para
+#: index.docbook:236
+#, no-c-format
+msgid ""
+"The various keys on the number pad move in the direction you would expect. "
+"Note that you can move diagonally as well as up, down, left and right. The "
+"<keycap>5</keycap> key emulates a click to a pointer button, typically "
+"&LMB;. You change which button is emulated by using the <keycap>/</keycap> "
+"key (which makes it &LMB;), <keycap>*</keycap> key (which makes it &MMB;) "
+"and <keycap>-</keycap> (which makes it &RMB;). Using the <keycap>+</keycap> "
+"emulates a double click to the selected pointer button. You can use the "
+"<keycap>0</keycap> key to emulate holding down the selected pointer button "
+"(for easy dragging), and then use the <keycap>.</keycap> to emulate "
+"releasing the selected pointer button."
+msgstr ""
+"Die Tasten auf dem Zahlenblock führen eine Bewegung in die Richtung aus, die "
+"Sie auch erwarten würden. Beachten Sie, dass Aufwärts, Abwärts, Links und "
+"Rechts auch eine Bewegung in diagonaler Richtung möglich ist. Die Taste "
+"<keycap>5</keycap> simuliert das Betätigen einer Maustaste, normalerweise "
+"ist das die linke Maustaste. Sie können die simulierte Maustaste mit "
+"<keycap>/</keycap> (linke Maustaste), <keycap>*</keycap> (mittlere "
+"Maustaste) und <keycap>-</keycap> (rechte Maustaste) umschalten. Das "
+"Betätigen von <keycap>+</keycap> simuliert einen Doppelklick mit der "
+"gewählten Maustaste. Über die Taste <keycap>0</keycap> können Sie eine "
+"gedrückte Maustaste (&eg; für Ziehen und Fallenlassen) simulieren und die "
+"Taste <keycap>,</keycap> für das Loslassen der Maustaste."
+
+#. Tag: guilabel
+#: index.docbook:243
+#, no-c-format
+msgid "Acceleration delay"
+msgstr "Zeigerverzögerung"
+
+#. Tag: para
+#: index.docbook:245
+#, no-c-format
+msgid ""
+"This is the time (in milliseconds) between the initial key press and the "
+"first repeated motion event for mouse key acceleration."
+msgstr ""
+"Das ist der Zeitraum (in Millisekunden) zwischen der ersten Tastenbetätigung "
+"und dem ersten Signal, das eine wiederholte Mausbewegung anzeigt, um die "
+"Zeigerbewegung zu beschleunigen."
+
+#. Tag: guilabel
+#: index.docbook:252
+#, no-c-format
+msgid "Repeat interval"
+msgstr "Wiederholungsabstand"
+
+#. Tag: para
+#: index.docbook:254
+#, no-c-format
+msgid ""
+"This is the time in milliseconds between repeated motion events for mouse "
+"key acceleration."
+msgstr ""
+"Dies ist der Abstand in Millisekunden, der bei der Beschleunigung der "
+"Tastaturmaus zwischen den Signalen für eine wiederholte Bewegung vergeht."
+
+#. Tag: guilabel
+#: index.docbook:261
+#, no-c-format
+msgid "Acceleration time"
+msgstr "Zeigerbeschleunigung"
+
+#. Tag: para
+#: index.docbook:263
+#, no-c-format
+msgid ""
+"This is the time in milliseconds before the pointer reaches a maximum speed "
+"for mouse key acceleration."
+msgstr ""
+"Dies ist die Zeit in Millisekunden, bis die Beschleunigung des Mauszeigers "
+"ihren maximalen Wert erreicht."
+
+#. Tag: guilabel
+#: index.docbook:270
+#, no-c-format
+msgid "Maximum speed"
+msgstr "Maximale Geschwindigkeit"
+
+#. Tag: para
+#: index.docbook:272
+#, no-c-format
+msgid ""
+"This is the maximum speed in pixels per second the pointer can reach for "
+"mouse key acceleration."
+msgstr ""
+"Dies ist die maximale Geschwindigkeit in Pixeln pro Sekunde, die bei der "
+"Beschleunigung der Tastaturmaus erreicht werden kann."
+
+#. Tag: guilabel
+#: index.docbook:279
+#, no-c-format
+msgid "Acceleration profile"
+msgstr "Beschleunigungsprofil"
+
+#. Tag: para
+#: index.docbook:281
+#, no-c-format
+msgid "This is the slope of the acceleration curve for mouse key acceleration."
+msgstr ""
+"Dies ist die Steigung der Beschleunigungskurve für die "
+"Tastaturmausbeschleunigung."
+
+#. Tag: title
+#: index.docbook:292
+#, no-c-format
+msgid "Logitech Support"
+msgstr "Logitech-Unterstützung"
+
+#. Tag: para
+#: index.docbook:294
+#, no-c-format
+msgid ""
+"Some Logitech USB mice support special features, such as switching to a "
+"higher resolution, or providing cordless status. If &kde; was built with "
+"libusb support, then you will get an additional tab for each supported mouse "
+"that is plugged in."
+msgstr ""
+"Einige USB-Mäuse von Logitech unterstützen besondere Eigenschaften wie das "
+"Umschalten auf eine andere Auflösung oder das Zurückliefern des Status bei "
+"kabellosem Betrieb. Wenn &kde; mit Unterstützung für die Bibliothek libusb "
+"kompiliert wurde, erscheint eine zusätzliche Karteikarte für jede "
+"unterstützte Maus, die in das System eingebunden ist."
+
+#. Tag: para
+#: index.docbook:300
+#, no-c-format
+msgid "The supported devices are:"
+msgstr "Die unterstützten Geräte sind:"
+
+#. Tag: para
+#: index.docbook:304
+#, no-c-format
+msgid "Wheel Mouse Optical"
+msgstr "Wheel Mouse Optical"
+
+#. Tag: para
+#: index.docbook:305
+#, no-c-format
+msgid "MouseMan Traveler"
+msgstr "MouseMan Traveler"
+
+#. Tag: para
+#: index.docbook:306
+#, no-c-format
+msgid "MouseMan Dual Optical"
+msgstr "MouseMan Dual Optical"
+
+#. Tag: para
+#: index.docbook:307
+#, no-c-format
+msgid "MX310 Optical Mouse"
+msgstr "MX310 Optical Mouse"
+
+#. Tag: para
+#: index.docbook:308
+#, no-c-format
+msgid "MX510 Optical Mouse"
+msgstr "MX510 Optical Mouse"
+
+#. Tag: para
+#: index.docbook:309
+#, no-c-format
+msgid "MX300 Optical Mouse"
+msgstr "MX300 Optical Mouse"
+
+#. Tag: para
+#: index.docbook:310
+#, no-c-format
+msgid "MX500 Optical Mouse"
+msgstr "MX500 Optical Mouse"
+
+#. Tag: para
+#: index.docbook:311
+#, no-c-format
+msgid "iFeel Mouse"
+msgstr "iFeel Mouse"
+
+#. Tag: para
+#: index.docbook:312
+#, no-c-format
+msgid "Mouse Receiver"
+msgstr "Mouse Receiver"
+
+#. Tag: para
+#: index.docbook:313
+#, no-c-format
+msgid "Dual Receiver"
+msgstr "Dual Receiver"
+
+#. Tag: para
+#: index.docbook:314
+#, no-c-format
+msgid "Cordless Freedom Optical"
+msgstr "Cordless Freedom Optical"
+
+#. Tag: para
+#: index.docbook:315
+#, no-c-format
+msgid "Cordless Elite Duo"
+msgstr "Cordless Elite Duo"
+
+#. Tag: para
+#: index.docbook:316
+#, no-c-format
+msgid "MX700 Optical Mouse"
+msgstr "MX700 Optical Mouse"
+
+#. Tag: para
+#: index.docbook:317
+#, no-c-format
+msgid "Cordless Optical Trackman"
+msgstr "Cordless Optical Trackman"
+
+#. Tag: para
+#: index.docbook:318
+#, no-c-format
+msgid "Cordless MX Duo Receiver"
+msgstr "Cordless MX Duo Receiver"
+
+#. Tag: para
+#: index.docbook:319
+#, no-c-format
+msgid "MX100 Laser Mouse"
+msgstr "MX100 Laser Mouse"
+
+#. Tag: para
+#: index.docbook:320
+#, no-c-format
+msgid "Receiver for Cordless Presenter"
+msgstr "Receiver für Cordless Presenter"
+
+#. Tag: para
+#: index.docbook:323
+#, no-c-format
+msgid ""
+"Not all devices support all capabilities (typically cordless devices do not "
+"provide resolution switching, and of course only cordless devices support "
+"cordless status reporting), so some parts of the tab will not be enabled for "
+"some mouse types."
+msgstr ""
+"Nicht alle Geräte unterstützen sämtliche Eigenschaften (so unterstützen "
+"kabellose Geräte häufig kein Umschalten der Auflösung, und natürlich liefern "
+"nur kabellose Geräte den Zustand bei kabellosem Betrieb zurück), weshalb bei "
+"einigen Maustypen nur Teilbereiche der Karteikarte zugänglich sind."
+
+#. Tag: para
+#: index.docbook:330
+#, no-c-format
+msgid ""
+"If the mouse supports resolution switching, the <guilabel>Sensor Resolution</"
+"guilabel> radio button group will be enabled, and you can switch from "
+"<guilabel>400 counts per inch</guilabel> to <guilabel>800 counts per inch</"
+"guilabel> and back. If you use <guilabel>800 counts per inch</guilabel>, the "
+"same physical movement of the mouse will cause a greater (roughly double) "
+"amount of motion of the cursor. This tends to be popular amongst gamers."
+msgstr ""
+"Unterstützt die Maus das Umschalten der Auflösung, werden die Auswahlknöpfe "
+"der Gruppe <guilabel>Sensor-Auflösung</guilabel> aktiv, und Sie können "
+"zwischen <guilabel>400 cpi</guilabel> und <guilabel>800 cpi</guilabel> "
+"umschalten. Die Einstellung <guilabel>800 cpi</guilabel> bewirkt, dass "
+"dieselbe physikalische Bewegung der Maus etwa die doppelte Bewegung des "
+"Mauszeigers zur Folge hat. Dies ist vor allem bei Computerspielen gefragt."
+
+#. Tag: para
+#: index.docbook:339
+#, no-c-format
+msgid ""
+"If the mouse supports cordless reporting, the <guilabel>Battery Level</"
+"guilabel> and <guilabel>RF Channel</guilabel> widgets will be enabled. You "
+"can only change the <guilabel>RF Channel</guilabel> if your mouse has two "
+"channel support."
+msgstr ""
+"Unterstützt die Maus das Zurückmelden des kabellosen Zustands, sind die "
+"Elemente <guilabel>Batteriefüllstand</guilabel> und <guilabel>RF-Kanal</"
+"guilabel> zugänglich. Die Einstellung <guilabel>RF-Kanal</guilabel> können "
+"Sie nur ändern, wenn die Maus über Zweikanalunterstützung verfügt."
+
+#~ msgid "2010-10-05"
+#~ msgstr "2010-10-05"
+
+#~ msgid "Fixing permission problems on Logitech mice"
+#~ msgstr "Beheben von Rechteproblemen bei Logitech-Mäusen"
+
+#~ msgid ""
+#~ "Because of the way USB devices work, the code that accesses the current "
+#~ "status on Logitech mice needs to be able to write to the mouse. This "
+#~ "should be handled by your distribution, but if not, you may need to do "
+#~ "some configuration yourself."
+#~ msgstr ""
+#~ "Bedingt durch die Funktionsweise von USB-Geräten, muss der Code, der den "
+#~ "aktuellen Zustand der Logitech-Maus abfragt Schreibrechte auf die Maus "
+#~ "besitzen. Das sollte bereits von Ihrer Distribution entsprechende "
+#~ "eingerichtet worden sein. Ist das nicht der Fall, müssen Sie noch einige "
+#~ "Einstellungen vornehmen."
+
+#~ msgid ""
+#~ "On a &Linux; system, you should use the hotplug system to change the "
+#~ "ownership and permissions on the mouse entry in <filename>/proc/bus/usb</"
+#~ "filename>. One way to do this is to create a short script (<filename>/etc/"
+#~ "hotplug/usb/consoleUserPerms</filename>) that changes the ownership and "
+#~ "permissions, as shown below:"
+#~ msgstr ""
+#~ "Bei einem &Linux;-System sollten Sie zum Ändern der Zugriffsrechte auf "
+#~ "den Mauseintrag unter <filename>/proc/bus/usb</filename> das Hotplug-"
+#~ "System verwenden. Das können Sie &eg; über ein kurzes Skript (<filename>/"
+#~ "etc/hotplug/usb/consoleUserPerms</filename>) tun, das die Zugriffsrechte, "
+#~ "wie unten dargestellt, ändert."
+
+#~ msgid ""
+#~ "<![CDATA[\n"
+#~ "#!/bin/bash\n"
+#~ "#\n"
+#~ "# /etc/hotplug/usb/consoleUserPerms\n"
+#~ "#\n"
+#~ "# Sets up newly plugged in USB device so that the user who owns\n"
+#~ "# the console according to pam_console can access it from user space\n"
+#~ "#\n"
+#~ "# Note that for this script to work, you'll need all of the following:\n"
+#~ "# a) a line in the file /etc/hotplug/usb.usermap or another usermap file\n"
+#~ "#    in /etc/hotplug/usb/ that corresponds to the device you are using.\n"
+#~ "# b) a setup using pam_console creates the respective lock files\n"
+#~ "#    containing the name of the respective user. You can check for that\n"
+#~ "#    by executing \"echo `cat /var/{run,lock}/console.lock`\" and\n"
+#~ "#    verifying the appropriate user is mentioned somewhere there.\n"
+#~ "# c) a Linux kernel supporting hotplug and usbdevfs\n"
+#~ "# d) the hotplug package (http://linux-hotplug.sourceforge.net/)\n"
+#~ "#\n"
+#~ "# In the usermap file, the first field \"usb module\" should be named\n"
+#~ "# \"consoleUserPerms\" to invoke this script.\n"
+#~ "#\n"
+#~ "\n"
+#~ "if [ \"${ACTION}\" = \"add\" ] && [ -f \"${DEVICE}\" ]\n"
+#~ "then\n"
+#~ "# New code, using lock files instead of copying /dev/console permissions\n"
+#~ "# This also works with non-kdm logins (e.g. on a virtual terminal)\n"
+#~ "# Idea and code from Nalin Dahyabhai <nalin@redhat.com>\n"
+#~ "    if [ -f /var/run/console.lock ]\n"
+#~ "    then\n"
+#~ "        CONSOLEOWNER=`cat /var/run/console.lock`\n"
+#~ "    elif [ -f /var/lock/console.lock ]\n"
+#~ "    then\n"
+#~ "        CONSOLEOWNER=`cat /var/lock/console.lock`\n"
+#~ "    else\n"
+#~ "        CONSOLEOWNER=\n"
+#~ "    fi\n"
+#~ "    if [ -n \"$CONSOLEOWNER\" ]\n"
+#~ "    then\n"
+#~ "        chmod 0000 \"${DEVICE}\"\n"
+#~ "        chown \"$CONSOLEOWNER\" \"${DEVICE}\"\n"
+#~ "        chmod 0600 \"${DEVICE}\"\n"
+#~ "    fi\n"
+#~ "fi\n"
+#~ "]]>"
+#~ msgstr ""
+#~ "<![CDATA[\n"
+#~ "#!/bin/bash\n"
+#~ "#\n"
+#~ "# /etc/hotplug/usb/consoleUserPerms\n"
+#~ "#\n"
+#~ "# Setzt ein neu eingebundenes USB-Gerät so auf, dass der Benutzer,\n"
+#~ "# dem laut pam_console die console gehört, auf das Gerät zugreifen kann.\n"
+#~ "#\n"
+#~ "# Beachten Sie, dass Sie hierzu folgendes benötigen:\n"
+#~ "# a) eine Zeile in der Datei /etc/hotplug/usb.usermap oder einer anderen "
+#~ "usermap-Datei\n"
+#~ "#    in /etc/hotplug/usb/, die auf das verwendete Gerät verweist.\n"
+#~ "# b) ein Setup mit pam_console, das die entsprechenden Sperrdateien "
+#~ "anlegt,\n"
+#~ "#    die den Namen des betreffenden Benutzers enthalten. Sie können dies "
+#~ "durch\n"
+#~ "#    Aufrufen von \"echo `cat /var/{run,lock}/console.lock`\" prüfen und\n"
+#~ "#    nachsehen, ob der betreffende Benutzer auftaucht.\n"
+#~ "# c) ein Linux-Kernel, der hotplug und usbdevfs unterstützt\n"
+#~ "# d) das Paket hotplug (http://linux-hotplug.sourceforge.net/)\n"
+#~ "#\n"
+#~ "# In der usermap-Datei, sollte der erste Eintrag \"usb module\" \n"
+#~ "# \"consoleUserPerms\" lauten, um das Skript aufzurufen.\n"
+#~ "#\n"
+#~ "\n"
+#~ "if [ \"${ACTION}\" = \"add\" ] && [ -f \"${DEVICE}\" ]\n"
+#~ "then\n"
+#~ "# Neuer Code, der Sperrdateien benutzt anstelle des Kopierens der Rechte "
+#~ "von /dev/console\n"
+#~ "# Dies funktioniert auch mit Anmeldebildschirmen als kdm (e.g. in einem "
+#~ "virtuellen Terminal)\n"
+#~ "# Idee und Code von Nalin Dahyabhai <nalin@redhat.com>\n"
+#~ "    if [ -f /var/run/console.lock ]\n"
+#~ "    then\n"
+#~ "        CONSOLEOWNER=`cat /var/run/console.lock`\n"
+#~ "    elif [ -f /var/lock/console.lock ]\n"
+#~ "    then\n"
+#~ "        CONSOLEOWNER=`cat /var/lock/console.lock`\n"
+#~ "    else\n"
+#~ "        CONSOLEOWNER=\n"
+#~ "    fi\n"
+#~ "    if [ -n \"$CONSOLEOWNER\" ]\n"
+#~ "    then\n"
+#~ "        chmod 0000 \"${DEVICE}\"\n"
+#~ "        chown \"$CONSOLEOWNER\" \"${DEVICE}\"\n"
+#~ "        chmod 0600 \"${DEVICE}\"\n"
+#~ "    fi\n"
+#~ "fi\n"
+#~ "]]>"
+
+#~ msgid ""
+#~ "The usermap file that goes with this is <filename>/etc/hotplug/usb/"
+#~ "logitechmouse.usermap</filename>, as shown below:"
+#~ msgstr ""
+#~ "Die passende usermap-Datei ist <filename>/etc/hotplug/usb/logitechmouse."
+#~ "usermap</filename>, die wie folgt aussieht:"
+
+#~ msgid ""
+#~ "<![CDATA[\n"
+#~ "# script           match_flags idVendor idProduct bcdDevice_lo "
+#~ "bcdDevice_hi bDeviceClass bDeviceSubClass bDeviceProtocol bInterfaceClass "
+#~ "bInterfaceSubClass bInterfaceProtocol driver_info\n"
+#~ "# Wheel Mouse Optical\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc00e    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# MouseMan Traveler\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc00f    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# MouseMan Dual Optical\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc012    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# MX310 Optical Mouse\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc01b    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# MX510 Optical Mouse\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc01d    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# MX300 Optical Mouse\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc024    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# MX500 Optical Mouse\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc025    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# iFeel Mouse\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc031    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# Mouse Receiver\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc501    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# Dual Receiver\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc502    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# Cordless Freedom Optical\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc504    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# Cordless Elite Duo\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc505    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# MX700 Optical Mouse\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc506    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# Cordless Optical Trackman\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc508    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# Cordless MX Duo Receiver\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc50b    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# MX100 Laser Mouse\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc50e    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# Receiver for Cordless Presenter\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc702    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "]]>"
+#~ msgstr ""
+#~ "<![CDATA[\n"
+#~ "# script           match_flags idVendor idProduct bcdDevice_lo "
+#~ "bcdDevice_hi bDeviceClass bDeviceSubClass bDeviceProtocol bInterfaceClass "
+#~ "bInterfaceSubClass bInterfaceProtocol driver_info\n"
+#~ "# Wheel Mouse Optical\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc00e    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# MouseMan Traveler\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc00f    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# MouseMan Dual Optical\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc012    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# MX310 Optical Mouse\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc01b    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# MX510 Optical Mouse\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc01d    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# MX300 Optical Mouse\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc024    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# MX500 Optical Mouse\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc025    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# iFeel Mouse\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc031    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# Mouse Receiver\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc501    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# Dual Receiver\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc502    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# Cordless Freedom Optical\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc504    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# Cordless Elite Duo\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc505    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# MX700 Optical Mouse\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc506    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# Cordless Optical Trackman\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc508    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# Cordless MX Duo Receiver\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc50b    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# MX100 Laser Mouse\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc50e    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "# Receiver for Cordless Presenter\n"
+#~ "consoleUserPerms     0x0003      0x046d   0xc702    0x0000       "
+#~ "0xffff      0x00         0x00            0x00            0x00            "
+#~ "0x00               0x00               0x00000000\n"
+#~ "]]>"
+
+#~ msgid ""
+#~ "That should be all that is needed on &Linux; - just copy the files into "
+#~ "<filename>/etc/hotplug/usb/</filename>, and when the mouse is plugged in, "
+#~ "the ownership and permissions should be changed so that the user at the "
+#~ "console can access the mouse."
+#~ msgstr ""
+#~ "Das sollte für ein &Linux;System ausreichen. Kopieren Sie die Dateien "
+#~ "nach <filename>/etc/hotplug/usb/</filename>, und sobald die Maus "
+#~ "eingebunden wird, sollten sich die Zugriffsrechte so ändern, dass der "
+#~ "Benutzer Zugriff auf die Maus hat."
+
+#~ msgid "Cursor Theme"
+#~ msgstr "Zeigerdesign"
+
+#~ msgid ""
+#~ "This tab allows you to select from a number of cursor themes. A preview "
+#~ "of the cursor display is shown above the list box."
+#~ msgstr ""
+#~ "Diese Karteikarte erlaubt die Auswahl aus einer Reihe von Zeigerdesigns. "
+#~ "Über dem Auswahlfeld wird eine Vorschau angezeigt."
+
+#~ msgid ""
+#~ "The features provided by this tab may not be available on some systems. "
+#~ "Your system may need to be updated to support cursor themes."
+#~ msgstr ""
+#~ "Die auf dieser Karteikarte angebotenen Funktionen sind nicht auf allen "
+#~ "Systemen verfügbar."
+
+#~ msgid ""
+#~ "If you have additional cursor themes available, you can install and "
+#~ "remove them using the buttons below the list box. Note that you cannot "
+#~ "remove the default themes."
+#~ msgstr ""
+#~ "Wenn Sie über weitere Zeigerdesigns verfügen, können Sie diese über die "
+#~ "Knöpfe unter dem Listenfeld installieren oder löschen. Beachten Sie, dass "
+#~ "Sie das Standard-Design nicht löschen können."
+
+#~ msgid "KControl"
+#~ msgstr "KControl"
+
+#~ msgid "Visual feedback on activation"
+#~ msgstr "Optische Rückmeldung bei Aktivierung"
+
+#~ msgid ""
+#~ "When this option is checked, &kde; gives you visual feedback whenever you "
+#~ "click on something and activate it."
+#~ msgstr ""
+#~ "Wenn Sie diese Option aktiveren, erhalten Sie von &kde; eine visuelle "
+#~ "Rückmeldung, wenn Sie etwas durch Anklicken aktivieren."

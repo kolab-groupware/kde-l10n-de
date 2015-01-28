@@ -1,0 +1,197 @@
+# Rolf Eike Beer <kde@opensource.sf-tec.de>, 2008.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2008.
+# Frederik Schwarzer <schwarzer@kde.org>, 2008, 2009, 2010, 2011.
+# Burkhard Lück <lueck@hube-lueck.de>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_microblog\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-11-05 05:28+0000\n"
+"PO-Revision-Date: 2012-11-07 22:03+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: configuration.ui:23
+msgid "Login"
+msgstr "Anmeldung"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: configuration.ui:30
+msgid "Password:"
+msgstr "Passwort:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: configuration.ui:59
+msgid "Appearance"
+msgstr "Erscheinungsbild"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: configuration.ui:66
+msgid "Timeline size:"
+msgstr "Größe der Zeitleiste:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: configuration.ui:106
+msgid "Timeline refresh:"
+msgstr "Aktualisierung der Zeitleiste:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: configuration.ui:146
+msgid "Show friends:"
+msgstr "Freunde anzeigen:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: configuration.ui:204
+msgid "Service"
+msgstr "Dienst"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: configuration.ui:211
+msgid "Username:"
+msgstr "Benutzername:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: configuration.ui:227
+msgid "Service URL:"
+msgstr "Adresse des Dienstes:"
+
+#: microblog.cpp:234
+msgid "Timeline"
+msgstr "Zeitleiste"
+
+#: microblog.cpp:235
+msgid "Replies"
+msgstr "Antworten"
+
+#: microblog.cpp:236
+msgid "Messages"
+msgstr "Nachrichten"
+
+#: microblog.cpp:261
+msgid "Failed to load twitter DataEngine"
+msgstr "Twitter-Datentreiber kann nicht geladen werden."
+
+#: microblog.cpp:275
+msgid "Unable to load the widget"
+msgstr "Miniprogramm kann nicht geladen werden"
+
+#: microblog.cpp:523
+msgid "Your password is required."
+msgstr "Ihr Passwort ist erforderlich."
+
+#: microblog.cpp:552
+msgid "Your account information is incomplete."
+msgstr "Ihre Zugangsinformationen sind unvollständig."
+
+#: microblog.cpp:562
+msgid "Failed to access kwallet. Store password in config file instead?"
+msgstr ""
+"KWallet ist nicht verfügbar. Soll das Passwort in der Einrichtungsdatei "
+"gespeichert werden?"
+
+#: microblog.cpp:581 microblog.cpp:935
+msgid "Refreshing timeline..."
+msgstr "Zeitleiste wird aktualisiert ..."
+
+#: microblog.cpp:608
+#, kde-format
+msgid "1 new tweet"
+msgid_plural "%1 new tweets"
+msgstr[0] "%1 neuer Tweet"
+msgstr[1] "%1 neue Tweets"
+
+#: microblog.cpp:750
+msgid " message"
+msgid_plural " messages"
+msgstr[0] " Nachricht"
+msgstr[1] " Nachrichten"
+
+#: microblog.cpp:752
+msgid " minute"
+msgid_plural " minutes"
+msgstr[0] " Minute"
+msgstr[1] " Minuten"
+
+#: microblog.cpp:755
+msgid "General"
+msgstr "Allgemein"
+
+#: microblog.cpp:803
+#, kde-format
+msgid "%1 character left"
+msgid_plural "%1 characters left"
+msgstr[0] "Ein Zeichen verbleibt"
+msgstr[1] "%1 Zeichen verbleiben"
+
+#: microblog.cpp:895
+msgctxt "Repeat of the post also called retweet"
+msgid "Repeat completed"
+msgstr "Wiederholung abgeschlossen"
+
+#: microblog.cpp:897
+msgid "Repeat failed"
+msgstr "Wiederholung fehlgeschlagen"
+
+# %2 ist der Client
+#: postwidget.cpp:102
+#, kde-format
+msgctxt ""
+"%1 is a time string like '1 hour ago' - %2 is the name of a microblogging "
+"client"
+msgid "%1 from %2"
+msgstr "%1 über %2"
+
+#: postwidget.cpp:155
+msgid "Less than a minute ago"
+msgstr "Vor weniger als einer Minute"
+
+#: postwidget.cpp:157
+#, kde-format
+msgid "1 minute ago"
+msgid_plural "%1 minutes ago"
+msgstr[0] "Vor einer Minute"
+msgstr[1] "Vor %1 Minuten"
+
+#: postwidget.cpp:159
+msgid "Over an hour ago"
+msgstr "Vor über einer Stunde"
+
+#: postwidget.cpp:161
+#, kde-format
+msgid "1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "Vor einer Stunde"
+msgstr[1] "Vor %1 Stunden"
+
+#~ msgid ""
+#~ "<tr><td align='left' width='1%'><font color='%2'>%1</font></td><td "
+#~ "align='right' width='auto'><p align='right'><font color='%2'>%3%4</font></"
+#~ "p></td></tr>"
+#~ msgstr ""
+#~ "<tr><td align='left' width='1%'><font color='%2'>%1</font></td><td "
+#~ "align='right' width='auto'><p align='right'><font color='%2'>%3%4</font></"
+#~ "p></td></tr>"
+
+#~ msgid " tweets"
+#~ msgstr " Nachrichten"
+
+#~ msgid "%1 minutes ago"
+#~ msgstr "vor %1 Minuten"
+
+#, fuzzy
+#~| msgid "about %1 hours ago"
+#~ msgid "%1 hours ago"
+#~ msgstr "vor etwa %1 Stunden"
+
+#~ msgid "Configure Twitter Applet"
+#~ msgstr "Twitter-Programm einrichten"
+
+#~ msgid "less than %1 seconds ago"
+#~ msgstr "vor weniger als %1 Sekunden"

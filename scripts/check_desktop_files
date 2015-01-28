@@ -1,0 +1,232 @@
+#!/usr/bin/perl -w
+# -*- cperl-indent-level: 8; indent-tabs-mode: t -*-
+# Checks all .po files under the current directory (and subdirectories)
+#
+# Written by Francois-Xavier Duranceau <duranceau@free.fr>
+# and Stephan Kulow <coolo@kde.org>
+# and David Faure <faure@kde.org>
+
+use strict;
+use Cwd;
+use File::Basename;
+
+my $line_number;
+my $look_ahead = "";
+my $fuzzy;
+my $no_c_format;
+my $get_msg_current_file;
+my $topdir;
+
+sub read_line {
+	$line_number++;
+	$look_ahead = <INPUT>;
+	return $look_ahead;
+}
+
+# Read a msgid and return three values:
+#  @(comment, msgid (reformatted in one line), raw msgid (as read))
+# Also sets a few vars: $fuzzy, $no_c_format
+sub get_msgid() {
+	my $line = '';
+	$fuzzy = 0;
+	$no_c_format = 0;
+	my $comment = "";
+
+	while ( $line = read_line() ) {
+		die "msgstr found when a msgid was expected ($get_msg_current_file:$line_number)"
+		if ( $line =~ /^\s*msgstr/ );
+		
+		if ( $line =~ /^\#,.*fuzzy/) {
+			$fuzzy = 1;
+		}
+
+		if ( $line =~ /^\#,.*no-c-format/) {
+			$no_c_format = 1;
+		}
+
+		if ( $line !~ /^\s*msgid\s+"(.*)"\s*\n/ ) {
+			$comment .= $line;
+			next;
+		}
+
+		my $rawstr = 'msgid "' . $1 . "\"\n";
+		#               print "found a msgid (`$1')\n";
+		my $str = $1;
+		while ( $line = read_line() ) {
+			last if($line !~ /^\s*"(.*)"\s*\n/ );
+			$str .= $1;
+			$rawstr .= $line;
+		}
+
+		return ($comment, $str, $rawstr);
+	}
+	return ($comment,undef,undef);
+}
+
+
+# Read a complete msgstr and return @(msgstr, raw msgstr)
+sub get_msgstr() {
+
+	my $rawstr = $look_ahead;
+	die "expected msgstr not found at $get_msg_current_file:$line_number"
+		if( $look_ahead !~ /^\s*msgstr\s+"(.*)"/ );
+		
+#	print "found a msgstr (`$1')\n";
+
+	my $str = $1;
+	my $line = '';
+	while ( $line = read_line() ) {
+		last if($line !~ /^\s*"(.*)"/ );
+		$str .= $1;
+		$rawstr .= $line;
+	}
+	return ($str, $rawstr);
+}
+
+# Check a msgid/msgstr pair for consistency
+# Returns 0 on error (i.e. fuzzify this msgstr) and 1 on success (think false/true)
+sub check_msgstr($$$){
+	my ($msgid, $msgstr,$current_file) = @_;
+	if ($msgstr =~ m/[^\\]\\n/) {
+	        print STDERR "translation contains newline in $current_file:$line_number\n";
+		return 0;
+	}
+
+	return 1;
+}
+
+# We must find the topdir (l10n) since the templates are under there
+$topdir = Cwd::realpath(cwd());
+while ( ! -d $topdir."/scripts" ) {
+  $topdir = dirname($topdir);
+  if ($topdir eq '/') {
+    $topdir = Cwd::realpath(cwd());
+    die "scripts not found when going up from $topdir";
+  }
+}
+#print STDERR "topdir=$topdir\n";
+
+my $plural_forms = "";
+my $last_language = "";
+
+sub checkfile($) {
+	my ($current_file) = @_;
+	$get_msg_current_file = $current_file; # global var used by get_msgstr/get_msgid
+	#print "Processing $current_file\n";
+	my %tofuzzy = ();
+	my $desktop_file;
+	if (basename($current_file) =~ "^desktop_.*\.po") {
+		$desktop_file = 1;
+	} else {
+		return;
+	}
+
+	# Now open the po file
+	# my %msgstrs = ();
+	my %seen_msgids = ();
+	open( INPUT, $current_file ) or die "Can't open $current_file!";
+
+	my $msgid;
+	my $msgstr;
+	$line_number = 0;
+	
+	# Retrieve $msgid and $msgstr
+	(undef,$msgid,undef) = get_msgid();
+	($msgstr,undef) = get_msgstr();
+	print STDERR "Warning: No header in $current_file\n" if( length($msgid));
+
+	while ( 1 ) {
+		(undef,$msgid,undef) = get_msgid();
+		last unless defined $msgid;
+		($msgstr,undef) = get_msgstr();
+
+		next if (!length($msgstr));
+			if (!$fuzzy) {
+				if (!check_msgstr($msgid, $msgstr, $current_file)) {
+					$tofuzzy{$msgid} = 1;
+				}
+			}
+                        elsif (!length($msgid)) {
+                                print STDERR "ERROR: empty msgid is marked as fuzzy!\n";
+                        }
+			# $msgstrs{$msgid} = $msgstr;
+	}
+	close( INPUT );
+
+	if (%tofuzzy) {
+		# Write out modified file
+		open( OUTPUT, ">$current_file.NEW" ) || die;
+		open( INPUT, $current_file ) || die;
+		my $comment;
+		my $rawmsgid;
+		my $rawmsgstr;
+		my $msgid;
+
+		while( 1 ) {
+			($comment,$msgid,$rawmsgid) = get_msgid();
+			last unless defined $msgid;
+			(undef,$rawmsgstr) = get_msgstr();
+
+			if ( exists $tofuzzy{$msgid} ) {
+				print OUTPUT "#, fuzzy\n";
+			}
+			print OUTPUT $comment;
+			print OUTPUT $rawmsgid;
+			print OUTPUT $rawmsgstr;
+			print OUTPUT "\n";
+		}
+		print OUTPUT $comment;
+		close(OUTPUT);
+		close(INPUT);
+		system("if cmp -s $current_file $current_file.NEW; then rm $current_file.NEW; else echo 'Fixed $current_file'; mv -f $current_file.NEW $current_file; fi");
+		#system("cat $current_file.NEW; rm $current_file.NEW");
+	}
+	#	print "-----\n";
+}
+
+sub recursive_check($)
+{
+	my $dir = shift;
+	opendir (my $dirhandle, $dir) or die "Can't open $dir: $!";
+	my @filenames = grep { /^[^\.]/ } readdir($dirhandle);
+	#print "Entering $dir...\n" if ($#filenames > 0);
+	FILENAMELOOP: for my $f (@filenames)
+	{
+		my $filename = "$dir/$f";
+		#print "$filename\n";
+		if (-d $filename) {
+                        # skip directories with the name "internal"
+                        # (PO files being there might be non-KDE and should not be checked with KDE criteria.)
+                        next FILENAMELOOP if ( $f =~ /^internal$/ );
+                        # do not try to mess with the templates
+                        next FILENAMELOOP if ( $f =~ /^templates$/ );
+			&recursive_check($filename);
+		}
+                elsif (-z $filename && $filename !~ /no-auto-merge/) {
+                        print STDERR "File $filename is empty! Skipping!\n";
+                }
+		elsif (-f $filename && $filename =~ /\.po$/) {
+			if (-x $filename) {
+				system("svn -q propdel svn:executable '$filename'");
+				system("chmod a-x '$filename'") if -x $filename;
+				print STDERR "File $filename had executable bit set, removed.\n";
+			}
+			&checkfile($filename);
+		}
+		elsif (-f $filename && $filename =~ /\.pot$/) {
+			print STDERR "File $filename has .pot extension, perhaps it should be renamed?\n";
+		}
+	}
+	closedir($dirhandle);
+}
+
+my $startdir;
+if ($ARGV[0]) {
+	$startdir = $ARGV[0];
+	$startdir = cwd() . "/" . $startdir unless ($startdir =~ m,^/,);
+} else {
+	$startdir = cwd();
+}
+#print "startdir=$startdir\n"
+
+&recursive_check($startdir);

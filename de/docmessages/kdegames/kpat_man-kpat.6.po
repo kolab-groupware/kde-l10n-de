@@ -1,0 +1,805 @@
+# Frank Schütte <F.Schuette@t-online.de>, 2004.
+# Burkhard Lück <lueck@hube-lueck.de>, 2005, 2008, 2010, 2011, 2013.
+# Stephan Johach <hunsum@gmx.de>, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: kpat_man-kpat.6\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:14+0000\n"
+"PO-Revision-Date: 2013-09-08 15:16+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: refentrytitle
+#: man-kpat.6.docbook:9
+#, no-c-format
+msgid "KPat"
+msgstr "KPat"
+
+#. Tag: manvolnum
+#: man-kpat.6.docbook:10
+#, no-c-format
+msgid "<manvolnum>6</manvolnum>"
+msgstr "<manvolnum>6</manvolnum>"
+
+#. Tag: refmiscinfo
+#: man-kpat.6.docbook:11
+#, no-c-format
+msgid "2010-11-09"
+msgstr "2010-11-09"
+
+#. Tag: refmiscinfo
+#: man-kpat.6.docbook:12
+#, no-c-format
+msgid "kdegames"
+msgstr "kdegames"
+
+#. Tag: refmiscinfo
+#: man-kpat.6.docbook:13
+#, no-c-format
+msgid "KDE User's Manual"
+msgstr "&kde;-Benutzerhandbuch"
+
+#. Tag: refname
+#: man-kpat.6.docbook:17
+#, no-c-format
+msgid "&kappname;"
+msgstr "&kappname;"
+
+#. Tag: refpurpose
+#: man-kpat.6.docbook:18
+#, no-c-format
+msgid "A highly addictive &kde; card game."
+msgstr "Ein süchtig machendes &kde;-Kartenspiel."
+
+#. Tag: cmdsynopsis
+#: man-kpat.6.docbook:22
+#, no-c-format
+msgid ""
+"<command>kpat</command> <arg choice=\"opt\" rep=\"repeat\">Qt-option</arg> "
+"<arg choice=\"opt\" rep=\"repeat\">KDE-option</arg> <group choice=\"opt"
+"\"><option>--solvegame</option> <replaceable> file</replaceable></group> "
+"<group choice=\"opt\"><option>--solve</option> <replaceable> num</"
+"replaceable></group> <group choice=\"opt\"><option>--start</option> "
+"<replaceable> num</replaceable></group> <group choice=\"opt\"><option>--end</"
+"option> <replaceable> num</replaceable></group> <group choice=\"opt"
+"\"><option>--gametype</option> <replaceable> game</replaceable></group>"
+msgstr ""
+"<command>kpat</command> <arg choice=\"opt\" rep=\"repeat\">Qt-Option</arg> "
+"<arg choice=\"opt\" rep=\"repeat\">KDE-Option</arg> <group choice=\"opt"
+"\"><option>--solvegame</option> <replaceable> datei</replaceable></group> "
+"<group choice=\"opt\"><option>--solve</option> <replaceable> num</"
+"replaceable></group> <group choice=\"opt\"><option>--start</option> "
+"<replaceable> num</replaceable></group> <group choice=\"opt\"><option>--end</"
+"option> <replaceable> num</replaceable></group> <group choice=\"opt"
+"\"><option>--gametype</option> <replaceable> spiel</replaceable></group>"
+
+#. Tag: title
+#: man-kpat.6.docbook:36
+#, no-c-format
+msgid "DESCRIPTION"
+msgstr "Beschreibung"
+
+#. Tag: para
+#: man-kpat.6.docbook:37
+#, no-c-format
+msgid ""
+"&kpatience; is a compendium of several well known patience card games, "
+"ranging from the well known Klondike and Freecell, to lesser known games "
+"such as Grandfather's Clock and Mod3. In all there are 12 variations for you "
+"to while away time."
+msgstr ""
+"&kpatience; besteht aus einer Zusammenstellung von 12 verschiedenen "
+"Patiencen, unter anderem die bekannten Klondike und Freecell sowie die "
+"weniger bekannten Großvaters Uhr und Mod3."
+
+#. Tag: title
+#: man-kpat.6.docbook:45
+#, no-c-format
+msgid "OPTIONS"
+msgstr "Optionen"
+
+#. Tag: para
+#: man-kpat.6.docbook:46
+#, no-c-format
+msgid ""
+"This program follows the usual GNU command line syntax, with long options "
+"starting with two dashes (`--'). A summary of the options supported by "
+"<command>kpat</command> is included below."
+msgstr ""
+"Das Programm folgt den GNU-Konventionen für Befehlszeilenoptionen, lange "
+"Optionen beginnen dabei mit zwei Bindestrichen (`--'). Eine Zusammenstellung "
+"der von <command>kpat</command> unterstützten Optionen befindet sich weiter "
+"unten."
+
+#. Tag: title
+#: man-kpat.6.docbook:53
+#, no-c-format
+msgid "Generic Options"
+msgstr "Allgemeine Optionen"
+
+#. Tag: option
+#: man-kpat.6.docbook:57
+#, no-c-format
+msgid "--author"
+msgstr "--author"
+
+#. Tag: para
+#: man-kpat.6.docbook:59
+#, no-c-format
+msgid "Show author information"
+msgstr "Zeigt Informationen über den Autor"
+
+#. Tag: option
+#: man-kpat.6.docbook:64
+#, no-c-format
+msgid "--help"
+msgstr "--help"
+
+#. Tag: para
+#: man-kpat.6.docbook:66
+#, no-c-format
+msgid "Show help about options"
+msgstr "Zeigt eine Hilfe zu den Optionen"
+
+#. Tag: option
+#: man-kpat.6.docbook:71
+#, no-c-format
+msgid "--help-qt"
+msgstr "--help-qt"
+
+#. Tag: para
+#: man-kpat.6.docbook:73
+#, no-c-format
+msgid "Show Qt specific options"
+msgstr "Spezielle Optionen für Qt anzeigen"
+
+#. Tag: option
+#: man-kpat.6.docbook:78
+#, no-c-format
+msgid "--help-kde"
+msgstr "--help-kde"
+
+#. Tag: para
+#: man-kpat.6.docbook:80
+#, no-c-format
+msgid "Show &kde; specific options"
+msgstr "Zeigt die &kde;-spezifischen Optionen"
+
+#. Tag: option
+#: man-kpat.6.docbook:85
+#, no-c-format
+msgid "--help-all"
+msgstr "--help-all"
+
+#. Tag: para
+#: man-kpat.6.docbook:87
+#, no-c-format
+msgid "Show all options"
+msgstr "Alle Optionen anzeigen"
+
+#. Tag: option
+#: man-kpat.6.docbook:92
+#, no-c-format
+msgid "--license"
+msgstr "--license"
+
+#. Tag: para
+#: man-kpat.6.docbook:94
+#, no-c-format
+msgid "Show license information"
+msgstr "Zeigt Lizenzinformationen"
+
+#. Tag: term
+#: man-kpat.6.docbook:99
+#, no-c-format
+msgid "<option>-v</option>, <option>--version</option>"
+msgstr "<option>-v</option>, <option>--version</option>"
+
+#. Tag: para
+#: man-kpat.6.docbook:101
+#, no-c-format
+msgid "Show version information and exit."
+msgstr "Zeigt Versionsinformationen an und beendet sich danach wieder."
+
+#. Tag: title
+#: man-kpat.6.docbook:110
+#, no-c-format
+msgid "Qt Options"
+msgstr "Qt-Optionen"
+
+#. Tag: option
+#: man-kpat.6.docbook:114
+#, no-c-format
+msgid "--display <replaceable>displayname</replaceable>"
+msgstr "--display <replaceable>Anzeigename</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:116
+#, no-c-format
+msgid "Use the X-server display <emphasis>displayname</emphasis>."
+msgstr "Verwendet die X-Server-Anzeige <emphasis>Anzeigename</emphasis>."
+
+#. Tag: option
+#: man-kpat.6.docbook:121
+#, no-c-format
+msgid "--session <replaceable>sessionId</replaceable>"
+msgstr "--session <replaceable>Sitzungs-Id</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:123
+#, no-c-format
+msgid ""
+"Restore the application for the given <replaceable>sessionId</replaceable>."
+msgstr ""
+"Stellt den Zustand der Anwendung für die genannte <replaceable>Sitzungs-Id</"
+"replaceable> wieder her."
+
+#. Tag: option
+#: man-kpat.6.docbook:130
+#, no-c-format
+msgid "--cmap"
+msgstr "--cmap"
+
+#. Tag: para
+#: man-kpat.6.docbook:132
+#, no-c-format
+msgid ""
+"Causes the application to install a private color map on an 8-bit display."
+msgstr ""
+"Veranlasst die Anwendung ein eigenes Farbschema auf einer 8-Bit-Anzeige "
+"darzustellen."
+
+#. Tag: option
+#: man-kpat.6.docbook:140
+#, no-c-format
+msgid "--ncols <replaceable>count</replaceable>"
+msgstr "--ncols <replaceable>Anzahl</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:142
+#, no-c-format
+msgid ""
+"Limits the number of colors allocated in the color cube on a 8-bit display, "
+"if the application is using the <methodname>QApplication::ManyColor</"
+"methodname> color specification."
+msgstr ""
+"Begrenzt die Anzahl der erzeugten Farben des Farbwürfels bei einer 8-Bit-"
+"Anzeige, falls die Anwendung die Farbspezifikation <methodname>QApplication::"
+"ManyColor</methodname> verwendet."
+
+#. Tag: option
+#: man-kpat.6.docbook:151
+#, no-c-format
+msgid "--nograb"
+msgstr "--nograb"
+
+#. Tag: para
+#: man-kpat.6.docbook:153
+#, no-c-format
+msgid "tells Qt to never grab the mouse or the keyboard."
+msgstr "verhindert, dass Qt die Maus oder die Tastatur einfängt."
+
+#. Tag: option
+#: man-kpat.6.docbook:157
+#, no-c-format
+msgid "--dograb"
+msgstr "--dograb"
+
+#. Tag: para
+#: man-kpat.6.docbook:159
+#, no-c-format
+msgid ""
+"running under a debugger can cause an implicit <option>-nograb</option>, use "
+"<option>-dograb</option> to override."
+msgstr ""
+"Der Einsatz eines Debugger kann implizit die Option <option>-nograb</option> "
+"aktivieren, die Option <option>-dograb</option> dient zur Übersteuerung."
+
+#. Tag: option
+#: man-kpat.6.docbook:167
+#, no-c-format
+msgid "--sync"
+msgstr "--sync"
+
+#. Tag: para
+#: man-kpat.6.docbook:169
+#, no-c-format
+msgid "switches to synchronous mode for debugging."
+msgstr "Schaltet zum Debuggen in den synchronen Modus um."
+
+#. Tag: term
+#: man-kpat.6.docbook:173
+#, no-c-format
+msgid ""
+"<option>--fn</option>, <option>--font <replaceable>fontname</replaceable></"
+"option>"
+msgstr ""
+"<option>--fn</option>, <option>--font <replaceable>Zeichensatz</"
+"replaceable></option>"
+
+#. Tag: para
+#: man-kpat.6.docbook:175
+#, no-c-format
+msgid "defines the application font."
+msgstr "Legt den Anwendungszeichensatz fest."
+
+#. Tag: term
+#: man-kpat.6.docbook:179
+#, no-c-format
+msgid ""
+"<option>--bg</option>, <option>--background <replaceable>color</"
+"replaceable></option>"
+msgstr ""
+"<option>--bg</option>, <option>--background <replaceable>Farbe</"
+"replaceable></option>"
+
+#. Tag: para
+#: man-kpat.6.docbook:181
+#, no-c-format
+msgid ""
+"sets the default background color and an application palette (light and dark "
+"shades are calculated)."
+msgstr ""
+"Legt die Standard-Hintergrundfarbe und die Farbpalette (helle und dunkle "
+"Schatten werden berechnet) fest."
+
+#. Tag: term
+#: man-kpat.6.docbook:189
+#, no-c-format
+msgid ""
+"<option>--fg</option>,<option>--foreground <replaceable>color</replaceable></"
+"option>"
+msgstr ""
+"<option>--fg</option>,<option>--foreground <replaceable>Farbe</replaceable></"
+"option>"
+
+#. Tag: para
+#: man-kpat.6.docbook:191
+#, no-c-format
+msgid "sets the default foreground color."
+msgstr "Legt die Standardvordergrundfarbe fest."
+
+#. Tag: term
+#: man-kpat.6.docbook:195
+#, no-c-format
+msgid ""
+"<option>--btn</option>, <option>--button <replaceable>color</replaceable></"
+"option>"
+msgstr ""
+"<option>--btn</option>, <option>--button <replaceable>Farbe</replaceable></"
+"option>"
+
+#. Tag: para
+#: man-kpat.6.docbook:197
+#, no-c-format
+msgid "sets the default button color."
+msgstr "Legt die Standard-Knopf-Farbe fest."
+
+#. Tag: option
+#: man-kpat.6.docbook:201
+#, no-c-format
+msgid "--name <replaceable>name</replaceable>"
+msgstr "--name <replaceable>Name</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:203
+#, no-c-format
+msgid "sets the application name."
+msgstr "Legt den Namen der Anwendung fest."
+
+#. Tag: option
+#: man-kpat.6.docbook:207
+#, no-c-format
+msgid "--title <replaceable>title</replaceable>"
+msgstr "--title <replaceable>Titel</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:209
+#, no-c-format
+msgid "sets the application title (caption)."
+msgstr "Legt den Titel der Anwendung fest (Fenstertitel)."
+
+#. Tag: option
+#: man-kpat.6.docbook:213
+#, no-c-format
+msgid "--visual <replaceable>TrueColor</replaceable>"
+msgstr "--visual <replaceable>TrueColor</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:215
+#, no-c-format
+msgid "forces the application to use a TrueColor visual on an 8-bit display."
+msgstr ""
+"Schaltet die Anwendung auf einer 8-Bit-Anzeige um auf eine TrueColor-Anzeige."
+
+#. Tag: option
+#: man-kpat.6.docbook:222
+#, no-c-format
+msgid "--inputstyle"
+msgstr "--inputstyle"
+
+#. Tag: para
+#: man-kpat.6.docbook:224
+#, no-c-format
+msgid ""
+"sets XIM (X Input Method) input style. Possible values are onthespot, "
+"overthespot, offthespot and root."
+msgstr ""
+"Legt den XIM (X Input Method) fest. Mögliche Werte sind onthespot, "
+"overthespot, offthespot und root."
+
+#. Tag: option
+#: man-kpat.6.docbook:232
+#, no-c-format
+msgid "--im <replaceable>XIM server</replaceable>"
+msgstr "--im <replaceable>XIM-Server</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:234
+#, no-c-format
+msgid "set XIM server."
+msgstr "Legt den XIM-Server fest."
+
+#. Tag: option
+#: man-kpat.6.docbook:238
+#, no-c-format
+msgid "--noxim"
+msgstr "--noxim"
+
+#. Tag: para
+#: man-kpat.6.docbook:240
+#, no-c-format
+msgid "disable XIM."
+msgstr "XIM deaktivieren."
+
+#. Tag: option
+#: man-kpat.6.docbook:244
+#, no-c-format
+msgid "--reverse"
+msgstr "--reverse"
+
+#. Tag: para
+#: man-kpat.6.docbook:246
+#, no-c-format
+msgid "mirrors the whole layout of widgets."
+msgstr "Ordnet sämtliche Bedienelemente spiegelverkehrt an."
+
+#. Tag: option
+#: man-kpat.6.docbook:250
+#, no-c-format
+msgid "--stylesheet <replaceable>file.qss</replaceable>"
+msgstr "--stylesheet <replaceable>file.qss</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:252
+#, no-c-format
+msgid "applies the Qt stylesheet to the application widgets."
+msgstr "Wendet die Qt-Stilvorlage auf Anwendungs-Dialoge an."
+
+#. Tag: option
+#: man-kpat.6.docbook:256
+#, no-c-format
+msgid "--graphicssystem <replaceable>system</replaceable>"
+msgstr "--graphicssystem <replaceable>system</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:258
+#, no-c-format
+msgid ""
+"use a different graphics system instead of the default one, options are "
+"<quote>raster</quote> and <quote>opengl</quote> (experimental)."
+msgstr ""
+"Verwendet ein anderes Grafiksystem anstelle der Voreinstellung. Zur "
+"Verfügung stehen „raster“ und „opengl“ (experimentell).."
+
+#. Tag: title
+#: man-kpat.6.docbook:266
+#, no-c-format
+msgid "KDE Options"
+msgstr "KDE-Optionen"
+
+#. Tag: option
+#: man-kpat.6.docbook:269
+#, no-c-format
+msgid "--caption <replaceable>caption</replaceable>"
+msgstr "--caption <replaceable>Überschrift</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:271
+#, no-c-format
+msgid "Use <emphasis>caption</emphasis> as name in the titlebar."
+msgstr ""
+"Verwendet <emphasis>Überschrift</emphasis> als Name in der Titelleiste."
+
+#. Tag: option
+#: man-kpat.6.docbook:276
+#, no-c-format
+msgid "--icon <replaceable>icon</replaceable>"
+msgstr "--icon <replaceable>Symbol</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:278
+#, no-c-format
+msgid "Use <emphasis>icon</emphasis> as the application icon."
+msgstr "Verwendet <emphasis>Symbol</emphasis> als Anwendungssymbol."
+
+#. Tag: option
+#: man-kpat.6.docbook:283
+#, no-c-format
+msgid "--config <replaceable>filename</replaceable>"
+msgstr "--config <replaceable>filename</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:285
+#, no-c-format
+msgid "Use alternative configuration file."
+msgstr "Andere Einrichtungsdatei verwenden."
+
+#. Tag: option
+#: man-kpat.6.docbook:292
+#, no-c-format
+msgid "--nocrashhandler"
+msgstr "--nocrashhandler"
+
+#. Tag: para
+#: man-kpat.6.docbook:294
+#, no-c-format
+msgid "Disable crash handler, to get core dumps."
+msgstr ""
+"Absturzprogramm deaktivieren, zur Erzeugung von <quote>core dumps</quote>."
+
+#. Tag: option
+#: man-kpat.6.docbook:299
+#, no-c-format
+msgid "--waitforwm"
+msgstr "--waitforwm"
+
+#. Tag: para
+#: man-kpat.6.docbook:301
+#, no-c-format
+msgid "Waits for a WM_NET compatible windowmanager."
+msgstr "Wartet auf einen WM_NET-kompatiblen Fenstermanager."
+
+#. Tag: option
+#: man-kpat.6.docbook:308
+#, no-c-format
+msgid "--style <replaceable>style</replaceable>"
+msgstr "--style <replaceable>Stil</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:310
+#, no-c-format
+msgid "sets the application &GUI; style."
+msgstr "Legt den &GUI;-Stil der Anwendung fest."
+
+#. Tag: option
+#: man-kpat.6.docbook:315
+#, no-c-format
+msgid "--geometry <replaceable>geometry</replaceable>"
+msgstr "--geometry <replaceable>Größe</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:317
+#, no-c-format
+msgid ""
+"sets the client geometry of the main widget - see the manual page <ulink url="
+"\"man:/X\">man:/X</ulink> for the argument format (usually WidthxHeight+XPos"
+"+YPos)."
+msgstr ""
+"Legt die Geometrie des Hauptelements im Client-Programm fest. Das Format für "
+"die Argumente finden Sie mit <ulink url=\"man:/X\">man X</ulink> "
+"(normalerweise BreitexHöhe+XPos+YPos)."
+
+#. Tag: title
+#: man-kpat.6.docbook:329
+#, no-c-format
+msgid "Options"
+msgstr "Optionen"
+
+#. Tag: term
+#: man-kpat.6.docbook:333
+#, no-c-format
+msgid "<option>--solvegame</option> <replaceable> file</replaceable>"
+msgstr "<option>--solvegame</option> <replaceable> datei</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:335
+#, no-c-format
+msgid "Try to find a solution to the given savegame"
+msgstr "Lösung für das angegebene gespeicherte Spiel suchen"
+
+#. Tag: term
+#: man-kpat.6.docbook:340
+#, no-c-format
+msgid "<option>--solve</option> <replaceable> num</replaceable>"
+msgstr "<option>--solve</option> <replaceable> num</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:342
+#, no-c-format
+msgid "Dealer to solve (debug)"
+msgstr "Zu lösende Spielart (Debug)"
+
+#. Tag: term
+#: man-kpat.6.docbook:347
+#, no-c-format
+msgid "<option>--start</option> <replaceable> num</replaceable>"
+msgstr "<option>--start</option> <replaceable> num</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:349
+#, no-c-format
+msgid "Game range start (default 0:INT_MAX)"
+msgstr "Anfang des Spielbereichs (Standard 0:INT_MAX)"
+
+#. Tag: term
+#: man-kpat.6.docbook:354
+#, no-c-format
+msgid "<option>--end</option> <replaceable> num</replaceable>"
+msgstr "<option>--end</option> <replaceable> num</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:356
+#, no-c-format
+msgid "Game range end (default start:start if start given)"
+msgstr "Ende des Spielbereichs (Standard 0:INT_MAX) "
+
+#. Tag: term
+#: man-kpat.6.docbook:361
+#, no-c-format
+msgid "<option>--gametype</option> <replaceable> game</replaceable>"
+msgstr "<option>--gametype</option> <replaceable> spiel</replaceable>"
+
+#. Tag: para
+#: man-kpat.6.docbook:363
+#, no-c-format
+msgid ""
+"Skip the selection screen and load a particular game type. Valid values are: "
+"acesup, fortyeight, freecell, golf, grandfather, grandfathersclock, gypsy, "
+"klondike, mod3, simplesimon, spider, yukon"
+msgstr ""
+"Überspringt den Auswahlbildschirm und startet die gewünschte Spielart "
+"direkt. Folgende Spielarten sind verfügbar: acesup, fortyeight, freecell, "
+"golf, grandfather, grandfathersclock, gypsy, klondike, mod3, simplesimon, "
+"spider, yukon."
+
+#. Tag: title
+#: man-kpat.6.docbook:371
+#, no-c-format
+msgid "Arguments"
+msgstr "Argumente"
+
+#. Tag: replaceable
+#: man-kpat.6.docbook:375
+#, no-c-format
+msgid "file"
+msgstr "file"
+
+#. Tag: para
+#: man-kpat.6.docbook:377
+#, no-c-format
+msgid "File to load"
+msgstr "Zu ladende Datei"
+
+#. Tag: title
+#: man-kpat.6.docbook:387
+#, no-c-format
+msgid "SEE ALSO"
+msgstr "Siehe auch"
+
+#. Tag: para
+#: man-kpat.6.docbook:388
+#, no-c-format
+msgid ""
+"&kpatience; is documented in detail in <emphasis>The &kpatience; Handbook</"
+"emphasis> (<filename>$<envar>KDEDIR</envar>/share/doc/HTML/en/kpat/index."
+"html</filename> or enter <userinput>help:/kpat/index.html</userinput> in "
+"&konqueror;)."
+msgstr ""
+"&kpatience; wird detailliert beschrieben im <emphasis>Handbuch zu &kpatience;"
+"</emphasis> (unter <filename>$<envar>KDEDIR</envar>/share/doc/HTML/de/kpat/"
+"index.html</filename> oder durch Eingabe von <userinput>help:/kpat/index."
+"html</userinput> in &konqueror;). "
+
+#. Tag: title
+#: man-kpat.6.docbook:398
+#, no-c-format
+msgid "AUTHOR"
+msgstr "Autor"
+
+#. Tag: para
+#: man-kpat.6.docbook:400
+#, no-c-format
+msgid "&kpatience; is by:"
+msgstr "&kpatience; stammt von:"
+
+#. Tag: member
+#: man-kpat.6.docbook:402
+#, no-c-format
+msgid "Paul Olav Tvete"
+msgstr "Paul Olav Tvete"
+
+#. Tag: member
+#: man-kpat.6.docbook:403
+#, no-c-format
+msgid "Mario Weilguni <email>mweilguni@kde.org</email>"
+msgstr "Mario Weilguni <email>mweilguni@kde.org</email>"
+
+#. Tag: member
+#: man-kpat.6.docbook:404
+#, no-c-format
+msgid "Matthias Ettrich <email>ettrich@kde.org</email>"
+msgstr "Matthias Ettrich <email>ettrich@kde.org</email>"
+
+#. Tag: member
+#: man-kpat.6.docbook:405
+#, no-c-format
+msgid "Rodolfo Borges <email>barrett@labma.ufrj.br</email>"
+msgstr "Rodolfo Borges <email>barrett@labma.ufrj.br</email>"
+
+#. Tag: member
+#: man-kpat.6.docbook:406
+#, no-c-format
+msgid "Peter H. Ruegg <email>kpat@incense.org</email>"
+msgstr "Peter H. Ruegg <email>kpat@incense.org</email>"
+
+#. Tag: member
+#: man-kpat.6.docbook:407
+#, no-c-format
+msgid "Michael Koch <email>koch@kde.org</email>"
+msgstr "Michael Koch <email>koch@kde.org</email>"
+
+#. Tag: member
+#: man-kpat.6.docbook:408
+#, no-c-format
+msgid "Marcus Meissner <email>mm@caldera.de</email>"
+msgstr "Marcus Meissner <email>mm@caldera.de</email>"
+
+#. Tag: member
+#: man-kpat.6.docbook:409
+#, no-c-format
+msgid "Shlomi Fish <email>shlomif@vipe.technion.ac.il</email>"
+msgstr "Shlomi Fish <email>shlomif@vipe.technion.ac.il</email>"
+
+#. Tag: member
+#: man-kpat.6.docbook:410
+#, no-c-format
+msgid "Stephan Kulow <email>coolo@kde.org</email>"
+msgstr "Stephan Kulow <email>coolo@kde.org</email>"
+
+#~ msgid "&kde-http;"
+#~ msgstr "&kde-http;"
+
+#~ msgid "KPAT"
+#~ msgstr "KPAT"
+
+#~ msgid "January 24, 2002"
+#~ msgstr "24. Januar 2002"
+
+#~ msgid ""
+#~ "<command>kpat</command> <arg choice=\"opt\" rep=\"repeat\">Qt-option</"
+#~ "arg> <arg choice=\"opt\" rep=\"repeat\">KDE-option</arg>"
+#~ msgstr ""
+#~ "<command>kpat</command> <arg choice=\"opt\" rep=\"repeat\">Qt-option</"
+#~ "arg> <arg choice=\"opt\" rep=\"repeat\">KDE-option</arg>"
+
+#~ msgid "--miniicon <replaceable>icon</replaceable>"
+#~ msgstr "--miniicon <replaceable>Symbol</replaceable>"
+
+#~ msgid "Use <replaceable>icon</replaceable> as the icon in the titlebar."
+#~ msgstr ""
+#~ "Verwendet <replaceable>Symbol</replaceable> als Symbol in der Titelzeile."
+
+#~ msgid "--dcopserver <replaceable>server</replaceable>"
+#~ msgstr "--dcopserver <replaceable>Server</replaceable>"
+
+#~ msgid "Use the DCOP Server specified by <emphasis>server</emphasis>."
+#~ msgstr ""
+#~ "Verwendet den unter <emphasis>Server</emphasis> angegebenen DCOP-Server."

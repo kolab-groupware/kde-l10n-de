@@ -1,0 +1,87 @@
+# Georg Schuster <gschuster@utanet.at>, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: kommander_extending\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:10+0000\n"
+"PO-Revision-Date: 2005-10-02 16:15+0200\n"
+"Last-Translator: Georg Schuster <gschuster@utanet.at>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-xml2pot; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: extending.docbook:5 extending.docbook:17
+#, no-c-format
+msgid "Extending &kommander;"
+msgstr "&kommander; erweitern"
+
+#. Tag: author
+#: extending.docbook:7
+#, no-c-format
+msgid "<firstname></firstname> <surname></surname>"
+msgstr "<firstname></firstname> <surname></surname>"
+
+#. Tag: trans_comment
+#: extending.docbook:12
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Georg</"
+"firstname><surname>Schuster</"
+"surname><affiliation><address><email>gschuster@utanet.at</email></address></"
+"affiliation><contrib>Deutsche Übersetzung</contrib></othercredit>"
+
+#. Tag: title
+#: extending.docbook:26
+#, no-c-format
+msgid "Creating &kommander; Widgets"
+msgstr "&kommander;-Bedienelemente erstellen"
+
+#. Tag: para
+#: extending.docbook:27
+#, no-c-format
+msgid ""
+"With Kommander you can create new widgets based on non-&kommander; widgets "
+"fairly easily. The approach is to derive your new &kommander; widget class "
+"from the &Qt;/&kde; widget which you wish to integrate with &kommander;, and "
+"then also from the KommanderWidget class. Overriding methods from this class "
+"gives the &kommander; widget its functionality."
+msgstr ""
+"Mit &kommander; können neue Bedienelemente basierend auf nicht-&kommander;-"
+"Bedienelementen recht leicht erstellt werden. Der Zugang ist das Ableiten "
+"neuer &kommander;-Bedienelemente-Klassen von &Qt;/&kde;-Bedienelementen und "
+"zusätzlich von der KommanderWidget-Klasse. Durch Überschreiben der Methoden "
+"dieser Klasse erhält das &kommander;-Bedienelement seine Funktionalität."
+
+#. Tag: para
+#: extending.docbook:34
+#, no-c-format
+msgid ""
+"Most of the code of a &kommander; widget is just template code. Therefore, "
+"you can use the widgetgenerator.kmdr &kommander; dialog to generate most the "
+"&kommander; widget code for you. All you have to do is fill in the important "
+"parts relating to your widget like any state information, widget text etc."
+msgstr ""
+"Der meiste Quelltext von &kommander;-Bedienelementen ist Vorlagen-Quelltext. "
+"So kann der &kommander;-Dialog widgetgenerator.kmdr zum Generieren des "
+"meisten Quelltextes für &kommander;-Bedienelemente verwendet werden. Es "
+"genügt, die wichtigen Teile bezüglich des Bedienelementes, wie Status-"
+"Information, Bedienelement-Text &etc; auszufüllen."
+
+#. Tag: para
+#: extending.docbook:41
+#, no-c-format
+msgid ""
+"Let's say we want to create a new line edit widget for &kommander;, based on "
+"the &kde; widget KLineEdit. Using the &kommander; widget generator dialog, "
+"we get something like this in the outputted header file:"
+msgstr ""
+"Angenommen, es soll ein neues Zeileneingabefeld-Bedienelement für "
+"&kommander;, abgeleitet vom &kde;-KLineEdit Bedienelement, erstellt werden. "
+"Mit dem &kommander;-Bedienelement Erstellungssdialog erhalten wir dies in "
+"der ausgegebenen Header-Datei:"

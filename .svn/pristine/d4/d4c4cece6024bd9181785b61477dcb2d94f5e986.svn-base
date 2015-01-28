@@ -1,0 +1,3055 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2010, 2011, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: rocs\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: 2013-11-24 14:32+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/kdereview/doc/rocs/index.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 1046027\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:20
+#, no-c-format
+msgid "The &rocs; Handbook"
+msgstr "Das Handbuch zu &rocs;"
+
+#. Tag: author
+#: index.docbook:22
+#, no-c-format
+msgid ""
+"<personname> <firstname>Tomaz</firstname> <surname>Canabrava</surname> </"
+"personname> <email>tomaz.canabrava@gmail.com</email>"
+msgstr ""
+"<personname> <firstname>Tomaz</firstname> <surname>Canabrava</surname> </"
+"personname> <email>tomaz.canabrava@gmail.com</email>"
+
+#. Tag: author
+#: index.docbook:29
+#, no-c-format
+msgid ""
+"<personname> <firstname>Andreas</firstname> <surname>Cord-Landwehr</surname> "
+"</personname> <email>cordlandwehr@kde.org</email>"
+msgstr ""
+"<personname> <firstname>Andreas</firstname> <surname>Cord-Landwehr</surname> "
+"</personname> <email>cordlandwehr@kde.org</email>"
+
+#. Tag: trans_comment
+#: index.docbook:37
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Burkhard</"
+"firstname><surname>Lück</surname><affiliation><address><email>lueck@hube-"
+"lueck.de</email></address></affiliation><contrib>Übersetzung</contrib></"
+"othercredit>"
+
+#. Tag: holder
+#: index.docbook:40
+#, no-c-format
+msgid "Tomaz Canabrava"
+msgstr "Tomaz Canabrava"
+
+#. Tag: holder
+#: index.docbook:41
+#, no-c-format
+msgid "Andreas Cord-Landwehr"
+msgstr "Andreas Cord-Landwehr"
+
+#. Tag: date
+#: index.docbook:43
+#, no-c-format
+msgid "2013-07-03"
+msgstr "2013-07-03"
+
+#. Tag: releaseinfo
+#: index.docbook:44
+#, no-c-format
+msgid "1.10.0 &kde; 4.12"
+msgstr "1.10.0 &kde; 4.12"
+
+#. Tag: para
+#: index.docbook:49
+#, no-c-format
+msgid "&rocs; is a graph theory tool for &kde;."
+msgstr "&rocs; ist ein Graphentheorie-Werkzeug für &kde;."
+
+#. Tag: keyword
+#: index.docbook:55
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:56
+#, no-c-format
+msgid "kdeedu"
+msgstr "kdeedu"
+
+#. Tag: keyword
+#: index.docbook:57
+#, no-c-format
+msgid "mathematics"
+msgstr "Mathematik"
+
+#. Tag: keyword
+#: index.docbook:58
+#, no-c-format
+msgid "math"
+msgstr "Mathe"
+
+#. Tag: keyword
+#: index.docbook:59
+#, no-c-format
+msgid "graphs"
+msgstr "Graphen"
+
+#. Tag: keyword
+#: index.docbook:60
+#, no-c-format
+msgid "node"
+msgstr "Knoten"
+
+#. Tag: keyword
+#: index.docbook:61
+#, no-c-format
+msgid "edge"
+msgstr "Kante"
+
+#. Tag: title
+#: index.docbook:67
+#, no-c-format
+msgid "Introduction"
+msgstr "Einführung"
+
+#. Tag: para
+#: index.docbook:68
+#, no-c-format
+msgid ""
+"In this chapter we provide an overview of the core features and the workflow "
+"of &rocs;. For the eager reader, who wants to start using &rocs; "
+"immediately, we suggest to read at least <xref linkend=\"introduction-"
+"nutshell\"/> and using <xref linkend=\"scripting\"/> as a reference when "
+"writing algorithms."
+msgstr ""
+"In diesem Kapitel finden Sie einen Überblick über die Funktionen und den "
+"Arbeitsablauf in &rocs;. Leser, die sofort mit &rocs; beginnen möchten, "
+"sollten auf jeden Fall <xref linkend=\"introduction-nutshell\"/> lesen und "
+"<xref linkend=\" scripting\"/> beim Schreiben von Algorithmen als Referenz "
+"benutzen."
+
+#. Tag: title
+#: index.docbook:74
+#, no-c-format
+msgid "Goals, Target Audience and Workflow"
+msgstr "Ziel, Zielgruppe und Arbeitsablauf"
+
+#. Tag: para
+#: index.docbook:75
+#, no-c-format
+msgid ""
+"&rocs; is a Graph Theory IDE for everybody interested in designing and "
+"analyzing graph algorithms. This explicitly includes"
+msgstr ""
+"&rocs; ist eine Entwicklungsumgebung für Graphen-Theorie für Alle, die an "
+"der Entwicklung und Analyse von Graphen-Algorithmen arbeiten, unter anderem:"
+
+#. Tag: para
+#: index.docbook:77
+#, no-c-format
+msgid "lecturers, who want to demonstrate algorithms to their students,"
+msgstr "Lehrer, die Ihren Studenten Algorithmen demonstrieren möchten,"
+
+#. Tag: para
+#: index.docbook:78
+#, no-c-format
+msgid "students, who want to understand and see how their algorithm perform,"
+msgstr ""
+"Studenten, die verstehen und sehen möchten, wie ein Algorithmus funktioniert,"
+
+#. Tag: para
+#: index.docbook:79
+#, no-c-format
+msgid "and everybody, who is interested in data structures and algorithms."
+msgstr "Und alle, die an Datenstrukturen und Algorithmen interessiert sind"
+
+#. Tag: para
+#: index.docbook:82
+#, no-c-format
+msgid ""
+"For all these users, &rocs; provides an easy to use data structure editor "
+"for creating the data structures, a powerful scripting engine to execute "
+"algorithms, and several helper tools for your simulations and experiments."
+msgstr ""
+"Für alle diese Benutzer stellt &rocs; einen einfach zu bedienenden Editor "
+"für die Erstellung von Datenstrukturen, ein leistungsfähiges Skriptmodul zur "
+"Ausführung von Algorithmen und mehrere Hilfswerkzeuge für Ihre Simulationen "
+"und Experimente bereit."
+
+#. Tag: para
+#: index.docbook:85
+#, no-c-format
+msgid ""
+"The typical workflow when using &rocs; is to start by creating a graph with "
+"the visual graph editor. You can do this either by hand, this is adding data "
+"elements and connect them, or by using one of the data structure generators "
+"(if available for the currently selected data structure backend). Data "
+"structure generators can be found at <menuchoice><guimenu>Graph Document</"
+"guimenu> <guimenuitem>Tools</guimenuitem> <guimenuitem>Generate Graph</"
+"guimenuitem></menuchoice>. Further, you can assign values to the data "
+"structure elements, either by hand or using <menuchoice><guimenu>Graph "
+"Document</guimenu> <guimenuitem>Tools</guimenuitem> <guimenuitem>Assign "
+"Values</guimenuitem></menuchoice>. Finally, you can write your algorithm in "
+"JavaScript and execute it with the just created data structure. All changes "
+"that your algorithm perform at the data structure will be directly visible "
+"at the visual graph editor."
+msgstr ""
+"Beim typischen Arbeitsablauf erstellen Sie als erstes einen Graphen mit dem "
+"visuellen Editor. Den Graphen können Sie von Hand erstellen, indem Sie "
+"Datenelemente hinzufügen und sie verbinden. Wenn es einen Generator für die "
+"ausgewählte Backend der aktuellen Datenstruktur gibt, können Sie alternativ "
+"auch aus dem Menü <menuchoice><guimenu>Graphendokument</"
+"guimenu><guisubmenu>Extras</guisubmenu><guimenuitem>Graphen erstellen</"
+"guimenuitem></menuchoice> verwenden. Mit "
+"<menuchoice><guimenu>Graphendokument</guimenu><guisubmenu>Extras</"
+"guisubmenu><guimenuitem>Werte zuweisen</guimenuitem></menuchoice> ist es "
+"auch möglich, den Datenstrukturelementen eines Graphen Werte zuzuweisen. Zum "
+"Schluß müssen Sie den Algorithmus in der Sprache JavaScript schreiben und "
+"mit  der gerade erstellten Datenstruktur ausführen. Alle Änderungen an der "
+"Datenstruktur durch den Algorithmus sind sofort auf der Zeichenfläche des "
+"visuellen Graphen-Editors sichtbar."
+
+#. Tag: screeninfo
+#: index.docbook:95
+#, no-c-format
+msgid "<screeninfo>A Screenshot of &rocs;.</screeninfo>"
+msgstr "<screeninfo>Bildschirmphoto von &rocs;</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:101
+#, no-c-format
+msgid "<phrase>A Screenshot of &rocs;.</phrase>"
+msgstr "<phrase>Bildschirmphoto von &rocs;</phrase>"
+
+#. Tag: title
+#: index.docbook:108
+#, no-c-format
+msgid "&rocs; in a Nutshell"
+msgstr "&rocs; kurz zusammengefasst"
+
+#. Tag: para
+#: index.docbook:109
+#, no-c-format
+msgid ""
+"In this section we provide a compact overview of the core elements of "
+"&rocs;. We explain the important notions of data structures, data structure "
+"backends, and element types. Understanding of these concepts is useful to "
+"understand how data structures can be created and modified in &rocs;."
+msgstr ""
+"Dieser Abschnitt enthält eine knappe Übersicht über die wichtigsten Elemente "
+"von &rocs;. Die wichtigen Begriffe Datenstrukturen, Backends für "
+"Datenstrukturen und Elementarten werden erläutert. Kenntnis dieser Elemente "
+"hilft beim Verständnis, wie Datenstrukturen in &rocs; erstellt und geändert "
+"werden können."
+
+#. Tag: para
+#: index.docbook:114
+#, no-c-format
+msgid ""
+"In general &rocs; works with projects: when opening &rocs; an empty project "
+"is created and you can replace it by loading or importing another project. "
+"Hereby, a project itself consists of <emphasis>graph documents</emphasis> "
+"and <emphasis>scripts</emphasis>."
+msgstr ""
+"Im allgemeinen arbeitet &rocs; mit Projekten: wenn Sie &rocs; starten, wird "
+"ein leeres Projekt erstellt. Dieses Projekt können Sie durch Laden oder "
+"Importieren eines anderen Projekts ersetzen. Ein Projekt besteht aus "
+"<emphasis>Graphendokumenten</emphasis> und <emphasis>Skripten</emphasis>."
+
+#. Tag: title
+#: index.docbook:120
+#, no-c-format
+msgid "Graph Documents and Data Structure Backends"
+msgstr "Backends für Graphendokumente und Datenstrukturen"
+
+#. Tag: para
+#: index.docbook:121
+#, no-c-format
+msgid ""
+"A graph document represents the content of a whiteboard in the visual graph "
+"editor. Hereby, a graph document can contain several data structures at "
+"once, but only one data structure backends. Data structure backends are "
+"present for several graph types (general graphs, linked lists, rooted trees) "
+"and provide for their specific graph types additional functionality. That "
+"can be automatic positioning of the elements, special icon sets, or an "
+"extended set of script functions for use in your algorithms. (for details "
+"look at the corresponding handbook section). It is possible to change the "
+"data structure backend of a graph document, though information can be lost "
+"(e.g., edges of a circle in a general graph won't be added to a tree, if you "
+"switch to the rooted tree backend)."
+msgstr ""
+"Ein Graphendokument repräsentiert den Inhalt der Zeichenfläche im visuellen "
+"Graphen-Editor.Daher kann ein Graphendokument gleichzeitig mehrere "
+"Datenstrukturen, aber nur ein Backend für Datenstrukturen enthalten. Es gibt "
+"Backends für Datenstrukturen für mehrere Graphentypen (Allgemeine Graphen, "
+"verkettete Listen, Wurzelbäume), die zusätzliche Funktionen beinhalten wie "
+"zum Beispiel automatische Anordnung der Elemente, besondere Symbole oder "
+"erweiterte Skriptfunktionen, die in Algorithmen benutzt werden können. Es "
+"ist möglich, das Backend der Datenstruktur eines Graphendokuments zu ändern, "
+"dabei gehen aber unter Umständen Informationen verloren. Es werden zum "
+"Beispiel die Kanten eines Kreises in einem allgemeinen Graphen nicht zu "
+"einer Baumstruktur hinzugefügt, wenn Sie zum Backend Wurzelbaum wechseln."
+
+#. Tag: para
+#: index.docbook:126
+#, no-c-format
+msgid ""
+"Graph documents form also the base for defining pointer types and data types."
+msgstr ""
+"Graphendokumente bilden auch die Basis für die Definition von Zeiger- und "
+"Datentypen."
+
+#. Tag: title
+#: index.docbook:132
+#, no-c-format
+msgid "Data Structures"
+msgstr "Datenstrukturen"
+
+#. Tag: para
+#: index.docbook:133
+#, no-c-format
+msgid ""
+"Data structures are the base of all work in &rocs;. You can add one or "
+"several of them to a graph document, add data elements (nodes, datums) and "
+"pointers to them, and modify them by scripts. For this, each data structure "
+"has its unique name by which it can be accessed from your scripts. Due to "
+"your choice of the current data structure backend it can happen that you "
+"cannot modify the data structures arbitrarily (e.g., a tree should never "
+"contain a cycle). The data structure backend is determined by the data "
+"structure backend associated with the corresponding graph document that "
+"contains the data structure."
+msgstr ""
+"Datenstrukturen sind die Grundlage aller Arbeit mit &rocs;. Sie können eine "
+"oder mehrere Datenstrukturen zu einem Graphendokument hinzufügen, "
+"Datenelemente (Knoten, Daten) und Zeiger auf Knoten einfügen und sie mit "
+"Skripten bearbeiten. Dazu hat jede Datenstruktur einen eindeutigen Namen "
+"oder Bezeichner, über den im Skript auf die Struktur zugegriffen werden "
+"kann. Für ein aktuell ausgewähltes Backend der Datenstruktur können die "
+"Datenstrukturen nicht willkürlich geändert werden, &eg; darf eine "
+"Baumstruktur keine Kreisstruktur haben. Die Datenstruktur wird durch das "
+"verwendete Struktur-Backend aus dem Graphendokument, das dieses Backend "
+"enthält, vorgegeben"
+
+#. Tag: title
+#: index.docbook:139
+#, no-c-format
+msgid "Pointer Types"
+msgstr "Zeigertypen"
+
+#. Tag: para
+#: index.docbook:140
+#, no-c-format
+msgid ""
+"By pointer types you can define different types of pointers to be used in "
+"your data structures. This is, a pointer type can get an individual layout "
+"(essentially a color) and it is easy to access only pointers of a specific "
+"type from your scripts. Typical use cases for pointers can be to implement "
+"meta-edges at your data structures that visualize relationships between data "
+"elements (e.g., visualize communication interests). But also, if your "
+"scripts shall identify specific kinds of edges (e.g., tree and cross edges "
+"at the depth first search algorithm), pointer types can be an elegant way to "
+"implement that."
+msgstr ""
+"Es lassen sich verschiedene Zeigertypen definieren, die in Datenstrukturen "
+"verwendet werden können. Ein Zeigertyp kann ein individuelles Layout - im "
+"wesentlichen eine Farbe - erhalten. Es ist dann leicht möglich, Zugriff nur "
+"auf Zeiger eines bestimmten Typs in den Skripten zu erhalten. Ein typischer "
+"Anwendungsfall für Zeiger ist die Implementierung von Metakanten einer "
+"Datenstruktur, um Beziehungen zwischen Datenelementen zu visualisieren. Aber "
+"auch wenn das Skript bestimmte Arten von Kanten wie zum Beispiel Baum- und "
+"Kreuzkanten bei einer Tiefensuche (englisch depth-first search) "
+"identifizieren soll, sind Zeigertypen ein elegante Implementation dafür."
+
+#. Tag: title
+#: index.docbook:148
+#, no-c-format
+msgid "Data Types"
+msgstr "Datentypen"
+
+#. Tag: para
+#: index.docbook:149
+#, no-c-format
+msgid ""
+"In several data structure problems, a set of data elements should be parted "
+"into groups of different types (e.g., clustering problems or covering "
+"problems). Or it is useful for the execution of an algorithm to specify a "
+"data element type to express a specific type (e.g., breath first search). "
+"For such use cases you can define data types. Each data type has its own "
+"icon and data types of some type can easily be accessed from your scripts."
+msgstr ""
+"Bei vielen Problemen, die mit Datenstrukturen bearbeitet werden, sollte eine "
+"Gruppe von Datenelementen in eigene Strukturtypen aufgeteilt werden, &eg; "
+"bei Cluster- und Überdeckungsproblemen. Für die Ausführung eines Algorithmus "
+"ist es nützlich, einen Datenelementtyp für einen bestimmten Typ wie zum "
+"Beispiel Breitensuche (english breadth-first search) anzugeben. Für solche "
+"Anwendungsfälle können eigene Datentypen definiert werden. Jeder Datentyp "
+"hat ein eigenes Symbol. Für eigene definierte Datentypen ist der Zugriff vom "
+"Skript leicht möglich."
+
+#. Tag: title
+#: index.docbook:157
+#, no-c-format
+msgid "Dynamic Properties"
+msgstr "Dynamische Eigenschaften"
+
+#. Tag: para
+#: index.docbook:158
+#, no-c-format
+msgid ""
+"Every data element and pointer can have many properties. Some of these "
+"properties are default from data structure backend. See the documentation of "
+"the data structure backend for more details. To add further properties to "
+"the data elements and pointers, you can add <emphasis>dynamic properties</"
+"emphasis> to them. Each dynamic property is identified by its name and can "
+"contain any value associated with it. The name must start with a letter (a-z "
+"or A-Z) and can contain only letters, numbers and '_'. If you try to use any "
+"invalid character in the property name, the property will not be changed."
+msgstr ""
+"Jedes Datenelement und jeder Zeiger kann viele Eigenschaften haben. Einige "
+"dieser Eigenschaften werden als Standard vom Backend der Datenstruktur "
+"vorgegeben. Weitere Informationen dazu finden Sie in der Dokumentation zu "
+"den Backends der Datenstrukturen. Um die Eigenschaften von Datenelementen "
+"und Zeigern zu erweitern, können <emphasis>dynamische Eigenschaften</"
+"emphasis> hinzugefügt werden. Jede dynamische Eigenschaft wird über ihren "
+"Namen identifiziert und darf einen beliebigen zugeordneten Wert haben. Der "
+"Name muss mit einem Buchstaben (a-z oder A-Z) beginnen und darf nur "
+"Buchstaben, Zahlen und den Unterstrich „_“ enthalten. Wenn Sie ungültige "
+"Zeichen im Namen der Eigenschaft verwenden, wird die Eigenschaft nicht "
+"geändert."
+
+#. Tag: para
+#: index.docbook:163
+#, no-c-format
+msgid ""
+"To add dynamic properties, use the <guilabel>Data Element Properties</"
+"guilabel> and <guilabel>Pointer Properties</guilabel> dialogs from the "
+"context menus of the respective elements or the script functions as "
+"explained in <xref linkend=\"scripting-data-structure\"/>."
+msgstr ""
+"Um dynamische Eigenschaften hinzuzufügen, können Sie die Dialoge "
+"<guilabel>Eigenschaften des Datenelements</guilabel> und "
+"<guilabel>Zeigereigenschaften</guilabel> aus dem Kontextmenü der "
+"entsprechenden Elemente oder die Skriptfunktionen benutzen, die im Abschnitt "
+"<xref linkend=\"scripting-data-structure\"/> erläutert werden."
+
+#. Tag: para
+#: index.docbook:166
+#, no-c-format
+msgid ""
+"You can also use the scripts. You just need to use the "
+"<literal>add_property</literal> with the name and value of your property. "
+"After that, you can use node/pointer.propertyName to set/get the values."
+msgstr ""
+"Sie können auch Skripte dafür verwenden. Sie müssen nur "
+"<literal>add_property</literal> mit dem Namen und Wert Ihrer Eigenschaft "
+"verwenden. Danach können Sie mit <literal>node.propertyName</literal> oder "
+"<literal>pointer.propertyName</literal> die Werte lesen oder setzen."
+
+#. Tag: para
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"Here is an example of how to use dynamic properties with data structure "
+"backend \"Graph\"."
+msgstr ""
+"Hier ein Beispiel, wie dynamische Eigenschaften mit dem Backend für die "
+"Datenstruktur „Graph“ benutzt werden können."
+
+#. Tag: programlisting
+#: index.docbook:172
+#, no-c-format
+msgid ""
+"nodes = myGraph.list_nodes()\n"
+"for (var i = 0; i &lt; nodes.length; ++i ){\n"
+"    nodes[i].add_property(\"MyProperty\", 0)\n"
+"}\n"
+"nodes[0].MyProperty = 2\n"
+"nodes[1].MyProperty = nodes[0].MyProperty + 2"
+msgstr ""
+"nodes = myGraph.list_nodes()\n"
+"for (var i = 0; i &lt; nodes.length; ++i ){\n"
+"    nodes[i].add_property(\"MyProperty\", 0)\n"
+"}\n"
+"nodes[0].MyProperty = 2\n"
+"nodes[1].MyProperty = nodes[0].MyProperty + 2"
+
+#. Tag: title
+#: index.docbook:178
+#, no-c-format
+msgid "Tutorial"
+msgstr "Anleitung"
+
+#. Tag: para
+#: index.docbook:179
+#, no-c-format
+msgid ""
+"In this section we want to create an example project to explore some of the "
+"most important functions of &rocs;. The goal is to create a graph and a "
+"script that illustrates a simple 2-approximate algorithm for the "
+"<emphasis>minimum vertex cover</emphasis> problem. The minimum vertex cover "
+"problem is the problem to find a subset of graph nodes C of minimal size "
+"such that each graph edge is connected to at least one node in C. This "
+"problem is known to be NP-hard and we want to illustrate how to find an "
+"approximation of factor 2 by finding a matching in the given graph (in the "
+"following we use the common terms for graph algorithms: graph is the data "
+"structure, nodes are the data elements, edges are the pointers)."
+msgstr ""
+"In diesem Abschnitt wird ein Beispielprojekt erzeugt, um die wichtigsten "
+"Funktionen von &rocs; zu zeigen. Als Ziel soll ein Graph und ein Skript "
+"erstellt werden, um damit einen einfachen  Approximationsalgorithmus für das "
+"<emphasis>Minimum-Knotenüberdeckungproblem</emphasis> zu zeigen, der eine "
+"Knotenüberdeckung mit Güte 2 berechnet. Mit dem Minimum-"
+"Knotenüberdeckungsproblem wird eine Untermenge von Graphenknoten C mit "
+"minimaler Größe gesucht, so dass jede Graphenkante mit mindestens einem "
+"Knoten in C verbunden ist. Dies Problem ist NP-vollständig. Es soll gezeigt "
+"werden, wie eine Approximation mit dem Faktor 2 durch Suchen nach Matching "
+"in den angegebenen Graphen gefunden wird. Im Folgenden werden die üblichen "
+"Begriffe für Graphenalgorithmen verwendet: Graph für die Datenstruktur, "
+"Knoten für die Datenelemente und Kanten für die Zeiger."
+
+#. Tag: para
+#: index.docbook:185
+#, no-c-format
+msgid ""
+"Our goal is to visualize the correspondence of the matching and the minimum "
+"vertex cover. For this, we want to specify two pointer types, one to display "
+"matching edges and one type to display ordinary edges, as well as two data "
+"types that we use to distinguish nodes contained in C and those not "
+"contained in C."
+msgstr ""
+"Ziel ist die Visualisierung der Übereinstimmung von Matching-"
+"Knotenüberdeckungen und Minimum-Knotenüberdeckungen. Dazu werden zwei "
+"Zeigertypen definiert, einer für die Matching-Kanten und einer zur "
+"Darstellung normaler Kanten, außerdem noch zwei Datentypen, die zur "
+"Unterscheidung von in C enthaltenen bzw. nicht enthaltenen Knoten verwendet "
+"werden."
+
+#. Tag: title
+#: index.docbook:191
+#, no-c-format
+msgid "Generate a Graph"
+msgstr "Einen Graphen erstellen"
+
+#. Tag: para
+#: index.docbook:192
+#, no-c-format
+msgid ""
+"For the data structure backend <quote>Graph</quote>, &rocs; ships a helper "
+"tool that can generate graphs. We go to <menuchoice><guimenu>Graph Document</"
+"guimenu> <guisubmenu>Tools</guisubmenu> <guimenuitem>Generate Graph</"
+"guimenuitem></menuchoice>. There we generate a <guilabel>Random Graph</"
+"guilabel> with 30 nodes, 90 edges, and with seed 1 (the seed is the starting "
+"seed for the random graph generator; using the same seed multiple times "
+"results in same and reproducible graphs). Finally, we modify the graph name "
+"at the data structure panel and call the graph <literal>testgraph</literal>."
+msgstr ""
+"Für das Backend der Datenstruktur <quote>Graph</quote> können mit &rocs; "
+"Graphen erzeugt werden. Wählen Sie dazu "
+"<menuchoice><guimenu>Graphendokument</guimenu> <guisubmenu>Extras</"
+"guisubmenu> <guimenuitem>Graph erstellen</guimenuitem></menuchoice>. "
+"Erstellen Sie einen <guilabel>Zufälligen Graph</guilabel> mit 30 Knoten, 90 "
+"Kanten und mit Seed = 1. Seed ist der Startwert für den Generator des "
+"zufälligen Graphen. Wird der gleiche Seed verwendet, ergibt das auch "
+"reproduzierbar den gleichen Graphen. Dann ändern Sie den Namen des Graphen "
+"im Datenstrukturbereich in <literal>testgraph</literal>."
+
+#. Tag: title
+#: index.docbook:200
+#, no-c-format
+msgid "Create Types"
+msgstr "Typen erstellen"
+
+#. Tag: para
+#: index.docbook:201
+#, no-c-format
+msgid ""
+"We use the <guibutton>Properties</guibutton> buttons at the Document "
+"Selector bar to open the properties dialog for data and pointer types of the "
+"current graph document. For the data types we add a new type called \"C\", "
+"which automatically gets ID <literal>1</literal>. For this type we select "
+"the server picture as icon. Furthermore, we switch to the pointer type page "
+"and add a new pointer type called \"matching\". This gets automatically ID "
+"<literal>1</literal> and we set the color to blue."
+msgstr ""
+"Klicken Sie auf den Knopf <guibutton>Eigenschaften</guibutton> im "
+"Dokumentenauswahlbereich, um den Einstellungsdialog für Daten- und "
+"Zeigertypen des aktuellen Dokuments zu öffnen. Als Datentyp wird ein neuer "
+"Typ namens „C“ hinzugefügt. Dieser erhält automatisch die Kennung "
+"<literal>1</literal>. Als Symbol wird das Serverbild ausgewählt. Dann wird "
+"der Dialog Eigenschaften des Zeigertyps geöffnet und ein neuer Zeigertyp mit "
+"dem Namen „matching“ erstellt. Er erhält automatisch die Kennung <literal>1</"
+"literal>. Als Farbe wird Blau eingestellt."
+
+#. Tag: title
+#: index.docbook:211
+#, no-c-format
+msgid "The Algorithm"
+msgstr "Der Algorithmus"
+
+#. Tag: para
+#: index.docbook:212
+#, no-c-format
+msgid ""
+"At last we have to implement the approximation algorithm. For this we use "
+"the following implementation:"
+msgstr ""
+"Dann muss der Algorithmus der Approximation wie im folgenden implementiert "
+"werden:"
+
+#. Tag: programlisting
+#: index.docbook:215
+#, no-c-format
+msgid ""
+"var E = testgraph.list_edges(); // set of unprocessed edges\n"
+"var C = new Array();            // matching edges\n"
+"while (E.length > 0) {\n"
+"    var e = E[0];        // we take first edge e={u,v}\n"
+"    var u = e.start();\n"
+"    var v = e.end();\n"
+"    e.set_type(1);        // set edge to be a matching edge\n"
+"    E.shift();            // remove e (i.e., E[0]) from edge list\n"
+"    C.push(u);            // add u to C\n"
+"    C.push(v);            // add v to C\n"
+"\n"
+"    // mark u,v as nodes in C\n"
+"    u.set_type(1);\n"
+"    v.set_type(1);\n"
+"\n"
+"    // remove from E all edges incident to u or v\n"
+"    var adjacent = u.adj_edges();\n"
+"    for (var i=0; i &lt; adjacent.length; i++) {\n"
+"        var index = E.indexOf(adjacent[i]); // find the index\n"
+"        if (index!=-1) {\n"
+"            E.splice(index, 1); // remove it if really found\n"
+"        }\n"
+"    }\n"
+"    var adjacent = v.adj_edges();\n"
+"    for (var i=0; i &lt; adjacent.length; i++) {\n"
+"        var index = E.indexOf(adjacent[i]); // find the index\n"
+"        if (index!=-1) {\n"
+"            E.splice(index, 1); // remove it if really found\n"
+"        }\n"
+"    }\n"
+"}\n"
+"Console.log(\"Vertex Cover contains \" + C.length + \" nodes.\");"
+msgstr ""
+"var E = testgraph.list_edges(); // Menge der nicht bearbeiteten Kanten\n"
+"var C = new Array();            // Matching-Kanten\n"
+"while (E.length > 0) {\n"
+"    var e = E[0];        // die erste Kante e={u,v}\n"
+"    var u = e.start();\n"
+"    var v = e.end();\n"
+"    e.set_type(1);        // als Matching-Kanten setzen\n"
+"    E.shift();            // e (i.e., E[0]) aus der Liste der Kanten "
+"entfernen\n"
+"    C.push(u);            // u zu C hinzufügen\n"
+"    C.push(v);            // v zu C hinzufügen\n"
+"\n"
+"\n"
+"    // u,v als Knoten von C markieren C\n"
+"    u.set_type(1);\n"
+"    v.set_type(1);\n"
+"\n"
+"    // von E alle Kanten entfernen, die inzident zu u oder v sind\n"
+"    var adjacent = u.adj_edges();\n"
+"    for (var i=0; i &lt; adjacent.length; i++) {\n"
+"        var index = E.indexOf(adjacent[i]); // Index suchen\n"
+"        if (index!=-1) {\n"
+"            E.splice(index, 1); // Löschen, wenn gefunden\n"
+"        }\n"
+"    }\n"
+"    var adjacent = v.adj_edges();\n"
+"    for (var i=0; i &lt; adjacent.length; i++) {\n"
+"        var index = E.indexOf(adjacent[i]); // Index suchen\n"
+"        if (index!=-1) {\n"
+"            E.splice(index, 1); // Löschen, wenn gefunden\n"
+"        }\n"
+"    }\n"
+"}\n"
+"Console.log(\"Knotenüberdeckung enthält \" + C.length + \" Knoten.\");"
+
+#. Tag: title
+#: index.docbook:219
+#, no-c-format
+msgid "Execute the Algorithm"
+msgstr "Ausführung des Algorithmus"
+
+#. Tag: para
+#: index.docbook:220
+#, no-c-format
+msgid ""
+"Finally we want to execute the algorithm. For this we can start the "
+"execution by the <guibutton>Run</guibutton> button at the script control "
+"panel."
+msgstr ""
+"Schließlich soll der Algorithmus ausgeführt werden. Die Ausführung wird mit "
+"dem Knopf <guibutton>Ausführen</guibutton> der Bedienelemente für Skripte "
+"gestartet."
+
+#. Tag: title
+#: index.docbook:228
+#, no-c-format
+msgid "The &rocs; User Interface"
+msgstr "Die Benutzerschnittstelle von &rocs;"
+
+#. Tag: title
+#: index.docbook:231
+#, no-c-format
+msgid "General Elements of the User Interface"
+msgstr "Standardelemente der Benutzeroberfläche"
+
+#. Tag: para
+#: index.docbook:232
+#, no-c-format
+msgid ""
+"The user interface is divided into several logical parts as presented at the "
+"screenshot below."
+msgstr ""
+"Die Benutzerschnittstelle besteht aus mehreren logischen Teilen, die im "
+"folgenden Bildschirmfoto gezeigt werden."
+
+#. Tag: screeninfo
+#: index.docbook:236
+#, no-c-format
+msgid "<screeninfo>&GUI; elements of the &rocs; interface.</screeninfo>"
+msgstr ""
+"<screeninfo>Bedienungselemente der &rocs;-Benutzeroberfläche</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:242
+#, no-c-format
+msgid "<phrase>&GUI; elements of the &rocs; interface.</phrase>"
+msgstr "<phrase>Bedienungselemente der &rocs;-Benutzeroberfläche</phrase>"
+
+#. Tag: term
+#: index.docbook:248
+#, no-c-format
+msgid "Document Selector"
+msgstr "Dokumentenauswahl"
+
+#. Tag: para
+#: index.docbook:249
+#, no-c-format
+msgid ""
+"At this top menubar you must select the current document and data structure. "
+"Creating and deleting of data structures as well as access to data structure "
+"properties is also possible there."
+msgstr ""
+"In dieser Werkzeugleiste wird das aktuelle Dokument und die Datenstruktur "
+"ausgewählt. Erstellen und Löschen von Datenstrukturen wie auch das Ändern "
+"der Eigenschaften von Datenstrukturen ist hier möglich."
+
+#. Tag: term
+#: index.docbook:254
+#, no-c-format
+msgid "Visual Graph Editor"
+msgstr "Visueller Graphen-Editor"
+
+#. Tag: para
+#: index.docbook:255
+#, no-c-format
+msgid ""
+"This is the whiteboard at which data structures can be created and modified. "
+"Right click at the whiteboard, at data elements, or at pointers to open "
+"context menus. You can use the tools from the <emphasis>Visual Graph Editor "
+"Toolbar</emphasis> to modify the elements at the visual graph editor "
+"whiteboard."
+msgstr ""
+"Dies ist die Zeichenfläche, auf der Datenstrukturen erstellt und bearbeitet "
+"werden. Klicken Sie mit der &RMBn; auf die Zeichenfläche, auf Datenelemente "
+"oder Zeiger, um die zugehörigen Kontextmenüs zu öffnen. Sie können auch die "
+"Aktionen aus der Werkzeugleiste benutzen, um die Elemente auf der "
+"Zeichenfläche zu bearbeiten."
+
+#. Tag: term
+#: index.docbook:258
+#, no-c-format
+msgid "Visual Graph Editor Toolbar"
+msgstr "Werkzeugleiste für den visuellen Graphen-Editor"
+
+#. Tag: para
+#: index.docbook:259
+#, no-c-format
+msgid ""
+"This toolbar provides all tools for the visual graph editor. Use the "
+"<inlinemediaobject><imageobject><imagedata fileref=\"hi22-action-rocsadddata."
+"png\" format=\"PNG\"/></imageobject> </inlinemediaobject><guibutton>Add "
+"Element</guibutton> or <inlinemediaobject><imageobject><imagedata fileref="
+"\"hi22-action-rocsaddedge.png\" format=\"PNG\"/></imageobject></"
+"inlinemediaobject><guibutton>Add Connection</guibutton> buttons to create "
+"new elements or to connect elements, respectively. New data elements are "
+"added to the data structure that is currently selected at the "
+"<emphasis>Document Selector</emphasis> bar. Note that <guibutton>Add "
+"Element</guibutton> and <guibutton>Add Connection</guibutton> buttons both "
+"have menus to select the type of which the created elements shall be. For "
+"details see <xref linkend=\"user-interface-toolbars\"/>."
+msgstr ""
+"In dieser Werkzeugleiste finden Sie Aktionen für den visuellen Graphen-"
+"Editor. Mit <inlinemediaobject><imageobject><imagedata fileref=\"hi22-action-"
+"rocsadddata.png\" format=\"PNG\"/></imageobject> </"
+"inlinemediaobject><guibutton>Element hinzufügen</guibutton> oder "
+"<inlinemediaobject><imageobject><imagedata fileref=\"hi22-action-rocsaddedge."
+"png\" format=\"PNG\"/></imageobject></"
+"inlinemediaobject><guibutton>Verbindungen hinzufügen</guibutton> können neue "
+"Datenelemente erstellt und Verbindungen hinzugefügt werden. Neue "
+"Datenelemente werden zu der aktuellen Datenstruktur in der "
+"<emphasis>Dokumenten-Auswahl</emphasis> hinzugefügt. Beachten Sie dass "
+"<guibutton>Element hinzufügen</guibutton> und auch <guibutton>Verbindungen "
+"hinzufügen</guibutton> Untermenüs enthalten können, um den Typ der neuen "
+"Elemente auszuwählen. Weitere Informationen dazu im Abschnitt <xref linkend="
+"\"user-interface-toolbars\"/>."
+
+#. Tag: term
+#: index.docbook:271
+#, no-c-format
+msgid "Side Bar"
+msgstr "Seitenleiste"
+
+#. Tag: para
+#: index.docbook:272
+#, no-c-format
+msgid ""
+"At the right, you can find the side bar that provides several tools for your "
+"workflow:"
+msgstr ""
+"Rechts finden Sie die Seitenleiste mit mehreren Werkzeugen zur Unterstützung "
+"Ihres Arbeitsablaufs."
+
+#. Tag: para
+#: index.docbook:275
+#, no-c-format
+msgid ""
+"Element Types: This widget gives you direct access to the available pointer "
+"and data types."
+msgstr ""
+"Elementtypen: Hier haben Sie direkten Zugriff auf alle vorhandenen Zeiger- "
+"und Datentypen."
+
+#. Tag: para
+#: index.docbook:276
+#, no-c-format
+msgid ""
+"Journal: Each project has its own journal that can be used to, &eg; note "
+"tasks, results, or observations."
+msgstr ""
+"Journal: Für jedes Projekt gibt es ein Journal, um &eg; Aufgaben, Ergebnisse "
+"oder Beobachtungen festzuhalten."
+
+#. Tag: para
+#: index.docbook:277
+#, no-c-format
+msgid ""
+"Handbook: To get direct access to the handbook and by this to the script "
+"documentation, you can open this widget."
+msgstr ""
+"Handbuch: Benutzen Sie dieses Fenster zu Zugriff auf das Handbuch und "
+"dadurch auch zur Skriptdokumentation."
+
+#. Tag: para
+#: index.docbook:278
+#, no-c-format
+msgid ""
+"Scripting API: To get direct access to the script documentation, you can "
+"open this widget."
+msgstr ""
+"Skript-API: Benutzen Sie dieses Fenster zu Zugriff auf das Handbuch und "
+"dadurch auch zur Skriptdokumentation."
+
+#. Tag: term
+#: index.docbook:283
+#, no-c-format
+msgid "Script Editor"
+msgstr "Skripteditor"
+
+#. Tag: para
+#: index.docbook:284
+#, no-c-format
+msgid ""
+"In this text editor you can write algorithms as explained in detail in <xref "
+"linkend=\"scripting\"/>. You can work on several script documents "
+"simultaneously by using several tabs. The disk symbol at a tab appears if "
+"the script contains unsaved changes."
+msgstr ""
+"In diesem Texteditor können Sie Algorithmen schreiben, das wird im <xref "
+"linkend=\"scripting\"/> erläutert. Sie können gleichzeitig an mehreren "
+"Skriptdokumenten arbeiten, indem Sie Unterfenster verwenden. Enthält ein "
+"Unterfenster noch nicht gespeicherte Änderungen, dann wird ein kleines "
+"Diskettensymbol auf dem Karteireiter angezeigt."
+
+#. Tag: term
+#: index.docbook:291
+#, no-c-format
+msgid "<term>Script Output</term>"
+msgstr "<term>Skriptausgabe</term>"
+
+#. Tag: para
+#: index.docbook:292
+#, no-c-format
+msgid ""
+"This text area either shows debug information or the script output of your "
+"algorithm, depending on the toggled setting at the top of this widget. If "
+"the script throws an error, automatically the debug output is presented."
+msgstr ""
+"In diesem Textfeld werden Fehlermeldungen oder Skriptausgaben Ihres "
+"Algorithmus angezeigt, abhängig von der gewählten Einstellung der Ausgabe "
+"oben. Tritt ein Fehler in Ihrem Skript auf, wird automatisch die "
+"Fehlerausgabe angezeigt."
+
+#. Tag: term
+#: index.docbook:298
+#, no-c-format
+msgid "Controls"
+msgstr "Bedienelemente"
+
+#. Tag: para
+#: index.docbook:299
+#, no-c-format
+msgid ""
+"Here you can find the controls for executing scripts. You can execute the "
+"script that is currently open at the script editor by pressing <guiicon>Run</"
+"guiicon>. While the script is executed, it is possible to stop execution by "
+"pressing the <guiicon>Stop</guiicon> button. Note that the <guibutton>One "
+"Step</guibutton> execution only stops at specific keywords (see <xref "
+"linkend=\"scripting\"/>)."
+msgstr ""
+"In diesem Bereich finden Sie die Bedienelelemente, um die Ausführung von "
+"Skripten zu steuern. Mit dem Knopf <guibutton>Ausführen</guibutton> starten "
+"Sie das aktuell im Editor geöffnete Skript. Wird ein Skript ausgeführt, "
+"können Sie es mit <guibutton>Anhalten</guibutton> stoppen. Beachten Sie, "
+"dass die Ausführung von <guibutton>Ein Schritt</guibutton> nur bei "
+"bestimmten Schlüsselwörtern anhält, siehe <xref linkend=\"scripting\"/>."
+
+#. Tag: title
+#: index.docbook:311
+#, no-c-format
+msgid "Toolbars"
+msgstr "Werkzeugleisten"
+
+#. Tag: para
+#: index.docbook:312
+#, no-c-format
+msgid ""
+"There are different toolbars for the visual graph editor that allow you to "
+"access features by only one click. Per default, the following toolbars are "
+"shown:"
+msgstr ""
+"Es gibt mehrere verschiedene Werkzeugleisten für den visuellen Graphen-"
+"Editor, die den Zugriff auf alle Aktion mit einem Mausklick ermöglichen. In "
+"der Voreinstellung werden folgende Werkzeugleisten angezeigt:"
+
+#. Tag: para
+#: index.docbook:314
+#, no-c-format
+msgid "<para>Main Toolbar</para>"
+msgstr "<para>Haupt-Werkzeugleiste</para>"
+
+#. Tag: para
+#: index.docbook:315
+#, no-c-format
+msgid "<para>Alignment Toolbar</para>"
+msgstr "<para>Layout-Werkzeugleiste</para>"
+
+#. Tag: title
+#: index.docbook:319
+#, no-c-format
+msgid "<title>Main Toolbar</title>"
+msgstr "<title>Haupt-Werkzeugleiste</title>"
+
+#. Tag: para
+#: index.docbook:320
+#, no-c-format
+msgid ""
+"The <emphasis>Main Toolbar</emphasis> consists of the following actions. "
+"Clicking at an action means that your mouse pointer applies this action at "
+"the visual graph editor whiteboard:"
+msgstr ""
+"Die <emphasis>Haupt-Werkzeugleiste</emphasis> enthält die im Folgenden "
+"genannten Aktionen. Klicken Sie auf den Knopf für eine Aktion, dann können "
+"Sie diese Aktion anschließend mit dem Mauszeiger auf die Elemente auf der "
+"Zeichenfläche anwenden."
+
+#. Tag: para
+#: index.docbook:324
+#, no-c-format
+msgid ""
+"<guilabel>Move</guilabel>: To select elements, either click at unused space "
+"at the whiteboard, keep the mouse pressed and draw a rectangle that contains "
+"some data elements and/or pointers to select these elements or otherwise "
+"directly click at an unselected element to select this element. If you click "
+"at a selected element or a set of selected elements, respectively, by "
+"keeping the mouse pressed and moving around you can move these elements. "
+"Moving selected elements is also possible with the arrow keys."
+msgstr ""
+"<guilabel>Verschieben</guilabel>: Um Elemente auszuwählen, klicken Sie "
+"entweder mit der &LMBn; auf eine freie Stelle auf der Zeichenfläche, halten "
+"die Maustaste gedrückt und ziehen ein Rechteck um Datenelemente und/oder "
+"Zeiger, um sie auszuwählen oder klicken Sie sonst zur Auswahl auf ein nicht "
+"ausgewähltes Element. Klicken Sie dann auf ein oder mehrere ausgewählte "
+"Elemente und verschieben sie mit gedrückter Maustaste. Ausgewählte Elemente "
+"können auch mit den Pfeiltasten verschoben werden."
+
+#. Tag: para
+#: index.docbook:329
+#, no-c-format
+msgid ""
+"<guilabel>Add Element</guilabel>: Click at an arbitrary position at the "
+"visual graph editor whiteboard to create a new data element that belongs to "
+"the currently selected data structure. By keeping the mouse pointer pressed "
+"at the button, a menu shows up at which the data type of the new created "
+"data elements can be selected (only if different data types exist)."
+msgstr ""
+"<guilabel>Element hinzufügen</guilabel>: Klicken Sie mit der &LMBn; auf eine "
+"beliebige Position auf der Zeichenfläche, um ein neues Datenelement für die "
+"gerade ausgewählte Datenstruktur zu erstellen. Halten Sie die Maustaste "
+"gedrückt, dann erscheint ein Menü, aus dem der Datentyp des neu erstellten "
+"Datenelements ausgewählt werden kann, wenn es mehrere Datentypen gibt."
+
+#. Tag: para
+#: index.docbook:335
+#, no-c-format
+msgid ""
+"<guilabel>Add Connection</guilabel>: Click at one data element, keep the "
+"mouse pressed and draw a line to another data element to which the pointer/"
+"edge shall point. This action is only successful if the current graph allows "
+"to add this edge (&eg;, in an undirected graph you are not allowed to add "
+"multiple edges between two data elements). By keeping the mouse pointer "
+"pressed at the button, a menu shows up at which the pointer type of the new "
+"created pointers can be selected (only if different pointer types exist)."
+msgstr ""
+"<guilabel>Verbindung hinzufügen</guilabel>: Klicken Sie mit der &LMBn; auf "
+"ein Datenelement, halten Sie die Maustaste gedrückt und ziehen Sie eine "
+"Linie zu einem anderen Datenelement. Diese Aktion kann nur dann ausgeführt "
+"werden, wenn beim aktuellen Graphen diese Kante hinzugefügt werden kann. In "
+"einem ungerichteten Graphen dürfen Sie &eg; nicht mehrere Kanten zwischen "
+"zwei Datenelementen einfügen. Halten Sie die Maustaste gedrückt, dann "
+"erscheint ein Kontextmenü, aus dem der Datentyp des neu erstellten Zeigers "
+"ausgewählt werden kann, wenn es mehrere Zeigertypen gibt."
+
+#. Tag: para
+#: index.docbook:341
+#, no-c-format
+msgid ""
+"<guilabel>Delete</guilabel>: Click at an element to delete it. If you delete "
+"a node, all adjacent edges are also deleted."
+msgstr ""
+"<guilabel>Löschen</guilabel>: Klicken Sie auf ein Element, um es zu löschen. "
+"Löschen Sie einen Knoten, dann werden alle anliegenden Kanten ebenfalls "
+"gelöscht."
+
+#. Tag: para
+#: index.docbook:346
+#, no-c-format
+msgid ""
+"<guilabel>Zoom</guilabel>: Click at the whiteboard, keep the &LMB; pressed, "
+"and by this draw a rectangle. The whiteboard will be zoomed to the selected "
+"area. Using the mousewheel to zoom in or out as well. A double click with "
+"the &LMB; restores the original zoom."
+msgstr ""
+"<guilabel>Vergrößerung</guilabel>: Klicken Sie auf die Zeichenfläche, halten "
+"Sie die &LMB; gedrückt und zeichnen Sie ein Rechteck. Die Zeichenfläche wird "
+"auf diesen gewählten Bereich vergrößert. Mit dem Mausrad können Sie die "
+"Ansicht ebenfalls vergrößern bzw. verkleinern. Doppelklicken mit der &LMBn; "
+"stellt die ursprüngliche Vergrößerung wieder her."
+
+#. Tag: title
+#: index.docbook:354
+#, no-c-format
+msgid "<title>Alignment Toolbar</title>"
+msgstr "<title>Layout-Werkzeugleiste</title>"
+
+#. Tag: para
+#: index.docbook:355
+#, no-c-format
+msgid ""
+"You can add the optional <emphasis>Alignment Toolbar</emphasis>. Pressing an "
+"action at this toolbar has direct effect to the currently selected nodes:"
+msgstr ""
+"Weiterhin gibt es noch die zusätzliche <emphasis>Layout-Werkzeugleiste</"
+"emphasis>. Drücken Sie einen Knopf in dieser Werkzeugleiste, dann wird die "
+"Aktion direkt an aktuell ausgewählten Knoten ausgeführt:"
+
+#. Tag: para
+#: index.docbook:359
+#, no-c-format
+msgid ""
+"<guilabel>Top</guilabel>: Align the data elements at the vertical position "
+"of the top-most data element. This only affects the vertical positions."
+msgstr ""
+"<guilabel>Oben</guilabel>: Richtet die Datenelemente an der senkrechten "
+"Position des obersten Datenelements aus. Die waagerechte Position bleibt "
+"unverändert."
+
+#. Tag: para
+#: index.docbook:364
+#, no-c-format
+msgid ""
+"<guilabel>Center</guilabel>: Align the data elements at the vertical "
+"position given by the center of all selected data elements vertical "
+"positions. This only affects the vertical positions."
+msgstr ""
+"<guilabel>Mittig</guilabel>: Richtet die Datenelemente an der senkrechten "
+"Position aus, die durch die Mitte der senkrechten Positionen aller "
+"ausgewählten Datenelemente bestimmt wird. Die waagerechte Position bleibt "
+"unverändert."
+
+#. Tag: para
+#: index.docbook:369
+#, no-c-format
+msgid ""
+"<guilabel>Base</guilabel>: Align the data elements at the vertical position "
+"of the bottom-most data element. This only affects the vertical positions."
+msgstr ""
+"<guilabel>Unten</guilabel>: Richtet die Datenelemente an der senkrechten "
+"Position des untersten Datenelements aus. Die waagerechte Position bleibt "
+"unverändert."
+
+#. Tag: para
+#: index.docbook:374
+#, no-c-format
+msgid ""
+"<guilabel>Left</guilabel>: Align the data elements at the horizontal "
+"position of the left-most data element. This only affects the horizontal "
+"positions."
+msgstr ""
+"<guilabel>Mittig</guilabel>: Richtet die Datenelemente an der waagerechten "
+"Position des obersten Datenelements aus. Die senkrechte Position bleibt "
+"unverändert."
+
+#. Tag: para
+#: index.docbook:379
+#, no-c-format
+msgid ""
+"<guilabel>Center</guilabel>: Align the data elements at the horizontal "
+"position of the top-most data element. This only affects the horizontal "
+"positions."
+msgstr ""
+"<guilabel>Mittig</guilabel>: Richtet die Datenelemente an der waagerechten "
+"Position des obersten Datenelements aus. Die senkrechte Position bleibt "
+"unverändert."
+
+#. Tag: para
+#: index.docbook:385
+#, no-c-format
+msgid ""
+"<guilabel>Right</guilabel>: Align the data elements at the horizontal "
+"position of the right-most data element. This only affects the horizontal "
+"positions."
+msgstr ""
+"<guilabel>Rechts</guilabel>: Richtet die Datenelemente an der waagerechten "
+"Position des rechten Datenelements aus. Die senkrechte Position bleibt "
+"unverändert."
+
+#. Tag: para
+#: index.docbook:390
+#, no-c-format
+msgid ""
+"<guilabel>Circle</guilabel>: Aligns the data elements at a circle of "
+"diameter equals to the maximal distance of the data elements. The data "
+"elements are positioned in the same sequence as given by view from the "
+"center of gravity of these data elements."
+msgstr ""
+"<guilabel>Kreis</guilabel>: Richtet die Datenelemente auf einem Kreis mit "
+"dem größten Abstand der Datenelemente als Durchmesser aus. Die Datenelemente "
+"werden in der Reihenfolge angeordnet, die sich aus der Sicht des "
+"Schwerpunkts der durch die Datenelemente gebildeten Fläche ergibt."
+
+#. Tag: para
+#: index.docbook:395
+#, no-c-format
+msgid ""
+"<guilabel>Minimize Crossing Edges</guilabel>: Rearrange the selected data "
+"elements to minimize the number of crossing connections (application of the "
+"Fruchterman-Reingold algorithm)."
+msgstr ""
+"<guilabel>Kreuzende Kanten minimieren</guilabel>: Verwendet den Fruchterman-"
+"Reingold-Algorithmus, um durch eine geänderte Anordnung der Datenelemente "
+"die Anzahl der kreuzenden Verbindungen zu minimieren."
+
+#. Tag: title
+#: index.docbook:403
+#, no-c-format
+msgid "Working with Graph Documents"
+msgstr "Arbeiten mit Graphendokumenten"
+
+#. Tag: para
+#: index.docbook:404
+#, no-c-format
+msgid ""
+"A &rocs; project contains one or multiple graph documents that can be edited "
+"with the visual graph editor. Further, each document can contain an "
+"arbitrary number of data structures. Here, data structures of a document all "
+"use the same data structure backend. This section will explain how to switch "
+"between documents and how to create new ones."
+msgstr ""
+"Ein &rocs;-Dokument enthält ein oder mehrere Graphendokumente, die mit dem "
+"visuellen Grapheneditor bearbeitet werden können. Jedes Dokument kann eine "
+"beliebige Anzahl von Datenstrukturen enthalten. Die Datenstrukturen eines "
+"Dokuments verwenden alle das gleiche Backend für Datenstrukturen. In diesem "
+"Abschnitt wird erläutert, wie Sie zwischen Dokumenten wechseln und neue "
+"Dokumente erzeugen."
+
+#. Tag: title
+#: index.docbook:412
+#, no-c-format
+msgid "The Document Selector Bar"
+msgstr "Die Dokumentenauswahl-Leiste"
+
+#. Tag: para
+#: index.docbook:413
+#, no-c-format
+msgid ""
+"The document selector bar is used to select the current graph document and "
+"further the current data structure. Using the visual graph editor tools to "
+"create data structures elements will automatically add those newly created "
+"elements to the current data structure. Also, this bar gives direct access "
+"to delete existing or create new data structures within the current document."
+msgstr ""
+"In der Dokumentenauswahl-Leiste kann das aktuelle Graphendokument und auch "
+"die verwendete Datenstruktur ausgewählt werden. Die mit dem visuellen "
+"Grapheneditor erzeugten Elemente werden automatisch zur aktuellen "
+"Datenstruktur hinzugefügt. In dieser Leiste gibt es außerdem auch Aktionen, "
+"um vorhandene Datenstrukturen zu löschen und neue Datenstrukturen im "
+"aktuellen Dokument hinzuzufügen."
+
+#. Tag: para
+#: index.docbook:422
+#, no-c-format
+msgid ""
+"<guilabel>New</guilabel>: This action creates a new data structure using an "
+"automatic naming pattern given by the data structure backend. The created "
+"data structure is added to the currently selected graph document."
+msgstr ""
+"<guilabel>Neu</guilabel>: Diese Aktion erzeugt neue Datenstrukturen mit "
+"einem automatisch generierten Namensmuster, das vom an der Backend der "
+"Datenstruktur vorgegeben wird. Die erzeugte Datenstruktur wird zum aktuell "
+"ausgewählten Graphendokument hinzugefügt."
+
+#. Tag: para
+#: index.docbook:429
+#, no-c-format
+msgid ""
+"<guilabel>Delete</guilabel>: This action deletes the data structure that is "
+"currently selected in the data structure selector for the current document."
+msgstr ""
+"<guilabel>Löschen</guilabel>: Mit dieser Aktion wird die aktuell ausgewählte "
+"Datenstruktur aus dem aktuellen geöffneten Dokument entfernt."
+
+#. Tag: para
+#: index.docbook:435
+#, no-c-format
+msgid ""
+"<guilabel>Properties</guilabel> for <guilabel>Graph Document</guilabel>: "
+"Open a dialog that gives access to the document properties as well as the "
+"data and pointer types of the document."
+msgstr ""
+"<guilabel>Eigenschaften</guilabel> für <guilabel>Graphendokument</guilabel>: "
+"Öffnet einen Dialog mit Zugriff auf die Eigenschaften eines Dokuments und "
+"auch die Daten- und Zeigertypen des Dokuments."
+
+#. Tag: para
+#: index.docbook:441
+#, no-c-format
+msgid ""
+"<guilabel>Properties</guilabel> for <guilabel>Data Structure</guilabel>: "
+"Open a dialog that gives access to the data structure properties."
+msgstr ""
+"<guilabel>Eigenschaften</guilabel> für <guilabel>Datenstruktur</guilabel>: "
+"Öffnet einen Dialog zum Zugriff auf die Eigenschaften von Datenstrukturen."
+
+#. Tag: screeninfo
+#: index.docbook:448
+#, no-c-format
+msgid "The Main Toolbar."
+msgstr "Die Haupt-Werkzeugleiste."
+
+#. Tag: phrase
+#: index.docbook:454
+#, no-c-format
+msgid "The Document Selector Bar."
+msgstr "Die Dokumentenauswahl-Leiste."
+
+#. Tag: title
+#: index.docbook:461
+#, no-c-format
+msgid "Create and Import Graph Documents"
+msgstr "Erstellen und Importieren von Graphendokumenten"
+
+#. Tag: para
+#: index.docbook:462
+#, no-c-format
+msgid ""
+"To create a new graph document or to add an existing one to the project, use "
+"<menuchoice><guimenu>File</guimenu> <guimenuitem>New Project</guimenuitem></"
+"menuchoice> or <menuchoice><guimenu>Graph Document</guimenu> "
+"<guimenuitem>Import Graph</guimenuitem></menuchoice>. You can also import "
+"graph documents from third party applications (for this, see <xref linkend="
+"\"import-export\"/>)."
+msgstr ""
+"Um ein neues Graphendokument zu erstellen oder ein vorhandenes zum Projekt "
+"hinzuzufügen, benutzen Sie <menuchoice><guimenu>Projekt</guimenu> "
+"<guimenuitem>Neues Projekt</guimenuitem></menuchoice> oder "
+"<menuchoice><guimenu>Graphendokument</guimenu> <guimenuitem>Graphen "
+"importieren</guimenuitem></menuchoice>. Sie können auch Graphendokumente aus "
+"anderen Programmen importieren, siehe <xref linkend=\"import-export\"/>."
+
+#. Tag: title
+#: index.docbook:473
+#, no-c-format
+msgid "Writing and Executing Algorithms in &rocs;"
+msgstr "Schreiben und Ausführen von Algorithmen in &rocs;"
+
+#. Tag: para
+#: index.docbook:475
+#, no-c-format
+msgid ""
+"&rocs; internally uses the QtScript scripting engine, which is a specific "
+"JavaScript engine. This means, all algorithms that you implement must use "
+"JavaScript. How JavaScript works and how to write JavaScript code is not "
+"covered in this handbook, though we explain how to access data structures, "
+"data elements and pointers of your data structures from the scripting "
+"engine. Since you never use the basic data structure object but one that is "
+"provided by the currently used data structure backend, the functionality of "
+"the data structure is extended by the corresponding backend and you should "
+"have a look at the specialized functionality. Especially, data structure "
+"backends use the common terms from their domain (nodes and edges in graphs, "
+"leafs and roots in trees, etc.)"
+msgstr ""
+"&rocs; verwendet intern QtScript als Skriptmodul, das von JavaScript "
+"abgeleitet ist. Daher müssen Ihre implementierten Algorithmen in JavaScript "
+"geschrieben werden. Diese Skriptsprache wird hier nicht erklärt, nur der "
+"Zugriff auf Datenstrukturen, Datenelemente und Zeiger Ihrer Datenstrukturen "
+"mit dem Skriptmodul. Sie verwenden nie ein Basisstrukturobjekt, sondern "
+"immer das Objekt, das vom gerade verwendeten Backend der Datenstruktur "
+"bereitgestellt wird. Die Funktionalität der Datenstruktur wird also durch "
+"das zugehörige Backend erweitert. Daher sollten Sie die speziellen "
+"Funktionen der Backends benutzen. Insbesondere verwenden Datenstrukturmodule "
+"die üblichen Begriffe Ihrer Domäne wie zum Beispiel Knoten und Kanten für "
+"Graphen und Wurzel und Blätter für Baumstrukturen &etc;"
+
+#. Tag: para
+#: index.docbook:482
+#, no-c-format
+msgid ""
+"It is important to know that changes done by the scripting engine are "
+"directly reflected at the properties at the visual graph editor whiteboard. "
+"Hence, the scripts actually modify the data structures."
+msgstr ""
+"Beachten Sie, dass Änderungen durch das Skriptmodul direkt die Eigenschaften "
+"im visuellen Graphen-Editor auf der Zeichenfläche verändern. Daher ändern "
+"Skripte tatsächlich die Datenstruktur."
+
+#. Tag: title
+#: index.docbook:489
+#, no-c-format
+msgid "Controlling the Script Execution"
+msgstr "Kontrolle der Skriptausführung"
+
+#. Tag: title
+#: index.docbook:494
+#, no-c-format
+msgid "Include Files"
+msgstr "Dateien einbeziehen"
+
+#. Tag: para
+#: index.docbook:495
+#, no-c-format
+msgid ""
+"Your script documents can include other scripts. This can be useful to "
+"reduce the size of script documents and improve readability. Using "
+"<menuchoice><guimenu>Script Document</guimenu> <guimenuitem>Possible "
+"Includes</guimenuitem></menuchoice> you get a list of script files already "
+"shipped with &rocs; that could be included. You can include a script file "
+"with the following command:"
+msgstr ""
+"Ihr Skriptdokument kann andere Skripte einschließen. Das ist nützlich, um "
+"die Größe des Skriptdokuments zu verringern und die Lesbarkeit zu "
+"verbessern. Benutzen Sie <menuchoice><guimenu>Skripte</"
+"guimenu><guimenuitem>Mögliche Includes</guimenuitem></menuchoice> aus dem "
+"Menü, um eine Liste von Skriptdateien anzuzeigen, die mit &rocs; "
+"ausgeliefert werden. Eine Skriptdatei schließen Sie mit folgendem Befehl ein:"
+
+#. Tag: programlisting
+#: index.docbook:501
+#, no-c-format
+msgid ""
+"include_script(string path);            // relative or absolute path to "
+"script file"
+msgstr ""
+"include_script(string path);            // relativer oder absoluter Pfad zur "
+"Skriptdatei"
+
+#. Tag: title
+#: index.docbook:505
+#, no-c-format
+msgid "<title>Script Output</title>"
+msgstr "<title>Skriptausgabe</title>"
+
+#. Tag: para
+#: index.docbook:506
+#, no-c-format
+msgid ""
+"During the execution of an algorithm, debug and program output is displayed "
+"in the <emphasis>Debug &amp; Script Output</emphasis>. If the scripting "
+"engine detects a syntax error in your script, the error is also displayed as "
+"debug message. Note that all program messages are also displayed at the "
+"debug output (displayed as bold text)."
+msgstr ""
+"Bei der Ausführung eines Algorithmus werden Meldungen in der "
+"<emphasis>Fehler- &amp; Skriptausgabe</emphasis> angezeigt. Erkennt das "
+"Skriptmodul einen Syntaxfehler in Ihrem Skript, wird der Fehler als Debug-"
+"Nachricht angezeigt. Auch alle Programmausgaben werden in der Fehlerausgabe "
+"als fett gedruckter Text angezeigt."
+
+#. Tag: para
+#: index.docbook:511 index.docbook:522
+#, no-c-format
+msgid ""
+"You can control the text that is displayed at the script output by the "
+"following functions:"
+msgstr ""
+"Sie können den angezeigten Text in der Skriptausgabe mit folgenden "
+"Funktionen steuern:"
+
+#. Tag: programlisting
+#: index.docbook:514
+#, no-c-format
+msgid ""
+"Console.log(string message);            // displays the message as script "
+"output\n"
+"    Console.debug(string message);          // displays the message as debug "
+"output"
+msgstr ""
+"Console.log(string message);            // zeigt message als Skriptausgabe\n"
+"    Console.debug(string message);             // zeigt message als "
+"Fehlerausgabe"
+
+#. Tag: title
+#: index.docbook:518
+#, no-c-format
+msgid "Control Script Execution"
+msgstr "Kontrolle der Skriptausführung"
+
+#. Tag: para
+#: index.docbook:519
+#, no-c-format
+msgid "There are different execution modes for your scripts."
+msgstr "Es gibt verschiedene Ausführungsmodi für Skripte."
+
+#. Tag: para
+#: index.docbook:528
+#, no-c-format
+msgid "<guilabel>Run</guilabel>: Execute the script until it finishes."
+msgstr "<guilabel>Ausführen</guilabel>: Führt das Skript bis zum Ende aus."
+
+#. Tag: para
+#: index.docbook:533
+#, no-c-format
+msgid ""
+"<guilabel>One Step</guilabel>: Execute script until one step ends. A step "
+"ends when the script calls the function <literal>interrupt()</literal>:"
+msgstr ""
+"<guilabel>Ein Schritt</guilabel>: Führt das Skript bis zum Ende eines "
+"Schritts aus. Ein Schritt endet, wenn das Skript die Funktion "
+"<literal>interrupt()</literal> aufruft:"
+
+#. Tag: programlisting
+#: index.docbook:536
+#, no-c-format
+msgid "interrupt();    // ends a step"
+msgstr "interrupt();    // beendet einen Schritt"
+
+#. Tag: para
+#: index.docbook:540
+#, no-c-format
+msgid ""
+"<guilabel>Debug</guilabel>: Execute script in debug mode. This opens the "
+"QtScript debug dialog."
+msgstr ""
+"<guilabel>Debuggen</guilabel>: Führt das Skript im Debug-Modus aus, damit "
+"wird der QtScript-Debugdialog geöffnet."
+
+#. Tag: para
+#: index.docbook:545
+#, no-c-format
+msgid ""
+"<guilabel>Stop</guilabel>: Stop script execution (only available if a script "
+"is executing)."
+msgstr ""
+"<guilabel>Anhalten</guilabel>: Hält die Ausführung eines Skripts an und ist "
+"nur während der Ausführung aktiviert."
+
+#. Tag: title
+#: index.docbook:555
+#, no-c-format
+msgid "Scripting Engine API"
+msgstr "Skriptmodul-API"
+
+#. Tag: para
+#: index.docbook:556
+#, no-c-format
+msgid ""
+"Every backend provides a special set of functions and properties for its "
+"data structures and their elements. But also every backend provides the "
+"properties and functions that are defined for the base data structure."
+msgstr ""
+"Jedes Backend stellt einen speziellen Satz von Funktionen und Eigenschaften "
+"für seine Datenstrukturen und deren Elemente bereit,außerdem noch die "
+"Eigenschaften und Funktionen, die für die Basisdatenstruktur definiert "
+"wurden."
+
+#. Tag: chapter
+#: index.docbook:559
+#, no-c-format
+msgid ""
+"&apiDatastructure; &apiGraphstructure; &apiLinkedListstructure; "
+"&apiRootedTreestructure; &apiConsole;"
+msgstr ""
+"&apiDatastructure; &apiGraphstructure; &apiLinkedListstructure; "
+"&apiRootedTreestructure; &apiConsole;"
+
+#. Tag: title
+#: index.docbook:577
+#, no-c-format
+msgid "Credits and License"
+msgstr "Danksagungen und Lizenz"
+
+#. Tag: para
+#: index.docbook:579
+#, no-c-format
+msgid "&rocs;"
+msgstr "&rocs;"
+
+#. Tag: para
+#: index.docbook:582
+#, no-c-format
+msgid "Program Copyright:"
+msgstr "Copyright für das Programm:"
+
+#. Tag: para
+#: index.docbook:584
+#, no-c-format
+msgid "Copyright 2008 Ugo Sangiori (ugorox AT gmail.com)"
+msgstr "Copyright 2008 Ugo Sangiori (ugorox AT gmail.com)"
+
+#. Tag: para
+#: index.docbook:585
+#, no-c-format
+msgid "Copyright 2008-2012 Tomaz Canabrava (tcanabrava AT kde.org)"
+msgstr "Copyright 2008-2012 Tomaz Canabrava (tcanabrava AT kde.org)"
+
+#. Tag: para
+#: index.docbook:586
+#, no-c-format
+msgid "Copyright 2008-2012 Wagner Reck (wagner.reck AT gmail.com)"
+msgstr "Copyright 2008-2012 Wagner Reck (wagner.reck AT gmail.com)"
+
+#. Tag: para
+#: index.docbook:587
+#, no-c-format
+msgid "Copyright 2011-2013 Andreas Cord-Landwehr (cordlandwehr AT kde.org)"
+msgstr "Copyright 2011-2013 Andreas Cord-Landwehr (cordlandwehr AT kde.org)"
+
+#. Tag: para
+#: index.docbook:590
+#, no-c-format
+msgid "Documentation Copyright:"
+msgstr "Copyright der Dokumentation:"
+
+#. Tag: para
+#: index.docbook:592
+#, no-c-format
+msgid ""
+"Documentation copyright 2009 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;"
+msgstr ""
+"Dokumentation Copyright 2009 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail; "
+
+#. Tag: para
+#: index.docbook:593
+#, no-c-format
+msgid "Documentation copyright 2009 Tomaz Canabrava (tcanabrava AT kde.org)"
+msgstr "Dokumentation Copyright 2009 Tomaz Canabrava (tcanabrava AT kde.org)"
+
+#. Tag: para
+#: index.docbook:594
+#, no-c-format
+msgid ""
+"Documentation copyright 2011-2013 Andreas Cord-Landwehr (cordlandwehr AT kde."
+"org)"
+msgstr ""
+"Dokumentation copyright 2011-2013 Andreas Cord-Landwehr (cordlandwehr AT kde."
+"org)"
+
+#. Tag: trans_comment
+#: index.docbook:597
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Übersetzung Burkhard Lück <email>lueck@hube-lueck.de</email></para>"
+
+#. Tag: chapter
+#: index.docbook:597
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr "&underFDL; &underGPL;"
+
+#. Tag: title
+#: index.docbook:604
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#. Tag: title
+#: index.docbook:607
+#, no-c-format
+msgid "How to obtain &rocs;"
+msgstr "Wie Sie &rocs; erhalten"
+
+#. Tag: sect1
+#: index.docbook:607
+#, no-c-format
+msgid "&install.intro.documentation;"
+msgstr "&install.intro.documentation;"
+
+#. Tag: title
+#: index.docbook:614
+#, no-c-format
+msgid "Compilation and installation"
+msgstr "Kompilierung und Installation"
+
+#. Tag: sect1
+#: index.docbook:614
+#, no-c-format
+msgid "&install.compile.documentation;"
+msgstr "&install.compile.documentation;"
+
+#~ msgid "2012-12-02"
+#~ msgstr "2012-12-02"
+
+#~ msgid "The Base Data Structure Elements"
+#~ msgstr "Die Basiselemente von Datenstrukturen"
+
+#~ msgid "Base Data Structures Properties"
+#~ msgstr "Basiseigenschaften von Datenstrukturen"
+
+#~ msgid ""
+#~ "Data structures are identified by their names. Assuming you created a "
+#~ "data structure with name <literal>testgraph</literal>, then you can "
+#~ "access the data structure simply by writing this identifier. For example, "
+#~ "to get an array with all data elements in the given data structure, you "
+#~ "can write <literal>testgraph.list_nodes();</literal> in the script."
+#~ msgstr ""
+#~ "Datenstrukturen werden über den Namen identifiziert. Angenommen Sie haben "
+#~ "eine Datenstruktur mit dem Namen <literal>testgraph</literal>, dann "
+#~ "erhalten Sie über diese Kennung Zugriff auf die Datenstruktur. Um zum "
+#~ "Beispiel ein Feld aller Datenelemente einer bestimmten Datenstruktur zu "
+#~ "erhalten, verwenden Sie <literal>testgraph.list_nodes();</literal> im "
+#~ "Skript."
+
+#~ msgid "Base Data Structure Properties and Functions"
+#~ msgstr "Basiseigenschaften von Datenstrukturen und Funktionen"
+
+#~ msgid ""
+#~ "Each data structure <literal>testgraph</literal> has the following "
+#~ "properties that can be read or written by <literal>testgraph.property</"
+#~ "literal>:"
+#~ msgstr ""
+#~ "Jede Datenstruktur <literal>testgraph</literal> hat folgende "
+#~ "Eigenschaften, die mit <literal>testgraph.property</literal> geschrieben "
+#~ "oder gelesen werden können:"
+
+#~ msgid "string name  // identification of the data structure"
+#~ msgstr "string name  // Kennung der Datenstruktur"
+
+#~ msgid "Base Data Element Properties and Functions"
+#~ msgstr "Basiseigenschaften von Datenelementen und Funktionen"
+
+#~ msgid ""
+#~ "Each data element has the following properties that can be read or "
+#~ "written:"
+#~ msgstr ""
+#~ "Jedes Datenelement hat die folgenden Eigenschaften, die geschrieben und "
+#~ "gelesen werden können:"
+
+#~ msgid ""
+#~ "double x      // x coordinate of current position\n"
+#~ "    double y      // y coordinate of current position\n"
+#~ "    double width  // size\n"
+#~ "    string value  // value\n"
+#~ "    int id        // unique identifier for data element\n"
+#~ "    string name   // name\n"
+#~ "    string color  // color in HEXA"
+#~ msgstr ""
+#~ "double x      // x-Koordinate der aktuellen Position\n"
+#~ "    double y      // y-Koordinate der aktuellen Position\n"
+#~ "    double width  // Größe\n"
+#~ "    string value  // Wert\n"
+#~ "    int id        // eindeutige Kennung des Datenelements\n"
+#~ "    string name   // Name\n"
+#~ "    string color  // Farbe in HEXA"
+
+#~ msgid ""
+#~ "Further, every dynamic property of a data element can be accessed by its "
+#~ "name."
+#~ msgstr ""
+#~ "Außerdem ist der Zugriff auf jede dynamische Eigenschaft eines "
+#~ "Datenelements über seinen Namen möglich."
+
+#~ msgid "Each data element object provides the following methods:"
+#~ msgstr "Jedes Datenelementobjekt stellt die folgenden Methoden bereit:"
+
+#~ msgid ""
+#~ "int type();                         // data type of data element\n"
+#~ "    int set_type(int);                  // set data type of the data "
+#~ "element\n"
+#~ "    void add_property(string name,      // add dynamic property to data "
+#~ "element with specified name and value\n"
+#~ "                      string value);\n"
+#~ "    array adj_data();                   // list of adjacent data\n"
+#~ "    array adj_pointers();               // list of adjacent pointers\n"
+#~ "    array input_pointers();             // list of input pointers\n"
+#~ "    array output_pointers();            // list of output pointers\n"
+#~ "    array loop_pointers();              // list of pointers forming a "
+#~ "self-loop\n"
+#~ "    array connected_pointers(target);   // list of pointers pointing to "
+#~ "'target'\n"
+#~ "    void  remove();                     // remove this data element"
+#~ msgstr ""
+#~ "int type();                         // Datentyp des Datenelements\n"
+#~ "    int set_type(int);                  // setzt den Datentyp des "
+#~ "Elements\n"
+#~ "    void add_property(string name,      // fügt eine dynamische "
+#~ "Eigenschaft mit dem angegebenen Namen und Wert hinzu\n"
+#~ "                      string value);\n"
+#~ "    array adj_data();                   // Liste der anliegenden Daten\n"
+#~ "    array adj_pointers();               // Liste der anliegenden Zeiger\n"
+#~ "array input_pointers();             // Liste der Eingabezeiger\n"
+#~ "    array output_pointers();            // Liste der Ausgabezeiger\n"
+#~ "    array loop_pointers();              // Liste der Zeiger, die eine "
+#~ "Schleife bilden\n"
+#~ "    array connected_pointers(target);   // Liste der Zeiger zu „target“\n"
+#~ "    void remove();                 // entfernt dieses Datenelement"
+
+#~ msgid "Base Pointer Properties and Functions"
+#~ msgstr "Basiseigenschaften von Zeigern und Funktionen"
+
+#~ msgid ""
+#~ "Each pointer has the following properties that can be read or written:"
+#~ msgstr ""
+#~ "Jeder Zeiger hat die folgenden Eigenschaften, die geschrieben und gelesen "
+#~ "werden können:"
+
+#~ msgid ""
+#~ "string color  // color in HEXA\n"
+#~ "    string value  // value\n"
+#~ "    string name   // name\n"
+#~ "    double width  // width\n"
+#~ "    string style  // value out of: dot, dash, dash dot, solid"
+#~ msgstr ""
+#~ "string color  // Farbe in HEXA\n"
+#~ "    string value  // Wert\n"
+#~ "    string name   // Name\n"
+#~ "    double width  // Breite\n"
+#~ "    string style  // Erlaubte Werte dot, dash, dash dot, solid"
+
+#~ msgid ""
+#~ "Further, every dynamic property of a pointer can be accessed by its name."
+#~ msgstr ""
+#~ "Außerdem ist der Zugriff auf jede dynamische Eigenschaft eines Zeigers "
+#~ "über seinen Namen möglich."
+
+#~ msgid "Each pointer object provides the following methods:"
+#~ msgstr "Jedes Zeigerobjekt stellt die folgenden Methoden bereit:"
+
+#~ msgid ""
+#~ "int type();                         // pointer type of pointer\n"
+#~ "    int set_type(int);                  // set pointer type of the "
+#~ "pointer\n"
+#~ "    void add_property(string name,      // add dynamic property to data "
+#~ "element with specified name and value\n"
+#~ "                      string value);\n"
+#~ "    node start();                       // start node of the pointer\n"
+#~ "    node end();                         // target node of the pointer\n"
+#~ "    void remove();                      // remove this pointer"
+#~ msgstr ""
+#~ "int type();                         // Zeigertyp des Zeigers\n"
+#~ "    int set_type(int);                  // setzt den Zeigertyp des "
+#~ "Zeigers\n"
+#~ "    void add_property(string name,      // fügt dynamische Eigenschaften "
+#~ "zum Datenelement mit dem Namen und Wert hinzu\n"
+#~ "                      string value);\n"
+#~ "    node start();                       // Startknoten des Zeigers\n"
+#~ "    node end();                         // Zielknoten des Zeigers\n"
+#~ "    void remove();                 // entfernt diesen Zeiger"
+
+#~ msgid "The Graph Backend"
+#~ msgstr "Das Backend „Graph“"
+
+#~ msgid "Graph Properties and Functions"
+#~ msgstr "Grapheneigenschaften und Funktionen"
+
+#~ msgid "Graph Backend Specific Properties"
+#~ msgstr "Besondere Eigenschaften der Backends für Graphen"
+
+#~ msgid ""
+#~ "The data structure properties dialog allows access to configure settings "
+#~ "specific to the Graph backend. There, with <guilabel>Graph Type</"
+#~ "guilabel> you can select the type of the graph. The meaning of these "
+#~ "types is as follows:"
+#~ msgstr ""
+#~ "Im Dialog <guilabel>Eigenschaften der Datenstruktur</guilabel> finden Sie "
+#~ "die Einstellungen für ein bestimmtes Graphen-Backend. Mit "
+#~ "<guilabel>Graphentyp</guilabel> können Sie den Typ eines Graphen "
+#~ "auswählen. Die Typen haben folgende Bedeutung:"
+
+#~ msgid ""
+#~ "<guilabel>Graph</guilabel>: Graph at which same edges (with respect to "
+#~ "start and end points) may not exist multiple times."
+#~ msgstr ""
+#~ "<guilabel>Graph</guilabel>: Ein Graph, bei dem dieselben Kanten unter "
+#~ "Berücksichtigung von Start- und Endpunkt nur einmal vorkommen dürfen."
+
+#~ msgid ""
+#~ "<guilabel>Multigraph</guilabel>: Graph at which same edges (with respect "
+#~ "to start and end points) may exist multiple times."
+#~ msgstr ""
+#~ "<guilabel>Multigraph</guilabel>: Ein Graph, bei dem dieselben Kanten "
+#~ "unter Berücksichtigung von Start- und Endpunkt auch mehrfach vorkommen "
+#~ "dürfen."
+
+#~ msgid "The Graph Structure"
+#~ msgstr "Die Graphenstruktur"
+
+#~ msgid ""
+#~ "Given a data structure object of type \"Graph\", you can call the "
+#~ "following member functions:"
+#~ msgstr ""
+#~ "Mit einem Datenstrukturobjekt vom Typ „Graph“ können Sie folgende Member-"
+#~ "Funktionen aufrufen:"
+
+#~ msgid ""
+#~ "array list_nodes();                   // list of all nodes of the graph\n"
+#~ "    array list_nodes(int type);           // list of all nodes of given "
+#~ "type\n"
+#~ "    array list_edges();                   // list of all edges of the "
+#~ "graph\n"
+#~ "    array list_edges(int type);           // list of all edges of given "
+#~ "type\n"
+#~ "    node add_node(name);                  // add new node and returns it\n"
+#~ "    edge add_edge(node from, node to);    // add new edge from 'from' to "
+#~ "'to' and returns it\n"
+#~ "    array overlay_edges(int overlayID);   // list of all edges in given "
+#~ "overlay\n"
+#~ "    edge add_overlay_edge(node from,\n"
+#~ "                          node to,\n"
+#~ "                          int overlayID); // add edge of given pointer "
+#~ "type/in specified overlay"
+#~ msgstr ""
+#~ "array list_nodes();                   // Liste aller Knoten des Graphen\n"
+#~ "    array list_nodes(int type);           // Liste aller Knoten des "
+#~ "angegebenen Typs\n"
+#~ "    array list_edges();                   // Liste aller Kanten des "
+#~ "Graphen\n"
+#~ "    array list_edges(int type);           // Liste aller Kanten des "
+#~ "angegebenen Typs\n"
+#~ "    node add_node(name);                  // fügt einen neuen Knoten "
+#~ "hinzu und gibt ihn zurück\n"
+#~ "    edge add_edge(node from, node to);    // fügt eine neue Kante von "
+#~ "„from“ nach „to“ hinzu und gibt sie zurück\n"
+#~ "    array overlay_edges(int overlayID);   // Liste aller Kanten in der "
+#~ "angegebenen Überlagerung\n"
+#~ "    edge add_overlay_edge(node from,\n"
+#~ "                          node to,\n"
+#~ "                          int overlayID); // fügt eine Kante vom "
+#~ "angegebenen Zeigertyp/in der angegebenen Überlagerung hinzu"
+
+#~ msgid "Graph Nodes"
+#~ msgstr "Graphenknoten"
+
+#~ msgid ""
+#~ "Given a data structure object of type \"Graph\", you can call the "
+#~ "following member functions on the graph nodes additionally to the "
+#~ "properties provided by the Data elements:"
+#~ msgstr ""
+#~ "Mit einem Datenstrukturobjekt vom Typ „Graph“ können Sie folgende Member-"
+#~ "Funktionen für die Graphenknoten zusätzlich zu den Eigenschaften des "
+#~ "Datenelements aufrufen:"
+
+#~ msgid ""
+#~ "array adj_nodes();                    // list of all adjacent nodes\n"
+#~ "    array adj_edges();                    // list of connected edges\n"
+#~ "    array input_edges();                  // list of input edges\n"
+#~ "    array output_edges();                 // list of all output edges\n"
+#~ "    array loop_edges();                   // list of all edges looping to "
+#~ "the node\n"
+#~ "    array connected_edges(node target);   // all edges that connect this "
+#~ "node with node 'target'"
+#~ msgstr ""
+#~ "array adj_nodes();                    // Liste aller anliegenden Knoten\n"
+#~ "    array adj_edges();                    // Liste der anliegenden "
+#~ "Kanten\n"
+#~ "    array input_edges();                  // Liste der Eingabe-Kanten\n"
+#~ "    array output_edges();                 // Liste der Ausgabe-Kanten\n"
+#~ "    array loop_edges();                   // Liste aller Kanten, die mit "
+#~ "dem Knoten in einer Schleife liegen\n"
+#~ "    array connected_edges(node target);   // Alle Kanten, die mit dem "
+#~ "Knoten „target“ verbunden sind"
+
+#~ msgid "Graph Edges"
+#~ msgstr "Graphenkanten"
+
+#~ msgid ""
+#~ "Given edges of a data structure of type \"Graph\", only the properties of "
+#~ "the base data structure are available."
+#~ msgstr ""
+#~ "Für Kanten einer Datenstruktur vom Typ „Graph“ sind nur die Eigenschaften "
+#~ "der Basis-Datenstruktur verfügbar."
+
+#~ msgid "Graph Structure Algorithms"
+#~ msgstr "Graphenstruktur-Algorithmen"
+
+#~ msgid ""
+#~ "The graph backend provides some special functions that can be used from "
+#~ "the scripting engine."
+#~ msgstr ""
+#~ "Das Backend „Graph“ stellt einige besondere Funktionen bereit, die mit "
+#~ "dem Skriptmodul verwendet werden können."
+
+#~ msgid "Shortest Path Computation"
+#~ msgstr "Berechnung des kürzesten Wegs"
+
+#~ msgid ""
+#~ "Compute the shortest path between the nodes <emphasis>start</emphasis> "
+#~ "and <emphasis>end</emphasis>. Both nodes must be of the same graph. This "
+#~ "computation respects if the graph is directed or undirected."
+#~ msgstr ""
+#~ "Berechnet den kürzesten Weg zwischen dem <emphasis>Start</emphasis>- und "
+#~ "<emphasis>Endknoten</emphasis>. Beide Knoten müssen auf demselben Graphen "
+#~ "liegen. Bei dieser Berechnung wird berücksichtigt, ob der Graph gerichtet "
+#~ "oder ungerichtet ist."
+
+#~ msgid ""
+#~ "<funcdef>array <function>dijkstra_shortest_path</function></funcdef> "
+#~ "<paramdef>node <parameter><replaceable>start</replaceable></parameter></"
+#~ "paramdef> <paramdef>node <parameter><replaceable>end</replaceable></"
+#~ "parameter></paramdef>"
+#~ msgstr ""
+#~ "<funcdef>array <function>dijkstra_shortest_path</function></funcdef> "
+#~ "<paramdef>node <parameter><replaceable>start</replaceable></parameter></"
+#~ "paramdef> <paramdef>node <parameter><replaceable>end</replaceable></"
+#~ "parameter></paramdef>"
+
+#~ msgid "Shortest Path Distances"
+#~ msgstr "Entfernungen des kürzesten Wegs"
+
+#~ msgid ""
+#~ "Compute the shortest path distances from node <emphasis>start</emphasis> "
+#~ "to all other nodes of the graph. This computation respects if the graph "
+#~ "is directed or undirected."
+#~ msgstr ""
+#~ "Berechnet die Entfernungen der kürzesten Wege vom Knoten <emphasis>Start</"
+#~ "emphasis> zu allen anderen Knoten des Graphen. Bei dieser Berechnung wird "
+#~ "berücksichtigt, ob der Graph gerichtet oder ungerichtet ist."
+
+#~ msgid ""
+#~ "<funcdef>array <function>distances</function></funcdef> <paramdef>node "
+#~ "<parameter><replaceable>start</replaceable></parameter></paramdef>"
+#~ msgstr ""
+#~ "<funcdef>array <function>distances</function></funcdef> <paramdef>node "
+#~ "<parameter><replaceable>start</replaceable></parameter></paramdef>"
+
+#~ msgid "The Linked List Backend"
+#~ msgstr "Das Backend „Verkettete Liste“"
+
+#~ msgid "Linked List Properties and Functions"
+#~ msgstr "Eigenschaften von verketteten Listen und Funktionen"
+
+#~ msgid "The Linked List Structure"
+#~ msgstr "Die Struktur „Verkettete Liste“"
+
+#~ msgid ""
+#~ "Given a data structure object of type \"Linked List\", you can call the "
+#~ "following member functions:"
+#~ msgstr ""
+#~ "Mit einem Datenstrukturobjekt vom Typ „Verkettete Liste“ können Sie "
+#~ "folgende Member-Funktionen aufrufen:"
+
+#~ msgid ""
+#~ "node begin();                           // gives the head node of the "
+#~ "linked list\n"
+#~ "    setBegin(node begin):                   // set node begin as begin of "
+#~ "list and rearrange list\n"
+#~ "    createNode();                           // create a new list node"
+#~ msgstr ""
+#~ "node begin();                           // gibt den ersten Knoten der "
+#~ "verketteten Liste zurück\n"
+#~ "    setBegin(node begin):                   // setzt den Knoten „begin“ "
+#~ "als ersten Knoten der Liste und ordnet die Liste um\n"
+#~ "    createNode();                           // erstellt einen neuen "
+#~ "Knoten in der Liste"
+
+#~ msgid "Linked List Nodes"
+#~ msgstr "Knoten verketteter Liste"
+
+#~ msgid ""
+#~ "Given a data structure object of type \"Linked List\", you can call the "
+#~ "following member functions on the graph nodes additionally to the "
+#~ "properties provided by the Data elements:"
+#~ msgstr ""
+#~ "Mit einem Datenstrukturobjekt vom Typ „Verkettete Liste“ können Sie "
+#~ "folgende Member-Funktionen für die Graphenknoten zusätzlich zu den "
+#~ "Eigenschaften des Datenelements aufrufen:"
+
+#~ msgid ""
+#~ "node front();                           // returns the node's predecessor"
+#~ msgstr ""
+#~ "node front();                           // gibt den Vorgänger des Knotens "
+#~ "zurück"
+
+#~ msgid "Linked List Edges"
+#~ msgstr "Kanten verketteter Listen"
+
+#~ msgid ""
+#~ "Given edges of a data structure of type \"Linked List\", only the "
+#~ "properties of the base data structure are available."
+#~ msgstr ""
+#~ "Für Kanten einer Datenstruktur vom Typ „Verkettete Liste“ sind nur die "
+#~ "Eigenschaften der Basis-Datenstruktur verfügbar."
+
+#~ msgid "The Rooted Tree Backend"
+#~ msgstr "Das Backend „Wurzelbaum“"
+
+#~ msgid "Rooted Tree Properties and Functions"
+#~ msgstr "Eigenschaften von Wurzelbäumen und Funktionen"
+
+#~ msgid "Rooted Tree Backend"
+#~ msgstr "Das Backend „Wurzelbaum“"
+
+#~ msgid ""
+#~ "The data structure properties dialog allows access to configure settings "
+#~ "specific to the Graph backend. There, by checking the <guilabel>Show all "
+#~ "pointers</guilabel> property, all pointers between the tree nodes are "
+#~ "shown. If unchecked, multiple pointers between same nodes are collapsed "
+#~ "to one."
+#~ msgstr ""
+#~ "Im Dialog <guilabel>Eigenschaften der Datenstruktur</guilabel> finden Sie "
+#~ "die die Einstellungen für ein bestimmtes Graphen-Backend. Kreuzen Sie in "
+#~ "diesem Dialog <guilabel>Alle Zeiger anzeigen</guilabel> an, dann werden "
+#~ "alle Zeiger zwischen den Baumknoten angezeigt. Ist diese Einstellung "
+#~ "nicht aktiv, werden mehrere Zeiger zwischen denselben Knoten "
+#~ "zusammengefasst."
+
+#~ msgid "The Rooted Tree Structure"
+#~ msgstr "Die Struktur „Wurzelbaum“"
+
+#~ msgid ""
+#~ "Given a data structure object of type \"Rooted Tree\", the following "
+#~ "properties can be read or written:"
+#~ msgstr ""
+#~ "Für jedes Datenstrukturobjekt vom Typ „Wurzelbaum“ können folgende "
+#~ "Eigenschaften geschrieben oder gelesen werden:"
+
+#~ msgid ""
+#~ "ShowAllPointers     // set to true if show all edges, set to false if "
+#~ "multiple edges shall be compressed"
+#~ msgstr ""
+#~ "ShowAllPointers     // wenn wahr, werden alle Kanten angezeigt. Setzen "
+#~ "Sie dies auf falsch, wenn mehrfache Kanten zusammengefasst werden sollen"
+
+#~ msgid ""
+#~ "Given a data structure object of type \"Rooted Tree\", you can call the "
+#~ "following member functions:"
+#~ msgstr ""
+#~ "Mit einem Datenstrukturobjekt vom Typ „Wurzelbaum“ können Sie folgende "
+#~ "Member-Funktionen aufrufen:"
+
+#~ msgid ""
+#~ "node add_data(string name);         // add a node to tree with given "
+#~ "name\n"
+#~ "    void set_root_node(node root);      // set root as root node of the "
+#~ "tree\n"
+#~ "    node root_node();                   // return root node of the tree"
+#~ msgstr ""
+#~ "node add_data(string name);         // fügt einen Knoten mit dem "
+#~ "angegebenen Namen zum Baum hinzu\n"
+#~ "    void set_root_node(node root);      // setzt root als Wurzel des "
+#~ "Baums\n"
+#~ "    node root_node();                   // gibt den Wurzelknoten des "
+#~ "Baums zurück"
+
+#~ msgid "Rooted Tree Nodes"
+#~ msgstr "Knoten von Wurzelbäumen"
+
+#~ msgid ""
+#~ "Given a node object of type \"Rooted Tree\", the following properties can "
+#~ "be read or written:"
+#~ msgstr ""
+#~ "Für ein Knotenobjekt vom Typ „Wurzelbaum“ können folgende Eigenschaften "
+#~ "geschrieben oder gelesen werden:"
+
+#~ msgid ""
+#~ "int numberOfChilds                  // set the number of (allowed) "
+#~ "children for this node\n"
+#~ "    node left_child                     // read only: node that is the "
+#~ "left child\n"
+#~ "    node right_child                    // read only: node that is the "
+#~ "right child\n"
+#~ "    node node_parent                    // read only: node that is the "
+#~ "parent"
+#~ msgstr ""
+#~ "int numberOfChilds                  // setzt die Anzahl der zulässigen "
+#~ "Unterknoten für diesen Knoten\n"
+#~ "    node left_child                     // nur lesbar: gibt den linken "
+#~ "Unterknoten zurück\n"
+#~ "    node right_child                    // nur lesbar: gibt den rechten "
+#~ "Unterknoten zurück\n"
+#~ "    node node_parent                    // nur lesbar: gibt den "
+#~ "übergeordneten Knoten zurück"
+
+#~ msgid ""
+#~ "Given a node object of type \"Rooted Tree\", you can call the following "
+#~ "member functions:"
+#~ msgstr ""
+#~ "Mit einem Knotenobjekt vom Typ „Wurzelbaum“ können Sie folgende Member-"
+#~ "Funktionen aufrufen:"
+
+#~ msgid ""
+#~ "node add_left_child(node child);    // add left child\n"
+#~ "    node add_right_child(node child);   // add right child\n"
+#~ "    node add_child(node child, int i);  // add a child as the i-th child "
+#~ "of the node\n"
+#~ "    node add_node_parent(node child);   // add parent (only successful if "
+#~ "no parent set, yet)\n"
+#~ "    node left_child();                  // return right child\n"
+#~ "    node right_child();                 // return left child\n"
+#~ "    node child_at(int i);               // return the i-th child of the "
+#~ "node\n"
+#~ "    node node_parent();                 // return the node's parent"
+#~ msgstr ""
+#~ "node add_left_child(node child);    // linken Unterknoten hinzufügen\n"
+#~ "    node add_right_child(node child);   // rechten Unterknoten "
+#~ "hinzufügen\n"
+#~ "    node add_child(node child, int i);  // Unterknoten als n-ten "
+#~ "Unterknoten zum Knoten hinzufügen\n"
+#~ "    node add_node_parent(node child);   // Übergeordneten Knoten "
+#~ "hinzufügen (nur möglich, wenn noch nicht vorhanden)\n"
+#~ "    node left_child();                  // rechten Unterknoten "
+#~ "zurückgeben\n"
+#~ "    node right_child();                 // linken Unterknoten "
+#~ "zurückgeben\n"
+#~ "    node child_at(int i);               // n-ten Unterknoten des Knotens "
+#~ "zurückgeben\n"
+#~ "    node node_parent();                 // Übergeordneten Knoten "
+#~ "zurückgeben"
+
+#~ msgid "Rooted Tree Edges"
+#~ msgstr "Kanten von Wurzelbäumen"
+
+#~ msgid ""
+#~ "Given edges of a data structure of type \"Rooted Tree\", only the "
+#~ "properties of the base data structure are available."
+#~ msgstr ""
+#~ "Für Kanten einer Datenstruktur vom Typ „Wurzelbaum“ sind nur die "
+#~ "Eigenschaften der Basis-Datenstruktur verfügbar."
+
+#~ msgid "Import and Export"
+#~ msgstr "Importieren und Exportieren"
+
+#~ msgid "Exchange &rocs; Projects"
+#~ msgstr "&rocs;-Projekte austauschen"
+
+#~ msgid ""
+#~ "&rocs; projects can be imported and exported as archived <literal>.tar."
+#~ "gz</literal> files. These archives can be used to exchange projects. "
+#~ "Import and Export can be done with <menuchoice><guimenu>File</guimenu> "
+#~ "<guimenuitem>Import Project</guimenuitem></menuchoice> and "
+#~ "<menuchoice><guimenu>File</guimenu> <guimenuitem>Export Project</"
+#~ "guimenuitem></menuchoice>, respectively."
+#~ msgstr ""
+#~ "&rocs;-Projekte können als Archivdateien im Format <literal>.tar.gz</"
+#~ "literal> importiert und exportiert werden. Diese Archive können zum "
+#~ "Austausch von Projekten benutzt werden. Der Import und Export erfolgt mit "
+#~ "<menuchoice><guimenu>Datei</guimenu> <guimenuitem>Projekt importieren</"
+#~ "guimenuitem></menuchoice> beziehungsweise <menuchoice><guimenu>Datei</"
+#~ "guimenu> <guimenuitem>Projekt exportieren</guimenuitem></menuchoice>"
+
+#~ msgid "Import and Export of Graph Documents"
+#~ msgstr "Import und Export von Graphendokumenten"
+
+#~ msgid ""
+#~ "&rocs; currently supports import and export of the following file formats:"
+#~ msgstr ""
+#~ "&rocs; unterstützt zurzeit den Import und Export folgender Dateiformate:"
+
+#~ msgid "DOT files, also known as Graphviz files"
+#~ msgstr "DOT-Dateien, auch als Graphviz-Dateien bekannt."
+
+#~ msgid "GML files"
+#~ msgstr "GML-Dateien"
+
+#~ msgid "Trivial Graph Format files"
+#~ msgstr "„Trivial Graph“-Dateien"
+
+#~ msgid "Trivial Graph File Format"
+#~ msgstr "„Trivial Graph“-Dateiformat"
+
+#~ msgid ""
+#~ "The <emphasis>Trivial Graph Format</emphasis> (TGF) is a simple text-"
+#~ "based file format for describing graphs. A TGF file consists of a list of "
+#~ "node definitions, that map the node IDs to labels, followed by a list of "
+#~ "the edges. In this format it is only possible to have one label per node "
+#~ "and one value per edge. &rocs; interprets imported graphs as undirected "
+#~ "graphs. Exported graphs will contain two edges per connection if "
+#~ "connections are bidirectional."
+#~ msgstr ""
+#~ "Das <emphasis>„Trivial Graph“-Format</emphasis> (TGF) ist ein einfaches "
+#~ "textbasiertes Dateiformat zur Beschreibung von Graphen. Eine TGF-Datei "
+#~ "besteht aus einer Liste von Knotendefinitionen mit der Zuordnung von "
+#~ "Kennungen zu Beschriftungen, gefolgt von einer Liste von Kanten. In "
+#~ "diesem Format kann es nur eine Beschriftung für einen Knoten und einen "
+#~ "Wert für eine Kante geben. &rocs; interpretiert importierte Graphen als "
+#~ "ungerichtet. Exportierte Graphen enthalten zwei Kanten für jede "
+#~ "zweiseitige Verbindung."
+
+#~ msgid "Format Specification"
+#~ msgstr "Beschreibung des Formats"
+
+#~ msgid ""
+#~ "The file starts with a list of nodes (one node per line), followed by a "
+#~ "line with the only character \"#\", followed by a list of edges (one edge "
+#~ "per line)."
+#~ msgstr ""
+#~ "Die Datei beginnt mit einer Liste der Knoten, jeder Knoten auf einer "
+#~ "einzelnen Zeile. Dann folgt eine Zeile nur mit dem Zeichen  „#“, gefolgt "
+#~ "von einer Liste von Kanten in einer eigenen Zeile."
+
+#~ msgid ""
+#~ "A node consists of an integer (identifier), followed by a space, followed "
+#~ "by an arbitrary string."
+#~ msgstr ""
+#~ "Ein Knoten wird durch eine ganze Zahl als Kennung, dann ein Leerzeichen "
+#~ "und ein beliebiger Text beschrieben."
+
+#~ msgid ""
+#~ "An edge consists of two integers (identifiers) separated by a space, "
+#~ "followed by a space, followed by an arbitrary string. It is assumed that "
+#~ "the directed edge points from the first identifier to the second "
+#~ "identifier."
+#~ msgstr ""
+#~ "Die Beschreibung einer Kante besteht aus zwei ganzen Zahlen (Kennungen "
+#~ "von Knoten), durch Leerzeichen getrennt, dann folgt nach einem "
+#~ "Leerzeichen ein beliebiger Text. Es wird angenommen, dass die gerichtete "
+#~ "Kante von der ersten zur zweiten Kennung zeigt."
+
+#~ msgid "Example"
+#~ msgstr "Ein Beispiel"
+
+#~ msgid ""
+#~ "1 starting node\n"
+#~ "2 transmitter\n"
+#~ "3 sink\n"
+#~ "#\n"
+#~ "1 2 blue\n"
+#~ "2 1 red\n"
+#~ "2 3 green"
+#~ msgstr ""
+#~ "1 Startknoten\n"
+#~ "2 Sender\n"
+#~ "3 Endknoten\n"
+#~ "#\n"
+#~ "1 2 blau\n"
+#~ "2 1 rot\n"
+#~ "2 3 grün"
+
+#~ msgid "DOT Language / Graphviz Graph File Format"
+#~ msgstr "DOT-Sprache / Graphviz-Graphendateiformat"
+
+#~ msgid ""
+#~ "The DOT language is a plain text graph description language that allows "
+#~ "both,a good human readable representation of graphs as well as an "
+#~ "efficient processing by graph layout programs. DOT is the default file "
+#~ "format for the Graphviz graph visualization suite, but is also widely "
+#~ "used by other graph tools. The usual file endings for DOT are <emphasis>."
+#~ "gv</emphasis> and <emphasis>.dot</emphasis>."
+#~ msgstr ""
+#~ "„DOT“ ist eine Beschreibungssprache für Graphen, die ein einfaches "
+#~ "Textformat verwendet. Damit ist die Darstellung von Graphen für den "
+#~ "Benutzer gut lesbar und sie kann effizient durch Anzeigeprogramme für "
+#~ "Graphen verarbeitet werden. „DOT“ ist das Standardformat für das "
+#~ "Visualisierungsprogramm Graphviz, wird aber auch häufig von anderen "
+#~ "Graphenprogrammen verwendet. „DOT“-Dateien haben üblicherweise die "
+#~ "Erweiterung <emphasis>.gv</emphasis> und <emphasis>.dot</emphasis>."
+
+#~ msgid "Unsupported Features"
+#~ msgstr "Nicht unterstützte Fähigkeiten"
+
+#~ msgid ""
+#~ "&rocs; can parse every graph file that contains a graph specified "
+#~ "according to the DOT language specification<footnote><para>http://www."
+#~ "graphviz.org/content/dot-language</para></footnote>. The support of "
+#~ "language features is complete, despite of the following exceptions:"
+#~ msgstr ""
+#~ "&rocs; kann jede Graphendatei einlesen und verarbeiten, die in der "
+#~ "Sprache „DOT“<footnote><para>http://www.graphviz.org/content/dot-"
+#~ "language</para></footnote> spezifizierte Graphen enthält. Die Funktionen "
+#~ "der Sprache werden vollständig mit folgenden Ausnahmen unterstützt:"
+
+#~ msgid ""
+#~ "subgraph: Due to the lack of a subgraph concept in &rocs;, subgraphs are "
+#~ "only imported as a set of date elements and connections. Especially, "
+#~ "connections to or from subgraphs are not imported."
+#~ msgstr ""
+#~ "Untergraph: Wegen des fehlenden Konzepts für Untergraphen in &rocs; "
+#~ "werden Untergraphen nur als Menge von Datenelementen und Verbindungen "
+#~ "importiert. Besonders Verbindungen zu oder von Untergraphen werden nicht "
+#~ "importiert."
+
+#~ msgid ""
+#~ "&HTML; and &XML; attributes: Attributes (like labels) that contain &HTML; "
+#~ "or &XML; syntax are read unchanged. Especially, not adjustment of fonts "
+#~ "and styles are read from those attributes."
+#~ msgstr ""
+#~ "&HTML; und &XML; Attribute: Attribute wie Beschriftungen mit &HTML;- oder "
+#~ "&XML;-Syntax werden unverändert eingelesen. Insbesondere werden keine "
+#~ "Anpassungen für Schriften und Stile aus diesen Attributen eingelesen."
+
+#~ msgid ""
+#~ "digraph myGraph {\n"
+#~ "    a -> b -> c;\n"
+#~ "    b -> d;\n"
+#~ "}"
+#~ msgstr ""
+#~ "digraph myGraph {\n"
+#~ "    a -> b -> c;\n"
+#~ "    b -> d;\n"
+#~ "}"
+
+#~ msgid ""
+#~ "At top you can select the current graph document, open its configuration "
+#~ "dialog, and add new data structures to the current graph document (&ie; "
+#~ "to the current whiteboard). Below you can select the current data "
+#~ "structure. There you can modify which data element and pointer properties "
+#~ "(names, values, objects) are visible by pressing the respective buttons. "
+#~ "By click at the data and pointer type names you can access their "
+#~ "configuration dialogs. For details see <xref linkend=\"user-interface-"
+#~ "graph-properties\"/>."
+#~ msgstr ""
+#~ "Oben können Sie das aktuelle Graphendokument auswählen und dessen "
+#~ "Einstellungsdialog öffnen sowie neue Datenstrukturen zum aktuellen "
+#~ "Graphendokument &ie; zur aktuellen Zeichenfläche hinzufügen. Darunter "
+#~ "wird die aktuelle Datenstruktur ausgewählt. Sie können mit den "
+#~ "entsprechenden Knöpfen einstellen, welche Eigenschaften von "
+#~ "Datenelementen und Zeigern wie Namen, Werte und Objekte auf der "
+#~ "Zeichenfläche angezeigt werden. Klicken Sie auf die Namen der Daten- und "
+#~ "Zeigertypen, um den Einstellungsdialog zu öffnen. Weitere Informationen "
+#~ "finden Sie im Abschnitt <xref linkend=\"user-interface-graph-properties\"/"
+#~ ">."
+
+#~ msgid "Debug &amp; Script Output"
+#~ msgstr "Fehler- und Skriptausgabe"
+
+#~ msgid "<screeninfo>The Main Toolbar.</screeninfo>"
+#~ msgstr "<screeninfo>Die Haupt-Werkzeugleiste</screeninfo>"
+
+#~ msgid "<screeninfo>The Alignment Toolbar.</screeninfo>"
+#~ msgstr "<screeninfo>Die Layout-Werkzeugleiste</screeninfo>"
+
+#~ msgid "<phrase>The Alignment Toolbar.</phrase>"
+#~ msgstr "<phrase>Die Layout-Werkzeugleiste</phrase>"
+
+#~ msgid "The Graph Properties Panel"
+#~ msgstr "Der Bereich Graphen-Eigenschaften"
+
+#~ msgid ""
+#~ "At top of the panel the current graph document can be selected. Below of "
+#~ "this, new data structures can be created or existing data structures can "
+#~ "be configured."
+#~ msgstr ""
+#~ "Oben in diesem Bereich kann das aktuelle Graphendokument ausgewählt "
+#~ "werden. Darunter können neue Datenstrukturen erstellt oder vorhandene "
+#~ "bearbeitet und eingerichtet werden."
+
+#~ msgid "Create New Data Structure"
+#~ msgstr "Neue Datenstrukturen erstellen"
+
+#~ msgid ""
+#~ "You can create a new data structure by inserting an identifier (without "
+#~ "spaces or special characters) and then press <guibutton>Add</guibutton>. "
+#~ "The identifier is used to access the data structure from algorithms."
+#~ msgstr ""
+#~ "Neue Datenstrukturen werden durch Eingabe einer Kennung (ohne Leer- und "
+#~ "Sonderzeichen) und Drücken auf <guibutton>Hinzufügen</guibutton> "
+#~ "erstellt. Die Kennung verwenden die Algorithmen zum Zugriff auf "
+#~ "Datenstrukturen."
+
+#~ msgid "Configure Data Structure"
+#~ msgstr "Datenstrukturen einrichten"
+
+#~ msgid ""
+#~ "All available data structures from the current graph document are shown "
+#~ "in a selection list. When selecting one, configurations for the "
+#~ "corresponding data structure are shown:"
+#~ msgstr ""
+#~ "Alle vorhandenen Datenstrukturen des aktuellen Graphendokuments werden in "
+#~ "der Auswahlliste angezeigt. Wenn Sie ein Graphendokument auswählen, "
+#~ "werden Einstellungen für die zugehörigen Datenstrukturen angezeigt:"
+
+#~ msgid "<guibutton>Delete</guibutton>: Delete this data structure."
+#~ msgstr "<guibutton>Löschen</guibutton>: Löscht diese Datenstruktur."
+
+#~ msgid ""
+#~ "<guilabel>Display Options</guilabel> Below, all data and pointer types of "
+#~ "the data structure are shown. By pressing the name, the configuration "
+#~ "dialogs for the corresponding types can be opened. Further, visibility of "
+#~ "data elements and pointers, names, and values of elements of given type "
+#~ "can be controlled by pressing the corresponding buttons."
+#~ msgstr ""
+#~ "Im Bereich <guilabel>Anzeigeeinstellungen</guilabel> werden alle Daten- "
+#~ "und Verbindungstypen aufgeführt. Klicken Sie auf den Namen, um den "
+#~ "Einrichtungsdialog für die zugehörigen Typen zu öffnen. Außerdem kann die "
+#~ "Anzeige von Datenelementen, Verbindungen, Namen und Werten von Elementen "
+#~ "der angegebenen Typen mit den entsprechenden Knöpfen ein- und "
+#~ "ausgeschaltet werden."
+
+#~ msgid "Configure Plugin Options of Data Structure"
+#~ msgstr "Moduloptionen einer Datenstruktur einrichten"
+
+#~ msgid ""
+#~ "Each data structure plugin can add options to the data structure "
+#~ "configuration dialog. The standard data structure plugins provide the "
+#~ "following options:"
+#~ msgstr ""
+#~ "Jedes Datenstrukturmodul kann Optionen zum Einrichtungsdialog der "
+#~ "Datenstruktur hinzufügen. Das Standard-Datenstrukturmodul enthält die "
+#~ "folgenden Optionen:"
+
+#~ msgid "Graph Plugin"
+#~ msgstr "Modul „Graph“"
+
+#~ msgid ""
+#~ "<guilabel>Directed Graph</guilabel>: Graph with directed edges at which "
+#~ "several same orientated edges between same nodes are not allowed."
+#~ msgstr ""
+#~ "<guilabel>Gerichteter Graph</guilabel>: Graph mit gerichteten Kanten, bei "
+#~ "dem mehrere Kanten mit gleicher Orientierung zwischen gleichen Knoten "
+#~ "nicht erlaubt sind."
+
+#~ msgid ""
+#~ "<guilabel>Undirected Graph</guilabel>: Graph with undirected edges at "
+#~ "which several edges between same nodes are not allowed."
+#~ msgstr ""
+#~ "<guilabel>Ungerichteter Graph</guilabel>: Graph mit ungerichteten Kanten, "
+#~ "bei dem mehrere Kanten zwischen gleichen Knoten nicht erlaubt sind."
+
+#~ msgid ""
+#~ "<guilabel>Directed Multigraph</guilabel>: Graph with directed edges at "
+#~ "which several same orientated edges between same nodes are allowed."
+#~ msgstr ""
+#~ "<guilabel>Gerichteter Multigraph</guilabel>: Graph mit gerichteten "
+#~ "Kanten, bei dem mehrere Kanten mit gleicher Orientierung zwischen "
+#~ "gleichen Knoten erlaubt sind."
+
+#~ msgid "Rooted Tree Plugin"
+#~ msgstr "Modul „Wurzelbaum“"
+
+#~ msgid "Plain-Text files."
+#~ msgstr "Einfache Textdateien."
+
+#~ msgid ""
+#~ "The support for most of these files is very basic and only supports basic "
+#~ "values. Imported are data elements and their corresponding connections, "
+#~ "names of all elements, values, and coordinates."
+#~ msgstr ""
+#~ "Die Unterstützung dieser Dateiformate ist noch unvollständig und "
+#~ "funktioniert nur für die wichtigsten Werte. Datenelemente und die "
+#~ "zugehörigen Verbindungen, die Namen aller Elemente, Werte und Koordinaten "
+#~ "werden importiert."
+
+#~| msgid ""
+#~| "<guilabel>Left</guilabel>: Align the nodes at the horizontal position of "
+#~| "the left-most node. This only affects the horizontal positions."
+#~ msgid ""
+#~ "<guilabel>Left</guilabel>: Align the nodes at the horizontal position of "
+#~ "the left-most data element. This only affects the horizontal positions."
+#~ msgstr ""
+#~ "<guilabel>Links</guilabel>: Richtet die Datenelemente an der waagerechten "
+#~ "Position des linken Datenelements aus. Die senkrechte Position bleibt "
+#~ "unverändert."
+
+#~ msgid ""
+#~ "to be able to draw or modify graphs at the Visual Graph Editor "
+#~ "whiteboard, you first need to select a tool here"
+#~ msgstr ""
+#~ "Um Graphen im Zeichenfläche des visuellen Graphen-Editors zeichnen und "
+#~ "bearbeiten zu können, müssen Sie zuerst ein Werkzeug auswählen."
+
+#~ msgid ""
+#~ "This is the area where you can draw your graphs. Right click at the "
+#~ "whiteboard, graph elements, or selected graph elements opens a context "
+#~ "menu depending on what you click."
+#~ msgstr ""
+#~ "Dies ist der Bereich, in dem Sie Ihre Graphen zeichnen können. Ein Klick "
+#~ "mit der &RMB; auf die Zeichenfläche, ein Graphenelement oder ausgewählte "
+#~ "Graphenelemente öffnet ein Kontextmenü mit passenden Aktionen für das "
+#~ "Objekt."
+
+#~ msgid ""
+#~ "This gives a complete list of all different graphs currently at the "
+#~ "Visual Graph Editor whiteboard. Here you can make modifications to, &eg;, "
+#~ "the graph name, visible properties like node names or values, or define "
+#~ "default colors for the graph elements."
+#~ msgstr ""
+#~ "Hier wird eine vollständige Liste aller verschiedenen Graphen auf der "
+#~ "Zeichenfläche angezeigt. Es kann &eg; der Name des Graphen, sichtbare "
+#~ "Eigenschaften wie Namen oder Werte von Knoten geändert und die "
+#~ "Standardfarbe der Elemente eines Graphen eingestellt werden."
+
+#~ msgid "Data Structure Properties"
+#~ msgstr "Eigenschaften von Datenstrukturen"
+
+#~ msgid ""
+#~ "On the left sidebar you can find the options for each opened graph. All "
+#~ "these options are global per graph and can be changed per node and edge "
+#~ "with the Node Properties and the Edge Properties dialogs."
+#~ msgstr ""
+#~ "Auf der linken Seite des Hauptfensters werden alle Einstellungen der "
+#~ "geöffneten Graphen angezeigt. Diese Einstellungen gelten global für jeden "
+#~ "Graphen. Die einzelnen Knoten und Kanten können in den Dialogen "
+#~ "<guilabel>Knoteneigenschaften</guilabel> und "
+#~ "<guilabel>Kanteneigenschaften</guilabel> geändert werden."
+
+#~ msgid ""
+#~ "<guilabel>Data Color</guilabel> for new created nodes, you can change the "
+#~ "node color for all current nodes by clicking the <guilabel>All</guilabel> "
+#~ "button"
+#~ msgstr ""
+#~ "<guilabel>Datenfarbe</guilabel> der neu erstellten Knoten. Um die Farbe "
+#~ "für alle aktuellen Knoten zu ändern, wählen Sie den Knopf "
+#~ "<guibutton>Alle</guibutton>."
+
+#~ msgid "Pointer Color"
+#~ msgstr "Zeigerfarbe"
+
+#~ msgid "The last row of options consists of toggled buttons:"
+#~ msgstr "Die letzte Teil der Optionen besteht aus umschaltbaren Knöpfen:"
+
+#~ msgid ""
+#~ "<guilabel>Show names in:</guilabel> <guilabel>Data</guilabel> or "
+#~ "<guilabel>Pointers</guilabel>."
+#~ msgstr ""
+#~ "<guilabel>Namen anzeigen in:</guilabel> <guilabel>Daten</guilabel> oder "
+#~ "<guilabel>Zeiger</guilabel>."
+
+#~ msgid ""
+#~ "<guilabel>Show values in:</guilabel> <guilabel>Nodes</guilabel> or "
+#~ "<guilabel>Edges</guilabel>."
+#~ msgstr ""
+#~ "<guilabel>Werte anzeigen in:</guilabel> <guilabel>Knoten</guilabel> oder "
+#~ "<guilabel>Kanten</guilabel>."
+
+#~ msgid ""
+#~ "and everybody who has to design graph algorithms and needs at tool for "
+#~ "prototype testing."
+#~ msgstr ""
+#~ "und für Alle, die Graphen-Algorithmen entwickeln und ein Werkzeug zum "
+#~ "Testen von Prototypen brauchen."
+
+#~ msgid "Using &rocs;"
+#~ msgstr "Arbeiten mit &rocs;"
+
+#~ msgid ""
+#~ "&rocs; use a JavaScript like scripting language. This is, essentially "
+#~ "that definition of variables and functions and their use are done exactly "
+#~ "like in JavaScript. Besides, &rocs; provides a set of functions that let "
+#~ "you access the graphs at the visual graph editor whiteboard and their "
+#~ "elements."
+#~ msgstr ""
+#~ "&rocs; benutzt eine Skriptsprache ähnlich wie JavaScript. Im Wesentlichen "
+#~ "erfolgt die Definition von Variablen und Funktionen und deren Anwendung "
+#~ "genauso wie in JavaScript. Zusätzlich bietet &rocs; weitere Funktionen, "
+#~ "die den Zugriff auf den Graphen auf der Zeichenfläche und dessen Elemente "
+#~ "ermöglicht."
+
+#~ msgid "Accessing a Graph"
+#~ msgstr "Zugriff auf einen Graphen"
+
+#~ msgid ""
+#~ "In the scripting interface you can access a graph by simply typing its "
+#~ "name and using this as an object with one of the following functions. To "
+#~ "access a node or an edge you must get an identifier from the graph object"
+#~ msgstr ""
+#~ "In der Skriptschnittstelle können Sie durch Angabe des Namens auf einen "
+#~ "Graphen zugreifen und das dann als Objekt mit den folgenden Funktionen "
+#~ "benutzen. Um auf einen Knoten oder Kante zuzugreifen, müssen Sie einen "
+#~ "Bezeichner vom Graphen-Objekt ermitteln."
+
+#~ msgid ""
+#~ "// functions\n"
+#~ "     array list_nodes();\n"
+#~ "     array list_edges();\n"
+#~ "     node add_node(name);\n"
+#~ "     edge add_edge(from, to);\n"
+#~ "     node node_byname(QString&amp; name);\n"
+#~ "     node begin_node();\n"
+#~ "     array end_nodes();\n"
+#~ "\n"
+#~ "// variables\n"
+#~ "     bool directed\n"
+#~ "     bool automate\n"
+#~ "     string name\n"
+#~ "     string nodeDefaultColor // in HEXA\n"
+#~ "     string edgeDefaultColor  // in HEXA"
+#~ msgstr ""
+#~ "// functions\n"
+#~ "     array list_nodes();\n"
+#~ "     array list_edges();\n"
+#~ "     node add_node(name);\n"
+#~ "     edge add_edge(from, to);\n"
+#~ "     node node_byname(QString&amp; name);\n"
+#~ "     node begin_node();\n"
+#~ "     array end_nodes();\n"
+#~ "\n"
+#~ "// variables\n"
+#~ "     bool directed\n"
+#~ "     bool automate\n"
+#~ "     string name\n"
+#~ "     string nodeDefaultColor // in HEXA\n"
+#~ "     string edgeDefaultColor  // in HEXA"
+
+#~ msgid "Node Objects"
+#~ msgstr "Knotenobjekte"
+
+#~| msgid ""
+#~| "// functions\n"
+#~| "     array adj_nodes();\n"
+#~| "     array adj_edges();\n"
+#~| "     array input_edges();\n"
+#~| "     array output_edges();\n"
+#~| "     array loop_edges();\n"
+#~| "     array connected_edges(Node *n);\n"
+#~| "     void self_remove();\n"
+#~| "\n"
+#~| "// variables\n"
+#~| "    double x\n"
+#~| "    double y\n"
+#~| "    double width\n"
+#~| "    string value\n"
+#~| "    string name\n"
+#~| "    string color  // in HEXA\n"
+#~| "    bool begin\n"
+#~| "    bool end"
+#~ msgid ""
+#~ "// functions\n"
+#~ "     array adj_nodes();\n"
+#~ "     array adj_edges();\n"
+#~ "     array input_edges();\n"
+#~ "     array output_edges();\n"
+#~ "     array loop_edges();\n"
+#~ "     array connected_edges(Node *n);\n"
+#~ "     void self_remove();\n"
+#~ "     int type();\n"
+#~ "     bool set_type(int typeIdentifier);\n"
+#~ "\n"
+#~ "// variables\n"
+#~ "    double x\n"
+#~ "    double y\n"
+#~ "    double width\n"
+#~ "    string value\n"
+#~ "    string name\n"
+#~ "    string color  // in HEXA\n"
+#~ "    bool begin\n"
+#~ "    bool end"
+#~ msgstr ""
+#~ "// functions\n"
+#~ "     array adj_nodes();\n"
+#~ "     array adj_edges();\n"
+#~ "     array input_edges();\n"
+#~ "     array output_edges();\n"
+#~ "     array loop_edges();\n"
+#~ "     array connected_edges(Node *n);\n"
+#~ "     void self_remove();\n"
+#~ "     int type();\n"
+#~ "     bool set_type(int typeIdentifier);\n"
+#~ "\n"
+#~ "// variables\n"
+#~ "    double x\n"
+#~ "    double y\n"
+#~ "    double width\n"
+#~ "    string value\n"
+#~ "    string name\n"
+#~ "    string color  // in HEXA\n"
+#~ "    bool begin\n"
+#~ "    bool end"
+
+#~ msgid "Edge Objects"
+#~ msgstr "Kantenobjekte"
+
+#~| msgid ""
+#~| "string color ( em hexa )\n"
+#~| "    string value\n"
+#~| "    string name\n"
+#~| "    double width\n"
+#~| "    string style ( dot, dash, dash dot, solid )\n"
+#~| "\n"
+#~| "    node start();\n"
+#~| "    node  end();\n"
+#~| "\n"
+#~| "    void self_remove();"
+#~ msgid ""
+#~ "string color ( em hexa )\n"
+#~ "    string value\n"
+#~ "    string name\n"
+#~ "    double width\n"
+#~ "    string style ( dot, dash, dash dot, solid )\n"
+#~ "    int type();\n"
+#~ "    bool set_type(int typeIdentifier);\n"
+#~ "\n"
+#~ "    node start();\n"
+#~ "    node  end();\n"
+#~ "\n"
+#~ "    void self_remove();"
+#~ msgstr ""
+#~ "string color ( em hexa )\n"
+#~ "    string value\n"
+#~ "    string name\n"
+#~ "    double width\n"
+#~ "    string style ( dot, dash, dash dot, solid )\n"
+#~ "    int type();\n"
+#~ "    bool set_type(int typeIdentifier);\n"
+#~ "\n"
+#~ "    node start();\n"
+#~ "    node  end();\n"
+#~ "\n"
+#~ "    void self_remove();"
+
+#~ msgid ""
+#~ "Sometimes it is useful if you can use functions for standard tasks, like "
+#~ "computing shortest distances between two nodes. Currently we support the "
+#~ "following algorithms that can be called from the scripting engine with "
+#~ "nodes from the same graph."
+#~ msgstr ""
+#~ "Manchmal ist es nützlich, Funktionen für Standardaufgaben zu benutzen, "
+#~ "wie zum Beispiel die Berechnung des kürzesten Wegs. Zurzeit stehen die "
+#~ "folgenden Algorithmen zu Verfügung und können vom Skriptmodul mit Knoten "
+#~ "aus demselben Graphen aufgerufen werden."
+
+#~ msgid ""
+#~ "Here is a simple script example that sets the color of the 4 first nodes "
+#~ "in the first graph:"
+#~ msgstr ""
+#~ "Hier ist ein einfaches Beispielskript, das die Farben der ersten 4 Knoten "
+#~ "im ersten Graphen festlegt:"
+
+#~ msgid ""
+#~ "/* A simple example that sets the color of the 4 first nodes in the "
+#~ "first\n"
+#~ "graph: */\n"
+#~ "\n"
+#~ "var colors = new Array(\"red\", \"green\", \"blue\", \"yellow\");\n"
+#~ "\n"
+#~ "/* graphs is an array of graphs, you can access a graph by its index in "
+#~ "the\n"
+#~ "array or by its name, so if the first graph's name is Untitled0, the "
+#~ "following\n"
+#~ "sentence are right  */\n"
+#~ "var list1= graphs[0].list_nodes(); //  1st form.\n"
+#~ "var list2=Untitled0.list_nodes();              // 2nd form\n"
+#~ "\n"
+#~ " for ( var i = 0; i &lt; colors.length; i++){\n"
+#~ "        if (i > list2.length) break;\n"
+#~ "        list2[i].color = colors[i]\n"
+#~ " }"
+#~ msgstr ""
+#~ "/* Ein einfaches Beispiel, das die Farben der ersten 4 Knoten im ersten "
+#~ "Graphen festlegt: */\n"
+#~ " \n"
+#~ "var colors = new Array(\"red\", \"green\", \"blue\", \"yellow\");\n"
+#~ "\n"
+#~ "/* graphs ist ein Feld von Graphen, Zugriff auf einen Graph ist über den "
+#~ "Index im\n"
+#~ "Feld oder über den Namen möglich. Wenn der erste Graph Untitled0 genannt "
+#~ "wurde,\n"
+#~ "können Sie auf folgende Art auf den Graphen zugreifen  */\n"
+#~ "var list1= graphs[0].list_nodes();   //  Erste Form.\n"
+#~ "var list2=Untitled0.list_nodes();     // Zweite Form\n"
+#~ " \n"
+#~ " for ( var i = 0; i &lt; colors.length; i++){\n"
+#~ "        if (i > list2.length) break;\n"
+#~ "        list2[i].color = colors[i]\n"
+#~ " }"
+
+#~ msgid "<releaseinfo>1.1</releaseinfo>"
+#~ msgstr "<releaseinfo>1.1</releaseinfo>"
+
+#~ msgid ""
+#~ "<guilabel>Align on the horizontal center</guilabel>: Align the nodes at "
+#~ "the horizontal position of the top-most node. This only affects the "
+#~ "horizontal positions."
+#~ msgstr ""
+#~ "<guilabel>Mittig ausrichten</guilabel> (waagerecht): Richtet die Knoten "
+#~ "an der waagerechten Position aus, die durch die Mitte der waagerechten "
+#~ "Positionen aller ausgewählten Knoten bestimmt wird. Die senkrechte "
+#~ "Position bleibt unverändert."
+
+#~ msgid "Command Reference"
+#~ msgstr "Befehlsreferenz"
+
+#~ msgid "Menus and Shortcut Keys"
+#~ msgstr "Menüs und Kurzbefehle"
+
+#~ msgid "The <guimenu>File</guimenu> Menu"
+#~ msgstr "Das Menü <guimenu>Datei</guimenu>"
+
+#~ msgid ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+#~ "</shortcut> <guimenu>File</guimenu> <guimenuitem>Quit</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl; <keycap>Q</keycap></"
+#~ "keycombo> </shortcut> <guimenu>Datei</guimenu> <guimenuitem>Beenden</"
+#~ "guimenuitem>"
+
+#~ msgid "<action>Quits</action> &rocs;"
+#~ msgstr "<action>Beendet</action> &rocs;"
+
+#~ msgid "The <guimenu>Settings</guimenu> Menu"
+#~ msgstr "Das Menü <guimenu>Einstellungen</guimenu>"
+
+#~ msgid "<guimenu>Settings</guimenu> <guisubmenu>Toolbars Shown</guisubmenu>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu> <guisubmenu>Angezeigte Werkzeugleisten</"
+#~ "guisubmenu>"
+
+#~ msgid ""
+#~ "<action>Toggle</action> the <guimenuitem>Main</guimenuitem>, and "
+#~ "<guimenuitem>Layout</guimenuitem> toolbars."
+#~ msgstr ""
+#~ "<action>Blendet</action> die <guimenuitem>Haupt-Werkzeugleiste</"
+#~ "guimenuitem> und die <guimenuitem>Layout-Werkzeugleiste</guimenuitem> ein "
+#~ "oder aus."
+
+#~ msgid ""
+#~ "<guimenu>Settings</guimenu> <guimenuitem>Show Statusbar</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu> <guimenuitem>Statusleiste anzeigen</"
+#~ "guimenuitem>"
+
+#~ msgid "<action>Toggle</action> the statusbar."
+#~ msgstr "<action>Zeigt</action> die Statusleiste an bzw. blendet sie aus."
+
+#~ msgid ""
+#~ "<guimenu>Settings</guimenu> <guimenuitem>Configure Shortcuts...</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu> <guimenuitem>Kurzbefehle festlegen ...</"
+#~ "guimenuitem>"
+
+#~ msgid ""
+#~ "<action>Open</action> standard &kde; setting dialog that allows you to "
+#~ "choose different shortcut keys for different actions."
+#~ msgstr ""
+#~ "<action>Öffnet</action> den &kde;-Standarddialog zur Konfiguration von "
+#~ "Tastaturkürzeln."
+
+#~ msgid ""
+#~ "<guimenu>Settings</guimenu> <guimenuitem>Configure Toolbars...</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu> <guimenuitem>Werkzeugleisten "
+#~ "einrichten ...</guimenuitem>"
+
+#~ msgid "<action>Configure</action> the items you want to put in the toolbar."
+#~ msgstr ""
+#~ "<action>Richtet</action> die Einträge ein, die Sie in der Werkzeugleiste "
+#~ "haben möchten."
+
+#~ msgid "The <guimenu>Help</guimenu> Menu"
+#~ msgstr "Das Menü <guimenu>Hilfe</guimenu>"
+
+#~ msgid "&help.menu.documentation;"
+#~ msgstr "&help.menu.documentation;"
+
+#~ msgid ""
+#~ "&rocs; aims to be a Graph Theory IDE for helping professors to show the "
+#~ "results of a graph algorithm and also helping students to do the "
+#~ "algorithms."
+#~ msgstr ""
+#~ "&rocs; wurde als Entwicklungsumgebung für die Graphentheorie entwickelt, "
+#~ "damit Professoren die Ergebnisse von Graphen-Algorithmen Ihren Studenten "
+#~ "zeigen können und damit die Studenten die Algorithmen verstehen lernen. "
+
+#~ msgid ""
+#~ "&rocs; has a scripting module, done in Qt Script, that interacts with the "
+#~ "drawn graph and every change in the graph with the script is reflected on "
+#~ "the drawn one."
+#~ msgstr ""
+#~ "&rocs; kann durch Skripte in Qt Script erweitert werden. Mit diesen "
+#~ "Skripten kann ein gezeichneter Graph bearbeitet werden. Jede Änderung des "
+#~ "Graphen durch das Skript wird in der Darstellung angezeigt."
+
+#~ msgid "The user interface is divided in two parts:"
+#~ msgstr "Die Benutzerschnittstelle besteht aus zwei Teilen:"
+
+#~ msgid ""
+#~ "the top right part is where you draw your graphs, and the bottom right "
+#~ "one is where you create your algorithms,"
+#~ msgstr ""
+#~ "Oben rechts zeichnen Sie Ihre Graphen, unten rechts geben Sie die "
+#~ "Algorithmen ein."
+
+#~ msgid ""
+#~ "the left sidebar is where all your open graphs stay, you can open "
+#~ "multiple graphs per file."
+#~ msgstr ""
+#~ "Auf der linken Seite werden alle geöffneten Graphen angezeigt. Es können "
+#~ "mehrere Graphen in einer Datei enthalten sein."
+
+#~ msgid "&rocs; global settings"
+#~ msgstr "Globale Einstellungen von &rocs;"
+
+#~ msgid ""
+#~ "There are two toolbars, on the top. The main one has the following tools:"
+#~ msgstr ""
+#~ "Es gibt oben zwei Werkzeugleisten. In der Haupt-Werkzeugleiste finden Sie:"
+
+#~ msgid ""
+#~ "<guilabel>Move Node</guilabel>: moves a node around the drawing area."
+#~ msgstr ""
+#~ "<guilabel>Knoten verschieben</guilabel>: Bewegt einen Knoten im "
+#~ "Zeichenbereich herum."
+
+#~ msgid ""
+#~ "<guilabel>Add Node</guilabel>: creates a new node at the clicked position "
+#~ "on the drawing area."
+#~ msgstr ""
+#~ "<guilabel>Knoten verschieben</guilabel>: Erstellt einen neuen Knoten an "
+#~ "der Klickposition im Zeichenbereich."
+
+#~ msgid "<guilabel>Add Edge</guilabel>: creates a new edge between two nodes."
+#~ msgstr ""
+#~ "<guilabel>Kante hinzufügen</guilabel>: Erstellt eine neue Kante zwischen "
+#~ "zwei Knoten."
+
+#~ msgid "<guilabel>Delete</guilabel>: delete items by clicking on them."
+#~ msgstr "<guilabel>Löschen</guilabel>: Elemente durch Anklicken löschen."
+
+#~ msgid "Use the align tools to place selected nodes."
+#~ msgstr ""
+#~ "Verwenden Sie die Aktionen in der Layout-Werkzeugleiste, um die "
+#~ "ausgewählten Knoten auszurichten."
+
+#~ msgid ""
+#~ "A right mouse click on a node or edge brings you the property dialog for "
+#~ "that node or edge."
+#~ msgstr ""
+#~ "Klicken mit der &RMBn; auf einen Knoten oder eine Kante öffnet den "
+#~ "Eigenschaftendialog für diese Element."
+
+#~ msgid "The layout toolbar consists in various aligns icons."
+#~ msgstr ""
+#~ "Die Layout-Werkzeugleiste enthält mehrere Aktionen um Elemente im "
+#~ "Zeichenbereich auszurichten."
+
+#~ msgid ""
+#~ "To align nodes, choose the <guiicon>Select</guiicon> tool, click and drag "
+#~ "a rectangle, then choose the alignement that you want."
+#~ msgstr ""
+#~ "Um Knoten auszurichten, aktivieren Sie das Werkzeug <guiicon>Auswählen</"
+#~ "guiicon>, Klicken und Ziehen mit gerückter &LMBr; ein Rechteck um die "
+#~ "Objekte und wählen dann die gewünschte Ausrichtung."
+
+#~ msgid ""
+#~ "After the graph is on screen, you can start creating the script for it. "
+#~ "The language uses a Javascript syntax and following are the Graph, Node "
+#~ "and Edge objects."
+#~ msgstr ""
+#~ "Wenn der Graph auf dem Bildschirm angezeigt wird, können Sie mit dem "
+#~ "Schreiben des Skripts beginnen. Die Sprache verwendet eine ähnliche "
+#~ "Syntax wie JavaScript. Im Folgenden werden die Objekte Graph, Knoten und "
+#~ "Kante gezeigt."
+
+#~ msgid "Graph"
+#~ msgstr "Graph"
+
+#~ msgid "Graph variables that can be changed:"
+#~ msgstr "Graphenvariablen, die geändert werden können:"
+
+#~ msgid ""
+#~ "bool directed\n"
+#~ "     bool automate\n"
+#~ "     string name\n"
+#~ "     string nodeDefaultColor // in HEXA\n"
+#~ "     string edgeDefaultColor  // in HEXA"
+#~ msgstr ""
+#~ "bool directed\n"
+#~ "     bool automate\n"
+#~ "     string name\n"
+#~ "     string nodeDefaultColor // in HEXA\n"
+#~ "     string edgeDefaultColor  // in HEXA"
+
+#~ msgid "Nodes"
+#~ msgstr "Knoten"
+
+#~ msgid "Node Variables:"
+#~ msgstr "Knotenvariablen:"
+
+#~ msgid ""
+#~ "double x\n"
+#~ "    double y\n"
+#~ "    double width\n"
+#~ "    string value\n"
+#~ "    string name\n"
+#~ "    string color  // in HEXA\n"
+#~ "    bool begin\n"
+#~ "    bool end"
+#~ msgstr ""
+#~ "double x\n"
+#~ "    double y\n"
+#~ "    double width\n"
+#~ "    string value\n"
+#~ "    string name\n"
+#~ "    string color  // in HEXA\n"
+#~ "    bool begin\n"
+#~ "    bool end"
+
+#~ msgid "Edges"
+#~ msgstr "Kanten"
+
+#~ msgid ""
+#~ "array dijkstra_shortest_path(Node* from, Node* to); // returns edges of "
+#~ "shortest path"
+#~ msgstr ""
+#~ "array dijkstra_shortest_path(Node* von, Node* bis); // gibt die Kanten "
+#~ "des kürzesten Pfades zurück"
+
+#~ msgid "Automated Graph"
+#~ msgstr "Automaten-Graph"
+
+#~ msgid "Show nodes names"
+#~ msgstr "Alle Knotennamen anzeigen"
+
+#~ msgid "Show edges names"
+#~ msgstr "Alle Kantennamen anzeigen"
+
+#~ msgid "Show nodes values"
+#~ msgstr "Alle Knotenwerte anzeigen"
+
+#~ msgid "Show edges values"
+#~ msgstr "Alle Kantenwerte anzeigen"

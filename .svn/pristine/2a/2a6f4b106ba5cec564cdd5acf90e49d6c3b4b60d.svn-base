@@ -1,0 +1,22 @@
+This directory contains scripts used to handle localization of programs and
+manuals for KDE
+
+Most of the scripts are used internally so you will probably never have to use
+them, there are a few exceptions listed below:
+
+ - autogen.sh: Used to generate the buildsystem of a given language. See README
+               of the toplevel root for how to use it
+
+ - find_po_without_pot.sh: Used for housekeeping, it will give you a list of
+                           po that do not have a matching template. If a
+                           language code is used as parameter it will give only
+                           the report for the given language, otherwise it will
+                           report about all languages. It has to be run 
+                           from the toplevel root.
+ 
+ - update_xml: Used to generate the documentation docbooks from the
+               documentation .po files. It has to be run from the toplevel root.
+               It has a mandatory parameter that is the language code and an
+               optional parameter that is the module. If no module is given
+               all the docbooks are rebuilt, if a module is given, only the
+               docbooks of that module are rebuilt.

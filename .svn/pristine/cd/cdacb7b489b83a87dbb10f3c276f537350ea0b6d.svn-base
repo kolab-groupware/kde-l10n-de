@@ -1,0 +1,176 @@
+# Marco Wegner <mail@marcowegner.de>, 2002.
+# Stephan Johach <hunsum@gmx.de>, 2004.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006.
+# Burkhard Lück <lueck@hube-lueck.de>, 2007, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kioslave_man\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: 2010-02-12 21:15+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:9
+#, no-c-format
+msgid "<title>Man</title>"
+msgstr "<title>Man</title>"
+
+#. Tag: author
+#: index.docbook:12
+#, no-c-format
+msgid "&Lauri.Watts; &Lauri.Watts.mail;"
+msgstr "&Lauri.Watts; &Lauri.Watts.mail;"
+
+#. Tag: author
+#: index.docbook:13
+#, no-c-format
+msgid ""
+"<firstname>Nicolas</firstname> <surname>Goutte</surname> <email>goutte@kde."
+"org</email>"
+msgstr ""
+"<firstname>Nicolas</firstname> <surname>Goutte</surname> <email>goutte@kde."
+"org</email>"
+
+#. Tag: trans_comment
+#: index.docbook:18
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Marco</"
+"firstname><surname>Wegner</"
+"surname><affiliation><address><email>mail@marcowegner.de</email></address></"
+"affiliation><contrib>Übersetzer</contrib></othercredit>"
+
+#. Tag: para
+#: index.docbook:22
+#, no-c-format
+msgid ""
+"Using the man ioslave you are able to read the man pages installed on your "
+"system. It is easy to use:"
+msgstr ""
+"Das man-Modul erlaubt Ihnen, die Programm-Handbücher (<quote>man pages</"
+"quote>) zu lesen, die in Ihrem System installiert sind. Es ist einfach zu "
+"benutzen:"
+
+#. Tag: para
+#: index.docbook:31
+#, no-c-format
+msgid "See the sections of the manual, click to find the rest."
+msgstr ""
+"Gibt einen Überblick über die Abschnitte in den Handbüchern. Es sind "
+"Verweise auf die Verzeichnisse."
+
+#. Tag: userinput
+#: index.docbook:36
+#, no-c-format
+msgid "<command>man:/</command><replaceable>fopen</replaceable>"
+msgstr "<command>man:/</command><replaceable>fopen</replaceable>"
+
+#. Tag: para
+#: index.docbook:38
+#, no-c-format
+msgid "See the man page of <command>fopen</command>."
+msgstr "Zeigt die Handbuchseite für <command>fopen</command> an."
+
+#. Tag: userinput
+#: index.docbook:43
+#, no-c-format
+msgid "<command>man:/</command><replaceable>fopen(3)</replaceable>"
+msgstr "<command>man:/</command><replaceable>fopen(3)</replaceable>"
+
+#. Tag: para
+#: index.docbook:45
+#, no-c-format
+msgid "See the man page of <command>fopen</command> in section 3."
+msgstr ""
+"Zeigt die Handbuchseite für <command>fopen</command> in Abschnitt 3 an."
+
+#. Tag: userinput
+#: index.docbook:50
+#, no-c-format
+msgid "<command>man:/</command><replaceable>(3)</replaceable>"
+msgstr "<command>man:/</command><replaceable>(3)</replaceable>"
+
+#. Tag: para
+#: index.docbook:52
+#, no-c-format
+msgid "See the index of section 3."
+msgstr "Dies zeigt den Index von Abschnitt 3 an."
+
+#. Tag: userinput
+#: index.docbook:57
+#, no-c-format
+msgid "<command>man:/</command>intro<replaceable>(3)</replaceable>"
+msgstr "<command>man:/</command>intro<replaceable>(3)</replaceable>"
+
+#. Tag: para
+#: index.docbook:59
+#, no-c-format
+msgid "See the introduction of section 3."
+msgstr "Dies zeigt die Einführung von Abschnitt 3 an."
+
+#. Tag: para
+#: index.docbook:65
+#, no-c-format
+msgid ""
+"If there are more than one man page of the name that you have entered, you "
+"will get a list where you can choose the man page that you want to see."
+msgstr ""
+"Wenn mehr als eine Handbuchseite mit dem gleichen Namen existiert, erhalten "
+"Sie eine Liste aus der Sie die gewünschte Handbuchseite auswählen können."
+
+#. Tag: para
+#: index.docbook:69
+#, no-c-format
+msgid ""
+"There is also a shortcut: <userinput><command>#fopen</command></userinput>, "
+"which has the same effect as above."
+msgstr ""
+"Es geht auch kürzer: <userinput><command>#fopen</command></userinput> zeigt "
+"ebenfalls das Handbuch für <command>fopen</command> an."
+
+#. Tag: para
+#: index.docbook:74
+#, no-c-format
+msgid ""
+"If you do not find all your man pages, adjust the configuration file "
+"<filename>/etc/manpath.config</filename> (or a file of a similar name "
+"depending on your distribution) or adjust the environment variables "
+"<envar>MANPATH</envar> and <envar>MANSECT</envar>."
+msgstr ""
+"Wenn nicht alle Handbücher gefunden werden, passen Sie die "
+"Konfigurationsdatei <filename>/etc/manpath.config</filename> an oder "
+"bearbeiten Sie die Umgebungsvariablen <envar>MANPATH</envar> und "
+"<envar>MANSECT</envar>."
+
+#. Tag: para
+#: index.docbook:82
+#, no-c-format
+msgid ""
+"As with any other &kde; ioslave, it is possible to enter a &URL;, like "
+"<userinput><command>man:/socket</command></userinput> in <emphasis>any</"
+"emphasis> &kde; application. Try it in &kwrite; and you will see the man "
+"page in &HTML; format."
+msgstr ""
+"Wie bei allen anderen Ein-/Ausgabemodulen von &kde; können Sie auch hier in "
+"<emphasis>jeder</emphasis> &kde;-Anwendung eine &URL; wie "
+"<userinput><command>man:/socket</command></userinput> eingeben. Versuchen "
+"Sie es &eg; in &kwrite; und Sie werden die Handbuchseite im <acronym>HTML</"
+"acronym>-Format sehen können."
+
+#. Tag: para
+#: index.docbook:89
+#, no-c-format
+msgid "Contact mailing list: <email>kde-devel@kde.org</email>"
+msgstr "Kontakt: <email>kde-devel@kde.org</email>"
+
+#~ msgid "man:"
+#~ msgstr "man:"

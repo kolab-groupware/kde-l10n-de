@@ -1,0 +1,958 @@
+# Thomas Diehl <thd@kde.org>, 2002, 2003, 2004.
+# Stephan Johach <hunsum@gmx.de>, 2004, 2005, 2007.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006, 2007.
+# Frederik Schwarzer <schwarzer@kde.org>, 2008.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmcrypto\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2012-08-20 04:01+0200\n"
+"PO-Revision-Date: 2010-03-08 18:16+0100\n"
+"Last-Translator: Panagiotis Papadopoulos <pano_90@gmx.net>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Thomas Diehl, Thomas Reitelbach"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "thd@kde.org,tr@erdfunkstelle.de"
+
+#: certexport.cpp:49
+msgid "X509 Certificate Export"
+msgstr "X509-Zertifikat-Export"
+
+#: certexport.cpp:51
+msgid "Format"
+msgstr "Format"
+
+#: certexport.cpp:53
+msgid "&PEM"
+msgstr "&PEM"
+
+#: certexport.cpp:55
+msgid "&Netscape"
+msgstr "&Netscape"
+
+#: certexport.cpp:57
+msgid "&DER/ASN1"
+msgstr "&DER/ASN1"
+
+#: certexport.cpp:59
+msgid "&Text"
+msgstr "&Text"
+
+#: certexport.cpp:64
+msgid "Filename:"
+msgstr "Dateiname:"
+
+#: certexport.cpp:75
+msgid "&Export"
+msgstr "&Exportieren"
+
+#: certexport.cpp:80
+msgid "&Cancel"
+msgstr "&Abbrechen"
+
+#: certexport.cpp:103
+msgid "Internal error. Please report to kfm-devel@kde.org."
+msgstr ""
+"Interner Fehler. Bitte senden Sie einen (englischen) Fehlerbericht an kfm-"
+"devel@kde.org."
+
+#: certexport.cpp:103 certexport.cpp:118 certexport.cpp:126 crypto.cpp:841
+#: crypto.cpp:1294 crypto.cpp:1323 crypto.cpp:1340 crypto.cpp:1342
+#: crypto.cpp:1533 crypto.cpp:1550 crypto.cpp:1605 crypto.cpp:1644
+#: crypto.cpp:1646 crypto.cpp:1856 crypto.cpp:1876 crypto.cpp:1940
+#: crypto.cpp:1947 crypto.cpp:1963 crypto.cpp:2016
+msgid "SSL"
+msgstr "SSL"
+
+#: certexport.cpp:118
+msgid "Error converting the certificate into the requested format."
+msgstr ""
+"Fehler bei der Konvertierung des Zertifikats in das angeforderte Format."
+
+#: certexport.cpp:126
+msgid "Error opening file for output."
+msgstr "Fehler beim Öffnen der Ausgabedatei."
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, D_GenCert)
+#: certgen.ui:14
+msgid "Certificate Creation Wizard"
+msgstr "Zertifikats-Assistent"
+
+#. i18n: ectx: property (text), widget (QLabel, T_CertType)
+#: certgen.ui:22
+msgid "Certificate type:"
+msgstr "Zertifikatstyp:"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
+#: certgen.ui:32
+msgid "Passphrase:"
+msgstr "Passphrase:"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel2_2)
+#: certgen.ui:49
+msgid "Passphrase (verify):"
+msgstr "Passphrase (Überprüfung):"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel3)
+#: certgen.ui:69
+msgid "Country code:"
+msgstr "Ländercode:"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel4)
+#: certgen.ui:83
+msgid "State or province (in full):"
+msgstr "Staat oder Bundesland (vollständig):"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: certgen.ui:97
+msgid "City:"
+msgstr "Stadt:"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel6)
+#: certgen.ui:111
+msgid "Organization name:"
+msgstr "Name der Organisation:"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel7)
+#: certgen.ui:125
+msgid "Organizational unit/group:"
+msgstr "Organisationseinheit:"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel8)
+#: certgen.ui:139
+msgid "Full hostname of the server:"
+msgstr "Vollständiger Servername:"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel9)
+#: certgen.ui:153
+msgid "Email address:"
+msgstr "E-Mail-Adresse:"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel10)
+#: certgen.ui:167
+msgid "Days valid:"
+msgstr "Tage Gültigkeit:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, CheckBox1)
+#: certgen.ui:191
+msgid "Self sign"
+msgstr "Selbstsignierung"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel11)
+#: certgen.ui:201
+msgid "Digest:"
+msgstr "Digest:"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel12)
+#: certgen.ui:211
+msgid "Alias:"
+msgstr "Alias:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, CheckBox2)
+#: certgen.ui:221
+msgid "Use DSA instead of RSA"
+msgstr "DSA anstelle von RSA verwenden"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel13)
+#: certgen.ui:228
+msgid "Bit strength:"
+msgstr "Bit-Stärke:"
+
+#: crypto.cpp:109
+#, kde-format
+msgid "%1 (%2 of %3 bits)"
+msgstr "%1 (%2 von %3 Bit)"
+
+#: crypto.cpp:229
+msgid ""
+"<h1>Crypto</h1> This module allows you to configure SSL for use with most "
+"KDE applications, as well as manage your personal certificates and the known "
+"certificate authorities."
+msgstr ""
+"<h1>Verschlüsselung</h1> Dieses Modul ermöglicht Ihnen die Einrichtung von "
+"SSL für die meisten KDE-Programme ebenso wie die Verwaltung persönlicher "
+"Zertifikate und bekannter Zertifizierungsstellen."
+
+#: crypto.cpp:238
+msgid "KCMCrypto"
+msgstr "KCMCrypto"
+
+#: crypto.cpp:239
+msgid "KDE Crypto Control Module"
+msgstr "Kontrollmodul für Verschlüsselung"
+
+#: crypto.cpp:240
+msgid "(c) 2000 - 2001 George Staikos"
+msgstr "© 2000–2001, George Staikos"
+
+#: crypto.cpp:241
+msgid "George Staikos"
+msgstr "George Staikos"
+
+#: crypto.cpp:242
+msgid "Carsten Pfeiffer"
+msgstr "Carsten Pfeiffer"
+
+#: crypto.cpp:273
+msgid "SSL Ciphers to Use"
+msgstr "Zu verwendende SSL-Verschlüsselung"
+
+#: crypto.cpp:274
+msgid ""
+"Select the ciphers you wish to enable when using the SSL protocol. The "
+"actual protocol used will be negotiated with the server at connection time."
+msgstr ""
+"Wählen Sie die Verschlüsselungsarten, die Sie bei Benutzung des SSL-"
+"Protokolls aktivieren möchten. Das tatsächlich verwendete Protokoll wird mit "
+"dem Server beim Verbindungsaufbau ausgehandelt."
+
+#: crypto.cpp:290
+msgid "Cipher Wizard"
+msgstr "Verschlüsselungsassistent"
+
+#: crypto.cpp:295
+msgid "Strong Ciphers Only"
+msgstr "Nur starke US-Verschlüsselung"
+
+#: crypto.cpp:296
+msgid "Export Ciphers Only"
+msgstr "Nur Export-Verschlüsselung"
+
+#: crypto.cpp:297
+msgid "Enable All"
+msgstr "Alle aktivieren"
+
+#: crypto.cpp:299
+msgid ""
+"<qt>Use these preconfigurations to more easily configure the SSL encryption "
+"settings. You can choose among the following modes:<ul><li><b>Strong Ciphers "
+"Only:</b> Select only the strong (&gt;= 128 bit) encryption ciphers.</"
+"li><li><b>Export Ciphers Only:</b> Select only the weak ciphers (&lt;= 56 "
+"bit).</li><li><b>Enable All:</b> Select all SSL ciphers and methods.</li></"
+"ul></qt>"
+msgstr ""
+"<qt>Verwenden Sie die vorbereiteten Einstellungen zur bequemeren Festlegung "
+"der SSL-Verschlüsselungseinstellungen. Sie können zwischen den Folgenden "
+"wählen: <ul> <li><b>Nur starke US-Verschlüsselung:</b> Wählt nur die starken "
+"Verschlüsselungen (&gt;= 128 Bit).</li><li><b>Nur Export-Verschlüsselung:</"
+"b> Wählt nur schwache Verschlüsselungen (&lt;= 56 Bit).</li><li><b>Alle "
+"aktivieren:</b> Wählt alle SSL-Verschlüsselungsmethoden.</li></ul></qt>"
+
+#: crypto.cpp:316
+msgid "Warn on &entering SSL mode"
+msgstr "Hinweis bei &Verwendung des SSL-Modus"
+
+#: crypto.cpp:319
+msgid "If selected, you will be notified when entering an SSL enabled site"
+msgstr ""
+"Wird diese Auswahl getroffen, erhalten Sie eine Mitteilung, sobald Sie eine "
+"Webseite mit aktivierter SSL-Unterstützung aufrufen."
+
+#: crypto.cpp:323
+msgid "Warn on &leaving SSL mode"
+msgstr "Warnung beim Ver&lassen des SSL-Modus"
+
+#: crypto.cpp:326
+msgid "If selected, you will be notified when leaving an SSL based site."
+msgstr ""
+"Wird diese Auswahl getroffen, erhalten Sie eine Mitteilung, sobald Sie eine "
+"Webseite mit aktivierter SSL-Unterstützung verlassen."
+
+#: crypto.cpp:330
+msgid "Warn on sending &unencrypted data"
+msgstr "Warnung beim Versand &unverschlüsselter Daten"
+
+#: crypto.cpp:333
+msgid ""
+"If selected, you will be notified before sending unencrypted data via a web "
+"browser."
+msgstr ""
+"Wird diese Auswahl getroffen, dann erhalten Sie eine Mitteilung, wenn Sie "
+"über Ihren Webbrowser unverschlüsselte Daten versenden."
+
+#: crypto.cpp:338
+msgid "Warn on &mixed SSL/non-SSL pages"
+msgstr "Warnung bei ge&mischten SSL- und Nicht-SSL-Seiten"
+
+#: crypto.cpp:341
+msgid ""
+"If selected, you will be notified if you view a page that has both encrypted "
+"and non-encrypted parts."
+msgstr ""
+"Wird diese Auswahl getroffen, dann erhalten Sie eine Mitteilung, wenn Sie "
+"eine Webseite aufrufen, die sowohl aus verschlüsselten als auch "
+"unverschlüsselten Teilen besteht."
+
+#: crypto.cpp:354
+msgid "Path to OpenSSL Shared Libraries"
+msgstr "Pfad zu den OpenSSL-Bibliotheken"
+
+#: crypto.cpp:361
+msgid "&Test"
+msgstr "&Testen"
+
+#: crypto.cpp:372
+msgid "Use EGD"
+msgstr "EGD verwenden"
+
+#: crypto.cpp:374
+msgid "Use entropy file"
+msgstr "Entropiedatei verwenden"
+
+#: crypto.cpp:381 crypto.cpp:2260
+msgid "Path to EGD:"
+msgstr "Pfad zu EGD:"
+
+#: crypto.cpp:388
+msgid ""
+"If selected, OpenSSL will be asked to use the entropy gathering daemon (EGD) "
+"for initializing the pseudo-random number generator."
+msgstr ""
+"Falls Sie diese Einstellung aktivieren, wird OpenSSL angewiesen, den Dienst "
+"„Entropy Gathering Daemon“ (EGD) für die Initialisierung des Pseudo-"
+"Zufallszahlengenerators zu verwenden."
+
+#: crypto.cpp:391
+msgid ""
+"If selected, OpenSSL will be asked to use the given file as entropy for "
+"initializing the pseudo-random number generator."
+msgstr ""
+"Falls Sie diese Einstellung aktivieren, wird OpenSSL angewiesen, die "
+"betreffende Datei zur Bestimmung der Entropie für die Initialisierung des "
+"Pseudo-Zufallszahlengenerators zu verwenden."
+
+#: crypto.cpp:394
+msgid ""
+"Enter the path to the socket created by the entropy gathering daemon (or the "
+"entropy file) here."
+msgstr ""
+"Geben Sie hier den Pfad zu dem Socket an, den der „Entropy Gathering "
+"Daemon“ (EGD) oder die Entropiedatei erstellt hat."
+
+#: crypto.cpp:397
+msgid "Click here to browse for the EGD socket file."
+msgstr "Klicken Sie hier, um nach der EGD-Socket-Datei zu suchen."
+
+#: crypto.cpp:418
+msgid ""
+"This list box shows which certificates of yours KDE knows about. You can "
+"easily manage them from here."
+msgstr ""
+"Diese Liste zeigt an, welche Ihrer Zertifikate KDE bekannt sind. Sie können "
+"sie von hier aus problemlos verwalten."
+
+#: crypto.cpp:423 crypto.cpp:604 crypto.cpp:740
+msgid "Common Name"
+msgstr "Allgemeiner Name"
+
+#: crypto.cpp:423
+msgid "Email Address"
+msgstr "E-Mail-Adresse"
+
+#: crypto.cpp:431 crypto.cpp:743
+msgid "I&mport..."
+msgstr "&Importieren ..."
+
+#: crypto.cpp:435 crypto.cpp:609
+msgid "&Export..."
+msgstr "&Exportieren ..."
+
+#: crypto.cpp:440 crypto.cpp:559
+msgid "Remo&ve"
+msgstr "&Entfernen"
+
+#: crypto.cpp:445
+msgid "&Unlock"
+msgstr "Sperre &aufheben"
+
+#: crypto.cpp:450
+msgid "Verif&y"
+msgstr "Über&prüfen ..."
+
+#: crypto.cpp:455
+msgid "Chan&ge Password..."
+msgstr "Passwort ä&ndern ..."
+
+#: crypto.cpp:470 crypto.cpp:644
+msgid "This is the information known about the owner of the certificate."
+msgstr ""
+"Dies sind die Informationen, die über den Eigentümer des Zertifikats bekannt "
+"sind."
+
+#: crypto.cpp:471 crypto.cpp:646
+msgid "This is the information known about the issuer of the certificate."
+msgstr ""
+"Dies sind die Informationen, die über den Herausgeber des Zertifikats "
+"bekannt sind."
+
+#: crypto.cpp:477 crypto.cpp:649
+msgid "Valid from:"
+msgstr "Gültig von:"
+
+#: crypto.cpp:478 crypto.cpp:650
+msgid "Valid until:"
+msgstr "Gültig bis:"
+
+#: crypto.cpp:479 crypto.cpp:659
+msgid "The certificate is valid starting at this date."
+msgstr "Das Zertifikat ist ab diesem Datum gültig."
+
+#: crypto.cpp:480 crypto.cpp:661
+msgid "The certificate is valid until this date."
+msgstr "Das Zertifikat ist bis zu diesem Datum gültig."
+
+#: crypto.cpp:483 crypto.cpp:709 crypto.cpp:774
+msgid "MD5 digest:"
+msgstr "MD5-Digest:"
+
+#: crypto.cpp:484 crypto.cpp:712 crypto.cpp:777
+msgid "A hash of the certificate used to identify it quickly."
+msgstr "Hash-Tabelle des Zertifikats zur raschen Identifizierung."
+
+#: crypto.cpp:487
+msgid "On SSL Connection..."
+msgstr "Bei SSL-Verbindung ..."
+
+#: crypto.cpp:488
+msgid "&Use default certificate"
+msgstr "Standard-&Zertifikat verwenden"
+
+#: crypto.cpp:489
+msgid "&List upon connection"
+msgstr "&Liste bei Verbindung anzeigen"
+
+#: crypto.cpp:490
+msgid "&Do not use certificates"
+msgstr "&Keine Zertifikate verwenden"
+
+#: crypto.cpp:494 crypto.cpp:578 crypto.cpp:716 crypto.cpp:781
+msgid ""
+"SSL certificates cannot be managed because this module was not linked with "
+"OpenSSL."
+msgstr ""
+"Die SSL-Zertifikate können nicht verwaltet werden, weil dieses Modul nicht "
+"mit OpenSSL-Unterstützung installiert wurde."
+
+#: crypto.cpp:510
+msgid "Default Action"
+msgstr "Standardaktion"
+
+#: crypto.cpp:513
+msgid "&Send"
+msgstr "&Senden"
+
+#: crypto.cpp:516 crypto.cpp:700
+msgid "&Prompt"
+msgstr "Nach&fragen"
+
+#: crypto.cpp:519
+msgid "Do &not send"
+msgstr "&Nicht senden"
+
+#: crypto.cpp:524
+msgid "Default certificate:"
+msgstr "Standard-Zertifikat:"
+
+#: crypto.cpp:530
+msgid "Host authentication:"
+msgstr "Rechnerauthentifizierung"
+
+#: crypto.cpp:535
+msgid "Host"
+msgstr "Rechner"
+
+#: crypto.cpp:535
+msgid "Certificate"
+msgstr "Zertifikat"
+
+#: crypto.cpp:535 crypto.cpp:691
+msgid "Policy"
+msgstr "Regelung"
+
+#: crypto.cpp:536
+msgid "Host:"
+msgstr "Rechner:"
+
+#: crypto.cpp:537
+msgid "Certificate:"
+msgstr "Zertifikat:"
+
+#: crypto.cpp:544
+msgid "Action"
+msgstr "Aktion"
+
+#: crypto.cpp:547 crypto.h:184
+msgid "Send"
+msgstr "Senden"
+
+#: crypto.cpp:550 crypto.h:190
+msgid "Prompt"
+msgstr "Nachfragen"
+
+#: crypto.cpp:553
+msgid "Do not send"
+msgstr "Nicht senden"
+
+#: crypto.cpp:558
+msgid "Ne&w"
+msgstr "&Neu"
+
+#: crypto.cpp:601
+msgid ""
+"This list box shows which site and person certificates KDE knows about. You "
+"can easily manage them from here."
+msgstr ""
+"Die Liste zeigt an, welche Site- und Personen-Zertifikate KDE bekannt sind. "
+"Sie können sie von hier aus problemlos verwalten."
+
+#: crypto.cpp:604 crypto.cpp:738
+msgid "Organization"
+msgstr "Organisation"
+
+#: crypto.cpp:612
+msgid ""
+"This button allows you to export the selected certificate to a file of "
+"various formats."
+msgstr ""
+"Dieser Knopf ermöglicht Ihnen den Export des ausgewählten Zertifikats in "
+"Dateien verschiedenen Formats."
+
+#: crypto.cpp:616 crypto.cpp:747 crypto.cpp:822
+msgid "&Remove"
+msgstr "&Entfernen"
+
+#: crypto.cpp:619
+msgid ""
+"This button removes the selected certificate from the certificate cache."
+msgstr ""
+"Dieser Knopf entfernt das ausgewählte Zertifikat aus dem Zwischenspeicher "
+"für Zertifikate."
+
+#: crypto.cpp:623
+msgid "&Verify"
+msgstr "Über&prüfen"
+
+#: crypto.cpp:626
+msgid "This button tests the selected certificate for validity."
+msgstr ""
+"Mit diesem Knopf wird die Gültigkeit des gewählten Zertifikats überprüft."
+
+#: crypto.cpp:664
+msgid "Cache"
+msgstr "Zwischenspeicher"
+
+#: crypto.cpp:667
+msgid "Permanentl&y"
+msgstr "&Dauerhaft"
+
+#: crypto.cpp:670
+msgid "&Until"
+msgstr "&Bis"
+
+#: crypto.cpp:684
+msgid "Select here to make the cache entry permanent."
+msgstr ""
+"Treffen Sie diese Auswahl, falls Sie diesen Eintrag dauerhaft in den "
+"Zwischenspeicher übernehmen möchten."
+
+#: crypto.cpp:686
+msgid "Select here to make the cache entry temporary."
+msgstr ""
+"Treffen Sie diese Auswahl, falls Sie diesen Eintrag nur vorübergehend in den "
+"Zwischenspeicher übernehmen möchten."
+
+#: crypto.cpp:688
+msgid "The date and time until the certificate cache entry should expire."
+msgstr ""
+"Datum und Zeit, bis zu denen der Eintrag im Zwischenspeicher gehalten werden "
+"soll."
+
+#: crypto.cpp:694
+msgid "Accep&t"
+msgstr "An&nehmen"
+
+#: crypto.cpp:697
+msgid "Re&ject"
+msgstr "A&blehnen"
+
+#: crypto.cpp:706
+msgid "Select this to always accept this certificate."
+msgstr ""
+"Treffen Sie diese Auswahl, falls Sie dieses Zertifikat stets akzeptieren "
+"möchten."
+
+#: crypto.cpp:707
+msgid "Select this to always reject this certificate."
+msgstr ""
+"Treffen Sie diese Auswahl, falls Sie dieses Zertifikat grundsätzlich nicht "
+"akzeptieren möchten."
+
+#: crypto.cpp:708
+msgid ""
+"Select this if you wish to be prompted for action when receiving this "
+"certificate."
+msgstr ""
+"Treffen Sie diese Auswahl, falls Sie jedesmal gefragt werden möchten, ob Sie "
+"dieses Zertifikat akzeptieren möchten."
+
+#: crypto.cpp:733
+msgid ""
+"This list box shows which certificate authorities KDE knows about. You can "
+"easily manage them from here."
+msgstr ""
+"Diese Liste zeigt an, welche Zertifizierungsstellen KDE bekannt sind. Sie "
+"können sie von hier aus problemlos verwalten."
+
+#: crypto.cpp:739
+msgid "Organizational Unit"
+msgstr "Organisationseinheit"
+
+#: crypto.cpp:752
+msgid "Res&tore"
+msgstr "&Wiederherstellen"
+
+#: crypto.cpp:762
+msgid "Accept for site signing"
+msgstr "Als Site-Signatur akzeptieren"
+
+#: crypto.cpp:763
+msgid "Accept for email signing"
+msgstr "Als E-Mail-Signatur akzeptieren"
+
+#: crypto.cpp:764
+msgid "Accept for code signing"
+msgstr "Als Code-Signatur akzeptieren"
+
+#: crypto.cpp:796
+msgid "Warn on &self-signed certificates or unknown CA's"
+msgstr ""
+"Bei &selbstsignierten Zertifikaten unbekannter Zertifikatsautoritäten (CAs) "
+"warnen."
+
+#: crypto.cpp:798
+msgid "Warn on &expired certificates"
+msgstr "Bei &abgelaufenen Zertifikaten warnen"
+
+#: crypto.cpp:800
+msgid "Warn on re&voked certificates"
+msgstr "Bei &widerrufenen Zertifikaten warnen"
+
+#: crypto.cpp:810
+msgid ""
+"This list box shows which sites you have decided to accept a certificate "
+"from even though the certificate might fail the validation procedure."
+msgstr ""
+"Diese Liste zeigt an, von welchen Servern Sie Zertifikate akzeptieren, auch "
+"wenn diese Server einer Überprüfung nicht standhalten."
+
+#: crypto.cpp:818
+msgid "&Add"
+msgstr "Hin&zufügen"
+
+#: crypto.cpp:831
+msgid ""
+"These options are not configurable because this module was not linked with "
+"OpenSSL."
+msgstr ""
+"Die SSL-Verschlüsselung kann nicht eingerichtet werden, weil dieses Modul "
+"nicht mit OpenSSL-Unterstützung installiert wurde."
+
+#: crypto.cpp:843 crypto.cpp:2240 crypto.cpp:2248 crypto.cpp:2252
+msgid "OpenSSL"
+msgstr "OpenSSL"
+
+#: crypto.cpp:845
+msgid "Your Certificates"
+msgstr "Ihre Zertifikate"
+
+#: crypto.cpp:846
+msgid "Authentication"
+msgstr "Authentifizierung"
+
+#: crypto.cpp:847
+msgid "Peer SSL Certificates"
+msgstr "„Peer“-SSL-Zertifikate"
+
+#: crypto.cpp:848
+msgid "SSL Signers"
+msgstr "SSL-Unterzeichner"
+
+#: crypto.cpp:851
+msgid "Validation Options"
+msgstr "Überprüfungseinstellungen"
+
+#: crypto.cpp:1061
+msgid "If you do not select at least one cipher, SSL will not work."
+msgstr ""
+"Wenn Sie nicht zumindest eine Verschlüsselung auswählen, wird SSL nicht "
+"funktionieren."
+
+#: crypto.cpp:1063
+msgid "SSL Ciphers"
+msgstr "SSL-Verschlüsselung"
+
+#: crypto.cpp:1293
+msgid "Could not open the certificate."
+msgstr "Das Zertifikat lässt sich nicht öffnen."
+
+#: crypto.cpp:1323
+msgid "Error obtaining the certificate."
+msgstr "Fehler bei der Übernahme des Zertifikats."
+
+#: crypto.cpp:1340 crypto.cpp:1644
+msgid "This certificate passed the verification tests successfully."
+msgstr "Das Zertifikat wurde erfolgreich auf seine Gültigkeit überprüft."
+
+#: crypto.cpp:1342 crypto.cpp:1646
+msgid "This certificate has failed the tests and should be considered invalid."
+msgstr ""
+"Die Überprüfung des Zertifikats verlief negativ. Es sollte als ungültig "
+"angesehen werden."
+
+#: crypto.cpp:1525
+msgid "Certificate Password"
+msgstr "Zertifikat-Passwort"
+
+#: crypto.cpp:1526
+msgid "Certificate password"
+msgstr "Zertifikat-Passwort"
+
+#: crypto.cpp:1533
+msgid "The certificate file could not be loaded. Try a different password?"
+msgstr ""
+"Die Datei mit dem Zertifikat ließ sich nicht laden. Möchten Sie es mit einem "
+"anderen Passwort versuchen?"
+
+#: crypto.cpp:1533
+msgid "Try"
+msgstr "Versuchen"
+
+#: crypto.cpp:1533
+msgid "Do Not Try"
+msgstr "Nicht versuchen"
+
+#: crypto.cpp:1550
+msgid ""
+"A certificate with that name already exists. Are you sure that you wish to "
+"replace it?"
+msgstr ""
+"Ein Zertifikat dieses Namens existiert bereits. Sind Sie sicher, dass Sie es "
+"ersetzen möchten?"
+
+#: crypto.cpp:1550
+msgid "Replace"
+msgstr "Ersetzen"
+
+#: crypto.cpp:1584 crypto.cpp:1620 crypto.cpp:1673
+msgid "Enter the certificate password:"
+msgstr "Geben Sie das Passwort für das Zertifikat ein:"
+
+#: crypto.cpp:1585 crypto.cpp:1621 crypto.cpp:1674 crypto.cpp:1784
+#, kde-format
+msgid "Password For '%1'"
+msgstr "Passwort für „%1“"
+
+#: crypto.cpp:1594 crypto.cpp:1631 crypto.cpp:1684 crypto.cpp:1793
+msgid "Decoding failed. Please try again:"
+msgstr "Die Dekodierung ist fehlgeschlagen. Versuchen Sie es erneut:"
+
+#: crypto.cpp:1605
+msgid "Export failed."
+msgstr "Export fehlgeschlagen"
+
+#: crypto.cpp:1783
+msgid "Enter the OLD password for the certificate:"
+msgstr "Geben Sie das ALTE Passwort für das Zertifikat ein:"
+
+#: crypto.cpp:1801
+msgid "Enter the new certificate password"
+msgstr "Geben Sie das NEUE Passwort für das Zertifikat ein:"
+
+#: crypto.cpp:1853 crypto.cpp:1946
+msgid "This is not a signer certificate."
+msgstr "Dies ist kein Signatur-Zertifikat."
+
+#: crypto.cpp:1873 crypto.cpp:1962
+msgid "You already have this signer certificate installed."
+msgstr "Es ist bereits ein Signatur-Zertifikat installiert."
+
+#: crypto.cpp:1939
+msgid "The certificate file could not be loaded."
+msgstr "Die Datei mit dem Zertifikat ließ sich nicht laden."
+
+#: crypto.cpp:1995
+msgid "Do you want to make this certificate available to KMail as well?"
+msgstr "Möchten Sie dieses Zertifikat auch für KMail verfügbar machen?"
+
+#: crypto.cpp:1995
+msgid "Make Available"
+msgstr "Verfügbar machen"
+
+#: crypto.cpp:1995
+msgid "Do Not Make Available"
+msgstr "Nicht Verfügbar machen"
+
+#: crypto.cpp:1998
+msgid ""
+"Could not execute Kleopatra. You might have to install or update the kdepim "
+"package."
+msgstr ""
+"Kleopatra lässt sich nicht ausführen. Sie müssen vielleicht das Paket kdepim "
+"installieren oder aktualisieren."
+
+#: crypto.cpp:2016
+msgid ""
+"This will revert your certificate signers database to the KDE default.\n"
+"This operation cannot be undone.\n"
+"Are you sure you wish to continue?"
+msgstr ""
+"Dies wird die Datenbank mit den Zertifikat-Signaturen auf die "
+"Voreinstellungen zurücksetzen.\n"
+"Diese Aktion kann nicht rückgängig gemacht werden.\n"
+"Sind Sie sicher, dass Sie fortfahren möchten?"
+
+#: crypto.cpp:2016
+msgid "Revert"
+msgstr "Zurücksetzen"
+
+#: crypto.cpp:2238 crypto.cpp:2246
+msgid "Failed to load OpenSSL."
+msgstr "Laden von OpenSSL ist fehlgeschlagen."
+
+#: crypto.cpp:2239
+msgid "libssl was not found or successfully loaded."
+msgstr "libssl ist nicht auffindbar oder lässt sich nicht laden."
+
+#: crypto.cpp:2247
+msgid "libcrypto was not found or successfully loaded."
+msgstr "libcrypto ist nicht auffindbar oder lässt sich nicht laden."
+
+#: crypto.cpp:2252
+msgid "OpenSSL was successfully loaded."
+msgstr "OpenSSL wurde erfolgreich geladen."
+
+#: crypto.cpp:2271
+msgid "Path to entropy file:"
+msgstr "Pfad zur Entropiedatei:"
+
+#: crypto.cpp:2284
+msgid "Personal SSL"
+msgstr "Persönliches SSL"
+
+#: crypto.cpp:2285
+msgid "Server SSL"
+msgstr "Server-SSL"
+
+#: crypto.cpp:2286
+msgid "S/MIME"
+msgstr "S/MIME"
+
+#: crypto.cpp:2287
+msgid "PGP"
+msgstr "PGP"
+
+#: crypto.cpp:2288
+msgid "GPG"
+msgstr "GPG"
+
+#: crypto.cpp:2289
+msgid "SSL Personal Request"
+msgstr "SSL: Persönliche Anforderung"
+
+#: crypto.cpp:2290
+msgid "SSL Server Request"
+msgstr "SSL-Serveranfrage"
+
+#: crypto.cpp:2291
+msgid "Netscape SSL"
+msgstr "Netscape-SSL"
+
+#: crypto.cpp:2292
+msgctxt "Server certificate authority"
+msgid "Server CA"
+msgstr "Zertifikatsautorität für Server"
+
+#: crypto.cpp:2293
+msgctxt "Personal certificate authority"
+msgid "Personal CA"
+msgstr "Persönliche Zertifikatsautorität"
+
+#: crypto.cpp:2294
+msgctxt "Secure MIME certificate authority"
+msgid "S/MIME CA"
+msgstr "Zertifikatsautorität für Secure MIME"
+
+#: crypto.cpp:2355
+msgctxt "No Certificates on List"
+msgid "None"
+msgstr "Keine"
+
+#: crypto.h:187
+msgid "Don't Send"
+msgstr "Nicht senden"
+
+#: kdatetimedlg.cpp:46
+msgctxt "Select Time and Date"
+msgid "Date & Time Selector"
+msgstr "Auswahl von Datum und Zeit"
+
+#: kdatetimedlg.cpp:51
+msgctxt "Set Hours of Time"
+msgid "Hour:"
+msgstr "Stunde:"
+
+#: kdatetimedlg.cpp:57
+msgctxt "Set Minutes of Time"
+msgid "Minute:"
+msgstr "Minute:"
+
+#: kdatetimedlg.cpp:63
+msgctxt "Set Seconds of Time"
+msgid "Second:"
+msgstr "Sekunde:"
+
+#~ msgid "Default Authentication Certificate"
+#~ msgstr "Standard-Zertifikat verwenden"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Use these preconfigurations to more easily configure the SSL "
+#~| "encryption settings. You can choose among the following modes: <ul>"
+#~ msgid ""
+#~ "<qt>Use these preconfigurations to more easily configure the SSL "
+#~ "encryption settings. You can choose among the following modes: </qt><ul>"
+#~ msgstr ""
+#~ "<qt>Die folgenden Voreinstellungen sollen Ihnen helfen, die SSL-"
+#~ "Verschlüsselung auf einfache Weise einzurichten. Sie können unter den "
+#~ "folgenden Modi wählen:<ul>"
+
+#~ msgid ""
+#~ "<li><b>Strong Ciphers Only:</b> Select only the strong (&gt;= 128 bit) "
+#~ "encryption ciphers.</li>"
+#~ msgstr ""
+#~ "<li><b>Nur starke US-Verschlüsselung:</b> Es wird nur die starke US-"
+#~ "Verschlüsselung (&gt;= 128 Bit) ausgewählt.</li>"
+
+#~ msgid ""
+#~ "<li><b>Export Ciphers Only:</b> Select only the weak ciphers (&lt;= 56 "
+#~ "bit).</li>"
+#~ msgstr ""
+#~ "<li><b>Nur Export-Verschlüsselung:</b> Es wird nur die schwächere "
+#~ "Verschlüsselung ausgewählt (&lt;= 56 bit).</li>"
+
+#~ msgid "<li><b>Enable All:</b> Select all SSL ciphers and methods.</li></ul>"
+#~ msgstr ""
+#~ "<li><b>Alle aktivieren:</b> Alle SSL-Verschlüsselungen und -Methoden "
+#~ "werden ausgewählt.</li>"

@@ -1,0 +1,195 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+
+  <!ENTITY i18n-kmailcvt "<application
+>KMailCVT</application
+>">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE"
+> 
+]>
+
+<article id="kmailcvt" lang="&language;">
+
+<articleinfo id="kmailcvtinfo">
+
+<title
+>Das Handbuch zu &i18n-kmailcvt;</title>
+
+<authorgroup>
+<author
+><personname
+> <firstname
+>Laurent</firstname
+> <surname
+>Montel</surname
+> </personname
+> <email
+>montel@kde.org</email
+> </author>
+<author
+><firstname
+>Scarlett</firstname
+> <surname
+>Clark</surname
+> <affiliation
+><address
+>&Scarlett.Clark.mail; </address
+></affiliation>
+</author>
+<othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2013</year>
+<holder
+>Laurent Montel</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2013-12-10</date>
+<releaseinfo
+>&kde; 4.12</releaseinfo>
+
+</articleinfo>
+
+<sect1 id="introduction">
+<title
+>Einleitung</title>
+
+<para
+>Mit &i18n-kmailcvt; können E-Mails von folgenden anderen E-Mail-Programmen einfach importiert werden:</para>
+  <simplelist>
+    <member
+>KMail-Archiv</member>
+    <member
+>mbox (Unix, Evolution)</member>
+    <member
+>Evolution 1.x</member>
+    <member
+>Evolution 2.x</member>
+    <member
+>Evolution 3.x</member>
+    <member
+>&kmail;</member>
+    <member
+>OS X Mail</member>
+    <member
+>Opera</member>
+    <member
+>Sylpheed</member>
+    <member
+>Thunderbird/Mozilla</member>
+    <member
+>The Bat!</member>
+    <member
+>Outlook Express</member>
+    <member
+>Pegasus-Mail</member>
+    <member
+>Lotus Notes</member>
+    <member
+>Einfacher Text</member>
+  </simplelist>
+<para
+>Ist das gesuchte E-Mail-Programm nicht im Auswahlfeld aufgelistet, lesen Sie das Kapitel <ulink url="help:/kmail/import-restore.html#importing-options"
+>Importieren</ulink
+> mit weiteren Importoptionen.</para>
+
+
+
+<sect2 id="using-kapp">
+<title
+>&i18n-kmailcvt; benutzen</title>
+
+<para>
+<screenshot>
+<screeninfo
+>Bildschirmfoto von &i18n-kmailcvt;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="kmailcvt.png" format="PNG"/>
+    </imageobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>&i18n-kmailcvt; ist ein Programm für den einfachen Import von einigen unterstützten Anwendungen. Wählen Sie <menuchoice
+><guimenu
+>Datei</guimenu
+><guimenuitem
+>Nachrichten importieren</guimenuitem
+></menuchoice
+> in &kmail; oder starten Sie &i18n-kmailcvt; als eigenständiges Programm.</para>
+<note
+><para
+>Denken Sie daran, die Ordner in den anderen Programmen einzuklappen.</para
+></note>
+<para
+>Wählen Sie ein E-Mail-Programm zum Import aus dem Auswahlfeld. Im Textbereich von &i18n-kmailcvt; werden besondere Hinweise und Anweisungen und der Speicherort der E-Mails angezeigt für das gewählte Programm, wenn sie verfügbar sind. Folgen Sie diesen Anweisungen und wählen dann den Ordner, in denn die E-Mails importiert werden sollen.</para>
+<para
+>Sollen doppelte Nachrichten entfernt werden, aktivieren Sie diese Einstellung. Ein Dateiauswahldialog erscheint, Sie müssen dann die in den Anweisungen genannte Datei oder Ordner suchen und auswählen. Klicken Sie auf den Knopf <guibutton
+>Weiter</guibutton
+>, um den Import zu starten. Ist der Import abgeschlossen, können Sie mit <guibutton
+>Zurück</guibutton
+> E-Mails aus weiteren Programmen importieren oder mit <guibutton
+>Fertigstellen</guibutton
+> das Programm beenden. </para>
+</sect2>
+
+<sect2 id="credits">
+
+<title
+>Danksagungen und Lizenz</title>
+
+<para
+>&i18n-kmailcvt;</para>
+<para
+>Programm Copyright 2013 Laurent Montel montel@kde.org </para>
+<para
+>Dokumentation Copyright &copy; 2013 Laurent Montel montel@kde.org und Scarlett Clark scarlett@scarlettgatelyclark.com </para>
+
+<para
+>Übersetzung Burkhard Lück<email
+>lueck@hube-lueck.de</email
+></para
+> 
+&underFDL; &underGPL; </sect2>
+
+
+</sect1>
+
+
+</article>
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

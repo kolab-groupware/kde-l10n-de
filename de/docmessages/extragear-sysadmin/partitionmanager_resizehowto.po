@@ -1,0 +1,373 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2011, 2014.
+# Thomas Bögel <boegel.thomas@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: partitionmanager_resizehowto\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: 2014-02-25 11:17+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/extragear/sysadmin/doc/partitionmanager/"
+"resizehowto.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 867075\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: resizehowto.docbook:2
+#, no-c-format
+msgid "How-To: Resizing a Partition"
+msgstr "Anleitung: Größenänderung einer Partition"
+
+#. Tag: para
+#: resizehowto.docbook:4
+#, no-c-format
+msgid ""
+"This how-to explains the resizing of a <glossterm linkend=\"glossary-"
+"partition\">partition</glossterm> that is becoming too full. See the "
+"following screenshot for the initial situation before resizing:"
+msgstr ""
+"Diese Anleitung beschreibt das Vorgehen bei einer Größenänderung einer "
+"<glossterm linkend=\"glossary-partition\">Partition</glossterm>, auf der zu "
+"wenig freier Speicherplatz verblieben ist. Auf den folgenden Bildschirmfotos "
+"wird die Situation vor der Größenänderung dargestellt:"
+
+#. Tag: phrase
+#: resizehowto.docbook:12
+#, no-c-format
+msgid "Main window before resizing partitions"
+msgstr "Hauptfenster vor der Änderung der Partitionsgröße"
+
+#. Tag: para
+#: resizehowto.docbook:17
+#, no-c-format
+msgid ""
+"On <glossterm linkend=\"glossary-device\">device</glossterm> <quote>/dev/"
+"sdb</quote>, partition <quote>sdb2</quote> has only little free space left "
+"while the other partition, <quote>sdb1</quote>, is far from being full. For "
+"that reason it seems advisable to make the first partition a little smaller "
+"and grow <quote>sdb2</quote> so it has more free space available."
+msgstr ""
+"Auf dem <glossterm linkend=\"glossary-device\">Gerät</glossterm> <quote>/dev/"
+"sdb</quote> verbleibt auf Partition <quote>sdb2</quote> nur noch wenig "
+"freier Speicherplatz, während die andere Partition, <quote>sdb1</quote>, "
+"noch sehr viel freien Speicherplatz aufweist. Aus diesem Grund scheint es "
+"sinnvoll zu sein, die erste Partition zu verkleinern um den freien "
+"Speicherplatz auf <quote>sdb2</quote> zu erhöhen."
+
+#. Tag: title
+#: resizehowto.docbook:22
+#, no-c-format
+msgid "Note: You cannot modify mounted partitions."
+msgstr "Hinweis: Eingebundene Partitionen können nicht geändert werden."
+
+#. Tag: para
+#: resizehowto.docbook:23
+#, no-c-format
+msgid ""
+"In the screenshot above both partitions are not currently mounted. If one or "
+"both of them were mounted you would have to unmount them first using <xref "
+"linkend=\"menu-partition-mount\"/>."
+msgstr ""
+"Im obigen Bildschirmfoto ist keine der beiden Partitionen eingebunden. Wenn "
+"eine oder beide Partitionen eingebunden wären, müssten die Einbindung für "
+"diese zunächst mit dem Befehl <xref linkend=\"menu-partition-mount\"/> "
+"gelöst werden."
+
+#. Tag: para
+#: resizehowto.docbook:26
+#, no-c-format
+msgid ""
+"The first step is to make more room for the partition to grow, so start by "
+"shrinking <quote>sdb1</quote>. Click on the partition and choose <xref "
+"linkend=\"menu-partition-resize\"/>. The following dialog comes up:"
+msgstr ""
+"Im ersten Schritt wird zusätzlicher Platz zum Vergrößern der Partition "
+"geschaffen, weshalb zunächst die Partition <quote>sdb1</quote> verkleinert "
+"wird. Klicken Sie auf die Partition und wählen Sie <xref linkend=\"menu-"
+"partition-resize\"/>. Es erscheint folgender Dialog:"
+
+#. Tag: phrase
+#: resizehowto.docbook:34
+#, no-c-format
+msgid "Resize dialog before resizing /dev/sdb1"
+msgstr "Dialog zur Größenänderung von /dev/sdb1"
+
+#. Tag: para
+#: resizehowto.docbook:39
+#, no-c-format
+msgid ""
+"The dialog allows you to resize the partition in multiple ways. You can "
+"either drag the right handle to the left until the partition has the desired "
+"size or simply enter the size in the <guilabel>Size</guilabel> text field. "
+"Another possibility would be to adjust the size by clicking on the little "
+"arrows next to the text field, but that is a little tedious for larger "
+"changes."
+msgstr ""
+"Dieser Dialog bietet mehrere Möglichkeiten, um die Größe der Partition zu "
+"verändern. Sie können entweder den rechten Schieberegler nach links ziehen, "
+"bis die Partition die gewünschte Größe hat oder die Größe direkt in das Feld "
+"<guilabel>Größe</guilabel> eingeben. Eine weitere Möglichkeit ist das "
+"Anklicken der kleinen Pfeile neben dem Textfeld, was jedoch für größere "
+"Änderungen aufwändiger ist."
+
+#. Tag: para
+#: resizehowto.docbook:43
+#, no-c-format
+msgid ""
+"Whichever way you prefer for setting the new size, the dialog should now "
+"look like this:"
+msgstr ""
+"Unabhängig von der gewählten Methode sollte der Dialog nun folgendermaßen "
+"aussehen:"
+
+#. Tag: phrase
+#: resizehowto.docbook:51
+#, no-c-format
+msgid "Resize dialog after resizing /dev/sdb1"
+msgstr "Dialog zur Größenänderung von /dev/sdb1 nach der Änderung"
+
+#. Tag: para
+#: resizehowto.docbook:56
+#, no-c-format
+msgid ""
+"After you click on <guibutton>OK</guibutton>, a new operation is added to "
+"the pending operations list and the graphical view and tree view of the "
+"device are updated to reflect the new situation:"
+msgstr ""
+"Wenn Sie auf <guibutton>OK</guibutton> klicken, wird eine neue Operation zur "
+"Liste der anstehenden Operationen hinzugefügt und sowohl die grafische "
+"Ansicht, als auch die Baumansicht des Gerätes werden aktualisiert, um die "
+"geänderte Größe anzuzeigen:"
+
+#. Tag: phrase
+#: resizehowto.docbook:64
+#, no-c-format
+msgid "Main window after resizing /dev/sdb1"
+msgstr "Hauptfenster nach der Größenänderung von /dev/sdb1"
+
+#. Tag: title
+#: resizehowto.docbook:70
+#, no-c-format
+msgid "Note: Operations are previewed first before applying them."
+msgstr ""
+"Beachten Sie: Vor der Anwendung von Operationen wird eine Vorschau angezeigt."
+
+#. Tag: para
+#: resizehowto.docbook:71
+#, no-c-format
+msgid ""
+"Although the main window reflects the device's state how it will be after "
+"applying the new operation, the operation has in fact not been applied yet: "
+"While operations are pending you can still undo them (one by one using <xref "
+"linkend=\"menu-edit-undo\"/> or <xref linkend=\"menu-edit-clear\"/> to undo "
+"all of them) or quit &partman;, and nothing will have been modified at all."
+msgstr ""
+"Obwohl das Hauptfenster eine Vorschau des Zustandes des Gerätes nach der "
+"Änderung anzeigt, wurde die Operation noch nicht ausgeführt: ausstehende "
+"Operationen können rückgängig gemacht werden (einzeln mit Hilfe des Befehls "
+"<xref linkend=\"menu-edit-undo\"/>, bzw. alle Operationen auf einmal mit dem "
+"Befehl <xref linkend=\"menu-edit-clear\"/>) oder &partman; kann beendet "
+"werden, was dazu führt, dass keinerlei Änderungen durchgeführt werden."
+
+#. Tag: para
+#: resizehowto.docbook:74
+#, no-c-format
+msgid ""
+"Now that there is some free space between the two partitions you can move "
+"and grow partition <quote>sdb2</quote>. First, click on <quote>sdb2</quote> "
+"and choose <xref linkend=\"menu-partition-resize\"/> again. The resize "
+"dialog comes up once more, this time for the second partition. Drag its left "
+"handle to the leftmost end so that the dialog looks like this:"
+msgstr ""
+"Da nun freier Speicherplatz zwischen den zwei Partitionen existiert, können "
+"Sie die Partition <quote>sdb2</quote> verschieben und vergrößern. Klicken "
+"Sie hierzu auf <quote>sdb2</quote> und wählen Sie wiederum  <xref linkend="
+"\"menu-partition-resize\"/>. Es erscheint erneut der Dialog zur "
+"Größenänderung, in diesem Fall der zweiten Partition. Ziehen Sie den linken "
+"Schieberegler ganz nach links, sodass der Dialog wie folgt aussieht:"
+
+#. Tag: phrase
+#: resizehowto.docbook:82
+#, no-c-format
+msgid "Resize dialog after resizing /dev/sdb2"
+msgstr "Dialog zur Größenänderung von /dev/sdb2 nach der Änderung"
+
+#. Tag: para
+#: resizehowto.docbook:87
+#, no-c-format
+msgid ""
+"Be careful to make sure that the <guilabel>Free space before</guilabel> text "
+"field really does show <quote>0 MiB</quote> because otherwise there will be "
+"a little free space left between the partitions that will then be wasted."
+msgstr ""
+"Achten Sie darauf, dass das Beschriftungsfeld <guilabel>Freier Speicherplatz "
+"davor</guilabel> den Wert <quote>0 MiB</quote> anzeigt, da andererseits ein "
+"kleiner Anteil des freien Speicherplatzes zwischen den Partitionen "
+"verschwendet wird."
+
+#. Tag: para
+#: resizehowto.docbook:91
+#, no-c-format
+msgid ""
+"Now click <guibutton>OK</guibutton> again. In the main window things now "
+"look like this:"
+msgstr ""
+"Klicken Sie nun auf den Knopf <guibutton>OK</guibutton>. Das Hauptfenster "
+"sieht nun folgendermaßen aus:"
+
+#. Tag: phrase
+#: resizehowto.docbook:99
+#, no-c-format
+msgid "Main window after resizing /dev/sdb2"
+msgstr "Hauptfenster nach der Größenänderung von /dev/sdb2"
+
+#. Tag: para
+#: resizehowto.docbook:104
+#, no-c-format
+msgid ""
+"This already looks like what you wanted, so choose <xref linkend=\"menu-edit-"
+"apply\"/>. A dialog box will come up and ask you if you are sure to apply "
+"the pending operations. Confirm this dialog box and &partman; will begin "
+"executing operations:"
+msgstr ""
+"Das Ergebnis sieht wie gewünscht aus, wählen Sie also <xref linkend=\"menu-"
+"edit-apply\"/>. Es öffnet sich ein Dialogfenster, das Sie dazu auffordert, "
+"die ausstehenden Operationen zu bestätigen. Bestätigen Sie diesen Dialog und "
+"&partman; wird nun damit beginnen, die Änderungen auszuführen."
+
+#. Tag: phrase
+#: resizehowto.docbook:112
+#, no-c-format
+msgid "&partman; is applying operations"
+msgstr "&partman; führt die Änderungen aus"
+
+#. Tag: para
+#: resizehowto.docbook:117
+#, no-c-format
+msgid ""
+"While operations are being executed you can click on the plus-sign next to "
+"each operation in the list to find out the jobs it is made up of and see "
+"which job is currently being run."
+msgstr ""
+"Während die Änderungen ausgeführt werden, können Sie auf das Plus-Symbol "
+"neben jeder Operation in der Liste klicken, um die Einzelaufgabe angezeigt "
+"zu bekommen, aus denen die Operation besteht und welcher Schritt gerade "
+"durchgeführt wird."
+
+#. Tag: para
+#: resizehowto.docbook:121
+#, no-c-format
+msgid ""
+"Resizing a partition in the way you resized <quote>/dev/sdb2</quote> above "
+"always means it has to be moved to the left first before it can be grown "
+"because partitions can never be grown to the left directly. Unfortunately, "
+"moving such a large partition will take quite some time. It is not unusual "
+"for an operation like this to take several minutes or even more."
+msgstr ""
+"Bei einer Vergrößerung von Partitionen zur linken Seite, wie oben am "
+"Beispiel von <quote>/dev/sdb2</quote> beschrieben, muss immer die Partition "
+"zunächst nach links verschoben werden, bevor sie vergrößert werden kann, da "
+"Partitionen nicht direkt nach links vergrößert werden können. Leider nimmt "
+"das Bewegen einer großen Partition einige Zeit in Anspruch. Es ist nicht "
+"ungewöhnlich, dass eine derartige Operation mehrere Minuten oder noch länger "
+"dauert."
+
+#. Tag: para
+#: resizehowto.docbook:125
+#, no-c-format
+msgid "Finally, all operations will have been successfully completed:"
+msgstr "Alle Änderungen wurden erfolgreich durchgeführt:"
+
+#. Tag: phrase
+#: resizehowto.docbook:133
+#, no-c-format
+msgid "Progress dialog after successfully applying operations"
+msgstr ""
+"Fortschrittsdialog nach der erfolgreichen Durchführung aller Änderungen"
+
+#. Tag: para
+#: resizehowto.docbook:138
+#, no-c-format
+msgid ""
+"By clicking on <guibutton>OK</guibutton> you can now close the progress "
+"dialog and return to the main window. &partman; will rescan your devices at "
+"this point so that might take a few seconds."
+msgstr ""
+"Schließen Sie die Fortschrittsanzeige, indem Sie <guibutton>OK</guibutton> "
+"wählen, um zum Hauptfenster zurückzukehren. &partman; liest nun Ihre Geräte "
+"neu ein, was einige Sekunden in Anspruch nehmen kann."
+
+#. Tag: para
+#: resizehowto.docbook:142
+#, no-c-format
+msgid ""
+"If you are interested in some more details about the operations that were "
+"just run click on <guibutton>Details</guibutton>. You will see the detailed "
+"report that is always generated (and updated on the fly) while &partman; "
+"executes operations:"
+msgstr ""
+"Klicken Sie auf den Knopf <guibutton>Details</guibutton>, dann werden alle "
+"durchgeführten Änderungen angezeigt."
+
+#. Tag: phrase
+#: resizehowto.docbook:150
+#, no-c-format
+msgid "Progress dialog details"
+msgstr "Details im Fortschrittsdialog"
+
+#. Tag: para
+#: resizehowto.docbook:155
+#, no-c-format
+msgid ""
+"This report is particularly of interest if an error occurs while executing "
+"operations. A report shows each operation, each job and each external "
+"command that is being run and is thus very helpful when trying to track down "
+"problems."
+msgstr ""
+"Der Bericht ist insbesondere dann hilfreich, wenn ein Fehler während der "
+"Durchführung von Änderungen auftritt. Ein Bericht zeigt jede Operation, jede "
+"Einzelaufgabe und jeden externen Befehl an, der ausgeführt wird und ist "
+"daher für die Fehlerbehebung sehr nützlich."
+
+#. Tag: para
+#: resizehowto.docbook:159
+#, no-c-format
+msgid ""
+"You can save the report as <acronym>HTML</acronym> or view it in an external "
+"web browser."
+msgstr ""
+"Sie können sich den Bericht als <acronym>HTML</acronym>-Datei speichern oder "
+"in einem externen Webbrowser anzeigen lassen."
+
+#. Tag: para
+#: resizehowto.docbook:164
+#, no-c-format
+msgid ""
+"Always save the detailed report as <acronym>HTML</acronym> when executing "
+"the operations fails with errors or warnings for later reference. You might "
+"also want to include it in a bug report you submit to the &kde; bug tracking "
+"system at <ulink url=\"https://bugs.kde.org\">bugs.kde.org</ulink>."
+msgstr ""
+"Wenn bei der Ausführung von Operationen Fehler auftreten, speichern Sie den "
+"Bericht als HTML-Datei ab, um später aufgetretene Fehlermeldungen und "
+"Warnungen nachsehen zu können. Des Weiteren können Sie diesen hinzufügen, "
+"wenn Sie beim Fehlerberichtsystem von &kde; unter <ulink url=\"https://bugs."
+"kde.org\">bugs.kde.org</ulink> einen Fehlerbericht erstellen."
+
+#. Tag: para
+#: resizehowto.docbook:169
+#, no-c-format
+msgid ""
+"To hide the details again click on <guibutton>Details</guibutton> and to "
+"finally close the progress dialog click on <guibutton>OK</guibutton>."
+msgstr ""
+"Um die Details auszublenden, wählen Sie erneut den Knopf <guibutton>Details</"
+"guibutton> und klicken Sie auf <guibutton>OK</guibutton>, um den "
+"Fortschrittsdialog zu schließen."

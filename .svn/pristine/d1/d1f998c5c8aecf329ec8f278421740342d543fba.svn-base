@@ -1,0 +1,225 @@
+<sect1 id="scripting-data-structure">
+<title
+>Skript-API für jede Datenstruktur</title>
+<sect2>
+<title
+>Abstraktes Datenstruktur-Objekt</title>
+<para
+>Die abstrakte Datenstruktur definiert eine Menge von Datenelementen und mögliche Verbindungen zwischen Ihnen. Dies ist der Prototyp aller weiteren Datenstrukturen. Datenstrukturen werden über ihren Namen identifiziert. Haben Sie eine Datenstruktur mit dem Namen <literal
+>testgraph</literal
+> erstellt, dann können Sie über diesen Namen auf die Datenstruktur zugreifen. Um zum Beispiel ein Feld mit allen Datenelementen einer Struktur zu erhalten, verwenden Sie <literal
+>testgraph.list_nodes();</literal
+> im Skript. </para>
+
+<sect3>
+<title
+>Eigenschaften</title>
+<itemizedlist>
+    <listitem>
+        <para
+><emphasis
+>name</emphasis
+> : </para>
+        <para
+>Der eindeutige Name dieser Datenstruktur.</para>
+    </listitem>
+</itemizedlist>
+</sect3>
+</sect2>
+
+<sect2>
+<title
+>Abstraktes Datenelement</title>
+<para
+>Ein abstraktes Datenelement ist eine Einheit von Informationen, die zu einer abstrakten Datenstruktur gehören, und kann mit anderen Datenelementen durch Zeiger verbunden sein. </para>
+
+<sect3>
+<title
+>Eigenschaften</title>
+<itemizedlist>
+    <listitem>
+        <para
+><emphasis
+>width</emphasis
+> : </para>
+        <para
+>Die Größe dieses Datenelements.</para>
+    </listitem>
+
+    <listitem>
+        <para
+><emphasis
+>x</emphasis
+> : </para>
+        <para
+>Die X-Koordinate dieses Datenelements.</para>
+    </listitem>
+
+    <listitem>
+        <para
+><emphasis
+>y</emphasis
+> : </para>
+        <para
+>Die y-Koordinate dieses Datenelements.</para>
+    </listitem>
+
+    <listitem>
+        <para
+><emphasis
+>id</emphasis
+> : </para>
+        <para
+>Der eindeutige Bezeichner für dieses Datenelement.</para>
+    </listitem>
+
+    <listitem>
+        <para
+><emphasis
+>color</emphasis
+> : </para>
+        <para
+>Die Farbe dieses Datenelements als Hexadezimalwert.</para>
+    </listitem>
+</itemizedlist>
+</sect3>
+</sect2>
+
+
+<sect2>
+<title
+>Abstrakter Zeiger</title>
+<para
+>Ein Zeiger verbindet zwei Datenelemente und kann Informationen über seine Eigenschaften enthalten. </para>
+<sect3>
+<title
+>Eigenschaften</title>
+<itemizedlist>
+    <listitem>
+        <para
+><emphasis
+>width</emphasis
+> : </para>
+        <para
+>Die Breite der Verbindung.</para>
+    </listitem>
+
+    <listitem>
+        <para
+><emphasis
+>directed</emphasis
+> : </para>
+        <para
+>Falls wahr, ist die Verbindung gerichtet, andernfalls ist sie ungerichtet.</para>
+    </listitem>
+
+    <listitem>
+        <para
+><emphasis
+>from</emphasis
+> : </para>
+        <para
+>Der Start der Verbindung.</para>
+    </listitem>
+
+    <listitem>
+        <para
+><emphasis
+>to</emphasis
+> : </para>
+        <para
+>Das Ende der Verbindung</para>
+    </listitem>
+
+    <listitem>
+        <para
+><emphasis
+>color</emphasis
+> : </para>
+        <para
+>Kennung des Verbindungstyps.</para>
+    </listitem>
+</itemizedlist>
+</sect3>
+
+
+<sect3>
+<title
+>Methoden</title>
+<variablelist>
+
+    <varlistentry>
+    <term
+>remove()</term>
+    <listitem>
+        <para
+>Entfernt diese Verbindung.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>void <function
+>remove</function
+></funcdef
+> <paramdef
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>add_property(name, value)</term>
+    <listitem>
+        <para
+>Fügt der Verbindung eine neue Eigenschaft hinzu.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>void <function
+>add_property</function
+></funcdef
+> <paramdef
+>string <parameter
+><replaceable
+>name</replaceable
+></parameter
+></paramdef
+> <paramdef
+>string <parameter
+><replaceable
+>value</replaceable
+></parameter
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+
+    <varlistentry>
+    <term
+>remove_property(name)</term>
+    <listitem>
+        <para
+>Entfernt eine bestehende Eigenschaft der Verbindung.</para>
+    <funcsynopsis
+><funcprototype
+><funcdef
+>void <function
+>remove_property</function
+></funcdef
+> <paramdef
+>string <parameter
+><replaceable
+>name</replaceable
+></parameter
+></paramdef
+> </funcprototype>
+    </funcsynopsis>
+    </listitem>
+    </varlistentry>
+</variablelist>
+</sect3>
+
+</sect2>
+</sect1>

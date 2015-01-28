@@ -1,0 +1,138 @@
+#
+# Burkhard Lück <lueck@hube-lueck.de>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: 2013-08-08 08:21+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: apiConsole.docbook:2
+#, no-c-format
+msgid "Scripting Interfaces"
+msgstr "Skript-Schnittstellen"
+
+#. Tag: title
+#: apiConsole.docbook:4
+#, no-c-format
+msgid "Console Object"
+msgstr "„Console“-Objekt"
+
+#. Tag: para
+#: apiConsole.docbook:5
+#, no-c-format
+msgid ""
+"The Console object allows you to print messages of different importance to a "
+"log."
+msgstr ""
+"Mit dem Objekt „Console“ können Meldungen unterschiedlicher Wichtigkeit "
+"ausgegeben werden."
+
+#. Tag: para
+#: apiConsole.docbook:8
+#, no-c-format
+msgid ""
+"Console is not a constructor. All properties and methods of Console can be "
+"called by using Console as an object, without creating it."
+msgstr ""
+"„Console“ ist kein Konstruktor. Alle Eigenschaften und Methoden des Objekts "
+"„Console“ aufgerufen werden, indem „Console“ als Objekt verwendet wird, ohne "
+"es zu konstruieren."
+
+#. Tag: title
+#: apiConsole.docbook:13
+#, no-c-format
+msgid "Syntax"
+msgstr "Syntax"
+
+#. Tag: programlisting
+#: apiConsole.docbook:14
+#, no-c-format
+msgid ""
+"Console.log(\"This is a program message.\"); // print a program message\n"
+"Console.debug(\"A debug message.\"); // print a debug message"
+msgstr ""
+"Console.log(\"Dies ist eine Programmmeldung.\"); // gibt eine normale "
+"Meldung aus\n"
+"Console.debug(\"Eine Debug-Meldung.\"); // gibt eine Fehlermeldung aus"
+
+#. Tag: title
+#: apiConsole.docbook:17
+#, no-c-format
+msgid "Console Object Methods"
+msgstr "Methoden des Objekts „Console“"
+
+#. Tag: title
+#: apiConsole.docbook:19
+#, no-c-format
+msgid "log()"
+msgstr "log()"
+
+#. Tag: para
+#: apiConsole.docbook:20
+#, no-c-format
+msgid "Print the given message of normal severity."
+msgstr "Gibt eine normale Meldung aus."
+
+#. Tag: funcprototype
+#: apiConsole.docbook:24
+#, no-c-format
+msgid ""
+"<funcdef>void <function>log</function></funcdef> <paramdef>string "
+"<parameter>message</parameter></paramdef>"
+msgstr ""
+"<funcdef>void <function>log</function></funcdef> <paramdef>string "
+"<parameter>message</parameter></paramdef>"
+
+#. Tag: title
+#: apiConsole.docbook:31
+#, no-c-format
+msgid "debug()"
+msgstr "debug()"
+
+#. Tag: para
+#: apiConsole.docbook:32
+#, no-c-format
+msgid "Print the given debug message."
+msgstr "Gibt die angegebene Debug-Meldung aus."
+
+#. Tag: funcprototype
+#: apiConsole.docbook:36
+#, no-c-format
+msgid ""
+"<funcdef>void <function>debug</function></funcdef> <paramdef>string "
+"<parameter>message</parameter></paramdef>"
+msgstr ""
+"<funcdef>void <function>debug</function></funcdef> <paramdef>string "
+"<parameter>message</parameter></paramdef>"
+
+#. Tag: title
+#: apiConsole.docbook:43
+#, no-c-format
+msgid "error()"
+msgstr "error()"
+
+#. Tag: para
+#: apiConsole.docbook:44
+#, no-c-format
+msgid "Print the given error message of high severity."
+msgstr "Gibt eine wichtige Fehlermeldung aus."
+
+#. Tag: funcprototype
+#: apiConsole.docbook:48
+#, no-c-format
+msgid ""
+"<funcdef>void <function>error</function></funcdef> <paramdef>string "
+"<parameter>message</parameter></paramdef>"
+msgstr ""
+"<funcdef>void <function>error</function></funcdef> <paramdef>string "
+"<parameter>message</parameter></paramdef>"

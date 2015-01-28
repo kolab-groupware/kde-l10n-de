@@ -1,0 +1,231 @@
+# Frank Schütte <F.Schuette@t-online.de>, 2003.
+# Frederik Schwarzer <schwarzer@kde.org>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: kppp_security\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:14+0000\n"
+"PO-Revision-Date: 2011-06-02 22:22+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: security.docbook:2
+#, no-c-format
+msgid "&kppp; and security issues"
+msgstr "&kppp; und die Sicherheit"
+
+#. Tag: para
+#: security.docbook:4
+#, no-c-format
+msgid ""
+"This section is mainly for superusers (<systemitem>root</systemitem>) people "
+"with high security demands, or simply technically interested people. It is "
+"not necessary to read this if you only use &Linux; at home for yourself, "
+"although you may learn a thing or two in any case."
+msgstr ""
+"Dieses Kapitel ist hauptsächlich für Administratoren(<systemitem>root</"
+"systemitem>), Leute mit hohen Sicherheitsansprüchen oder einfach technisch "
+"Interessierte. Es ist nicht notwendig, dieses Kapitel zu lesen, wenn Sie nur "
+"&Linux; für sich zu Hause laufen lassen (obwohl Sie vielleicht etwas Neues "
+"lernen könnten, wenn Sie es lesen)."
+
+#. Tag: title
+#: security.docbook:10
+#, no-c-format
+msgid "Restricting access to &kppp;"
+msgstr "Den Zugang zu &kppp; beschränken"
+
+#. Tag: para
+#: security.docbook:12
+#, no-c-format
+msgid ""
+"A system administrator might want to restrict access as to who is allowed to "
+"use &kppp;. There are two ways to accomplish this."
+msgstr ""
+"Ein Systemadministrator möchte vielleicht Zugang zu &kppp; auf diejenigen "
+"beschränken, denen es erlaubt ist, es zu benutzen. Es gibt zwei Wege, dies "
+"zu tun:"
+
+#. Tag: title
+#: security.docbook:16
+#, no-c-format
+msgid "Restricting access with group permissions"
+msgstr "Den Zugang zu &kppp; durch Gruppenrechte beschränken"
+
+#. Tag: para
+#: security.docbook:18
+#, no-c-format
+msgid ""
+"Create a new group (you might want to name it <systemitem>dialout</"
+"systemitem> or similar), and put every user that should be allowed to use "
+"&kppp; into that group. Then type at the prompt:"
+msgstr ""
+"Man erstellt zunächst eine neue Benutzergruppe (sie könnte &eg; "
+"<systemitem>dialout</systemitem> heißen) und fügt jeden Benutzer, der &kppp; "
+"benutzen darf, zu dieser Gruppe hinzu. Dann tippt man folgendes ein:"
+
+#. Tag: screen
+#: security.docbook:22
+#, no-c-format
+msgid ""
+"<prompt>#</prompt> <userinput><command>chown</command> <option>root.dialout</"
+"option> <filename>/opt/kde/bin/kppp</filename></userinput>\n"
+"<prompt>#</prompt> <userinput><command>chmod</command> <option>4750</option> "
+"<filename>/opt/kde/bin/kppp</filename></userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput><command>chown</command> <option>root.dialout</"
+"option> <filename>/opt/kde/bin/kppp</filename></userinput>\n"
+"<prompt>#</prompt> <userinput><command>chmod</command> <option>4750</option> "
+"<filename>/opt/kde/bin/kppp</filename></userinput>"
+
+#. Tag: para
+#: security.docbook:24
+#, no-c-format
+msgid ""
+"This assumes that &kde; was installed in <filename class=\"directory\"> /opt/"
+"kde/</filename> and that your new group is named <systemitem>dialout</"
+"systemitem>."
+msgstr ""
+"Dabei wird vorausgesetzt, dass sich &kde; in <filename class=\"directory\">/"
+"opt/kde</filename> befindet und die neue Gruppe <systemitem>dialout</"
+"systemitem> heißt."
+
+#. Tag: title
+#: security.docbook:31
+#, no-c-format
+msgid "Restricting access &kppp;'s way"
+msgstr "Den Zugang mit den Mitteln von &kppp; beschränken"
+
+#. Tag: para
+#: security.docbook:33
+#, no-c-format
+msgid ""
+"Before doing anything, &kppp; checks if there is a file named <filename>/etc/"
+"kppp.allow</filename>. If such a file exists, only users named in this file "
+"are allowed to dial out. This file must be readable by everyone (but of "
+"course <emphasis>NOT</emphasis> writable.) Only login names are recognized, "
+"so you cannot use <acronym>UID</acronym>'s in this file. Here is a short "
+"example:"
+msgstr ""
+"Beim Start überprüft &kppp;, ob eine Datei <filename>/etc/kppp.allow</"
+"filename> existiert. Falls es eine solche Datei gibt, können nur Benutzer, "
+"die in dieser Datei aufgelistet sin, eine Verbindung herstellen. Diese Datei "
+"muss für jeden Benutzer lesbar sein (natürlich <emphasis>nicht</emphasis> "
+"für jeden schreibbar). Nur Benutzernamen werden erkannt, man kann also keine "
+"<acronym>UID</acronym> verwenden. Hier ein kurzes Beispiel:"
+
+#. Tag: screen
+#: security.docbook:40
+#, no-c-format
+msgid ""
+"# /etc/kppp.allow\n"
+"# comment lines like this are ignored\n"
+"# as well as empty lines\n"
+"\n"
+"fred\n"
+"karl\n"
+"daisy"
+msgstr ""
+"# /etc/kppp.allow\n"
+"# Kommentare und Leerzeilen werden ignoriert.\n"
+"#\n"
+"\n"
+"fred\n"
+"karl\n"
+"daisy"
+
+#. Tag: para
+#: security.docbook:42
+#, no-c-format
+msgid ""
+"In the example above, only the users <systemitem>fred</systemitem>, "
+"<systemitem>karl</systemitem> and <systemitem>daisy</systemitem> are allowed "
+"to dial out, as well as every user with a <acronym>UID</acronym> of 0 (so "
+"you don't have to explicitly list root in the file)."
+msgstr ""
+"Im obigen Beispei dürfen nur die Benutzer <systemitem>fred</systemitem>, "
+"<systemitem>karl</systemitem> und <systemitem>daisy</systemitem> eine "
+"Verbindung herstellen. Außerdem darf das jeder Benutzer mit der "
+"<acronym>UID</acronym> 0 (daher muss root nicht explizit genannt werden)."
+
+#. Tag: title
+#: security.docbook:52
+#, no-c-format
+msgid "&kppp; has the <acronym>SUID</acronym> bit on? What about security?"
+msgstr ""
+"&kppp; hat das <acronym>SUID</acronym>-Bit gesetzt. Wo bleibt die Sicherheit?"
+
+#. Tag: para
+#: security.docbook:55
+#, no-c-format
+msgid ""
+"It's virtually impossible to write a dialer without the <acronym>SUID</"
+"acronym> bit that is both safe and easy to use for inexperienced users. "
+"&kppp; addresses the security issues with the following strategy."
+msgstr ""
+"Es ist realistisch gesehen nicht möglich, ein Wählprogramm ohne gesetztes "
+"<acronym>SUID</acronym>-Bit zu schreiben, das sicher und dabei für "
+"unerfahrene Benutzer einfach zu benutzen ist. &kppp; geht das "
+"Sicherheitsproblem mit folgender Strategie an:"
+
+#. Tag: para
+#: security.docbook:61
+#, no-c-format
+msgid "Immediately after the program starts, &kppp; forks."
+msgstr "Gleich nach dem Programmstart startet &kppp; einen neuen Prozess."
+
+#. Tag: para
+#: security.docbook:64
+#, no-c-format
+msgid ""
+"The master process, which handles all the <acronym>GUI</acronym> operations "
+"(such as user interaction), drops the <acronym>SUID</acronym> state after "
+"the fork, and runs with normal user privileges."
+msgstr ""
+"Der Masterprozess (der die <acronym>GUI</acronym>, Benutzerinteraktion u.ä. "
+"verwaltet) legt den <acronym>SUID</acronym>-Status danach ab und läuft dann "
+"mit den normalen Benutzerprivilegien."
+
+#. Tag: para
+#: security.docbook:69
+#, no-c-format
+msgid ""
+"The slave process keeps its privileges, and is responsible for all actions "
+"that need <systemitem>root</systemitem> privileges. To keep this part safe, "
+"no &kde; or &Qt; library calls are used here, just simple library calls. The "
+"source code for this process is short (around 500 lines) and well "
+"documented, so it's easy for you to check it for security holes."
+msgstr ""
+"Der Slaveprozess behält seine Privilegien bei und kümmert sich um alles, für "
+"das man <systemitem>root</systemitem>-Rechte benötigt. Um diesen Teil sicher "
+"zu machen, werden hier keine Funktionen der &kde;-/&Qt;-Bibliotheken "
+"aufgerufen, sondern nur einfache Funktionen der C-Bibliothek. Der Quellcode "
+"für diesen Prozess ist kurz (etwa 500 Zeilen) und gut dokumentiert. Dadurch "
+"ist es einfach, Sicherheitslöcher zu entdecken."
+
+#. Tag: para
+#: security.docbook:76
+#, no-c-format
+msgid ""
+"Master and slave processes communicate with standard &UNIX; <acronym>IPC</"
+"acronym>."
+msgstr ""
+"Master- und Slaveprozess kommunizieren mit standard &UNIX; <acronym>IPC</"
+"acronym>."
+
+#. Tag: para
+#: security.docbook:81
+#, no-c-format
+msgid ""
+"Special thanks to Harri Porten for writing this excellent piece of code. It "
+"was thought to be impossible, but he managed it within a week."
+msgstr ""
+"Vielen Dank an Harri Porten für das Schreiben dieses exzellenten "
+"Quelltextes. Ich dachte, es sei unmöglich - er schrieb es in einer Woche."

@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: index.docbook:10
+#, no-c-format
+msgid "network"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:14
+#, no-c-format
+msgid ""
+"<personname><firstname>Friedrich W. H.</firstname><surname>Kossebau</surname>"
+"</personname> <email>kossebau@kde.org</email>"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:18
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+
+#. Tag: date
+#: index.docbook:21
+#, no-c-format
+msgid "2009-04-28"
+msgstr ""
+
+#. Tag: releaseinfo
+#: index.docbook:22
+#, no-c-format
+msgid "<releaseinfo>0.1</releaseinfo>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:27
+#, no-c-format
+msgid ""
+"The network ioslave enables the user to browse the devices connected to the "
+"local network and the services running on them. It it also possible to start "
+"programs for services whose type is known."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:33
+#, no-c-format
+msgid ""
+"To see all the devices found, enter <userinput><command>network:/</command>"
+"</userinput>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:38
+#, no-c-format
+msgid ""
+"<userinput><command>network:/</command><replaceable>"
+"hostname_of_device</replaceable></userinput> will list the services found to be "
+"running on a device."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:43
+#, no-c-format
+msgid ""
+"Selecting a service will forward to a url which matches the service, given "
+"there is a suitable, e.g. <userinput><command>ssh:/</command>"
+"hostname_of_device:port/</userinput> for a <acronym>SSH</acronym> "
+"service. Each known service type has a mimetype assigned to it, so a user can "
+"assign new handlers for the resulting urls. This is done with the control "
+"module <menuchoice><guimenuitem>File Associations</guimenuitem></menuchoice> "
+"in &systemsettings;. The mimetypes of the services are currently all named "
+"<userinput>inode/vnd.kde.service.*</userinput>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:53
+#, no-c-format
+msgid ""
+"The network kioslave currently only finds and displays devices and services "
+"which are actively advertising themselves using the service discovery framework "
+"<ulink url=\"http://www.dns-sd.org/\">DNS-SD</ulink>."
+msgstr ""

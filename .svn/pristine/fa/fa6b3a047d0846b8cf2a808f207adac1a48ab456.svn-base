@@ -1,0 +1,404 @@
+# Stephan Johach <hunsum@gmx.de>, 2007.
+# Burkhard Lück <lueck@hube-lueck.de>, 2009.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2009.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkldap\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-06-05 01:48+0000\n"
+"PO-Revision-Date: 2014-07-30 17:58+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ldapattributeproxymodel.cpp:88 ldapmodel.cpp:151
+msgid "Attribute"
+msgstr "Attribut"
+
+#: ldapattributeproxymodel.cpp:90 ldapmodel.cpp:153
+msgid "Value"
+msgstr "Wert"
+
+#: ldapconfigwidget.cpp:102
+msgid "User:"
+msgstr "Benutzer:"
+
+#: ldapconfigwidget.cpp:112
+msgid "Bind DN:"
+msgstr "Bind-DN:"
+
+#: ldapconfigwidget.cpp:122
+msgid "Realm:"
+msgstr "Bereich:"
+
+#: ldapconfigwidget.cpp:132
+msgid "Password:"
+msgstr "Passwort:"
+
+#: ldapconfigwidget.cpp:143
+msgid "Host:"
+msgstr "Rechner:"
+
+#: ldapconfigwidget.cpp:154
+msgid "Port:"
+msgstr "Port:"
+
+#: ldapconfigwidget.cpp:167
+msgid "LDAP version:"
+msgstr "LDAP-Version:"
+
+#: ldapconfigwidget.cpp:182
+msgid "Size limit:"
+msgstr "Max. Größe:"
+
+#: ldapconfigwidget.cpp:188
+msgctxt "default ldap size limit"
+msgid "Default"
+msgstr "Voreinstellung"
+
+#: ldapconfigwidget.cpp:195
+msgid "Time limit:"
+msgstr "Zeitlimit:"
+
+#: ldapconfigwidget.cpp:201
+msgid " sec"
+msgstr " s"
+
+#: ldapconfigwidget.cpp:202
+msgctxt "default ldap time limit"
+msgid "Default"
+msgstr "Voreinstellung"
+
+#: ldapconfigwidget.cpp:211
+msgid "Page size:"
+msgstr "Seitengröße:"
+
+#: ldapconfigwidget.cpp:217
+msgid "No paging"
+msgstr "Kein Paging"
+
+#: ldapconfigwidget.cpp:223
+msgctxt "Distinguished Name"
+msgid "DN:"
+msgstr "DN:"
+
+#: ldapconfigwidget.cpp:231 ldapconfigwidget.cpp:307
+msgid "Query Server"
+msgstr "Server abfragen"
+
+#: ldapconfigwidget.cpp:239
+msgid "Filter:"
+msgstr "Filter:"
+
+#: ldapconfigwidget.cpp:249
+msgid "Security"
+msgstr "Sicherheit"
+
+#: ldapconfigwidget.cpp:252
+msgctxt "@option:radio set no security"
+msgid "No"
+msgstr "Keine"
+
+#: ldapconfigwidget.cpp:255
+msgctxt "@option:radio use TLS security"
+msgid "TLS"
+msgstr "TLS"
+
+#: ldapconfigwidget.cpp:258
+msgctxt "@option:radio use SSL security"
+msgid "SSL"
+msgstr "SSL"
+
+#: ldapconfigwidget.cpp:274
+msgid "Authentication"
+msgstr "Authentifizierung"
+
+#: ldapconfigwidget.cpp:281
+msgctxt "@option:radio anonymous authentication"
+msgid "Anonymous"
+msgstr "Anonym"
+
+#: ldapconfigwidget.cpp:285
+msgctxt "@option:radio simple authentication"
+msgid "Simple"
+msgstr "Einfach"
+
+#: ldapconfigwidget.cpp:289
+msgctxt "@option:radio SASL authentication"
+msgid "SASL"
+msgstr "SASL"
+
+#: ldapconfigwidget.cpp:295
+msgid "SASL mechanism:"
+msgstr "SASL-Mechanismus:"
+
+#: ldapconfigwidget.cpp:354
+msgid "LDAP Query"
+msgstr "LDAP-Abfrage"
+
+#: ldapconfigwidget.cpp:367
+#, kde-format
+msgctxt "%1 is a url to ldap server"
+msgid "Unknown error connecting %1"
+msgstr "Unbekannter Fehler beim Verbinden mit %1"
+
+#: ldapconnection.cpp:150
+msgid "LDAP Operations error"
+msgstr "LDAP-Fehler"
+
+#: ldapconnection.cpp:155
+msgid "No LDAP Support..."
+msgstr "Keine LDAP-Unterstützung ..."
+
+#: ldapconnection.cpp:166
+msgid ""
+"SASL support is not available. Please recompile libkldap with the Cyrus-SASL "
+"(or compatible) client libraries, or complain to your distribution packagers."
+msgstr ""
+"Unterstützung für SASL ist nicht verfügbar. Bitte kompilieren Sie libkldap "
+"mit den Client-Bibliotheken von Cyrus-SASL (oder kompatiblen) oder "
+"erkundigen Sie sich beim Ersteller der installierten Pakete."
+
+#: ldapconnection.cpp:276
+msgid "An error occurred during the connection initialization phase."
+msgstr "Bei Aufbau der Verbindung ist ein Fehler aufgetreten."
+
+#: ldapconnection.cpp:283
+#, kde-format
+msgid "Cannot set protocol version to %1."
+msgstr "Die Protokollversion kann nicht auf %1 gesetzt werden."
+
+#: ldapconnection.cpp:294
+#, kde-format
+msgid "Cannot set timeout to %1 second."
+msgid_plural "Cannot set timeout to %1 seconds."
+msgstr[0] "Das Zeitlimit kann nicht auf %1 Sekunde gesetzt werden."
+msgstr[1] "Das Zeitlimit kann nicht auf %1 Sekunden gesetzt werden."
+
+#: ldapconnection.cpp:315
+msgid "TLS support not available in the LDAP client libraries."
+msgstr ""
+"In den LDAP-Bibliotheken des Clients ist keine Unterstützung für TLS "
+"vorhanden."
+
+#: ldapconnection.cpp:325
+msgid "Cannot set size limit."
+msgstr "Maximale Größe kann nicht gesetzt werden."
+
+#: ldapconnection.cpp:335
+msgid "Cannot set time limit."
+msgstr "Zeitlimit kann nicht gesetzt werden."
+
+#: ldapconnection.cpp:345
+msgid "Cannot initialize the SASL client."
+msgstr "Der SASL-Client kann nicht initialisiert werden."
+
+#: ldapconnection.cpp:424
+msgid ""
+"LDAP support not compiled in. Please recompile libkldap with the OpenLDAP "
+"(or compatible) client libraries, or complain to your distribution packagers."
+msgstr ""
+"Bei der Kompilierung wurde keine Unterstützung für LDAP vorgesehen. Bitte "
+"kompilieren Sie libkldap mit den Client-Bibliotheken von OpenLDAP (oder "
+"kompatiblen) oder erkundigen Sie sich beim Ersteller der installierten "
+"Pakete."
+
+#: ldapsearch.cpp:236
+msgid "Cannot access to server. Please reconfigure it."
+msgstr ""
+"Kein Zugriff auf den Server möglich. Bitte korrigieren Sie die Einstellungen."
+
+#: ldapstructureproxymodel.cpp:88
+msgid "Distinguished Name"
+msgstr "Distinguished Name"
+
+#~ msgid "Add Host"
+#~ msgstr "Rechner hinzufügen"
+
+#~ msgid "kcmldap"
+#~ msgstr "kcmldap"
+
+#~ msgid "LDAP Server Settings"
+#~ msgstr "LDAP-Server-Einstellungen"
+
+#~ msgid "(c) 2009 - 2010 Tobias Koenig"
+#~ msgstr "© 2009–2010 Tobias Koenig"
+
+#~ msgid "Tobias Koenig"
+#~ msgstr "Tobias Koenig"
+
+#~ msgid "Edit Host"
+#~ msgstr "Rechner bearbeiten"
+
+#~ msgid "LDAP Servers"
+#~ msgstr "LDAP-Server"
+
+#~ msgid "Check all servers that should be used:"
+#~ msgstr "Alle Rechner auswählen, die verwendet werden sollen:"
+
+#~ msgid "&Add Host..."
+#~ msgstr "Rechner &hinzufügen ..."
+
+#~ msgid "&Edit Host..."
+#~ msgstr "&Rechner bearbeiten ..."
+
+#~ msgid "&Remove Host"
+#~ msgstr "Rechner &entfernen"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Title"
+#~ msgstr "Titel "
+
+#~ msgid "Full Name"
+#~ msgstr "Vollständiger Name"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "Email"
+#~ msgstr "E-Mail-Adresse"
+
+#~ msgid "Home Number"
+#~ msgstr "Telefonnummer (privat)"
+
+#~ msgid "Work Number"
+#~ msgstr "Telefonnummer (dienstlich)"
+
+#~ msgid "Mobile Number"
+#~ msgstr "Telefonnummer (mobil)"
+
+#~ msgid "Fax Number"
+#~ msgstr "Faxnummer"
+
+#~ msgid "Pager"
+#~ msgstr "Pager"
+
+#~ msgid "Street"
+#~ msgstr "Straße"
+
+#~ msgctxt "@item LDAP search key"
+#~ msgid "State"
+#~ msgstr "Bundesland"
+
+#~ msgid "Country"
+#~ msgstr "Land"
+
+#~ msgid "City"
+#~ msgstr "Stadt"
+
+#~ msgid "Organization"
+#~ msgstr "Organisation"
+
+#~ msgid "Company"
+#~ msgstr "Firma"
+
+#~ msgid "Department"
+#~ msgstr "Abteilung"
+
+#~ msgid "Zip Code"
+#~ msgstr "Postleitzahl"
+
+#~ msgid "Postal Address"
+#~ msgstr "Postanschrift"
+
+#~ msgid "Description"
+#~ msgstr "Beschreibung"
+
+#~ msgid "User ID"
+#~ msgstr "Benutzerkennung"
+
+#~ msgctxt "Search attribute: Name of contact"
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgctxt "Search attribute: Email of the contact"
+#~ msgid "Email"
+#~ msgstr "E-Mail-Adresse"
+
+#~ msgctxt "@title:column Column containing email addresses"
+#~ msgid "Email"
+#~ msgstr "E-Mail-Adresse"
+
+#~ msgctxt ""
+#~ "@title:column Column containing the residential state of the address"
+#~ msgid "State"
+#~ msgstr "Bundesland"
+
+#~ msgctxt "@title:column Column containing title of the person"
+#~ msgid "Title"
+#~ msgstr "Titel "
+
+#~ msgid "Import Contacts from LDAP"
+#~ msgstr "Kontakte aus LDAP importieren"
+
+#~ msgid "Search for Addresses in Directory"
+#~ msgstr "Nach Adressen im Verzeichnis suchen"
+
+#~ msgid "Search for:"
+#~ msgstr "Suchen nach:"
+
+#~ msgctxt "@item:inlistbox Name of the contact"
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgctxt "@item:inlistbox email address of the contact"
+#~ msgid "Email"
+#~ msgstr "E-Mail-Adresse"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Home Number"
+#~ msgstr "Telefonnummer (privat)"
+
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Work Number"
+#~ msgstr "Telefonnummer (dienstlich)"
+
+#~ msgid "Stop"
+#~ msgstr "Anhalten"
+
+#~ msgctxt "@action:button Start searching"
+#~ msgid "&Search"
+#~ msgstr "&Suchen"
+
+#~ msgid "Recursive search"
+#~ msgstr "Rekursive Suche"
+
+#~ msgid "Contains"
+#~ msgstr "Enthält"
+
+#~ msgid "Starts With"
+#~ msgstr "Beginnt mit"
+
+#~ msgid "Select All"
+#~ msgstr "Alle auswählen"
+
+#~ msgid "Unselect All"
+#~ msgstr "Auswahl aufheben"
+
+#~ msgid "Add Selected"
+#~ msgstr "Ausgewählte hinzufügen"
+
+#~ msgid "Configure LDAP Servers..."
+#~ msgstr "LDAP-Server einrichten ..."
+
+#~ msgid "You must select an LDAP server before searching."
+#~ msgstr "Sie müssen vor der Suche einen LDAP-Server auswählen."
+
+#~ msgctxt "arguments are host name, datetime"
+#~ msgid "Imported from LDAP directory %1 on %2"
+#~ msgstr "Importiert aus LDAP-Verzeichnis %1 am %2"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Frederik Schwarzer"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "schwarzer@kde.org"
+
+#~ msgid "Cannot start TLS."
+#~ msgstr "TLS kann nicht gestartet werden."

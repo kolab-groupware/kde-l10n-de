@@ -1,0 +1,52 @@
+
+how to tell scripty about a move to git:
+
+0) make sure the translators are aware of and ready for your move.
+
+1) on gitorious, give the kde-developers group commit access to your repository (scripty's in this group).
+
+2) edit l10n-kde4/scripts/get_paths:
+
+a) add your module to the list in list_modules (eg. extragear-multimedia_amarok)
+
+b) add your module to get_path, before any *)
+example:
+    extragear-multimedia_amarok)
+        echo git-unstable/extragear-multimedia_amarok
+        ;;
+
+c) add your module to get_po_path before any *)
+example:
+	extragear-multimedia_amarok)
+		echo extragear-multimedia
+		;;
+
+d) add your module to get_vcs before any *)
+example:
+	extragear-multimedia_amarok)
+		echo git
+		;;
+
+e) add your trunk-equivalent branch to get_branch before any *)
+example:
+	extragear-multimedia_amarok)
+		echo master
+		;;
+
+f) add your git url to get_url before any *)
+example:
+	extragear-multimedia_amarok)
+		echo "git@gitorious.org:amarok/amarok.git"
+		;;
+
+3) commit changes and pray that it works ;)
+
+oh, and remember that your docbook folder must stay in svn for translation.
+
+also remember to update the stable version of scripty when the newly-moved project has a stable release in git.
+
+
+if something goes wrong on the pull, scripty will abort, which is bad. in
+order to fix that I need to redesign findfiles to work on one module at a time.
+
+

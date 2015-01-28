@@ -1,0 +1,2315 @@
+# Frank Schütte <F.Schuette@t-online.de>, 2003.
+# Burkhard Lück <lueck@hube-lueck.de>, 2007, 2009, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kppp_hayes\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:14+0000\n"
+"PO-Revision-Date: 2013-07-08 15:11+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: hayes.docbook:2
+#, no-c-format
+msgid "The Hayes Modem Command Set"
+msgstr "Der Hayes-Modem-Befehlssatz"
+
+#. Tag: para
+#: hayes.docbook:4
+#, no-c-format
+msgid ""
+"Here is a description of the Hayes Command Set. Most modems follow this "
+"command set to large extent. If you lost your modem manual or never had one "
+"in the first place, this reference might come in handy. I for instance "
+"finally found out how to turn my modems speaker off: <command>ATM0</command> "
+"-- Finally: Silence!"
+msgstr ""
+"Es folgt eine Beschreibung des Hayes-Befehlssatzes. Die meisten Modems "
+"verwenden diese Befehle zu einem großen Anteil. Diese Referenz ist nützlich, "
+"falls man seine Modem-Beschreibung verloren hat oder niemals eine hatte. Der "
+"Befehl zum Ausschalten des Lautsprechers lautet zum Beispiel <command>ATM0</"
+"command>."
+
+#. Tag: para
+#: hayes.docbook:10
+#, no-c-format
+msgid ""
+"The modem initialization string consists of a series of commands. It "
+"prepares the modem for communications, setting such features as dialing "
+"mode, waits, detection of the busy signal and many other settings. Newer "
+"modem communications programs reset the initializations string for you "
+"according to which menu options you select, which features you enable, &etc;"
+msgstr ""
+"Die Modem-Initialisierungszeichen bestehen aus einer Kette von Befehlen. Sie "
+"richten das Modem für die Kommunikation ein, legen den Wahlmodus, "
+"Wartezeiten, Erkennung des Besetztzeichens und viele andere Dinge fest. "
+"Neuere Modem-Kommunikationsprogramme stellen die Initialisierungszeichen "
+"abhängig von den gewählten Menüeinstellungen automatisch zusammen."
+
+#. Tag: para
+#: hayes.docbook:16
+#, no-c-format
+msgid ""
+"For many years Hayes modems have been the standard. As the field of modem "
+"manufactures has grown, most have adhered at least loosely to the Hayes "
+"standard. The following is a partial list of the Hayes command set. (called "
+"the <quote>AT</quote> commands). The Hayes Command Set can be divided into "
+"four groups:"
+msgstr ""
+"Hayes-Modems haben für viele Jahre den Standard bestimmt. Bei der "
+"Weiterentwicklung des Marktes haben alle Hersteller mindestens teilweise den "
+"Hayes-Standard verwendet. Es folgt eine unvollständige Liste des Hayes-"
+"Befehlssatzes. (auch <quote>AT</quote>-Befehle genannt). Der Befehlssatz "
+"kann in vier Bereiche eingeteilt werden:"
+
+#. Tag: term
+#: hayes.docbook:24
+#, no-c-format
+msgid "Basic Command Set"
+msgstr "Grundlegender Befehlssatz"
+
+#. Tag: para
+#: hayes.docbook:25
+#, no-c-format
+msgid ""
+"A capital character followed by a digit. For example, <command>M1</command>."
+msgstr ""
+"Ein großer Buchstabe gefolgt von einer Ziffer. Zum Beispiel <command>M1</"
+"command>."
+
+#. Tag: term
+#: hayes.docbook:29
+#, no-c-format
+msgid "Extended Command Set"
+msgstr "Erweiterter Befehlssatz"
+
+#. Tag: para
+#: hayes.docbook:30
+#, no-c-format
+msgid ""
+"An <quote>&amp;</quote> (ampersand) and a capital character followed by a "
+"digit. This is an extension of the basic command set. For example, "
+"<command>&amp;M1</command>. Note that <command>M1</command> is different "
+"from <command>&amp;M1</command>."
+msgstr ""
+"Ein <quote>&amp;</quote> (Ampersand) und ein Großbuchstabe gefolgt von einer "
+"Ziffer. Es handelt sich um eine Erweiterung des grundlegenden Befehlssatzes. "
+"Zum Beispiel: <command>&amp;M1</command>. Beachten Sie, dass <command>M1</"
+"command> sich in der Bedeutung von <command>&amp;M1</command> unterscheidet."
+
+#. Tag: term
+#: hayes.docbook:36
+#, no-c-format
+msgid "Proprietary Command Set"
+msgstr "Herstellerabhängiger Befehlssatz"
+
+#. Tag: para
+#: hayes.docbook:37
+#, no-c-format
+msgid ""
+"Usually started by either a backslash (<quote>\\</quote>), or a percent sign "
+"(<quote>&percnt;</quote>), these commands vary widely among modem "
+"manufacturers. For that reason, only a few of these commands are listed "
+"below."
+msgstr ""
+"Diese Befehle beginnen entweder mit einem umgekehrten Schrägstrich(<quote>"
+"\\</quote>) oder einem Prozentzeichen (<quote>&percnt;</quote>). Sie "
+"variieren sehr stark von Hersteller zu Hersteller. Aus diesem Grund werden "
+"hier nur wenige dieser Befehle aufgelistet."
+
+#. Tag: term
+#: hayes.docbook:43
+#, no-c-format
+msgid "Register Commands"
+msgstr "Registerbefehle"
+
+#. Tag: para
+#: hayes.docbook:44
+#, no-c-format
+msgid ""
+"<command>S<replaceable>r</replaceable>=<replaceable>n</replaceable></"
+"command> where <replaceable>r</replaceable> is the number of the register to "
+"be changed, and <replaceable>n</replaceable> is the new value that is "
+"assigned."
+msgstr ""
+"<command>S<replaceable>r</replaceable>=<replaceable>n</replaceable></"
+"command> wobei <replaceable>r</replaceable> die Nummer des zu ändernden "
+"Registers und <replaceable>n</replaceable> der neue Wert dieses Registers "
+"ist."
+
+#. Tag: para
+#: hayes.docbook:49
+#, no-c-format
+msgid ""
+"A <quote>register</quote> is computerese for a specific physical location in "
+"memory. Modems have small amounts of memory onboard. This fourth set of "
+"commands is used to enter values in a particular register (memory location). "
+"The register will be storing a particular <quote>variable</quote> (alpha-"
+"numeric information) which is utilized by the modem and communication "
+"software. For example, <command>S7=60</command> instructs your computer to "
+"<quote>Set register #7 to the value 60</quote>."
+msgstr ""
+"Ein <quote>Register </quote> ist eine Bezeichnung für eine bestimmte Stelle "
+"im Speicher. Modems haben einen kleinen Speicher integriert. Diese vierte "
+"Gruppe von Befehlen wird verwendet, um Werte in einem bestimmten Register "
+"(Speicherplatz) zu verändern. Jedes Register speichert eine bestimmte "
+"<quote>Variabel</quote> (alphanumerische Information), die vom Modem und dem "
+"Kommunikationsprogramm verwendet wird. Zum Beispiel setzt der Befehl "
+"<command>S7=60</command> das <quote>Register #7 auf den Wert 60</quote>."
+
+#. Tag: para
+#: hayes.docbook:59
+#, no-c-format
+msgid ""
+"Although most commands are defined by a letter-number combination "
+"(<command>L0</command>, <command>L1</command> &etc;), the use of a zero is "
+"optional. In this example, <command>L0</command> is the same as a plain "
+"<command>L</command>. Keep this in mind when reading the table below!"
+msgstr ""
+"Obwohl die meisten Befehle aus einer Buchstaben-Ziffern-Kombination "
+"(<command>L0</command>, <command>L1</command> &etc;) bestehen, ist die "
+"Verwendung der Null optional. Im Beispiel können Sie statt <command>L0</"
+"command> auch einfach <command>L</command> verwenden. Das ist wichtig für "
+"die folgende Tabelle."
+
+#. Tag: para
+#: hayes.docbook:65
+#, no-c-format
+msgid ""
+"Here are some of the most important characters that may appear in the modem "
+"initialization string. These characters normally should not be changed."
+msgstr ""
+"Hier werden einige der wichtigsten Buchstaben einer Initialisierungs-"
+"Zeichenkette aufgelistet. Die Buchstaben sollten Sie normalerweise nicht "
+"verändern."
+
+#. Tag: para
+#: hayes.docbook:72
+#, no-c-format
+msgid ""
+"Tells the modem that modem commands follow. This must begin each line of "
+"commands."
+msgstr ""
+"Informiert das Modem, dass ein Modem-Befehl folgt. Diese Zeichen müssen am "
+"Anfang jeder Befehlszeile stehen."
+
+#. Tag: para
+#: hayes.docbook:77
+#, no-c-format
+msgid "Resets the modem to its default state"
+msgstr "Setzt das Modem in den Standardzustand."
+
+#. Tag: term
+#: hayes.docbook:80
+#, no-c-format
+msgid "<command>,</command> (a comma)"
+msgstr "<command>,</command> (ein Komma)"
+
+#. Tag: para
+#: hayes.docbook:81
+#, no-c-format
+msgid ""
+"makes your software pause for a second. You can use more than one <command>,"
+"</command> in a row. For example, <command>,,,,</command> tells the software "
+"to pause four seconds. (The duration of the pause is governed by the setting "
+"of register <varname>S8</varname>.)"
+msgstr ""
+"Hält das Programm für eine Sekunde an. Es können auch mehrere Kommata "
+"hintereinander verwendet werden. Zum Beispiel <command>,,,,</command> sorgt "
+"für eine Pause von vier Sekunden. (Die Dauer der Pause ist abhängig vom "
+"Inhalt des Registers <varname>S8</varname>)."
+
+#. Tag: para
+#: hayes.docbook:88
+#, no-c-format
+msgid ""
+"Sends the terminating Carriage Return character to the modem. This is a "
+"control code that most communication software translates as <quote>Carriage "
+"Return</quote>"
+msgstr ""
+"Sendet einen abschließenden Zeilenende-Befehl an das Modem. Diese "
+"Kontrollsequenz wird von den meisten Kommunikationsprogrammen auch als "
+"<quote>Zeilenvorschub</quote> interpretiert."
+
+#. Tag: title
+#: hayes.docbook:94
+#, no-c-format
+msgid "The Basic Hayes Command Set"
+msgstr "Der grundlegende Hayes-Modem-Befehlssatz"
+
+#. Tag: para
+#: hayes.docbook:96
+#, no-c-format
+msgid "In alphabetical order:"
+msgstr "In alphabetischer Reihenfolge:"
+
+#. Tag: title
+#: hayes.docbook:99
+#, no-c-format
+msgid "Basic Hayes Command Set"
+msgstr "Der grundlegende Hayes-Modem-Befehlssatz"
+
+#. Tag: entry
+#: hayes.docbook:103 hayes.docbook:344 hayes.docbook:584
+#, no-c-format
+msgid "Command"
+msgstr "Befehl"
+
+#. Tag: entry
+#: hayes.docbook:104 hayes.docbook:345 hayes.docbook:585
+#, no-c-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. Tag: entry
+#: hayes.docbook:105 hayes.docbook:346 hayes.docbook:586
+#, no-c-format
+msgid "Comments"
+msgstr "Kommentar"
+
+#. Tag: entry
+#: hayes.docbook:110
+#, no-c-format
+msgid "<command>A0</command> or <command>A</command>"
+msgstr "<command>A0</command> oder <command>A</command>"
+
+#. Tag: entry
+#: hayes.docbook:111
+#, no-c-format
+msgid "Answer incoming call"
+msgstr "Eingehenden Anruf beantworten"
+
+#. Tag: entry
+#: hayes.docbook:116
+#, no-c-format
+msgid "Repeat last command"
+msgstr "Letzten Befehl wiederholen"
+
+#. Tag: entry
+#: hayes.docbook:117
+#, no-c-format
+msgid "Don't preface with <command>AT</command>. Enter usually aborts."
+msgstr ""
+"Es wird kein <command>AT</command> vorangestellt. Das Eingabezeichen bricht "
+"normalerweise ab."
+
+#. Tag: entry
+#: hayes.docbook:121
+#, no-c-format
+msgid "<command>B0</command> or <command>B</command>"
+msgstr "<command>B0</command> oder <command>B</command>"
+
+#. Tag: entry
+#: hayes.docbook:122 hayes.docbook:127 hayes.docbook:132
+#, no-c-format
+msgid "Call negotiation"
+msgstr "Anruf-Verhandlung"
+
+#. Tag: entry
+#: hayes.docbook:123
+#, no-c-format
+msgid "V32 Mode/CCITT Answer Seq."
+msgstr "V32 Mode/CCITT Answer Seq."
+
+#. Tag: entry
+#: hayes.docbook:128
+#, no-c-format
+msgid "Bell 212A Answer Seq."
+msgstr "Bell 212A Answer Seq."
+
+#. Tag: entry
+#: hayes.docbook:133
+#, no-c-format
+msgid "Verbose/Quiet On Answer"
+msgstr "Wortreich/still beantworten"
+
+#. Tag: entry
+#: hayes.docbook:137
+#, no-c-format
+msgid "Dial"
+msgstr "Wählen"
+
+#. Tag: para
+#: hayes.docbook:138
+#, no-c-format
+msgid "Dial the following number and then handshake in originate mode."
+msgstr ""
+"Die folgende Nummer wählen und die Verbindung im Originate-Modus herstellen."
+
+#. Tag: para
+#: hayes.docbook:142
+#, no-c-format
+msgid "Pulse Dial"
+msgstr "Pulswahl"
+
+#. Tag: para
+#: hayes.docbook:146
+#, no-c-format
+msgid "Touch Tone Dial"
+msgstr "Tonwahl"
+
+#. Tag: para
+#: hayes.docbook:150
+#, no-c-format
+msgid "Wait for the second dial tone"
+msgstr "Auf einen zweiten Wahlton warten"
+
+#. Tag: para
+#: hayes.docbook:154
+#, no-c-format
+msgid ""
+"Pause for the time specified in register <varname>S8</varname> (usually 2 "
+"seconds)"
+msgstr ""
+"Warte die im Register <varname>S8</varname> angegebene Zeitspanne "
+"(normalerweise 2 Sekunden)"
+
+#. Tag: para
+#: hayes.docbook:159
+#, no-c-format
+msgid "Remain in command mode after dialing."
+msgstr "Nach der Anwahl im Befehlsmodus bleiben."
+
+#. Tag: para
+#: hayes.docbook:163
+#, no-c-format
+msgid ""
+"Flash switch-hook (Hang up for a half second, as in transferring a call.)"
+msgstr ""
+"Für eine halbe Sekunde auflegen, wie bei der Weiterverbindung eines Anrufs."
+
+#. Tag: para
+#: hayes.docbook:168
+#, no-c-format
+msgid "Dial last number"
+msgstr "Letzte Nummer noch einmal wählen"
+
+#. Tag: entry
+#: hayes.docbook:173
+#, no-c-format
+msgid "<command>E0</command> or <command>E</command>"
+msgstr "<command>E0</command> oder <command>E</command>"
+
+#. Tag: entry
+#: hayes.docbook:174
+#, no-c-format
+msgid "No Echo"
+msgstr "Kein Echo"
+
+#. Tag: entry
+#: hayes.docbook:175
+#, no-c-format
+msgid "Will not echo commands to the computer"
+msgstr "Befehle werden nicht auf dem Computer angezeigt."
+
+#. Tag: entry
+#: hayes.docbook:179
+#, no-c-format
+msgid "Echo"
+msgstr "Echo"
+
+#. Tag: entry
+#: hayes.docbook:180
+#, no-c-format
+msgid "Will echo commands to the computer (so one can see what one types)"
+msgstr ""
+"Zeigt die Befehle auch auf dem Computer an (so kann man sehen, was man tippt)"
+
+#. Tag: entry
+#: hayes.docbook:185
+#, no-c-format
+msgid "Hook Status"
+msgstr "Verbindungsstatus"
+
+#. Tag: entry
+#: hayes.docbook:186
+#, no-c-format
+msgid "On hook - Hang up"
+msgstr "Bei Verbindung - Auflegen"
+
+#. Tag: entry
+#: hayes.docbook:190
+#, no-c-format
+msgid "Hook status"
+msgstr "Verbindungsstatus"
+
+#. Tag: entry
+#: hayes.docbook:191
+#, no-c-format
+msgid "Off hook - phone picked up"
+msgstr "Ohne Verbindung - Telefon wurde abgehoben"
+
+#. Tag: entry
+#: hayes.docbook:194
+#, no-c-format
+msgid "<command>I0</command> or <command>I</command>"
+msgstr "<command>I0</command> oder <command>I</command>"
+
+#. Tag: entry
+#: hayes.docbook:195
+#, no-c-format
+msgid "Inquiry, Information, or Interrogation"
+msgstr "Anfrage, Information oder Befragung"
+
+#. Tag: entry
+#: hayes.docbook:196
+#, no-c-format
+msgid ""
+"This command is very model specific. <command>I0</command> usually returns a "
+"number or code, while higher numbers often provide much more useful "
+"information."
+msgstr ""
+"Dieser Befehl ist sehr modellabhängig. <command>I0</command> wird "
+"üblicherweise mit einer Nummer oder einer Zeichenkette beantwortet, während "
+"höhere Ziffern häufig viele wertvolle Informationen liefern."
+
+#. Tag: entry
+#: hayes.docbook:201
+#, no-c-format
+msgid "<command>L0</command> or <command>L</command>"
+msgstr "<command>L0</command> oder <command>L</command>"
+
+#. Tag: entry
+#: hayes.docbook:202
+#, no-c-format
+msgid ""
+"Speaker Loudness. Modems with volume control knobs will not have these "
+"options."
+msgstr ""
+"Lautstärke. Modems mit Lautstärkeregler verfügen nicht über diese Option."
+
+#. Tag: entry
+#: hayes.docbook:204
+#, no-c-format
+msgid "Off or low volume"
+msgstr "Aus oder geringe Lautstärke"
+
+#. Tag: entry
+#: hayes.docbook:209
+#, no-c-format
+msgid "Low Volume"
+msgstr "Geringe Lautstärke"
+
+#. Tag: entry
+#: hayes.docbook:214
+#, no-c-format
+msgid "Medium Volume"
+msgstr "Mittlere Lautstärke"
+
+#. Tag: entry
+#: hayes.docbook:219
+#, no-c-format
+msgid "Loud or High Volume"
+msgstr "Laut oder große Lautstärke"
+
+#. Tag: entry
+#: hayes.docbook:222
+#, no-c-format
+msgid "<command>M0</command> or <command>M</command>"
+msgstr "<command>M0</command> oder <command>M</command>"
+
+#. Tag: entry
+#: hayes.docbook:223
+#, no-c-format
+msgid "Speaker off"
+msgstr "Lautsprecher aus"
+
+#. Tag: entry
+#: hayes.docbook:224
+#, no-c-format
+msgid "<command>M3</command> is also common, but different on many brands"
+msgstr ""
+"Der Befehl <command>M3</command> wird häufig verwendet, aber leider in "
+"unterschiedlichen Bedeutungen"
+
+#. Tag: entry
+#: hayes.docbook:230
+#, no-c-format
+msgid ""
+"Speaker on until remote carrier detected (&ie; until the other modem is "
+"heard)"
+msgstr ""
+"Lautsprecher an bis zum Verbindungsaufbau (carrier detected, also bis das "
+"andere Modem antwortet)"
+
+#. Tag: entry
+#: hayes.docbook:236
+#, no-c-format
+msgid "Speaker is always on (data sounds are heard after CONNECT)"
+msgstr ""
+"Lautsprecher immer an (Datenübertragungen können nach dem Verbindungsaufbau "
+"gehört werden)"
+
+#. Tag: entry
+#: hayes.docbook:239
+#, no-c-format
+msgid "<command>N0</command> or <command>N</command>"
+msgstr "<command>N0</command> oder <command>N</command>"
+
+#. Tag: entry
+#: hayes.docbook:240
+#, no-c-format
+msgid "Handshake Speed"
+msgstr "Verbindungsgeschwindigkeit"
+
+#. Tag: entry
+#: hayes.docbook:241
+#, no-c-format
+msgid ""
+"Handshake only at speed in <link linkend=\"hayes-s37\"><varname>S37</"
+"varname></link>"
+msgstr ""
+"Verbindung nur mit der Geschwindigkeit <link linkend=\"hayes-"
+"s37\"><varname>S37</varname></link>"
+
+#. Tag: entry
+#: hayes.docbook:246
+#, no-c-format
+msgid ""
+"Handshake at highest speed larger than <link linkend=\"hayes-"
+"s37\"><varname>S37</varname></link>"
+msgstr ""
+"Verbindung mit der größtmöglichen Geschwindigkeit größer als <link linkend="
+"\"hayes-s37\"><varname>S37</varname></link>"
+
+#. Tag: entry
+#: hayes.docbook:249
+#, no-c-format
+msgid "<command>O0</command> or <command>O</command>"
+msgstr "<command>O0</command> oder <command>O</command>"
+
+#. Tag: entry
+#: hayes.docbook:250
+#, no-c-format
+msgid "Return Online"
+msgstr "Wechsel in den Online-Zustand"
+
+#. Tag: entry
+#: hayes.docbook:251
+#, no-c-format
+msgid ""
+"See also <link linkend=\"hayes-basic-x1\"><command>X1</command></link> as "
+"dial tone detection may be active."
+msgstr ""
+"Sie auch <link linkend=\"hayes-basic-x1\"><command>X1</command></link>, da "
+"die Wahltonerkennung aktiv sein kann."
+
+#. Tag: entry
+#: hayes.docbook:257
+#, no-c-format
+msgid "Return Online after an equalizer retrain sequence"
+msgstr "Neusynchronisation und Wechsel in den Online-Zustand"
+
+#. Tag: entry
+#: hayes.docbook:260
+#, no-c-format
+msgid "<command>Q0</command> or <command>Q1</command>"
+msgstr "<command>Q0</command> oder <command>Q1</command>"
+
+#. Tag: entry
+#: hayes.docbook:261 hayes.docbook:267
+#, no-c-format
+msgid "Quiet Mode"
+msgstr "Stiller Modus"
+
+#. Tag: entry
+#: hayes.docbook:262
+#, no-c-format
+msgid ""
+"Off - Displays result codes, user sees command responses (&eg; "
+"<computeroutput>OK</computeroutput>)"
+msgstr ""
+"Aus - Zeigt Resultate, der Benutzer sieht die Befehlsantworten (also &eg; "
+"<computeroutput>OK</computeroutput>) "
+
+#. Tag: entry
+#: hayes.docbook:268
+#, no-c-format
+msgid "On - Result codes are suppressed, user does not see responses."
+msgstr "An - Resultate werden unterdrückt, der Benutzer sieht keine Antworten."
+
+#. Tag: entry
+#: hayes.docbook:274
+#, no-c-format
+msgid "Query the contents of S-register <replaceable>n</replaceable>"
+msgstr "Abfrage des Inhalts von S-Register <replaceable>n</replaceable>"
+
+#. Tag: entry
+#: hayes.docbook:279
+#, no-c-format
+msgid "Store"
+msgstr "Speichern"
+
+#. Tag: entry
+#: hayes.docbook:280
+#, no-c-format
+msgid ""
+"Store the value of <replaceable>r</replaceable> in S-register "
+"<replaceable>n</replaceable>"
+msgstr ""
+"Speichert den Wert <replaceable>r</replaceable> im S-Register "
+"<replaceable>n</replaceable>"
+
+#. Tag: entry
+#: hayes.docbook:284
+#, no-c-format
+msgid "<command>V0</command> or <command>V</command>"
+msgstr "<command>V0</command> oder <command>V</command>"
+
+#. Tag: entry
+#: hayes.docbook:285
+#, no-c-format
+msgid "Verbose"
+msgstr "Wortreich"
+
+#. Tag: entry
+#: hayes.docbook:286
+#, no-c-format
+msgid "Numeric result codes"
+msgstr "nummerische Resultate"
+
+#. Tag: entry
+#: hayes.docbook:291
+#, no-c-format
+msgid ""
+"English result codes (&eg; <computeroutput>CONNECT</computeroutput>, "
+"<computeroutput>BUSY</computeroutput>, <computeroutput>NO CARRIER</"
+"computeroutput> &etc;)"
+msgstr ""
+"Englische Textresultate (&eg; <computeroutput>CONNECT</computeroutput>, "
+"<computeroutput>BUSY</computeroutput>, <computeroutput>NO CARRIER</"
+"computeroutput> &etc;)"
+
+#. Tag: entry
+#: hayes.docbook:297
+#, no-c-format
+msgid "<command>X0</command> or <command>X</command>"
+msgstr "<command>X0</command> oder <command>X</command>"
+
+#. Tag: entry
+#: hayes.docbook:298
+#, no-c-format
+msgid "Smartmodem"
+msgstr "Smartmodem"
+
+#. Tag: entry
+#: hayes.docbook:299
+#, no-c-format
+msgid "Hayes Smartmodem 300 compatible result codes"
+msgstr "Hayes Smartmodem 300 kompatible Resultate"
+
+#. Tag: entry
+#: hayes.docbook:304
+#, no-c-format
+msgid ""
+"Usually adds connection speed to basic result codes (&eg; "
+"<computeroutput>CONNECT 1200</computeroutput>)"
+msgstr ""
+"Verbindungsgeschwindigkeit wird zusätzliche angezeigt (&eg; "
+"<computeroutput>CONNECT 1200</computeroutput>)"
+
+#. Tag: entry
+#: hayes.docbook:310
+#, no-c-format
+msgid ""
+"Usually adds dial tone detection (preventing blind dial, and sometimes "
+"preventing <command>AT0</command>)"
+msgstr ""
+"Aktiviert die Wahltonerkennung (verhindert blindes Anwählen und manchmal "
+"<command>AT0</command>)"
+
+#. Tag: entry
+#: hayes.docbook:316
+#, no-c-format
+msgid "Usually adds busy signal detection"
+msgstr "Aktiviert die Besetztzeichenerkennung"
+
+#. Tag: entry
+#: hayes.docbook:321
+#, no-c-format
+msgid "Usually adds both busy signal and dial tone detection"
+msgstr "Aktiviert sowohl Wahlton- als auch Besetztzeichenerkennung"
+
+#. Tag: entry
+#: hayes.docbook:324
+#, no-c-format
+msgid "<command>Z0</command> or <command>Z</command>"
+msgstr "<command>Z0</command> oder <command>Z</command>"
+
+#. Tag: entry
+#: hayes.docbook:325
+#, no-c-format
+msgid "Reset"
+msgstr "Reset"
+
+#. Tag: entry
+#: hayes.docbook:326
+#, no-c-format
+msgid ""
+"Reset modem to stored configuration. Use <command>Z0</command>, <command>Z1</"
+"command> &etc; for multiple profiles. This is the same as <command>&amp;F</"
+"command> for factory default on modems without <acronym>NVRAM</acronym> (non-"
+"volatile memory)"
+msgstr ""
+"Setzt das Modem auf die gespeicherte Konfiguration zurück. Für "
+"unterschiedliche Einstellungen muss man <command>Z0</command>, <command>Z1</"
+"command> &etc; verwenden. Für Modems ohne <acronym>NVRAM</acronym> (non "
+"volatile memory) ist das gleichbedeutend mit <command>&amp;F</command> für "
+"die Fabrikeinstellungen."
+
+#. Tag: title
+#: hayes.docbook:337 hayes.docbook:340
+#, no-c-format
+msgid "The Extended Hayes Command Set"
+msgstr "Der Erweiterte Hayes-Modem-Befehlssatz"
+
+#. Tag: subtitle
+#: hayes.docbook:337
+#, no-c-format
+msgid "Ampersand Commands"
+msgstr "Ampersand-Befehle"
+
+#. Tag: entry
+#: hayes.docbook:351
+#, no-c-format
+msgid "<command>&amp;B0</command> or <command>&amp;B</command>"
+msgstr "<command>&amp;B0</command> oder <command>&amp;B</command>"
+
+#. Tag: entry
+#: hayes.docbook:352 hayes.docbook:357 hayes.docbook:362
+#, no-c-format
+msgid "Retrain Parameters"
+msgstr "Verzögerungsparameter"
+
+#. Tag: entry
+#: hayes.docbook:353
+#, no-c-format
+msgid "Disable auto retrain function"
+msgstr "Automatische Verzögerung deaktivieren"
+
+#. Tag: entry
+#: hayes.docbook:358
+#, no-c-format
+msgid "Enable auto retrain function"
+msgstr "Automatische Verzögerung aktivieren"
+
+#. Tag: entry
+#: hayes.docbook:363
+#, no-c-format
+msgid ""
+"Enable auto retrain, but disconnect if no line improvement over the period "
+"dictated by <link linkend=\"hayes-s7\"><varname>S7</varname></link>"
+msgstr ""
+"Automatische Verzögerung wird aktiviert, aber falls innerhalb der "
+"Verzögerungszeit in <link linkend=\"hayes-s7\"><varname>S7</varname></link> "
+"keine Verbesserung erfolgt, wird die Verbindung beendet"
+
+#. Tag: entry
+#: hayes.docbook:368
+#, no-c-format
+msgid "<command>&amp;C0</command> or <command>&amp;C1</command>"
+msgstr "<command>&amp;C0</command> oder <command>&amp;C1</command>"
+
+#. Tag: entry
+#: hayes.docbook:369 hayes.docbook:374
+#, no-c-format
+msgid "Carrier detect"
+msgstr "Antwort erkennen (Carrier detect)"
+
+#. Tag: entry
+#: hayes.docbook:370
+#, no-c-format
+msgid "Signal always on"
+msgstr "Signal ist immer an"
+
+#. Tag: entry
+#: hayes.docbook:375
+#, no-c-format
+msgid "Indicates remote carrier (usual preferred default)"
+msgstr "Zeigt die entfernte Antwort an (normalerweise der Standard)"
+
+#. Tag: entry
+#: hayes.docbook:378
+#, no-c-format
+msgid "<command>&amp;D0</command> or <command>&amp;D</command>"
+msgstr "<command>&amp;D0</command> oder <command>&amp;D</command>"
+
+#. Tag: entry
+#: hayes.docbook:379 hayes.docbook:385 hayes.docbook:391 hayes.docbook:397
+#, no-c-format
+msgid "Data Terminal Ready (<acronym>DTR</acronym>)"
+msgstr "Data Terminal Ready (<acronym>DTR</acronym>)"
+
+#. Tag: entry
+#: hayes.docbook:380
+#, no-c-format
+msgid ""
+"Signal ignored (This is modem specific, you must see your manual for "
+"information on this one!)"
+msgstr ""
+"Signal ignoriert (Das ist modemspezifisch, man muss im Handbuch für "
+"Informationen zu diesem Befehl nachlesen)"
+
+#. Tag: entry
+#: hayes.docbook:386
+#, no-c-format
+msgid ""
+"If <acronym>DTR</acronym> goes from On to Off the modem goes into command "
+"mode (Some modems only)"
+msgstr ""
+"Wenn das Signal <acronym>DTR</acronym> von An zu Aus wechselt, wechselt das "
+"Modem in den Befehlsmodus (nur einige Modems)"
+
+#. Tag: entry
+#: hayes.docbook:392
+#, no-c-format
+msgid ""
+"Some modems hang up on <acronym>DTR</acronym> On to Off transition (This is "
+"the usual preferred default)"
+msgstr ""
+"Einige Modems beenden die Verbindung beim Wechsel von <acronym>DTR</acronym> "
+"von An zu Aus (das ist das übliche Standardverhalten)"
+
+#. Tag: entry
+#: hayes.docbook:398
+#, no-c-format
+msgid ""
+"Hang up, reset the modem, and return to command mode upon <acronym>DTR</"
+"acronym>"
+msgstr ""
+"Bei <acronym>DTR</acronym> Verbindung beenden, Modem zurücksetzen und in den "
+"Befehlsmodus wechseln."
+
+#. Tag: entry
+#: hayes.docbook:402
+#, no-c-format
+msgid "<command>&amp;F0</command> or <command>&amp;F</command>"
+msgstr "<command>&amp;F0</command> oder <command>&amp;F</command>"
+
+#. Tag: entry
+#: hayes.docbook:403
+#, no-c-format
+msgid "Factory defaults"
+msgstr "Fabrikeinstellungen laden"
+
+#. Tag: para
+#: hayes.docbook:404
+#, no-c-format
+msgid "Generic Hayes-compatible defaults."
+msgstr "Generische Hayes-kompatible Standardeinstellungen."
+
+#. Tag: para
+#: hayes.docbook:404
+#, no-c-format
+msgid ""
+"This is usually a good thing to use in your init string, since the "
+"<command>&amp;F1</command>-<command>&amp;F3</command> settings can vary "
+"among modems, and they may actually be the cause of connection problems. "
+"(Since you never know exactly what Brand X's <command>&amp;F2</command> "
+"really changes.)"
+msgstr ""
+"Dieser Befehl sollte in Initialisierungskette stehen, da die Befehle "
+"<command>&amp;F1</command>-<command>&amp;F3</command> von Modem zu Modem "
+"variieren und die Ursache für Verbindungsprobleme sein können. (Da man "
+"niemals genau weiß, was das Modem der Marke X beim <command>&amp;F2</"
+"command>-Befehl genau ändert.)"
+
+#. Tag: para
+#: hayes.docbook:409
+#, no-c-format
+msgid ""
+"On the other hand, it pays to try out the other options below; many people's "
+"problems can be solved by replacing a complicated init string with a simple "
+"<command>&amp;F2</command> or the like. However, if you're building an init "
+"string, it's best to start with a simple <command>&amp;F</command>, and not "
+"use the <quote>customized</quote> form of defaults."
+msgstr ""
+"Auf der anderen Seite lohnt das Ausprobieren alternativer Werte, da einige "
+"Probleme statt mit einer komplizierten Init-Kette mit einem simplen "
+"<command>&amp;F2</command> gelöst werden können. Falls man mit dem Aufbau "
+"einer Init-Kette beginnt, sollte man mit einem <command>&amp;F</command> und "
+"nicht mit der <quote>modemspezifischen</quote> Variante anfangen."
+
+#. Tag: entry
+#: hayes.docbook:419 hayes.docbook:425 hayes.docbook:430
+#, no-c-format
+msgid "Factory Defaults"
+msgstr "Fabrikeinstellungen"
+
+#. Tag: entry
+#: hayes.docbook:420
+#, no-c-format
+msgid ""
+"Factory Defaults tailored to an IBM <acronym>PC</acronym> compatible user"
+msgstr ""
+"Fabrikeinstellungen für einen IBM-<acronym>PC</acronym>-kompatiblen Computer"
+
+#. Tag: entry
+#: hayes.docbook:426
+#, no-c-format
+msgid "Factory defaults for a Mac w/software handshaking"
+msgstr "Fabrikeinstellungen für einen Mac mit Software-Handshaking"
+
+#. Tag: entry
+#: hayes.docbook:431
+#, no-c-format
+msgid "Factory defaults for a Mac w/hardware handshaking"
+msgstr "Fabrikeinstellungen für einen Mac mit Hardware-Handshaking"
+
+#. Tag: entry
+#: hayes.docbook:434
+#, no-c-format
+msgid "<command>&amp;G0</command> or <command>&amp;G</command>"
+msgstr "<command>&amp;G0</command> oder <command>&amp;G</command>"
+
+#. Tag: entry
+#: hayes.docbook:435
+#, no-c-format
+msgid "Guard tones"
+msgstr "Wachton"
+
+#. Tag: entry
+#: hayes.docbook:436
+#, no-c-format
+msgid "Disable guard tones"
+msgstr "Wachtöne deaktivieren"
+
+#. Tag: entry
+#: hayes.docbook:439
+#, no-c-format
+msgid "<command>&amp;K0</command> or <command>&amp;K</command>"
+msgstr "<command>&amp;K0</command> oder <command>&amp;K</command>"
+
+#. Tag: entry
+#: hayes.docbook:440 hayes.docbook:445 hayes.docbook:450 hayes.docbook:455
+#: hayes.docbook:460
+#, no-c-format
+msgid "Local flow control"
+msgstr "Lokale Flusskontrolle"
+
+#. Tag: entry
+#: hayes.docbook:441
+#, no-c-format
+msgid "Disable local flow control"
+msgstr "Lokale Flusskontrolle deaktivieren"
+
+#. Tag: entry
+#: hayes.docbook:446 hayes.docbook:456
+#, no-c-format
+msgid "Enable RTS/CTS hardware local flow control"
+msgstr "Lokale RTS/CTS-Hardware-Flusskontrolle aktivieren"
+
+#. Tag: entry
+#: hayes.docbook:451 hayes.docbook:461
+#, no-c-format
+msgid "Enable XON/XOFF software local flow control"
+msgstr "Lokale XON/XOFF-Software-Flusskontrolle aktivieren"
+
+#. Tag: entry
+#: hayes.docbook:464
+#, no-c-format
+msgid "<command>&amp;L0</command> or <command>&amp;L</command>"
+msgstr "<command>&amp;L0</command> oder <command>&amp;L</command>"
+
+#. Tag: entry
+#: hayes.docbook:465
+#, no-c-format
+msgid "Dial mode"
+msgstr "Wahlmodus"
+
+#. Tag: entry
+#: hayes.docbook:466
+#, no-c-format
+msgid "Select dial-up mode"
+msgstr "Wahlmodus festlegen"
+
+#. Tag: entry
+#: hayes.docbook:469
+#, no-c-format
+msgid "<command>&amp;M0</command> or <command>&amp;M</command>"
+msgstr "<command>&amp;M0</command> oder <command>&amp;M</command>"
+
+#. Tag: entry
+#: hayes.docbook:470 hayes.docbook:486 hayes.docbook:492 hayes.docbook:498
+#: hayes.docbook:504 hayes.docbook:510
+#, no-c-format
+msgid "Error control mode"
+msgstr "Fehlerkontrollmodus"
+
+#. Tag: entry
+#: hayes.docbook:471
+#, no-c-format
+msgid ""
+"Select asynchronous non-<acronym>EC</acronym> mode (the same as "
+"<command>&amp;Q0</command>)"
+msgstr ""
+"Hier kann man asynchronen nicht-<acronym>EC</acronym>-Modus wählen (das "
+"gleiche wie <command>&amp;Q0</command>)"
+
+#. Tag: entry
+#: hayes.docbook:475
+#, no-c-format
+msgid "<command>&amp;P0</command> or <command>&amp;P</command>"
+msgstr "<command>&amp;P0</command> oder <command>&amp;P</command>"
+
+#. Tag: entry
+#: hayes.docbook:476 hayes.docbook:481
+#, no-c-format
+msgid "Pulse dialing ratio"
+msgstr "Pulswahlverhältnis"
+
+#. Tag: entry
+#: hayes.docbook:477
+#, no-c-format
+msgid "U.S./Canada pulse dialing 39% make / 61% break ratio"
+msgstr ""
+"In den USA und Kanada wird bei Pulswahl ein Verhältnis von 39&nbsp;% Wahl "
+"und 61&nbsp;% Abbruch verwendet."
+
+#. Tag: entry
+#: hayes.docbook:482
+#, no-c-format
+msgid "U.K./Hong Kong pulse dialing 33% make / 67% break ratio"
+msgstr ""
+"In Großbritannien und Hongkong wird bei Pulswahl ein Verhältnis von 33&nbsp;"
+"% Wahl und 67&nbsp;% Abbruch verwendet"
+
+#. Tag: entry
+#: hayes.docbook:485
+#, no-c-format
+msgid "<command>&amp;Q0</command> or <command>&amp;Q</command>"
+msgstr "<command>&amp;Q0</command> oder <command>&amp;Q</command>"
+
+#. Tag: entry
+#: hayes.docbook:487
+#, no-c-format
+msgid ""
+"Asynchronous non-<acronym>EC</acronym> more. No data buffering. "
+"<acronym>ASB</acronym> disabled."
+msgstr ""
+"Asynchroner nicht-<acronym>EC</acronym>-Modus. Keine Datenpufferung. "
+"<acronym>ASB</acronym> deaktiviert."
+
+#. Tag: entry
+#: hayes.docbook:493
+#, no-c-format
+msgid "Select V.42 <acronym>EC</acronym> operation (requires flow control)"
+msgstr "Wählt V.42 <acronym>EC</acronym>-Operation (erfordert Flusskontrolle)"
+
+#. Tag: entry
+#: hayes.docbook:499
+#, no-c-format
+msgid "Asynchronous mode with <acronym>ASB</acronym> (requires flow control)"
+msgstr ""
+"Asynchroner Modus mit <acronym>ASB</acronym> (erfordert Flusskontrolle)"
+
+#. Tag: entry
+#: hayes.docbook:505
+#, no-c-format
+msgid ""
+"Select alternate <acronym>EC</acronym> protocol (<acronym>MNP</acronym>)"
+msgstr ""
+"Wählt alternatives <acronym>EC</acronym>-Protokoll (<acronym>MNP</acronym>)"
+
+#. Tag: entry
+#: hayes.docbook:511
+#, no-c-format
+msgid "Conditional data compression: V.42bis = yes, MNP5 = no."
+msgstr "Bedingte Datenkompression: V.42bis = ja, MNP5 = nein."
+
+#. Tag: entry
+#: hayes.docbook:514
+#, no-c-format
+msgid "<command>&amp;S0</command> or <command>&amp;S</command>"
+msgstr "<command>&amp;S0</command> oder <command>&amp;S</command>"
+
+#. Tag: entry
+#: hayes.docbook:515 hayes.docbook:520
+#, no-c-format
+msgid "<acronym>DSR</acronym> action select"
+msgstr "<acronym>DSR</acronym>-Aktion auswählen"
+
+#. Tag: entry
+#: hayes.docbook:516
+#, no-c-format
+msgid "Always on (default)"
+msgstr "Immer an (Standard)"
+
+#. Tag: entry
+#: hayes.docbook:521
+#, no-c-format
+msgid ""
+"Follows <acronym>EIA</acronym> specification (Active following carrier tone, "
+"and until carrier is lost.)"
+msgstr ""
+"Folgt der <acronym>EIA</acronym>-Spezifikation (Folgt aktiv dem Trägerton "
+"bis dieser verloren geht.)"
+
+#. Tag: entry
+#: hayes.docbook:525
+#, no-c-format
+msgid "<command>&amp;T0</command> or <command>&amp;T</command>"
+msgstr "<command>&amp;T0</command> oder <command>&amp;T</command>"
+
+#. Tag: entry
+#: hayes.docbook:526
+#, no-c-format
+msgid "Self test"
+msgstr "Selbsttest"
+
+#. Tag: entry
+#: hayes.docbook:527
+#, no-c-format
+msgid "Model specific self test on some modems"
+msgstr "Bei einigen Modems wird ein modellspezifischer Selbsttest durchgeführt"
+
+#. Tag: entry
+#: hayes.docbook:530
+#, no-c-format
+msgid "<command>&amp;U0</command> or <command>&amp;U</command>"
+msgstr "<command>&amp;U0</command> oder <command>&amp;U</command>"
+
+#. Tag: entry
+#: hayes.docbook:531 hayes.docbook:536
+#, no-c-format
+msgid "Trellis code modulation"
+msgstr "Trellis-Code-Modulation"
+
+#. Tag: entry
+#: hayes.docbook:532
+#, no-c-format
+msgid "Enable V.32 <acronym>TCM</acronym>"
+msgstr "Aktiviert V.32 <acronym>TCM</acronym>"
+
+#. Tag: entry
+#: hayes.docbook:537
+#, no-c-format
+msgid "Disable V.32 <acronym>TCM</acronym>"
+msgstr "Deaktiviert V.32 <acronym>TCM</acronym>"
+
+#. Tag: entry
+#: hayes.docbook:540
+#, no-c-format
+msgid "<command>&amp;V0</command> or <command>&amp;V1</command>"
+msgstr "<command>&amp;V0</command> oder <command>&amp;V1</command>"
+
+#. Tag: entry
+#: hayes.docbook:541
+#, no-c-format
+msgid "View active"
+msgstr "Aktive"
+
+#. Tag: entry
+#: hayes.docbook:542
+#, no-c-format
+msgid ""
+"(and often stored) configuration profile settings (or <command>ATI4</"
+"command>)"
+msgstr ""
+"(und häufig gespeichert) Profileinstellungen (oder <command>ATI4</command>) "
+"anzeigen"
+
+#. Tag: entry
+#: hayes.docbook:546
+#, no-c-format
+msgid "<command>&amp;W0</command> or <command>&amp;W</command>"
+msgstr "<command>&amp;W0</command> oder <command>&amp;W</command>"
+
+#. Tag: entry
+#: hayes.docbook:547
+#, no-c-format
+msgid "Store profile"
+msgstr "Profil speichern"
+
+#. Tag: entry
+#: hayes.docbook:548
+#, no-c-format
+msgid ""
+"In <acronym>NVRAM</acronym> (<command>&amp;W0</command>, <command>&amp;W1</"
+"command> etc. for multiple profiles) Some settings cannot be stored. These "
+"often don't show on <command>&amp;V</command> or <command>ATI4</command>"
+msgstr ""
+"Im <acronym>NVRAM</acronym> (<command>&amp;W0</command>, <command>&amp;W1</"
+"command> &etc; bei mehreren Profilen). Einige Einstellungen können nicht "
+"gespeichert werden. Diese werden häufig beim Befehl <command>&amp;V</"
+"command> oder <command>ATI4</command> nicht angezeigt."
+
+#. Tag: entry
+#: hayes.docbook:554
+#, no-c-format
+msgid "<command>&amp;Y0</command> or <command>&amp;Y</command>"
+msgstr "<command>&amp;Y0</command> oder <command>&amp;Y</command>"
+
+#. Tag: entry
+#: hayes.docbook:555 hayes.docbook:560
+#, no-c-format
+msgid "Select configuration loaded at power-up"
+msgstr "Startkonfiguration auswählen"
+
+#. Tag: entry
+#: hayes.docbook:556
+#, no-c-format
+msgid "Load profile 0 (default)"
+msgstr "Profil 0 laden (Standard)"
+
+#. Tag: entry
+#: hayes.docbook:561
+#, no-c-format
+msgid "Load profile 1"
+msgstr "Profil 1 laden"
+
+#. Tag: entry
+#: hayes.docbook:565
+#, no-c-format
+msgid "Soft reset and load stored profile number <replaceable>n</replaceable>"
+msgstr ""
+"Modem zurücksetzen und das gespeichert Profil Nummer <replaceable>n</"
+"replaceable> laden"
+
+#. Tag: entry
+#: hayes.docbook:567
+#, no-c-format
+msgid ""
+"Note that all items after the <command>&amp;Z</command> on the command line "
+"are ignored"
+msgstr ""
+"Beachten Sie, dass alle Befehle nach dem <command>&amp;Z</command> in der "
+"Zeile ignoriert werden."
+
+#. Tag: title
+#: hayes.docbook:577 hayes.docbook:580
+#, no-c-format
+msgid "Backslash and Percent Commands"
+msgstr "Befehle mit Schrägstrich links (Backslash) und Prozentzeichen"
+
+#. Tag: entry
+#: hayes.docbook:591
+#, no-c-format
+msgid "<command>\\A0</command> or <command>\\A</command>"
+msgstr "<command>\\A0</command> oder <command>\\A</command>"
+
+#. Tag: entry
+#: hayes.docbook:592 hayes.docbook:597 hayes.docbook:602 hayes.docbook:607
+#, no-c-format
+msgid "Character maximum <acronym>MNP</acronym> block size"
+msgstr "Maximale <acronym>MNP</acronym>-Zeichenblockgröße"
+
+#. Tag: entry
+#: hayes.docbook:593
+#, no-c-format
+msgid "64 character maximum"
+msgstr "64-Zeichen-Maximum"
+
+#. Tag: entry
+#: hayes.docbook:598
+#, no-c-format
+msgid "128 character maximum"
+msgstr "128-Zeichen-Maximum"
+
+#. Tag: entry
+#: hayes.docbook:603
+#, no-c-format
+msgid "192 character maximum"
+msgstr "192-Zeichen-Maximum"
+
+#. Tag: entry
+#: hayes.docbook:608
+#, no-c-format
+msgid "256 character maximum"
+msgstr "256-Zeichen-Maximum"
+
+#. Tag: entry
+#: hayes.docbook:611
+#, no-c-format
+msgid "<command>&percnt;C0</command> or <command>&percnt;C</command>"
+msgstr "<command>&percnt;C0</command> oder <command>&percnt;C</command>"
+
+#. Tag: entry
+#: hayes.docbook:613 hayes.docbook:618 hayes.docbook:623 hayes.docbook:628
+#, no-c-format
+msgid "Data Compression Enable/Disable"
+msgstr "Datenkompression aktivieren/deaktivieren"
+
+#. Tag: entry
+#: hayes.docbook:614 hayes.docbook:689
+#, no-c-format
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#. Tag: entry
+#: hayes.docbook:619
+#, no-c-format
+msgid "MNP5 enabled"
+msgstr "MNP5 aktiviert"
+
+#. Tag: entry
+#: hayes.docbook:624
+#, no-c-format
+msgid "V.42bis (<acronym>BTLZ</acronym>) Enabled"
+msgstr "V.42bis (<acronym>BTLZ</acronym>) aktiviert"
+
+#. Tag: entry
+#: hayes.docbook:629
+#, no-c-format
+msgid "MNP5 &amp; V.42bis (<acronym>BTLZ</acronym>) Enabled"
+msgstr "MNP5 &amp; V.42bis (<acronym>BTLZ</acronym>) aktiviert"
+
+#. Tag: entry
+#: hayes.docbook:632
+#, no-c-format
+msgid "<command>&percnt;D0</command> or <command>&percnt;D</command>"
+msgstr "<command>&percnt;D0</command> oder <command>&percnt;D</command>"
+
+#. Tag: entry
+#: hayes.docbook:634 hayes.docbook:639 hayes.docbook:644 hayes.docbook:649
+#, no-c-format
+msgid "Data compression"
+msgstr "Datenkompression"
+
+#. Tag: entry
+#: hayes.docbook:635
+#, no-c-format
+msgid "512 BLTZ dictionary size"
+msgstr "512 BLTZ Dictionary-Größe"
+
+#. Tag: entry
+#: hayes.docbook:640
+#, no-c-format
+msgid "1024 BLTZ dictionary size"
+msgstr "1024 BLTZ Dictionary-Größe"
+
+#. Tag: entry
+#: hayes.docbook:645
+#, no-c-format
+msgid "2048 BLTZ dictionary size"
+msgstr "2048 BLTZ Dictionary-Größe"
+
+#. Tag: entry
+#: hayes.docbook:650
+#, no-c-format
+msgid "4096 BLTZ dictionary size"
+msgstr "4096 BLTZ Dictionary-Größe"
+
+#. Tag: entry
+#: hayes.docbook:653
+#, no-c-format
+msgid "<command>&percnt;E0</command> or <command>&percnt;E1</command>"
+msgstr "<command>&percnt;E0</command> oder <command>&percnt;E1</command>"
+
+#. Tag: entry
+#: hayes.docbook:655 hayes.docbook:660 hayes.docbook:665 hayes.docbook:671
+#: hayes.docbook:676 hayes.docbook:682
+#, no-c-format
+msgid "Escape method"
+msgstr "Abbruch-Methode"
+
+#. Tag: entry
+#: hayes.docbook:656
+#, no-c-format
+msgid "ESCAPE DISABLED"
+msgstr "ESCAPE DEAKTIVIERT"
+
+#. Tag: entry
+#: hayes.docbook:661
+#, no-c-format
+msgid "<command>+++AT</command> method (default)"
+msgstr "<command>+++AT</command>-Methode (Standard)"
+
+#. Tag: entry
+#: hayes.docbook:666
+#, no-c-format
+msgid "<computeroutput>Break</computeroutput> <command>AT</command> method"
+msgstr "<computeroutput>Break</computeroutput> <command>AT</command>-Methode"
+
+#. Tag: entry
+#: hayes.docbook:672
+#, no-c-format
+msgid "BOTH methods enabled"
+msgstr "Beide Methoden aktiviert"
+
+#. Tag: entry
+#: hayes.docbook:677
+#, no-c-format
+msgid "Disable <computeroutput>OK</computeroutput> to <command>+++</command>"
+msgstr ""
+"<computeroutput>OK</computeroutput> für den Befehl <command>+++</command> "
+"deaktivieren"
+
+#. Tag: entry
+#: hayes.docbook:683
+#, no-c-format
+msgid "Enable <computeroutput>OK</computeroutput> to <command>+++</command>"
+msgstr ""
+"<computeroutput>OK</computeroutput> für den Befehl <command>+++</command> "
+"aktivieren"
+
+#. Tag: entry
+#: hayes.docbook:687
+#, no-c-format
+msgid "<command>\\J0</command> or <command>\\J</command>"
+msgstr "<command>\\J0</command> oder <command>\\J</command>"
+
+#. Tag: entry
+#: hayes.docbook:688 hayes.docbook:693
+#, no-c-format
+msgid "<acronym>DTE</acronym> Auto Rate Adjustment"
+msgstr "<acronym>DTE</acronym> Datenrate automatisch anpassen"
+
+#. Tag: entry
+#: hayes.docbook:694
+#, no-c-format
+msgid "<acronym>DTE</acronym> rate is adjusted to match carrier rate."
+msgstr "<acronym>DTE</acronym> Rate wird an den Träger angepasst."
+
+#. Tag: entry
+#: hayes.docbook:697
+#, no-c-format
+msgid "<command>\\N0</command> or <command>\\N</command>"
+msgstr "<command>\\N0</command> oder <command>\\N</command>"
+
+#. Tag: entry
+#: hayes.docbook:698 hayes.docbook:703 hayes.docbook:708 hayes.docbook:713
+#: hayes.docbook:718 hayes.docbook:723 hayes.docbook:728 hayes.docbook:733
+#, no-c-format
+msgid "Connection type"
+msgstr "Verbindungstyp"
+
+#. Tag: entry
+#: hayes.docbook:699
+#, no-c-format
+msgid "Normal connection (see below for definitions)"
+msgstr "Normale Verbindung (Definition siehe unten)"
+
+#. Tag: entry
+#: hayes.docbook:704
+#, no-c-format
+msgid "Direction connection"
+msgstr "Direkte Verbindung"
+
+#. Tag: entry
+#: hayes.docbook:709
+#, no-c-format
+msgid "<acronym>MNP</acronym> Auto-reliable connection"
+msgstr "<acronym>MNP</acronym> Auto-reliable Verbindung"
+
+#. Tag: entry
+#: hayes.docbook:714
+#, no-c-format
+msgid "Auto-reliable connection"
+msgstr "Auto-reliable Verbindung"
+
+#. Tag: entry
+#: hayes.docbook:719
+#, no-c-format
+msgid "V.42bis reliable link with phase detection"
+msgstr "V.42bis zuverlässige Verbindung mit Phasenerkennung"
+
+#. Tag: entry
+#: hayes.docbook:724
+#, no-c-format
+msgid "V.42bis auto-reliable link with phase detection"
+msgstr "V.42bis auto-verlässliche Verbindung mit Phasenerkennung"
+
+#. Tag: entry
+#: hayes.docbook:729
+#, no-c-format
+msgid "V.42 reliable link with phase detection"
+msgstr "V.42 verlässliche Verbindung mit Phasenerkennung"
+
+#. Tag: entry
+#: hayes.docbook:734
+#, no-c-format
+msgid "V.42 auto-reliable link with phase detection"
+msgstr "V.42 auto-verlässliche Verbindung mit Phasenerkennung"
+
+#. Tag: para
+#: hayes.docbook:740
+#, no-c-format
+msgid ""
+"A direct connection is a simple straight-through connection without any "
+"error connection or data compression. In this case, the computer-to-modem "
+"and modem-to-modem speeds must be identical."
+msgstr ""
+"Eine direkte Verbindung ist eine simple Verbindung ohne Fehlererkennung und "
+"Datenkompression. In diesem Falls muss die Verbindung Computer-Modem die "
+"gleiche Geschwindigkeit wie die Verbindung Modem-Modem haben."
+
+#. Tag: para
+#: hayes.docbook:744
+#, no-c-format
+msgid ""
+"A normal connection uses flow control (either software or hardware) to "
+"buffer the data being sent or received, so that the modem can transmit data "
+"at a different rate than the computer is actually sending or receiving it. "
+"For example, a computer may send actual data at 57kbps, but using "
+"compression, the modem only actually sends 28.8kbps. This is the mode use by "
+"most modems."
+msgstr ""
+"Eine normale Verbindung verwendet eine Flusskontrolle (entweder software- "
+"oder hardware-kontrolliert) um die gesendeten oder empfangenen Datenpakete "
+"zu puffern, sodass das Modem die Daten mit einer anderen Geschwindigkeit als "
+"der Computer übertragen kann. Zum Beispiel sendet vielleicht der Computer "
+"Daten mit 57kbps einschließlich Kompression und das Modem sendet nur mit "
+"28.8kbps. Dieser Modus wird von den meisten Modems verwendet. "
+
+#. Tag: para
+#: hayes.docbook:750
+#, no-c-format
+msgid ""
+"A reliable connection is a type of normal connection; if, for some reason, "
+"data compression or error correction cannot be established or maintained, "
+"the connection will hang up. (In essence, such a modem ensures that all "
+"connections are reliable, for it will hang up if the connection isn't.)"
+msgstr ""
+"Eine verlässliche Verbindung ist eine Art von normaler Verbindung. Falls aus "
+"irgendeinem Grund die Fehlererkennung oder Kompression nicht eingerichtet "
+"oder beibehalten werden kann, wird die Verbindung getrennt. (Das Modem "
+"stellt sicher, dass alle übertragenen Daten korrekt sind oder es beendet die "
+"Verbindung)."
+
+#. Tag: para
+#: hayes.docbook:755
+#, no-c-format
+msgid ""
+"Likewise, an auto-reliable connection is virtually the same, except that the "
+"modem will try to renegotiate the connection in order to establish a "
+"reliable connection. Again, this is the mode that most modems use."
+msgstr ""
+"Ähnlich verhält es sich mit einer auto-verlässlichen Verbindung. Das Modem "
+"versucht hierbei, die Übertragungsparameter so anzupassen, das die "
+"Verbindung wieder verlässlich wird. Das ist ebenfalls eine Methode, die die "
+"meisten Modems verwenden."
+
+#. Tag: title
+#: hayes.docbook:762
+#, no-c-format
+msgid "S-Registers"
+msgstr "S-Register"
+
+#. Tag: title
+#: hayes.docbook:765
+#, no-c-format
+msgid "S Registers"
+msgstr "S Register"
+
+#. Tag: entry
+#: hayes.docbook:769
+#, no-c-format
+msgid "Register"
+msgstr "Register"
+
+#. Tag: entry
+#: hayes.docbook:770
+#, no-c-format
+msgid "Range"
+msgstr "Bereich"
+
+#. Tag: entry
+#: hayes.docbook:771
+#, no-c-format
+msgid "Default"
+msgstr "Standard"
+
+#. Tag: entry
+#: hayes.docbook:772
+#, no-c-format
+msgid "Function"
+msgstr "Funktion"
+
+#. Tag: varname
+#: hayes.docbook:777
+#, no-c-format
+msgid "<varname>S0</varname>"
+msgstr "<varname>S0</varname>"
+
+#. Tag: entry
+#: hayes.docbook:778 hayes.docbook:784
+#, no-c-format
+msgid "0-255 rings"
+msgstr "0-255 Klingelzeichen"
+
+#. Tag: entry
+#: hayes.docbook:779
+#, no-c-format
+msgid "<entry>1-2</entry>"
+msgstr "<entry>1-2</entry>"
+
+#. Tag: entry
+#: hayes.docbook:780
+#, no-c-format
+msgid "Answer on ring number. Don't answer if 0"
+msgstr ""
+"Antwortet beim angegebenen Klingelzeichen. Bei 0 wird nicht geantwortet"
+
+#. Tag: varname
+#: hayes.docbook:783
+#, no-c-format
+msgid "<varname>S1</varname>"
+msgstr "<varname>S1</varname>"
+
+#. Tag: entry
+#: hayes.docbook:785 hayes.docbook:910
+#, no-c-format
+msgid "<entry>0</entry>"
+msgstr "<entry>0</entry>"
+
+#. Tag: entry
+#: hayes.docbook:786
+#, no-c-format
+msgid ""
+"if <varname>S0</varname> is greater than <returnvalue>0</returnvalue> this "
+"register counts the incoming rings."
+msgstr ""
+"Wenn der Wert in <varname>S0</varname> größer als <returnvalue>0</"
+"returnvalue> ist, zählt dieses Register die eingehenden Klingelzeichen."
+
+#. Tag: varname
+#: hayes.docbook:791 hayes.docbook:797
+#, no-c-format
+msgid "<varname>S2</varname>"
+msgstr "<varname>S2</varname>"
+
+#. Tag: entry
+#: hayes.docbook:792 hayes.docbook:804 hayes.docbook:810
+#, no-c-format
+msgid "0-127 <acronym>ASCII</acronym>"
+msgstr "0-127 <acronym>ASCII</acronym>"
+
+#. Tag: entry
+#: hayes.docbook:793
+#, no-c-format
+msgid "43 +"
+msgstr "43 +"
+
+#. Tag: entry
+#: hayes.docbook:794
+#, no-c-format
+msgid "Escape to command mode character"
+msgstr "Zeichen zum Abbruch in den Befehlsmodus"
+
+#. Tag: entry
+#: hayes.docbook:798
+#, no-c-format
+msgid "&gt;127"
+msgstr "&gt;127"
+
+#. Tag: entry
+#: hayes.docbook:800
+#, no-c-format
+msgid "no ESC"
+msgstr "kein ESC"
+
+#. Tag: varname
+#: hayes.docbook:803
+#, no-c-format
+msgid "<varname>S3</varname>"
+msgstr "<varname>S3</varname>"
+
+#. Tag: entry
+#: hayes.docbook:805
+#, no-c-format
+msgid "13 CR"
+msgstr "13 CR"
+
+#. Tag: entry
+#: hayes.docbook:806
+#, no-c-format
+msgid "Carriage return character"
+msgstr "Zeilenende-Zeichen"
+
+#. Tag: varname
+#: hayes.docbook:809
+#, no-c-format
+msgid "<varname>S4</varname>"
+msgstr "<varname>S4</varname>"
+
+#. Tag: entry
+#: hayes.docbook:811
+#, no-c-format
+msgid "10 LF"
+msgstr "10 LF"
+
+#. Tag: entry
+#: hayes.docbook:812
+#, no-c-format
+msgid "Line feed character"
+msgstr "Zeilenvorschub-Zeichen"
+
+#. Tag: varname
+#: hayes.docbook:815
+#, no-c-format
+msgid "<varname>S5</varname>"
+msgstr "<varname>S5</varname>"
+
+#. Tag: entry
+#: hayes.docbook:816
+#, no-c-format
+msgid "0-32, 127 <acronym>ASCII</acronym>"
+msgstr "0-32, 127 <acronym>ASCII</acronym>"
+
+#. Tag: entry
+#: hayes.docbook:817
+#, no-c-format
+msgid "8 BS"
+msgstr "8 BS"
+
+#. Tag: entry
+#: hayes.docbook:818
+#, no-c-format
+msgid "Backspace character"
+msgstr "Rückgängig-Zeichen"
+
+#. Tag: varname
+#: hayes.docbook:821
+#, no-c-format
+msgid "<varname>S6</varname>"
+msgstr "<varname>S6</varname>"
+
+#. Tag: entry
+#: hayes.docbook:822
+#, no-c-format
+msgid "2-255 seconds"
+msgstr "2-255 Sekunden"
+
+#. Tag: entry
+#: hayes.docbook:823 hayes.docbook:836
+#, no-c-format
+msgid "<entry>2</entry>"
+msgstr "<entry>2</entry>"
+
+#. Tag: entry
+#: hayes.docbook:824
+#, no-c-format
+msgid ""
+"Dial tone wait time (blind dialing, see <link linkend=\"hayes-basic-"
+"x1\">X<replaceable>n</replaceable></link>)"
+msgstr ""
+"Wartezeit auf den Wahlton (für blindes Wählen siehe <link linkend=\"hayes-"
+"basic-x1\">X<replaceable>n</replaceable></link>)"
+
+#. Tag: varname
+#: hayes.docbook:828
+#, no-c-format
+msgid "<varname>S7</varname>"
+msgstr "<varname>S7</varname>"
+
+#. Tag: entry
+#: hayes.docbook:829
+#, no-c-format
+msgid "1-255 seconds"
+msgstr "1-255 Sekunden"
+
+#. Tag: entry
+#: hayes.docbook:830
+#, no-c-format
+msgid "30-60"
+msgstr "30-60"
+
+#. Tag: entry
+#: hayes.docbook:831
+#, no-c-format
+msgid "Wait time for remote carrier"
+msgstr "Wartezeit auf das entfernte Trägersignal"
+
+#. Tag: varname
+#: hayes.docbook:834
+#, no-c-format
+msgid "<varname>S8</varname>"
+msgstr "<varname>S8</varname>"
+
+#. Tag: entry
+#: hayes.docbook:835
+#, no-c-format
+msgid "0-255 seconds"
+msgstr "0-255 Sekunden"
+
+#. Tag: entry
+#: hayes.docbook:837
+#, no-c-format
+msgid "Comma pause time used in dialing"
+msgstr "Wartezeit bei Eingabe eines Komma bei der Anwahl"
+
+#. Tag: varname
+#: hayes.docbook:840
+#, no-c-format
+msgid "<varname>S9</varname>"
+msgstr "<varname>S9</varname>"
+
+#. Tag: entry
+#: hayes.docbook:841 hayes.docbook:847
+#, no-c-format
+msgid "1-255 1/10ths second"
+msgstr "1-255 1/10tel Sekunden"
+
+#. Tag: entry
+#: hayes.docbook:842
+#, no-c-format
+msgid "<entry>6</entry>"
+msgstr "<entry>6</entry>"
+
+#. Tag: entry
+#: hayes.docbook:843
+#, no-c-format
+msgid "Carrier detect time required for recognition"
+msgstr "Trägersignalzeit, die zur Erkennung notwendig ist"
+
+#. Tag: varname
+#: hayes.docbook:846
+#, no-c-format
+msgid "<varname>S10</varname>"
+msgstr "<varname>S10</varname>"
+
+#. Tag: entry
+#: hayes.docbook:848
+#, no-c-format
+msgid "7-14"
+msgstr "7-14"
+
+#. Tag: entry
+#: hayes.docbook:849
+#, no-c-format
+msgid "Time between loss of carrier and hangup"
+msgstr "Zeit zwischen Verlust des Trägersignals und Verbindungsende"
+
+#. Tag: varname
+#: hayes.docbook:852
+#, no-c-format
+msgid "<varname>S11</varname>"
+msgstr "<varname>S11</varname>"
+
+#. Tag: entry
+#: hayes.docbook:853
+#, no-c-format
+msgid "50-255 milliseconds"
+msgstr "50-255 Millisekunden"
+
+#. Tag: entry
+#: hayes.docbook:854
+#, no-c-format
+msgid "70-95"
+msgstr "70-95"
+
+#. Tag: entry
+#: hayes.docbook:855
+#, no-c-format
+msgid "Duration and spacing of tones when tone dialing"
+msgstr "Dauer und Abstand der Töne bei der Tonwahl"
+
+#. Tag: varname
+#: hayes.docbook:858
+#, no-c-format
+msgid "<varname>S12</varname>"
+msgstr "<varname>S12</varname>"
+
+#. Tag: entry
+#: hayes.docbook:859
+#, no-c-format
+msgid "0-255 1/50th seconds"
+msgstr "0-255 1/50tel Sekunden"
+
+#. Tag: entry
+#: hayes.docbook:860
+#, no-c-format
+msgid "<entry>50</entry>"
+msgstr "<entry>50</entry>"
+
+#. Tag: entry
+#: hayes.docbook:861
+#, no-c-format
+msgid "Guard time for pause around <command>+++</command> command sequence"
+msgstr "Wachzeit für eine Pause um die Befehlssequenz <command>+++</command>"
+
+#. Tag: varname
+#: hayes.docbook:865
+#, no-c-format
+msgid "<varname>S36</varname>"
+msgstr "<varname>S36</varname>"
+
+#. Tag: para
+#: hayes.docbook:866
+#, no-c-format
+msgid "Fallback options when error correction link fails:"
+msgstr "Sicherheitsoptionen, falls die Fehlerkorrektur fehlschlägt:"
+
+#. Tag: para
+#: hayes.docbook:868
+#, no-c-format
+msgid "0 - Disconnect"
+msgstr "0 - Verbindung beenden"
+
+#. Tag: para
+#: hayes.docbook:870
+#, no-c-format
+msgid "1 - Establish Direct Connection"
+msgstr "1 - Direkte Verbindung herstellen"
+
+#. Tag: para
+#: hayes.docbook:872
+#, no-c-format
+msgid "3 - Establish Normal Connection"
+msgstr "3 - Normale Verbindung herstellen"
+
+#. Tag: para
+#: hayes.docbook:874
+#, no-c-format
+msgid ""
+"4 - Establish an <acronym>MNP</acronym> connection if possible, else "
+"disconnect"
+msgstr ""
+"4 - Möglichst eine <acronym>MNP</acronym>-Verbindung herstellen, ansonsten "
+"Verbindung beenden"
+
+#. Tag: para
+#: hayes.docbook:877
+#, no-c-format
+msgid ""
+"5 - Establish an <acronym>MNP</acronym> connection if possible, else Direct "
+"Connection."
+msgstr ""
+"5 - Möglichst eine <acronym>MNP</acronym>-Verbindung herstellen, ansonsten "
+"eine direkte Verbindung."
+
+#. Tag: para
+#: hayes.docbook:880
+#, no-c-format
+msgid ""
+"7 - Establish an <acronym>MNP</acronym> connection if possible, else Normal "
+"connection"
+msgstr ""
+"7 - Möglichst eine <acronym>MNP</acronym>-Verbindung herstellen, ansonsten "
+"eine normale Verbindung"
+
+#. Tag: entry
+#: hayes.docbook:884
+#, no-c-format
+msgid "<entry>7</entry>"
+msgstr "<entry>7</entry>"
+
+#. Tag: entry
+#: hayes.docbook:885
+#, no-c-format
+msgid "Negotiation Failure Treatment"
+msgstr "Übertragungsparameterfehlerbehandlung"
+
+#. Tag: varname
+#: hayes.docbook:888
+#, no-c-format
+msgid "<varname>S37</varname>"
+msgstr "<varname>S37</varname>"
+
+#. Tag: para
+#: hayes.docbook:890
+#, no-c-format
+msgid "<returnvalue>1</returnvalue> = 300 bps"
+msgstr "<returnvalue>1</returnvalue> = 300 bps"
+
+#. Tag: para
+#: hayes.docbook:892
+#, no-c-format
+msgid "<returnvalue>5</returnvalue> = 1200 bps"
+msgstr "<returnvalue>5</returnvalue> = 1200 bps"
+
+#. Tag: para
+#: hayes.docbook:894
+#, no-c-format
+msgid "<returnvalue>6</returnvalue> = 2400 bps"
+msgstr "<returnvalue>6</returnvalue> = 2400 bps"
+
+#. Tag: para
+#: hayes.docbook:896
+#, no-c-format
+msgid "<returnvalue>7</returnvalue> = 1200/75 bps (v.23 mode)"
+msgstr "<returnvalue>7</returnvalue> = 1200/75 bps (v.23-Modus)"
+
+#. Tag: para
+#: hayes.docbook:899
+#, no-c-format
+msgid "<returnvalue>8</returnvalue> = 4800 bps"
+msgstr "<returnvalue>8</returnvalue> = 4800 bps"
+
+#. Tag: para
+#: hayes.docbook:901
+#, no-c-format
+msgid "<returnvalue>9</returnvalue> = 9600 bps"
+msgstr "<returnvalue>9</returnvalue> = 9600 bps"
+
+#. Tag: para
+#: hayes.docbook:903
+#, no-c-format
+msgid "<returnvalue>10</returnvalue> = 12000 bps"
+msgstr "<returnvalue>10</returnvalue> = 12000 bps"
+
+#. Tag: para
+#: hayes.docbook:905
+#, no-c-format
+msgid "<returnvalue>11</returnvalue> = 14400 bps"
+msgstr "<returnvalue>11</returnvalue> = 14400 bps"
+
+#. Tag: para
+#: hayes.docbook:907
+#, no-c-format
+msgid "<returnvalue>12</returnvalue> = 7200 bps"
+msgstr "<returnvalue>12</returnvalue> = 7200 bps"
+
+#. Tag: entry
+#: hayes.docbook:911
+#, no-c-format
+msgid "Negotiation Speed (Initial handshake)"
+msgstr "Verbindungsgeschwindigkeit (Anfangsverbindung)"
+
+#. Tag: para
+#: hayes.docbook:917
+#, no-c-format
+msgid ""
+"Many modems have dozens, even hundreds, of S registers, but only the first "
+"dozen or so are fairly standard. They are changed with a command like "
+"<command>ATS<replaceable>n</replaceable>=<replaceable>N</replaceable></"
+"command>, and examined with <command>ATS<replaceable>n</replaceable>?</"
+"command> (&eg; <userinput><command>AT</command> <command>S10</"
+"command><option>=70</option> <command>S1?</command></userinput> would tell "
+"the modem not to hang up for seven seconds should it not hear the answering "
+"modem, and return the number of times the phone last rang.)"
+msgstr ""
+"Einige Modems haben Dutzende, manche sogar Hunderte, von S-Registern, von "
+"denen nur ungefähr das erste Dutzend standardisiert ist. Sie werden durch "
+"einen Befehl wie <command>ATS<replaceable>n</replaceable>=<replaceable>N</"
+"replaceable></command> verändert und durch <command>ATS<replaceable>n</"
+"replaceable>?</command> (&eg; <userinput><command>AT</command> <command>S10</"
+"command><option>=70</option> <command>S1?</command></userinput> würde das "
+"Modem veranlassen, für sieben Sekunden aufzulegen, falls das entfernte Modem "
+"nicht antwortet, und die Anzahl der Anwahlversuche auszugeben) ausgelesen."
+
+#~ msgid "<command>AT</command>"
+#~ msgstr "<command>AT</command>"
+
+#~ msgid "<command>Z</command>"
+#~ msgstr "<command>Z</command>"
+
+#~ msgid "<command>^M</command>"
+#~ msgstr "<command>^M</command>"
+
+#~ msgid "<command>A/</command>"
+#~ msgstr "<command>A/</command>"
+
+#~ msgid "<command>B1</command>"
+#~ msgstr "<command>B1</command>"
+
+#~ msgid "<command>B2</command>"
+#~ msgstr "<command>B2</command>"
+
+#~ msgid "<command>D</command>"
+#~ msgstr "<command>D</command>"
+
+#~ msgid "<command>P</command>"
+#~ msgstr "<command>P</command>"
+
+#~ msgid "<command>T</command>"
+#~ msgstr "<command>T</command>"
+
+#~ msgid "<command>W</command>"
+#~ msgstr "<command>W</command>"
+
+#~ msgid "<command>,</command>"
+#~ msgstr "<command>,</command>"
+
+#~ msgid "<command>;</command>"
+#~ msgstr "<command>;</command>"
+
+#~ msgid "<command>!</command>"
+#~ msgstr "<command>!</command>"
+
+#~ msgid "<command>L</command>"
+#~ msgstr "<command>L</command>"
+
+#~ msgid "<command>E1</command>"
+#~ msgstr "<command>E1</command>"
+
+#~ msgid "<command>H0</command>"
+#~ msgstr "<command>H0</command>"
+
+#~ msgid "<command>H1</command>"
+#~ msgstr "<command>H1</command>"
+
+#~ msgid "<command>L1</command>"
+#~ msgstr "<command>L1</command>"
+
+#~ msgid "<command>L2</command>"
+#~ msgstr "<command>L2</command>"
+
+#~ msgid "<command>L3</command>"
+#~ msgstr "<command>L3</command>"
+
+#~ msgid "<command>M1</command>"
+#~ msgstr "<command>M1</command>"
+
+#~ msgid "<command>M2</command>"
+#~ msgstr "<command>M2</command>"
+
+#~ msgid "<command>N1</command>"
+#~ msgstr "<command>N1</command>"
+
+#~ msgid "<command>O1</command>"
+#~ msgstr "<command>O1</command>"
+
+#~ msgid "<command>Q1</command>"
+#~ msgstr "<command>Q1</command>"
+
+#~ msgid "S<replaceable>n</replaceable>?"
+#~ msgstr "S<replaceable>n</replaceable>?"
+
+#~ msgid "S<replaceable>n</replaceable>=<replaceable>r</replaceable>"
+#~ msgstr "S<replaceable>n</replaceable>=<replaceable>r</replaceable>"
+
+#~ msgid "<command>V1</command>"
+#~ msgstr "<command>V1</command>"
+
+#~ msgid "<command>X1</command>"
+#~ msgstr "<command>X1</command>"
+
+#~ msgid "<command>X2</command>"
+#~ msgstr "<command>X2</command>"
+
+#~ msgid "<command>X3</command>"
+#~ msgstr "<command>X3</command>"
+
+#~ msgid "<command>X4</command>"
+#~ msgstr "<command>X4</command>"
+
+#~ msgid "&amp;B1"
+#~ msgstr "&amp;B1"
+
+#~ msgid "&amp;B2"
+#~ msgstr "&amp;B2"
+
+#~ msgid "&amp;C1"
+#~ msgstr "&amp;C1"
+
+#~ msgid "&amp;D1"
+#~ msgstr "&amp;D1"
+
+#~ msgid "&amp;D2"
+#~ msgstr "&amp;D2"
+
+#~ msgid "&amp;D3"
+#~ msgstr "&amp;D3"
+
+#~ msgid "&amp;F1"
+#~ msgstr "&amp;F1"
+
+#~ msgid "&amp;F2"
+#~ msgstr "&amp;F2"
+
+#~ msgid "&amp;F3"
+#~ msgstr "&amp;F3"
+
+#~ msgid "&amp;K1"
+#~ msgstr "&amp;K1"
+
+#~ msgid "&amp;K2"
+#~ msgstr "&amp;K2"
+
+#~ msgid "&amp;K3"
+#~ msgstr "&amp;K3"
+
+#~ msgid "&amp;K4"
+#~ msgstr "&amp;K4"
+
+#~ msgid "&amp;P1"
+#~ msgstr "&amp;P1"
+
+#~ msgid "&amp;Q5"
+#~ msgstr "&amp;Q5"
+
+#~ msgid "&amp;Q6"
+#~ msgstr "&amp;Q6"
+
+#~ msgid "&amp;Q8"
+#~ msgstr "&amp;Q8"
+
+#~ msgid "&amp;Q9"
+#~ msgstr "&amp;Q9"
+
+#~ msgid "&amp;S1"
+#~ msgstr "&amp;S1"
+
+#~ msgid "&amp;U1"
+#~ msgstr "&amp;U1"
+
+#~ msgid "&amp;Y1"
+#~ msgstr "&amp;Y1"
+
+#~ msgid "&amp;Z<replaceable>n</replaceable>=<replaceable>x</replaceable>"
+#~ msgstr "&amp;Z<replaceable>n</replaceable>=<replaceable>x</replaceable>"
+
+#~ msgid "<command>\\A1</command>"
+#~ msgstr "<command>\\A1</command>"
+
+#~ msgid "<command>\\A2</command>"
+#~ msgstr "<command>\\A2</command>"
+
+#~ msgid "<command>\\A3</command>"
+#~ msgstr "<command>\\A3</command>"
+
+#~ msgid "&percnt;C1"
+#~ msgstr "&percnt;C1"
+
+#~ msgid "&percnt;C2"
+#~ msgstr "&percnt;C2"
+
+#~ msgid "&percnt;C3"
+#~ msgstr "&percnt;C3"
+
+#~ msgid "&percnt;D1"
+#~ msgstr "&percnt;D1"
+
+#~ msgid "&percnt;D2"
+#~ msgstr "&percnt;D2"
+
+#~ msgid "&percnt;D3"
+#~ msgstr "&percnt;D3"
+
+#~ msgid "&percnt;E1"
+#~ msgstr "&percnt;E1"
+
+#~ msgid "&percnt;E2"
+#~ msgstr "&percnt;E2"
+
+#~ msgid "&percnt;E3"
+#~ msgstr "&percnt;E3"
+
+#~ msgid "&percnt;E4"
+#~ msgstr "&percnt;E4"
+
+#~ msgid "&percnt;E5"
+#~ msgstr "&percnt;E5"
+
+#~ msgid "<command>\\J1</command>"
+#~ msgstr "<command>\\J1</command>"
+
+#~ msgid "<command>\\N1</command>"
+#~ msgstr "<command>\\N1</command>"
+
+#~ msgid "<command>\\N2</command>"
+#~ msgstr "<command>\\N2</command>"
+
+#~ msgid "<command>\\N3</command>"
+#~ msgstr "<command>\\N3</command>"
+
+#~ msgid "<command>\\N4</command>"
+#~ msgstr "<command>\\N4</command>"
+
+#~ msgid "<command>\\N5</command>"
+#~ msgstr "<command>\\N5</command>"
+
+#~ msgid "<command>\\N6</command>"
+#~ msgstr "<command>\\N6</command>"
+
+#~ msgid "<command>\\N7</command>"
+#~ msgstr "<command>\\N7</command>"

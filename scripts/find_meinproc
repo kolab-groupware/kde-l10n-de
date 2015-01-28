@@ -1,0 +1,22 @@
+
+. scripts/get_paths
+
+function find_meinproc
+{
+	MEINPROC_COMMAND=""
+	for i in "meinproc4_simple" "meinproc4" "meinproc"; do
+		j=`which ${i} 2>/dev/null`
+		if [ "$i" = "meinproc4_simple" ]; then
+			MEINPROC_COMMAND="${j} $BASEDIR/`get_path kdelibs`/kdoctools/ `which xmllint`"
+			test -x "${j}" && test -d "$BASEDIR/`get_path kdelibs`/kdoctools/" && break
+			# if we got here it means ${j} does not really exist, reset MEINPROC_COMMAND
+			MEINPROC_COMMAND=""
+		else
+			MEINPROC_COMMAND="${j} --check --stdout"
+			test -x "${j}" && break
+			# if we got here it means ${j} does not really exist, reset MEINPROC_COMMAND
+			MEINPROC_COMMAND=""
+		fi
+	done
+	echo $MEINPROC_COMMAND
+}

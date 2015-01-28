@@ -1,0 +1,1458 @@
+# Thomas Diehl <thd@kde.org>, 2002, 2003, 2004.
+# Stephan Johach <hunsum@gmx.de>, 2005, 2006.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006, 2007, 2008, 2009, 2010.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011, 2012, 2013.
+# Burkhard Lück <lueck@hube-lueck.de>, 2010, 2012, 2013, 2014.
+# Frank Steinmetzger <Warp_7@gmx.de>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kwin\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-05-31 05:47+0000\n"
+"PO-Revision-Date: 2014-02-17 12:38+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Thomas Diehl"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "thd@kde.org"
+
+#: composite.cpp:456
+#, kde-format
+msgid ""
+"Desktop effects have been suspended by another application.<br/>You can "
+"resume using the '%1' shortcut."
+msgstr ""
+"Die Arbeitsflächeneffekte wurden durch eine andere Anwendung ausgesetzt.<br/"
+">Sie können mit Hilfe des Kurzbefehls „%1“ reaktiviert werden."
+
+#: compositingprefs.cpp:96
+msgid ""
+"<b>OpenGL compositing (the default) has crashed KWin in the past.</"
+"b><br>This was most likely due to a driver bug.<p>If you think that you have "
+"meanwhile upgraded to a stable driver,<br>you can reset this protection but "
+"<b>be aware that this might result in an immediate crash!</b></"
+"p><p>Alternatively, you might want to use the XRender backend instead.</p>"
+msgstr ""
+"<b>OpenGL-Compositing (Voreinstellung) hat KWin in der Vergangenheit zum "
+"Absturz gebracht.</b><br>Ursache war sehr wahrscheinlich ein fehlerhafter "
+"Treiber. <p>Wenn Sie glauben, in der Zwischenzeit auf eine stabile "
+"Treiberversion aktualisiert zu haben,<br>können Sie die Schutzfunktion "
+"zurücksetzen. Seien Sie sich jedoch im Klaren darüber,<br>dass das zu einem "
+"sofortigen Absturz führen kann.</b></p><p>Alternativ können Sie das XRender-"
+"Backend verwenden.</p>"
+
+#: compositingprefs.cpp:103
+msgid "Required X extensions (XComposite and XDamage) are not available."
+msgstr ""
+"Benötigte X-Erweiterungen (XComposite und XDamage) sind nicht verfügbar."
+
+#: compositingprefs.cpp:107
+msgid "GLX/OpenGL are not available and only OpenGL support is compiled."
+msgstr ""
+"GLX/OpenGL sind nicht verfügbar und es ist nur Unterstützung für OpenGL "
+"einkompiliert."
+
+#: compositingprefs.cpp:111
+msgid "GLX/OpenGL and XRender/XFixes are not available."
+msgstr "GLX/OpenGL und XRender/XFixes sind nicht verfügbar."
+
+#: decorations.cpp:59
+msgid "KWin: "
+msgstr "KWin: "
+
+#: killer/killer.cpp:43
+msgid "Window Manager"
+msgstr "Fensterverwaltung"
+
+#: killer/killer.cpp:44
+msgid "KWin helper utility"
+msgstr "KWin-Hilfsprogramm"
+
+#: killer/killer.cpp:47
+msgid "PID of the application to terminate"
+msgstr "PID der Anwendung, die beendet werden soll"
+
+#: killer/killer.cpp:48
+msgid "Hostname on which the application is running"
+msgstr "Rechnername, auf dem die Anwendung läuft"
+
+#: killer/killer.cpp:49
+msgid "Caption of the window to be terminated"
+msgstr "Titel des Fensters, welches beendet werden soll"
+
+#: killer/killer.cpp:50
+msgid "Name of the application to be terminated"
+msgstr "Name der Anwendung, die beendet werden soll"
+
+#: killer/killer.cpp:51
+msgid "ID of resource belonging to the application"
+msgstr "ID der Ressource, die zur Anwendung gehört"
+
+#: killer/killer.cpp:52
+msgid "Time of user action causing termination"
+msgstr "Zeitpunkt der Benutzeraktion, die das Beenden verursacht"
+
+#: killer/killer.cpp:69
+msgid "This helper utility is not supposed to be called directly."
+msgstr "Dieses Hilfsprogramm ist nicht für den direkten Aufruf gedacht."
+
+#: killer/killer.cpp:79
+#, kde-format
+msgctxt "@info"
+msgid "<b>Application \"%1\" is not responding</b>"
+msgstr "<b>Die Anwendung „%1“ reagiert nicht</b>"
+
+#: killer/killer.cpp:81
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>You tried to close window \"%1\" from application \"%2\" (Process ID: "
+"%3) but the application is not responding.</para>"
+msgstr ""
+"<para>Sie haben versucht, Fenster „%1“ der Anwendung „%2“ (Prozesskennung: "
+"%3) zu schließen. Die Anwendung reagiert jedoch nicht.</para>"
+
+#: killer/killer.cpp:83
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>You tried to close window \"%1\" from application \"%2\" (Process ID: "
+"%3), running on host \"%4\", but the application is not responding.</para>"
+msgstr ""
+"<para>Sie haben versucht, Fenster „%1“ der Anwendung „%2“ (Prozesskennung: "
+"%3) zu schließen, die auf Rechner „%4“ läuft. Die Anwendung reagiert jedoch "
+"nicht.</para>"
+
+#: killer/killer.cpp:86
+msgctxt "@info"
+msgid ""
+"<para>Do you want to terminate this application?</"
+"para><para><warning>Terminating the application will close all of its child "
+"windows. Any unsaved data will be lost.</warning></para>"
+msgstr ""
+"<para>Möchten Sie diese Anwendung beenden?</para><para><warning>Beim Beenden "
+"der Anwendung werden alle zur Anwendung gehörenden Fenster geschlossen und "
+"ungespeicherte Daten gehen verloren.</warning></para>"
+
+#: killer/killer.cpp:90
+#, kde-format
+msgid "&Terminate Application %1"
+msgstr "Prozess %1 &beenden"
+
+#: killer/killer.cpp:91
+msgid "Wait Longer"
+msgstr "Länger warten"
+
+#: kwinbindings.cpp:48
+msgid "System"
+msgstr "System"
+
+#: kwinbindings.cpp:51
+msgid "Navigation"
+msgstr "Navigation"
+
+#: kwinbindings.cpp:52
+msgid "Walk Through Window Tabs"
+msgstr "Zwischen Unterfenstern wechseln"
+
+#: kwinbindings.cpp:53
+msgid "Walk Through Window Tabs (Reverse)"
+msgstr "Zwischen Unterfenstern wechseln (Gegenrichtung)"
+
+#: kwinbindings.cpp:54
+msgid "Remove Window From Group"
+msgstr "Fenster aus Gruppe herauslösen"
+
+#: kwinbindings.cpp:57
+msgid "Windows"
+msgstr "Fenster"
+
+#: kwinbindings.cpp:58
+msgid "Window Operations Menu"
+msgstr "Fensteraktionen-Menü"
+
+#: kwinbindings.cpp:60
+msgid "Close Window"
+msgstr "Fenster schließen"
+
+#: kwinbindings.cpp:62
+msgid "Maximize Window"
+msgstr "Fenster maximieren"
+
+#: kwinbindings.cpp:64
+msgid "Maximize Window Vertically"
+msgstr "Fenster senkrecht maximieren"
+
+#: kwinbindings.cpp:66
+msgid "Maximize Window Horizontally"
+msgstr "Fenster waagerecht maximieren"
+
+#: kwinbindings.cpp:68
+msgid "Minimize Window"
+msgstr "Fenster minimieren"
+
+#: kwinbindings.cpp:70
+msgid "Shade Window"
+msgstr "Fensterheber betätigen"
+
+#: kwinbindings.cpp:72
+msgid "Move Window"
+msgstr "Fenster verschieben"
+
+#: kwinbindings.cpp:74
+msgid "Resize Window"
+msgstr "Fenstergröße ändern"
+
+#: kwinbindings.cpp:76
+msgid "Raise Window"
+msgstr "Fenster nach vorne"
+
+#: kwinbindings.cpp:78
+msgid "Lower Window"
+msgstr "Fenster nach hinten"
+
+#: kwinbindings.cpp:80
+msgid "Toggle Window Raise/Lower"
+msgstr "Fenster nach vorne/hinten"
+
+#: kwinbindings.cpp:82
+msgid "Make Window Fullscreen"
+msgstr "Fenster auf Vollbildgröße"
+
+#: kwinbindings.cpp:84
+msgid "Hide Window Border"
+msgstr "Fensterumrandung ausblenden"
+
+#: kwinbindings.cpp:86
+msgid "Keep Window Above Others"
+msgstr "Fenster im Vordergrund halten"
+
+#: kwinbindings.cpp:88
+msgid "Keep Window Below Others"
+msgstr "Fenster im Hintergrund halten"
+
+#: kwinbindings.cpp:90
+msgid "Activate Window Demanding Attention"
+msgstr "Fenster aktivieren, das Aufmerksamkeit erfordert"
+
+#: kwinbindings.cpp:92
+msgid "Setup Window Shortcut"
+msgstr "Kurzbefehl für Fenster einrichten"
+
+#: kwinbindings.cpp:94
+msgid "Pack Window to the Right"
+msgstr "Fenster bündig mit rechtem Bildschirmrand"
+
+#: kwinbindings.cpp:96
+msgid "Pack Window to the Left"
+msgstr "Fenster bündig mit linkem Bildschirmrand"
+
+#: kwinbindings.cpp:98
+msgid "Pack Window Up"
+msgstr "Fenster bündig mit oberem Bildschirmrand"
+
+#: kwinbindings.cpp:100
+msgid "Pack Window Down"
+msgstr "Fenster bündig mit unterem Bildschirmrand"
+
+#: kwinbindings.cpp:102
+msgid "Pack Grow Window Horizontally"
+msgstr "Fenster zum linken Bildschirmrand ausdehnen"
+
+#: kwinbindings.cpp:104
+msgid "Pack Grow Window Vertically"
+msgstr "Fenster zum oberen Bildschirmrand ausdehnen"
+
+#: kwinbindings.cpp:106
+msgid "Pack Shrink Window Horizontally"
+msgstr "Fenster zum rechten und linken Bildschirmrand ausdehnen"
+
+#: kwinbindings.cpp:108
+msgid "Pack Shrink Window Vertically"
+msgstr "Fenster zum oberen und unteren Bildschirmrand ausdehnen"
+
+#: kwinbindings.cpp:110
+msgid "Quick Tile Window to the Left"
+msgstr "Fenster am linken Bildschirmrand anordnen"
+
+#: kwinbindings.cpp:112
+msgid "Quick Tile Window to the Right"
+msgstr "Fenster am rechten Bildschirmrand anordnen"
+
+#: kwinbindings.cpp:114
+msgid "Quick Tile Window to the Top Left"
+msgstr "Fenster am linken oberen Bildschirmrand anordnen"
+
+#: kwinbindings.cpp:116
+msgid "Quick Tile Window to the Bottom Left"
+msgstr "Fenster am linken unteren Bildschirmrand anordnen"
+
+#: kwinbindings.cpp:118
+msgid "Quick Tile Window to the Top Right"
+msgstr "Fenster am rechten oberen Bildschirmrand anordnen"
+
+#: kwinbindings.cpp:120
+msgid "Quick Tile Window to the Bottom Right"
+msgstr "Fenster am rechten unteren Bildschirmrand anordnen"
+
+#: kwinbindings.cpp:122
+msgid "Switch to Window Above"
+msgstr "Zum Fenster darüber wechseln"
+
+#: kwinbindings.cpp:124
+msgid "Switch to Window Below"
+msgstr "Zum Fenster darunter wechseln"
+
+#: kwinbindings.cpp:126
+msgid "Switch to Window to the Right"
+msgstr "Zum Fenster rechts wechseln"
+
+#: kwinbindings.cpp:128
+msgid "Switch to Window to the Left"
+msgstr "Zum Fenster links wechseln"
+
+#: kwinbindings.cpp:130
+msgid "Increase Opacity of Active Window by 5 %"
+msgstr "Die Deckkraft des aktiven Fensters um 5 % erhöhen"
+
+#: kwinbindings.cpp:132
+msgid "Decrease Opacity of Active Window by 5 %"
+msgstr "Die Deckkraft des aktiven Fensters um 5 % verringern"
+
+#: kwinbindings.cpp:136
+msgid "Window & Desktop"
+msgstr "Fenster auf nächste Arbeitsfläche verschieben"
+
+#: kwinbindings.cpp:137
+msgid "Keep Window on All Desktops"
+msgstr "Fenster auf allen Arbeitsflächen anzeigen"
+
+#: kwinbindings.cpp:141
+#, kde-format
+msgid "Window to Desktop %1"
+msgstr "Fenster auf Arbeitsfläche %1"
+
+#: kwinbindings.cpp:143
+msgid "Window to Next Desktop"
+msgstr "Fenster auf nächste Arbeitsfläche verschieben"
+
+#: kwinbindings.cpp:144
+msgid "Window to Previous Desktop"
+msgstr "Fenster auf vorherige Arbeitsfläche verschieben"
+
+#: kwinbindings.cpp:145
+msgid "Window One Desktop to the Right"
+msgstr "Fenster eine Arbeitsfläche nach rechts"
+
+#: kwinbindings.cpp:146
+msgid "Window One Desktop to the Left"
+msgstr "Fenster eine Arbeitsfläche nach links"
+
+#: kwinbindings.cpp:147
+msgid "Window One Desktop Up"
+msgstr "Fenster eine Arbeitsfläche nach oben"
+
+#: kwinbindings.cpp:148
+msgid "Window One Desktop Down"
+msgstr "Fenster eine Arbeitsfläche nach unten"
+
+#: kwinbindings.cpp:151
+#, kde-format
+msgid "Window to Screen %1"
+msgstr "Fenster auf Bildschirm %1"
+
+#: kwinbindings.cpp:153
+msgid "Window to Next Screen"
+msgstr "Fenster auf nächsten Bildschirm verschieben"
+
+#: kwinbindings.cpp:154
+msgid "Window to Previous Screen"
+msgstr "Fenster auf vorherigen Bildschirm verschieben"
+
+#: kwinbindings.cpp:155
+msgid "Show Desktop"
+msgstr "Arbeitsfläche anzeigen"
+
+#: kwinbindings.cpp:158
+#, kde-format
+msgid "Switch to Screen %1"
+msgstr "Auf Bildschirm %1 umschalten"
+
+#: kwinbindings.cpp:161
+msgid "Switch to Next Screen"
+msgstr "Zum nächsten Bildschirm umschalten"
+
+#: kwinbindings.cpp:162
+msgid "Switch to Previous Screen"
+msgstr "Zum vorherigen Bildschirm umschalten"
+
+#: kwinbindings.cpp:165
+msgid "Miscellaneous"
+msgstr "Verschiedenes"
+
+#: kwinbindings.cpp:166
+msgid "Kill Window"
+msgstr "Fenster beseitigen"
+
+#: kwinbindings.cpp:167
+msgid "Suspend Compositing"
+msgstr "Compositing aussetzen"
+
+#: kwinbindings.cpp:168
+msgid "Invert Screen Colors"
+msgstr "Bildschirmfarben umkehren"
+
+#: main.cpp:246
+msgid ""
+"kwin: it looks like there's already a window manager running. kwin not "
+"started.\n"
+msgstr ""
+"KWin: anscheinend läuft bereits ein Fenstermanager. KWin wird nicht "
+"gestartet.\n"
+
+#: main.cpp:274
+msgid ""
+"KWin is unstable.\n"
+"It seems to have crashed several times in a row.\n"
+"You can select another window manager to run:"
+msgstr ""
+"KWin ist instabil.\n"
+"Es scheint mehrfach hintereinander abgestürzt zu sein.\n"
+"Sie können einen anderen Fenstermanager auswählen:"
+
+#: main.cpp:331
+msgid ""
+"kwin: unable to claim manager selection, another wm running? (try using --"
+"replace)\n"
+msgstr ""
+"KWin: Manager-Auswahl nicht möglich. Läuft ein anderer Fenstermanager? "
+"(Versuchen Sie es mit --replace)\n"
+
+#: main.cpp:460
+msgid "KDE window manager"
+msgstr "Der KDE-Fenstermanager"
+
+#: main.cpp:541
+msgid "KWin"
+msgstr "KWin"
+
+#: main.cpp:545
+msgid "(c) 1999-2008, The KDE Developers"
+msgstr "© 1999–2008, die KDE-Entwickler"
+
+#: main.cpp:546
+msgid "Matthias Ettrich"
+msgstr "Matthias Ettrich"
+
+#: main.cpp:547
+msgid "Cristian Tibirna"
+msgstr "Cristian Tibirna"
+
+#: main.cpp:548
+msgid "Daniel M. Duley"
+msgstr "Daniel M. Duley"
+
+#: main.cpp:549
+msgid "Luboš Luňák"
+msgstr "Luboš Luňák"
+
+#: main.cpp:550
+msgid "Martin Gräßlin"
+msgstr "Martin Gräßlin"
+
+#: main.cpp:550
+msgid "Maintainer"
+msgstr "Betreuer"
+
+#: main.cpp:555
+msgid "Disable configuration options"
+msgstr "Einrichtungsoptionen deaktivieren"
+
+#: main.cpp:556
+msgid "Replace already-running ICCCM2.0-compliant window manager"
+msgstr "Bereits laufenden ICCCM2.0-kompatiblen Fenstermanager ersetzen"
+
+#: main.cpp:557
+msgid "Indicate that KWin has recently crashed n times"
+msgstr "Anzeigen, das KWin kürzlich n-mal abgestürzt ist"
+
+#: scene_opengl.cpp:358
+msgid "Desktop effects were restarted due to a graphics reset"
+msgstr ""
+"Arbeitsflächeneffekte wurden neu gestartet wegen der zurückgesetzten Grafik"
+
+#: scene_opengl.cpp:565
+#, kde-format
+msgid ""
+"<h1>OpenGL desktop effects not possible</h1>Your system cannot perform "
+"OpenGL Desktop Effects at the current resolution<br><br>You can try to "
+"select the XRender backend, but it might be very slow for this resolution as "
+"well.<br>Alternatively, lower the combined resolution of all screens to %1x"
+"%2 "
+msgstr ""
+"<h1>OpenGL-Desktop-Effekte nicht möglich</h1>Ihr System kann in der "
+"aktuellen Auflösung keine OpenGL-Desktop-Effekte ausführen.<br><br> Sie "
+"können das XRender-Backend probieren, aber bei dieser Auflösung wird es "
+"wahrscheinlich auch langsam arbeiten.<br>Eine Alternative ist, die "
+"kombinierte Auflösung aller Bildschirme auf %1 x %2 zu reduzieren."
+
+#: scene_opengl.cpp:572
+msgid ""
+"The demanded resolution exceeds the GL_MAX_VIEWPORT_DIMS limitation of your "
+"GPU and is therefore not compatible with the OpenGL compositor.<br>XRender "
+"does not know such limitation, but the performance will usually be impacted "
+"by the hardware limitations that restrict the OpenGL viewport size."
+msgstr ""
+"Die erwartete Auflösung überschreitet die GL_MAX_VIEWPORT_DIMS-Beschränkung "
+"Ihrer Grafikkarte (GPU) und ist daher nicht kompatibel mit dem OpenGL-"
+"Kompositor.<br/>XRender weist diese Beschränkung nicht auf, aber die "
+"Leistung wird normalerweise durch Hardware-Beschränkungen beeinträchtigt, "
+"die auch den Anzeigebereich in OpenGL begrenzen."
+
+#: scene_opengl.cpp:597
+#, kde-format
+msgid ""
+"<h1>OpenGL desktop effects might be unusable</h1>OpenGL Desktop Effects at "
+"the current resolution are supported but might be exceptionally slow."
+"<br>Also large windows will turn entirely black.<br><br>Consider to suspend "
+"compositing, switch to the XRender backend or lower the resolution to %1x%1."
+msgstr ""
+"<h1>OpenGL-Arbeitsflächeneffekte können unbrauchbar sein</h1>OpenGL-"
+"Arbeitsflächeneffekte werden bei der aktuellen Resolution unterstützt, sind "
+"möglicherweise aber außergewöhnlich langsam.<br>Außerdem werden große "
+"Fenster vollkommen schwarz erscheinen.<br><br>Überlegen Sie Compositing "
+"abzuschalten, zum XRender-Backend zu wechseln oder die Auflösung auf  %1 x "
+"%1 zu verringern."
+
+#: scene_opengl.cpp:603
+msgid ""
+"The demanded resolution exceeds the GL_MAX_TEXTURE_SIZE limitation of your "
+"GPU, thus windows of that size cannot be assigned to textures and will be "
+"entirely black.<br>Also this limit will often be a performance level barrier "
+"despite below GL_MAX_VIEWPORT_DIMS, because the driver might fall back to "
+"software rendering in this case."
+msgstr ""
+"Die angeforderte Auflösung übersteigt die maximale GL_MAX_TEXTURE_SIZE Ihrer "
+"GPU, daher können für Fenster in dieser Größe keine Texturen angewendet "
+"werden und sie werden vollkommen schwarz angezeigt.<br>Diese Begrenzung ist "
+"häufig auch eine  Leistungsbegrenzung, obwohl der Wert unter "
+"GL_MAX_VIEWPORT_DIMS, weil der Treiber in diesem Fall auf Software-Rendering "
+"ausweicht."
+
+#: tabbox/tabbox.cpp:354
+msgctxt "Special entry in alt+tab list for minimizing all windows"
+msgid "Show Desktop"
+msgstr "Arbeitsfläche anzeigen"
+
+#: tabbox/tabbox.cpp:509
+msgid "Walk Through Windows"
+msgstr "Zwischen Fenstern wechseln"
+
+#: tabbox/tabbox.cpp:510
+msgid "Walk Through Windows (Reverse)"
+msgstr "Zwischen Fenstern wechseln (Gegenrichtung)"
+
+#: tabbox/tabbox.cpp:511
+msgid "Walk Through Windows Alternative"
+msgstr "Alternatives Wechseln zwischen Fenstern"
+
+#: tabbox/tabbox.cpp:512
+msgid "Walk Through Windows Alternative (Reverse)"
+msgstr "Alternatives Wechseln zwischen Fenstern (Gegenrichtung)"
+
+#: tabbox/tabbox.cpp:513
+msgid "Walk Through Windows of Current Application"
+msgstr "Zwischen Fenstern der aktuellen Anwendung wechseln"
+
+#: tabbox/tabbox.cpp:514
+msgid "Walk Through Windows of Current Application (Reverse)"
+msgstr "Zwischen Fenstern der aktuellen Anwendung wechseln (Gegenrichtung)"
+
+#: tabbox/tabbox.cpp:515
+msgid "Walk Through Windows of Current Application Alternative"
+msgstr "Alternatives Wechseln zwischen Fenstern der aktuellen Anwendung"
+
+#: tabbox/tabbox.cpp:516
+msgid "Walk Through Windows of Current Application Alternative (Reverse)"
+msgstr ""
+"Alternatives Wechseln zwischen Fenstern der aktuellen Anwendung "
+"(Gegenrichtung)"
+
+#: tabbox/tabbox.cpp:517
+msgid "Walk Through Desktops"
+msgstr "Zwischen Arbeitsflächen umschalten"
+
+#: tabbox/tabbox.cpp:518
+msgid "Walk Through Desktops (Reverse)"
+msgstr "Zwischen Arbeitsflächen umschalten (Gegenrichtung)"
+
+#: tabbox/tabbox.cpp:519
+msgid "Walk Through Desktop List"
+msgstr "Nächster Eintrag in Arbeitsflächenliste"
+
+#: tabbox/tabbox.cpp:520
+msgid "Walk Through Desktop List (Reverse)"
+msgstr "Nächster Eintrag in Arbeitsflächenliste (Gegenrichtung)"
+
+#: useractions.cpp:197
+#, kde-format
+msgid ""
+"You have selected to show a window without its border.\n"
+"Without the border, you will not be able to enable the border again using "
+"the mouse: use the window operations menu instead, activated using the %1 "
+"keyboard shortcut."
+msgstr ""
+"Sie haben festgelegt, dass ein Fenster ohne Umrandung angezeigt werden "
+"soll.\n"
+"Der vorherige Zustand lässt sich nicht mit Hilfe der Maus wiederherstellen. "
+"Verwenden Sie stattdessen das Menü „Fensteraktionen“, das über den "
+"Tastenbefehl %1 aktiviert wird."
+
+#: useractions.cpp:209
+#, kde-format
+msgid ""
+"You have selected to show a window in fullscreen mode.\n"
+"If the application itself does not have an option to turn the fullscreen "
+"mode off you will not be able to disable it again using the mouse: use the "
+"window operations menu instead, activated using the %1 keyboard shortcut."
+msgstr ""
+"Sie haben festgelegt, dass das Fenster im Vollbildmodus angezeigt werden "
+"soll.\n"
+"Falls das Programm selbst über keine Möglichkeit verfügt, diesen Modus zu "
+"verlassen, können Sie das nicht mit Hilfe der Maus tun. Verwenden Sie "
+"stattdessen das Menü „Fensteraktionen“, das über den Tastenbefehl %1 "
+"aktiviert wird."
+
+#: useractions.cpp:273
+msgid "&Move"
+msgstr "&Verschieben"
+
+#: useractions.cpp:281
+msgid "Re&size"
+msgstr "&Größe ändern"
+
+#: useractions.cpp:287
+msgid "Keep &Above Others"
+msgstr "&Immer im Vordergrund"
+
+#: useractions.cpp:295
+msgid "Keep &Below Others"
+msgstr "Immer im &Hintergrund"
+
+#: useractions.cpp:303
+msgid "&Fullscreen"
+msgstr "V&ollbild"
+
+#: useractions.cpp:311
+msgid "Sh&ade"
+msgstr "Fen&sterheber"
+
+#: useractions.cpp:318
+msgid "&No Border"
+msgstr "Keine &Umrandung"
+
+#: useractions.cpp:327
+msgid "Window &Shortcut..."
+msgstr "&Kurzbefehl für Fenster ..."
+
+#: useractions.cpp:334
+msgid "&Special Window Settings..."
+msgstr "Spezielle Einstellungen für dieses &Fenster ..."
+
+#: useractions.cpp:338
+msgid "S&pecial Application Settings..."
+msgstr "Spezielle Einstellungen für dieses &Programm ..."
+
+#: useractions.cpp:345
+msgctxt ""
+"Entry in context menu of window decoration to open the configuration module "
+"of KWin"
+msgid "Window &Manager Settings..."
+msgstr "&Einstellungen für die Fensterverwaltung ..."
+
+#: useractions.cpp:350
+msgid "Mi&nimize"
+msgstr "&Minimieren"
+
+#: useractions.cpp:356
+msgid "Ma&ximize"
+msgstr "Ma&ximieren"
+
+#: useractions.cpp:367
+msgid "&Untab"
+msgstr "&Aus Gruppe lösen"
+
+#: useractions.cpp:373
+msgid "Close Entire &Group"
+msgstr "Gesamte Gruppe sch&ließen"
+
+#: useractions.cpp:386
+msgid "&More Actions"
+msgstr "&Weitere Aktionen"
+
+#: useractions.cpp:390
+msgid "&Close"
+msgstr "Sch&ließen"
+
+#: useractions.cpp:469
+msgid "&Extensions"
+msgstr "&Erweiterungen"
+
+#: useractions.cpp:523
+msgctxt "Switch to tab -> Previous"
+msgid "Previous"
+msgstr "Vorheriges"
+
+#: useractions.cpp:524
+msgctxt "Switch to tab -> Next"
+msgid "Next"
+msgstr "Nächstes"
+
+#: useractions.cpp:562
+msgctxt "There's no window available to be attached as tab to this one"
+msgid "None available"
+msgstr "Keins verfügbar"
+
+#: useractions.cpp:571
+msgid "Switch to Tab"
+msgstr "Zum Unterfenster wechseln"
+
+#: useractions.cpp:583
+msgid "&Attach as tab to"
+msgstr "&Als Unterfenster anhängen an"
+
+#: useractions.cpp:608
+msgid "Move To &Desktop"
+msgstr "Auf &Arbeitsfläche verschieben"
+
+#: useractions.cpp:625
+msgid "Move To &Screen"
+msgstr "Verschieben auf Bild&schirm:"
+
+#: useractions.cpp:643
+msgid "Ac&tivities"
+msgstr "A&ktivitäten"
+
+#: useractions.cpp:654
+msgid "&All Desktops"
+msgstr "&Alle Arbeitsflächen"
+
+#: useractions.cpp:680
+msgctxt "Create a new desktop and move there the window"
+msgid "&New Desktop"
+msgstr "&Neue Arbeitsfläche"
+
+#: useractions.cpp:700
+#, kde-format
+msgctxt "@item:inmenu List of all Screens to send a window to"
+msgid "Screen &%1"
+msgstr "Bildschirm &%1"
+
+#: useractions.cpp:717
+msgid "&All Activities"
+msgstr "&Alle Aktivitäten"
+
+#: useractions.cpp:925
+#, kde-format
+msgctxt "'%1' is a keyboard shortcut like 'ctrl+w'"
+msgid "<b>%1</b> is already in use"
+msgstr "<b>%1</b> wird bereits verwendet"
+
+#: useractions.cpp:927
+#, kde-format
+msgctxt "keyboard shortcut '%1' is used by action '%2' in application '%3'"
+msgid "<b>%1</b> is used by %2 in %3"
+msgstr "<b>%1</b> wird bereits als %2 in %3 verwendet"
+
+#: useractions.cpp:1043
+#, kde-format
+msgid "Activate Window (%1)"
+msgstr "Fenster Aktivieren (%1)"
+
+#: useractions.cpp:1416
+msgid ""
+"The window manager is configured to consider the screen with the mouse on it "
+"as active one.\n"
+"Therefore it is not possible to switch to a screen explicitly."
+msgstr ""
+"Die Fensterverwaltung ist so eingerichtet, dass der Bildschirm als der "
+"aktive erkannt wird auf dem sich der Mauszeiger befindet.\n"
+"Es ist daher nicht möglich, ausdrücklich auf einen Bildschirm zu wechseln."
+
+#: virtualdesktops.cpp:332 virtualdesktops.cpp:394
+#, kde-format
+msgid "Desktop %1"
+msgstr "Arbeitsfläche %1"
+
+#: virtualdesktops.cpp:424
+msgid "Desktop Switching"
+msgstr "Auf andere Arbeitsfläche umschalten"
+
+#: virtualdesktops.cpp:427
+msgid "Switch to Next Desktop"
+msgstr "Zur nächsten Arbeitsfläche umschalten"
+
+#: virtualdesktops.cpp:428
+msgid "Switch to Previous Desktop"
+msgstr "Zur vorherigen Arbeitsfläche umschalten"
+
+#: virtualdesktops.cpp:429
+msgid "Switch One Desktop to the Right"
+msgstr "Eine Arbeitsfläche nach rechts"
+
+#: virtualdesktops.cpp:430
+msgid "Switch One Desktop to the Left"
+msgstr "Eine Arbeitsfläche nach links"
+
+#: virtualdesktops.cpp:431
+msgid "Switch One Desktop Up"
+msgstr "Eine Arbeitsfläche nach oben"
+
+#: virtualdesktops.cpp:432
+msgid "Switch One Desktop Down"
+msgstr "Eine Arbeitsfläche nach unten"
+
+#: virtualdesktops.cpp:438
+#, kde-format
+msgid "Switch to Desktop %1"
+msgstr "Auf Arbeitsfläche %1 umschalten"
+
+#: workspace.cpp:1373
+msgctxt "Introductory text shown in the support information."
+msgid ""
+"KWin Support Information:\n"
+"The following information should be used when requesting support on e.g. "
+"http://forum.kde.org.\n"
+"It provides information about the currently running instance, which options "
+"are used,\n"
+"what OpenGL driver and which effects are running.\n"
+"Please post the information provided underneath this introductory text to a "
+"paste bin service\n"
+"like http://paste.kde.org instead of pasting into support threads.\n"
+msgstr ""
+"KWin-Unterstützungsinformationen:\n"
+"Benutzen Sie die folgenden Informationen, wenn Sie nach Unterstützung "
+"fragen, z. B. auf http://forum.kde.org.\n"
+"Sie enthalten Informationen über die momentan laufende Instanz, welche "
+"Optionen verwendet werden,\n"
+"welcher OpenGL-Treiber verwendet wird und welche Effekte laufen.\n"
+"Bitte geben Sie die untenstehenden Informationen bei einem Pastebin-Dienst "
+"wie http://paste.kde.org ein, anstatt sie direkt in die Hilfediskussionen zu "
+"schreiben.\n"
+
+#~ msgid ""
+#~ "Defines whether windows from the current desktop or from all desktops are "
+#~ "included. Default:OnlyCurrentDesktopClients"
+#~ msgstr ""
+#~ "Legt fest, ob Fenster auf der aktuellen Arbeitsfläche oder auf allen "
+#~ "Arbeitsflächen eingeschlossen werden. Standard:OnlyCurrentDesktopClients"
+
+#~ msgid ""
+#~ "Defines whether windows from the current activity or from all activities "
+#~ "are included.Default:OnlyCurrentActivityClients"
+#~ msgstr ""
+#~ "Legt fest, ob Fenster der aktuellen Aktivität oder von allen Aktivitäten "
+#~ "eingeschlossen werden. Standard:OnlyCurrentActivityClients"
+
+#~ msgid ""
+#~ "Defines which windows from the current application or from all "
+#~ "applications are included.Default:AllWindowsAllApplications"
+#~ msgstr ""
+#~ "Legt fest, welche Fenster der aktuellen Anwendung oder von allen "
+#~ "Anwendungen eingeschlossen werden. Standard:AllWindowsAllApplications"
+
+#~ msgid ""
+#~ "Defines which windows are included based on whether they are minimized or "
+#~ "not.Default:IgnoreMinimizedStatus"
+#~ msgstr ""
+#~ "Legt basierend auf deren Minimiert-Status fest, welche Fenster "
+#~ "inbegriffen sind. Standard: IgnoreMinimizedStatus"
+
+#~ msgid "Default:IgnoreMultiScreen"
+#~ msgstr "Standard:IgnoreMultiScreen"
+
+#~ msgid "Block Global Shortcuts"
+#~ msgstr "Globale Tastenkürzel blockieren"
+
+#~ msgid ""
+#~ "<p>The window \"<b>%2</b>\" is not responding. It belongs to the "
+#~ "application <b>%1</b> (Process ID = %3, hostname = %4).</p><p>Do you wish "
+#~ "to terminate the application process <em>including <b>all</b> of its "
+#~ "child windows</em>?<br /><b>Any unsaved data will be lost.</b></p>"
+#~ msgstr ""
+#~ "<p>Das Fenster „<b>%2</b>“ reagiert nicht. Es gehört zum Programm <b>%1</"
+#~ "b> (PID: %3, Rechner: %4).</p><p>Möchten Sie dieses Programm "
+#~ "<em>inklusive <b>aller</b> Kindprozesse</em> beenden? In diesem Fall "
+#~ "gehen alle ungesicherten Daten darin verloren.</p>"
+
+#~ msgid "Window '%1' demands attention."
+#~ msgstr "Das Fenster „%1“ erfordert Aufmerksamkeit."
+
+#~ msgid "Layout changed to %1"
+#~ msgstr "Das Layout ist zu „%1“ geändert worden"
+
+#~ msgctxt "Spiral tiling layout"
+#~ msgid "Spiral"
+#~ msgstr "Spirale"
+
+#~ msgctxt "Two-column horizontal tiling layout"
+#~ msgid "Columns"
+#~ msgstr "Spalten"
+
+#~ msgctxt "Floating layout, windows aren't tiled at all"
+#~ msgid "Floating"
+#~ msgstr "Schwebend"
+
+#~ msgctxt "When in tiling mode, toggle's the window's floating/tiled state"
+#~ msgid "&Float Window"
+#~ msgstr "Fenster &schweben lassen"
+
+# ... bis jemandem eine bessere Übersetzung einfällt, lassen wir den String aus KDE 4.8.
+#~ msgid "Tab behind"
+#~ msgstr "Fenster gruppieren mit"
+
+#~ msgid "Ad&vanced"
+#~ msgstr "Er&weitert"
+
+#~ msgid "Configur&e Window Behavior..."
+#~ msgstr "&Fensterverhalten festlegen ..."
+
+#~ msgid "*** No Windows ***"
+#~ msgstr "*** Keine Fenster ***"
+
+#~ msgid "Load the script testing dialog"
+#~ msgstr "Den Testdialog für Skripte laden"
+
+#~ msgid "Remove &From Group"
+#~ msgstr "Aus Gruppe &lösen"
+
+#~ msgid "To the Left"
+#~ msgstr "Nach links"
+
+#~ msgid "To the Right"
+#~ msgstr "Nach rechts"
+
+#~ msgid "Move Window to Group"
+#~ msgstr "Fenster zur Gruppe verschieben"
+
+#~ msgid "&Opacity"
+#~ msgstr "&Deckkraft"
+
+#~ msgid ""
+#~ "XRender/XFixes extensions are not available and only XRender support is "
+#~ "compiled."
+#~ msgstr ""
+#~ "XRender/XFixes-Erweiterungen sind nicht verfügbar und nur XRender-"
+#~ "Unterstützung ist einkompiliert."
+
+#~ msgid ""
+#~ "Compositing was disabled at compile time.\n"
+#~ "It is likely Xorg development headers were not installed."
+#~ msgstr ""
+#~ "Compositing wurde zum Zeitpunkt der Installation nicht eingebaut.\n"
+#~ "Möglicherweise waren die X.Org-Header nicht installiert."
+
+#~ msgid "Tiling"
+#~ msgstr "Kacheln"
+
+#~ msgid "Enable/Disable Tiling"
+#~ msgstr "Kacheln ein-/ausschalten"
+
+#~ msgid "Toggle Floating"
+#~ msgstr "Schwebende Fenster ein-/ausschalten"
+
+#~ msgid "Switch Focus Left"
+#~ msgstr "Fokus nach links legen"
+
+#~ msgid "Switch Focus Right"
+#~ msgstr "Fokus nach rechts legen"
+
+#~ msgid "Switch Focus Up"
+#~ msgstr "Fokus nach oben legen"
+
+#~ msgid "Switch Focus Down"
+#~ msgstr "Fokus nach unten legen"
+
+#~ msgid "Move Window Left"
+#~ msgstr "Fenster nach links verschieben"
+
+#~ msgid "Move Window Right"
+#~ msgstr "Fenster nach rechts verschieben"
+
+#~ msgid "Move Window Up"
+#~ msgstr "Fenster nach oben verschieben"
+
+#~ msgid "Move Window Down"
+#~ msgstr "Fenster nach unten verschieben"
+
+#~ msgid "Next Layout"
+#~ msgstr "Nächstes Layout"
+
+#~ msgid "Tiling Disabled"
+#~ msgstr "Kacheln deaktiviert"
+
+#~ msgid "Tiling Enabled"
+#~ msgstr "Kacheln aktiviert"
+
+#~ msgid ""
+#~ "Desktop effects were too slow and have been suspended.\n"
+#~ "You can disable functionality checks in System Settings (on the Advanced "
+#~ "tab in Desktop Effects)."
+#~ msgstr ""
+#~ "Die Arbeitsflächeneffekte sind zu langsam und werden angehalten.\n"
+#~ "Die Funktionsprüfungen können in den Systemeinstellungen abgeschaltet "
+#~ "werden (Erweiterte Einstellungen in Arbeitsflächeneffekten)."
+
+#~ msgid ""
+#~ "Desktop effects were too slow and have been suspended.\n"
+#~ "If this was only a temporary problem, you can resume using the '%1' "
+#~ "shortcut.\n"
+#~ "You can disable functionality checks in System Settings (on the Advanced "
+#~ "tab in Desktop Effects)."
+#~ msgstr ""
+#~ "Die Arbeitsflächeneffekte sind zu langsam und werden angehalten.\n"
+#~ "Falls es sich lediglich um ein vorübergehendes Problem handelt, können "
+#~ "sie mit Hilfe des Kurzbefehls „%1“ fortgesetzt werden.\n"
+#~ "Die Funktionsprüfungen können in den Systemeinstellungen abgeschaltet "
+#~ "werden (Erweiterte Einstellungen in Arbeitsflächeneffekten)."
+
+#~ msgid "Mouse Emulation"
+#~ msgstr "Maus-Emulation"
+
+#~ msgid ""
+#~ "\n"
+#~ "KWin will now exit..."
+#~ msgstr ""
+#~ "\n"
+#~ "KWin wird jetzt beendet ..."
+
+#~ msgid "Window to Desktop 2"
+#~ msgstr "Fenster auf Arbeitsfläche 2"
+
+#~ msgid "Window to Desktop 3"
+#~ msgstr "Fenster auf Arbeitsfläche 3"
+
+#~ msgid "Window to Desktop 4"
+#~ msgstr "Fenster auf Arbeitsfläche 4"
+
+#~ msgid "Window to Desktop 5"
+#~ msgstr "Fenster auf Arbeitsfläche 5"
+
+#~ msgid "Window to Desktop 6"
+#~ msgstr "Fenster auf Arbeitsfläche 6"
+
+#~ msgid "Window to Desktop 7"
+#~ msgstr "Fenster auf Arbeitsfläche 7"
+
+#~ msgid "Window to Desktop 8"
+#~ msgstr "Fenster auf Arbeitsfläche 8"
+
+#~ msgid "Window to Desktop 9"
+#~ msgstr "Fenster auf Arbeitsfläche 9"
+
+#~ msgid "Window to Desktop 10"
+#~ msgstr "Fenster auf Arbeitsfläche 10"
+
+#~ msgid "Window to Desktop 11"
+#~ msgstr "Fenster auf Arbeitsfläche 11"
+
+#~ msgid "Window to Desktop 12"
+#~ msgstr "Fenster auf Arbeitsfläche 12"
+
+#~ msgid "Window to Desktop 13"
+#~ msgstr "Fenster auf Arbeitsfläche 13"
+
+#~ msgid "Window to Desktop 14"
+#~ msgstr "Fenster auf Arbeitsfläche 14"
+
+#~ msgid "Window to Desktop 15"
+#~ msgstr "Fenster auf Arbeitsfläche 15"
+
+#~ msgid "Window to Desktop 16"
+#~ msgstr "Fenster auf Arbeitsfläche 16"
+
+#~ msgid "Window to Desktop 17"
+#~ msgstr "Fenster auf Arbeitsfläche 17"
+
+#~ msgid "Window to Desktop 18"
+#~ msgstr "Fenster auf Arbeitsfläche 18"
+
+#~ msgid "Window to Desktop 19"
+#~ msgstr "Fenster auf Arbeitsfläche 19"
+
+#~ msgid "Window to Desktop 20"
+#~ msgstr "Fenster auf Arbeitsfläche 20"
+
+#~ msgid "Window to Screen 0"
+#~ msgstr "Fenster auf Bildschirm 0"
+
+#~ msgid "Window to Screen 2"
+#~ msgstr "Fenster auf Bildschirm 2"
+
+#~ msgid "Window to Screen 3"
+#~ msgstr "Fenster auf Bildschirm 3"
+
+#~ msgid "Window to Screen 4"
+#~ msgstr "Fenster auf Bildschirm 4"
+
+#~ msgid "Window to Screen 5"
+#~ msgstr "Fenster auf Bildschirm 5"
+
+#~ msgid "Window to Screen 6"
+#~ msgstr "Fenster auf Bildschirm 6"
+
+#~ msgid "Window to Screen 7"
+#~ msgstr "Fenster auf Bildschirm 7"
+
+#~ msgid "Switch to Desktop 2"
+#~ msgstr "Auf Arbeitsfläche 2 umschalten"
+
+#~ msgid "Switch to Desktop 3"
+#~ msgstr "Auf Arbeitsfläche 3 umschalten"
+
+#~ msgid "Switch to Desktop 4"
+#~ msgstr "Auf Arbeitsfläche 4 umschalten"
+
+#~ msgid "Switch to Desktop 5"
+#~ msgstr "Auf Arbeitsfläche 5 umschalten"
+
+#~ msgid "Switch to Desktop 6"
+#~ msgstr "Auf Arbeitsfläche 6 umschalten"
+
+#~ msgid "Switch to Desktop 7"
+#~ msgstr "Auf Arbeitsfläche 7 umschalten"
+
+#~ msgid "Switch to Desktop 8"
+#~ msgstr "Auf Arbeitsfläche 8 umschalten"
+
+#~ msgid "Switch to Desktop 9"
+#~ msgstr "Auf Arbeitsfläche 9 umschalten"
+
+#~ msgid "Switch to Desktop 10"
+#~ msgstr "Auf Arbeitsfläche 10 umschalten"
+
+#~ msgid "Switch to Desktop 11"
+#~ msgstr "Auf Arbeitsfläche 11 umschalten"
+
+#~ msgid "Switch to Desktop 12"
+#~ msgstr "Auf Arbeitsfläche 12 umschalten"
+
+#~ msgid "Switch to Desktop 13"
+#~ msgstr "Auf Arbeitsfläche 13 umschalten"
+
+#~ msgid "Switch to Desktop 14"
+#~ msgstr "Auf Arbeitsfläche 14 umschalten"
+
+#~ msgid "Switch to Desktop 15"
+#~ msgstr "Auf Arbeitsfläche 15 umschalten"
+
+#~ msgid "Switch to Desktop 16"
+#~ msgstr "Auf Arbeitsfläche 16 umschalten"
+
+#~ msgid "Switch to Desktop 17"
+#~ msgstr "Auf Arbeitsfläche 17 umschalten"
+
+#~ msgid "Switch to Desktop 18"
+#~ msgstr "Auf Arbeitsfläche 18 umschalten"
+
+#~ msgid "Switch to Desktop 19"
+#~ msgstr "Auf Arbeitsfläche 19 umschalten"
+
+#~ msgid "Switch to Desktop 20"
+#~ msgstr "Auf Arbeitsfläche 20 umschalten"
+
+#~ msgid "Switch to Screen 0"
+#~ msgstr "Auf Bildschirm 0 umschalten"
+
+#~ msgid "Switch to Screen 2"
+#~ msgstr "Auf Bildschirm 2 umschalten"
+
+#~ msgid "Switch to Screen 3"
+#~ msgstr "Auf Bildschirm 3 umschalten"
+
+#~ msgid "Switch to Screen 4"
+#~ msgstr "Auf Bildschirm 4 umschalten"
+
+#~ msgid "Switch to Screen 5"
+#~ msgstr "Auf Bildschirm 5 umschalten"
+
+#~ msgid "Switch to Screen 6"
+#~ msgstr "Auf Bildschirm 6 umschalten"
+
+#~ msgid "Switch to Screen 7"
+#~ msgstr "Auf Bildschirm 7 umschalten"
+
+#~ msgid "<center><b>%1</b></center>"
+#~ msgstr "<center><b>%1</b></center>"
+
+#~ msgid "Menu"
+#~ msgstr "Menü"
+
+#~ msgid "Not on all desktops"
+#~ msgstr "Nicht auf allen Arbeitsflächen"
+
+#~ msgid "On all desktops"
+#~ msgstr "Auf allen Arbeitsflächen"
+
+#~ msgid "Help"
+#~ msgstr "Hilfe"
+
+#~ msgid "Minimize"
+#~ msgstr "Minimieren"
+
+#~ msgid "Restore"
+#~ msgstr "Wiederherstellen"
+
+#~ msgid "Maximize"
+#~ msgstr "Maximieren"
+
+#~ msgid "Close"
+#~ msgstr "Schließen"
+
+#~ msgid "Do not keep above others"
+#~ msgstr "Nicht im Vordergrund halten"
+
+#~ msgid "Keep above others"
+#~ msgstr "Im Vordergrund halten"
+
+#~ msgid "Do not keep below others"
+#~ msgstr "Nicht im Hintergrund halten"
+
+#~ msgid "Keep below others"
+#~ msgstr "Im Hintergrund halten"
+
+#~ msgid "Unshade"
+#~ msgstr "Fensterheber rückgängig"
+
+#~ msgid "Shade"
+#~ msgstr "Fensterheber"
+
+#~ msgid "No window decoration plugin library was found."
+#~ msgstr "Es ist kein Bibliotheksmodul für Fensterdekorationen auffindbar."
+
+#~ msgid "The default decoration plugin is corrupt and could not be loaded."
+#~ msgstr ""
+#~ "Das standardmäßige Dekorations-Modul ist fehlerhaft und lässt sich nicht "
+#~ "laden."
+
+#~ msgid "The library %1 is not a KWin plugin."
+#~ msgstr "Die Bibliothek %1 ist kein KWin-Modul."
+
+#~ msgid "Window Screenshot to Clipboard"
+#~ msgstr "Fenster-Bildschirmfoto in die Zwischenablage"
+
+#~ msgid "Desktop Screenshot to Clipboard"
+#~ msgstr "Arbeitsflächen-Bildschirmfoto in die Zwischenablage"
+
+#, fuzzy
+#~| msgid "Toggle Video Recording"
+#~ msgid "Toggle Tiling"
+#~ msgstr "Video-Aufnahme ein-/ausschalten"
+
+#, fuzzy
+#~| msgid "Decorations:"
+#~ msgid "Decrease Ratio"
+#~ msgstr "Dekorationen:"
+
+#, fuzzy
+#~| msgid "Left"
+#~ msgid "Move Left"
+#~ msgstr "Links"
+
+#, fuzzy
+#~| msgid "Right"
+#~ msgid "Move Right"
+#~ msgstr "Rechts"
+
+#, fuzzy
+#~| msgid "&Move"
+#~ msgid "Move Up"
+#~ msgstr "&Verschieben"
+
+#, fuzzy
+#~| msgid "Move Window"
+#~ msgid "Move Down"
+#~ msgstr "Fenster verschieben"
+
+#, fuzzy
+#~| msgid "Walk Through Windows"
+#~ msgid "Walk Through Grouped Windows"
+#~ msgstr "Zwischen Fenstern umschalten"
+
+#, fuzzy
+#~| msgid "Walk Through Windows (Reverse)"
+#~ msgid "Walk Through Grouped Windows (Reverse)"
+#~ msgstr "Zwischen Fenstern umschalten (Gegenrichtung)"
+
+#, fuzzy
+#~| msgid "Switch to Screen 0"
+#~ msgid "Switch to group window"
+#~ msgstr "Auf Bildschirm 0 umschalten"
+
+#~ msgid "kwin: failure during initialization; aborting"
+#~ msgstr "Kwin: Initialisierung fehlgeschlagen; Abbruch."
+
+#~ msgid "Terminate"
+#~ msgstr "Beenden"
+
+#~ msgid "Keep Running"
+#~ msgstr "Nicht beenden"
+
+#~ msgid "Desktop Cube"
+#~ msgstr "Arbeitsflächenwürfel"
+
+#~ msgctxt "@title:tab Basic Settings"
+#~ msgid "Basic"
+#~ msgstr "Einfach"
+
+#~ msgctxt "@title:tab Advanced Settings"
+#~ msgid "Advanced"
+#~ msgstr "Erweitert"
+
+#~ msgid "Top"
+#~ msgstr "Oben"
+
+#~ msgid "Top-Right"
+#~ msgstr "Oben-Rechts"
+
+#~ msgid "Bottom-Right"
+#~ msgstr "Unten-Rechts"
+
+#~ msgid "Bottom"
+#~ msgstr "Unten"
+
+#~ msgid "Bottom-Left"
+#~ msgstr "Unten-Links"
+
+#~ msgid "Top-Left"
+#~ msgstr "Oben-Links"
+
+#~ msgid "Center"
+#~ msgstr "Mittig"
+
+#~ msgid "Toggle Invert Effect"
+#~ msgstr "Invertieren-Effekt umschalten"
+
+#~ msgid "Toggle Invert Effect on Window"
+#~ msgstr "Invertieren-Effekt für Fenster umschalten"
+
+#~ msgid "Clear All Mouse Marks"
+#~ msgstr "Alle Mausspuren entfernen"
+
+#~ msgid "Clear Last Mouse Mark"
+#~ msgstr "Letzte Mausspur entfernen"
+
+#~ msgid "Clear Mouse Marks"
+#~ msgstr "Mausspuren entfernen"
+
+#~ msgid "Toggle Present Windows (Current desktop)"
+#~ msgstr "Fenster der aktuellen Arbeitsfläche anzeigen"
+
+#~ msgid "Toggle Present Windows (All desktops)"
+#~ msgstr "Fenster aller Arbeitsflächen anzeigen"
+
+#~ msgid ""
+#~ "Filter:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Filter:\n"
+#~ "%1"
+
+#~ msgctxt "@action Enables/Disables an effect that makes windows more sharp"
+#~ msgid "Toggle Sharpen Effect"
+#~ msgstr "Schärfen-Effekt ein-/ausschalten"
+
+#~ msgid "Snow"
+#~ msgstr "Schnee"
+
+#~ msgid "Toggle Snow on Desktop"
+#~ msgstr "Schneefall auf der Arbeitsfläche ein-/ausschalten"
+
+#~ msgid "Toggle Thumbnail for Current Window"
+#~ msgstr "Vorschaubild für aktuelles Fenster ein-/ausschalten"
+
+#~ msgid "Hold Ctrl+Meta keys to see where the mouse cursor is."
+#~ msgstr ""
+#~ "Halten Sie Strg+Meta gedrückt, um zu sehen wo sich der Mauszeiger "
+#~ "befindet."
+
+#~ msgid "Path to save video:"
+#~ msgstr "Speicherort für Video:"
+
+#~ msgid "None"
+#~ msgstr "Niemals"
+
+#~ msgid "X offset:"
+#~ msgstr "X-Verschiebung:"
+
+#~ msgid "Y offset:"
+#~ msgstr "Y-Verschiebung:"
+
+#~ msgid "Shadow opacity:"
+#~ msgstr "Schatten-Deckkraft:"
+
+#~ msgid "Shadow fuzziness:"
+#~ msgstr "Schatten-Unschärfe:"
+
+#~ msgid "Shadow size (relative to window):"
+#~ msgstr "Schatten-Größe (relativ zum Fenster):"
+
+#~ msgid "Shadow color:"
+#~ msgstr "Schatten-Farbe:"
+
+#~ msgid "Active window has stronger shadow"
+#~ msgstr "Aktives Fenster wirft stärkeren Schatten"
+
+#~ msgid "Animate desktop changes"
+#~ msgstr "Arbeitsflächenänderungen animieren"
+
+#~ msgid "Activate when cursor is at a specific edge or corner of the screen:"
+#~ msgstr ""
+#~ "Aktivieren, wenn sich der Mauszeiger in einer bestimmten Ecke oder am "
+#~ "Rand des Bildschirms befindet:"
+
+#~ msgid "Toggle Expose Effect"
+#~ msgstr "Aufdeck-Effekt umschalten"
+
+#~ msgid "Toggle Expose Effect (incl. other desktops)"
+#~ msgstr "Aufdecken-Effekt ein-/ausschalten (inkl. anderer Arbeitsflächen)"
+
+#~ msgid "Draw window caption on top of window"
+#~ msgstr "Fenstertitel über dem Fenster anzeigen"
+
+#~ msgid "for windows on all desktops: "
+#~ msgstr "für Fenster auf allen Arbeitsflächen:"
+
+#~ msgid "Changes opacity of following elements:"
+#~ msgstr "Ändert die Undurchsichtigkeit der folgenden Elemente:"
+
+#, fuzzy
+#~| msgid "Raise Window"
+#~ msgid "Inactive windows:"
+#~ msgstr "Fenster nach vorne"
+
+#~ msgid "Moved/resized windows:"
+#~ msgstr "Verschobene/größenveränderte Fenster:"
+
+#~ msgid "Dialogs:"
+#~ msgstr "Dialoge:"
+
+#~ msgid "ClearMouseMarks"
+#~ msgstr "Mausspuren entfernen"
+
+#, fuzzy
+#~| msgid "Keep Window on All Desktops"
+#~ msgid "for windows on all desktops: Ctrl+F11"
+#~ msgstr "Fenster auf allen Arbeitsflächen anzeigen"

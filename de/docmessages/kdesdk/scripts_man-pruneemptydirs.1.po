@@ -1,0 +1,154 @@
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: scripts_man-pruneemptydirs.1\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:10+0000\n"
+"PO-Revision-Date: 2006-12-27 19:46+0100\n"
+"Last-Translator: Thomas Reitelbach <tr@erdfunkstelle.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: branches/KDE/3.5/kdesdk/doc/scripts/man-"
+"pruneemptydirs.1.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 385546\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: author
+#: man-pruneemptydirs.1.docbook:8
+#, no-c-format
+msgid ""
+"<personname><firstname>Ben</firstname><surname>Burton</surname></"
+"personname><email>bab@debian.org</email>"
+msgstr ""
+"<personname><firstname>Ben</firstname><surname>Burton</surname></"
+"personname><email>bab@debian.org</email>"
+
+#. Tag: date
+#: man-pruneemptydirs.1.docbook:9
+#, no-c-format
+msgid "April 8, 2003"
+msgstr "8. April 2003"
+
+#. Tag: manvolnum
+#: man-pruneemptydirs.1.docbook:14
+#, no-c-format
+msgid "<manvolnum>1</manvolnum>"
+msgstr "<manvolnum>1</manvolnum>"
+
+#. Tag: refpurpose
+#: man-pruneemptydirs.1.docbook:19
+#, no-c-format
+msgid "Detects stale source directories in a CVS tree"
+msgstr "Spürt verwaiste Quelltext-Ordner in einem CVS-System auf."
+
+#. Tag: cmdsynopsis
+#: man-pruneemptydirs.1.docbook:23
+#, no-c-format
+msgid "<command>pruneemptydirs</command> <group><option>-f</option></group>"
+msgstr "<command>pruneemptydirs</command> <group><option>-f</option></group>"
+
+#. Tag: title
+#: man-pruneemptydirs.1.docbook:30
+#, no-c-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. Tag: para
+#: man-pruneemptydirs.1.docbook:32
+#, no-c-format
+msgid ""
+"<command>pruneemptydirs</command> is used to clean up a local CVS tree. It "
+"detects directories containing remnants of old stuff which has been removed "
+"from the CVS. Such stale directories often break compilation. The current "
+"directory and all directories beneath it will be examined."
+msgstr ""
+"<command>pruneemptydirs</command> wird zum Aufräumen einer lokalen CVS-"
+"Arbeitskopie verwendet. Es spürt Ordner mit Überresten von Code-Teilen auf, "
+"die bereits aus dem CVS-System entfernt wurden. Solche Überbleibsel "
+"verursachen oftmals Fehler beim Kompilieren. Durchsucht wird der aktuelle "
+"und alle darunterliegenden Ordner."
+
+#. Tag: para
+#: man-pruneemptydirs.1.docbook:38
+#, no-c-format
+msgid ""
+"Note that this tool does not remove anything; it simply prints what to do as "
+"a series of remove commands. You can copy and paste these commands, or use "
+"them with eval in a script."
+msgstr ""
+"Dieses Werkzeug entfernt nichts, sondern listet nur eine Reihe Befehle auf, "
+"mit denen die Überbleibsel entfernt werden könnten. Sie können diese Befehle "
+"kopieren und einfügen oder mittels eval in einem Skript weiterverwenden."
+
+#. Tag: para
+#: man-pruneemptydirs.1.docbook:42
+#, no-c-format
+msgid ""
+"This tool works better if the source directory is not the same as the build "
+"directory, since it will not print directories containing old executables."
+msgstr ""
+"Dieses Werkzeug funktioniert besser, wenn der Quellordner nicht zum "
+"Kompilieren verwendet wird, weil das Programm dann keine Ordner mit alten "
+"Binärdateien ausgibt."
+
+#. Tag: para
+#: man-pruneemptydirs.1.docbook:46
+#, no-c-format
+msgid "This utility is part of the KDE Software Development Kit."
+msgstr ""
+"Dieses Hilfsprogramm ist Teil der &kde; Software-Entwicklungswerkzeuge."
+
+#. Tag: title
+#: man-pruneemptydirs.1.docbook:51
+#, no-c-format
+msgid "Options"
+msgstr "Optionen"
+
+#. Tag: option
+#: man-pruneemptydirs.1.docbook:55
+#, no-c-format
+msgid "<option>-f</option>"
+msgstr "<option>-f</option>"
+
+#. Tag: para
+#: man-pruneemptydirs.1.docbook:56
+#, no-c-format
+msgid ""
+"Actually perform the deletions instead of just printing them out. Use this "
+"option with care."
+msgstr ""
+"Die gefundenen Dateien tatsächlich löschen, anstatt sie nur aufzulisten. "
+"Verwenden Sie diese Option mit Bedacht."
+
+#. Tag: title
+#: man-pruneemptydirs.1.docbook:63
+#, no-c-format
+msgid "Authors"
+msgstr "Autoren"
+
+#. Tag: para
+#: man-pruneemptydirs.1.docbook:65
+#, no-c-format
+msgid ""
+"<command>pruneemptydirs</command> was written by &David.Faure; &David.Faure."
+"mail;"
+msgstr ""
+"<command>pruneemptydirs</command> wurde von &David.Faure; &David.Faure.mail; "
+"geschrieben."
+
+#. Tag: para
+#: man-pruneemptydirs.1.docbook:66
+#, no-c-format
+msgid ""
+"This manual page was prepared by <personname><firstname>Ben</"
+"firstname><surname>Burton</surname></personname><email>bab@debian.org</email>"
+msgstr ""
+"Diese Handbuchseite wurde geschrieben von <personname><firstname>Ben</"
+"firstname><surname>Burton</surname></personname><email>bab@debian.org</email>"
+
+#~ msgid "pruneemptydirs"
+#~ msgstr "pruneemptydirs"

@@ -1,0 +1,57 @@
+In this file:
+
+* What it is
+* requirements
+* language directories
+* template directory
+
+What it is
+----------
+
+Do you wonder what l10n stands for?  Just count the letters between the
+first L and the last N in the word "localization" ...
+
+requirements
+------------
+
+The *.po files contained in the subdirectories use a new message context
+feature and kde-format flags, available in Gettext 0.17 and newer.
+If your Gettext version is too old, you'll receive an error message in KBabel 
+when saving a file and Catalogmanager will display a question mark on those 
+files, which contain the new keyword "msgctxt". To avoid those annoying error 
+messages in KBabel and Catalogmanager translators have two options:
+
+  Option 1: Disable two checks in catalogmanager:
+            - Project -> Configure -> Save ->    Check syntax of file when saving
+            - Project -> Configure -> Folders -> Run msgfmt before processing a file
+
+  Option 2: Install Gettext 0.17 or newer
+
+language directories
+--------------------
+
+For every KDE supported language there is one directory that contains *.po
+files as well as translated documentation files (*.docbook). To enjoy the
+translated programs and languages, one has to install the files from the
+respective directory and select Control Center -> Personalization -> Country
+& Language -> Language.
+
+As long as no locale is installed, all programs and documentation appear in
+American English.
+
+You don't need to install all locales, just select the directory you want.
+
+To compile and install a language, for instance "de":
+
+  ./scripts/autogen.sh de
+  mkdir de-build
+  cd de-build
+  cmake -DCMAKE_INSTALL_PREFIX=$KDEDIR ../de
+  make
+  su -c "make install"
+
+template directory
+------------------
+
+The template directory contains templates that only translators might use. Please
+have a look at the KBabel program from the kdesdk package for further information.

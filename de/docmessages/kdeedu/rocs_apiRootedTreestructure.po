@@ -1,0 +1,185 @@
+#
+# Burkhard Lück <lueck@hube-lueck.de>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: 2013-07-31 16:44+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: apiRootedTreestructure.docbook:2
+#, no-c-format
+msgid "Scripting API for Rooted Tree Backend"
+msgstr "Skript-API für das Backend „Wurzelbaum“"
+
+#. Tag: title
+#: apiRootedTreestructure.docbook:4
+#, no-c-format
+msgid "Rooted Tree Data Structure"
+msgstr "Datenstruktur „Wurzelbaum“"
+
+#. Tag: para
+#: apiRootedTreestructure.docbook:5
+#, no-c-format
+msgid ""
+"The data structure properties dialog allows access to configure settings "
+"specific to the Graph backend. There, by checking the <guilabel>Show all "
+"pointers</guilabel> property, all pointers between the tree nodes are shown. "
+"If unchecked, multiple pointers between same nodes are collapsed to one."
+msgstr ""
+"Im Dialog <guilabel>Eigenschaften der Datenstruktur</guilabel> finden Sie "
+"die die Einstellungen für ein bestimmtes Graphen-Backend. Kreuzen Sie in "
+"diesem Dialog <guilabel>Alle Zeiger anzeigen</guilabel> an, dann werden alle "
+"Zeiger zwischen den Baumknoten angezeigt. Ist diese Einstellung nicht aktiv, "
+"werden mehrere Zeiger zwischen denselben Knoten zusammengefasst."
+
+#. Tag: title
+#: apiRootedTreestructure.docbook:13
+#, no-c-format
+msgid "The Rooted Tree Structure"
+msgstr "Die Struktur „Wurzelbaum“"
+
+#. Tag: para
+#: apiRootedTreestructure.docbook:14
+#, no-c-format
+msgid ""
+"Given a data structure object of type \"Rooted Tree\", the following "
+"properties can be read or written:"
+msgstr ""
+"Für jedes Datenstrukturobjekt vom Typ „Wurzelbaum“ können folgende "
+"Eigenschaften geschrieben oder gelesen werden:"
+
+#. Tag: programlisting
+#: apiRootedTreestructure.docbook:17
+#, no-c-format
+msgid ""
+"ShowAllPointers     // set to true if show all edges, set to false if "
+"multiple edges shall be compressed"
+msgstr ""
+"ShowAllPointers     // wenn wahr, werden alle Kanten angezeigt. Setzen Sie "
+"dies auf falsch, wenn mehrfache Kanten zusammengefasst werden sollen"
+
+#. Tag: para
+#: apiRootedTreestructure.docbook:18
+#, no-c-format
+msgid ""
+"Given a data structure object of type \"Rooted Tree\", you can call the "
+"following member functions:"
+msgstr ""
+"Mit einem Datenstrukturobjekt vom Typ „Wurzelbaum“ können Sie folgende "
+"Member-Funktionen aufrufen:"
+
+#. Tag: programlisting
+#: apiRootedTreestructure.docbook:21
+#, no-c-format
+msgid ""
+"node add_data(string name);         // add a node to tree with given name\n"
+"    void set_root_node(node root);      // set root as root node of the "
+"tree\n"
+"    node root_node();                   // return root node of the tree"
+msgstr ""
+"node add_data(string name);         // fügt einen Knoten mit dem angegebenen "
+"Namen zum Baum hinzu\n"
+"    void set_root_node(node root);      // setzt root als Wurzel des Baums\n"
+"    node root_node();                   // gibt den Wurzelknoten des Baums "
+"zurück"
+
+#. Tag: title
+#: apiRootedTreestructure.docbook:25
+#, no-c-format
+msgid "Rooted Tree Nodes"
+msgstr "Knoten von Wurzelbäumen"
+
+#. Tag: para
+#: apiRootedTreestructure.docbook:26
+#, no-c-format
+msgid ""
+"Given a node object of type \"Rooted Tree\", the following properties can be "
+"read or written:"
+msgstr ""
+"Für ein Knotenobjekt vom Typ „Wurzelbaum“ können folgende Eigenschaften "
+"geschrieben oder gelesen werden:"
+
+#. Tag: programlisting
+#: apiRootedTreestructure.docbook:29
+#, no-c-format
+msgid ""
+"int numberOfChilds                  // set the number of (allowed) children "
+"for this node\n"
+"    node left_child                     // read only: node that is the left "
+"child\n"
+"    node right_child                    // read only: node that is the right "
+"child\n"
+"    node node_parent                    // read only: node that is the parent"
+msgstr ""
+"int numberOfChilds                  // setzt die Anzahl der zulässigen "
+"Unterknoten für diesen Knoten\n"
+"    node left_child                     // nur lesbar: gibt den linken "
+"Unterknoten zurück\n"
+"    node right_child                    // nur lesbar: gibt den rechten "
+"Unterknoten zurück\n"
+"    node node_parent                    // nur lesbar: gibt den "
+"übergeordneten Knoten zurück"
+
+#. Tag: para
+#: apiRootedTreestructure.docbook:30
+#, no-c-format
+msgid ""
+"Given a node object of type \"Rooted Tree\", you can call the following "
+"member functions:"
+msgstr ""
+"Mit einem Knotenobjekt vom Typ „Wurzelbaum“ können Sie folgende Member-"
+"Funktionen aufrufen:"
+
+#. Tag: programlisting
+#: apiRootedTreestructure.docbook:33
+#, no-c-format
+msgid ""
+"node add_left_child(node child);    // add left child\n"
+"    node add_right_child(node child);   // add right child\n"
+"    node add_child(node child, int i);  // add a child as the i-th child of "
+"the node\n"
+"    node add_node_parent(node child);   // add parent (only successful if no "
+"parent set, yet)\n"
+"    node left_child();                  // return right child\n"
+"    node right_child();                 // return left child\n"
+"    node child_at(int i);               // return the i-th child of the "
+"node\n"
+"    node node_parent();                 // return the node's parent"
+msgstr ""
+"node add_left_child(node child);    // linken Unterknoten hinzufügen\n"
+"    node add_right_child(node child);   // rechten Unterknoten hinzufügen\n"
+"    node add_child(node child, int i);  // Unterknoten als n-ten Unterknoten "
+"zum Knoten hinzufügen\n"
+"    node add_node_parent(node child);   // Übergeordneten Knoten hinzufügen "
+"(nur möglich, wenn noch nicht vorhanden)\n"
+"    node left_child();                  // rechten Unterknoten zurückgeben\n"
+"    node right_child();                 // linken Unterknoten zurückgeben\n"
+"    node child_at(int i);               // n-ten Unterknoten des Knotens "
+"zurückgeben\n"
+"    node node_parent();                 // Übergeordneten Knoten zurückgeben"
+
+#. Tag: title
+#: apiRootedTreestructure.docbook:37
+#, no-c-format
+msgid "Rooted Tree Edges"
+msgstr "Kanten von Wurzelbäumen"
+
+#. Tag: para
+#: apiRootedTreestructure.docbook:38
+#, no-c-format
+msgid ""
+"Given edges of a data structure of type \"Rooted Tree\", only the properties "
+"of the base data structure are available."
+msgstr ""
+"Für Kanten einer Datenstruktur vom Typ „Wurzelbaum“ sind nur die "
+"Eigenschaften der Basis-Datenstruktur verfügbar."

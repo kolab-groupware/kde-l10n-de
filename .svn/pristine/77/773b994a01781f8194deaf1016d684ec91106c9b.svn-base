@@ -1,0 +1,662 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kconfig_compiler_man-kconfig_compiler.1\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:13+0000\n"
+"PO-Revision-Date: 2010-08-24 20:48+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdelibs/doc/kconfig_compiler/man-"
+"kconfig_compiler.1.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 788654\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: man-kconfig_compiler.1.docbook:9
+#, no-c-format
+msgid "Programming Tool"
+msgstr "Programmier-Werkzeug"
+
+#. Tag: author
+#: man-kconfig_compiler.1.docbook:11
+#, no-c-format
+msgid "<firstname>Cornelius</firstname> <surname>Schumacher</surname>"
+msgstr "<firstname>Cornelius</firstname> <surname>Schumacher</surname>"
+
+#. Tag: email
+#: man-kconfig_compiler.1.docbook:16
+#, no-c-format
+msgid "schumacher@kde.org"
+msgstr "schumacher@kde.org"
+
+#. Tag: author
+#: man-kconfig_compiler.1.docbook:21
+#, no-c-format
+msgid "<firstname>Waldo</firstname> <surname>Bastian</surname>"
+msgstr "<firstname>Waldo</firstname> <surname>Bastian</surname>"
+
+#. Tag: email
+#: man-kconfig_compiler.1.docbook:26
+#, no-c-format
+msgid "bastian@kde.org"
+msgstr "bastian@kde.org"
+
+#. Tag: author
+#: man-kconfig_compiler.1.docbook:31
+#, no-c-format
+msgid "<firstname>Zack</firstname> <surname>Rusin</surname>"
+msgstr "<firstname>Zack</firstname> <surname>Rusin</surname>"
+
+#. Tag: email
+#: man-kconfig_compiler.1.docbook:36
+#, no-c-format
+msgid "zack@kde.org"
+msgstr "zack@kde.org"
+
+#. Tag: date
+#: man-kconfig_compiler.1.docbook:41
+#, no-c-format
+msgid "2006-06-01"
+msgstr "2006-06-01"
+
+#. Tag: productname
+#: man-kconfig_compiler.1.docbook:42
+#, no-c-format
+msgid "K Desktop Environment"
+msgstr "K Desktop Environment"
+
+#. Tag: manvolnum
+#: man-kconfig_compiler.1.docbook:49
+#, no-c-format
+msgid "<manvolnum>1</manvolnum>"
+msgstr "<manvolnum>1</manvolnum>"
+
+#. Tag: refname
+#: man-kconfig_compiler.1.docbook:53
+#, no-c-format
+msgid "<refname>kconfig_compiler</refname>"
+msgstr "<refname>kconfig_compiler</refname>"
+
+#. Tag: refpurpose
+#: man-kconfig_compiler.1.docbook:54
+#, no-c-format
+msgid "KDE configuration compiler"
+msgstr "KDE-Konfigurationscompiler"
+
+#. Tag: cmdsynopsis
+#: man-kconfig_compiler.1.docbook:58
+#, no-c-format
+msgid ""
+"<command>kconfig_compiler</command> <arg>Qt-options</arg> <arg>KDE-options</"
+"arg> <arg>options</arg> <arg choice=\"plain\"><replaceable>file.kcfg</"
+"replaceable></arg> <arg choice=\"plain\"><replaceable>file.kcfgc</"
+"replaceable></arg>"
+msgstr ""
+"<command>kconfig_compiler</command> <arg>Qt-options</arg> <arg>KDE-options</"
+"arg> <arg>options</arg> <arg choice=\"plain\"><replaceable>file.kcfg</"
+"replaceable></arg> <arg choice=\"plain\"><replaceable>file.kcfgc</"
+"replaceable></arg>"
+
+#. Tag: title
+#: man-kconfig_compiler.1.docbook:69
+#, no-c-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:70
+#, no-c-format
+msgid ""
+"<command>kconfig_compiler</command> generates C++ source code from two "
+"files. The first file (.kcfg) contains information about configuration "
+"options and the second file (.kcfgc) provides the code generation options."
+msgstr ""
+"<command>kconfig_compiler</command> generiert C++-Quelltext aus zwei "
+"Dateien. Die erste Datei (.kcfg) enthält Informationen über die "
+"Einstellungsoptionen und die zweite Datei (,kcfgc) Einstellungen zur "
+"Quelltextgenerierung."
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:74
+#, no-c-format
+msgid ""
+"The generated source code contains a class based on "
+"<command>KConfigSkeleton</command> that provides an API to access the "
+"applications configuration data."
+msgstr ""
+"Der generierte Quelltext enthält eine von <command>KConfigSkeleton</command> "
+"abgeleitete Klasse mit Programmschnittstellen (API) für den Zugriff auf die "
+"Einstellungsdaten der Anwendung."
+
+#. Tag: title
+#: man-kconfig_compiler.1.docbook:80
+#, no-c-format
+msgid "Options"
+msgstr "Optionen"
+
+#. Tag: emphasis
+#: man-kconfig_compiler.1.docbook:84
+#, no-c-format
+msgid "Arguments:"
+msgstr "Argumente:"
+
+#. Tag: replaceable
+#: man-kconfig_compiler.1.docbook:88
+#, no-c-format
+msgid "file.kcfg"
+msgstr "file.kcfg"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:91
+#, no-c-format
+msgid "Input kcfg XML file"
+msgstr "Eingabedatei (kcfg) im XML-Format"
+
+#. Tag: replaceable
+#: man-kconfig_compiler.1.docbook:97
+#, no-c-format
+msgid "file.kcfgc"
+msgstr "file.kcfgc"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:100
+#, no-c-format
+msgid "Code generation options file"
+msgstr "Datei mit Einstellungen zur Quelltextgenerierung"
+
+#. Tag: emphasis
+#: man-kconfig_compiler.1.docbook:108
+#, no-c-format
+msgid "Options:"
+msgstr "Optionen"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:112
+#, no-c-format
+msgid "-d, --directory &lt;dir&gt;"
+msgstr "-d, --directory &lt;Ordner&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:115
+#, no-c-format
+msgid "Directory to generate files in [.]"
+msgstr "Ordner, in dem die Dateien generiert werden [.]"
+
+#. Tag: emphasis
+#: man-kconfig_compiler.1.docbook:123
+#, no-c-format
+msgid "Generic options:"
+msgstr "Allgemeine Optionen:"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:127
+#, no-c-format
+msgid "--help"
+msgstr "--help"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:130
+#, no-c-format
+msgid "Show help about options"
+msgstr "Hilfe zu verfügbaren Optionen anzeigen."
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:136
+#, no-c-format
+msgid "--help-qt"
+msgstr "--help-qt"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:139
+#, no-c-format
+msgid "Show Qt specific options"
+msgstr "Spezielle Optionen für Qt anzeigen"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:145
+#, no-c-format
+msgid "--help-kde"
+msgstr "--help-kde"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:148
+#, no-c-format
+msgid "Show KDE specific options"
+msgstr "Spezielle Optionen für KDE anzeigen"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:154
+#, no-c-format
+msgid "--help-all"
+msgstr "--help-all"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:157
+#, no-c-format
+msgid "Show all options"
+msgstr "Alle Optionen anzeigen"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:163
+#, no-c-format
+msgid "--author"
+msgstr "--author"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:166
+#, no-c-format
+msgid "Show author information"
+msgstr "Zeigt Informationen über den Autor."
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:172
+#, no-c-format
+msgid "-v, --version"
+msgstr "-v, --version"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:175
+#, no-c-format
+msgid "Show version information"
+msgstr "Versionsinformation anzeigen"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:181
+#, no-c-format
+msgid "--license"
+msgstr "--license"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:184
+#, no-c-format
+msgid "Show license information"
+msgstr "Lizenz-Informationen anzeigen"
+
+#. Tag: emphasis
+#: man-kconfig_compiler.1.docbook:192
+#, no-c-format
+msgid "KDE Options:"
+msgstr "KDE-Optionen"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:196
+#, no-c-format
+msgid "--caption &lt;caption&gt;"
+msgstr "--caption &lt;Titel&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:199
+#, no-c-format
+msgid "Use 'caption' as name in the titlebar"
+msgstr "Verwendet „Titel“ als Name in der Titelleiste"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:205
+#, no-c-format
+msgid "--icon &lt;icon&gt;"
+msgstr "--icon &lt;Symbol&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:208 man-kconfig_compiler.1.docbook:217
+#, no-c-format
+msgid "Use 'icon' as the application icon"
+msgstr "„Symbol“ für die Anwendung benutzen"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:214
+#, no-c-format
+msgid "--miniicon &lt;icon&gt;"
+msgstr "--miniicon &lt;Symbol&gt;"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:223
+#, no-c-format
+msgid "--config &lt;filename&gt;"
+msgstr "--config &lt;Dateiname&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:226
+#, no-c-format
+msgid "Use alternative configuration file"
+msgstr "Andere Einrichtungsdatei verwenden"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:232
+#, no-c-format
+msgid "--dcopserver &lt;server&gt;"
+msgstr "--dcopserver &lt;Server&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:235
+#, no-c-format
+msgid "Use the DCOP server specified by 'server'"
+msgstr "Verwendet den unter 'Server' angegebenen DCOP-Server."
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:241
+#, no-c-format
+msgid "--nocrashhandler"
+msgstr "--nocrashhandler"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:244
+#, no-c-format
+msgid "Disable crash handler to get core dumps"
+msgstr ""
+"Abschalten des Crash-Handlers, damit Fehlerprotokolle (core dumps) erstellt "
+"werden."
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:250
+#, no-c-format
+msgid "--waitforwm"
+msgstr "--waitforwm"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:253
+#, no-c-format
+msgid "Waits for a WM_NET compatible windowmanager"
+msgstr "Wartet auf einen Fenstermanager, der WM_NET-kompatibel ist."
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:259
+#, no-c-format
+msgid "--style &lt;style&gt;"
+msgstr "--style &lt;Stil&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:262
+#, no-c-format
+msgid "Sets the application GUI style"
+msgstr "Legt den Stil der Anwendung fest"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:268
+#, no-c-format
+msgid "--geometry &lt;geometry&gt;"
+msgstr "--geometry &lt;Geometrie&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:271
+#, no-c-format
+msgid ""
+"Sets the client geometry of the main widget - see man X for the argument "
+"format"
+msgstr ""
+"Legt die Geometrie des Hauptelements im Client-Programm fest. Das Format für "
+"die Argumente finden Sie mit „man X“"
+
+#. Tag: emphasis
+#: man-kconfig_compiler.1.docbook:279
+#, no-c-format
+msgid "Qt options:"
+msgstr "Qt-Optionen:"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:283
+#, no-c-format
+msgid "--display &lt;displayname&gt;"
+msgstr "--display &lt;Anzeigename&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:286
+#, no-c-format
+msgid "Use the X-server display 'displayname'"
+msgstr "Verwendet die X-Server-Anzeige 'Anzeigename'."
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:292
+#, no-c-format
+msgid "--session &lt;sessionId&gt;"
+msgstr "--session &lt; Sitzungs-ID&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:295
+#, no-c-format
+msgid "Restore the application for the given 'sessionId'"
+msgstr "Wiederherstellung der Anwendung für die angegebene 'Sitzungs-ID'."
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:301
+#, no-c-format
+msgid "--cmap"
+msgstr "--cmap"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:304
+#, no-c-format
+msgid ""
+"Causes the application to install a private color map on an 8-bit display"
+msgstr ""
+"Bewirkt, dass die Anwendung auf einem 8-Bit-Display eine eigene Farbtabelle "
+"anlegt. "
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:310
+#, no-c-format
+msgid "--ncols &lt;count&gt;"
+msgstr "--ncols &lt;Anzahl&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:313
+#, no-c-format
+msgid ""
+"Limits the number of colors allocated in the color cube on an 8-bit display, "
+"if the application is using the QApplication::ManyColor color specification"
+msgstr ""
+"Beschränkt die Anzahl der Farben auf einem 8-Bit-Display, wenn die Anwendung "
+"die Farbspezifikation <methodname>QApplication::ManyColor</methodname> "
+"verwendet."
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:319
+#, no-c-format
+msgid "--nograb"
+msgstr "--nograb"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:322
+#, no-c-format
+msgid "Tells Qt to never grab the mouse or the keyboard"
+msgstr "Verhindert, dass Qt die Maus oder die Tastatur einfängt."
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:328
+#, no-c-format
+msgid "--sync"
+msgstr "--sync"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:331
+#, no-c-format
+msgid "Switches to synchronous mode for debugging"
+msgstr "Wechselt zum Debuggen in den Synchronmodus."
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:337
+#, no-c-format
+msgid "--fn, --font &lt;fontname&gt;"
+msgstr "--fn, --font &lt;Schriftname&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:340
+#, no-c-format
+msgid "Defines the application font"
+msgstr "Legt die Schriftart für die Anwendung fest."
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:346
+#, no-c-format
+msgid "--bg, --background &lt;color&gt;"
+msgstr "--bg, --background &lt;Farbe&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:349
+#, no-c-format
+msgid ""
+"Sets the default background color and an application palette (light and dark "
+"shades are calculated)"
+msgstr ""
+"Legt die Standardhintergrundfarbe und eine Farbpalette für die Anwendung "
+"fest (helle und dunkle Schattierungen werden berechnet)."
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:355
+#, no-c-format
+msgid "--fg, --foreground &lt;color&gt;"
+msgstr "--fg, --foreground &lt;Farbe&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:358
+#, no-c-format
+msgid "Sets the default foreground color"
+msgstr "Legt die Standardvordergrundfarbe fest."
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:364
+#, no-c-format
+msgid "--btn, --button &lt;color&gt;"
+msgstr "--btn, --button &lt;Farbe&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:367
+#, no-c-format
+msgid "Sets the default button color"
+msgstr "Legt die Standardfarbe für Knöpfe fest."
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:373
+#, no-c-format
+msgid "--name &lt;name&gt;"
+msgstr "--name &lt;Name&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:376
+#, no-c-format
+msgid "Sets the application name"
+msgstr "Legt den Namen der Anwendung fest"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:382
+#, no-c-format
+msgid "--title &lt;title&gt;"
+msgstr "--title &lt;Titel&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:385
+#, no-c-format
+msgid "Sets the application title (caption)"
+msgstr "Legt den Titel der Anwendung fest (Fenstertitel)"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:391
+#, no-c-format
+msgid "--visual TrueColor"
+msgstr "--visual TrueColor"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:394
+#, no-c-format
+msgid "Forces the application to use a TrueColor visual on an 8-bit display"
+msgstr "Erzwingt die Verwendung von Echtfarben auf einer 8-Bit-Anzeige"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:400
+#, no-c-format
+msgid "--inputstyle &lt;inputstyle&gt;"
+msgstr "--inputstyle &lt;Eingabestil&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:403
+#, no-c-format
+msgid ""
+"Sets XIM (X Input Method) input style. Possible values are onthespot, "
+"overthespot, offthespot, and root"
+msgstr ""
+"Legt den Eingabestil von XIM (X Input Method) fest. Mögliche Werte sind "
+"onthespot, overthespot, offthespot und root."
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:409
+#, no-c-format
+msgid "--im &lt;XIM server&gt;"
+msgstr "--im &lt;XIM-Server&gt;"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:412
+#, no-c-format
+msgid "Sets XIM server"
+msgstr "Legt den XIM-Server fest"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:418
+#, no-c-format
+msgid "--noxim"
+msgstr "--noxim"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:421
+#, no-c-format
+msgid "Disable XIM"
+msgstr "XIM abschalten"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:427
+#, no-c-format
+msgid "--reverse"
+msgstr "--reverse"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:430
+#, no-c-format
+msgid "Mirrors the whole layout of widgets"
+msgstr "Ordnet sämtliche Bedienelemente spiegelverkehrt an"
+
+#. Tag: title
+#: man-kconfig_compiler.1.docbook:439
+#, no-c-format
+msgid "See Also"
+msgstr "Siehe auch"
+
+#. Tag: option
+#: man-kconfig_compiler.1.docbook:443
+#, no-c-format
+msgid "http://developer.kde.org"
+msgstr "http://developer.kde.org"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:446
+#, no-c-format
+msgid "KDE Developer's Corner website"
+msgstr "KDE-Entwickler-Webseite"
+
+#. Tag: title
+#: man-kconfig_compiler.1.docbook:453
+#, no-c-format
+msgid "Bugs"
+msgstr "Fehler"
+
+#. Tag: para
+#: man-kconfig_compiler.1.docbook:454
+#, no-c-format
+msgid ""
+"Please use <ulink url=\"http://bugs.kde.org\">bugs.kde.org</ulink> to report "
+"bugs, do not mail the authors directly."
+msgstr ""
+"Bitte verwenden Sie <ulink url=\"http://bugs.kde.org\">bugs.kde.org</ulink> "
+"für Fehlerberichte, schicken Sie keine E-Mails direkt an die Autoren."
+
+#~ msgid "<command>kconfig_compiler</command>"
+#~ msgstr "<command>kconfig_compiler</command>"
+
+#~ msgid ""
+#~ "<date>2006-06-01</date> <productname>K Desktop Environment</productname>"
+#~ msgstr ""
+#~ "<date>01.06.2006</date> <productname>K Desktop Environment</productname>"

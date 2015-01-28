@@ -1,0 +1,2573 @@
+# Thomas Diehl <thd@kde.org>, 2003.
+# Stefan Winter <swinter@kde.org>, 2003.
+# Stephan Johach <hunsum@gmx.de>, 2005.
+# Intevation GmbH, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011, 2013.
+# Torbjörn Klatt <torbjoern.k@googlemail.com>, 2011.
+# Burkhard Lück <lueck@hube-lueck.de>, 2011, 2012, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: libksieve\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-01-28 05:11+0000\n"
+"PO-Revision-Date: 2014-11-02 17:06+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: kmanagesieve/session.cpp:150
+msgid "Syntax error."
+msgstr "Syntaxfehler."
+
+#: kmanagesieve/session.cpp:177
+msgid "Cannot use TLS since the underlying Qt library does not support it."
+msgstr ""
+"TLS kann nicht verwendet werden, weil die verwendete Qt-Bibliothek dies "
+"nicht unterstützt."
+
+#: kmanagesieve/session.cpp:183
+msgid ""
+"TLS encryption was requested, but your Sieve server does not advertise TLS "
+"in its capabilities.\n"
+"You can choose to try to initiate TLS negotiations nonetheless, or cancel "
+"the operation."
+msgstr ""
+"Sie haben TLS-Verschlüsselung angefordert; der Sieve-Server scheint dies "
+"jedoch nicht zu unterstützen.\n"
+"Sie können dennoch versuchen, eine TLS-Verbindung herzustellen, oder Sie "
+"brechen an dieser Stelle ab."
+
+#: kmanagesieve/session.cpp:185
+msgid "Server Does Not Advertise TLS"
+msgstr "Server unterstützt kein TLS"
+
+#: kmanagesieve/session.cpp:185
+msgid "&Start TLS nonetheless"
+msgstr "TLS-Verbindung dennoch &herstellen"
+
+#: kmanagesieve/session.cpp:188
+msgid "TLS encryption requested, but not supported by server."
+msgstr ""
+"TLS-Verschlüsselung wurde angefordert, jedoch vom Server nicht unterstützt."
+
+#: kmanagesieve/session.cpp:229
+msgid ""
+"The server does not seem to support TLS. Disable TLS if you want to connect "
+"without encryption."
+msgstr ""
+"Der Server unterstützt anscheinend kein TLS. Deaktivieren Sie TLS, wenn Sie "
+"eine Verbindung ohne Verschlüsselung aufnehmen möchten."
+
+#: kmanagesieve/session.cpp:247
+#, kde-format
+msgid ""
+"Authentication failed.\n"
+"Most likely the password is wrong.\n"
+"The server responded:\n"
+"%1"
+msgstr ""
+"Authentifizierung fehlgeschlagen.\n"
+"Höchstwahrscheinlich ist das Passwort falsch.\n"
+"Die Serverantwort lautet:\n"
+"%1"
+
+#: kmanagesieve/session.cpp:450
+msgid "Sieve Authentication Details"
+msgstr "Sieve-Authentifizierungsdetails"
+
+#: kmanagesieve/session.cpp:451
+msgid ""
+"Please enter your authentication details for your sieve account (usually the "
+"same as your email password):"
+msgstr ""
+"Bitte geben Sie die Authentifizierungsdetails für Ihr Sieve-Konto ein "
+"(normalerweise die gleichen, wie Ihr E-Mail-Passwort):"
+
+#: kmanagesieve/sievejob.cpp:132 kmanagesieve/sievejob.cpp:137
+#, kde-format
+msgid ""
+"The script did not upload successfully.\n"
+"This is probably due to errors in the script.\n"
+"The server responded:\n"
+"%1"
+msgstr ""
+"Das Skript wurde nicht erfolgreich hochgeladen.\n"
+"Wahrscheinlich ist das Skript fehlerhaft.\n"
+"Die Serverantwort lautet:\n"
+"%1"
+
+#: kmanagesieve/sievejob.cpp:141
+msgid ""
+"The script did not upload successfully.\n"
+"The script may contain errors."
+msgstr ""
+"Das Skript wurde nicht erfolgreich hochgeladen.\n"
+"Vielleicht ist das Skript fehlerhaft."
+
+#: kmanagesieve/sievejob.cpp:172
+#, kde-format
+msgid ""
+"Sieve operation failed.\n"
+"The server responded:\n"
+"%1"
+msgstr ""
+"Die Sieve-Operation ist fehlgeschlagen.\n"
+"Die Antwort des Servers lautet:\n"
+"%1"
+
+#: kmanagesieve/sievejob.cpp:173 kmanagesieve/sievejob.cpp:175
+msgid "Sieve Error"
+msgstr "Sieve-Fehler"
+
+#: ksieveui/autocreatescripts/autocreatescriptdialog.cpp:34
+msgid "Create sieve filter"
+msgstr "Sieve-Filter anlegen"
+
+#: ksieveui/autocreatescripts/autocreatescriptutil.cpp:167
+#, kde-format
+msgid "Cannot find item \"%1\" in widget \"%2\""
+msgstr "Eintrag „%1“ in Bedienelement „%2“ wurde nicht gefunden"
+
+#: ksieveui/autocreatescripts/autocreatescriptutil.cpp:175
+msgid "More information"
+msgstr "Weitere Informationen"
+
+#: ksieveui/autocreatescripts/commonwidgets/selectconvertparameterwidget.cpp:44
+msgid ""
+"Not enough arguments for SelectConvertParameterWidget. Expected 2 arguments."
+msgstr ""
+"Nicht genügend Argumente für SelectConvertParameterWidget. Es werden zwei "
+"Argumente erwartet."
+
+#: ksieveui/autocreatescripts/commonwidgets/selectconvertparameterwidget.cpp:49
+#, kde-format
+msgid "Too many arguments for SelectConvertParameterWidget, \"%1\""
+msgstr "Zu viele Argumente für SelectConvertParameterWidget, „%1“"
+
+#: ksieveui/autocreatescripts/commonwidgets/selectconvertparameterwidget.cpp:72
+#: ksieveui/autocreatescripts/commonwidgets/selectconvertparameterwidget.cpp:83
+msgid " px"
+msgstr " px"
+
+#: ksieveui/autocreatescripts/commonwidgets/selectmatchtypecombobox.cpp:40
+msgid "is"
+msgstr "ist"
+
+#: ksieveui/autocreatescripts/commonwidgets/selectmatchtypecombobox.cpp:41
+msgid "not is"
+msgstr "ist nicht"
+
+#: ksieveui/autocreatescripts/commonwidgets/selectmatchtypecombobox.cpp:42
+msgid "contains"
+msgstr "enthält"
+
+#: ksieveui/autocreatescripts/commonwidgets/selectmatchtypecombobox.cpp:43
+msgid "not contains"
+msgstr "enthält nicht"
+
+#: ksieveui/autocreatescripts/commonwidgets/selectmatchtypecombobox.cpp:44
+msgid "matches"
+msgstr "passt auf"
+
+#: ksieveui/autocreatescripts/commonwidgets/selectmatchtypecombobox.cpp:45
+msgid "not matches"
+msgstr "passt nicht auf"
+
+#: ksieveui/autocreatescripts/commonwidgets/selectmatchtypecombobox.cpp:47
+msgid "regex"
+msgstr "regulärer Ausdruck"
+
+#: ksieveui/autocreatescripts/commonwidgets/selectmatchtypecombobox.cpp:48
+msgid "not regex"
+msgstr "kein regulärer Ausdruck"
+
+#: ksieveui/autocreatescripts/commonwidgets/selectmimetypecombobox.cpp:39
+msgid "JPEG"
+msgstr "JPEG"
+
+#: ksieveui/autocreatescripts/commonwidgets/selectmimetypecombobox.cpp:40
+msgid "TIFF"
+msgstr "TIFF"
+
+#: ksieveui/autocreatescripts/commonwidgets/selectmimetypecombobox.cpp:41
+msgid "PNG"
+msgstr "PNG"
+
+#: ksieveui/autocreatescripts/commonwidgets/selectmimetypecombobox.cpp:42
+msgid "BMP"
+msgstr "BMP"
+
+#: ksieveui/autocreatescripts/commonwidgets/sievehelpbutton.cpp:31
+#: ksieveui/editor/sieveeditortabwidget.cpp:62
+msgid "Help"
+msgstr "Hilfe"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveaction.cpp:97
+#, kde-format
+msgid "An unknown tag \"%1\" was found during parsing action \"%2\"."
+msgstr ""
+"Beim Verarbeiten der Aktion „%2“ wurde ein unbekanntes Tag „%1“ gefunden."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveaction.cpp:102
+#, kde-format
+msgid "An unknown tag value \"%1\" was found during parsing action \"%2\"."
+msgstr ""
+"Beim Verarbeiten der Aktion „%2“ wurde ein unbekannter Tag-Wert „%1“ "
+"gefunden."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveaction.cpp:107
+#: ksieveui/autocreatescripts/sieveconditions/sievecondition.cpp:97
+#, kde-format
+msgid ""
+"Too many argument found for \"%1\", max value is %2, number of value found "
+"%3 for %4"
+msgstr ""
+"Es wurden zu viele Argumente für „%1“ gefunden. Maximal zulässig sind %2 "
+"Argumente, aber es wurden %3 für %4 gefunden"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveaction.cpp:112
+#: ksieveui/autocreatescripts/sieveconditions/sievecondition.cpp:102
+#, kde-format
+msgid "A feature \"%1\" in condition \"%2\" is not supported by server"
+msgstr ""
+"Eine Funktion „%1“ in Bedingung „%2“ wird vom Server nicht unterstützt."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionaddflags.cpp:26
+msgid "Add Flags"
+msgstr "Merker hinzufügen"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionaddflags.cpp:42
+msgid ""
+"Addflag is used to add flags to a list of [IMAP] flags.  It doesn't replace "
+"any previously set flags.  This means that multiple occurrences of addflag "
+"are treated additively."
+msgstr ""
+"„addflag“ wird verwendet, um Merker zu einer Liste von [IMAP]-Merkern "
+"hinzuzufügen. Bestehende Merker werden nicht überschrieben. Das bedeutet, "
+"dass mehrfache Aufrufe von „addflag“ additiv wirken."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionaddheader.cpp:34
+msgid "Add header"
+msgstr "Vorspann hinzufügen"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionaddheader.cpp:55
+#: ksieveui/autocreatescripts/sieveactions/sieveactiondeleteheader.cpp:56
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditiondate.cpp:58
+msgid "header:"
+msgstr "Vorspann:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionaddheader.cpp:63
+#: ksieveui/autocreatescripts/sieveactions/sieveactiondeleteheader.cpp:64
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectdatewidget.cpp:68
+msgid "value:"
+msgstr "Wert:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionaddheader.cpp:127
+msgid ""
+"The addheader action adds a header field to the existing message header."
+msgstr ""
+"Die Aktion „addheader“ fügt ein Vorspannfeld zu einem vorhandenen "
+"Nachrichtenvorspann hinzu."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionbreak.cpp:32
+msgid "Break"
+msgstr "Ausbrechen"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionbreak.cpp:48
+#: ksieveui/autocreatescripts/sieveforeverypartwidget.cpp:57
+msgid "Name (optional):"
+msgstr "Name (optional):"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionbreak.cpp:107
+msgid "The break command terminates the closest enclosing loop."
+msgstr "Der Befehl „break“ beendet die direkt umschließende Schleife."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionconvert.cpp:32
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionconvert.cpp:32
+msgid "Convert"
+msgstr "Umwandeln"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionconvert.cpp:48
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionconvert.cpp:48
+msgid "From:"
+msgstr "Von:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionconvert.cpp:56
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionconvert.cpp:56
+msgid "To:"
+msgstr "Nach:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionconvert.cpp:64
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionconvert.cpp:64
+msgid "Parameters:"
+msgstr "Parameter:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionconvert.cpp:150
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionconvert.cpp:111
+msgid ""
+"The \"convert\" action specifies that all body parts with a media type equal "
+"to \"media-type\" be converted to the media type in \"media-type\" using "
+"conversion parameters."
+msgstr ""
+"Die Aktion „convert“ legt fest, dass alle Teile des Nachrichtentexts mit dem "
+"Medientyp „media-type“ in den Medientyp „media-type“ mit den Parametern für "
+"die Konvertierung umgewandelt werden."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactiondeleteheader.cpp:35
+msgid "Delete header"
+msgstr "Vorspann löschen"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactiondeleteheader.cpp:131
+msgid ""
+"By default, the deleteheader action deletes all occurrences of the named "
+"header field."
+msgstr ""
+"In der Voreinstellung löscht die Aktion „deleteheader“ alle Vorkommen des "
+"angegebenen Vorspannfelds."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactiondiscard.cpp:24
+msgid "Discard"
+msgstr "Verwerfen"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactiondiscard.cpp:40
+msgid "Discard is used to silently throw away the message."
+msgstr "„Verwerfen“ verwirft die Nachricht stillschweigend."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionenclose.cpp:34
+msgid "Enclose"
+msgstr "Beifügen"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionenclose.cpp:50
+#: ksieveui/autocreatescripts/sieveactions/sieveactionreplace.cpp:50
+msgid "Subject:"
+msgstr "Betreff:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionenclose.cpp:58
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionexists.cpp:57
+msgid "headers:"
+msgstr "Vorspann:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionenclose.cpp:66
+#: ksieveui/autocreatescripts/sieveactions/sieveactionreject.cpp:47
+#: ksieveui/autocreatescripts/sieveactions/sieveactionreplace.cpp:66
+msgid "text:"
+msgstr "Text:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionenclose.cpp:163
+msgid ""
+"Enclose action command is defined to allow an entire message to be enclosed "
+"as an attachment to a new message."
+msgstr ""
+"Der Befehl „enclose“ ermöglicht es, einen gesamte Nachricht als Anhang an "
+"eine neue Nachricht anzufügen."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionextracttext.cpp:33
+msgid "Extract Text"
+msgstr "Text entpacken"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionextracttext.cpp:49
+msgid "Number of characters:"
+msgstr "Anzahl an Zeichen:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionextracttext.cpp:59
+msgid "Stored in variable name:"
+msgstr "In Variablennamen gespeichert:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionextracttext.cpp:129
+msgid ""
+"The \"extracttext\" action may be used within the context of a \"foreverypart"
+"\" loop and is used to store text into a variable"
+msgstr ""
+"Die Aktion „extracttext“ kann im Kontext einer Schleife „foreverypart“ zum "
+"Speichern von Text in einer Variablen verwendet werden."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionfileinto.cpp:31
+msgid "File Into"
+msgstr "Datei in"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionfileinto.cpp:74
+msgid ""
+"Action \"fileinto\" has \"copy\" argument but current server does not "
+"support it"
+msgstr ""
+"Die Aktion„fileinto“ hat ein Argument „copy“, aber der aktuelle Server "
+"unterstützt dies nicht. "
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionfileinto.cpp:112
+#: ksieveui/autocreatescripts/sieveactions/sieveactionredirect.cpp:53
+msgid "Keep a copy"
+msgstr "Eine Kopie behalten"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionfileinto.cpp:118
+msgid "Create folder"
+msgstr "Ordner erstellen"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionfileinto.cpp:162
+msgid ""
+"The \"fileinto\" action delivers the message into the specified mailbox."
+msgstr ""
+"Die Aktion „fileinto“ verschiebt Nachrichten in das angegebene Postfach."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionfileinto.cpp:164
+msgid ""
+"If the optional \":create\" argument is specified, it instructs the Sieve "
+"interpreter to create the specified mailbox, if needed, before attempting to "
+"deliver the message into the specified mailbox."
+msgstr ""
+"Wenn das optionale Argument „:create“ angegeben ist, erstellt der Sieve-"
+"Interpreter das angegeben Postfach. Falls nötig, wird das Postfach erstellt, "
+"ehe versucht wird, die Nachricht in das angegeben Postfach zu verschieben."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionfileinto.cpp:167
+msgid ""
+"If the optional \":copy\" keyword is specified, the tagged command does not "
+"cancel the implicit \"keep\". Instead, it merely files or redirects a copy "
+"in addition to whatever else is happening to the message."
+msgstr ""
+"Ist das optionale Schlüsselwort „:copy“ angegeben, beendet der Befehl nicht "
+"das implizite „keep“. Es wird nur eine Kopie weitergeleitet, zusätzlich zu "
+"den sonstigen Aktionen für die Nachricht."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionkeep.cpp:33
+msgid "Keep"
+msgstr "Behalten"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionkeep.cpp:61
+msgid ""
+"The \"keep\" action is whatever action is taken in lieu of all other "
+"actions, if no filtering happens at all; generally, this simply means to "
+"file the message into the user's main mailbox."
+msgstr ""
+"Die Aktion „keep“ wird anstelle aller anderen Aktionen ausgeführt, wenn "
+"überhaupt keine Filter zutreffen: Im Allgemeinen bedeutet es, dass die "
+"Nachricht in das Hauptpostfach des Benutzers verschoben."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionkeep.cpp:71
+msgid "Add flags:"
+msgstr "Merker hinzufügen:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionnotify.cpp:36
+msgid "Notify"
+msgstr "Benachrichtigen"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionnotify.cpp:57
+msgid "message:"
+msgstr "Nachricht:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionnotify.cpp:65
+msgid "method:"
+msgstr "Methode:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionnotify.cpp:153
+msgid ""
+"The \"notify\" action specifies that a notification should be sent to a user."
+msgstr ""
+"Die Aktion „notify“ gibt an, dass eine Benachrichtigung an den Benutzer "
+"gesendet werden soll."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionredirect.cpp:35
+msgid "Redirect"
+msgstr "Umleiten"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionredirect.cpp:59
+msgid "Use list"
+msgstr "Liste verwenden"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionredirect.cpp:155
+msgid ""
+"The \"redirect\" action is used to send the message to another user at a "
+"supplied address, as a mail forwarding feature does.  The \"redirect\" "
+"action makes no changes to the message body or existing headers, but it may "
+"add new headers."
+msgstr ""
+"Die Aktion „redirect“ wird verwendet, um die Nachricht an einen anderen "
+"Benutzer mit der angegeben Adresse zu senden, wie bei der Weiterleitung "
+"eines E-Mail. Die Aktion „redirect“ ändert den Nachrichtentext oder "
+"vorhandene Vorspannzeilen nicht, kann aber neue Vorspannzeilen hinzufügen."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionredirect.cpp:157
+msgid ""
+"If the optional \":copy\" keyword is specified, the tagged command does not "
+"cancel the implicit \"keep\". Instead, it redirects a copy in addition to "
+"whatever else is happening to the message."
+msgstr ""
+"Ist das optionale Schlüsselwort „:copy“ angegeben, beendet der Befehl nicht "
+"das implizite „keep“. Stattdessen wird eine Kopie weitergeleitet, zusätzlich "
+"zu den sonstigen Aktionen für die Nachricht."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionreject.cpp:32
+msgid "Reject"
+msgstr "Ablehnen"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionreject.cpp:107
+msgid ""
+" The \"reject\" action cancels the implicit keep and refuses delivery of a "
+"message."
+msgstr ""
+"Die Aktion „reject“ beendet das implizite „keep“ und verweigert die "
+"Auslieferung einer Nachricht."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionremoveflags.cpp:26
+msgid "Remove Flags"
+msgstr "Merker entfernen"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionremoveflags.cpp:42
+msgid ""
+"Removeflag is used to remove flags from a list of [IMAP] flags. Removeflag "
+"clears flags previously set by \"set\"/\"addflag\". Calling removeflag with "
+"a flag that wasn't set before is not an error and is ignored."
+msgstr ""
+"„removeflag“ wird verwendet, um Merker von einer Liste von [IMAP]-Merkern zu "
+"entfernen. „removeflag“ löscht Merker, die zuvor mit „setflag“/„addflag“ "
+"gesetzt wurden. Aufrufe von „removeflag“ mit einem nicht existenten Merker "
+"führt nicht zu einem Fehler sondern wird ignoriert."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionreplace.cpp:34
+msgid "Replace"
+msgstr "Ersetzen"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionreplace.cpp:58
+msgid "from:"
+msgstr "Von:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionreplace.cpp:161
+msgid ""
+"The \"replace\" command is defined to allow a MIME part to be replaced with "
+"the text supplied in the command."
+msgstr ""
+"Der Befehl „replace“ ermöglicht es, einen MIME-Teil durch den im Befehl "
+"angegebenen Text zu ersetzen."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionreturn.cpp:26
+msgid "Return"
+msgstr "Return"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionreturn.cpp:47
+msgid ""
+"The \"return\" command stops processing of the immediately included script "
+"only and returns processing control to the script that includes it."
+msgstr ""
+"Der Befehl „return“ beendet nur die Bearbeitung des unmittelbar "
+"eingeschlossenen Skripts und gibt die Prozesskontrolle an das Skript zurück, "
+"das es eingeschlossen hat."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionsetflags.cpp:27
+msgid "Set Flags"
+msgstr "Merker festlegen"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionsetflags.cpp:43
+msgid ""
+"Setflag is used for setting [IMAP] system flags or keywords. Setflag "
+"replaces any previously set flags."
+msgstr ""
+"„setflag“ wird verwendet, um [IMAP]-Systemmerker oder Schlüsselwörter "
+"festzulegen. „setflag“ ersetzt zuvor gesetzte Merker."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:35
+msgid "Variable"
+msgstr "Variable"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:58
+msgid "Protect special character"
+msgstr "Sonderzeichen maskieren"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:64
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionenvironment.cpp:70
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionhasflag.cpp:72
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionmetadata.cpp:74
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionservermetadata.cpp:75
+msgid "Value:"
+msgstr "Wert:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:72
+msgid "In variable:"
+msgstr "In Variable:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:117
+msgid "Script needs regex support, but server does not have it."
+msgstr ""
+"Das Skript benötigt reguläre Ausdrücke, das wird vom Server aber nicht "
+"unterstützt."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:182
+msgid ""
+"The \"set\" action stores the specified value in the variable identified by "
+"name."
+msgstr ""
+"Die Aktion „set“ speichert den angegebenen Wert in der durch den Namen "
+"gekennzeichneten Variablen."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:184
+msgid ""
+"This modifier adds the necessary quoting to ensure that the expanded text "
+"will only match a literal occurrence if used as a parameter to :regex.  "
+"Every character with special meaning (. , *, ? , etc.) is prefixed with \\ "
+"in the expansion"
+msgstr ""
+"Dieser Modifier maskiert die Zeichen so, dass der erweiterte Text nur auf "
+"exakte Vorkommen passt, sofern er als Parameter zu :regex verwendet wird. "
+"Jedes Zeichen mit besonderer Bedeutung (., *, ? usw.) wird beim Erweitern "
+"durch \\ maskiert."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionstop.cpp:26
+msgid "Stop"
+msgstr "Anhalten"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionstop.cpp:42
+msgid ""
+"The \"stop\" action ends all processing.  If the implicit keep has not been "
+"cancelled, then it is taken."
+msgstr ""
+"Die Aktion „stop“ beendet die gesamte Verarbeitung. Wurde das implizite "
+"„keep“ nicht abgebrochen, wird die Aktion „keep“ ausgeführt."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionvacation.cpp:39
+msgid "Vacation"
+msgstr "Urlaub"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionvacation.cpp:63
+msgid "day:"
+msgstr "Tag:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionvacation.cpp:76
+msgid "Message subject:"
+msgstr "Nachrichtenbetreff:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionvacation.cpp:84
+msgid "Additional email:"
+msgstr "Zusätzliche E-Mail-Adresse:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionvacation.cpp:93
+msgid "Vacation reason:"
+msgstr "Urlaubsgrund:"
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionvacation.cpp:210
+msgid ""
+"The \"vacation\" action implements a vacation autoresponder similar to the "
+"vacation command available under many versions of Unix. Its purpose is to "
+"provide correspondents with notification that the user is away for an "
+"extended period of time and that they should not expect quick responses."
+msgstr ""
+"Die Aktion „vacation“ stellt automatische Urlaubsbenachrichtigungen, ähnlich "
+"dem „vacation“-Befehl unter Unix zur Verfügung. Sie ist dazu gedacht, "
+"Kontaktsuchenden eine Nachricht zukommen zu lassen, dass der Benutzer für "
+"längere Zeit nicht am Arbeitsplatz sein wird und keine schnelle Antwort zu "
+"erwarten ist."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionvacation.cpp:212
+msgid ""
+"Through the \":days\" parameter, it limits the number of auto-replies to the "
+"same sender to one per [n] days, for a specified number of days. But there "
+"are cases when one needs more granularity, if one would like to generate "
+"\"vacation\" replies more frequently."
+msgstr ""
+"Mit dem Parameter „:days“ können Sie die Anzahl automatischer Antworten pro "
+"Tag an einen Absender auf eine pro [n] Tage für eine angegebene Anzahl Tage "
+"beschränken. Aber es gibt Anwendungsfälle, in denen Sie eine genauere "
+"Auflösung benötigen, wenn Sie häufigere Antworten für „vacation“ generieren "
+"möchten."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionvacation.cpp:213
+msgid ""
+"This extension defines a \":seconds\" parameter to provide more granularity "
+"for such situations."
+msgstr ""
+"Diese Erweiterung definiert einen \":Sekunden\"-Parameter, um mehr "
+"Detailgenauigkeit bei solchen Situationen bereitzustellen."
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectaddheaderpositioncombobox.cpp:38
+msgid "Insert at the beginning"
+msgstr "Am Anfang einfügen"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectaddheaderpositioncombobox.cpp:39
+msgid "Append at the end"
+msgstr "Am Ende anhängen"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectfileintowidget.cpp:31
+msgid "Select folder"
+msgstr "Ordner auswählen"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectfileintowidget.cpp:57
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectflagswidget.cpp:118
+msgid "..."
+msgstr "..."
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectflagswidget.cpp:33
+msgid "Flags"
+msgstr "Merker"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectflagswidget.cpp:66
+msgid "Deleted"
+msgstr "Gelöscht"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectflagswidget.cpp:69
+msgid "Answered"
+msgstr "Beantwortet"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectflagswidget.cpp:72
+msgid "Flagged"
+msgstr "Merker festgelegt"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectflagswidget.cpp:75
+msgid "Seen"
+msgstr "Gelesen"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectflagswidget.cpp:80
+msgid "Draft"
+msgstr "Entwurf"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectimportancecombobox.cpp:40
+msgid "high importance"
+msgstr "Sehr wichtig"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectimportancecombobox.cpp:41
+msgid "normal importance"
+msgstr "Normal wichtig"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectimportancecombobox.cpp:42
+msgid "low importance"
+msgstr "Unwichtig"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectvacationcombobox.cpp:36
+msgid "days"
+msgstr "Tage"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectvacationcombobox.cpp:37
+msgid "seconds"
+msgstr "Sekunden"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectvariablemodifiercombobox.cpp:38
+msgid "None"
+msgstr "Keine"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectvariablemodifiercombobox.cpp:39
+msgid "Lower"
+msgstr "Kleinbuchstaben"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectvariablemodifiercombobox.cpp:40
+msgid "Upper"
+msgstr "Großbuchstaben"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectvariablemodifiercombobox.cpp:41
+msgid "Lower first letter"
+msgstr "Ersten Buchstaben klein schreiben"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectvariablemodifiercombobox.cpp:42
+msgid "Upper first letter"
+msgstr "Ersten Buchstaben groß schreiben"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectvariablemodifiercombobox.cpp:43
+msgid "Quote wildcard"
+msgstr "Platzhalter maskieren"
+
+#: ksieveui/autocreatescripts/sieveactions/widgets/selectvariablemodifiercombobox.cpp:44
+msgid "Length"
+msgstr "Länge"
+
+#: ksieveui/autocreatescripts/sieveactionwidgetlister.cpp:76
+msgid "Please select an action."
+msgstr "Bitte wählen Sie eine Aktion aus."
+
+#: ksieveui/autocreatescripts/sieveactionwidgetlister.cpp:142
+msgid "Add comment"
+msgstr "Kommentar hinzufügen"
+
+#: ksieveui/autocreatescripts/sieveactionwidgetlister.cpp:387
+msgid "We detected a loop if in a loop if. It's not supported"
+msgstr ""
+"Es wurde eine Schleife innerhalb einer Schleife erkannt, dies wird nicht "
+"unterstützt."
+
+#: ksieveui/autocreatescripts/sieveconditions/sievecondition.cpp:87
+#, kde-format
+msgid "Unknown tag \"%1\" during parsing condition \"%2\""
+msgstr "Unbekannter Tag „%1“ beim Verarbeiten der Bedingung „%2“"
+
+#: ksieveui/autocreatescripts/sieveconditions/sievecondition.cpp:92
+#, kde-format
+msgid "An unknown tag value \"%1\" was found during parsing condition \"%2\"."
+msgstr ""
+"Es wurde ein unbekannter Tag-Wert „%1“ beim Verarbeiten der Bedingung „%2“ "
+"gefunden."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionaddress.cpp:36
+msgid "Address"
+msgstr "Adresse"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionaddress.cpp:71
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionenvelope.cpp:72
+msgid "address:"
+msgstr "Adresse:"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionaddress.cpp:77
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionenvelope.cpp:78
+msgid "Use ; to separate emails"
+msgstr "Verwenden Sie \";\" zur Trennung von E-Mails"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionaddress.cpp:108
+msgid ""
+"The \"address\" test matches Internet addresses in structured headers that "
+"contain addresses.  It returns true if any header contains any key in the "
+"specified part of the address, as modified by the comparator and the match "
+"keyword."
+msgstr ""
+"Der Test „address“ überprüft, ob Internet-Adressen in strukturierten "
+"Vorspannzeilen Adressen enthalten. Der Test gibt wahr zurückgegeben, wenn "
+"jeder Vorspann jedes Schlüsselwort des angegebenen Teils der Adresse "
+"enthält. Dabei wird die Adresse durch die Vergleichsfunktion  geändert und "
+"auf Übereinstimmung mit dem Schlüsselwort geprüft."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionbody.cpp:33
+msgid "Body"
+msgstr "Nachrichtentext"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionbody.cpp:98
+msgid ""
+"The body test matches content in the body of an email message, that is, "
+"anything following the first empty line after the header.  (The empty line "
+"itself, if present, is not considered to be part of the body.)"
+msgstr ""
+"Der Test „body“ vergleicht den Inhalt im Nachrichtentext einer E-Mail, das "
+"heißt alles nach der ersten leeren Zeile nach den Vorspannzeilen. Die leere "
+"Zeile selbst, wenn vorhanden, wird nicht als Bestandteil des "
+"Nachrichtentexts angesehen."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditioncurrentdate.cpp:33
+msgid "Currentdate"
+msgstr "Currentdate"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditioncurrentdate.cpp:91
+msgid ""
+"The currentdate test is similar to the date test, except that it operates on "
+"the current date/time rather than a value extracted from the message header."
+msgstr ""
+"Der Test „currentdate“ funktioniert ähnlich wie der Test „date“, außer das "
+"er mit dem aktuellen Datum oder Zeit anstatt mit einem Wert, der aus dem "
+"Nachrichtenvorspann extrahiert wurde, funktioniert."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditiondate.cpp:34
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectdatewidget.cpp:56
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectheadertypecombobox.cpp:230
+msgid "Date"
+msgstr "Datum"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditiondate.cpp:106
+msgid ""
+"The date test matches date/time information derived from headers containing "
+"date-time values."
+msgstr ""
+"Der Test „date“ überprüft Datei und Zeit aus den Vorspannzeilen mit Datums- "
+"und Zeitwerten auf Übereinstimmung."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionenvelope.cpp:37
+msgid "Envelope"
+msgstr "Umschlag"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionenvelope.cpp:121
+msgid ""
+"The \"envelope\" test is true if the specified part of the [SMTP] (or "
+"equivalent) envelope matches the specified key."
+msgstr ""
+"Der Test „envelope“ ergibt wahr, wenn der angegebene Teil des Umschlags (von "
+"SMTP oder entsprechend) auf den angegebenen Schlüssel passt."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionenvironment.cpp:34
+msgid "Environment"
+msgstr "Umgebung"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionenvironment.cpp:49
+msgid "Item:"
+msgstr "Element:"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionenvironment.cpp:109
+msgid ""
+"The environment test retrieves the item of environment information specified "
+"by the name string and matches it to the values specified in the key-list "
+"argument."
+msgstr ""
+"Der Test „environment“ ruft die Elemente der Umgebungsinformation ab, die "
+"durch die Zeichenkette „name“ festgelegt werden und mit den Werten im "
+"Argument „key-list“ übereinstimmen."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionexists.cpp:34
+msgid "Exists"
+msgstr "Existiert"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionexists.cpp:52
+msgid "exists"
+msgstr "existiert"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionexists.cpp:53
+msgid "not exists"
+msgstr "existiert nicht"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionexists.cpp:79
+msgid ""
+"The \"exists\" test is true if the headers listed in the header-names "
+"argument exist within the message.  All of the headers must exist or the "
+"test is false."
+msgstr ""
+"Der Test „exists“ ergibt wahr, wenn alle im Argument „header-names“ "
+"aufgeführten Vorspanneinträge in der Nachricht vorhanden sind. Es müssen "
+"alle Vorspanneinträge vorhanden sein, ansonsten ergibt der Test falsch."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionfalse.cpp:29
+msgid "False"
+msgstr "Falsch"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionfalse.cpp:45
+msgid "false"
+msgstr "Falsch"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionfalse.cpp:57
+msgid "The \"false\" test always evaluates to false."
+msgstr "Der Test „false“ ergibt immer falsch."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionhasflag.cpp:35
+msgid "Has Flag"
+msgstr "Hat Merker"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionhasflag.cpp:63
+msgid ""
+"Variable name\n"
+" (if empty it uses internal variable):"
+msgstr ""
+"Variablenname\n"
+"Wenn nicht gesetzt, wird die interne Variable verwendet:"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionhasflag.cpp:132
+msgid ""
+"The hasflag test evaluates to true if any of the variables matches any flag "
+"name."
+msgstr ""
+"Der Test „hasflag“ ergibt „wahr“, wenn eine der Variablen mit einem der "
+"Merkernamen übereinstimmt."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionheader.cpp:34
+msgid "Header"
+msgstr "Vorspann"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionheader.cpp:63
+msgid "With value:"
+msgstr "Mit Wert:"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionheader.cpp:91
+msgid ""
+"The \"header\" test evaluates to true if the value of any of the named "
+"headers, ignoring leading and trailing whitespace, matches any key."
+msgstr ""
+"Der Test „header“ ergibt wahr, wenn der Wert aller benannten "
+"Vorspanneinträge ohne umgebende Leerraumreichen auf jeden der Schlüssel "
+"passen."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionihave.cpp:33
+msgid "IHave"
+msgstr "IHave"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionihave.cpp:51
+msgid "Use \",\" to separate capabilities"
+msgstr "Verwenden Sie „;“ zur Trennung von Fähigkeiten"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionihave.cpp:83
+msgid ""
+"The \"ihave\" test provides a means for Sieve scripts to test for the "
+"existence of a given extension prior to actually using it."
+msgstr ""
+"Der Test „ihave“ ermöglicht in Sieve-Skripten die Überprüfung, ob angegebene "
+"Erweiterungen vorhanden sind, bevor sie tatsächlich im Skript benutzt werden."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionmailboxexists.cpp:32
+msgid "Mailbox exists"
+msgstr "Das Postfach existiert"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionmailboxexists.cpp:81
+msgid ""
+"The \"mailboxexists\" test is true if all mailboxes listed in the \"mailbox-"
+"names\" argument exist in the mailstore, and each allows the user in whose "
+"context the Sieve script runs to \"deliver\" messages into it."
+msgstr ""
+"Der Test „mailboxexists“ ergibt wahr, wenn alle Postfächer im Argument "
+"„mailbox-names“ im E-Mailspeicher existieren, und der Benutzer, mit dessen "
+"Berechtigung das Sieve-Skript ausgeführt wird, Nachrichten in jedes dieser "
+"Postfächer verschieben darf."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionmetadata.cpp:33
+msgid "Meta Data"
+msgstr "Metadaten"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionmetadata.cpp:58
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionmetadataexists.cpp:47
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionservermetadata.cpp:59
+msgid "Mailbox:"
+msgstr "Postfach:"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionmetadata.cpp:66
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionservermetadata.cpp:67
+msgid "Annotations:"
+msgstr "Anmerkungen:"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionmetadata.cpp:128
+msgid ""
+"This test retrieves the value of the mailbox annotation \"annotation-name\" "
+"for the mailbox \"mailbox\". The retrieved value is compared to the \"key-"
+"list\". The test returns true if the annotation exists and its value matches "
+"any of the keys."
+msgstr ""
+"Dieser Test bezieht den Wert der Postfach-Anmerkung „annotation-name“ für "
+"das Postfach „mailbox“. Dieser Wert wird mit der „key-list“ verglichen. Der "
+"Test ergibt wahr, wenn die Anmerkung existiert und der Wert mit jedem der "
+"Schlüssel übereinstimmt."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionmetadataexists.cpp:31
+msgid "Metadata exists"
+msgstr "Metadaten existieren"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionmetadataexists.cpp:55
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionservermetadataexists.cpp:46
+msgid "Annotation:"
+msgstr "Anmerkung:"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionmetadataexists.cpp:93
+msgid ""
+"The \"metadataexists\" test is true if all of the annotations listed in the "
+"\"annotation-names\" argument exist for the specified mailbox."
+msgstr ""
+"Der Test „metadataexists“ ergibt wahr, wenn alle im Argument „annotation-"
+"names“ genannten Anmerkungen für das angegebene Postfach existieren."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionservermetadata.cpp:34
+msgid "Server Meta Data"
+msgstr "Server-Metadaten"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionservermetadata.cpp:129
+msgid ""
+"This test retrieves the value of the server annotation \"annotation-name\".  "
+"The retrieved value is compared to the \"key-list\". The test returns true "
+"if the annotation exists and its value matches any of the keys."
+msgstr ""
+"Dieser Test bezieht den Wert der Server-Anmerkung „annotation-name“. Dieser "
+"Wert wird mit der „key-list“ verglichen. Der Test ergibt wahr, wenn die "
+"Anmerkung existiert und der Wert mit jedem der Schlüssel übereinstimmt."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionservermetadataexists.cpp:30
+msgid "Server Meta Data Exists"
+msgstr "Server-Metadaten existieren"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionservermetadataexists.cpp:81
+msgid ""
+"The \"servermetadataexists\" test is true if all of the server annotations "
+"listed in the \"annotation-names\" argument exist."
+msgstr ""
+"Der Test „servermetadataexists“ ergibt wahr, wenn alle im Argument "
+"„annotation-names“ genannten Anmerkungen für den Server existieren."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionsize.cpp:32
+msgid "Size"
+msgstr "Größe"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionsize.cpp:50
+msgid "under"
+msgstr "unter"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionsize.cpp:51
+msgid "over"
+msgstr "über"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionsize.cpp:73
+msgid ""
+"The \"size\" test deals with the size of a message.  It takes either a "
+"tagged argument of \":over\" or \":under\", followed by a number "
+"representing the size of the message."
+msgstr ""
+"Der Test „size“ behandelt die Größe einer Nachricht. Als Argument wird "
+"entweder „:over“ oder „:under\t“ verwendet, gefolgt von einem Zahlenwert für "
+"die Größe der Nachricht."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionspamtest.cpp:36
+msgid "Spam Test"
+msgstr "Spam-Test"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionspamtest.cpp:54
+msgid "Percent"
+msgstr "Prozent"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionspamtest.cpp:122
+msgid ""
+"Sieve implementations that implement the \"spamtest\" test use an identifier "
+"of either \"spamtest\" or \"spamtestplus\" for use with the capability "
+"mechanism."
+msgstr ""
+"Sieve-Versionen, die den Test „spamtest“ implementieren, verwenden entweder "
+"die Kennung „spamtest“ oder „spamtestplus“ für die Überprüfung der "
+"Fähigkeiten."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditiontrue.cpp:28
+msgid "True"
+msgstr "Wahr"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditiontrue.cpp:44
+msgid "true"
+msgstr "wahr"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditiontrue.cpp:56
+msgid "The \"true\" test always evaluates to true."
+msgstr "Der Test „true“ ergibt immer wahr."
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionvirustest.cpp:34
+msgid "Virus Test"
+msgstr "Virus-Test"
+
+#: ksieveui/autocreatescripts/sieveconditions/sieveconditionvirustest.cpp:101
+msgid ""
+"Sieve implementations that implement the \"virustest\" test have an "
+"identifier of \"virustest\" for use with the capability mechanism."
+msgstr ""
+"Sieve-Versionen, die den Test „virustest“ implementieren, verwenden die "
+"Kennung „virustest“ für die Überprüfung der Fähigkeiten."
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectaddresspartcombobox.cpp:40
+msgid "all"
+msgstr "alle"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectaddresspartcombobox.cpp:41
+msgid "localpart"
+msgstr "localpart"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectaddresspartcombobox.cpp:42
+msgid "domain"
+msgstr "domäne"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectaddresspartcombobox.cpp:44
+msgid "user"
+msgstr "benutzer"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectaddresspartcombobox.cpp:45
+msgid "detail"
+msgstr "Detail"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectbodytypewidget.cpp:47
+msgid "raw"
+msgstr "roh"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectbodytypewidget.cpp:48
+msgid "content"
+msgstr "Inhalt"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectbodytypewidget.cpp:49
+msgid "text"
+msgstr "Text"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectdatewidget.cpp:53
+msgid "Year"
+msgstr "Jahr"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectdatewidget.cpp:54
+msgid "Month"
+msgstr "Monat"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectdatewidget.cpp:55
+msgid "Day"
+msgstr "Tag"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectdatewidget.cpp:57
+msgid "Julian"
+msgstr "Julianisch"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectdatewidget.cpp:58
+msgid "Hour"
+msgstr "Stunde"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectdatewidget.cpp:59
+msgid "Minute"
+msgstr "Minute"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectdatewidget.cpp:60
+msgid "Second"
+msgstr "Sekunde"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectdatewidget.cpp:61
+msgid "Time"
+msgstr "Zeit"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectdatewidget.cpp:62
+msgid "iso8601"
+msgstr "ISO 8601"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectdatewidget.cpp:63
+msgid "std11"
+msgstr "std11"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectdatewidget.cpp:64
+msgid "Zone"
+msgstr "Zone"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectdatewidget.cpp:65
+msgid "Weekday"
+msgstr "Wochentag"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectheadertypecombobox.cpp:31
+msgid "Select multiple headers..."
+msgstr "Mehrere Vorspann auswählen ..."
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectheadertypecombobox.cpp:37
+msgid "Headers"
+msgstr "Vorspann"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectheadertypecombobox.cpp:46
+msgid "Add new header:"
+msgstr "Neuen Vorspann hinzufügen:"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectheadertypecombobox.cpp:222
+msgid "From"
+msgstr "Von"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectheadertypecombobox.cpp:223
+msgid "To"
+msgstr "An"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectheadertypecombobox.cpp:224
+msgid "Reply To"
+msgstr "Antwort an"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectheadertypecombobox.cpp:225
+msgid "Cc"
+msgstr "Cc"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectheadertypecombobox.cpp:226
+msgid "Bcc"
+msgstr "Bcc"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectheadertypecombobox.cpp:228
+msgid "Subject"
+msgstr "Betreff"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectheadertypecombobox.cpp:229
+msgid "Sender"
+msgstr "Absender"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectheadertypecombobox.cpp:231
+msgid "Message Id"
+msgstr "Nachrichtenkennung"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectheadertypecombobox.cpp:232
+msgid "Content type"
+msgstr "Inhaltstyp"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectmimecombobox.cpp:38
+msgid "Type"
+msgstr "Typ"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectmimecombobox.cpp:39
+msgid "Subtype"
+msgstr "Untertyp"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectmimecombobox.cpp:40
+msgid "Anychild"
+msgstr "Anychild"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectmimecombobox.cpp:41
+msgid "Parameters"
+msgstr "Parameter"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectrelationalmatchtype.cpp:71
+msgid "Value"
+msgstr "Wert"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectrelationalmatchtype.cpp:72
+msgid "Count"
+msgstr "Anzahl"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectrelationalmatchtype.cpp:77
+msgid "Greater than"
+msgstr "Größer als"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectrelationalmatchtype.cpp:78
+msgid "Greater than or equal"
+msgstr "Größer oder gleich"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectrelationalmatchtype.cpp:79
+msgid "Less than"
+msgstr "Kleiner als"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectrelationalmatchtype.cpp:80
+msgid "Less than or equal"
+msgstr "Kleiner oder gleich"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectrelationalmatchtype.cpp:81
+msgid "Equal to"
+msgstr "Gleich"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectrelationalmatchtype.cpp:82
+msgid "Not equal to"
+msgstr "Nicht gleich"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectsizetypecombobox.cpp:38
+msgid "Bytes"
+msgstr "Byte"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectsizetypecombobox.cpp:39
+msgid "KB"
+msgstr "Kb"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectsizetypecombobox.cpp:40
+msgid "MB"
+msgstr "MB"
+
+#: ksieveui/autocreatescripts/sieveconditions/widgets/selectsizetypecombobox.cpp:41
+msgid "GB"
+msgstr "GB"
+
+#: ksieveui/autocreatescripts/sieveconditionwidgetlister.cpp:63
+msgid "Please select an condition."
+msgstr "Bitte wählen Sie eine Bedingung aus."
+
+#: ksieveui/autocreatescripts/sieveeditorgraphicalmodewidget.cpp:51
+msgid "Sieve Script"
+msgstr "Sieve-Skript"
+
+#: ksieveui/autocreatescripts/sieveeditorgraphicalmodewidget.cpp:154
+msgid "Error during importing script. Do you want to switch to text mode?"
+msgstr "Fehler beim Import des Skripts. Möchten Sie in den Textmodus wechseln?"
+
+#: ksieveui/autocreatescripts/sieveforeverypartwidget.cpp:52
+msgid "Add ForEveryPart loop"
+msgstr "ForEveryPart-Schleife hinzufügen"
+
+#: ksieveui/autocreatescripts/sieveforeverypartwidget.cpp:78
+msgid ""
+"\"foreverypart\", which is an iterator that walks though every MIME part of "
+"a message, including nested parts, depth first, and applies the commands in "
+"the specified block to each of them."
+msgstr ""
+"„foreverypart“ ist ein Iterator, der durch alle MIME-Teile einer Nachricht "
+"einschließlich aller verschachtelten Teile geht, und die Befehle im "
+"angegebenen Block auf alle Teile anwendet."
+
+#: ksieveui/autocreatescripts/sieveforeverypartwidget.cpp:108
+#, kde-format
+msgid "Unknown tagValue \"%1\" during loading loop \"for\""
+msgstr "Unbekannter Tag-Wert „%1“ beim Laden der Schleife „for“"
+
+#: ksieveui/autocreatescripts/sieveforeverypartwidget.cpp:114
+#, kde-format
+msgid "Unknown tag \"%1\" during loading loop \"for\""
+msgstr "Unbekannter Tag „%1“ beim Laden der Schleife „for“"
+
+#: ksieveui/autocreatescripts/sieveglobalvariablewidget.cpp:69
+msgid "Variable name:"
+msgstr "Variablenname:"
+
+#: ksieveui/autocreatescripts/sieveglobalvariablewidget.cpp:76
+msgid "Set value to:"
+msgstr "Wert setzen auf:"
+
+#: ksieveui/autocreatescripts/sieveglobalvariablewidget.cpp:131
+#, kde-format
+msgid "Unknown tag \"%1\" during loading of variables."
+msgstr "Unbekannter Tag „%1“ beim Laden von Variablen."
+
+#: ksieveui/autocreatescripts/sieveglobalvariablewidget.cpp:178
+msgid ""
+"A variable has global scope in all scripts that have declared it with the "
+"\"global\" command.  If a script uses that variable name without declaring "
+"it global, the name specifies a separate, non-global variable within that "
+"script."
+msgstr ""
+"Eine Variable hat einen globalen Gültigkeitsbereich in allen Skripten, in "
+"denen es mit dem Befehl „global“ deklariert wurde. Verwendet ein Skript "
+"diesen Variablennamen ohne globale Deklaration, definiert dieser Name eine "
+"eigene, nicht globale Variable, die nur lokal innerhalb dieses Skripts "
+"gültig ist."
+
+#: ksieveui/autocreatescripts/sieveincludewidget.cpp:54
+msgid "personal"
+msgstr "persönlich"
+
+#: ksieveui/autocreatescripts/sieveincludewidget.cpp:55
+msgid "global"
+msgstr "global"
+
+#: ksieveui/autocreatescripts/sieveincludewidget.cpp:69
+#, kde-format
+msgid "Unknown location type \"%1\" during parsing includes"
+msgstr ""
+"Unbekannter Typ „%1“ des Speicherorts beim Einlesen von einzuschließenden "
+"Dateien"
+
+#: ksieveui/autocreatescripts/sieveincludewidget.cpp:134
+msgid "Include:"
+msgstr "Einschließen:"
+
+#: ksieveui/autocreatescripts/sieveincludewidget.cpp:140
+#: ksieveui/templates/sievetemplateeditdialog.cpp:49
+msgid "Name:"
+msgstr "Name:"
+
+#: ksieveui/autocreatescripts/sieveincludewidget.cpp:147
+msgid "Optional"
+msgstr "Optional"
+
+#: ksieveui/autocreatescripts/sieveincludewidget.cpp:151
+msgid "Once"
+msgstr "Einmalig"
+
+#: ksieveui/autocreatescripts/sieveincludewidget.cpp:215
+msgid ""
+"The \"include\" command takes an optional \"location\" parameter, an "
+"optional \":once\" parameter, an optional \":optional\" parameter, and a "
+"single string argument representing the name of the script to include for "
+"processing at that point."
+msgstr ""
+"Der Befehl „include“ hat die optionalem Parameter „location“, „:once“ und „:"
+"optional“ sowie einen einzigen Text als Argument für den Namen des Skripts, "
+"das an diesem Punkt zur Verarbeitung eingeschlossen werden soll."
+
+#: ksieveui/autocreatescripts/sieveincludewidget.cpp:324
+msgid "We can not add more includes elements."
+msgstr ""
+"Es können keine weiteren einzuschließenden Elemente hinzugefügt werden."
+
+#: ksieveui/autocreatescripts/sievescriptblockwidget.cpp:42
+msgid "Conditions"
+msgstr "Bedingungen"
+
+#: ksieveui/autocreatescripts/sievescriptblockwidget.cpp:45
+msgid "Match all messages"
+msgstr "Trifft auf alle Nachrichten zu"
+
+#: ksieveui/autocreatescripts/sievescriptblockwidget.cpp:46
+msgid "Match a&ll of the following"
+msgstr "Trifft auf a&lle der Folgenden zu"
+
+#: ksieveui/autocreatescripts/sievescriptblockwidget.cpp:47
+msgid "Match an&y of the following"
+msgstr "Trifft auf &eines der Folgenden zu"
+
+#: ksieveui/autocreatescripts/sievescriptblockwidget.cpp:71
+msgid "Actions"
+msgstr "Aktionen"
+
+#: ksieveui/autocreatescripts/sievescriptblockwidget.cpp:80
+msgid "Add new block:"
+msgstr "Neuen Block hinzufügen:"
+
+#: ksieveui/autocreatescripts/sievescriptblockwidget.cpp:84
+msgid "\"elsif\" block"
+msgstr "„elsif“-Block"
+
+#: ksieveui/autocreatescripts/sievescriptblockwidget.cpp:85
+msgid "\"else\" block"
+msgstr "„else“-Block"
+
+#: ksieveui/autocreatescripts/sievescriptdescriptiondialog.cpp:29
+msgid "Description"
+msgstr "Beschreibung"
+
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:122
+msgctxt "Move selected filter up."
+msgid "Up"
+msgstr "Nach oben"
+
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:123
+msgctxt "Move selected filter down."
+msgid "Down"
+msgstr "Nach unten"
+
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:124
+msgctxt "Move selected filter to the top."
+msgid "Top"
+msgstr "Anfang"
+
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:125
+msgctxt "Move selected filter to the bottom."
+msgid "Bottom"
+msgstr "Ende"
+
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:142
+msgid "Rename..."
+msgstr "Umbenennen ..."
+
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:144
+msgid "Edit description..."
+msgstr "Beschreibung bearbeiten ..."
+
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:211
+#: ksieveui/widgets/managesievewidget.cpp:178
+#: ksieveui/widgets/managesievewidget.cpp:192
+msgid "New Script"
+msgstr "Neues Skript"
+
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:211
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:237
+msgid "Add new name:"
+msgstr "Neuen Namen hinzufügen:"
+
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:222
+#, kde-format
+msgid "Do you want to delete \"%1\" script?"
+msgstr "Möchten Sie das Skript „%1“ löschen?"
+
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:222
+msgid "Delete script"
+msgstr "Skript löschen"
+
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:237
+msgid "Rename"
+msgstr "Umbenennen"
+
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:414
+msgid "forEveryPart is not supported by your server"
+msgstr "„forEveryPart“ wird vom Server nicht unterstützt"
+
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:487
+#, kde-format
+msgid "Script part %1"
+msgstr "Skriptteil %1"
+
+#: ksieveui/autocreatescripts/sievescriptpage.cpp:48
+msgid "Includes"
+msgstr "Beinhaltet"
+
+#: ksieveui/autocreatescripts/sievescriptpage.cpp:52
+msgid "Global Variable"
+msgstr "Globale Variable"
+
+#: ksieveui/autocreatescripts/sievescriptpage.cpp:58
+msgid "ForEveryPart"
+msgstr "ForEveryPart"
+
+#: ksieveui/autocreatescripts/sievescriptpage.cpp:103
+msgid ""
+"Script should always have just one \"Else\" block. We cannot add another one."
+msgstr ""
+"Ein Skript sollte immer nur einen Block „Else“ enthalten. Daher kann kein "
+"weiterer Block hinzugefügt werden."
+
+#: ksieveui/autocreatescripts/sievescriptpage.cpp:118
+msgid "Main block"
+msgstr "Hauptblock"
+
+#: ksieveui/autocreatescripts/sievescriptpage.cpp:120
+msgid "Block \"Elsif\""
+msgstr "Block \"Elsif\""
+
+#: ksieveui/autocreatescripts/sievescriptpage.cpp:122
+msgid "Block \"Else\""
+msgstr "Block \"Else\""
+
+#: ksieveui/autocreatescripts/sievescriptparsingerrordialog.cpp:30
+msgid "Sieve Parsing Error"
+msgstr "Sieve-Verarbeitungsfehler"
+
+#: ksieveui/autocreatescripts/sievescriptparsingerrordialog.cpp:32
+#: ksieveui/scriptsparsing/parsingresultdialog.cpp:34
+msgid "Save As..."
+msgstr "Speichern unter ..."
+
+#: ksieveui/autocreatescripts/sievescriptparsingerrordialog.cpp:49
+msgid "Sieve script:"
+msgstr "Sieve-Skript:"
+
+#: ksieveui/autocreatescripts/sievescriptparsingerrordialog.cpp:51
+msgid "Errors reported:"
+msgstr "Berichtete Fehler:"
+
+#: ksieveui/autocreatescripts/sievescriptparsingerrordialog.cpp:73
+msgid "all files (*)"
+msgstr "Alle Dateien (*)"
+
+#: ksieveui/autocreatescripts/sievescriptparsingerrordialog.cpp:74
+msgid "Save Log To File"
+msgstr "Protokoll in Datei speichern"
+
+#: ksieveui/autocreatescripts/sievescripttabwidget.cpp:57
+msgctxt "@action:inmenu"
+msgid "Close Tab"
+msgstr "Unterfenster schließen"
+
+#: ksieveui/debug/sievedebugdialog.cpp:33
+msgid "Sieve Diagnostics"
+msgstr "Diagnose von Sieve"
+
+#: ksieveui/debug/sievedebugdialog.cpp:50
+msgid ""
+"Collecting diagnostic information about Sieve support...\n"
+"\n"
+msgstr ""
+"Diagnoseinformationen über die Sieve-Unterstützung werden eingeholt ...\n"
+"\n"
+
+#: ksieveui/debug/sievedebugdialog.cpp:53
+msgid "No Imap Resource found."
+msgstr "Es wurde keine IMAP-Ressource gefunden."
+
+#: ksieveui/debug/sievedebugdialog.cpp:90
+#, kde-format
+msgid "Collecting data for account '%1'...\n"
+msgstr "Einholen von Daten für Konto „%1“ ...\n"
+
+#: ksieveui/debug/sievedebugdialog.cpp:91
+msgid "------------------------------------------------------------\n"
+msgstr "------------------------------------------------------------\n"
+
+#: ksieveui/debug/sievedebugdialog.cpp:96
+msgid ""
+"(Account does not support Sieve)\n"
+"\n"
+msgstr ""
+"(Konto unterstützt kein Sieve)\n"
+"\n"
+
+#: ksieveui/debug/sievedebugdialog.cpp:127
+#, kde-format
+msgid "Contents of script '%1':\n"
+msgstr "Inhalt von Skript „%1“:\n"
+
+#: ksieveui/debug/sievedebugdialog.cpp:149
+msgid ""
+"(This script is empty.)\n"
+"\n"
+msgstr ""
+"(Dieses Skript ist leer)\n"
+"\n"
+
+#: ksieveui/debug/sievedebugdialog.cpp:152
+#, kde-format
+msgid ""
+"------------------------------------------------------------\n"
+"%1\n"
+"------------------------------------------------------------\n"
+"\n"
+msgstr ""
+"------------------------------------------------------------\n"
+"%1\n"
+"------------------------------------------------------------\n"
+"\n"
+
+#: ksieveui/debug/sievedebugdialog.cpp:168
+msgid "Sieve capabilities:\n"
+msgstr "Sieve-Fähigkeiten:\n"
+
+#: ksieveui/debug/sievedebugdialog.cpp:171
+msgid "(No special capabilities available)"
+msgstr "(Keine Zusatz-Fähigkeiten verfügbar)"
+
+#: ksieveui/debug/sievedebugdialog.cpp:179
+msgid "Available Sieve scripts:\n"
+msgstr "Vorhandene Sieve-Skripte:\n"
+
+#: ksieveui/debug/sievedebugdialog.cpp:182
+msgid ""
+"(No Sieve scripts available on this server)\n"
+"\n"
+msgstr ""
+"(Auf dem Server sind keine Sieve-Skripte verfügbar)\n"
+"\n"
+
+#: ksieveui/debug/sievedebugdialog.cpp:189
+#, kde-format
+msgid ""
+"Active script: %1\n"
+"\n"
+msgstr ""
+"Aktives Skript: %1\n"
+"\n"
+
+#: ksieveui/editor/sieveeditor.cpp:35
+msgid "Edit Sieve Script"
+msgstr "Sieve-Skript bearbeiten"
+
+#: ksieveui/editor/sieveeditorabstractwidget.cpp:45
+#: ksieveui/editor/sieveeditorabstractwidget.cpp:66
+msgid ""
+"*.siv|sieve files (*.siv)\n"
+"*|all files (*)"
+msgstr ""
+"*.siv|sieve-Dateien (*.siv)\n"
+"*|Alle Dateien (*)"
+
+#: ksieveui/editor/sieveeditorabstractwidget.cpp:46
+msgid "Save Script"
+msgstr "Skript speichern"
+
+#: ksieveui/editor/sieveeditorabstractwidget.cpp:62
+msgid "You will overwrite script. Do you want to continue?"
+msgstr "Das Skript wird überschrieben. Möchten Sie fortfahren?"
+
+#: ksieveui/editor/sieveeditorabstractwidget.cpp:62
+msgid "Import Script"
+msgstr "Skript importieren"
+
+#: ksieveui/editor/sieveeditorabstractwidget.cpp:68
+msgid "Import Script Sieve"
+msgstr "Sieve-Skript importieren"
+
+#: ksieveui/editor/sieveeditorabstractwidget.cpp:75
+#, kde-format
+msgid ""
+"Could not load the file %1:\n"
+"\"%2\" is the detailed error description."
+msgstr ""
+"Die Datei %1 kann nicht geladen werden:\n"
+"Die ausführliche Fehlerbeschreibung laut: „%2“."
+
+#: ksieveui/editor/sieveeditorabstractwidget.cpp:79
+msgid "Sieve Editor Error"
+msgstr "Sieve-Editorfehler"
+
+#: ksieveui/editor/sieveeditorparsingmissingfeaturewarning.cpp:34
+msgid ""
+"Some errors were found during parsing. <a href=\"sieveerrordetails\">"
+"(Details...)</a>"
+msgstr ""
+"Es wurden einige Fehler bei der Verarbeitung gefunden. <a href="
+"\"sieveerrordetails\">(Details ...)</a>"
+
+#: ksieveui/editor/sieveeditorparsingmissingfeaturewarning.cpp:39
+msgid "Switch in graphical mode"
+msgstr "In Grafikmodus wechseln"
+
+#: ksieveui/editor/sieveeditorparsingmissingfeaturewarning.cpp:43
+msgid "Keep in text mode"
+msgstr "In Textmodus bleiben"
+
+#: ksieveui/editor/sieveeditorparsingmissingfeaturewarning.cpp:49
+msgid "Switch in text mode"
+msgstr "In Textmodus wechseln"
+
+#: ksieveui/editor/sieveeditorparsingmissingfeaturewarning.cpp:53
+msgid "Keep in Graphical mode"
+msgstr "Im Grafikmodus bleiben"
+
+#: ksieveui/editor/sieveeditortabwidget.cpp:72
+#, kde-format
+msgid "Error during load page about %1"
+msgstr "Fehler beim Laden der Seite über %1"
+
+#: ksieveui/editor/sieveeditortabwidget.cpp:88
+#, kde-format
+msgid "Help about: %1"
+msgstr "Hilfe über: %1"
+
+#: ksieveui/editor/sieveeditortextmodewidget.cpp:72
+msgid "Sieve Template:"
+msgstr "Sieve-Vorlage:"
+
+#: ksieveui/editor/sieveeditortextmodewidget.cpp:92
+msgid "Editor"
+msgstr "Editor"
+
+#: ksieveui/editor/sieveeditortextmodewidget.cpp:205
+msgid "Error during parsing"
+msgstr "Fehler beim Einlesen"
+
+#: ksieveui/editor/sieveeditorwarning.cpp:29
+msgid "We cannot parse script. We cannot switch to graphical mode"
+msgstr ""
+"Das Skript kann nicht verarbeitet werden. Wechseln in den grafischen Modus "
+"ist nicht möglich"
+
+#: ksieveui/editor/sieveeditorwidget.cpp:59
+msgid "Check Syntax"
+msgstr "Syntax überprüfen"
+
+#: ksieveui/editor/sieveeditorwidget.cpp:63
+msgid "Import..."
+msgstr "Importieren ..."
+
+#: ksieveui/editor/sieveeditorwidget.cpp:65
+msgid "Autogenerate Script..."
+msgstr "Automatisch generiertes Skript ..."
+
+#: ksieveui/editor/sieveeditorwidget.cpp:68
+msgid "Switch Mode"
+msgstr "Modus wechseln"
+
+#: ksieveui/editor/sieveeditorwidget.cpp:80
+msgid "Upload..."
+msgstr "Hochladen ..."
+
+#: ksieveui/editor/sieveeditorwidget.cpp:88
+msgid "Script name:"
+msgstr "Skriptname:"
+
+#: ksieveui/editor/sieveeditorwidget.cpp:170
+msgctxt "Default description for the source"
+msgid "My Sieve Script"
+msgstr "Mein Sieve-Skript"
+
+#: ksieveui/editor/sieveinfowidget.cpp:46
+msgid "Server sieve supports:"
+msgstr "Sieve-Server unterstützt:"
+
+#: ksieveui/editor/sievetextedit.cpp:298
+#, kde-format
+msgid "Help about: '%1'"
+msgstr "Hilfe über: „%1“"
+
+#: ksieveui/managescriptsjob/generateglobalscriptjob.cpp:49
+#: ksieveui/managescriptsjob/parseuserscriptjob.cpp:48
+msgid "Path is not specified."
+msgstr "Der Pfad ist nicht angegeben."
+
+#: ksieveui/managescriptsjob/generateglobalscriptjob.cpp:90
+msgid "Error when we wrote \"MASTER\" script on server."
+msgstr "Fehler beim Schreiben des Skripts „MASTER“ auf dem Server."
+
+#: ksieveui/managescriptsjob/generateglobalscriptjob.cpp:124
+msgid "Error when we wrote \"User\" script on server."
+msgstr "Fehler beim Schreiben des Skripts „User“ auf dem Server."
+
+#: ksieveui/managescriptsjob/parseuserscriptjob.cpp:62
+msgid "Script is empty."
+msgstr "Dieses Skript ist leer."
+
+#: ksieveui/managescriptsjob/parseuserscriptjob.cpp:70
+msgid "Script parsing error"
+msgstr "Skript-Verarbeitungsfehler"
+
+#: ksieveui/managesievescriptsdialog.cpp:70
+msgid "No Sieve URL configured"
+msgstr "Keine Sieve-Adresse eingerichtet"
+
+#: ksieveui/managesievescriptsdialog.cpp:95
+msgid "Manage Sieve Scripts"
+msgstr "„Sieve“-Skripte verwalten"
+
+#: ksieveui/managesievescriptsdialog.cpp:116
+msgctxt "create a new sieve script"
+msgid "New..."
+msgstr "Neu ..."
+
+#: ksieveui/managesievescriptsdialog.cpp:120
+msgid "Edit..."
+msgstr "Bearbeiten ..."
+
+#: ksieveui/managesievescriptsdialog.cpp:124
+msgid "Delete"
+msgstr "Löschen"
+
+#: ksieveui/managesievescriptsdialog.cpp:128
+msgid "Deactivate"
+msgstr "Deaktivieren"
+
+#: ksieveui/managesievescriptsdialog.cpp:241
+msgid "No errors found."
+msgstr "Es wurde keine Fehler gefunden."
+
+#: ksieveui/managesievescriptsdialog.cpp:244
+msgid "An unknown error was encountered."
+msgstr "Es ist ein Fehler aufgetreten.."
+
+#: ksieveui/managesievescriptsdialog.cpp:257
+msgid "The Sieve script was successfully uploaded."
+msgstr "Das Sieve-Skript wurde erfolgreich hochgeladen."
+
+#: ksieveui/managesievescriptsdialog.cpp:258
+msgid "Sieve Script Upload"
+msgstr "Hochladen des Sieve-Skripts"
+
+#: ksieveui/scriptsparsing/parsingresultdialog.cpp:32
+msgid "Sieve Parsing"
+msgstr "Sieve-Verarbeitung"
+
+#: ksieveui/scriptsparsing/parsingresultdialog.cpp:71
+msgid ""
+"*.xml|xml files (*.xml)\n"
+"*|all files (*)"
+msgstr ""
+"*.xml|xml-Dateien (*.xml)\n"
+"*|Alle Dateien (*)"
+
+#. i18n: ectx: label, entry (AllowOutOfOfficeSettings), group (OutOfOffice)
+#: ksieveui/settings/sieve-vacation.kcfg:12
+msgid "Allow out-of-office settings to be changeable by the user."
+msgstr ""
+"Einstellungen zur Abwesenheits-Benachrichtigung dürfen vom Benutzer geändert "
+"werden."
+
+#. i18n: ectx: label, entry (AllowOutOfOfficeUploadButNoSettings), group (OutOfOffice)
+#: ksieveui/settings/sieve-vacation.kcfg:16
+msgid ""
+"Allow users to upload out-of-office sieve scripts, but prevent them from "
+"changing any settings, such as the domain to react to or the spam reaction "
+"switch."
+msgstr ""
+"Ermöglicht es Benutzern, Sieve-Abwesenheitsnachrichten hochzuladen, aber "
+"nicht, irgendwelche Einstellungen zu ändern (Domäne, Spam-Reaktion)."
+
+#. i18n: ectx: label, entry (OutOfOfficeDomain), group (OutOfOffice)
+#: ksieveui/settings/sieve-vacation.kcfg:20
+msgid "Send out-of-office replies to mails coming from this domain only."
+msgstr "Abwesenheits-Antworten nur für E-Mails von dieser Domäne senden."
+
+#. i18n: ectx: label, entry (OutOfOfficeReactToSpam), group (OutOfOffice)
+#: ksieveui/settings/sieve-vacation.kcfg:24
+msgid "Allow out-of-office replies to be sent to messages marked as SPAM."
+msgstr ""
+"Abwesenheits-Antworten auch für E-Mails senden, die als Spam markiert sind."
+
+#. i18n: ectx: label, entry (CheckOutOfOfficeOnStartup), group (OutOfOffice)
+#: ksieveui/settings/sieve-vacation.kcfg:28
+msgid ""
+"Check if there is still an active out-of-office reply configured on startup."
+msgstr "Beim Start prüfen, ob noch Abwesenheitsbenachrichtigungen aktiv sind."
+
+#: ksieveui/templates/sievedefaulttemplate.cpp:27
+msgid "Filter on Mailing List-ID"
+msgstr "Nach Mailinglisten-Kennung filtern"
+
+#: ksieveui/templates/sievedefaulttemplate.cpp:35
+msgid "Filter on Subject"
+msgstr "Nach Betreff filtern"
+
+#: ksieveui/templates/sievedefaulttemplate.cpp:43
+msgid "Filter on Spamassassin"
+msgstr "Mit SpamAssassin filtern"
+
+#: ksieveui/templates/sievedefaulttemplate.cpp:51
+msgid "Flag messages"
+msgstr "Nachrichten markieren"
+
+#: ksieveui/templates/sievedefaulttemplate.cpp:58
+msgid "Forward Message"
+msgstr "Nachricht weiterleiten"
+
+#: ksieveui/templates/sievedefaulttemplate.cpp:65
+msgid "Forward Message and add copy"
+msgstr "Nachricht weiterleiten und Kopie hinzufügen"
+
+#: ksieveui/templates/sievedefaulttemplate.cpp:73
+msgid "Destroy mail posted by..."
+msgstr "Mail löschen, wenn gesendet von..."
+
+#: ksieveui/templates/sievedefaulttemplate.cpp:85
+msgid "Vacations"
+msgstr "Urlaub"
+
+#: ksieveui/templates/sievetemplateeditdialog.cpp:38
+msgid "Default template"
+msgstr "Standardvorlage"
+
+#: ksieveui/templates/sievetemplateeditdialog.cpp:38
+msgid "Template"
+msgstr "Vorlage"
+
+#: ksieveui/templates/sievetemplatewidget.cpp:87
+msgid "You can drag and drop element on editor to import template"
+msgstr ""
+"Sie können Elemente im Editor ziehen und ablegen, um Vorlagen zu importieren"
+
+#: ksieveui/vacation/multiimapvacationdialog.cpp:40
+#: ksieveui/vacation/vacation.cpp:106
+msgid "Configure \"Out of Office\" Replies"
+msgstr "Abwesenheitsbenachrichtigungen einrichten"
+
+#: ksieveui/vacation/multiimapvacationdialog.cpp:51
+msgid ""
+"KMail's Out of Office Reply functionality relies on server-side filtering. "
+"You have not yet configured an IMAP server for this. You can do this on the "
+"\"Filtering\" tab of the IMAP account configuration."
+msgstr ""
+"Die Funktion Abwesenheitsbenachrichtung basiert auf serverseitigen Filtern. "
+"Sie haben hierzu bisher noch keinen IMAP-Server eingerichtet. Die "
+"entsprechenden Einstellungen finden Sie auf der Karteikarte „Filtern“ bei "
+"der Einrichtung des IMAP-Postfachs."
+
+#: ksieveui/vacation/multiimapvacationmanager.cpp:72
+#: ksieveui/vacation/vacation.cpp:139
+msgid ""
+"There is still an active out-of-office reply configured.\n"
+"Do you want to edit it?"
+msgstr ""
+"Es ist noch eine Abwesenheitsbenachrichtigung aktiv.\n"
+"Möchten Sie diese bearbeiten?"
+
+#: ksieveui/vacation/multiimapvacationmanager.cpp:73
+#: ksieveui/vacation/vacation.cpp:140
+msgid "Out-of-office reply still active"
+msgstr "Abwesenheitsbenachrichtigung noch aktiv"
+
+#: ksieveui/vacation/multiimapvacationmanager.cpp:74
+#: ksieveui/vacation/vacation.cpp:141
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: ksieveui/vacation/multiimapvacationmanager.cpp:75
+#: ksieveui/vacation/vacation.cpp:142
+msgid "Ignore"
+msgstr "Ignorieren"
+
+#: ksieveui/vacation/vacation.cpp:96
+msgid ""
+"Your server did not list \"vacation\" in its list of supported Sieve "
+"extensions;\n"
+"without it, KMail cannot install out-of-office replies for you.\n"
+"Please contact your system administrator."
+msgstr ""
+"Ihr Server hat „vacation“ (Abwesenheitsbenachrichtigung) nicht in der Liste "
+"der unterstützten „Sieve“-Erweiterungen. Ohne diese Erweiterung kann KMail "
+"keine Abwesenheitsnachrichten installieren. Bitte benachrichtigen Sie Ihren "
+"Systemverwalter."
+
+#: ksieveui/vacation/vacation.cpp:116
+msgid ""
+"Someone (probably you) changed the vacation script on the server.\n"
+"KMail is no longer able to determine the parameters for the autoreplies.\n"
+"Default values will be used."
+msgstr ""
+"Jemand (vermutlich Sie) hat das Skript für Abwesenheitsbenachrichtigungen "
+"auf dem Server geändert. KMail kann die Parameter für automatische Antworten "
+"nicht mehr abfragen. Es werden Standardwerte verwendet."
+
+#: ksieveui/vacation/vacation.cpp:194
+msgid ""
+"Sieve script installed successfully on the server.\n"
+"Out of Office reply is now active."
+msgstr ""
+"Das Sieve-Skript wurde erfolgreich auf dem Server installiert.\n"
+"Abwesenheitsbenachrichtigungen sind nun aktiv."
+
+#: ksieveui/vacation/vacation.cpp:196
+msgid ""
+"Sieve script installed successfully on the server.\n"
+"Out of Office reply has been deactivated."
+msgstr ""
+"Das Sieve-Skript wurde erfolgreich auf dem Server installiert.\n"
+"Abwesenheitsbenachrichtigungen wurden deaktiviert."
+
+#: ksieveui/vacation/vacationcreatescriptjob.cpp:92
+#, kde-format
+msgid ""
+"Sieve script installed successfully on the server '%1'.\n"
+"Out of Office reply is now active."
+msgstr ""
+"Das Sieve-Skript wurde erfolgreich auf dem Server „%1“ installiert.\n"
+"Abwesenheitsbenachrichtigungen sind nun aktiv."
+
+#: ksieveui/vacation/vacationcreatescriptjob.cpp:94
+#, kde-format
+msgid ""
+"Sieve script installed successfully on the server '%1'.\n"
+"Out of Office reply has been deactivated."
+msgstr ""
+"Das Sieve-Skript wurde erfolgreich auf dem Server %1“ installiert.\n"
+"Abwesenheitsbenachrichtigungen wurden deaktiviert."
+
+#: ksieveui/vacation/vacationeditwidget.cpp:54
+msgid "Configure vacation notifications to be sent:"
+msgstr "Einrichtung von Abwesenheitsbenachrichtigungen:"
+
+#: ksieveui/vacation/vacationeditwidget.cpp:60
+msgid "&Activate vacation notifications"
+msgstr "Abwesenheitsbenachrichtigungen a&ktivieren"
+
+#: ksieveui/vacation/vacationeditwidget.cpp:76
+#: ksieveui/vacation/vacationeditwidget.cpp:186
+msgid " day"
+msgid_plural " days"
+msgstr[0] " Tag"
+msgstr[1] " Tage"
+
+#: ksieveui/vacation/vacationeditwidget.cpp:78
+msgid "&Resend notification only after:"
+msgstr "E&rneute Benachrichtigung erst senden nach:"
+
+#: ksieveui/vacation/vacationeditwidget.cpp:88
+msgid "&Send responses for these addresses:"
+msgstr "Für diese Adressen Antworten &senden:"
+
+#: ksieveui/vacation/vacationeditwidget.cpp:95
+msgid "Do not send vacation replies to spam messages"
+msgstr ""
+"Keine Abwesenheitsbenachrichtigungen als Antwort auf Spam-Nachrichten senden"
+
+#: ksieveui/vacation/vacationeditwidget.cpp:102
+msgid "Only react to mail coming from domain"
+msgstr "Nur auf E-Mails aus dieser Absender-Domain reagieren"
+
+#: ksieveui/vacation/vacationpagewidget.cpp:64
+msgid ""
+"Your server did not list \"vacation\" in its list of supported Sieve "
+"extensions;without it, KMail cannot install out-of-office replies for you."
+"Please contact your system administrator."
+msgstr ""
+"Ihr Server hat „vacation“ (Abwesenheitsbenachrichtigung) nicht in der Liste "
+"der unterstützten „Sieve“-Erweiterungen. Ohne diese Erweiterung kann KMail "
+"keine Abwesenheitsnachrichten installieren. Bitte benachrichtigen Sie Ihren "
+"Systemverwalter."
+
+#: ksieveui/vacation/vacationutils.cpp:39
+#, kde-format
+msgid ""
+"I am out of office till %1.\n"
+"\n"
+"In urgent cases, please contact Mrs. \"vacation replacement\"\n"
+"\n"
+"email: \"email address of vacation replacement\"\n"
+"phone: +49 711 1111 11\n"
+"fax.:  +49 711 1111 12\n"
+"\n"
+"Yours sincerely,\n"
+"-- \"enter your name and email address here\"\n"
+msgstr ""
+"Ich bin bis %1 nicht im Büro.\n"
+"\n"
+"Bitte kontaktieren Sie in dringenden Fällen: „Vertretung“\n"
+"\n"
+"E-Mail: „E-Mail-Adresse der Vertretung“\n"
+"Telefon: +49 711 1111 11\n"
+"Fax:     +49 711 1111 12\n"
+"\n"
+"Mit freundlichen Grüßen\n"
+"-- „geben Sie hier Ihren eigenen Namen ein“\n"
+
+#: ksieveui/vacation/vacationwarningwidget.cpp:30
+msgid ""
+"Someone (probably you) changed the vacation script on the server. KMail is "
+"no longer able to determine the parameters for the autoreplies. Default "
+"values will be used."
+msgstr ""
+"Jemand (vermutlich Sie) hat das Skript für Abwesenheitsbenachrichtigungen "
+"auf dem Server geändert. KMail kann die Parameter für automatische Antworten "
+"nicht mehr abfragen. Es werden Standardwerte verwendet."
+
+#: ksieveui/widgets/managesievetreeview.cpp:27
+#: ksieveui/widgets/managesievetreeview.cpp:42
+msgid "No IMAP server configured..."
+msgstr "Kein IMAP-Server eingerichtet ..."
+
+#: ksieveui/widgets/managesievetreeview.cpp:31
+msgid "Available Scripts"
+msgstr "Verfügbare Skripte"
+
+#: ksieveui/widgets/managesievetreeview.cpp:51
+msgid "Network down."
+msgstr "Das Netzwerk ist abgeschaltet."
+
+#: ksieveui/widgets/managesievewidget.cpp:138
+msgid "Edit Script..."
+msgstr "Skript bearbeiten ..."
+
+#: ksieveui/widgets/managesievewidget.cpp:139
+msgid "Delete Script"
+msgstr "Skript löschen"
+
+#: ksieveui/widgets/managesievewidget.cpp:142
+msgid "Deactivate Script"
+msgstr "Skript deaktivieren"
+
+#: ksieveui/widgets/managesievewidget.cpp:147
+msgid "New Script..."
+msgstr "Neues Skript ..."
+
+#: ksieveui/widgets/managesievewidget.cpp:171
+msgid "New Sieve Script"
+msgstr "Neues Sieve-Skript"
+
+#: ksieveui/widgets/managesievewidget.cpp:172
+msgid "Please enter a name for the new Sieve script:"
+msgstr "Bitte geben Sie einen Namen für das neue Sieve-Skript ein:"
+
+#: ksieveui/widgets/managesievewidget.cpp:173
+msgid "unnamed"
+msgstr "Unbenannt"
+
+#: ksieveui/widgets/managesievewidget.cpp:178
+msgid "You cannot use protected name."
+msgstr "Der geschützte Name kann nicht verwendet werden."
+
+#: ksieveui/widgets/managesievewidget.cpp:191
+#, kde-format
+msgid "Script name already used \"%1\"."
+msgstr "Name des Skripts wird bereits verwendet: „%1“"
+
+#: ksieveui/widgets/managesievewidget.cpp:303
+#, kde-format
+msgid "Really delete script \"%1\" from the server?"
+msgstr "Soll das Skript „%1“ wirklich vom Server gelöscht werden?"
+
+#: ksieveui/widgets/managesievewidget.cpp:304
+msgid "Delete Sieve Script Confirmation"
+msgstr "Bestätigung für das Löschen des Sieve-Skripts"
+
+#: ksieveui/widgets/managesievewidget.cpp:358
+msgid "Failed to fetch the list of scripts"
+msgstr "Die Liste der Skripte kann nicht abgeholt werden"
+
+#: shared/error.cpp:110
+msgid "Parse error: Carriage Return (CR) without Line Feed (LF)"
+msgstr "Einlesefehler: Wagenrücklauf (CR) ohne Zeilenvorschub (LF)"
+
+#: shared/error.cpp:113
+msgid ""
+"Parse error: Unquoted Slash ('/') without Asterisk ('*'). Broken Comment?"
+msgstr ""
+"Einlesefehler: nicht auskommentierter Schrägstrich („/“) ohne Stern („*“). "
+"Kaputter Kommentar?"
+
+#: shared/error.cpp:117
+msgid "Parse error: Illegal Character"
+msgstr "Einlesefehler: Ungültiges Zeichen"
+
+#: shared/error.cpp:120
+msgid "Parse error: Unexpected Character, probably a missing space?"
+msgstr ""
+"Einlesefehler: Unerwartetes Zeichen, vielleicht ein fehlendes Leerzeichen?"
+
+#: shared/error.cpp:123
+msgid "Parse error: Tag Name has leading Digits"
+msgstr "Einlesefehler: Markierungsname („Tag“) enthält führende Ziffern"
+
+#: shared/error.cpp:126
+msgid ""
+"Parse error: Only whitespace and #comments may follow \"text:\" on the same "
+"line"
+msgstr ""
+"Einlesefehler: Nur Leerzeichen und # Kommentare dürfen auf „text:“ in "
+"derselben Zeile folgen"
+
+#: shared/error.cpp:130
+#, kde-format
+msgid "Parse error: Number out of Range (must be smaller than %1)"
+msgstr "Einlesefehler: Zahl außerhalb des erlaubten Bereichs (kleiner als %1)"
+
+#: shared/error.cpp:133
+msgid "Parse error: Invalid UTF-8 sequence"
+msgstr "Einlesefehler: Ungültige UTF-8 Kodierung"
+
+#: shared/error.cpp:136
+msgid ""
+"Parse error: Premature end of Multiline String (did you forget the '.'?)"
+msgstr ""
+"Einlesefehler: Verfrühtes Ende eines mehrzeiligen Textes (eventuell wurde "
+"der „.“ vergessen)"
+
+#: shared/error.cpp:139
+msgid "Parse error: Premature end of Quoted String (missing closing '\"')"
+msgstr ""
+"Einlesefehler: Verfrühtes Ende eines Textes in Anführungszeichen (eventuell "
+"fehlt das abschließende „\"“)"
+
+#: shared/error.cpp:142
+msgid "Parse error: Premature end of String List (missing closing ']')"
+msgstr ""
+"Einlesefehler: Verfrühtes Ende der Textliste (eventuell fehlt die "
+"schließende „]“)"
+
+#: shared/error.cpp:145
+msgid "Parse error: Premature end of Test List (missing closing ')')"
+msgstr ""
+"Einlesefehler: Verfrühtes Ende der Testliste (eventuell fehlt die "
+"abschließende „)“)"
+
+#: shared/error.cpp:148
+msgid "Parse error: Premature end of Block (missing closing '}')"
+msgstr ""
+"Einlesefehler: Verfrühtes Blockende (eventuell fehlt die abschließende „}“)"
+
+#: shared/error.cpp:151
+msgid "Parse error: Missing Whitespace"
+msgstr "Einlesefehler: fehlendes Leerzeichen"
+
+#: shared/error.cpp:154
+msgid "Parse error: Missing ';' or Block"
+msgstr "Einlesefehler: Fehlendes „;“ oder fehlender Block"
+
+#: shared/error.cpp:157
+msgid "Parse error: Expected ';' or '{', got something else"
+msgstr ""
+"Einlesefehler: Erwartet wurden „;“ oder „{“, aber ein anderes Zeichen kam"
+
+#: shared/error.cpp:160 shared/error.cpp:175
+msgid "Parse error: Expected Command, got something else"
+msgstr "Einlesefehler: Erwartet wurde ein Befehl, aber es kam etwas anderes"
+
+#: shared/error.cpp:163
+msgid "Parse error: Trailing, Leading or Duplicate Commas in String List"
+msgstr ""
+"Einlesefehler: Kommas am Beginn, am Ende oder mehrfach hintereinander in "
+"einer Zeichenkettenliste"
+
+#: shared/error.cpp:166
+msgid "Parse error: Trailing, Leading or Duplicate Commas in Test List"
+msgstr ""
+"Einlesefehler: Kommas am Beginn, am Ende oder mehrfach hintereinander in "
+"einer Testliste"
+
+#: shared/error.cpp:169
+msgid "Parse error: Missing ',' between Strings in String List"
+msgstr ""
+"Einlesefehler: Fehlendes „,“ zwischen Zeichenketten in einer "
+"Zeichenkettenliste"
+
+#: shared/error.cpp:172
+msgid "Parse error: Missing ',' between Tests in Test List"
+msgstr "Einlesefehler: Fehlendes „,“ zwischen Tests in einer Testliste"
+
+#: shared/error.cpp:178
+msgid "Parse error: Only Strings allowed in String Lists"
+msgstr "Einlesefehler: Nur Texte sind in der Textliste erlaubt"
+
+#: shared/error.cpp:181
+msgid "Parse error: Only Tests allowed in Test Lists"
+msgstr "Einlesefehler: Nur Tests sind in der Testliste erlaubt"
+
+#: shared/error.cpp:186
+msgid "\"require\" must be first command"
+msgstr "„require“ muss der erste Befehl sein"
+
+#: shared/error.cpp:189
+#, kde-format
+msgid "\"require\" missing for command \"%1\""
+msgstr "„require“ fehlt für den Befehl „%1“"
+
+#: shared/error.cpp:192
+#, kde-format
+msgid "\"require\" missing for test \"%1\""
+msgstr "„require“ fehlt für den Test „%1“"
+
+#: shared/error.cpp:195
+#, kde-format
+msgid "\"require\" missing for comparator \"%1\""
+msgstr "„require“ fehlt für die Vergleichsmethode „%1“"
+
+#: shared/error.cpp:198
+#, kde-format
+msgid "Command \"%1\" not supported"
+msgstr "Der Befehl „%1“ wird nicht unterstützt."
+
+#: shared/error.cpp:201
+#, kde-format
+msgid "Test \"%1\" not supported"
+msgstr "Der Test „%1“ wird nicht unterstützt."
+
+#: shared/error.cpp:204
+#, kde-format
+msgid "Comparator \"%1\" not supported"
+msgstr "Vergleichsmethode „%1“ wird nicht unterstützt."
+
+#: shared/error.cpp:207
+#, kde-format
+msgid "Site Policy Limit Violation: Test nesting too deep (max. %1)"
+msgstr ""
+"Verletzung einer Umgebungsbegrenzung: Der Test ist zu tief verschachtelt "
+"(max. %1)."
+
+#: shared/error.cpp:210
+#, kde-format
+msgid "Site Policy Limit Violation: Block nesting too deep (max. %1)"
+msgstr ""
+"Verletzung einer Umgebungsbegrenzung: Die Blockstruktur ist zu tief "
+"verschachtelt (max. %1)."
+
+#: shared/error.cpp:213
+#, kde-format
+msgid "Invalid Argument \"%1\" to \"%2\""
+msgstr "Ungültiges Argument „%1“ für „%2“"
+
+#: shared/error.cpp:216
+#, kde-format
+msgid "Conflicting Arguments: \"%1\" and \"%2\""
+msgstr "Widersprüchliche Argumente „%1“ und „%2“"
+
+#: shared/error.cpp:219
+#, kde-format
+msgid "Argument \"%1\" Repeated"
+msgstr "Argument „%1“ wiederholt"
+
+#: shared/error.cpp:222
+#, kde-format
+msgid "Command \"%1\" violates command ordering constraints"
+msgstr "Befehl „%1“ entspricht nicht den Befehlsordnungsregeln"
+
+#: shared/error.cpp:227
+#, kde-format
+msgid "Incompatible Actions \"%1\" and \"%2\" requested"
+msgstr "Die sich widersprechenden Aktionen „%1“ und „%2“ wurden angefordert."
+
+#: shared/error.cpp:230
+msgid "Mail Loop detected"
+msgstr "Mail-Schleife entdeckt"
+
+#: shared/error.cpp:233
+#, kde-format
+msgid "Site Policy Limit Violation: Too many Actions requested (max. %1)"
+msgstr ""
+"Verletzung einer Umgebungsbegrenzung: Es wurden zu viele Aktionen "
+"angefordert (max. %1)."
+
+#: shared/error.cpp:236
+msgid "Unknown error"
+msgstr "Unbekannter Fehler"
+
+#, fuzzy
+#~| msgid "Sieve Error"
+#~ msgid "Error"
+#~ msgstr "Sieve-Fehler"
+
+#~ msgid "Speak Text"
+#~ msgstr "Text vorlesen"
+
+#~ msgid "Starting Jovie Text-to-Speech Service Failed"
+#~ msgstr "Das Starten des Sprachausgabedienstes Jovie ist fehlgeschlagen"
+
+#~ msgid "x"
+#~ msgstr "x"
+
+#~ msgid "header"
+#~ msgstr "Vorspann"
+
+#~ msgid "Close"
+#~ msgstr "Schließen"
+
+#~ msgctxt "Find text"
+#~ msgid "F&ind:"
+#~ msgstr "Su&chen:"
+
+#~ msgid "Text to search for"
+#~ msgstr "Zu suchender Text"
+
+#~ msgctxt "Find and go to the next search match"
+#~ msgid "Next"
+#~ msgstr "Weiter"
+
+#~ msgid "Jump to next match"
+#~ msgstr "Gehe zur nächsten Fundstelle"
+
+#~ msgctxt "Find and go to the previous search match"
+#~ msgid "Previous"
+#~ msgstr "Zurück"
+
+#~ msgid "Jump to previous match"
+#~ msgstr "Gehe zur vorherigen Fundstelle"
+
+#~ msgid "Options"
+#~ msgstr "Einstellungen"
+
+#~ msgid "Modify search behavior"
+#~ msgstr "Suchverhalten ändern"
+
+#~ msgid "Case sensitive"
+#~ msgstr "Groß-/Kleinschreibung beachten"
+
+#~ msgid ""
+#~ "Beginning of message reached.\n"
+#~ "Phrase '%1' could not be found."
+#~ msgstr ""
+#~ "Anfang der Nachricht erreicht.\n"
+#~ "Ausdruck „%1“ wurde nicht gefunden."
+
+#~ msgid ""
+#~ "End of message reached.\n"
+#~ "Phrase '%1' could not be found."
+#~ msgstr ""
+#~ "Ende der Nachricht erreicht.\n"
+#~ "Ausdruck „%1“ wurde nicht gefunden."
+
+#~ msgid ""
+#~ "Could not write the file %1:\n"
+#~ "\"%2\" is the detailed error description."
+#~ msgstr ""
+#~ "Die Datei %1 kann nicht geschrieben werden:\n"
+#~ "Die ausführliche Fehlerbeschreibung laut: „%2“."
+
+#~ msgid "Description:"
+#~ msgstr "Beschreibung:"
+
+#~ msgid "Script name: %1"
+#~ msgstr "Skriptname: %1"
+
+#~ msgid "kb"
+#~ msgstr "kB"
+
+#, fuzzy
+#~| msgid "text:"
+#~ msgid "Text:"
+#~ msgstr "Text:"
+
+#~ msgid "Error unknown."
+#~ msgstr "Unbekannter Fehler."
+
+#~ msgid "Insert template"
+#~ msgstr "Vorlage einfügen"
+
+#~ msgid "Show..."
+#~ msgstr "Anzeigen ..."
+
+#~ msgid "Modify..."
+#~ msgstr "Ändern ..."
+
+#~ msgid "IMAP server"
+#~ msgstr "IMAP-Server"
+
+#~ msgid "Defines the port the IMAP service is running on"
+#~ msgstr "Legt den Port fest, auf dem der IMAP-Dienst läuft."
+
+#~ msgid "Defines the encryption type to use"
+#~ msgstr "Legt die verwendete Verschlüsselungsart fest."
+
+#~ msgid "Defines the authentication type to use"
+#~ msgstr "Legt die Authentifizierungsmethode fest."
+
+#~ msgid "Defines if the server side subscription is enabled"
+#~ msgstr "Legt fest, ob serverseitige Abonnements verwendet werden."
+
+#~ msgid "Defines if all the IMAP data should be cached locally all the time"
+#~ msgstr ""
+#~ "Legt fest, ob sämtliche IMAP-Daten die ganze Zeit lokal "
+#~ "zwischengespeichert werden sollen."
+
+#~ msgid "Defines if interval checking is enabled."
+#~ msgstr "Legt fest, ob der Posteingang regelmäßig geprüft wird."
+
+#~ msgid "Check interval in minutes"
+#~ msgstr "Prüfintervall in Minuten"
+
+#~ msgid ""
+#~ "Defines if the annotations, ACLs and quota information of mailboxes "
+#~ "should\n"
+#~ "             also be retrieved when the mailboxes get listed."
+#~ msgstr ""
+#~ "Legt fest ob Anmerkungen, ACLs und Kontingent-Informationen der "
+#~ "Postfächer auch\n"
+#~ "            abgerufen werden sollen, wenn das Postfach aufgelistet wird. "
+
+#~ msgid ""
+#~ "Defines if the expunge command is issued automatically, otherwise it "
+#~ "should be\n"
+#~ "             triggered manually through the D-Bus interface."
+#~ msgstr ""
+#~ "Legt fest, ob der expunge-Befehl (Ordner komprimieren) automatisch "
+#~ "ausgeführt werden soll.\n"
+#~ "Ansonsten muss er manuell über die D-Bus-Schnittstelle aufgerufen werden."
+
+#~ msgid "Define which folder is used for trash"
+#~ msgstr "Den Ordner für den Papierkorb festlegen"
+
+#~ msgid "Define if account uses the default identity"
+#~ msgstr "Festlegen, ob das Konto die vorgegebene Identität verwendet"
+
+#~ msgid "Identity account"
+#~ msgstr "Konto der Identität"
+
+#~ msgid "RID path to the mailbox to watch for changes"
+#~ msgstr "RID-Pfad zum Postfach, um es auf Änderungen zu überwachen."
+
+#~ msgid "Define if server supports sieve"
+#~ msgstr "Festlegen, ob der Server Sieve unterstützt"
+
+#~ msgid "Define if we reuse host and login configuration"
+#~ msgstr ""
+#~ "Festlegen, ob Rechner- und Anmeldeinformationen wiederverwendet werden"
+
+#~ msgid "Define alternate URL"
+#~ msgstr "Alternativadresse festlegen"
+
+#~ msgid "Define default sieve vacation filename"
+#~ msgstr "Vorgegebenen Sieve-Vacation-Dateinamen festlegen"

@@ -1,0 +1,381 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+  <!-- nothing below must be removed -->
+  <!ENTITY kappname "&kjots;">
+  <!ENTITY package "kdepim">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE">
+]>
+<book id="kjots" lang="&language;">
+
+<bookinfo id="kjotsinfo">
+<title
+>Das Handbuch zu &kjots;</title>
+
+<authorgroup>
+<author
+><firstname
+>Matt</firstname
+> <surname
+>Johnston</surname
+> <affiliation
+> <address
+><email
+>matt.kde@caifex.org</email
+></address>
+</affiliation>
+</author>
+
+<othercredit role="developer"
+><firstname
+>Christoph</firstname
+> <surname
+>Neerfield</surname
+> <affiliation
+> <address
+>&Christoph.Neerfield.mail;</address>
+</affiliation>
+<contrib
+>Entwickler</contrib>
+</othercredit>
+
+<othercredit role="reviewer"
+><firstname
+>Lauri</firstname
+> <surname
+>Watts</surname
+> <affiliation
+> <address
+>&Lauri.Watts.mail;</address>
+</affiliation>
+<contrib
+>Gegengelesen von</contrib>
+</othercredit>
+
+<othercredit role="translator"
+><firstname
+>Gregor</firstname
+><surname
+>Zumstein</surname
+><affiliation
+><address
+><email
+>zumstein@ssd.ethz.ch</email
+></address
+></affiliation
+><contrib
+>Übersetzung von</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2000</year>
+<holder
+>&Matt.Johnston;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2013-05-27</date>
+<releaseinfo
+>4.11 pre (&kde; 4.11)</releaseinfo>
+
+<abstract
+><para
+>Dieses Handbuch beschreibt die Benutzung von &kjots; einem kleinen Programm zum Schreiben und Verwalten von verschiedenen Notizen.</para
+></abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>KJots</keyword>
+<keyword
+>kdepim</keyword>
+<keyword
+>notiz</keyword>
+<keyword
+>organizer</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="using-kjots">
+<title
+>Benutzung von &kjots;</title>
+
+<para
+>&kjots; benutzt zwei grundlegende Einheiten, um Notizen zu verwalten - <quote
+>Bücher</quote
+> und <quote
+>Seiten</quote
+>.</para>
+
+<screenshot>
+<screeninfo
+>&kjots; Hauptfenster</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="mainwindow.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>&kjots; Hauptfenster</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>In &kjots; können mehrere Bücher erzeugt werden und pro Buch können wiederum mehrere Seiten gespeichert werden. Die Seiten beinhalten die Notizen. Jedes Buch sollte einen Namen haben, genauso auch jede Seite. Auch wenn Sie dazu nicht gezwungen werden, ist dies vernünftig, insbesondere um eine einfachere Suche zu ermöglichen.</para>
+
+<para
+>Im linken Bereich des Hauptfensters werden <guilabel
+>Lokale Notizen</guilabel
+> sowie alle Bücher und Seiten in einer Baumansicht angezeigt. </para>
+<para
+>Wenn <guilabel
+>Lokale Notizen</guilabel
+> oder Bucheinträge ausgewählt sind, werden im Editor im rechten Bereich Inhaltsverzeichnisse mit den Titeln von Büchern und Seiten als Verknüpfungen angezeigt, mit denen Sie schnell durch die Notizen navigieren und die Seiten lesen können. </para>
+<para
+>Der Inhalt der Seiten wird nur lesbar angezeigt. Nur wenn Seiten in der Baumansicht oder durch Klicken auf den Seitentitel im Editorbereich ausgewählt sind, kann der Inhalt der Seiten bearbeitet werden. </para>
+
+<sect1 id="kjots-books">
+<title
+>Benutzung von Büchern</title>
+
+<para
+>Um ein neues Buch zu erstellen, benutzen Sie <keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>N</keycap
+></keycombo
+> oder den Menüeintrag <menuchoice
+><guimenu
+>Datei</guimenu
+><guimenuitem
+>Neues Buch</guimenuitem
+></menuchoice
+>. Damit erstellen Sie eine neues Buch mit dem Namen <guilabel
+>Neues Buch</guilabel
+> und einer Seite <guilabel
+>Neue Seite</guilabel
+>.</para>
+
+<para
+>Der Name des neuen Buchs erscheint im linken Teil des Fensters. Soll das Buch auch in den <quote
+>Lesezeichen</quote
+> erscheinen, benutzen Sie <keycombo action="simul"
+>&Ctrl;<keycap
+>B</keycap
+></keycombo
+> oder den Menüeintrag <menuchoice
+><guimenu
+>Lesezeichen</guimenu
+><guimenuitem
+> Lesezeichen hinzufügen</guimenuitem
+></menuchoice
+>. Sie können die Lesezeichen auch in einem eigenen Ordner verwalten, wie Sie dies vermutlich auch bei &konqueror; machen.</para>
+
+<tip
+><para
+>Wenn Sie die Reihenfolge der Bücher umstellen wollen, ziehen Sie ein Buch an die Stelle, wo es hin soll und lassen es dort wieder los. </para
+></tip>
+
+<para
+>Möglicherweise haben Sie festgestellt, dass es kein <quote
+>Speichern</quote
+> gibt. Das ist kein Fehler, da &kjots; die Bücher und Seiten automatisch speichert, sodass Sie nie einen Eintrag verlieren, nicht einmal die kleine Notiz während des Telephonierens. </para>
+
+<para
+>Sie können auch ein ganzes Buch als Text-, HTML-  oder Buchdatei exportieren, indem Sie <menuchoice
+><guimenu
+>Datei</guimenu
+> <guimenuitem
+>Exportieren ...</guimenuitem
+></menuchoice
+> wählen. Daraufhin werden Sie aufgefordert, einen Ordner und den Namen für die Datei anzugeben. Anschließend wird die Datei gespeichert. Das Textformat eines exportierten Buches sieht folgendermaßen aus:</para>
+
+<screen
+>#############
+# Erste Seite
+#############
+Einkaufen gehen!
+
+#################
+# Nützlicher Code
+#################
+10 PRINT "HELLO WORLD"
+20 GOTO 10
+
+##################
+# Die dritte Seite
+##################
+Dies ist die dritte Seite und ein Beispiel für &kjots;.</screen>
+
+<para
+>Beachten Sie, dass der Dialog, wo Sie nach dem Dateinamen gefragt werden ein ganz gewöhnlicher &kde;-Dialog ist. Sie können die Datei also nicht nur ganz einfach auf der Festplatte ablegen, sondern auch auf einem Webserver, FTP-Server oder USB-Speicher-Stick. Sie können Ihre Notizen also als HTML-Datei exportieren und auf einem Webserver speichern und haben so Ihre Notizen immer verfügbar.</para>
+
+<tip
+><para
+>Sie können &kjots;-Notizen im Format „Buch“ mit einer Dateierweiterung <filename class="extension"
+>.book</filename
+> importieren. Kopieren Sie diese Datei in den Ordner <filename
+>$<envar
+>KDEHOME</envar
+>/share/apps/kjots</filename
+>. Nun starten Sie <userinput
+><command
+>kjotsmigrator <option
+>--interactive</option
+></command
+></userinput
+>  und die Daten werden als <guilabel
+>Book</guilabel
+> in &kjots; importiert.</para
+></tip>
+<!-- data is in hidden dirs in ~/.local/share/notes in kde
+> 4.9-->
+</sect1>
+
+<sect1 id="kjots-pages">
+<title
+>Benutzung von Seiten</title>
+
+<para
+>Auf den Seiten halten Sie fest, was auch immer Sie wollen. Sobald Sie ein Buch erzeugt haben, können Sie im Hauptfenster zu tippen beginnen.</para>
+
+<para
+>Um weitere Seiten zu erzeugen, können Sie <keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> drücken oder den Menüeintrag <menuchoice
+><guimenu
+>Datei</guimenu
+><guimenuitem
+>Neue Seite</guimenuitem
+> </menuchoice
+> wählen. Die aktuelle Seite wird durch <menuchoice
+> <guimenu
+>Datei</guimenu
+><guimenuitem
+>Seite löschen</guimenuitem
+> </menuchoice
+> gelöscht.</para>
+
+<tip
+><para
+>Wenn Sie die aktuelle Zeit und das aktuelle Datum einfügen wollen, können Sie <keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>I</keycap
+></keycombo
+> drücken.</para
+></tip>
+
+<para
+>Damit Sie die Seite finden, welche Sie sehen möchten, können (und sollen) Sie ihr einen Namen geben. Das Vergeben eines Namens bzw. Ändern eines bestehenden Namens geschieht auf die gleiche Art, wie anderswo auch: Doppelklicken Sie auf die Seite, die Sie umbenennen möchten. Sie können dann im Namensfeld schreiben. Es gibt auch eine Tastenkombination, die Sie jederzeit beim Erfassen einer Notiz drücken können: <keycombo action="simul"
+>&Ctrl;<keycap
+>M </keycap
+></keycombo
+>.</para>
+
+<para
+>Des weiteren können Sie eine Seite umbenennen, indem Sie einen Teil der Notiz auswählen und dann <keycombo action="simul"
+>&Ctrl;<keycap
+>T</keycap
+></keycombo
+> drücken. Der ausgewählte Text wird daraufhin zum Namen der Notiz gemacht.</para>
+
+<para
+>Bei Schreiben oder Bearbeiten Ihrer Notizen können Sie die den Text mit den Aktion im Menü <guimenu
+>Format</guimenu
+> oder in der Werkzeugleiste formatieren. </para>
+
+<!-- not possible in kde4 ???
+<tip
+><para
+>If you want fast access to a particular page, you 
+can assign a keyboard shortcut to that page. Go to <menuchoice>
+<guimenu
+>Settings</guimenu
+><guimenuitem
+>Configure Shortcuts...
+</guimenuitem
+></menuchoice
+>.</para
+></tip
+> -->
+</sect1>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Danksagungen und Lizenz</title>
+
+<para
+>&kjots; </para>
+<para
+>Copyright für das Programm 1997 Christoph Neerfeld <email
+>Christoph.Neerfeld@home.ivm.de</email
+> </para>
+<para
+>&kjots; ist inspiriert von <command
+>jots</command
+>, einem Programm, das im <application
+> tkgoodstuff</application
+>-Paket enthalten ist. <application
+>tkgoodstuff</application
+> ist Copyright 1995-96 Mark Crimmins <email
+>markcrim@umich.edu</email
+> </para>
+
+<para
+>Copyright für die Dokumentation 2000 &Matt.Johnston; <email
+>matt.kde@caifex.org</email
+> </para>
+<para
+>Auschnitte der Dokumentation stammen von der 1998-Dokumentation von &kjots;, Copyright 1998 Christoph Neerfeld <email
+>Christoph.Neerfeld@home.ivm.de</email
+> </para>
+
+<para
+>Übersetzung Gregor Zumstein <email
+>zumstein@ssd.ethz.ch</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+<appendix id="installation">
+<title
+>Installation</title>
+
+<sect1 id="getting-kjots">
+<title
+>Woher Sie &kjots; erhalten</title>
+&install.intro.documentation; </sect1>
+
+<sect1 id="compilation">
+<title
+>Kompilierung und Installation</title>
+&install.compile.documentation; </sect1>
+
+</appendix>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+// vim:ts=2:sw=2:tw=78:noet
+-->

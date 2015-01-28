@@ -1,0 +1,1940 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+  <!ENTITY kappname "&jovie;">
+  <!ENTITY package "jovie">
+  <!ENTITY mbrola "<application
+>MBROLA</application
+>">
+  <!ENTITY qdbus "<application
+>qdbus</application
+>">
+  <!ENTITY % imageobjectco.module "INCLUDE">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE">
+]>
+
+<!-- The language must NOT be changed here. -->
+<!-- If you are writing original documentation in a language other -->
+<!-- than English, change the language above ONLY, not here -->
+<book id="jovie" lang="&language;">
+
+<bookinfo>
+<title
+>Das Handbuch zu &jovie;</title>
+
+<authorgroup>
+<author
+><personname
+> <firstname
+>Jeremy</firstname
+> <surname
+>Whiting</surname
+> </personname
+> <email
+>jpwhiting@kde.org</email
+> </author>
+<author
+><personname
+> <firstname
+>Gary</firstname
+> <othername
+>R.</othername
+> <surname
+>Cramblitt</surname
+> </personname
+> <email
+>garycramblitt@comcast.net</email
+> </author>
+
+<othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+<year
+>2009</year>
+<holder
+>Jeremy Whiting</holder>
+</copyright>
+<copyright>
+<year
+>2004-2005</year>
+<holder
+>Gary R. Cramblitt</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+
+<date
+>2013-06-23</date>
+<releaseinfo
+>0.6 (&kde; 4.11)</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&jovie; - das Sprachausgabe-System von &kde; - ist ein aus Modulen bestehender Dienst, der es jeder Anwendung ermöglicht, Text über die &DBus;-Schnittstelle vorzulesen. </para>
+
+<para
+>&jovie; ist die praktische &kde;-Anwendung der KDE-Sprachausgabe API.</para>
+
+</abstract>
+
+<!-- This is a set of Keywords for indexing by search engines.
+Please at least include KDE, the KDE package it is in, the name
+ of your application, and a few relevant keywords. -->
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Zugänglichkeit</keyword>
+<keyword
+>kdeaccessibility</keyword>
+<keyword
+>TTS</keyword>
+<keyword
+>Sprachausgabe</keyword>
+<keyword
+>Jovie</keyword>
+<keyword
+>speech-dispatcher</keyword>
+<keyword
+>espeak</keyword>
+<keyword
+>festival</keyword>
+<keyword
+>flite</keyword>
+<keyword
+>hadifix</keyword>
+<keyword
+>MBROLA</keyword>
+<keyword
+>freetts</keyword>
+<keyword
+>epos</keyword>
+<keyword
+>SSML</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Einleitung</title>
+
+<para
+>&jovie; ist ein Teilsystem in &kde; zur Sprachausgabe (TTS). Es stellt eine gemeinsame Anwendungsschnittstelle für &kde;-Programmierer bereit, mit der deren Anwendungen mit TTS-Fähigkeiten ausgestattet werden können. Auch den Benutzern bietet es interessante Möglichkeiten.</para>
+
+<para
+>Eigenschaften für Benutzer:</para>
+
+<itemizedlist>
+<listitem
+><para
+>Vorlesen des Inhalts einer Textdatei.</para
+></listitem>
+<listitem
+><para
+>Vorlesen von &kde;-Nachrichten (KNotify).</para
+></listitem>
+<listitem
+><para
+>Vorlesen der Texte (oder Teilen davon) einer Webseite in &konqueror;.</para
+></listitem>
+<listitem
+><para
+>Vorlesen von Texten (oder Teilen davon) im Texteditor &kate;, auch wenn &kate; in andere &kde;-Anwendungen eingebettet ist.</para
+></listitem>
+<listitem
+><para
+>Die Sprachausgabe erfolgt über das Programm speech-dispatcher, das verschiedene Hintergrundprogramm wie espeak, festival, &etc; verwendet.</para
+></listitem>
+<listitem
+><para
+>Einstellbare Filter, um falsch ausgesprochene Worte zu ersetzen, Sprachsynthesizer auszuwählen und &XML;-Dokumente umzuwandeln.</para
+></listitem>
+</itemizedlist>
+
+<para
+>Eigenschaften für Programmierer:</para>
+
+<itemizedlist>
+<listitem
+><para
+>Prioritätssystem für die Ausgabe von Screen-Readern, Warnungen und Nachrichten, während andere Texte vorgelesen werden.</para
+></listitem>
+<listitem
+><para
+>Ermöglicht die Erzeugung von Sprachausgaben auf der Befehlszeile (oder mit Shell-Skripten) über das &qdbus;-Hilfsprogramm.</para
+></listitem>
+<listitem
+><para
+>Stellt für Anwendungen eine einfach zu benutzende Schnittstelle für die Sprachausgabe bereit.</para
+></listitem>
+<listitem
+><para
+>Anwendungen müssen keine Einzelheiten über das Sprachausgabegerät wissen.</para
+></listitem>
+<listitem
+><para
+>IN ZUKUNFT: Unterstützung für Speech-Markup-Sprachen wie VoiceXML, Sable, &Java; Speech-Markup-Language (JSML), und Speech-Markup-Meta-Sprache (SMML).</para
+></listitem>
+<listitem
+><para
+>IN ZUKUNFT: Eingeschränkte Unterstützung für eingebettete Sprachlesezeichen.</para
+></listitem>
+<listitem
+><para
+>Asynchron zur Vermeidung von Systemblockaden.</para
+></listitem>
+</itemizedlist>
+
+<para
+>&jovie; besteht zurzeit aus mehreren Programmen: <variablelist>
+
+<varlistentry>
+<term
+><command
+>jovie</command
+></term>
+<listitem
+><para
+>Der Sprachausgabe-Dienst von &kde;, ein Programm, das TTS-Dienste über &DBus; anbietet und das als Symbol im Systemabschnitt der Kontrollleiste angezeigt wird. </para
+></listitem
+></varlistentry>
+
+<varlistentry>
+<term
+><command
+>libkhtmlkttsdplugin</command
+></term>
+<listitem
+><para
+>Ein Modul für den Webbrowser &konqueror; für das Vorlesen der Texte einer Webseite oder Teilen davon. </para
+></listitem
+></varlistentry>
+
+<varlistentry>
+<term
+><command
+>ktexteditor_kttsd</command
+></term>
+<listitem
+><para
+>Ein Modul für den Texteditor &kate;, mit dem eine Textdatei ganz oder teilweise vorgelesen werden kann. </para
+></listitem
+></varlistentry>
+
+</variablelist>
+</para>
+
+<!-- ...................................................................... -->
+
+<sect1 id="support">
+<title
+>Unterstützung</title>
+<para
+>Zusätzlich zur Bugzilla-Datenbank von &kde; (<ulink url="http://bugs.kde.org/"
+>http://bugs.kde.org/</ulink
+>) finden Diskussionen über &jovie; in der kde-accessibility Mailingliste statt. Abonnieren können Sie die Liste über <ulink url="https://mail.kde.org/mailman/listinfo/kde-accessibility"
+> https://mail.kde.org/mailman/listinfo/kde-accessibility</ulink
+>. Die Entwickler finden Sie auch im IRC (irc.kde.org, Kanal #kde-accessibility). </para>
+</sect1>
+
+</chapter>
+
+<!-- ====================================================================== -->
+
+<chapter id="using-kapp">
+<title
+>Arbeiten mit &jovie;</title>
+
+<para>
+<warning
+><para
+>Ehe Sie &jovie; benutzen können, müssen Sie das Programm speech-dispatcher installieren und richtig einstellen. Siehe auch <xref linkend="installation"/> </para
+></warning
+></para>
+
+<!-- ...................................................................... -->
+
+
+<sect1 id="starting-jovie">
+<title
+>Starten von <command
+>jovie</command
+></title>
+
+<para
+>Zum Start des &jovie;-Systems geben Sie folgenden Befehl in einer &konsole; ein: </para>
+
+<para
+><userinput
+>jovie</userinput
+></para>
+
+<para
+>oder klicken Sie im &kde;-Menü auf &jovie;.</para>
+
+<para
+>Beim ersten Start von <command
+>jovie</command
+> oder solange noch keine Sprecher eingerichtet sind, wird die Karteikarte <guilabel
+>Sprecher</guilabel
+> angezeigt. Siehe auch <xref linkend="configure-talkers"/>. Wenn Sie mindestens einen Sprecher eingerichtet haben, wird die Karteikarte <guilabel
+>Allgemein</guilabel
+> angezeigt. Siehe <xref linkend="general"/>.</para>
+
+</sect1>
+
+<!-- ...................................................................... -->
+
+
+<sect1 id="configure-talkers">
+<title
+>Einrichtung der Sprecher</title>
+
+<para
+>Die meisten TTS-Synthesizer bieten verschiedene Sprachen und Stimmen an, so auch verschiedene männlich oder weibliche, oder solche, die sich in Lautstärke oder Geschwindigkeit unterscheiden. Sie können auch mehrere Varianten für einen Synthesizer einrichten. Eine so eingerichtete Kombination aus Sprache, Synthesizer, Stimme, Geschlecht, Lautstärke und Geschwindigkeit wird als Sprecher bezeichnet. Sie sollten zumindest einen Sprecher einrichten, bevor Sie &jovie; benutzen, da das Programm speed-dispatcher ansonsten den Standardsprecher verwendet.</para>
+
+<note
+><para
+>Verschiedene Sprecher für denselben Synthesizer sind vergleichbar mit mehreren Druckerwarteschlangen für denselben Drucker.</para
+></note>
+
+<para
+>Wenn Sie auf den Karteikartenreiter <guilabel
+>Sprecher</guilabel
+> in <command
+>jovie</command
+> klicken, wird die Karteikarte <guilabel
+>Sprecher</guilabel
+> angezeigt. Diese erscheint auch dann automatisch, wenn Sie <command
+>jovie</command
+> starten und noch kein Sprecher eingerichtet ist.</para>
+
+<para>
+<screenshot>
+<screeninfo
+>Die Sprachausgabeverwaltung von &kde; (Karteikarte Sprecher)</screeninfo>
+    <mediaobjectco>
+        <imageobjectco>
+            <areaspec units="calspair">
+                <area id="pt-talker-1" coords="1 1"/>
+                <area id="pt-talker-2" coords="1 1"/>
+                <area id="pt-talker-3" coords="1 1"/>
+                <area id="pt-talker-4" coords="1 1"/>
+                <area id="pt-talker-5" coords="1 1"/>
+                <area id="pt-talker-6" coords="1 1"/>
+            </areaspec>
+            <imageobject>
+                <imagedata fileref="talkers.png" format="PNG"/>
+            </imageobject>
+        </imageobjectco>
+        <textobject>
+            <phrase
+>Die Sprachausgabeverwaltung von &kde; (Karteikarte Sprecher)</phrase>
+        </textobject>
+    </mediaobjectco>
+</screenshot>
+</para>
+
+<para>
+<calloutlist>
+<callout arearefs="pt-talker-1"
+><para
+>Klicken Sie, um einen neuen Sprecher hinzuzufügen.</para
+></callout>
+<callout arearefs="pt-talker-2"
+><para
+>Alle bereits eingerichteten <guilabel
+>Sprecher</guilabel
+> erscheinen in dieser Liste. Die bevorzugten <guilabel
+>Sprecher</guilabel
+> erscheinen oben in der Liste. Der oberste Sprecher wird für die Sprachausgabe benutzt, wenn eine Anwendung keinen Sprecher vorgibt.</para
+></callout>
+<callout arearefs="pt-talker-3"
+><para
+>Wählen Sie mit einem Mausklick einen Sprecher aus der Liste, und klicken Sie auf diesen Knopf, um den Sprecher aus der Liste zu entfernen.</para
+></callout>
+<callout arearefs="pt-talker-4"
+><para
+>Wählen Sie mit einem Mausklick einen Sprecher aus der Liste, und klicken Sie auf diesen Knopf, um den Einstellungen zu ändern. Siehe unten.</para
+></callout>
+<callout arearefs="pt-talker-5"
+><para
+>Wählen Sie mit einem Mausklick einen Sprecher aus der Liste, und klicken Sie auf diesen Knopf, um den Sprecher in der Liste eine Zeile weiter nach unten schieben. Die Reihenfolge der Sprecher in der Liste bestimmt auch ihre Priorität.</para
+></callout>
+<callout arearefs="pt-talker-6"
+><para
+>Klicken Sie auf einen dieser Knöpfe, um Ihre Änderungen auf das laufende &jovie;-System anzuwenden.</para
+></callout>
+</calloutlist>
+</para>
+
+<para
+>Wenn Sie auf <guibutton
+>Hinzufügen</guibutton
+> klicken, wird die Karteikarte <guilabel
+>Sprecher hinzufügen</guilabel
+> angezeigt.</para>
+
+<para>
+    <screenshot>
+        <screeninfo
+>Karteikarte Sprecher hinzufügen.</screeninfo>
+        <mediaobjectco>
+            <imageobjectco>
+                <areaspec units="calspair">
+                    <area id="pt-addtalker-1" coords="1 1"/>
+                    <area id="pt-addtalker-2" coords="1 1"/>
+                    <area id="pt-addtalker-3" coords="1 1"/>
+                    <area id="pt-addtalker-4" coords="1 1"/>
+                    <area id="pt-addtalker-5" coords="1 1"/>
+                </areaspec>
+                <imageobject>
+                    <imagedata fileref="addtalker.png" format="PNG"/>
+                </imageobject>
+            </imageobjectco>
+            <textobject>
+                <phrase
+>Karteikarte Sprecher hinzufügen</phrase>
+            </textobject>
+        </mediaobjectco>
+    </screenshot>
+</para>
+
+<para>
+    <calloutlist>
+        <callout arearefs="pt-addtalker-1">
+            <para
+>Sie sollten Ihrem neuen Sprecher einen beliebigen Namen geben. </para>
+        </callout>
+        <callout arearefs="pt-addtalker-2">
+            <para
+>Wählen Sie hier die Sprache und den Synthesizer.</para
+></callout>
+        <callout arearefs="pt-addtalker-3">
+            <para
+>Wählen Sie hier einen Stimmtyp aus, es stehen drei männliche und drei weibliche Stimmen sowie eine Jungen- und Mädchenstimme zur Auswahl. </para>
+        </callout>
+        <callout arearefs="pt-addtalker-4">
+            <para
+>Stellen Sie hier benutzerdefinierte Parameter für die Stimme ein.</para
+></callout>
+        <callout arearefs="pt-addtalker-5">
+            <para
+>Wenn Sie hier klicken, erscheint der neue Sprecher auf der  Karteikarte <guilabel
+>Sprecher</guilabel
+>. Um die Einstellungen dieses Sprechers zu ändern, klicken Sie auf <guibutton
+>Bearbeiten</guibutton
+>.</para
+></callout>
+    </calloutlist>
+</para>
+
+<para
+>Nun können Sie &jovie; schon fast benutzen. Gehen Sie zurück zur Karteikarte <guilabel
+>Allgemein</guilabel
+> und überprüfen Sie, ob <guilabel
+>Sprachausgabe aktivieren (Jovie)</guilabel
+> angekreuzt ist, damit der TTS-Dienst von &kde; startet. Siehe <xref linkend="general"/>. Jetzt können Sie &jovie; benutzen, um Text vorlesen zu lassen. Klicken Sie auf die Karteikarte <guilabel
+>Aufträge</guilabel
+>, um Textaufträge zu erstellen und zu verwalten. Siehe <xref linkend="jobmgr"/>. </para>
+
+</sect1>
+
+<!-- ...................................................................... -->
+
+
+<sect1 id="general">
+<title
+>Starten von &jovie; und allgemeine Einrichtung</title>
+
+<para
+>Wenn Sie mindestens einen Sprecher eingerichtet haben, können Sie das Sprachausgabesystem von &kde; starten. Klicken Sie auf den Karteikartenreiter <guilabel
+>Allgemein</guilabel
+>, um diese Karteikarte zu öffnen. Hier können Sie einige allgemeine Optionen einstellen. </para>
+
+<para>
+    <screenshot>
+        <screeninfo
+>Die Sprachausgabeverwaltung von &kde; (Karteikarte Allgemein).</screeninfo>
+        <mediaobjectco>
+            <imageobjectco>
+                <areaspec units="calspair">
+                    <area id="pt-gen-1" coords="1 1"/>
+                    <area id="pt-gen-6" coords="1 1"/>
+                </areaspec>
+                <imageobject>
+                    <imagedata fileref="general.png" format="PNG"/>
+                </imageobject>
+            </imageobjectco>
+            <textobject>
+                <phrase
+>Die Sprachausgabeverwaltung von &kde; (Karteikarte Allgemein)</phrase>
+            </textobject>
+        </mediaobjectco>
+    </screenshot>
+</para>
+
+<para>
+<calloutlist>
+<callout arearefs="pt-gen-1"
+><para
+>Markieren Sie dieses Ankreuzfeld, um das &jovie;;-System zu aktivieren. Dies startet den KDE-TTS-Dienst (&jovie;). Ist dieser Start erfolgreich, wird die Karteikarte <guilabel
+>Aufträge</guilabel
+> angezeigt, und Sie können Textaufträge erstellen und vorlesen lassen. Siehe <xref linkend="jobmgr"/>. Entfernen Sie die Markierung, wird &jovie; angehalten und das TTS-System von &kde; deaktiviert. </para
+></callout>
+<callout arearefs="pt-gen-6"
+><para
+>Klicken Sie hier, um Ihre Einstellungen zu speichern.</para
+></callout>
+</calloutlist>
+</para>
+
+</sect1>
+
+<!-- ...................................................................... -->
+
+
+<sect1 id="jobmgr">
+<title
+>Textaufträge verwalten</title>
+
+<para
+>Wenn Sie auf den Karteikartenreiter <guilabel
+>Aufträge</guilabel
+> im <command
+>jovie</command
+> klicken, wird die Karteikarte <guilabel
+>Aufträge</guilabel
+> angezeigt.</para>
+
+<screenshot>
+<screeninfo
+>Die Sprachausgabeverwaltung von &kde; (Karteikarte Aufträge).</screeninfo>
+    <mediaobjectco>
+        <imageobjectco>
+            <areaspec units="calspair">
+                <area id="pt-jobmgr-1" coords="1 1"/>
+                <area id="pt-jobmgr-2" coords="1 1"/>
+                <area id="pt-jobmgr-3" coords="1 1"/>
+                <area id="pt-jobmgr-4" coords="1 1"/>
+            </areaspec>
+            <imageobject>
+                <imagedata fileref="jobs.png" format="PNG"/>
+            </imageobject>
+        </imageobjectco>
+        <textobject>
+            <phrase
+>Die Sprachausgabeverwaltung von &kde; (Karteikarte Aufträge)</phrase>
+        </textobject>
+    </mediaobjectco>
+</screenshot>
+<para>
+<calloutlist>
+<callout arearefs="pt-jobmgr-1"
+><para
+>Mit diesen Einstellungen kann die aktuelle Sprecherstimme verändert werden. Dies funktioniert nur dann, wenn noch keine Stimmen auf der Karteikarte <guilabel
+>Sprecher</guilabel
+> eingerichtet sind.</para
+></callout>
+<callout arearefs="pt-jobmgr-2"
+><para
+>Mit den Knöpfen in dieser Reihe können Sie Textaufträge starten, abbrechen, anhalten und wieder aufnehmen.</para
+></callout>
+<callout arearefs="pt-jobmgr-3"
+><para
+>Mit den Knöpfen in dieser Reihe können Sie den aktuellen Text in der &kde;-Zwischenablage vorlesen lassen oder eine Textdatei zum Vorlesen öffnen. Sie können außerdem den Sprecher für einen Auftrag wechseln.</para
+></callout>
+<callout arearefs="pt-jobmgr-4"
+><para
+>Klicken Sie auf <guibutton
+>Anwenden</guibutton
+> oder <guibutton
+>OK</guibutton
+>, dann werden alle geänderten Einstellungen auf allen Seiten übernommen.</para
+></callout>
+</calloutlist>
+</para>
+
+<note
+><para
+>Die Karteikarte <guilabel
+>Aufträge</guilabel
+> wird nur angezeigt, wenn &jovie; gestartet wurde. Um Jovie zu starten, klicken Sie auf den Karteikartenreiter <guilabel
+>Allgemein</guilabel
+> und kreuzen dort <guilabel
+>Sprachausgabe aktivieren (Jovie)</guilabel
+> an.</para>
+</note>
+
+</sect1>
+
+<!-- ...................................................................... -->
+
+
+<sect1 id="web">
+<title
+>Das Vorlesen von Webseiten-Inhalten</title>
+
+<para
+>In &konqueror;, dem Webbrowser von &kde;, können Sie den Text der angezeigten Webseite vorlesen lassen. Überprüfen Sie zuerst, ob &konqueror; läuft. Markieren Sie dann den Text, der vorgelesen werden soll, und wählen Sie im Hauptmenü <menuchoice
+> <guisubmenu
+>Extras</guisubmenu
+> <guisubmenu
+>Text vorlesen</guisubmenu
+> </menuchoice
+><action
+>. Nach kurzer Zeit sollte die Sprachausgabe beginnen.</action
+> </para>
+
+<tip
+><para
+>Es ist fast immer sinnvoll, den gewünschten Text einer Webseite zu markieren. Sie können diesen Schritt auch überspringen, aber dann werden viele &HTML;-Vorspannzeilen und andere unsichtbare Marken ebenfalls vorgelesen.</para
+></tip>
+
+</sect1>
+
+<!-- ...................................................................... -->
+
+
+<sect1 id="kate">
+<title
+>Sprachausgabe im Texteditor &kate;</title>
+
+<para
+>In &kate; dem erweiterten Texteditor von &kde;, können Sie angezeigten Text vorlesen lassen. Überprüfen Sie zuerst, ob &jovie; läuft und aktivieren Sie das <guilabel
+>KTextEditor-Modul Jovie für die Sprachausgabe</guilabel
+> im Einrichtungsdialog von &kate;. Markieren Sie dann den Text, der vorgelesen werden soll, und wählen Sie im Hauptmenü <menuchoice
+> <guisubmenu
+>Extras</guisubmenu
+> <guisubmenu
+>Text vorlesen</guisubmenu
+> </menuchoice
+>. <action
+>Dann sollte die Sprachausgabe beginnen.</action
+> </para>
+
+<tip
+><para
+>Sie müssen nicht unbedingt Text markieren; in diesem Fall wird die ganze Datei vorgelesen.</para
+></tip>
+
+<tip
+><para
+>Dies funktioniert auch, wenn &kate; in andere Anwendungen eingebettet ist, wie &eg; in &konqueror; oder in &quanta;.</para
+></tip>
+
+</sect1>
+
+<!-- ...................................................................... -->
+
+<sect1 id="knotify">
+<title
+>Vorlesen von Nachrichten (Knotify)</title>
+
+<para
+>KNotify ist das Nachrichtensystem von &kde;, das Sie über von Ihnen festgelegte Ereignisse benachrichtigt. Sie können den Text dieser Nachrichten auch von &jovie; vorlesen lassen.</para>
+
+<para
+>In &konversation;, dem IRC-Programm von &kde;, können Sie verschiedene Arten von Nachrichten einrichten. Sie können &konversation; beispielsweise so einrichten, dass Sie benachrichtigt werden, wenn in einem IRC-Kanal eine Nachricht auftaucht, in der Ihr Spitzname vorkommt. Mit &jovie; können Sie sich dann den IRC-Nachrichtentext vorlesen lassen.</para>
+
+<para
+>Unterstützt ein &kde;-Programm KNotify, erscheint ein Menüeintrag <guilabel
+>Benachrichtigungen</guilabel
+> im Menü <guilabel
+>Einstellungen</guilabel
+> dieses Programms. Die hier möglichen Einstellungen für KNotify unterscheiden sich je nach Anwendung.</para>
+
+<tip
+><para
+>Filter zur Zeichenkettenersetzung bieten eine gute Möglichkeit in &jovie; falsch betonte oder fehlerhaft ausgesprochene Nachrichten zu korrigieren. Die Datei <filename
+>kmail.xml</filename
+>, die zum Lieferumfang von &jovie; gehört, ist ein gutes Beispiel. Sie entfernt die Tags <command
+>br</command
+> und <command
+>b</command
+> aus den Nachrichten, die KMail versendet, und zudem den Ausdruck <command
+>/local/inbox</command
+>, da dieser in den meisten Fälle als vorausgesetzt angenommen werden kann. Lesen Sie dazu auch <xref linkend="stringreplacer"/>. </para
+></tip>
+
+</sect1>
+
+<!-- ...................................................................... -->
+
+<!--- <sect1 id="ssml">
+<title
+>SSML</title>
+
+<para
+>The Speech Synthesis Markup Language (SSML) is a W3C standard
+for marking up text for speech output.  It provides tags for controlling
+voices, rate of speech, volume, gender, and pitch (tone).  It also
+provides tags for controlling how words are spoken, for instance
+spelling out abbreviations.  SSML is part of the VoiceXML specification,
+which is also a W3C standard.</para>
+
+<para
+>At this time, &jovie; provides limited and very basic support for
+SSML.  It currently has the following restrictions.</para>
+
+<itemizedlist>
+<listitem
+><para
+>Works only with the Festival Interactive and Hadifix Talkers.</para
+></listitem>
+<listitem
+><para
+>You must install the <command
+>rab_diphone</command>
+(British male) voice, as this is the default voice Festival uses when speaking
+SSML.</para
+></listitem>
+<listitem
+><para
+>The <guilabel
+>Speed</guilabel
+> setting on the <guilabel
+>Audio</guilabel>
+screen is ignored when speaking text containing SSML.</para
+></listitem>
+<listitem
+><para
+>If the <guilabel
+>Speed</guilabel
+> or <guilabel
+>Pitch</guilabel>
+settings in the Festival configuration dialog are not set to 100%, it
+will usually cause the SSML text to be spoken in a monotone.</para
+></listitem>
+</itemizedlist>
+
+<para
+>The following sample text can be used to experiment with SSML.</para>
+
+<programlisting
+><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE speak PUBLIC "-//W3C//DTD SYNTHESIS 1.0//EN"
+    "http://www.w3.org/TR/speech-synthesis/synthesis.dtd">
+
+<speak version="1.0" xml:lang="en-US">
+    <prosody pitch="low">
+        Who's been sleeping in my bed?
+    </prosody>
+    said papa bear.
+    <prosody pitch="medium">
+        Who's been sleeping in my bed?
+    </prosody>
+    said momma bear.
+    <prosody pitch="high">
+        Who's been sleeping in my bed?
+    </prosody>
+    said baby bear.
+</speak>
+]]></programlisting>
+
+<para
+>More robust support for SSML is planned for the next version of
+&jovie;.
+</para>
+
+</sect1
+>-->
+
+<!-- ...................................................................... -->
+
+<sect1 id="filters">
+<title
+>Filter (Fortgeschrittene)</title>
+
+<para
+>Filter sind eine der fortgeschrittenen Fähigkeiten von &jovie;. Für die normale Arbeit mit &jovie; sind Filter nicht erforderlich.</para>
+
+<para
+>In Filtern wird Text bearbeitet, ehe er zum Programm speech-dispatcher geschickt wird. Sie sind nützlich für die Verbesserung der Aussprache, um falsch gesprochene Worte oder Abkürzungen zu ersetzen, eine passende Sprache und Sprecher auszuwählen oder um bestimmte Mängel von Sprachsynthesizern und deren Stimmen zu umgehen.</para>
+
+<!-- ...................................................................... -->
+
+<sect2 id="msg-types">
+<title
+>&jovie;-Nachrichtentypen</title>
+
+<para
+>Um die Arbeitsweise von Filtern zu verstehen, ist es wichtig zu wissen, wie das Programm "speech-dispatcher" mit einem Text arbeitet. &jovie; unterscheidet vier Arten von Texten.</para>
+
+<para>
+<itemizedlist>
+<listitem
+><para
+>Ausgaben von Screen-Readern</para
+></listitem>
+<listitem
+><para
+>Warnungen</para
+></listitem>
+<listitem
+><para
+>Nachrichten</para
+></listitem>
+<listitem
+><para
+>Textaufträge</para
+></listitem>
+</itemizedlist>
+</para>
+
+<para
+>Der Typ wird von der Anwendungen festgelegt, die eine Nachricht an &jovie; verschickt.</para>
+
+<para
+>Die Ausgabe von Screen-Readern hat die höchste Priorität. Sie wird allen anderen Aufträgen vorgezogen und hält diese Aufträge an. Wenn die Ausgabe der Screen-Reader vorgelesen ist, werden die angehaltenen Aufträge wieder fortgesetzt. </para>
+
+<para
+>Warnungen haben die nächste Priorität. Diese Stufe ist wichtigen Nachrichten wie &eg; <quote
+>Prozessor wird zu heiß</quote
+> vorbehalten. Eine Warnung hat Vorrang und hält die Ausgabe von Nachrichten und normalem Text an. Diese Aufträge werden nach der Ausgabe der Warnung wieder fortgesetzt.</para>
+
+<para
+>Nachrichten haben die nächsthöchste Priorität. Eine Nachricht unterbricht normalen Text. &kmouth; ist ein Beispiel für eine Anwendung, die Nachrichten verwendet. Während Sie &eg; einen langen Text auf einer Webseite vorlesen lassen, können Sie mit &kmouth; jemanden begrüßen, der gerade den Raum betritt. &kde;-Benachrichtigungen sind ebenfalls Nachrichten. Lesen Sie dazu <xref linkend="knotify"/>.</para>
+
+<para
+>Der Rest sind einfache Textaufträge. Jeder Auftrag, den Sie von der Karteikarte <guilabel
+>Aufträge</guilabel
+> anstoßen, ist ein Textauftrag. KSayit ist ein Beispiel für eine Anwendungen, die Textaufträge verwendet. Textaufträge sind für die Ausgabe längerer Texte gedacht, die keine besondere Dringlichkeit besitzen.</para>
+
+<para
+>Alle vier Auftragsarten werden in Warteschlangen abgearbeitet, mit Ausnahme der Ausgabe von Screen-Readern. Wenn eine Anwendung die Ausgabe eines Screen-Readers schickt, während &jovie; gerade eine solche vorliest, wird diese Ausgabe angehalten und beendet.</para>
+
+</sect2>
+
+<!-- ...................................................................... -->
+
+<sect2 id="filter-types">
+<title
+>Filterarten</title>
+
+<para
+>Zuerst müssen Sie wissen, dass Filter nie auf die Ausgabe von Screen-Readern angewendet werden. Sie werden auf normale Warnungen, Nachrichten und Textaufträge sowie auf &kde;-Nachrichten angewendet.</para>
+
+<para
+>Filter bearbeiten den Text und geben ihn an den nächsten Filter weiter. Zur Zeit gibt es drei Arten von Filtern. </para>
+
+<para>
+<itemizedlist>
+<listitem
+><para
+>Zeichenkettenersetzer</para
+></listitem>
+<listitem
+><para
+>&XML;-Umformer</para
+></listitem>
+<listitem
+><para
+>Sprecherauswahl</para
+></listitem>
+</itemizedlist>
+</para>
+
+<note
+><para
+>Filter sind als Module ausgeführt. In Zukunft kann es noch weiter Arten von Filtern geben.</para
+></note>
+
+<para
+>Zeichenkettenersetzer ersetzen Teile eines Textes durch anderen Text. Die zu ersetzenden Teile können Sie entweder als Worte oder als reguläre Ausdrücke angeben. &jovie; wird mit vordefinierten Zeichenkettenersetzerfiltern ausgeliefert, die das Ersetzen von Chat-Emoticons wie  <quote
+>:-)</quote
+> durch Text oder für die Umformatierung von Nachrichten aus &konversation; oder &kmail; in eine besser verständliche Form ermöglichen. </para>
+
+<para
+>&XML;-Umformer verwenden eine XSLT-Datei (&XML; Style Language - Transforms) um &XML; von einem Format in ein anderes Format umzuwandeln. Im Lieferumfang von &jovie; sind einige XSLT-Dateien zur Übersetzung von &XHTML; in SSML enthalten. </para>
+
+<para
+>Mit Sprecherauswahlfiltern können Sie Aufträge abhängig vom Inhalt des Textes oder abhängig von dem Programm, das den Text an &jovie; geschickt hat, an einen Sprecher schicken. Wenn Sie zum Beispiel auf der Karteikarte <guilabel
+>Sprecher</guilabel
+> eine weibliche Stimme eingestellt haben, können Sie Text von KDE-Nachrichten darüber vorlesen lassen. Siehe <xref linkend="configure-talkers"/>. darüber vorlesen lassen. </para>
+
+<para
+>Jeder dieser verschiedenen Filter hat einstellbare Regeln, nach denen er für eine Sprachausgabe angewendet wird. Wenn der Filter feststellt, dass seine Regeln nicht zutreffen, gibt er den Text unverändert an den nächsten Filter weiter.</para>
+
+<para
+>Wenn ein Textauftrag, eine Meldung, Warnung oder eine &kde;-Benachrichtigung an &jovie; geschickt wird, wird sie durch alle aktivierten Filter bearbeitet, die auf der Seite unten eingerichtet wurden. Die Bearbeitung durch die Filter erfolgt in der Reihenfolge in der Liste von oben nach unten. </para>
+
+</sect2>
+
+<!-- ...................................................................... -->
+
+<sect2 id="configure-filters">
+<title
+>Einrichtung der Filter</title>
+
+<para
+>Klicken Sie auf den Karteikartenreiter <guilabel
+>Filter</guilabel
+> in <command
+>jovie</command
+>, um Filter einzurichten.</para>
+
+<para>
+    <screenshot>
+        <screeninfo
+>Die Sprachausgabe-Verwaltung von &kde; (Karteikarte Filter)</screeninfo>
+        <mediaobjectco>
+            <imageobjectco>
+                <areaspec units="calspair">
+                    <area id="pt-filters-1" coords="1 1"/>
+                    <area id="pt-filters-2" coords="1 1"/>
+                    <area id="pt-filters-3" coords="1 1"/>
+                    <area id="pt-filters-4" coords="1 1"/>
+                    <area id="pt-filters-5" coords="1 1"/>
+                    <area id="pt-filters-6" coords="1 1"/>
+                </areaspec>
+                <imageobject>
+                    <imagedata fileref="filters.png" format="PNG"/>
+                </imageobject>
+            </imageobjectco>
+            <textobject>
+                <phrase
+>Die Sprachausgabe-Verwaltung von &kde; (Karteikarte Filter)</phrase>
+            </textobject>
+        </mediaobjectco>
+    </screenshot>
+</para>
+
+<para>
+<calloutlist>
+<callout arearefs="pt-filters-1"
+><para
+>Dies zeigt die Liste der eingerichteten normalen Filter. Ist ein Filter nicht angekreuzt, ist er nicht aktiviert und wird nicht benutzt. Filter werden der Reihe nach von oben nach unten abgearbeitet.</para
+></callout>
+<callout arearefs="pt-filters-2"
+><para
+>Klicken Sie hier, um einen neuen Filter einzufügen. Wählen Sie die Art des Filters aus, und es werden die weiter unten folgenden Einrichtungsdialoge angezeigt.</para
+></callout>
+<callout arearefs="pt-filters-3"
+><para
+>Klicken Sie hier, um einen Filter zu entfernen.</para
+></callout>
+<callout arearefs="pt-filters-4"
+><para
+>Um die Einstellungen für einen Filter zu ändern, klicken Sie hier. Es werden die weiter unten folgenden Einrichtungsdialoge angezeigt.</para
+></callout>
+<callout arearefs="pt-filters-5"
+><para
+>Mit einem Klick auf diese Knöpfe können Sie einen Filter in der Liste nach oben oder unten verschieben.</para
+></callout>
+<callout arearefs="pt-filters-6"
+><para
+>Klicken Sie hier, sonst werden Ihre Einstellungen nicht übernommen.</para
+></callout>
+</calloutlist>
+</para>
+
+</sect2>
+
+<!-- ...................................................................... -->
+
+<sect2 id="stringreplacer">
+<title
+>Einrichtung der Zeichenkettenersetzungsfilter</title>
+
+<para
+>Für die Einrichtung von Zeichenkettenersetzungsfiltern müssen Sie eine Liste von Worten oder regulären Ausdrücken als Vergleichsmuster eingeben. Werden diese Muster im Text gefunden, dann wird der Text gegen den zugehörigen Ersatztext ausgetauscht. Groß- und Kleinschreibung wird beim Vergleich nicht beachtet.</para>
+
+<para>
+    <screenshot>
+        <screeninfo
+>Zeichenkettenersetzer</screeninfo>
+        <mediaobjectco>
+            <imageobjectco>
+                <areaspec units="calspair">
+                    <area id="pt-stringreplacer-1" coords="1 1"/>
+                    <area id="pt-stringreplacer-2" coords="1 1"/>
+                    <area id="pt-stringreplacer-3" coords="1 1"/>
+                    <area id="pt-stringreplacer-4" coords="1 1"/>
+                    <area id="pt-stringreplacer-5" coords="1 1"/>
+                    <area id="pt-stringreplacer-6" coords="1 1"/>
+                    <area id="pt-stringreplacer-7" coords="1 1"/>
+                    <area id="pt-stringreplacer-8" coords="1 1"/>
+                    <area id="pt-stringreplacer-9" coords="1 1"/>
+                </areaspec>
+                <imageobject>
+                    <imagedata fileref="stringreplacer.png" format="PNG"/>
+                </imageobject>
+            </imageobjectco>
+            <textobject>
+                <phrase
+>Zeichenkettenersetzer</phrase>
+            </textobject>
+        </mediaobjectco>
+    </screenshot>
+</para>
+
+<para>
+<calloutlist>
+<callout arearefs="pt-stringreplacer-1"
+><para
+>Geben Sie für Ihren Filter einen Namen ein. Diesen Namen können Sie beliebig wählen, er muss sich nur von den Namen der anderen Filter unterscheiden.</para
+></callout>
+<callout arearefs="pt-stringreplacer-2"
+><para
+>Dies ist die Liste der Worte und regulären Ausdrücke. Der Filter vergleicht den Text mit den Zeichenketten in der Spalte <guilabel
+>Übereinstimmung</guilabel
+> und ersetzt ihn bei Übereinstimmung mit der Zeichenkette aus der Spalte <guilabel
+>Ersetzen durch</guilabel
+>. Die Liste wird in der angezeigten Reihenfolge von oben nach unten abgearbeitet.</para
+></callout>
+<callout arearefs="pt-stringreplacer-3"
+><para
+>Klicken Sie hier, um ein anderes Wort oder einen regulären Ausdruck in die Liste einzufügen.</para
+></callout>
+<callout arearefs="pt-stringreplacer-4"
+><para
+>Klicken Sie hier, um das markierte Wort oder den regulären Ausdruck in der Liste zu verschieben.</para
+></callout>
+<callout arearefs="pt-stringreplacer-5"
+><para
+>Klicken Sie hier, um ein vorhandenes Wort oder einen regulären Ausdruck in der Liste zu ändern.</para
+></callout>
+<callout arearefs="pt-stringreplacer-6"
+><para
+>Klicken Sie hier, um das markierte Wort oder den regulären Ausdruck aus der Liste zu entfernen.</para
+></callout>
+<callout arearefs="pt-stringreplacer-7"
+><para
+>Mit diesen Knöpfen können Sie eine Liste von Worten oder regulären Ausdrücken aus einer Datei laden, die aktuelle Liste speichern oder löschen. Laden Sie eine Liste aus einer Datei, werden die Einträge aus der Datei an die vorhandene Liste angehängt.</para
+></callout>
+<callout arearefs="pt-stringreplacer-8"
+><para
+>Ist hier eine Sprache eingetragen, wird der Filter nur angewendet, wenn der Sprecher für den Textauftrag eine der hier eingetragenen Sprachen spricht. Klicken Sie auf den Knopf, um eine Liste der Sprachen anzeigen zu lassen. Sie können auch mehrere Sprachen auswählen, wenn Sie beim Mausklick die &Ctrl;-Taste gedrückt halten.</para
+></callout>
+<callout arearefs="pt-stringreplacer-9"
+><para
+>Ist hier ein Wert eingetragen, wird der Filter nur angewendet, wenn der Text von einer der angegebenen Anwendungen kommt. Sie können mehrere Programme getrennt durch Kommata eingeben. Beispiel: <command
+><userinput
+>konversation,kmail</userinput
+></command
+></para>
+<tip
+><para
+>Die <guilabel
+>Anwendungs-ID</guilabel
+> laufender Programme erhalten Sie mit dem Programm <command
+>&qdbus;</command
+>. Die &DBus;-Nummern müssen Sie weglassen. Wenn zum Beispiel &qdbus; die Anwendungs-ID <command
+>kopete-3432</command
+> anzeigt, dürfen Sie nur <command
+><userinput
+>kopete</userinput
+></command
+> eingeben.</para
+></tip
+></callout>
+</calloutlist>
+</para>
+
+<para
+>Der Zeichenkettenersetzungsfilter wird nur dann auf den Text angewendet, wenn alle Bedingungen mit einem Eintrag im Kasten <guilabel
+>Diesen Filter anwenden wenn</guilabel
+> übereinstimmen. Sind alle Eingabefelder leer, wird der Filter auf alle Texte angewendet.</para>
+
+<para
+>Beim Vergleich von Worten benutzt der Zeichenkettenersetzungsfilter reguläre Ausdrücke in der Form <command
+>\s<userinput
+>Wort</userinput
+>\s</command
+>. Die Worte müssen also durch Trennzeichen (Leerzeichen) beidseitig begrenzt sein.</para>
+
+<para
+>In diesem Handbuch finden Sie keine Anleitung zum Schreiben von regulären Ausdrücken. Wenn Sie aber den &kde;-Editor für reguläre Ausdrücke installiert haben, können Sie ihn in den Dialogen <guilabel
+>Hinzufügen</guilabel
+> oder <guilabel
+>Bearbeiten</guilabel
+> als Hilfe zum Zusammenstellen dieser Ausdrücke aufrufen. Den &kde;-Editor für reguläre Ausdrücke finden Sie im Git-Modul Utils in playground.</para>
+
+<para
+>Im Lieferumfang von &jovie; sind einige Dateien mit Wortlisten enthalten; unter anderem eine Liste mit Emoticons wie <quote
+>:-)</quote
+>, einige Abkürzungen für IRC oder Messaging-Programme und eine Liste mit weiteren Abkürzungen. Es gibt auch eine Liste mit Sonderzeichen, mit der die aktuelle Version der polnischen Festival-Stimme Probleme hat. Wenn Sie eigene Wortlisten erstellen, können Sie diese mit <guilabel
+>Speichern</guilabel
+> in eine Datei schreiben und an das &jovie;-Team schicken, das die Listen dann in die nächste Version aufnimmt.</para>
+
+</sect2>
+
+<!-- ...................................................................... -->
+
+<sect2 id="xmltransformer">
+<title
+>Einrichtung der &XML;-Umformer-Filter</title>
+
+<para
+>&XML;-Umformer übersetzen &XML; mit Hilfe von XSLT-Dateien aus einem Format in ein anderes Format. XSLT (&XML; Style Language - Transforms) ist ein W3C-Standard für solche Umformungen. Es kann aber nur auf wohlgeformtes XML angewendet werden. Das Hilfsprogramm <command
+>xsltproc</command
+> muss auf Ihrem System installiert sein.</para>
+
+<para>
+    <screenshot>
+        <screeninfo
+>&XML;-Umformer</screeninfo>
+        <mediaobjectco>
+            <imageobjectco>
+                <areaspec units="calspair">
+                    <area id="pt-xmltransformer-1" coords="1 1"/>
+                    <area id="pt-xmltransformer-2" coords="1 1"/>
+                    <area id="pt-xmltransformer-3" coords="1 1"/>
+                    <area id="pt-xmltransformer-4" coords="1 1"/>
+                    <area id="pt-xmltransformer-5" coords="1 1"/>
+                </areaspec>
+                <imageobject>
+                    <imagedata fileref="xmltransformer.png" format="PNG"/>
+                </imageobject>
+            </imageobjectco>
+            <textobject>
+                <phrase
+>&XML;-Umformer</phrase>
+            </textobject>
+        </mediaobjectco>
+    </screenshot>
+</para>
+
+<para>
+<calloutlist>
+<callout arearefs="pt-xmltransformer-1"
+><para
+>Geben Sie für Ihren Filter einen Namen ein. Diesen Namen können Sie beliebig wählen, er muss sich nur von den Namen der anderen Filter unterscheiden.</para
+></callout>
+<callout arearefs="pt-xmltransformer-2"
+><para
+>Geben Sie den vollständigen Pfad zur XSLT-Datei für die Umwandlung ein.</para
+></callout>
+<callout arearefs="pt-xmltransformer-3"
+><para
+>Geben Sie den Pfad für das Programm <command
+>xsltproc</command
+> ein. Wenn xsltproc über die Umgebungsvariable PATH erreichbar ist, reicht auch <command
+><userinput
+>xsltproc</userinput
+></command
+>.</para
+></callout>
+<callout arearefs="pt-xmltransformer-4"
+><para
+>Wenn hier ein Wert angegeben ist, wird der Filter nur auf &XML;-Dateien mit einer <command
+><![CDATA[<!DOCTYPE]]></command
+> Spezifikation mit dem eingegebenen Text am Anfang angewendet. Zum Beispiel <command
+><userinput
+>html</userinput
+></command
+> im Eingabefeld <guilabel
+>DOCTYPE</guilabel
+> passt auf <command
+><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+>]]></command
+>.. </para
+></callout>
+<callout arearefs="pt-xmltransformer-5"
+><para
+>Ist hier ein Wert eingetragen, wird der Filter nur angewendet, wenn der Text von einer der angegebenen Anwendungen kommt. Sie können mehrere Programme getrennt durch Kommata eingeben. Beispiel: <command
+><userinput
+>konversation,kmail</userinput
+></command
+></para>
+<tip
+><para
+>Die <guilabel
+>Anwendungs-ID</guilabel
+> laufender Programme erhalten Sie mit dem Programm <command
+>&qdbus;</command
+>. Die &DBus;-Nummern müssen Sie weglassen. Wenn zum Beispiel &qdbus; die Anwendungs-ID <command
+>kopete-3432</command
+> anzeigt, dürfen Sie nur <command
+><userinput
+>kopete</userinput
+></command
+> eingeben.</para
+></tip
+></callout>
+</calloutlist>
+</para>
+
+<para
+>Der &XML;-Umformerfilter bearbeitet den Text nur dann, wenn das angegebene <quote
+>root</quote
+>-Element oder der DOCTYPE übereinstimmen und die Anwendungs-ID mit dem Eintrag in <guilabel
+>Diesen Filter anwenden, wenn</guilabel
+> übereinstimmt. Ist hier nichts eingetragen, wird die Prüfung nicht durchgeführt. Ist überhaupt kein Eintrag vorhanden, wird der Filter auf alle Texte angewendet. Sie sollten aber zumindest ein Eingabefeld ausfüllen, da die meisten Textaufträge nicht im &XML;-Format übermittelt werden.</para>
+
+</sect2>
+
+<!-- ...................................................................... -->
+
+<sect2 id="talkerchooser">
+<title
+>Einrichtung der Sprecherauswahlfilter</title>
+
+<para
+>Mit dem Sprecherauswahlfilter können Sie Texte an einen bestimmten Sprecher schicken, der auf der Karteikarte <guilabel
+>Sprecher</guilabel
+> eingerichtet ist, oder an einen Sprecher mit bestimmten Eigenschaften. Sie können zum Beispiel festlegen, dass Texte von <command
+>kmail</command
+> von einer weiblichen Stimme vorgelesen werden sollen. Siehe <xref linkend="configure-talkers"/>.</para>
+
+<para
+>Bevor &jovie; einen Text an die Filter übergibt, sucht es einen Sprecher für den Text. Der Sprecher wird anhand der Sprecher-Eigenschaften, die das Programm vorgibt, das den Text an &jovie; schickt, und den Eigenschaften der auf der Karteikarte <guilabel
+>Sprecher </guilabel
+> eingerichteten Sprecher ausgewählt. Mit dem Sprecherauswahlfilter können Sie den gewählten Sprecher überschreiben. </para>
+
+<para>
+    <screenshot>
+        <screeninfo
+>Sprecherauswahl</screeninfo>
+        <mediaobjectco>
+            <imageobjectco>
+                <areaspec units="calspair">
+                    <area id="pt-talkerchooser-1" coords="1 1"/>
+                    <area id="pt-talkerchooser-2" coords="1 1"/>
+                    <area id="pt-talkerchooser-3" coords="1 1"/>
+                    <area id="pt-talkerchooser-4" coords="1 1"/>
+                    <area id="pt-talkerchooser-5" coords="1 1"/>
+                </areaspec>
+                <imageobject>
+                    <imagedata fileref="talkerchooser.png" format="PNG"/>
+                </imageobject>
+            </imageobjectco>
+            <textobject>
+                <phrase
+>Sprecherauswahl</phrase>
+            </textobject>
+        </mediaobjectco>
+    </screenshot>
+</para>
+
+<para>
+<calloutlist>
+<callout arearefs="pt-talkerchooser-1"
+><para
+>Geben Sie für Ihren Filter einen Namen ein. Diesen Namen können Sie beliebig wählen, er muss sich nur von den Namen der anderen Filter unterscheiden.</para
+></callout>
+<callout arearefs="pt-talkerchooser-2"
+><para
+>Ist hier ein Wert eingetragen, wird der Filter angewendet, falls der Text den eingegebenen regulären Ausdruck enthält. Ist auf Ihrem System der &kde;-Editor für reguläre Ausdrücke installiert, können Sie diesen mit einem Klick auf den Knopf aufrufen, um Hilfe bei der Eingabe zu erhalten.</para>
+<tip
+><para
+>Um eine schnellere Verarbeitung zu erzielen, sollten Sie versuchen, den regulären Ausdruck am Anfang der Zeichenkette zu <quote
+>verankern</quote
+>, d. h., beginnen Sie den regulären Ausdruck mit <command
+><userinput
+><![CDATA[^]]></userinput
+></command
+>.</para
+></tip
+></callout>
+<callout arearefs="pt-talkerchooser-3"
+><para
+>Ist hier ein Wert eingetragen, wird der Filter nur angewendet, wenn der Text von einer der angegebenen Anwendungen kommt. Sie können mehrere Programme getrennt durch Kommata eingeben. Beispiel: <command
+><userinput
+>konversation,kmail</userinput
+></command
+></para>
+<tip
+><para
+>Die <guilabel
+>Anwendungs-ID</guilabel
+> laufender Programme erhalten Sie mit dem Programm <command
+>&qdbus;</command
+>. Die &DBus;-Nummern müssen Sie weglassen. Wenn zum Beispiel &qdbus; die Anwendungs-ID <command
+>kopete-3432</command
+> anzeigt, dürfen Sie nur <command
+><userinput
+>kopete</userinput
+></command
+> eingeben.</para
+></tip
+></callout>
+<callout arearefs="pt-talkerchooser-4"
+><para
+>Legen Sie hier die Eigenschaften des von Ihnen gewünschten Sprechers fest. Wenn der Text die oben gezeigten Filterbedingungen erfüllt, wird der Sprecher ausgewählt, der den gewünschten Anforderungen am ehesten entspricht. Klicken Sie auf den Knopf rechts, um den Dialog <guilabel
+>Sprecherauswahl</guilabel
+> anzuzeigen. </para
+></callout>
+<callout arearefs="pt-talkerchooser-5"
+><para
+>Verwenden Sie diese Knöpfe, um Ihre Sprechereinstellungen zu speichern oder zu laden oder alle Einstellungen zu löschen.</para
+></callout>
+</calloutlist>
+</para>
+
+<para
+>Der Sprecherauswahlfilter wird nur dann auf den Text angewendet, wenn alle Bedingungen mit einem Eintrag im Kasten <guilabel
+>Diesen Filter anwenden wenn</guilabel
+> zutreffen. Sie müssen mindestens eine Bedingung eintragen.</para>
+
+</sect2>
+
+</sect1>
+
+<!-- ...................................................................... -->
+<!--
+<sect1 id="selecttalker">
+<title
+>Selecting Talkers (Advanced)</title>
+
+<para
+>You can configure
+any number of talkers in the <guilabel
+>Talkers</guilabel
+> tab.
+See <xref linkend="configure-talkers"/>.  When applications send text
+to &jovie;, they may specify the attributes of a desired
+talker to speak the text.  &jovie; will pick the closest
+matching talker from among the talkers you have configured to satisfy
+the application's request.  For example, an application might request
+the text be spoken by an English female voice.  If you have configured
+a talker with English language and female gender, that talker will be used.
+If you have configured all English male talkers, one of those talkers
+will be used.  If an application specifies no attributes,
+the default (topmost) talker listed in the <guilabel
+>Talkers</guilabel>
+tab is used.</para>
+
+<para
+>When applications specify the attributes of the desired talker,
+they may indicate that certain attributes are "preferred" over other
+attributes.  For example, an application may specify that it wishes
+that a female loud voice speak the text, and that the loud attribute is
+"preferred" over the female attribute.  If you had a female soft talker
+and a male loud talker configured, &jovie; will choose the male
+loud talker to do the speaking.  Since language is a critical parameter
+in making speech understandable, it is always a "preferred" attribute.</para>
+
+<para
+>Using the <guilabel
+>Select Talker</guilabel
+> screen, you may
+override application talker settings.  The screen is displayed</para>
+
+<itemizedlist>
+<listitem
+><para
+>when you click the <guibutton
+>Change Talker</guibutton>
+button on the <guilabel
+>Jobs</guilabel
+> tab, or</para
+></listitem>
+<listitem
+><para
+>when you click the <guilabel
+>Talker</guilabel
+> button
+on the <guilabel
+>Filter Configuration</guilabel
+> dialog for
+a Talker Chooser filter, or</para
+></listitem>
+</itemizedlist>
+
+<para>
+    <screenshot>
+        <screeninfo
+>Select Talker</screeninfo>
+        <mediaobjectco>
+            <imageobjectco>
+                <areaspec units="calspair">
+                    <area id="pt-selecttalker-1" coords="1 1"/>
+                    <area id="pt-selecttalker-2" coords="1 1"/>
+                    <area id="pt-selecttalker-3" coords="1 1"/>
+                    <area id="pt-selecttalker-4" coords="1 1"/>
+                    <area id="pt-selecttalker-5" coords="1 1"/>
+                </areaspec>
+                <imageobject>
+                    <imagedata fileref="addtalker.png" format="PNG"/>
+                </imageobject>
+            </imageobjectco>
+            <textobject>
+                <phrase
+>Select Talker</phrase>
+            </textobject>
+        </mediaobjectco>
+    </screenshot>
+</para>
+
+<para
+>The screen offers three methods to specify desired talker
+attributes:</para>
+
+<itemizedlist>
+<listitem
+><para
+>Use the default talker (topmost in the
+<guilabel
+>Talkers</guilabel
+> tab).  In other words, no talker attributes
+are specified.</para
+></listitem>
+<listitem
+><para
+>Use the closest matching talker having one or more specified attributes.</para
+></listitem>
+<listitem
+><para
+>Use the closest matching talker having all the attributes
+of a configured talker.  If you don't delete or modify the talker's settings,
+&jovie; will pick that specific talker.  If you delete or modify the
+talker's settings, then &jovie; will pick the closest matching talker
+having the talker's original attributes.</para
+></listitem>
+</itemizedlist>
+
+<para>
+<calloutlist>
+<callout arearefs="pt-selecttalker-1"
+><para
+>Choose the method for entering
+the desired talker attributes by clicking one of these radio buttons.</para
+></callout>
+<callout arearefs="pt-selecttalker-2"
+><para
+>Choose the attributes of the desired
+talker here.  Leave an attribute blank if you do not care about that attribute.</para
+></callout>
+<callout arearefs="pt-selecttalker-3"
+><para
+>Check this box if you wish the
+attribute to be "preferred" over other attributes.  You may check more than one
+box.</para
+></callout>
+<callout arearefs="pt-selecttalker-4"
+><para
+>Since language is a critical factor
+in making speech understandable, it is always a preferred attribute.  It is rare
+that you will use this attribute.  The only time you might specify the language
+attribute is when you know a specific application sends text in a language
+different from your desktop.</para
+></callout>
+<callout arearefs="pt-selecttalker-5"
+><para
+>This is a list of the talkers
+you currently have configured in &jovie;.  By choosing one of these,
+in effect, you are specifying all the attributes of that talker.  If that
+talker is still configured when text is sent, you'll get an exact match and that
+talker will be chosen.  However, if you later delete the talker, or modify
+its settings, it might not be the chosen talker anymore.  The talker
+most closely matching the original attributes will be chosen.</para
+></callout>
+</calloutlist>
+</para>
+
+<para
+>The <guilabel
+>Language</guilabel
+> attribute is special because
+text will probably be unintelligible if spoken by a talker that
+speaks a language different from the text.  Therefore, language
+is automatically a "preferred" attribute. If you specify a language,
+it will override the chosen language, but if you leave it blank,
+the existing language setting will be used.  If the application that sent the
+text to &jovie; did not specify a language, &jovie; assigns
+the language of the topmost talker you have configured in the
+<guilabel
+>Talkers</guilabel
+> tab.  In other words, the topmost
+talker is assumed to speak the language of your desktop.</para>
+
+<tip
+><para
+>To clear all the attributes in the
+<guilabel
+>Use closest matching Talker having</guilabel
+> section,
+first click the <guilabel
+>Use default Talker</guilabel
+> radio button,
+then click the <guilabel
+>Use closest matching Talker having</guilabel>
+radio button.</para
+></tip>
+
+</sect1>
+ -->
+</chapter>
+
+<!-- ====================================================================== -->
+<!-- 
+<chapter id="commands">
+<title
+>Command Reference</title>
+
+<para
+>TODO</para>
+Context Menu 
+Stop/Delete
+Pause
+Resume
+Repeat
+Speak Clipbord Contents
+Configure
+Jovie Handbook
+About Jovie
+Quit Ctrl+Q
+
+</chapter>
+-->
+
+<chapter id="developers">
+<title
+>Entwicklerhandbuch für &jovie;</title>
+
+<para
+>&jovie; bietet zwei Schnittstellen für Anwendungsprogrammierer (APIs): </para>
+
+<itemizedlist>
+<listitem
+><para
+>Die Sprachausgabe-API, von &kde;, mit der Programmierer ihren Anwendungen TTS-Fähigkeiten verleihen können. Anwendungen kommunizieren mit &jovie; über &DBus;.</para
+></listitem>
+<listitem
+><para
+>Die &jovie;-Modul-API, mit der Sprachsynthesizer zu &jovie; hinzugefügt werden, sodass &jovie; diese Synthesizer benutzen kann.</para
+></listitem>
+</itemizedlist>
+
+<para
+>Der folgende Abschnitt enthält eine kurze Beschreibung der &kde;-&DBus;-Schnittstelle der Sprachausgabe-API von &kde;. Die vollständige Dokumentation für beide APIs finden Sie auf der <ulink url="http://accessibility.kde.org/developer/kttsd/"
+>&kde; Accessibility</ulink
+> Webseite (http://accessibility.kde.org). </para>
+
+
+<!-- ...................................................................... -->
+
+
+<sect1 id="dbus-interface">
+<title
+>Die &DBus;-Schnittstelle von &jovie;</title>
+
+<para
+>Anwendungen fordern Sprachausgabedienste über die &DBus;-Schnittstelle von &kde; vom Programm <command
+>jovie</command
+> über das Objekt <command
+>KSpeech</command
+> an. </para>
+
+<para
+>Geben Sie die folgenden Befehle in einer &konsole; ein:</para>
+
+<para
+>Wenn &jovie; noch nicht gestartet wurde</para>
+
+<para
+><userinput
+>jovie</userinput
+></para>
+
+<para
+>Um einen Textauftrag in die Warteschlange zu stellen</para>
+
+<para
+><userinput
+>qdbus org.kde.jovie /KSpeech say "<replaceable
+>Text</replaceable
+>" "<replaceable
+>options</replaceable
+>"</userinput
+></para>
+
+<para
+>dabei ist <userinput
+><replaceable
+>Text</replaceable
+></userinput
+> der Text zum Vorlesen und <userinput
+><replaceable
+>Option</replaceable
+></userinput
+> ein Sprachcode wie &eg; <userinput
+><replaceable
+>en</replaceable
+></userinput
+>, <userinput
+><replaceable
+>de</replaceable
+></userinput
+> &etc; </para>
+
+<para
+>Beispiel:</para>
+
+<para
+><userinput
+>qdbus org.kde.jovie /KSpeech say "Dies ist ein Test." "de"</userinput
+></para>
+
+<para
+>Es gibt noch mehr Befehle, die Sie einsetzen können. Für eine Liste aller Befehle geben Sie</para>
+
+<para
+><userinput
+>qdbus org.kde.jovie /KSpeech</userinput
+></para>
+
+<para
+>ein oder lesen Sie die <ulink url="http://accessibility.kde.org/developer/kttsd/"
+> &kde; Sprachausgabe-API</ulink
+>.</para>
+
+</sect1>
+
+</chapter>
+
+<!-- ====================================================================== -->
+
+<chapter id="faq">
+<title
+>Fragen und Antworten</title>
+&reporting.bugs; &updating.documentation; <qandaset id="faqlist">
+<qandaentry>
+<question>
+<para
+>Ich muss noch einmal von vorne anfangen. Wie kann ich &jovie; vollständig beenden?</para>
+</question>
+<answer>
+<para
+>Geben Sie die folgenden Befehle in einer &konsole; ein: <programlisting
+>kquitapp jovie
+</programlisting>
+</para>
+</answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>Wie kann ich die Fehlerausgabe von <command
+>jovie</command
+> sehen?</para>
+</question>
+<answer>
+<para
+>Öffnen Sie ein &konsole;-Terminalfenster und starten darin <command
+>jovie</command
+>.</para>
+</answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>Keiner der genannten Sprachsynthesizer unterstützt meine Sprache. Wo kann ich einen Synthesizer für meine Sprache bekommen?</para>
+</question>
+<answer>
+<para
+>Suchen Sie bei Google(tm). Diese <ulink url="http://tcts.fpms.ac.be/synthesis/mbrola/mbrtts.html"
+>Verknüpfung</ulink
+> könnte auch hilfreich sein. Wenn Sie einen freien Synthesizer für Ihre Wunschsprache finden und dafür Unterstützung zu &jovie; hinzufügen wollen, setzen Sie sich mit den Entwicklern in Verbindung. Quelloffene Synthesizer werden besonders gesucht. Wenn Sie einen kommerziellen Synthesizer kennen, können Sie versuchen, den Hersteller dazu zu überreden, den Entwicklern eine freie Kopie zu überlassen. Bis dahin können Sie versuchen, den Synthesizer mit den Befehlen des Hintergrundprogramms für „speed-dispatcher“ zu benutzen.</para>
+</answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>Ich habe den &HTML;-&XML;-Umformerfilter eingerichtet, aber bei Verwendung des Moduls für Festival werden Webseiten nicht vorgelesen.</para>
+</question>
+<answer>
+<para
+>Bedingt durch einen Fehler in Festival 1.95 beta müssen Sie die (männliche britische) Stimme <command
+>rab_diphone</command
+> installieren, damit SABLE überhaupt funktioniert. Das müssen Sie selbst dann tun, wenn Sie diese Stimme nicht zum Vorlesen von Webseiten benutzen. Stellen Sie außerdem sicher, dass das Programm <command
+>xsltproc</command
+> installiert und über die Umgebungsvariable PATH zu finden ist.</para>
+</answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>Bestimmte Zeichen oder Interpunktionszeichen scheinen Fehler beim Synthesizer zu verursachen, sodass ganze Sätze übersprungen oder nur Kauderwelsch ausgegeben wird. Was kann ich dagegen tun?</para>
+</question>
+<answer>
+<para
+>Stellen Sie zunächst sicher, dass die Option <guilabel
+>Zeichenkodierung</guilabel
+> auf den richtigen Wert für die entsprechende Sprache eingestellt ist. Gibt es Probleme mit bestimmten Zeichen oder Wörtern, können diese möglicherweise durch einen Zeichenkettenersetzungsfilter behoben werden. Siehe <xref linkend="filters"/>.</para>
+</answer>
+</qandaentry>
+</qandaset>
+</chapter>
+
+<!-- ====================================================================== -->
+
+<chapter id="credits">
+
+<title
+>Danksagungen und Lizenz</title>
+
+<para
+>&jovie; </para>
+<para
+>Programm Copyright &copy; 2002 Jos&#233; Pablo Ezequiel <quote
+>Pupeno</quote
+> Fern&#225;ndez <email
+>pupeno@kde.org</email
+> </para>
+<para
+>Aktueller Betreuer: Jeremy Whiting <email
+>jpwhiting@kde.org</email
+> </para>
+<para
+>Mitwirkende: <itemizedlist>
+<listitem
+><para
+>Gary Cramblitt <email
+>garycramblitt@comcast.net</email
+></para>
+</listitem>
+<listitem
+><para
+>Olaf Schmidt <email
+>ojschmidt@kde.org</email
+></para>
+</listitem>
+<listitem
+><para
+>Gunnar Schmi Dt <email
+>gunnar@schmi-dt.de</email
+></para>
+</listitem>
+<listitem
+><para
+>Paul Giannaros <email
+>ceruleanblaze@gmail.com</email
+></para>
+</listitem>
+</itemizedlist>
+</para>
+
+<para
+>Copyright der Dokumentation &copy; 2009 Jeremy Whiting <email
+>jpwhiting@kde.org</email
+> &copy; 2004 Gary R. Cramblitt <email
+>garycramblitt@comcast.net</email
+> </para>
+
+<para
+>Übersetzung Burkhard Lück<email
+>lueck@hube-lueck.de</email
+></para
+> 
+&underFDL; &underGPL; <note
+><para
+>Die Sprachsynthesizer, die von &jovie; genutzt werden, haben ihre eigene Lizenz, die Sie in der zugehörigen Dokumentation oder auf den betreffenden Webseiten finden. Es gibt auch Stimmen, die eine eigene Lizenz besitzen.</para
+></note>
+
+</chapter>
+
+<!-- ====================================================================== -->
+
+<appendix id="installation">
+<title
+>Installation</title>
+
+<!-- ...................................................................... -->
+
+
+<sect1 id="getting-kapp">
+<title
+>Woher Sie &jovie; bekommen</title>
+
+<para
+>&install.intro.documentation; </para>
+
+<para
+>Debian Installationsbefehl: <command
+>apt-get install jovie</command
+></para>
+
+<note>
+<para
+>Sie finden Quelltexte und übersetzte Pakete auf der <ulink url="http://accessibility.kde.org/developer/kttsd/"
+>&kde; Accessibility</ulink
+> Webseite (http://accessibility.kde.org).</para>
+
+<para
+>Wenn Sie Zugriff auf das KDE-Quellcodearchiv haben, können Sie das Programm &jovie; daraus herunterladen. &jovie; finden Sie im Ordner <filename class="directory"
+>jovie</filename
+>. Außerdem finden Sie den Quellcode von &jovie; unter <ulink url="http://download.kde.org/stable/"
+>http://download.kde.org/stable/</ulink
+>.</para>
+</note>
+
+</sect1>
+
+<!-- ...................................................................... -->
+
+
+<sect1 id="requirements">
+<title
+>Voraussetzungen</title>
+
+<para
+>Unbedingt erforderlich:</para>
+
+<para>
+<itemizedlist>
+<listitem
+><para
+>&kde; Version 4.8 oder neuer.</para
+></listitem>
+<listitem
+><para
+>speech-dispatcher version 0.67 oder neuer.</para
+></listitem>
+<listitem
+><para
+>Ein Sprachsynthesizer. Die folgenden Synthesizer und Sprachen werden zur Zeit unterstützt. </para>
+
+<para>
+<informaltable id="synth-engines">
+<tgroup cols="2">
+<tbody>
+
+<row>
+<entry
+>Espeak</entry>
+<entry
+>Enthält viele Sprachen, eine Liste aller aktuell unterstützten Sprachen finden Sie auf der Projektseite <ulink url="http://espeak.sourceforge.net/languages.html"
+>http://espeak.sourceforge.net/languages.html</ulink
+>.</entry>
+</row>
+
+<row>
+<entry
+>Festival</entry>
+<entry
+>Amerikanisches Englisch, Britisch, Spanisch, Deutsch, Finnisch, Tschechisch, Polnisch, Russisch, Italienisch, Französisch, Kanadisches Französisch, Kiswahili, Zulu und Ibibio.</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</para>
+
+<para
+>&jovie; arbeitet mit auch mit jedem Sprachsynthesizer, der auf der Befehlszeile in einer &konsole; gestartet werden kann.</para>
+
+<note
+><para
+>Die Liste der oben genannten Sprachen kann unvollständig oder veraltet sein. Ziehen Sie daher die Beschreibung der Synthesizer zu den unterstützten Sprachen zu Rate. Schauen Sie auch auf der Webseite von <ulink url="http://accessibility.kde.org/developer/kttsd/index.php"
+>&jovie;</ulink
+>, nach Informationen, die noch nicht in diesem Handbuch enthalten sind. </para
+></note>
+
+<note>
+<para
+>Das Programm "speech-dispatcher" benutzt eine anpassungsfähige Modul-Architektur für Sprachsynthesizer. Wenn Sie &jovie; für die Nutzung eines anderen Synthesizers erweitern möchten, setzen Sie sich mit dem Entwicklerteam in Verbindung. </para>
+</note>
+
+<para
+>Spezielle Anleitungen zu den verschiedenen Sprachsynthesizern finden Sie in <xref linkend="configuration"/>. </para>
+</listitem>
+</itemizedlist>
+</para>
+
+<para
+>Zusätzliche Komponenten:</para>
+
+<para>
+<itemizedlist>
+
+<listitem>
+<para
+>Das Programm <command
+>xsltproc</command
+> wird für die Unterstützung von SSML und für den &XML;-Umwandlungsfilter benutzt, ist aber nicht zwingend notwendig. Debian-Benutzer können xsltproc mit dem Befehl <command
+>apt-get install xsltproc</command
+> installieren.</para>
+</listitem>
+
+</itemizedlist>
+</para>
+
+</sect1>
+
+<!-- ...................................................................... -->
+
+
+<sect1 id="compilation">
+<title
+>Kompilierung und Installation</title>
+
+<para
+>Um &jovie; zu kompilieren, brauchen Sie eine aktuelle Entwicklungsumgebung von KDE (Version 4.8 oder neuer) einschließlich der Pakete kdelibs und der Entwickungsdateien für das Programm "speech-dispatcher".</para>
+
+<para
+>Wenn Sie die Quelltexte von &jovie; aus dem Quelltextarchiv für <filename
+>kdeaccessibility</filename
+> beziehen oder den jede Nacht aktuell erstellten Tarball heruntergeladen haben, übersetzen und installieren Sie das Programm mit folgenden Befehlen: </para>
+
+<programlisting
+>cd jovie
+mkdir build
+cd build
+cmake ../
+make
+sudo make install
+</programlisting>
+
+</sect1>
+
+<!-- ...................................................................... -->
+
+
+<sect1 id="configuration">
+<title
+>Einrichtung</title>
+
+<para
+>Bevor Sie &jovie; benutzen, überprüfen Sie zuerst, ob speech-dispatcher mit Ihrem Sprachsynthesizer richtig arbeitet. Dazu können Sie das Shellskript spd-conf verwenden.</para>
+
+<note
+><para
+>KTTSD und kttsmgr wurden in &kde; 4.5 in &jovie; umbenannt. Das Programm &jovie; soll so weiterentwickelt werden, dass die Einrichtung von speech-dispatcher direkt möglich ist und das Skript spd-conf nicht mehr benötigt wird. </para
+></note>
+
+<!-- ====================================================================== -->
+
+</sect1>
+
+</appendix>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+-->

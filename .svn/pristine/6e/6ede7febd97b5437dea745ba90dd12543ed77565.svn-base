@@ -1,0 +1,501 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<article id="icons" lang="&language;">
+<articleinfo>
+<title
+>Symbole</title>
+<authorgroup>
+<author
+>&Mike.McBride; &Mike.McBride.mail;</author>
+<author
+>&Jost.Schenck; &Jost.Schenck.mail;</author>
+<author
+>&Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;</author>
+<othercredit role="translator"
+><firstname
+>Jürgen</firstname
+><surname
+>Nagel</surname
+><affiliation
+><address
+><email
+>JuergenNagel@web.de</email
+></address
+></affiliation
+><contrib
+>Deutsche Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2013-12-05</date>
+<releaseinfo
+>&kde; 4.12</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Kontrollzentrum</keyword>
+<keyword
+>Symbol</keyword>
+</keywordset>
+</articleinfo>
+<sect1 id="kcm_icons">
+<title
+>Symbole</title>
+
+<sect2 id="icons-intro">
+<title
+>Einleitung</title>
+
+<para
+>&kde; enthält vollständige Symbolsätze in verschiedenen Größen. Diese Symbole werden überall in von &kde; verwendet: auf der Arbeitsfläche, in der Kontrollleiste, im &konqueror;-Dateimanager, in den Werkzeugleisten aller &kde;-Anwendung &etc; Im Einrichtungsmodul Symbole können die Eigenschaften dieser Symbole und ihre Nutzung in &kde; flexibel angepasst werden. </para>
+
+<para>
+<screenshot>
+<screeninfo
+>Bildschirmfoto der Symbol-Design-Verwaltung</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="main.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>&kde;-Symbole einrichten</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>In diesem Modul können Sie:</para>
+<itemizedlist>
+<listitem
+><para
+>Symbol-Designs auswählen und installieren</para
+></listitem>
+<listitem
+><para
+>unterschiedliche Symbolgrößen wählen</para
+></listitem>
+<listitem
+><para
+>Symbolen Effekte zuordnen (zum Beispiel kann man sie einfärben oder halbtransparent machen) </para
+></listitem>
+<listitem
+><para
+>diese Einstellungen für die unterschiedlichen Aufgaben, bei denen Symbole verwendet werden, getrennt einstellen: zum Beispiel für die Arbeitsfläche, Werkzeugleisten &etc; </para
+></listitem>
+</itemizedlist>
+
+<important
+><para
+>Beachten Sie, dass einige Einstellungen abhängig vom gewählten Symbol-Design sind. &kde; hat drei Standard-Symbol-Designs: Oxygen, Monochrome und Crystal SVG. Im Paket kdeartwork finden Sie weitere Designs.</para
+></important>
+
+<para
+>Es gibt zwei Seiten in diesem Modul: <guilabel
+>Design</guilabel
+> und <guilabel
+>Erweitert</guilabel
+>. Auf der Seite <guilabel
+>Design</guilabel
+> wählen Sie ein Symbol-Design aus und auf der Seite <guilabel
+>Erweitert</guilabel
+> stellen Sie ein, wie diese Symbole in &kde; benutzt werden.</para>
+</sect2>
+
+<sect2 id="icon-theme">
+<title
+>Design</title>
+
+<para
+>Oben wird eine Vorschau von Symbolen des aktuell benutzten Designs angezeigt. Die meisten Standardinstallationen enthalten nur das Standard-Design von &kde; Oxygen. Weitere Designs sind im Paket kdeartwork vorhanden oder können aus dem Internet von <ulink url="http://www.kde-look.org"
+>http://www.kde-look.org</ulink
+> heruntergeladen werden.</para>
+
+<variablelist>
+<varlistentry
+><term
+><guilabel
+>Neue Designs herunterladen ...</guilabel
+></term>
+<listitem>
+<para
+>Sie müssen mit dem Internet verbunden sein, um diese Funktion benutzen zu können. Klicken Sie auf diesen Knopf, um einen Dialog zur Auswahl eines neuen Symboldesigns zu öffnen. Um ein Symboldesign zu installieren, klicken Sie auf den Knopf <guibutton
+>Installieren</guibutton
+>. Nachdem Sie den Installationsdialog mit <guibutton
+>Schließen</guibutton
+> beendet haben, können Sie das neue Symboldesign sofort benutzen. </para>
+<para>
+<screenshot>
+<screeninfo
+>Neue Symbol-Designs herunterladen</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="get-new-theme.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Neue Symbol-Designs herunterladen</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+</listitem>
+</varlistentry>
+<varlistentry
+><term
+><guilabel
+>Design-Datei installieren ...</guilabel
+></term>
+<listitem>
+<para
+>Wenn Sie bereits neue Designs aus dem Internet heruntergeladen haben, können Sie mit diesem Knopf bereits heruntergeladene Designs öffnen. Dazu wird ein Dialog angezeigt, in dem Sie die Adresse des Designarchivs auf Ihrem System eingeben müssen.</para>
+<para>
+<screenshot>
+<screeninfo
+>Installation eines neuen Symbol-Designs</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="install-theme.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Installation eines neuen Symbol-Designs</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+<para
+>Klicken Sie in diesem Dialog auf <guibutton
+>OK</guibutton
+>, damit wird das ausgewählte Design installiert und kann in der Liste der Designs ausgewählt werden. </para>
+</listitem>
+</varlistentry>
+<varlistentry
+><term
+><guilabel
+>Design entfernen</guilabel
+></term>
+<listitem>
+<para
+>Wenn Sie diesen Knopf drücken, werden alle Dateien für das ausgewählte Design von Ihrem System gelöscht. Vor der Ausführung dieser Aktion müssen Sie das Löschen des Design in einem Dialog bestätigen. </para>
+<para>
+<screenshot>
+<screeninfo
+>Design entfernen</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="delete-theme.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Design entfernen</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+<para
+>Klicken Sie auf <guibutton
+>Löschen</guibutton
+>, um alle Dateien für diesse Design zu entfernen oder klicken Sie auf <guibutton
+>Abbrechen</guibutton
+>, um diesen Dialog ohne das Löschen von Designs zu schließen. </para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+<sect2 id="icons-use">
+<title
+>Erweitert</title>
+
+<para
+>Auf dieser zweiten Seite des Einrichtungsmoduls Symbole gibt es zwei Bereiche:</para>
+
+<itemizedlist
+> 
+<listitem
+> 
+<para
+>Im Bereich <guilabel
+>Verwendung des Symbols</guilabel
+> kann man auswählen, für welche Verwendung die Symbole eingerichtet werden sollen, zum Beispiel für die <guilabel
+>Werkzeugleiste</guilabel
+> oder die <guilabel
+>Kontrollleiste</guilabel
+>. </para
+> 
+<para>
+<screenshot>
+<screeninfo
+>Auswahl der einzurichtenden Symbole</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="use-of-icons.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Auswahl der einzurichtenden Symbole</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+</listitem
+> 
+
+<listitem
+> <para
+>Im unteren Bereich können Sie sehen, wie die Symbole der ausgewählten Art mit den aktuellen Einstellungen aussehen. Beachten Sie, dass das Aussehen der Symbole zusätzlich von der Einstellung unter <guilabel
+>Effekt festlegen ...</guilabel
+> abhängt (eine Erklärung dazu folgt weiter unten). </para
+> </listitem>
+</itemizedlist>
+
+<para
+>Um Symbole einzurichten, wählt man zuerst den Verwendungsbereich der betreffenden Symbole. Dann ändert man die Einstellungen, bis die Vorschau das gewünschte Aussehen hat. Schließlich werden die Einstellungen durch Klicken auf <guibutton
+>OK</guibutton
+> gespeichert und übernommen.</para>
+
+<para
+>Zwei weitere Optionen sind darüberhinaus zu beachten, nämlich <guilabel
+>Größe</guilabel
+> und <guilabel
+>Effekt festlegen</guilabel
+>. </para>
+
+<sect3 id="icons-use-size">
+<title
+>Symbolgröße</title>
+
+<para>
+<screenshot>
+<screeninfo
+>Einstellung der Symbolgröße</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="size.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Einstellung der Symbolgröße</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Sie können die Symbolgröße aus einer Liste auswählen. Die größeren Symbole eignen sich besonders für sehbehinderte Personen.</para>
+
+<para
+>Die im Listenfeld angebotenen Größen sind abhängig vom verwendeten Design. Das Design <quote
+>Wenige-Farben</quote
+> enthält Symbole in den Größen 16 und 32 Pixel für die Arbeitsfläche und 16, 22 und 32 Pixel für die Werkzeugleisten-Symbole. Das Design KDE-64000-Farben enthält die Symbolgrößen 16, 32 und 48 Pixel sowie von 64 bis 128 Pixel. Da diese Symbole sehr viel Speicherplatz benötigen würden, werden die Symbolgrößen 64 bis 128 Pixel automatisch erstellt. Daher kann deren Qualität etwas schlechter sein.</para>
+<!-- not in 4.5
+<para
+>If the icon sizes offered by your chosen icon theme are not enough
+for you, there is still the option <guilabel
+>Double-sized
+pixels</guilabel
+>. If this option is selected, all icons will have
+double sized pixels, &ie; a 2x2 block instead of normal pixels. While
+this makes it possible to achieve very large icon sizes, the quality is
+poor: icons will look <quote
+>blocky</quote
+>, an effect you may remember
+if you've grown up using a Sinclair ZX Spectrum or similar. If this is
+an option for you, using the large sizes offered by &kde;'s HiColor
+icon theme will always result in a much better quality than using the
+low color icon theme with double sized pixels.</para
+> 
+-->
+<!-- 
+<para
+>You can also choose to have smoothed icons, an effect similar to
+anti-aliasing of fonts.  Enable the checkbox <guilabel
+>Blend alpha
+channel</guilabel
+> to see this in action, but note that it will slow
+down graphics on a slower computer.</para>
+-->
+
+<para
+>Sie können auch bewegte Symbole verwenden. Vielen der Symbole sind Effekte für Bewegungen zugeordnet. Aktivieren Sie das Ankreuzfeld <guilabel
+>Symbol-Animationen</guilabel
+>, um diese Effekte einzuschalten. Beachten Sie aber, dass die Bewegungen langsam oder ruckelnd erscheinen können, wenn Ihre Grafikkarte alt ist oder Sie wenig Speicher haben.</para>
+
+</sect3>
+
+<sect3 id="icons-use-effects">
+<title
+>Effekt festlegen</title>
+<para>
+<screenshot>
+<screeninfo
+>Einstellung der Symboleffekte</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="effects.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Einstellung der Symboleffekte</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Schließlich kann man bestimmte <quote
+>Filter</quote
+> auf Symbole angewendet, die sich in einem der drei Zustände befinden:</para>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Voreinstellung</guilabel
+></term>
+<listitem
+><para
+>So erscheint ein Symbol normalerweise.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Aktiv</guilabel
+>:</term>
+<listitem
+><para
+>So erscheint das Symbol, sobald sich der Mauszeiger darüber befindet.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Deaktiviert</guilabel
+>:</term>
+<listitem
+><para
+>So erscheint das Symbol, wenn die zugehörige Aktion ausgeschaltet ist, &ie; ein Klicken auf das Symbol keine Auswirkungen hat.</para
+></listitem>
+</varlistentry>
+</variablelist>
+
+<para
+>Um einen Effekt für einen bestimmten Symbolzustand festzulegen, klickt man auf den zugehörigen Knopf <guibutton
+>Effekt festlegen</guibutton
+>. Beachten Sie, dass davon nur der unter <guilabel
+>Verwendung des Symbols</guilabel
+> ausgewählte Verwendungsbereich betroffen ist (siehe oben): stellt man einen Effekt für ein aktives Symbol ein, während als Verwendung <guilabel
+>Werkzeugleiste</guilabel
+> ausgewählt ist, werden aktive Symbole in anderen Bereichen davon <emphasis
+>nicht</emphasis
+> beeinflusst.</para>
+
+<para
+>Im Effektdialog befinden sich zwei Möglichkeiten. Man kann einerseits einen Effekt für ein Symbol festlegen und außerdem das Symbol <guilabel
+>Halbtransparent</guilabel
+> erscheinen lassen. Die zweite Option lässt den Hintergrund durch das Symbol <quote
+>durchscheinen</quote
+>. Einige der Effekte benötigen zusätzliche Parameter, die rechts im Dialog zu finden sind.</para>
+<!-- TODO: Figure out what 'amount' really means -->
+
+<para
+>Folgende Effekte können auf Symbole angewendet werden:</para>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Kein Effekt</guilabel
+>:</term>
+<listitem
+><para
+>Symbole werden ohne jeglichen Effekt gezeichnet.</para
+></listitem
+> 
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Nach Grau</guilabel
+>:</term>
+<listitem
+><para
+>Dieser Filter verändert die Symbolfarbe in Richtung Grau. Unter <guilabel
+>Effekt-Einstellungen</guilabel
+> kann man die Intensität dieses Filters mit dem Schieberegler einstellen. Anmerkung: Üblicherweise wird dieser Effekt nur für deaktivierte Symbole verwendet.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Einfärben</guilabel
+>:</term>
+<listitem
+><para
+>Durch diesen Filter werden Symbole in einer bestimmten Farbe eingefärbt. Zum Beispiel kann man aktive Symbole (also Symbole unter dem Mauszeiger) golden schimmern lassen. Unter <guilabel
+>Effekt-Einstellungen</guilabel
+> kann die Farbe und die Intensität der Färbung eingestellt werden.</para
+></listitem
+> 
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Gamma</guilabel
+>:</term>
+<listitem
+><para
+>Ein veränderter Gamma-Wert wird auf die Symbole angewendet. Wenn man weder Fotograph ist noch sonst etwas über Gamma weiß, kann man es sich in etwa wie einen Kontrastfilter vorstellen. Die Intensität wird unter <guilabel
+>Effekt-Einstellungen</guilabel
+> mit dem Schieberegler gesetzt. </para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Sättigung vermindern</guilabel
+>:</term>
+<listitem
+><para
+>Symbole werden mit weniger gesättigten Farben gezeichnet. Dieser Effekt ist mit der Einstellung <quote
+>Farbe</quote
+> an einem Fernseher vergleichbar. Die Intensität wird unter <guilabel
+>Effekt-Einstellungen</guilabel
+> mit dem Schieberegler gesetzt. </para
+></listitem
+> 
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Zu Monochrom:</guilabel
+></term>
+<listitem>
+<para
+>Symbole werden nur in den zwei ausgewählten Farben dargestellt.</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect3>
+
+</sect2>
+
+</sect1>
+
+</article>

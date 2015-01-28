@@ -1,0 +1,563 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+<!ENTITY % German "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Programmier-Werkzeug</title>
+
+<author
+><firstname
+>Ian</firstname
+> <othername
+>Reinhart</othername
+> <surname
+>Geiser</surname
+> <affiliation
+> <address
+> <email
+>geiseri@kde.org</email>
+</address>
+</affiliation>
+</author>
+
+<date
+>2006-06-01</date>
+<productname
+>K Desktop Environment</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle>
+<command
+>makekdewidgets</command>
+</refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+>makekdewidgets</refname>
+<refpurpose
+>Erstellt Hilfsprogramme (Module) für &Qt;-Bedienelemente (Widgets) aus einer Beschreibungsdatei im „ini“-Stil. </refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>makekdewidgets</command
+> <arg
+>&Qt;-Optionen</arg
+> <arg
+>&kde;-Optionen</arg
+> <arg choice="plain"
+><replaceable
+>Datei</replaceable
+></arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Beschreibung</title>
+<para
+><command
+>makekdewidgets</command
+> erstellt Hilfsprogramme (Module) für &Qt;-Bedienelemente (Widgets) aus einer Beschreibungsdatei im „ini“-Stil. </para>
+</refsect1>
+
+<refsect1>
+<title
+>Optionen</title>
+
+<para>
+<variablelist>
+<title
+><emphasis role="bold"
+>Argumente:</emphasis
+></title>
+<varlistentry>
+<term>
+<replaceable
+>Datei</replaceable>
+</term>
+<listitem>
+<para
+>Eingabedatei</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+<para>
+<variablelist>
+<title
+><emphasis role="bold"
+>Optionen</emphasis
+></title>
+<varlistentry>
+<term>
+<option
+>-o &lt;Datei&gt;</option>
+</term>
+<listitem>
+<para
+>Ausgabedatei</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+<option
+>-n &lt;Modulname&gt;</option>
+</term>
+<listitem>
+<para
+>Name der Modul-Klasse, die erstellt werden soll [WidgetsPlugin]</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+<option
+>-g &lt;Gruppe&gt;</option>
+</term>
+<listitem>
+<para
+>Standardname der Bedienelement-Gruppe (Widget Group) im Designer [Custom]</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+<option
+>-p &lt;pixmap dir&gt;</option>
+</term>
+<listitem>
+<para
+>Bettet Pixmasp aus einen Quellordner ein.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+<para>
+<variablelist>
+<title
+><emphasis role="bold"
+>Allgemeine Optionen:</emphasis
+></title>
+
+<varlistentry>
+<term>
+<option
+>--help</option>
+</term>
+<listitem>
+<para
+>Hilfe zu verfügbaren Optionen anzeigen.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--help-qt</option>
+</term>
+<listitem>
+<para
+>Spezielle Optionen für &Qt; anzeigen</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--help-kde</option>
+</term>
+<listitem>
+<para
+>Zeigt die &kde;-spezifischen Optionen</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--help-all</option>
+</term>
+<listitem>
+<para
+>Alle Optionen anzeigen</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--author</option>
+</term>
+<listitem>
+<para
+>Zeigt Informationen über den Autor.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>-v, --version</option>
+</term>
+<listitem>
+<para
+>Versionsinformation anzeigen</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--license</option>
+</term>
+<listitem>
+<para
+>Lizenz-Informationen anzeigen</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+<para>
+<variablelist>
+<title
+><emphasis role="bold"
+>&kde;-Optionen:</emphasis
+></title>
+
+<varlistentry>
+<term>
+<option
+>--caption &lt;Titel&gt;</option>
+</term>
+<listitem>
+<para
+>Verwendet „Titel“ als Name in der Titelleiste</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--icon &lt;Symbol&gt;</option>
+</term>
+<listitem>
+<para
+>„Symbol“ für die Anwendung benutzen</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--miniicon &lt;Symbol&gt;</option>
+</term>
+<listitem>
+<para
+>„Symbol“ für die Anwendung benutzen</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--config &lt;Dateiname&gt;</option>
+</term>
+<listitem>
+<para
+>Andere Einrichtungsdatei verwenden</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--dcopserver &lt;Server&gt;</option>
+</term>
+<listitem>
+<para
+>Verwendet den unter 'Server' angegebenen &DCOP;-Server.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--nocrashhandler</option>
+</term>
+<listitem>
+<para
+>Abschalten des Crash-Handlers, damit Fehlerprotokolle (core dumps) erstellt werden.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--waitforwm</option>
+</term>
+<listitem>
+<para
+>Wartet auf einen Fenstermanager, der WM_NET-kompatibel ist.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--style &lt;Stil&gt;</option>
+</term>
+<listitem>
+<para
+>Legt den Stil der Anwendung fest</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--geometry &lt;Geometrie&gt;</option>
+</term>
+<listitem>
+<para
+>Legt die Geometrie des Hauptelements im Client-Programm fest. Das Format für die Argumente finden Sie mit „man X“</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+<para>
+<variablelist>
+<title
+><emphasis role="bold"
+>&Qt;-Optionen:</emphasis
+></title>
+
+<varlistentry>
+<term>
+<option
+>--display &lt;Anzeigename&gt;</option>
+</term>
+<listitem>
+<para
+>Verwendet die X-Server-Anzeige 'Anzeigename'.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--session &lt; Sitzungs-ID&gt;</option>
+</term>
+<listitem>
+<para
+>Wiederherstellung der Anwendung für die angegebene 'Sitzungs-ID'.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--cmap</option>
+</term>
+<listitem>
+<para
+>Bewirkt, dass die Anwendung auf einem 8-Bit-Display eine eigene Farbtabelle anlegt. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--ncols &lt;Anzahl&gt;</option>
+</term>
+<listitem>
+<para
+>Beschränkt die Anzahl der Farben auf einem 8-Bit-Display, wenn die Anwendung die Farbspezifikation QApplication::ManyColor verwendet.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--nograb</option>
+</term>
+<listitem>
+<para
+>Bewirkt, dass &Qt; weder Maus noch Tastatur für sich allein beansprucht (grab). </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--sync</option>
+</term>
+<listitem>
+<para
+>Wechselt zum Debuggen in den Synchronmodus</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--fn, --font &lt;Schriftname&gt;</option>
+</term>
+<listitem>
+<para
+>Legt die Schriftart für die Anwendung fest.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--bg, --background &lt;Farbe&gt;</option>
+</term>
+<listitem>
+<para
+>Legt die Standardhintergrundfarbe und eine Farbpalette für die Anwendung fest (helle und dunkle Schattierungen werden berechnet).</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--fg, --foreground &lt;Farbe&gt;</option>
+</term>
+<listitem>
+<para
+>Legt die Standardvordergrundfarbe fest</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--btn, --button &lt;Farbe&gt;</option>
+</term>
+<listitem>
+<para
+>Legt die Standardfarbe für Knöpfe fest.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--name &lt;Name&gt;</option>
+</term>
+<listitem>
+<para
+>Legt den Namen der Anwendung fest</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--title &lt;Titel&gt;</option>
+</term>
+<listitem>
+<para
+>Legt den Titel der Anwendung fest (Fenstertitel)</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--visual TrueColor</option>
+</term>
+<listitem>
+<para
+>Erzwingt die Verwendung von Echtfarben auf einer 8-Bit-Anzeige</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--inputstyle &lt;Eingabestil&gt;</option>
+</term>
+<listitem>
+<para
+>Legt den Eingabestil von XIM (X Input Method) fest. Mögliche Werte sind onthespot, overthespot, offthespot und root.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--im &lt;XIM-Server&gt;</option>
+</term>
+<listitem>
+<para
+>Legt den XIM-Server fest</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--noxim</option>
+</term>
+<listitem>
+<para
+>XIM abschalten</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term>
+<option
+>--reverse</option>
+</term>
+<listitem>
+<para
+>Ordnet sämtliche Bedienelemente spiegelverkehrt an</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</refsect1>
+
+<refsect1>
+<title
+>Siehe auch</title>
+<variablelist>
+<varlistentry>
+<term>
+<option
+>http://developer.kde.org</option>
+</term>
+<listitem>
+<para
+>&kde;-Entwickler-Webseite</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Fehler</title>
+<para
+>Bitte verwenden Sie <ulink url="http://bugs.kde.org"
+>bugs.kde.org</ulink
+> für Fehlerberichte, schicken Sie keine E-Mails direkt an die Autoren.</para>
+</refsect1>
+
+</refentry>

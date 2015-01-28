@@ -1,0 +1,426 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+  <!ENTITY klinkstatus "<application
+>KLinkStatus</application
+>">
+  <!ENTITY kappname "&klinkstatus;"
+><!-- Do *not* replace kappname-->
+  <!ENTITY package "kdewebdev"
+><!-- kdebase, kdeadmin, etc -->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE"
+><!-- change language only here -->
+]>
+
+<book id="klinkstatus" lang="&language;">
+
+<bookinfo>
+<title
+>Das Handbuch zu &klinkstatus;</title>
+
+<authorgroup>
+<author
+><firstname
+>Paulo</firstname
+> <surname
+> Moura Guedes</surname
+> <affiliation
+> <address
+><email
+>moura&#64;kdewebdev&#46;org</email
+></address>
+</affiliation>
+</author>
+
+<othercredit role="translator"
+><firstname
+>Georg</firstname
+><surname
+>Schuster</surname
+><affiliation
+><address
+><email
+>gschuster@utanet.at</email
+></address
+></affiliation
+><contrib
+>Deutsche Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2004</year>
+
+<holder
+>Paulo Moura Guedes</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2011-08-22</date>
+<releaseinfo
+>0.7.0 (&kde; 4.7)</releaseinfo>
+
+<abstract>
+<para
+>&klinkstatus; ist ein Verknüpfungs-Prüfprogramm für &kde;. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>KLinkStatus</keyword>
+<keyword
+>Verknüpfungs-Prüfprogramm</keyword>
+<keyword
+>Überprüfung</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Einführung</title>
+
+<para
+>&klinkstatus; ist ein Verknüpfungs-Prüfprogramm für &kde;. Es ermöglicht die Suche interner und externer Verknüpfungen auf der gesamten Webseite oder einer einzelnen Seite und das Festlegen der Suchtiefe. Sie können auch lokale Dateien oder über ftp, fish &etc; prüfen, da &klinkstatus;  &kde;-Ein-Ausgabemodule unterstützt. Zur Beschleunigung können die Verknüpfung gleichzeitig geprüft werden.  </para>
+<para
+>Die Funktionen diese Programms können durch <ulink url="http://techbase.kde.org/Development/Tutorials/Kross/Introduction"
+>Kross-Skripte</ulink
+> erweitert werden. </para>
+</chapter>
+
+<chapter id="using-klinkstatus">
+<title
+>Arbeiten mit &klinkstatus;</title>
+
+<para
+>Um Verknüpfungen in einer Webseite oder lokalen Datei zu prüfen, geben Sie die Adresse in das Feld <guilabel
+>URL:</guilabel
+> ein und drücken die Taste &Enter;. Sie können auch das Ordnersymbol rechts neben dem Eingabefeld benutzen, um eine Adresse im Dateiauswahldialog zu suchen. </para>
+<screenshot>
+<screeninfo
+>Hier ist ein Bildschirmfoto von &klinkstatus;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="screenshot.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Bildschirmfoto</phrase>
+	  </textobject>
+	  <caption>
+	    <para
+>&klinkstatus; überprüft hier gerade die Verknüpfungen auf der KDevelop-Webseite. Kaputte und ungültige Verknüpfungen sind rot markiert. </para>
+	  </caption>
+	</mediaobject>
+</screenshot>
+<para
+>Ist der Zugang zu den zu untersuchenden Daten eingeschränkt, aktivieren Sie die Einstellung <guilabel
+>Anmeldung</guilabel
+>. Wenn Sie eine &URL; eingeben haben und die Taste &Enter; oder den Knopf <guibutton
+>Suche starten</guibutton
+> in der Werkzeugleiste drücken, wird der folgende Dialog zur Eingabe der Anmeldedaten angezeigt. </para>
+<screenshot>
+<screeninfo
+>Dialog „Eingabe der Anmeldung“</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="login-dialog.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Dialog „Eingabe der Anmeldung“</phrase>
+	  </textobject>
+	  <caption>
+	    <para
+>&klinkstatus; fragt die Daten für die Anmeldung ab. </para>
+	  </caption>
+	</mediaobject>
+</screenshot>
+<para
+>Geben Sie die Daten für die Anmeldung ein und drücken Sie <guibutton
+>OK</guibutton
+>. </para>
+<para
+>Um den Umfang der Prüfung von Verknüpfungen einzuschränken, können Sie <guilabel
+>Externe Verknüpfungen prüfen</guilabel
+> abschalten, wenn diese Funktion nicht benötigt wird, oder reguläre Ausdrücke in das Feld <guilabel
+>Reguläre Ausdrücke nicht prüfen</guilabel
+> eintragen. </para>
+<para
+>Die Ergebnisse der Suche können Sie filtern, indem Sie das Feld <guilabel
+>Suche</guilabel
+> verwenden oder im Auswahlfeld <guilabel
+>Status</guilabel
+> <guimenuitem
+>Alle Verknüpfungen</guimenuitem
+>, <guimenuitem
+>Gültige Verknüpfungen</guimenuitem
+>, <guimenuitem
+>Kaputte Verknüpfungen</guimenuitem
+>, <guimenuitem
+>Ungültige Verknüpfungen</guimenuitem
+>, oder <guimenuitem
+>Unbestimmte Verknüpfungen</guimenuitem
+> wählen. </para>
+<para
+>Im Kontextmenü jedes Eintrags in den Suchergebnissen können Sie einen Eintrag <guimenuitem
+>Erneut prüfen</guimenuitem
+>, im eingestellten Standardeditor <guisubmenu
+>Referrer bearbeiten</guisubmenu
+>, die <guimenuitem
+>URL öffnen</guimenuitem
+>, die <guimenuitem
+>Referrer-URL öffnen</guimenuitem
+>, die <guimenuitem
+>URL kopieren</guimenuitem
+>, die <guimenuitem
+>Referrer-URL kopieren</guimenuitem
+> oder den <guimenuitem
+>Zelleninhalt kopieren</guimenuitem
+>. </para>
+<para
+>Die Ergebnisse der Suche kann als &XML;-Sitemap mit <menuchoice
+><guimenu
+>Datei</guimenu
+><guimenuitem
+>Sitemap erstellen ...</guimenuitem
+></menuchoice
+> aus dem Menü oder im &HTML;-Format mit <menuchoice
+><guimenu
+>Datei</guimenu
+><guisubmenu
+>Als  HTML exportieren</guisubmenu
+></menuchoice
+> gespeichert werden. Dabei können Sie auswählen, ob <guimenuitem
+>Alle</guimenuitem
+> oder nur <guimenuitem
+>Kaputte</guimenuitem
+> Verknüpfungen exportiert werden sollen. Mit <guimenuitem
+>Neue Stilvorlagen herunterladen</guimenuitem
+> erhalten Sie neue Exportvorlagen aus dem Archiv „Neue Erweiterungen“. </para>
+<!--kde.org
+Support several protocols (allowing fast checking of local documents): http, ftp, ssh (fish or sftp) and file.
+Proxy support
+Allows authentication when checking restricted documents
+Limit the search depth
+Pause/Resume of checking session
+History of checked URLs
+Kross Scripting
+  -->
+</chapter>
+<!--
+  How does scheduling auto link check work?
+  starting klinkstatus via user crontab? apparently not!
+  via a kded service?
+  needs a running klinkstatus instance?
+  is this unfinished work?
+
+<chapter id="auto-check">
+<title
+>Automatic Site Checking</title>
+
+<para>
+  Using <menuchoice
+><guimenu
+>Tools</guimenu
+><guimenuitem
+>Schedule Link Checks...</guimenuitem
+></menuchoice>
+  opens the <guilabel
+>Configure Site Check Automation</guilabel
+> dialog.
+
+  Here you can add, remove and edit sessions.
+  Scheduling Weekly (how to set day?), Daily, Hourly
+
+</para>
+
+</chapter>
+-->
+
+<chapter id="config">
+  <title
+>Einrichtung von &klinkstatus;</title>
+  <para
+>Alle Einstellungen für &klinkstatus; können Sie im Einrichtungsdialog bearbeiten. Öffnen Sie diesen Dialog mit <menuchoice
+> <guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>&klinkstatus; einrichten ...</guimenuitem
+> </menuchoice
+> aus dem Menü.</para>
+    <screenshot>
+      <screeninfo
+>Einrichtungsdialog von &klinkstatus;</screeninfo>
+      <mediaobject>
+	<imageobject>
+	  <imagedata fileref="check-settings.png" format="PNG"/>
+	</imageobject>
+	<textobject>
+	  <phrase
+>Prüfen</phrase>
+	</textobject>
+      </mediaobject>
+    </screenshot>
+  <para
+>Auf der Seite <guilabel
+>Prüfen</guilabel
+> können die Standardparameter für die Überprüfung eingestellt werden. Die Seite enthält die drei Bereiche <guilabel
+>Netzwerk</guilabel
+>, <guilabel
+>Eingabe</guilabel
+> und <guilabel
+>Quanta</guilabel
+>, dazu noch das Ankreuzfeld <guilabel
+>Einstellungen beim Beenden merken</guilabel
+>. Mit dieser Einstellung werden die eingegebenen Parameter beim Beenden gespeichert und beim nächsten Start von &klinkstatus; wieder geladen. </para>
+  <para
+>Im Bereich <guilabel
+>Netzwerk</guilabel
+> kann die <guilabel
+>Anzahl gleichzeitiger Verbindungen</guilabel
+> und die <guilabel
+>Wartezeit in Sekunden</guilabel
+> eingegeben werden. </para>
+  <para
+>Als Standard ist die <guilabel
+>Anzahl der Einträge im URL-Verlauf</guilabel
+> auf 50 und die <guilabel
+>Tiefe</guilabel
+> der Suche auf <guilabel
+>unbegrenzt</guilabel
+> eingestellt. Der Wert der <guilabel
+>Tiefe</guilabel
+> der Suche kann im Hauptfenster von &klinkstatus; überschrieben werden, ebenso wie die nächsten beiden Einstellungen <guilabel
+>Übergeordnete Ordner prüfen</guilabel
+> und <guilabel
+>Externe Verknüpfungen prüfen</guilabel
+>. </para>
+  <para
+>Im Abschnitt <guilabel
+>Quanta</guilabel
+> steuern Sie die Einbindung von &klinkstatus; in &quantaplus;. Aktivieren Sie <guilabel
+>Vorschau-Präfix verwenden</guilabel
+>, wenn Sie den Vorschau-Präfix für Projekte in &quantaplus; in der zu überprüfenden &URL; benutzen möchten. </para>
+  <screenshot>
+    <screeninfo
+>Einrichtungsdialog von &klinkstatus;</screeninfo>
+    <mediaobject>
+      <imageobject>
+	<imagedata fileref="results-settings.png" format="PNG"/>
+      </imageobject>
+      <textobject>
+	<phrase
+>Ergebnisse</phrase>
+      </textobject>
+    </mediaobject>
+  </screenshot>
+  <para
+>Auf dieser Seite wird das Ansichtsformat der Liste mit den Prüfergebnissen eingestellt. Es stehen eine <guilabel
+>Baumansicht</guilabel
+> und die Ansicht <guilabel
+>Flach (schneller)</guilabel
+> zur Auswahl. Die letzte Einstellung ist vor allem bei leistungsschwachen Rechnern sinnvoll. Außerdem wird festgelegt, ob &klinkstatus; <guilabel
+>Der zuletzt geprüften Verknüpfung folgen</guilabel
+> soll. Wählen Sie eine <guilabel
+>Bevorzugte Stilvorlage</guilabel
+> für den Export von Prüfergebnissen. Weitere Vorlagen aus dem Archiv „Neue Erweiterungen“ erhalten Sie mit <menuchoice
+><guimenu
+>Datei</guimenu
+> <guisubmenu
+>Als HTML exportieren</guisubmenu
+> <guimenuitem
+>Neue Stilvorlagen herunterladen</guimenuitem
+></menuchoice
+> im Menü. </para>
+  <screenshot>
+    <screeninfo
+>Einrichtungsdialog von &klinkstatus;</screeninfo>
+    <mediaobject>
+      <imageobject>
+	<imagedata fileref="identification-settings.png" format="PNG"/>
+      </imageobject>
+      <textobject>
+	<phrase
+>Browserkennung</phrase>
+      </textobject>
+    </mediaobject>
+  </screenshot>
+  <para
+>Auf dieser Seite stellen Sie die <guilabel
+>Browserkennung</guilabel
+> ein, die &klinkstatus; an den Server übergibt, der die zu prüfenden Seiten gespeichert hat. <guilabel
+>Kennung senden</guilabel
+> kann auch abgeschaltet werden. Drücken Sie auf <guibutton
+>Standard</guibutton
+>, dann wird die Browserkennung von &konqueror; übernommen. Im Abschnitt <guilabel
+>Identität</guilabel
+> tragen Sie den Namen und die E-Mail-Adresse für die Anmeldung beim Server ein. </para>
+  <screenshot>
+    <screeninfo
+>Einrichtungsdialog von &klinkstatus;</screeninfo>
+    <mediaobject>
+      <imageobject>
+	<imagedata fileref="mail-transport-settings.png" format="PNG"/>
+      </imageobject>
+      <textobject>
+	<phrase
+>E-Mail-Transport</phrase>
+      </textobject>
+    </mediaobject>
+  </screenshot>
+  <para
+>Auf der Seite <guilabel
+>E-Mail-Transport</guilabel
+> geben Sie einen E-Mail-Zugang an, an den die Ergebnisse der von &klinkstatus; durchgeführten Prüfung geschickt werden. </para>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Danksagungen und Lizenz</title>
+
+<para
+>&klinkstatus; </para>
+<para
+>Copyright des Programms 2004 Paulo Moura Guedes <email
+>pmg&#64;netcabo&#46;pt</email
+> </para>
+<para
+>Copyright der Dokumentation 2004 Paulo Moura Guedes <email
+>pmg&#64;netcabo&#46;pt</email
+> </para>
+
+<para
+>Georg Schuster und Stephan Johach für die deutsche Übersetzung </para
+> 
+&underFDL; &underGPL; </chapter>
+
+<chapter id="installation">
+  
+<title
+>Kompilierung und Installation</title>
+&install.intro.documentation; &install.compile.documentation; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+-->
+

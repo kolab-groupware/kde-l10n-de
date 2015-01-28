@@ -1,0 +1,678 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<article id="language" lang="&language;">
+<articleinfo>
+<title
+>Land/Region &amp; Sprache</title>
+<authorgroup>
+<author
+>&Mike.McBride; &Mike.McBride.mail;</author>
+<author
+>&Krishna.Tateneni; &Krishna.Tateneni.mail;</author>
+<othercredit role="translator"
+><firstname
+>Matthias</firstname
+><surname
+>Kiefer</surname
+><contrib
+>Deutsche Übersetzung</contrib
+></othercredit
+> 
+ </authorgroup>
+
+	  <date
+>2013-12-05</date>
+	  <releaseinfo
+>4.12</releaseinfo>
+
+	  <keywordset>
+		<keyword
+>KDE</keyword>
+		<keyword
+>Systemeinstellungen</keyword>
+		<keyword
+>locale</keyword>
+		<keyword
+>country</keyword>
+		<keyword
+>language</keyword>
+	  </keywordset>
+</articleinfo>
+
+
+<sect1 id="locale">
+
+<title
+>Land/Region &amp; Sprache</title>
+
+<para
+>Dieses Modul der &kde;-&systemsettings; erlaubt es Ihnen, Einstellungen vorzunehmen, die auf Gegebenheiten der Region beruhen, in der Sie leben. Das Modul besteht aus sieben Karteikarten, die in den folgenden Kapiteln detailliert beschrieben werden. </para>
+
+<para
+>Normalerweise reicht es aus, wenn Sie das Land, in dem Sie leben, und die Sprache auswählen. Die anderen Einstellungen werden entsprechend gesetzt. </para>
+
+<para
+>Unter den Karteikarten dieses Moduls können Sie in einer Vorschau sehen, wie sich die von Ihnen gewählten Einstellungen auswirken werden. Abgesehen von positiven und negativen Zahlen können Sie sehen, wie positive und negative Geldbeträge, sowie ausführliche und kurze Datums- und Zeitangaben dargestellt werden. Änderungen an den Einstellungen können Sie in der Vorschau überprüfen, bevor Sie sie tatsächlich anwenden. </para>
+
+<para
+>Für jede Option auf den verschiedenen Karteikarten gibt es einen eigenen Knopf<inlinemediaobject
+> <imageobject
+><imagedata fileref="oxygen-22x22-document-revert.png" format="PNG"/> </imageobject
+></inlinemediaobject
+>zum Zurücksetzen der jeweiligen Einstellung auf den Standard des ausgewählten Landes. Die Knöpfe werden aktiviert, wenn die entsprechende Option vom Standard des ausgewählten Landes abweicht. Dann kann mit diesen Knöpfen die Standardeinstellung des ausgewählten Landes übernommen werden. </para>
+
+
+<sect2 id="locale-country">
+
+<title
+>Land</title>
+
+<para
+>Auf dieser Karteikarte können Sie das Land oder die Region auswählen, die verwendet werden soll. </para>
+
+<para
+>Das Auswahlfeld <guilabel
+>Land</guilabel
+> enthält eine Liste der verfügbaren Länder und zeigt das momentan ausgewählte Land an. Falls <quote
+>Systemeinstellung</quote
+> angezeigt wird, haben Sie kein Land eingestellt, weshalb das vom System eingestellte Land verwendet und angezeigt wird. Ändern Sie diese Einstellung, so werden automatisch die Einstellungen auf die Standardwerte für das ausgewählte Land gesetzt. Einstellungen, die Sie selbst geändert haben, werden nicht automatisch verändert. Sie können Einstellungen finden, die vom Standard des Landes abweichen, indem Sie die Knöpfe zum Zurücksetzen der Einstellungen überprüfen. Ist ein Knopf aktiviert, haben Sie die entsprechende Option abweichend vom Standard eingestellt und können sie per Knopfdruck auf den Standardwert zurücksetzen. </para>
+
+</sect2>
+
+
+<sect2 id="locale-languages">
+
+<title
+>Sprachen</title>
+
+<para
+>Auf dieser Karteikarte können Sie die Sprachen auswählen, die in der &kde;-Arbeitsumgebung sowie Anwendungen bevorzugt verwendet werden sollen. </para>
+
+<para
+>Die &kde;-Arbeitsumgebung und -Anwendungen werden in Amerikanischem Englisch entwickelt und von Freiwilligen in verschiedenste Sprachen übersetzt. Diese Übersetzungen müssen zuerst installiert werden, bevor Sie sie auswählen können. Die Liste der <guilabel
+>Verfügbaren Sprachen</guilabel
+> zeigt an, welche &kde;-Übersetzungen auf Ihrem System installiert und verfügbar sind. Falls die gewünschte Sprache nicht auf der Liste steht, müssen Sie sie installieren. Verwenden Sie dazu die auf Ihrem System übliche Methode. Sie können dazu auch den Knopf <guilabel
+>Weitere Sprachen installieren</guilabel
+> benutzen, sofern dieser auf Ihrem System aktiviert ist. </para>
+
+<para
+>Die Liste der <guilabel
+>Bevorzugten Sprachen</guilabel
+> zeigt die Sprachen an, die in der &kde;-Arbeitsumgebung sowie den Anwendungen verwendet werden. Die &kde;-Arbeitsumgebung sowie die Anwendungen sind nicht unbedingt vollständig in jede Sprache übersetzt. Sollte eine Übersetzung in Ihre Sprache fehlen, sucht &kde; anhand der Liste <guilabel
+>Bevorzugter Sprachen</guilabel
+> nach einer passenden Übersetzung. Falls für keine der dort aufgeführten Sprachen eine Übersetzung vorhanden ist, wird der ursprüngliche Text in amerikanischem Englisch verwendet. </para>
+
+<para
+>Sie können eine Sprache zu den <guilabel
+>Bevorzugten Sprachen</guilabel
+> hinzufügen, indem Sie sie in der Liste <guilabel
+>Verfügbarer Sprachen</guilabel
+> auswählen und den Pfeil zum Hinzufügen drücken. Zum Entfernen einer Sprache aus der Liste <guilabel
+>Bevorzugter Sprachen</guilabel
+> wählen Sie sie aus und klicken Sie auf den Pfeil zum Entfernen. Sie können die Reihenfolge der <guilabel
+>Bevorzugten Sprachen</guilabel
+> ändern, indem Sie eine Sprache in der Liste auswählen und die Pfeile nach oben bzw. nach unten anklicken. </para>
+
+<para
+>Nur Sprachen, die in der Liste <guilabel
+>Bevorzugte Sprachen</guilabel
+> oder <guilabel
+>Verfügbare Sprachen</guilabel
+> enthalten sind, können im Dialog <guilabel
+>Sprache der Anwendung umschalten</guilabel
+> des Menüs <guimenu
+>Hilfe</guimenu
+> als <guilabel
+>Hauptsprache</guilabel
+> oder als <guilabel
+>Ausweichsprache</guilabel
+> ausgewählt werden. </para>
+
+<note>
+<para
+>Die Einstellungen für Sprache und Land/Region sind unabhängig. Mit der Auswahl einer neuen Sprache werden die Einstellungen für Zahlenformate, Währung &etc; <emphasis
+>nicht</emphasis
+> automatisch an das Land oder die Region, in der die Sprache verwendet wird, angepasst. Es wird nur die Sprache geändert, die in Datumsanzeigen verwendet wird, wie z. B. Monatsnamen. </para>
+</note>
+
+</sect2>
+
+
+<sect2 id="locale-numbers">
+
+<title
+>Zahlen</title>
+
+<para
+>Auf dieser Karteikarte können Sie festlegen, wie Zahlen dargestellt werden. Die Standardeinstellungen werden automatisch abhängig vom ausgewählten Land festgelegt. </para>
+
+<para
+>Im ersten Auswahlfeld können Sie die <guilabel
+>Zifferngruppierung</guilabel
+> festlegen, die zur Darstellung von Zahlen verwendet wird.</para>
+
+<para
+>Im Textfeld <guilabel
+>Tausender-Unterteilung</guilabel
+> können Sie das Zeichen eingeben, das verwendet werden soll, um bei großen Zahlen mehrere Stellen zu gruppieren. Meist wird dazu ein <userinput
+>.</userinput
+> oder <userinput
+>,</userinput
+> verwendet. Sie sollten darauf achten, dass dieses Zeichen nicht dem <guilabel
+>Dezimalzeichen</guilabel
+> entspricht. Im Auswahlfeld finden Sie einige übliche Zeichen für diese Einstellung. </para>
+
+<para
+>Im Textfeld <guilabel
+>Dezimalzeichen</guilabel
+> können Sie das Zeichen festlegen, mit dem der Nachkomma-Teil einer Dezimalzahl von der Zahl getrennt wird. Meist werden hier <userinput
+>.</userinput
+> und <userinput
+>,</userinput
+> verwendet. Sie sollten sicherstellen, dass dieses Zeichen nicht der <guilabel
+>Tausender-Unterteilung</guilabel
+> entspricht. Im Auswahlfeld finden Sie einige übliche Zeichen für diese Einstellung. </para>
+
+<para
+>Im Drehfeld <guilabel
+>Dezimalstellen</guilabel
+> wird die Anzahl der Dezimalstellen festgelegt, &ie; wie viele Ziffern <emphasis
+>nach</emphasis
+> dem Dezimaltrennzeichen stehen. </para>
+
+<para
+>Im Textfeld <guilabel
+>Positives Vorzeichen</guilabel
+> können Sie das Zeichen festlegen, das zur Markierung von positiven Zahlen verwendet wird. Sie sollten sicherstellen, dass dieses Zeichen nicht dem <guilabel
+>Negativen Vorzeichen</guilabel
+> entspricht. Im Auswahlfeld finden Sie einige übliche Zeichen für diese Einstellung. Das hier festgelegte Zeichen kann entsprechend der Einstellung <guilabel
+>Positivformat</guilabel
+> auf der Karteikarte <guilabel
+>Währung</guilabel
+> auch für Geldbeträge verwendet werden. </para>
+
+<para
+>Im Textfeld <guilabel
+>Negatives Vorzeichen</guilabel
+> können Sie das Zeichen festlegen, das zur Markierung von negativen Zahlen verwendet wird. Sie sollten sicherstellen, dass dieses Zeichen nicht dem <guilabel
+>Positiven Vorzeichen</guilabel
+> entspricht. Im Auswahlfeld finden Sie einige übliche Zeichen für diese Einstellung. Das hier festgelegte Zeichen kann entsprechend der Einstellung <guilabel
+>Negativformat</guilabel
+> auf der Karteikarte <guilabel
+>Währung</guilabel
+> auch für Geldbeträge verwendet werden. </para>
+
+<para
+>Im Auswahlfeld <guilabel
+>Ziffernzeichen</guilabel
+> können für die Anzeige von Zahlen statt der üblichen arabischen Zeichen andere Ziffernzeichen eingestellt werden. Hier ausgewählte andere Ziffernzeichen als Arabisch werden dann für die Anzeige von Zahlen in zugehörigen Sprachen verwendet, während ansonsten Arabische Zahlen angezeigt werden. Beispielsweise werden Arabisch-Indische Zeichen in Programmen verwendet, die in arabischen Sprachen ausgeführt werden, jedoch nicht im Englischen. </para>
+
+<para
+>Beachten Sie, dass die Ziffergruppierung, das Dezimalzeichen, das Zeichen für die Gruppierung von Tausendern, die Anzahl der Dezimalstellen, das Positiv- bzw. Negativformat sowie die Ziffernzeichen für Währungsangaben separat auf der Karteikarte <guilabel
+>Währung</guilabel
+> eingestellt werden. </para>
+
+</sect2>
+
+
+<sect2 id="locale-money">
+
+<title
+>Währung</title>
+
+<para
+>Auf dieser Karteikarte können Sie festlegen, wie Zahlen dargestellt werden. Die Standardeinstellungen werden automatisch abhängig vom ausgewählten Land festgelegt. </para>
+
+<para
+>Im Auswahlfeld <guilabel
+>Währung</guilabel
+> können Sie die Währung festlegen, die zur Anzeige von Geldbeträgen verwendet wird. Standardmäßig wird die im ausgewählten Land übliche Währung verwendet. Sie können eine andere Währung aus dem Auswahlfeld auswählen, das die Namen aller verfügbaren Währungen und Ihre Abkürzungen nach dem Standard ISO 4217 anzeigt. Die Währungen, die im ausgewählten Land verwendet werden, sind in der Liste oben aufgeführt, gefolgt von den übrigen Währungen. Wenn Sie die Währung ändern, wird automatisch das <guilabel
+>Währungssymbol</guilabel
+> angepasst. Andere Formatierungseinstellungen werden nicht geändert. </para>
+
+<para
+>Im Auswahlfeld <guilabel
+>Währungssymbol</guilabel
+> können Sie das Währungssymbol festlegen, das zur Anzeige von Geldbeträgen verwendet wird. Standardmäßig wird das für die im Auswahlfeld <guilabel
+>Währung</guilabel
+> festgelegte Währung übliche Symbol verwendet. Sie können nur Währungssymbole auswählen, die für die ausgewählte Währung gültig sind, um Widersprüche, wie z. B. die Auswahl von US-Dollar und dem Symbol für Britische Pfund (£), zu verhindern. Diese Einstellung wird automatisch angepasst, wenn Sie eine andere <guilabel
+>Währung</guilabel
+> auswählen. </para>
+
+<para
+>Im nächsten Auswahlfeld können Sie die <guilabel
+>Zifferngruppierung</guilabel
+> festlegen, die zur Darstellung von Geldbeträgen verwendet wird.</para>
+
+<para
+>Im Textfeld <guilabel
+>Tausender-Unterteilung</guilabel
+> können Sie das Zeichen festlegen, das zur Gruppierung von Ziffern in Währungsangaben verwendet wird, üblicherweise <userinput
+>.</userinput
+> oder <userinput
+>,</userinput
+>. Sie sollten sicherstellen, dass dieses Zeichen nicht dem <guilabel
+>Dezimalzeichen</guilabel
+> entspricht. Im Auswahlfeld finden Sie einige übliche Zeichen für diese Einstellung. </para>
+
+<para
+>Im Textfeld <guilabel
+>Dezimalzeichen</guilabel
+> können Sie das Zeichen festlegen, mit dem der Nachkomma-Teil von Währungsangaben von der Zahl getrennt wird. Meist werden hier <userinput
+>.</userinput
+> und <userinput
+>,</userinput
+> verwendet. Sie sollten sicherstellen, dass dieses Zeichen nicht der <guilabel
+>Tausender-Unterteilung</guilabel
+> entspricht. Im Auswahlfeld finden Sie einige übliche Zeichen für diese Einstellung. </para>
+
+<para
+>Im Drehfeld <guilabel
+>Dezimalstellen</guilabel
+> wird die Anzahl der Dezimalstellen für Währungsangaben festgelegt, &ie; wie viele Ziffern <emphasis
+>nach</emphasis
+> dem Dezimaltrennzeichen stehen. </para>
+
+<para
+>Im Auswahlfeld <guilabel
+>Positivformat</guilabel
+> können Sie festlegen, wie positive Geldbeträge angezeigt werden. Im Auswahlfeld finden Sie eine Liste mit vier Beispielformaten, die die Positionen des <guilabel
+>Währungssymbols</guilabel
+> und des <guilabel
+>Positiven Vorzeichens</guilabel
+> angeben. Positive Geldbeträge können auch eingeklammert werden, anstatt das <guilabel
+>Positive Vorzeichen</guilabel
+> anzuzeigen. </para>
+
+<para
+>Im Auswahlfeld <guilabel
+>Negativformat</guilabel
+> können Sie festlegen, wie negative Geldbeträge angezeigt werden. Im Auswahlfeld finden Sie eine Liste mit zehn Beispielformaten, die die Positionen des <guilabel
+>Währungssymbols</guilabel
+> und des <guilabel
+>Negativen Vorzeichens</guilabel
+> angeben. Negative Geldbeträge können auch eingeklammert werden, anstatt das <guilabel
+>Negative Vorzeichen</guilabel
+> anzuzeigen. </para>
+
+<para
+>Im Auswahlfeld <guilabel
+>Ziffernzeichen</guilabel
+> können für die Anzeige von Währungsangaben statt der üblichen arabischen Zeichen andere Ziffernzeichen eingestellt werden. Hier ausgewählte andere Ziffernzeichen als Arabisch werden nur für die Anzeige von Zahlen in zugehörigen Sprachen verwendet, ansonsten werden die üblichen arabischen Ziffernzeichen benutzt. Beispielsweise werden Arabisch-Indische Zeichen angezeigt, wenn Programme in Arabisch ausgeführt werden, jedoch nicht im Englischen. </para>
+
+<para
+>Beachten Sie, dass die Ziffergruppierung, das Dezimalzeichen, das Zeichen für die Gruppierung von Tausendern, die Anzahl der Dezimalstellen, das positive bzw. negative Vorzeichen sowie die Ziffernzeichen für Zahlen separat auf der Karteikarte <guilabel
+>Zahlen</guilabel
+> eingestellt werden. </para>
+
+</sect2>
+
+
+<sect2 id="locale-calendar">
+
+<title
+>Kalendersystem</title>
+
+<para
+>Auf dieser Karteikarte können Sie festlegen wie Kalenderinformationen dargestellt werden. Die Standardeinstellungen werden automatisch abhängig vom ausgewählten Land festgelegt. </para>
+
+<para
+>Im Auswahlfeld <guilabel
+>Kalendersystem</guilabel
+> können Sie das Kalendersystem festlegen, das bei der Anzeige oder Eingabe von Daten verwendet wird. Standardmäßig wird das in Ihrem ausgewählten Land übliche Kalendersystem, meist der Gregorianische Kalender, verwendet. Das Ändern des Kalendersystems ändert auch die Bezeichnungen der Wochentage, aktiviert bzw. deaktiviert das Ankreuzfeld <guilabel
+>Allgemeine Zeitrechnung verwenden</guilabel
+> und evtl. die Einstellung <guilabel
+>Bereich für das Jahr in Kurzform</guilabel
+>. </para>
+
+<para
+>Beachten Sie, dass der verwendete Gregorianische Kalender eine Mischung aus dem Julianischen Kalender bis Donnerstag, den 4. Oktober 1582 und dem Gregorianischen Kalender ab Freitag, dem 15. Oktober 1582 ist, weshalb zehn Tage <quote
+>fehlen</quote
+>. Es ist uns bekannt, dass dieses System nicht für alle Länder korrekt ist, die Qt-Entwickler haben sich jedoch für diese Implementierung des Gregorianischen Kalenders entschieden und wir möchten die Konsistenz damit beibehalten. </para>
+
+<para
+>Falls Sie das Gregorianische Kalendersystem ausgewählt haben, ist das Ankreuzfeld <guilabel
+>Allgemeine Zeitrechnung verwenden</guilabel
+> aktiviert. Sie können damit festlegen, ob die Allgemeine Zeitrechnung (CE/BCE) anstelle der Christlichen Zeitrechnung (AD/BC) zur Anzeige und Eingabe von Daten verwendet werden soll. Weitere Informationen dazu finden Sie im Unterfenster <guilabel
+>Datum &amp; Zeit</guilabel
+>. </para>
+
+<para
+>Die Option <guilabel
+>Bereich für das Jahr in Kurzform</guilabel
+> wird nur verwendet, wenn Sie auf der Karteikarte <guilabel
+>Datum &amp; Zeit</guilabel
+> im <guilabel
+>Langformat für Datum</guilabel
+> oder <guilabel
+>Kurzformat für Datum</guilabel
+> ein kurzes Format mit zwei Ziffern (JJ) für Jahreszahlen angegeben haben. Bei der Eingabe von Jahreszahlen mit zwei Ziffern (z. B. 10) muss die Anwendung wissen, in welchem Jahrhundert das eingegebene Jahr liegt. Mit der Einstellung des <guilabel
+>Bereiches für das Jahr in Kurzform</guilabel
+> legen Sie fest, wie Jahreszahlen im Kurzformat von Anwendungen interpretiert werden, &eg; ob 50 als 1950 oder als 2050 verarbeitet wird. Dieser Bereich kann für jedes Kalendersystem separat eingestellt werden, da die verschiedenen Kalender mit unterschiedlichen Jahren beginnen. Beispielsweise ist der Hebräische Kalender inzwischen im 58. Jahrhundert (Das Gregorianische Jahr 2010 ist im Hebräischen Kalender ungefähr das Jahr 5771), ein Bereich von 5750 bis 5850 ist für diesen also sinnvoll. </para>
+
+<para
+>Die Einstellung <guilabel
+>System zur Wochen-Nummerierung</guilabel
+> bestimmt, wie die Wochennummern berechnet werden. Es gibt vier Möglichkeiten:</para>
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>ISO-Woche</guilabel
+></term>
+<listitem
+><para
+>ISO-Standard-Wochennummern verwenden. Montag ist immer der erste Tag der ISO-Woche. Dies ist das am häufigsten verwendete System. </para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Erste ganze Woche</guilabel
+></term>
+<listitem
+><para
+>Die erste Woche des Jahres beginnt am ersten auftretenden <emphasis
+>ersten Tag der Woche</emphasis
+>, und dauert sieben Tage. Alle Tage vor der ersten Woche werden der letzten Woche des vorherigen Jahres zugeordnet. Dieses System wird hauptsächlich in den USA verwendet. </para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Erste Teilwoche</guilabel
+></term>
+<listitem
+><para
+>Die erste Woche beginnt am ersten Tag des Jahres. Die zweite Woche des Jahres beginnt am ersten auftretenden <emphasis
+>ersten Tag der Woche</emphasis
+>, und dauert sieben Tage. Die erste Woche kann weniger als sieben Tage enthalten. </para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Einfache Woche</guilabel
+></term>
+<listitem
+><para
+>Die erste Woche beginnt am ersten Tag des Jahres und dauert sieben Tage, wobei jede neue Woche am gleichen Wochentag beginnt, wie der Jahresbeginn.</para
+></listitem>
+</varlistentry>
+</variablelist>
+
+<para
+>Im Auswahlfeld <guilabel
+>Erster Tag der Woche</guilabel
+> können Sie festlegen, welcher Wochentag als erster Tag einer Woche angesehen wird. Dieser Tag wird bei der Anzeige von Kalendern zur Bestimmung des Wochenendes verwendet. </para>
+
+<para
+>Im Auswahlfeld <guilabel
+>Erster Arbeitstag der Woche</guilabel
+> können Sie festlegen, welcher Wochentag als erster Arbeitstag einer Woche angesehen wird. Dieser Tag wird bei der Anzeige von Kalendern zur Bestimmung des Wochenendes verwendet. </para>
+
+<para
+>Im Auswahlfeld <guilabel
+>Letzter Arbeitstag der Woche</guilabel
+> können Sie festlegen, welcher Wochentag als letzter Arbeitstag einer Woche angesehen wird. Dieser Tag wird bei der Anzeige von Kalendern zur Bestimmung des Wochenendes verwendet. </para>
+
+<para
+>Im Auswahlfeld <guilabel
+>Religiöser Feiertag in der Woche</guilabel
+> können Sie festlegen, welcher Wochentag als religiöser Feiertag angesehen wird. Dieser Tag wird in Kalendern oft <quote
+>farbig hervorgehoben</quote
+>. Falls Sie keinen bestimmten Wochentag als religiösen Feiertag haben, wählen Sie die Einstellung <parameter
+>Keiner/Kein bestimmter</parameter
+>. </para>
+
+</sect2>
+
+
+<sect2 id="locale-datetime">
+
+<title
+>Datum &amp; Zeit</title>
+
+<para
+>Auf dieser Karteikarte können Sie festlegen wie Datums- und Zeitangaben eingegeben und dargestellt werden. Die Standardeinstellungen werden automatisch abhängig vom ausgewählten Land festgelegt. </para>
+
+<para
+>Im Textfeld <guilabel
+>Zeitformat</guilabel
+> können Sie das Format festlegen, in dem lange Zeitangaben angezeigt und eingegeben werden. Das Format besteht aus Platzhaltern für verschiedene Zeitkomponenten und normalem Text zu deren Trennung. Unten sind die verfügbaren Platzhalter aufgelistet. Sie können zwar beliebige Kombinationen der Platzhalter eingeben, sollten jedoch zumindest Platzhalter für Stunde und Minute verwenden, um Mehrdeutigkeiten zu verhindern. Im Auswahlfeld finden Sie eine Liste mit üblichen Zeitformaten in der ausgewählten Sprache. </para>
+
+<itemizedlist>
+<listitem
+><para
+><parameter
+>SS</parameter
+> - Die Stunde als Zahlenwert im 24-Stunden-Format (00-23), wobei immer zwei Ziffern benutzt werden. </para
+></listitem>
+<listitem
+><para
+><parameter
+>sS</parameter
+> - Die Stunde als Zahlenwert im 24-Stunden-Format (0-23). </para
+></listitem>
+<listitem
+><para
+><parameter
+>PS</parameter
+> - Die Stunde als Zahlenwert im 12-Stunden-Format (01-12), wobei immer zwei Ziffern benutzt werden. </para
+></listitem>
+<listitem
+><para
+><parameter
+>pS</parameter
+> - Die Stunde als Zahlenwert im 12-Stunden-Format (1-12). </para
+></listitem>
+<listitem
+><para
+><parameter
+>MM</parameter
+> - Die Minuten mit zwei Ziffern (00-59). </para
+></listitem>
+<listitem
+><para
+><parameter
+>SEKSEK</parameter
+> - Die Sekunden mit zwei Ziffern (00-59). </para
+></listitem>
+<listitem
+><para
+><parameter
+>AMPM</parameter
+> - Entweder „AM“ oder „PM“, abhängig von der gegebenen Zeit. Mittag wird als „PM“, Mitternacht als „AM“ behandelt. Sie sollten diesen Parameter immer angeben, wenn Sie Parameter im 12-Stunden-Format verwenden, nämlich <parameter
+>PS</parameter
+> oder <parameter
+>pS</parameter
+>. Dadurch werden Zweideutigkeiten bei Zeitangaben vermieden. </para
+></listitem>
+</itemizedlist>
+
+<para
+>Im Textfeld <guilabel
+>AM-Zeichen</guilabel
+> können Sie das Zeichen festlegen, das verwendet wird, um Zeitangaben im 12-Stunden-Format als „vormittags“ zu kennzeichnen. Im Auswahlfeld finden Sie eine Liste von Zeichen, die in der ausgewählten Sprache dafür üblich sind. </para>
+
+<para
+>Im Textfeld <guilabel
+>PM-Zeichen</guilabel
+> können Sie das Zeichen festlegen, das verwendet wird, um Zeitangaben im 12-Stunden-Format als „nachmittags“ zu kennzeichnen. Im Auswahlfeld finden Sie eine Liste von Zeichen, die in der ausgewählten Sprache dafür üblich sind. </para>
+
+<para
+>Im Textfeld <guilabel
+>Langformat für Datum</guilabel
+> können Sie das Format festlegen, in dem lange Datumsangaben angezeigt und eingegeben werden. Das Format besteht aus Platzhaltern für verschiedene Datumskomponenten und normalem Text zu deren Trennung. Unten sind die verfügbaren Platzhalter aufgelistet. Sie können zwar beliebige Kombinationen der Platzhalter eingeben, sollten jedoch sicherstellen, dass jeder Tag in einem Jahr eindeutig identifizierbar ist. Beispielsweise sollten Sie Platzhalter für Monat und Tag verwenden, um Mehrdeutigkeiten zu verhindern. Falls Sie keinen Platzhalter für das Jahr eingeben, wird bei der Eingabe von Daten das aktuelle Jahr angenommen. Im Auswahlfeld finden Sie eine Liste mit üblichen Datumsformaten in der ausgewählten Sprache. </para>
+
+<itemizedlist>
+<listitem
+><para
+><parameter
+>JJJJ</parameter
+> - Die Jahreszahl inklusive Jahrhundert (0000-9999). </para
+></listitem>
+<listitem
+><para
+><parameter
+>JJ</parameter
+> - Die Jahreszahl ohne Jahrhundert (00-99). </para
+></listitem>
+<listitem
+><para
+><parameter
+>MM</parameter
+> - Der Monat als zweistelliger Zahlenwert(01-12). </para
+></listitem>
+<listitem
+><para
+><parameter
+>mM</parameter
+> - Der Monat als Zahlenwert(1-12). </para
+></listitem>
+<listitem
+><para
+><parameter
+>MONAT</parameter
+> - Der vollständige Name des Monats. </para
+></listitem>
+<listitem
+><para
+><parameter
+>KURZMONAT</parameter
+> - Der abgekürzte Name des Monats (erste drei Zeichen). </para
+></listitem>
+<listitem
+><para
+><parameter
+>TT</parameter
+> - Der Tag als zweistelliger Zahlenwert (01-31). </para
+></listitem>
+<listitem
+><para
+><parameter
+>tT</parameter
+> - Der Tag als ein- oder zweistelliger Zahlenwert (1-31). </para
+></listitem>
+<listitem
+><para
+><parameter
+>WOCHENTAG</parameter
+> - Der vollständige Name des Wochentags. </para
+></listitem>
+<listitem
+><para
+><parameter
+>WOCHENTAGKURZ</parameter
+> - Der abgekürzte Name des Wochentags (erste drei Zeichen). </para
+></listitem>
+<listitem
+><para
+><parameter
+>ÄRAJAHR</parameter
+> - Das Jahr der Ära (&eg; 2000 AD). </para
+></listitem>
+<listitem
+><para
+><parameter
+>ÄRAKURZ</parameter
+> - Der abgekürzte Name der Ära (&eg; AD). </para
+></listitem>
+<listitem
+><para
+><parameter
+>JAHRINÄRA</parameter
+> - Das Jahr der Ära als Zahl (&eg; 2000). </para
+></listitem>
+<listitem
+><para
+><parameter
+>TAGDESJAHRES</parameter
+> - Der Tag des Jahres als Zahl. </para
+></listitem>
+<listitem
+><para
+><parameter
+>ISOWOCHE</parameter
+> - Die ISO-Woche als Zahl. </para
+></listitem>
+<listitem
+><para
+><parameter
+>TAGDERISOWOCHE</parameter
+> - Der Tag der ISO-Woche als Zahl. </para
+></listitem>
+</itemizedlist>
+
+<para
+>Im Textfeld <guilabel
+>Kurzformat für Datum</guilabel
+> können Sie das Format für kurze Datumsangaben festlegen. Mehr Informationen über die verfügbaren Parameter finden Sie im Abschnitt <guilabel
+>Langformat für Datum</guilabel
+>. Im Auswahlfeld finden Sie eine Liste von in der ausgewählten Sprache üblichen Datumsformaten. </para>
+
+<para
+>Im Auswahlfeld <guilabel
+>Ziffernzeichen</guilabel
+> können für die Anzeige von Datums- und Zeitangaben statt der üblichen arabischen Zeichen andere Ziffernzeichen eingestellt werden. Hier ausgewählte andere Ziffernzeichen als Arabisch werden dann für die Anzeige von Zahlen in zugehörigen Sprachen verwendet, zum Beispiel Arabisch-Indische Zeichen in Programmen, die in arabischen Sprachen ausgeführt werden, aber nicht im Englischen. Ansonsten werden die üblichen arabischen Ziffernzeichen benutzt. </para>
+
+</sect2>
+
+
+<sect2 id="locale-other">
+
+<title
+>Sonstige</title>
+
+<para
+>Auf dieser Karteikarte können Sie festlegen, wie sonstige Maße dargestellt werden. Die Standardeinstellungen werden automatisch abhängig vom ausgewählten Land festgelegt. </para>
+
+<para
+>Im Auswahlfeld <guilabel
+>Seitengröße</guilabel
+> können Sie die Seitengröße festlegen, die als Standard für neue Dokumente, &eg; in KWord, verwendet wird. Beachten Sie, dass dies nicht die standardmäßig ausgewählte Papiergröße im Druck-Dialog ändert. Verwenden Sie dazu das Drucker-Modul der &kde;-&systemsettings;. </para>
+
+<para
+>Im Auswahlfeld <guilabel
+>Maßsystem</guilabel
+> können Sie das zu verwendende Maßsystem, entweder Metrisch oder Imperial, festlegen. </para>
+
+<para
+>Im Auswahlfeld <guilabel
+>Einheiten für Byte-Werte</guilabel
+> können Sie festlegen, wie Größen in Bytes behandelt werden. Traditionell bedeutet <quote
+>Kilobyte</quote
+> 1024 Bytes statt der metrischen Einheit von 1000. Um Missverständnissen vorzubeugen können Sie hier die gewünschten Einheiten auswählen. Unten sind die verfügbaren Systeme aufgeführt. </para>
+
+<itemizedlist>
+<listitem
+><para
+>Die <parameter
+>IEC-Einheiten</parameter
+> verwenden Vielfache von 1024. </para
+></listitem>
+<listitem
+><para
+>Die <parameter
+>Metrischen Einheiten</parameter
+> verwenden Vielfache von 1000. </para
+></listitem>
+<listitem
+><para
+>Die <parameter
+>JEDEC-Einheiten</parameter
+> verwenden die traditionellen Einheiten, wie in &kde; 3.5 und einigen anderen Betriebssystemen. </para
+></listitem>
+</itemizedlist>
+
+</sect2>
+
+</sect1>
+
+</article>

@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+<!ENTITY kmymoney "<application
+>KMyMoney</application
+>">
+<!ENTITY kappname "&kmymoney;">
+<!ENTITY % German "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+
+<author
+><firstname
+>Michael</firstname
+><othername
+>T.</othername
+><surname
+>Edwardes</surname
+> <contrib
+>Ursprüngliche Idee, viel ursprünglicher Quellcode, Projektverwalter</contrib
+><email
+>mte@users.sourceforge.net</email
+> </author>
+
+<author
+><firstname
+>Thomas</firstname
+><surname
+>Baumgart</surname
+> <contrib
+>Release-Manager und aktueller Betreuer. Kernmodul. Projektverwalter</contrib
+><email
+>ipwizard@users.sourceforge.net</email
+> </author>
+
+<author
+><firstname
+>Tony</firstname
+><surname
+>Bloomfield</surname
+><contrib
+>GnuCash-Import. Datenbank-Unterstützung</contrib
+><email
+>tonybloom@users.sourceforge.net</email
+> </author>
+
+<author
+><firstname
+>Robert</firstname
+><surname
+>Wadley</surname
+> <contrib
+>Künstler. Symbole, Startbildschirm, Bildschirmfotos</contrib
+><email
+>robntina@users.sourceforge.net</email
+> </author>
+
+<author
+><firstname
+>Alvaro</firstname
+><surname
+>Soliverez</surname
+><contrib
+>Vorhersagen und Berichte</contrib
+><email
+>asoliverez@users.sourceforge.net</email
+> </author>
+
+<author
+><firstname
+>Fernando</firstname
+><surname
+>Vilas</surname
+> <contrib
+>Datenbankunterstützung</contrib
+><email
+>fvilas@users.sourceforge.net</email
+> </author>
+
+<author
+><firstname
+>Cristian</firstname
+><surname
+>Oneț</surname
+> <contrib
+>Fehlerberichtigungen und Module</contrib
+><email
+>onet.cristian@gmail.com</email
+> </author>
+
+<author
+><firstname
+>Jack</firstname
+><othername
+>H.</othername
+><surname
+>Ostroff</surname
+> <contrib
+>Dokumentation</contrib
+><email
+>ostroffjh@users.sourceforge.net</email
+> </author>
+
+<author
+><firstname
+>Felix</firstname
+><surname
+>Rodriguez</surname
+> <contrib
+>Projektverwalter, Mitarbeit bei den ersten Versionen</contrib
+><email
+>frodriguez@users.sourceforge.net</email
+> </author>
+
+<author
+><firstname
+>Kevin</firstname
+><surname
+>Tambascio</surname
+> <contrib
+>Ursprüngliche Unterstützung für Investitionen</contrib
+> <email
+>ktambascio@users.sourceforge.net</email
+> </author>
+
+<!-- This person was previously listed as an author here, but is not currently
+     included in credits.docbook.  He should either be dropped from here or
+     included there.
+
+    <author
+><firstname
+>Arni</firstname
+><surname
+>Ingimundarson</surname>
+    <contrib
+>Developer, previous versions.</contrib>
+    <email
+>arniing@users.sourceforge.net</email
+></author>
+
+    These persons were not previously listed as authors here, but are included
+    in credits.docbook.  They should either be dropped from there or included
+    here.
+
+    <author
+><firstname
+>Ace</firstname
+><surname
+>Jones</surname>
+    <contrib
+>Reports.  OFX Import.  Online Quotes.  Documentatation.  Previous versions.</contrib>
+    <email
+>acejones@users.sourceforge.net</email
+></author>
+
+    <author
+><firstname
+>John</firstname
+><surname
+>C</surname>
+    <contrib
+>Developer, previous versions.</contrib>
+    <email
+>tacoturtle@users.sourceforge.net</email
+></author>
+
+    There are eight additional people in credits.docbook for "Special Thanks."
+    Should any of them be included here?  -->
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kmymoney</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+<refmiscinfo class="source"
+>&kmymoney;</refmiscinfo>
+<refmiscinfo class="manual"
+>Ausführbare Programme</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>kmymoney</command
+></refname>
+<refpurpose
+>Der persönliche Finanzmanager für &kde;</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kmymoney</command
+> <group
+><option
+>Allgemeine Optionen</option
+></group
+> <group
+><option
+>Qt-Optionen</option
+></group
+> <group
+><option
+>KDE-Optionen</option
+></group
+> <group
+><option
+>Optionen</option
+></group
+> <group
+><option
+>Datei</option
+></group
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Beschreibung</title>
+
+<para
+>&kmymoney; ist die persönliche Finanzverwaltung für KDE. Das Programm bietet alle nötigen Funktionen, um Ihre Scheckhefte abzugleichen, Ihre persönlichen Kredite und Ihre Ein und Ausgaben zu verwalten. Dazu stellt das Programm eine grafische Oberfläche im Stil eines Scheckhefts zu Verfügung.</para>
+
+</refsect1>
+
+<refsect1>
+<title
+>Optionen</title>
+
+<variablelist>
+
+<varlistentry>
+<term
+><replaceable
+>Datei</replaceable
+></term>
+<listitem>
+<para
+>Zu öffnende Datei </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>-n</option
+></term>
+<listitem>
+<para
+>Startet das Programm ohne eine Datei zu öffnen. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--timers</option
+></term>
+<listitem>
+<para
+>Performance-Timer erlauben </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--nocatch</option
+></term>
+<listitem>
+<para
+>Unbehandelte Ausnahmen nicht global abfangen </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--trace</option
+></term>
+<listitem>
+<para
+>Programm-Ablaufverfolgung einschalten. Diese Option ist nur verfügbar, wenn &kmymoney; im Debug-Modus kompiliert wurde. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--dump-actions</option
+></term>
+<listitem>
+<para
+>Die Namen aller definierten KAction-Objekte auf der Standardausgabe (stdout) ausgeben und beenden. Diese Option ist nur verfügbar, wenn &kmymoney; im Debug-Modus kompiliert wurde. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--help</option
+></term>
+<listitem>
+<para
+>Hilfe zu verfügbaren Optionen anzeigen </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--help-qt</option
+></term>
+<listitem>
+<para
+>Spezielle Optionen für Qt anzeigen </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--help-kde</option
+></term>
+<listitem>
+<para
+>Spezielle Optionen für KDE anzeigen </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--help-all</option
+></term>
+<listitem>
+<para
+>Alle Optionen anzeigen </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--author</option
+></term>
+<listitem>
+<para
+>Autoren-Information anzeigen </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>-v, --version</option
+></term>
+<listitem>
+<para
+>Versionsinformation anzeigen </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><option
+>--license</option
+></term>
+<listitem>
+<para
+>Lizenz-Informationen anzeigen </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>Umgebungsvariablen</title>
+<variablelist>
+
+<varlistentry>
+<term
+>$<envar
+>KDE_LANG</envar
+></term>
+<listitem>
+<para
+>Die zu verwendenden Spracheinstellungen. Damit ist es möglich, für das Programm eine andere Spracheinstellung als in Ihrer normalen Arbeitsumgebung zu benutzen. Damit diese Einstellung korrekt funktioniert, muss das zugehörige Sprachpaket installiert sein. Als Standard wird amerikanisches Englisch (en_US) benutzt, falls es keine Spracheinstellung gibt. Für die Auswahl der Sprache werden folgende Ressourcen in dieser Reihenfolge abgesucht: <envar
+>KDE_LANG</envar
+>, Einrichtungsdatei, <envar
+>LC_CTYPE</envar
+>, <envar
+>LC_MESSAGES</envar
+>, <envar
+>LC_ALL</envar
+>, <envar
+>LANG</envar
+>.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>$<envar
+>KDE_UTF8_FILENAMES</envar
+></term>
+<listitem>
+<para
+>Mit dieser Einstellung werden alle Dateinamen im Format UTF-8 unabhängig von der aktuell eingestellten Sprache angenommen. Ansonsten wird das Format der Dateinamen durch die eingestellte Sprache festgelegt. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>$<envar
+>KDE_MULTIHEAD</envar
+></term>
+<listitem>
+<para
+>Hat diese Variable den Wert „true“, dann wird ein Modus zur Verwendung von mehreren Bildschirmen benutzt. Die Anzeige wird dann auf die Bildschirme verteilt.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>$<envar
+>DISPLAY</envar
+></term>
+<listitem>
+<para
+>Gibt das X-Display an, auf dem KDE läuft.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>$<envar
+>SESSION_MANAGER</envar
+></term>
+<listitem>
+<para
+>Die verwendete Sitzungsverwaltung (Session Manager). Diese Einstellung wird automatisch durch das KDE-System gesetzt und ist der Netzwerkpfad zum Socket der Sitzungsverwaltung.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>$<envar
+>HOME</envar
+></term>
+<listitem>
+<para
+>Pfad zum persönlichen Ordner des aktuellen Benutzers.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>$<envar
+>KDEHOME</envar
+></term>
+<listitem>
+<para
+>Der KDE-Ordner für die Einstellungen des Benutzers.</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</refsect1>
+
+<refsect1>
+<title
+>Siehe auch</title>
+
+<para
+>Die vollständige Dokumentation für &kmymoney; wird als Handbuch im Docbook-Format betreut. Wenn das Programm installiert ist, zeigt der Befehl <userinput
+><command
+>khelpcenter</command
+> <parameter
+>help:/kmymoney</parameter
+></userinput
+> das vollständige Handbuch an. Alternativ können Sie in der Adressleiste von &konqueror;  <acronym
+>URL</acronym
+> <ulink url="help:/kmymoney"
+>help:/kmymoney</ulink
+> eingeben.</para>
+
+</refsect1>
+
+</refentry>

@@ -1,0 +1,691 @@
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2008, 2009.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2008, 2009.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2009.
+# Frederik Schwarzer <schwarzer@kde.org>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: killbots\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-03-07 03:35+0100\n"
+"PO-Revision-Date: 2011-03-26 14:39+0100\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Johannes Obermayr"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "johannesobermayr@gmx.de"
+
+#: coordinator.cpp:119
+msgid "Round:"
+msgstr "Runde:"
+
+#: coordinator.cpp:124
+msgid "Score:"
+msgstr "Punkte:"
+
+#: coordinator.cpp:129
+msgid "Enemies:"
+msgstr "Gegner:"
+
+#: coordinator.cpp:134
+msgid "Energy:"
+msgstr "Energie:"
+
+#: coordinator.cpp:471
+msgid "Round complete."
+msgstr "Runde abgeschlossen."
+
+#: coordinator.cpp:477
+msgid ""
+"Board is full.\n"
+"Resetting enemy counts."
+msgstr ""
+"Das Spielfeld ist voll.\n"
+"Die Anzahl der Gegner wird zurückgesetzt."
+
+#: coordinator.cpp:483
+msgid "New game."
+msgstr "Neues Spiel."
+
+#: coordinator.cpp:489
+msgid "Game over."
+msgstr "Das Spiel ist verloren."
+
+#. i18n: ectx: tooltip, entry (MiddleClickAction), group (General)
+#: killbots.kcfg:20
+msgid "The action performed on a middle-click"
+msgstr "Die auszuführende Aktion bei Betätigung der mittleren Maustaste"
+
+#. i18n: ectx: whatsthis, entry (MiddleClickAction), group (General)
+#: killbots.kcfg:21
+msgid ""
+"Selects the action performed when middle-clicking on the main game area. If "
+"a middle mouse button is not available, this action can be performed by "
+"left- and right-clicking simultaneously or by left-clicking while holding "
+"the control key."
+msgstr ""
+"Hiermit wird die Aktion bei Betätigung der mittleren Maustaste im Spielfeld "
+"festgelegt. Sollte keine mittlere Maustaste vorhanden sein, kann diese "
+"Aktion mit gleichzeitiger Betätigung der linken und rechten Maustaste oder "
+"gedrückter Strg-Taste und Betätigung der linken Maustaste ausgeführt werden."
+
+#. i18n: ectx: tooltip, entry (RightClickAction), group (General)
+#: killbots.kcfg:26
+msgid "The action performed on a right-click"
+msgstr "Die auszuführende Aktion bei Betätigung der rechten Maustaste"
+
+#. i18n: ectx: whatsthis, entry (RightClickAction), group (General)
+#: killbots.kcfg:27
+msgid "Selects the action performed when right-clicking on the main game area."
+msgstr ""
+"Hiermit wird die Aktion bei Betätigung der rechten Maustaste im Spielfeld "
+"festgelegt."
+
+#. i18n: ectx: tooltip, entry (AnimationSpeed), group (General)
+#: killbots.kcfg:33
+msgid "The speed used to display animations"
+msgstr "Die Geschwindigkeit für die Bewegungen der Spielfiguren"
+
+#. i18n: ectx: whatsthis, entry (AnimationSpeed), group (General)
+#: killbots.kcfg:34
+msgid "Adjusts the speed at which the in game animations are displayed."
+msgstr ""
+"Hiermit wird die Geschwindigkeit für die Bewegungen der Spielfiguren "
+"festgelegt."
+
+#. i18n: ectx: tooltip, entry (PreventUnsafeMoves), group (General)
+#: killbots.kcfg:38
+msgid "Prevent the player from making fatal moves"
+msgstr "Zum Tod führende Bewegungen verhindern"
+
+#. i18n: ectx: whatsthis, entry (PreventUnsafeMoves), group (General)
+#: killbots.kcfg:39
+msgid ""
+"If checked, the game will ignore any move that would result in the immediate "
+"death of the hero (other than random teleports and waiting out the round)."
+msgstr ""
+"Ist diese Einstellung aktiviert, werden zum Tod führende Bewegungen "
+"verhindert (jedoch nicht bei „Teleportieren“ und „Aussitzen“)."
+
+#. i18n: ectx: tooltip, entry (Ruleset), group (General)
+#: killbots.kcfg:43
+msgid "The selected set of game rules"
+msgstr "Die ausgewählten Spielregeln"
+
+#. i18n: ectx: whatsthis, entry (Ruleset), group (General)
+#: killbots.kcfg:44
+msgid "Selects the set of game rules to be used in the next game."
+msgstr ""
+"Hiermit werden die zu verwendenden Spielregeln für das nächste Spiel "
+"festgelegt."
+
+#. i18n: ectx: Menu (moveMenu)
+#: killbotsui.rc:12
+msgid "Move"
+msgstr "Zug"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: killbotsui.rc:22
+msgid "Main Toolbar"
+msgstr "Haupt-Werkzeugleiste"
+
+#: main.cpp:31
+msgid "Killbots"
+msgstr "Killbots"
+
+#: main.cpp:32
+msgid "A KDE game of killer robots and teleportation."
+msgstr "Ein Spiel für KDE mit Killermaschinen und Teleportieren."
+
+#: main.cpp:34
+msgid "© 2006-2009, Parker Coates"
+msgstr "© 2006–2009, Parker Coates"
+
+#: main.cpp:35
+msgid "Parker Coates"
+msgstr "Parker Coates"
+
+#: main.cpp:35
+msgid "Developer"
+msgstr "Entwickler"
+
+#: main.cpp:36
+msgid "Mark Rae"
+msgstr "Mark Rae"
+
+#: main.cpp:36
+msgid ""
+"Author of Gnome Robots. Invented safe teleports, pushing junkheaps and fast "
+"robots."
+msgstr ""
+"Verfasser von „Gnome Robots“. Er erfand „sicheres Teleportieren“, "
+"„Müllhalden“ und „schnelle Roboter“."
+
+#: mainwindow.cpp:70
+msgid ""
+"This is the main game area used to interact with Killbots. It shows the "
+"current state of the game grid and allows one to control the hero using the "
+"mouse. It also displays certain statistics about the game in progress."
+msgstr ""
+"Dies ist das Spielfeld für das Zusammentreffen mit den Killbots. Es zeigt "
+"den aktuellen Spielstand an und ermöglicht, den Helden mittels der Maus zu "
+"steuern. Weiterhin zeigt es gewisse Statistiken zum Spielverlauf an."
+
+#: mainwindow.cpp:110
+msgid "General"
+msgstr "Allgemein"
+
+#: mainwindow.cpp:112
+msgid "Configure general settings"
+msgstr "Nehmen Sie die allgemeinen Spieleinstellungen vor"
+
+#: mainwindow.cpp:115
+msgid "Game Type"
+msgstr "Spielregeln"
+
+#: mainwindow.cpp:117
+msgid "Select a game type"
+msgstr "Wählen Sie die Spielregeln"
+
+#: mainwindow.cpp:120
+msgid "Appearance"
+msgstr "Erscheinungsbild"
+
+#: mainwindow.cpp:122
+msgid "Select a graphical theme"
+msgstr "Wählen Sie das grafische Design"
+
+#: mainwindow.cpp:161
+msgid ""
+"A new game type has been selected, but there is already a game in progress."
+msgstr ""
+"Es wurden neue Spielregeln ausgewählt – es läuft jedoch bereits ein Spiel."
+
+#: mainwindow.cpp:162
+msgid "Game Type Changed"
+msgstr "Spielregeln geändert"
+
+#: mainwindow.cpp:163
+msgid "Continue Current Game"
+msgstr "Aktuelles Spiel fortsetzen"
+
+#: mainwindow.cpp:164
+msgid "Start a New Game"
+msgstr "Ein neues Spiel starten"
+
+#: mainwindow.cpp:179
+msgid "Round"
+msgstr "Runde"
+
+#: mainwindow.cpp:256 optionspage.cpp:39
+msgid "Teleport Safely"
+msgstr "Sicher teleportieren"
+
+#: mainwindow.cpp:257
+msgctxt ""
+"Shortcut for teleport safely. See http://websvn.kde.org/trunk/KDE/kdegames/"
+"killbots/README.translators?view=markup"
+msgid "T"
+msgstr "T"
+
+#: mainwindow.cpp:259
+msgid "Teleport to a safe location"
+msgstr "Sicher teleportieren"
+
+#: mainwindow.cpp:264 optionspage.cpp:38
+msgid "Teleport"
+msgstr "Teleportieren"
+
+#: mainwindow.cpp:265
+msgctxt ""
+"Shortcut for teleport. See http://websvn.kde.org/trunk/KDE/kdegames/killbots/"
+"README.translators?view=markup"
+msgid "R"
+msgstr "R"
+
+#: mainwindow.cpp:267
+msgid "Teleport to a random location"
+msgstr "Teleportieren in eine zufällige Zelle"
+
+#: mainwindow.cpp:272
+msgid "Teleport, Safely If Possible"
+msgstr "Sicher teleportieren (falls möglich)"
+
+#: mainwindow.cpp:273
+msgctxt ""
+"Shortcut for teleport safely if possible. See http://websvn.kde.org/trunk/"
+"KDE/kdegames/killbots/README.translators?view=markup"
+msgid "Space"
+msgstr "Leertaste"
+
+#: mainwindow.cpp:275
+msgid "Teleport safely if that action is enabled, otherwise teleport randomly"
+msgstr ""
+"Ist diese Einstellung aktiviert, wird „Sicheres Teleportieren“ ausgeführt "
+"(ansonsten zufälliges „Teleportieren“)"
+
+#: mainwindow.cpp:279
+msgid "Vaporizer"
+msgstr "Zerstäuber"
+
+#: mainwindow.cpp:280
+msgctxt ""
+"Shortcut for vaporizer. See http://websvn.kde.org/trunk/KDE/kdegames/"
+"killbots/README.translators?view=markup"
+msgid "F"
+msgstr "F"
+
+#: mainwindow.cpp:282
+msgid "Destroy all enemies in neighboring cells"
+msgstr "Zerstörung der Gegner in den benachbarten Zellen"
+
+#: mainwindow.cpp:287 optionspage.cpp:41
+msgid "Wait Out Round"
+msgstr "Aussitzen"
+
+#: mainwindow.cpp:288
+msgctxt ""
+"Shortcut for wait out round. See http://websvn.kde.org/trunk/KDE/kdegames/"
+"killbots/README.translators?view=markup"
+msgid "V"
+msgstr "V"
+
+#: mainwindow.cpp:290
+msgid "Risk remaining in place until the end of the round for bonuses"
+msgstr ""
+"Risikoreiches „verharren“ in aktueller Position bis zum Rundende um "
+"Zusätzliches zu erlangen"
+
+#: mainwindow.cpp:295
+msgid "Move Up and Left"
+msgstr "Nach links oben"
+
+#: mainwindow.cpp:296
+msgctxt ""
+"Shortcut for move up and left. See http://websvn.kde.org/trunk/KDE/kdegames/"
+"killbots/README.translators?view=markup"
+msgid "Q"
+msgstr "Q"
+
+#: mainwindow.cpp:301
+msgid "Move Up"
+msgstr "Nach oben"
+
+#: mainwindow.cpp:302
+msgctxt ""
+"Shortcut for move up. See http://websvn.kde.org/trunk/KDE/kdegames/killbots/"
+"README.translators?view=markup"
+msgid "W"
+msgstr "W"
+
+#: mainwindow.cpp:307
+msgid "Move Up and Right"
+msgstr "Nach rechts oben"
+
+#: mainwindow.cpp:308
+msgctxt ""
+"Shortcut for move up and right. See http://websvn.kde.org/trunk/KDE/kdegames/"
+"killbots/README.translators?view=markup"
+msgid "E"
+msgstr "E"
+
+#: mainwindow.cpp:313
+msgid "Move Left"
+msgstr "Nach links"
+
+#: mainwindow.cpp:314
+msgctxt ""
+"Shortcut for move left. See http://websvn.kde.org/trunk/KDE/kdegames/"
+"killbots/README.translators?view=markup"
+msgid "A"
+msgstr "A"
+
+#: mainwindow.cpp:319
+msgid "Stand Still"
+msgstr "Stehen bleiben"
+
+#: mainwindow.cpp:320
+msgctxt ""
+"Shortcut for stand still. See http://websvn.kde.org/trunk/KDE/kdegames/"
+"killbots/README.translators?view=markup"
+msgid "S"
+msgstr "S"
+
+#: mainwindow.cpp:325
+msgid "Move Right"
+msgstr "Nach rechts"
+
+#: mainwindow.cpp:326
+msgctxt ""
+"Shortcut for move right. See http://websvn.kde.org/trunk/KDE/kdegames/"
+"killbots/README.translators?view=markup"
+msgid "D"
+msgstr "D"
+
+#: mainwindow.cpp:331
+msgid "Move Down and Left"
+msgstr "Nach links unten"
+
+#: mainwindow.cpp:332
+msgctxt ""
+"Shortcut for move down and left. See http://websvn.kde.org/trunk/KDE/"
+"kdegames/killbots/README.translators?view=markup"
+msgid "Z"
+msgstr "Z"
+
+#: mainwindow.cpp:337
+msgid "Move Down"
+msgstr "Nach unten"
+
+#: mainwindow.cpp:338
+msgctxt ""
+"Shortcut for move down. See http://websvn.kde.org/trunk/KDE/kdegames/"
+"killbots/README.translators?view=markup"
+msgid "X"
+msgstr "X"
+
+#: mainwindow.cpp:343
+msgid "Move Down and Right"
+msgstr "Nach rechts unten"
+
+#: mainwindow.cpp:344
+msgctxt ""
+"Shortcut for move down and right. See http://websvn.kde.org/trunk/KDE/"
+"kdegames/killbots/README.translators?view=markup"
+msgid "C"
+msgstr "C"
+
+#: optionspage.cpp:35
+msgid "Nothing"
+msgstr "Keine Aktion"
+
+#: optionspage.cpp:36
+msgid "Step"
+msgstr "Bewegen"
+
+#: optionspage.cpp:37
+msgid "Repeated Step"
+msgstr "Bewegung wiederholen"
+
+#: optionspage.cpp:40
+msgid "Teleport (Safely If Possible)"
+msgstr "Sicher teleportieren (falls möglich)"
+
+#: optionspage.cpp:55
+msgid "Slow"
+msgstr "Langsam"
+
+#: optionspage.cpp:57
+msgid "Fast"
+msgstr "Schnell"
+
+#: optionspage.cpp:59
+msgid "Instant"
+msgstr "Sofort"
+
+#: optionspage.cpp:70
+msgid "Animation &speed:"
+msgstr "&Geschwindigkeit der Spielfiguren:"
+
+#: optionspage.cpp:73
+msgid "Prevent &unsafe moves"
+msgstr "&Unsichere Bewegungen verhindern"
+
+#: optionspage.cpp:78
+msgid "&Middle-click action:"
+msgstr "Aktion für &mittlere Maustaste:"
+
+#: optionspage.cpp:79
+msgid "&Right-click action:"
+msgstr "Aktion für &rechte Maustaste:"
+
+#. i18n: ectx: label, entry (Rows), group (KillbotsRuleset)
+#: rulesetbase.kcfg:19
+msgid "Number of rows in game grid"
+msgstr "Anzahl der Zeilen im Spielgitter"
+
+#. i18n: ectx: label, entry (Columns), group (KillbotsRuleset)
+#: rulesetbase.kcfg:24
+msgid "Number of columns in game grid"
+msgstr "Anzahl der Reihen im Spielgitter"
+
+#. i18n: ectx: label, entry (EnemiesAtGameStart), group (KillbotsRuleset)
+#: rulesetbase.kcfg:28
+msgid "Number of regular enemies in first round"
+msgstr "Anzahl der Roboter in der ersten Runde"
+
+#. i18n: ectx: label, entry (EnemiesAddedEachRound), group (KillbotsRuleset)
+#: rulesetbase.kcfg:32
+msgid "Number of regular enemies added in each new round"
+msgstr "Anzahl der hinzugefügten Roboter pro Runde"
+
+#. i18n: ectx: label, entry (FastEnemiesAtGameStart), group (KillbotsRuleset)
+#: rulesetbase.kcfg:36
+msgid "Number of fast enemies in first round"
+msgstr "Anzahl der „Schnellen Roboter“ in der ersten Runde"
+
+#. i18n: ectx: label, entry (FastEnemiesAddedEachRound), group (KillbotsRuleset)
+#: rulesetbase.kcfg:40
+msgid "Number of fast enemies added in each new round"
+msgstr "Anzahl der hinzugefügten „Schnellen Roboter“ pro Runde"
+
+#. i18n: ectx: label, entry (FastEnemiesArePatient), group (KillbotsRuleset)
+#: rulesetbase.kcfg:44
+msgid ""
+"Fast enemies will skip their extra turn to avoid collisions with other robots"
+msgstr ""
+"„Schnelle Roboter“ beenden ihren Zug (Zur Vermeidung von Zusammenstößen mit "
+"anderen Robotern)"
+
+#. i18n: ectx: label, entry (EnergyEnabled), group (KillbotsRuleset)
+#: rulesetbase.kcfg:48
+msgid "Player can accumulate energy"
+msgstr "Unterstützung von Energie"
+
+#. i18n: ectx: label, entry (EnergyAtGameStart), group (KillbotsRuleset)
+#: rulesetbase.kcfg:53
+msgid "Energy at start of first round"
+msgstr "Verfügbare Energie zu Beginn der ersten Runde"
+
+#. i18n: ectx: label, entry (EnergyAddedEachRound), group (KillbotsRuleset)
+#: rulesetbase.kcfg:57
+msgid "Energy awarded for completing a round"
+msgstr "Zusätzliche Energie für abgeschlossene Runde"
+
+#. i18n: ectx: label, entry (MaxEnergyAtGameStart), group (KillbotsRuleset)
+#: rulesetbase.kcfg:62
+msgid "Maximum energy cap in first round"
+msgstr "Maximale Energieeinheiten in der ersten Runde"
+
+#. i18n: ectx: label, entry (MaxEnergyAddedEachRound), group (KillbotsRuleset)
+#: rulesetbase.kcfg:66
+msgid "Increase in maximum energy cap for each new round"
+msgstr "Anstieg der maximalen Energieeinheiten pro Runde"
+
+#. i18n: ectx: label, entry (SafeTeleportEnabled), group (KillbotsRuleset)
+#: rulesetbase.kcfg:70
+msgid "Player can perform safe teleports"
+msgstr "Unterstützung von „Sicherem Teleportieren“"
+
+#. i18n: ectx: label, entry (CostOfSafeTeleport), group (KillbotsRuleset)
+#: rulesetbase.kcfg:75
+msgid "The cost of performing a safe teleport"
+msgstr "Energieaufwand für „Sicheres Teleportieren“"
+
+#. i18n: ectx: label, entry (VaporizerEnabled), group (KillbotsRuleset)
+#: rulesetbase.kcfg:79
+msgid "Player can use vaporizer"
+msgstr "Unterstützung des „Zerstäubers“"
+
+#. i18n: ectx: label, entry (CostOfVaporizer), group (KillbotsRuleset)
+#: rulesetbase.kcfg:84
+msgid "Cost of using vaporizer"
+msgstr "Energieaufwand für den „Zerstäuber“"
+
+#. i18n: ectx: label, entry (PushableJunkheaps), group (KillbotsRuleset)
+#: rulesetbase.kcfg:93
+msgid "Number of junkheaps that can be pushed at once"
+msgstr "Anzahl der maximal verschiebbaren „Müllhalden“"
+
+#. i18n: ectx: label, entry (SquaskKillsEnabled), group (KillbotsRuleset)
+#: rulesetbase.kcfg:97
+msgid "Player can destroy enemies with a pushed junkheap"
+msgstr "Gegner können mit „Müllhalden“ zerstört werden"
+
+#. i18n: ectx: label, entry (JunkheapsAtGameStart), group (KillbotsRuleset)
+#: rulesetbase.kcfg:101
+msgid "Junkheaps placed on grid at start of first round"
+msgstr "Anzahl der „Müllhalden“ zu Beginn der ersten Runde"
+
+#. i18n: ectx: label, entry (JunkheapsAddedEachRound), group (KillbotsRuleset)
+#: rulesetbase.kcfg:105
+msgid "Junkheaps added to the grid for each new round"
+msgstr "Anstieg der „Müllhalden“ pro Runde"
+
+#. i18n: ectx: label, entry (PointsPerEnemyKilled), group (KillbotsRuleset)
+#: rulesetbase.kcfg:110
+msgid "Points awarded for each regular enemy destroyed"
+msgstr "Anzahl der Punkte für die Zerstörung eines Roboters"
+
+#. i18n: ectx: label, entry (PointsPerFastEnemyKilled), group (KillbotsRuleset)
+#: rulesetbase.kcfg:115
+msgid "Points awarded for each fast enemy destroyed"
+msgstr "Anzahl der Punkte für die Zerstörung eines „Schnellen Roboters“"
+
+#. i18n: ectx: label, entry (WaitKillPointBonus), group (KillbotsRuleset)
+#: rulesetbase.kcfg:120
+msgid "Points awarded for each enemy destroyed while waiting out the round"
+msgstr "Zusatzpunkte für die Zerstörung eines Roboters während dem „Aussitzen“"
+
+#. i18n: ectx: label, entry (WaitKillEnergyBonus), group (KillbotsRuleset)
+#: rulesetbase.kcfg:125
+msgid "Energy awarded for each enemy destroyed while waiting out the round"
+msgstr ""
+"Zusatzenergie für die Zerstörung eines „Schnellen Roboters“ während dem "
+"„Aussitzen“"
+
+#. i18n: ectx: label, entry (SquashKillPointBonus), group (KillbotsRuleset)
+#: rulesetbase.kcfg:130
+msgid "Points awarded for each enemy destroyed with a pushed junkheap"
+msgstr "Zusatzpunkte für das „Erdrücken“ eines Roboters mit einer Müllhalde"
+
+#. i18n: ectx: label, entry (SquashKillEnergyBonus), group (KillbotsRuleset)
+#: rulesetbase.kcfg:135
+msgid "Energy awarded for each enemy destroyed with a pushed junkheap"
+msgstr ""
+"Zusatzpunkte für das „Erdrücken“ eines „Schnellen Roboters“ mit einer "
+"Müllhalde"
+
+#. i18n: ectx: label, entry (PointsPerEnergyAboveMax), group (KillbotsRuleset)
+#: rulesetbase.kcfg:140
+msgid "Points awarded for each energy awarded above maximum energy cap"
+msgstr "Zusatzpunkte anstelle von Zusatzenergie (oberhalb maximaler Energie)"
+
+#: rulesetdetailsdialog.cpp:41
+msgctxt "Quantity of junkheaps that can be pushed"
+msgid "None"
+msgstr "Keine"
+
+#: rulesetdetailsdialog.cpp:42
+msgctxt "Quantity of junkheaps that can be pushed"
+msgid "One"
+msgstr "Eine"
+
+#: rulesetdetailsdialog.cpp:43
+msgctxt "Quantity of junkheaps that can be pushed"
+msgid "Many"
+msgstr "Beliebig"
+
+#: rulesetdetailsdialog.cpp:57
+#, kde-format
+msgctxt "%1 is a pretranslated string that we're turning into a label"
+msgid "%1:"
+msgstr "%1:"
+
+#: rulesetdetailsdialog.cpp:76
+msgid "Yes"
+msgstr "Ja"
+
+#: rulesetdetailsdialog.cpp:76
+msgid "No"
+msgstr "Nein"
+
+#: rulesetdetailsdialog.cpp:85
+#, kde-format
+msgid "Details of %1 Game Type"
+msgstr "Beschreibung der Spielregel „%1“"
+
+#: rulesetselector.cpp:50
+msgid "A list of the Killbots rulesets installed on this computer."
+msgstr "Eine Liste mit Spielregeln für Killbots (lokal auf diesem Computer)."
+
+#: rulesetselector.cpp:52
+msgid "Game Type Details"
+msgstr "Informationen zu den Spielregeln"
+
+#: rulesetselector.cpp:53
+msgid "Lists information on the currently selected game type."
+msgstr "Zeigt Informationen zu den aktuellen Spielregeln an."
+
+#: rulesetselector.cpp:55
+msgid "Author:"
+msgstr "Autor:"
+
+#: rulesetselector.cpp:62
+msgid "Contact:"
+msgstr "Kontakt:"
+
+#: rulesetselector.cpp:70
+msgid "Description:"
+msgstr "Beschreibung:"
+
+#: rulesetselector.cpp:77
+msgid "Details..."
+msgstr "Beschreibung ..."
+
+#: rulesetselector.cpp:78
+msgid "Show the detailed parameters of the selected game type"
+msgstr "Detaillierte Parameter der gewählten Spielregeln anzeigen"
+
+#: rulesetselector.cpp:79
+msgid ""
+"Opens a dialog listing the values of all internal parameters for the "
+"selected game type."
+msgstr ""
+"Öffnet ein Fenster, in dem alle Einzelheiten für die gewählte Spielregel "
+"angezeigt werden."
+
+#~ msgid "The selected game theme"
+#~ msgstr "Das ausgewählte Spieldesign"
+
+#~ msgid "Selects the theme used to display all in game elements."
+#~ msgstr "Hiermit wird das Design für das Spielfenster festgelegt."
+
+#~ msgid "Movement Controls"
+#~ msgstr "Bewegungskontrollen"
+
+#~ msgid "Sonic Screwdriver"
+#~ msgstr "Schall-Dreher"
+
+#~ msgid "Ruleset Changed"
+#~ msgstr "Geänderte Spielregeln"
+
+#~ msgid "Theme"
+#~ msgstr "Design"
+
+#~ msgid "Ruleset Details"
+#~ msgstr "Hinweise zum Regelsatz"
+
+#~ msgid "Rules"
+#~ msgstr "Regeln"

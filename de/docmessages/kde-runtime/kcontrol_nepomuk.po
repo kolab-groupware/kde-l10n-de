@@ -1,0 +1,538 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2010, 2011, 2012, 2013, 2014.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2009.
+# Frederik Schwarzer <schwarzer@kde.org>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcontrol_nepomuk\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: 2014-02-17 07:20+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdebase/workspace/doc/kcontrol/nepomuk/"
+"index.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 975463\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:10
+#, no-c-format
+msgid "Nepomuk Desktop Search Configuration"
+msgstr "Einrichtung der Nepomuk-Desktop-Suche"
+
+#. Tag: author
+#: index.docbook:13
+#, no-c-format
+msgid ""
+"<firstname>Sebastian</firstname><surname>Trueg</surname><email>trueg@kde."
+"org</email>"
+msgstr ""
+"<firstname>Sebastian</firstname><surname>Trueg</surname><email>trueg@kde."
+"org</email>"
+
+#. Tag: author
+#: index.docbook:14
+#, no-c-format
+msgid "&Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;"
+msgstr "&Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;"
+
+#. Tag: trans_comment
+#: index.docbook:15
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Johannes</"
+"firstname><surname>Obermayr</"
+"surname><affiliation><address><email>johannesobermayr@gmx.de</email></"
+"address></affiliation><contrib>Übersetzung</contrib></othercredit>"
+
+#. Tag: date
+#: index.docbook:18
+#, no-c-format
+msgid "2013-11-01"
+msgstr "2013-11-01"
+
+#. Tag: releaseinfo
+#: index.docbook:19
+#, no-c-format
+msgid "&kde; 4.12"
+msgstr "&kde; 4.12"
+
+#. Tag: keyword
+#: index.docbook:22
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:23
+#, no-c-format
+msgid "KControl"
+msgstr "KControl"
+
+#. Tag: keyword
+#: index.docbook:24
+#, no-c-format
+msgid "nepomuk"
+msgstr "Nepomuk"
+
+#. Tag: keyword
+#: index.docbook:25
+#, no-c-format
+msgid "desktop search"
+msgstr "Desktop-Suche"
+
+#. Tag: title
+#: index.docbook:32
+#, no-c-format
+msgid "Introduction"
+msgstr "Einführung"
+
+#. Tag: para
+#: index.docbook:34
+#, no-c-format
+msgid ""
+"This module allows to configure certain parts of the desktop search and the "
+"Nepomuk semantic desktop. More information about the Nepomuk semantic "
+"desktop can be found at the <ulink url=\"http://nepomuk.kde.org/\">Nepomuk "
+"homepage</ulink>."
+msgstr ""
+"Dieses Moduls ermöglicht die Einrichtung der Desktop-Suche und des Nepomuk "
+"Semantik-Dienstes. Weitere Informationen zu den Nepomuk Semantik-Diensten "
+"finden Sie auf der <ulink url=\"http://nepomuk.kde.org/\">Nepomuk-Webseite</"
+"ulink>."
+
+#. Tag: title
+#: index.docbook:38
+#, no-c-format
+msgid "Basic Settings"
+msgstr "Grundeinstellungen"
+
+#. Tag: para
+#: index.docbook:40
+#, no-c-format
+msgid ""
+"The basic settings tab allows to enable or disable the semantic desktop and "
+"desktop search systems."
+msgstr ""
+"Die <guilabel>Grundeinstellungen</guilabel> ermöglichen das Ein- und "
+"Ausschalten des <emphasis>semantischen Desktops</emphasis> und des Desktop-"
+"Suchsystems."
+
+#. Tag: para
+#: index.docbook:42
+#, no-c-format
+msgid "There are three checkboxes:"
+msgstr "Hier gibt es drei Ankreuzfelder:"
+
+#. Tag: para
+#: index.docbook:44
+#, no-c-format
+msgid ""
+"<guilabel>Enable Nepomuk Semantic Desktop</guilabel> Enabling the Nepomuk "
+"semantic desktop means that the Nepomuk services are running. These services "
+"provide metadata/annotation storage (files can be tagged or rated in "
+"&dolphin; for example) but also desktop search which can be used through the "
+"&kde; runner or again &dolphin;."
+msgstr ""
+"<guilabel>Nepomuk-Semantik-Dienste aktivieren</guilabel>: Mit dem "
+"Einschalten der Nepomuk-Semantik-Dienste werden die Nepomuk-Dienste "
+"ausgeführt. Diese Dienste ermöglichen das Speichern von Metadaten/Vermerken "
+"(die Dateien können z. B. in &dolphin; markiert oder bewertet werden) und "
+"auch die Desktop-Suche mittels dem Programmstarter von &kde; oder nochmals "
+"&dolphin;."
+
+#. Tag: para
+#: index.docbook:47
+#, no-c-format
+msgid ""
+"<guilabel>Enable Nepomuk File Indexer</guilabel> Enabling the nepomuk file "
+"indexer means that the file indexer service is started in addition to the "
+"standard services already running. The file indexer service will run through "
+"all files in the configured folders (see below) and extract metadata from "
+"them (such as title or artist on music files or even simple things like the "
+"creation date). This metadata is then exposed through the desktop search "
+"just like the manual annotations mentioned earlier."
+msgstr ""
+"<guilabel>Nepomuk-Datei-Indizierung aktivieren</guilabel>: Mit dem "
+"Einschalten der Nepomuk-Datei-Indizierung werden der Indizierungsdienste "
+"zusätzlich zu den standardmäßigen Diensten gestartet. Der Datei-"
+"Indizierungsdienst arbeitet sich durch alle Dateien in den eingestellten "
+"Ordnern (siehe unten) und extrahiert Metadaten von ihnen (z. B. Titel oder "
+"Interpret bei Musikdateien oder einfache Sachen wie das Erstellungsdatum). "
+"Diese Metadaten werden dann durch die Desktop-Suche offen gelegt (wie die - "
+"bereits erwähnten - manuellen Anmerkungen)."
+
+#. Tag: para
+#: index.docbook:52
+#, no-c-format
+msgid ""
+"<guilabel>Enable PIM Data Indexer</guilabel> This option has to be checked "
+"to allow full text search in &kmail;."
+msgstr ""
+"<guilabel>PIM-Daten-Indizierung aktivieren</guilabel> Diese Einstellung muss "
+"aktiv sein, um die Volltextsuche in &kmail; zu verwenden."
+
+#. Tag: para
+#: index.docbook:56
+#, no-c-format
+msgid ""
+"On the right of <guilabel>Enable Nepomuk Semantic Desktop</guilabel> you can "
+"click on <guilabel>Details...</guilabel> and a dialog will inform you on the "
+"status of the KDE metadata store: how many files are indexed and the size of "
+"the store."
+msgstr ""
+"Rechts neben <guilabel>Nepomuk-Semantik-Dienste aktivieren</guilabel> können "
+"Sie auf <guilabel>Details...</guilabel> klicken, dann werden Informationen "
+"über den Status des KDE-Metadatenspeichers angezeigt: Die Anzahl der "
+"indizierten Dateien und die Nepomuk-Speichergröße."
+
+#. Tag: para
+#: index.docbook:59
+#, no-c-format
+msgid ""
+"Under the <guilabel>Enable Nepomuk File Indexer</guilabel> checkbox the "
+"current status of the file indexing service is shown. The service has four "
+"normal operation states:"
+msgstr ""
+"Unter dem Auswahlfeld <guilabel>Nepomuk-Datei-Indizierung aktivieren</"
+"guilabel> wird der aktuelle Status des Indizierungsdienstes angezeigt. Der "
+"Dienst hat vier Zustände:"
+
+#. Tag: para
+#: index.docbook:62
+#, no-c-format
+msgid ""
+"<guilabel>File indexer is idle</guilabel> - The file indexer is currently "
+"not working and waiting for an event to trigger an update (an event can be a "
+"newly created file or a changed file or a timeout for the recurring full "
+"check)"
+msgstr ""
+"<guilabel>Der Datei-Indizierung ist inaktiv.</guilabel> - Der Datei-"
+"Indizierungsdienst wird derzeit nicht ausgeführt und wartet auf einen Anlass "
+"für eine Aktualisierung (ein Anlass kann eine neu erstellte oder geänderte "
+"Datei oder ein Zeitplan für eine wiederholende vollständige Prüfung sein)."
+
+#. Tag: para
+#: index.docbook:64
+#, no-c-format
+msgid ""
+"<guilabel>Indexing files in folder foobar</guilabel> - The file indexer is "
+"currently running though all files in folder foobar and analyzes new or "
+"changed files."
+msgstr ""
+"<guilabel>Dateien im Ordner ... werden indiziert</guilabel> - Die Datei-"
+"Indizierung wird gerade im angegebenen Ordner ausgeführt und analysiert neue "
+"oder geänderte Dateien."
+
+#. Tag: para
+#: index.docbook:66
+#, no-c-format
+msgid ""
+"<guilabel>Scanning for recent changes in files for desktop search</guilabel> "
+"- The file indexer is currently performing its recurring check for new files "
+"in all index folders. This check is intended to find files that were not "
+"caught through normal file system monitoring."
+msgstr ""
+"<guilabel>Dateien für die Desktop-Suche werden nach neuen Änderungen "
+"durchsucht</guilabel> - Die Datei-Indizierung führt gerade die wiederholende "
+"Prüfung nach neuen Dateien in allen festgelegten Ordnern aus. Diese Prüfung "
+"ist zum Auffinden von Dateien, die nicht durch die normale Dateisystem-"
+"Überwachung gefunden werden."
+
+#. Tag: para
+#: index.docbook:69
+#, no-c-format
+msgid ""
+"<guilabel>File indexer is suspended</guilabel> - The file indexer has been "
+"suspended, &ie; it is in a paused state. This can either be triggered by the "
+"user or due to low disk space or a laptop being in a power-saving state. In "
+"the two latter cases the indexer will resume once the reason for the "
+"suspension has been resolved."
+msgstr ""
+"<guilabel>Die Datei-Indizierung ist ausgesetzt.</guilabel> - Die Datei-"
+"Indizierung wurde ausgesetzt (z. B. im Pause-Status). Dies kann entweder "
+"durch den Benutzer, wenig Festplattenspeicher oder Energiesparmodus (bei "
+"Laptops) bedingt sein. In den beiden zuletzt genannten Gründen wird die "
+"Datei-Indizierung nach Wegfall des Grundes automatisch wieder ausgeführt."
+
+#. Tag: para
+#: index.docbook:74
+#, no-c-format
+msgid ""
+"Apart from the normal operation states the indexer service can have an "
+"erroneous state. There are two possibilities:"
+msgstr ""
+"Abgesehen vom normalen Betrieb kann der Index-Dienst auch einen Fehler-"
+"Status haben. Hier gibt es zwei Möglichkeiten:"
+
+#. Tag: para
+#: index.docbook:76
+#, no-c-format
+msgid ""
+"<guilabel>File indexing service failed to initialize, most likely due to an "
+"installation problem</guilabel> - This should rarely occur that means that a "
+"mandatory plugin could not be loaded. This can be due to an installation "
+"problem (missing dependency) or due to a faulty setup of the &kde; plugin "
+"system."
+msgstr ""
+"<guilabel>Der Datei-Indizierungsdienst kann nicht initialisiert werden - "
+"wahrscheinlich liegt ein Installationsproblem vor</guilabel> - Dies sollte "
+"nur sehr selten vorkommen und bedeutet, dass ein benötigtes Modul nicht "
+"geladen werden kann. Dies kann durch ein Installationsproblem (fehlende "
+"Abhängigkeiten) oder ein fehlerhafte Einstellung in den Modulen von &kde; "
+"bedingt sein."
+
+#. Tag: para
+#: index.docbook:79
+#, no-c-format
+msgid ""
+"Any other error means a communication problem with the service. These errors "
+"are produced by the &DBus; subsystem and need to be evaluated case by case."
+msgstr ""
+"Jeder andere Fehler bedeutet ein Kommunikationsproblem mit dem Dienst. Diese "
+"Fehler werden vom &DBus;-Untersystem erzeugt und müssen in jedem Fall "
+"einzeln untersucht werden."
+
+#. Tag: title
+#: index.docbook:86
+#, no-c-format
+msgid "Indexing"
+msgstr "Indizierung"
+
+#. Tag: para
+#: index.docbook:88
+#, no-c-format
+msgid ""
+"This tab allows to select the files and folders that are to be analyzed by "
+"the file indexer explained above. By default Documents, Audio, Images and "
+"Videos are selected here."
+msgstr ""
+"Auf dieser Karteikarte können Dateien und Ordnern ausgewählt werden, die "
+"durch den vorher beschriebenen Indizierungs-Dienst analysiert werden sollen. "
+"Als Voreinstellung sind hier Dokumente, Audio-Dateien, Bilder und Video-"
+"Dateien ausgewählt."
+
+#. Tag: para
+#: index.docbook:92
+#, no-c-format
+msgid ""
+"Click the <guibutton>Customize Folders</guibutton> button to select and de-"
+"select folders that should be searched for files to be analyzed. By default "
+"the home folder and all subfolders are analyzed. By simply unchecking a "
+"folder it can be excluded. It is also possible to include a subfolder of an "
+"excluded one by checking it again. This allows a rather fine selection of "
+"the folders to be analyzed."
+msgstr ""
+"Klicken Sie auf <guibutton>Ordner einrichten</guibutton>, um Ordner aus- und "
+"abzuwählen, in denen Dateien analysiert werden. In der Voreinstellung werden "
+"der <emphasis>Persönliche Ordner</emphasis> mit allen Unterordnern "
+"analysiert. Durch ein einfaches Entfernen der Markierung wird der "
+"entsprechende Ordner ausgenommen. Es ist aber auch möglich, nur einen "
+"Unterordner eines ausgenommenen Ordners analysieren zu lassen. Dadurch wird "
+"ein sehr spezielle Auswahl der zu analysierenden Ordner ermöglicht."
+
+#. Tag: para
+#: index.docbook:97
+#, no-c-format
+msgid ""
+"Clicking the <guibutton>Advanced</guibutton> button allows to define exclude "
+"filters using the mime type or the name of a file. The mime types and names "
+"of all files found in the configured folders will be matched against these "
+"filters. Only if none of them matches the file will be analyzed. This is "
+"very helpful to exclude log and backup files and the like."
+msgstr ""
+"Klicken Sie auf <guibutton>Erweitert</guibutton>, um Ausschlussfilter über "
+"Mimetypen oder den Dateinamen einzustellen. Die Mimetypen und Dateinamen der "
+"Dateien in den eingestellten Ordnern werden mit diesen Filterregeln "
+"verglichen. Nur wenn keine davon auf die Datei zutrifft, wird sie "
+"analysiert. Das ist sehr hilfreich, damit Protokoll- und Sicherungsdateien "
+"und dergleichen nicht indiziert werden."
+
+#. Tag: para
+#: index.docbook:101
+#, no-c-format
+msgid ""
+"<guilabel>Removable media handling</guilabel>: Nepomuk can index files on "
+"removable devices like USB keys or external hard-disks for fast desktop "
+"searches. By default no files are indexed. Here this behaviour can be "
+"changed to one of two options:"
+msgstr ""
+"<guilabel>Umgang mit Wechselmedien</guilabel>: Nepomuk kann Dateien auf "
+"Wechselmedien wie USB-Sticks oder externen Festplatten für die schnelle "
+"Desktop-Suche indizieren. Voreingestellt werden keine Dateien indiziert. "
+"Hier kann das Verhalten auf eine der beiden Einstellungen angepasst werden:"
+
+#. Tag: para
+#: index.docbook:104
+#, no-c-format
+msgid ""
+"<guilabel>Index files on all removable devices</guilabel> - Files on "
+"removable media are indexed as soon as the medium is mounted. Caution: this "
+"does not include media which have been rejected via the second option"
+msgstr ""
+"<guilabel>Dateien auf allen Wechselmedien indizieren</guilabel> - Dateien "
+"auf Wechselmedien werden indiziert, sobald das Medium eingebunden wird. "
+"Achtung: Geräte, die unter Verwendung der zweiten Einstellung ausgeschlossen "
+"wurden, sind hiervon nicht betroffen."
+
+#. Tag: para
+#: index.docbook:106
+#, no-c-format
+msgid ""
+"<guilabel>Ask individually when newly mounted</guilabel> - The user will be "
+"asked to decide if files on the newly mounted medium should be indexed or "
+"not. Once decided Nepomuk will not ask again."
+msgstr ""
+"<guilabel>Nachfragen, wenn ein Wechselmedium neu eingebunden wird</guilabel> "
+"- Der Benutzer wird gefragt, ob Dateien auf dem gerade eingebundenen Medium "
+"indiziert werden sollen. Ist dies einmal entschieden, wird nicht noch einmal "
+"nachgefragt."
+
+#. Tag: title
+#: index.docbook:112
+#, no-c-format
+msgid "Backup"
+msgstr "Sicherung"
+
+#. Tag: para
+#: index.docbook:114
+#, no-c-format
+msgid ""
+"On this tab you can decide to make a backup of all data that could not be "
+"restored otherwise. This includes manually created tags, ratings but also "
+"statistical data. No backup is done as default so you need to decide what "
+"you want to do. You have two possibilities: automatic backups and manual "
+"ones."
+msgstr ""
+"Auf dieser Karteikarte können Sie reguläre automatische Sicherungen aller "
+"Daten aktivieren, die anderenfalls nicht wiederhergestellt werden können. "
+"Dies beinhaltet manuell erstellte Markierungen, Bewertungen aber auch "
+"statistische Daten. Als Voreinstellung wird keine Sicherung erstellt, diese "
+"Option muss aktiviert werden. Es gibt zwei Arten von Sicherungen, "
+"automatische und manuelle."
+
+#. Tag: title
+#: index.docbook:119
+#, no-c-format
+msgid "Automatic Backups"
+msgstr "Automatische Sicherungen"
+
+#. Tag: para
+#: index.docbook:120
+#, no-c-format
+msgid ""
+"First choose the <guilabel>Backup Frequency</guilabel>: this is set to "
+"<guilabel>Disable Automatic Backups</guilabel> but you can choose "
+"<guilabel>Daily Backup</guilabel> or <guilabel>Weekly Backup</guilabel>. "
+"Then set the <guilabel>Backup Time:</guilabel> to anything convenient for "
+"you using the spinbox: you can set the hour and minutes and the day of the "
+"week for weekly backups. Finally you can set a limit for the number of "
+"backup files using <guilabel>Max Number of Backups:</guilabel>. This will "
+"ensure you do not waste disk space with the backup files and only the N last "
+"files will be kept, N being the number you set there, 10 as default."
+msgstr ""
+"Stellen Sie zuerst die <guilabel>Sicherungsfrequenz</guilabel> ein: Die "
+"Standardeinstellung ist <guilabel>Automatische Sicherungen deaktivieren</"
+"guilabel>. Sie können hier <guilabel>Tägliche Sicherung</guilabel> oder "
+"<guilabel>Wöchentliche Sicherung</guilabel> auswählen. Stellen Sie dann die "
+"<guilabel>Sicherungszeit</guilabel> mit Hilfe des Drehfeldes und einen "
+"Wochentag für wöchentliche Sicherungen ein. Um die Anzahl der "
+"Sicherungsdateien zu auf den gewünschten Wert zu begrenzen, ändern Sie die "
+"<guilabel>Maximale Anzahl an Sicherungen</guilabel> mit dem Drehfeld. Damit "
+"verhindern Sie, Speicherplatz auf der Festplatte zu verschwenden. Nur die "
+"eingetragene Anzahl der letzten Dateien wird behalten, als Standard sind die "
+"10 letzten Dateien eingestellt."
+
+#. Tag: para
+#: index.docbook:127
+#, no-c-format
+msgid ""
+"Your automatic backups are saved locally in the following directory: "
+"<filename class=\"directory\">$KDEHOME/share/apps/nepomuk/backupsync/backups/"
+"</filename>."
+msgstr ""
+"Ihre automatischen Sicherungen werden lokal im folgenden Ordner gespeichert: "
+"<filename class=\"directory\">$KDEHOME/share/apps/nepomuk/backupsync/backups/"
+"</filename>."
+
+#. Tag: title
+#: index.docbook:132
+#, no-c-format
+msgid "Tools"
+msgstr "Extras"
+
+#. Tag: para
+#: index.docbook:134
+#, no-c-format
+msgid ""
+"<guilabel>Manual Backup...</guilabel> You can also perform manual backups. "
+"Manual backups will be saved in your chosen location, as a file. Click on "
+"<guilabel>Manual Backup...</guilabel> and a wizard will guide you. You first "
+"need to point to the location of the backup file. Enter a full valid path in "
+"the field or use the file dialog to point to a file."
+msgstr ""
+"<guilabel>Manuelle Sicherung ...</guilabel>: Hiermit können Sie jederzeit "
+"eigene Sicherungen erstellen. Diese manuellen Sicherungen werden als Datei "
+"im ausgewählten Ordner gespeichert. Drücken Sie diesen Knopf und folgen den "
+"Anweisungen im Assistenten. Zuerst müssen Sie den Speicherort der "
+"Sicherungsdatei angeben. Tragen Sie einen vollständigen gültigen Pfad in das "
+"Eingabefeld ein oder wählen Sie mit dem Dateidialog eine Datei aus."
+
+#. Tag: para
+#: index.docbook:138
+#, no-c-format
+msgid ""
+"You can create a new file in the folder of your choice and then point to "
+"this new file."
+msgstr ""
+"Sie können eine neue Datei im ausgewählten Ordner erstellen und diese Datei "
+"hier angeben."
+
+#. Tag: para
+#: index.docbook:139
+#, no-c-format
+msgid ""
+"Then click on the <guibutton>Next</guibutton> button and the dialog should "
+"report that the backup has been done."
+msgstr ""
+"Klicken Sie dann auf den Knopf <guibutton>Weiter</guibutton>, dann wird eine "
+"Sicherung begonnen und die Fertigstellung im Dialog angezeigt. "
+
+#. Tag: para
+#: index.docbook:141
+#, no-c-format
+msgid ""
+"<guilabel>Restore Backup...</guilabel> If you want to later restore your "
+"backup, use this button and follow the wizard. The backup will be merged "
+"into the local Nepomuk database."
+msgstr ""
+"<guilabel>Sicherung zurückspielen ...</guilabel>: Möchten Sie später eine "
+"Sicherung wiederherstellen, drücken Sie diesen Knopf und folgen den "
+"Anweisungen im Assistenten. Die Daten werden in die lokale Nepomuk-Datenbank "
+"eingefügt."
+
+#~ msgid "Advanced Settings"
+#~ msgstr "Erweiterte Einstellungen"
+
+#~ msgid ""
+#~ "On this tab you can determine the maximum amount of main memory the "
+#~ "Nepomuk system should use for its database process. The more memory is "
+#~ "available to Nepomuk the better will be its performance."
+#~ msgstr ""
+#~ "Auf dieser Karteikarte kann die maximale Größe des Hauptspeichers "
+#~ "eingestellt werden, die das Nepomuk-System für seinen Datenbank-Prozess "
+#~ "verwenden soll. Je mehr Arbeitsspeicher für Nepomuk zur Verfügung steht, "
+#~ "desto besser ist dessen Leistung."
+
+#~ msgid "strigi"
+#~ msgstr "Strigi"
+
+#~ msgid "Desktop Query"
+#~ msgstr "Arbeitsflächen-Abfrage"

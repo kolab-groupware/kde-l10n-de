@@ -1,0 +1,1463 @@
+# Gregor Zumstein <zumstein@ssd.ethz.ch>, 2003, 2004, 2005.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005.
+# Stephan Johach <hunsum@gmx.de>, 2006.
+# Burkhard Lück <lueck@hube-lueck.de>, 2007, 2009, 2010, 2011, 2012, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: kwallet\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:12+0000\n"
+"PO-Revision-Date: 2014-02-12 07:04+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:13
+#, no-c-format
+msgid "The &kwallet; Handbook"
+msgstr "Das Handbuch zu &kwallet;"
+
+#. Tag: author
+#: index.docbook:16
+#, no-c-format
+msgid "&George.Staikos; &George.Staikos.mail;"
+msgstr "&George.Staikos; &George.Staikos.mail;"
+
+#. Tag: author
+#: index.docbook:19
+#, no-c-format
+msgid "&Lauri.Watts; &Lauri.Watts.mail;"
+msgstr "&Lauri.Watts; &Lauri.Watts.mail;"
+
+#. Tag: othercredit
+#: index.docbook:22
+#, no-c-format
+msgid "<firstname>George</firstname><surname>Staikos</surname>"
+msgstr "<firstname>George</firstname><surname>Staikos</surname>"
+
+#. Tag: address
+#: index.docbook:24
+#, no-c-format
+msgid "&George.Staikos.mail;"
+msgstr "&George.Staikos.mail;"
+
+#. Tag: contrib
+#: index.docbook:25
+#, no-c-format
+msgid "Developer"
+msgstr "Entwickler"
+
+#. Tag: trans_comment
+#: index.docbook:27
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Gregor</"
+"firstname><surname>Zumstein</"
+"surname><affiliation><address><email>gz@orchester-bremgarten.ch</email></"
+"address></affiliation><contrib>Deutsche Übersetzung</contrib></othercredit>"
+
+#. Tag: date
+#: index.docbook:32
+#, no-c-format
+msgid "2013-11-19"
+msgstr "2013-11-19"
+
+#. Tag: releaseinfo
+#: index.docbook:33
+#, no-c-format
+msgid "2.0 (&kde; 4.12)"
+msgstr "2.0 (&kde; 4.12)"
+
+#. Tag: para
+#: index.docbook:36
+#, no-c-format
+msgid ""
+"The wallet subsystem provides a convenient and secure way to manage all your "
+"passwords."
+msgstr ""
+"Das Passwortspeicher-Subsystem erlaubt die bequeme und gleichzeitig sichere "
+"Aufbewahrung Ihrer Passwörter."
+
+#. Tag: keyword
+#: index.docbook:44
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:45
+#, no-c-format
+msgid "Kwallet"
+msgstr "KWallet"
+
+#. Tag: keyword
+#: index.docbook:46
+#, no-c-format
+msgid "passwords"
+msgstr "Passwörter"
+
+#. Tag: keyword
+#: index.docbook:47
+#, no-c-format
+msgid "forms"
+msgstr "Formulare"
+
+#. Tag: title
+#: index.docbook:53
+#, no-c-format
+msgid "Introduction"
+msgstr "Einleitung"
+
+#. Tag: para
+#: index.docbook:55
+#, no-c-format
+msgid ""
+"Computer users have a very large amount of data to manage, some of which is "
+"sensitive. In particular, you will typically have many passwords to manage. "
+"Remembering them is difficult and writing them down on paper or in a text "
+"file is insecure."
+msgstr ""
+"Computernutzer müssen eine riesige Datenmenge verwalten, ein Teil davon ist "
+"sicherheitsrelevant. Insbesondere müssen sie viele Zugangsdaten und "
+"Passwörter verwalten. Sich diese alle zu merken ist schwierig, sie auf "
+"Papier oder in einer Textdatei aufzuschreiben ist unsicher."
+
+#. Tag: para
+#: index.docbook:60
+#, no-c-format
+msgid ""
+"&kwallet; provides a secure way to store passwords and other secret "
+"information, allowing the user to remember only a single password instead of "
+"numerous different passwords and credentials."
+msgstr ""
+"&kwallet; bietet eine sichere Möglichkeit, Passwörter und andere persönliche "
+"Informationen zu speichern. Damit muss sich der Benutzer nur noch ein "
+"einzelnes Passwort anstatt zahlloser verschiedener Passwörter und "
+"Anmeldedaten merken."
+
+#. Tag: title
+#: index.docbook:66
+#, no-c-format
+msgid "Create a Wallet"
+msgstr "Einen Passwortspeicher erstellen"
+
+#. Tag: para
+#: index.docbook:68
+#, no-c-format
+msgid "There are three ways to create a new wallet:"
+msgstr "Es gibt drei Möglichkeiten, einen neuen Passwortspeicher zu erstellen:"
+
+#. Tag: para
+#: index.docbook:71
+#, no-c-format
+msgid ""
+"Use the menu item <menuchoice><guimenu>File</guimenu><guimenuitem>New "
+"Wallet</guimenuitem></menuchoice> in the &kwalletmanager;"
+msgstr ""
+"Verwenden Sie den Menüeintrag <menuchoice><guimenu>Datei</"
+"guimenu><guimenuitem>Neuen Passwortspeicher</guimenuitem></menuchoice> im "
+"&kwalletmanager;"
+
+#. Tag: para
+#: index.docbook:74
+#, no-c-format
+msgid ""
+"Use the <guibutton>New</guibutton> button in the &systemsettings; module "
+"<guilabel>KDE Wallet</guilabel>"
+msgstr ""
+"Verwenden Sie den Knopf <guibutton>Neu</guibutton> im &systemsettings;-Modul "
+"<guilabel>Passwortverwaltung</guilabel>"
+
+#. Tag: para
+#: index.docbook:77
+#, no-c-format
+msgid ""
+"On the first attempt to store login information in a wallet when you did not "
+"create a wallet so far, see section <link linkend=\"kwallet-using\">Using "
+"&kwallet;</link>."
+msgstr ""
+"Beim ersten Versuch, Anmeldeinformationen zu speichern, ohne dass schon eine "
+"Passwortspeicher erstellt wurde, siehe den Abschnitt <link linkend=\"kwallet-"
+"using\">&kwallet; benutzen</link>."
+
+#. Tag: para
+#: index.docbook:82
+#, no-c-format
+msgid "&kwallet; offers two different ways to store your data:"
+msgstr ""
+"&kwallet; bietet zwei unterschiedliche Methoden, Ihre Daten zu speichern:"
+
+#. Tag: screeninfo
+#: index.docbook:85
+#, no-c-format
+msgid "<screeninfo>Select encryption</screeninfo>"
+msgstr "<screeninfo>Verschlüsselung auswählen</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:88
+#, no-c-format
+msgid "<phrase>Select encryption</phrase>"
+msgstr "<phrase>Verschlüsselung auswählen</phrase>"
+
+#. Tag: term
+#: index.docbook:95
+#, no-c-format
+msgid "Blowfish encryption"
+msgstr "Blowfish-Verschlüsselung"
+
+#. Tag: para
+#: index.docbook:97
+#, no-c-format
+msgid ""
+"&kwallet; saves this sensitive data for you in a strongly encrypted file, "
+"accessible by all applications, and protected with a master password that "
+"you define."
+msgstr ""
+"&kwallet; speichert genau diese sicherheitsrelevanten Daten in einer mit "
+"starker Kryptografie verschlüsselten Datei, auf die alle Anwendungen "
+"zugreifen können. Die Daten werden durch ein von Ihnen festgelegtes "
+"Hauptpasswort geschützt."
+
+#. Tag: screeninfo
+#: index.docbook:102
+#, no-c-format
+msgid "<screeninfo>Create a blowfish encrypted wallet</screeninfo>"
+msgstr ""
+"<screeninfo>Einen Passwortspeicher mit Blowfish-Verschlüsselung erstellen</"
+"screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:105
+#, no-c-format
+msgid "<phrase>Create a blowfish encrypted wallet</phrase>"
+msgstr ""
+"<phrase>Einen Passwortspeicher mit Blowfish-Verschlüsselung erstellen</"
+"phrase>"
+
+#. Tag: para
+#: index.docbook:109
+#, no-c-format
+msgid ""
+"The data is encrypted with the <ulink url=\"http://www.schneier.com/blowfish."
+"html\">Blowfish symmetric block cipher algorithm</ulink>, the algorithm key "
+"is derived from the <ulink url=\"http://www.ietf.org/rfc/rfc3174.txt\">SHA-1 "
+"hash</ulink> of the password, with a key length of 156 bits (20 bytes). The "
+"data into the wallet file is also hashed with SHA-1 and checked before the "
+"data is deciphered and accessible by the applications."
+msgstr ""
+"Die Daten werden mit dem <ulink url=\"http://www.schneier.com/blowfish.html"
+"\">symmetrischen Blockverschlüsselungsalgorithmus Blowfish</ulink> "
+"verschlüsselt. Der Schlüsselalgorithmus wird aus dem <ulink url=\"http://www."
+"ietf.org/rfc/rfc3174.txt\">SHA-1-Hashwert</ulink> des Passworts berechnet, "
+"mit einer Schlüssellänge von 156 Bit (20 Byte). Aus den  Daten in der "
+"&kwallet;-Datei werden zusätzlich Hashwerte mit SHA-1 berechnet und vor der "
+"Entschlüsselung und dem Zugriff von Programmen überprüft"
+
+#. Tag: term
+#: index.docbook:121
+#, no-c-format
+msgid "GPG encryption"
+msgstr "GPG-Verschlüsselung"
+
+#. Tag: para
+#: index.docbook:123
+#, no-c-format
+msgid ""
+"GnuPG offers some very strong encryption algorithms and uses passphrase "
+"protected long keys."
+msgstr ""
+"GnuPG verwendet einige sehr starke Verschlüsselungsalgorithmen und verwendet "
+"lange Schlüssel, die mit einem Kennsatz geschützt sind."
+
+#. Tag: screeninfo
+#: index.docbook:126
+#, no-c-format
+msgid "<screeninfo>No GPG key found</screeninfo>"
+msgstr "<screeninfo>Kein GPG-Schlüssel gefunden</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:129
+#, no-c-format
+msgid "<phrase>No GPG key found</phrase>"
+msgstr "<phrase>Kein GPG-Schlüssel gefunden</phrase>"
+
+#. Tag: para
+#: index.docbook:132
+#, no-c-format
+msgid ""
+"The screenshots above show the case where an encryption capable GPG key was "
+"not found on the system. Please use applications like &kgpg; or &kleopatra; "
+"to create a key an try again."
+msgstr ""
+"Das obere Bildschirmfoto zeigt die Situation, wenn kein GPG-Schlüssel "
+"gefunden im System wurde. Benutzen Sie in diesem Fall Anwendungen wie &kgpg; "
+"oder &kleopatra; zur Erzeugung eines Schlüssels und versuchen Sie es erneut."
+
+#. Tag: para
+#: index.docbook:135
+#, no-c-format
+msgid ""
+"If a GPG key was found you will get the next dialog where you can select a "
+"key to use for your new wallet."
+msgstr ""
+"Wurde ein GPG-Schlüssel gefunden, dann können Sie im nächsten Dialog einen "
+"Schlüssel für Ihren neuen Passwortspeicher auswählen."
+
+#. Tag: screeninfo
+#: index.docbook:138
+#, no-c-format
+msgid "<screeninfo>Select an encryption key</screeninfo>"
+msgstr "<screeninfo>Auswahl eines Schlüssels</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:141
+#, no-c-format
+msgid "<phrase>Select an encryption key</phrase>"
+msgstr "<phrase>Auswahl eines Schlüssels</phrase>"
+
+#. Tag: para
+#: index.docbook:145
+#, no-c-format
+msgid ""
+"&kwallet; will now use GPG when storing wallets and when opening them. The "
+"passphrase dialog only shows once. Even if the wallet is closed after "
+"initial open, subsequent opening will occur silently during the same &kde; "
+"session."
+msgstr ""
+"&kwallet; verwendet dann GPG beim Speichern und Öffnen eines "
+"Passwortspeichers. Der Kennsatz-Dialog erscheint nur einmal. Sogar wenn der "
+"Passwortspeicher nach dem anfänglichen Öffnen geschlossen wird, erfolgt das "
+"nachfolgende Öffnen ohne erneute Abfrage des Kennsatzes während derselben "
+"&kde;-Sitzung. "
+
+#. Tag: para
+#: index.docbook:150
+#, no-c-format
+msgid ""
+"The same &kde; session can handle simultaneously both file formats. "
+"&kwallet; will transparently detect the file format and load the correct "
+"backend to handle it."
+msgstr ""
+"In einer &kde;-Sitzung können beide Dateiformate gleichzeitig benutzt "
+"werden. &kwallet; erkennt automatisch des Dateiformat und lädt das "
+"zugehörige Backend zur Verarbeitung."
+
+#. Tag: para
+#: index.docbook:154
+#, no-c-format
+msgid ""
+"To use your sensitive data from your classic wallet with the new backend "
+"follow these steps:"
+msgstr ""
+"Um Ihre sensiblen Daten aus einem klassischen Passwortspeicher mit dem neuen "
+"Backend zu benutzen, folgen Sie diesen Anweisungen:"
+
+#. Tag: para
+#: index.docbook:158
+#, no-c-format
+msgid "Create a new GPG based wallet"
+msgstr "Erstellen Sie einen neuen Passwortspeicher mit GPG-Verschlüsselung"
+
+#. Tag: para
+#: index.docbook:159
+#, no-c-format
+msgid ""
+"Launch &kwalletmanager; and select your old wallet then choose "
+"<menuchoice><guimenu>File</guimenu> <guimenuitem>Export as XML</"
+"guimenuitem></menuchoice> to create an &XML; file with your sensitive data."
+msgstr ""
+"Starten Sie &kwalletmanager;, öffnen Sie Ihren alten Passwortspeicher und "
+"wählen dann <menuchoice><guimenu>Datei</guimenu> <guimenuitem>Als XML "
+"exportieren</guimenuitem></menuchoice>, um eine &XML;-Datei mit dem Inhalt "
+"des Passwortspeichers zu erzeugen."
+
+#. Tag: para
+#: index.docbook:162
+#, no-c-format
+msgid ""
+"Select the new GPG based wallet then choose <menuchoice><guimenu>File</"
+"guimenu> <guimenuitem>Import XML</guimenuitem></menuchoice> and select the "
+"file you just saved."
+msgstr ""
+"Öffnen Sie den neuen Passwortspeicher und wählen Sie dann mit "
+"<menuchoice><guimenu>Datei</guimenu> <guimenuitem>XML importieren</"
+"guimenuitem></menuchoice> die vorher gespeicherte Datei."
+
+#. Tag: para
+#: index.docbook:164
+#, no-c-format
+msgid "Encrypt the &XML; file to keep a backup."
+msgstr "Verschlüsseln Sie die &XML;-Datei, um eine Sicherung zu behalten"
+
+#. Tag: para
+#: index.docbook:166
+#, no-c-format
+msgid ""
+"<menuchoice><guimenu>File</guimenu><guimenuitem>Import Wallet</guimenuitem></"
+"menuchoice> but in that case you have to select the <filename class="
+"\"extension\">.kwl</filename> file corresponding to your old wallet, located "
+"in <filename class=\"directory\">$<envar>KDEHOME</envar>/.kde/share/apps/"
+"kwallet</filename>."
+msgstr ""
+"Alternative können Sie <menuchoice><guimenu>Datei</"
+"guimenu><guimenuitem>Passwortspeicher importieren</guimenuitem></menuchoice> "
+"benutzen, aber dann müssen sie die <filename class=\"extension\">.kwl</"
+"filename>-Datei zu Ihrem alten Passwortspeicher auswählen, die sich in "
+"<filename class=\"directory\">$<envar>KDEHOME</envar>/.kde/share/apps/"
+"kwallet</filename> befindet."
+
+#. Tag: para
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"Go to &systemsettings; <menuchoice><guimenu>Account Details</guimenu> "
+"<guimenuitem>KDE Wallet</guimenuitem></menuchoice> and select the newly "
+"created GPG based wallet from the <guilabel>Select wallet to use as default</"
+"guilabel> combobox."
+msgstr ""
+"Gehen Sie in den &systemsettings; zur Seite "
+"<menuchoice><guimenu>Benutzerkontodetails</guimenu> "
+"<guimenuitem>Passwortverwaltung</guimenuitem></menuchoice> und wählen Sie "
+"den neu erstellte GPG-basierten Passwortspeicher im Kombinationsfeld "
+"<guilabel>Standardpasswortspeicher</guilabel>."
+
+#. Tag: para
+#: index.docbook:182
+#, no-c-format
+msgid ""
+"&kwallet; supports multiple wallets, so for the most secure operation, you "
+"should use one wallet for local passwords, and another for network passwords "
+"and form data. You can configure this behavior in the &kwallet; "
+"&systemsettings; module, however the default setting is to store everything "
+"in one wallet."
+msgstr ""
+"Für sehr sicherheitsrelevante Aktionen sollten Sie einen Passwortspeicher "
+"für Passwörter im lokalen System und einen für Netzwerk-/Internet-Passwörter "
+"sowie Formulardaten benutzen. Standardmäßig werden allerdings alle "
+"Passwörter in einer einzigen Datei gehalten. Die detaillierten Einstellungen "
+"hierzu können Sie im &systemsettings;-Modul von &kwallet; vornehmen."
+
+#. Tag: para
+#: index.docbook:189
+#, no-c-format
+msgid ""
+"A wallet is by default closed, which means that you must supply a password "
+"to open it. Once the wallet is opened, the contents can be accessed."
+msgstr ""
+"Ein Passwortspeicher ist per Voreinstellung geschlossen, das heißt, sie "
+"müssen ein Passwort angeben, um ihn zu öffnen. Sobald der Passwortspeicher "
+"geöffnet ist, kann auf den Inhalt zugegriffen werden."
+
+#. Tag: title
+#: index.docbook:195
+#, no-c-format
+msgid "Using &kwallet;"
+msgstr "&kwallet; benutzen"
+
+#. Tag: para
+#: index.docbook:197
+#, no-c-format
+msgid ""
+"If you visit &eg; the &kde; bugtracker and enter the login data for the "
+"first time, a dialog pops up offering to store the password in an encrypted "
+"wallet:"
+msgstr ""
+"Wenn Sie &eg; zur Webseite des &kde;-Fehlerverfolgungssystems gehen und das "
+"erste Mal die Anmeldedaten eingegeben haben, wird ein Dialog angezeigt, in "
+"dem die Speicherung des Passwortes in einem Passwortspeicher angeboten wird:"
+
+#. Tag: screeninfo
+#: index.docbook:202
+#, no-c-format
+msgid "<screeninfo>Request to save login information</screeninfo>"
+msgstr ""
+"<screeninfo>Anfrage zur Speicherung der Anmeldeinformationen</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:205
+#, no-c-format
+msgid "<phrase>Request to save login information</phrase>"
+msgstr "<phrase>Anfrage zur Speicherung der Anmeldeinformationen</phrase>"
+
+#. Tag: para
+#: index.docbook:209
+#, no-c-format
+msgid ""
+"If you want to store this information, select <guibutton>Store</guibutton> "
+"to proceed. In case you did not create a wallet so far, the next dialog asks "
+"for the encryption backend and creates a wallet named kdewallet."
+msgstr ""
+"Möchten Sie diese Informationen speichern, dann drücken Sie den Knopf "
+"<guibutton>Speichern</guibutton>. Haben Sie bis dahin noch keinen "
+"Passwortspeicher erstellt, wird im nächsten Dialog nach der Verschlüsselungs-"
+"Methode gefragt und dann ein Passwortspeicher namens kdewallet erstellt."
+
+#. Tag: para
+#: index.docbook:214
+#, no-c-format
+msgid ""
+"Next time you visit the same website again, the application requests to open "
+"the wallet. Enter the wallet password and click the <guibutton>Open</"
+"guibutton> button."
+msgstr ""
+"Wenn Sie dieselbe Webseite das nächste Mal besuchen, fordert das Programm "
+"die Öffnung des Passwortspeichers an. Geben Sie das Passwort für den "
+"Passwortspeicher ein und drücken Sie den Knopf <guibutton>Öffnen</guibutton>."
+
+#. Tag: screeninfo
+#: index.docbook:218
+#, no-c-format
+msgid "<screeninfo>Request to open a wallet</screeninfo>"
+msgstr ""
+"<screeninfo>Die Öffnung des Passwortspeichers wird angefordert</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:221
+#, no-c-format
+msgid "<phrase>Request to open a wallet</phrase>"
+msgstr "<phrase>Die Öffnung des Passwortspeichers wird angefordert</phrase>"
+
+#. Tag: para
+#: index.docbook:225
+#, no-c-format
+msgid ""
+"This connects the application to the wallet, enables it to read the login "
+"data from the wallet and to restore the login information for this website. "
+"Once an application is connected to the wallet, it can automatically restore "
+"any login information stored in the wallet."
+msgstr ""
+"Damit erhält das Programm Zugriff auf den Passwortspeicher, kann die "
+"Anmeldedaten darin lesen und sie in die Anmeldungsfelder dieser Webseite "
+"eintragen. Hat ein Programm erst einmal Zugriff auf den Passwortspeicher, "
+"kann es automatisch alle Anmeldeinformationen darin bei den zugehörigen "
+"Webseiten für Sie eintragen."
+
+#. Tag: title
+#: index.docbook:234
+#, no-c-format
+msgid "&kwalletmanager;"
+msgstr "&kwalletmanager;"
+
+#. Tag: para
+#: index.docbook:236
+#, no-c-format
+msgid ""
+"&kwalletmanager; serves a number of functions. Firstly it allows you to see "
+"if any wallets are open, which wallets those are, and which applications are "
+"using each wallet. You can disconnect an application's access to a wallet "
+"from within the &kwalletmanager;."
+msgstr ""
+"&kwalletmanager; erfüllt eine Reihe von Aufgaben. Zuerst erlaubt Ihnen "
+"&kwalletmanager; zu sehen, ob und welche Passwortspeicher offen sind und "
+"welche Anwendungen darauf zugreifen. Sie können den Zugriff einer Anwendung "
+"auf einen Passwortspeicher im &kwalletmanager; unterbinden."
+
+#. Tag: para
+#: index.docbook:241
+#, no-c-format
+msgid ""
+"You may also manage the wallets installed on the system, creating and "
+"deleting wallets and manipulating their contents (changing keys, ...)."
+msgstr ""
+"Auch lassen sich hier die installierten Passwortspeicher verwalten und deren "
+"Inhalt ändern. Ebenso lassen sich neue Passwortspeicher hinzufügen oder "
+"bestehende Passwortspeicher löschen sowie deren Inhalt (Schlüssel ändern) "
+"bearbeiten."
+
+#. Tag: para
+#: index.docbook:244
+#, no-c-format
+msgid ""
+"The &kwalletmanager; application is launched with <menuchoice> "
+"<guimenu>Applications</guimenu><guisubmenu>System</guisubmenu> "
+"<guimenuitem>Wallet Management Tool</guimenuitem></menuchoice> from the "
+"application launcher. Alternatively start &krunner; with shortcut <keycombo "
+"action=\"simul\">&Alt;<keycap>F2</keycap></keycombo> and enter "
+"<command>kwalletmanager</command>."
+msgstr ""
+"Das Programm &kwalletmanager; wird mit <menuchoice> <guimenu>Programme</"
+"guimenu><guisubmenu>System</guisubmenu> <guimenuitem>&kwalletmanager; "
+"(Passwortverwaltung)</guimenuitem></menuchoice> aus dem Anwendungs-Starter "
+"aufgerufen. Alternativ starten Sie &krunner; mit dem Kurzbefehl <keycombo "
+"action=\"simul\">&Alt;<keycap>F2</keycap></keycombo> und geben dann den "
+"Befehl <command>kwalletmanager</command> ein."
+
+#. Tag: para
+#: index.docbook:252
+#, no-c-format
+msgid ""
+"A system tray icon indicates that a wallet is open: <mediaobject> "
+"<imageobject> <imagedata fileref=\"oxygen48-status-wallet-open.png\"/> </"
+"imageobject> </mediaobject> When all wallets are closed, the icon will "
+"reflect this by showing a closed wallet:"
+msgstr ""
+"Ein Symbol in der Kontrollleiste zeigt an, dass ein Passwortspeicher "
+"geöffnet ist: <mediaobject><imageobject><imagedata fileref=\"oxygen48-status-"
+"wallet-open.png\"/></imageobject></mediaobject>Sind alle Passwortspeicher "
+"geschlossen, so erscheint das Symbol einer geschlossenen Brieftasche."
+
+#. Tag: para
+#: index.docbook:270
+#, no-c-format
+msgid ""
+"Click once on the system tray wallet icon to display the &kwalletmanager; "
+"window."
+msgstr ""
+"Klicken Sie auf das Brieftaschensymbol im Systemabschnitt der "
+"Kontrollleiste, um das &kwalletmanager;-Fenster zu öffnen."
+
+#. Tag: screeninfo
+#: index.docbook:274
+#, no-c-format
+msgid "<screeninfo>Main window with one wallet</screeninfo>"
+msgstr "<screeninfo>Hauptfenster mit einem Passwortspeicher</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:280
+#, no-c-format
+msgid "<phrase>Main window with one wallet</phrase>"
+msgstr "<phrase>Hauptfenster mit einem Passwortspeicher</phrase>"
+
+#. Tag: para
+#: index.docbook:282
+#, no-c-format
+msgid "<para>Main window with one wallet</para>"
+msgstr "<para>Hauptfenster mit einem Passwortspeicher</para>"
+
+#. Tag: title
+#: index.docbook:293
+#, no-c-format
+msgid "The Wallet Window"
+msgstr "Das Fenster zum Passwortspeicher"
+
+#. Tag: para
+#: index.docbook:295
+#, no-c-format
+msgid ""
+"If you have more than one wallet all available wallets are shown as icons on "
+"the left. The Icons reflect the current wallet status, either open or closed."
+msgstr ""
+"Wenn Sie mehr als ein Passwortspeicher haben, werden alle verfügbaren "
+"Passwortspeicher links als Symbole angezeigt. Jeder Eintrag zeigt über ein "
+"Symbol, ob der Passwortspeicher geöffnet oder geschlossen ist."
+
+#. Tag: para
+#: index.docbook:298
+#, no-c-format
+msgid ""
+"Clicking on a wallet in the &kwalletmanager; window will display that "
+"wallet's status and the contents of an opened wallet. A wallet may contain "
+"any number of folders, which allow storing of password information. By "
+"default a wallet will contain folders named Form Data and Passwords."
+msgstr ""
+"Ein Klick auf einen Passwortspeicher im Fenster von &kwalletmanager; zeigt "
+"den Status und den Inhalt eines geöffneten Passwortspeicher. Ein "
+"Passwortspeicher kann beliebig viele Ordner enthalten, in denen "
+"Passwortdaten abgelegt werden können. Jeder Passwortspeicher enthält bereits "
+"die Ordner <quote>Form Data</quote> und <quote>Passwords</quote>."
+
+#. Tag: screeninfo
+#: index.docbook:305
+#, no-c-format
+msgid "<screeninfo>Main window with two wallets</screeninfo>"
+msgstr "<screeninfo>Hauptfenster mit zwei Passwortspeichern</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:311
+#, no-c-format
+msgid "<phrase>Main window with two wallets</phrase>"
+msgstr "<phrase>Hauptfenster mit zwei Passwortspeichern</phrase>"
+
+#. Tag: para
+#: index.docbook:313
+#, no-c-format
+msgid "<para>Main window with two wallets</para>"
+msgstr "<para>Hauptfenster mit zwei Passwortspeichern</para>"
+
+#. Tag: para
+#: index.docbook:316
+#, no-c-format
+msgid ""
+"Use <guibutton>Open</guibutton> to display the content of a closed wallet. "
+"You will be requested to enter the master password."
+msgstr ""
+"Benutzen Sie den Knöpf <guibutton>Öffnen</guibutton>, um den Inhalt eines "
+"geschlossenen Passwortspeichers anzuzeigen. Dazu müssen Sie das "
+"Hauptpasswort für den Passwortspeicher eingeben."
+
+#. Tag: title
+#: index.docbook:320
+#, no-c-format
+msgid "Contents tab"
+msgstr "Karteikarte Inhalte"
+
+#. Tag: para
+#: index.docbook:322
+#, no-c-format
+msgid "The <guilabel>Contents</guilabel> tab has three sections:"
+msgstr ""
+"Auf der Karteikarte <guilabel>Inhalte</guilabel> gibt es drei Abschnitte:"
+
+#. Tag: para
+#: index.docbook:325
+#, no-c-format
+msgid "A search line to filter the items of the current wallet"
+msgstr "Eine Suchleiste zur Filterung der Einträge im Passwortspeicher"
+
+#. Tag: para
+#: index.docbook:327
+#, no-c-format
+msgid ""
+"The tree view of the folders contained in the wallet. Click the <guiicon>&gt;"
+"</guiicon> / <guiicon>v</guiicon> icons to expand or collapse the tree view."
+msgstr ""
+"Die im Passwortspeicher enthaltenen Ordner als Baumansicht. Klicken Sie auf "
+"die Symbole <guiicon>&gt;</guiicon> / <guiicon>v</guiicon>, um die "
+"Baumansicht ein- oder auszuklappen."
+
+#. Tag: para
+#: index.docbook:330
+#, no-c-format
+msgid ""
+"The contents of the selected folder entry at the right side. By default the "
+"password and value are hidden. To display and edit them enable "
+"<guilabel>Show values</guilabel> or click the <guilabel>Show Contents</"
+"guilabel> button."
+msgstr ""
+"Den Inhalt des ausgewählten Ordnereintrags auf der rechten Seite. Als "
+"Standard sind Passwort und Wert ausgeblendet. Um sie anzuzeigen und zu "
+"bearbeiten, aktivieren Sie <guilabel>Werte anzeigen</guilabel> oder klicken "
+"Sie auf <guilabel>Inhalt anzeigen</guilabel>."
+
+#. Tag: para
+#: index.docbook:336
+#, no-c-format
+msgid ""
+"Folders may be added or deleted via the context menu, and selecting a folder "
+"will update the folder entry list and the summary display. Selecting a "
+"folder entry will update the entry contents pane, and allow you to edit that "
+"entry."
+msgstr ""
+"Ordner können mit dem Kontextmenü hinzugefügt oder gelöscht werden. Wird ein "
+"Ordner ausgewählt, so werden die Ordnereinträge und die Übersicht "
+"aktualisiert. Wird ein Ordnereintrag ausgewählt, so wird der Inhaltsbereich "
+"aktualisiert und die Einträge können geändert werden."
+
+#. Tag: para
+#: index.docbook:341
+#, no-c-format
+msgid ""
+"Entries may also be created, renamed or deleted via the context menu for the "
+"folder contents."
+msgstr ""
+"Einträge können auch über das Kontextmenü für die Ordnereinträge "
+"hinzugefügt, umbenannt oder gelöscht werden."
+
+#. Tag: para
+#: index.docbook:344
+#, no-c-format
+msgid ""
+"All folders and entries may be dragged and dropped into other wallets or "
+"folders respectively. This allows a user to easily package up a new wallet "
+"for transfer to another environment. For instance, a new wallet could be "
+"created and copied onto a removable flash memory device. Important passwords "
+"could be transferred there, so you have them available in other locations."
+msgstr ""
+"Alle Ordner und Einträge können auf andere Passwortspeicher respektive "
+"Ordner gezogen werden. Dies erlaubt es, einfach einen neuen Passwortspeicher "
+"anzulegen, die in einer anderen Umgebung verwendet werden kann. So kann zum "
+"Beispiel ein neuer Passwortspeicher angelegt und auf einen Wechselspeicher "
+"kopiert werden. So können wichtige Passwörter dorthin verschoben werden, "
+"sodass Sie sie überall zur Verfügung haben."
+
+#. Tag: title
+#: index.docbook:352
+#, no-c-format
+msgid "Import and Export"
+msgstr "Importieren und Exportieren"
+
+#. Tag: para
+#: index.docbook:353
+#, no-c-format
+msgid ""
+"If you want to transfer your secrets to another device or computer use the "
+"actions in the <guimenu>File</guimenu> menu. With <guimenuitem>Save As</"
+"guimenuitem> wallets can be exported into an encrypted <filename class="
+"\"extension\">.kwl</filename> file. Importing the <filename class=\"extension"
+"\">.kwl</filename> file you have to provide the master password of the "
+"wallet."
+msgstr ""
+"Wenn Sie Ihre Passwörter auf ein anderes Gerät oder einen anderen Rechner "
+"übertragen möchten, benutzen Sie die Aktionen im Menü <guimenu>Datei</"
+"guimenu>. Mit <guimenuitem>Speichern unter</guimenuitem> können "
+"Passwortspeicher in eine verschlüsselte <filename class=\"extension\">.kwl</"
+"filename>-Datei exportiert werden. Beim Importieren einer <filename class="
+"\"extension\">.kwl</filename>-Datei müssen Sie das Hauptpasswort des "
+"Passwortspeichers eingeben."
+
+#. Tag: para
+#: index.docbook:358
+#, no-c-format
+msgid ""
+"Alternatively a <filename class=\"extension\">.xml</filename> file can be "
+"used for transferring a wallet. Keep in mind that all secrets are stored as "
+"plain text in this file."
+msgstr ""
+"Als Alternative können Sie das Format <filename class=\"extension\">.xml</"
+"filename> zum Übertragen des Inhalts eines Passwortspeicher verwenden. "
+"Bedenken Sie, dass alle Passwörter als lesbarer Text in diesem Format "
+"gespeichert werden."
+
+#. Tag: title
+#: index.docbook:364
+#, no-c-format
+msgid "Adding Entries Manually"
+msgstr "Einträge manuell hinzufügen"
+
+#. Tag: para
+#: index.docbook:365
+#, no-c-format
+msgid ""
+"Open the context menu with the &RMB; click on <guilabel>Maps</guilabel> or "
+"<guilabel>Passwords</guilabel> in the <guilabel>Folder</guilabel> tree view. "
+"Select <guimenuitem>New</guimenuitem> and choose a name for the new entry."
+msgstr ""
+"Öffnet Sie das Kontextmenü mit der &RMB; auf <guilabel>Paare</guilabel> in "
+"der <guilabel>Ordner</guilabel>-Baumansicht. Wählen Sie <guilabel>Neu</"
+"guilabel> und geben dann einen Namen für den neuen Eintrag ein."
+
+#. Tag: para
+#: index.docbook:368
+#, no-c-format
+msgid ""
+"In the folder contents pane select <guilabel>New Entry</guilabel> from the "
+"context menu of <quote>Form Data</quote> or <quote>Passwords</quote>. For "
+"passwords click the <guilabel>Show Contents</guilabel> button, enter the new "
+"password. For Maps you have to add a <guilabel>Key</guilabel> and a "
+"<guilabel>Value</guilabel>. Click the <guilabel>Save</guilabel> button to "
+"store the new entries in the encrypted wallet file."
+msgstr ""
+"Auf der Karteikarte Inhalte wählen Sie <guilabel>Neuer Ordner</guilabel> aus "
+"dem Kontextmenü der Einträge <quote>Form Data</quote> oder <quote>Passwords</"
+"quote>. Für Passwörter klicken Sie dann auf <guilabel>Inhalte anzeigen</"
+"guilabel> und geben das Passwort ein. Für Paare müssen Sie einen "
+"<guilabel>Schlüssel</guilabel> und einen <guilabel>Wert</guilabel> angeben. "
+"Klicken Sie auf den Knopf <guilabel>Speichern</guilabel>, um die neuen "
+"Einträge verschlüsselt in den Passwortspeicher einzufügen. "
+
+#. Tag: title
+#: index.docbook:379
+#, no-c-format
+msgid "<title>Applications tab</title>"
+msgstr "<title>Karteikarte Anwendungen</title>"
+
+#. Tag: screeninfo
+#: index.docbook:382
+#, no-c-format
+msgid "<screeninfo>Applications tab</screeninfo>"
+msgstr "<screeninfo>Karteikarte Anwendungen</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:388
+#, no-c-format
+msgid "<phrase>Applications tab</phrase>"
+msgstr "<phrase>Karteikarte Anwendungen</phrase>"
+
+#. Tag: para
+#: index.docbook:390
+#, no-c-format
+msgid "<para>Applications tab</para>"
+msgstr "<para>Karteikarte Anwendungen</para>"
+
+#. Tag: para
+#: index.docbook:394
+#, no-c-format
+msgid ""
+"The first list shows all applications currently connected to the selected "
+"wallet. Use the button at the right side of each entry to disconnect the "
+"application."
+msgstr ""
+"Die erste Liste zeigt alle Anwendungen, die gerade mit dem ausgewählten "
+"Passwortspeicher verbunden sind. Benutzen Sie den Knopf rechts neben jedem "
+"Eintrag, um die Verbindung der Anwendung zu trennen."
+
+#. Tag: para
+#: index.docbook:397
+#, no-c-format
+msgid ""
+"In the second list all applications are displayed which are authorized to "
+"access the wallet. Use the button right of each entry in the list to revoke "
+"the access."
+msgstr ""
+"In der zweiten Liste werden alle Anwendungen angezeigt, deren Zugriff auf "
+"den Passwortspeicher autorisiert ist. Benutzen Sie den Knopf rechts neben "
+"jedem Eintrag in der Liste, um die Autorisierung zurückzuziehen."
+
+#. Tag: title
+#: index.docbook:407
+#, no-c-format
+msgid "Configuring &kwallet;"
+msgstr "&kwallet; einrichten"
+
+#. Tag: title
+#: index.docbook:410
+#, no-c-format
+msgid "Wallet Preferences"
+msgstr "Einstellungen für den Passwortspeicher"
+
+#. Tag: para
+#: index.docbook:412
+#, no-c-format
+msgid ""
+"&kwallet; contains a small configuration panel with several options that "
+"allow you to tune &kwallet; to your personal preferences. The default "
+"settings for &kwallet; are sufficient for most users."
+msgstr ""
+"&kwallet; besitzt einen Dialog mit diversen Einstellungen, der Ihnen die "
+"Anpassung von &kwallet; an Ihre Bedürfnisse erlaubt. Die "
+"Standardeinstellungen sollten allerdings für die meisten Benutzer genügen."
+
+#. Tag: para
+#: index.docbook:416
+#, no-c-format
+msgid ""
+"Check the box to enable or disable the &kde; wallet subsystem entirely. If "
+"this box is unchecked, then &kwallet; is entirely disabled and none of the "
+"other options here have any effect, nor will &kwallet; record any "
+"information, or offer to fill in forms for you."
+msgstr ""
+"Markieren Sie das Ankreuzfeld, um das Passwortspeicher-Subsystem von &kde; "
+"zu aktivieren. Ist dieses Feld nicht markiert, ist &kwallet; komplett "
+"deaktiviert und die anderen Einstellungen sind wirkungslos. &kwallet; "
+"speichert dann auch keine Informationen und bietet keine Hilfe beim "
+"Ausfüllen von Formularen an."
+
+#. Tag: guilabel
+#: index.docbook:422
+#, no-c-format
+msgid "Close Wallet"
+msgstr "Passwortspeicher schließen"
+
+#. Tag: guilabel
+#: index.docbook:424
+#, no-c-format
+msgid "Close when unused for:"
+msgstr "Bei Nichtgebrauch schließen nach:"
+
+#. Tag: para
+#: index.docbook:426
+#, no-c-format
+msgid ""
+"Close the current wallet after a period of inactivity. If you check this "
+"option, set the period in the box, default is 10 minutes. When a wallet is "
+"closed, the password is needed to access it again."
+msgstr ""
+"Schließt den Passwortspeicher nach einem Zeitraum ohne Aktivitäten. Ist "
+"diese Einstellung markiert, können Sie den gewünschten Zeitraum im Drehfeld "
+"einstellen; Die Voreinstellung ist 10 Minuten. Wird ein Passwortspeicher "
+"geschlossen, benötigen Sie für einen erneuten Zugriff das Passwort."
+
+#. Tag: guilabel
+#: index.docbook:433
+#, no-c-format
+msgid "Close when screensaver starts"
+msgstr "Schließen, wenn der Bildschirmschoner aktiv wird"
+
+#. Tag: para
+#: index.docbook:435
+#, no-c-format
+msgid ""
+"Close the wallet as soon as the screen saver starts. When a wallet is "
+"closed, the password is needed to access it again."
+msgstr ""
+"Schließt den Passwortspeicher, sobald der Bildschirmschoner aktiv wird. Wird "
+"ein Passwortspeicher geschlossen, benötigen Sie für einen erneuten Zugriff "
+"das Passwort."
+
+#. Tag: guilabel
+#: index.docbook:441
+#, no-c-format
+msgid "Close when last application stops using it"
+msgstr "Schließen, sobald keine Anwendung mehr darauf zugreift"
+
+#. Tag: para
+#: index.docbook:443
+#, no-c-format
+msgid ""
+"Close the wallet as soon as applications that use it have stopped. Note that "
+"your wallets will only be closed when all the applications that use it have "
+"stopped. When a wallet is closed, the password is needed to access it again."
+msgstr ""
+"Schließt den Passwortspeicher, sobald keine Anwendung mehr darauf zugreift. "
+"Beachten Sie, dass der Passwortspeicher erst dann geschlossen wird, wenn "
+"alle Anwendungen, die darauf zugreifen die Verbindung gelöst haben. Wird ein "
+"Passwortspeicher geschlossen, benötigen Sie für einen erneuten Zugriff das "
+"Passwort."
+
+#. Tag: guilabel
+#: index.docbook:452
+#, no-c-format
+msgid "Automatic Wallet Selection"
+msgstr "Automatische Wahl des Passwortspeichers"
+
+#. Tag: guilabel
+#: index.docbook:454
+#, no-c-format
+msgid "Select wallet to use as default:"
+msgstr "Standardpasswortspeicher:"
+
+#. Tag: para
+#: index.docbook:456
+#, no-c-format
+msgid "Select which wallet you want to use as default wallet."
+msgstr ""
+"Wählen Sie den Passwortspeicher, der als Standard verwendet werden soll."
+
+#. Tag: guilabel
+#: index.docbook:461
+#, no-c-format
+msgid "Different wallet for local passwords:"
+msgstr "Anderen Passwortspeicher für lokale Passwörter:"
+
+#. Tag: para
+#: index.docbook:463
+#, no-c-format
+msgid "If checked, choose a different wallet for local passwords."
+msgstr ""
+"Ist diese Einstellung markiert, wird für lokale Passwörter ein anderer "
+"Passwortspeicher verwendet."
+
+#. Tag: guilabel
+#: index.docbook:469
+#, no-c-format
+msgid "Wallet Manager"
+msgstr "Passwortverwaltung"
+
+#. Tag: guilabel
+#: index.docbook:471
+#, no-c-format
+msgid "Show manager in system tray"
+msgstr "Passwortverwaltung im Systembereich anzeigen"
+
+#. Tag: para
+#: index.docbook:473
+#, no-c-format
+msgid "Enable the wallet manager to have its icon in the system tray."
+msgstr ""
+"Aktiviert die Anzeige eines Symbols für die Passwortverwaltung im "
+"Systemabschnitt der Kontrollleiste."
+
+#. Tag: guilabel
+#: index.docbook:478
+#, no-c-format
+msgid "Hide System tray icon when last wallet closes"
+msgstr ""
+"Kontrollleistensymbol ausblenden, wenn der letzte Passwortspeicher "
+"geschlossen ist"
+
+#. Tag: para
+#: index.docbook:481
+#, no-c-format
+msgid ""
+"When there is no wallet in use anymore, remove the wallet icon from the "
+"system tray."
+msgstr ""
+"Ist kein Passwortspeicher mehr in Benutzung, wird das Symbol aus dem "
+"Systemabschnitt entfernt."
+
+#. Tag: para
+#: index.docbook:487
+#, no-c-format
+msgid ""
+"Finally, there is a button labeled <guibutton>Launch Wallet Manager</"
+"guibutton>, which does precisely that."
+msgstr ""
+"Zuletzt gibt es auch noch den Knopf <guibutton>Passwortverwaltung starten</"
+"guibutton>, um diesen Dienst zu aktivieren."
+
+#. Tag: para
+#: index.docbook:489
+#, no-c-format
+msgid "This button is only visible if &kwalletmanager; is not running"
+msgstr ""
+"Dieser Knopf wird nur dann angezeigt, wenn &kwalletmanager; nicht ausgeführt "
+"wird."
+
+#. Tag: title
+#: index.docbook:493
+#, no-c-format
+msgid "Access Control"
+msgstr "Zugriffsüberwachung"
+
+#. Tag: para
+#: index.docbook:495
+#, no-c-format
+msgid "There is only one option on this page:"
+msgstr "Auf dieser Seite gibt es nur eine Einstellung:"
+
+#. Tag: guilabel
+#: index.docbook:499
+#, no-c-format
+msgid "Prompt when an application accesses a wallet"
+msgstr ""
+"Nachfragen, wenn eine Anwendung auf einen Passwortspeicher zugreifen will."
+
+#. Tag: para
+#: index.docbook:501
+#, no-c-format
+msgid "Signal you when an application gains access to a wallet."
+msgstr ""
+"Nachfragen, wenn eine Anwendung auf einen geöffneten Passwortspeicher "
+"zugreifen will.."
+
+#. Tag: para
+#: index.docbook:506
+#, no-c-format
+msgid ""
+"Next there is a tree style view of the access controls for your wallets."
+msgstr ""
+"Darunter befindet sich eine Baumansicht mit den Zugriffsdaten und Regeln für "
+"den Passwortspeicher."
+
+#. Tag: para
+#: index.docbook:508
+#, no-c-format
+msgid ""
+"Click with the &LMB; on the <guiicon>&gt;</guiicon> symbol beside a wallet "
+"name to expand the tree. You will see the name of each application that has "
+"asked for access to the wallet, and the policy you set for it. You cannot "
+"edit policies here, or add them, but it is possible to delete an entry by "
+"&RMB; clicking on it and choosing <guimenuitem>Delete</guimenuitem> from the "
+"context menu that appears, or by simply selecting it and pressing the "
+"<keysym>Del</keysym> key."
+msgstr ""
+"Klicken Sie mit der &LMBn; auf das kleine <guiicon>&gt;</guiicon>-Symbol "
+"neben den Namen eines Passwortspeichers, um den Baum zu öffnen. Sie sehen "
+"dann den Namen jeder Anwendung, die Zugriff auf den Passwortspeicher hat und "
+"die Richtlinien, die sie dafür festgelegt haben. Sie können keine "
+"Richtlinien ändern oder hinzufügen, einzig löschen können Sie einen Eintrag, "
+"wenn Sie mit der &RMBn; das Kontextmenü öffnen und darin "
+"<guimenuitem>Löschen</guimenuitem> wählen oder die Taste <keycap>Entf</"
+"keycap> drücken."
+
+#. Tag: para
+#: index.docbook:516
+#, no-c-format
+msgid ""
+"An application that has been allowed access to a wallet is granted access to "
+"all passwords stored inside."
+msgstr ""
+"Ein Programm, das den Passwortspeicher öffnen darf, kann auch alle darin "
+"enthaltenen Passwörter lesen."
+
+#. Tag: para
+#: index.docbook:519
+#, no-c-format
+msgid ""
+"If you erroneously configured an application not to use the &kde; "
+"&kwalletmanager; delete the policy for this application here."
+msgstr ""
+"Wenn Sie versehentlich eine Anwendung so eingerichtet haben, &kde;-"
+"&kwalletmanager; nicht zu benutzen, löschen Sie die Regelung für diese "
+"Anwendung hier."
+
+#. Tag: para
+#: index.docbook:522
+#, no-c-format
+msgid ""
+"On the next start of this application you can define a new policy for access "
+"to the wallet."
+msgstr ""
+"Beim nächsten Start dieser Anwendung können Sie dann eine neue Regelung für "
+"den Zugriff auf den Passwortspeicher festlegen."
+
+#. Tag: screeninfo
+#: index.docbook:526
+#, no-c-format
+msgid "<screeninfo>Access request to open a wallet</screeninfo>"
+msgstr ""
+"<screeninfo>Die Öffnung eines Passwortspeichers wird angefordert</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:532
+#, no-c-format
+msgid "<phrase>Access request to open a wallet</phrase>"
+msgstr "<phrase>Die Öffnung des Passwortspeichers wird angefordert</phrase>"
+
+#. Tag: para
+#: index.docbook:534
+#, no-c-format
+msgid "An application requesting access to a wallet"
+msgstr "Anforderung einer Anwendung zum Zugriff auf einen Passwortspeicher."
+
+#. Tag: title
+#: index.docbook:606
+#, no-c-format
+msgid "Advanced Features"
+msgstr "Weitergehende Funktionen"
+
+#. Tag: para
+#: index.docbook:608
+#, no-c-format
+msgid ""
+"Wallets can be dragged from the &kwalletmanager; window. This allows you to "
+"drag the wallet to a file browser window, where you can choose to copy, "
+"move, or link the wallet, as desired."
+msgstr ""
+"Ein Passwortspeicher kann aus dem &kwalletmanager;-Fenster auf ein "
+"Dateiverwaltungs-Fenster gezogen werden, um dort eine Kopie oder eine "
+"Verknüpfung anzulegen oder sie dorthin zu verschieben."
+
+#. Tag: para
+#: index.docbook:612
+#, no-c-format
+msgid ""
+"You might use this to save a wallet to portable media, such as a USB "
+"keychain, so that you can take your passwords with you to work or on a "
+"vacation, and still have easy access to important sites."
+msgstr ""
+"Verwenden Sie diese Möglichkeit, wenn Sie einen Passwortspeicher auf ein "
+"Wechselmedium wie einen USB-Stick kopieren wollen. So haben Sie Ihre "
+"Passwörter immer dabei, zu Hause, bei der Arbeit oder in den Ferien."
+
+#. Tag: para
+#: index.docbook:616
+#, no-c-format
+msgid ""
+"Future versions will have built-in functions for easy export or copying of "
+"data to portable devices."
+msgstr ""
+"Zukünftige Versionen werden Funktionen zum einfachen Exportieren oder "
+"Kopieren der Daten auf Wechselmedien anbieten."
+
+#. Tag: para
+#: index.docbook:620
+#, no-c-format
+msgid ""
+"Information on the internal structure of &kwallet; and some useful links to "
+"the code where you can find the answers on questions about the structure of "
+"the passwords records and the ciphers applied to keep passwords confident "
+"can be found on <ulink url=\"http://techbase.kde.org/Projects/Utils/kwallet"
+"\">&kwallet; TechBase page</ulink>."
+msgstr ""
+"Informationen über die interne Struktur von &kwallet; und einige nützliche "
+"Verknüpfungen zum Quelltext, in denen Sie Antworten auf Fragen über die "
+"Struktur der Passwort-Datensätze und die Verschlüsselung der Passworte "
+"finden Sie auf der <ulink url=\"http://techbase.kde.org/Projects/Utils/"
+"kwallet\">&kwallet;-TechBase-Seite</ulink>."
+
+#. Tag: title
+#: index.docbook:633
+#, no-c-format
+msgid "Credits and License"
+msgstr "Danksagungen und Lizenz"
+
+#. Tag: para
+#: index.docbook:635
+#, no-c-format
+msgid "&kwallet; &copy; 2003 &George.Staikos;"
+msgstr "&kwallet; &copy; 2003 &George.Staikos;"
+
+#. Tag: para
+#: index.docbook:636
+#, no-c-format
+msgid "Documentation &copy; &Lauri.Watts; and &George.Staikos;"
+msgstr "Dokumentation &copy; &Lauri.Watts; und &George.Staikos;"
+
+#. Tag: trans_comment
+#: index.docbook:638
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Übersetzung Gregor Zumstein <email>gz@orchester-bremgarten.ch</email></"
+"para> "
+
+#. Tag: chapter
+#: index.docbook:638
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr "&underFDL; &underGPL;"
+
+#~ msgid "2013-06-06"
+#~ msgstr "2013-06-06"
+
+#~ msgid "The &kwalletmanager; Context Menu"
+#~ msgstr "Das Kontextmenü von &kwalletmanager;"
+
+#~ msgid ""
+#~ "<mousebutton>Right</mousebutton> clicking on a wallet in the "
+#~ "&kwalletmanager; window offers the following functions:"
+#~ msgstr ""
+#~ "Ein Klick mit der <mousebutton>rechten Maustaste</mousebutton> auf eine "
+#~ "digitale Brieftasche in &kwalletmanager; erlaubt den Zugriff auf die "
+#~ "folgenden Funktionen:"
+
+#~ msgid "New Wallet..."
+#~ msgstr "Neue digitale Brieftasche ..."
+
+#~ msgid ""
+#~ "Create a new wallet. A dialog box will ask you for the name of the new "
+#~ "wallet that you want to create."
+#~ msgstr ""
+#~ "Anlegen einer neuen digitalen Brieftasche. Es wird ein Dialogfenster "
+#~ "geöffnet, das den Namen der neuen digitalen Brieftasche erfragt."
+
+#~ msgid ""
+#~ "<shortcut><keycap>Return</keycap></shortcut> <guisubmenu>Open...</"
+#~ "guisubmenu>"
+#~ msgstr ""
+#~ "<shortcut><keycap>Eingabe</keycap></shortcut><guisubmenu>Öffnen ...</"
+#~ "guisubmenu>"
+
+#~ msgid ""
+#~ "Open the wallet. Opening the wallet causes the contents of the wallet to "
+#~ "be displayed in a new window where you can add, delete, or modify the "
+#~ "contents of the wallet. You may also double click the wallet icon to "
+#~ "cause it to open. If the wallet is not already open, you will be "
+#~ "requested to enter the password. See below for details of using the "
+#~ "wallet window."
+#~ msgstr ""
+#~ "Öffnet die digitale Brieftasche. Das Öffnen der digitalen Brieftasche "
+#~ "bewirkt, dass der Inhalt in einem Fenster angezeigt wird. Dort können Sie "
+#~ "den Inhalt der Brieftasche löschen, ändern oder neue Einträge hinzufügen. "
+#~ "Sie können die digitale Brieftasche auch mit einem Doppelklick auf das "
+#~ "Symbol öffnen. Ist die digitale Brieftasche noch nicht geöffnet, wird das "
+#~ "Passwort abgefragt. Weitere Einzelheiten zum Arbeiten mit diesem Fenster "
+#~ "finden Sie weiter unten."
+
+#~ msgid "Change Password..."
+#~ msgstr "Passwort ändern ..."
+
+#~ msgid "Change the master password for the wallet."
+#~ msgstr "Das Hauptpasswort für die digitale Brieftasche ändern."
+
+#~ msgid "Disconnect"
+#~ msgstr "Verbindung trennen"
+
+#~ msgid ""
+#~ "Disconnect an application from the wallet. Currently connected "
+#~ "applications will appear in a submenu."
+#~ msgstr ""
+#~ "Den Zugriff einer Anwendung auf die digitale Brieftasche unterbinden. "
+#~ "Verbundene Anwendungen werden im Untermenü angezeigt."
+
+#~ msgid ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>W</keycap></"
+#~ "keycombo></shortcut> <guimenuitem>Close</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>W</keycap></keycombo></"
+#~ "shortcut><guimenuitem>Schließen</guimenuitem>"
+
+#~ msgid "Force the wallet to be closed."
+#~ msgstr "Die digitale Brieftasche wird sofort geschlossen."
+
+#~ msgid ""
+#~ "<shortcut><keycap>Del</keycap></shortcut><guimenuitem>Delete</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut><keycap>Entf</keycap></shortcut><guisubmenu>Löschen</guisubmenu>"
+
+#~ msgid "Delete the wallet"
+#~ msgstr "Die digitale Brieftasche wird gelöscht."
+
+#~ msgid "The window has three sections:"
+#~ msgstr "Das Fenster enthält drei Bereiche:"
+
+#~ msgid "The contents of the selected folder entry at the right side"
+#~ msgstr "Den Inhalt des ausgewählten Ordnereintrags auf der rechten Seite"
+
+#~ msgid "&kde; Secret Sync"
+#~ msgstr "Abgleich für Passwortverwaltung"
+
+#~ msgid ""
+#~ "KDE Secret Sync tool aims to help synchronize secrets, such as passwords "
+#~ "and login-in account information, between several devices running KDE. It "
+#~ "comes as a feature of the new KSecretsService infrastructure. For more "
+#~ "information about this infrastructure, please check the <ulink url="
+#~ "\"http://techbase.kde.org/Projects/Utils/ksecretsservice"
+#~ "\">KSecretsService page</ulink> and also the <ulink url=\"https://"
+#~ "projects.kde.org/projects/kde/kdeutils/ksecrets\">project information "
+#~ "page</ulink>. This tool is currently under development."
+#~ msgstr ""
+#~ "Der &kde;-Abgleichdienst für Passwortverwaltung erleichtert das "
+#~ "Abgleichen von Passwörtern und Anmeldeinformationen zwischen mehreren "
+#~ "Rechner, auf denen die &kde;-Arbeitsumgebung läuft. Diese Funktion ist "
+#~ "ein Teil der neuen KSecretsService-Infrastruktur. Weitere Informationen "
+#~ "dazu finden Sie auf der Seite <ulink url=\"http://techbase.kde.org/"
+#~ "Projects/Utils/ksecretsservice\">KSecretsService</ulink> und auch auf der "
+#~ "<ulink url=\"https://projects.kde.org/projects/kde/kdeutils/ksecrets"
+#~ "\">Projektseite</ulink>. Diese Infrastruktur befindet sich zurzeit noch "
+#~ "in der Entwicklung."
+
+#~ msgid ""
+#~ "&kde; Secret Sync uses cryptography to securely exchange the secrets "
+#~ "between the devices. As such, it can be used over insecure connections, "
+#~ "such as the Internet."
+#~ msgstr ""
+#~ "Der &kde;-Abgleich für Passwortverwaltung benutzt eine durch "
+#~ "Verschlüsselung gesicherte Verbindung zwischen den Rechnern. Daher kann "
+#~ "der Abgleich auch über unsichere Verbindungen wie das Internet erfolgen."
+
+#~ msgid "Peer-to-peer synchronization"
+#~ msgstr "Peer-to-Peer Abgleich zwischen Rechnern"
+
+#~ msgid ""
+#~ "This operation mode does not require access to a centralized server. A "
+#~ "list of known computers is used instead. &kde; Secret Sync will initiate "
+#~ "secret exchange sessions with each of it's known computers over a SSH "
+#~ "tunnel. The local secret changes are propagated to the other known "
+#~ "computers as soon as they are detected."
+#~ msgstr ""
+#~ "Dieser Arbeitsmodus benötigt keinen Zugriff auf einen zentralen Server. "
+#~ "Statt dessen wird eine Liste aller bekannten Rechner verwendet. Der "
+#~ "Abgleich für Passwortverwaltung wird mit jedem der bekannten Rechner über "
+#~ "einen SSH-Tunnel durchgeführt. Lokale Änderungen von Passwörtern und "
+#~ "Anmeldeinformationen werden anderen Rechnern mitgeteilt, sobald sie "
+#~ "erkannt werden."
+
+#~ msgid ""
+#~ "This case require a network connection between known devices. The &kde; "
+#~ "Secret Sync tool will hold sync operations with the devices that are not "
+#~ "available due to network outages. A naming service should be used for "
+#~ "devices that change IP address with each connection."
+#~ msgstr ""
+#~ "Für den Abgleich ist eine Netzwerkverbindung zwischen den bekannten "
+#~ "Rechnern erforderlich. Der Abgleichdienst für Passwortverwaltung hält "
+#~ "Abgleichoperationen für Rechner zurück, die zeitweilig nicht am Netzwerk "
+#~ "angeschlossen sind. Für Rechner, die bei jeder Verbindung eine andere IP-"
+#~ "Adresse erhalten, sollte eine Namensauflösung eingerichtet werden."
+
+#~ msgid ""
+#~ "On the <guilabel>General</guilabel> tab check <guilabel>Enable auto "
+#~ "synchronization</guilabel> and adjust the port your computer is listening "
+#~ "for this service. Go to the <guilabel>Computers</guilabel> tab and add "
+#~ "all remote computer names and the port numbers they are listening for "
+#~ "synchronization of secrets."
+#~ msgstr ""
+#~ "Auf der Karteikarte <guilabel>Allgemein</guilabel> wählen Sie "
+#~ "<guilabel>Automatischen Abgleich aktivieren</guilabel> und stellen den "
+#~ "Dienst-Port ein, den Ihr Rechner für den Abgleichdienst verwendet, "
+#~ "Wechseln Sie dann zur Karteikarte <guilabel>Rechner</guilabel> und geben "
+#~ "für alle entfernten Rechner deren Namen  und den Port an, den Sie für "
+#~ "diesen Dienst verwenden."
+
+#~ msgid "Close"
+#~ msgstr "Schließen"
+
+#~ msgid "Delete"
+#~ msgstr "Löschen"
+
+#~ msgid "The folders contained in the wallet"
+#~ msgstr "Die Ordner in der digitalen Brieftasche"
+
+#~ msgid "The entries in the currently selected folder"
+#~ msgstr "Die Einträge im ausgewählten Ordner"
+
+#~ msgid "staikos@kde.org"
+#~ msgstr "staikos@kde.org"

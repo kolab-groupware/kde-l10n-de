@@ -1,0 +1,539 @@
+# Matthias Kalle Dalheimer <kalle@klaralvdalens-datakonsult.se>, 2004.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005.
+# Burkhard Lück <lueck@hube-lueck.de>, 2006, 2007, 2009, 2010, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: kwatchgnupg\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:11+0000\n"
+"PO-Revision-Date: 2014-03-28 13:23+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:16
+#, no-c-format
+msgid "The &kwatchgnupg; Handbook"
+msgstr "Das Handbuch zu &kwatchgnupg;"
+
+#. Tag: author
+#: index.docbook:19
+#, no-c-format
+msgid "<firstname>Marc</firstname> <surname>Mutz</surname>"
+msgstr "<firstname>Marc</firstname> <surname>Mutz</surname>"
+
+#. Tag: address
+#: index.docbook:23
+#, no-c-format
+msgid "&Marc.Mutz.mail;"
+msgstr "&Marc.Mutz.mail;"
+
+#. Tag: othercredit
+#: index.docbook:27
+#, no-c-format
+msgid "<firstname>Steffen</firstname> <surname>Hansen</surname>"
+msgstr "<firstname>Steffen</firstname> <surname>Hansen</surname>"
+
+#. Tag: contrib
+#: index.docbook:30 index.docbook:42
+#, no-c-format
+msgid "Developer"
+msgstr "Entwickler"
+
+#. Tag: address
+#: index.docbook:32
+#, no-c-format
+msgid "&Steffen.Hansen.mail;"
+msgstr "&Steffen.Hansen.mail;"
+
+#. Tag: othercredit
+#: index.docbook:36
+#, no-c-format
+msgid "<firstname>David</firstname> <surname>Faure</surname>"
+msgstr "<firstname>David</firstname> <surname>Faure</surname>"
+
+#. Tag: address
+#: index.docbook:40
+#, no-c-format
+msgid "&David.Faure.mail;"
+msgstr "&David.Faure.mail;"
+
+#. Tag: trans_comment
+#: index.docbook:44
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Matthias</"
+"firstname><othername>Kalle</othername><surname>Dalheimer</"
+"surname><affiliation><address><email>kalle@klaralvdalens-datakonsult.se</"
+"email></address></affiliation><contrib>Deutsche Übersetzung</contrib></"
+"othercredit>"
+
+#. Tag: date
+#: index.docbook:49
+#, no-c-format
+msgid "2013-07-03"
+msgstr "2013-07-03"
+
+#. Tag: releaseinfo
+#: index.docbook:50
+#, no-c-format
+msgid "1.0 (&kde; 4.11)"
+msgstr "1.0 (&kde; 4.11)"
+
+#. Tag: para
+#: index.docbook:53
+#, no-c-format
+msgid "&kwatchgnupg; is a simple &gnupg; log viewer."
+msgstr ""
+"&kwatchgnupg; ist ein einfacher Betrachter für die Protokollausgabe von "
+"&gnupg;"
+
+#. Tag: keyword
+#: index.docbook:60
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:61
+#, no-c-format
+msgid "Kapp"
+msgstr "Kapp"
+
+#. Tag: keyword
+#: index.docbook:62
+#, no-c-format
+msgid "<keyword>gpg</keyword>"
+msgstr "<keyword>gpg</keyword>"
+
+#. Tag: keyword
+#: index.docbook:63
+#, no-c-format
+msgid "gpgsm"
+msgstr "gpgsm"
+
+#. Tag: keyword
+#: index.docbook:64
+#, no-c-format
+msgid "GnuPG"
+msgstr "GnuPG"
+
+#. Tag: keyword
+#: index.docbook:65
+#, no-c-format
+msgid "Log viewer"
+msgstr "Protokollbetrachter"
+
+#. Tag: title
+#: index.docbook:70
+#, no-c-format
+msgid "Introduction"
+msgstr "Einführung"
+
+#. Tag: para
+#: index.docbook:72
+#, no-c-format
+msgid ""
+"&kwatchgnupg; is simple &gnupg; log viewer for the &gnupg; versions 1.4 and "
+"2.0. It works as a &GUI; wrapper around the command line tool &watchgnupg;, "
+"which listens on a socket for log lines from the &gnupg; backend "
+"applications. See <userinput>info watchgnupg</userinput> for more "
+"information about &watchgnupg;."
+msgstr ""
+"&kwatchgnupg; ist ein einfacher Betrachter für die Protokollausgabe der "
+"&gnupg;-Versionen 1.4 und 2.0. Es funktioniert als eine &GUI; um das "
+"Befehlszeilenprogramm &watchgnupg;. welches an einem Socket auf "
+"Protokollzeilen von den &gnupg;-Hintergrundapplikationen wartet. Nähere "
+"Informationen zu &watchgnupg; finden Sie unter <userinput>info watchgnupg</"
+"userinput>."
+
+#. Tag: para
+#: index.docbook:79
+#, no-c-format
+msgid ""
+"&kwatchgnupg; can be started from the <menuchoice><guimenu>Tools</"
+"guimenu><guimenuitem>GnuPG Log Viewer</guimenuitem></menuchoice> menu of "
+"both &kleopatra; and &kmail;, as well as from the command line. The "
+"&kwatchgnupg; executable is named <userinput>kwatchgnupg</userinput>."
+msgstr ""
+"&kwatchgnupg; kann aus dem Menü <menuchoice><guimenu>Extras</"
+"guimenu><guimenuitem>GnuPG-Protokollanzeige</guimenuitem></menuchoice> "
+"sowohl von &kleopatra; als auch von &kmail;, wie auch von der Befehlszeile "
+"gestartet werden. Der Name der ausführbaren Datei von &kwatchgnupg; lautet "
+"<userinput>kwatchgnupg</userinput>."
+
+#. Tag: title
+#: index.docbook:88
+#, no-c-format
+msgid "Main Functions"
+msgstr "Wichtige Funktionen"
+
+#. Tag: title
+#: index.docbook:90
+#, no-c-format
+msgid "Viewing the Log"
+msgstr "Betrachten des Protokolls"
+
+#. Tag: para
+#: index.docbook:92
+#, no-c-format
+msgid ""
+"&kwatchgnupg;'s main function is of course to present the &gnupg; debugging "
+"and logging information to the user. The main window is divided into a large "
+"text viewing area, where &gnupg; messages will appear as they are generated, "
+"a toolbar giving quick access to the most often needed functions, as well as "
+"the obligatory menu bar."
+msgstr ""
+"Die wichtigste Funktion von &kwatchgnupg; ist natürlich das Aufbereiten der "
+"&gnupg;-Informationen zur Fehlersuche und Protokollierung für den "
+"Betrachter. Das Hauptfenster besteht aus einem großen Bereich, in dem die "
+"&gnupg;-Nachrichten angezeigt werden, wenn sie ausgegeben werden, eine "
+"Werkzeugleiste, mit der die wichtigsten Funktionen schnell erreicht werden "
+"können, sowie der obligatorischen Menüleiste."
+
+#. Tag: para
+#: index.docbook:100
+#, no-c-format
+msgid ""
+"Each line in the text view is normally prefixed with a <acronym>FD</acronym> "
+"identifier and a time stamp in ISO format. The <acronym>FD</acronym> "
+"identifier can be used to distinguish between output from different &gnupg; "
+"instances running in parallel. Following the timestamp is the name of the "
+"component that is the source of the log line, together with some internal "
+"information in sqare brackets, followed by the original debugging or log "
+"output as printed by the component."
+msgstr ""
+"Jede Zeile in der Textansicht ist normalerweise ein <acronym>FD</acronym>-"
+"Bezeichner und ein Datumsstempel im ISO-Format vorangestellt. Der "
+"<acronym>FD</acronym>-Bezeichner kann dazu verwendet werden, Ausgaben von "
+"verschiedenen, gleichzeitig laufenden &gnupg;-Instanzen voneinander zu "
+"unterscheiden. Auf den Datumsstempel folgt der Name der Komponente, aus der "
+"die Protokollzeile stammt, sowie interne Informationen in eckigen Klammern. "
+"Anschließend folgt die ursprüngliche Fehlersuch- oder Protokollausgabe, wie "
+"sie von der Komponente ausgegeben wurde."
+
+#. Tag: para
+#: index.docbook:111
+#, no-c-format
+msgid ""
+"By default, the number of log lines that are kept in the history is limited "
+"to 10000 lines. You can configure the history size in the configuration "
+"dialog."
+msgstr ""
+"Als Standard ist die Anzahl der Protokollzeilen, die wieder abgerufen werden "
+"kann, auf 10 000 begrenzt. Sie können diese Anzahl aber im "
+"Einstellungsdialog verändern."
+
+#. Tag: title
+#: index.docbook:120
+#, no-c-format
+msgid "Saving the Contents of the Log Window to a File"
+msgstr "Den Inhalt des Protokollfensters in einer Datei speichern"
+
+#. Tag: para
+#: index.docbook:122
+#, no-c-format
+msgid ""
+"Sometimes it might be convenient to save the current log window contents to "
+"a file, &eg; to mail it to the developers as part of a bug report. There are "
+"two ways to achieve this in &kwatchgnupg;:"
+msgstr ""
+"Manchmal ist es nützlich, den Inhalt des aktuellen Protokollfensters in "
+"einer Datei abzuspeichern, etwa um ihn den Entwicklern als Teil einer "
+"Fehlermeldung zu schicken. Dies können Sie &kwatchgnupg; auf zweierlei Weise "
+"erreichen:"
+
+#. Tag: para
+#: index.docbook:128
+#, no-c-format
+msgid ""
+"First, you can choose <menuchoice><guilabel>File</guilabel><guimenuitem>Save "
+"As...</guimenuitem></menuchoice> (or the corresponding toolbar icon) to save "
+"the complete log window contents to a file. You will be prompted to specify "
+"a save file location."
+msgstr ""
+"Einmal können Sie <menuchoice><guilabel>Datei</"
+"guilabel><guimenuitem>Speichern unter ...</guimenuitem></menuchoice> (oder "
+"die entsprechende Schaltfläche in der Werkzeugleiste) verwenden, um den "
+"gesamten Inhalt des Protokollfensters in einer Datei zu speichern. Sie "
+"werden nach der zu verwendenden Datei gefragt."
+
+#. Tag: para
+#: index.docbook:136
+#, no-c-format
+msgid ""
+"Second, you can select the interesting lines with normal left-mouse "
+"selection and paste them into a word processor or mail user agent, just like "
+"any other text. You should make sure, though, that lines are not broken, "
+"since this reduces the readability of the log."
+msgstr ""
+"Zum anderen können Sie auch die interessanten Zeilen wie gewohnt mit der "
+"linken Maustaste auswählen und dann in eine Textverarbeitung oder ein E-Mail-"
+"Programm einkopieren, genau wie anderen Text auch. Sie sollten aber "
+"sicherstellen, dass die Zeilen nicht umbrochen werden, weil das die "
+"Lesbarkeit des Protokolls herabsetzen würde."
+
+#. Tag: title
+#: index.docbook:145
+#, no-c-format
+msgid "Clearing the Log Window"
+msgstr "Das Protokollfenster leeren"
+
+#. Tag: para
+#: index.docbook:147
+#, no-c-format
+msgid ""
+"For convenience, you can instruct &kwatchgnupg; to clear the log window "
+"using <menuchoice><guimenu>File</guimenu><guimenuitem>Clear History</"
+"guimenuitem></menuchoice> (or the corresponding toolbar icon)."
+msgstr ""
+"Mit <menuchoice><guimenu>Datei</guimenu><guimenuitem>Verlaufspeicher "
+"löschen</guimenuitem></menuchoice> (oder der entsprechenden Schaltfläche in "
+"der Werkzeugleiste) können Sie den Inhalt des Protokollfensters löschen."
+
+#. Tag: para
+#: index.docbook:154
+#, no-c-format
+msgid ""
+"Use this prior to starting the crypto operation that you want to monitor to "
+"get only the output from that operation. You can then save the log using "
+"<menuchoice><guimenu>File</guimenu><guimenuitem>Save As...</guimenuitem></"
+"menuchoice> as described above."
+msgstr ""
+"Dies können Sie beispielsweise vor dem Start einer Krypto-Operation tun, um "
+"nur die Ausgabe dieser einen Operation zu sehen. Das Protokoll können Sie "
+"dann wie oben beschrieben mit <menuchoice><guimenu>Datei</"
+"guimenu><guimenuitem>Speichern unter ...</guimenuitem></menuchoice> "
+"abspeichern."
+
+#. Tag: para
+#: index.docbook:161
+#, no-c-format
+msgid ""
+"Clearing the log discards any previous log window contents. If you are "
+"unsure about whether you'll need the current contents afterwards, you should "
+"save them to a file (see above) before clearing."
+msgstr ""
+"Das Leeren des Protokolls verwirft alle vorherigen Inhalte des "
+"Protokollfensters. Wenn Sie sich nicht sicher sind, ob Sie den aktuellen "
+"Inhalt später noch benötigen, sollten Sie diesen wie oben beschrieben vorher "
+"in einer Datei speichern."
+
+#. Tag: title
+#: index.docbook:171
+#, no-c-format
+msgid "Configuring &kwatchgnupg;"
+msgstr "&kwatchgnupg; einrichten"
+
+#. Tag: para
+#: index.docbook:173
+#, no-c-format
+msgid ""
+"To configure &kwatchgnupg;, select <menuchoice><guimenu>Settings</"
+"guimenu><guimenuitem>Configure &kwatchgnupg;</guimenuitem></menuchoice>, or "
+"the corresponding toolbar icon. &kwatchgnupg;'s configure dialog is divided "
+"into two parts, each of which will be described below."
+msgstr ""
+"Zur Einrichtung von &kwatchgnupg; wählen Sie "
+"<menuchoice><guimenu>Einstellungen</guimenu><guimenuitem>&kwatchgnupg; "
+"einrichten ...</guimenuitem></menuchoice> aus dem Menü aus oder betätigen "
+"die entsprechende Schaltfläche in der Werkzeugleiste. Der Einrichtungsdialog "
+"von &kwatchgnupg; besteht aus zwei Teilen, die hier beide beschrieben werden."
+
+#. Tag: title
+#: index.docbook:181
+#, no-c-format
+msgid "&watchgnupg; Settings"
+msgstr "&watchgnupg;-Einstellungen"
+
+#. Tag: para
+#: index.docbook:183
+#, no-c-format
+msgid ""
+"&watchgnupg; is the process that actually monitors the logging socket for "
+"activity and formats the lines as seen in the &kwatchgnupg; text view. "
+"Settings in this group are passed down to the backend using the &gpgconf; "
+"mechanism."
+msgstr ""
+"&watchgnupg; ist der Prozess, der das Protokollsocket auf Aktivität "
+"überwacht in die Zeilen so formatiert, wie sie in der Textansicht von "
+"&kwatchgnupg; zu sehen sind. Die Einstellungen in dieser Gruppe werden über "
+"den &gpgconf;-Mechanismus an das Hintergrundprogramm weitergereicht."
+
+#. Tag: para
+#: index.docbook:190
+#, no-c-format
+msgid ""
+"<guilabel>Executable</guilabel> contains the path to the &watchgnupg; "
+"application. If &watchgnupg; is in your <varname>$PATH</varname>, you can "
+"keep the default <userinput>watchgnupg</userinput>. If &watchgnupg; is not "
+"in your <varname>$PATH</varname>, or if you have more than one version "
+"installed, enter the absolute filename of the watchgnupg executable here."
+msgstr ""
+"<guilabel>Ausführbares Programm</guilabel> enthält den Pfad zum &watchgnupg;-"
+"Programm. Wenn sich &watchgnupg; in Ihrem <varname>$PATH</varname> befindet, "
+"können Sie es bei der Standardeinstellung <userinput>watchgnupg</userinput> "
+"belassen. Wenn sich &watchgnupg; nicht in Ihrem <varname>$PATH</varname> "
+"befindet oder Sie mehr als eine Version installiert haben, dann sollten Sie "
+"hier den vollständigen Dateinamen der ausführbaren Datei angeben."
+
+#. Tag: para
+#: index.docbook:199
+#, no-c-format
+msgid ""
+"<guilabel>Socket</guilabel> contains the socket that &watchgnupg; should "
+"listen on. A change here is distributed to all &gnupg; backend modules using "
+"&gpgconf;, so you don't need to change this setting if your &gnupg; config "
+"files have another <varname>log-file</varname> set."
+msgstr ""
+"<guilabel>Socket</guilabel> enthält das Socket, an dem &watchgnupg; lauschen "
+"soll. Eine Änderung dieses Wertes wird über den &gpgconf;-Mechanismus an "
+"alle &gnupg;-Hintergrundprogramm-Module weitergereicht, sodass Sie diese "
+"Einstellung nicht ändern müssen, wenn in Ihren &gnupg;-Einrichtungsdateien "
+"eine andere Protokolldatei (<varname>log-file</varname>) eingestellt ist."
+
+#. Tag: para
+#: index.docbook:207
+#, no-c-format
+msgid ""
+"<guilabel>Default log level</guilabel> determines the amount of logging "
+"information returned by the backend modules. See the &watchgnupg; "
+"documentation for what level includes which information. A change here is "
+"distributed to all &gnupg; backend modules using &gpgconf;, so you don't "
+"need to change this setting if your &gnupg; config files have another "
+"<varname>log-level</varname> set."
+msgstr ""
+"<guilabel>Standard-Protokollniveau</guilabel> bestimmt die Menge der "
+"Protokollinformationen, die von den Hintergrundprogramm-Modulen "
+"zurückgegeben werden soll. Die &watchgnupg;-Dokumentation beschreibt, "
+"welches Protokollniveau welche Informationen beinhaltet. Eine Änderung "
+"dieser Einstellung wird über den &gpgconf;-Mechanismus an alle &gnupg;-"
+"Hintergrundprogramm-Module weitergereicht, sodass Sie diese Einstellung in "
+"Ihren &gnupg;-Konfigurationsdateien nicht ändern müssen, wenn dort ein "
+"anderer <varname>log-level</varname> eingestellt ist."
+
+#. Tag: title
+#: index.docbook:219
+#, no-c-format
+msgid "Log Window Settings"
+msgstr "Protokollfenster-Einstellungen"
+
+#. Tag: para
+#: index.docbook:221
+#, no-c-format
+msgid ""
+"Here, you can configure the size of the history buffer, &ie; the number of "
+"log lines that is kept. If more lines have been emitted by the &gnupg; "
+"backend since the last clearance of the history, then the oldest lines are "
+"discarded until there is enough room for the new lines again."
+msgstr ""
+"Hier können Sie die Größe des Verlaufspeichers einstellen, also wieviele "
+"Protokollzeilen im Speicher gehalten werden sollen. Wenn seit dem letzten "
+"Löschen des Verlaufs mehr Zeilen von &gnupg; ausgegeben wurden, als hier "
+"eingestellt ist, dann werden die ältesten Zeilen gelöscht, bis wieder genug "
+"Raum für die neuen Zeilen vorhanden ist."
+
+#. Tag: para
+#: index.docbook:229
+#, no-c-format
+msgid ""
+"You can disable the history size limit by clicking <guibutton>Set Unlimited</"
+"guibutton>. Note, however, that &kwatchgnupg;'s memory consumption will grow "
+"with the number of lines it currently displays. If you use an unlimited "
+"history size, then make sure to run &kwatchgnupg; only for short operations, "
+"or regularly clear the history manually."
+msgstr ""
+"Sie können die Größenbeschränkung des Verlaufspeichers durch Anklicken von "
+"<guibutton>Auf Unbegrenzt setzen</guibutton> abschalten. Beachten Sie aber, "
+"dass sich der Speicherverbrauch von &kwatchgnupg; mit der Anzahl der "
+"angezeigten Zeilen vergrößert. Wenn Sie eine unbeschränkte Größe für den "
+"Verlaufspeicher verwenden, dann sollten Sie entweder &kwatchgnupg; nur kurze "
+"Zeit laufen lassen oder den Verlaufspeicher regelmäßig von Hand löschen."
+
+#. Tag: title
+#: index.docbook:243
+#, no-c-format
+msgid "Credits and License"
+msgstr "Danksagungen und Lizenz"
+
+#. Tag: para
+#: index.docbook:245
+#, no-c-format
+msgid "&kwatchgnupg; copyright 2004 Klar&auml;lvdalens Datakonsult AB"
+msgstr "&kwatchgnupg; Copyright 2004 Klar&auml;lvdalens Datakonsult AB"
+
+#. Tag: para
+#: index.docbook:247
+#, no-c-format
+msgid "Documentation copyright 2004 Klar&auml;lvdalens Datakonsult AB"
+msgstr "Dokumentation Copyright 2004 Klar&auml;lvdalens Datakonsult AB"
+
+#. Tag: title
+#: index.docbook:250
+#, no-c-format
+msgid "Contributors"
+msgstr "Mitwirkende"
+
+#. Tag: para
+#: index.docbook:252
+#, no-c-format
+msgid "&Steffen.Hansen; <email>hansen@kde.org</email>"
+msgstr "&Steffen.Hansen; <email>hansen@kde.org</email>"
+
+#. Tag: para
+#: index.docbook:255
+#, no-c-format
+msgid "&Marc.Mutz; &Marc.Mutz.mail;"
+msgstr "&Marc.Mutz; &Marc.Mutz.mail;"
+
+#. Tag: para
+#: index.docbook:258
+#, no-c-format
+msgid "&David.Faure; &David.Faure.mail;"
+msgstr "&David.Faure; &David.Faure.mail;"
+
+#. Tag: trans_comment
+#: index.docbook:262
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Übersetzung Matthias Kalle Dalheimer <email>kalle@klaralvdalens-"
+"datakonsult.se</email></para> "
+
+#. Tag: chapter
+#: index.docbook:262
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr "&underFDL; &underGPL;"
+
+#~ msgid "2010-01-12"
+#~ msgstr "2010-01-12"
+
+#~ msgid "<releaseinfo>1.0</releaseinfo>"
+#~ msgstr "<releaseinfo>1.0</releaseinfo>"
+
+#~ msgid ""
+#~ "<firstname>Marc</firstname> <othername></othername> <surname>Mutz</"
+#~ "surname>"
+#~ msgstr ""
+#~ "<firstname>Marc</firstname> <othername></othername> <surname>Mutz</"
+#~ "surname>"
+
+#~ msgid "mutz@kde.org"
+#~ msgstr "mutz@kde.org"
+
+#~ msgid "steffen@klaralvdalens-datakonsult.se"
+#~ msgstr "steffen@klaralvdalens-datakonsult.se"
+
+#~ msgid "faure@kde.org"
+#~ msgstr "faure@kde.org"
+
+#~ msgid "Marc Mutz <email>mutz@kde.org</email>"
+#~ msgstr "Marc Mutz <email>mutz@kde.org</email>"

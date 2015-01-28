@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: chapterImportExport.docbook:2
+#, no-c-format
+msgid "Import and Export"
+msgstr ""
+
+#. Tag: title
+#: chapterImportExport.docbook:4
+#, no-c-format
+msgid "Exchange &rocs; Projects"
+msgstr ""
+
+#. Tag: para
+#: chapterImportExport.docbook:5
+#, no-c-format
+msgid ""
+"&rocs; projects can be imported and exported as archived <literal>"
+".tar.gz</literal> files. These archives can be used to exchange projects. "
+"Import and Export can be done with <menuchoice><guimenu>Graph Document</guimenu> "
+"<guimenuitem>Import Graph</guimenuitem></menuchoice> and <menuchoice><guimenu>"
+"Graph Document</guimenu> <guimenuitem>Export Graph as</guimenuitem></menuchoice>"
+", respectively."
+msgstr ""
+
+#. Tag: title
+#: chapterImportExport.docbook:13
+#, no-c-format
+msgid "Import and Export of Graph Documents"
+msgstr ""
+
+#. Tag: para
+#: chapterImportExport.docbook:14
+#, no-c-format
+msgid ""
+"&rocs; currently supports import and export of the following file formats:"
+msgstr ""
+
+#. Tag: para
+#: chapterImportExport.docbook:16
+#, no-c-format
+msgid "DOT files, also known as Graphviz files"
+msgstr ""
+
+#. Tag: para
+#: chapterImportExport.docbook:17
+#, no-c-format
+msgid "GML files"
+msgstr ""
+
+#. Tag: para
+#: chapterImportExport.docbook:18
+#, no-c-format
+msgid "Trivial Graph Format files"
+msgstr ""
+
+#. Tag: para
+#: chapterImportExport.docbook:19
+#, no-c-format
+msgid "Keyhole Markup Language Format"
+msgstr ""
+
+#. Tag: title
+#: chapterImportExport.docbook:23
+#, no-c-format
+msgid "Trivial Graph File Format"
+msgstr ""
+
+#. Tag: para
+#: chapterImportExport.docbook:24
+#, no-c-format
+msgid ""
+"The <emphasis>Trivial Graph Format</emphasis> (TGF) is a simple text-based file "
+"format for describing graphs. A TGF file consists of a list of node "
+"definitions, that map the node IDs to labels, followed by a list of the edges. "
+"In this format it is only possible to have one label per node and one value per "
+"edge. &rocs; interprets imported graphs as undirected graphs. Exported graphs "
+"will contain two edges per connection if connections are bidirectional."
+msgstr ""
+
+#. Tag: title
+#: chapterImportExport.docbook:33
+#, no-c-format
+msgid "Format Specification"
+msgstr ""
+
+#. Tag: para
+#: chapterImportExport.docbook:35
+#, no-c-format
+msgid ""
+"The file starts with a list of nodes (one node per line), followed by a line "
+"with the only character \"#\", followed by a list of edges (one edge per line)."
+msgstr ""
+
+#. Tag: para
+#: chapterImportExport.docbook:36
+#, no-c-format
+msgid ""
+"A node consists of an integer (identifier), followed by a space, followed by an "
+"arbitrary string."
+msgstr ""
+
+#. Tag: para
+#: chapterImportExport.docbook:37
+#, no-c-format
+msgid ""
+"An edge consists of two integers (identifiers) separated by a space, followed "
+"by a space, followed by an arbitrary string. It is assumed that the directed "
+"edge points from the first identifier to the second identifier."
+msgstr ""
+
+#. Tag: title
+#: chapterImportExport.docbook:41 chapterImportExport.docbook:66
+#, no-c-format
+msgid "Example"
+msgstr ""
+
+#. Tag: programlisting
+#: chapterImportExport.docbook:42
+#, no-c-format
+msgid ""
+"1 starting node\n"
+"2 transmitter\n"
+"3 sink\n"
+"#\n"
+"1 2 blue\n"
+"2 1 red\n"
+"2 3 green"
+msgstr ""
+
+#. Tag: title
+#: chapterImportExport.docbook:47
+#, no-c-format
+msgid "DOT Language / Graphviz Graph File Format"
+msgstr ""
+
+#. Tag: para
+#: chapterImportExport.docbook:48
+#, no-c-format
+msgid ""
+"The DOT language is a plain text graph description language that allows both,a "
+"good human readable representation of graphs as well as an efficient processing "
+"by graph layout programs. DOT is the default file format for the Graphviz graph "
+"visualization suite, but is also widely used by other graph tools. The usual "
+"file endings for DOT are <emphasis>.gv</emphasis> and <emphasis>.dot</emphasis>"
+"."
+msgstr ""
+
+#. Tag: title
+#: chapterImportExport.docbook:55
+#, no-c-format
+msgid "Unsupported Features"
+msgstr ""
+
+#. Tag: para
+#: chapterImportExport.docbook:56
+#, no-c-format
+msgid ""
+"&rocs; can parse every graph file that contains a graph specified according to "
+"the DOT language "
+"specification<footnote><para>http://www.graphviz.org/content/dot-language</para>"
+"</footnote>. The support of language features is complete, despite of the "
+"following exceptions:"
+msgstr ""
+
+#. Tag: para
+#: chapterImportExport.docbook:61
+#, no-c-format
+msgid ""
+"subgraph: Due to the lack of a subgraph concept in &rocs;, subgraphs are only "
+"imported as a set of date elements and connections. Especially, connections to "
+"or from subgraphs are not imported."
+msgstr ""
+
+#. Tag: para
+#: chapterImportExport.docbook:62
+#, no-c-format
+msgid ""
+"&HTML; and &XML; attributes: Attributes (like labels) that contain &HTML; or "
+"&XML; syntax are read unchanged. Especially, not adjustment of fonts and styles "
+"are read from those attributes."
+msgstr ""
+
+#. Tag: programlisting
+#: chapterImportExport.docbook:67
+#, no-c-format
+msgid ""
+"digraph myGraph {\n"
+"    a -> b -> c;\n"
+"    b -> d;\n"
+"}"
+msgstr ""

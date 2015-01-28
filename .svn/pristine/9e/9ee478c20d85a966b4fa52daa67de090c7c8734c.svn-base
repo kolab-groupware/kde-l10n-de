@@ -1,0 +1,78 @@
+<sect1 id="include-scripting-interface">
+<title
+>Skript-Schnittstellen</title>
+<sect2>
+<title
+>„Console“-Objekt</title>
+<para
+>Mit dem Objekt „Console“ können Meldungen unterschiedlicher Wichtigkeit ausgegeben werden. </para>
+<para
+>„Console“ ist kein Konstruktor. Alle Eigenschaften und Methoden des Objekts „Console“ aufgerufen werden, indem „Console“ als Objekt verwendet wird, ohne es zu konstruieren. </para>
+</sect2>
+<sect2>
+<title
+>Syntax</title>
+<programlisting
+>Console.log("Dies ist eine Programmmeldung."); // gibt eine normale Meldung aus
+Console.debug("Eine Debug-Meldung."); // gibt eine Fehlermeldung aus
+</programlisting>
+</sect2>
+<sect2>
+<title
+>Methoden des Objekts „Console“</title>
+<sect3>
+<title
+>log()</title>
+<para
+>Gibt eine normale Meldung aus. </para>
+<funcsynopsis>
+<funcprototype
+><funcdef
+>void <function
+>log</function
+></funcdef
+> <paramdef
+>string <parameter
+>message</parameter
+></paramdef
+> </funcprototype>
+</funcsynopsis>
+</sect3>
+<sect3>
+<title
+>debug()</title>
+<para
+>Gibt die angegebene Debug-Meldung aus. </para>
+<funcsynopsis>
+<funcprototype
+><funcdef
+>void <function
+>debug</function
+></funcdef
+> <paramdef
+>string <parameter
+>message</parameter
+></paramdef
+> </funcprototype>
+</funcsynopsis>
+</sect3>
+<sect3>
+<title
+>error()</title>
+<para
+>Gibt eine wichtige Fehlermeldung aus. </para>
+<funcsynopsis>
+<funcprototype
+><funcdef
+>void <function
+>error</function
+></funcdef
+> <paramdef
+>string <parameter
+>message</parameter
+></paramdef
+> </funcprototype>
+</funcsynopsis>
+</sect3>
+</sect2>
+</sect1>

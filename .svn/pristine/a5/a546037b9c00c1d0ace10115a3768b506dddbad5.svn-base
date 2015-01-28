@@ -1,0 +1,968 @@
+# Thomas Diehl <thd@kde.org>, 2003.
+# Stephan Johach <hunsum@gmx.de>, 2003, 2005.
+# Arnold Krille <arnold@arnoldarts.de>, 2004, 2005.
+# Arnold Krille <arnold@roederberg.dyndns.org>, 2005.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006.
+# Martin Ereth <martin.ereth@arcor.de>, 2007.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkcddb\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-07-02 01:39+0000\n"
+"PO-Revision-Date: 2013-07-03 20:01+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: kcmcddb/cddbconfigwidget.cpp:59
+msgid "Cache Locations"
+msgstr "Lokaler Speicher"
+
+#: kcmcddb/cddbconfigwidget.cpp:98
+msgid "Could not fetch mirror list."
+msgstr "Die Liste der Spiegelserver kann nicht geholt werden."
+
+#: kcmcddb/cddbconfigwidget.cpp:98
+msgid "Could Not Fetch"
+msgstr "Die Informationen können nicht abgerufen werden"
+
+#: kcmcddb/cddbconfigwidget.cpp:102
+msgid "Select mirror"
+msgstr "Spiegelserver auswählen"
+
+#: kcmcddb/cddbconfigwidget.cpp:103
+msgid "Select one of these mirrors"
+msgstr "Wählen Sie einen dieser Spiegelserver"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_FreedbLookupTransport)
+#. i18n: ectx: property (text), widget (QRadioButton, httpButton)
+#: kcmcddb/cddbconfigwidget.cpp:120 kcmcddb/cddbconfigwidget.ui:129
+#: kcmcddb/cddbconfigwidget.ui:179
+msgid "HTTP"
+msgstr "HTTP"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_FreedbLookupTransport)
+#: kcmcddb/cddbconfigwidget.cpp:122 kcmcddb/cddbconfigwidget.ui:124
+msgid "CDDB"
+msgstr "CDDB"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CDDBConfigWidgetBase)
+#: kcmcddb/cddbconfigwidget.ui:7
+msgid "CDDB Settings"
+msgstr "CDDB-Einstellungen"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabLookup)
+#: kcmcddb/cddbconfigwidget.ui:20
+msgid "&Lookup"
+msgstr "&Nachschlagen"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_MusicBrainzLookupEnabled)
+#: kcmcddb/cddbconfigwidget.ui:26
+msgid "Enable MusicBrainz lookup"
+msgstr "Nachschlagen in MusicBrainz aktivieren"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_FreedbLookupEnabled)
+#: kcmcddb/cddbconfigwidget.ui:33
+msgid "Enable freedb lookup"
+msgstr "Nachschlagen in freedb aktivieren"
+
+#. i18n: ectx: property (title), widget (QGroupBox, freedbServerBox)
+#: kcmcddb/cddbconfigwidget.ui:40
+msgid "Freedb Server"
+msgstr "freedb-Server"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel7)
+#: kcmcddb/cddbconfigwidget.ui:46
+msgid "Freedb server:"
+msgstr "freedb-Server:"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, kcfg_hostname)
+#: kcmcddb/cddbconfigwidget.ui:64
+msgid "Name of CDDB server which will be used to look up CD information."
+msgstr ""
+"Name/Adresse des CDDB-Servers, der zur Suche nach CD-Informationen befragt "
+"wird."
+
+#. i18n: ectx: property (text), widget (QLineEdit, kcfg_hostname)
+#: kcmcddb/cddbconfigwidget.ui:67
+msgid "freedb.freedb.org"
+msgstr "freedb.freedb.org"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_3)
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: kcmcddb/cddbconfigwidget.ui:80 kcmcddb/cddbconfigwidget.ui:208
+#: kcmcddb/cddbconfigwidget.ui:241
+msgid "Port:"
+msgstr "Port:"
+
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, kcfg_port)
+#: kcmcddb/cddbconfigwidget.ui:93
+msgid "Port to connect to on CDDB server."
+msgstr "Der Post über den sich mit dem CDDB-Server verbunden wird."
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel9)
+#: kcmcddb/cddbconfigwidget.ui:108
+msgid "&Transport:"
+msgstr "&Protokoll:"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, kcfg_FreedbLookupTransport)
+#: kcmcddb/cddbconfigwidget.ui:120
+msgid "Type of lookup which should be tried at the CDDB server."
+msgstr "Die Methode, mit der auf dem CDDB-Server gesucht werden soll."
+
+#. i18n: ectx: property (text), widget (KPushButton, mirrorListButton)
+#: kcmcddb/cddbconfigwidget.ui:137
+msgid "Show &Mirror List"
+msgstr "&List der Spiegelserver anzeigen"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabSubmit)
+#: kcmcddb/cddbconfigwidget.ui:153
+msgid "&Submit"
+msgstr "Über&tragung"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: kcmcddb/cddbconfigwidget.ui:161
+msgid "Email address:"
+msgstr "E-Mail-Adresse:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_FreedbSubmitTransport)
+#: kcmcddb/cddbconfigwidget.ui:173
+msgid "Submit Method"
+msgstr "Übertragungsmethode"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: kcmcddb/cddbconfigwidget.ui:189
+msgid "Server:"
+msgstr "Server:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, smtpButton)
+#: kcmcddb/cddbconfigwidget.ui:220
+msgid "SMTP (Email)"
+msgstr "SMTP (E-Mail)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, needsAuthenticationBox)
+#: kcmcddb/cddbconfigwidget.ui:266
+msgid "Server needs authentication"
+msgstr "Der Server verlangt eine Authentifizierung"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel9_2)
+#: kcmcddb/cddbconfigwidget.ui:286
+msgid "Reply-To:"
+msgstr "Antwort-an:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
+#: kcmcddb/cddbconfigwidget.ui:299
+msgid "SMTP server:"
+msgstr "SMTP-Server:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#: kcmcddb/cddbconfigwidget.ui:306
+msgid "Username:"
+msgstr "Benutzername:"
+
+#: kcmcddb/kcmcddb.cpp:60
+msgid ""
+"CDDB is used to get information like artist, title and song-names in CD's"
+msgstr ""
+"CDDB wird für die Suche nach Album-, Lied- und Interpreten-Namen bei CDs "
+"verwendet"
+
+#: kcmcddb/kcmcddb.cpp:88
+msgid ""
+"freedb has been set to use HTTP for submissions because the email details "
+"you have entered are incomplete. Please review your email settings and try "
+"again."
+msgstr ""
+"freedb wurde für die Übertragung auf HTTP umgestellt, da die Informationen "
+"zur Übertragung per E-Mail unvollständig sind. Bitte korrigieren Sie die "
+"Einstellungen und versuchen Sie es erneut."
+
+#: kcmcddb/kcmcddb.cpp:91
+msgid "Incorrect Email Settings"
+msgstr "Falsche E-Mail-Einstellungen"
+
+#: libkcddb/categories.cpp:22 libkcddb/genres.cpp:70
+msgid "Blues"
+msgstr "Blues"
+
+#: libkcddb/categories.cpp:22 libkcddb/genres.cpp:73
+msgid "Classical"
+msgstr "Klassik"
+
+#: libkcddb/categories.cpp:22 libkcddb/genres.cpp:75
+msgctxt "music genre"
+msgid "Country"
+msgstr "Country"
+
+#: libkcddb/categories.cpp:23 libkcddb/genres.cpp:80
+msgid "Folk"
+msgstr "Folk"
+
+#: libkcddb/categories.cpp:23 libkcddb/genres.cpp:86
+msgid "Jazz"
+msgstr "Jazz"
+
+#: libkcddb/categories.cpp:23
+msgid "Data"
+msgstr "Daten"
+
+#: libkcddb/categories.cpp:23
+msgid "Miscellaneous"
+msgstr "Verschiedenes"
+
+#: libkcddb/categories.cpp:24 libkcddb/genres.cpp:88
+msgid "New Age"
+msgstr "New Age"
+
+#: libkcddb/categories.cpp:24 libkcddb/genres.cpp:94
+msgid "Reggae"
+msgstr "Reggae"
+
+#: libkcddb/categories.cpp:24 libkcddb/genres.cpp:95
+msgid "Rock"
+msgstr "Rock"
+
+#: libkcddb/categories.cpp:24 libkcddb/genres.cpp:98
+msgid "Soundtrack"
+msgstr "Soundtrack"
+
+#: libkcddb/cdinfodialog.cpp:146
+msgid "Track"
+msgstr "Stück"
+
+#: libkcddb/cdinfodialog.cpp:146
+msgid "Length"
+msgstr "Länge"
+
+#: libkcddb/cdinfodialog.cpp:146
+msgid "Title"
+msgstr "Titel"
+
+#: libkcddb/cdinfodialog.cpp:146
+msgid "Artist"
+msgstr "Interpret"
+
+#: libkcddb/cdinfodialog.cpp:146
+msgid "Comment"
+msgstr "Kommentar"
+
+#: libkcddb/cdinfodialog.cpp:267
+msgid "Change Encoding"
+msgstr "Kodierung ändern"
+
+#. i18n: ectx: property (text), widget (QLabel, lb_revision)
+#: libkcddb/cdinfodialog.ui:34
+msgid "Revision:"
+msgstr "Version:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, m_title)
+#: libkcddb/cdinfodialog.ui:41
+msgid "Use the name of the artist if there is no title."
+msgstr "Den Namen des Interpreten verwenden, wenn kein Titel vorhanden ist."
+
+#. i18n: ectx: property (text), widget (QLabel, lb_category)
+#: libkcddb/cdinfodialog.ui:48
+msgid "&Category:"
+msgstr "Kat&egorie:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, m_artist)
+#: libkcddb/cdinfodialog.ui:65
+msgid ""
+"Write names as \"first last\", not \"last, first\". Omit any leading \"The"
+"\".  Use \"Various\" for compilations."
+msgstr ""
+"Schreibt Namen als „Vorname Nachname“ und nicht „Nachname, Vorname“. "
+"Entfernt „The“ am Anfang und verwendet „Various“ für Zusammenstellungen/"
+"Sampler."
+
+#. i18n: ectx: property (text), widget (QLabel, lb_artist)
+#: libkcddb/cdinfodialog.ui:72
+msgid "&Artist:"
+msgstr "&Interpret:"
+
+#. i18n: ectx: property (text), widget (QLabel, lb_year)
+#: libkcddb/cdinfodialog.ui:82
+msgid "&Year:"
+msgstr "&Jahr:"
+
+#. i18n: ectx: property (text), widget (QLabel, lb_genre)
+#: libkcddb/cdinfodialog.ui:92
+msgid "&Genre:"
+msgstr "&Genre:"
+
+#. i18n: ectx: property (toolTip), widget (KComboBox, m_category)
+#: libkcddb/cdinfodialog.ui:105
+msgid "Disc Id values must be unique within a category."
+msgstr "CD-IDs müssen innerhalb einer Kategorie eindeutig sein."
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_multiple)
+#: libkcddb/cdinfodialog.ui:119
+msgid "&Multiple artists"
+msgstr "&Verschiedene Interpreten"
+
+#. i18n: ectx: property (text), widget (QLabel, lb_comment)
+#: libkcddb/cdinfodialog.ui:129
+msgid "Comment:"
+msgstr "Kommentar:"
+
+#. i18n: ectx: property (text), widget (QLabel, lb_title)
+#: libkcddb/cdinfodialog.ui:139
+msgid "&Title:"
+msgstr "&Titel:"
+
+#. i18n: ectx: property (toolTip), widget (KComboBox, m_genre)
+#: libkcddb/cdinfodialog.ui:149
+msgid "Avoid custom values, as they will be written to CDDB as-is."
+msgstr ""
+"Eigene Werte sollten vermieden werden, da sie so in die CDDB-Datenbank "
+"übernommen werden."
+
+#. i18n: ectx: property (text), widget (QLabel, lb_id)
+#: libkcddb/cdinfodialog.ui:162
+msgid "Disc Id:"
+msgstr "CD-ID:"
+
+#. i18n: ectx: property (text), widget (QLabel, lb_length)
+#: libkcddb/cdinfodialog.ui:169
+msgid "Length:"
+msgstr "Länge:"
+
+#. i18n: ectx: property (toolTip), widget (QTreeView, m_trackList)
+#: libkcddb/cdinfodialog.ui:188
+msgid "For a CD-Extra, set title to \"Data\"."
+msgstr "Für ein CD-Extra setzen Sie den Titel auf „Daten“."
+
+#. i18n: ectx: property (text), widget (QPushButton, m_changeEncoding)
+#: libkcddb/cdinfodialog.ui:228
+msgid "Change Encoding..."
+msgstr "Kodierung ändern ..."
+
+#. i18n: ectx: property (text), widget (QLabel, lb_playingOrder)
+#: libkcddb/cdinfodialog.ui:237
+msgid "Playing order:"
+msgstr "Reihenfolge:"
+
+#: libkcddb/cdinfoencodingwidget.cpp:65
+#, kde-format
+msgctxt "artist - cdtitle"
+msgid "%1 - %2"
+msgstr "%1 – %2"
+
+#. i18n: ectx: property (text), widget (QLabel, encodingLabel)
+#: libkcddb/cdinfoencodingwidget.ui:23
+msgid "Encoding"
+msgstr "Kodierung"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
+#: libkcddb/cdinfoencodingwidget.ui:33
+msgid "Preview"
+msgstr "Vorschau"
+
+#: libkcddb/genres.cpp:66
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#: libkcddb/genres.cpp:66
+msgid "A Cappella"
+msgstr "A Cappella"
+
+#: libkcddb/genres.cpp:66
+msgid "Acid Jazz"
+msgstr "Acid Jazz"
+
+#: libkcddb/genres.cpp:67
+msgid "Acid Punk"
+msgstr "Acid Punk"
+
+#: libkcddb/genres.cpp:67
+msgid "Acid"
+msgstr "Acid"
+
+#: libkcddb/genres.cpp:67
+msgid "Acoustic"
+msgstr "Akustisch"
+
+#: libkcddb/genres.cpp:67
+msgid "Alternative"
+msgstr "Alternative"
+
+#: libkcddb/genres.cpp:68
+msgid "Alt. Rock"
+msgstr "Alt.-Rock"
+
+#: libkcddb/genres.cpp:68
+msgid "Ambient"
+msgstr "Ambient"
+
+#: libkcddb/genres.cpp:68
+msgid "Anime"
+msgstr "Anime"
+
+#: libkcddb/genres.cpp:68
+msgid "Avantgarde"
+msgstr "Avantgarde"
+
+#: libkcddb/genres.cpp:69
+msgid "Ballad"
+msgstr "Ballade"
+
+#: libkcddb/genres.cpp:69
+msgid "Bass"
+msgstr "Bass"
+
+#: libkcddb/genres.cpp:69
+msgid "Beat"
+msgstr "Beat"
+
+#: libkcddb/genres.cpp:69
+msgid "Bebop"
+msgstr "Bebop"
+
+#: libkcddb/genres.cpp:70
+msgid "Big Band"
+msgstr "Big Band"
+
+#: libkcddb/genres.cpp:70
+msgid "Black Metal"
+msgstr "Black Metal"
+
+#: libkcddb/genres.cpp:70
+msgid "Bluegrass"
+msgstr "Bluegrass"
+
+#: libkcddb/genres.cpp:71
+msgid "Booty Bass"
+msgstr "Booty Bass"
+
+#: libkcddb/genres.cpp:71
+msgid "BritPop"
+msgstr "BritPop"
+
+#: libkcddb/genres.cpp:71
+msgid "Cabaret"
+msgstr "Kabarett"
+
+#: libkcddb/genres.cpp:71
+msgid "Celtic"
+msgstr "Keltisch"
+
+#: libkcddb/genres.cpp:72
+msgid "Chamber Music"
+msgstr "Kammermusik"
+
+#: libkcddb/genres.cpp:72
+msgid "Chanson"
+msgstr "Chanson"
+
+#: libkcddb/genres.cpp:72
+msgid "Chorus"
+msgstr "Chor"
+
+#: libkcddb/genres.cpp:72
+msgid "Christian Gangsta Rap"
+msgstr "Christlicher Gangsta Rap"
+
+#: libkcddb/genres.cpp:73
+msgid "Christian Rap"
+msgstr "Christlicher Rap"
+
+#: libkcddb/genres.cpp:73
+msgid "Christian Rock"
+msgstr "Christliche Rockmusik"
+
+#: libkcddb/genres.cpp:73
+msgid "Classic Rock"
+msgstr "Klassische Rockmusik"
+
+#: libkcddb/genres.cpp:74
+msgid "Club-house"
+msgstr "Club-House"
+
+#: libkcddb/genres.cpp:74
+msgid "Club"
+msgstr "Club"
+
+#: libkcddb/genres.cpp:74
+msgid "Comedy"
+msgstr "Comedy"
+
+#: libkcddb/genres.cpp:74
+msgid "Contemporary Christian"
+msgstr "Zeitgenössische Andachtsmusik"
+
+#: libkcddb/genres.cpp:75
+msgid "Crossover"
+msgstr "Crossover"
+
+#: libkcddb/genres.cpp:75
+msgid "Cult"
+msgstr "Kult"
+
+#: libkcddb/genres.cpp:75
+msgid "Dance Hall"
+msgstr "Dance Hall"
+
+#: libkcddb/genres.cpp:76
+msgid "Dance"
+msgstr "Dance"
+
+#: libkcddb/genres.cpp:76
+msgid "Darkwave"
+msgstr "Darkwave"
+
+#: libkcddb/genres.cpp:76
+msgid "Death Metal"
+msgstr "Death Metal"
+
+#: libkcddb/genres.cpp:76
+msgid "Disco"
+msgstr "Disco"
+
+#: libkcddb/genres.cpp:77
+msgid "Dream"
+msgstr "Dream"
+
+#: libkcddb/genres.cpp:77
+msgid "Drum & Bass"
+msgstr "Drum & Bass"
+
+#: libkcddb/genres.cpp:77
+msgid "Drum Solo"
+msgstr "Schlagzeugsolo"
+
+#: libkcddb/genres.cpp:77
+msgid "Duet"
+msgstr "Duett"
+
+#: libkcddb/genres.cpp:78
+msgid "Easy Listening"
+msgstr "Easy Listening"
+
+#: libkcddb/genres.cpp:78
+msgid "Electronic"
+msgstr "Elektronische Musik"
+
+#: libkcddb/genres.cpp:78
+msgid "Ethnic"
+msgstr "Ethnic"
+
+#: libkcddb/genres.cpp:78
+msgid "Eurodance"
+msgstr "Eurodance"
+
+#: libkcddb/genres.cpp:79
+msgid "Euro-House"
+msgstr "Euro-House"
+
+#: libkcddb/genres.cpp:79
+msgid "Euro-Techno"
+msgstr "Euro-Techno"
+
+#: libkcddb/genres.cpp:79
+msgid "Fast-Fusion"
+msgstr "Fast-Fusion"
+
+#: libkcddb/genres.cpp:79
+msgid "Folklore"
+msgstr "Folklore"
+
+#: libkcddb/genres.cpp:80
+msgid "Folk/Rock"
+msgstr "Folk/Rock"
+
+#: libkcddb/genres.cpp:80
+msgid "Freestyle"
+msgstr "Freestyle"
+
+#: libkcddb/genres.cpp:80
+msgid "Funk"
+msgstr "Funk"
+
+#: libkcddb/genres.cpp:81
+msgid "Fusion"
+msgstr "Fusion"
+
+#: libkcddb/genres.cpp:81
+msgid "Game"
+msgstr "Spiel"
+
+#: libkcddb/genres.cpp:81
+msgid "Gangsta Rap"
+msgstr "Gangsta Rap"
+
+#: libkcddb/genres.cpp:81
+msgid "Goa"
+msgstr "Goa"
+
+#: libkcddb/genres.cpp:82
+msgid "Gospel"
+msgstr "Gospel"
+
+#: libkcddb/genres.cpp:82
+msgid "Gothic Rock"
+msgstr "Gothic Rock"
+
+#: libkcddb/genres.cpp:82
+msgid "Gothic"
+msgstr "Gothic"
+
+#: libkcddb/genres.cpp:82
+msgid "Grunge"
+msgstr "Grunge"
+
+#: libkcddb/genres.cpp:83
+msgid "Hardcore"
+msgstr "Hardcore"
+
+#: libkcddb/genres.cpp:83
+msgid "Hard Rock"
+msgstr "Hard Rock"
+
+#: libkcddb/genres.cpp:83
+msgid "Heavy Metal"
+msgstr "Heavy Metal"
+
+#: libkcddb/genres.cpp:83
+msgid "Hip-Hop"
+msgstr "Hip-Hop"
+
+#: libkcddb/genres.cpp:84
+msgid "House"
+msgstr "House"
+
+#: libkcddb/genres.cpp:84
+msgid "Humor"
+msgstr "Humor"
+
+#: libkcddb/genres.cpp:84
+msgid "Indie"
+msgstr "Indie"
+
+#: libkcddb/genres.cpp:84
+msgid "Industrial"
+msgstr "Industrial"
+
+#: libkcddb/genres.cpp:85
+msgid "Instrumental Pop"
+msgstr "Instrumental Pop"
+
+#: libkcddb/genres.cpp:85
+msgid "Instrumental Rock"
+msgstr "Instrumental Rock"
+
+#: libkcddb/genres.cpp:85
+msgid "Instrumental"
+msgstr "Instrumental"
+
+#: libkcddb/genres.cpp:85
+msgid "Jazz+Funk"
+msgstr "Jazz+Funk"
+
+#: libkcddb/genres.cpp:86
+msgid "JPop"
+msgstr "JPop"
+
+#: libkcddb/genres.cpp:86
+msgid "Jungle"
+msgstr "Jungle"
+
+#: libkcddb/genres.cpp:86
+msgid "Latin"
+msgstr "Latin"
+
+#: libkcddb/genres.cpp:86
+msgid "Lo-Fi"
+msgstr "Lo-Fi"
+
+#: libkcddb/genres.cpp:87
+msgid "Meditative"
+msgstr "Meditativ"
+
+#: libkcddb/genres.cpp:87
+msgid "Merengue"
+msgstr "Merengue"
+
+#: libkcddb/genres.cpp:87
+msgid "Metal"
+msgstr "Metal"
+
+#: libkcddb/genres.cpp:87
+msgid "Musical"
+msgstr "Musical"
+
+#: libkcddb/genres.cpp:88
+msgid "National Folk"
+msgstr "National Folk"
+
+#: libkcddb/genres.cpp:88
+msgid "Native American"
+msgstr "Native American"
+
+#: libkcddb/genres.cpp:88
+msgid "Negerpunk"
+msgstr "Negerpunk"
+
+#: libkcddb/genres.cpp:89
+msgid "New Wave"
+msgstr "New Wave"
+
+#: libkcddb/genres.cpp:89
+msgid "Noise"
+msgstr "Noise"
+
+#: libkcddb/genres.cpp:89
+msgid "Oldies"
+msgstr "Oldies"
+
+#: libkcddb/genres.cpp:89
+msgid "Opera"
+msgstr "Oper"
+
+#: libkcddb/genres.cpp:90
+msgid "Other"
+msgstr "Weitere"
+
+#: libkcddb/genres.cpp:90
+msgid "Polka"
+msgstr "Polka"
+
+#: libkcddb/genres.cpp:90
+msgid "Polsk Punk"
+msgstr "Polnischer Punk"
+
+#: libkcddb/genres.cpp:90
+msgid "Pop-Funk"
+msgstr "Pop-Funk"
+
+#: libkcddb/genres.cpp:91
+msgid "Pop/Funk"
+msgstr "Pop/Funk"
+
+#: libkcddb/genres.cpp:91
+msgid "Pop"
+msgstr "Pop"
+
+#: libkcddb/genres.cpp:91
+msgid "Porn Groove"
+msgstr "Porn Groove"
+
+#: libkcddb/genres.cpp:91
+msgid "Power Ballad"
+msgstr "Power Ballad"
+
+#: libkcddb/genres.cpp:92
+msgid "Pranks"
+msgstr "Pranks"
+
+#: libkcddb/genres.cpp:92
+msgid "Primus"
+msgstr "Primus"
+
+#: libkcddb/genres.cpp:92
+msgid "Progressive Rock"
+msgstr "Progressive Rock"
+
+#: libkcddb/genres.cpp:92
+msgid "Psychedelic Rock"
+msgstr "Psychedelic Rock"
+
+#: libkcddb/genres.cpp:93
+msgid "Psychedelic"
+msgstr "Psychedelic"
+
+#: libkcddb/genres.cpp:93
+msgid "Punk Rock"
+msgstr "Punk Rock"
+
+#: libkcddb/genres.cpp:93
+msgid "Punk"
+msgstr "Punk"
+
+#: libkcddb/genres.cpp:93
+msgid "R&B"
+msgstr "R&B"
+
+#: libkcddb/genres.cpp:94
+msgid "Rap"
+msgstr "Rap"
+
+#: libkcddb/genres.cpp:94
+msgid "Rave"
+msgstr "Rave"
+
+#: libkcddb/genres.cpp:94
+msgid "Retro"
+msgstr "Retro"
+
+#: libkcddb/genres.cpp:95
+msgid "Revival"
+msgstr "Revival"
+
+#: libkcddb/genres.cpp:95
+msgid "Rhythmic Soul"
+msgstr "Rhythmic Soul"
+
+#: libkcddb/genres.cpp:95
+msgid "Rock & Roll"
+msgstr "Rock & Roll"
+
+#: libkcddb/genres.cpp:96
+msgid "Salsa"
+msgstr "Salsa"
+
+#: libkcddb/genres.cpp:96
+msgid "Samba"
+msgstr "Samba"
+
+#: libkcddb/genres.cpp:96
+msgid "Satire"
+msgstr "Satire"
+
+#: libkcddb/genres.cpp:96
+msgid "Showtunes"
+msgstr "Showtunes"
+
+#: libkcddb/genres.cpp:97
+msgid "Ska"
+msgstr "Ska"
+
+#: libkcddb/genres.cpp:97
+msgid "Slow Jam"
+msgstr "Slow Jam"
+
+#: libkcddb/genres.cpp:97
+msgid "Slow Rock"
+msgstr "Slow Rock"
+
+#: libkcddb/genres.cpp:97
+msgid "Sonata"
+msgstr "Sonate"
+
+#: libkcddb/genres.cpp:98
+msgid "Soul"
+msgstr "Soul"
+
+#: libkcddb/genres.cpp:98
+msgid "Sound Clip"
+msgstr "Sound Clip"
+
+#: libkcddb/genres.cpp:98
+msgid "Southern Rock"
+msgstr "Southern Rock"
+
+#: libkcddb/genres.cpp:99
+msgid "Space"
+msgstr "Space"
+
+#: libkcddb/genres.cpp:99
+msgid "Speech"
+msgstr "Speech"
+
+#: libkcddb/genres.cpp:99
+msgid "Swing"
+msgstr "Swing"
+
+#: libkcddb/genres.cpp:99
+msgid "Symphonic Rock"
+msgstr "Symphonic Rock"
+
+#: libkcddb/genres.cpp:100
+msgid "Symphony"
+msgstr "Symphonie"
+
+#: libkcddb/genres.cpp:100
+msgid "Synthpop"
+msgstr "Synthpop"
+
+#: libkcddb/genres.cpp:100
+msgid "Tango"
+msgstr "Tango"
+
+#: libkcddb/genres.cpp:100
+msgid "Techno-Industrial"
+msgstr "Techno-Industrial"
+
+#: libkcddb/genres.cpp:101
+msgid "Techno"
+msgstr "Techno"
+
+#: libkcddb/genres.cpp:101
+msgid "Terror"
+msgstr "Terror"
+
+#: libkcddb/genres.cpp:101
+msgid "Thrash Metal"
+msgstr "Thrash Metal"
+
+#: libkcddb/genres.cpp:101
+msgid "Top 40"
+msgstr "Top 40"
+
+#: libkcddb/genres.cpp:102
+msgid "Trailer"
+msgstr "Trailer"
+
+#: libkcddb/genres.cpp:102
+msgid "Trance"
+msgstr "Trance"
+
+#: libkcddb/genres.cpp:102
+msgid "Tribal"
+msgstr "Tribal"
+
+#: libkcddb/genres.cpp:102
+msgid "Trip-Hop"
+msgstr "Trip-Hop"
+
+#: libkcddb/genres.cpp:103
+msgid "Vocal"
+msgstr "Gesang"
+
+#: libkcddb/kcddb.cpp:32
+msgid "Success"
+msgstr "Erfolgreich"
+
+#: libkcddb/kcddb.cpp:36
+msgid "Server error"
+msgstr "Serverfehler"
+
+#: libkcddb/kcddb.cpp:40
+msgid "Host not found"
+msgstr "Rechner nicht gefunden"
+
+#: libkcddb/kcddb.cpp:44
+msgid "No response"
+msgstr "Keine Antwort"
+
+#: libkcddb/kcddb.cpp:48
+msgid "No record found"
+msgstr "Kein Eintrag gefunden"
+
+#: libkcddb/kcddb.cpp:52
+msgid "Multiple records found"
+msgstr "Mehrere Einträge gefunden"
+
+#: libkcddb/kcddb.cpp:56
+msgid "Cannot save"
+msgstr "Speichern nicht möglich"
+
+#: libkcddb/kcddb.cpp:60
+msgid "Invalid category"
+msgstr "Kategorie ungültig"
+
+#: libkcddb/kcddb.cpp:64
+msgid "Unknown error"
+msgstr "Unbekannter Fehler"
+
+#: libkcddb/musicbrainz/musicbrainzlookup.cpp:123
+#, kde-format
+msgid "%1 (disc %2)"
+msgstr "%1 (CD %2)"

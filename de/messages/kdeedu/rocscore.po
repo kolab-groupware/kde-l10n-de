@@ -1,0 +1,2280 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2011, 2012, 2013.
+# Frederik Schwarzer <schwarzer@kde.org>, 2009, 2010, 2011, 2012, 2013, 2014.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010, 2011.
+# Peter Rüthemann <peter.ruethemann@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: rocs\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-06-30 01:55+0000\n"
+"PO-Revision-Date: 2014-07-09 22:29+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Frederik Schwarzer, Torbjörn Klatt"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "schwarzer@kde.org, torbjoern.k@googlemail.com"
+
+#: Data.cpp:491
+#, kde-format
+msgid "Could not set data type for node %1: data type does not exist."
+msgstr ""
+"Der Datentyp für Knoten %1 kann nicht eingestellt werden, da dieser Typ "
+"nicht existiert."
+
+#: Data.xml:9
+msgctxt "Scripting API Description"
+msgid ""
+"\n"
+"An abstract data element is a unit of information that belongs to an "
+"abstract data structure and possibly is connected to other data elements by "
+"pointers.\n"
+msgstr ""
+"\n"
+"Ein abstraktes Datenelement ist eine Einheit von Informationen, die zu einer "
+"abstrakten Datenstruktur gehören, und kann mit anderen Datenelementen durch "
+"Zeiger verbunden sein.\n"
+
+#: Data.xml:12 DataStructure.xml:12 DataStructures/Graph/GraphEdge.xml:12
+#: DataStructures/Graph/GraphNode.xml:12
+#: DataStructures/Graph/GraphStructure.xml:12
+#: DataStructures/LinkedList/ListNode.xml:12
+#: DataStructures/LinkedList/ListStructure.xml:12 Pointer.xml:10
+msgctxt "Scripting API Description"
+msgid "\n"
+msgstr "\n"
+
+#: Data.xml:16
+msgctxt "Scripting API Description"
+msgid "The unique identifier of this data element."
+msgstr "Der eindeutige Bezeichner für dieses Datenelement."
+
+#: Data.xml:21
+msgctxt "Scripting API Description"
+msgid "The x-coordinate of this data element."
+msgstr "Die X-Koordinate dieses Datenelements."
+
+#: Data.xml:26
+msgctxt "Scripting API Description"
+msgid "The y-coordinate of this data element."
+msgstr "Die y-Koordinate dieses Datenelements."
+
+#: Data.xml:31
+msgctxt "Scripting API Description"
+msgid "The size of this data element."
+msgstr "Die Größe dieses Datenelements."
+
+#: Data.xml:36
+msgctxt "Scripting API Description"
+msgid "The color of this data element stated as hexadecimal value."
+msgstr "Die Farbe dieses Datenelements als Hexadezimalwerts."
+
+#: DataStructure.xml:9
+msgctxt "Scripting API Description"
+msgid ""
+"\n"
+"An abstract data structure defines a set of data elements and possible "
+"connections between them.\n"
+msgstr ""
+"\n"
+"Eine abstrakte Datenstruktur definiert eine Menge von Datenelementen und "
+"mögliche Verbindungen zwischen Ihnen.\n"
+
+#: DataStructure.xml:16
+msgctxt "Scripting API Description"
+msgid "The unique name of this data structure."
+msgstr "Der eindeutige Name dieser Datenstruktur."
+
+#: DataStructures/Graph/GraphEdge.xml:9
+msgctxt "Scripting API Description"
+msgid ""
+"\n"
+"An Edge is the connection of two GraphNodes. Edges can be directed or "
+"undirected, depending on their type.\n"
+msgstr ""
+"\n"
+"Eine Kante ist eine Verbindung zwischen zwei Knoten eines Graphen. Kanten "
+"können abhängig vom Typ gerichtet oder ungerichtet sein.\n"
+
+#: DataStructures/Graph/GraphNode.cpp:91 DataStructures/Graph/GraphNode.cpp:99
+#: DataStructures/Graph/GraphNode.cpp:107
+#: DataStructures/Graph/GraphNode.cpp:118
+#: DataStructures/Graph/GraphNode.cpp:126
+#: DataStructures/Graph/GraphNode.cpp:134
+#: DataStructures/LinkedList/ListStructure.cpp:152
+#: DataStructures/LinkedList/ListStructure.cpp:160
+#, kde-format
+msgid "The method \"%1\" is deprecated, please use \"%2\" instead."
+msgstr "Die Methode „%1“ ist veraltet, bitte benutzen Sie statt dessen „%2“."
+
+#: DataStructures/Graph/GraphNode.xml:9
+msgctxt "Scripting API Description"
+msgid ""
+"\n"
+"A node is the data element of a graph.\n"
+msgstr ""
+"\n"
+"Ein Knoten ist ein Datenelement eines Graphen.\n"
+
+#: DataStructures/Graph/GraphNode.xml:19
+msgctxt "Scripting API Description"
+msgid ""
+"Return list all nodes connected to this node. This method respects if edges "
+"are directed."
+msgstr ""
+"Gibt eine Liste aller Knoten zurück, die mit diesem Knoten verbunden sind. "
+"Dabei wird berücksichtigt, ob Kanten gerichtet sind."
+
+#: DataStructures/Graph/GraphNode.xml:28
+msgctxt "Scripting API Description"
+msgid "Return a list of all edges (incoming and outgoing) of this node."
+msgstr ""
+"Gibt eine Liste aller Kanten (eingehend und ausgehend) dieses Knotens zurück."
+
+#: DataStructures/Graph/GraphNode.xml:37
+msgctxt "Scripting API Description"
+msgid ""
+"Return a list of all edges (incoming and outgoing) of this node of a "
+"specified type."
+msgstr ""
+"Gibt eine Liste aller Kanten (eingehend und ausgehend) des angegebenen Typs "
+"dieses Knotens zurück."
+
+#: DataStructures/Graph/GraphNode.xml:51
+msgctxt "Scripting API Description"
+msgid "Return a list of incoming edges of this node."
+msgstr "Gibt eine Liste aller eingehenden Kanten dieses Knotens zurück."
+
+#: DataStructures/Graph/GraphNode.xml:60
+msgctxt "Scripting API Description"
+msgid "Return a list of all incoming edges of this node of a specified type."
+msgstr ""
+"Gibt eine Liste von eingehenden Kanten des angegebenen Typs zu diesem Knoten "
+"zurück."
+
+#: DataStructures/Graph/GraphNode.xml:74
+msgctxt "Scripting API Description"
+msgid "Return a list of all outgoing edges of this node."
+msgstr "Gibt eine Liste aller ausgehenden Kanten dieses Knotens zurück."
+
+#: DataStructures/Graph/GraphNode.xml:83
+msgctxt "Scripting API Description"
+msgid "Return a list of all outgoing edges of this node of a specified type."
+msgstr ""
+"Gibt eine Liste von ausgehenden Kanten des angegebenen Typs von diesem "
+"Knoten zurück."
+
+#: DataStructures/Graph/GraphNode.xml:97
+msgctxt "Scripting API Description"
+msgid "Return a list of all edges of this node to the specified node."
+msgstr ""
+"Gibt eine Liste aller Kanten des angegebenen Typs dieses Knotens zurück."
+
+#: DataStructures/Graph/GraphPlugin.cpp:36
+msgctxt "@title Displayed plugin name"
+msgid "Graph Structure"
+msgstr "Graphenstruktur"
+
+#: DataStructures/Graph/GraphPlugin.cpp:94
+msgctxt "coordinate axis"
+msgid "x"
+msgstr "x"
+
+#: DataStructures/Graph/GraphPlugin.cpp:95
+msgctxt "coordinate axis"
+msgid "y"
+msgstr "y"
+
+#: DataStructures/Graph/GraphPlugin.cpp:96
+msgid "Size"
+msgstr "Größe"
+
+#: DataStructures/Graph/GraphPlugin.cpp:113
+msgid "Graph Type:"
+msgstr "Graphentyp:"
+
+#: DataStructures/Graph/GraphPlugin.cpp:115
+msgctxt "@label:inlistbox"
+msgid "Graph"
+msgstr "Graph"
+
+#: DataStructures/Graph/GraphPlugin.cpp:117
+msgctxt ""
+"@label:inlistbox graph for which several edges between same nodes may exist"
+msgid "Multigraph"
+msgstr "Mehrfachgraph"
+
+#: DataStructures/Graph/GraphStructure.cpp:156
+msgid "Cannot create edge: nodes are not defined."
+msgstr "Kante kann nicht erstellt werden: Knoten sind nicht definiert."
+
+#: DataStructures/Graph/GraphStructure.cpp:160
+#, kde-format
+msgid "Cannot create edge: pointer type %1 not defined"
+msgstr "Kante kann nicht erstellt werden: Zeigertyp %1 ist nicht definiert"
+
+#: DataStructures/Graph/GraphStructure.cpp:179
+#: DataStructures/Graph/GraphStructure.cpp:187
+#: DataStructures/Graph/GraphStructure.cpp:195
+#: DataStructures/Graph/GraphStructure.cpp:203
+#: DataStructures/Graph/GraphStructure.cpp:211
+#: DataStructures/Graph/GraphStructure.cpp:219
+#: DataStructures/Graph/GraphStructure.cpp:229
+#: DataStructures/Graph/GraphStructure.cpp:237 QtScriptBackend.cpp:265
+#: QtScriptBackend.cpp:271
+#, kde-format
+msgid "The global method \"%1\" is deprecated, please use \"%2\" instead."
+msgstr ""
+"Die globale Methode „%1“ ist veraltet, bitte benutzen Sie statt dessen „%2“."
+
+#: DataStructures/Graph/GraphStructure.cpp:390
+msgid "This action will probably remove some edges. Do you want to continue?"
+msgstr ""
+"Diese Aktion wird vermutlich einige Kanten entfernen. Möchten Sie fortfahren?"
+
+#: DataStructures/Graph/GraphStructure.cpp:430
+#, kde-format
+msgid "Could not add back-edge (%1->%2) to undirected graph."
+msgstr ""
+"Die rückwärts gerichtete Kante (%1->%2) kann nicht zu einem unidirektionalen "
+"Graphen hinzugefügt werden."
+
+#: DataStructures/Graph/GraphStructure.cpp:441
+#, kde-format
+msgid "Could not add existing edge (%1->%2): this graph is no multigraph."
+msgstr ""
+"Die vorhandene Kante (%1->%2) kann nicht hinzugefügt werden: Dieser Graph "
+"ist kein Multigraph."
+
+#: DataStructures/Graph/GraphStructure.xml:9
+msgctxt "Scripting API Description"
+msgid ""
+"\n"
+"A graph objects holds the information of a data structure of type \"Graph"
+"\".\n"
+msgstr ""
+"\n"
+"Ein Graphenobjekt enthält Informationen über eine Datenstruktur vom Typ "
+"„Graph“.\n"
+
+#: DataStructures/Graph/GraphStructure.xml:19
+msgctxt "Scripting API Description"
+msgid "Return list all nodes in the graph."
+msgstr "Gibt eine Liste aller Knoten des Graphen zurück."
+
+#: DataStructures/Graph/GraphStructure.xml:28
+msgctxt "Scripting API Description"
+msgid "Return list all nodes in the graph of specified type."
+msgstr "Gibt eine Liste aller Knoten des Graphen vom angegebenen Typ zurück."
+
+#: DataStructures/Graph/GraphStructure.xml:37
+msgctxt "Scripting API Description"
+msgid "Return list all edges in the graph."
+msgstr "Gibt eine Liste aller Kanten des Graphen zurück."
+
+#: DataStructures/Graph/GraphStructure.xml:46
+msgctxt "Scripting API Description"
+msgid "Return list all edges in the graph of specified type."
+msgstr "Gibt eine Liste aller Kanten des Graphen vom angegebenen Typ zurück."
+
+#: DataStructures/Graph/GraphStructure.xml:60
+#: DataStructures/LinkedList/ListStructure.xml:42
+msgctxt "Scripting API Description"
+msgid ""
+"Create a new node of the specified type and return the created node. If the "
+"type is not registered, no node is created."
+msgstr ""
+"Erstellt einen neuen Knoten vom angegebenen Typ und gibt den erzeugten "
+"Knoten zurück. Ist der Typ nicht registriert, wird kein Knoten erzeugt."
+
+# etwas besseres als Klickposition?
+#: DataStructures/Graph/GraphStructure.xml:74
+#: DataStructures/LinkedList/ListStructure.xml:56
+msgctxt "Scripting API Description"
+msgid "Create a new node of default type and return the created node."
+msgstr ""
+"Erstellt einen neuen Knoten vom Standardtyp und gibt den erzeugten Knoten "
+"zurück."
+
+#: DataStructures/Graph/GraphStructure.xml:83
+msgctxt "Scripting API Description"
+msgid ""
+"Create an edge from node \"from\" to node \"to\" of the specified type and "
+"return the created edge. If the type is not registered, no edge is created."
+msgstr ""
+"Erstellt einen Kante vom Knoten „from“ zum Knoten „to“  vom angegebenen Typ "
+"und gibt die erzeugte Kante zurück. Ist der Typ nicht registriert, wird "
+"keine Kante erzeugt."
+
+#: DataStructures/Graph/GraphStructure.xml:107
+msgctxt "Scripting API Description"
+msgid ""
+"Create an edge from node \"from\" to node \"to\" of default type and return "
+"the created edge."
+msgstr ""
+"Erstellt einen Kante vom Knoten „from“ zum Knoten „to“  als Standardtyp und "
+"gibt die erzeugte Kante zurück."
+
+#: DataStructures/Graph/GraphStructure.xml:126
+msgctxt "Scripting API Description"
+msgid ""
+"Returns an array of shortest path lengths from this node to every other node "
+"in the graph."
+msgstr ""
+"Gibt ein Feld mit den kürzesten Pfadlängen von diesem Knoten zu jedem "
+"anderen Knoten im Graphen zurück."
+
+#: DataStructures/LinkedList/ListNode.xml:9
+msgctxt "Scripting API Description"
+msgid ""
+"\n"
+"A node is the data element of a linked list.\n"
+msgstr ""
+"\n"
+"Ein Knoten ist das Datenelement einer verketteten Liste.\n"
+
+#: DataStructures/LinkedList/ListNode.xml:19
+msgctxt "Scripting API Description"
+msgid "Set pointer of this list node to the target node."
+msgstr "Setzt den Zeiger dieses Listenknotens auf den Zielknoten."
+
+#: DataStructures/LinkedList/ListPlugin.cpp:41
+msgctxt "@title Displayed plugin name"
+msgid "Linked List Structure"
+msgstr "„Verkettete Liste“-Struktur"
+
+#: DataStructures/LinkedList/ListPlugin.cpp:82
+msgid "Front value"
+msgstr "Frontwert"
+
+#: DataStructures/LinkedList/ListPlugin.cpp:101
+#, kde-format
+msgid "Data '%1' has more than one out pointer."
+msgstr "Datensatz „%1“ hat mehr als einen ausgehenden Zeiger."
+
+#: DataStructures/LinkedList/ListPlugin.cpp:109
+#: DataStructures/RootedTree/RootedTreePlugin.cpp:129
+#, kde-format
+msgid "Cannot convert document '%1'"
+msgstr "Das Dokument „%1“ kann nicht umgewandelt werden."
+
+#: DataStructures/LinkedList/ListStructure.xml:9
+msgctxt "Scripting API Description"
+msgid ""
+"\n"
+"A list objects holds the information of a data structure of type \"Linked "
+"List\".\n"
+msgstr ""
+"\n"
+"Ein Listenobjekt enthält Informationen über eine Datenstruktur vom Typ "
+"„verkettete Liste“.\n"
+
+#: DataStructures/LinkedList/ListStructure.xml:19
+msgctxt "Scripting API Description"
+msgid "Return head node of the list."
+msgstr "Gibt den ersten Knoten der Liste zurück."
+
+#: DataStructures/LinkedList/ListStructure.xml:28
+msgctxt "Scripting API Description"
+msgid "Set the head of the list."
+msgstr "Setzt den ersten Knoten der Liste."
+
+#: DataStructures/RootedTree/RootedTreePlugin.cpp:36
+msgctxt "@title Displayed plugin name"
+msgid "RootedTree Structure"
+msgstr "Wurzelbaum-Struktur"
+
+#: DataStructures/RootedTree/RootedTreePlugin.cpp:86
+msgctxt "@option:check"
+msgid "Show all pointers"
+msgstr "Alle Zeiger anzeigen"
+
+#: DataStructures/RootedTree/RootedTreePlugin.cpp:116
+#, kde-format
+msgid "There are cycles at node %1. Data will be lost by conversion."
+msgstr ""
+"Der Knoten %1 hat Zirkelbezüge. Die Daten werden beim Konvertieren entfernt."
+
+#: DataType.cpp:42
+msgid "Element"
+msgstr "Element"
+
+#: DocumentManager.cpp:227
+msgctxt ""
+"document that contains graphs or data structures as a visual representation"
+msgid "Document"
+msgstr "Dokument"
+
+#: EngineModules/Console/Console.xml:7
+msgctxt "Scripting API Description"
+msgid ""
+"The Console object allows you to print messages of different importance to a "
+"log."
+msgstr ""
+"Mit dem Objekt „Console“ können Meldungen unterschiedlicher Wichtigkeit "
+"ausgegeben werden."
+
+#: EngineModules/Console/Console.xml:8
+msgctxt "Scripting API Description"
+msgid ""
+"Console is not a constructor. All properties and methods of Console can be "
+"called by using Console as an object, without creating it."
+msgstr ""
+"„Console“ ist kein Konstruktor. Alle Eigenschaften und Methoden des Objekts "
+"„Console“ aufgerufen werden, indem „Console“ als Objekt verwendet wird, ohne "
+"es zu konstruieren."
+
+#: EngineModules/Console/Console.xml:11
+msgctxt "Scripting API Description"
+msgid ""
+"Console.log(\"This is a program message.\"); // print a program message\n"
+"Console.debug(\"A debug message.\"); // print a debug message"
+msgstr ""
+"Console.log(\"Dies ist eine Programmmeldung.\"); // gibt eine normale "
+"Meldung aus\n"
+"Console.debug(\"Eine Debug-Meldung.\"); // gibt eine Fehlermeldung aus"
+
+#: EngineModules/Console/Console.xml:18
+msgctxt "Scripting API Description"
+msgid "Print the given message of normal severity."
+msgstr "Gibt eine normale Meldung aus."
+
+#: EngineModules/Console/Console.xml:32
+msgctxt "Scripting API Description"
+msgid "Print the given debug message."
+msgstr "Gibt die angegebene Debug-Meldung aus."
+
+#: EngineModules/Console/Console.xml:46
+msgctxt "Scripting API Description"
+msgid "Print the given error message of high severity."
+msgstr "Gibt eine wichtige Fehlermeldung aus."
+
+#: Group.cpp:53
+msgid "Group"
+msgstr "Gruppe"
+
+#: IncludeManager.cpp:98
+#, kde-format
+msgid "Cannot open file %1."
+msgstr "Die Datei „%1“ kann nicht geöffnet werden."
+
+#: IncludeManager.cpp:128
+#, kde-format
+msgid "Invalid include directive: %1. Cannot find file in directive."
+msgstr ""
+"Ungültige Einfügeanweisung: %1. Datei kann in der Anweisung nicht gefunden "
+"werden."
+
+#: LoadSave/Plugins/dotFileFormat/DotFileFormatPlugin.cpp:41
+msgctxt "@title Displayed plugin name"
+msgid "Graphviz Graph File Backend"
+msgstr "Backend für Graphviz-Graphendateien"
+
+#: LoadSave/Plugins/dotFileFormat/DotFileFormatPlugin.cpp:43
+msgid "Read and write Graphviz graph files."
+msgstr "Graphviz-Graphendateien lesen und schreiben"
+
+#: LoadSave/Plugins/dotFileFormat/DotFileFormatPlugin.cpp:65
+#, kde-format
+msgid "%1|Graphviz Format"
+msgstr "%1|Graphviz-Format"
+
+#: LoadSave/Plugins/dotFileFormat/DotFileFormatPlugin.cpp:71
+#: LoadSave/Plugins/gmlFileFormat/GmlFileFormatPlugin.cpp:65
+#: LoadSave/Plugins/kmlFileFormat/KmlFileFormatPlugin.cpp:144
+msgid "Import"
+msgstr "Import"
+
+#: LoadSave/Plugins/dotFileFormat/DotFileFormatPlugin.cpp:77
+#: LoadSave/Plugins/gmlFileFormat/GmlFileFormatPlugin.cpp:71
+#: LoadSave/Plugins/tgfFileFormat/TgfFileFormatPlugin.cpp:72
+#: LoadSave/RocsGraphFileFormatPlugin.cpp:85
+#, kde-format
+msgid "Could not open file \"%1\" in read mode: %2"
+msgstr "Die Datei „%1“ lässt sich nicht im Lesemodus öffnen: %2"
+
+#: LoadSave/Plugins/dotFileFormat/DotFileFormatPlugin.cpp:83
+#: LoadSave/Plugins/gmlFileFormat/GmlFileFormatPlugin.cpp:77
+#, kde-format
+msgid "Could not parse file \"%1\"."
+msgstr "Die Datei „%1“ lässt sich nicht einlesen."
+
+#: LoadSave/Plugins/dotFileFormat/DotFileFormatPlugin.cpp:99
+#: LoadSave/Plugins/gmlFileFormat/GmlFileFormatPlugin.cpp:91
+msgid "No active graph in this document."
+msgstr "Dieses Dokument enthält keinen aktiven Graphen."
+
+#: LoadSave/Plugins/dotFileFormat/DotFileFormatPlugin.cpp:107
+#: LoadSave/Plugins/gmlFileFormat/GmlFileFormatPlugin.cpp:98
+#, kde-format
+msgid "Cannot open file %1 to write document. Error: %2"
+msgstr ""
+"Die Datei %1 kann zum Schreiben des Dokuments nicht geöffnet werden. Fehler: "
+"%2"
+
+#: LoadSave/Plugins/gmlFileFormat/GmlFileFormatPlugin.cpp:38
+msgctxt "@title Displayed plugin name"
+msgid "GML File Backend"
+msgstr "Backend für GML-Dateien"
+
+#: LoadSave/Plugins/gmlFileFormat/GmlFileFormatPlugin.cpp:40
+msgid "Read and write Graph Markup Language (GML) files."
+msgstr "Dateien im Format „Graph Markup Language“ (GML) lesen und schreiben."
+
+#: LoadSave/Plugins/gmlFileFormat/GmlFileFormatPlugin.cpp:60
+msgid "*.gml|Graph Markup Language Format"
+msgstr "*.gml|Graph-Markup-Sprachformat"
+
+#: LoadSave/Plugins/kmlFileFormat/KmlFileFormatPlugin.cpp:40
+msgctxt "@title Displayed plugin name"
+msgid "KML File Backend"
+msgstr "Backend für KML-Dateien"
+
+#: LoadSave/Plugins/kmlFileFormat/KmlFileFormatPlugin.cpp:42
+msgid "Read and write Keyhole Markup Language (KML) files."
+msgstr "Keyhole-Markup-Sprachdateien (KML) lesen und schreiben."
+
+#: LoadSave/Plugins/kmlFileFormat/KmlFileFormatPlugin.cpp:62
+msgid "*.kml|Keyhole Markup Language Format"
+msgstr "*.kml|Keyhole-Markup-Sprachformat"
+
+#: LoadSave/Plugins/kmlFileFormat/KmlFileFormatPlugin.cpp:72
+#, kde-format
+msgid "Cannot open file %1: %2"
+msgstr "Die Datei %1 lässt sich nicht öffnen: %2"
+
+#: LoadSave/Plugins/tgfFileFormat/TgfFileFormatPlugin.cpp:35
+msgctxt "@title Displayed plugin name"
+msgid "TGF File Backend"
+msgstr "Backend für TGF-Dateien"
+
+#: LoadSave/Plugins/tgfFileFormat/TgfFileFormatPlugin.cpp:37
+msgid "Read and write Trivial Graph Format (TGF) files."
+msgstr "Dateien im Format „Trivial Graph“ (TGF) lesen und schreiben."
+
+#: LoadSave/Plugins/tgfFileFormat/TgfFileFormatPlugin.cpp:56
+msgid "*.tgf|Trivial Graph Format"
+msgstr "*.tgf|„Trivial Graph“-Format"
+
+#: LoadSave/Plugins/tgfFileFormat/TgfFileFormatPlugin.cpp:91
+#, kde-format
+msgid "Could not parse file. Identifier \"%1\" is used more than once."
+msgstr ""
+"Datei kann nicht eingelesen werden. Die Kennung „%1“ wird mehrfach benutzt."
+
+#: LoadSave/Plugins/tgfFileFormat/TgfFileFormatPlugin.cpp:103
+#, kde-format
+msgid "Could not parse file. Edge from \"%1\" to \"%2\" uses undefined nodes."
+msgstr ""
+"Die Datei kann nicht eingelesen werden. Die Kante von „%1“ zu „%2“ verwendet "
+"nicht definierte Knoten."
+
+#: LoadSave/Plugins/tgfFileFormat/TgfFileFormatPlugin.cpp:121
+#: LoadSave/Plugins/tikzFileFormat/TikzFileFormatPlugin.cpp:75
+#: LoadSave/RocsGraphFileFormatPlugin.cpp:301
+#, kde-format
+msgid "Could not open file \"%1\" in write mode: %2"
+msgstr "Die Datei „%1“ lässt sich nicht im Schreibmodus öffnen: %2"
+
+#: LoadSave/Plugins/tgfFileFormat/TgfFileFormatPlugin.cpp:128
+#: LoadSave/Plugins/tikzFileFormat/TikzFileFormatPlugin.cpp:82
+msgid "No data structure specified for output in this document."
+msgstr "Für die Ausgabe in dieses Dokument ist keine Datenstruktur angegeben."
+
+#: LoadSave/Plugins/tikzFileFormat/TikzFileFormatPlugin.cpp:33
+msgctxt "@title Displayed plugin name"
+msgid "PGF/TikZ Export File Backend"
+msgstr "Backend für PGF/TikZ-Exportdateien"
+
+#: LoadSave/Plugins/tikzFileFormat/TikzFileFormatPlugin.cpp:35
+msgid "Export graph documents in PGF/TikZ format."
+msgstr "Exportiert Graphendokumente im Format PGF/TikZ."
+
+#: LoadSave/Plugins/tikzFileFormat/TikzFileFormatPlugin.cpp:54
+msgid "*.pgf|TikZ (PGF) Format"
+msgstr "*.pgf|TikZ-Format (PGF)"
+
+#: LoadSave/RocsGraphFileFormatPlugin.cpp:39
+msgctxt "@title Displayed plugin name"
+msgid "Rocs Graph File Backend"
+msgstr "Backend für Rocs-Graphendateien"
+
+#: LoadSave/RocsGraphFileFormatPlugin.cpp:41
+msgid "Read and write Rocs Graph Files"
+msgstr "Rocs-Graphendateien lesen und schreiben"
+
+#: LoadSave/RocsGraphFileFormatPlugin.cpp:70
+msgid "*.graph|Rocs Graph File Format"
+msgstr "*.graph|Rocs-Graphendatei-Format"
+
+#: LoadSave/RocsGraphFileFormatPlugin.cpp:312
+#, kde-format
+msgid "Could not write data, aborting. Error: %1."
+msgstr ""
+"Daten können nicht geschrieben werden, der Vorgang wird abgebrochen: Fehler "
+"%1"
+
+#: Pointer.cpp:300
+msgid "Could not set pointer type: pointer type does not exist."
+msgstr ""
+"Der Zeigertyp kann nicht eingestellt werden, da dieser Typ nicht existiert."
+
+#: Pointer.xml:7
+msgctxt "Scripting API Description"
+msgid ""
+"A pointer connects two data elements and can itself hold information by its "
+"properties."
+msgstr ""
+"Ein Zeiger verbindet zwei Datenelemente und kann Informationen über seine "
+"Eigenschaften enthalten."
+
+#: Pointer.xml:14
+msgctxt "Scripting API Description"
+msgid "Start of the connection."
+msgstr "Start der Verbindung."
+
+#: Pointer.xml:19
+msgctxt "Scripting API Description"
+msgid "End of the connection"
+msgstr "Ende der Verbindung"
+
+#: Pointer.xml:24
+msgctxt "Scripting API Description"
+msgid ""
+"If true, the connection is directed. Otherwise is connection is undirected."
+msgstr ""
+"Falls wahr, ist die Verbindung gerichtet, andernfalls ist sie ungerichtet."
+
+#: Pointer.xml:29
+msgctxt "Scripting API Description"
+msgid "ID of the connection type."
+msgstr "Kennung des Verbindungstyps."
+
+#: Pointer.xml:34
+msgctxt "Scripting API Description"
+msgid "The width of the connection."
+msgstr "Breite der Verbindung."
+
+#: Pointer.xml:42
+msgctxt "Scripting API Description"
+msgid "Remove this connection."
+msgstr "Diese Verbindung entfernen."
+
+#: Pointer.xml:51
+msgctxt "Scripting API Description"
+msgid "Add a new property to the connection."
+msgstr "Der Verbindung eine neue Eigenschaft hinzufügen."
+
+#: Pointer.xml:70
+msgctxt "Scripting API Description"
+msgid "Remove an existing property from the connection."
+msgstr "Eine bestehende Eigenschaft der Verbindung entfernen."
+
+#: PointerType.cpp:39
+msgid "Connection"
+msgstr "Verbindung"
+
+#: QtScriptBackend.cpp:189
+msgid "Rocs Console script"
+msgstr "Rocs-Konsolenskript"
+
+#: QtScriptBackend.cpp:191 QtScriptBackend.cpp:235
+#, kde-format
+msgid "Script Error: %1"
+msgstr "Skriptfehler: %1"
+
+#: QtScriptBackend.cpp:195 QtScriptBackend.cpp:240
+msgctxt "@info status message after successful script execution"
+msgid "<i>Execution Finished</i>"
+msgstr "<i>Ausführung beendet</i>"
+
+#: QtScriptBackend.cpp:298
+#, kde-format
+msgid "Script error in included file %1"
+msgstr "Skript-Fehler in Include-Datei %1"
+
+#~ msgctxt "dynamic property that is present exactly once"
+#~ msgid "Unique"
+#~ msgstr "Eindeutig"
+
+#~ msgctxt "dynamic property that is present multiple times"
+#~ msgid "Multiple"
+#~ msgstr "Mehrfach"
+
+#~ msgctxt "dynamic property that is present at all elements"
+#~ msgid "Global"
+#~ msgstr "Global"
+
+#~ msgctxt "type of dynamic property"
+#~ msgid "None"
+#~ msgstr "Keine"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Add Edge"
+#~ msgstr "Kante hinzufügen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Creates a new edge between 2 nodes"
+#~ msgstr "Erstellt eine neue Kante zwischen zwei Knoten"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Add %1"
+#~ msgstr "%1 hinzufügen"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Add Data"
+#~ msgstr "Daten hinzufügen"
+
+# etwas besseres als Klickposition?
+#~ msgctxt "@info:tooltip"
+#~ msgid "Creates a new node at the click position."
+#~ msgstr "Erstellt einen neuen Knoten an der Klickposition."
+
+#~ msgid "untitled"
+#~ msgstr "Unbenannt"
+
+#~ msgid "Add %1"
+#~ msgstr "%1 hinzufügen"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Delete"
+#~ msgstr "Löschen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Delete items by clicking on them."
+#~ msgstr "Elemente durch Anklicken löschen."
+
+#~ msgctxt "@title:window"
+#~ msgid "Data Type Properties"
+#~ msgstr "Eigenschaften des Datentyps"
+
+#~ msgctxt "@title:window"
+#~ msgid "Pointer Type Properties"
+#~ msgstr "Eigenschaften des Zeigertyps"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Move"
+#~ msgstr "Verschieben"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select and move items."
+#~ msgstr "Elemente auswählen und verschieben."
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Zoom"
+#~ msgstr "Vergrößerung"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Zoom the canvas by the wheel, or by dragging."
+#~ msgstr "Vergrößern der Zeichenfläche mit dem Mausrad oder durch Ziehen."
+
+#~ msgctxt "@action:button"
+#~ msgid "Properties"
+#~ msgstr "Eigenschaften"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Graph Document:"
+#~ msgstr "Graphendokument:"
+
+#~ msgid "Data Structure:"
+#~ msgstr "Datenstruktur:"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Add a new data structure with the specified name"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Add a new data structure."
+#~ msgstr "Eine neue Datenstruktur mit dem angegebenen Namen hinzufügen"
+
+#, fuzzy
+#~| msgid "Select Data Type:"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Remove selected data structure."
+#~ msgstr "Datentyp auswählen:"
+
+#~ msgid "Edit Data Types"
+#~ msgstr "Datentypen bearbeiten"
+
+#, fuzzy
+#~| msgid "Data Element Properties"
+#~ msgctxt "@title:window"
+#~ msgid "Data Element Properties"
+#~ msgstr "Eigenschaften des Datenelements"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Data Type Properties"
+#~ msgid "Data Properties"
+#~ msgstr "Eigenschaften des Datentyps"
+
+#, fuzzy
+#~| msgid "Dynamic Properties"
+#~ msgid "Static Properties"
+#~ msgstr "Dynamische Eigenschaften"
+
+#~ msgid "Node color"
+#~ msgstr "Knotenfarbe"
+
+#~ msgid "Color:"
+#~ msgstr "Farbe:"
+
+#~ msgid "Type:"
+#~ msgstr "Typ:"
+
+#~ msgid "Dynamic Properties"
+#~ msgstr "Dynamische Eigenschaften"
+
+#~ msgid "Name:"
+#~ msgstr "Name:"
+
+#~ msgid "Data Structure Plugin:"
+#~ msgstr "Datenstruktur-Modul:"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Data Structure Properties"
+#~ msgid "Data Structure Plugin Properties"
+#~ msgstr "Eigenschaften der Datenstruktur"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Data Structure"
+#~ msgstr "Datenstruktur"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Data Types"
+#~ msgstr "Datentypen"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Pointer Types"
+#~ msgstr "Zeigertypen"
+
+#~ msgctxt "@title:window"
+#~ msgid "Data Structure Properties"
+#~ msgstr "Eigenschaften der Datenstruktur"
+
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#, fuzzy
+#~| msgid "Default Color:"
+#~ msgid "Default Value"
+#~ msgstr "Standardfarbe:"
+
+#, fuzzy
+#~| msgid "Display Options"
+#~ msgid "Display"
+#~ msgstr "Anzeigeeinstellungen"
+
+#, fuzzy
+#~| msgid "Property"
+#~ msgctxt "Property identifier, only a-Z and no spaces"
+#~ msgid "property%1"
+#~ msgstr "Eigenschaft"
+
+#, fuzzy
+#~| msgctxt "@title:tab"
+#~| msgid "Data Types"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Data Type"
+#~ msgstr "Datentypen"
+
+#~ msgid "Select Data Type:"
+#~ msgstr "Datentyp auswählen:"
+
+#, fuzzy
+#~| msgid "Select Data Type:"
+#~ msgid "Remove selected data type."
+#~ msgstr "Datentyp auswählen:"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Add a new data structure with the specified name"
+#~ msgid "Add new data type."
+#~ msgstr "Eine neue Datenstruktur mit dem angegebenen Namen hinzufügen"
+
+#~ msgid "Insert a name for this type"
+#~ msgstr "Geben Sie einen Namen für diesen Typ ein"
+
+#~ msgid "Default Color:"
+#~ msgstr "Standardfarbe:"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Data Type Properties"
+#~ msgid "Data Type Properties"
+#~ msgstr "Eigenschaften des Datentyps"
+
+#~ msgctxt "@title:window"
+#~ msgid "Document Properties"
+#~ msgstr "Dokument-Eigenschaften"
+
+#~ msgid "Property"
+#~ msgstr "Eigenschaft"
+
+#~ msgid "Value"
+#~ msgstr "Wert"
+
+#, fuzzy
+#~| msgctxt "@title:tab"
+#~| msgid "Pointer Types"
+#~ msgid "Edit Pointer Types"
+#~ msgstr "Zeigertypen"
+
+#, fuzzy
+#~| msgid "Pointer Properties"
+#~ msgctxt "@title:window"
+#~ msgid "Pointer Properties"
+#~ msgstr "Eigenschaften des Zeigers"
+
+#~ msgid "Pointer Properties"
+#~ msgstr "Eigenschaften des Zeigers"
+
+#~ msgid "Width:"
+#~ msgstr "Breite:"
+
+#, fuzzy
+#~| msgid "solid"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "solid line"
+#~ msgstr "Durchgehend"
+
+#, fuzzy
+#~| msgid "dash"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "dash line"
+#~ msgstr "Gestrichelt"
+
+#, fuzzy
+#~| msgid "dash dot"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "dash dot line"
+#~ msgstr "Strich-Punkt"
+
+#, fuzzy
+#~| msgid "Connection"
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Connection"
+#~ msgstr "Verbindung"
+
+#, fuzzy
+#~| msgid "Add Property"
+#~ msgid "Add new pointer type."
+#~ msgstr "Eigenschaft hinzufügen"
+
+#~ msgid "Select Pointer Type:"
+#~ msgstr "Zeigertyp auswählen:"
+
+#, fuzzy
+#~| msgid "Select Pointer Type:"
+#~ msgid "Remove selected pointer type."
+#~ msgstr "Zeigertyp auswählen:"
+
+#, fuzzy
+#~| msgid "Connection"
+#~ msgid "Direction:"
+#~ msgstr "Verbindung"
+
+#~ msgid "Style:"
+#~ msgstr "Stil:"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Pointer Type Properties"
+#~ msgid "Pointer Type Properties"
+#~ msgstr "Eigenschaften des Zeigertyps"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Data Structure"
+#~ msgstr "Datenstruktur"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Selected"
+#~ msgstr "Ausgewählt"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Zoom"
+#~ msgstr "Vergrößerung"
+
+#~ msgctxt "@action:inmenu Zoom"
+#~ msgid "In"
+#~ msgstr "Vergrößern"
+
+#~ msgctxt "@action:inmenu Zoom"
+#~ msgid "Out"
+#~ msgstr "Verkleinern"
+
+#~ msgctxt "@action:inmenu Zoom"
+#~ msgid "Reset"
+#~ msgstr "Zurücksetzen"
+
+#~ msgid "Align"
+#~ msgstr "Ausrichten"
+
+#~ msgctxt "@action:inmenu align elements at bottom"
+#~ msgid "Bottom"
+#~ msgstr "Unten"
+
+#~ msgctxt "@action:inmenu align elements at center"
+#~ msgid "Center"
+#~ msgstr "Mittig"
+
+#~ msgctxt "@action:inmenu align elements at top"
+#~ msgid "Top"
+#~ msgstr "Oben"
+
+#~ msgctxt "@action:inmenu align elements left"
+#~ msgid "Left"
+#~ msgstr "Links"
+
+#~ msgctxt "@action:inmenu align elements right"
+#~ msgid "Right"
+#~ msgstr "Rechts"
+
+#~ msgctxt "@action:inmenu align elements as a circle"
+#~ msgid "Circle"
+#~ msgstr "Kreis"
+
+#~ msgctxt ""
+#~ "@action:inmenu align elements such that crossing edges are minimized"
+#~ msgid "Minimize Crossing Edges"
+#~ msgstr "Kreuzende Kanten minimieren"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Properties"
+#~ msgstr "Eigenschaften"
+
+#~ msgctxt "@title:menu Assign values"
+#~ msgid "Values"
+#~ msgstr "Werte"
+
+#~ msgctxt "@action:inmenu Value"
+#~ msgid "Enumerate"
+#~ msgstr "Aufzählen"
+
+#~ msgctxt "@action:inmenu Value"
+#~ msgid "Random Integers"
+#~ msgstr "Ganzzahlige Zufallswerte"
+
+#~ msgctxt "@action:inmenu Value"
+#~ msgid "Random Reals"
+#~ msgstr "Reelle Zufallswerte"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Delete"
+#~ msgstr "Löschen"
+
+#~ msgctxt "@title Displayed plugin name"
+#~ msgid "Assign Values"
+#~ msgstr "Werte zuweisen"
+
+#~ msgid "Assign Values"
+#~ msgstr "Werte zuweisen"
+
+#~ msgid "Data Structure"
+#~ msgstr "Datenstruktur"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">List of all data "
+#~ "structures that are of type <span style=\" font-style:italic;\">Graph</"
+#~ "span>.</p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Liste aller "
+#~ "Datenstrukturen vom Typ <span style=\" font-style:italic;\">Graph</span>."
+#~ "</p></body></html>"
+
+#~ msgid "Nodes"
+#~ msgstr "Knoten"
+
+#~ msgid "Edges"
+#~ msgstr "Kanten"
+
+#~ msgid "Start ID"
+#~ msgstr "Startkennung"
+
+#~ msgid "Lower Limit"
+#~ msgstr "Untere Grenze"
+
+#~ msgid "Upper Limit"
+#~ msgstr "Obere Grenze"
+
+#~ msgid "Generator Seed"
+#~ msgstr "Seed für den Generator"
+
+#~ msgid "Enumerate Items"
+#~ msgstr "Elemente aufzählen"
+
+#~ msgid "Assign Random Integers"
+#~ msgstr "Ganzzahlige Zufallswerte zuweisen"
+
+#~ msgid "Assign Random Reals"
+#~ msgstr "Reelle Zufallswerte zuweisen"
+
+#~ msgid "Overwrite existing values"
+#~ msgstr "Bestehende Werte überschreiben"
+
+#~ msgctxt "@Title Displayed plugin name"
+#~ msgid "Generate Graph"
+#~ msgstr "Graphen erzeugen"
+
+#~ msgctxt "@title:window"
+#~ msgid "Generate Graph"
+#~ msgstr "Graphen erzeugen"
+
+#~ msgid "Mesh Graph"
+#~ msgstr "Netzgraph"
+
+#~ msgid "Star Graph"
+#~ msgstr "Sterngraph"
+
+#~ msgid "Circle Graph"
+#~ msgstr "Ringgraph"
+
+#~ msgid "RandomGraph"
+#~ msgstr "Zufälliger Graph"
+
+#~ msgid "Generate Graph"
+#~ msgstr "Graphen erzeugen"
+
+#~ msgid "Random Graph"
+#~ msgstr "Zufälliger Graph"
+
+#~ msgid "Erdös-Renyi Graph"
+#~ msgstr "Erdös-Renyi-Graph"
+
+#~ msgid "Number of Columns:"
+#~ msgstr "Anzahl der Spalten:"
+
+#~ msgid "Number of Rows:"
+#~ msgstr "Anzahl der Zeilen:"
+
+#~ msgid "Satellite Nodes:"
+#~ msgstr "Satellitenknoten:"
+
+#~ msgid "Number of Nodes:"
+#~ msgstr "Anzahl der Knoten:"
+
+#~ msgid "Nodes:"
+#~ msgstr "Knoten:"
+
+#~ msgid "Edges:"
+#~ msgstr "Kanten:"
+
+#~ msgid "Allow self-edges:"
+#~ msgstr "Kanten auf sich selbst erlauben:"
+
+#~ msgid "Generator Seed:"
+#~ msgstr "Seed für den Generator:"
+
+#~ msgid "Nodes (n):"
+#~ msgstr "Knoten (n):"
+
+#~ msgid "Edge Probability (p):"
+#~ msgstr "Kanten-Wahrscheinlichkeit (p):"
+
+#~ msgctxt "@title Displayed plugin name"
+#~ msgid "Transform Edges"
+#~ msgstr "Kanten umformen"
+
+#~ msgctxt "@title:window"
+#~ msgid "Transform Edges"
+#~ msgstr "Kanten umformen"
+
+#~ msgid "Transform Edges"
+#~ msgstr "Kanten umformen"
+
+#~ msgid ""
+#~ "This option connects all nodes of the given graph. The new edges do not "
+#~ "have any preset weights."
+#~ msgstr ""
+#~ "Diese Option verbindet alle Knoten des Graphen. Die neuen Kanten haben "
+#~ "keine voreingestellten Gewichtungen."
+
+#~ msgid "Complete Graph"
+#~ msgstr "Graphen vervollständigen"
+
+#~ msgid "Remove all Edges"
+#~ msgstr "Alle Kanten entfernen"
+
+#~ msgid ""
+#~ "This option reverses all edges of a directed graph. Note that this does "
+#~ "not apply to undirected graphs."
+#~ msgstr ""
+#~ "Diese Option kehrt alle Kanten eines gerichteten Graphen um. Beachten "
+#~ "Sie, dass dies nicht für ungerichtete Graphen gilt."
+
+#~ msgid "Reverse all Edges"
+#~ msgstr "Alle Kanten umkehren"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">This option executes "
+#~ "<span style=\" font-style:italic;\">Prim's Minimal Spanning Tree "
+#~ "Algorithm</span> at the graph. All edges without given weights are "
+#~ "assumed to have weights equals 1. Directed and undirected graphs are "
+#~ "processed accordingly.</p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Diese Option führt "
+#~ "<span style=\" font-style:italic;\">Prims Minimaler-Spannbaum-"
+#~ "Algorithmus</span> für diesen Graphen aus. Für Kanten ohne Gewichtungen "
+#~ "wird eine Gewichtung von 1 angenommen. Gerichtete und ungerichtete "
+#~ "Graphen werden gleichermaßen behandelt.</p></body></html>"
+
+#~ msgid "Spanning Tree Transformation"
+#~ msgstr "Spannbaumtransformation "
+
+#~ msgid ""
+#~ "A KDE Text Editor could not be found, \n"
+#~ " please, check your installation"
+#~ msgstr ""
+#~ "Es wurde kein KDE-Editor gefunden.\n"
+#~ "Bitte überprüfen Sie Ihre Installation."
+
+#~ msgid "Default Information Display"
+#~ msgstr "Standard-Informationsanzeige"
+
+#~ msgid "Node Information"
+#~ msgstr "Knoteninformationen"
+
+#~ msgid "centered"
+#~ msgstr "Zentriert"
+
+#~ msgid "below"
+#~ msgstr "Unter"
+
+#~ msgid "above"
+#~ msgstr "Über"
+
+#~ msgid "Edge Information"
+#~ msgstr "Kanteninformationen"
+
+#, fuzzy
+#~| msgid "Show values of pointers"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set visibility of pointers"
+#~ msgstr "Werte der Zeiger anzeigen"
+
+#, fuzzy
+#~| msgid "Element"
+#~ msgid "Element Types"
+#~ msgstr "Element"
+
+#~ msgid "*|All files"
+#~ msgstr "*|Alle Dateien"
+
+#~ msgctxt "@action:button"
+#~ msgid "Export"
+#~ msgstr "Exportieren"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Export graphs to file"
+#~ msgstr "Graphen in Datei exportieren"
+
+#~ msgctxt "@title:window"
+#~ msgid "Import Graph File into Project"
+#~ msgstr "Graphendatei in Projekt importieren"
+
+#~ msgid "*.js|Script files"
+#~ msgstr "*.js|Skriptdatei"
+
+#~ msgid "Rocs Script Files"
+#~ msgstr "Rocs-Skriptdateien"
+
+#, fuzzy
+#~| msgid "Added your description here."
+#~ msgid "Add your description here."
+#~ msgstr "Ihre Beschreibung wurde hier hinzugefügt."
+
+#~ msgctxt "@item:inlistbox Select output"
+#~ msgid "Program Messages"
+#~ msgstr "Programm-Meldungen"
+
+#~ msgctxt "@item:inlistbox Select output"
+#~ msgid "Debug Messages"
+#~ msgstr "Fehler-Meldungen"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Select output:"
+#~ msgstr "Ausgabe wählen:"
+
+#~ msgctxt "@action:intoolbar Script Execution"
+#~ msgid "Run"
+#~ msgstr "Ausführen"
+
+#~ msgctxt "@action:intoolbar Script Execution"
+#~ msgid "One Step"
+#~ msgstr "Ein Schritt"
+
+#~ msgctxt "@action:intoolbar Script Execution"
+#~ msgid "Stop"
+#~ msgstr "Anhalten"
+
+#~ msgctxt "@title:menu Debug execution"
+#~ msgid "Debug"
+#~ msgstr "Debuggen"
+
+#, fuzzy
+#~| msgctxt "Menu with buttons for debug actions"
+#~| msgid "Debug"
+#~ msgctxt "@action:inmenu Debug execution"
+#~ msgid "Debug run"
+#~ msgstr "Debuggen"
+
+#~ msgctxt "@action:inmenu Debug execution"
+#~ msgid "Interrupt at first line"
+#~ msgstr "An erster Zeile unterbrechen"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Add Data"
+#~ msgstr "Daten hinzufügen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Add new data element"
+#~ msgstr "Neues Datenelement hinzufügen"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Add Connection"
+#~ msgstr "Verbindung hinzufügen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Add a new connection between two data elements of selected type"
+#~ msgstr ""
+#~ "Eine neue Verbindung zwischen zwei Datenelementen des gewählten Typs "
+#~ "hinzufügen"
+
+#~ msgctxt "@action:intoolbar Alignment"
+#~ msgid "Base"
+#~ msgstr "Unten"
+
+#~ msgctxt "@action:intoolbar Alignment"
+#~ msgid "Center"
+#~ msgstr "Mittig"
+
+#~ msgctxt "@action:intoolbar Alignment"
+#~ msgid "Top"
+#~ msgstr "Oben"
+
+#~ msgctxt "@action:intoolbar Alignment"
+#~ msgid "Left"
+#~ msgstr "Links"
+
+#~ msgctxt "@action:intoolbar Alignment"
+#~ msgid "Right"
+#~ msgstr "Rechts"
+
+#~ msgctxt "@action:intoolbar Alignment"
+#~ msgid "Circle"
+#~ msgstr "Kreis"
+
+#~ msgctxt "@action:intoolbar Alignment"
+#~ msgid "Minimize Crossing Edges"
+#~ msgstr "Kreuzende Kanten minimieren"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "New Project"
+#~ msgstr "Neues Projekt"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Save Project"
+#~ msgstr "Projekt speichern"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Open Project"
+#~ msgstr "Projekt öffnen"
+
+#, fuzzy
+#~| msgctxt "@action:inmenu"
+#~| msgid "Open Project"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Recent Projects"
+#~ msgstr "Projekt öffnen"
+
+#, fuzzy
+#~| msgctxt "@action:inmenu"
+#~| msgid "Save Project"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Save Project as"
+#~ msgstr "Projekt speichern"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "New Graph Document"
+#~ msgstr "Neues Graphendokument"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "New Script File"
+#~ msgstr "Neue Skriptdatei"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Import Graph"
+#~ msgstr "Graphen importieren"
+
+#, fuzzy
+#~| msgctxt "@action:inmenu"
+#~| msgid "Export Graph"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Export Graph as"
+#~ msgstr "Graphen exportieren"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Download Examples"
+#~ msgstr "Beispiele herunterladen"
+
+#, fuzzy
+#~| msgctxt "@action:inmenu"
+#~| msgid "Upload script"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Upload project"
+#~ msgstr "Skript hochladen"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Possible Includes"
+#~ msgstr "Mögliche Includes"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Import Script"
+#~ msgstr "Skript importieren"
+
+#, fuzzy
+#~| msgctxt "@action:inmenu"
+#~| msgid "Import Script"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Export Script as"
+#~ msgstr "Skript importieren"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Include Manager"
+#~ msgstr "Include-Verwaltung"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Default Settings"
+#~ msgstr "Voreinstellungen"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Existing Script File to Project"
+#~ msgstr "Bestehende Skriptdatei zu Projekt hinzufügen"
+
+#~ msgctxt "@info"
+#~ msgid "This does not seem to be a graph file."
+#~ msgstr "Die Datei scheint keine gültige Graphendatei zu sein."
+
+#~ msgctxt "@title:window"
+#~ msgid "Invalid File"
+#~ msgstr "Ungültige Datei"
+
+#, fuzzy
+#~| msgid ""
+#~| "*.rocs|Rocs project files\n"
+#~| "*|All files"
+#~ msgid ""
+#~ "*.rocs|Rocs project files\n"
+#~ "*.rocsz|Compressed Rocs project files\n"
+#~ "*|All files"
+#~ msgstr ""
+#~ "*.rocs|Rocs-Projektdateien\n"
+#~ "*|Alle Dateien"
+
+#~ msgctxt "@title:window"
+#~ msgid "Save Project"
+#~ msgstr "Projekt speichern"
+
+#~ msgctxt "@title:window"
+#~ msgid "Open Project Files"
+#~ msgstr "Projektdateien öffnen"
+
+#~ msgctxt "caption text for temporary project"
+#~ msgid "[ untitled ]"
+#~ msgstr "[ unbenannt ]"
+
+#, fuzzy
+#~| msgid "Script"
+#~ msgid "ScriptName"
+#~ msgstr "Skript"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Enter Filename for the New Script File"
+#~ msgid "Enter the name of your new script"
+#~ msgstr "Geben Sie einen Dateinamen für die neue Skriptdatei ein"
+
+#~ msgid ""
+#~ "*.graph|Rocs graph documents\n"
+#~ "*|All files"
+#~ msgstr ""
+#~ "*.graph|Rocs-Graphendokumente\n"
+#~ "*|Alle Dateien"
+
+#~ msgctxt "@title:window"
+#~ msgid "Save Graph Document"
+#~ msgstr "Graphendokument speichern"
+
+# Platzhalter?
+#, fuzzy
+#~| msgid "graph name here"
+#~ msgid "Graph name"
+#~ msgstr "Graphenname hier"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Enter Filename for the New Graph Document"
+#~ msgid "Enter the name of the Graph"
+#~ msgstr "Geben Sie einen Dateinamen für das neue Graphendokument ein"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Changes on your project are unsaved. Do you want to save your changes?"
+#~ msgstr ""
+#~ "Die Änderungen an Ihrem Projekt sind nicht gespeichert. Möchten Sie Ihre "
+#~ "Änderungen speichern?"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Changes on your graph document are unsaved. Do you want to save your "
+#~ "changes?"
+#~ msgstr ""
+#~ "Die Änderungen an Ihrem Graphen sind nicht gespeichert. Möchten Sie Ihre "
+#~ "Änderungen speichern?"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Changes on your script files are unsaved. Do you want to save all unsaved "
+#~ "scripts?"
+#~ msgstr ""
+#~ "Die Änderungen an Ihren Skriptdateien sind nicht gespeichert. Möchten Sie "
+#~ "Ihre Änderungen speichern?"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Changes on your script files and on your graph document are unsaved. Do "
+#~ "you want to save your graph document and all unsaved scripts?"
+#~ msgstr ""
+#~ "Die Änderungen an Ihren Skriptdateien und Ihrem Graphen sind nicht "
+#~ "gespeichert. Möchten Sie Ihren Graphen und alle ungespeicherten Skript-"
+#~ "Dateien speichern?"
+
+#~ msgid "Possible Includes for Script Engine"
+#~ msgstr "Mögliche Includes für das Skriptmodul"
+
+#~ msgctxt "@title Displayed program name"
+#~ msgid "Rocs"
+#~ msgstr "Rocs"
+
+#~ msgctxt "@title KAboutData: short program description"
+#~ msgid "Graph Theory Tool"
+#~ msgstr "Graphentheorie-Werkzeug"
+
+#~ msgctxt "@info:credit"
+#~ msgid "(c) 2009-2012 Rocs Developers"
+#~ msgstr "© 2009–2012, die Rocs-Entwickler"
+
+#~ msgctxt "@title Short program description"
+#~ msgid "Rocs - Data Structure Analysis"
+#~ msgstr "Rocs - Datenstruktur-Analyse"
+
+#~ msgctxt "@info:credit Developer name"
+#~ msgid "Tomaz Canabrava"
+#~ msgstr "Tomaz Canabrava"
+
+#~ msgctxt "@info:credit Role"
+#~ msgid "Developer"
+#~ msgstr "Entwickler"
+
+#~ msgctxt "@info:credit Developer name"
+#~ msgid "Wagner Reck"
+#~ msgstr "Wagner Reck"
+
+#~ msgctxt "@info:credit Developer name"
+#~ msgid "Andreas Cord-Landwehr"
+#~ msgstr "Andreas Cord-Landwehr"
+
+#~ msgid "No Data Structure plugins found on your system. Exiting."
+#~ msgstr ""
+#~ "Keine Datenstrukturmodule in Ihrem System gefunden. Rocs wird beendet."
+
+#~ msgid ""
+#~ "Rocs needs at least one data structure plugin to continue.\n"
+#~ "Try running kbuildsycoca4 from a console and after execute Rocs again."
+#~ msgstr ""
+#~ "Rocs benötigt mindestens ein Datenstrukturmodul um fortzufahren.\n"
+#~ "Versuchen Sie kbuildsycoca4 von der Konsole auszuführen und Rocs "
+#~ "anschließend neu zu starten."
+
+#~ msgid "Show text beside icon"
+#~ msgstr "Text neben Symbol anzeigen"
+
+#~ msgid "Path where include manager seek for includes."
+#~ msgstr "Pfad, in dem die Include-Verwaltung nach Includes sucht."
+
+#~ msgid "Position where name and value of a node shall be shown."
+#~ msgstr ""
+#~ "Position, an der Name und Wert eines Knoten angezeigt werden sollen."
+
+#~ msgid "Position where name and value of an edge shall be shown."
+#~ msgstr "Position, an der Name und Wert einer Kante angezeigt werden sollen."
+
+#~ msgid "Project"
+#~ msgstr "Projekt"
+
+#~ msgid "Script Document"
+#~ msgstr "Skriptdokument"
+
+#~ msgid "Script File"
+#~ msgstr "Skriptdatei"
+
+#~ msgid "Graph Document"
+#~ msgstr "Graphendokument"
+
+#~ msgid "Graph File"
+#~ msgstr "Graphendatei"
+
+#~ msgid "Convert To"
+#~ msgstr "Umwandeln in"
+
+#~ msgid "Edit Selected Data"
+#~ msgstr "Ausgewählte Daten bearbeiten"
+
+#~ msgid "Layout"
+#~ msgstr "Layout"
+
+#~ msgid "Tools"
+#~ msgstr "Extras"
+
+#~ msgid "Main Toolbar"
+#~ msgstr "Haupt-Werkzeugleiste"
+
+#~ msgid "Layout Toolbar"
+#~ msgstr "Layout-Werkzeugleiste"
+
+#~ msgid "Untitled"
+#~ msgstr "Unbenannt"
+
+#~ msgid "New File"
+#~ msgstr "Neue Datei"
+
+#~ msgid "Untitled%1"
+#~ msgstr "Unbenannt%1"
+
+#~ msgid "Visible"
+#~ msgstr "Sichtbar"
+
+#, fuzzy
+#~| msgid "Data Structure"
+#~ msgid "Data structure name"
+#~ msgstr "Datenstruktur"
+
+#~ msgid ""
+#~ "Delete the current data structure: delete all data elements and all "
+#~ "pointers"
+#~ msgstr ""
+#~ "Die aktuelle Datenstruktur entfernen: alle Datenelemente und Zeiger "
+#~ "löschen"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgid "rocsdeletegrey"
+#~ msgstr "Löschen"
+
+#, fuzzy
+#~| msgid "Display Options"
+#~ msgid "Display Options:"
+#~ msgstr "Anzeigeeinstellungen"
+
+#, fuzzy
+#~| msgid "Data Structure"
+#~ msgctxt "@action:button"
+#~ msgid "Add Data Structure"
+#~ msgstr "Datenstruktur"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Export Project"
+#~ msgstr "Projekt exportieren"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Import Project"
+#~ msgstr "Projekt importieren"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Set Name"
+#~ msgstr "Namen eingeben"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Save Graph"
+#~ msgstr "Graphen speichern"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Save Script"
+#~ msgstr "Skript speichern"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Save Script as"
+#~ msgstr "Skript speichern unter"
+
+#~ msgctxt "@title:window"
+#~ msgid "Set Project Name"
+#~ msgstr "Projektnamen eingeben"
+
+#~ msgctxt "@label:textbox name of the project"
+#~ msgid "Name:"
+#~ msgstr "Name:"
+
+#~ msgid ""
+#~ "*.js|Rocs script documents\n"
+#~ "*|All files"
+#~ msgstr ""
+#~ "*.js|Rocs-Scriptdokumente\n"
+#~ "*|Alle Dateien"
+
+#~ msgctxt "@title:window"
+#~ msgid "Save Script Document"
+#~ msgstr "Skriptdokument speichern"
+
+#, fuzzy
+#~| msgid "*.tar.gz|Export as tar.gz Archive"
+#~ msgid "*.tar.gz|Import from tar.gz Archive"
+#~ msgstr "*.tar.gz|Als tar.gz-Archiv exportieren"
+
+#~ msgctxt "@title:window"
+#~ msgid "Project Archive to Import"
+#~ msgstr "Zu importierendes Projektarchiv"
+
+#~ msgctxt "@title:window"
+#~ msgid "Select Project Directory for Import"
+#~ msgstr "Zu importierenden Projektordner auswählen"
+
+#~ msgid "*.tar.gz|Export as tar.gz Archive"
+#~ msgstr "*.tar.gz|Als tar.gz-Archiv exportieren"
+
+#~ msgctxt "@title:window"
+#~ msgid "Export Project"
+#~ msgstr "Projekt exportieren"
+
+#~ msgid "Edge Properties"
+#~ msgstr "Kanten-Eigenschaften"
+
+#~ msgid "Edge name"
+#~ msgstr "Kantenname"
+
+#~ msgid "Edge color"
+#~ msgstr "Kantenfarbe"
+
+#~ msgid "Value:"
+#~ msgstr "Wert:"
+
+#~ msgid "Edge value"
+#~ msgstr "Kantenwert"
+
+#~ msgid "Edge width"
+#~ msgstr "Kantenbreite"
+
+#~ msgid "Show"
+#~ msgstr "Anzeigen"
+
+#~ msgid "Show/hide edge name"
+#~ msgstr "Namen der Kante anzeigen/ausblenden"
+
+#~ msgid "Show/add edge value"
+#~ msgstr "Kantenwert anzeigen/hinzufügen"
+
+#~ msgid "Add Property"
+#~ msgstr "Eigenschaft hinzufügen"
+
+#~ msgid "Global"
+#~ msgstr "Global"
+
+#~ msgid "add"
+#~ msgstr "Hinzufügen"
+
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#~ msgid "v=%1"
+#~ msgstr "v=%1"
+
+#, fuzzy
+#~| msgid "untitled %1"
+#~ msgctxt "Property keyword only caracters from a to z (no spaces)"
+#~ msgid "untitled%1"
+#~ msgstr "Unbenannt %1"
+
+#~ msgid "Node Properties"
+#~ msgstr "Knoteneigenschaften"
+
+#~ msgid "Main Definitions"
+#~ msgstr "Hauptdefinitionen"
+
+#~ msgid "Appearance"
+#~ msgstr "Erscheinungsbild"
+
+#~ msgid "Enable Color"
+#~ msgstr "Farben aktivieren"
+
+#~ msgid "Data Structure Specific Properties"
+#~ msgstr "Datenstrukturspezifische Einstellungen"
+
+#~ msgid ""
+#~ "<html><head/><body><p>Add new dynamic property to data element.</p></"
+#~ "body></html>"
+#~ msgstr ""
+#~ "<html><head/><body><p>Eine neue dynamische Eigenschaft zum Datenelement "
+#~ "hinzufügen.</p></body></html>"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Show values of data elements"
+#~ msgstr "Werte der Datenelemente anzeigen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Show names of pointers"
+#~ msgstr "Namen der Zeiger anzeigen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Show values of pointers"
+#~ msgstr "Werte der Zeiger anzeigen"
+
+#~ msgid "Identifier:"
+#~ msgstr "Bezeichner:"
+
+#~ msgid "Icon:"
+#~ msgstr "Symbol:"
+
+#~ msgid "Delete"
+#~ msgstr "Löschen"
+
+#~ msgid "Create new Data Type"
+#~ msgstr "Neuen Datentyp erstellen"
+
+#~ msgid "This is the unique identifier for the pointer type."
+#~ msgstr "Dies ist der eindeutige Bezeichner für den Zeigertyp."
+
+#~ msgid "Create new Pointer Type"
+#~ msgstr "Neuen Zeigertyp erstellen"
+
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+#~ msgid "Edge style"
+#~ msgstr "Kantenstil"
+
+#~ msgid "dot"
+#~ msgstr "Punktiert"
+
+#~ msgctxt "@label:inlistbox"
+#~ msgid "Undirected Graph"
+#~ msgstr "Ungerichteter Graph"
+
+#~ msgctxt "@label:inlistbox"
+#~ msgid "Directed Graph"
+#~ msgstr "Gerichteter Graph"
+
+#~ msgctxt ""
+#~ "@label:inlistbox Undirected graph for which several edges between same "
+#~ "nodes may exist"
+#~ msgid "Undirected Multigraph"
+#~ msgstr "Ungerichteter Mehrfachgraph"
+
+#~ msgctxt ""
+#~ "@label:inlistbox Directed graph for which several same orientated edges "
+#~ "between same nodes may exist"
+#~ msgid "Directed Multigraph"
+#~ msgstr "Gerichteter Mehrfachgraph"
+
+#~ msgctxt "@title Displayed plugin name"
+#~ msgid "Open and Save GML files"
+#~ msgstr "GML-Dateien öffnen und speichern"
+
+#~ msgid ""
+#~ "*.graph|Graph files\n"
+#~ "*|All files"
+#~ msgstr ""
+#~ "*.graph|Graphendateien\n"
+#~ "*|Alle Dateien"
+
+#~ msgctxt "@title:window"
+#~ msgid "Add Existing Graph File to Project"
+#~ msgstr "Bestehende Graphendatei zu Projekt hinzufügen"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Import Rocs Graph"
+#~ msgstr "Rocs-Graphen importieren"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Save Graph as"
+#~ msgstr "Graphen speichern unter"
+
+#~ msgid "Cannot open the file: %1. Error %2"
+#~ msgstr "Die Datei %1 lässt sich nicht öffnen. Fehler: %2"
+
+#~ msgid "Could not parse Graphviz file due to syntax errors."
+#~ msgstr ""
+#~ "Die Graphviz-Datei kann wegen Syntaxfehlern nicht analysiert werden."
+
+#~ msgid "Graphviz parser returned unsuccessfully for file."
+#~ msgstr "Die Graphviz-Analyse der Datei ist fehlgeschlagen."
+
+#~ msgctxt "@title Displayed plugin name"
+#~ msgid "Open and Save Plain TXT files"
+#~ msgstr "Einfache Textdateien öffnen und speichern"
+
+#~ msgid "*.txt|Plain TXT Files"
+#~ msgstr "*.txt|Einfache Textdateien"
+
+#~| msgid "Add"
+#~ msgctxt "@action:button"
+#~ msgid "Add"
+#~ msgstr "Hinzufügen"
+
+#~ msgid "Identifier for new Data Structure"
+#~ msgstr "Kennung der neuen Datenstruktur"
+
+#~ msgid "Add Node"
+#~ msgstr "Knoten hinzufügen"
+
+#~ msgctxt "name of the project"
+#~ msgid "Name:"
+#~ msgstr "Name:"
+
+#~ msgctxt "align elements at center"
+#~ msgid "Center"
+#~ msgstr "Zentriert"
+
+#~ msgctxt "align elements at top"
+#~ msgid "Top"
+#~ msgstr "Oben"
+
+#~ msgctxt "align elements left"
+#~ msgid "Left"
+#~ msgstr "Links"
+
+#~ msgctxt "align elements right"
+#~ msgid "Right"
+#~ msgstr "Rechts"
+
+#~ msgctxt "align elements as a circle"
+#~ msgid "Circle"
+#~ msgstr "Im Kreis"
+
+#~ msgctxt "align elements such that crossing edges are minimized"
+#~ msgid "Minimize Crossing Edges"
+#~ msgstr "Kreuzende Kanten minimieren"
+
+#~ msgid ""
+#~ "*.js|Rocs script document\n"
+#~ "*|All files"
+#~ msgstr ""
+#~ "*.js|Rocs-Scriptdokumente\n"
+#~ "*|Alle Dateien"
+
+#, fuzzy
+#~| msgid "Type"
+#~ msgid "Type Icon:"
+#~ msgstr "Typ"
+
+#, fuzzy
+#~| msgid "Export graphs to file"
+#~ msgid "Export as new Type"
+#~ msgstr "Graphen in Datei exportieren"
+
+#~ msgid "Open Script"
+#~ msgstr "Skript öffnen"
+
+#~ msgid "Edit"
+#~ msgstr "Bearbeiten"
+
+#, fuzzy
+#~| msgid "Pointers"
+#~ msgid "Pointer"
+#~ msgstr "Zeiger"
+
+#~ msgid "Delete the active graph"
+#~ msgstr "Den aktiven Graphen entfernen"
+
+#~ msgctxt "@action:button"
+#~ msgid "x"
+#~ msgstr "x"
+
+#~ msgid "Apply to all nodes"
+#~ msgstr "Auf alle Knoten anwenden"
+
+#~ msgid "Close"
+#~ msgstr "Schließen"
+
+#~ msgid "Image"
+#~ msgstr "Bild"
+
+#~ msgid "Untitled0"
+#~ msgstr "Unbenannt0"
+
+#~ msgid "Open Graph"
+#~ msgstr "Graphen öffnen"
+
+#~ msgid "Save All"
+#~ msgstr "Alle speichern"
+
+#~ msgid "New"
+#~ msgstr "Neu "
+
+#~ msgid "Color for new nodes"
+#~ msgstr "Farbe für neue Knoten"
+
+#~ msgid "Pointer Color:"
+#~ msgstr "Zeigerfarbe:"
+
+#~ msgid "Color for new edges"
+#~ msgstr "Farbe für neue Kanten"
+
+#~ msgid "Apply the current color to all nodes"
+#~ msgstr "Die aktuelle Farbe auf alle Knoten anwenden"
+
+#~ msgid "Apply the current color to all nodes on the drawing area"
+#~ msgstr "Die aktuelle Farbe auf alle Knoten im Zeichenbereich anwenden"
+
+#~ msgid "All"
+#~ msgstr "Alle"
+
+#~ msgid "Apply the current color to all edges"
+#~ msgstr "Die aktuelle Farbe auf alle Kanten anwenden"
+
+#~ msgid "Apply the current color to all edges on the drawing area"
+#~ msgstr "Die aktuelle Farbe auf alle Kanten im Zeichenbereich anwenden"
+
+#~ msgid "Align on the base"
+#~ msgstr "Unten ausrichten"
+
+#~ msgid "Align on the center"
+#~ msgstr "Mittig ausrichten"
+
+#~ msgid "Align on the top"
+#~ msgstr "Oben ausrichten"
+
+#~ msgid "Align on the left"
+#~ msgstr "Links ausrichten"
+
+#~ msgid "Align on the right"
+#~ msgstr "Rechts ausrichten"
+
+#~ msgid "Align on a circle"
+#~ msgstr "Auf einem Kreis ausrichten"
+
+#~ msgid "Tree"
+#~ msgstr "Baum"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Ignoring line: %1"
+#~ msgstr "Folgende Zeile wird ignoriert: %1"
+
+#~ msgid "debug(\"Cannot open file %1.\")"
+#~ msgstr "debug(\"Die Datei „%1“ kann nicht geöffnet werden.\")"
+
+#~ msgid "debug(\"Cannot open file %1.\")\n"
+#~ msgstr "debug(\"Die Datei %1 kann nicht geöffnet werden.\")\n"
+
+#~ msgid "Add Random Integer Values"
+#~ msgstr "Ganzzahlige Zufallswerte hinzufügen"
+
+#~ msgid "Add Random Float Values"
+#~ msgstr "Zufällige Fließkommawerte hinzufügen"
+
+#~ msgid "(c) 2009"
+#~ msgstr "© 2009"
+
+#~ msgid "Do you want to save your unsaved document?"
+#~ msgstr "Möchten Sie das ungespeicherte Dokument speichern?"
+
+#~ msgid "Select Items by clicking on them."
+#~ msgstr "Elemente durch anklicken auswählen."
+
+#~ msgid "Moves a node around the drawing area."
+#~ msgstr "Bewegt einen Knoten im Zeichenbereich herum."
+
+#~ msgid "Make Complete"
+#~ msgstr "Vervollständigen"
+
+#~ msgid "cancel"
+#~ msgstr "Abbrechen"
+
+#~ msgid "assign values"
+#~ msgstr "Werte zuweisen"
+
+#~ msgid "start transform"
+#~ msgstr "Umwandlung starten"
+
+#~ msgid "Dialog"
+#~ msgstr "Dialog"
+
+#~ msgid "Radius:"
+#~ msgstr "Radius:"
+
+#~ msgid "0"
+#~ msgstr "0"
+
+#~ msgid "Complete"
+#~ msgstr "Vollständig"
+
+#~ msgctxt "Do not translate, X is for delete"
+#~ msgid "x"
+#~ msgstr "x"
+
+#~ msgid "Graph is oriented"
+#~ msgstr "Der Graph ist gerichtet"
+
+#~ msgid "Name: %1"
+#~ msgstr "Name: %1"
+
+#~ msgid "Value: %1"
+#~ msgstr "Wert: %1"
+
+#~ msgid "Save Graph As..."
+#~ msgstr "Graphen speichern unter ..."
+
+#~ msgid "Save Script As..."
+#~ msgstr "Skript speichern unter ..."
+
+#~ msgid "cola@uni-paderborn.de"
+#~ msgstr "cola@uni-paderborn.de"
+
+#, fuzzy
+#~| msgid " Graph "
+#~ msgid "Ring Graph"
+#~ msgstr " Graph "
+
+#~ msgid "UntitledDoc"
+#~ msgstr "UnbenanntesDoc"
+
+#~ msgid "Thanks to Ugo Sangiori"
+#~ msgstr "Dank an Ugo Sangiori"
+
+#~ msgid "Edge Color:"
+#~ msgstr "Kantenfarbe:"
+
+#~ msgid "X-coordinate "
+#~ msgstr "X-Koordinate "
+
+#~ msgid "Y-coordinate "
+#~ msgstr "Y-Koordinate "
+
+#~ msgid "Node size"
+#~ msgstr "Knotengröße"
+
+#, fuzzy
+#~| msgid "End"
+#~ msgid "End"
+#~ msgstr "Ende"
+
+#, fuzzy
+#~ msgid "Graph is Automate"
+#~ msgstr "Automatisierter Graph"
+
+#~ msgid " Is begin"
+#~ msgstr "Ist Anfang"
+
+#~ msgid " Is End"
+#~ msgstr "Ist Ende"
+
+#~ msgid "Oriented graph"
+#~ msgstr "Gerichteter Graph"
+
+#~ msgid "Enabling this button will make the graph oriented."
+#~ msgstr ""
+#~ "Durch anklicken dieses Knopfes, wird der Graph zu einem gerichteten "
+#~ "Graphen."
+
+#, fuzzy
+#~| msgid "Automate:"
+#~ msgid "Automaton Graph"
+#~ msgstr "Automatisch:"
+
+# „Automaton“ muss noch übersetzt werden
+#, fuzzy
+#~ msgid "Enabling this button will make the graph an automaton graph."
+#~ msgstr ""
+#~ "Durch anklicken dieses Knopfes, wird der Graph zu einem Automaton-Graphen."
+
+#~ msgid "Enabling this button will show the names of all nodes."
+#~ msgstr ""
+#~ "Durch anklicken dieses Knopfes, werden die Namen aller Knoten angezeigt."
+
+#~ msgid "Show all edges' names"
+#~ msgstr "Alle Kantennamen anzeigen"
+
+#~ msgid "Enabling this button will show the names of all edges."
+#~ msgstr ""
+#~ "Durch anklicken dieses Knopfes, werden die Namen aller Kanten angezeigt."
+
+#~ msgid "Show all nodes' values"
+#~ msgstr "Alle Knotenwerte anzeigen"
+
+#~ msgid "Enabling this button will show the values of all nodes."
+#~ msgstr ""
+#~ "Durch anklicken dieses Knopfes, werden die Werte aller Knoten angezeigt."
+
+#~ msgid "Show all edges' values"
+#~ msgstr "Alle Kantenwerte anzeigen"
+
+#~ msgid "Enabling this button will show the values of edges."
+#~ msgstr ""
+#~ "Durch anklicken dieses Knopfes, werden die Werte aller Kanten angezeigt."
+
+#, fuzzy
+#~| msgid "Node:"
+#~ msgid "Node name"
+#~ msgstr "Knoten:"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "name"
+#~ msgstr "Name"
+
+#~ msgid "KSqueezedTextLabel"
+#~ msgstr "KSqueezedTextLabel"
+
+#~ msgid "X"
+#~ msgstr "X"
+
+#~ msgid "Node:"
+#~ msgstr "Knoten:"
+
+#~ msgid "Y"
+#~ msgstr "Y"
+
+#~ msgid "ok"
+#~ msgstr "OK"

@@ -1,0 +1,236 @@
+# Marco Wegner <mail@marcowegner.de>, 2002.
+# Stephan Johach <hunsum@gmx.de>, 2005.
+# Burkhard Lück <lueck@hube-lueck.de>, 2010, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcontrol_bell\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:26+0000\n"
+"PO-Revision-Date: 2011-11-29 16:39+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:8
+#, no-c-format
+msgid "System Bell"
+msgstr "Signalton"
+
+#. Tag: author
+#: index.docbook:11
+#, no-c-format
+msgid "<firstname>Pat</firstname><surname>Dowler</surname>"
+msgstr "<firstname>Pat</firstname><surname>Dowler</surname>"
+
+#. Tag: author
+#: index.docbook:12
+#, no-c-format
+msgid "<firstname>Matthias</firstname><surname>Hoelzer</surname>"
+msgstr "<firstname>Matthias</firstname><surname>Hoelzer</surname>"
+
+#. Tag: author
+#: index.docbook:13
+#, no-c-format
+msgid "<firstname>Mike</firstname><surname>McBride</surname>"
+msgstr "<firstname>Mike</firstname><surname>McBride</surname>"
+
+#. Tag: trans_comment
+#: index.docbook:15
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Frank</"
+"firstname><surname>Schütte</surname><affiliation><address><email>F."
+"Schuette@t-online.de</email></address></affiliation><contrib>Deutsche "
+"Übersetzung</contrib></othercredit>"
+
+#. Tag: date
+#: index.docbook:17
+#, no-c-format
+msgid "2011-11-28"
+msgstr "2011-11-28"
+
+#. Tag: releaseinfo
+#: index.docbook:18
+#, no-c-format
+msgid "&kde; 4.8"
+msgstr "&kde; 4.8"
+
+#. Tag: para
+#: index.docbook:21
+#, no-c-format
+msgid ""
+"The system bell or beep is a feature of the X server, which attempts to make "
+"good use of the available hardware."
+msgstr ""
+"Der Signalton wird durch den X Server unter Ausnutzung der bereitstehenden "
+"Hardware so gut wie möglich produziert."
+
+#. Tag: para
+#: index.docbook:24
+#, no-c-format
+msgid ""
+"&kde; normally does not use the system bell; instead using its own system "
+"notifications, which could include log entries, message popups, or its own "
+"beep. You can configure these in the <guilabel>Manage Notifications</"
+"guilabel> &systemsettings; module."
+msgstr ""
+"&kde; verwendet normalerweise nicht den Signalton, sondern die eigenen "
+"Systemnachrichten, die aus Einträgen in Protokolldateien, "
+"Nachrichtenfenstern oder einem eigenen Signalton bestehen können. Sie können "
+"diese im &systemsettings;-Modul <guilabel>Benachrichtigungen verwalten</"
+"guilabel> einrichten."
+
+#. Tag: para
+#: index.docbook:29
+#, no-c-format
+msgid ""
+"It is not always possible for the X server to actually make a beep sound "
+"with exactly the parameters selected due to hardware limitations. For "
+"example, on most PCs, volume control is not very good so the X server seems "
+"to fake low volume with a reduced duration of the sound. Thus, if the "
+"settings do not seem to do anything, this is because the X server and/or the "
+"hardware do not support anything better."
+msgstr ""
+"Es ist nicht immer möglich, den Signalton gemäß den Einstellungen zu "
+"produzieren. Beispielsweise funktioniert bei PC-Lautsprechern die "
+"Lautstärkeeinstellung wegen eingeschränkter Hardwaremöglichkeiten nur "
+"teilweise. Der X Server versucht eine geringere Lautstärke durch einen "
+"kürzeren Signalton zu simulieren. Wenn Sie feststellen, dass die "
+"Einstellungen nicht den gewünschten Effekt bewirken, liegt das am X Server "
+"oder an der zur Verfügung stehenden Hardware."
+
+#. Tag: para
+#: index.docbook:37
+#, no-c-format
+msgid ""
+"Select <guilabel>Use system bell instead of system notification</guilabel> "
+"then you are able to set the following parameters for the bell:"
+msgstr ""
+"Ist die Einstellung <guilabel>Signalton statt Systemnachrichten verwenden</"
+"guilabel>, dann können folgende Parameter für den Signalton eingestellt "
+"werden:"
+
+#. Tag: term
+#: index.docbook:43
+#, no-c-format
+msgid ""
+"<guilabel>Volume</guilabel> (percentage of <quote>maximum</quote> volume)"
+msgstr ""
+"<guilabel>Lautstärke</guilabel> (in Prozent der <quote>Maximallautstärke</"
+"quote>)"
+
+#. Tag: para
+#: index.docbook:44
+#, no-c-format
+msgid "Here you can customize the volume of the system bell."
+msgstr "Hier können Sie die Lautstärke des System-Signaltons einstellen."
+
+#. Tag: term
+#: index.docbook:48
+#, no-c-format
+msgid "<guilabel>Pitch</guilabel> (in Hz)"
+msgstr "<guilabel>Höhe</guilabel> (in Hz)"
+
+#. Tag: para
+#: index.docbook:49
+#, no-c-format
+msgid "Here you can customize the pitch of the system bell."
+msgstr "Hier können Sie die Höhe des System-Signaltons einstellen."
+
+#. Tag: term
+#: index.docbook:53
+#, no-c-format
+msgid "<guilabel>Duration</guilabel> (in milliseconds)"
+msgstr "<guilabel>Dauer</guilabel> (in Millisekunden)"
+
+#. Tag: para
+#: index.docbook:54
+#, no-c-format
+msgid "Here you can customize the duration of the system bell."
+msgstr "Hier können Sie die Dauer des System-Signaltons einstellen."
+
+#. Tag: para
+#: index.docbook:59
+#, no-c-format
+msgid ""
+"For further customization of the bell, see the <guilabel>Accessibility</"
+"guilabel> &systemsettings; module."
+msgstr ""
+"Zusätzliche Einstellmöglichkeiten für den Signalton finden Sie in den "
+"&systemsettings; im Modul <guilabel>Zugangshilfen</guilabel>."
+
+#. Tag: para
+#: index.docbook:61
+#, no-c-format
+msgid ""
+"You can use the <guibutton>Test</guibutton> button to hear how the current "
+"settings will sound."
+msgstr ""
+"Sie können durch Klicken auf den Knopf <guibutton>Test</guibutton> die "
+"aktuellen Einstellungen ausprobieren."
+
+#~ msgid "<releaseinfo>4.4</releaseinfo>"
+#~ msgstr "<releaseinfo>4.4</releaseinfo>"
+
+#~ msgid "<keyword>KDE</keyword>"
+#~ msgstr "<keyword>KDE</keyword>"
+
+#~ msgid "Bell"
+#~ msgstr "Signalton"
+
+#~ msgid "Systemsettings"
+#~ msgstr "Systemeinstellungen"
+
+#~ msgid "Notifications"
+#~ msgstr "Benachrichtigungen"
+
+#~ msgid ""
+#~ "Here you can customize the volume of the system bell. For further "
+#~ "customization of the bell, see the <guilabel>Accessibility</guilabel> "
+#~ "&systemsettings; module."
+#~ msgstr ""
+#~ "Hier können Sie die Lautstärke des System-Signaltons einstellen. "
+#~ "Zusätzliche Einstellmöglichkeiten für den Signalton finden Sie in den "
+#~ "&systemsettings; im Modul <guilabel>Zugangshilfen</guilabel>."
+
+#~ msgid ""
+#~ "Here you can customize the duration of the system bell. For further "
+#~ "customization of the bell, see the <guilabel>Accessibility</guilabel> "
+#~ "&systemsettings; module."
+#~ msgstr ""
+#~ "Hier können Sie die Dauer des System-Signaltons einstellen. Zusätzliche "
+#~ "Einstellmöglichkeiten für den Signalton finden Sie in den "
+#~ "&systemsettings; im Modul <guilabel>Zugangshilfen</guilabel>."
+
+#~ msgid "KControl"
+#~ msgstr "Kontrollzentrum"
+
+#~ msgid "Users are able to set the following parameters for the bell:"
+#~ msgstr "Sie können die folgenden Einstellungen für den Signalton vornehmen:"
+
+#~ msgid "pitch (in Hz)"
+#~ msgstr "Höhe (in Hz)"
+
+#~ msgid "Section Authors"
+#~ msgstr "Mitwirkende"
+
+#~ msgid "Pat Dowler, Matthias Hoelzer <email>mhk@kde.org</email>"
+#~ msgstr "Pat Dowler, Matthias Hölzer <email>mhk@kde.org</email>"
+
+#~ msgid ""
+#~ "Converted to KDE 2.0 by Mike McBride <email>mpmcbride7@yahoo.com</email>"
+#~ msgstr ""
+#~ "Für KDE 2.0 konvertiert von Mike McBride <email>mpmcbride7@yahoo.com</"
+#~ "email>"
+
+#~ msgid "CREDIT_FOR_TRANSLATORS"
+#~ msgstr ""
+#~ "<para>Deutsche Übersetzung von Frank Schütte <email>F.Schuette@t-online."
+#~ "de</email></para>"

@@ -1,0 +1,158 @@
+<chapter id="authorizationagent">
+<title
+>Berechtigungsagent</title>
+
+<sect1 id="authorizationagent-overview">
+<title
+>Handbuch</title>
+
+<para
+>Der <emphasis
+>Berechtigungsagent</emphasis
+> ist die Anwendung, die jedes Mal aufgerufen wird, wenn ein Benutzer eine bestimmte Berechtigung anfordert. Es handelt sich hierbei um einen &DBus;-Dienst, der „libpolkit-grant“ und dadurch <emphasis
+>PAM</emphasis
+> für die <emphasis
+>Berechtigungs</emphasis
+>dienste nutzt (jedoch können auch andere <emphasis
+>Berechtigungs</emphasis
+>dienste verwendet werden, soweit sie benötigt werden). </para>
+</sect1>
+
+<sect1 id="authorizationagent-dialog">
+<title
+>Dialog des Berechtigungsagenten</title>
+
+<para
+>Das Erscheinungsbild für den Berechtigungsdialog hängt vom Ergebnis von PolicyKit und der Nachfrage nach einer <emphasis
+>Administrator</emphasis
+>-Berechtigung ab („Berechtigung des <emphasis
+>root</emphasis
+>-Benutzers“ oder „Berechtigung eines Gruppenmitglieds“) oder der Einrichtung der PolicyKit-Bibliothek (siehe <userinput
+>man PolicyKit.conf</userinput
+>). Es ist zu beachten, dass manche der nachstehenden Bildschirmfotos auf einem System mit installiertem <ulink url="http://thinkfinger.sourceforge.net/"
+>ThinkFinger</ulink
+>-PAM-Modul erstellt wurden. Der Text in den gezeigten <emphasis
+>Berechtigungs</emphasis
+>dialogen stammt von PolicyKit. Die <filename
+>XML</filename
+>-Dateien mit den Berechtigungen befinden sich im Ordner <filename
+>/usr/share/PolicyKit/policy/</filename
+> und werden vom <emphasis
+>Berechtigungs</emphasis
+>dienst eingelesen, sobald eine Anwendung nach einer Berechtigung fragt. Was der Benutzer nun sieht steht nicht unter Kontrolle der Anwendung (z. B. stammt es nicht von der Anwendung), welche versucht den Benutzer durch eine Täuschung die Berechtigung zu entlocken. </para>
+
+<para
+>Der Berechtigungsdialog für die <emphasis
+>root</emphasis
+>-Berechtigung, fragt nach dem Passwort oder Fingerabdruck. Die Informationen zeigen die anfragende Anwendung, die Aktion selbst und den Hersteller der Aktion. Mit einem Klick auf die Verknüpfung neben <guilabel
+>Aktion:</guilabel
+> wird der Berechtigungsverwalter für die angegebene Aktion geöffnet. Möglicherweise wird neben <guilabel
+>Hersteller:</guilabel
+> auch eine Verknüpfung angezeigt und ruft bei einem Klick darauf die Verknüpfung auf:</para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject
+><imagedata fileref="authdialog_1.png" format="PNG"/></imageobject>
+<textobject
+><phrase
+>Der Berechtigungsdialog für die Abfrage des <emphasis
+>root</emphasis
+>-Passworts bzw. <emphasis
+>root</emphasis
+>-Fingerabdrucks und Anzeige der Beschreibungen </phrase
+></textobject>
+</mediaobject>
+</screenshot>
+</para>
+
+<para
+>Der Berechtigungsdialog für die Abfrage des Passworts für einen <emphasis
+>administrativen</emphasis
+> Benutzers (wobei PolicyKit für die Anwendung des <emphasis
+>root</emphasis
+>-Passworts eingestellt ist): </para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject
+><imagedata fileref="authdialog_2.png" format="PNG"/></imageobject>
+<textobject
+><phrase
+>Der Berechtigungsdialog zur Abfrage des <emphasis
+>root</emphasis
+>-Passworts </phrase
+></textobject>
+</mediaobject>
+</screenshot>
+</para>
+
+<para
+>Der Berechtigungsdialog für die Abfrage des Passworts für einen <emphasis
+>administrativen</emphasis
+> Benutzers (wobei PolicyKit für eine Gruppe eingestellt ist):</para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject
+><imagedata fileref="authdialog_3.png" format="PNG"/></imageobject>
+<textobject
+><phrase
+>Der Berechtigungsdialog zur Abfrage des Passworts für einen Benutzer der <emphasis
+>administrativen</emphasis
+> Gruppe </phrase
+></textobject>
+</mediaobject>
+</screenshot>
+</para>
+
+<para
+>Der gleiche Berechtigungsdialog mit einer Auswahlbox für die Auswahl des Benutzers:</para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject
+><imagedata fileref="authdialog_4.png" format="PNG"/></imageobject>
+<textobject
+><phrase
+>Der gleiche Berechtigungsdialog mit einer Auswahlbox für die Auswahl des Benutzers </phrase
+></textobject>
+</mediaobject>
+</screenshot>
+</para>
+
+
+<para
+>Der Berechtigungsdialog für die Berechtigung einer Aktion auf unbestimmte Zeit:</para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject
+><imagedata fileref="authdialog_5.png" format="PNG"/></imageobject>
+<textobject
+><phrase
+>Der Berechtigungsdialog für die Berechtigung einer Aktion auf unbestimmte Zeit </phrase
+></textobject>
+</mediaobject>
+</screenshot>
+</para>
+
+
+<para
+>Der Berechtigungsdialog für die Berechtigung einer Aktion bis zum Ablauf der aktuellen Sitzung:</para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject
+><imagedata fileref="authdialog_6.png" format="PNG"/></imageobject>
+<textobject
+><phrase
+>Der Berechtigungsdialog für die Berechtigung einer Aktion bis zum Ablauf der aktuellen Sitzung </phrase
+></textobject>
+</mediaobject>
+</screenshot>
+</para>
+
+</sect1>
+
+</chapter>

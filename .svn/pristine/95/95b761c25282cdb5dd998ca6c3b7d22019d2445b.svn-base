@@ -1,0 +1,389 @@
+
+still_in_svn="kdeartwork \
+              kde-base-artwork \
+              kde-wallpapers \
+              kdewebdev \
+              oxygen-icons \
+              extragear-base \
+              extragear-graphics \
+              extragear-multimedia \
+              extragear-network \
+              extragear-office \
+              extragear-sysadmin"
+
+all_modules="kde-kdeaccessibility \
+             kde-kdeadmin \
+             kde-kdeartwork \
+             kde-applications \
+             kde-kde-base-artwork \
+             kde-kde-runtime \
+             kde-kde-workspace \
+             kde-kdeedu \
+             kde-kdegames \
+             kde-kdegraphics \
+             kde-kdelibs \
+             kde-kdemultimedia \
+             kde-kdenetwork \
+             kde-kdepim \
+             kde-kdepimlibs \
+             kde-kdepim-runtime \
+             kde-kdeplasma-addons \
+             kde-kdesdk \
+             kde-kdetoys \
+             kde-kdeutils \
+             kde-kde-wallpapers \
+             kde-kdewebdev \
+             kde-workspace \
+             extragear-accessibility \
+             extragear-artwork \
+             extragear-base \
+             extragear-games \
+             extragear-graphics \
+             extragear-kdevelop \
+             extragear-libs \
+             extragear-multimedia \
+             extragear-network \
+             extragear-office \
+             extragear-pim \
+             extragear-security \
+             extragear-sdk \
+             extragear-sysadmin \
+             extragear-utils \
+             kdesupport-phonon \
+             kdereview \
+             playground-accessibility \
+             playground-artwork \
+             playground-base \
+             playground-devtools \
+             playground-edu \
+             playground-games \
+             playground-graphics \
+             playground-ioslaves \
+             playground-libs \
+             playground-multimedia \
+             playground-network \
+             playground-office \
+             playground-pim \
+             playground-sdk \
+             playground-sysadmin \
+             playground-utils \
+             calligra"
+
+function list_modules 
+{
+  if [ "x$1" = "x" ]; then
+    dir=.
+  else
+    dir=$1
+  fi
+  rm -f $dir/kde_projects.xml
+  wget -q http://projects.kde.org/kde_projects.xml -O $dir/kde_projects.xml
+  if [ $? = "0" ]; then
+    modules=$still_in_svn
+    for gitmodule in $all_modules; do
+      firstpart=`echo $gitmodule | sed -r -e 's/-.*$//'`
+      secondpart=`echo $gitmodule | sed -r -e 's/^[^-]*-?//'`
+      m=`python $dir/print_l10n_project_names.py $dir/kde_projects.xml $dir $firstpart $secondpart`
+      modules="$modules $m"
+      # frameworks that already existed in kde4 times
+      if [ $gitmodule = kde-kdelibs ]; then
+        modules="$modules kdelibs_kactivities"
+      fi
+    done
+  
+    echo $modules | tr " " "\n" | sort | tr "\n" " "
+    rm -f $dir/kde_projects.xml
+  else
+    echo ""
+  fi
+}
+
+function get_path
+{
+	case "$1" in
+		kde-wallpapers|kde-base-artwork)
+			echo branches/Applications/14.12/$1
+			;;
+		kdeartwork|kdewebdev)
+			echo branches/Applications/14.12/$1
+			;;
+		oxygen-icons)
+			echo branches/Applications/14.12/$1
+			;;
+		l10n)
+			echo branches/stable/l10n-kde4
+			;;
+		qt)
+			echo git-stable/qt
+			;;
+		kdelibs*|kde-runtime|kde-workspace|workspace_*|applications_*|kdeplasma-addons|kdemultimedia_*|kdepimlibs|kdepim|kdepim-runtime|kdesupport-phonon_*|kdegraphics_*|kdeedu_*|kdeutils_*|kdeaccessibility_*|kdegames_*|kdesdk_*|kdetoys_*|kdeadmin_*|kdenetwork_*)
+			echo git-stable/$1
+			;;
+		extragear-*_*)
+			echo git-stable/extragear-`echo $1 | sed -e "s,extragear-,,"`
+			;;
+		extragear-*)
+			echo branches/stable/extragear-kde4/`echo $1 | sed -e "s,extragear-,,"`
+			;;
+		calligra)
+			echo git-stable/calligra
+			;;
+		*)
+			echo "ERROR: unknown module $1"
+			exit 1
+			;;
+	esac
+}
+
+function get_po_path
+{
+	case "$1" in
+		extragear-*_*)
+			echo $1 | sed -r -e 's/_[^_]+$//'
+			;;
+		kdelibs_*|applications_*|kdegraphics_*|kdeedu_*|kdeutils_*|kdeaccessibility_*|kdemultimedia_*|kdegames_*|kdesdk_*|kdetoys_*|kdeadmin_*|kdenetwork_*)
+			echo $1 | sed -r -e 's/_[^_]+$//'
+			;;
+                workspace_milou|workspace_plasma-nm|workspace_kde-gtk-config)
+                        echo 'extragear-base'
+                        ;;
+                workspace_muon)
+                        echo 'extragear-sysadmin'
+                        ;;
+                workspace_kdeplasma-addons)
+                        echo 'kdeplasma-addons'
+                        ;;
+                workspace_kfilemetadata|workspace_baloo)
+                        echo 'kdelibs'
+                        ;;
+                workspace_bluedevil)
+                        echo 'extragear-base'
+                        ;;
+                workspace_*)
+                        echo 'kde-workspace'
+                        ;;
+		oxygen-icons)
+			echo qt
+			;;
+		kdesupport-phonon_*)
+			echo qt
+			;;
+		kdesupport_*)
+			echo $1 | sed -r -e 's/_[^_]+$//'
+			;;
+		*)
+			echo $1
+			;;
+	esac
+}
+
+function get_vcs
+{
+	case "$1" in
+		qt)
+			echo git
+			;;
+		extragear-*_*)
+			echo git
+			;;
+		kde-runtime|kde-workspace|workspace_*|applications_*)
+			echo git
+			;;
+		kdegraphics_*|kdeedu_*|kdeutils_*|kdeaccessibility_*|kdemultimedia_*|kdegames_*|kdesdk_*|kdetoys_*|kdeadmin_*|kdenetwork_*)
+			echo git
+			;;
+		kdesupport-phonon_*)
+			echo git
+			;;
+		kdelibs*|kdeplasma-addons|kdepimlibs|kdepim|kdepim-runtime)
+			echo git
+			;;
+		calligra)
+			echo git
+			;;
+		*)
+			echo svn
+			;;
+	esac
+}
+
+function get_branch
+{
+	case "$1" in
+                workspace_bluedevil)
+			echo "1.3"
+			;;
+		extragear-base_kde-gtk-config)
+			echo "2.2"
+			;;
+		extragear-base_kwebkitpart)
+			echo "1.3"
+			;;
+		extragear-base_milou)
+			echo "milou/0.1"
+			;;
+		extragear-base_networkmanagement)
+			echo "nm09"
+			;;
+		extragear-base_wacomtablet)
+			echo "releng2.0"
+			;;
+		extragear-graphics_kgraphviewer)
+			echo "2.2"
+			;;
+		extragear-graphics_kxstitch)
+			echo "release-1.2.0"
+			;;
+		extragear-graphics_symboleditor)
+			echo "release-1.5.0"
+			;;
+		extragear-kdevelop_kdevelop)
+			echo "4.7"
+			;;
+		extragear-kdevelop_kdevplatform)
+			echo "1.7"
+			;;
+		extragear-kdevelop_kdev-php)
+			echo "1.7"
+			;;
+		extragear-kdevelop_kdev-php-docs)
+			echo "1.7"
+			;;
+		extragear-kdevelop_kdev-python)
+			echo "1.7"
+			;;
+		extragear-libs_libkgapi)
+			echo "LibKGAPI/2.0"
+			;;
+		extragear-libs_libnm-qt)
+			echo "NM/0.9.8"
+			;;
+		workspace_libmm-qt)
+			echo "MM/1.0"
+			;;
+		extragear-network_libktorrent)
+			echo "1.3"
+			;;
+		extragear-network_konversation)
+			echo "1.5"
+			;;
+		extragear-network_ktorrent)
+			echo "4.3"
+			;;
+		extragear-network_ktp-auth-handler|extragear-network_ktp-contact-list|extragear-network_ktp-accounts-kcm|extragear-network_ktp-filetransfer-handler|extragear-network_ktp-common-internals|extragear-network_ktp-desktop-applets|extragear-network_ktp-kded-module|extragear-network_ktp-send-file|extragear-network_ktp-text-ui|extragear-network_ktp-approver|extragear-network_ktp-contact-runner|extragear-network_ktp-call-ui)
+			echo "kde-telepathy-0.9"
+			;;
+		extragear-network_smb4k)
+			echo "1.1"
+			;;
+		extragear-multimedia_k3b)
+			echo "2.0"
+			;;
+		extragear-multimedia_kamoso)
+			echo "2.1"
+			;;
+		extragear-multimedia_plasma-mediacenter)
+			echo "v1.4"
+			;;
+		extragear-office_kmymoney)
+			echo "4.7"
+			;;
+		extragear-office_tellico)
+			echo "2.3"
+			;;
+		extragear-office_kile)
+			echo "2.1"
+			;;
+		extragear-sdk_massif-visualizer)
+			echo "0.4"
+			;;
+		extragear-sysadmin_libqapt)
+			echo "2.2"
+			;;
+		extragear-sysadmin_muon)
+			echo "2.2"
+			;;
+		workspace_muon)
+			echo "2.2"
+			;;
+		extragear-sysadmin_partitionmanager)
+			echo "1.1"
+			;;
+		extragear-utils_krecipes)
+			echo "2.0"
+			;;
+		qt)
+			echo "4.8"
+			;;
+		kdesupport-phonon_phonon-vlc)
+			echo "0.7"
+			;;
+		kdesupport-phonon_phonon-gstreamer)
+			echo "4.7"
+			;;
+		kdesupport-phonon_phonon)
+			echo "4.7"
+			;;
+		kdelibs_kactivities)
+			echo "KDE/4.13"
+			;;
+		kdeedu_libkeduvocdocument|kdeedu_kdeedu-data)
+			echo "none"
+			;;
+		applications_kate|applications_konsole|kdegraphics_gwenview|kdeedu_analitza|kdeedu_kalgebra|kdeedu_kanagram|kdeedu_khangman|kdeedu_kig|kdeedu_parley|kdesdk_okteta|kdesdk_kapptemplate)
+			echo "get_branch_none"
+			;;
+		kdelibs*|kdepimlibs|kdepim|kdepim-runtime|workspace_kdeplasma-addons|workspace_kfilemetadata|workspace_baloo)
+			echo "KDE/4.14"
+			;;
+		kde-runtime|applications_*|kdegraphics_*|kdeedu_*|kdeutils_*|kdeaccessibility_*|kdemultimedia_*|kdegames_*|kdesdk_*|kdetoys_*|kdeadmin_*|kdenetwork_*)
+			echo "Applications/14.12"
+			;;
+		workspace_kde-gtk-config)
+			echo "2.2"
+			;;
+		workspace_plasma-nm)
+			echo "0.9.3"
+			;;
+                workspace_milou)
+                        echo "milou/0.1"
+                        ;;
+		kde-workspace)
+			echo "KDE/4.11"
+			;;
+		calligra)
+			echo "calligra/2.8"
+			;;
+		*)
+			echo "get_branch_none"
+			exit 1
+			;;
+	esac
+}
+
+function get_url
+{
+	case "$1" in
+		kdelibs|kdeplasma-addons|kdepimlibs|kdepim|kdepim-runtime|calligra|qt|kde-runtime|kde-workspace)
+			echo "kde:$1.git"
+			;;
+		kdesupport-phonon_*)
+			get_url_repo=`echo $1 | sed -e "s/kdesupport-phonon_//"`
+			echo "kde:$get_url_repo.git"
+			;;
+		extragear-*_*)
+			get_url_repo=`echo $1 | sed -e "s/extragear-.*_//"`
+			echo "kde:$get_url_repo.git"
+			;;
+		kdelibs_*|applications_*|kdegraphics_*|kdeedu_*|kdeutils_*|kdeaccessibility_*|kdemultimedia_*|kdegames_*|kdesdk_*|kdetoys_*|kdeadmin_*|kdenetwork_*|workspace_*)
+			get_url_repo=`echo $1 | sed -e 's/[^_]*_//'`
+			echo "kde:$get_url_repo.git"
+			;;
+		*)
+			echo "ERROR: $1 is not a git repo"
+			exit 1
+			;;
+	esac
+}
+
+

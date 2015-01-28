@@ -1,0 +1,311 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-09-07 02:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: author
+#: details-formats.docbook:5
+#, no-c-format
+msgid "&Thomas.Baumgart; &Thomas.Baumgart.mail;"
+msgstr ""
+
+#. Tag: date
+#: details-formats.docbook:7
+#, no-c-format
+msgid "2014-08-30"
+msgstr ""
+
+#. Tag: releaseinfo
+#: details-formats.docbook:8
+#, no-c-format
+msgid "4.7.01"
+msgstr ""
+
+#. Tag: title
+#: details-formats.docbook:11
+#, no-c-format
+msgid "File Formats"
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:13
+#, no-c-format
+msgid ""
+"Unless you choose to use a <link linkend=\"details.database\">"
+"relational database</link>, &kappname; will store all your financial "
+"information in a file ending in .kmy. Also, unless you use a <link "
+"linkend=\"firsttime.launch\">command line option</link> "
+"that tells it not to do so, when you launch &kappname;, it will open the last "
+"file it had open. However, it is important to know that there is more than one "
+"type of file &kappname; can use to hold your financial data."
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:23
+#, no-c-format
+msgid ""
+"This chapter describes the formats in which &kappname; stores its data in "
+"permanent form on the user's storage device. In general, &kappname; stores its "
+"information in form of an &XML; document. Depending on the actual format, this "
+"&XML; document will be written"
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:30
+#, no-c-format
+msgid ""
+"as a <link linkend=\"details.formats.plain\">plain text file</link> "
+"encoded in UTF-8,"
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:33
+#, no-c-format
+msgid ""
+"as a <link linkend=\"details.formats.compressed\">compressed file</link> "
+"using GZIP compression,"
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:36
+#, no-c-format
+msgid ""
+"as an <link linkend=\"details.formats.encrypted\">encrypted file</link> "
+"using GPG encryption, or"
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:39
+#, no-c-format
+msgid ""
+"as an <link linkend=\"details.formats.anonymous\">anonymous plain text "
+"file</link> encoded in UTF-8 but with all your personal data scrambled."
+msgstr ""
+
+#. Tag: title
+#: details-formats.docbook:46
+#, no-c-format
+msgid "Plain text file"
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:47
+#, no-c-format
+msgid ""
+"This is the most space consuming format supported, as no compression is "
+"performed. It is not intended for normal use, and is provided to support "
+"debugging purposes and the capability to modify the file manually. If you end a "
+"filename in <literal role=\"extension\">.xml</literal>"
+", the file will be stored in this format."
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:55
+#, no-c-format
+msgid ""
+"Manual modification of the file is not recommended to the normal user, and "
+"should only be performed if the internal working of &kappname; is fully "
+"understood or if instructions from the developers tell you what to do. Don't "
+"blame the &kappname; developers if you screw up your data: You have been "
+"warned!"
+msgstr ""
+
+#. Tag: title
+#: details-formats.docbook:67
+#, no-c-format
+msgid "GZIP-compressed file"
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:68
+#, no-c-format
+msgid ""
+"This is the normal format used by &kappname; when you store a file with the "
+"extension <literal role=\"extension\">.kmy</literal>."
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:74
+#, no-c-format
+msgid ""
+"If <link linkend=\"details.formats.encrypted\">encryption</link> "
+"has been selected, the file will be stored encrypted."
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:80
+#, no-c-format
+msgid ""
+"If you want to look at the contents of a GZIP compressed file, rename it to a "
+"filename ending in <literal role=\"extension\">.gz</literal> "
+"(&eg;, rename <filename>myfinances.kmy</filename> to <filename>"
+"myfinances.kmy.gz</filename>), then use <command>gunzip</command> "
+"to uncompress the file and look at it. You don't have to compress it before "
+"loading it into &kappname; the next time, because &kappname; can read the "
+"uncompressed data as well. Nevertheless, if you save it thereafter, it will be "
+"saved compressed again. Use the <link linkend=\"details.formats.plain\">"
+".xml</link> extension to write it in uncompressed format."
+msgstr ""
+
+#. Tag: title
+#: details-formats.docbook:95
+#, no-c-format
+msgid "GPG-encrypted file"
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:96
+#, no-c-format
+msgid ""
+"Using the GPG-encrypted file format is a very secure method of storing your "
+"personal finance data on your storage device. When &kappname; has been "
+"instructed through the settings dialog to store your data encrypted, it will "
+"cipher the data using GPG and the key you provided before actually storing it. "
+"When opening an encrypted file, you have to provide the passphrase necessary to "
+"open your keyring. The encrypted file itself will be stored in GPG's <emphasis>"
+"ASCII armored</emphasis> format."
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:105
+#, no-c-format
+msgid ""
+"When using GPG encryption, GPG also compresses the file, so no extra "
+"compression is necessary."
+msgstr ""
+
+#. Tag: title
+#: details-formats.docbook:113
+#, no-c-format
+msgid "GPG-Keys"
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:114
+#, no-c-format
+msgid ""
+"If you have not done so already for mail encryption, you need to generate a "
+"key-pair in order to use the GPG encryption feature of &kappname;. Also, "
+"<application>GPG</application> must be installed on your system."
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:121
+#, no-c-format
+msgid ""
+"The details about how to generate a key-pair and how to take care of it are "
+"beyond the scope of this document. A Mini Howto on this subject can be found at "
+"<ulink url=\"http://www.gnupg.org/documentation/howtos.en.html\">"
+"http://www.gnupg.org/documentation/howtos.en.html</ulink>."
+msgstr ""
+
+#. Tag: title
+#: details-formats.docbook:129
+#, no-c-format
+msgid "Setting the keys in &kappname;"
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:130
+#, no-c-format
+msgid ""
+"On the encryption page of the settings dialog, there is a drop down list where "
+"you can select the key that should be used for encryption and decryption. "
+"Additionally you can find a field where you can enter the key-id of a key not "
+"in the listbox. You can use either the key-id, the email address associated "
+"with this key, or any other valid GPG key identification as the value for this "
+"field. When you enter the key-id, &kappname; will check its validity and "
+"display a green LED icon in the dialog if a key is found."
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:140
+#, no-c-format
+msgid ""
+"Make sure you have both the public and the private key for this id. If you do "
+"not own the private key for the id entered, you will not be able to open the "
+"file again."
+msgstr ""
+
+#. Tag: title
+#: details-formats.docbook:150
+#, no-c-format
+msgid "The &kappname; recover key"
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:151
+#, no-c-format
+msgid ""
+"Also on this page of the settings dialog you have the choice of selecting "
+"supplemental encryption with the &kappname; recover key. This option is "
+"available to you if that key is stored in your <application>GPG</application> "
+"keyring. Selecting this option will allow you to recover your data even in the "
+"case you lose your own private key. This is possible because the data is not "
+"only encrypted for your own key, but also for the &kappname; recover key. This "
+"key is only available to selected &kappname; developers (at the time of writing "
+"only to the author). As of the release of &kappname; version 4.7, the recover "
+"key is set to expire on 3 January 2015."
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:163
+#, no-c-format
+msgid ""
+"Under normal circumstances, you will open/save/close your file as usual. In the "
+"abnormal case of loss of your key, you have the chance to contact one of the "
+"developers who has access to the &kappname; recover key and request help to "
+"recover your data. You may contact the developers via email to the &kappname; "
+"developer mailing list at &devlist;."
+msgstr ""
+
+#. Tag: title
+#: details-formats.docbook:174
+#, no-c-format
+msgid "Anonymous file"
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:175
+#, no-c-format
+msgid ""
+"This format is not intended to be used for normal data storage. It is supported "
+"so that in case of a problem, you can supply the &kappname; development team "
+"with your file without disclosing any of the confidential details in your "
+"financial data. For example, it changes institution, account, payee, and "
+"category names to strings such as \"I000001\" and \"A000001,\" it makes similar "
+"changes to all data such as account numbers, and it also randomly changes the "
+"amounts of transactions."
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:185
+#, no-c-format
+msgid ""
+"If instructed by the developers, use the <guimenuitem>Save as...</guimenuitem> "
+"menu item to store your data in anonymous format by selecting <literal "
+"role=\"filter\">Anonymous files</literal> as the filter. This also changes the "
+"file extension to <literal role=\"extension\">.anon.xml</literal>."
+msgstr ""
+
+#. Tag: para
+#: details-formats.docbook:192
+#, no-c-format
+msgid ""
+"To verify that your problem still exists, reload this anonymized file and try "
+"to duplicate your problem. If the problem is still present, send the file to "
+"the developer mailing list at &devlist; for further investigation. If the "
+"problem does not show ... well, I don't want to think about this scenario right "
+"now."
+msgstr ""

@@ -1,0 +1,701 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2007, 2009, 2010, 2011, 2012, 2013.
+# Jannick Kuhr <opensource@kuhr.org>, 2008, 2009, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: planwork\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-10-21 01:27+0000\n"
+"PO-Revision-Date: 2013-10-21 05:52+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Jannick Kuhr"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "opensource@kuhr.org"
+
+#: aboutdata.h:31
+msgid "PlanWork - Work Package handler for the Plan Project Planning Tool"
+msgstr "PlanWork – Arbeitspaketverwaltung für das Plan-Projektplanungsprogramm"
+
+#: aboutdata.h:36
+msgctxt "application name"
+msgid "Plan WorkPackage Handler"
+msgstr "Plan-Arbeitspaketverwaltung"
+
+#: aboutdata.h:39
+msgid "Copyright (C) 2007-2013, The Plan Team"
+msgstr "© 2007–2013, Das Plan-Team"
+
+#: aboutdata.h:43
+msgid "Dag Andersen"
+msgstr "Dag Andersen"
+
+#: application.cpp:112
+msgid "Failed to open document"
+msgstr "Öffnen des Dokuments fehlgeschlagen"
+
+#: main.cpp:40
+msgid "File to open"
+msgstr "Zu öffnende Datei"
+
+#: mainwindow.cpp:122
+#, kde-format
+msgid "The file %1 does not exist."
+msgstr "Die Datei „%1“ existiert nicht."
+
+#: packagesettings.cpp:34
+msgid "Work Package Settings"
+msgstr "Arbeitspaket-Einstellungen"
+
+#: packagesettings.cpp:75
+msgctxt "(qtundo-format)"
+msgid "Modify package settings"
+msgstr "Paketeinstellungen bearbeiten"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: packagesettings.ui:24
+msgid ""
+"Package data:\n"
+"These settings indicates to the receiver of the package which information is "
+"relevant."
+msgstr ""
+"Paketdaten:\n"
+"Diese Einstellungen zeigen dem Empfänger des Pakets an, welche Informationen "
+"relevant sind."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, ui_usedEffort)
+#: packagesettings.ui:34
+msgid "The effort you have used on this task."
+msgstr "Der bei dieser Aufgabe verwendete Aufwand."
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_usedEffort)
+#: packagesettings.ui:37
+msgid "Used effort"
+msgstr "Verwendeter Aufwand"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, ui_progress)
+#: packagesettings.ui:44
+msgid ""
+"Progress includes started / start time, finished / finish time and completion"
+msgstr ""
+"Fortschritt beinhaltet „begonnen“ / „Startzeitpunkt“, „abgeschlossen“ / "
+"„Endzeitpunkt“ und „Komplettierung“"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_progress)
+#: packagesettings.ui:47
+msgid "Progress"
+msgstr "Fortschritt"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, ui_documents)
+#: packagesettings.ui:54
+msgid "The documents attached to this task"
+msgstr "Die dieser Aufgabe beigefügten Dokumente"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_documents)
+#: packagesettings.ui:57
+msgid "Documents"
+msgstr "Dokumente"
+
+#: part.cpp:179 part.cpp:210
+#, kde-format
+msgid "Document is already open:<br>%1"
+msgstr "Das Dokument ist bereits geöffnet:<br>%1"
+
+#: part.cpp:191 part.cpp:218 workpackage.cpp:590
+#, kde-format
+msgid "Could not extract document from storage:<br>%1"
+msgstr "Das Dokument lässt sich nicht aus dem Speicher extrahieren:<br>%1"
+
+#: part.cpp:199 part.cpp:226 workpackage.cpp:594
+#, kde-format
+msgid "Invalid URL:<br>%1"
+msgstr "Ungültige Adresse (URL):<br>%1"
+
+#: part.cpp:238
+#, kde-format
+msgid "Document is already open:<br> %1"
+msgstr "Das Dokument ist bereits geöffnet:<br>%1"
+
+#: part.cpp:242
+#, kde-format
+msgid "File does not exist:<br>%1"
+msgstr "Die Datei existiert nicht:<br>%1"
+
+#: part.cpp:266
+msgid "Edit with:"
+msgstr "Bearbeiten mit:"
+
+#: part.cpp:399
+#, kde-format
+msgid ""
+"<p>The work package already exists in the projects store.</p><p>Project: "
+"%1<br>Task: %2</p><p>Do you want to update the existing package with data "
+"from the new?</p>"
+msgstr ""
+"<p>Das Arbeitspaket ist im Projektspeicher bereits vorhanden.</p><p>Projekt: "
+"%1<br>Aufgabe: %2</p><p>Möchten Sie das bestehende Paket mit den Daten des "
+"neuen Pakets aktualisieren?</p>"
+
+#: part.cpp:427
+msgid "Remove failed. Cannot find work package"
+msgstr "Entfernen fehlgeschlagen. Das Arbeitspaket kann nicht gefunden werden."
+
+#: part.cpp:430 part.cpp:441
+msgctxt "(qtundo-format)"
+msgid "Remove work package"
+msgid_plural "Remove work packages"
+msgstr[0] "Arbeitspaket entfernen"
+msgstr[1] "Arbeitspakete entfernen"
+
+#: part.cpp:479 part.cpp:495
+#, kde-format
+msgid "Failed to load file:<br>%1"
+msgstr "Laden der Datei fehlgeschlagen:<br>%1"
+
+#: part.cpp:508
+#, kde-format
+msgid "Not a valid work package file:<br>%1"
+msgstr "Keine gültige Arbeitspaket-Datei:<br>%1"
+
+#: part.cpp:536
+msgid "Invalid document. The document does not contain 'maindoc.xml'."
+msgstr "Ungültiges Dokument. Das Dokument enthält nicht „maindoc.xml“."
+
+#: part.cpp:562
+#, kde-format
+msgid "Failed to open file: %1"
+msgstr "Öffnen der Datei fehlgeschlagen: %1"
+
+#: part.cpp:574
+#, kde-format
+msgid "Parsing error in file '%1' at line %2, column %3<br>Error message: %4"
+msgstr "Lesefehler in Datei „%1“ in Zeile %2, Spalte %3<br>Fehlermeldung: %4"
+
+#: part.cpp:592 part.cpp:635
+msgid "Invalid document. No mimetype specified."
+msgstr "Ungültiges Dokument. Kein MIME-Typ angegeben."
+
+#: part.cpp:598
+#, kde-format
+msgid ""
+"Invalid document. Expected mimetype application/x-vnd.kde.plan.work, got %1"
+msgstr ""
+"Ungültiges Dokument. Erwarteter MIME-Typ application/x-vnd.kde.plan.work, "
+"vorhandener MIME-Typ: %1"
+
+#: part.cpp:605 part.cpp:646
+#, kde-format
+msgid ""
+"This document is a newer version than supported by PlanWork (syntax version: "
+"%1)<br>Opening it in this version of PlanWork will lose some information."
+msgstr ""
+"Dieses Dokument ist eine neuere Version als von PlanWork unterstützt wird"
+"(Syntax-Version: %1)<br>Wenn Sie es in dieser Version von PlanWork öffnen, "
+"gehen einige Informationen verloren."
+
+#: part.cpp:607 part.cpp:648
+msgid "File-Format Mismatch"
+msgstr "Falsches Dateiformat"
+
+#: part.cpp:607 part.cpp:648
+msgid "Continue"
+msgstr "Fortsetzen"
+
+#: part.cpp:639
+#, kde-format
+msgid ""
+"Invalid document. Expected mimetype application/x-vnd.kde.kplato.work, got %1"
+msgstr ""
+"Ungültiges Dokument. Erwarteter MIME-Typ application/x-vnd.kde.kplato.work, "
+"vorhandener MIME-Typ: %1"
+
+#: part.cpp:736
+msgid "Edit failed. Cannot find a work package."
+msgstr ""
+"Bearbeiten fehlgeschlagen. Das Arbeitspaket kann nicht gefunden werden.."
+
+#. i18n: ectx: Menu (edit)
+#: planwork.rc:4 planwork_mainwindow.rc:4
+msgid "&Edit"
+msgstr "&Bearbeiten"
+
+#. i18n: ectx: ToolBar (view_selection)
+#: planwork.rc:8
+msgid "View"
+msgstr "Ansicht"
+
+#. i18n: ectx: Menu (view)
+#: planwork_readonly.rc:3
+msgid "&View"
+msgstr "&Ansicht"
+
+#: taskcompletiondialog.cpp:46
+msgid "Task Progress"
+msgstr "Aufgabenfortschritt"
+
+#: taskcompletiondialog.cpp:166
+msgctxt "(qtundo-format)"
+msgid "Modify task completion"
+msgstr "Aufgabenkomplettierung bearbeiten"
+
+#. i18n: ectx: property (text), widget (QCheckBox, started)
+#: taskcompletionpanel.ui:33
+msgid "Started:"
+msgstr "Begonnen:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, finished)
+#: taskcompletionpanel.ui:50
+msgid "Finished:"
+msgstr "Abgeschlossen:"
+
+#. i18n: ectx: property (text), widget (QPushButton, addEntryBtn)
+#: taskcompletionpanel.ui:211
+msgid "Add Entry"
+msgstr "Eintrag hinzufügen"
+
+#. i18n: ectx: property (text), widget (QPushButton, removeEntryBtn)
+#: taskcompletionpanel.ui:218
+msgid "Remove Entry"
+msgstr "Eintrag entfernen"
+
+#: taskworkpackagemodel.cpp:408
+#, no-c-format
+msgctxt "(qtundo-format)"
+msgid "Modify completion"
+msgstr "Komplettierung bearbeiten"
+
+#: taskworkpackagemodel.cpp:443
+msgctxt "(qtundo-format)"
+msgid "Set finished"
+msgstr "Als abgeschlossen markieren"
+
+#: taskworkpackagemodel.cpp:464
+msgctxt "(qtundo-format)"
+msgid "Modify remaining effort"
+msgstr "Verbleibenden Aufwand bearbeiten"
+
+#: taskworkpackagemodel.cpp:477
+msgctxt "(qtundo-format)"
+msgid "Modify actual effort"
+msgstr "Tatsächlichen Aufwand bearbeiten"
+
+#: taskworkpackagemodel.cpp:575
+msgid "Name"
+msgstr "Name"
+
+#: taskworkpackagemodel.cpp:576
+msgid "Type"
+msgstr "Typ"
+
+#: taskworkpackagemodel.cpp:577
+msgid "Responsible"
+msgstr "Verantwortlich"
+
+#: taskworkpackagemodel.cpp:578
+msgid "Description"
+msgstr "Beschreibung"
+
+#: taskworkpackagemodel.cpp:581
+msgid "Planned Start"
+msgstr "Geplanter Beginn"
+
+#: taskworkpackagemodel.cpp:582
+msgid "Planned Finish"
+msgstr "Geplantes Ende"
+
+#: taskworkpackagemodel.cpp:583
+msgid "Resource Assignments"
+msgstr "Ressourcenzuordnungen"
+
+#: taskworkpackagemodel.cpp:586
+msgid "Completion"
+msgstr "Komplettierung"
+
+#: taskworkpackagemodel.cpp:587
+msgid "Actual Effort"
+msgstr "Tatsächlicher Aufwand"
+
+#: taskworkpackagemodel.cpp:588
+msgid "Remaining Effort"
+msgstr "Verbleibender Aufwand"
+
+#: taskworkpackagemodel.cpp:589
+msgid "Planned Effort"
+msgstr "Geplanter Aufwand"
+
+#: taskworkpackagemodel.cpp:590
+msgid "Actual Start"
+msgstr "Tatsächlicher Beginn"
+
+#: taskworkpackagemodel.cpp:591
+msgid "Started"
+msgstr "Begonnen"
+
+#: taskworkpackagemodel.cpp:592
+msgid "Actual Finish"
+msgstr "Tatsächlicher Abschluss"
+
+#: taskworkpackagemodel.cpp:593
+msgid "Finished"
+msgstr "Abgeschlossen"
+
+#: taskworkpackagemodel.cpp:594
+msgctxt "@title:column"
+msgid "Status"
+msgstr "Status"
+
+#: taskworkpackagemodel.cpp:595
+msgid "Note"
+msgstr "Hinweis"
+
+#: taskworkpackagemodel.cpp:597
+msgid "Project Name"
+msgstr "Projektname"
+
+#: taskworkpackagemodel.cpp:598
+msgid "Project Manager"
+msgstr "Projektverwaltung"
+
+#: taskworkpackageview.cpp:418 taskworkpackageview.cpp:908
+msgid "Configure View..."
+msgstr "Ansicht einrichten ..."
+
+#: taskworkpackageview.cpp:636
+#, kde-format
+msgctxt "@info:tooltip"
+msgid ""
+"Task: %1<nl/>Actual finish: %2<nl/>Planned finish: %3<nl/>Status: %4<nl/"
+">Project: %5"
+msgstr ""
+"Aufgabe: %1<nl/>Aktuelles Ende: %2<nl/>Geplantes Ende: %3<nl/>Status: %4<nl/"
+">Projekt: %5"
+
+#: taskworkpackageview.cpp:651
+#, kde-format
+msgctxt "@info:tooltip"
+msgid ""
+"Task: %1<nl/>Completion: %2 %<nl/>Actual start: %3<nl/>Planned: %4 - %5<nl/"
+">Status: %6<nl/>Project: %7"
+msgstr ""
+"Aufgabe: %1<nl/>Komplettierung: %2 %<nl/>Aktueller Beginn: %3<nl/>Geplant: "
+"%4 - %5<nl/>Status: %6<nl/>Projekt: %7"
+
+#: taskworkpackageview.cpp:672
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Task: %1<nl/>Planned: %2 - %3<nl/>Status: %4<nl/>Project: %5"
+msgstr "Aufgabe: %1<nl/>Geplant: %2 - %3<nl/>Status: %4<nl/>Projekt: %5"
+
+#: view.cpp:113
+msgid "Remove Packages"
+msgstr "Pakete entfernen"
+
+#: view.cpp:117
+msgid "Remove Package"
+msgstr "Paket entfernen"
+
+#: view.cpp:121
+msgid "List"
+msgstr "Liste"
+
+#: view.cpp:122
+msgctxt "@info:tooltip"
+msgid "Select task list"
+msgstr "Aufgabenliste auswählen"
+
+#: view.cpp:126
+msgid "Gantt"
+msgstr "Gantt"
+
+#: view.cpp:127
+msgctxt "@info:tooltip"
+msgid "Select timeline"
+msgstr "Zeitleiste auswählen"
+
+#: view.cpp:136
+msgid "Configure PlanWork..."
+msgstr "PlanWork einrichten ..."
+
+#: view.cpp:141
+msgid "Edit..."
+msgstr "Bearbeiten ..."
+
+#: view.cpp:145
+msgctxt "@verb"
+msgid "View..."
+msgstr "Ansicht ..."
+
+#: view.cpp:154
+msgid "Send Package..."
+msgstr "Pakete senden ..."
+
+#: view.cpp:158
+msgid "Package Settings..."
+msgstr "Paketeinstellungen ..."
+
+#: view.cpp:162
+msgid "Edit Progress..."
+msgstr "Fortschritt bearbeiten ..."
+
+#: view.cpp:166
+msgid "View Description..."
+msgstr "Beschreibung anzeigen ..."
+
+#: view.cpp:351
+msgid "This file is not editable"
+msgstr "Diese Datei kann nicht bearbeitet werden"
+
+#: view.cpp:388
+msgid "No work package is selected"
+msgstr "Kein Arbeitspaket ausgewählt"
+
+#: view.cpp:394
+msgid "Cannot find work package"
+msgstr "Das Arbeitspaket kann nicht gefunden werden"
+
+#: view.cpp:409
+msgid "Could not open temporary file. Sending is aborted."
+msgstr "Die temporäre Datei lässt sich nicht öffnen. Senden abgebrochen."
+
+#: view.cpp:422
+#, kde-format
+msgid "Work Package: %1"
+msgstr "Arbeitspaket: %1"
+
+#: workpackage.cpp:114
+msgid "Document is already open"
+msgstr "Das Dokument ist bereits geöffnet"
+
+#: workpackage.cpp:186 workpackage.cpp:245
+#, kde-format
+msgid "Failed to load project: %1"
+msgstr "Laden des Projekts fehlgeschlagen: %1"
+
+#: workpackage.cpp:303
+msgid "Cannot save to empty filename"
+msgstr "Zum Speichern muss ein Dateiname angegeben werden"
+
+#: workpackage.cpp:309
+msgid "Could not create the file for saving"
+msgstr "Das Erstellen der Datei zum Speichern ist nicht möglich"
+
+#: workpackage.cpp:321
+#, kde-format
+msgid "Not able to write '%1'. Partition full?"
+msgstr ""
+"„%1“ kann nicht geschrieben werden. Möglicherweise ist nicht genug Platz auf "
+"dem Speichermedium."
+
+#: workpackage.cpp:345
+#, kde-format
+msgid ""
+"Failed to open store:\n"
+" %1"
+msgstr ""
+"Öffnen des Speichers fehlgeschlagen:\n"
+" %1"
+
+#: workpackage.cpp:418
+#, kde-format
+msgid ""
+"Cannot save to projects store:\n"
+"%1"
+msgstr ""
+"Es kann nicht in den Projektspeicher gespeichert werden:\n"
+"%1"
+
+#: workpackage.cpp:462
+#, kde-format
+msgid ""
+"Failed read file:\n"
+" %1"
+msgstr ""
+"Lesen der Datei fehlgeschlagen:\n"
+" %1"
+
+#: workpackage.cpp:466
+#, kde-format
+msgid ""
+"Failed write file:\n"
+" %1"
+msgstr ""
+"Schreiben der Datei fehlgeschlagen:\n"
+" %1"
+
+#: workpackage.cpp:509
+msgctxt "(qtundo-format)"
+msgid "Merge data"
+msgstr "Daten zusammenführen"
+
+#: workpackage.cpp:615
+#, kde-format
+msgid ""
+"<p>The work package <b>'%2'</b> has an open document.</p><p>Data may be lost "
+"if you continue.</p>"
+msgid_plural ""
+"<p>The work package <b>'%2'</b> has open documents.</p><p>Data may be lost "
+"if you continue.</p>"
+msgstr[0] ""
+"<p>Das Arbeitspaket <b>„%2“</b> enthält ein geöffnetes Dokument.</p><p>Wenn "
+"Sie den Vorgang fortsetzen, kann es zu Datenverlust kommen.</p>"
+msgstr[1] ""
+"<p>Das Arbeitspaket <b>„%2“</b> enthält geöffnete Dokumente.</p><p>Wenn Sie "
+"den Vorgang fortsetzen, kann es zu Datenverlust kommen.</p>"
+
+#: workpackage.cpp:636
+#, kde-format
+msgid ""
+"<p>The work package <b>'%1'</b> has been modified.</p><p>Do you want to save "
+"it?</p>"
+msgstr ""
+"<p>Das Arbeitspaket <b>„%1“</b> wurde geändert.</p><p>Möchten Sie es "
+"speichern?</p>"
+
+#: workpackage.cpp:662
+#, kde-format
+msgid "<p>Work package <b>'%1'</b></p><p>Could not open store:</p><p>%2</p>"
+msgstr ""
+"<p>Arbeitspaket <b>„%1“</b></p><p>Der Speicher kann nicht geöffnet werden:</"
+"p><p>%2</p>"
+
+#: workpackage.cpp:678
+#, kde-format
+msgid "<p>Work package <b>'%1'</b></p><p>Could not extract file:</p><p>%2</p>"
+msgstr ""
+"<p>Arbeitspaket <b>„%1“</b></p><p>Die Datei kann nicht extrahiert werden:</"
+"p><p>%2</p>"
+
+#~ msgid "&Settings"
+#~ msgstr "&Einstellungen"
+
+#~ msgid "Edit Mode:"
+#~ msgstr "Bearbeitungsmodus:"
+
+#~ msgid "Calculate"
+#~ msgstr "Berechnen"
+
+#~ msgid "Manual entry"
+#~ msgstr "Manueller Eintrag"
+
+#~ msgid "Estimate of the remaining effort"
+#~ msgstr "Schätzung des verbleibenden Aufwands"
+
+#~ msgid "Remaining effort"
+#~ msgstr "Verbleibender Aufwand"
+
+#~ msgid "Modify % Completed"
+#~ msgstr "% abgeschlossen bearbeiten"
+
+#~ msgid "Invalid work package.<br>The package does not contain a task."
+#~ msgstr "Ungültiges Arbeitspaket.<br>Das Paket enthält keine Aufgabe."
+
+#~| msgid ""
+#~| "This workpackage is not in your project store:\n"
+#~| "%1\n"
+#~| "Do you want to save it?"
+#~ msgid ""
+#~ "This work package has been modified.\n"
+#~ "Do you want to save it before sending?"
+#~ msgstr ""
+#~ "Dieses Arbeitspaket ist bearbeitet worden.\n"
+#~ "Möchten Sie es vor dem Versenden speichern?"
+
+#~ msgid ""
+#~ "Document is already open:\n"
+#~ " %1"
+#~ msgstr ""
+#~ "Das Dokument ist bereits geöffnet:\n"
+#~ " %1"
+
+#, fuzzy
+#~| msgid "Could not extract file: %1"
+#~ msgid "Could not find %1"
+#~ msgstr "Die Datei lässt sich nicht extrahieren: %1"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open workpackage store:\n"
+#~| " %1"
+#~ msgid "Failed to set workpackage, project: %1"
+#~ msgstr ""
+#~ "Der Arbeitspaketspeicher kann nicht geöffnet werden:\n"
+#~ " %1"
+
+#, fuzzy
+#~| msgid "KPlato WorkPackage Handler"
+#~ msgid "No WorkPackage handles this document"
+#~ msgstr "KPlato-Arbeitspaketverwaltung"
+
+#~ msgid "Information"
+#~ msgstr "Information"
+
+#~ msgid "Not scheduled"
+#~ msgstr "Nicht aufgeplant"
+
+#~ msgid "No template found for: %1 "
+#~ msgstr "Keine Vorlage gefunden für: %1"
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Zu viele Vorlagen gefunden für: %1"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "Vorlage %1 lässt sich nicht laden."
+
+#~ msgid "Close"
+#~ msgstr "Schließen"
+
+#~ msgid "Empty"
+#~ msgstr "Leer"
+
+#~ msgctxt "Main document"
+#~ msgid " [main]"
+#~ msgstr "[allgemein]"
+
+#~ msgid " [write protected]"
+#~ msgstr "[schreibgeschützt]"
+
+#~ msgid "Part Handbook"
+#~ msgstr "Handbuch der Komponente"
+
+#~ msgid "%1 Handbook"
+#~ msgstr "Handbuch zu %1"
+
+#~ msgid "Open Document"
+#~ msgstr "Dokument öffnen"
+
+#~ msgid "Save"
+#~ msgstr "Speichern"
+
+#~ msgid ""
+#~ "Could not extract file:\n"
+#~ " %1"
+#~ msgstr ""
+#~ "Die Datei lässt sich nicht extrahieren:\n"
+#~ " %1"
+
+#~ msgid ""
+#~ "Could not extract file:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Die Datei lässt sich nicht extrahieren:\n"
+#~ "%1"
+
+#~ msgid "none"
+#~ msgstr "Keine(r/s)"
+
+#~ msgid "Add Schedule %1"
+#~ msgstr "Zeitplan %1 hinzufügen"
+
+#~ msgid "Delete Schedule %1"
+#~ msgstr "Zeitplan %1 löschen"

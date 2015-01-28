@@ -1,0 +1,641 @@
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2007, 2008, 2009.
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2012, 2014.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: krunner\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-20 06:06+0000\n"
+"PO-Revision-Date: 2014-02-20 10:43+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Thomas Reitelbach"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "tr@erdfunkstelle.de"
+
+#: configdialog.cpp:53
+msgid "Plugins"
+msgstr "Module"
+
+#: configdialog.cpp:82
+msgid "User Interface"
+msgstr "Benutzeroberfläche"
+
+#: configdialog.cpp:150
+msgid "Available Plugins"
+msgstr "Verfügbare Module"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: interfaceOptions.ui:17
+msgid "Positioning:"
+msgstr "Positionierung:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, topEdgeButton)
+#: interfaceOptions.ui:27
+msgid "Top edge of screen"
+msgstr "Oberer Bildschirmrand"
+
+#. i18n: ectx: property (text), widget (QRadioButton, freeFloatingButton)
+#: interfaceOptions.ui:37
+msgid "Free floating window"
+msgstr "Frei schwebendes Fenster"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: interfaceOptions.ui:57
+msgid "Style:"
+msgstr "Stil:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, commandButton)
+#: interfaceOptions.ui:67
+msgid "Command oriented"
+msgstr "Befehlsorientiert"
+
+#. i18n: ectx: property (text), widget (QRadioButton, taskButton)
+#: interfaceOptions.ui:77
+msgid "Task oriented"
+msgstr "Aufgabenorientiert"
+
+#. i18n: ectx: property (text), widget (QPushButton, previewButton)
+#: interfaceOptions.ui:97
+msgid "Preview"
+msgstr "Vorschau"
+
+#: interfaces/default/interface.cpp:90 interfaces/default/interface.cpp:91
+#: interfaces/quicksand/qs_dialog.cpp:59 interfaces/quicksand/qs_dialog.cpp:60
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: interfaces/default/interface.cpp:112
+msgid "Help"
+msgstr "Hilfe"
+
+#: interfaces/default/interface.cpp:113
+msgid "Information on using this application"
+msgstr "Informationen zur Bedienung dieser Anwendung"
+
+#: interfaces/default/interface.cpp:277 interfaces/quicksand/qs_dialog.cpp:317
+#, kde-format
+msgctxt "tooltip, shortcut"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: interfaces/default/interface.cpp:441
+#, kde-format
+msgid "(From %1, %2)"
+msgstr "(Von %1, %2)"
+
+#: interfaces/quicksand/qs_dialog.cpp:108
+msgid "Actions"
+msgstr "Aktionen"
+
+#: interfaces/quicksand/qs_matchview.cpp:193
+msgid "Type to search."
+msgstr "Tippen Sie, um zu suchen."
+
+#: interfaces/quicksand/qs_matchview.cpp:274
+#, kde-format
+msgid "1 item"
+msgid_plural "%1 items"
+msgstr[0] "1 Element"
+msgstr[1] "%1 Elemente"
+
+#: interfaces/quicksand/qs_matchview.cpp:276
+#, kde-format
+msgid "1 action"
+msgid_plural "%1 actions"
+msgstr[0] "1 Aktion"
+msgstr[1] "%1 Aktionen"
+
+#: interfaces/quicksand/qs_matchview.cpp:361
+msgid "Loading..."
+msgstr "Wird geladen ..."
+
+#: interfaces/quicksand/qs_matchview.cpp:446
+msgid "No results found."
+msgstr "Keine Ergebnisse gefunden."
+
+#: interfaces/quicksand/qs_statusbar.cpp:57
+#, kde-format
+msgctxt "%1 current item number, %2 total number of items"
+msgid "%1 of %2"
+msgstr "%1 von %2"
+
+#. i18n: ectx: label, entry, group (General)
+#: kcfg/krunner.kcfg:13
+msgid "The interface style to use in KRunner"
+msgstr "Der Oberflächenstil für KRunner"
+
+#. i18n: ectx: label, entry, group (General)
+#: kcfg/krunner.kcfg:21
+msgid ""
+"Set to true to show the interface in a freely floating dialog instead of at "
+"the top of the screen"
+msgstr ""
+"Aktivieren Sie diese Einstellung, um KRunner als frei schwebendes Fenster "
+"anzuzeigen, statt am oberen Bildschirmrand."
+
+#. i18n: ectx: label, entry, group (General)
+#: kcfg/krunner.kcfg:26
+msgid "Completion mode used for the query text."
+msgstr "Vervollständigungsmodus für den Abfragetext."
+
+#. i18n: ectx: label, entry (PastQueries), group (General)
+#: kcfg/krunner.kcfg:31
+msgid "History if past queries successfully completed"
+msgstr "Verlauf, falls vorhergegangene Anfragen erfolgreich waren"
+
+#. i18n: ectx: label, entry (KeepTaskDialogAbove), group (TaskDialog)
+#: kcfg/krunner.kcfg:40
+msgid "Whether to keep the tasks dialog above other windows when shown."
+msgstr "Legt fest, ob das Fenster im Vordergrund gehalten werden soll."
+
+#: krunnerapp.cpp:120
+msgid "Run Command"
+msgstr "Befehl ausführen"
+
+#: krunnerapp.cpp:125
+msgid "Run Command on clipboard contents"
+msgstr "Befehl mit dem Inhalt der Zwischenablage ausführen"
+
+#: krunnerapp.cpp:131
+msgid "Show System Activity"
+msgstr "Systemüberwachung anzeigen"
+
+#: krunnerapp.cpp:137
+msgid "Switch User"
+msgstr "Benutzer wechseln"
+
+#: krunnerapp.cpp:176
+#, kde-format
+msgctxt "Run krunner restricting the search only to runner %1"
+msgid "Run Command (runner \"%1\" only)"
+msgstr "Befehl ausführen (nur Starter „%1“)"
+
+#: krunnerdialog.cpp:76
+msgctxt "@title:window"
+msgid "Run Command"
+msgstr "Befehl ausführen"
+
+#: ksystemactivitydialog.cpp:40
+msgid "System Activity"
+msgstr "Systemüberwachung"
+
+#: main.cpp:37
+msgid "KDE run command interface"
+msgstr "KDE-Oberfläche zur Ausführung von Befehlen"
+
+#: main.cpp:48
+msgid "Run Command Interface"
+msgstr "Oberfläche zur Ausführung von Befehlen"
+
+#: main.cpp:50
+msgid "(c) 2006, Aaron Seigo"
+msgstr "© 2006, Aaron Seigo"
+
+#: main.cpp:51
+msgid "Aaron J. Seigo"
+msgstr "Aaron J. Seigo"
+
+#: main.cpp:52
+msgid "Author and maintainer"
+msgstr "Autor und Betreuer"
+
+#~ msgid "Enable screen saver"
+#~ msgstr "Bildschirmschoner aktivieren"
+
+#~ msgid "Enables the screen saver."
+#~ msgstr "Schaltet den Bildschirmschoner ein."
+
+#~ msgid "Screen saver timeout"
+#~ msgstr "Bildschirmschoner automatisch starten nach"
+
+#~ msgid "Sets the seconds after which the screen saver is started."
+#~ msgstr ""
+#~ "Legt die Zeit fest, nach der der Bildschirmschoner automatisch gestartet "
+#~ "werden soll."
+
+#~ msgid "Suspend screen saver when DPMS kicks in"
+#~ msgstr "Bildschirmschoner ausschalten, wenn DPMS aktiv ist"
+
+#~ msgid ""
+#~ "Usually the screen saver is suspended when display power saving kicks "
+#~ "in,\n"
+#~ "       as nothing can be seen on the screen anyway, obviously. However, "
+#~ "some screen savers\n"
+#~ "       actually perform useful computations, so it is not desirable to "
+#~ "suspend them."
+#~ msgstr ""
+#~ "Normalerweise wird der Bildschirmschoner ausgeschaltet, während der "
+#~ "Bildschirm\n"
+#~ "       sich im Stromsparmodus befindet, weil man ohnehin nichts davon "
+#~ "sehen kann.\n"
+#~ "       Manche Bildschirmschoner führen jedoch sinnvolle Berechnungen "
+#~ "durch, daher\n"
+#~ "       kann es gewünscht sein, dass der Bildschirmschoner dennoch "
+#~ "aktiviert bleibt."
+
+#~ msgid "Lock Session"
+#~ msgstr "Sitzung sperren"
+
+#~ msgid "<qt><nobr><b>Automatic Log Out</b></nobr></qt>"
+#~ msgstr "<qt><nobr><b>Automatische Abmeldung</b></nobr></qt>"
+
+#~ msgid ""
+#~ "<qt>To prevent being logged out, resume using this session by moving the "
+#~ "mouse or pressing a key.</qt>"
+#~ msgstr ""
+#~ "<qt>Um Ihre automatische Abmeldung zu verhindern, müssen Sie die Maus "
+#~ "bewegen oder eine Taste drücken.</qt>"
+
+#~ msgid "Time Remaining:"
+#~ msgstr "Verbleibende Zeit:"
+
+#~ msgid ""
+#~ "<qt><nobr>You will be automatically logged out in 1 second</nobr></qt>"
+#~ msgid_plural ""
+#~ "<qt><nobr>You will be automatically logged out in %1 seconds</nobr></qt>"
+#~ msgstr[0] ""
+#~ "<qt><nobr>Ihre automatische Abmeldung erfolgt in 1 Sekunde</nobr></qt>"
+#~ msgstr[1] ""
+#~ "<qt><nobr>Ihre automatische Abmeldung erfolgt in %1 Sekunden</nobr></qt>"
+
+#~ msgid "<nobr><b>The session is locked</b></nobr><br />"
+#~ msgstr "<nobr><b>Die Sitzung ist gesperrt</b></nobr><br />"
+
+#~ msgid "<nobr><b>The session was locked by %1</b></nobr><br />"
+#~ msgstr "<nobr><b>Die Sitzung wurde durch %1 gesperrt</b></nobr><br />"
+
+#~ msgid "Unl&ock"
+#~ msgstr "&Sperre aufheben"
+
+#~ msgid "Sw&itch User..."
+#~ msgstr "&Benutzer wechseln ..."
+
+#~ msgid "<b>Unlocking failed</b>"
+#~ msgstr "<b>Aufheben der Sperre fehlgeschlagen</b>"
+
+#~ msgid "<b>Warning: Caps Lock on</b>"
+#~ msgstr ""
+#~ "<b>Achtung: Die Feststelltaste ist eingerastet (durchgängige "
+#~ "Großschreibung)</b>"
+
+#~ msgid ""
+#~ "Cannot unlock the session because the authentication system failed to "
+#~ "work;\n"
+#~ "you must kill kscreenlocker (pid %1) manually."
+#~ msgstr ""
+#~ "Die Sitzungssperre kann nicht aufgehoben werden, weil das "
+#~ "zugrundeliegende Authentifizierungssystem nicht richtig arbeitet;\n"
+#~ "Sie müssen den Prozess kscreenlocker (Prozess-ID %1) von Hand beenden."
+
+#~ msgid "&Start New Session"
+#~ msgstr "&Neue Sitzung starten"
+
+#~ msgid ""
+#~ "You have chosen to open another desktop session instead of resuming the "
+#~ "current one.\n"
+#~ "The current session will be hidden and a new login screen will be "
+#~ "displayed.\n"
+#~ "An F-key is assigned to each session; F%1 is usually assigned to the "
+#~ "first session, F%2 to the second session and so on. You can switch "
+#~ "between sessions by pressing Ctrl, Alt and the appropriate F-key at the "
+#~ "same time. Additionally, the KDE Panel and Desktop menus have actions for "
+#~ "switching between sessions."
+#~ msgstr ""
+#~ "Sie möchten eine weitere Sitzung starten anstatt die aktuelle "
+#~ "fortzusetzen.\n"
+#~ "Die aktuelle Sitzung wird ausgeblendet und es erscheint eine neue Anmelde-"
+#~ "Aufforderung.\n"
+#~ "Jeder Sitzung ist eine Funktionstaste (F-Taste) zugewiesen; F%1 steht "
+#~ "normalerweise für die erste Sitzung, F%2 für die zweite, und so weiter. "
+#~ "Sie können zwischen den laufenden Sitzungen hin und her wechseln, indem "
+#~ "Sie gleichzeitig Strg, Alt und die F-Taste drücken. Zusätzlich finden Sie "
+#~ "in der KDE-Kontrollleiste und im Arbeitsflächen-Menü Funktionen, um auf "
+#~ "die verschiedenen Sitzungen zu wechseln."
+
+#~ msgid "&Do not ask again"
+#~ msgstr "Diese Nachfrage &nicht mehr anzeigen"
+
+#~ msgid "Session"
+#~ msgstr "Sitzung"
+
+#~ msgid "Location"
+#~ msgstr "Ort"
+
+#~ msgctxt "session"
+#~ msgid "&Activate"
+#~ msgstr "&Aktivieren"
+
+#~ msgid "Start &New Session"
+#~ msgstr "&Neue Sitzung starten"
+
+#~ msgid "Will not lock the session, as unlocking would be impossible:\n"
+#~ msgstr ""
+#~ "Diese Sitzung wird nicht gesperrt, weil ein Entsperren unmöglich wäre:\n"
+
+#~ msgid "Cannot start <i>kcheckpass</i>."
+#~ msgstr "<i>kcheckpass</i> kann nicht gestartet werden."
+
+#~ msgid ""
+#~ "<i>kcheckpass</i> is unable to operate. Possibly it is not setuid root."
+#~ msgstr ""
+#~ "<i>kcheckpass</i> funktioniert nicht richtig. Möglicherweise wird es "
+#~ "nicht als Systemverwalter (SUID root) ausgeführt."
+
+#~ msgid "No appropriate greeter plugin configured."
+#~ msgstr "Es ist kein passendes Begrüßungsmodul eingerichtet."
+
+#~ msgid "KDE Screen Locker"
+#~ msgstr "KDE-Bildschirmsperre"
+
+#~ msgid "Session Locker for KDE Workspace"
+#~ msgstr "Sitzungssperre für KDE"
+
+#~ msgid "Force session locking"
+#~ msgstr "Sitzungssperre erzwingen"
+
+#~ msgid "Only start screen saver"
+#~ msgstr "Nur den Bildschirmschoner starten"
+
+#~ msgid "Immediately show the unlock dialog"
+#~ msgstr "Den Dialog zum Entsperren direkt anzeigen"
+
+#~ msgid "Only use the blank screen saver"
+#~ msgstr "Nur den Bildschirm schwärzen"
+
+#~ msgid "start with plasma unlocked for configuring"
+#~ msgstr "Plasma zur Einrichtung ungesperrt starten."
+
+#~ msgid "Fork into the background after starting up"
+#~ msgstr "Nach dem Start in den Hintergrund verzweigen"
+
+#~ msgid "Log Out"
+#~ msgstr "Abmelden"
+
+#~ msgid "Log Out Without Confirmation"
+#~ msgstr "Ohne Rückfrage abmelden"
+
+#~ msgid "Halt Without Confirmation"
+#~ msgstr "Ohne Rückfrage herunterfahren und ausschalten"
+
+#~ msgid "Reboot Without Confirmation"
+#~ msgstr "Ohne Rückfrage neu starten"
+
+#~ msgid ""
+#~ "Could not log out properly.\n"
+#~ "The session manager cannot be contacted. You can try to force a shutdown "
+#~ "by pressing Ctrl+Alt+Backspace; note, however, that your current session "
+#~ "will not be saved with a forced shutdown."
+#~ msgstr ""
+#~ "Es ist keine korrekte Abmeldung möglich.\n"
+#~ "Es besteht keine Verbindung zum Sitzungsmanager. Sie können das Beenden "
+#~ "der Sitzung erzwingen, indem Sie Strg+Alt+Rücktaste drücken. Beachten Sie "
+#~ "jedoch, dass die Sitzung auf diese Weise nicht gespeichert wird."
+
+#~ msgid "KRunner Settings"
+#~ msgstr "Einstellungen zu KRunner"
+
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgid "KRunner Locker"
+#~ msgstr "KRunner-Sperrprogramm"
+
+#, fuzzy
+#~| msgid "KRunner Settings"
+#~ msgid "General Settings"
+#~ msgstr "Einstellungen zu KRunner"
+
+#~ msgid "Launch"
+#~ msgstr "Starten"
+
+#~ msgid "Click to execute the selected item above"
+#~ msgstr "Klicken Sie, um den oben ausgewählten Eintrag zu starten."
+
+#~ msgid "Show Options"
+#~ msgstr "Einstellungen anzeigen"
+
+#~ msgid "Runners"
+#~ msgstr "Starter"
+
+#, fuzzy
+#~| msgid "%1 (%2)"
+#~ msgid "%1 (%2, %3)"
+#~ msgstr "%1 (%2)"
+
+#~ msgid "Default: "
+#~ msgstr "Standard: "
+
+#~ msgid "Switch users"
+#~ msgstr "Benutzer wechseln"
+
+#~ msgid "No desktop sessions available"
+#~ msgstr "Es ist kein Sitzungstyp verfügbar"
+
+#~ msgid "Enter the name of an application, location or search term below."
+#~ msgstr "Geben Sie einen Programmnamen, Ort oder Suchbegriff ein."
+
+#, fuzzy
+#~| msgid "Hide Options"
+#~ msgid "Hide &Options"
+#~ msgstr "Einstellungen ausblenden"
+
+#~ msgid "Whitelist of allowed runners."
+#~ msgstr "Weiße Liste zugelassener Starter."
+
+#~ msgid "If set, this list defines which runners will be used at runtime."
+#~ msgstr ""
+#~ "Falls hier etwas eingetragen ist, bestimmt die Auflistung die zur "
+#~ "Laufzeit verwendeten Starter."
+
+#, fuzzy
+#~| msgid "Maximum number of query matching threads able run simultaneously."
+#~ msgid "Maximum number of threads to use for searches."
+#~ msgstr ""
+#~ "Maximale Anzahl gleichzeitig ausgeführter Suchvorgänge (Threads) für "
+#~ "Anfragen."
+
+#, fuzzy
+#~| msgid ""
+#~| "The number of threads used scales with the number of processors. This "
+#~| "entry allows you to define a hard upper limit independant of the number "
+#~| "of processors."
+#~ msgid ""
+#~ "The number of threads used scales with the number of processors. This "
+#~ "entry allows you to define a hard upper limit independent of the number "
+#~ "of processors."
+#~ msgstr ""
+#~ "Die maximale Anzahl der Such-Threads erhöht sich normalerweise "
+#~ "automatisch mit der Anzahl verfügbarer Prozessoren im System. Hier können "
+#~ "Sie eine von der Anzahl der Prozessoren unabhängige Obergrenze festlegen."
+
+#~ msgid "Show Taskmanager"
+#~ msgstr "Systemüberwachung anzeigen"
+
+#~ msgid "Run %1"
+#~ msgstr "%1 ausführen"
+
+#~ msgid "Application"
+#~ msgstr "Anwendung"
+
+#~ msgid "New Session"
+#~ msgstr "Neue Sitzung"
+
+#~ msgid ""
+#~ "<p>You have chosen to open another desktop session.<br />The current "
+#~ "session will be hidden and a new login screen will be displayed.<br />An "
+#~ "F-key is assigned to each session; F%1 is usually assigned to the first "
+#~ "session, F%2 to the second session and so on. You can switch between "
+#~ "sessions by pressing Ctrl, Alt and the appropriate F-key at the same "
+#~ "time. Additionally, the KDE Panel and Desktop menus have actions for "
+#~ "switching between sessions.</p>"
+#~ msgstr ""
+#~ "<p>Sie möchten eine weitere Sitzung starten anstatt die aktuelle "
+#~ "fortzusetzen.<br />Die aktuelle Sitzung wird ausgeblendet und es "
+#~ "erscheint eine neue Anmelde-Aufforderung.<br />Jeder Sitzung ist eine "
+#~ "Funktionstaste (F-Taste) zugewiesen; F%1 steht normalerweise für die "
+#~ "erste Sitzung, F%2 für die zweite, und so weiter. Sie können zwischen den "
+#~ "laufenden Sitzungen hin und her wechseln, indem Sie gleichzeitig Strg+Alt "
+#~ "und die F-Taste drücken. Zusätzlich finden Sie in der KDE-Kontrollleiste "
+#~ "und im Arbeitsflächen-Menü Funktionen, um auf die verschiedenen Sitzungen "
+#~ "zu wechseln.</p>"
+
+#~ msgid "Warning - New Session"
+#~ msgstr "Achtung - Neue Sitzung"
+
+#~ msgid ""
+#~ "<qt>Select whether realtime scheduling should be enabled for the "
+#~ "application. The scheduler governs which process will run and which will "
+#~ "have to wait. Two schedulers are available:\n"
+#~ "<ul>\n"
+#~ "<li><em>Normal:</em> This is the standard, timesharing scheduler. It will "
+#~ "divide fairly the available processing time between all processes.</li>\n"
+#~ "<li><em>Realtime:</em>This scheduler will run your application "
+#~ "uninterrupted until it gives up the processor. This can be dangerous. An "
+#~ "application that does not give up the processor might hang the system. "
+#~ "You need root's password to use the scheduler.</li>\n"
+#~ "</ul>\n"
+#~ "</qt>"
+#~ msgstr ""
+#~ "<qt>Wählen Sie, ob für diese Anwendung Echtzeit-Priorität verwendet "
+#~ "werden soll. Der Planer bestimmt, welche Prozesse ausgeführt werden und "
+#~ "welche warten müssen. Es sind zwei Planer verfügbar:\n"
+#~ "<ul>\n"
+#~ "<li><em>Normal:</em> Dies ist der Standard-Planer, der mit Zeitscheiben "
+#~ "arbeitet. Die verfügbare Prozessorzeit wird gleichmäßig auf alle Prozesse "
+#~ "verteilt.</li>\n"
+#~ "<li><em>Echtzeit:</em> Der Echtzeit-Planer führt die Anwendung ohne "
+#~ "Unterbrechung aus, bis sie den Prozessor selbstständig wieder für andere "
+#~ "Anwendungen frei gibt. Dies kann gefährlich sein; falls die Anwendung den "
+#~ "Prozessor nicht frei gibt, könnte das System hängen bleiben. Um den "
+#~ "Echtzeit-Planer verwenden zu können, benötigen Sie das Systemverwalter-"
+#~ "Passwort.</li>\n"
+#~ "</ul>\n"
+#~ "</qt>"
+
+#~ msgid "Run with realtime &scheduling"
+#~ msgstr "&Echtzeit-Ablaufplanung verwenden"
+
+#~ msgid "Enter the user you want to run the application as here."
+#~ msgstr ""
+#~ "Geben Sie hier den Benutzernamen an, unter dem das Programm ausgeführt "
+#~ "werden soll."
+
+#~ msgid "User&name:"
+#~ msgstr "&Benutzername:"
+
+#~ msgid "Enter the password here for the user you specified above."
+#~ msgstr "Tragen Sie hier das Passwort für den oben genannten Benutzer ein."
+
+#~ msgid "Pass&word:"
+#~ msgstr "&Passwort:"
+
+#~ msgid ""
+#~ "Check this option if the application you want to run is a text mode "
+#~ "application. The application will then be run in a terminal emulator "
+#~ "window."
+#~ msgstr ""
+#~ "Aktivieren Sie diese Einstellung, falls das zu startende Programm im "
+#~ "Textmodus ausgeführt wird. Dadurch wird das Programm in einem "
+#~ "Terminalfenster ausgeführt."
+
+#~ msgid "Run in &terminal window"
+#~ msgstr "Im &Terminal ausführen"
+
+#~ msgid ""
+#~ "The priority that the command will be run with can be set here. From left "
+#~ "to right, it goes from low to high. The center position is the default "
+#~ "value. For priorities higher than the default, you will need to provide "
+#~ "the root password."
+#~ msgstr ""
+#~ "Hier kann die Priorität festgelegt werden, mit der der Befehl ausgeführt "
+#~ "wird. Der Regler bestimmt die Priorität von niedrig (links) nach hoch "
+#~ "(rechts). Die mittlere Position ist die Voreinstellung. Für eine höhere "
+#~ "Priorität als der Voreinstellung benötigen Sie das Systemverwalter-"
+#~ "Passwort."
+
+#~ msgid "&Priority:"
+#~ msgstr "&Priorität:"
+
+#~ msgid ""
+#~ "Check this option if you want to run the application with a different "
+#~ "priority. A higher priority tells the operating system to give more "
+#~ "processing time to your application."
+#~ msgstr ""
+#~ "Aktivieren Sie diese Einstellung, um die Anwendung mit anderer Priorität "
+#~ "auszuführen. Eine höhere Priorität bedeutet, dass der Anwendung mehr "
+#~ "Prozessorzeit zugewiesen wird."
+
+#~ msgid "Run with a &different priority"
+#~ msgstr "Mit anderer &Priorität starten"
+
+#~ msgid "Low"
+#~ msgstr "Niedrig"
+
+#~ msgid "High"
+#~ msgstr "Hoch"
+
+#~ msgid ""
+#~ "Check this option if you want to run the application with a different "
+#~ "user id. Every process has a user id associated with it. This id code "
+#~ "determines file access and other permissions. The password of the user is "
+#~ "required to do this."
+#~ msgstr ""
+#~ "Aktivieren Sie diese Einstellung, falls Sie das Programm unter einer "
+#~ "anderen Benutzerkennung starten möchten. Jeder Prozess besitzt eine "
+#~ "solche Kennung; über sie wird unter anderem geregelt, welche Datei-"
+#~ "Zugriffsrechte zur Verfügung stehen. Sie benötigen das Passwort des "
+#~ "jeweiligen Benutzers."
+
+#~ msgid "Run as a different &user"
+#~ msgstr "Als anderer &Benutzer ausführen"
+
+#~ msgid "Disable screen saver during presentation or TV"
+#~ msgstr "Bildschirmschoner beim Fernsehen deaktivieren"
+
+#~ msgid ""
+#~ "Enable this option if you want to disable the screen saver while watching "
+#~ "TV or movies."
+#~ msgstr ""
+#~ "Wenn diese Einstellung aktiviert ist, wird der Bildschirmschoner "
+#~ "deaktiviert, während Sie Fernsehen."
+
+#~ msgid "Calculator"
+#~ msgstr "Taschenrechner"
+
+#~ msgid "Search"
+#~ msgstr "Suchen"
+
+#~ msgid "search for %1"
+#~ msgstr "suchen nach %1"

@@ -1,0 +1,1081 @@
+# Frank Schütte <F.Schuette@t-online.de>, 2003.
+# Stephan Johach <hunsum@gmx.de>, 2005.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005.
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2009, 2011, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kppp_kppp-faq\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:14+0000\n"
+"PO-Revision-Date: 2013-07-08 15:26+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: kppp-faq.docbook:2
+#, no-c-format
+msgid "Questions and Answers"
+msgstr "Fragen und Antworten"
+
+#. Tag: chapter
+#: kppp-faq.docbook:2
+#, no-c-format
+msgid "&reporting.bugs;"
+msgstr "&reporting.bugs;"
+
+#. Tag: title
+#: kppp-faq.docbook:9
+#, no-c-format
+msgid "Questions about Dialing"
+msgstr "Fragen zur Einwahl"
+
+#. Tag: para
+#: kppp-faq.docbook:11
+#, no-c-format
+msgid ""
+"I can't get &kppp; to work. &kppp; tells me <application>pppd</application> "
+"has died or that a timeout has expired. What's going on?"
+msgstr ""
+"Ich kann &kppp; nicht zum laufen bringen. &kppp; erzählt mir, dass "
+"<application>pppd</application> beendet wurde oder dass eine "
+"Zeitüberschreitung eingetreten ist!"
+
+#. Tag: para
+#: kppp-faq.docbook:15
+#, no-c-format
+msgid ""
+"Did you read this manual carefully? Here are once more the most common "
+"pitfalls:"
+msgstr ""
+"Haben Sie dieses Handbuch sorgfältig gelesen? Hier sind nochmal die "
+"häufigsten Fallen:"
+
+#. Tag: para
+#: kppp-faq.docbook:19
+#, no-c-format
+msgid ""
+"Click on the <guibutton>Details</guibutton> button. &kppp; will you give an "
+"excerpt from the <acronym>PPP</acronym> log messages (may not work on non-"
+"&Linux; systems, or even on some &Linux; distributions). The log will help "
+"you to track down the bug."
+msgstr ""
+"Klicken Sie auf den <guibutton>Details</guibutton>-Knopf. &kppp; zeigt Ihnen "
+"dann einen Auszug aus dem <acronym>PPP</acronym>-Protokoll (funktioniert "
+"evtl. nur auf &Linux;-System und nicht mit allen Distributionen). Diese "
+"Meldungen können Ihnen helfen, den Fehler zu finden."
+
+#. Tag: para
+#: kppp-faq.docbook:24
+#, no-c-format
+msgid ""
+"Make sure that <application>pppd</application> is the actual "
+"<application>pppd</application> binary not a script"
+msgstr ""
+"Stellen Sie sicher, dass <application>pppd</application> wirklich das "
+"<application>pppd</application>-Programm ist, und kein Skript!"
+
+#. Tag: para
+#: kppp-faq.docbook:27
+#, no-c-format
+msgid ""
+"Make sure that <application>pppd</application> is setuid <systemitem>root</"
+"systemitem>. You may set this mode by issuing <userinput><command>chmod</"
+"command> <option>u+s pppd</option></userinput> as <systemitem>root</"
+"systemitem>."
+msgstr ""
+"Das Programm <application>pppd</application> muss als setuid "
+"<systemitem>root</systemitem> ausgeführt werden. Diesen Modus kann man als "
+"<systemitem>root</systemitem> mit dem Befehl <userinput><command>chmod</"
+"command> <option>u+s pppd</option></userinput> setzen."
+
+#. Tag: para
+#: kppp-faq.docbook:32
+#, no-c-format
+msgid ""
+"Make sure that your <filename>/etc/ppp/options</filename> file exists and "
+"that it doesn't contain any conflicting entries. If in doubt: Leave this "
+"file empty."
+msgstr ""
+"Stellen Sie sicher, das die Datei <literal>/etc/ppp/options</literal> "
+"existiert und keine widersprüchlichen Einträge enthält. Falls Sie sich nicht "
+"sicher sind, lassen Sie diese Datei leer."
+
+#. Tag: para
+#: kppp-faq.docbook:36
+#, no-c-format
+msgid ""
+"Make sure that you <emphasis>don't</emphasis> use the option <option>lock</"
+"option> as an argument for <application>pppd</application> (&kppp; is "
+"already taking care of device locking)."
+msgstr ""
+"Stellen Sie sicher, dass Sie <emphasis>NICHT</emphasis> den Parameter "
+"<option>lock</option> für <application>pppd</application> angegeben haben "
+"(&kppp; kümmert sich bereit um die Gerätesperrung)!"
+
+#. Tag: para
+#: kppp-faq.docbook:40
+#, no-c-format
+msgid ""
+"Remove the <option>lock</option> option from <emphasis>both</emphasis> your "
+"<filename>/etc/ppp/options</filename> <emphasis>and</emphasis> "
+"<filename>&tilde;/.ppprc</filename> files!"
+msgstr ""
+"Entfernen Sie den ``lock''-Parameter aus den Dateien <literal>/etc/ppp/"
+"options</literal> und <literal>&tilde;/.ppprc</literal>!"
+
+#. Tag: para
+#: kppp-faq.docbook:44
+#, no-c-format
+msgid ""
+"Using the symbolic link <filename class=\"symlink\">/dev/modem</filename> "
+"may cause some conflicts. Eliminate this source of trouble by using the real "
+"device, &ie; <filename>/dev/cuaX</filename> or <filename>/dev/ttySX</"
+"filename>."
+msgstr ""
+"Wenn Sie den symbolischen Link <literal>/dev/modem</literal> benutzen, kann "
+"das zu Konflikten führen. Verhindern Sie diese Art Ärger, indem Sie das "
+"reale Gerät verwenden, &eg; <literal>/dev/cuaX</literal> oder <literal>/dev/"
+"ttySX</literal>. Hinweis: COM1 ist ttyS0, COM2 ist ttyS1 &etc;"
+
+#. Tag: para
+#: kppp-faq.docbook:48
+#, no-c-format
+msgid ""
+"<hardware>COM1</hardware> equals <filename>ttyS0</filename>, <hardware>COM2</"
+"hardware> is <filename>ttyS1</filename> and so on."
+msgstr ""
+"<hardware>COM1</hardware> entspricht <filename>ttyS0</filename>, "
+"<hardware>COM2</hardware> entspricht <filename>ttyS1</filename> und so "
+"weiter."
+
+#. Tag: para
+#: kppp-faq.docbook:52
+#, no-c-format
+msgid ""
+"Make sure you set the right permission. In case of trouble you might want to "
+"run it as root first and then later, when everything is working fine give it "
+"less harmful permission if you can not afford to run &kppp; setuid "
+"<systemitem>root</systemitem>. The proper way to proceed would probably be "
+"creating a <systemitem>modem</systemitem> group."
+msgstr ""
+"Stellen Sie sicher, dass Sie die richtigen Berechtigungen eingestellt haben. "
+"Im Fall von Problemen sollten Sie es vielleicht zuerst als root ausführen, "
+"und dann, wenn alles gut funktioniert, weniger gefährliche Berechtigungen "
+"nehmen, wenn Sie es sich nicht leisten können &kppp; mit <systemitem>root</"
+"systemitem>-Rechten laufen zu lassen. Die richtige Vorgehensweise wäre "
+"vermutlich die Erzeugung einer eigenen <systemitem>modem</systemitem>-Gruppe."
+
+#. Tag: para
+#: kppp-faq.docbook:59
+#, no-c-format
+msgid ""
+"You might be launching <application>pppd</application> too early, &ie; "
+"before the remote server is ready to negotiate a <acronym>PPP</acronym> "
+"connection. If you are using a login script, you should use the built-in "
+"terminal to verify your login procedure. Some providers will require you to "
+"issue a simple <command>Send</command> or <command>Send ppp</command> to "
+"launch <acronym>PPP</acronym>. Some users even reported, that they had to "
+"append <command>Pause 1</command> or <command>Pause 2</command> to their "
+"script to solve timing conflicts."
+msgstr ""
+"Eventuell starten Sie <application>pppd</application> zu früh, &eg; bevor "
+"der entfernte Server bereit ist, eine <acronym>PPP</acronym>-Verbindung "
+"aufzubauen. Wenn Sie ein Anmeldeskript benutzen, sollten Sie das eingebaute "
+"Terminal benutzen, um Ihre Anmelde-Prozedur zu überprüfen. Manche Provider "
+"erwarten von Ihnen ein einfaches <command>Send</command> oder <command>Send "
+"ppp</command>, um <acronym>PPP</acronym> zu starten. Einige Benutzer "
+"berichteten, dass Sie <command>Pause 1</command> oder <command>Pause 2</"
+"command> an Ihr Skript anhängen mussten, um Timing-Probleme zu lösen."
+
+#. Tag: para
+#: kppp-faq.docbook:70
+#, no-c-format
+msgid ""
+"If nothing helps, you might obtain some debugging info from your systems log "
+"by issuing:"
+msgstr ""
+"Wenn gar nichts hilft, sollten Sie evtl. Debug-Informationen aus Ihrem "
+"Systemprotokoll erhalten, indem Sie folgendes eingeben:"
+
+#. Tag: screen
+#: kppp-faq.docbook:73
+#, no-c-format
+msgid ""
+"<prompt>#</prompt> <userinput><command>tail</command> <filename>/var/log/"
+"messages</filename></userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput><command>tail</command> <filename>/var/log/"
+"messages</filename></userinput>"
+
+#. Tag: para
+#: kppp-faq.docbook:79
+#, no-c-format
+msgid "pppd died - The remote system is required to authenticate itself ..."
+msgstr ""
+"pppd abgestürzt - Das entfernte System muss sich selbst identifizieren ..."
+
+#. Tag: para
+#: kppp-faq.docbook:82
+#, no-c-format
+msgid "Typical error message in system log:"
+msgstr "Eine typische Fehlermeldung in der Systemprotokolldatei:"
+
+#. Tag: screen
+#: kppp-faq.docbook:83
+#, no-c-format
+msgid ""
+"pppd[699]: The remote system is required to authenticate itself\n"
+"pppd[699]: but I couldn't find any suitable secret (password) for it to use "
+"to do so.\n"
+"pppd[699]: (None of the available passwords would let it use an IP address.)"
+msgstr ""
+"pppd[699]: The remote system is required to authenticate itself\n"
+"pppd[699]: but I couldn't find any suitable secret (password) for it to use "
+"to do so.\n"
+"pppd[699]: (None of the available passwords would let it use an IP address.)"
+
+#. Tag: para
+#: kppp-faq.docbook:84
+#, no-c-format
+msgid "As far as I can tell there are two causes for this problem:"
+msgstr "Für dieses Problem gibt es nach der Erfahrung zwei mögliche Gründe:"
+
+#. Tag: para
+#: kppp-faq.docbook:86
+#, no-c-format
+msgid ""
+"<filename>/etc/ppp/options</filename> contains the <option>auth</option> "
+"option. Simply put a <prompt>#</prompt> comment in front and try again."
+msgstr ""
+"Die Datei <filename>/etc/ppp/options</filename> enthält die Option "
+"<option>auth</option>. Das lässt sich durch ein <prompt>#</prompt>-"
+"Kommentarzeilen vor der fraglichen Zeile beheben."
+
+#. Tag: para
+#: kppp-faq.docbook:88
+#, no-c-format
+msgid ""
+"Your system already has a default route. Have you set up a local network? In "
+"this case recent versions of pppd will behave as if <option>auth</option> "
+"had been specified. To override this you may add <option>noauth</option> to "
+"the pppd arguments in kppp' setup dialog. Alternatively you could take down "
+"the local network prior to dialing in. I'd be thankful if someone could "
+"provide instructions on how to peacefully combine the two network "
+"connections."
+msgstr ""
+"Das System hat bereits eine <quote>default route</quote>. Befinden Sie sich "
+"in einem lokalen Netzwerk? In diesem Fall verhalten sich aktuelle Versionen "
+"von pppd wie bei der Option <option>auth</option>. Das lässt sich beheben, "
+"indem man explizit <option>noauth</option> im Einrichtungsdialog von kppp "
+"einträgt. Alternativ kann man das lokale Netzwerk auch deaktivieren, bevor "
+"man die Internetverbindung herstellt. Es wird immer noch nach einer "
+"einfachen Möglichkeit der Kombination eines lokalen Netzwerks mit dem "
+"Internet gesucht."
+
+#. Tag: para
+#: kppp-faq.docbook:101
+#, no-c-format
+msgid "pppd dies with 2.4.x Linux kernel"
+msgstr "pppd stürzt mit der Kernelversion 2.4.x ab"
+
+#. Tag: para
+#: kppp-faq.docbook:103
+#, no-c-format
+msgid "Typical error messages in the system log:"
+msgstr "Eine typische Fehlermeldung im Systemprotokoll lautet:"
+
+#. Tag: screen
+#: kppp-faq.docbook:105
+#, no-c-format
+msgid ""
+"pppd[1182]: pppd 2.3.11 started by user, uid 500 \n"
+"pppd[1182]: ioctl(PPPIOCGFLAGS): Invalid argument \n"
+"pppd[1182]: tcsetattr: Invalid argument \n"
+"pppd[1182]: Exit."
+msgstr ""
+"pppd[1182]: pppd 2.3.11 started by user, uid 500 \n"
+"pppd[1182]: ioctl(PPPIOCGFLAGS): Invalid argument \n"
+"pppd[1182]: tcsetattr: Invalid argument \n"
+"pppd[1182]: Exit."
+
+#. Tag: para
+#: kppp-faq.docbook:106
+#, no-c-format
+msgid ""
+"Install pppd 2.4.0b1 or better. See <filename>Documentation/Changes</"
+"filename> in the kernel sources for more info."
+msgstr ""
+"Installieren Sie pppd 2.4.0b1 oder aktueller. Siehe auch in "
+"<filename>Documentation/Changes</filename> in den Quelltexten des Kernels "
+"für weitere Informationen."
+
+#. Tag: para
+#: kppp-faq.docbook:113
+#, no-c-format
+msgid ""
+"Why does &kppp; tell me <errorname>Unable to open the modem</errorname>?"
+msgstr ""
+"Warum gibt &kppp; die Fehlermeldung <errorname>Das Modem kann nicht geöffnet "
+"werden (Sorry, can't open the modem)</errorname>?"
+
+#. Tag: para
+#: kppp-faq.docbook:116
+#, no-c-format
+msgid ""
+"This means that &kppp; doesn't have permissions to open the modem device or "
+"that you selected a modem device on the <guilabel>Modem</guilabel> Tab "
+"Dialog that is not valid. First make sure you selected the right modem "
+"device. Once you are sure you have selected the right modem device, you must "
+"give &kppp; the right permission to access the modem device and to be able "
+"to modify <filename>/etc/resolv.conf</filename> in case you want &kppp; to "
+"configure <acronym>DNS</acronym> correctly for you. If you can afford to run "
+"&kppp; setuid <systemitem>root</systemitem> this would solve all access "
+"problems for you, if not you will have to figure out what the right "
+"permissions are for your purposes. In order to give &kppp; setuid "
+"<systemitem>root</systemitem> permissions do the following:"
+msgstr ""
+"Das bedeutet, dass &kppp; keine Berechtigung hat, das Modemgerät zu öffnen, "
+"oder dass Sie ein ungültiges Modemgerät auf der <guilabel>Modem</guilabel>-"
+"Karteikarte gewählt haben. Stellen Sie zunächst sicher, dass Sie das "
+"richtige Modemgerät gewählt haben. Wenn Sie sicher sind, dass dies der Fall "
+"ist, müssen Sie &kppp; die richtige Berechtigung geben, um auf das "
+"Modemgerät zugreifen zu können, und in der Lage zu sein, <filename>/etc/"
+"resolv.conf</filename> zu ändern, im Fall, dass Sie möchten, dass &kppp; den "
+"<acronym>DNS</acronym> richtig für Sie einstellt. Falls Sie in der Lage "
+"sind, &kppp; als setuid <systemitem>root</systemitem> auszuführen, würde das "
+"alle Zugriffsprobleme für Sie lösen, wenn nicht, müssen Sie herausfinden, "
+"was die richtigen Berechtigungen für Ihre Zwecke sind. Um &kppp; setuid "
+"<systemitem>root</systemitem>-Berechtigung zu geben, machen Sie Folgendes:"
+
+#. Tag: screen
+#: kppp-faq.docbook:128
+#, no-c-format
+msgid ""
+"<prompt>%</prompt> <userinput><command>su</command> <option>root</option></"
+"userinput>\n"
+"<prompt>#</prompt> <userinput><command>chown</command> <option>root:root "
+"&dollar;KDEDIR/bin/kppp</option></userinput>\n"
+"<prompt>#</prompt> <userinput><command>chmod</command> <option>+s &dollar;"
+"KDEDIR/bin/kppp</option></userinput>\n"
+"<prompt>#</prompt> <userinput><command>exit</command></userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput><command>su</command> <option>root</option></"
+"userinput>\n"
+"<prompt>#</prompt> <userinput><command>chown</command> <option>root:root "
+"&dollar;KDEDIR/bin/kppp</option></userinput>\n"
+"<prompt>#</prompt> <userinput><command>chmod</command> <option>+s &dollar;"
+"KDEDIR/bin/kppp</option></userinput>\n"
+"<prompt>#</prompt> <userinput><command>exit</command></userinput>"
+
+#. Tag: para
+#: kppp-faq.docbook:133
+#, no-c-format
+msgid "Why does &kppp; tell me it can't create a modem lock file?"
+msgstr "&kppp; sagt mir, dass es keine Modemsperrung erzeugen kann."
+
+#. Tag: para
+#: kppp-faq.docbook:136
+#, no-c-format
+msgid ""
+"This in most instances means that you have installed &kppp; without setuid "
+"bit on while you, the person executing &kppp;, doesn't have write access to "
+"the lock file folder which by default is <filename class=\"directory\">/var/"
+"lock</filename>. This for example is the case on &RedHat; systems. Check the "
+"modem dialog for the precise location you have chosen. The solution is easy "
+"-- either run &kppp; setuid if you can afford to, or give regular users "
+"write access to <filename class=\"directory\">/var/lock</filename> or create "
+"a modem group that will have access to the <filename class=\"directory\">/"
+"var/lock</filename> file."
+msgstr ""
+"In den meisten Fällen bedeutet das, dass Sie &kppp; mit gesetztem SETUID-Bit "
+"installiert haben, während Sie, die Person, die &kppp; ausführt, keine "
+"Schreibberechtigung für den Sperrdateiordner haben, das standardmäßig "
+"<literal>/var/lock</literal> ist. Das ist zum Beispiel der Fall auf RedHat-"
+"Systemen. Überprüfen Sie den Modem-Dialog nach der genauen Position der "
+"Sperrdatei. Die Lösung ist einfach, entweder &kppp; SETUID laufen zu lassen, "
+"falls Sie können, oder normalen Benutzern Schreibzugriff auf <literal>/var/"
+"lock</literal> zu gewähren oder eine modem-Gruppe zu erstellen, die Zugriff "
+"auf die <literal>/var/lock</literal>-Datei hat."
+
+#. Tag: para
+#: kppp-faq.docbook:148
+#, no-c-format
+msgid "Why is &kppp; installed with the setuid bit on?"
+msgstr "Warum wird &kppp; mit gesetztem SETUID-Bit installiert?"
+
+#. Tag: para
+#: kppp-faq.docbook:151
+#, no-c-format
+msgid ""
+"There is no need for the setuid bit, if you know a bit of &UNIX; systems "
+"administration. Simply create a <systemitem>modem</systemitem> group, add "
+"all users that you want to give access to the modem to that group and make "
+"the modem device read/writable for that group. Also if you want "
+"<acronym>DNS</acronym> configuration to work with &kppp;, then <filename>/"
+"etc/resolv.conf</filename> must be read/writable by the members of that "
+"group. The same counts for <filename>/etc/ppp/pap-secrets</filename> and "
+"<filename>/etc/ppp/chap-secrets</filename> if you want to use the built-in "
+"<acronym>PAP</acronym> or <acronym>CHAP</acronym> support, respectively."
+msgstr ""
+"Das SETUID-Bit muss nicht gesetzt sein, wenn Sie sich ein bisschen mit Unix-"
+"Systemadministration auskennen. Erstellen Sie einfach eine Modemgruppe, "
+"fügen Sie alle Benutzer, denen Sie Zugriff auf das Modem gewähren wollen, "
+"dieser Gruppe hinzu und machen Sie das Modemgerät les- und schreibbar für "
+"diese Gruppe. Wenn Sie auch DNS-Konfiguration mit &kppp; benutzen wollen, "
+"muss <literal>/etc/resolv.conf</literal> les- und schreibbar von den "
+"Mitgliedern dieser Gruppe sein. Das gleiche gilt für <literal>/etc/ppp/pap-"
+"secrets</literal> und <literal>/etc/ppp/chap-secrets</literal>, wenn Sie die "
+"eingebaute PAP- und CHAP-Unterstützung benutzen wollen."
+
+#. Tag: para
+#: kppp-faq.docbook:161
+#, no-c-format
+msgid ""
+"The &kppp; team has lately done a lot of work to make &kppp; setuid-safe. "
+"But it's up to you to decide if you install and how you install it."
+msgstr ""
+"Das &kppp;-Team hat in letzter Zeit sehr viel daran gearbeitet, um &kppp; "
+"SETUID-Sicher zu machen. Aber es liegt an Ihnen, ob und wie Sie es "
+"installieren."
+
+#. Tag: para
+#: kppp-faq.docbook:165
+#, no-c-format
+msgid ""
+"You might also want to read the <link linkend=\"security\">Security</link> "
+"section."
+msgstr ""
+"Eventuell wollen Sie dazu auch das Kapitel <link linkend=\"security\">&kppp; "
+"und die Sicherheit</link> lesen."
+
+#. Tag: para
+#: kppp-faq.docbook:170
+#, no-c-format
+msgid ""
+"What do I do when &kppp; just sits there and waits with the message: "
+"<computeroutput>Expecting OK</computeroutput>"
+msgstr ""
+"Was mache ich, wenn &kppp; nichts tut und nur mit der Meldung "
+"<computeroutput>OK erwartet (Expecting OK)</computeroutput> wartet?"
+
+#. Tag: para
+#: kppp-faq.docbook:173
+#, no-c-format
+msgid "Have you played with the CR/LF setting? Try CR, LF or CR/LF."
+msgstr ""
+"Haben Sie an der CR/LF-Einstellung herumgespielt? Probieren Sie CR, LF oder "
+"CR/LF."
+
+#. Tag: para
+#: kppp-faq.docbook:176
+#, no-c-format
+msgid ""
+"Alternatively, your modem might need some time to respond to its "
+"initialization. Open the <guilabel>Modem Commands</guilabel> dialog on the "
+"<guilabel>Modem</guilabel> tab and adjust the <guilabel>Pre-Init</guilabel> "
+"and <guilabel>Post-Init</guilabel> delays. See if you are successful when "
+"drastically increasing their values, and then do some fine-tuning later."
+msgstr ""
+"Ihr Modem braucht vielleicht einige Zeit, um auf seine Initialisierung zu "
+"antworten. Öffnen Sie den Dialog <guilabel>Modembefehle</guilabel> auf der "
+"Karteikarte <guilabel>Modem</guilabel> und stellen Sie die Verzögerungen "
+"<guilabel>Pre-Init</guilabel> und <guilabel>Post-Init</guilabel> ein. "
+"Probieren Sie, ob Sie erfolgreich sind, wenn Sie die Werte drastisch senken "
+"und stellen Sie sie dann später genauer ein."
+
+#. Tag: para
+#: kppp-faq.docbook:185
+#, no-c-format
+msgid "The connection works fine, but I can't start any applications!"
+msgstr ""
+"Der Verbindungsaufbau funktioniert gut, aber ich kann keine Programme "
+"starten."
+
+#. Tag: para
+#: kppp-faq.docbook:188
+#, no-c-format
+msgid ""
+"You have probably selected the <link linkend=\"auto-configure-hostname"
+"\">Auto Configure Host Name</link> option, and the X Server has problems "
+"connecting to your newly named host. If you really need this option (and "
+"chances are you really don't), you are unfortunately on your own to set up "
+"the appropriate authorizations. Issuing <userinput><command>xhost</command> "
+"<option>+</option></userinput> before starting the connection would do the "
+"job, but be warned of the security risks involved, since this effectively "
+"gives everyone else access to your X Server."
+msgstr ""
+"Sie haben vielleicht die Option <quote><link linkend=\"auto-configure-"
+"hostname\">Konfiguriere Hostname automatisch von dieser IP</link></quote> "
+"aktiviert und der X-Server hat Probleme zum neu eingestellten Hostnamen zu "
+"verbinden. Falls Sie diese Option wirklich benötigen (wahrscheinlich eher "
+"nicht), müssen Sie auf eigene Faust die nötigen Authorisationen einstellen. "
+"Eingabe von <userinput><command>xhost</command> <option>+</option></"
+"userinput> löst das Problem, aber seien Sie gewarnt vor Sicherheitsrisiken, "
+"die sich daraus ergeben, da dann jeder Zugang zu Ihrem X-Server hat."
+
+#. Tag: para
+#: kppp-faq.docbook:200
+#, no-c-format
+msgid ""
+"&kppp; reports a successful connection, but &konqueror; just says "
+"<errorname>Unknown host <replaceable>hostname</replaceable></errorname>, and "
+"&Netscape; reports <errorname>The server does not have a DNS entry</"
+"errorname>."
+msgstr ""
+"&kppp; meldet eine erfolgreiche Verbindung, aber &konqueror; gibt nur die "
+"Meldung <errorname>Unbekannter Rechner (Unknown host) "
+"<replaceable>Rechnername</replaceable></errorname>; &Netscape; meldet "
+"<errorname>Der Server hat keinen DNS-Eintrag (The server does not have a DNS "
+"entry)</errorname>."
+
+#. Tag: para
+#: kppp-faq.docbook:205
+#, no-c-format
+msgid ""
+"Try pinging another server by its <acronym>IP</acronym> number, &eg; "
+"<userinput><command>ping</command> <option>195.0.254.76</option></"
+"userinput>. If that works, you could try the following:"
+msgstr ""
+"Versuchen Sie, mit ping einen anderen Server über seine <acronym>IP</"
+"acronym>-Adresse, zu erreichen, <option>ping 195.0.254.76</option>. Wenn das "
+"funktioniert, sollten Sie das Folgende versuchen:"
+
+#. Tag: para
+#: kppp-faq.docbook:211
+#, no-c-format
+msgid ""
+"Check if you have provided &kppp; with at least one <acronym>DNS</acronym> "
+"address."
+msgstr ""
+"Prüfen Sie, ob Sie für &kppp; mindestens eine <acronym>DNS</acronym>-Adresse "
+"angegeben haben."
+
+#. Tag: para
+#: kppp-faq.docbook:214
+#, no-c-format
+msgid ""
+"Check the contents of <filename>/etc/host.conf</filename>. There should be a "
+"line saying something similar to <literal>order hosts, bind</literal>. The "
+"<option>bind</option> keyword advises the resolver library to include a name "
+"server query when performing an address lookup. If such a line is not there, "
+"try adding it."
+msgstr ""
+"den Inhalt von <literal>/etc/host.conf</literal> prüfen. Es sollte eine "
+"Zeile vorhanden sein, in der etwas ähnliches wie <literal>order hosts, bind</"
+"literal> steht. Der <literal>bind</literal>-Schlüsselbegriff sagt der "
+"resolver-Bibliothek, dass sie einen Nameserver einbinden soll, wenn Sie eine "
+"Adresse sucht."
+
+#. Tag: para
+#: kppp-faq.docbook:223
+#, no-c-format
+msgid ""
+"How do I make &kppp; send a <keysym>\\n</keysym> or a <keysym>\\r</keysym>"
+msgstr ""
+"Wie kann man über &kppp; ein <keysym>\\n</keysym> oder ein <keysym>\\r</"
+"keysym> senden?"
+
+#. Tag: para
+#: kppp-faq.docbook:226
+#, no-c-format
+msgid "Just send an empty string such as in the following script:"
+msgstr ""
+"Schicken Sie einfach eine leere Zeichenfolge, so wie im folgenden Skript:"
+
+#. Tag: screen
+#: kppp-faq.docbook:229
+#, no-c-format
+msgid ""
+"Send                            # send an empty string\n"
+"Expect           ID:            \n"
+"Send             itsme\n"
+"Expect           word:\n"
+"Send             forgot\n"
+"Expect           granted\n"
+"Send             ppp"
+msgstr ""
+"Send                   # eine leere Zeichenfolge senden\n"
+"Expect      ID:          \n"
+"Send        itsme\n"
+"Expect      word:\n"
+"Send        forgot\n"
+"Expect      granted\n"
+"Send        ppp"
+
+#. Tag: para
+#: kppp-faq.docbook:235
+#, no-c-format
+msgid ""
+"How can I stop &kppp; complaining: <errorname>Can't create lock file</"
+"errorname>?"
+msgstr ""
+"Wie kann man die Fehlermeldung <errorname>Kann Sperrdatei nicht erzeugen "
+"(Can't create lock file</errorname> von &kppp; beseitigen?"
+
+#. Tag: para
+#: kppp-faq.docbook:237
+#, no-c-format
+msgid ""
+"This happens because you don't have permissions to create a lock file. If "
+"you chose to use a lock file, you must have write permission to the folder "
+"(typically <filename class=\"directory\">/var/lock</filename>). This is of "
+"course no problem if you have given &kppp; setuid permissions. Please read "
+"the section on <link linkend=\"lock-files\">Lock files</link>."
+msgstr ""
+"Das bedeutet, dass Sie keine Berechtigung haben, eine Sperrdatei zu "
+"erzeugen. Wenn Sie eine Sperrdatei benutzen wollen, müssen Sie Schreibrechte "
+"in dem Ordner haben, indem die Datei erzeugt werden soll (typischerweise /"
+"var/lock). Das ist natürlich kein Problem, wenn Sie &kppp; SETUID-"
+"Berechtigung gegeben haben. Lesen Sie bitte den Abschnitt über die <link "
+"linkend=\"lock-files\">Modem-Sperrdatei</link>."
+
+#. Tag: para
+#: kppp-faq.docbook:245
+#, no-c-format
+msgid "Why is my modem making so much noise when dialing?"
+msgstr "Warum macht mein Modem beim Wählen großen Lärm?"
+
+#. Tag: para
+#: kppp-faq.docbook:248
+#, no-c-format
+msgid ""
+"Click on <guibutton>Setup</guibutton>, then <guilabel>Modem</guilabel>. You "
+"can control the modem volume here in three steps: Off, medium and high. For "
+"most modems, medium or high result in the same volume. If changing this "
+"setting doesn't work, make sure the correct settings for your modem are "
+"specified in <guibutton>Setup</guibutton>, <guilabel>Modem</guilabel>, "
+"<guibutton>Modem Commands</guibutton>."
+msgstr ""
+"Klicken Sie auf Einstellungen/Modem  Sie können die Lautstärke des Modems "
+"hier in drei Schritten einstellen: aus, mittel, groß. Bei den meisten Modems "
+"bekommen Sie die gleiche Lautstärke für <quote>mittel</quote> und "
+"<quote>groß</quote>. Falls das nicht funktioniert, stellen Sie sicher, dass "
+"Sie die richtigen Einstellungen in Einstellungen/Modem/Modembefehle "
+"eingestellt haben\""
+
+#. Tag: para
+#: kppp-faq.docbook:258
+#, no-c-format
+msgid ""
+"I turned the modem volume to <quote>Off</quote> and verified the modem "
+"commands, but I still hear that awful noise during dialing. Why?"
+msgstr ""
+"Ich habe die Modemlautstärke <quote>ausgeschaltet</quote> und die "
+"Modembefehle überprüft. Warum höre ich immer noch Wählgeräusche?"
+
+#. Tag: para
+#: kppp-faq.docbook:262
+#, no-c-format
+msgid ""
+"The volume initialization string can get lost if your modem can't cope with "
+"the speed it is receiving commands from &kppp;. Increase the value of "
+"<guilabel>Post-Init Delay</guilabel> in <guibutton>Setup</guibutton>, "
+"<guilabel>Modem</guilabel>, <guibutton>Modem Commands</guibutton>."
+msgstr ""
+"Die Zeichenkette zur Initialisierung der Lautstärke kann verloren gehen, "
+"wenn das Modem nicht mit der Übertragungsgeschwindigkeit von &kppp; "
+"zurechtkommt. In diesem Fall sollte man den Wert in <guilabel>Post-Init "
+"Verzögerung</guilabel> unter <guibutton>Einstellungen</guibutton>, "
+"<guilabel>Modem</guilabel>, <guibutton>Modembefehle</guibutton> erhöhen."
+
+#. Tag: para
+#: kppp-faq.docbook:270
+#, no-c-format
+msgid ""
+"&kppp; keeps reporting unusual modem speeds like <quote>115200</quote> or "
+"<quote>57600</quote>"
+msgstr ""
+"&kppp; meldet ungewöhnliche Modemgeschwindigkeiten, wie <quote>115200</"
+"quote>, <quote>57600</quote> oder Ähnliches."
+
+#. Tag: para
+#: kppp-faq.docbook:273
+#, no-c-format
+msgid ""
+"Many modems only report the speed of the serial line and not the speed over "
+"the telephone line as default. You must configure these modems to report the "
+"true line speed by adding some commands to the modem init or dial strings. "
+"For many modems this command is <command>ATW2</command>. If you want to add "
+"it to the dial string (which normally starts with <command>ATD</command>), "
+"the new dial string would be <command>ATW2D</command>."
+msgstr ""
+"Viele Modems melden standardmäßig nur die Geschwindigkeit der seriellen "
+"Schnittstelle und nicht die Geschwindigkeit über die Telefonleitung. Sie "
+"müssen diese Modem erst so einstellen, dass Sie die wirkliche "
+"Datenübertragungsgeschwindigkeit melden (fügen Sie dies dem Init- oder "
+"Wählstring bei). Bei vielen Modems ist der Befehl ATW2. Wenn Sie dies dem "
+"Wählstring (typischerweise ATD) beifügen wollen, wäre der neue Wählstring "
+"ATW2D."
+
+#. Tag: para
+#: kppp-faq.docbook:283
+#, no-c-format
+msgid "Why does &kppp; report <quote>Unknown speed</quote>"
+msgstr ""
+"Warum meldet &kppp; <quote>Unbekannte Geschwindigkeit (Unknown speed)</"
+"quote>?"
+
+#. Tag: para
+#: kppp-faq.docbook:286
+#, no-c-format
+msgid ""
+"New modems often have very complex connection messages like "
+"<computeroutput>CONNECT LAP.M/V42.bis/115000:RX/31200:TX</computeroutput>, "
+"and &kppp; cannot parse this message correctly. Turn on <guibutton>Show Log</"
+"guibutton> and you'll see the connection speed."
+msgstr ""
+"Neue Modems haben oft komplizierte Verbindungsmeldungen wie <quote>CONNECT "
+"LAP.M/V42.bis/115000:RX/31200:TX</quote>, und &kppp; kann die Nachrichten "
+"nicht korrekt behandeln. Schalten Sie Protokollfenster anzeigen ein, und Sie "
+"werden die Verbindungsgeschwindigkeit sehen. Ich arbeite gerade an einer "
+"Lösung dieses Problems, und der Parser ist schon viel besser, aber immer "
+"noch nicht perfekt."
+
+#. Tag: para
+#: kppp-faq.docbook:293
+#, no-c-format
+msgid "I get a slow connection speed"
+msgstr "Die Übertragungsgeschwindigkeit ist langsam."
+
+#. Tag: para
+#: kppp-faq.docbook:295
+#, no-c-format
+msgid ""
+"If you are not satisfied with the modem speed, make sure you've set the "
+"connection speed (you can reach it by clicking on <guibutton>Setup</"
+"guibutton>, <guilabel>Device</guilabel>, <guibutton>Connection Speed</"
+"guibutton>) to 57600 or higher. Make sure your serial ports support higher "
+"speeds. Many older systems based on i486 do not work correctly if you set "
+"the speed to 115200. If you have an old <hardware>8250 UART</hardware> chip, "
+"it won't work. If you have a <hardware>16550</hardware> or <hardware>16550A</"
+"hardware> it should work flawlessly."
+msgstr ""
+"Wenn Sie mit der Modemgeschwindigkeit nicht zufrieden sind, stellen Sie "
+"sicher, dass die Verbindungsgeschwindigkeit (Einstellungen/Gerät/"
+"Geschwindigkeit) auf 57600 oder höher eingestellt ist. Stellen Sie sicher, "
+"dass Ihre serielle Schnittstelle höhere Geschwindigkeiten unterstützt. Viele "
+"auf i486 basierende Systeme arbeiten nicht korrekt, wenn die Geschwindigkeit "
+"auf 115200 eingestellt ist. Wenn Sie einen 8250 UART Chip haben, wird es "
+"nicht funktionieren. Wenn Sie einen 16550 oder 16550A haben, sollte es "
+"problemlos funktionieren."
+
+#. Tag: para
+#: kppp-faq.docbook:304
+#, no-c-format
+msgid ""
+"Additionally, you should consult your modem manual to look for init strings "
+"that enable a high speed mode."
+msgstr ""
+"Schauen Sie zusätzlich in Ihrem Modem-Handbuch nach Init-Strings, die den "
+"Hochgeschwindigkeit-Modus aktivieren."
+
+#. Tag: para
+#: kppp-faq.docbook:309
+#, no-c-format
+msgid "I get a <emphasis>REALLY</emphasis> slow connection speed!"
+msgstr "Die Übertragungsgeschwindigkeit ist <emphasis>sehr</emphasis> langsam."
+
+#. Tag: para
+#: kppp-faq.docbook:312
+#, no-c-format
+msgid ""
+"If data drips on at a rate of just a few bytes per second, you should check "
+"your hardware setup. If moving your mouse speeds up the transmission this is "
+"definitely a hardware issue!"
+msgstr ""
+"Wenn die Datenübertragungsrate nur ein paar Byte pro Sekunde beträgt, "
+"sollten Sie Ihre Hardware-Einstellungen überprüfen. Falls Bewegungen der "
+"Maus die Datenübertragung beschleunigen, ist das auf jeden Fall ein "
+"Hardwareproblem."
+
+#. Tag: para
+#: kppp-faq.docbook:316
+#, no-c-format
+msgid ""
+"You can obtain some information about your serial port with "
+"<userinput><command>setserial</command> <option>-a <replaceable>/dev/ttySx</"
+"replaceable></option></userinput> and check for interrupt conflicts with "
+"other components of your system."
+msgstr ""
+"Sie erhalten Informationen über Ihre serielle Schnittstelle mit "
+"<userinput><command>setserial</command> <option>-a <replaceable>/dev/ttySx</"
+"replaceable></option></userinput>. Schauen Sie nach Interrupt-Konflikten mit "
+"anderen Komponenten Ihres Systems."
+
+#. Tag: para
+#: kppp-faq.docbook:323
+#, no-c-format
+msgid ""
+"My phone line needs pulse dialing instead of tone dialing (or vice-versa). "
+"How do I change that?"
+msgstr ""
+"Meine Telefonleitung benutzt das Impuls- anstatt das Tonwahlverfahren (oder "
+"umgekehrt). Wie kann ich die Einstellung ändern?"
+
+#. Tag: para
+#: kppp-faq.docbook:325
+#, no-c-format
+msgid ""
+"You must modify your modem dial string. Nearly all modems support the "
+"following AT commands:"
+msgstr ""
+"Sie müssen den Modem-Wählstring verändern. Fast alle Modems unterstützen die "
+"folgenden AT-Befehle:"
+
+#. Tag: action
+#: kppp-faq.docbook:331
+#, no-c-format
+msgid "Selects tone dialing"
+msgstr "Aktiviert das Tonwahlverfahren"
+
+#. Tag: action
+#: kppp-faq.docbook:335
+#, no-c-format
+msgid "Selects pulse dialing"
+msgstr "Aktiviert das Impulswahlverfahren"
+
+#. Tag: title
+#: kppp-faq.docbook:345
+#, no-c-format
+msgid "Questions about Telephone Cost Rules"
+msgstr "Fragen über Telefongebühren-Regeln"
+
+#. Tag: para
+#: kppp-faq.docbook:347
+#, no-c-format
+msgid "How do I write a telephones cost rules file?"
+msgstr "Wie erstelle ich eine Telefongebühren-Regeldatei?"
+
+#. Tag: para
+#: kppp-faq.docbook:348
+#, no-c-format
+msgid ""
+"Just follow the <filename>TEMPLATE</filename> rules file supplied with "
+"&kppp;. You should be able to find a copy in <filename class=\"directory\">"
+"$KDEDIR/doc/HTML/<replaceable>yourlang</replaceable>/kppp/</filename>. Use "
+"the <option>-r</option> &kppp; command line option to check the syntax of "
+"your proposed rules file."
+msgstr ""
+"Sehen Sie sich die <literal>TEMPLATE</literal>-Regeldatei, die bei &kppp; "
+"dabei ist, an. Sie sollten eine Kopie davon in <literal>&dollar;KDEDIR/doc/"
+"HTML/en/kppp</literal> finden. Benutzen Sie den Befehlszeilen-Parameter "
+"<literal>-r</literal> von &kppp;, um die Syntax Ihrer Gebührenregel-Datei zu "
+"überprüfen."
+
+#. Tag: para
+#: kppp-faq.docbook:356
+#, no-c-format
+msgid ""
+"I have written a telephone cost rules for my region. Where can I submit it "
+"so that others can make use of it?"
+msgstr ""
+"Ich habe eine Gebührenregel-Datei für meine Region geschrieben. Wem kann ich "
+"sie schicken, sodass auch andere sie nutzen können?"
+
+#. Tag: para
+#: kppp-faq.docbook:363
+#, no-c-format
+msgid ""
+"Can my phone cost rulefile contain fractional time units like \"(0.17, "
+"45.5)\"?"
+msgstr ""
+"Kann meine Telefongebühren-Regeldatei Bruchteile einer Zeiteinheit "
+"enthalten, &eg; <quote>(0.17,45.5)</quote>?"
+
+#. Tag: para
+#: kppp-faq.docbook:365
+#, no-c-format
+msgid ""
+"Yes this is possible. But you shouldn't use unusually small time units below "
+"a tenth of a second, because this would result in higher <acronym>CPU</"
+"acronym> load, although you probably won't notice on a modern <acronym>CPU</"
+"acronym>."
+msgstr ""
+"Ja, das ist möglich. Aber Sie sollten kein ungewöhnlich kleinen Bruchteile "
+"benutzen (unter einer 1/10 Sekunde), da dies in einer höheren <acronym>CPU</"
+"acronym>-Belastung resultieren würde. (Obwohl ich nicht glaube, dass Sie das "
+"bei einer modernen <acronym>CPU</acronym> bemerken würden.:-)"
+
+#. Tag: para
+#: kppp-faq.docbook:372
+#, no-c-format
+msgid "My country observes other <quote>moving</quote> holidays than Easter."
+msgstr ""
+"Mein Land hat außer Ostern noch weiter <quote>verschiebbare</quote> "
+"Feiertage."
+
+#. Tag: para
+#: kppp-faq.docbook:374
+#, no-c-format
+msgid ""
+"In that case, you need to write new code that allows for the computation of "
+"that holiday. Please have a look at <filename>ruleset.cpp</filename> and "
+"emulate the <quote>easter</quote> example. Then send in the patches!."
+msgstr ""
+"In diesem Fall müssen Sie neuen Code schreiben, der Ihnen die Berechnung "
+"dieses Feiertags ermöglicht. Sehen Sie in <literal>ruleset.cpp</literal> "
+"nach und imitieren Sie das ``easter''-Beispiel. Dann senden Sie <ulink url="
+"\"mailto:wuebben@math.cornell.edu\">mir</ulink> die Patches."
+
+#. Tag: title
+#: kppp-faq.docbook:382
+#, no-c-format
+msgid "Questions about the System Logs"
+msgstr "Fragen zu den System-Protokolldateien"
+
+#. Tag: para
+#: kppp-faq.docbook:384
+#, no-c-format
+msgid ""
+"I see a message saying <errorname>Serial line is looped back</errorname>. "
+"What does this mean?"
+msgstr ""
+"Eine Meldung besagt <errorname>Serial line is looped back</errorname>. Was "
+"bedeutet das?"
+
+#. Tag: para
+#: kppp-faq.docbook:387
+#, no-c-format
+msgid ""
+"Short answer: You didn't start the <acronym>PPP</acronym> software on the "
+"peer system."
+msgstr ""
+"Kurze Antwort: Sie haben die <acronym>PPP</acronym>-Software auf dem "
+"entfernten System nicht gestartet."
+
+#. Tag: para
+#: kppp-faq.docbook:397
+#, no-c-format
+msgid "The logs show <errorname>Signal 15</errorname>"
+msgstr "Die Protokolldateien zeigen <errorname>Signal 15</errorname>."
+
+#. Tag: para
+#: kppp-faq.docbook:398
+#, no-c-format
+msgid ""
+"If you see the following lines, you've probably just received a timeout "
+"error from &kppp;. &kppp; has been waiting for the <acronym>PPP</acronym> "
+"interface to come up and gave up after the specified timeout. "
+"<application>pppd</application> was signalled to shut down, with signal "
+"number 15, &ie; <errorcode>SIGTERM</errorcode>."
+msgstr ""
+"Wenn Sie die folgenden Zeilen sehen, haben Sie evtl. gerade einen Fehler "
+"wegen Zeitüberschreitung von &kppp; erhalten. &kppp; hat darauf gewartet, "
+"dass das <acronym>PPP</acronym>-Interface startete, und hat dann nach einer "
+"bestimmten Zeit aufgegeben. Dem <application>pppd</application> wurde mit "
+"dem Signal 15 (i.A. <errorcode>SIGTERM</errorcode>) signalisiert, "
+"abzubrechen."
+
+#. Tag: screen
+#: kppp-faq.docbook:405
+#, no-c-format
+msgid ""
+"<computeroutput>\n"
+"pppd[26921]: pppd 2.3.5 started by me, uid 500\n"
+"pppd[26921]: Using interface ppp0\n"
+"pppd[26921]: Connect: ppp0 &lt;--&gt; /dev/ttyS0\n"
+"pppd[26921]: Terminating on signal 15.\n"
+"pppd[26921]: Connection terminated.\n"
+"pppd[26921]: Exit.\n"
+"</computeroutput>"
+msgstr ""
+"<computeroutput>\n"
+"pppd[26921]: pppd 2.3.5 started by me, uid 500\n"
+"pppd[26921]: Using interface ppp0\n"
+"pppd[26921]: Connect: ppp0 &lt;--&gt; /dev/ttyS0\n"
+"pppd[26921]: Terminating on signal 15.\n"
+"pppd[26921]: Connection terminated.\n"
+"pppd[26921]: Exit.\n"
+"</computeroutput>"
+
+#. Tag: para
+#: kppp-faq.docbook:411
+#, no-c-format
+msgid ""
+"What about <errorname>Receive serial link is not 8-bit clean</errorname>"
+msgstr ""
+"Was bedeutet <errorname>Receive serial link is not 8-bit clean</errorname>?"
+
+#. Tag: para
+#: kppp-faq.docbook:413
+#, no-c-format
+msgid ""
+"The <acronym>PPP</acronym> daemon is alarmed by the fact that all the data "
+"it receives has bit 8 set to zero. In most cases this simply indicates that "
+"the remote <acronym>PPP</acronym> server isn't running yet. You might still "
+"be confronted by a login prompt that echoes back all the data sent by your "
+"<application>pppd</application>."
+msgstr ""
+"Der <acronym>PPP</acronym>-Dämon wurde misstrauisch, da alle empfangenen "
+"Daten das Bit 8 auf Null gesetzt hatten. In den meisten Fällen zeigt das an, "
+"dass der entfernte <acronym>PPP</acronym>-Server noch nicht gestartet ist. "
+"Es wird dort vielleicht immer noch einen Anmeldeprompt geben, der alle "
+"Daten, die von Ihrem <application>pppd</application> gesendet wurden, "
+"zurücksendet."
+
+#. Tag: para
+#: kppp-faq.docbook:421
+#, no-c-format
+msgid ""
+"and <errorname>can't locate module ppp-compress</errorname>? What's this?"
+msgstr "Was bedeutet <errorname>can't locate module ppp-compress</errorname>?"
+
+#. Tag: para
+#: kppp-faq.docbook:423
+#, no-c-format
+msgid "Do you see the following messages?"
+msgstr "Bekommen Sie folgende Nachrichten?"
+
+#. Tag: screen
+#: kppp-faq.docbook:426
+#, no-c-format
+msgid ""
+"<computeroutput>\n"
+"modprobe: can't locate module ppp-compress-21 \n"
+"modprobe: can't locate module ppp-compress-26 \n"
+"modprobe: can't locate module ppp-compress-24\n"
+"</computeroutput>"
+msgstr ""
+"<computeroutput>\n"
+"modprobe: can't locate module ppp-compress-21 \n"
+"modprobe: can't locate module ppp-compress-26 \n"
+"modprobe: can't locate module ppp-compress-24\n"
+"</computeroutput>"
+
+#. Tag: para
+#: kppp-faq.docbook:429
+#, no-c-format
+msgid "Just add the lines:"
+msgstr "Fügen Sie einfach diese Zeilen "
+
+#. Tag: screen
+#: kppp-faq.docbook:431
+#, no-c-format
+msgid ""
+"<userinput>\n"
+"alias ppp-compress-21 bsd_comp \n"
+"alias ppp-compress-24 ppp_deflate \n"
+"alias ppp-compress-26 ppp_deflate </userinput>"
+msgstr ""
+"<userinput>\n"
+"alias ppp-compress-21 bsd_comp \n"
+"alias ppp-compress-24 ppp_deflate \n"
+"alias ppp-compress-26 ppp_deflate </userinput>"
+
+#. Tag: para
+#: kppp-faq.docbook:433
+#, no-c-format
+msgid "to your <filename>/etc/conf.modules</filename> file."
+msgstr "zu Ihrer Datei <filename>/etc/conf.modules</filename> hinzu."
+
+#~ msgid "ATDT"
+#~ msgstr "ATDT"
+
+#~ msgid "ATDP"
+#~ msgstr "ATDP"

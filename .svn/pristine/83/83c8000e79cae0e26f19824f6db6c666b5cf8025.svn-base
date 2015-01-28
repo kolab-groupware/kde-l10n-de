@@ -1,0 +1,188 @@
+# Thomas Diehl <thd@kde.org>, 2002, 2004.
+# Stephan Johach <hunsum@gmx.de>, 2005, 2006.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2006, 2007, 2009.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio_pop3\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-11-27 01:37+0000\n"
+"PO-Revision-Date: 2011-04-23 16:19+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.2\n"
+
+#: pop3.cpp:215
+#, kde-format
+msgid "The server said: \"%1\""
+msgstr "Servermeldung: „%1“"
+
+#: pop3.cpp:237
+msgid "The server terminated the connection."
+msgstr "Der Server hat die Verbindung abgebrochen."
+
+#: pop3.cpp:239
+#, kde-format
+msgid ""
+"Invalid response from server:\n"
+"\"%1\""
+msgstr ""
+"Ungültige Antwort vom Server:\n"
+"„%1“"
+
+#: pop3.cpp:276
+msgid "Could not send to server.\n"
+msgstr "Übermittlung an Server nicht möglich.\n"
+
+#: pop3.cpp:329 pop3.cpp:386 pop3.cpp:563
+msgid "No authentication details supplied."
+msgstr "Keine Details für die Anmeldung angegeben."
+
+#: pop3.cpp:365
+#, kde-format
+msgid ""
+"Login via APOP failed. The server %1 may not support APOP, although it "
+"claims to support it, or the password may be wrong.\n"
+"\n"
+"%2"
+msgstr ""
+"Die Anmeldung mit APOP ist fehlgeschlagen. Möglicherweise unterstützt der "
+"Server %1 dieses Protokoll nicht (obwohl er eine gegenteilige Information "
+"ausgibt), oder Sie haben ein falsches Passwort eingegeben.\n"
+"\n"
+"%2"
+
+#: pop3.cpp:421
+#, kde-format
+msgid "An error occurred during authentication: %1"
+msgstr "Bei der Authentifizierung ist ein Fehler aufgetreten: %1"
+
+#: pop3.cpp:540
+#, kde-format
+msgid ""
+"Login via SASL (%1) failed. The server may not support %2, or the password "
+"may be wrong.\n"
+"\n"
+"%3"
+msgstr ""
+"Die Anmeldung mit SASL (%1) ist fehlgeschlagen. Möglicherweise unterstützt "
+"der Server %2 nicht oder Sie haben ein falsches Passwort eingegeben.\n"
+"\n"
+"%3"
+
+#: pop3.cpp:549
+#, kde-format
+msgid ""
+"Your POP3 server (%1) does not support SASL.\n"
+"Choose a different authentication method."
+msgstr ""
+"Ihr POP3-Server (%1) unterstützt kein SASL.\n"
+"Wählen Sie eine andere Methode zur Authentifizierung."
+
+#: pop3.cpp:581 pop3.cpp:630
+#, kde-format
+msgid ""
+"Could not login to %1.\n"
+"\n"
+msgstr ""
+"Anmeldung bei %1 nicht möglich.\n"
+"\n"
+
+#: pop3.cpp:595
+#, kde-format
+msgid ""
+"Could not login to %1. The password may be wrong.\n"
+"\n"
+"%2"
+msgstr ""
+"Anmeldung bei %1 nicht möglich. Vielleicht ist das Passwort nicht korrekt.\n"
+"\n"
+"%2"
+
+#: pop3.cpp:633
+msgid "The server terminated the connection immediately."
+msgstr "Der Server hat die Verbindung sofort abgebrochen."
+
+#: pop3.cpp:634
+#, kde-format
+msgid ""
+"Server does not respond properly:\n"
+"%1\n"
+msgstr ""
+"Server antwortet nicht korrekt:\n"
+"%1\n"
+
+#: pop3.cpp:662
+#, kde-format
+msgid ""
+"Your POP3 server (%1) does not support APOP.\n"
+"Choose a different authentication method."
+msgstr ""
+"Ihr POP3-Server (%1) unterstützt kein APOP.\n"
+"Wählen Sie eine andere Methode für die Authentifizierung."
+
+#: pop3.cpp:680
+msgid ""
+"Your POP3 server claims to support TLS but negotiation was unsuccessful.\n"
+"You can disable TLS in the POP account settings dialog."
+msgstr ""
+"Der POP3-Server signalisiert Unterstützung für TLS, aber eine entsprechende "
+"Verbindungsaufnahme ist fehlgeschlagen. Sie können TLS im Einrichtungsdialog "
+"für Eingangspostfächer abschalten. "
+
+#: pop3.cpp:689
+#, kde-format
+msgid ""
+"Your POP3 server (%1) does not support TLS. Disable TLS, if you want to "
+"connect without encryption."
+msgstr ""
+"Der POP3-Server (%1) unterstützt kein TLS. Deaktivieren Sie TLS, wenn Sie "
+"eine Verbindung ohne Verschlüsselung aufnehmen möchten."
+
+#: pop3.cpp:698
+msgid "Username and password for your POP3 account:"
+msgstr "Benutzername und Passwort für Ihren POP3-Zugang:"
+
+#: pop3.cpp:865 pop3.cpp:874 pop3.cpp:1015
+msgid "Unexpected response from POP3 server."
+msgstr "Unerwartete Reaktion vom POP3-Server"
+
+#: pop3.cpp:879
+#, kde-format
+msgid ""
+"Error during communication with the POP3 server while trying to list mail: %1"
+msgstr ""
+"Fehler bei der Kommunikation mit dem POP3-Server beim Anzeigen der E-Mails: "
+"%1"
+
+#: pop3.cpp:980
+#, kde-format
+msgid ""
+"Error during communication with the POP3 server while trying to download "
+"mail: %1"
+msgstr ""
+"Fehler bei der Kommunikation mit dem POP3-Server beim Herunterladen von der "
+"E-Mails: %1"
+
+#: pop3.cpp:1042
+msgid "The POP3 command 'STAT' failed"
+msgstr "Der POP3-Befehl „STAT“ ist fehlgeschlagen."
+
+#: pop3.cpp:1048
+msgid "Invalid POP3 response, should have at least one space."
+msgstr "Ungültige POP3-Antwort; sie muss mindestens ein Leerzeichen enthalten."
+
+#: pop3.cpp:1056
+msgid "Invalid POP3 STAT response."
+msgstr "Ungültige POP3-STAT-Antwort."
+
+#~ msgid "SASL authentication is not compiled into kio_pop3."
+#~ msgstr ""
+#~ "Die Authentifizierung mit SASL wurde beim Kompilieren von kio_pop3 nicht "
+#~ "eingebunden."

@@ -1,0 +1,363 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2013.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2009, 2010.
+# Markus Slopianka <markus.s@kdemail.net>, 2010.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011.
+# Torbjörn Klatt <opensource@torbjoern-klatt.de>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: kres-migrator\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 09:58+0000\n"
+"PO-Revision-Date: 2013-11-08 08:13+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Thomas Reitelbach"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "tr@erdfunkstelle.de"
+
+#: ../kmigratorbase.cpp:123
+#, kde-format
+msgid "Creating instance of type %1"
+msgstr "Instanz vom Typ „%1“ wird erzeugt."
+
+#: ../migratorbase.cpp:138
+msgid "Missing Identifier"
+msgstr "Fehlender Bezeichner"
+
+#: ../migratorbase.cpp:151
+msgid "Failed to start migration because migrator is not ready"
+msgstr ""
+"Der Start der Migration ist fehlgeschlagen, weil das Migrationswerkzeug "
+"nicht bereit ist"
+
+#: ../migratorbase.cpp:157
+msgid "Starting migration..."
+msgstr "Migration wird gestartet ..."
+
+#: ../migratorbase.cpp:198
+msgid "Migration complete"
+msgstr "Migration beendet"
+
+#: ../migratorbase.cpp:202
+msgid "Migration aborted"
+msgstr "Migration abgebrochen"
+
+#: ../migratorbase.cpp:208
+msgid "Migration failed"
+msgstr "Die Migration ist fehlgeschlagen"
+
+#: ../migratorbase.cpp:212
+msgid "Migration paused"
+msgstr "Die Migration wurde angehalten"
+
+#: ../migratorbase.cpp:242
+msgid "This migration has already been started once but was aborted"
+msgstr "Die Migration wurde bereits einmal gestartet, aber dann abgebrochen"
+
+#: ../migratorbase.cpp:278
+msgctxt "@info:status"
+msgid "Not started"
+msgstr "Nicht gestartet"
+
+#: ../migratorbase.cpp:279
+msgctxt "@info:status"
+msgid "Running..."
+msgstr "Läuft ..."
+
+#: ../migratorbase.cpp:280
+msgctxt "@info:status"
+msgid "Complete"
+msgstr "Beendet"
+
+#: ../migratorbase.cpp:281
+msgctxt "@info:status"
+msgid "Aborted"
+msgstr "Abgebrochen"
+
+#: ../migratorbase.cpp:282
+msgctxt "@info:status"
+msgid "Paused"
+msgstr "Angehalten"
+
+#: ../migratorbase.cpp:283
+msgctxt "@info:status"
+msgid "Needs Update"
+msgstr "Aktualisierung erforderlich"
+
+#: ../migratorbase.cpp:284
+msgctxt "@info:status"
+msgid "Failed"
+msgstr "Fehlgeschlagen"
+
+#: kabcmigrator.cpp:53
+#, kde-format
+msgid ""
+"Unsupported file format found. The file format '%1' is no longer supported, "
+"please convert to another one."
+msgstr ""
+"Nicht unterstütztes Dateiformat erkannt. Das Dateiformat „%1“ wird nicht "
+"länger unterstützt, bitte konvertieren Sie in ein anderes Format."
+
+#: kabcmigrator.cpp:57
+#, kde-format
+msgid "File format '%1' is not yet supported natively."
+msgstr "Das Dateiformat „%1“ wird derzeit noch nicht nativ unterstützt."
+
+#: kabcmigrator.cpp:67 kcalmigrator.cpp:59
+#, kde-format
+msgid "Failed to create resource: %1"
+msgstr "Fehler beim Erzeugen der Ressource: %1"
+
+#: kabcmigrator.cpp:73
+msgid "Migrated Addressbook"
+msgstr "Migriertes Adressbuch"
+
+#: kabcmigrator.cpp:78 kcalmigrator.cpp:70 kcalmigrator.cpp:99
+#: kcalmigrator.cpp:140
+msgid "Failed to obtain D-Bus interface for remote configuration."
+msgstr ""
+"D-Bus-Schnittstelle für die entfernte Konfiguration kann nicht erhalten "
+"werden."
+
+#: kcalmigrator.cpp:65
+msgid "Migrated Calendar"
+msgstr "Migrierter Kalender"
+
+#: kcalmigrator.cpp:87
+#, kde-format
+msgid "Failed to create birthdays resource: %1"
+msgstr "Fehler beim Erzeugen der Geburtstage-Ressource: %1"
+
+#: kcalmigrator.cpp:93
+msgid "Migrated Birthdays"
+msgstr "Migrierte Geburtstage"
+
+#: kcalmigrator.cpp:114
+#, kde-format
+msgid "Failed to create DAV resource: %1"
+msgstr "Fehler beim Erzeugen der DAV-Ressource: %1"
+
+#: kcalmigrator.cpp:120
+msgid "Migrated GroupDAV"
+msgstr "Migrierte GroupDAV"
+
+#: kcalmigrator.cpp:125
+msgid "Failed to find the configuration file for the GroupDAV KResource"
+msgstr "Einrichtungsdatei für GroupDAV-KResource kann nicht gefunden werden"
+
+#: kcalmigrator.cpp:131
+msgid "Apparently invalid configuration file for the GroupDAV KResource"
+msgstr ""
+"Es scheint, die Einrichtungsdatei für GroupDAV-KResource ist fehlerhaft"
+
+#: kcalmigrator.cpp:148
+msgid "Empty username or URL in GroupDAV KResource configuration"
+msgstr ""
+"Fehlender Benutzername oder URL in der GroupDAV-KResource-Konfiguration"
+
+#: kresmigrator.h:86
+msgid "Client-side bridge already set up."
+msgstr "Die clientseitige Brücke ist bereits eingerichtet."
+
+#: kresmigrator.h:93
+#, kde-format
+msgid "Trying to migrate '%1'..."
+msgstr "Migration von „%1“ wird durchgeführt ..."
+
+#: kresmigrator.h:104
+#, kde-format
+msgid "No native backend for '%1' available."
+msgstr "Es sind keine nativen Treiber für „%1“ verfügbar."
+
+#: kresmigrator.h:114
+#, kde-format
+msgid "'%1' has already been migrated."
+msgstr "„%1“ wurde bereits migriert."
+
+#: kresmigrator.h:149
+#, kde-format
+msgid ""
+"No Akonadi agent identifier specified for previously bridged resource '%1'"
+msgstr ""
+"Es ist kein Akonadi-Agent-Bezeichner für die vorherige Brückenressource „%1“ "
+"festgelegt."
+
+#: kresmigrator.h:157
+#, kde-format
+msgid "Bridged resource %1 does not exist anymore, trying a direct migration"
+msgstr ""
+"Brückenressource „%1“ existiert nicht mehr. Es wird eine direkte Migration "
+"versucht."
+
+#: kresmigrator.h:193
+#, kde-format
+msgid "Bridged resource '%1' has no standard resource."
+msgstr "Die Brückenressource „%1“ besitzt keine Standardressource."
+
+#: kresmigrator.h:199
+#, kde-format
+msgid "Trying to migrate '%1' from compatibility bridge to native backend..."
+msgstr ""
+"Es wird versucht, „%1“ von der Kompatibilitäts-Brücke zum nativen Treiber zu "
+"migrieren ..."
+
+#: kresmigrator.h:203
+#, kde-format
+msgid "No native backend available, keeping compatibility bridge for '%1'."
+msgstr ""
+"Es ist kein nativer Treiber verfügbar, die Kompatibilitäts-Brücke für „%1“ "
+"wird beibehalten."
+
+#: kresmigrator.h:242
+#, kde-format
+msgid "Migration of '%1' to compatibility bridge succeeded."
+msgstr ""
+"Die Migration von „%1“ zur Kompatibilitäts-Brücke ist erfolgreich "
+"abgeschlossen."
+
+#: kresmigrator.h:264
+msgid "Setting up client-side bridge..."
+msgstr "Clientseitige Brücke wird eingerichtet ..."
+
+#: kresmigrator.h:268
+msgid "Akonadi Compatibility Resource"
+msgstr "Akonadi-Kompatibilitäts-Ressource"
+
+#: kresmigrator.h:271
+msgid "Client-side bridge set up successfully."
+msgstr "Die clientseitige Brücke wurde erfolgreich eingerichtet."
+
+#: kresmigrator.h:273
+msgid ""
+"Could not create client-side bridge, check if Akonadi KResource bridge is "
+"installed."
+msgstr ""
+"Die clientseitige Brücke kann nicht erzeugt werden. Bitte stellen Sie "
+"sicher, dass die Akonadi-Ressource installiert ist."
+
+#: kresmigratorbase.cpp:55
+#, kde-format
+msgid "Trying to migrate '%1' to compatibility bridge..."
+msgstr "Es wird versucht, „%1“ zur Kompatibilitäts-Brücke zu migrieren ..."
+
+#: kresmigratorbase.cpp:64
+#, kde-format
+msgid "Unable to create compatibility bridge: %1"
+msgstr "Fehler beim Erzeugen der Kompatibilitäts-Brücke: %1"
+
+#: kresmigratorbase.cpp:100
+#, kde-format
+msgid "Migration of '%1' to compatibility bridge failed: %2"
+msgstr ""
+"Die Migration von „%1“ zur Kompatibilitäts-Brücke ist fehlgeschlagen: %2"
+
+#: kresmigratorbase.cpp:103
+#, kde-format
+msgid "Migration of '%1' to native backend failed: %2"
+msgstr "Die Migration von „%1“ zum nativen Treiber ist fehlgeschlagen: %2"
+
+#: kresmigratorbase.cpp:142
+#, kde-format
+msgid "Migration of '%1' succeeded."
+msgstr "Die Migration von „%1“ ist erfolgreich abgeschlossen."
+
+#: kresmigratorbase.cpp:150
+msgid "Attempting to create kolab resource"
+msgstr "Es wird versucht, eine Kolab-Ressource anzulegen."
+
+#: kresmigratorbase.cpp:167
+msgid "Failed to create kolab proxy resource."
+msgstr "Fehler beim Erzeugen der Kolab-Proxy-Ressource."
+
+#: main.cpp:44
+msgid "KResource Migration Tool"
+msgstr "Ressourcen-Migrationswerkzeug"
+
+#: main.cpp:46
+msgid "Migration of KResource settings and application to Akonadi"
+msgstr "Migration von Ressourcen-Einstellungen und Anwendungen zu Akonadi"
+
+#: main.cpp:48
+msgid "(c) 2008 the Akonadi developers"
+msgstr "Copyright © 2008 die Akonadi-Entwickler"
+
+#: main.cpp:52
+msgid "Volker Krause"
+msgstr "Volker Krause"
+
+#: main.cpp:52
+msgid "Author"
+msgstr "Autor"
+
+#: main.cpp:58
+msgid "Only migrate to Akonadi KResource bridges"
+msgstr "Nur zu Akonadi-Ressourcen-Brücken migrieren"
+
+#: main.cpp:59
+msgid "Omit setting up of the client side compatibility bridges"
+msgstr "Einrichtung der clientseitigen Kompatibilitäts-Brücken überspringen"
+
+#: main.cpp:60
+msgid "Only migrate contact resources"
+msgstr "Nur Kontakt-Ressourcen migrieren"
+
+#: main.cpp:61
+msgid "Only migrate calendar resources"
+msgstr "Nur Kalender-Ressourcen migrieren"
+
+#: main.cpp:62
+msgid "Only migrate the specified types (supported: contact, calendar, notes)"
+msgstr ""
+"Nur die angegebenen Typen migrieren (unterstützt werden: Kontakte, Kalender, "
+"Notizen)"
+
+#: main.cpp:64
+msgid "Show reporting dialog"
+msgstr "Berichtsfenster anzeigen"
+
+#: main.cpp:65
+msgid "Show report only if changes were made"
+msgstr "Bericht nur anzeigen, wenn Änderungen durchgeführt wurden"
+
+#~ msgid "Failed to open file for reading: %1"
+#~ msgstr "Fehler beim Öffnen einer Datei zum Lesen: %1"
+
+#~ msgid "Instance \"%1\" synchronized"
+#~ msgstr "Instanz „%1“ abgeglichen"
+
+#~ msgid "Root fetch finished"
+#~ msgstr "Wurzel erfolgreich geholt"
+
+#~ msgctxt "A job to fetch akonadi resources failed. %1 is the error string."
+#~ msgid "Fetching resources failed: %1"
+#~ msgstr "Ressourcen holen fehlgeschlagen: %1"
+
+#~ msgid "Received root collections"
+#~ msgstr "Wurzel 'Collections' empfangen"
+
+#~ msgid "Could not find root collection for resource \"%1\""
+#~ msgstr ""
+#~ "Wurzel-'Collection' für die Ressource „%1“ kann nicht gefunden werden"
+
+#~ msgid "Starting migration of %1 journal"
+#~ msgid_plural "Starting migration of %1 journals"
+#~ msgstr[0] "Migration von %1 Journal wird gestartet"
+#~ msgstr[1] "Migration von %1 Journalen wird gestartet"
+
+#~ msgid "Only migrate knotes resources"
+#~ msgstr "Nur KNotes-Ressourcen migrieren"
+
+#~ msgid "Unable to obtain resource type '%1'."
+#~ msgstr "Ressourcen-Typ „%1“ kann nicht verarbeitet werden."

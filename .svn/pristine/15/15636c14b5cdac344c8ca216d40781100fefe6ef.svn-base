@@ -1,0 +1,415 @@
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010.
+# Jonathan Raphael Joachim Kolberg <bulldog98@kubuntu-de.org>, 2010.
+# Burkhard Lück <lueck@hube-lueck.de>, 2011, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: qaptbatch\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-12-25 05:20+0000\n"
+"PO-Revision-Date: 2013-03-12 06:29+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: utils/qapt-batch/detailswidget.cpp:50
+msgctxt "@label Remaining time"
+msgid "Remaining Time:"
+msgstr "Verbleibende Zeit :"
+
+#: utils/qapt-batch/detailswidget.cpp:54
+msgctxt "@label Download Rate"
+msgid "Speed:"
+msgstr "Geschwindigkeit:"
+
+#: utils/qapt-batch/detailswidget.cpp:98
+msgctxt "@info:progress Remaining time"
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#: utils/qapt-batch/detailswidget.cpp:107
+#, kde-format
+msgctxt "@info:progress Download rate"
+msgid "%1/s"
+msgstr "%1/s"
+
+#: utils/qapt-batch/main.cpp:29
+msgctxt "@info"
+msgid "A batch installer using QApt"
+msgstr "Ein Stapelinstallationsprogramm, das QApt verwendet"
+
+#: utils/qapt-batch/main.cpp:35
+msgctxt "@title"
+msgid "QApt Batch Installer"
+msgstr "QApt-Stapelinstallationsprogramm"
+
+#: utils/qapt-batch/main.cpp:36
+msgctxt "@info:credit"
+msgid "(C) 2010 Jonathan Thomas"
+msgstr "© 2010 Jonathan Thomas"
+
+#: utils/qapt-batch/main.cpp:37
+msgctxt "@info:credit"
+msgid "Jonathan Thomas"
+msgstr "Jonathan Thomas"
+
+#: utils/qapt-batch/main.cpp:42
+msgctxt "@info:shell"
+msgid "Attaches the window to an X app specified by winid"
+msgstr ""
+"Fügt ein Fenster zu einem X-Programm hinzu, das durch die winid festgelegt "
+"wird"
+
+#: utils/qapt-batch/main.cpp:43
+msgctxt "@info:shell"
+msgid "Install a package"
+msgstr "Ein Paket installieren"
+
+#: utils/qapt-batch/main.cpp:44
+msgctxt "@info:shell"
+msgid "Remove a package"
+msgstr "Ein Paket entfernen"
+
+#: utils/qapt-batch/main.cpp:45
+msgctxt "@info:shell"
+msgid "Update the package cache"
+msgstr "Den Paket-Zwischenspeicher aktualisieren"
+
+#: utils/qapt-batch/main.cpp:46
+msgctxt "@info:shell"
+msgid "Packages to be operated upon"
+msgstr "Änderungen an Paketen"
+
+#: utils/qapt-batch/qaptbatch.cpp:54
+msgctxt "@label"
+msgid "Waiting for authorization"
+msgstr "Es wird auf Autorisierung wird gewartet"
+
+#: utils/qapt-batch/qaptbatch.cpp:82 utils/qapt-batch/qaptbatch.cpp:163
+msgctxt "@label"
+msgid ""
+"The package system could not be initialized, your configuration may be "
+"broken."
+msgstr ""
+"Das Paketsystem kann nicht initialisiert werden. Ihre Einrichtung könnte "
+"fehlerhaft sein."
+
+#: utils/qapt-batch/qaptbatch.cpp:84 utils/qapt-batch/qaptbatch.cpp:165
+msgctxt "@title:window"
+msgid "Initialization error"
+msgstr "Fehler bei der Initialisierung"
+
+#: utils/qapt-batch/qaptbatch.cpp:110 utils/qapt-batch/qaptbatch.cpp:232
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package \"%1\" has not been found among your software sources. "
+"Therefore, it cannot be installed. "
+msgstr ""
+"Das Paket „%1“ kann in den Programmquellen nicht gefunden werden und kann "
+"daher nicht installiert werden."
+
+#: utils/qapt-batch/qaptbatch.cpp:113 utils/qapt-batch/qaptbatch.cpp:235
+msgctxt "@title:window"
+msgid "Package Not Found"
+msgstr "Paket nicht gefunden"
+
+# Programme zur Paketverwaltung?
+#: utils/qapt-batch/qaptbatch.cpp:172
+msgctxt "@label"
+msgid ""
+"Another application seems to be using the package system at this time. You "
+"must close all other package managers before you will be able to install or "
+"remove any packages."
+msgstr ""
+"Das Paketsystem scheint zurzeit von einer anderen Anwendung verwendet zu "
+"werden. Sie müssen erst alle anderen Paketverwaltungsprogramme schließen, "
+"bevor Sie ein Paket installieren oder entfernen können."
+
+#: utils/qapt-batch/qaptbatch.cpp:176
+msgctxt "@title:window"
+msgid "Unable to obtain package system lock"
+msgstr "Das Paketsystem kann nicht gesperrt werden"
+
+#: utils/qapt-batch/qaptbatch.cpp:181
+#, kde-format
+msgctxt "@label"
+msgid ""
+"You do not have enough disk space in the directory at %1 to continue with "
+"this operation."
+msgstr ""
+"Sie haben nicht genug Festplattenspeicher im Ordner %1, um diese Aktion "
+"fortzusetzen."
+
+#: utils/qapt-batch/qaptbatch.cpp:183
+msgctxt "@title:window"
+msgid "Low disk space"
+msgstr "Wenig Speicherplatz"
+
+#: utils/qapt-batch/qaptbatch.cpp:188
+msgctxt "@label"
+msgid "Could not download packages"
+msgstr "Pakete können nicht heruntergeladen werden"
+
+#: utils/qapt-batch/qaptbatch.cpp:189
+msgctxt "@title:window"
+msgid "Download failed"
+msgstr "Download fehlgeschlagen"
+
+#: utils/qapt-batch/qaptbatch.cpp:193
+msgctxt "@label"
+msgid "An error occurred while applying changes:"
+msgstr "Beim Anwenden der Änderungen ist ein Fehler aufgetreten:"
+
+#: utils/qapt-batch/qaptbatch.cpp:194
+msgctxt "@title:window"
+msgid "Commit error"
+msgstr "Fehler bei der Durchführung"
+
+#: utils/qapt-batch/qaptbatch.cpp:200
+msgctxt "@label"
+msgid ""
+"This operation cannot continue since proper authorization was not provided"
+msgstr ""
+"Diese Aktion kann nicht fortgesetzt werden, da keine korrekte Autorisierung "
+"vorliegt."
+
+#: utils/qapt-batch/qaptbatch.cpp:202
+msgctxt "@title:window"
+msgid "Authentication error"
+msgstr "Authentifizierungsfehler"
+
+#: utils/qapt-batch/qaptbatch.cpp:206
+msgctxt "@label"
+msgid ""
+"It appears that the QApt worker has either crashed or disappeared. Please "
+"report a bug to the QApt maintainers"
+msgstr ""
+"Es scheint, dass der „QApt-Worker“ entweder abgestürzt ist oder beendet "
+"wurde. Bitte berichten Sie den Fehler den QApt-Entwicklern"
+
+#: utils/qapt-batch/qaptbatch.cpp:208
+msgctxt "@title:window"
+msgid "Unexpected Error"
+msgstr "Unerwarteter Fehler"
+
+#: utils/qapt-batch/qaptbatch.cpp:216
+msgctxt "@label"
+msgid ""
+"The following package has not been verified by its author. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgid_plural ""
+"The following packages have not been verified by their authors. Downloading "
+"untrusted packages has been disallowed by your current configuration."
+msgstr[0] ""
+"Folgendes Paket ist von seinem Autor nicht verifiziert worden. Das "
+"Herunterladen von nicht vertrauenswürdigen Paketen ist durch Ihre aktuellen "
+"Einrichtung verboten."
+msgstr[1] ""
+"Folgende Pakete sind von ihren Autoren nicht verifiziert worden. Das "
+"Herunterladen von nicht vertrauenswürdigen Paketen ist durch Ihre aktuellen "
+"Einrichtung verboten."
+
+#: utils/qapt-batch/qaptbatch.cpp:225
+msgctxt "@title:window"
+msgid "Untrusted Packages"
+msgstr "Nicht vertrauenswürdige Pakete"
+
+#: utils/qapt-batch/qaptbatch.cpp:248
+msgctxt "@title:window"
+msgid "Media Change Required"
+msgstr "Ein Wechsel des Mediums ist erforderlich"
+
+#: utils/qapt-batch/qaptbatch.cpp:249
+#, kde-format
+msgctxt "@label"
+msgid "Please insert %1 into <filename>%2</filename>"
+msgstr "Bitte legen Sie %1 in <filename>%2</filename> ein"
+
+#: utils/qapt-batch/qaptbatch.cpp:258
+msgctxt "@title:window"
+msgid "Warning - Unverified Software"
+msgstr "Achtung – Nicht verifizierte Software"
+
+#: utils/qapt-batch/qaptbatch.cpp:260
+msgctxt "@label"
+msgid ""
+"The following piece of software cannot be verified. <warning>Installing "
+"unverified software represents a security risk, as the presence of "
+"unverifiable software can be a sign of tampering.</warning> Do you wish to "
+"continue?"
+msgid_plural ""
+"The following pieces of software cannot be authenticated. "
+"<warning>Installing unverified software represents a security risk, as the "
+"presence of unverifiable software can be a sign of tampering.</warning> Do "
+"you wish to continue?"
+msgstr[0] ""
+"Die folgende Software kann nicht verifiziert werden. <warning>Das "
+"Installieren von nicht verifizierter Software ist ein Sicherheitsrisiko, da "
+"nicht verifizierte Software ein Zeichen für Sabotage sein kann.</warning> "
+"Möchten Sie wirklich fortfahren?"
+msgstr[1] ""
+"Die folgende Software kann nicht verifiziert werden. <warning>Das "
+"Installieren von nicht verifizierter Software ist ein Sicherheitsrisiko, da "
+"nicht verifizierte Software ein Zeichen für Sabotage sein kann.</warning> "
+"Möchten Sie wirklich fortfahren?"
+
+#: utils/qapt-batch/qaptbatch.cpp:295
+msgctxt "@label Progress bar label when waiting to start"
+msgid "Waiting to start."
+msgstr "Warten auf den Start."
+
+#: utils/qapt-batch/qaptbatch.cpp:300
+msgctxt "@label Status label when waiting for a password"
+msgid "Waiting for authentication."
+msgstr "Es wird auf Authentifizierung gewartet"
+
+#: utils/qapt-batch/qaptbatch.cpp:305
+msgctxt "@label Status label when waiting for a CD-ROM"
+msgid "Waiting for required media."
+msgstr "Es wird auf erforderliche Medien gewartet"
+
+#: utils/qapt-batch/qaptbatch.cpp:310
+msgctxt "@label Status label"
+msgid "Waiting for other package managers to quit."
+msgstr ""
+"Es wird darauf gewartet, dass andere Paket-Verwaltungsprogramme beendet "
+"werden."
+
+#: utils/qapt-batch/qaptbatch.cpp:318
+msgctxt "@label Status label"
+msgid "Loading package cache."
+msgstr "Paketzwischenspeicher wird geladen."
+
+#: utils/qapt-batch/qaptbatch.cpp:322
+msgctxt "@title:window"
+msgid "Refreshing Package Information"
+msgstr "Paketinformationen werden aktualisiert"
+
+#: utils/qapt-batch/qaptbatch.cpp:323
+msgctxt "@info:status"
+msgid "Checking for new, removed or upgradeable packages"
+msgstr "Suche nach neuen, entfernten oder aktualisierbaren Paketen"
+
+#: utils/qapt-batch/qaptbatch.cpp:325
+msgctxt "@title:window"
+msgid "Downloading"
+msgstr "Herunterladen"
+
+#: utils/qapt-batch/qaptbatch.cpp:327
+msgctxt "@info:status"
+msgid "Downloading package file"
+msgid_plural "Downloading package files"
+msgstr[0] "Paketdatei wird heruntergeladen"
+msgstr[1] "Paketdateien werden heruntergeladen"
+
+#: utils/qapt-batch/qaptbatch.cpp:336
+msgctxt "@title:window"
+msgid "Installing Packages"
+msgstr "Pakete werden installiert"
+
+#: utils/qapt-batch/qaptbatch.cpp:341
+msgctxt "@title:window"
+msgid "Installation Complete"
+msgstr "Installation abgeschlossen"
+
+#: utils/qapt-batch/qaptbatch.cpp:345
+msgctxt "@label"
+msgid "Package installation failed."
+msgstr "Paketinstallation ist fehlgeschlagen."
+
+#: utils/qapt-batch/qaptbatch.cpp:348
+msgctxt "@label"
+msgid "Package successfully installed."
+msgid_plural "Packages successfully installed."
+msgstr[0] "Paket erfolgreich installiert."
+msgstr[1] "Pakete erfolgreich installiert."
+
+#: utils/qapt-batch/qaptbatch.cpp:352
+msgctxt "@title:window"
+msgid "Removal Complete"
+msgstr "Entfernen abgeschlossen"
+
+#: utils/qapt-batch/qaptbatch.cpp:356
+msgctxt "@label"
+msgid "Package removal failed."
+msgstr "Entfernen der Pakete fehlgeschlagen."
+
+#: utils/qapt-batch/qaptbatch.cpp:360
+msgctxt "@label"
+msgid "Package successfully uninstalled."
+msgid_plural "Packages successfully uninstalled."
+msgstr[0] "Paket erfolgreich entfernt."
+msgstr[1] "Pakete erfolgreich entfernt."
+
+#: utils/qapt-batch/qaptbatch.cpp:364
+msgctxt "@title:window"
+msgid "Refresh Complete"
+msgstr "Erneuerung abgeschlossen"
+
+#: utils/qapt-batch/qaptbatch.cpp:367
+msgctxt "@info:status"
+msgid "Refresh failed."
+msgstr "Das Aktualisieren ist fehlgeschlagen."
+
+#: utils/qapt-batch/qaptbatch.cpp:369
+msgctxt "@label"
+msgid "Package information successfully refreshed."
+msgstr "Paketinformationen erfolgreich aktualisiert."
+
+# heruntergeladene Objekte?
+#~ msgctxt "@label"
+#~ msgid "The size of the downloaded items did not equal the expected size."
+#~ msgstr ""
+#~ "Die Größe der heruntergeladenen Einträge stimmt nicht mit der erwarteten "
+#~ "Größe überein."
+
+#~ msgctxt "@title:window"
+#~ msgid "Size Mismatch"
+#~ msgstr "Nicht übereinstimmende Größe"
+
+#~ msgctxt "@info:status"
+#~ msgid "Refresh completed with errors"
+#~ msgstr "Erneuerung mit Fehlern abgeschlossen"
+
+#~ msgctxt "@info:progress Download rate"
+#~ msgid "Unknown"
+#~ msgstr "Unbekannt"
+
+#~ msgctxt "@label"
+#~ msgid "Unable to download the following packages:"
+#~ msgstr "Das Herunterladen folgender Pakete ist nicht möglich:"
+
+#~ msgctxt "@label"
+#~ msgid ""
+#~ "Failed to download %1\n"
+#~ "%2\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Das Herunterladen von %1 ist fehlgeschlagen\n"
+#~ "%2\n"
+#~ "\n"
+
+#~ msgctxt "@title:window"
+#~ msgid "Some Packages Could not be Downloaded"
+#~ msgstr "Einige Pakete können nicht heruntergeladen werden"
+
+#~ msgctxt "@label Shows which package failed"
+#~ msgid "Package: %1"
+#~ msgstr "Paket: %1"
+
+#~ msgctxt "@label Shows the error"
+#~ msgid "Error: %1"
+#~ msgstr "Fehler: %1"
+
+#~ msgid "File: %1"
+#~ msgstr "Datei: %1"
+
+#~ msgctxt "@title:window"
+#~ msgid "Download Failed"
+#~ msgstr "Download fehlgeschlagen"

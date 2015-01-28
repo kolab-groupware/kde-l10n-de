@@ -1,0 +1,470 @@
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2007, 2008.
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2009, 2011, 2013, 2014.
+# Stephan Johach <hunsum@gmx.de>, 2008.
+# Frederik Schwarzer <schwarzer@kde.org>, 2011, 2012.
+# Torbjörn Klatt <torbjoern.k@googlemail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: kabcclient\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-01-08 12:33+0100\n"
+"PO-Revision-Date: 2014-03-31 15:43+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Thomas Reitelbach"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "tr@erdfunkstelle.de"
+
+#: src/inputformatimpls.cpp:46
+msgid "Interprets input as a unique KABC contact identifier"
+msgstr "Interpretiert Eingaben als eindeutige KABC-Kontakt-Bezeichner"
+
+#: src/inputformatimpls.cpp:104
+msgid "Interprets input as vCard data"
+msgstr "Interpretiert Eingaben als vCard-Daten."
+
+#: src/inputformatimpls.cpp:134
+#, kde-format
+msgid ""
+"Warning: using codec '%1' with input format vcard, but vCards are usually "
+"expected to be in UTF-8."
+msgstr ""
+"Warnung: Verwendung des Codecs „%1“ mit dem Eingabeformat vcard, aber vCards "
+"werden normalerweise als UTF-8 erwartet."
+
+#: src/inputformatimpls.cpp:180
+msgid "Interprets input as email and optional name"
+msgstr "Interpretiert Eingaben als E-Mail-Adresse und optionalen Namen"
+
+#: src/inputformatimpls.cpp:244
+msgid ""
+"Tries to get email and name from input,\n"
+"\t\totherwise sets input text for both"
+msgstr ""
+"Versucht E-Mail-Adresse und Name aus der Eingabe zu erkennen.\n"
+"\t\tAnderenfalls wird der Eingabetext für beide gesetzt."
+
+#: src/inputformatimpls.cpp:317
+msgid ""
+"Interprets the input as a name.\n"
+"\t\tRecommended format is 'lastname, firstname middlename'"
+msgstr ""
+"Interpretiert die Eingabe als Name.\n"
+"\t\tEmpfohlenes Format ist „Nachname, Vorname 2. Vorname“"
+
+#: src/inputformatimpls.cpp:381
+msgid "Interprets the input as a delimiter separated list of fields."
+msgstr "Interpretiert die Eingabe als trennzeichenseparierte Feldliste."
+
+#: src/inputformatimpls.cpp:401 src/outputformatimpls.cpp:718
+msgid "Specify one of the following CSV templates:"
+msgstr "Geben Sie eine der folgenden CSV-Vorlagen an:"
+
+#: src/inputformatimpls.cpp:569
+msgid "Select contacts in a dialog instead of reading input text"
+msgstr ""
+"Wählt Kontakte in einem Dialog aus anstelle des Einlesens von Textdaten"
+
+#: src/kabcclient.cpp:48
+msgid "Saving modifications to address book failed"
+msgstr "Speichern der Änderungen in das Adressbuch ist fehlgeschlagen."
+
+#: src/kabcclient.cpp:49
+#, kde-format
+msgid ""
+"Input number %1 matches more than one contact. Skipping it to avoid "
+"undesired results"
+msgstr ""
+"Eingabekennung %1 passt auf mehrere Kontakte. Diese wird übersprungen, um "
+"unerwünschte Ergebnisse zu vermeiden."
+
+#: src/kabcclient.cpp:92
+#, kde-format
+msgid "Input format '%1' not usable with operation '%2'"
+msgstr "Eingabeformat „%1“ ist nicht mit der Operation „%2“ anwendbar."
+
+#: src/main.cpp:63
+msgid "KABC client"
+msgstr "KABC-Client"
+
+#: src/main.cpp:64
+msgid "KDE address book command-line client"
+msgstr "Befehlszeilen-Client für das KDE-Adressbuch"
+
+#: src/main.cpp:67 src/main.cpp:426
+msgid "Kevin Krammer"
+msgstr "Kevin Krammer"
+
+#: src/main.cpp:67 src/main.cpp:424
+msgid "Primary Author"
+msgstr "Hauptautor"
+
+#: src/main.cpp:73
+msgid "Add input data as new address book entries"
+msgstr "Eingabedaten als neuen Adressbucheintrag hinzufügen"
+
+#: src/main.cpp:77
+msgid "Remove entries matching the input data"
+msgstr "Einträge entfernen, die auf die Eingabedaten passen"
+
+#: src/main.cpp:81
+msgid "Merge input data into the address book"
+msgstr "Eingabedaten in das Adressbuch zusammenführen"
+
+#: src/main.cpp:85
+msgid "Search for entries matching the input data"
+msgstr "Nach Einträgen im Adressbuch suchen, die auf die Eingabedaten passen"
+
+#: src/main.cpp:89
+msgid "List all entries in address book"
+msgstr "Alle Adressbuch-Einträge auflisten"
+
+#: src/main.cpp:91
+msgid "Do not save changes to the address book on add/remove operations"
+msgstr "Änderungen am Adressbuch beim Hinzufügen/Entfernen nicht speichern"
+
+#: src/main.cpp:95
+msgid "How to interpret the input data."
+msgstr "Legt fest, wie die Eingabedaten interpretiert werden sollen."
+
+#: src/main.cpp:99
+msgid "Input options for the selected format"
+msgstr "Eingabe-Optionen für das ausgewählte Format"
+
+#: src/main.cpp:103
+msgid "How to present the output data."
+msgstr "Legt fest, wie die Ausgabe-Daten angezeigt werden sollen"
+
+#: src/main.cpp:107
+msgid "Output options for the selected format"
+msgstr "Ausgabe-Optionen für das ausgewählte Format"
+
+#: src/main.cpp:111
+msgid "How to convert the input text."
+msgstr "Legt fest, wie der Eingabetext umgewandelt werden soll."
+
+#: src/main.cpp:115
+msgid "How to convert the output text."
+msgstr "Legt fest, wie der Ausgabetext umgewandelt werden soll."
+
+#: src/main.cpp:117
+msgid "Match key fields case sensitive. UID is always matched case sensitive"
+msgstr ""
+"Groß-/Kleinschreibung in Datenfeldern berücksichtigen. Beim Feld „UID“ wird "
+"Groß-/Kleinschreibung immer beachtet."
+
+#: src/main.cpp:119
+msgid "+[input data]"
+msgstr "+[eingabe daten]"
+
+#: src/main.cpp:119
+msgid "Input to use instead of reading stdin"
+msgstr "Zu verwendende Eingabe an Stelle der Standardeingabe „stdin“"
+
+#: src/main.cpp:159
+msgid "No operation specified, assuming --search"
+msgstr "Keine Operation angegeben, es wird --search angenommen"
+
+#: src/main.cpp:166 src/main.cpp:297
+#, kde-format
+msgid "Invalid input format \"%1\". See --input-format help"
+msgstr ""
+"Ungültiges Eingabeformat „%1“. Weiteres dazu in der Hilfe zu --input-format."
+
+#: src/main.cpp:176
+#, kde-format
+msgid ""
+"Invalid options for input format \"%1\". See --input-format-options help"
+msgstr ""
+"Ungültige Optionen für Eingabeformat „%1“. Weiteres dazu in der Hilfe zu --"
+"input-format-options."
+
+#: src/main.cpp:185 src/main.cpp:351
+#, kde-format
+msgid "Invalid output format \"%1\". See --output-format help"
+msgstr ""
+"Ungültiges Ausgabeformat „%1“. Weiteres dazu in der Hilfe zu --output-format."
+
+#: src/main.cpp:195
+#, kde-format
+msgid ""
+"Invalid options for output format \"%1\". See --output-format-options help"
+msgstr ""
+"Ungültige Optionen für Ausgabeformat „%1“. Weiteres dazu in der Hilfe zu --"
+"output-format-options."
+
+#: src/main.cpp:208
+#, kde-format
+msgid "Invalid input codec \"%1\""
+msgstr "Ungültiger Eingabe-Codec „%1“"
+
+#: src/main.cpp:219
+#, kde-format
+msgid "Invalid output codec \"%1\""
+msgstr "Ungültiger Ausgabe-Codec „%1“"
+
+#: src/main.cpp:251 src/main.cpp:491
+msgid "Unable to perform requested operation"
+msgstr "Die angeforderte Operation kann nicht ausgeführt werden"
+
+#: src/main.cpp:269
+msgid "The following input formats are available:"
+msgstr "Die folgenden Eingabeformate stehen zur Verfügung:"
+
+#: src/main.cpp:282 src/main.cpp:336
+msgid "No description available"
+msgstr "Keine Beschreibung verfügbar"
+
+#: src/main.cpp:308
+#, kde-format
+msgid "No options available for input format %1"
+msgstr "Für das Eingabeformat „%1“ sind keine Optionen verfügbar"
+
+#: src/main.cpp:309
+#, kde-format
+msgid "The following options are available for input format %1:"
+msgstr "Die folgenden Optionen sind für das Eingabeformat „%1“ verfügbar:"
+
+#: src/main.cpp:323
+msgid "The following output formats are available:"
+msgstr "Die folgenden Ausgabeformate stehen zur Verfügung:"
+
+#: src/main.cpp:362
+#, kde-format
+msgid "No options available for output format %1"
+msgstr "Für das Ausgabeformat „%1“ sind keine Optionen verfügbar"
+
+#: src/main.cpp:363
+#, kde-format
+msgid "The following options are available for output format %1:"
+msgstr "Die folgenden Optionen für das Ausgabeformat „%1“ sind verfügbar:"
+
+#: src/main.cpp:385
+msgid ""
+"The input codec transforms the input text data into an universal internal "
+"format"
+msgstr ""
+"Der Eingabe-Codec überführt die Eingabetextdaten in ein universelles "
+"internes Format"
+
+#: src/main.cpp:387
+msgid ""
+"Default input encoding is 'local' unless input format is 'vcard', in which "
+"case the default encoding will be 'utf8'."
+msgstr ""
+"Die Standard-Eingabekodierung ist „local“, es sei denn, das Eingabeformat "
+"ist „vcard“. In diesem Fall ist die Standardkodierung „utf8“."
+
+#: src/main.cpp:395
+msgid ""
+"The output codec transforms the output text data from the internal format to "
+"an 8-bit text format"
+msgstr ""
+"Der Ausgabe-Codec überführt die Ausgabetextdaten aus dem internen Format in "
+"ein 8-Bit-Textformat."
+
+#: src/main.cpp:397
+msgid ""
+"Default output encoding is 'local' unless output format is 'vcard', in which "
+"case the default encoding will be 'utf8'."
+msgstr ""
+"Die Standard-Ausgabekodierung ist „local“, es sei denn, das Ausgabeformat "
+"ist „vcard“. In diesem Fall ist die Standardkodierung „utf8“."
+
+#: src/main.cpp:403
+msgid ""
+"Built-in codecs are UTF8 and LOCAL, respectively using the 8-bit unicode "
+"format or your local encoding"
+msgstr ""
+"Die eingebauten Codecs sind UTF8 und LOCAL, die das 8-Bit-Unicode-Format "
+"bzw. Ihre lokale Kodierung benutzen."
+
+#: src/main.cpp:407
+msgid ""
+"Other codecs can be specified by their ISO code, for example 'ISO 8859-15' "
+"for western european languages, including the Euro sign"
+msgstr ""
+"Andere Codecs können durch die Angabe ihres ISO-Codes angegeben werden, "
+"beispielsweise „ISO 8859-15“ für westeuropäische Sprachen einschließlich des "
+"Euro-Symbols."
+
+#: src/main.cpp:420
+msgid "kabc2mutt"
+msgstr "kabc2mutt"
+
+#: src/main.cpp:421
+msgid "kabc - mutt converter"
+msgstr "kabc – mutt-Konverter"
+
+#: src/main.cpp:424
+msgid "Tobias König"
+msgstr "Tobias König"
+
+#: src/main.cpp:426
+msgid "Contributor"
+msgstr "Beiträge"
+
+#: src/main.cpp:431
+msgid ""
+"Only show contacts where name or address matches <placeholder>substring</"
+"placeholder>"
+msgstr ""
+"Kontakte nur anzeigen, wenn Name oder Adresse auf <placeholder>zeichenkette</"
+"placeholder> passt."
+
+#: src/main.cpp:433
+msgid ""
+"Default format is 'alias'. 'query' returns email[tab]name[tab], as needed by "
+"mutt's query_command"
+msgstr ""
+"Das Standardformat ist „alias“. „query“ gibt email[tab]name[tab] zurück, so "
+"wie es query_command von mutt verlangt."
+
+#: src/main.cpp:436
+msgid "Default key format is 'JohDoe', this option turns it into 'jdoe'"
+msgstr ""
+"Das Standard-Schlüsselformat ist „JohDoe“. Diese Einstellung ändert es auf "
+"„jdoe“."
+
+#: src/main.cpp:438
+msgid "Make queries case insensitive"
+msgstr "Abfragen ignorieren Groß-/Kleinschreibung"
+
+#: src/main.cpp:440
+msgid "Return all mail addresses, not just the preferred one"
+msgstr "Alle E-Mail-Adressen zurückliefern, nicht nur die bevorzugte"
+
+#: src/main.cpp:496
+msgid "Searching KDE address book"
+msgstr "KDE-Adressbuch wird durchsucht"
+
+#: src/main.cpp:502
+msgid "No matches in KDE address book"
+msgstr "Keine Übereinstimmung im KDE-Adressbuch"
+
+#: src/outputformatimpls.cpp:55
+msgid "Writes the unique KABC contact identifier"
+msgstr "Schreibt den eindeutigen Bezeichner für KABC-Kontakte"
+
+#: src/outputformatimpls.cpp:126
+msgid "Exports to vCard format"
+msgstr "Exportiert in das vCard-Format"
+
+#: src/outputformatimpls.cpp:146
+#, kde-format
+msgid "Optionally use a different vCard version (default is %1)"
+msgstr "Optional eine andere vCard-Version verwenden (Voreinstellung: %1)"
+
+#: src/outputformatimpls.cpp:152
+msgid "Uses the vCard version 2.1"
+msgstr "Verwendet vCard in Version 2.1"
+
+#: src/outputformatimpls.cpp:169
+#, kde-format
+msgid ""
+"Warning: using codec '%1' with output format vcard, but vCards are usually "
+"expected to be in UTF-8."
+msgstr ""
+"Achtung: Die Kodierung „%1“ wird mit dem Ausgabeformat „vcard“ verwendet; "
+"vCards werden jedoch in der Kodierung „UTF-8“ erwartet."
+
+#: src/outputformatimpls.cpp:263
+msgid "Writes email address or formatted name &lt;email address&gt;"
+msgstr ""
+"Schreibt die E-Mail-Adresse oder den formatierten Namen &lt;E-Mail-"
+"Adresse&gt;"
+
+#: src/outputformatimpls.cpp:291
+msgid "Comma separated list of: allemails, withname"
+msgstr "Kommagetrennte Liste von: alle Mails, mit Name"
+
+#: src/outputformatimpls.cpp:296 src/outputformatimpls.cpp:453
+msgid "List all email addresses of each contact"
+msgstr "Alle E-Mail-Adressen jedes Kontaktes auflisten"
+
+#: src/outputformatimpls.cpp:301
+msgid ""
+"Prepend formatted name, e.g\n"
+"\t\tJohn Doe &lt;jdoe@foo.com&gt;"
+msgstr ""
+"Formatierten Namen voranstellen, z. B.\n"
+"\t\tThomas Reitelbach&lt;treitelbach@meinedomain.com&gt;"
+
+#: src/outputformatimpls.cpp:404
+msgid "Formats output as needed by the mail client mutt"
+msgstr ""
+"Formatiert die Ausgabe so, wie sie vom E-Mail-Programm mutt benötigt wird"
+
+#: src/outputformatimpls.cpp:447
+msgid ""
+"Comma separated list of: allemails, query, alias, altkeys, prefernick, "
+"alsonick. Default is alias"
+msgstr ""
+"Kommagetrennte Liste von: alle Mails, Abfrage, Alias, Alt. Tasten, "
+"Bevorzugter Kurzname, Alternativer Kurzname. Voreinstellung ist Alias"
+
+#: src/outputformatimpls.cpp:458
+msgid ""
+"Use mutt's query format, e.g.\n"
+"\t\tjdoe@foo.com [tab] John Doe\n"
+"\t\tConflicts with alias"
+msgstr ""
+"Abfrageformat von Mutt verwenden. D. h.\n"
+"\t\tjdoe@foo.com [tab] John Doe\n"
+"\t\tSteht in Konflikt mit Alias"
+
+#: src/outputformatimpls.cpp:465
+msgid ""
+"Use mutt's alias format, e.g.\n"
+"\t\talias JohDoe[tab]John Doe &lt;jdoe@foo.com&gt;\n"
+"\t\tConflicts with query"
+msgstr ""
+"Abfrageformat von Mutt verwenden. D. h.\n"
+"\t\tjdoe@foo.com [tab] John Doe\n"
+"\t\tSteht in Konflikt mit Abfrage"
+
+#: src/outputformatimpls.cpp:472
+msgid ""
+"Use alternative keys with alias format, e.g.\n"
+"\t\talias jdoe[tab]John Doe &lt;jdoe@foo.com&gt;"
+msgstr ""
+"Alternative Tasten mit Alias-Format verwenden. D. h.\n"
+"\t\talias jdoe[tab]John Doe &lt;jdoe@foo.com&gt;"
+
+#: src/outputformatimpls.cpp:478
+msgid ""
+"If a nick name exists use it instead of the key, e.g.\n"
+"\t\talias johnny[tab]John Doe &lt;jdoe@foo.com&gt;"
+msgstr ""
+"Sofern ein Kurzname existiert, verwende diesen an Stelle der Taste. D. h.\n"
+"\t\talias johnny[tab]John Doe &lt;jdoe@foo.com&gt;"
+
+#: src/outputformatimpls.cpp:484
+msgid ""
+"Generate additional aliases with the nick name as the key, e.g.\n"
+"\t\talias johnny[tab]John Doe &lt;jdoe@foo.com&gt;\n"
+"\t\tDeactivates 'prefernick' to avoid duplicates"
+msgstr ""
+"Weitere Aliase mit dem Kurznamen als Schlüssel erzeugen, z. B.\n"
+"\t\tAlias johnny[tab]John Doe &lt;jdoe@foo.com&gt;\n"
+"\t\tDeaktiviert 'Bevorzugter Kurzname', um Duplikate zu vermeiden"
+
+#: src/outputformatimpls.cpp:560
+msgid "preferred"
+msgstr "bevorzugt"
+
+#: src/outputformatimpls.cpp:698
+msgid "Writes the data as a delimiter separated list of values"
+msgstr ""
+"Schreibt die Daten in eine mit Trennzeichen separierte Liste von Werten."

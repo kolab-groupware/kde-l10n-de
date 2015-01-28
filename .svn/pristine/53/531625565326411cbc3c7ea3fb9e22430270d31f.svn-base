@@ -1,0 +1,931 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:26+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: index.docbook:12 index.docbook:32
+#, no-c-format
+msgid "Window Behavior"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:14
+#, no-c-format
+msgid "&Mike.McBride; &Mike.McBride.mail;"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:15
+#, no-c-format
+msgid "&Jost.Schenck; &Jost.Schenck.mail;"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:16
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+
+#. Tag: date
+#: index.docbook:19
+#, no-c-format
+msgid "2013-11-15"
+msgstr ""
+
+#. Tag: releaseinfo
+#: index.docbook:20
+#, no-c-format
+msgid "&kde; 4.12"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:23
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:24
+#, no-c-format
+msgid "KControl"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:25
+#, no-c-format
+msgid "system settings"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:26
+#, no-c-format
+msgid "actions"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:27
+#, no-c-format
+msgid "window placement"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:28
+#, no-c-format
+msgid "window size"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:34
+#, no-c-format
+msgid ""
+"In the upper part of this control module you can see several tabs: <guilabel>"
+"Focus</guilabel>, <guilabel>Titlebar Actions</guilabel>, <guilabel>"
+"Window Actions</guilabel>, <guilabel>Moving</guilabel> and <guilabel>"
+"Advanced</guilabel>. In the <guilabel>Focus</guilabel> "
+"panel you can configure how windows gain or lose focus, &ie; become active or "
+"inactive. Using <guilabel>Titlebar Actions</guilabel> and <guilabel>"
+"Window Actions</guilabel> you can configure how titlebars and windows react to "
+"mouse clicks. <guilabel>Moving</guilabel> allows you to configure how windows "
+"move and place themselves when started. The <guilabel>Advanced</guilabel> "
+"options cover some specialized options like <quote>window tabbing</quote> "
+"and <quote>window shading</quote>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:50
+#, no-c-format
+msgid ""
+"Please note that the configuration in this module will not take effect if you "
+"do not use &kde;'s native window manager, &kwin;. If you do use a different "
+"window manager, please refer to its documentation for how to customize window "
+"behavior."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:59
+#, no-c-format
+msgid "Focus"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:61
+#, no-c-format
+msgid ""
+"The <quote>focus</quote> of the desktop refers to the window which the user is "
+"currently working on. The window with focus is often referred to as the <quote>"
+"active window</quote>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:67
+#, no-c-format
+msgid ""
+"Focus does not necessarily mean the window is the one at the front &mdash; this "
+"is referred to as <quote>raised</quote>, and although this is configured here "
+"as well, focus and raising of windows are configured independently."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:73
+#, no-c-format
+msgid "Focus Policy"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:75
+#, no-c-format
+msgid "There are six methods &kde; can use to determine the current focus:"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:81
+#, no-c-format
+msgid "Click To Focus"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:83
+#, no-c-format
+msgid ""
+"A window becomes active when you click into it. This behaviour is common on "
+"other operating systems and likely what you want."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:90
+#, no-c-format
+msgid "Click To Focus - Mouse Precedence"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:92
+#, no-c-format
+msgid ""
+"This is mostly the same as <guilabel>Click To Focus</guilabel>"
+". If an active window has to be chosen by the system (&eg; because the "
+"currently active one was closed) the window under the mouse is the preferred "
+"candidate. Unusual, but possible variant of <guilabel>Click To Focus</guilabel>"
+"."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:103
+#, no-c-format
+msgid "Focus Follows Mouse"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:105
+#, no-c-format
+msgid ""
+"Moving the mouse pointer actively over a normal window activates it. New "
+"windows such as the mini command line invoked with <keycombo action=\"simul\">"
+"&Alt;<keycap>F2</keycap></keycombo> will receive the focus, without you having "
+"to point the mouse at them explicitly. &eg; windows randomly appearing under "
+"the mouse will not gain the focus. Focus stealing prevention takes place as "
+"usual. Think as <guilabel>Click To Focus</guilabel> just without having to "
+"actually click."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:115
+#, no-c-format
+msgid ""
+"In other window managers, this is sometimes known as <quote>"
+"Sloppy focus follows mouse</quote>."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:123
+#, no-c-format
+msgid "Focus Follows Mouse - Mouse Precedence"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:125
+#, no-c-format
+msgid ""
+"This is mostly the same as <guilabel>Focus Follows Mouse</guilabel>"
+". If an active window has to be chosen by the system (&eg; because the "
+"currently active one was closed) the window under the mouse is the preferred "
+"candidate. Choose this, if you want a hover controlled focus."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:136
+#, no-c-format
+msgid "Focus Under Mouse"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:138
+#, no-c-format
+msgid ""
+"The window that happens to be under the mouse pointer becomes active. If the "
+"mouse is not over a window (for instance, it's on the desktop) the last window "
+"that was under the mouse has focus. New windows such as the mini command line "
+"invoked with <keycombo action=\"simul\">&Alt;<keycap>F2</keycap></keycombo> "
+"will not receive the focus, you must move the mouse over them to type."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:149
+#, no-c-format
+msgid "Focus Strictly Under Mouse"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:151
+#, no-c-format
+msgid ""
+"Similar to <guilabel>Focus Under Mouse</guilabel>, but even more strict with "
+"its interpretation. Only the window under the mouse pointer is active. If the "
+"mouse pointer is not over a window, no window has focus. New windows such as "
+"the mini command line invoked with <keycombo action=\"simul\">&Alt;<keycap>"
+"F2</keycap></keycombo> will not receive the focus, you must move the mouse over "
+"them to type."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:163
+#, no-c-format
+msgid ""
+"Note that <guilabel>Focus Under Mouse</guilabel> and <guilabel>"
+"Focus Strictly Under Mouse</guilabel> prevent certain features, such as "
+"<guilabel>Focus stealing prevention</guilabel> and the <keycombo "
+"action=\"simul\">&Alt;&Tab;</keycombo> walk-through-windows dialog, from "
+"working properly."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:173
+#, no-c-format
+msgid "Focus stealing prevention level"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:175
+#, no-c-format
+msgid ""
+"This option specifies how much KWin will try to prevent unwanted focus stealing "
+"caused by unexpected activation of new windows."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:180
+#, no-c-format
+msgid "None"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:181
+#, no-c-format
+msgid "Prevention is turned off and new windows always become activated."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:184
+#, no-c-format
+msgid "<guilabel>Low</guilabel>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:185
+#, no-c-format
+msgid ""
+"Prevention is enabled; when some window does not have support for the "
+"underlying mechanism and KWin cannot reliably decide whether to activate the "
+"window or not, it will be activated. This setting may have both worse and "
+"better results than the medium level, depending on the applications."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:191
+#, no-c-format
+msgid "Medium"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:192
+#, no-c-format
+msgid "Prevention is enabled."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:196
+#, no-c-format
+msgid "High"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:197
+#, no-c-format
+msgid ""
+"New windows get activated only if no window is currently active or if they "
+"belong to the currently active application. This setting is probably not really "
+"usable when not using mouse focus policy."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:203
+#, no-c-format
+msgid "Extreme"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:204
+#, no-c-format
+msgid "All windows must be explicitly activated by the user."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:207
+#, no-c-format
+msgid ""
+"Windows that are prevented from stealing focus are marked as demanding "
+"attention, which by default means their taskbar entry will be highlighted. This "
+"can be changed in the Notifications control module."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:213
+#, no-c-format
+msgid "Raising window"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:214
+#, no-c-format
+msgid ""
+"Once you have determined the focus policy, there are the window raising "
+"options."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:219
+#, no-c-format
+msgid ""
+"By placing a mark in front of <guilabel>Raise on hover, delayed by</guilabel>"
+", &kde; can bring a window to the front if the mouse is over that window for a "
+"specified period of time. You can determine the delay for this option by using "
+"the spin box control."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:226
+#, no-c-format
+msgid ""
+"Setting the delay too short will cause a rapid fire changing of windows, which "
+"can be quite distracting. Most people will like a delay of 100-300 ms. This is "
+"responsive, but it will let you slide over the corners of a window on your way "
+"to your destination without bringing that window to the front."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:235
+#, no-c-format
+msgid ""
+"If you do not use auto raise, make sure the <guilabel>"
+"Click raises active window</guilabel> option has a mark in front of it. You "
+"will not be happy with both auto raise and <guilabel>"
+"Click raise active window</guilabel> disabled, the net effect is that windows "
+"are not raised at all."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:248
+#, no-c-format
+msgid "Titlebar Actions"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:250
+#, no-c-format
+msgid ""
+"In this panel you can configure what happens to windows when a mousebutton is "
+"clicked on their titlebars."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:256
+#, no-c-format
+msgid "Titlebar double-click"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:258
+#, no-c-format
+msgid ""
+"In this drop down box you can select either <guilabel>Shade</guilabel>"
+", several variations of <guilabel>Maximize</guilabel> or <guilabel>"
+"Lower</guilabel>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:264
+#, no-c-format
+msgid ""
+"Selecting <guilabel>Maximize</guilabel> causes &kde; to maximize the window "
+"whenever you doubleclick on the titlebar. You can further choose to maximize "
+"windows only horizontally or only vertically."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:270
+#, no-c-format
+msgid ""
+"<guilabel>Shade</guilabel>, on the other hand, causes the window to be reduced "
+"to simply the titlebar. Double clicking on the titlebar again, restores the "
+"window to its normal size."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:278
+#, no-c-format
+msgid ""
+"You can have windows automatically unshade when you simply place the mouse over "
+"their shaded titlebar. Just check the <guilabel>Enable hover</guilabel> "
+"check box in the <guilabel>Advanced</guilabel> tab of this module. This is a "
+"great way to reclaim desktop space when you are cutting and pasting between a "
+"lot of windows, for example."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:290
+#, no-c-format
+msgid "Titlebar &amp; Frame"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:292
+#, no-c-format
+msgid ""
+"This section allows you to determine what happens when you single click on the "
+"titlebar or frame of a window. Notice that you can have different actions "
+"associated with the same click depending on whether the window is active or "
+"not."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:299
+#, no-c-format
+msgid ""
+"For each combination of mousebuttons, Active and Inactive, you can select the "
+"most appropriate choice. The actions are as follows:"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:305 index.docbook:416
+#, no-c-format
+msgid "Activate"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:307
+#, no-c-format
+msgid "Make this window active."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:314 index.docbook:460
+#, no-c-format
+msgid "Lower"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:316 index.docbook:462
+#, no-c-format
+msgid ""
+"Will move this window to the bottom of the display. This will get the window "
+"out of the way."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:324 index.docbook:479
+#, no-c-format
+msgid "Nothing"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:326 index.docbook:481
+#, no-c-format
+msgid "Just like it says. Nothing happens."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:333
+#, no-c-format
+msgid "Operations Menu"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:335
+#, no-c-format
+msgid ""
+"Will bring up a small submenu, where you can choose window related commands "
+"(&ie; Maximize, Minimize, Close, &etc;)."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:343 index.docbook:488
+#, no-c-format
+msgid "Raise"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:345 index.docbook:490
+#, no-c-format
+msgid ""
+"Will bring the window to the top of the display. All other windows which "
+"overlap with this one, will be hidden <quote>below</quote> it."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:353 index.docbook:507
+#, no-c-format
+msgid "Toggle Raise &amp; Lower"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:355 index.docbook:509
+#, no-c-format
+msgid ""
+"This will raise windows which are not on top, and lower windows which are "
+"already on top."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:368
+#, no-c-format
+msgid "Maximize Button"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:369
+#, no-c-format
+msgid ""
+"This section allows you to determine the behavior of the three mouse buttons "
+"onto the maximize button. You have the choice between vertical only, horizontal "
+"only or both directions."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:379
+#, no-c-format
+msgid "Window Actions"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:382
+#, no-c-format
+msgid "Inactive Inner Window"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:384
+#, no-c-format
+msgid ""
+"This part of the module, allows you to configure what happens when you click on "
+"an inactive window, with any of the three mouse buttons or use the mouse wheel."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:390
+#, no-c-format
+msgid "Your choices are as follows:"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:396
+#, no-c-format
+msgid "Activate, Raise &amp; Pass Click"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:398
+#, no-c-format
+msgid ""
+"This makes the clicked window active, raises it to the top of the display, and "
+"passes a mouse click to the application within the window."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:406
+#, no-c-format
+msgid "Activate &amp; Pass Click"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:408
+#, no-c-format
+msgid ""
+"This makes the clicked window active and passes a mouse click to the "
+"application within the window."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:418
+#, no-c-format
+msgid ""
+"This simply makes the clicked window active. The mouse click is not passed on "
+"to the application within the window."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:426
+#, no-c-format
+msgid "Activate &amp; Raise"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:428
+#, no-c-format
+msgid ""
+"This makes the clicked window active and raises the window to the top of the "
+"display. The mouse click is not passed on to the application within the window."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:442
+#, no-c-format
+msgid "Inner Window, Titlebar &amp; Frame"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:444
+#, no-c-format
+msgid ""
+"This bottom section, allows you to configure additional actions, when a "
+"modifier key (by default &Alt;) is pressed, and a mouse click is made on a "
+"window."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:449
+#, no-c-format
+msgid ""
+"Once again, you can select different actions for <mousebutton>Left</mousebutton>"
+", <mousebutton>Middle</mousebutton> and <mousebutton>Right</mousebutton> "
+"button clicks and the <guilabel>Mouse wheel</guilabel>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:456
+#, no-c-format
+msgid "Your choices are:"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:470
+#, no-c-format
+msgid "Move"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:472
+#, no-c-format
+msgid "Allows you to drag the selected window around the desktop."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:498
+#, no-c-format
+msgid "Resize"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:500
+#, no-c-format
+msgid "Allows you to change the size of the selected window."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:533
+#, no-c-format
+msgid "Moving"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:536
+#, no-c-format
+msgid "Windows"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:537
+#, no-c-format
+msgid ""
+"The options here determine how windows appear on screen when you are moving "
+"them."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:543
+#, no-c-format
+msgid "Display window geometry when moving or resizing"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:545
+#, no-c-format
+msgid ""
+"Enable this option if you want a window's geometry to be displayed while it is "
+"being moved or resized. The window position relative to the top-left corner of "
+"the screen is displayed together with its size."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:555
+#, no-c-format
+msgid "Snap Zones"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:557
+#, no-c-format
+msgid ""
+"The rest of this page allows you to configure the <guilabel>"
+"Snap Zones</guilabel>. These are like a magnetic field along the side of the "
+"desktop and each window, which will make windows snap alongside when moved "
+"near."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:564
+#, no-c-format
+msgid "Border snap zone:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:567
+#, no-c-format
+msgid ""
+"Here you can set the snap zone for screen borders. Moving a window within the "
+"configured distance will make it snap to the edge of the desktop."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:574
+#, no-c-format
+msgid "Window snap zone:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:577
+#, no-c-format
+msgid ""
+"Here you can set the snap zone for windows. As with screen borders, moving a "
+"window near to another will make it snap to the edge as if the windows were "
+"magnetized."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:584
+#, no-c-format
+msgid "Center snap zone:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:587
+#, no-c-format
+msgid ""
+"Here you can set the snap zone for the screen center, &ie; the <quote>"
+"strength</quote> of the magnetic field which will make windows snap to the "
+"center of the screen when moved near it."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:595
+#, no-c-format
+msgid "Snap windows only when overlapping"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:598
+#, no-c-format
+msgid ""
+"If checked, windows will not snap together if they are only near each other, "
+"they must be overlapping, by the configured amount or less."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:609
+#, no-c-format
+msgid "Advanced"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:611
+#, no-c-format
+msgid ""
+"In the <guilabel>Advanced</guilabel> panel you can do more advanced fine tuning "
+"to the window behavior."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:617
+#, no-c-format
+msgid "Shading"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:620
+#, no-c-format
+msgid "Enable hover"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:622
+#, no-c-format
+msgid ""
+"If this option is enabled, a shaded window will un-shade automatically when the "
+"mouse pointer has been over the titlebar for some time. Use the spinbox to "
+"configure the delay un-shading."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:632
+#, no-c-format
+msgid "Window Tabbing"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:635
+#, no-c-format
+msgid "Automatically group similar windows"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:636
+#, no-c-format
+msgid ""
+"When turned on attempt to automatically detect when a newly opened window is "
+"related to an existing one and place them in the same window group."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:641
+#, no-c-format
+msgid "Switch to automatically grouped windows immediately"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:642
+#, no-c-format
+msgid ""
+"When turned on immediately switch to any new window tabs that were "
+"automatically added to the current group."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:647
+#, no-c-format
+msgid "Placement"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:648
+#, no-c-format
+msgid ""
+"The placement policy determines where a new window will appear on the desktop. "
+"<guilabel>Smart</guilabel> will try to achieve a minimum overlap of windows, "
+"<guilabel>Cascade</guilabel> will cascade the windows, and <guilabel>"
+"Random</guilabel> will use a random position. <guilabel>Centered</guilabel> "
+"will open all new windows in the center of the screen, and <guilabel>"
+"Zero-Cornered</guilabel> will open all windows with their top left corner in "
+"the top left corner of the screen."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:661
+#, no-c-format
+msgid "Special Window"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:663
+#, no-c-format
+msgid "Hide utility windows for inactive applications"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:664
+#, no-c-format
+msgid ""
+"When turned on, utility windows (tool windows, torn-off menus,...) of inactive "
+"applications will be hidden and will be shown only when the application becomes "
+"active. Note that applications have to mark the windows with the proper window "
+"type for this feature to work."
+msgstr ""

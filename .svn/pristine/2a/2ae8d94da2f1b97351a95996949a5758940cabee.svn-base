@@ -1,0 +1,134 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<article id="clock" lang="&language;">
+<articleinfo>
+<title
+>Datum &amp; Zeit</title>
+<authorgroup>
+<author
+>&Mike.McBride; &Mike.McBride.mail;</author>
+<othercredit role="translator"
+><firstname
+>Frank</firstname
+><surname
+>Schütte</surname
+><affiliation
+><address
+><email
+>f.Schuette@t-online.de</email
+></address
+></affiliation
+><contrib
+>Deutsche Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2013-12-05</date>
+<releaseinfo
+>4.12</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Systemeinstellungen</keyword>
+<keyword
+>clock</keyword>
+<keyword
+>Datum</keyword>
+<keyword
+>Zeit</keyword>
+<keyword
+>set</keyword>
+<keyword
+>Ändern</keyword>
+</keywordset>
+</articleinfo>
+
+<sect1 id="datetime">
+
+<title
+>Datum &amp; Zeit</title>
+
+<para
+>Dieses Modul erlaubt die Einstellung von Datum und Zeit über eine grafische Benutzeroberfläche.</para>
+
+<note
+><para
+>Da diese Einstellung für alle Benutzer verwendet werden, benötigen Sie Rechte als Systemverwalter (<systemitem class="username"
+>root</systemitem
+>), um das Systemdatum und die Zeit zu verändern. Wenn Sie diese Rechte nicht haben, zeigt das Modul lediglich die aktuellen Einstellungen an, aber Ihre Änderungen werden nicht gespeichert.</para
+></note>
+
+<sect2 id="date-change">
+<title
+>Datum und Zeit</title>
+
+<para
+>Aktivieren Sie <guilabel
+>Datum und Uhrzeit automatisch setzen</guilabel
+>, dann können Sie einen <guilabel
+>Zeitserver</guilabel
+> im Auswahlfeld einstellen und alle anderen Einstellungen in diesem Dialog sind deaktiviert. </para>
+
+<note>
+<para
+>In diesem Modul werden die Programme <command
+>rdate</command
+> oder <command
+>ntpdate</command
+> verwendet, um Datum und Zeit bei einem Zeitserver abzufragen. Dies passiert, wenn Sie bei der Anmeldung in &kde; eine Verbindung zum Internet haben, oder wenn Sie später diese Verbindung herstellen und damit Zeitserver erreichbar sind.</para
+> 
+<para
+>Beide Programme sind einfache <acronym
+>NTP</acronym
+>-Dienste, die die Uhr des Rechners auf die Zeit einstellen, die von einem oder mehreren <acronym
+>NTP</acronym
+>-Zeitservern abgefragt wurden. Dieses Verfahren ist aber nicht ausreichend, um für einen längeren Zeitraum eine korrekte Zeit der Rechneruhr zu gewährleisten. Für Rechner, die wie zum Beispiel Laptops keine dauernde Verbindung zum Netzwerk haben, ist es nützlich, um gelegentlich die Zeit einzustellen.</para>
+</note>
+
+<para
+>Wenn Sie keinen Zeitserver verwenden, kann das Datum im unteren Teil der Karteikarte eingestellt werden. Wählen Sie den Monat und das Jahr mit den Pfeilen über dem Kalender und den Tag des Monats durch Klicken auf den Tag im Kalender.</para>
+<para
+>Unter dem Kalender kann durch Klicken auf das Kalendersymbol das aktuelle Datum gewählt werden. Außerdem ist auch die direkte Eingabe des Datums im Textfeld oder die Einstellung der Kalenderwoche des Jahres im Auswahlfeld möglich.</para>
+
+<para
+>Die Zeit kann über das Drehfeld im unteren Bereich der Uhr gesetzt werden. Sie können aber auch direkt einen Wert eingeben.</para>
+<!--Outdated
+<note
+><para
+>The time is represented in 24 hour format.  If you want
+the system time to be set to 8:00 PM, you need to set the hour spinbox
+to <guilabel
+>20</guilabel
+> (8 + 12).  If you want the system time set
+to 8:00 AM, you should set the hour spinbox to
+<guilabel
+>8</guilabel
+>.</para
+></note>
+-->
+</sect2>
+
+<sect2 id="date-time-tone">
+<title
+>Zeitzone</title>
+<para
+>Um eine neue Zeitzone einzustellen, wählen Sie einen Eintrag aus der Liste. Mit dem Filterfeld können Sie die Anzeige auf einen  bestimmte <guilabel
+>Bezirk</guilabel
+> oder <guilabel
+>Region</guilabel
+> einschränken.</para>
+</sect2>
+
+</sect1>
+
+</article>

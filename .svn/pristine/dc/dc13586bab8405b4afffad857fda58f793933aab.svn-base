@@ -1,0 +1,231 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE">
+]>
+<article id="desktopthemedetails" lang="&language;">
+<articleinfo>
+<title
+>Arbeitsflächen-Design</title>
+<authorgroup>
+<author
+><firstname
+>Andrew</firstname
+> <surname
+>Lake</surname
+></author>
+<othercredit role="translator"
+><firstname
+>Johannes</firstname
+><surname
+>Obermayr</surname
+><affiliation
+><address
+><email
+>johannesobermayr@gmx.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2013-06-02</date>
+<releaseinfo
+>&kde; 4.11</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Systemeinstellungen</keyword>
+<keyword
+>Arbeitsfläche</keyword>
+<keyword
+>Design</keyword>
+<keyword
+>Plasma</keyword>
+</keywordset>
+</articleinfo>
+
+<sect1 id="kcm_desktoptheme">
+<title
+>Die Karteikarte Design</title>
+ 
+<para
+>Auf dieser Karteikarte wird eine Liste der verfügbaren Designs angezeigt. Ein Design kann durch Klicken auf ein Element in der Liste ausgewählt werden.</para>
+
+<para
+>Mit dem Knopf <guibutton
+>Neue Designs holen ...</guibutton
+> wird der Dialog <guilabel
+>Neue Erweiterungen</guilabel
+> gestartet, hier können weitere Designs aus dem Internet heruntergeladen werden.</para>
+
+</sect1>
+
+<sect1 id="kcm_desktopthemedetails">
+<title
+>Die Karteikarte Details</title>
+
+<para
+>Ein Plasma-Design für die &kde;-Arbeitsfläche besteht aus mehreren Komponenten bzw. Elementen, wie zum Beispiel einem SVG-Hintergrund und einem Farbschema. Dieses Einstellungsmodul ermöglicht die benutzerdefinierte Gestaltung des Plasma-Designs der Arbeitsfläche und das Ersetzen von Bestandteilen des Designs mit Elementen von anderen Designs oder Dateien. </para>
+
+<para
+>Ein Arbeitsflächen-Design besteht aus einzelnen Elementen für Kontrollleiste, Programmstarter, Uhr usw.</para>
+
+<note
+><para
+>Möchten Sie Ihr aktuelles Design komplett umstellen (zum Beispiel von Air auf Glassified), öffnen Sie dazu die Karteikarte <guilabel
+>Design</guilabel
+>. </para
+></note>
+
+<sect2 id="start">
+<title
+>Kurzeinführung</title>
+<para
+>Laden Sie zuerst ein oder mehrere Designs, die zur Anpassung der Arbeitsfläche verwendet werden sollen, indem Sie auf den Kopf <guibutton
+>Neue Designs holen ...</guibutton
+> auf der Karteikarte <guilabel
+>Design</guilabel
+> klicken.</para>
+
+<para
+>Alle vorhandenen Designs werden dann angezeigt, das aktuell verwendete ist hervorgehoben.</para>
+
+<para
+>Wählen Sie in der Liste ein Design als Grundlage für Ihre Änderungen. Wählen Sie dann für jedes Element, das sie anpassen möchten, ein neues Design, zum Beispiel für die Kontrollleiste das Design „Glassified“, für den Fensterelement-Hintergrund „Air“ &etc;</para>
+
+<para
+>Hier wird „Air“ als Design für die meisten Elemente benutzt und der Hintergrund der Kontrollleiste in „Glassified“, die Analoge Uhr auch in „Glassified“ und Notizen in „Oxygen“ geändert.</para>
+
+<para>
+<screenshot>
+<screeninfo
+>Plasma-Design anpassen</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="customizing.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Plasma-Design anpassen</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Nach Abschluss der Änderungen klicken Sie auf <guibutton
+>Anwenden</guibutton
+>. Dadurch wird ein neues Design mit dem Namen <guilabel
+>(Benutzerdefiniert)</guilabel
+> erstellt, welches dann für Ihre Arbeitsfläche benutzt wird. </para>
+</sect2>
+
+<sect2 id="custom">
+<title
+>Ein benutzerdefiniertes Design erstellen</title>
+<para
+>Beim Öffnen dieses Einstellungsmoduls werden die Einträge des aktuellen Designs für die Arbeitsfläche angezeigt. Möchten Sie ein anderes Design als Grundlage für die Anpassung benutzen, wählen Sie es aus dem Auswahlfeld über der angezeigten Liste der Designelemente. Dieses Design wird als Basis des neuen benutzerdefinierten Designs verwendet.</para>
+
+<para
+>In der Liste der Designelemente kann für jedes Element, das geändert werden soll, aus dem Auswahlfeld rechts eine anderes Element als Ersatz gewählt werden. Dafür steht ein entsprechendes Element aus einem anderen Design oder eine Datei als Auswahl zur Verfügung. Die Elemente der &plasma;-Arbeitsflächendesigns bestehen aus SVG-Dateien, nur beim Farbschema handelt es sich um eine &kde;-Farbschemadatei. </para>
+
+<para
+>Nach Abschluss der Änderungen klicken Sie auf <guibutton
+>Anwenden</guibutton
+>. Dadurch wird ein neues Design mit dem Namen <guilabel
+>(Benutzerdefiniert)</guilabel
+> erstellt, welches dann über die <guilabel
+>Arbeitsflächen-Einstellungen</guilabel
+> auf der Plasma-Arbeitsfläche ausgewählt werden kann. </para>
+
+<para>
+<screenshot>
+<screeninfo
+>Ihr benutzerdefiniertes Design</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="clicking-apply.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Benutzerdefiniert</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<note
+><para
+>Die angezeigten Elemente des Designs sind die meist gesehenen Elemente des Plasma-Arbeitsflächen-Designs. Die anderen Elemente der Designs werden nicht aufgeführt. Das neu erstellte Design wird deshalb für die nicht aufgeführten Elemente die entsprechenden Elemente des <emphasis
+>Ausgangs</emphasis
+>-Designs verwenden. </para
+></note>
+</sect2>
+
+<sect2 id="naming">
+<title
+>Benutzerdefiniertes Design benennen</title>
+<para
+>Ein Name für das geänderte Design kann durch Klicken auf <guilabel
+>Mehr</guilabel
+> und Eingabe des Namens in das entsprechende Feld festgelegt werden. Zudem können hier der <guilabel
+>Autor</guilabel
+>, die <guilabel
+>Version</guilabel
+> und eine <guilabel
+>Beschreibung</guilabel
+> eingegeben werden. Nach Abschluss muss lediglich auf <guibutton
+>Anwenden</guibutton
+> geklickt werden. </para>
+</sect2>
+
+<sect2 id="removing">
+<title
+>Design entfernen</title>
+<para
+>Das zu entfernende Design muss aus dem Auswahlfeld über der Liste der Designelemente ausgewählt werden. Danach kann es über <menuchoice
+><guimenu
+>Mehr</guimenu
+><guimenuitem
+>Design entfernen</guimenuitem
+></menuchoice
+> gelöscht werden. </para>
+</sect2>
+
+<sect2 id="exporting">
+<title
+>Design in eine Datei exportieren</title>
+<para
+>Das neu erstellte Design kann mit anderen geteilt werden, indem es zu einer Datei exportiert wird. Dazu muss das Design zunächst aus dem Auswahlfeld über der Liste der Designelemente ausgewählt werden. Über <menuchoice
+><guimenu
+>Mehr</guimenu
+><guimenuitem
+>Design exportieren ...</guimenuitem
+></menuchoice
+> und anschließender Eingabe des Namens für eine <filename
+>.zip</filename
+>-Datei wird es unter diesem Namen gespeichert. </para>
+</sect2>
+
+</sect1>
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

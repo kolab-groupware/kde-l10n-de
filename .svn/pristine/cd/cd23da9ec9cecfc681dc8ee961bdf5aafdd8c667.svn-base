@@ -1,0 +1,786 @@
+# Frank Schütte <F.Schuette@t-online.de>, 2004.
+# Burkhard Lück <lueck@hube-lueck.de>, 2006, 2008, 2009, 2010, 2013.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: ktuberling_technical-reference\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: 2013-06-24 13:57+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: author
+#: technical-reference.docbook:5
+#, no-c-format
+msgid "<firstname>Éric</firstname> <surname>Bischoff</surname>"
+msgstr "<firstname>Éric</firstname><surname>Bischoff</surname>"
+
+#. Tag: trans_comment
+#: technical-reference.docbook:9
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Johannes</"
+"firstname><surname>Obermayr</"
+"surname><affiliation><address><email>johannesobermayr@gmx.de</email></"
+"address></affiliation><contrib>Übersetzung</contrib></othercredit>"
+
+#. Tag: date
+#: technical-reference.docbook:12
+#, no-c-format
+msgid "2009-12-15"
+msgstr "2009-12-15"
+
+#. Tag: releaseinfo
+#: technical-reference.docbook:13
+#, no-c-format
+msgid "0.6.0"
+msgstr "0.6.0"
+
+#. Tag: keyword
+#: technical-reference.docbook:16
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: technical-reference.docbook:17
+#, no-c-format
+msgid "KTuberling"
+msgstr "KTuberling"
+
+#. Tag: keyword
+#: technical-reference.docbook:18
+#, no-c-format
+msgid "technical reference"
+msgstr "Technische Referenz"
+
+#. Tag: title
+#: technical-reference.docbook:22
+#, no-c-format
+msgid "Technical References"
+msgstr "Technische Referenz"
+
+#. Tag: para
+#: technical-reference.docbook:24
+#, no-c-format
+msgid ""
+"&ktuberling; offers a gentle and rewarding introduction to &kde; "
+"customization and programming. The application can be extended. For example, "
+"without any coding, new playgrounds can be added by changing the graphics "
+"files. By adding appropriate sound files, translators can change the sounds "
+"to their native tongue!"
+msgstr ""
+"&ktuberling; bietet eine sanfte und lohnende Einführung in die Anpassung und "
+"Programmierung von &kde;. &ktuberling; kann beliebig erweitert werden. So "
+"können beispielsweise neue Spielfelder ohne Programmieren durch Ändern der "
+"Grafikdateien hinzugefügt werden. Durch Hinzufügen geeigneter Audiodateien "
+"können Übersetzer die Klänge in ihre Muttersprache ändern."
+
+#. Tag: para
+#: technical-reference.docbook:32
+#, no-c-format
+msgid ""
+"If you extend or add to the game please consider sending your additions to "
+"the maintainer <ulink url=\"mailto:alex@eyeos.org\">Alex Fiestas</ulink> for "
+"inclusion in future releases."
+msgstr ""
+"Sollten Erweiterungen oder Ergänzungen zum Spiel vorgenommen werden, wird um "
+"deren Übersendung an den derzeitigen Betreuer <ulink url=\"mailto:alex@eyeos."
+"org\">Alex Fiestas</ulink> zur Berücksichtung in künftigen Versionen gebeten."
+
+#. Tag: title
+#: technical-reference.docbook:39
+#, no-c-format
+msgid "For Artists"
+msgstr "Grafiker"
+
+#. Tag: para
+#: technical-reference.docbook:41
+#, no-c-format
+msgid "To create a new &ktuberling; playground you have to:"
+msgstr ""
+"Zum Erstellen eines neuen <emphasis>Spielfeldes</emphasis> für &ktuberling; "
+"sind folgende Maßnahmen notwendig:"
+
+#. Tag: para
+#: technical-reference.docbook:48
+#, no-c-format
+msgid "Draw the playground in a SVG file, there you have to:"
+msgstr ""
+"Zeichnen eines <emphasis>Spielfeldes</emphasis> in einer <filename>*.svg</"
+"filename>-Datei unter Beachtung, dass"
+
+#. Tag: para
+#: technical-reference.docbook:50
+#, no-c-format
+msgid "Name the place where items can dragged \"background\"."
+msgstr ""
+"der Ort, an den die Objekte gezogen werden, den Namen „background“ erhält."
+
+#. Tag: para
+#: technical-reference.docbook:51
+#, no-c-format
+msgid "Name each of the draggable items with an unique name."
+msgstr ""
+"jedes <emphasis>ziehbare</emphasis> Objekt einen einzigartigen Namen erhält."
+
+#. Tag: para
+#: technical-reference.docbook:57
+#, no-c-format
+msgid "Create a .theme file, it has to follow this schema:"
+msgstr ""
+"Erstellen einer <filename>*.theme</filename>-Datei mit folgendem Schema:"
+
+#. Tag: programlisting
+#: technical-reference.docbook:58
+#, no-c-format
+msgid ""
+"&lt;playground gameboard=\"<replaceable>yourSVGFile</replaceable>\" name="
+"\"<replaceable>theDesktopFile</replaceable>\"&gt;\n"
+"    &lt;object name=\"<replaceable>itemName</replaceable>\" sound="
+"\"<replaceable>soundName</replaceable>\" scale=\"<replaceable>someValue</"
+"replaceable>\" /&gt;\n"
+"    ...\n"
+"    ...\n"
+"    ...\n"
+"    &lt;/playground&gt;"
+msgstr ""
+"&lt;playground gameboard=\"<replaceable>svg-Datei</replaceable>\" name="
+"\"<replaceable>desktop-Datei</replaceable>\"&gt;\n"
+"    &lt;object name=\"<replaceable>Objektname</replaceable>\" sound="
+"\"<replaceable>Klangname</replaceable>\"scale=\"<replaceable>beliebigerWert</"
+"replaceable>\" /&gt;\n"
+"    ...\n"
+"    ...\n"
+"    ...\n"
+"    &lt;/playground&gt;"
+
+#. Tag: para
+#: technical-reference.docbook:60
+#, no-c-format
+msgid ""
+"<replaceable>yourSVGFile</replaceable> is the name of the svg file that has "
+"the drawing."
+msgstr ""
+"<replaceable>svg-Datei</replaceable> ist der Name für die <filename>svg</"
+"filename>-Datei mit den Objekten."
+
+#. Tag: para
+#: technical-reference.docbook:61
+#, no-c-format
+msgid ""
+"<replaceable>theDesktopFile</replaceable> is the name of the desktop file "
+"that has the name of the theme."
+msgstr ""
+"<replaceable>desktop-Datei</replaceable> ist der Name der <filename>desktop</"
+"filename>-Datei, die den Namen des Designs beinhaltet."
+
+#. Tag: para
+#: technical-reference.docbook:62
+#, no-c-format
+msgid ""
+"For each object you need a &lt;object&gt; entry. <replaceable>itemName</"
+"replaceable> is the unique name you used on the SVG file, "
+"<replaceable>soundName</replaceable> is the sound name that will be played "
+"when dragging it, see sound themes howto for more information."
+msgstr ""
+"Für jedes Objekt ist ein &lt;object&gt;-Eintrag erforderlich. "
+"<replaceable>Objektname</replaceable> ist der einzigartige Name innerhalb "
+"der <filename>svg</filename>-Datei und <replaceable>Klangname</replaceable> "
+"ist der Name des beim Ziehen des Objektes wiedergegebenen Klanges."
+
+#. Tag: para
+#: technical-reference.docbook:65
+#, no-c-format
+msgid ""
+"scale is optional and <replaceable>someValue</replaceable> is the scale "
+"factor that will be used when drawing this object outside the warehouse, if "
+"not specified is 1."
+msgstr ""
+"<emphasis>scale</emphasis> ist ein zusätzlicher Wert. "
+"<replaceable>beliebigerWert</replaceable> wird dabei als Wert für die "
+"Vergrößerung des Objektes verwendet, sobald es aus dem Depot „geholt“ wird. "
+"Bei unterbliebener Festlegung wird als Wert <keycap>1</keycap> verwendet."
+
+#. Tag: para
+#: technical-reference.docbook:71
+#, no-c-format
+msgid "Create a .desktop file, it has to follow this schema"
+msgstr ""
+"Erstellen einer <filename>*.desktop</filename>-Datei nach folgendem Schema:"
+
+#. Tag: programlisting
+#: technical-reference.docbook:72
+#, no-c-format
+msgid ""
+"[KTuberlingTheme]\n"
+"    Name=<replaceable>themeName</replaceable>"
+msgstr ""
+"[KTuberlingTheme]\n"
+"    Name=<replaceable>Designname</replaceable>"
+
+#. Tag: para
+#: technical-reference.docbook:74
+#, no-c-format
+msgid ""
+"<replaceable>themeName</replaceable> is the name that identifies the theme, "
+"will be shown in the Playground menu."
+msgstr ""
+"<replaceable>Designname</replaceable> ist der identifizierende Name des "
+"Designs und wird im Menü <guimenu>Spielfeld</guimenu> angezeigt."
+
+#. Tag: para
+#: technical-reference.docbook:79
+#, no-c-format
+msgid ""
+"If you are adding the theme to &ktuberling; repository, add .svg .theme ."
+"desktop files to FILES section of the CMakeLists.txt in the pics/ directory"
+msgstr ""
+"Beim Hochladen des Designs zum <emphasis>Git</emphasis>-Quelltextarchiv von "
+"&kde; müssen die <filename>*.svg</filename>-, <filename>*.theme</filename>- "
+"und <filename>*.desktop</filename>-Datei im Abschnitt <emphasis>FILES</"
+"emphasis> der Datei <filename>CMakeLists.txt</filename> des Ordners "
+"<filename>pics/</filename> eingetragen werden."
+
+#. Tag: para
+#: technical-reference.docbook:84
+#, no-c-format
+msgid ""
+"If you want to install it for yourself, place .svg .theme .desktop files in "
+"`kde4-config --prefix`/share/apps/ktuberling/pics"
+msgstr ""
+"Zur Verwendung auf dem lokalen System müssen die <filename>*.svg</"
+"filename>-, <filename>*.theme</filename>- und <filename>*.desktop</filename>-"
+"Datei im Ordner <filename>`kde4-config --prefix`/share/apps/ktuberling/pics</"
+"filename> vorhanden sein."
+
+#. Tag: title
+#: technical-reference.docbook:93
+#, no-c-format
+msgid "For Translators"
+msgstr "Übersetzer"
+
+#. Tag: para
+#: technical-reference.docbook:95
+#, no-c-format
+msgid ""
+"Besides the usual <literal role=\"extension\">.po</literal> files mechanism "
+"for translating program labels and prompts, the sounds can be localized too."
+msgstr ""
+"Neben dem üblichen Übersetzen der <filename>.po</filename>-Dateien für die "
+"grafische Oberfläche können für &ktuberling; auch die Klänge lokalisiert "
+"werden."
+
+#. Tag: para
+#: technical-reference.docbook:100
+#, no-c-format
+msgid "To create a new &ktuberling; sound theme you have to:"
+msgstr ""
+"Zum Erstellen eines neuen Klangdesigns für &ktuberling; sind folgende "
+"Maßnahmen notwendig:"
+
+#. Tag: para
+#: technical-reference.docbook:106
+#, no-c-format
+msgid "Record the sounds in OGG Vorbis rc3 file format."
+msgstr "Die Klänge im Format <emphasis>OGG Vorbis rc3</emphasis> speichern."
+
+#. Tag: para
+#: technical-reference.docbook:109
+#, no-c-format
+msgid ""
+"Create a <replaceable>yourLanguageTwoLetterCode</replaceable>.soundtheme "
+"file, it has to follow this schema:"
+msgstr ""
+"Erstellen einer <filename><replaceable>de</replaceable>.soundtheme</"
+"filename>-Datei mit folgendem Schema:"
+
+#. Tag: programlisting
+#: technical-reference.docbook:110
+#, no-c-format
+msgid ""
+"&lt;language code=\"<replaceable>yourLanguageTwoLetterCode</replaceable>"
+"\"&gt;\n"
+"&lt;sound name=\"<replaceable>soundName</replaceable>\" file="
+"\"<replaceable>relativePath</replaceable>\" /&gt;\n"
+"...\n"
+"...\n"
+"...\n"
+"&lt;/language&gt;"
+msgstr ""
+"&lt;language code=\"<replaceable>de</replaceable>\"&gt;\n"
+"&lt;sound name=\"<replaceable>Klangname</replaceable>\" file="
+"\"<replaceable>relativerPfad</replaceable>\" /&gt;\n"
+"...\n"
+"...\n"
+"...\n"
+"&lt;/language&gt;"
+
+#. Tag: para
+#: technical-reference.docbook:112
+#, no-c-format
+msgid ""
+"<replaceable>yourLanguageTwoLetterCode</replaceable> is your language two "
+"letter code, for example gl for Galician."
+msgstr ""
+"<replaceable>de</replaceable> wird hier und im Folgenden nur beispielhaft "
+"für Deutsch verwendet. Für andere Sprachen muss stattdessen das jeweilige "
+"Sprachenkürzel eingesetzt werden."
+
+#. Tag: para
+#: technical-reference.docbook:113
+#, no-c-format
+msgid ""
+"For each sound a &lt;sound&gt; entry. <replaceable>soundName</replaceable> "
+"should match with the soundName specified in the playground theme (see "
+"themes HOWTO). <replaceable>relativePath</replaceable> should be the "
+"relative path you are going to install the file with this sound to, "
+"typically it will be someUniquePath/soundName.format (someUniquePath can be "
+"your language two letter code for example)."
+msgstr ""
+"Für jeden Klang ist ein &lt;sound&gt;-Eintrag erforderlich. "
+"<replaceable>Klangname</replaceable> sollte mit dem Klangnamen im "
+"<emphasis>Spielfeld</emphasis>-Design übereinstimmen. "
+"<replaceable>relativerPfad</replaceable> ist der relative Pfad zur "
+"Klangdatei und typischerweise <filename><replaceable>einzigartigerPfad</"
+"replaceable>/Klangname.format</filename> wobei "
+"<replaceable>einzgartigerPfad</replaceable> beispielsweise <replaceable>de</"
+"replaceable> sein kann."
+
+#. Tag: para
+#: technical-reference.docbook:121
+#, no-c-format
+msgid ""
+"If you are adding the sound theme to &ktuberling; in your language folder:"
+msgstr ""
+"Beim Hochladen des lokalisierten Klangdesigns in Ihren Sprachenordner müssen"
+
+#. Tag: para
+#: technical-reference.docbook:123
+#, no-c-format
+msgid ""
+"Add the sound files and the .soundtheme files to the data/kdegames/"
+"ktuberling directory of your language translations."
+msgstr ""
+"die Klang- und <filename>*.soundtheme</filename>-Dateien im Ordner "
+"<filename>l10n-kde4/<replaceable>de</replaceable>/data/kdegames/ktuberling</"
+"filename> vorliegen."
+
+#. Tag: para
+#: technical-reference.docbook:125
+#, no-c-format
+msgid ""
+"On that very same dir you need a CMakeLists.txt describing how to install "
+"the files, typically it will be."
+msgstr ""
+"im selben Ordner die Datei <filename>CMakeLists.txt</filename> mit der "
+"Beschreibung für die Installation nach folgendem Muster vorliegen:"
+
+#. Tag: programlisting
+#: technical-reference.docbook:126
+#, no-c-format
+msgid ""
+"FILE(GLOB datafiles *.ogg)\n"
+"install( FILES ${datafiles} DESTINATION ${DATA_INSTALL_DIR}/ktuberling/"
+"sounds/<replaceable>yourLanguageTwoLetterCode</replaceable> )\n"
+"install( FILES <replaceable>yourLanguageTwoLetterCode</replaceable>."
+"soundtheme DESTINATION ${DATA_INSTALL_DIR}/ktuberling/sounds/ )"
+msgstr ""
+"FILE(GLOB datafiles *.ogg)\n"
+"install( FILES ${datafiles} DESTINATION ${DATA_INSTALL_DIR}/ktuberling/"
+"sounds/<replaceable>de</replaceable> )\n"
+"install( FILES <replaceable>de</replaceable>.soundtheme DESTINATION "
+"${DATA_INSTALL_DIR}/ktuberling/sounds/ )"
+
+#. Tag: para
+#: technical-reference.docbook:132
+#, no-c-format
+msgid "If you want to install it for yourself:"
+msgstr "Zur Verwendung auf dem lokalen System müssen"
+
+#. Tag: para
+#: technical-reference.docbook:134
+#, no-c-format
+msgid ""
+"Place <replaceable>yourLanguageTwoLetterCode</replaceable>.soundtheme file "
+"in `kde4-config --prefix`/share/apps/ktuberling/sounds"
+msgstr ""
+"die <filename><replaceable>de</replaceable>.soundtheme</filename>-Datei im "
+"Ordner <filename>`kde4-config --prefix`/share/apps/ktuberling/sounds</"
+"filename> vorhanden sein"
+
+#. Tag: para
+#: technical-reference.docbook:135
+#, no-c-format
+msgid ""
+"Place yourSoundFiles in `kde4-config --prefix`/share/apps/ktuberling/sounds/"
+"someUniquePath"
+msgstr ""
+"die lokalisierten Klangdateien im Ordner <filename>`kde4-config --prefix`/"
+"share/apps/ktuberling/sounds/<replaceable>einzigartigerOrdner</replaceable></"
+"filename> vorhanden sein."
+
+#. Tag: para
+#: technical-reference.docbook:141
+#, no-c-format
+msgid ""
+"Information on how to work with the translation mechanisms in &kde; is "
+"available in <ulink url=\"http://l10n.kde.org/docs/translation-howto/index."
+"html\">The &kde; Translation HOWTO</ulink>."
+msgstr ""
+"Informationen zur Arbeit mit dem Übersetzungssystem von &kde; sind in der "
+"<ulink url=\"http://l10n.kde.org/docs/translation-howto/index.html\">&kde;-"
+"Übersetzungsanleitung</ulink> verfügbar."
+
+#. Tag: title
+#: technical-reference.docbook:151
+#, no-c-format
+msgid "For Programmers"
+msgstr "Entwickler"
+
+#. Tag: para
+#: technical-reference.docbook:152
+#, no-c-format
+msgid "&ktuberling; isn't really difficult to extend for programmers."
+msgstr ""
+"Die Erweiterung von &ktuberling; durch Entwickler ist nicht wirklich "
+"schwierig."
+
+#. Tag: title
+#: technical-reference.docbook:155
+#, no-c-format
+msgid "C++ classes"
+msgstr "C++-Klassen"
+
+#. Tag: classname
+#: technical-reference.docbook:159
+#, no-c-format
+msgid "TopLevel"
+msgstr "TopLevel"
+
+#. Tag: para
+#: technical-reference.docbook:161
+#, no-c-format
+msgid "Top-level window and basic program management"
+msgstr "Sichtbares Fenster und grundlegende Programmverwaltung"
+
+#. Tag: classname
+#: technical-reference.docbook:166
+#, no-c-format
+msgid "PlayGround"
+msgstr "PlayGround"
+
+#. Tag: para
+#: technical-reference.docbook:168
+#, no-c-format
+msgid "Description of one of the game levels"
+msgstr "Beschreibung einer Spielfeldebene"
+
+#. Tag: classname
+#: technical-reference.docbook:172
+#, no-c-format
+msgid "ToDraw"
+msgstr "ToDraw"
+
+#. Tag: para
+#: technical-reference.docbook:174
+#, no-c-format
+msgid "Description of one of the graphical <quote>objects</quote> to be drawn"
+msgstr ""
+"Beschreibung eines darzustellenden grafischen <emphasis>Objekts</emphasis>"
+
+#. Tag: classname
+#: technical-reference.docbook:179
+#, no-c-format
+msgid "SoundFactory"
+msgstr "SoundFactory"
+
+#. Tag: para
+#: technical-reference.docbook:181
+#, no-c-format
+msgid "Description of one of the languages and its sounds"
+msgstr "Beschreibung einer Sprache und deren Klänge"
+
+#. Tag: classname
+#: technical-reference.docbook:185
+#, no-c-format
+msgid "Action"
+msgstr "Action"
+
+#. Tag: para
+#: technical-reference.docbook:187
+#, no-c-format
+msgid "One of the user's manipulation in the undo/redo stack"
+msgstr ""
+"Eine der Veränderungen des Benutzers im „Rückgängig/Wiederherstellen“-Stapel"
+
+#~ msgid "<date>2009-12-15</date> <releaseinfo>0.6.0</releaseinfo>"
+#~ msgstr "<date>15.12.2009</date><releaseinfo>0.6.0</releaseinfo>"
+
+#~ msgid "Record the sounds."
+#~ msgstr "Record the sounds."
+
+#~ msgid ""
+#~ "The size and shape of the playground and the number of objects can be "
+#~ "changed. New playgrounds can be added. Only two image files need to be "
+#~ "created for each playground: a gameboard and a mask. A maximum of 8 "
+#~ "playgrounds is allowed, out of which only 3 are currently used."
+#~ msgstr ""
+#~ "The size and shape of the playground and the number of objects can be "
+#~ "changed. New playgrounds can be added. Only two image files need to be "
+#~ "created for each playground: a gameboard and a mask. A maximum of 8 "
+#~ "playgrounds is allowed, out of which only 3 are currently used."
+
+#~ msgid ""
+#~ "Six images are used in &ktuberling;: <filename>potato-game.png</"
+#~ "filename>, <filename>potato-mask.png</filename>, <filename>penguin-game."
+#~ "png</filename>, <filename>penguin-mask.png</filename>, <filename>aquarium-"
+#~ "game.png</filename> and <filename>aquarium-mask.png</filename>. The "
+#~ "standard location for these files is the folder <filename class="
+#~ "\"directory\">$KDEDIR/share/apps/ktuberling/pics/</filename>."
+#~ msgstr ""
+#~ "Six images are used in &ktuberling;: <filename>potato-game.png</"
+#~ "filename>, <filename>potato-mask.png</filename>, <filename>penguin-game."
+#~ "png</filename>, <filename>penguin-mask.png</filename>, <filename>aquarium-"
+#~ "game.png</filename> and <filename>aquarium-mask.png</filename>. The "
+#~ "standard location for these files is the folder <filename class="
+#~ "\"directory\">$KDEDIR/share/apps/ktuberling/pics/</filename>."
+
+#~ msgid ""
+#~ "The first type of images, <filename>*-game.png</filename> holds the "
+#~ "playground and the objects that the user selects. This is the graphic "
+#~ "that the user sees when playing the game."
+#~ msgstr ""
+#~ "The first type of images, <filename>*-game.png</filename> holds the "
+#~ "playground and the objects that the user selects. This is the graphic "
+#~ "that the user sees when playing the game."
+
+#~ msgid ""
+#~ "The second type of images, <filename>*-mask.png</filename>, contains only "
+#~ "masks of the objects. The masks are used to delimit the borders of the "
+#~ "objects and, in some cases, give the object some transparency (for "
+#~ "example, the spectacles). It is mandatory to put the objects at the same "
+#~ "position in the gameboard file as in the mask file."
+#~ msgstr ""
+#~ "The second type of images, <filename>*-mask.png</filename>, contains only "
+#~ "masks of the objects. The masks are used to delimit the borders of the "
+#~ "objects and, in some cases, give the object some transparency (for "
+#~ "example, the spectacles). It is mandatory to put the objects at the same "
+#~ "position in the gameboard file as in the mask file."
+
+#~ msgid ""
+#~ "In the same folder, a file named <filename>layout.xml</filename>. "
+#~ "(<filename>$KDEDIR/share/apps/ktuberling/pics/layout.xml</filename>) "
+#~ "tells which images to use and links them to menu entries. It also "
+#~ "contains the position parameters of the playground and the objects in the "
+#~ "gameboard and in the masks. It assigns the sounds to objects and places "
+#~ "the objects in groups. It finally declares languages as sets of "
+#~ "translated sounds. It follows standard &XML; syntax (see details <link "
+#~ "linkend=\"layout-details\">below</link>)."
+#~ msgstr ""
+#~ "In the same folder, a file named <filename>layout.xml</filename>. "
+#~ "(<filename>$KDEDIR/share/apps/ktuberling/pics/layout.xml</filename>) "
+#~ "tells which images to use and links them to menu entries. It also "
+#~ "contains the position parameters of the playground and the objects in the "
+#~ "gameboard and in the masks. It assigns the sounds to objects and places "
+#~ "the objects in groups. It finally declares languages as sets of "
+#~ "translated sounds. It follows standard &XML; syntax (see details <link "
+#~ "linkend=\"layout-details\">below</link>)."
+
+#~ msgid ""
+#~ "Still in the same folder, a file named <filename>layout.i18n</filename> "
+#~ "(<filename>$KDEDIR/share/apps/ktuberling/pics/layout.xml</filename>) "
+#~ "recapitulates the strings in <filename>layout.xml</filename> that can be "
+#~ "translated:"
+#~ msgstr ""
+#~ "Still in the same folder, a file named <filename>layout.i18n</filename> "
+#~ "(<filename>$KDEDIR/share/apps/ktuberling/pics/layout.xml</filename>) "
+#~ "recapitulates the strings in <filename>layout.xml</filename> that can be "
+#~ "translated:"
+
+#~ msgid ""
+#~ "The menu entries that allow to choose the playground and the language"
+#~ msgstr ""
+#~ "The menu entries that allow to choose the playground and the language"
+
+#~ msgid "The names of the categories of objects"
+#~ msgstr "The names of the categories of objects"
+
+#~ msgid ""
+#~ "One folder above, a file named <filename>ktuberlingui.rc</filename> "
+#~ "(<filename>$KDEDIR/share/apps/ktuberling/ktuberlingui.rc</filename>) is a "
+#~ "second &XML; file describing the menus of &ktuberling;. It should contain "
+#~ "one <markup>&lt;action&gt;</markup> tag per playground and language. The "
+#~ "symbolic name of the action in this file should be identical to the "
+#~ "symbolic name of the action in <filename>layout.xml</filename>."
+#~ msgstr ""
+#~ "One folder above, a file named <filename>ktuberlingui.rc</filename> "
+#~ "(<filename>$KDEDIR/share/apps/ktuberling/ktuberlingui.rc</filename>) is a "
+#~ "second &XML; file describing the menus of &ktuberling;. It should contain "
+#~ "one <markup>&lt;action&gt;</markup> tag per playground and language. The "
+#~ "symbolic name of the action in this file should be identical to the "
+#~ "symbolic name of the action in <filename>layout.xml</filename>."
+
+#~ msgid ""
+#~ "If the various translators can record their voice to a <literal role="
+#~ "\"extension\">.wav</literal> file, they can store that file to the "
+#~ "language-specific subfolder of the sounds folder. The name of the sound "
+#~ "is then assigned to a file in the <filename>layout.xml</filename> file. "
+#~ "For example, if destination language is Italian, translators can record "
+#~ "their voice in <literal role=\"extension\">.wav</literal> files located "
+#~ "in <filename>$KDEDIR/share/apps/ktuberling/sounds/it</filename>. Then "
+#~ "they can assign the sound named <quote>hat</quote> to the filename "
+#~ "<filename>it/cappello.wav</filename>."
+#~ msgstr ""
+#~ "If the various translators can record their voice to a <literal role="
+#~ "\"extension\">.wav</literal> file, they can store that file to the "
+#~ "language-specific subfolder of the sounds folder. The name of the sound "
+#~ "is then assigned to a file in the <filename>layout.xml</filename> file. "
+#~ "For example, if destination language is Italian, translators can record "
+#~ "their voice in <literal role=\"extension\">.wav</literal> files located "
+#~ "in <filename>$KDEDIR/share/apps/ktuberling/sounds/it</filename>. Then "
+#~ "they can assign the sound named <quote>hat</quote> to the filename "
+#~ "<filename>it/cappello.wav</filename>."
+
+#~ msgid ""
+#~ "In a future release, &ktuberling; will use OGG Vorbis rc3 file format for "
+#~ "sounds. At that moment, it will be possible to convert the WAV files to "
+#~ "OGG Vorbis rc3 through the following command line:"
+#~ msgstr ""
+#~ "In a future release, &ktuberling; will use OGG Vorbis rc3 file format for "
+#~ "sounds. At that moment, it will be possible to convert the WAV files to "
+#~ "OGG Vorbis rc3 through the following command line:"
+
+#~ msgid ""
+#~ "<prompt>$</prompt> <userinput>oggenc -q 10 -o <replaceable>sound.ogg</"
+#~ "replaceable> <replaceable>sound.wav</replaceable></userinput>"
+#~ msgstr ""
+#~ "<prompt>$</prompt> <userinput>oggenc -q 10 -o <replaceable>sound.ogg</"
+#~ "replaceable> <replaceable>sound.wav</replaceable></userinput>"
+
+#~ msgid "<literal role=\"extension\">.tuberling</literal> files structure"
+#~ msgstr "<literal role=\"extension\">.tuberling</literal> files structure"
+
+#~ msgid ""
+#~ "A <literal role=\"extension\">.tuberling</literal> file holds all the "
+#~ "necessary data to redraw a tuberling. It can be edited with an ordinary "
+#~ "text editor."
+#~ msgstr ""
+#~ "A <literal role=\"extension\">.tuberling</literal> file holds all the "
+#~ "necessary data to redraw a tuberling. It can be edited with an ordinary "
+#~ "text editor."
+
+#~ msgid "The first line holds the number of the playground."
+#~ msgstr "The first line holds the number of the playground."
+
+#~ msgid ""
+#~ "On all other lines, there is one graphical object per line, in the order "
+#~ "that is used to draw them. Each line contains 5 numbers: the identifier "
+#~ "of the object, and the rectangle where it should be drawn (left, top, "
+#~ "right, bottom). The numbers are separated by whitespaces."
+#~ msgstr ""
+#~ "On all other lines, there is one graphical object per line, in the order "
+#~ "that is used to draw them. Each line contains 5 numbers: the identifier "
+#~ "of the object, and the rectangle where it should be drawn (left, top, "
+#~ "right, bottom). The numbers are separated by whitespaces."
+
+#~ msgid "Structure of the layout file (<filename>layout.xml</filename>)"
+#~ msgstr "Structure of the layout file (<filename>layout.xml</filename>)"
+
+#~ msgid ""
+#~ "The top-level tag is unique and is named <markup>&lt;ktuberling&gt;</"
+#~ "markup>. It contains several <markup>&lt;playground&gt;</markup> tags, "
+#~ "one per playground, and several <markup>&lt;language&gt;</markup> tags, "
+#~ "one per language."
+#~ msgstr ""
+#~ "The top-level tag is unique and is named <markup>&lt;ktuberling&gt;</"
+#~ "markup>. It contains several <markup>&lt;playground&gt;</markup> tags, "
+#~ "one per playground, and several <markup>&lt;language&gt;</markup> tags, "
+#~ "one per language."
+
+#~ msgid ""
+#~ "The <markup>&lt;playground&gt;</markup> tag has two attributes: "
+#~ "<markup>gameboard</markup> and <markup>masks</markup>. These attributes "
+#~ "give the name of the files holding the pictures. The <markup>&lt;"
+#~ "playground&gt;</markup> tag also contains one <markup>&lt;menuitem&gt;</"
+#~ "markup> tag, one <markup>&lt;editablearea&gt;</markup> tag, several "
+#~ "<markup>&lt;category&gt;</markup> tags, and several <markup>&lt;object&gt;"
+#~ "</markup> tags."
+#~ msgstr ""
+#~ "The <markup>&lt;playground&gt;</markup> tag has two attributes: "
+#~ "<markup>gameboard</markup> and <markup>masks</markup>. These attributes "
+#~ "give the name of the files holding the pictures. The <markup>&lt;"
+#~ "playground&gt;</markup> tag also contains one <markup>&lt;menuitem&gt;</"
+#~ "markup> tag, one <markup>&lt;editablearea&gt;</markup> tag, several "
+#~ "<markup>&lt;category&gt;</markup> tags, and several <markup>&lt;object&gt;"
+#~ "</markup> tags."
+
+#~ msgid ""
+#~ "The <markup>&lt;menuitem&gt;</markup> tag describes the action identifier "
+#~ "of the menu item allowing to select position of the area where you can "
+#~ "drop objects, and the label of this menu item. This action identifier "
+#~ "should be identical to the one in <filename>ktuberlingui.rc</filename>."
+#~ msgstr ""
+#~ "The <markup>&lt;menuitem&gt;</markup> tag describes the action identifier "
+#~ "of the menu item allowing to select position of the area where you can "
+#~ "drop objects, and the label of this menu item. This action identifier "
+#~ "should be identical to the one in <filename>ktuberlingui.rc</filename>."
+
+#~ msgid ""
+#~ "The <markup>&lt;editablearea&gt;</markup> tag describes the position of "
+#~ "the area where you can drop objects, and the name of the sound associated "
+#~ "with it."
+#~ msgstr ""
+#~ "The <markup>&lt;editablearea&gt;</markup> tag describes the position of "
+#~ "the area where you can drop objects, and the name of the sound associated "
+#~ "with it."
+
+#~ msgid ""
+#~ "The <markup>&lt;category&gt;</markup> tag describes the position and the "
+#~ "label of a text describing a group of objects. For example, it can "
+#~ "describe the position and the text of the group of <quote>goodies</quote>."
+#~ msgstr ""
+#~ "The <markup>&lt;category&gt;</markup> tag describes the position and the "
+#~ "label of a text describing a group of objects. For example, it can "
+#~ "describe the position and the text of the group of <quote>goodies</quote>."
+
+#~ msgid ""
+#~ "The <markup>&lt;object&gt;</markup> tag describes the position (in the "
+#~ "gameboard and in the masks) of an object, as well as the name of the "
+#~ "sound associated with it."
+#~ msgstr ""
+#~ "The <markup>&lt;object&gt;</markup> tag describes the position (in the "
+#~ "gameboard and in the masks) of an object, as well as the name of the "
+#~ "sound associated with it."
+
+#~ msgid ""
+#~ "The <markup>&lt;language&gt;</markup> tag has one attribute: "
+#~ "<markup>code</markup> This attribute give the code of the locale for that "
+#~ "language. The <markup>&lt;language&gt;</markup> tag also contains one "
+#~ "<markup>&lt;menuitem&gt;</markup> tag and several <markup>&lt;sound&gt;</"
+#~ "markup> tags."
+#~ msgstr ""
+#~ "The <markup>&lt;language&gt;</markup> tag has one attribute: "
+#~ "<markup>code</markup> This attribute give the code of the locale for that "
+#~ "language. The <markup>&lt;language&gt;</markup> tag also contains one "
+#~ "<markup>&lt;menuitem&gt;</markup> tag and several <markup>&lt;sound&gt;</"
+#~ "markup> tags."
+
+#~ msgid ""
+#~ "The lower level tags are not explained here, since their meaning is quite "
+#~ "straightforward. If you modify <filename>layout.xml</filename>, don't "
+#~ "forget to modify <filename>layout.i18n</filename> and "
+#~ "<filename>ktuberlingui.rc</filename> accordingly."
+#~ msgstr ""
+#~ "The lower level tags are not explained here, since their meaning is quite "
+#~ "straightforward. If you modify <filename>layout.xml</filename>, don't "
+#~ "forget to modify <filename>layout.i18n</filename> and "
+#~ "<filename>ktuberlingui.rc</filename> accordingly."

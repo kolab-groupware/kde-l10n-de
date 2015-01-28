@@ -1,0 +1,383 @@
+# Stephan Johach <hunsum@gmx.de>, 2007.
+# Frederik Schwarzer <schwarzer@kde.org>, 2008, 2010, 2011, 2012.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2008.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2010.
+# Burkhard Lück <lueck@hube-lueck.de>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_phonon\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-10-27 01:35+0000\n"
+"PO-Revision-Date: 2012-03-01 15:56+0100\n"
+"Last-Translator: Frederik Schwarzer <schwarzerf@gmail.com>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Stephan Johach"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "hunsum@gmx.de"
+
+#: audiosetup.cpp:566
+#, kde-format
+msgid "Playback (%1)"
+msgstr "Wiedergabe (%1)"
+
+#: audiosetup.cpp:570
+#, kde-format
+msgid "Recording (%1)"
+msgstr "Aufnahme (%1)"
+
+#: audiosetup.cpp:628
+msgid "Independent Devices"
+msgstr "Unabhängige Geräte"
+
+#: audiosetup.cpp:657
+msgid "KDE Audio Hardware Setup"
+msgstr "Einrichtung der Audio-Hardware in KDE"
+
+#. i18n: ectx: property (title), widget (QGroupBox, hardwareGroupBox)
+#: audiosetup.ui:18
+msgid "Hardware"
+msgstr "Hardware"
+
+#. i18n: ectx: property (text), widget (QLabel, profileLabel)
+#: audiosetup.ui:44
+msgid "Profile"
+msgstr "Profil"
+
+#. i18n: ectx: property (text), widget (QLabel, cardLabel)
+#: audiosetup.ui:54
+msgid "Sound Card"
+msgstr "Soundkarte"
+
+#. i18n: ectx: property (title), widget (QGroupBox, deviceGroupBox)
+#: audiosetup.ui:67
+msgid "Device Configuration"
+msgstr "Gerätekonfiguration"
+
+#. i18n: ectx: property (text), widget (QLabel, portLabel)
+#: audiosetup.ui:83
+msgid "Connector"
+msgstr "Anschluss"
+
+#. i18n: ectx: property (text), widget (QLabel, deviceLabel)
+#: audiosetup.ui:103
+msgid "Sound Device"
+msgstr "Audio-Gerät"
+
+#. i18n: ectx: property (title), widget (QGroupBox, outputGroupBox)
+#: audiosetup.ui:144
+msgid "Speaker Placement and Testing"
+msgstr "Lautsprecheraufstellung und Probehören"
+
+#. i18n: ectx: property (title), widget (QGroupBox, inputGroupBox)
+#: audiosetup.ui:181
+msgid "Input Levels"
+msgstr "Eingangspegel"
+
+#: backendselection.cpp:45
+msgctxt "@info User changed Phonon backend"
+msgid "To apply the backend change you will have to log out and back in again."
+msgstr ""
+"Um die Änderungen am Backend anzuwenden, müssen Sie sich erst abmelden und "
+"wieder anmelden."
+
+#. i18n: ectx: property (toolTip), widget (QListWidget, m_select)
+#. i18n: ectx: property (whatsThis), widget (QListWidget, m_select)
+#: backendselection.ui:38 backendselection.ui:41
+msgid ""
+"A list of Phonon Backends found on your system.  The order here determines "
+"the order Phonon will use them in."
+msgstr ""
+"Liste der Phonon-Backends, die auf Ihrem System gefunden wurden. Die hier "
+"angegebene Reihenfolge legt fest, in welcher Reihenfolge sie von Phonon "
+"benutzt werden."
+
+#. i18n: ectx: property (text), widget (QToolButton, m_up)
+#. i18n: ectx: property (text), widget (QToolButton, preferButton)
+#: backendselection.ui:57 devicepreference.ui:190
+msgid "Prefer"
+msgstr "Vorziehen"
+
+#. i18n: ectx: property (text), widget (QToolButton, m_down)
+#. i18n: ectx: property (text), widget (QToolButton, deferButton)
+#: backendselection.ui:70 devicepreference.ui:206
+msgid "Defer"
+msgstr "Zurückstellen"
+
+#: devicepreference.cpp:109
+msgid "Audio Playback"
+msgstr "Audio-Wiedergabe"
+
+#: devicepreference.cpp:123
+msgid "Audio Recording"
+msgstr "Audio-Aufnahme"
+
+#: devicepreference.cpp:126
+msgid "Video Recording"
+msgstr "Video-Aufnahme"
+
+#: devicepreference.cpp:129
+msgid "Invalid"
+msgstr "Ungültig"
+
+#: devicepreference.cpp:169
+msgid "Test the selected device"
+msgstr "Das ausgewählte Gerät testen"
+
+#: devicepreference.cpp:193 devicepreference.cpp:200 devicepreference.cpp:207
+msgid ""
+"Defines the default ordering of devices which can be overridden by "
+"individual categories."
+msgstr ""
+"Legt die Standardreihenfolge der Geräte fest, die von eigenen Kategorien "
+"überschrieben werden kann."
+
+#: devicepreference.cpp:326
+msgid "Default Audio Playback Device Preference"
+msgstr "Bevorzugtes Standard-Audio-Wiedergabegerät"
+
+#: devicepreference.cpp:329
+msgid "Default Audio Recording Device Preference"
+msgstr "Bevorzugtes Standard-Audio-Aufnahmegerät"
+
+#: devicepreference.cpp:332
+msgid "Default Video Recording Device Preference"
+msgstr "Bevorzugtes Standard-Video-Aufnahmegerät"
+
+#: devicepreference.cpp:339
+#, kde-format
+msgid "Audio Playback Device Preference for the '%1' Category"
+msgstr "Bevorzugtes Standard-Audio-Wiedergabegerät für Kategorie „%1“"
+
+#: devicepreference.cpp:343
+#, kde-format
+msgid "Audio Recording Device Preference for the '%1' Category"
+msgstr "Bevorzugtes Standard-Audio-Aufnahmegerät für Kategorie „%1“"
+
+#: devicepreference.cpp:347
+#, kde-format
+msgid "Video Recording Device Preference for the '%1' Category "
+msgstr "Bevorzugtes Standard-Video-Aufnahmegerät für Kategorie „%1“"
+
+#: devicepreference.cpp:779
+msgid ""
+"Apply the currently shown device preference list to the following other "
+"audio playback categories:"
+msgstr ""
+"Die derzeit angezeigte Liste der Geräteprioritäten auf die folgenden Audio-"
+"Wiedergabe-Kategorien anwenden:"
+
+#: devicepreference.cpp:792 devicepreference.cpp:798
+msgid "Default/Unspecified Category"
+msgstr "Standard / Nicht spezifizierte Kategorie"
+
+#: devicepreference.cpp:891
+msgid "Failed to set the selected audio output device"
+msgstr "Das ausgewählte Audio-Ausgabe-Gerät kann nicht eingestellt werden"
+
+#: devicepreference.cpp:919
+msgid "Your backend may not support audio recording"
+msgstr "Ihr Backend könnte keine Audio-Aufnahmen unterstützen"
+
+#: devicepreference.cpp:940
+msgid "Your backend may not support video recording"
+msgstr "Ihr Backend könnte keine Video-Aufnahmen unterstützen"
+
+#: devicepreference.cpp:950
+#, kde-format
+msgid "Testing %1"
+msgstr "%1 wird getestet"
+
+#. i18n: ectx: property (toolTip), widget (QTreeView, categoryTree)
+#. i18n: ectx: property (whatsThis), widget (QTreeView, categoryTree)
+#: devicepreference.ui:29 devicepreference.ui:32
+msgid ""
+"Various categories of media use cases.  For each category, you may choose "
+"what device you prefer to be used by the Phonon applications."
+msgstr ""
+"Verschiedene Kategorien der Verwendungszwecke. Sie können für jede Kategorie "
+"das Gerät festlegen, das von Phonon verwendet werden soll."
+
+#. i18n: ectx: property (text), widget (QCheckBox, showAdvancedDevicesCheckBox)
+#: devicepreference.ui:47
+msgid "Show advanced devices"
+msgstr "Erweiterte Geräte anzeigen"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, applyPreferencesButton)
+#. i18n: ectx: property (whatsThis), widget (QPushButton, applyPreferencesButton)
+#: devicepreference.ui:77 devicepreference.ui:80
+msgid "Use the currently shown device list for more categories."
+msgstr "Die derzeit angezeigte Geräteliste für weitere Kategorien verwenden."
+
+#. i18n: ectx: property (text), widget (QPushButton, applyPreferencesButton)
+#: devicepreference.ui:83
+msgid "Apply Device List To..."
+msgstr "Geräteliste anwenden auf ..."
+
+#. i18n: ectx: property (toolTip), widget (QTreeView, deviceList)
+#: devicepreference.ui:113
+msgid ""
+"Devices found on your system, suitable for the selected category.  Choose "
+"the device that you wish to be used by the applications."
+msgstr ""
+"Geräte, die auf Ihrem System gefunden wurden und in die ausgewählte "
+"Kategorie passen. Wählen Sie das Gerät, das von den Anwendungen verwendet "
+"werden soll."
+
+#. i18n: ectx: property (whatsThis), widget (QTreeView, deviceList)
+#: devicepreference.ui:116
+msgid ""
+"The order determines the preference of the devices. If for some reason the "
+"first device cannot be used Phonon will try to use the second, and so on."
+msgstr ""
+"Die Reihenfolge hier legt die von Phonon verwendete Priorität bei der "
+"Auswahl der Geräte fest. Ist aus irgendeinem Grund das erste Gerät nicht "
+"verfügbar, versucht Phonon die Ausgabe über das zweite Gerät usw."
+
+#. i18n: ectx: property (text), widget (QToolButton, testPlaybackButton)
+#: devicepreference.ui:171
+msgid "Test"
+msgstr "Test"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, preferButton)
+#: devicepreference.ui:187
+msgid "prefer the selected device"
+msgstr "Das ausgewählte Gerät bevorzugen"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, deferButton)
+#: devicepreference.ui:203
+msgid "no preference for the selected device"
+msgstr "Keine Bevorzugung für das ausgewählte Gerät"
+
+#: main.cpp:46
+msgid "Phonon Configuration Module"
+msgstr "Einstellungsmodul für Phonon"
+
+#: main.cpp:48
+msgid "Copyright 2006 Matthias Kretz"
+msgstr "Copyright 2006 Matthias Kretz"
+
+#: main.cpp:49
+msgid "Matthias Kretz"
+msgstr "Matthias Kretz"
+
+#: main.cpp:50
+msgid "Colin Guthrie"
+msgstr "Colin Guthrie"
+
+#: main.cpp:61
+msgid "Device Preference"
+msgstr "Gerätepriorität"
+
+#: main.cpp:63
+msgid "Backend"
+msgstr "Backend"
+
+#: main.cpp:99
+msgid "Audio Hardware Setup"
+msgstr "Einrichtung der Audio-Hardware"
+
+#: testspeakerwidget.cpp:161
+msgid "Front Left"
+msgstr "Vorne links"
+
+#: testspeakerwidget.cpp:164
+msgid "Front Left of Center"
+msgstr "Vorne linke Mitte"
+
+#: testspeakerwidget.cpp:167
+msgid "Front Center"
+msgstr "Vordere Mitte"
+
+#: testspeakerwidget.cpp:170
+msgid "Mono"
+msgstr "Mono"
+
+#: testspeakerwidget.cpp:173
+msgid "Front Right of Center"
+msgstr "Vordere rechte Mitte"
+
+#: testspeakerwidget.cpp:176
+msgid "Front Right"
+msgstr "Vorne rechts"
+
+#: testspeakerwidget.cpp:179
+msgid "Side Left"
+msgstr "Linke Seite"
+
+#: testspeakerwidget.cpp:182
+msgid "Side Right"
+msgstr "Rechte Seite"
+
+#: testspeakerwidget.cpp:185
+msgid "Rear Left"
+msgstr "Hinten links"
+
+#: testspeakerwidget.cpp:188
+msgid "Rear Center"
+msgstr "Hintere Mitte"
+
+#: testspeakerwidget.cpp:191
+msgid "Rear Right"
+msgstr "Hinten rechts"
+
+#: testspeakerwidget.cpp:194
+msgid "Subwoofer"
+msgstr "Subwoofer"
+
+#: testspeakerwidget.cpp:199
+msgid "Unknown Channel"
+msgstr "Unbekannter Kanal"
+
+#~ msgid "Speaker Setup"
+#~ msgstr "Lautsprechereinstellung"
+
+#~ msgid "Audio Output"
+#~ msgstr "Audio-Ausgabe"
+
+#~ msgid "Audio Capture"
+#~ msgstr "Audio-Aufnahme"
+
+#~ msgid "Video Capture"
+#~ msgstr "Video-Aufnahme"
+
+#~ msgid "Default Audio Output Device Preference"
+#~ msgstr "Bevorzugtes Standard-Audio-Ausgabegerät"
+
+#~ msgid "Audio Output Device Preference for the '%1' Category"
+#~ msgstr "Bevorzugtes Standard-Audio-Ausgabegerät für Kategorie „%1“"
+
+#~ msgid "Remove"
+#~ msgstr "Entfernen"
+
+#~ msgid "Output"
+#~ msgstr "Ausgabe"
+
+#~ msgid "Sound Output"
+#~ msgstr "Audio-Ausgabe"
+
+#~ msgid "Play a test sound on the selected device"
+#~ msgstr "Test-Klang auf dem ausgewählten Gerät ausgeben"
+
+#~ msgid "Capture Device"
+#~ msgstr "Aufnahme-Gerät"
+
+#, fuzzy
+#~| msgid "Default %1 Preference:"
+#~ msgid "Default %1 Preference:"
+#~ msgstr "Standard-Priorität für %1:"
+
+#, fuzzy
+#~| msgid "%1 Preference for the '%2' Category:"
+#~ msgid "%1 Preference for the '%2' Category:"
+#~ msgstr "Priorität für %1 in der Kategorie ‚%2‘:"

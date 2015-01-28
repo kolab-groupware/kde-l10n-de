@@ -1,0 +1,857 @@
+# Frank Schütte <F.Schuette@t-online.de>, 2003, 2004.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005.
+# Burkhard Lück <lueck@hube-lueck.de>, 2007, 2008, 2010, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: krfb\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:14+0000\n"
+"PO-Revision-Date: 2013-06-22 07:34+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:21
+#, no-c-format
+msgid "The &krfb; Handbook"
+msgstr "Das Handbuch zu &krfb;"
+
+#. Tag: author
+#: index.docbook:24
+#, no-c-format
+msgid "&Brad.Hards; &Brad.Hards.mail;"
+msgstr "&Brad.Hards; &Brad.Hards.mail;"
+
+#. Tag: trans_comment
+#: index.docbook:28
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Frank</"
+"firstname><surname>Schütte</surname><affiliation><address><email>F."
+"Schuette@t-online.de</email></address></affiliation><contrib>Übersetzung</"
+"contrib></othercredit>"
+
+#. Tag: holder
+#: index.docbook:33
+#, no-c-format
+msgid "&Brad.Hards;"
+msgstr "&Brad.Hards;"
+
+#. Tag: date
+#: index.docbook:46
+#, no-c-format
+msgid "2013-06-19"
+msgstr "2013-06-19"
+
+#. Tag: releaseinfo
+#: index.docbook:47
+#, no-c-format
+msgid "&kde; 4.11"
+msgstr "&kde; 4.11"
+
+#. Tag: para
+#: index.docbook:52 index.docbook:95
+#, no-c-format
+msgid ""
+"&krfb; is a server application that allows you to share your current session "
+"with a user on another machine, who can use a <acronym>VNC</acronym> client "
+"to view or even control the desktop."
+msgstr ""
+"&krfb; ist eine Serveranwendung, welche die gemeinsame Benutzung der "
+"aktuellen Sitzung mit einem Benutzer auf einem anderen Rechner ermöglicht, "
+"der mit Hilfe eines <acronym>VNC</acronym>-Programms den Bildschirminhalt "
+"sehen oder sogar die Arbeitsfläche bedienen kann."
+
+#. Tag: keyword
+#: index.docbook:64
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:65
+#, no-c-format
+msgid "kdenetwork"
+msgstr "kdenetwork"
+
+#. Tag: keyword
+#: index.docbook:66
+#, no-c-format
+msgid "krfb"
+msgstr "krfb"
+
+#. Tag: keyword
+#: index.docbook:67
+#, no-c-format
+msgid "<keyword>VNC</keyword>"
+msgstr "<keyword>VNC</keyword>"
+
+#. Tag: keyword
+#: index.docbook:68
+#, no-c-format
+msgid "<keyword>RFB</keyword>"
+msgstr "<keyword>RFB</keyword>"
+
+#. Tag: keyword
+#: index.docbook:69
+#, no-c-format
+msgid "krdc"
+msgstr "krdc"
+
+#. Tag: keyword
+#: index.docbook:70
+#, no-c-format
+msgid "Desktop Sharing"
+msgstr "Freigabe der Arbeitsfläche"
+
+#. Tag: keyword
+#: index.docbook:71
+#, no-c-format
+msgid "Remote Control"
+msgstr "Fernsteuerung"
+
+#. Tag: keyword
+#: index.docbook:72
+#, no-c-format
+msgid "Remote Assistance"
+msgstr "Fernunterstützung"
+
+#. Tag: keyword
+#: index.docbook:73
+#, no-c-format
+msgid "Remote Desktop"
+msgstr "Arbeitsfläche des Fremdgeräts"
+
+#. Tag: title
+#: index.docbook:88
+#, no-c-format
+msgid "Introduction"
+msgstr "Einleitung"
+
+#. Tag: para
+#: index.docbook:101
+#, no-c-format
+msgid ""
+"You would typically use &krfb; with the &kde; <acronym>VNC</acronym> client, "
+"which is &krdc;, since it closely matches the special features of &krfb;."
+msgstr ""
+"Üblicherweise wird &krfb; zusammen mit dem &kde; <acronym>VNC</acronym>-"
+"Programm &krdc; verwendet, da dessen Funktionsumfang am besten auf die "
+"Funktionen von &krfb; abgestimmt ist."
+
+#. Tag: para
+#: index.docbook:106
+#, no-c-format
+msgid ""
+"&krfb; doesn't require you to start a new X session - it can share the "
+"current session. This makes it very useful when you want someone to help you "
+"perform a task."
+msgstr ""
+"Für &krfb; ist keine eigene X-Sitzung erforderlich. Das Programm kann die "
+"aktuelle Sitzung verwenden. Damit können sie sich unkompliziert bei einer "
+"Aufgabe helfen lassen."
+
+#. Tag: para
+#: index.docbook:112
+#, no-c-format
+msgid ""
+"Please report any problems or feature requests to the &kde; mailing lists or "
+"file a bug at <ulink url=\"http://bugs.kde.org\">http://bugs.kde.org</ulink>."
+msgstr ""
+"Bitte berichten Sie alle Probleme oder Wünsche in den &kde;-Mailinglisten "
+"oder unter <ulink url=\"http://bugs.kde.org\">http://bugs.kde.org</ulink>."
+
+#. Tag: title
+#: index.docbook:120
+#, no-c-format
+msgid "The Remote Frame Buffer protocol"
+msgstr "Das <quote>Remote Frame Buffer</quote>-Protokoll"
+
+#. Tag: para
+#: index.docbook:122
+#, no-c-format
+msgid ""
+"This chapter provides a brief description of the Remote Frame Buffer "
+"protocol used by &krfb; and by other compatible systems. If you are already "
+"familiar with Remote Frame Buffer, you can safely skip this chapter."
+msgstr ""
+"In diesem Kapitel wird das von &krfb; und kompatiblen Systemen verwendete "
+"Übertragungsprotokoll (<quote>Remote Frame Buffer</quote>-Protokoll) kurz "
+"beschrieben. Falls sie dieses Protokoll bereits kennen, können Sie dieses "
+"Kapitel überspringen."
+
+#. Tag: para
+#: index.docbook:129
+#, no-c-format
+msgid ""
+"The high level implementation of a system using the Remote Frame Buffer "
+"protocol is known as Virtual Network Computer, or more often just as "
+"<acronym>VNC</acronym>."
+msgstr ""
+"Es gibt eine umfangreiche Implementierung des <quote>Remote Frame Buffer</"
+"quote>-Protokolls, bekannt unter dem Namen <acronym>VNC</acronym> "
+"(<quote>Virtual Network Computer</quote>)."
+
+#. Tag: para
+#: index.docbook:135
+#, no-c-format
+msgid ""
+"Remote Frame Buffer (or <acronym>RFB</acronym> for short) is a simple "
+"protocol for remote access to graphical user interfaces. It works at the "
+"frame-buffer level, which roughly corresponds to the rendered screen image, "
+"which means that it can be applied to all windowing systems (including X11, "
+"&MacOS; and &Microsoft; &Windows;). Remote Frame Buffer applications exist "
+"for many platforms, and can often be freely re-distributed."
+msgstr ""
+"<quote>Remote Frame Buffer</quote> (<acronym>RFB</acronym>) ist ein "
+"einfaches Protokoll für den entfernten Zugriff auf eine grafische "
+"Benutzeroberfläche. Es arbeitet auf der Ebene des <quote>Frame-buffers</"
+"quote>, der grob der gerasterten Bildschirmdarstellung entspricht. Daher "
+"kann das Protokoll für alle Fenstersysteme (einschließlich X11, &MacOS; und "
+"&Microsoft; &Windows;) verwendet werden. <quote>Remote Frame Buffer</quote>-"
+"Programme finden sich für viele Plattformen und können meistens frei "
+"verteilt werden."
+
+#. Tag: para
+#: index.docbook:145
+#, no-c-format
+msgid ""
+"In the Remote Frame Buffer protocol, the application that runs on the "
+"machine where the user sits (containing the display, keyboard and pointer) "
+"is called the client. The application that runs on the machine where the "
+"framebuffer is located (which is running the windowing system and "
+"applications that the user is remotely controlling) is called the server. "
+"&krfb; is the &kde; server for the Remote Frame Buffer protocol. &krdc; is "
+"the &kde; client for the Remote Frame Buffer protocol."
+msgstr ""
+"Das Programm auf dem Rechner, an dem der Benutzer sitzt (der also "
+"Bildschirm, Tastatur und Maus besitzt), wird im <quote>Remote Frame Buffer</"
+"quote>-Protokoll als Client bezeichnet. Das Programm auf dem Rechner mit dem "
+"<quote>Frame buffer</quote> (der Rechner mit Fenstersystem, der von einem "
+"Fremdgerät gesteuert wird) wird als Server bezeichnet. Der &kde;-Server mit "
+"dem <quote>Remote Frame Buffer</quote>-Protokoll ist &krfb;. Der &kde;-"
+"Client für das <quote>Remote Frame Buffer</quote>-Protokoll ist &krdc;."
+
+#. Tag: para
+#: index.docbook:156
+#, no-c-format
+msgid ""
+"It takes a reasonable amount of network traffic to send an image of the "
+"framebuffer, so Remote Frame Buffer works best over high bandwidth links, "
+"such as a local area network. It is still possible to use &krfb; over other "
+"links, but performance is unlikely to be as good."
+msgstr ""
+"Für die Übertragung eines Bildes des <quote>Frame buffers</quote> benötigt "
+"man eine erhebliche Übertragungsrate, daher sollte <quote>Remote Frame "
+"Buffer</quote> nur in Netzwerken ausreichender Bandbreite &eg; in lokalen "
+"Netzwerken eingesetzt werden. Bei Verwendung von &krfb; über langsamere "
+"Verbindungen ist die Arbeitsgeschwindigkeit zu langsam."
+
+#. Tag: title
+#: index.docbook:166
+#, no-c-format
+msgid "Using &krfb;"
+msgstr "Verwendung von &krfb;"
+
+#. Tag: para
+#: index.docbook:172
+#, no-c-format
+msgid ""
+"It is very easy to use &krfb; - it has a simple interface, as shown in the "
+"screenshot below."
+msgstr ""
+"Die Verwendung von &krfb; ist leicht - die einfache Oberfläche ist im "
+"Bildschirmfoto unten zu sehen."
+
+#. Tag: screeninfo
+#: index.docbook:179
+#, no-c-format
+msgid "Here's a screenshot of &krfb;"
+msgstr "Bildschirmfoto von &krfb;"
+
+#. Tag: phrase
+#: index.docbook:185
+#, no-c-format
+msgid "&krfb; main window"
+msgstr "Das Hauptfenster von &krfb;"
+
+#. Tag: para
+#: index.docbook:191
+#, no-c-format
+msgid ""
+"When you want to allow someone to access your desktop, you can create an "
+"personal invitation using the <guibutton>New Personal Invitation...</"
+"guibutton> button, which will bring up a window containing the information "
+"needed to access your desktop. An example is shown below."
+msgstr ""
+"Falls Sie jemandem den Zugriff auf ihre Arbeitsfläche gestatten möchten, "
+"können Sie eine persönliche Einladung versenden durch den Knopf "
+"<guibutton>Neue persönliche Einladung ...</guibutton>. Es erscheint ein "
+"Fenster, das alle nötigen Informationen zum Zugriff enthält. Ein Beispiel "
+"ist weiter unten zu sehen."
+
+#. Tag: screeninfo
+#: index.docbook:201
+#, no-c-format
+msgid "<screeninfo>Example &krfb; personal invitation</screeninfo>"
+msgstr ""
+"<screeninfo> Beispiel einer persönlichen Einladung mit &krfb;</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:207
+#, no-c-format
+msgid "<phrase>Example &krfb; personal invitation</phrase>"
+msgstr "<phrase>Beispiel einer persönlichen Einladung mit &krfb;</phrase>"
+
+#. Tag: para
+#: index.docbook:213
+#, no-c-format
+msgid ""
+"To increase security, the invitation is only valid for an hour after it is "
+"created, and of course the person connecting has to have the correct "
+"password."
+msgstr ""
+"Aus Sicherheitsgründen ist die Einladung nur eine Stunde lang gültig und nur "
+"nach Eingabe des richtigen Passworts."
+
+#. Tag: para
+#: index.docbook:219
+#, no-c-format
+msgid ""
+"Since you may want to invite someone to access your desktop by email, &krfb; "
+"can create invitations as email messages. You can create such an invitation "
+"using the <guibutton>New Email Invitation...</guibutton> button on the "
+"&krfb; main window. This will usually bring up an email message that looks "
+"like the following, ready for you to type in the email address of the person "
+"you are sending the invitation to."
+msgstr ""
+"Soll die Einladung per E-Mail ausgesprochen werden soll, kann &krfb; diese "
+"Einladungen erstellen. Dazu klicken Sie auf <guibutton>Neue Einladung per E-"
+"Mail ...</guibutton> im Hauptfenster von &krfb;. Es erscheint eine E-Mail, "
+"die dem folgenden Beispiel ähnelt. Es muss lediglich der Adressat "
+"eingetragen und die E-Mail abgeschickt werden."
+
+#. Tag: screeninfo
+#: index.docbook:230
+#, no-c-format
+msgid "<screeninfo>Example &krfb; email invitation</screeninfo>"
+msgstr "<screeninfo>Beispiel einer &krfb;-Einladung per E-Mail</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:236
+#, no-c-format
+msgid "<phrase>Example &krfb; email invitation</phrase>"
+msgstr "<phrase>Beispiel einer &krfb;-Einladung per E-Mail</phrase>"
+
+#. Tag: para
+#: index.docbook:243
+#, no-c-format
+msgid ""
+"&krfb; will warn you about the security implications of sending this "
+"information across an insecure link. You must heed those warnings."
+msgstr ""
+"&krfb; warnt vor den Sicherheitsrisiken der Versendung einer solchen "
+"Einladung über eine unsichere Verbindung. Diese Warnung sollte man "
+"beherzigen."
+
+#. Tag: para
+#: index.docbook:247
+#, no-c-format
+msgid ""
+"If you cannot encrypt the email (or otherwise secure the link), sending "
+"invitations by email is a very serious security risk, since anyone can read "
+"the password and address from the email as it passes over the network. This "
+"means that they can potentially take control of your machine."
+msgstr ""
+"Falls man die E-Mail nicht verschlüsselt (oder alternativ eine sichere "
+"Verbindung verwendet) stellt die Einladung ein hohes Sicherheitsrisiko dar, "
+"da jeder auf dem Weg der E-Mail gelegene Rechner die E-Mail mitlesen und das "
+"Passwort verwenden kann, um so möglicherweise die Kontrolle über ihren "
+"Rechner übernehmen zu können."
+
+#. Tag: para
+#: index.docbook:254
+#, no-c-format
+msgid ""
+"If you cannot encrypt the email message, it may be better to use a personal "
+"invitation, telephone the person you are giving access to, verify the "
+"identity of that person, and provide the required invitation information "
+"that way."
+msgstr ""
+"In diesem Fall sollte man lieber zu einer persönlichen Einladung per Telefon "
+"greifen. So kann man sich von der Identität der anderen Person überzeugen "
+"und dann die relevanten Daten per Telefon weiter geben."
+
+#. Tag: title
+#: index.docbook:263
+#, no-c-format
+msgid "Managing &krfb; invitations"
+msgstr "Verwaltung von &krfb;-Einladungen"
+
+#. Tag: para
+#: index.docbook:265
+#, no-c-format
+msgid ""
+"Having created an invitation (either a personal invitation or one that was "
+"sent by email), &krfb; main window allows you to delete existing "
+"invitations. To just delete one of the invitations, select it with the mouse "
+"(it should become highlighted), and then select the <guibutton>Delete</"
+"guibutton>. To delete all invitations, just select the <guibutton>Delete "
+"All</guibutton> button."
+msgstr ""
+"Weiterhin können in diesem Hauptfenster bereits persönlich oder oer E-Mail "
+"ausgesprochene Einladungen gelöscht werden. Dazu wählt man die gewünschte "
+"Einladung aus (sie sollte hervorgehoben erscheinen) und klickt auf "
+"<guibutton>Entfernen</guibutton>. Um alle Einladungen zu löschen, klickt man "
+"auf den Knopf <guibutton>Alle entfernen</guibutton>."
+
+#. Tag: title
+#: index.docbook:277
+#, no-c-format
+msgid "Quit &krfb;"
+msgstr "&krfb; beenden"
+
+#. Tag: para
+#: index.docbook:279
+#, no-c-format
+msgid ""
+"If you close the &krfb; main window the server keeps running, which is "
+"indicated by an icon in the system tray. To stop &krfb; right click on the "
+"icon in the systems tray and select <guimenuitem>Quit</guimenuitem>."
+msgstr ""
+"Wird das Hauptfenster von &krfb; geschlossen, läuft der Server weiter. Dies "
+"wird durch ein Symbol im Systemabschnitt der Kontrollleiste angezeigt. Um "
+"&krfb; zu beenden, klicken Sie mit der &RMBn; auf dieses Symbol und wählen "
+"dann <guimenuitem>Beenden</guimenuitem>."
+
+#. Tag: title
+#: index.docbook:289
+#, no-c-format
+msgid "Configuring &krfb;"
+msgstr "Einrichtung von &krfb;"
+
+#. Tag: para
+#: index.docbook:290
+#, no-c-format
+msgid ""
+"In addition to the main &krfb; interface shown and described above, you can "
+"also control &krfb; using the <guibutton>Configure...</guibutton> on the "
+"&krfb; main window. The &krfb; configuration has two pages, as shown in the "
+"screenshot below:"
+msgstr ""
+"Außer im Hauptfenster kann man &krfb; auch durch Klicken auf den Knopf "
+"<guibutton>Einrichten ...</guibutton> aus dem &krfb;-Hauptfenster den "
+"Einstellungsdialog öffnen. Dieser Dialog besteht aus zwei Seiten wie im "
+"unten angezeigten Bildschirmfoto:"
+
+#. Tag: para
+#: index.docbook:297
+#, no-c-format
+msgid ""
+"The <guilabel>Network</guilabel> page allows control over the port that "
+"&krfb; uses, as shown below."
+msgstr ""
+"Auf der Seite <guilabel>Netzwerk</guilabel> kann man den von &krfb; "
+"verwendeten Port einstellen (siehe unten)."
+
+#. Tag: screeninfo
+#: index.docbook:304
+#, no-c-format
+msgid "<screeninfo>&krfb; Configuration (Network page)</screeninfo>"
+msgstr "<screeninfo>Einrichtung von &krfb; (Netzwerk)</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:310
+#, no-c-format
+msgid "<phrase>&krfb; Configuration (Network page)</phrase>"
+msgstr "<phrase>Einrichtung von &krfb; (Netzwerk)</phrase>"
+
+#. Tag: para
+#: index.docbook:316
+#, no-c-format
+msgid ""
+"The <guilabel>Announce service on the network</guilabel> checkbox controls "
+"whether &krfb; announces invitations over the network using Service Location "
+"Protocol. This is normally a good idea, but only works really well with a "
+"Service Location Protocol aware client, such as &krdc;."
+msgstr ""
+"Wenn das Ankreuzfeld <guilabel>Dienst im lokalen Netzwerk veröffentlichen</"
+"guilabel> markiert ist, dann macht &krfb; Einladungen über das Netzwerk "
+"mithilfe des <quote>Service Location</quote>-Protokolls bekannt. Diese "
+"Funktion arbeitet nur mit einem Programm wie &krdc; einwandfrei."
+
+#. Tag: para
+#: index.docbook:324
+#, no-c-format
+msgid ""
+"If you select the <guilabel>Use default port</guilabel> checkbox, then "
+"&krfb; will locate a suitable port, and invitations will match this port. If "
+"you deselect this checkbox, you can specify a particular port. Specifying a "
+"particular port may be useful if you are using port-forwarding on the "
+"firewall. Note that if Service Location Protocol is turned on, this will "
+"automatically deal with identifying the correct port."
+msgstr ""
+"Falls <guilabel>Standardport verwenden</guilabel> aktiviert ist, wählt "
+"&krfb; einen geeigneten Port aus und verwendet diesen auch in Einladungen. "
+"Falls diese Einstellung nicht markiert ist, kann man einen festen Port "
+"zuweisen. Das ist nützlich, falls man sich hinter einem Firewall befindet. "
+"Falls das <quote>Service Location</quote>-Protokoll aktiviert ist, "
+"identifiziert es den richtigen Port automatisch."
+
+#. Tag: para
+#: index.docbook:334
+#, no-c-format
+msgid ""
+"The <guilabel>Security</guilabel> page allows you configure settings related "
+"to access to the &krfb; server."
+msgstr ""
+"Auf der Seite <guilabel>Sicherheit</guilabel> befinden sich "
+"Einstellmöglichkeiten, die den Zugriff auf den &krfb;-Server beeinflussen."
+
+#. Tag: screeninfo
+#: index.docbook:341
+#, no-c-format
+msgid "<screeninfo>&krfb; Configuration (Security page)</screeninfo>"
+msgstr "<screeninfo>Einrichtung von &krfb; (Sicherheit)</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:347
+#, no-c-format
+msgid "<phrase>&krfb; Configuration (Security page)</phrase>"
+msgstr "<phrase>Einrichtung von &krfb; (Sicherheit)</phrase>"
+
+#. Tag: para
+#: index.docbook:353
+#, no-c-format
+msgid ""
+"The <guilabel>Allow uninvited connections</guilabel> check box controls "
+"whether &krfb; allows connection without an invitation. If uninvited "
+"connections are allowed, then you should probably specify a password. You "
+"can also use the check boxes here to choose whether you have to confirm the "
+"connection before it proceeds, and whether the person connecting can control "
+"the desktop, or only view."
+msgstr ""
+"Mithilfe des Ankreuzfeldes <guilabel>Uneingeladene Verbindungen akzeptieren</"
+"guilabel> wird kontrolliert, ob &krfb; auch uneingeladene Verbindungen "
+"ermöglicht. Für solche Verbindungen sollte man ein Passwort festlegen. Mit "
+"weiteren Ankreuzfeldern kann man festlegen, ob Verbindungen nur nach "
+"vorheriger Rückfrage hergestellt werden können, und ob die Arbeitsfläche nur "
+"eingesehen oder auch gesteuert werden kann."
+
+#. Tag: para
+#: index.docbook:362
+#, no-c-format
+msgid ""
+"If the machine is a workstation, and you choose to allow uninvited "
+"connections, you probably want to select the <guilabel>Ask before accepting "
+"connections </guilabel>. Conversely, if the machine is a server and you are "
+"using &krfb; for remote administration, you probably want to deselect this "
+"option."
+msgstr ""
+"Falls es sich bei dem Rechner um eine Workstation handelt und man "
+"uneingeladene Verbindungen erlauben möchte, sollte man das Ankreuzfeld "
+"<guilabel>Vor dem Akzeptieren von Verbindungen nachfragen</guilabel> "
+"markieren. Falls es sich bei dem &krfb;-Rechner um einen Server handelt und "
+"&krfb; zur Administrierung dieses Servers eingesetzt werden soll, sollte man "
+"dieses Ankreuzfeld nicht markieren."
+
+#. Tag: para
+#: index.docbook:371
+#, no-c-format
+msgid ""
+"&krfb; uses the normal <acronym>RFB</acronym> password system, which does "
+"not transfer your password in the clear across the network. Instead, it uses "
+"a challenge-response system. This is reasonably secure, as long as the "
+"password is securely guarded."
+msgstr ""
+"&krfb; verwendet für Passwörter das <acronym>RFB</acronym>-System, das keine "
+"unverschlüsselten Passwörter über das Netzwerk überträgt. Stattdess wird ein "
+"Frage-Antwort-System (<quote>Challenge Response</quote>) verwendet. Das ist "
+"normalerweise sicher, solange das Passwort geheim gehalten wird."
+
+#. Tag: title
+#: index.docbook:382
+#, no-c-format
+msgid "What happens when someone connects to &krfb;"
+msgstr "Was passiert bei der Verbindung zu &krfb;"
+
+#. Tag: para
+#: index.docbook:384
+#, no-c-format
+msgid ""
+"When someone connects to &krfb; on your machine, you will get a pop-up "
+"notification that looks like the following screenshot, unless you are "
+"accepting uninvited connections without warning."
+msgstr ""
+"Sobald jemand eine Verbindungsanfrage an &krfb; auf ihrem Rechner stellt, "
+"erscheint ein Benachrichtigungsfenster, das ähnlich dem folgenden "
+"Bildschirmfoto aussieht (falls man uneingeladene Verbindungen ohne Warnung "
+"aktiviert hat, erscheint das Fenster nicht)."
+
+#. Tag: screeninfo
+#: index.docbook:391
+#, no-c-format
+msgid "<screeninfo>&krfb; Connection Window</screeninfo>"
+msgstr "<screeninfo>Verbindungsfenster von &krfb;</screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:397
+#, no-c-format
+msgid "<phrase>&krfb; Connection Window</phrase>"
+msgstr "<phrase>Verbindungsfenster von &krfb;</phrase>"
+
+#. Tag: para
+#: index.docbook:403
+#, no-c-format
+msgid ""
+"If you <guibutton>Accept Connection</guibutton>, the client can proceed to "
+"authenticate (which requires the correct password for a personal invitation "
+"or email invitation). If you <guibutton>Refuse Connection</guibutton>, then "
+"the attempt to connect will be terminated."
+msgstr ""
+"Klickt man auf <guibutton>Verbindung akzeptieren</guibutton>, so kann sich "
+"der Client authentifizieren (erfordert die korrekte Eingabe des Passworts, "
+"das zu der persönlichen Einladung oder der E-Mail-Einladung gehört). Klickt "
+"man auf <guibutton>Verbindung verweigern</guibutton>, so wird der "
+"Verbindungsversuch abgebrochen."
+
+#. Tag: para
+#: index.docbook:410
+#, no-c-format
+msgid ""
+"The <guilabel>Allow remote user to control keyboard and mouse</guilabel> "
+"check box determines whether this client can only observe, or can take "
+"control of your machine."
+msgstr ""
+"Über das Ankreuzfeld <guilabel>Steuerung von Tastatur und Maus durch die "
+"Gegenstelle erlauben</guilabel> wird festgelegt, ob der Client lediglich die "
+"Arbeitsfläche einsehen oder sogar steuern kann."
+
+#. Tag: para
+#: index.docbook:416
+#, no-c-format
+msgid ""
+"If the client connection is successful, and used the password from a "
+"personal invitation or email invitation, then that invitation is deleted and "
+"cannot be used again. You will also get a small pop-up window in the dock, "
+"that shows that the connection has been made."
+msgstr ""
+"Falls die Verbindung erfolgreich hergestellt und das korrekte Passwort für "
+"eine persönliche Einladung verwendet wurde, wird diese Einladung gelöscht "
+"und kann nicht noch einmal verwendet werden. Es erscheint ein kleines "
+"Fenster in der Kontrollleiste, das die Verbindung anzeigt."
+
+#. Tag: title
+#: index.docbook:433
+#, no-c-format
+msgid "Credits and License"
+msgstr "Danksagungen und Lizenz"
+
+#. Tag: para
+#: index.docbook:435
+#, no-c-format
+msgid "&krfb;"
+msgstr "&krfb;"
+
+#. Tag: para
+#: index.docbook:438
+#, no-c-format
+msgid "Program copyright 2002 Tim Jansen <email>tim@tjansen.de</email>"
+msgstr "Programn Copyright 2002 Tim Jansen <email>tim@tjansen.de</email>"
+
+#. Tag: para
+#: index.docbook:441
+#, no-c-format
+msgid "Contributors:"
+msgstr "Mitwirkende:"
+
+#. Tag: para
+#: index.docbook:444
+#, no-c-format
+msgid "Ian Reinhart Geiser <email>geiseri@kde.org</email>"
+msgstr "Ian Reinhart Geiser <email>geiseri@kde.org</email>"
+
+#. Tag: para
+#: index.docbook:449
+#, no-c-format
+msgid "Documentation Copyright &copy; 2003 &Brad.Hards; &Brad.Hards.mail;"
+msgstr "Dokumentation Copyright&copy; 2003 &Brad.Hards; &Brad.Hards.mail;"
+
+#. Tag: trans_comment
+#: index.docbook:453
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Deutsche Übersetzung: Frank Schütte <email>F.Schuette@t-online.de</"
+"email></para>"
+
+#. Tag: chapter
+#: index.docbook:453
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr "&underFDL; &underGPL;"
+
+#. Tag: title
+#: index.docbook:462
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#. Tag: title
+#: index.docbook:465
+#, no-c-format
+msgid "How to obtain &krfb;"
+msgstr "Woher man &krfb; bekommt"
+
+#. Tag: sect1
+#: index.docbook:465
+#, no-c-format
+msgid "&install.intro.documentation;"
+msgstr "&install.intro.documentation;"
+
+#. Tag: title
+#: index.docbook:476
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr "Kompilierung und Installation"
+
+#. Tag: sect1
+#: index.docbook:476
+#, no-c-format
+msgid "&install.compile.documentation;"
+msgstr "&install.compile.documentation;"
+
+#~ msgid "2010-02-09"
+#~ msgstr "2010-02-09"
+
+#~ msgid ""
+#~ "Having created an invitation (either a personal invitation or one that "
+#~ "was sent by email), &krfb; allows you to manage those invitations. The "
+#~ "dialog to control these is available using <guibutton>Manage "
+#~ "Invitations...</guibutton> on the &krfb; main window. If you select that "
+#~ "button, &krfb; will bring up a window as shown below."
+#~ msgstr ""
+#~ "Nachdem man (entweder persönlich oder per E-Mail) mit &krfb; eine "
+#~ "Einladung ausgesprochen hat, kann man die bisher ausgesprochenen "
+#~ "Einladungen auch verwalten. Der Dialog dazu wird mit dem Knopf "
+#~ "<guibutton>Einladungen bearbeiten ...</guibutton> aus dem Hauptfenster "
+#~ "von &krfb; aufgerufen. Beim Klicken auf diesen Knopf erscheint das unten "
+#~ "abgebildete Fenster."
+
+#~ msgid "<screeninfo>&krfb; invitation management</screeninfo>"
+#~ msgstr "<screeninfo>&krfb; Einldaungen bearbeiten</screeninfo>"
+
+#~ msgid "<phrase>&krfb; invitation management</phrase>"
+#~ msgstr "<phrase>&krfb; Einladungen bearbeiten</phrase>"
+
+#~ msgid ""
+#~ "The invitation management window allows you to create more invitations "
+#~ "(using the <guibutton>New Personal Invitation...</guibutton> and "
+#~ "<guibutton>New Email Invitation...</guibutton> buttons, which have the "
+#~ "same effect as the <guibutton>Create Personal Invitation...</guibutton> "
+#~ "and <guibutton>Invite via Email...</guibutton> buttons on the &krfb; main "
+#~ "window."
+#~ msgstr ""
+#~ "Das Fenster zur Verwaltung von Einladungen erlaubt es, weitere "
+#~ "Einladungen auszusprechen (mit den Knöpfen <guibutton>Neue persönliche "
+#~ "Einladung ...</guibutton> und <guibutton>Neue Einladung per E-Mail ...</"
+#~ "guibutton>, die die gleiche Funktion wie <guibutton>Persönlich "
+#~ "Einladen ...</guibutton> und <guibutton>Einladen per E-Mail ...</"
+#~ "guibutton> im &krfb;-Hauptfenster haben)."
+
+#~ msgid "Selecting <guibutton>Close</guibutton> closes this dialog."
+#~ msgstr ""
+#~ "Durch Auswahl von <guibutton>Schließen</guibutton> wird der Dialog "
+#~ "geschlossen."
+
+#~ msgid "<screeninfo>&krfb; Configuration (Access Tab)</screeninfo>"
+#~ msgstr ""
+#~ "<screeninfo>Einrichtung von &krfb; (Karteikarte Zugriff)</screeninfo>"
+
+#~ msgid "<phrase>&krfb; Configuration (Access Tab)</phrase>"
+#~ msgstr "<phrase>Einrichtung von &krfb; (Karteikarte Zugriff)</phrase>"
+
+#~ msgid ""
+#~ "The <guibutton>Create and Manage Invitations...</guibutton> takes you to "
+#~ "the <link linkend=\"krfb-managing-invitations\">&krfb; invitation "
+#~ "management window</link>, which was described previously."
+#~ msgstr ""
+#~ "Der Knopf <guibutton>Einladungen aussprechen &amp; verwalten ...</"
+#~ "guibutton> öffnet den Dialog <link linkend=\"krfb-managing-invitations"
+#~ "\">&krfb; Verwaltung von Einladungen</link>, der weiter oben beschrieben "
+#~ "wurde."
+
+#~ msgid ""
+#~ "&krfb; allows you to control whether the background image is passed to "
+#~ "the client, or not. This is controlled using a check box in the "
+#~ "<guilabel>Session</guilabel> tab, as shown below."
+#~ msgstr ""
+#~ "Auf der Karteikarte <guilabel>Sitzung </guilabel> können Sie festlegen, "
+#~ "ob das Hintergrundbild von &krfb; zum Client-Programm übertragen wird "
+#~ "oder nicht."
+
+#~ msgid ""
+#~ "If you check the box, &krfb; will not transfer the background image. If "
+#~ "you leave it blank, it is up to the client whether the background image "
+#~ "is transferred or not transferred."
+#~ msgstr ""
+#~ "Falls dieses Dialogfeld angekreuzt ist, überträgt &krfb; das "
+#~ "Hintergrundbild nicht zum Client-Programm. Falls das Feld leer gelassen "
+#~ "wird, kann das Client-Programm entscheiden, ob es das Hintergrundbild "
+#~ "anfordert oder nicht."
+
+#~ msgid "Developer's Guide to &krfb;"
+#~ msgstr "Einführung zu &krfb; für Entwickler"
+
+#~ msgid ""
+#~ "&krfb; supports a small number of &DCOP; commands, which are described in "
+#~ "this chapter. If you aren't familiar with &DCOP;, then you don't need to "
+#~ "worry about this. However if you'd like to automate some of your &krfb; "
+#~ "(or other &kde; application) actions, &DCOP; is a useful tool. You can "
+#~ "find out more about &DCOP; in its on-line documentation, and in tutorials "
+#~ "on <ulink url=\"http://developer.kde.org\">http://developer.kde.org</"
+#~ "ulink>."
+#~ msgstr ""
+#~ "In diesem Kapitel werden die &DCOP;-Befehle beschrieben, die von &krfb; "
+#~ "unterstützt werden. Falls sie nicht wissen, was &DCOP; ist, ist das "
+#~ "folgende Kapitel nicht von Nutzen. Falls man einige der Funktionen von "
+#~ "&krfb; automatisieren möchte (oder andere &kde;-Anwendungen), ist &DCOP; "
+#~ "sehr nützlich. Informationen zu &DCOP; findet man in der Online-"
+#~ "Dokumentation unter <ulink url=\"http://developer.kde.org\">http://"
+#~ "developer.kde.org</ulink>."
+
+#~ msgid ""
+#~ "You can shut down the &krfb; application using the quit command, as shown "
+#~ "in this example:"
+#~ msgstr ""
+#~ "Das Programm &krfb; wird durch den Befehl <quote>quit</quote> beendet "
+#~ "(siehe auch das folgende Beispiel):"
+
+#~ msgid ""
+#~ "<prompt>&percnt;</prompt>dcop krfb-1507 MainApplication-Interface quit"
+#~ msgstr ""
+#~ "<prompt>&percnt;</prompt>dcop krfb-1507 MainApplication-Interface quit"
+
+#~ msgid ""
+#~ "You will need to change the <userinput>krfb-1507</userinput> in the "
+#~ "example to match the instance of &krfb; that you actually want to "
+#~ "shutdown. If you run <command>dcop</command> with no options, you will "
+#~ "get a list of all applications that are running and &DCOP; can control."
+#~ msgstr ""
+#~ "Die Eingabe <userinput>krfb-1507</userinput> des Beispiels muss so "
+#~ "geändert werden, das die Zahl zur Instanz von &krfb; passt. Ein Aufruf "
+#~ "von <command>dcop</command> ohne Optionen zeigt eine Liste aller "
+#~ "laufenden Programme an, die mit &DCOP; gesteuert werden können."
+
+#~ msgid "Questions and Answers"
+#~ msgstr "Fragen und Antworten"
+
+#~ msgid "&reporting.bugs; &updating.documentation;"
+#~ msgstr "&reporting.bugs; &updating.documentation;"

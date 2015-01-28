@@ -1,0 +1,530 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+  <!ENTITY kappname "&ark;">
+  <!ENTITY package "kdeutils">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<book id="ark" lang="&language;">
+
+<bookinfo>
+<title
+>Das Handbuch zu &ark;</title>
+
+<authorgroup>
+<author
+>&Matt.Johnston; &Matt.Johnston.mail; </author>
+
+<othercredit role="translator"
+><firstname
+>Gregor</firstname
+><surname
+>Zumstein</surname
+><affiliation
+><address
+><email
+>zumstein@ssd.ethz.ch</email
+></address
+></affiliation
+><contrib
+>Übersetzung von</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2000</year>
+<holder
+>&Matt.Johnston;</holder>
+</copyright>
+
+<copyright>
+<year
+>2004</year>
+<holder
+>Henrique Pinto</holder>
+</copyright>
+
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2013-06-21</date>
+<releaseinfo
+>2.19 &kde; (4.11)</releaseinfo>
+
+<abstract>
+<para
+>&ark; ist eine Archiv-Verwaltung für &kde;.</para
+></abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>gzip</keyword>
+<keyword
+>gunzip</keyword>
+<keyword
+>tar</keyword>
+<keyword
+>archiv</keyword>
+<keyword
+>zip</keyword>
+<keyword
+>komprimierung</keyword>
+<keyword
+>7z</keyword>
+<keyword
+>kdeutils</keyword>
+<keyword
+>ark</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Einleitung</title>
+
+<para
+>&ark; ist ein Programm, um den Inhalt von Archiven anzuzeigen, Archive zu erzeugen und zu ändern und Dateien daraus zu entpacken. Das Programm kann mit verschiedensten Formaten wie <command
+>tar</command
+>, <command
+>gzip</command
+>, <command
+>bzip2</command
+>, <command
+>zip</command
+>, <command
+>rar</command
+>, <command
+>7z</command
+>, <command
+>xz</command
+>, <command
+>rpm</command
+>, <command
+>cab</command
+> und <command
+>deb</command
+> umgehen, sofern die entsprechenden Befehlszeilenprogramme installiert sind. </para>
+
+<screenshot>
+<screeninfo
+>&ark; Hauptfenster</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="ark-mainwindow.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>&ark; Hauptfenster</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+</chapter>
+
+<chapter id="using-ark">
+<title
+>&ark; benutzen</title>
+
+<sect1 id="ark-open">
+<title
+>Archive öffnen</title>
+
+<para
+>Um ein Archiv in &ark; zu öffnen, wählen Sie <guimenuitem
+>Öffnen ...</guimenuitem
+> im Menü <guimenu
+>Datei</guimenu
+> (<keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+>). Sie können Archivdateien auch öffnen, indem Sie sie aus dem Dateimanager &konqueror; oder &dolphin; herüberziehen. Normalerweise sind Archivdateien &ark; zugeordnet, sodass Sie einfach mit der <mousebutton
+>rechten Maustaste</mousebutton
+> auf eine Datei klicken und dann den Eintrag <guimenuitem
+>Öffnen mit &ark;</guimenuitem
+> oder eine andere Aktion zum Entpacken auswählen können.</para>
+
+<para
+>Wenn Sie die Informationsleiste im Menü <guimenu
+>Einstellungen</guimenu
+> eingeschaltet haben, werden zusätzliche Informationen über die ausgewählten Ordner oder Dateien im Archiv angezeigt.</para>
+</sect1>
+
+<sect1 id="ark-work-files">
+<title
+>Arbeiten mit Dateien</title>
+
+<para
+>Wenn ein Archiv einmal geöffnet ist, können Sie auf die enthaltenen Dateien verschiedene Funktionen anwenden. Wählen Sie eine Datei und benutzen das Menü <guimenu
+>Aktion</guimenu
+>. Folgende Funktionen stehen Ihnen dann zur Auswahl:</para>
+
+<itemizedlist>
+<listitem>
+<para
+><guimenuitem
+>Dateien hinzufügen ...</guimenuitem
+> fügt Dateien von der Festplatte zum Archiv hinzu.</para>
+</listitem>
+<listitem>
+<para
+><guimenuitem
+>Ordner hinzufügen ...</guimenuitem
+> fügt Ordner von der Festplatte zum Archiv hinzu.</para>
+</listitem>
+<listitem>
+<para
+><guimenuitem
+>Löschen</guimenuitem
+> (<keycap
+>Entfernen</keycap
+>) entfernt die ausgewählte(n) Datei(en) aus dem Archiv.</para>
+</listitem>
+<listitem>
+<para
+><guimenuitem
+>Entpacken ...</guimenuitem
+> (<keycombo action="simul"
+>&Ctrl;<keycap
+>E</keycap
+></keycombo
+>) zeigt ein Untermenü mit Ordnern, in die bereits vorher Dateien entpackt wurden, und es kann einer dieser Ordner als Ziel ausgewählt werden.</para>
+</listitem>
+<listitem>
+<para
+><guimenuitem
+>Vorschau</guimenuitem
+> zeigt die Datei im standardmäßig zugewiesenen Anzeigeprogramm für diesen Dateityp.</para>
+<!-- File Associations Embedding first item in Service Preference Order for a file type-->
+</listitem>
+</itemizedlist>
+
+</sect1>
+<sect1 id="ark-extract">
+<title
+>Archive entpacken und Dateien entfernen</title>
+
+<para
+>Ein in &ark; geöffnetes Archiv kann entpackt werden. Um Dateien auf direkten Weg aus einem Archiv auszupacken, müssen Sie <guisubmenu
+>Entpacken</guisubmenu
+> im Menü <guimenu
+>Aktion</guimenu
+> wählen. Dann wird ein Untermenü mit Ordnern angezeigt, in die bereits vorher Dateien entpackt wurden, und es kann einer dieser Ordner als Ziel ausgewählt werden. Die gleiche Aktion kann durch Klicken auf das Häkchen rechts vom Knopf <guibutton
+>Entpacken</guibutton
+> in der Werkzeugleiste ausgeführt werden. </para>
+<para
+>Um den Dialog <guilabel
+>Entpacken</guilabel
+> zu öffnen, klicken Sie auf den Knopf <guibutton
+>Entpacken</guibutton
+> in der Werkzeugleiste oder verwenden Sie den Kurzbefehl <keycombo action="simul"
+>&Ctrl; <keycap
+>E</keycap
+></keycombo
+>. In diesem Dialog kann ausgewählt werden, wohin die Dateien ausgepackt werden. Als Speicherort wird der Ordner vorgegeben, aus dem das Archiv geladen wurde.</para>
+<para
+>Es kann ein Unterordner zum Entpacken eingegeben werden. Als Voreinstellung wird der erste Teil des Archivnamens eingetragen, dieser Name kann dann im Eingabefeld geändert werden. Außerdem kann eingestellt werden, ob die Pfade beim Entpacken beibehalten werden und ob der Zielordner nach dem Entpacken im Dateiverwaltungsprogramm geöffnet und &ark; geschlossen wird, wenn das Entpacken beendet ist.</para>
+
+<para
+>Wenn eine oder mehrere Dateien im Archiv markiert sind, können Sie auswählen, welche Dateien entpackt werden sollen:</para>
+
+<itemizedlist>
+<listitem>
+<para
+><guimenuitem
+>Nur ausgewählte Dateien</guimenuitem
+> entpackt nur die ausgewählten Dateien.</para>
+</listitem>
+<listitem>
+<para
+><guimenuitem
+>Alle Dateien</guimenuitem
+> entpackt den Inhalt des ganzen Archivs.</para>
+</listitem>
+</itemizedlist>
+<para
+>Um eine einzelne Datei aus einem Archiv zu entpacken, klicken Sie auf den Dateinamen und ziehen Sie die Datei in den Zielordner. </para>
+<!--FIXME extract several files by drag + drop? - only in basyskom branch-->
+<para
+>Das Entpacken von Dateien aus einem Archiv lässt das Archiv und seinen Inhalt unverändert. Benutzen Sie <menuchoice
+><guimenu
+>Aktion</guimenu
+><guimenuitem
+>Löschen</guimenuitem
+></menuchoice
+> (<keysym
+>Entf</keysym
+>), um Dateien aus Archiven zu entfernen. </para>
+
+</sect1>
+
+<sect1 id="ark-create">
+<title
+>Erzeugen von Archiven und Hinzufügen von Dateien</title>
+
+<para
+>Um mit &ark; ein neues Archiv zu erzeugen, wählen Sie <guimenu
+>Datei</guimenu
+>-><guimenuitem
+>Neu</guimenuitem
+>.</para>
+
+<para
+>Hier geben Sie den Dateinamen an, sowie die Erweiterung für das gewünschte Archivformat (<literal role="extension"
+>tar.gz</literal
+>, <literal role="extension"
+>zip</literal
+>, <literal role="extension"
+>bz2</literal
+> &etc;). Alternativ wählen Sie im Kombinationsfeld <guilabel
+>Filter</guilabel
+> ein unterstütztes Archivformat aus und kreuzen <guilabel
+>Dateierweiterung automatisch auswählen</guilabel
+> an. Um einem Archiv einzelne Dateien hinzuzufügen, wählen Sie <guimenu
+>Aktion</guimenu
+>-><guimenuitem
+>Dateien hinzufügen ...</guimenuitem
+>. Möchten Sie gleich ganze Ordner hinzufügen, wählen Sie <guimenu
+>Aktion</guimenu
+>-><guimenuitem
+>Ordner hinzufügen ...</guimenuitem
+>.</para>
+
+<para
+>Um zu einem Archiv weitere Dateien hinzuzufügen, können Sie diese auch aus einem &konqueror;- oder &dolphin;-Fenster bzw. von der Arbeitsfläche auf das Hauptfenster von &ark; herüberziehen.</para>
+
+</sect1>
+</chapter>
+
+<chapter id="ark-in_filemanager">
+<title
+>&ark; im Dateimanager benutzen</title>
+
+<para
+>Klicken Sie mit der &RMBn; im einem Dateimanager wie &dolphin; oder &konqueror; auf ein Archiv, wird ein Kontextmenü mit einem Eintrag <guimenuitem
+>Mit Ark öffnen</guimenuitem
+> angezeigt. Dieses Kontextmenü hat noch zusätzliche Aktionen zum Entpacken eines Archivs mit &ark;: </para>
+
+<itemizedlist>
+<listitem>
+<para
+><guimenuitem
+>Archiv hierher auspacken, Unterordner selbständig ermitteln</guimenuitem
+> erzeugt im Ordner, in dem sich das Archiv befindet, einen Unterordner und entpackt die Ordner und Dateien aus dem Archiv dorthin.</para>
+</listitem>
+<listitem>
+<para
+><guimenuitem
+>Archiv auspacken nach ...</guimenuitem
+> funktioniert wie in &ark;.</para>
+</listitem>
+<listitem>
+<para
+><guimenuitem
+>Hierher entpacken</guimenuitem
+> entpackt den Inhalt des Archivs in denselben Ordner.</para>
+</listitem>
+</itemizedlist>
+
+<para
+>Das Kontextmenü von &dolphin; oder &konqueror; für eine Auswahl von Dateien oder Ordnern enthält folgende Aktionen im Untermenü <guimenu
+>Komprimieren</guimenu
+>: </para>
+
+<itemizedlist>
+<listitem>
+<para
+><guimenuitem
+>Hier</guimenuitem
+> erzeugt ein Tar-Archiv (mit gzip komprimiert) im aktuellen Ordner mit der Dateierweiterung <filename class="extension"
+>.tar.gz</filename
+>.</para>
+</listitem>
+<listitem>
+<para
+><guimenuitem
+>Als ZIP-Archiv</guimenuitem
+>, <guimenuitem
+>Als RAR-Archiv</guimenuitem
+> oder <guimenuitem
+>Als ZIP/TAR-Archiv</guimenuitem
+> erstellt diese Archive im aktuellen Ordner.</para>
+</listitem>
+<listitem>
+<para
+><guimenuitem
+>Komprimieren nach ...</guimenuitem
+> öffnet einen Dialog, in dem Sie den Ordner, den Namen und den Archivtyp einstellen können.</para>
+</listitem>
+</itemizedlist>
+
+</chapter>
+
+<chapter id="batchmode">
+<title
+>Erweiterter Stapelverarbeitungsmodus</title>
+<para
+>&ark; kann auch ohne grafische Benutzeroberfläche im erweiterten Stapelverarbeitungsmodus Archive verwalten. In diesem Modus können Sie Archive entpacken oder erstellen und Dateien zu einem Archiv hinzufügen.</para>
+
+<para
+>Informationen zur Stapelverarbeitung finden Sie im <ulink url="man:/ark"
+>Unix Handbuch zu &ark;</ulink
+>. </para>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Danksagungen und Lizenz</title>
+
+<para
+>&ark; &copy; Copyright 1997-2008, die verschiedenen &ark;-Entwickler</para>
+
+<itemizedlist>
+<title
+>Beiträge von:</title>
+<listitem
+><para
+>Raphael Kubo da Costa <email
+>rakuco@FreeBSD.org</email
+></para
+></listitem>
+<listitem
+><para
+>Harald Hvaal <email
+>haraldhv@stud.ntnu.no</email
+></para
+></listitem>
+<listitem
+><para
+>Helio Chissini de Castro <email
+>helio@conectiva.com.br</email
+></para
+></listitem>
+<listitem
+><para
+>Georg Robbers <email
+>Georg.Robbers@urz.uni-hd.de</email
+></para
+></listitem>
+<listitem
+><para
+>Henrique Pinto <email
+>henrique.pinto@kdemail.net</email
+></para
+></listitem>
+<listitem
+><para
+>Roberto Selbach Teixeira <email
+>maragato@kde.org</email
+></para
+></listitem>
+<listitem
+><para
+>Robert Palmbos <email
+>palm9744@kettering.edu</email
+></para
+></listitem>
+<listitem
+><para
+>Francois-Xavier Duranceau <email
+>duranceau@kde.org</email
+></para
+></listitem>
+<listitem
+><para
+>Corel Corporation (Entwicklerin: Emily Ezust) <email
+>emilye@corel.com</email
+></para
+></listitem>
+<listitem
+><para
+>Corel Corporation (Entwickler Michael Jarrett) <email
+>michaelj@corel.com</email
+></para
+></listitem>
+</itemizedlist>
+
+<para
+>Copyright &copy; für die Dokumentation 2000 &Matt.Johnston; &Matt.Johnston.mail;</para>
+
+<para
+>Die Dokumentation wurde für &kde; 3.3 von Henrique Pinto <email
+>henrique.pinto@kdemail.net</email
+> aktualisiert.</para>
+
+<para
+>Übersetzung Gregor Zumstein <email
+>zumstein@ssd.ethz.ch</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+<appendix id="installation">
+<title
+>Installation</title>
+
+<sect1 id="getting-ark">
+<title
+>Woher Sie &ark; erhalten</title>
+&install.intro.documentation; </sect1>
+
+<sect1 id="requirements">
+<title
+>Voraussetzungen</title>
+
+<para
+>Um &ark; benutzen zu können, benötigen Sie &kde; 4. &GNU; <command
+>tar</command
+> und ein aktuelles <command
+>gzip</command
+> werden benötigt, um mit tar-Archiven umzugehen. Um andere Archivformate zu nutzen, benötigen Sie die entsprechenden Befehlszeilenprogramme wie <command
+>bzip2</command
+>, <command
+>zip</command
+>, <command
+>unzip</command
+>, <command
+>ar</command
+>, <command
+>rar</command
+>, <command
+>7z</command
+>, <command
+>xz</command
+>, <command
+>rpm</command
+>, <command
+>cab</command
+> und <command
+>deb</command
+>.</para>
+
+</sect1>
+
+<sect1 id="compilation">
+<title
+>Kompilierung und Installation</title>
+&install.compile.documentation; </sect1>
+
+</appendix>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes: nil
+sgml-general-insert-case: lower
+End:
+-->
+

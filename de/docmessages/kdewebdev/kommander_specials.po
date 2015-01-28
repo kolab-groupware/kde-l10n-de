@@ -1,0 +1,762 @@
+# Georg Schuster <gschuster@utanet.at>, 2005, 2006.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005.
+# Burkhard Lück <lueck@hube-lueck.de>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kommander_specials\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:10+0000\n"
+"PO-Revision-Date: 2009-03-09 10:36+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 0.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: specials.docbook:5 specials.docbook:20
+#, no-c-format
+msgid "Specials and Built-in Global Variables"
+msgstr "Anweisungen und eingebaute globale Variable"
+
+#. Tag: author
+#: specials.docbook:7
+#, no-c-format
+msgid "<firstname></firstname> <surname></surname>"
+msgstr "<firstname></firstname> <surname></surname>"
+
+#. Tag: trans_comment
+#: specials.docbook:15
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Georg</"
+"firstname><surname>Schuster</"
+"surname><affiliation><address><email>gschuster@utanet.at</email></address></"
+"affiliation><contrib>Deutsche Übersetzung</contrib></othercredit>"
+
+#. Tag: para
+#: specials.docbook:22
+#, no-c-format
+msgid ""
+"Specials are functions that are processed by &kommander;. You should be "
+"aware that until &kommander; has a full parser all &kommander; specials will "
+"be executed first and then the script will be executed. In most cases this "
+"is not a problem, but in a few it is."
+msgstr ""
+"Anweisungen sind Funktionen, die von &kommander; ausgeführt werden. Bis "
+"&kommander; über einem vollständigen Parser verfügt, werden alle Anweisungen "
+"vor dem Skript ausgeführt. Meistens ist das kein Problem."
+
+#. Tag: function
+#: specials.docbook:28
+#, no-c-format
+msgid ""
+"@dcop(<parameter>appId</parameter>, <parameter>object</parameter>, "
+"<parameter>function</parameter>, <parameter>arguments</parameter>)"
+msgstr ""
+"@dcop(<parameter>AnwendungsId</parameter>, <parameter>Objekt</parameter>, "
+"<parameter>Funktion</parameter>, <parameter>Argumente</parameter>)"
+
+#. Tag: para
+#: specials.docbook:30
+#, no-c-format
+msgid ""
+"Make a &DCOP; call. @dcop(<quote>kmail</quote>, <quote>KMailIface</quote>, "
+"<quote>checkMail()</quote>, <quote></quote>)"
+msgstr ""
+"Führe einen &DCOP; Aufruf durch. @dcop(<quote>kmail</quote>, "
+"<quote>KMailIface</quote>, <quote>checkMail()</quote>, <quote></quote>)"
+
+#. Tag: function
+#: specials.docbook:37
+#, no-c-format
+msgid "@dcopid"
+msgstr "@dcopid"
+
+#. Tag: para
+#: specials.docbook:39
+#, no-c-format
+msgid "The &DCOP; id of the process. (kmdr-executor-@pid)"
+msgstr "Die &DCOP;-ID des Prozesses. (kmdr-executor-@pid)"
+
+#. Tag: function
+#: specials.docbook:46
+#, no-c-format
+msgid ""
+"@dialog(<parameter>dialog</parameter>[,<parameter>parameters</parameter>])"
+msgstr ""
+"@dialog(<parameter>Dialog</parameter>[,<parameter>Parameter</parameter>])"
+
+#. Tag: para
+#: specials.docbook:48
+#, no-c-format
+msgid ""
+"Launches the specified Kommander dialog. Dialog is sought in dialog "
+"directory and in current directory - in that order. This prepends the call "
+"to the executor and sets the default directory to the one the Kommander "
+"application is in. Parameters can be passed in the usual Unix way or you can "
+"pass named parameters like <quote>variable=value</quote>. You can then find "
+"passed parameters in the global pool. @global(variable) would return "
+"<quote>value</quote>."
+msgstr ""
+"Zeigt den bestimmten Kommander-Dialog an. Der Dialog wird im Dialogordner "
+"und im aktuellen Ordner gesucht, in dieser Reihenfolge. Das bestimmt den "
+"Aufruf von kommander-executor vor und setzt den Standardordner auf den "
+"Ordner, in dem sich die Kommander-Anwendung befindet. Parameter können im in "
+"Unix üblichen Weg oder namentlich wie z. B. <quote>Variable=Wert</quote> "
+"übergeben werden. Übergebene Parameter können im Globalbereich gefunden "
+"werden. @global(Variable) würde den <quote>Wert</quote> zurückgeben."
+
+#. Tag: function
+#: specials.docbook:55
+#, no-c-format
+msgid "@env(<parameter>environmentVariable</parameter>)"
+msgstr "@env(<parameter>Umgebungsvariable</parameter>)"
+
+#. Tag: para
+#: specials.docbook:57
+#, no-c-format
+msgid ""
+"Expands to the specified environment variable. @env(PWD) expands to $PWD. "
+"Remember that <quote>$</quote> is part of the shell and shouldn't be used."
+msgstr ""
+"Füllt die angegebene Umgebungsvariable aus. @env(PWD) setzt $PWD ein. Bitte "
+"beachten Sie, dass <quote>$</quote> ein Teil der Shell ist und nicht "
+"verwendet werden sollte."
+
+#. Tag: function
+#: specials.docbook:64
+#, no-c-format
+msgid "@exec(<parameter>command</parameter>)"
+msgstr "@exec(<parameter>Befehl</parameter>)"
+
+#. Tag: para
+#: specials.docbook:66
+#, no-c-format
+msgid "returns the output of executing the specified command. @exec(ls -l)."
+msgstr ""
+"liefert die Ausgabe des damit ausgeführten Befehls zurück. @exec(ls -l)."
+
+#. Tag: function
+#: specials.docbook:73
+#, no-c-format
+msgid "@execBegin ... @execEnd"
+msgstr "@execBegin ... @execEnd"
+
+#. Tag: para
+#: specials.docbook:75
+#, no-c-format
+msgid ""
+"same as <function>@exec</function>, but supports shebang and multiline "
+"scripts. This serves for various scripting languages either by declaring "
+"them or using a shebang."
+msgstr ""
+"gleich wie <function>@exec</function>, unterstützt aber mehrzeilige um "
+"Ummantelungs-Skripte. Das dient für einige Skriptsprachen entweder über eine "
+"Deklaration oder mittels einer Ummantelung."
+
+#. Tag: function
+#: specials.docbook:79
+#, no-c-format
+msgid "@execBegin(php)"
+msgstr "@execBegin(php)"
+
+#. Tag: para
+#: specials.docbook:80
+#, no-c-format
+msgid "<function>@execBegin</function>#!/usr/bin/php"
+msgstr "<function>@execBegin</function>#!/usr/bin/php"
+
+#. Tag: para
+#: specials.docbook:82
+#, no-c-format
+msgid ""
+"The first one uses the name of the <acronym>PHP</acronym> executable. "
+"&kommander; searches PATH for <application>php</application> and if it is "
+"not found looks to see if it is registered with &kommander; in a location "
+"outside of your path. If not it tells the user it cannot be found. The "
+"second examples uses the classic <quote>shebang</quote> which can have some "
+"benefits and also problems. If you have a beta copy of <acronym>PHP5</"
+"acronym>, for instance, in <filename>/usr/local/bin</filename> which would "
+"not be found because it would find on in <filename>/usr/bin</filename> this "
+"is useful. If, however, you distribute the dialog to someone who has "
+"<acronym>PHP</acronym> in <filename>/usr/local/bin</filename> only it will "
+"not be found with the shebang used. So using shebangs is cautioned and using "
+"the executable is recommended if you are sharing files."
+msgstr ""
+"Das Erste benutzt den Namen des <acronym>PHP</acronym>-Programms. "
+"&kommander; durchsucht den Pfad PATH nach <application>php</application> und "
+"sieht, wenn es nicht gefunden wird, nach. ob es mit &kommander; außerhalb "
+"des Pfades registriert ist. Ist dies nicht der Fall, meldet es dem Benutzer, "
+"dass es nicht gefunden werden konnte. Das zweite Beispiel benutzt die "
+"klassische <quote>Ummantelung</quote>, die Vorteile aber auch Probleme "
+"bringen kann. Wenn zum Beispiel eine Beta-Version von <acronym>PHP5</"
+"acronym> in <filename>/usr/local/bin</filename> vorhanden ist, die nicht "
+"gefunden wird, weil es  in <filename>/usr/bin</filename> eine gibt , wäre "
+"dies nützlich. Wird der Dialog aber von jemandem verwendet, der "
+"<acronym>PHP</acronym> nur in <filename>/usr/local/bin </filename>hat, würde "
+"es mit der Ummantelung nicht gefunden. Deshalb ist die Verwendung von "
+"Ummantelungen problematisch und die Verwendung des Programmes wird "
+"empfohlen, wenn die Dateien weitergegeben werden."
+
+#. Tag: function
+#: specials.docbook:87
+#, no-c-format
+msgid "@global(<parameter>variable</parameter>)"
+msgstr "@global(<parameter>Variable</parameter>)"
+
+#. Tag: para
+#: specials.docbook:89
+#, no-c-format
+msgid "expands to the value of the specified global variable."
+msgstr "wird mit dem Inhalt der angegebenen globalen Variable ersetzt."
+
+#. Tag: function
+#: specials.docbook:95
+#, no-c-format
+msgid "@null"
+msgstr "@null"
+
+#. Tag: para
+#: specials.docbook:97
+#, no-c-format
+msgid ""
+"Returns null. Now that Kommander checks for empty widgetText on execution "
+"this will prevent erroneous errors in the case of an unset state on a widget."
+msgstr ""
+"Liefert Null zurück. Da &kommander; nun bei der Ausführung auf leere "
+"widgetText prüft, verhindert dies im Falle eines undefinierten Status des "
+"Bedienelementes Fehler."
+
+#. Tag: function
+#: specials.docbook:102
+#, no-c-format
+msgid "@parentPid"
+msgstr "@parentPid"
+
+#. Tag: para
+#: specials.docbook:104
+#, no-c-format
+msgid "The &PID; of the parent process."
+msgstr "Die &PID; des Vaterprozesses."
+
+#. Tag: function
+#: specials.docbook:111
+#, no-c-format
+msgid "@pid"
+msgstr "@pid"
+
+#. Tag: para
+#: specials.docbook:113
+#, no-c-format
+msgid "The &PID; of the process."
+msgstr "Die &PID; des Prozesses."
+
+#. Tag: function
+#: specials.docbook:120
+#, no-c-format
+msgid ""
+"@readSetting(<parameter>key</parameter>, <parameter>defaultValue</parameter>)"
+msgstr ""
+"@readSetting(<parameter>Schlüssel</parameter>, <parameter>Standardwert</"
+"parameter>)"
+
+#. Tag: para
+#: specials.docbook:122
+#, no-c-format
+msgid "reads a value from <filename>kommanderrc</filename>"
+msgstr "liest einen Wert aus der <filename>kommanderrc</filename>"
+
+#. Tag: function
+#: specials.docbook:129
+#, no-c-format
+msgid "@selectedWidgetText"
+msgstr "@selectedWidgetText"
+
+#. Tag: para
+#: specials.docbook:131
+#, no-c-format
+msgid ""
+"the selected content in a widget that can show more than one value, like "
+"list widgets"
+msgstr ""
+"der ausgewählte Inhalt in einem Bedienelement, das mehrere Werte anzeigen "
+"kann, wie etwa Listen"
+
+#. Tag: function
+#: specials.docbook:138
+#, no-c-format
+msgid ""
+"@setGlobal(<parameter>variable</parameter>, <parameter>value</parameter>)"
+msgstr ""
+"@setGlobal(<parameter>Variable</parameter>, <parameter>Wert</parameter>)"
+
+#. Tag: para
+#: specials.docbook:140
+#, no-c-format
+msgid "Sets the global variable to the specified value."
+msgstr "Setzt die globale Variable auf den angegebenen Wert."
+
+#. Tag: function
+#: specials.docbook:147
+#, no-c-format
+msgid "@widgetText"
+msgstr "@widgetText"
+
+#. Tag: para
+#: specials.docbook:149
+#, no-c-format
+msgid "the content of a widget"
+msgstr "der Inhalt eines Bedienelementes"
+
+#. Tag: function
+#: specials.docbook:156
+#, no-c-format
+msgid "@writeSetting(<parameter>key</parameter>, <parameter>value</parameter>)"
+msgstr ""
+"@writeSetting(<parameter>Schlüssel</parameter>, <parameter>Wert</parameter>)"
+
+#. Tag: para
+#: specials.docbook:158
+#, no-c-format
+msgid "write value to <filename>kommanderrc</filename>"
+msgstr "schreibe den Wert in die <filename>kommanderrc</filename>"
+
+#. Tag: title
+#: specials.docbook:166
+#, no-c-format
+msgid "Array Function Group"
+msgstr "Feldfunktionengruppe (Arrays)"
+
+#. Tag: function
+#: specials.docbook:170
+#, no-c-format
+msgid "@Array.values(<parameter>array</parameter>)"
+msgstr "@Array.values(<parameter>Feld</parameter>)"
+
+#. Tag: para
+#: specials.docbook:172
+#, no-c-format
+msgid ""
+"Returns an EOL-separated list of all values in the array. Can be used to "
+"walk through an array."
+msgstr ""
+"Gibt eine mit Zeilenschaltungen getrennte Liste aller Werte eines Feldes "
+"zurück. Kann zum Durchgehen eines Feldes verwendet werden."
+
+#. Tag: function
+#: specials.docbook:177
+#, no-c-format
+msgid "@Array.keys(<parameter>array</parameter>)"
+msgstr "@Array.keys(<parameter>Feld</parameter>)"
+
+#. Tag: para
+#: specials.docbook:179
+#, no-c-format
+msgid "Returns an EOL-separated list of all keys in the array."
+msgstr ""
+"Gibt eine mit Zeilenschaltungen getrennte Liste aller Schlüssel im Feld "
+"zurück."
+
+#. Tag: function
+#: specials.docbook:184
+#, no-c-format
+msgid ""
+"@Array.setValue(<parameter>array</parameter>, <parameter>key</parameter>, "
+"<parameter>value</parameter>)"
+msgstr ""
+"@Array.setValue(<parameter>Feld</parameter>, <parameter>Schlüssel</"
+"parameter>, <parameter>Wert</parameter>)"
+
+#. Tag: para
+#: specials.docbook:186
+#, no-c-format
+msgid ""
+"Sets a key and value for an element of an array. If no array exists it is "
+"created."
+msgstr ""
+"Setzt einen Schlüssel und Wert für ein Element eines Feldes. Wenn das Feld "
+"nicht existiert, wird es erstellt."
+
+#. Tag: function
+#: specials.docbook:191
+#, no-c-format
+msgid "@Array.clear(<parameter>array</parameter>)"
+msgstr "@Array.clear(<parameter>Feld</parameter>)"
+
+#. Tag: para
+#: specials.docbook:193
+#, no-c-format
+msgid "Remove all elements from the array."
+msgstr "Entfernt alle Elemente aus einem Feld."
+
+#. Tag: function
+#: specials.docbook:198
+#, no-c-format
+msgid "@Array.count(<parameter>array</parameter>)"
+msgstr "@Array.count(<parameter>Feld</parameter>)"
+
+#. Tag: para
+#: specials.docbook:200
+#, no-c-format
+msgid "Return number of elements in the array."
+msgstr "Liefert die Anzahl der Elemente in einem Feld."
+
+#. Tag: function
+#: specials.docbook:205
+#, no-c-format
+msgid "@Array.value(<parameter>array</parameter>,<parameter>key</parameter>)"
+msgstr ""
+"@Array.value(<parameter>Feld</parameter>,<parameter>Schlüssel</parameter>)"
+
+#. Tag: para
+#: specials.docbook:207
+#, no-c-format
+msgid "Return the value associated with the given key."
+msgstr "Gibt den mit dem angegebenen Schlüssel verbundenen Wert zurück."
+
+#. Tag: function
+#: specials.docbook:212
+#, no-c-format
+msgid "@Array.remove(<parameter>array</parameter>,<parameter>key</parameter>)"
+msgstr ""
+"@Array.remove(<parameter>Feld</parameter>,<parameter>Schlüssel</parameter>)"
+
+#. Tag: para
+#: specials.docbook:214
+#, no-c-format
+msgid "Remove element with the given key from the array."
+msgstr "Entfernt das Element mit dem angegeben Schlüssel aus dem Feld."
+
+#. Tag: function
+#: specials.docbook:219
+#, no-c-format
+msgid ""
+"@Array.fromString(<parameter>array</parameter>,<parameter>string</parameter>)"
+msgstr ""
+"@Array.fromString(<parameter>Feld</parameter>,<parameter>Zeichenkette</"
+"parameter>)"
+
+#. Tag: para
+#: specials.docbook:221
+#, no-c-format
+msgid ""
+"Add all elements in the string to the array. String should have <emphasis>key"
+"\\tvalue\\n</emphasis> format.\""
+msgstr ""
+"Fügt alle Elemente der Zeichenkette dem Feld hinzu. Die Zeichenkette sollte "
+"ein <emphasis>Schlüssel\\tWert\\n</emphasis> Format haben.\""
+
+#. Tag: function
+#: specials.docbook:226
+#, no-c-format
+msgid ""
+"@Array.toString(<parameter>array</parameter>,<parameter>string</parameter>)"
+msgstr ""
+"@Array.toString(<parameter>Feld</parameter>,<parameter>Zeichenkette</"
+"parameter>)"
+
+#. Tag: para
+#: specials.docbook:228
+#, no-c-format
+msgid ""
+"\"Return all elements in the array in <emphasis>key\\tvalue\\n</emphasis> "
+"format.\""
+msgstr ""
+"<quote>Liefert alle Elemente im Feld im <emphasis>Schlüssel\\tWert\\n</"
+"emphasis> Format.</quote>"
+
+#. Tag: title
+#: specials.docbook:236
+#, no-c-format
+msgid "File Function Group"
+msgstr "Dateifunktionengruppe"
+
+#. Tag: function
+#: specials.docbook:240
+#, no-c-format
+msgid "@File.read(<parameter>file</parameter>)"
+msgstr "@File.read(<parameter>Datei</parameter>)"
+
+#. Tag: para
+#: specials.docbook:242
+#, no-c-format
+msgid "Return content of the given file."
+msgstr "Liefert den Inhalt der angegebenen Datei zurück."
+
+#. Tag: function
+#: specials.docbook:247
+#, no-c-format
+msgid "@File.write(<parameter>file</parameter><parameter>string</parameter>)"
+msgstr ""
+"@File.write(<parameter>Datei</parameter><parameter>Zeichenkette</parameter>)"
+
+#. Tag: para
+#: specials.docbook:249
+#, no-c-format
+msgid "Write given string to a file."
+msgstr "Schreibt die angegebene Zeichenkette in eine Datei."
+
+#. Tag: function
+#: specials.docbook:254
+#, no-c-format
+msgid "@File.append(<parameter>file</parameter><parameter>string</parameter>)"
+msgstr ""
+"@File.append(<parameter>Datei</parameter><parameter>Zeichenkette</parameter>)"
+
+#. Tag: para
+#: specials.docbook:256
+#, no-c-format
+msgid "Append given string to the end of a file."
+msgstr "Hängt die angegebene Zeichenkette an das Ende der Datei an."
+
+#. Tag: title
+#: specials.docbook:264
+#, no-c-format
+msgid "String Function Group"
+msgstr "Zeichenketten-Funktionengruppe"
+
+#. Tag: function
+#: specials.docbook:268
+#, no-c-format
+msgid "@String.length(<parameter>string</parameter>)"
+msgstr "@String.length(<parameter>Zeichenkette</parameter>)"
+
+#. Tag: para
+#: specials.docbook:270
+#, no-c-format
+msgid "Return number of chars in the string."
+msgstr "Gibt die Anzahl der Zeichen einer Zeichenkette zurück."
+
+#. Tag: function
+#: specials.docbook:275
+#, no-c-format
+msgid ""
+"@String.contains(<parameter>string</parameter>,<parameter>substring</"
+"parameter>)"
+msgstr ""
+"@String.contains(<parameter>Zeichenkette</parameter>,"
+"<parameter>Unterzeichenkette</parameter>)"
+
+#. Tag: para
+#: specials.docbook:277
+#, no-c-format
+msgid "Check if the string contains given substring."
+msgstr "Prüft, ob die Zeichenkette die angegebene Teilzeichenkette enthält."
+
+#. Tag: function
+#: specials.docbook:282
+#, no-c-format
+msgid "@String.find(<parameter>string</parameter>)"
+msgstr "@String.find(<parameter>Zeichenkette</parameter>)"
+
+#. Tag: para
+#: specials.docbook:284
+#, no-c-format
+msgid "Return position of a substring in the string, or -1 if it isn't found."
+msgstr ""
+"Liefert die Position einer Teilzeichenkette in einer Zeichenkette, oder -1, "
+"wenn sie darin nicht gefunden wurde."
+
+#. Tag: para
+#: specials.docbook:285
+#, no-c-format
+msgid ""
+"This will have an optional integer start position for find next uses in "
+"Alpha 6."
+msgstr ""
+"Dies wird in Alpha6 eine optionale ganzzahlige Startposition zum Finden "
+"weiterer Treffer haben."
+
+#. Tag: function
+#: specials.docbook:290
+#, no-c-format
+msgid "@String.left(<parameter>string</parameter>, <parameter>int</parameter>)"
+msgstr ""
+"@String.left(<parameter>Zeichenkette</parameter>, <parameter>Ganzzahl</"
+"parameter>)"
+
+#. Tag: para
+#: specials.docbook:292
+#, no-c-format
+msgid "Return first n chars of the string."
+msgstr "Liefert die ersten n Zeichen der Zeichenkette zurück."
+
+#. Tag: function
+#: specials.docbook:297
+#, no-c-format
+msgid ""
+"@String.right(<parameter>string</parameter>, <parameter>int</parameter>)"
+msgstr ""
+"@String.right(<parameter>Zeichenkette</parameter>, <parameter>Ganzzahl</"
+"parameter>)"
+
+#. Tag: para
+#: specials.docbook:299
+#, no-c-format
+msgid "Return last n chars of the string."
+msgstr "Liefert die letzten n Zeichen der Zeichenkette zurück."
+
+#. Tag: function
+#: specials.docbook:304
+#, no-c-format
+msgid ""
+"@String.mid(<parameter>string</parameter>, <parameter>int start</parameter>, "
+"<parameter>int end</parameter>)"
+msgstr ""
+"@String.mid(<parameter>Zeichenkette</parameter>, <parameter>Ganzzahl Start</"
+"parameter>, <parameter>Ganzzahl Ende</parameter>)"
+
+#. Tag: para
+#: specials.docbook:306
+#, no-c-format
+msgid "Return substring of the string, starting from given position."
+msgstr ""
+"Liefert eine Teilzeichenkette aus der Zeichenkette, beginnend mit der "
+"angegebene Position."
+
+#. Tag: function
+#: specials.docbook:311
+#, no-c-format
+msgid ""
+"@String.remove(<parameter>string</parameter>, <parameter>substring</"
+"parameter>)"
+msgstr ""
+"@String.remove(<parameter>Zeichenkette</parameter>, "
+"<parameter>Teilzeichenkette</parameter>)"
+
+#. Tag: para
+#: specials.docbook:313
+#, no-c-format
+msgid "Remove all occurences of a given substring."
+msgstr "Entfernt alle Vorkommen einer angegebenen Teilzeichenkette."
+
+#. Tag: function
+#: specials.docbook:318
+#, no-c-format
+msgid ""
+"@String.replace(<parameter>string</parameter>, <parameter>substring find</"
+"parameter>, <parameter>substring replace</parameter>)"
+msgstr ""
+"@String.replace(<parameter>Zeichenkette</parameter>, "
+"<parameter>Teilzeichenkette zu finden</parameter>, "
+"<parameter>Teilzeichenkette zu ersetzen</parameter>)"
+
+#. Tag: para
+#: specials.docbook:320
+#, no-c-format
+msgid "Replace all occurences of a given substring with a given replacement."
+msgstr ""
+"Ersetzt alle Vorkommen einer angegebenen Teilzeichenkette mit dem "
+"angegebenen Ersatz."
+
+#. Tag: function
+#: specials.docbook:325
+#, no-c-format
+msgid "@String.upper(<parameter>string</parameter>)"
+msgstr "@String.upper(<parameter>Zeichenkette</parameter>)"
+
+#. Tag: para
+#: specials.docbook:327
+#, no-c-format
+msgid "Convert the string to uppercase."
+msgstr "Wandelt die Zeichenkette in Großbuchstaben um."
+
+#. Tag: function
+#: specials.docbook:332
+#, no-c-format
+msgid "@String.lower(<parameter>string</parameter>)"
+msgstr "@String.lower(<parameter>Zeichenkette</parameter>)"
+
+#. Tag: para
+#: specials.docbook:334
+#, no-c-format
+msgid "Convert the string to lowercase."
+msgstr "Wandelt die Zeichenkette in Kleinbuchstaben um."
+
+#. Tag: function
+#: specials.docbook:339
+#, no-c-format
+msgid ""
+"@String.compare(<parameter>string</parameter>, <parameter>string</parameter>)"
+msgstr ""
+"@String.compare(<parameter>Zeichenkette</parameter>, "
+"<parameter>Zeichenkette</parameter>)"
+
+#. Tag: para
+#: specials.docbook:341
+#, no-c-format
+msgid ""
+"Compare two strings. Return 0 if they are equal, -1 if the first one is "
+"lower, 1 if the first one is higher"
+msgstr ""
+"Vergleicht zwei Zeichenketten. Gibt 0 zurück, wenn sie gleich sind, -1, wenn "
+"die Erste kleiner ist und 1, wenn die Erste größer ist"
+
+#. Tag: function
+#: specials.docbook:346
+#, no-c-format
+msgid "@String.isEmpty(<parameter>string</parameter>)"
+msgstr "@String.isEmpty(<parameter>Zeichenkette</parameter>)"
+
+#. Tag: para
+#: specials.docbook:348
+#, no-c-format
+msgid "Check if string is empty."
+msgstr "Prüft, ob die Zeichenkette leer ist."
+
+#. Tag: function
+#: specials.docbook:353
+#, no-c-format
+msgid "@String.isNumber(<parameter>string</parameter>)"
+msgstr "@String.isNumber(<parameter>Zeichenkette</parameter>)"
+
+#. Tag: para
+#: specials.docbook:355
+#, no-c-format
+msgid "Check if string is a valid number."
+msgstr "Prüft, ob die Zeichenkette eine gültige Zahl ist."
+
+#. Tag: title
+#: specials.docbook:363
+#, no-c-format
+msgid "Built-in Globals"
+msgstr "Eingebaute globale Konstanten"
+
+#. Tag: para
+#: specials.docbook:364
+#, no-c-format
+msgid ""
+"Built-in globals are accessed just like regular global variables with "
+"<function>@global</function>."
+msgstr ""
+"Eingebaute globale Konstanten werden gleich wie reguläre globale Variable "
+"mit <function>@global</function> angesprochen."
+
+#. Tag: function
+#: specials.docbook:367
+#, no-c-format
+msgid "@global(_KDDIR)"
+msgstr "@global(_KDDIR)"
+
+#. Tag: para
+#: specials.docbook:369
+#, no-c-format
+msgid "The directory the current dialog is in."
+msgstr "Der Ordner, in dem sich der aktuelle Dialog befindet."
+
+#. Tag: function
+#: specials.docbook:373
+#, no-c-format
+msgid "@global(_NAME)"
+msgstr "@global(_NAME)"
+
+#. Tag: para
+#: specials.docbook:374
+#, no-c-format
+msgid "The name of the dialog"
+msgstr "Der Name des Dialoges"

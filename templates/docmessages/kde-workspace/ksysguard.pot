@@ -1,0 +1,951 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:26+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: index.docbook:12
+#, no-c-format
+msgid "The &ksysguard; Handbook"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:15
+#, no-c-format
+msgid "<author>&Chris.Schlaeger;&Chris.Schlaeger.mail;</author>"
+msgstr ""
+
+#. Tag: othercredit
+#: index.docbook:19
+#, no-c-format
+msgid "&John.Tapsell; &John.Tapsell.mail;"
+msgstr ""
+
+#. Tag: othercredit
+#: index.docbook:24
+#, no-c-format
+msgid ""
+"<othercredit "
+"role=\"developer\">&Chris.Schlaeger;&Chris.Schlaeger.mail;</othercredit>"
+msgstr ""
+
+#. Tag: othercredit
+#: index.docbook:29
+#, no-c-format
+msgid "&Tobias.Koenig;&Tobias.Koenig.mail;"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:34
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+
+#. Tag: holder
+#: index.docbook:39
+#, no-c-format
+msgid "&Chris.Schlaeger;"
+msgstr ""
+
+#. Tag: date
+#: index.docbook:44
+#, no-c-format
+msgid "2010-10-24"
+msgstr ""
+
+#. Tag: releaseinfo
+#: index.docbook:45
+#, no-c-format
+msgid "&kde; 4.5"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:47
+#, no-c-format
+msgid "&ksysguard; is a network enabled task and system monitor application."
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:51
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:52
+#, no-c-format
+msgid "KSysGuard"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:53
+#, no-c-format
+msgid "process monitor"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:54
+#, no-c-format
+msgid "performance monitor"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:55
+#, no-c-format
+msgid "system monitor"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:56
+#, no-c-format
+msgid "<keyword>top</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:57
+#, no-c-format
+msgid "<keyword>ps</keyword>"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:62
+#, no-c-format
+msgid "Introduction"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:64
+#, no-c-format
+msgid "&ksysguard; is the &kde; Task and Performance Monitor."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:66
+#, no-c-format
+msgid ""
+"It features a client/server architecture that allows monitoring of local as "
+"well as remote hosts. The graphical front end uses so-called sensors to "
+"retrieve the information it displays. A sensor can return simple values or more "
+"complex information like tables. For each type of information, one or more "
+"displays are provided. Displays are organized in worksheets that can be saved "
+"and loaded independently from each other. So, &ksysguard; is not only a simple "
+"task manager but also a very powerful tool to control large server farms."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:79
+#, no-c-format
+msgid "Using &ksysguard;"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:82
+#, no-c-format
+msgid "Getting started"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:84
+#, no-c-format
+msgid ""
+"&ksysguard; can be started from the application launcher menu, using the entry "
+"<guimenuitem>System Monitor</guimenuitem> in the <menuchoice> <guimenu>"
+"Applications</guimenu><guisubmenu>System</guisubmenu></menuchoice> "
+"menu. Alternatively, you can start it by typing <command>ksysguard</command> "
+"in a terminal."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:89
+#, no-c-format
+msgid ""
+"The &ksysguard; main window consists of a menu bar, an optional tool bar and "
+"status bar, and the work space. Custom worksheets will also show the sensor "
+"browser."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:96
+#, no-c-format
+msgid ""
+"By default &ksysguard; shows two worksheets: <guilabel>Process Table</guilabel> "
+"and <guilabel>System Load</guilabel>. The <guilabel>Process Table</guilabel> "
+"lists the running processes and lets the user control them. Multiple processes "
+"can be selected and controlled at once. The <guilabel>System Load</guilabel> "
+"worksheet shows graphs of system utilization: <guilabel>CPU History</guilabel>"
+", <guilabel>Memory and Swap History</guilabel>, and the <guilabel>"
+"Network History</guilabel>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:106
+#, no-c-format
+msgid ""
+"This default setup is sufficient enough for an inexperienced user to do some "
+"system management. An experienced user or even a system administrator of a "
+"large computer lab has different needs. To address a wide range of users, "
+"&ksysguard; is highly flexible."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:114
+#, no-c-format
+msgid "Process Table"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:116
+#, no-c-format
+msgid ""
+"The Process Table gives you a list of processes on your system. The list can be "
+"sorted by each column. Just press the left mouse button at the head of the "
+"column."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:120
+#, no-c-format
+msgid ""
+"Use the <guilabel>What's This</guilabel> help for the columns titles to get "
+"additional information about the value displayed here."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:123
+#, no-c-format
+msgid ""
+"In the context menu of a process in the list view you find additional actions "
+"like changing the priority, sending signals to the process, switching to the "
+"application window, showing detailed memory information and killing the "
+"process."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:127
+#, no-c-format
+msgid ""
+"The list shows the following information about each process. Please note that "
+"not all properties are available on every operating system."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:131
+#, no-c-format
+msgid "Default Columns in the Process Table"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:135
+#, no-c-format
+msgid "Name"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:136
+#, no-c-format
+msgid "The name of the executable that started the process"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:139
+#, no-c-format
+msgid "Username"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:140
+#, no-c-format
+msgid "The user who owns this process"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:143
+#, no-c-format
+msgid "CPU %"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:144
+#, no-c-format
+msgid ""
+"The current total CPU usage of the process, divided by the number of processor "
+"cores in the machine"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:148
+#, no-c-format
+msgid "Memory"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:149
+#, no-c-format
+msgid ""
+"This is the amount of real physical memory that this process is using by "
+"itself, and approximates the Private memory usage of the process."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:151
+#, no-c-format
+msgid ""
+"It does not include any swapped out memory, nor the code size of its shared "
+"libraries."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:153
+#, no-c-format
+msgid ""
+"This is often the most useful figure to judge the memory use of a program."
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:157
+#, no-c-format
+msgid "Shared Mem"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:158
+#, no-c-format
+msgid ""
+"This is approximately the amount of real physical memory that this process's "
+"shared libraries are using. This memory is shared among all processes that use "
+"this library"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:167
+#, no-c-format
+msgid "Additional Columns in the Process Table"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:171
+#, no-c-format
+msgid "<guilabel>PID</guilabel>"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:172
+#, no-c-format
+msgid "The unique Process <abbrev>ID</abbrev> that identifies this process"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:175
+#, no-c-format
+msgid "<guilabel>TTY</guilabel>"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:176
+#, no-c-format
+msgid "The controlling terminal on which this process is running"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:179
+#, no-c-format
+msgid "Niceness"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:180
+#, no-c-format
+msgid ""
+"The priority with which this process is being run. For the normal scheduler, "
+"this ranges from 19 (very nice, least priority) to -19 (top priority)"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:184
+#, no-c-format
+msgid "CPU Time"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:185
+#, no-c-format
+msgid ""
+"The total user and system time that this process has been running for, "
+"displayed as minutes:seconds"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:189
+#, no-c-format
+msgid "IO Read"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:190
+#, no-c-format
+msgid ""
+"The number of bytes read. The <guilabel>Display Units</guilabel> "
+"and the <guilabel>Displayed Information</guilabel> can be changed using the "
+"context menu of this column header"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:195
+#, no-c-format
+msgid "IO Write"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:196
+#, no-c-format
+msgid ""
+"The number of bytes written. The <guilabel>Display Units</guilabel> "
+"and the <guilabel>Displayed Information</guilabel> can be changed using the "
+"context menu of this column header"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:201
+#, no-c-format
+msgid "Virtual Size"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:202
+#, no-c-format
+msgid ""
+"This is the amount of virtual memory space that the process is using, included "
+"shared libraries, graphics memory, files on disk, and so on. This number is "
+"almost meaningless. Use the context menu to select the <guilabel>"
+"Display Units</guilabel>"
+msgstr ""
+
+#. Tag: guilabel
+#: index.docbook:208
+#, no-c-format
+msgid "Command"
+msgstr ""
+
+#. Tag: entry
+#: index.docbook:209
+#, no-c-format
+msgid "The command with which this process was launched"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:215
+#, no-c-format
+msgid ""
+"At the top of the table you find three controls which will be described now "
+"from left to right."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:219
+#, no-c-format
+msgid "End Processes"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:221
+#, no-c-format
+msgid ""
+"If you have selected one or more processes you can press the <guibutton>"
+"End Process</guibutton> button to kill them. A so called <errorcode>"
+"SIGKILL</errorcode> is sent to the processes which causes them to terminate "
+"immediately. If these applications still have unsaved data this data will be "
+"lost. So use this button with care."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:229
+#, no-c-format
+msgid "Filter Bar"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:231
+#, no-c-format
+msgid ""
+"Filter which processes are shown by the text given here. The text can be a "
+"partial string match of the <guilabel>Name</guilabel>, <guilabel>"
+"Command</guilabel> or <guilabel>Window Title</guilabel> "
+"of the process. It can also be a <guilabel>Username</guilabel> "
+"or a Process <abbrev>ID</abbrev> number."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:239
+#, no-c-format
+msgid "Process Filter"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:241
+#, no-c-format
+msgid ""
+"The Process Filter can be used to reduce the number of processes displayed in "
+"the table. You can filter out processes you are not interested in. Currently "
+"you can display <guilabel>All Processes</guilabel> in a flat or tree view, "
+"<guilabel>System Processes</guilabel> only, <guilabel>User Processes</guilabel> "
+"only, your <guilabel>Own Processes</guilabel> only or <guilabel>"
+"Programs Only</guilabel>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:247
+#, no-c-format
+msgid ""
+"The tree view has been designed to show the relationships between the running "
+"processes. A process that is started by another process is called the child of "
+"that process. A tree is an elegant way to show this parent-child relationship. "
+"The <emphasis>init</emphasis> process is the ancestor of all processes."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:253
+#, no-c-format
+msgid ""
+"If you are not interested in the children of a particular process you can click "
+"on the little box to the left of the parent and the subtree will collapse. "
+"Another click on that box will unfold the subtree again."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:257
+#, no-c-format
+msgid ""
+"You can launch the <guilabel>Process Table</guilabel> "
+"from &krunner; using the <guibutton>Show System Activities</guibutton> "
+"button or using the global shortcut <keycombo action=\"simul\"> "
+"&Ctrl;&Esc;</keycombo> at any time. The process table is displayed in a window "
+"titled <guilabel>System Activities</guilabel>."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:267
+#, no-c-format
+msgid "Work Space"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:269
+#, no-c-format
+msgid ""
+"The work space is organized as worksheets. Select <guimenuitem>"
+"New Tab...</guimenuitem> from the <guimenu>File</guimenu> "
+"menu to create a new worksheet. A dialog will appear where you can set the "
+"name, the dimension and the update interval of the worksheet. To remove a "
+"worksheet again, select <guimenuitem>Close Tab</guimenuitem> from the <guimenu>"
+"File</guimenu> menu. Any modifications will be saved to the worksheet file. If "
+"a worksheet has never been saved, you will be asked for a file name. Worksheets "
+"consist of cells organized as a grid."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:280
+#, no-c-format
+msgid ""
+"Each cell can be filled with a display for one or more sensors. You can fill a "
+"cell by dragging a sensor from the sensor browser and dropping it over the "
+"cell. If there is more than one type of display available for that type of "
+"sensor, a popup menu will appear. You can then select which display you prefer "
+"to use. Certain types of displays can display more than one sensor. Add more "
+"sensors to a display by dragging them over from the sensor browser and dropping "
+"them over the already existing display."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:288
+#, no-c-format
+msgid ""
+"Worksheets can be configured by clicking <guimenuitem>"
+"Tab Properties</guimenuitem> at the <guimenu>View</guimenu> "
+"menu. In the appearing dialog you can set the dimension and the update "
+"interval."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:301
+#, no-c-format
+msgid ""
+"Displays can be configured by clicking with the right mouse button on them. A "
+"popup menu appear where you can select whether you want to change the "
+"properties of that display or remove it from the worksheet."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:306
+#, no-c-format
+msgid "Sensor Browser"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:307
+#, no-c-format
+msgid ""
+"The sensor browser exposes &ksysguard;'s advanced functionality. To use it, you "
+"must first go to the <guimenu>File</guimenu> menu and create a new worksheet. "
+"It is shown whenever a custom worksheet is selected."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:310
+#, no-c-format
+msgid ""
+"The sensor browser displays the registered hosts and their sensors in a tree "
+"form. Click on the tree handles to open or close a branch. Each sensor monitors "
+"a certain system value."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:313
+#, no-c-format
+msgid ""
+"After you have configured your custom worksheet use the splitter and move it to "
+"the right edge of the window to hide the sensor browser."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:315
+#, no-c-format
+msgid ""
+"If the sensor browser does not appear on a custom worksheet, it is probably "
+"hidden. To unhide it, select the right edge of the window and drag it to the "
+"left."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:321
+#, no-c-format
+msgid "Line Graph"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:323
+#, no-c-format
+msgid ""
+"The line graph prints samples of one or more sensors over time. If, several "
+"sensors are displayed, the values are piled in different colors. If the display "
+"is large enough a grid will be displayed to show the range of the plotted "
+"samples. By default, the automatic range mode is active so the minimum and "
+"maximum values will be set automatically. Sometimes you want fixed minimum and "
+"maximum values. In that case, you can deactivate automatic range mode and set "
+"the values in the properties dialog."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:333
+#, no-c-format
+msgid "Digital Display"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:335
+#, no-c-format
+msgid ""
+"The multimeter displays the sensor values as a digital meter. In the properties "
+"dialog you can specify a lower and upper limit. If the range is exceeded, the "
+"display is colored in the alarm color."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:341
+#, no-c-format
+msgid "Bar Graph"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:343
+#, no-c-format
+msgid ""
+"The bar graph displays the sensor values as dancing bars. In the properties "
+"dialog you can specify minimum and maximum values of range and a lower and "
+"upper limit. If the range is exceeded, the display is colored in the alarm "
+"color."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:350
+#, no-c-format
+msgid "Log to a File"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:352
+#, no-c-format
+msgid ""
+"The sensor logger does not display any values, but logs them in a file with "
+"additional date and time information. For each sensor you can specify a lower "
+"and upper limit in the properties dialog. If the range is exceeded, the entry "
+"of the sensor table is colored in the alarm color."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:360
+#, no-c-format
+msgid "Partition Table"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:362
+#, no-c-format
+msgid ""
+"The <guilabel>Partition Usage</guilabel> has a special table sensor showing "
+"information about all mounted partitions"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:367
+#, no-c-format
+msgid "Connecting to other hosts"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:369
+#, no-c-format
+msgid ""
+"To connect to a new host use <guimenuitem>Monitor Remote "
+"Machine...</guimenuitem> from the <guimenu>File</guimenu> "
+"menu. A dialog box will appear and allows you to enter the name of the host you "
+"want to connect to. Below the name you can choose the connection method. The "
+"default is <application>ssh</application>, the secure shell. Alternatively the "
+"<application>rsh</application>, the remote shell, the daemon mode or a custom "
+"command can be used. Click <guibutton>OK</guibutton> "
+"to establish the connection. Shortly afterwards the new host will appear in the "
+"sensor browser and you can browse the list of sensors."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:383
+#, no-c-format
+msgid ""
+"To establish a connection, a program called <application>"
+"ksysguardd</application>, that can be started in the following two modes, must "
+"be installed on the new host."
+msgstr ""
+
+#. Tag: term
+#: index.docbook:389
+#, no-c-format
+msgid "daemon mode"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:391
+#, no-c-format
+msgid ""
+"You can start <application>ksysguardd</application> at boot time in <guilabel>"
+"Daemon</guilabel> mode by adding <parameter>-d</parameter> "
+"as the argument. In this case, you have to select daemon mode at the connection "
+"dialog of <application>ksysguard</application>. A disadvantage of this "
+"connection type is that you won't be able to kill or renice a process in the "
+"<guilabel>Process Table</guilabel> and the data exchange over network won't be "
+"encrypted. As a result, daemon mode is not recommended."
+msgstr ""
+
+#. Tag: term
+#: index.docbook:402
+#, no-c-format
+msgid "shell mode"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:404
+#, no-c-format
+msgid ""
+"In this mode <application>ksysguardd</application> is started at connecting "
+"time by <application>ksysguard</application>. To make that possible, its "
+"location needs to be included in your <envar>PATH</envar>"
+". Unfortunately the ssh does not source your <filename>.profile</filename> "
+"file, so your regular <envar>PATH</envar> setting will not be available. "
+"Instead it uses a default <envar>PATH</envar> like <parameter>"
+"/bin:/usr/bin</parameter>. Since it is very likely that &kde; is not installed "
+"in these folders you need to create or update a file in your home folder. The "
+"file is called <filename>environment</filename> and needs to be in a hidden "
+"folder called <filename>.ssh</filename>. See the manual page for <application>"
+"ssh</application> for more details. The file needs to contain a line similar "
+"to:"
+msgstr ""
+
+#. Tag: screen
+#: index.docbook:418
+#, no-c-format
+msgid "<userinput>PATH=/bin:/usr/bin:/opt/kde/bin</userinput>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:420
+#, no-c-format
+msgid ""
+"assuming that <application>ksysguardd</application> can be found under "
+"<filename>/opt/kde/bin/ksysguardd</filename>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:423
+#, no-c-format
+msgid ""
+"When using <application>ssh</application> you should make sure that you have "
+"your <filename>identity.pub</filename> installed on the remote machine and the "
+"host key of the remote machine is already registered on your machine. If you "
+"don't set up <filename>identity.pub</filename> correctly, you will be asked for "
+"your password every time you start ksysguard. The easiest way to make sure that "
+"everything is working is to run <command>ssh <option>"
+"remotehost ksysguardd</option></command> in a shell. If you are greeted by "
+"<application>ksysguardd</application>, then everything is working correctly and "
+"you can type <userinput>quit</userinput> to exit <application>"
+"ksysguardd</application>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:436
+#, no-c-format
+msgid ""
+"For experts: <application>ksysguardd</application> is a very small program that "
+"is only linked against the libc. So it can also be used on machines that do not "
+"have a full blown &kde; installed, such as servers. Many major distributions "
+"provide a separate <application>ksysguardd</application> "
+"package for your convenience. If you choose the custom command option in the "
+"host connector you need to specify the complete command to start <application>"
+"ksysguardd</application>."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:462
+#, no-c-format
+msgid "Configuring <application>ksysguardd</application>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:464
+#, no-c-format
+msgid ""
+"The graphical front-end is available on any platform that &kde; runs on. The "
+"back-end is at the moment available on the following flavors of &UNIX;:"
+msgstr ""
+
+#. Tag: term
+#: index.docbook:470
+#, no-c-format
+msgid "&Linux; 2.x"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:471
+#, no-c-format
+msgid ""
+"For <application>ksysguardd</application> to work it is necessary to compile "
+"the &Linux; Kernel with the <filename>/proc</filename> "
+"File system enabled. This is the default setting and most &Linux; Distributions "
+"have it already."
+msgstr ""
+
+#. Tag: term
+#: index.docbook:477
+#, no-c-format
+msgid "FreeBSD"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:478
+#, no-c-format
+msgid ""
+"The <application>ksysguardd</application> program needs to be owned by the "
+"<systemitem class=\"groupname\">kmem</systemitem> group and needs to have the "
+"setgid bit set."
+msgstr ""
+
+#. Tag: term
+#: index.docbook:484
+#, no-c-format
+msgid "&Solaris;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:485
+#, no-c-format
+msgid "To be written"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:489
+#, no-c-format
+msgid ""
+"Support for other platforms is in progress. Your help is greatly appreciated."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:494
+#, no-c-format
+msgid "Credits and License"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:496
+#, no-c-format
+msgid ""
+"&ksysguard; is currently developed and maintained by &John.Tapsell; "
+"&John.Tapsell.mail;. &ksysguard; is a rewrite of <application>KTop</application>"
+", the &kde; 1.x task manager. Several other people have worked on <application>"
+"KTop</application>:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:502
+#, no-c-format
+msgid "A. Sanda <email>alex@darkstar.ping.at</email>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:503
+#, no-c-format
+msgid "Ralf Mueller <email>ralf@bj-ig.de</email>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:504
+#, no-c-format
+msgid "&Bernd.Johannes.Wuebben; <email>wuebben@math.cornell.edu</email>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:506
+#, no-c-format
+msgid "Nicolas Leclercq <email>nicknet@planete.net</email>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:510
+#, no-c-format
+msgid "The porting to other platforms than &Linux; was done by:"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:513
+#, no-c-format
+msgid "FreeBSD: Hans Petter Bieker <email>zerium@traad.lavvu.no</email>"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:517
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+
+#. Tag: chapter
+#: index.docbook:517
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr ""

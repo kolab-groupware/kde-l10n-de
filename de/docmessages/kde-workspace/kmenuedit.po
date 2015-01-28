@@ -1,0 +1,1769 @@
+# Stephan Johach <hunsum@gmx.de>, 2004, 2005.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2008.
+# Burkhard Lück <lueck@hube-lueck.de>, 2006, 2007, 2008, 2009, 2010, 2011, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kmenuedit\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:26+0000\n"
+"PO-Revision-Date: 2013-10-30 20:38+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:15
+#, no-c-format
+msgid "The &kde; Menu Editor Handbook"
+msgstr "Das Handbuch zum &kde;-Menü-Editor"
+
+#. Tag: author
+#: index.docbook:18
+#, no-c-format
+msgid "&Milos.Prudek; &Milos.Prudek.mail;"
+msgstr "&Milos.Prudek; &Milos.Prudek.mail;"
+
+#. Tag: author
+#: index.docbook:19
+#, no-c-format
+msgid "&Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;"
+msgstr "&Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;"
+
+#. Tag: othercredit
+#: index.docbook:20
+#, no-c-format
+msgid "&Lauri.Watts; &Lauri.Watts.mail;"
+msgstr "&Lauri.Watts; &Lauri.Watts.mail;"
+
+#. Tag: trans_comment
+#: index.docbook:24
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Marco</"
+"firstname><surname>Wegner</"
+"surname><affiliation><address><email>mail@marcowegner.de</email></address></"
+"affiliation><contrib>Deutsche Übersetzung</contrib></othercredit>"
+
+#. Tag: holder
+#: index.docbook:29
+#, no-c-format
+msgid "&Milos.Prudek;"
+msgstr "&Milos.Prudek;"
+
+#. Tag: holder
+#: index.docbook:33
+#, no-c-format
+msgid "&Anne-Marie.Mahfouf;"
+msgstr "&Anne-Marie.Mahfouf;"
+
+#. Tag: date
+#: index.docbook:38
+#, no-c-format
+msgid "2013-09-07"
+msgstr "2013-09-07"
+
+#. Tag: releaseinfo
+#: index.docbook:39
+#, no-c-format
+msgid "0.9 (&kde; 4.11)"
+msgstr "0.9 (&kde; 4.11)"
+
+#. Tag: para
+#: index.docbook:41
+#, no-c-format
+msgid ""
+"&kmenuedit; allows editing one of the &kde; application launchers: "
+"&kickoff;, the classic &kmenu; or Lancelot Launcher."
+msgstr ""
+"Mit &kmenuedit; können Sie die Startmenüs von KDE einrichten: &kickoff;, das "
+"klassische K-Menü und den Lancelot-Starter"
+
+#. Tag: keyword
+#: index.docbook:45
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:46
+#, no-c-format
+msgid "KDE Menu Editor"
+msgstr "KDE-Menü-Editor"
+
+#. Tag: keyword
+#: index.docbook:47
+#, no-c-format
+msgid "kmenuedit"
+msgstr "kmenuedit"
+
+#. Tag: keyword
+#: index.docbook:48
+#, no-c-format
+msgid "application"
+msgstr "Anwendung"
+
+#. Tag: keyword
+#: index.docbook:49
+#, no-c-format
+msgid "program"
+msgstr "Programm"
+
+#. Tag: keyword
+#: index.docbook:50
+#, no-c-format
+msgid "menu"
+msgstr "Menü"
+
+#. Tag: keyword
+#: index.docbook:51
+#, no-c-format
+msgid "kickoff"
+msgstr "Kickoff"
+
+#. Tag: keyword
+#: index.docbook:52
+#, no-c-format
+msgid "Lancelot"
+msgstr "Lancelot"
+
+#. Tag: title
+#: index.docbook:57
+#, no-c-format
+msgid "Introduction"
+msgstr "Einleitung"
+
+#. Tag: para
+#: index.docbook:59
+#, no-c-format
+msgid ""
+"&kmenuedit; allows editing the menu of &kde; application launchers: "
+"&kickoff;, classic &kmenu; or Lancelot Launcher."
+msgstr ""
+"Mit &kmenuedit; können Sie verschiedene Startmenüs von KDE einrichten: "
+"&kickoff;, das klassische K-Menü und den Lancelot-Starter"
+
+#. Tag: para
+#: index.docbook:61
+#, no-c-format
+msgid ""
+"&kmenuedit; can be started either by &RMB; clicking the application launcher "
+"button on the panel and choosing <guimenuitem>Edit Applications...</"
+"guimenuitem>, or by typing <userinput>kmenuedit</userinput> in the &krunner; "
+"line."
+msgstr ""
+"&kmenuedit; kann entweder durch Klicken mit der &RMBn; auf den K-Knopf  und "
+"Auswahl von <guimenuitem>Menüeinträge bearbeiten ...</guimenuitem>. Außerdem "
+"können Sie in &krunner; den Befehl <userinput>kmenuedit</userinput> "
+"eingeben, um den Menü-Editor zu starten."
+
+#. Tag: para
+#: index.docbook:66
+#, no-c-format
+msgid "&kmenuedit; allows you to:"
+msgstr "&kmenuedit; ermöglicht das:"
+
+#. Tag: para
+#: index.docbook:69
+#, no-c-format
+msgid ""
+"View and edit the menu used by the current application launcher (&kickoff;, "
+"classic menu or Lancelot Launcher)"
+msgstr ""
+"Anzeigen und Bearbeiten des aktuellen Startmenüs (&kickoff;, das klassische "
+"Startmenü, oder Lancelot)"
+
+#. Tag: para
+#: index.docbook:70
+#, no-c-format
+msgid ""
+"<guimenuitem>Cut</guimenuitem>, <guimenuitem>Copy</guimenuitem> and "
+"<guimenuitem>Paste</guimenuitem> submenus and items"
+msgstr ""
+"<guimenuitem>Ausschneiden</guimenuitem>, <guimenuitem>Kopieren</guimenuitem> "
+"und <guimenuitem>Einfügen</guimenuitem> von Menüeinträgen und Einträgen"
+
+#. Tag: para
+#: index.docbook:72
+#, no-c-format
+msgid "Create and delete submenus and items"
+msgstr "Anlegen und Löschen von Untermenüs und Einträgen"
+
+#. Tag: para
+#: index.docbook:73
+#, no-c-format
+msgid "Change the order of submenus and items"
+msgstr "Ändern der Reihenfolge von Untermenüs und Einträgen"
+
+#. Tag: para
+#: index.docbook:74
+#, no-c-format
+msgid "Hide items and add new submenus and items"
+msgstr ""
+"Ausblenden von Einträgen und Hinzufügen neuer Untermenüs und neuer Einträge"
+
+#. Tag: para
+#: index.docbook:77
+#, no-c-format
+msgid ""
+"By default all applications installed on the computer appear in the "
+"application launchers menu of all users. Applications may appear more than "
+"once in several different menus. Empty submenu categories defined in the "
+"desktop menu specification will show up as well, but are not visible in "
+"application launchers unless you install applications belonging to these "
+"categories."
+msgstr ""
+"Als Standard erscheinen alle auf dem Rechner installierten Anwendungen im "
+"Menü des Anwendungs-Starters aller Benutzer. Anwendungen können auch "
+"mehrfach in verschiedenen Untermenüs angezeigt werden. Untermenü-Kategorien "
+"ohne Einträge, die in der Arbeitsflächen-Menüspezifikation definiert sind, "
+"werden ebenfalls angezeigt, werden aber im Anwendungs-Starter aber nicht "
+"angezeigt, wenn Sie keine Anwendungen in dieser Kategorie installiert haben."
+
+#. Tag: para
+#: index.docbook:83
+#, no-c-format
+msgid "The tree view has three different entry types:"
+msgstr "In der Baumansicht gibt es drei Arten von Einträgen:"
+
+#. Tag: para
+#: index.docbook:85
+#, no-c-format
+msgid ""
+"Submenu: Only <guilabel>Name</guilabel>, <guilabel>Comment</guilabel> and "
+"<guilabel>Description</guilabel> fields and the button to select an icon are "
+"enabled, the <guilabel>Advanced</guilabel> tab is disabled. Any submenu can "
+"hold additional submenus and/or items."
+msgstr ""
+"Untermenü: Nur die Felder <guilabel>Name</guilabel>, <guilabel>Kommentar</"
+"guilabel> und <guilabel>Beschreibung</guilabel> sowie der Knopf zur Auswahl "
+"eines Symbols sind aktiviert. Die Karteikarte <guilabel>Erweitert</"
+"guilabel>ist deaktiviert. Jedes Untermenü kann weitere Untermenüs und/oder "
+"Einträge enthalten."
+
+#. Tag: para
+#: index.docbook:90
+#, no-c-format
+msgid ""
+"Items: Use this entry to enter the data for the application you want to add. "
+"For detailed information see <link linkend=\"using-kmenuedit\">Using "
+"&kmenuedit;</link>."
+msgstr ""
+"Elemente: Benutzen Sie diesen Eintrag, um Daten für die Anwendung "
+"einzugeben, die Sie zum Menü hinzufügen möchten. Weitere Informationen "
+"finden Sie im Abschnitt <link linkend=\"using-kmenuedit\">Benutzung von "
+"&kmenuedit;</link>."
+
+#. Tag: para
+#: index.docbook:93
+#, no-c-format
+msgid ""
+"Separator: A visual entry to structure the menu. It cannot be modified and "
+"all editing actions are disabled."
+msgstr ""
+"Unterteilung: Ein visuelles Element, um das Menü zu strukturieren. Dieses "
+"Element kann nicht geändert werden und alle Bearbeitungsaktionen sind "
+"abgeschaltet."
+
+#. Tag: para
+#: index.docbook:98
+#, no-c-format
+msgid ""
+"&kmenuedit; has two tree view modes - normal and with hidden entries. To see "
+"the latter check the option <guilabel>Show hidden entries</guilabel> in the "
+"configuration dialog on the <guilabel>General options</guilabel> page."
+msgstr ""
+"&kmenuedit; hat zwei Ansichtsmodi - normal und mit versteckten Einträgen. Um "
+"die versteckten Einträge anzuzeigen, wählen Sie diese Einstellung im "
+"Einrichtungsdialog auf der Seite <guilabel>Allgemein</guilabel>."
+
+#. Tag: para
+#: index.docbook:101
+#, no-c-format
+msgid ""
+"Many additional entries appear in hidden view mode in the tree. Several "
+"hidden entries seem to be just duplicates but have different command "
+"options. Usually you should never change these hidden entries or you risk to "
+"break some functionality of the system."
+msgstr ""
+"Viele zusätzliche Einträge erscheinen in Ansichtsmodus mit versteckten "
+"Einträgen. Viele versteckte Einträge scheinen nur Duplikate von Einträgen zu "
+"sein, aber Sie haben unterschiedliche Befehls-Einstellungen. Normalerweise "
+"sollten Sie diese versteckten Einträge niemals ändern, oder Sie können "
+"einige Funktionen Ihres Systems unbenutzbar machen."
+
+#. Tag: para
+#: index.docbook:105
+#, no-c-format
+msgid ""
+"In hidden mode you will have a special submenu <guilabel>.hidden [Hidden]</"
+"guilabel> as top level item in the tree. This special submenu is not "
+"editable. In this submenu all deleted items will be shown at the next start "
+"of &kmenuedit;."
+msgstr ""
+"Im Modus mit versteckten Einträgen gibt es ein besonderes Untermenü "
+"<guilabel>.hidden [Ausgeblendet]</guilabel> als oberstes Element in der "
+"Baumansicht. Diese besondere Untermenü kann nicht bearbeitet werden. In "
+"diesem Untermenü werden alle gelöschte Einträge beim nächsten Start von "
+"&kmenuedit; wieder erscheinen."
+
+#. Tag: para
+#: index.docbook:108
+#, no-c-format
+msgid ""
+"It is not possible to delete entries using the &GUI; in this special "
+"submenu. They will reappear at the next start of &kmenuedit;."
+msgstr ""
+"Es ist nicht möglich, Einträge in diesem besonderen Untermenü über die "
+"grafische Bedienungsoberfläche zu löschen. Gelöschte Einträge erscheinen "
+"beim nächsten Start von &GUI; automatisch wieder."
+
+#. Tag: title
+#: index.docbook:113
+#, no-c-format
+msgid "Use Cases"
+msgstr "Anwendungsfälle"
+
+#. Tag: title
+#: index.docbook:116
+#, no-c-format
+msgid "Adapt the Menu for a User"
+msgstr "Anpassung des Menüs für einen Benutzer"
+
+#. Tag: title
+#: index.docbook:119
+#, no-c-format
+msgid "Reorder Items"
+msgstr "Einträge neu anordnen"
+
+#. Tag: para
+#: index.docbook:121
+#, no-c-format
+msgid ""
+"This should be done in hidden view mode where only the submenus and items "
+"visible in the application launcher menu are displayed."
+msgstr ""
+"Dies sollten Sie im Anzeigemodus mit versteckten Einträgen ausführen, da "
+"dann nur im Anwendungsstarter sichtbare Untermenüs und Einträge angezeigt "
+"werden."
+
+#. Tag: para
+#: index.docbook:124
+#, no-c-format
+msgid ""
+"By default the menu is sorted alphabetically using the English names or "
+"descriptions. Using another language than English some submenus and items "
+"therefore will appear in an unsorted order."
+msgstr ""
+"Als Voreinstellung ist das Menü alphabetisch nach den englischen Namen oder "
+"Beschreibungen sortiert. In anderen Sprachen als Englisch werden daher "
+"manche Untermenüs und Einträge in unsortierter Reihenfolge angezeigt."
+
+#. Tag: para
+#: index.docbook:127
+#, no-c-format
+msgid ""
+"Use the options in <menuchoice><guimenu>Edit</guimenu><guimenuitem>Sort</"
+"guimenuitem></menuchoice> to sort either by name or description. If you use "
+"the classic application launcher you have to select the corresponding "
+"<guilabel>Format</guilabel> option in the settings dialog. In the &kickoff; "
+"launcher check <guilabel>Show applications by name</guilabel> if you sort "
+"them by name here."
+msgstr ""
+"Mit den Aktionen <menuchoice><guimenu>Bearbeiten</"
+"guimenu><guimenuitem>Sortieren</guimenuitem></menuchoice> können entweder "
+"nach Namen oder Beschreibung sortieren. Verwenden Sie den klassischen "
+"Anwendungsstarter, müssen Sie das zugehörige <guilabel>Format</guilabel> im "
+"Einrichtungsdialog einstellen. Beim &kickoff;-Anwendungsstarter kreuzen Sie "
+"<guilabel>Anwendungen nach Namen sortieren</guilabel>, wenn Sie hier eine "
+"Sortierung nach Namen einstellen."
+
+#. Tag: para
+#: index.docbook:132
+#, no-c-format
+msgid ""
+"Grouping your frequently used submenus or items together &eg; at the top of "
+"the menu makes selecting them easier. To change the order of particular "
+"items or submenus in the tree use the <guibutton>Move Up</guibutton> or "
+"<guibutton>Move Down</guibutton> button in the toolbar or these actions in "
+"the menu."
+msgstr ""
+"Wenn Sie Ihre häufig verwendeten Untermenüs oder Einträge &eg; oben im Menü "
+"gruppieren, sind diese Elemente leichter zu erreichen. Um die Reihenfolge "
+"bestimmter Einträge oder Untermenüs im Menübaum zu ändern, benutzen Sie die "
+"Knöpfe <guibutton>Nach oben</guibutton> oder <guibutton>Nach unten</"
+"guibutton> in der Werkzeugleiste oder diese Aktionen im Menü."
+
+#. Tag: para
+#: index.docbook:136
+#, no-c-format
+msgid ""
+"All application launchers will use the order of submenus defined in "
+"&kmenuedit;."
+msgstr ""
+"Alle Programmstarter benutzen die in &kmenuedit; festgelegt Reihenfolge der "
+"Untermenüs."
+
+#. Tag: title
+#: index.docbook:141
+#, no-c-format
+msgid "Remove Items from the Menu View"
+msgstr "Einträge aus der Menüansicht entfernen"
+
+#. Tag: para
+#: index.docbook:143
+#, no-c-format
+msgid ""
+"Having shown all applications installed on a computer may be confusing for "
+"some users so you may want to hide some less frequently used items or "
+"submenus. There are two different ways to do that:"
+msgstr ""
+"Die Anzeige aller auf einem Rechner installierten Programme kann für einige "
+"Benutzer verwirrend sein, daher möchten Sie vielleicht einige weniger häufig "
+"benutzte Untermenüs oder Einträge ausblenden. Es gibt zwei Möglichkeiten, "
+"dies zu erreichen. "
+
+#. Tag: para
+#: index.docbook:147
+#, no-c-format
+msgid ""
+"Switch to normal view mode without hidden entries. If you delete items they "
+"are moved to the <guilabel>.hidden [Hidden]</guilabel> submenu. You can move "
+"them back into the tree to have them in the menu again."
+msgstr ""
+"Wechseln Sie zum normalen Ansichtsmodus ohne die Anzeige versteckter "
+"Einträge. Wenn Sie nun Einträge löschen, werden sie in das Untermenü "
+"<guilabel>.hidden [Ausgeblendet]</guilabel> verschoben. Sie können diese "
+"Einträge wieder zurück in den Menübaum verschieben, damit sie wieder "
+"angezeigt werden."
+
+#. Tag: para
+#: index.docbook:150
+#, no-c-format
+msgid ""
+"If you delete a submenu it will be really deleted with all its submenus and "
+"items. To recreate them you can use <menuchoice><guimenu>Edit</"
+"guimenu><guimenuitem>Restore to System Menu</guimenuitem></menuchoice>, but "
+"this will remove all your custom submenus and items and the corresponding "
+"<filename class=\"extension\">.desktop</filename> files are deleted too. "
+"This action cannot be reverted."
+msgstr ""
+"Wenn Sie ein Untermenü entfernen, wird es tatsächlich mit allen Untermenüs "
+"und Einträgen gelöscht. Um gelöschte Systemeinträge wiederherzustellen, "
+"verwenden Sie <menuchoice><guimenu>Bearbeiten</"
+"guimenu><guimenuitem>Systemvoreinstellungen wiederherstellen</guimenuitem></"
+"menuchoice>. Aber damit werden alle Ihre selbst erstellten Untermenüs und "
+"Einträge entfernt und die zugehörigen <filename class=\"extension\">."
+"desktop</filename>-Dateien werden ebenfalls gelöscht. Diese Aktion kann "
+"nicht zurückgenommen werden."
+
+#. Tag: para
+#: index.docbook:156
+#, no-c-format
+msgid ""
+"The preferred way to remove submenus and items in the menu of an application "
+"launcher is to check <guilabel>Hidden entry</guilabel> on the "
+"<guilabel>General</guilabel> tab and switch to the hidden view mode. In this "
+"mode it is easy to revert changes without destroying the menu structure. The "
+"only drawback is that you have to hide all entries in a submenu manually to "
+"hide the whole submenu from the view."
+msgstr ""
+"Um Untermenüs und Einträge im Menü eines Anwendungsstarters zu löschen, wird "
+"empfohlen, im Einrichtungsdialog <guilabel>Versteckte Einträge anzeigen</"
+"guilabel> auf der Seite <guilabel>Allgemein</guilabel> anzukreuzen und damit "
+"den Ansichtsmodus mit versteckten Einträgen einzuschalten. In diesem Modus "
+"ist es möglich, Änderungen zurückzunehmen, ohne die Menüstruktur zu "
+"zerstören. Der einzige Nachteil ist, dass Sie alle Einträge in einem "
+"Untermenü von Hand ausblenden müssen, um das gesamte Untermenü aus der "
+"Ansicht zu entfernen."
+
+#. Tag: title
+#: index.docbook:167
+#, no-c-format
+msgid "Adding Custom Items"
+msgstr "Benutzerdefinierte Einträge hinzufügen"
+
+#. Tag: para
+#: index.docbook:169
+#, no-c-format
+msgid ""
+"To add custom items (submenu, item or separator) use the actions in the menu "
+"or toolbar. Items need a Name and a Command, without a command entry an item "
+"will not be saved and your addition gets lost."
+msgstr ""
+"Um benutzerdefinierte Einträge (Untermenü, Einträge, oder Unterteilung) "
+"hinzuzufügen, verwenden Sie die Aktionen im Menü oder der Werkzeugleiste. "
+"Für Einträge müssen Sie einen Namen und einen Befehl eingeben, ohne einen "
+"Eintrag für den Befehl wird der Eintrag nicht gespeichert und Ihre "
+"Änderungen gehen verloren."
+
+#. Tag: para
+#: index.docbook:172
+#, no-c-format
+msgid ""
+"If you add an entry it is inserted as sub entry at the actual highlighted "
+"position in the tree. Move an entry by dragging it with the mouse or using "
+"the <guibutton>Move Down</guibutton> button to the bottom of the tree to "
+"make it a top level entry."
+msgstr ""
+"Wenn Sie einen Eintrag hinzufügen, wird er als Unterelement der aktuell "
+"hervorgehobenen Position im Menübaum eingefügt. Verschieben Sie einen "
+"Eintrag durch Ziehen mit der Maus oder mit den Knöpfen <guibutton>Nach "
+"unten</guibutton> bis zum Ende des Menübaums, um ein Element der obersten "
+"Ebene zu erstellen."
+
+#. Tag: title
+#: index.docbook:180
+#, no-c-format
+msgid "Transfer application launcher settings"
+msgstr "Einstellungen des Anwendungs-Starters übertragen"
+
+#. Tag: para
+#: index.docbook:182
+#, no-c-format
+msgid ""
+"There is no way to transfer menu settings using the &GUI;, you have to do "
+"that manually and copy the following files to the target user:"
+msgstr ""
+"Es gibt keine Möglichkeit, Menüeinstellungen mit der grafischen "
+"Benutzeroberfläche auf andere Benutzer zu übertragen. Dies kann nur manuell "
+"durch Kopieren der folgenden Dateien zum Ziel-Benutzer erfolgen:"
+
+#. Tag: para
+#: index.docbook:184
+#, no-c-format
+msgid ""
+"&kmenuedit; stores the menu hierarchy in <filename>$<envar>HOME</envar>/."
+"config/menus/applications-kmenuedit.menu</filename> and <filename class="
+"\"directory\">$<envar>HOME</envar>/.local/share/desktop-directories</"
+"filename> contains desktop files for submenus you created. In <filename "
+"class=\"directory\">$<envar>HOME</envar>/.local/share/applications/</"
+"filename> you find the desktop files for the custom items you created."
+msgstr ""
+"&kmenuedit; speichert die Menü-Hierarchie in <filename>$<envar>HOME</envar>/."
+"config/menus/applications-kmenuedit.menu</filename>. Der Ordner <filename "
+"class=\"directory\">$<envar>HOME</envar>/.local/share/desktop-directories</"
+"filename> enthält die „desktop“-Dateien der von Ihnen erstellten Untermenüs. "
+"Im Ordner <filename class=\"directory\">$<envar>HOME</envar>/.local/share/"
+"applications/</filename> finden Sie die „desktop“-Dateien der von Ihnen "
+"erstellten Menüeinträge."
+
+#. Tag: para
+#: index.docbook:191
+#, no-c-format
+msgid ""
+"The shortcuts for each application are stored in <filename>~/.kde/share/"
+"config/kglobalshortcutsrc</filename>, but export/import does not work "
+"because the UUIDs of the shortcuts do not match up between systems, even "
+"though the <filename class=\"extension\">.desktop</filename> files are the "
+"same. You have to assign all shortcuts manually again."
+msgstr ""
+"Die Kurzbefehle für jede Anwendung werden in der Datei <filename>~/.kde/"
+"share/config/kglobalshortcutsrc</filename>, aber importieren oder "
+"exportieren funktioniert nicht, da die UUIDs der Kurzbefehle auf den "
+"verschiedenen Systemen oder Benutzerkonten nicht übereinstimmen, auch wenn "
+"die <filename class=\"extension\">.desktop</filename>-Dateien identisch "
+"sind. Sie müssen also alle Kurzbefehle wieder manuell zuweisen."
+
+#. Tag: author
+#: index.docbook:204
+#, no-c-format
+msgid "&Virgil.J.Nisly; &Virgil.J.Nisly.mail;"
+msgstr "&Virgil.J.Nisly; &Virgil.J.Nisly.mail;"
+
+#. Tag: title
+#: index.docbook:207
+#, no-c-format
+msgid "Adding a Menu Entry"
+msgstr "Menüeintrag hinzufügen"
+
+#. Tag: para
+#: index.docbook:209
+#, no-c-format
+msgid ""
+"In this example, we will add &firefox; to the <guisubmenu>Internet</"
+"guisubmenu> submenu."
+msgstr ""
+"In diesem Beispiel werden wir &firefox; zum Menü <guisubmenu>Internet</"
+"guisubmenu> hinzufügen."
+
+#. Tag: para
+#: index.docbook:210
+#, no-c-format
+msgid ""
+"To start off, we need to open &kmenuedit;, so &RMB; on the application "
+"launcher menu, click <guimenuitem>Edit Applications...</guimenuitem> to "
+"start &kmenuedit;. After &kmenuedit; has started, select "
+"<guisubmenu>Internet</guisubmenu> as shown in picture below."
+msgstr ""
+"Zu Beginn müssen wir &kmenuedit; starten: Klicken Sie dazu mit der &RMBn; "
+"auf das Programm-Startmenü und wählen Sie <guimenuitem>Menüeinträge "
+"bearbeiten ...</guimenuitem>. Nachdem &kmenuedit; gestartet ist, wählen Sie "
+"wie im Bildschirmfoto unten <guisubmenu>Internet</guisubmenu>."
+
+#. Tag: screeninfo
+#: index.docbook:214
+#, no-c-format
+msgid "<screeninfo>Select <guisubmenu>Internet</guisubmenu></screeninfo>"
+msgstr "<screeninfo>Wählen Sie<guisubmenu>Internet</guisubmenu></screeninfo>"
+
+#. Tag: phrase
+#: index.docbook:220
+#, no-c-format
+msgid "<phrase>Select <guisubmenu>Internet</guisubmenu></phrase>"
+msgstr "<phrase>Wählen Sie <guisubmenu>Internet</guisubmenu></phrase>"
+
+#. Tag: para
+#: index.docbook:224
+#, no-c-format
+msgid ""
+"Once you have selected <guisubmenu>Internet</guisubmenu>, click on "
+"<menuchoice><guimenu>File</guimenu><guimenuitem>New Item...</guimenuitem></"
+"menuchoice>, opening the <guilabel>New Item</guilabel> dialog, as shown "
+"below. Type the name of the program you want to add, in this case, type "
+"<userinput>firefox</userinput>."
+msgstr ""
+"Wenn Sie <guisubmenu>Internet</guisubmenu> ausgewählt haben, klicken Sie auf "
+"<menuchoice><guimenu>Datei</guimenu><guimenuitem>Neues Element ...</"
+"guimenuitem></menuchoice> und öffnen damit den unten gezeigten Dialog "
+"<guilabel>Neues Element</guilabel>. Geben Sie nun den Namen des Programms "
+"ein, das Sie hinzufügen möchten. In diesem Fall ist das <userinput>Firefox</"
+"userinput>."
+
+#. Tag: screeninfo
+#: index.docbook:227
+#, no-c-format
+msgid "<guilabel>New Item</guilabel> dialog"
+msgstr "Dialog <guilabel>Neues Element</guilabel>"
+
+#. Tag: phrase
+#: index.docbook:233
+#, no-c-format
+msgid "The <guilabel>New Item</guilabel> dialog."
+msgstr "Der Dialog <guilabel>Neues Element</guilabel>."
+
+#. Tag: para
+#: index.docbook:238
+#, no-c-format
+msgid ""
+"Press return, and you should see something like the picture below in the "
+"main window."
+msgstr ""
+"Drücken Sie die Eingabetaste, und Sie sollten einen ähnlichen Bildschirm wie "
+"abgebildet sehen."
+
+#. Tag: screeninfo
+#: index.docbook:241
+#, no-c-format
+msgid "New Item"
+msgstr "Neues Element"
+
+#. Tag: phrase
+#: index.docbook:247
+#, no-c-format
+msgid "The new item created."
+msgstr "Das neu angelegte Element."
+
+#. Tag: para
+#: index.docbook:252
+#, no-c-format
+msgid ""
+"Now lets fill in the <guilabel>Description:</guilabel>, in this case type "
+"<userinput>Web Browser</userinput>. <note><para>The appearance how "
+"description and name will be displayed depends on the settings in the "
+"application launcher &eg; <quote>Web Browser (Firefox)</quote> or "
+"<quote>Firefox (Web Browser)</quote>.</para></note> We will need to fill in "
+"the executable name in the <guilabel>Command:</guilabel> field, in this "
+"instance we will type <userinput><command>firefox</command></userinput>."
+msgstr ""
+"Lassen Sie uns jetzt <guilabel>Beschreibung:</guilabel> ausfüllen; in diesem "
+"Fall geben Sie <userinput>Webbrowser</userinput> ein. <note><para>Die Art "
+"Anzeige von Beschreibung und Namen wird durch die Einstellungen im "
+"Anwendungs-Starter festgelegt. &eg; als <quote>Webbrowser (Firefox)</quote> "
+"oder <quote>Firefox (Webbrowser)</quote>.</para></note> Im Textfeld "
+"<guilabel>Befehl</guilabel> müssen Sie nun den Namen der ausführbaren Datei "
+"angeben. In diesem Fall ist das <userinput><command>firefox</command></"
+"userinput>. "
+
+#. Tag: para
+#: index.docbook:257
+#, no-c-format
+msgid ""
+"The command has to be in your <envar>PATH</envar> variable or you have to "
+"specify the full path to the executable. If you do not know the executable "
+"name of an application use the <userinput><command>locate</command></"
+"userinput> command to search for the desktop file and enter the string from "
+"the Exec line as command here."
+msgstr ""
+"Dieser Befehl muss in Ihrer Variable <envar>PATH</envar> zu erreichen sein, "
+"oder Sie müssen den vollständigen Pfad zur ausführbaren Datei angeben. Wenn "
+"Sie den Namen der ausführbaren Datei nicht kennen, benutzen Sie den Befehl "
+"<userinput><command>locate</command></userinput>, um die Desktop-Datei für "
+"die Anwendung zu suchen und geben Sie den Eintrag in der Zeile „Exec“ als "
+"Befehl hier ein."
+
+#. Tag: para
+#: index.docbook:261
+#, no-c-format
+msgid ""
+"Following the command, you can have several place holders which will be "
+"replaced with actual values when the program is run:"
+msgstr ""
+"Nach dem Befehl können weitere Platzhalter folgen, die durch ihre "
+"eigentlichen Werte ersetzt werden, sobald das Programm aufgerufen wird:"
+
+#. Tag: member
+#: index.docbook:263
+#, no-c-format
+msgid "%f - a single file name"
+msgstr "%f - ein Dateiname"
+
+#. Tag: member
+#: index.docbook:264
+#, no-c-format
+msgid ""
+"%F - a list of files; use for applications that can open several local files "
+"at once"
+msgstr ""
+"%F - eine Liste von Dateien. Benutzen Sie dies bei Anwendungen, die mehrere "
+"lokale Dateien gleichzeitig öffnen können"
+
+#. Tag: member
+#: index.docbook:265
+#, no-c-format
+msgid "%u - a single &URL;"
+msgstr "%u - eine Adresse (&URL;)"
+
+#. Tag: member
+#: index.docbook:266
+#, no-c-format
+msgid "%U - a list of &URL;s"
+msgstr "%U - eine Liste von &URL;s (Adressen)"
+
+#. Tag: member
+#: index.docbook:267
+#, no-c-format
+msgid "%d - the folder of a file to open"
+msgstr "%d - der Ordner der zu öffnenden Datei"
+
+#. Tag: member
+#: index.docbook:268
+#, no-c-format
+msgid "%D - a list of folders"
+msgstr "%D - eine Liste von Ordnern"
+
+#. Tag: member
+#: index.docbook:269
+#, no-c-format
+msgid "%i - the icon"
+msgstr "%i - das Symbol"
+
+#. Tag: member
+#: index.docbook:270
+#, no-c-format
+msgid "%m - the mini icon"
+msgstr "%m - das Mini-Symbol"
+
+#. Tag: member
+#: index.docbook:271
+#, no-c-format
+msgid "%c - the caption"
+msgstr "%c - der Fenstertitel"
+
+#. Tag: para
+#: index.docbook:273
+#, no-c-format
+msgid ""
+"For example: if you want to firefox to start your web browsing at www.kde."
+"org - instead of <command>firefox</command> you would type <command>firefox "
+"%u www.kde.org</command>."
+msgstr ""
+"Ein Beispiel: Wenn Sie firefox mit der Seite www.kde.org starten wollen, "
+"geben Sie anstelle von <command>firefox</command> Folgendes ein: "
+"<command>firefox %u www.kde.org</command>."
+
+#. Tag: para
+#: index.docbook:274
+#, no-c-format
+msgid ""
+"Most applications accept additional options &eg; the name of a defined "
+"profile like &konqueror; or &konsole;. To see all options for an application "
+"launch <userinput><command><replaceable>applicationname</replaceable></"
+"command> <option>--help</option></userinput> in &konsole;."
+msgstr ""
+"Für viele Programme wie zum Beispiel &konqueror; oder &konsole; können Sie "
+"auch zusätzliche Optionen wie &eg; den Namen eines definierten Profils "
+"angeben. Die möglichen Optionen für ein Programm werden angezeigt, wenn Sie "
+"in der &konsole; <userinput><command><replaceable>programm</replaceable></"
+"command> <option>--help</option></userinput> eingeben."
+
+#. Tag: para
+#: index.docbook:276
+#, no-c-format
+msgid ""
+"We would like to have a more creative icon, so we will click the generic "
+"icon sitting beside <guilabel>Name:</guilabel> (note, the default icon may "
+"be blank, in which case click in the area to the right of the name entry "
+"box.) It will bring the <guilabel>Select Icon</guilabel> dialog which will "
+"let us choose the new icon, as shown below."
+msgstr ""
+"Wir möchten ein schöneres Symbol haben, also klicken wir auf das leere "
+"Symbol rechts neben <guilabel>Name</guilabel> und <guilabel>Beschreibung</"
+"guilabel>. Das Standardsymbol kann auch leer sein, klicken Sie in diesem "
+"Fall auf den Bereich rechts neben dem Namensfeld. Nun erscheint der Dialog "
+"<guilabel>Symbol auswählen</guilabel>, aus dem Sie, wie unten dargestellt, "
+"ein Symbol auswählen können."
+
+#. Tag: screeninfo
+#: index.docbook:278
+#, no-c-format
+msgid "<guilabel>Select Icon</guilabel> dialog"
+msgstr "Dialog <guilabel>Symbol auswählen</guilabel>"
+
+#. Tag: phrase
+#: index.docbook:284
+#, no-c-format
+msgid "The <guilabel>Select Icon</guilabel> dialog."
+msgstr "Der Dialog <guilabel>Symbol auswählen</guilabel>."
+
+#. Tag: para
+#: index.docbook:289
+#, no-c-format
+msgid ""
+"We choose the firefox icon from the list, and press &Enter;. Your finished "
+"screen should probably look something like the screenshot below."
+msgstr ""
+"Wir wählen aus der Liste das Symbol für firefox, und drücken die Taste "
+"&Enter;. Das Ergebnis sollte etwa so aussehen wie unten dargestellt."
+
+#. Tag: screeninfo
+#: index.docbook:291
+#, no-c-format
+msgid "Done screenshot"
+msgstr "Bildschirmfoto mit dem Ergebnis"
+
+#. Tag: phrase
+#: index.docbook:297
+#, no-c-format
+msgid "This is what the completed menu item should looks like."
+msgstr "So sollte der fertiggestellte Menüeintrag aussehen."
+
+#. Tag: para
+#: index.docbook:302
+#, no-c-format
+msgid ""
+"The place of the new menu item can now be changed using <guibutton>Move Up</"
+"guibutton> and <guibutton>Move Down</guibutton> buttons on the &kmenuedit; "
+"toolbar or by dragging with the mouse."
+msgstr ""
+"Die Position des neuen Eintrags kann jetzt mit den Knöpfen <guibutton>Nach "
+"oben</guibutton> und <guibutton>Nach unten</guibutton> in der Werkzeugleiste "
+"von &kmenuedit; oder durch Ziehen mit der Maus geändert werden."
+
+#. Tag: para
+#: index.docbook:303
+#, no-c-format
+msgid ""
+"The submenu items can be sorted using <guibutton>Sort</guibutton> button on "
+"the &kmenuedit; toolbar or <menuchoice><guimenu>Edit</"
+"guimenu><guisubmenu>Sort</guisubmenu></menuchoice> submenu items."
+msgstr ""
+"Die Reihenfolge der Einträge im Untermenü können Sie mit dem Knopf "
+"<guibutton>Sortieren</guibutton> in der Werkzeugleiste von &kmenuedit; oder "
+"mit den Einträgen im Menü <menuchoice><guimenu>Bearbeiten</"
+"guimenu><guisubmenu>Sortieren</guisubmenu></menuchoice> ändern."
+
+#. Tag: para
+#: index.docbook:305
+#, no-c-format
+msgid ""
+"Click <menuchoice><guimenu>File</guimenu><guimenuitem>Save</guimenuitem></"
+"menuchoice>, wait for the <guilabel>Updating System Configuration</guilabel> "
+"dialog to get finished, you should find &firefox; in the application "
+"launcher <guisubmenu>Internet</guisubmenu> submenu."
+msgstr ""
+"Klicken Sie <menuchoice><guimenu>Datei</guimenu><guimenuitem>Speichern</"
+"guimenuitem></menuchoice> und warten Sie, bis der Dialog <guilabel>System-"
+"Einrichtung wird aktualisiert</guilabel> fertig ist. Jetzt sollte Firefox im "
+"Programm-Startmenü im Untermenü <guisubmenu>Internet</guisubmenu> auftauchen."
+
+#. Tag: title
+#: index.docbook:310
+#, no-c-format
+msgid "Using &kmenuedit;"
+msgstr "Benutzung von &kmenuedit;"
+
+#. Tag: para
+#: index.docbook:312
+#, no-c-format
+msgid ""
+"The left application panel shows the application launcher structure. When "
+"you browse items in the left panel, the right panel shows detailed "
+"information for the highlighted menu item."
+msgstr ""
+"Das Feld auf der linken Seite der Anwendung gibt die Struktur des Programm-"
+"Startmenüs wieder. Wenn Sie einen Eintrag in diesem Feld auswählen, werden "
+"im Bereich auf der rechten Seite detaillierte Informationen zum ausgewählten "
+"Eintrag angezeigt."
+
+#. Tag: title
+#: index.docbook:317
+#, no-c-format
+msgid "General tab"
+msgstr "Karteikarte <quote>Allgemein</quote>"
+
+#. Tag: guilabel
+#: index.docbook:321
+#, no-c-format
+msgid "Name:"
+msgstr "Name:"
+
+#. Tag: para
+#: index.docbook:322
+#, no-c-format
+msgid ""
+"This is the name of your program as it appears in the application launcher "
+"menu. It can be different from the real executable name. For instance the "
+"name of <command>mc</command> executable is \"<application>Midnight "
+"Commander</application>\"."
+msgstr ""
+"Dies ist der Name des Programms, wie er im Programm-Startmenü angezeigt "
+"wird. Er kann sich vom tatsächlichen Namen der ausführbaren Datei "
+"unterscheiden. So lautet zum Beispiel der Name der ausführbaren Datei "
+"<command>mc</command> im Menü <quote><application>Midnight Commander</"
+"application></quote>."
+
+#. Tag: guilabel
+#: index.docbook:328
+#, no-c-format
+msgid "Description:"
+msgstr "Beschreibung:"
+
+#. Tag: para
+#: index.docbook:329
+#, no-c-format
+msgid ""
+"The description will be displayed together with the name in the application "
+"launcher. This is entirely optional."
+msgstr ""
+"Die Beschreibung wird zusammen mit dem Namen im Programm-Startmenü "
+"angezeigt. Diese Angabe ist optional."
+
+#. Tag: guilabel
+#: index.docbook:332
+#, no-c-format
+msgid "Comment:"
+msgstr "Kommentar:"
+
+#. Tag: para
+#: index.docbook:333
+#, no-c-format
+msgid ""
+"Describe the program in greater detail in this field. This is entirely "
+"optional."
+msgstr ""
+"In diesem Eingabefeld steht eine detaillierte Programmbeschreibung. Diese "
+"Angabe ist optional."
+
+#. Tag: guilabel
+#: index.docbook:337
+#, no-c-format
+msgid "Command:"
+msgstr "Befehl:"
+
+#. Tag: para
+#: index.docbook:338
+#, no-c-format
+msgid ""
+"This is the name of the executable program. Make sure that you have "
+"permission to run the program."
+msgstr ""
+"Dies ist der Name der ausführbaren Datei. Stellen Sie sicher, dass Sie die "
+"Berechtigung zum Ausführen dieser Datei besitzen."
+
+#. Tag: guilabel
+#: index.docbook:342
+#, no-c-format
+msgid "Enable launch feedback"
+msgstr "Startrückmeldungen aktivieren"
+
+#. Tag: para
+#: index.docbook:343
+#, no-c-format
+msgid ""
+"If this box is checked, this will display feedback when an application is "
+"started."
+msgstr ""
+"Wenn dieses Feld aktiviert ist, dann wird eine Rückmeldung angezeigt, wenn "
+"eine Anwendung gestartet wurde."
+
+#. Tag: guilabel
+#: index.docbook:347
+#, no-c-format
+msgid "Place in system tray"
+msgstr "Im Systemabschnitt der Kontrollleiste anzeigen"
+
+#. Tag: para
+#: index.docbook:348
+#, no-c-format
+msgid ""
+"When checked, the application's icon will show up in the panel system tray. "
+"You will then be able to hide or show the application by clicking on the "
+"system tray icon. Clicking on it using the &RMB; will allow also you to "
+"undock, or quit the application."
+msgstr ""
+"Wenn dieses Feld aktiviert ist, dann wird das Symbol der Anwendung im "
+"Systemabschnitt der Kontrollleiste angezeigt. Dann können Sie die Anwendung "
+"durch Klicken auf das Symbol im Systemabschnitt aus- oder einblenden. Durch "
+"Klicken auf das Symbol mit der &RMBn; können Sie die Anwendung beenden oder "
+"aus dem Systemabschnitt lösen."
+
+#. Tag: guilabel
+#: index.docbook:355
+#, no-c-format
+msgid "Only show in &kde;"
+msgstr "Nur in KDE anzeigen"
+
+#. Tag: para
+#: index.docbook:356
+#, no-c-format
+msgid ""
+"When checked, the application entry will only be visible in all &kde; "
+"application launchers but not in other desktops environments."
+msgstr ""
+"Wenn diese Einstellung aktiviert ist, wird der entsprechende Eintrag nur in "
+"KDE-Startmenüs erscheinen, und nicht in denen anderer Arbeitsumgebungen."
+
+#. Tag: guilabel
+#: index.docbook:360
+#, no-c-format
+msgid "Hidden entry"
+msgstr "Versteckte Einträge"
+
+#. Tag: para
+#: index.docbook:361
+#, no-c-format
+msgid "Remove an entry from the menu view in the application launcher."
+msgstr "Entfernt einen Eintrag aus der Menüansicht des Anwendungs-Starters."
+
+#. Tag: title
+#: index.docbook:367
+#, no-c-format
+msgid "Advanced tab"
+msgstr "Karte <quote>Erweitert</quote>"
+
+#. Tag: guilabel
+#: index.docbook:371
+#, no-c-format
+msgid "Work path:"
+msgstr "Arbeitsordner:"
+
+#. Tag: para
+#: index.docbook:372
+#, no-c-format
+msgid ""
+"Specify the work path of the program. This will be the current path when the "
+"program launches. It does not need to be the same as the executable location."
+msgstr ""
+"Geben Sie hier den Arbeitsordner des Programms an. Dies wird der aktuelle "
+"Ordner sein, wenn das Programm gestartet wird. Der Ordner muss nicht mit dem "
+"Ordner übereinstimmen, in dem sich die auszuführende Datei befindet."
+
+#. Tag: guilabel
+#: index.docbook:377
+#, no-c-format
+msgid "Run in terminal"
+msgstr "In Terminal starten"
+
+#. Tag: para
+#: index.docbook:378
+#, no-c-format
+msgid ""
+"You must check this if your program requires terminal emulator in order to "
+"run. This mainly applies to <link linkend=\"gloss-console-application"
+"\">console applications</link>."
+msgstr ""
+"Markieren Sie dieses Ankreuzfeld, wenn das Programm nur in einem Terminal "
+"ausgeführt werden kann. Dies gilt hauptsächlich für <link linkend=\"gloss-"
+"console-application\">Konsole-Anwendungen</link>."
+
+#. Tag: guilabel
+#: index.docbook:384
+#, no-c-format
+msgid "Terminal options:"
+msgstr "Terminal-Einstellungen:"
+
+#. Tag: para
+#: index.docbook:385
+#, no-c-format
+msgid "Put all terminal options in this field."
+msgstr "Tragen Sie alle Terminal-Optionen in dieses Eingabefeld ein."
+
+#. Tag: guilabel
+#: index.docbook:388
+#, no-c-format
+msgid "Run as a different user"
+msgstr "Mit anderer Benutzerkennung ausführen"
+
+#. Tag: para
+#: index.docbook:389
+#, no-c-format
+msgid ""
+"If you want to run this program as a different user (not you), check this "
+"checkbox, and provide the username in the <guilabel>Username:</guilabel> "
+"field."
+msgstr ""
+"Falls Sie das Programm unter einer anderen Benutzerkennung ausführen "
+"möchten, markieren Sie dieses Ankreuzfeld und geben die Benutzerkennung im "
+"Feld <guilabel>Benutzername:</guilabel> an."
+
+#. Tag: guilabel
+#: index.docbook:395
+#, no-c-format
+msgid "Current shortcut key:"
+msgstr "Aktuelles Tastenkürzel:"
+
+#. Tag: para
+#: index.docbook:396
+#, no-c-format
+msgid "You can assign a special keyboard shortcut to launch your program."
+msgstr ""
+"Sie können hier ein spezielles Tastaturkürzel angeben, mit dem das Programm "
+"ausgeführt werden kann."
+
+#. Tag: para
+#: index.docbook:398
+#, no-c-format
+msgid ""
+"Click the <guibutton>None</guibutton> button to the right of the "
+"<guilabel>Current shortcut key:</guilabel> checkbox."
+msgstr ""
+"Klicken Sie auf den Knopf <guibutton>Keiner</guibutton> rechts neben "
+"<guilabel>Aktuelles Tastenkürzel:</guilabel>."
+
+#. Tag: para
+#: index.docbook:401
+#, no-c-format
+msgid ""
+"The button text will change to <guilabel>Input...</guilabel> and you can "
+"press the key combination on your keyboard that you want to be assigned to "
+"your program."
+msgstr ""
+"Die Knopfbeschriftung zeigt nun <guilabel>Eingabe ...</guilabel> an, und Sie "
+"können die gewünschte Tastenkombination drücken, die diesem Programm "
+"zugewiesen werden soll."
+
+#. Tag: para
+#: index.docbook:404
+#, no-c-format
+msgid ""
+"You can reset the shortcut to <guilabel>None</guilabel> by using this "
+"button: <inlinemediaobject><imageobject> <imagedata fileref=\"reset.png\" "
+"format=\"PNG\"/></imageobject></inlinemediaobject>."
+msgstr ""
+"Sie können den Kurzbefehl auf <guilabel>Keiner</guilabel> zurücksetzen, "
+"indem Sie diesen Knopf drücken: <inlinemediaobject><imageobject> <imagedata "
+"fileref=\"reset.png\" format=\"PNG\"/></imageobject></inlinemediaobject>."
+
+#. Tag: para
+#: index.docbook:408
+#, no-c-format
+msgid ""
+"Don't forget to save your setting by clicking the toolbar <guiicon>Save</"
+"guiicon> icon or using the <menuchoice> <guimenu>File</"
+"guimenu><guimenuitem>Save</guimenuitem> </menuchoice> menu item."
+msgstr ""
+"Vergessen Sie nicht, Ihre Änderungen zu speichern, indem Sie in der "
+"Werkzeugleiste auf den <guiicon>Speichern</guiicon>-Knopf drücken bzw. im "
+"Menü <menuchoice> <guimenu>Datei</guimenu><guimenuitem>Speichern</"
+"guimenuitem> </menuchoice> auswählen."
+
+#. Tag: title
+#: index.docbook:420
+#, no-c-format
+msgid "Menu Reference"
+msgstr "Menüreferenz"
+
+#. Tag: para
+#: index.docbook:422
+#, no-c-format
+msgid ""
+"Most actions in the menubar are also available in the context menu opened "
+"with a &RMB; click on an item in the tree view."
+msgstr ""
+"Die meisten Aktionen in der Menüleiste finden Sie auch im Kontextmenü, das "
+"Sie durch Klicken mit der &RMBn; auf einem Eintrag in der Baumansicht öffnen."
+
+#. Tag: menuchoice
+#: index.docbook:427
+#, no-c-format
+msgid ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo></"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>New Item...</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> </"
+"shortcut> <guimenu>Datei</guimenu> <guimenuitem>Neues Element ...</"
+"guimenuitem>"
+
+#. Tag: action
+#: index.docbook:431
+#, no-c-format
+msgid "Adds new menu item."
+msgstr "Fügt ein neues Element hinzu."
+
+#. Tag: menuchoice
+#: index.docbook:436
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>New Submenu...</guimenuitem>"
+msgstr ""
+"<guimenu>Datei</guimenu> <guimenuitem>Neues Untermenü ...</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:440
+#, no-c-format
+msgid "Adds new submenu."
+msgstr "Fügt ein neues Untermenü hinzu."
+
+#. Tag: menuchoice
+#: index.docbook:444
+#, no-c-format
+msgid "<guimenu>File</guimenu><guimenuitem>New Separator</guimenuitem>"
+msgstr "<guimenu>Datei</guimenu><guimenuitem>Neue Unterteilung</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:447
+#, no-c-format
+msgid "Adds a new separator to the menu."
+msgstr "Fügt einen neuen Trenner hinzu."
+
+#. Tag: menuchoice
+#: index.docbook:452
+#, no-c-format
+msgid ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo></"
+"shortcut> <guimenu>File</guimenu><guimenuitem>Save</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo> </"
+"shortcut> <guimenu> Datei</guimenu> <guimenuitem>Speichern</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:458
+#, no-c-format
+msgid "Saves the menu"
+msgstr "Speichert das Menü"
+
+#. Tag: menuchoice
+#: index.docbook:463
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> </"
+"shortcut> <guimenu> Datei</guimenu> <guimenuitem>Beenden</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:470
+#, no-c-format
+msgid "<action>Quits</action> &kmenuedit;."
+msgstr "<action>Beendet</action> &kmenuedit;."
+
+#. Tag: menuchoice
+#: index.docbook:474
+#, no-c-format
+msgid "<guimenu>Edit</guimenu> <guimenuitem>Move Up</guimenuitem>"
+msgstr "<guimenu>Bearbeiten</guimenu> <guimenuitem>Nach oben</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:478
+#, no-c-format
+msgid "<action>Moves</action> the selected item up in its submenu."
+msgstr ""
+"<action>Verschiebt</action> den ausgewählten Eintrag im Untermenü nach oben."
+
+#. Tag: menuchoice
+#: index.docbook:482
+#, no-c-format
+msgid "<guimenu>Edit</guimenu> <guimenuitem>Move Down</guimenuitem>"
+msgstr "<guimenu>Bearbeiten</guimenu> <guimenuitem>Nach unten</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:486
+#, no-c-format
+msgid "<action>Moves</action> the selected item down in its submenu."
+msgstr ""
+"<action>Verschiebt</action> den ausgewählten Eintrag im Untermenü nach unten."
+
+#. Tag: menuchoice
+#: index.docbook:491
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>X</keycap></keycombo> </"
+"shortcut> <guimenu> Edit</guimenu> <guimenuitem>Cut</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>X</keycap></keycombo> </"
+"shortcut> <guimenu> Bearbeiten</guimenu> <guimenuitem>Ausschneiden</"
+"guimenuitem>"
+
+#. Tag: para
+#: index.docbook:498
+#, no-c-format
+msgid ""
+"<action>Cuts the current menu item to the clipboard.</action> If you want to "
+"move menu item, you should first cut it to the clipboard, move to the "
+"destination place using the left panel, and use the <guimenuitem>Paste</"
+"guimenuitem> function to paste the menu item from the clipboard."
+msgstr ""
+"<action>Schneidet das aktuelle Element aus und fügt es in die Zwischenablage "
+"ein.</action> Falls Sie einen Menü-Eintrag verschieben möchten, sollten Sie "
+"diesen zuerst ausschneiden. Gehen Sie dann im linken Bereich zum gewünschten "
+"Zielort und fügen Sie dort das Menü-Element mit <guimenuitem>Einfügen</"
+"guimenuitem> wieder aus der Zwischenablage ein."
+
+#. Tag: menuchoice
+#: index.docbook:506
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>C</keycap></keycombo> </"
+"shortcut> <guimenu> Edit</guimenu> <guimenuitem>Copy</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>C</keycap></keycombo> </"
+"shortcut> <guimenu> Bearbeiten</guimenu> <guimenuitem>Kopieren</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:513
+#, no-c-format
+msgid ""
+"<action>Copies the current menu item to the clipboard</action>. You can "
+"later use the <guimenuitem>Paste</guimenuitem> function to paste the copied "
+"menu item from the clipboard to its destination. You can paste the same item "
+"many times."
+msgstr ""
+"<action>Kopiert das aktuelle Element in die Zwischenablage.</action> Sie "
+"können das kopierte Element später mit Hilfe von <guimenuitem>Einfügen</"
+"guimenuitem> wieder an einem neuen Zielort einfügen. Dasselbe Element lässt "
+"sich so mehrfach einfügen."
+
+#. Tag: menuchoice
+#: index.docbook:520
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>V</keycap></keycombo> </"
+"shortcut> <guimenu>Edit</guimenu> <guimenuitem>Paste</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>V</keycap></keycombo> </"
+"shortcut> <guimenu> Bearbeiten</guimenu> <guimenuitem>Einfügen</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:526
+#, no-c-format
+msgid ""
+"<action>Paste menu item from the clipboard</action> to currently selected "
+"place in the main menu. You must first use <guimenuitem>Cut</guimenuitem> or "
+"<guimenuitem>Copy</guimenuitem> before you can <guimenuitem>Paste</"
+"guimenuitem>."
+msgstr ""
+"<action>Ein Element aus der Zwischenablage einfügen</action> und es am "
+"aktuell gewählten Zielort im Hauptmenü speichern. Wählen Sie zuerst "
+"<guimenuitem>Ausschneiden</guimenuitem> oder <guimenuitem>Kopieren</"
+"guimenuitem>, bevor Sie <guimenuitem>Einfügen</guimenuitem> auswählen können."
+
+#. Tag: menuchoice
+#: index.docbook:533
+#, no-c-format
+msgid ""
+"<shortcut><keycap>Del</keycap></shortcut> <guimenu>Edit</guimenu> "
+"<guimenuitem>Delete</guimenuitem>"
+msgstr ""
+"<shortcut><keycap>Entf</keycap></shortcut> <guimenu>Bearbeiten</guimenu> "
+"<guimenuitem>Entfernen</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:537
+#, no-c-format
+msgid "Deletes currently selected menu item."
+msgstr "Löscht das gerade ausgewählte Element."
+
+#. Tag: menuchoice
+#: index.docbook:542
+#, no-c-format
+msgid "<guimenu>Edit</guimenu> <guisubmenu>Sort</guisubmenu>"
+msgstr "<guimenu>Bearbeiten</guimenu> <guimenuitem>Sortieren</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:546
+#, no-c-format
+msgid ""
+"<action>Opens</action> submenu to sort selected submenu or all menu tree. "
+"There are two sorting methods implemented, namely, by the name and by the "
+"description."
+msgstr ""
+"<action>Öffnet</action> ein Untermenü, um das ausgewählte Untermenü oder "
+"alle Menüeinträge zu sortieren. Es sind zwei Methoden zur Sortierung "
+"implementiert, entweder nach Namen oder nach der Beschreibung."
+
+#. Tag: menuchoice
+#: index.docbook:550
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenuitem>Restore to System Menu</guimenuitem>"
+msgstr ""
+"<guimenu>Bearbeiten</guimenu> <guimenuitem>Systemvoreinstellungen "
+"wiederherstellen</guimenuitem>"
+
+#. Tag: action
+#: index.docbook:553
+#, no-c-format
+msgid ""
+"This will restore the application launcher as it was as default and remove "
+"all your custom settings. A message box will ask you if you really want to "
+"do that."
+msgstr ""
+"Hierdurch werden die Einstellungen der Startmenüs wieder auf die "
+"Systemeinstellungen zurückgesetzt und alle Ihre persönlichen Änderungen "
+"werden verworfen. Zur Sicherheit werden Sie noch einmal gefragt, ob Sie dies "
+"wirklich möchten."
+
+#. Tag: para
+#: index.docbook:558
+#, no-c-format
+msgid ""
+"&kmenuedit; has the common &kde; <guimenu>Settings</guimenu> and "
+"<guimenu>Help</guimenu> menu items, for more information read the sections "
+"about the <ulink url=\"help:/fundamentals/ui.html#menus-settings\">Settings "
+"Menu</ulink> and <ulink url=\"help:/fundamentals/ui.html#menus-help\">Help "
+"Menu</ulink> of the &kde; Fundamentals."
+msgstr ""
+"&kmenuedit; benutzt die bekannten &kde;-Menüeinträge <guimenu>Einstellungen</"
+"guimenu> und <guimenu>Hilfe</guimenu>. Mehr dazu erfahren Sie in den "
+"Abschnitten zu den Menüs <ulink url=\"help:/fundamentals/ui.html#menus-"
+"settings\">Einstellungen</ulink> und <ulink url=\"help:/fundamentals/ui."
+"html#menus-help\">Hilfe</ulink> in den &kde;-Grundlagen."
+
+#. Tag: title
+#: index.docbook:568
+#, no-c-format
+msgid "Credits and License"
+msgstr "Danksagungen und Lizenz"
+
+#. Tag: para
+#: index.docbook:570
+#, no-c-format
+msgid "&kmenuedit;"
+msgstr "&kmenuedit;"
+
+#. Tag: para
+#: index.docbook:573
+#, no-c-format
+msgid "Program copyright &copy; 2002, &Raffaele.Sandrini;"
+msgstr "Copyright &copy; des Programms 2002 &Raffaele.Sandrini;"
+
+#. Tag: para
+#: index.docbook:575
+#, no-c-format
+msgid "Contributors:"
+msgstr "Mitwirkende:"
+
+#. Tag: para
+#: index.docbook:577
+#, no-c-format
+msgid "&Matthias.Elter; &Matthias.Elter.mail; - Original Author"
+msgstr "&Matthias.Elter;&Matthias.Elter.mail; - Ursprünglicher Autor"
+
+#. Tag: para
+#: index.docbook:580
+#, no-c-format
+msgid "&Matthias.Ettrich; &Matthias.Ettrich.mail;"
+msgstr "&Matthias.Ettrich; &Matthias.Ettrich.mail;"
+
+#. Tag: para
+#: index.docbook:582
+#, no-c-format
+msgid "&Daniel.M.Duley; &Daniel.M.Duley.mail;"
+msgstr "&Daniel.M.Duley; &Daniel.M.Duley.mail;"
+
+#. Tag: para
+#: index.docbook:584
+#, no-c-format
+msgid "&Preston.Brown; &Preston.Brown.mail;"
+msgstr "&Preston.Brown; &Preston.Brown.mail;"
+
+#. Tag: para
+#: index.docbook:588
+#, no-c-format
+msgid "Documentation copyright &copy; 2000 &Milos.Prudek;"
+msgstr "Dokumentation Copyright &copy; 2000 &Milos.Prudek;"
+
+#. Tag: para
+#: index.docbook:589
+#, no-c-format
+msgid "Documentation copyright &copy; 2008 &Anne-Marie.Mahfouf;"
+msgstr "Dokumentation Copyright &copy; 2008 &Anne-Marie.Mahfouf;"
+
+#. Tag: para
+#: index.docbook:590
+#, no-c-format
+msgid "Updated for &kde; 3.0 by &Lauri.Watts; &Lauri.Watts.mail; 2002"
+msgstr "Aktualisiert für &kde; 3.0 von &Lauri.Watts;&Lauri.Watts.mail;, 2002"
+
+#. Tag: trans_comment
+#: index.docbook:593
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Übersetzung ins Deutsche von: <itemizedlist><listitem><para>Matthias "
+"Schulz<email>matthschulz@linuxfreemail.com</email></para></listitem> "
+"<listitem><para>Marco Wegner<email>mail@marcowegner.de</email></para></"
+"listitem></itemizedlist></para>"
+
+#. Tag: chapter
+#: index.docbook:593
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr "&underFDL; &underGPL;"
+
+#. Tag: title
+#: index.docbook:601
+#, no-c-format
+msgid "Glossary"
+msgstr "Glossar"
+
+#. Tag: glossterm
+#: index.docbook:604
+#, no-c-format
+msgid "Console Application"
+msgstr "Konsole-Anwendungen"
+
+#. Tag: para
+#: index.docbook:607
+#, no-c-format
+msgid ""
+"Application originally written for non-graphic, text oriented environment. "
+"Such applications run fine in &kde;. They must run within console emulator, "
+"like &konsole;. They are not warned automatically when you shut down your "
+"&kde; session. You therefore must not forget to save documents open in these "
+"applications before you log out from the &kde;."
+msgstr ""
+"Anwendungen, die ursprünglich für eine nicht-grafische, textorientierte "
+"Umgebung geschrieben wurden. Solche Anwendungen laufen problemlos unter "
+"&kde;. Sie müssen jedoch in einem Terminal-Emulator wie &konsole; laufen. "
+"Sie werden nicht automatisch benachrichtigt, wenn die aktuelle &kde;-Sitzung "
+"heruntergefahren wird. Sie sollten daher nicht vergessen, offene Dokumente "
+"in diesen Anwendungen zu speichern, bevor Sie sich von &kde; abmelden."
+
+#. Tag: para
+#: index.docbook:614
+#, no-c-format
+msgid ""
+"Console applications support copying and pasting from &kde;-compliant "
+"applications.Simply mark the text in the console application with your "
+"mouse, switch to the &kde;-compliant application and press <keycombo action="
+"\"simul\">&Ctrl; <keycap>V</keycap></keycombo> to paste the text. If you "
+"want to copy from &kde; application to a console application, first mark the "
+"text with your mouse, press <keycombo action=\"simul\">&Ctrl; <keycap>C</"
+"keycap></keycombo>, switch to the console application and press the middle "
+"button on your mouse<footnote><para>If your mouse does not have a middle "
+"button, you must press <mousebutton>left</mousebutton> and "
+"<mousebutton>right</mousebutton> button at the same time. This is called "
+"<quote>middle button emulation</quote> and it must be supported by your "
+"operating system to work.</para></footnote>."
+msgstr ""
+"Konsole-Anwendungen unterstützen das Kopieren und Einfügen von &kde;-"
+"Anwendungen aus. Markieren Sie diesen Text in der Terminal-Anwendung einfach "
+"mit der Maus, wechseln Sie dann in die &kde;-Anwendung und drücken <keycombo "
+"action=\"simul\">&Ctrl; <keycap>V</keycap></keycombo>, um den Text "
+"einzufügen. Falls Sie Text aus einer &kde;-Anwendung in eine Terminal-"
+"Anwendung einfügen möchten, markieren Sie diesen Text zuerst mit Ihrer Maus, "
+"drücken danach <keycombo action=\"simul\">&Ctrl; <keycap>C</keycap></"
+"keycombo> und wechseln in die gewünschte Terminal-Anwendung, wo Sie dann die "
+"mittlere Maustaste drücken<footnote><para>Wenn Ihre Maus keine mittlere "
+"Maustaste besitzt, müssen Sie die <mousebutton>linke</mousebutton> und "
+"<mousebutton>rechte</mousebutton> Maustaste gleichzeitig drücken. Dies wird "
+"<quote>Emulation der mittleren Maustaste</quote> genannt und muss von Ihrem "
+"Betriebssystem unterstützt werden, um korrekt arbeiten zu können.</para></"
+"footnote>"
+
+#~ msgid "2012-03-17"
+#~ msgstr "2012-03-17"
+
+#~ msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Toolbar</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu> <guimenuitem>Werkzeugleiste anzeigen</"
+#~ "guimenuitem> "
+
+#~ msgid "Show or hide the toolbar"
+#~ msgstr "Blendet die Werkzeugleiste ein oder aus"
+
+#~ msgid ""
+#~ "<guimenu>Settings</guimenu><guimenuitem>Configure Shortcuts...</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu> <guimenuitem>Kurzbefehle festlegen ...</"
+#~ "guimenuitem> "
+
+#~ msgid "Customize the keyboard shortcuts"
+#~ msgstr "Anpassen der Kurzbefehle für die Tastatur"
+
+#~ msgid ""
+#~ "<guimenu>Settings</guimenu><guimenuitem>Configure Toolbars...</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu><guimenuitem>Werkzeugleisten "
+#~ "einrichten ...</guimenuitem> "
+
+#~ msgid "Customize the toolbar icons."
+#~ msgstr "Anpassen der Symbole für die Werkzeugleisten."
+
+#~ msgid ""
+#~ "<guimenu>Settings</guimenu><guimenuitem>Configure &kde; Menu Editor...</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu><guimenuitem>KDE-Menü-Editor "
+#~ "einrichten ...</guimenuitem> "
+
+#~ msgid "Open the Menu Editor settings dialog."
+#~ msgstr "Öffnet den Einrichtungsdialog für den KDE-Menü-Editor."
+
+#~ msgid "&help.menu.documentation;"
+#~ msgstr "&help.menu.documentation;"
+
+#~ msgid "Terminal emulator"
+#~ msgstr "Terminal-Emulator"
+
+#~ msgid ""
+#~ "Terminal emulator is simply a windowed shell; this is known as "
+#~ "<quote>command line window</quote> in some other environments. If you "
+#~ "want to use the shell, you should know at least a few of the system-level "
+#~ "commands for your operating system."
+#~ msgstr ""
+#~ "Ein Terminal-Emulator ist eine Befehlszeile in einem Fenster; in anderen "
+#~ "Arbeitsumgebungen auch bekannt unter der Bezeichnung <quote>Befehlszeilen-"
+#~ "Fenster</quote>. Falls Sie die Befehlszeile verwenden möchten, sollten "
+#~ "Sie zumindest einige der Systembefehle des Betriebssystems kennen."
+
+#~ msgid "Applet"
+#~ msgstr "Miniprogramm"
+
+#~ msgid ""
+#~ "A small application that occupies very little memory and screen space, "
+#~ "and at the same time gives you some useful information or provides a "
+#~ "control shortcut. For instance the <application>Clock</application> "
+#~ "applet shows current time and date (and even a month diary if you click "
+#~ "it), and &ksysguard; applet shows how busy your machine currently is in "
+#~ "real-time."
+#~ msgstr ""
+#~ "Eine kleine Anwendung, die nur sehr wenig Speicher und Platz auf dem "
+#~ "Bildschirm benötigt und gleichzeitig nützliche Informationen bereithält "
+#~ "oder einen schnellen Zugriff auf bestimmte Funktionen bietet. So zeigt "
+#~ "beispielsweise das Miniprogramm <application>Uhr</application> die "
+#~ "aktuelle Zeit und das Datum (und sogar eine Monatsanzeige, wenn man "
+#~ "darauf klickt); und das Miniprogramm <application>Systemmonitor</"
+#~ "application> zeigt in Echtzeit an, wie ausgelastet der Rechner gerade ist."
+
+#~ msgid "Legacy Application"
+#~ msgstr "Ältere/fremde Programme"
+
+#~ msgid ""
+#~ "An X-window application which was not written with &kde; in mind. Such "
+#~ "applications run fine in &kde;. However, they are not warned "
+#~ "automatically when you shut down your &kde; session. You therefore must "
+#~ "not forget to save documents open in these applications before you log "
+#~ "out from &kde;."
+#~ msgstr ""
+#~ "Eine Anwendung für X-Windows, die nicht für &kde; geschrieben wurde. "
+#~ "Solche Anwendungen laufen ohne Probleme unter &kde;. Diese Anwendungen "
+#~ "werden jedoch nicht automatisch benachrichtigt, wenn die aktuelle &kde;-"
+#~ "Sitzung heruntergefahren wird. Sie sollten daher nicht vergessen, offene "
+#~ "Dokumente in diesen Anwendungen zu speichern, bevor Sie sich von &kde; "
+#~ "abmelden."
+
+#~ msgid ""
+#~ "Additionally, many of these applications do not support copying and "
+#~ "pasting from &kde; compliant applications. &Netscape; 4.x browser is a "
+#~ "prominent example of such application <footnote><para>Some <ulink url="
+#~ "\"http://www.gnome.org\">GNOME</ulink> applications may provide limited "
+#~ "interoperability with the &kde;.</para></footnote>."
+#~ msgstr ""
+#~ "Darüber hinaus unterstützen nur wenige dieser Anwendungen die "
+#~ "Funktionalität Kopieren und Einfügen  wie Sie es von &kde;-Anwendungen "
+#~ "kennen. Der Browser &Netscape; 4.x ist ein prominentes Beispiel für eine "
+#~ "solche Anwendung <footnote><para> Einige <ulink url=\"http://www.gnome.org"
+#~ "\">GNOME</ulink>-Anwendungen können eingeschränkt mit &kde; "
+#~ "zusammenarbeiten.</para></footnote>."
+
+#~ msgid "2011-04-26"
+#~ msgstr "2011-04-26"
+
+#~ msgid "<releaseinfo>0.8</releaseinfo>"
+#~ msgstr "<releaseinfo>0.8</releaseinfo>"
+
+#~ msgid "A Quick Start Guide to Adding an Entry to the application launcher"
+#~ msgstr "Einen Eintrag für das Programm-Startmenü hinzufügen"
+
+#~ msgid ""
+#~ "Most applications can be added with &kappfinder;, &firefox; can usually "
+#~ "be added that way, but was used for lack of a better example."
+#~ msgstr ""
+#~ "Die meisten Anwendungen können über &kappfinder; hinzugefügt werden. Dazu "
+#~ "zählt eigentlich auch &firefox;. Mangels eines besseren Beispiels fügen "
+#~ "wir den Eintrag trotzdem von Hand hinzu."
+
+#~ msgid "&kmenuedit; allows editing of the &kde; &kmenu;."
+#~ msgstr ""
+#~ "&kmenuedit; ermöglicht das Bearbeiten des Hauptmenüs von &kde; (&kmenu;)."
+
+#~ msgid "&kmenuedit; allows editing of &kde; &kmenu;."
+#~ msgstr ""
+#~ "&kmenuedit; ermöglicht das Bearbeiten des Hauptmenüs von &kde; (&kmenu;)."
+
+#~ msgid "View and edit the current &kmenu;"
+#~ msgstr "Anzeigen und Bearbeiten des vorhandenen &kmenu;s"
+
+#~ msgid "General program information"
+#~ msgstr "Allgemeine Informationen zu einem Programm"
+
+#~ msgid "Icon List"
+#~ msgstr "Symbolliste"
+
+#~ msgid ""
+#~ "Click this icon to display a choice of icons. Choose an icon for your "
+#~ "program."
+#~ msgstr ""
+#~ "Klicken Sie auf dieses Symbol, um eine Auswahl an Symbol anzuzeigen. "
+#~ "Wählen Sie hier ein Symbol für das Programm."
+
+#~ msgid ""
+#~ "A dialog box will pop up, allowing you to assign a <guilabel>Primary "
+#~ "shortcut:</guilabel> by pressing the key combination on your keyboard "
+#~ "that you want to be assigned to your program. It might be useful to "
+#~ "assign a second keybinding to the same item by checking the "
+#~ "<guilabel>Alternate shortcut:</guilabel> button, for example, if you "
+#~ "often switch keyboard maps, and some shortcuts are not as convenient to "
+#~ "type at all times."
+#~ msgstr ""
+#~ "Es öffnet sich ein Dialogfenster, im dem Sie ein <guilabel>Primäres "
+#~ "Tastenkürzel:</guilabel> für diese Programm durch Drücken der "
+#~ "Tastenkombination auf der Tastatur eingeben können. Manchmal ist es "
+#~ "erforderlich, ein zweites Tastenkürzel anzugeben. Markieren Sie dazu den "
+#~ "Auswahlknopf <guilabel>Alternatives Tastenkürzel:</guilabel>. Dies kann "
+#~ "beispielsweise dann sinnvoll sein, wenn Sie häufig zwischen verschiedenen "
+#~ "Tastaturbelegungen umschalten und sich dadurch manche Tastenkombinationen "
+#~ "nicht immer bequem eintippen lassen."
+
+#~ msgid ""
+#~ "Click the <guiicon>x</guiicon> to clear the shortcut, if you made a "
+#~ "mistake. Check the <guilabel>Multi-key mode</guilabel> box if you want to "
+#~ "assign a shortcut that uses more than one key."
+#~ msgstr ""
+#~ "Klicken Sie <guiicon>x</guiicon>, um das Tastenkürzel zu löschen, falls "
+#~ "Sie eine falsche Eingabe gemacht haben. Klicken Sie auf das Ankreuzfeld "
+#~ "<guilabel>Multi-Tasten-Modus</guilabel>, wenn Sie ein Tastenkürzel "
+#~ "zuordnen möchten, das mehr als eine Taste verwendet."
+
+#~ msgid "The dialog will close when you have selected a keybinding."
+#~ msgstr "Der Dialog wird mit der Auswahl eines Tastenkürzels geschlossen."

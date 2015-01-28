@@ -1,0 +1,737 @@
+# Thorsten Mürell <thorsten@muerell.de>, 2002, 2003, 2004.
+# Burkhard Lück <lueck@hube-lueck.de>, 2005, 2006, 2008, 2012, 2013.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: kmplot_commands\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: 2013-08-25 17:12+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: commands.docbook:2
+#, no-c-format
+msgid "Command Reference"
+msgstr "Befehlsreferenz"
+
+#. Tag: title
+#: commands.docbook:5
+#, no-c-format
+msgid "Menu Items"
+msgstr "Menüeinträge"
+
+#. Tag: para
+#: commands.docbook:7
+#, no-c-format
+msgid ""
+"Apart from the common &kde; menus described in the <ulink url=\"help:/"
+"fundamentals/ui.html#menus\">Menu</ulink> chapter of the &kde; Fundamentals "
+"documentation &kmplot; has these application specific menu entries:"
+msgstr ""
+"Außer den bekannten &kde;-Menüeinträgen, die im Kapitel <ulink url=\"help:/"
+"fundamentals/ui.html#menus\">Menüs</ulink> der &kde;-Grundlagen beschrieben "
+"werden, gibt es folgende spezielle Menüeinträge für &kmplot;:"
+
+#. Tag: title
+#: commands.docbook:12
+#, no-c-format
+msgid "The File Menu"
+msgstr "Das Menü Datei"
+
+#. Tag: menuchoice
+#: commands.docbook:17
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Export...</guimenuitem>"
+msgstr "<guimenu>Datei</guimenu> <guimenuitem>Exportieren ...</guimenuitem>"
+
+#. Tag: para
+#: commands.docbook:20
+#, no-c-format
+msgid ""
+"<action>Exports</action> the plotted graphs to an image file in all formats "
+"supported by &kde;."
+msgstr ""
+"<action>Exportiert</action> den gezeichneten Graphen in eine Bilddatei in "
+"allen von &kde; unterstützten Grafikformaten."
+
+#. Tag: title
+#: commands.docbook:27
+#, no-c-format
+msgid "The Edit Menu"
+msgstr "Das Menu Bearbeiten"
+
+#. Tag: menuchoice
+#: commands.docbook:30
+#, no-c-format
+msgid "<guimenu>Edit</guimenu><guimenuitem>Constants...</guimenuitem>"
+msgstr ""
+"<guimenu>Bearbeiten</guimenu> <guimenuitem>Konstanten ...</guimenuitem>"
+
+#. Tag: para
+#: commands.docbook:32
+#, no-c-format
+msgid ""
+"Displays the <guilabel>Constants</guilabel> dialog box. See <xref linkend="
+"\"constants-config\"/>."
+msgstr ""
+"Öffnet den Dialog <guilabel>Konstanten</guilabel>. Siehe <xref linkend="
+"\"constants-config\"/>."
+
+#. Tag: title
+#: commands.docbook:40
+#, no-c-format
+msgid "The View Menu"
+msgstr "Das Menü Ansicht"
+
+#. Tag: para
+#: commands.docbook:41
+#, no-c-format
+msgid "The first three items in the menu are related to zooming."
+msgstr "Die ersten drei Einträge in diesem Menü ändern den Zoom-Modus."
+
+#. Tag: menuchoice
+#: commands.docbook:46
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>1</keycap></keycombo> </"
+"shortcut> <guimenu>View</guimenu> <guimenuitem>Zoom In</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>1</keycap></keycombo> </"
+"shortcut> <guimenu>Ansicht</guimenu> <guimenuitem>Vergrößern</guimenuitem>"
+
+#. Tag: para
+#: commands.docbook:55
+#, no-c-format
+msgid ""
+"This tool can be operator in two different manners. To zoom in on a point on "
+"the graph, click on it. To zoom in on a specific section of the graph, hold "
+"and drag the mouse to form a rectangle, which will be the new axes ranges "
+"when the mouse button is released."
+msgstr ""
+"Mit diesem Menüeintrag können Sie die Zeichnung auf zwei Arten vergrößern. "
+"Klicken Sie auf einen Punkt in der Zeichnung, um sie mit diesem Punkt als "
+"Mittelpunkt zu der vergrößern. Um einen bestimmten Bereich der Zeichnung zu "
+"vergrößern, ziehen Sie mit gedrückter Maustaste ein Rechteck für den neuen "
+"Bereich der Achsenwerte und lassen Sie dann die Maustaste los. "
+
+#. Tag: menuchoice
+#: commands.docbook:61
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>2</keycap></keycombo> </"
+"shortcut> <guimenu>View</guimenu> <guimenuitem>Zoom Out</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>2</keycap></keycombo> </"
+"shortcut> <guimenu>Ansicht</guimenu> <guimenuitem>Verkleinern</guimenuitem>"
+
+#. Tag: para
+#: commands.docbook:70
+#, no-c-format
+msgid ""
+"The tool can also be used in two different manners. To zoom out and center "
+"on a point, click on that point. To fit the existing view into a rectangle, "
+"hold and drag the mouse to form that rectangle."
+msgstr ""
+"Mit diesem Menüeintrag können Sie die Zeichnung auf zwei Arten verkleinern. "
+"Klicken Sie auf einen Punkt in der Zeichnung, um sie mit diesem Punkt als "
+"Mittelpunkt zu der verkleinern. Um einen bestimmten Bereich der Zeichnung zu "
+"verkleinern, ziehen Sie mit gedrückter Maustaste ein Rechteck für den neuen "
+"Bereich der Achsenwerte und lassen Sie dann die Maustaste los. "
+
+#. Tag: menuchoice
+#: commands.docbook:75
+#, no-c-format
+msgid ""
+"<guimenu>View</guimenu> <guimenuitem>Fit Widget to Trigonometric Functions</"
+"guimenuitem>"
+msgstr ""
+"<guimenu>Ansicht</guimenu> <guimenuitem>Fläche an trigonometrische "
+"Funktionen anpassen</guimenuitem>"
+
+#. Tag: para
+#: commands.docbook:80
+#, no-c-format
+msgid ""
+"The scale will be adapted to trigonometric functions. This works both for "
+"radians and degrees."
+msgstr ""
+"Die Vergrößerung wird an trigonometrische Funktionen angepasst. Dies "
+"funktioniert für Bogenmaß und Grad."
+
+#. Tag: menuchoice
+#: commands.docbook:84
+#, no-c-format
+msgid "<guimenu>View</guimenu><guimenuitem>Reset View</guimenuitem>"
+msgstr ""
+"<guimenu>Ansicht</guimenu><guimenuitem>Ansicht zurücksetzen</guimenuitem>"
+
+#. Tag: para
+#: commands.docbook:86
+#, no-c-format
+msgid "Resets the view."
+msgstr "Setzt die Ansicht auf die ursprüngliche Vergrößerung zurück."
+
+#. Tag: menuchoice
+#: commands.docbook:92
+#, no-c-format
+msgid "<guimenu>View</guimenu><guimenuitem>Coordinate System...</guimenuitem>"
+msgstr ""
+"<guimenu>Ansicht</guimenu> <guimenuitem>Koordinatensystem ...</guimenuitem>"
+
+#. Tag: para
+#: commands.docbook:94
+#, no-c-format
+msgid ""
+"Displays the <guilabel>Coordinate System</guilabel> dialog box. See <xref "
+"linkend=\"coords-config\"/>."
+msgstr ""
+"Öffnet den Dialog <guilabel>Koordinatensystem</guilabel>. Siehe <xref "
+"linkend=\"coords-config\"/>."
+
+#. Tag: menuchoice
+#: commands.docbook:100
+#, no-c-format
+msgid "<guimenu>View</guimenu> <guimenuitem>Show Sliders</guimenuitem>"
+msgstr ""
+"<guimenu>Ansicht</guimenu> <guimenuitem>Schieberegler anzeigen</guimenuitem>"
+
+#. Tag: para
+#: commands.docbook:104
+#, no-c-format
+msgid ""
+"<action>Toggles</action> the visibility of the slider dialog. In the dialog "
+"move a slider to change the parameter of the function plot connected to it."
+msgstr ""
+"<action>Blendet</action> den Dialog Schieberegler ein oder aus. Verschieben "
+"Sie in diesem Dialog einen Regler, um den Parameter der damit verbundenen "
+"Funktion zu ändern."
+
+#. Tag: para
+#: commands.docbook:106
+#, no-c-format
+msgid ""
+"Enable this on the Function tab and select one of the sliders to change the "
+"parameter value dynamically. The values vary from 0 (left) to 10 (right) by "
+"default, but can be changed in the slider dialog."
+msgstr ""
+"Aktivieren Sie den Schieberegler auf der Karteikarte Funktion und wählen Sie "
+"einen Regler für die dynamische Änderung eines Parameterwertes. In der "
+"Voreinstellung geht der Wertebereich von 0 (links) bis 10 (rechts), das kann "
+"jedoch im Dialog Schieberegler geändert werden."
+
+#. Tag: para
+#: commands.docbook:107
+#, no-c-format
+msgid ""
+"For a small tutorial see <ulink url=\"http://userbase.kde.org/KmPlot/"
+"Using_Sliders\">Using Sliders</ulink>."
+msgstr ""
+"Eine kurze Anleitung finden Sie auf der &kde;-Userbase im Artikel <ulink url="
+"\"http://userbase.kde.org/KmPlot/Using_Sliders\">Schieberegler verwenden</"
+"ulink>."
+
+#. Tag: title
+#: commands.docbook:117
+#, no-c-format
+msgid "The Tools Menu"
+msgstr "Das Menü Extras"
+
+#. Tag: para
+#: commands.docbook:119
+#, no-c-format
+msgid "This menu contains some tools for the functions that can be useful:"
+msgstr "Diese Menü enthält einige nützliche Hilfsmittel für die Funktionen:"
+
+#. Tag: menuchoice
+#: commands.docbook:124
+#, no-c-format
+msgid "<guimenu>Tools</guimenu> <guimenuitem>Calculator</guimenuitem>"
+msgstr "<guimenu>Extras</guimenu> <guimenuitem>Rechner</guimenuitem>"
+
+#. Tag: para
+#: commands.docbook:128
+#, no-c-format
+msgid "Opens the <guilabel>Calculator</guilabel> dialog."
+msgstr "Öffnet den Dialog <guilabel>Rechner</guilabel>."
+
+#. Tag: menuchoice
+#: commands.docbook:133
+#, no-c-format
+msgid "<guimenu>Tools</guimenu> <guimenuitem>Plot Area...</guimenuitem>"
+msgstr ""
+"<guimenu>Extras</guimenu> <guimenuitem>Fläche zeichnen ...</guimenuitem>"
+
+#. Tag: para
+#: commands.docbook:137
+#, no-c-format
+msgid ""
+"Select a graph and the values of the horizontal axis in the new dialog that "
+"appears. Calculates the integral and draws the area between the graph and "
+"the horizontal axis in the range of the selected values in the color of the "
+"graph."
+msgstr ""
+"Wählen Sie im Dialog einen Graphen und die waagerechten Werte für den "
+"Graphen. Dann wird das Integral berechnet und die Fläche zwischen dem "
+"Graphen und der waagerechten Achse im gewählten Intervall wird in der Farbe "
+"des Graphen gezeichnet."
+
+#. Tag: menuchoice
+#: commands.docbook:144
+#, no-c-format
+msgid "<guimenu>Tools</guimenu> <guimenuitem>Find Minimum...</guimenuitem>"
+msgstr ""
+"<guimenu>Extras</guimenu> <guimenuitem>Minimumpunkt suchen...</guimenuitem>"
+
+#. Tag: para
+#: commands.docbook:148
+#, no-c-format
+msgid "Find the minimum value of the graph in a specified range."
+msgstr "Sucht den minimalen Wert des Graphen im vorgegebenen Bereich."
+
+#. Tag: menuchoice
+#: commands.docbook:153
+#, no-c-format
+msgid "<guimenu>Tools</guimenu> <guimenuitem>Find Maximum...</guimenuitem>"
+msgstr ""
+"<guimenu>Extras</guimenu> <guimenuitem>Maximumpunkt suchen ...</guimenuitem>"
+
+#. Tag: para
+#: commands.docbook:157
+#, no-c-format
+msgid "Find the maximum value of the graph in a specified range."
+msgstr "Sucht den maximalen Wert des Graphen im vorgegebenen Bereich."
+
+#. Tag: title
+#: commands.docbook:165
+#, no-c-format
+msgid "The Help Menu"
+msgstr "Das Menü Hilfe"
+
+#. Tag: para
+#: commands.docbook:167
+#, no-c-format
+msgid ""
+"&kmplot; has a standard &kde; <guimenu>Help</guimenu> with one addition:"
+msgstr ""
+"&kmplot; hat die normale &kde;-<guimenu>Hilfe</guimenu> mit einem "
+"zusätzlichen Eintrag:"
+
+#. Tag: menuchoice
+#: commands.docbook:171
+#, no-c-format
+msgid ""
+"<guimenu>Help</guimenu> <guimenuitem>Predefined Math Functions...</"
+"guimenuitem>"
+msgstr ""
+"<guimenu>Hilfe</guimenu> <guimenuitem>Vordefinierte mathematische "
+"Funktionen</guimenuitem>"
+
+#. Tag: para
+#: commands.docbook:175
+#, no-c-format
+msgid ""
+"Opens this handbook with a list of the predefined function names and "
+"constants that &kmplot; knows."
+msgstr ""
+"Öffnet dieses Handbuch mit einer Liste vordefinierter Funktionsnamen und "
+"Konstanten, die &kmplot; kennt."
+
+#~ msgid "The <guimenu>File</guimenu> Menu"
+#~ msgstr "Das Menü Datei"
+
+#~ msgid ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+#~ "</shortcut> <guimenu>File</guimenu> <guimenuitem>New</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+#~ "</shortcut> <guimenu>Datei</guimenu> <guimenuitem>Neu</guimenuitem>"
+
+#~ msgid ""
+#~ "Starts a new Plot by clearing the coordinate system and resetting the "
+#~ "function parser."
+#~ msgstr ""
+#~ "Startet eine neue Zeichnung, das Koordinatensystem wird gelöscht und der "
+#~ "Funktionsanalysierer wird zurückgesetzt."
+
+#~ msgid ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></"
+#~ "keycombo></shortcut> <guimenu>File</guimenu> <guimenuitem>Open...</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></"
+#~ "keycombo></shortcut> <guimenu>Datei</guimenu> <guimenuitem>Öffnen ...</"
+#~ "guimenuitem>"
+
+#~ msgid "Opens an existing document."
+#~ msgstr "Öffnet ein vorhandenes Dokument."
+
+#~ msgid "<guimenu>File</guimenu> <guisubmenu>Open Recent</guisubmenu>"
+#~ msgstr ""
+#~ "<guimenu>Datei</guimenu> <guisubmenu>Zuletzt geöffnete Dateien</"
+#~ "guisubmenu>"
+
+#~ msgid ""
+#~ "<action>Displays a list of recently opened files.</action> Selecting one "
+#~ "from this list plots the functions in the file."
+#~ msgstr ""
+#~ "<action>Zeigt eine Liste der zuletzt geöffneten Dateien.</action> Wählen "
+#~ "Sie eine Datei aus dieser Liste und die Graphen der Funktionen in der "
+#~ "Datei werden gezeichnet."
+
+#~ msgid ""
+#~ "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo></"
+#~ "shortcut> <guimenu>File</guimenu> <guimenuitem>Save</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo></"
+#~ "shortcut> <guimenu>Datei</guimenu> <guimenuitem>Speichern</guimenuitem>"
+
+#~ msgid "Saves the document."
+#~ msgstr "Speichert das Dokument."
+
+#~ msgid "<guimenu>File</guimenu> <guimenuitem>Save As...</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Datei</guimenu> <guimenuitem>Speichern unter ...</guimenuitem>"
+
+#~ msgid "Saves the document under another name."
+#~ msgstr "Speichert das Dokument unter einem anderen Namen."
+
+#~ msgid ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>P</keycap></keycombo> "
+#~ "</shortcut> <guimenu>File</guimenu> <guimenuitem>Print...</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>P</keycap></keycombo> "
+#~ "</shortcut> <guimenu>Datei</guimenu> <guimenuitem>Drucken ...</"
+#~ "guimenuitem>"
+
+#~ msgid "Sends the plot to a printer or file."
+#~ msgstr "Druckt die Zeichnung oder speichert sie in eine Datei."
+
+#~ msgid ""
+#~ "<shortcut><keycombo action=\"simul\"> &Ctrl;<keycap>Q</keycap> </"
+#~ "keycombo></shortcut> <guimenu>File</guimenu> <guimenuitem>Quit</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut><keycombo action=\"simul\"> &Ctrl;<keycap>Q</keycap> </"
+#~ "keycombo></shortcut> <guimenu>Datei</guimenu> <guimenuitem>Beenden</"
+#~ "guimenuitem>"
+
+#~ msgid "<action>Exits</action> &kmplot;."
+#~ msgstr "<action>Beendet</action> &kmplot;."
+
+#~ msgid "The <guimenu>Edit</guimenu> Menu"
+#~ msgstr "Das Menü Bearbeiten"
+
+#~ msgid ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap></keycombo> "
+#~ "</shortcut> <guimenu>Edit</guimenu><guimenuitem>Undo</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap></keycombo> "
+#~ "</shortcut> <guimenu>Bearbeiten</guimenu> <guimenuitem>Rückgängig</"
+#~ "guimenuitem>"
+
+#~ msgid "Undo the last command."
+#~ msgstr "Macht den letzten Befehl rückgängig."
+
+#~ msgid ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;&Shift;<keycap>Z</keycap></"
+#~ "keycombo> </shortcut> <guimenu>Edit</guimenu><guimenuitem>Redo</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut><keycombo action=\"simul\">&Ctrl;&Shift;<keycap>Z</keycap></"
+#~ "keycombo></shortcut> <guimenu>Bearbeiten</"
+#~ "guimenu><guimenuitem>Wiederherstellen</guimenuitem>"
+
+#~ msgid "Redo the last command that was undone."
+#~ msgstr "Stellt die zuletzt rückgängig gemachte Aktion wieder her."
+
+#~ msgid "The <guimenu>View</guimenu> Menu"
+#~ msgstr "Das Menü Ansicht"
+
+#~ msgid "The <guimenu>Tools</guimenu> Menu"
+#~ msgstr "Das Menü Extras"
+
+#~ msgid "The <guimenu>Settings</guimenu> Menu"
+#~ msgstr "Das Menü Einstellungen"
+
+#~ msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Toolbar</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu> <guimenuitem>Werkzeugleiste anzeigen</"
+#~ "guimenuitem> "
+
+#~ msgid ""
+#~ "<action>Toggle on and off the display of the toolbar.</action> The "
+#~ "default is on."
+#~ msgstr ""
+#~ "<action>Blendet die Werkzeugleiste ein bzw. aus.</action> Als Standard "
+#~ "wird die Werkzeugleiste angezeigt."
+
+#~ msgid ""
+#~ "<guimenu>Settings</guimenu> <guimenuitem>Show Statusbar</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu><guimenuitem>Statusleiste anzeigen</"
+#~ "guimenuitem> "
+
+#~ msgid ""
+#~ "<action>Toggle on and off the display of the status bar at the bottom of "
+#~ "the &kmplot; main window.</action> The default is on."
+#~ msgstr ""
+#~ "<action>Blendet die Anzeige der Statusleiste am unteren Rand des "
+#~ "Hauptfensters von &kmplot; ein  bzw. aus.</action> Standardmäßig wird sie "
+#~ "angezeigt."
+
+#~ msgid ""
+#~ "<shortcut> <keycombo>&Ctrl;&Shift;<keycap>F</keycap></keycombo> </"
+#~ "shortcut> <guimenu>Settings</guimenu> <guimenuitem>Full Screen Mode</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo>&Ctrl;&Shift;<keycap>F</keycap></keycombo> </"
+#~ "shortcut> <guimenu>Einstellungen</guimenu> <guimenuitem>Vollbildmodus</"
+#~ "guimenuitem>"
+
+#~ msgid "With this action you toggle the full screen mode."
+#~ msgstr "Schaltet in den Vollbildmodus."
+
+#~ msgid ""
+#~ "<guimenu>Settings</guimenu> <guimenuitem>Configure Shortcuts...</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu> <guimenuitem>Kurzbefehle festlegen ...</"
+#~ "guimenuitem>"
+
+#~ msgid "<action>Personalize the keybindings</action> for &kmplot;."
+#~ msgstr ""
+#~ "<action>Hier können Sie Tastaturbelegungen für &kmplot; anpassen</action>."
+
+#~ msgid ""
+#~ "<guimenu>Settings</guimenu> <guimenuitem>Configure Toolbars...</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu> <guimenuitem>Werkzeugleisten "
+#~ "einrichten ...</guimenuitem>"
+
+#~ msgid "<action>Personalize the toolbars</action> for &kmplot;."
+#~ msgstr "<action>Passen Sie die Werkzeugleisten</action> für &kmplot; an."
+
+#~ msgid ""
+#~ "<guimenu>Settings</guimenu> <guimenuitem>Configure &kmplot;...</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu> <guimenuitem>&kmplot; einrichten ...</"
+#~ "guimenuitem>"
+
+#~ msgid ""
+#~ "<action>Customize</action> &kmplot;. The options available to you are "
+#~ "described in <xref linkend=\"configuration\"/>."
+#~ msgstr ""
+#~ "<action>Passen Sie &kmplot; an</action>. Die möglichen Einstellungen "
+#~ "finden Sie unter <xref linkend=\"configuration\"/>."
+
+#~ msgid "The <guimenu>Help</guimenu> Menu"
+#~ msgstr "Das Menü Hilfe"
+
+#~ msgid "The standard &kde; <guimenu>Help</guimenu> entries are:"
+#~ msgstr "Die Standardeinträge der &kde;-<guimenu>Hilfe</guimenu> sind:"
+
+#~ msgid "&help.menu.documentation;"
+#~ msgstr "&help.menu.documentation;"
+
+#~ msgid "<action>Toggles</action> the visibility of the slider dialog."
+#~ msgstr ""
+#~ "<action>Schaltet</action> die Anzeige des Dialogs für die Schieberegler "
+#~ "an oder aus."
+
+#~ msgid ""
+#~ "<action>Export values to a textfile. </action>Every value in the "
+#~ "parameter list will be written to one line in the file."
+#~ msgstr ""
+#~ "<action>Exportiert Werte in eine Textdatei.</action> Die Wert in der "
+#~ "Parameterliste werden zeilenweise in die Datei geschrieben."
+
+#~ msgid "<guimenu>Edit</guimenu><guimenuitem>Undo</guimenuitem>"
+#~ msgstr "<guimenu>Bearbeiten</guimenu><guimenuitem>Rückgängig</guimenuitem>"
+
+#~ msgid ""
+#~ "<guimenu>Edit</guimenu><guimenuitem>Coordinate System I</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Bearbeiten</guimenu> <guimenuitem>Koordinatensystem 1</"
+#~ "guimenuitem>"
+
+#~ msgid "Show both positive and negative x- and y-values on the grid."
+#~ msgstr "Zeigt sowohl negative x- als auch y-Werte im Gitter."
+
+#~ msgid ""
+#~ "<guimenu>Edit</guimenu><guimenuitem>Coordinate System II</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Bearbeiten</guimenu> <guimenuitem>Koordinatensystem 2</"
+#~ "guimenuitem>"
+
+#~ msgid "Show positive and negative y-values, but positive x-values only"
+#~ msgstr "Zeigt positive und negative y-Werte, aber nur positive x-Werte"
+
+#~ msgid ""
+#~ "<guimenu>Edit</guimenu><guimenuitem>Coordinate System III</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Bearbeiten</guimenu> <guimenuitem>Koordinatensystem 3</"
+#~ "guimenuitem>"
+
+#~ msgid "Show only positive x- and y-values."
+#~ msgstr "Zeigt nur positive x- und y-Werte."
+
+#, fuzzy
+#~ msgid ""
+#~ "Let the user get the y-value from a specific x-value. Type a value or "
+#~ "expression in the text box under \"X:\". In the list below all the "
+#~ "available functions are shown. Press Enter to calculate the function's y-"
+#~ "value. The result will be shown in the y-value box."
+#~ msgstr ""
+#~ "Zeigt Ihnen den y-Wert zu einem vorgegebenen x-Wert. Zurzeit können Sie "
+#~ "dies nur auf Zeichnungsfunktionen anwenden. Geben Sie einen Wert oder "
+#~ "einen Ausdruck im Textfeld unter <quote>X:</quote> ein. In der Liste "
+#~ "darunter werden alle verfügbaren Funktionen angezeigt. Drücken Sie den "
+#~ "Knopf <quote>Berechnen</quote>, um den y-Wert zu berechnen. Das Ergebnis "
+#~ "wird im Feld y-Wert angezeigt."
+
+#~ msgid ""
+#~ "<guimenu>Tools</guimenu> <guimenuitem>Search for Maximum Value...</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Extras</guimenu> <guimenuitem>Nach Maximumwert suchen ...</"
+#~ "guimenuitem>"
+
+#~ msgid "<guimenu>Edit</guimenu><guimenuitem>Colors...</guimenuitem>"
+#~ msgstr "<guimenu>Bearbeiten</guimenu> <guimenuitem>Farben ...</guimenuitem>"
+
+#~ msgid ""
+#~ "Displays the <guilabel>Colors</guilabel> Settings dialog box. See <xref "
+#~ "linkend=\"colors-config\"/>."
+#~ msgstr ""
+#~ "Öffnet den Dialog <guilabel>Farben bearbeiten</guilabel>. Siehe <xref "
+#~ "linkend=\"colors-config\"/>."
+
+#~ msgid "<guimenu>Edit</guimenu><guimenuitem>Scaling...</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Bearbeiten</guimenu> <guimenuitem>Skalierung ...</guimenuitem>"
+
+#~ msgid ""
+#~ "Displays the <guilabel>Scale</guilabel> Settings dialog box. See <xref "
+#~ "linkend=\"scaling-config\"/>."
+#~ msgstr ""
+#~ "Öffnet den Dialog <guilabel>Skalierung bearbeiten</guilabel>. Siehe <xref "
+#~ "linkend=\"scaling-config\"/>."
+
+#~ msgid "The <guimenu>Plot</guimenu> Menu"
+#~ msgstr "Das Menü <guimenu>Zeichnung</guimenu>"
+
+#~ msgid ""
+#~ "<guimenu>Plot</guimenu> <guimenuitem>New Function Plot...</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Zeichnung</guimenu> <guimenuitem>Neue Funktionszeichnung ...</"
+#~ "guimenuitem>"
+
+#~ msgid ""
+#~ "Opens the dialog for creating a new function plot. See <xref linkend="
+#~ "\"using-kmplot\"/>."
+#~ msgstr ""
+#~ "Öffnet den Dialog für eine neue Funktionszeichnung. Siehe <xref linkend="
+#~ "\"using-kmplot\"/>."
+
+#~ msgid ""
+#~ "<guimenu>Plot</guimenu> <guimenuitem>New Parametric Plot...</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Zeichnung</guimenu> <guimenuitem>Neue parametrische Zeichnung ..."
+#~ "</guimenuitem>"
+
+#~ msgid ""
+#~ "Opens the dialog for creating a new parametric plot. See <xref linkend="
+#~ "\"using-kmplot\"/>."
+#~ msgstr ""
+#~ "Öffnet den Dialog für eine neue parametrische Zeichnung. Siehe <xref "
+#~ "linkend=\"using-kmplot\"/>."
+
+#~ msgid "<guimenu>Plot</guimenu> <guimenuitem>New Polar Plot...</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Zeichnung</guimenu> <guimenuitem>Neue polare Zeichnung ...</"
+#~ "guimenuitem>"
+
+#~ msgid ""
+#~ "Opens the dialog for creating a new polar plot. See <xref linkend=\"using-"
+#~ "kmplot\"/>."
+#~ msgstr ""
+#~ "Öffnet den Dialog für eine neue polare Zeichnung. Siehe <xref linkend="
+#~ "\"using-kmplot\"/>."
+
+#~ msgid "<guimenu>Plot</guimenu> <guimenuitem>Edit Plots...</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Zeichnung</guimenu> <guimenuitem>Zeichnungen bearbeiten ...</"
+#~ "guimenuitem>"
+
+#~ msgid ""
+#~ "Displays the functions dialog. There you can add, edit and remove "
+#~ "functions. See <xref linkend=\"using-kmplot\"/>."
+#~ msgstr ""
+#~ "Zeigt den Funktionsdialog. Hier können Sie Funktionen hinzufügen, "
+#~ "bearbeiten und entfernen. Siehe <xref linkend=\"using-kmplot\"/>."
+
+#~ msgid "The <guimenu>Zoom</guimenu> Menu"
+#~ msgstr "Das Menü <guimenu>Zoom</guimenu>"
+
+#~ msgid ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>0</keycap></keycombo> "
+#~ "</shortcut> <guimenu>Zoom</guimenu> <guimenuitem>No Zoom</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>0</keycap></keycombo> "
+#~ "</shortcut> <guimenu>Zoom</guimenu> <guimenuitem>Keine Vergrößerung</"
+#~ "guimenuitem>"
+
+#~ msgid "Disable the zoom-mode."
+#~ msgstr "Schaltet den Zoom-Modus aus."
+
+#~ msgid ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>1</keycap></keycombo> "
+#~ "</shortcut> <guimenu>Zoom</guimenu> <guimenuitem>Zoom Rectangular</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>1</keycap></keycombo> "
+#~ "</shortcut> <guimenu>Zoom</guimenu> <guimenuitem>Rechteck-Vergrößerung</"
+#~ "guimenuitem>"
+
+#~ msgid ""
+#~ "Let the user draw a rectangle. The minimum and maximum values will be set "
+#~ "to the coordinates of the rectangle."
+#~ msgstr ""
+#~ "Sie zeichnen ein Rechteck. Dann werden die minimalen und maximalen Werte "
+#~ "auf die Koordinaten dieses Rechtecks gesetzt."
+
+#~ msgid ""
+#~ "The minimum and maximum values will come closer to each other and the "
+#~ "selected point in the graph will be centered."
+#~ msgstr ""
+#~ "Die minimalen und maximalen Werte werden enger zusammen geschoben und der "
+#~ "ausgewählte Punkt im Graphen wird zum Mittelpunkt der Anzeige."
+
+#~ msgid ""
+#~ "The minimum and maximum values will be more separated from each other and "
+#~ "the selected point in the graph will be centered."
+#~ msgstr ""
+#~ "Die minimalen und maximalen Werte werden weiter voneinander entfernt und "
+#~ "der ausgewählte Punkt im Graphen wird zum Mittelpunkt der Anzeige."
+
+#~ msgid ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>4</keycap></keycombo> "
+#~ "</shortcut> <guimenu>Zoom</guimenu> <guimenuitem>Center Point</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>4</keycap></keycombo> "
+#~ "</shortcut> <guimenu>Zoom</guimenu> <guimenuitem>Zentralpunkt</"
+#~ "guimenuitem>"
+
+#~ msgid "The selected point in the graph will be centered."
+#~ msgstr "Der ausgewählte Punkt im Graphen wird zum Mittelpunkt der Anzeige."

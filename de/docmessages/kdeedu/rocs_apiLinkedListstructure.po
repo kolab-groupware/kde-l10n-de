@@ -1,0 +1,248 @@
+#
+# Burkhard Lück <lueck@hube-lueck.de>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:15+0000\n"
+"PO-Revision-Date: 2013-08-08 09:54+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: apiLinkedListstructure.docbook:2
+#, no-c-format
+msgid "Scripting API for Linked List Backend"
+msgstr "Skript-API für das Backend „Verkettete Liste“"
+
+#. Tag: title
+#: apiLinkedListstructure.docbook:4
+#, no-c-format
+msgid "Linked List Data Structure"
+msgstr "Datenstruktur „Verkettete Liste“"
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:5
+#, no-c-format
+msgid ""
+"A list objects holds the information of a data structure of type "
+"<quote>Linked List</quote>."
+msgstr ""
+"Ein Listenobjekt enthält Informationen über eine Datenstruktur vom Typ "
+"<quote>verkettete Liste</quote>."
+
+#. Tag: title
+#: apiLinkedListstructure.docbook:10 apiLinkedListstructure.docbook:85
+#, no-c-format
+msgid "Properties"
+msgstr "Eigenschaften"
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:13
+#, no-c-format
+msgid "<emphasis>name</emphasis> :"
+msgstr "<emphasis>name</emphasis> :"
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:16
+#, no-c-format
+msgid "The unique name of this data structure."
+msgstr "Der eindeutige Name dieser Datenstruktur."
+
+#. Tag: title
+#: apiLinkedListstructure.docbook:23 apiLinkedListstructure.docbook:127
+#, no-c-format
+msgid "Methods"
+msgstr "Methoden"
+
+#. Tag: term
+#: apiLinkedListstructure.docbook:27
+#, no-c-format
+msgid "head()"
+msgstr "head()"
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:29
+#, no-c-format
+msgid "Return head node of the list."
+msgstr "Gibt den ersten Knoten der Liste zurück."
+
+#. Tag: funcprototype
+#: apiLinkedListstructure.docbook:30
+#, no-c-format
+msgid ""
+"<funcdef>ListNode <function>head</function></funcdef> <paramdef></paramdef>"
+msgstr ""
+"<funcdef>ListNode <function>head</function></funcdef> <paramdef></paramdef>"
+
+#. Tag: term
+#: apiLinkedListstructure.docbook:39
+#, no-c-format
+msgid "setHead(node)"
+msgstr "setHead(node)"
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:41
+#, no-c-format
+msgid "Set the head of the list."
+msgstr "Setzt den ersten Knoten der Liste."
+
+#. Tag: funcprototype
+#: apiLinkedListstructure.docbook:42
+#, no-c-format
+msgid ""
+"<funcdef>void <function>setHead</function></funcdef> <paramdef>ListNode "
+"<parameter><replaceable>node</replaceable></parameter></paramdef>"
+msgstr ""
+"<funcdef>void <function>setHead</function></funcdef> <paramdef>ListNode "
+"<parameter><replaceable>node</replaceable></parameter></paramdef>"
+
+#. Tag: term
+#: apiLinkedListstructure.docbook:51
+#, no-c-format
+msgid "createNode(type)"
+msgstr "createNode(type)"
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:53
+#, no-c-format
+msgid ""
+"Create a new node of the specified type and return the created node. If the "
+"type is not registered, no node is created."
+msgstr ""
+"Erstellt einen neuen Knoten vom angegebenen Typ und gibt den erzeugten "
+"Knoten zurück. Ist der Typ nicht registriert, wird kein Knoten erzeugt."
+
+#. Tag: funcprototype
+#: apiLinkedListstructure.docbook:54
+#, no-c-format
+msgid ""
+"<funcdef>ListNode <function>createNode</function></funcdef> <paramdef>int "
+"<parameter><replaceable>type</replaceable></parameter></paramdef>"
+msgstr ""
+"<funcdef>ListNode <function>createNode</function></funcdef> <paramdef>int "
+"<parameter><replaceable>type</replaceable></parameter></paramdef>"
+
+#. Tag: term
+#: apiLinkedListstructure.docbook:63
+#, no-c-format
+msgid "createNode()"
+msgstr "createNode()"
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:65
+#, no-c-format
+msgid "Create a new node of default type and return the created node."
+msgstr ""
+"Erstellt einen neuen Knoten vom Standardtyp und gibt den erzeugten Knoten "
+"zurück."
+
+#. Tag: funcprototype
+#: apiLinkedListstructure.docbook:66
+#, no-c-format
+msgid ""
+"<funcdef>ListNode <function>createNode</function></funcdef> <paramdef></"
+"paramdef>"
+msgstr ""
+"<funcdef>ListNode <function>createNode</function></funcdef> <paramdef></"
+"paramdef>"
+
+#. Tag: title
+#: apiLinkedListstructure.docbook:79
+#, no-c-format
+msgid "List Node"
+msgstr "Listenkonten"
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:80
+#, no-c-format
+msgid "A node is the data element of a linked list."
+msgstr "Ein Knoten ist ein Datenelement einer verketteten Liste."
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:89
+#, no-c-format
+msgid "<emphasis>width</emphasis> :"
+msgstr "<emphasis>width</emphasis> :"
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:92
+#, no-c-format
+msgid "The size of this data element."
+msgstr "Die Größe dieses Datenelements."
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:96
+#, no-c-format
+msgid "<emphasis>x</emphasis> :"
+msgstr "<emphasis>x</emphasis> :"
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:99
+#, no-c-format
+msgid "The x-coordinate of this data element."
+msgstr "Die X-Koordinate dieses Datenelements."
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:103
+#, no-c-format
+msgid "<emphasis>y</emphasis> :"
+msgstr "<emphasis>y</emphasis> :"
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:106
+#, no-c-format
+msgid "The y-coordinate of this data element."
+msgstr "Die y-Koordinate dieses Datenelements."
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:110
+#, no-c-format
+msgid "<emphasis>id</emphasis> :"
+msgstr "<emphasis>id</emphasis> :"
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:113
+#, no-c-format
+msgid "The unique identifier of this data element."
+msgstr "Der eindeutige Bezeichner für dieses Datenelement."
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:117
+#, no-c-format
+msgid "<emphasis>color</emphasis> :"
+msgstr "<emphasis>color</emphasis> :"
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:120
+#, no-c-format
+msgid "The color of this data element stated as hexadecimal value."
+msgstr "Die Farbe dieses Datenelements als Hexadezimalwert."
+
+#. Tag: term
+#: apiLinkedListstructure.docbook:130
+#, no-c-format
+msgid "pointTo(target)"
+msgstr "pointTo(target)"
+
+#. Tag: para
+#: apiLinkedListstructure.docbook:132
+#, no-c-format
+msgid "Set pointer of this list node to the target node."
+msgstr "Setzt den Zeiger dieses Listenknotens auf den Zielknoten."
+
+#. Tag: funcprototype
+#: apiLinkedListstructure.docbook:133
+#, no-c-format
+msgid ""
+"<funcdef>void <function>pointTo</function></funcdef> <paramdef>ListNode "
+"<parameter><replaceable>target</replaceable></parameter></paramdef>"
+msgstr ""
+"<funcdef>void <function>pointTo</function></funcdef> <paramdef>ListNode "
+"<parameter><replaceable>target</replaceable></parameter></paramdef>"

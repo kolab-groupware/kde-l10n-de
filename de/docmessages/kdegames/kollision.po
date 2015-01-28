@@ -1,0 +1,663 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2009, 2010, 2012, 2013.
+# Linda-Maria Wirthmann <dont.breathe.today@googlemail.de>, 2008.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2009.
+# Frederik Schwarzer <schwarzer@kde.org>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kollision\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:14+0000\n"
+"PO-Revision-Date: 2013-05-13 22:39+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdegames/doc/kollision/index.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 800003\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: index.docbook:12
+#, no-c-format
+msgid "The &kappname; Handbook"
+msgstr "Das Handbuch zu &kappname;"
+
+#. Tag: author
+#: index.docbook:14
+#, no-c-format
+msgid "<firstname>Paolo</firstname> <surname>Capriotti</surname>"
+msgstr "<firstname>Paolo</firstname> <surname>Capriotti</surname>"
+
+#. Tag: email
+#: index.docbook:18
+#, no-c-format
+msgid "p.capriotti@gmail.com"
+msgstr "p.capriotti@gmail.com"
+
+#. Tag: trans_comment
+#: index.docbook:21
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Linda-Maria</"
+"firstname><surname>Wirthmann</surname><affiliation><address><email>dont."
+"breathe.today@googlemail.de</email></address></"
+"affiliation><contrib>Übersetzung</contrib></othercredit><othercredit role="
+"\"translator\"><firstname>Johannes </firstname><surname>Obermayr</"
+"surname><affiliation><address><email>johannesobermayr@gmx.de</email></"
+"address></affiliation><contrib>Übersetzung</contrib></othercredit> "
+
+#. Tag: date
+#: index.docbook:25
+#, no-c-format
+msgid "2013-05-06"
+msgstr "2013-05-06"
+
+#. Tag: releaseinfo
+#: index.docbook:26
+#, no-c-format
+msgid "&kappversion; (&kde; 4.11)"
+msgstr "&kappversion; (&kde; 4.11)"
+
+#. Tag: para
+#: index.docbook:28
+#, no-c-format
+msgid ""
+"This documentation describes the game of &kappname; version &kappversion;"
+msgstr ""
+"Dieses Handbuch beschreibt das Spiel &kappname; in der Version &kappversion;."
+
+#. Tag: keyword
+#: index.docbook:32
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#. Tag: keyword
+#: index.docbook:33
+#, no-c-format
+msgid "kdegames"
+msgstr "KDE-Spiele"
+
+#. Tag: keyword
+#: index.docbook:34
+#, no-c-format
+msgid "game"
+msgstr "Spiel"
+
+#. Tag: keyword
+#: index.docbook:35
+#, no-c-format
+msgid "Kollision"
+msgstr "Kollision"
+
+#. Tag: keyword
+#: index.docbook:36
+#, no-c-format
+msgid "arcade"
+msgstr "Arcade"
+
+#. Tag: keyword
+#: index.docbook:37
+#, no-c-format
+msgid "one player"
+msgstr "ein Spieler"
+
+#. Tag: title
+#: index.docbook:40
+#, no-c-format
+msgid "Introduction"
+msgstr "Einführung"
+
+#. Tag: title
+#: index.docbook:41
+#, no-c-format
+msgid "Gametype:"
+msgstr "Spieltyp:"
+
+#. Tag: para
+#: index.docbook:41
+#, no-c-format
+msgid "Arcade"
+msgstr "Arcade"
+
+#. Tag: title
+#: index.docbook:42
+#, no-c-format
+msgid "Number of possible players:"
+msgstr "Anzahl der Spieler:"
+
+#. Tag: para
+#: index.docbook:42
+#, no-c-format
+msgid "<para>One</para>"
+msgstr "<para>Einer</para>"
+
+#. Tag: para
+#: index.docbook:43
+#, no-c-format
+msgid "A simple ball dodging game"
+msgstr "Ein einfaches Springball-Spiel"
+
+#. Tag: title
+#: index.docbook:48
+#, no-c-format
+msgid "How to play"
+msgstr "Spielanleitung"
+
+#. Tag: title
+#: index.docbook:49
+#, no-c-format
+msgid "Objective:"
+msgstr "Ziel des Spiels:"
+
+#. Tag: para
+#: index.docbook:49
+#, no-c-format
+msgid "Let the blue ball move in the field without touching the red balls."
+msgstr ""
+"Bewegen Sie den blauen Ball im Feld umher, ohne die roten Bälle zu berühren."
+
+#. Tag: para
+#: index.docbook:50
+#, no-c-format
+msgid ""
+"Click on the empty field to start a game: a blue ball immediately replaces "
+"your mouse cursor, and a number of red balls start to fade into the field."
+msgstr ""
+"Klicken Sie auf das leere Spielfeld, um ein Spiel zu starten. Ihr Mauszeiger "
+"wird durch einen blauen Ball ersetzt und mehrere rote Bälle erscheinen "
+"langsam im Feld."
+
+#. Tag: para
+#: index.docbook:53
+#, no-c-format
+msgid ""
+"When the red balls finish materializing, they move at a random speed in a "
+"random direction, and you have to promptly dodge them moving the blue ball "
+"inside the field with your mouse. After some time, other red balls will "
+"appear, fading in as before and then starting to move. Be prepared to avoid "
+"them, too."
+msgstr ""
+"Sobald die roten Bälle vollständig erschienen sind, bewegen sie sich mit "
+"zufälliger Geschwindigkeit in zufällige Richtungen. Sie müssen ihnen "
+"ausweichen, indem Sie den blauen Ball mit ihrem Mauszeiger im Feld "
+"umherbewegen. Nach einiger Zeit erscheinen weitere rote Bälle, die sich "
+"genau wie die vorigen verhalten. Auch ihnen müssen Sie ausweichen."
+
+#. Tag: para
+#: index.docbook:56
+#, no-c-format
+msgid ""
+"You can choose the game difficulty level on the right of the status bar. The "
+"higher the difficulty level, the faster red balls move, and the more balls "
+"will appear on the play field."
+msgstr ""
+"Sie können den Schwierigkeitsgrad rechts in der Statusleiste auswählen. Je "
+"höher der Schwierigkeitsgrad, umso schneller und zahlreicher werden die "
+"Bälle."
+
+#. Tag: title
+#: index.docbook:61
+#, no-c-format
+msgid "<title>Game Rules, Strategies and Tips</title>"
+msgstr "<title>Spielregeln, Spielstrategien und Tipps</title>"
+
+#. Tag: para
+#: index.docbook:62
+#, no-c-format
+msgid "<para>Game Rules, Strategies and Tips</para>"
+msgstr "<para>Spielregeln, Spielstrategien und Tipps</para>"
+
+#. Tag: title
+#: index.docbook:63
+#, no-c-format
+msgid "Game Rules"
+msgstr "Spielregeln"
+
+#. Tag: para
+#: index.docbook:65
+#, no-c-format
+msgid ""
+"Red balls move with constant speed on the game field bouncing off walls "
+"until colliding with another ball, which causes the speed and direction of "
+"both balls to change."
+msgstr ""
+"Die roten Bälle bewegen sich mit gleichbleibender Geschwindigkeit durch das "
+"Spielfeld und prallen von den Wänden ab. Beim Zusammenstoss zweier Bälle "
+"ändert sich deren Geschwindigkeit und Richtung."
+
+#. Tag: para
+#: index.docbook:66
+#, no-c-format
+msgid "The blue ball can be freely moved inside the field with the mouse."
+msgstr ""
+"Der blaue Ball kann mit der Maus frei innerhalb des Feldes bewegt werden."
+
+#. Tag: para
+#: index.docbook:67
+#, no-c-format
+msgid ""
+"The blue ball cannot escape the field. If the cursor is moved out, the ball "
+"stays on the edge, until the cursor returns."
+msgstr ""
+"Der blaue Ball kann das Spielfeld nicht verlassen. Solange sich der "
+"Mauszeiger außerhalb des Feldes befindet, verharrt der Ball am Spielfeldrand."
+
+#. Tag: para
+#: index.docbook:68
+#, no-c-format
+msgid "The score is directly proportional to the time the game has lasted."
+msgstr "Die Punktzahl ist identisch mit der Spielzeit."
+
+#. Tag: para
+#: index.docbook:69
+#, no-c-format
+msgid ""
+"Pausing the game subtracts a (cumulative) 5 seconds penalty from the total "
+"time."
+msgstr ""
+"Das Spiel anzuhalten zieht 5 Sekunden (und steigend) von der Gesamtzeit ab."
+
+#. Tag: title
+#: index.docbook:72
+#, no-c-format
+msgid "Strategies and Tips"
+msgstr "Spielstrategien und Tipps"
+
+#. Tag: para
+#: index.docbook:74
+#, no-c-format
+msgid ""
+"Move the blue ball gently and slowly. Swinging across the field will make "
+"collisions with other balls more likely."
+msgstr ""
+"Bewegen Sie den blauen Ball vorsichtig und langsam. Ihn durch das Spielfeld "
+"zu schleudern macht Kollisionen mit anderen Bällen wahrscheinlicher."
+
+#. Tag: para
+#: index.docbook:75
+#, no-c-format
+msgid ""
+"Moving the cursor out of the field can be used as an elegant trick to come "
+"out of a screwed situation. Use it wisely."
+msgstr ""
+"Den Mauszeiger aus dem Spielfeld heraus zu bewegen kann ein eleganter Trick "
+"sein, um sich aus ausweglosen Situationen zu befreien. Verwenden Sie ihn mit "
+"Bedacht."
+
+#. Tag: para
+#: index.docbook:76
+#, no-c-format
+msgid "Do not pause the game unless absolutely necessary."
+msgstr "Halten Sie das Spiel nicht an, sofern es nicht absolut notwendig ist."
+
+#. Tag: title
+#: index.docbook:82
+#, no-c-format
+msgid "Interface Overview"
+msgstr "Die Benutzeroberfläche"
+
+#. Tag: title
+#: index.docbook:85
+#, no-c-format
+msgid "Menu Items"
+msgstr "Menüeinträge"
+
+#. Tag: menuchoice
+#: index.docbook:90
+#, no-c-format
+msgid "<guimenu>Game</guimenu> <guimenuitem>End game</guimenuitem>"
+msgstr "<guimenu>Spiel</guimenu> <guimenuitem>Spiel beenden</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:93
+#, no-c-format
+msgid "End a game and return to the welcome screen."
+msgstr "Beendet ein Spiel und zeigt den Willkommens-Bildschirm an."
+
+#. Tag: menuchoice
+#: index.docbook:98
+#, no-c-format
+msgid ""
+"<shortcut> <keycap>P</keycap></shortcut> <guimenu>Game</guimenu> "
+"<guimenuitem>Pause</guimenuitem>"
+msgstr ""
+"<shortcut> <keycap>P</keycap> </shortcut> <guimenu>Spiel</guimenu> "
+"<guimenuitem>Pause</guimenuitem> "
+
+#. Tag: action
+#: index.docbook:104
+#, no-c-format
+msgid "Pauses or resumes the game."
+msgstr "Hält das Spiel an bzw. setzt es fort."
+
+#. Tag: menuchoice
+#: index.docbook:109
+#, no-c-format
+msgid ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>H</keycap></keycombo> </"
+"shortcut> <guimenu>Game</guimenu> <guimenuitem>Show High Scores</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>H</keycap></keycombo> </"
+"shortcut> <guimenu>Spiel</guimenu> <guimenuitem>Bestenliste anzeigen</"
+"guimenuitem>"
+
+#. Tag: para
+#: index.docbook:114
+#, no-c-format
+msgid "This will show the best scores for the current level."
+msgstr "Zeigt die Bestenliste für die gegenwärtige Ebene."
+
+#. Tag: menuchoice
+#: index.docbook:118
+#, no-c-format
+msgid ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> </"
+"shortcut> <guimenu>Game</guimenu> <guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> </"
+"shortcut> <guimenu>Spiel</guimenu> <guimenuitem>Beenden</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:123
+#, no-c-format
+msgid "Selecting this item will end your current game, and exit &kappname;."
+msgstr "Diese Auswahl beendet das laufende Spiel und &kappname;."
+
+#. Tag: menuchoice
+#: index.docbook:128
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Play Sounds</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guimenuitem>Klänge wiedergeben</"
+"guimenuitem>"
+
+#. Tag: para
+#: index.docbook:134
+#, no-c-format
+msgid ""
+"<action>Toggle whether sound effects should be played.</action> The default "
+"is off."
+msgstr ""
+"<action>Legt fest, ob Klänge abgespielt werden sollen.</action> Per "
+"Voreinstellung sind die Klänge ausgeschaltet."
+
+#. Tag: menuchoice
+#: index.docbook:141
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guisubmenu>Difficulty</guisubmenu>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guisubmenu>Schwierigkeitsgrad</guisubmenu>"
+
+#. Tag: para
+#: index.docbook:143
+#, no-c-format
+msgid ""
+"Allows you to select a difficulty <guilabel>Easy</guilabel>, "
+"<guilabel>Medium</guilabel>, <guilabel>Hard</guilabel> for the game."
+msgstr ""
+"Ermöglicht die Einstellung des Schwierigkeitsgrads <guilabel>Einfach</"
+"guilabel>, <guilabel>Mittel</guilabel>, <guilabel>Schwierig</guilabel> für "
+"das Spiel."
+
+#. Tag: para
+#: index.docbook:149
+#, no-c-format
+msgid ""
+"Additionally &kappname; has the common &kde; <guimenu>Settings</guimenu> and "
+"<guimenu>Help</guimenu> menu items, for more information read the sections "
+"about the <ulink url=\"help:/fundamentals/ui.html#menus-settings\">Settings "
+"Menu</ulink> and <ulink url=\"help:/fundamentals/ui.html#menus-help\">Help "
+"Menu</ulink> of the &kde; Fundamentals."
+msgstr ""
+"Zusätzlich hat &kappname; die bekannten &kde;-Einträge im Menü "
+"<guimenu>Einstellungen</guimenu> und <guimenu>Hilfe</guimenu>, weitere "
+"Informationen dazu finden Sie in den Abschnitten über die Menüs <ulink url="
+"\"help:/fundamentals/ui.html#menus-settings\">Einstellungen</ulink> und "
+"<ulink url=\"help:/fundamentals/uihtml#menus-help\">Hilfe</ulink> der &kde;-"
+"Grundlagen."
+
+#. Tag: title
+#: index.docbook:159
+#, no-c-format
+msgid "Frequently asked questions"
+msgstr "Häufig gestellte Fragen"
+
+#. Tag: para
+#: index.docbook:162
+#, no-c-format
+msgid "I want to change the way this game looks. Can I?"
+msgstr "Kann ich das Erscheinungsbild des Spiels ändern?"
+
+#. Tag: para
+#: index.docbook:163
+#, no-c-format
+msgid "<para>No.</para>"
+msgstr "<para>Nein.</para>"
+
+#. Tag: para
+#: index.docbook:166
+#, no-c-format
+msgid "Can I use the keyboard to play the game?"
+msgstr "Kann ich mit der Tastatur spielen?"
+
+#. Tag: para
+#: index.docbook:167
+#, no-c-format
+msgid "No. &kappname; can only be played with a mouse."
+msgstr "Nein. &kappname; kann nur mit der Maus gespielt werden."
+
+#. Tag: para
+#: index.docbook:170
+#, no-c-format
+msgid "I cannot figure out what to do here! Are there hints?"
+msgstr "Ich komme im Spiel nicht weiter, gibt es Tipps?"
+
+#. Tag: para
+#: index.docbook:171
+#, no-c-format
+msgid "&kappname; does not have a <quote>Hint</quote> feature."
+msgstr "Nein. In &kappname; gibt es keine Tipps."
+
+#. Tag: para
+#: index.docbook:174
+#, no-c-format
+msgid ""
+"I have to quit the game now, but I am not finished yet. Can I save my "
+"progress?"
+msgstr ""
+"Ich muss das Spiel unterbrechen, kann ich den aktuellen Spielstand speichern?"
+
+#. Tag: para
+#: index.docbook:175
+#, no-c-format
+msgid "You cannot save games in &kappname;."
+msgstr "Sie können in &kappname; keine Spiele speichern."
+
+#. Tag: title
+#: index.docbook:180
+#, no-c-format
+msgid "Credits and License"
+msgstr "Danksagungen und Lizenz"
+
+#. Tag: para
+#: index.docbook:181
+#, no-c-format
+msgid "&kappname;"
+msgstr "&kappname;"
+
+#. Tag: para
+#: index.docbook:184
+#, no-c-format
+msgid ""
+"Copyright 2007-2008 Paolo Capriotti <email>p.capriotti@gmail.com</email>"
+msgstr ""
+"Copyright 2007-2008 Paolo Capriotti <email>p.capriotti@gmail.com</email>"
+
+#. Tag: para
+#: index.docbook:187
+#, no-c-format
+msgid "Copyright 2007-2008 Dmitri Suzdalev <email>dimsuz@gmail.com</email>"
+msgstr "Copyright 2007-2008 Dmitri Suzdalev <email>dimsuz@gmail.com</email>"
+
+#. Tag: para
+#: index.docbook:190
+#, no-c-format
+msgid ""
+"Documentation copyright 2008 Paolo Capriotti <email>p.capriotti@gmail.com</"
+"email>"
+msgstr ""
+"Dokumentation Copyright 2008 Paolo Capriotti <email>p.capriotti@gmail.com</"
+"email>"
+
+#. Tag: trans_comment
+#: index.docbook:194
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Linda-Maria Wirthmann<email>dont.breathe.today@googlemail.de</email></"
+"para> <para>Johannes Obermayr<email>johannesobermayr@gmx.de</email></para>"
+
+#. Tag: chapter
+#: index.docbook:194
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr "&underFDL; &underGPL;"
+
+#. Tag: title
+#: index.docbook:203
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr "Kompilierung und Installation"
+
+#~ msgid "2011-09-17"
+#~ msgstr "2011-09-17"
+
+#~ msgid "The <guimenu>Game</guimenu> Menu"
+#~ msgstr "Das Menü <guimenu>Spiel</guimenu>"
+
+#~ msgid "The <guimenu>Settings</guimenu> Menu"
+#~ msgstr "Das Menü <guimenu>Einstellungen</guimenu>"
+
+#~ msgid "<guimenu>Settings</guimenu><guimenuitem>Show Statusbar</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu><guimenuitem>Statusleiste anzeigen</"
+#~ "guimenuitem>"
+
+#~ msgid ""
+#~ "Toggle the display of the status bar at the bottom of the main window."
+#~ msgstr ""
+#~ "Blendet die Anzeige der Statusleiste am unteren Rand des Hauptfensters "
+#~ "ein bzw. aus."
+
+#~ msgid ""
+#~ "<guimenu>Settings</guimenu> <guimenuitem>Configure Shortcuts...</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu><guimenuitem>Kurzbefehle festlegen ...</"
+#~ "guimenuitem>"
+
+#~ msgid ""
+#~ "<action>Displays a standard &kde; shortcut configuration dialog</action> "
+#~ "to change the keyboard shortcuts for &kappname;."
+#~ msgstr ""
+#~ "<action>Zeigt den &kde;-Standarddialog</action> zur Änderung der "
+#~ "Tastenkürzel für &kappname;."
+
+#~ msgid "The <guimenu>Help</guimenu> Menu"
+#~ msgstr "Das Menü <guimenu>Hilfe</guimenu>"
+
+#~ msgid "&help.menu.documentation;"
+#~ msgstr "&help.menu.documentation;"
+
+#~ msgid "2008-01-20"
+#~ msgstr "2008-01-20"
+
+#~ msgid ""
+#~ "<guimenu>Settings</guimenu> <guimenuitem>Configure Toolbars...</"
+#~ "guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Einstellungen</guimenu> <guimenuitem>Werkzeugleisten "
+#~ "einrichten ...</guimenuitem> "
+
+#~ msgid "Displays the &kde; standard dialog to customize the toolbars."
+#~ msgstr ""
+#~ "Zeigt den &kde;-Standarddialog zur Einrichtung der Werkzeugleisten an."
+
+#~ msgid "Installation"
+#~ msgstr "Installation"
+
+#~ msgid "&install.compile.documentation;"
+#~ msgstr "&install.compile.documentation;"
+
+#~ msgid "Who made this game?"
+#~ msgstr "Wer entwickelte dieses Spiel?"
+
+#~ msgid ""
+#~ "The kdegames team. You can find their website <ulink url=\"http://games."
+#~ "kde.org\">here</ulink>."
+#~ msgstr ""
+#~ "Das KDEGames-Team, dessen Webseite Sie <ulink url=\"http://games.kde.org"
+#~ "\">hier</ulink> finden."
+
+#~ msgid "Where can I get cheatcodes?"
+#~ msgstr "Wo finde ich Cheat-Codes?"
+
+#~ msgid "You cannot get cheatcodes for &kde; games."
+#~ msgstr "Es gibt keine Cheat-Codes für &kde;-Spiele."
+
+#~ msgid "How do I start a new game?"
+#~ msgstr "Wie starte ich ein neues Spiel?"
+
+#~ msgid "Just click on the play field."
+#~ msgstr "Durch einen Mausklick auf das Spielfeld."
+
+#~ msgid "How do I pause the game?"
+#~ msgstr "Wie halte ich ein Spiel an?"
+
+#~ msgid ""
+#~ "To pause &kappname; use the <menuchoice><guimenu>Game</"
+#~ "guimenu><guimenuitem>Pause</guimenuitem></menuchoice> option on the "
+#~ "menubar, or press <keycap>P</keycap>."
+#~ msgstr ""
+#~ "Um &kappname; anzuhalten, wählen Sie <menuchoice><guimenu>Spiel</"
+#~ "guimenu><guimenuitem>Pause</guimenuitem></menuchoice> in der Menüleiste "
+#~ "oder drücken Sie die Taste <keycap>P</keycap>."
+
+#~ msgid "I have made a mistake. Can I undo?"
+#~ msgstr ""
+#~ "Ich habe einen Fehler gemacht. Kann ich einen Spielzug zurücknehmen?"
+
+#~ msgid ""
+#~ "If you make a mistake, you lose the game. Don't feel bad, though, just "
+#~ "start a new game."
+#~ msgstr ""
+#~ "Wenn Sie einen Fehler machen, verlieren Sie. Das ist aber nicht schlimm; "
+#~ "starten Sie einfach ein neues Spiel."
+
+#~ msgid "Where are the highscores?"
+#~ msgstr "Wo finde ich die Bestenliste?"
+
+#~ msgid ""
+#~ "To see the highscores, select <menuchoice><guimenu>Game</"
+#~ "guimenu><guimenuitem>Show High Scores</guimenuitem></menuchoice> in the "
+#~ "menubar."
+#~ msgstr ""
+#~ "Um die Bestenliste anzuzeigen, wählen Sie <menuchoice><guimenu>Spiel</"
+#~ "guimenu><guimenuitem>Bestenliste anzeigen</guimenuitem></menuchoice> in "
+#~ "der Menüleiste."
+
+#~ msgid ""
+#~ "Red balls move on the game field at constant speed, bouncing aginst one "
+#~ "another and the four walls."
+#~ msgstr ""
+#~ "Die roten Bälle bewegen sich auf dem Spielfeld ununterbrochen umher und "
+#~ "stoßen dabei gegeneinander und gegen die vier Wände."
+
+#~ msgid "The <guimenuitem>Help</guimenuitem> Menu"
+#~ msgstr "Das Menü <guimenu>Hilfe</guimenu>"

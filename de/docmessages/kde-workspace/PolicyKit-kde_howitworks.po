@@ -1,0 +1,141 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: PolicyKit-kde_howitworks\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:26+0000\n"
+"PO-Revision-Date: 2009-07-20 21:07+0200\n"
+"Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/extragear/base/doc/PolicyKit-kde/howitworks."
+"docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 922859\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: howitworks.docbook:2
+#, no-c-format
+msgid "How it works"
+msgstr "Funktionsweise"
+
+#. Tag: title
+#: howitworks.docbook:5
+#, no-c-format
+msgid "Overview"
+msgstr "Übersicht"
+
+#. Tag: para
+#: howitworks.docbook:7
+#, no-c-format
+msgid ""
+"PolicyKit has a simple way of working, but it requires some design changes "
+"from the applications that want to use it to request passwords."
+msgstr ""
+"PolicyKit hat eine einfache Arbeitsweise, benötigt aber ein paar "
+"Veränderungen der Anwendung zur Nutzung der Passwortabfrage."
+
+#. Tag: title
+#: howitworks.docbook:13
+#, no-c-format
+msgid "The problem"
+msgstr "Das Problem"
+
+#. Tag: para
+#: howitworks.docbook:15
+#, no-c-format
+msgid ""
+"In GUI applications the common way to gain root privileges is to start it as "
+"root, but there are several security risks in doing this method and it does "
+"not allow a good actions mapping. There is no way to separate actions like "
+"package-install of system-upgrading. All the users who want to use it must "
+"have the root password. Another common approach is using sudo but once you "
+"start an application with sudo you will have all the rights the root user "
+"will have. If for example the GUI application has a dialog to select files "
+"that dialog is running as root which means that the user might be able to "
+"delete any file on his machine or even coping others user files."
+msgstr ""
+"Bei grafischen Anwendungen ist der einfachste Weg zum Erlangen der "
+"<emphasis>root</emphasis>-Rechte, diese als <emphasis>root</emphasis>-"
+"Benutzer aufzurufen. Jedoch entstehen durch diese Methode einige "
+"Sicherheitsrisiken und erlaubt zudem keine gute Zuordnung der Aktionen. Es "
+"gibt keine Möglichkeit, um die Aktionen zu unterteilen (z. B. "
+"Paketinstallation bei der Systemaktualisierung). Alle Benutzer, die diese "
+"verwenden möchten, müssen das <emphasis>root</emphasis>-Passwort eingeben. "
+"Eine weitere geläufige Möglichkeit ist die Verwendung von <command>sudo</"
+"command>. Jedoch werden auch hier alle Rechte des <emphasis>root</emphasis>-"
+"Benutzers gewährt. Wenn beispielsweise eine grafische Anwendung einen Dialog "
+"zur Auswahl von Dateien besitzt und dieser als <emphasis>root</emphasis>-"
+"Benutzer ausgeführt wird, kann der Benutzer möglicherweise alle Dateien auf "
+"diesem System löschen oder auch Zugriff auf die Dateien anderer Benutzer "
+"erlangen."
+
+#. Tag: title
+#: howitworks.docbook:29
+#, no-c-format
+msgid "The solution"
+msgstr "Die Lösung"
+
+#. Tag: para
+#: howitworks.docbook:31
+#, no-c-format
+msgid ""
+"With PolicyKit this problem is solved. The application in question just need "
+"to separate the privileged code into another application, often called "
+"helper (which will not have a GUI), then maps the desired actions into a "
+"<quote>.policy</quote> file. PolicyKit then loads this file and it can now "
+"authenticate applications to use those actions. The use of &DBus; activated "
+"applications is the best if not the only, way of putting an helper "
+"application to run with root privileges."
+msgstr ""
+"Mit PolicyKit ist dieses Problem gelöst. Die betreffende Anwendung muss "
+"lediglich so aufgeteilt werden, damit der Programmkode für die Berechtigung "
+"in einer eigenen Anwendung (sog. Hilfsprogramm ohne grafische Oberfläche) "
+"ausgeführt wird und die gewünschten Aktionen in einer <filename>.policy</"
+"filename>-Datei aufgeführt werden. PolicyKit lädt diese Datei und kann nun "
+"diese Anwendungen für die Nutzung dieser Aktionen berechtigen. Die "
+"Verwendung von &DBus;-Anwendungen ist der beste aber nicht der einzigste Weg "
+"für die Ausführung von Hilfsprogrammen mit <emphasis>root</emphasis>-Rechten."
+
+#. Tag: para
+#: howitworks.docbook:39
+#, no-c-format
+msgid ""
+"With this design the GUI application calls an action of the helper "
+"application through &DBus;, which will start the helper with root "
+"privileges, and informing it which action was requested and which "
+"application has requested it. The helper application now calls the PolicyKit "
+"agent to see if that application can do the given task, the helper should "
+"report if it could do the requested action. In case the helper saw that the "
+"application didn't have enough rights the GUI will then need to ask "
+"PolicyKit to obtain an authorization."
+msgstr ""
+"Auf diese Weise ruft die grafische Oberfläche eine Aktion des Hilfsprogramms "
+"mittels &DBus; auf, welche dann das Hilfsprogramm mit <emphasis>root</"
+"emphasis>-Rechten aufruft und dieses darüber informiert, welche Aktion von "
+"welcher Anwendung aufgerufen wurde. Das Hilfsprogramm ruft nun den PolicyKit-"
+"Agenten auf, um zu sehen, ob die Anwendung die Aufgabe ausführen kann (das "
+"Hilfsprogramm sollte nun berichten, ob die angefragte Aktion ausgeführt "
+"werden kann). In diesem Fall <emphasis>sah</emphasis> das Hilfsprogramm, "
+"dass die Anwendung nicht die benötigten Rechte besaß und die grafische "
+"Oberfläche muss bei PolicyKit für eine Berechtigung anfragen."
+
+#. Tag: para
+#: howitworks.docbook:47
+#, no-c-format
+msgid ""
+"When PolicyKit receives the request to obtain an authorization it issues an "
+"available Agent, which might happen to be &policykit-kde; if available. "
+"After a successful authentication the GUI application needs to call the "
+"helper repeating the same operation again."
+msgstr ""
+"Sobald PolicyKit eine Anfrage für eine Berechtigung erhält, ruft es einen "
+"verfügbaren Agenten auf, der möglicherweise &policykit-kde; ist (falls "
+"verfügbar). Nach einer erfolgreichen Genehmigung muss die grafische "
+"Oberfläche das Hilfsprogramm nochmals mit der gleichen Aktion aufrufen."

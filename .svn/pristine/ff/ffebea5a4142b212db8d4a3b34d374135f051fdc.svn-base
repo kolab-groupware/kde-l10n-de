@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+ <!ENTITY % addindex "IGNORE">
+ <!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<article lang="&language;" id="system-bell">
+<title
+>Signalton</title>
+<articleinfo>
+<authorgroup>
+<author
+><firstname
+>Pat</firstname
+><surname
+>Dowler</surname
+></author>
+<author
+><firstname
+>Matthias</firstname
+><surname
+>Hoelzer</surname
+></author>
+<author
+><firstname
+>Mike</firstname
+><surname
+>McBride</surname
+></author>
+
+<othercredit role="translator"
+><firstname
+>Frank</firstname
+><surname
+>Schütte</surname
+><affiliation
+><address
+><email
+>F.Schuette@t-online.de</email
+></address
+></affiliation
+><contrib
+>Deutsche Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+<date
+>2011-11-28</date>
+<releaseinfo
+>&kde; 4.8</releaseinfo>
+</articleinfo>
+
+<para
+>Der Signalton wird durch den X Server unter Ausnutzung der bereitstehenden Hardware so gut wie möglich produziert. </para>
+
+<para
+>&kde; verwendet normalerweise nicht den Signalton, sondern die eigenen Systemnachrichten, die aus Einträgen in Protokolldateien, Nachrichtenfenstern oder einem eigenen Signalton bestehen können. Sie können diese im &systemsettings;-Modul <guilabel
+>Benachrichtigungen verwalten</guilabel
+> einrichten.</para>
+
+<note
+><para
+>Es ist nicht immer möglich, den Signalton gemäß den Einstellungen zu produzieren. Beispielsweise funktioniert bei PC-Lautsprechern die Lautstärkeeinstellung wegen eingeschränkter Hardwaremöglichkeiten nur teilweise. Der X Server versucht eine geringere Lautstärke durch einen kürzeren Signalton zu simulieren. Wenn Sie feststellen, dass die Einstellungen nicht den gewünschten Effekt bewirken, liegt das am X Server oder an der zur Verfügung stehenden Hardware.</para
+></note>
+
+<para
+>Ist die Einstellung <guilabel
+>Signalton statt Systemnachrichten verwenden</guilabel
+>, dann können folgende Parameter für den Signalton eingestellt werden:</para>
+
+<variablelist>
+
+<varlistentry>
+<term
+><guilabel
+>Lautstärke</guilabel
+> (in Prozent der <quote
+>Maximallautstärke</quote
+>)</term>
+<listitem
+><para
+>Hier können Sie die Lautstärke des System-Signaltons einstellen.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Höhe</guilabel
+> (in Hz)</term>
+<listitem
+><para
+>Hier können Sie die Höhe des System-Signaltons einstellen.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Dauer</guilabel
+> (in Millisekunden)</term>
+<listitem
+><para
+>Hier können Sie die Dauer des System-Signaltons einstellen.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>Zusätzliche Einstellmöglichkeiten für den Signalton finden Sie in den &systemsettings; im Modul <guilabel
+>Zugangshilfen</guilabel
+>.</para>
+
+<para
+>Sie können durch Klicken auf den Knopf <guibutton
+>Test</guibutton
+> die aktuellen Einstellungen ausprobieren.</para>
+
+</article>

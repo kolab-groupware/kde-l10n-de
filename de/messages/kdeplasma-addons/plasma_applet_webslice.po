@@ -1,0 +1,87 @@
+# Frederik Schwarzer <schwarzer@kde.org>, 2009, 2010, 2012.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2009, 2010.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_webslice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-11-05 05:28+0000\n"
+"PO-Revision-Date: 2012-02-04 19:40+0100\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: webslice.cpp:119
+msgctxt "displayed in the widget while loading"
+msgid "<h1>Loading...</h1>"
+msgstr "<h1>Wird geladen ...</h1>"
+
+#: webslice.cpp:134
+msgid ""
+"<p>The Webslice Widget allows you to display a part of a webpage on your "
+"desktop or in a panel. The webslice is fully interactive.</p><p>Specify the "
+"URL of the webpage in the URL field.In the <em>Element to Show</em> field, "
+"fill in a CSS identifier (for example #mybox for elements with the id \"mybox"
+"\").  This is the preferred method as it works best with layout changes on "
+"the webpage.</p><p>Alternatively, you can specify a rectangle on the webpage "
+"to use as slice. Use \"x,y,width,height\" in pixels, for example <em>"
+"\"100,80,300,360\"</em>. This method is a fallback for webpages that do not "
+"provide enough semantic markup for the above mechanism.</p>If both methods "
+"(element and geometry) are used, the element will take precedence."
+msgstr ""
+"<p>Das Miniprogramm Web-Scheibchen ermöglicht es Ihnen, einen Teil einer "
+"Webseite auf Ihrer Arbeitsfläche oder in einer Kontrollleiste anzuzeigen. "
+"Das Web-Scheibchen ist vollständig interaktiv.</p><p>Geben Sie die Adresse "
+"der Webseite in das Adressfeld ein.Geben Sie einen CSS-Bezeichner, (z. B. "
+"„#mybox“ für Elemente mit der ID „mybox“), in das Feld <em>Anzuzeigendes "
+"Element</em> ein. Dies ist die bevorzugte Methode, da sie mit Layout-"
+"Veränderungen der Webseite am besten umgehen kann.</p><p>Alternativ, können "
+"Sie ein Rechteck auf der Webseite auswählen, das Sie als Web-Scheibchen "
+"angezeigt haben möchten. Verwenden Sie „x,y,Breite,Höhe“, zum Beispiel <em>"
+"„100,80,300,360“</em>. Dies ist eine Ausweich-Methode für Webseiten, die "
+"nicht genug Informationen für die obere Methode bereitstellen.</p>Falls "
+"beide Methoden (Element und Maße) verwendet werden, wird die Element-Methode "
+"den Vorzug erhalten."
+
+#: webslice.cpp:143
+msgctxt "informational page"
+msgid "Info"
+msgstr "Info"
+
+#: webslice.cpp:147
+msgctxt "general config page"
+msgid "Webpage"
+msgstr "Webseite"
+
+#. i18n: ectx: property (text), widget (QLabel, urlLabel)
+#: websliceConfig.ui:29
+msgid "URL:"
+msgstr "Adresse:"
+
+#. i18n: ectx: property (text), widget (QLabel, elementLabel)
+#: websliceConfig.ui:50
+msgid "Element to show:"
+msgstr "Anzuzeigendes Element:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: websliceConfig.ui:60
+msgid "Geometry:"
+msgstr "Maße:"
+
+#~ msgid "Configure the System Bar"
+#~ msgstr "Systemleiste einrichten"
+
+#~ msgid "<b>Webslice</b>\n"
+#~ msgstr "<b>Web-Scheibchen</b>\n"
+
+#~ msgid "<b>Setup</b>"
+#~ msgstr "<b>Einrichtung</b>"
+
+#~ msgctxt "general config page"
+#~ msgid "General"
+#~ msgstr "Allgemein"

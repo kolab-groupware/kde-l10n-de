@@ -1,0 +1,784 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2008, 2010, 2011.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kded4_man-kded4.8\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:13+0000\n"
+"PO-Revision-Date: 2011-02-21 22:29+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/KDE/kdelibs/doc/kded4/man-kded4.8.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 881123\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: man-kded4.8.docbook:9
+#, no-c-format
+msgid "&kde; User's Manual"
+msgstr "&kde;-Benutzerhandbuch"
+
+#. Tag: author
+#: man-kded4.8.docbook:10
+#, no-c-format
+msgid "<firstname>David</firstname> <surname>Faure</surname>"
+msgstr "<firstname>David</firstname> <surname>Faure</surname>"
+
+#. Tag: email
+#: man-kded4.8.docbook:14
+#, no-c-format
+msgid "faure@kde.org"
+msgstr "faure@kde.org"
+
+#. Tag: author
+#: man-kded4.8.docbook:18
+#, no-c-format
+msgid "<firstname>Waldo</firstname> <surname>Bastian</surname>"
+msgstr "<firstname>Waldo</firstname> <surname>Bastian</surname>"
+
+#. Tag: email
+#: man-kded4.8.docbook:22
+#, no-c-format
+msgid "bastian@kde.org"
+msgstr "bastian@kde.org"
+
+#. Tag: date
+#: man-kded4.8.docbook:26
+#, no-c-format
+msgid "2010-10-28"
+msgstr "2010-10-28"
+
+#. Tag: releaseinfo
+#: man-kded4.8.docbook:27
+#, no-c-format
+msgid "&kde; 4.5"
+msgstr "&kde; 4.5"
+
+#. Tag: manvolnum
+#: man-kded4.8.docbook:33
+#, no-c-format
+msgid "<manvolnum>8</manvolnum>"
+msgstr "<manvolnum>8</manvolnum>"
+
+#. Tag: refpurpose
+#: man-kded4.8.docbook:38
+#, no-c-format
+msgid "&kde; daemon - triggers Sycoca database updates when needed."
+msgstr ""
+"&kde;-Dienst: Löst Aktualisierungen der Sycoca-Datenbank aus, wenn "
+"erforderlich"
+
+#. Tag: title
+#: man-kded4.8.docbook:42
+#, no-c-format
+msgid "Synopsis"
+msgstr "Synopsis"
+
+#. Tag: cmdsynopsis
+#: man-kded4.8.docbook:44
+#, no-c-format
+msgid ""
+"<command>kded4</command> <arg choice=\"opt\">--help</arg> <arg choice=\"opt"
+"\">Generic options</arg> <arg choice=\"opt\">Qt-options</arg> <arg choice="
+"\"opt\">KDE-options</arg> <arg choice=\"opt\">--check</arg>"
+msgstr ""
+"<command>kded4</command> <arg choice=\"opt\">--help</arg> <arg choice=\"opt"
+"\">Allgemeine Optionen</arg> <arg choice=\"opt\">Qt-Optionen</arg> <arg "
+"choice=\"opt\">KDE-Optionen</arg> <arg choice=\"opt\">--check</arg>"
+
+#. Tag: title
+#: man-kded4.8.docbook:56
+#, no-c-format
+msgid "Description"
+msgstr "Beschreibung"
+
+#. Tag: para
+#: man-kded4.8.docbook:58
+#, no-c-format
+msgid ""
+"<command>kded4</command> is responsible for creating the sycoca file, i.e. "
+"the binary cache of servicetypes, mimetypes, and services for a particular "
+"user."
+msgstr ""
+"<command>kded4</command> ist verantwortlich für die Anlage und Pflege der "
+"sycoca-Datei, also dem binären Zwischenspeicher für Diensttypen, MIME-Typen "
+"und Dienste für jeden einzelnen Benutzer."
+
+#. Tag: para
+#: man-kded4.8.docbook:60
+#, no-c-format
+msgid ""
+"It monitors the directories containing .desktop files. When a file is added/"
+"removed, it waits 5 seconds (in case of a series of updates), and then "
+"launches <command>kbuildsycoca4</command> to update the sycoca."
+msgstr ""
+"Es überwacht die Ordner mit .desktop-Dateien. Wenn eine neue Datei "
+"hinzugefügt oder eine vorhandene entfernt wird, wartet es 5 Sekunden (falls "
+"noch mehr Änderungen vorgenommen werden), und startet anschließend "
+"<command>kbuildsycoca4</command> um die Systemdatenbank mit den "
+"Einstellungen zu aktualisieren."
+
+#. Tag: para
+#: man-kded4.8.docbook:62
+#, no-c-format
+msgid ""
+"It checks newly installed update files, i.e. the *.upd files used to update "
+"configuration files of users when the configuration file formats changes. "
+"<command>kconf_update</command> is launched to do the updates."
+msgstr ""
+"Es überprüft neu installierte Aktualisierungsdateien, &ie; *upd-Dateien, die "
+"verwendet werden, um bei Änderung des Formats von Einrichtungsdateien die "
+"Einrichtungsdateien der Benutzer zu aktualisieren. Das Programm "
+"<command>kconf_update</command> führt diese Aktualisierungen durch."
+
+#. Tag: para
+#: man-kded4.8.docbook:64
+#, no-c-format
+msgid ""
+"When the hostname changes, it will make the necessary changes to the KDE "
+"environment and X-server to allow continued proper operation, launching "
+"<command>kdontchangethehostname</command> to do the changes."
+msgstr ""
+"Wenn der Rechnername geändert wird, ändert es die notwendigen Einstellungen "
+"für die KDE-Arbeitsumgebung und den X-Server, sodass das System auch "
+"weiterhin richtig funktioniert. Für diese Änderungen wird das Programm "
+"<command>kdontchangethehostname</command> gestartet."
+
+#. Tag: para
+#: man-kded4.8.docbook:66
+#, no-c-format
+msgid ""
+"Those tasks are also performed always at kded4 start to ensure that the user "
+"configuration is up to date."
+msgstr ""
+"Diese Aufgaben werden auch bei jedem Start von kded4 durchgeführt, damit ist "
+"sichergestellt, dass die Benutzereinstellungen immer aktuell sind."
+
+#. Tag: para
+#: man-kded4.8.docbook:68
+#, no-c-format
+msgid ""
+"It is also responsible for launching the on-demand kded4 modules and init "
+"enabled kded4 modules like:"
+msgstr ""
+"Es ist dafür verantwortlich, auf Anforderung kded4-Module zu starten und die "
+"Ausführung von aktivierten Modulen zu ermöglichen wie zum Beispiel:"
+
+#. Tag: option
+#: man-kded4.8.docbook:71
+#, no-c-format
+msgid "Konqueror Browser Preloader"
+msgstr "Konqueror-Webbrowser-Schnellstarter"
+
+#. Tag: para
+#: man-kded4.8.docbook:72
+#, no-c-format
+msgid "Reduces Konqueror startup time."
+msgstr "Lädt Konqueror im Voraus und verringert so die Ladezeit."
+
+#. Tag: option
+#: man-kded4.8.docbook:76
+#, no-c-format
+msgid "Directory Watcher"
+msgstr "Ordnerüberwachung"
+
+#. Tag: para
+#: man-kded4.8.docbook:77
+#, no-c-format
+msgid "Monitors directories for changes."
+msgstr "Ordner auf Änderungen überwachen."
+
+#. Tag: option
+#: man-kded4.8.docbook:81
+#, no-c-format
+msgid "Hardware Detection"
+msgstr "Hardwareerkennung"
+
+#. Tag: para
+#: man-kded4.8.docbook:82
+#, no-c-format
+msgid "Provides a user interface for hardware events."
+msgstr "Stellt eine Benutzeroberfläche für Hardwareereignisse zur Verfügung."
+
+#. Tag: option
+#: man-kded4.8.docbook:86
+#, no-c-format
+msgid "SSL Certificate Policy"
+msgstr "SSL-Zertifikat-Regel"
+
+#. Tag: para
+#: man-kded4.8.docbook:87
+#, no-c-format
+msgid "Provides the user configured SSL certificate policy to applications."
+msgstr ""
+"Stellt den Anwendungen benutzerdefinierte SSL-Zertifikat-Regel zur Verfügung."
+
+#. Tag: option
+#: man-kded4.8.docbook:91
+#, no-c-format
+msgid "Network Proxy Configuration"
+msgstr "Netzwerk-Proxy-Einrichtung"
+
+#. Tag: para
+#: man-kded4.8.docbook:92
+#, no-c-format
+msgid "Automatic proxy configuration."
+msgstr "Sucht nach einem Proxy-Server und richtet ihn ein."
+
+#. Tag: option
+#: man-kded4.8.docbook:96
+#, no-c-format
+msgid "Password Caching"
+msgstr "Passwort-Zwischenspeicherung"
+
+#. Tag: para
+#: man-kded4.8.docbook:97
+#, no-c-format
+msgid ""
+"Temporary password caching, for example: so that a webpage with HTTP "
+"authentication doesn't ask for your password for every link and every image "
+"in the page. These passwords are forgotten when exiting KDE (unlike "
+"<command>KWallet</command>)"
+msgstr ""
+"Zwischenspeicherung von Passwörtern, sodass zum Beispiel eine Webseite mit "
+"HTTP-Authentisierung nicht für jede einzelne Verknüpfung oder jedes Bild auf "
+"der Seite immer wieder das Passwort abgefragt wird. Diese Passwörter bleiben "
+"nur innerhalb einer KDE-Sitzung gültig, im Gegensatz zu Passwörtern, die in "
+"<command>KWallet</command> gespeichert werden."
+
+#. Tag: option
+#: man-kded4.8.docbook:103
+#, no-c-format
+msgid "Sound Policy"
+msgstr "Audioregelungen"
+
+#. Tag: para
+#: man-kded4.8.docbook:104
+#, no-c-format
+msgid "Provides the sound system policy to applications."
+msgstr "Stellt den Anwendungen Audiosystemregeln zur Verfügung."
+
+#. Tag: option
+#: man-kded4.8.docbook:108
+#, no-c-format
+msgid "Favicons"
+msgstr "Webseiten-Symbole"
+
+#. Tag: para
+#: man-kded4.8.docbook:109
+#, no-c-format
+msgid "Stores website icons."
+msgstr "Webseitensymbole speichern."
+
+#. Tag: option
+#: man-kded4.8.docbook:113
+#, no-c-format
+msgid "Display Management"
+msgstr "Bildschirmverwaltung"
+
+#. Tag: para
+#: man-kded4.8.docbook:114
+#, no-c-format
+msgid "Manages displays and video outputs."
+msgstr "Bildschirme und Grafikkarten verwalten."
+
+#. Tag: option
+#: man-kded4.8.docbook:118
+#, no-c-format
+msgid "Cookie jar"
+msgstr "Cookie-Behälter"
+
+#. Tag: para
+#: man-kded4.8.docbook:119
+#, no-c-format
+msgid "Stores network cookies."
+msgstr "Netzwerk-Cookies speichern."
+
+#. Tag: option
+#: man-kded4.8.docbook:123
+#, no-c-format
+msgid "Network Watcher"
+msgstr "Netzwerküberwachung"
+
+#. Tag: para
+#: man-kded4.8.docbook:124
+#, no-c-format
+msgid ""
+"Keeps track of the network and updates directory listings of the "
+"<application>network:/</application> KIO slave."
+msgstr ""
+"Überwacht das Netzwerk und aktualisiert Ordnerauflistungen des Protokolls "
+"<application>network:/</application>."
+
+#. Tag: option
+#: man-kded4.8.docbook:128
+#, no-c-format
+msgid "Subversion Module"
+msgstr "Subversion-Unterstützung"
+
+#. Tag: para
+#: man-kded4.8.docbook:129
+#, no-c-format
+msgid "Provides various subversion actions to filemanager and other software."
+msgstr ""
+"Stellt Dateiverwaltungsprogrammen und anderen Anwendungen verschiedene "
+"Aktionen für die Subversion-Quelltextverwaltung zur Verfügung."
+
+#. Tag: option
+#: man-kded4.8.docbook:134
+#, no-c-format
+msgid "Network Status"
+msgstr "Netzwerkstatus"
+
+#. Tag: para
+#: man-kded4.8.docbook:135
+#, no-c-format
+msgid ""
+"Tracks status of network interfaces and provides notifications for "
+"applications using the network."
+msgstr ""
+"Überprüft den Status von Netzwerkschnittstellen und benachrichtigt "
+"Programme, die das Netzwerk verwenden."
+
+#. Tag: option
+#: man-kded4.8.docbook:139
+#, no-c-format
+msgid "Write Daemon"
+msgstr "„Write“-Dienst"
+
+#. Tag: para
+#: man-kded4.8.docbook:140
+#, no-c-format
+msgid ""
+"Watches the messages from local users sent with <replaceable>write</"
+"replaceable>(1) or <replaceable>wall</replaceable>(1)."
+msgstr ""
+"Überwacht Meldungen lokaler Benutzer, die mit <replaceable>write</"
+"replaceable>(1) oder <replaceable>wall</replaceable>(1) gesendet werden."
+
+#. Tag: option
+#: man-kded4.8.docbook:144
+#, no-c-format
+msgid "Notification area watcher"
+msgstr "Überwachung des Benachrichtigungsbereichs"
+
+#. Tag: para
+#: man-kded4.8.docbook:145
+#, no-c-format
+msgid ""
+"Keeps track of applications that want to use the D-Bus based notification "
+"area."
+msgstr ""
+"Überwacht Anwendungen, die über das D-Bus-System den "
+"Benachrichtigungsbereich verwenden möchten."
+
+#. Tag: option
+#: man-kded4.8.docbook:149
+#, no-c-format
+msgid "KMixD"
+msgstr "KMixD"
+
+#. Tag: para
+#: man-kded4.8.docbook:150
+#, no-c-format
+msgid "KMixD Mixer Service"
+msgstr "KMixD-Lautstärkeregelungsdienst"
+
+#. Tag: option
+#: man-kded4.8.docbook:154
+#, no-c-format
+msgid "Systemtray daemon"
+msgstr "Dienst für den Systemabschnitt der Kontrollleiste"
+
+#. Tag: para
+#: man-kded4.8.docbook:155
+#, no-c-format
+msgid ""
+"Keeps track of applications that want to use the D-Bus based system tray."
+msgstr ""
+"Überwacht Anwendungen, die über das D-Bus-System den Systemabschnitt der "
+"Kontrollleiste verwenden möchten."
+
+#. Tag: option
+#: man-kded4.8.docbook:159
+#, no-c-format
+msgid "Keyboard Daemon"
+msgstr "Tastatur-Dienst"
+
+#. Tag: para
+#: man-kded4.8.docbook:160
+#, no-c-format
+msgid "Keeps track of keyboard changes (new keyboard, changed layout)"
+msgstr ""
+"Überwacht Tastatur-Änderungen (neue Tastatur, geändertes Tastaturlayout)"
+
+#. Tag: option
+#: man-kded4.8.docbook:164
+#, no-c-format
+msgid "Remote URL Change Notifier"
+msgstr "Überwachung für Dateien auf Fremdrechnern"
+
+#. Tag: para
+#: man-kded4.8.docbook:166
+#, no-c-format
+msgid "Provides change notifications for network folders"
+msgstr ""
+"Benachrichtigt den Anwender über Änderungen an Dateien in Netzwerkordnern."
+
+#. Tag: option
+#: man-kded4.8.docbook:170
+#, no-c-format
+msgid "Activity Manager"
+msgstr "Aktivitätenverwaltung"
+
+#. Tag: para
+#: man-kded4.8.docbook:171
+#, no-c-format
+msgid "The Nepomuk activities manager backend"
+msgstr "Das Hintergrundprogramm für den Nepomuk-Aktivitäten-Dienst"
+
+#. Tag: option
+#: man-kded4.8.docbook:175
+#, no-c-format
+msgid "Display Management change monitor"
+msgstr "Bildschirmverwaltung (Anzeige ändern)"
+
+#. Tag: para
+#: man-kded4.8.docbook:176
+#, no-c-format
+msgid "Notifies how the display has been rotated (where available)"
+msgstr ""
+"Benachrichtigt, wenn der Bildschirm gedreht wurde, sofern diese Information "
+"verfügbar ist"
+
+#. Tag: option
+#: man-kded4.8.docbook:180
+#, no-c-format
+msgid "Free Space Notifier"
+msgstr "Speicherplatzbenachrichtigung"
+
+#. Tag: para
+#: man-kded4.8.docbook:181
+#, no-c-format
+msgid "Warns when running out of space in your home folder."
+msgstr ""
+"Gibt eine Warnung aus, wenn der freie Speicherplatz in Ihrem Persönlichen "
+"Ordner knapp wird."
+
+#. Tag: option
+#: man-kded4.8.docbook:185
+#, no-c-format
+msgid "Removable Device Automounter"
+msgstr "Automounter für Wechselmedien"
+
+#. Tag: para
+#: man-kded4.8.docbook:186
+#, no-c-format
+msgid "Automatically mounts devices as needed."
+msgstr "Bindet Geräte bei Bedarf automatisch ein."
+
+#. Tag: option
+#: man-kded4.8.docbook:190
+#, no-c-format
+msgid "Nepomuk Search Module"
+msgstr "Nepomuk-Suchmodul"
+
+#. Tag: para
+#: man-kded4.8.docbook:191
+#, no-c-format
+msgid ""
+"Helper module for KIO to ensure automatic updates of Nepomuk search listings."
+msgstr ""
+"Hilfsmodul für KIO zur automatischen Aktualisierung von Nepomuk Suchergebnis-"
+"Listen."
+
+#. Tag: option
+#: man-kded4.8.docbook:195
+#, no-c-format
+msgid "Power Management"
+msgstr "Energieverwaltung"
+
+#. Tag: para
+#: man-kded4.8.docbook:196
+#, no-c-format
+msgid "Battery, Display and CPU power management and notifications."
+msgstr ""
+"Akku-, Anzeige- und Prozessorleistungsverwaltung und -benachrichtigung."
+
+#. Tag: option
+#: man-kded4.8.docbook:200
+#, no-c-format
+msgid "K Remote Control Daemon"
+msgstr "Fernsteuerungsdienst für KDE"
+
+#. Tag: para
+#: man-kded4.8.docbook:201
+#, no-c-format
+msgid "Manages the Remote Control commands received"
+msgstr "Verwaltet die empfangenen Fernbedienungsbefehle"
+
+#. Tag: option
+#: man-kded4.8.docbook:205
+#, no-c-format
+msgid "Status Notifier Manager"
+msgstr "Statusbenachrichtigungs-Verwaltung"
+
+#. Tag: para
+#: man-kded4.8.docbook:206
+#, no-c-format
+msgid "Manages services that provide status notifier user interfaces."
+msgstr ""
+"Verwaltet Dienste, die eine Schnittstelle für Status-Informationen "
+"bereitstellen."
+
+#. Tag: option
+#: man-kded4.8.docbook:210
+#, no-c-format
+msgid "DNS-SD Service Discovery Monitor"
+msgstr "DNS-SD-Dienst-Überwachung"
+
+#. Tag: para
+#: man-kded4.8.docbook:211
+#, no-c-format
+msgid "Monitors the network for DNS-SD services."
+msgstr "Überwacht das Netzwerk nach DNS-SD-Diensten."
+
+#. Tag: option
+#: man-kded4.8.docbook:215
+#, no-c-format
+msgid "Drive Ejector"
+msgstr "Laufwerksauswurf"
+
+#. Tag: para
+#: man-kded4.8.docbook:216
+#, no-c-format
+msgid ""
+"Automatically unmounts and releases drives when their eject button is pushed."
+msgstr ""
+"Automatisches Lösen der Laufwerkseinbindung bei Betätigung des "
+"Auswurfknopfes."
+
+#. Tag: option
+#: man-kded4.8.docbook:220
+#, no-c-format
+msgid "Time zone"
+msgstr "Zeitzone"
+
+#. Tag: para
+#: man-kded4.8.docbook:221
+#, no-c-format
+msgid "Provides access to the system's time zones for applications."
+msgstr "Ermöglicht Anwendungen den Zugriff auf die Systemzeitzonen."
+
+#. Tag: option
+#: man-kded4.8.docbook:225
+#, no-c-format
+msgid "Input Actions"
+msgstr "Tastenkombinationen"
+
+#. Tag: para
+#: man-kded4.8.docbook:226
+#, no-c-format
+msgid "Input Actions service performing configured actions on key presses."
+msgstr ""
+"„Tastenkombinationen“ führt benutzerdefinierte Aktionen auf Tastendruck aus.."
+
+#. Tag: para
+#: man-kded4.8.docbook:233
+#, no-c-format
+msgid ""
+"The init modules can be enabled/disabled using <command>systemsettings</"
+"command>, in System Administration > Startup and Shutdown > Service Manager."
+msgstr ""
+"Diese Startmodule können in den &systemsettings; unter "
+"<menuchoice><guimenu>Systemverwaltung</guimenu> <guisubmenu>starten und "
+"Beenden</guisubmenu> <guimenuitem>Diensteverwaltung</guimenuitem></"
+"menuchoice> ein- und ausgeschaltet werden."
+
+#. Tag: title
+#: man-kded4.8.docbook:237
+#, no-c-format
+msgid "Generic Options"
+msgstr "Allgemeine Optionen"
+
+#. Tag: option
+#: man-kded4.8.docbook:240
+#, no-c-format
+msgid "--author"
+msgstr "--author"
+
+#. Tag: para
+#: man-kded4.8.docbook:242
+#, no-c-format
+msgid "Show author information."
+msgstr "Zeigt Informationen über den Autor."
+
+#. Tag: option
+#: man-kded4.8.docbook:247
+#, no-c-format
+msgid "--help"
+msgstr "--help"
+
+#. Tag: para
+#: man-kded4.8.docbook:249
+#, no-c-format
+msgid "Show help about options."
+msgstr "Hilfe zu verfügbaren Optionen anzeigen."
+
+#. Tag: option
+#: man-kded4.8.docbook:254
+#, no-c-format
+msgid "--help-all"
+msgstr "--help-all"
+
+#. Tag: para
+#: man-kded4.8.docbook:256
+#, no-c-format
+msgid "Show all options."
+msgstr "Alle Optionen anzeigen"
+
+#. Tag: option
+#: man-kded4.8.docbook:261
+#, no-c-format
+msgid "--help-kde"
+msgstr "--help-kde"
+
+#. Tag: para
+#: man-kded4.8.docbook:263
+#, no-c-format
+msgid "Show KDE specific options."
+msgstr "Spezielle Optionen für KDE anzeigen."
+
+#. Tag: option
+#: man-kded4.8.docbook:268
+#, no-c-format
+msgid "--help-qt"
+msgstr "--help-qt"
+
+#. Tag: para
+#: man-kded4.8.docbook:270
+#, no-c-format
+msgid "Show Qt specific options."
+msgstr "Spezielle Optionen für Qt anzeigen."
+
+#. Tag: option
+#: man-kded4.8.docbook:275
+#, no-c-format
+msgid "--license"
+msgstr "--license"
+
+#. Tag: para
+#: man-kded4.8.docbook:277
+#, no-c-format
+msgid "Show license information."
+msgstr "Lizenz-Informationen anzeigen."
+
+#. Tag: term
+#: man-kded4.8.docbook:282
+#, no-c-format
+msgid "<option>-v</option> <option>--version</option>"
+msgstr "<option>-v</option> <option>--version</option>"
+
+#. Tag: para
+#: man-kded4.8.docbook:284
+#, no-c-format
+msgid "Show version information"
+msgstr "Versionsinformation anzeigen"
+
+#. Tag: title
+#: man-kded4.8.docbook:293
+#, no-c-format
+msgid "Application Options"
+msgstr "Anwendungsoptionen"
+
+#. Tag: option
+#: man-kded4.8.docbook:297
+#, no-c-format
+msgid "--check"
+msgstr "--check"
+
+#. Tag: para
+#: man-kded4.8.docbook:299
+#, no-c-format
+msgid "Check Sycoca database only once."
+msgstr "Sycoca-Datenbank nur einmal überprüfen."
+
+#. Tag: title
+#: man-kded4.8.docbook:309
+#, no-c-format
+msgid "Usage"
+msgstr "Benutzung"
+
+#. Tag: para
+#: man-kded4.8.docbook:310
+#, no-c-format
+msgid ""
+"If <command>kded4</command> is called without parameters and is already "
+"running, it shows the message:"
+msgstr ""
+"Falls <command>kded4</command> ohne Parameter aufgerufen wird und bereits "
+"läuft, erscheint die Meldung:"
+
+#. Tag: screen
+#: man-kded4.8.docbook:311
+#, no-c-format
+msgid "KDE Daemon (kded) already running."
+msgstr "KDE Daemon (kded) already running."
+
+#. Tag: para
+#: man-kded4.8.docbook:313
+#, no-c-format
+msgid ""
+"If <command>kded4</command> is called with <command>kded4 --check</command>, "
+"then it updates the &kde; sycoca using <command>kbuildsycoca4</command>."
+msgstr ""
+"Wenn Sie <command>kded4</command> mit dem Befehl <command>kded4 --check</"
+"command> aufrufen, wird die &kde;-sycoca-Datenbank mit dem Programm "
+"<command>kbuildsycoca4</command> aktualisiert."
+
+#. Tag: title
+#: man-kded4.8.docbook:320
+#, no-c-format
+msgid "See Also"
+msgstr "Siehe auch"
+
+#. Tag: para
+#: man-kded4.8.docbook:321
+#, no-c-format
+msgid ""
+"<replaceable>kdeoptions</replaceable>(7), <replaceable>qtoptions</"
+"replaceable>(7), <replaceable>kbuildsycoca4</replaceable>(8)"
+msgstr ""
+"<replaceable>kdeoptions</replaceable>(7), <replaceable>qtoptions</"
+"replaceable>(7), <replaceable>kbuildsycoca4</replaceable>(8)"
+
+#. Tag: title
+#: man-kded4.8.docbook:327
+#, no-c-format
+msgid "Bugs"
+msgstr "Fehler"
+
+#. Tag: para
+#: man-kded4.8.docbook:328
+#, no-c-format
+msgid ""
+"There are probably tons of bugs. Use <ulink url=\"http://bugs.kde.org\">bugs."
+"kde.org</ulink> to report them."
+msgstr ""
+"Berichten Sie Fehler auf <ulink url=\"http://bugs.kde.org\">bugs.kde.org</"
+"ulink>."
+
+#~ msgid "kded4"
+#~ msgstr "kded4"
+
+#~ msgid "0.01.01"
+#~ msgstr "0.01.01"
+
+#~ msgid "<date>2008-11-12</date> <releaseinfo>0.01.01</releaseinfo>"
+#~ msgstr "<date>12.11.2008</date> <releaseinfo>0.01.01</releaseinfo>"

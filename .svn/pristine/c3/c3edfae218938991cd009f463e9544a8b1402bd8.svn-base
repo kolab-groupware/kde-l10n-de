@@ -1,0 +1,964 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2011, 2012, 2013.
+# Frederik Schwarzer <schwarzer@kde.org>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: tellico_menus\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-27 18:27+0000\n"
+"PO-Revision-Date: 2013-04-14 14:36+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-KDE-DocBook-SVN-URL: trunk/playground/office/doc/tellico/menus.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 934822\n"
+"X-KDE-Associated-UI-Catalogs: \n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Tag: title
+#: menus.docbook:2
+#, no-c-format
+msgid "Command Reference"
+msgstr "Befehlsreferenz"
+
+#. Tag: title
+#: menus.docbook:13
+#, no-c-format
+msgid "The Main &appname; Window"
+msgstr "Das Hauptfenster von &appname;"
+
+#. Tag: para
+#: menus.docbook:15
+#, no-c-format
+msgid ""
+"Each menu item is discussed below. When there is a keyboard shortcut that "
+"performs a menu item function, the default shortcut is listed with the menu "
+"item."
+msgstr ""
+"Die einzelnen Menüeinträge sind unten beschrieben. Falls eine "
+"Tastenkombination existiert, die die entsprechende Funktion ausführt, wird "
+"die Standardkombination neben dem Menüeintrag aufgeführt."
+
+#. Tag: title
+#: menus.docbook:20
+#, no-c-format
+msgid "The <guimenu>File</guimenu> Menu"
+msgstr "Das Menü <guimenu>Datei</guimenu>"
+
+#. Tag: menuchoice
+#: menus.docbook:27
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>New</guimenuitem>"
+msgstr "<guimenu>Datei</guimenu> <guimenuitem>Neu</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:34
+#, no-c-format
+msgid ""
+"This command <action>creates a new collection</action>. &appname; supports "
+"<link linkend=\"collection-types\">12 default collection types</link> along "
+"with an empty user-defined custom collection."
+msgstr ""
+"Dieser Befehl <action>erzeugt eine neue Sammlung</action>. In &appname; gibt "
+"es <link linkend=\"collection-types\">12 Standardsammlungen</link>, dazu "
+"noch eine leere benutzerdefinierte Sammlung."
+
+#. Tag: menuchoice
+#: menus.docbook:40
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>O</keycap></keycombo> </shortcut> "
+"<guimenu>File</guimenu> <guimenuitem>Open...</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo></"
+"shortcut><guimenu>Datei</guimenu><guimenuitem>Öffnen ...</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:50
+#, no-c-format
+msgid "This command <action>opens a &appname; file</action>."
+msgstr "Dieser Befehl <action>öffnet eine &appname;-Datei</action>."
+
+#. Tag: menuchoice
+#: menus.docbook:56
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Open Recent</guimenuitem>"
+msgstr ""
+"<guimenu>Datei</guimenu> <guimenuitem>Zuletzt geöffnete Dateien</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:63
+#, no-c-format
+msgid ""
+"This command <action>opens a file</action> from a submenu that contains a "
+"list of recently opened files."
+msgstr ""
+"<action>Öffnet eine Datei</action> aus einem Untermenü mit einer Liste "
+"zuletzt geöffneter Dateien."
+
+#. Tag: menuchoice
+#: menus.docbook:70
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>S</keycap></keycombo> </shortcut> "
+"<guimenu>File</guimenu> <guimenuitem>Save...</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl; <keycap>S</keycap></keycombo></"
+"shortcut> <guimenu>Datei</guimenu> <guimenuitem>Speichern ...</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:80
+#, no-c-format
+msgid ""
+"This command <action>saves the collection</action>. If the file is "
+"<emphasis>Untitled</emphasis> then <guimenuitem>Save...</guimenuitem> is "
+"equivalent to <guimenuitem>Save As</guimenuitem>. It is only enabled when "
+"the collection has been modified."
+msgstr ""
+"Dieser Befehl <action>speichert eine Sammlung</action>. Ist die Datei bisher "
+"noch nicht gespeichert worden und hat daher keinen Namen, entspricht dieser "
+"Befehl <guimenuitem>Speichern unter ...</guimenuitem>. Dieser Menüeintrag "
+"ist nur aktiviert, wenn die Sammlung geändert wurde."
+
+#. Tag: menuchoice
+#: menus.docbook:89
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Save As...</guimenuitem>"
+msgstr ""
+"<guimenu>Datei</guimenu> <guimenuitem>Speichern unter ...</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:96
+#, no-c-format
+msgid "This command <action>saves the collection to a new file</action>."
+msgstr ""
+"Dieser Befehl <action>speichert die Sammlung</action> unter einem anderen "
+"Namen."
+
+#. Tag: menuchoice
+#: menus.docbook:102
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>P</keycap></keycombo> </shortcut> "
+"<guimenu>File</guimenu> <guimenuitem>Print...</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>P</keycap></keycombo></"
+"shortcut> <guimenu>Datei</guimenu><guimenuitem>Drucken ...</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:112
+#, no-c-format
+msgid ""
+"This command <action>prints the collection</action>. Printing options may be "
+"set in the <interface>Configuration Dialog</interface>."
+msgstr ""
+"Dieser Befehl <action>druckt eine Sammlung</action>. Die Einstellungen zum "
+"Druck können im <interface>Einrichtungsdialog</interface> angepasst werden."
+
+#. Tag: menuchoice
+#: menus.docbook:118
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Import</guimenuitem>"
+msgstr "<guimenu>Datei</guimenu> <guimenuitem>Importieren ...</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:125
+#, no-c-format
+msgid ""
+"This command <action>imports data from another file</action>. &appname; can "
+"import data from a number of <link linkend=\"importing\">other formats</"
+"link>."
+msgstr ""
+"Dieser Befehl <action>importiert Daten aus einer anderen Datei</action>. "
+"&appname; kann Daten aus vielen <link linkend=\"importing\">anderen "
+"Formaten</link> importieren."
+
+#. Tag: menuchoice
+#: menus.docbook:131
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Export</guimenuitem>"
+msgstr "<guimenu>Datei</guimenu> <guimenuitem>Exportieren ...</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:138
+#, no-c-format
+msgid ""
+"This command <action>exports the collection to another format</action>. "
+"&appname; can export data to a number of <link linkend=\"exporting\">other "
+"formats</link>."
+msgstr ""
+"Dieser Befehl <action>exportiert Daten in ein anderes Format</action>. "
+"&appname; kann Daten in viele <link linkend=\"exporting\">andere Formate</"
+"link> exportieren."
+
+#. Tag: menuchoice
+#: menus.docbook:144
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>Q</keycap></keycombo> </shortcut> "
+"<guimenu>File</guimenu> <guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> </"
+"shortcut><guimenu>Datei</guimenu><guimenuitem>Beenden</guimenuitem> "
+
+#. Tag: para
+#: menus.docbook:154
+#, no-c-format
+msgid ""
+"This command <action>closes the &appname; window</action>. If the collection "
+"has unsaved changes, you will be prompted to save them before continuing."
+msgstr ""
+"<action>Beendet &appname;</action> und schließt das Hauptfenster. Gibt es "
+"nicht gespeicherte Änderungen in der Sammlung, können Sie die Änderungen vor "
+"dem Beenden speichern oder verwerfen."
+
+#. Tag: title
+#: menus.docbook:164
+#, no-c-format
+msgid "The <guimenu>Edit</guimenu> Menu"
+msgstr "Das Menü <guimenu>Bearbeiten</guimenu>"
+
+#. Tag: menuchoice
+#: menus.docbook:172
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>Z</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap></keycombo></"
+"shortcut> <guimenu>Bearbeiten</guimenu> <guimenuitem>Rückgängig</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:182
+#, no-c-format
+msgid ""
+"This command <action>undoes the previous action</action>. Not all actions "
+"are supported by Undo."
+msgstr ""
+"Dieser Befehl <action>macht die vorherige Aktion wieder rückgängig</action>. "
+"Diese Funktion ist nicht für alle Aktionen verfügbar."
+
+#. Tag: menuchoice
+#: menus.docbook:188
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;&Shift;<keycap>Z</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Redo</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap></keycombo></"
+"shortcut> <guimenu>Bearbeiten</guimenu> <guimenuitem>Wiederherstellen</"
+"guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:198
+#, no-c-format
+msgid "This command <action>reverts a previous Undo</action>."
+msgstr ""
+"Dieser Befehl <action>stellt eine vorher rückgängig gemachte Aktion wieder "
+"her</action>."
+
+#. Tag: menuchoice
+#: menus.docbook:204
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>X</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Cut</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>X</keycap></keycombo></"
+"shortcut> <guimenu>Bearbeiten</guimenu> <guimenuitem>Ausschneiden</"
+"guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:214
+#, no-c-format
+msgid ""
+"This command <action>removes the selected text</action>, if any, and "
+"<action>places a copy of the removed text in the clipboard</action>."
+msgstr ""
+"Dieser Befehl <action>entfernt einen ausgewählten Text</action> und "
+"<action>kopiert diesen Text in die Zwischenablage</action>."
+
+#. Tag: menuchoice
+#: menus.docbook:220
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>C</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Copy</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>C</keycap></keycombo> </"
+"shortcut> <guimenu>Bearbeiten</guimenu><guimenuitem>Kopieren</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:230
+#, no-c-format
+msgid ""
+"This command <action>copies the selected text</action>, if any, to the "
+"clipboard."
+msgstr "<action>Kopiert</action> den markierten Text in die Zwischenablage."
+
+#. Tag: menuchoice
+#: menus.docbook:236
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>V</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Paste</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>V</keycap></keycombo> </"
+"shortcut> <guimenu>Bearbeiten</guimenu><guimenuitem>Einfügen</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:246
+#, no-c-format
+msgid ""
+"This command <action>pastes the text in the clipboard</action>, if any, into "
+"the editor at the cursor position."
+msgstr ""
+"Dieser Befehl <action>fügt einen Text aus der Zwischenablage</action> an der "
+"aktuellen Cursor-Position im Editor ein."
+
+#. Tag: menuchoice
+#: menus.docbook:252
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>A</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Select All</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>A</keycap></keycombo> </"
+"shortcut> <guimenu>Bearbeiten</guimenu><guimenuitem>Alles auswählen</"
+"guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:262
+#, no-c-format
+msgid ""
+"This command <action>selects all the entries</action> in the collection, in "
+"the <interface>Column View</interface>."
+msgstr ""
+"Dieser Befehl <action>wählt alle Einträge</action> einer Sammlung in der "
+"<interface>Spaltenansicht</interface> aus."
+
+#. Tag: menuchoice
+#: menus.docbook:268
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;&Shift;<keycap>A</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Deselect</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\"> &Ctrl;&Shift;<keycap>A</keycap></"
+"keycombo></shortcut><guimenu>Bearbeiten</guimenu> <guimenuitem>Auswahl "
+"aufheben</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:278
+#, no-c-format
+msgid ""
+"This command <action>deselects all the entries</action> in the collection."
+msgstr ""
+"Dieser Befehl <action>hebt die Auswahl der Einträge</action> in der Sammlung "
+"wieder auf."
+
+#. Tag: menuchoice
+#: menus.docbook:284
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>I</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Internet Search...</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo>&Ctrl;<keycap>I</keycap></keycombo> </shortcut> "
+"<guimenu>Bearbeiten</guimenu> <guimenuitem>Internet-Suche ...</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:294
+#, no-c-format
+msgid ""
+"This command <action>opens the <interface>Internet Search Dialog</"
+"interface></action> to search for and import entries from various Internet "
+"sites, including <ulink url=\"http://amazon.com\">Amazon.com</ulink>."
+msgstr ""
+"Dieser Befehl <action>öffnet den Dialog <interface>Internet-Suche</"
+"interface></action>, in dem Sie auf mehreren Internetseiten einschließlich "
+"<ulink url=\"http://amazon.com\">Amazon.com</ulink> nach Einträgen suchen "
+"und diese importieren können."
+
+#. Tag: menuchoice
+#: menus.docbook:300
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>J</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Advanced Filter...</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo>&Ctrl;<keycap>J</keycap></keycombo> </shortcut> "
+"<guimenu>Bearbeiten</guimenu> <guimenuitem>Erweiterter Filter ...</"
+"guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:310
+#, no-c-format
+msgid ""
+"This command <action>opens the <interface>Advanced Filter Dialog</"
+"interface></action>."
+msgstr ""
+"Dieser Befehl <action>öffnet den Dialog <interface>Erweiterter Filter</"
+"interface></action>."
+
+#. Tag: title
+#: menus.docbook:321
+#, no-c-format
+msgid "The <guimenu>Collection</guimenu> Menu"
+msgstr "Das Menü <guimenu>Sammlung</guimenu>"
+
+#. Tag: menuchoice
+#: menus.docbook:328
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>N</keycap></keycombo> </shortcut> "
+"<guimenu>Collection</guimenu> <guimenuitem>New Entry</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> </"
+"shortcut> <guimenu>Sammlung</guimenu> <guimenuitem>Neuer Eintrag ...</"
+"guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:338
+#, no-c-format
+msgid ""
+"This command <action>opens the <interface>Entry Editor</interface> to edit a "
+"new entry</action>."
+msgstr ""
+"Dieser Befehl <action>öffnet den <interface>Eintrags-Editor</interface>, um "
+"einen neuen Eintrag zu erstellen</action>."
+
+#. Tag: menuchoice
+#: menus.docbook:344
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>E</keycap></keycombo> </shortcut> "
+"<guimenu>Collection</guimenu> <guimenuitem>Edit Entry</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>E</keycap></keycombo> </"
+"shortcut> <guimenu>Sammlung</guimenu> <guimenuitem>Eintrag bearbeiten ...</"
+"guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:354
+#, no-c-format
+msgid ""
+"This command <action>opens the <interface>Entry Editor</interface> to edit "
+"the selected entries</action>."
+msgstr ""
+"Dieser Befehl <action>öffnet den <interface>Eintrags-Editor</interface>, um "
+"einen ausgewählten Eintrag zu bearbeiten</action>."
+
+#. Tag: menuchoice
+#: menus.docbook:360
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>Y</keycap></keycombo> </shortcut> "
+"<guimenu>Collection</guimenu> <guimenuitem>Duplicate Entry</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Y</keycap></keycombo> </"
+"shortcut> <guimenu>Sammlung</guimenu> <guimenuitem>Eintrag duplizieren ...</"
+"guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:370
+#, no-c-format
+msgid ""
+"This command <action>copies, or duplicates, the selected entries</action> as "
+"new entries in the collection."
+msgstr ""
+"Dieser Befehl <action>kopiert oder dupliziert den gewählten Eintrag</action> "
+"als neuen Eintrag der Sammlung."
+
+#. Tag: menuchoice
+#: menus.docbook:376
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>D</keycap></keycombo> </shortcut> "
+"<guimenu>Collection</guimenu> <guimenuitem>Delete Entry</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>D</keycap></keycombo> </"
+"shortcut> <guimenu>Sammlung</guimenu><guimenuitem>Eintrag löschen</"
+"guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:386
+#, no-c-format
+msgid "This command <action>deletes the selected entries</action>."
+msgstr "Dieser Befehl <action>löscht den ausgewählten Eintrag</action>."
+
+#. Tag: menuchoice
+#: menus.docbook:392
+#, no-c-format
+msgid "<guimenu>Collection</guimenu> <guimenuitem>Merge Entries</guimenuitem>"
+msgstr ""
+"<guimenu>Sammlung</guimenu> <guimenuitem>Einträge zusammenfügen ...</"
+"guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:404
+#, no-c-format
+msgid "This command <action>merges the selected entries</action>."
+msgstr "Dieser Befehl <action>fügt die ausgewählten Eintrag zusammen</action>."
+
+#. Tag: menuchoice
+#: menus.docbook:410
+#, no-c-format
+msgid "<guimenu>Collection</guimenu> <guimenuitem>Update Entry</guimenuitem>"
+msgstr ""
+"<guimenu>Sammlung</guimenu> <guimenuitem>Einträge aktualisieren</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:417
+#, no-c-format
+msgid ""
+"This menu contains a list of all available data sources, and can be used to "
+"automatically query the source and <action>update the selected entries</"
+"action>."
+msgstr ""
+"Dies Menü enthält eine Liste aller verfügbaren Datenquellen. Damit können "
+"automatisch Quellen abgefragt und die <action>ausgewählten Einträge "
+"aktualisiert werden</action>."
+
+#. Tag: menuchoice
+#: menus.docbook:424
+#, no-c-format
+msgid "<guimenu>Collection</guimenu> <guimenuitem>Check-out</guimenuitem>"
+msgstr "<guimenu>Sammlung</guimenu> <guimenuitem>Ausleihen ...</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:431
+#, no-c-format
+msgid ""
+"This command <action>opens a dialog box for loaning the selected entries.</"
+"action>."
+msgstr ""
+"Dieser Befehl <action>öffnet einen Dialog für die Ausleihe der ausgewählten "
+"Einträge</action>."
+
+#. Tag: menuchoice
+#: menus.docbook:437
+#, no-c-format
+msgid "<guimenu>Collection</guimenu> <guimenuitem>Check-in</guimenuitem>"
+msgstr "<guimenu>Sammlung</guimenu> <guimenuitem>Zurückgeben ...</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:444
+#, no-c-format
+msgid ""
+"This command <action>checks-in any of the selected entries which are "
+"currently on-loan</action>."
+msgstr ""
+"Dieser Befehl <action>verarbeitet die Rückgabe von ausgewählten Einträgen, "
+"die zurzeit ausgeliehen sind</action>."
+
+#. Tag: menuchoice
+#: menus.docbook:450
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>R</keycap></keycombo> </shortcut> "
+"<guimenu>Collection</guimenu> <guimenuitem>Rename Collection</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>R</keycap></keycombo> </"
+"shortcut> <guimenu>Sammlung</guimenu><guimenuitem>Sammlung umbenennen ...</"
+"guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:460
+#, no-c-format
+msgid ""
+"This command <action>opens a dialog box for renaming the collection</action>."
+msgstr ""
+"Dieser Befehl <action>öffnet einen Dialog zum Umbenennen der Sammlung</"
+"action>."
+
+#. Tag: menuchoice
+#: menus.docbook:466
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo>&Ctrl;<keycap>U</keycap></keycombo> </shortcut> "
+"<guimenu>Collection</guimenu> <guimenuitem>Collection Fields...</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>U</keycap></keycombo></"
+"shortcut><guimenu>Sammlung</guimenu><guimenuitem>Datenfelder der Sammlung ..."
+"</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:476
+#, no-c-format
+msgid ""
+"This command <action>opens the <interface>Collection Fields Dialog</"
+"interface></action>."
+msgstr ""
+"Dieser Befehl <action>öffnet den Dialog <interface>Sammlungsfelder</"
+"interface></action>."
+
+#. Tag: menuchoice
+#: menus.docbook:482
+#, no-c-format
+msgid ""
+"<guimenu>Collection</guimenu> <guimenuitem>Generate Reports...</guimenuitem>"
+msgstr ""
+"<guimenu>Sammlung</guimenu> <guimenuitem>Berichte erzeugen ...</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:489
+#, no-c-format
+msgid ""
+"This command <action>opens the <interface>Report Dialog</interface></action> "
+"for generating reports about the collection."
+msgstr ""
+"Dieser Befehl <action>öffnet den Dialog <interface>Sammlungsbericht</"
+"interface></action>, mit dem Sie Berichte über Ihre Sammlung erstellen "
+"können."
+
+#. Tag: menuchoice
+#: menus.docbook:495
+#, no-c-format
+msgid ""
+"<guimenu>Collection</guimenu> <guisubmenu>Bibliography</guisubmenu> "
+"<guimenuitem>Convert to Bibliography</guimenuitem>"
+msgstr ""
+"<guimenu>Sammlung</guimenu> <guisubmenu>Literaturverzeichnis</guisubmenu> "
+"<guimenuitem>In Literaturverzeichnis umwandeln ...</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:503
+#, no-c-format
+msgid ""
+"This command <action>converts a book collection to a bibliography</action> "
+"by adding certain fields necessary for Bibtex export, and it is only enabled "
+"when a book collection is open."
+msgstr ""
+"Dieser Befehl <action>wandelt eine Buch-Sammlung in ein Literaturverzeichnis "
+"um</action>, indem die notwendigen Felder für den Bibtex-Export hinzugefügt "
+"werden. Die Aktion ist nur bei einer geöffneten Buch-Sammlung aktiviert."
+
+#. Tag: menuchoice
+#: menus.docbook:509
+#, no-c-format
+msgid ""
+"<guimenu>Collection</guimenu> <guisubmenu>Bibliography</guisubmenu> "
+"<guimenuitem>String Macros...</guimenuitem>"
+msgstr ""
+"<guimenu>Sammlung</guimenu> <guisubmenu>Literaturverzeichnis</guisubmenu> "
+"<guimenuitem>Zeichenketten-Makros ...</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:517
+#, no-c-format
+msgid ""
+"This command <action>opens a dialog box for editing the Bibtex string "
+"macros</action> in the collection. It is only enabled when editing a "
+"bibliography."
+msgstr ""
+"Dieser Befehl <action>öffnet einen Dialog zur Bearbeitung der Bibtex-"
+"Zeichenketten-Makros</action> in einer Sammlung. Dieser Menüeintrag ist nur "
+"bei der Bearbeitung von Literaturverzeichnissen aktiviert."
+
+#. Tag: menuchoice
+#: menus.docbook:523
+#, no-c-format
+msgid ""
+"<guimenu>Collection</guimenu> <guisubmenu>Bibliography</guisubmenu> "
+"<guimenuitem>Check for Duplicate Keys</guimenuitem>"
+msgstr ""
+"<guimenu>Sammlung</guimenu> <guisubmenu>Literaturverzeichnis</guisubmenu> "
+"<guimenuitem>Nach doppelten Schlüsseln suchen ...</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:531
+#, no-c-format
+msgid ""
+"This command <action>checks for duplicate Bibtex keys</action> and can "
+"filter the collection to show the entries with duplicated keys."
+msgstr ""
+"Dieser Befehl <action>sucht nach doppelten Bibtex-Schlüsseln</action>, "
+"filtert alle doppelten Schlüssel in der Sammlung und zeigt sie an."
+
+#. Tag: menuchoice
+#: menus.docbook:537
+#, no-c-format
+msgid ""
+"<guimenu>Collection</guimenu> <guisubmenu>Bibliography</guisubmenu> "
+"<guimenuitem>Copy Bibtex to Clipboard</guimenuitem>"
+msgstr ""
+"<guimenu>Sammlung</guimenu> <guisubmenu>Literaturverzeichnis</guisubmenu> "
+"<guimenuitem>Bibtex in die Zwischenablage kopieren</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:545
+#, no-c-format
+msgid ""
+"This command <action>copies a Bibtex citation</action> to the clipboard so "
+"that it can pasted in a LaTeX document."
+msgstr ""
+"Dieser Befehl <action>kopiert ein Bibtex-Zitat</action> in die "
+"Zwischenablage, so dass sie in ein LaTeX-Dokument eingefügt werden kann."
+
+#. Tag: menuchoice
+#: menus.docbook:551
+#, no-c-format
+msgid ""
+"<guimenu>Collection</guimenu> <guisubmenu>Bibliography</guisubmenu> "
+"<guimenuitem>Cite Entry in Lyx</guimenuitem>"
+msgstr ""
+"<guimenu>Sammlung</guimenu> <guisubmenu>Literaturverzeichnis</guisubmenu> "
+"<guimenuitem>Zitat-Eintrag in Lyx</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:559
+#, no-c-format
+msgid ""
+"This command <action>sends a citation for the selected entries</action> to "
+"the so-called <emphasis><link linkend=\"hidden-bibtex-options\">lyxpipe</"
+"link></emphasis> for use in <application>LyX</application>, "
+"<application>Kile</application>, or other LaTeX applications. It is only "
+"enabled when editing a bibliography."
+msgstr ""
+"Dieser Befehl <action>sendet ein Zitat für die ausgewählten Einträge</"
+"action> an die sogenannte <emphasis><link linkend=\"hidden-bibtex-options"
+"\">lyxpipe</link></emphasis>, um es in <application>LyX</application>, "
+"<application>Kile</application>, oder anderen LaTeX-Programmen weiter zu "
+"verarbeiten. Dieser Menüeintrag ist nur bei der Bearbeitung von "
+"Literaturverzeichnissen aktiviert."
+
+#. Tag: title
+#: menus.docbook:570
+#, no-c-format
+msgid "The <guimenu>Settings</guimenu> Menu"
+msgstr "Das Menü <guimenu>Einstellungen</guimenu>"
+
+#. Tag: menuchoice
+#: menus.docbook:577
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Toolbars Shown</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guisubmenu>Angezeigte Werkzeugleisten</"
+"guisubmenu>"
+
+#. Tag: para
+#: menus.docbook:584
+#, no-c-format
+msgid "This command <action>toggles the display of the toolbars</action>."
+msgstr ""
+"Dieser Befehl <action>schaltet die Anzeige der Werkzeugleisten an bzw. aus</"
+"action>."
+
+#. Tag: menuchoice
+#: menus.docbook:590
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Statusbar</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guimenuitem>Statusleiste anzeigen</"
+"guimenuitem> "
+
+#. Tag: para
+#: menus.docbook:597
+#, no-c-format
+msgid "This command <action>toggles the display of the statusbar</action>."
+msgstr "Dieser Befehl <action>blendet die Statusleiste ein bzw. aus</action>."
+
+#. Tag: menuchoice
+#: menus.docbook:603
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Group View</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guimenuitem>Gruppenansicht anzeigen</"
+"guimenuitem> "
+
+#. Tag: para
+#: menus.docbook:610
+#, no-c-format
+msgid ""
+"This command <action>toggles the display of the <interface>Group View</"
+"interface></action>."
+msgstr ""
+"Dieser Befehl <action>schaltet die Anzeige der <interface>Gruppenansicht</"
+"interface> an bzw. aus</action>."
+
+#. Tag: menuchoice
+#: menus.docbook:616
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Show Entry Editor</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guimenuitem>Eintrags-Editor anzeigen</"
+"guimenuitem> "
+
+#. Tag: para
+#: menus.docbook:623
+#, no-c-format
+msgid ""
+"This command <action>toggles the display of the <interface>Entry Editor</"
+"interface></action>."
+msgstr ""
+"Dieser Befehl <action>schaltet die Anzeige des <interface>Eintrags-Editors</"
+"interface> an bzw. aus</action>."
+
+#. Tag: menuchoice
+#: menus.docbook:629
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Entry View</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guimenuitem>Eintragsansicht anzeigen</"
+"guimenuitem> "
+
+#. Tag: para
+#: menus.docbook:636
+#, no-c-format
+msgid ""
+"This command <action>toggles the display of the <interface>Entry View</"
+"interface></action>."
+msgstr ""
+"Dieser Befehl <action>schaltet die Anzeige der <interface>Eintragsansicht</"
+"interface> an bzw. aus</action>."
+
+#. Tag: menuchoice
+#: menus.docbook:642
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Group Selection</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guimenuitem>Gruppen-Auswahl</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:649
+#, no-c-format
+msgid ""
+"This command <action>changes the field used to group the entries</action> in "
+"the collection."
+msgstr ""
+"Dieser Befehl <action>ändert das zur Gruppierung der Einträge</action> "
+"benutzte Feld in der Sammlung."
+
+#. Tag: menuchoice
+#: menus.docbook:655
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Configure Shortcuts...</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu><guimenuitem>Kurzbefehle festlegen ...</"
+"guimenuitem> "
+
+#. Tag: para
+#: menus.docbook:662
+#, no-c-format
+msgid ""
+"This command <action>opens the &kde; <interface>Keyboard Shortcut "
+"Configuration Dialog</interface></action>."
+msgstr ""
+"Dieser Befehl <action>öffnet den &kde;-<interface>Einrichtungsdialog</"
+"interface> zum Festlegen der Tastatur-Kurzbefehle</action>."
+
+#. Tag: menuchoice
+#: menus.docbook:668
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Configure Toolbars...</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guimenuitem>Werkzeugleisten einrichten ..."
+"</guimenuitem> "
+
+#. Tag: para
+#: menus.docbook:675
+#, no-c-format
+msgid ""
+"This command <action>opens the &kde; <interface>Toolbar Configuration "
+"Dialog</interface></action>."
+msgstr ""
+"Dieser Befehl <action>öffnet den &kde;-<interface>Einrichtungsdialog</"
+"interface> zur Änderung der Einträge in der Werkzeugleiste</action>."
+
+#. Tag: menuchoice
+#: menus.docbook:681
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Configure &appname;...</guimenuitem>"
+msgstr ""
+"<guimenu>Einstellungen</guimenu> <guimenuitem>&appname; einrichten ...</"
+"guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:688
+#, no-c-format
+msgid ""
+"This command <action>opens the &appname; <interface>Configuration Dialog</"
+"interface></action>."
+msgstr ""
+"Dieser Befehl <action>öffnet den <interface>Einrichtungsdialog</interface> "
+"für &appname;</action>."
+
+#. Tag: title
+#: menus.docbook:698
+#, no-c-format
+msgid "The <guimenu>Help</guimenu> Menu"
+msgstr "Das Menü <guimenu>Hilfe</guimenu>"
+
+#. Tag: para
+#: menus.docbook:700
+#, no-c-format
+msgid ""
+"These are the &kde; standard items for the <guimenu>Help</guimenu> menu:"
+msgstr "Die &kde;-Standardeinträge des Menüs <guimenu>Hilfe</guimenu> lauten:"
+
+#. Tag: sect2
+#: menus.docbook:700
+#, no-c-format
+msgid "&help.menu.documentation;"
+msgstr "&help.menu.documentation;"
+
+#. Tag: para
+#: menus.docbook:704
+#, no-c-format
+msgid ""
+"Apart from the standard &kde; <guimenu>Help</guimenu> menu items described "
+"above &appname; has this additional menu entry:"
+msgstr ""
+"Zusätzlich zu den oben beschriebenen Standardeinträgen des &kde;-Menüs "
+"<guimenu>Hilfe</guimenu> gibt es folgende Menüeinträge:"
+
+#. Tag: menuchoice
+#: menus.docbook:710
+#, no-c-format
+msgid "<guimenu>Help</guimenu> <guimenuitem>Tip of the Day</guimenuitem>"
+msgstr "<guimenu>Hilfe</guimenu> <guimenuitem>Tipp des Tages</guimenuitem>"
+
+#. Tag: para
+#: menus.docbook:717
+#, no-c-format
+msgid ""
+"This command <action>opens the Tip of the Day dialog</action>. You can page "
+"through all the tips by using the buttons on the dialog."
+msgstr ""
+"Dieser Befehl <action>öffnet den Dialog <interface>Tipp des Tages</"
+"interface></action>. Mit den Köpfen im Dialog können Sie alle Tipps "
+"durchblättern."
+
+#, fuzzy
+#~| msgid ""
+#~| "<shortcut> <keycombo><keycap>&Ctrl;</keycap><keycap>Q</keycap></"
+#~| "keycombo> </shortcut> <guimenu>File</guimenu> <guimenuitem>Quit</"
+#~| "guimenuitem>"
+#~ msgid ""
+#~ "<shortcut> <keycombo>&Shift;<keycap>F1</keycap></keycombo> </shortcut> "
+#~ "<guimenu>Help</guimenu> <guimenuitem>What's This?</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+#~ "</shortcut> <guimenu>Datei</guimenu> <guimenuitem>Beenden</guimenuitem>"
+
+#~ msgid "<guimenu>Help</guimenu> <guimenuitem>Report Bug...</guimenuitem>"
+#~ msgstr ""
+#~ "<guimenu>Hilfe</guimenu> <guimenuitem>Probleme oder Wünsche berichten ..."
+#~ "</guimenuitem> "
+
+#~ msgid ""
+#~ "<shortcut> <keycombo><keycap>&Ctrl;</keycap><keycap>&Shift;</"
+#~ "keycap><keycap>Z</keycap></keycombo> </shortcut> <guimenu>Edit</guimenu> "
+#~ "<guimenuitem>Redo</guimenuitem>"
+#~ msgstr ""
+#~ "<shortcut><keycombo action=\"simul\">&Ctrl;&Shift;<keycap>Z</keycap></"
+#~ "keycombo></shortcut> <guimenu>Bearbeiten</guimenu> "
+#~ "<guimenuitem>Wiederherstellen</guimenuitem>"

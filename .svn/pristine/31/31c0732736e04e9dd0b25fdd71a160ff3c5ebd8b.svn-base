@@ -1,0 +1,336 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+ "dtd/kdex.dtd" [
+  <!ENTITY PIM "<acronym
+>PIM</acronym
+>">
+  <!ENTITY kappname "&kontact;">
+  <!ENTITY package "kdepim">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE"
+> 
+]>
+
+<book id="kontact-admin" lang="&language;">
+
+<bookinfo>
+<title
+>Handbuch zu &kappname; für den Systemverwalter</title>
+
+<authorgroup>
+
+<author
+><firstname
+>Allen</firstname
+> <surname
+>Winter</surname
+> <affiliation
+> <address
+><email
+>allen@kdab.net</email
+></address>
+</affiliation>
+</author>
+
+</authorgroup>
+
+<othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date and version information of the documentation
+Don't forget to include this last date and this last revision number, we
+need them for translation coordination !
+Please respect the format of the date (YYYY-MM-DD) and of the version
+(V.MM.LL), it could be used by automation scripts.
+Do NOT change these in the translation. -->
+
+<date
+>2009-06-08</date>
+<releaseinfo
+>0.00.03</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract
+><para
+>Dies ist das Handbuch für den Systemverwalter zu &kappname; dem integrierten Programm für Persönliches Informationsmanagement (&PIM;). Es kombiniert bekannte &kde;-Programme wie &kmail;, &korganizer; und &kaddressbook; unter einer einheitlichen Oberfläche. Damit hat man einfachen Zugriff auf E-Mail, Termine, Adressbuch und weitere &PIM;-Funktionen. </para
+></abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdepim</keyword>
+<keyword
+>PIM</keyword>
+<keyword
+>KMail</keyword>
+<keyword
+>KOrganizer</keyword>
+<keyword
+>KAddressBook</keyword>
+<keyword
+>KNotes</keyword>
+<keyword
+>Akregator</keyword>
+<keyword
+>Verwaltung</keyword>
+<keyword
+>Verwalten</keyword>
+<keyword
+>E-Mail</keyword>
+<keyword
+>Kalender</keyword>
+<keyword
+>Kontakt</keyword>
+<keyword
+>Verwaltung</keyword>
+<keyword
+>Verwalten</keyword>
+<keyword
+>Groupware</keyword>
+<keyword
+>Outlook</keyword>
+<keyword
+>Exchange</keyword>
+<keyword
+>Evolution</keyword>
+</keywordset>
+
+</bookinfo>
+
+<!-- Chapter Introduction -->
+<chapter id="introduction">
+<title
+>Einführung</title>
+
+<para
+>Dies ist das Handbuch für den Systemverwalter zu &kappname; dem integrierten Programm für Persönliches Informationsmanagement (&PIM;). Dies Dokument soll dem Systemverwalter für Groupware bei den typischen Aufgaben helfen, &kappname; so einzurichten, dass es problemlos in verschiedenen Softwareumgebungen läuft. </para>
+
+<para
+>&kappname; kombiniert bekannte &kde;-Programme wie &kmail;, &korganizer; und &kaddressbook; unter einer einheitlichen Oberfläche. Damit hat man einfachen Zugriff auf E-Mail, Termine, Adressbuch und weitere &PIM;-Funktionen. </para>
+</chapter>
+
+<!-- Chapter Compatibility -->
+<chapter id="compat">
+<title
+>Kompatibilitäts-Probleme</title>
+
+<para
+>In diesem Kapitel finden Sie Anleitungen, um die Kommunikation von &kappname; mit anderen Groupware-Lösungen zu verbessern. </para>
+
+<sect1 id="compat-outlook">
+<title
+>Outlook und Exchange</title>
+
+<para
+>Im Einrichtungsdialog von &kappname; finden Sie unter <menuchoice
+><guimenu
+>E-Mail</guimenu
+><guimenuitem
+>Diverses</guimenuitem
+></menuchoice
+> auf der Seite <guilabel
+>Einladungen</guilabel
+> einige Einstellungen, die dem Benutzer bei der Kommunikation mit Microsoft Outlook(tm) in einer Kolab-Umgebung oder in einer Microsoft Exchange(tm)-Umgebung helfen. </para>
+
+
+<variablelist>
+
+<varlistentry>
+<term
+><guilabel
+>Vorspannfelder für „Von“ und „An“ in Antworten auf Terminanfragen einsetzen</guilabel
+></term>
+<listitem>
+<para
+>Schalten Sie diese Option ein, damit Microsoft Outlook(tm) Ihre Antworten auf Einladungen versteht.</para>
+<para
+>Das Programm Microsoft Outlook implementiert den iCalendar-Standard nicht vollständig korrekt. Diese Einstellung schafft Abhilfe für einen solchen Fehler. Falls Benutzer von Outlook Ihre Antworten nicht erhalten, versuchen Sie es mit dieser Einstellung.</para>
+<para
+>Details: Beim Senden einer iCal-Einladung wird mit dieser Einstellung der im Vorspann der Nachricht der gleiche Wert für „Von“ für das Feld „An” benutzt. Außerdem wird im Vorspann für „X-KMail-Identity“ der UIOD des Feldes „An” und der Wert des Feldes „Blindkopie“ gelöscht. Outlook versteht die Antwort nur dann, wenn im Vorspann der Einladung die Felder „Von“ und „An” den gleichen Wert haben</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Einladung im Textteil der E-Mail verschicken</guilabel
+></term>
+<listitem>
+<para
+>Terminanfragen werden normalerweise als Anhang versendet. Diese Einstellung bewirkt, dass Terminanfragen stattdessen im Text der Mail versendet werden. Dies ist bei Terminanfragen und Antworten an Microsoft Outlook nötig. Wenn Sie diese Einstellung verwenden, erhalten Sie keinen erläuternden Text mehr, der von einem E-Mail-Programm gelesen werden kann. Für Personen, deren E-Mail-Programme Terminanfragen nicht verstehen, sehen die entsprechenden Nachrichten sehr merkwürdig aus. Personen, deren E-Mail-Programm Terminanfragen versteht, können weiterhin damit arbeiten.</para>
+<para
+>Details: Beim Senden einer iCal-Einladung wird mit dieser Einstellung der Nachrichtentext aus den Daten des Anhangs erzeugt und im Vorspann als Content-Typ 'text/calendar; method=something; charset="utf-8"'. eingetragen.</para>
+<para
+>Das Automatische Versenden ist auch eingeschaltet, daher ist für das Verfassen der Nachricht keine Aktion durch den Benutzer nötig.</para>
+<note
+><para
+>Verschlüsselung und eigene Signierung sind nicht möglich.</para
+></note>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Exchange-kompatible Namensvergabe für Einladungen</guilabel
+></term>
+<listitem>
+<para
+>Wenn Microsoft Outlook mit einem Microsoft-Exchange-Server eingesetzt wird, versteht es keine standardkonformen Arbeitsgruppen-E-Mails. Wenn diese Einstellung aktiviert ist, werden Einladungen in einem Format gesendet, das von Microsoft Exchange verstanden wird. Die Einladung wird als Anhang mit dem Namen <filename
+>ical.ics</filename
+> gesendet.</para>
+<para
+>Details: Beim Senden einer iCal-Einladung wird mit dieser Einstellung dem Betreff der Nachricht "(Abgelehnt|Vorläufig|Akzeptiert|Delegiert). Betreff" vorangestellt. Die Einladung wird als Anhang mit dem Namen <filename
+>ical.ics</filename
+> versendet.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Outlook-kompatible Kommentare in Antworten auf Einladungen</guilabel
+></term>
+<listitem>
+<para
+>Werden Kommentare mit einer Antwort auf Einladungen verschickt, wird der Kommentar in einem Format gesendet, das von Microsoft Outlook(tm) verstanden wird. Ist diese Option nicht aktiv, werden der Kommentar in der Antwort in Outlook nicht angezeigt.</para>
+<para
+>Details: Kommentare in einer Antwort auf Einladungen werden als iCal-Eigenschaft DESCRIPTION anstatt als iCal-Eigenschaft COMMENT unter Missachtung von RFC2446 verschickt.</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect1>
+</chapter>
+
+<!-- Chapter Behavior -->
+<chapter id="behavior">
+<title
+>Anpassung des Verhaltens</title>
+
+<para
+>In diesem Kapitel finden Sie Anleitungen, um das Verhalten von &kappname; besser an andere Groupware-Programme anzupassen. </para>
+
+<sect1 id="behave-composing">
+<title
+>Nachrichten erstellen</title>
+
+<para
+>Benutzer von Outlook sind daran gewöhnt, mehrere Adressen bei der Eingabe in die Felder „An“, „Kopie“ und „Bindkopie“ durch ein Semikolon (';') oder durch zu einem Komma (',') zu trennen. In der Voreinstellung ist &kappname; nur das Komma als Trennzeichen zwischen Adressen erlaubt. Um hier auch das Semikolon verwenden zu können, ändern Sie in der installierten Datei <filename
+>share/config.kcfg/kmail.kcfg</filename
+> den Wert  <option
+>AllowSemicolonAsAddressSeparator</option
+> von „false“ auf „true“. </para>
+
+</sect1>
+</chapter>
+
+<!-- Chapter RFC Compromises -->
+<chapter id="nonrfc">
+<title
+>RFC-Kompromisse</title>
+
+<para
+>&kappname; wird mit dem Ziel entwickelt, so gut wie möglich mit vielen verschiedenen Groupware-Lösungen zusammen zu arbeiten. Um das zu erreichen, sind manchmal Kompromisse im Hinblick auf verschieden Internet-RFCs nötig, die die Grundlage der von &kappname; verwendeten Bibliotheken bilden.</para>
+
+<note
+><para
+>Die Regelungen von RFCs werden niemals absichtlich missachtet.</para
+></note>
+
+<para
+>Im Folgenden werden die von &kappname; und den zugehörigen Bibliotheken verwendeten RFC-Kompromisse aufgeführt:</para>
+
+<itemizedlist>
+<listitem>
+<para
+>Beim Schreiben von Zeiträumen in iCalendar-Dateien verwendet &kappname; niemals die Dauer in Wochen (&ie; 1*DIGIT "W"), sondern multipliziert die Anzahl der Wochen immer mit dem Faktor sieben und schreibt den Zeitraum als Tage (&ie; 1*DIGIT "D"). </para>
+</listitem>
+</itemizedlist>
+
+</chapter>
+
+<!-- Chapter Common Problems -->
+<chapter id="common-problems">
+<title
+>Häufige Probleme</title>
+<para
+>Dieses Kapitel behandelt häufige Probleme, auf die jeder Systemverwalter wahrscheinlich trifft. </para>
+
+<sect1 id="freebusy">
+<title
+>FreeBusy</title>
+
+<para
+>Häufige Probleme mit FreeBusy... </para>
+
+</sect1>
+</chapter>
+
+<!-- Chapter Credits+License -->
+<chapter id="credits-and-license">
+<title
+>Danksagungen und Lizenz</title>
+
+<para
+>Dokumentation Copyright &copy; 2009 Klarälvdalens Datakonsult AB, a KDAB Group company, <email
+>info@kdab.net</email
+> </para>
+
+<para
+>Übersetzung Burkhard Lück<email
+>lueck@hube-lueck.de</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+<appendix id="installation">
+<title
+>Installation</title>
+
+<sect1 id="getting-kapp">
+<title
+>Bezugsquellen von &kappname;</title>
+&install.intro.documentation; </sect1>
+
+<sect1 id="compilation">
+<title
+>Kompilierung und Installation</title>
+&install.compile.documentation; </sect1>
+
+</appendix>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

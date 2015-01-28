@@ -1,0 +1,196 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+]>
+	
+<article id="kresources" lang="&language;">
+<title
+>&kde;-Ressourcen</title>
+<articleinfo>
+
+<authorgroup>
+<author
+><personname
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+></personname
+></author>
+<othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>2013-08-08</date>
+<releaseinfo
+>&kde; 4.11</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Systemeinstellungen</keyword>
+<keyword
+>Ressourcen</keyword>
+<keyword
+>Adresse</keyword>
+<keyword
+>Erinnerung</keyword>
+<keyword
+>Kalender</keyword>
+<keyword
+>Notizen</keyword>
+</keywordset>
+</articleinfo>
+
+<!-- Revision 39e72ce9
+ID: 39e72ce9fc6760727154edf2c29be8656cebe67d
+ Added by Sergio Luis Martins 12 months ago
+Remove KResources kcm from systemsettings.
+It's deprecated and should not be used, and it's confusing users.
+It can now be used through kcmshell4 though, if you still need it.
+kresources
+  kresources.desktop (diff)
+  -->
+<para
+>Dieses Modul dient zur Einrichtung und Verwaltung der Ressourcen, die von verschiedensten &kde;-Anwendungen genutzt werden. Für den <guilabel
+>Kalender</guilabel
+>, <guilabel
+>Notizen</guilabel
+> und <guilabel
+>Kontakte</guilabel
+> können Ressourcen hinzugefügt, entfernt und geändert werden.</para>
+
+<note
+><para
+>Diese Modul ist nicht mehr in den &systemsettings; enthalten. Es kann nur mit <userinput
+><command
+>kcmshell4</command
+> <option
+>kresources</option
+></userinput
+> in einem Terminal oder in &konsole; gestartet werden. </para
+></note>
+
+<para
+>Wählen Sie einen Ressourcentyp aus dem Auswahlfeld oben im Abschnitt <guilabel
+>Ressourcen</guilabel
+>. Im Listenfeld werden dann Namen und Typen der verfügbaren Ressourcen für Ihre Auswahl angezeigt. Von diesen Ressourcen ist eine als Standard markiert.</para>
+
+<para
+>Mit den Knöpfen rechts vom Listenfeld können Sie Ressourcen hinzufügen, entfernen oder bearbeiten. </para>
+
+<para
+>Weitere Informationen über Ressourcentypen und deren Optionen finden Sie über die Verknüpfungen in der folgenden Tabelle:</para>
+
+<para>
+<table>
+<title
+>Verfügbare Ressourcen</title>
+<tgroup cols="3">
+<tbody>
+<row>
+<entry
+>Ressourcen-Typ</entry>
+<entry
+>Verwendet von</entry>
+<entry
+>Zusätzliche Informationen</entry>
+</row>
+<!--this is a dead link and there's no longer appears to be any relevant documentation in KAlarm
+<row>
+<entry
+>Alarms</entry>
+<entry
+><simplelist type="inline"
+><member
+>&kalarm;</member
+></simplelist
+></entry>
+<entry
+><ulink url="help:/kalarm/index.html#resources"
+>&kalarm; resources</ulink
+></entry>
+</row -->
+<row>
+<entry
+>Kalender</entry>
+<entry
+><simplelist type="inline"
+><member
+>&korganizer;</member
+> 
+<member
+>ICal-Einladungsmodul in &kmail;</member
+></simplelist
+></entry>
+<entry
+><ulink url="help:/korganizer/managing-data.html#managing-resources"
+>&korganizer;-Ressourcen</ulink
+></entry>
+</row>
+<row>
+<entry
+>Notizen</entry>
+<entry
+><simplelist type="inline"
+><member
+>&knotes;</member
+></simplelist
+></entry>
+<entry
+><ulink url="help:/knotes/index.html#using"
+>&knotes;-Ressource</ulink
+></entry>
+</row>
+<row>
+<entry
+>Kontakte</entry>
+<entry
+><simplelist type="inline">
+<member
+>&kaddressbook;</member
+> 
+<member
+>Addressvervollständigung in &kmail;, &knode; und &korganizer;</member>
+<member
+>Einbindung des Adressbuchs in &kopete;</member>
+<member
+>&konversation;</member>
+<member
+>&krunner;-Modul für Kontakte</member>
+<member
+>Konsolen-Kalender</member
+></simplelist
+> </entry>
+<entry
+></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</para>
+
+<para
+>Für jeden Ressourcentyp muss eine Standardressource definiert werden, in der alle Daten gespeichert werden, wenn keine andere Ressource ausgewählt wurde. Möchten Sie die Standardressource ändern, benutzen Sie den Knopf <guibutton
+>Als Standard verwenden</guibutton
+> zur Auswahl. Sie müssen sowohl Lese- wie auch Schreibrechte für die neue Standardressource haben, sonst kann sie nicht ausgewählt werden. </para>
+
+</article>

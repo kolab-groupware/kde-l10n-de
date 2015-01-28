@@ -1,0 +1,564 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       CVS -->
+  <!ENTITY kapplication "<application
+>Blogilo</application
+>">
+  <!ENTITY kappname "&kapplication;">
+  <!ENTITY package "kdepim">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % German "INCLUDE"
+> 
+]>
+<book id="blogilo" lang="&language;">
+
+<bookinfo id="blogiloinfo">
+<title
+>Das Handbuch zu &kapplication;</title>
+
+<authorgroup>
+<author
+>&Mehrdad.Momeny;&Mehrdad.Momeny.mail; </author>
+<othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2009</year>
+<holder
+>&Mehrdad.Momeny;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2013-05-25</date>
+<releaseinfo
+>1.1 (4.11)</releaseinfo>
+
+<abstract>
+<para
+>&kapplication; ist ein Blogging-Programm für &kde;. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Blog</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Einführung</title>
+
+<para
+>&kapplication; ist ein Blogging-Programm.</para>
+<para
+>Ein Blogging-Programm, auch Blogware genannt, ist eine Anwendung, die das Erstellen und die Verwaltung von Blogs erleichtert. Wie auch andere spezialisierte Content-Management-Systeme unterstützen Weblog-Programme das Verfassen, das Bearbeiten und Veröffentlichen von Einträgen für Blogs und Kommentare dazu mit besonderen Funktionen zur Verwaltung von Bildern, Verbreitung der Einträge im Web und die Moderation von Einträgen und Kommentaren.</para>
+</chapter>
+
+<chapter id="using-kapp">
+<title
+>&kapplication; benutzen</title>
+
+<sect1 id="getting-started">
+<title
+>Erste Schritte</title>
+<para
+>Im Hauptfenster von &kapplication; können Sie neue Einträge erstellen, alte Einträge bearbeiten, Einträge vom Server löschen und auch Mediendateien zum Server hochladen. Außerdem können Sie Einträge lokal für eine spätere Überarbeitung speichern.</para>
+<note
+><para
+>Alle diese Funktionen sind verfügbar, wenn mindestens ein Blog in &kapplication; eingerichtet wurde.</para
+></note>
+<para
+>Ohne ein eingerichtetes Blog können Sie nur Einträge schreiben und für den späteren Gebrauch lokal speichern.</para>
+<screenshot>
+<screeninfo
+>Ein Bildschirmfoto von &kapplication;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="mainwindow.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Hauptfenster</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</sect1>
+
+<sect1 id="configuring-a-blog">
+<title
+>Einen Blog einrichten</title>
+<para
+>Blogs werden im <guilabel
+>&kapplication; einrichten</guilabel
+> verwaltet. Diesen Dialog öffnen Sie mit <menuchoice
+><guimenu
+>Einstellungen</guimenu
+><guimenuitem
+>&kapplication; einrichten ...</guimenuitem
+></menuchoice
+> in der Menüleiste. Alternativ können Sie im Menü des Hauptfensters <menuchoice
+> <guimenu
+>Blog</guimenu
+><guimenuitem
+>Blog hinzufügen ...</guimenuitem
+></menuchoice
+> wählen.</para>
+<screenshot>
+<screeninfo
+>Einen neuen Blog hinzufügen - die Karteikarte <guilabel
+>Grundlagen</guilabel
+></screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="add-blog-1.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Einen neuen Blog hinzufügen - die Karteikarte <guilabel
+>Grundlagen</guilabel
+></phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+<para
+>Um einen neuen Blog hinzufügen, tragen Sie die Blogadresse, den Benutzernamen und ein Passwort in die entsprechenden Felder ein und klicken dann den Knopf <guibutton
+>Automatische Konfiguration</guibutton
+> für weit verbreitete Bloggingserver wie zum Beispiel Wordpress. Damit wird das Blog und die Programmierschnittstelle eingerichtet und die Blog-ID heruntergeladen.</para>
+<para
+>Funktioniert die automatische Einrichtung nicht, wechseln Sie zur Karteikarte <guilabel
+>Erweitert</guilabel
+>. Stellen Sie dort die Programmierschnittstelle (API) ein und klicken Sie auf <guibutton
+>ID holen</guibutton
+> oder geben die Blog-ID direkt ein. Auf dieser Karteikarte können Sie außerdem die Standard-Textrichtung zwischen <guilabel
+>Links nach Rechts</guilabel
+> und <guilabel
+>Rechts nach Links</guilabel
+> umschalten.</para>
+<screenshot>
+<screeninfo
+>Einen neuen Blog hinzufügen - die Karteikarte <guilabel
+>Erweitert</guilabel
+></screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="add-blog-2.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Einen neuen Blog hinzufügen - die Karteikarte <guilabel
+>Erweitert</guilabel
+></phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+<para
+>Auf der Karteikarte <guilabel
+>Unterstützte Fähigkeiten</guilabel
+> zeigt &kapplication; alle Fähigkeiten, die von Ihrem Blog unterstützt werden.</para>
+</sect1>
+
+<sect1 id="creating-new-post">
+<title
+>Einen neuen Eintrag erstellen</title>
+<para
+>Um im Hauptfenster einen neuen Eintrag zu erstellen, klicken Sie in der Werkzeugleiste auf den Knopf <guibutton
+>Neuer Eintrag</guibutton
+> oder wählen Sie diese Aktion aus dem Menü <guimenu
+>Eintrag</guimenu
+>. Als Kurzwahl ist dafür die Tastenkombination <keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> eingestellt.</para>
+<para
+>Dann wird eine Karteikarte mit einem neuen leeren Eintrag erstellt. Schreiben Sie nun Ihren Text und senden Sie dann den Eintrag zu Ihrem Blog.</para>
+<para
+>Das Hauptfenster von &kapplication; besteht aus dem Editor zum Schreiben der Einträge und dem Werkzeugkasten.</para>
+
+<sect2
+><title
+>Eintragseditor</title>
+<para
+>Im Editorbereich gibt es das Textfeld <guilabel
+>Titel</guilabel
+>, um hier einen Titel für den Blogeintrag einzugeben. Darunter gibt es drei Karteikarten, in denen der Eintrag auf unterschiedliche Weise bearbeitet werden kann. Auf der ersten Karteikarte finden Sie einen grafischen Editor. Benutzen Sie die Symbole zur Formatierung Ihres Textes, dabei wird der Text während der Bearbeitung so angezeigt, wie er später im Blog aussieht. Die nächste Karteikarte zeigt den Text &HTML; formatiert, der &HTML;-Quelltext des Eintrags kann im Editor mit Syntaxhervorhebung bearbeitet werden. Die dritte Karteikarte schließlich zeigt den Eintrag im Stil Ihres Blogs, hier können Sie das Erscheinungsbild vor dem Hochladen auf den Server noch einmal überprüfen.</para>
+</sect2>
+
+<sect2>
+<title
+>Werkzeugkasten</title>
+<para
+>Im Werkzeugkasten gibt es vier Abschnitte:</para>
+<orderedlist>
+<listitem>
+<para
+>Blog-Einträge
+></para>
+<screenshot>
+<screeninfo
+>Blog-Einträge</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="toolbox-1.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Blog-Einträge</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+<para
+>In diesem Abschnitt können Sie die neuesten Einträge vom Server abholen.</para>
+<para
+>Doppelklicken Sie auf einen Eintrag, um ihn in den Editor zu laden und zu bearbeiten oder wählen Sie einen Eintrag und benutzen Sie den entsprechenden Knopf, um ihn vom Server zu löschen. </para>
+</listitem>
+
+<listitem>
+<para
+>Eintragskategorien</para>
+<screenshot>
+<screeninfo
+>Eintragskategorien</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="toolbox-2.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Eintragskategorien</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+<para
+>In diesem Abschnitt können Sie Kategorien auswählen und Stichwörter für Ihre Einträge vergeben. Stichwörter müssen durch Kommata getrennt werden.</para>
+</listitem>
+
+<listitem>
+<para
+>Eintragsoptionen</para>
+<screenshot>
+<screeninfo
+>Eintragsoptionen</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="toolbox-3.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Eintragsoptionen</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+<para
+>Hier können Einstellungen für den aktuellen Eintrag im Editor gewählt werden, ob zum Beispiel Besucher des Blogs eine <guilabel
+>Rückmeldung</guilabel
+> in Form eines Kommentars zum Eintrag schreiben können. Zusätzlich lässt sich das Datum der Veröffentlichung anpassen oder ein Titel für einen Permalink (nur für Wordpress-Blogs) eintragen.</para>
+</listitem>
+
+<listitem>
+<para
+>Lokale Einträge</para>
+<screenshot>
+<screeninfo
+>Lokale Einträge</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="toolbox-4.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Lokale Einträge</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+<para
+>Doppelklicken Sie im Abschnitt <guilabel
+>Lokale Einträge</guilabel
+> auf einen Eintrag, um ihn in den Editor zu laden und zu bearbeiten oder wählen Sie einen Eintrag und löschen ihn von der Festplatte.</para>
+</listitem>
+
+</orderedlist>
+</sect2>
+
+</sect1>
+
+<sect1 id="uploading">
+<title
+>Eine Mediendatei auf den Server hochladen</title>
+<para
+>Um eine Mediendatei auf den Server hochzuladen, wählen Sie aus dem Menü <menuchoice
+><guimenu
+>Blog</guimenu
+> <guimenuitem
+>Medien hochladen ...</guimenuitem
+></menuchoice
+>. Wählen Sie dann eine Datei von der Festplatte und der Dialog zum Hochladen von Medien wird angezeigt:</para>
+<screenshot>
+<screeninfo
+>Medien hochladen</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="media-upload.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Medien hochladen</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+<para
+>Wenn die Schnittstelle Ihres Blogs das Hochladen von Medien erlaubt, kann für das Hochladen die <guilabel
+>Blog-API</guilabel
+> oder <guilabel
+>FTP</guilabel
+> benutzt werden, ansonsten ist nur die Einstellung <guilabel
+>FTP</guilabel
+> möglich.</para>
+<para
+>Hier wird eine Vorschau der ausgewählten Datei angezeigt und der Name auf dem Server kann eingeben werden. Klicken Sie dann auf den Knopf <guibutton
+>Hochladen</guibutton
+>. </para>
+<para
+>Möchten Sie Medien auf einen &FTP;-Server hochladen, ist der absolute Pfad zum Ordner einzugeben. Außerdem muss eine &URL; eingetragen werden, um die Verknüpfung zur Datei auf dem Server einzutragen.</para>
+</sect1>
+
+</chapter>
+
+<chapter id="menu-reference">
+<title
+>Menüreferenz</title>
+
+<sect1 id="menus">
+<title
+>Menüeinträge</title>
+
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Datei</guimenu
+> <guimenuitem
+>Beenden</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Beendet</action
+> &kapplication;</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Blog</guimenu
+> <guimenuitem
+>Blog hinzufügen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Eine schnelle Möglichkeit, um einen Blog hinzuzufügen.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Blog</guimenu
+> <guimenuitem
+>Medien hochladen ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öffnet den Dialog „Mediendatei hochladen“, um Dateien wie zum Beispiel Bilder auf den Blog- oder &FTP;-Server hochzuladen.</para>
+<note
+><para
+>Nur mit MetaWeblog, MovableType und Wordpress haben Sie die Möglichkeiten, Medien hochzuladen.</para
+></note>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Eintrag</guimenu
+> <guimenuitem
+>Neuer Eintrag</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Erstellt einen neuen leeren Eintrag.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Eintrag</guimenu
+> <guimenuitem
+>Lokal speichern</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Speichert den aktuellen Eintrag lokal ab.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Eintrag</guimenu
+> <guimenuitem
+>Absenden ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Öffnet einen Dialog, um den aktiven Eintrag zum aktuellen Blog zu übermitteln.</para>
+<para
+>In diesem Dialog können Sie auswählen, ob der Eintrag endgültig oder nur als Entwurf hochgeladen werden soll. Außerdem kann eingestellt werden, ob es sich um einen bearbeiteten oder einen neuen Eintrag handelt. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>T</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Werkzeugkasten anzeigen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Zeigt</action
+> den Werkzeugkasten an bzw. blendet ihn aus.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>Zusätzlich hat &kapplication; die bekannten &kde;-Einträge im Menü <guimenu
+>Einstellungen</guimenu
+> und <guimenu
+>Hilfe</guimenu
+>, weitere Informationen dazu finden Sie in den Abschnitten über die Menüs <ulink url="help:/fundamentals/ui.html#menus-settings"
+>Einstellungen</ulink
+> und <ulink url="help:/fundamentals/uihtml#menus-help"
+>Hilfe</ulink
+> der &kde;-Grundlagen. </para>
+
+</sect1>
+
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Danksagungen und Lizenz</title>
+
+<para
+>&kapplication;</para>
+<para
+>Programm Copyright 2008-2009 &Mehrdad.Momeny; &Mehrdad.Momeny.mail; and &Golnaz.Nilieh; &Golnaz.Nilieh.mail; </para>
+<para
+>Dokumentation Copyright &copy; 2009 &Mehrdad.Momeny; &Mehrdad.Momeny.mail; </para>
+
+<para
+>Burkhard Lück <email
+>lueck@hube-lueck.de</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+<appendix id="installation">
+<title
+>Installation</title>
+
+<sect1 id="getting-blogilo">
+<title
+>Bezugsquellen von &kapplication;</title>
+&install.intro.documentation; </sect1>
+
+<sect1 id="compilation">
+<title
+>Kompilierung und Installation</title>
+&install.compile.documentation; </sect1>
+
+</appendix>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

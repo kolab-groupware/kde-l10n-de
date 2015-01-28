@@ -1,0 +1,434 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2013.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2009.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
+# Björn Ricks <bjoern.ricks@intevation.de>, 2010.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011, 2013.
+# Torbjörn Klatt <torbjoern@torbjoern-klatt.de>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: kmail-migrator\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-01-22 05:32+0000\n"
+"PO-Revision-Date: 2013-11-07 05:17+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Thomas Reitelbach"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "tr@erdfunkstelle.de"
+
+#: ../kmigratorbase.cpp:123
+#, kde-format
+msgid "Creating instance of type %1"
+msgstr "Instanz vom Typ „%1“ wird erzeugt"
+
+#: ../migratorbase.cpp:138
+msgid "Missing Identifier"
+msgstr "Fehlender Bezeichner"
+
+#: ../migratorbase.cpp:151
+msgid "Failed to start migration because migrator is not ready"
+msgstr ""
+"Der Start der Migration ist fehlgeschlagen, weil das Migrationswerkzeug "
+"nicht bereit ist"
+
+#: ../migratorbase.cpp:157
+msgid "Starting migration..."
+msgstr "Migration wird gestartet ..."
+
+#: ../migratorbase.cpp:198
+msgid "Migration complete"
+msgstr "Migration beendet"
+
+#: ../migratorbase.cpp:202
+msgid "Migration aborted"
+msgstr "Migration abgebrochen"
+
+#: ../migratorbase.cpp:208
+msgid "Migration failed"
+msgstr "Die Migration ist fehlgeschlagen"
+
+#: ../migratorbase.cpp:212
+msgid "Migration paused"
+msgstr "Die Migration wurde angehalten"
+
+#: ../migratorbase.cpp:242
+msgid "This migration has already been started once but was aborted"
+msgstr "Die Migration wurde bereits einmal gestartet, aber dann abgebrochen"
+
+#: ../migratorbase.cpp:278
+msgctxt "@info:status"
+msgid "Not started"
+msgstr "Nicht gestartet"
+
+#: ../migratorbase.cpp:279
+msgctxt "@info:status"
+msgid "Running..."
+msgstr "Läuft ..."
+
+#: ../migratorbase.cpp:280
+msgctxt "@info:status"
+msgid "Complete"
+msgstr "Beendet"
+
+#: ../migratorbase.cpp:281
+msgctxt "@info:status"
+msgid "Aborted"
+msgstr "Abgebrochen"
+
+#: ../migratorbase.cpp:282
+msgctxt "@info:status"
+msgid "Paused"
+msgstr "Angehalten"
+
+#: ../migratorbase.cpp:283
+msgctxt "@info:status"
+msgid "Needs Update"
+msgstr "Aktualisierung erforderlich"
+
+#: ../migratorbase.cpp:284
+msgctxt "@info:status"
+msgid "Failed"
+msgstr "Fehlgeschlagen"
+
+#: imapcacheadapter.cpp:95
+msgid ""
+"Could not create adapter for previous KMail version's disconnected IMAP cache"
+msgstr ""
+"Der Adapter zum „disconnected IMAP“-Zwischenspeicher der vorherigen KMail-"
+"Version kann nicht erzeugt werden"
+
+#: imapcacheadapter.cpp:114
+msgid ""
+"Could not configure adapter for previous KMail version's disconnected IMAP "
+"cache"
+msgstr ""
+"Der Adapter zum „disconnected IMAP“-Zwischenspeicher der vorherigen KMail-"
+"Version kann nicht eingestellt werden"
+
+#: imapcacheadapter.cpp:119
+msgctxt "@title account name"
+msgid "Previous KMail's disconnected IMAP cache"
+msgstr "„Disconnected IMAP“-Zwischenspeicher des vorherigen KMails"
+
+#: imapcacheadapter.cpp:129
+msgid "Access to previous KMail version's cache enabled"
+msgstr ""
+"Zugriff auf den Zwischenspeicher der vorherigen KMail-Version zugelassen"
+
+#: imapcachecollectionmigrator.cpp:203 imapcachelocalimporter.cpp:145
+#, kde-format
+msgctxt ""
+"@info:status folder name and number of messages to import before finished"
+msgid "%1: one message left to import"
+msgid_plural "%1: %2 messages left to import"
+msgstr[0] "%1: eine weitere Nachricht zu importieren"
+msgstr[1] "%1: %2 weitere Nachrichten zu importieren"
+
+#: imapcachecollectionmigrator.cpp:476
+#, kde-format
+msgctxt "@info:status"
+msgid "No cache for account %1 available"
+msgstr "Kein Cache für Konto %1 verfügbar."
+
+#: imapcachecollectionmigrator.cpp:577
+#, kde-format
+msgctxt "@info:status"
+msgid "Starting cache migration for folder %1 of account %2"
+msgstr ""
+"Zwischenspeicher-Migration für den Ordner %1 des Kontos %2 wird gestartet"
+
+#: imapcachecollectionmigrator.cpp:584 imapcachelocalimporter.cpp:263
+#, kde-format
+msgctxt "@info:status foldername"
+msgid "%1: listing messages..."
+msgstr "%1: Nachrichten auflisten ..."
+
+#: imapcachelocalimporter.cpp:121 imapcachelocalimporter.cpp:215
+#, kde-format
+msgctxt "@title account name"
+msgid "Local Copies of %1"
+msgstr "Lokale Kopien von %1"
+
+#: imapcachelocalimporter.cpp:171
+#, kde-format
+msgid "Cannot provide access to local copies of disconnected IMAP account %1"
+msgstr ""
+"Kann keinen Zugriff auf lokale Kopien von disconnected IMAP Konto %1 bieten"
+
+#: imapcachelocalimporter.cpp:203 kmailmigrator.cpp:405 kmailmigrator.cpp:418
+#: kmailmigrator.cpp:881 kmailmigrator.cpp:943 kmailmigrator.cpp:1068
+msgid "Failed to obtain D-Bus interface for remote configuration."
+msgstr ""
+"D-Bus-Schnittstelle für die entfernte Konfiguration kann nicht erhalten "
+"werden."
+
+#: kmailmigrator.cpp:126
+msgid "Beginning KMail migration..."
+msgstr "KMail-Migration wird gestartet ..."
+
+#: kmailmigrator.cpp:324
+#, kde-format
+msgid "No backend for '%1' available."
+msgstr "Kein Dienstprogramm für „%1“ verfügbar."
+
+#: kmailmigrator.cpp:331
+#, kde-format
+msgid "'%1' has been already migrated."
+msgstr "„%1“ wurde bereits migriert."
+
+#: kmailmigrator.cpp:337
+msgid ""
+"Enabling access to the disconnected IMAP cache of the previous KMail version"
+msgstr ""
+"Zugriff auf disconnected IMAP-Zwischenspeicher der vorherigen KMail-Version "
+"zulassen"
+
+#: kmailmigrator.cpp:349
+msgid "Local folders have already been migrated."
+msgstr "Lokale Ordner sind bereits migriert worden."
+
+#: kmailmigrator.cpp:368
+#, kde-format
+msgctxt "@info:status"
+msgid "Migrating local folders in '%1'..."
+msgstr "Lokale Ordner in „%1“ werden migriert ..."
+
+#: kmailmigrator.cpp:380
+msgid "Migration successfully completed."
+msgstr "Die Migration ist erfolgreich abgeschlossen."
+
+#: kmailmigrator.cpp:498
+#, kde-format
+msgid "Migration of '%1' to Akonadi resource failed: %2"
+msgstr "Die Migration von „%1“ zu Akonadi Resource ist fehlgeschlagen: %2"
+
+#: kmailmigrator.cpp:540
+#, kde-format
+msgid "Migration of '%1' succeeded."
+msgstr "Die Migration von „%1“ ist erfolgreich abgeschlossen."
+
+#: kmailmigrator.cpp:598
+#, kde-format
+msgid "Trying to migrate '%1' to resource..."
+msgstr "Es wird versucht, „%1“ zu einer Ressource zu migrieren ..."
+
+#: kmailmigrator.cpp:630 kmailmigrator.cpp:640 kmailmigrator.cpp:746
+#: kmailmigrator.cpp:867 kmailmigrator.cpp:929
+#, kde-format
+msgid "Failed to create resource: %1"
+msgstr "Fehler beim Erzeugen der Ressource: %1"
+
+#: kmailmigrator.cpp:633
+msgid "Created disconnected imap resource"
+msgstr "Erstelle disconnected IMAP-Ressource"
+
+#: kmailmigrator.cpp:643
+msgid "Created imap resource"
+msgstr "IMAP-Ressource erzeugt"
+
+#: kmailmigrator.cpp:749
+msgid "Created pop3 resource"
+msgstr "POP3-Ressource erzeugt"
+
+#: kmailmigrator.cpp:870
+msgid "Created mbox resource"
+msgstr "Mbox-Ressource erzeugt"
+
+#: kmailmigrator.cpp:932
+msgid "Created maildir resource"
+msgstr "Maildir-Ressource erzeugt"
+
+#: kmailmigrator.cpp:981
+#, kde-format
+msgid "Failed to create resource for local folders: %1"
+msgstr "Fehler beim Erzeugen der Ressource für lokale Ordner: %1"
+
+#: kmailmigrator.cpp:985
+msgid "Created local maildir resource."
+msgstr "Lokale Maildir-Ressource erzeugt"
+
+#: kmailmigrator.cpp:1021
+msgid "KMail Folders"
+msgstr "KMail-Ordner"
+
+#: kmailmigrator.cpp:1029
+#, kde-format
+msgctxt "@info:status resource that will provide folder such as outbox, sent"
+msgid "Using '%1' for default outbox, sent mail, trash, etc."
+msgstr ""
+"Für Postausgang, Gesendete Nachrichten, Papierkorb usw. wird „%1“ verwendet."
+
+#: kmailmigrator.cpp:1034
+#, kde-format
+msgctxt "@info:status resource that will provide folder such as outbox, sent"
+msgid "Keeping '%1' for default outbox, sent mail, trash, etc."
+msgstr ""
+"Für Postausgang, Gesendete Nachrichten, Papierkorb usw. wird „%1“ behalten."
+
+#: kmailmigrator.cpp:1105 kmailmigrator.cpp:1336
+msgid "Local folders migrated successfully."
+msgstr "Lokale Ordner sind erfolgreich migriert worden."
+
+#: localfolderscollectionmigrator.cpp:68
+msgctxt "mail folder name for role inbox"
+msgid "inbox"
+msgstr "Posteingang"
+
+#: localfolderscollectionmigrator.cpp:74
+msgctxt "mail folder name for role outbox"
+msgid "outbox"
+msgstr "Postausgang"
+
+#: localfolderscollectionmigrator.cpp:80
+msgctxt "mail folder name for role sent-mail"
+msgid "sent-mail"
+msgstr "Versendete Nachrichten"
+
+#: localfolderscollectionmigrator.cpp:86
+msgctxt "mail folder name for role trash"
+msgid "trash"
+msgstr "Papierkorb"
+
+#: localfolderscollectionmigrator.cpp:92
+msgctxt "mail folder name for role drafts"
+msgid "drafts"
+msgstr "Entwürfe"
+
+#: localfolderscollectionmigrator.cpp:98
+msgctxt "mail folder name for role templates"
+msgid "templates"
+msgstr "Vorlagen"
+
+#: main.cpp:39
+msgid "KMail Migration Tool"
+msgstr "KMail-Migrationswerkzeug"
+
+#: main.cpp:41
+msgid "Migration of KMail accounts to Akonadi"
+msgstr "Migration von KMail-Zugängen nach Akonadi"
+
+#: main.cpp:43
+msgid "(c) 2009-2010 the Akonadi developers"
+msgstr "© 2009 die Akonadi-Entwickler"
+
+#: main.cpp:47
+msgid "Jonathan Armond"
+msgstr "Jonathan Armond"
+
+#: main.cpp:47
+msgid "Author"
+msgstr "Autor"
+
+#: main.cpp:51
+msgid "Show reporting dialog"
+msgstr "Berichtsfenster anzeigen"
+
+#: main.cpp:52
+msgid "Show report only if changes were made"
+msgstr "Bericht nur anzeigen, wenn Änderungen durchgeführt wurden"
+
+#: mixedtreeconverter.cpp:35
+#, kde-format
+msgid "'%1' is not a valid maildir folder."
+msgstr "„%1“ ist kein gültiger Maildir-Ordner"
+
+#: mixedtreeconverter.cpp:95
+#, kde-format
+msgid "Unable to move mbox file '%1' to backup location."
+msgstr ""
+"Die MBox-Datei „%1“ kann nicht zum Ort der Sicherungskopie verschoben werden."
+
+#: mixedtreeconverter.cpp:102
+#, kde-format
+msgid "Unable to create maildir folder at '%1'."
+msgstr "Der Maildir-Ordner kann in „%1“ nicht erzeugt werden."
+
+#: mixedtreeconverter.cpp:109
+#, kde-format
+msgid "Unable to open mbox file at '%1'."
+msgstr "Die MBox-Datei in „%1“ kann nicht geöffnet werden."
+
+#: mixedtreeconverter.cpp:114
+#, kde-format
+msgid "Unable to add new message to maildir '%1'."
+msgstr "Neue Nachricht kann nicht zu Maildir „%1“ hinzugefügt werden."
+
+#~ msgctxt "@info:status still running background jobs"
+#~ msgid "Waiting for one background task to finish"
+#~ msgid_plural "Waiting for %1 background tasks to finish"
+#~ msgstr[0] "Warten auf Beendigung eines Hintergrundprozesses ..."
+#~ msgstr[1] "Warten auf Beendigung von %1 Hintergrundprozessen ..."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>Cached IMAP accounts have a local copy of the server's data.</"
+#~ "para><para>These copies can either be kept in local folders, or be "
+#~ "deleted after import.</para><note>Mail that was not imported will always "
+#~ "be kept in local folders.</note>"
+#~ msgstr ""
+#~ "<para>Cached IMAP Konten habe eine lokale Kopie der Daten auf dem Servers."
+#~ "</para><para>Diese Kopien können entweder in lokalen Ordnern gespeichert, "
+#~ "oder nach dem Import gelöscht werden.</para><note>Nicht importierte E-"
+#~ "Mails werden immer in lokalen Ordnern gehalten.</note>"
+
+#~ msgid "KMail 2 Migration"
+#~ msgstr "KMail-2-Migration"
+
+#~ msgctxt "@action"
+#~ msgid "Delete Copies"
+#~ msgstr "Lösche Kopien"
+
+#~ msgctxt "@action"
+#~ msgid "Keep Copies"
+#~ msgstr "Behalte Kopien"
+
+#~ msgctxt "@info:status"
+#~ msgid "Scheduling background task for recovering non-imported messages."
+#~ msgid_plural ""
+#~ "Scheduling background task for recovering non-imported messages. Now at a "
+#~ "total of %1 such tasks"
+#~ msgstr[0] ""
+#~ "Hintergrundprozess zum Wiederherstellen nicht importierter Nachrichten "
+#~ "wird gestartet."
+#~ msgstr[1] ""
+#~ "Hintergrundprozess zum Wiederherstellen nicht importierter Nachrichten "
+#~ "wird gestartet. Es sind %1 dieser Prozesse geplant."
+
+#~ msgctxt "@info:status importing cached messages of a DIMAP account"
+#~ msgid "Starting local cache import for %1"
+#~ msgstr "Import des lokalen Zwischenspeichers für %1 wird gestartet"
+
+#~ msgctxt "@info:status"
+#~ msgid "Local cache import for %1 completed"
+#~ msgstr "Import des lokalen Caches für %1 abgeschlossen"
+
+#~ msgctxt "@info:status"
+#~ msgid "Resource '%1' did not create any folders"
+#~ msgstr "Ressource '%1' hat keine Ordner erzeugt"
+
+#~ msgctxt "@info:status"
+#~ msgid "Resource '%1' is not working correctly"
+#~ msgstr "Ressource „%1“ funktioniert nicht korrekt"
+
+#, fuzzy
+#~| msgid "Failed to create resource: %1"
+#~ msgid "Failed to convert local folder tree: %1"
+#~ msgstr "Fehler beim Erzeugen der Ressource: %1"
+
+#~ msgid ""
+#~ "Only migrate the specified types (supported: imap, mbox, maildir, dimap, "
+#~ "local, pop)"
+#~ msgstr ""
+#~ "Nur die angegebenen Typen migrieren (unterstützt wird: imap, mbox, "
+#~ "maildir, dimap, local, pop)"

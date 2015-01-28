@@ -1,0 +1,263 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-28 02:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: author
+#: lightcurves.docbook:4
+#, no-c-format
+msgid "<firstname>Aaron</firstname> <surname>Price</surname>"
+msgstr ""
+
+#. Tag: email
+#: lightcurves.docbook:8
+#, no-c-format
+msgid "aavso@aavso.org"
+msgstr ""
+
+#. Tag: title
+#: lightcurves.docbook:13
+#, no-c-format
+msgid "AAVSO Light Curves"
+msgstr ""
+
+#. Tag: primary
+#: lightcurves.docbook:14
+#, no-c-format
+msgid "Tools"
+msgstr ""
+
+#. Tag: secondary
+#: lightcurves.docbook:15
+#, no-c-format
+msgid "AAVSO Lightcurve Generator"
+msgstr ""
+
+#. Tag: screeninfo
+#: lightcurves.docbook:19
+#, no-c-format
+msgid "The AAVSO Lightcurves Tool"
+msgstr ""
+
+#. Tag: phrase
+#: lightcurves.docbook:27
+#, no-c-format
+msgid "AAVSO Lightcurves"
+msgstr ""
+
+#. Tag: title
+#: lightcurves.docbook:33
+#, no-c-format
+msgid "Introduction"
+msgstr ""
+
+#. Tag: para
+#: lightcurves.docbook:34
+#, no-c-format
+msgid ""
+"&kstars; can display light curves for variable stars from the observing program "
+"of the <ulink url=\"http://www.aavso.org\">American Association of Variable "
+"Star Observers</ulink> (<abbrev>AAVSO</abbrev>). This program monitors over "
+"6,000 variable stars and consists of 10 million observations going back almost "
+"a century. &kstars; downloads the very latest data directly from the <abbrev>"
+"AAVSO</abbrev> database via the Internet, so a network connection is required "
+"to use this tool."
+msgstr ""
+
+#. Tag: para
+#: lightcurves.docbook:43
+#, no-c-format
+msgid ""
+"To use the tool, select a variable star either by <firstterm>"
+"designation</firstterm> or name in the left panel, and set the start and end "
+"dates to be plotted. In the right panel, select the type of data that should be "
+"plotted (see below). When you have made you selections, press the <guibutton>"
+"Retrieve Curve</guibutton> button. &kstars; will automatically connect to the "
+"AAVSO server, which will generate the lightcurve plot and send it to your "
+"computer for display. A sample lightcurve plot is shown below:"
+msgstr ""
+
+#. Tag: screeninfo
+#: lightcurves.docbook:55
+#, no-c-format
+msgid "A Sample Lightcurve"
+msgstr ""
+
+#. Tag: phrase
+#: lightcurves.docbook:63
+#, no-c-format
+msgid "Sample Lightcurve"
+msgstr ""
+
+#. Tag: para
+#: lightcurves.docbook:68
+#, no-c-format
+msgid ""
+"Please not these light curves should <emphasis>NEVER</emphasis> "
+"be used in research, papers, presentations, publications, &etc; They are only "
+"meant to be used as a source of info for &kstars;. They have not been validated "
+"and passed the <abbrev>AAVSO</abbrev>'s strict quality control measures. We "
+"will be glad to give you good raw data simply by requesting it at <ulink "
+"url=\"http://www.aavso.org/adata/onlinedata/\">http://www.aavso.org/adata/online"
+"data/</ulink>."
+msgstr ""
+
+#. Tag: para
+#: lightcurves.docbook:77
+#, no-c-format
+msgid ""
+"Specific questions about the data in the light curves can be sent to <email>"
+"aavso@aavso.org</email>."
+msgstr ""
+
+#. Tag: title
+#: lightcurves.docbook:84
+#, no-c-format
+msgid "About Variable Stars"
+msgstr ""
+
+#. Tag: para
+#: lightcurves.docbook:85
+#, no-c-format
+msgid ""
+"<firstterm>Variable stars</firstterm> are stars that change in brightness. A "
+"<firstterm>light curve</firstterm> is a plot of a variable star's brightness "
+"over time. By looking at a light curve you can see how the star has behaved in "
+"the past and try to predict how it will behave in the future. Astronomers also "
+"use this data to model astrophysical processes in the star. This important to "
+"help us understand how stars work."
+msgstr ""
+
+#. Tag: title
+#: lightcurves.docbook:97
+#, no-c-format
+msgid "The Data"
+msgstr ""
+
+#. Tag: para
+#: lightcurves.docbook:99
+#, no-c-format
+msgid ""
+"Here is a summary of the various types of data available in the light curves:"
+msgstr ""
+
+#. Tag: para
+#: lightcurves.docbook:104
+#, no-c-format
+msgid ""
+"<firstterm>Visual Observation</firstterm>: This is an observation of a variable "
+"star by an observer with a regular telescope. It means that an observer saw the "
+"star at Y brightness on X date and time."
+msgstr ""
+
+#. Tag: para
+#: lightcurves.docbook:109
+#, no-c-format
+msgid ""
+"<firstterm>Fainter than</firstterm>: Sometimes the star is too faint to be seen "
+"by the observer. When that happens, the observer reports the faintest star seen "
+"in the field. These are called <quote>fainter thans</quote> "
+"because the variable star was fainter than the brightness reported."
+msgstr ""
+
+#. Tag: para
+#: lightcurves.docbook:115
+#, no-c-format
+msgid ""
+"<firstterm>Average</firstterm>: This is a computed running average of all the "
+"data reported. The <firstterm>bin</firstterm> number tells the computer how "
+"many days to use in each average calculation. This will need to be adjusted "
+"based on the frequency of observations. The error bars represent the 1 sigma "
+"standard deviation of error."
+msgstr ""
+
+#. Tag: para
+#: lightcurves.docbook:122
+#, no-c-format
+msgid ""
+"<firstterm>CCDV</firstterm>: These are observations reported using a <abbrev>"
+"CCD</abbrev> with a Johnson <abbrev>V</abbrev> filter. <abbrev>CCDV</abbrev> "
+"observations tend to be more accurate than visual (but not always)."
+msgstr ""
+
+#. Tag: para
+#: lightcurves.docbook:128
+#, no-c-format
+msgid ""
+"<firstterm>CCDB</firstterm>: <abbrev>CCD</abbrev> observations with a Johnson "
+"<abbrev>B</abbrev> filter."
+msgstr ""
+
+#. Tag: para
+#: lightcurves.docbook:132
+#, no-c-format
+msgid ""
+"<firstterm>CCDI</firstterm>: <abbrev>CCD</abbrev> observations with a Cousins "
+"<abbrev>Ic</abbrev> filter."
+msgstr ""
+
+#. Tag: para
+#: lightcurves.docbook:136
+#, no-c-format
+msgid ""
+"<firstterm>CCDR</firstterm>: <abbrev>CCD</abbrev> observations with a Cousins "
+"<abbrev>R</abbrev> filter."
+msgstr ""
+
+#. Tag: para
+#: lightcurves.docbook:140
+#, no-c-format
+msgid ""
+"<firstterm>Discrepant Data</firstterm>: This is data that has been flagged by "
+"an <abbrev>AAVSO</abbrev> staff member as being discrepant following <abbrev>"
+"HQ</abbrev> rules for data validation. Contact <email>aavso@aavso.org</email> "
+"for more information."
+msgstr ""
+
+#. Tag: para
+#: lightcurves.docbook:146
+#, no-c-format
+msgid ""
+"<firstterm>Dates</firstterm>: The observational database the light curves are "
+"based on is updated every 10 minutes so you can get data in near real-time. "
+"Right now light curve data is only available back to 1961, but this will likely "
+"be expanded further back in time in the future."
+msgstr ""
+
+#. Tag: title
+#: lightcurves.docbook:157
+#, no-c-format
+msgid "Updating your local copy of Variable Stars"
+msgstr ""
+
+#. Tag: para
+#: lightcurves.docbook:158
+#, no-c-format
+msgid ""
+"The <abbrev>AAVSO</abbrev> publishes the <ulink "
+"url=\"http://www.aavso.org/valnam.txt\">full list of variable stars</ulink> "
+"in their monitoring program. This file is updated monthly with newly discovered "
+"variable stars. To sync the list that &kstars; uses with the <abbrev>"
+"AAVSO</abbrev> master list, click on the <guibutton>Update List</guibutton> "
+"button in the <abbrev>AAVSO</abbrev> dialog. &kstars; will then attempt to "
+"connect to the <abbrev>AAVSO</abbrev> database and download the latest list."
+msgstr ""
+
+#. Tag: para
+#: lightcurves.docbook:170
+#, no-c-format
+msgid ""
+"The customized data stream provided by the AAVSO was implemented for &kstars; "
+"by Aaron Price. Thank you, Aaron!"
+msgstr ""

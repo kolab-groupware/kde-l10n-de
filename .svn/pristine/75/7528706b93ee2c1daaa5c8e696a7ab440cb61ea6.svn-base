@@ -1,0 +1,604 @@
+# Thomas Diehl <thd@kde.org>, 2003, 2004.
+# Stephan Johach <hunsum@gmx.de>, 2005.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006, 2007, 2008, 2009.
+# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011, 2012.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2010.
+# Burkhard Lück <lueck@hube-lueck.de>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: krandr\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-11-05 11:50+0000\n"
+"PO-Revision-Date: 2012-05-18 19:05+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.2\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Thomas Diehl,Thomas Reitelbach"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "thd@kde.org,tr@erdfunkstelle.de"
+
+#: krandrmodule.cpp:47
+msgid ""
+"Your X server does not support resizing and rotating the display. Please "
+"update to version 4.3 or greater. You need the X Resize, Rotate, and Reflect "
+"extension (RANDR) version 1.1 or greater to use this feature."
+msgstr ""
+"Ihr X-Server unterstützt keine Änderungen der Größe und Ausrichtung. Bitte "
+"verwenden Sie XFree in Version 4.3 oder neuer. Sie benötigen zudem die "
+"Erweiterung „X Resize, Rotate and Reflect“ (RANDR) in einer Version ab 1.1."
+
+#: krandrtray.cpp:94
+msgid "Required X Extension Not Available"
+msgstr "Die benötigte X-Erweiterung ist nicht verfügbar."
+
+#: krandrtray.cpp:111 legacyrandrconfig.cpp:38
+#, kde-format
+msgid "Screen %1"
+msgstr "Bildschirm %1"
+
+#: krandrtray.cpp:134
+msgid "Configure Display..."
+msgstr "Anzeige einrichten ..."
+
+#: krandrtray.cpp:152
+msgid "Display"
+msgstr "Anzeige"
+
+#: krandrtray.cpp:153
+msgid "Resize, rotate and configure screens."
+msgstr "Bildschirmgröße &amp; Ausrichtung ändern."
+
+#: krandrtray.cpp:170
+#, kde-format
+msgid "Resolution: %1 x %2"
+msgstr "Auflösung: %1 × %2"
+
+#: krandrtray.cpp:185
+#, kde-format
+msgid "Rotation: %1"
+msgstr "Drehung: %1"
+
+#: krandrtray.cpp:200
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#: krandrtray.cpp:218
+#, kde-format
+msgid "<td align=\"right\">Resolution: </td><td>%1 x %2</td></tr>"
+msgstr "<td align=\"right\">Auflösung: </td><td>%1 × %2</td></tr>"
+
+#: krandrtray.cpp:224
+msgid "Refresh: "
+msgstr "Bildwiederholrate: "
+
+#: krandrtray.cpp:225 krandrtray.cpp:512 legacyrandrconfig.cpp:274
+#: legacyrandrscreen.cpp:246 outputconfig.cpp:501
+#, kde-format
+msgid "%1 Hz"
+msgstr "%1 Hz"
+
+#: krandrtray.cpp:233
+msgid "Rotation: "
+msgstr "Drehung: "
+
+#: krandrtray.cpp:270
+msgid "Screen configuration has changed"
+msgstr "Bildschirmeinstellungen wurden geändert"
+
+#: krandrtray.cpp:305 krandrtray.cpp:430
+msgid "Screen Size"
+msgstr "Bildschirmgröße"
+
+#: krandrtray.cpp:313 krandrtray.cpp:379 krandrtray.cpp:443
+msgid "Orientation"
+msgstr "Ausrichtung"
+
+#: krandrtray.cpp:330
+msgid "Outputs"
+msgstr "Ausgaben"
+
+#: krandrtray.cpp:346
+#, kde-format
+msgid "%1 - Screen Size"
+msgstr "%1 – Bildschirmgröße"
+
+#: krandrtray.cpp:363
+msgid "Disable"
+msgstr "Deaktivieren"
+
+#: krandrtray.cpp:389 krandrtray.cpp:452
+msgid "Refresh Rate"
+msgstr "Bildwiederholrate"
+
+#: krandrtray.cpp:400
+msgctxt "(checkbox) designate this output as the primary output"
+msgid "Primary output"
+msgstr "Hauptbildschirm"
+
+#: krandrtray.cpp:418
+msgid "Unify Outputs"
+msgstr "Ausgaben vereinheitlichen"
+
+#: krandrtray.cpp:606
+msgid "Configure Display"
+msgstr "Anzeige einrichten"
+
+#: ktimerdialog.cpp:167
+#, kde-format
+msgid "1 second remaining:"
+msgid_plural "%1 seconds remaining:"
+msgstr[0] "Noch 1 Sekunde:"
+msgstr[1] "Noch %1 Sekunden:"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, LegacyRandRConfigBase)
+#: legacyrandrconfigbase.ui:14
+msgid "Screen Resize and Rotate Settings"
+msgstr "Einstellungen zu Größe und Ausrichtung des Bildschirms"
+
+#. i18n: ectx: property (whatsThis), widget (QWidget, LegacyRandRConfigBase)
+#: legacyrandrconfigbase.ui:17
+msgid ""
+"If this option is enabled, options set by the system tray applet will be "
+"saved and loaded when KDE starts instead of being temporary."
+msgstr ""
+"Wenn diese Einstellung aktiv ist, werden die Einstellungen zu Größe und "
+"Ausrichtung, die im Systemabschnitt der Kontrollleiste festgelegt wurden, "
+"bei jedem KDE-Start angewandt. Sonst gelten sie nur für die aktuelle Sitzung."
+
+#. i18n: ectx: property (text), widget (QLabel, screenLabel)
+#: legacyrandrconfigbase.ui:25
+msgid "Settings for screen:"
+msgstr "Einstellungen für Bildschirm:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, screenCombo)
+#: legacyrandrconfigbase.ui:38
+msgid ""
+"The screen whose settings you would like to change can be selected using "
+"this drop-down list."
+msgstr ""
+"Über diese Aufklappliste wählen Sie den Bildschirm, dessen Einstellungen Sie "
+"ändern möchten."
+
+#. i18n: ectx: property (text), widget (QLabel, sizeLabel)
+#: legacyrandrconfigbase.ui:49
+msgid "Screen size:"
+msgstr "Bildschirmgröße:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, sizeCombo)
+#: legacyrandrconfigbase.ui:62
+msgid ""
+"The size, otherwise known as the resolution, of your screen can be selected "
+"from this drop-down list."
+msgstr ""
+"Die Größe, die mit der so genannten „Auflösung“ zusammenhängt, lässt sich "
+"über diese Aufklappliste festlegen."
+
+#. i18n: ectx: property (text), widget (QLabel, rateLabel)
+#: legacyrandrconfigbase.ui:73
+msgid "Refresh rate:"
+msgstr "Bildwiederholrate:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, rateCombo)
+#: legacyrandrconfigbase.ui:83
+msgid ""
+"The refresh rate of your screen can be selected from this drop-down list."
+msgstr "Die Bildwiederholrate lässt sich über diese Aufklappliste festlegen."
+
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, rotationGroup)
+#: legacyrandrconfigbase.ui:98
+msgid ""
+"The options in this section allow you to change the rotation of your screen."
+msgstr ""
+"Die Einstellungen dieses Abschnitts ermöglichen eine Rotation der "
+"Bildschirmdarstellung."
+
+#. i18n: ectx: property (title), widget (QGroupBox, rotationGroup)
+#: legacyrandrconfigbase.ui:101
+msgid "Orientation (degrees counterclockwise)"
+msgstr "Ausrichtung (Grad entgegen dem Uhrzeigersinn)"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, applyOnStartup)
+#: legacyrandrconfigbase.ui:108
+msgid ""
+"If this option is enabled the size and orientation settings will be used "
+"when KDE starts."
+msgstr ""
+"Bei Aktivierung dieser Option werden die Einstellungen zu Größe und "
+"Ausrichtung beim KDE-Start angewandt."
+
+#. i18n: ectx: property (text), widget (QCheckBox, applyOnStartup)
+#: legacyrandrconfigbase.ui:111
+msgid "Apply settings on KDE startup"
+msgstr "Einstellungen beim KDE-Start anwenden"
+
+#. i18n: ectx: property (text), widget (QCheckBox, syncTrayApp)
+#: legacyrandrconfigbase.ui:118
+msgid "Allow tray application to change startup settings"
+msgstr ""
+"Ändern der Starteinstellungen durch Programm im Systemabschnitt der "
+"Kontrollleiste zulassen"
+
+#: legacyrandrscreen.cpp:140
+#, kde-format
+msgid ""
+"New configuration:\n"
+"Resolution: %1 x %2\n"
+"Orientation: %3"
+msgstr ""
+"Neue Einstellung:\n"
+"Auflösung: %1 × %2\n"
+"Ausrichtung: %3"
+
+#: legacyrandrscreen.cpp:145
+#, kde-format
+msgid ""
+"New configuration:\n"
+"Resolution: %1 x %2\n"
+"Orientation: %3\n"
+"Refresh rate: %4"
+msgstr ""
+"Neue Einstellung:\n"
+"Auflösung: %1 × %2\n"
+"Ausrichtung: %3\n"
+"Bildwiederholrate: %4"
+
+#: legacyrandrscreen.cpp:236 legacyrandrscreen.cpp:241
+#, kde-format
+msgctxt "Refresh rate in Hertz (Hz)"
+msgid "%1 Hz"
+msgstr "%1 Hz"
+
+#: main.cpp:33
+msgid "Resize and Rotate"
+msgstr "Größe ändern und rotieren"
+
+#: main.cpp:34
+msgid "X Resize and Rotate System Tray App"
+msgstr ""
+"Programm im Systemabschnitt der Kontrollleiste zum Verändern der Größe und "
+"Drehung"
+
+#: main.cpp:35
+msgid "(c) 2007 Gustavo Pichorim Boiko, 2002-2003 Hamish Rodda"
+msgstr "© 2007 Gustavo Pichorim Boiko, 2002–2003 Hamish Rodda"
+
+#: main.cpp:36
+msgid "Gustavo Pichorim Boiko"
+msgstr "Gustavo Pichorim Boiko"
+
+#: main.cpp:36
+msgid "Maintainer"
+msgstr "Betreuer"
+
+#: main.cpp:37
+msgid "Hamish Rodda"
+msgstr "Hamish Rodda"
+
+#: main.cpp:37
+msgid "Original Author"
+msgstr "Ursprünglicher Autor"
+
+#: main.cpp:38
+msgid "Lubos Lunak"
+msgstr "Lubos Lunak"
+
+#: main.cpp:38
+msgid "Many fixes"
+msgstr "Viele Fehlerbereinigungen"
+
+#: main.cpp:39
+msgid "Harry Bock"
+msgstr "Harry Bock"
+
+#: main.cpp:39
+msgid "Many fixes, multi-head support"
+msgstr "Viele Fehlerbereinigungen, Multihead-Unterstützung"
+
+#: main.cpp:46
+msgid "Application is being auto-started at KDE session start"
+msgstr "Die Anwendung wird beim Anmelden von KDE automatisch gestartet"
+
+#: outputconfig.cpp:229
+msgid "Left of"
+msgstr "Links von"
+
+#: outputconfig.cpp:230
+msgid "Right of"
+msgstr "Rechts von"
+
+#: outputconfig.cpp:231
+msgctxt "Output is placed above another one"
+msgid "Above"
+msgstr "Über"
+
+#: outputconfig.cpp:232
+msgctxt "Output is placed below another one"
+msgid "Below"
+msgstr "Unter"
+
+#: outputconfig.cpp:233
+msgid "Clone of"
+msgstr "Klon von"
+
+#: outputconfig.cpp:234
+msgctxt "Fixed, abitrary position"
+msgid "Absolute"
+msgstr "Absolut"
+
+#: outputconfig.cpp:237
+msgid "No relative position"
+msgstr "Keine relative Position"
+
+#: outputconfig.cpp:450
+msgctxt "Screen size"
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#: outputconfig.cpp:456
+#, kde-format
+msgctxt "Automatic screen size (native resolution)"
+msgid "%1 (Auto)"
+msgstr "%1 (Auto)"
+
+#: outputconfig.cpp:494
+msgctxt "Automatic refresh rate configuration"
+msgid "Auto"
+msgstr "Automatisch"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, OutputConfigBase)
+#: outputconfigbase.ui:26
+msgid "Output Config"
+msgstr "Ausgaben"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: outputconfigbase.ui:32
+msgid "Size:"
+msgstr "Größe:"
+
+#. i18n: ectx: property (text), widget (QLabel, rateLabel)
+#: outputconfigbase.ui:48
+msgid "Refresh:"
+msgstr "Bildwiederholrate:"
+
+#. i18n: ectx: property (text), widget (QLabel, orientationLabel)
+#: outputconfigbase.ui:64
+msgid "Orientation:"
+msgstr "Ausrichtung:"
+
+#. i18n: ectx: property (text), widget (QLabel, positionLabel)
+#: outputconfigbase.ui:80
+msgctxt "Position of the screen"
+msgid "Position:"
+msgstr "Position:"
+
+#: outputgraphicsitem.cpp:72
+#, kde-format
+msgctxt "Configuration options. Output name, width x height (refresh rate Hz)"
+msgid ""
+"%1\n"
+"%2x%3 (%4 Hz)"
+msgstr ""
+"%1\n"
+"%2x%3 (%4 Hz)"
+
+#: randr.cpp:32
+msgid "No Rotation"
+msgstr "Keine Drehung"
+
+#: randr.cpp:34
+msgid "Left (90 degrees)"
+msgstr "Links (90 Grad)"
+
+#: randr.cpp:36
+msgid "Upside-Down (180 degrees)"
+msgstr "Umkehren (180 Grad)"
+
+#: randr.cpp:38
+msgid "Right (270 degrees)"
+msgstr "Rechts (270 Grad)"
+
+#: randr.cpp:40
+msgid "Mirror Horizontally"
+msgstr "Waagerecht spiegeln"
+
+#: randr.cpp:42
+msgid "Mirror Vertically"
+msgstr "Senkrecht spiegeln"
+
+#: randr.cpp:44 randr.cpp:75
+msgid "Unknown Orientation"
+msgstr "Unbekannte Ausrichtung"
+
+#: randr.cpp:49
+msgid "Not Rotated"
+msgstr "Nicht gedreht"
+
+#: randr.cpp:51
+msgid "Rotated 90 Degrees Counterclockwise"
+msgstr "90 Grad gegen den Uhrzeigersinn"
+
+#: randr.cpp:53
+msgid "Rotated 180 Degrees Counterclockwise"
+msgstr "180 Grad gegen den Uhrzeigersinn"
+
+#: randr.cpp:55
+msgid "Rotated 270 Degrees Counterclockwise"
+msgstr "270 Grad gegen den Uhrzeigersinn"
+
+#: randr.cpp:60
+msgid "Mirrored Horizontally And Vertically"
+msgstr "Waagerecht und senkrecht gespiegelt"
+
+#: randr.cpp:62
+msgid "mirrored horizontally and vertically"
+msgstr "waagerecht und senkrecht gespiegelt"
+
+#: randr.cpp:65
+msgid "Mirrored Horizontally"
+msgstr "Waagerecht gespiegelt"
+
+#: randr.cpp:67
+msgid "mirrored horizontally"
+msgstr "waagerecht gespiegelt"
+
+#: randr.cpp:70
+msgid "Mirrored Vertically"
+msgstr "Senkrecht gespiegelt"
+
+#: randr.cpp:72
+msgid "mirrored vertically"
+msgstr "senkrecht gespiegelt"
+
+#: randr.cpp:77
+msgid "unknown orientation"
+msgstr "unbekannte Ausrichtung"
+
+#: randr.cpp:129
+msgid "Confirm Display Setting Change"
+msgstr "Änderung der Bilddarstellung bestätigen"
+
+#: randr.cpp:133
+msgid "&Accept Configuration"
+msgstr "&Einrichtung beibehalten"
+
+#: randr.cpp:134
+msgid "&Revert to Previous Configuration"
+msgstr "Zur &vorherigen Einrichtung zurückkehren"
+
+#: randr.cpp:136
+msgid ""
+"Your screen configuration has been changed to the requested settings. Please "
+"indicate whether you wish to keep this configuration. In 15 seconds the "
+"display will revert to your previous settings."
+msgstr ""
+"Die Bildschirm-Einstellungen wurden entsprechend Ihrer Vorgaben geändert. "
+"Bitte entscheiden Sie, ob sie diese Einstellungen beibehalten möchten. Sonst "
+"wird der Bildschirm in 15 Sekunden auf die vorherigen Einstellungen "
+"zurückgesetzt."
+
+#. i18n: ectx: property (text), widget (QPushButton, saveAsDefaultButton)
+#: randrconfig.cpp:61 randrconfigbase.ui:81
+msgid "Save as Default"
+msgstr "Als Standard speichern"
+
+#: randrconfig.cpp:62
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+#: randrconfig.cpp:125
+msgctxt "No display selected"
+msgid "None"
+msgstr "Keiner"
+
+#: randrconfig.cpp:140 randrconfig.cpp:185
+#, kde-format
+msgid "%1 (Connected)"
+msgstr "%1 (Verbunden)"
+
+#: randrconfig.cpp:329
+msgid "Configuration has been set as the desktop default."
+msgstr "Die Einstellung wurde als Standard für die Arbeitsfläche übernommen."
+
+#: randrconfig.cpp:338
+msgid "Default desktop setup has been reset."
+msgstr "Die voreingestellte Arbeitsflächeneinstellung ist wiederhergestellt."
+
+#: randrconfig.cpp:456
+msgid ""
+"Insufficient virtual size for the total screen size.\n"
+"The configured virtual size of your X server is insufficient for this setup. "
+"This configuration needs to be adjusted.\n"
+"Do you wish to run a tool to adjust the configuration?"
+msgstr ""
+"Unzureichende virtuelle Größe für die gesamte Bildschirmgröße.\n"
+"Die eingerichtete virtuelle Größe des X-Servers ist für diese Einstellung "
+"unzureichend; die Einstellungen müssen angepasst werden.\n"
+"Möchten Sie ein Hilfsprogramm zu diesem Zweck starten?"
+
+#: randrconfig.cpp:464
+msgid ""
+"Configuration has been adjusted. Please restart your session for this change "
+"to take effect."
+msgstr ""
+"Die Einstellungen wurden aktualisiert. Damit die Änderungen wirksam werden, "
+"müssen Sie Ihre Sitzung neu starten."
+
+#: randrconfig.cpp:467
+msgid "Changing configuration failed. Please adjust your xorg.conf manually."
+msgstr ""
+"Das Ändern der Einstellungen ist fehlgeschlagen. Bitte passen Sie die Datei "
+"xorg.conf von Hand an."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, RandRConfigBase)
+#: randrconfigbase.ui:14
+msgid "Display Configuration (X11 Resize, Rotate and Reflect)"
+msgstr "Bildschirmeinrichtung (X11-Größenänderung, Drehung und Anordnung)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, unifyOutputs)
+#: randrconfigbase.ui:27
+msgid "Unify outputs"
+msgstr "Ausgaben vereinheitlichen"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: randrconfigbase.ui:52
+msgid "Primary output:"
+msgstr "Hauptbildschirm:"
+
+#. i18n: ectx: property (text), widget (QPushButton, identifyOutputsButton)
+#: randrconfigbase.ui:74
+msgid "Identify Outputs"
+msgstr "Bildschirme identifizieren"
+
+#: randrdisplay.cpp:49
+#, kde-format
+msgid "X Resize and Rotate extension version %1.%2"
+msgstr "Programm zum Verändern der Größe und Rotieren, Version %1.%2"
+
+#~ msgid "Screen Settings"
+#~ msgstr "Bildschirm-Einstellungen"
+
+#~ msgid "KRandR"
+#~ msgstr "KRandR"
+
+#~ msgid "Screen resize & rotate"
+#~ msgstr "Größe und Ausrichtung des Bildschirms anpassen"
+
+#~ msgid "%1 x %2"
+#~ msgstr "%1 x %2"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid "Active"
+#~ msgstr "Aktiv"
+
+#~ msgid "Screen Resize and Rotate Configuration"
+#~ msgstr "Einstellungen zu Größe und Ausrichtung des Bildschirms"
+
+#~ msgid "Rotate 0"
+#~ msgstr "0° gedreht"
+
+#~ msgid "Rotate 90"
+#~ msgstr "90° gedreht"
+
+#~ msgid "Rotate 180"
+#~ msgstr "180° gedreht"
+
+#~ msgid "Rotate 270"
+#~ msgstr "270° gedreht"
+
+#~ msgid "Tab 1"
+#~ msgstr "Tab 1"
+
+#~ msgid "Tab 2"
+#~ msgstr "Tab 2"

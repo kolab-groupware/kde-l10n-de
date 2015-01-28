@@ -1,0 +1,172 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % German "INCLUDE">
+<!-- change language only here -->
+]>
+
+<article lang="&language;" id="nepomuksearch">
+  <title
+>nepomuksearch</title>
+  <articleinfo>
+    <authorgroup>
+      <author
+><personname
+> <firstname
+>Sebastian</firstname
+> <surname
+>Tr&uuml;g</surname
+> </personname
+> <email
+>trueg@kde.org</email
+> </author>
+      <othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
+    </authorgroup>
+
+    <date
+>2010-09-10</date>
+    <releaseinfo
+>1.0.0</releaseinfo>
+  </articleinfo>
+
+  <sect1>
+    <title
+>Übersicht</title>
+
+    <para
+>Das Protokoll <acronym
+>nepomuksearch</acronym
+> ermöglicht die Suche nach Dateien und anderen Ressourcen im Nepomuk-Metadatenspeicher. Die Suche nach Dateien ist der wichtigste Anwendungsfall, da es sich hier um ein virtuelles Dateisystem handelt.</para>
+    <note>
+      <para
+>Das Nepomuk-System muss für diese Suche aktiviert sein. Ist außerdem die Strigi-Datei-Indizierung eingeschaltet, ergibt eine Suche bessere Ergebnisse und es bestehen erheblich mehr Suchmöglichkeiten.</para>
+    </note>
+
+    <para
+>Normalerweise wird <acronym
+>nepomuksearch</acronym
+> in Programmen wie <application
+>Dolphin</application
+> verwendet, unbemerkt durch den Benutzer. Diese Programme stellen eine grafische Bedienungsoberfläche bereit, um Abfragen und zugehörige Addressen (Url) einzugeben. Es ist aber auch möglich eine Abfrage manuell zu schreiben. Es gibt zwei unterschiedliche Möglichkeiten, auf die hingewiesen wird. Beachten Sie dass die hier im Folgenden gezeigten Abfragen nicht auf Dateien begrenzt sind. </para>
+    <variablelist>
+      <varlistentry>
+        <term>
+          <userinput
+>nepomuksearch:/?query=Nepomuk</userinput>
+        </term>
+        <listitem>
+          <para
+>sucht nach allen Daten, die das Wort „Nepomuk“ enthalten. „Nepomuk“ kann dabei durch alle Begriffe ersetzt werden, die in der einfachen <xref linkend="query_syntax"/> erlaubt sind.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>
+          <userinput
+>nepomuksearch:/?sparql=select ?r where { ?r nao:hasTag ?tag . ?tag nao:prefLabel 'Nepomuk'^^xsd:string . }</userinput>
+        </term>
+        <listitem>
+          <para
+>führt die <acronym
+>SPARQL</acronym
+>-Abfrage durch, die in diesem Fall nach allen Ressourcen mit dem Stichwort „Nepomuk“ sucht. Beachten Sie, dass die Abfrage mit „%“-Zeichen maskiert werden muss, &ie; eine URI wie <userinput
+>&lt;http://www.semanticdesktop.org/ontologies/2007/08/15/nao#Tag&gt;</userinput
+> muss als <userinput
+>%3chttp:%2f%2fwww.semanticdesktop.org%2fontologies%2f2007%2f08%2f15%2fnao#Tag%3e</userinput
+> geschrieben werden.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+  </sect1>
+
+  <sect1 id="query_syntax">
+    <title
+>Syntax der Nepomuk-Abfrage</title>
+    <para
+>Die Syntax ist recht einfach. Mehrere Abfrageausdrücke können mit den Schlüsselwörtern <command
+>AND</command
+> oder <command
+>OR</command
+> verbunden werden. Durch ein vorangestelltes Minuszeichen werden Ausdrücke von der Suche ausgeschlossen. Bestimmte Eigenschaften können durch die Kombination des Eigenschaftsnamens und einem Vergleich mit einem Wert gesucht werden.</para>
+    <tip>
+      <para
+>Diese Syntax kann auch in Standardsuchfeldern wie z. B. in <application
+>Dolphin</application
+> verwendet werden.</para>
+    </tip>
+    <sect2>
+      <title
+>Beispiele</title>
+      <variablelist>
+        <varlistentry>
+          <term
+><userinput
+>Nepomuk KDE</userinput
+> oder <userinput
+>Nepomuk AND KDE</userinput
+> </term>
+          <listitem>
+            <para
+>sucht nach Allem, das die Wörter „Nepomuk“ und „KDE“ in irgendeiner ihrer Eigenschaften enthält, das schließt auch den Inhalt von Dateien ein.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>
+            <userinput
+>Nepomuk OR KDE</userinput>
+          </term>
+          <listitem>
+            <para
+>sucht nach Allem, das entweder das Wort „Nepomuk“ oder das Wort „KDE“ in irgendeiner ihrer Eigenschaften enthält.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>
+            <userinput
+>"Nepomuk KDE"</userinput>
+          </term>
+          <listitem>
+            <para
+>sucht nach Allem, das genau den Begriff „Nepomuk KDE“ in irgendeiner ihrer Eigenschaften enthält.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>
+            <userinput
+>hastag:Nepomuk</userinput>
+          </term>
+          <listitem>
+            <para
+>sucht nach Allem mit dem Stichwort „Nepomuk“</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>
+            <userinput
+>+hastag:nepomuk AND -hastag:scribo</userinput>
+          </term>
+          <listitem>
+            <para
+>sucht nach Allem mit dem Stichwort „Nepomuk“, aber ohne das Stichwort „scribo“.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+</article>

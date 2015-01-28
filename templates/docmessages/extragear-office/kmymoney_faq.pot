@@ -1,0 +1,511 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-09-07 02:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: author
+#: faq.docbook:5
+#, no-c-format
+msgid "&Jack.H.Ostroff; &Jack.H.Ostroff.mail;"
+msgstr ""
+
+#. Tag: date
+#: faq.docbook:7
+#, no-c-format
+msgid "2014-08-30"
+msgstr ""
+
+#. Tag: releaseinfo
+#: faq.docbook:8
+#, no-c-format
+msgid "4.7.01"
+msgstr ""
+
+#. Tag: title
+#: faq.docbook:11
+#, no-c-format
+msgid "Questions and Answers"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:13
+#, no-c-format
+msgid ""
+"This chapter addresses a number of issues that frequently cause confusion, "
+"especially in new users of &kappname;. If you find that &kappname; is doing "
+"something you don't understand (or sometimes not doing something you want it to "
+"do,) please check this list before asking for help on one of the mailing lists. "
+"If your problem is not mentioned here, refer to the section on <link "
+"linkend=\"firsttime.contact\">getting help</link>."
+msgstr ""
+
+#. Tag: title
+#: faq.docbook:24
+#, no-c-format
+msgid "Installation and Startup Questions"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:28
+#, no-c-format
+msgid "&kappname; crashes when I try to launch it."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:31
+#, no-c-format
+msgid ""
+"There are many reasons &kappname; might crash or give an error instead of "
+"starting up normally. You first need to determine if the problem is with the "
+"software or with your data. So, the first thing to try is to <link "
+"linkend=\"firsttime.launch\">launch &kappname;</link> "
+"without opening your data file. If the application starts up, but crashes when "
+"you try to load your data file, try loading an older copy of your file. (You "
+"did make a backup, didn't you?)"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:38
+#, no-c-format
+msgid ""
+"If &kappname; crashes on startup without trying to load a data file, there may "
+"be a problem with your installation. See the section on <link "
+"linkend=\"installation\">installing &kappname;</link> "
+"or the section on <link linkend=\"firsttime.contact\">getting help</link>."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:47
+#, no-c-format
+msgid "When I start KMyMoney I get a \"Malformed URL\" error. What's wrong?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:51
+#, no-c-format
+msgid ""
+"Usually the reason for this is that you didn't run 'make install' as root. This "
+"step actually copies all of the icons, and other files needed by KMyMoney to "
+"run properly. If you did run this, make sure you passed the correct prefix to "
+"cmake at the beginning of your compile. See the section on <link "
+"linkend=\"installation.fromsource\">compiling from source</link> "
+"for more information."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:62
+#, no-c-format
+msgid ""
+"When I compile from source, all the icons show up as missing. What did I do "
+"wrong?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:66
+#, no-c-format
+msgid ""
+"Usually the reason for this is that you didn't run 'make install' as root. See "
+"the previous question/answer for more information."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:73
+#, no-c-format
+msgid "What options are useful to pass to cmake?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:76
+#, no-c-format
+msgid ""
+"The most important option is -DCMAKE_INSTALL_PREFIX. This specifies where you "
+"want to install KMyMoney; it should be the same location where &kde; is "
+"installed. In many distributions, cmake will find this location on its own, but "
+"if it can't, you can use the command line tool <command>"
+"kde4-config --prefix</command> to read out what the prefix should be. For "
+"&RedHat;-based distributions, including Mandriva and Fedora, &kde; is installed "
+"in <filename role=\"directory\">/usr</filename>."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:83
+#, no-c-format
+msgid ""
+"Another useful option is -DCMAKE_BUILD_TYPE. Normally this is not set, but if "
+"it is set to Debug, it will allow you to build KMyMoney with debug symbols, "
+"which help in trying to figure out crashes. This option is essential if you are "
+"a developer and want to contribute."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:92
+#, no-c-format
+msgid "The Git version is broken! What do I do now?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:95
+#, no-c-format
+msgid ""
+"Usually the reason for this is that one of the developers made a change to the "
+"code that requires a clean reconfigure. See the end of the section on <link "
+"linkend=\"installation.fromsource\">compiling from source</link> "
+"for instructions. If you follow these steps carefully, and still have a problem "
+"compiling, please post a message to the &kappname; Developers List at "
+"&devlist;, and include the failed output of either the cmake or make command."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:108
+#, no-c-format
+msgid ""
+"I compiled from source, but the version number in the Help->"
+"About dialog no longer gets changed to show the latest git commit, like it used "
+"to?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:113
+#, no-c-format
+msgid ""
+"You probably ran <command>$ make</command> without running <command>"
+"$ cmake</command> or <command>$ ccmake</command> first. If you update the code, "
+"using <command>$ git pull</command>, one of those two commands is necessary to "
+"put the updated version number/git commit in the right place."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:123
+#, no-c-format
+msgid ""
+"Will &kappname; work on my X/&ubuntu; desktop? Will &kappname; work without a "
+"full KDE desktop?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:127
+#, no-c-format
+msgid ""
+"Yes, &kappname; will work without a full &kde; desktop, but you will have to "
+"install the basic &kde; libraries first. The easiest way to do this is to use "
+"<link linkend=\"installation.distribution\">your distribution's package "
+"management system</link>, which will handle these requirements automatically. "
+"If you are going to install from source, you will probably need development "
+"versions of those libraries; refer to these <link "
+"linkend=\"installation.fromsource\">instructions</link> for details."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:134
+#, no-c-format
+msgid ""
+"There has been at least one report of an error message about a &kappname; "
+"process which did not come from any &kappname; or &kde; source. This is not "
+"necessarily bad, but it can be very difficult to determine the actual cause."
+msgstr ""
+
+#. Tag: title
+#: faq.docbook:143
+#, no-c-format
+msgid "Configuration Questions"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:147
+#, no-c-format
+msgid ""
+"Can I change the start of the fiscal year, to match my tax year or accounting "
+"year?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:150
+#, no-c-format
+msgid ""
+"Yes, you can easily set the start of the year in the <link "
+"linkend=\"details.settings.general.global\">Global Options</link> "
+"section of the <guilabel>Configure &kappname;</guilabel> dialog."
+msgstr ""
+
+#. Tag: title
+#: faq.docbook:158
+#, no-c-format
+msgid "Account and Transaction Questions"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:161
+#, no-c-format
+msgid "Why can't I edit a transaction?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:165
+#, no-c-format
+msgid ""
+"You cannot make any changes to a transaction with a date before the opening "
+"date of the account it is in. The most common reason for this is importing all "
+"the data for an account. If the import file does not contain an opening date "
+"for the account, &kappname; will use the current date. The way to fix this is "
+"to edit the account, and <link linkend=\"details.accounts.edit\">"
+"change the opening date</link> to be earlier than any transaction in that "
+"account."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:177
+#, no-c-format
+msgid "Why is a transaction shown in red and how can I get rid of the color?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:181
+#, no-c-format
+msgid ""
+"A transaction is shown in red if any part of the amount has not been assigned "
+"to a category. This is most commonly caused by importing a QIF or OFX file or "
+"by downloading statement data online. All you have to do is to modify the "
+"transaction such that the whole amount of the transaction is assigned to "
+"categories."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:191
+#, no-c-format
+msgid "Why can't I add an opening balance to an account?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:194
+#, no-c-format
+msgid ""
+"If you provide an opening balance when you create an account, it is shown as "
+"the first transaction for the account. If you do not, then the transaction is "
+"not there, and because it is a special type of transaction, you cannot simply "
+"add it as you could a deposit or withdrawal. However, you can add it later by "
+"<link linkend=\"details.accounts.edit\">editing the account</link>."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:205
+#, no-c-format
+msgid ""
+"When I created an account, I used the wrong type, and now it won't let me "
+"change it. I can edit the account, but the dropdown for account type is either "
+"disabled, or does not list all the possible types."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:210
+#, no-c-format
+msgid ""
+"You can easily change an account type between checking, savings, and cash. "
+"However, because of the way &kappname; stores the account information, it does "
+"not allow other changes of account type. The way around this is to create a new "
+"account of the correct type, move all the transactions from the old to the new "
+"account, and then delete the old account."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:222
+#, no-c-format
+msgid ""
+"I have a loan with 0% interest, but I get an error in the new loan wizard that "
+"does not let me use this value."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:226
+#, no-c-format
+msgid ""
+"The internal calculations of the new loan wizard do not allow a 0% interest "
+"rate. The best way to handle this situation is to <link "
+"linkend=\"details.accounts.create.account\">create a simple liability "
+"account</link> with a starting balance for the amount of the loan, and then "
+"<link linkend=\"details.schedules.new\">create a schedule</link> "
+"for the required payments."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:237
+#, no-c-format
+msgid "Why don't I see all my transactions in the ledger?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:240
+#, no-c-format
+msgid ""
+"There are several settings that control which transactions are displayed in the "
+"ledger view of an account. First, check the <link "
+"linkend=\"details.ledgers.view.filter\">ledger filter area</link>"
+". If there is anything typed in the search box, only transactions containing "
+"that text will be shown. If the status dropdown has been changed from <quote>"
+"Any status,</quote> then only transaction of the selected type will be shown. "
+"In addition, there are two important settings in the <link "
+"linkend=\"details.settings.general.filter\">filter options</link> "
+"section on the &kappname; Settings dialog. If the <guilabel>"
+"Do not show transactions prior to</guilabel> field is set, only transactions on "
+"or after that date will be shown in the ledger. If the <guilabel>"
+"Do not show reconciled transactions</guilabel> box is checked, then no "
+"reconciled transactions will be shown."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:258
+#, no-c-format
+msgid ""
+"I mistyped the name of a payee and want to change it in all transaction. Is "
+"there a global search/replace?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:262
+#, no-c-format
+msgid ""
+"There is no global search and replace function in KMyMoney. Nevertheless, it is "
+"easy to change a payees name: select the Payees view and find the entry with "
+"the name you want to change. Click with the &RMB; on the payee, and select "
+"<menuchoice><guimenuitem>Rename payee</guimenuitem></menuchoice>"
+". Enter the new name. Since the transactions only use a reference to the payees "
+"record, all transactions now show the new name."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:274
+#, no-c-format
+msgid "Why can't I delete an account?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:277
+#, no-c-format
+msgid ""
+"In order to delete an account, &kappname; can have no other references to it. "
+"That means you must delete all transactions, or move them to another account. "
+"If you still can't delete an account, there may be scheduled transactions "
+"referring to that account, which may not be visible in the ledger. You need to "
+"delete any future transactions and the schedule itself, or switch them to a "
+"different account."
+msgstr ""
+
+#. Tag: title
+#: faq.docbook:288
+#, no-c-format
+msgid "Import and Export Questions"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:292
+#, no-c-format
+msgid "Where do I find some more information about OFX parameters?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:295
+#, no-c-format
+msgid ""
+"Here are some external sources which might give your more information: <ulink "
+"url=\"http://ofxblog.wordpress.com/\">ofxblog</ulink> "
+"and <ulink url=\"http://www.ofxhome.com/\">ofxhome</ulink>."
+msgstr ""
+
+#. Tag: title
+#: faq.docbook:303
+#, no-c-format
+msgid "Miscellaneous questions"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:307
+#, no-c-format
+msgid "Why is there no translation for 'my' language?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:310
+#, no-c-format
+msgid ""
+"&kappname; uses the &kde; settings for language, so first, make sure that your "
+"region and language settings are correct. If they are, the most likely reason "
+"is that no one has offered to translate it yet. Translating &kde;/&Qt;-based "
+"applications is very simple, and does not require any programming skills. If "
+"you would like to translate &kappname; into your language, please post a "
+"message to the proper <ulink url=\"http://l10n.kde.org/teams-list.php\">"
+"team mailing list</ulink>. Should you fail to find your language in the list or "
+"could not contact the team members please mail directly to the <ulink "
+"url=\"mailto:kde-i18n-doc@kde.org\">KDE translation mailing list</ulink> "
+"(<ulink url=\"https://mail.kde.org/mailman/listinfo/kde-i18n-doc\">"
+"subscription</ulink> required) and we will give you the details on how you can "
+"easily provide a translation for &kappname;."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:329
+#, no-c-format
+msgid ""
+"Why did the version number jump from 1.0.5 to 4.5, and what happened to "
+"KMyMoney2?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:333
+#, no-c-format
+msgid ""
+"The use of KMyMoney2 was a historical legacy from when the project went from "
+"&kde; 1 to &kde; 2. To avoid changing the name every time there was a new &kde; "
+"version, we decided to stick with &kappname;."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:336
+#, no-c-format
+msgid ""
+"The first version of &kappname; that was considered sufficiently stable was "
+"labeled 1.0, even though it ran under &kde; 3. As the project is now becoming "
+"more closely aligned with &kde; we decided to use the same major release "
+"number."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:345
+#, no-c-format
+msgid "How can I report a bug? How can I request a new feature?"
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:348
+#, no-c-format
+msgid ""
+"The developers encourage your feedback. See the section on <link "
+"linkend=\"firsttime.contact\">Contacting the Developers / Reporting Bugs</link>"
+"."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:356
+#, no-c-format
+msgid ""
+"Why isn't there an easy way to print some scheduled transactions, or part of "
+"the ledger, or ..."
+msgstr ""
+
+#. Tag: para
+#: faq.docbook:360
+#, no-c-format
+msgid ""
+"Look in the <link linkend=\"details.reports.avail\">Reports</link> "
+"section. Many of the reports actually provide an easy way to print thing you "
+"can't quite do directly from the ledger or other screens."
+msgstr ""

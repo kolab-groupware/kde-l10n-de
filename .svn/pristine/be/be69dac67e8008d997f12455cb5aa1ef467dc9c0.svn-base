@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
+"dtd/kdex.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % German "INCLUDE"
+> <!-- change language only here -->
+]>
+	
+<article lang="&language;" id="cgi">
+<title
+>cgi</title>
+<articleinfo>
+<authorgroup>
+<author
+>&Lauri.Watts;&Lauri.Watts.mail;</author>
+<othercredit role="translator"
+><firstname
+>Marco</firstname
+><surname
+>Wegner</surname
+><affiliation
+><address
+><email
+>mail@marcowegner.de</email
+></address
+></affiliation
+><contrib
+>Übersetzer</contrib
+></othercredit
+> 
+</authorgroup>
+</articleinfo>
+
+<para
+>Das <acronym
+>CGI</acronym
+>-Modul bietet eine Möglichkeit zur Ausführung von <acronym
+>CGI</acronym
+>-Programmen, ohne das dazu ein Webserver laufen muss. So können Sie beispielsweise <acronym
+>CGI</acronym
+>-Programme lokal testen oder Suchmaschinen verwenden, die nur eine <acronym
+>CGI</acronym
+>-Schnittstelle bieten - wie die von <application
+>Doxygen</application
+>.</para>
+
+<para
+>Das Modul implementiert das Protokoll <command
+>cgi</command
+>. Es verwendet den Dateinamen der angegeben &URL; und durchsucht eine Liste von Ordnern, die vom Benutzer eingerichtet werden kann.</para>
+<para
+>Eine Liste der durchsuchten Ordner erhalten Sie mit dem Befehl <userinput
+><command
+>kde4-config</command
+> <option
+>--path cgi</option
+> </userinput
+>. Die Voreinstellung ist <filename class="directory"
+>$<envar
+>HOME</envar
+>/.kde4/cgi-bin/</filename
+>.</para>
+
+<para
+>Mit dem Modul <guilabel
+>CGI-Skripte</guilabel
+> der &systemsettings;, das mit <userinput
+><command
+>kcmshell4</command
+> <option
+>kcmcgi</option
+> </userinput
+> aufgerufen wird, können Sie zusätzliche benutzerdefinierte Pfade hinzufügen oder entfernen, die nach ausführbaren CGI-Skripten durchsucht werden.</para>
+
+<para
+>Wenn dieses Ein-/Ausgabemodul in diesen Ordnern eine ausführbare Datei mit dem angegeben Namen findet, wird diese ausgeführt. Dabei werden die Argumente der &URL; an die ausführbare Datei weitergegeben. Außerdem werden die Umgebungsvariablen gesetzt, die das <acronym
+>CGI</acronym
+>-Programm benötigt.</para>
+
+</article>
+<!-- 
+[kde-doc-english] Documentation/Example for CGI kioslave
+Juergen Pfennig <info@j-pfennig.de>
+http://lists.kde.org/?l=kde-doc-english&m=115118709706164&w=2 -->

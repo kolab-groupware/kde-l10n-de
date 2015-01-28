@@ -1,0 +1,386 @@
+# Thomas Diehl <thd@kde.org>, 2002, 2003, 2004.
+# Stephan Johach <hunsum@gmx.de>, 2005.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006, 2007, 2008, 2009.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmcomponentchooser\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2012-08-20 04:50+0200\n"
+"PO-Revision-Date: 2010-03-09 13:43+0100\n"
+"Last-Translator: Panagiotis Papadopoulos <pano_90@gmx.net>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Thomas Diehl,Thomas Reitelbach"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "thd@kde.org,tr@erdfunkstelle.de"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: browserconfig_ui.ui:12
+msgid "<qt>Open <b>http</b> and <b>https</b> URLs</qt>"
+msgstr ""
+"<qt>Adressen öffnen, die mit <b>http</b> oder <b>https</b> beginnen</qt>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioKIO)
+#: browserconfig_ui.ui:19
+msgid "in an application based on the contents of the URL"
+msgstr "in einem Programm, das auf Inhalten der Adresse basiert"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioExec)
+#: browserconfig_ui.ui:29
+msgid "in the following browser:"
+msgstr "mit folgendem Browser:"
+
+#. i18n: ectx: property (text), widget (QToolButton, btnSelectBrowser)
+#. i18n: ectx: property (text), widget (QToolButton, btnSelectEmail)
+#. i18n: ectx: property (text), widget (QToolButton, btnSelectFileManager)
+#. i18n: ectx: property (text), widget (QToolButton, btnSelectTerminal)
+#: browserconfig_ui.ui:64 emailclientconfig_ui.ui:69
+#: filemanagerconfig_ui.ui:41 terminalemulatorconfig_ui.ui:60
+msgid "..."
+msgstr "..."
+
+#: componentchooser.cpp:135
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#: componentchooser.cpp:151
+msgid ""
+"<qt>You changed the default component of your choice, do want to save that "
+"change now ?</qt>"
+msgstr ""
+"<qt>Sie haben die Standardkomponente geändert. Soll die neue Einstellung "
+"gespeichert werden?</qt>"
+
+#: componentchooser.cpp:155
+msgid "No description available"
+msgstr "Keine Beschreibung verfügbar"
+
+#: componentchooser.cpp:166 componentchooser.cpp:171
+#, kde-format
+msgid ""
+"Choose from the list below which component should be used by default for the "
+"%1 service."
+msgstr ""
+"Wählen Sie aus der Liste unten die Standardkomponente für den Dienst %1."
+
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, GroupBox1)
+#: componentchooser_ui.ui:26
+msgid ""
+"Here you can change the component program. Components are programs that "
+"handle basic tasks, like the terminal emulator, the text editor and the "
+"email client. Different KDE applications sometimes need to invoke a console "
+"emulator, send a mail or display some text. To do so consistently, these "
+"applications always call the same components. You can choose here which "
+"programs these components are."
+msgstr ""
+"Hier können Sie das Komponentenprogramm wechseln. „Komponenten“ sind "
+"Programme, die elementare Aufgaben erledigen, so etwa der Terminal-Emulator, "
+"der Texteditor oder das E-Mail-Programm. KDE-Programme müssen gelegentlich "
+"einen Terminal-Emulator aufrufen, eine E-Mail verschicken oder Text "
+"darstellen. Um die Einheitlichkeit zu wahren, verwenden die Anwendungen "
+"dieselben Standardkomponenten. Hier können Sie die Programme für diese "
+"Komponenten auswählen."
+
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
+#: componentchooser_ui.ui:29
+msgid "Default Component"
+msgstr "Standard-Komponente"
+
+#. i18n: ectx: property (whatsThis), widget (KListWidget, ServiceChooser)
+#: componentchooser_ui.ui:44
+msgid ""
+"<qt>\n"
+"<p>This list shows the configurable component types. Click the component you "
+"want to configure.</p>\n"
+"<p>In this dialog you can change KDE default components. Components are "
+"programs that handle basic tasks, like the terminal emulator, the text "
+"editor and the email client. Different KDE applications sometimes need to "
+"invoke a console emulator, send a mail or display some text. To do so "
+"consistently, these applications always call the same components. Here you "
+"can select which programs these components are.</p>\n"
+"</qt>"
+msgstr ""
+"<qt>\n"
+"<p>Diese Liste zeigt die einstellbaren Komponententypen an. Klicken Sie auf "
+"einen der Einträge, wenn Sie Festlegungen dazu treffen möchten.</p>\n"
+"<p>In diesem Dialog können Sie zu anderen KDE-Standardkomponenten wechseln. "
+"„Komponenten“ sind Programme, die elementare Aufgaben erledigen, so etwa der "
+"Terminal-Emulator, der Texteditor oder das E-Mail-Programm. Einige KDE-"
+"Programme müssen gelegentlich einen Terminal-Emulator aufrufen, eine E-Mail "
+"verschicken oder Text darstellen. Um die Einheitlichkeit zu wahren, "
+"verwenden die Anwendungen dieselben Standardkomponenten. Hier können Sie die "
+"Programme für diese Komponenten auswählen.</p>\n"
+"</qt>"
+
+#: componentchooserbrowser.cpp:103
+msgid "Select preferred Web browser application:"
+msgstr "Bevorzugten Webbrowser auswählen:"
+
+#: componentchooseremail.cpp:79
+msgid "Select preferred email client:"
+msgstr "Bevorzugtes E-Mail-Programm auswählen:"
+
+#: componentchooserterminal.cpp:95
+msgid "Select preferred terminal application:"
+msgstr "Bevorzugtes Terminalprogramm auswählen:"
+
+#: componentchooserwm.cpp:89
+msgid "The new window manager will be used when KDE is started the next time."
+msgstr "Der neue Fenstermanager wird mit dem nächsten KDE-Start verwendet."
+
+#: componentchooserwm.cpp:90 componentchooserwm.cpp:143
+msgid "Window Manager Change"
+msgstr "Fenstermanager-Wechsel"
+
+#: componentchooserwm.cpp:103
+msgid ""
+"A new window manager is running.\n"
+"It is still recommended to restart this KDE session to make sure all running "
+"applications adjust for this change."
+msgstr ""
+"Ein neuer Fenstermanager ist nun aktiv.\n"
+"Es ist ratsam, diese KDE-Sitzung neu zu starten, damit alle Anwendungen sich "
+"an die Änderung anpassen können."
+
+#: componentchooserwm.cpp:106
+msgid "Window Manager Replaced"
+msgstr "Fenstermanager ersetzt"
+
+#: componentchooserwm.cpp:142
+msgid ""
+"Your running window manager will be now replaced with the configured one."
+msgstr ""
+"Der laufende Fenstermanager wird nun mit dem neu eingerichteten ersetzt."
+
+#: componentchooserwm.cpp:151
+msgid "Config Window Manager Change"
+msgstr "Einrichtung der Fenstermanager-Änderung"
+
+#: componentchooserwm.cpp:153
+msgid "&Accept Change"
+msgstr "Änderungen an&wenden"
+
+#: componentchooserwm.cpp:154
+msgid "&Revert to Previous"
+msgstr "Zur &vorherigen Einrichtung zurückkehren"
+
+#: componentchooserwm.cpp:156
+msgid ""
+"The configured window manager is being launched.\n"
+"Please check it has started properly and confirm the change.\n"
+"The launch will be automatically reverted in 20 seconds."
+msgstr ""
+"Der eingestellte Fenstermanager wird nun gestartet.\n"
+"Bitte prüfen Sie, dass er ordnungsgemäß gestartet wurde und bestätigen Sie "
+"dies.\n"
+"Der Start wird ansonsten in 20 Sekunden automatisch rückgängig gemacht."
+
+#: componentchooserwm.cpp:171
+msgid ""
+"The running window manager has been reverted to the default KDE window "
+"manager KWin."
+msgstr ""
+"Der laufende Fenstermanager wurde zurückgesetzt auf die KDE-Voreinstellung "
+"„KWin“."
+
+#: componentchooserwm.cpp:178
+msgid ""
+"The new window manager has failed to start.\n"
+"The running window manager has been reverted to the default KDE window "
+"manager KWin."
+msgstr ""
+"Der neue Fenstermanager lässt sich nicht starten.\n"
+"Der laufende Fenstermanager wurde zurückgesetzt auf die KDE-Voreinstellung "
+"„KWin“."
+
+#: componentchooserwm.cpp:300
+msgid "Running the configuration tool failed"
+msgstr "Die Ausführung des Einrichtungsprogrammes ist fehlgeschlagen."
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, kmailCB)
+#: emailclientconfig_ui.ui:12
+msgid "Kmail is the standard Mail program for the KDE desktop."
+msgstr "KMail ist das Standard-E-Mail-Programm für KDE."
+
+#. i18n: ectx: property (text), widget (QRadioButton, kmailCB)
+#: emailclientconfig_ui.ui:15
+msgid "&Use KMail as preferred email client"
+msgstr "&KMail als bevorzugtes E-Mail-Programm festlegen"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, otherCB)
+#: emailclientconfig_ui.ui:22
+msgid "Select this option if you want to use any other mail program."
+msgstr ""
+"Wählen Sie diese Einstellung, wenn Sie ein anderes E-Mail-Programm verwenden "
+"möchten."
+
+#. i18n: ectx: property (text), widget (QRadioButton, otherCB)
+#: emailclientconfig_ui.ui:25
+msgid "Use a different &email client:"
+msgstr "Anderes E-&Mail-Programm verwenden:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, txtEMailClient)
+#: emailclientconfig_ui.ui:53
+#, no-c-format
+msgid ""
+"<ul> <li>%t: Recipient's address</li> <li>%s: Subject</li> <li>%c: Carbon "
+"Copy (CC)</li> <li>%b: Blind Carbon Copy (BCC)</li> <li>%B: Template body "
+"text</li> <li>%A: Attachment </li> <li>%u: Full mailto: URL </li></ul>"
+msgstr ""
+"<ul> <li>%t: Empfängeradresse</li> <li>%s: Betreff</li> <li>%c: Kopie (CC)</"
+"li> <li>%b: Blindkopie (BCC)</li> <li>%B: Textvorlage</li> <li>%A: "
+"Dateianhang </li> <li>%u: Vollständige mailto:-Adresse</li></ul>"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, txtEMailClient)
+#: emailclientconfig_ui.ui:56
+#, no-c-format
+msgid ""
+"Press this button to select your favorite email client. Please note that the "
+"file you select has to have the executable attribute set in order to be "
+"accepted.<br/> You can also use several placeholders which will be replaced "
+"with the actual values when the email client is called:<ul> <li>%t: "
+"Recipient's address</li> <li>%s: Subject</li> <li>%c: Carbon Copy (CC)</li> "
+"<li>%b: Blind Carbon Copy (BCC)</li> <li>%B: Template body text</li> <li>%A: "
+"Attachment </li> </ul>"
+msgstr ""
+"Klicken Sie auf diesen Knopf, um Ihr bevorzugtes E-Mail-Programm "
+"auszuwählen. Bitte beachten Sie, dass es sich um eine ausführbare Datei "
+"handeln muss.<br/>Sie können außerdem verschiedene Variablen verwenden, die "
+"beim Start des E-Mail-Programms mit den übergebenen Werten ausgefüllt werden:"
+"<ul> <li>%t: Empfängeradresse</li> <li>%s: Betreff</li> <li>%c: Kopie (CC)</"
+"li> <li>%b: Blindkopie (BCC)</li> <li>%B: Textvorlage</li> <li>%A: "
+"Dateianhang </li> </ul>"
+
+#. i18n: ectx: property (whatsThis), widget (QToolButton, btnSelectEmail)
+#: emailclientconfig_ui.ui:66
+msgid "Click here to browse for the mail program file."
+msgstr ""
+"Klicken Sie hier, um nach der ausführbaren Datei des E-Mail-Programms zu "
+"suchen."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRunTerminal)
+#: emailclientconfig_ui.ui:99
+msgid ""
+"Activate this option if you want the selected email client to be executed in "
+"a terminal (e.g. <em>Konsole</em>)."
+msgstr ""
+"Aktivieren Sie diese Einstellung, wenn Sie möchten, dass das ausgewählte E-"
+"Mail-Programm in einem Befehlsfenster (also einem Terminalprogramm wie "
+"<em>Konsole</em>) ausgeführt wird."
+
+#. i18n: ectx: property (text), widget (QCheckBox, chkRunTerminal)
+#: emailclientconfig_ui.ui:102
+msgid "&Run in terminal"
+msgstr "In &Terminal ausführen"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: filemanagerconfig_ui.ui:12
+msgid "Browse directories using the following file manager:"
+msgstr "Ordner mit dem folgenden Dateimanager durchsehen:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioExec)
+#: filemanagerconfig_ui.ui:24
+msgid "Other: click Add... in the dialog shown here:"
+msgstr "Anderer: Klicken Sie auf Hinzufügen in diesem Dialog:"
+
+#: kcm_componentchooser.cpp:46
+msgid "kcmcomponentchooser"
+msgstr "kcmcomponentchooser"
+
+#: kcm_componentchooser.cpp:46
+msgid "Component Chooser"
+msgstr "Komponentenauswahl"
+
+#: kcm_componentchooser.cpp:48
+msgid "(c), 2002 Joseph Wenninger"
+msgstr "© 2002, Joseph Wenninger"
+
+#: kcm_componentchooser.cpp:50
+msgid "Joseph Wenninger"
+msgstr "Joseph Wenninger"
+
+#: ktimerdialog.cpp:164
+#, kde-format
+msgid "1 second remaining:"
+msgid_plural "%1 seconds remaining:"
+msgstr[0] "Noch 1 Sekunde:"
+msgstr[1] "Noch %1 Sekunden:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, terminalCB)
+#: terminalemulatorconfig_ui.ui:12
+msgid "&Use Konsole as terminal application"
+msgstr "K&onsole als Terminalprogramm verwenden"
+
+#. i18n: ectx: property (text), widget (QRadioButton, otherCB)
+#: terminalemulatorconfig_ui.ui:19
+msgid "Use a different &terminal program:"
+msgstr "Anderes &Terminalprogramm verwenden:"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, terminalLE)
+#: terminalemulatorconfig_ui.ui:47
+msgid ""
+"Press this button to select your favorite terminal client. Please note that "
+"the file you select has to have the executable attribute set in order to be "
+"accepted.<br/> Also note that some programs that utilize Terminal Emulator "
+"will not work if you add command line arguments (Example: konsole -ls)."
+msgstr ""
+"Drücken Sie diesen Knopf, um Ihr bevorzugtes Terminalprogramm auszuwählen. "
+"Bitte beachten Sie, dass die ausgewählte Datei als ausführbar gekennzeichnet "
+"sein muss, um akzeptiert zu werden.<br/>Beachten Sie außerdem, dass manche "
+"Programme, die Terminalemulatoren verwenden, nicht korrekt funktionieren, "
+"wenn Sie Befehlszeilenargumente übergeben (wie z. B. konsole -ls)."
+
+#. i18n: ectx: property (whatsThis), widget (QToolButton, btnSelectTerminal)
+#: terminalemulatorconfig_ui.ui:57
+msgid "Click here to browse for terminal program."
+msgstr ""
+"Klicken Sie hier, um nach der ausführbaren Datei des Terminalprogramms zu "
+"suchen."
+
+#. i18n: ectx: property (text), widget (QRadioButton, kwinRB)
+#: wmconfig_ui.ui:12
+msgid "&Use the default KDE window manager (KWin)"
+msgstr "KDE-&Voreinstellung für den Fenstermanager verwenden (KWin)"
+
+#. i18n: ectx: property (text), widget (QRadioButton, differentRB)
+#: wmconfig_ui.ui:19
+msgid "Use a different &window manager:"
+msgstr "Einen anderen &Fenstermanager verwenden:"
+
+#. i18n: ectx: property (text), widget (KPushButton, configureButton)
+#: wmconfig_ui.ui:60
+msgid "Configure"
+msgstr "Einrichten"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: wmconfig_ui.ui:87
+msgid ""
+"Note: Most window managers have their own configuration and do not follow "
+"KDE settings."
+msgstr ""
+"Hinweis: Die meisten Fenstermanager haben eine eigene Einrichtung und "
+"richten sich nicht nach KDE-Einstellungen."
+
+#~ msgid ""
+#~ "Here you can read a small description of the currently selected "
+#~ "component. To change the selected component, click on the list to the "
+#~ "left. To change the component program,  please choose it below."
+#~ msgstr ""
+#~ "Hier können Sie eine kurze Beschreibung der gerade ausgewählten "
+#~ "Komponente lesen. Um zu einer anderen Komponente zu wechseln, klicken Sie "
+#~ "auf einen Eintrag in der Liste auf der linken Seite. Um zu einem anderen "
+#~ "Komponentenprogramm zu gehen, wählen Sie unten eines aus."
+
+#~ msgid "Component Description"
+#~ msgstr "Beschreibung der Komponente"
