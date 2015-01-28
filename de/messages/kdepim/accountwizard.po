@@ -2,13 +2,14 @@
 # Frederik Schwarzer <schwarzer@kde.org>, 2010.
 # Thomas Reitelbach <tr@erdfunkstelle.de>, 2010.
 # Burkhard Lück <lueck@hube-lueck.de>, 2012, 2013.
+# Sandro Knauß <mail@sandroknauss.de>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: accountwizard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-01-28 17:17+0100\n"
-"PO-Revision-Date: 2013-12-04 06:53+0100\n"
-"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"PO-Revision-Date: 2015-01-28 18:19+0100\n"
+"Last-Translator: Sandro Knauß <mail@sandroknauss.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -42,12 +43,12 @@ msgstr "Die Konfigurationsdatei für „%1“ wurde nicht geändert."
 
 #: configfile.cpp:101
 msgid "No given name for the configuration"
-msgstr ""
+msgstr "Kein Name für die Konfiguration angegeben"
 
 #: configfile.cpp:112
 #, kde-format
 msgid "Unknown configurationname '%1'"
-msgstr ""
+msgstr "Unbekannter Konfigurationsnamen '%1'"
 
 #: dialog.cpp:58
 msgid "Provide personal data"
@@ -129,7 +130,7 @@ msgstr "LDAP-Server wird eingerichtet ..."
 #: ldap.cpp:60
 #, kde-format
 msgid "Needed parameters are missing for ldap config server='%1'"
-msgstr ""
+msgstr "Benötigte Parameter für den LDAP Config Server='%1' fehlen"
 
 #: ldap.cpp:142
 msgid "LDAP set up."
@@ -137,15 +138,15 @@ msgstr "LDAP ist eingerichtet."
 
 #: ldap.cpp:195
 msgid "Removed LDAP entry."
-msgstr ""
+msgstr "LDAP Eintrag entfernt."
 
 #: ldap.cpp:202
 msgid "No config found to edit"
-msgstr ""
+msgstr "Keine Konfiguration zum editieren gefunden"
 
 #: ldap.cpp:211
 msgid "Edit Host"
-msgstr ""
+msgstr "Host bearbeiten"
 
 #: loadpage.cpp:48
 #, kde-format
@@ -283,19 +284,18 @@ msgstr "Automatische Erkennung der Einstellungen fehlgeschlagen"
 #: setupautoconfigkolabfreebusy.cpp:85 setupautoconfigkolabldap.cpp:85
 #: setupispdb.cpp:149
 msgid "Searching for autoconfiguration..."
-msgstr ""
+msgstr "Suche nach Autokonfiguration läuft..."
 
 #: setupautoconfigkolabfreebusy.cpp:110 setupautoconfigkolabldap.cpp:110
 #: setupispdb.cpp:174
 msgid "Autoconfiguration found."
-msgstr ""
+msgstr "Autokonfiguration gefunden."
 
 #: setupautoconfigkolabfreebusy.cpp:112 setupautoconfigkolabldap.cpp:112
 #: setupispdb.cpp:176
-#, fuzzy
 #| msgid "Autodetecting settings failed"
 msgid "Autoconfiguration failed."
-msgstr "Automatische Erkennung der Einstellungen fehlgeschlagen"
+msgstr "Automatische Erkennung der Einstellungen fehlgeschlagen."
 
 #. i18n: ectx: property (text), widget (QLabel, progressLabel)
 #: setupmanager.cpp:94 ui/setuppage.ui:37
@@ -330,7 +330,7 @@ msgstr "Zugang erfolgreich gelöscht."
 #: transport.cpp:125
 #, kde-format
 msgid "Could not load config dialog for uid=%1"
-msgstr ""
+msgstr "Laden des Konfigurationsdialoges für die uid=%1 ist fehlgeschlagen"
 
 #. i18n: ectx: property (text), widget (QLabel, statusLabel)
 #: ui/loadpage.ui:30
