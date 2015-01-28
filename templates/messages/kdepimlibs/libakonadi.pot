@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-10 05:21+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
@@ -61,26 +61,26 @@ msgstr ""
 msgid "Do you really want to delete the selected agent instance?"
 msgstr ""
 
-#: agentbase.cpp:336 preprocessorbase_p.cpp:41
+#: agentbase.cpp:376 preprocessorbase_p.cpp:41
 #, kde-format
 msgid "Unable to register object at dbus: %1"
 msgstr ""
 
-#: agentbase.cpp:423
+#: agentbase.cpp:463
 #, kde-format
 msgctxt "Name and type of Akonadi resource"
 msgid "%1 of type %2"
 msgstr ""
 
-#: agentbase.cpp:843 agentbase.cpp:844
+#: agentbase.cpp:927 agentbase.cpp:928
 msgid "Akonadi Agent"
 msgstr ""
 
-#: agentbase.cpp:847
+#: agentbase.cpp:931
 msgid "Agent identifier"
 msgstr ""
 
-#: agentbase_p.h:63 resourcescheduler.cpp:235
+#: agentbase_p.h:63 resourcescheduler.cpp:259
 msgctxt "@info:status Application ready for work"
 msgid "Ready"
 msgstr ""
@@ -232,37 +232,37 @@ msgstr ""
 msgid "Use folder by default"
 msgstr ""
 
-#: collectiondialog_desktop.cpp:223 collectiondialog_mobile.cpp:111
+#: collectiondialog_desktop.cpp:203 collectiondialog_mobile.cpp:111
 msgid "&New Subfolder..."
 msgstr ""
 
-#: collectiondialog_desktop.cpp:224
+#: collectiondialog_desktop.cpp:204
 msgid "Create a new subfolder under the currently selected folder"
 msgstr ""
 
-#: collectiondialog_desktop.cpp:259 collectiondialog_mobile.cpp:187
-#: standardactionmanager.cpp:251
+#: collectiondialog_desktop.cpp:239 collectiondialog_mobile.cpp:183
+#: standardactionmanager.cpp:247
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr ""
 
-#: collectiondialog_desktop.cpp:260 collectiondialog_mobile.cpp:188
+#: collectiondialog_desktop.cpp:240 collectiondialog_mobile.cpp:184
 msgctxt "@label:textbox, name of a thing"
 msgid "Name"
 msgstr ""
 
-#: collectiondialog_desktop.cpp:277 collectiondialog_mobile.cpp:205
-#: standardactionmanager.cpp:255
+#: collectiondialog_desktop.cpp:257 collectiondialog_mobile.cpp:201
+#: standardactionmanager.cpp:251
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr ""
 
-#: collectiondialog_desktop.cpp:278 collectiondialog_mobile.cpp:206
-#: standardactionmanager.cpp:257
+#: collectiondialog_desktop.cpp:258 collectiondialog_mobile.cpp:202
+#: standardactionmanager.cpp:253
 msgid "Folder creation failed"
 msgstr ""
 
-#: collectionfetchjob.cpp:210
+#: collectionfetchjob.cpp:231
 msgid "Invalid collection given."
 msgstr ""
 
@@ -355,17 +355,7 @@ msgctxt "@title:column, total size (in bytes) of the collection"
 msgid "Size"
 msgstr ""
 
-#: collectionsync.cpp:200
-msgid "Inconsistent local collection tree detected."
-msgstr ""
-
-#: collectionsync.cpp:365
-msgid ""
-"Remote collection without root-terminated ancestor chain provided, resource "
-"is broken."
-msgstr ""
-
-#: collectionsync.cpp:724
+#: collectionsync.cpp:508 collectionsync.cpp:646
 msgid "Found unresolved orphan collections"
 msgstr ""
 
@@ -452,39 +442,39 @@ msgstr ""
 msgid "C&ancel"
 msgstr ""
 
-#: entitytreemodel.cpp:230
+#: entitytreemodel.cpp:229
 msgid "Loading..."
 msgstr ""
 
-#: entitytreemodel.cpp:557
+#: entitytreemodel.cpp:556
 #, kde-format
 msgid ""
 "The target collection '%1' contains already\n"
 "a collection with name '%2'."
 msgstr ""
 
-#: entitytreemodel.cpp:737
+#: entitytreemodel.cpp:736
 msgctxt "@title:column Name of a thing"
 msgid "Name"
 msgstr ""
 
-#: entitytreemodel_p.cpp:1385
+#: entitytreemodel_p.cpp:1393
 msgid "Could not copy item:"
 msgstr ""
 
-#: entitytreemodel_p.cpp:1387
+#: entitytreemodel_p.cpp:1395
 msgid "Could not copy collection:"
 msgstr ""
 
-#: entitytreemodel_p.cpp:1389
+#: entitytreemodel_p.cpp:1397
 msgid "Could not move item:"
 msgstr ""
 
-#: entitytreemodel_p.cpp:1391
+#: entitytreemodel_p.cpp:1399
 msgid "Could not move collection:"
 msgstr ""
 
-#: entitytreemodel_p.cpp:1393
+#: entitytreemodel_p.cpp:1401
 msgid "Could not link entity:"
 msgstr ""
 
@@ -624,72 +614,82 @@ msgstr ""
 msgid "Recent Folder"
 msgstr ""
 
+#: relationcreatejob.cpp:52 relationdeletejob.cpp:52
+msgid "Failed to create relation."
+msgstr ""
+
 #: renamefavoritedialog.cpp:32
 msgid "Default Name"
 msgstr ""
 
-#: resourcebase.cpp:568
+#: resourcebase.cpp:576
 msgctxt "@title application name"
 msgid "Akonadi Resource"
 msgstr ""
 
-#: resourcebase.cpp:569
+#: resourcebase.cpp:577
 msgctxt "@title application description"
 msgid "Akonadi Resource"
 msgstr ""
 
-#: resourcebase.cpp:573
+#: resourcebase.cpp:581
 msgctxt "@label commandline option"
 msgid "Resource identifier"
 msgstr ""
 
-#: resourcebase.cpp:601
+#: resourcebase.cpp:609
 msgctxt "@info"
 msgid "Invalid item retrieved"
 msgstr ""
 
-#: resourcebase.cpp:626
+#: resourcebase.cpp:634
 #, kde-format
 msgctxt "@info"
 msgid "Error while creating item: %1"
 msgstr ""
 
-#: resourcebase.cpp:651
+#: resourcebase.cpp:659
 #, kde-format
 msgctxt "@info"
 msgid "Error while updating collection: %1"
 msgstr ""
 
-#: resourcebase.cpp:738
+#: resourcebase.cpp:745
 #, kde-format
 msgctxt "@info"
 msgid "Updating local collection failed: %1."
 msgstr ""
 
-#: resourcebase.cpp:764
+#: resourcebase.cpp:750
+#, kde-format
+msgctxt "@info"
+msgid "Updating local items failed: %1."
+msgstr ""
+
+#: resourcebase.cpp:774
 msgctxt "@info"
 msgid "Cannot fetch item in offline mode."
 msgstr ""
 
-#: resourcebase.cpp:910
+#: resourcebase.cpp:920
 #, kde-format
 msgctxt "@info:status"
 msgid "Syncing folder '%1'"
 msgstr ""
 
-#: resourcebase.cpp:929
+#: resourcebase.cpp:939
 msgid "Failed to retrieve collection for sync."
 msgstr ""
 
-#: resourcebase.cpp:964
+#: resourcebase.cpp:980
 msgid "Failed to retrieve collection for attribute sync."
 msgstr ""
 
-#: resourcebase.cpp:999
+#: resourcebase.cpp:1027
 msgid "The requested item no longer exists"
 msgstr ""
 
-#: resourcescheduler.cpp:389 resourcescheduler.cpp:394
+#: resourcescheduler.cpp:419 resourcescheduler.cpp:424
 msgctxt "@info"
 msgid "Job canceled."
 msgstr ""
@@ -1190,7 +1190,7 @@ msgid ""
 "kde.org/Akonadi\">userbase.kde.org/Akonadi</a>.</p>"
 msgstr ""
 
-#: session.cpp:292
+#: session.cpp:293
 #, kde-format
 msgid "Protocol version %1 found, expected at least %2"
 msgstr ""
@@ -1200,24 +1200,24 @@ msgstr ""
 msgid "Could not fetch root collection of resource %1."
 msgstr ""
 
-#: specialcollectionshelperjobs.cpp:205
+#: specialcollectionshelperjobs.cpp:204
 msgid "No resource ID given."
 msgstr ""
 
-#: specialcollectionshelperjobs.cpp:336
+#: specialcollectionshelperjobs.cpp:335
 #, kde-format
 msgid "Invalid resource identifier '%1'"
 msgstr ""
 
-#: specialcollectionshelperjobs.cpp:353 specialcollectionshelperjobs.cpp:361
+#: specialcollectionshelperjobs.cpp:352 specialcollectionshelperjobs.cpp:360
 msgid "Failed to configure default resource via D-Bus."
 msgstr ""
 
-#: specialcollectionshelperjobs.cpp:422
+#: specialcollectionshelperjobs.cpp:421
 msgid "Failed to fetch the resource collection."
 msgstr ""
 
-#: specialcollectionshelperjobs.cpp:617
+#: specialcollectionshelperjobs.cpp:616
 msgid "Timeout trying to get lock."
 msgstr ""
 
@@ -1229,7 +1229,7 @@ msgstr ""
 msgid "New"
 msgstr ""
 
-#: standardactionmanager.cpp:91 standardactionmanager.cpp:223
+#: standardactionmanager.cpp:91 standardactionmanager.cpp:219
 #, kde-format
 msgid "&Delete Folder"
 msgid_plural "&Delete %1 Folders"
@@ -1240,7 +1240,7 @@ msgstr[1] ""
 msgid "Delete"
 msgstr ""
 
-#: standardactionmanager.cpp:92 standardactionmanager.cpp:225
+#: standardactionmanager.cpp:92 standardactionmanager.cpp:221
 #, kde-format
 msgid "&Synchronize Folder"
 msgid_plural "&Synchronize %1 Folders"
@@ -1248,6 +1248,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: standardactionmanager.cpp:92 standardactionmanager.cpp:110
+#: standardactionmanager.cpp:126
 msgid "Synchronize"
 msgstr ""
 
@@ -1325,7 +1326,7 @@ msgstr ""
 msgid "Move Folder To..."
 msgstr ""
 
-#: standardactionmanager.cpp:105 standardactionmanager.cpp:217
+#: standardactionmanager.cpp:105 standardactionmanager.cpp:213
 #, kde-format
 msgid "&Cut Item"
 msgid_plural "&Cut %1 Items"
@@ -1336,7 +1337,7 @@ msgstr[1] ""
 msgid "Cut"
 msgstr ""
 
-#: standardactionmanager.cpp:106 standardactionmanager.cpp:219
+#: standardactionmanager.cpp:106 standardactionmanager.cpp:215
 #, kde-format
 msgid "&Cut Folder"
 msgid_plural "&Cut %1 Folders"
@@ -1347,7 +1348,7 @@ msgstr[1] ""
 msgid "Create Resource"
 msgstr ""
 
-#: standardactionmanager.cpp:108 standardactionmanager.cpp:246
+#: standardactionmanager.cpp:108 standardactionmanager.cpp:242
 #, kde-format
 msgid "Delete Resource"
 msgid_plural "Delete %1 Resources"
@@ -1358,7 +1359,7 @@ msgstr[1] ""
 msgid "&Resource Properties"
 msgstr ""
 
-#: standardactionmanager.cpp:110 standardactionmanager.cpp:248
+#: standardactionmanager.cpp:110 standardactionmanager.cpp:244
 #, kde-format
 msgid "Synchronize Resource"
 msgid_plural "Synchronize %1 Resources"
@@ -1427,96 +1428,100 @@ msgstr ""
 msgid "Synchronize Favorite Folders"
 msgstr ""
 
-#: standardactionmanager.cpp:213
+#: standardactionmanager.cpp:126
+msgid "Synchronize Folder Tree"
+msgstr ""
+
+#: standardactionmanager.cpp:209
 #, kde-format
 msgid "&Copy Folder"
 msgid_plural "&Copy %1 Folders"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:215
+#: standardactionmanager.cpp:211
 #, kde-format
 msgid "&Copy Item"
 msgid_plural "&Copy %1 Items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:221
+#: standardactionmanager.cpp:217
 #, kde-format
 msgid "&Delete Item"
 msgid_plural "&Delete %1 Items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:227
+#: standardactionmanager.cpp:223
 #, kde-format
 msgid "&Delete Resource"
 msgid_plural "&Delete %1 Resources"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:229
+#: standardactionmanager.cpp:225
 #, kde-format
 msgid "&Synchronize Resource"
 msgid_plural "&Synchronize %1 Resources"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:232
+#: standardactionmanager.cpp:228
 #, kde-format
 msgid "Copy Folder"
 msgid_plural "Copy %1 Folders"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:234
+#: standardactionmanager.cpp:230
 #, kde-format
 msgid "Copy Item"
 msgid_plural "Copy %1 Items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:236
+#: standardactionmanager.cpp:232
 #, kde-format
 msgid "Cut Item"
 msgid_plural "Cut %1 Items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:238
+#: standardactionmanager.cpp:234
 #, kde-format
 msgid "Cut Folder"
 msgid_plural "Cut %1 Folders"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:240
+#: standardactionmanager.cpp:236
 #, kde-format
 msgid "Delete Item"
 msgid_plural "Delete %1 Items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:242
+#: standardactionmanager.cpp:238
 #, kde-format
 msgid "Delete Folder"
 msgid_plural "Delete %1 Folders"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:244
+#: standardactionmanager.cpp:240
 #, kde-format
 msgid "Synchronize Folder"
 msgid_plural "Synchronize %1 Folders"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:253
+#: standardactionmanager.cpp:249
 msgctxt "@label:textbox name of a thing"
 msgid "Name"
 msgstr ""
 
-#: standardactionmanager.cpp:260
+#: standardactionmanager.cpp:256
 #, kde-format
 msgid "Do you really want to delete this folder and all its sub-folders?"
 msgid_plural ""
@@ -1524,132 +1529,132 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:263
+#: standardactionmanager.cpp:259
 msgctxt "@title:window"
 msgid "Delete folder?"
 msgid_plural "Delete folders?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:265
+#: standardactionmanager.cpp:261
 #, kde-format
 msgid "Could not delete folder: %1"
 msgstr ""
 
-#: standardactionmanager.cpp:267
+#: standardactionmanager.cpp:263
 msgid "Folder deletion failed"
 msgstr ""
 
-#: standardactionmanager.cpp:270
+#: standardactionmanager.cpp:266
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties of Folder %1"
 msgstr ""
 
-#: standardactionmanager.cpp:273
+#: standardactionmanager.cpp:269
 #, kde-format
 msgid "Do you really want to delete the selected item?"
 msgid_plural "Do you really want to delete %1 items?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:276
+#: standardactionmanager.cpp:272
 msgctxt "@title:window"
 msgid "Delete item?"
 msgid_plural "Delete items?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:278
+#: standardactionmanager.cpp:274
 #, kde-format
 msgid "Could not delete item: %1"
 msgstr ""
 
-#: standardactionmanager.cpp:280
+#: standardactionmanager.cpp:276
 msgid "Item deletion failed"
 msgstr ""
 
-#: standardactionmanager.cpp:283
+#: standardactionmanager.cpp:279
 msgctxt "@title:window"
 msgid "Rename Favorite"
 msgstr ""
 
-#: standardactionmanager.cpp:285
+#: standardactionmanager.cpp:281
 msgctxt "@label:textbox name of the folder"
 msgid "Name:"
 msgstr ""
 
-#: standardactionmanager.cpp:288
+#: standardactionmanager.cpp:284
 msgctxt "@title:window"
 msgid "New Resource"
 msgstr ""
 
-#: standardactionmanager.cpp:290
+#: standardactionmanager.cpp:286
 #, kde-format
 msgid "Could not create resource: %1"
 msgstr ""
 
-#: standardactionmanager.cpp:292
+#: standardactionmanager.cpp:288
 msgid "Resource creation failed"
 msgstr ""
 
-#: standardactionmanager.cpp:295
+#: standardactionmanager.cpp:291
 #, kde-format
 msgid "Do you really want to delete this resource?"
 msgid_plural "Do you really want to delete %1 resources?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:298
+#: standardactionmanager.cpp:294
 msgctxt "@title:window"
 msgid "Delete Resource?"
 msgid_plural "Delete Resources?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: standardactionmanager.cpp:301
+#: standardactionmanager.cpp:297
 #, kde-format
 msgid "Could not paste data: %1"
 msgstr ""
 
-#: standardactionmanager.cpp:303
+#: standardactionmanager.cpp:299
 msgid "Paste failed"
 msgstr ""
 
-#: standardactionmanager.cpp:630
+#: standardactionmanager.cpp:628
 msgid "We can not add \"/\" in folder name."
 msgstr ""
 
-#: standardactionmanager.cpp:631 standardactionmanager.cpp:638
+#: standardactionmanager.cpp:629 standardactionmanager.cpp:636
 msgid "Create new folder error"
 msgstr ""
 
-#: standardactionmanager.cpp:637
+#: standardactionmanager.cpp:635
 msgid "We can not add \".\" at begin or end of folder name."
 msgstr ""
 
-#: standardactionmanager.cpp:857
+#: standardactionmanager.cpp:855
 #, kde-format
 msgid ""
 "Before syncing folder \"%1\" it is necessary to have the resource online. Do "
 "you want to make it online?"
 msgstr ""
 
-#: standardactionmanager.cpp:858
+#: standardactionmanager.cpp:856
 #, kde-format
 msgid "Account \"%1\" is offline"
 msgstr ""
 
-#: standardactionmanager.cpp:859
+#: standardactionmanager.cpp:857
 msgctxt "@action:button"
 msgid "Go Online"
 msgstr ""
 
-#: standardactionmanager.cpp:1421
+#: standardactionmanager.cpp:1427
 msgid "Move to This Folder"
 msgstr ""
 
-#: standardactionmanager.cpp:1421
+#: standardactionmanager.cpp:1427
 msgid "Copy to This Folder"
 msgstr ""
 
@@ -1712,46 +1717,46 @@ msgstr ""
 msgid "Failed to create tag."
 msgstr ""
 
-#: tageditwidget.cpp:128
+#: tageditwidget.cpp:126
 msgid "An error occurred while creating a new tag"
 msgstr ""
 
-#: tageditwidget.cpp:129
+#: tageditwidget.cpp:127
 msgid "Failed to create a new tag"
 msgstr ""
 
-#: tageditwidget.cpp:184
+#: tageditwidget.cpp:182
 #, kde-format
 msgctxt "@info"
 msgid "Do you really want to remove the tag <resource>%1</resource>?"
 msgstr ""
 
-#: tageditwidget.cpp:186
+#: tageditwidget.cpp:184
 msgctxt "@title"
 msgid "Delete tag"
 msgstr ""
 
-#: tageditwidget.cpp:187
+#: tageditwidget.cpp:185
 msgctxt "@action:button"
 msgid "Delete"
 msgstr ""
 
-#: tageditwidget.cpp:188
+#: tageditwidget.cpp:186
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr ""
 
-#: tageditwidget.cpp:226
+#: tageditwidget.cpp:221
 msgctxt "@label"
 msgid "Create new tag"
 msgstr ""
 
-#: tageditwidget.cpp:237
+#: tageditwidget.cpp:232
 msgctxt "@label:textbox"
 msgid "Configure which tags should be applied."
 msgstr ""
 
-#: tageditwidget.cpp:250
+#: tageditwidget.cpp:245
 msgctxt "@info"
 msgid "Delete tag"
 msgstr ""
@@ -1765,7 +1770,7 @@ msgstr ""
 msgid "Tag"
 msgstr ""
 
-#: tagwidget.cpp:58
+#: tagwidget.cpp:59
 msgid "..."
 msgstr ""
 

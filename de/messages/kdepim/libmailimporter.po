@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailimporter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-16 05:49+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: 2013-09-21 10:49+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -64,7 +64,7 @@ msgstr ""
 #: filter_evolution.cpp:66 filter_evolution_v2.cpp:90
 #: filter_evolution_v3.cpp:92 filter_kmail_maildir.cpp:88 filter_oe.cpp:66
 #: filter_opera.cpp:174 filter_plain.cpp:44 filter_pmail.cpp:59
-#: filter_sylpheed.cpp:119 filter_thebat.cpp:82 filter_thunderbird.cpp:154
+#: filter_sylpheed.cpp:119 filter_thebat.cpp:82 filter_thunderbird.cpp:145
 #: filterbalsa.cpp:94
 msgid "No directory selected."
 msgstr "Kein Ordner ausgewählt."
@@ -72,7 +72,7 @@ msgstr "Kein Ordner ausgewählt."
 #: filter_evolution.cpp:74 filter_evolution_v2.cpp:98
 #: filter_evolution_v3.cpp:100 filter_kmail_maildir.cpp:96
 #: filter_opera.cpp:182 filter_plain.cpp:54 filter_sylpheed.cpp:127
-#: filter_thebat.cpp:90 filter_thunderbird.cpp:162 filterbalsa.cpp:102
+#: filter_thebat.cpp:90 filter_thunderbird.cpp:153 filterbalsa.cpp:102
 msgid "No files found for import."
 msgstr "Keine Dateien zum Importieren gefunden."
 
@@ -80,7 +80,7 @@ msgstr "Keine Dateien zum Importieren gefunden."
 #: filter_evolution_v3.cpp:111 filter_kmail_maildir.cpp:106
 #: filter_mailapp.cpp:134 filter_mailmangzip.cpp:143 filter_mbox.cpp:141
 #: filter_opera.cpp:139 filter_plain.cpp:83 filter_pmail.cpp:82
-#: filter_sylpheed.cpp:139 filter_thebat.cpp:101 filter_thunderbird.cpp:191
+#: filter_sylpheed.cpp:139 filter_thebat.cpp:101 filter_thunderbird.cpp:182
 #: filterbalsa.cpp:113
 #, kde-format
 msgid "Finished importing emails from %1"
@@ -89,7 +89,7 @@ msgstr "Der Import von E-Mails aus %1 ist abgeschlossen"
 #: filter_evolution.cpp:137 filter_evolution_v2.cpp:193 filter_lnotes.cpp:97
 #: filter_mailapp.cpp:77 filter_mbox.cpp:67 filter_opera.cpp:81
 #: filter_pmail.cpp:170 filter_pmail.cpp:238 filter_pmail.cpp:256
-#: filter_pmail.cpp:295 filter_thebat.cpp:167 filter_thunderbird.cpp:255
+#: filter_pmail.cpp:295 filter_thebat.cpp:167 filter_thunderbird.cpp:246
 #, kde-format
 msgid "Unable to open %1, skipping"
 msgstr "%1 lässt sich nicht öffnen, Datei wird übergangen"
@@ -103,7 +103,7 @@ msgstr "Mailordner von %1 werden importiert ..."
 #: filter_evolution.cpp:209 filter_evolution_v2.cpp:131
 #: filter_evolution_v3.cpp:114 filter_kmail_maildir.cpp:108
 #: filter_opera.cpp:141 filter_plain.cpp:85 filter_sylpheed.cpp:141
-#: filter_thebat.cpp:103 filter_thunderbird.cpp:193 filterbalsa.cpp:116
+#: filter_thebat.cpp:103 filter_thunderbird.cpp:184 filterbalsa.cpp:116
 #, kde-format
 msgid "1 duplicate message not imported"
 msgid_plural "%1 duplicate messages not imported"
@@ -132,7 +132,7 @@ msgstr ""
 "„Evolution-Import“.</p>"
 
 #: filter_evolution_v2.cpp:124 filter_evolution_v2.cpp:161
-#: filter_thunderbird.cpp:186 filter_thunderbird.cpp:222
+#: filter_thunderbird.cpp:177 filter_thunderbird.cpp:213
 #, kde-format
 msgid "Start import file %1..."
 msgstr "Import von Datei %1 wird gestartet ..."
@@ -141,7 +141,7 @@ msgstr "Import von Datei %1 wird gestartet ..."
 #: filter_kmail_maildir.cpp:112 filter_mailapp.cpp:144
 #: filter_mailmangzip.cpp:150 filter_mbox.cpp:148 filter_oe.cpp:113
 #: filter_opera.cpp:200 filter_plain.cpp:88 filter_sylpheed.cpp:145
-#: filter_thebat.cpp:107 filter_thunderbird.cpp:197 filterbalsa.cpp:120
+#: filter_thebat.cpp:107 filter_thunderbird.cpp:188 filterbalsa.cpp:120
 msgid "Finished import, canceled by user."
 msgstr "Import abgeschlossen, Abbruch durch Benutzer."
 
@@ -659,37 +659,6 @@ msgstr ""
 "Ordnerstruktur rekonstruiert werden kann, erscheinen die importierten Ordner "
 "unterhalb von „Balsa-Import“.</p>"
 
-#: filtericedove.cpp:25
-#, fuzzy
-#| msgid "Import The Bat! Mails and Folder Structure"
-msgid "Import Icedove Mails and Folder Structure"
-msgstr "Importieren von E-Mails und Ordnern aus The Bat!"
-
-#: filtericedove.cpp:27
-#, fuzzy
-#| msgid ""
-#| "<p><b>Thunderbird/Mozilla import filter</b></p><p>Select your base "
-#| "Thunderbird/Mozilla mailfolder (usually ~/.thunderbird/*.default/Mail/"
-#| "Local Folders/).</p><p><b>Note:</b> Never choose a Folder which <u>does "
-#| "not</u> contain mbox-files (for example, a maildir): if you do, you will "
-#| "get many new folders.</p><p>Since it is possible to recreate the folder "
-#| "structure, the folders will be stored under: \"Thunderbird-Import\".</p>"
-msgid ""
-"<p><b>Icedove import filter</b></p><p>Select your base Icedove mailfolder "
-"(usually ~/.icedove/*.default/Mail/Local Folders/).</p><p><b>Note:</b> Never "
-"choose a Folder which <u>does not</u> contain mbox-files (for example, a "
-"maildir): if you do, you will get many new folders.</p><p>Since it is "
-"possible to recreate the folder structure, the folders will be stored under: "
-"\"Icedove-Import\".</p>"
-msgstr ""
-"<p><b>Importfilter für Thunderbird/Mozilla</b></p> <p>Wählen Sie den Haupt-"
-"Mailordner von Thunderbird/Mozilla (üblicherweise ~/.thunderbird/*.default/"
-"Mail/Local Folders/) aus.</p> <p><b>Hinweis:</b>Wählen Sie nie einen Ordner, "
-"der <u>keine</u> mbox-Dateien enthält (also z. B. einen Maildir-Ordner). "
-"Falls Sie das dennoch tun, erscheinen viele neue Ordner.</p> <p>Da die "
-"Ordnerstruktur rekonstruiert werden kann, erscheinen die Ordner unter "
-"„Thunderbird-Import“.</p>"
-
 #: filters.cpp:154
 #, kde-format
 msgid "<b>Error:</b> Could not add message to folder %1. Reason: %2"
@@ -780,6 +749,35 @@ msgstr "Gesamt:"
 #: ui/selectthunderbirdprofilewidget.ui:17
 msgid "Select Profile:"
 msgstr "Profil auswählen:"
+
+#, fuzzy
+#~| msgid "Import The Bat! Mails and Folder Structure"
+#~ msgid "Import Icedove Mails and Folder Structure"
+#~ msgstr "Importieren von E-Mails und Ordnern aus The Bat!"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p><b>Thunderbird/Mozilla import filter</b></p><p>Select your base "
+#~| "Thunderbird/Mozilla mailfolder (usually ~/.thunderbird/*.default/Mail/"
+#~| "Local Folders/).</p><p><b>Note:</b> Never choose a Folder which <u>does "
+#~| "not</u> contain mbox-files (for example, a maildir): if you do, you will "
+#~| "get many new folders.</p><p>Since it is possible to recreate the folder "
+#~| "structure, the folders will be stored under: \"Thunderbird-Import\".</p>"
+#~ msgid ""
+#~ "<p><b>Icedove import filter</b></p><p>Select your base Icedove mailfolder "
+#~ "(usually ~/.icedove/*.default/Mail/Local Folders/).</p><p><b>Note:</b> "
+#~ "Never choose a Folder which <u>does not</u> contain mbox-files (for "
+#~ "example, a maildir): if you do, you will get many new folders.</"
+#~ "p><p>Since it is possible to recreate the folder structure, the folders "
+#~ "will be stored under: \"Icedove-Import\".</p>"
+#~ msgstr ""
+#~ "<p><b>Importfilter für Thunderbird/Mozilla</b></p> <p>Wählen Sie den "
+#~ "Haupt-Mailordner von Thunderbird/Mozilla (üblicherweise ~/.thunderbird/*."
+#~ "default/Mail/Local Folders/) aus.</p> <p><b>Hinweis:</b>Wählen Sie nie "
+#~ "einen Ordner, der <u>keine</u> mbox-Dateien enthält (also z. B. einen "
+#~ "Maildir-Ordner). Falls Sie das dennoch tun, erscheinen viele neue Ordner."
+#~ "</p> <p>Da die Ordnerstruktur rekonstruiert werden kann, erscheinen die "
+#~ "Ordner unter „Thunderbird-Import“.</p>"
 
 #~ msgid "Import Outlook Emails"
 #~ msgstr "E-Mails von Outlook importieren"

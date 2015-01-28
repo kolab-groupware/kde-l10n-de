@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi_mbox_resource\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-07-22 07:41+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: 2014-04-02 08:59+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -19,33 +19,33 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: compactpage.cpp:87
+#: compactpage.cpp:85
 #, kde-format
 msgid "(1 message marked for deletion)"
 msgid_plural "(%1 messages marked for deletion)"
 msgstr[0] "(1 Nachricht zum Löschen markiert)"
 msgstr[1] "(%1 Nachrichten zum Löschen markiert)"
 
-#: compactpage.cpp:95
+#: compactpage.cpp:93
 msgid "Failed to fetch the collection."
 msgstr "Die 'Collection' kann nicht abgerufen werden."
 
-#: compactpage.cpp:112
+#: compactpage.cpp:109
 msgid "Failed to load the mbox file"
 msgstr "Die Mbox-Datei kann nicht geladen werden."
 
-#: compactpage.cpp:114
+#: compactpage.cpp:111
 #, kde-format
 msgid "(Deleting 1 message)"
 msgid_plural "(Deleting %1 messages)"
 msgstr[0] "(1 Nachricht wird gelöscht)"
 msgstr[1] "(%1 Nachrichten werden gelöscht)"
 
-#: compactpage.cpp:128 compactpage.cpp:135
+#: compactpage.cpp:120 compactpage.cpp:127
 msgid "Failed to compact the mbox file."
 msgstr "Fehler beim Komprimieren der Mbox-Datei."
 
-#: compactpage.cpp:137
+#: compactpage.cpp:129
 msgid "MBox file compacted."
 msgstr "Mbox-Datei wurde komprimiert."
 
@@ -215,36 +215,31 @@ msgstr "Sperrmethode"
 msgid "Select MBox file"
 msgstr "Wählen Sie eine Mbox-Datei"
 
-#: mboxresource.cpp:101 mboxresource.cpp:155 mboxresource.cpp:187
-msgctxt "@info:status"
-msgid "MBox not configured."
-msgstr "Die Mbox-Datei ist nicht eingerichtet."
-
-#: mboxresource.cpp:151 mboxresource.cpp:183
+#: mboxresource.cpp:147 mboxresource.cpp:175
 msgid "MBox not loaded."
 msgstr "Mbox-Datei nicht geladen."
 
-#: mboxresource.cpp:163
+#: mboxresource.cpp:155
 #, kde-format
 msgid "Failed to read message with uid '%1'."
 msgstr "Fehler beim Lesen der Nachricht mit der Kennung „%1“."
 
-#: mboxresource.cpp:193
+#: mboxresource.cpp:181
 msgid "Only email messages can be added to the MBox resource."
 msgstr ""
 "Zu einer Mbox-Ressource können ausschließlich E-Mail-Nachrichten hinzugefügt "
 "werden."
 
-#: mboxresource.cpp:199
+#: mboxresource.cpp:187
 msgid "Mail message not added to the MBox."
 msgstr "E-Mail-Nachricht wurde nicht zur Mbox-Datei hinhzugefügt."
 
-#: mboxresource.cpp:243
+#: mboxresource.cpp:231
 #, kde-format
 msgid "Could not fetch the collection: %1"
 msgstr "Die 'Collection' kann nicht abgerufen werden: %1"
 
-#: mboxresource.cpp:273
+#: mboxresource.cpp:261
 msgid ""
 "The MBox file was changed by another program. A copy of the new file was "
 "made and pending changes are appended to that copy. To prevent this from "
@@ -258,12 +253,12 @@ msgstr ""
 "sicherstellen, dass alle Programme die gleiche Sperrmethode für die Mbox-"
 "Datei verwenden!"
 
-#: mboxresource.cpp:304
+#: mboxresource.cpp:292
 #, kde-format
 msgid "Failed to save mbox file to %1"
 msgstr "Fehler beim Speichern der Mbox-Datei nach %1."
 
-#: mboxresource.cpp:364
+#: mboxresource.cpp:352
 #, kde-format
 msgid ""
 "Failed to update the changed item because the old item could not be deleted "
@@ -307,6 +302,10 @@ msgstr ""
 #: wizard/mailboxwizard.ui:19
 msgid "URL:"
 msgstr "Adresse (URL):"
+
+#~ msgctxt "@info:status"
+#~ msgid "MBox not configured."
+#~ msgstr "Die Mbox-Datei ist nicht eingerichtet."
 
 #~ msgid "Non&e (Use with care)"
 #~ msgstr "&Keine (mit Vorsicht zu benutzen)"

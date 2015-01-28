@@ -502,6 +502,11 @@ msgstr ""
 "Starten Sie den Import-Assistenten für den Import aus E-Mail-Programmen wie "
 "Thunderbird, Evolution usw."
 
+#: kaddressbook/data/kaddressbook-importer.desktop:2
+msgctxt "Name"
+msgid "KAddressbook import file"
+msgstr "Adressbuch-Importdatei"
+
 #: kaddressbook/data/kaddressbook.desktop:2
 #: kaddressbook/data/kaddressbookpart.desktop:3
 msgctxt "Name"
@@ -512,11 +517,6 @@ msgstr "Adressbuch"
 msgctxt "GenericName"
 msgid "Contact Manager"
 msgstr "Kontaktverwaltung"
-
-#: kaddressbook/data/kaddressbook-importer.desktop:2
-msgctxt "Name"
-msgid "KAddressbook import file"
-msgstr "Adressbuch-Importdatei"
 
 #: kaddressbook/printing/grantlee/themes/big-theme-example/theme.desktop:2
 msgctxt "Name"
@@ -627,6 +627,16 @@ msgid "Set RTC wake-from-suspend time"
 msgstr ""
 "Den Zeitpunkt zum Aufwachen aus dem Ruhezustand gemäß der Echtzeituhr setzen"
 
+#: kjots/Kjots.desktop:3
+msgctxt "Name"
+msgid "KJots"
+msgstr "KJots"
+
+#: kjots/Kjots.desktop:54
+msgctxt "GenericName"
+msgid "Note Taker"
+msgstr "Elektronischer Notizblock"
+
 #: kjots/kjots_config_misc.desktop:15 kmail/data/kmail_config_misc.desktop:16
 #: knotes/data/knote_config_misc.desktop:15
 msgctxt "Name"
@@ -637,16 +647,6 @@ msgstr "Diverses"
 msgctxt "Comment"
 msgid "Setup misc for KJots"
 msgstr "Verschiedene Einstellungen für KJots"
-
-#: kjots/Kjots.desktop:3
-msgctxt "Name"
-msgid "KJots"
-msgstr "KJots"
-
-#: kjots/Kjots.desktop:54
-msgctxt "GenericName"
-msgid "Note Taker"
-msgstr "Elektronischer Notizblock"
 
 #: kjots/kjotspart.desktop:2
 msgctxt "Name"
@@ -756,6 +756,17 @@ msgctxt "X-KDE-Keywords"
 msgid "smime,validation,kleopatra,signing,encryption"
 msgstr "SMIME,Überprüfung,Kleopatra,signieren,verschlüsseln"
 
+#: kleopatra/data/kleopatra.desktop:6
+#: kleopatra/data/kleopatra_import.desktop:8
+msgctxt "Name"
+msgid "Kleopatra"
+msgstr "Kleopatra"
+
+#: kleopatra/data/kleopatra.desktop:76
+msgctxt "GenericName"
+msgid "Certificate Manager and Unified Crypto GUI"
+msgstr "Zertifikatsverwaltung und Kryptografie-Oberfläche"
+
 #: kleopatra/data/kleopatra_decryptverifyfiles.desktop:6
 msgctxt "Name"
 msgid "Kleopatra Decrypt/Verify Files"
@@ -775,17 +786,6 @@ msgstr "Kleopatra – Alle Dateien in einem Ordner entschlüsseln/überprüfen"
 msgctxt "Name"
 msgid "Decrypt/Verify All Files In Folder"
 msgstr "Alle Dateien im Ordner entschlüsseln/überprüfen"
-
-#: kleopatra/data/kleopatra.desktop:6
-#: kleopatra/data/kleopatra_import.desktop:8
-msgctxt "Name"
-msgid "Kleopatra"
-msgstr "Kleopatra"
-
-#: kleopatra/data/kleopatra.desktop:76
-msgctxt "GenericName"
-msgid "Certificate Manager and Unified Crypto GUI"
-msgstr "Zertifikatsverwaltung und Kryptografie-Oberfläche"
 
 #: kleopatra/data/kleopatra_import.desktop:78
 msgctxt "Comment"
@@ -993,6 +993,16 @@ msgctxt "Name"
 msgid "KMail view"
 msgstr "KMail-Ansicht"
 
+#: knode/KNode.desktop:7
+msgctxt "Name"
+msgid "KNode"
+msgstr "KNode"
+
+#: knode/KNode.desktop:76
+msgctxt "GenericName"
+msgid "News Reader"
+msgstr "Usenet-Newsreader"
+
 #: knode/knode_config_accounts.desktop:88
 msgctxt "Comment"
 msgid "Setup for Newsgroup and Mail Servers"
@@ -1038,16 +1048,6 @@ msgstr ""
 msgctxt "Name"
 msgid "Reading News"
 msgstr "Artikel lesen"
-
-#: knode/KNode.desktop:7
-msgctxt "Name"
-msgid "KNode"
-msgstr "KNode"
-
-#: knode/KNode.desktop:76
-msgctxt "GenericName"
-msgid "News Reader"
-msgstr "Usenet-Newsreader"
 
 #: knotes/data/knote_config_action.desktop:15
 msgctxt "Name"
@@ -1144,13 +1144,8 @@ msgctxt "Description"
 msgid "Default knotes printing theme"
 msgstr "KNotes-Standarddruckstil"
 
-#: kontact/plugins/akregator/akregatorplugin.desktop:16
-msgctxt "Comment"
-msgid "Akregator Plugin"
-msgstr "Akregator-Modul"
-
-#: kontact/plugins/akregator/akregatorplugin.desktop:82
 #: kontact/plugins/akregator/akregator.setdlg:2
+#: kontact/plugins/akregator/akregatorplugin.desktop:82
 msgctxt "Name"
 msgid "Feeds"
 msgstr "Nachrichten"
@@ -1160,13 +1155,13 @@ msgctxt "Comment"
 msgid "Feed Reader"
 msgstr "Anzeige von RSS-Nachrichtenquellen"
 
-#: kontact/plugins/kaddressbook/kaddressbookplugin.desktop:19
+#: kontact/plugins/akregator/akregatorplugin.desktop:16
 msgctxt "Comment"
-msgid "Kontact KAddressBook Plugin"
-msgstr "Adressbuch-Modul für Kontact"
+msgid "Akregator Plugin"
+msgstr "Akregator-Modul"
 
-#: kontact/plugins/kaddressbook/kaddressbookplugin.desktop:85
 #: kontact/plugins/kaddressbook/kaddressbook.setdlg:2
+#: kontact/plugins/kaddressbook/kaddressbookplugin.desktop:85
 #: mobile/contacts/kaddressbook-mobile.desktop:3
 msgctxt "Name"
 msgid "Contacts"
@@ -1177,13 +1172,13 @@ msgctxt "Comment"
 msgid "Address Book Component"
 msgstr "Adressbuch-Komponente"
 
-#: kontact/plugins/kjots/kjots_plugin.desktop:19
+#: kontact/plugins/kaddressbook/kaddressbookplugin.desktop:19
 msgctxt "Comment"
-msgid "Kontact KJots Plugin"
-msgstr "KJots-Modul für Kontact"
+msgid "Kontact KAddressBook Plugin"
+msgstr "Adressbuch-Modul für Kontact"
 
-#: kontact/plugins/kjots/kjots_plugin.desktop:68
 #: kontact/plugins/kjots/kjots.setdlg:2
+#: kontact/plugins/kjots/kjots_plugin.desktop:68
 msgctxt "Name"
 msgid "Notebooks"
 msgstr "Notizbücher"
@@ -1192,6 +1187,11 @@ msgstr "Notizbücher"
 msgctxt "Comment"
 msgid "Notebooks Component"
 msgstr "Notizblock-Komponente"
+
+#: kontact/plugins/kjots/kjots_plugin.desktop:19
+msgctxt "Comment"
+msgid "Kontact KJots Plugin"
+msgstr "KJots-Modul für Kontact"
 
 #: kontact/plugins/kmail/kcmkmailsummary.desktop:14
 msgctxt "Name"
@@ -1210,13 +1210,9 @@ msgstr ""
 "E-Mail,email,Übersicht,einstellen,konfigurieren,Konfiguration,Einrichtung,"
 "Einstellungen"
 
-#: kontact/plugins/kmail/kmailplugin.desktop:19
-msgctxt "Comment"
-msgid "Kontact KMail Plugin"
-msgstr "KMail-Modul für Kontact"
-
+#: kontact/plugins/kmail/kmail.setdlg:2
 #: kontact/plugins/kmail/kmailplugin.desktop:88
-#: kontact/plugins/kmail/kmail.setdlg:2 mobile/mail/kmail-mobile.desktop:3
+#: mobile/mail/kmail-mobile.desktop:3
 msgctxt "Name"
 msgid "Mail"
 msgstr "E-Mail"
@@ -1226,13 +1222,13 @@ msgctxt "Comment"
 msgid "Mail Component"
 msgstr "Mail-Komponente"
 
-#: kontact/plugins/knode/knodeplugin.desktop:18
+#: kontact/plugins/kmail/kmailplugin.desktop:19
 msgctxt "Comment"
-msgid "Kontact KNode Plugin"
-msgstr "KNode-Modul für Kontact"
+msgid "Kontact KMail Plugin"
+msgstr "KMail-Modul für Kontact"
 
-#: kontact/plugins/knode/knodeplugin.desktop:85
 #: kontact/plugins/knode/knode.setdlg:2
+#: kontact/plugins/knode/knodeplugin.desktop:85
 msgctxt "Name"
 msgid "Usenet"
 msgstr "Usenet"
@@ -1241,6 +1237,11 @@ msgstr "Usenet"
 msgctxt "Comment"
 msgid "Usenet Component"
 msgstr "Usenet-Komponente"
+
+#: kontact/plugins/knode/knodeplugin.desktop:18
+msgctxt "Comment"
+msgid "Kontact KNode Plugin"
+msgstr "KNode-Modul für Kontact"
 
 #: kontact/plugins/knotes/kcmknotessummary.desktop:14
 msgctxt "Name"
@@ -1259,13 +1260,8 @@ msgstr ""
 "Notizen,Übersicht,einstellen,konfigurieren,Konfiguration,Einrichtung,"
 "Einstellungen"
 
-#: kontact/plugins/knotes/knotesplugin.desktop:17
-msgctxt "Comment"
-msgid "Kontact KNotes Plugin"
-msgstr "KNotes-Modul für Kontact"
-
-#: kontact/plugins/knotes/knotesplugin.desktop:84
 #: kontact/plugins/knotes/knotes.setdlg:2
+#: kontact/plugins/knotes/knotesplugin.desktop:84
 msgctxt "Name"
 msgid "Popup Notes"
 msgstr "Haftnotizen"
@@ -1274,6 +1270,11 @@ msgstr "Haftnotizen"
 msgctxt "Comment"
 msgid "Popup Notes Component"
 msgstr "Haftnotizen-Komponente"
+
+#: kontact/plugins/knotes/knotesplugin.desktop:17
+msgctxt "Comment"
+msgid "Kontact KNotes Plugin"
+msgstr "KNotes-Modul für Kontact"
 
 #: kontact/plugins/korganizer/journalplugin.desktop:18
 msgctxt "Comment"
@@ -1320,13 +1321,8 @@ msgstr ""
 "Kalender,Aufgaben,einstellen,konfigurieren,Konfiguration,Einrichtung,"
 "Einstellungen"
 
-#: kontact/plugins/korganizer/korganizerplugin.desktop:18
-msgctxt "Comment"
-msgid "Kontact KOrganizer Plugin"
-msgstr "KOrganizer-Modul für Kontact"
-
-#: kontact/plugins/korganizer/korganizerplugin.desktop:85
 #: kontact/plugins/korganizer/korganizer.setdlg:2
+#: kontact/plugins/korganizer/korganizerplugin.desktop:85
 #: mobile/calendar/korganizer-mobile.desktop:3
 msgctxt "Name"
 msgid "Calendar"
@@ -1336,6 +1332,11 @@ msgstr "Kalender"
 msgctxt "Comment"
 msgid "Calendar Component"
 msgstr "Kalender-Komponente"
+
+#: kontact/plugins/korganizer/korganizerplugin.desktop:18
+msgctxt "Comment"
+msgid "Kontact KOrganizer Plugin"
+msgstr "KOrganizer-Modul für Kontact"
 
 #: kontact/plugins/korganizer/todoplugin.desktop:18
 msgctxt "Comment"
@@ -1347,13 +1348,8 @@ msgctxt "Name"
 msgid "To-do List"
 msgstr "Aufgaben"
 
-#: kontact/plugins/ktimetracker/ktimetracker_plugin.desktop:17
-msgctxt "Comment"
-msgid "TimeTracker Plugin"
-msgstr "Modul für die persönliche Zeiterfassung"
-
-#: kontact/plugins/ktimetracker/ktimetracker_plugin.desktop:66
 #: kontact/plugins/ktimetracker/ktimetracker.setdlg:2
+#: kontact/plugins/ktimetracker/ktimetracker_plugin.desktop:66
 msgctxt "Name"
 msgid "Time Tracker"
 msgstr "Zeiterfassung"
@@ -1363,9 +1359,14 @@ msgctxt "Comment"
 msgid "Time Tracker Component"
 msgstr "Zeiterfassungs-Komponente"
 
+#: kontact/plugins/ktimetracker/ktimetracker_plugin.desktop:17
+msgctxt "Comment"
+msgid "TimeTracker Plugin"
+msgstr "Modul für die persönliche Zeiterfassung"
+
 #: kontact/plugins/planner/kcmplanner.desktop:14
-#: kontact/plugins/planner/plannerplugin.desktop:16
 #: kontact/plugins/planner/planner.setdlg:2
+#: kontact/plugins/planner/plannerplugin.desktop:16
 msgctxt "Name"
 msgid "Planner"
 msgstr "Planer"
@@ -1375,15 +1376,15 @@ msgctxt "Comment"
 msgid "Planner Setup"
 msgstr "Planer-Einrichtung"
 
-#: kontact/plugins/planner/plannerplugin.desktop:67
-msgctxt "Comment"
-msgid "Planner Plugin"
-msgstr "Planer-Modul"
-
 #: kontact/plugins/planner/planner.setdlg:53
 msgctxt "Comment"
 msgid "Planner Summary"
 msgstr "Planer-Übersicht"
+
+#: kontact/plugins/planner/plannerplugin.desktop:67
+msgctxt "Comment"
+msgid "Planner Plugin"
+msgstr "Planer-Modul"
 
 #: kontact/plugins/specialdates/kcmsdsummary.desktop:14
 msgctxt "Name"
@@ -1402,16 +1403,6 @@ msgstr ""
 "Geburtstag,Jahrestag,Feiertag,einstellen,konfigurieren,Konfiguration,"
 "Einrichtung,Einstellungen"
 
-#: kontact/plugins/specialdates/specialdatesplugin.desktop:16
-msgctxt "Name"
-msgid "Special Dates"
-msgstr "Besondere Termine"
-
-#: kontact/plugins/specialdates/specialdatesplugin.desktop:83
-msgctxt "Comment"
-msgid "Special Dates Plugin"
-msgstr "Modul für besondere Termine"
-
 #: kontact/plugins/specialdates/specialdates.setdlg:2
 msgctxt "Name"
 msgid "Special Dates Summary"
@@ -1421,6 +1412,16 @@ msgstr "Übersicht über besondere Termine"
 msgctxt "Comment"
 msgid "Special Dates Summary Component"
 msgstr "Komponente für Übersicht über besondere Termine"
+
+#: kontact/plugins/specialdates/specialdatesplugin.desktop:16
+msgctxt "Name"
+msgid "Special Dates"
+msgstr "Besondere Termine"
+
+#: kontact/plugins/specialdates/specialdatesplugin.desktop:83
+msgctxt "Comment"
+msgid "Special Dates Plugin"
+msgstr "Modul für besondere Termine"
 
 #: kontact/plugins/summary/kcmkontactsummary.desktop:14
 msgctxt "Name"
@@ -1432,13 +1433,8 @@ msgctxt "Comment"
 msgid "Summary Selection"
 msgstr "Zusammenstellung der Übersicht"
 
-#: kontact/plugins/summary/summaryplugin.desktop:14
-msgctxt "Comment"
-msgid "Kontact SummaryView Plugin"
-msgstr "Übersichts-Modul für Kontact"
-
-#: kontact/plugins/summary/summaryplugin.desktop:75
 #: kontact/plugins/summary/summary.setdlg:2
+#: kontact/plugins/summary/summaryplugin.desktop:75
 msgctxt "Name"
 msgid "Summary"
 msgstr "Übersicht"
@@ -1447,6 +1443,21 @@ msgstr "Übersicht"
 msgctxt "Comment"
 msgid "Summary View"
 msgstr "Zusammenfassungsansicht"
+
+#: kontact/plugins/summary/summaryplugin.desktop:14
+msgctxt "Comment"
+msgid "Kontact SummaryView Plugin"
+msgstr "Übersichts-Modul für Kontact"
+
+#: kontact/src/Kontact.desktop:2
+msgctxt "Name"
+msgid "Kontact"
+msgstr "Kontact"
+
+#: kontact/src/Kontact.desktop:73
+msgctxt "GenericName"
+msgid "Personal Information Manager"
+msgstr "Persönlicher Informationsmanager"
 
 #: kontact/src/kontactconfig.desktop:14
 msgctxt "Name"
@@ -1463,15 +1474,15 @@ msgctxt "X-KDE-Keywords"
 msgid "kontact"
 msgstr "Kontact"
 
-#: kontact/src/Kontact.desktop:2
+#: korgac/korgac.desktop:3
 msgctxt "Name"
-msgid "Kontact"
-msgstr "Kontact"
+msgid "KOrganizer Reminder Client"
+msgstr "KOrganizer Erinnerungsfunktion"
 
-#: kontact/src/Kontact.desktop:73
+#: korgac/korgac.desktop:65
 msgctxt "GenericName"
-msgid "Personal Information Manager"
-msgstr "Persönlicher Informationsmanager"
+msgid "KOrganizer Reminder Daemon Client"
+msgstr "Hintergrund-Erinnerungsfunktion für KOrganizer"
 
 #: korgac/korgacagent.desktop:2
 msgctxt "Name"
@@ -1482,16 +1493,6 @@ msgstr "Erinnerungsmodul"
 msgctxt "Comment"
 msgid "Event and task reminder daemon"
 msgstr "Erinnerungsdienst für Ereignisse und Termine"
-
-#: korgac/korgac.desktop:3
-msgctxt "Name"
-msgid "KOrganizer Reminder Client"
-msgstr "KOrganizer Erinnerungsfunktion"
-
-#: korgac/korgac.desktop:65
-msgctxt "GenericName"
-msgid "KOrganizer Reminder Daemon Client"
-msgstr "Hintergrund-Erinnerungsfunktion für KOrganizer"
 
 #: korganizer/dbuscalendar.desktop:2
 msgctxt "Name"
@@ -1630,19 +1631,19 @@ msgctxt "X-KDE-Keywords"
 msgid "korganizer,view"
 msgstr "KOrganizer,Ansicht"
 
-#: korganizer/korganizer.desktop:3 korganizer/korganizer-import.desktop:3
+#: korganizer/korganizer-import.desktop:3 korganizer/korganizer.desktop:3
 #: korganizer/korganizer_part.desktop:3
 msgctxt "Comment"
 msgid "Calendar and Scheduling Program"
 msgstr "Ein Kalender und Zeitplaner"
 
-#: korganizer/korganizer.desktop:78 korganizer/korganizer-import.desktop:78
+#: korganizer/korganizer-import.desktop:78 korganizer/korganizer.desktop:78
 #: korganizer/korganizer_part.desktop:76
 msgctxt "Name"
 msgid "KOrganizer"
 msgstr "KOrganizer"
 
-#: korganizer/korganizer.desktop:147 korganizer/korganizer-import.desktop:147
+#: korganizer/korganizer-import.desktop:147 korganizer/korganizer.desktop:147
 msgctxt "GenericName"
 msgid "Personal Organizer"
 msgstr "Persönliche Daten organisieren"
@@ -1798,70 +1799,70 @@ msgstr ""
 "KAddressbook,einstellen,konfigurieren,Konfiguration,Einrichtung,"
 "Einstellungen,LDAP"
 
-#: libkleo/libkleopatrarc.desktop:5 libkleo/libkleopatrarc-win32.desktop:5
+#: libkleo/libkleopatrarc-win32.desktop:5 libkleo/libkleopatrarc.desktop:5
 msgctxt "Name"
 msgid "TAR (PGP®-compatible)"
 msgstr "TAR (PGP®-kompatibel)"
 
-#: libkleo/libkleopatrarc.desktop:100
-msgctxt "Name"
-msgid "TAR (with bzip2 compression)"
-msgstr "TAR (mit bzip2-Kompression)"
-
-#: libkleo/libkleopatrarc.desktop:152 libkleo/libkleopatrarc-win32.desktop:61
+#: libkleo/libkleopatrarc-win32.desktop:61 libkleo/libkleopatrarc.desktop:152
 msgctxt "Name"
 msgid "sha1sum"
 msgstr "sha1sum"
-
-#: libkleo/libkleopatrarc.desktop:205 libkleo/libkleopatrarc-win32.desktop:166
-msgctxt "Name"
-msgid "md5sum"
-msgstr "md5sum"
-
-#: libkleo/libkleopatrarc.desktop:256 libkleo/libkleopatrarc-win32.desktop:217
-msgctxt "Name"
-msgid "Not Validated Key"
-msgstr "Ungeprüfter Schlüssel"
-
-#: libkleo/libkleopatrarc.desktop:321 libkleo/libkleopatrarc-win32.desktop:282
-msgctxt "Name"
-msgid "Expired Key"
-msgstr "Abgelaufener Schlüssel"
-
-#: libkleo/libkleopatrarc.desktop:387 libkleo/libkleopatrarc-win32.desktop:348
-msgctxt "Name"
-msgid "Revoked Key"
-msgstr "Widerrufener Schlüssel"
-
-#: libkleo/libkleopatrarc.desktop:453 libkleo/libkleopatrarc-win32.desktop:414
-msgctxt "Name"
-msgid "Trusted Root Certificate"
-msgstr "Vertrauenswürdiges Wurzelzertifikat"
-
-#: libkleo/libkleopatrarc.desktop:521 libkleo/libkleopatrarc-win32.desktop:482
-msgctxt "Name"
-msgid "Not Trusted Root Certificate"
-msgstr "Nicht vertrauenswürdiges Wurzelzertifikat"
-
-#: libkleo/libkleopatrarc.desktop:585 libkleo/libkleopatrarc-win32.desktop:546
-msgctxt "Name"
-msgid "Keys for Qualified Signatures"
-msgstr "Schlüssel für qualifizierte Signaturen"
-
-#: libkleo/libkleopatrarc.desktop:635 libkleo/libkleopatrarc-win32.desktop:596
-msgctxt "Name"
-msgid "Other Keys"
-msgstr "Andere Schlüssel"
-
-#: libkleo/libkleopatrarc.desktop:689 libkleo/libkleopatrarc-win32.desktop:650
-msgctxt "Name"
-msgid "Smartcard Key"
-msgstr "Smartcard-Zertifikat"
 
 #: libkleo/libkleopatrarc-win32.desktop:114
 msgctxt "Name"
 msgid "sha256sum"
 msgstr "sha256sum"
+
+#: libkleo/libkleopatrarc-win32.desktop:166 libkleo/libkleopatrarc.desktop:205
+msgctxt "Name"
+msgid "md5sum"
+msgstr "md5sum"
+
+#: libkleo/libkleopatrarc-win32.desktop:217 libkleo/libkleopatrarc.desktop:256
+msgctxt "Name"
+msgid "Not Validated Key"
+msgstr "Ungeprüfter Schlüssel"
+
+#: libkleo/libkleopatrarc-win32.desktop:282 libkleo/libkleopatrarc.desktop:321
+msgctxt "Name"
+msgid "Expired Key"
+msgstr "Abgelaufener Schlüssel"
+
+#: libkleo/libkleopatrarc-win32.desktop:348 libkleo/libkleopatrarc.desktop:387
+msgctxt "Name"
+msgid "Revoked Key"
+msgstr "Widerrufener Schlüssel"
+
+#: libkleo/libkleopatrarc-win32.desktop:414 libkleo/libkleopatrarc.desktop:453
+msgctxt "Name"
+msgid "Trusted Root Certificate"
+msgstr "Vertrauenswürdiges Wurzelzertifikat"
+
+#: libkleo/libkleopatrarc-win32.desktop:482 libkleo/libkleopatrarc.desktop:521
+msgctxt "Name"
+msgid "Not Trusted Root Certificate"
+msgstr "Nicht vertrauenswürdiges Wurzelzertifikat"
+
+#: libkleo/libkleopatrarc-win32.desktop:546 libkleo/libkleopatrarc.desktop:585
+msgctxt "Name"
+msgid "Keys for Qualified Signatures"
+msgstr "Schlüssel für qualifizierte Signaturen"
+
+#: libkleo/libkleopatrarc-win32.desktop:596 libkleo/libkleopatrarc.desktop:635
+msgctxt "Name"
+msgid "Other Keys"
+msgstr "Andere Schlüssel"
+
+#: libkleo/libkleopatrarc-win32.desktop:650 libkleo/libkleopatrarc.desktop:689
+msgctxt "Name"
+msgid "Smartcard Key"
+msgstr "Smartcard-Zertifikat"
+
+#: libkleo/libkleopatrarc.desktop:100
+msgctxt "Name"
+msgid "TAR (with bzip2 compression)"
+msgstr "TAR (mit bzip2-Kompression)"
 
 #: libksieve/ksieveui/data/scripts/copy/template.desktop:2
 msgctxt "Name"
@@ -1898,16 +1899,6 @@ msgctxt "Comment"
 msgid "New Ad-Block list download failed"
 msgstr "Das Herunterladen der neuen Werbefilterliste ist fehlgeschlagen"
 
-#: messageviewer/themes/example_fancy/header.desktop:2
-msgctxt "Name"
-msgid "Example fancy"
-msgstr "Dekoratives Beispiel"
-
-#: messageviewer/themes/example_fancy/header.desktop:38
-msgctxt "Description"
-msgid "Create fancy theme with grantlee."
-msgstr "Dekoratives mit Grantlee erstelltes Design"
-
 #: messageviewer/themes/example/header.desktop:2
 msgctxt "Name"
 msgid "Example"
@@ -1917,6 +1908,16 @@ msgstr "Beispiel"
 msgctxt "Description"
 msgid "Example theme for header."
 msgstr "Beispieldesign für den Vorspann."
+
+#: messageviewer/themes/example_fancy/header.desktop:2
+msgctxt "Name"
+msgid "Example fancy"
+msgstr "Dekoratives Beispiel"
+
+#: messageviewer/themes/example_fancy/header.desktop:38
+msgctxt "Description"
+msgid "Create fancy theme with grantlee."
+msgstr "Dekoratives mit Grantlee erstelltes Design"
 
 #: mobile/calendar/korganizer-mobile.desktop:85
 msgctxt "Keywords"

@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailcommon\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-28 05:11+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: 2014-08-03 22:03+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -89,21 +89,89 @@ msgstr ""
 msgid "Wrong Folder Selected"
 msgstr "Falscher Ordner ausgewählt"
 
-#: collectionpage/collectiongeneralpage.cpp:63
+#: collectionpage/collectiongeneralpage.cpp:59
 msgctxt "@title:tab General settings for a folder."
 msgid "General"
 msgstr "Allgemein"
 
-#: collectionpage/collectiongeneralpage.cpp:100
+#: collectionpage/collectiongeneralpage.cpp:109
+#: collectionpage/collectiongeneralpage.cpp:133
+#: collectionpage/collectiongeneralpage.cpp:191
+msgctxt "type of folder content"
+msgid "Mail"
+msgstr "E-Mail"
+
+#: collectionpage/collectiongeneralpage.cpp:111
+#: collectionpage/collectiongeneralpage.cpp:136
+#: collectionpage/collectiongeneralpage.cpp:170
+msgctxt "type of folder content"
+msgid "Calendar"
+msgstr "Kalender"
+
+#: collectionpage/collectiongeneralpage.cpp:113
+#: collectionpage/collectiongeneralpage.cpp:139
+#: collectionpage/collectiongeneralpage.cpp:173
+msgctxt "type of folder content"
+msgid "Contacts"
+msgstr "Kontakte"
+
+#: collectionpage/collectiongeneralpage.cpp:115
+#: collectionpage/collectiongeneralpage.cpp:142
+#: collectionpage/collectiongeneralpage.cpp:176
+msgctxt "type of folder content"
+msgid "Notes"
+msgstr "Notizen"
+
+#: collectionpage/collectiongeneralpage.cpp:117
+#: collectionpage/collectiongeneralpage.cpp:145
+#: collectionpage/collectiongeneralpage.cpp:167
+msgctxt "type of folder content"
+msgid "Tasks"
+msgstr "Aufgaben"
+
+#: collectionpage/collectiongeneralpage.cpp:119
+#: collectionpage/collectiongeneralpage.cpp:148
+#: collectionpage/collectiongeneralpage.cpp:179
+msgctxt "type of folder content"
+msgid "Journal"
+msgstr "Journal"
+
+#: collectionpage/collectiongeneralpage.cpp:121
+#: collectionpage/collectiongeneralpage.cpp:151
+#: collectionpage/collectiongeneralpage.cpp:182
+msgctxt "type of folder content"
+msgid "Configuration"
+msgstr "Einrichtung"
+
+#: collectionpage/collectiongeneralpage.cpp:123
+#: collectionpage/collectiongeneralpage.cpp:154
+#: collectionpage/collectiongeneralpage.cpp:185
+msgctxt "type of folder content"
+msgid "Freebusy"
+msgstr "Frei/Belegt"
+
+#: collectionpage/collectiongeneralpage.cpp:125
+#: collectionpage/collectiongeneralpage.cpp:157
+#: collectionpage/collectiongeneralpage.cpp:188
+msgctxt "type of folder content"
+msgid "Files"
+msgstr "Dateien"
+
+#: collectionpage/collectiongeneralpage.cpp:127
+msgctxt "type of folder content"
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#: collectionpage/collectiongeneralpage.cpp:268
 msgctxt "@label:textbox Name of the folder."
 msgid "&Name:"
 msgstr "&Name:"
 
-#: collectionpage/collectiongeneralpage.cpp:115
+#: collectionpage/collectiongeneralpage.cpp:283
 msgid "Act on new/unread mail in this folder"
 msgstr "Aktion bei neuen/ungelesenen Nachrichten in diesem Ordner"
 
-#: collectionpage/collectiongeneralpage.cpp:117
+#: collectionpage/collectiongeneralpage.cpp:285
 msgid ""
 "<qt><p>If this option is enabled then you will be notified about new/unread "
 "mail in this folder. Moreover, going to the next/previous folder with unread "
@@ -122,11 +190,11 @@ msgstr ""
 "nützlich, um neue und ungelesene Nachrichten in Ihrem Papierkorb oder Spam-"
 "Ordner zu ignorieren.</p></qt>"
 
-#: collectionpage/collectiongeneralpage.cpp:133
+#: collectionpage/collectiongeneralpage.cpp:301
 msgid "Keep replies in this folder"
 msgstr "Antworten in diesem Ordner aufbewahren"
 
-#: collectionpage/collectiongeneralpage.cpp:135
+#: collectionpage/collectiongeneralpage.cpp:303
 msgid ""
 "Check this option if you want replies you write to mails in this folder to "
 "be put in this same folder after sending, instead of in the configured sent-"
@@ -136,11 +204,11 @@ msgstr ""
 "Ordner im gleichen Ordner anstelle des eingestellten Ordners für gesendete "
 "Nachrichten gespeichert werden sollen."
 
-#: collectionpage/collectiongeneralpage.cpp:146
+#: collectionpage/collectiongeneralpage.cpp:314
 msgid "Hide this folder in the folder selection dialog"
 msgstr "Diesen Ordner im Ordner-Auswahldialog ausblenden"
 
-#: collectionpage/collectiongeneralpage.cpp:149
+#: collectionpage/collectiongeneralpage.cpp:317
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this option if you do not want this folder to be shown in folder "
@@ -150,15 +218,15 @@ msgstr ""
 "Auswahldialogen angezeigt, wie z. B. <interface>Wechseln in Ordner</"
 "interface>."
 
-#: collectionpage/collectiongeneralpage.cpp:166
+#: collectionpage/collectiongeneralpage.cpp:334
 msgid "Use &default identity"
 msgstr "&Standard-Identität verwenden"
 
-#: collectionpage/collectiongeneralpage.cpp:171
+#: collectionpage/collectiongeneralpage.cpp:339
 msgid "&Sender identity:"
 msgstr "Absender-&Identität:"
 
-#: collectionpage/collectiongeneralpage.cpp:177
+#: collectionpage/collectiongeneralpage.cpp:345
 msgid ""
 "Select the sender identity to be used when writing new mail or replying to "
 "mail in this folder. This means that if you are in one of your work folders, "
@@ -172,119 +240,27 @@ msgstr ""
 "oder Verschlüsselungsschlüssel automatisch auswählen. Identitäten werden im "
 "Haupteinrichtungsdialog festgelegt. (Einstellungen -> KMail einrichten)"
 
-#: collectionpage/collectiongeneralpage.cpp:231
-msgid "Share unread state with all users"
-msgstr "Status „Ungelesen“ mit allen Benutzern teilen"
-
-#: collectionpage/collectiongeneralpage.cpp:236
-msgid ""
-"If enabled, the unread state of messages in this folder will be the same for "
-"all users having access to this folder. If disabled (the default), every "
-"user with access to this folder has their own unread state."
-msgstr ""
-"Wenn diese Einstellung aktiviert ist, wird der Ungelesen-Status für "
-"Nachrichten in diesem Ordner gemeinsam für alle Benutzer verwendet. Falls "
-"die Einstellung deaktiviert ist (dies ist die Voreinstellung), so hat jeder "
-"Benutzer seinen eigenen Ungelesen-Status."
-
-#: collectionpage/collectiongeneralpage.cpp:379
-msgid ""
-"You have configured this folder to contain groupware information. That means "
-"that this folder will disappear once the configuration dialog is closed."
-msgstr ""
-"Sie haben dieser Ordner so konfiguriert, dass er Groupware-Funktionen "
-"enthält. Daher wieder dieser Ordner nicht mehr angezeigt, sobald Sie den "
-"Konfigurationsdialog schließen."
-
-#: collectionpage/collectiontypeutil.cpp:55
-#: collectionpage/collectiontypeutil.cpp:163
-#: collectionpage/collectiontypeutil.cpp:221
-msgctxt "type of folder content"
-msgid "Mail"
-msgstr "E-Mail"
-
-#: collectionpage/collectiontypeutil.cpp:57
-#: collectionpage/collectiontypeutil.cpp:166
-#: collectionpage/collectiontypeutil.cpp:200
-msgctxt "type of folder content"
-msgid "Calendar"
-msgstr "Kalender"
-
-#: collectionpage/collectiontypeutil.cpp:59
-#: collectionpage/collectiontypeutil.cpp:169
-#: collectionpage/collectiontypeutil.cpp:203
-msgctxt "type of folder content"
-msgid "Contacts"
-msgstr "Kontakte"
-
-#: collectionpage/collectiontypeutil.cpp:61
-#: collectionpage/collectiontypeutil.cpp:172
-#: collectionpage/collectiontypeutil.cpp:206
-msgctxt "type of folder content"
-msgid "Notes"
-msgstr "Notizen"
-
-#: collectionpage/collectiontypeutil.cpp:63
-#: collectionpage/collectiontypeutil.cpp:175
-#: collectionpage/collectiontypeutil.cpp:197
-msgctxt "type of folder content"
-msgid "Tasks"
-msgstr "Aufgaben"
-
-#: collectionpage/collectiontypeutil.cpp:65
-#: collectionpage/collectiontypeutil.cpp:178
-#: collectionpage/collectiontypeutil.cpp:209
-msgctxt "type of folder content"
-msgid "Journal"
-msgstr "Journal"
-
-#: collectionpage/collectiontypeutil.cpp:67
-#: collectionpage/collectiontypeutil.cpp:181
-#: collectionpage/collectiontypeutil.cpp:212
-msgctxt "type of folder content"
-msgid "Configuration"
-msgstr "Einrichtung"
-
-#: collectionpage/collectiontypeutil.cpp:69
-#: collectionpage/collectiontypeutil.cpp:184
-#: collectionpage/collectiontypeutil.cpp:215
-msgctxt "type of folder content"
-msgid "Freebusy"
-msgstr "Frei/Belegt"
-
-#: collectionpage/collectiontypeutil.cpp:71
-#: collectionpage/collectiontypeutil.cpp:187
-#: collectionpage/collectiontypeutil.cpp:218
-msgctxt "type of folder content"
-msgid "Files"
-msgstr "Dateien"
-
-#: collectionpage/collectiontypeutil.cpp:73
-msgctxt "type of folder content"
-msgid "Unknown"
-msgstr "Unbekannt"
-
-#: collectionpage/contenttypewidget.cpp:36
+#: collectionpage/collectiongeneralpage.cpp:373
 msgid "&Folder contents:"
 msgstr "Ordner&inhalt:"
 
-#: collectionpage/incidencesforwidget.cpp:35
+#: collectionpage/collectiongeneralpage.cpp:406
 msgid "Generate free/&busy and activate alarms for:"
 msgstr "Frei/&Belegt erstellen und Erinnerungen aktivieren für:"
 
-#: collectionpage/incidencesforwidget.cpp:43
+#: collectionpage/collectiongeneralpage.cpp:412
 msgid "Nobody"
 msgstr "Niemand"
 
-#: collectionpage/incidencesforwidget.cpp:44
+#: collectionpage/collectiongeneralpage.cpp:413
 msgid "Admins of This Folder"
 msgstr "Verwalter dieses Ordners"
 
-#: collectionpage/incidencesforwidget.cpp:45
+#: collectionpage/collectiongeneralpage.cpp:414
 msgid "All Readers of This Folder"
 msgstr "Alle Leser dieses Ordners"
 
-#: collectionpage/incidencesforwidget.cpp:47
+#: collectionpage/collectiongeneralpage.cpp:416
 msgid ""
 "This setting defines which users sharing this folder should get \"busy\" "
 "periods in their freebusy lists and should see the alarms for the events or "
@@ -314,6 +290,30 @@ msgstr ""
 "Bei einem firmeninternen Ordner mit Besprechungen ohne Teilnahmepflicht "
 "sollte „Niemand“ verwendet werden, da nicht automatisch klar ist, wer an "
 "solchen Terminen teilnimmt."
+
+#: collectionpage/collectiongeneralpage.cpp:438
+msgid "Share unread state with all users"
+msgstr "Status „Ungelesen“ mit allen Benutzern teilen"
+
+#: collectionpage/collectiongeneralpage.cpp:443
+msgid ""
+"If enabled, the unread state of messages in this folder will be the same for "
+"all users having access to this folder. If disabled (the default), every "
+"user with access to this folder has their own unread state."
+msgstr ""
+"Wenn diese Einstellung aktiviert ist, wird der Ungelesen-Status für "
+"Nachrichten in diesem Ordner gemeinsam für alle Benutzer verwendet. Falls "
+"die Einstellung deaktiviert ist (dies ist die Voreinstellung), so hat jeder "
+"Benutzer seinen eigenen Ungelesen-Status."
+
+#: collectionpage/collectiongeneralpage.cpp:615
+msgid ""
+"You have configured this folder to contain groupware information. That means "
+"that this folder will disappear once the configuration dialog is closed."
+msgstr ""
+"Sie haben dieser Ordner so konfiguriert, dass er Groupware-Funktionen "
+"enthält. Daher wieder dieser Ordner nicht mehr angezeigt, sobald Sie den "
+"Konfigurationsdialog schließen."
 
 #: filter/dialog/filteractionmissingargumentdialog.cpp:48
 #: folder/folderrequester.cpp:59 folder/folderrequester.cpp:91
@@ -435,59 +435,58 @@ msgstr "Thunderbird-Filterdateien auswählen"
 msgid " (default)"
 msgstr " (Standard)"
 
-#: filter/filteractions/filteraction.cpp:134
+#: filter/filteraction.cpp:134
 #, kde-format
 msgid "### \"action '%1' not supported\""
 msgstr "### Aktion „%1 nicht unterstützt“"
 
-#: filter/filteractions/filteractionaddheader.cpp:35
+#: filter/filteractionaddheader.cpp:35
 msgid "Add Header"
 msgstr "Vorspann hinzufügen"
 
-#: filter/filteractions/filteractionaddheader.cpp:89
+#: filter/filteractionaddheader.cpp:89
 msgid "With value:"
 msgstr "Mit Wert:"
 
-#: filter/filteractions/filteractionaddtag.cpp:37 tag/addtagdialog.cpp:36
+#: filter/filteractionaddtag.cpp:37 tag/addtagdialog.cpp:36
 msgid "Add Tag"
 msgstr "Neue Markierung hinzufügen"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:43
+#: filter/filteractionaddtoaddressbook.cpp:43
 msgid "Add to Address Book"
 msgstr "Zum Adressbuch hinzufügen"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:44
+#: filter/filteractionaddtoaddressbook.cpp:44
 msgctxt "Email sender"
 msgid "From"
 msgstr "Von"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:45
+#: filter/filteractionaddtoaddressbook.cpp:45
 msgctxt "Email recipient"
 msgid "To"
 msgstr "An"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:46
-#: search/searchpatternedit.cpp:74
+#: filter/filteractionaddtoaddressbook.cpp:46 search/searchpatternedit.cpp:74
 msgid "CC"
 msgstr "Kopie"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:47
+#: filter/filteractionaddtoaddressbook.cpp:47
 msgid "BCC"
 msgstr "Blindkopie"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:50
+#: filter/filteractionaddtoaddressbook.cpp:50
 msgid "KMail Filter"
 msgstr "KMail-Filter"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:106
+#: filter/filteractionaddtoaddressbook.cpp:106
 msgid "with category"
 msgstr "mit der Kategorie"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:114
+#: filter/filteractionaddtoaddressbook.cpp:114
 msgid "in address book"
 msgstr "im Adressbuch"
 
-#: filter/filteractions/filteractionaddtoaddressbook.cpp:122
+#: filter/filteractionaddtoaddressbook.cpp:122
 msgid ""
 "<p>This defines the preferred address book.<br />If it is not accessible, "
 "the filter will fallback to the default address book.</p>"
@@ -495,214 +494,213 @@ msgstr ""
 "<p>Legt das bevorzugte Adressbuch fest.<br />Falls dieses nicht verfügbar "
 "ist, wird der Filter das Standard-Adressbuch verwenden.</p>"
 
-#: filter/filteractions/filteractionbeep.cpp:28
+#: filter/filteractionbeep.cpp:28
 msgid "Beep"
 msgstr "Signalton"
 
-#: filter/filteractions/filteractioncopy.cpp:32
+#: filter/filteractioncopy.cpp:32
 msgid "Copy Into Folder"
 msgstr "In Ordner kopieren"
 
-#: filter/filteractions/filteractiondelete.cpp:30
+#: filter/filteractiondelete.cpp:30
 msgid "Delete Message"
 msgstr "Nachricht löschen"
 
-#: filter/filteractions/filteractiondelete.cpp:53
+#: filter/filteractiondelete.cpp:53
 msgid "Be careful, mails will be removed."
 msgstr "Seien Sie vorsichtig, es werden E-Mails gelöscht."
 
-#: filter/filteractions/filteractionexec.cpp:27
+#: filter/filteractionexec.cpp:27
 msgid "Execute Command"
 msgstr "Befehl ausführen"
 
-#: filter/filteractions/filteractionforward.cpp:47
+#: filter/filteractionforward.cpp:47
 msgctxt "Forward directly not with a command"
 msgid "Forward To"
 msgstr "Weiterleiten an"
 
-#: filter/filteractions/filteractionforward.cpp:102
+#: filter/filteractionforward.cpp:102
 msgid "The addressee to whom the message will be forwarded."
 msgstr "Der Empfänger, zu dem die Nachricht weitergeleitet wird."
 
-#: filter/filteractions/filteractionforward.cpp:103
+#: filter/filteractionforward.cpp:103
 msgid "The filter will forward the message to the addressee entered here."
 msgstr ""
 "Der Filter wird die Nachricht an den hier eingegebenen Empfänger "
 "weiterleiten."
 
-#: filter/filteractions/filteractionforward.cpp:109
-#: filter/filteractions/filteractionforward.cpp:211
+#: filter/filteractionforward.cpp:109 filter/filteractionforward.cpp:207
 msgid "Default Template"
 msgstr "Standardvorlage"
 
-#: filter/filteractions/filteractionforward.cpp:121
+#: filter/filteractionforward.cpp:121
 msgid "The template used when forwarding"
 msgstr "Die Nachrichtenvorlage für Weiterleitungen"
 
-#: filter/filteractions/filteractionforward.cpp:122
+#: filter/filteractionforward.cpp:122
 msgid "Set the forwarding template that will be used with this filter."
 msgstr ""
 "Die Nachrichtenvorlage für Weiterleitungen einrichten, die von diesem Filter "
 "verwendet wird."
 
-#: filter/filteractions/filteractionforward.cpp:241
+#: filter/filteractionforward.cpp:237
 #, kde-format
 msgid "Forward to %1 with default template"
 msgstr "Weiterleitungen an %1 mit der Standard-Nachrichtenvorlage verfassen"
 
-#: filter/filteractions/filteractionforward.cpp:243
+#: filter/filteractionforward.cpp:239
 #, kde-format
 msgid "Forward to %1 with template %2"
 msgstr "Weiterleitungen an %1 mit der Nachrichtenvorlage „%2“ verfassen"
 
-#: filter/filteractions/filteractionmove.cpp:35
+#: filter/filteractionmove.cpp:35
 msgid "Move Into Folder"
 msgstr "In Ordner verschieben"
 
-#: filter/filteractions/filteractionpipethrough.cpp:32
+#: filter/filteractionpipethrough.cpp:32
 msgctxt "pipe through with command"
 msgid "Pipe Through"
 msgstr "Durch Programm leiten"
 
-#: filter/filteractions/filteractionplaysound.cpp:34
+#: filter/filteractionplaysound.cpp:34
 msgid "Play Sound"
 msgstr "Einen Klang abspielen"
 
-#: filter/filteractions/filteractionredirect.cpp:39
+#: filter/filteractionredirect.cpp:39
 msgid "Redirect To"
 msgstr "Umleiten nach"
 
-#: filter/filteractions/filteractionremoveheader.cpp:35
+#: filter/filteractionremoveheader.cpp:35
 msgid "Remove Header"
 msgstr "Vorspann entfernen"
 
-#: filter/filteractions/filteractionreplyto.cpp:32
+#: filter/filteractionreplyto.cpp:32
 msgid "Set Reply-To To"
 msgstr "Antwortadresse setzen auf"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:40
+#: filter/filteractionrewriteheader.cpp:40
 msgid "Rewrite Header"
 msgstr "Vorspann umschreiben"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:110
+#: filter/filteractionrewriteheader.cpp:110
 msgid "Replace:"
 msgstr "Ersetzen:"
 
-#: filter/filteractions/filteractionrewriteheader.cpp:118
+#: filter/filteractionrewriteheader.cpp:118
 msgid "With:"
 msgstr "Durch:"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:44
+#: filter/filteractionsendfakedisposition.cpp:44
 msgid "Send Fake MDN"
 msgstr "Fingierte Empfangsbestätigung senden"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:49
+#: filter/filteractionsendfakedisposition.cpp:49
 msgctxt "MDN type"
 msgid "Ignore"
 msgstr "Ignoriert"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:50
+#: filter/filteractionsendfakedisposition.cpp:50
 msgctxt "MDN type"
 msgid "Displayed"
 msgstr "Angezeigt"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:51
+#: filter/filteractionsendfakedisposition.cpp:51
 msgctxt "MDN type"
 msgid "Deleted"
 msgstr "Gelöscht"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:52
+#: filter/filteractionsendfakedisposition.cpp:52
 msgctxt "MDN type"
 msgid "Dispatched"
 msgstr "Weitergeleitet"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:53
+#: filter/filteractionsendfakedisposition.cpp:53
 msgctxt "MDN type"
 msgid "Processed"
 msgstr "Bearbeitet"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:54
+#: filter/filteractionsendfakedisposition.cpp:54
 msgctxt "MDN type"
 msgid "Denied"
 msgstr "Abgelehnt"
 
-#: filter/filteractions/filteractionsendfakedisposition.cpp:55
+#: filter/filteractionsendfakedisposition.cpp:55
 msgctxt "MDN type"
 msgid "Failed"
 msgstr "Fehlgeschlagen"
 
-#: filter/filteractions/filteractionsendreceipt.cpp:33
+#: filter/filteractionsendreceipt.cpp:33
 msgid "Confirm Delivery"
 msgstr "Zustellung bestätigen"
 
-#: filter/filteractions/filteractionsetidentity.cpp:41
+#: filter/filteractionsetidentity.cpp:41
 msgid "Set Identity To"
 msgstr "Identität setzen auf"
 
-#: filter/filteractions/filteractionsetstatus.cpp:32
+#: filter/filteractionsetstatus.cpp:32
 msgid "Mark As"
 msgstr "Markieren als"
 
-#: filter/filteractions/filteractionsettransport.cpp:51
+#: filter/filteractionsettransport.cpp:51
 msgid "Set Transport To"
 msgstr "Versandweg festlegen auf"
 
-#: filter/filteractions/filteractionstatus.cpp:46
+#: filter/filteractionstatus.cpp:46
 msgctxt "msg status"
 msgid "Important"
 msgstr "Wichtig"
 
-#: filter/filteractions/filteractionstatus.cpp:47
+#: filter/filteractionstatus.cpp:47
 msgctxt "msg status"
 msgid "Read"
 msgstr "Gelesen"
 
-#: filter/filteractions/filteractionstatus.cpp:48
+#: filter/filteractionstatus.cpp:48
 msgctxt "msg status"
 msgid "Unread"
 msgstr "Ungelesen"
 
-#: filter/filteractions/filteractionstatus.cpp:49
+#: filter/filteractionstatus.cpp:49
 msgctxt "msg status"
 msgid "Replied"
 msgstr "Beantwortet"
 
-#: filter/filteractions/filteractionstatus.cpp:50
+#: filter/filteractionstatus.cpp:50
 msgctxt "msg status"
 msgid "Forwarded"
 msgstr "Weitergeleitet"
 
-#: filter/filteractions/filteractionstatus.cpp:51
+#: filter/filteractionstatus.cpp:51
 msgctxt "msg status"
 msgid "Watched"
 msgstr "Überwacht"
 
-#: filter/filteractions/filteractionstatus.cpp:52
+#: filter/filteractionstatus.cpp:52
 msgctxt "msg status"
 msgid "Ignored"
 msgstr "Ignoriert"
 
-#: filter/filteractions/filteractionstatus.cpp:53
+#: filter/filteractionstatus.cpp:53
 msgctxt "msg status"
 msgid "Spam"
 msgstr "Spam"
 
-#: filter/filteractions/filteractionstatus.cpp:54
+#: filter/filteractionstatus.cpp:54
 msgctxt "msg status"
 msgid "Ham"
 msgstr "Ham"
 
-#: filter/filteractions/filteractionstatus.cpp:55
+#: filter/filteractionstatus.cpp:55
 msgctxt "msg status"
 msgid "Action Item"
 msgstr "Aufgaben-Element"
 
-#: filter/filteractions/filteractionunsetstatus.cpp:30
+#: filter/filteractionunsetstatus.cpp:30
 msgctxt "action: to unset the status"
 msgid "Unset Status"
 msgstr "Status zurücksetzen"
 
-#: filter/filteractions/filteractionwidget.cpp:80
+#: filter/filteractionwidget.cpp:80
 msgid "Please select an action."
 msgstr "Bitte wählen Sie eine Aktion aus."
 
@@ -719,7 +717,7 @@ msgstr "Filter bearbeiten"
 msgid "Do you really want to remove filter <b>%1</b>?"
 msgstr "Möchten Sie den Filter <b>%1</b> wirklich löschen?"
 
-#: filter/filtercontroller.cpp:117 filter/kmfilterlistbox.cpp:500
+#: filter/filtercontroller.cpp:117 filter/kmfilterdialog.cpp:1295
 msgid "Remove Filter"
 msgstr "Filter entfernen"
 
@@ -759,11 +757,7 @@ msgstr ""
 "*.siv|Sieve-Dateien (*.siv)\n"
 "*|Alle Dateien (*)"
 
-#: filter/filterconverter/filterconverttosieveresultdialog.cpp:65
-msgid "Convert to Script Sieve"
-msgstr "In Sieve-Skript umwandeln"
-
-#: filter/filterimporterexporter.cpp:144 filter/kmfilterlistbox.cpp:413
+#: filter/filterimporterexporter.cpp:143 filter/kmfilterdialog.cpp:1208
 msgid ""
 "The following filters have not been saved because they were invalid (e.g. "
 "containing no actions or no search rules)."
@@ -771,42 +765,36 @@ msgstr ""
 "Folgende Filter sind ungültig und können daher nicht gespeichert werden (d. "
 "h. sie enthalten keine Aktion oder keine Suchregeln)."
 
-#: filter/filterimporterexporter.cpp:174
+#: filter/filterimporterexporter.cpp:173
 msgid "Import KMail Filters"
 msgstr "KMail-Filter importieren"
 
-#: filter/filterimporterexporter.cpp:178
+#: filter/filterimporterexporter.cpp:177
 msgid "Import Thunderbird Filters"
 msgstr "Thunderbird-Filter importieren"
 
-#: filter/filterimporterexporter.cpp:182
+#: filter/filterimporterexporter.cpp:181
 msgid "Import Evolution Filters"
 msgstr "Evolution-Filter importieren"
 
-#: filter/filterimporterexporter.cpp:186
+#: filter/filterimporterexporter.cpp:185
 msgid "Import Sylpheed Filters"
 msgstr "Sylpheed-Filter importieren"
 
-#: filter/filterimporterexporter.cpp:190
+#: filter/filterimporterexporter.cpp:189
 msgid "Import Procmail Filters"
 msgstr "Procmail-Filter importieren"
 
-#: filter/filterimporterexporter.cpp:194
+#: filter/filterimporterexporter.cpp:193
 msgid "Import Balsa Filters"
 msgstr "Balsa-Filter importieren"
 
-#: filter/filterimporterexporter.cpp:198
+#: filter/filterimporterexporter.cpp:197
 msgid "Import Claws Mail Filters"
 msgstr "Claws-Mail-Filter importieren"
 
-#: filter/filterimporterexporter.cpp:202
-#, fuzzy
-#| msgid "Import Sylpheed Filters"
-msgid "Import Icedove Filters"
-msgstr "Sylpheed-Filter importieren"
-
-#: filter/filterimporterexporter.cpp:218 filter/filterimporterexporter.cpp:248
-#: filter/filterimporterexporter.cpp:271
+#: filter/filterimporterexporter.cpp:213 filter/filterimporterexporter.cpp:240
+#: filter/filterimporterexporter.cpp:263
 msgid ""
 "The selected file is not readable. Your file access permissions might be "
 "insufficient."
@@ -814,7 +802,7 @@ msgstr ""
 "Die gewählte Datei kann nicht gelesen werden. Möglicherweise reichen Ihre "
 "Zugriffsrechte nicht aus."
 
-#: filter/filterimporterexporter.cpp:351
+#: filter/filterimporterexporter.cpp:343
 msgid "Export Filters"
 msgstr "Filter exportieren"
 
@@ -822,7 +810,7 @@ msgstr "Filter exportieren"
 msgid "Select Filters"
 msgstr "Filter auswählen"
 
-#: filter/filterselectiondialog.cpp:48 filter/kmfilterlistbox.cpp:136
+#: filter/filterselectiondialog.cpp:48 filter/kmfilterdialog.cpp:931
 #: folder/foldertreewidget.cpp:109
 msgctxt "@info/plain Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
@@ -836,233 +824,15 @@ msgstr "Alles auswählen"
 msgid "Unselect All"
 msgstr "Auswahl aufheben"
 
-#: filter/kmfilteraccountlist.cpp:36
+#: filter/kmfilterdialog.cpp:81
 msgid "Account Name"
 msgstr "Postfachname:"
 
-#: filter/kmfilteraccountlist.cpp:36
+#: filter/kmfilterdialog.cpp:81
 msgid "Type"
 msgstr "Typ"
 
-#: filter/kmfilterdialog.cpp:91
-msgid "Filter Rules"
-msgstr "Filterregeln"
-
-#: filter/kmfilterdialog.cpp:101
-msgid "Import..."
-msgstr "Importieren ..."
-
-#: filter/kmfilterdialog.cpp:102
-msgid "Export..."
-msgstr "Exportieren ..."
-
-#: filter/kmfilterdialog.cpp:103
-msgid "Convert to..."
-msgstr "Umwandeln in ..."
-
-#: filter/kmfilterdialog.cpp:106
-msgid "KMail filters"
-msgstr "KMail-Filter"
-
-#: filter/kmfilterdialog.cpp:110
-msgid "Thunderbird filters"
-msgstr "Thunderbird-Filter"
-
-#: filter/kmfilterdialog.cpp:114
-msgid "Evolution filters"
-msgstr "Evolution-Filter"
-
-#: filter/kmfilterdialog.cpp:118
-msgid "Sylpheed filters"
-msgstr "Sylpheed-Filter"
-
-#: filter/kmfilterdialog.cpp:122
-msgid "Procmail filters"
-msgstr "Procmail-Filter"
-
-#: filter/kmfilterdialog.cpp:126
-msgid "Balsa filters"
-msgstr "Balsa-Filter"
-
-#: filter/kmfilterdialog.cpp:130
-msgid "Claws Mail filters"
-msgstr "Claws-Mail-Filter"
-
-#: filter/kmfilterdialog.cpp:134
-#, fuzzy
-#| msgid "KMail filters"
-msgid "Icedove Mail filters"
-msgstr "KMail-Filter"
-
-#: filter/kmfilterdialog.cpp:144
-msgid "Sieve script"
-msgstr "Sieve-Skript"
-
-#: filter/kmfilterdialog.cpp:167
-msgid "Available Filters"
-msgstr "Vorhandene Filter"
-
-#: filter/kmfilterdialog.cpp:173
-msgctxt "General mail filter settings."
-msgid "General"
-msgstr "Allgemein"
-
-#: filter/kmfilterdialog.cpp:179
-msgctxt "Advanced mail filter settings."
-msgid "Advanced"
-msgstr "Erweitert"
-
-#: filter/kmfilterdialog.cpp:189
-msgid "Filter Criteria"
-msgstr "Filterkriterien"
-
-#: filter/kmfilterdialog.cpp:198
-msgid "Filter Actions"
-msgstr "Filteraktionen"
-
-#: filter/kmfilterdialog.cpp:205
-msgid "Advanced Options"
-msgstr "Weitere Einstellungen"
-
-#: filter/kmfilterdialog.cpp:213
-msgid "Apply this filter to incoming messages:"
-msgstr "Diesen Filter auf eingehende Nachrichten anwenden:"
-
-#: filter/kmfilterdialog.cpp:218
-msgid "from all accounts"
-msgstr "von allen Postfächern"
-
-#: filter/kmfilterdialog.cpp:223
-msgid "from all but online IMAP accounts"
-msgstr "von allen, außer Online-IMAP-Postfächern"
-
-#: filter/kmfilterdialog.cpp:228
-msgid "from checked accounts only"
-msgstr "nur von markierten Postfächern"
-
-#: filter/kmfilterdialog.cpp:237
-msgid "Apply this filter to &sent messages"
-msgstr "Diesen Filter auf &gesendete Nachrichten anwenden"
-
-#: filter/kmfilterdialog.cpp:239
-msgid ""
-"<p>The filter will be triggered <b>after</b> the message is sent and it will "
-"only affect the local copy of the message.</p><p>If the recipient's copy "
-"also needs to be modified, please use \"Apply this filter <b>before</b> "
-"sending messages\".</p>"
-msgstr ""
-"<p>Der Filter wird angewendet, <b>nachdem</b> die Nachricht gesendet wurde "
-"und er beeinflusst nur das lokale Exemplar.</p><p>Falls die Ausfertigung für "
-"den Empfänger auch modifiziert werden soll, so verwenden Sie bitten den "
-"Filter, der vor dem Senden angewendet wird.</p>"
-
-#: filter/kmfilterdialog.cpp:246
-msgid "Apply this filter &before sending messages"
-msgstr "Diesen Filter &vor dem Senden von Nachrichten anwenden"
-
-#: filter/kmfilterdialog.cpp:248
-msgid ""
-"<p>The filter will be triggered <b>before</b> the message is sent and it "
-"will affect both the local copy and the sent copy of the message.</p><p>This "
-"is required if the recipient's copy also needs to be modified.</p>"
-msgstr ""
-"<p>Der Filter wird angewendet, <b>bevor</b> die Nachricht versendet wird und "
-"er beeinflusst sowohl die lokale Kopie als auch das gesendete Exemplar.</"
-"p><p>Dies wird benötigt, wenn auch die Ausfertigung des Empfängers "
-"modifiziert werden muss.</p>"
-
-#: filter/kmfilterdialog.cpp:255
-msgid "Apply this filter on manual &filtering"
-msgstr "Diesen Filter bei der manuellen &Filterung anwenden"
-
-#: filter/kmfilterdialog.cpp:259
-msgid "If this filter &matches, stop processing here"
-msgstr "Bea&rbeitung hier beenden, falls Filterbedingung zutrifft"
-
-#: filter/kmfilterdialog.cpp:263
-msgid "Add this filter to the Apply Filter menu"
-msgstr "Diesen Filter zum Menü „Filteraktionen anwenden“ hinzufügen"
-
-#: filter/kmfilterdialog.cpp:266
-msgid "Shortcut:"
-msgstr "Kurzbefehl:"
-
-#: filter/kmfilterdialog.cpp:278
-msgid "Additionally add this filter to the toolbar"
-msgstr "Diesen Filter zur Werkzeugleiste hinzufügen"
-
-#: filter/kmfilterdialog.cpp:283
-msgid "Icon for this filter:"
-msgstr "Symbol für diesen Filter:"
-
-#: filter/kmfilterdialog.cpp:300
-msgid "Run selected filter(s) on: "
-msgstr "Gewählte Filter anwenden auf: "
-
-#: filter/kmfilterdialog.cpp:307
-msgid "Run Now"
-msgstr "Jetzt anwenden"
-
-#: filter/kmfilterdialog.cpp:463
-msgctxt "@info"
-msgid "Unable to apply this filter since there are no folders selected."
-msgstr ""
-"Dieser Filter kann nicht angewendet werden, da keine Ordner ausgewählt sind."
-
-#: filter/kmfilterdialog.cpp:464
-msgid "No folder selected."
-msgstr "Kein Ordner ausgewählt."
-
-#: filter/kmfilterdialog.cpp:472
-msgctxt "@info"
-msgid ""
-"Some filters were changed and not saved yet. You must save your filters "
-"before they can be applied."
-msgstr ""
-"Einige Filter wurden geändert aber noch nicht gespeichert. Sie müssen die "
-"Änderungen speichern, bevor Sie die Filter anwenden können."
-
-#: filter/kmfilterdialog.cpp:474 filter/kmfilterdialog.cpp:762
-msgid "Filters changed."
-msgstr "Filter geändert."
-
-#: filter/kmfilterdialog.cpp:483
-msgctxt "@info"
-msgid "Unable to apply a filter since there are no filters currently selected."
-msgstr ""
-"Kein Filter kann angewendet werden, da aktuell keine Filter ausgewählt sind."
-
-#: filter/kmfilterdialog.cpp:484 filter/kmfilterdialog.cpp:776
-msgid "No filters selected."
-msgstr "Keine Filter ausgewählt."
-
-#: filter/kmfilterdialog.cpp:717
-msgid "No filter was imported."
-msgstr "Es wurde kein Filter importiert."
-
-#: filter/kmfilterdialog.cpp:730
-msgid "Filters which were imported:"
-msgstr "Importierte Filter:"
-
-#: filter/kmfilterdialog.cpp:760
-msgctxt "@info"
-msgid ""
-"Some filters were changed and not saved yet.<br>You must save your filters "
-"before they can be exported."
-msgstr ""
-"Einige Filter wurden geändert aber noch nicht gespeichert. <br>Sie müssen "
-"die Änderungen speichern, bevor Sie die Filter exportieren können."
-
-#: filter/kmfilterdialog.cpp:765
-msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
-msgstr ""
-"Es können leider nicht alle KMail-Filter in Sieve-Skripte umgewandelt werden"
-
-#: filter/kmfilterdialog.cpp:765 filter/kmfilterdialog.cpp:776
-msgid "Convert KMail filters to sieve scripts"
-msgstr "KMail-Filter in Sieve-Skripte umwandeln"
-
-#: filter/kmfilterlistbox.cpp:35
+#: filter/kmfilterdialog.cpp:216
 msgid ""
 "<qt><p>This is the list of defined filters. They are processed top-to-bottom."
 "</p><p>Click on any filter to edit it using the controls in the right-hand "
@@ -1073,7 +843,7 @@ msgstr ""
 "und benutzen Sie die auf der rechten Seite des Dialogs angeordneten Knöpfe.</"
 "p></qt>"
 
-#: filter/kmfilterlistbox.cpp:42
+#: filter/kmfilterdialog.cpp:223
 msgid ""
 "<qt><p>Click this button to create a new filter.</p><p>The filter will be "
 "inserted just before the currently-selected one, but you can always change "
@@ -1086,7 +856,7 @@ msgstr ""
 "haben, können Sie den erzeugten Filter durch einen Klick auf den Knopf "
 "<em>Löschen</em> wieder entfernen.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:50
+#: filter/kmfilterdialog.cpp:231
 msgid ""
 "<qt><p>Click this button to copy a filter.</p><p>If you have clicked this "
 "button accidentally, you can undo this by clicking on the <em>Delete</em> "
@@ -1097,7 +867,7 @@ msgstr ""
 "durch einen Klick auf den Knopf <em>Löschen</em> wieder rückgängig machen.</"
 "p></qt>"
 
-#: filter/kmfilterlistbox.cpp:55
+#: filter/kmfilterdialog.cpp:236
 msgid ""
 "<qt><p>Click this button to <em>delete</em> the currently-selected filter "
 "from the list above.</p><p>There is no way to get the filter back once it is "
@@ -1109,7 +879,7 @@ msgstr ""
 "Sie ihn nicht wiederherstellen. Aber wenn Sie den Dialog mit <em>Abbrechen</"
 "em> beenden, werden alle Änderungen verworfen.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:63
+#: filter/kmfilterdialog.cpp:244
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>up</em> "
 "one in the list above.</p><p>This is useful since the order of the filters "
@@ -1126,7 +896,7 @@ msgstr ""
 "Klicken auf den Knopf <em>Abwärts</em> wieder nach unten verschieben.</p></"
 "qt>"
 
-#: filter/kmfilterlistbox.cpp:72
+#: filter/kmfilterdialog.cpp:253
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>down</em> "
 "one in the list above.</p><p>This is useful since the order of the filters "
@@ -1143,7 +913,7 @@ msgstr ""
 "Klicken auf den Knopf <em>Aufwärts</em> wieder nach oben verschieben.</p></"
 "qt>"
 
-#: filter/kmfilterlistbox.cpp:81
+#: filter/kmfilterdialog.cpp:262
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter to top of "
 "list.</p><p>This is useful since the order of the filters in the list "
@@ -1155,7 +925,7 @@ msgstr ""
 "festlegen, in welcher Reihenfolge die Filter auf Nachrichten angewendet "
 "werden: Der oberste Filter wird zuerst angewendet.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:88
+#: filter/kmfilterdialog.cpp:269
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter to bottom of "
 "list.</p><p>This is useful since the order of the filters in the list "
@@ -1167,7 +937,7 @@ msgstr ""
 "festlegen, in welcher Reihenfolge die Filter auf Nachrichten angewendet "
 "werden: Der oberste Filter wird zuerst angewendet.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:95
+#: filter/kmfilterdialog.cpp:276
 msgid ""
 "<qt><p>Click this button to rename the currently-selected filter.</"
 "p><p>Filters are named automatically, as long as they start with \"&lt;\".</"
@@ -1182,7 +952,7 @@ msgstr ""
 "Knopf, wählen Sie <em>Löschen</em> und im daraufhin erscheinenden Dialog "
 "<em>OK</em>.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:103
+#: filter/kmfilterdialog.cpp:284
 msgid ""
 "<qt><p>Check this button to force the confirmation dialog to be displayed.</"
 "p><p>This is useful if you have defined a ruleset that tags messages to be "
@@ -1199,48 +969,234 @@ msgstr ""
 "Nachrichten warten auf dem Server oder das Regelwerk wird geändert und damit "
 "die Nachrichten anders markiert.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:166
+#: filter/kmfilterdialog.cpp:306
+msgid "Filter Rules"
+msgstr "Filterregeln"
+
+#: filter/kmfilterdialog.cpp:316
+msgid "Import..."
+msgstr "Importieren ..."
+
+#: filter/kmfilterdialog.cpp:317
+msgid "Export..."
+msgstr "Exportieren ..."
+
+#: filter/kmfilterdialog.cpp:318
+msgid "Convert to..."
+msgstr "Umwandeln in ..."
+
+#: filter/kmfilterdialog.cpp:321
+msgid "KMail filters"
+msgstr "KMail-Filter"
+
+#: filter/kmfilterdialog.cpp:325
+msgid "Thunderbird filters"
+msgstr "Thunderbird-Filter"
+
+#: filter/kmfilterdialog.cpp:329
+msgid "Evolution filters"
+msgstr "Evolution-Filter"
+
+#: filter/kmfilterdialog.cpp:333
+msgid "Sylpheed filters"
+msgstr "Sylpheed-Filter"
+
+#: filter/kmfilterdialog.cpp:337
+msgid "Procmail filters"
+msgstr "Procmail-Filter"
+
+#: filter/kmfilterdialog.cpp:341
+msgid "Balsa filters"
+msgstr "Balsa-Filter"
+
+#: filter/kmfilterdialog.cpp:345
+msgid "Claws Mail filters"
+msgstr "Claws-Mail-Filter"
+
+#: filter/kmfilterdialog.cpp:355
+msgid "Sieve script"
+msgstr "Sieve-Skript"
+
+#: filter/kmfilterdialog.cpp:378
+msgid "Available Filters"
+msgstr "Vorhandene Filter"
+
+#: filter/kmfilterdialog.cpp:384
+msgctxt "General mail filter settings."
+msgid "General"
+msgstr "Allgemein"
+
+#: filter/kmfilterdialog.cpp:390
+msgctxt "Advanced mail filter settings."
+msgid "Advanced"
+msgstr "Erweitert"
+
+#: filter/kmfilterdialog.cpp:400
+msgid "Filter Criteria"
+msgstr "Filterkriterien"
+
+#: filter/kmfilterdialog.cpp:409
+msgid "Filter Actions"
+msgstr "Filteraktionen"
+
+#: filter/kmfilterdialog.cpp:416
+msgid "Advanced Options"
+msgstr "Weitere Einstellungen"
+
+#: filter/kmfilterdialog.cpp:424
+msgid "Apply this filter to incoming messages:"
+msgstr "Diesen Filter auf eingehende Nachrichten anwenden:"
+
+#: filter/kmfilterdialog.cpp:429
+msgid "from all accounts"
+msgstr "von allen Postfächern"
+
+#: filter/kmfilterdialog.cpp:434
+msgid "from all but online IMAP accounts"
+msgstr "von allen, außer Online-IMAP-Postfächern"
+
+#: filter/kmfilterdialog.cpp:439
+msgid "from checked accounts only"
+msgstr "nur von markierten Postfächern"
+
+#: filter/kmfilterdialog.cpp:448
+msgid "Apply this filter to &sent messages"
+msgstr "Diesen Filter auf &gesendete Nachrichten anwenden"
+
+#: filter/kmfilterdialog.cpp:450
+msgid ""
+"<p>The filter will be triggered <b>after</b> the message is sent and it will "
+"only affect the local copy of the message.</p><p>If the recipient's copy "
+"also needs to be modified, please use \"Apply this filter <b>before</b> "
+"sending messages\".</p>"
+msgstr ""
+"<p>Der Filter wird angewendet, <b>nachdem</b> die Nachricht gesendet wurde "
+"und er beeinflusst nur das lokale Exemplar.</p><p>Falls die Ausfertigung für "
+"den Empfänger auch modifiziert werden soll, so verwenden Sie bitten den "
+"Filter, der vor dem Senden angewendet wird.</p>"
+
+#: filter/kmfilterdialog.cpp:457
+msgid "Apply this filter &before sending messages"
+msgstr "Diesen Filter &vor dem Senden von Nachrichten anwenden"
+
+#: filter/kmfilterdialog.cpp:459
+msgid ""
+"<p>The filter will be triggered <b>before</b> the message is sent and it "
+"will affect both the local copy and the sent copy of the message.</p><p>This "
+"is required if the recipient's copy also needs to be modified.</p>"
+msgstr ""
+"<p>Der Filter wird angewendet, <b>bevor</b> die Nachricht versendet wird und "
+"er beeinflusst sowohl die lokale Kopie als auch das gesendete Exemplar.</"
+"p><p>Dies wird benötigt, wenn auch die Ausfertigung des Empfängers "
+"modifiziert werden muss.</p>"
+
+#: filter/kmfilterdialog.cpp:466
+msgid "Apply this filter on manual &filtering"
+msgstr "Diesen Filter bei der manuellen &Filterung anwenden"
+
+#: filter/kmfilterdialog.cpp:470
+msgid "If this filter &matches, stop processing here"
+msgstr "Bea&rbeitung hier beenden, falls Filterbedingung zutrifft"
+
+#: filter/kmfilterdialog.cpp:474
+msgid "Add this filter to the Apply Filter menu"
+msgstr "Diesen Filter zum Menü „Filteraktionen anwenden“ hinzufügen"
+
+#: filter/kmfilterdialog.cpp:477
+msgid "Shortcut:"
+msgstr "Kurzbefehl:"
+
+#: filter/kmfilterdialog.cpp:489
+msgid "Additionally add this filter to the toolbar"
+msgstr "Diesen Filter zur Werkzeugleiste hinzufügen"
+
+#: filter/kmfilterdialog.cpp:494
+msgid "Icon for this filter:"
+msgstr "Symbol für diesen Filter:"
+
+#: filter/kmfilterdialog.cpp:511
+msgid "Run selected filter(s) on: "
+msgstr "Gewählte Filter anwenden auf: "
+
+#: filter/kmfilterdialog.cpp:518
+msgid "Run Now"
+msgstr "Jetzt anwenden"
+
+#: filter/kmfilterdialog.cpp:669
+msgctxt "@info"
+msgid "Unable to apply this filter since there are no folders selected."
+msgstr ""
+"Dieser Filter kann nicht angewendet werden, da keine Ordner ausgewählt sind."
+
+#: filter/kmfilterdialog.cpp:670
+msgid "No folder selected."
+msgstr "Kein Ordner ausgewählt."
+
+#: filter/kmfilterdialog.cpp:678
+msgctxt "@info"
+msgid ""
+"Some filters were changed and not saved yet. You must save your filters "
+"before they can be applied."
+msgstr ""
+"Einige Filter wurden geändert aber noch nicht gespeichert. Sie müssen die "
+"Änderungen speichern, bevor Sie die Filter anwenden können."
+
+#: filter/kmfilterdialog.cpp:680 filter/kmfilterdialog.cpp:1724
+msgid "Filters changed."
+msgstr "Filter geändert."
+
+#: filter/kmfilterdialog.cpp:689
+msgctxt "@info"
+msgid "Unable to apply a filter since there are no filters currently selected."
+msgstr ""
+"Kein Filter kann angewendet werden, da aktuell keine Filter ausgewählt sind."
+
+#: filter/kmfilterdialog.cpp:690
+msgid "No filters selected."
+msgstr "Keine Filter ausgewählt."
+
+#: filter/kmfilterdialog.cpp:961
 msgctxt "Move selected filter up."
 msgid "Up"
 msgstr "Nach oben"
 
-#: filter/kmfilterlistbox.cpp:167
+#: filter/kmfilterdialog.cpp:962
 msgctxt "Move selected filter down."
 msgid "Down"
 msgstr "Nach unten"
 
-#: filter/kmfilterlistbox.cpp:168
+#: filter/kmfilterdialog.cpp:963
 msgctxt "Move selected filter to the top."
 msgid "Top"
 msgstr "Nach oben"
 
-#: filter/kmfilterlistbox.cpp:169
+#: filter/kmfilterdialog.cpp:964
 msgctxt "Move selected filter to the bottom."
 msgid "Bottom"
 msgstr "Nach unten"
 
-#: filter/kmfilterlistbox.cpp:192
+#: filter/kmfilterdialog.cpp:987
 msgid "Rename..."
 msgstr "Umbenennen ..."
 
-#: filter/kmfilterlistbox.cpp:193
+#: filter/kmfilterdialog.cpp:988
 msgctxt "@action:button in filter list manipulator"
 msgid "New"
 msgstr "Neu"
 
-#: filter/kmfilterlistbox.cpp:194
+#: filter/kmfilterdialog.cpp:989
 msgid "Copy"
 msgstr "Kopieren"
 
-#: filter/kmfilterlistbox.cpp:195
+#: filter/kmfilterdialog.cpp:990
 msgid "Delete"
 msgstr "Auswahl löschen"
 
-#: filter/kmfilterlistbox.cpp:330
+#: filter/kmfilterdialog.cpp:1125
 msgid "unnamed"
 msgstr "unbenannt"
 
-#: filter/kmfilterlistbox.cpp:399
+#: filter/kmfilterdialog.cpp:1194
 msgid ""
 "The following filters are invalid (e.g. containing no actions or no search "
 "rules). Discard or edit invalid filters?"
@@ -1248,28 +1204,28 @@ msgstr ""
 "Folgende Filter sind ungültig (sie enthalten keine Aktion oder keine "
 "Suchregeln). Möchten Sie diese verwerfen oder bearbeiten?"
 
-#: filter/kmfilterlistbox.cpp:403
+#: filter/kmfilterdialog.cpp:1198
 msgid "Discard"
 msgstr "Verwerfen"
 
-#: filter/kmfilterlistbox.cpp:499
+#: filter/kmfilterdialog.cpp:1294
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
 msgstr "Möchten Sie den Filter „%1“ löschen?"
 
-#: filter/kmfilterlistbox.cpp:506
+#: filter/kmfilterdialog.cpp:1301
 msgid "Do you want to remove selected filters?"
 msgstr "Möchten Sie die ausgewählten Filter löschen?"
 
-#: filter/kmfilterlistbox.cpp:507
+#: filter/kmfilterdialog.cpp:1302
 msgid "Remove Filters"
 msgstr "Filter entfernen"
 
-#: filter/kmfilterlistbox.cpp:722
+#: filter/kmfilterdialog.cpp:1517
 msgid "Rename Filter"
 msgstr "Filter umbenennen"
 
-#: filter/kmfilterlistbox.cpp:723
+#: filter/kmfilterdialog.cpp:1518
 #, kde-format
 msgid ""
 "Rename filter \"%1\" to:\n"
@@ -1277,6 +1233,37 @@ msgid ""
 msgstr ""
 "Filter „%1“ umbenennen in:\n"
 "(bei einem leeren Feld wird der Filter automatisch umbenannt)"
+
+#: filter/kmfilterdialog.cpp:1679
+msgid "No filter was imported."
+msgstr "Es wurde kein Filter importiert."
+
+#: filter/kmfilterdialog.cpp:1692
+msgid "Filters which were imported:"
+msgstr "Importierte Filter:"
+
+#: filter/kmfilterdialog.cpp:1722
+#, fuzzy
+#| msgctxt "@info"
+#| msgid ""
+#| "Some filters were changed and not saved yet.<br>You must save your "
+#| "filters before they can be exported."
+msgctxt "@info"
+msgid ""
+"Some filters were changed and not saved yet. You must save your filters "
+"before they can be exported."
+msgstr ""
+"Einige Filter wurden geändert aber noch nicht gespeichert. <br>Sie müssen "
+"die Änderungen speichern, bevor Sie die Filter exportieren können."
+
+#: filter/kmfilterdialog.cpp:1727
+msgid "We cannot convert all KMail filters to sieve scripts but we can try :)"
+msgstr ""
+"Es können leider nicht alle KMail-Filter in Sieve-Skripte umgewandelt werden"
+
+#: filter/kmfilterdialog.cpp:1727
+msgid "Convert KMail filters to sieve scripts"
+msgstr "KMail-Filter in Sieve-Skripte umwandeln"
 
 #: filter/mailfilter.cpp:137
 #, kde-format
@@ -1452,24 +1439,6 @@ msgstr "Datei auswählen:"
 msgid "Select file from config:"
 msgstr "Datei aus Einrichtung wählen:"
 
-#: folder/accountconfigorderdialog.cpp:47
-msgid "Edit Accounts Order"
-msgstr "Zugangsreihenfolge bearbeiten"
-
-#: folder/accountconfigorderdialog.cpp:57
-msgid "Use custom order"
-msgstr "Eigenen Ordner benutzen"
-
-#: folder/accountconfigorderdialog.cpp:71
-msgctxt "Move selected account up."
-msgid "Up"
-msgstr "Nach oben"
-
-#: folder/accountconfigorderdialog.cpp:78
-msgctxt "Move selected account down."
-msgid "Down"
-msgstr "Nach unten"
-
 #: folder/folderrequester.cpp:134
 msgid "Local Folders"
 msgstr "Lokale Ordner"
@@ -1556,11 +1525,11 @@ msgstr "Dorthin gehen"
 msgid "Do Not Go To"
 msgstr "Nicht dorthin gehen"
 
-#: folder/foldertreewidget.cpp:102 folder/foldertreewidget.cpp:367
+#: folder/foldertreewidget.cpp:102 folder/foldertreewidget.cpp:364
 msgid "You can start typing to filter the list of folders."
 msgstr "Geben Sie hier Text ein, um die Ordnerliste zu filtern."
 
-#: folder/foldertreewidget.cpp:368
+#: folder/foldertreewidget.cpp:365
 #, kde-format
 msgid "Path: (%1)"
 msgstr "Pfad: (%1)"
@@ -1652,21 +1621,21 @@ msgstr "Das Archiv kann nicht zum Schreiben geöffnet werden."
 msgid "Archiving"
 msgstr "Archivierung läuft"
 
-#: job/expirejob.cpp:180
+#: job/expirejob.cpp:179
 #, kde-format
 msgid "Removing 1 old message from folder %2..."
 msgid_plural "Removing %1 old messages from folder %2..."
 msgstr[0] "1 alte Nachricht wird aus Ordner %2 gelöscht ..."
 msgstr[1] "%1 alte Nachrichten werden aus Ordner %2 gelöscht ..."
 
-#: job/expirejob.cpp:187
+#: job/expirejob.cpp:186
 #, kde-format
 msgid "Cannot expire messages from folder %1: destination folder %2 not found"
 msgstr ""
 "Die alten Nachrichten aus dem Ordner %1 können nicht gelöscht werden: Der "
 "Ordner %2 wurde nicht gefunden."
 
-#: job/expirejob.cpp:199
+#: job/expirejob.cpp:198
 #, kde-format
 msgid "Moving 1 old message from folder %2 to folder %3..."
 msgid_plural "Moving %1 old messages from folder %2 to folder %3..."
@@ -1674,54 +1643,54 @@ msgstr[0] "1 alte Nachricht wird aus Ordner %2 nach Ordner %3 verschoben ..."
 msgstr[1] ""
 "%1 alte Nachrichten werden aus Ordner %2 nach Ordner %3 verschoben ..."
 
-#: job/expirejob.cpp:263
+#: job/expirejob.cpp:262
 #, kde-format
 msgid "Removed 1 old message from folder %2."
 msgid_plural "Removed %1 old messages from folder %2."
 msgstr[0] "1 alte Nachricht aus Ordner %2 gelöscht."
 msgstr[1] "%1 alte Nachrichten aus Ordner %2 gelöscht."
 
-#: job/expirejob.cpp:268
+#: job/expirejob.cpp:267
 #, kde-format
 msgid "Moved 1 old message from folder %2 to folder %3."
 msgid_plural "Moved %1 old messages from folder %2 to folder %3."
 msgstr[0] "1 alte Nachricht von Ordner %2 nach Ordner %3 verschoben."
 msgstr[1] "%1 alte Nachrichten von Ordner %2 nach Ordner %3 verschoben."
 
-#: job/expirejob.cpp:276
+#: job/expirejob.cpp:275
 #, kde-format
 msgid "Removing old messages from folder %1 was canceled."
 msgstr "Löschen alter Nachrichten aus Ordner %1 abgebrochen."
 
-#: job/expirejob.cpp:279
+#: job/expirejob.cpp:278
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 was canceled."
 msgstr ""
 "Verschieben alter Nachrichten von Ordner %1 nach Ordner %2 abgebrochen."
 
-#: job/expirejob.cpp:287
+#: job/expirejob.cpp:286
 #, kde-format
 msgid "Removing old messages from folder %1 failed."
 msgstr "Das Löschen der alten Nachrichten in Ordner %1 ist fehlgeschlagen."
 
-#: job/expirejob.cpp:290
+#: job/expirejob.cpp:289
 #, kde-format
 msgid "Moving old messages from folder %1 to folder %2 failed."
 msgstr ""
 "Das Verschieben der alten Nachrichten von Ordner %1 nach Ordner %2 ist "
 "fehlgeschlagen."
 
-#: kernel/mailkernel.cpp:173 kernel/mailkernel.cpp:198
+#: kernel/mailkernel.cpp:166 kernel/mailkernel.cpp:191
 msgid "You do not have read/write permission to your inbox folder."
 msgstr "Sie haben keine Lese-/Schreibrechte für Ihren Posteingangsordner."
 
-#: kernel/mailkernel.cpp:222
+#: kernel/mailkernel.cpp:215
 msgid "The Email program encountered a fatal error and will terminate now"
 msgstr ""
 "Im E-Mail-Programm ist ein schwerwiegender Fehler aufgetreten. Das Programm "
 "wird beendet."
 
-#: kernel/mailkernel.cpp:224
+#: kernel/mailkernel.cpp:217
 #, kde-format
 msgid ""
 "The Email program encountered a fatal error and will terminate now.\n"
@@ -1862,10 +1831,8 @@ msgstr " kB"
 
 #: search/numericrulewidgethandler.cpp:188
 msgctxt "Unit suffix where units are days."
-msgid " day"
-msgid_plural " days"
-msgstr[0] " Tag"
-msgstr[1] " Tage"
+msgid " days"
+msgstr " Tage"
 
 #: search/searchpattern.cpp:232
 msgid "equal"
@@ -1985,20 +1952,20 @@ msgstr "<Stichwort> wird nicht unterstützt"
 msgid "<message> not implemented/supported"
 msgstr "<Nachricht> wird nicht unterstützt."
 
-#: search/searchpattern.cpp:1509
+#: search/searchpattern.cpp:1494
 msgctxt "name used for a virgin filter"
 msgid "unknown"
 msgstr "unbenannt"
 
-#: search/searchpattern.cpp:1517
+#: search/searchpattern.cpp:1502
 msgid "(match any of the following)"
 msgstr "(eine der folgenden Bedingungen muss zutreffen)"
 
-#: search/searchpattern.cpp:1520
+#: search/searchpattern.cpp:1505
 msgid "(match all of the following)"
 msgstr "(alle folgenden Bedingungen müssen zutreffen)"
 
-#: search/searchpattern.cpp:1523
+#: search/searchpattern.cpp:1508
 msgid "(match all messages)"
 msgstr "(auf alle Nachrichten zutreffen)"
 
@@ -2327,6 +2294,32 @@ msgstr "&Kurzbefehl:"
 msgid "Enable &toolbar button"
 msgstr "&Werkzeugleisten-Knopf aktivieren"
 
+#: util/mailutil.cpp:275
+#, kde-format
+msgid ""
+"From: %1\n"
+"To: %2\n"
+"Subject: %3"
+msgstr ""
+"Von: %1\n"
+"An: %2\n"
+"Betreff: %3"
+
+#: util/mailutil.cpp:331
+msgid "Removing attachments from an email might invalidate its signature."
+msgstr ""
+"Das Entfernen von Anhängen aus E-Mails kann deren Signatur ungültig machen."
+
+#: util/mailutil.cpp:332
+msgid "Remove Attachments"
+msgstr "Anhänge entfernen"
+
+#: util/mailutil.cpp:367 util/mailutil.cpp:380 util/mailutil.cpp:405
+#: util/mailutil.cpp:415
+#, kde-format
+msgid "Mail: %1"
+msgstr "E-Mail: %1"
+
 #: util/mailutil_p.h:49
 msgid "Create Todo/Reminder"
 msgstr "Aufgabe/Erinnerung erstellen"
@@ -2363,15 +2356,25 @@ msgstr "Listenmodus"
 msgid "Icon Mode"
 msgstr "Symbolmodus"
 
-#: widgets/favoritecollectionwidget.cpp:238
+#: widgets/favoritecollectionwidget.cpp:231
 msgid "Drop your favorite folders here..."
 msgstr "Ziehen Sie Ihre bevorzugten Ordner hier hinein ..."
 
-#: widgets/redirectdialog.cpp:82
+#: widgets/redirectdialog.cpp:127
+msgid "Redirect Message"
+msgstr "Nachricht umleiten"
+
+#: widgets/redirectdialog.cpp:133
+#, fuzzy
+#| msgid "Select the recipient addresses to redirect:"
+msgid "Select the recipient &addresses to redirect to:"
+msgstr "Wählen Sie die Zieladressen für die Umleitung:"
+
+#: widgets/redirectdialog.cpp:147
 msgid "Use the Address-Selection Dialog"
 msgstr "Adress-Auswahldialog verwenden"
 
-#: widgets/redirectdialog.cpp:83
+#: widgets/redirectdialog.cpp:148
 msgid ""
 "This button opens a separate dialog where you can select recipients out of "
 "all available addresses."
@@ -2379,47 +2382,27 @@ msgstr ""
 "Dieser Knopf öffnet ein Dialogfenster, mit dem Sie die Empfänger aus allen "
 "verfügbaren Adressen auswählen können."
 
-#: widgets/redirectdialog.cpp:171
-msgid "Resend-To:"
-msgstr "Adresse für erneut versenden:"
-
-#: widgets/redirectdialog.cpp:174
-msgid "Resend-Cc:"
-msgstr "Kopie für erneut versenden:"
-
-#: widgets/redirectdialog.cpp:177
-msgid "Resend-Bcc:"
-msgstr "Blindkopie für erneut versenden:"
-
-#: widgets/redirectdialog.cpp:205
-msgid "Redirect Message"
-msgstr "Nachricht umleiten"
-
-#: widgets/redirectdialog.cpp:214
-msgid "Select the recipient addresses to redirect:"
-msgstr "Wählen Sie die Zieladressen für die Umleitung:"
-
-#: widgets/redirectdialog.cpp:234
+#: widgets/redirectdialog.cpp:159
 msgid "Identity:"
 msgstr "Identität:"
 
-#: widgets/redirectdialog.cpp:242
+#: widgets/redirectdialog.cpp:164
 msgid "Transport:"
 msgstr "Versandart:"
 
-#: widgets/redirectdialog.cpp:248
+#: widgets/redirectdialog.cpp:168
 msgid "&Send Now"
 msgstr "&Jetzt senden"
 
-#: widgets/redirectdialog.cpp:249
+#: widgets/redirectdialog.cpp:169
 msgid "Send &Later"
 msgstr "S&päter senden"
 
-#: widgets/redirectdialog.cpp:297
+#: widgets/redirectdialog.cpp:207
 msgid "You cannot redirect the message without an address."
 msgstr "Die Nachricht kann nicht ohne Zieladresse umgeleitet werden."
 
-#: widgets/redirectdialog.cpp:298
+#: widgets/redirectdialog.cpp:208
 msgid "Empty Redirection Address"
 msgstr "Fehlende Umleitungsadresse"
 
@@ -2427,29 +2410,47 @@ msgstr "Fehlende Umleitungsadresse"
 msgid "Edit..."
 msgstr "Bearbeiten ..."
 
+#~ msgid "Convert to Script Sieve"
+#~ msgstr "In Sieve-Skript umwandeln"
+
+#, fuzzy
+#~| msgid "Import Sylpheed Filters"
+#~ msgid "Import Icedove Filters"
+#~ msgstr "Sylpheed-Filter importieren"
+
+#, fuzzy
+#~| msgid "KMail filters"
+#~ msgid "Icedove Mail filters"
+#~ msgstr "KMail-Filter"
+
+#~ msgid "Edit Accounts Order"
+#~ msgstr "Zugangsreihenfolge bearbeiten"
+
+#~ msgid "Use custom order"
+#~ msgstr "Eigenen Ordner benutzen"
+
+#~ msgctxt "Move selected account up."
+#~ msgid "Up"
+#~ msgstr "Nach oben"
+
+#~ msgctxt "Move selected account down."
+#~ msgid "Down"
+#~ msgstr "Nach unten"
+
 #~ msgctxt "Unit suffix where units are days."
-#~ msgid " days"
-#~ msgstr " Tage"
+#~ msgid " day"
+#~ msgid_plural " days"
+#~ msgstr[0] " Tag"
+#~ msgstr[1] " Tage"
 
-#~ msgid ""
-#~ "From: %1\n"
-#~ "To: %2\n"
-#~ "Subject: %3"
-#~ msgstr ""
-#~ "Von: %1\n"
-#~ "An: %2\n"
-#~ "Betreff: %3"
+#~ msgid "Resend-To:"
+#~ msgstr "Adresse für erneut versenden:"
 
-#~ msgid "Removing attachments from an email might invalidate its signature."
-#~ msgstr ""
-#~ "Das Entfernen von Anhängen aus E-Mails kann deren Signatur ungültig "
-#~ "machen."
+#~ msgid "Resend-Cc:"
+#~ msgstr "Kopie für erneut versenden:"
 
-#~ msgid "Remove Attachments"
-#~ msgstr "Anhänge entfernen"
-
-#~ msgid "Mail: %1"
-#~ msgstr "E-Mail: %1"
+#~ msgid "Resend-Bcc:"
+#~ msgstr "Blindkopie für erneut versenden:"
 
 #~ msgid "Search..."
 #~ msgstr "Suchen ..."
@@ -7006,16 +7007,16 @@ msgstr "Bearbeiten ..."
 #~ "li><li>dd - the day as a number with a leading zero (01-31)</li><li>ddd - "
 #~ "the abbreviated day name (Mon - Sun)</li><li>dddd - the long day name "
 #~ "(Monday - Sunday)</li><li>M - the month as a number without a leading "
-#~ "zero (1-12)</li><li>MM - the month as a number with a leading zero (01-12)"
-#~ "</li><li>MMM - the abbreviated month name (Jan - Dec)</li><li>MMMM - the "
-#~ "long month name (January - December)</li><li>yy - the year as a two digit "
-#~ "number (00-99)</li><li>yyyy - the year as a four digit number (0000-9999)"
-#~ "</li></ul><p><strong>These expressions may be used for the time:</"
-#~ "strong></p> <ul><li>h - the hour without a leading zero (0-23 or 1-12 if "
-#~ "AM/PM display)</li><li>hh - the hour with a leading zero (00-23 or 01-12 "
-#~ "if AM/PM display)</li><li>m - the minutes without a leading zero (0-59)</"
-#~ "li><li>mm - the minutes with a leading zero (00-59)</li><li>s - the "
-#~ "seconds without a leading zero (0-59)</li><li>ss - the seconds with a "
+#~ "zero (1-12)</li><li>MM - the month as a number with a leading zero "
+#~ "(01-12)</li><li>MMM - the abbreviated month name (Jan - Dec)</li><li>MMMM "
+#~ "- the long month name (January - December)</li><li>yy - the year as a two "
+#~ "digit number (00-99)</li><li>yyyy - the year as a four digit number "
+#~ "(0000-9999)</li></ul><p><strong>These expressions may be used for the "
+#~ "time:</strong></p> <ul><li>h - the hour without a leading zero (0-23 or "
+#~ "1-12 if AM/PM display)</li><li>hh - the hour with a leading zero (00-23 "
+#~ "or 01-12 if AM/PM display)</li><li>m - the minutes without a leading zero "
+#~ "(0-59)</li><li>mm - the minutes with a leading zero (00-59)</li><li>s - "
+#~ "the seconds without a leading zero (0-59)</li><li>ss - the seconds with a "
 #~ "leading zero (00-59)</li><li>z - the milliseconds without leading zeroes "
 #~ "(0-999)</li><li>zzz - the milliseconds with leading zeroes (000-999)</"
 #~ "li><li>AP - switch to AM/PM display. AP will be replaced by either \"AM\" "
@@ -8000,11 +8001,11 @@ msgstr "Bearbeiten ..."
 #~ msgstr "S/MIME-Zertifikat abgelaufen"
 
 #~ msgid ""
-#~ "<p>Your OpenPGP signing key</p><p align=\"center\"><b>%2</b> (KeyID 0x%3)"
-#~ "</p><p>expires in less than a day.</p>"
+#~ "<p>Your OpenPGP signing key</p><p align=\"center\"><b>%2</b> (KeyID 0x"
+#~ "%3)</p><p>expires in less than a day.</p>"
 #~ msgid_plural ""
-#~ "<p>Your OpenPGP signing key</p><p align=\"center\"><b>%2</b> (KeyID 0x%3)"
-#~ "</p><p>expires in less than %1 days.</p>"
+#~ "<p>Your OpenPGP signing key</p><p align=\"center\"><b>%2</b> (KeyID 0x"
+#~ "%3)</p><p>expires in less than %1 days.</p>"
 #~ msgstr[0] ""
 #~ "<p>Ihr OpenPGP-Signaturschlüssel</p><p align=\"center\"><b>%2</b> (KeyID "
 #~ "0x%3)</p><p>läuft in weniger als einem Tag ab.</p>"
@@ -8032,8 +8033,8 @@ msgstr "Bearbeiten ..."
 #~ "<p>The OpenPGP key for</p><p align=\"center\"><b>%2</b> (KeyID 0x%3)</"
 #~ "p><p>expires in less than %1 days.</p>"
 #~ msgstr[0] ""
-#~ "<p>Der OpenPGP-Schlüssel für</p><p align=\"center\"><b>%2</b> (KeyID 0x%3)"
-#~ "</p><p>läuft in weniger als einem Tag ab.</p>"
+#~ "<p>Der OpenPGP-Schlüssel für</p><p align=\"center\"><b>%2</b> (KeyID 0x"
+#~ "%3)</p><p>läuft in weniger als einem Tag ab.</p>"
 #~ msgstr[1] ""
 #~ "<p>Der OpenPGP-Signaturschlüssel für</p><p align=\"center\"><b>%2</b> "
 #~ "(KeyID 0x%3)</p><p>läuft in weniger als %1 Tagen ab.</p>"
@@ -12567,8 +12568,8 @@ msgstr "Bearbeiten ..."
 #~ "          Der Dateiname-Trenner für Maildir-Dateien „uniq:info“ - siehe "
 #~ "auch die Spezifikation von Maildir unter http://cr.yp.to/proto/maildir."
 #~ "html\n"
-#~ "          Die Voreinstellung ist vom Betriebssystem abhängig. Windows="
-#~ "„!“, alle anderen Betriebssysteme nutzen „:“.\n"
+#~ "          Die Voreinstellung ist vom Betriebssystem abhängig. "
+#~ "Windows=„!“, alle anderen Betriebssysteme nutzen „:“.\n"
 #~ "        "
 
 #~ msgid "Enable groupware functionality"

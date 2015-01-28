@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-10 06:10+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
@@ -47,9 +47,9 @@ msgid ""
 "The server returned more information:\n"
 msgstr ""
 
-#: ../common/davcollectionsfetchjob.cpp:135
+#: ../common/davcollectionsfetchjob.cpp:134
 #: ../common/davitemfetchjob.cpp:83 ../common/davitemsfetchjob.cpp:75
-#: ../common/davitemslistjob.cpp:94 ../common/davprincipalhomesetsfetchjob.cpp:82
+#: ../common/davitemslistjob.cpp:86 ../common/davprincipalhomesetsfetchjob.cpp:82
 #: ../common/davprincipalsearchjob.cpp:93
 #: ../common/davprincipalsearchjob.cpp:229
 #, kde-format
@@ -58,19 +58,19 @@ msgid ""
 "%1 (%2)."
 msgstr ""
 
-#: ../common/davcollectionsfetchjob.cpp:153
+#: ../common/davcollectionsfetchjob.cpp:152
 msgid "Error setting focus for XQuery"
 msgstr ""
 
-#: ../common/davcollectionsfetchjob.cpp:159
+#: ../common/davcollectionsfetchjob.cpp:158
 msgid "Invalid XQuery submitted by DAV implementation"
 msgstr ""
 
-#: ../common/davcollectionsfetchjob.cpp:170
+#: ../common/davcollectionsfetchjob.cpp:169
 msgid "Invalid responses from backend"
 msgstr ""
 
-#: ../common/davitemcreatejob.cpp:74
+#: ../common/davitemcreatejob.cpp:72
 #, kde-format
 msgid ""
 "There was a problem with the request. The item has not been created on the "
@@ -78,7 +78,7 @@ msgid ""
 "%1 (%2)."
 msgstr ""
 
-#: ../common/davitemdeletejob.cpp:60
+#: ../common/davitemdeletejob.cpp:58
 #, kde-format
 msgid ""
 "There was a problem with the request. The item has not been deleted from the "
@@ -86,7 +86,7 @@ msgid ""
 "%1 (%2)."
 msgstr ""
 
-#: ../common/davitemmodifyjob.cpp:70
+#: ../common/davitemmodifyjob.cpp:69
 #, kde-format
 msgid ""
 "There was a problem with the request. The item was not modified on the "
@@ -120,15 +120,15 @@ msgstr ""
 msgid "HTTP error"
 msgstr ""
 
-#: ../common/davutils.cpp:182 ../common/davutils.cpp:216
+#: ../common/davutils.cpp:181 ../common/davutils.cpp:215
 msgid "CalDav"
 msgstr ""
 
-#: ../common/davutils.cpp:185 ../common/davutils.cpp:218
+#: ../common/davutils.cpp:184 ../common/davutils.cpp:217
 msgid "CardDav"
 msgstr ""
 
-#: ../common/davutils.cpp:188 ../common/davutils.cpp:220
+#: ../common/davutils.cpp:187 ../common/davutils.cpp:219
 msgid "GroupDav"
 msgstr ""
 
@@ -136,7 +136,7 @@ msgstr ""
 msgid "Protocol"
 msgstr ""
 
-#: configdialog.cpp:43 urlconfigurationdialog.cpp:232
+#: configdialog.cpp:43 urlconfigurationdialog.cpp:230
 msgid "URL"
 msgstr ""
 
@@ -214,60 +214,49 @@ msgstr ""
 msgid "Unable to parse free-busy data received"
 msgstr ""
 
-#: davgroupwareresource.cpp:163
+#: davgroupwareresource.cpp:157
 msgid "Unable to retrieve free-busy info while offline"
 msgstr ""
 
-#: davgroupwareresource.cpp:239
+#: davgroupwareresource.cpp:233
 msgid "Fetching collections"
 msgstr ""
 
-#: davgroupwareresource.cpp:268
+#: davgroupwareresource.cpp:262
 #, kde-format
 msgid "Asked to retrieve items for an unknown collection: %1"
 msgstr ""
 
-#: davgroupwareresource.cpp:319
+#: davgroupwareresource.cpp:312
 #, kde-format
 msgid "Invalid collection for item %1."
 msgstr ""
 
-#: davgroupwareresource.cpp:560
+#: davgroupwareresource.cpp:401
 #, kde-format
 msgid "Unable to remove collection: %1"
 msgstr ""
 
-#: davgroupwareresource.cpp:580
+#: davgroupwareresource.cpp:421
 #, kde-format
 msgid "Unable to retrieve collections: %1"
 msgstr ""
 
-#: davgroupwareresource.cpp:681 davgroupwareresource.cpp:761
+#: davgroupwareresource.cpp:521 davgroupwareresource.cpp:597
 #, kde-format
 msgid "Unable to retrieve items: %1"
 msgstr ""
 
-#: davgroupwareresource.cpp:819
+#: davgroupwareresource.cpp:670
 #, kde-format
 msgid "Unable to retrieve item: %1"
 msgstr ""
 
-#: davgroupwareresource.cpp:864
-#, kde-format
-msgid "Unable to add item: %1"
+#: davgroupwareresource.cpp:690 davgroupwareresource.cpp:700
+msgid "The server returned invalid data"
 msgstr ""
 
-#: davgroupwareresource.cpp:899
-#, kde-format
-msgid "Unable to change item: %1"
-msgstr ""
-
-#: davgroupwareresource.cpp:947
-#, kde-format
-msgid "Unable to remove item: %1"
-msgstr ""
-
-#: davgroupwareresource.cpp:972 davgroupwareresource.cpp:973
+#: davgroupwareresource.cpp:801 davgroupwareresource.cpp:802
 msgid "The resource is not configured yet"
 msgstr ""
 
@@ -277,7 +266,7 @@ msgid "Settings Version"
 msgstr ""
 
 #. i18n: ectx: label, entry (displayName), group (General)
-#: davgroupwareresource.kcfg:14 urlconfigurationdialog.cpp:232
+#: davgroupwareresource.kcfg:14 urlconfigurationdialog.cpp:230
 msgid "Display name"
 msgstr ""
 
@@ -374,12 +363,12 @@ msgstr ""
 msgid "a contact with email"
 msgstr ""
 
-#: settings.cpp:552
+#: settings.cpp:543
 #, kde-format
 msgid "A password is required for user %1"
 msgstr ""
 
-#: settings.cpp:558
+#: settings.cpp:549
 msgid "Password: "
 msgstr ""
 

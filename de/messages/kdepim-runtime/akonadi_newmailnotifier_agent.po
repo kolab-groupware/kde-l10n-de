@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newmailnotifieragent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-12 05:41+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: 2014-09-02 21:37+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -16,27 +16,16 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: newmailnotifieragent.cpp:100
-#, kde-format
-msgid "Starting Jovie Text-to-Speech Service Failed %1"
-msgstr "Das Starten des Sprachausgabedienstes Jovie ist fehlgeschlagen %1"
-
-#: newmailnotifieragent.cpp:468
+#: newmailnotifieragent.cpp:439
 #, kde-format
 msgid "One new email in %2 from \"%3\""
 msgid_plural "%1 new emails in %2 from \"%3\""
 msgstr[0] "Eine neue E-Mail in %2 von %3"
 msgstr[1] "%1 neue E-Mails in %2 von %3"
 
-#: newmailnotifieragent.cpp:482
+#: newmailnotifieragent.cpp:452
 msgid "New mail arrived"
 msgstr "Neue Nachrichten eingetroffen"
-
-#: newmailnotifieragentsettings.kcfg:35
-#, c-format
-msgctxt "%s is a variable for agent. Do not change it"
-msgid "A message was received from %s"
-msgstr "Eine Nachricht wurde von %s erhalten"
 
 #: newmailnotifierselectcollectionwidget.cpp:52
 msgid "Select which folders to monitor for new message notifications:"
@@ -44,15 +33,15 @@ msgstr ""
 "Wählen Sie die Ordner aus, die auf neue E-Mail-Nachrichten überwacht werden "
 "sollen."
 
-#: newmailnotifierselectcollectionwidget.cpp:85
+#: newmailnotifierselectcollectionwidget.cpp:83
 msgid "Search..."
 msgstr "Suchen ..."
 
-#: newmailnotifierselectcollectionwidget.cpp:102
+#: newmailnotifierselectcollectionwidget.cpp:100
 msgid "&Select All"
 msgstr "Alles au&swählen"
 
-#: newmailnotifierselectcollectionwidget.cpp:106
+#: newmailnotifierselectcollectionwidget.cpp:104
 msgid "&Unselect All"
 msgstr "Auswahl &aufheben"
 
@@ -94,86 +83,93 @@ msgstr "Ordner anzeigen"
 msgid "Do not notify when email was sent by me"
 msgstr "Kein Benachrichtigung bei eigenen E-Mails"
 
-#: newmailnotifiersettingsdialog.cpp:103
-msgid "Show button to display mail"
-msgstr "Knopf zur Ansicht der E-Mail anzeigen"
-
-#: newmailnotifiersettingsdialog.cpp:108
+#: newmailnotifiersettingsdialog.cpp:104
 msgid "Display"
 msgstr "Anzeige"
 
-#: newmailnotifiersettingsdialog.cpp:114
+#: newmailnotifiersettingsdialog.cpp:110
 msgid "Enabled"
 msgstr "Aktiviert"
 
-#: newmailnotifiersettingsdialog.cpp:118
+#: newmailnotifiersettingsdialog.cpp:114
 msgid "<a href=\"whatsthis\">How does this work?</a>"
 msgstr "<a href=\"whatsthis\">Wie funktioniert das?</a>"
 
-#: newmailnotifiersettingsdialog.cpp:126
+#: newmailnotifiersettingsdialog.cpp:121
 msgid "Message:"
 msgstr "Nachricht:"
 
-#: newmailnotifiersettingsdialog.cpp:136
+#: newmailnotifiersettingsdialog.cpp:131
 msgid "Text to Speak"
 msgstr "Text zum Vorlesen"
 
-#: newmailnotifiersettingsdialog.cpp:141
+#: newmailnotifiersettingsdialog.cpp:136
 msgid "Notify"
 msgstr "Benachrichtigung"
 
-#: newmailnotifiersettingsdialog.cpp:144
+#: newmailnotifiersettingsdialog.cpp:139
 msgid "Folders"
 msgstr "Ordner"
 
-#: newmailnotifiersettingsdialog.cpp:151
+#: newmailnotifiersettingsdialog.cpp:146
 msgid "New Mail Notifier Agent"
 msgstr "Agent zur Benachrichtigung über neue E-Mails"
 
-#: newmailnotifiersettingsdialog.cpp:153
+#: newmailnotifiersettingsdialog.cpp:148
 msgid "Notifies about new mail."
 msgstr "Benachrichtigt über neue E-Mails."
 
-#: newmailnotifiersettingsdialog.cpp:155
+#: newmailnotifiersettingsdialog.cpp:150
 msgid "Copyright (C) 2013 Laurent Montel"
 msgstr "Copyright (C) 2013 Laurent Montel"
 
-#: newmailnotifiersettingsdialog.cpp:157
+#: newmailnotifiersettingsdialog.cpp:152
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: newmailnotifiersettingsdialog.cpp:158
+#: newmailnotifiersettingsdialog.cpp:153
 msgid "Maintainer"
 msgstr "Betreuer"
 
-#: newmailnotifiersettingsdialog.cpp:161
+#: newmailnotifiersettingsdialog.cpp:156
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Burkhard Lück"
 
-#: newmailnotifiersettingsdialog.cpp:162
+#: newmailnotifiersettingsdialog.cpp:157
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "lueck@hube-lueck.de"
 
-#: specialnotifierjob.cpp:134
+#: specialnotifierjob.cpp:130
 #, kde-format
 msgid "From: %1"
 msgstr "Von: %1"
 
-#: specialnotifierjob.cpp:142
+#: specialnotifierjob.cpp:138
 #, kde-format
 msgid "Subject: %1"
 msgstr "Betreff: %1"
 
-#: specialnotifierjob.cpp:145
+#: specialnotifierjob.cpp:141
 #, kde-format
 msgid "In: %1"
 msgstr "In: %1"
 
-#: specialnotifierjob.cpp:164
-msgid "Show mail..."
-msgstr "E-Mail anzeigen ..."
+#: util.cpp:42
+#, kde-format
+msgid "Starting Jovie Text-to-Speech Service Failed %1"
+msgstr "Das Starten des Sprachausgabedienstes Jovie ist fehlgeschlagen %1"
+
+#~ msgctxt "%s is a variable for agent. Do not change it"
+#~ msgid "A message was received from %s"
+#~ msgstr "Eine Nachricht wurde von %s erhalten"
+
+#~ msgid "Show button to display mail"
+#~ msgstr "Knopf zur Ansicht der E-Mail anzeigen"
+
+#~ msgid "Show mail..."
+#~ msgstr "E-Mail anzeigen ..."
 
 #~ msgid "from: %1 <br>Subject: %2<br>In: %3"
 #~ msgstr "von: %1 <br>Betreff: %2<br>In: %3"

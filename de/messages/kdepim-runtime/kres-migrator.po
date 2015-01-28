@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kres-migrator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-28 09:58+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: 2013-11-08 08:13+0100\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -115,7 +115,7 @@ msgstr ""
 msgid "File format '%1' is not yet supported natively."
 msgstr "Das Dateiformat „%1“ wird derzeit noch nicht nativ unterstützt."
 
-#: kabcmigrator.cpp:67 kcalmigrator.cpp:59
+#: kabcmigrator.cpp:67 kcalmigrator.cpp:59 knotesmigrator.cpp:61
 #, kde-format
 msgid "Failed to create resource: %1"
 msgstr "Fehler beim Erzeugen der Ressource: %1"
@@ -125,7 +125,7 @@ msgid "Migrated Addressbook"
 msgstr "Migriertes Adressbuch"
 
 #: kabcmigrator.cpp:78 kcalmigrator.cpp:70 kcalmigrator.cpp:99
-#: kcalmigrator.cpp:140
+#: kcalmigrator.cpp:140 knotesmigrator.cpp:91
 msgid "Failed to obtain D-Bus interface for remote configuration."
 msgstr ""
 "D-Bus-Schnittstelle für die entfernte Konfiguration kann nicht erhalten "
@@ -166,6 +166,42 @@ msgstr ""
 msgid "Empty username or URL in GroupDAV KResource configuration"
 msgstr ""
 "Fehlender Benutzername oder URL in der GroupDAV-KResource-Konfiguration"
+
+#: knotesmigrator.cpp:82
+#, kde-format
+msgid "Failed to open file for reading: %1"
+msgstr "Fehler beim Öffnen einer Datei zum Lesen: %1"
+
+#: knotesmigrator.cpp:112
+#, kde-format
+msgid "Instance \"%1\" synchronized"
+msgstr "Instanz „%1“ abgeglichen"
+
+#: knotesmigrator.cpp:121
+msgid "Root fetch finished"
+msgstr "Wurzel erfolgreich geholt"
+
+#: knotesmigrator.cpp:123
+#, kde-format
+msgctxt "A job to fetch akonadi resources failed. %1 is the error string."
+msgid "Fetching resources failed: %1"
+msgstr "Ressourcen holen fehlgeschlagen: %1"
+
+#: knotesmigrator.cpp:129
+msgid "Received root collections"
+msgstr "Wurzel 'Collections' empfangen"
+
+#: knotesmigrator.cpp:137
+#, kde-format
+msgid "Could not find root collection for resource \"%1\""
+msgstr "Wurzel-'Collection' für die Ressource „%1“ kann nicht gefunden werden"
+
+#: knotesmigrator.cpp:145
+#, kde-format
+msgid "Starting migration of %1 journal"
+msgid_plural "Starting migration of %1 journals"
+msgstr[0] "Migration von %1 Journal wird gestartet"
+msgstr[1] "Migration von %1 Journalen wird gestartet"
 
 #: kresmigrator.h:86
 msgid "Client-side bridge already set up."
@@ -281,83 +317,59 @@ msgstr "Es wird versucht, eine Kolab-Ressource anzulegen."
 msgid "Failed to create kolab proxy resource."
 msgstr "Fehler beim Erzeugen der Kolab-Proxy-Ressource."
 
-#: main.cpp:44
+#: main.cpp:45
 msgid "KResource Migration Tool"
 msgstr "Ressourcen-Migrationswerkzeug"
 
-#: main.cpp:46
+#: main.cpp:47
 msgid "Migration of KResource settings and application to Akonadi"
 msgstr "Migration von Ressourcen-Einstellungen und Anwendungen zu Akonadi"
 
-#: main.cpp:48
+#: main.cpp:49
 msgid "(c) 2008 the Akonadi developers"
 msgstr "Copyright © 2008 die Akonadi-Entwickler"
 
-#: main.cpp:52
+#: main.cpp:53
 msgid "Volker Krause"
 msgstr "Volker Krause"
 
-#: main.cpp:52
+#: main.cpp:53
 msgid "Author"
 msgstr "Autor"
 
-#: main.cpp:58
+#: main.cpp:59
 msgid "Only migrate to Akonadi KResource bridges"
 msgstr "Nur zu Akonadi-Ressourcen-Brücken migrieren"
 
-#: main.cpp:59
+#: main.cpp:60
 msgid "Omit setting up of the client side compatibility bridges"
 msgstr "Einrichtung der clientseitigen Kompatibilitäts-Brücken überspringen"
 
-#: main.cpp:60
+#: main.cpp:61
 msgid "Only migrate contact resources"
 msgstr "Nur Kontakt-Ressourcen migrieren"
 
-#: main.cpp:61
+#: main.cpp:62
 msgid "Only migrate calendar resources"
 msgstr "Nur Kalender-Ressourcen migrieren"
 
-#: main.cpp:62
+#: main.cpp:63
+msgid "Only migrate knotes resources"
+msgstr "Nur KNotes-Ressourcen migrieren"
+
+#: main.cpp:64
 msgid "Only migrate the specified types (supported: contact, calendar, notes)"
 msgstr ""
 "Nur die angegebenen Typen migrieren (unterstützt werden: Kontakte, Kalender, "
 "Notizen)"
 
-#: main.cpp:64
+#: main.cpp:66
 msgid "Show reporting dialog"
 msgstr "Berichtsfenster anzeigen"
 
-#: main.cpp:65
+#: main.cpp:67
 msgid "Show report only if changes were made"
 msgstr "Bericht nur anzeigen, wenn Änderungen durchgeführt wurden"
-
-#~ msgid "Failed to open file for reading: %1"
-#~ msgstr "Fehler beim Öffnen einer Datei zum Lesen: %1"
-
-#~ msgid "Instance \"%1\" synchronized"
-#~ msgstr "Instanz „%1“ abgeglichen"
-
-#~ msgid "Root fetch finished"
-#~ msgstr "Wurzel erfolgreich geholt"
-
-#~ msgctxt "A job to fetch akonadi resources failed. %1 is the error string."
-#~ msgid "Fetching resources failed: %1"
-#~ msgstr "Ressourcen holen fehlgeschlagen: %1"
-
-#~ msgid "Received root collections"
-#~ msgstr "Wurzel 'Collections' empfangen"
-
-#~ msgid "Could not find root collection for resource \"%1\""
-#~ msgstr ""
-#~ "Wurzel-'Collection' für die Ressource „%1“ kann nicht gefunden werden"
-
-#~ msgid "Starting migration of %1 journal"
-#~ msgid_plural "Starting migration of %1 journals"
-#~ msgstr[0] "Migration von %1 Journal wird gestartet"
-#~ msgstr[1] "Migration von %1 Journalen wird gestartet"
-
-#~ msgid "Only migrate knotes resources"
-#~ msgstr "Nur KNotes-Ressourcen migrieren"
 
 #~ msgid "Unable to obtain resource type '%1'."
 #~ msgstr "Ressourcen-Typ „%1“ kann nicht verarbeitet werden."

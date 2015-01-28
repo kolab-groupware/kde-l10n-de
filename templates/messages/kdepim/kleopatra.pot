@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-09 06:22+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
@@ -38,7 +38,7 @@ msgstr ""
 msgid "Former Maintainer"
 msgstr ""
 
-#: aboutdata.cpp:64
+#: aboutdata.cpp:64 kwatchgnupg/aboutdata.cpp:50
 msgid "Original Author"
 msgstr ""
 
@@ -88,9 +88,8 @@ msgstr ""
 
 #: aboutdata.cpp:90
 msgid ""
-"(c) 2002 Steffen Hansen, Matthias Kalle Dalheimer, "
-"Klarälvdalens Datakonsult AB\n"
-"(c) 2004, 2007, 2008, 2009 Marc Mutz, Klarälvdalens Datakonsult AB"
+"(c) 2002 Steffen Hansen, Matthias Kallelheimer, Klarälvdalenstakonsult«\n"
+"(c) 2004, 2007, 2008, 2009 Marc Mutz, Klarälvdalenstakonsult«"
 msgstr ""
 
 #: aboutdata.cpp:104
@@ -247,7 +246,7 @@ msgid "Cannot set restrictive permissions on file %1: %2"
 msgstr ""
 
 #: commands/changeroottrustcommand.cpp:321
-#: crypto/createchecksumscontroller.cpp:582
+#: crypto/createchecksumscontroller.cpp:559
 #, kde-format
 msgid "Failed to move file %1 to its final destination, %2: %3"
 msgstr ""
@@ -627,7 +626,7 @@ msgid "Could not determine certificate type of clipboard contents."
 msgstr ""
 
 #: commands/importcertificatefromclipboardcommand.cpp:125
-#: utils/clipboardmenu.cpp:46 utils/output.cpp:501
+#: systrayicon.cpp:180 utils/output.cpp:501
 msgid "Clipboard"
 msgstr ""
 
@@ -1493,85 +1492,85 @@ msgstr ""
 msgid "The GpgSM process ended prematurely because of an unexpected error."
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:86
+#: crypto/createchecksumscontroller.cpp:84
 msgctxt "@info"
 msgid "No checksum files have been created."
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:87
+#: crypto/createchecksumscontroller.cpp:85
 msgctxt "@info"
 msgid "These checksum files have been successfully created:"
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:90
+#: crypto/createchecksumscontroller.cpp:88
 msgctxt "@info"
 msgid "There were no errors."
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:91
+#: crypto/createchecksumscontroller.cpp:89
 msgctxt "@info"
 msgid "The following errors were encountered:"
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:303
+#: crypto/createchecksumscontroller.cpp:280
 msgid ""
 "Create Checksums: input files must be either all checksum files or all files "
 "to be checksummed, not a mixture of both."
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:325
-#: mainwindow_desktop.cpp:524
+#: crypto/createchecksumscontroller.cpp:302
+#: mainwindow_desktop.cpp:500
 msgid "Cancel"
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:325
+#: crypto/createchecksumscontroller.cpp:302
 msgid "Initializing..."
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:329
+#: crypto/createchecksumscontroller.cpp:306
 msgctxt "@title:window"
 msgid "Create Checksum Progress"
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:559
+#: crypto/createchecksumscontroller.cpp:536
 #, kde-format
 msgid "Failed to open file \"%1\" for reading and writing: %2"
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:575
+#: crypto/createchecksumscontroller.cpp:552
 #: crypto/verifychecksumscontroller.cpp:558
 #: utils/output.cpp:476
 #, kde-format
 msgid "Error while running %1: %2"
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:578
+#: crypto/createchecksumscontroller.cpp:555
 #: crypto/verifychecksumscontroller.cpp:561
 #: utils/input.cpp:322 utils/output.cpp:479
 #, kde-format
 msgid "Failed to execute %1: %2"
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:609
+#: crypto/createchecksumscontroller.cpp:586
 msgid "No checksum programs defined."
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:621
+#: crypto/createchecksumscontroller.cpp:598
 #: crypto/verifychecksumscontroller.cpp:594
 msgid "Scanning directories..."
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:636
+#: crypto/createchecksumscontroller.cpp:613
 #: crypto/verifychecksumscontroller.cpp:607
 msgid "Calculating total size..."
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:653
+#: crypto/createchecksumscontroller.cpp:630
 #, kde-format
 msgid "Checksumming (%2) in %1"
 msgstr ""
 
-#: crypto/createchecksumscontroller.cpp:664
+#: crypto/createchecksumscontroller.cpp:641
 #: crypto/verifychecksumscontroller.cpp:635
 msgid "Done."
 msgstr ""
@@ -2017,7 +2016,7 @@ msgstr ""
 msgid "All operations completed."
 msgstr ""
 
-#: crypto/gui/newresultpage.cpp:160 crypto/gui/resultlistwidget.cpp:224
+#: crypto/gui/newresultpage.cpp:160 crypto/gui/resultlistwidget.cpp:223
 #: crypto/gui/resultpage.cpp:138
 #, kde-format
 msgctxt "number, operation description"
@@ -2071,13 +2070,13 @@ msgid "Sign and Encrypt (OpenPGP only)"
 msgstr ""
 
 #: crypto/gui/newsignencryptfileswizard.cpp:353
-#: newcertificatewizard/newcertificatewizard.cpp:1245
-#: newcertificatewizard/newcertificatewizard.cpp:1269
+#: newcertificatewizard/newcertificatewizard.cpp:1244
+#: newcertificatewizard/newcertificatewizard.cpp:1268
 msgid "Encrypt"
 msgstr ""
 
 #: crypto/gui/newsignencryptfileswizard.cpp:354
-#: newcertificatewizard/newcertificatewizard.cpp:1243
+#: newcertificatewizard/newcertificatewizard.cpp:1242
 msgid "Sign"
 msgstr ""
 
@@ -2277,11 +2276,11 @@ msgstr ""
 msgid "Sender"
 msgstr ""
 
-#: crypto/gui/resultitemwidget.cpp:104 crypto/gui/resultitemwidget.cpp:105
+#: crypto/gui/resultitemwidget.cpp:104
 msgid "Hide Details"
 msgstr ""
 
-#: crypto/gui/resultitemwidget.cpp:104 crypto/gui/resultitemwidget.cpp:105
+#: crypto/gui/resultitemwidget.cpp:104
 msgid "Show Details"
 msgstr ""
 
@@ -2671,7 +2670,7 @@ msgctxt "Format string for the labels in the \"Your Personal Data\" page"
 msgid "%1 (%2)"
 msgstr ""
 
-#: dialogs/adduseriddialog.cpp:114 newcertificatewizard/newcertificatewizard.cpp:1031
+#: dialogs/adduseriddialog.cpp:114 newcertificatewizard/newcertificatewizard.cpp:1030
 #, kde-format
 msgctxt "interpunctation for labels"
 msgid "%1:"
@@ -2681,23 +2680,23 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, emailRequiredLB)
 #: dialogs/adduseriddialog.cpp:116 newcertificatewizard/enterdetailspage.ui:26
 #: newcertificatewizard/enterdetailspage.ui:43
-#: newcertificatewizard/newcertificatewizard.cpp:1033
+#: newcertificatewizard/newcertificatewizard.cpp:1032
 msgid "(required)"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, commentRequiredLB)
 #: dialogs/adduseriddialog.cpp:116 newcertificatewizard/enterdetailspage.ui:60
-#: newcertificatewizard/newcertificatewizard.cpp:1033
+#: newcertificatewizard/newcertificatewizard.cpp:1032
 msgid "(optional)"
 msgstr ""
 
-#: dialogs/adduseriddialog.cpp:280 newcertificatewizard/newcertificatewizard.cpp:1189
+#: dialogs/adduseriddialog.cpp:280 newcertificatewizard/newcertificatewizard.cpp:1188
 #, kde-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is required, but empty."
 msgstr ""
 
-#: dialogs/adduseriddialog.cpp:282 newcertificatewizard/newcertificatewizard.cpp:1191
+#: dialogs/adduseriddialog.cpp:282 newcertificatewizard/newcertificatewizard.cpp:1190
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -2705,13 +2704,13 @@ msgid ""
 "<icode>%2</icode>"
 msgstr ""
 
-#: dialogs/adduseriddialog.cpp:288 newcertificatewizard/newcertificatewizard.cpp:1197
+#: dialogs/adduseriddialog.cpp:288 newcertificatewizard/newcertificatewizard.cpp:1196
 #, kde-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is incomplete."
 msgstr ""
 
-#: dialogs/adduseriddialog.cpp:290 newcertificatewizard/newcertificatewizard.cpp:1199
+#: dialogs/adduseriddialog.cpp:290 newcertificatewizard/newcertificatewizard.cpp:1198
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -2719,13 +2718,13 @@ msgid ""
 "icode>"
 msgstr ""
 
-#: dialogs/adduseriddialog.cpp:295 newcertificatewizard/newcertificatewizard.cpp:1204
+#: dialogs/adduseriddialog.cpp:295 newcertificatewizard/newcertificatewizard.cpp:1203
 #, kde-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is invalid."
 msgstr ""
 
-#: dialogs/adduseriddialog.cpp:297 newcertificatewizard/newcertificatewizard.cpp:1206
+#: dialogs/adduseriddialog.cpp:297 newcertificatewizard/newcertificatewizard.cpp:1205
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -2790,7 +2789,7 @@ msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, overviewActionsGB)
 #: dialogs/certificatedetailsdialog.ui:27
-#: qml/kleopatra-mobile.qml:84 utils/kleo_kicondialog.cpp:368
+#: qml/kleopatra-mobile.qml:84 utils/kleo_kicondialog.cpp:366
 msgid "Actions"
 msgstr ""
 
@@ -2992,7 +2991,7 @@ msgid ""
 msgstr ""
 
 #: dialogs/certifycertificatedialog.cpp:184
-#: newcertificatewizard/newcertificatewizard.cpp:1248
+#: newcertificatewizard/newcertificatewizard.cpp:1247
 msgid "Certify"
 msgstr ""
 
@@ -3162,11 +3161,11 @@ msgstr ""
 msgid "Export"
 msgstr ""
 
-#: dialogs/exportcertificatesdialog.cpp:73
+#: dialogs/exportcertificatesdialog.cpp:71
 msgid " OpenPGP export file:"
 msgstr ""
 
-#: dialogs/exportcertificatesdialog.cpp:79
+#: dialogs/exportcertificatesdialog.cpp:77
 msgid "S/MIME export file:"
 msgstr ""
 
@@ -3446,12 +3445,12 @@ msgid "Continue"
 msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, SelfTestDialog)
-#: dialogs/selftestdialog.ui:14
+#: dialogs/selftestdialog.ui:13
 msgid "Kleopatra Self-Test Results"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: dialogs/selftestdialog.ui:23
+#: dialogs/selftestdialog.ui:22
 msgctxt "@info"
 msgid ""
 "<para>These are the results of the Kleopatra self-test suite. Click on a "
@@ -3460,27 +3459,27 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, showAllCB)
-#: dialogs/selftestdialog.ui:62
+#: dialogs/selftestdialog.ui:61
 msgid "Show all test results"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, detailsGB)
-#: dialogs/selftestdialog.ui:76 models/keylistmodel.cpp:252
+#: dialogs/selftestdialog.ui:69 models/keylistmodel.cpp:252
 msgid "Details"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, proposedCorrectiveActionGB)
-#: dialogs/selftestdialog.ui:133
+#: dialogs/selftestdialog.ui:117
 msgid "Proposed Corrective Action"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, doItPB)
-#: dialogs/selftestdialog.ui:207
+#: dialogs/selftestdialog.ui:182
 msgid "Do It"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, runAtStartUpCB)
-#: dialogs/selftestdialog.ui:220
+#: dialogs/selftestdialog.ui:195
 msgid "Run these tests at startup"
 msgstr ""
 
@@ -3854,7 +3853,7 @@ msgstr ""
 
 #. i18n: ectx: Menu (certMenu)
 #. i18n: ectx: Menu (listview_popup)
-#: kleopatra.rc:36 kleopatra.rc:98
+#: kleopatra.rc:36 kleopatra.rc:97
 msgid "&Certificates"
 msgstr ""
 
@@ -3943,6 +3942,166 @@ msgstr ""
 msgid "File(s) to process"
 msgstr ""
 
+#: kwatchgnupg/aboutdata.cpp:40
+msgid "GnuPG log viewer"
+msgstr ""
+
+#: kwatchgnupg/aboutdata.cpp:50
+msgid "Steffen Hansen"
+msgstr ""
+
+#: kwatchgnupg/aboutdata.cpp:61
+msgid "KWatchGnuPG"
+msgstr ""
+
+#: kwatchgnupg/aboutdata.cpp:63
+msgid "(c) 2004 Klarälvdalens Datakonsult AB\n"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgconfig.cpp:75
+msgid "Configure KWatchGnuPG"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgconfig.cpp:90
+msgid "WatchGnuPG"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgconfig.cpp:101
+msgid "&Executable:"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgconfig.cpp:110
+msgid "&Socket:"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgconfig.cpp:119
+msgid "None"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgconfig.cpp:120
+msgid "Basic"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgconfig.cpp:121
+msgid "Advanced"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgconfig.cpp:122
+msgid "Expert"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgconfig.cpp:123
+msgid "Guru"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgconfig.cpp:124
+msgid "Default &log level:"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgconfig.cpp:132
+msgid "Log Window"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgconfig.cpp:145
+msgctxt "history size spinbox suffix"
+msgid " line"
+msgid_plural " lines"
+msgstr[0] ""
+msgstr[1] ""
+
+#: kwatchgnupg/kwatchgnupgconfig.cpp:146
+msgid "unlimited"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgconfig.cpp:147
+msgid "&History size:"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgconfig.cpp:151
+msgid "Set &Unlimited"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgconfig.cpp:158
+msgid "Enable &word wrapping"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgmainwin.cpp:99
+#, kde-format
+msgid "[%1] Log cleared"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgmainwin.cpp:106
+msgid "C&lear History"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgmainwin.cpp:137
+#, kde-format
+msgid "[%1] Log stopped"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgmainwin.cpp:152
+msgid ""
+"The watchgnupg logging process could not be started.\n"
+"Please install watchgnupg somewhere in your $PATH.\n"
+"This log window is unable to display any useful information."
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgmainwin.cpp:154
+#, kde-format
+msgid "[%1] Log started"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgmainwin.cpp:189
+msgid "There are no components available that support logging."
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgmainwin.cpp:195
+msgid ""
+"The watchgnupg logging process died.\n"
+"Do you want to try to restart it?"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgmainwin.cpp:195
+msgid "Try Restart"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgmainwin.cpp:195
+msgid "Do Not Try"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgmainwin.cpp:196
+msgid "====== Restarting logging process ====="
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgmainwin.cpp:199
+msgid ""
+"The watchgnupg logging process is not running.\n"
+"This log window is unable to display any useful information."
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgmainwin.cpp:230
+msgid "Save Log to File"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgmainwin.cpp:235
+#, kde-format
+msgid ""
+"The file named \"%1\" already exists. Are you sure you want to overwrite it?"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgmainwin.cpp:238
+msgid "Overwrite File"
+msgstr ""
+
+#: kwatchgnupg/kwatchgnupgmainwin.cpp:245
+#, kde-format
+msgid "Could not save file %1: %2"
+msgstr ""
+
+#: kwatchgnupg/tray.cpp:57
+msgid "KWatchGnuPG Log Viewer"
+msgstr ""
+
 #: main.cpp:145
 msgid "Performing Self-Check..."
 msgstr ""
@@ -3992,102 +4151,98 @@ msgid ""
 "present might not work correctly, or at all.</qt>"
 msgstr ""
 
-#: mainwindow_desktop.cpp:120 mainwindow_mobile.cpp:140
+#: mainwindow_desktop.cpp:117 mainwindow_mobile.cpp:140
 #, kde-format
 msgctxt "Quit [ApplicationName]"
 msgid "&Quit %1"
 msgstr ""
 
-#: mainwindow_desktop.cpp:126 mainwindow_mobile.cpp:146
+#: mainwindow_desktop.cpp:123 mainwindow_mobile.cpp:146
 msgid "Only &Close Window"
 msgstr ""
 
-#: mainwindow_desktop.cpp:160
+#: mainwindow_desktop.cpp:157
 #, kde-format
 msgid ""
 "%1 may be used by other applications as a service.\n"
 "You may instead want to close this window without exiting %1."
 msgstr ""
 
-#: mainwindow_desktop.cpp:162
+#: mainwindow_desktop.cpp:159
 msgid "Really Quit?"
 msgstr ""
 
-#: mainwindow_desktop.cpp:196 mainwindow_mobile.cpp:192
+#: mainwindow_desktop.cpp:187 mainwindow_mobile.cpp:192
 msgid ""
 "Could not start the GnuPG Log Viewer (kwatchgnupg). Please check your "
 "installation."
 msgstr ""
 
-#: mainwindow_desktop.cpp:198 mainwindow_mobile.cpp:194
+#: mainwindow_desktop.cpp:189 mainwindow_mobile.cpp:194
 msgid "Error Starting KWatchGnuPG"
 msgstr ""
 
-#: mainwindow_desktop.cpp:203 mainwindow_mobile.cpp:199
+#: mainwindow_desktop.cpp:194 mainwindow_mobile.cpp:199
 msgid ""
 "Could not start the GnuPG Administrative Console (kgpgconf). Please check "
 "your installation."
 msgstr ""
 
-#: mainwindow_desktop.cpp:205 mainwindow_mobile.cpp:201
+#: mainwindow_desktop.cpp:196 mainwindow_mobile.cpp:201
 msgid "Error Starting KGpgConf"
 msgstr ""
 
-#: mainwindow_desktop.cpp:323
+#: mainwindow_desktop.cpp:309
 msgid "GnuPG Log Viewer"
 msgstr ""
 
-#: mainwindow_desktop.cpp:327
+#: mainwindow_desktop.cpp:313
 msgid "GnuPG Administrative Console"
 msgstr ""
 
-#: mainwindow_desktop.cpp:332
+#: mainwindow_desktop.cpp:318
 msgid "Configure GnuPG Backend..."
 msgstr ""
 
-#: mainwindow_desktop.cpp:336 mainwindow_mobile.cpp:267
+#: mainwindow_desktop.cpp:322 mainwindow_mobile.cpp:267
 msgid "Perform Self-Test"
 msgstr ""
 
-#: mainwindow_desktop.cpp:340
+#: mainwindow_desktop.cpp:326
 msgid "About Gpg4win"
 msgstr ""
 
-#: mainwindow_desktop.cpp:357
-msgid "Set Focus to Quick Search"
-msgstr ""
-
-#: mainwindow_desktop.cpp:378
+#: mainwindow_desktop.cpp:354
 msgid "Could not configure the cryptography backend (gpgconf tool not found)"
 msgstr ""
 
-#: mainwindow_desktop.cpp:378
+#: mainwindow_desktop.cpp:354
 msgid "Configuration Error"
 msgstr ""
 
-#: mainwindow_desktop.cpp:410 mainwindow_mobile.cpp:334
+#: mainwindow_desktop.cpp:386 mainwindow_mobile.cpp:334
 msgid ""
 "There are still some background operations ongoing. These will be terminated "
 "when closing the window. Proceed?"
 msgstr ""
 
-#: mainwindow_desktop.cpp:413 mainwindow_mobile.cpp:337
+#: mainwindow_desktop.cpp:389 mainwindow_mobile.cpp:337
 msgid "Ongoing Background Tasks"
 msgstr ""
 
-#: mainwindow_desktop.cpp:511
+#: mainwindow_desktop.cpp:487
 msgid "Sign/Encrypt..."
 msgstr ""
 
-#: mainwindow_desktop.cpp:512 utils/clipboardmenu.cpp:51
+#: mainwindow_desktop.cpp:488 systrayicon.cpp:185
 msgid "Decrypt/Verify..."
 msgstr ""
 
-#: mainwindow_desktop.cpp:516
+#: mainwindow_desktop.cpp:492
 msgid "Import Certificates"
 msgstr ""
 
-#: mainwindow_desktop.cpp:517
+#: mainwindow_desktop.cpp:493
 msgid "Import CRLs"
 msgstr ""
 
@@ -4126,7 +4281,7 @@ msgid "Type"
 msgstr ""
 
 #: models/subkeylistmodel.cpp:160 models/useridlistmodel.cpp:253
-#: utils/kleo_kicondialog.cpp:379
+#: utils/kleo_kicondialog.cpp:377
 msgid "Status"
 msgstr ""
 
@@ -4214,7 +4369,7 @@ msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, personalTab)
 #: newcertificatewizard/advancedsettingsdialog.ui:190
-#: newcertificatewizard/newcertificatewizard.cpp:1455
+#: newcertificatewizard/newcertificatewizard.cpp:1454
 msgid "Personal Details"
 msgstr ""
 
@@ -4301,7 +4456,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, commentLB)
 #: newcertificatewizard/enterdetailspage.ui:50
-#: newcertificatewizard/newcertificatewizard.cpp:1304
+#: newcertificatewizard/newcertificatewizard.cpp:1303
 msgid "Comment:"
 msgstr ""
 
@@ -4492,84 +4647,84 @@ msgctxt "@title"
 msgid "Certificate Creation Wizard"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1250
+#: newcertificatewizard/newcertificatewizard.cpp:1249
 msgid "Authenticate"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1300
+#: newcertificatewizard/newcertificatewizard.cpp:1299
 msgid "Name:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1301
+#: newcertificatewizard/newcertificatewizard.cpp:1300
 msgid "Email Address:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1306
+#: newcertificatewizard/newcertificatewizard.cpp:1305
 msgid "Subject-DN:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1309
+#: newcertificatewizard/newcertificatewizard.cpp:1308
 msgid "Key Type:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1311
-#: newcertificatewizard/newcertificatewizard.cpp:1313
+#: newcertificatewizard/newcertificatewizard.cpp:1310
+#: newcertificatewizard/newcertificatewizard.cpp:1312
 msgid "Key Strength:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1311
-#: newcertificatewizard/newcertificatewizard.cpp:1318
+#: newcertificatewizard/newcertificatewizard.cpp:1310
+#: newcertificatewizard/newcertificatewizard.cpp:1317
 #, kde-format
 msgid "1 bit"
 msgid_plural "%1 bits"
 msgstr[0] ""
 msgstr[1] ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1313
-#: newcertificatewizard/newcertificatewizard.cpp:1320
+#: newcertificatewizard/newcertificatewizard.cpp:1312
+#: newcertificatewizard/newcertificatewizard.cpp:1319
 msgid "default"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1314
+#: newcertificatewizard/newcertificatewizard.cpp:1313
 msgid "Certificate Usage:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1314
-#: newcertificatewizard/newcertificatewizard.cpp:1321
+#: newcertificatewizard/newcertificatewizard.cpp:1313
+#: newcertificatewizard/newcertificatewizard.cpp:1320
 msgctxt "separator for key usages"
 msgid ",&nbsp;"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1316
+#: newcertificatewizard/newcertificatewizard.cpp:1315
 msgid "Subkey Type:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1318
-#: newcertificatewizard/newcertificatewizard.cpp:1320
+#: newcertificatewizard/newcertificatewizard.cpp:1317
+#: newcertificatewizard/newcertificatewizard.cpp:1319
 msgid "Subkey Strength:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1321
+#: newcertificatewizard/newcertificatewizard.cpp:1320
 msgid "Subkey Usage:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1325
+#: newcertificatewizard/newcertificatewizard.cpp:1324
 msgid "Valid Until:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1328
+#: newcertificatewizard/newcertificatewizard.cpp:1327
 msgid "Add. Email Address:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1330
+#: newcertificatewizard/newcertificatewizard.cpp:1329
 msgid "DNS Name:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1332
+#: newcertificatewizard/newcertificatewizard.cpp:1331
 msgid "URI:"
 msgstr ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1390
+#: newcertificatewizard/newcertificatewizard.cpp:1389
 #, kde-format
 msgctxt "%2: some admin-supplied text, %1: key size in bits"
 msgid "%2 (1 bit; default)"
@@ -4577,7 +4732,7 @@ msgid_plural "%2 (%1 bits; default)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1391
+#: newcertificatewizard/newcertificatewizard.cpp:1390
 #, kde-format
 msgctxt "%2: some admin-supplied text, %1: key size in bits"
 msgid "%2 (1 bit)"
@@ -4585,7 +4740,7 @@ msgid_plural "%2 (%1 bits)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1393
+#: newcertificatewizard/newcertificatewizard.cpp:1392
 #, kde-format
 msgctxt "%1: key size in bits"
 msgid "1 bit (default)"
@@ -4593,7 +4748,7 @@ msgid_plural "%1 bits (default)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1394
+#: newcertificatewizard/newcertificatewizard.cpp:1393
 #, kde-format
 msgctxt "%1: key size in bits"
 msgid "1 bit"
@@ -4601,7 +4756,7 @@ msgid_plural "%1 bits"
 msgstr[0] ""
 msgstr[1] ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1459
+#: newcertificatewizard/newcertificatewizard.cpp:1458
 msgctxt "@info:tooltip"
 msgid "Adding more than one User ID is not yet implemented."
 msgstr ""
@@ -5019,37 +5174,53 @@ msgid ""
 "Quit any other running instances of <application>Kleopatra</application>."
 msgstr ""
 
-#: systrayicon.cpp:150
+#: systrayicon.cpp:176
 msgid "&Open Certificate Manager..."
 msgstr ""
 
-#: systrayicon.cpp:151
+#: systrayicon.cpp:177
 #, kde-format
 msgid "&Configure %1..."
 msgstr ""
 
-#: systrayicon.cpp:152
+#: systrayicon.cpp:178
 #, kde-format
 msgid "&About %1..."
 msgstr ""
 
-#: systrayicon.cpp:153
+#: systrayicon.cpp:179
 msgid "&Shutdown Kleopatra"
 msgstr ""
 
-#: systrayicon.cpp:155
+#: systrayicon.cpp:181
+msgid "Certificate Import"
+msgstr ""
+
+#: systrayicon.cpp:182
+msgid "Encrypt..."
+msgstr ""
+
+#: systrayicon.cpp:183
+msgid "S/MIME-Sign..."
+msgstr ""
+
+#: systrayicon.cpp:184
+msgid "OpenPGP-Sign..."
+msgstr ""
+
+#: systrayicon.cpp:186
 msgid "SmartCard"
 msgstr ""
 
-#: systrayicon.cpp:156
+#: systrayicon.cpp:187
 msgid "Update Card Status"
 msgstr ""
 
-#: systrayicon.cpp:157
+#: systrayicon.cpp:188
 msgid "Set NetKey v3 Initial PIN..."
 msgstr ""
 
-#: systrayicon.cpp:158
+#: systrayicon.cpp:189
 msgid "Learn NetKey v3 Card Certificates"
 msgstr ""
 
@@ -5516,22 +5687,6 @@ msgctxt "The Audit Log is a detailed error log from the gnupg backend"
 msgid "Show Audit Log"
 msgstr ""
 
-#: utils/clipboardmenu.cpp:47
-msgid "Certificate Import"
-msgstr ""
-
-#: utils/clipboardmenu.cpp:48
-msgid "Encrypt..."
-msgstr ""
-
-#: utils/clipboardmenu.cpp:49
-msgid "S/MIME-Sign..."
-msgstr ""
-
-#: utils/clipboardmenu.cpp:50
-msgid "OpenPGP-Sign..."
-msgstr ""
-
 #: utils/formatting.cpp:205 utils/formatting.cpp:208
 #, kde-format
 msgid "<tr><th>%1:</th><td>%2</td></tr>"
@@ -5891,79 +6046,79 @@ msgstr ""
 msgid "Current selection"
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:274 utils/kleo_kicondialog.cpp:286
+#: utils/kleo_kicondialog.cpp:272 utils/kleo_kicondialog.cpp:284
 msgid "Select Icon"
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:307
+#: utils/kleo_kicondialog.cpp:305
 msgid "Icon Source"
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:317
+#: utils/kleo_kicondialog.cpp:315
 msgid "S&ystem icons:"
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:323
+#: utils/kleo_kicondialog.cpp:321
 msgid "O&ther icons:"
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:327
+#: utils/kleo_kicondialog.cpp:325
 msgid "&Browse..."
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:340
+#: utils/kleo_kicondialog.cpp:338
 msgid "&Search:"
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:347
+#: utils/kleo_kicondialog.cpp:345
 msgid "Search interactively for icon names (e.g. folder)."
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:369
+#: utils/kleo_kicondialog.cpp:367
 msgid "Animations"
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:370
+#: utils/kleo_kicondialog.cpp:368
 msgid "Applications"
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:371
+#: utils/kleo_kicondialog.cpp:369
 msgid "Categories"
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:372
+#: utils/kleo_kicondialog.cpp:370
 msgid "Devices"
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:373
+#: utils/kleo_kicondialog.cpp:371
 msgid "Emblems"
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:374
+#: utils/kleo_kicondialog.cpp:372
 msgid "Emotes"
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:375
+#: utils/kleo_kicondialog.cpp:373
 msgid "Filesystems"
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:376
+#: utils/kleo_kicondialog.cpp:374
 msgid "International"
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:377
+#: utils/kleo_kicondialog.cpp:375
 msgid "Mimetypes"
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:378
+#: utils/kleo_kicondialog.cpp:376
 msgid "Places"
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:586
+#: utils/kleo_kicondialog.cpp:584
 msgid "Open"
 msgstr ""
 
-#: utils/kleo_kicondialog.cpp:586
+#: utils/kleo_kicondialog.cpp:584
 msgid "Icon Files (*.png *.xpm *.svg *.svgz)"
 msgstr ""
 
@@ -6149,13 +6304,8 @@ msgstr ""
 msgid "Import CRL From File..."
 msgstr ""
 
-#: view/searchbar.cpp:92
-msgid "Search..."
-msgstr ""
-
-#: view/searchbar.cpp:122
-#, kde-format
-msgid "Search...<%1>"
+#: view/searchbar.cpp:90
+msgid "&Find:"
 msgstr ""
 
 #: view/tabwidget.cpp:388
@@ -6202,10 +6352,10 @@ msgstr ""
 msgid "Hierarchical Certificate List"
 msgstr ""
 
-#: view/tabwidget.cpp:533
+#: view/tabwidget.cpp:534
 msgid "Rename Tab"
 msgstr ""
 
-#: view/tabwidget.cpp:533
+#: view/tabwidget.cpp:534
 msgid "New tab title:"
 msgstr ""

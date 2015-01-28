@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-23 05:38+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
@@ -277,8 +277,8 @@ msgstr ""
 msgid "firefox %u"
 msgstr ""
 
-#. i18n: ectx: label, entry, group (Browser)
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExternalBrowserUseCustomCommand)
+#. i18n: ectx: label, entry, group (Browser)
 #: configuration/settings_browser.ui:82 interfaces/akregator.kcfg:176
 msgid "Use this command:"
 msgstr ""
@@ -293,8 +293,8 @@ msgstr ""
 msgid "Tabs"
 msgstr ""
 
-#. i18n: ectx: label, entry, group (Browser)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AlwaysShowTabBar)
+#. i18n: ectx: label, entry, group (Browser)
 #: configuration/settings_browser.ui:108 interfaces/akregator.kcfg:156
 msgid "Always show the tab bar"
 msgstr ""
@@ -304,8 +304,8 @@ msgstr ""
 msgid "Show close button on each tab"
 msgstr ""
 
-#. i18n: ectx: label, entry, group (Browser)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_NewWindowInTab)
+#. i18n: ectx: label, entry, group (Browser)
 #: configuration/settings_browser.ui:122 interfaces/akregator.kcfg:166
 msgid "Open links in new tab instead of in new window"
 msgstr ""
@@ -1424,17 +1424,13 @@ msgstr ""
 msgid "Write Error"
 msgstr ""
 
-#: src/akregator_part.cpp:534 src/loadfeedlistcommand.cpp:79
-msgid "OPML Parsing Error"
-msgstr ""
-
 #: src/akregator_part.cpp:534
 #, kde-format
 msgid "Could not import the file %1 (no valid OPML)"
 msgstr ""
 
-#: src/akregator_part.cpp:537 src/loadfeedlistcommand.cpp:148
-msgid "Read Error"
+#: src/akregator_part.cpp:534 src/loadfeedlistcommand.cpp:79
+msgid "OPML Parsing Error"
 msgstr ""
 
 #: src/akregator_part.cpp:537
@@ -1442,6 +1438,10 @@ msgstr ""
 msgid ""
 "The file %1 could not be read, check if it exists or if it is readable for "
 "the current user."
+msgstr ""
+
+#: src/akregator_part.cpp:537 src/loadfeedlistcommand.cpp:148
+msgid "Read Error"
 msgstr ""
 
 #: src/akregator_part.cpp:551
@@ -1674,6 +1674,7 @@ msgid ""
 "<p style='margin-bottom: 0px'>&nbsp; &nbsp; The Akregator Team</p>\n"
 msgstr ""
 
+#. i18n("Part of the Kontact Suite");
 #: src/articleviewer.cpp:694
 msgid "A KDE news feed reader."
 msgstr ""
@@ -1953,7 +1954,7 @@ msgstr ""
 msgid "Browsing area."
 msgstr ""
 
-#: src/mainwidget.cpp:254 src/mainwidget.cpp:622
+#: src/mainwidget.cpp:254 src/mainwidget.cpp:621
 msgid "Articles"
 msgstr ""
 
@@ -1961,20 +1962,20 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: src/mainwidget.cpp:789 src/mainwidget.cpp:797 src/mainwidget.cpp:1199
+#: src/mainwidget.cpp:788 src/mainwidget.cpp:796 src/mainwidget.cpp:1198
 msgid "Networking is not available."
 msgstr ""
 
-#: src/mainwidget.cpp:804
+#: src/mainwidget.cpp:803
 msgid "Fetching Feeds..."
 msgstr ""
 
-#: src/mainwidget.cpp:996
+#: src/mainwidget.cpp:995
 #, kde-format
 msgid "<qt>Are you sure you want to delete article <b>%1</b>?</qt>"
 msgstr ""
 
-#: src/mainwidget.cpp:999
+#: src/mainwidget.cpp:998
 #, kde-format
 msgid "<qt>Are you sure you want to delete the selected article?</qt>"
 msgid_plural ""
@@ -1982,15 +1983,15 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/mainwidget.cpp:1003
+#: src/mainwidget.cpp:1002
 msgid "Delete Article"
 msgstr ""
 
-#: src/mainwidget.cpp:1193
+#: src/mainwidget.cpp:1192
 msgid "Networking is available now."
 msgstr ""
 
-#: src/mainwindow.cpp:105
+#: src/mainwindow.cpp:103
 #, kde-format
 msgid ""
 "Could not find the Akregator part; please check your installation.\n"

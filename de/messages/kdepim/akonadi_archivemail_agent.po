@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: archivemailagent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-18 05:28+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: 2014-08-05 14:39+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Modify Archive Mail"
 msgstr "E-Mail-Archivierung ändern"
 
-#: addarchivemaildialog.cpp:40 archivemaildialog.cpp:335
+#: addarchivemaildialog.cpp:40 archivemaildialog.cpp:329
 msgid "Add Archive Mail"
 msgstr "E-Mail-Archivierung hinzufügen"
 
@@ -83,13 +83,7 @@ msgstr "Maximale Anzahl von Archiven:"
 msgid "unlimited"
 msgstr "unbegrenzt"
 
-#: archivejob.cpp:70
-msgid "Directory does not exist. Please verify settings. Archive postponed."
-msgstr ""
-"Der Ordner existiert nicht. Bitte überprüfen Sie die Einstellungen. Die "
-"Archivierung wurde zurückgestellt."
-
-#: archivejob.cpp:88
+#: archivejob.cpp:67
 #, kde-format
 msgid "Start to archive %1"
 msgstr "Archivierung von %1 wird gestartet"
@@ -98,102 +92,102 @@ msgstr "Archivierung von %1 wird gestartet"
 msgid "Configure Archive Mail Agent"
 msgstr "E-Mail-Archivierung-Agent einrichten"
 
-#: archivemaildialog.cpp:62
+#: archivemaildialog.cpp:61
 msgid "Archive Mail Agent"
 msgstr "Agent zur E-Mail-Archivierung"
 
-#: archivemaildialog.cpp:64
+#: archivemaildialog.cpp:63
 msgid "Archive emails automatically."
 msgstr "E-Mails automatisch archivieren"
 
-#: archivemaildialog.cpp:66
+#: archivemaildialog.cpp:65
 msgid "Copyright (C) 2012, 2013, 2014 Laurent Montel"
 msgstr "Copyright (C) 2012, 2013, 2014 Laurent Montel"
 
-#: archivemaildialog.cpp:68
+#: archivemaildialog.cpp:67
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: archivemaildialog.cpp:69
+#: archivemaildialog.cpp:68
 msgid "Maintainer"
 msgstr "Betreuer"
 
-#: archivemaildialog.cpp:72
+#: archivemaildialog.cpp:71
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Burkhard Lück"
 
-#: archivemaildialog.cpp:73
+#: archivemaildialog.cpp:72
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "lueck@hube-lueck.de"
 
-#: archivemaildialog.cpp:150
+#: archivemaildialog.cpp:149
 msgid "Name"
 msgstr "Name"
 
-#: archivemaildialog.cpp:150
+#: archivemaildialog.cpp:149
 msgid "Last archive"
 msgstr "Letzte Archivierung"
 
-#: archivemaildialog.cpp:150
+#: archivemaildialog.cpp:149
 msgid "Next archive in"
 msgstr "Nächste Archivierung in"
 
-#: archivemaildialog.cpp:150
+#: archivemaildialog.cpp:149
 msgid "Storage directory"
 msgstr "Speicherordner"
 
 #. i18n: ectx: property (text), widget (QPushButton, addItem)
-#: archivemaildialog.cpp:180 ui/archivemailwidget.ui:19
+#: archivemaildialog.cpp:178 ui/archivemailwidget.ui:19
 msgid "Add..."
 msgstr "Hinzufügen ..."
 
-#: archivemaildialog.cpp:183
+#: archivemaildialog.cpp:181
 msgid "Open Containing Folder..."
 msgstr "Ordner mit diesem Inhalt öffnen ..."
 
-#: archivemaildialog.cpp:185
+#: archivemaildialog.cpp:183
 msgid "Archive now"
 msgstr "Jetzt archivieren"
 
-#: archivemaildialog.cpp:188
+#: archivemaildialog.cpp:186
 msgid "Delete"
 msgstr "Löschen"
 
-#: archivemaildialog.cpp:246
+#: archivemaildialog.cpp:240
 #, kde-format
 msgid "Folder: %1"
 msgstr "Ordner: %1"
 
-#: archivemaildialog.cpp:262
+#: archivemaildialog.cpp:256
 #, kde-format
 msgid "Tomorrow"
 msgid_plural "%1 days"
 msgstr[0] "Morgen"
 msgstr[1] "%1 Tage"
 
-#: archivemaildialog.cpp:269
+#: archivemaildialog.cpp:263
 #, kde-format
 msgid "Archive will be done %1"
 msgstr "Archivierung ist %1 abgeschlossen"
 
-#: archivemaildialog.cpp:301
+#: archivemaildialog.cpp:295
 msgid "Do you want to delete selected items? Do you want to continue?"
 msgstr "Möchten Sie die ausgewählten Einträge löschen? Möchten Sie fortfahren?"
 
-#: archivemaildialog.cpp:301
+#: archivemaildialog.cpp:295
 msgid "Remove items"
 msgstr "Elemente entfernen"
 
-#: archivemaildialog.cpp:335
+#: archivemaildialog.cpp:329
 msgid ""
 "Cannot add a second archive for this folder. Modify the existing one instead."
 msgstr ""
 "Ein zweites Archiv für diesen Ordner kann nicht hinzugefügt werden. "
 "Stattdessen wird das Archiv geändert."
 
-#: archivemailinfo.cpp:107 archivemailinfo.cpp:124
+#: archivemailinfo.cpp:104 archivemailinfo.cpp:121
 msgctxt "Start of the filename for a mail archive file"
 msgid "Archive"
 msgstr "Archiv"
@@ -207,6 +201,11 @@ msgstr "Ändern ..."
 #: ui/archivemailwidget.ui:33
 msgid "Remove"
 msgstr "Entfernen"
+
+#~ msgid "Directory does not exist. Please verify settings. Archive postponed."
+#~ msgstr ""
+#~ "Der Ordner existiert nicht. Bitte überprüfen Sie die Einstellungen. Die "
+#~ "Archivierung wurde zurückgestellt."
 
 #~ msgid "1 day"
 #~ msgid_plural "%1 days"

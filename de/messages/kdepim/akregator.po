@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akregator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-23 05:38+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: 2014-01-17 08:28+0100\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -279,8 +279,8 @@ msgstr "In externem Browser betrachten"
 msgid "firefox %u"
 msgstr "firefox %u"
 
-#. i18n: ectx: label, entry, group (Browser)
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExternalBrowserUseCustomCommand)
+#. i18n: ectx: label, entry, group (Browser)
 #: configuration/settings_browser.ui:82 interfaces/akregator.kcfg:176
 msgid "Use this command:"
 msgstr "Diesen Befehl benutzen:"
@@ -295,8 +295,8 @@ msgstr "Voreingestellten Webbrowser verwenden"
 msgid "Tabs"
 msgstr "Unterfenster"
 
-#. i18n: ectx: label, entry, group (Browser)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AlwaysShowTabBar)
+#. i18n: ectx: label, entry, group (Browser)
 #: configuration/settings_browser.ui:108 interfaces/akregator.kcfg:156
 msgid "Always show the tab bar"
 msgstr "Unterfensterleiste immer anzeigen"
@@ -306,8 +306,8 @@ msgstr "Unterfensterleiste immer anzeigen"
 msgid "Show close button on each tab"
 msgstr "Knöpfe zum Schließen von Unterfenstern anzeigen"
 
-#. i18n: ectx: label, entry, group (Browser)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_NewWindowInTab)
+#. i18n: ectx: label, entry, group (Browser)
 #: configuration/settings_browser.ui:122 interfaces/akregator.kcfg:166
 msgid "Open links in new tab instead of in new window"
 msgstr "Verknüpfungen in Unterfenstern öffnen statt in eigenen Fenstern"
@@ -1464,18 +1464,14 @@ msgstr ""
 msgid "Write Error"
 msgstr "Schreibfehler"
 
-#: src/akregator_part.cpp:534 src/loadfeedlistcommand.cpp:79
-msgid "OPML Parsing Error"
-msgstr "OPML-Parserfehler"
-
 #: src/akregator_part.cpp:534
 #, kde-format
 msgid "Could not import the file %1 (no valid OPML)"
 msgstr "Die Datei %1 kann nicht importiert werden (kein gültiges OPML)."
 
-#: src/akregator_part.cpp:537 src/loadfeedlistcommand.cpp:148
-msgid "Read Error"
-msgstr "Lesefehler"
+#: src/akregator_part.cpp:534 src/loadfeedlistcommand.cpp:79
+msgid "OPML Parsing Error"
+msgstr "OPML-Parserfehler"
 
 #: src/akregator_part.cpp:537
 #, kde-format
@@ -1485,6 +1481,10 @@ msgid ""
 msgstr ""
 "Die Datei %1 kann nicht gelesen werden. Überprüfen Sie, ob die Datei "
 "vorhanden ist und für den aktuellen Benutzer lesbar ist."
+
+#: src/akregator_part.cpp:537 src/loadfeedlistcommand.cpp:148
+msgid "Read Error"
+msgstr "Lesefehler"
 
 #: src/akregator_part.cpp:551
 #, kde-format
@@ -1742,6 +1742,7 @@ msgstr ""
 "<p>Danke,</p>\n"
 "<p style='margin-bottom: 0px'>&nbsp; &nbsp; Das Akregator-Team</p>\n"
 
+#. i18n("Part of the Kontact Suite");
 #: src/articleviewer.cpp:694
 msgid "A KDE news feed reader."
 msgstr "Ein Nachrichtensammler für KDE."
@@ -2037,7 +2038,7 @@ msgstr "Artikelliste."
 msgid "Browsing area."
 msgstr "Artikelauswahlbereich."
 
-#: src/mainwidget.cpp:254 src/mainwidget.cpp:622
+#: src/mainwidget.cpp:254 src/mainwidget.cpp:621
 msgid "Articles"
 msgstr "Artikel"
 
@@ -2045,20 +2046,20 @@ msgstr "Artikel"
 msgid "About"
 msgstr "Über"
 
-#: src/mainwidget.cpp:789 src/mainwidget.cpp:797 src/mainwidget.cpp:1199
+#: src/mainwidget.cpp:788 src/mainwidget.cpp:796 src/mainwidget.cpp:1198
 msgid "Networking is not available."
 msgstr "Es ist keine Netzwerkverbindung verfügbar."
 
-#: src/mainwidget.cpp:804
+#: src/mainwidget.cpp:803
 msgid "Fetching Feeds..."
 msgstr "Nachrichten werden abgeholt ..."
 
-#: src/mainwidget.cpp:996
+#: src/mainwidget.cpp:995
 #, kde-format
 msgid "<qt>Are you sure you want to delete article <b>%1</b>?</qt>"
 msgstr "<qt>Möchten Sie den Artikel <b>%1</b> wirklich löschen?</qt>"
 
-#: src/mainwidget.cpp:999
+#: src/mainwidget.cpp:998
 #, kde-format
 msgid "<qt>Are you sure you want to delete the selected article?</qt>"
 msgid_plural ""
@@ -2066,15 +2067,15 @@ msgid_plural ""
 msgstr[0] "<qt>Möchten Sie den ausgewählten Artikel wirklich löschen?</qt>"
 msgstr[1] "<qt>Möchten Sie die %1 ausgewählten Artikel wirklich löschen?</qt>"
 
-#: src/mainwidget.cpp:1003
+#: src/mainwidget.cpp:1002
 msgid "Delete Article"
 msgstr "Artikel löschen"
 
-#: src/mainwidget.cpp:1193
+#: src/mainwidget.cpp:1192
 msgid "Networking is available now."
 msgstr "Es ist jetzt eine Netzwerkverbindung verfügbar."
 
-#: src/mainwindow.cpp:105
+#: src/mainwindow.cpp:103
 #, kde-format
 msgid ""
 "Could not find the Akregator part; please check your installation.\n"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail-migrator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-22 05:32+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: 2013-11-07 05:17+0100\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -166,117 +166,117 @@ msgid "Cannot provide access to local copies of disconnected IMAP account %1"
 msgstr ""
 "Kann keinen Zugriff auf lokale Kopien von disconnected IMAP Konto %1 bieten"
 
-#: imapcachelocalimporter.cpp:203 kmailmigrator.cpp:405 kmailmigrator.cpp:418
-#: kmailmigrator.cpp:881 kmailmigrator.cpp:943 kmailmigrator.cpp:1068
+#: imapcachelocalimporter.cpp:203 kmailmigrator.cpp:401 kmailmigrator.cpp:414
+#: kmailmigrator.cpp:877 kmailmigrator.cpp:939 kmailmigrator.cpp:1064
 msgid "Failed to obtain D-Bus interface for remote configuration."
 msgstr ""
 "D-Bus-Schnittstelle für die entfernte Konfiguration kann nicht erhalten "
 "werden."
 
-#: kmailmigrator.cpp:126
+#: kmailmigrator.cpp:125
 msgid "Beginning KMail migration..."
 msgstr "KMail-Migration wird gestartet ..."
 
-#: kmailmigrator.cpp:324
+#: kmailmigrator.cpp:323
 #, kde-format
 msgid "No backend for '%1' available."
 msgstr "Kein Dienstprogramm für „%1“ verfügbar."
 
-#: kmailmigrator.cpp:331
+#: kmailmigrator.cpp:330
 #, kde-format
 msgid "'%1' has been already migrated."
 msgstr "„%1“ wurde bereits migriert."
 
-#: kmailmigrator.cpp:337
+#: kmailmigrator.cpp:336
 msgid ""
 "Enabling access to the disconnected IMAP cache of the previous KMail version"
 msgstr ""
 "Zugriff auf disconnected IMAP-Zwischenspeicher der vorherigen KMail-Version "
 "zulassen"
 
-#: kmailmigrator.cpp:349
+#: kmailmigrator.cpp:348
 msgid "Local folders have already been migrated."
 msgstr "Lokale Ordner sind bereits migriert worden."
 
-#: kmailmigrator.cpp:368
+#: kmailmigrator.cpp:367
 #, kde-format
 msgctxt "@info:status"
 msgid "Migrating local folders in '%1'..."
 msgstr "Lokale Ordner in „%1“ werden migriert ..."
 
-#: kmailmigrator.cpp:380
+#: kmailmigrator.cpp:379
 msgid "Migration successfully completed."
 msgstr "Die Migration ist erfolgreich abgeschlossen."
 
-#: kmailmigrator.cpp:498
+#: kmailmigrator.cpp:494
 #, kde-format
 msgid "Migration of '%1' to Akonadi resource failed: %2"
 msgstr "Die Migration von „%1“ zu Akonadi Resource ist fehlgeschlagen: %2"
 
-#: kmailmigrator.cpp:540
+#: kmailmigrator.cpp:536
 #, kde-format
 msgid "Migration of '%1' succeeded."
 msgstr "Die Migration von „%1“ ist erfolgreich abgeschlossen."
 
-#: kmailmigrator.cpp:598
+#: kmailmigrator.cpp:594
 #, kde-format
 msgid "Trying to migrate '%1' to resource..."
 msgstr "Es wird versucht, „%1“ zu einer Ressource zu migrieren ..."
 
-#: kmailmigrator.cpp:630 kmailmigrator.cpp:640 kmailmigrator.cpp:746
-#: kmailmigrator.cpp:867 kmailmigrator.cpp:929
+#: kmailmigrator.cpp:626 kmailmigrator.cpp:636 kmailmigrator.cpp:742
+#: kmailmigrator.cpp:863 kmailmigrator.cpp:925
 #, kde-format
 msgid "Failed to create resource: %1"
 msgstr "Fehler beim Erzeugen der Ressource: %1"
 
-#: kmailmigrator.cpp:633
+#: kmailmigrator.cpp:629
 msgid "Created disconnected imap resource"
 msgstr "Erstelle disconnected IMAP-Ressource"
 
-#: kmailmigrator.cpp:643
+#: kmailmigrator.cpp:639
 msgid "Created imap resource"
 msgstr "IMAP-Ressource erzeugt"
 
-#: kmailmigrator.cpp:749
+#: kmailmigrator.cpp:745
 msgid "Created pop3 resource"
 msgstr "POP3-Ressource erzeugt"
 
-#: kmailmigrator.cpp:870
+#: kmailmigrator.cpp:866
 msgid "Created mbox resource"
 msgstr "Mbox-Ressource erzeugt"
 
-#: kmailmigrator.cpp:932
+#: kmailmigrator.cpp:928
 msgid "Created maildir resource"
 msgstr "Maildir-Ressource erzeugt"
 
-#: kmailmigrator.cpp:981
+#: kmailmigrator.cpp:977
 #, kde-format
 msgid "Failed to create resource for local folders: %1"
 msgstr "Fehler beim Erzeugen der Ressource für lokale Ordner: %1"
 
-#: kmailmigrator.cpp:985
+#: kmailmigrator.cpp:981
 msgid "Created local maildir resource."
 msgstr "Lokale Maildir-Ressource erzeugt"
 
-#: kmailmigrator.cpp:1021
+#: kmailmigrator.cpp:1017
 msgid "KMail Folders"
 msgstr "KMail-Ordner"
 
-#: kmailmigrator.cpp:1029
+#: kmailmigrator.cpp:1025
 #, kde-format
 msgctxt "@info:status resource that will provide folder such as outbox, sent"
 msgid "Using '%1' for default outbox, sent mail, trash, etc."
 msgstr ""
 "Für Postausgang, Gesendete Nachrichten, Papierkorb usw. wird „%1“ verwendet."
 
-#: kmailmigrator.cpp:1034
+#: kmailmigrator.cpp:1030
 #, kde-format
 msgctxt "@info:status resource that will provide folder such as outbox, sent"
 msgid "Keeping '%1' for default outbox, sent mail, trash, etc."
 msgstr ""
 "Für Postausgang, Gesendete Nachrichten, Papierkorb usw. wird „%1“ behalten."
 
-#: kmailmigrator.cpp:1105 kmailmigrator.cpp:1336
+#: kmailmigrator.cpp:1101 kmailmigrator.cpp:1332
 msgid "Local folders migrated successfully."
 msgstr "Lokale Ordner sind erfolgreich migriert worden."
 

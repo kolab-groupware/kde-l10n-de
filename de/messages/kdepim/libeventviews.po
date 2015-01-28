@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libeventviews\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-17 05:20+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: 2014-11-11 22:02+0100\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -32,70 +32,70 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "swinter@kde.org"
 
-#: agenda/agenda.cpp:1000
+#: agenda/agenda.cpp:998
 msgid "Unable to lock item for modification. You cannot make any changes."
 msgstr ""
 "Kein exklusiver Zugriff auf den Eintrag möglich. Sie können keine Änderungen "
 "vornehmen."
 
-#: agenda/agenda.cpp:1002
+#: agenda/agenda.cpp:1000
 msgid "Locking Failed"
 msgstr "Kein exklusiver Zugriff möglich"
 
-#: agenda/agenda.cpp:1190
+#: agenda/agenda.cpp:1186
 msgid "Dissociate event from recurrence"
 msgstr "Dieses Ereignis aus der Wiederholungsliste herauslösen"
 
-#: agenda/agenda.cpp:1208 month/monthitem.cpp:459
+#: agenda/agenda.cpp:1202 month/monthitem.cpp:459
 msgid ""
 "Unable to add the exception item to the calendar. No change will be done."
 msgstr ""
 "Es ist nicht möglich, diese Ausnahme in den Kalender aufzunehmen. Es werden "
 "keine Änderungen durchgeführt."
 
-#: agenda/agenda.cpp:1210 month/monthitem.cpp:461
+#: agenda/agenda.cpp:1204 month/monthitem.cpp:461
 msgid "Error Occurred"
 msgstr "Fehler aufgetreten"
 
-#: agenda/agendaitem.cpp:86 list/listview.cpp:427
+#: agenda/agendaitem.cpp:85 list/listview.cpp:427
 #, kde-format
 msgid "%2 (1 year)"
 msgid_plural "%2 (%1 years)"
 msgstr[0] "%2 (1 Jahr)"
 msgstr[1] "%2 (%1 Jahre)"
 
-#: agenda/agendaitem.cpp:648
+#: agenda/agendaitem.cpp:643
 #, kde-format
 msgid "Attendee \"%1\" added to the calendar item \"%2\""
 msgstr "Teilnehmer „%1“ wurde zum Kalendereintrag „%2“ hinzugefügt."
 
-#: agenda/agendaitem.cpp:650
+#: agenda/agendaitem.cpp:645
 msgid "Attendee added"
 msgstr "Teilnehmer hinzugefügt"
 
-#: agenda/agendaitem.cpp:946 agenda/agendaitem.cpp:1052
+#: agenda/agendaitem.cpp:936 agenda/agendaitem.cpp:1042
 #, kde-format
 msgid "%1 - %2"
 msgstr "%1 – %2"
 
-#: agenda/agendaitem.cpp:962
+#: agenda/agendaitem.cpp:952
 #, kde-format
 msgid "- %1"
 msgstr "- %1"
 
-#: agenda/agendaview.cpp:1146
+#: agenda/agendaview.cpp:1200
 #, kde-format
 msgctxt "short_weekday date (e.g. Mon 13)"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: agenda/agendaview.cpp:1909
+#: agenda/agendaview.cpp:1961
 msgid "Unable to modify this to-do, because it cannot be locked."
 msgstr ""
 "Diese Aufgabe kann nicht verändert werden, da kein exklusiver Zugriff darauf "
 "möglich ist."
 
-#: agenda/agendaview.cpp:1918
+#: agenda/agendaview.cpp:1970
 #, kde-format
 msgid "Unable to save %1 \"%2\"."
 msgstr "Speichern von %1 „%2“ nicht möglich."
@@ -1372,14 +1372,6 @@ msgstr "Diesen Journaleintrag bearbeiten"
 msgid "Opens a print dialog for this journal entry"
 msgstr "Öffnen einen Druck-Dialog für diesen Journaleintrag"
 
-#: journal/journalframe.cpp:199
-msgid "Print preview"
-msgstr "Druckvorschau"
-
-#: journal/journalframe.cpp:203
-msgid "Print preview this journal entry"
-msgstr "Vorschau für diesen Journaleintrag drucken"
-
 #: list/listview.cpp:70
 #, kde-format
 msgctxt "%1 is an item summary. %2 is the date when this item reoccurs"
@@ -1422,13 +1414,13 @@ msgstr[1] "%2 %1 Jahre"
 msgid "Move occurrence(s)"
 msgstr "Vorkommen verschieben"
 
-#: month/monthscene.cpp:201
+#: month/monthscene.cpp:202
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: month/monthscene.cpp:350
+#: month/monthscene.cpp:351
 #, kde-format
 msgctxt "'Month day' for month view cells"
 msgid "%1 %2"
@@ -1557,7 +1549,7 @@ msgctxt "@action:inmenu Unspecified priority"
 msgid "unspecified"
 msgstr "nicht festgelegt"
 
-#: todo/tododelegates.cpp:201 todo/todoview.cpp:437
+#: todo/tododelegates.cpp:201 todo/todoview.cpp:453
 msgctxt "@action:inmenu highest priority"
 msgid "1 (highest)"
 msgstr "1 (höchste)"
@@ -1577,7 +1569,7 @@ msgctxt "@action:inmenu"
 msgid "4"
 msgstr "4"
 
-#: todo/tododelegates.cpp:205 todo/todoview.cpp:445
+#: todo/tododelegates.cpp:205 todo/todoview.cpp:461
 msgctxt "@action:inmenu medium priority"
 msgid "5 (medium)"
 msgstr "5 (mittel)"
@@ -1597,7 +1589,7 @@ msgctxt "@action:inmenu"
 msgid "8"
 msgstr "8"
 
-#: todo/tododelegates.cpp:209 todo/todoview.cpp:453
+#: todo/tododelegates.cpp:209 todo/todoview.cpp:469
 msgctxt "@action:inmenu lowest priority"
 msgid "9 (lowest)"
 msgstr "9 (niedrigste)"
@@ -1730,52 +1722,65 @@ msgctxt "@action:inmenu"
 msgid "Make all Sub-to-dos &Independent"
 msgstr "&Alle Unteraufgaben verselbständigen"
 
-#: todo/todoview.cpp:404
+#: todo/todoview.cpp:400
+#, fuzzy
+#| msgid "Create a new Event"
+msgid "Create Event"
+msgstr "Ein neues Ereignis hinzufügen"
+
+#: todo/todoview.cpp:407
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Create to-do"
+msgid "Create Note"
+msgstr "Neue Aufgabe erstellen"
+
+#: todo/todoview.cpp:420
 msgctxt "@title:menu"
 msgid "&Copy To"
 msgstr "&Kopieren nach"
 
-#: todo/todoview.cpp:417
+#: todo/todoview.cpp:433
 msgctxt "@title:menu"
 msgid "&Move To"
 msgstr "&Verschieben nach"
 
-#: todo/todoview.cpp:430
+#: todo/todoview.cpp:446
 msgctxt "@action:inmenu delete completed to-dos"
 msgid "Pur&ge Completed"
 msgstr "Erledigte &löschen"
 
-#: todo/todoview.cpp:435
+#: todo/todoview.cpp:451
 msgctxt "@action:inmenu unspecified priority"
 msgid "unspecified"
 msgstr "nicht festgelegt"
 
-#: todo/todoview.cpp:439
+#: todo/todoview.cpp:455
 msgctxt "@action:inmenu priority value=2"
 msgid "2"
 msgstr "2"
 
-#: todo/todoview.cpp:441
+#: todo/todoview.cpp:457
 msgctxt "@action:inmenu priority value=3"
 msgid "3"
 msgstr "3"
 
-#: todo/todoview.cpp:443
+#: todo/todoview.cpp:459
 msgctxt "@action:inmenu priority value=4"
 msgid "4"
 msgstr "4"
 
-#: todo/todoview.cpp:447
+#: todo/todoview.cpp:463
 msgctxt "@action:inmenu priority value=6"
 msgid "6"
 msgstr "6"
 
-#: todo/todoview.cpp:449
+#: todo/todoview.cpp:465
 msgctxt "@action:inmenu priority value=7"
 msgid "7"
 msgstr "7"
 
-#: todo/todoview.cpp:451
+#: todo/todoview.cpp:467
 msgctxt "@action:inmenu priority value=8"
 msgid "8"
 msgstr "8"
@@ -2011,39 +2016,45 @@ msgstr ""
 "Option aktivieren, wenn Sie die Groupware-Funktionalität verwenden möchten "
 "(um z. B. Kontact als KDE Kolab-Client zu verwenden)."
 
-#: whatsnext/whatsnextview.cpp:79
-msgid "To-dos:"
-msgstr "Aufgaben:"
-
-#: whatsnext/whatsnextview.cpp:96
+#: whatsnext/whatsnextview.cpp:84
 msgid "What's Next?"
 msgstr "Was kommt als Nächstes?"
 
-#: whatsnext/whatsnextview.cpp:104 whatsnext/whatsnextview.cpp:278
+#: whatsnext/whatsnextview.cpp:92 whatsnext/whatsnextview.cpp:262
 #, kde-format
 msgctxt "date from - to"
 msgid "%1 - %2"
 msgstr "%1 – %2"
 
-#: whatsnext/whatsnextview.cpp:124
+#: whatsnext/whatsnextview.cpp:112
 msgid "Events:"
 msgstr "Termine:"
 
-#: whatsnext/whatsnextview.cpp:205 whatsnext/whatsnextview.cpp:225
+#: whatsnext/whatsnextview.cpp:154
+msgid "To-dos:"
+msgstr "Aufgaben:"
+
+#: whatsnext/whatsnextview.cpp:189 whatsnext/whatsnextview.cpp:209
 msgid "Events and to-dos that need a reply:"
 msgstr "Aufgaben und Ereignisse, die eine Antwort erfordern:"
 
-#: whatsnext/whatsnextview.cpp:285
+#: whatsnext/whatsnextview.cpp:269
 #, kde-format
 msgctxt "date, from - to"
 msgid "%1, %2 - %3"
 msgstr "%1, %2 – %3"
 
-#: whatsnext/whatsnextview.cpp:320
+#: whatsnext/whatsnextview.cpp:305
 #, kde-format
 msgctxt "to-do due date"
 msgid "  (Due: %1)"
 msgstr "  (fällig: %1)"
+
+#~ msgid "Print preview"
+#~ msgstr "Druckvorschau"
+
+#~ msgid "Print preview this journal entry"
+#~ msgstr "Vorschau für diesen Journaleintrag drucken"
 
 #~ msgid "<placeholder>undefined</placeholder>"
 #~ msgstr "<placeholder>unbestimmt</placeholder>"
@@ -5957,9 +5968,6 @@ msgstr "  (fällig: %1)"
 #~ msgid "&Week"
 #~ msgstr "&Woche"
 
-#~ msgid "Create a new Event"
-#~ msgstr "Ein neues Ereignis hinzufügen"
-
 #~ msgid "Create a new To-do"
 #~ msgstr "Eine neue Aufgabe hinzufügen"
 
@@ -7131,10 +7139,6 @@ msgstr "  (fällig: %1)"
 #~ msgctxt "@info"
 #~ msgid "Template does not contain a valid incidence."
 #~ msgstr "Die Vorlage enthält kein gültiges Ereignis."
-
-#~ msgctxt "@title:window"
-#~ msgid "Create to-do"
-#~ msgstr "Neue Aufgabe erstellen"
 
 #~ msgctxt "@action:button"
 #~ msgid "Create to-do"

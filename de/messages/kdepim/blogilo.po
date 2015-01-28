@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: blogilo\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-07-16 06:55+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: 2014-08-05 14:38+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -62,16 +62,16 @@ msgstr ""
 "wenn Sie wissen, dass der Server es unterstützt."
 
 #. i18n: ectx: property (text), widget (QLabel, operationNameLabel)
-#: src/addeditblog.cpp:311 src/ui/waitwidgetbase.ui:19
+#: src/addeditblog.cpp:313 src/ui/waitwidgetbase.ui:19
 msgid "Please wait..."
 msgstr "Bitte warten ..."
 
-#: src/addeditblog.cpp:313
+#: src/addeditblog.cpp:315
 msgid "Fetching Blog Id..."
 msgstr "Blog-ID wird geholt ..."
 
 # Ersatz für „selbstgehostet“ (selbstverwaltet?) und mögl. „Remote Publishing“ gesucht
-#: src/addeditblog.cpp:328
+#: src/addeditblog.cpp:330
 msgid ""
 "Fetching the blog id timed out. Check your Internet connection,and your "
 "homepage URL, username or password.\n"
@@ -86,7 +86,7 @@ msgstr ""
 "Falls Sie ein Wordpress-Blog auf Ihrem eigenen Server verwenden, müssen sie "
 "„Remote Publishing“ in den Wordpress-Einstellungen aktivieren."
 
-#: src/addeditblog.cpp:341
+#: src/addeditblog.cpp:343
 msgid ""
 "The API guess function has failed, please check your Internet connection. "
 "Otherwise, you have to set the API type manually on the Advanced tab."
@@ -95,11 +95,11 @@ msgstr ""
 "Internetverbindung. Falls dies nicht hilft, müssen Sie den API-Typ auf der "
 "Karteikarte „Erweitert“ manuell auswählen."
 
-#: src/addeditblog.cpp:343
+#: src/addeditblog.cpp:345
 msgid "Auto Configuration Failed"
 msgstr "Automatische Konfiguration fehlgeschlagen"
 
-#: src/addeditblog.cpp:352
+#: src/addeditblog.cpp:354
 msgid ""
 "Fetching BlogID Failed.\n"
 "Please check your Internet connection."
@@ -108,39 +108,39 @@ msgstr ""
 "Bitte überprüfen Sie Ihre Internetverbindung."
 
 #. i18n: ectx: property (text), widget (QTreeWidget, localEntries)
-#: src/addeditblog.cpp:374 src/blogsettings.cpp:45 src/ui/toolboxbase.ui:547
+#: src/addeditblog.cpp:376 src/blogsettings.cpp:45 src/ui/toolboxbase.ui:547
 msgid "Title"
 msgstr "Titel"
 
-#: src/addeditblog.cpp:374
+#: src/addeditblog.cpp:376
 msgid "Url"
 msgstr "Adresse (URL)"
 
-#: src/addeditblog.cpp:389
+#: src/addeditblog.cpp:391
 msgid "Which blog?"
 msgstr "Welcher Blog?"
 
-#: src/addeditblog.cpp:411
+#: src/addeditblog.cpp:413
 msgid "Sorry, No blog found with the specified account info."
 msgstr ""
 "Es kann kein Blog mit den angegebenen Zugangsinformationen gefunden werden."
 
-#: src/addeditblog.cpp:473
+#: src/addeditblog.cpp:493
 msgctxt "Supported feature or Not"
 msgid "Yes"
 msgstr "Ja"
 
-#: src/addeditblog.cpp:475
+#: src/addeditblog.cpp:495
 msgctxt "Supported feature or Not"
 msgid "No, API does not support it"
 msgstr "Nein, nicht unterstützt von der API"
 
-#: src/addeditblog.cpp:476
+#: src/addeditblog.cpp:496
 msgctxt "Supported feature or Not"
 msgid "No, Blogilo does not yet support it"
 msgstr "Nein, noch nicht unterstützt von Blogilo"
 
-#: src/addeditblog.cpp:557
+#: src/addeditblog.cpp:577
 msgid ""
 "Blog ID has not yet been retrieved.\n"
 "You can fetch the blog ID by clicking on \"Auto Configure\" or the \"Fetch ID"
@@ -151,18 +151,18 @@ msgstr ""
 "Konfiguration“ oder „ID holen“ betätigen. Ansonsten müssen sie Ihre Blog-ID "
 "manuell hinzufügen."
 
-#: src/backend.cpp:103
+#: src/backend.cpp:97
 msgid "Blog API doesn't support getting Category list."
 msgstr ""
 "Das Abholen der Kategorienliste wird von der Blog-API (Programmier-"
 "Schnittstelle) nicht unterstützt."
 
-#: src/backend.cpp:179
+#: src/backend.cpp:173
 #, kde-format
 msgid "Publishing/Modifying post failed: %1"
 msgstr "Das Veröffentlichen/Bearbeiten des Eintrags ist fehlgeschlagen: %1"
 
-#: src/backend.cpp:199
+#: src/backend.cpp:198
 msgid ""
 "Uploading media failed: Your Blog API does not support uploading media "
 "objects."
@@ -170,7 +170,7 @@ msgstr ""
 "Das Hochladen der Medien ist fehlgeschlagen: Die API Ihres Blogs unterstützt "
 "das Hochladen von Medien nicht."
 
-#: src/backend.cpp:215 src/backend.cpp:222
+#: src/backend.cpp:214 src/backend.cpp:221
 #, kde-format
 msgid ""
 "Uploading media failed: Cannot read the media file, please check if it "
@@ -179,7 +179,7 @@ msgstr ""
 "Das Hochladen der Medien ist fehlgeschlagen: Die Mediendatei kann nicht "
 "gelesen werden. Bitte überprüfen Sie, ob die Datei existiert. Dateipfad: %1"
 
-#: src/backend.cpp:236
+#: src/backend.cpp:235
 #, kde-format
 msgid ""
 "Uploading media failed: Media file checksum is zero, please check file path. "
@@ -188,7 +188,7 @@ msgstr ""
 "Das Hochladen der Medien ist fehlgeschlagen: Die Prüfsumme der Datei ist 0. "
 "Bitte überprüfen Sie den Dateipfad: %1"
 
-#: src/backend.cpp:246
+#: src/backend.cpp:245
 msgid ""
 "INTERNAL ERROR: MWBlog is NULL: casting has not worked, this should NEVER "
 "happen."
@@ -196,61 +196,49 @@ msgstr ""
 "Interner Fehler: MWBlog ist NULL: Die Typumwandlung hat nicht funktioniert. "
 "Dies sollte nie geschehen."
 
-#: src/backend.cpp:260
+#: src/backend.cpp:259
 msgid "API type is not set correctly."
 msgstr "Der API-Typ ist nicht korrekt eingestellt."
 
-#: src/backend.cpp:280
+#: src/backend.cpp:279
 #, kde-format
 msgid "Uploading media failed: %1"
 msgstr "Das Hochladen der Medien ist fehlgeschlagen: %1"
 
-#: src/backend.cpp:289
+#: src/backend.cpp:288
 #, kde-format
 msgid "Uploading media failed: Checksum error. Returned error: %1"
 msgstr ""
 "Das Hochladen der Medien ist fehlgeschlagen: Prüfsummen-Fehler. "
 "Zurückgegebener Fehler: %1"
 
-#: src/backend.cpp:374
+#: src/backend.cpp:373
 msgid "Server (XMLRPC) error: "
 msgstr "Serverfehler (XMLRPC): "
 
-#: src/backend.cpp:377
+#: src/backend.cpp:376
 msgid "Server (Atom) error: "
 msgstr "Serverfehler (Atom): "
 
-#: src/backend.cpp:380
+#: src/backend.cpp:379
 msgid "Parsing error: "
 msgstr "Verarbeitungsfehler: "
 
-#: src/backend.cpp:383
+#: src/backend.cpp:382
 msgid "Authentication error: "
 msgstr "Authentifizierungsfehler: "
 
-#: src/backend.cpp:386
+#: src/backend.cpp:385
 msgid "Not supported error: "
 msgstr "Nicht unterstützter Fehler:"
 
-#: src/backend.cpp:389
+#: src/backend.cpp:388
 msgid "Unknown error: "
 msgstr "Unbekannter Fehler: "
 
-#: src/backend.cpp:398
+#: src/backend.cpp:397
 msgid "post is NULL"
 msgstr "Der Eintrag ist leer"
-
-#: src/blogger.cpp:401
-msgid "Blog post not found"
-msgstr "Der Blog-Eintrag wurde nicht gefunden"
-
-#: src/blogger.cpp:463
-msgid "Failed to create new post"
-msgstr "Das Erstellen des neuen Eintrags ist fehlgeschlagen"
-
-#: src/blogger.cpp:500
-msgid "Failed to update post"
-msgstr "Die Aktualisierung des Eintrags ist fehlgeschlagen"
 
 #. i18n: ectx: Menu (blog)
 #. i18n: ectx: property (text), widget (QTreeWidget, localEntries)
@@ -395,19 +383,19 @@ msgstr ""
 msgid "KMail Error"
 msgstr "KMail-Fehler"
 
-#: src/dbman.cpp:79
+#: src/dbman.cpp:76
 msgid "Cannot create database"
 msgstr "Datenbank kann nicht erstellt werden"
 
-#: src/dbman.cpp:148
+#: src/dbman.cpp:138
 msgid "Cannot connect to database"
 msgstr "Es ist keine Verbindung zur Datenbank möglich"
 
-#: src/dbman.cpp:1185
+#: src/dbman.cpp:1025
 msgid "There is no post with the requested ID"
 msgstr "Es existiert kein Eintrag mit der angeforderten ID."
 
-#: src/dbman.cpp:1442
+#: src/dbman.cpp:1282
 msgid "There is no local post with the requested ID "
 msgstr "Es existiert kein lokaler Eintrag mit der angeforderten ID."
 
@@ -815,8 +803,8 @@ msgstr "Titel:"
 msgid "Blog/Homepage URL:"
 msgstr "Blog/Homepage-URL:"
 
-#. i18n: ectx: property (text), widget (KLineEdit, kcfg_httpUrl)
 #. i18n: ectx: property (text), widget (KLineEdit, txtUrl)
+#. i18n: ectx: property (text), widget (KLineEdit, kcfg_httpUrl)
 #: src/ui/addeditblogbase.ui:92 src/ui/uploadmediabase.ui:132
 msgid "http://"
 msgstr "http://"
@@ -1319,6 +1307,15 @@ msgstr ""
 "Das Hochladen der Medien ist fehlgeschlagen:\n"
 "%1\n"
 "Möchten Sie es erneut versuchen?"
+
+#~ msgid "Blog post not found"
+#~ msgstr "Der Blog-Eintrag wurde nicht gefunden"
+
+#~ msgid "Failed to create new post"
+#~ msgstr "Das Erstellen des neuen Eintrags ist fehlgeschlagen"
+
+#~ msgid "Failed to update post"
+#~ msgstr "Die Aktualisierung des Eintrags ist fehlgeschlagen"
 
 #~ msgid "Translate..."
 #~ msgstr "Übersetzen ..."

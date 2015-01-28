@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: importwizard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-16 05:49+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: 2014-10-08 15:54+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -40,32 +40,23 @@ msgstr ""
 msgid "Address Book was not selected."
 msgstr "Das Adressbuch war nicht ausgewählt."
 
-#: abstractaddressbook.cpp:81
-#, kde-format
-msgid "Imported from \"%1\""
-msgstr "Importiert von „%1“"
-
-#: abstractaddressbook.cpp:100
+#: abstractaddressbook.cpp:91
 #, kde-format
 msgid "Error during contact creation: %1"
 msgstr "Fehler beim Erstellen des Kontakts: %1"
 
-#: abstractaddressbook.cpp:103
+#: abstractaddressbook.cpp:94
 msgid "Contact creation complete"
 msgstr "Kontakt fertig erstellt"
 
-#: abstractimporter.cpp:83
-msgid "Import filter was canceled."
-msgstr "Der Filterfilter wurde abgebrochen."
-
-#: abstractimporter.cpp:85
+#: abstractimporter.cpp:82
 #, kde-format
 msgid "1 filter was imported from \"%2\""
 msgid_plural "%1 filters were imported from \"%2\""
 msgstr[0] "1 Filter wurde von „%2“ importiert"
 msgstr[1] "%1 Filter wurden von „%2“ importiert"
 
-#: abstractimporter.cpp:89
+#: abstractimporter.cpp:85
 msgid "Filters file was not found"
 msgstr "Es kann keine Filterdatei gefunden werden"
 
@@ -85,39 +76,23 @@ msgstr "Versandarten einrichten ..."
 msgid "Transport set up."
 msgstr "Versandarten wurden eingerichtet."
 
-#: balsa/balsaaddressbook.cpp:38 balsa/balsaaddressbook.cpp:56
-#: sylpheed/sylpheedaddressbook.cpp:34
-msgid "No addressbook found"
-msgstr "Kein Adressbuch gefunden"
-
-#: balsa/balsaaddressbook.cpp:70
-msgid "Ldap created"
-msgstr "LDAP erstellt"
-
-#: balsa/balsaaddressbook.cpp:99
-#, kde-format
-msgid "New addressbook created: %1"
-msgstr "Neues Adressbuch erstellt: %1"
-
 #: balsa/balsaimportdata.cpp:62 claws-mail/clawsmailimportdata.cpp:62
 #: evolutionv1/evolutionv1importdata.cpp:57
 #: evolutionv2/evolutionv2importdata.cpp:58
-#: evolutionv3/evolutionv3importdata.cpp:80 icedove/icedoveimportdata.cpp:93
-#: mailapp/mailappimportdata.cpp:62 oe/oeimportdata.cpp:62
-#: opera/operaimportdata.cpp:61 pmail/pmailimportdata.cpp:62
-#: sylpheed/sylpheedimportdata.cpp:74 thebat/thebatimportdata.cpp:62
-#: thunderbird/thunderbirdimportdata.cpp:93
+#: evolutionv3/evolutionv3importdata.cpp:80 mailapp/mailappimportdata.cpp:62
+#: oe/oeimportdata.cpp:62 opera/operaimportdata.cpp:61
+#: pmail/pmailimportdata.cpp:62 sylpheed/sylpheedimportdata.cpp:74
+#: thebat/thebatimportdata.cpp:62 thunderbird/thunderbirdimportdata.cpp:93
 msgid "Import in progress"
 msgstr "Importvorgang läuft"
 
 #: balsa/balsaimportdata.cpp:68 claws-mail/clawsmailimportdata.cpp:69
 #: evolutionv1/evolutionv1importdata.cpp:64
 #: evolutionv2/evolutionv2importdata.cpp:65
-#: evolutionv3/evolutionv3importdata.cpp:87 icedove/icedoveimportdata.cpp:100
-#: mailapp/mailappimportdata.cpp:68 oe/oeimportdata.cpp:68
-#: opera/operaimportdata.cpp:68 pmail/pmailimportdata.cpp:68
-#: sylpheed/sylpheedimportdata.cpp:81 thebat/thebatimportdata.cpp:68
-#: thunderbird/thunderbirdimportdata.cpp:100
+#: evolutionv3/evolutionv3importdata.cpp:87 mailapp/mailappimportdata.cpp:68
+#: oe/oeimportdata.cpp:68 opera/operaimportdata.cpp:68
+#: pmail/pmailimportdata.cpp:68 sylpheed/sylpheedimportdata.cpp:81
+#: thebat/thebatimportdata.cpp:68 thunderbird/thunderbirdimportdata.cpp:100
 msgid "Import finished"
 msgstr "Import abgeschlossen"
 
@@ -159,48 +134,44 @@ msgstr "Die Einstellungen für Evolution wurden nicht gefunden."
 msgid "Evolution calendar not found."
 msgstr "Der Evolution-Kalender wurde nicht gefunden."
 
-#: icedove/icedoveimportdata.cpp:79 thunderbird/thunderbirdimportdata.cpp:79
-msgid "Thunderbird settings not found."
-msgstr "Die Einstellungen für Thunderbird wurden nicht gefunden."
-
-#: importwizard.cpp:59 main.cpp:35
+#: importwizard.cpp:58 main.cpp:35
 msgid "PIM Import Tool"
 msgstr "PIM-Import-Werkzeug"
 
-#: importwizard.cpp:69
+#: importwizard.cpp:68
 msgid "Detect program"
 msgstr "Anwendung erkennen"
 
-#: importwizard.cpp:73
+#: importwizard.cpp:72
 msgid "Select material to import"
 msgstr "Wählen Sie die zu importierenden Daten"
 
-#: importwizard.cpp:77
+#: importwizard.cpp:76
 msgid "Import mail messages"
 msgstr "E-Mail-Nachrichten importieren"
 
-#: importwizard.cpp:81
+#: importwizard.cpp:80
 msgid "Import mail filters"
 msgstr "E-Mailfilter importieren"
 
 #. i18n: ectx: property (text), widget (QPushButton, importSettings)
-#: importwizard.cpp:85 ui/importsettingpage.ui:35
+#: importwizard.cpp:84 ui/importsettingpage.ui:35
 msgid "Import settings"
 msgstr "Einstellungen importieren"
 
-#: importwizard.cpp:89
+#: importwizard.cpp:88
 msgid "Import addressbooks"
 msgstr "Adressbücher importieren"
 
-#: importwizard.cpp:93
+#: importwizard.cpp:92
 msgid "Import calendars"
 msgstr "Kalender importieren"
 
-#: importwizard.cpp:98
+#: importwizard.cpp:97
 msgid "Finish"
 msgstr "Fertigstellen"
 
-#: importwizard.cpp:145
+#: importwizard.cpp:143
 msgid ""
 "Close KMail before importing data. Some plugins will modify KMail config "
 "file."
@@ -208,27 +179,27 @@ msgstr ""
 "Schließen Sie KMail vor dem Import von Daten.\n"
 "Einige Module werden die Einrichtungsdatei für KMail ändern."
 
-#: importwizard.cpp:162
+#: importwizard.cpp:160
 #, kde-format
 msgid "Import addressbook from %1..."
 msgstr "Adressbuch von %1 importieren ..."
 
-#: importwizard.cpp:170
+#: importwizard.cpp:168
 #, kde-format
 msgid "Import filters from %1..."
 msgstr "Filter von %1 importieren ..."
 
-#: importwizard.cpp:178
+#: importwizard.cpp:176
 #, kde-format
 msgid "Import mails from %1..."
 msgstr "E-Mails von %1 importieren ..."
 
-#: importwizard.cpp:186
+#: importwizard.cpp:184
 #, kde-format
 msgid "Import settings from %1..."
 msgstr "Einstellungen von %1 importieren ..."
 
-#: importwizard.cpp:194
+#: importwizard.cpp:192
 #, kde-format
 msgid "Import calendar from %1..."
 msgstr "Kalender von %1 importieren ..."
@@ -249,7 +220,7 @@ msgstr "Laurent Montel"
 msgid "Maintainer"
 msgstr "Betreuer"
 
-#: sylpheed/sylpheedaddressbook.cpp:73
+#: sylpheed/sylpheedaddressbook.cpp:69
 #, kde-format
 msgid "No contact found in %1"
 msgstr "Kein Kontakt in %1 gefunden"
@@ -257,6 +228,10 @@ msgstr "Kein Kontakt in %1 gefunden"
 #: sylpheed/sylpheedimportdata.cpp:63
 msgid "Sylpheed settings not found."
 msgstr "Die Einstellungen für Sylpheed wurden nicht gefunden."
+
+#: thunderbird/thunderbirdimportdata.cpp:79
+msgid "Thunderbird settings not found."
+msgstr "Die Einstellungen für Thunderbird wurden nicht gefunden."
 
 #. i18n: ectx: property (text), widget (QPushButton, importAddressBook)
 #: ui/importaddressbookpage.ui:35
@@ -341,6 +316,21 @@ msgstr "Bitte wählen Sie das Programm für den Import aus:"
 #: ui/selectprogrampage.ui:44
 msgid "No program found"
 msgstr "Kein Programm gefunden"
+
+#~ msgid "Imported from \"%1\""
+#~ msgstr "Importiert von „%1“"
+
+#~ msgid "Import filter was canceled."
+#~ msgstr "Der Filterfilter wurde abgebrochen."
+
+#~ msgid "No addressbook found"
+#~ msgstr "Kein Adressbuch gefunden"
+
+#~ msgid "Ldap created"
+#~ msgstr "LDAP erstellt"
+
+#~ msgid "New addressbook created: %1"
+#~ msgstr "Neues Adressbuch erstellt: %1"
 
 #~ msgid "Resource type '%1' is not available."
 #~ msgstr "Ressource vom Typ „%1“ ist nicht verfügbar."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-28 05:11+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
@@ -127,27 +127,27 @@ msgstr ""
 msgid "Not subscription added..."
 msgstr ""
 
-#: adblock/adblockmanager.cpp:295
+#: adblock/adblockmanager.cpp:294
 msgid "Download new ad-block list was failed."
 msgstr ""
 
-#: adblock/adblockmanager.cpp:302
+#: adblock/adblockmanager.cpp:301
 msgid "Download new ad-block list was done."
 msgstr ""
 
-#: adblock/adblocksettingwidget.cpp:62
+#: adblock/adblocksettingwidget.cpp:61
 msgid ""
 "<qt>Filter expression (e.g. <tt>http://www.example.com/ad/*</tt>, <a href="
 "\"filterhelp\">more information</a>):"
 msgstr ""
 
-#: adblock/adblocksettingwidget.cpp:78
+#: adblock/adblocksettingwidget.cpp:76
 msgid " day"
 msgid_plural " days"
 msgstr[0] ""
 msgstr[1] ""
 
-#: adblock/adblocksettingwidget.cpp:133
+#: adblock/adblocksettingwidget.cpp:131
 msgid ""
 "<qt><p>Enter an expression to filter. Filters can be defined as either:"
 "<ul><li>a shell-style wildcard, e.g. <tt>http://www.example.com/ads*</tt>, "
@@ -158,36 +158,24 @@ msgid ""
 "filter."
 msgstr ""
 
-#: adblock/adblocksettingwidget.cpp:348
+#: adblock/adblocksettingwidget.cpp:346
 #, kde-format
 msgid "Do you want to delete list \"%1\"?"
 msgstr ""
 
-#: adblock/adblocksettingwidget.cpp:348
+#: adblock/adblocksettingwidget.cpp:346
 msgid "Delete current list"
 msgstr ""
 
-#: adblock/adblocksettingwidget.cpp:393 adblock/adblocksettingwidget.cpp:424
+#: adblock/adblocksettingwidget.cpp:375 adblock/adblocksettingwidget.cpp:406
 msgid "*|all files (*)"
-msgstr ""
-
-#: adblock/adblocksettingwidget.cpp:394
-msgid "Import Filters"
-msgstr ""
-
-#: adblock/adblocksettingwidget.cpp:433
-msgid "Export Filters"
 msgstr ""
 
 #: adblock/adblockshowlistdialog.cpp:38
 msgid "Show adblock list"
 msgstr ""
 
-#: adblock/adblockshowlistdialog.cpp:40
-msgid "Delete list"
-msgstr ""
-
-#: adblock/adblockshowlistdialog.cpp:50
+#: adblock/adblockshowlistdialog.cpp:47
 msgid "Download..."
 msgstr ""
 
@@ -240,10 +228,10 @@ msgstr ""
 msgid "At the end of address"
 msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: adblock/ui/adblockcreatefilterwidget.ui:99
-#: findbar/findbarbase.cpp:81 ui/invitationsettings.ui:94
+#: findbar/findbarbase.cpp:77 ui/invitationsettings.ui:94
 msgid "Options"
 msgstr ""
 
@@ -338,7 +326,7 @@ msgid "Search:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, editFilter)
-#: adblock/ui/settings_adblock.ui:219 job/attachmenteditjob.cpp:47
+#: adblock/ui/settings_adblock.ui:219 viewer/viewer_p.cpp:498
 msgid "Edit"
 msgstr ""
 
@@ -352,47 +340,57 @@ msgstr ""
 msgid "Remove Filter"
 msgstr ""
 
-#: findbar/findbarbase.cpp:49 findbar/findbarbase.cpp:52
+#: findbar/findbarbase.cpp:48 findbar/findbarbase.cpp:51
 msgid "Close"
 msgstr ""
 
-#: findbar/findbarbase.cpp:58
+#: findbar/findbarbase.cpp:57
 msgctxt "Find text"
 msgid "F&ind:"
 msgstr ""
 
-#: findbar/findbarbase.cpp:63
+#: findbar/findbarbase.cpp:61
 msgid "Text to search for"
 msgstr ""
 
-#: findbar/findbarbase.cpp:68
+#: findbar/findbarbase.cpp:66
 msgctxt "Find and go to the next search match"
 msgid "Next"
 msgstr ""
 
-#: findbar/findbarbase.cpp:69
+#: findbar/findbarbase.cpp:67
 msgid "Jump to next match"
 msgstr ""
 
-#: findbar/findbarbase.cpp:74
+#: findbar/findbarbase.cpp:71
 msgctxt "Find and go to the previous search match"
 msgid "Previous"
 msgstr ""
 
-#: findbar/findbarbase.cpp:75
+#: findbar/findbarbase.cpp:72
 msgid "Jump to previous match"
 msgstr ""
 
-#: findbar/findbarbase.cpp:82
+#: findbar/findbarbase.cpp:78
 msgid "Modify search behavior"
 msgstr ""
 
-#: findbar/findbarbase.cpp:84
+#: findbar/findbarbase.cpp:80
 msgid "Case sensitive"
 msgstr ""
 
-#: findbar/findbarbase.cpp:93
-msgid "Phrase not found"
+#: findbar/findbarbase.cpp:147
+#, kde-format
+msgid ""
+"Beginning of message reached.\n"
+"Phrase '%1' could not be found."
+msgstr ""
+
+#: findbar/findbarbase.cpp:149
+#, kde-format
+msgid ""
+"End of message reached.\n"
+"Phrase '%1' could not be found."
 msgstr ""
 
 #: findbar/findbarmailwebview.cpp:32
@@ -496,58 +494,58 @@ msgstr ""
 msgid "Bugzilla: "
 msgstr ""
 
-#: header/fancyheaderstyle.cpp:221 header/grantleeheaderformatter.cpp:141
+#: header/fancyheaderstyle.cpp:221 header/grantleeheaderformatter.cpp:142
 msgid "Spam Status:"
 msgstr ""
 
-#: header/grantleeheaderformatter.cpp:84
+#: header/grantleeheaderformatter.cpp:85
 #, kde-format
 msgid "Grantlee theme \"%1\" is not valid."
 msgstr ""
 
-#: header/grantleeheaderformatter.cpp:110
+#: header/grantleeheaderformatter.cpp:111
 msgid "Subject:"
 msgstr ""
 
-#: header/grantleeheaderformatter.cpp:113
+#: header/grantleeheaderformatter.cpp:114
 msgid "To:"
 msgstr ""
 
-#: header/grantleeheaderformatter.cpp:118
+#: header/grantleeheaderformatter.cpp:119
 msgid "Reply to:"
 msgstr ""
 
-#: header/grantleeheaderformatter.cpp:124
+#: header/grantleeheaderformatter.cpp:125
 msgid "CC:"
 msgstr ""
 
-#: header/grantleeheaderformatter.cpp:130
+#: header/grantleeheaderformatter.cpp:131
 msgid "BCC:"
 msgstr ""
 
-#: header/grantleeheaderformatter.cpp:134
+#: header/grantleeheaderformatter.cpp:135
 msgid "From:"
 msgstr ""
 
-#: header/grantleeheaderformatter.cpp:144
+#: header/grantleeheaderformatter.cpp:145
 msgid "Date:"
 msgstr ""
 
-#: header/grantleeheaderformatter.cpp:161
+#: header/grantleeheaderformatter.cpp:162
 msgid "resent from"
 msgstr ""
 
-#: header/grantleeheaderformatter.cpp:168
+#: header/grantleeheaderformatter.cpp:169
 msgid "receiver was"
 msgid_plural "receivers were"
 msgstr[0] ""
 msgstr[1] ""
 
-#: header/grantleeheaderformatter.cpp:182
+#: header/grantleeheaderformatter.cpp:183
 msgid "Printing mode"
 msgstr ""
 
-#: header/grantleeheaderformatter.cpp:219
+#: header/grantleeheaderformatter.cpp:220
 msgid "[vcard]"
 msgstr ""
 
@@ -556,12 +554,12 @@ msgctxt "Unknown date"
 msgid "Unknown"
 msgstr ""
 
-#: header/headerstyle_util.cpp:76 header/headerstyle_util.cpp:80
-#: header/headerstyle_util.cpp:91
+#: header/headerstyle_util.cpp:75 header/headerstyle_util.cpp:79
+#: header/headerstyle_util.cpp:90
 msgid "No Subject"
 msgstr ""
 
-#: header/headerstyle_util.cpp:159
+#: header/headerstyle_util.cpp:158
 #, kde-format
 msgid ""
 "%1% probability of being spam with confidence %3%.\n"
@@ -571,7 +569,7 @@ msgid ""
 "Confidence=%4"
 msgstr ""
 
-#: header/headerstyle_util.cpp:164
+#: header/headerstyle_util.cpp:163
 #, kde-format
 msgid ""
 "%1% probability of being spam.\n"
@@ -580,31 +578,31 @@ msgid ""
 "Probability=%2"
 msgstr ""
 
-#: header/headerstyle_util.cpp:173
+#: header/headerstyle_util.cpp:172
 msgid "No Spam agent"
 msgstr ""
 
-#: header/headerstyle_util.cpp:176
+#: header/headerstyle_util.cpp:175
 msgid "Spam filter score not a number"
 msgstr ""
 
-#: header/headerstyle_util.cpp:179
+#: header/headerstyle_util.cpp:178
 msgid "Threshold not a valid number"
 msgstr ""
 
-#: header/headerstyle_util.cpp:182
+#: header/headerstyle_util.cpp:181
 msgid "Spam filter score could not be extracted from header"
 msgstr ""
 
-#: header/headerstyle_util.cpp:185
+#: header/headerstyle_util.cpp:184
 msgid "Threshold could not be extracted from header"
 msgstr ""
 
-#: header/headerstyle_util.cpp:188
+#: header/headerstyle_util.cpp:187
 msgid "Error evaluating spam score"
 msgstr ""
 
-#: header/headerstyle_util.cpp:192
+#: header/headerstyle_util.cpp:191
 #, kde-format
 msgid ""
 "%1.\n"
@@ -615,80 +613,6 @@ msgstr ""
 
 #: header/mobileheaderstyle.cpp:137
 msgid "sent: "
-msgstr ""
-
-#: job/attachmenteditjob.cpp:46
-msgid ""
-"Modifying an attachment might invalidate any digital signature on this "
-"message."
-msgstr ""
-
-#: job/attachmenteditjob.cpp:47 viewer/viewer_p.cpp:637 viewer/viewer_p.cpp:1884
-msgid "Edit Attachment"
-msgstr ""
-
-#: job/attachmentencryptwithchiasmusjob.cpp:94
-#: viewer/objecttreeparser.cpp:2079
-msgid ""
-"Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
-"report this bug."
-msgstr ""
-
-#: job/attachmentencryptwithchiasmusjob.cpp:96
-#: job/attachmentencryptwithchiasmusjob.cpp:102
-#: job/attachmentencryptwithchiasmusjob.cpp:112
-#: job/attachmentencryptwithchiasmusjob.cpp:122
-#: job/attachmentencryptwithchiasmusjob.cpp:142
-#: job/attachmentencryptwithchiasmusjob.cpp:155
-#: job/attachmentencryptwithchiasmusjob.cpp:201
-#: viewer/objecttreeparser.cpp:2085
-msgid "Chiasmus Backend Error"
-msgstr ""
-
-#: job/attachmentencryptwithchiasmusjob.cpp:109
-#: viewer/objecttreeparser.cpp:2091
-msgid ""
-"Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
-"function did not return a string list. Please report this bug."
-msgstr ""
-
-#: job/attachmentencryptwithchiasmusjob.cpp:119
-#: viewer/objecttreeparser.cpp:2099
-msgid ""
-"No keys have been found. Please check that a valid key path has been set in "
-"the Chiasmus configuration."
-msgstr ""
-
-#: job/attachmentencryptwithchiasmusjob.cpp:127
-#: viewer/objecttreeparser.cpp:2105
-msgid "Chiasmus Decryption Key Selection"
-msgstr ""
-
-#: job/attachmentencryptwithchiasmusjob.cpp:140
-#: viewer/objecttreeparser.cpp:2118
-msgid ""
-"Chiasmus backend does not offer the \"x-decrypt\" function. Please report "
-"this bug."
-msgstr ""
-
-#: job/attachmentencryptwithchiasmusjob.cpp:153
-#: viewer/objecttreeparser.cpp:2126
-msgid ""
-"The \"x-decrypt\" function does not accept the expected parameters. Please "
-"report this bug."
-msgstr ""
-
-#: job/attachmentencryptwithchiasmusjob.cpp:161
-#: job/attachmentencryptwithchiasmusjob.cpp:192
-#: viewer/objecttreeparser.cpp:2132
-msgid "Chiasmus Decryption Error"
-msgstr ""
-
-#: job/attachmentencryptwithchiasmusjob.cpp:198
-#: viewer/objecttreeparser.cpp:2138
-msgid ""
-"Unexpected return value from Chiasmus backend: The \"x-decrypt\" function "
-"did not return a byte array. Please report this bug."
 msgstr ""
 
 #: scamdetection/scamcheckshorturl.cpp:57
@@ -753,23 +677,23 @@ msgstr ""
 msgid "Details"
 msgstr ""
 
-#: scamdetection/scamdetectionwarningwidget.cpp:37
+#: scamdetection/scamdetectionwarningwidget.cpp:36
 msgid "This message may be a scam. <a href=\"scamdetails\">(Details...)</a>"
 msgstr ""
 
-#: scamdetection/scamdetectionwarningwidget.cpp:42
+#: scamdetection/scamdetectionwarningwidget.cpp:40
 msgid "Move to Trash"
 msgstr ""
 
-#: scamdetection/scamdetectionwarningwidget.cpp:47
+#: scamdetection/scamdetectionwarningwidget.cpp:44
 msgid "I confirm it's not a scam"
 msgstr ""
 
-#: scamdetection/scamdetectionwarningwidget.cpp:51
+#: scamdetection/scamdetectionwarningwidget.cpp:48
 msgid "Add email to whitelist"
 msgstr ""
 
-#: scamdetection/scamdetectionwarningwidget.cpp:55
+#: scamdetection/scamdetectionwarningwidget.cpp:52
 msgid "Disable scam detection for all messages"
 msgstr ""
 
@@ -780,9 +704,7 @@ msgstr ""
 
 #. i18n: ectx: label, entry (RespectExpandCollapseSettings), group (Print)
 #: settings/messageviewer.kcfg.cmake:16
-msgid ""
-"Respect expand/collapse quote mark which is defined in settings during "
-"printing."
+msgid "Respect expand collapse quote mark defined settings when printing"
 msgstr ""
 
 #. i18n: ectx: label, entry (PrintBackgroundColorImages), group (Print)
@@ -860,9 +782,8 @@ msgstr ""
 msgid "Enable this option to show quoted text with a smaller font."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowUserAgent)
 #. i18n: ectx: label, entry (ShowUserAgent), group (Reader)
-#: settings/messageviewer.kcfg.cmake:84 ui/settings.ui:275
+#: settings/messageviewer.kcfg.cmake:84
 msgid "Show user agent in fancy headers"
 msgstr ""
 
@@ -991,31 +912,31 @@ msgid "Update interval list of adblock"
 msgstr ""
 
 #. i18n: ectx: label, entry (notSendWhenEncrypted), group (MDN)
-#: settings/messageviewer.kcfg.cmake:204
+#: settings/messageviewer.kcfg.cmake:201
 msgid "Do not send MDNs in response to encrypted messages"
 msgstr ""
 
 #. i18n: ectx: label, entry (DefaultPolicy), group (MDN)
-#: settings/messageviewer.kcfg.cmake:208
+#: settings/messageviewer.kcfg.cmake:205
 msgid ""
 "Specifies the default policy to use, for the Message Disposition "
 "Notifications (for internal use only)"
 msgstr ""
 
 #. i18n: ectx: label, entry (QuoteMessage), group (MDN)
-#: settings/messageviewer.kcfg.cmake:212
+#: settings/messageviewer.kcfg.cmake:209
 msgid ""
 "Specifies the default quoting action to take, when replying to a message "
 "(for internal use only)"
 msgstr ""
 
 #. i18n: ectx: label, entry (LegacyMangleFromToHeaders), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:228
+#: settings/messageviewer.kcfg.cmake:225
 msgid "Mangle From:/To: headers in replies to replies"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (LegacyMangleFromToHeaders), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:229
+#: settings/messageviewer.kcfg.cmake:226
 msgid ""
 "Microsoft Outlook has a number of shortcomings in its implementation of the "
 "iCalendar standard; this option works around one of them. If you have "
@@ -1024,12 +945,12 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (LegacyBodyInvites), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:234
+#: settings/messageviewer.kcfg.cmake:231
 msgid "Send groupware invitations in the mail body"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (LegacyBodyInvites), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:235
+#: settings/messageviewer.kcfg.cmake:232
 msgid ""
 "Microsoft Outlook has a number of shortcomings in its implementation of the "
 "iCalendar standard; this option works around one of them. If you have "
@@ -1038,12 +959,12 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (ExchangeCompatibleInvitations), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:240
+#: settings/messageviewer.kcfg.cmake:237
 msgid "Exchange-compatible invitation naming"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (ExchangeCompatibleInvitations), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:241
+#: settings/messageviewer.kcfg.cmake:238
 msgid ""
 "Microsoft Outlook, when used in combination with a Microsoft Exchange "
 "server, has a problem understanding standards-compliant groupware email. "
@@ -1051,40 +972,40 @@ msgid ""
 "Exchange understands."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, mOutlookCompatibleInvitationComments)
 #. i18n: ectx: label, entry (OutlookCompatibleInvitationReplyComments), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:246 ui/invitationsettings.ui:58
+#. i18n: ectx: property (text), widget (QCheckBox, mOutlookCompatibleInvitationComments)
+#: settings/messageviewer.kcfg.cmake:243 ui/invitationsettings.ui:58
 msgid "Outlook compatible invitation reply comments"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (OutlookCompatibleInvitationReplyComments), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:247
+#: settings/messageviewer.kcfg.cmake:244
 msgid ""
 "When replying to invitations, send the reply comment in way that Microsoft "
 "Outlook understands."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, mOutlookCompatibleInvitationComparisons)
 #. i18n: ectx: label, entry (OutlookCompatibleInvitationComparisons), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:252 ui/invitationsettings.ui:71
+#. i18n: ectx: property (text), widget (QCheckBox, mOutlookCompatibleInvitationComparisons)
+#: settings/messageviewer.kcfg.cmake:249 ui/invitationsettings.ui:71
 msgid "Show invitation update differences in the Outlook style"
 msgstr ""
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, mOutlookCompatibleInvitationComparisons)
 #. i18n: ectx: whatsthis, entry (OutlookCompatibleInvitationComparisons), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:253 ui/invitationsettings.ui:68
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mOutlookCompatibleInvitationComparisons)
+#: settings/messageviewer.kcfg.cmake:250 ui/invitationsettings.ui:68
 msgid ""
 "When viewing invitation updates, show the differences in the Microsoft "
 "Outlook style."
 msgstr ""
 
 #. i18n: ectx: label, entry (AutomaticSending), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:258
+#: settings/messageviewer.kcfg.cmake:255
 msgid "Automatic invitation sending"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (AutomaticSending), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:259
+#: settings/messageviewer.kcfg.cmake:256
 msgid ""
 "When this is checked, you will not see the mail composer window. Instead, "
 "all invitation mails are sent automatically. If you want to see the mail "
@@ -1093,32 +1014,37 @@ msgid ""
 "modifying it by hand."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, mDeleteInvitations)
 #. i18n: ectx: label, entry (DeleteInvitationEmailsAfterSendingReply), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:264 ui/invitationsettings.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, mDeleteInvitations)
+#: settings/messageviewer.kcfg.cmake:261 ui/invitationsettings.ui:100
 msgid "Delete invitation emails after the reply to them has been sent"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (DeleteInvitationEmailsAfterSendingReply), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:265
+#: settings/messageviewer.kcfg.cmake:262
 msgid ""
 "When this is checked, received invitation emails that have been replied to "
 "will be moved to the Trash folder, once the reply has been successfully sent."
 msgstr ""
 
 #. i18n: ectx: label, entry (UseFixedFont), group (Composer)
-#: settings/messageviewer.kcfg.cmake:289 viewer/viewer_p.cpp:1671
+#: settings/messageviewer.kcfg.cmake:286 viewer/viewer_p.cpp:1737
 msgid "Use Fi&xed Font"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (LastSelectedFolder), group (Todo)
-#: settings/messageviewer.kcfg.cmake:314
+#: settings/messageviewer.kcfg.cmake:311
 msgid "The most recent selected folder using for Todo."
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (LastEventSelectedFolder), group (Event)
-#: settings/messageviewer.kcfg.cmake:320
+#: settings/messageviewer.kcfg.cmake:317
 msgid "The most recent selected folder using for Event."
+msgstr ""
+
+#. i18n: ectx: whatsthis, entry (LastNoteSelectedFolder), group (Note)
+#: settings/messageviewer.kcfg.cmake:323
+msgid "The most recent selected folder using for Notes."
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
@@ -1235,43 +1161,38 @@ msgstr ""
 msgid "Show &expand/collapse quote marks"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HtmlQuoteColorerEnabled)
-#: ui/settings.ui:74
-msgid "Show HTML colored quote (It can take some time on specific html email)"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QLabel, collapseQuoteLevelLabel)
-#: ui/settings.ui:102
+#: ui/settings.ui:95
 msgid "Au&tomatic collapse level:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: ui/settings.ui:169
+#: ui/settings.ui:162
 msgid "Fallback character e&ncoding:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: ui/settings.ui:195
+#: ui/settings.ui:188
 msgid "&Override character encoding:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: ui/settings.ui:215
+#: ui/settings.ui:208
 msgid "Minimum font size:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, configureCustomHeadersButton)
-#: ui/settings.ui:251
+#: ui/settings.ui:244
 msgid "Configure Custom Headers..."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_showSpamStatus)
-#: ui/settings.ui:258
+#: ui/settings.ui:251
 msgid "Show spam status &in fancy headers"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: ui/settings.ui:265
+#: ui/settings.ui:258
 msgid "Headers:"
 msgstr ""
 
@@ -1289,113 +1210,113 @@ msgstr ""
 msgid "Save Attachments To"
 msgstr ""
 
-#: utils/util.cpp:212
+#: utils/util.cpp:211
 msgctxt "filename for an unnamed attachment"
 msgid "attachment.1"
 msgstr ""
 
-#: utils/util.cpp:219
+#: utils/util.cpp:218
 msgid "Save Attachment"
 msgstr ""
 
-#: utils/util.cpp:239
+#: utils/util.cpp:238
 #, kde-format
 msgctxt "filename for the %1-th unnamed attachment"
 msgid "attachment.%1"
 msgstr ""
 
-#: utils/util.cpp:322
+#: utils/util.cpp:321
 #, kde-format
 msgid ""
 "The part %1 of the message is encrypted. Do you want to keep the encryption "
 "when saving?"
 msgstr ""
 
-#: utils/util.cpp:324 utils/util.cpp:333
+#: utils/util.cpp:323 utils/util.cpp:332
 msgid "KMail Question"
 msgstr ""
 
-#: utils/util.cpp:324
+#: utils/util.cpp:323
 msgid "Keep Encryption"
 msgstr ""
 
-#: utils/util.cpp:324 utils/util.cpp:333
+#: utils/util.cpp:323 utils/util.cpp:332
 msgid "Do Not Keep"
 msgstr ""
 
-#: utils/util.cpp:331
+#: utils/util.cpp:330
 #, kde-format
 msgid ""
 "The part %1 of the message is signed. Do you want to keep the signature when "
 "saving?"
 msgstr ""
 
-#: utils/util.cpp:333
+#: utils/util.cpp:332
 msgid "Keep Signature"
 msgstr ""
 
-#: utils/util.cpp:384 utils/util.cpp:408 utils/util.cpp:426
+#: utils/util.cpp:383 utils/util.cpp:407 utils/util.cpp:425
 #, kde-format
 msgctxt "1 = file name, 2 = error string"
 msgid "<qt>Could not write to the file<br><filename>%1</filename><br><br>%2"
 msgstr ""
 
-#: utils/util.cpp:387 utils/util.cpp:411 utils/util.cpp:429
+#: utils/util.cpp:386 utils/util.cpp:410 utils/util.cpp:428
 msgid "Error saving attachment"
 msgstr ""
 
-#: utils/util.cpp:457
+#: utils/util.cpp:456
 msgid "Found no attachments to save."
 msgstr ""
 
-#: utils/util.cpp:475
+#: utils/util.cpp:474
 msgid "message"
 msgstr ""
 
-#: utils/util.cpp:480
+#: utils/util.cpp:479
 msgid ""
 "*.mbox|email messages (*.mbox)\n"
 "*|all files (*)"
 msgstr ""
 
-#: utils/util.cpp:482
+#: utils/util.cpp:481
 msgid "Save Message"
 msgid_plural "Save Messages"
 msgstr[0] ""
 msgstr[1] ""
 
-#: utils/util.cpp:507
+#: utils/util.cpp:506
 #, kde-format
 msgid "File %1 could not be loaded."
 msgstr ""
 
-#: utils/util.cpp:507
+#: utils/util.cpp:506
 msgid "Error loading message"
 msgstr ""
 
-#: utils/util.cpp:509
+#: utils/util.cpp:508
 #, kde-format
 msgid "File %1 could not be created."
 msgstr ""
 
-#: utils/util.cpp:509 utils/util.cpp:521
+#: utils/util.cpp:508 utils/util.cpp:520
 msgid "Error saving message"
 msgstr ""
 
-#: utils/util.cpp:521
+#: utils/util.cpp:520
 msgid "We cannot save message."
 msgstr ""
 
-#: utils/util.cpp:542
+#: utils/util.cpp:541
 msgid "Starting Jovie Text-to-Speech Service Failed"
 msgstr ""
 
-#: utils/util.cpp:555
+#: utils/util.cpp:554
 #, kde-format
 msgid "Open &with %1"
 msgstr ""
 
-#: utils/util.cpp:557
+#: utils/util.cpp:556
 #, kde-format
 msgctxt "@item:inmenu Open With, %1 is application name"
 msgid "%1"
@@ -1409,39 +1330,39 @@ msgstr ""
 msgid "Additional arguments for chiasmus:"
 msgstr ""
 
-#: viewer/editorwatcher.cpp:79
+#: viewer/editorwatcher.cpp:70
 msgid "Edit with:"
 msgstr ""
 
-#: viewer/editorwatcher.cpp:213
+#: viewer/editorwatcher.cpp:170
 msgid ""
 "KMail is unable to detect when the chosen editor is closed. To avoid data "
 "loss, editing the attachment will be aborted."
 msgstr ""
 
-#: viewer/editorwatcher.cpp:215
+#: viewer/editorwatcher.cpp:172
 msgid "Unable to edit attachment"
 msgstr ""
 
-#: viewer/mailsourceviewer.cpp:129 viewer/viewer_p.cpp:1770
+#: viewer/mailsourceviewer.cpp:123 viewer/viewer_p.cpp:1836
 msgid "Speak Text"
 msgstr ""
 
-#: viewer/mailsourceviewer.cpp:203
+#: viewer/mailsourceviewer.cpp:253
 msgctxt "Unchanged mail message"
 msgid "Raw Source"
 msgstr ""
 
-#: viewer/mailsourceviewer.cpp:204
+#: viewer/mailsourceviewer.cpp:254
 msgid "Raw, unmodified mail as it is stored on the filesystem or on the server"
 msgstr ""
 
-#: viewer/mailsourceviewer.cpp:207
+#: viewer/mailsourceviewer.cpp:257
 msgctxt "Mail message as shown, in HTML format"
 msgid "HTML Source"
 msgstr ""
 
-#: viewer/mailsourceviewer.cpp:208
+#: viewer/mailsourceviewer.cpp:258
 msgid "HTML code for displaying the message to the user"
 msgstr ""
 
@@ -1457,148 +1378,152 @@ msgstr ""
 msgid "Size"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:570 viewer/objecttreeparser.cpp:3048
+#: viewer/objecttreeparser.cpp:560 viewer/objecttreeparser.cpp:3027
 msgid "Wrong Crypto Plug-In."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:722 viewer/objecttreeparser.cpp:2280
+#: viewer/objecttreeparser.cpp:712 viewer/objecttreeparser.cpp:2268
 msgid "Different results for signatures"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:826
+#: viewer/objecttreeparser.cpp:816
 msgid "The crypto engine returned no cleartext data."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:829 viewer/objecttreeparser.cpp:2760
-#: viewer/objecttreeparser.cpp:2803
+#: viewer/objecttreeparser.cpp:819 viewer/objecttreeparser.cpp:2744
+#: viewer/objecttreeparser.cpp:2787
 msgid "Status: "
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:836
+#: viewer/objecttreeparser.cpp:826
 msgctxt "Status of message unknown."
 msgid "(unknown)"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:847 viewer/objecttreeparser.cpp:1127
+#: viewer/objecttreeparser.cpp:837 viewer/objecttreeparser.cpp:1117
 #, kde-format
 msgid "Crypto plug-in \"%1\" is not initialized."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:851
+#: viewer/objecttreeparser.cpp:841
 #, kde-format
 msgid "Crypto plug-in \"%1\" cannot verify signatures."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:856 viewer/objecttreeparser.cpp:1135
+#: viewer/objecttreeparser.cpp:846 viewer/objecttreeparser.cpp:1125
 msgid "No appropriate crypto plug-in was found."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:859
+#: viewer/objecttreeparser.cpp:849
 #, kde-format
 msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
 msgid "No %1 plug-in was found."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:863
+#: viewer/objecttreeparser.cpp:853
 #, kde-format
 msgid ""
 "The message is signed, but the validity of the signature cannot be verified."
 "<br />Reason: %1"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:896
+#: viewer/objecttreeparser.cpp:886
 msgid "This message is encrypted."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:901
+#: viewer/objecttreeparser.cpp:891
 msgid "Decrypt Message"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:941
+#: viewer/objecttreeparser.cpp:915
+msgid "Encrypted data not shown"
+msgstr ""
+
+#: viewer/objecttreeparser.cpp:931
 #, kde-format
 msgid "Sorry, certificate could not be imported.<br />Reason: %1"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:951
+#: viewer/objecttreeparser.cpp:941
 msgid "Sorry, no certificates were found in this message."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:954
+#: viewer/objecttreeparser.cpp:944
 msgid "Certificate import status:"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:956
+#: viewer/objecttreeparser.cpp:946
 #, kde-format
 msgid "1 new certificate was imported."
 msgid_plural "%1 new certificates were imported."
 msgstr[0] ""
 msgstr[1] ""
 
-#: viewer/objecttreeparser.cpp:959
+#: viewer/objecttreeparser.cpp:949
 #, kde-format
 msgid "1 certificate was unchanged."
 msgid_plural "%1 certificates were unchanged."
 msgstr[0] ""
 msgstr[1] ""
 
-#: viewer/objecttreeparser.cpp:962
+#: viewer/objecttreeparser.cpp:952
 #, kde-format
 msgid "1 new secret key was imported."
 msgid_plural "%1 new secret keys were imported."
 msgstr[0] ""
 msgstr[1] ""
 
-#: viewer/objecttreeparser.cpp:965
+#: viewer/objecttreeparser.cpp:955
 #, kde-format
 msgid "1 secret key was unchanged."
 msgid_plural "%1 secret keys were unchanged."
 msgstr[0] ""
 msgstr[1] ""
 
-#: viewer/objecttreeparser.cpp:975
+#: viewer/objecttreeparser.cpp:965
 msgid "Sorry, no details on certificate import available."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:978
+#: viewer/objecttreeparser.cpp:968
 msgid "Certificate import details:"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:982
+#: viewer/objecttreeparser.cpp:972
 #, kde-format
 msgctxt "Certificate import failed."
 msgid "Failed: %1 (%2)"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:986
+#: viewer/objecttreeparser.cpp:976
 #, kde-format
 msgid "New or changed: %1 (secret key available)"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:988
+#: viewer/objecttreeparser.cpp:978
 #, kde-format
 msgid "New or changed: %1"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:1025
+#: viewer/objecttreeparser.cpp:1015
 msgid "Could not decrypt the data."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:1114
+#: viewer/objecttreeparser.cpp:1104
 #, kde-format
 msgid "Crypto plug-in \"%1\" could not decrypt the data."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:1116
+#: viewer/objecttreeparser.cpp:1106
 #, kde-format
 msgid "Error: %1"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:1131
+#: viewer/objecttreeparser.cpp:1121
 #, kde-format
 msgid "Crypto plug-in \"%1\" cannot decrypt messages."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:1246
+#: viewer/objecttreeparser.cpp:1242
 msgid ""
 "<b>Note:</b> This HTML message may contain external references to images "
 "etc. For security/privacy reasons external references are not loaded. If you "
@@ -1606,7 +1531,7 @@ msgid ""
 "for this message <a href=\"kmail:loadExternal\">by clicking here</a>."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:1260
+#: viewer/objecttreeparser.cpp:1252
 msgid ""
 "<b>Note:</b> This is an HTML message. For security reasons, only the raw "
 "HTML code is shown. If you trust the sender of this message then you can "
@@ -1614,274 +1539,325 @@ msgid ""
 "\">by clicking here</a>."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:1480
+#: viewer/objecttreeparser.cpp:1468
 msgid ""
 "This message is a <i>Toltec</i> Groupware object, it can only be viewed with "
 "Microsoft Outlook in combination with the Toltec connector."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:1492 viewer/urlhandlermanager.cpp:546
+#: viewer/objecttreeparser.cpp:1480 viewer/urlhandlermanager.cpp:546
 msgid "Show Raw Message"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2208
+#: viewer/objecttreeparser.cpp:2067 viewer/viewer_p.cpp:2974
+msgid ""
+"Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
+"report this bug."
+msgstr ""
+
+#: viewer/objecttreeparser.cpp:2073 viewer/viewer_p.cpp:2976
+#: viewer/viewer_p.cpp:2981 viewer/viewer_p.cpp:2990 viewer/viewer_p.cpp:2999
+#: viewer/viewer_p.cpp:3017 viewer/viewer_p.cpp:3029 viewer/viewer_p.cpp:3069
+msgid "Chiasmus Backend Error"
+msgstr ""
+
+#: viewer/objecttreeparser.cpp:2079 viewer/viewer_p.cpp:2987
+msgid ""
+"Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
+"function did not return a string list. Please report this bug."
+msgstr ""
+
+#: viewer/objecttreeparser.cpp:2087 viewer/viewer_p.cpp:2996
+msgid ""
+"No keys have been found. Please check that a valid key path has been set in "
+"the Chiasmus configuration."
+msgstr ""
+
+#: viewer/objecttreeparser.cpp:2093 viewer/viewer_p.cpp:3003
+msgid "Chiasmus Decryption Key Selection"
+msgstr ""
+
+#: viewer/objecttreeparser.cpp:2106 viewer/viewer_p.cpp:3015
+msgid ""
+"Chiasmus backend does not offer the \"x-decrypt\" function. Please report "
+"this bug."
+msgstr ""
+
+#: viewer/objecttreeparser.cpp:2114 viewer/viewer_p.cpp:3027
+msgid ""
+"The \"x-decrypt\" function does not accept the expected parameters. Please "
+"report this bug."
+msgstr ""
+
+#: viewer/objecttreeparser.cpp:2120 viewer/viewer_p.cpp:3034
+#: viewer/viewer_p.cpp:3061
+msgid "Chiasmus Decryption Error"
+msgstr ""
+
+#: viewer/objecttreeparser.cpp:2126 viewer/viewer_p.cpp:3066
+msgid ""
+"Unexpected return value from Chiasmus backend: The \"x-decrypt\" function "
+"did not return a byte array. Please report this bug."
+msgstr ""
+
+#: viewer/objecttreeparser.cpp:2196
 msgctxt "display name for an unnamed attachment"
 msgid "Unnamed"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2262
+#: viewer/objecttreeparser.cpp:2250
 msgid "Error: Signature not verified"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2265
+#: viewer/objecttreeparser.cpp:2253
 msgid "Good signature"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2268
+#: viewer/objecttreeparser.cpp:2256
 msgid "<b>Bad</b> signature"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2271
+#: viewer/objecttreeparser.cpp:2259
 msgid "No public key to verify the signature"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2274
+#: viewer/objecttreeparser.cpp:2262
 msgid "No signature found"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2277
+#: viewer/objecttreeparser.cpp:2265
 msgid "Error verifying the signature"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2300
+#: viewer/objecttreeparser.cpp:2288
 msgid "No status information available."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2307 viewer/objecttreeparser.cpp:2391
+#: viewer/objecttreeparser.cpp:2295 viewer/objecttreeparser.cpp:2379
 msgid "Good signature."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2328
+#: viewer/objecttreeparser.cpp:2316
 msgid "One key has expired."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2332
+#: viewer/objecttreeparser.cpp:2320
 msgid "The signature has expired."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2337
+#: viewer/objecttreeparser.cpp:2325
 msgid "Unable to verify: key missing."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2344
+#: viewer/objecttreeparser.cpp:2332
 msgid "CRL not available."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2348
+#: viewer/objecttreeparser.cpp:2336
 msgid "Available CRL is too old."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2352
+#: viewer/objecttreeparser.cpp:2340
 msgid "A policy was not met."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2356
+#: viewer/objecttreeparser.cpp:2344
 msgid "A system error occurred."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2367
+#: viewer/objecttreeparser.cpp:2355
 msgid "One key has been revoked."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2393
+#: viewer/objecttreeparser.cpp:2381
 msgid "<b>Bad</b> signature."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2420
+#: viewer/objecttreeparser.cpp:2408
 msgid "Invalid signature."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2423
+#: viewer/objecttreeparser.cpp:2411
 msgid "Not enough information to check signature validity."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2435
+#: viewer/objecttreeparser.cpp:2423
 msgid "Signature is valid."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2437
+#: viewer/objecttreeparser.cpp:2425
 #, kde-format
 msgid "Signed by <a href=\"mailto:%1\">%2</a>."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2442
+#: viewer/objecttreeparser.cpp:2430
 msgid "Unknown signature state"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2448
+#: viewer/objecttreeparser.cpp:2434
 msgid "Show Details"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2470
+#: viewer/objecttreeparser.cpp:2454
 msgid "No Audit Log available"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2472
+#: viewer/objecttreeparser.cpp:2456
 #, kde-format
 msgid "Error Retrieving Audit Log: %1"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2482
+#: viewer/objecttreeparser.cpp:2466
 msgctxt "The Audit Log is a detailed error log from the gnupg backend"
 msgid "Show Audit Log"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2493
+#: viewer/objecttreeparser.cpp:2477
 msgid "Hide Details"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2519 viewer/objecttreeparser.cpp:2521
+#: viewer/objecttreeparser.cpp:2503 viewer/objecttreeparser.cpp:2505
 msgid "Encapsulated message"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2530
+#: viewer/objecttreeparser.cpp:2514
 msgid "Please wait while the message is being decrypted..."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2532
+#: viewer/objecttreeparser.cpp:2516
 msgid "Encrypted message"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2534
+#: viewer/objecttreeparser.cpp:2518
 msgid "Encrypted message (decryption not possible)"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2536
+#: viewer/objecttreeparser.cpp:2520
 #, kde-format
 msgid "Reason: %1"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2546
+#: viewer/objecttreeparser.cpp:2530
 msgid "Please wait while the signature is being verified..."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2642 viewer/objecttreeparser.cpp:2644
+#: viewer/objecttreeparser.cpp:2626 viewer/objecttreeparser.cpp:2628
 msgid "certificate"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2650 viewer/objecttreeparser.cpp:2675
+#: viewer/objecttreeparser.cpp:2634 viewer/objecttreeparser.cpp:2659
 msgctxt "Start of warning message."
 msgid "Warning:"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2652
+#: viewer/objecttreeparser.cpp:2636
 #, kde-format
 msgid "Sender's mail address is not stored in the %1 used for signing."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2655
+#: viewer/objecttreeparser.cpp:2639
 msgid "sender: "
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2658
+#: viewer/objecttreeparser.cpp:2642
 msgid "stored: "
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2677
+#: viewer/objecttreeparser.cpp:2661
 #, kde-format
 msgid ""
 "No mail address is stored in the %1 used for signing, so we cannot compare "
 "it to the sender's address %2."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2701
+#: viewer/objecttreeparser.cpp:2685
 #, kde-format
 msgid "Not enough information to check signature. %1"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2719 viewer/objecttreeparser.cpp:2797
+#: viewer/objecttreeparser.cpp:2703 viewer/objecttreeparser.cpp:2781
 msgid "Message was signed with unknown key."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2721 viewer/objecttreeparser.cpp:2835
-#: viewer/objecttreeparser.cpp:2879
+#: viewer/objecttreeparser.cpp:2705 viewer/objecttreeparser.cpp:2819
+#: viewer/objecttreeparser.cpp:2863
 #, kde-format
 msgid "Message was signed by %1."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2728 viewer/objecttreeparser.cpp:2737
-#: viewer/objecttreeparser.cpp:2748
+#: viewer/objecttreeparser.cpp:2712 viewer/objecttreeparser.cpp:2721
+#: viewer/objecttreeparser.cpp:2732
 #, kde-format
 msgid "Message was signed with key %1."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2731
+#: viewer/objecttreeparser.cpp:2715
 #, kde-format
 msgid "Message was signed on %1 with key %2."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2740
+#: viewer/objecttreeparser.cpp:2724
 #, kde-format
 msgid "Message was signed by %3 on %1 with key %2"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2751
+#: viewer/objecttreeparser.cpp:2735
 #, kde-format
 msgid "Message was signed by %2 with key %1."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2789
+#: viewer/objecttreeparser.cpp:2773
 #, kde-format
 msgid "Message was signed on %1 with unknown key %2."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2793
+#: viewer/objecttreeparser.cpp:2777
 #, kde-format
 msgid "Message was signed with unknown key %1."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2799
+#: viewer/objecttreeparser.cpp:2783
 msgid "The validity of the signature cannot be verified."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2831 viewer/objecttreeparser.cpp:2875
+#: viewer/objecttreeparser.cpp:2815 viewer/objecttreeparser.cpp:2859
 #, kde-format
 msgid "Message was signed by %2 (Key ID: %1)."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2841
+#: viewer/objecttreeparser.cpp:2825
 msgid "The signature is valid, but the key's validity is unknown."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2845
+#: viewer/objecttreeparser.cpp:2829
 msgid "The signature is valid and the key is marginally trusted."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2849
+#: viewer/objecttreeparser.cpp:2833
 msgid "The signature is valid and the key is fully trusted."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2853
+#: viewer/objecttreeparser.cpp:2837
 msgid "The signature is valid and the key is ultimately trusted."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2857
+#: viewer/objecttreeparser.cpp:2841
 msgid "The signature is valid, but the key is untrusted."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2881
+#: viewer/objecttreeparser.cpp:2865
 msgid "Warning: The signature is bad."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2905
+#: viewer/objecttreeparser.cpp:2889
 msgid "End of signed message"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2911
+#: viewer/objecttreeparser.cpp:2895
 msgid "End of encrypted message"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2918
+#: viewer/objecttreeparser.cpp:2902
 msgid "End of encapsulated message"
 msgstr ""
 
@@ -1897,7 +1873,7 @@ msgstr ""
 msgid "Turn on HTML rendering for this message."
 msgstr ""
 
-#: viewer/urlhandlermanager.cpp:522 viewer/viewer_p.cpp:1767
+#: viewer/urlhandlermanager.cpp:522 viewer/viewer_p.cpp:1833
 msgid "Load external references from the Internet for this message."
 msgstr ""
 
@@ -1974,7 +1950,7 @@ msgstr ""
 msgid "&Copy Email Address"
 msgstr ""
 
-#: viewer/urlhandlermanager.cpp:737 viewer/viewer_p.cpp:2774
+#: viewer/urlhandlermanager.cpp:737 viewer/viewer_p.cpp:2831
 msgid "Address copied to clipboard."
 msgstr ""
 
@@ -1982,433 +1958,464 @@ msgstr ""
 msgid "Lookup the contact in KAddressbook"
 msgstr ""
 
-#: viewer/urlhandlermanager.cpp:861
+#: viewer/urlhandlermanager.cpp:857
 #, kde-format
 msgid "Attachment: %1"
 msgstr ""
 
-#: viewer/urlhandlermanager.cpp:864
+#: viewer/urlhandlermanager.cpp:860
 #, kde-format
 msgid "Encapsulated Message (Subject: %1)"
 msgstr ""
 
-#: viewer/urlhandlermanager.cpp:867
+#: viewer/urlhandlermanager.cpp:863
 msgid "Encapsulated Message"
 msgstr ""
 
-#: viewer/urlhandlermanager.cpp:870
+#: viewer/urlhandlermanager.cpp:866
 msgid "Unnamed attachment"
 msgstr ""
 
-#: viewer/urlhandlermanager.cpp:901
+#: viewer/urlhandlermanager.cpp:897
 msgid "Show GnuPG Audit Log for this operation"
 msgstr ""
 
-#: viewer/urlhandlermanager.cpp:938
+#: viewer/urlhandlermanager.cpp:934
 msgid "Opening URL..."
 msgstr ""
 
-#: viewer/urlhandlermanager.cpp:947
+#: viewer/urlhandlermanager.cpp:943
 #, kde-format
 msgctxt "@info"
 msgid "Do you really want to execute <filename>%1</filename>?"
 msgstr ""
 
-#: viewer/urlhandlermanager.cpp:948
+#: viewer/urlhandlermanager.cpp:944
 msgid "Execute"
 msgstr ""
 
-#: viewer/viewer.cpp:109
+#: viewer/viewer.cpp:105
 msgid "Loading message..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:417
+#: viewer/viewer_p.cpp:426
 msgid ""
 "Deleting an attachment from an encrypted or old-style mailman message is not "
 "supported."
 msgstr ""
 
-#: viewer/viewer_p.cpp:418 viewer/viewer_p.cpp:424 viewer/viewer_p.cpp:643
-#: viewer/viewer_p.cpp:1880
+#: viewer/viewer_p.cpp:427 viewer/viewer_p.cpp:433 viewer/viewer_p.cpp:670
+#: viewer/viewer_p.cpp:1957
 msgid "Delete Attachment"
 msgstr ""
 
-#: viewer/viewer_p.cpp:423
+#: viewer/viewer_p.cpp:432
 msgid ""
 "Deleting an attachment might invalidate any digital signature on this "
 "message."
 msgstr ""
 
-#: viewer/viewer_p.cpp:512
+#: viewer/viewer_p.cpp:497
+msgid ""
+"Modifying an attachment might invalidate any digital signature on this "
+"message."
+msgstr ""
+
+#: viewer/viewer_p.cpp:498 viewer/viewer_p.cpp:664 viewer/viewer_p.cpp:1961
+msgid "Edit Attachment"
+msgstr ""
+
+#: viewer/viewer_p.cpp:539
 msgctxt "@title:menu"
 msgid "&Open With"
 msgstr ""
 
-#: viewer/viewer_p.cpp:530
+#: viewer/viewer_p.cpp:557
 msgctxt "@action:inmenu Open With"
 msgid "&Other..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:532 viewer/viewer_p.cpp:544
+#: viewer/viewer_p.cpp:559 viewer/viewer_p.cpp:571
 msgctxt "@title:menu"
 msgid "&Open With..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:599 viewer/viewer_p.cpp:1857
+#: viewer/viewer_p.cpp:626 viewer/viewer_p.cpp:1934
 msgctxt "to open"
 msgid "Open"
 msgstr ""
 
-#: viewer/viewer_p.cpp:607 viewer/viewer_p.cpp:1864
+#: viewer/viewer_p.cpp:634 viewer/viewer_p.cpp:1941
 msgctxt "to view something"
 msgid "View"
 msgstr ""
 
-#: viewer/viewer_p.cpp:615
+#: viewer/viewer_p.cpp:642
 msgid "Scroll To"
 msgstr ""
 
-#: viewer/viewer_p.cpp:620
+#: viewer/viewer_p.cpp:647
 msgid "Save As..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:625 viewer/viewer_p.cpp:1876
+#: viewer/viewer_p.cpp:652 viewer/viewer_p.cpp:1953
 msgid "Copy"
 msgstr ""
 
-#: viewer/viewer_p.cpp:650
+#: viewer/viewer_p.cpp:677
 msgid "Decrypt With Chiasmus..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:654 viewer/viewer_p.cpp:1889
+#: viewer/viewer_p.cpp:681 viewer/viewer_p.cpp:1966
 msgid "Properties"
 msgstr ""
 
-#: viewer/viewer_p.cpp:798
+#. i18n("Part of the Kontact Suite");
+#: viewer/viewer_p.cpp:834
 msgid "The KDE email client."
 msgstr ""
 
-#: viewer/viewer_p.cpp:1374
+#: viewer/viewer_p.cpp:1355 viewer/viewer_p.cpp:1901 viewer/viewer_p.cpp:1902
+msgctxt "create a new note out of this message"
+msgid "Create Note"
+msgstr ""
+
+#: viewer/viewer_p.cpp:1357
+msgctxt "edit a note on this message"
+msgid "Edit Note"
+msgstr ""
+
+#: viewer/viewer_p.cpp:1425
 #, kde-format
 msgid "View Attachment: %1"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1531
+#: viewer/viewer_p.cpp:1597
 msgctxt "View->"
 msgid "&Headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1533
+#: viewer/viewer_p.cpp:1599
 msgid "Choose display style of message headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1536
+#: viewer/viewer_p.cpp:1602
 msgctxt "View->headers->"
 msgid "&Enterprise Headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1539
+#: viewer/viewer_p.cpp:1605
 msgid "Show the list of headers in Enterprise style"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1543
+#: viewer/viewer_p.cpp:1609
 msgctxt "View->headers->"
 msgid "&Fancy Headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1546
+#: viewer/viewer_p.cpp:1612
 msgid "Show the list of headers in a fancy format"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1550
+#: viewer/viewer_p.cpp:1616
 msgctxt "View->headers->"
 msgid "&Brief Headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1553
+#: viewer/viewer_p.cpp:1619
 msgid "Show brief list of message headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1557
+#: viewer/viewer_p.cpp:1623
 msgctxt "View->headers->"
 msgid "&Standard Headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1560
+#: viewer/viewer_p.cpp:1626
 msgid "Show standard list of message headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1564
+#: viewer/viewer_p.cpp:1630
 msgctxt "View->headers->"
 msgid "&Long Headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1567
+#: viewer/viewer_p.cpp:1633
 msgid "Show long list of message headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1571
+#: viewer/viewer_p.cpp:1637
 msgctxt "View->headers->"
 msgid "&All Headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1574
+#: viewer/viewer_p.cpp:1640
 msgid "Show all message headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1578
+#: viewer/viewer_p.cpp:1644
 msgctxt "View->headers->"
 msgid "&Custom Headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1581
+#: viewer/viewer_p.cpp:1647
 msgid "Show custom headers"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1589
+#: viewer/viewer_p.cpp:1655
 msgctxt "View->"
 msgid "&Attachments"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1591
+#: viewer/viewer_p.cpp:1657
 msgid "Choose display style of attachments"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1594
+#: viewer/viewer_p.cpp:1660
 msgctxt "View->attachments->"
 msgid "&As Icons"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1597
+#: viewer/viewer_p.cpp:1663
 msgid "Show all attachments as icons. Click to see them."
 msgstr ""
 
-#: viewer/viewer_p.cpp:1601
+#: viewer/viewer_p.cpp:1667
 msgctxt "View->attachments->"
 msgid "&Smart"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1604
+#: viewer/viewer_p.cpp:1670
 msgid "Show attachments as suggested by sender."
 msgstr ""
 
-#: viewer/viewer_p.cpp:1608
+#: viewer/viewer_p.cpp:1674
 msgctxt "View->attachments->"
 msgid "&Inline"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1611
+#: viewer/viewer_p.cpp:1677
 msgid "Show all attachments inline (if possible)"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1615
+#: viewer/viewer_p.cpp:1681
 msgctxt "View->attachments->"
 msgid "&Hide"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1618
+#: viewer/viewer_p.cpp:1684
 msgid "Do not show attachments in the message viewer"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1622
+#: viewer/viewer_p.cpp:1688
 msgctxt "View->attachments->"
 msgid "In Header Only"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1626
+#: viewer/viewer_p.cpp:1692
 msgid "Show Attachments only in the header of the mail"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1631
+#: viewer/viewer_p.cpp:1697
 msgid "&Set Encoding"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1637 widgets/configurewidget.cpp:44
-#: widgets/configurewidget.cpp:127
+#: viewer/viewer_p.cpp:1703 widgets/configurewidget.cpp:45
+#: widgets/configurewidget.cpp:128
 msgid "Auto"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1654
+#: viewer/viewer_p.cpp:1720
 msgid "Select All Text"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1661 viewer/viewer_p.cpp:2155
+#: viewer/viewer_p.cpp:1727 viewer/viewer_p.cpp:2231
 msgid "Copy Link Address"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1666
+#: viewer/viewer_p.cpp:1732
 msgid "Open URL"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1678
+#: viewer/viewer_p.cpp:1744
 msgid "Zoom Text Only"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1681
+#: viewer/viewer_p.cpp:1747
 msgid "&Zoom In"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1686
+#: viewer/viewer_p.cpp:1752
 msgid "Zoom &Out"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1691
+#: viewer/viewer_p.cpp:1757
 msgid "Reset"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1698
+#: viewer/viewer_p.cpp:1764
 msgid "Show Message Structure"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1703
+#: viewer/viewer_p.cpp:1769
 msgid "&View Source"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1708
+#: viewer/viewer_p.cpp:1774
 msgid "&Save message..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:1714
+#: viewer/viewer_p.cpp:1780
 msgid "&Save Display Format"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1718
+#: viewer/viewer_p.cpp:1784
 msgid "&Reset Display Format"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1725
+#: viewer/viewer_p.cpp:1791
 msgid "Scroll Message Up"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1731
+#: viewer/viewer_p.cpp:1797
 msgid "Scroll Message Down"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1737
+#: viewer/viewer_p.cpp:1803
 msgid "Scroll Message Up (More)"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1743
+#: viewer/viewer_p.cpp:1809
 msgid "Scroll Message Down (More)"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1754
+#: viewer/viewer_p.cpp:1820
 msgid "Toggle HTML Display Mode"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1759
+#: viewer/viewer_p.cpp:1825
 msgid "Toggle display mode between HTML and plain text"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1762
+#: viewer/viewer_p.cpp:1828
 msgid "Load external references"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1776
+#: viewer/viewer_p.cpp:1842
 msgid "Copy Image Location"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1783
+#: viewer/viewer_p.cpp:1849
 msgid "Translate..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:1790
+#: viewer/viewer_p.cpp:1856
 msgid "&Find in Message..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:1797
+#: viewer/viewer_p.cpp:1863
 msgid "Toggle Caret Browsing"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1804
+#: viewer/viewer_p.cpp:1870
 msgid "Block image"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1809
+#: viewer/viewer_p.cpp:1875
 msgid "Open Blockable Items..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:1814
+#: viewer/viewer_p.cpp:1880
 msgid "Expand Short URL"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1819
+#: viewer/viewer_p.cpp:1885
 msgid "Create Todo"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1820
+#: viewer/viewer_p.cpp:1886
 msgid "Create To-do"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1821
+#: viewer/viewer_p.cpp:1887
 msgid "Allows you to create a calendar to-do or reminder from this message"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1822
+#: viewer/viewer_p.cpp:1888
 msgid ""
 "This option starts the KOrganizer to-do editor with initial values taken "
 "from the currently selected message. Then you can edit the to-do to your "
 "liking before saving it to your calendar."
 msgstr ""
 
-#: viewer/viewer_p.cpp:1827 viewer/viewer_p.cpp:1828
+#: viewer/viewer_p.cpp:1893 viewer/viewer_p.cpp:1894
 msgid "Create Event"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1829
+#: viewer/viewer_p.cpp:1895
 msgid "Allows you to create a calendar Event"
 msgstr ""
 
-#: viewer/viewer_p.cpp:1853
+#: viewer/viewer_p.cpp:1903
+msgid "Allows you to create a note from this message"
+msgstr ""
+
+#: viewer/viewer_p.cpp:1904
+msgid ""
+"This option starts an editor to create a note. Then you can edit the note to "
+"your liking before saving it."
+msgstr ""
+
+#: viewer/viewer_p.cpp:1930
 msgid "Save &As..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:1863
+#: viewer/viewer_p.cpp:1940
 msgid "Open With..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:1869
+#: viewer/viewer_p.cpp:1946
 msgid "Save All Attachments..."
 msgstr ""
 
-#: viewer/viewer_p.cpp:2153
+#: viewer/viewer_p.cpp:2229
 msgid "Copy Email Address"
 msgstr ""
 
-#: viewer/viewer_p.cpp:2222
+#: viewer/viewer_p.cpp:2297
 msgid "Message as Plain Text"
 msgstr ""
 
-#: viewer/viewer_p.cpp:2483
+#: viewer/viewer_p.cpp:2558
 msgid "Attachments:"
 msgstr ""
 
-#: viewer/viewer_p.cpp:2779
+#: viewer/viewer_p.cpp:2836
 msgid "URL copied to clipboard."
 msgstr ""
 
-#: viewer/viewer_p.cpp:2947
+#: viewer/viewer_p.cpp:3128
 msgid "Hide full address list"
 msgstr ""
 
-#: viewer/viewer_p.cpp:2951
+#: viewer/viewer_p.cpp:3132
 msgid "Show full address list"
 msgstr ""
 
-#: viewer/viewer_p.cpp:2974
+#: viewer/viewer_p.cpp:3155
 #, kde-format
 msgid "Message loading failed: %1."
 msgstr ""
 
-#: viewer/viewer_p.cpp:2979
+#: viewer/viewer_p.cpp:3160
 msgid "Message not found."
 msgstr ""
 
-#: viewer/viewer_p.cpp:3103
+#: viewer/viewer_p.cpp:3284
 msgid "Caret Browsing will be activated. Switch off with F7 shortcut."
 msgstr ""
 
-#: viewer/viewer_p.cpp:3104
+#: viewer/viewer_p.cpp:3285
 msgid "Activate Caret Browsing"
 msgstr ""
 
@@ -2436,56 +2443,57 @@ msgstr ""
 msgid "Do not ask again"
 msgstr ""
 
-#: widgets/eventedit.cpp:61
+#: widgets/eventedit.cpp:58
 msgid "Event:"
 msgstr ""
 
-#: widgets/eventedit.cpp:80 widgets/eventedit.cpp:82
+#: widgets/eventedit.cpp:77 widgets/eventedit.cpp:79 widgets/noteedit.cpp:76
+#: widgets/noteedit.cpp:78
 msgid "Calendar where the new event will be stored."
 msgstr ""
 
-#: widgets/eventedit.cpp:93
+#: widgets/eventedit.cpp:90
 msgid "Start:"
 msgstr ""
 
-#: widgets/eventedit.cpp:101
+#: widgets/eventedit.cpp:97
 msgid "Select start time for event."
 msgstr ""
 
-#: widgets/eventedit.cpp:110
+#: widgets/eventedit.cpp:105
 msgid "End:"
 msgstr ""
 
-#: widgets/eventedit.cpp:116
+#: widgets/eventedit.cpp:111
 msgid "Select end time for event."
 msgstr ""
 
-#: widgets/eventedit.cpp:129 widgets/todoedit.cpp:97
+#: widgets/eventedit.cpp:124 widgets/noteedit.cpp:98 widgets/todoedit.cpp:96
 msgid "&Save"
 msgstr ""
 
-#: widgets/eventedit.cpp:133
+#: widgets/eventedit.cpp:128
 msgid "Create new event and close this widget."
 msgstr ""
 
-#: widgets/eventedit.cpp:138 widgets/todoedit.cpp:106
+#: widgets/eventedit.cpp:133 widgets/todoedit.cpp:105
 msgid "Open &editor..."
 msgstr ""
 
-#: widgets/eventedit.cpp:140
+#: widgets/eventedit.cpp:135
 msgid "Open event editor, where more details can be changed."
 msgstr ""
 
-#: widgets/eventedit.cpp:150
+#: widgets/eventedit.cpp:145
 msgid "Close the widget for creating new events."
 msgstr ""
 
-#: widgets/eventedit.cpp:230 widgets/todoedit.cpp:196
+#: widgets/eventedit.cpp:219 widgets/todoedit.cpp:192
 #, kde-format
 msgid "Reply to \"%1\""
 msgstr ""
 
-#: widgets/htmlstatusbar.cpp:108
+#: widgets/htmlstatusbar.cpp:106
 msgctxt ""
 "'HTML Message' with html linebreaks between each letter and in bold text."
 msgid ""
@@ -2493,21 +2501,21 @@ msgid ""
 ">a<br />g<br />e</b></qt>"
 msgstr ""
 
-#: widgets/htmlstatusbar.cpp:112
+#: widgets/htmlstatusbar.cpp:110
 msgctxt "'No HTML Message' with html linebreaks between each letter."
 msgid ""
 "<qt><br />N<br />o<br /> <br />H<br />T<br />M<br />L<br /> <br />M<br /"
 ">e<br />s<br />s<br />a<br />g<br />e</qt>"
 msgstr ""
 
-#: widgets/htmlstatusbar.cpp:117
+#: widgets/htmlstatusbar.cpp:115
 msgctxt "'Plain Message' with html linebreaks between each letter."
 msgid ""
 "<qt><br />P<br />l<br />a<br />i<br />n<br /> <br />M<br />e<br />s<br /"
 ">s<br />a<br />g<br />e<br /></qt>"
 msgstr ""
 
-#: widgets/htmlstatusbar.cpp:131
+#: widgets/htmlstatusbar.cpp:129
 msgid "Click to toggle between HTML and plain text."
 msgstr ""
 
@@ -2523,31 +2531,39 @@ msgid ""
 "be able to work with this.</qt>"
 msgstr ""
 
-#: widgets/openattachmentfolderwidget.cpp:46
-msgid "Open folder where attachment was saved"
+#: widgets/noteedit.cpp:57
+msgid "Note:"
 msgstr ""
 
-#: widgets/todoedit.cpp:65
+#: widgets/noteedit.cpp:102
+msgid "Create new note and close this widget."
+msgstr ""
+
+#: widgets/noteedit.cpp:110
+msgid "Close the widget for creating new notes."
+msgstr ""
+
+#: widgets/todoedit.cpp:64
 msgid "Todo:"
 msgstr ""
 
-#: widgets/todoedit.cpp:84 widgets/todoedit.cpp:86
+#: widgets/todoedit.cpp:83 widgets/todoedit.cpp:85
 msgid "Todo list where the new task will be stored."
 msgstr ""
 
-#: widgets/todoedit.cpp:101
+#: widgets/todoedit.cpp:100
 msgid "Create new todo and close this widget."
 msgstr ""
 
-#: widgets/todoedit.cpp:109
+#: widgets/todoedit.cpp:108
 msgid "Open todo editor, where more details can be changed."
 msgstr ""
 
-#: widgets/todoedit.cpp:118
+#: widgets/todoedit.cpp:117
 msgid "Close the widget for creating new todos."
 msgstr ""
 
-#: widgets/todoedit.cpp:231
+#: widgets/todoedit.cpp:225
 #, kde-format
 msgctxt ""
 "%1 is summary of the todo, %2 is name of the folder in which it is stored"

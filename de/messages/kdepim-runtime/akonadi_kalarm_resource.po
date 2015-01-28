@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi_kalarm_resource\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-21 06:52+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: 2014-09-02 21:36+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -62,14 +62,14 @@ msgstr "Erinnerungstypen."
 msgid "Update backend storage format."
 msgstr "Speicherformat des Backends aktualisieren."
 
-#: kalarmdir/kalarmdirresource.cpp:706
+#: kalarmdir/kalarmdirresource.cpp:697
 #, kde-format
 msgctxt "@info"
 msgid "Trying to write to a read-only calendar: '%1'"
 msgstr ""
 "Es wurde versucht, in einen schreibgeschützten Kalender zu schreiben: '%1'"
 
-#: kalarmdir/kalarmdirresource.cpp:737
+#: kalarmdir/kalarmdirresource.cpp:722
 #, kde-format
 msgctxt "@info"
 msgid "Failed to save event file: %1"
@@ -165,20 +165,20 @@ msgstr "Erinnerungstypen"
 msgid "Select which alarm type this resource should contain."
 msgstr "Wählen Sie, welchen Erinnerungstyp diese Ressource beinhalten soll."
 
-#. i18n: ectx: property (text), widget (QCheckBox, activeCheckBox)
 #. i18n: ectx: property (text), widget (QRadioButton, activeRadio)
+#. i18n: ectx: property (text), widget (QCheckBox, activeCheckBox)
 #: shared/alarmtyperadiowidget.ui:17 shared/alarmtypewidget.ui:17
 msgid "Active Alarms"
 msgstr "Aktive Erinnerungen"
 
-#. i18n: ectx: property (text), widget (QCheckBox, archivedCheckBox)
 #. i18n: ectx: property (text), widget (QRadioButton, archivedRadio)
+#. i18n: ectx: property (text), widget (QCheckBox, archivedCheckBox)
 #: shared/alarmtyperadiowidget.ui:27 shared/alarmtypewidget.ui:27
 msgid "Archived Alarms"
 msgstr "Abgelaufene Erinnerungen"
 
-#. i18n: ectx: property (text), widget (QCheckBox, templateCheckBox)
 #. i18n: ectx: property (text), widget (QRadioButton, templateRadio)
+#. i18n: ectx: property (text), widget (QCheckBox, templateCheckBox)
 #: shared/alarmtyperadiowidget.ui:37 shared/alarmtypewidget.ui:37
 msgid "Alarm Templates"
 msgstr "Erinnerungsvorlagen"
@@ -225,13 +225,11 @@ msgctxt "@info"
 msgid "Event with uid '%1' is read only"
 msgstr "Ereignis mit Kennung „%1“ ist schreibgeschützt"
 
-#: shared/kalarmresourcecommon.cpp:185
-#, kde-format
-msgctxt "@info"
-msgid "Failed to add event with uid '%1' to calendar"
-msgstr ""
-"Das Ereignis mit der Kennung „%1“ kann nicht zum Kalender hinzugefügt werden "
-"werden."
+#~ msgctxt "@info"
+#~ msgid "Failed to add event with uid '%1' to calendar"
+#~ msgstr ""
+#~ "Das Ereignis mit der Kennung „%1“ kann nicht zum Kalender hinzugefügt "
+#~ "werden werden."
 
 #~ msgctxt "@title:column"
 #~ msgid "Changed Alarm"

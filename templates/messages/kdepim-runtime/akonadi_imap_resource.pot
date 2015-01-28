@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-29 05:22+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
@@ -18,24 +18,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: addcollectiontask.cpp:48
+#: addcollectiontask.cpp:49
 #, kde-format
 msgid "Cannot add IMAP folder '%1' for a non-existing parent folder '%2'."
 msgstr ""
 
-#: addcollectiontask.cpp:84
+#: addcollectiontask.cpp:86
 #, kde-format
 msgid "Failed to create the folder '%1' on the IMAP server. "
 msgstr ""
 
-#: addcollectiontask.cpp:104 movecollectiontask.cpp:145
+#: addcollectiontask.cpp:107 movecollectiontask.cpp:145
 #, kde-format
 msgid ""
 "Failed to subscribe to the folder '%1' on the IMAP server. It will disappear "
 "on next sync. Use the subscription dialog to overcome that"
 msgstr ""
 
-#: addcollectiontask.cpp:147 changecollectiontask.cpp:278
+#: addcollectiontask.cpp:151 changecollectiontask.cpp:301
 #, kde-format
 msgid "Failed to write some annotations for '%1' on the IMAP server. %2"
 msgstr ""
@@ -45,35 +45,35 @@ msgstr ""
 msgid "Could not determine the UID for the newly created message on the server"
 msgstr ""
 
-#: changecollectiontask.cpp:48
+#: changecollectiontask.cpp:54
 #, kde-format
 msgid "Cannot modify IMAP folder '%1', it does not exist on the server."
 msgstr ""
 
-#: changecollectiontask.cpp:61
+#: changecollectiontask.cpp:67
 #, kde-format
 msgid ""
 "ACLs for '%1' need to be retrieved from the IMAP server first. Skipping ACL "
 "change"
 msgstr ""
 
-#: changecollectiontask.cpp:238
+#: changecollectiontask.cpp:261
 msgid "Failed to rename the folder, restoring folder list."
 msgstr ""
 
-#: changecollectiontask.cpp:257
+#: changecollectiontask.cpp:280
 #, kde-format
 msgid ""
 "Failed to subscribe to the renamed folder '%1' on the IMAP server. It will "
 "disappear on next sync. Use the subscription dialog to overcome that"
 msgstr ""
 
-#: changecollectiontask.cpp:268
+#: changecollectiontask.cpp:291
 #, kde-format
 msgid "Failed to write some ACLs for '%1' on the IMAP server. %2"
 msgstr ""
 
-#: imapresource.cpp:49
+#: imapresource.cpp:50
 msgid "IMAP Account"
 msgstr ""
 
@@ -207,87 +207,87 @@ msgstr ""
 msgid "Defines the type of identification used by custom sieve server"
 msgstr ""
 
-#: imapresourcebase.cpp:241
+#: imapresourcebase.cpp:243
 msgid "No server configured yet."
 msgstr ""
 
-#: imapresourcebase.cpp:274
+#: imapresourcebase.cpp:277
 msgctxt "@title:window"
 msgid "Serverside Subscription"
 msgstr ""
 
-#: imapresourcebase.cpp:296
+#: imapresourcebase.cpp:300
 msgid "Connection established."
 msgstr ""
 
-#: imapresourcebase.cpp:312
+#: imapresourcebase.cpp:313
 msgid "Server is not available."
 msgstr ""
 
-#: imapresourcebase.cpp:367
+#: imapresourcebase.cpp:368
 #, kde-format
 msgctxt "@info:status"
 msgid "Adding item in '%1'"
 msgstr ""
 
-#: imapresourcebase.cpp:374
+#: imapresourcebase.cpp:375
 #, kde-format
 msgctxt "@info:status"
 msgid "Updating item in '%1'"
 msgstr ""
 
-#: imapresourcebase.cpp:382
+#: imapresourcebase.cpp:383
 msgctxt "@info:status"
 msgid "Updating items"
 msgstr ""
 
-#: imapresourcebase.cpp:396
+#: imapresourcebase.cpp:397
 msgctxt "@info:status"
 msgid "Removing items"
 msgstr ""
 
-#: imapresourcebase.cpp:414
+#: imapresourcebase.cpp:416
 #, kde-format
 msgctxt "@info:status"
 msgid "Moving items from '%1' to '%2'"
 msgstr ""
 
-#: imapresourcebase.cpp:425
+#: imapresourcebase.cpp:428
 msgctxt "@info:status"
 msgid "Retrieving folders"
 msgstr ""
 
-#: imapresourcebase.cpp:432
+#: imapresourcebase.cpp:435
 #, kde-format
 msgctxt "@info:status"
 msgid "Retrieving extra folder information for '%1'"
 msgstr ""
 
-#: imapresourcebase.cpp:450
+#: imapresourcebase.cpp:453
 #, kde-format
 msgctxt "@info:status"
 msgid "Creating folder '%1'"
 msgstr ""
 
-#: imapresourcebase.cpp:456
+#: imapresourcebase.cpp:459
 #, kde-format
 msgctxt "@info:status"
 msgid "Updating folder '%1'"
 msgstr ""
 
-#: imapresourcebase.cpp:469
+#: imapresourcebase.cpp:472
 #, kde-format
 msgctxt "@info:status"
 msgid "Removing folder '%1'"
 msgstr ""
 
-#: imapresourcebase.cpp:477
+#: imapresourcebase.cpp:480
 #, kde-format
 msgctxt "@info:status"
 msgid "Moving folder '%1' from '%2' to '%3'"
 msgstr ""
 
-#: imapresourcebase.cpp:506
+#: imapresourcebase.cpp:509
 msgctxt "@info:status"
 msgid "Searching..."
 msgstr ""
@@ -344,30 +344,30 @@ msgstr ""
 msgid "Failed to find the folder to be deleted, restoring folder list."
 msgstr ""
 
-#: resourcetask.cpp:69
+#: resourcetask.cpp:72
 msgid "There is currently no connection to the IMAP server."
 msgstr ""
 
-#: resourcetask.cpp:100
+#: resourcetask.cpp:104
 msgid "There is currently no session to the IMAP server available."
 msgstr ""
 
-#: resourcetask.cpp:130 resourcetask.cpp:141
+#: resourcetask.cpp:137 resourcetask.cpp:149
 msgid "Connection lost"
 msgstr ""
 
-#: resourcetask.cpp:484
+#: resourcetask.cpp:502
 msgid "killed"
 msgstr ""
 
-#: retrievecollectionmetadatatask.cpp:236
+#: retrievecollectionmetadatatask.cpp:198
 #, kde-format
 msgid ""
 "<p>Your access rights to folder <b>%1</b> have been restricted, it will no "
 "longer be possible to add messages to this folder.</p>"
 msgstr ""
 
-#: retrievecollectionmetadatatask.cpp:239
+#: retrievecollectionmetadatatask.cpp:201
 msgid "Access rights revoked"
 msgstr ""
 
@@ -379,7 +379,7 @@ msgstr ""
 msgid "Shared Folders"
 msgstr ""
 
-#: retrieveitemstask.cpp:501
+#: retrieveitemstask.cpp:482
 #, kde-format
 msgctxt "@info:status"
 msgid "Fetching missing mail bodies in %3: %1/%2"
@@ -410,67 +410,70 @@ msgctxt ""
 msgid "Server Info"
 msgstr ""
 
-#: sessionpool.cpp:235 sessionpool.cpp:384
+#: sessionpool.cpp:256 sessionpool.cpp:405
 #, kde-format
 msgid ""
 "Could not connect to the IMAP-server %1.\n"
 "%2"
 msgstr ""
 
-#: sessionpool.cpp:239
+#: sessionpool.cpp:260
 #, kde-format
 msgid ""
 "Could not connect to the IMAP server.\n"
 "%1"
 msgstr ""
 
-#: sessionpool.cpp:278
+#: sessionpool.cpp:299
 #, kde-format
 msgid "Could not create another extra connection to the IMAP-server %1."
 msgstr ""
 
-#: sessionpool.cpp:296 sessionpool.cpp:366 sessionpool.cpp:407
-#: sessionpool.cpp:466
+#: sessionpool.cpp:317
 msgid "Disconnected from server during login."
 msgstr ""
 
-#: sessionpool.cpp:310
+#: sessionpool.cpp:331
 msgid "Could not read the password: user rejected wallet access"
 msgstr ""
 
-#: sessionpool.cpp:318
+#: sessionpool.cpp:339
 msgid "Empty password"
 msgstr ""
 
-#: sessionpool.cpp:330
+#: sessionpool.cpp:351
 #, kde-format
 msgid ""
 "You requested TLS/SSL to connect to %1, but your system does not seem to be "
 "set up for that."
 msgstr ""
 
-#: sessionpool.cpp:390
+#: sessionpool.cpp:387 sessionpool.cpp:428 sessionpool.cpp:487
+msgid "Disconnected during login."
+msgstr ""
+
+#: sessionpool.cpp:411
 #, kde-format
 msgid ""
 "Could not connect to the IMAP-server.\n"
 "%1"
 msgstr ""
 
-#: sessionpool.cpp:415
+#: sessionpool.cpp:436
 #, kde-format
 msgid ""
 "Could not test the capabilities supported by the IMAP server %1.\n"
 "%2"
 msgstr ""
 
-#: sessionpool.cpp:422
+#: sessionpool.cpp:443
 #, kde-format
 msgid ""
 "Could not test the capabilities supported by the IMAP server.\n"
 "%1"
 msgstr ""
 
-#: sessionpool.cpp:442
+#: sessionpool.cpp:463
 #, kde-format
 msgid ""
 "Cannot use the IMAP server %1, some mandatory capabilities are missing: %2. "

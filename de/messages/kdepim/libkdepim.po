@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-28 05:11+0000\n"
+"POT-Creation-Date: 2015-01-28 17:17+0100\n"
 "PO-Revision-Date: 2014-09-05 12:19+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -37,17 +37,19 @@ msgstr "swinter@kde.org"
 msgid "LDAP server: %1"
 msgstr "LDAP-Server: %1"
 
-#: addressline/addresseelineedit.cpp:315
+#: addressline/addresseelineedit.cpp:321
 msgctxt "@title:group"
 msgid "Contacts found in your data"
 msgstr "In Ihren Daten gefundene Kontakte"
 
-#: addressline/addresseelineedit.cpp:1384
+#: addressline/addresseelineedit.cpp:1386
 msgid "Configure Completion Order..."
 msgstr "Reihenfolge für Vervollständigung bearbeiten ..."
 
-#: addressline/addresseelineedit.cpp:1387
-msgid "Show Organization Unit for LDAP results"
+#: addressline/addresseelineedit.cpp:1389
+#, fuzzy
+#| msgid "Show Organization Unit for LDAP results"
+msgid "Show Organication Unit for LDAP results"
 msgstr "Organisation für LDAP-Ergebnisse anzeigen"
 
 #: addressline/completionordereditor.cpp:78
@@ -59,28 +61,92 @@ msgstr "LDAP-Server %1"
 msgid "Edit Completion Order"
 msgstr "Reihenfolge für das Vervollständigen bearbeiten"
 
-#: addressline/recentaddresses.cpp:185
+#: addressline/recentaddresses.cpp:184
 msgid "Edit Recent Addresses"
 msgstr "Kürzlich gewählte Adressen bearbeiten "
 
-#: addressline/recentaddresses.cpp:210
+#: addressline/recentaddresses.cpp:209
 msgid "&Add"
 msgstr "&Hinzufügen"
 
-#: addressline/recentaddresses.cpp:214
+#: addressline/recentaddresses.cpp:213
 msgid "&Remove"
 msgstr "&Entfernen"
 
-#: addressline/recentaddresses.cpp:271
-#, kde-format
-msgid "Do you want to remove this email?"
-msgid_plural "Do you want to remove %1 emails?"
-msgstr[0] "Möchten Sie diese E-Mail entfernen?"
-msgstr[1] "Möchten Sie diese %1 E-Mails entfernen?"
+#: freebusymodel/freebusycalendar.cpp:111
+msgid "Free"
+msgstr ""
 
-#: addressline/recentaddresses.cpp:271
-msgid "Remove"
-msgstr "Entfernen"
+#: freebusymodel/freebusycalendar.cpp:114
+msgid "Busy"
+msgstr ""
+
+#: freebusymodel/freebusycalendar.cpp:117
+#, fuzzy
+#| msgid "Available Pages"
+msgid "Unavailable"
+msgstr "Verfügbare Seiten"
+
+#: freebusymodel/freebusycalendar.cpp:120
+msgid "Tentative"
+msgstr ""
+
+#: freebusymodel/freebusycalendar.cpp:123
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#: freebusymodel/freebusyitemmodel.cpp:223
+#, fuzzy
+#| msgid "Attendees"
+msgid "Attendee"
+msgstr "Teilnehmer"
+
+#: freebusymodel/freeperiodmodel.cpp:141
+#, kde-format
+msgctxt "@label Day of the week name, example: Monday,"
+msgid "%1,"
+msgstr ""
+
+#: freebusymodel/freeperiodmodel.cpp:157
+#, kde-format
+msgctxt ""
+"@label A time period duration. It is preceded/followed (based on the "
+"orientation) by the name of the week, see the message above. example: 12 "
+"June, 8:00am to 9:30am"
+msgid "%1 %2, %3 to %4"
+msgstr ""
+
+#: freebusymodel/freeperiodmodel.cpp:179
+#, kde-format
+msgctxt ""
+"@label A time period duration. KLocale is used to format the components. "
+"example: Monday, 12 June, 8:00am to 9:30am"
+msgid "%1, %2 %3, %4 to %5"
+msgstr ""
+
+#: freebusymodel/freeperiodmodel.cpp:193
+msgctxt "@info:tooltip"
+msgid "Free Period"
+msgstr ""
+
+#: freebusymodel/freeperiodmodel.cpp:195
+#, fuzzy
+#| msgid "Start time"
+msgctxt "@info:tooltip period start time"
+msgid "Start:"
+msgstr "Startzeit"
+
+#: freebusymodel/freeperiodmodel.cpp:198
+msgctxt "@info:tooltip period end time"
+msgid "End:"
+msgstr ""
+
+#: freebusymodel/freeperiodmodel.cpp:201
+#, fuzzy
+#| msgid "Duration"
+msgctxt "@info:tooltip period duration"
+msgid "Duration:"
+msgstr "Dauer"
 
 #: job/addcontactjob.cpp:65
 msgctxt "@info"
@@ -207,14 +273,14 @@ msgstr "R&echner bearbeiten ..."
 msgid "&Remove Host"
 msgstr "&Rechner entfernen"
 
-#: ldap/ldapclientsearchconfig.cpp:107
+#: ldap/ldapclientsearchconfig.cpp:109
 msgid ""
 "LDAP password is stored as clear text, do you want to store it in kwallet?"
 msgstr ""
 "Das LDAP-Passwort wird als Klartext gespeichert, möchten Sie es im "
 "Passwortspeicher speichern?"
 
-#: ldap/ldapclientsearchconfig.cpp:108
+#: ldap/ldapclientsearchconfig.cpp:110
 msgid "Store clear text password in KWallet"
 msgstr "Klartext-Passwort im Passwortspeicher speichern"
 
@@ -324,99 +390,95 @@ msgctxt "@title:column Column containing title of the person"
 msgid "Title"
 msgstr "Titel"
 
-#: ldap/ldapsearchdialog.cpp:523
+#: ldap/ldapsearchdialog.cpp:522
 msgid "Import Contacts from LDAP"
 msgstr "Kontakte von einem LDAP-Server importieren"
 
-#: ldap/ldapsearchdialog.cpp:535
+#: ldap/ldapsearchdialog.cpp:534
 msgid "Search for Addresses in Directory"
 msgstr "Nach Adressen im Verzeichnis suchen"
 
-#: ldap/ldapsearchdialog.cpp:542
+#: ldap/ldapsearchdialog.cpp:541
 msgid "Search for:"
 msgstr "Suche nach:"
 
-#: ldap/ldapsearchdialog.cpp:550
+#: ldap/ldapsearchdialog.cpp:549
 msgctxt "In LDAP attribute"
 msgid "in"
 msgstr "in"
 
-#: ldap/ldapsearchdialog.cpp:554
+#: ldap/ldapsearchdialog.cpp:553
 msgctxt "@item:inlistbox Name of the contact"
 msgid "Name"
 msgstr "Name"
 
-#: ldap/ldapsearchdialog.cpp:555
+#: ldap/ldapsearchdialog.cpp:554
 msgctxt "@item:inlistbox email address of the contact"
 msgid "Email"
 msgstr "E-Mail"
 
-#: ldap/ldapsearchdialog.cpp:556
+#: ldap/ldapsearchdialog.cpp:555
 msgctxt "@item:inlistbox"
 msgid "Home Number"
 msgstr "Telefonnummer (privat)"
 
-#: ldap/ldapsearchdialog.cpp:557
+#: ldap/ldapsearchdialog.cpp:556
 msgctxt "@item:inlistbox"
 msgid "Work Number"
 msgstr "Telefonnummer (dienstlich)"
 
-#: ldap/ldapsearchdialog.cpp:559
+#: ldap/ldapsearchdialog.cpp:558
 msgctxt "@action:button Start searching"
 msgid "&Search"
 msgstr "&Suchen"
 
-#: ldap/ldapsearchdialog.cpp:575
+#: ldap/ldapsearchdialog.cpp:574
 msgid "Recursive search"
 msgstr "Rekursive Suche"
 
-#: ldap/ldapsearchdialog.cpp:580
+#: ldap/ldapsearchdialog.cpp:579
 msgid "Contains"
 msgstr "Enthält"
 
-#: ldap/ldapsearchdialog.cpp:581
+#: ldap/ldapsearchdialog.cpp:580
 msgid "Starts With"
 msgstr "Beginnt mit"
 
-#: ldap/ldapsearchdialog.cpp:591
-msgid "Search in result"
-msgstr "Suche in Ergebnis"
-
-#: ldap/ldapsearchdialog.cpp:625
+#: ldap/ldapsearchdialog.cpp:610
 msgid "Searching..."
 msgstr "Suche läuft ..."
 
-#: ldap/ldapsearchdialog.cpp:629
+#: ldap/ldapsearchdialog.cpp:614
 msgid "Select All"
 msgstr "Alle auswählen"
 
-#: ldap/ldapsearchdialog.cpp:631
+#: ldap/ldapsearchdialog.cpp:616
 msgid "Unselect All"
 msgstr "Auswahl aufheben"
 
-#: ldap/ldapsearchdialog.cpp:638
+#: ldap/ldapsearchdialog.cpp:623
 msgid "Add Selected"
 msgstr "Ausgewählte hinzufügen"
 
-#: ldap/ldapsearchdialog.cpp:639
+#: ldap/ldapsearchdialog.cpp:624
 msgid "Configure LDAP Servers..."
 msgstr "LDAP-Server einrichten ..."
 
-#: ldap/ldapsearchdialog.cpp:678
+#: ldap/ldapsearchdialog.cpp:663
 msgid "Copy"
 msgstr "Kopieren"
 
-#: ldap/ldapsearchdialog.cpp:801
+#: ldap/ldapsearchdialog.cpp:786
 msgid "You must select an LDAP server before searching."
 msgstr "Vor der Suche müssen Sie einen LDAP-Server auswählen."
 
-#: ldap/ldapsearchdialog.cpp:900
+#: ldap/ldapsearchdialog.cpp:885
 #, kde-format
 msgctxt "arguments are host name, datetime"
 msgid "Imported from LDAP directory %1 on %2"
 msgstr "Importiert vom LDAP-Verzeichnis %1 auf %2"
 
-#: ldap/ldapsearchdialog.cpp:918
+#: ldap/ldapsearchdialog.cpp:903
 msgid "Configure the Address Book LDAP Settings"
 msgstr "Einstellungen zum LDAP-Adressbuch einrichten"
 
@@ -542,11 +604,11 @@ msgstr ""
 msgid "Choose..."
 msgstr "Auswählen ..."
 
-#: prefs/kprefsdialog.cpp:784
+#: prefs/kprefsdialog.cpp:789
 msgid "Preferences"
 msgstr "Einstellungen"
 
-#: prefs/kprefsdialog.cpp:892
+#: prefs/kprefsdialog.cpp:897
 msgid ""
 "You are about to set all preferences to default values. All custom "
 "modifications will be lost."
@@ -554,11 +616,11 @@ msgstr ""
 "Sie sind dabei, alle Einstellungen auf den Standardwert zurückzusetzen. Alle "
 "von Ihnen durchgeführten Änderungen gehen verloren."
 
-#: prefs/kprefsdialog.cpp:894
+#: prefs/kprefsdialog.cpp:899
 msgid "Setting Default Preferences"
 msgstr "Standardeinstellungen werden gesetzt"
 
-#: prefs/kprefsdialog.cpp:895
+#: prefs/kprefsdialog.cpp:900
 msgid "Reset to Defaults"
 msgstr "Auf Standardwerte zurücksetzen"
 
@@ -638,6 +700,17 @@ msgstr "Wählen Sie das Adressbuch, in dem der Kontakt gespeichert werden soll:"
 #: widgets/spellchecklineedit.cpp:211
 msgid "Spell Checking Language"
 msgstr "Sprache für Rechtschreibprüfung"
+
+#~ msgid "Do you want to remove this email?"
+#~ msgid_plural "Do you want to remove %1 emails?"
+#~ msgstr[0] "Möchten Sie diese E-Mail entfernen?"
+#~ msgstr[1] "Möchten Sie diese %1 E-Mails entfernen?"
+
+#~ msgid "Remove"
+#~ msgstr "Entfernen"
+
+#~ msgid "Search in result"
+#~ msgstr "Suche in Ergebnis"
 
 #~ msgid "Stop"
 #~ msgstr "Stopp"
@@ -1040,9 +1113,6 @@ msgstr "Sprache für Rechtschreibprüfung"
 #~ "nicht installiert. Sie können daher nur bestehende Designer-Dateien "
 #~ "importieren.</qt>"
 
-#~ msgid "Available Pages"
-#~ msgstr "Verfügbare Seiten"
-
 #~ msgid "Preview of Selected Page"
 #~ msgstr "Vorschau auf die ausgewählte Seite"
 
@@ -1276,12 +1346,6 @@ msgstr "Sprache für Rechtschreibprüfung"
 #~ msgid "No"
 #~ msgstr "Nein"
 
-#~ msgid "Attendees"
-#~ msgstr "Teilnehmer"
-
-#~ msgid "Start time"
-#~ msgstr "Startzeit"
-
 #~ msgid "Organizer"
 #~ msgstr "Organisator"
 
@@ -1293,9 +1357,6 @@ msgstr "Sprache für Rechtschreibprüfung"
 
 #~ msgid "Has duration"
 #~ msgstr "Dauer festgelegt"
-
-#~ msgid "Duration"
-#~ msgstr "Dauer"
 
 #~ msgid "Summary"
 #~ msgstr "Zusammenfassung"
@@ -1380,9 +1441,6 @@ msgstr "Sprache für Rechtschreibprüfung"
 
 #~ msgid "None"
 #~ msgstr "Keine"
-
-#~ msgid "Unknown"
-#~ msgstr "Unbekannt"
 
 #~ msgctxt "@item IMAP account"
 #~ msgid "IMAP"
