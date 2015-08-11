@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmessagecomposer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-28 17:17+0100\n"
+"POT-Creation-Date: 2015-08-11 14:29+0200\n"
 "PO-Revision-Date: 2015-01-28 18:24+0100\n"
 "Last-Translator: Sandro Knauß <mail@sandroknauss.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -81,7 +81,7 @@ msgid "Attach"
 msgstr "Anhängen"
 
 #: attachment/attachmentcontrollerbase.cpp:436
-#: composer/composerviewbase.cpp:1597
+#: composer/composerviewbase.cpp:1613
 msgid "&Attach File..."
 msgstr "&Datei anhängen ..."
 
@@ -90,12 +90,10 @@ msgid "Add Attachment..."
 msgstr "Anhang hinzufügen ..."
 
 #: attachment/attachmentcontrollerbase.cpp:443
-#| msgid "Attach Own vCard"
 msgid "Attach Own Vcard"
 msgstr "Eigene vCard anhängen"
 
 #: attachment/attachmentcontrollerbase.cpp:444
-#| msgid "Own vCard"
 msgid "Own Vcard"
 msgstr "Eigene vCard"
 
@@ -279,7 +277,6 @@ msgid "Edit Recent Addresses..."
 msgstr "Zuletzt verwendete Adressen bearbeiten ..."
 
 #: composer/composerlineedit.cpp:286
-#| msgid "Automatically resize images"
 msgid "Automatically expand groups"
 msgstr "Gruppen automatisch auflösen"
 
@@ -291,31 +288,31 @@ msgstr "Gruppen auflösen..."
 msgid "Recent Addresses"
 msgstr "Zuletzt verwendete Adressen"
 
-#: composer/composerviewbase.cpp:267
+#: composer/composerviewbase.cpp:283
 msgid "&Keep markup, do not sign/encrypt"
 msgstr "Formatierungen &beibehalten, nicht signieren/verschlüsseln"
 
-#: composer/composerviewbase.cpp:268
+#: composer/composerviewbase.cpp:284
 msgid "&Keep markup, do not encrypt"
 msgstr "Formatierungen &beibehalten, nicht verschlüsseln"
 
-#: composer/composerviewbase.cpp:269
+#: composer/composerviewbase.cpp:285
 msgid "&Keep markup, do not sign"
 msgstr "Formatierungen &beibehalten, nicht signieren"
 
-#: composer/composerviewbase.cpp:271
+#: composer/composerviewbase.cpp:287
 msgid "Sign/Encrypt (delete markup)"
 msgstr "Signieren/Verschlüsseln (Formatierungen entfernen)"
 
-#: composer/composerviewbase.cpp:272
+#: composer/composerviewbase.cpp:288
 msgid "Encrypt (delete markup)"
 msgstr "Verschlüsseln (Formatierungen entfernen)"
 
-#: composer/composerviewbase.cpp:273
+#: composer/composerviewbase.cpp:289
 msgid "Sign (delete markup)"
 msgstr "Signieren (Formatierungen entfernen)"
 
-#: composer/composerviewbase.cpp:275
+#: composer/composerviewbase.cpp:291
 msgid ""
 "<qt><p>Inline signing/encrypting of HTML messages is not possible;</p><p>do "
 "you want to delete your markup?</p></qt>"
@@ -323,34 +320,34 @@ msgstr ""
 "<qt><p>Die Inline-Signierung/Verschlüsselung von HTML-Nachrichten ist nicht "
 "möglich.</p><p>Möchten Sie die Formatierungen entfernen?</p></qt>"
 
-#: composer/composerviewbase.cpp:277
+#: composer/composerviewbase.cpp:293
 msgid "Sign/Encrypt Message?"
 msgstr "Nachricht signieren/verschlüsseln?"
 
-#: composer/composerviewbase.cpp:410
+#: composer/composerviewbase.cpp:426
 msgid "It was not possible to create a message composer."
 msgstr "Es war nicht möglich einen Nachrichteneditor zu starten"
 
-#: composer/composerviewbase.cpp:417
+#: composer/composerviewbase.cpp:433
 msgid "Do you want to resize images?"
 msgstr "Möchten Sie die Größe der Bilder ändern?"
 
-#: composer/composerviewbase.cpp:418
+#: composer/composerviewbase.cpp:434
 msgid "Auto Resize Images"
 msgstr "Bildgröße automatisch ändern"
 
-#: composer/composerviewbase.cpp:589 composer/composerviewbase.cpp:597
-#: composer/composerviewbase.cpp:613
+#: composer/composerviewbase.cpp:605 composer/composerviewbase.cpp:613
+#: composer/composerviewbase.cpp:629
 msgid "Failed to resolve keys. Please report a bug."
 msgstr ""
 "Schlüssel können nicht aufgelöst werden. Bitte berichten Sie diesen Fehler "
 "an die Programmentwickler."
 
-#: composer/composerviewbase.cpp:775 composer/composerviewbase.cpp:1007
+#: composer/composerviewbase.cpp:791 composer/composerviewbase.cpp:1023
 msgid "Job cancelled by the user"
 msgstr "Auftrag vom Benutzer abgebrochen"
 
-#: composer/composerviewbase.cpp:780
+#: composer/composerviewbase.cpp:796
 #, kde-format
 msgid ""
 "Could not compose message: %1 \n"
@@ -359,35 +356,35 @@ msgstr ""
 "Fehler beim Erstellen der Nachricht: %1 \n"
 "Bitte berichten Sie diesen Fehler an die Programmentwickler."
 
-#: composer/composerviewbase.cpp:782
+#: composer/composerviewbase.cpp:798
 #, kde-format
 msgid "Could not compose message: %1"
 msgstr "Fehler beim Erstellen der Nachricht: %1"
 
-#: composer/composerviewbase.cpp:853
+#: composer/composerviewbase.cpp:869
 #, kde-format
 msgid "There were problems trying to queue the message for sending: %1"
 msgstr ""
 "Es gab Probleme beim Einreihen der Nachricht in die Sende-Warteschlange: %1"
 
-#: composer/composerviewbase.cpp:1010
+#: composer/composerviewbase.cpp:1026
 #, kde-format
 msgid "Could not autosave message: %1"
 msgstr "Fehler beim automatischen Speichern der Nachricht: %1"
 
-#: composer/composerviewbase.cpp:1029
+#: composer/composerviewbase.cpp:1045
 msgid "Could not write all data to file."
 msgstr "Nicht alle Daten sind in die Datei geschrieben worden."
 
-#: composer/composerviewbase.cpp:1033
+#: composer/composerviewbase.cpp:1049
 msgid "Could not finalize the file."
 msgstr "Die Datei kann nicht abgeschlossen werden."
 
-#: composer/composerviewbase.cpp:1038
+#: composer/composerviewbase.cpp:1054
 msgid "Could not open file."
 msgstr "Die Datei kann nicht geöffnet werden."
 
-#: composer/composerviewbase.cpp:1044
+#: composer/composerviewbase.cpp:1060
 #, kde-format
 msgid ""
 "Autosaving the message as %1 failed.\n"
@@ -398,16 +395,16 @@ msgstr ""
 "%2\n"
 "Grund: %3"
 
-#: composer/composerviewbase.cpp:1050
+#: composer/composerviewbase.cpp:1066
 msgid "Autosaving Message Failed"
 msgstr "Automatisches Speichern der Nachricht schlug fehl"
 
-#: composer/composerviewbase.cpp:1135
+#: composer/composerviewbase.cpp:1151
 #, kde-format
 msgid "Failed to save the message: %1"
 msgstr "Speichern der Nachricht schlug fehl: %1"
 
-#: composer/composerviewbase.cpp:1593
+#: composer/composerviewbase.cpp:1609
 msgid ""
 "The message you have composed seems to refer to an attached file but you "
 "have not attached anything.\n"
@@ -417,15 +414,15 @@ msgstr ""
 "aber nichts angehängt.\n"
 "Möchten Sie eine Datei an Ihre Nachricht anhängen?"
 
-#: composer/composerviewbase.cpp:1596
+#: composer/composerviewbase.cpp:1612
 msgid "File Attachment Reminder"
 msgstr "Erinnerungsfunktion für Dateianhänge"
 
-#: composer/composerviewbase.cpp:1598
+#: composer/composerviewbase.cpp:1614
 msgid "&Send as Is"
 msgstr "Ohne Änderung &senden"
 
-#: composer/composerviewbase.cpp:1651
+#: composer/composerviewbase.cpp:1667
 msgid ""
 "Examination of the recipient's signing preferences yielded that you be asked "
 "whether or not to sign this message.\n"
@@ -435,20 +432,20 @@ msgstr ""
 "gefragt werden möchten, ob diese Nachricht signiert werden soll.\n"
 "Möchten Sie diese Nachricht signieren?"
 
-#: composer/composerviewbase.cpp:1656 composer/composerviewbase.cpp:1681
+#: composer/composerviewbase.cpp:1672 composer/composerviewbase.cpp:1697
 msgid "Sign Message?"
 msgstr "Nachricht signieren?"
 
-#: composer/composerviewbase.cpp:1657 composer/composerviewbase.cpp:1682
+#: composer/composerviewbase.cpp:1673 composer/composerviewbase.cpp:1698
 msgctxt "to sign"
 msgid "&Sign"
 msgstr "&Signieren"
 
-#: composer/composerviewbase.cpp:1658 composer/composerviewbase.cpp:1683
+#: composer/composerviewbase.cpp:1674 composer/composerviewbase.cpp:1699
 msgid "Do &Not Sign"
 msgstr "&Nicht signieren"
 
-#: composer/composerviewbase.cpp:1677
+#: composer/composerviewbase.cpp:1693
 msgid ""
 "There are conflicting signing preferences for these recipients.\n"
 "Sign this message?"
@@ -456,7 +453,7 @@ msgstr ""
 "Es gibt Konflikte in den Signierungseinstellungen für diese Empfänger.\n"
 "Möchten Sie diese Nachricht signieren?"
 
-#: composer/composerviewbase.cpp:1701
+#: composer/composerviewbase.cpp:1717
 msgid ""
 "You have requested to sign this message, but no valid signing keys have been "
 "configured for this identity."
@@ -464,15 +461,15 @@ msgstr ""
 "Sie haben festgelegt, dass diese Nachricht signiert werden soll, aber es "
 "wurde kein gültiger Signierungsschlüssel für diese Identität eingerichtet."
 
-#: composer/composerviewbase.cpp:1705
+#: composer/composerviewbase.cpp:1721
 msgid "Send Unsigned?"
 msgstr "Unsigniert senden?"
 
-#: composer/composerviewbase.cpp:1706
+#: composer/composerviewbase.cpp:1722
 msgid "Send &Unsigned"
 msgstr "&Unsigniert senden"
 
-#: composer/composerviewbase.cpp:1723
+#: composer/composerviewbase.cpp:1739
 msgid ""
 "Some parts of this message will not be signed.\n"
 "Sending only partially signed messages might violate site policy.\n"
@@ -483,7 +480,7 @@ msgstr ""
 "Regelungen dieser Seite missachten.\n"
 "Möchten Sie statt dessen alle Teile signieren?"
 
-#: composer/composerviewbase.cpp:1726
+#: composer/composerviewbase.cpp:1742
 msgid ""
 "This message will not be signed.\n"
 "Sending unsigned message might violate site policy.\n"
@@ -494,23 +491,23 @@ msgstr ""
 "dieser Seite missachten.\n"
 "Möchten Sie statt dessen die Nachricht signieren?"
 
-#: composer/composerviewbase.cpp:1730
+#: composer/composerviewbase.cpp:1746
 msgid "&Sign All Parts"
 msgstr "Alle Teile &signieren"
 
-#: composer/composerviewbase.cpp:1730
+#: composer/composerviewbase.cpp:1746
 msgid "&Sign"
 msgstr "&Signieren"
 
-#: composer/composerviewbase.cpp:1732
+#: composer/composerviewbase.cpp:1748
 msgid "Unsigned-Message Warning"
 msgstr "Warnung: Unsignierte Nachricht"
 
-#: composer/composerviewbase.cpp:1734
+#: composer/composerviewbase.cpp:1750
 msgid "Send &As Is"
 msgstr "Ohne Änderung &senden"
 
-#: composer/composerviewbase.cpp:1774
+#: composer/composerviewbase.cpp:1790
 msgid ""
 "Valid trusted encryption keys were found for all recipients.\n"
 "Encrypt this message?"
@@ -519,7 +516,7 @@ msgstr ""
 "Verschlüsselungsschlüssel gefunden.\n"
 "Möchten Sie diese Nachricht verschlüsseln?"
 
-#: composer/composerviewbase.cpp:1776
+#: composer/composerviewbase.cpp:1792
 msgid ""
 "Examination of the recipient's encryption preferences yielded that you be "
 "asked whether or not to encrypt this message.\n"
@@ -529,29 +526,29 @@ msgstr ""
 "Sie gefragt werden möchten, ob diese Nachricht verschlüsselt  werden soll.\n"
 "Möchten Sie diese Nachricht verschlüsseln?"
 
-#: composer/composerviewbase.cpp:1781 composer/composerviewbase.cpp:1810
+#: composer/composerviewbase.cpp:1797 composer/composerviewbase.cpp:1826
 msgid "Encrypt Message?"
 msgstr "Nachricht verschlüsseln?"
 
-#: composer/composerviewbase.cpp:1783
+#: composer/composerviewbase.cpp:1799
 msgid "Sign && &Encrypt"
 msgstr "Signieren && V&erschlüsseln"
 
-#: composer/composerviewbase.cpp:1784 composer/composerviewbase.cpp:1811
-#: composer/composerviewbase.cpp:1862 composer/keyresolver.cpp:1516
+#: composer/composerviewbase.cpp:1800 composer/composerviewbase.cpp:1827
+#: composer/composerviewbase.cpp:1878 composer/keyresolver.cpp:1516
 #: composer/keyresolver.cpp:1556
 msgid "&Encrypt"
 msgstr "V&erschlüsseln"
 
-#: composer/composerviewbase.cpp:1786 composer/composerviewbase.cpp:1867
+#: composer/composerviewbase.cpp:1802 composer/composerviewbase.cpp:1883
 msgid "&Sign Only"
 msgstr "Nur &signieren"
 
-#: composer/composerviewbase.cpp:1787 composer/composerviewbase.cpp:1868
+#: composer/composerviewbase.cpp:1803 composer/composerviewbase.cpp:1884
 msgid "&Send As-Is"
 msgstr "Ohne Änderung &senden"
 
-#: composer/composerviewbase.cpp:1806
+#: composer/composerviewbase.cpp:1822
 msgid ""
 "There are conflicting encryption preferences for these recipients.\n"
 "Encrypt this message?"
@@ -559,11 +556,11 @@ msgstr ""
 "Es gibt Konflikte in den Verschlüsselungseinstellungen für diese Empfänger.\n"
 "Möchten Sie diese Nachricht verschlüsseln?"
 
-#: composer/composerviewbase.cpp:1812
+#: composer/composerviewbase.cpp:1828
 msgid "Do &Not Encrypt"
 msgstr "&Nicht verschlüsseln"
 
-#: composer/composerviewbase.cpp:1830
+#: composer/composerviewbase.cpp:1846
 msgid ""
 "You have requested to encrypt this message, and to encrypt a copy to "
 "yourself, but no valid trusted encryption keys have been configured for this "
@@ -574,15 +571,15 @@ msgstr ""
 "gültiger vertrauenswürdiger Verschlüsselungsschlüssel für diese Identität "
 "eingerichtet."
 
-#: composer/composerviewbase.cpp:1835
+#: composer/composerviewbase.cpp:1851
 msgid "Send Unencrypted?"
 msgstr "Unverschlüsselt senden?"
 
-#: composer/composerviewbase.cpp:1836 composer/keyresolver.cpp:1540
+#: composer/composerviewbase.cpp:1852 composer/keyresolver.cpp:1540
 msgid "Send &Unencrypted"
 msgstr "&Unverschlüsselt senden"
 
-#: composer/composerviewbase.cpp:1853
+#: composer/composerviewbase.cpp:1869
 msgid ""
 "Some parts of this message will not be encrypted.\n"
 "Sending only partially encrypted messages might violate site policy and/or "
@@ -595,7 +592,7 @@ msgstr ""
 "verbreiten\n"
 "Möchten Sie statt dessen alle Teile verschlüsseln?"
 
-#: composer/composerviewbase.cpp:1857
+#: composer/composerviewbase.cpp:1873
 msgid ""
 "This message will not be encrypted.\n"
 "Sending unencrypted messages might violate site policy and/or leak sensitive "
@@ -608,11 +605,11 @@ msgstr ""
 "verbreiten\n"
 "Möchten Sie statt dessen die Nachrichten verschlüsseln?"
 
-#: composer/composerviewbase.cpp:1862
+#: composer/composerviewbase.cpp:1878
 msgid "&Encrypt All Parts"
 msgstr "Alle Teile v&erschlüsseln"
 
-#: composer/composerviewbase.cpp:1864
+#: composer/composerviewbase.cpp:1880
 msgid "Unencrypted Message Warning"
 msgstr "Warnung: Nicht verschlüsselte Nachricht"
 

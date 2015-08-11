@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libksieve\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-28 17:17+0100\n"
+"POT-Creation-Date: 2015-08-11 14:29+0200\n"
 "PO-Revision-Date: 2015-01-28 18:30+0100\n"
 "Last-Translator: Sandro Knauß <mail@sandroknauss.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -332,6 +332,7 @@ msgstr ""
 "angegebenen Vorspannfelds."
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactiondiscard.cpp:24
+#: ksieveui/vacation/vacationutils.cpp:50
 msgid "Discard"
 msgstr "Verwerfen"
 
@@ -435,6 +436,7 @@ msgstr ""
 "den sonstigen Aktionen für die Nachricht."
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionkeep.cpp:33
+#: ksieveui/vacation/vacationutils.cpp:48
 msgid "Keep"
 msgstr "Behalten"
 
@@ -767,7 +769,6 @@ msgid "Quote wildcard"
 msgstr "Platzhalter maskieren"
 
 #: ksieveui/autocreatescripts/sieveactions/widgets/selectvariablemodifiercombobox.cpp:44
-#| msgid "Length"
 msgid "length"
 msgstr "Länge"
 
@@ -1499,8 +1500,8 @@ msgid "Edit description..."
 msgstr "Beschreibung bearbeiten ..."
 
 #: ksieveui/autocreatescripts/sievescriptlistbox.cpp:206
-#: ksieveui/widgets/managesievewidget.cpp:178
-#: ksieveui/widgets/managesievewidget.cpp:192
+#: ksieveui/widgets/managesievewidget.cpp:184
+#: ksieveui/widgets/managesievewidget.cpp:198
 msgid "New Script"
 msgstr "Neues Skript"
 
@@ -1783,24 +1784,24 @@ msgstr "Sieve-Server unterstützt:"
 msgid "Help about: '%1'"
 msgstr "Hilfe über: „%1“"
 
-#: ksieveui/managescriptsjob/generateglobalscriptjob.cpp:49
-#: ksieveui/managescriptsjob/parseuserscriptjob.cpp:48
+#: ksieveui/managescriptsjob/generateglobalscriptjob.cpp:60
+#: ksieveui/managescriptsjob/parseuserscriptjob.cpp:47
 msgid "Path is not specified."
 msgstr "Der Pfad ist nicht angegeben."
 
-#: ksieveui/managescriptsjob/generateglobalscriptjob.cpp:90
+#: ksieveui/managescriptsjob/generateglobalscriptjob.cpp:101
 msgid "Error when we wrote \"MASTER\" script on server."
 msgstr "Fehler beim Schreiben des Skripts „MASTER“ auf dem Server."
 
-#: ksieveui/managescriptsjob/generateglobalscriptjob.cpp:124
+#: ksieveui/managescriptsjob/generateglobalscriptjob.cpp:135
 msgid "Error when we wrote \"User\" script on server."
 msgstr "Fehler beim Schreiben des Skripts „User“ auf dem Server."
 
-#: ksieveui/managescriptsjob/parseuserscriptjob.cpp:62
+#: ksieveui/managescriptsjob/parseuserscriptjob.cpp:63
 msgid "Script is empty."
 msgstr "Dieses Skript ist leer."
 
-#: ksieveui/managescriptsjob/parseuserscriptjob.cpp:70
+#: ksieveui/managescriptsjob/parseuserscriptjob.cpp:71
 msgid "Script parsing error"
 msgstr "Skript-Verarbeitungsfehler"
 
@@ -1936,12 +1937,12 @@ msgid "You can drag and drop element on editor to import template"
 msgstr ""
 "Sie können Elemente im Editor ziehen und ablegen, um Vorlagen zu importieren"
 
-#: ksieveui/vacation/multiimapvacationdialog.cpp:40
+#: ksieveui/vacation/multiimapvacationdialog.cpp:42
 #: ksieveui/vacation/vacation.cpp:108
 msgid "Configure \"Out of Office\" Replies"
 msgstr "Abwesenheitsbenachrichtigungen einrichten"
 
-#: ksieveui/vacation/multiimapvacationdialog.cpp:51
+#: ksieveui/vacation/multiimapvacationdialog.cpp:53
 msgid ""
 "KMail's Out of Office Reply functionality relies on server-side filtering. "
 "You have not yet configured an IMAP server for this. You can do this on the "
@@ -1951,30 +1952,6 @@ msgstr ""
 "Sie haben hierzu bisher noch keinen IMAP-Server eingerichtet. Die "
 "entsprechenden Einstellungen finden Sie auf der Karteikarte „Filtern“ bei "
 "der Einrichtung des IMAP-Postfachs."
-
-#: ksieveui/vacation/multiimapvacationmanager.cpp:72
-#: ksieveui/vacation/vacation.cpp:151
-msgid ""
-"There is still an active out-of-office reply configured.\n"
-"Do you want to edit it?"
-msgstr ""
-"Es ist noch eine Abwesenheitsbenachrichtigung aktiv.\n"
-"Möchten Sie diese bearbeiten?"
-
-#: ksieveui/vacation/multiimapvacationmanager.cpp:73
-#: ksieveui/vacation/vacation.cpp:152
-msgid "Out-of-office reply still active"
-msgstr "Abwesenheitsbenachrichtigung noch aktiv"
-
-#: ksieveui/vacation/multiimapvacationmanager.cpp:74
-#: ksieveui/vacation/vacation.cpp:153
-msgid "Edit"
-msgstr "Bearbeiten"
-
-#: ksieveui/vacation/multiimapvacationmanager.cpp:75
-#: ksieveui/vacation/vacation.cpp:154
-msgid "Ignore"
-msgstr "Ignorieren"
 
 #: ksieveui/vacation/vacation.cpp:96
 msgid ""
@@ -1988,7 +1965,7 @@ msgstr ""
 "keine Abwesenheitsnachrichten installieren. Bitte benachrichtigen Sie Ihren "
 "Systemverwalter."
 
-#: ksieveui/vacation/vacation.cpp:121
+#: ksieveui/vacation/vacation.cpp:117
 msgid ""
 "Someone (probably you) changed the vacation script on the server.\n"
 "KMail is no longer able to determine the parameters for the autoreplies.\n"
@@ -1998,7 +1975,27 @@ msgstr ""
 "auf dem Server geändert. KMail kann die Parameter für automatische Antworten "
 "nicht mehr abfragen. Es werden Standardwerte verwendet."
 
-#: ksieveui/vacation/vacation.cpp:209
+#: ksieveui/vacation/vacation.cpp:150 ksieveui/vacation/vacationmanager.cpp:57
+msgid ""
+"There is still an active out-of-office reply configured.\n"
+"Do you want to edit it?"
+msgstr ""
+"Es ist noch eine Abwesenheitsbenachrichtigung aktiv.\n"
+"Möchten Sie diese bearbeiten?"
+
+#: ksieveui/vacation/vacation.cpp:151 ksieveui/vacation/vacationmanager.cpp:58
+msgid "Out-of-office reply still active"
+msgstr "Abwesenheitsbenachrichtigung noch aktiv"
+
+#: ksieveui/vacation/vacation.cpp:152 ksieveui/vacation/vacationmanager.cpp:59
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: ksieveui/vacation/vacation.cpp:153 ksieveui/vacation/vacationmanager.cpp:60
+msgid "Ignore"
+msgstr "Ignorieren"
+
+#: ksieveui/vacation/vacation.cpp:216
 msgid ""
 "Sieve script installed successfully on the server.\n"
 "Out of Office reply is now active."
@@ -2006,7 +2003,7 @@ msgstr ""
 "Das Sieve-Skript wurde erfolgreich auf dem Server installiert.\n"
 "Abwesenheitsbenachrichtigungen sind nun aktiv."
 
-#: ksieveui/vacation/vacation.cpp:211
+#: ksieveui/vacation/vacation.cpp:218
 msgid ""
 "Sieve script installed successfully on the server.\n"
 "Out of Office reply has been deactivated."
@@ -2014,7 +2011,7 @@ msgstr ""
 "Das Sieve-Skript wurde erfolgreich auf dem Server installiert.\n"
 "Abwesenheitsbenachrichtigungen wurden deaktiviert."
 
-#: ksieveui/vacation/vacationcreatescriptjob.cpp:92
+#: ksieveui/vacation/vacationcreatescriptjob.cpp:160
 #, kde-format
 msgid ""
 "Sieve script installed successfully on the server '%1'.\n"
@@ -2023,7 +2020,7 @@ msgstr ""
 "Das Sieve-Skript wurde erfolgreich auf dem Server „%1“ installiert.\n"
 "Abwesenheitsbenachrichtigungen sind nun aktiv."
 
-#: ksieveui/vacation/vacationcreatescriptjob.cpp:94
+#: ksieveui/vacation/vacationcreatescriptjob.cpp:162
 #, kde-format
 msgid ""
 "Sieve script installed successfully on the server '%1'.\n"
@@ -2032,51 +2029,55 @@ msgstr ""
 "Das Sieve-Skript wurde erfolgreich auf dem Server %1“ installiert.\n"
 "Abwesenheitsbenachrichtigungen wurden deaktiviert."
 
-#: ksieveui/vacation/vacationeditwidget.cpp:58
+#: ksieveui/vacation/vacationeditwidget.cpp:60
 msgid "Configure vacation notifications to be sent:"
 msgstr "Einrichtung von Abwesenheitsbenachrichtigungen:"
 
-#: ksieveui/vacation/vacationeditwidget.cpp:64
+#: ksieveui/vacation/vacationeditwidget.cpp:66
 msgid "&Activate vacation notifications"
 msgstr "Abwesenheitsbenachrichtigungen a&ktivieren"
 
-#: ksieveui/vacation/vacationeditwidget.cpp:80
+#: ksieveui/vacation/vacationeditwidget.cpp:82
 msgid "&Subject of the vacation mail:"
 msgstr "&Betreff der Urlaubsmail:"
 
-#: ksieveui/vacation/vacationeditwidget.cpp:91
+#: ksieveui/vacation/vacationeditwidget.cpp:109
 msgid "&Start:"
 msgstr "&Startzeitpunkt:"
 
-#: ksieveui/vacation/vacationeditwidget.cpp:102
+#: ksieveui/vacation/vacationeditwidget.cpp:135
 msgid "&End:"
 msgstr "&Endzeitpunkt:"
 
-#: ksieveui/vacation/vacationeditwidget.cpp:112
-#: ksieveui/vacation/vacationeditwidget.cpp:222
+#: ksieveui/vacation/vacationeditwidget.cpp:145
+#: ksieveui/vacation/vacationeditwidget.cpp:279
 msgid " day"
 msgid_plural " days"
 msgstr[0] " Tag"
 msgstr[1] " Tage"
 
-#: ksieveui/vacation/vacationeditwidget.cpp:114
+#: ksieveui/vacation/vacationeditwidget.cpp:147
 msgid "&Resend notification only after:"
 msgstr "E&rneute Benachrichtigung erst senden nach:"
 
-#: ksieveui/vacation/vacationeditwidget.cpp:124
+#: ksieveui/vacation/vacationeditwidget.cpp:157
 msgid "&Send responses for these addresses:"
 msgstr "Für diese Adressen Antworten &senden:"
 
-#: ksieveui/vacation/vacationeditwidget.cpp:131
+#: ksieveui/vacation/vacationeditwidget.cpp:181
+msgid "&Action for incomming mails:"
+msgstr ""
+
+#: ksieveui/vacation/vacationeditwidget.cpp:188
 msgid "Do not send vacation replies to spam messages"
 msgstr ""
 "Keine Abwesenheitsbenachrichtigungen als Antwort auf Spam-Nachrichten senden"
 
-#: ksieveui/vacation/vacationeditwidget.cpp:138
+#: ksieveui/vacation/vacationeditwidget.cpp:195
 msgid "Only react to mail coming from domain"
 msgstr "Nur auf E-Mails aus dieser Absender-Domain reagieren"
 
-#: ksieveui/vacation/vacationpagewidget.cpp:64
+#: ksieveui/vacation/vacationpagewidget.cpp:65
 msgid ""
 "Your server did not list \"vacation\" in its list of supported Sieve "
 "extensions;without it, KMail cannot install out-of-office replies for you."
@@ -2087,13 +2088,28 @@ msgstr ""
 "keine Abwesenheitsnachrichten installieren. Bitte benachrichtigen Sie Ihren "
 "Systemverwalter."
 
-#: ksieveui/vacation/vacationutils.cpp:46
+#: ksieveui/vacation/vacationutils.cpp:52
+#, fuzzy
+#| msgid "Redirect"
+msgid "Redirect to"
+msgstr "Umleiten"
+
+#: ksieveui/vacation/vacationutils.cpp:54
+msgid "Copy to"
+msgstr ""
+
+#: ksieveui/vacation/vacationutils.cpp:57
+#, fuzzy
+#| msgid "Unknown error"
+msgid "Unkown action"
+msgstr "Unbekannter Fehler"
+
+#: ksieveui/vacation/vacationutils.cpp:68
 #, kde-format
-#| msgid "Out-of-office reply still active"
 msgid "Out of office till %1"
 msgstr "Abwesenheitsbenachrichtigung noch aktiv bis %1"
 
-#: ksieveui/vacation/vacationutils.cpp:50
+#: ksieveui/vacation/vacationutils.cpp:72
 #, kde-format
 msgid ""
 "I am out of office till %1.\n"
@@ -2130,7 +2146,6 @@ msgstr ""
 
 #: ksieveui/widgets/managesievetreeview.cpp:27
 #: ksieveui/widgets/managesievetreeview.cpp:42
-#| msgid "No IMAP server configured..."
 msgid "No imap server configured..."
 msgstr "Kein IMAP-Server eingerichtet ..."
 
@@ -2142,53 +2157,53 @@ msgstr "Verfügbare Skripte"
 msgid "Network down."
 msgstr "Das Netzwerk ist abgeschaltet."
 
-#: ksieveui/widgets/managesievewidget.cpp:138
+#: ksieveui/widgets/managesievewidget.cpp:144
 msgid "Edit Script..."
 msgstr "Skript bearbeiten ..."
 
-#: ksieveui/widgets/managesievewidget.cpp:139
+#: ksieveui/widgets/managesievewidget.cpp:145
 msgid "Delete Script"
 msgstr "Skript löschen"
 
-#: ksieveui/widgets/managesievewidget.cpp:142
+#: ksieveui/widgets/managesievewidget.cpp:148
 msgid "Deactivate Script"
 msgstr "Skript deaktivieren"
 
-#: ksieveui/widgets/managesievewidget.cpp:147
+#: ksieveui/widgets/managesievewidget.cpp:153
 msgid "New Script..."
 msgstr "Neues Skript ..."
 
-#: ksieveui/widgets/managesievewidget.cpp:171
+#: ksieveui/widgets/managesievewidget.cpp:177
 msgid "New Sieve Script"
 msgstr "Neues Sieve-Skript"
 
-#: ksieveui/widgets/managesievewidget.cpp:172
+#: ksieveui/widgets/managesievewidget.cpp:178
 msgid "Please enter a name for the new Sieve script:"
 msgstr "Bitte geben Sie einen Namen für das neue Sieve-Skript ein:"
 
-#: ksieveui/widgets/managesievewidget.cpp:173
+#: ksieveui/widgets/managesievewidget.cpp:179
 msgid "unnamed"
 msgstr "Unbenannt"
 
-#: ksieveui/widgets/managesievewidget.cpp:178
+#: ksieveui/widgets/managesievewidget.cpp:184
 msgid "You cannot use protected name."
 msgstr "Der geschützte Name kann nicht verwendet werden."
 
-#: ksieveui/widgets/managesievewidget.cpp:191
+#: ksieveui/widgets/managesievewidget.cpp:197
 #, kde-format
 msgid "Script name already used \"%1\"."
 msgstr "Name des Skripts wird bereits verwendet: „%1“"
 
-#: ksieveui/widgets/managesievewidget.cpp:303
+#: ksieveui/widgets/managesievewidget.cpp:325
 #, kde-format
 msgid "Really delete script \"%1\" from the server?"
 msgstr "Soll das Skript „%1“ wirklich vom Server gelöscht werden?"
 
-#: ksieveui/widgets/managesievewidget.cpp:304
+#: ksieveui/widgets/managesievewidget.cpp:326
 msgid "Delete Sieve Script Confirmation"
 msgstr "Bestätigung für das Löschen des Sieve-Skripts"
 
-#: ksieveui/widgets/managesievewidget.cpp:357
+#: ksieveui/widgets/managesievewidget.cpp:367
 msgid "Failed to fetch the list of scripts"
 msgstr "Die Liste der Skripte kann nicht abgeholt werden"
 
