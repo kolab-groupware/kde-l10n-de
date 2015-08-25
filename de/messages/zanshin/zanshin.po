@@ -4,9 +4,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-08-11 14:30+0200\n"
-"PO-Revision-Date: 2015-08-21 11:27+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-25 19:01+0200\n"
+"PO-Revision-Date: 2015-08-25 19:05+0200\n"
+"Last-Translator: Sandro Knauß <mail@sandroknauss.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +15,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.5\n"
-"Last-Translator: Sandro Knauß <mail@sandroknauss.de>\n"
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -456,8 +456,8 @@ msgid ""
 "own account on the server will tell you which one it is."
 msgstr ""
 "Der User Identifier ist der Login für den IMAP Server. Es kann einerseits "
-"ein normaler Benutzernamen sein oder eine vollständige Emailadresse; "
-"Ihr eigener Loginname verät Ihnen was Sie benutzen müssen."
+"ein normaler Benutzernamen sein oder eine vollständige Emailadresse; Ihr "
+"eigener Loginname verät Ihnen was Sie benutzen müssen."
 
 #: 3rdparty/kdepim/pimcommon/acl/aclentrydialog.cpp:104
 msgctxt "select an email address"
@@ -503,6 +503,7 @@ msgstr ""
 
 #: 3rdparty/kdepim/pimcommon/acl/aclmanager.cpp:275
 #: attic/src/gui/sidebar/sidebar.cpp:103
+#: src/widgets/availablepagesview.cpp:112
 msgid "Remove"
 msgstr "Löschen"
 
@@ -574,7 +575,8 @@ msgstr "Bitte wälen Sie die Collections aus, die Sie anzeigen wollen."
 msgid "Settings..."
 msgstr "Einstellungen..."
 
-#: attic/src/app/configdialog.cpp:37
+#: attic/src/app/configdialog.cpp:37 src/app/main.cpp:83
+#: src/app/notesmain.cpp:78 src/app/tasksmain.cpp:78
 msgid "Sources"
 msgstr "Quellen"
 
@@ -611,8 +613,8 @@ msgid ""
 "Please select or create a resource which will be used by the application to "
 "store and query its TODOs."
 msgstr ""
-"bitte wählen Sie die Rescource aus, die zum Speichern und Laden "
-"Ihrer TODOs benutzt werden soll."
+"bitte wählen Sie die Rescource aus, die zum Speichern und Laden Ihrer TODOs "
+"benutzt werden soll."
 
 #: attic/src/app/resourceconfig.cpp:109
 #, kde-format
@@ -648,15 +650,18 @@ msgstr "Datum"
 #. text = i18n("Do you really want to delete the projects '%1', with all its actions?", summary);
 #. } else {
 #: attic/src/core/pimitemservices.cpp:554
+#: src/widgets/availablepagesview.cpp:260
 msgid "Delete Project"
 msgstr "Project Löschen"
 
 #: attic/src/core/pimitemservices.cpp:555
-#, kde-format
+#: src/widgets/availablepagesview.cpp:261
+#, qt-format, kde-format
 msgid "Do you really want to delete the project '%1', with all its actions?"
 msgstr "Wollen Sie wirklich das Projekt '%1' mit allen Einträgen löschen?"
 
 #: attic/src/core/projectstrategy.cpp:58
+#: src/presentation/availablepagesmodel.cpp:162
 msgid "Inbox"
 msgstr "Posteingang"
 
@@ -665,6 +670,7 @@ msgid "No Context"
 msgstr "Kein Kontext"
 
 #: attic/src/core/structurecachestrategy.cpp:71
+#: src/presentation/availablepagesmodel.cpp:166
 msgid "Contexts"
 msgstr "Kontexte"
 
@@ -717,7 +723,8 @@ msgstr "&Toolbar Verstecken"
 msgid "Title..."
 msgstr "Titel..."
 
-#: attic/src/gui/itemeditor/itemeditor.cpp:95
+#: attic/src/gui/itemeditor/itemeditor.cpp:95 src/akonadi/editorview.cpp:190
+#: src/widgets/editorview.cpp:204
 msgid "Fullscreen &Editor"
 msgstr "Vollbild &Editor"
 
@@ -755,11 +762,13 @@ msgstr "Aktion aus Kontext rauslösen"
 
 #: attic/src/gui/itemlist/actionlisteditorpage.cpp:352
 #: attic/src/gui/itemlist/actionlisteditorpage.cpp:596
+#: src/widgets/pageview.cpp:113
 msgid "Type and press enter to add a note"
 msgstr "Tippen und danach Enter drücken um Notiz hinzuzufügen"
 
 #: attic/src/gui/itemlist/actionlisteditorpage.cpp:354
 #: attic/src/gui/itemlist/actionlisteditorpage.cpp:598
+#: src/widgets/pageview.cpp:110
 msgid "Type and press enter to add an action"
 msgstr "Tippen und danach Enter drücken um Aktion hinzuzufügen"
 
@@ -800,7 +809,7 @@ msgstr "Sie können anfangen zu tippen um die Kontextliste zu filtern."
 msgid "Path: %1"
 msgstr "Pfad: %1"
 
-#: attic/src/gui/sidebar/sidebar.cpp:99
+#: attic/src/gui/sidebar/sidebar.cpp:99 src/widgets/availablepagesview.cpp:104
 msgid "New"
 msgstr "Neu"
 
@@ -944,6 +953,11 @@ msgstr "Task Ordner Löschen"
 msgid "Update Folder"
 msgstr "Ordner aktualisieren"
 
+#: src/akonadi/akonadidatasourcerepository.cpp:153
+msgctxt "Properties of Task Folder %1"
+msgid "@title:window"
+msgstr ""
+
 #: src/akonadi/akonadidatasourcerepository.cpp:157
 msgid "Add Note Folder"
 msgstr "Notiz Ordner hinzufügen"
@@ -951,6 +965,112 @@ msgstr "Notiz Ordner hinzufügen"
 #: src/akonadi/akonadidatasourcerepository.cpp:158
 msgid "Delete Note Folder"
 msgstr "Notiz Ordner löschen"
+
+#: src/akonadi/akonadidatasourcerepository.cpp:162
+msgctxt "Properties of Note Folder %1"
+msgid "@title:window"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:71 src/widgets/editorview.cpp:82
+#, fuzzy
+#| msgid "Starts With"
+msgid "Start today"
+msgstr "Fängt an mit"
+
+#: src/akonadi/editorview.cpp:77 src/widgets/editorview.cpp:88
+#, fuzzy
+#| msgid "Attachments"
+msgid "Add attachment"
+msgstr "Anhänge"
+
+#: src/akonadi/editorview.cpp:109 src/widgets/editorview.cpp:123
+#: src/widgets/editorview.cpp:238
+#, fuzzy
+#| msgctxt "Permissions"
+#| msgid "None"
+msgid "None"
+msgstr "Keine"
+
+#: src/akonadi/editorview.cpp:110 src/widgets/editorview.cpp:124
+#, fuzzy
+#| msgid "New Action"
+msgid "Needs action"
+msgstr "Neue Aktion"
+
+#: src/akonadi/editorview.cpp:111 src/widgets/editorview.cpp:125
+msgid "In process"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:112 src/widgets/editorview.cpp:126
+msgid "Completed"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:113 src/widgets/editorview.cpp:127
+msgid "Cancelled"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:132 src/widgets/editorview.cpp:146
+#, fuzzy
+#| msgid "Delete Project"
+msgid "Delegate to"
+msgstr "Project Löschen"
+
+#: src/akonadi/editorview.cpp:136 src/widgets/editorview.cpp:150
+#, fuzzy
+#| msgid "Starts With"
+msgid "Start date"
+msgstr "Fängt an mit"
+
+#: src/akonadi/editorview.cpp:139 src/widgets/editorview.cpp:153
+msgid "Due date"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:148 src/widgets/editorview.cpp:162
+msgid "Alarm"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:154 src/widgets/editorview.cpp:168
+msgid "Progress"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:158 src/widgets/editorview.cpp:172
+#, fuzzy
+#| msgctxt "@item LDAP search key"
+#| msgid "State"
+msgid "Status"
+msgstr "Bundesland"
+
+#: src/akonadi/editorview.cpp:180 src/widgets/editorview.cpp:194
+#, fuzzy
+#| msgid "&Editor"
+msgid "Edit"
+msgstr "&Editor"
+
+#: src/akonadi/editorview.cpp:356 src/widgets/editorview.cpp:411
+#, qt-format
+msgid "Delegated to: <b>%1</b>"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:460 src/widgets/editorview.cpp:515
+msgid "All ocurrences completed"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:489 src/widgets/editorview.cpp:597
+#, fuzzy
+#| msgid "Attachments"
+msgid "Add Attachment"
+msgstr "Anhänge"
+
+#: src/akonadi/editorview.cpp:539 src/widgets/editorview.cpp:647
+#, fuzzy
+#| msgid "Attachments"
+msgid "Save Attachment"
+msgstr "Anhänge"
+
+#: src/akonadi/editorview.cpp:542 src/widgets/editorview.cpp:650
+#, qt-format
+msgid "%1 already exists. Do you want to overwrite it?"
+msgstr ""
 
 #: src/app/aboutdata.cpp:29
 msgid "Zanshin Todo"
@@ -981,16 +1101,171 @@ msgstr ""
 msgid "Developer"
 msgstr "Entwickler"
 
+#: src/app/main.cpp:87 src/app/notesmain.cpp:82 src/app/tasksmain.cpp:82
+#| msgid "Pager"
+msgid "Pages"
+msgstr "Seiten"
+
+#: src/app/main.cpp:91 src/app/notesmain.cpp:86 src/app/tasksmain.cpp:86
+#, fuzzy
+#| msgid "&Editor"
+msgid "Editor"
+msgstr "&Editor"
+
+#: src/app/main.cpp:102 src/app/notesmain.cpp:102 src/app/tasksmain.cpp:102
+#, fuzzy
+#| msgid "Settings..."
+msgid "Settings"
+msgstr "Einstellungen..."
+
+#: src/app/main.cpp:112 src/app/notesmain.cpp:113 src/app/tasksmain.cpp:113
+msgid "Main"
+msgstr ""
+
 #. i18n: ectx: Menu (zanshin_settings)
 #: src/kontact/zanshin-next_part.rc:6 src/kontact/zanshin-notes_part.rc:6
 #: src/kontact/zanshin-tasks_part.rc:6
 msgid "Configure Zanshin"
 msgstr "Zanshin einstellen"
 
+#: src/presentation/availablepagesmodel.cpp:164
+#, fuzzy
+#| msgid "New Project"
+msgid "Projects"
+msgstr "Neues Projekt"
+
+#: src/presentation/availablepagesmodel.cpp:168
+msgid "Tags"
+msgstr ""
+
 #: src/runner/zanshinrunner.cpp:67
 #, kde-format
 msgid "Add \"%1\" to your todo list"
 msgstr "\"%1\" zu ihrer Todoliste hinzufügen"
+
+#: src/widgets/applicationcomponents.cpp:161
+msgid "Default task source"
+msgstr ""
+
+#: src/widgets/applicationcomponents.cpp:171
+msgid "Default note source"
+msgstr ""
+
+#: src/widgets/availablepagesview.cpp:263
+#, fuzzy
+#| msgid "Next Context"
+msgid "Delete Context"
+msgstr "Nächster Kontext"
+
+#: src/widgets/availablepagesview.cpp:264
+#, fuzzy, qt-format
+#| msgid "Do you really want to delete the selected agent instance?"
+#| msgid_plural "Do you really want to delete these %1 agent instances?"
+msgid "Do you really want to delete the context '%1'?"
+msgstr "Wollen Sie wirklich die ausgewählte Agent Instanz löschen?"
+
+#: src/widgets/availablepagesview.cpp:266
+#, fuzzy
+#| msgid "Delete Task Folder"
+msgid "Delete Tag"
+msgstr "Task Ordner Löschen"
+
+#: src/widgets/availablepagesview.cpp:267
+#, fuzzy, qt-format
+#| msgid "Do you really want to delete the selected agent instance?"
+#| msgid_plural "Do you really want to delete these %1 agent instances?"
+msgid "Do you really want to delete the tag '%1'?"
+msgstr "Wollen Sie wirklich die ausgewählte Agent Instanz löschen?"
+
+#: src/widgets/availablesourcesview.cpp:94
+#, fuzzy
+#| msgid "Searching..."
+msgid "Search..."
+msgstr "Sucht..."
+
+#: src/widgets/editorview.cpp:241
+msgid "Message"
+msgstr ""
+
+#: src/widgets/editorview.cpp:244
+msgid "Audio"
+msgstr ""
+
+#: src/widgets/editorview.cpp:251
+msgid "before start"
+msgstr ""
+
+#: src/widgets/editorview.cpp:254
+msgid "before end"
+msgstr ""
+
+#: src/widgets/filterwidget.cpp:45
+msgid "Sort by title"
+msgstr ""
+
+#: src/widgets/filterwidget.cpp:46
+msgid "Sort by date"
+msgstr ""
+
+#: src/widgets/filterwidget.cpp:47
+msgid "Sort by progress"
+msgstr ""
+
+#: src/widgets/filterwidget.cpp:48
+msgid "Sort by status"
+msgstr ""
+
+#: src/widgets/filterwidget.cpp:50
+msgid "List Open"
+msgstr "Offene auflisten"
+
+#: src/widgets/filterwidget.cpp:51
+#| msgid "Unselect All"
+msgid "List All"
+msgstr "Alles auflisten"
+
+#: src/widgets/filterwidget.cpp:52
+msgid "List Done"
+msgstr "Fertige auflisten"
+
+#: src/widgets/newpagedialog.cpp:46
+msgid "Tag"
+msgstr ""
+
+#: src/widgets/pageview.cpp:109
+msgid "add an action"
+msgstr "Aktion hinzufügen"
+
+#: src/widgets/pageview.cpp:112
+msgid "add a note"
+msgstr ""
+
+#: src/widgets/pageview.cpp:130 src/widgets/pageview.cpp:243
+#, fuzzy
+#| msgid "Delete Project"
+msgid "Delete"
+msgstr "Project Löschen"
+
+#: src/widgets/pageview.cpp:229
+#, fuzzy
+#| msgid "Do you really want to delete the selected agent instance?"
+#| msgid_plural "Do you really want to delete these %1 agent instances?"
+msgid "Do you really want to delete the selected items and their children?"
+msgstr "Wollen Sie wirklich die ausgewählte Agent Instanz löschen?"
+
+#: src/widgets/pageview.cpp:231
+#, fuzzy
+#| msgid "Do you really want to delete the selected agent instance?"
+#| msgid_plural "Do you really want to delete these %1 agent instances?"
+msgid "Do you really want to delete the selected items?"
+msgstr "Wollen Sie wirklich die ausgewählte Agent Instanz löschen?"
+
+#: src/widgets/pageview.cpp:239
+#, fuzzy
+#| msgid "Do you really want to delete the selected agent instance?"
+#| msgid_plural "Do you really want to delete these %1 agent instances?"
+msgid "Do you really want to delete the selected item and all its children?"
+msgstr "Wollen Sie wirklich die ausgewählte Agent Instanz löschen?"
 
 #: src/widgets/recurrencewidget.cpp:340
 msgctxt "Recurrence ends after n occurrences"
@@ -1070,5 +1345,4 @@ msgstr "Letzte"
 msgctxt "every week of month or year"
 msgid "every"
 msgstr "Jede"
-
 

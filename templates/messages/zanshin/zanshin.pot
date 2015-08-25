@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR This_file_is_part_of_KDE
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-08-11 14:30+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-25 19:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
@@ -494,7 +494,7 @@ msgid ""
 msgstr ""
 
 #: 3rdparty/kdepim/pimcommon/acl/aclmanager.cpp:275
-#: attic/src/gui/sidebar/sidebar.cpp:103
+#: attic/src/gui/sidebar/sidebar.cpp:103 src/widgets/availablepagesview.cpp:112
 msgid "Remove"
 msgstr ""
 
@@ -562,7 +562,8 @@ msgstr ""
 msgid "Settings..."
 msgstr ""
 
-#: attic/src/app/configdialog.cpp:37
+#: attic/src/app/configdialog.cpp:37 src/app/main.cpp:83 src/app/notesmain.cpp:78
+#: src/app/tasksmain.cpp:78
 msgid "Sources"
 msgstr ""
 
@@ -634,15 +635,17 @@ msgstr ""
 #. text = i18n("Do you really want to delete the projects '%1', with all its actions?", summary);
 #. } else {
 #: attic/src/core/pimitemservices.cpp:554
+#: src/widgets/availablepagesview.cpp:260
 msgid "Delete Project"
 msgstr ""
 
 #: attic/src/core/pimitemservices.cpp:555
-#, kde-format
+#: src/widgets/availablepagesview.cpp:261
+#, qt-format, kde-format
 msgid "Do you really want to delete the project '%1', with all its actions?"
 msgstr ""
 
-#: attic/src/core/projectstrategy.cpp:58
+#: attic/src/core/projectstrategy.cpp:58 src/presentation/availablepagesmodel.cpp:162
 msgid "Inbox"
 msgstr ""
 
@@ -651,6 +654,7 @@ msgid "No Context"
 msgstr ""
 
 #: attic/src/core/structurecachestrategy.cpp:71
+#: src/presentation/availablepagesmodel.cpp:166
 msgid "Contexts"
 msgstr ""
 
@@ -704,6 +708,7 @@ msgid "Title..."
 msgstr ""
 
 #: attic/src/gui/itemeditor/itemeditor.cpp:95
+#: src/akonadi/editorview.cpp:190 src/widgets/editorview.cpp:204
 msgid "Fullscreen &Editor"
 msgstr ""
 
@@ -741,11 +746,13 @@ msgstr ""
 
 #: attic/src/gui/itemlist/actionlisteditorpage.cpp:352
 #: attic/src/gui/itemlist/actionlisteditorpage.cpp:596
+#: src/widgets/pageview.cpp:113
 msgid "Type and press enter to add a note"
 msgstr ""
 
 #: attic/src/gui/itemlist/actionlisteditorpage.cpp:354
 #: attic/src/gui/itemlist/actionlisteditorpage.cpp:598
+#: src/widgets/pageview.cpp:110
 msgid "Type and press enter to add an action"
 msgstr ""
 
@@ -786,7 +793,7 @@ msgstr ""
 msgid "Path: %1"
 msgstr ""
 
-#: attic/src/gui/sidebar/sidebar.cpp:99
+#: attic/src/gui/sidebar/sidebar.cpp:99 src/widgets/availablepagesview.cpp:104
 msgid "New"
 msgstr ""
 
@@ -927,12 +934,101 @@ msgstr ""
 msgid "Update Folder"
 msgstr ""
 
+#: src/akonadi/akonadidatasourcerepository.cpp:153
+msgctxt "Properties of Task Folder %1"
+msgid "@title:window"
+msgstr ""
+
 #: src/akonadi/akonadidatasourcerepository.cpp:157
 msgid "Add Note Folder"
 msgstr ""
 
 #: src/akonadi/akonadidatasourcerepository.cpp:158
 msgid "Delete Note Folder"
+msgstr ""
+
+#: src/akonadi/akonadidatasourcerepository.cpp:162
+msgctxt "Properties of Note Folder %1"
+msgid "@title:window"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:71 src/widgets/editorview.cpp:82
+msgid "Start today"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:77 src/widgets/editorview.cpp:88
+msgid "Add attachment"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:109 src/widgets/editorview.cpp:123
+#: src/widgets/editorview.cpp:238
+msgid "None"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:110 src/widgets/editorview.cpp:124
+msgid "Needs action"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:111 src/widgets/editorview.cpp:125
+msgid "In process"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:112 src/widgets/editorview.cpp:126
+msgid "Completed"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:113 src/widgets/editorview.cpp:127
+msgid "Cancelled"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:132 src/widgets/editorview.cpp:146
+msgid "Delegate to"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:136 src/widgets/editorview.cpp:150
+msgid "Start date"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:139 src/widgets/editorview.cpp:153
+msgid "Due date"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:148 src/widgets/editorview.cpp:162
+msgid "Alarm"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:154 src/widgets/editorview.cpp:168
+msgid "Progress"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:158 src/widgets/editorview.cpp:172
+msgid "Status"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:180 src/widgets/editorview.cpp:194
+msgid "Edit"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:356 src/widgets/editorview.cpp:411
+#, qt-format
+msgid "Delegated to: <b>%1</b>"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:460 src/widgets/editorview.cpp:515
+msgid "All ocurrences completed"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:489 src/widgets/editorview.cpp:597
+msgid "Add Attachment"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:539 src/widgets/editorview.cpp:647
+msgid "Save Attachment"
+msgstr ""
+
+#: src/akonadi/editorview.cpp:542 src/widgets/editorview.cpp:650
+#, qt-format
+msgid "%1 already exists. Do you want to overwrite it?"
 msgstr ""
 
 #: src/app/aboutdata.cpp:29
@@ -964,15 +1060,141 @@ msgstr ""
 msgid "Developer"
 msgstr ""
 
+#: src/app/main.cpp:87 src/app/notesmain.cpp:82 src/app/tasksmain.cpp:82
+msgid "Pages"
+msgstr ""
+
+#: src/app/main.cpp:91 src/app/notesmain.cpp:86 src/app/tasksmain.cpp:86
+msgid "Editor"
+msgstr ""
+
+#: src/app/main.cpp:102 src/app/notesmain.cpp:102 src/app/tasksmain.cpp:102
+msgid "Settings"
+msgstr ""
+
+#: src/app/main.cpp:112 src/app/notesmain.cpp:113 src/app/tasksmain.cpp:113
+msgid "Main"
+msgstr ""
+
 #. i18n: ectx: Menu (zanshin_settings)
 #: src/kontact/zanshin-next_part.rc:6 src/kontact/zanshin-notes_part.rc:6
 #: src/kontact/zanshin-tasks_part.rc:6
 msgid "Configure Zanshin"
 msgstr ""
 
+#: src/presentation/availablepagesmodel.cpp:164
+msgid "Projects"
+msgstr ""
+
+#: src/presentation/availablepagesmodel.cpp:168
+msgid "Tags"
+msgstr ""
+
 #: src/runner/zanshinrunner.cpp:67
 #, kde-format
 msgid "Add \"%1\" to your todo list"
+msgstr ""
+
+#: src/widgets/applicationcomponents.cpp:161
+msgid "Default task source"
+msgstr ""
+
+#: src/widgets/applicationcomponents.cpp:171
+msgid "Default note source"
+msgstr ""
+
+#: src/widgets/availablepagesview.cpp:263
+msgid "Delete Context"
+msgstr ""
+
+#: src/widgets/availablepagesview.cpp:264
+#, qt-format
+msgid "Do you really want to delete the context '%1'?"
+msgstr ""
+
+#: src/widgets/availablepagesview.cpp:266
+msgid "Delete Tag"
+msgstr ""
+
+#: src/widgets/availablepagesview.cpp:267
+#, qt-format
+msgid "Do you really want to delete the tag '%1'?"
+msgstr ""
+
+#: src/widgets/availablesourcesview.cpp:94
+msgid "Search..."
+msgstr ""
+
+#: src/widgets/editorview.cpp:241
+msgid "Message"
+msgstr ""
+
+#: src/widgets/editorview.cpp:244
+msgid "Audio"
+msgstr ""
+
+#: src/widgets/editorview.cpp:251
+msgid "before start"
+msgstr ""
+
+#: src/widgets/editorview.cpp:254
+msgid "before end"
+msgstr ""
+
+#: src/widgets/filterwidget.cpp:45
+msgid "Sort by title"
+msgstr ""
+
+#: src/widgets/filterwidget.cpp:46
+msgid "Sort by date"
+msgstr ""
+
+#: src/widgets/filterwidget.cpp:47
+msgid "Sort by progress"
+msgstr ""
+
+#: src/widgets/filterwidget.cpp:48
+msgid "Sort by status"
+msgstr ""
+
+#: src/widgets/filterwidget.cpp:50
+msgid "List Open"
+msgstr ""
+
+#: src/widgets/filterwidget.cpp:51
+msgid "List All"
+msgstr ""
+
+#: src/widgets/filterwidget.cpp:52
+msgid "List Done"
+msgstr ""
+
+#: src/widgets/newpagedialog.cpp:46
+msgid "Tag"
+msgstr ""
+
+#: src/widgets/pageview.cpp:109
+msgid "add an action"
+msgstr ""
+
+#: src/widgets/pageview.cpp:112
+msgid "add a note"
+msgstr ""
+
+#: src/widgets/pageview.cpp:130 src/widgets/pageview.cpp:243
+msgid "Delete"
+msgstr ""
+
+#: src/widgets/pageview.cpp:229
+msgid "Do you really want to delete the selected items and their children?"
+msgstr ""
+
+#: src/widgets/pageview.cpp:231
+msgid "Do you really want to delete the selected items?"
+msgstr ""
+
+#: src/widgets/pageview.cpp:239
+msgid "Do you really want to delete the selected item and all its children?"
 msgstr ""
 
 #: src/widgets/recurrencewidget.cpp:340

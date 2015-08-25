@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-calendar\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-08-11 14:29+0200\n"
+"POT-Creation-Date: 2015-08-25 19:01+0200\n"
 "PO-Revision-Date: 2015-08-11 16:42+0200\n"
 "Last-Translator: Sandro Knauß <mail@sandroknauss.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -389,44 +389,43 @@ msgstr "Die iCal-Datei zum Zusammenführen ist leer."
 msgid "Merge ical file into existing calendar."
 msgstr "iCal-Datei in bestehenden Kalender zusammenführen."
 
-#: incidencechanger.cpp:385
+#: incidencechanger.cpp:409
 #, kde-format
 msgid "Error while trying to create calendar item. Error was: %1"
 msgstr ""
 "Fehler beim Erstellen des Kalendereintrags. Die Fehlermeldung lautet: %1"
 
-#: incidencechanger.cpp:453
+#: incidencechanger.cpp:477
 #, kde-format
 msgid "Error while trying to delete calendar item. Error was: %1"
 msgstr "Fehler beim Löschen des Kalendereintrags. Die Fehlermeldung lautet: %1"
 
-#: incidencechanger.cpp:491
-#| msgid "Unknown error"
+#: incidencechanger.cpp:515
 msgctxt "errormessage for a job ended with an unexpected result"
 msgid "An unknown error occurred"
 msgstr "Unbekannter Fehler aufgetreten"
 
-#: incidencechanger.cpp:531
+#: incidencechanger.cpp:555
 #, kde-format
 msgid "Error while trying to modify calendar item. Error was: %1"
 msgstr ""
 "Fehler beim Bearbeiten des Kalendereintrags. Die Fehlermeldung lautet: %1"
 
-#: incidencechanger.cpp:977 incidencechanger.cpp:1101
+#: incidencechanger.cpp:1001 incidencechanger.cpp:1125
 msgid "That calendar item was already deleted, or currently being deleted."
 msgstr "Der Kalender wurde bereits gelöscht oder wird gerade gelöscht."
 
-#: incidencechanger.cpp:1339
+#: incidencechanger.cpp:1363
 msgid "Operation can not be performed due to ACL restrictions"
 msgstr ""
 "Die Aktion kann aufgrund von Beschränkungen in der Zugriffskontrollliste "
 "(ACL) nicht ausgeführt werden"
 
-#: incidencechanger.cpp:1342
+#: incidencechanger.cpp:1366
 msgid "The chosen collection is invalid"
 msgstr "Die gewählte Sammlung ist ungültig"
 
-#: incidencechanger.cpp:1345
+#: incidencechanger.cpp:1369
 msgid ""
 "Default collection is invalid or doesn't have proper ACLs and "
 "DestinationPolicyNeverAsk was used"
@@ -434,11 +433,11 @@ msgstr ""
 "Die Standard-Sammlung ist ungültig oder hat falsche Berechnungen und "
 "DestinationPolicyNeverAsk wurde benutzt"
 
-#: incidencechanger.cpp:1349
+#: incidencechanger.cpp:1373
 msgid "Duplicate item id in a group operation"
 msgstr "Doppelte Kennung eines Eintrags in einer Gruppenoperation"
 
-#: incidencechanger.cpp:1352
+#: incidencechanger.cpp:1376
 msgid ""
 "One change belonging to a group of changes failed. All changes are being "
 "rolled back."
@@ -446,7 +445,7 @@ msgstr ""
 "Eine von mehreren, zu einer Gruppe gehörenden, Änderungen ist "
 "fehlgeschlagen. Alle Änderungen werden zurückgenommen."
 
-#: incidencechanger.cpp:1357
+#: incidencechanger.cpp:1381
 msgid "Unknown error"
 msgstr "Unbekannter Fehler"
 
@@ -498,19 +497,17 @@ msgid "Message Not Sent"
 msgstr "Nachricht wurde nicht versendet"
 
 #: itiphandler.h:104 itiphandler.h:122 itiphandler.h:138 itiphandler.h:151
-#| msgid "Send Email"
 msgctxt "@action:button dialog positive answer"
 msgid "Send Email"
 msgstr "E-Mail senden"
 
 #: itiphandler.h:105 itiphandler.h:123 itiphandler.h:139 itiphandler.h:152
-#| msgid "Do Not Send"
 msgctxt "@action:button dialog negative answer"
 msgid "Do Not Send"
 msgstr "Nicht senden"
 
 #: itiphandler_p.cpp:79 itiphandler_p.cpp:82 itiphandler_p.cpp:152
-#: itiphandlerhelper_p.cpp:496
+#: itiphandlerhelper_p.cpp:481
 #, kde-format
 msgid "Error: %1"
 msgstr "Fehler: %1"
@@ -579,7 +576,7 @@ msgstr "Gruppenplanungs-E-Mail"
 msgid "<placeholder>No summary given</placeholder>"
 msgstr "<placeholder>Keine Zusammenfassung verfügbar</placeholder>"
 
-#: itiphandlerhelper_p.cpp:238
+#: itiphandlerhelper_p.cpp:223
 #, kde-format
 msgid ""
 "The event \"%1\" includes other people.\n"
@@ -588,7 +585,7 @@ msgstr ""
 "Das Ereignis „%1“ schließt weitere Personen ein.\n"
 "Möchten Sie den Teilnehmern die Einladung senden?"
 
-#: itiphandlerhelper_p.cpp:242
+#: itiphandlerhelper_p.cpp:227
 #, kde-format
 msgid ""
 "The todo \"%1\" includes other people.\n"
@@ -597,7 +594,7 @@ msgstr ""
 "Die Aufgabe „%1“ schließt weitere Personen ein.\n"
 "Möchten Sie den Teilnehmern die Einladung senden?"
 
-#: itiphandlerhelper_p.cpp:246
+#: itiphandlerhelper_p.cpp:231
 msgid ""
 "This incidence includes other people. Should an email be sent to the "
 "attendees?"
@@ -605,7 +602,7 @@ msgstr ""
 "Dieses Ereignis schließt weitere Personen ein. Möchten Sie den Teilnehmern "
 "eine Nachricht senden?"
 
-#: itiphandlerhelper_p.cpp:270
+#: itiphandlerhelper_p.cpp:255
 msgid ""
 "You are not the organizer of this event. Editing it will bring your calendar "
 "out of sync with the organizer's calendar. Do you really want to edit it?"
@@ -614,7 +611,7 @@ msgstr ""
 "bearbeiten, ist Ihr Kalender nicht mehr synchron mit dem des Organisators. "
 "Möchten Sie den Termin wirklich bearbeiten?"
 
-#: itiphandlerhelper_p.cpp:313
+#: itiphandlerhelper_p.cpp:298
 #, kde-format
 msgid ""
 "You changed the invitation \"%1\".\n"
@@ -623,18 +620,18 @@ msgstr ""
 "Sie haben die Einladung „%1“ verändert.\n"
 "Möchten Sie den Teilnehmern mitteilen, dass die Einladung aktualisiert wurde?"
 
-#: itiphandlerhelper_p.cpp:317 itiphandlerhelper_p.cpp:329
-#: itiphandlerhelper_p.cpp:337
+#: itiphandlerhelper_p.cpp:302 itiphandlerhelper_p.cpp:314
+#: itiphandlerhelper_p.cpp:322
 msgid "Send Update"
 msgstr "Aktualisierung versenden"
 
-#: itiphandlerhelper_p.cpp:327 itiphandlerhelper_p.cpp:401
+#: itiphandlerhelper_p.cpp:312 itiphandlerhelper_p.cpp:386
 msgid "Do you want to send a status update to the organizer of this task?"
 msgstr ""
 "Möchten Sie an den Organisator dieser Aufgabe einen neuen Statusbericht "
 "senden?"
 
-#: itiphandlerhelper_p.cpp:334
+#: itiphandlerhelper_p.cpp:319
 msgid ""
 "Your status as an attendee of this event changed. Do you want to send a "
 "status update to the event organizer?"
@@ -642,7 +639,7 @@ msgstr ""
 "Ihr Teilnehmerstatus für dieses Ereignis wurde verändert. Möchten Sie dem "
 "Organisator die Änderung mitteilen?"
 
-#: itiphandlerhelper_p.cpp:372
+#: itiphandlerhelper_p.cpp:357
 #, kde-format
 msgid ""
 "You removed the invitation \"%1\".\n"
@@ -651,7 +648,7 @@ msgstr ""
 "Sie haben die Einladung „%1“ gelöscht.\n"
 "Möchten Sie den Teilnehmern mitteilen, dass der Termin abgesagt wurde?"
 
-#: itiphandlerhelper_p.cpp:376
+#: itiphandlerhelper_p.cpp:361
 #, kde-format
 msgid ""
 "You removed the invitation \"%1\".\n"
@@ -660,7 +657,7 @@ msgstr ""
 "Sie haben die Einladung „%1“ gelöscht.\n"
 "Möchten Sie den Teilnehmern mitteilen, dass die Aufgabe abgesagt wurde?"
 
-#: itiphandlerhelper_p.cpp:380
+#: itiphandlerhelper_p.cpp:365
 #, kde-format
 msgid ""
 "You removed the invitation \"%1\".\n"
@@ -669,19 +666,18 @@ msgstr ""
 "Sie haben die Einladung „%1“ gelöscht.\n"
 "Möchten Sie den Teilnehmern mitteilen, dass das Journal abgesagt wurde?"
 
-#: itiphandlerhelper_p.cpp:403
+#: itiphandlerhelper_p.cpp:388
 msgid "Do you want to send a status update to the organizer of this journal?"
 msgstr ""
 "Möchten Sie an den Organisator dieses Journals einen neuen Statusbericht "
 "senden?"
 
-#: itiphandlerhelper_p.cpp:406 itiphandlerhelper_p.cpp:427
-#| msgid "Send Update"
+#: itiphandlerhelper_p.cpp:391 itiphandlerhelper_p.cpp:412
 msgctxt "@action:button dialog positive answer"
 msgid "Send Update"
 msgstr "Aktualisierung versenden"
 
-#: itiphandlerhelper_p.cpp:423
+#: itiphandlerhelper_p.cpp:408
 msgid ""
 "You had previously accepted an invitation to this event. Do you want to send "
 "an updated response to the organizer declining the invitation?"
@@ -689,17 +685,16 @@ msgstr ""
 "Sie haben vorher eine Einladung zu diesem Ereignis akzeptiert. Möchten Sie "
 "dem Organisator mitteilen, dass Sie den Termin absagen?"
 
-#: itiphandlerhelper_p.cpp:463 mailscheduler_p.cpp:116
+#: itiphandlerhelper_p.cpp:448 mailscheduler_p.cpp:116
 #, kde-format
 msgid "Counter proposal: %1"
 msgstr "Gegenvorschlag: %1"
 
-#: itiphandlerhelper_p.cpp:481
+#: itiphandlerhelper_p.cpp:466
 msgid "Sending group scheduling email failed."
 msgstr "Senden der Gruppenplanungs-E-Mail ist fehlgeschlagen."
 
-#: itiphandlerhelper_p.cpp:488
-#| msgid "Abort Update"
+#: itiphandlerhelper_p.cpp:473
 msgctxt "@action:button dialog positive answer to abort question"
 msgid "Abort Update"
 msgstr "Aktualisierung abbrechen"
@@ -900,16 +895,6 @@ msgid "Error modifying incidence"
 msgstr "Fehler beim Bearbeiten des Ereignisses"
 
 #: scheduler_p.cpp:311
-#| msgctxt "@info"
-#| msgid ""
-#| "<para>You accepted an invitation update, but an earlier version of the "
-#| "item could not be found in your calendar.</para><para>This may have "
-#| "occurred because:<list><item>the organizer did not include you in the "
-#| "original invitation</item><item>you did not accept the original "
-#| "invitation yet</item><item>you deleted the original invitation from your "
-#| "calendar</item><item>you no longer have access to the calendar containing "
-#| "the invitation</item></list></para><para>This is not a problem, but we "
-#| "thought you should know.</para>"
 msgctxt "@info"
 msgid ""
 "<para>You added an invitation update, but an earlier version of the item "
@@ -1301,13 +1286,10 @@ msgid "Paste failed"
 msgstr "Das Einfügen des Termins ist fehlgeschlagen"
 
 #: standardcalendaractionmanager.cpp:245
-#| msgid "Update Calendar"
-#| msgid_plural "Update %1 Calendars"
 msgid "Update Available Calendars"
 msgstr "Verfügbare Kalender aktualisieren"
 
 #: standardcalendaractionmanager.cpp:247
-#| msgid "Updates the content of all folders of the selected calendars."
 msgid "Updates the tree of available calendars."
 msgstr "Den Inhalt sämtlicher Ordner der ausgewählten Kalender aktualisieren."
 
