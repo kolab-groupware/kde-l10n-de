@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-25 19:01+0200\n"
+"POT-Creation-Date: 2015-08-26 11:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
@@ -708,7 +708,7 @@ msgid "Title..."
 msgstr ""
 
 #: attic/src/gui/itemeditor/itemeditor.cpp:95
-#: src/akonadi/editorview.cpp:190 src/widgets/editorview.cpp:204
+#: src/widgets/editorview.cpp:204
 msgid "Fullscreen &Editor"
 msgstr ""
 
@@ -935,8 +935,9 @@ msgid "Update Folder"
 msgstr ""
 
 #: src/akonadi/akonadidatasourcerepository.cpp:153
-msgctxt "Properties of Task Folder %1"
-msgid "@title:window"
+#, qt-format
+msgctxt "@title:window"
+msgid "Properties of Task Folder %1"
 msgstr ""
 
 #: src/akonadi/akonadidatasourcerepository.cpp:157
@@ -948,87 +949,9 @@ msgid "Delete Note Folder"
 msgstr ""
 
 #: src/akonadi/akonadidatasourcerepository.cpp:162
-msgctxt "Properties of Note Folder %1"
-msgid "@title:window"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:71 src/widgets/editorview.cpp:82
-msgid "Start today"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:77 src/widgets/editorview.cpp:88
-msgid "Add attachment"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:109 src/widgets/editorview.cpp:123
-#: src/widgets/editorview.cpp:238
-msgid "None"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:110 src/widgets/editorview.cpp:124
-msgid "Needs action"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:111 src/widgets/editorview.cpp:125
-msgid "In process"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:112 src/widgets/editorview.cpp:126
-msgid "Completed"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:113 src/widgets/editorview.cpp:127
-msgid "Cancelled"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:132 src/widgets/editorview.cpp:146
-msgid "Delegate to"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:136 src/widgets/editorview.cpp:150
-msgid "Start date"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:139 src/widgets/editorview.cpp:153
-msgid "Due date"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:148 src/widgets/editorview.cpp:162
-msgid "Alarm"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:154 src/widgets/editorview.cpp:168
-msgid "Progress"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:158 src/widgets/editorview.cpp:172
-msgid "Status"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:180 src/widgets/editorview.cpp:194
-msgid "Edit"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:356 src/widgets/editorview.cpp:411
 #, qt-format
-msgid "Delegated to: <b>%1</b>"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:460 src/widgets/editorview.cpp:515
-msgid "All ocurrences completed"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:489 src/widgets/editorview.cpp:597
-msgid "Add Attachment"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:539 src/widgets/editorview.cpp:647
-msgid "Save Attachment"
-msgstr ""
-
-#: src/akonadi/editorview.cpp:542 src/widgets/editorview.cpp:650
-#, qt-format
-msgid "%1 already exists. Do you want to overwrite it?"
+msgctxt "@title:window"
+msgid "Properties of Note Folder %1"
 msgstr ""
 
 #: src/app/aboutdata.cpp:29
@@ -1125,6 +1048,62 @@ msgstr ""
 msgid "Search..."
 msgstr ""
 
+#: src/widgets/editorview.cpp:82
+msgid "Start today"
+msgstr ""
+
+#: src/widgets/editorview.cpp:88
+msgid "Add attachment"
+msgstr ""
+
+#: src/widgets/editorview.cpp:123 src/widgets/editorview.cpp:238
+msgid "None"
+msgstr ""
+
+#: src/widgets/editorview.cpp:124
+msgid "Needs action"
+msgstr ""
+
+#: src/widgets/editorview.cpp:125
+msgid "In process"
+msgstr ""
+
+#: src/widgets/editorview.cpp:126
+msgid "Completed"
+msgstr ""
+
+#: src/widgets/editorview.cpp:127
+msgid "Cancelled"
+msgstr ""
+
+#: src/widgets/editorview.cpp:146
+msgid "Delegate to"
+msgstr ""
+
+#: src/widgets/editorview.cpp:150
+msgid "Start date"
+msgstr ""
+
+#: src/widgets/editorview.cpp:153
+msgid "Due date"
+msgstr ""
+
+#: src/widgets/editorview.cpp:162
+msgid "Alarm"
+msgstr ""
+
+#: src/widgets/editorview.cpp:168
+msgid "Progress"
+msgstr ""
+
+#: src/widgets/editorview.cpp:172
+msgid "Status"
+msgstr ""
+
+#: src/widgets/editorview.cpp:194
+msgid "Edit"
+msgstr ""
+
 #: src/widgets/editorview.cpp:241
 msgid "Message"
 msgstr ""
@@ -1139,6 +1118,28 @@ msgstr ""
 
 #: src/widgets/editorview.cpp:254
 msgid "before end"
+msgstr ""
+
+#: src/widgets/editorview.cpp:411
+#, qt-format
+msgid "Delegated to: <b>%1</b>"
+msgstr ""
+
+#: src/widgets/editorview.cpp:515
+msgid "All ocurrences completed"
+msgstr ""
+
+#: src/widgets/editorview.cpp:597
+msgid "Add Attachment"
+msgstr ""
+
+#: src/widgets/editorview.cpp:647
+msgid "Save Attachment"
+msgstr ""
+
+#: src/widgets/editorview.cpp:650
+#, qt-format
+msgid "%1 already exists. Do you want to overwrite it?"
 msgstr ""
 
 #: src/widgets/filterwidget.cpp:45
