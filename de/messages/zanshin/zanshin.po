@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-27 12:23+0200\n"
-"PO-Revision-Date: 2015-08-26 11:17+0200\n"
+"POT-Creation-Date: 2015-09-14 17:32+0200\n"
+"PO-Revision-Date: 2015-09-14 17:35+0200\n"
 "Last-Translator: Sandro Knauß <mail@sandroknauss.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -727,13 +727,52 @@ msgstr "Titel..."
 msgid "Fullscreen &Editor"
 msgstr "Vollbild &Editor"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, properties)
 #: attic/src/gui/itemeditor/itemeditor.cpp:110
+#: attic/src/gui/itemeditor/properties.ui:14
 msgid "Properties"
 msgstr "Eigentschaften"
 
 #: attic/src/gui/itemeditor/itemeditor.cpp:112
 msgid "Attachments"
 msgstr "Anhänge"
+
+#. i18n: ectx: property (windowTitle), widget (QFrame, itemView)
+#: attic/src/gui/itemeditor/itemview.ui:14
+msgid "Item view"
+msgstr "Elementenansicht"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: attic/src/gui/itemeditor/properties.ui:34
+msgid "Created:"
+msgstr "Erstellt:"
+
+#. i18n: ectx: property (text), widget (QLabel, creationTime)
+#: attic/src/gui/itemeditor/properties.ui:41
+msgid "Creation time"
+msgstr "Erstellungszeitpunkt"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: attic/src/gui/itemeditor/properties.ui:53
+#| msgid "LastModified:"
+msgid "Last Modified:"
+msgstr "Zuletzt geändert:"
+
+#. i18n: ectx: property (text), widget (QLabel, lastModifiedTime)
+#: attic/src/gui/itemeditor/properties.ui:60
+#| msgid "LastModified:"
+msgid "Last modified date"
+msgstr "Letztes Änderungsdatum"
+
+#. i18n: ectx: property (text), widget (QLabel, lb_dueDate)
+#: attic/src/gui/itemeditor/properties.ui:72
+msgid "Due:"
+msgstr "Fälligkeitsdatum:"
+
+#. i18n: ectx: property (text), widget (QLabel, lb_eventDate)
+#: attic/src/gui/itemeditor/properties.ui:94
+msgid "Start Date:"
+msgstr "Startzeitpunkt:"
 
 #: attic/src/gui/itemlist/actionlisteditor.cpp:194
 msgid "New Action"
@@ -1015,7 +1054,7 @@ msgstr "Einstellungen"
 
 #: src/app/main.cpp:112 src/app/notesmain.cpp:113 src/app/tasksmain.cpp:113
 msgid "Main"
-msgstr ""
+msgstr "Haupt"
 
 #. i18n: ectx: Menu (zanshin_settings)
 #: src/kontact/zanshin-next_part.rc:6 src/kontact/zanshin-notes_part.rc:6
@@ -1188,9 +1227,40 @@ msgstr "Alles auflisten"
 msgid "List Done"
 msgstr "Fertige auflisten"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, FilterWidget)
+#: src/widgets/filterwidget.ui:14
+#| msgid "Edit Host"
+msgid "Edit filter"
+msgstr "Filter bearbeiten"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, filterEdit)
+#: src/widgets/filterwidget.ui:22
+msgid "Filter..."
+msgstr "Filter..."
+
 #: src/widgets/newpagedialog.cpp:46
 msgid "Tag"
 msgstr "Stichwort"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, NewPageDialog)
+#: src/widgets/newpagedialog.ui:14
+msgid "Add a page"
+msgstr "Seite hinzufügen"
+
+#. i18n: ectx: property (text), widget (QLabel, nameLabel)
+#: src/widgets/newpagedialog.ui:25
+msgid "Name"
+msgstr "Name"
+
+#. i18n: ectx: property (text), widget (QLabel, sourceLabel)
+#: src/widgets/newpagedialog.ui:45
+msgid "Source"
+msgstr "Quelle"
+
+#. i18n: ectx: property (text), widget (QLabel, typeLabel)
+#: src/widgets/newpagedialog.ui:55
+msgid "Type"
+msgstr "Typ"
 
 #: src/widgets/pageview.cpp:109
 msgid "add an action"
@@ -1298,3 +1368,124 @@ msgstr "Letzte"
 msgctxt "every week of month or year"
 msgid "every"
 msgstr "Jede"
+
+#. i18n: ectx: property (text), widget (QLabel, mRepeatLabel)
+#: src/widgets/recurrencewidget.ui:26
+msgctxt "@label whether or not this event or to-do repeats"
+msgid "Repeats:"
+msgstr "Wiederholung:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, mRecurrenceTypeCombo)
+#: src/widgets/recurrencewidget.ui:45
+msgctxt "@item:inlistbox Lets the user chose how often an event recurs"
+msgid "Never"
+msgstr "Nie"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, mRecurrenceTypeCombo)
+#: src/widgets/recurrencewidget.ui:50
+msgctxt "@item:inlistbox Lets the user chose how often an event recurs"
+msgid "Daily"
+msgstr "Täglich"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, mRecurrenceTypeCombo)
+#: src/widgets/recurrencewidget.ui:55
+msgctxt "@item:inlistbox Lets the user chose how often an event recurs"
+msgid "Weekly"
+msgstr "Wöchentlich"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, mRecurrenceTypeCombo)
+#: src/widgets/recurrencewidget.ui:60
+msgctxt "@item:inlistbox Lets the user chose how often an event recurs"
+msgid "Monthly"
+msgstr "Monatlich"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, mRecurrenceTypeCombo)
+#: src/widgets/recurrencewidget.ui:65
+msgctxt "@item:inlistbox Lets the user chose how often an event recurs"
+msgid "Yearly"
+msgstr "Jährlich"
+
+#. i18n: ectx: property (text), widget (QLabel, mFrequencyLabel)
+#: src/widgets/recurrencewidget.ui:79
+msgctxt "@label repeats every [various options]"
+msgid "every"
+msgstr "jeden"
+
+#. i18n: ectx: property (text), widget (QLabel, mRecurrenceRuleLabel)
+#: src/widgets/recurrencewidget.ui:111
+msgctxt "@label Event or todo recurs every n day(s)"
+msgid "day(s)"
+msgstr "Tag(e)"
+
+#. i18n: ectx: property (text), widget (QLabel, mOnLabel)
+#: src/widgets/recurrencewidget.ui:133
+msgctxt "@label The event ends on [different options]"
+msgid "on:"
+msgstr "am:"
+
+#. i18n: ectx: property (text), widget (QLabel, mRecurrenceEndLabel)
+#: src/widgets/recurrencewidget.ui:149
+msgctxt "@label recurrence ends on|after"
+msgid "Ends:"
+msgstr "Endet:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, mRecurrenceEndCombo)
+#: src/widgets/recurrencewidget.ui:171
+msgctxt "@item:inlistbox Speficies when a recurring events end"
+msgid "never"
+msgstr "nie"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, mRecurrenceEndCombo)
+#: src/widgets/recurrencewidget.ui:176
+msgctxt "@item:inlistbox Speficies when a recurring events end"
+msgid "on"
+msgstr "am"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, mRecurrenceEndCombo)
+#: src/widgets/recurrencewidget.ui:181
+msgctxt "@item:inlistbox Speficies when a recurring events end"
+msgid "after"
+msgstr "nach"
+
+#. i18n: ectx: property (whatsThis), widget (KDateComboBox, mRecurrenceEndDate)
+#: src/widgets/recurrencewidget.ui:218
+msgctxt "@info:whatsthis"
+msgid "Date after which the event or to-do should stop recurring"
+msgstr "Datum, nach dem das event oder todo nicht mehr wiederholt werden soll"
+
+#. i18n: ectx: property (text), widget (QLabel, mRecurrenceOccurrencesLabel)
+#: src/widgets/recurrencewidget.ui:264
+msgctxt "@label"
+msgid "occurrence(s)"
+msgstr "Vorkommen"
+
+#. i18n: ectx: property (text), widget (QLabel, mExceptionsLabel)
+#: src/widgets/recurrencewidget.ui:283
+msgctxt "@label exceptions for the recurrence"
+msgid "Exceptions:"
+msgstr "Ausnahmen:"
+
+#. i18n: ectx: property (text), widget (QPushButton, mExceptionAddButton)
+#: src/widgets/recurrencewidget.ui:310
+msgctxt "@action:button adds an exception on the recurrence"
+msgid "Add"
+msgstr "&Hinzufügen"
+
+#. i18n: ectx: property (text), widget (QPushButton, mExceptionRemoveButton)
+#: src/widgets/recurrencewidget.ui:352
+msgctxt "@action:button removes an exception"
+msgid "Remove"
+msgstr "Löschen"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mMonthlyEachRadio)
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: src/widgets/recurrencewidget.ui:435 src/widgets/recurrencewidget.ui:508
+msgid "each"
+msgstr "jeden"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mMonthlyEveryRadio)
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: src/widgets/recurrencewidget.ui:445 src/widgets/recurrencewidget.ui:515
+msgid "every"
+msgstr "jeden"
+
