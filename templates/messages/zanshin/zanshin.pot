@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-14 17:32+0200\n"
+"POT-Creation-Date: 2015-10-05 15:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
@@ -83,17 +83,17 @@ msgstr ""
 msgid "LDAP server: %1"
 msgstr ""
 
-#: 3rdparty/kdepim/libkdepim/addressline/addresseelineedit.cpp:310
+#: 3rdparty/kdepim/libkdepim/addressline/addresseelineedit.cpp:321
 msgctxt "@title:group"
 msgid "Contacts found in your data"
 msgstr ""
 
-#: 3rdparty/kdepim/libkdepim/addressline/addresseelineedit.cpp:1356
+#: 3rdparty/kdepim/libkdepim/addressline/addresseelineedit.cpp:1387
 msgid "Configure Completion Order..."
 msgstr ""
 
-#: 3rdparty/kdepim/libkdepim/addressline/addresseelineedit.cpp:1359
-msgid "Show Organization Unit for LDAP results"
+#: 3rdparty/kdepim/libkdepim/addressline/addresseelineedit.cpp:1390
+msgid "Show Organication Unit for LDAP results"
 msgstr ""
 
 #: 3rdparty/kdepim/libkdepim/addressline/completionordereditor.cpp:78
@@ -678,13 +678,13 @@ msgstr ""
 
 #. i18n: ectx: Menu (format)
 #: attic/src/gui/itemeditor/editorui.rc:5
-#: src/kontact/zanshin-notes_part.rc:12 src/kontact/zanshin-tasks_part.rc:12
+#: src/kontact/zanshin-notes_part.rc:16 src/kontact/zanshin-tasks_part.rc:16
 msgid "F&ormat"
 msgstr ""
 
 #. i18n: ectx: Menu (view)
 #: attic/src/gui/itemeditor/editorui.rc:27
-#: src/kontact/zanshin-notes_part.rc:34 src/kontact/zanshin-tasks_part.rc:34
+#: src/kontact/zanshin-notes_part.rc:38 src/kontact/zanshin-tasks_part.rc:38
 msgid "V&iew"
 msgstr ""
 
@@ -708,7 +708,7 @@ msgid "Title..."
 msgstr ""
 
 #: attic/src/gui/itemeditor/itemeditor.cpp:95
-#: src/widgets/editorview.cpp:204
+#: src/widgets/editorview.cpp:220
 msgid "Fullscreen &Editor"
 msgstr ""
 
@@ -783,13 +783,13 @@ msgstr ""
 
 #: attic/src/gui/itemlist/actionlisteditorpage.cpp:352
 #: attic/src/gui/itemlist/actionlisteditorpage.cpp:596
-#: src/widgets/pageview.cpp:113
+#: src/widgets/pageview.cpp:118
 msgid "Type and press enter to add a note"
 msgstr ""
 
 #: attic/src/gui/itemlist/actionlisteditorpage.cpp:354
 #: attic/src/gui/itemlist/actionlisteditorpage.cpp:598
-#: src/widgets/pageview.cpp:110
+#: src/widgets/pageview.cpp:115
 msgid "Type and press enter to add an action"
 msgstr ""
 
@@ -958,6 +958,17 @@ msgctxt "yesterday"
 msgid "Yesterday"
 msgstr ""
 
+#. i18n: file: src/widgets/templates/main.html
+#: html.cpp:2
+#, qt-format, kde-format
+msgid "You have %1 Tasks"
+msgstr ""
+
+#. i18n: file: src/widgets/templates/main.html
+#: html.cpp:4
+msgid "Due to:"
+msgstr ""
+
 #: src/akonadi/akonadidatasourcerepository.cpp:148
 msgid "Add Task Folder"
 msgstr ""
@@ -1037,9 +1048,14 @@ msgid "Main"
 msgstr ""
 
 #. i18n: ectx: Menu (zanshin_settings)
-#: src/kontact/zanshin-next_part.rc:6 src/kontact/zanshin-notes_part.rc:6
-#: src/kontact/zanshin-tasks_part.rc:6
+#: src/kontact/zanshin-next_part.rc:6 src/kontact/zanshin-notes_part.rc:10
+#: src/kontact/zanshin-tasks_part.rc:10
 msgid "Configure Zanshin"
+msgstr ""
+
+#. i18n: ectx: Menu (file)
+#: src/kontact/zanshin-notes_part.rc:5 src/kontact/zanshin-tasks_part.rc:5
+msgid "File"
 msgstr ""
 
 #: src/presentation/availablepagesmodel.cpp:164
@@ -1047,6 +1063,7 @@ msgid "Projects"
 msgstr ""
 
 #: src/presentation/availablepagesmodel.cpp:168
+#: src/widgets/editorview.cpp:181
 msgid "Tags"
 msgstr ""
 
@@ -1055,11 +1072,11 @@ msgstr ""
 msgid "Add \"%1\" to your todo list"
 msgstr ""
 
-#: src/widgets/applicationcomponents.cpp:161
+#: src/widgets/applicationcomponents.cpp:168
 msgid "Default task source"
 msgstr ""
 
-#: src/widgets/applicationcomponents.cpp:171
+#: src/widgets/applicationcomponents.cpp:178
 msgid "Default note source"
 msgstr ""
 
@@ -1085,96 +1102,108 @@ msgstr ""
 msgid "Search..."
 msgstr ""
 
-#: src/widgets/editorview.cpp:82
+#: src/widgets/editorview.cpp:83
 msgid "Start today"
 msgstr ""
 
-#: src/widgets/editorview.cpp:88
+#: src/widgets/editorview.cpp:90
 msgid "Add attachment"
 msgstr ""
 
-#: src/widgets/editorview.cpp:123 src/widgets/editorview.cpp:238
+#: src/widgets/editorview.cpp:125 src/widgets/editorview.cpp:254
 msgid "None"
 msgstr ""
 
-#: src/widgets/editorview.cpp:124
+#: src/widgets/editorview.cpp:126
 msgid "Needs action"
 msgstr ""
 
-#: src/widgets/editorview.cpp:125
+#: src/widgets/editorview.cpp:127
 msgid "In process"
 msgstr ""
 
-#: src/widgets/editorview.cpp:126
+#: src/widgets/editorview.cpp:128
 msgid "Completed"
 msgstr ""
 
-#: src/widgets/editorview.cpp:127
+#: src/widgets/editorview.cpp:129
 msgid "Cancelled"
 msgstr ""
 
-#: src/widgets/editorview.cpp:146
+#: src/widgets/editorview.cpp:148
 msgid "Delegate to"
 msgstr ""
 
 #: src/widgets/editorview.cpp:150
+msgid "Delegate"
+msgstr ""
+
+#: src/widgets/editorview.cpp:155
 msgid "Start date"
 msgstr ""
 
-#: src/widgets/editorview.cpp:153
+#: src/widgets/editorview.cpp:158
 msgid "Due date"
 msgstr ""
 
-#: src/widgets/editorview.cpp:162
+#: src/widgets/editorview.cpp:167
 msgid "Alarm"
 msgstr ""
 
-#: src/widgets/editorview.cpp:168
+#: src/widgets/editorview.cpp:173
 msgid "Progress"
 msgstr ""
 
-#: src/widgets/editorview.cpp:172
+#: src/widgets/editorview.cpp:177
 msgid "Status"
 msgstr ""
 
-#: src/widgets/editorview.cpp:194
+#: src/widgets/editorview.cpp:184
+msgid "Add Tag..."
+msgstr ""
+
+#: src/widgets/editorview.cpp:187
+msgid "Add"
+msgstr ""
+
+#: src/widgets/editorview.cpp:210
 msgid "Edit"
 msgstr ""
 
-#: src/widgets/editorview.cpp:241
+#: src/widgets/editorview.cpp:257
 msgid "Message"
 msgstr ""
 
-#: src/widgets/editorview.cpp:244
+#: src/widgets/editorview.cpp:260
 msgid "Audio"
 msgstr ""
 
-#: src/widgets/editorview.cpp:251
+#: src/widgets/editorview.cpp:267
 msgid "before start"
 msgstr ""
 
-#: src/widgets/editorview.cpp:254
+#: src/widgets/editorview.cpp:270
 msgid "before end"
 msgstr ""
 
-#: src/widgets/editorview.cpp:411
+#: src/widgets/editorview.cpp:429
 #, qt-format
 msgid "Delegated to: <b>%1</b>"
 msgstr ""
 
-#: src/widgets/editorview.cpp:515
+#: src/widgets/editorview.cpp:565
 msgid "All ocurrences completed"
 msgstr ""
 
-#: src/widgets/editorview.cpp:597
+#: src/widgets/editorview.cpp:654
 msgid "Add Attachment"
 msgstr ""
 
-#: src/widgets/editorview.cpp:647
+#: src/widgets/editorview.cpp:704
 msgid "Save Attachment"
 msgstr ""
 
-#: src/widgets/editorview.cpp:650
+#: src/widgets/editorview.cpp:707
 #, qt-format
 msgid "%1 already exists. Do you want to overwrite it?"
 msgstr ""
@@ -1241,27 +1270,55 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-#: src/widgets/pageview.cpp:109
+#: src/widgets/pageview.cpp:114
 msgid "add an action"
 msgstr ""
 
-#: src/widgets/pageview.cpp:112
+#: src/widgets/pageview.cpp:117
 msgid "add a note"
 msgstr ""
 
-#: src/widgets/pageview.cpp:130 src/widgets/pageview.cpp:243
+#: src/widgets/pageview.cpp:135 src/widgets/pageview.cpp:284
 msgid "Delete"
 msgstr ""
 
-#: src/widgets/pageview.cpp:229
+#: src/widgets/pageview.cpp:144
+msgid "Print"
+msgstr ""
+
+#: src/widgets/pageview.cpp:202
+msgid "Tasks and notes"
+msgstr ""
+
+#: src/widgets/pageview.cpp:203
+msgid " Print tasks and notes"
+msgstr ""
+
+#: src/widgets/pageview.cpp:205
+msgid "Tasks"
+msgstr ""
+
+#: src/widgets/pageview.cpp:206
+msgid "Print Tasks"
+msgstr ""
+
+#: src/widgets/pageview.cpp:208
+msgid "Notes"
+msgstr ""
+
+#: src/widgets/pageview.cpp:209
+msgid "Print Notes"
+msgstr ""
+
+#: src/widgets/pageview.cpp:270
 msgid "Do you really want to delete the selected items and their children?"
 msgstr ""
 
-#: src/widgets/pageview.cpp:231
+#: src/widgets/pageview.cpp:272
 msgid "Do you really want to delete the selected items?"
 msgstr ""
 
-#: src/widgets/pageview.cpp:239
+#: src/widgets/pageview.cpp:280
 msgid "Do you really want to delete the selected item and all its children?"
 msgstr ""
 
