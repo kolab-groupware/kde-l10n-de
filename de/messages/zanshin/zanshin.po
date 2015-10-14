@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-05 15:56+0200\n"
-"PO-Revision-Date: 2015-10-05 16:01+0200\n"
+"POT-Creation-Date: 2015-10-14 15:37+0200\n"
+"PO-Revision-Date: 2015-10-14 15:54+0200\n"
 "Last-Translator: Sandro Knauß <mail@sandroknauss.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -93,7 +93,6 @@ msgid "Configure Completion Order..."
 msgstr "Vervollständigungsreihenfolge verändern..."
 
 #: 3rdparty/kdepim/libkdepim/addressline/addresseelineedit.cpp:1390
-#| msgid "Show Organization Unit for LDAP results"
 msgid "Show Organication Unit for LDAP results"
 msgstr "Zeige Organisatorseinheit für LDAP Ergebnisse"
 
@@ -318,8 +317,9 @@ msgstr "Postleitzahl"
 msgid "Postal Address"
 msgstr "Anschrift"
 
+#. i18n: file: src/widgets/templates/cvs.html
 #: 3rdparty/kdepim/libkdepim/ldap/ldapsearchdialog.cpp:117
-#: 3rdparty/kdepim/libkdepim/ldap/ldapsearchdialog.cpp:356
+#: 3rdparty/kdepim/libkdepim/ldap/ldapsearchdialog.cpp:356 html.cpp:8
 msgid "Description"
 msgstr "Beschreibung"
 
@@ -694,14 +694,14 @@ msgid "&Enable"
 msgstr "&Aktivieren"
 
 #. i18n: ectx: Menu (format)
-#: attic/src/gui/itemeditor/editorui.rc:5 src/kontact/zanshin-notes_part.rc:16
-#: src/kontact/zanshin-tasks_part.rc:16
+#: attic/src/gui/itemeditor/editorui.rc:5 src/kontact/zanshin-notes_part.rc:17
+#: src/kontact/zanshin-tasks_part.rc:17
 msgid "F&ormat"
 msgstr "&Formatieren"
 
 #. i18n: ectx: Menu (view)
 #: attic/src/gui/itemeditor/editorui.rc:27
-#: src/kontact/zanshin-notes_part.rc:38 src/kontact/zanshin-tasks_part.rc:38
+#: src/kontact/zanshin-notes_part.rc:39 src/kontact/zanshin-tasks_part.rc:39
 msgid "V&iew"
 msgstr "&Ansicht"
 
@@ -799,13 +799,13 @@ msgstr "Aktion aus Kontext rauslösen"
 
 #: attic/src/gui/itemlist/actionlisteditorpage.cpp:352
 #: attic/src/gui/itemlist/actionlisteditorpage.cpp:596
-#: src/widgets/pageview.cpp:118
+#: src/widgets/pageview.cpp:119
 msgid "Type and press enter to add a note"
 msgstr "Tippen und danach Enter drücken um Notiz hinzuzufügen"
 
 #: attic/src/gui/itemlist/actionlisteditorpage.cpp:354
 #: attic/src/gui/itemlist/actionlisteditorpage.cpp:598
-#: src/widgets/pageview.cpp:115
+#: src/widgets/pageview.cpp:116
 msgid "Type and press enter to add an action"
 msgstr "Tippen und danach Enter drücken um Aktion hinzuzufügen"
 
@@ -977,15 +977,33 @@ msgctxt "yesterday"
 msgid "Yesterday"
 msgstr "Gestern"
 
-#. i18n: file: src/widgets/templates/main.html
+#. i18n: file: src/widgets/templates/cvs.html
 #: html.cpp:2
+#| msgctxt "@item LDAP search key"
+#| msgid "Title"
+msgid "Title"
+msgstr "Titel"
+
+#. i18n: file: src/widgets/templates/cvs.html
+#: html.cpp:4
+#| msgid "List Done"
+msgid "Done"
+msgstr "Fertig"
+
+#. i18n: file: src/widgets/templates/cvs.html
+#: html.cpp:6
+#| msgid "Due to:"
+msgid "Due to"
+msgstr "Fälligkeitsdatum"
+
+#. i18n: file: src/widgets/templates/main.html
+#: html.cpp:10
 #, qt-format, kde-format
 msgid "You have %1 Tasks"
 msgstr "Sie haben %1 Aufgaben"
 
 #. i18n: file: src/widgets/templates/main.html
-#: html.cpp:4
-#| msgid "Due date"
+#: html.cpp:12
 msgid "Due to:"
 msgstr "Fälligkeitsdatum:"
 
@@ -1037,7 +1055,7 @@ msgstr ""
 
 #: src/app/aboutdata.cpp:34
 msgid "Kevin Ottens"
-msgstr ""
+msgstr "Kevin Ottens"
 
 #: src/app/aboutdata.cpp:35
 msgid "Lead Developer"
@@ -1045,7 +1063,7 @@ msgstr "Hauptentwickler"
 
 #: src/app/aboutdata.cpp:38
 msgid "Mario Bensi"
-msgstr ""
+msgstr "Mario Bensi"
 
 #: src/app/aboutdata.cpp:39
 msgid "Developer"
@@ -1068,8 +1086,8 @@ msgid "Main"
 msgstr "Haupt"
 
 #. i18n: ectx: Menu (zanshin_settings)
-#: src/kontact/zanshin-next_part.rc:6 src/kontact/zanshin-notes_part.rc:10
-#: src/kontact/zanshin-tasks_part.rc:10
+#: src/kontact/zanshin-next_part.rc:6 src/kontact/zanshin-notes_part.rc:11
+#: src/kontact/zanshin-tasks_part.rc:11
 msgid "Configure Zanshin"
 msgstr "Zanshin einstellen"
 
@@ -1154,7 +1172,6 @@ msgid "Delegate to"
 msgstr "Delegiere an"
 
 #: src/widgets/editorview.cpp:150
-#| msgid "Delete"
 msgid "Delegate"
 msgstr "Delegiere"
 
@@ -1179,13 +1196,10 @@ msgid "Status"
 msgstr "Status"
 
 #: src/widgets/editorview.cpp:184
-#| msgid "&Add Host..."
 msgid "Add Tag..."
 msgstr "Stichwort hinzufügen"
 
 #: src/widgets/editorview.cpp:187
-#| msgctxt "@action:button adds an exception on the recurrence"
-#| msgid "Add"
 msgid "Add"
 msgstr "Hinzufügen"
 
@@ -1293,58 +1307,69 @@ msgstr "Quelle"
 msgid "Type"
 msgstr "Typ"
 
-#: src/widgets/pageview.cpp:114
+#: src/widgets/pageview.cpp:115
 msgid "add an action"
 msgstr "Aktion hinzufügen"
 
-#: src/widgets/pageview.cpp:117
+#: src/widgets/pageview.cpp:118
 msgid "add a note"
 msgstr "Notiz hinzufügen"
 
-#: src/widgets/pageview.cpp:135 src/widgets/pageview.cpp:284
+#: src/widgets/pageview.cpp:136 src/widgets/pageview.cpp:301
 msgid "Delete"
 msgstr "Löschen"
 
-#: src/widgets/pageview.cpp:144
+#: src/widgets/pageview.cpp:145
 msgid "Print"
 msgstr "Drucken"
 
-#: src/widgets/pageview.cpp:202
-#| msgid "add a note"
+#: src/widgets/pageview.cpp:152
+msgid "Export as CVS"
+msgstr "Als CVS exportieren"
+
+#: src/widgets/pageview.cpp:209
 msgid "Tasks and notes"
 msgstr "Aufgaben und Notizen"
 
-#: src/widgets/pageview.cpp:203
+#: src/widgets/pageview.cpp:210
 msgid " Print tasks and notes"
 msgstr "Aufgaben und Notizen drucken"
 
-#: src/widgets/pageview.cpp:205
+#: src/widgets/pageview.cpp:212
 msgid "Tasks"
 msgstr "Aufgaben"
 
-#: src/widgets/pageview.cpp:206
+#: src/widgets/pageview.cpp:213
 msgid "Print Tasks"
 msgstr "Aufgaben drucken"
 
-#: src/widgets/pageview.cpp:208
+#: src/widgets/pageview.cpp:215
 msgid "Notes"
 msgstr "Noitzen"
 
-#: src/widgets/pageview.cpp:209
+#: src/widgets/pageview.cpp:216
 msgid "Print Notes"
 msgstr "Notizen drucken"
 
-#: src/widgets/pageview.cpp:270
+#: src/widgets/pageview.cpp:237
+msgid "Export to CVS"
+msgstr "Als CVS exportieren"
+
+#: src/widgets/pageview.cpp:237
+msgid "CVS Files (*.cvs)"
+msgstr "CVS Dateien (*.cvs)"
+
+#: src/widgets/pageview.cpp:287
 msgid "Do you really want to delete the selected items and their children?"
 msgstr ""
 "Wollen Sie wirklich die ausgewählten Einträge und deren Untereinträge "
 "löschen?"
 
-#: src/widgets/pageview.cpp:272
+#: src/widgets/pageview.cpp:289
 msgid "Do you really want to delete the selected items?"
 msgstr "Wollen Sie wirklich die ausgewählten Einträge löschen?"
 
-#: src/widgets/pageview.cpp:280
+#: src/widgets/pageview.cpp:297
 msgid "Do you really want to delete the selected item and all its children?"
 msgstr ""
 "Wollen Sie wirklich den ausgewählten Eintrag und alle dessen Untereinträge "
