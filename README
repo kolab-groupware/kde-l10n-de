@@ -1,9 +1,60 @@
 In this file:
 
+* Update language files for kolab
+* Update language files
 * What it is
 * requirements
 * language directories
 * template directory
+
+
+Update language files for kolab
+-------------------------------
+
+kolab only usses a distict set of kde modules.
+There is a script called kolab_update_po.sh, that does all the work.
+
+for that you need a copy of:
+git clone kde:kde-dev-scripts.git branch KDE/4.14
+
+* update L10NBASE in kolab_update_po.sh to the base dir, where is file is.
+* update KDE_DEV_SCRIPTS in kolab_update_po.sh to the working dir of kde-dev-scripts.
+
+Update language files
+---------------------
+
+The l10n support wirks via some scripts:
+
+for each module you have to run:
+for mod in bla foo bar; do
+    scripts/extract-messages.sh
+done
+
+scripts/extract-messages.sh executes all available Message.sh files in the repo.
+
+Messages.sh is a simple bash file that needs to run the extracting binaries.
+A mostly complete example (from zanshin):
+```
+   #! /usr/bin/env bash
+   #extract grantlee i18n strings (needs to copied into the repo)
+   $EXTRACT_GRANTLEE_TEMPLATE_STRINGS `find . -name \*.html` >> html.cpp
+
+   #ui files extraction
+   $EXTRACTRC `find . -name \*.rc -o -name \*.ui` >> rc.cpp
+
+   #kde i18n string extraction (not for the tests subdir)
+   $XGETTEXT `find . -name \*.h -o -name \*.cpp | grep -v '/tests/'` -o $podir/zanshin.pot
+
+   #QT tr() string extraction (-j is for append/merge)
+   $XGETTEXT_QT `find . -name \*.h -o -name \*.cpp | grep -v '/tests/'` -j -o $podir/zanshin.pot
+
+   #delete created cpp files
+   rm -f rc.cpp html.cpp
+```
+
+and than one for all:
+bash scripts/merge_all.sh
+
 
 What it is
 ----------
